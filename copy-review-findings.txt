@@ -1,0 +1,35 @@
+Data-Driven Customer Intelligence Page - Copy Review
+=====================================================
+Date: Jan 29, 2026
+
+VERIFIED: All copy has been rewritten with original NexDyne voice
+
+1. STATISTICS SECTION (Original)
+   - "85+ customer intelligence programs delivered for mid-market companies"
+   - "47% average increase in customer lifetime value across our engagements"
+   - "3.2x typical ROI on customer intelligence investments within 18 months"
+
+2. NARRATIVE SECTION (Original - NOT Bain copy)
+   - "Most mid-market companies are sitting on a goldmine of customer data they can't access."
+   - "Information lives in disconnected systems—CRM here, marketing automation there, support tickets somewhere else."
+   - "Teams make decisions based on gut instinct instead of evidence"
+   
+   Bold callouts (Original):
+   - "Your competitors are already doing this:" - About predictive models gap
+   - "Customers expect you to know them:" - 73% expect personalization stat
+   - "The tools have caught up to the vision:" - Modern platforms accessibility
+
+3. ACCORDION SECTION (Original titles)
+   - "Unify fragmented customer data into actionable insights"
+   - "Predict customer behavior before it happens"
+   - "Personalize every touchpoint at scale"
+   - "Turn feedback into competitive advantage"
+   - "Embed customer-centricity into your operations"
+   - "Measure what matters for sustainable growth"
+
+4. AI IN CUSTOMER INTELLIGENCE SECTION (Original)
+   - "The hype around AI is real, but so is the confusion. We cut through the noise..."
+   - "Identify high-impact AI use cases specific to your customer journey"
+   - "Build predictive models that work with your existing data (not perfect data)"
+
+All copy is now original NexDyne content while preserving the Bain-style format structure.

@@ -1,0 +1,25 @@
+Capabilities Explorer Section - Current Status
+=============================================
+
+Layout Analysis:
+- Two-column layout with dropdowns on the left and preview panel on the right
+- Capabilities dropdown shows: Artificial Intelligence, Business Building, Technology, Growth & Marketing, Strategy, Operations
+- Industries dropdown available but not expanded
+- Preview panel shows selected capability with image, title, description, and "Explore" CTA button
+- "View all capabilities" button below the dropdowns
+
+Current Issues Observed:
+1. The preview panel image is partially visible (cut off at top)
+2. The dropdown is working - shows list of capabilities
+3. When "Growth & Marketing" is selected, the preview panel updates correctly
+4. The layout is functional but could use some refinement
+
+Design Comparison to BCG:
+- BCG has a cleaner look with the dropdown on left, preview on right
+- BCG shows a full image with overlaid content card
+- Our implementation follows the same concept but with our own styling
+
+Next Steps:
+- Test the Industries dropdown
+- Verify all links work correctly
+- Ensure the preview panel updates smoothly when hovering/selecting items

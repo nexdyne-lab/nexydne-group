@@ -1,0 +1,30 @@
+Insights Section Design Reference (from image):
+
+Layout:
+- Clean white/cream background
+- "LATEST INSIGHTS" label at top center (uppercase, letter-spaced)
+- Large serif heading "Thinking that drives transformation." centered
+- Three column grid for article cards
+
+Card Design:
+- Each card has a thin top border (separator line)
+- Category label on left (STRATEGY, TECHNOLOGY, OPERATIONS) - uppercase, small, muted
+- Read time on right (5 min read, 7 min read, 10 min read) - small, muted
+- Article title below - larger, bold, serif font
+- Middle card (TECHNOLOGY) has teal/cyan colored title link
+- "Read article →" link at bottom of each card
+
+Colors:
+- Background: off-white/cream (#F7F5F0 or similar)
+- Text: dark gray/black
+- Category labels: muted gray
+- Middle article title: teal/cyan (#0077B5 or similar)
+- Other titles: black
+
+Typography:
+- "LATEST INSIGHTS" - uppercase, letter-spaced, small
+- Main heading - large serif, bold
+- Category - uppercase, small, tracking
+- Read time - small, regular weight
+- Article title - medium-large, serif, bold
+- "Read article" - small, with arrow

@@ -1,0 +1,61 @@
+Scalable Enterprise Transformation Page Review - Jan 29, 2026
+
+HERO SECTION:
+- Black background with white text ✓
+- Breadcrumb: Home > Solutions > Enterprise Transformation
+- Title: "Scalable Enterprise Transformation"
+- Subtitle: "We help organizations modernize their core technology stack, building cloud-native infrastructure that scales with ambition."
+
+STATISTICS SECTION (Our Experience & Impact):
+- 75+ enterprise transformations completed
+- 40% average reduction in infrastructure costs
+- 2.5x faster time-to-market for new features
+
+NARRATIVE SECTION:
+- Opening paragraph about mid-market companies running on outdated technology
+- Three bold callouts:
+  1. "Your competitors have already started" - about companies modernizing 3-5 years ago
+  2. "The cost of waiting compounds" - about technical debt accumulation
+  3. "Cloud-native isn't optional anymore" - about baseline expectations
+
+BAIN-STYLE HOVER CARDS (What's Your Transformation Ambition?):
+- 6 cards with hover effects showing descriptions:
+  1. Migrate to the cloud without disrupting operations
+  2. Replace legacy systems that constrain growth
+  3. Build platforms that accelerate delivery
+  4. Secure your infrastructure without slowing down
+  5. Unify data across fragmented systems
+  6. Optimize cloud costs that have spiraled
+
+AI IN ENTERPRISE TECHNOLOGY SECTION:
+- Two-column layout with bullet points
+- Real Outcomes and How We Help subsections
+
+HOW WE CAN HELP SECTION:
+- 8 Bain-style hover cards:
+  1. Cloud Migration & Architecture
+  2. Infrastructure Modernization
+  3. Platform Engineering
+  4. DevOps & CI/CD
+  5. Security & Compliance
+  6. Data Platform Engineering
+  7. Cloud Cost Optimization
+  8. Technology Due Diligence
+
+A CLOSER LOOK SECTION:
+- Two insight cards with arrows
+
+CLIENT RESULTS SECTION:
+- Tabbed interface (Cloud migration, Legacy modernization, Platform engineering)
+- Case study cards with images
+
+INSIGHTS SECTION:
+- 4 insight cards with categories and descriptions
+
+CONSULTING SERVICES SECTION:
+- Link list with arrows
+
+READY TO TALK CTA:
+- Two-column layout with email input
+
+All sections rendering correctly with unique NexDyne copy (not copied from Bain).

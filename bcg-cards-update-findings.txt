@@ -1,0 +1,21 @@
+BCG-Style Solution Cards - Updated Design Findings
+==================================================
+
+The cards have been updated to match the BCG design pattern:
+
+1. Image on top (aspect-[4/3]) - takes approximately 70% of card height
+2. Title below image in white area with padding
+3. On hover: entire card transitions to white with title, description, and "Learn More" CTA
+
+Current cards visible:
+- Performance & Value Acceleration (meeting room image)
+- Business Restructuring and Transformation (people collaborating image)
+- Tech-Led Business Transformation (digital transformation infographic)
+
+The layout now matches the BCG reference with:
+- Clean separation between image and title
+- Title positioned BELOW the image (not overlaid)
+- Consistent card heights
+- Smooth hover transition
+
+Screenshot saved: /home/ubuntu/screenshots/3000-i192bjhwialyxyi_2026-01-26_19-13-40_8577.webp

@@ -1,0 +1,49 @@
+Capabilities Explorer Redesign - Key Findings
+=============================================
+
+The new design has been implemented with the following changes from BCG:
+
+1. COLOR SCHEME:
+   - Changed from BCG's mint green to deep navy blue (#051C2C) gradient
+   - Uses cyan (#00d4ff) as accent color instead of BCG's green
+   - Dark, professional "McKinsey blues" aesthetic
+
+2. LAYOUT:
+   - Two-column grid layout with generous padding (py-20 to py-32)
+   - Left side: Content with dropdowns
+   - Right side: Dynamic preview card with rounded corners
+
+3. DROPDOWN BUTTONS:
+   - Pill-shaped (rounded-full) instead of BCG's rectangular
+   - Border style with hover effects
+   - Active state fills with cyan color
+   - Shadow glow effect when active
+
+4. VISUAL ELEMENTS:
+   - Subtle grid pattern overlay in background
+   - Gradient orbs for depth
+   - Decorative corner elements on preview card
+   - Sparkles icon for section label
+
+5. TYPOGRAPHY:
+   - Georgia serif font for headlines
+   - "EXPLORE OUR EXPERTISE" label with sparkle icon
+   - "What challenge can we help you solve?" headline
+
+6. PREVIEW CARD:
+   - Rounded corners (rounded-3xl)
+   - Gradient overlay from bottom
+   - Category badge in cyan
+   - Animated transitions on selection
+
+7. DEFAULT STATE:
+   - Shows sparkle icon with prompt text
+   - "Select a capability or industry to explore our expertise"
+
+DIFFERENCES FROM BCG:
+- Dark navy vs mint green background
+- Pill buttons vs rectangular dropdowns
+- Rounded preview card vs sharp edges
+- Cyan accent vs green accent
+- Grid pattern background vs solid color
+- More generous padding and spacing

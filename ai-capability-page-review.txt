@@ -1,0 +1,55 @@
+AI Capability Page Review - January 30, 2026
+
+Page URL: /capabilities/artificial-intelligence
+
+SECTIONS VERIFIED:
+1. Hero Section - Black background with white text, breadcrumb navigation
+   - Title: "Artificial Intelligence"
+   - Subtitle: Practical AI solutions for mid-market companies (50-500 employees)
+
+2. Statistics Section - Bain-style clean layout with vertical dividers
+   - 120+ AI implementations delivered
+   - 3.2x Average ROI within 18 months
+   - 85% projects reach production (vs 15% industry average)
+   - 6mo typical time from pilot to scaled deployment
+
+3. Narrative Section - Bold callouts with red left border
+   - "Your competitors are already moving"
+   - "You don't need a data science team to start"
+   - "Mid-market companies have unique advantages"
+
+4. "What's Your AI Ambition?" Section - Bain hover cards (6 cards)
+   - Automate repetitive workflows
+   - Build intelligent customer experiences
+   - Unlock insights from your data
+   - Deploy generative AI responsibly
+   - Modernize legacy systems with AI
+   - Scale AI across the organization
+
+5. Gen AI in Practice Section - Two-column layout
+   - Image + intro on left
+   - Real Outcomes + How We Help on right
+
+6. "How We Can Help" Section - Bain hover cards (6 cards)
+   - Generative AI Implementation
+   - Data Transformation
+   - Predictive Analytics
+   - Process Automation
+   - AI Strategy & Roadmap
+   - Custom Model Development
+
+7. Client Results - Tabbed section
+   - Workflow Automation tab
+   - Customer Intelligence tab
+   - Predictive Operations tab
+
+8. AI Ecosystem - Partner logos section
+
+9. A Closer Look - Insights cards (3 cards)
+
+10. Consulting Services - Link list
+
+11. Ready to Talk CTA - Two-column Bain-style
+
+ALL SECTIONS RENDERING CORRECTLY
+Copy is unique to NexDyne, focused on mid-market (50-500 employees)

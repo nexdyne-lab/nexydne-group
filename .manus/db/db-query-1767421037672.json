@@ -1,0 +1,23 @@
+{
+  "query": "SELECT * FROM leads ORDER BY id DESC LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2CCNywmzdWbuo3h.8eed10803fe8 --database VAPBHbpCXeQkPqUReSKZ9w --execute SELECT * FROM leads ORDER BY id DESC LIMIT 5;",
+  "rows": [
+    {
+      "id": "1",
+      "email": "test@example.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "company": "Test Company",
+      "jobTitle": "Director of Operations",
+      "caseStudyTitle": "Predictive revenue models for 35% better accuracy",
+      "caseStudyIndustry": "B2B SaaS",
+      "source": "pdf_download",
+      "marketingConsent": "0",
+      "createdAt": "2026-01-03 06:17:06"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\temail\tfirstName\tlastName\tcompany\tjobTitle\tcaseStudyTitle\tcaseStudyIndustry\tsource\tmarketingConsent\tcreatedAt\n1\ttest@example.com\tJohn\tDoe\tTest Company\tDirector of Operations\tPredictive revenue models for 35% better accuracy\tB2B SaaS\tpdf_download\t0\t2026-01-03 06:17:06\n",
+  "stderr": "",
+  "execution_time_ms": 177
+}

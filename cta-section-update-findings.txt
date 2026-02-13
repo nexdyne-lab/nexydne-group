@@ -1,0 +1,21 @@
+CTA Section Update - Bain-Inspired Design
+==========================================
+
+Successfully implemented the new CTA section with:
+
+1. Split layout (two columns on desktop)
+2. Left column:
+   - "Ready to talk?" heading in Georgia serif font
+   - "I want to talk to your experts in:" prompt
+   - Dropdown selector with red underline showing "AI & Technology" as default
+   - Options: AI & Technology, Process Optimization, Customer Intelligence, Enterprise Transformation, Business Growth, Financial Services, Healthcare, Professional Services
+
+3. Right column:
+   - Inspirational text: "We work with ambitious leaders who want to define the future, not hide from it. Together, we achieve extraordinary outcomes."
+   - Email input field with placeholder "Your email"
+   - Red "CONTACT US" button (sharp edges per design preference)
+
+4. White background with top border separator
+5. Clean, minimal design matching Bain's professional aesthetic
+
+Screenshot saved: /home/ubuntu/screenshots/3000-iasndvvysxvtzey_2026-01-26_20-00-12_3756.webp

@@ -1,0 +1,24 @@
+Capabilities Explorer Section - Key Findings
+=============================================
+
+The new BCG-inspired Capabilities Explorer has been implemented and is visible on the homepage.
+
+Current State:
+- Located directly below the "AI and Technology Consulting" section
+- Split layout design with mint green left side and image on right
+- "How can we assist you today?" headline visible
+- "Learn more about our core areas of expertise by selecting your topic of interest." subheadline visible
+- Capabilities and Industries dropdown buttons visible (need to scroll down slightly to see them)
+- Default state shows "Select a capability or industry to explore" prompt on right side
+- Background image visible on right side
+
+Design Elements:
+- Mint green (#e8f5e9) background on left side
+- Georgia serif font for headline
+- Clean, professional aesthetic matching BCG reference
+- Interactive dropdowns for Capabilities and Industries
+
+Next Steps:
+- Test the dropdown functionality
+- Verify CTA card appears when selection is made
+- Check mobile responsiveness

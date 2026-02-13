@@ -1,0 +1,606 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* DZ10 Design System Colors */
+  --color-dz-navy: oklch(0.15 0.03 240);
+  --color-dz-mckinsey-blue: oklch(0.50 0.15 230);
+  --color-dz-electric-blue: oklch(0.45 0.25 265);
+  --color-dz-light-gray: oklch(0.97 0 0);
+  --color-dz-dark-text: oklch(0.15 0.01 60);
+}
+
+:root {
+  /* DZ10 Primary Brand - Deep Navy Blue #051C2C */
+  --primary: oklch(0.15 0.03 240);
+  --primary-foreground: oklch(1 0 0);
+  
+  /* DZ10 Accent - McKinsey Blue #0077B5 (hover states only) */
+  --accent: oklch(0.50 0.15 230);
+  --accent-foreground: oklch(1 0 0);
+  
+  /* DZ10 Interactive - Electric Blue #2251FF (link underlines) */
+  --ring: oklch(0.45 0.25 265);
+  
+  --sidebar-primary: oklch(0.15 0.03 240);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --chart-1: oklch(0.15 0.03 240);
+  --chart-2: oklch(0.50 0.15 230);
+  --chart-3: oklch(0.45 0.25 265);
+  --chart-4: oklch(0.30 0.05 240);
+  --chart-5: oklch(0.20 0.04 240);
+  --radius: 0.25rem;
+  
+  /* DZ10 Background Light #FFFFFF */
+  --background: oklch(1 0 0);
+  /* DZ10 Text Dark #1A1A1A */
+  --foreground: oklch(0.15 0.01 60);
+  
+  /* Card backgrounds - white */
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.15 0.01 60);
+  
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.15 0.01 60);
+  
+  /* DZ10 Background Subtle #F5F5F5 */
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.15 0.01 60);
+  
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.45 0.01 60);
+  
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.90 0 0);
+  --input: oklch(0.90 0 0);
+  --sidebar: oklch(1 0 0);
+  --sidebar-foreground: oklch(0.15 0.01 60);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.15 0.01 60);
+  --sidebar-border: oklch(0.90 0 0);
+  --sidebar-ring: oklch(0.45 0.25 265);
+}
+
+.dark {
+  /* DZ10 Dark mode - Deep Navy as background */
+  --primary: oklch(0.50 0.15 230);
+  --primary-foreground: oklch(1 0 0);
+  --sidebar-primary: oklch(0.50 0.15 230);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --background: oklch(0.15 0.03 240);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.18 0.03 240);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.18 0.03 240);
+  --popover-foreground: oklch(0.95 0 0);
+  --secondary: oklch(0.20 0.03 240);
+  --secondary-foreground: oklch(0.90 0 0);
+  --muted: oklch(0.22 0.03 240);
+  --muted-foreground: oklch(0.70 0 0);
+  --accent: oklch(0.22 0.03 240);
+  --accent-foreground: oklch(0.95 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.45 0.25 265);
+  --chart-1: oklch(0.50 0.15 230);
+  --chart-2: oklch(0.45 0.25 265);
+  --chart-3: oklch(0.60 0.10 230);
+  --chart-4: oklch(0.40 0.08 240);
+  --chart-5: oklch(0.30 0.05 240);
+  --sidebar: oklch(0.18 0.03 240);
+  --sidebar-foreground: oklch(0.95 0 0);
+  --sidebar-accent: oklch(0.22 0.03 240);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.45 0.25 265);
+}
+
+.eb-garamond {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', Arial, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* DZ10 Font family utilities - Bain-style Georgia */
+  .font-serif {
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  .font-sans {
+    font-family: 'Inter', Arial, Helvetica, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  /* DZ10 Typography Scale - Bain Inspired */
+  /* H1 Headlines - EB Garamond, Bold, Title Case (!important overrides Tailwind utilities) */
+  h1 {
+    font-family: "EB Garamond", serif !important;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: inherit;
+  }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  h1.font-serif {
+    font-family: "EB Garamond", serif !important;
+  }
+  
+  /* H2 Headlines - EB Garamond, Bold */
+  h2 {
+    font-family: "EB Garamond", serif !important;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+  }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 2.75rem;
+    }
+  }
+  h2.font-serif {
+    font-family: "EB Garamond", serif !important;
+  }
+  
+  /* H3 Headlines - Georgia Serif, Regular */
+  h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 1.875rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    h3 {
+      font-size: 2rem;
+    }
+  }
+  
+  /* H4-H6 - Sans-serif for clarity */
+  h4 {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -0.005em;
+  }
+  @media (min-width: 768px) {
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  h5 {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  
+  /* H6 / Section Labels - ALL CAPS, Bold Sans-serif */
+  h6 {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  
+  /* Body text */
+  p {
+    font-size: 1rem;
+    line-height: 1.7;
+    letter-spacing: 0;
+  }
+  
+  /* DZ10 Section Label utility */
+  .section-label {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #1A1A1A;
+  }
+  
+  /* DZ10 Link styles - Electric Blue underline */
+  a {
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .dz-link {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: #2251FF;
+    text-underline-offset: 3px;
+  }
+  .dz-link:hover {
+    color: #0077B5;
+  }
+  
+  /* Text size utilities */
+  .text-lg {
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+  
+  .text-sm {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  .text-xs {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+  }
+  
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  /* Container utility */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+  
+  /* DZ10 Primary Button - Deep Navy bg, white text, subtle rounded corners */
+  .dz-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 1.75rem;
+    background-color: #051C2C;
+    color: #FFFFFF;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+    transition: background-color 0.2s ease;
+  }
+  .dz-btn-primary:hover {
+    background-color: #0077B5;
+  }
+  
+  /* DZ10 Text Link CTA - Electric Blue underline with arrow */
+  .dz-text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #1A1A1A;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #2251FF;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease;
+  }
+  .dz-text-link:hover {
+    color: #0077B5;
+  }
+  
+  /* DZ10 Card - No borders, whitespace separation, headline hover to McKinsey Blue */
+  .dz-card {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    transition: none;
+  }
+  .dz-card:hover .dz-card-title {
+    color: #0077B5;
+  }
+  .dz-card-title {
+    transition: color 0.2s ease;
+  }
+  
+  /* DZ10 Section backgrounds */
+  .dz-bg-white {
+    background-color: #FFFFFF;
+  }
+  .dz-bg-subtle {
+    background-color: #F5F5F5;
+  }
+  .dz-bg-navy {
+    background-color: #051C2C;
+  }
+  
+  /* DZ10 Section padding */
+  .dz-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  @media (min-width: 768px) {
+    .dz-section {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+}
+
+@layer utilities {
+  .page-transition {
+    animation: fadeIn 0.3s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* DZ10 Micro-Animation Utilities */
+  
+  /* Card hover lift effect */
+  .card-lift {
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  }
+  .card-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px -12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Card hover scale effect */
+  .card-scale {
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  }
+  .card-scale:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Premium card with lift + shadow depth */
+  .card-premium {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card-premium:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 25px 60px -20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Icon container animation */
+  .icon-animate {
+    transition: all 0.3s ease-out;
+  }
+  .group:hover .icon-animate {
+    transform: scale(1.1);
+    background-color: var(--color-dz-mckinsey-blue);
+    color: white;
+  }
+  
+  /* Text reveal animation on hover */
+  .text-reveal {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: all 0.3s ease-out;
+  }
+  .group:hover .text-reveal {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Image zoom on hover */
+  .img-zoom {
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .group:hover .img-zoom {
+    transform: scale(1.05);
+  }
+  
+  /* Arrow slide animation */
+  .arrow-slide {
+    transition: transform 0.3s ease-out;
+  }
+  .group:hover .arrow-slide {
+    transform: translateX(4px);
+  }
+  
+  /* Stagger animation delay utilities */
+  .stagger-1 { transition-delay: 0.05s; }
+  .stagger-2 { transition-delay: 0.1s; }
+  .stagger-3 { transition-delay: 0.15s; }
+  .stagger-4 { transition-delay: 0.2s; }
+  .stagger-5 { transition-delay: 0.25s; }
+  .stagger-6 { transition-delay: 0.3s; }
+  
+  /* Button hover effects */
+  .btn-hover-lift {
+    transition: all 0.3s ease-out;
+  }
+  .btn-hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px -8px rgba(0, 119, 181, 0.4);
+  }
+  
+  /* Smooth color transitions */
+  .color-transition {
+    transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+  }
+  
+  /* Pulse animation for CTAs */
+  @keyframes subtle-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(0, 119, 181, 0.4); }
+    50% { box-shadow: 0 0 0 8px rgba(0, 119, 181, 0); }
+  }
+  .pulse-cta {
+    animation: subtle-pulse 2s infinite;
+  }
+  
+  /* Shimmer effect for loading states */
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  
+  /* Gradient shift animation for AI badge */
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .shimmer {
+    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+  .animate-shimmer {
+    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.2) 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+  
+  /* Touch-friendly utilities */
+  .touch-manipulation {
+    touch-action: manipulation;
+  }
+  
+  /* Improved tap highlight for mobile */
+  @media (hover: none) and (pointer: coarse) {
+    button, a, [role="button"] {
+      -webkit-tap-highlight-color: rgba(0, 119, 181, 0.1);
+    }
+  }
+  
+  /* Hide scrollbar for horizontal scroll sections */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

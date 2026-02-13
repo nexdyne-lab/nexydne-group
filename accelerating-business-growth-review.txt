@@ -1,0 +1,23 @@
+Accelerating Business Growth Page Review - January 30, 2026
+
+PAGE STRUCTURE VERIFIED:
+1. Hero Section - Black background with white text, breadcrumb navigation, hero image on right
+2. Statistics Section - Bain-style clean layout with vertical dividers (90+, 3.4x, $180M+, 47%)
+3. Narrative Section - McKinsey-style with bold callouts about growth challenges
+4. What's Your Growth Ambition - 6 Bain hover cards with interactive effects
+5. AI in Sales & Marketing - Two-column section with bullet points, Real Outcomes, How We Help
+6. A Closer Look - Insight cards with arrows
+7. How We Can Help - 6 Bain hover cards for services
+8. Client Results - Tabbed section with 3 case studies
+9. Consulting Services - Link list section
+10. Growth Ecosystem - Partner logos section
+11. Ready to Talk CTA - Bain-style two-column layout
+
+UNIQUE NEXDYNE COPY CONFIRMED:
+- Statistics: 90+ programs, 3.4x revenue growth, $180M+ new revenue, 47% CAC reduction
+- Narrative: "Growth has never been harder—or more urgent" with original bold callouts
+- Hover cards: Original titles like "Launch direct-to-consumer channels", "Productize your expertise"
+- AI section: "AI isn't replacing your growth team—it's multiplying their impact"
+- Client results: E-commerce launch (340% growth), SaaS productization (78% recurring), Marketplace model (12x volume)
+
+ALL SECTIONS RENDERING CORRECTLY
