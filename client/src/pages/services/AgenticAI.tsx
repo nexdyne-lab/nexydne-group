@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import BainHoverCard from "@/components/BainHoverCard";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { SEO } from "@/components/SEO";
@@ -163,41 +164,26 @@ export default function AgenticAI() {
             </h2>
             
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">Agentic AI Systems</h3>
-                <p className="text-slate-600">
-                  Autonomous AI agents that can plan, execute, and adapt to complete complex tasks. 
-                  These systems handle multi-step workflows, make decisions based on context, and 
-                  escalate to humans when appropriate.
-                </p>
-              </div>
-              
-              <div className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">Generative AI Applications</h3>
-                <p className="text-slate-600">
-                  Custom applications leveraging large language models for content generation, 
-                  summarization, analysis, and customer interaction. We build solutions that 
-                  understand your domain and speak your language.
-                </p>
-              </div>
-              
-              <div className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">Intelligent Document Processing</h3>
-                <p className="text-slate-600">
-                  AI systems that extract, classify, and process information from unstructured 
-                  documents. We automate the document-heavy workflows that consume your team's 
-                  time and introduce errors.
-                </p>
-              </div>
-              
-              <div className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">AI-Powered Decision Support</h3>
-                <p className="text-slate-600">
-                  Systems that analyze data, identify patterns, and provide recommendations to 
-                  human decision-makers. We build AI that augments human judgment rather than 
-                  replacing it.
-                </p>
-              </div>
+              <BainHoverCard
+                title="Agentic AI Systems"
+                description="Autonomous AI agents that can plan, execute, and adapt to complete complex tasks. These systems handle multi-step workflows, make decisions based on context, and escalate to humans when appropriate."
+                link="/capabilities/agentic-ai"
+              />
+              <BainHoverCard
+                title="Generative AI Applications"
+                description="Custom applications leveraging large language models for content generation, summarization, analysis, and customer interaction. We build solutions that understand your domain and speak your language."
+                link="/capabilities/generative-ai"
+              />
+              <BainHoverCard
+                title="Intelligent Document Processing"
+                description="AI systems that extract, classify, and process information from unstructured documents. We automate the document-heavy workflows that consume your team's time and introduce errors."
+                link="/capabilities/process-automation"
+              />
+              <BainHoverCard
+                title="AI-Powered Decision Support"
+                description="Systems that analyze data, identify patterns, and provide recommendations to human decision-makers. We build AI that augments human judgment rather than replacing it."
+                link="/solutions/process-optimization/ai-powered-decision-support"
+              />
             </div>
           </div>
         </div>
@@ -263,29 +249,16 @@ export default function AgenticAI() {
             <h2 className="text-2xl font-['EB Garamond',serif] font-bold text-slate-900 mb-8">Related Services</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
-              <Link href="/capabilities/ai-technology-consulting/services/cloud-architecture" className="group block p-6 border border-slate-200 rounded-lg hover:border-blue-600 transition-colors">
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-blue-600 mb-2">
-                  Cloud & Data Architecture Modernization
-                </h3>
-                <p className="text-slate-600 text-sm mb-4">
-                  Build the data foundation your AI initiatives require.
-                </p>
-                <span className="inline-flex items-center text-blue-600 text-sm font-medium">
-                  Learn more <ArrowRight className="w-4 h-4 ml-1" />
-                </span>
-              </Link>
-              
-              <Link href="/capabilities/ai-technology-consulting/services/intelligent-adoption" className="group block p-6 border border-slate-200 rounded-lg hover:border-blue-600 transition-colors">
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-blue-600 mb-2">
-                  Intelligent Adoption & Change Management
-                </h3>
-                <p className="text-slate-600 text-sm mb-4">
-                  Ensure your workforce embraces AI transformation.
-                </p>
-                <span className="inline-flex items-center text-blue-600 text-sm font-medium">
-                  Learn more <ArrowRight className="w-4 h-4 ml-1" />
-                </span>
-              </Link>
+              <BainHoverCard
+                title="Cloud & Data Architecture Modernization"
+                description="Build the data foundation your AI initiatives require."
+                link="/capabilities/ai-technology-consulting/services/cloud-architecture"
+              />
+              <BainHoverCard
+                title="Intelligent Adoption & Change Management"
+                description="Ensure your workforce embraces AI transformation."
+                link="/capabilities/ai-technology-consulting/services/intelligent-adoption"
+              />
             </div>
           </div>
         </div>

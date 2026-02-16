@@ -1,7 +1,8 @@
+import { motion } from "framer-motion";
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { ArrowRight, MessageSquare, Smartphone, Users, Zap } from 'lucide-react';
+import { ArrowRight, MessageSquare, Smartphone, Users, Zap, ChevronRight } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { RelatedContent } from "@/components/RelatedContent";
@@ -11,34 +12,50 @@ export default function DigitalEngagement() {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
-      {/* Breadcrumb */}
-      <div className="container py-4 text-sm text-muted-foreground">
-        <Link href="/" className="hover:text-foreground">Home</Link>
-        <span className="mx-2">/</span>
-        <Link href="/solutions/customer-intelligence" className="hover:text-foreground">Data-Driven Customer Intelligence</Link>
-        <span className="mx-2">/</span>
-        <span>Digital Engagement</span>
-      </div>
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#FF6B35] via-[#6B1F3D] to-[#8B2F4D] text-white overflow-hidden">
-        <div className="container py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-sm font-semibold tracking-wide uppercase mb-4 opacity-90">SERVICES / DIGITAL ENGAGEMENT</p>
-              <h1 className="text-5xl font-bold mb-3 eb-garamond">Digital engagement</h1>
-              <p className="text-xl leading-relaxed opacity-95">
-                Build meaningful customer relationships through intelligent, omnichannel engagement strategies that deliver personalized experiences at every touchpoint.
+      {/* Hero Section - Black Background (matches IntelligentProcessOptimization) */}
+      <section className="relative min-h-[70vh] md:min-h-[80vh] bg-black pt-20">
+        <div className="container px-4 sm:px-6 md:px-12 h-full">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-0 items-center min-h-[60vh] md:min-h-[70vh]">
+            {/* Left Column - Text Content */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="max-w-xl py-12 lg:py-0 lg:pr-12"
+            >
+              {/* Breadcrumb */}
+              <nav className="flex items-center space-x-2 text-sm text-white/50 mb-8">
+                <Link href="/" className="hover:text-white transition-colors">Home</Link>
+                <ChevronRight className="w-3 h-3" />
+                <Link href="/solutions" className="hover:text-white transition-colors">Solutions</Link>
+                <ChevronRight className="w-3 h-3" />
+                <span className="text-white/70">Digital Engagement</span>
+              </nav>
+
+              <h1 className="text-4xl sm:text-5xl md:text-6xl eb-garamond tracking-tight text-white leading-[1.1] mb-3">
+                Digital Engagement
+              </h1>
+
+              <p className="text-lg md:text-xl text-white/70 leading-relaxed italic">
+                Build meaningful customer relationships through intelligent, omnichannel engagement at every touchpoint.
               </p>
-            </div>
-            <div className="relative">
-              <img 
-                src="/digital-engagement-hero.5ffb7f81.jpg" 
-                alt="Digital Engagement" 
-                className="rounded-lg shadow-2xl"
+            </motion.div>
+
+            {/* Right Column - Hero Image */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              className="relative h-[300px] sm:h-[400px] lg:h-full lg:absolute lg:right-0 lg:top-0 lg:w-1/2"
+            >
+              <img
+                src="/digital-engagement-hero.5ffb7f81.jpg"
+                alt="Digital Engagement - Omnichannel customer experience"
+                className="w-full h-full object-cover"
               />
-            </div>
+              <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent lg:block hidden" />
+            </motion.div>
           </div>
         </div>
       </section>

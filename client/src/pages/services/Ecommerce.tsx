@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import BainHoverCard from "@/components/BainHoverCard";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { AnimatedSection } from "@/components/AnimatedSection";
@@ -95,66 +96,27 @@ export default function Ecommerce() {
             </div>
 
             {/* Right: Service Cards */}
-            <div className="space-y-4 md:space-y-6">
-              <Link href="/solutions/business-growth/chatbots" className="block group">
-                <Card className="p-5 md:p-6 bg-white/10 backdrop-blur-sm hover:bg-white/15 border-2 border-[#00d4ff]/20 hover:border-[#00d4ff] hover:shadow-2xl hover:shadow-[#00d4ff]/30 transition-all relative overflow-hidden group-hover:scale-[1.02]">
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#00d4ff]/0 via-[#00d4ff]/10 to-[#00d4ff]/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  <div className="relative z-10 flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <h3 className="text-xl md:text-2xl font-bold mb-2 text-white group-hover:text-[#00d4ff] transition-colors">Chatbots</h3>
-                      <p className="text-sm md:text-base text-white/70 group-hover:text-white/90 transition-colors">
-                        Enhance customer interactions with custom chatbot technology. We help you create frictionless, smart communication that customers love.
-                      </p>
-                    </div>
-                    <ArrowRight className="w-5 h-5 md:w-6 md:h-6 text-white/40 group-hover:text-[#00d4ff] group-hover:translate-x-1 transition-all flex-shrink-0" />
-                  </div>
-                </Card>
-              </Link>
-
-              <Link href="/solutions/native-apps" className="block group">
-                <Card className="p-5 md:p-6 bg-white/10 backdrop-blur-sm hover:bg-white/15 border-2 border-[#00d4ff]/20 hover:border-[#00d4ff] hover:shadow-2xl hover:shadow-[#00d4ff]/30 transition-all relative overflow-hidden group-hover:scale-[1.02]">
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#00d4ff]/0 via-[#00d4ff]/10 to-[#00d4ff]/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  <div className="relative z-10 flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <h3 className="text-xl md:text-2xl font-bold mb-2 text-white group-hover:text-[#00d4ff] transition-colors">Native apps</h3>
-                      <p className="text-sm md:text-base text-white/70 group-hover:text-white/90 transition-colors">
-                        Native apps: powerful and integrated mobile experiences for maximum engagement.
-                      </p>
-                    </div>
-                    <ArrowRight className="w-5 h-5 md:w-6 md:h-6 text-white/40 group-hover:text-[#00d4ff] group-hover:translate-x-1 transition-all flex-shrink-0" />
-                  </div>
-                </Card>
-              </Link>
-
-              <Link href="/solutions/business-growth/ecommerce-platforms" className="block group">
-                <Card className="p-5 md:p-6 bg-white/10 backdrop-blur-sm hover:bg-white/15 border-2 border-[#00d4ff]/20 hover:border-[#00d4ff] hover:shadow-2xl hover:shadow-[#00d4ff]/30 transition-all relative overflow-hidden group-hover:scale-[1.02]">
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#00d4ff]/0 via-[#00d4ff]/10 to-[#00d4ff]/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  <div className="relative z-10 flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <h3 className="text-xl md:text-2xl font-bold mb-2 text-white group-hover:text-[#00d4ff] transition-colors">E-commerce platforms</h3>
-                      <p className="text-sm md:text-base text-white/70 group-hover:text-white/90 transition-colors">
-                        Want to hit your growth targets with a new e-commerce platform? Enhance your e-commerce site with our optimization and replatforming tools.
-                      </p>
-                    </div>
-                    <ArrowRight className="w-5 h-5 md:w-6 md:h-6 text-white/40 group-hover:text-[#00d4ff] group-hover:translate-x-1 transition-all flex-shrink-0" />
-                  </div>
-                </Card>
-              </Link>
-
-              <Link href="/solutions/business-growth/conversion-optimization" className="block group">
-                <Card className="p-5 md:p-6 bg-white/10 backdrop-blur-sm hover:bg-white/15 border-2 border-[#00d4ff]/20 hover:border-[#00d4ff] hover:shadow-2xl hover:shadow-[#00d4ff]/30 transition-all relative overflow-hidden group-hover:scale-[1.02]">
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#00d4ff]/0 via-[#00d4ff]/10 to-[#00d4ff]/0 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  <div className="relative z-10 flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <h3 className="text-xl md:text-2xl font-bold mb-2 text-white group-hover:text-[#00d4ff] transition-colors">Conversion rate optimization</h3>
-                      <p className="text-sm md:text-base text-white/70 group-hover:text-white/90 transition-colors">
-                        Want to convert visitors into customers? Turn your website into a profit-making machine with a proven CRO strategy for maximum impact.
-                      </p>
-                    </div>
-                    <ArrowRight className="w-5 h-5 md:w-6 md:h-6 text-white/40 group-hover:text-[#00d4ff] group-hover:translate-x-1 transition-all flex-shrink-0" />
-                  </div>
-                </Card>
-              </Link>
+            <div className="grid md:grid-cols-2 gap-6">
+              <BainHoverCard
+                title="Chatbots"
+                description="Enhance customer interactions with custom chatbot technology. We help you create frictionless, smart communication that customers love."
+                link="/solutions/business-growth/chatbots"
+              />
+              <BainHoverCard
+                title="Native apps"
+                description="Native apps: powerful and integrated mobile experiences for maximum engagement."
+                link="/solutions/native-apps"
+              />
+              <BainHoverCard
+                title="E-commerce platforms"
+                description="Want to hit your growth targets with a new e-commerce platform? Enhance your e-commerce site with our optimization and replatforming tools."
+                link="/solutions/business-growth/ecommerce-platforms"
+              />
+              <BainHoverCard
+                title="Conversion rate optimization"
+                description="Want to convert visitors into customers? Turn your website into a profit-making machine with a proven CRO strategy for maximum impact."
+                link="/solutions/business-growth/conversion-optimization"
+              />
             </div>
           </div>
         </div>

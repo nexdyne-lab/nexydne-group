@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Database, Layers, Zap, Shield, BarChart3, GitBranch } from "lucide-react";
+import BainHoverCard from "@/components/BainHoverCard";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
@@ -93,9 +94,9 @@ export default function DataPlatform() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`group ${index > 0 ? 'border-l border-gray-200 pl-8' : ''}`}
+                className={`${index > 0 ? 'border-l border-gray-200 pl-8' : ''}`}
               >
-                <div className="border-l-4 border-l-transparent group-hover:border-l-[#06b6d4] pl-4 transition-all duration-300">
+                <div>
                   <div className="text-5xl md:text-6xl font-bold text-[#051C2C] mb-4">{item.metric}</div>
                   <p className="text-lg text-[#051C2C]/60">{item.label}</p>
                 </div>
@@ -238,35 +239,29 @@ export default function DataPlatform() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                icon: Database,
                 title: "Cloud Data Warehouses",
                 description: "Modern warehouses on Snowflake, Databricks, BigQuery, or Redshift. Elastic scaling, separation of compute and storage, and native support for semi-structured data."
               },
               {
-                icon: Layers,
                 title: "Data Lakes & Lakehouses",
                 description: "Unified platforms that combine the flexibility of data lakes with the performance of warehouses. Delta Lake, Iceberg, and Hudi implementations."
               },
               {
-                icon: Zap,
                 title: "Real-Time Streaming",
                 description: "Event-driven architectures with Kafka, Kinesis, and Flink. Process millions of events per second for real-time analytics and operational intelligence."
               },
               {
-                icon: GitBranch,
                 title: "Data Integration & ETL",
                 description: "Modern ELT pipelines with dbt, Fivetran, and Airbyte. Automated data quality checks, lineage tracking, and incremental processing."
               },
               {
-                icon: Shield,
                 title: "Data Governance",
                 description: "Catalogs, lineage, and access controls that make data discoverable and compliant. Unity Catalog, Alation, and Collibra implementations."
               },
               {
-                icon: BarChart3,
                 title: "Analytics & BI",
                 description: "Self-service analytics platforms that empower business users. Looker, Tableau, Power BI, and custom embedded analytics solutions."
               }
@@ -277,23 +272,8 @@ export default function DataPlatform() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="group"
               >
-                <div className="h-full min-h-[200px] p-8 bg-white border-l-4 border-l-transparent group-hover:border-l-[#CC0000] border border-gray-200 transition-all duration-300 flex flex-col">
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-serif font-bold text-[#051C2C] leading-tight origin-top-left transition-all duration-300 group-hover:text-base group-hover:mb-2">
-                      {item.title}
-                    </h3>
-                    
-                    <p className="text-[#051C2C]/70 leading-relaxed text-sm max-h-0 overflow-hidden opacity-0 group-hover:max-h-[120px] group-hover:opacity-100 group-hover:mt-3 transition-all duration-300 ease-in-out">
-                      {item.description}
-                    </p>
-                  </div>
-                  
-                  <div className="flex items-center text-[#CC0000] text-sm font-semibold mt-auto pt-4">
-                    Read More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                  </div>
-                </div>
+                <BainHoverCard title={item.title} description={item.description} />
               </motion.div>
             ))}
           </div>
@@ -470,7 +450,7 @@ export default function DataPlatform() {
             </h2>
           </motion.div>
           
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-4 gap-6">
             {[
               {
                 title: "Cloud Infrastructure",
@@ -494,25 +474,8 @@ export default function DataPlatform() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group"
               >
-                <Link href={capability.link} className="block h-full">
-                  <div className="h-full min-h-[200px] p-8 bg-white border-l-4 border-l-transparent group-hover:border-l-[#CC0000] border border-gray-200 transition-all duration-300 flex flex-col">
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-serif font-bold text-[#051C2C] leading-tight origin-top-left transition-all duration-300 group-hover:text-base group-hover:mb-2">
-                        {capability.title}
-                      </h3>
-                      
-                      <p className="text-[#051C2C]/70 leading-relaxed text-sm max-h-0 overflow-hidden opacity-0 group-hover:max-h-[120px] group-hover:opacity-100 group-hover:mt-3 transition-all duration-300 ease-in-out">
-                        {capability.description}
-                      </p>
-                    </div>
-                    
-                    <div className="flex items-center text-[#CC0000] text-sm font-semibold mt-auto pt-4">
-                      Read More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                    </div>
-                  </div>
-                </Link>
+                <BainHoverCard title={capability.title} description={capability.description} link={capability.link} />
               </motion.div>
             ))}
           </div>

@@ -80,7 +80,7 @@ export default function InternetOfThings() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="text-center md:text-left border-l-4 border-[#0077B5] pl-6"
+                className="text-center md:text-left"
               >
                 <div className="text-4xl md:text-5xl font-bold text-[#051C2C] mb-2">{stat.value}</div>
                 <div className="text-sm text-gray-600">{stat.label}</div>

@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Bot, Zap, Plug } from "lucide-react";
+import { ArrowRight, Bot, Zap, Plug, ChevronRight } from "lucide-react";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import { RelatedContent } from "@/components/RelatedContent";
@@ -10,33 +11,50 @@ export default function RPA() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-red-900 via-[#2D5BFF] to-[#4169FF] text-white py-20">
-        <div className="container">
-          {/* Breadcrumb */}
-          <div className="flex items-center gap-2 text-sm mb-8 text-white/80">
-            <Link href="/solutions/process-automation" className="hover:text-white">
-              Services
-            </Link>
-            <span>/</span>
-            <Link href="/solutions/process-automation" className="hover:text-white">
-              Process Automation
-            </Link>
-            <span>/</span>
-            <span className="text-white">RPA</span>
-          </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-3 eb-garamond">
+      {/* Hero Section - Black Background (matches IntelligentProcessOptimization) */}
+      <section className="relative min-h-[70vh] md:min-h-[80vh] bg-black pt-20">
+        <div className="container px-4 sm:px-6 md:px-12 h-full">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-0 items-center min-h-[60vh] md:min-h-[70vh]">
+            {/* Left Column - Text Content */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="max-w-xl py-12 lg:py-0 lg:pr-12"
+            >
+              {/* Breadcrumb */}
+              <nav className="flex items-center space-x-2 text-sm text-white/50 mb-8">
+                <Link href="/" className="hover:text-white transition-colors">Home</Link>
+                <ChevronRight className="w-3 h-3" />
+                <Link href="/solutions" className="hover:text-white transition-colors">Solutions</Link>
+                <ChevronRight className="w-3 h-3" />
+                <span className="text-white/70">RPA</span>
+              </nav>
+
+              <h1 className="text-4xl sm:text-5xl md:text-6xl eb-garamond tracking-tight text-white leading-[1.1] mb-3">
                 Robotic Process Automation (RPA)
               </h1>
-            </div>
-            <div>
-              <p className="text-xl text-white/90">
-                Software robots execute repetitive tasks with perfect consistency—24/7, zero errors, no breaks. Deploy intelligent automation that handles data entry, invoice processing, and system updates while your team focuses on strategic work that drives growth.
+
+              <p className="text-lg md:text-xl text-white/70 leading-relaxed italic">
+                Software robots execute repetitive tasks with perfect consistency—24/7, zero errors, no breaks.
               </p>
-            </div>
+            </motion.div>
+
+            {/* Right Column - Hero Image */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              className="relative h-[300px] sm:h-[400px] lg:h-full lg:absolute lg:right-0 lg:top-0 lg:w-1/2"
+            >
+              <img
+                src="/rpa-robot.398cb9df.jpg"
+                alt="RPA - Robotic Process Automation"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent lg:block hidden" />
+            </motion.div>
           </div>
         </div>
       </section>

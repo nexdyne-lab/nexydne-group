@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import BainHoverCard from "@/components/BainHoverCard";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { SEO } from "@/components/SEO";
@@ -163,41 +164,26 @@ export default function CyberResilience() {
             </h2>
             
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">Data Privacy & Protection</h3>
-                <p className="text-slate-600">
-                  Comprehensive data protection strategies including encryption, access controls, and 
-                  data loss prevention. We ensure sensitive information remains secure throughout its 
-                  lifecycle, from creation to deletion.
-                </p>
-              </div>
-              
-              <div className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">Regulatory Compliance</h3>
-                <p className="text-slate-600">
-                  Expert guidance on HIPAA, SOC 2, GDPR, CCPA, and industry-specific regulations. 
-                  We help you achieve and maintain compliance with automated monitoring and 
-                  streamlined audit processes.
-                </p>
-              </div>
-              
-              <div className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">Identity & Access Management</h3>
-                <p className="text-slate-600">
-                  Modern IAM solutions that balance security with user experience. We implement 
-                  single sign-on, multi-factor authentication, and role-based access controls 
-                  that protect resources without frustrating users.
-                </p>
-              </div>
-              
-              <div className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">Incident Response Planning</h3>
-                <p className="text-slate-600">
-                  Comprehensive incident response plans and playbooks that prepare your organization 
-                  to respond effectively when security events occur. We conduct tabletop exercises 
-                  and simulations to ensure readiness.
-                </p>
-              </div>
+              <BainHoverCard
+                title="Data Privacy & Protection"
+                description="Comprehensive data protection strategies including encryption, access controls, and data loss prevention. We ensure sensitive information remains secure throughout its lifecycle, from creation to deletion."
+                link="/solutions/enterprise-transformation/security-compliance"
+              />
+              <BainHoverCard
+                title="Regulatory Compliance"
+                description="Expert guidance on HIPAA, SOC 2, GDPR, CCPA, and industry-specific regulations. We help you achieve and maintain compliance with automated monitoring and streamlined audit processes."
+                link="/solutions/security-compliance"
+              />
+              <BainHoverCard
+                title="Identity & Access Management"
+                description="Modern IAM solutions that balance security with user experience. We implement single sign-on, multi-factor authentication, and role-based access controls that protect resources without frustrating users."
+                link="/solutions/enterprise-transformation/security-compliance"
+              />
+              <BainHoverCard
+                title="Incident Response Planning"
+                description="Comprehensive incident response plans and playbooks that prepare your organization to respond effectively when security events occur. We conduct tabletop exercises and simulations to ensure readiness."
+                link="/solutions/enterprise-transformation/security-compliance"
+              />
             </div>
           </div>
         </div>
@@ -257,29 +243,16 @@ export default function CyberResilience() {
             <h2 className="text-2xl font-['EB Garamond',serif] font-bold text-slate-900 mb-8">Related Services</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
-              <Link href="/capabilities/ai-technology-consulting/services/cloud-architecture" className="group block p-6 border border-slate-200 rounded-lg hover:border-emerald-600 transition-colors">
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-emerald-600 mb-2">
-                  Cloud & Data Architecture Modernization
-                </h3>
-                <p className="text-slate-600 text-sm mb-4">
-                  Build the future-proof foundation your AI initiatives require.
-                </p>
-                <span className="inline-flex items-center text-emerald-600 text-sm font-medium">
-                  Learn more <ArrowRight className="w-4 h-4 ml-1" />
-                </span>
-              </Link>
-              
-              <Link href="/capabilities/ai-technology-consulting/services/intelligent-adoption" className="group block p-6 border border-slate-200 rounded-lg hover:border-emerald-600 transition-colors">
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-emerald-600 mb-2">
-                  Intelligent Adoption & Change Management
-                </h3>
-                <p className="text-slate-600 text-sm mb-4">
-                  The human element determines transformation success.
-                </p>
-                <span className="inline-flex items-center text-emerald-600 text-sm font-medium">
-                  Learn more <ArrowRight className="w-4 h-4 ml-1" />
-                </span>
-              </Link>
+              <BainHoverCard
+                title="Cloud & Data Architecture Modernization"
+                description="Build the future-proof foundation your AI initiatives require."
+                link="/capabilities/ai-technology-consulting/services/cloud-architecture"
+              />
+              <BainHoverCard
+                title="Intelligent Adoption & Change Management"
+                description="The human element determines transformation success."
+                link="/capabilities/ai-technology-consulting/services/intelligent-adoption"
+              />
             </div>
           </div>
         </div>

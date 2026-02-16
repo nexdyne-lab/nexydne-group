@@ -1,7 +1,8 @@
+import { motion } from "framer-motion";
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { ArrowRight, TrendingUp, Target, Users, Zap } from 'lucide-react';
+import { ArrowRight, TrendingUp, Target, Users, Zap, ChevronRight } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { RelatedContent } from "@/components/RelatedContent";
@@ -11,32 +12,50 @@ export default function CustomerIntelligence() {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
-      {/* Breadcrumb */}
-      <div className="container py-4 text-sm text-muted-foreground">
-        <Link href="/" className="hover:text-foreground">Home</Link>
-        <span className="mx-2">/</span>
-        <span>Data-Driven Customer Intelligence</span>
-      </div>
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#2D5BFF] via-[#4169FF] to-[#5B7FFF] text-white overflow-hidden">
-        <div className="container px-4 sm:px-6 py-12 sm:py-16 lg:py-20">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div>
-              <p className="text-xs sm:text-sm font-semibold tracking-wide uppercase mb-3 sm:mb-4 opacity-90">SERVICES / DATA-DRIVEN CUSTOMER INTELLIGENCE</p>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 eb-garamond">Data-Driven Customer Intelligence</h1>
-              <p className="text-xl leading-relaxed opacity-95">
-                Unlock deep customer insights through advanced analytics. We build intelligent systems that predict behavior, personalize experiences, and drive loyalty at scale.
+      {/* Hero Section - Black Background (matches IntelligentProcessOptimization) */}
+      <section className="relative min-h-[70vh] md:min-h-[80vh] bg-black pt-20">
+        <div className="container px-4 sm:px-6 md:px-12 h-full">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-0 items-center min-h-[60vh] md:min-h-[70vh]">
+            {/* Left Column - Text Content */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="max-w-xl py-12 lg:py-0 lg:pr-12"
+            >
+              {/* Breadcrumb */}
+              <nav className="flex items-center space-x-2 text-sm text-white/50 mb-8">
+                <Link href="/" className="hover:text-white transition-colors">Home</Link>
+                <ChevronRight className="w-3 h-3" />
+                <Link href="/solutions" className="hover:text-white transition-colors">Solutions</Link>
+                <ChevronRight className="w-3 h-3" />
+                <span className="text-white/70">Data-Driven Customer Intelligence</span>
+              </nav>
+
+              <h1 className="text-4xl sm:text-5xl md:text-6xl eb-garamond tracking-tight text-white leading-[1.1] mb-3">
+                Data-Driven Customer Intelligence
+              </h1>
+
+              <p className="text-lg md:text-xl text-white/70 leading-relaxed italic">
+                Unlock deep customer insights through advanced analytics. Predict behavior, personalize experiences, and drive loyalty at scale.
               </p>
-            </div>
-            <div className="relative">
-              <img 
-                src="/customer-intelligence-hero.57680a35.jpg" 
-                alt="Customer Intelligence Analytics" 
-                className="rounded-lg shadow-2xl"
+            </motion.div>
+
+            {/* Right Column - Hero Image */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              className="relative h-[300px] sm:h-[400px] lg:h-full lg:absolute lg:right-0 lg:top-0 lg:w-1/2"
+            >
+              <img
+                src="/customer-intelligence-hero.57680a35.jpg"
+                alt="Data-Driven Customer Intelligence - Analytics and insights"
+                className="w-full h-full object-cover"
               />
-            </div>
+              <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent lg:block hidden" />
+            </motion.div>
           </div>
         </div>
       </section>

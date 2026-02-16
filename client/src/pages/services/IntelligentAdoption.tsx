@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import BainHoverCard from "@/components/BainHoverCard";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { SEO } from "@/components/SEO";
@@ -164,41 +165,26 @@ export default function IntelligentAdoption() {
             </h2>
             
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">AI Literacy Programs</h3>
-                <p className="text-slate-600">
-                  Comprehensive training that demystifies AI for your workforce. We help employees 
-                  understand what AI can and cannot do, reducing fear and building confidence in 
-                  working alongside intelligent systems.
-                </p>
-              </div>
-              
-              <div className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">Cultural Alignment Workshops</h3>
-                <p className="text-slate-600">
-                  Interactive sessions that address the mindset shifts required for digital 
-                  transformation. We help teams embrace continuous improvement, data-driven 
-                  decision-making, and collaborative problem-solving.
-                </p>
-              </div>
-              
-              <div className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">Change Communication Strategy</h3>
-                <p className="text-slate-600">
-                  Strategic communication plans that keep employees informed and engaged throughout 
-                  transformation. We develop messaging frameworks, communication calendars, and 
-                  feedback mechanisms that maintain momentum.
-                </p>
-              </div>
-              
-              <div className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">Adoption Analytics Dashboard</h3>
-                <p className="text-slate-600">
-                  Real-time visibility into how your workforce is adopting new technologies. 
-                  Our dashboards track usage patterns, identify adoption barriers, and measure 
-                  the business impact of behavioral change.
-                </p>
-              </div>
+              <BainHoverCard
+                title="AI Literacy Programs"
+                description="Comprehensive training that demystifies AI for your workforce. We help employees understand what AI can and cannot do, reducing fear and building confidence in working alongside intelligent systems."
+                link="/capabilities/artificial-intelligence"
+              />
+              <BainHoverCard
+                title="Cultural Alignment Workshops"
+                description="Interactive sessions that address the mindset shifts required for digital transformation. We help teams embrace continuous improvement, data-driven decision-making, and collaborative problem-solving."
+                link="/solutions/process-optimization/change-management-training"
+              />
+              <BainHoverCard
+                title="Change Communication Strategy"
+                description="Strategic communication plans that keep employees informed and engaged throughout transformation. We develop messaging frameworks, communication calendars, and feedback mechanisms that maintain momentum."
+                link="/solutions/process-optimization/change-management-training"
+              />
+              <BainHoverCard
+                title="Adoption Analytics Dashboard"
+                description="Real-time visibility into how your workforce is adopting new technologies. Our dashboards track usage patterns, identify adoption barriers, and measure the business impact of behavioral change."
+                link="/solutions/enterprise-transformation/platform-engineering"
+              />
             </div>
           </div>
         </div>
@@ -256,29 +242,16 @@ export default function IntelligentAdoption() {
             <h2 className="text-2xl font-['EB Garamond',serif] font-bold text-slate-900 mb-8">Related Services</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
-              <Link href="/capabilities/ai-technology-consulting/services/agentic-ai" className="group block p-6 border border-slate-200 rounded-lg hover:border-violet-600 transition-colors">
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-violet-600 mb-2">
-                  Agentic AI & Generative AI
-                </h3>
-                <p className="text-slate-600 text-sm mb-4">
-                  Design and deploy autonomous AI systems that redefine operations.
-                </p>
-                <span className="inline-flex items-center text-violet-600 text-sm font-medium">
-                  Learn more <ArrowRight className="w-4 h-4 ml-1" />
-                </span>
-              </Link>
-              
-              <Link href="/capabilities/ai-technology-consulting/services/cyber-resilience" className="group block p-6 border border-slate-200 rounded-lg hover:border-violet-600 transition-colors">
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-violet-600 mb-2">
-                  Cyber Resilience & Data Privacy
-                </h3>
-                <p className="text-slate-600 text-sm mb-4">
-                  Security-by-Design integrated into every transformation.
-                </p>
-                <span className="inline-flex items-center text-violet-600 text-sm font-medium">
-                  Learn more <ArrowRight className="w-4 h-4 ml-1" />
-                </span>
-              </Link>
+              <BainHoverCard
+                title="Agentic AI & Generative AI"
+                description="Design and deploy autonomous AI systems that redefine operations."
+                link="/capabilities/ai-technology-consulting/services/agentic-ai"
+              />
+              <BainHoverCard
+                title="Cyber Resilience & Data Privacy"
+                description="Security-by-Design integrated into every transformation."
+                link="/capabilities/ai-technology-consulting/services/cyber-resilience"
+              />
             </div>
           </div>
         </div>

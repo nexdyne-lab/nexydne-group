@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import BainHoverCard from "@/components/BainHoverCard";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { SEO } from "@/components/SEO";
@@ -163,41 +164,26 @@ export default function CloudDataArchitecture() {
             </h2>
             
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">Legacy System Migration</h3>
-                <p className="text-slate-600">
-                  Systematic migration of on-premise systems to cloud infrastructure with zero data loss 
-                  and minimal downtime. We handle complex dependencies and ensure business continuity 
-                  throughout the transition.
-                </p>
-              </div>
-              
-              <div className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">Data Lake & Warehouse Design</h3>
-                <p className="text-slate-600">
-                  Modern data architectures that unify structured and unstructured data sources. 
-                  We implement data lakes that serve both operational reporting and advanced analytics, 
-                  including machine learning workloads.
-                </p>
-              </div>
-              
-              <div className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">API & Integration Layer</h3>
-                <p className="text-slate-600">
-                  Robust API architectures that enable seamless integration between systems. 
-                  We design integration layers that support both internal applications and 
-                  external partner ecosystems.
-                </p>
-              </div>
-              
-              <div className="bg-slate-50 p-8 rounded-lg">
-                <h3 className="text-lg font-bold text-slate-900 mb-3">Infrastructure as Code</h3>
-                <p className="text-slate-600">
-                  Automated infrastructure provisioning and management using modern IaC practices. 
-                  This ensures consistency, enables rapid scaling, and reduces the operational 
-                  burden on your IT team.
-                </p>
-              </div>
+              <BainHoverCard
+                title="Legacy System Migration"
+                description="Systematic migration of on-premise systems to cloud infrastructure with zero data loss and minimal downtime. We handle complex dependencies and ensure business continuity throughout the transition."
+                link="/solutions/legacy-modernization"
+              />
+              <BainHoverCard
+                title="Data Lake & Warehouse Design"
+                description="Modern data architectures that unify structured and unstructured data sources. We implement data lakes that serve both operational reporting and advanced analytics, including machine learning workloads."
+                link="/solutions/data-platform"
+              />
+              <BainHoverCard
+                title="API & Integration Layer"
+                description="Robust API architectures that enable seamless integration between systems. We design integration layers that support both internal applications and external partner ecosystems."
+                link="/solutions/api-integration"
+              />
+              <BainHoverCard
+                title="Infrastructure as Code"
+                description="Automated infrastructure provisioning and management using modern IaC practices. This ensures consistency, enables rapid scaling, and reduces the operational burden on your IT team."
+                link="/solutions/devops-automation"
+              />
             </div>
           </div>
         </div>
@@ -250,29 +236,16 @@ export default function CloudDataArchitecture() {
             <h2 className="text-2xl font-['EB Garamond',serif] font-bold text-slate-900 mb-8">Related Services</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
-              <Link href="/capabilities/ai-technology-consulting/services/cyber-resilience" className="group block p-6 border border-slate-200 rounded-lg hover:border-blue-600 transition-colors">
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-blue-600 mb-2">
-                  Cyber Resilience & Data Privacy
-                </h3>
-                <p className="text-slate-600 text-sm mb-4">
-                  Security-by-Design integrated into every transformation.
-                </p>
-                <span className="inline-flex items-center text-blue-600 text-sm font-medium">
-                  Learn more <ArrowRight className="w-4 h-4 ml-1" />
-                </span>
-              </Link>
-              
-              <Link href="/capabilities/ai-technology-consulting/services/agentic-ai" className="group block p-6 border border-slate-200 rounded-lg hover:border-blue-600 transition-colors">
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-blue-600 mb-2">
-                  Agentic AI & Generative AI
-                </h3>
-                <p className="text-slate-600 text-sm mb-4">
-                  Design and deploy autonomous AI systems that redefine operations.
-                </p>
-                <span className="inline-flex items-center text-blue-600 text-sm font-medium">
-                  Learn more <ArrowRight className="w-4 h-4 ml-1" />
-                </span>
-              </Link>
+              <BainHoverCard
+                title="Cyber Resilience & Data Privacy"
+                description="Security-by-Design integrated into every transformation."
+                link="/capabilities/ai-technology-consulting/services/cyber-resilience"
+              />
+              <BainHoverCard
+                title="Agentic AI & Generative AI"
+                description="Design and deploy autonomous AI systems that redefine operations."
+                link="/capabilities/ai-technology-consulting/services/agentic-ai"
+              />
             </div>
           </div>
         </div>
