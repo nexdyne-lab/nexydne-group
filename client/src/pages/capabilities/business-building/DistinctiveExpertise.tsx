@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'wouter';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import BainHoverCard from '@/components/BainHoverCard';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -477,7 +478,7 @@ export default function DistinctiveExpertise() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { title: "Playbook Selection", description: "We match your business challenge to our library of 200+ proven playbooks, selecting the frameworks most relevant to your industry and growth stage." },
               { title: "Framework Customization", description: "We adapt our standard methodologies to your specific context, competitive landscape, and organizational capabilities." },
@@ -492,23 +493,9 @@ export default function DistinctiveExpertise() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="group"
+                className="h-full"
               >
-                <div className="h-full min-h-[200px] p-8 bg-white border-l-4 border-l-transparent group-hover:border-l-[#CC0000] border border-gray-200 transition-all duration-300 flex flex-col">
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-serif font-bold text-[#051C2C] leading-tight origin-top-left transition-all duration-300 group-hover:text-base group-hover:mb-2">
-                      {item.title}
-                    </h3>
-                    
-                    <p className="text-[#051C2C]/70 leading-relaxed text-sm max-h-0 overflow-hidden opacity-0 group-hover:max-h-[120px] group-hover:opacity-100 group-hover:mt-3 transition-all duration-300 ease-in-out">
-                      {item.description}
-                    </p>
-                  </div>
-                  
-                  <div className="flex items-center text-[#CC0000] text-sm font-semibold mt-auto pt-4">
-                    Read More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                  </div>
-                </div>
+                <BainHoverCard title={item.title} description={item.description} link="#" />
               </motion.div>
             ))}
           </div>
@@ -533,7 +520,7 @@ export default function DistinctiveExpertise() {
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-4 gap-6">
             {[
               { title: "Digital Venture Launch", description: "Apply our proven playbooks to launch new digital ventures with confidence and speed.", link: "/capabilities/business-building/digital-venture-launch" },
               { title: "AI-Powered Acceleration", description: "Leverage AI to enhance our methodologies with predictive insights and automation.", link: "/capabilities/business-building/ai-powered-acceleration" },
@@ -545,25 +532,9 @@ export default function DistinctiveExpertise() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="group"
+                className="h-full"
               >
-                <Link href={item.link}>
-                  <div className="h-full min-h-[200px] p-8 bg-[#f8f8f7] border-l-4 border-l-transparent group-hover:border-l-[#CC0000] border border-gray-200 transition-all duration-300 flex flex-col">
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-serif font-bold text-[#051C2C] leading-tight origin-top-left transition-all duration-300 group-hover:text-base group-hover:mb-2">
-                        {item.title}
-                      </h3>
-                      
-                      <p className="text-[#051C2C]/70 leading-relaxed text-sm max-h-0 overflow-hidden opacity-0 group-hover:max-h-[120px] group-hover:opacity-100 group-hover:mt-3 transition-all duration-300 ease-in-out">
-                        {item.description}
-                      </p>
-                    </div>
-                    
-                    <div className="flex items-center text-[#CC0000] text-sm font-semibold mt-auto pt-4">
-                      Read More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                    </div>
-                  </div>
-                </Link>
+                <BainHoverCard title={item.title} description={item.description} link={item.link} />
               </motion.div>
             ))}
           </div>

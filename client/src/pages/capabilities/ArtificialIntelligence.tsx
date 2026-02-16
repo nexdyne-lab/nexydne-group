@@ -6,40 +6,7 @@ import Navbar from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { useState } from "react";
-
-// H100-style hover card component with red border-left
-function BainHoverCard({ 
-  title, 
-  description, 
-  link 
-}: { 
-  title: string; 
-  description: string; 
-  link: string;
-}) {
-  return (
-    <Link href={link}>
-      <div className="group h-full min-h-[200px] p-8 bg-white border-l-4 border-l-transparent group-hover:border-l-[#CC0000] border border-gray-200 transition-all duration-300 flex flex-col cursor-pointer">
-        <div className="flex-1">
-          {/* Title - shrinks on hover */}
-          <h3 className="text-2xl font-serif font-bold text-[#051C2C] leading-tight origin-top-left transition-all duration-300 group-hover:text-base group-hover:mb-2">
-            {title}
-          </h3>
-          
-          {/* Description - appears on hover */}
-          <p className="text-[#051C2C]/70 leading-relaxed text-sm max-h-0 overflow-hidden opacity-0 group-hover:max-h-[120px] group-hover:opacity-100 group-hover:mt-3 transition-all duration-300 ease-in-out">
-            {description}
-          </p>
-        </div>
-        
-        {/* Read More link - always visible at bottom */}
-        <div className="flex items-center text-[#CC0000] text-sm font-semibold mt-auto pt-4">
-          Read More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-        </div>
-      </div>
-    </Link>
-  );
-}
+import BainHoverCard from "@/components/BainHoverCard";
 
 export default function ArtificialIntelligence() {
   const [activeTab, setActiveTab] = useState(0);
@@ -293,9 +260,9 @@ export default function ArtificialIntelligence() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`group ${index > 0 ? 'md:border-l border-gray-200 md:pl-8' : ''}`}
+                className={`${index > 0 ? 'md:border-l border-gray-200 md:pl-8' : ''}`}
               >
-                <div className="border-l-4 border-l-transparent group-hover:border-l-[#06b6d4] pl-4 transition-all duration-300">
+                <div>
                   <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-3 sm:mb-4">{item.metric}</div>
                   <p className="text-lg text-[#051C2C]/60">{item.label}</p>
                 </div>
@@ -427,7 +394,7 @@ export default function ArtificialIntelligence() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-4 lg:grid-cols-4 gap-6">
             {ambitionCards.map((card, index) => (
               <motion.div
                 key={index}
@@ -548,7 +515,7 @@ export default function ArtificialIntelligence() {
             </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid sm:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6">
             {serviceCards.map((card, index) => (
               <motion.div
                 key={index}

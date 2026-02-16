@@ -7,6 +7,7 @@ import { ArrowRight } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import BainHoverCard from "@/components/BainHoverCard";
 
 export default function VoiceOfCustomer() {
   const [location, setLocation] = useLocation();
@@ -115,7 +116,6 @@ export default function VoiceOfCustomer() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="border-l-4 border-[#0077B5] pl-6"
               >
                 <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-2 sm:mb-3">{item.metric}</div>
                 <p className="text-lg text-[#051C2C]/60">{item.label}</p>
@@ -172,7 +172,7 @@ export default function VoiceOfCustomer() {
             </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {[
               {
                 title: "Omnichannel Feedback Collection",
@@ -205,25 +205,8 @@ export default function VoiceOfCustomer() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="group"
               >
-                <div className="h-full min-h-[200px] p-8 bg-white border-l-4 border-l-transparent group-hover:border-l-[#CC0000] border border-gray-200 transition-all duration-300 flex flex-col">
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-serif font-bold text-[#051C2C] leading-tight origin-top-left transition-all duration-300 group-hover:text-base group-hover:mb-2">
-                      {item.title}
-                    </h3>
-                    
-                    <p className="text-[#051C2C]/70 leading-relaxed text-sm max-h-0 overflow-hidden opacity-0 group-hover:max-h-[120px] group-hover:opacity-100 group-hover:mt-3 transition-all duration-300 ease-in-out">
-                      {item.description}
-                    </p>
-                  </div>
-                  
-                  <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span className="text-[#CC0000] font-semibold text-sm flex items-center">
-                      Learn More <ArrowRight className="ml-1 w-4 h-4" />
-                    </span>
-                  </div>
-                </div>
+                <BainHoverCard title={item.title} description={item.description} />
               </motion.div>
             ))}
           </div>
@@ -343,7 +326,7 @@ export default function VoiceOfCustomer() {
           >
             Expand Your Customer Intelligence
           </motion.h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {relatedCapabilities.map((capability, index) => (
               <motion.div
                 key={index}

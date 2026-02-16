@@ -6,64 +6,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { useState } from "react";
-
-// Bain-style hover card component
-interface BainHoverCardProps {
-  title: string;
-  description: string;
-  link?: string;
-}
-
-function BainHoverCard({ title, description, link = "#" }: BainHoverCardProps) {
-  const [isHovered, setIsHovered] = useState(false);
-  
-  return (
-    <Link href={link}>
-      <div 
-        className="relative bg-white border border-gray-200 p-6 h-[220px] cursor-pointer overflow-hidden group"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        {/* Red top border on hover */}
-        <div 
-          className="absolute top-0 left-0 right-0 h-1 bg-red-600 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]"
-          style={{ transform: isHovered ? 'scaleX(1)' : 'scaleX(0)', transformOrigin: 'left' }}
-        />
-        
-        {/* Title - shrinks on hover */}
-        <h3 
-          className="font-bold text-[#1A1A1A] leading-tight transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]"
-          style={{ 
-            fontSize: isHovered ? '1rem' : '1.25rem',
-            marginBottom: isHovered ? '0.75rem' : '0'
-          }}
-        >
-          {title}
-        </h3>
-        
-        {/* Description - appears on hover */}
-        <p 
-          className="text-gray-600 text-sm leading-relaxed transition-all duration-600 ease-[cubic-bezier(0.4,0,0.2,1)]"
-          style={{ 
-            opacity: isHovered ? 1 : 0,
-            transform: isHovered ? 'translateY(0)' : 'translateY(10px)',
-            maxHeight: isHovered ? '100px' : '0',
-            overflow: 'hidden'
-          }}
-        >
-          {description}
-        </p>
-        
-        {/* Read More link - always at bottom */}
-        <div className="absolute bottom-6 left-6 right-6">
-          <span className="text-red-600 text-sm font-semibold flex items-center">
-            Read More <ArrowRight className="ml-1 w-3 h-3" />
-          </span>
-        </div>
-      </div>
-    </Link>
-  );
-}
+import BainHoverCard from "@/components/BainHoverCard";
 
 export default function ScalableEnterpriseTransformation() {
   // Tab state for client results

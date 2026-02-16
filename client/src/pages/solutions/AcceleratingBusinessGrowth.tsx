@@ -7,61 +7,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import Breadcrumbs from "@/components/Breadcrumbs";
-
-// Bain-style Hover Card Component
-function BainHoverCard({ 
-  title, 
-  description, 
-  link = "#" 
-}: { 
-  title: string; 
-  description: string; 
-  link?: string;
-}) {
-  const [isHovered, setIsHovered] = useState(false);
-  
-  return (
-    <div 
-      className="relative bg-white border border-gray-200 p-8 min-h-[280px] flex flex-col cursor-pointer overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      {/* Red top border on hover */}
-      <div 
-        className={`absolute top-0 left-0 right-0 h-1 bg-[#CC0000] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
-          isHovered ? 'opacity-100' : 'opacity-0'
-        }`}
-      />
-      
-      {/* Title - shrinks on hover */}
-      <h3 
-        className={`font-bold text-[#1A1A1A] leading-tight transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
-          isHovered ? 'text-lg mb-4' : 'text-2xl mb-auto'
-        }`}
-      >
-        {title}
-      </h3>
-      
-      {/* Description - appears on hover */}
-      <div 
-        className={`transition-all duration-600 ease-[cubic-bezier(0.4,0,0.2,1)] overflow-hidden ${
-          isHovered ? 'opacity-100 max-h-40 mb-6' : 'opacity-0 max-h-0'
-        }`}
-      >
-        <p className="text-gray-600 text-sm leading-relaxed">
-          {description}
-        </p>
-      </div>
-      
-      {/* Read More link - always at bottom */}
-      <Link href={link} className="mt-auto">
-        <span className="inline-flex items-center text-[#CC0000] text-sm font-semibold hover:underline">
-          Read More <ArrowRight className="ml-2 w-4 h-4" />
-        </span>
-      </Link>
-    </div>
-  );
-}
+import BainHoverCard from "@/components/BainHoverCard";
 
 export default function AcceleratingBusinessGrowth() {
   const [activeTab, setActiveTab] = useState(0);
@@ -242,7 +188,7 @@ export default function AcceleratingBusinessGrowth() {
             </p>
           </motion.div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <BainHoverCard
               title="Launch direct-to-consumer channels"
               description="Build e-commerce capabilities that let you own the customer relationship, capture higher margins, and gather first-party data that fuels future growth."
@@ -444,7 +390,7 @@ export default function AcceleratingBusinessGrowth() {
             </p>
           </motion.div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <BainHoverCard
               title="E-Commerce Strategy & Launch"
               description="Design and launch direct-to-consumer channels that acquire customers efficiently, from platform selection to go-live and beyond."

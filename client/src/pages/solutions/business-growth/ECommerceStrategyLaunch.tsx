@@ -61,15 +61,15 @@ export default function ECommerceStrategyLaunch() {
 
         <section className="py-16 bg-white">
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div className="border-l-4 border-[#0077B5] pl-6">
+            <div>
               <p className="text-4xl font-bold text-[#051C2C]">75%</p>
               <p className="text-gray-600">of consumers are more likely to buy from a retailer that recognizes them by name and recommends products based on past purchases.</p>
             </div>
-            <div className="border-l-4 border-[#0077B5] pl-6">
+            <div>
               <p className="text-4xl font-bold text-[#051C2C]">$6.3 Trillion</p>
               <p className="text-gray-600">is the projected value of global e-commerce sales by 2024, highlighting the immense growth opportunity.</p>
             </div>
-            <div className="border-l-4 border-[#0077B5] pl-6">
+            <div>
               <p className="text-4xl font-bold text-[#051C2C]">88%</p>
               <p className="text-gray-600">of online shoppers are less likely to return to a site after a bad user experience, making UX a critical factor for success.</p>
             </div>

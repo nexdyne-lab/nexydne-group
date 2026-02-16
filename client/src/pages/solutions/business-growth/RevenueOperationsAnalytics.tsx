@@ -60,15 +60,15 @@ export default function RevenueOperationsAnalytics() {
 
         <div className="bg-white py-16 md:py-24">
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center px-4">
-            <div className="border-l-4 border-[#0077B5] pl-6">
+            <div>
               <h3 className="text-4xl font-bold text-[#051C2C]">45%</h3>
               <p className="text-lg text-gray-600 mt-2">Increase in Sales Pipeline Velocity</p>
             </div>
-            <div className="border-l-4 border-[#0077B5] pl-6">
+            <div>
               <h3 className="text-4xl font-bold text-[#051C2C]">90%</h3>
               <p className="text-lg text-gray-600 mt-2">Forecast Accuracy within First Two Quarters</p>
             </div>
-            <div className="border-l-4 border-[#0077B5] pl-6">
+            <div>
               <h3 className="text-4xl font-bold text-[#051C2C]">30%</h3>
               <p className="text-lg text-gray-600 mt-2">Reduction in Customer Acquisition Cost</p>
             </div>

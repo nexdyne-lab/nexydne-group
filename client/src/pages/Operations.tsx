@@ -1,10 +1,76 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Settings, Target, Zap, BarChart3, Users, Cog, Factory, LineChart, Shield, RefreshCw, Layers } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import BainHoverCard from "@/components/BainHoverCard";
 import Navbar from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { SEO } from "@/components/SEO";
+
+function MethodologyCard({
+  method,
+  index,
+}: {
+  method: { title: string; description: string; principles: string[] };
+  index: number;
+}) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.05 }}
+      className="relative overflow-hidden rounded-xl bg-[#f8f8f7] p-8 min-h-[280px] flex flex-col cursor-pointer transition-all duration-300 hover:shadow-lg"
+      style={{
+        border: `1px solid ${isHovered ? "transparent" : "#e5e7eb"}`,
+        transition: "border 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
+      }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {/* Peach wash overlay */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          top: 0,
+          bottom: 0,
+          width: "100%",
+          backgroundColor: "#FFF5ED",
+          right: isHovered ? "-110%" : "100%",
+          transition: "right 1s cubic-bezier(0.83, 0, 0.31, 1)",
+          zIndex: 0,
+          pointerEvents: "none",
+        }}
+      />
+
+      <h3
+        className="text-xl font-bold text-[#051C2C] mb-4 transition-colors"
+        style={{ position: "relative", zIndex: 1 }}
+      >
+        <span className={isHovered ? "text-[#0077B5]" : ""}>{method.title}</span>
+      </h3>
+      <p
+        className="text-[#051C2C]/60 leading-relaxed text-sm mb-6"
+        style={{ position: "relative", zIndex: 1 }}
+      >
+        {method.description}
+      </p>
+      <ul className="space-y-2 mb-6" style={{ position: "relative", zIndex: 1 }}>
+        {method.principles.map((principle, i) => (
+          <li key={i} className="flex items-center text-sm text-[#051C2C]/70">
+            <div className="w-1.5 h-1.5 rounded-full bg-[#0077B5] mr-3 shrink-0" />
+            {principle}
+          </li>
+        ))}
+      </ul>
+     
+    </motion.div>
+  );
+}
 
 export default function Operations() {
   return (
@@ -259,29 +325,7 @@ export default function Operations() {
                 principles: ["Stakeholder engagement", "Capability building", "Governance design"]
               }
             ].map((method, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="group p-8 rounded-xl bg-[#f8f8f7] border border-gray-200 hover:border-[#0077B5]/50 transition-all duration-300 hover:shadow-lg"
-              >
-                <h3 className="text-xl font-bold text-[#051C2C] mb-4 group-hover:text-[#0077B5] transition-colors">
-                  {method.title}
-                </h3>
-                <p className="text-[#051C2C]/60 leading-relaxed text-sm mb-6">
-                  {method.description}
-                </p>
-                <ul className="space-y-2">
-                  {method.principles.map((principle, i) => (
-                    <li key={i} className="flex items-center text-sm text-[#051C2C]/70">
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#0077B5] mr-3" />
-                      {principle}
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
+              <MethodologyCard key={index} method={method} index={index} />
             ))}
           </div>
         </div>
@@ -308,7 +352,7 @@ export default function Operations() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
             {[
               {
                 title: "Supply Chain Optimization",
@@ -363,23 +407,11 @@ export default function Operations() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
               >
-                <Link href={item.link} className="group block h-full">
-                  <div className="h-full min-h-[200px] p-8 bg-white border-l-4 border-l-transparent group-hover:border-l-[#CC0000] border border-gray-200 transition-all duration-300 flex flex-col">
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-serif font-bold text-[#051C2C] leading-tight origin-top-left transition-all duration-300 group-hover:text-base group-hover:mb-2">
-                        {item.title}
-                      </h3>
-                      
-                      <p className="text-[#051C2C]/70 leading-relaxed text-sm max-h-0 overflow-hidden opacity-0 group-hover:max-h-[120px] group-hover:opacity-100 group-hover:mt-3 transition-all duration-300 ease-in-out">
-                        {item.description}
-                      </p>
-                    </div>
-                    
-                    <div className="flex items-center text-[#CC0000] text-sm font-semibold mt-auto pt-4">
-                      Read More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                    </div>
-                  </div>
-                </Link>
+                <BainHoverCard
+                  title={item.title}
+                  description={item.description}
+                  link={item.link}
+                />
               </motion.div>
             ))}
           </div>
@@ -584,24 +616,9 @@ export default function Operations() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="h-full"
               >
-                <Link href={capability.link} className="group block h-full">
-                  <div className="h-full min-h-[200px] p-8 bg-white border-l-4 border-l-transparent group-hover:border-l-[#CC0000] border border-gray-200 transition-all duration-300 flex flex-col">
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-serif font-bold text-[#051C2C] leading-tight origin-top-left transition-all duration-300 group-hover:text-base group-hover:mb-2">
-                        {capability.title}
-                      </h3>
-                      
-                      <p className="text-[#051C2C]/70 leading-relaxed text-sm max-h-0 overflow-hidden opacity-0 group-hover:max-h-[120px] group-hover:opacity-100 group-hover:mt-3 transition-all duration-300 ease-in-out">
-                        {capability.description}
-                      </p>
-                    </div>
-                    
-                    <div className="flex items-center text-[#CC0000] text-sm font-semibold mt-auto pt-4">
-                      Read More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                    </div>
-                  </div>
-                </Link>
+                <BainHoverCard title={capability.title} description={capability.description} link={capability.link} />
               </motion.div>
             ))}
           </div>

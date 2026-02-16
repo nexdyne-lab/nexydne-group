@@ -250,7 +250,7 @@ export default function AITechnologyConsulting() {
       </section>
 
       {/* On-page Navigation */}
-      <div 
+      {/* <div 
         ref={navRef}
         className={`bg-white border-b border-gray-200 transition-all duration-300 ${
           isNavSticky ? "sticky top-[72px] z-40 shadow-sm" : ""
@@ -274,7 +274,7 @@ export default function AITechnologyConsulting() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Our Approach Section */}
       <section id="approach" className="py-20 md:py-32 bg-white">

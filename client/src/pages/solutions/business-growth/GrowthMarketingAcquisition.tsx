@@ -104,7 +104,7 @@ export default function GrowthMarketingAcquisition() {
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     {stats.map((stat, index) => (
-                        <div key={index} className="border-l-4 border-[#0077B5] pl-6">
+                        <div key={index}>
                             <p className="text-4xl md:text-5xl font-bold text-[#051C2C]">{stat.metric}</p>
                             <p className="text-base text-gray-600 mt-2">{stat.label}</p>
                         </div>

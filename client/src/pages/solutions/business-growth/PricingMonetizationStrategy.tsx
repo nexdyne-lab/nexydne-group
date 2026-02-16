@@ -56,15 +56,15 @@ export default function PricingMonetizationStrategy() {
       {/* Stats */}
       <div className="py-20 bg-white">
         <div className="container mx-auto grid md:grid-cols-3 gap-8 text-center">
-          <div className="border-l-4 border-[#0077B5] px-6 py-4">
+          <div className="px-6 py-4">
             <h3 className="text-4xl font-bold text-[#051C2C]">35%</h3>
             <p className="text-gray-600">Average Revenue Uplift</p>
           </div>
-          <div className="border-l-4 border-[#0077B5] px-6 py-4">
+          <div className="px-6 py-4">
             <h3 className="text-4xl font-bold text-[#051C2C]">20%</h3>
             <p className="text-gray-600">Increase in Customer Lifetime Value</p>
           </div>
-          <div className="border-l-4 border-[#0077B5] px-6 py-4">
+          <div className="px-6 py-4">
             <h3 className="text-4xl font-bold text-[#051C2C]">50%</h3>
             <p className="text-gray-600">Faster Time-to-Market for New Pricing Models</p>
           </div>
@@ -93,7 +93,7 @@ export default function PricingMonetizationStrategy() {
               { title: "Monetization Strategy for Digital Products", description: "Develop innovative monetization models for SaaS, mobile apps, and digital platforms, including freemium, pay-per-use, and ad-supported models." },
               { title: "Promotional & Discounting Strategy", description: "Structure effective promotional campaigns and discount strategies that drive acquisition without devaluing your core offering or eroding margins." },
             ].map((item, i) => (
-              <div key={i} className="relative p-6 border-l-4 border-transparent hover:border-[#CC0000] bg-gray-50 hover:bg-white hover:shadow-2xl transition-all duration-300 group-hover:opacity-70 hover:!opacity-100">
+              <div key={i} className="relative p-6 bg-gray-50 hover:bg-white hover:shadow-2xl transition-all duration-300 group-hover:opacity-70 hover:!opacity-100">
                 <h3 className="text-xl font-bold text-[#051C2C] transition-all duration-300 group-hover:text-lg">{item.title}</h3>
                 <p className="text-gray-600 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-300 mt-2">{item.description}</p>
               </div>

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ArrowRight } from "lucide-react";
+import BainHoverCard from "@/components/BainHoverCard";
 import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -104,7 +105,6 @@ export default function ContinuousImprovementPrograms() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="border-l-4 border-[#0077B5] pl-6"
               >
                 <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-2 sm:mb-3">{item.metric}</div>
                 <p className="text-lg text-[#051C2C]/60">{item.label}</p>
@@ -171,7 +171,7 @@ export default function ContinuousImprovementPrograms() {
             </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {[
               {
                 title: "Performance Measurement & KPI Design",
@@ -204,23 +204,8 @@ export default function ContinuousImprovementPrograms() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="group"
               >
-                <div className="h-full min-h-[200px] p-8 bg-white border-l-4 border-l-transparent group-hover:border-l-[#CC0000] border border-gray-200 transition-all duration-300 flex flex-col">
-                  <div className="flex-1">
-                    <h3 className="text-2xl eb-garamond font-bold text-[#051C2C] leading-tight origin-top-left transition-all duration-300 group-hover:text-base group-hover:mb-2">
-                      {item.title}
-                    </h3>
-                    
-                    <p className="text-[#051C2C]/70 leading-relaxed text-sm max-h-0 overflow-hidden opacity-0 group-hover:max-h-[120px] group-hover:opacity-100 group-hover:mt-3 transition-all duration-300 ease-in-out">
-                      {item.description}
-                    </p>
-                  </div>
-                  
-                  <div className="flex items-center text-sm font-semibold mt-4 text-transparent opacity-0 group-hover:opacity-100 group-hover:text-[#CC0000] transition-all duration-300">
-                    Read More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                  </div>
-                </div>
+                <BainHoverCard title={item.title} description={item.description} />
               </motion.div>
             ))}
           </div>
@@ -370,7 +355,7 @@ export default function ContinuousImprovementPrograms() {
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-4 gap-6">
             {relatedCapabilities.map((cap, i) => (
               <motion.div
                 key={i}
@@ -379,19 +364,7 @@ export default function ContinuousImprovementPrograms() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
               >
-                <Link href={cap.link} className="group block h-full">
-                  <div className="h-full min-h-[180px] p-8 bg-white border-l-4 border-l-transparent group-hover:border-l-[#CC0000] border border-gray-200 transition-all duration-300 flex flex-col">
-                    <div className="flex-1">
-                      <h3 className="text-xl eb-garamond font-bold text-[#051C2C] mb-2 group-hover:text-[#0077B5] transition-colors">
-                        {cap.title}
-                      </h3>
-                      <p className="text-[#051C2C]/60 text-sm mb-4">{cap.description}</p>
-                    </div>
-                    <div className="flex items-center text-[#CC0000] text-sm font-semibold mt-auto">
-                      Learn more <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </div>
-                </Link>
+                <BainHoverCard title={cap.title} description={cap.description} link={cap.link} />
               </motion.div>
             ))}
           </div>

@@ -30,6 +30,7 @@ import {
 import { RelatedContent } from "@/components/RelatedContent";
 import { dataRelatedItems } from "@/data/related-content";
 import ConsultationForm from "@/components/ConsultationForm";
+import BainHoverCard from "@/components/BainHoverCard";
 import { SEO } from "@/components/SEO";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
@@ -284,7 +285,6 @@ export default function Technology() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="border-l-4 border-[#0077B5] pl-6"
               >
                 <div className="text-5xl md:text-6xl font-bold text-[#051C2C] mb-3">{stat.value}</div>
                 <p className="text-lg text-[#051C2C]/60">{stat.description}</p>
@@ -295,7 +295,7 @@ export default function Technology() {
       </section>
 
       {/* Sticky Navigation */}
-      <nav className="sticky top-0 z-40 bg-white border-b border-gray-200 shadow-sm">
+      {/* <nav className="sticky top-0 z-40 bg-white border-b border-gray-200 shadow-sm">
         <div className="container">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-1 overflow-x-auto py-4">
@@ -324,7 +324,7 @@ export default function Technology() {
             </Link>
           </div>
         </div>
-      </nav>
+      </nav> */}
 
       {/* Thought Leadership Section - F100 Style */}
       <section id="what-we-do" className="py-24 bg-white">
@@ -597,21 +597,7 @@ export default function Technology() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
               >
-                <Link href={item.link} className="group block h-full">
-                  <div className="h-full min-h-[220px] p-8 bg-white border-l-4 border-l-transparent group-hover:border-l-[#CC0000] border border-gray-200 transition-all duration-300 flex flex-col">
-                    <div className="flex-1">
-                      <h3 className="text-xl font-serif font-bold text-[#051C2C] leading-tight origin-top-left transition-all duration-300 group-hover:text-base group-hover:mb-2">
-                        {item.title}
-                      </h3>
-                      <p className="text-[#051C2C]/70 leading-relaxed text-sm max-h-0 overflow-hidden opacity-0 group-hover:max-h-[120px] group-hover:opacity-100 group-hover:mt-3 transition-all duration-300 ease-in-out">
-                        {item.description}
-                      </p>
-                    </div>
-                    <div className="flex items-center text-[#CC0000] text-sm font-semibold mt-auto pt-4">
-                      Read More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                    </div>
-                  </div>
-                </Link>
+                <BainHoverCard title={item.title} description={item.description} link={item.link} />
               </motion.div>
             ))}
           </div>
@@ -829,7 +815,7 @@ export default function Technology() {
           </motion.div>
           
           {/* H100 Hover Effect Cards */}
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-4 gap-6">
             {[
               {
                 title: "Strategy & Corporate Finance",
@@ -854,23 +840,7 @@ export default function Technology() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Link href={item.link} className="group block h-full">
-                  <div className="h-full min-h-[200px] p-8 bg-white border-l-4 border-l-transparent group-hover:border-l-[#CC0000] border border-gray-200 transition-all duration-300 flex flex-col">
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-serif font-bold text-[#051C2C] leading-tight origin-top-left transition-all duration-300 group-hover:text-base group-hover:mb-2">
-                        {item.title}
-                      </h3>
-                      
-                      <p className="text-[#051C2C]/70 leading-relaxed text-sm max-h-0 overflow-hidden opacity-0 group-hover:max-h-[120px] group-hover:opacity-100 group-hover:mt-3 transition-all duration-300 ease-in-out">
-                        {item.description}
-                      </p>
-                    </div>
-                    
-                    <div className="flex items-center text-[#CC0000] text-sm font-semibold mt-auto pt-4">
-                      Read More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                    </div>
-                  </div>
-                </Link>
+                <BainHoverCard title={item.title} description={item.description} link={item.link} />
               </motion.div>
             ))}
           </div>

@@ -55,15 +55,15 @@ export default function GoToMarketAcceleration() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-3 gap-8 text-center">
-              <div className="border-l-4 border-[#0077B5] pl-6">
+              <div>
                 <p className="text-4xl font-bold text-[#051C2C]">35%</p>
                 <p className="text-lg text-gray-600">Faster Time-to-Market</p>
               </div>
-              <div className="border-l-4 border-[#0077B5] pl-6">
+              <div>
                 <p className="text-4xl font-bold text-[#051C2C]">50%</p>
                 <p className="text-lg text-gray-600">Increase in Market Share within First Year</p>
               </div>
-              <div className="border-l-4 border-[#0077B5] pl-6">
+              <div>
                 <p className="text-4xl font-bold text-[#051C2C]">2X</p>
                 <p className="text-lg text-gray-600">Higher ROI on Launch Campaigns</p>
               </div>

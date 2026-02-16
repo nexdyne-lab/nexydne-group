@@ -181,33 +181,41 @@ export default function Home() {
                 className="group"
               >
                 <Link href={solution.link}>
-                  <div className="cursor-pointer">
-                    {/* Image with subtle hover zoom + description overlay on hover */}
-                    <div className="aspect-[16/10] overflow-hidden relative">
-                      <img 
-                        src={solution.image} 
-                        alt={solution.title}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-black/10" />
-                      {/* Title + Description + CTA overlay - visible only on hover */}
-                      <div className="absolute inset-0 flex flex-col items-center justify-center p-4 sm:p-5 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold leading-tight mb-3 text-center ">
-                          {solution.title}
-                        </h3>
-                        <p className="text-white/90 text-sm sm:text-base leading-relaxed text-center mb-5 max-w-md">
-                          {solution.description}
-                        </p>
-                        <span className="inline-flex items-center gap-2 bg-black text-white px-5 py-2.5 text-sm font-semibold tracking-wide uppercase">
-                          Learn More
-                          <ArrowRight className="w-4 h-4" />
-                        </span>
+                  <div className="cursor-pointer bg-white border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-500 h-full">
+                    {/* Card content container */}
+                    <div className="relative aspect-[16/10] overflow-hidden">
+                      {/* Image - visible by default, hidden on hover */}
+                      <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                        <img 
+                          src={solution.image} 
+                          alt={solution.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      {/* Description overlay - hidden by default, visible on hover */}
+                      <div className="absolute inset-0 bg-white p-6 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+                        <div>
+                          <h2 className="text-2xl sm:text-3xl md:text-[2rem] font-semibold eb-garamond text-[#1A1A1A] mb-3 leading-tight">
+                            {solution.title}
+                          </h2>
+                          <p className="text-sm text-gray-600 leading-relaxed text-left">
+                            {solution.description}
+                          </p>
+                        </div>
+                        <div className="mt-4">
+                          {/* <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#1A1A1A] text-white text-sm font-medium rounded hover:bg-[#333] transition-colors">
+                            LEARN MORE
+                            <ArrowRight className="w-4 h-4" />
+                          </span> */}
+                        </div>
                       </div>
                     </div>
-                    {/* Title - always visible below image (default state) */}
-                    <h3 className="text-xl sm:text-2xl md:text-[1.65rem] text-[#1A1A1A] font-semibold leading-tight pt-5 sm:pt-6 pb-2">
-                      {solution.title}
-                    </h3>
+                    {/* Title - always visible below */}
+                    <div className="p-4 sm:p-5 bg-white border-t border-gray-100 group-hover:bg-gray-50 transition-colors duration-300">
+                      <h2 className="text-2xl sm:text-3xl md:text-[2rem] font-semibold leading-tight text-[#1A1A1A] eb-garamond">
+                        {solution.title}
+                      </h2>
+                    </div>
                   </div>
                 </Link>
               </motion.div>

@@ -6,78 +6,7 @@ import Navbar from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import GrowthBreadcrumbs from "@/components/GrowthBreadcrumbs";
-
-// F100/H100 Bain-style hover card component - title only by default, description appears on hover with red border-left
-function H100HoverCard({ 
-  title, 
-  description, 
-  link 
-}: { 
-  title: string; 
-  description: string; 
-  link: string;
-}) {
-  return (
-    <Link href={link}>
-      <div className="group cursor-pointer h-full min-h-[200px] p-8 bg-white border-l-4 border-l-transparent hover:border-l-[#CC0000] border border-gray-200 transition-all duration-300 flex flex-col">
-        <div className="flex-1">
-          <h3 className="text-2xl font-serif font-bold text-[#051C2C] leading-tight origin-top-left transition-all duration-300 group-hover:text-base group-hover:mb-2">
-            {title}
-          </h3>
-          
-          <p className="text-[#051C2C]/70 leading-relaxed text-sm max-h-0 overflow-hidden opacity-0 group-hover:max-h-[120px] group-hover:opacity-100 group-hover:mt-3 transition-all duration-300 ease-in-out">
-            {description}
-          </p>
-        </div>
-        
-        <div className="flex items-center text-[#CC0000] text-sm font-semibold mt-auto pt-4">
-          Learn more <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-        </div>
-      </div>
-    </Link>
-  );
-}
-
-// Specialized Capabilities Card - Blue top border on hover
-function SpecializedCard({ 
-  title, 
-  description, 
-  link 
-}: { 
-  title: string; 
-  description: string; 
-  link: string;
-}) {
-  return (
-    <Link href={link}>
-      <div className="group cursor-pointer bg-white border border-gray-200 h-full min-h-[220px] relative overflow-hidden transition-all duration-500 hover:shadow-lg">
-        {/* Blue top border on hover */}
-        <div className="absolute top-0 left-0 right-0 h-1 bg-[#0077B5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-        
-        <div className="p-6 h-full flex flex-col">
-          {/* Title - shrinks on hover */}
-          <h3 className="text-xl font-serif font-semibold text-[#051C2C] mb-4 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:text-base group-hover:mb-3">
-            {title}
-          </h3>
-          
-          {/* Description - appears on hover */}
-          <div className="flex-1 overflow-hidden">
-            <p className="text-sm text-gray-600 leading-relaxed opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] delay-100">
-              {description}
-            </p>
-          </div>
-          
-          {/* Learn More link - always visible at bottom */}
-          <div className="mt-auto pt-4">
-            <span className="inline-flex items-center text-sm font-medium text-[#0077B5]">
-              Learn more <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </span>
-          </div>
-        </div>
-      </div>
-    </Link>
-  );
-}
+import BainHoverCard from "@/components/BainHoverCard";
 
 export default function GrowthMarketingSales() {
   return (
@@ -163,9 +92,9 @@ export default function GrowthMarketingSales() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`group ${index > 0 ? 'md:border-l border-gray-200 md:pl-8' : ''}`}
+                className={`${index > 0 ? 'md:border-l border-gray-200 md:pl-8' : ''}`}
               >
-                <div className="border-l-4 border-l-transparent group-hover:border-l-[#06b6d4] pl-4 transition-all duration-300">
+                <div>
                   <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-3 sm:mb-4">{item.metric}</div>
                   <p className="text-lg text-[#051C2C]/60">{item.label}</p>
                 </div>
@@ -313,7 +242,7 @@ export default function GrowthMarketingSales() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-4 lg:grid-cols-4 gap-6">
             {[
               {
                 title: "Brand Strategy",
@@ -358,7 +287,7 @@ export default function GrowthMarketingSales() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
               >
-                <H100HoverCard
+                <BainHoverCard
                   title={item.title}
                   description={item.description}
                   link={item.link}
@@ -387,7 +316,7 @@ export default function GrowthMarketingSales() {
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-4 lg:grid-cols-4 gap-6">
             {[
               {
                 title: "Digital Marketing",
@@ -437,7 +366,7 @@ export default function GrowthMarketingSales() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
               >
-                <SpecializedCard
+                <BainHoverCard
                   title={item.title}
                   description={item.description}
                   link={item.link}

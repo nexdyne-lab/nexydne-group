@@ -6,71 +6,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { useState } from "react";
-
-// Bain-style hover card component
-interface HoverCardProps {
-  title: string;
-  description: string;
-  link?: string;
-}
-
-function BainHoverCard({ title, description, link = "#" }: HoverCardProps) {
-  const [isHovered, setIsHovered] = useState(false);
-  
-  return (
-    <Link href={link}>
-      <div 
-        className="relative bg-white border border-gray-200 p-6 min-h-[200px] flex flex-col cursor-pointer group overflow-hidden"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        style={{ transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)' }}
-      >
-        {/* Red top border on hover */}
-        <div 
-          className="absolute top-0 left-0 right-0 h-[3px] bg-[#cc0000] origin-left"
-          style={{ 
-            transform: isHovered ? 'scaleX(1)' : 'scaleX(0)',
-            transition: 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)'
-          }}
-        />
-        
-        {/* Title - shrinks on hover */}
-        <h3 
-          className="font-bold text-[#1A1A1A] leading-tight"
-          style={{ 
-            fontSize: isHovered ? '1rem' : '1.25rem',
-            marginBottom: isHovered ? '0.75rem' : '0',
-            transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)'
-          }}
-        >
-          {title}
-        </h3>
-        
-        {/* Description - appears on hover with smooth slide */}
-        <div 
-          style={{ 
-            opacity: isHovered ? 1 : 0,
-            maxHeight: isHovered ? '160px' : '0px',
-            marginTop: isHovered ? '0.5rem' : '0',
-            transition: 'opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1), margin-top 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
-            overflow: 'hidden'
-          }}
-        >
-          <p className="text-gray-600 text-sm leading-relaxed">
-            {description}
-          </p>
-        </div>
-        
-        {/* Read More link - always at bottom */}
-        <div className="mt-auto pt-4">
-          <span className="text-[#cc0000] font-medium text-sm flex items-center">
-            Read More <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-          </span>
-        </div>
-      </div>
-    </Link>
-  );
-}
+import BainHoverCard from "@/components/BainHoverCard";
 
 export default function DataDrivenCustomerIntelligence() {
   const [activeTab, setActiveTab] = useState(0);

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'wouter';
 import { ArrowRight } from 'lucide-react';
+import BainHoverCard from '@/components/BainHoverCard';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -373,7 +374,7 @@ export default function GoToMarketScale() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { title: "Partner Network Access", description: "Leverage our curated network of 500+ distribution partners, technology integrators, and channel resellers across key industries." },
               { title: "Channel Strategy Design", description: "We design multi-channel go-to-market strategies optimized for your product, customer profile, and competitive landscape." },
@@ -388,23 +389,12 @@ export default function GoToMarketScale() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="group"
               >
-                <div className="h-full min-h-[200px] p-8 bg-white border-l-4 border-l-transparent group-hover:border-l-[#CC0000] border border-gray-200 transition-all duration-300 flex flex-col">
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-serif font-bold text-[#051C2C] leading-tight origin-top-left transition-all duration-300 group-hover:text-base group-hover:mb-2">
-                      {item.title}
-                    </h3>
-                    
-                    <p className="text-[#051C2C]/70 leading-relaxed text-sm max-h-0 overflow-hidden opacity-0 group-hover:max-h-[120px] group-hover:opacity-100 group-hover:mt-3 transition-all duration-300 ease-in-out">
-                      {item.description}
-                    </p>
-                  </div>
-                  
-                  <div className="flex items-center text-[#CC0000] text-sm font-semibold mt-auto pt-4">
-                    Read More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                  </div>
-                </div>
+                <BainHoverCard
+                  title={item.title}
+                  description={item.description}
+                  link="#"
+                />
               </motion.div>
             ))}
           </div>
@@ -429,7 +419,7 @@ export default function GoToMarketScale() {
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-4 gap-6">
             {[
               { title: "Digital Venture Launch", description: "Launch new digital products and services with our proven venture methodology.", link: "/capabilities/business-building/digital-venture-launch" },
               { title: "Growth & Scaling", description: "Scale your operations systematically with our growth frameworks and playbooks.", link: "/capabilities/business-building/growth-scaling" },
@@ -441,25 +431,12 @@ export default function GoToMarketScale() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="group"
               >
-                <Link href={item.link}>
-                  <div className="h-full min-h-[200px] p-8 bg-[#f8f8f7] border-l-4 border-l-transparent group-hover:border-l-[#CC0000] border border-gray-200 transition-all duration-300 flex flex-col">
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-serif font-bold text-[#051C2C] leading-tight origin-top-left transition-all duration-300 group-hover:text-base group-hover:mb-2">
-                        {item.title}
-                      </h3>
-                      
-                      <p className="text-[#051C2C]/70 leading-relaxed text-sm max-h-0 overflow-hidden opacity-0 group-hover:max-h-[120px] group-hover:opacity-100 group-hover:mt-3 transition-all duration-300 ease-in-out">
-                        {item.description}
-                      </p>
-                    </div>
-                    
-                    <div className="flex items-center text-[#CC0000] text-sm font-semibold mt-auto pt-4">
-                      Read More <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                    </div>
-                  </div>
-                </Link>
+                <BainHoverCard
+                  title={item.title}
+                  description={item.description}
+                  link={item.link}
+                />
               </motion.div>
             ))}
           </div>

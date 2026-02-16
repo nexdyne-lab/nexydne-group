@@ -55,15 +55,15 @@ export default function DigitalProductDevelopment() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-3 gap-8 text-center">
-              <div className="border-l-4 border-[#0077B5] p-6 bg-gray-50 rounded-r-lg">
+              <div className="p-6 bg-gray-50 rounded-lg">
                 <p className="text-4xl font-bold text-[#051C2C]">2.5x</p>
                 <p className="mt-2 text-gray-600">Faster Time-to-Market for New Products</p>
               </div>
-              <div className="border-l-4 border-[#0077B5] p-6 bg-gray-50 rounded-r-lg">
+              <div className="p-6 bg-gray-50 rounded-lg">
                 <p className="text-4xl font-bold text-[#051C2C]">45%</p>
                 <p className="mt-2 text-gray-600">Increase in User Adoption Rates Post-Launch</p>
               </div>
-              <div className="border-l-4 border-[#0077B5] p-6 bg-gray-50 rounded-r-lg">
+              <div className="p-6 bg-gray-50 rounded-lg">
                 <p className="text-4xl font-bold text-[#051C2C]">30%</p>
                 <p className="mt-2 text-gray-600">Reduction in Development Costs via Agile Methods</p>
               </div>
