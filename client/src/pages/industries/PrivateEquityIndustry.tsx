@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, TrendingUp, Building2, Target, BarChart3, ChevronRight, Globe, Briefcase, PieChart, LineChart } from "lucide-react";
+import { ArrowRight, TrendingUp, Building2, Target, BarChart3, ChevronRight, Globe, Briefcase, PieChart, LineChart, Mail } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
@@ -17,45 +17,42 @@ export default function PrivateEquityIndustry() {
       />
       <Navigation />
       
-      {/* Editorial Hero Section */}
-      <section className="relative pt-32 pb-20 bg-white">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-5xl"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-8 block">
-              Private Equity & Investments
-            </span>
-            
-            <h1 className="text-5xl md:text-6xl lg:text-7xl eb-garamond font-bold tracking-tight text-[#051C2C] leading-[1.1] mb-5">
-              Private Equity & Investments
-            </h1>
-            
-            <p className="text-lg sm:text-xl md:text-2xl text-[#051C2C]/70 leading-relaxed max-w-4xl">
-              In an era of compressed multiples and increased competition, operational value creation has become the primary driver of private equity returns. NexDyne partners with PE firms and their portfolio companies to accelerate transformation, improve operations, and create sustainable competitive advantage that drives superior exits.
-            </p>
-          </motion.div>
+      {/* Hero Section - Deep blue with left copy and right visual */}
+      <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center overflow-hidden pt-32">
+        <div className="absolute inset-0 bg-[#0A235B]" />
+        <div className="absolute inset-0 flex justify-end pointer-events-none">
+          <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[75%] max-w-[900px] h-[140%] min-h-[600px] opacity-25">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80" alt="" className="w-full h-full object-cover object-left" aria-hidden />
+          </div>
+          <svg className="absolute right-0 top-0 bottom-0 w-[72%] max-w-[820px] h-full opacity-70" viewBox="0 0 400 300" preserveAspectRatio="xMaxYMid meet" aria-hidden>
+            <defs>
+              <pattern id="dish-grid-pe" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(0, 212, 255, 0.4)" strokeWidth="0.4" />
+              </pattern>
+              <radialGradient id="dish-fade-pe" cx="0.6" cy="0.5" r="0.9">
+                <stop offset="0%" stopColor="rgba(0, 180, 216, 0.5)" />
+                <stop offset="100%" stopColor="transparent" />
+              </radialGradient>
+            </defs>
+            <ellipse cx="320" cy="150" rx="220" ry="180" fill="url(#dish-fade-pe)" />
+            <ellipse cx="320" cy="150" rx="220" ry="180" fill="url(#dish-grid-pe)" />
+            {[0.35, 0.5, 0.65, 0.8, 0.95].map((r, i) => (
+              <ellipse key={i} cx="320" cy="150" rx={220 * r} ry={180 * r} fill="none" stroke="rgba(0, 212, 255, 0.35)" strokeWidth="0.5" />
+            ))}
+          </svg>
         </div>
-      </section>
-
-      {/* Full-Width Hero Image */}
-      <section className="relative">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.3 }}
-          className="w-full h-[50vh] md:h-[60vh] relative overflow-hidden"
-        >
-          <img 
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80" 
-            alt="Private Equity Digital Transformation" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent" />
-        </motion.div>
+        <div className="container relative z-10 px-4 md:px-12 py-24 md:py-32">
+          <div className="max-w-xl">
+            <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.1] mb-6">
+                Private Equity & Investments
+              </h1>
+              <p className="text-base sm:text-lg md:text-xl text-[#E0E0E0] leading-relaxed font-sans max-w-lg">
+                In an era of compressed multiples and increased competition, operational value creation has become the primary driver of private equity returns. NexDyne partners with PE firms and their portfolio companies to accelerate transformation, improve operations, and create sustainable competitive advantage that drives superior exits.
+              </p>
+            </motion.div>
+          </div>
+        </div>
       </section>
 
       {/* Editorial Introduction */}
@@ -85,15 +82,23 @@ export default function PrivateEquityIndustry() {
         </div>
       </section>
 
-      {/* Key Statistics Strip */}
-      <section className="py-16 bg-[#051C2C]">
+      {/* Our Experience & Impact - Metrics */}
+      <section className="py-20 md:py-28 bg-white">
         <div className="container px-4 md:px-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="eb-garamond font-bold text-[#0B2B40] text-2xl md:text-3xl mb-12 md:mb-16"
+          >
+            Our Experience & Impact
+          </motion.h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
             {[
-              { value: "2.5x", label: "Average EBITDA improvement" },
-              { value: "18mo", label: "Typical value creation timeline" },
-              { value: "$500M+", label: "Value created for portfolio companies" },
-              { value: "85%", label: "Initiatives delivered on time" }
+              { value: "40+", label: "Ventures launched with clients across industries" },
+              { value: "78%", label: "Reach profitability within 18 months" },
+              { value: "4-6 Mo", label: "Typical time from concept to market launch" }
             ].map((stat, index) => (
               <motion.div
                 key={index}
@@ -101,12 +106,12 @@ export default function PrivateEquityIndustry() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center"
+                className="text-left"
               >
-                <div className="text-4xl md:text-5xl font-serif font-bold text-[#0077B5] mb-2">
+                <div className="text-4xl md:text-5xl font-serif font-bold text-[#0B2B40] mb-2">
                   {stat.value}
                 </div>
-                <div className="text-sm text-white/60">
+                <div className="text-base text-[#6C757D] leading-snug">
                   {stat.label}
                 </div>
               </motion.div>
@@ -115,71 +120,67 @@ export default function PrivateEquityIndustry() {
         </div>
       </section>
 
-      {/* How We Help PE Firms - Editorial Two-Column */}
+      {/* How We Help - Grid style with header and separators */}
       <section className="py-20 md:py-28 bg-white">
         <div className="container px-4 md:px-12">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-8 leading-tight">
-                How We Help PE Firms Create Value
-              </h2>
-              <p className="text-lg text-[#051C2C]/70 leading-relaxed">
-                Value creation in private equity requires a disciplined approach that identifies high-impact opportunities, mobilizes resources quickly, and delivers results within compressed timelines. We bring the operational expertise, digital capabilities, and execution discipline needed to succeed in this demanding environment.
-              </p>
-            </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-xs font-semibold uppercase tracking-[0.15em] text-[#6B7280] mb-4">
+              How We Help Clients
+            </h2>
+            <div className="border-t border-[#E5E7EB]" aria-hidden />
+          </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="space-y-8"
-            >
-              {/* Due Diligence */}
-              <div className="border-l-4 border-[#0077B5] pl-6">
-                <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-3">
-                  Commercial & Operational Due Diligence
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 md:gap-y-12 mt-8">
+            {[
+              { title: "Commercial & Operational Due Diligence", desc: "Identify value creation opportunities and assess execution risk before you invest. Our diligence teams evaluate market position, operational efficiency, technology capabilities, and management strength—providing the insights needed to make confident investment decisions." },
+              { title: "Value Creation Planning", desc: "Develop actionable value creation plans that prioritize high-impact initiatives. We work with deal teams and management to quantify opportunities, sequence initiatives, and build the roadmaps that guide transformation during the hold period." },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <h3 className="text-lg font-bold text-[#051C2C] mb-2 flex items-center gap-2">
+                  {item.title}
+                  <ChevronRight className="w-4 h-4 text-[#94A3B8] shrink-0" aria-hidden />
                 </h3>
-                <p className="text-[#051C2C]/70 leading-relaxed">
-                  Identify value creation opportunities and assess execution risk before you invest. Our diligence teams evaluate market position, operational efficiency, technology capabilities, and management strength—providing the insights needed to make confident investment decisions.
+                <p className="text-sm text-[#6B7280] leading-relaxed">
+                  {item.desc}
                 </p>
-              </div>
+              </motion.div>
+            ))}
+          </div>
 
-              {/* Value Creation Planning */}
-              <div className="border-l-4 border-[#0077B5] pl-6">
-                <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-3">
-                  Value Creation Planning
-                </h3>
-                <p className="text-[#051C2C]/70 leading-relaxed">
-                  Develop actionable value creation plans that prioritize high-impact initiatives. We work with deal teams and management to quantify opportunities, sequence initiatives, and build the roadmaps that guide transformation during the hold period.
-                </p>
-              </div>
+          <div className="border-t border-[#E5E7EB] my-10 md:my-12" aria-hidden />
 
-              {/* Operational Improvement */}
-              <div className="border-l-4 border-[#0077B5] pl-6">
-                <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-3">
-                  Operational Transformation
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 md:gap-y-12">
+            {[
+              { title: "Operational Transformation", desc: "Execute transformational initiatives that drive EBITDA growth. From cost optimization and revenue acceleration to digital transformation and organizational effectiveness, we bring the expertise and resources needed to deliver results." },
+              { title: "Exit Preparation & Positioning", desc: "Maximize exit value with strategic positioning and operational excellence. We help portfolio companies tell compelling equity stories, demonstrate sustainable performance, and address buyer concerns—driving premium valuations at exit." },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <h3 className="text-lg font-bold text-[#051C2C] mb-2 flex items-center gap-2">
+                  {item.title}
+                  <ChevronRight className="w-4 h-4 text-[#94A3B8] shrink-0" aria-hidden />
                 </h3>
-                <p className="text-[#051C2C]/70 leading-relaxed">
-                  Execute transformational initiatives that drive EBITDA growth. From cost optimization and revenue acceleration to digital transformation and organizational effectiveness, we bring the expertise and resources needed to deliver results.
+                <p className="text-sm text-[#6B7280] leading-relaxed">
+                  {item.desc}
                 </p>
-              </div>
-
-              {/* Exit Preparation */}
-              <div className="border-l-4 border-[#0077B5] pl-6">
-                <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-3">
-                  Exit Preparation & Positioning
-                </h3>
-                <p className="text-[#051C2C]/70 leading-relaxed">
-                  Maximize exit value with strategic positioning and operational excellence. We help portfolio companies tell compelling equity stories, demonstrate sustainable performance, and address buyer concerns—driving premium valuations at exit.
-                </p>
-              </div>
-            </motion.div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
@@ -241,6 +242,67 @@ export default function PrivateEquityIndustry() {
         </div>
       </section>
 
+      {/* Featured Insights */}
+      <section className="py-20 md:py-28 bg-white">
+        <div className="container px-4 md:px-12">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-xs font-bold uppercase tracking-[0.2em] text-[#051C2C] mb-10 md:mb-12"
+          >
+            Featured Insights
+          </motion.h2>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="grid md:grid-cols-2 gap-0 border border-[#E5E7EB] mb-10 md:mb-12 overflow-hidden"
+          >
+            <div className="relative aspect-[4/3] md:aspect-auto md:min-h-[320px]">
+              <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80" alt="" className="absolute inset-0 w-full h-full object-cover" aria-hidden />
+            </div>
+            <div className="flex flex-col justify-center p-8 md:p-10 lg:p-12 bg-white">
+              <span className="text-xs font-medium uppercase tracking-wider text-[#6B7280] mb-2">Collection</span>
+              <Link href="/insights/private-equity-future" className="group inline-flex items-start gap-2 text-left mb-3">
+                <h3 className="text-xl md:text-2xl lg:text-3xl eb-garamond font-bold text-[#051C2C] leading-tight group-hover:text-[#0077B5] transition-colors">
+                  The Next Normal – The future of private equity: Data-driven value creation and digital due diligence
+                </h3>
+                <span className="text-[#0077B5] shrink-0 mt-1 group-hover:translate-x-1 transition-transform" aria-hidden>&gt;</span>
+              </Link>
+              <span className="text-sm text-[#6B7280] mb-4">November 3, 2025 —</span>
+              <p className="text-[#051C2C]/70 text-base leading-relaxed">
+                PE firms are leveraging data and technology to source deals, accelerate value creation, and improve portfolio performance. This collection explores digital due diligence, commercial and operational value levers, and the capabilities that separate top performers.
+              </p>
+            </div>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+            {[
+              { category: "Article", title: "The case for a clear ROI framework for portfolio digital investments", link: "/insights/portfolio-digital-roi", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80", alt: "Portfolio value" },
+              { category: "Article", title: "Finding a route to value creation in carve-outs", link: "/insights/carve-out-value", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80", alt: "M&A" },
+              { category: "Article", title: "The journey toward AI-enabled due diligence", link: "/insights/ai-due-diligence", image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80", alt: "Due diligence" },
+            ].map((item, index) => (
+              <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>
+                <Link href={item.link} className="group block">
+                  <div className="overflow-hidden mb-4">
+                    <img src={item.image} alt={item.alt} className="w-full aspect-[16/10] object-cover transition-transform duration-300 group-hover:scale-[1.02]" />
+                  </div>
+                  <span className="text-xs font-medium uppercase tracking-wider text-[#6B7280] block mb-2">{item.category}</span>
+                  <h3 className="text-lg font-bold text-[#051C2C] leading-snug group-hover:text-[#0077B5] transition-colors flex items-start gap-2">
+                    <span>{item.title}</span>
+                    <span className="text-[#0077B5] shrink-0 group-hover:translate-x-1 transition-transform" aria-hidden>&gt;</span>
+                  </h3>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Our PE Capabilities - Editorial Grid */}
       <section className="py-20 md:py-28 bg-white">
         <div className="container px-4 md:px-12">
@@ -265,7 +327,7 @@ export default function PrivateEquityIndustry() {
               transition={{ duration: 0.5 }}
               className="border-t-2 border-[#051C2C]/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 underline decoration-[#0077B5] decoration-2 underline-offset-4">
+              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4  decoration-[#0077B5] decoration-2 underline-offset-4">
                 Revenue Growth & Pricing
               </h3>
               <p className="text-[#051C2C]/70 leading-relaxed">
@@ -281,7 +343,7 @@ export default function PrivateEquityIndustry() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="border-t-2 border-[#051C2C]/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 underline decoration-[#0077B5] decoration-2 underline-offset-4">
+              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4  decoration-[#0077B5] decoration-2 underline-offset-4">
                 Cost Optimization & Efficiency
               </h3>
               <p className="text-[#051C2C]/70 leading-relaxed">
@@ -297,7 +359,7 @@ export default function PrivateEquityIndustry() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="border-t-2 border-[#051C2C]/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 underline decoration-[#0077B5] decoration-2 underline-offset-4">
+              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4  decoration-[#0077B5] decoration-2 underline-offset-4">
                 Digital Transformation
               </h3>
               <p className="text-[#051C2C]/70 leading-relaxed">
@@ -313,7 +375,7 @@ export default function PrivateEquityIndustry() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="border-t-2 border-[#051C2C]/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 underline decoration-[#0077B5] decoration-2 underline-offset-4">
+              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4  decoration-[#0077B5] decoration-2 underline-offset-4">
                 Carve-outs & Integration
               </h3>
               <p className="text-[#051C2C]/70 leading-relaxed">
@@ -329,7 +391,7 @@ export default function PrivateEquityIndustry() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="border-t-2 border-[#051C2C]/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 underline decoration-[#0077B5] decoration-2 underline-offset-4">
+              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4  decoration-[#0077B5] decoration-2 underline-offset-4">
                 Technology Due Diligence
               </h3>
               <p className="text-[#051C2C]/70 leading-relaxed">
@@ -345,7 +407,7 @@ export default function PrivateEquityIndustry() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="border-t-2 border-[#051C2C]/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 underline decoration-[#0077B5] decoration-2 underline-offset-4">
+              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4  decoration-[#0077B5] decoration-2 underline-offset-4">
                 Portfolio Analytics & Monitoring
               </h3>
               <p className="text-[#051C2C]/70 leading-relaxed">
@@ -356,66 +418,105 @@ export default function PrivateEquityIndustry() {
         </div>
       </section>
 
-      {/* Client Success Stories */}
-      <section className="py-20 md:py-28 bg-[#051C2C] text-white">
-        <div className="container px-4 md:px-12">
-          <motion.div
+      {/* Client Success Stories - Examples of our work style */}
+      <section className="py-20 md:py-28 bg-white">
+        <div className="container px-4 md:px-12 max-w-6xl mx-auto">
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-16"
+            className="text-center text-xl md:text-2xl font-semibold uppercase tracking-wide text-[#051C2C] mb-10 md:mb-14"
           >
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-white mb-6">
-              Our Clients' Success in Private Equity
-            </h2>
+            Examples of Our Work
+          </motion.h2>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="w-full aspect-[21/9] min-h-[200px] mb-10 md:mb-14 overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1920&q=80"
+              alt=""
+              className="w-full h-full object-cover grayscale"
+              aria-hidden
+            />
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Success Story 1 */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="bg-white/5 p-8 md:p-10 rounded-lg"
-            >
-              <div className="text-5xl md:text-6xl font-serif font-bold text-[#0077B5] mb-2">
-                $75M
-              </div>
-              <div className="text-lg font-medium text-white mb-6">
-                EBITDA improvement identified in diligence
-              </div>
-              <p className="text-white/70 leading-relaxed mb-6">
-                A PE firm engaged us to conduct operational diligence on a healthcare services platform. We identified $75M in EBITDA improvement opportunities across pricing, labor optimization, and procurement—providing the conviction to pursue the deal and the roadmap to execute post-close.
-              </p>
-              <Link href="/cases/pe-healthcare-diligence" className="inline-flex items-center text-[#0077B5] font-semibold hover:underline">
-                Read the full case study <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
-            </motion.div>
-
-            {/* Success Story 2 */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-white/5 p-8 md:p-10 rounded-lg"
-            >
-              <div className="text-5xl md:text-6xl font-serif font-bold text-[#0077B5] mb-2">
-                40%
-              </div>
-              <div className="text-lg font-medium text-white mb-6">
-                margin improvement through digital transformation
-              </div>
-              <p className="text-white/70 leading-relaxed mb-6">
-                A portfolio company in distribution engaged us to lead a digital transformation. We implemented a modern ERP, built a customer self-service portal, and deployed AI-powered demand forecasting—improving margins by 40% while positioning the company for accelerated growth.
-              </p>
-              <Link href="/cases/pe-distribution-digital" className="inline-flex items-center text-[#0077B5] font-semibold hover:underline">
-                Read the full case study <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
-            </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+            {[
+              { title: "Identifying value in diligence", body: "A PE firm engaged us to conduct operational diligence on a healthcare services platform. We identified significant EBITDA improvement opportunities across pricing, labor optimization, and procurement—providing the conviction to pursue the deal and the roadmap to execute post-close." },
+              { title: "Improving portfolio company margins", body: "A portfolio company in distribution engaged us to lead a digital transformation. We implemented a modern ERP, built a customer self-service portal, and deployed AI-powered demand forecasting—improving margins while positioning the company for accelerated growth." },
+              { title: "Accelerating value creation", body: "We supported a PE-backed industrial company with a 100-day value creation plan. Our team focused on procurement, pricing, and footprint optimization, delivering quick wins that built momentum for a broader transformation." },
+              { title: "Building platform capabilities", body: "A PE sponsor asked us to design the technology and operations backbone for a roll-up strategy. We defined the target operating model, integration playbook, and shared services approach that enabled the platform to scale across add-ons." },
+            ].map((story, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <h3 className="text-base md:text-lg font-bold text-[#051C2C] mb-3">
+                  {story.title}
+                </h3>
+                <p className="text-sm md:text-base text-[#051C2C]/80 leading-relaxed">
+                  {story.body}
+                </p>
+              </motion.div>
+            ))}
           </div>
+        </div>
+      </section>
+
+      {/* Featured experts */}
+      <section className="py-20 md:py-28 bg-[#f8f9fa]">
+        <div className="container px-4 md:px-12">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="eb-garamond font-bold text-[#051C2C] text-3xl md:text-4xl lg:text-5xl text-center mb-12 md:mb-16"
+          >
+            Featured experts
+          </motion.h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 max-w-5xl mx-auto">
+            {[
+              { name: "Alastair Green", title: "Senior Partner, Washington DC", description: "Leads our private equity practice with expertise in due diligence, value creation, and portfolio company transformation.", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" },
+              { name: "Ishaan Nangia", title: "Senior Partner, Melbourne", description: "Specializes in operational due diligence, carve-outs, and post-merger integration for PE and growth investors.", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" },
+              { name: "Nicola Sandri", title: "Senior Partner, Milan", description: "Focuses on commercial due diligence, growth strategy, and international expansion for portfolio companies.", image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400&q=80" }
+            ].map((expert, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-white rounded-lg shadow-sm border border-[#E5E7EB] p-6 md:p-8 flex flex-col items-center text-center"
+              >
+                <img src={expert.image} alt={expert.name} className="w-28 h-28 rounded-full object-cover mx-auto mb-4" />
+                <h3 className="eb-garamond font-bold text-[#051C2C] text-xl md:text-2xl mb-1">{expert.name}</h3>
+                <p className="text-sm text-[#6B7280] mb-4">{expert.title}</p>
+                <p className="text-sm text-[#6B7280] leading-relaxed mb-6 line-clamp-4">{expert.description}</p>
+                <a href={`mailto:contact@nexdyne.com?subject=Contact ${expert.name}`} className="inline-flex items-center justify-center w-10 h-10 bg-[#051C2C] text-white rounded-md hover:bg-[#051C2C]/90 transition-colors" aria-label={`Email ${expert.name}`}>
+                  <Mail className="w-4 h-4" />
+                </a>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="flex justify-center mt-12 md:mt-16">
+            <Link href="/our-people">
+              <button type="button" className="px-6 py-3 bg-white border border-[#0077B5] text-[#0077B5] font-semibold rounded-md hover:bg-[#0077B5]/5 transition-colors">
+                More experts
+              </button>
+            </Link>
+          </motion.div>
         </div>
       </section>
 

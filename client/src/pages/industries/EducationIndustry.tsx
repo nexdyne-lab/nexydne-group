@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, GraduationCap, BookOpen, Users, Lightbulb, Globe, BarChart3, ChevronRight, Laptop, Brain, Award } from "lucide-react";
+import { ArrowRight, GraduationCap, BookOpen, Users, Lightbulb, Globe, BarChart3, ChevronRight, Laptop, Brain, Award, Mail } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
@@ -17,45 +17,42 @@ export default function EducationIndustry() {
       />
       <Navigation />
       
-      {/* Editorial Hero Section */}
-      <section className="relative pt-32 pb-20 bg-white">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-5xl"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-8 block">
-              Education Industry
-            </span>
-            
-            <h1 className="text-5xl md:text-6xl lg:text-7xl eb-garamond font-bold tracking-tight text-[#051C2C] leading-[1.1] mb-5">
-              Education Industry
-            </h1>
-            
-            <p className="text-lg sm:text-xl md:text-2xl text-[#051C2C]/70 leading-relaxed max-w-4xl">
-              Education is being reimagined. The convergence of technology, changing learner expectations, and new economic realities is creating both challenges and opportunities for educational institutions. NexDyne helps education leaders navigate this transformation—building the capabilities needed to deliver exceptional learning outcomes at scale.
-            </p>
-          </motion.div>
+      {/* Hero Section - Deep blue with left copy and right visual */}
+      <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center overflow-hidden pt-32">
+        <div className="absolute inset-0 bg-[#0A235B]" />
+        <div className="absolute inset-0 flex justify-end pointer-events-none">
+          <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[75%] max-w-[900px] h-[140%] min-h-[600px] opacity-25">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&q=80" alt="" className="w-full h-full object-cover object-left" aria-hidden />
+          </div>
+          <svg className="absolute right-0 top-0 bottom-0 w-[72%] max-w-[820px] h-full opacity-70" viewBox="0 0 400 300" preserveAspectRatio="xMaxYMid meet" aria-hidden>
+            <defs>
+              <pattern id="dish-grid-education" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(0, 212, 255, 0.4)" strokeWidth="0.4" />
+              </pattern>
+              <radialGradient id="dish-fade-education" cx="0.6" cy="0.5" r="0.9">
+                <stop offset="0%" stopColor="rgba(0, 180, 216, 0.5)" />
+                <stop offset="100%" stopColor="transparent" />
+              </radialGradient>
+            </defs>
+            <ellipse cx="320" cy="150" rx="220" ry="180" fill="url(#dish-fade-education)" />
+            <ellipse cx="320" cy="150" rx="220" ry="180" fill="url(#dish-grid-education)" />
+            {[0.35, 0.5, 0.65, 0.8, 0.95].map((r, i) => (
+              <ellipse key={i} cx="320" cy="150" rx={220 * r} ry={180 * r} fill="none" stroke="rgba(0, 212, 255, 0.35)" strokeWidth="0.5" />
+            ))}
+          </svg>
         </div>
-      </section>
-
-      {/* Full-Width Hero Image */}
-      <section className="relative">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.3 }}
-          className="w-full h-[50vh] md:h-[60vh] relative overflow-hidden"
-        >
-          <img 
-            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&q=80" 
-            alt="Education Digital Transformation" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent" />
-        </motion.div>
+        <div className="container relative z-10 px-4 md:px-12 py-24 md:py-32">
+          <div className="max-w-xl">
+            <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.1] mb-6">
+                Education Industry
+              </h1>
+              <p className="text-base sm:text-lg md:text-xl text-[#E0E0E0] leading-relaxed font-sans max-w-lg">
+                Education is being reimagined. The convergence of technology, changing learner expectations, and new economic realities is creating both challenges and opportunities for educational institutions. NexDyne helps education leaders navigate this transformation—building the capabilities needed to deliver exceptional learning outcomes at scale.
+              </p>
+            </motion.div>
+          </div>
+        </div>
       </section>
 
       {/* Editorial Introduction */}
@@ -85,15 +82,23 @@ export default function EducationIndustry() {
         </div>
       </section>
 
-      {/* Key Statistics Strip */}
-      <section className="py-16 bg-[#051C2C]">
+      {/* Our Experience & Impact - Metrics */}
+      <section className="py-20 md:py-28 bg-white">
         <div className="container px-4 md:px-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="eb-garamond font-bold text-[#0B2B40] text-2xl md:text-3xl mb-12 md:mb-16"
+          >
+            Our Experience & Impact
+          </motion.h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
             {[
-              { value: "25%", label: "Improvement in student retention" },
-              { value: "40%", label: "Increase in course completion rates" },
-              { value: "30%", label: "Reduction in administrative costs" },
-              { value: "2x", label: "Faster time to credential" }
+              { value: "40+", label: "Ventures launched with clients across industries" },
+              { value: "78%", label: "Reach profitability within 18 months" },
+              { value: "4-6 Mo", label: "Typical time from concept to market launch" }
             ].map((stat, index) => (
               <motion.div
                 key={index}
@@ -101,12 +106,12 @@ export default function EducationIndustry() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center"
+                className="text-left"
               >
-                <div className="text-4xl md:text-5xl font-serif font-bold text-[#0077B5] mb-2">
+                <div className="text-4xl md:text-5xl font-serif font-bold text-[#0B2B40] mb-2">
                   {stat.value}
                 </div>
-                <div className="text-sm text-white/60">
+                <div className="text-base text-[#6C757D] leading-snug">
                   {stat.label}
                 </div>
               </motion.div>
@@ -115,71 +120,67 @@ export default function EducationIndustry() {
         </div>
       </section>
 
-      {/* How We Help Education - Editorial Two-Column */}
+      {/* How We Help - Grid style with header and separators */}
       <section className="py-20 md:py-28 bg-white">
         <div className="container px-4 md:px-12">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-8 leading-tight">
-                How We Help Education Institutions Prepare for the Future
-              </h2>
-              <p className="text-lg text-[#051C2C]/70 leading-relaxed">
-                Success in education requires excellence across multiple dimensions: learning outcomes, student experience, operational efficiency, and financial sustainability. We help institutions build capabilities in each area—creating integrated solutions that work together to fulfill their educational mission.
-              </p>
-            </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-xs font-semibold uppercase tracking-[0.15em] text-[#6B7280] mb-4">
+              How We Help Clients
+            </h2>
+            <div className="border-t border-[#E5E7EB]" aria-hidden />
+          </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="space-y-8"
-            >
-              {/* Personalized Learning */}
-              <div className="border-l-4 border-[#0077B5] pl-6">
-                <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-3">
-                  Personalized Learning at Scale
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 md:gap-y-12 mt-8">
+            {[
+              { title: "Personalized Learning at Scale", desc: "Deploy AI-powered adaptive learning systems that personalize content, pacing, and pathways for each student. Our solutions analyze learning patterns in real time to identify struggling students early and recommend interventions that improve outcomes." },
+              { title: "Student Success & Retention", desc: "Build predictive models that identify at-risk students before they fall behind. Our student success platforms enable proactive outreach, personalized support, and coordinated interventions that improve retention and completion rates." },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <h3 className="text-lg font-bold text-[#051C2C] mb-2 flex items-center gap-2">
+                  {item.title}
+                  <ChevronRight className="w-4 h-4 text-[#94A3B8] shrink-0" aria-hidden />
                 </h3>
-                <p className="text-[#051C2C]/70 leading-relaxed">
-                  Deploy AI-powered adaptive learning systems that personalize content, pacing, and pathways for each student. Our solutions analyze learning patterns in real time to identify struggling students early and recommend interventions that improve outcomes.
+                <p className="text-sm text-[#6B7280] leading-relaxed">
+                  {item.desc}
                 </p>
-              </div>
+              </motion.div>
+            ))}
+          </div>
 
-              {/* Student Success */}
-              <div className="border-l-4 border-[#0077B5] pl-6">
-                <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-3">
-                  Student Success & Retention
-                </h3>
-                <p className="text-[#051C2C]/70 leading-relaxed">
-                  Build predictive models that identify at-risk students before they fall behind. Our student success platforms enable proactive outreach, personalized support, and coordinated interventions that improve retention and completion rates.
-                </p>
-              </div>
+          <div className="border-t border-[#E5E7EB] my-10 md:my-12" aria-hidden />
 
-              {/* Digital Campus */}
-              <div className="border-l-4 border-[#0077B5] pl-6">
-                <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-3">
-                  Digital Campus & Hybrid Learning
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 md:gap-y-12">
+            {[
+              { title: "Digital Campus & Hybrid Learning", desc: "Create seamless hybrid learning experiences that combine the best of in-person and online education. Our solutions help institutions design, deliver, and assess learning across modalities—meeting students where they are." },
+              { title: "Operational Excellence", desc: "Optimize operations with intelligent automation and analytics. From enrollment management to financial aid processing, we help institutions reduce costs, improve service, and free up resources for their core educational mission." },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <h3 className="text-lg font-bold text-[#051C2C] mb-2 flex items-center gap-2">
+                  {item.title}
+                  <ChevronRight className="w-4 h-4 text-[#94A3B8] shrink-0" aria-hidden />
                 </h3>
-                <p className="text-[#051C2C]/70 leading-relaxed">
-                  Create seamless hybrid learning experiences that combine the best of in-person and online education. Our solutions help institutions design, deliver, and assess learning across modalities—meeting students where they are.
+                <p className="text-sm text-[#6B7280] leading-relaxed">
+                  {item.desc}
                 </p>
-              </div>
-
-              {/* Operational Excellence */}
-              <div className="border-l-4 border-[#0077B5] pl-6">
-                <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-3">
-                  Operational Excellence
-                </h3>
-                <p className="text-[#051C2C]/70 leading-relaxed">
-                  Optimize operations with intelligent automation and analytics. From enrollment management to financial aid processing, we help institutions reduce costs, improve service, and free up resources for their core educational mission.
-                </p>
-              </div>
-            </motion.div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
@@ -241,6 +242,67 @@ export default function EducationIndustry() {
         </div>
       </section>
 
+      {/* Featured Insights */}
+      <section className="py-20 md:py-28 bg-white">
+        <div className="container px-4 md:px-12">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-xs font-bold uppercase tracking-[0.2em] text-[#051C2C] mb-10 md:mb-12"
+          >
+            Featured Insights
+          </motion.h2>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="grid md:grid-cols-2 gap-0 border border-[#E5E7EB] mb-10 md:mb-12 overflow-hidden"
+          >
+            <div className="relative aspect-[4/3] md:aspect-auto md:min-h-[320px]">
+              <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80" alt="" className="absolute inset-0 w-full h-full object-cover" aria-hidden />
+            </div>
+            <div className="flex flex-col justify-center p-8 md:p-10 lg:p-12 bg-white">
+              <span className="text-xs font-medium uppercase tracking-wider text-[#6B7280] mb-2">Collection</span>
+              <Link href="/insights/education-future" className="group inline-flex items-start gap-2 text-left mb-3">
+                <h3 className="text-xl md:text-2xl lg:text-3xl eb-garamond font-bold text-[#051C2C] leading-tight group-hover:text-[#0077B5] transition-colors">
+                  The Next Normal – The future of education: Personalized, accessible, and outcomes-driven
+                </h3>
+                <span className="text-[#0077B5] shrink-0 mt-1 group-hover:translate-x-1 transition-transform" aria-hidden>&gt;</span>
+              </Link>
+              <span className="text-sm text-[#6B7280] mb-4">November 3, 2025 —</span>
+              <p className="text-[#051C2C]/70 text-base leading-relaxed">
+                Education is being reimagined by technology, learner expectations, and workforce needs. This collection explores how institutions can deliver personalized learning, improve outcomes with analytics, and build the digital experiences that support lifelong learning and employability.
+              </p>
+            </div>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+            {[
+              { category: "Article", title: "The case for a clear ROI framework for edtech investments", link: "/insights/edtech-roi", image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80", alt: "EdTech" },
+              { category: "Article", title: "Finding a route to enrollment stability for higher ed", link: "/insights/enrollment-stability", image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80", alt: "Higher education" },
+              { category: "Article", title: "The journey toward AI-enabled learning and advising", link: "/insights/ai-learning-advising", image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&q=80", alt: "Learning analytics" },
+            ].map((item, index) => (
+              <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>
+                <Link href={item.link} className="group block">
+                  <div className="overflow-hidden mb-4">
+                    <img src={item.image} alt={item.alt} className="w-full aspect-[16/10] object-cover transition-transform duration-300 group-hover:scale-[1.02]" />
+                  </div>
+                  <span className="text-xs font-medium uppercase tracking-wider text-[#6B7280] block mb-2">{item.category}</span>
+                  <h3 className="text-lg font-bold text-[#051C2C] leading-snug group-hover:text-[#0077B5] transition-colors flex items-start gap-2">
+                    <span>{item.title}</span>
+                    <span className="text-[#0077B5] shrink-0 group-hover:translate-x-1 transition-transform" aria-hidden>&gt;</span>
+                  </h3>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Our Education Capabilities - Editorial Grid */}
       <section className="py-20 md:py-28 bg-white">
         <div className="container px-4 md:px-12">
@@ -265,7 +327,7 @@ export default function EducationIndustry() {
               transition={{ duration: 0.5 }}
               className="border-t-2 border-[#051C2C]/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 underline decoration-[#0077B5] decoration-2 underline-offset-4">
+              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4  decoration-[#0077B5] decoration-2 underline-offset-4">
                 Learning Analytics & AI
               </h3>
               <p className="text-[#051C2C]/70 leading-relaxed">
@@ -281,7 +343,7 @@ export default function EducationIndustry() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="border-t-2 border-[#051C2C]/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 underline decoration-[#0077B5] decoration-2 underline-offset-4">
+              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4  decoration-[#0077B5] decoration-2 underline-offset-4">
                 EdTech Strategy & Implementation
               </h3>
               <p className="text-[#051C2C]/70 leading-relaxed">
@@ -297,7 +359,7 @@ export default function EducationIndustry() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="border-t-2 border-[#051C2C]/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 underline decoration-[#0077B5] decoration-2 underline-offset-4">
+              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4  decoration-[#0077B5] decoration-2 underline-offset-4">
                 Online Program Development
               </h3>
               <p className="text-[#051C2C]/70 leading-relaxed">
@@ -313,7 +375,7 @@ export default function EducationIndustry() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="border-t-2 border-[#051C2C]/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 underline decoration-[#0077B5] decoration-2 underline-offset-4">
+              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4  decoration-[#0077B5] decoration-2 underline-offset-4">
                 Enrollment Management
               </h3>
               <p className="text-[#051C2C]/70 leading-relaxed">
@@ -329,7 +391,7 @@ export default function EducationIndustry() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="border-t-2 border-[#051C2C]/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 underline decoration-[#0077B5] decoration-2 underline-offset-4">
+              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4  decoration-[#0077B5] decoration-2 underline-offset-4">
                 Workforce Development & Upskilling
               </h3>
               <p className="text-[#051C2C]/70 leading-relaxed">
@@ -345,7 +407,7 @@ export default function EducationIndustry() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="border-t-2 border-[#051C2C]/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 underline decoration-[#0077B5] decoration-2 underline-offset-4">
+              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4  decoration-[#0077B5] decoration-2 underline-offset-4">
                 Institutional Effectiveness
               </h3>
               <p className="text-[#051C2C]/70 leading-relaxed">
@@ -356,66 +418,105 @@ export default function EducationIndustry() {
         </div>
       </section>
 
-      {/* Client Success Stories */}
-      <section className="py-20 md:py-28 bg-[#051C2C] text-white">
-        <div className="container px-4 md:px-12">
-          <motion.div
+      {/* Client Success Stories - Examples of our work style */}
+      <section className="py-20 md:py-28 bg-white">
+        <div className="container px-4 md:px-12 max-w-6xl mx-auto">
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-16"
+            className="text-center text-xl md:text-2xl font-semibold uppercase tracking-wide text-[#051C2C] mb-10 md:mb-14"
           >
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-white mb-6">
-              Our Clients' Success in Education
-            </h2>
+            Examples of Our Work
+          </motion.h2>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="w-full aspect-[21/9] min-h-[200px] mb-10 md:mb-14 overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1920&q=80"
+              alt=""
+              className="w-full h-full object-cover grayscale"
+              aria-hidden
+            />
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Success Story 1 */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="bg-white/5 p-8 md:p-10 rounded-lg"
-            >
-              <div className="text-5xl md:text-6xl font-serif font-bold text-[#0077B5] mb-2">
-                45%
-              </div>
-              <div className="text-lg font-medium text-white mb-6">
-                increase in online course completion
-              </div>
-              <p className="text-white/70 leading-relaxed mb-6">
-                A community college system deployed our adaptive learning platform across 50 campuses. The system personalizes content and pacing for each student, provides real-time feedback to instructors, and identifies students who need additional support—dramatically improving completion rates in gateway courses.
-              </p>
-              <Link href="/cases/community-college-adaptive-learning" className="inline-flex items-center text-[#0077B5] font-semibold hover:underline">
-                Read the full case study <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
-            </motion.div>
-
-            {/* Success Story 2 */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-white/5 p-8 md:p-10 rounded-lg"
-            >
-              <div className="text-5xl md:text-6xl font-serif font-bold text-[#0077B5] mb-2">
-                $15M
-              </div>
-              <div className="text-lg font-medium text-white mb-6">
-                new revenue from online programs
-              </div>
-              <p className="text-white/70 leading-relaxed mb-6">
-                A regional university partnered with us to launch a portfolio of online graduate programs. We helped them design programs aligned with market demand, build the technology infrastructure, and develop marketing strategies—generating $15M in new revenue within three years.
-              </p>
-              <Link href="/cases/university-online-programs" className="inline-flex items-center text-[#0077B5] font-semibold hover:underline">
-                Read the full case study <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
-            </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+            {[
+              { title: "Increasing course completion", body: "A community college system deployed our adaptive learning platform across 50 campuses. The system personalizes content and pacing for each student, provides real-time feedback to instructors, and identifies students who need additional support—dramatically improving completion rates in gateway courses." },
+              { title: "Growing revenue from online programs", body: "A regional university partnered with us to launch a portfolio of online graduate programs. We helped them design programs aligned with market demand, build the technology infrastructure, and develop marketing strategies—generating significant new revenue within three years." },
+              { title: "Unifying student data and experience", body: "We helped a university replace fragmented systems with a unified student information and engagement platform. Students and staff now have a single place for records, advising, and communications—improving retention and satisfaction." },
+              { title: "Enabling personalized learning at scale", body: "A K–12 district implemented our learning analytics and curriculum platform. Teachers get actionable insights on student progress; content adapts to pace and style; and leaders can see outcomes across schools to drive improvement." },
+            ].map((story, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <h3 className="text-base md:text-lg font-bold text-[#051C2C] mb-3">
+                  {story.title}
+                </h3>
+                <p className="text-sm md:text-base text-[#051C2C]/80 leading-relaxed">
+                  {story.body}
+                </p>
+              </motion.div>
+            ))}
           </div>
+        </div>
+      </section>
+
+      {/* Featured experts */}
+      <section className="py-20 md:py-28 bg-[#f8f9fa]">
+        <div className="container px-4 md:px-12">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="eb-garamond font-bold text-[#051C2C] text-3xl md:text-4xl lg:text-5xl text-center mb-12 md:mb-16"
+          >
+            Featured experts
+          </motion.h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 max-w-5xl mx-auto">
+            {[
+              { name: "Alastair Green", title: "Senior Partner, Washington DC", description: "Leads our education practice with expertise in learning analytics, institutional strategy, and digital transformation for universities and schools.", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" },
+              { name: "Ishaan Nangia", title: "Senior Partner, Melbourne", description: "Specializes in EdTech strategy, student success platforms, and operational excellence for higher education and K-12.", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" },
+              { name: "Nicola Sandri", title: "Senior Partner, Milan", description: "Focuses on international education, lifelong learning, and workforce development partnerships for education institutions.", image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400&q=80" }
+            ].map((expert, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-white rounded-lg shadow-sm border border-[#E5E7EB] p-6 md:p-8 flex flex-col items-center text-center"
+              >
+                <img src={expert.image} alt={expert.name} className="w-28 h-28 rounded-full object-cover mx-auto mb-4" />
+                <h3 className="eb-garamond font-bold text-[#051C2C] text-xl md:text-2xl mb-1">{expert.name}</h3>
+                <p className="text-sm text-[#6B7280] mb-4">{expert.title}</p>
+                <p className="text-sm text-[#6B7280] leading-relaxed mb-6 line-clamp-4">{expert.description}</p>
+                <a href={`mailto:contact@nexdyne.com?subject=Contact ${expert.name}`} className="inline-flex items-center justify-center w-10 h-10 bg-[#051C2C] text-white rounded-md hover:bg-[#051C2C]/90 transition-colors" aria-label={`Email ${expert.name}`}>
+                  <Mail className="w-4 h-4" />
+                </a>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="flex justify-center mt-12 md:mt-16">
+            <Link href="/our-people">
+              <button type="button" className="px-6 py-3 bg-white border border-[#0077B5] text-[#0077B5] font-semibold rounded-md hover:bg-[#0077B5]/5 transition-colors">
+                More experts
+              </button>
+            </Link>
+          </motion.div>
         </div>
       </section>
 
