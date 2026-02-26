@@ -17,41 +17,51 @@ export default function PrivateEquityIndustry() {
       />
       <Navigation />
       
-      {/* Hero Section - Deep blue with left copy and right visual */}
-      <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center overflow-hidden pt-32">
-        <div className="absolute inset-0 bg-[#0A235B]" />
-        <div className="absolute inset-0 flex justify-end pointer-events-none">
-          <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[75%] max-w-[900px] h-[140%] min-h-[600px] opacity-25">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80" alt="" className="w-full h-full object-cover object-left" aria-hidden />
-          </div>
-          <svg className="absolute right-0 top-0 bottom-0 w-[72%] max-w-[820px] h-full opacity-70" viewBox="0 0 400 300" preserveAspectRatio="xMaxYMid meet" aria-hidden>
-            <defs>
-              <pattern id="dish-grid-pe" width="20" height="20" patternUnits="userSpaceOnUse">
-                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(0, 212, 255, 0.4)" strokeWidth="0.4" />
-              </pattern>
-              <radialGradient id="dish-fade-pe" cx="0.6" cy="0.5" r="0.9">
-                <stop offset="0%" stopColor="rgba(0, 180, 216, 0.5)" />
-                <stop offset="100%" stopColor="transparent" />
-              </radialGradient>
-            </defs>
-            <ellipse cx="320" cy="150" rx="220" ry="180" fill="url(#dish-fade-pe)" />
-            <ellipse cx="320" cy="150" rx="220" ry="180" fill="url(#dish-grid-pe)" />
-            {[0.35, 0.5, 0.65, 0.8, 0.95].map((r, i) => (
-              <ellipse key={i} cx="320" cy="150" rx={220 * r} ry={180 * r} fill="none" stroke="rgba(0, 212, 255, 0.35)" strokeWidth="0.5" />
-            ))}
-          </svg>
+      {/* Hero Section - Consulting standard: hierarchy, CTA, split with image */}
+      <section className="relative min-h-0 flex flex-col lg:flex-row lg:min-h-[68vh] lg:items-center overflow-hidden bg-[#E8EEF4] border-b border-[#051C2C]/10 pt-8">
+        <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-[50%] pointer-events-none">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+            className="absolute inset-0"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
+              alt="Private equity and investments"
+              className="w-full h-full object-cover object-center"
+            />
+          </motion.div>
         </div>
-        <div className="container relative z-10 px-4 md:px-12 py-24 md:py-32">
-          <div className="max-w-xl">
-            <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.1] mb-6">
+        <div className="container relative z-10 px-4 md:px-12 py-14 md:py-20 lg:py-24 flex-shrink-0">
+          <div className="max-w-xl lg:max-w-2xl">
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+              className="space-y-6"
+            >
+              <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-[#0077B5]" aria-hidden>
+                Industries
+              </p>
+              <h1 className="eb-garamond font-bold text-[#051C2C] text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-6xl tracking-tight leading-[1.12]">
                 Private Equity & Investments
               </h1>
-              <p className="text-base sm:text-lg md:text-xl text-[#E0E0E0] leading-relaxed font-sans max-w-lg">
-                In an era of compressed multiples and increased competition, operational value creation has become the primary driver of private equity returns. NexDyne partners with PE firms and their portfolio companies to accelerate transformation, improve operations, and create sustainable competitive advantage that drives superior exits.
+              <p className="text-base md:text-lg text-[#051C2C]/75 leading-relaxed max-w-lg">
+                Accelerate value creation. Drive superior exits.
               </p>
             </motion.div>
           </div>
+        </div>
+        <div className="lg:hidden relative w-full aspect-[16/10] min-h-[200px] flex-shrink-0">
+          <motion.img
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
+            alt="Private equity and investments"
+            className="w-full h-full object-cover object-center"
+          />
         </div>
       </section>
 

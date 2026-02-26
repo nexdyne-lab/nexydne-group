@@ -25,7 +25,7 @@ export default function Footer() {
             {/* Left: Subscription Text */}
             <div>
               <p className="font-serif text-xl sm:text-2xl md:text-3xl text-black leading-relaxed italic">
-                Stay ahead in a rapidly changing world. Subscribe to NexDyne Consulting Group Insights, our monthly look at the critical issues facing global businesses.
+              The next era belongs to leaders who prepare for it. Subscribe to NexDyne Consulting Group Insights — principled perspectives on governance, strategy, and the future of human intelligence.
               </p>
             </div>
             

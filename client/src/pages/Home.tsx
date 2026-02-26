@@ -36,10 +36,12 @@ export default function Home() {
               className="text-center"
             >
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-[#1A1A1A] leading-[1.2]">
-                How Visionary Leaders Are Transforming Organizations, Advancing Technology, and Building a Healthier Society
+              Governing Intelligence. Scaling Judgment. Leading in the Age of Intelligent Machines.
+
               </h2>
               <p className="mt-4 md:mt-6 text-sm sm:text-base md:text-[17px] text-[#4a4a4a] leading-relaxed">
-              We partner with ambitious organizations to harness the power of AI, data, and exceptional talent — turning complex challenges into competitive advantage and driving measurable impact where it matters most. By combining deep industry expertise with cutting-edge technology and the right people, we help businesses reimagine their operations, accelerate growth, and build resilient strategies for a rapidly evolving world. Whether you are modernizing legacy systems, launching new digital ventures, or seeking the specialized talent to lead your next transformation, NexDyne is where vision meets execution.
+              The organizations that will define the next decade will be the ones that govern intelligence as deliberately as they deploy it. NexDyne combines deep industry expertise with structured intelligence governance to help ambitious leaders harness AI, data, and operational power — while strengthening the human judgment, accountability, and trust that no machine can provide. From modernizing legacy systems to designing AI-enabled operating models, we build transformations that perform, endure, and scale. NexDyne is where governance meets growth.
+
               </p>
             </motion.div>
 
@@ -350,28 +352,31 @@ export default function Home() {
             {/* Left Column - Interactive Selector */}
             <div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#1A1A1A] leading-tight mb-8 eb-garamond">
-                Ready to talk?
+              Start the Conversation.
+
               </h2>
               
               <div className="space-y-4">
                 <p className="text-lg sm:text-xl text-gray-600">
-                  I want to talk to your experts in:
+                I would like to speak with your team about:
+
                 </p>
                 
                 {/* Dropdown Selector */}
                 <div className="relative">
                   <select 
                     className="w-full appearance-none bg-white border-b-2 border-[#CC0000] text-2xl sm:text-3xl font-semibold text-[#1A1A1A] py-3 pr-10 focus:outline-none cursor-pointer"
-                    defaultValue="ai-technology"
+                    defaultValue="ai-intelligent-systems"
                   >
-                    <option value="ai-technology">AI & Technology</option>
-                    <option value="process-optimization">Process Optimization</option>
-                    <option value="customer-intelligence">Customer Intelligence</option>
-                    <option value="enterprise-transformation">Enterprise Transformation</option>
-                    <option value="business-growth">Business Growth</option>
-                    <option value="financial-services">Financial Services</option>
-                    <option value="healthcare">Healthcare</option>
-                    <option value="professional-services">Professional Services</option>
+                    <option value="ai-intelligent-systems">AI & Intelligent Systems</option>
+                    <option value="strategy-corporate-finance">Strategy & Corporate Finance</option>
+                    <option value="operations-transformation">Operations Transformation</option>
+                    <option value="growth-marketing-sales">Growth, Marketing & Sales</option>
+                    <option value="data-transformation">Data Transformation</option>
+                    <option value="business-building-ventures">Business Building & Ventures</option>
+                    <option value="technology-infrastructure">Technology & Infrastructure</option>
+                    <option value="risk-resilience">Risk & Resilience</option>
+                    <option value="digital-twins-iot">Digital Twins & IoT</option>
                   </select>
                   <div className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none">
                     <svg className="w-6 h-6 text-[#CC0000]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -385,7 +390,8 @@ export default function Home() {
             {/* Right Column - Contact Form */}
             <div>
               <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
-                We work with ambitious leaders who want to define the future, not hide from it. Together, we achieve extraordinary outcomes.
+              We work with leaders who believe governance comes before automation — and that the organizations built to last will be the ones where human judgment scales with the technology around it.
+
               </p>
               
               {/* Email Input */}
@@ -421,10 +427,12 @@ export default function Home() {
           >
             <span className="text-[11px] font-bold text-[#1A1A1A] uppercase tracking-[0.2em] mb-5 block">NexDyne Careers</span>
             <h2 className="text-3xl sm:text-4xl md:text-[42px] text-[#1A1A1A] leading-[1.15] mb-6 eb-garamond">
-              Shape the Future of Consulting
+            Where Human Intelligence Leads
+
             </h2>
             <p className="text-base sm:text-lg text-[#4a4a4a] leading-relaxed mb-10 max-w-lg">
-              We're dedicated to helping our clients do amazing things and unlocking the potential of those who advance the world. Join us, and you can too.
+            We help organizations govern intelligence and lead with judgment in the age of AI. If you bring ambition, clarity, and the will to shape what comes next — this is where you belong.
+
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/careers">
