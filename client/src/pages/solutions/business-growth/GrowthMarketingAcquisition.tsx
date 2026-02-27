@@ -78,17 +78,17 @@ export default function GrowthMarketingAcquisition() {
       <Navigation />
       <main>
         {/* Hero */}
-        <div className="bg-[#051C2C] text-white">
+        <div className="bg-base text-white">
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center py-16 md:py-24">
             <div className="flex flex-col gap-4 items-start">
               <Breadcrumbs variant="light" />
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight eb-garamond">{pageData.title}</h1>
-              <p className="text-lg md:text-xl text-gray-300">{pageData.subtitle}</p>
+              <p className="text-lg md:text-xl text-muted-foreground/50">{pageData.subtitle}</p>
               <div className="flex flex-wrap gap-4 mt-4">
-                <Button asChild size="lg" className="bg-[#0077B5] hover:bg-[#005f8f] text-white">
+                <Button asChild size="lg" className="bg-primary hover:bg-secondary text-white">
                   <Link href="/contact">Schedule a Consultation</Link>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-[#051C2C]">
+                <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-charcoal">
                    <Link href="/case-studies">View Our Work</Link>
                 </Button>
               </div>
@@ -105,8 +105,8 @@ export default function GrowthMarketingAcquisition() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                     {stats.map((stat, index) => (
                         <div key={index}>
-                            <p className="text-4xl md:text-5xl font-bold text-[#051C2C]">{stat.metric}</p>
-                            <p className="text-base text-gray-600 mt-2">{stat.label}</p>
+                            <p className="text-4xl md:text-5xl font-bold text-charcoal">{stat.metric}</p>
+                            <p className="text-base text-muted-foreground mt-2">{stat.label}</p>
                         </div>
                     ))}
                 </div>
@@ -114,10 +114,10 @@ export default function GrowthMarketingAcquisition() {
         </div>
 
         {/* Thought Leadership */}
-        <div className="py-16 bg-gray-50">
+        <div className="py-16 bg-subtle">
             <div className="container mx-auto max-w-4xl">
-                <h2 className="text-3xl font-bold text-center text-[#051C2C] mb-8">Fueling Your Growth Engine</h2>
-                <div className="prose lg:prose-xl mx-auto text-gray-700 space-y-6">
+                <h2 className="text-3xl font-bold text-center text-charcoal mb-8">Fueling Your Growth Engine</h2>
+                <div className="prose lg:prose-xl mx-auto text-charcoal/80 space-y-6">
                     <p>In today's hyper-competitive digital landscape, acquiring new customers is both an art and a science. Sustainable growth is not about chasing vanity metrics; it's about building a predictable, scalable, and profitable acquisition engine. This requires a holistic approach that integrates data, technology, and creativity to attract, engage, and convert your ideal customers. At NexDyne, we move beyond siloed tactics to architect comprehensive growth strategies that deliver measurable business outcomes.</p>
                     <p>Our philosophy is rooted in a deep understanding of the entire customer lifecycle. We combine rigorous data analysis with a relentless focus on the customer experience to identify and capitalize on growth opportunities. From top-of-funnel brand awareness to bottom-of-funnel conversion optimization, we orchestrate multi-channel campaigns that work in concert to drive momentum. We believe in a test-and-learn methodology, constantly iterating and refining our approach to ensure your marketing investment yields the highest possible return.</p>
                 </div>
@@ -127,13 +127,13 @@ export default function GrowthMarketingAcquisition() {
         {/* How We Can Help */}
         <div className="py-16 bg-white">
             <div className="container mx-auto">
-                <h2 className="text-3xl font-bold text-center text-[#051C2C] mb-12">Our Growth Marketing Capabilities</h2>
+                <h2 className="text-3xl font-bold text-center text-charcoal mb-12">Our Growth Marketing Capabilities</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {capabilities.map((cap, index) => (
                         <div key={index} className="group relative p-6 border rounded-lg hover:shadow-xl transition-shadow duration-300">
-                            <div className="absolute top-0 left-0 h-full w-1 bg-gray-200 group-hover:bg-[#CC0000] transition-colors duration-300"></div>
-                            <h3 className="text-xl font-bold text-[#051C2C] transition-all duration-300 group-hover:text-base">{cap.title}</h3>
-                            <p className="text-gray-600 mt-2 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-300">{cap.description}</p>
+                            <div className="absolute top-0 left-0 h-full w-1 bg-muted group-hover:bg-destructive transition-colors duration-300"></div>
+                            <h3 className="text-xl font-bold text-charcoal transition-all duration-300 group-hover:text-base">{cap.title}</h3>
+                            <p className="text-muted-foreground mt-2 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-300">{cap.description}</p>
                         </div>
                     ))}
                 </div>
@@ -141,16 +141,16 @@ export default function GrowthMarketingAcquisition() {
         </div>
 
         {/* Our Approach */}
-        <div className="py-16 bg-[#051C2C] text-white">
+        <div className="py-16 bg-base text-white">
             <div className="container mx-auto">
                 <h2 className="text-3xl font-bold text-center mb-12">Our Strategic Approach to Acquisition</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center relative">
                     <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gray-700 hidden md:block"></div>
                      {approach.map((item, index) => (
                         <div key={index} className="relative z-10 flex flex-col items-center">
-                            <div className="w-16 h-16 rounded-full bg-[#0077B5] flex items-center justify-center text-2xl font-bold mb-4 border-4 border-[#051C2C]">{item.step}</div>
+                            <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-2xl font-bold mb-4 border-4 border-base">{item.step}</div>
                             <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                            <p className="text-gray-300">{item.description}</p>
+                            <p className="text-muted-foreground/50">{item.description}</p>
                         </div>
                     ))}
                 </div>
@@ -158,15 +158,15 @@ export default function GrowthMarketingAcquisition() {
         </div>
 
         {/* Case Studies */}
-        <div className="py-16 bg-[#0A283E] text-white">
+        <div className="py-16 bg-base text-white">
             <div className="container mx-auto">
                 <h2 className="text-3xl font-bold text-center mb-12">Proven Success in Growth Marketing</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     {caseStudies.map((study, index) => (
-                        <div key={index} className="bg-[#051C2C] p-6 rounded-lg flex flex-col">
-                            <p className="text-sm font-semibold text-[#00d4ff] mb-2">{study.industry}</p>
+                        <div key={index} className="bg-base p-6 rounded-lg flex flex-col">
+                            <p className="text-sm font-semibold text-secondary mb-2">{study.industry}</p>
                             <h3 className="text-xl font-bold flex-grow">{study.headline}</h3>
-                            <Link href="/case-studies" className="flex items-center gap-2 text-[#00d4ff] hover:underline mt-4">
+                            <Link href="/case-studies" className="flex items-center gap-2 text-secondary hover:underline mt-4">
                                 Read Case Study <ArrowRight size={16} />
                             </Link>
                         </div>
@@ -176,14 +176,14 @@ export default function GrowthMarketingAcquisition() {
         </div>
 
         {/* Related Capabilities */}
-        <div className="py-16 bg-gray-100">
+        <div className="py-16 bg-subtle">
             <div className="container mx-auto">
-                <h2 className="text-3xl font-bold text-center text-[#051C2C] mb-12">Explore Related Capabilities</h2>
+                <h2 className="text-3xl font-bold text-center text-charcoal mb-12">Explore Related Capabilities</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {relatedCapabilities.map((rel, index) => (
                         <Link key={index} href={rel.link} className="block bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow duration-300">
-                            <h3 className="text-xl font-bold text-[#051C2C]">{rel.title}</h3>
-                            <div className="flex items-center gap-2 text-[#0077B5] hover:underline mt-4">
+                            <h3 className="text-xl font-bold text-charcoal">{rel.title}</h3>
+                            <div className="flex items-center gap-2 text-primary hover:underline mt-4">
                                 Learn More <ArrowRight size={16} />
                             </div>
                         </Link>
@@ -193,11 +193,11 @@ export default function GrowthMarketingAcquisition() {
         </div>
 
         {/* CTA */}
-        <div className="bg-[#0077B5] text-white">
+        <div className="bg-primary text-white">
             <div className="container mx-auto text-center py-16">
                 <h2 className="text-3xl md:text-4xl font-bold">Ready to Accelerate Your Growth?</h2>
                 <p className="text-lg md:text-xl mt-4 max-w-3xl mx-auto">Let's build a powerful acquisition engine that delivers scalable, sustainable results for your business. Contact us today to start the conversation.</p>
-                <Button asChild size="lg" className="mt-8 bg-white text-[#0077B5] hover:bg-gray-200">
+                <Button asChild size="lg" className="mt-8 bg-white text-primary hover:bg-muted">
                     <Link href="/contact">Get In Touch</Link>
                 </Button>
             </div>

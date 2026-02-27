@@ -37,8 +37,8 @@ export default function RetailerDataAcademy() {
       {/* Challenge Section */}
       <section className="py-20">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">The Challenge</h2>
-          <div className="space-y-4 text-lg text-slate-700">
+          <h2 className="text-4xl font-bold text-charcoal mb-6">The Challenge</h2>
+          <div className="space-y-4 text-lg text-charcoal/80">
             <p>
               A regional retail chain with 85 stores and $450M annual revenue recognized that data literacy was becoming a competitive differentiator. While they had invested in a modern data warehouse and BI tools, adoption remained low—only 15% of employees used data to inform decisions.
             </p>
@@ -55,8 +55,8 @@ export default function RetailerDataAcademy() {
       {/* Solution Section */}
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">The Solution</h2>
-          <div className="space-y-4 text-lg text-slate-700">
+          <h2 className="text-4xl font-bold text-charcoal mb-6">The Solution</h2>
+          <div className="space-y-4 text-lg text-charcoal/80">
             <p>
               NEXDYNE designed a multi-tier "Data Academy" with role-specific learning paths spanning 12 months. Rather than one-size-fits-all training, we created curricula tailored to job functions—store operations, merchandising, marketing, finance, supply chain, and IT.
             </p>
@@ -82,26 +82,26 @@ export default function RetailerDataAcademy() {
       {/* Results Section */}
       <section className="py-20">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">The Results</h2>
+          <h2 className="text-4xl font-bold text-charcoal mb-6">The Results</h2>
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="bg-indigo-50 p-6 rounded-lg border-l-4 border-indigo-600">
               <div className="text-4xl font-bold text-indigo-900 mb-2">120</div>
-              <div className="text-slate-700">Employees trained across 6 departments in 12 months</div>
+              <div className="text-charcoal/80">Employees trained across 6 departments in 12 months</div>
             </div>
             <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-600">
               <div className="text-4xl font-bold text-purple-900 mb-2">15% → 68%</div>
-              <div className="text-slate-700">Increase in employees using data for daily decisions</div>
+              <div className="text-charcoal/80">Increase in employees using data for daily decisions</div>
             </div>
             <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
               <div className="text-4xl font-bold text-blue-900 mb-2">250+</div>
-              <div className="text-slate-700">Custom dashboards and reports built by business users</div>
+              <div className="text-charcoal/80">Custom dashboards and reports built by business users</div>
             </div>
             <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
               <div className="text-4xl font-bold text-red-900 mb-2">$1.2M</div>
-              <div className="text-slate-700">Annual savings from reduced external analytics consulting</div>
+              <div className="text-charcoal/80">Annual savings from reduced external analytics consulting</div>
             </div>
           </div>
-          <div className="space-y-4 text-lg text-slate-700">
+          <div className="space-y-4 text-lg text-charcoal/80">
             <p>
               One year post-launch, the Data Academy became a permanent fixture in the company's talent development program. New hires complete Tier 1 during onboarding. High-potential employees advance through Tier 2 and 3, creating a pipeline of internal analytics talent.
             </p>
@@ -121,11 +121,11 @@ export default function RetailerDataAcademy() {
       {/* Technology Stack Section */}
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">Technology Stack</h2>
+          <h2 className="text-4xl font-bold text-charcoal mb-6">Technology Stack</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Learning Platform</h3>
-              <ul className="space-y-2 text-slate-700">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Learning Platform</h3>
+              <ul className="space-y-2 text-charcoal/80">
                 <li>• Custom LMS built on Moodle</li>
                 <li>• Zoom for live workshops and office hours</li>
                 <li>• Slack workspace for cohort collaboration</li>
@@ -133,8 +133,8 @@ export default function RetailerDataAcademy() {
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Technologies Taught</h3>
-              <ul className="space-y-2 text-slate-700">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Technologies Taught</h3>
+              <ul className="space-y-2 text-charcoal/80">
                 <li>• Looker (company's BI platform)</li>
                 <li>• SQL (Snowflake data warehouse)</li>
                 <li>• Python (Pandas, Scikit-learn, Matplotlib)</li>

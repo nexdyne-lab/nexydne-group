@@ -121,7 +121,7 @@ export default function DataDrivenCustomerIntelligence() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#1A1A1A]">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
       <SEO 
         title="Data-Driven Customer Intelligence" 
         description="Unlock deep customer insights through advanced analytics. Predict behavior and drive loyalty at scale."
@@ -130,7 +130,7 @@ export default function DataDrivenCustomerIntelligence() {
       <Navigation />
       
       {/* Hero Section - Black Background */}
-      <section className="relative min-h-[60vh] md:min-h-[70vh] bg-black pt-20 overflow-hidden">
+      <section className="relative min-h-[60vh] md:min-h-[70vh] bg-charcoal pt-20 overflow-hidden">
         
         <div className="container px-4 sm:px-6 md:px-12 relative z-10">
           <div className="max-w-4xl py-16 md:py-24">
@@ -170,7 +170,7 @@ export default function DataDrivenCustomerIntelligence() {
       {/* Statistics Section - Bain Style Clean Layout */}
       <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-white">
         <div className="container px-4 sm:px-6 md:px-12">
-          <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-[#7c3aed] mb-8">
+          <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-primary mb-8">
             Our Experience & Impact
           </h2>
           
@@ -186,12 +186,12 @@ export default function DataDrivenCustomerIntelligence() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className={`py-8 ${i !== 2 ? 'md:border-r border-gray-200' : ''} ${i !== 0 ? 'md:pl-8' : ''} ${i !== 2 ? 'md:pr-8' : ''}`}
+                className={`py-8 ${i !== 2 ? 'md:border-r border-border' : ''} ${i !== 0 ? 'md:pl-8' : ''} ${i !== 2 ? 'md:pr-8' : ''}`}
               >
-                <div className="text-5xl md:text-6xl font-serif text-[#1A1A1A] mb-3">
+                <div className="text-5xl md:text-6xl font-serif text-charcoal mb-3">
                   {stat.value}
                 </div>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed">
                   {stat.label}
                 </p>
               </motion.div>
@@ -201,7 +201,7 @@ export default function DataDrivenCustomerIntelligence() {
       </section>
 
       {/* Narrative Section */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-white border-t border-gray-100">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-white border-t border-border/50">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-3xl mx-auto">
             <motion.p
@@ -209,7 +209,7 @@ export default function DataDrivenCustomerIntelligence() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-2xl md:text-3xl font-serif text-[#1A1A1A] leading-relaxed mb-8"
+              className="text-2xl md:text-3xl font-serif text-charcoal leading-relaxed mb-8"
             >
               Most mid-market companies are sitting on a goldmine of customer data they can't access. Information lives in disconnected systems—CRM here, marketing automation there, support tickets somewhere else. The result? Teams make decisions based on gut instinct instead of evidence, and customers receive generic experiences that don't reflect their actual needs or history with your company.
             </motion.p>
@@ -219,7 +219,7 @@ export default function DataDrivenCustomerIntelligence() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-gray-600 leading-relaxed mb-8"
+              className="text-muted-foreground leading-relaxed mb-8"
             >
               We've spent years helping companies like yours transform scattered data into strategic advantage. The technology has matured, the costs have dropped, and the competitive pressure has intensified. Here's what we're seeing:
             </motion.p>
@@ -245,9 +245,9 @@ export default function DataDrivenCustomerIntelligence() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
-                  className="text-gray-700 leading-relaxed"
+                  className="text-charcoal/80 leading-relaxed"
                 >
-                  <strong className="text-[#1A1A1A]">{item.bold}</strong> {item.text}
+                  <strong className="text-charcoal">{item.bold}</strong> {item.text}
                 </motion.p>
               ))}
             </div>
@@ -256,18 +256,18 @@ export default function DataDrivenCustomerIntelligence() {
       </section>
 
       {/* What's Your CX Ambition? - Bain-Style Hover Cards */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-white border-t border-gray-100">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-white border-t border-border/50">
         <div className="container px-4 sm:px-6 md:px-12">
           {/* Section Header with Horizontal Lines */}
           <div className="flex items-center gap-4 mb-8">
             <div className="h-px bg-gray-300 flex-1" />
-            <h2 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-charcoal text-center">
               What's your customer intelligence ambition?
             </h2>
             <div className="h-px bg-gray-300 flex-1" />
           </div>
           
-          <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
             We've helped companies at every stage of the customer intelligence journey—from those just starting to unify their data to those ready to deploy advanced AI. Where are you?
           </p>
           
@@ -292,7 +292,7 @@ export default function DataDrivenCustomerIntelligence() {
       </section>
 
       {/* AI in Customer Intelligence Section */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-[#0a0a0a]">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left - Content */}
@@ -305,7 +305,7 @@ export default function DataDrivenCustomerIntelligence() {
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6">
                 AI in Customer Intelligence
               </h2>
-              <p className="text-gray-400 mb-8 leading-relaxed">
+              <p className="text-muted-foreground/70 mb-8 leading-relaxed">
                 The hype around AI is real, but so is the confusion. We cut through the noise to help you identify which AI applications will actually move the needle for your business—and which are just expensive distractions. Our focus:
               </p>
               
@@ -316,14 +316,14 @@ export default function DataDrivenCustomerIntelligence() {
                   "Deploy recommendation engines that learn from every interaction",
                   "Implement AI-powered personalization without creeping out your customers"
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-gray-300">
-                    <span className="text-gray-500">•</span>
+                  <li key={i} className="flex items-start gap-3 text-muted-foreground/50">
+                    <span className="text-muted-foreground">•</span>
                     {item}
                   </li>
                 ))}
               </ul>
               
-              <Link href="/insights/ai-customer-experience" className="text-[#cc0000] hover:text-red-400 font-medium inline-flex items-center transition-colors">
+              <Link href="/insights/ai-customer-experience" className="text-destructive hover:text-red-400 font-medium inline-flex items-center transition-colors">
                 How we're using AI to predict customer behavior <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </motion.div>
@@ -353,14 +353,14 @@ export default function DataDrivenCustomerIntelligence() {
               transition={{ duration: 0.6 }}
             >
               <h3 className="text-xl font-bold text-white mb-4">Real Outcomes</h3>
-              <p className="text-gray-400 mb-4 leading-relaxed">
+              <p className="text-muted-foreground/70 mb-4 leading-relaxed">
                 We've deployed AI across customer-facing applications for companies in financial services, e-commerce, healthcare, and professional services. The common thread: measurable impact within 90 days, not years.
               </p>
               <div className="space-y-2">
-                <Link href="/cases/industries/BankCrossSell" className="text-gray-300 hover:text-white transition-colors block">
+                <Link href="/cases/industries/BankCrossSell" className="text-muted-foreground/50 hover:text-white transition-colors block">
                   How a regional bank increased cross-sell by 47% <ArrowRight className="inline w-4 h-4 ml-1" />
                 </Link>
-                <Link href="/case-studies" className="text-gray-300 hover:text-white transition-colors block">
+                <Link href="/case-studies" className="text-muted-foreground/50 hover:text-white transition-colors block">
                   See more client results <ArrowRight className="inline w-4 h-4 ml-1" />
                 </Link>
               </div>
@@ -373,10 +373,10 @@ export default function DataDrivenCustomerIntelligence() {
               transition={{ duration: 0.6, delay: 0.1 }}
             >
               <h3 className="text-xl font-bold text-white mb-4">How We Help</h3>
-              <p className="text-gray-400 mb-4 leading-relaxed">
+              <p className="text-muted-foreground/70 mb-4 leading-relaxed">
                 We start with your business objectives, not the technology. Then we identify the quickest path to value—whether that's a simple scoring model or a full-scale personalization engine.
               </p>
-              <Link href="/capabilities/ai" className="text-gray-300 hover:text-white transition-colors">
+              <Link href="/capabilities/ai" className="text-muted-foreground/50 hover:text-white transition-colors">
                 Learn more about our AI approach <ArrowRight className="inline w-4 h-4 ml-1" />
               </Link>
             </motion.div>
@@ -390,29 +390,29 @@ export default function DataDrivenCustomerIntelligence() {
           {/* Section Header with Horizontal Lines */}
           <div className="flex items-center gap-4 mb-12">
             <div className="h-px bg-gray-300 flex-1" />
-            <h2 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-charcoal text-center">
               Client Results
             </h2>
             <div className="h-px bg-gray-300 flex-1" />
           </div>
           
           {/* Tabs */}
-          <div className="flex flex-wrap gap-2 mb-8 border-b border-gray-200">
+          <div className="flex flex-wrap gap-2 mb-8 border-b border-border">
             {clientResultsTabs.map((tab, i) => (
               <button
                 key={i}
                 onClick={() => setActiveTab(i)}
                 className={`px-6 py-3 font-medium transition-all relative ${
                   activeTab === i 
-                    ? 'text-[#1A1A1A]' 
-                    : 'text-gray-500 hover:text-gray-700'
+                    ? 'text-charcoal' 
+                    : 'text-muted-foreground hover:text-charcoal/80'
                 }`}
               >
                 {tab.label}
                 {activeTab === i && (
                   <motion.div
                     layoutId="activeTab"
-                    className="absolute bottom-0 left-0 right-0 h-[3px] bg-[#cc0000]"
+                    className="absolute bottom-0 left-0 right-0 h-[3px] bg-destructive"
                   />
                 )}
               </button>
@@ -427,7 +427,7 @@ export default function DataDrivenCustomerIntelligence() {
             transition={{ duration: 0.4 }}
             className="grid lg:grid-cols-2 gap-8 items-start"
           >
-            <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden">
+            <div className="aspect-video bg-subtle rounded-lg overflow-hidden">
               <img 
                 src={clientResultsTabs[activeTab].image} 
                 alt={clientResultsTabs[activeTab].title}
@@ -435,18 +435,18 @@ export default function DataDrivenCustomerIntelligence() {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-[#1A1A1A] mb-4">
+              <h3 className="text-2xl font-bold text-charcoal mb-4">
                 {clientResultsTabs[activeTab].title}
               </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-6 leading-relaxed">
                 {clientResultsTabs[activeTab].description}
               </p>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h4 className="font-bold text-[#1A1A1A] mb-3">Results:</h4>
+              <div className="bg-subtle p-6 rounded-lg">
+                <h4 className="font-bold text-charcoal mb-3">Results:</h4>
                 <ul className="space-y-2">
                   {clientResultsTabs[activeTab].results.map((result, i) => (
-                    <li key={i} className="flex items-start gap-2 text-gray-700">
-                      <span className="text-gray-400">•</span>
+                    <li key={i} className="flex items-start gap-2 text-charcoal/80">
+                      <span className="text-muted-foreground/70">•</span>
                       {result}
                     </li>
                   ))}
@@ -458,7 +458,7 @@ export default function DataDrivenCustomerIntelligence() {
       </section>
 
       {/* Our Approach Section - Bain-style Banner Header with Dark Cards Grid */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-[#faf9fb]">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -467,7 +467,7 @@ export default function DataDrivenCustomerIntelligence() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1A1A1A]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal">
               How We Think About Customer Intelligence
             </h2>
           </motion.div>
@@ -478,7 +478,7 @@ export default function DataDrivenCustomerIntelligence() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="bg-gradient-to-r from-[#7c3aed] to-[#5b21b6] rounded-t-lg p-8 text-center cursor-pointer hover:from-[#6d28d9] hover:to-[#4c1d95] transition-all duration-300"
+            className="bg-gradient-to-r from-primary to-primary rounded-t-lg p-8 text-center cursor-pointer hover:from-primary hover:to-primary transition-all duration-300"
           >
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
               The NexDyne Customer Intelligence Framework
@@ -515,16 +515,16 @@ export default function DataDrivenCustomerIntelligence() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
-                className="bg-[#1a1a2e] p-6 md:p-8 flex flex-col min-h-[280px] group cursor-pointer hover:bg-[#252540] transition-colors duration-300"
+                className="bg-base p-6 md:p-8 flex flex-col min-h-[280px] group cursor-pointer hover:bg-base transition-colors duration-300"
               >
                 <h4 className="text-lg md:text-xl font-bold text-white mb-4 leading-tight">
                   {item.title}
                 </h4>
-                <p className="text-gray-400 text-sm leading-relaxed flex-grow">
+                <p className="text-muted-foreground/70 text-sm leading-relaxed flex-grow">
                   {item.description}
                 </p>
                 <div className="mt-6 pt-4">
-                  <ArrowRight className="w-5 h-5 text-[#7c3aed] group-hover:translate-x-1 transition-transform duration-300" />
+                  <ArrowRight className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform duration-300" />
                 </div>
               </motion.div>
             ))}
@@ -538,13 +538,13 @@ export default function DataDrivenCustomerIntelligence() {
           {/* Section Header with Horizontal Lines */}
           <div className="flex items-center gap-4 mb-8">
             <div className="h-px bg-gray-300 flex-1" />
-            <h2 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-charcoal text-center">
               How We Can Help
             </h2>
             <div className="h-px bg-gray-300 flex-1" />
           </div>
           
-          <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
             We combine technical expertise with business acumen to deliver customer intelligence solutions that actually get used—and actually drive results.
           </p>
           
@@ -569,12 +569,12 @@ export default function DataDrivenCustomerIntelligence() {
       </section>
 
       {/* CX Ecosystem Section - Partner Logos */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-[#faf9fb] border-t border-gray-100">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-subtle border-t border-border/50">
         <div className="container px-4 sm:px-6 md:px-12">
           {/* Section Header with Horizontal Lines */}
           <div className="flex items-center gap-4 mb-12">
             <div className="h-px bg-gray-300 flex-1" />
-            <h2 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-charcoal text-center">
               Our Technology Partners
             </h2>
             <div className="h-px bg-gray-300 flex-1" />
@@ -622,7 +622,7 @@ export default function DataDrivenCustomerIntelligence() {
           {/* Section Header with Horizontal Lines */}
           <div className="flex items-center gap-4 mb-12">
             <div className="h-px bg-gray-300 flex-1" />
-            <h2 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-charcoal text-center">
               Customer Intelligence Insights
             </h2>
             <div className="h-px bg-gray-300 flex-1" />
@@ -684,24 +684,24 @@ export default function DataDrivenCustomerIntelligence() {
                       />
                       {/* Media Type Icon */}
                       <div className="absolute bottom-3 right-3 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center shadow-md">
-                        {item.type === 'video' && <Play className="w-5 h-5 text-[#7c3aed] fill-current" />}
-                        {item.type === 'podcast' && <Mic className="w-5 h-5 text-[#7c3aed]" />}
-                        {item.type === 'article' && <ExternalLink className="w-5 h-5 text-[#7c3aed]" />}
-                        {item.type === 'interactive' && <BarChart2 className="w-5 h-5 text-[#7c3aed]" />}
+                        {item.type === 'video' && <Play className="w-5 h-5 text-primary fill-current" />}
+                        {item.type === 'podcast' && <Mic className="w-5 h-5 text-primary" />}
+                        {item.type === 'article' && <ExternalLink className="w-5 h-5 text-primary" />}
+                        {item.type === 'interactive' && <BarChart2 className="w-5 h-5 text-primary" />}
                       </div>
                     </div>
-                    <span className="text-xs font-bold uppercase tracking-[0.15em] text-[#7c3aed] mb-2 block">
+                    <span className="text-xs font-bold uppercase tracking-[0.15em] text-primary mb-2 block">
                       {item.category}
                     </span>
-                    <h3 className="text-lg font-bold text-[#1A1A1A] mb-2 group-hover:text-[#7c3aed] transition-colors leading-tight line-clamp-2">
+                    <h3 className="text-lg font-bold text-charcoal mb-2 group-hover:text-primary transition-colors leading-tight line-clamp-2">
                       {item.title}
                     </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-3 line-clamp-2">
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-3 line-clamp-2">
                       {item.description}
                     </p>
                     <div className="flex items-center justify-between">
-                      <span className="text-xs text-gray-500">{item.source}</span>
-                      <Bookmark className="w-4 h-4 text-gray-400 hover:text-[#7c3aed] transition-colors" />
+                      <span className="text-xs text-muted-foreground">{item.source}</span>
+                      <Bookmark className="w-4 h-4 text-muted-foreground/70 hover:text-primary transition-colors" />
                     </div>
                   </div>
                 </Link>
@@ -711,7 +711,7 @@ export default function DataDrivenCustomerIntelligence() {
           
           <div className="text-center mt-10">
             <Link href="/insights">
-              <Button variant="outline" className="border-[#cc0000] text-[#cc0000] hover:bg-[#cc0000] hover:text-white px-8 py-3">
+              <Button variant="outline" className="border-destructive text-destructive hover:bg-destructive hover:text-white px-8 py-3">
                 SEE MORE
               </Button>
             </Link>
@@ -720,12 +720,12 @@ export default function DataDrivenCustomerIntelligence() {
       </section>
 
       {/* Related Capabilities - Simple White Cards */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-[#faf9fb]">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           {/* Section Header with Horizontal Lines */}
           <div className="flex items-center gap-4 mb-12">
             <div className="h-px bg-gray-300 flex-1" />
-            <h2 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-charcoal text-center">
               Related Capabilities
             </h2>
             <div className="h-px bg-gray-300 flex-1" />
@@ -749,11 +749,11 @@ export default function DataDrivenCustomerIntelligence() {
                 transition={{ duration: 0.5, delay: i * 0.05 }}
               >
                 <Link href={item.link}>
-                  <div className="bg-white border border-gray-200 p-6 h-full min-h-[140px] flex flex-col justify-between hover:border-gray-300 hover:shadow-sm transition-all duration-300 group">
-                    <h3 className="text-lg font-bold text-[#1A1A1A] leading-tight">
+                  <div className="bg-white border border-border p-6 h-full min-h-[140px] flex flex-col justify-between hover:border-border hover:shadow-sm transition-all duration-300 group">
+                    <h3 className="text-lg font-bold text-charcoal leading-tight">
                       {item.title}
                     </h3>
-                    <span className="text-[#cc0000] font-medium text-sm flex items-center mt-4">
+                    <span className="text-destructive font-medium text-sm flex items-center mt-4">
                       Read More <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </span>
                   </div>
@@ -765,12 +765,12 @@ export default function DataDrivenCustomerIntelligence() {
       </section>
 
       {/* Related Solutions - Horizontal Cards */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-white border-t border-gray-100">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-white border-t border-border/50">
         <div className="container px-4 sm:px-6 md:px-12">
           {/* Section Header with Horizontal Lines */}
           <div className="flex items-center gap-4 mb-12">
             <div className="h-px bg-gray-300 flex-1" />
-            <h2 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-charcoal text-center">
               Our Solutions
             </h2>
             <div className="h-px bg-gray-300 flex-1" />
@@ -793,11 +793,11 @@ export default function DataDrivenCustomerIntelligence() {
                 transition={{ duration: 0.3, delay: i * 0.03 }}
               >
                 <Link href={item.link}>
-                  <div className="py-3 border-b border-gray-200 flex items-center justify-between group hover:border-gray-400 transition-colors">
-                    <span className="text-[#1A1A1A] font-medium group-hover:text-[#cc0000] transition-colors">
+                  <div className="py-3 border-b border-border flex items-center justify-between group hover:border-gray-400 transition-colors">
+                    <span className="text-charcoal font-medium group-hover:text-destructive transition-colors">
                       {item.title}
                     </span>
-                    <ArrowRight className="w-4 h-4 text-[#cc0000]" />
+                    <ArrowRight className="w-4 h-4 text-destructive" />
                   </div>
                 </Link>
               </motion.div>
@@ -807,22 +807,22 @@ export default function DataDrivenCustomerIntelligence() {
       </section>
 
       {/* Ready to Talk CTA - Bain Style Two-Column Layout */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-[#f5f3f7]">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="bg-white p-8 md:p-12 rounded-lg shadow-sm">
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
               {/* Left - Form */}
               <div>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal mb-6">
                   Ready to talk?
                 </h2>
                 
                 <div className="space-y-4">
                   <div>
-                    <label className="block text-base text-gray-700 mb-3">
+                    <label className="block text-base text-charcoal/80 mb-3">
                       I want to talk to your experts in:
                     </label>
-                    <select className="w-full px-4 py-3 border-b-2 border-gray-300 focus:border-[#cc0000] bg-transparent text-gray-700 outline-none transition-colors">
+                    <select className="w-full px-4 py-3 border-b-2 border-border focus:border-destructive bg-transparent text-charcoal/80 outline-none transition-colors">
                       <option value="">Select an industry</option>
                       <option value="financial-services">Financial Services</option>
                       <option value="healthcare">Healthcare</option>
@@ -838,7 +838,7 @@ export default function DataDrivenCustomerIntelligence() {
               
               {/* Right - Description & Email */}
               <div>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-6 leading-relaxed">
                   We work with mid-market leaders who are ready to stop guessing about their customers and start knowing. Let's talk about what customer intelligence could do for your business.
                 </p>
                 
@@ -846,10 +846,10 @@ export default function DataDrivenCustomerIntelligence() {
                   <input 
                     type="email" 
                     placeholder="Your email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-[#cc0000] focus:border-[#cc0000] outline-none transition-all"
+                    className="w-full px-4 py-3 border border-border rounded focus:ring-2 focus:ring-destructive focus:border-destructive outline-none transition-all"
                   />
                   
-                  <Button className="bg-[#cc0000] hover:bg-[#aa0000] text-white px-8 py-3 font-semibold">
+                  <Button className="bg-destructive hover:bg-destructive text-white px-8 py-3 font-semibold">
                     CONTACT US
                   </Button>
                 </div>
@@ -860,7 +860,7 @@ export default function DataDrivenCustomerIntelligence() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-12 bg-[#1a0a2e]">
+      <section className="py-12 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-lg md:text-xl text-white italic">
@@ -873,7 +873,7 @@ export default function DataDrivenCustomerIntelligence() {
                 placeholder="Your email address"
                 className="flex-1 md:w-80 px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-white/50 focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
               />
-              <Button className="bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-6 py-3 font-semibold">
+              <Button className="bg-primary hover:bg-primary text-white px-6 py-3 font-semibold">
                 SUBSCRIBE
               </Button>
             </div>

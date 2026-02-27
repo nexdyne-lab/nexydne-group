@@ -45,7 +45,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
 
   return (
     <nav 
-      className="container py-4 text-sm text-gray-600" 
+      className="container py-4 text-sm text-muted-foreground" 
       aria-label="Breadcrumb"
     >
       <ol className="flex items-center flex-wrap gap-1">
@@ -63,10 +63,10 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
                 <span className="absolute inset-0 bg-cyan-50 opacity-0 rounded transition-opacity duration-300 ease-out group-hover:opacity-100 -z-10"></span>
               </Link>
             ) : (
-              <span className="text-gray-900 font-medium px-1 py-0.5">{item.label}</span>
+              <span className="text-charcoal font-medium px-1 py-0.5">{item.label}</span>
             )}
             {index < items.length - 1 && (
-              <span className="mx-1.5 text-gray-400 transition-colors duration-300 group-hover:text-cyan-400">/</span>
+              <span className="mx-1.5 text-muted-foreground/70 transition-colors duration-300 group-hover:text-cyan-400">/</span>
             )}
           </li>
         ))}

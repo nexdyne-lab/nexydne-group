@@ -42,31 +42,31 @@ export default function ServicePortals() {
         <div className="container">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 max-w-7xl mx-auto">
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <TrendingUp className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Efficiency boost</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Efficiency boost</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 Automate routine tasks through self-service, freeing your customer service team to focus on what truly matters: personal interaction and complex problem-solving.
               </p>
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <BarChart3 className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Customer insights</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Customer insights</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 Turn your portal into a goldmine of customer data. Every interaction collects valuable insights, enabling better service and boosting conversions.
               </p>
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <Clock className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Always available</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Always available</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 Create a portal that's accessible anytime, anywhere. No waiting times, no business hours restrictions—just pure freedom for customers to self-serve.
               </p>
             </div>
@@ -75,16 +75,16 @@ export default function ServicePortals() {
       </section>
 
       {/* What are Service Portals Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container max-w-5xl mx-auto">
           <div className="mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Understanding Service Portals</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Understanding Service Portals</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               Empowering customers, liberating teams
             </h2>
           </div>
           
-          <div className="prose prose-xl max-w-none text-gray-700 leading-relaxed space-y-6">
+          <div className="prose prose-xl max-w-none text-charcoal/80 leading-relaxed space-y-6">
             <p>
               Customer portals are the best way to improve customer experience while simultaneously supporting your customer service team. A well-designed self-service portal lets customers access the data they need—anytime, anywhere—without waiting on hold, sending emails, or scheduling calls. They can check order status, update account information, download invoices, submit support tickets, purchase add-ons, and manage subscriptions entirely on their own schedule.
             </p>
@@ -97,11 +97,11 @@ export default function ServicePortals() {
           </div>
 
           {/* Quote */}
-          <div className="mt-12 border-l-4 border-[#2D5BFF] pl-8 py-6 bg-white">
+          <div className="mt-12 border-l-4 border-primary pl-8 py-6 bg-white">
             <p className="text-xl italic text-gray-800 mb-4">
               "Our support team was drowning in routine requests—password resets, invoice downloads, address changes. The self-service portal eliminated 60% of support tickets overnight. Our team now focuses on helping customers solve real problems, and satisfaction scores have never been higher."
             </p>
-            <p className="text-lg font-semibold text-gray-900">Director of Customer Success, SaaS Company</p>
+            <p className="text-lg font-semibold text-charcoal">Director of Customer Success, SaaS Company</p>
           </div>
         </div>
       </section>
@@ -130,7 +130,7 @@ export default function ServicePortals() {
               <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-slate-900">1</span>
+                    <span className="text-2xl font-bold text-charcoal">1</span>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">User Research</h3>
@@ -144,7 +144,7 @@ export default function ServicePortals() {
               <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-slate-900">2</span>
+                    <span className="text-2xl font-bold text-charcoal">2</span>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Design & Build</h3>
@@ -158,7 +158,7 @@ export default function ServicePortals() {
               <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-slate-900">3</span>
+                    <span className="text-2xl font-bold text-charcoal">3</span>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Launch & Optimize</h3>
@@ -177,57 +177,57 @@ export default function ServicePortals() {
       <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-white">
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Applications</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Applications</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               Where service portals drive value
             </h2>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-7xl mx-auto">
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Users className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Customer Self-Service</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Users className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Customer Self-Service</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Let customers manage accounts, update information, download documents, track orders, and submit requests without contacting support.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Globe className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Partner Portals</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Globe className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Partner Portals</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Enable partners, distributors, and resellers to access resources, submit orders, track commissions, and collaborate effectively.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Shield className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Employee Portals</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Shield className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Employee Portals</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Provide employees with self-service access to HR information, benefits, time-off requests, expense submissions, and internal resources.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <BarChart3 className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Vendor Management</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <BarChart3 className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Vendor Management</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Streamline vendor interactions with portals for invoice submission, purchase order tracking, compliance documentation, and performance metrics.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <TrendingUp className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Support Ticketing</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <TrendingUp className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Support Ticketing</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Allow customers to submit, track, and manage support tickets with knowledge base access, status updates, and resolution history.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Clock className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Subscription Management</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Clock className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Subscription Management</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Enable customers to upgrade, downgrade, pause, or cancel subscriptions, manage billing information, and view usage analytics.
               </p>
             </div>
@@ -236,25 +236,25 @@ export default function ServicePortals() {
       </section>
 
       {/* Related Services Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Related Capabilities</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Related Capabilities</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               Comprehensive development solutions
             </h2>
           </div>
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-6xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/app-development/low-code" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 h-full bg-white">
-                <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+                <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   Low-Code Development
                 </h3>
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <p className="text-charcoal/80 mb-4 leading-relaxed">
                   Build applications rapidly using visual development platforms that accelerate delivery and reduce costs.
                 </p>
-                <div className="flex items-center text-[#2D5BFF] font-semibold">
+                <div className="flex items-center text-primary font-semibold">
                   Learn more
                   <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -262,14 +262,14 @@ export default function ServicePortals() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/custom-software" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 h-full bg-white">
-                <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+                <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   Custom Software
                 </h3>
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <p className="text-charcoal/80 mb-4 leading-relaxed">
                   Build fully custom solutions tailored to your exact specifications when off-the-shelf software doesn't fit.
                 </p>
-                <div className="flex items-center text-[#2D5BFF] font-semibold">
+                <div className="flex items-center text-primary font-semibold">
                   Learn more
                   <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -277,14 +277,14 @@ export default function ServicePortals() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/it-modernization" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 h-full bg-white">
-                <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+                <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   IT Modernization
                 </h3>
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <p className="text-charcoal/80 mb-4 leading-relaxed">
                   Replace legacy systems with modern, cloud-native architectures that accelerate innovation.
                 </p>
-                <div className="flex items-center text-[#2D5BFF] font-semibold">
+                <div className="flex items-center text-primary font-semibold">
                   Learn more
                   <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -304,7 +304,7 @@ export default function ServicePortals() {
             Schedule a complimentary consultation to explore how a custom service portal can improve customer satisfaction while reducing support costs.
           </p>
           <Link href="/contact">
-            <Button size="lg" className="bg-[#2D5BFF] hover:bg-[#1e40af] text-white text-lg px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6">
+            <Button size="lg" className="bg-primary hover:bg-primary-hover text-white text-lg px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6">
               Schedule consultation
               <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
             </Button>

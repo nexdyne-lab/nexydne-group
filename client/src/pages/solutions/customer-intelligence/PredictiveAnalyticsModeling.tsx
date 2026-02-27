@@ -35,7 +35,7 @@ export default function PredictiveAnalyticsModeling() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Predictive Analytics & Modeling" 
         description="Deploy advanced predictive models that forecast customer behavior, identify churn risk, and uncover growth opportunities before they emerge."
@@ -43,7 +43,7 @@ export default function PredictiveAnalyticsModeling() {
       />
       <Navigation />
 
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-black">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -62,7 +62,7 @@ export default function PredictiveAnalyticsModeling() {
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
                   Request a Consultation
                 </Button>
               </Link>
@@ -89,7 +89,7 @@ export default function PredictiveAnalyticsModeling() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -98,7 +98,7 @@ export default function PredictiveAnalyticsModeling() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl eb-garamond font-bold text-[#051C2C]">Our Experience & Impact</h2>
+            <h2 className="text-2xl eb-garamond font-bold text-charcoal">Our Experience & Impact</h2>
           </motion.div>
           
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
@@ -114,8 +114,8 @@ export default function PredictiveAnalyticsModeling() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -130,7 +130,7 @@ export default function PredictiveAnalyticsModeling() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               In today's competitive landscape, reacting to customer behavior is no longer enough. The ability to anticipate future actions, needs, and risks is the new frontier of competitive advantage. Predictive analytics and modeling transforms your historical customer data into a powerful tool for foresight, enabling you to move from a reactive to a proactive engagement strategy.
             </motion.p>
@@ -140,7 +140,7 @@ export default function PredictiveAnalyticsModeling() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               We leverage sophisticated machine learning algorithms to build custom models that address your most critical business questions. By analyzing patterns in your data, we can forecast which customers are likely to churn, identify high-potential leads, predict lifetime value, and recommend the next best action. This isn't about gazing into a crystal ball; it's about applying rigorous data science to unlock the predictive power hidden within your own data assets.
             </motion.p>
@@ -156,13 +156,13 @@ export default function PredictiveAnalyticsModeling() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Our Predictive Modeling Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               From model development to deployment and monitoring, we offer end-to-end predictive solutions.
             </p>
           </motion.div>
@@ -208,7 +208,7 @@ export default function PredictiveAnalyticsModeling() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 lg:py-24 bg-[#051C2C] text-white">
+      <section className="py-16 sm:py-20 lg:py-24 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -247,7 +247,7 @@ export default function PredictiveAnalyticsModeling() {
                 transition={{ duration: 0.5, delay: index * 0.15 }}
                 className="text-center"
               >
-                <div className="text-6xl font-serif font-bold text-[#00d4ff] mb-4">{item.step}</div>
+                <div className="text-6xl font-serif font-bold text-secondary mb-4">{item.step}</div>
                 <h3 className="text-xl font-bold mb-3">{item.title}</h3>
                 <p className="text-white/60">{item.description}</p>
               </motion.div>
@@ -256,7 +256,7 @@ export default function PredictiveAnalyticsModeling() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 lg:py-24 bg-[#051C2C] text-white">
+      <section className="py-16 sm:py-20 lg:py-24 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -285,9 +285,9 @@ export default function PredictiveAnalyticsModeling() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
-                className="bg-[#0F2A3F] p-8 rounded-lg"
+                className="bg-base p-8 rounded-lg"
               >
-                <div className="text-sm font-bold uppercase tracking-widest text-[#00d4ff] mb-4">{item.industry}</div>
+                <div className="text-sm font-bold uppercase tracking-widest text-secondary mb-4">{item.industry}</div>
                 <h3 className="text-2xl font-bold leading-snug">{item.headline}</h3>
               </motion.div>
             ))}
@@ -295,7 +295,7 @@ export default function PredictiveAnalyticsModeling() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-20 bg-gray-50 border-t border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-20 bg-subtle border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -317,10 +317,10 @@ export default function PredictiveAnalyticsModeling() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={item.link}>
-                  <a className="block h-full p-8 bg-white border border-gray-200 rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                    <h3 className="text-xl font-bold text-[#051C2C] mb-3">{item.title}</h3>
-                    <p className="text-[#051C2C]/60 mb-4">{item.description}</p>
-                    <span className="font-semibold text-[#0077B5] flex items-center">Learn More <ArrowRight className="ml-2 w-4 h-4" /></span>
+                  <a className="block h-full p-8 bg-white border border-border rounded-lg hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <h3 className="text-xl font-bold text-charcoal mb-3">{item.title}</h3>
+                    <p className="text-charcoal/60 mb-4">{item.description}</p>
+                    <span className="font-semibold text-primary flex items-center">Learn More <ArrowRight className="ml-2 w-4 h-4" /></span>
                   </a>
                 </Link>
               </motion.div>
@@ -329,7 +329,7 @@ export default function PredictiveAnalyticsModeling() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 lg:py-24 bg-[#0077B5] text-white">
+      <section className="py-16 sm:py-20 lg:py-24 bg-primary text-white">
         <div className="container px-4 sm:px-6 md:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -342,7 +342,7 @@ export default function PredictiveAnalyticsModeling() {
               Let's discuss how our predictive analytics and modeling services can help you anticipate customer needs, mitigate risks, and seize growth opportunities. 
             </p>
             <Link href="/contact">
-              <Button className="bg-white hover:bg-gray-200 text-[#051C2C] px-10 py-7 text-lg font-semibold transition-all">
+              <Button className="bg-white hover:bg-muted text-charcoal px-10 py-7 text-lg font-semibold transition-all">
                 Schedule a Free Consultation
               </Button>
             </Link>

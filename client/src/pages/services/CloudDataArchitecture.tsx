@@ -16,7 +16,7 @@ export default function CloudDataArchitecture() {
       <Navigation />
       
       {/* Hero Section - Clean minimal design */}
-      <section className="relative min-h-[85vh] flex items-center pt-20 overflow-hidden bg-black">
+      <section className="relative min-h-[85vh] flex items-center pt-20 overflow-hidden bg-charcoal">
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -45,20 +45,20 @@ export default function CloudDataArchitecture() {
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <p className="text-4xl md:text-5xl font-bold text-slate-900 mb-2">40%</p>
-              <p className="text-slate-600">Average infrastructure cost reduction</p>
+              <p className="text-4xl md:text-5xl font-bold text-charcoal mb-2">40%</p>
+              <p className="text-muted-foreground">Average infrastructure cost reduction</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl md:text-5xl font-bold text-slate-900 mb-2">99.9%</p>
-              <p className="text-slate-600">System uptime achieved</p>
+              <p className="text-4xl md:text-5xl font-bold text-charcoal mb-2">99.9%</p>
+              <p className="text-muted-foreground">System uptime achieved</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl md:text-5xl font-bold text-slate-900 mb-2">3x</p>
-              <p className="text-slate-600">Faster data processing</p>
+              <p className="text-4xl md:text-5xl font-bold text-charcoal mb-2">3x</p>
+              <p className="text-muted-foreground">Faster data processing</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl md:text-5xl font-bold text-slate-900 mb-2">12</p>
-              <p className="text-slate-600">Weeks average implementation</p>
+              <p className="text-4xl md:text-5xl font-bold text-charcoal mb-2">12</p>
+              <p className="text-muted-foreground">Weeks average implementation</p>
             </div>
           </div>
         </div>
@@ -71,22 +71,22 @@ export default function CloudDataArchitecture() {
             <p className="text-blue-600 text-sm font-medium tracking-widest uppercase mb-4">
               The Challenge
             </p>
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-slate-900 mb-8">
+            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-8">
               Legacy systems holding back your AI ambitions
             </h2>
             <div className="prose prose-lg prose-slate max-w-none">
-              <p className="text-slate-600 leading-relaxed mb-6">
+              <p className="text-muted-foreground leading-relaxed mb-6">
                 Mid-market organizations face a critical inflection point. The promise of AI-driven transformation 
                 is clear, but legacy infrastructure creates invisible barriers. Data sits in silos across 
                 disconnected systems. Processing bottlenecks slow decision-making. Security concerns multiply 
                 with each new integration.
               </p>
-              <p className="text-slate-600 leading-relaxed mb-6">
+              <p className="text-muted-foreground leading-relaxed mb-6">
                 Many organizations attempt piecemeal modernization—adding cloud services here, upgrading databases 
                 there—only to find their technology landscape more fragmented than before. Without a coherent 
                 architecture strategy, these investments fail to deliver their promised returns.
               </p>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed">
                 The real challenge isn't choosing between cloud providers or selecting the right database. 
                 It's designing an architecture that serves your business today while creating the foundation 
                 for the intelligent systems you'll need tomorrow.
@@ -103,14 +103,14 @@ export default function CloudDataArchitecture() {
             <p className="text-blue-600 text-sm font-medium tracking-widest uppercase mb-4">
               Our Approach
             </p>
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-slate-900 mb-12">
+            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-12">
               Architecture designed for intelligence
             </h2>
             
             <div className="space-y-12">
               <div className="border-l-4 border-blue-600 pl-8">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Assessment & Strategy</h3>
-                <p className="text-slate-600 leading-relaxed">
+                <h3 className="text-xl font-bold text-charcoal mb-4">Assessment & Strategy</h3>
+                <p className="text-muted-foreground leading-relaxed">
                   We begin with a comprehensive assessment of your current infrastructure, data flows, and 
                   business requirements. Our architects map dependencies, identify bottlenecks, and evaluate 
                   your readiness for AI integration. The result is a prioritized modernization roadmap aligned 
@@ -119,8 +119,8 @@ export default function CloudDataArchitecture() {
               </div>
               
               <div className="border-l-4 border-blue-600 pl-8">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Cloud-Native Design</h3>
-                <p className="text-slate-600 leading-relaxed">
+                <h3 className="text-xl font-bold text-charcoal mb-4">Cloud-Native Design</h3>
+                <p className="text-muted-foreground leading-relaxed">
                   Leveraging our AWS and Google Cloud partnerships, we design architectures that maximize 
                   the benefits of cloud computing—scalability, resilience, and cost efficiency. Our designs 
                   incorporate modern patterns like microservices, containerization, and serverless computing 
@@ -129,8 +129,8 @@ export default function CloudDataArchitecture() {
               </div>
               
               <div className="border-l-4 border-blue-600 pl-8">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Data Architecture</h3>
-                <p className="text-slate-600 leading-relaxed">
+                <h3 className="text-xl font-bold text-charcoal mb-4">Data Architecture</h3>
+                <p className="text-muted-foreground leading-relaxed">
                   AI systems are only as good as the data that feeds them. We establish unified data 
                   architectures that break down silos, ensure data quality, and enable real-time analytics. 
                   Our approach includes data governance frameworks that maintain compliance while enabling 
@@ -139,8 +139,8 @@ export default function CloudDataArchitecture() {
               </div>
               
               <div className="border-l-4 border-blue-600 pl-8">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Migration & Implementation</h3>
-                <p className="text-slate-600 leading-relaxed">
+                <h3 className="text-xl font-bold text-charcoal mb-4">Migration & Implementation</h3>
+                <p className="text-muted-foreground leading-relaxed">
                   We execute migrations with minimal business disruption using proven methodologies and 
                   automated tooling. Our phased approach allows you to realize value incrementally while 
                   managing risk. We don't just migrate—we optimize, ensuring your new architecture 
@@ -159,7 +159,7 @@ export default function CloudDataArchitecture() {
             <p className="text-blue-600 text-sm font-medium tracking-widest uppercase mb-4">
               Capabilities
             </p>
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-slate-900 mb-12">
+            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-12">
               What we deliver
             </h2>
             
@@ -202,7 +202,7 @@ export default function CloudDataArchitecture() {
             
             <div className="space-y-8">
               <div className="border-l-4 border-blue-400 pl-8">
-                <p className="text-slate-300 leading-relaxed">
+                <p className="text-muted-foreground/50 leading-relaxed">
                   <span className="text-white font-semibold">A regional healthcare network</span> migrated 
                   15 years of patient data to a modern cloud architecture, reducing query times from minutes 
                   to seconds and enabling real-time analytics that improved patient outcomes.
@@ -210,7 +210,7 @@ export default function CloudDataArchitecture() {
               </div>
               
               <div className="border-l-4 border-blue-400 pl-8">
-                <p className="text-slate-300 leading-relaxed">
+                <p className="text-muted-foreground/50 leading-relaxed">
                   <span className="text-white font-semibold">A financial services firm</span> consolidated 
                   seven disparate data systems into a unified data platform, cutting reporting time by 80% 
                   and enabling the predictive analytics that now drive their lending decisions.
@@ -218,7 +218,7 @@ export default function CloudDataArchitecture() {
               </div>
               
               <div className="border-l-4 border-blue-400 pl-8">
-                <p className="text-slate-300 leading-relaxed">
+                <p className="text-muted-foreground/50 leading-relaxed">
                   <span className="text-white font-semibold">A manufacturing company</span> modernized their 
                   ERP integration layer, enabling real-time inventory visibility across 12 facilities and 
                   reducing stockouts by 45%.
@@ -233,7 +233,7 @@ export default function CloudDataArchitecture() {
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-['EB Garamond',serif] font-bold text-slate-900 mb-8">Related Services</h2>
+            <h2 className="text-2xl font-['EB Garamond',serif] font-bold text-charcoal mb-8">Related Services</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
               <BainHoverCard
@@ -255,18 +255,18 @@ export default function CloudDataArchitecture() {
       <section className="py-20 bg-slate-50">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-slate-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-6">
               Ready to modernize your infrastructure?
             </h2>
-            <p className="text-xl text-slate-600 mb-8">
+            <p className="text-xl text-muted-foreground mb-8">
               Let's discuss how cloud and data architecture modernization can accelerate your AI initiatives.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#4ade80] text-slate-900 font-semibold rounded-full hover:bg-[#22c55e] transition-colors">
+              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-secondary text-charcoal font-semibold rounded-full hover:bg-secondary transition-colors">
                 Schedule a Consultation
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
-              <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center justify-center px-8 py-4 border border-slate-300 text-slate-700 font-semibold rounded-full hover:bg-slate-100 transition-colors">
+              <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center justify-center px-8 py-4 border border-slate-300 text-charcoal/80 font-semibold rounded-full hover:bg-slate-100 transition-colors">
                 Explore AI & Technology
               </Link>
             </div>

@@ -16,13 +16,13 @@ interface InsightsSectionProps {
 
 export function InsightsSection({ insights }: InsightsSectionProps) {
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-[#0A1628]">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-base">
       <div className="container">
         <div className="text-center mb-8 sm:mb-12 md:mb-8 sm:mb-12 md:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
             OUR INSIGHTS
           </h2>
-          <p className="text-lg text-slate-300 max-w-4xl mx-auto">
+          <p className="text-lg text-white/60 max-w-4xl mx-auto">
             From machine learning operations and organizational change to ethical considerations and emerging use cases, 
             our latest thinking on how organizations can most effectively and responsibly use AI to create business value.
           </p>
@@ -47,10 +47,10 @@ export function InsightsSection({ insights }: InsightsSectionProps) {
                     <span>{insight.title}</span>
                     <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-1 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </h3>
-                  <p className="text-sm text-slate-400 mb-4 line-clamp-3">
+                  <p className="text-sm text-white/70 mb-4 line-clamp-3">
                     {insight.description}
                   </p>
-                  <div className="text-xs text-slate-500">
+                  <div className="text-xs text-white/50">
                     {insight.date}
                   </div>
                 </div>
@@ -61,7 +61,7 @@ export function InsightsSection({ insights }: InsightsSectionProps) {
 
         <div className="text-center">
           <Link href="/insights">
-            <a className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border-2 border-cyan-400 text-cyan-400 rounded-full font-semibold hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 group">
+            <a className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border-2 border-cyan-400 text-cyan-400 rounded-full font-semibold hover:bg-cyan-400 hover:text-charcoal transition-all duration-300 group">
               Read our insights
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
             </a>

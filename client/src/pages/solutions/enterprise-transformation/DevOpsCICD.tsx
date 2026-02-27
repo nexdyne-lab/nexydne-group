@@ -35,7 +35,7 @@ export default function DevOpsCICD() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="DevOps & CI/CD" 
         description="Implement end-to-end DevOps practices and CI/CD pipelines that enable rapid, reliable software delivery at scale."
@@ -43,7 +43,7 @@ export default function DevOpsCICD() {
       />
       <Navigation />
 
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-black">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -62,7 +62,7 @@ export default function DevOpsCICD() {
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out">
                   Schedule a Consultation
                 </Button>
               </Link>
@@ -89,7 +89,7 @@ export default function DevOpsCICD() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -98,7 +98,7 @@ export default function DevOpsCICD() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-[#051C2C]">The Impact of Integrated Delivery</h2>
+            <h2 className="text-2xl font-bold text-charcoal">The Impact of Integrated Delivery</h2>
           </motion.div>
           
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
@@ -114,8 +114,8 @@ export default function DevOpsCICD() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -130,7 +130,7 @@ export default function DevOpsCICD() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               In today's competitive landscape, the ability to deliver software quickly and reliably is not a luxury—it's a necessity. DevOps and CI/CD are the cultural and technical foundations that bridge the gap between development and operations, fostering a culture of collaboration, automation, and continuous improvement. It's about breaking down silos and creating a seamless flow from code commit to production deployment.
             </motion.p>
@@ -140,7 +140,7 @@ export default function DevOpsCICD() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               By automating the build, test, and deployment processes, CI/CD pipelines eliminate manual errors, reduce risk, and provide rapid feedback to development teams. This allows for smaller, more frequent releases, enabling your organization to respond to market changes faster, innovate more effectively, and deliver value to your customers with unprecedented speed and quality. It's the engine of modern digital transformation.
             </motion.p>
@@ -156,13 +156,13 @@ export default function DevOpsCICD() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Our DevOps & CI/CD Services
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               We provide end-to-end solutions to accelerate your software delivery lifecycle.
             </p>
           </motion.div>
@@ -208,7 +208,7 @@ export default function DevOpsCICD() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 lg:py-24 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -249,7 +249,7 @@ export default function DevOpsCICD() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.15 }}
               >
-                <div className="text-5xl font-bold text-[#0077B5] mb-4">{item.step}</div>
+                <div className="text-5xl font-bold text-primary mb-4">{item.step}</div>
                 <h3 className="text-2xl font-serif font-bold text-white mb-4">{item.title}</h3>
                 <p className="text-white/70 leading-relaxed">{item.description}</p>
               </motion.div>
@@ -258,7 +258,7 @@ export default function DevOpsCICD() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#051C2C] border-t border-white/10">
+      <section className="py-12 sm:py-16 lg:py-24 bg-base border-t border-white/10">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -291,9 +291,9 @@ export default function DevOpsCICD() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.15 }}
-                className="bg-black/20 p-8 rounded-lg"
+                className="bg-charcoal/20 p-8 rounded-lg"
               >
-                <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00d4ff] mb-4 block">{item.industry}</span>
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">{item.industry}</span>
                 <p className="text-xl font-semibold text-white/90 leading-snug">{item.headline}</p>
               </motion.div>
             ))}
@@ -301,7 +301,7 @@ export default function DevOpsCICD() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -309,10 +309,10 @@ export default function DevOpsCICD() {
             viewport={{ once: true }}
             className="mb-16 text-left"
           >
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Related Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               Explore other ways we can help you accelerate your enterprise transformation.
             </p>
           </motion.div>
@@ -333,7 +333,7 @@ export default function DevOpsCICD() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 lg:py-24 bg-[#0077B5]">
+      <section className="py-16 sm:py-20 lg:py-24 bg-primary">
         <div className="container px-4 sm:px-6 md:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -348,7 +348,7 @@ export default function DevOpsCICD() {
               Let's discuss how our DevOps and CI/CD expertise can help you build a competitive edge. Schedule a free consultation with our experts today.
             </p>
             <Link href="/contact">
-              <Button className="bg-white hover:bg-gray-200 text-black px-10 py-7 text-lg font-semibold transition-all">
+              <Button className="bg-white hover:bg-white/90 text-primary px-10 py-7 text-lg font-semibold transition-colors duration-200 ease-in-out">
                 Contact Us
               </Button>
             </Link>

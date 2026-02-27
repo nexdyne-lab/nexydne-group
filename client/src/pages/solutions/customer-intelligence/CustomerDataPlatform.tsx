@@ -35,7 +35,7 @@ export default function CustomerDataPlatform() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Customer Data Platform Selection & Implementation" 
         description="Help organizations select, implement, and optimize customer data platforms to unify customer data across touchpoints and enable real-time activation."
@@ -43,7 +43,7 @@ export default function CustomerDataPlatform() {
       />
       <Navigation />
 
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-black">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -62,7 +62,7 @@ export default function CustomerDataPlatform() {
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
                   Schedule a Consultation
                 </Button>
               </Link>
@@ -89,7 +89,7 @@ export default function CustomerDataPlatform() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -98,7 +98,7 @@ export default function CustomerDataPlatform() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl eb-garamond font-bold text-[#051C2C]">Our Experience & Impact</h2>
+            <h2 className="text-2xl eb-garamond font-bold text-charcoal">Our Experience & Impact</h2>
           </motion.div>
           
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
@@ -114,8 +114,8 @@ export default function CustomerDataPlatform() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -130,7 +130,7 @@ export default function CustomerDataPlatform() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               In today's fragmented digital landscape, a unified view of the customer is no longer a luxury—it's a necessity. Customer Data Platforms (CDPs) provide the foundational technology to break down data silos, stitch together customer identities, and create a persistent, single source of truth. This enables organizations to move beyond disjointed channel-specific interactions and deliver truly consistent, personalized experiences.
             </motion.p>
@@ -140,7 +140,7 @@ export default function CustomerDataPlatform() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               Selecting and implementing the right CDP is a critical strategic decision. It requires a deep understanding of your data ecosystem, marketing technology stack, and future business goals. Our experts guide you through the entire lifecycle, from vendor evaluation and business case development to technical implementation, data governance, and use case activation. We ensure your CDP investment delivers not just unified data, but actionable intelligence that drives measurable business growth.
             </motion.p>
@@ -156,13 +156,13 @@ export default function CustomerDataPlatform() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Our CDP Implementation Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               We provide end-to-end services to ensure your CDP drives transformative value.
             </p>
           </motion.div>
@@ -208,7 +208,7 @@ export default function CustomerDataPlatform() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#051C2C] text-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -245,7 +245,7 @@ export default function CustomerDataPlatform() {
                 transition={{ duration: 0.6, delay: index * 0.15 }}
                 className="relative z-10"
               >
-                <div className="mb-4 inline-flex items-center justify-center w-16 h-16 bg-[#0077B5] rounded-full text-2xl font-bold">{index + 1}</div>
+                <div className="mb-4 inline-flex items-center justify-center w-16 h-16 bg-primary rounded-full text-2xl font-bold">{index + 1}</div>
                 <h3 className="text-xl font-bold mb-3">{item.title}</h3>
                 <p className="text-white/60">{item.description}</p>
               </motion.div>
@@ -254,7 +254,7 @@ export default function CustomerDataPlatform() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#051C2C] text-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -271,9 +271,9 @@ export default function CustomerDataPlatform() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-black/20 p-8 rounded-lg"
+              className="bg-charcoal/20 p-8 rounded-lg"
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00d4ff] mb-4 block">Retail & E-commerce</span>
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">Retail & E-commerce</span>
               <h3 className="text-2xl font-bold mb-4">Global retailer achieves a single customer view, boosting loyalty by 25%.</h3>
               <p className="text-white/60">We implemented a CDP to unify data from online, in-store, and mobile app channels, enabling personalized promotions and a 15% increase in customer lifetime value.</p>
             </motion.div>
@@ -282,9 +282,9 @@ export default function CustomerDataPlatform() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-black/20 p-8 rounded-lg"
+              className="bg-charcoal/20 p-8 rounded-lg"
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00d4ff] mb-4 block">Financial Services</span>
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">Financial Services</span>
               <h3 className="text-2xl font-bold mb-4">Leading bank reduces customer churn by 18% with proactive, data-driven outreach.</h3>
               <p className="text-white/60">By integrating their CDP with marketing automation, the bank was able to identify at-risk customers and deliver timely, relevant retention offers, significantly improving customer retention.</p>
             </motion.div>
@@ -292,7 +292,7 @@ export default function CustomerDataPlatform() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-gray-50 border-t border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-24 bg-subtle border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -300,7 +300,7 @@ export default function CustomerDataPlatform() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C]">Related Capabilities</h2>
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal">Related Capabilities</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
@@ -313,10 +313,10 @@ export default function CustomerDataPlatform() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={item.link}>
-                  <a className="block h-full p-8 bg-white border border-gray-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                    <h3 className="text-2xl font-serif font-bold text-[#051C2C] mb-3">{item.title}</h3>
-                    <p className="text-[#051C2C]/70 mb-4">{item.description}</p>
-                    <span className="text-[#0077B5] font-semibold flex items-center">
+                  <a className="block h-full p-8 bg-white border border-border hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <h3 className="text-2xl font-serif font-bold text-charcoal mb-3">{item.title}</h3>
+                    <p className="text-charcoal/70 mb-4">{item.description}</p>
+                    <span className="text-primary font-semibold flex items-center">
                       Explore Capability <ArrowRight className="ml-2 w-4 h-4" />
                     </span>
                   </a>
@@ -327,7 +327,7 @@ export default function CustomerDataPlatform() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 lg:py-24 bg-[#0077B5] text-white">
+      <section className="py-16 sm:py-20 lg:py-24 bg-primary text-white">
         <div className="container px-4 sm:px-6 md:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -338,7 +338,7 @@ export default function CustomerDataPlatform() {
             <h2 className="text-3xl sm:text-4xl eb-garamond font-bold mb-4">Ready to Unify Your Customer Data?</h2>
             <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto mb-8">Let's discuss how a Customer Data Platform can transform your customer relationships and drive business growth. Contact us today for a complimentary assessment.</p>
             <Link href="/contact">
-              <Button className="bg-white hover:bg-gray-200 text-black px-10 py-7 text-lg font-semibold transition-all">
+              <Button className="bg-white hover:bg-muted text-charcoal px-10 py-7 text-lg font-semibold transition-all">
                 Get in Touch
               </Button>
             </Link>

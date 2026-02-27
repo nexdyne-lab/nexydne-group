@@ -82,7 +82,7 @@ const results = [
 
 export default function MedicalPracticeCaseStudy() {
   return (
-    <div className="min-h-screen bg-white text-[#1A1A1A] font-sans">
+    <div className="min-h-screen bg-white text-charcoal font-sans">
       <SEO 
         title="Medical Practice Network Deploys Predictive Scheduling | Case Study" 
         description="How a network of 12 clinics with 180 staff members used AI-powered predictive scheduling to reduce patient wait times by 35% and improve appointment utilization by 22%."
@@ -163,13 +163,13 @@ export default function MedicalPracticeCaseStudy() {
               viewport={{ once: true }}
               variants={staggerContainer}
             >
-              <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-slate-500 uppercase mb-4 block">
+              <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
                 The Challenge
               </motion.span>
-              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-8">
+              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-8">
                 The hidden cost of inefficient scheduling
               </motion.h2>
-              <motion.div variants={fadeInUp} className="prose prose-lg text-slate-600 leading-relaxed">
+              <motion.div variants={fadeInUp} className="prose prose-lg text-muted-foreground leading-relaxed">
                 <p>
                   This physician-owned practice network had grown through acquisition over 15 years, bringing together primary care, internal medicine, and specialty clinics under unified management. But each clinic had retained its own scheduling practices, creating inconsistent patient experiences and operational inefficiencies.
                 </p>
@@ -195,13 +195,13 @@ export default function MedicalPracticeCaseStudy() {
               viewport={{ once: true }}
               variants={staggerContainer}
             >
-              <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-slate-500 uppercase mb-4 block">
+              <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
                 The Solution
               </motion.span>
-              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-8">
+              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-8">
                 Predictive intelligence for patient flow
               </motion.h2>
-              <motion.div variants={fadeInUp} className="prose prose-lg text-slate-600 leading-relaxed">
+              <motion.div variants={fadeInUp} className="prose prose-lg text-muted-foreground leading-relaxed">
                 <p>
                   NexDyne deployed a predictive scheduling system that transforms how the practice manages patient flow. The system analyzes historical patterns to predict no-show probability for each appointment, recommend optimal scheduling sequences, and dynamically adjust appointment durations based on visit type and patient history.
                 </p>
@@ -221,7 +221,7 @@ export default function MedicalPracticeCaseStudy() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-xl font-serif font-bold text-slate-900 mb-8 text-center"
+              className="text-xl font-serif font-bold text-charcoal mb-8 text-center"
             >
               Implementation Timeline
             </motion.h3>
@@ -236,11 +236,11 @@ export default function MedicalPracticeCaseStudy() {
                   className="flex gap-6"
                 >
                   <div className="flex-shrink-0 w-32">
-                    <div className="text-sm font-bold text-slate-900">{item.phase}</div>
-                    <div className="text-xs text-slate-500">{item.duration}</div>
+                    <div className="text-sm font-bold text-charcoal">{item.phase}</div>
+                    <div className="text-xs text-muted-foreground">{item.duration}</div>
                   </div>
                   <div className="flex-1 pb-6 border-l-2 border-emerald-200 pl-6">
-                    <p className="text-slate-600 leading-relaxed">{item.description}</p>
+                    <p className="text-muted-foreground leading-relaxed">{item.description}</p>
                   </div>
                 </motion.div>
               ))}
@@ -260,13 +260,13 @@ export default function MedicalPracticeCaseStudy() {
               variants={staggerContainer}
               className="mb-12"
             >
-              <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-slate-500 uppercase mb-4 block">
+              <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
                 The Results
               </motion.span>
-              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-6">
+              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-6">
                 Better care through smarter scheduling
               </motion.h2>
-              <motion.p variants={fadeInUp} className="text-lg text-slate-600 leading-relaxed">
+              <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
                 Within three months of network-wide deployment, the practice achieved measurable improvements in patient experience, operational efficiency, and financial performance.
               </motion.p>
             </motion.div>
@@ -281,10 +281,10 @@ export default function MedicalPracticeCaseStudy() {
                   transition={{ delay: i * 0.1 }}
                   className="bg-emerald-50 rounded-xl p-6"
                 >
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">{result.category}</h3>
+                  <h3 className="text-lg font-bold text-charcoal mb-4">{result.category}</h3>
                   <ul className="space-y-3">
                     {result.items.map((item, j) => (
-                      <li key={j} className="text-sm text-slate-600 leading-relaxed pl-4 border-l-2 border-emerald-300">
+                      <li key={j} className="text-sm text-muted-foreground leading-relaxed pl-4 border-l-2 border-emerald-300">
                         {item}
                       </li>
                     ))}
@@ -332,13 +332,13 @@ export default function MedicalPracticeCaseStudy() {
               viewport={{ once: true }}
               variants={staggerContainer}
             >
-              <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-slate-500 uppercase mb-4 block">
+              <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
                 Looking Forward
               </motion.span>
-              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-8">
+              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-8">
                 Expanding AI across the care continuum
               </motion.h2>
-              <motion.div variants={fadeInUp} className="prose prose-lg text-slate-600 leading-relaxed">
+              <motion.div variants={fadeInUp} className="prose prose-lg text-muted-foreground leading-relaxed">
                 <p>
                   With scheduling optimization delivering clear results, the practice network is now exploring additional AI applications with NexDyne. Priority initiatives include predictive staffing models to optimize clinical support allocation, and patient risk stratification to identify individuals who may benefit from proactive outreach.
                 </p>
@@ -380,7 +380,7 @@ export default function MedicalPracticeCaseStudy() {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Link href="/contact">
-                <span className="inline-flex items-center px-8 py-4 bg-white text-slate-900 font-semibold rounded-full hover:bg-gray-100 transition-all cursor-pointer group">
+                <span className="inline-flex items-center px-8 py-4 bg-white text-charcoal font-semibold rounded-full hover:bg-subtle transition-all cursor-pointer group">
                   Schedule a Consultation
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
@@ -399,26 +399,26 @@ export default function MedicalPracticeCaseStudy() {
       <section className="py-20 md:py-24 bg-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-xl font-serif font-bold text-slate-900 mb-8">Related Case Studies</h3>
+            <h3 className="text-xl font-serif font-bold text-charcoal mb-8">Related Case Studies</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <Link href="/capabilities/ai-technology-consulting/case-study/accounting-firm">
                 <div className="group p-6 border border-slate-200 rounded-xl hover:border-slate-300 hover:shadow-sm transition-all cursor-pointer">
-                  <span className="text-xs font-medium tracking-wider text-slate-500 uppercase">Professional Services</span>
-                  <h4 className="text-lg font-serif font-bold text-slate-900 mt-2 group-hover:text-[#3DCD58] transition-colors">
+                  <span className="text-xs font-medium tracking-wider text-muted-foreground uppercase">Professional Services</span>
+                  <h4 className="text-lg font-serif font-bold text-charcoal mt-2 group-hover:text-secondary transition-colors">
                     Regional accounting firm automates document processing, reducing manual work by 70%
                   </h4>
-                  <span className="inline-flex items-center text-sm text-slate-600 mt-4 group-hover:text-[#3DCD58] transition-colors">
+                  <span className="inline-flex items-center text-sm text-muted-foreground mt-4 group-hover:text-secondary transition-colors">
                     Read case study <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </Link>
               <Link href="/capabilities/ai-technology-consulting/case-study/credit-union">
                 <div className="group p-6 border border-slate-200 rounded-xl hover:border-slate-300 hover:shadow-sm transition-all cursor-pointer">
-                  <span className="text-xs font-medium tracking-wider text-slate-500 uppercase">Financial Services</span>
-                  <h4 className="text-lg font-serif font-bold text-slate-900 mt-2 group-hover:text-[#3DCD58] transition-colors">
+                  <span className="text-xs font-medium tracking-wider text-muted-foreground uppercase">Financial Services</span>
+                  <h4 className="text-lg font-serif font-bold text-charcoal mt-2 group-hover:text-secondary transition-colors">
                     Credit union transforms member services with AI-powered analytics
                   </h4>
-                  <span className="inline-flex items-center text-sm text-slate-600 mt-4 group-hover:text-[#3DCD58] transition-colors">
+                  <span className="inline-flex items-center text-sm text-muted-foreground mt-4 group-hover:text-secondary transition-colors">
                     Read case study <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>

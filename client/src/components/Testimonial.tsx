@@ -12,7 +12,7 @@ export function Testimonial({ quote, name, title, company, image }: TestimonialP
   return (
     <div className="bg-white border border-slate-200 rounded-lg p-4 sm:p-6 md:p-4 sm:p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow">
       <Quote className="w-10 h-10 text-cyan-500 mb-4" />
-      <p className="text-slate-700 text-lg mb-6 leading-relaxed italic">
+      <p className="text-charcoal/80 text-lg mb-6 leading-relaxed italic">
         "{quote}"
       </p>
       <div className="flex items-center gap-4">
@@ -28,9 +28,9 @@ export function Testimonial({ quote, name, title, company, image }: TestimonialP
           </div>
         )}
         <div>
-          <p className="font-semibold text-slate-900">{name}</p>
-          <p className="text-sm text-slate-600">{title}</p>
-          <p className="text-sm text-slate-500">{company}</p>
+          <p className="font-semibold text-charcoal">{name}</p>
+          <p className="text-sm text-muted-foreground">{title}</p>
+          <p className="text-sm text-muted-foreground">{company}</p>
         </div>
       </div>
     </div>
@@ -48,9 +48,9 @@ export function TestimonialSection({ testimonials, title = "What Our Clients Say
     <section className="py-12 sm:py-16 lg:py-20 bg-slate-50">
       <div className="container">
         <div className="text-center mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">{title}</h2>
+          <h2 className="text-4xl font-bold text-charcoal mb-4">{title}</h2>
           {subtitle && (
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">{subtitle}</p>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{subtitle}</p>
           )}
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-4 sm:p-6 md:p-8">

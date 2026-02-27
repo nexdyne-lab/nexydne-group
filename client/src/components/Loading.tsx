@@ -5,7 +5,7 @@ export default function Loading() {
     <div className="flex items-center justify-center min-h-screen bg-slate-50 dark:bg-slate-950">
       <div className="flex flex-col items-center gap-4">
         <Loader2 className="h-10 w-10 animate-spin text-blue-600" />
-        <p className="text-slate-600 dark:text-slate-400 font-medium animate-pulse">
+        <p className="text-muted-foreground dark:text-muted-foreground/70 font-medium animate-pulse">
           Loading content...
         </p>
       </div>

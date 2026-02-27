@@ -41,7 +41,7 @@ export default function Careers() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#333] selection:bg-[#0052cc] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary-hover selection:text-white">
       <SEO 
         title="Careers | NexDyne Consulting Group" 
         description="Build your career at NexDyne. Join a team where your expertise drives real impact. Explore opportunities in consulting, analytics, technology, and more."
@@ -59,7 +59,7 @@ export default function Careers() {
             className="w-full h-full object-cover"
           />
           {/* Dark overlay for text readability */}
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-charcoal/40" />
         </div>
         
         {/* Hero Content */}
@@ -75,7 +75,7 @@ export default function Careers() {
               <br />
               Bigger growth.
             </h1>
-            <Button className="bg-[#0052cc] hover:bg-[#003d99] text-white px-8 py-4 text-base font-medium rounded-none">
+            <Button className="bg-primary-hover hover:bg-base text-white px-8 py-4 text-base font-medium rounded-none">
               Search Jobs <Search className="ml-2 h-5 w-5" />
             </Button>
           </motion.div>
@@ -96,15 +96,15 @@ export default function Careers() {
               At NexDyne, you'll be in the room when the stakes are highest, working on 
               transformational challenges that shape industries across Africa and beyond.
             </p>
-            <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               The pace is demanding and expectations are high, but you'll learn faster 
               here than anywhere else, supported by teams that are committed to making 
               each other—and our clients—better. Whether you're with us for two years 
               or 20, the skills you build will make you a leader ahead of your peers 
               and change the trajectory of your career.
             </p>
-            <div className="mt-8 pt-6 border-t border-gray-200">
-              <a href="#why-nexdyne" className="text-[#0052cc] font-medium hover:underline inline-flex items-center">
+            <div className="mt-8 pt-6 border-t border-border">
+              <a href="#why-nexdyne" className="text-primary-hover font-medium hover:underline inline-flex items-center">
                 Why NexDyne <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </div>
@@ -120,7 +120,7 @@ export default function Careers() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-2xl md:text-3xl font-serif text-gray-900 mb-8"
+            className="text-2xl md:text-3xl font-serif text-charcoal mb-8"
           >
             Explore opportunities
           </motion.h2>
@@ -132,7 +132,7 @@ export default function Careers() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
-                className="px-5 py-3 text-sm font-medium text-gray-700 bg-gray-100 hover:bg-[#0052cc] hover:text-white transition-colors rounded-sm"
+                className="px-5 py-3 text-sm font-medium text-charcoal/80 bg-subtle hover:bg-primary-hover hover:text-white transition-colors rounded-sm"
               >
                 {category}
               </motion.button>
@@ -142,7 +142,7 @@ export default function Careers() {
       </section>
 
       {/* Career Stories Section */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-[#f5f5f5]">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex flex-col md:flex-row md:items-start gap-8 md:gap-16">
             {/* Left Label */}
@@ -153,7 +153,7 @@ export default function Careers() {
               transition={{ duration: 0.6 }}
               className="md:w-64 flex-shrink-0"
             >
-              <div className="bg-[#0052cc] text-white px-6 py-4 inline-block">
+              <div className="bg-primary-hover text-white px-6 py-4 inline-block">
                 <span className="text-sm font-bold uppercase tracking-wider">Career Stories</span>
               </div>
             </motion.div>
@@ -167,10 +167,10 @@ export default function Careers() {
                 transition={{ duration: 0.6 }}
                 className="mb-12"
               >
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 mb-4">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal mb-4">
                   Build the career you never imagined
                 </h2>
-                <p className="text-lg text-gray-600 max-w-2xl">
+                <p className="text-lg text-muted-foreground max-w-2xl">
                   No two paths at NexDyne are the same, and many of us find ourselves in roles 
                   far from where we started. The opportunity is endless.
                 </p>
@@ -182,10 +182,10 @@ export default function Careers() {
                 <div className="absolute top-1/2 left-0 right-0 h-px bg-gray-300 hidden md:block" style={{ transform: 'translateY(-50%)' }} />
                 
                 {/* Dots on the line */}
-                <div className="absolute top-1/2 left-[15%] w-2 h-2 rounded-full bg-[#0052cc] hidden md:block" style={{ transform: 'translate(-50%, -50%)' }} />
-                <div className="absolute top-1/2 left-[40%] w-2 h-2 rounded-full bg-[#0052cc] hidden md:block" style={{ transform: 'translate(-50%, -50%)' }} />
-                <div className="absolute top-1/2 left-[65%] w-2 h-2 rounded-full bg-[#0052cc] hidden md:block" style={{ transform: 'translate(-50%, -50%)' }} />
-                <div className="absolute top-1/2 left-[90%] w-2 h-2 rounded-full bg-[#0052cc] hidden md:block" style={{ transform: 'translate(-50%, -50%)' }} />
+                <div className="absolute top-1/2 left-[15%] w-2 h-2 rounded-full bg-primary-hover hidden md:block" style={{ transform: 'translate(-50%, -50%)' }} />
+                <div className="absolute top-1/2 left-[40%] w-2 h-2 rounded-full bg-primary-hover hidden md:block" style={{ transform: 'translate(-50%, -50%)' }} />
+                <div className="absolute top-1/2 left-[65%] w-2 h-2 rounded-full bg-primary-hover hidden md:block" style={{ transform: 'translate(-50%, -50%)' }} />
+                <div className="absolute top-1/2 left-[90%] w-2 h-2 rounded-full bg-primary-hover hidden md:block" style={{ transform: 'translate(-50%, -50%)' }} />
 
                 <div className="flex flex-wrap justify-center md:justify-between gap-8 md:gap-4 relative z-10">
                   {careerStories.map((story, index) => (
@@ -197,14 +197,14 @@ export default function Careers() {
                       transition={{ duration: 0.5, delay: index * 0.1 }}
                       className="flex flex-col items-center group cursor-pointer"
                     >
-                      <div className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-white shadow-lg mb-3 group-hover:border-[#0052cc] transition-colors">
+                      <div className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-white shadow-lg mb-3 group-hover:border-primary-hover transition-colors">
                         <img 
                           src={story.image} 
                           alt={story.name}
                           className="w-full h-full object-cover"
                         />
                       </div>
-                      <span className="text-xs text-gray-500 text-center">{story.role}</span>
+                      <span className="text-xs text-muted-foreground text-center">{story.role}</span>
                     </motion.div>
                   ))}
                 </div>
@@ -217,7 +217,7 @@ export default function Careers() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="flex justify-center mt-8"
               >
-                <Button className="bg-[#0052cc] hover:bg-[#003d99] text-white px-8 py-4 text-sm font-bold uppercase tracking-wider rounded-none">
+                <Button className="bg-primary-hover hover:bg-base text-white px-8 py-4 text-sm font-bold uppercase tracking-wider rounded-none">
                   Explore Career Stories
                 </Button>
               </motion.div>
@@ -287,7 +287,7 @@ export default function Careers() {
               transition={{ duration: 0.6 }}
               className="md:w-64 flex-shrink-0"
             >
-              <div className="bg-[#0052cc] text-white px-6 py-4 inline-block">
+              <div className="bg-primary-hover text-white px-6 py-4 inline-block">
                 <span className="text-sm font-bold uppercase tracking-wider">Awards & Recognition</span>
               </div>
             </motion.div>
@@ -301,10 +301,10 @@ export default function Careers() {
                 transition={{ duration: 0.6 }}
                 className="mb-12"
               >
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 mb-4">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal mb-4">
                   Industry leaders agree — our people thrive here
                 </h2>
-                <p className="text-lg text-gray-600 max-w-2xl">
+                <p className="text-lg text-muted-foreground max-w-2xl">
                   We're consistently recognized as a top workplace for innovation, 
                   diversity, and professional development. The reason is simple: our people.
                 </p>
@@ -319,9 +319,9 @@ export default function Careers() {
                   transition={{ duration: 0.5 }}
                   className="text-center"
                 >
-                  <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0052cc] mb-2">Top</div>
-                  <div className="text-2xl md:text-3xl font-bold text-[#0052cc] mb-1">100</div>
-                  <p className="text-sm text-gray-600">Best Places to Work</p>
+                  <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary-hover mb-2">Top</div>
+                  <div className="text-2xl md:text-3xl font-bold text-primary-hover mb-1">100</div>
+                  <p className="text-sm text-muted-foreground">Best Places to Work</p>
                 </motion.div>
 
                 <motion.div
@@ -331,9 +331,9 @@ export default function Careers() {
                   transition={{ duration: 0.5, delay: 0.1 }}
                   className="text-center"
                 >
-                  <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0052cc] mb-2">5</div>
-                  <div className="text-sm text-gray-600 mb-1">consecutive years</div>
-                  <p className="text-sm text-gray-600">Innovation Leader</p>
+                  <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary-hover mb-2">5</div>
+                  <div className="text-sm text-muted-foreground mb-1">consecutive years</div>
+                  <p className="text-sm text-muted-foreground">Innovation Leader</p>
                 </motion.div>
 
                 <motion.div
@@ -343,8 +343,8 @@ export default function Careers() {
                   transition={{ duration: 0.5, delay: 0.2 }}
                   className="text-center"
                 >
-                  <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0052cc] mb-2">A+</div>
-                  <p className="text-sm text-gray-600">Diversity & Inclusion Rating</p>
+                  <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary-hover mb-2">A+</div>
+                  <p className="text-sm text-muted-foreground">Diversity & Inclusion Rating</p>
                 </motion.div>
 
                 <motion.div
@@ -354,8 +354,8 @@ export default function Careers() {
                   transition={{ duration: 0.5, delay: 0.3 }}
                   className="text-center"
                 >
-                  <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0052cc] mb-2">95%</div>
-                  <p className="text-sm text-gray-600">Employee Satisfaction</p>
+                  <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary-hover mb-2">95%</div>
+                  <p className="text-sm text-muted-foreground">Employee Satisfaction</p>
                 </motion.div>
               </div>
             </div>
@@ -364,7 +364,7 @@ export default function Careers() {
       </section>
 
       {/* Find Jobs CTA Section */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-[#1a1a1a]">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -379,7 +379,7 @@ export default function Careers() {
             <p className="text-lg text-white/70 mb-8">
               Explore open positions and find the role that matches your ambitions.
             </p>
-            <Button className="bg-[#0052cc] hover:bg-[#003d99] text-white px-10 py-5 text-base font-bold uppercase tracking-wider rounded-none">
+            <Button className="bg-primary-hover hover:bg-base text-white px-10 py-5 text-base font-bold uppercase tracking-wider rounded-none">
               Find Jobs <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </motion.div>

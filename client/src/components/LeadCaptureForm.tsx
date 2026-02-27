@@ -126,25 +126,25 @@ export default function LeadCaptureForm({
   if (isSuccess) {
     return (
       <div className={`bg-white rounded-lg sm:rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-4 sm:p-6 md:p-8 text-center ${className}`}>
-        <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-6">
-          <CheckCircle2 className="w-8 h-8 text-green-600" />
+        <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-full mb-6">
+          <CheckCircle2 className="w-8 h-8 text-secondary" />
         </div>
-        <h3 className="text-2xl font-bold text-slate-900 mb-4">
+        <h3 className="text-2xl font-bold text-charcoal mb-4">
           Thank you, {formData.firstName}!
         </h3>
-        <p className="text-slate-600 mb-6">
+        <p className="text-muted-foreground mb-6">
           Your download is ready. Click the button below to access the whitepaper.
         </p>
         <a
           href={downloadUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-[#051C2C] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#0077B5] transition-colors"
+          className="inline-flex items-center gap-2 bg-base text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary transition-colors"
         >
           <Download className="w-4 h-4 sm:w-5 sm:h-5" />
           Download Whitepaper
         </a>
-        <p className="text-sm text-slate-500 mt-6">
+        <p className="text-sm text-muted-foreground mt-6">
           We've also sent a copy to {formData.email}
         </p>
       </div>
@@ -163,7 +163,7 @@ export default function LeadCaptureForm({
               className={errors.firstName ? "border-red-500" : ""}
             />
             {errors.firstName && (
-              <p className="text-red-500 text-xs mt-1">{errors.firstName}</p>
+              <p className="text-destructive text-xs mt-1">{errors.firstName}</p>
             )}
           </div>
           <div>
@@ -174,7 +174,7 @@ export default function LeadCaptureForm({
               className={errors.lastName ? "border-red-500" : ""}
             />
             {errors.lastName && (
-              <p className="text-red-500 text-xs mt-1">{errors.lastName}</p>
+              <p className="text-destructive text-xs mt-1">{errors.lastName}</p>
             )}
           </div>
         </div>
@@ -187,7 +187,7 @@ export default function LeadCaptureForm({
             className={errors.email ? "border-red-500" : ""}
           />
           {errors.email && (
-            <p className="text-red-500 text-xs mt-1">{errors.email}</p>
+            <p className="text-destructive text-xs mt-1">{errors.email}</p>
           )}
         </div>
         <div>
@@ -198,7 +198,7 @@ export default function LeadCaptureForm({
             className={errors.company ? "border-red-500" : ""}
           />
           {errors.company && (
-            <p className="text-red-500 text-xs mt-1">{errors.company}</p>
+            <p className="text-destructive text-xs mt-1">{errors.company}</p>
           )}
         </div>
         <div className="grid grid-cols-2 gap-4">
@@ -216,7 +216,7 @@ export default function LeadCaptureForm({
               </SelectContent>
             </Select>
             {errors.role && (
-              <p className="text-red-500 text-xs mt-1">{errors.role}</p>
+              <p className="text-destructive text-xs mt-1">{errors.role}</p>
             )}
           </div>
           <div>
@@ -233,14 +233,14 @@ export default function LeadCaptureForm({
               </SelectContent>
             </Select>
             {errors.industry && (
-              <p className="text-red-500 text-xs mt-1">{errors.industry}</p>
+              <p className="text-destructive text-xs mt-1">{errors.industry}</p>
             )}
           </div>
         </div>
         <Button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-[#051C2C] hover:bg-[#0077B5]"
+          className="w-full bg-base hover:bg-primary"
         >
           {isSubmitting ? (
             <>
@@ -261,7 +261,7 @@ export default function LeadCaptureForm({
   return (
     <div className={`bg-white rounded-lg sm:rounded-lg sm:rounded-xl shadow-lg overflow-hidden ${className}`}>
       {whitepaperTitle && (
-        <div className="bg-gradient-to-r from-[#051C2C] to-[#0a3d5c] p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 text-white">
+        <div className="bg-gradient-to-r from-base to-base p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 text-white">
           <h3 className="text-xl font-bold mb-2">{whitepaperTitle}</h3>
           {whitepaperDescription && (
             <p className="text-white/80 text-sm">{whitepaperDescription}</p>
@@ -271,8 +271,8 @@ export default function LeadCaptureForm({
       <form onSubmit={handleSubmit} className="p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 space-y-5">
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <Label htmlFor="firstName" className="text-slate-700 font-medium">
-              First name <span className="text-red-500">*</span>
+            <Label htmlFor="firstName" className="text-charcoal/80 font-medium">
+              First name <span className="text-destructive">*</span>
             </Label>
             <Input
               id="firstName"
@@ -281,12 +281,12 @@ export default function LeadCaptureForm({
               className={`mt-1 ${errors.firstName ? "border-red-500" : ""}`}
             />
             {errors.firstName && (
-              <p className="text-red-500 text-xs mt-1">{errors.firstName}</p>
+              <p className="text-destructive text-xs mt-1">{errors.firstName}</p>
             )}
           </div>
           <div>
-            <Label htmlFor="lastName" className="text-slate-700 font-medium">
-              Last name <span className="text-red-500">*</span>
+            <Label htmlFor="lastName" className="text-charcoal/80 font-medium">
+              Last name <span className="text-destructive">*</span>
             </Label>
             <Input
               id="lastName"
@@ -295,14 +295,14 @@ export default function LeadCaptureForm({
               className={`mt-1 ${errors.lastName ? "border-red-500" : ""}`}
             />
             {errors.lastName && (
-              <p className="text-red-500 text-xs mt-1">{errors.lastName}</p>
+              <p className="text-destructive text-xs mt-1">{errors.lastName}</p>
             )}
           </div>
         </div>
 
         <div>
-          <Label htmlFor="email" className="text-slate-700 font-medium">
-            Work email <span className="text-red-500">*</span>
+          <Label htmlFor="email" className="text-charcoal/80 font-medium">
+            Work email <span className="text-destructive">*</span>
           </Label>
           <Input
             id="email"
@@ -312,13 +312,13 @@ export default function LeadCaptureForm({
             className={`mt-1 ${errors.email ? "border-red-500" : ""}`}
           />
           {errors.email && (
-            <p className="text-red-500 text-xs mt-1">{errors.email}</p>
+            <p className="text-destructive text-xs mt-1">{errors.email}</p>
           )}
         </div>
 
         <div>
-          <Label htmlFor="company" className="text-slate-700 font-medium">
-            Company <span className="text-red-500">*</span>
+          <Label htmlFor="company" className="text-charcoal/80 font-medium">
+            Company <span className="text-destructive">*</span>
           </Label>
           <Input
             id="company"
@@ -327,13 +327,13 @@ export default function LeadCaptureForm({
             className={`mt-1 ${errors.company ? "border-red-500" : ""}`}
           />
           {errors.company && (
-            <p className="text-red-500 text-xs mt-1">{errors.company}</p>
+            <p className="text-destructive text-xs mt-1">{errors.company}</p>
           )}
         </div>
 
         <div>
-          <Label htmlFor="role" className="text-slate-700 font-medium">
-            Role <span className="text-red-500">*</span>
+          <Label htmlFor="role" className="text-charcoal/80 font-medium">
+            Role <span className="text-destructive">*</span>
           </Label>
           <Select value={formData.role} onValueChange={(v) => handleChange("role", v)}>
             <SelectTrigger className={`mt-1 ${errors.role ? "border-red-500" : ""}`}>
@@ -348,13 +348,13 @@ export default function LeadCaptureForm({
             </SelectContent>
           </Select>
           {errors.role && (
-            <p className="text-red-500 text-xs mt-1">{errors.role}</p>
+            <p className="text-destructive text-xs mt-1">{errors.role}</p>
           )}
         </div>
 
         <div>
-          <Label htmlFor="industry" className="text-slate-700 font-medium">
-            Industry <span className="text-red-500">*</span>
+          <Label htmlFor="industry" className="text-charcoal/80 font-medium">
+            Industry <span className="text-destructive">*</span>
           </Label>
           <Select value={formData.industry} onValueChange={(v) => handleChange("industry", v)}>
             <SelectTrigger className={`mt-1 ${errors.industry ? "border-red-500" : ""}`}>
@@ -369,14 +369,14 @@ export default function LeadCaptureForm({
             </SelectContent>
           </Select>
           {errors.industry && (
-            <p className="text-red-500 text-xs mt-1">{errors.industry}</p>
+            <p className="text-destructive text-xs mt-1">{errors.industry}</p>
           )}
         </div>
 
         <Button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-[#051C2C] hover:bg-[#0077B5] py-3"
+          className="w-full bg-base hover:bg-primary py-3"
         >
           {isSubmitting ? (
             <>
@@ -391,7 +391,7 @@ export default function LeadCaptureForm({
           )}
         </Button>
 
-        <p className="text-xs text-slate-500 text-center">
+        <p className="text-xs text-muted-foreground text-center">
           By submitting this form, you agree to receive communications from NexDyne Consulting Group.
           You can unsubscribe at any time.
         </p>

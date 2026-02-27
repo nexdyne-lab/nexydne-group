@@ -10,7 +10,7 @@ export default function HealthcareDashboardTraining() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#1a2b5c] via-[#2D5BFF] to-[#4169FF] text-white py-20">
+      <section className="relative bg-gradient-to-br from-base via-primary to-primary text-white py-20">
         <div className="container">
           {/* Breadcrumb */}
           <nav className="text-sm mb-8 text-blue-200">
@@ -37,8 +37,8 @@ export default function HealthcareDashboardTraining() {
       {/* Challenge Section */}
       <section className="py-20">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">The Challenge</h2>
-          <div className="space-y-4 text-lg text-slate-700">
+          <h2 className="text-4xl font-bold text-charcoal mb-6">The Challenge</h2>
+          <div className="space-y-4 text-lg text-charcoal/80">
             <p>
               A regional healthcare network with 12 hospitals and 45 outpatient clinics struggled with patient outcome visibility. Clinicians wanted to track readmission rates, infection rates, length of stay, and other quality metrics—but relied on IT to generate reports that arrived weeks after the data was collected.
             </p>
@@ -58,8 +58,8 @@ export default function HealthcareDashboardTraining() {
       {/* Solution Section */}
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">The Solution</h2>
-          <div className="space-y-4 text-lg text-slate-700">
+          <h2 className="text-4xl font-bold text-charcoal mb-6">The Solution</h2>
+          <div className="space-y-4 text-lg text-charcoal/80">
             <p>
               NEXDYNE designed a half-day "Tableau for Clinicians" workshop tailored to healthcare use cases. Rather than teaching generic BI concepts, we focused on patient outcome dashboards using real (de-identified) clinical data from the network's EHR system.
             </p>
@@ -82,26 +82,26 @@ export default function HealthcareDashboardTraining() {
       {/* Results Section */}
       <section className="py-20">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">The Results</h2>
+          <h2 className="text-4xl font-bold text-charcoal mb-6">The Results</h2>
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
               <div className="text-4xl font-bold text-blue-900 mb-2">200</div>
-              <div className="text-slate-700">Clinicians trained across 12 hospitals in 3 months</div>
+              <div className="text-charcoal/80">Clinicians trained across 12 hospitals in 3 months</div>
             </div>
             <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
               <div className="text-4xl font-bold text-red-900 mb-2">45%</div>
-              <div className="text-slate-700">Improvement in patient outcome visibility</div>
+              <div className="text-charcoal/80">Improvement in patient outcome visibility</div>
             </div>
             <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-600">
               <div className="text-4xl font-bold text-purple-900 mb-2">180+</div>
-              <div className="text-slate-700">Custom dashboards built by clinical staff in 6 months</div>
+              <div className="text-charcoal/80">Custom dashboards built by clinical staff in 6 months</div>
             </div>
             <div className="bg-indigo-50 p-6 rounded-lg border-l-4 border-indigo-600">
               <div className="text-4xl font-bold text-indigo-900 mb-2">30 hrs/week</div>
-              <div className="text-slate-700">Reduction in manual Excel reporting across organization</div>
+              <div className="text-charcoal/80">Reduction in manual Excel reporting across organization</div>
             </div>
           </div>
-          <div className="space-y-4 text-lg text-slate-700">
+          <div className="space-y-4 text-lg text-charcoal/80">
             <p>
               Six months post-training, Tableau usage skyrocketed: 420 active users (up from 20), 180+ custom dashboards created, and 15,000+ dashboard views per month. Clinical staff built dashboards for use cases IT never anticipated—OR utilization tracking, physician productivity metrics, patient satisfaction trends by unit.
             </p>
@@ -121,11 +121,11 @@ export default function HealthcareDashboardTraining() {
       {/* Technology Stack Section */}
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">Technology Stack</h2>
+          <h2 className="text-4xl font-bold text-charcoal mb-6">Technology Stack</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Training Delivery</h3>
-              <ul className="space-y-2 text-slate-700">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Training Delivery</h3>
+              <ul className="space-y-2 text-charcoal/80">
                 <li>• In-person workshops at each hospital</li>
                 <li>• Hands-on exercises with real clinical data</li>
                 <li>• Printed workbooks and reference guides</li>
@@ -133,8 +133,8 @@ export default function HealthcareDashboardTraining() {
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Technologies Taught</h3>
-              <ul className="space-y-2 text-slate-700">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Technologies Taught</h3>
+              <ul className="space-y-2 text-charcoal/80">
                 <li>• Tableau Desktop (visualization tool)</li>
                 <li>• Tableau Server (publishing platform)</li>
                 <li>• Epic EHR data model (data source)</li>
@@ -146,7 +146,7 @@ export default function HealthcareDashboardTraining() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#1a2b5c] via-[#2D5BFF] to-[#4169FF] text-white">
+      <section className="py-20 bg-gradient-to-br from-base via-primary to-primary text-white">
         <div className="container text-center">
           <h2 className="text-4xl font-bold mb-6">
             Ready to empower your team with self-service analytics?

@@ -49,7 +49,7 @@ export default function DataModernization() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Data Modernization" 
         description="Unlock your data's potential. Transform legacy silos into intelligent data platforms that drive real-time insights."
@@ -58,7 +58,7 @@ export default function DataModernization() {
       <Navigation />
 
       {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[70vh] flex items-center pt-20 bg-black">
+      <section className="relative min-h-[70vh] flex items-center pt-20 bg-charcoal">
         <div className="container px-4 md:px-12 grid md:grid-cols-2 gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -77,12 +77,12 @@ export default function DataModernization() {
             
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out">
                   Schedule a Consultation
                 </Button>
               </Link>
               <Link href="/case-studies">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
+                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out bg-transparent">
                   View Case Studies
                 </Button>
               </Link>
@@ -105,7 +105,7 @@ export default function DataModernization() {
       </section>
 
       {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-20 bg-white border-b border-gray-200">
+      <section className="py-20 bg-white border-b border-border">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -114,7 +114,7 @@ export default function DataModernization() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl eb-garamond font-bold text-[#051C2C]">Our Experience & Impact</h2>
+            <h2 className="text-2xl eb-garamond font-bold text-charcoal">Our Experience & Impact</h2>
           </motion.div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -130,8 +130,8 @@ export default function DataModernization() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="text-5xl md:text-6xl font-bold text-[#051C2C] mb-3">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-5xl md:text-6xl font-bold text-charcoal mb-3">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -147,7 +147,7 @@ export default function DataModernization() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               In the age of AI, data is your most valuable asset. Yet most organizations are sitting on a goldmine they can't access—trapped in legacy systems, scattered across silos, and plagued by quality issues that undermine every decision.
             </motion.p>
@@ -157,7 +157,7 @@ export default function DataModernization() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               We've helped organizations across industries transform their data foundations, turning chaos into clarity and enabling the real-time insights that drive competitive advantage. You can't build AI on bad data—machine learning models are only as good as the data they're trained on.
             </motion.p>
@@ -167,7 +167,7 @@ export default function DataModernization() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               Data silos kill agility. When different departments have conflicting numbers, decision-making grinds to a halt. A single source of truth accelerates everything. Real-time is the new standard—your competitors are making decisions with data that's minutes old, not days.
             </motion.p>
@@ -184,13 +184,13 @@ export default function DataModernization() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Our Data Modernization Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               End-to-end data platform services from assessment to implementation to ongoing optimization.
             </p>
           </motion.div>
@@ -254,7 +254,7 @@ export default function DataModernization() {
                 className="w-full h-auto rounded-lg shadow-lg"
               />
               {/* Accent block */}
-              <div className="absolute bottom-6 right-6 w-24 h-24 bg-[#0077B5] rounded-lg" />
+              <div className="absolute bottom-6 right-6 w-24 h-24 bg-primary rounded-lg" />
             </motion.div>
             
             {/* Content */}
@@ -264,15 +264,15 @@ export default function DataModernization() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold text-[#051C2C] leading-[1.1] mb-8">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold text-charcoal leading-[1.1] mb-8">
                 We've learned what works—and what doesn't.
               </h2>
               
-              <p className="text-xl text-[#051C2C]/70 leading-relaxed mb-6">
+              <p className="text-xl text-charcoal/70 leading-relaxed mb-6">
                 The difference isn't luck. It's process. We've refined our approach over 50+ data platform implementations, learning what works for companies your size. We know how to migrate data safely, build pipelines that scale, and create governance that doesn't slow you down.
               </p>
               
-              <p className="text-xl text-[#051C2C]/70 leading-relaxed">
+              <p className="text-xl text-charcoal/70 leading-relaxed">
                 More importantly, we know when to modernize incrementally versus when to rebuild from scratch—saving you from costly mistakes.
               </p>
             </motion.div>
@@ -281,7 +281,7 @@ export default function DataModernization() {
       </section>
 
       {/* Section 5: Our Approach (3-Column Consulting Format) */}
-      <section className="py-20 bg-[#051C2C]">
+      <section className="py-20 bg-base">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -289,7 +289,7 @@ export default function DataModernization() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00d4ff] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">
               Our Approach
             </span>
             <h2 className="text-3xl md:text-5xl eb-garamond font-light text-white">
@@ -320,14 +320,14 @@ export default function DataModernization() {
                 transition={{ delay: i * 0.1 }}
               >
                 <h3 className="text-xl font-bold text-white mb-4">{pillar.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{pillar.description}</p>
+                <p className="text-muted-foreground/50 leading-relaxed">{pillar.description}</p>
               </motion.div>
             ))}
           </div>
 
           <div className="text-center mt-12">
             <Link href="/contact">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-4 bg-transparent">
+              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-4 bg-transparent transition-colors duration-200 ease-in-out">
                 Get in touch
               </Button>
             </Link>
@@ -336,7 +336,7 @@ export default function DataModernization() {
       </section>
 
       {/* Section 6: Key Benefits - H100 Hover Cards */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -344,10 +344,10 @@ export default function DataModernization() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Why Modernize Data
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Transform your data from liability to competitive advantage.
             </h2>
           </motion.div>
@@ -390,13 +390,13 @@ export default function DataModernization() {
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-12">
           <div className="text-center mb-12">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
               Data Platform Stack
             </span>
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-[#051C2C] mb-4">
+            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal mb-4">
               Modern Data Technologies
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               We leverage best-in-class tools to build scalable, maintainable data platforms.
             </p>
           </div>
@@ -414,13 +414,13 @@ export default function DataModernization() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
               >
-                <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 hover:border-[#0077B5]/30 transition-all h-full">
-                  <div className="text-2xl font-bold text-[#051C2C] mb-2">{stack.category}</div>
-                  <p className="text-sm text-gray-500 mb-6">{stack.subtitle}</p>
+                <div className="bg-subtle p-8 rounded-lg border border-border hover:border-primary/30 transition-all h-full">
+                  <div className="text-2xl font-bold text-charcoal mb-2">{stack.category}</div>
+                  <p className="text-sm text-muted-foreground mb-6">{stack.subtitle}</p>
                   <ul className="space-y-3">
                     {stack.tools.map((tool, j) => (
-                      <li key={j} className="flex items-center gap-3 text-sm text-gray-700">
-                        <CheckCircle2 className="w-4 h-4 text-[#0077B5] shrink-0" />
+                      <li key={j} className="flex items-center gap-3 text-sm text-charcoal/80">
+                        <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                         <span>{tool}</span>
                       </li>
                     ))}
@@ -433,7 +433,7 @@ export default function DataModernization() {
       </section>
 
       {/* Section 8: Case Studies (F100) */}
-      <section className="py-24 bg-[#051C2C]">
+      <section className="py-24 bg-base">
         <div className="container px-4 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
             <motion.div
@@ -441,7 +441,7 @@ export default function DataModernization() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-4 block">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
                 Client Results
               </span>
               <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-white">
@@ -449,7 +449,7 @@ export default function DataModernization() {
               </h2>
             </motion.div>
             <Link href="/cases">
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 bg-transparent">
+              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 bg-transparent transition-colors duration-200 ease-in-out">
                 View all case studies
               </Button>
             </Link>
@@ -486,10 +486,10 @@ export default function DataModernization() {
                       alt={study.title} 
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#051C2C] via-[#051C2C]/50 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-8">
-                      <span className="text-xs font-bold text-[#0077B5] mb-3 uppercase tracking-wider block">{study.category}</span>
-                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#0077B5] transition-colors">
+                      <span className="text-xs font-bold text-primary mb-3 uppercase tracking-wider block">{study.category}</span>
+                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
                         {study.title}
                       </h3>
                       <p className="text-white/70 line-clamp-2">{study.description}</p>
@@ -503,7 +503,7 @@ export default function DataModernization() {
       </section>
 
       {/* Section 9: Featured Insight Banner (Preserved Unique Section) */}
-      <section className="py-16 bg-[#0077B5]">
+      <section className="py-16 bg-primary">
         <div className="container px-4 md:px-12">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="text-white">
@@ -512,7 +512,7 @@ export default function DataModernization() {
               <p className="text-white/80">A comprehensive framework for transforming your data foundation.</p>
             </div>
             <Link href="/insights/ceo-guide-data-modernization">
-              <Button className="bg-white text-[#0077B5] hover:bg-gray-100 px-8 py-4 font-semibold whitespace-nowrap">
+              <Button className="bg-white text-primary hover:bg-white/90 px-8 py-4 font-semibold whitespace-nowrap transition-colors duration-200 ease-in-out">
                 Download the Guide <ArrowRight className="ml-2 w-4 h-4 inline" />
               </Button>
             </Link>
@@ -521,7 +521,7 @@ export default function DataModernization() {
       </section>
 
       {/* Section 10: Related Capabilities - H100 Hover */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -529,10 +529,10 @@ export default function DataModernization() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
               Related Capabilities
             </span>
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-[#051C2C]">
+            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal">
               Explore more Technology capabilities
             </h2>
           </motion.div>
@@ -554,7 +554,7 @@ export default function DataModernization() {
       </section>
 
       {/* Section 11: CTA Section (F100 - Cyan Background) */}
-      <section className="py-24 bg-[#0077B5]">
+      <section className="py-24 bg-primary">
         <div className="container px-4 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl eb-garamond font-bold text-white mb-6">
@@ -564,7 +564,7 @@ export default function DataModernization() {
               Let's discuss how our data modernization capabilities can help you build a foundation for AI and analytics.
             </p>
             <Link href="/contact">
-              <Button className="bg-white hover:bg-gray-100 text-[#0077B5] px-10 py-6 text-lg font-semibold">
+              <Button className="bg-white hover:bg-white/90 text-primary px-10 py-6 text-lg font-semibold transition-colors duration-200 ease-in-out">
                 Start a Conversation <ArrowRight className="ml-2 w-5 h-5 inline" />
               </Button>
             </Link>

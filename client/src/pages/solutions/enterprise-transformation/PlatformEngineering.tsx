@@ -35,7 +35,7 @@ export default function PlatformEngineering() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Platform Engineering" 
         description="Build internal developer platforms that standardize tooling, accelerate delivery, and improve developer experience across the organization."
@@ -43,7 +43,7 @@ export default function PlatformEngineering() {
       />
       <Navigation />
 
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-black">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -62,7 +62,7 @@ export default function PlatformEngineering() {
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out">
                   Consult Our Platform Experts
                 </Button>
               </Link>
@@ -89,7 +89,7 @@ export default function PlatformEngineering() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -98,7 +98,7 @@ export default function PlatformEngineering() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-[#051C2C]">Our Experience & Impact</h2>
+            <h2 className="text-2xl font-bold text-charcoal">Our Experience & Impact</h2>
           </motion.div>
           
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
@@ -114,8 +114,8 @@ export default function PlatformEngineering() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -130,7 +130,7 @@ export default function PlatformEngineering() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               In today's competitive landscape, the speed and efficiency of your development teams are paramount. However, cognitive load from complex tooling, inconsistent environments, and manual infrastructure management can create significant friction. Platform engineering addresses this by treating your internal development infrastructure as a product, creating a paved road for developers to build, ship, and run applications with greater autonomy and velocity.
             </motion.p>
@@ -140,7 +140,7 @@ export default function PlatformEngineering() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               We help you build a robust Internal Developer Platform (IDP) that provides a curated set of self-service tools and capabilities. By abstracting away the underlying complexity of cloud-native infrastructure, we empower your developers to focus on what they do best: writing code and delivering value. This shift from a project-based to a product-based approach for internal tooling fosters a culture of innovation, improves developer experience, and accelerates your digital transformation journey.
             </motion.p>
@@ -156,13 +156,13 @@ export default function PlatformEngineering() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Our Platform Engineering Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               We provide end-to-end services to design, build, and operate your Internal Developer Platform.
             </p>
           </motion.div>
@@ -208,7 +208,7 @@ export default function PlatformEngineering() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#051C2C] text-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -245,7 +245,7 @@ export default function PlatformEngineering() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.15 }}
               >
-                <div className="text-6xl font-bold text-[#0077B5] mb-4">{item.step}</div>
+                <div className="text-6xl font-bold text-primary mb-4">{item.step}</div>
                 <h3 className="text-2xl font-bold mb-3">{item.title}</h3>
                 <p className="text-white/60">{item.description}</p>
               </motion.div>
@@ -254,7 +254,7 @@ export default function PlatformEngineering() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#051C2C] text-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -282,9 +282,9 @@ export default function PlatformEngineering() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-black/20 p-8 rounded-lg"
+                className="bg-charcoal/20 p-8 rounded-lg"
               >
-                <span className="text-sm font-bold uppercase tracking-widest text-[#00d4ff] mb-4 block">{item.industry}</span>
+                <span className="text-sm font-bold uppercase tracking-widest text-secondary mb-4 block">{item.industry}</span>
                 <p className="text-2xl font-semibold leading-snug">{item.headline}</p>
               </motion.div>
             ))}
@@ -292,7 +292,7 @@ export default function PlatformEngineering() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -300,7 +300,7 @@ export default function PlatformEngineering() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C]">Related Capabilities</h2>
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal">Related Capabilities</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -319,7 +319,7 @@ export default function PlatformEngineering() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 lg:py-24 bg-[#0077B5] text-white">
+      <section className="py-16 sm:py-20 lg:py-24 bg-primary text-white">
         <div className="container px-4 sm:px-6 md:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -330,7 +330,7 @@ export default function PlatformEngineering() {
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">Ready to Build Your Developer Platform?</h2>
             <p className="text-lg sm:text-xl max-w-3xl mx-auto mb-8 text-white/80">Let's discuss how a tailored Internal Developer Platform can accelerate your business outcomes.</p>
             <Link href="/contact">
-              <Button className="bg-white text-black hover:bg-gray-200 px-10 py-7 text-lg font-semibold transition-all">
+              <Button className="bg-white text-primary hover:bg-white/90 px-10 py-7 text-lg font-semibold transition-colors duration-200 ease-in-out">
                 Schedule a Consultation
               </Button>
             </Link>

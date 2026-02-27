@@ -38,7 +38,7 @@ function RegionalPartnershipsFAQ() {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-[#F8F9FA] text-[#051C2C]">
+    <section className="py-20 md:py-28 bg-subtle text-charcoal">
       <div className="container px-4 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -47,7 +47,7 @@ function RegionalPartnershipsFAQ() {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mb-12"
         >
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
             Frequently Asked Questions
           </span>
           <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight">
@@ -63,15 +63,15 @@ function RegionalPartnershipsFAQ() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
-              className="border border-[#051C2C]/10 rounded-lg overflow-hidden bg-white"
+              className="border border-base/10 rounded-lg overflow-hidden bg-white"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-[#F8F9FA] transition-colors"
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-subtle transition-colors"
               >
                 <span className="font-semibold text-lg pr-4">{faq.question}</span>
                 <ChevronDown 
-                  className={`w-5 h-5 text-[#0077B5] flex-shrink-0 transition-transform duration-300 ${
+                  className={`w-5 h-5 text-primary flex-shrink-0 transition-transform duration-300 ${
                     openIndex === index ? 'rotate-180' : ''
                   }`} 
                 />
@@ -81,7 +81,7 @@ function RegionalPartnershipsFAQ() {
                   openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
-                <p className="px-6 pb-6 text-[#051C2C]/70 leading-relaxed">
+                <p className="px-6 pb-6 text-charcoal/70 leading-relaxed">
                   {faq.answer}
                 </p>
               </div>
@@ -95,7 +95,7 @@ function RegionalPartnershipsFAQ() {
 
 export default function RegionalPartnerships() {
   return (
-    <div className="min-h-screen bg-[#051C2C] font-sans text-white selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
       <SEO 
         title="Regional Business Intelligence Partnerships | NexDyne Initiatives" 
         description="Partnering with local chambers to build data-driven growth ecosystems. NexDyne collaborates with chambers of commerce and economic development organizations."
@@ -113,7 +113,7 @@ export default function RegionalPartnerships() {
             className="absolute inset-0 w-full h-full object-cover"
           />
           {/* Dark overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#051C2C] via-[#051C2C]/90 to-[#051C2C]/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/90 to-base/60" />
           {/* Subtle geometric pattern */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute top-24 right-24 w-72 h-72 border border-white/20 rounded-full" />
@@ -136,7 +136,7 @@ export default function RegionalPartnerships() {
               </span>
             </Link>
             
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Regional Business Intelligence Partnerships
             </span>
             
@@ -152,7 +152,7 @@ export default function RegionalPartnerships() {
       </section>
 
       {/* What It Is - With Side Image */}
-      <section className="py-20 md:py-28 bg-white text-[#051C2C]">
+      <section className="py-20 md:py-28 bg-white text-charcoal">
         <div className="container px-4 md:px-12">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl">
             <motion.div
@@ -161,14 +161,14 @@ export default function RegionalPartnerships() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
                 What It Is
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-8">
                 Infrastructure-building for local economies
               </h2>
               
-              <div className="prose prose-lg max-w-none text-[#051C2C]/70">
+              <div className="prose prose-lg max-w-none text-charcoal/70">
                 <p className="text-lg leading-relaxed mb-6">
                   Chambers of commerce and economic development organizations are the backbone of local business ecosystems. They convene businesses, advocate for growth-friendly policies, and connect members with resources. But in an increasingly data-driven economy, many lack the tools to deliver the intelligence their members need.
                 </p>
@@ -197,14 +197,14 @@ export default function RegionalPartnerships() {
                 />
               </div>
               {/* Decorative element */}
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-[#0077B5]/10 rounded-lg -z-10" />
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-lg -z-10" />
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Who We Partner With */}
-      <section className="py-20 md:py-28 bg-[#F8F9FA] text-[#051C2C]">
+      <section className="py-20 md:py-28 bg-subtle text-charcoal">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -213,13 +213,13 @@ export default function RegionalPartnerships() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mb-12"
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Who We Partner With
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-6">
               Organizations that anchor local economies
             </h2>
-            <p className="text-lg text-[#051C2C]/70 leading-relaxed">
+            <p className="text-lg text-charcoal/70 leading-relaxed">
               We collaborate with organizations that have deep roots in their communities and a mission to support business growth.
             </p>
           </motion.div>
@@ -250,11 +250,11 @@ export default function RegionalPartnerships() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="bg-white p-8 rounded-lg"
               >
-                <div className="w-12 h-12 bg-[#0077B5]/10 rounded-lg flex items-center justify-center mb-6">
-                  <item.icon className="w-6 h-6 text-[#0077B5]" />
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                  <item.icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                <p className="text-[#051C2C]/60 leading-relaxed">{item.description}</p>
+                <p className="text-charcoal/60 leading-relaxed">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -262,7 +262,7 @@ export default function RegionalPartnerships() {
       </section>
 
       {/* Why It Matters to Chambers - With Full Width Image */}
-      <section className="py-20 md:py-28 bg-[#051C2C]">
+      <section className="py-20 md:py-28 bg-base">
         <div className="container px-4 md:px-12">
           {/* Full width image banner */}
           <motion.div
@@ -331,7 +331,7 @@ export default function RegionalPartnerships() {
                   className="bg-white/5 p-6 rounded-lg"
                 >
                   <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center mb-4">
-                    <item.icon className="w-5 h-5 text-[#0077B5]" />
+                    <item.icon className="w-5 h-5 text-primary" />
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
                   <p className="text-sm text-white/60 leading-relaxed">{item.description}</p>
@@ -343,7 +343,7 @@ export default function RegionalPartnerships() {
       </section>
 
       {/* What Partners Receive */}
-      <section className="py-20 md:py-28 bg-white text-[#051C2C]">
+      <section className="py-20 md:py-28 bg-white text-charcoal">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -352,13 +352,13 @@ export default function RegionalPartnerships() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mb-12"
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               What Partners Receive
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-6">
               Everything needed to deliver intelligence to members
             </h2>
-            <p className="text-lg text-[#051C2C]/70 leading-relaxed">
+            <p className="text-lg text-charcoal/70 leading-relaxed">
               Our partnership model provides technology, training, and ongoing support to transform chamber member services.
             </p>
           </motion.div>
@@ -388,10 +388,10 @@ export default function RegionalPartnerships() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="bg-[#F8F9FA] p-6 rounded-lg"
+                className="bg-subtle p-6 rounded-lg"
               >
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-[#051C2C]/60 leading-relaxed">{item.description}</p>
+                <p className="text-charcoal/60 leading-relaxed">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -399,7 +399,7 @@ export default function RegionalPartnerships() {
       </section>
 
       {/* Strategic Framing - With US Economic Map */}
-      <section className="py-20 md:py-28 bg-[#F8F9FA] text-[#051C2C]">
+      <section className="py-20 md:py-28 bg-subtle text-charcoal">
         <div className="container px-4 md:px-12">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start max-w-6xl">
             <motion.div
@@ -408,14 +408,14 @@ export default function RegionalPartnerships() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Strategic Framing
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-8">
                 This is infrastructure-building for local economies
               </h2>
               
-              <div className="prose prose-lg max-w-none text-[#051C2C]/70 mb-12">
+              <div className="prose prose-lg max-w-none text-charcoal/70 mb-12">
                 <p className="text-lg leading-relaxed mb-6">
                   This initiative is not about selling to chambers. It's about building the intelligence infrastructure that local economies need to thrive in a data-driven world.
                 </p>
@@ -436,8 +436,8 @@ export default function RegionalPartnerships() {
                     "Community prosperity through stronger businesses"
                   ].map((item, index) => (
                     <div key={index} className="flex items-start gap-3">
-                      <div className="w-1.5 h-1.5 bg-[#0077B5] rounded-full mt-2.5 flex-shrink-0" />
-                      <span className="text-[#051C2C]/70">{item}</span>
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2.5 flex-shrink-0" />
+                      <span className="text-charcoal/70">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -459,14 +459,14 @@ export default function RegionalPartnerships() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <p className="text-xs text-[#051C2C]/50 mt-3 text-center">Regional GDP growth across the United States</p>
+              <p className="text-xs text-charcoal/50 mt-3 text-center">Regional GDP growth across the United States</p>
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Partnership Process */}
-      <section className="py-20 md:py-28 bg-[#051C2C]">
+      <section className="py-20 md:py-28 bg-base">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -522,10 +522,10 @@ export default function RegionalPartnerships() {
                 className="relative"
               >
                 <div className="bg-white/5 rounded-lg p-6">
-                  <div className="w-12 h-12 bg-[#0077B5]/20 rounded-lg flex items-center justify-center mb-4">
-                    <item.icon className="w-6 h-6 text-[#0077B5]" />
+                  <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                    <item.icon className="w-6 h-6 text-primary" />
                   </div>
-                  <span className="text-[#0077B5] text-sm font-bold mb-2 block">{item.step}</span>
+                  <span className="text-primary text-sm font-bold mb-2 block">{item.step}</span>
                   <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
                   <p className="text-sm text-white/60 leading-relaxed">{item.description}</p>
                 </div>
@@ -544,7 +544,7 @@ export default function RegionalPartnerships() {
       <RegionalPartnershipsFAQ />
 
       {/* Related Initiatives - With Images */}
-      <section className="py-20 md:py-28 bg-white text-[#051C2C]">
+      <section className="py-20 md:py-28 bg-white text-charcoal">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -553,7 +553,7 @@ export default function RegionalPartnerships() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mb-12"
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Related Initiatives
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight">
@@ -568,7 +568,7 @@ export default function RegionalPartnerships() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4 }}
-                className="group bg-[#F8F9FA] rounded-lg overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
+                className="group bg-subtle rounded-lg overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
               >
                 {/* Card Image */}
                 <div className="aspect-[16/9] overflow-hidden">
@@ -579,16 +579,16 @@ export default function RegionalPartnerships() {
                   />
                 </div>
                 <div className="p-8">
-                  <span className="text-xs font-semibold uppercase tracking-[0.15em] text-[#0077B5] mb-3 block">
+                  <span className="text-xs font-semibold uppercase tracking-[0.15em] text-primary mb-3 block">
                     Mid-Market AI Access Program
                   </span>
-                  <h3 className="text-xl font-serif font-bold mb-3 group-hover:text-[#0077B5] transition-colors">
+                  <h3 className="text-xl font-serif font-bold mb-3 group-hover:text-primary transition-colors">
                     Expanding Access to Enterprise-Grade AI for America's Mid-Market
                   </h3>
-                  <p className="text-sm text-[#051C2C]/60 mb-4">
+                  <p className="text-sm text-charcoal/60 mb-4">
                     A national effort to make advanced AI, analytics, and automation accessible to mid-market companies.
                   </p>
-                  <span className="inline-flex items-center text-sm font-medium text-[#051C2C]/70 group-hover:text-[#0077B5] transition-colors">
+                  <span className="inline-flex items-center text-sm font-medium text-charcoal/70 group-hover:text-primary transition-colors">
                     Learn more
                     <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
                   </span>
@@ -602,7 +602,7 @@ export default function RegionalPartnerships() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.1 }}
-                className="group bg-[#F8F9FA] rounded-lg overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
+                className="group bg-subtle rounded-lg overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
               >
                 {/* Card Image */}
                 <div className="aspect-[16/9] overflow-hidden">
@@ -613,16 +613,16 @@ export default function RegionalPartnerships() {
                   />
                 </div>
                 <div className="p-8">
-                  <span className="text-xs font-semibold uppercase tracking-[0.15em] text-[#0077B5] mb-3 block">
+                  <span className="text-xs font-semibold uppercase tracking-[0.15em] text-primary mb-3 block">
                     NexDyne Intelligence Commons
                   </span>
-                  <h3 className="text-xl font-serif font-bold mb-3 group-hover:text-[#0077B5] transition-colors">
+                  <h3 className="text-xl font-serif font-bold mb-3 group-hover:text-primary transition-colors">
                     Democratizing Business Intelligence for Growing Companies
                   </h3>
-                  <p className="text-sm text-[#051C2C]/60 mb-4">
+                  <p className="text-sm text-charcoal/60 mb-4">
                     A free-to-start AI-powered intelligence platform for market signals, competitive benchmarking, and growth scenario modeling.
                   </p>
-                  <span className="inline-flex items-center text-sm font-medium text-[#051C2C]/70 group-hover:text-[#0077B5] transition-colors">
+                  <span className="inline-flex items-center text-sm font-medium text-charcoal/70 group-hover:text-primary transition-colors">
                     Learn more
                     <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
                   </span>

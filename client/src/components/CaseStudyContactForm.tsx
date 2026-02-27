@@ -45,19 +45,19 @@ export default function CaseStudyContactForm({ caseStudyTitle }: CaseStudyContac
         <div className="max-w-3xl mx-auto">
           <div className="bg-white rounded-xl sm:rounded-xl sm:rounded-2xl shadow-xl p-8 md:p-12">
             <div className="mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-4">
                 Request similar results for your business
               </h2>
-              <p className="text-lg text-gray-600">
+              <p className="text-lg text-muted-foreground">
                 Interested in achieving outcomes like this case study? Share your details and our team will reach out to discuss how we can help transform your operations.
               </p>
             </div>
 
             {isSubmitted ? (
-              <div className="bg-green-50 border border-green-200 rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 text-center">
-                <div className="text-green-600 text-5xl mb-4">✓</div>
-                <h3 className="text-xl font-semibold text-green-900 mb-2">Thank you for your interest!</h3>
-                <p className="text-green-700">
+              <div className="bg-secondary/10 border border-green-200 rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 text-center">
+                <div className="text-secondary text-5xl mb-4">✓</div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Thank you for your interest!</h3>
+                <p className="text-secondary">
                   We'll review your request and get back to you within 24 hours to schedule a consultation.
                 </p>
               </div>
@@ -66,7 +66,7 @@ export default function CaseStudyContactForm({ caseStudyTitle }: CaseStudyContac
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:p-5 md:p-4 sm:p-5 md:p-6">
                   {/* Name */}
                   <div>
-                    <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                    <label htmlFor="name" className="block text-sm font-semibold text-charcoal/80 mb-2">
                       Full Name *
                     </label>
                     <input
@@ -76,14 +76,14 @@ export default function CaseStudyContactForm({ caseStudyTitle }: CaseStudyContac
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2D5BFF] focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
                       placeholder="John Smith"
                     />
                   </div>
 
                   {/* Email */}
                   <div>
-                    <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                    <label htmlFor="email" className="block text-sm font-semibold text-charcoal/80 mb-2">
                       Email Address *
                     </label>
                     <input
@@ -93,7 +93,7 @@ export default function CaseStudyContactForm({ caseStudyTitle }: CaseStudyContac
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2D5BFF] focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
                       placeholder="john@company.com"
                     />
                   </div>
@@ -101,7 +101,7 @@ export default function CaseStudyContactForm({ caseStudyTitle }: CaseStudyContac
 
                 {/* Company */}
                 <div>
-                  <label htmlFor="company" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="company" className="block text-sm font-semibold text-charcoal/80 mb-2">
                     Company Name *
                   </label>
                   <input
@@ -111,14 +111,14 @@ export default function CaseStudyContactForm({ caseStudyTitle }: CaseStudyContac
                     required
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2D5BFF] focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
                     placeholder="Your Company Inc."
                   />
                 </div>
 
                 {/* Message */}
                 <div>
-                  <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-semibold text-charcoal/80 mb-2">
                     Tell us about your automation needs
                   </label>
                   <textarea
@@ -127,7 +127,7 @@ export default function CaseStudyContactForm({ caseStudyTitle }: CaseStudyContac
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2D5BFF] focus:border-transparent transition-colors resize-none"
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors resize-none"
                     placeholder="Describe your current challenges, processes you'd like to automate, or specific outcomes you're looking to achieve..."
                   />
                 </div>
@@ -140,11 +140,11 @@ export default function CaseStudyContactForm({ caseStudyTitle }: CaseStudyContac
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full md:w-auto px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg bg-gradient-to-r from-[#2D5BFF] to-[#4169FF] hover:from-[#2448CC] hover:to-[#2D5BFF] text-white font-semibold rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full md:w-auto px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg bg-gradient-to-r from-primary to-primary hover:from-primary hover:to-primary text-white font-semibold rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? "Sending..." : "Request Consultation"}
                   </Button>
-                  <p className="mt-4 text-sm text-gray-500">
+                  <p className="mt-4 text-sm text-muted-foreground">
                     By submitting this form, you agree to be contacted by NewCo Technologies regarding your automation needs.
                   </p>
                 </div>

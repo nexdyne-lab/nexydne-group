@@ -154,7 +154,7 @@ export function CapabilitiesExplorer() {
       {/* Split Layout Container */}
       <div className="flex flex-col lg:flex-row min-h-[600px] lg:min-h-[700px]">
         {/* Left Side - Solid light cyan background with content */}
-        <div className="w-full lg:w-1/2 relative px-6 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-16 lg:py-20 flex flex-col justify-center z-30" style={{ backgroundColor: '#d7f2f6' }}>
+        <div className="w-full lg:w-1/2 relative px-6 sm:px-8 md:px-12 lg:px-16 py-12 sm:py-16 lg:py-20 flex flex-col justify-center z-30" style={{ backgroundColor: 'var(--color-subtle)' }}>
           
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -164,13 +164,13 @@ export function CapabilitiesExplorer() {
           >
             {/* Headline */}
             <h2 
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] text-[#1A1A1A] leading-[1.1] mb-4 sm:mb-6 eb-garamond"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] text-charcoal leading-[1.1] mb-4 sm:mb-6 eb-garamond"
             >
               How can we assist you today?
             </h2>
             
             {/* Subheadline */}
-            <p className="text-base sm:text-lg md:text-xl text-[#1A1A1A]/80 leading-relaxed mb-8 sm:mb-10">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal/80 leading-relaxed mb-8 sm:mb-10">
               Learn more about our core areas of expertise by selecting your topic of interest.
             </p>
 
@@ -182,8 +182,8 @@ export function CapabilitiesExplorer() {
                   onClick={() => toggleDropdown('capabilities')}
                   className={`w-full flex items-center justify-between px-5 py-4 rounded-lg border-2 transition-all duration-300 ${
                     activeDropdown === 'capabilities' || selectedCapability
-                      ? 'bg-[#0a5f6a] text-white border-[#0a5f6a]'
-                      : 'bg-white text-[#1A1A1A] border-gray-300 hover:border-[#0a5f6a]'
+                      ? 'bg-base text-white border-base'
+                      : 'bg-white text-charcoal border-border hover:border-base'
                   }`}
                 >
                   <span className="font-medium text-sm sm:text-base truncate pr-2">
@@ -204,13 +204,13 @@ export function CapabilitiesExplorer() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.2 }}
-                      className="absolute top-full left-0 right-0 mt-2 bg-white rounded-lg shadow-xl border border-gray-100 z-50 max-h-[300px] overflow-y-auto"
+                      className="absolute top-full left-0 right-0 mt-2 bg-white rounded-lg shadow-xl border border-border/50 z-50 max-h-[300px] overflow-y-auto"
                     >
                       {capabilities.map((capability) => (
                         <button
                           key={capability.id}
                           onClick={() => handleCapabilitySelect(capability)}
-                          className="w-full text-left px-5 py-3 text-sm sm:text-base text-[#1A1A1A] hover:bg-[#e0f7fa] transition-colors border-b border-gray-50 last:border-b-0"
+                          className="w-full text-left px-5 py-3 text-sm sm:text-base text-charcoal hover:bg-subtle transition-colors border-b border-gray-50 last:border-b-0"
                         >
                           {capability.title}
                         </button>
@@ -226,8 +226,8 @@ export function CapabilitiesExplorer() {
                   onClick={() => toggleDropdown('industries')}
                   className={`w-full flex items-center justify-between px-5 py-4 rounded-lg border-2 transition-all duration-300 ${
                     activeDropdown === 'industries' || selectedIndustry
-                      ? 'bg-[#0a5f6a] text-white border-[#0a5f6a]'
-                      : 'bg-white text-[#1A1A1A] border-gray-300 hover:border-[#0a5f6a]'
+                      ? 'bg-base text-white border-base'
+                      : 'bg-white text-charcoal border-border hover:border-base'
                   }`}
                 >
                   <span className="font-medium text-sm sm:text-base truncate pr-2">
@@ -248,13 +248,13 @@ export function CapabilitiesExplorer() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.2 }}
-                      className="absolute top-full left-0 right-0 mt-2 bg-white rounded-lg shadow-xl border border-gray-100 z-50 max-h-[300px] overflow-y-auto"
+                      className="absolute top-full left-0 right-0 mt-2 bg-white rounded-lg shadow-xl border border-border/50 z-50 max-h-[300px] overflow-y-auto"
                     >
                       {industries.map((industry) => (
                         <button
                           key={industry.id}
                           onClick={() => handleIndustrySelect(industry)}
-                          className="w-full text-left px-5 py-3 text-sm sm:text-base text-[#1A1A1A] hover:bg-[#e0f7fa] transition-colors border-b border-gray-50 last:border-b-0"
+                          className="w-full text-left px-5 py-3 text-sm sm:text-base text-charcoal hover:bg-subtle transition-colors border-b border-gray-50 last:border-b-0"
                         >
                           {industry.title}
                         </button>
@@ -286,7 +286,7 @@ export function CapabilitiesExplorer() {
                 }}
               />
               {/* Overlay for better text readability */}
-              <div className="absolute inset-0 bg-black/30" />
+              <div className="absolute inset-0 bg-charcoal/30" />
             </motion.div>
           </AnimatePresence>
 
@@ -302,20 +302,20 @@ export function CapabilitiesExplorer() {
               >
                 <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 sm:p-8 shadow-2xl">
                   {/* Category Label */}
-                  <span className="text-xs font-bold tracking-[0.15em] text-[#0a5f6a] uppercase mb-3 block">
+                  <span className="text-xs font-bold tracking-[0.15em] text-base uppercase mb-3 block">
                     {currentSelectionType === 'capability' ? 'Capability' : 'Industry'}
                   </span>
                   
                   {/* Title */}
                   <h3 
-                    className="text-xl sm:text-2xl md:text-3xl text-[#1A1A1A] leading-tight mb-4"
+                    className="text-xl sm:text-2xl md:text-3xl text-charcoal leading-tight mb-4"
                     style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
                   >
                     {currentSelection.title}
                   </h3>
                   
                   {/* Description */}
-                  <p className="text-sm sm:text-base text-[#1A1A1A]/70 leading-relaxed mb-6">
+                  <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed mb-6">
                     {currentSelection.description}
                   </p>
                   
@@ -324,7 +324,7 @@ export function CapabilitiesExplorer() {
                     <motion.button
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-[#0a5f6a] text-white rounded-full font-semibold text-sm sm:text-base hover:bg-[#0d7a87] transition-colors"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-base text-white rounded-full font-semibold text-sm sm:text-base hover:bg-secondary transition-colors"
                     >
                       EXPLORE
                       <ArrowRight className="w-4 h-4" />

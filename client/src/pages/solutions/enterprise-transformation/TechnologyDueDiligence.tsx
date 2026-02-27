@@ -35,7 +35,7 @@ export default function TechnologyDueDiligence() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Technology Due Diligence" 
         description="Provide comprehensive technology assessments for M&A transactions, evaluating architecture, technical debt, scalability, and team capabilities."
@@ -43,7 +43,7 @@ export default function TechnologyDueDiligence() {
       />
       <Navigation />
 
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-black">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -62,7 +62,7 @@ export default function TechnologyDueDiligence() {
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out">
                   Schedule a Consultation
                 </Button>
               </Link>
@@ -89,7 +89,7 @@ export default function TechnologyDueDiligence() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -98,7 +98,7 @@ export default function TechnologyDueDiligence() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-[#051C2C]">The Stakes of M&A Tech</h2>
+            <h2 className="text-2xl font-bold text-charcoal">The Stakes of M&A Tech</h2>
           </motion.div>
           
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
@@ -114,8 +114,8 @@ export default function TechnologyDueDiligence() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -130,7 +130,7 @@ export default function TechnologyDueDiligence() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               In the high-stakes world of mergers and acquisitions, technology is a critical, yet often underestimated, factor. A target company's technology stack can be a powerful growth engine or a hidden liability. Without a thorough, expert-led due diligence process, you risk inheriting a brittle architecture, crippling technical debt, and a platform that cannot scale to meet your strategic objectives.
             </motion.p>
@@ -140,7 +140,7 @@ export default function TechnologyDueDiligence() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               Our Technology Due Diligence service provides the clarity and foresight needed to make informed investment decisions. We go beyond surface-level code reviews to deliver a holistic assessment of the target's technology landscape, from architectural soundness and scalability to team capabilities and development processes. We identify risks, quantify liabilities, and uncover opportunities, empowering you to negotiate better terms and build a post-acquisition integration plan that maximizes value.
             </motion.p>
@@ -156,13 +156,13 @@ export default function TechnologyDueDiligence() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Our Diligence Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               We provide a multi-faceted evaluation of the target's technology ecosystem.
             </p>
           </motion.div>
@@ -208,7 +208,7 @@ export default function TechnologyDueDiligence() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 lg:py-24 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -247,7 +247,7 @@ export default function TechnologyDueDiligence() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-5xl font-bold text-[#0077B5] mb-4">{`0${index + 1}`}</div>
+                <div className="text-5xl font-bold text-primary mb-4">{`0${index + 1}`}</div>
                 <h3 className="text-xl font-bold mb-3">{item.title}</h3>
                 <p className="text-white/70">{item.description}</p>
               </motion.div>
@@ -256,7 +256,7 @@ export default function TechnologyDueDiligence() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 lg:py-24 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -273,7 +273,7 @@ export default function TechnologyDueDiligence() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-black p-8 rounded-lg"
+              className="bg-charcoal p-8 rounded-lg"
             >
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/50 mb-4 block">Private Equity</span>
               <h3 className="text-2xl font-bold text-white mb-4">De-risked a $250M acquisition of a SaaS platform by uncovering critical scalability issues, enabling a 15% purchase price reduction.</h3>
@@ -283,7 +283,7 @@ export default function TechnologyDueDiligence() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-black p-8 rounded-lg"
+              className="bg-charcoal p-8 rounded-lg"
             >
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/50 mb-4 block">Corporate M&A</span>
               <h3 className="text-2xl font-bold text-white mb-4">Provided a clear integration roadmap for a strategic acquisition, reducing integration time by 40% and accelerating time-to-value.</h3>
@@ -292,7 +292,7 @@ export default function TechnologyDueDiligence() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -300,7 +300,7 @@ export default function TechnologyDueDiligence() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C]">Related Capabilities</h2>
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal">Related Capabilities</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -319,7 +319,7 @@ export default function TechnologyDueDiligence() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 lg:py-24 bg-[#0077B5]">
+      <section className="py-16 sm:py-20 lg:py-24 bg-primary">
         <div className="container px-4 sm:px-6 md:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -334,7 +334,7 @@ export default function TechnologyDueDiligence() {
               Don't let technology risks derail your M&A strategy. Contact us to ensure your next transaction is built on a solid technical foundation.
             </p>
             <Link href="/contact">
-              <Button className="bg-white hover:bg-gray-200 text-black px-10 py-7 text-lg font-semibold transition-all">
+              <Button className="bg-white hover:bg-white/90 text-primary px-10 py-7 text-lg font-semibold transition-colors duration-200 ease-in-out">
                 Contact Us
               </Button>
             </Link>

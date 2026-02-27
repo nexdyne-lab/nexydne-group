@@ -52,62 +52,62 @@ export default function BlogAIAutomation() {
             {/* Main Content - 2 columns */}
             <div className="lg:col-span-2 space-y-8">
               <div className="prose prose-lg max-w-none">
-                <p className="text-2xl text-gray-700 leading-relaxed font-light">
+                <p className="text-2xl text-charcoal/80 leading-relaxed font-light">
                   The automation revolution is no longer coming—it's here. Mid-sized businesses across the United States are discovering that intelligent automation isn't just for Fortune 500 companies anymore.
                 </p>
 
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-charcoal/80 leading-relaxed">
                   Over the past 18 months, we've worked with more than 40 companies ranging from 50 to 300 employees, helping them deploy automation solutions that deliver measurable results. What we've learned is that successful automation isn't about replacing people—it's about amplifying their capabilities and freeing them from repetitive work that doesn't require human judgment.
                 </p>
 
-                <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">The shift from manual to intelligent</h2>
+                <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">The shift from manual to intelligent</h2>
 
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-charcoal/80 leading-relaxed">
                   Traditional automation focused on simple, rule-based tasks. Today's intelligent automation combines robotic process automation (RPA) with machine learning to handle complex workflows that previously required human decision-making. A 75-attorney law firm we worked with reduced contract review time by 65% not by eliminating attorney oversight, but by automating the initial analysis and flagging items requiring professional judgment.
                 </p>
 
-                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 border-l-4 border-[#2D5BFF] p-4 sm:p-6 md:p-8 my-8">
-                  <p className="text-xl font-semibold text-gray-900 mb-4">
+                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 border-l-4 border-primary p-4 sm:p-6 md:p-8 my-8">
+                  <p className="text-xl font-semibold text-charcoal mb-4">
                     "The firms that thrive in the next decade won't be those that resist automation—they'll be those that use it to deliver better service at better economics."
                   </p>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-muted-foreground">
                     — Robert Chen, Managing Partner, Technology Practice
                   </p>
                 </div>
 
-                <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Three automation trends reshaping mid-market businesses</h2>
+                <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Three automation trends reshaping mid-market businesses</h2>
 
-                <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">1. Document intelligence is becoming table stakes</h3>
-                <p className="text-gray-700 leading-relaxed">
+                <h3 className="text-2xl font-semibold text-charcoal mt-8 mb-4">1. Document intelligence is becoming table stakes</h3>
+                <p className="text-charcoal/80 leading-relaxed">
                   Natural language processing has reached the point where systems can extract meaning from unstructured documents with 95%+ accuracy. We're seeing this deployed across industries—from insurance claims processing to healthcare patient intake to accounting audit procedures. The technology that cost millions five years ago now delivers ROI on $75K investments.
                 </p>
 
-                <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">2. Integration is easier than ever</h3>
-                <p className="text-gray-700 leading-relaxed">
+                <h3 className="text-2xl font-semibold text-charcoal mt-8 mb-4">2. Integration is easier than ever</h3>
+                <p className="text-charcoal/80 leading-relaxed">
                   Modern automation platforms connect to existing systems through APIs rather than requiring wholesale replacement. A regional bank we worked with automated compliance reporting by connecting their core banking system, CRM, and document management platform—without touching any of those underlying systems. The entire implementation took 12 weeks instead of the 18-month ERP replacement they initially considered.
                 </p>
 
-                <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">3. Continuous improvement through machine learning</h3>
-                <p className="text-gray-700 leading-relaxed">
+                <h3 className="text-2xl font-semibold text-charcoal mt-8 mb-4">3. Continuous improvement through machine learning</h3>
+                <p className="text-charcoal/80 leading-relaxed">
                   Unlike traditional software that remains static after deployment, intelligent automation improves over time. Systems learn from user corrections, identify new patterns, and suggest process improvements. An accounting firm's audit automation platform now handles 85% of routine testing procedures autonomously—up from 60% at initial deployment—because it learned which anomalies require auditor review versus routine confirmation.
                 </p>
 
-                <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">What this means for your business</h2>
+                <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">What this means for your business</h2>
 
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-charcoal/80 leading-relaxed">
                   The question isn't whether to automate, but how to do it strategically. Start with processes that are high-volume, rule-based, and currently consuming significant staff time. Look for workflows where errors are costly and consistency matters. Focus on areas where faster turnaround creates competitive advantage or improves customer experience.
                 </p>
 
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-charcoal/80 leading-relaxed">
                   Most importantly, involve your team from the beginning. The companies that see the best results treat automation as a tool that makes their people more effective, not as a replacement for human judgment. When staff understand that automation handles the tedious work so they can focus on the interesting challenges, adoption accelerates and results improve.
                 </p>
 
-                <div className="bg-gray-50 p-4 sm:p-6 md:p-8 mt-12 rounded-lg">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Ready to explore automation for your business?</h3>
-                  <p className="text-gray-700 mb-6">
+                <div className="bg-subtle p-4 sm:p-6 md:p-8 mt-12 rounded-lg">
+                  <h3 className="text-xl font-semibold text-charcoal mb-4">Ready to explore automation for your business?</h3>
+                  <p className="text-charcoal/80 mb-6">
                     We offer complimentary automation readiness assessments for mid-sized businesses. Our team will analyze your current processes and identify opportunities where intelligent automation can deliver measurable ROI.
                   </p>
-                  <a href="/contact" className="inline-block bg-[#2D5BFF] text-white px-8 py-3 rounded-md font-semibold hover:bg-[#1a4acc] transition-colors">
+                  <a href="/contact" className="inline-block bg-primary text-white px-8 py-3 rounded-md font-semibold hover:bg-primary transition-colors">
                     Schedule Assessment
                   </a>
                 </div>
@@ -116,16 +116,16 @@ export default function BlogAIAutomation() {
 
             {/* Sidebar - 1 column */}
             <div className="space-y-8">
-              <div className="bg-gray-50 p-4 sm:p-5 md:p-6 rounded-lg sticky top-24">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">About the Author</h3>
+              <div className="bg-subtle p-4 sm:p-5 md:p-6 rounded-lg sticky top-24">
+                <h3 className="text-lg font-semibold text-charcoal mb-4">About the Author</h3>
                 <div className="flex items-start gap-4 mb-4">
                   <img src="/author-sarah-mitchell.caabf512.jpg" alt="Sarah Mitchell" className="w-16 h-16 rounded-full object-cover flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-gray-900">Sarah Mitchell</p>
-                    <p className="text-sm text-gray-600">Principal Consultant</p>
+                    <p className="font-semibold text-charcoal">Sarah Mitchell</p>
+                    <p className="text-sm text-muted-foreground">Principal Consultant</p>
                   </div>
                 </div>
-                <p className="text-sm text-gray-700 leading-relaxed">
+                <p className="text-sm text-charcoal/80 leading-relaxed">
                   Sarah leads NexDyne's automation practice, specializing in intelligent process automation for professional services and financial services firms. She has helped over 50 mid-market companies deploy automation solutions that deliver measurable ROI.
                 </p>
               </div>
@@ -147,8 +147,8 @@ export default function BlogAIAutomation() {
               </div>
 
               <div className="border-l-4 border-cyan-400 pl-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Key Takeaways</h3>
-                <ul className="space-y-3 text-sm text-gray-700">
+                <h3 className="text-lg font-semibold text-charcoal mb-4">Key Takeaways</h3>
+                <ul className="space-y-3 text-sm text-charcoal/80">
                   <li>• Document intelligence now delivers ROI on $75K investments</li>
                   <li>• Modern automation integrates with existing systems via APIs</li>
                   <li>• Machine learning enables continuous improvement over time</li>
@@ -168,7 +168,7 @@ export default function BlogAIAutomation() {
       />
 
       {/* Newsletter Signup */}
-      <section className="py-10 sm:py-12 lg:py-16 bg-gray-50">
+      <section className="py-10 sm:py-12 lg:py-16 bg-subtle">
         <div className="container max-w-5xl">
           <NewsletterSignup />
         </div>

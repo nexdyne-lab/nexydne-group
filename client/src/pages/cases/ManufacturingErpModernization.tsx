@@ -34,7 +34,7 @@ export default function ManufacturingErpModernization() {
       <Navigation />
       {/* Hero Section */}
       <section
-        className="relative bg-gradient-to-br from-[#7d1e3f] to-[#4a1225] text-white py-24"
+        className="relative bg-gradient-to-br from-base to-base text-white py-24"
         style={{
           backgroundImage: "url('/legacy-case-manufacturing.71a439ad.jpg')",
           backgroundSize: "cover",
@@ -42,7 +42,7 @@ export default function ManufacturingErpModernization() {
           backgroundBlendMode: "multiply",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-[#7d1e3f]/95 to-[#4a1225]/95" />
+        <div className="absolute inset-0 bg-gradient-to-br from-base/95 to-base/95" />
         <div className="container relative">
           <div className="mb-6 text-sm opacity-90">
             <Link href="/" className="hover:underline">
@@ -119,7 +119,7 @@ export default function ManufacturingErpModernization() {
       </section>
 
       {/* Solution Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-subtle">
         <div className="container max-w-4xl">
           <h2 className="text-4xl font-bold mb-8">The Solution</h2>
           <div className="prose prose-lg max-w-none space-y-6 text-muted-foreground leading-relaxed">
@@ -225,7 +225,7 @@ export default function ManufacturingErpModernization() {
             Let's build an ERP platform that drives efficiency and enables growth.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" className="rounded-full bg-black hover:bg-black/90">
+            <Button size="lg" className="rounded-full bg-charcoal hover:bg-charcoal/90">
               Get in touch
             </Button>
             <Link href="/solutions/legacy-modernization">

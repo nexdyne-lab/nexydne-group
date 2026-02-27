@@ -49,7 +49,7 @@ const socialChannels = [
 
 export default function FollowUs() {
   return (
-    <div className="min-h-screen bg-white font-sans text-[#1A1A1A]">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
       <SEO 
         title="Follow Us | NexDyne Technologies" 
         description="Connect with NexDyne Technologies on social media. Stay updated with our latest insights, news, and thought leadership."
@@ -58,13 +58,13 @@ export default function FollowUs() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-white pt-32 pb-16 border-b border-gray-100">
+      <section className="bg-white pt-32 pb-16 border-b border-border/50">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl">
-            <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-[#051C2C] tracking-tight mb-3">
+            <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-charcoal tracking-tight mb-3">
               Follow Us
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-xl text-muted-foreground leading-relaxed">
               Stay connected with NexDyne Technologies. Follow us on social media for the latest insights, industry news, thought leadership, and company updates.
             </p>
           </div>
@@ -84,11 +84,11 @@ export default function FollowUs() {
                   rel="noopener noreferrer"
                   className="block group"
                 >
-                  <div className="border border-gray-200 rounded-lg p-4 sm:p-6 md:p-8 hover:border-[#0077B5] hover:shadow-lg transition-all duration-300">
+                  <div className="border border-border rounded-lg p-4 sm:p-6 md:p-8 hover:border-primary hover:shadow-lg transition-all duration-300">
                     <div className="flex flex-col md:flex-row md:items-start gap-4 sm:p-5 md:p-6">
                       {/* Icon */}
                       <div className="flex-shrink-0">
-                        <div className="w-16 h-16 bg-[#051C2C] rounded-lg flex items-center justify-center group-hover:bg-[#0077B5] transition-colors">
+                        <div className="w-16 h-16 bg-base rounded-lg flex items-center justify-center group-hover:bg-primary transition-colors">
                           <channel.icon className="w-8 h-8 text-white" />
                         </div>
                       </div>
@@ -96,21 +96,21 @@ export default function FollowUs() {
                       {/* Content */}
                       <div className="flex-grow">
                         <div className="flex items-center gap-3 mb-2">
-                          <h2 className="text-2xl font-serif font-bold text-[#051C2C] group-hover:text-[#0077B5] transition-colors">
+                          <h2 className="text-2xl font-serif font-bold text-charcoal group-hover:text-primary transition-colors">
                             {channel.name}
                           </h2>
-                          <span className="text-sm text-gray-500">
+                          <span className="text-sm text-muted-foreground">
                             {channel.followers}
                           </span>
                         </div>
-                        <p className="text-gray-600 leading-relaxed mb-4">
+                        <p className="text-muted-foreground leading-relaxed mb-4">
                           {channel.description}
                         </p>
                         <div className="flex items-center gap-2">
-                          <span className="text-xs font-semibold uppercase tracking-wide text-gray-400">
+                          <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground/70">
                             Content:
                           </span>
-                          <span className="text-sm text-gray-600">
+                          <span className="text-sm text-muted-foreground">
                             {channel.content}
                           </span>
                         </div>
@@ -118,7 +118,7 @@ export default function FollowUs() {
 
                       {/* Arrow */}
                       <div className="flex-shrink-0 hidden md:block">
-                        <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-gray-300 group-hover:text-[#0077B5] group-hover:translate-x-1 transition-all" />
+                        <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-muted-foreground/50 group-hover:text-primary group-hover:translate-x-1 transition-all" />
                       </div>
                     </div>
                   </div>
@@ -130,49 +130,49 @@ export default function FollowUs() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-gray-50">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="w-16 h-16 bg-[#051C2C] rounded-lg flex items-center justify-center mx-auto mb-6">
+            <div className="w-16 h-16 bg-base rounded-lg flex items-center justify-center mx-auto mb-6">
               <Mail className="w-8 h-8 text-white" />
             </div>
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#051C2C] mb-4">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-4">
               Subscribe to Our Newsletter
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed mb-5 sm:mb-6 md:mb-8">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-5 sm:mb-6 md:mb-8">
               Get the latest insights, research, and thought leadership delivered directly to your inbox. Join thousands of business leaders who stay ahead with NexDyne.
             </p>
             
-            <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-gray-200">
+            <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-border">
               <div className="space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
                   <input
                     type="text"
                     placeholder="First Name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0077B5] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0077B5] focus:border-transparent"
                   />
                   <input
                     type="text"
                     placeholder="Last Name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0077B5] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0077B5] focus:border-transparent"
                   />
                 </div>
                 <input
                   type="email"
                   placeholder="Email Address"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0077B5] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0077B5] focus:border-transparent"
                 />
                 <input
                   type="text"
                   placeholder="Company"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0077B5] focus:border-transparent"
+                  className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0077B5] focus:border-transparent"
                 />
-                <button className="w-full bg-[#051C2C] text-white font-semibold py-3 px-6 rounded-lg hover:bg-[#0077B5] transition-colors">
+                <button className="w-full bg-base text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary transition-colors">
                   Subscribe
                 </button>
               </div>
-              <p className="text-xs text-gray-500 mt-4">
-                By subscribing, you agree to our <Link href="/privacy-policy" className="text-[#0077B5] hover:underline">Privacy Policy</Link>. You can unsubscribe at any time.
+              <p className="text-xs text-muted-foreground mt-4">
+                By subscribing, you agree to our <Link href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</Link>. You can unsubscribe at any time.
               </p>
             </div>
           </div>
@@ -185,32 +185,32 @@ export default function FollowUs() {
           <div className="max-w-3xl mx-auto">
             <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8">
               {/* Media Inquiries */}
-              <div className="bg-gray-50 p-4 sm:p-6 md:p-8 rounded-lg">
-                <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4">
+              <div className="bg-subtle p-4 sm:p-6 md:p-8 rounded-lg">
+                <h3 className="text-xl font-serif font-bold text-charcoal mb-4">
                   Media Inquiries
                 </h3>
-                <p className="text-gray-600 leading-relaxed mb-4">
+                <p className="text-muted-foreground leading-relaxed mb-4">
                   For press inquiries, interview requests, or media-related questions, please contact our communications team.
                 </p>
                 <a 
                   href="mailto:media@nexdyne.com" 
-                  className="text-[#0077B5] hover:underline font-medium"
+                  className="text-primary hover:underline font-medium"
                 >
                   media@nexdyne.com
                 </a>
               </div>
 
               {/* Speaking Engagements */}
-              <div className="bg-gray-50 p-4 sm:p-6 md:p-8 rounded-lg">
-                <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4">
+              <div className="bg-subtle p-4 sm:p-6 md:p-8 rounded-lg">
+                <h3 className="text-xl font-serif font-bold text-charcoal mb-4">
                   Speaking Engagements
                 </h3>
-                <p className="text-gray-600 leading-relaxed mb-4">
+                <p className="text-muted-foreground leading-relaxed mb-4">
                   Interested in having a NexDyne expert speak at your event? Reach out to discuss availability and topics.
                 </p>
                 <a 
                   href="mailto:events@nexdyne.com" 
-                  className="text-[#0077B5] hover:underline font-medium"
+                  className="text-primary hover:underline font-medium"
                 >
                   events@nexdyne.com
                 </a>
@@ -221,7 +221,7 @@ export default function FollowUs() {
       </section>
 
       {/* Content Guidelines */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-[#051C2C] text-white">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold mb-6">
@@ -232,7 +232,7 @@ export default function FollowUs() {
             </p>
             <Link 
               href="/terms"
-              className="inline-flex items-center gap-2 text-[#0077B5] hover:text-white transition-colors"
+              className="inline-flex items-center gap-2 text-primary hover:text-white transition-colors"
             >
               View our Terms of Use
               <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />

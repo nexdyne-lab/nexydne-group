@@ -25,7 +25,7 @@ export default function EcommerceDataWarehouse() {
       </div>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-[#2D5BFF] via-[#4169FF] to-[#5B7FFF] text-white">
+      <section className="py-20 bg-gradient-to-br from-primary via-primary to-secondary text-white">
         <div className="container max-w-4xl">
           <h1 className="text-4xl lg:text-5xl font-bold mb-3">
             E-Commerce Retailer Migrates to Snowflake
@@ -66,23 +66,23 @@ export default function EcommerceDataWarehouse() {
             <h3 className="text-2xl font-bold mb-4 mt-8">Key Technical Implementations</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <span className="text-muted-foreground">Snowflake data warehouse with 15TB of historical data migrated using AWS DataSync and Snowpipe</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <span className="text-muted-foreground">dbt project with 180 models, 300+ data quality tests, and automated documentation generation</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <span className="text-muted-foreground">Fivetran connectors for 12 data sources with incremental sync and automatic schema drift detection</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <span className="text-muted-foreground">CI/CD pipeline using GitHub Actions for automated dbt testing and deployment to production</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <span className="text-muted-foreground">Monte Carlo data observability platform monitoring 50+ critical data pipelines with automated alerting</span>
               </li>
             </ul>
@@ -96,15 +96,15 @@ export default function EcommerceDataWarehouse() {
           <h2 className="text-3xl font-bold mb-6">The Results</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg">
-              <div className="text-4xl font-bold text-[#8B2635] mb-2">85%</div>
+              <div className="text-4xl font-bold text-destructive mb-2">85%</div>
               <div className="text-sm font-semibold text-muted-foreground">Query time reduction</div>
             </div>
             <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg">
-              <div className="text-4xl font-bold text-[#8B2635] mb-2">40%</div>
+              <div className="text-4xl font-bold text-destructive mb-2">40%</div>
               <div className="text-sm font-semibold text-muted-foreground">Infrastructure cost savings</div>
             </div>
             <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg">
-              <div className="text-4xl font-bold text-[#8B2635] mb-2">30 min</div>
+              <div className="text-4xl font-bold text-destructive mb-2">30 min</div>
               <div className="text-sm font-semibold text-muted-foreground">ETL runtime (from 4-6 hours)</div>
             </div>
           </div>
@@ -120,14 +120,14 @@ export default function EcommerceDataWarehouse() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-[#2D5BFF] via-[#4169FF] to-[#5B7FFF] text-white">
+      <section className="py-16 bg-gradient-to-br from-primary via-primary to-secondary text-white">
         <div className="container max-w-4xl text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to modernize your data warehouse?</h2>
           <p className="text-xl mb-8 opacity-90">
             Let's discuss how NEXDYNE can accelerate your cloud migration.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button size="lg" className="bg-white text-[#8B2635] hover:bg-white/90 rounded-full px-8">
+            <Button size="lg" className="bg-white text-destructive hover:bg-white/90 rounded-full px-8">
               Get in touch
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 rounded-full px-8">

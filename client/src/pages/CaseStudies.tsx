@@ -164,13 +164,13 @@ export function CaseStudies() {
       <Navigation />
       
       {/* Hero Section - Clean white background */}
-      <section className="bg-white pt-32 pb-16 border-b border-gray-200">
+      <section className="bg-white pt-32 pb-16 border-b border-border">
         <div className="container">
           <div className="max-w-4xl">
-            <h1 className="text-5xl md:text-6xl font-serif font-normal text-gray-900 mb-3">
+            <h1 className="text-5xl md:text-6xl font-serif font-normal text-charcoal mb-3">
               Impact Stories
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
+            <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
               Explore how we create lasting value for our clients, communities, and colleagues through strategic consulting and intelligent automation.
             </p>
           </div>
@@ -178,23 +178,23 @@ export function CaseStudies() {
       </section>
 
       {/* Awards/Recognition Bar */}
-      <section className="bg-gray-50 py-8 border-b border-gray-200">
+      <section className="bg-subtle py-8 border-b border-border">
         <div className="container">
           <div className="flex flex-wrap items-center justify-between gap-6">
             <div className="flex items-center gap-8">
               <div className="text-center">
-                <p className="text-sm text-gray-500 uppercase tracking-wide">Glassdoor</p>
-                <p className="font-semibold text-gray-900">Best Places to Work</p>
+                <p className="text-sm text-muted-foreground uppercase tracking-wide">Glassdoor</p>
+                <p className="font-semibold text-charcoal">Best Places to Work</p>
               </div>
               <div className="h-8 w-px bg-gray-300" />
               <div className="text-center">
-                <p className="text-sm text-gray-500 uppercase tracking-wide">Fortune</p>
-                <p className="font-semibold text-gray-900">100 Best Companies</p>
+                <p className="text-sm text-muted-foreground uppercase tracking-wide">Fortune</p>
+                <p className="font-semibold text-charcoal">100 Best Companies</p>
               </div>
               <div className="h-8 w-px bg-gray-300 hidden md:block" />
               <div className="text-center hidden md:block">
-                <p className="text-sm text-gray-500 uppercase tracking-wide">Vault</p>
-                <p className="font-semibold text-gray-900">#1 in Consulting</p>
+                <p className="text-sm text-muted-foreground uppercase tracking-wide">Vault</p>
+                <p className="font-semibold text-charcoal">#1 in Consulting</p>
               </div>
             </div>
           </div>
@@ -202,7 +202,7 @@ export function CaseStudies() {
       </section>
 
       {/* Category Filters */}
-      <section className="bg-white py-6 border-b border-gray-200 sticky top-0 z-40">
+      <section className="bg-white py-6 border-b border-border sticky top-0 z-40">
         <div className="container">
           <div className="flex flex-wrap gap-2">
             {categories.map((category) => (
@@ -212,7 +212,7 @@ export function CaseStudies() {
                 className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${
                   selectedCategory === category.value
                     ? 'bg-red-600 text-white'
-                    : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'
+                    : 'bg-white text-charcoal/80 hover:bg-subtle border border-border'
                 }`}
               >
                 {category.label}
@@ -242,27 +242,27 @@ export function CaseStudies() {
                 </div>
                 
                 {/* Category Label */}
-                <p className="text-red-600 text-sm font-medium mb-2">
+                <p className="text-destructive text-sm font-medium mb-2">
                   {caseStudy.categoryLabel}
                 </p>
                 
                 {/* Title */}
-                <h3 className="text-lg font-bold text-gray-900 mb-2 leading-tight group-hover:underline decoration-2 underline-offset-4">
+                <h3 className="text-lg font-bold text-charcoal mb-2 leading-tight group-hover:underline decoration-2 underline-offset-4">
                   {caseStudy.title}
                 </h3>
                 
                 {/* Subtitle */}
-                <p className="text-gray-600 text-sm mb-3">
+                <p className="text-muted-foreground text-sm mb-3">
                   {caseStudy.subtitle}
                 </p>
                 
                 {/* Tags */}
                 <div className="flex items-center justify-between">
-                  <p className="text-xs text-gray-500">
+                  <p className="text-xs text-muted-foreground">
                     {caseStudy.tags.join(' | ')}
                   </p>
                   <button 
-                    className="text-gray-400 hover:text-gray-600 transition-colors"
+                    className="text-muted-foreground/70 hover:text-muted-foreground transition-colors"
                     onClick={(e) => {
                       e.preventDefault();
                       // Bookmark functionality placeholder
@@ -277,7 +277,7 @@ export function CaseStudies() {
 
           {filteredCaseStudies.length === 0 && (
             <div className="text-center py-12 sm:py-16 lg:py-20">
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-muted-foreground">
                 No case studies found for this category.
               </p>
             </div>
@@ -299,7 +299,7 @@ export function CaseStudies() {
             <h2 className="text-3xl md:text-4xl font-serif font-normal mb-6">
               Ready to create your own success story?
             </h2>
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-xl text-muted-foreground/50 mb-8">
               Join the growing number of organizations transforming their operations with NexDyne.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

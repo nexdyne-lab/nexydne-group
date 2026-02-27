@@ -13,7 +13,7 @@ const fadeInUp = {
 
 export default function MidMarketAIAccess() {
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-sans">
+    <div className="min-h-screen bg-white text-charcoal font-sans">
       <SEO 
         title="Mid-Market AI Access | NexDyne Technologies" 
         description="How growing businesses can compete with enterprise technology through strategic AI adoption and intelligent automation."
@@ -23,7 +23,7 @@ export default function MidMarketAIAccess() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
         <div className="container px-4 md:px-6">
-          <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center text-slate-400 hover:text-white mb-8 transition-colors">
+          <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center text-muted-foreground/70 hover:text-white mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to AI & Technology Consulting
           </Link>
@@ -33,11 +33,11 @@ export default function MidMarketAIAccess() {
               <span className="px-3 py-1 bg-blue-600 text-white text-xs font-semibold uppercase tracking-wider rounded">
                 Report
               </span>
-              <div className="flex items-center text-slate-400 text-sm">
+              <div className="flex items-center text-muted-foreground/70 text-sm">
                 <Clock className="w-4 h-4 mr-1" />
                 12 min read
               </div>
-              <div className="flex items-center text-slate-400 text-sm">
+              <div className="flex items-center text-muted-foreground/70 text-sm">
                 <Calendar className="w-4 h-4 mr-1" />
                 January 2026
               </div>
@@ -56,7 +56,7 @@ export default function MidMarketAIAccess() {
               initial="hidden"
               animate="visible"
               variants={fadeInUp}
-              className="text-xl text-slate-300 leading-relaxed"
+              className="text-xl text-muted-foreground/50 leading-relaxed"
             >
               The democratization of AI is creating unprecedented opportunities for mid-market organizations. This report examines how companies with 50-200 employees can leverage intelligent automation to compete effectively against larger enterprises.
             </motion.p>
@@ -71,16 +71,16 @@ export default function MidMarketAIAccess() {
             <h2 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Key Findings</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="text-5xl font-bold text-slate-900 mb-2">73%</div>
-                <p className="text-slate-600">of mid-market companies report AI as a strategic priority for 2026</p>
+                <div className="text-5xl font-bold text-charcoal mb-2">73%</div>
+                <p className="text-muted-foreground">of mid-market companies report AI as a strategic priority for 2026</p>
               </div>
               <div className="text-center">
-                <div className="text-5xl font-bold text-slate-900 mb-2">4.2x</div>
-                <p className="text-slate-600">average ROI achieved by mid-market AI adopters within 18 months</p>
+                <div className="text-5xl font-bold text-charcoal mb-2">4.2x</div>
+                <p className="text-muted-foreground">average ROI achieved by mid-market AI adopters within 18 months</p>
               </div>
               <div className="text-center">
-                <div className="text-5xl font-bold text-slate-900 mb-2">62%</div>
-                <p className="text-slate-600">cost reduction in AI implementation vs. five years ago</p>
+                <div className="text-5xl font-bold text-charcoal mb-2">62%</div>
+                <p className="text-muted-foreground">cost reduction in AI implementation vs. five years ago</p>
               </div>
             </div>
           </div>
@@ -193,7 +193,7 @@ export default function MidMarketAIAccess() {
       <section className="py-20 bg-slate-50">
         <div className="container px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 mb-8">Related Insights</h2>
+            <h2 className="text-2xl font-bold text-charcoal mb-8">Related Insights</h2>
             
             <div className="grid md:grid-cols-3 gap-8">
               <Link href="/insights/efficiency-improvement-reality" className="group">
@@ -201,7 +201,7 @@ export default function MidMarketAIAccess() {
                   <div className="aspect-[16/10] bg-gradient-to-br from-slate-700 to-slate-900"></div>
                   <div className="p-6">
                     <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">Article</span>
-                    <h3 className="text-lg font-semibold text-slate-900 mt-2 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-blue-600 transition-colors">
                       The 85% efficiency improvement: What our clients actually experience
                     </h3>
                   </div>
@@ -213,7 +213,7 @@ export default function MidMarketAIAccess() {
                   <div className="aspect-[16/10] bg-gradient-to-br from-blue-700 to-blue-900"></div>
                   <div className="p-6">
                     <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">Whitepaper</span>
-                    <h3 className="text-lg font-semibold text-slate-900 mt-2 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-blue-600 transition-colors">
                       Process mining fundamentals: From operational mapping to AI automation
                     </h3>
                   </div>
@@ -225,7 +225,7 @@ export default function MidMarketAIAccess() {
                   <div className="aspect-[16/10] bg-gradient-to-br from-teal-700 to-teal-900"></div>
                   <div className="p-6">
                     <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">Article</span>
-                    <h3 className="text-lg font-semibold text-slate-900 mt-2 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-blue-600 transition-colors">
                       Why change management determines AI project success
                     </h3>
                   </div>
@@ -243,11 +243,11 @@ export default function MidMarketAIAccess() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Ready to explore AI for your business?
             </h2>
-            <p className="text-xl text-slate-300 mb-8">
+            <p className="text-xl text-muted-foreground/50 mb-8">
               Let's discuss how intelligent automation can transform your operations and create competitive advantage.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-white text-slate-900 font-semibold rounded-full hover:bg-slate-100 transition-colors">
+              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-white text-charcoal font-semibold rounded-full hover:bg-slate-100 transition-colors">
                 Schedule a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>

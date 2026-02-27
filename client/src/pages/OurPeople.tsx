@@ -113,7 +113,7 @@ const teamMembers: TeamMember[] = [
 
 export default function OurPeople() {
   return (
-    <div className="min-h-screen bg-white font-sans text-[#333]">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
       <SEO 
         title="Our People | NexDyne Technologies" 
         description="Meet the leaders and experts who drive transformation for our clients. Our diverse team brings deep expertise across digital transformation, AI, and business strategy."
@@ -122,14 +122,14 @@ export default function OurPeople() {
       <Navigation />
       
       {/* Hero Section - Clean McKinsey Style (No Filters) */}
-      <section className="relative min-h-[50vh] flex items-center pt-16 overflow-hidden bg-[#051c2c]">
+      <section className="relative min-h-[50vh] flex items-center pt-16 overflow-hidden bg-base">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80" 
             alt="Team collaboration" 
             className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#051c2c] via-[#051c2c]/90 to-[#051c2c]/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/90 to-base/70" />
         </div>
         
         <div className="container px-4 sm:px-6 md:px-12 relative z-10 py-16 md:py-24">
@@ -139,11 +139,11 @@ export default function OurPeople() {
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
-            <p className="text-[#0052cc] text-sm font-bold uppercase tracking-widest mb-4">
+            <p className="text-primary-hover text-sm font-bold uppercase tracking-widest mb-4">
               Our Team
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-white leading-[1.1] mb-3">
-              Our <span className="text-[#0052cc]">People</span>
+              Our <span className="text-primary-hover">People</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-white/80 leading-relaxed max-w-2xl">
               Meet the leaders and experts who drive transformation for our clients
@@ -153,7 +153,7 @@ export default function OurPeople() {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-20 md:py-28 bg-white border-b border-gray-100">
+      <section className="py-20 md:py-28 bg-white border-b border-border/50">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -163,7 +163,7 @@ export default function OurPeople() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 leading-tight mb-6">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal leading-tight mb-6">
                   Built on trust.<br />
                   Driven by results.
                 </h2>
@@ -175,16 +175,16 @@ export default function OurPeople() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="space-y-6"
               >
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-lg text-muted-foreground leading-relaxed">
                   Our philosophy is simple: deliver cutting-edge technologies with customer-centric solutions, and back every 
                   partnership with hands-on expertise. We don't oversell or overcomplicate—we build systems that work from day one.
                 </p>
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-lg text-muted-foreground leading-relaxed">
                   Earning your trust through proven results and transparent communication is our top priority. Every engagement 
                   is an opportunity to demonstrate the transformative power of intelligent automation.
                 </p>
                 <Link href="/case-studies">
-                  <a className="inline-flex items-center gap-2 text-[#0052cc] font-semibold hover:gap-3 transition-all">
+                  <a className="inline-flex items-center gap-2 text-primary-hover font-semibold hover:gap-3 transition-all">
                     See Our Work <ArrowRight className="w-4 h-4" />
                   </a>
                 </Link>
@@ -195,7 +195,7 @@ export default function OurPeople() {
       </section>
 
       {/* Team Grid Section */}
-      <section className="py-20 md:py-28 bg-[#f5f5f5]">
+      <section className="py-20 md:py-28 bg-subtle">
         <div className="container px-4 md:px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -204,10 +204,10 @@ export default function OurPeople() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal mb-6">
               Meet our team
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Our team combines deep technical expertise with practical business experience to deliver 
               solutions that create measurable value.
             </p>
@@ -239,16 +239,16 @@ export default function OurPeople() {
                       
                       {/* Content */}
                       <div className="p-6">
-                        <span className="inline-block text-xs font-bold uppercase tracking-wider text-[#0052cc] mb-2">
+                        <span className="inline-block text-xs font-bold uppercase tracking-wider text-primary-hover mb-2">
                           {member.role}
                         </span>
-                        <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-[#0052cc] transition-colors">
+                        <h3 className="text-xl font-bold text-charcoal mb-1 group-hover:text-primary-hover transition-colors">
                           {member.name}
                         </h3>
-                        <p className="text-sm text-gray-500 mb-2">
+                        <p className="text-sm text-muted-foreground mb-2">
                           {member.location}
                         </p>
-                        <p className="text-sm font-medium text-gray-600">
+                        <p className="text-sm font-medium text-muted-foreground">
                           {member.practiceArea}
                         </p>
                       </div>
@@ -262,7 +262,7 @@ export default function OurPeople() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-28 bg-[#051c2c] text-white">
+      <section className="py-20 md:py-28 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
@@ -271,7 +271,7 @@ export default function OurPeople() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-widest text-[#0052cc] mb-4 block">
+              <span className="text-xs font-bold uppercase tracking-widest text-primary-hover mb-4 block">
                 Join Us
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-6">
@@ -282,7 +282,7 @@ export default function OurPeople() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/careers">
-                  <a className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#051c2c] font-semibold rounded hover:bg-gray-100 transition-colors">
+                  <a className="inline-flex items-center justify-center px-8 py-4 bg-white text-base font-semibold rounded hover:bg-subtle transition-colors">
                     View Open Positions <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
                 </Link>

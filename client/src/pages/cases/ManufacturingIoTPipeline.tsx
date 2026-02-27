@@ -25,7 +25,7 @@ export default function ManufacturingIoTPipeline() {
       </div>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-[#2D5BFF] via-[#4169FF] to-[#5B7FFF] text-white">
+      <section className="py-20 bg-gradient-to-br from-primary via-primary to-secondary text-white">
         <div className="container max-w-4xl">
           <h1 className="text-4xl lg:text-5xl font-bold mb-3">
             Manufacturer Builds IoT Sensor Data Platform
@@ -66,23 +66,23 @@ export default function ManufacturingIoTPipeline() {
             <h3 className="text-2xl font-bold mb-4 mt-8">Key Technical Implementations</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <span className="text-muted-foreground">AWS IoT Core managing 1,200+ connected devices with secure MQTT communication and certificate-based authentication</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <span className="text-muted-foreground">Kinesis Data Streams ingesting 2M sensor events/hour with automatic scaling and data retention policies</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <span className="text-muted-foreground">TimescaleDB storing 18 months of historical sensor data with automated compression and retention management</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <span className="text-muted-foreground">Apache Spark jobs for anomaly detection using isolation forest algorithms with 88% prediction accuracy</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <CheckCircle2 className="w-6 h-6 text-secondary flex-shrink-0 mt-1" />
                 <span className="text-muted-foreground">Grafana dashboards with real-time equipment health monitoring and PagerDuty integration for critical alerts</span>
               </li>
             </ul>
@@ -96,15 +96,15 @@ export default function ManufacturingIoTPipeline() {
           <h2 className="text-3xl font-bold mb-6">The Results</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg">
-              <div className="text-4xl font-bold text-[#8B2635] mb-2">30%</div>
+              <div className="text-4xl font-bold text-destructive mb-2">30%</div>
               <div className="text-sm font-semibold text-muted-foreground">Unplanned downtime reduction</div>
             </div>
             <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg">
-              <div className="text-4xl font-bold text-[#8B2635] mb-2">$1.8M</div>
+              <div className="text-4xl font-bold text-destructive mb-2">$1.8M</div>
               <div className="text-sm font-semibold text-muted-foreground">Annual maintenance cost savings</div>
             </div>
             <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg">
-              <div className="text-4xl font-bold text-[#8B2635] mb-2">88%</div>
+              <div className="text-4xl font-bold text-destructive mb-2">88%</div>
               <div className="text-sm font-semibold text-muted-foreground">Failure prediction accuracy</div>
             </div>
           </div>
@@ -120,14 +120,14 @@ export default function ManufacturingIoTPipeline() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-[#2D5BFF] via-[#4169FF] to-[#5B7FFF] text-white">
+      <section className="py-16 bg-gradient-to-br from-primary via-primary to-secondary text-white">
         <div className="container max-w-4xl text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to build your IoT data platform?</h2>
           <p className="text-xl mb-8 opacity-90">
             Let's discuss how NEXDYNE can help you unlock the value of sensor data.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button size="lg" className="bg-white text-[#8B2635] hover:bg-white/90 rounded-full px-8">
+            <Button size="lg" className="bg-white text-destructive hover:bg-white/90 rounded-full px-8">
               Get in touch
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 rounded-full px-8">

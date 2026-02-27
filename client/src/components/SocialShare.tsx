@@ -40,7 +40,7 @@ export default function SocialShare({ title, url, className = "" }: SocialShareP
   };
 
   return (
-    <div className={`bg-[#0f1642] border border-white/10 rounded-xl sm:rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 ${className}`}>
+    <div className={`bg-base border border-white/10 rounded-xl sm:rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 ${className}`}>
       <h3 className="text-lg font-bold text-white mb-4">Share this insight</h3>
       <div className="grid grid-cols-2 gap-2">
         <Button 
@@ -62,19 +62,19 @@ export default function SocialShare({ title, url, className = "" }: SocialShareP
           className="border-white/10 hover:bg-white/5 hover:text-white justify-start"
           onClick={() => handleShare('facebook')}
         >
-          <Facebook className="w-3 h-3 sm:w-4 sm:h-4 mr-2 text-[#1877f2]" /> Facebook
+          <Facebook className="w-3 h-3 sm:w-4 sm:h-4 mr-2 text-[#4267B2]" /> Facebook
         </Button>
         <Button 
           variant="outline" 
           className="border-white/10 hover:bg-white/5 hover:text-white justify-start"
           onClick={() => handleShare('email')}
         >
-          <Mail className="w-3 h-3 sm:w-4 sm:h-4 mr-2 text-slate-400" /> Email
+          <Mail className="w-3 h-3 sm:w-4 sm:h-4 mr-2 text-muted-foreground/70" /> Email
         </Button>
       </div>
       <Button 
         variant="ghost" 
-        className="w-full mt-2 text-slate-400 hover:text-white hover:bg-white/5"
+        className="w-full mt-2 text-muted-foreground/70 hover:text-white hover:bg-white/5"
         onClick={() => handleShare('copy')}
       >
         <LinkIcon className="w-3 h-3 sm:w-4 sm:h-4 mr-2" /> Copy Link

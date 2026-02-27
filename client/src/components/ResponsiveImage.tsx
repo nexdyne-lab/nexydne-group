@@ -114,8 +114,8 @@ export function ResponsiveImage({
 
       {/* Error state */}
       {hasError && (
-        <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
-          <div className="text-center text-gray-400">
+        <div className="absolute inset-0 flex items-center justify-center bg-subtle">
+          <div className="text-center text-muted-foreground/70">
             <svg
               className="w-8 h-8 mx-auto mb-2"
               fill="none"

@@ -36,7 +36,7 @@ export function ProprietaryFramework({
             {name}{trademark && <sup className="text-2xl">™</sup>}
           </h2>
           <p className="text-xl text-cyan-400 font-medium mb-6">{tagline}</p>
-          <p className="text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-white/60 max-w-3xl mx-auto leading-relaxed">
             {description}
           </p>
         </div>
@@ -62,7 +62,7 @@ export function ProprietaryFramework({
                   </h3>
                   
                   {/* Phase Description */}
-                  <p className="text-slate-300 text-sm mb-4 text-center leading-relaxed">
+                  <p className="text-white/60 text-sm mb-4 text-center leading-relaxed">
                     {phase.description}
                   </p>
                   
@@ -71,7 +71,7 @@ export function ProprietaryFramework({
                     {phase.outcomes.map((outcome, idx) => (
                       <div key={idx} className="flex items-start gap-2">
                         <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-slate-400">{outcome}</span>
+                        <span className="text-sm text-white/80">{outcome}</span>
                       </div>
                     ))}
                   </div>
@@ -90,7 +90,7 @@ export function ProprietaryFramework({
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <p className="text-slate-300 mb-6">
+          <p className="text-white/60 mb-6">
             Our proven methodology has delivered measurable results for leading organizations worldwide.
           </p>
           <button className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-500/50 transition-all">

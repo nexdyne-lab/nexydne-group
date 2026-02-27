@@ -15,7 +15,7 @@ export default function EnterpriseTransformationHub() {
       description: "Eliminate inefficiencies with AI-powered automation that transforms manual workflows into intelligent, self-optimizing systems.",
       href: "/solutions/intelligent-process-optimization",
       stats: { value: "65%", label: "Process Efficiency Gain" },
-      color: "from-[#0077B5] to-[#00A3E0]"
+      color: "from-[#0077B5] to-secondary"
     },
     {
       icon: <Users className="w-8 h-8" />,
@@ -23,7 +23,7 @@ export default function EnterpriseTransformationHub() {
       description: "Unlock deep customer insights through unified data platforms that enable personalized experiences at scale.",
       href: "/solutions/data-driven-customer-intelligence",
       stats: { value: "3.2x", label: "Customer LTV Increase" },
-      color: "from-[#00A3E0] to-[#0077B5]"
+      color: "from-secondary to-[#0077B5]"
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
@@ -31,7 +31,7 @@ export default function EnterpriseTransformationHub() {
       description: "Drive revenue with conversion-optimized platforms, intelligent engagement systems, and data-driven experiences.",
       href: "/solutions/accelerating-business-growth",
       stats: { value: "47%", label: "Revenue Growth" },
-      color: "from-[#0077B5] to-[#005a8c]"
+      color: "from-[#0077B5] to-base"
     },
     {
       icon: <Cloud className="w-8 h-8" />,
@@ -39,7 +39,7 @@ export default function EnterpriseTransformationHub() {
       description: "Modernize your core technology stack with cloud-native infrastructure built for scale, security, and speed.",
       href: "/solutions/scalable-enterprise-transformation",
       stats: { value: "10x", label: "Faster Deployment" },
-      color: "from-[#005a8c] to-[#0077B5]"
+      color: "from-base to-[#0077B5]"
     }
   ];
 
@@ -144,7 +144,7 @@ export default function EnterpriseTransformationHub() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#051C2C] font-sans text-white selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
       <SEO 
         title="Enterprise Transformation" 
         description="Transform your organization with intelligent process optimization, customer intelligence, growth acceleration, and scalable infrastructure. NEXDYNE delivers measurable outcomes."
@@ -160,8 +160,8 @@ export default function EnterpriseTransformationHub() {
             alt="Enterprise Transformation" 
             className="w-full h-full object-cover opacity-25"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#051C2C] via-[#051C2C]/90 to-[#051C2C]/60" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#051C2C] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/90 to-base/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent" />
         </div>
         
         <div className="container px-4 md:px-12 relative z-10">
@@ -171,13 +171,13 @@ export default function EnterpriseTransformationHub() {
             transition={{ duration: 0.8 }}
             className="max-w-5xl"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Enterprise Transformation
             </span>
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl eb-garamond  tracking-tight text-white leading-[1.05] mb-4">
               Transform Your <br />
-              <span className="text-[#0077B5]">Enterprise</span>
+              <span className="text-primary">Enterprise</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mb-10">
@@ -186,7 +186,7 @@ export default function EnterpriseTransformationHub() {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact">
-                <Button className="bg-[#0077B5] hover:bg-[#005a8c] text-white px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-all">
                   Start Your Transformation
                 </Button>
               </Link>
@@ -212,7 +212,7 @@ export default function EnterpriseTransformationHub() {
       </section>
 
       {/* Transformation Pillars */}
-      <section id="pillars" className="py-24 md:py-32 bg-white text-[#051C2C]">
+      <section id="pillars" className="py-24 md:py-32 bg-white text-charcoal">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -221,13 +221,13 @@ export default function EnterpriseTransformationHub() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Our Solutions
             </span>
             <h2 className="text-4xl md:text-5xl eb-garamond font-bold mb-6">
               Four pillars of enterprise transformation
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-3xl mx-auto">
+            <p className="text-xl text-charcoal/60 max-w-3xl mx-auto">
               Each pillar addresses a critical dimension of organizational performance. Together, they create a comprehensive transformation that drives sustainable competitive advantage.
             </p>
           </motion.div>
@@ -242,26 +242,26 @@ export default function EnterpriseTransformationHub() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={pillar.href}>
-                  <div className="group h-full bg-[#F8F9FA] p-8 rounded-xl hover:shadow-xl transition-all duration-300 cursor-pointer border border-transparent hover:border-[#0077B5]/20">
+                  <div className="group h-full bg-subtle p-8 rounded-xl hover:shadow-xl transition-all duration-300 cursor-pointer border border-transparent hover:border-primary/20">
                     <div className="flex items-start justify-between mb-6">
                       <div className={`w-16 h-16 bg-gradient-to-br ${pillar.color} rounded-xl flex items-center justify-center text-white`}>
                         {pillar.icon}
                       </div>
                       <div className="text-right">
-                        <div className="text-3xl font-serif font-bold text-[#0077B5]">{pillar.stats.value}</div>
-                        <div className="text-sm text-[#051C2C]/50">{pillar.stats.label}</div>
+                        <div className="text-3xl font-serif font-bold text-primary">{pillar.stats.value}</div>
+                        <div className="text-sm text-charcoal/50">{pillar.stats.label}</div>
                       </div>
                     </div>
                     
-                    <h3 className="text-2xl font-serif font-bold mb-4 group-hover:text-[#0077B5] transition-colors">
+                    <h3 className="text-2xl font-serif font-bold mb-4 group-hover:text-primary transition-colors">
                       {pillar.title}
                     </h3>
                     
-                    <p className="text-[#051C2C]/60 leading-relaxed mb-6">
+                    <p className="text-charcoal/60 leading-relaxed mb-6">
                       {pillar.description}
                     </p>
                     
-                    <div className="flex items-center text-[#0077B5] font-semibold group-hover:translate-x-2 transition-transform">
+                    <div className="flex items-center text-primary font-semibold group-hover:translate-x-2 transition-transform">
                       Explore solution <ChevronRight className="w-5 h-5 ml-1" />
                     </div>
                   </div>
@@ -273,7 +273,7 @@ export default function EnterpriseTransformationHub() {
       </section>
 
       {/* Transformation Journey */}
-      <section className="py-24 md:py-32 bg-[#051C2C]">
+      <section className="py-24 md:py-32 bg-base">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -330,7 +330,7 @@ export default function EnterpriseTransformationHub() {
               >
                 <div className="bg-white/5 p-8 rounded-xl h-full">
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-12 h-12 bg-[#0077B5]/20 rounded-lg flex items-center justify-center text-[#0077B5]">
+                    <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center text-primary">
                       {phase.icon}
                     </div>
                     <span className="text-4xl font-serif font-bold text-white/20">{phase.step}</span>
@@ -348,7 +348,7 @@ export default function EnterpriseTransformationHub() {
       </section>
 
       {/* Case Studies Grid */}
-      <section className="py-24 md:py-32 bg-white text-[#051C2C]">
+      <section className="py-24 md:py-32 bg-white text-charcoal">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -358,18 +358,18 @@ export default function EnterpriseTransformationHub() {
             className="flex flex-col md:flex-row md:items-end md:justify-between mb-16"
           >
             <div>
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Case Studies
               </span>
               <h2 className="text-4xl md:text-5xl eb-garamond font-bold mb-4">
                 Transformation in action
               </h2>
-              <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+              <p className="text-xl text-charcoal/60 max-w-2xl">
                 Real results from organizations that partnered with NEXDYNE to transform their operations, technology, and customer experience.
               </p>
             </div>
             <Link href="/cases">
-              <Button className="bg-[#051C2C] text-white hover:bg-[#051C2C]/90 px-8 py-4 text-base font-semibold transition-all mt-6 md:mt-0">
+              <Button className="bg-base text-white hover:bg-base/90 px-8 py-4 text-base font-semibold transition-all mt-6 md:mt-0">
                 View All Cases
               </Button>
             </Link>
@@ -385,7 +385,7 @@ export default function EnterpriseTransformationHub() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={study.href}>
-                  <div className="group bg-[#F8F9FA] rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer h-full">
+                  <div className="group bg-subtle rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer h-full">
                     <div className="aspect-video overflow-hidden">
                       <img 
                         src={study.image}
@@ -394,20 +394,20 @@ export default function EnterpriseTransformationHub() {
                       />
                     </div>
                     <div className="p-6">
-                      <span className="text-xs font-bold uppercase tracking-wider text-[#0077B5] mb-2 block">
+                      <span className="text-xs font-bold uppercase tracking-wider text-primary mb-2 block">
                         {study.category}
                       </span>
-                      <h3 className="text-lg font-serif font-bold mb-3 group-hover:text-[#0077B5] transition-colors line-clamp-2">
+                      <h3 className="text-lg font-serif font-bold mb-3 group-hover:text-primary transition-colors line-clamp-2">
                         {study.title}
                       </h3>
-                      <p className="text-[#051C2C]/60 text-sm mb-4 line-clamp-2">
+                      <p className="text-charcoal/60 text-sm mb-4 line-clamp-2">
                         {study.description}
                       </p>
                       <div className="flex gap-6">
                         {study.stats.map((stat, statIndex) => (
                           <div key={statIndex}>
-                            <div className="text-xl font-serif font-bold text-[#0077B5]">{stat.value}</div>
-                            <div className="text-[#051C2C]/40 text-xs">{stat.label}</div>
+                            <div className="text-xl font-serif font-bold text-primary">{stat.value}</div>
+                            <div className="text-charcoal/40 text-xs">{stat.label}</div>
                           </div>
                         ))}
                       </div>
@@ -421,7 +421,7 @@ export default function EnterpriseTransformationHub() {
       </section>
 
       {/* Impact Stats */}
-      <section className="py-24 md:py-32 bg-[#0077B5]">
+      <section className="py-24 md:py-32 bg-primary">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -461,7 +461,7 @@ export default function EnterpriseTransformationHub() {
       </section>
 
       {/* Insights Section */}
-      <section className="py-24 md:py-32 bg-[#F8F9FA] text-[#051C2C]">
+      <section className="py-24 md:py-32 bg-subtle text-charcoal">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -471,18 +471,18 @@ export default function EnterpriseTransformationHub() {
             className="flex flex-col md:flex-row md:items-end md:justify-between mb-16"
           >
             <div>
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Insights
               </span>
               <h2 className="text-4xl md:text-5xl eb-garamond font-bold mb-4">
                 Transformation intelligence
               </h2>
-              <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+              <p className="text-xl text-charcoal/60 max-w-2xl">
                 Research, frameworks, and practical guides from our transformation practice.
               </p>
             </div>
             <Link href="/insights">
-              <Button variant="outline" className="border-[#051C2C]/20 text-[#051C2C] hover:bg-[#051C2C]/5 px-8 py-4 text-base font-semibold transition-all mt-6 md:mt-0">
+              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/5 px-8 py-4 text-base font-semibold transition-all mt-6 md:mt-0">
                 View All Insights
               </Button>
             </Link>
@@ -499,16 +499,16 @@ export default function EnterpriseTransformationHub() {
               >
                 <Link href={insight.href}>
                   <div className="group bg-white p-6 rounded-xl hover:shadow-lg transition-all duration-300 cursor-pointer h-full">
-                    <span className="text-xs font-bold uppercase tracking-wider text-[#0077B5] mb-3 block">
+                    <span className="text-xs font-bold uppercase tracking-wider text-primary mb-3 block">
                       {insight.category}
                     </span>
-                    <h3 className="text-lg font-serif font-bold mb-3 group-hover:text-[#0077B5] transition-colors">
+                    <h3 className="text-lg font-serif font-bold mb-3 group-hover:text-primary transition-colors">
                       {insight.title}
                     </h3>
-                    <p className="text-[#051C2C]/60 text-sm mb-4 line-clamp-2">
+                    <p className="text-charcoal/60 text-sm mb-4 line-clamp-2">
                       {insight.description}
                     </p>
-                    <div className="text-[#051C2C]/40 text-sm">{insight.readTime}</div>
+                    <div className="text-charcoal/40 text-sm">{insight.readTime}</div>
                   </div>
                 </Link>
               </motion.div>
@@ -518,7 +518,7 @@ export default function EnterpriseTransformationHub() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 md:py-32 bg-[#051C2C]">
+      <section className="py-24 md:py-32 bg-base">
         <div className="container px-4 md:px-12">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
@@ -535,7 +535,7 @@ export default function EnterpriseTransformationHub() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact">
-                  <Button className="bg-[#0077B5] hover:bg-[#005a8c] text-white px-10 py-6 text-lg font-semibold transition-all">
+                  <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-lg font-semibold transition-all">
                     Schedule a Consultation
                   </Button>
                 </Link>

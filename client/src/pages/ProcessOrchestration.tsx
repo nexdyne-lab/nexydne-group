@@ -10,14 +10,14 @@ export default function ProcessOrchestration() {
       <Navigation />
       
       {/* Breadcrumb */}
-      <div className="container py-4 text-sm text-gray-600">
-        <Link href="/" className="hover:text-gray-900">Home</Link>
+      <div className="container py-4 text-sm text-muted-foreground">
+        <Link href="/" className="hover:text-charcoal">Home</Link>
         <span className="mx-2">/</span>
-        <Link href="/solutions/intelligent-process-optimization" className="hover:text-gray-900">Intelligent Process Optimization</Link>
+        <Link href="/solutions/intelligent-process-optimization" className="hover:text-charcoal">Intelligent Process Optimization</Link>
         <span className="mx-2">/</span>
-        <Link href="/solutions/intelligent-process-optimization/process-automation" className="hover:text-gray-900">Process Automation</Link>
+        <Link href="/solutions/intelligent-process-optimization/process-automation" className="hover:text-charcoal">Process Automation</Link>
         <span className="mx-2">/</span>
-        <span className="text-gray-900">Process Orchestration</span>
+        <span className="text-charcoal">Process Orchestration</span>
       </div>
 
       {/* Hero Section */}
@@ -44,41 +44,41 @@ export default function ProcessOrchestration() {
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 max-w-7xl mx-auto">
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <Eye className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Complete visibility</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Complete visibility</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 Visualize workflows and data flows across the organization. Identify bottlenecks, measure performance, and optimize continuously.
               </p>
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Intelligent automation</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Intelligent automation</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 Automate manual processes and eliminate errors. Decision trees handle critical choices, ensuring consistency and compliance.
               </p>
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Cross-functional coordination</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Cross-functional coordination</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 Create an overarching layer that enables departments to collaborate effectively and execute unified business processes.
               </p>
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <TrendingUp className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Scalable growth</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Scalable growth</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 Handle more customers with existing staff. Automation enables revenue growth without proportional cost increases.
               </p>
             </div>
@@ -87,16 +87,16 @@ export default function ProcessOrchestration() {
       </section>
 
       {/* What is Process Orchestration Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container max-w-5xl mx-auto">
           <div className="mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Understanding Process Orchestration</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Understanding Process Orchestration</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               The orchestration imperative
             </h2>
           </div>
           
-          <div className="prose prose-xl max-w-none text-gray-700 leading-relaxed space-y-6">
+          <div className="prose prose-xl max-w-none text-charcoal/80 leading-relaxed space-y-6">
             <p>
               Most organizations operate with fragmented processes—workflows that span multiple departments, touch numerous systems, and require constant human intervention to keep moving forward. Customer onboarding involves sales, operations, finance, and IT. Order fulfillment requires coordination between sales, inventory, logistics, and accounting. Product development demands alignment across engineering, design, marketing, and manufacturing.
             </p>
@@ -109,11 +109,11 @@ export default function ProcessOrchestration() {
           </div>
 
           {/* Quote */}
-          <div className="mt-12 border-l-4 border-[#2D5BFF] pl-8 py-6 bg-white">
+          <div className="mt-12 border-l-4 border-primary pl-8 py-6 bg-white">
             <p className="text-xl italic text-gray-800 mb-4">
               "Our customer onboarding process involved seven departments and took weeks. Process orchestration reduced it to days while improving accuracy and customer satisfaction. We can now handle 3x the volume with the same team."
             </p>
-            <p className="text-lg font-semibold text-gray-900">VP of Operations, SaaS Company</p>
+            <p className="text-lg font-semibold text-charcoal">VP of Operations, SaaS Company</p>
           </div>
         </div>
       </section>
@@ -142,7 +142,7 @@ export default function ProcessOrchestration() {
               <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-slate-900">1</span>
+                    <span className="text-2xl font-bold text-charcoal">1</span>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Process Discovery</h3>
@@ -156,7 +156,7 @@ export default function ProcessOrchestration() {
               <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-slate-900">2</span>
+                    <span className="text-2xl font-bold text-charcoal">2</span>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Orchestration Design</h3>
@@ -170,7 +170,7 @@ export default function ProcessOrchestration() {
               <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-slate-900">3</span>
+                    <span className="text-2xl font-bold text-charcoal">3</span>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Continuous Optimization</h3>
@@ -189,57 +189,57 @@ export default function ProcessOrchestration() {
       <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-white">
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Applications</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Applications</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               Where orchestration drives transformation
             </h2>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-7xl mx-auto">
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Workflow className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Customer Onboarding</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Workflow className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Customer Onboarding</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Coordinate sales, operations, finance, and IT to deliver seamless onboarding experiences that accelerate time-to-value and improve retention.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <GitMerge className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Order-to-Cash</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <GitMerge className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Order-to-Cash</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Streamline the entire revenue cycle from quote to payment—integrating sales, fulfillment, shipping, invoicing, and collections.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Users className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Employee Lifecycle</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Users className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Employee Lifecycle</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Automate hiring, onboarding, performance management, and offboarding workflows that span HR, IT, facilities, and department managers.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <TrendingUp className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Procure-to-Pay</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <TrendingUp className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Procure-to-Pay</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Orchestrate requisition, approval, purchasing, receiving, invoice matching, and payment processes for complete spend visibility.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Target className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Incident Management</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Target className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Incident Management</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Coordinate detection, triage, escalation, resolution, and post-mortem workflows across support, engineering, and operations teams.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Eye className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Compliance Workflows</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Eye className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Compliance Workflows</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Ensure consistent execution of regulatory processes—audit preparation, policy attestation, risk assessment, and documentation.
               </p>
             </div>
@@ -248,25 +248,25 @@ export default function ProcessOrchestration() {
       </section>
 
       {/* Related Services Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Related Capabilities</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Related Capabilities</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               Complementary automation technologies
             </h2>
           </div>
           
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 max-w-5xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/process-automation/rpa" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 h-full bg-white">
-                <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+                <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   RPA (Robotic Process Automation)
                 </h3>
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <p className="text-charcoal/80 mb-4 leading-relaxed">
                   Deploy intelligent software robots to handle repetitive, rule-based tasks across systems—eliminating manual effort and human error.
                 </p>
-                <div className="flex items-center text-[#2D5BFF] font-semibold">
+                <div className="flex items-center text-primary font-semibold">
                   Learn more
                   <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -274,14 +274,14 @@ export default function ProcessOrchestration() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/process-automation/ipaas" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 h-full bg-white">
-                <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+                <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   iPaaS (Integration Platform)
                 </h3>
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <p className="text-charcoal/80 mb-4 leading-relaxed">
                   Connect disparate systems seamlessly through integration platforms that orchestrate data flow and synchronize business processes.
                 </p>
-                <div className="flex items-center text-[#2D5BFF] font-semibold">
+                <div className="flex items-center text-primary font-semibold">
                   Learn more
                   <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -301,7 +301,7 @@ export default function ProcessOrchestration() {
             Schedule a complimentary consultation to explore how process orchestration can eliminate bottlenecks, improve coordination, and enable scalable growth.
           </p>
           <Link href="/contact">
-            <Button size="lg" className="bg-[#2D5BFF] hover:bg-[#1e40af] text-white text-lg px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6">
+            <Button size="lg" className="bg-primary hover:bg-primary-hover text-white text-lg px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6">
               Schedule consultation
               <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
             </Button>

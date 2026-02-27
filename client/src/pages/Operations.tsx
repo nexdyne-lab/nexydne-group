@@ -23,7 +23,7 @@ function MethodologyCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.05 }}
-      className="relative overflow-hidden rounded-xl bg-[#f8f8f7] p-8 min-h-[280px] flex flex-col cursor-pointer transition-all duration-300 hover:shadow-lg"
+      className="relative overflow-hidden rounded-xl bg-subtle p-8 min-h-[280px] flex flex-col cursor-pointer transition-all duration-300 hover:shadow-lg"
       style={{
         border: `1px solid ${isHovered ? "transparent" : "#e5e7eb"}`,
         transition: "border 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
@@ -39,7 +39,7 @@ function MethodologyCard({
           top: 0,
           bottom: 0,
           width: "100%",
-          backgroundColor: "#FFF5ED",
+          backgroundColor: 'var(--color-subtle)',
           right: isHovered ? "-110%" : "100%",
           transition: "right 1s cubic-bezier(0.83, 0, 0.31, 1)",
           zIndex: 0,
@@ -48,21 +48,21 @@ function MethodologyCard({
       />
 
       <h3
-        className="text-xl font-bold text-[#051C2C] mb-4 transition-colors"
+        className="text-xl font-bold text-charcoal mb-4 transition-colors"
         style={{ position: "relative", zIndex: 1 }}
       >
-        <span className={isHovered ? "text-[#0077B5]" : ""}>{method.title}</span>
+        <span className={isHovered ? "text-primary" : ""}>{method.title}</span>
       </h3>
       <p
-        className="text-[#051C2C]/60 leading-relaxed text-sm mb-6"
+        className="text-charcoal/60 leading-relaxed text-sm mb-6"
         style={{ position: "relative", zIndex: 1 }}
       >
         {method.description}
       </p>
       <ul className="space-y-2 mb-6" style={{ position: "relative", zIndex: 1 }}>
         {method.principles.map((principle, i) => (
-          <li key={i} className="flex items-center text-sm text-[#051C2C]/70">
-            <div className="w-1.5 h-1.5 rounded-full bg-[#0077B5] mr-3 shrink-0" />
+          <li key={i} className="flex items-center text-sm text-charcoal/70">
+            <div className="w-1.5 h-1.5 rounded-full bg-primary mr-3 shrink-0" />
             {principle}
           </li>
         ))}
@@ -74,7 +74,7 @@ function MethodologyCard({
 
 export default function Operations() {
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Operations" 
         description="Transform your operational infrastructure to reduce waste, improve quality, and deliver results faster. Build efficient, scalable operations that drive competitive advantage."
@@ -83,7 +83,7 @@ export default function Operations() {
       <Navbar />
       
       {/* Hero Section - Dark Background */}
-      <section className="relative min-h-[70vh] flex items-center pt-20 bg-black">
+      <section className="relative min-h-[70vh] flex items-center pt-20 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12 grid sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -104,7 +104,7 @@ export default function Operations() {
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
                   Start Your Transformation
                 </Button>
               </Link>
@@ -132,14 +132,14 @@ export default function Operations() {
       </section>
 
       {/* Our Experience & Impact - Bain Style */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-2xl font-bold text-[#051C2C] mb-12"
+            className="text-2xl font-bold text-charcoal mb-12"
           >
             Our Experience & Impact
           </motion.h2>
@@ -156,10 +156,10 @@ export default function Operations() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`${index > 0 ? 'border-l border-gray-200 pl-8' : ''}`}
+                className={`${index > 0 ? 'border-l border-border pl-8' : ''}`}
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-4">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-4">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -169,7 +169,7 @@ export default function Operations() {
       {/* Thought Leadership Paragraphs */}
       <section className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-4xl mx-auto space-y-8 text-xl text-[#051C2C]/80 leading-relaxed">
+          <div className="max-w-4xl mx-auto space-y-8 text-xl text-charcoal/80 leading-relaxed">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -210,7 +210,7 @@ export default function Operations() {
       </section>
 
       {/* Our Approach Section - 3 Column Layout */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#0a1628] text-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -219,7 +219,7 @@ export default function Operations() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
               Our Approach
             </span>
             <h2 className="text-4xl md:text-5xl font-serif font-bold">
@@ -281,13 +281,13 @@ export default function Operations() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Our Methodology
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal mb-6">
               The NexDyne Operations Framework
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-3xl mx-auto">
+            <p className="text-xl text-charcoal/60 max-w-3xl mx-auto">
               We integrate proven operational methodologies with modern technology to deliver sustainable transformation.
             </p>
           </motion.div>
@@ -332,7 +332,7 @@ export default function Operations() {
       </section>
 
       {/* How We Can Help - Capability Cards */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#f8f8f7]">
+      <section className="py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -341,13 +341,13 @@ export default function Operations() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal mb-6">
               Our Operations Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               We help you build high-performance operations through systematic improvements across the entire value chain.
             </p>
           </motion.div>
@@ -428,10 +428,10 @@ export default function Operations() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Client Results
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#051C2C]">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal">
               Driving operational transformation
             </h2>
           </motion.div>
@@ -468,18 +468,18 @@ export default function Operations() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                     <div className="absolute top-4 left-4">
-                      <span className="px-3 py-1 bg-[#0077B5] text-white text-xs font-bold uppercase tracking-wider rounded">
+                      <span className="px-3 py-1 bg-primary text-white text-xs font-bold uppercase tracking-wider rounded">
                         {study.category}
                       </span>
                     </div>
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 group-hover:text-[#0077B5] transition-colors leading-tight">
+                  <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                     {study.title}
                   </h3>
-                  <p className="text-[#051C2C]/60 text-sm leading-relaxed mb-4">
+                  <p className="text-charcoal/60 text-sm leading-relaxed mb-4">
                     {study.description}
                   </p>
-                  <div className="flex items-center text-[#0077B5] text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                  <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                     Read case study <ArrowRight className="ml-2 w-4 h-4" />
                   </div>
                 </Link>
@@ -490,7 +490,7 @@ export default function Operations() {
       </section>
 
       {/* Latest Insights Section */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#f8f8f7]">
+      <section className="py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
             <motion.div
@@ -499,18 +499,18 @@ export default function Operations() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Insights
               </span>
-              <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#051C2C]">
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal">
                 Latest Insights
               </h2>
-              <p className="text-xl text-[#051C2C]/60 mt-4">
+              <p className="text-xl text-charcoal/60 mt-4">
                 Expert perspectives on operations transformation and excellence.
               </p>
             </motion.div>
             <Link href="/insights">
-              <Button variant="outline" className="border-[#051C2C]/20 text-[#051C2C] hover:bg-[#051C2C]/5 bg-transparent transition-all duration-300">
+              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/5 bg-transparent transition-all duration-300">
                 View all insights
               </Button>
             </Link>
@@ -548,19 +548,19 @@ export default function Operations() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={insight.link} className="group block h-full">
-                  <div className="h-full p-8 rounded-xl bg-white border border-gray-200 hover:border-[#0077B5]/50 transition-all duration-300 hover:shadow-lg">
+                  <div className="h-full p-8 rounded-xl bg-white border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
                     <div className="flex items-center gap-3 mb-4">
-                      <span className="text-[#0077B5] text-xs font-bold uppercase tracking-wider">{insight.category}</span>
-                      <span className="text-[#051C2C]/40">•</span>
-                      <span className="text-[#051C2C]/60 text-sm">{insight.readTime}</span>
+                      <span className="text-primary text-xs font-bold uppercase tracking-wider">{insight.category}</span>
+                      <span className="text-charcoal/40">•</span>
+                      <span className="text-charcoal/60 text-sm">{insight.readTime}</span>
                     </div>
-                    <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 group-hover:text-[#0077B5] transition-colors leading-tight">
+                    <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                       {insight.title}
                     </h3>
-                    <p className="text-[#051C2C]/60 text-sm leading-relaxed mb-6">
+                    <p className="text-charcoal/60 text-sm leading-relaxed mb-6">
                       {insight.description}
                     </p>
-                    <div className="flex items-center text-[#0077B5] text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                    <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                       Read article <ArrowRight className="ml-2 w-4 h-4" />
                     </div>
                   </div>
@@ -581,10 +581,10 @@ export default function Operations() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Featured Capabilities
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal mb-6">
               Related capabilities
             </h2>
           </motion.div>
@@ -626,7 +626,7 @@ export default function Operations() {
       </section>
 
       {/* CTA Section - Blue Background */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#0077B5]">
+      <section className="py-12 sm:py-16 lg:py-24 bg-primary">
         <div className="container px-4 sm:px-6 md:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -641,7 +641,7 @@ export default function Operations() {
               Let's discuss how operational excellence can drive sustainable competitive advantage for your organization.
             </p>
             <Link href="/contact">
-              <Button className="bg-white hover:bg-gray-100 text-[#051C2C] px-10 py-6 text-lg font-semibold transition-all">
+              <Button className="bg-white hover:bg-subtle text-charcoal px-10 py-6 text-lg font-semibold transition-all">
                 Start Your Transformation
               </Button>
             </Link>

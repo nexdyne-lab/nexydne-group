@@ -9,7 +9,7 @@ import { RelatedContent } from "@/components/RelatedContent";
 
 export default function ChurnPredictionPlaybook() {
   return (
-    <div className="min-h-screen bg-[#051C2C] font-sans text-white selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
       <SEO 
         title="The Churn Prediction Playbook for Mid-Market SaaS" 
         description="A practical guide to building and deploying churn prediction models that actually drive retention—from feature engineering to intervention automation."
@@ -25,7 +25,7 @@ export default function ChurnPredictionPlaybook() {
             alt="SaaS Analytics" 
             className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#051C2C] via-[#051C2C]/95 to-[#051C2C]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-base via-base/95 to-base" />
         </div>
         
         <div className="container px-4 md:px-12 relative z-10">
@@ -35,13 +35,13 @@ export default function ChurnPredictionPlaybook() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <Link href="/solutions/data-driven-customer-intelligence/insights" className="inline-flex items-center text-white/60 hover:text-[#0077B5] mb-8 transition-colors">
+            <Link href="/solutions/data-driven-customer-intelligence/insights" className="inline-flex items-center text-white/60 hover:text-primary mb-8 transition-colors">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Insights
             </Link>
             
             <div className="flex items-center gap-4 mb-6">
-              <span className="text-[#0077B5] text-xs font-bold uppercase tracking-[0.2em]">Technology</span>
+              <span className="text-primary text-xs font-bold uppercase tracking-[0.2em]">Technology</span>
               <span className="flex items-center text-white/40 text-sm">
                 <Clock className="w-4 h-4 mr-1" />
                 15 min read
@@ -58,7 +58,7 @@ export default function ChurnPredictionPlaybook() {
 
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-[#0077B5] rounded-full flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
                   NX
                 </div>
                 <div>
@@ -72,7 +72,7 @@ export default function ChurnPredictionPlaybook() {
       </section>
 
       {/* Article Content */}
-      <section className="py-16 bg-white text-[#051C2C]">
+      <section className="py-16 bg-white text-charcoal">
         <div className="container px-4 md:px-12">
           <div className="grid lg:grid-cols-12 gap-16">
             {/* Main Content */}
@@ -83,7 +83,7 @@ export default function ChurnPredictionPlaybook() {
               transition={{ duration: 0.6 }}
               className="lg:col-span-8 prose prose-lg max-w-none"
             >
-              <p className="text-xl text-[#051C2C]/80 leading-relaxed">
+              <p className="text-xl text-charcoal/80 leading-relaxed">
                 Churn is the silent killer of SaaS businesses. While companies obsess over acquisition, the customers quietly walking out the back door often represent a larger drag on growth than insufficient new customer volume. For mid-market SaaS companies with annual churn rates of 15-20%, reducing churn by even a few percentage points can add millions to the bottom line.
               </p>
 
@@ -128,26 +128,26 @@ export default function ChurnPredictionPlaybook() {
                 These are typically your strongest predictors. Key metrics include:
               </p>
 
-              <div className="bg-[#F8F9FA] p-6 rounded-xl my-6">
-                <ul className="space-y-2 text-[#051C2C]/70">
+              <div className="bg-subtle p-6 rounded-xl my-6">
+                <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Login frequency and recency (days since last login)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Feature adoption breadth (% of features used)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Core feature engagement (usage of "sticky" features)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Usage trends (increasing, stable, declining)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Time-to-value metrics (how quickly they activated)</span>
                   </li>
                 </ul>
@@ -159,26 +159,26 @@ export default function ChurnPredictionPlaybook() {
                 Customer support interactions often signal dissatisfaction before it manifests in usage decline:
               </p>
 
-              <div className="bg-[#F8F9FA] p-6 rounded-xl my-6">
-                <ul className="space-y-2 text-[#051C2C]/70">
+              <div className="bg-subtle p-6 rounded-xl my-6">
+                <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Support ticket volume and trend</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Ticket severity distribution</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Time to resolution</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>NPS/CSAT scores and trends</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Sentiment from support conversations</span>
                   </li>
                 </ul>
@@ -190,26 +190,26 @@ export default function ChurnPredictionPlaybook() {
                 Contract and billing data provide important context:
               </p>
 
-              <div className="bg-[#F8F9FA] p-6 rounded-xl my-6">
-                <ul className="space-y-2 text-[#051C2C]/70">
+              <div className="bg-subtle p-6 rounded-xl my-6">
+                <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Contract value and term</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Days until renewal</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Payment history (late payments, failed charges)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Expansion/contraction history</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Discount level</span>
                   </li>
                 </ul>
@@ -273,27 +273,27 @@ export default function ChurnPredictionPlaybook() {
                 Convert continuous probability scores into actionable risk tiers:
               </p>
 
-              <div className="bg-[#F8F9FA] p-6 rounded-xl my-6">
+              <div className="bg-subtle p-6 rounded-xl my-6">
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
                     <div className="w-4 h-4 bg-red-500 rounded-full"></div>
                     <div>
                       <span className="font-bold">High Risk (70%+):</span>
-                      <span className="text-[#051C2C]/70 ml-2">Immediate CSM outreach, executive escalation</span>
+                      <span className="text-charcoal/70 ml-2">Immediate CSM outreach, executive escalation</span>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-4 h-4 bg-yellow-500 rounded-full"></div>
                     <div>
                       <span className="font-bold">Medium Risk (40-70%):</span>
-                      <span className="text-[#051C2C]/70 ml-2">Proactive check-in, value reinforcement</span>
+                      <span className="text-charcoal/70 ml-2">Proactive check-in, value reinforcement</span>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
-                    <div className="w-4 h-4 bg-green-500 rounded-full"></div>
+                    <div className="w-4 h-4 bg-secondary/100 rounded-full"></div>
                     <div>
                       <span className="font-bold">Low Risk (&lt;40%):</span>
-                      <span className="text-[#051C2C]/70 ml-2">Standard engagement, expansion opportunities</span>
+                      <span className="text-charcoal/70 ml-2">Standard engagement, expansion opportunities</span>
                     </div>
                   </div>
                 </div>
@@ -339,52 +339,52 @@ export default function ChurnPredictionPlaybook() {
             >
               <div className="sticky top-32 space-y-8">
                 {/* Share */}
-                <div className="bg-[#F8F9FA] p-6 rounded-xl">
+                <div className="bg-subtle p-6 rounded-xl">
                   <h3 className="font-bold mb-4">Share this article</h3>
                   <div className="flex gap-3">
-                    <button className="w-10 h-10 bg-[#0077B5] rounded-full flex items-center justify-center text-white hover:bg-[#005a8c] transition-colors">
+                    <button className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-primary/90 transition-colors">
                       <Linkedin className="w-5 h-5" />
                     </button>
-                    <button className="w-10 h-10 bg-[#1DA1F2] rounded-full flex items-center justify-center text-white hover:bg-[#1a8cd8] transition-colors">
+                    <button className="w-10 h-10 bg-[#1DA1F2] rounded-full flex items-center justify-center text-white hover:bg-secondary transition-colors">
                       <Twitter className="w-5 h-5" />
                     </button>
-                    <button className="w-10 h-10 bg-[#051C2C] rounded-full flex items-center justify-center text-white hover:bg-[#051C2C]/80 transition-colors">
+                    <button className="w-10 h-10 bg-base rounded-full flex items-center justify-center text-white hover:bg-base/80 transition-colors">
                       <Share2 className="w-5 h-5" />
                     </button>
                   </div>
                 </div>
 
                 {/* Key Takeaways */}
-                <div className="bg-[#F8F9FA] p-6 rounded-xl">
+                <div className="bg-subtle p-6 rounded-xl">
                   <h3 className="font-bold mb-4">Key Takeaways</h3>
-                  <ul className="space-y-3 text-sm text-[#051C2C]/70">
+                  <ul className="space-y-3 text-sm text-charcoal/70">
                     <li className="flex gap-2">
-                      <span className="text-[#0077B5] font-bold">1.</span>
+                      <span className="text-primary font-bold">1.</span>
                       Product usage features are typically the strongest churn predictors
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-[#0077B5] font-bold">2.</span>
+                      <span className="text-primary font-bold">2.</span>
                       60-day prediction horizon balances accuracy with intervention time
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-[#0077B5] font-bold">3.</span>
+                      <span className="text-primary font-bold">3.</span>
                       Gradient boosting models (XGBoost) work well for churn prediction
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-[#0077B5] font-bold">4.</span>
+                      <span className="text-primary font-bold">4.</span>
                       Connect predictions to specific intervention playbooks
                     </li>
                   </ul>
                 </div>
 
                 {/* CTA */}
-                <div className="bg-[#0077B5] p-6 rounded-xl text-white">
+                <div className="bg-primary p-6 rounded-xl text-white">
                   <h3 className="font-bold mb-3">Need help building your churn prediction system?</h3>
                   <p className="text-white/80 text-sm mb-4">
                     We've helped 50+ SaaS companies reduce churn with predictive analytics.
                   </p>
                   <Link href="/contact">
-                    <Button className="w-full bg-white text-[#0077B5] hover:bg-white/90">
+                    <Button className="w-full bg-white text-primary hover:bg-white/90">
                       Schedule a Consultation
                     </Button>
                   </Link>

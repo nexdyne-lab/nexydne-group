@@ -10,14 +10,14 @@ export default function RPA() {
       <Navigation />
       
       {/* Breadcrumb */}
-      <div className="container py-4 text-sm text-gray-600">
-        <Link href="/" className="hover:text-gray-900">Home</Link>
+      <div className="container py-4 text-sm text-muted-foreground">
+        <Link href="/" className="hover:text-charcoal">Home</Link>
         <span className="mx-2">/</span>
-        <Link href="/solutions/intelligent-process-optimization" className="hover:text-gray-900">Intelligent Process Optimization</Link>
+        <Link href="/solutions/intelligent-process-optimization" className="hover:text-charcoal">Intelligent Process Optimization</Link>
         <span className="mx-2">/</span>
-        <Link href="/solutions/intelligent-process-optimization/process-automation" className="hover:text-gray-900">Process Automation</Link>
+        <Link href="/solutions/intelligent-process-optimization/process-automation" className="hover:text-charcoal">Process Automation</Link>
         <span className="mx-2">/</span>
-        <span className="text-gray-900">RPA</span>
+        <span className="text-charcoal">RPA</span>
       </div>
 
       {/* Hero Section */}
@@ -44,31 +44,31 @@ export default function RPA() {
         <div className="container">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 max-w-6xl mx-auto">
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <Zap className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Tireless digital workers</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Tireless digital workers</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 Software robots execute processes rapidly and flawlessly around the clock—no breaks, no errors, no downtime. They work while you sleep.
               </p>
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <Clock className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Rapid deployment</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Rapid deployment</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 From concept to production in weeks, not months. Start seeing ROI within 6-9 months as robots eliminate time-consuming manual processes.
               </p>
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <Cog className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Seamless integration</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Seamless integration</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 Robots work with your existing systems exactly as humans do—no expensive IT overhauls, no custom APIs, no infrastructure changes required.
               </p>
             </div>
@@ -77,16 +77,16 @@ export default function RPA() {
       </section>
 
       {/* What is RPA Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container max-w-5xl mx-auto">
           <div className="mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Understanding RPA</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Understanding RPA</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               What is Robotic Process Automation?
             </h2>
           </div>
           
-          <div className="prose prose-xl max-w-none text-gray-700 leading-relaxed space-y-6">
+          <div className="prose prose-xl max-w-none text-charcoal/80 leading-relaxed space-y-6">
             <p>
               Robotic Process Automation uses intelligent software robots to automate repetitive, rule-based business processes. These digital workers handle everything from data entry and invoice processing to quote generation and system updates—performing tasks faster, more accurately, and more consistently than human workers ever could.
             </p>
@@ -99,11 +99,11 @@ export default function RPA() {
           </div>
 
           {/* Quote */}
-          <div className="mt-12 border-l-4 border-[#2D5BFF] pl-8 py-6 bg-white">
+          <div className="mt-12 border-l-4 border-primary pl-8 py-6 bg-white">
             <p className="text-xl italic text-gray-800 mb-4">
               "We were spending countless hours on manual data entry, and mistakes were inevitable. RPA robots have transformed our operations—what used to take days now happens in minutes, with zero errors."
             </p>
-            <p className="text-lg font-semibold text-gray-900">Operations Director, Financial Services Firm</p>
+            <p className="text-lg font-semibold text-charcoal">Operations Director, Financial Services Firm</p>
           </div>
         </div>
       </section>
@@ -132,7 +132,7 @@ export default function RPA() {
               <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-slate-900">1</span>
+                    <span className="text-2xl font-bold text-charcoal">1</span>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Process Discovery</h3>
@@ -146,7 +146,7 @@ export default function RPA() {
               <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-slate-900">2</span>
+                    <span className="text-2xl font-bold text-charcoal">2</span>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Rapid Development</h3>
@@ -160,7 +160,7 @@ export default function RPA() {
               <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-slate-900">3</span>
+                    <span className="text-2xl font-bold text-charcoal">3</span>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Scale & Optimize</h3>
@@ -179,57 +179,57 @@ export default function RPA() {
       <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-white">
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Applications</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Applications</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               Where RPA creates impact
             </h2>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-7xl mx-auto">
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <TrendingUp className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Finance & Accounting</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <TrendingUp className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Finance & Accounting</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Invoice processing, accounts payable/receivable, reconciliation, financial reporting, and compliance documentation.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Users className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Human Resources</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Users className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Human Resources</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Employee onboarding, payroll processing, benefits administration, compliance reporting, and data management.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Shield className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Customer Service</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Shield className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Customer Service</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Order processing, customer data updates, ticket routing, response automation, and service request fulfillment.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Cog className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Supply Chain</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Cog className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Supply Chain</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Order management, inventory updates, shipment tracking, vendor communications, and procurement workflows.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Shield className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Compliance & Risk</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Shield className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Compliance & Risk</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Regulatory reporting, audit preparation, data validation, policy enforcement, and documentation management.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <TrendingUp className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">IT Operations</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <TrendingUp className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">IT Operations</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 System monitoring, data migration, user provisioning, backup management, and routine maintenance tasks.
               </p>
             </div>
@@ -238,25 +238,25 @@ export default function RPA() {
       </section>
 
       {/* Related Services Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Related Capabilities</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Related Capabilities</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               Complementary automation technologies
             </h2>
           </div>
           
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 max-w-5xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/process-automation/ipaas" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 h-full bg-white">
-                <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+                <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   iPaaS (Integration Platform)
                 </h3>
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <p className="text-charcoal/80 mb-4 leading-relaxed">
                   Connect disparate systems seamlessly through integration platforms that orchestrate data flow and synchronize business processes.
                 </p>
-                <div className="flex items-center text-[#2D5BFF] font-semibold">
+                <div className="flex items-center text-primary font-semibold">
                   Learn more
                   <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -264,14 +264,14 @@ export default function RPA() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/process-automation/process-orchestration" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 h-full bg-white">
-                <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+                <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   Process Orchestration
                 </h3>
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <p className="text-charcoal/80 mb-4 leading-relaxed">
                   Coordinate complex, multi-step workflows across teams, departments, and systems to ensure flawless end-to-end execution.
                 </p>
-                <div className="flex items-center text-[#2D5BFF] font-semibold">
+                <div className="flex items-center text-primary font-semibold">
                   Learn more
                   <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -291,7 +291,7 @@ export default function RPA() {
             Schedule a complimentary consultation to explore how RPA can eliminate repetitive work, reduce errors, and free your team to focus on strategic priorities.
           </p>
           <Link href="/contact">
-            <Button size="lg" className="bg-[#2D5BFF] hover:bg-[#1e40af] text-white text-lg px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6">
+            <Button size="lg" className="bg-primary hover:bg-primary-hover text-white text-lg px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6">
               Schedule consultation
               <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
             </Button>

@@ -140,7 +140,7 @@ export default function Cases() {
   );
 
   return (
-    <div className="min-h-screen bg-[#051C2C] text-white selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
       <SEO 
         title="Case Studies | NexDyne Technologies" 
         description="Explore how NexDyne helps organizations achieve enduring change through technology-led transformation."
@@ -151,7 +151,7 @@ export default function Cases() {
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#051C2C] via-[#051C2C]/60 to-[#051C2C]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
         
         <div className="container relative z-10 px-4 md:px-12">
           <Breadcrumbs />
@@ -162,7 +162,7 @@ export default function Cases() {
             className="max-w-4xl mx-auto text-center"
           >
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
-              Case <span className="text-[#0077B5]">Studies</span>
+              Case <span className="text-primary">Studies</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mx-auto">
               Our clients are achieving enduring change in their capabilities and performance. 
@@ -174,7 +174,7 @@ export default function Cases() {
       </section>
 
       {/* DZ10 Filter Section */}
-      <section className="py-8 bg-[#051C2C] border-b border-white/10">
+      <section className="py-8 bg-base border-b border-white/10">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex justify-center">
             <div className="inline-flex gap-4 sm:p-6 md:p-8">
@@ -184,7 +184,7 @@ export default function Cases() {
                   onClick={() => setSelectedIndustry(industry)}
                   className={`pb-3 font-medium transition-all border-b-2 ${
                     selectedIndustry === industry
-                      ? "border-[#0077B5] text-[#0077B5]"
+                      ? "border-primary text-primary"
                       : "border-transparent text-white/60 hover:text-white hover:border-white/30"
                   }`}
                 >
@@ -197,7 +197,7 @@ export default function Cases() {
       </section>
 
       {/* DZ10 Case Studies Grid */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:p-6 md:p-8">
             {filteredCases.map((study, index) => (
@@ -217,23 +217,23 @@ export default function Cases() {
                         alt={study.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       />
-                      <div className="absolute top-4 left-4 bg-[#051C2C]/90 px-3 py-1 rounded-full">
-                        <span className="text-xs font-bold text-[#0077B5]">{study.metric}</span>
+                      <div className="absolute top-4 left-4 bg-base/90 px-3 py-1 rounded-full">
+                        <span className="text-xs font-bold text-primary">{study.metric}</span>
                         <span className="text-xs text-white/70 ml-1">{study.metricLabel}</span>
                       </div>
                     </div>
 
                     {/* Content */}
                     <div className="space-y-3">
-                      <span className="text-xs font-bold text-[#0077B5] uppercase tracking-wider">{study.industry}</span>
-                      <h3 className="text-lg font-serif font-bold text-[#051C2C] group-hover:text-[#0077B5] transition-colors leading-tight">
+                      <span className="text-xs font-bold text-primary uppercase tracking-wider">{study.industry}</span>
+                      <h3 className="text-lg font-serif font-bold text-charcoal group-hover:text-primary transition-colors leading-tight">
                         {study.title}
                       </h3>
-                      <p className="text-sm text-[#051C2C]/60 italic">{study.date}</p>
-                      <p className="text-sm text-[#051C2C]/70 leading-relaxed">
+                      <p className="text-sm text-charcoal/60 italic">{study.date}</p>
+                      <p className="text-sm text-charcoal/70 leading-relaxed">
                         {study.description}
                       </p>
-                      <span className="text-[#0077B5] text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                      <span className="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
                         Read case study <ArrowRight className="w-3 h-3" />
                       </span>
                     </div>
@@ -246,7 +246,7 @@ export default function Cases() {
       </section>
 
       {/* DZ10 Insights Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -303,14 +303,14 @@ export default function Cases() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-white mb-3 group-hover:text-[#0077B5] transition-colors">
+                  <h3 className="text-xl font-serif font-bold text-white mb-3 group-hover:text-primary transition-colors">
                     {post.title}
                   </h3>
                   <p className="text-sm text-white/50 mb-3">{post.date} · {post.readTime}</p>
                   <p className="text-white/60 leading-relaxed mb-4">
                     {post.description}
                   </p>
-                  <span className="text-[#0077B5] text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                  <span className="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
                     Read more <ArrowRight className="w-3 h-3" />
                   </span>
                 </Link>
@@ -320,7 +320,7 @@ export default function Cases() {
 
           <div className="text-center">
             <Link href="/insights">
-              <span className="inline-flex items-center text-base font-medium text-white hover:text-[#0077B5] transition-colors cursor-pointer">
+              <span className="inline-flex items-center text-base font-medium text-white hover:text-primary transition-colors cursor-pointer">
                 See all stories
                 <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </span>

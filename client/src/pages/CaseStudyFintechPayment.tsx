@@ -19,7 +19,7 @@ export default function CaseStudyFintechPayment() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#051C2C] text-white font-sans selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-base text-white font-sans selection:bg-primary selection:text-white">
       <SEO 
         title="Fintech Payment Automation Case Study" 
         description="How we scaled payment operations 10x without headcount growth, achieving 85% auto-resolution and 99.9% accuracy."
@@ -42,8 +42,8 @@ export default function CaseStudyFintechPayment() {
             alt="Fintech Payment Automation" 
             className="w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#051C2C] via-[#051C2C]/80 to-[#051C2C]/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#051C2C] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/80 to-base/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent" />
         </div>
 
         <div className="container px-4 sm:px-6 md:px-12 relative z-10">
@@ -53,7 +53,7 @@ export default function CaseStudyFintechPayment() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl"
           >
-            <Link href="/cases" className="inline-flex items-center text-[#0077B5] hover:text-white transition-colors mb-5 sm:mb-6 md:mb-8 group text-sm font-semibold">
+            <Link href="/cases" className="inline-flex items-center text-primary hover:text-white transition-colors mb-5 sm:mb-6 md:mb-8 group text-sm font-semibold">
               <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
               Back to Case Studies
             </Link>
@@ -63,24 +63,24 @@ export default function CaseStudyFintechPayment() {
             </span>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold tracking-tight text-white leading-[1.05] mb-5 sm:mb-3 md:mb-4">
-              Scaling Payment Operations <span className="text-[#0077B5]">10x Without Headcount Growth</span>
+              Scaling Payment Operations <span className="text-primary">10x Without Headcount Growth</span>
             </h1>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:p-6 md:p-8 border-t border-white/10 pt-8 mt-8">
               <div>
-                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#0077B5] mb-1">10x</div>
+                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary mb-1">10x</div>
                 <div className="text-sm text-white/60 uppercase tracking-wider">Volume Growth</div>
               </div>
               <div>
-                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#0077B5] mb-1">85%</div>
+                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary mb-1">85%</div>
                 <div className="text-sm text-white/60 uppercase tracking-wider">Auto-Resolution</div>
               </div>
               <div>
-                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#0077B5] mb-1">99.9%</div>
+                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary mb-1">99.9%</div>
                 <div className="text-sm text-white/60 uppercase tracking-wider">Accuracy</div>
               </div>
               <div>
-                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#0077B5] mb-1">18min</div>
+                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary mb-1">18min</div>
                 <div className="text-sm text-white/60 uppercase tracking-wider">Resolution Time</div>
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function CaseStudyFintechPayment() {
       </section>
 
       {/* DZ10 Challenge & Solution */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid md:grid-cols-2 gap-16 lg:gap-8 sm:gap-6 sm:p-6 sm:p-8 md:p-12 lg:gap-8 sm:gap-6 sm:p-8 md:p-12 lg:gap-24">
             <motion.div
@@ -123,13 +123,13 @@ export default function CaseStudyFintechPayment() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 The Challenge
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#051C2C] mb-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-6">
                 Manual operations bottleneck
               </h2>
-              <div className="space-y-6 text-lg text-[#051C2C]/70 leading-relaxed">
+              <div className="space-y-6 text-lg text-charcoal/70 leading-relaxed">
                 <p>
                   A fast-growing B2B fintech platform was struggling to keep up with transaction volume. Their operations team was manually handling exceptions, fraud alerts, and reconciliation issues, creating a bottleneck that threatened to stall growth.
                 </p>
@@ -144,27 +144,27 @@ export default function CaseStudyFintechPayment() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Our Approach
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#051C2C] mb-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-6">
                 AI-driven operations platform
               </h2>
-              <div className="space-y-6 text-lg text-[#051C2C]/70 leading-relaxed">
+              <div className="space-y-6 text-lg text-charcoal/70 leading-relaxed">
                 <p>
                   We developed an AI-driven operations platform that automates exception handling and reconciliation. The system uses machine learning to classify issues and execute resolution workflows, only escalating the most complex cases to human operators.
                 </p>
                 <ul className="space-y-4 mt-6">
                   <li className="flex items-start">
-                    <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-[#0077B5] mr-3 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary mr-3 flex-shrink-0 mt-0.5" />
                     <span>Built an intelligent rules engine for automated exception handling.</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-[#0077B5] mr-3 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary mr-3 flex-shrink-0 mt-0.5" />
                     <span>Implemented real-time fraud detection algorithms.</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-[#0077B5] mr-3 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary mr-3 flex-shrink-0 mt-0.5" />
                     <span>Created a unified dashboard for operations teams to manage escalated cases.</span>
                   </li>
                 </ul>
@@ -175,7 +175,7 @@ export default function CaseStudyFintechPayment() {
       </section>
 
       {/* DZ10 Impact Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -219,13 +219,13 @@ export default function CaseStudyFintechPayment() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-[#0077B5]/50 transition-all duration-300"
+                className="p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300"
               >
-                <div className="mb-6 p-3 bg-[#0077B5]/10 w-fit rounded-lg text-[#0077B5]">
+                <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary">
                   {item.icon}
                 </div>
                 <div className="text-4xl font-serif font-bold text-white mb-2">{item.metric}</div>
-                <h3 className="text-xl font-bold text-[#0077B5] mb-4">{item.title}</h3>
+                <h3 className="text-xl font-bold text-primary mb-4">{item.title}</h3>
                 <p className="text-white/60 leading-relaxed">
                   {item.description}
                 </p>
@@ -236,7 +236,7 @@ export default function CaseStudyFintechPayment() {
       </section>
 
       {/* DZ10 Quote Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -245,16 +245,16 @@ export default function CaseStudyFintechPayment() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <blockquote className="text-2xl md:text-3xl font-serif text-[#051C2C] leading-relaxed mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-2xl md:text-3xl font-serif text-charcoal leading-relaxed mb-5 sm:mb-6 md:mb-8">
               "We've moved from firefighting mode to strategic growth. The automation platform has given us the confidence to scale aggressively."
             </blockquote>
             <div className="flex items-center justify-center space-x-4">
-              <div className="w-14 h-14 bg-[#051C2C]/10 rounded-full overflow-hidden">
+              <div className="w-14 h-14 bg-base/10 rounded-full overflow-hidden">
                 <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop" alt="COO" className="w-full h-full object-cover" />
               </div>
               <div className="text-left">
-                <div className="text-[#051C2C] font-bold">Rachel Chen</div>
-                <div className="text-[#0077B5] text-sm font-medium">VP of Operations</div>
+                <div className="text-charcoal font-bold">Rachel Chen</div>
+                <div className="text-primary text-sm font-medium">VP of Operations</div>
               </div>
             </div>
           </motion.div>
@@ -262,14 +262,14 @@ export default function CaseStudyFintechPayment() {
       </section>
 
       {/* DZ10 Contact Form */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <CaseStudyContactForm caseStudyTitle="Fintech Payment Automation" />
         </div>
       </section>
 
       {/* DZ10 Related Cases */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 sm:mb-12 md:mb-16 gap-4 sm:p-5 md:p-6">
             <motion.div
@@ -278,15 +278,15 @@ export default function CaseStudyFintechPayment() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Related Work
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#051C2C]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-charcoal">
                 More Success Stories
               </h2>
             </motion.div>
             <Link href="/cases">
-              <Button variant="outline" className="border-[#051C2C]/20 text-[#051C2C] hover:bg-[#051C2C]/5 transition-all duration-300">
+              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/5 transition-all duration-300">
                 View all case studies
               </Button>
             </Link>
@@ -330,14 +330,14 @@ export default function CaseStudyFintechPayment() {
                       alt={study.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
+                    <div className="absolute inset-0 bg-charcoal/10 group-hover:bg-transparent transition-colors duration-500" />
                   </div>
-                  <div className="text-[#0077B5] text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
-                  <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-2 group-hover:text-[#0077B5] transition-colors leading-tight">
+                  <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
+                  <h3 className="text-xl font-serif font-bold text-charcoal mb-2 group-hover:text-primary transition-colors leading-tight">
                     {study.title}
                   </h3>
-                  <p className="text-[#051C2C]/60 text-sm mb-4">{study.description}</p>
-                  <div className="flex items-center text-[#0077B5] text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                  <p className="text-charcoal/60 text-sm mb-4">{study.description}</p>
+                  <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                     Read case study <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4" />
                   </div>
                 </Link>
@@ -348,7 +348,7 @@ export default function CaseStudyFintechPayment() {
       </section>
 
       {/* Related Capabilities Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -397,15 +397,15 @@ export default function CaseStudyFintechPayment() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={capability.link} className="group block h-full">
-                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-[#0077B5]/50 transition-all duration-300 hover:bg-white/10">
-                    <div className="text-[#0077B5] text-xs font-bold uppercase tracking-[0.15em] mb-2">{capability.title}</div>
-                    <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-[#0077B5] transition-colors">
+                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300 hover:bg-white/10">
+                    <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-2">{capability.title}</div>
+                    <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors">
                       {capability.subtitle}
                     </h3>
                     <p className="text-white/60 leading-relaxed text-sm mb-6">
                       {capability.description}
                     </p>
-                    <div className="flex items-center text-[#0077B5] text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                    <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                       Explore capability <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4" />
                     </div>
                   </div>

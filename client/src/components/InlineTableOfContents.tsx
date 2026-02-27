@@ -97,15 +97,15 @@ export default function InlineTableOfContents({ contentSelector = "article" }: I
         onClick={() => setIsExpanded(!isExpanded)}
         className="flex items-center justify-between w-full px-4 py-3 text-left hover:bg-slate-100 transition-colors"
       >
-        <div className="flex items-center gap-2 text-sm font-semibold text-slate-700">
+        <div className="flex items-center gap-2 text-sm font-semibold text-charcoal/80">
           <List className="w-3 h-3 sm:w-4 sm:h-4" />
           <span>Table of Contents</span>
-          <span className="text-slate-400 font-normal">({headings.filter(h => h.level === 2).length} sections)</span>
+          <span className="text-muted-foreground/70 font-normal">({headings.filter(h => h.level === 2).length} sections)</span>
         </div>
         {isExpanded ? (
-          <ChevronUp className="w-3 h-3 sm:w-4 sm:h-4 text-slate-500" />
+          <ChevronUp className="w-3 h-3 sm:w-4 sm:h-4 text-muted-foreground" />
         ) : (
-          <ChevronDown className="w-3 h-3 sm:w-4 sm:h-4 text-slate-500" />
+          <ChevronDown className="w-3 h-3 sm:w-4 sm:h-4 text-muted-foreground" />
         )}
       </button>
 
@@ -122,7 +122,7 @@ export default function InlineTableOfContents({ contentSelector = "article" }: I
                     ${
                       activeId === heading.id
                         ? "bg-blue-100 text-blue-700 font-medium"
-                        : "text-slate-600 hover:text-slate-900 hover:bg-white"
+                        : "text-muted-foreground hover:text-charcoal hover:bg-white"
                     }
                   `}
                 >

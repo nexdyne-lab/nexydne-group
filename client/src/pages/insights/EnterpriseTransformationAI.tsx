@@ -10,7 +10,7 @@ import { RelatedContent } from "@/components/RelatedContent";
 
 export default function EnterpriseTransformationAI() {
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Enterprise Transformation in the AI Era" 
         description="How leading enterprises are reimagining their operating models to harness AI and achieve sustainable competitive advantage."
@@ -28,17 +28,17 @@ export default function EnterpriseTransformationAI() {
             className="max-w-4xl"
           >
             <Link href="/insights">
-              <span className="inline-flex items-center text-sm text-[#051C2C]/60 hover:text-[#0077B5] mb-8 cursor-pointer transition-colors">
+              <span className="inline-flex items-center text-sm text-charcoal/60 hover:text-primary mb-8 cursor-pointer transition-colors">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Insights
               </span>
             </Link>
             
             <div className="flex items-center gap-4 mb-6">
-              <span className="px-3 py-1 bg-[#0077B5]/10 text-[#0077B5] text-xs font-bold uppercase tracking-wider rounded-full">
+              <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider rounded-full">
                 Report
               </span>
-              <span className="text-sm text-[#051C2C]/60 flex items-center">
+              <span className="text-sm text-charcoal/60 flex items-center">
                 <Clock className="w-4 h-4 mr-1" />
                 12 min read
               </span>
@@ -48,26 +48,26 @@ export default function EnterpriseTransformationAI() {
               Enterprise transformation in the AI era
             </h1>
             
-            <p className="text-xl md:text-2xl text-[#051C2C]/70 leading-relaxed mb-8">
+            <p className="text-xl md:text-2xl text-charcoal/70 leading-relaxed mb-8">
               How leading enterprises are reimagining their operating models to harness AI and achieve sustainable competitive advantage.
             </p>
             
-            <div className="flex items-center justify-between border-t border-b border-[#051C2C]/10 py-6">
+            <div className="flex items-center justify-between border-t border-b border-base/10 py-6">
               <div className="flex items-center gap-6">
                 <div>
                   <p className="font-serif font-bold">NEXDYNE Research</p>
-                  <p className="text-sm text-[#051C2C]/60 flex items-center">
+                  <p className="text-sm text-charcoal/60 flex items-center">
                     <Calendar className="w-4 h-4 mr-1" />
                     October 28, 2025
                   </p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <button className="p-2 hover:bg-[#051C2C]/5 rounded-full transition-colors">
-                  <Share2 className="w-5 h-5 text-[#051C2C]/60" />
+                <button className="p-2 hover:bg-base/5 rounded-full transition-colors">
+                  <Share2 className="w-5 h-5 text-charcoal/60" />
                 </button>
-                <button className="p-2 hover:bg-[#051C2C]/5 rounded-full transition-colors">
-                  <Bookmark className="w-5 h-5 text-[#051C2C]/60" />
+                <button className="p-2 hover:bg-base/5 rounded-full transition-colors">
+                  <Bookmark className="w-5 h-5 text-charcoal/60" />
                 </button>
               </div>
             </div>
@@ -90,7 +90,7 @@ export default function EnterpriseTransformationAI() {
                 alt="Enterprise AI Transformation" 
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#051C2C]/60 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-base/60 via-transparent to-transparent" />
             </div>
           </motion.div>
         </div>
@@ -107,30 +107,30 @@ export default function EnterpriseTransformationAI() {
               transition={{ duration: 0.6 }}
               className="prose prose-lg max-w-none"
             >
-              <p className="text-xl text-[#051C2C]/80 leading-relaxed mb-8">
+              <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
                 The convergence of artificial intelligence, cloud computing, and modern software architectures is fundamentally reshaping how enterprises operate. Organizations that successfully navigate this transformation are achieving 3-5x improvements in operational efficiency while creating entirely new sources of competitive advantage.
               </p>
 
               <h2 className="text-3xl font-serif font-bold mt-12 mb-6">The imperative for AI-native architecture</h2>
               
-              <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+              <p className="text-charcoal/70 leading-relaxed mb-6">
                 Traditional enterprise architectures were designed for a world of predictable workloads, batch processing, and human-in-the-loop decision-making. AI changes all of these assumptions. Machine learning models require elastic compute resources that scale with training and inference demands. Real-time AI applications need sub-millisecond latency that legacy architectures cannot deliver. And the volume of data required to train and operate AI systems exceeds what traditional data warehouses can handle.
               </p>
 
-              <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+              <p className="text-charcoal/70 leading-relaxed mb-6">
                 Our research across 250+ mid-market enterprises reveals that companies attempting to bolt AI onto legacy infrastructure achieve only 15-20% of the potential value. Those that modernize their core architecture first capture 70-80% of AI's potential impact within 18 months.
               </p>
 
-              <div className="bg-[#F8F9FA] p-8 rounded-xl my-12">
+              <div className="bg-subtle p-8 rounded-xl my-12">
                 <h3 className="text-xl font-serif font-bold mb-4">Key Finding</h3>
-                <p className="text-[#051C2C]/70 leading-relaxed mb-0">
+                <p className="text-charcoal/70 leading-relaxed mb-0">
                   Companies with modern cloud-native architectures are 5x more likely to successfully deploy AI at scale compared to those with legacy infrastructure.
                 </p>
               </div>
 
               <h2 className="text-3xl font-serif font-bold mt-12 mb-6">Four pillars of AI-ready infrastructure</h2>
 
-              <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+              <p className="text-charcoal/70 leading-relaxed mb-6">
                 Based on our analysis of successful transformations, we've identified four architectural pillars that distinguish AI-ready enterprises:
               </p>
             </motion.div>
@@ -165,8 +165,8 @@ export default function EnterpriseTransformationAI() {
                   description: "Modular architecture that enables AI capabilities to be embedded across all business processes."
                 }
               ].map((pillar, index) => (
-                <div key={index} className="bg-[#051C2C] p-6 rounded-xl text-white">
-                  <div className="w-12 h-12 bg-[#0077B5]/20 rounded-lg flex items-center justify-center mb-4 text-[#0077B5]">
+                <div key={index} className="bg-base p-6 rounded-xl text-white">
+                  <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4 text-primary">
                     {pillar.icon}
                   </div>
                   <h3 className="text-lg font-serif font-bold mb-2">{pillar.title}</h3>
@@ -184,39 +184,39 @@ export default function EnterpriseTransformationAI() {
             >
               <h2 className="text-3xl font-serif font-bold mt-12 mb-6">The transformation roadmap</h2>
 
-              <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+              <p className="text-charcoal/70 leading-relaxed mb-6">
                 Successful AI-era transformations follow a deliberate sequence that balances quick wins with foundational investments. Based on our experience guiding 200+ transformations, we recommend a phased approach:
               </p>
 
               <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Phase 1: Foundation (Months 1-6)</h3>
-              <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+              <p className="text-charcoal/70 leading-relaxed mb-6">
                 Establish cloud landing zone with security and governance controls. Migrate initial workloads to validate architecture and build team capabilities. Implement data platform foundations that will support AI initiatives.
               </p>
 
               <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Phase 2: Modernization (Months 7-12)</h3>
-              <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+              <p className="text-charcoal/70 leading-relaxed mb-6">
                 Decompose monolithic applications into microservices. Build CI/CD pipelines and DevOps practices. Establish MLOps infrastructure for model development and deployment.
               </p>
 
               <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Phase 3: AI Enablement (Months 13-18)</h3>
-              <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+              <p className="text-charcoal/70 leading-relaxed mb-6">
                 Deploy AI capabilities across prioritized use cases. Scale successful pilots to production. Build feedback loops for continuous model improvement.
               </p>
 
-              <div className="bg-[#0077B5]/10 p-8 rounded-xl my-12 border-l-4 border-[#0077B5]">
-                <p className="text-[#051C2C]/80 leading-relaxed mb-0 italic">
+              <div className="bg-primary/10 p-8 rounded-xl my-12 border-l-4 border-primary">
+                <p className="text-charcoal/80 leading-relaxed mb-0 italic">
                   "The companies winning in the AI era aren't those with the most advanced algorithms—they're the ones with the most adaptable infrastructure. AI is only as good as the foundation it runs on."
                 </p>
-                <p className="text-[#051C2C]/60 mt-4 mb-0">— NEXDYNE Research Team</p>
+                <p className="text-charcoal/60 mt-4 mb-0">— NEXDYNE Research Team</p>
               </div>
 
               <h2 className="text-3xl font-serif font-bold mt-12 mb-6">Measuring transformation success</h2>
 
-              <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+              <p className="text-charcoal/70 leading-relaxed mb-6">
                 Effective transformation requires clear metrics that connect technical progress to business outcomes. We recommend tracking:
               </p>
 
-              <ul className="space-y-3 text-[#051C2C]/70 mb-8">
+              <ul className="space-y-3 text-charcoal/70 mb-8">
                 <li><strong>Deployment frequency:</strong> How often can you ship changes? Leaders deploy 10-50x daily.</li>
                 <li><strong>Lead time for changes:</strong> How quickly can you go from idea to production? Leaders achieve under 1 day.</li>
                 <li><strong>Mean time to recovery:</strong> How fast can you recover from failures? Leaders recover in under 1 hour.</li>
@@ -226,11 +226,11 @@ export default function EnterpriseTransformationAI() {
 
               <h2 className="text-3xl font-serif font-bold mt-12 mb-6">Getting started</h2>
 
-              <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+              <p className="text-charcoal/70 leading-relaxed mb-6">
                 The journey to AI-ready infrastructure begins with honest assessment of your current state. Most organizations overestimate their readiness and underestimate the foundational work required. A structured assessment that evaluates architecture, data, talent, and processes provides the clarity needed to build an effective transformation roadmap.
               </p>
 
-              <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+              <p className="text-charcoal/70 leading-relaxed mb-6">
                 The enterprises that will thrive in the AI era are those that treat infrastructure transformation not as a one-time project, but as a continuous capability. Technology will continue to evolve, and the organizations with adaptable foundations will be best positioned to capture value from each new wave of innovation.
               </p>
             </motion.div>
@@ -267,7 +267,7 @@ export default function EnterpriseTransformationAI() {
       />
 
       {/* CTA Section */}
-      <section className="py-24 md:py-32 bg-[#051C2C]">
+      <section className="py-24 md:py-32 bg-base">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -283,7 +283,7 @@ export default function EnterpriseTransformationAI() {
               Let's discuss how to build AI-ready infrastructure for your organization.
             </p>
             <Link href="/contact">
-              <Button className="bg-[#0077B5] hover:bg-[#005a8c] text-white px-10 py-6 text-lg font-semibold transition-all">
+              <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-lg font-semibold transition-all">
                 Schedule a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>

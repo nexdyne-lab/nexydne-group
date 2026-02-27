@@ -9,7 +9,7 @@ import { SEO } from "@/components/SEO";
 
 export function Ecommerce() {
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="E-commerce" 
         description="Platform strategy, conversion optimization, and marketplace management. We architect high-performance digital commerce ecosystems."
@@ -18,7 +18,7 @@ export function Ecommerce() {
       <Navigation />
       
       {/* Hero Section - Dark Background */}
-      <section className="relative min-h-[70vh] flex items-center pt-20 bg-black">
+      <section className="relative min-h-[70vh] flex items-center pt-20 bg-charcoal">
         <div className="container px-4 md:px-12 grid md:grid-cols-2 gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -40,7 +40,7 @@ export function Ecommerce() {
             
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
                   Start Your Commerce Transformation
                 </Button>
               </Link>
@@ -68,14 +68,14 @@ export function Ecommerce() {
       </section>
 
       {/* Our Experience & Impact - Bain Style with Border-Left Accent */}
-      <section className="py-20 bg-white border-b border-gray-200">
+      <section className="py-20 bg-white border-b border-border">
         <div className="container px-4 md:px-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-2xl font-bold text-[#051C2C] mb-12 eb-garamond"
+            className="text-2xl font-bold text-charcoal mb-12 eb-garamond"
           >
             Our Experience & Impact
           </motion.h2>
@@ -92,11 +92,11 @@ export function Ecommerce() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`${index > 0 ? 'border-l border-gray-200 pl-8' : ''}`}
+                className={`${index > 0 ? 'border-l border-border pl-8' : ''}`}
               >
                 <div>
-                  <div className="text-5xl md:text-6xl font-bold text-[#051C2C] mb-4">{item.metric}</div>
-                  <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                  <div className="text-5xl md:text-6xl font-bold text-charcoal mb-4">{item.metric}</div>
+                  <p className="text-lg text-charcoal/60">{item.label}</p>
                 </div>
               </motion.div>
             ))}
@@ -114,7 +114,7 @@ export function Ecommerce() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-[#051C2C] leading-tight eb-garamond">
+              <h2 className="text-4xl md:text-5xl font-bold text-charcoal leading-tight eb-garamond">
                 E-commerce is no longer about having a store—it's about building a commerce engine.
               </h2>
             </motion.div>
@@ -124,7 +124,7 @@ export function Ecommerce() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="space-y-6 text-lg text-[#051C2C]/80 leading-relaxed"
+              className="space-y-6 text-lg text-charcoal/80 leading-relaxed"
             >
               <p>
                 Modern e-commerce is more than a storefront—it's a complex system of integrated technologies, data flows, and user experiences. Companies that treat e-commerce as just another sales channel are being outpaced by competitors who've built it into the core of their business model.
@@ -137,15 +137,15 @@ export function Ecommerce() {
               </p>
               <ul className="space-y-3 mt-6">
                 <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-[#06b6d4] mt-2 flex-shrink-0"></span>
+                  <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
                   <span>Headless and composable commerce architecture</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-[#06b6d4] mt-2 flex-shrink-0"></span>
+                  <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
                   <span>Conversion rate optimization and A/B testing at scale</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-[#06b6d4] mt-2 flex-shrink-0"></span>
+                  <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
                   <span>Omnichannel inventory and fulfillment orchestration</span>
                 </li>
               </ul>
@@ -155,7 +155,7 @@ export function Ecommerce() {
       </section>
 
       {/* Our Approach Section - 3 Column Layout */}
-      <section className="py-24 bg-[#0a1628] text-white">
+      <section className="py-24 bg-base text-white">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -164,7 +164,7 @@ export function Ecommerce() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
               Our Approach
             </span>
             <h2 className="text-4xl md:text-5xl font-bold eb-garamond">
@@ -217,7 +217,7 @@ export function Ecommerce() {
       </section>
 
       {/* How We Can Help - H100 Capability Cards */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -226,13 +226,13 @@ export function Ecommerce() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#051C2C] mb-6 eb-garamond">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6 eb-garamond">
               Our E-commerce Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               Comprehensive e-commerce services from strategy to implementation.
             </p>
           </motion.div>
@@ -295,10 +295,10 @@ export function Ecommerce() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Client Results
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#051C2C] eb-garamond">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal eb-garamond">
               Driving e-commerce transformation
             </h2>
           </motion.div>
@@ -334,18 +334,18 @@ export function Ecommerce() {
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute top-4 left-4">
-                      <span className="px-3 py-1 bg-[#0077B5] text-white text-xs font-bold uppercase tracking-wider rounded">
+                      <span className="px-3 py-1 bg-primary text-white text-xs font-bold uppercase tracking-wider rounded">
                         {study.category}
                       </span>
                     </div>
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 group-hover:text-[#0077B5] transition-colors leading-tight">
+                  <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                     {study.title}
                   </h3>
-                  <p className="text-[#051C2C]/60 text-sm leading-relaxed mb-4">
+                  <p className="text-charcoal/60 text-sm leading-relaxed mb-4">
                     {study.description}
                   </p>
-                  <div className="flex items-center text-[#0077B5] text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                  <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                     Read case study <ArrowRight className="ml-2 w-4 h-4" />
                   </div>
                 </Link>
@@ -356,7 +356,7 @@ export function Ecommerce() {
       </section>
 
       {/* Latest Insights Section */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
             <motion.div
@@ -365,18 +365,18 @@ export function Ecommerce() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Insights
               </span>
-              <h2 className="text-4xl md:text-5xl font-bold text-[#051C2C] eb-garamond">
+              <h2 className="text-4xl md:text-5xl font-bold text-charcoal eb-garamond">
                 Latest Insights
               </h2>
-              <p className="text-xl text-[#051C2C]/60 mt-4">
+              <p className="text-xl text-charcoal/60 mt-4">
                 Expert perspectives on e-commerce strategy and execution.
               </p>
             </motion.div>
             <Link href="/insights">
-              <Button variant="outline" className="border-[#051C2C]/20 text-[#051C2C] hover:bg-[#051C2C]/5 bg-transparent transition-all duration-300">
+              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/5 bg-transparent transition-all duration-300">
                 View all insights
               </Button>
             </Link>
@@ -414,19 +414,19 @@ export function Ecommerce() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={insight.link} className="group block h-full">
-                  <div className="h-full p-8 rounded-xl bg-white border border-gray-200 hover:border-[#0077B5]/50 transition-all duration-300 hover:shadow-lg">
+                  <div className="h-full p-8 rounded-xl bg-white border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
                     <div className="flex items-center gap-3 mb-4">
-                      <span className="text-[#0077B5] text-xs font-bold uppercase tracking-wider">{insight.category}</span>
-                      <span className="text-[#051C2C]/40">•</span>
-                      <span className="text-[#051C2C]/60 text-sm">{insight.readTime}</span>
+                      <span className="text-primary text-xs font-bold uppercase tracking-wider">{insight.category}</span>
+                      <span className="text-charcoal/40">•</span>
+                      <span className="text-charcoal/60 text-sm">{insight.readTime}</span>
                     </div>
-                    <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 group-hover:text-[#0077B5] transition-colors leading-tight">
+                    <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                       {insight.title}
                     </h3>
-                    <p className="text-[#051C2C]/60 text-sm leading-relaxed mb-6">
+                    <p className="text-charcoal/60 text-sm leading-relaxed mb-6">
                       {insight.description}
                     </p>
-                    <div className="flex items-center text-[#0077B5] text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                    <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                       Read article <ArrowRight className="ml-2 w-4 h-4" />
                     </div>
                   </div>
@@ -447,10 +447,10 @@ export function Ecommerce() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Related Capabilities
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#051C2C] mb-6 eb-garamond">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6 eb-garamond">
               Explore related capabilities
             </h2>
           </motion.div>
@@ -489,7 +489,7 @@ export function Ecommerce() {
       </section>
 
       {/* CTA Section - Blue Background */}
-      <section className="py-24 bg-[#0077B5]">
+      <section className="py-24 bg-primary">
         <div className="container px-4 md:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -504,7 +504,7 @@ export function Ecommerce() {
               Let's discuss how modern commerce architecture can accelerate your growth and create sustainable competitive advantage.
             </p>
             <Link href="/contact">
-              <Button className="bg-white hover:bg-gray-100 text-[#051C2C] px-10 py-6 text-lg font-semibold transition-all">
+              <Button className="bg-white hover:bg-subtle text-charcoal px-10 py-6 text-lg font-semibold transition-all">
                 Start Your Commerce Transformation
               </Button>
             </Link>

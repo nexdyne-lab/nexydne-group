@@ -108,7 +108,7 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-gray-900 mb-3">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-charcoal mb-3">
               Contact Us
             </h1>
           </motion.div>
@@ -120,14 +120,14 @@ export default function Contact() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="grid lg:grid-cols-[300px_1fr] gap-8 lg:gap-16 pb-12 border-b border-gray-200"
+              className="grid lg:grid-cols-[300px_1fr] gap-8 lg:gap-16 pb-12 border-b border-border"
             >
               <div />
               <div>
-                <p className="text-lg text-gray-900 mb-4">
+                <p className="text-lg text-charcoal mb-4">
                   So we can help serve you better, please complete the form below.
                 </p>
-                <p className="text-gray-600">
+                <p className="text-muted-foreground">
                   Please note, due to the volume of inquiries, we cannot respond to everyone. 
                   Where we can, we will respond as soon as possible.
                 </p>
@@ -139,18 +139,18 @@ export default function Contact() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="grid lg:grid-cols-[300px_1fr] gap-8 lg:gap-16 py-12 border-b border-gray-200"
+              className="grid lg:grid-cols-[300px_1fr] gap-8 lg:gap-16 py-12 border-b border-border"
             >
               <div />
               <div className="space-y-2">
-                <label className="block text-sm text-gray-500">
-                  <span className="text-red-600">*</span> Reason for contacting NexDyne:
+                <label className="block text-sm text-muted-foreground">
+                  <span className="text-destructive">*</span> Reason for contacting NexDyne:
                 </label>
                 <Select 
                   value={formData.reason} 
                   onValueChange={(value) => setFormData({ ...formData, reason: value })}
                 >
-                  <SelectTrigger className="w-full h-12 border-gray-300 focus:border-gray-900 focus:ring-0 rounded-none">
+                  <SelectTrigger className="w-full h-12 border-border focus:border-gray-900 focus:ring-0 rounded-none">
                     <SelectValue placeholder="Reason for contacting NexDyne" />
                   </SelectTrigger>
                   <SelectContent>
@@ -169,66 +169,66 @@ export default function Contact() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="grid lg:grid-cols-[300px_1fr] gap-8 lg:gap-16 py-12 border-b border-gray-200"
+              className="grid lg:grid-cols-[300px_1fr] gap-8 lg:gap-16 py-12 border-b border-border"
             >
               <div>
-                <h2 className="text-2xl md:text-3xl font-serif text-gray-900">
+                <h2 className="text-2xl md:text-3xl font-serif text-charcoal">
                   About you
                 </h2>
               </div>
               <div className="space-y-6">
                 {/* First Name */}
                 <div className="space-y-2">
-                  <label className="block text-sm text-gray-500">
-                    <span className="text-red-600">*</span> First Name
+                  <label className="block text-sm text-muted-foreground">
+                    <span className="text-destructive">*</span> First Name
                   </label>
                   <Input
                     type="text"
                     value={formData.firstName}
                     onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                    className="w-full h-12 border-gray-300 focus:border-gray-900 focus:ring-0 rounded-none"
+                    className="w-full h-12 border-border focus:border-gray-900 focus:ring-0 rounded-none"
                     required
                   />
                 </div>
 
                 {/* Last Name */}
                 <div className="space-y-2">
-                  <label className="block text-sm text-gray-500">
-                    <span className="text-red-600">*</span> Last Name
+                  <label className="block text-sm text-muted-foreground">
+                    <span className="text-destructive">*</span> Last Name
                   </label>
                   <Input
                     type="text"
                     value={formData.lastName}
                     onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                    className="w-full h-12 border-gray-300 focus:border-gray-900 focus:ring-0 rounded-none"
+                    className="w-full h-12 border-border focus:border-gray-900 focus:ring-0 rounded-none"
                     required
                   />
                 </div>
 
                 {/* Email */}
                 <div className="space-y-2">
-                  <label className="block text-sm text-gray-500">
-                    <span className="text-red-600">*</span> Email Address
+                  <label className="block text-sm text-muted-foreground">
+                    <span className="text-destructive">*</span> Email Address
                   </label>
                   <Input
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full h-12 border-gray-300 focus:border-gray-900 focus:ring-0 rounded-none"
+                    className="w-full h-12 border-border focus:border-gray-900 focus:ring-0 rounded-none"
                     required
                   />
                 </div>
 
                 {/* Phone */}
                 <div className="space-y-2">
-                  <label className="block text-sm text-gray-500">
+                  <label className="block text-sm text-muted-foreground">
                     Phone Number:
                   </label>
                   <Input
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full h-12 border-gray-300 focus:border-gray-900 focus:ring-0 rounded-none"
+                    className="w-full h-12 border-border focus:border-gray-900 focus:ring-0 rounded-none"
                   />
                 </div>
               </div>
@@ -239,24 +239,24 @@ export default function Contact() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="grid lg:grid-cols-[300px_1fr] gap-8 lg:gap-16 py-12 border-b border-gray-200"
+              className="grid lg:grid-cols-[300px_1fr] gap-8 lg:gap-16 py-12 border-b border-border"
             >
               <div>
-                <h2 className="text-2xl md:text-3xl font-serif text-gray-900">
+                <h2 className="text-2xl md:text-3xl font-serif text-charcoal">
                   About your business
                 </h2>
               </div>
               <div className="space-y-6">
                 {/* Company Name */}
                 <div className="space-y-2">
-                  <label className="block text-sm text-gray-500">
-                    <span className="text-red-600">*</span> Company Name:
+                  <label className="block text-sm text-muted-foreground">
+                    <span className="text-destructive">*</span> Company Name:
                   </label>
                   <Input
                     type="text"
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                    className="w-full h-12 border-gray-300 focus:border-gray-900 focus:ring-0 rounded-none"
+                    className="w-full h-12 border-border focus:border-gray-900 focus:ring-0 rounded-none"
                   />
                 </div>
               </div>
@@ -267,24 +267,24 @@ export default function Contact() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="grid lg:grid-cols-[300px_1fr] gap-8 lg:gap-16 py-12 border-b border-gray-200"
+              className="grid lg:grid-cols-[300px_1fr] gap-8 lg:gap-16 py-12 border-b border-border"
             >
               <div>
-                <h2 className="text-2xl md:text-3xl font-serif text-gray-900">
+                <h2 className="text-2xl md:text-3xl font-serif text-charcoal">
                   Your message
                 </h2>
               </div>
               <div className="space-y-6">
                 {/* Message */}
                 <div className="space-y-2">
-                  <label className="block text-sm text-gray-500">
-                    <span className="text-red-600">*</span> Message:
+                  <label className="block text-sm text-muted-foreground">
+                    <span className="text-destructive">*</span> Message:
                   </label>
                   <Textarea
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Describe your reason for contacting NexDyne in 1,500 characters or less..."
-                    className="w-full min-h-[200px] border-gray-300 focus:border-gray-900 focus:ring-0 rounded-none resize-none"
+                    className="w-full min-h-[200px] border-border focus:border-gray-900 focus:ring-0 rounded-none resize-none"
                     maxLength={1500}
                   />
                 </div>
@@ -310,10 +310,10 @@ export default function Contact() {
                     }
                     className="mt-1 border-gray-400 data-[state=checked]:bg-red-600 data-[state=checked]:border-red-600"
                   />
-                  <label htmlFor="privacy" className="text-sm text-gray-600 cursor-pointer">
-                    <span className="text-red-600">*</span> I have read the{' '}
+                  <label htmlFor="privacy" className="text-sm text-muted-foreground cursor-pointer">
+                    <span className="text-destructive">*</span> I have read the{' '}
                     <Link href="/privacy">
-                      <a className="text-red-600 hover:underline">Privacy Policy</a>
+                      <a className="text-destructive hover:underline">Privacy Policy</a>
                     </Link>{' '}
                     and agree to its terms.
                   </label>

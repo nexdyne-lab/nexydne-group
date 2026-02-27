@@ -38,7 +38,7 @@ function FAQSection() {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-white text-[#051C2C]">
+    <section className="py-20 md:py-28 bg-white text-charcoal">
       <div className="container px-4 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -47,7 +47,7 @@ function FAQSection() {
           transition={{ duration: 0.6 }}
           className="max-w-4xl mb-12"
         >
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
             Frequently Asked Questions
           </span>
           <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight">
@@ -63,15 +63,15 @@ function FAQSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
-              className="border border-[#051C2C]/10 rounded-lg overflow-hidden"
+              className="border border-base/10 rounded-lg overflow-hidden"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-[#F8F9FA] transition-colors"
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-subtle transition-colors"
               >
                 <span className="font-semibold text-lg pr-4">{faq.question}</span>
                 <ChevronDown 
-                  className={`w-5 h-5 text-[#0077B5] flex-shrink-0 transition-transform duration-300 ${
+                  className={`w-5 h-5 text-primary flex-shrink-0 transition-transform duration-300 ${
                     openIndex === index ? 'rotate-180' : ''
                   }`} 
                 />
@@ -81,7 +81,7 @@ function FAQSection() {
                   openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
-                <p className="px-6 pb-6 text-[#051C2C]/70 leading-relaxed">
+                <p className="px-6 pb-6 text-charcoal/70 leading-relaxed">
                   {faq.answer}
                 </p>
               </div>
@@ -95,7 +95,7 @@ function FAQSection() {
 
 export default function MidMarketAIAccess() {
   return (
-    <div className="min-h-screen bg-[#051C2C] font-sans text-white selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
       <SEO 
         title="Mid-Market AI Access Program | NexDyne Initiatives" 
         description="Expanding access to enterprise-grade AI for America's mid-market companies. A national effort to make advanced AI, analytics, and automation accessible."
@@ -113,7 +113,7 @@ export default function MidMarketAIAccess() {
             className="absolute inset-0 w-full h-full object-cover"
           />
           {/* Dark overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#051C2C] via-[#051C2C]/90 to-[#051C2C]/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/90 to-base/60" />
           {/* Subtle geometric pattern */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute top-20 right-20 w-96 h-96 border border-white/20 rounded-full" />
@@ -135,7 +135,7 @@ export default function MidMarketAIAccess() {
               </span>
             </Link>
             
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Mid-Market AI Access Program
             </span>
             
@@ -151,7 +151,7 @@ export default function MidMarketAIAccess() {
       </section>
 
       {/* What It Is - With Side Image */}
-      <section className="py-20 md:py-28 bg-white text-[#051C2C]">
+      <section className="py-20 md:py-28 bg-white text-charcoal">
         <div className="container px-4 md:px-12">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl">
             <motion.div
@@ -160,14 +160,14 @@ export default function MidMarketAIAccess() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
                 What It Is
               </span>
               <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-8">
                 A national effort to close the AI gap
               </h2>
               
-              <div className="prose prose-lg max-w-none text-[#051C2C]/70">
+              <div className="prose prose-lg max-w-none text-charcoal/70">
                 <p className="text-lg leading-relaxed mb-6">
                   The Mid-Market AI Access Program is designed to bring enterprise-grade AI capabilities to companies that have been systematically excluded from the AI revolution. While Fortune 500 companies have invested billions in AI infrastructure, mid-market businesses—those with $50M to $1B in revenue—have been left behind.
                 </p>
@@ -193,14 +193,14 @@ export default function MidMarketAIAccess() {
                 />
               </div>
               {/* Decorative element */}
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-[#0077B5]/10 rounded-lg -z-10" />
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-lg -z-10" />
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Who It Serves */}
-      <section className="py-20 md:py-28 bg-[#F8F9FA] text-[#051C2C]">
+      <section className="py-20 md:py-28 bg-subtle text-charcoal">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -209,13 +209,13 @@ export default function MidMarketAIAccess() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mb-12"
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Who It Serves
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-6">
               America's mid-market economy
             </h2>
-            <p className="text-lg text-[#051C2C]/70 leading-relaxed">
+            <p className="text-lg text-charcoal/70 leading-relaxed">
               The program focuses on companies that form the backbone of regional economies—businesses large enough to benefit from AI but historically excluded from enterprise technology.
             </p>
           </motion.div>
@@ -261,11 +261,11 @@ export default function MidMarketAIAccess() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="bg-white p-6 rounded-lg"
               >
-                <div className="w-10 h-10 bg-[#0077B5]/10 rounded-lg flex items-center justify-center mb-4">
-                  <item.icon className="w-5 h-5 text-[#0077B5]" />
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <item.icon className="w-5 h-5 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm text-[#051C2C]/60 leading-relaxed">{item.description}</p>
+                <p className="text-sm text-charcoal/60 leading-relaxed">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -273,7 +273,7 @@ export default function MidMarketAIAccess() {
       </section>
 
       {/* Why It Matters - With Full Width Image */}
-      <section className="py-20 md:py-28 bg-[#051C2C]">
+      <section className="py-20 md:py-28 bg-base">
         <div className="container px-4 md:px-12">
           {/* Full width image banner */}
           <motion.div
@@ -332,7 +332,7 @@ export default function MidMarketAIAccess() {
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="flex items-start gap-3"
                 >
-                  <div className="w-1.5 h-1.5 bg-[#0077B5] rounded-full mt-2.5 flex-shrink-0" />
+                  <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2.5 flex-shrink-0" />
                   <span className="text-white/80">{impact}</span>
                 </motion.div>
               ))}
@@ -342,7 +342,7 @@ export default function MidMarketAIAccess() {
       </section>
 
       {/* Measured Impact */}
-      <section className="py-20 md:py-28 bg-white text-[#051C2C]">
+      <section className="py-20 md:py-28 bg-white text-charcoal">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -351,13 +351,13 @@ export default function MidMarketAIAccess() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mb-12"
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Measured Impact
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-6">
               Program goals and outcomes
             </h2>
-            <p className="text-lg text-[#051C2C]/70 leading-relaxed">
+            <p className="text-lg text-charcoal/70 leading-relaxed">
               The Mid-Market AI Access Program is designed with measurable outcomes that track progress toward closing the AI gap for American businesses.
             </p>
           </motion.div>
@@ -377,8 +377,8 @@ export default function MidMarketAIAccess() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="text-center"
               >
-                <p className="text-4xl md:text-5xl font-serif font-bold text-[#0077B5] mb-2">{item.metric}</p>
-                <p className="text-sm text-[#051C2C]/60">{item.label}</p>
+                <p className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">{item.metric}</p>
+                <p className="text-sm text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -386,7 +386,7 @@ export default function MidMarketAIAccess() {
       </section>
 
       {/* Program Components */}
-      <section className="py-20 md:py-28 bg-[#F8F9FA] text-[#051C2C]">
+      <section className="py-20 md:py-28 bg-subtle text-charcoal">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -395,13 +395,13 @@ export default function MidMarketAIAccess() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mb-12"
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Program Components
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-6">
               What the program includes
             </h2>
-            <p className="text-lg text-[#051C2C]/70 leading-relaxed">
+            <p className="text-lg text-charcoal/70 leading-relaxed">
               A comprehensive suite of tools, training, and support designed to accelerate AI adoption for mid-market companies.
             </p>
           </motion.div>
@@ -441,15 +441,15 @@ export default function MidMarketAIAccess() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="bg-white p-8 rounded-lg"
               >
-                <div className="w-12 h-12 bg-[#0077B5]/10 rounded-lg flex items-center justify-center mb-6">
-                  <component.icon className="w-6 h-6 text-[#0077B5]" />
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                  <component.icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">{component.title}</h3>
-                <p className="text-[#051C2C]/60 leading-relaxed mb-4">{component.description}</p>
+                <p className="text-charcoal/60 leading-relaxed mb-4">{component.description}</p>
                 <ul className="space-y-2">
                   {component.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-sm text-[#051C2C]/70">
-                      <CheckCircle2 className="w-4 h-4 text-[#0077B5]" />
+                    <li key={idx} className="flex items-center gap-2 text-sm text-charcoal/70">
+                      <CheckCircle2 className="w-4 h-4 text-primary" />
                       {feature}
                     </li>
                   ))}
@@ -464,7 +464,7 @@ export default function MidMarketAIAccess() {
       <FAQSection />
 
       {/* Related Initiatives - With Images */}
-      <section className="py-20 md:py-28 bg-[#F8F9FA] text-[#051C2C]">
+      <section className="py-20 md:py-28 bg-subtle text-charcoal">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -473,7 +473,7 @@ export default function MidMarketAIAccess() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mb-12"
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Related Initiatives
             </span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight">
@@ -499,16 +499,16 @@ export default function MidMarketAIAccess() {
                   />
                 </div>
                 <div className="p-8">
-                  <span className="text-xs font-semibold uppercase tracking-[0.15em] text-[#0077B5] mb-3 block">
+                  <span className="text-xs font-semibold uppercase tracking-[0.15em] text-primary mb-3 block">
                     NexDyne Intelligence Commons
                   </span>
-                  <h3 className="text-xl font-serif font-bold mb-3 group-hover:text-[#0077B5] transition-colors">
+                  <h3 className="text-xl font-serif font-bold mb-3 group-hover:text-primary transition-colors">
                     Democratizing Business Intelligence for Growing Companies
                   </h3>
-                  <p className="text-sm text-[#051C2C]/60 mb-4">
+                  <p className="text-sm text-charcoal/60 mb-4">
                     A free-to-start AI-powered intelligence platform for market signals, competitive benchmarking, and growth scenario modeling.
                   </p>
-                  <span className="inline-flex items-center text-sm font-medium text-[#051C2C]/70 group-hover:text-[#0077B5] transition-colors">
+                  <span className="inline-flex items-center text-sm font-medium text-charcoal/70 group-hover:text-primary transition-colors">
                     Learn more
                     <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
                   </span>
@@ -533,16 +533,16 @@ export default function MidMarketAIAccess() {
                   />
                 </div>
                 <div className="p-8">
-                  <span className="text-xs font-semibold uppercase tracking-[0.15em] text-[#0077B5] mb-3 block">
+                  <span className="text-xs font-semibold uppercase tracking-[0.15em] text-primary mb-3 block">
                     Regional Business Intelligence Partnerships
                   </span>
-                  <h3 className="text-xl font-serif font-bold mb-3 group-hover:text-[#0077B5] transition-colors">
+                  <h3 className="text-xl font-serif font-bold mb-3 group-hover:text-primary transition-colors">
                     Partnering With Local Chambers to Build Data-Driven Growth Ecosystems
                   </h3>
-                  <p className="text-sm text-[#051C2C]/60 mb-4">
+                  <p className="text-sm text-charcoal/60 mb-4">
                     Collaborating with chambers of commerce and economic development organizations to deliver structured intelligence for businesses.
                   </p>
-                  <span className="inline-flex items-center text-sm font-medium text-[#051C2C]/70 group-hover:text-[#0077B5] transition-colors">
+                  <span className="inline-flex items-center text-sm font-medium text-charcoal/70 group-hover:text-primary transition-colors">
                     Learn more
                     <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
                   </span>

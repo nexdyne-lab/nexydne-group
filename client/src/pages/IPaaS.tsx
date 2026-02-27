@@ -10,14 +10,14 @@ export default function IPaaS() {
       <Navigation />
       
       {/* Breadcrumb */}
-      <div className="container py-4 text-sm text-gray-600">
-        <Link href="/" className="hover:text-gray-900">Home</Link>
+      <div className="container py-4 text-sm text-muted-foreground">
+        <Link href="/" className="hover:text-charcoal">Home</Link>
         <span className="mx-2">/</span>
-        <Link href="/solutions/intelligent-process-optimization" className="hover:text-gray-900">Intelligent Process Optimization</Link>
+        <Link href="/solutions/intelligent-process-optimization" className="hover:text-charcoal">Intelligent Process Optimization</Link>
         <span className="mx-2">/</span>
-        <Link href="/solutions/intelligent-process-optimization/process-automation" className="hover:text-gray-900">Process Automation</Link>
+        <Link href="/solutions/intelligent-process-optimization/process-automation" className="hover:text-charcoal">Process Automation</Link>
         <span className="mx-2">/</span>
-        <span className="text-gray-900">iPaaS</span>
+        <span className="text-charcoal">iPaaS</span>
       </div>
 
       {/* Hero Section */}
@@ -44,31 +44,31 @@ export default function IPaaS() {
         <div className="container">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 max-w-6xl mx-auto">
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <Network className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Unified command center</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Unified command center</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 One platform connects all systems and workflows intuitively. Centralize business logic to enable rapid adjustments and maintain complete visibility.
               </p>
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <Zap className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Instant connectivity</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Instant connectivity</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 Connect new systems without custom development. Adapt quickly to market changes—your technology infrastructure accelerates growth instead of constraining it.
               </p>
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <BarChart3 className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Strategic integration</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Strategic integration</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 Move beyond point solutions. Integrate entire business processes to gain strategic insights into data flows and unlock operational intelligence.
               </p>
             </div>
@@ -77,16 +77,16 @@ export default function IPaaS() {
       </section>
 
       {/* What is iPaaS Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container max-w-5xl mx-auto">
           <div className="mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Understanding iPaaS</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Understanding iPaaS</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               The integration challenge
             </h2>
           </div>
           
-          <div className="prose prose-xl max-w-none text-gray-700 leading-relaxed space-y-6">
+          <div className="prose prose-xl max-w-none text-charcoal/80 leading-relaxed space-y-6">
             <p>
               Most organizations struggle with fragmented technology landscapes—applications that don't communicate, manual data transfers between systems, and isolated information silos that prevent holistic decision-making. Sales data lives in the CRM, financial information sits in the ERP, customer service records exist in separate ticketing systems, and marketing runs on yet another platform. The result: inefficiency, errors, and strategic blindness.
             </p>
@@ -99,11 +99,11 @@ export default function IPaaS() {
           </div>
 
           {/* Quote */}
-          <div className="mt-12 border-l-4 border-[#2D5BFF] pl-8 py-6 bg-white">
+          <div className="mt-12 border-l-4 border-primary pl-8 py-6 bg-white">
             <p className="text-xl italic text-gray-800 mb-4">
               "We had eight different systems that required manual data synchronization. iPaaS eliminated all the spreadsheet exports and manual transfers—now data flows automatically, and we have real-time visibility across the entire business."
             </p>
-            <p className="text-lg font-semibold text-gray-900">CTO, Manufacturing Company</p>
+            <p className="text-lg font-semibold text-charcoal">CTO, Manufacturing Company</p>
           </div>
         </div>
       </section>
@@ -132,7 +132,7 @@ export default function IPaaS() {
               <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-slate-900">1</span>
+                    <span className="text-2xl font-bold text-charcoal">1</span>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Landscape Assessment</h3>
@@ -146,7 +146,7 @@ export default function IPaaS() {
               <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-slate-900">2</span>
+                    <span className="text-2xl font-bold text-charcoal">2</span>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Platform Implementation</h3>
@@ -160,7 +160,7 @@ export default function IPaaS() {
               <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-slate-900">3</span>
+                    <span className="text-2xl font-bold text-charcoal">3</span>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Scale & Govern</h3>
@@ -179,57 +179,57 @@ export default function IPaaS() {
       <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-white">
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Platform Capabilities</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Platform Capabilities</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               Comprehensive integration infrastructure
             </h2>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-7xl mx-auto">
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Cloud className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Pre-built Connectors</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Cloud className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Pre-built Connectors</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Hundreds of ready-to-use connectors for popular applications—CRM, ERP, marketing automation, databases, cloud services, and legacy systems.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <GitBranch className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Visual Workflow Designer</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <GitBranch className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Visual Workflow Designer</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Intuitive drag-and-drop interface enables business users to create and modify integrations without writing code or waiting for IT resources.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <BarChart3 className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Real-time Monitoring</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <BarChart3 className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Real-time Monitoring</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Centralized dashboard provides visibility into all integrations, data flows, errors, and performance metrics for proactive management.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Lock className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Security & Compliance</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Lock className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Security & Compliance</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Enterprise-grade security, encryption, access controls, and audit trails ensure data protection and regulatory compliance.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Zap className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Data Transformation</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Zap className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Data Transformation</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Powerful mapping and transformation tools handle format conversions, data enrichment, validation, and cleansing during integration.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Network className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">API Management</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Network className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">API Management</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Create, publish, and manage APIs that expose your business capabilities to partners, customers, and internal applications.
               </p>
             </div>
@@ -238,25 +238,25 @@ export default function IPaaS() {
       </section>
 
       {/* Related Services Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Related Capabilities</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Related Capabilities</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               Complementary automation technologies
             </h2>
           </div>
           
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 max-w-5xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/process-automation/rpa" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 h-full bg-white">
-                <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+                <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   RPA (Robotic Process Automation)
                 </h3>
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <p className="text-charcoal/80 mb-4 leading-relaxed">
                   Deploy intelligent software robots to handle repetitive, rule-based tasks across systems—eliminating manual effort and human error.
                 </p>
-                <div className="flex items-center text-[#2D5BFF] font-semibold">
+                <div className="flex items-center text-primary font-semibold">
                   Learn more
                   <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -264,14 +264,14 @@ export default function IPaaS() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/process-automation/process-orchestration" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 h-full bg-white">
-                <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+                <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   Process Orchestration
                 </h3>
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <p className="text-charcoal/80 mb-4 leading-relaxed">
                   Coordinate complex, multi-step workflows across teams, departments, and systems to ensure flawless end-to-end execution.
                 </p>
-                <div className="flex items-center text-[#2D5BFF] font-semibold">
+                <div className="flex items-center text-primary font-semibold">
                   Learn more
                   <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -291,7 +291,7 @@ export default function IPaaS() {
             Schedule a complimentary consultation to explore how iPaaS can eliminate data silos, streamline workflows, and unlock the full potential of your technology investments.
           </p>
           <Link href="/contact">
-            <Button size="lg" className="bg-[#2D5BFF] hover:bg-[#1e40af] text-white text-lg px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6">
+            <Button size="lg" className="bg-primary hover:bg-primary-hover text-white text-lg px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6">
               Schedule consultation
               <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
             </Button>

@@ -55,8 +55,8 @@ export function PartnerEcosystem({
               Trusted Partners
             </span>
           </div>
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">{title}</h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">{subtitle}</p>
+          <h2 className="text-4xl font-bold text-charcoal mb-4">{title}</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{subtitle}</p>
         </div>
 
         {/* Partners by Category */}
@@ -65,7 +65,7 @@ export function PartnerEcosystem({
             <div key={category}>
               <div className="flex items-center gap-3 mb-6">
                 <div className={`w-1 h-8 rounded-full bg-gradient-to-b ${categoryColors[category as keyof typeof categoryColors]}`} />
-                <h3 className="text-2xl font-bold text-slate-900">
+                <h3 className="text-2xl font-bold text-charcoal">
                   {categoryLabels[category as keyof typeof categoryLabels]}
                 </h3>
               </div>
@@ -84,7 +84,7 @@ export function PartnerEcosystem({
                     ) : (
                       <div className={`h-12 w-full rounded bg-gradient-to-r ${categoryColors[partner.category]} opacity-20 mb-3`} />
                     )}
-                    <p className="text-sm font-semibold text-slate-700 text-center">
+                    <p className="text-sm font-semibold text-charcoal/80 text-center">
                       {partner.name}
                     </p>
                     {partner.badge && (
@@ -104,13 +104,13 @@ export function PartnerEcosystem({
           <div className="bg-white border border-slate-200 rounded-lg p-4 sm:p-6 md:p-4 sm:p-6 md:p-8">
             <div className="flex items-center gap-3 mb-6">
               <Award className="w-6 h-6 text-cyan-600" />
-              <h3 className="text-2xl font-bold text-slate-900">Certifications & Accreditations</h3>
+              <h3 className="text-2xl font-bold text-charcoal">Certifications & Accreditations</h3>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {certifications.map((cert, index) => (
                 <div key={index} className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">
                   <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-600 flex-shrink-0" />
-                  <span className="text-slate-700 font-medium">{cert}</span>
+                  <span className="text-charcoal/80 font-medium">{cert}</span>
                 </div>
               ))}
             </div>
@@ -121,7 +121,7 @@ export function PartnerEcosystem({
         <div className="mt-12 text-center">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 rounded-full px-6 py-3">
             <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-600" />
-            <p className="text-slate-700 font-medium">
+            <p className="text-charcoal/80 font-medium">
               Leveraging best-of-breed technologies to accelerate your digital transformation
             </p>
           </div>

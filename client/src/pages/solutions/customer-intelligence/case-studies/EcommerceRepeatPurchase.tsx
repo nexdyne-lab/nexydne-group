@@ -9,7 +9,7 @@ import { RelatedContent } from "@/components/RelatedContent";
 
 export default function EcommerceRepeatPurchase() {
   return (
-    <div className="min-h-screen bg-[#051C2C] font-sans text-white selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
       <SEO 
         title="E-commerce Repeat Purchase Case Study | Customer Intelligence" 
         description="How a specialty retailer increased repeat purchase rate by 42% using predictive analytics and personalized recommendations."
@@ -25,8 +25,8 @@ export default function EcommerceRepeatPurchase() {
             alt="E-commerce Analytics" 
             className="w-full h-full object-cover opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#051C2C] via-[#051C2C]/90 to-[#051C2C]/70" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#051C2C] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/90 to-base/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent" />
         </div>
         
         <div className="container px-4 md:px-12 relative z-10">
@@ -35,12 +35,12 @@ export default function EcommerceRepeatPurchase() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <Link href="/solutions/data-driven-customer-intelligence/case-studies" className="inline-flex items-center text-white/60 hover:text-[#0077B5] mb-8 transition-colors">
+            <Link href="/solutions/data-driven-customer-intelligence/case-studies" className="inline-flex items-center text-white/60 hover:text-primary mb-8 transition-colors">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Case Studies
             </Link>
             
-            <div className="text-[#0077B5] text-xs font-bold uppercase tracking-[0.2em] mb-6">
+            <div className="text-primary text-xs font-bold uppercase tracking-[0.2em] mb-6">
               E-commerce • Case Study
             </div>
             
@@ -54,15 +54,15 @@ export default function EcommerceRepeatPurchase() {
 
             <div className="flex flex-wrap gap-8">
               <div>
-                <div className="text-4xl font-serif font-bold text-[#0077B5]">42%</div>
+                <div className="text-4xl font-serif font-bold text-primary">42%</div>
                 <div className="text-white/60 text-sm">Repeat purchase increase</div>
               </div>
               <div>
-                <div className="text-4xl font-serif font-bold text-[#0077B5]">$1.2M</div>
+                <div className="text-4xl font-serif font-bold text-primary">$1.2M</div>
                 <div className="text-white/60 text-sm">Annual revenue lift</div>
               </div>
               <div>
-                <div className="text-4xl font-serif font-bold text-[#0077B5]">3.2x</div>
+                <div className="text-4xl font-serif font-bold text-primary">3.2x</div>
                 <div className="text-white/60 text-sm">Campaign ROI</div>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function EcommerceRepeatPurchase() {
       </section>
 
       {/* Overview Section */}
-      <section className="py-24 bg-white text-[#051C2C]">
+      <section className="py-24 bg-white text-charcoal">
         <div className="container px-4 md:px-12">
           <div className="grid md:grid-cols-3 gap-16">
             <motion.div
@@ -81,13 +81,13 @@ export default function EcommerceRepeatPurchase() {
               transition={{ duration: 0.6 }}
               className="md:col-span-2"
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 The Challenge
               </span>
               <h2 className="text-3xl md:text-4xl eb-garamond font-bold mb-8">
                 Drowning in customer data, starving for actionable insights
               </h2>
-              <div className="prose prose-lg max-w-none text-[#051C2C]/70">
+              <div className="prose prose-lg max-w-none text-charcoal/70">
                 <p>
                   A specialty e-commerce retailer with 150 employees and $45M in annual revenue was struggling to turn their customer data into growth. Despite collecting extensive transaction histories, browsing behavior, and customer feedback, their marketing team relied on generic batch-and-blast campaigns that treated all customers the same.
                 </p>
@@ -112,27 +112,27 @@ export default function EcommerceRepeatPurchase() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <div className="bg-[#F8F9FA] p-8 rounded-xl">
+              <div className="bg-subtle p-8 rounded-xl">
                 <h3 className="font-serif font-bold text-xl mb-6">Project Overview</h3>
                 <div className="space-y-6">
                   <div>
-                    <div className="text-[#051C2C]/50 text-sm mb-1">Industry</div>
+                    <div className="text-charcoal/50 text-sm mb-1">Industry</div>
                     <div className="font-semibold">E-commerce / Retail</div>
                   </div>
                   <div>
-                    <div className="text-[#051C2C]/50 text-sm mb-1">Company Size</div>
+                    <div className="text-charcoal/50 text-sm mb-1">Company Size</div>
                     <div className="font-semibold">150 employees</div>
                   </div>
                   <div>
-                    <div className="text-[#051C2C]/50 text-sm mb-1">Revenue</div>
+                    <div className="text-charcoal/50 text-sm mb-1">Revenue</div>
                     <div className="font-semibold">$45M annually</div>
                   </div>
                   <div>
-                    <div className="text-[#051C2C]/50 text-sm mb-1">Timeline</div>
+                    <div className="text-charcoal/50 text-sm mb-1">Timeline</div>
                     <div className="font-semibold">16 weeks</div>
                   </div>
                   <div>
-                    <div className="text-[#051C2C]/50 text-sm mb-1">Services</div>
+                    <div className="text-charcoal/50 text-sm mb-1">Services</div>
                     <div className="font-semibold">Customer Data Platform, Predictive Analytics, Personalization</div>
                   </div>
                 </div>
@@ -143,7 +143,7 @@ export default function EcommerceRepeatPurchase() {
       </section>
 
       {/* Solution Section */}
-      <section className="py-24 bg-[#051C2C]">
+      <section className="py-24 bg-base">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -198,13 +198,13 @@ export default function EcommerceRepeatPurchase() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-white/5 p-8 rounded-xl"
               >
-                <div className="text-[#0077B5] text-sm font-bold mb-4">{item.phase}</div>
+                <div className="text-primary text-sm font-bold mb-4">{item.phase}</div>
                 <h3 className="text-xl font-serif font-bold text-white mb-4">{item.title}</h3>
                 <p className="text-white/60 leading-relaxed mb-6">{item.description}</p>
                 <ul className="space-y-3">
                   {item.outcomes.map((outcome, i) => (
                     <li key={i} className="flex items-center text-white/70 text-sm">
-                      <CheckCircle2 className="w-4 h-4 text-[#0077B5] mr-3 flex-shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-primary mr-3 flex-shrink-0" />
                       {outcome}
                     </li>
                   ))}
@@ -216,7 +216,7 @@ export default function EcommerceRepeatPurchase() {
       </section>
 
       {/* Results Section */}
-      <section className="py-24 bg-white text-[#051C2C]">
+      <section className="py-24 bg-white text-charcoal">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -225,7 +225,7 @@ export default function EcommerceRepeatPurchase() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Results
             </span>
             <h2 className="text-3xl md:text-4xl eb-garamond font-bold mb-6">
@@ -248,9 +248,9 @@ export default function EcommerceRepeatPurchase() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-5xl font-serif font-bold text-[#0077B5] mb-2">{stat.value}</div>
+                <div className="text-5xl font-serif font-bold text-primary mb-2">{stat.value}</div>
                 <div className="font-semibold mb-1">{stat.label}</div>
-                <div className="text-[#051C2C]/50 text-sm">{stat.detail}</div>
+                <div className="text-charcoal/50 text-sm">{stat.detail}</div>
               </motion.div>
             ))}
           </div>
@@ -261,22 +261,22 @@ export default function EcommerceRepeatPurchase() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-[#F8F9FA] p-12 rounded-2xl max-w-4xl mx-auto"
+            className="bg-subtle p-12 rounded-2xl max-w-4xl mx-auto"
           >
-            <Quote className="w-12 h-12 text-[#0077B5]/30 mb-6" />
-            <blockquote className="text-2xl font-serif italic text-[#051C2C]/80 leading-relaxed mb-8">
+            <Quote className="w-12 h-12 text-primary/30 mb-6" />
+            <blockquote className="text-2xl font-serif italic text-charcoal/80 leading-relaxed mb-8">
               "We were drowning in customer data but had no way to act on it. NEXDYNE built our CDP, unified our customer view, and deployed ML models that increased repeat purchases by 42%. The ROI was immediate and measurable."
             </blockquote>
             <div>
               <div className="font-bold text-lg">Lisa Martinez</div>
-              <div className="text-[#051C2C]/60">VP of Marketing</div>
+              <div className="text-charcoal/60">VP of Marketing</div>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* Key Learnings */}
-      <section className="py-24 bg-[#F8F9FA] text-[#051C2C]">
+      <section className="py-24 bg-subtle text-charcoal">
         <div className="container px-4 md:px-12">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -285,7 +285,7 @@ export default function EcommerceRepeatPurchase() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Key Learnings
               </span>
               <h2 className="text-3xl md:text-4xl eb-garamond font-bold mb-8">
@@ -311,12 +311,12 @@ export default function EcommerceRepeatPurchase() {
                   }
                 ].map((learning, index) => (
                   <div key={index} className="flex gap-4">
-                    <div className="w-8 h-8 bg-[#0077B5] rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold text-sm">
+                    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold text-sm">
                       {index + 1}
                     </div>
                     <div>
                       <h3 className="font-bold mb-2">{learning.title}</h3>
-                      <p className="text-[#051C2C]/60 leading-relaxed">{learning.description}</p>
+                      <p className="text-charcoal/60 leading-relaxed">{learning.description}</p>
                     </div>
                   </div>
                 ))}
@@ -364,7 +364,7 @@ export default function EcommerceRepeatPurchase() {
       />
 
       {/* CTA Section */}
-      <section className="py-24 bg-[#0077B5]">
+      <section className="py-24 bg-primary">
         <div className="container px-4 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
             <motion.div
@@ -380,7 +380,7 @@ export default function EcommerceRepeatPurchase() {
                 Let's discuss how we can help you unlock similar results for your business.
               </p>
               <Link href="/contact">
-                <Button className="bg-white text-[#0077B5] hover:bg-white/90 px-10 py-6 text-base font-semibold">
+                <Button className="bg-white text-primary hover:bg-white/90 px-10 py-6 text-base font-semibold transition-colors duration-200 ease-in-out">
                   Schedule a Consultation
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>

@@ -56,7 +56,7 @@ export default function MergersAcquisitions() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="M&A & Strategic Partnerships" 
         description="Navigate complex transactions with expert guidance. From target identification and valuation to negotiation and post-merger integration."
@@ -65,7 +65,7 @@ export default function MergersAcquisitions() {
       <Navbar />
       
       {/* Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[70vh] flex items-center pt-20 bg-black">
+      <section className="relative min-h-[70vh] flex items-center pt-20 bg-charcoal">
         <div className="container px-4 md:px-12 grid md:grid-cols-2 gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -87,7 +87,7 @@ export default function MergersAcquisitions() {
             
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
                   Schedule a Consultation
                 </Button>
               </Link>
@@ -115,14 +115,14 @@ export default function MergersAcquisitions() {
       </section>
 
       {/* Our Experience & Impact (F100) */}
-      <section className="py-20 bg-white border-b border-gray-200">
+      <section className="py-20 bg-white border-b border-border">
         <div className="container px-4 md:px-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-2xl font-['EB_Garamond'] font-bold text-[#051C2C] mb-12"
+            className="text-2xl font-['EB_Garamond'] font-bold text-charcoal mb-12"
           >
             Our Experience & Impact
           </motion.h2>
@@ -139,10 +139,10 @@ export default function MergersAcquisitions() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`${index > 0 ? 'border-l border-gray-200 pl-8' : ''}`}
+                className={`${index > 0 ? 'border-l border-border pl-8' : ''}`}
               >
-                <div className="text-5xl md:text-6xl font-bold text-[#051C2C] mb-4">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-5xl md:text-6xl font-bold text-charcoal mb-4">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -152,7 +152,7 @@ export default function MergersAcquisitions() {
       {/* Thought Leadership Paragraphs (F100) */}
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-12">
-          <div className="max-w-4xl mx-auto space-y-8 text-xl text-[#051C2C]/80 leading-relaxed">
+          <div className="max-w-4xl mx-auto space-y-8 text-xl text-charcoal/80 leading-relaxed">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -193,7 +193,7 @@ export default function MergersAcquisitions() {
       </section>
 
       {/* Our Approach Section - 3 Column Layout (F100) */}
-      <section className="py-24 bg-[#0a1628] text-white">
+      <section className="py-24 bg-base text-white">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -202,7 +202,7 @@ export default function MergersAcquisitions() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
               Our Approach
             </span>
             <h2 className="text-4xl md:text-5xl font-['EB_Garamond'] font-bold">
@@ -255,7 +255,7 @@ export default function MergersAcquisitions() {
       </section>
 
       {/* How We Can Help - Capability Cards with H100 */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -264,13 +264,13 @@ export default function MergersAcquisitions() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl font-['EB_Garamond'] font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl font-['EB_Garamond'] font-bold text-charcoal mb-6">
               Our M&A Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               Full-spectrum M&A support from strategy through integration.
             </p>
           </motion.div>
@@ -302,10 +302,10 @@ export default function MergersAcquisitions() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Client Results
             </span>
-            <h2 className="text-4xl md:text-5xl font-['EB_Garamond'] font-bold text-[#051C2C]">
+            <h2 className="text-4xl md:text-5xl font-['EB_Garamond'] font-bold text-charcoal">
               Successful transactions
             </h2>
           </motion.div>
@@ -340,13 +340,13 @@ export default function MergersAcquisitions() {
                       className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
-                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-3 block">
+                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3 block">
                     {item.category}
                   </span>
-                  <h3 className="text-2xl font-['EB_Garamond'] font-bold text-[#051C2C] mb-4 group-hover:text-[#0077B5] transition-colors">
+                  <h3 className="text-2xl font-['EB_Garamond'] font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-[#051C2C]/60 leading-relaxed">
+                  <p className="text-charcoal/60 leading-relaxed">
                     {item.description}
                   </p>
                 </Link>
@@ -357,7 +357,7 @@ export default function MergersAcquisitions() {
       </section>
 
       {/* Latest Insights Section (F100) */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -367,15 +367,15 @@ export default function MergersAcquisitions() {
             className="flex justify-between items-end mb-16"
           >
             <div>
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Latest Insights
               </span>
-              <h2 className="text-4xl md:text-5xl font-['EB_Garamond'] font-bold text-[#051C2C]">
+              <h2 className="text-4xl md:text-5xl font-['EB_Garamond'] font-bold text-charcoal">
                 M&A thought leadership
               </h2>
             </div>
             <Link href="/insights">
-              <Button variant="outline" className="border-[#051C2C]/20 text-[#051C2C] hover:bg-[#051C2C]/5 px-6 py-3">
+              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/5 px-6 py-3">
                 View all insights
               </Button>
             </Link>
@@ -411,14 +411,14 @@ export default function MergersAcquisitions() {
               >
                 <Link href="#" className="group block">
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="text-xs font-bold uppercase tracking-wider text-[#0077B5]">{item.category}</span>
-                    <span className="text-xs text-[#051C2C]/40">•</span>
-                    <span className="text-xs text-[#051C2C]/40">{item.readTime}</span>
+                    <span className="text-xs font-bold uppercase tracking-wider text-primary">{item.category}</span>
+                    <span className="text-xs text-charcoal/40">•</span>
+                    <span className="text-xs text-charcoal/40">{item.readTime}</span>
                   </div>
-                  <h3 className="text-xl font-['EB_Garamond'] font-bold text-[#051C2C] mb-3 group-hover:text-[#0077B5] transition-colors">
+                  <h3 className="text-xl font-['EB_Garamond'] font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-[#051C2C]/60 text-sm leading-relaxed">
+                  <p className="text-charcoal/60 text-sm leading-relaxed">
                     {item.description}
                   </p>
                 </Link>
@@ -438,10 +438,10 @@ export default function MergersAcquisitions() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Related Capabilities
             </span>
-            <h2 className="text-4xl md:text-5xl font-['EB_Garamond'] font-bold text-[#051C2C]">
+            <h2 className="text-4xl md:text-5xl font-['EB_Garamond'] font-bold text-charcoal">
               Explore related capabilities
             </h2>
           </motion.div>
@@ -464,7 +464,7 @@ export default function MergersAcquisitions() {
       </section>
 
       {/* CTA Section (F100) */}
-      <section className="py-24 bg-[#0077B5]">
+      <section className="py-24 bg-primary">
         <div className="container px-4 md:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -479,7 +479,7 @@ export default function MergersAcquisitions() {
               Let's discuss how we can help you navigate the complexities and maximize value.
             </p>
             <Link href="/contact">
-              <Button className="bg-white hover:bg-gray-100 text-[#051C2C] px-10 py-6 text-lg font-semibold transition-all">
+              <Button className="bg-white hover:bg-subtle text-charcoal px-10 py-6 text-lg font-semibold transition-all">
                 Schedule a Consultation
               </Button>
             </Link>

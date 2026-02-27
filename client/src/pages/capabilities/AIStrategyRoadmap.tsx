@@ -36,7 +36,7 @@ export default function AIStrategyRoadmap() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="AI Strategy & Roadmap" 
         description="Define your AI vision and create a prioritized implementation plan. We help you identify high-value use cases, build business cases, and chart a path from experimentation to enterprise-scale AI."
@@ -45,7 +45,7 @@ export default function AIStrategyRoadmap() {
       <Navigation />
 
       {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-black">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -64,7 +64,7 @@ export default function AIStrategyRoadmap() {
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
                   Schedule a Consultation
                 </Button>
               </Link>
@@ -92,7 +92,7 @@ export default function AIStrategyRoadmap() {
       </section>
 
       {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -101,7 +101,7 @@ export default function AIStrategyRoadmap() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-[#051C2C] eb-garamond">Our Experience & Impact</h2>
+            <h2 className="text-2xl font-bold text-charcoal eb-garamond">Our Experience & Impact</h2>
           </motion.div>
           
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
@@ -117,8 +117,8 @@ export default function AIStrategyRoadmap() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -134,7 +134,7 @@ export default function AIStrategyRoadmap() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               Most AI initiatives fail not because of technology, but because of strategy. Organizations chase shiny objects, launch disconnected pilots, and struggle to scale promising experiments. Without a clear vision and roadmap, AI becomes a cost center rather than a value driver.
             </motion.p>
@@ -144,7 +144,7 @@ export default function AIStrategyRoadmap() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               A good AI strategy answers the hard questions: Where will AI create the most value for our specific business? What capabilities do we need to build versus buy? How do we sequence investments to deliver quick wins while building toward transformational impact?
             </motion.p>
@@ -154,7 +154,7 @@ export default function AIStrategyRoadmap() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               We've helped organizations across industries develop AI strategies that work. Not theoretical frameworks, but practical roadmaps with clear milestones, resource requirements, and success metrics. Strategies that get funded, executed, and deliver results.
             </motion.p>
@@ -171,13 +171,13 @@ export default function AIStrategyRoadmap() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#051C2C] mb-6 eb-garamond">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6 eb-garamond">
               Our AI Strategy Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               End-to-end services from opportunity assessment to roadmap development and execution planning.
             </p>
           </motion.div>
@@ -225,7 +225,7 @@ export default function AIStrategyRoadmap() {
       </section>
 
       {/* Section 4: Our Approach (3-Column Consulting Format) */}
-      <section className="py-20 bg-[#051C2C]">
+      <section className="py-20 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -233,7 +233,7 @@ export default function AIStrategyRoadmap() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00d4ff] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">
               Our Approach
             </span>
             <h2 className="text-3xl md:text-5xl font-light text-white eb-garamond">
@@ -264,7 +264,7 @@ export default function AIStrategyRoadmap() {
                 transition={{ delay: i * 0.1 }}
               >
                 <h3 className="text-xl font-bold text-white mb-4">{pillar.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{pillar.description}</p>
+                <p className="text-white leading-relaxed">{pillar.description}</p>
               </motion.div>
             ))}
           </div>
@@ -280,7 +280,7 @@ export default function AIStrategyRoadmap() {
       </section>
 
       {/* Section 5: Case Studies (F100) */}
-      <section className="py-24 bg-[#051C2C]">
+      <section className="py-24 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
             <motion.div
@@ -288,7 +288,7 @@ export default function AIStrategyRoadmap() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-4 block">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
                 Client Results
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-white eb-garamond">
@@ -333,10 +333,10 @@ export default function AIStrategyRoadmap() {
                       alt={study.title} 
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#051C2C] via-[#051C2C]/50 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-8">
-                      <span className="text-xs font-bold text-[#0077B5] mb-3 uppercase tracking-wider block">{study.category}</span>
-                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#0077B5] transition-colors">
+                      <span className="text-xs font-bold text-primary mb-3 uppercase tracking-wider block">{study.category}</span>
+                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
                         {study.title}
                       </h3>
                       <p className="text-white/70 line-clamp-2">{study.description}</p>
@@ -350,7 +350,7 @@ export default function AIStrategyRoadmap() {
       </section>
 
       {/* Section 6: Related Capabilities - H100 Hover */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -358,10 +358,10 @@ export default function AIStrategyRoadmap() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
               Related Capabilities
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#051C2C] eb-garamond">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal eb-garamond">
               Explore more AI capabilities
             </h2>
           </motion.div>
@@ -387,7 +387,7 @@ export default function AIStrategyRoadmap() {
       </section>
 
       {/* Section 7: CTA Section (F100 - Blue Background) */}
-      <section className="py-24 bg-[#0077B5]">
+      <section className="py-24 bg-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 eb-garamond">
@@ -397,7 +397,7 @@ export default function AIStrategyRoadmap() {
               Let's discuss how a clear AI roadmap can help you move from experimentation to enterprise-scale impact.
             </p>
             <Link href="/contact">
-              <Button className="bg-white hover:bg-gray-100 text-[#0077B5] px-10 py-6 text-lg font-semibold">
+              <Button className="bg-white hover:bg-subtle text-primary px-10 py-6 text-lg font-semibold">
                 Start a Conversation <ArrowRight className="ml-2 w-5 h-5 inline" />
               </Button>
             </Link>

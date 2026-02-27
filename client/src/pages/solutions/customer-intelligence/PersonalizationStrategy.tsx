@@ -36,7 +36,7 @@ export default function PersonalizationStrategy() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Personalization Strategy & Execution" 
         description="Design and execute hyper-personalized customer experiences across channels using AI-driven content, offers, and interaction strategies."
@@ -45,7 +45,7 @@ export default function PersonalizationStrategy() {
       <Navigation />
 
       {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-black">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -64,7 +64,7 @@ export default function PersonalizationStrategy() {
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
                   Request a Personalization Audit
                 </Button>
               </Link>
@@ -92,7 +92,7 @@ export default function PersonalizationStrategy() {
       </section>
 
       {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -101,7 +101,7 @@ export default function PersonalizationStrategy() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl eb-garamond font-bold text-[#051C2C]">Our Experience & Impact</h2>
+            <h2 className="text-2xl eb-garamond font-bold text-charcoal">Our Experience & Impact</h2>
           </motion.div>
           
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
@@ -117,8 +117,8 @@ export default function PersonalizationStrategy() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -134,7 +134,7 @@ export default function PersonalizationStrategy() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               In today's crowded market, one-size-fits-all messaging falls flat. Customers expect brands to understand their individual needs and preferences. Personalization is no longer a luxury; it's a fundamental driver of customer loyalty and revenue growth. We help you move beyond basic segmentation to deliver truly individualized experiences at scale.
             </motion.p>
@@ -144,7 +144,7 @@ export default function PersonalizationStrategy() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               Effective personalization requires a synthesis of data, technology, and strategy. By harnessing the power of AI and machine learning, we analyze customer data in real-time to predict intent and deliver the most relevant content, offers, and interactions. This data-driven approach ensures that every touchpoint is an opportunity to build a stronger, more profitable customer relationship.
             </motion.p>
@@ -161,13 +161,13 @@ export default function PersonalizationStrategy() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Our Personalization Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               From strategy to execution, we offer a complete suite of personalization services.
             </p>
           </motion.div>
@@ -214,7 +214,7 @@ export default function PersonalizationStrategy() {
       </section>
 
       {/* Section 5: Related Capabilities (F100) */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-gray-50 border-t border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-24 bg-subtle border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -223,8 +223,8 @@ export default function PersonalizationStrategy() {
             transition={{ duration: 0.6 }}
             className="mb-12 text-center"
           >
-            <h2 className="text-3xl sm:text-4xl eb-garamond font-bold text-[#051C2C] mb-4">Explore Related Capabilities</h2>
-            <p className="text-lg text-[#051C2C]/60 max-w-2xl mx-auto">Deepen your customer intelligence with our complementary services.</p>
+            <h2 className="text-3xl sm:text-4xl eb-garamond font-bold text-charcoal mb-4">Explore Related Capabilities</h2>
+            <p className="text-lg text-charcoal/60 max-w-2xl mx-auto">Deepen your customer intelligence with our complementary services.</p>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
@@ -235,12 +235,12 @@ export default function PersonalizationStrategy() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white p-8 border border-gray-200 hover:shadow-lg transition-shadow duration-300 group"
+                className="bg-white p-8 border border-border hover:shadow-lg transition-shadow duration-300 group"
               >
-                <h3 className="text-xl font-bold text-[#051C2C] mb-3">{capability.title}</h3>
-                <p className="text-[#051C2C]/70 mb-6">{capability.description}</p>
+                <h3 className="text-xl font-bold text-charcoal mb-3">{capability.title}</h3>
+                <p className="text-charcoal/70 mb-6">{capability.description}</p>
                 <Link href={capability.link}>
-                  <span className="text-[#0077B5] font-semibold flex items-center group-hover:underline">
+                  <span className="text-primary font-semibold flex items-center group-hover:underline">
                     Learn More <ArrowRight className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </span>
                 </Link>
@@ -259,14 +259,14 @@ export default function PersonalizationStrategy() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6 leading-tight max-w-3xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6 leading-tight max-w-3xl mx-auto">
               Ready to Unlock the Power of Personalization?
             </h2>
-            <p className="text-lg sm:text-xl text-[#051C2C]/70 mb-10 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-charcoal/70 mb-10 max-w-2xl mx-auto">
               Let's discuss how our personalization strategies can drive growth for your business. Schedule a complimentary consultation with our experts today.
             </p>
             <Link href="/contact">
-              <Button size="lg" className="bg-[#0077B5] hover:bg-[#005F8C] text-white px-10 py-7 text-lg font-semibold transition-all">
+              <Button size="lg" className="bg-primary hover:bg-secondary text-white px-10 py-7 text-lg font-semibold transition-all">
                 Schedule Your Free Consultation
               </Button>
             </Link>

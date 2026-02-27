@@ -197,19 +197,19 @@ export default function Industries() {
                     </p>
 
                     <div className="space-y-3 mb-5 sm:mb-6 md:mb-8">
-                      <h4 className="font-semibold text-sm uppercase tracking-wide text-slate-600">Key Solutions</h4>
+                      <h4 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground">Key Solutions</h4>
                       <ul className="space-y-2">
                         {industry.solutions.map((solution) => (
                           <li key={solution} className="flex items-start gap-2">
                             <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                            <span className="text-slate-700">{solution}</span>
+                            <span className="text-charcoal/80">{solution}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
 
                     {industry.href && (
-                      <Link href={industry.href} className="inline-flex items-center gap-2 bg-[#051C2C] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#0077B5] transition-colors">
+                      <Link href={industry.href} className="inline-flex items-center gap-2 bg-base text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary transition-colors">
                         Explore {industry.title}
                         <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
                       </Link>

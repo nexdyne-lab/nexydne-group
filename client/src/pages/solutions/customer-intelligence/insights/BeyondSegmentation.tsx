@@ -9,7 +9,7 @@ import { RelatedContent } from "@/components/RelatedContent";
 
 export default function BeyondSegmentation() {
   return (
-    <div className="min-h-screen bg-[#051C2C] font-sans text-white selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
       <SEO 
         title="Beyond Segmentation: The Future of Customer Intelligence" 
         description="Why traditional customer segmentation is failing and how AI-powered behavioral intelligence is reshaping how companies understand and engage customers."
@@ -25,7 +25,7 @@ export default function BeyondSegmentation() {
             alt="Data Analytics" 
             className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#051C2C] via-[#051C2C]/95 to-[#051C2C]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-base via-base/95 to-base" />
         </div>
         
         <div className="container px-4 md:px-12 relative z-10">
@@ -35,13 +35,13 @@ export default function BeyondSegmentation() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <Link href="/solutions/data-driven-customer-intelligence/insights" className="inline-flex items-center text-white/60 hover:text-[#0077B5] mb-8 transition-colors">
+            <Link href="/solutions/data-driven-customer-intelligence/insights" className="inline-flex items-center text-white/60 hover:text-primary mb-8 transition-colors">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Insights
             </Link>
             
             <div className="flex items-center gap-4 mb-6">
-              <span className="text-[#0077B5] text-xs font-bold uppercase tracking-[0.2em]">Strategy</span>
+              <span className="text-primary text-xs font-bold uppercase tracking-[0.2em]">Strategy</span>
               <span className="flex items-center text-white/40 text-sm">
                 <Clock className="w-4 h-4 mr-1" />
                 12 min read
@@ -58,7 +58,7 @@ export default function BeyondSegmentation() {
 
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-[#0077B5] rounded-full flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
                   NX
                 </div>
                 <div>
@@ -72,7 +72,7 @@ export default function BeyondSegmentation() {
       </section>
 
       {/* Article Content */}
-      <section className="py-16 bg-white text-[#051C2C]">
+      <section className="py-16 bg-white text-charcoal">
         <div className="container px-4 md:px-12">
           <div className="grid lg:grid-cols-12 gap-16">
             {/* Main Content */}
@@ -83,7 +83,7 @@ export default function BeyondSegmentation() {
               transition={{ duration: 0.6 }}
               className="lg:col-span-8 prose prose-lg max-w-none"
             >
-              <p className="text-xl text-[#051C2C]/80 leading-relaxed">
+              <p className="text-xl text-charcoal/80 leading-relaxed">
                 For decades, customer segmentation has been the cornerstone of marketing strategy. Companies divide their customer base into groups based on demographics, purchase history, or stated preferences, then craft targeted messages for each segment. It's a framework that made sense when data was scarce and personalization was expensive.
               </p>
 
@@ -125,11 +125,11 @@ export default function BeyondSegmentation() {
                 The key differences:
               </p>
 
-              <div className="bg-[#F8F9FA] p-8 rounded-xl my-8">
+              <div className="bg-subtle p-8 rounded-xl my-8">
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
-                    <h4 className="font-bold text-[#0077B5] mb-3">Traditional Segmentation</h4>
-                    <ul className="space-y-2 text-[#051C2C]/70">
+                    <h4 className="font-bold text-primary mb-3">Traditional Segmentation</h4>
+                    <ul className="space-y-2 text-charcoal/70">
                       <li>• Static group membership</li>
                       <li>• Demographic-first</li>
                       <li>• Quarterly updates</li>
@@ -138,8 +138,8 @@ export default function BeyondSegmentation() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#0077B5] mb-3">Behavioral Intelligence</h4>
-                    <ul className="space-y-2 text-[#051C2C]/70">
+                    <h4 className="font-bold text-primary mb-3">Behavioral Intelligence</h4>
+                    <ul className="space-y-2 text-charcoal/70">
                       <li>• Dynamic individual profiles</li>
                       <li>• Behavior-first</li>
                       <li>• Real-time updates</li>
@@ -183,17 +183,17 @@ export default function BeyondSegmentation() {
               </p>
 
               <div className="grid md:grid-cols-3 gap-6 my-8">
-                <div className="bg-[#0077B5]/10 p-6 rounded-xl text-center">
-                  <div className="text-4xl eb-garamond font-bold text-[#0077B5] mb-2">2-3x</div>
-                  <div className="text-sm text-[#051C2C]/70">Campaign conversion rates</div>
+                <div className="bg-primary/10 p-6 rounded-xl text-center">
+                  <div className="text-4xl eb-garamond font-bold text-primary mb-2">2-3x</div>
+                  <div className="text-sm text-charcoal/70">Campaign conversion rates</div>
                 </div>
-                <div className="bg-[#0077B5]/10 p-6 rounded-xl text-center">
-                  <div className="text-4xl eb-garamond font-bold text-[#0077B5] mb-2">25-40%</div>
-                  <div className="text-sm text-[#051C2C]/70">Retention improvement</div>
+                <div className="bg-primary/10 p-6 rounded-xl text-center">
+                  <div className="text-4xl eb-garamond font-bold text-primary mb-2">25-40%</div>
+                  <div className="text-sm text-charcoal/70">Retention improvement</div>
                 </div>
-                <div className="bg-[#0077B5]/10 p-6 rounded-xl text-center">
-                  <div className="text-4xl eb-garamond font-bold text-[#0077B5] mb-2">30%+</div>
-                  <div className="text-sm text-[#051C2C]/70">Customer lifetime value</div>
+                <div className="bg-primary/10 p-6 rounded-xl text-center">
+                  <div className="text-4xl eb-garamond font-bold text-primary mb-2">30%+</div>
+                  <div className="text-sm text-charcoal/70">Customer lifetime value</div>
                 </div>
               </div>
 
@@ -239,52 +239,52 @@ export default function BeyondSegmentation() {
             >
               <div className="sticky top-32 space-y-8">
                 {/* Share */}
-                <div className="bg-[#F8F9FA] p-6 rounded-xl">
+                <div className="bg-subtle p-6 rounded-xl">
                   <h3 className="font-bold mb-4">Share this article</h3>
                   <div className="flex gap-3">
-                    <button className="w-10 h-10 bg-[#0077B5] rounded-full flex items-center justify-center text-white hover:bg-[#005a8c] transition-colors">
+                    <button className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-primary/90 transition-colors">
                       <Linkedin className="w-5 h-5" />
                     </button>
-                    <button className="w-10 h-10 bg-[#1DA1F2] rounded-full flex items-center justify-center text-white hover:bg-[#1a8cd8] transition-colors">
+                    <button className="w-10 h-10 bg-[#1DA1F2] rounded-full flex items-center justify-center text-white hover:bg-secondary transition-colors">
                       <Twitter className="w-5 h-5" />
                     </button>
-                    <button className="w-10 h-10 bg-[#051C2C] rounded-full flex items-center justify-center text-white hover:bg-[#051C2C]/80 transition-colors">
+                    <button className="w-10 h-10 bg-base rounded-full flex items-center justify-center text-white hover:bg-base/80 transition-colors">
                       <Share2 className="w-5 h-5" />
                     </button>
                   </div>
                 </div>
 
                 {/* Key Takeaways */}
-                <div className="bg-[#F8F9FA] p-6 rounded-xl">
+                <div className="bg-subtle p-6 rounded-xl">
                   <h3 className="font-bold mb-4">Key Takeaways</h3>
-                  <ul className="space-y-3 text-sm text-[#051C2C]/70">
+                  <ul className="space-y-3 text-sm text-charcoal/70">
                     <li className="flex gap-2">
-                      <span className="text-[#0077B5] font-bold">1.</span>
+                      <span className="text-primary font-bold">1.</span>
                       Traditional segmentation treats customers as group averages, missing individual nuances
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-[#0077B5] font-bold">2.</span>
+                      <span className="text-primary font-bold">2.</span>
                       Behavioral intelligence enables real-time, individual-level understanding
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-[#0077B5] font-bold">3.</span>
+                      <span className="text-primary font-bold">3.</span>
                       Companies report 2-3x conversion improvements with behavioral approaches
                     </li>
                     <li className="flex gap-2">
-                      <span className="text-[#0077B5] font-bold">4.</span>
+                      <span className="text-primary font-bold">4.</span>
                       Start with data unification, then add predictive models and activation
                     </li>
                   </ul>
                 </div>
 
                 {/* CTA */}
-                <div className="bg-[#0077B5] p-6 rounded-xl text-white">
+                <div className="bg-primary p-6 rounded-xl text-white">
                   <h3 className="font-bold mb-3">Ready to go beyond segmentation?</h3>
                   <p className="text-white/80 text-sm mb-4">
                     Let's discuss how behavioral intelligence can transform your customer understanding.
                   </p>
                   <Link href="/contact">
-                    <Button className="w-full bg-white text-[#0077B5] hover:bg-white/90">
+                    <Button className="w-full bg-white text-primary hover:bg-white/90">
                       Schedule a Consultation
                     </Button>
                   </Link>

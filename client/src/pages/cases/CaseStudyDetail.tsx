@@ -70,11 +70,11 @@ export default function CaseStudyDetail() {
 
   if (!study) {
     return (
-      <div className="min-h-screen bg-[#0a0e3d] text-white flex items-center justify-center">
+      <div className="min-h-screen bg-base text-white flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Case Study Not Found</h1>
           <Link href="/venture-portfolio">
-            <button className="text-[#00d4ff] hover:underline flex items-center gap-2 mx-auto">
+            <button className="text-secondary hover:underline flex items-center gap-2 mx-auto">
               <ArrowLeft className="w-4 h-4" /> Back to Portfolio
             </button>
           </Link>
@@ -84,7 +84,7 @@ export default function CaseStudyDetail() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0a0e3d] text-white font-sans selection:bg-[#00d4ff] selection:text-[#0a0e3d]">
+    <div className="min-h-screen bg-base text-white font-sans selection:bg-secondary selection:text-base">
       <Navigation />
 
       {/* Hero Section */}
@@ -95,34 +95,34 @@ export default function CaseStudyDetail() {
             alt={study.title} 
             className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0e3d] via-[#0a0e3d]/90 to-[#050829]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-base via-base/90 to-base" />
         </div>
 
         <div className="container px-4 md:px-12 relative z-10">
           <Link href="/venture-portfolio">
-            <button className="text-gray-400 hover:text-white flex items-center gap-2 mb-8 transition-colors">
+            <button className="text-muted-foreground/70 hover:text-white flex items-center gap-2 mb-8 transition-colors">
               <ArrowLeft className="w-4 h-4" /> Back to Portfolio
             </button>
           </Link>
           
-          <div className="inline-block px-3 py-1 bg-[#00d4ff]/10 text-[#00d4ff] text-xs font-bold uppercase tracking-wider rounded-full mb-6">
+          <div className="inline-block px-3 py-1 bg-secondary/10 text-secondary text-xs font-bold uppercase tracking-wider rounded-full mb-6">
             {study.industry}
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             {study.title}
           </h1>
-          <p className="text-2xl text-gray-300 mb-8 font-light">
+          <p className="text-2xl text-muted-foreground/50 mb-8 font-light">
             {study.subtitle}
           </p>
 
-          <div className="flex flex-wrap gap-6 text-sm text-gray-400 mb-8">
+          <div className="flex flex-wrap gap-6 text-sm text-muted-foreground/70 mb-8">
             <div className="flex items-center gap-2">
-              <Calendar className="w-4 h-4 text-[#00d4ff]" />
+              <Calendar className="w-4 h-4 text-secondary" />
               <span>Timeline: <span className="text-white font-bold">{study.timeline}</span></span>
             </div>
             <div className="flex items-center gap-2">
-              <TrendingUp className="w-4 h-4 text-[#00d4ff]" />
+              <TrendingUp className="w-4 h-4 text-secondary" />
               <span>Outcome: <span className="text-white font-bold">Market Leader</span></span>
             </div>
           </div>
@@ -147,7 +147,7 @@ export default function CaseStudyDetail() {
       </section>
 
       {/* Content Section */}
-      <section className="py-20 bg-[#050829]">
+      <section className="py-20 bg-base">
         <div className="container px-4 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             
@@ -155,34 +155,34 @@ export default function CaseStudyDetail() {
             <div className="lg:col-span-7 space-y-16">
               <div>
                 <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
-                  <span className="w-8 h-1 bg-[#00d4ff]" />
+                  <span className="w-8 h-1 bg-secondary" />
                   The Challenge
                 </h2>
-                <p className="text-xl text-gray-300 leading-relaxed">
+                <p className="text-xl text-muted-foreground/50 leading-relaxed">
                   {study.challenge}
                 </p>
               </div>
 
               <div>
                 <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
-                  <span className="w-8 h-1 bg-[#00d4ff]" />
+                  <span className="w-8 h-1 bg-secondary" />
                   The Solution
                 </h2>
-                <p className="text-xl text-gray-300 leading-relaxed mb-8">
+                <p className="text-xl text-muted-foreground/50 leading-relaxed mb-8">
                   {study.solution}
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-[#00d4ff] shrink-0 mt-1" />
-                    <span className="text-gray-300">Rapid prototyping and user testing with real stakeholders.</span>
+                    <CheckCircle2 className="w-6 h-6 text-secondary shrink-0 mt-1" />
+                    <span className="text-muted-foreground/50">Rapid prototyping and user testing with real stakeholders.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-[#00d4ff] shrink-0 mt-1" />
-                    <span className="text-gray-300">Cloud-native architecture designed for infinite scalability.</span>
+                    <CheckCircle2 className="w-6 h-6 text-secondary shrink-0 mt-1" />
+                    <span className="text-muted-foreground/50">Cloud-native architecture designed for infinite scalability.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-[#00d4ff] shrink-0 mt-1" />
-                    <span className="text-gray-300">Seamless integration with legacy enterprise systems.</span>
+                    <CheckCircle2 className="w-6 h-6 text-secondary shrink-0 mt-1" />
+                    <span className="text-muted-foreground/50">Seamless integration with legacy enterprise systems.</span>
                   </li>
                 </ul>
               </div>
@@ -190,21 +190,21 @@ export default function CaseStudyDetail() {
 
             {/* Sidebar / Impact */}
             <div className="lg:col-span-5">
-              <div className="bg-[#0a0e3d] border border-white/10 rounded-2xl p-8 sticky top-32">
+              <div className="bg-base border border-white/10 rounded-2xl p-8 sticky top-32">
                 <h3 className="text-2xl font-bold mb-8">Impact Delivered</h3>
                 
                 <div className="space-y-8 mb-12">
                   {study.impact.map((item, index) => (
                     <div key={index}>
-                      <div className="text-4xl font-bold text-[#00d4ff] mb-1">{item.value}</div>
-                      <div className="text-sm text-gray-400 uppercase tracking-wider">{item.label}</div>
+                      <div className="text-4xl font-bold text-secondary mb-1">{item.value}</div>
+                      <div className="text-sm text-muted-foreground/70 uppercase tracking-wider">{item.label}</div>
                     </div>
                   ))}
                 </div>
 
                 <div className="relative p-6 bg-white/5 rounded-xl border border-white/5">
-                  <Quote className="w-8 h-8 text-[#00d4ff]/30 absolute top-4 left-4" />
-                  <p className="text-gray-300 italic relative z-10 mb-4 pl-4">
+                  <Quote className="w-8 h-8 text-secondary/30 absolute top-4 left-4" />
+                  <p className="text-muted-foreground/50 italic relative z-10 mb-4 pl-4">
                     "{study.quote}"
                   </p>
                   <div className="text-sm font-bold text-white pl-4">— {study.author}</div>
@@ -217,11 +217,11 @@ export default function CaseStudyDetail() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-[#0a0e3d] border-t border-white/5">
+      <section className="py-24 bg-base border-t border-white/5">
         <div className="container px-4 md:px-12 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Ready to write your success story?</h2>
           <Link href="/contact">
-            <button className="px-10 py-4 bg-[#00d4ff] text-[#0a0e3d] font-bold rounded-full hover:bg-white transition-all">
+            <button className="px-10 py-4 bg-secondary text-base font-bold rounded-full hover:bg-white transition-all">
               Start a Conversation
             </button>
           </Link>

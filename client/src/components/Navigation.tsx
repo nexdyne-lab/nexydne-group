@@ -194,19 +194,19 @@ export default function Navigation() {
               }}
               className={`relative w-10 h-10 flex items-center justify-center rounded transition-colors ${
                 isNavbarLight || menuOpen
-                  ? 'hover:bg-gray-100' 
+                  ? 'hover:bg-subtle' 
                   : 'hover:bg-white/10'
               }`}
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               aria-expanded={menuOpen}
             >
               {menuOpen ? (
-                <X className="w-6 h-6 text-[#1A1A1A]" />
+                <X className="w-6 h-6 text-charcoal" />
               ) : (
                 <div className="flex flex-col gap-1.5">
-                  <span className={`block w-5 h-0.5 ${isNavbarLight ? 'bg-[#1A1A1A]' : 'bg-white'}`} />
-                  <span className={`block w-5 h-0.5 ${isNavbarLight ? 'bg-[#1A1A1A]' : 'bg-white'}`} />
-                  <span className={`block w-5 h-0.5 ${isNavbarLight ? 'bg-[#1A1A1A]' : 'bg-white'}`} />
+                  <span className={`block w-5 h-0.5 ${isNavbarLight ? 'bg-charcoal' : 'bg-white'}`} />
+                  <span className={`block w-5 h-0.5 ${isNavbarLight ? 'bg-charcoal' : 'bg-white'}`} />
+                  <span className={`block w-5 h-0.5 ${isNavbarLight ? 'bg-charcoal' : 'bg-white'}`} />
                 </div>
               )}
             </button>
@@ -214,10 +214,10 @@ export default function Navigation() {
             {/* Logo */}
             <Link href="/" className="flex items-center" onClick={handleNavigation}>
               <div className="flex flex-col leading-tight">
-                <span className={`text-[1.4rem] md:text-[1.7rem] font-bold tracking-tight ${isNavbarLight ? 'text-[#1A1A1A]' : 'text-white'}`}>
+                <span className={`text-[1.4rem] md:text-[1.7rem] font-bold tracking-tight ${isNavbarLight ? 'text-charcoal' : 'text-white'}`}>
                   NEXDYNE
                 </span>
-                <span className={`text-[11px] md:text-xs font-medium tracking-[0.15em] uppercase ${isNavbarLight ? 'text-[#1A1A1A]/70' : 'text-white/70'}`}>
+                <span className={`text-[11px] md:text-xs font-medium tracking-[0.15em] uppercase ${isNavbarLight ? 'text-charcoal/70' : 'text-white/70'}`}>
                   CONSULTING GROUP
                 </span>
               </div>
@@ -234,9 +234,9 @@ export default function Navigation() {
                 <button
                   className={`flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors ${
                     activeDropdown === 'industries'
-                      ? 'text-[#CC0000]'
+                      ? 'text-primary'
                       : isNavbarLight 
-                        ? 'text-[#1A1A1A] hover:text-[#CC0000]' 
+                        ? 'text-charcoal hover:text-primary' 
                         : 'text-white hover:text-white/80'
                   }`}
                 >
@@ -254,9 +254,9 @@ export default function Navigation() {
                 <button
                   className={`flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors ${
                     activeDropdown === 'capabilities'
-                      ? 'text-[#CC0000]'
+                      ? 'text-primary'
                       : isNavbarLight 
-                        ? 'text-[#1A1A1A] hover:text-[#CC0000]' 
+                        ? 'text-charcoal hover:text-primary' 
                         : 'text-white hover:text-white/80'
                   }`}
                 >
@@ -274,9 +274,9 @@ export default function Navigation() {
                 <button
                   className={`flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors ${
                     activeDropdown === 'solutions'
-                      ? 'text-[#CC0000]'
+                      ? 'text-primary'
                       : isNavbarLight 
-                        ? 'text-[#1A1A1A] hover:text-[#CC0000]' 
+                        ? 'text-charcoal hover:text-primary' 
                         : 'text-white hover:text-white/80'
                   }`}
                 >
@@ -294,9 +294,9 @@ export default function Navigation() {
                 <button
                   className={`flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors ${
                     activeDropdown === 'insights'
-                      ? 'text-[#CC0000]'
+                      ? 'text-primary'
                       : isNavbarLight 
-                        ? 'text-[#1A1A1A] hover:text-[#CC0000]' 
+                        ? 'text-charcoal hover:text-primary' 
                         : 'text-white hover:text-white/80'
                   }`}
                 >
@@ -314,9 +314,9 @@ export default function Navigation() {
                 <button
                   className={`flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors ${
                     activeDropdown === 'about'
-                      ? 'text-[#CC0000]'
+                      ? 'text-primary'
                       : isNavbarLight 
-                        ? 'text-[#1A1A1A] hover:text-[#CC0000]' 
+                        ? 'text-charcoal hover:text-primary' 
                         : 'text-white hover:text-white/80'
                   }`}
                 >
@@ -330,7 +330,7 @@ export default function Navigation() {
                 href="/careers"
                 className={`px-4 py-2 text-sm font-medium transition-colors ${
                   isNavbarLight 
-                    ? 'text-[#1A1A1A] hover:text-[#CC0000]' 
+                    ? 'text-charcoal hover:text-primary' 
                     : 'text-white hover:text-white/80'
                 }`}
                 onClick={handleNavigation}
@@ -347,7 +347,7 @@ export default function Navigation() {
               onClick={() => setMenuOpen(true)}
               className={`w-10 h-10 flex items-center justify-center rounded-full transition-colors ${
                 isNavbarLight || menuOpen
-                  ? 'hover:bg-gray-100 text-[#1A1A1A]' 
+                  ? 'hover:bg-subtle text-charcoal' 
                   : 'hover:bg-white/10 text-white'
               }`}
               aria-label="Search"
@@ -360,7 +360,7 @@ export default function Navigation() {
               href="/contact"
               className={`hidden sm:block font-semibold text-sm uppercase tracking-wider transition-colors ${
                 isNavbarLight || menuOpen
-                  ? 'text-[#1A1A1A] hover:text-[#CC0000]' 
+                  ? 'text-charcoal hover:text-primary' 
                   : 'text-white hover:text-white/80'
               }`}
               onClick={handleNavigation}
@@ -374,28 +374,28 @@ export default function Navigation() {
         {/* Industries Dropdown */}
         {activeDropdown === 'industries' && (
           <div 
-            className="absolute top-full left-0 right-0 bg-white border-t border-gray-100 shadow-lg"
+            className="absolute top-full left-0 right-0 bg-white border-t border-border/50 shadow-lg"
             onMouseEnter={() => handleDropdownEnter('industries')}
             onMouseLeave={handleDropdownLeave}
           >
             <div className="container mx-auto px-6 lg:px-12 py-8">
-              <h3 className="text-2xl font-bold text-[#1A1A1A] mb-6">Industries</h3>
+              <h3 className="text-2xl font-bold text-charcoal mb-6">Industries</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-2">
                 {industries.map((industry) => (
                   <Link
                     key={industry.slug}
                     href={`/industries/${industry.slug}`}
-                    className="py-2 text-[#1A1A1A] hover:text-[#CC0000] transition-colors"
+                    className="py-2 text-charcoal hover:text-primary transition-colors"
                     onClick={handleNavigation}
                   >
                     {industry.name}
                   </Link>
                 ))}
               </div>
-              {/* <div className="mt-6 pt-6 border-t border-gray-100">
+              {/* <div className="mt-6 pt-6 border-t border-border/50">
                 <Link
                   href="/industries"
-                  className="text-[#CC0000] font-semibold hover:underline"
+                  className="text-primary font-semibold hover:underline"
                   onClick={handleNavigation}
                 >
                   View all industries →
@@ -408,28 +408,28 @@ export default function Navigation() {
         {/* Capabilities Dropdown */}
         {activeDropdown === 'capabilities' && (
           <div 
-            className="absolute top-full left-0 right-0 bg-white border-t border-gray-100 shadow-lg"
+            className="absolute top-full left-0 right-0 bg-white border-t border-border/50 shadow-lg"
             onMouseEnter={() => handleDropdownEnter('capabilities')}
             onMouseLeave={handleDropdownLeave}
           >
             <div className="container mx-auto px-6 lg:px-12 py-8">
-              <h3 className="text-2xl font-bold text-[#1A1A1A] mb-6">Capabilities</h3>
+              <h3 className="text-2xl font-bold text-charcoal mb-6">Capabilities</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-2">
                 {capabilities.map((capability) => (
                   <Link
                     key={capability.slug}
                     href={`/capabilities/${capability.slug}`}
-                    className="py-2 text-[#1A1A1A] hover:text-[#CC0000] transition-colors"
+                    className="py-2 text-charcoal hover:text-primary transition-colors"
                     onClick={handleNavigation}
                   >
                     {capability.name}
                   </Link>
                 ))}
               </div>
-              <div className="mt-6 pt-6 border-t border-gray-100">
+              <div className="mt-6 pt-6 border-t border-border/50">
                 <Link
                   href="/capabilities"
-                  className="text-[#CC0000] font-semibold hover:underline"
+                  className="text-primary font-semibold hover:underline"
                   onClick={handleNavigation}
                 >
                   View all capabilities →
@@ -442,28 +442,28 @@ export default function Navigation() {
         {/* Solutions Dropdown */}
         {activeDropdown === 'solutions' && (
           <div 
-            className="absolute top-full left-0 right-0 bg-white border-t border-gray-100 shadow-lg"
+            className="absolute top-full left-0 right-0 bg-white border-t border-border/50 shadow-lg"
             onMouseEnter={() => handleDropdownEnter('solutions')}
             onMouseLeave={handleDropdownLeave}
           >
             <div className="container mx-auto px-6 lg:px-12 py-8">
-              <h3 className="text-2xl font-bold text-[#1A1A1A] mb-6">Solutions</h3>
+              <h3 className="text-2xl font-bold text-charcoal mb-6">Solutions</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-2">
                 {solutions.map((solution) => (
                   <Link
                     key={solution.slug}
                     href={`/solutions/${solution.slug}`}
-                    className="py-2 text-[#1A1A1A] hover:text-[#CC0000] transition-colors"
+                    className="py-2 text-charcoal hover:text-primary transition-colors"
                     onClick={handleNavigation}
                   >
                     {solution.name}
                   </Link>
                 ))}
               </div>
-              {/* <div className="mt-6 pt-6 border-t border-gray-100">
+              {/* <div className="mt-6 pt-6 border-t border-border/50">
                 <Link
                   href="/solutions"
-                  className="text-[#CC0000] font-semibold hover:underline"
+                  className="text-primary font-semibold hover:underline"
                   onClick={handleNavigation}
                 >
                   View all solutions →
@@ -476,22 +476,22 @@ export default function Navigation() {
         {/* Insights Dropdown */}
         {activeDropdown === 'insights' && (
           <div 
-            className="absolute top-full left-0 right-0 bg-white border-t border-gray-100 shadow-lg"
+            className="absolute top-full left-0 right-0 bg-white border-t border-border/50 shadow-lg"
             onMouseEnter={() => handleDropdownEnter('insights')}
             onMouseLeave={handleDropdownLeave}
           >
             <div className="container mx-auto px-6 lg:px-12 py-8">
-              <h3 className="text-2xl font-bold text-[#1A1A1A] mb-6">Insights</h3>
+              <h3 className="text-2xl font-bold text-charcoal mb-6">Insights</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 {insightsCategories.map((category) => (
                   <div key={category.title}>
-                    <h4 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">{category.title}</h4>
+                    <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-4">{category.title}</h4>
                     <div className="space-y-2">
                       {category.items.map((item) => (
                         <Link
                           key={item.slug}
                           href={`/insights/${item.slug}`}
-                          className="block py-2 text-[#1A1A1A] hover:text-[#CC0000] transition-colors"
+                          className="block py-2 text-charcoal hover:text-primary transition-colors"
                           onClick={handleNavigation}
                         >
                           {item.name}
@@ -501,10 +501,10 @@ export default function Navigation() {
                   </div>
                 ))}
               </div>
-              <div className="mt-6 pt-6 border-t border-gray-100">
+              <div className="mt-6 pt-6 border-t border-border/50">
                 <Link
                   href="/insights"
-                  className="text-[#CC0000] font-semibold hover:underline"
+                  className="text-primary font-semibold hover:underline"
                   onClick={handleNavigation}
                 >
                   View all insights →
@@ -517,18 +517,18 @@ export default function Navigation() {
         {/* About Dropdown */}
         {activeDropdown === 'about' && (
           <div 
-            className="absolute top-full left-0 right-0 bg-white border-t border-gray-100 shadow-lg"
+            className="absolute top-full left-0 right-0 bg-white border-t border-border/50 shadow-lg"
             onMouseEnter={() => handleDropdownEnter('about')}
             onMouseLeave={handleDropdownLeave}
           >
             <div className="container mx-auto px-6 lg:px-12 py-8">
-              <h3 className="text-2xl font-bold text-[#1A1A1A] mb-6">About NexDyne Consulting Group</h3>
+              <h3 className="text-2xl font-bold text-charcoal mb-6">About NexDyne Consulting Group</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-2">
                 {aboutItems.map((item) => (
                   <Link
                     key={item.name}
                     href={item.slug.startsWith('/') ? item.slug : `/about${item.slug ? `/${item.slug}` : ''}`}
-                    className="py-2 text-[#1A1A1A] hover:text-[#CC0000] transition-colors"
+                    className="py-2 text-charcoal hover:text-primary transition-colors"
                     onClick={handleNavigation}
                   >
                     {item.name}
@@ -536,14 +536,14 @@ export default function Navigation() {
                 ))}
                 <Link
                   href="/cases"
-                  className="py-2 text-[#1A1A1A] hover:text-[#CC0000] transition-colors"
+                  className="py-2 text-charcoal hover:text-primary transition-colors"
                   onClick={handleNavigation}
                 >
                   Case Studies
                 </Link>
                 <Link
                   href="/contact"
-                  className="py-2 text-[#1A1A1A] hover:text-[#CC0000] transition-colors"
+                  className="py-2 text-charcoal hover:text-primary transition-colors"
                   onClick={handleNavigation}
                 >
                   Contact Us
@@ -559,10 +559,10 @@ export default function Navigation() {
         <div className="fixed inset-0 z-40 bg-white pt-20">
           <div className="h-full overflow-y-auto">
             {/* Search Bar */}
-            <div className="border-b border-gray-200">
+            <div className="border-b border-border">
               <div className="container px-4 sm:px-6 py-3 sm:py-4">
                 <div className="flex items-center gap-2 sm:gap-3 max-w-2xl">
-                  <Search className="w-5 h-5 text-gray-400" />
+                  <Search className="w-5 h-5 text-muted-foreground/70" />
                   <input
                     type="text"
                     placeholder="Type to search"
@@ -572,7 +572,7 @@ export default function Navigation() {
                   />
                   {searchQuery && (
                     <button onClick={() => setSearchQuery("")}>
-                      <X className="w-5 h-5 text-gray-400" />
+                      <X className="w-5 h-5 text-muted-foreground/70" />
                     </button>
                   )}
                 </div>
@@ -586,7 +586,7 @@ export default function Navigation() {
                 <div>
                   <Link
                     href="/industries"
-                    className="block text-xl sm:text-2xl font-semibold text-[#1A1A1A] hover:text-[#CC0000] transition-colors mb-3 sm:mb-4"
+                    className="block text-xl sm:text-2xl font-semibold text-charcoal hover:text-primary transition-colors mb-3 sm:mb-4"
                     onClick={handleNavigation}
                   >
                     Industries
@@ -596,7 +596,7 @@ export default function Navigation() {
                       <Link
                         key={industry.slug}
                         href={`/industries/${industry.slug}`}
-                        className="py-1 text-gray-600 hover:text-[#CC0000] transition-colors"
+                        className="py-1 text-muted-foreground hover:text-primary transition-colors"
                         onClick={handleNavigation}
                       >
                         {industry.name}
@@ -609,7 +609,7 @@ export default function Navigation() {
                 <div>
                   <Link
                     href="/capabilities"
-                    className="block text-xl sm:text-2xl font-semibold text-[#1A1A1A] hover:text-[#CC0000] transition-colors mb-3 sm:mb-4"
+                    className="block text-xl sm:text-2xl font-semibold text-charcoal hover:text-primary transition-colors mb-3 sm:mb-4"
                     onClick={handleNavigation}
                   >
                     Capabilities
@@ -619,7 +619,7 @@ export default function Navigation() {
                       <Link
                         key={capability.slug}
                         href={`/capabilities/${capability.slug}`}
-                        className="py-1 text-gray-600 hover:text-[#CC0000] transition-colors"
+                        className="py-1 text-muted-foreground hover:text-primary transition-colors"
                         onClick={handleNavigation}
                       >
                         {capability.name}
@@ -632,7 +632,7 @@ export default function Navigation() {
                 <div>
                   <Link
                     href="/solutions"
-                    className="block text-xl sm:text-2xl font-semibold text-[#1A1A1A] hover:text-[#CC0000] transition-colors mb-3 sm:mb-4"
+                    className="block text-xl sm:text-2xl font-semibold text-charcoal hover:text-primary transition-colors mb-3 sm:mb-4"
                     onClick={handleNavigation}
                   >
                     Solutions
@@ -642,7 +642,7 @@ export default function Navigation() {
                       <Link
                         key={solution.slug}
                         href={`/solutions/${solution.slug}`}
-                        className="py-1 text-gray-600 hover:text-[#CC0000] transition-colors"
+                        className="py-1 text-muted-foreground hover:text-primary transition-colors"
                         onClick={handleNavigation}
                       >
                         {solution.name}
@@ -655,7 +655,7 @@ export default function Navigation() {
                 <div>
                   <Link
                     href="/insights"
-                    className="block text-xl sm:text-2xl font-semibold text-[#1A1A1A] hover:text-[#CC0000] transition-colors"
+                    className="block text-xl sm:text-2xl font-semibold text-charcoal hover:text-primary transition-colors"
                     onClick={handleNavigation}
                   >
                     Insights
@@ -666,7 +666,7 @@ export default function Navigation() {
                 <div>
                   <Link
                     href="/about"
-                    className="block text-xl sm:text-2xl font-semibold text-[#1A1A1A] hover:text-[#CC0000] transition-colors"
+                    className="block text-xl sm:text-2xl font-semibold text-charcoal hover:text-primary transition-colors"
                     onClick={handleNavigation}
                   >
                     About
@@ -677,7 +677,7 @@ export default function Navigation() {
                 <div>
                   <Link
                     href="/careers"
-                    className="block text-xl sm:text-2xl font-semibold text-[#1A1A1A] hover:text-[#CC0000] transition-colors"
+                    className="block text-xl sm:text-2xl font-semibold text-charcoal hover:text-primary transition-colors"
                     onClick={handleNavigation}
                   >
                     Careers
@@ -685,10 +685,10 @@ export default function Navigation() {
                 </div>
 
                 {/* Contact */}
-                <div className="pt-5 sm:pt-6 border-t border-gray-200">
+                <div className="pt-5 sm:pt-6 border-t border-border">
                   <Link
                     href="/contact"
-                    className="block text-xl sm:text-2xl font-semibold text-[#CC0000] hover:text-[#990000] transition-colors"
+                    className="block text-xl sm:text-2xl font-semibold text-primary hover:text-primary/90 transition-colors"
                     onClick={handleNavigation}
                   >
                     Contact Us

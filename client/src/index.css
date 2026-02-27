@@ -41,50 +41,60 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   
-  /* DZ10 Design System Colors */
-  --color-dz-navy: oklch(0.15 0.03 240);
-  --color-dz-mckinsey-blue: oklch(0.50 0.15 230);
-  --color-dz-electric-blue: oklch(0.45 0.25 265);
-  --color-dz-light-gray: oklch(0.97 0 0);
-  --color-dz-dark-text: oklch(0.15 0.01 60);
+  /* ── Brand Color Tokens ── */
+  /* Base (Deep Navy): main backgrounds, header, footer, hero, section dividers */
+  --color-base: #000080;
+  /* Primary Accent (Vivid Blue): primary buttons, CTAs, active nav, highlights, badges */
+  --color-primary: #005CFF;
+  --color-primary-hover: #0047cc;
+  /* Secondary Accent (Azure): link hover, icons, secondary buttons, focus, underlines */
+  --color-secondary: #2291FA;
+  --color-secondary-hover: #1a7ae0;
+  /* Dark Neutral (Charcoal): body text on light bg, dark panels, overlays, cards */
+  --color-charcoal: #1A1A1A;
+  /* Light text for dark backgrounds */
+  --color-text-light: #F5F7FA;
+  /* Dark text for light backgrounds */
+  --color-text-dark: #111111;
+  /* Alias for light text on dark backgrounds (utility: text-on-dark) */
+  --color-on-dark: #F5F7FA;
+  /* Subtle light background for alternating sections */
+  --color-subtle: #F5F5F5;
 }
 
 :root {
-  /* DZ10 Primary Brand - Deep Navy Blue #051C2C */
-  --primary: oklch(0.15 0.03 240);
-  --primary-foreground: oklch(1 0 0);
+  /* Brand: Base (Deep Navy) #000080 - use bg-base for header, footer, hero */
+  /* Brand: Primary Accent (Vivid Blue) #005CFF - primary buttons, CTAs, active nav */
+  --primary: var(--color-primary);
+  --primary-foreground: var(--color-text-light);
   
-  /* DZ10 Accent - McKinsey Blue #0077B5 (hover states only) */
-  --accent: oklch(0.50 0.15 230);
-  --accent-foreground: oklch(1 0 0);
+  /* Accent = primary for highlights */
+  --accent: var(--color-primary);
+  --accent-foreground: var(--color-text-light);
   
-  /* DZ10 Interactive - Electric Blue #2251FF (link underlines) */
-  --ring: oklch(0.45 0.25 265);
+  /* Ring / focus = Secondary (Azure) #2291FA */
+  --ring: var(--color-secondary);
   
-  --sidebar-primary: oklch(0.15 0.03 240);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --chart-1: oklch(0.15 0.03 240);
-  --chart-2: oklch(0.50 0.15 230);
-  --chart-3: oklch(0.45 0.25 265);
-  --chart-4: oklch(0.30 0.05 240);
-  --chart-5: oklch(0.20 0.04 240);
+  --sidebar-primary: var(--color-base);
+  --sidebar-primary-foreground: var(--color-text-light);
+  --chart-1: var(--color-base);
+  --chart-2: var(--color-primary);
+  --chart-3: var(--color-secondary);
+  --chart-4: #000080e6;
+  --chart-5: #00008099;
   --radius: 0.25rem;
   
-  /* DZ10 Background Light #FFFFFF */
   --background: oklch(1 0 0);
-  /* DZ10 Text Dark #1A1A1A */
-  --foreground: oklch(0.15 0.01 60);
+  --foreground: var(--color-text-dark);
   
-  /* Card backgrounds - white */
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0.01 60);
+  --card-foreground: var(--color-text-dark);
   
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0.01 60);
+  --popover-foreground: var(--color-text-dark);
   
-  /* DZ10 Background Subtle #F5F5F5 */
   --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.15 0.01 60);
+  --secondary-foreground: var(--color-text-dark);
   
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.45 0.01 60);
@@ -94,47 +104,47 @@
   --border: oklch(0.90 0 0);
   --input: oklch(0.90 0 0);
   --sidebar: oklch(1 0 0);
-  --sidebar-foreground: oklch(0.15 0.01 60);
+  --sidebar-foreground: var(--color-text-dark);
   --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.15 0.01 60);
+  --sidebar-accent-foreground: var(--color-text-dark);
   --sidebar-border: oklch(0.90 0 0);
-  --sidebar-ring: oklch(0.45 0.25 265);
+  --sidebar-ring: var(--color-secondary);
 }
 
 .dark {
-  /* DZ10 Dark mode - Deep Navy as background */
-  --primary: oklch(0.50 0.15 230);
-  --primary-foreground: oklch(1 0 0);
-  --sidebar-primary: oklch(0.50 0.15 230);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --background: oklch(0.15 0.03 240);
-  --foreground: oklch(0.95 0 0);
-  --card: oklch(0.18 0.03 240);
-  --card-foreground: oklch(0.95 0 0);
-  --popover: oklch(0.18 0.03 240);
-  --popover-foreground: oklch(0.95 0 0);
-  --secondary: oklch(0.20 0.03 240);
-  --secondary-foreground: oklch(0.90 0 0);
-  --muted: oklch(0.22 0.03 240);
+  /* Dark mode - Base (Deep Navy) as background, light text */
+  --primary: var(--color-primary);
+  --primary-foreground: var(--color-text-light);
+  --sidebar-primary: var(--color-base);
+  --sidebar-primary-foreground: var(--color-text-light);
+  --background: var(--color-base);
+  --foreground: var(--color-text-light);
+  --card: #000080e6;
+  --card-foreground: var(--color-text-light);
+  --popover: #000080e6;
+  --popover-foreground: var(--color-text-light);
+  --secondary: #000080cc;
+  --secondary-foreground: var(--color-text-light);
+  --muted: #00008099;
   --muted-foreground: oklch(0.70 0 0);
-  --accent: oklch(0.22 0.03 240);
-  --accent-foreground: oklch(0.95 0 0);
+  --accent: var(--color-primary);
+  --accent-foreground: var(--color-text-light);
   --destructive: oklch(0.704 0.191 22.216);
   --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.45 0.25 265);
-  --chart-1: oklch(0.50 0.15 230);
-  --chart-2: oklch(0.45 0.25 265);
+  --ring: var(--color-secondary);
+  --chart-1: var(--color-primary);
+  --chart-2: var(--color-secondary);
   --chart-3: oklch(0.60 0.10 230);
-  --chart-4: oklch(0.40 0.08 240);
-  --chart-5: oklch(0.30 0.05 240);
-  --sidebar: oklch(0.18 0.03 240);
-  --sidebar-foreground: oklch(0.95 0 0);
-  --sidebar-accent: oklch(0.22 0.03 240);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --chart-4: #000080cc;
+  --chart-5: #00008099;
+  --sidebar: #000080e6;
+  --sidebar-foreground: var(--color-text-light);
+  --sidebar-accent: var(--color-primary);
+  --sidebar-accent-foreground: var(--color-text-light);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.45 0.25 265);
+  --sidebar-ring: var(--color-secondary);
 }
 
 .eb-garamond {
@@ -273,30 +283,32 @@
     letter-spacing: 0;
   }
   
-  /* DZ10 Section Label utility */
+  /* Section Label - charcoal on light backgrounds */
   .section-label {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #1A1A1A;
+    color: var(--color-charcoal);
   }
   
-  /* DZ10 Link styles - Electric Blue underline */
+  /* Link styles - Secondary accent underline, hover to primary */
   a {
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease-in-out;
   }
   
   .dz-link {
     color: inherit;
     text-decoration: underline;
-    text-decoration-color: #2251FF;
+    text-decoration-color: var(--color-secondary);
     text-underline-offset: 3px;
+    transition: color 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out;
   }
   .dz-link:hover {
-    color: #0077B5;
+    color: var(--color-primary);
+    text-decoration-color: var(--color-primary);
   }
   
   /* Text size utilities */
@@ -332,6 +344,15 @@
   input[type="radio"]:not(:disabled) {
     @apply cursor-pointer;
   }
+  
+  /* Form input focus - Secondary (Azure) ring */
+  input:focus, textarea:focus, select:focus {
+    transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  }
+  input:focus-visible, textarea:focus-visible, select:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-secondary);
+  }
 }
 
 @layer components {
@@ -364,65 +385,70 @@
     }
   }
   
-  /* DZ10 Primary Button - Deep Navy bg, white text, subtle rounded corners */
+  /* Primary Button - Primary accent bg, hover darken / shift to secondary */
   .dz-btn-primary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 0.875rem 1.75rem;
-    background-color: #051C2C;
-    color: #FFFFFF;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-size: 0.9375rem;
     font-weight: 600;
     border-radius: 4px;
     border: none;
-    transition: background-color 0.2s ease;
+    transition: all 0.2s ease-in-out;
   }
   .dz-btn-primary:hover {
-    background-color: #0077B5;
+    background-color: var(--color-primary-hover);
+  }
+  .dz-btn-primary:focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 2px;
   }
   
-  /* DZ10 Text Link CTA - Electric Blue underline with arrow */
+  /* Text Link CTA - Secondary underline, hover to primary */
   .dz-text-link {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: #1A1A1A;
+    color: var(--color-charcoal);
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-size: 0.9375rem;
     font-weight: 500;
     text-decoration: underline;
-    text-decoration-color: #2251FF;
+    text-decoration-color: var(--color-secondary);
     text-underline-offset: 3px;
-    transition: color 0.2s ease;
+    transition: all 0.2s ease-in-out;
   }
   .dz-text-link:hover {
-    color: #0077B5;
+    color: var(--color-primary);
+    text-decoration-color: var(--color-primary);
   }
   
-  /* DZ10 Card - No borders, whitespace separation, headline hover to McKinsey Blue */
+  /* Card - headline hover to primary accent */
   .dz-card {
-    background-color: #FFFFFF;
+    background-color: var(--color-text-light);
     padding: 1.5rem;
     transition: none;
   }
   .dz-card:hover .dz-card-title {
-    color: #0077B5;
+    color: var(--color-primary);
   }
   .dz-card-title {
-    transition: color 0.2s ease;
+    transition: color 0.2s ease-in-out;
   }
-  
-  /* DZ10 Section backgrounds */
+
+  /* Section backgrounds */
   .dz-bg-white {
-    background-color: #FFFFFF;
+    background-color: var(--color-text-light);
   }
   .dz-bg-subtle {
-    background-color: #F5F5F5;
+    background-color: var(--color-subtle);
   }
   .dz-bg-navy {
-    background-color: #051C2C;
+    background-color: var(--color-base);
   }
   
   /* DZ10 Section padding */
@@ -494,12 +520,12 @@
   
   /* Icon container animation */
   .icon-animate {
-    transition: all 0.3s ease-out;
+    transition: all 0.2s ease-in-out;
   }
   .group:hover .icon-animate {
     transform: scale(1.1);
-    background-color: var(--color-dz-mckinsey-blue);
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
   }
   
   /* Text reveal animation on hover */
@@ -539,11 +565,11 @@
   
   /* Button hover effects */
   .btn-hover-lift {
-    transition: all 0.3s ease-out;
+    transition: all 0.2s ease-in-out;
   }
   .btn-hover-lift:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px -8px rgba(0, 119, 181, 0.4);
+    box-shadow: 0 8px 25px -8px rgba(0, 92, 255, 0.35);
   }
   
   /* Smooth color transitions */
@@ -553,8 +579,8 @@
   
   /* Pulse animation for CTAs */
   @keyframes subtle-pulse {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(0, 119, 181, 0.4); }
-    50% { box-shadow: 0 0 0 8px rgba(0, 119, 181, 0); }
+    0%, 100% { box-shadow: 0 0 0 0 rgba(0, 92, 255, 0.4); }
+    50% { box-shadow: 0 0 0 8px rgba(0, 92, 255, 0); }
   }
   .pulse-cta {
     animation: subtle-pulse 2s infinite;
@@ -591,7 +617,7 @@
   /* Improved tap highlight for mobile */
   @media (hover: none) and (pointer: coarse) {
     button, a, [role="button"] {
-      -webkit-tap-highlight-color: rgba(0, 119, 181, 0.1);
+      -webkit-tap-highlight-color: rgba(0, 92, 255, 0.15);
     }
   }
   

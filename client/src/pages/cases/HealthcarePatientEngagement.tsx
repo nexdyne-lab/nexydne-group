@@ -9,7 +9,7 @@ export default function HealthcarePatientEngagement() {
     <div className="min-h-screen bg-white">
       <Navigation />
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#1a2b5c] via-[#2D5BFF] to-[#4169FF] text-white py-20">
+      <section className="bg-gradient-to-br from-base via-primary to-primary text-white py-20">
         <div className="container">
           <Link href="/cases">
             <Button variant="ghost" className="text-white hover:bg-white/10 mb-8">
@@ -36,10 +36,10 @@ export default function HealthcarePatientEngagement() {
       <section className="py-20">
         <div className="container max-w-4xl">
           <h2 className="text-4xl font-bold mb-6">The Challenge</h2>
-          <p className="text-lg text-slate-700 leading-relaxed mb-6">
+          <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
             A regional healthcare system serving 380,000 patients across 14 hospitals and 67 clinics faced escalating administrative costs and declining patient satisfaction scores. The organization's patient services call center handled 142,000 monthly inquiries—appointment scheduling, prescription refills, billing questions, test results, and general health information. Average wait times exceeded 12 minutes during peak hours, and 28% of callers abandoned before reaching staff. Administrative staff spent 65% of their time on routine, repetitive tasks that didn't require clinical expertise, creating bottlenecks that prevented them from focusing on complex care coordination.
           </p>
-          <p className="text-lg text-slate-700 leading-relaxed">
+          <p className="text-lg text-charcoal/80 leading-relaxed">
             The fragmented patient experience created care continuity gaps. Patients called multiple departments for related issues, repeating their information at each touchpoint. The lack of 24/7 support meant patients with urgent questions outside business hours resorted to emergency departments for non-emergency issues, driving up costs by $3.2M+ annually. The healthcare system had implemented a basic phone tree IVR, but patients actively avoided it, preferring to wait for human assistance—making intelligent automation the only viable path to improve patient access while controlling costs.
           </p>
         </div>
@@ -49,14 +49,14 @@ export default function HealthcarePatientEngagement() {
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl">
           <h2 className="text-4xl font-bold mb-6">The Solution</h2>
-          <p className="text-lg text-slate-700 leading-relaxed mb-6">
+          <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
             NEXDYNE designed and implemented a HIPAA-compliant conversational AI platform that provided 24/7 patient support across phone (voice AI), web portal, mobile app, and SMS. The solution centered on an intelligent virtual health assistant that understood natural language, maintained context across interactions, and integrated securely with the healthcare system's EHR, scheduling, pharmacy, and billing systems to provide personalized, accurate support.
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 my-12">
             <div className="bg-white p-8 rounded-lg border border-slate-200">
               <h3 className="text-2xl font-bold mb-4">Implementation Approach</h3>
-              <ul className="space-y-3 text-slate-700">
+              <ul className="space-y-3 text-charcoal/80">
                 <li className="flex items-start">
                   <ArrowRight className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
                   <span>HIPAA compliance and security architecture design</span>
@@ -78,7 +78,7 @@ export default function HealthcarePatientEngagement() {
 
             <div className="bg-white p-8 rounded-lg border border-slate-200">
               <h3 className="text-2xl font-bold mb-4">Key Features</h3>
-              <ul className="space-y-3 text-slate-700">
+              <ul className="space-y-3 text-charcoal/80">
                 <li className="flex items-start">
                   <ArrowRight className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
                   <span>Appointment scheduling and rescheduling</span>
@@ -109,21 +109,21 @@ export default function HealthcarePatientEngagement() {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
               <div className="text-5xl font-bold text-blue-500 mb-2">52%</div>
-              <div className="text-lg text-slate-600">Inquiry automation rate</div>
+              <div className="text-lg text-muted-foreground">Inquiry automation rate</div>
             </div>
             <div className="text-center">
               <div className="text-5xl font-bold text-blue-500 mb-2">89%</div>
-              <div className="text-lg text-slate-600">Patient satisfaction score</div>
+              <div className="text-lg text-muted-foreground">Patient satisfaction score</div>
             </div>
             <div className="text-center">
               <div className="text-5xl font-bold text-blue-500 mb-2">$3.2M</div>
-              <div className="text-lg text-slate-600">Annual cost savings</div>
+              <div className="text-lg text-muted-foreground">Annual cost savings</div>
             </div>
           </div>
 
           <div className="bg-blue-50 p-8 rounded-lg">
             <h3 className="text-2xl font-bold mb-4">Business Impact</h3>
-            <ul className="space-y-3 text-slate-700">
+            <ul className="space-y-3 text-charcoal/80">
               <li className="flex items-start">
                 <ArrowRight className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
                 <span><strong>Patient access improvement:</strong> Average wait times dropped from 12 minutes to under 2 minutes with 24/7 AI support, eliminating business-hours-only frustration</span>
@@ -146,10 +146,10 @@ export default function HealthcarePatientEngagement() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#2D5BFF] via-[#4169FF] to-[#5B7FFF] text-white">
+      <section className="py-20 bg-gradient-to-br from-primary via-primary to-secondary text-white">
         <div className="container text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to transform patient engagement with AI?</h2>
-          <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground/50 mb-8 max-w-2xl mx-auto">
             Let's discuss how conversational AI can improve patient access and outcomes in your healthcare organization.
           </p>
           <div className="flex gap-4 justify-center">

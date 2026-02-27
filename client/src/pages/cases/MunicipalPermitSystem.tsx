@@ -49,7 +49,7 @@ export function MunicipalPermitSystem() {
       </section>
 
       {/* Solution Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-subtle">
         <div className="container max-w-4xl">
           <h2 className="text-3xl font-bold mb-6">The Solution</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground">
@@ -111,7 +111,7 @@ export function MunicipalPermitSystem() {
             Let's discuss how NEXDYNE can help you deliver better citizen experiences with low-code solutions.
           </p>
           <div className="flex gap-4 justify-center">
-            <Button size="lg" className="bg-black hover:bg-gray-800">Get in touch</Button>
+            <Button size="lg" className="bg-charcoal hover:bg-gray-800">Get in touch</Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/cases">View all cases</Link>
             </Button>

@@ -119,7 +119,7 @@ export function BainHero() {
   const currentSlide = featuredSlides[activeSlide];
 
   return (
-    <section className="relative w-full h-[110vh] min-h-[700px] sm:min-h-[800px] lg:min-h-[900px] overflow-hidden bg-[#1a1a1a] -mt-20 pt-20">
+    <section className="relative w-full h-[110vh] min-h-[700px] sm:min-h-[800px] lg:min-h-[900px] overflow-hidden bg-base -mt-20 pt-20">
       {/* Background Images with Crossfade */}
       <AnimatePresence mode="sync">
         {featuredSlides.map((slide, index) => (
@@ -195,7 +195,7 @@ export function BainHero() {
                   {/* Progress Indicator - Animated for active slide */}
                   <div className="absolute -top-4 sm:-top-6 left-0 h-0.5 sm:h-1 w-full sm:w-24 bg-white/10 overflow-hidden">
                     <div 
-                      className="h-full bg-[#CC0000] transition-none"
+                      className="h-full bg-primary transition-none"
                       style={{ 
                         width: index === activeSlide 
                           ? `${isAutoPlaying ? progress : 100}%` 

@@ -141,41 +141,41 @@ export default function CustomSoftwareDev() {
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 max-w-7xl mx-auto">
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <DollarSign className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">More cost-effective</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">More cost-effective</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 Avoid expensive per-user licenses for bloated software you only partially use. Custom solutions often cost less long-term than enterprise SaaS subscriptions.
               </p>
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Perfect fit</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Perfect fit</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 Skip complex workarounds and forced processes. Software built for your unique requirements delivers exactly what you need, nothing more, nothing less.
               </p>
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <Puzzle className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Seamless integration</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Seamless integration</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 No IT landscape overhaul required. We build software that integrates naturally with your existing systems and workflows.
               </p>
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <Cloud className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Hybrid compatibility</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Hybrid compatibility</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 Whether your IT is on-premise, in the cloud, or hybrid, custom software ensures your entire landscape works together seamlessly.
               </p>
             </div>
@@ -184,16 +184,16 @@ export default function CustomSoftwareDev() {
       </section>
 
       {/* What is Custom Software Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container max-w-5xl mx-auto">
           <div className="mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Understanding Custom Software</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Understanding Custom Software</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               Built for you, not the masses
             </h2>
           </div>
           
-          <div className="prose prose-xl max-w-none text-gray-700 leading-relaxed space-y-6">
+          <div className="prose prose-xl max-w-none text-charcoal/80 leading-relaxed space-y-6">
             <p>
               A common misconception about custom software is that it's only suitable for large enterprises—supposedly expensive, complex, and requiring massive IT departments to maintain. The reality is quite different. Small and mid-sized businesses often benefit most from tailored solutions because they can't afford to waste resources on bloated enterprise software that requires extensive customization, training, and ongoing license fees for features they'll never use.
             </p>
@@ -206,11 +206,11 @@ export default function CustomSoftwareDev() {
           </div>
 
           {/* Quote */}
-          <div className="mt-12 border-l-4 border-[#2D5BFF] pl-8 py-6 bg-white">
+          <div className="mt-12 border-l-4 border-primary pl-8 py-6 bg-white">
             <p className="text-xl italic text-gray-800 mb-4">
               "We were paying $8,000/month for enterprise software that didn't fit our manufacturing process. Custom software cost us $120K to build and saves us $96K annually in license fees—plus it actually works the way we need it to."
             </p>
-            <p className="text-lg font-semibold text-gray-900">COO, Mid-Size Manufacturer</p>
+            <p className="text-lg font-semibold text-charcoal">COO, Mid-Size Manufacturer</p>
           </div>
         </div>
       </section>
@@ -245,7 +245,7 @@ export default function CustomSoftwareDev() {
               <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-slate-900">1</span>
+                    <span className="text-2xl font-bold text-charcoal">1</span>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Discovery & Planning</h3>
@@ -259,7 +259,7 @@ export default function CustomSoftwareDev() {
               <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-slate-900">2</span>
+                    <span className="text-2xl font-bold text-charcoal">2</span>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Iterative Development</h3>
@@ -273,7 +273,7 @@ export default function CustomSoftwareDev() {
               <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-slate-900">3</span>
+                    <span className="text-2xl font-bold text-charcoal">3</span>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Launch & Support</h3>
@@ -304,7 +304,7 @@ export default function CustomSoftwareDev() {
       />
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-[#2D5BFF] text-white">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-primary text-white">
         <div className="container text-center max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8">
             Ready to build software that fits?
@@ -313,7 +313,7 @@ export default function CustomSoftwareDev() {
             Stop struggling with off-the-shelf limitations. Let's build a solution designed for your success.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:p-5 md:p-6">
-            <Button className="bg-white text-[#2D5BFF] hover:bg-gray-100 text-lg px-10 py-6 rounded-full font-bold shadow-lg transition-all hover:scale-105">
+            <Button className="bg-white text-primary hover:bg-subtle text-lg px-10 py-6 rounded-full font-bold shadow-lg transition-all hover:scale-105">
               Start Your Project
             </Button>
             <Button variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-10 py-6 rounded-full font-bold">

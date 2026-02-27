@@ -41,13 +41,13 @@ export default function AppDevelopment() {
       <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-white">
         <div className="container max-w-5xl mx-auto">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">What We Do</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8 text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">What We Do</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8 text-charcoal">
               Applications that work for you
             </h2>
           </div>
           
-          <div className="prose prose-xl max-w-none text-gray-700 leading-relaxed space-y-6">
+          <div className="prose prose-xl max-w-none text-charcoal/80 leading-relaxed space-y-6">
             <p>
               We develop business applications that fit like a glove. If your systems need customization and you want to stand out from the competition, we're here to help. Rather than forcing your processes into standard applications, we ensure your app seamlessly integrates with your business processes and supports the nuances of your working methods.
             </p>
@@ -62,28 +62,28 @@ export default function AppDevelopment() {
       </section>
 
       {/* Related Services Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Our Capabilities</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Our Capabilities</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               Comprehensive development solutions
             </h2>
           </div>
           
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 max-w-6xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/app-development/low-code" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
-                  <Zap className="w-8 h-8 text-[#2D5BFF] mr-3 flex-shrink-0" />
-                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+                  <Zap className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
+                  <h3 className="text-xl font-bold text-charcoal group-hover:text-primary transition-colors">
                     Low-Code Development
                   </h3>
                 </div>
-                <p className="text-gray-700 leading-relaxed mb-4">
+                <p className="text-charcoal/80 leading-relaxed mb-4">
                   Build unique applications that make you stand out in the market. Fast go-to-market, agile development, and flexible iteration—empowering business users and developers alike.
                 </p>
-                <div className="flex items-center text-[#2D5BFF] font-semibold">
+                <div className="flex items-center text-primary font-semibold">
                   Learn more
                   <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -91,17 +91,17 @@ export default function AppDevelopment() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/custom-software" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
-                  <Code className="w-8 h-8 text-[#2D5BFF] mr-3 flex-shrink-0" />
-                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+                  <Code className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
+                  <h3 className="text-xl font-bold text-charcoal group-hover:text-primary transition-colors">
                     Custom Software
                   </h3>
                 </div>
-                <p className="text-gray-700 leading-relaxed mb-4">
+                <p className="text-charcoal/80 leading-relaxed mb-4">
                   Need software that fits your needs perfectly? We offer flexible and scalable custom solutions, tailored precisely to your requirements and built to evolve with your business.
                 </p>
-                <div className="flex items-center text-[#2D5BFF] font-semibold">
+                <div className="flex items-center text-primary font-semibold">
                   Learn more
                   <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -109,17 +109,17 @@ export default function AppDevelopment() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/service-portals" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
-                  <Globe className="w-8 h-8 text-[#2D5BFF] mr-3 flex-shrink-0" />
-                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+                  <Globe className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
+                  <h3 className="text-xl font-bold text-charcoal group-hover:text-primary transition-colors">
                     Service Portals
                   </h3>
                 </div>
-                <p className="text-gray-700 leading-relaxed mb-4">
+                <p className="text-charcoal/80 leading-relaxed mb-4">
                   Improve customer contact and employee satisfaction with self-service portals ready for your customers 24/7—reducing support burden while enhancing user experience.
                 </p>
-                <div className="flex items-center text-[#2D5BFF] font-semibold">
+                <div className="flex items-center text-primary font-semibold">
                   Learn more
                   <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -127,17 +127,17 @@ export default function AppDevelopment() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/it-modernization" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
-                  <Smartphone className="w-8 h-8 text-[#2D5BFF] mr-3 flex-shrink-0" />
-                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+                  <Smartphone className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
+                  <h3 className="text-xl font-bold text-charcoal group-hover:text-primary transition-colors">
                     IT Modernization
                   </h3>
                 </div>
-                <p className="text-gray-700 leading-relaxed mb-4">
+                <p className="text-charcoal/80 leading-relaxed mb-4">
                   Upgrade your IT infrastructure and accelerate your organization. Eliminate sluggish legacy systems and move full speed ahead with modern, cloud-native architectures.
                 </p>
-                <div className="flex items-center text-[#2D5BFF] font-semibold">
+                <div className="flex items-center text-primary font-semibold">
                   Learn more
                   <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -151,25 +151,25 @@ export default function AppDevelopment() {
       <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-white">
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Success Stories</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Success Stories</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               Applications that transform businesses
             </h2>
           </div>
           
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 max-w-6xl mx-auto">
             <Link href="/cases/tkb-modernization" className="group">
-              <div className="bg-white border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 overflow-hidden h-full">
+              <div className="bg-white border-2 border-border hover:border-primary transition-all duration-300 overflow-hidden h-full">
                 <div className="aspect-video bg-gradient-to-br from-blue-100 to-indigo-100"></div>
                 <div className="p-4 sm:p-6 md:p-8">
-                  <p className="text-sm font-semibold text-[#2D5BFF] mb-3">CASE STUDY</p>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+                  <p className="text-sm font-semibold text-primary mb-3">CASE STUDY</p>
+                  <h3 className="text-2xl font-bold mb-4 text-charcoal group-hover:text-primary transition-colors">
                     TKB: Legacy system modernization
                   </h3>
-                  <p className="text-gray-700 leading-relaxed mb-4">
+                  <p className="text-charcoal/80 leading-relaxed mb-4">
                     Modernized legacy systems with Thinkwise and gained flexibility, innovation power, and speed—while preserving custom client solutions.
                   </p>
-                  <div className="flex items-center text-[#2D5BFF] font-semibold">
+                  <div className="flex items-center text-primary font-semibold">
                     Read case study
                     <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                   </div>
@@ -178,17 +178,17 @@ export default function AppDevelopment() {
             </Link>
 
             <Link href="/cases/payter-platform" className="group">
-              <div className="bg-white border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 overflow-hidden h-full">
+              <div className="bg-white border-2 border-border hover:border-primary transition-all duration-300 overflow-hidden h-full">
                 <div className="aspect-video bg-gradient-to-br from-cyan-100 to-blue-100"></div>
                 <div className="p-4 sm:p-6 md:p-8">
-                  <p className="text-sm font-semibold text-[#2D5BFF] mb-3">CASE STUDY</p>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+                  <p className="text-sm font-semibold text-primary mb-3">CASE STUDY</p>
+                  <h3 className="text-2xl font-bold mb-4 text-charcoal group-hover:text-primary transition-colors">
                     Payter: Future-ready platform
                   </h3>
-                  <p className="text-gray-700 leading-relaxed mb-4">
+                  <p className="text-charcoal/80 leading-relaxed mb-4">
                     Built a scalable platform with Camunda and Mendix that cut onboarding from days to seconds, enabling global growth and market expansion.
                   </p>
-                  <div className="flex items-center text-[#2D5BFF] font-semibold">
+                  <div className="flex items-center text-primary font-semibold">
                     Read case study
                     <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                   </div>
@@ -197,17 +197,17 @@ export default function AppDevelopment() {
             </Link>
 
             <Link href="/cases/sanquin-digital" className="group">
-              <div className="bg-white border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 overflow-hidden h-full">
+              <div className="bg-white border-2 border-border hover:border-primary transition-all duration-300 overflow-hidden h-full">
                 <div className="aspect-video bg-gradient-to-br from-red-100 to-pink-100"></div>
                 <div className="p-4 sm:p-6 md:p-8">
-                  <p className="text-sm font-semibold text-[#2D5BFF] mb-3">CASE STUDY</p>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+                  <p className="text-sm font-semibold text-primary mb-3">CASE STUDY</p>
+                  <h3 className="text-2xl font-bold mb-4 text-charcoal group-hover:text-primary transition-colors">
                     Sanquin: Digital transformation
                   </h3>
-                  <p className="text-gray-700 leading-relaxed mb-4">
+                  <p className="text-charcoal/80 leading-relaxed mb-4">
                     Transformed blood donation scheduling from printed invitations to an online self-service platform where donors schedule their own appointments.
                   </p>
-                  <div className="flex items-center text-[#2D5BFF] font-semibold">
+                  <div className="flex items-center text-primary font-semibold">
                     Read case study
                     <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                   </div>
@@ -216,17 +216,17 @@ export default function AppDevelopment() {
             </Link>
 
             <Link href="/cases/rai-amsterdam" className="group">
-              <div className="bg-white border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 overflow-hidden h-full">
+              <div className="bg-white border-2 border-border hover:border-primary transition-all duration-300 overflow-hidden h-full">
                 <div className="aspect-video bg-gradient-to-br from-purple-100 to-violet-100"></div>
                 <div className="p-4 sm:p-6 md:p-8">
-                  <p className="text-sm font-semibold text-[#2D5BFF] mb-3">CASE STUDY</p>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+                  <p className="text-sm font-semibold text-primary mb-3">CASE STUDY</p>
+                  <h3 className="text-2xl font-bold mb-4 text-charcoal group-hover:text-primary transition-colors">
                     RAI Amsterdam: Stand management
                   </h3>
-                  <p className="text-gray-700 leading-relaxed mb-4">
+                  <p className="text-charcoal/80 leading-relaxed mb-4">
                     Optimized stand management and enhanced exhibitor experience with a custom digital solution that streamlined operations and improved satisfaction.
                   </p>
-                  <div className="flex items-center text-[#2D5BFF] font-semibold">
+                  <div className="flex items-center text-primary font-semibold">
                     Read case study
                     <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                   </div>
@@ -248,13 +248,13 @@ export default function AppDevelopment() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Link href="/contact">
-              <Button size="lg" className="bg-[#2D5BFF] hover:bg-[#1e40af] text-white">
+              <Button size="lg" className="bg-primary hover:bg-primary-hover text-white">
                 Get in touch
                 <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </Button>
             </Link>
             <Link href="/contact">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-slate-900">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-charcoal">
                 Schedule a meeting
               </Button>
             </Link>

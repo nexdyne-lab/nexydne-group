@@ -9,7 +9,7 @@ import { SEO } from "@/components/SEO";
 
 export default function CaseStudyB2BDigitalOrdering() {
   return (
-    <div className="min-h-screen bg-[#051C2C] font-sans text-white selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
       <SEO 
         title="Case Study: Industrial Supplier B2B Digital Ordering" 
         description="How a 220-employee industrial supplier added $4.5M in revenue through a digital ordering platform with 58% self-service adoption."
@@ -25,8 +25,8 @@ export default function CaseStudyB2BDigitalOrdering() {
             alt="Industrial Warehouse" 
             className="w-full h-full object-cover opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#051C2C] via-[#051C2C]/85 to-[#051C2C]/50" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#051C2C] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/85 to-base/50" />
+          <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent" />
         </div>
         
         <div className="container px-4 sm:px-6 md:px-12 relative z-10">
@@ -37,13 +37,13 @@ export default function CaseStudyB2BDigitalOrdering() {
             className="max-w-4xl"
           >
             <Link href="/solutions/accelerating-business-growth">
-              <span className="inline-flex items-center text-sm text-white/60 hover:text-[#0077B5] transition-colors mb-6 cursor-pointer">
+              <span className="inline-flex items-center text-sm text-white/60 hover:text-primary transition-colors mb-6 cursor-pointer">
                 <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
                 Back to Accelerating Business Growth
               </span>
             </Link>
             
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#00A3E0] mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-secondary mb-4 sm:mb-6 block">
               B2B Manufacturing • Digital Commerce
             </span>
             
@@ -57,15 +57,15 @@ export default function CaseStudyB2BDigitalOrdering() {
             
             <div className="flex flex-wrap gap-4 mb-10">
               <div>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#00A3E0]">$4.5M</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-secondary">$4.5M</p>
                 <p className="text-white/60 text-sm">New Revenue</p>
               </div>
               <div>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#00A3E0]">58%</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-secondary">58%</p>
                 <p className="text-white/60 text-sm">Self-Service Orders</p>
               </div>
               <div>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#00A3E0]">35%</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-secondary">35%</p>
                 <p className="text-white/60 text-sm">Order Processing Cost Reduction</p>
               </div>
             </div>
@@ -95,7 +95,7 @@ export default function CaseStudyB2BDigitalOrdering() {
       </section>
 
       {/* Company Overview */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid md:grid-cols-2 gap-16 lg:gap-8 sm:gap-6 lg:gap-8 sm:gap-6 lg:gap-24 items-start">
             <motion.div
@@ -104,14 +104,14 @@ export default function CaseStudyB2BDigitalOrdering() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Company Overview
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight mb-5 sm:mb-6 md:mb-8">
                 A traditional distributor embracing digital
               </h2>
               
-              <div className="space-y-6 text-lg text-[#051C2C]/70 leading-relaxed">
+              <div className="space-y-6 text-lg text-charcoal/70 leading-relaxed">
                 <p>
                   This industrial supplier had been in business for 40 years, serving manufacturing and construction companies across the Midwest. With 220 employees, 3 distribution centers, and $85M in annual revenue, they were a trusted partner for MRO supplies, safety equipment, and industrial consumables.
                 </p>
@@ -126,28 +126,28 @@ export default function CaseStudyB2BDigitalOrdering() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-[#F8F9FA] p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl"
+              className="bg-subtle p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl"
             >
               <h3 className="text-xl font-serif font-bold mb-6">Company Profile</h3>
               <div className="space-y-4">
-                <div className="flex justify-between py-3 border-b border-[#051C2C]/10">
-                  <span className="text-[#051C2C]/60">Industry</span>
+                <div className="flex justify-between py-3 border-b border-base/10">
+                  <span className="text-charcoal/60">Industry</span>
                   <span className="font-semibold">Industrial Distribution</span>
                 </div>
-                <div className="flex justify-between py-3 border-b border-[#051C2C]/10">
-                  <span className="text-[#051C2C]/60">Employees</span>
+                <div className="flex justify-between py-3 border-b border-base/10">
+                  <span className="text-charcoal/60">Employees</span>
                   <span className="font-semibold">220</span>
                 </div>
-                <div className="flex justify-between py-3 border-b border-[#051C2C]/10">
-                  <span className="text-[#051C2C]/60">Annual Revenue</span>
+                <div className="flex justify-between py-3 border-b border-base/10">
+                  <span className="text-charcoal/60">Annual Revenue</span>
                   <span className="font-semibold">$85M (pre-project)</span>
                 </div>
-                <div className="flex justify-between py-3 border-b border-[#051C2C]/10">
-                  <span className="text-[#051C2C]/60">Distribution Centers</span>
+                <div className="flex justify-between py-3 border-b border-base/10">
+                  <span className="text-charcoal/60">Distribution Centers</span>
                   <span className="font-semibold">3 locations</span>
                 </div>
                 <div className="flex justify-between py-3">
-                  <span className="text-[#051C2C]/60">Project Duration</span>
+                  <span className="text-charcoal/60">Project Duration</span>
                   <span className="font-semibold">14 months</span>
                 </div>
               </div>
@@ -157,7 +157,7 @@ export default function CaseStudyB2BDigitalOrdering() {
       </section>
 
       {/* The Challenge */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -199,7 +199,7 @@ export default function CaseStudyB2BDigitalOrdering() {
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="flex items-start gap-3 bg-white/5 p-4 rounded-lg"
                 >
-                  <div className="w-2 h-2 bg-[#00A3E0] rounded-full mt-2 flex-shrink-0" />
+                  <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0" />
                   <span className="text-white/80">{challenge}</span>
                 </motion.div>
               ))}
@@ -209,7 +209,7 @@ export default function CaseStudyB2BDigitalOrdering() {
       </section>
 
       {/* The Solution */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -218,13 +218,13 @@ export default function CaseStudyB2BDigitalOrdering() {
             transition={{ duration: 0.6 }}
             className="text-center mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               The Solution
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6">
               A B2B commerce platform built for industrial distribution
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-3xl mx-auto">
+            <p className="text-xl text-charcoal/60 max-w-3xl mx-auto">
               NEXDYNE designed and implemented a comprehensive B2B e-commerce solution that handled the complexity of industrial distribution.
             </p>
           </motion.div>
@@ -235,7 +235,7 @@ export default function CaseStudyB2BDigitalOrdering() {
                 icon: <ShoppingCart className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Self-Service Portal",
                 description: "Customer-facing portal with product search, filtering, and ordering capabilities available 24/7 with mobile-responsive design.",
-                color: "from-[#0077B5] to-[#00A3E0]"
+                color: "from-[#0077B5] to-secondary"
               },
               {
                 icon: <Settings className="w-5 h-5 sm:w-6 sm:h-6" />,
@@ -265,7 +265,7 @@ export default function CaseStudyB2BDigitalOrdering() {
                 icon: <Building2 className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "ERP Integration",
                 description: "Bi-directional integration with Epicor ERP for orders, inventory, pricing, and customer data synchronization.",
-                color: "from-[#005a8c] to-[#0077B5]"
+                color: "from-base to-[#0077B5]"
               }
             ].map((item, index) => (
               <motion.div
@@ -276,14 +276,14 @@ export default function CaseStudyB2BDigitalOrdering() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group"
               >
-                <div className="h-full bg-[#F8F9FA] p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl hover:shadow-xl transition-all duration-300">
+                <div className="h-full bg-subtle p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl hover:shadow-xl transition-all duration-300">
                   <div className={`w-12 h-12 bg-gradient-to-br ${item.color} rounded-lg flex items-center justify-center mb-6 text-white`}>
                     {item.icon}
                   </div>
-                  <h3 className="text-xl font-serif font-bold mb-4 group-hover:text-[#0077B5] transition-colors">
+                  <h3 className="text-xl font-serif font-bold mb-4 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-[#051C2C]/60 leading-relaxed text-sm">
+                  <p className="text-charcoal/60 leading-relaxed text-sm">
                     {item.description}
                   </p>
                 </div>
@@ -294,7 +294,7 @@ export default function CaseStudyB2BDigitalOrdering() {
       </section>
 
       {/* Implementation Timeline */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#F8F9FA] text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-subtle text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -303,7 +303,7 @@ export default function CaseStudyB2BDigitalOrdering() {
             transition={{ duration: 0.6 }}
             className="text-center mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Implementation
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6">
@@ -342,12 +342,12 @@ export default function CaseStudyB2BDigitalOrdering() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl shadow-sm"
               >
-                <span className="text-xs font-bold uppercase tracking-wider text-[#0077B5] mb-2 block">{phase.phase}</span>
+                <span className="text-xs font-bold uppercase tracking-wider text-primary mb-2 block">{phase.phase}</span>
                 <h3 className="text-lg font-serif font-bold mb-4">{phase.title}</h3>
                 <ul className="space-y-2">
                   {phase.items.map((item, i) => (
-                    <li key={i} className="flex items-start text-sm text-[#051C2C]/70">
-                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-[#0077B5] mr-2 flex-shrink-0 mt-0.5" />
+                    <li key={i} className="flex items-start text-sm text-charcoal/70">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-primary mr-2 flex-shrink-0 mt-0.5" />
                       {item}
                     </li>
                   ))}
@@ -359,7 +359,7 @@ export default function CaseStudyB2BDigitalOrdering() {
       </section>
 
       {/* Results */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -394,7 +394,7 @@ export default function CaseStudyB2BDigitalOrdering() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-[#00A3E0] mb-2">
+                <div className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-secondary mb-2">
                   {item.stat}
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">{item.label}</h3>
@@ -410,7 +410,7 @@ export default function CaseStudyB2BDigitalOrdering() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto bg-white/5 p-6 sm:p-8 md:p-12 rounded-lg sm:rounded-xl"
           >
-            <div className="text-[#00A3E0] mb-6">
+            <div className="text-secondary mb-6">
               <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
               </svg>
@@ -427,7 +427,7 @@ export default function CaseStudyB2BDigitalOrdering() {
       </section>
 
       {/* Related Case Studies */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#F8F9FA] text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-subtle text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -436,7 +436,7 @@ export default function CaseStudyB2BDigitalOrdering() {
             transition={{ duration: 0.6 }}
             className="text-center mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold">
@@ -473,21 +473,21 @@ export default function CaseStudyB2BDigitalOrdering() {
                   <div className="bg-white rounded-lg sm:rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer h-full flex flex-col">
                     <div className={`h-40 bg-gradient-to-br ${caseStudy.color}`} />
                     <div className="p-4 sm:p-5 md:p-6 flex-grow flex flex-col">
-                      <span className="text-xs font-bold uppercase tracking-wider text-[#0077B5] mb-2">
+                      <span className="text-xs font-bold uppercase tracking-wider text-primary mb-2">
                         {caseStudy.category}
                       </span>
-                      <h3 className="text-xl font-serif font-bold mb-4 group-hover:text-[#0077B5] transition-colors">
+                      <h3 className="text-xl font-serif font-bold mb-4 group-hover:text-primary transition-colors">
                         {caseStudy.title}
                       </h3>
                       <div className="grid grid-cols-2 gap-4 mb-6 mt-auto">
                         {caseStudy.stats.map((stat, i) => (
                           <div key={i}>
-                            <p className="text-2xl font-serif font-bold text-[#0077B5]">{stat.value}</p>
-                            <p className="text-xs text-[#051C2C]/60">{stat.label}</p>
+                            <p className="text-2xl font-serif font-bold text-primary">{stat.value}</p>
+                            <p className="text-xs text-charcoal/60">{stat.label}</p>
                           </div>
                         ))}
                       </div>
-                      <div className="flex items-center text-[#0077B5] font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
+                      <div className="flex items-center text-primary font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
                         Read case study
                         <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
                       </div>
@@ -501,7 +501,7 @@ export default function CaseStudyB2BDigitalOrdering() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -517,7 +517,7 @@ export default function CaseStudyB2BDigitalOrdering() {
               Let's discuss how we can help you build a digital ordering platform that drives efficiency and growth.
             </p>
             <Link href="/contact">
-              <Button className="bg-[#0077B5] hover:bg-[#005a8c] text-white px-10 py-6 text-lg font-semibold transition-all">
+              <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-lg font-semibold transition-all">
                 Schedule a Consultation
                 <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </Button>

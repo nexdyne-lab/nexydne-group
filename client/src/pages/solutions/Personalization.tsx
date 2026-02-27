@@ -14,9 +14,9 @@ export default function Personalization() {
       <section className="relative min-h-[600px] overflow-hidden">
         {/* Background Gradient Shapes */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-[#4169FF] to-[#4169FF]"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-primary to-primary"></div>
           <div 
-            className="absolute inset-0 bg-gradient-to-br from-blue-500 to-[#5B7FFF]" 
+            className="absolute inset-0 bg-gradient-to-br from-blue-500 to-secondary" 
             style={{
               clipPath: 'polygon(0 0, 60% 0, 40% 100%, 0 100%)'
             }}
@@ -65,13 +65,13 @@ export default function Personalization() {
             </div>
             
             <div>
-              <h2 className="text-4xl font-bold text-slate-900 mb-6">
+              <h2 className="text-4xl font-bold text-charcoal mb-6">
                 The Importance of Personalization
               </h2>
-              <p className="text-lg text-slate-600 leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 Personalization transforms generic customer interactions into individualized experiences that drive measurable business outcomes. By delivering the right message to the right customer at precisely the right moment, personalization eliminates friction, accelerates decision-making, and builds lasting loyalty.
               </p>
-              <p className="text-lg text-slate-600 leading-relaxed mt-4">
+              <p className="text-lg text-muted-foreground leading-relaxed mt-4">
                 Modern consumers expect brands to understand their preferences, anticipate their needs, and deliver relevant experiences across every touchpoint. Organizations that master personalization capture disproportionate market share—converting browsers into buyers, one-time purchasers into loyal advocates, and satisfied customers into brand evangelists. Personalization isn't just marketing—it's competitive advantage that compounds over time.
               </p>
             </div>
@@ -83,10 +83,10 @@ export default function Personalization() {
       <section className="py-20 md:py-28 bg-slate-50">
         <div className="container">
           <div className="mb-16">
-            <p className="text-sm uppercase tracking-wider text-slate-500 font-semibold mb-2">
+            <p className="text-sm uppercase tracking-wider text-muted-foreground font-semibold mb-2">
               Personalization
             </p>
-            <h2 className="text-4xl font-bold text-slate-900">
+            <h2 className="text-4xl font-bold text-charcoal">
               Services
             </h2>
           </div>
@@ -97,14 +97,14 @@ export default function Personalization() {
               <a className="group block bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
                 <div className="flex items-start justify-between gap-6">
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-3">
+                    <h3 className="text-2xl font-bold text-charcoal group-hover:text-blue-600 transition-colors mb-3">
                       Customer Data Platform (CDP)
                     </h3>
-                    <p className="text-slate-600 leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed">
                       Customer Data Platform: one central customer profile for data-driven marketing and sales that deliver. Unify fragmented customer data into a single, real-time profile that powers personalization across every channel—consolidating behavioral, transactional, and demographic data for segmentation, journey orchestration, and predictive analytics.
                     </p>
                   </div>
-                  <ArrowRight className="w-6 h-6 text-slate-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all flex-shrink-0" />
+                  <ArrowRight className="w-6 h-6 text-muted-foreground/70 group-hover:text-blue-600 group-hover:translate-x-1 transition-all flex-shrink-0" />
                 </div>
               </a>
             </Link>
@@ -114,14 +114,14 @@ export default function Personalization() {
               <a className="group block bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
                 <div className="flex items-start justify-between gap-6">
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-3">
+                    <h3 className="text-2xl font-bold text-charcoal group-hover:text-blue-600 transition-colors mb-3">
                       Customer Insights
                     </h3>
-                    <p className="text-slate-600 leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed">
                       Refine the customer experience with Customer Experience Analytics: access key insights that reveal opportunities, boost conversion and deliver serious growth. Transform raw customer data into actionable intelligence with advanced analytics that reveal hidden patterns, predict behavior, and identify high-value opportunities.
                     </p>
                   </div>
-                  <ArrowRight className="w-6 h-6 text-slate-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all flex-shrink-0" />
+                  <ArrowRight className="w-6 h-6 text-muted-foreground/70 group-hover:text-blue-600 group-hover:translate-x-1 transition-all flex-shrink-0" />
                 </div>
               </a>
             </Link>
@@ -131,14 +131,14 @@ export default function Personalization() {
               <a className="group block bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
                 <div className="flex items-start justify-between gap-6">
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-3">
+                    <h3 className="text-2xl font-bold text-charcoal group-hover:text-blue-600 transition-colors mb-3">
                       Customer Journey Map
                     </h3>
-                    <p className="text-slate-600 leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed">
                       Understand your customer at every step with a clever Customer Journey Map. Reveal valuable insights and deliver customer-focused interactions at every touchpoint. Visualize and optimize every customer interaction from awareness to advocacy—identifying friction points, quantifying drop-off rates, and revealing opportunities to personalize experiences.
                     </p>
                   </div>
-                  <ArrowRight className="w-6 h-6 text-slate-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all flex-shrink-0" />
+                  <ArrowRight className="w-6 h-6 text-muted-foreground/70 group-hover:text-blue-600 group-hover:translate-x-1 transition-all flex-shrink-0" />
                 </div>
               </a>
             </Link>
@@ -148,14 +148,14 @@ export default function Personalization() {
               <a className="group block bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
                 <div className="flex items-start justify-between gap-6">
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-3">
+                    <h3 className="text-2xl font-bold text-charcoal group-hover:text-blue-600 transition-colors mb-3">
                       Digital Experience Platform
                     </h3>
-                    <p className="text-slate-600 leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed">
                       A Digital Experience Platform marks the next smart step in your digital evolution. Discover the power of DXP and unbeatable integration. Orchestrate seamless, personalized experiences across web, mobile, and emerging channels with a unified DXP—integrating content management, personalization engines, and analytics into a single platform.
                     </p>
                   </div>
-                  <ArrowRight className="w-6 h-6 text-slate-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all flex-shrink-0" />
+                  <ArrowRight className="w-6 h-6 text-muted-foreground/70 group-hover:text-blue-600 group-hover:translate-x-1 transition-all flex-shrink-0" />
                 </div>
               </a>
             </Link>
@@ -176,13 +176,13 @@ export default function Personalization() {
             </div>
             
             <div>
-              <h2 className="text-4xl font-bold text-slate-900 mb-6">
+              <h2 className="text-4xl font-bold text-charcoal mb-6">
                 Why NEXDYNE
               </h2>
-              <p className="text-lg text-slate-600 leading-relaxed mb-6">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Whether you're looking for a strategic partner, a boost for your digital transformation, or the ultimate customer experience for your customers, you've come to the right place. With our next-generation digital solutions, you'll always be one step ahead of the competition.
               </p>
-              <p className="text-lg text-slate-600 leading-relaxed mb-8">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 NEXDYNE combines deep expertise in customer data platforms, predictive analytics, and real-time decisioning with proven implementation methodologies that minimize risk and accelerate time-to-value. Our personalization solutions leverage cutting-edge technologies while maintaining the flexibility to evolve as customer expectations shift.
               </p>
               <button className="bg-slate-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-slate-800 transition-colors">
@@ -197,16 +197,16 @@ export default function Personalization() {
       <section className="py-20 md:py-28 bg-slate-50">
         <div className="container">
           <div className="mb-12">
-            <p className="text-sm uppercase tracking-wider text-slate-500 font-semibold mb-2">
+            <p className="text-sm uppercase tracking-wider text-muted-foreground font-semibold mb-2">
               Partners
             </p>
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">
+            <h2 className="text-4xl font-bold text-charcoal mb-4">
               Awesome partners turn dreams into reality
             </h2>
-            <p className="text-lg text-slate-600 mb-8">
+            <p className="text-lg text-muted-foreground mb-8">
               With these partners we realize our personalization solutions
             </p>
-            <button className="border-2 border-slate-900 text-slate-900 px-8 py-3 rounded-full font-semibold hover:bg-slate-900 hover:text-white transition-colors">
+            <button className="border-2 border-slate-900 text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-slate-900 hover:text-white transition-colors">
               All partners
             </button>
           </div>
@@ -215,28 +215,28 @@ export default function Personalization() {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
               <h3 className="text-2xl font-bold text-blue-900 mb-4">Bloomreach</h3>
-              <p className="text-slate-600">
+              <p className="text-muted-foreground">
                 Commerce experience cloud combining CDP, search, merchandising, and content in one platform—powering personalized digital experiences that drive revenue.
               </p>
             </div>
             
             <div className="bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
               <h3 className="text-2xl font-bold text-blue-900 mb-4">Commercetools</h3>
-              <p className="text-slate-600">
+              <p className="text-muted-foreground">
                 Headless commerce platform enabling brands to create unique, personalized shopping experiences across every touchpoint with API-first architecture.
               </p>
             </div>
             
             <div className="bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
               <h3 className="text-2xl font-bold text-blue-900 mb-4">Tweakwise</h3>
-              <p className="text-slate-600">
+              <p className="text-muted-foreground">
                 Search, merchandising, and personalization platform that optimizes product discovery and increases conversion through intelligent recommendations.
               </p>
             </div>
             
             <div className="bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
               <h3 className="text-2xl font-bold text-blue-900 mb-4">Sitecore</h3>
-              <p className="text-slate-600">
+              <p className="text-muted-foreground">
                 Digital experience platform combining content management, personalization, and marketing automation to deliver individualized customer journeys at scale.
               </p>
             </div>
@@ -248,10 +248,10 @@ export default function Personalization() {
       <section className="py-20 md:py-28 bg-blue-50">
         <div className="container">
           <div className="mb-12">
-            <p className="text-sm uppercase tracking-wider text-slate-500 font-semibold mb-2">
+            <p className="text-sm uppercase tracking-wider text-muted-foreground font-semibold mb-2">
               Cases
             </p>
-            <h2 className="text-4xl font-bold text-slate-900 mb-6">
+            <h2 className="text-4xl font-bold text-charcoal mb-6">
               Cases we love talking about
             </h2>
             <button className="bg-slate-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-slate-800 transition-colors">
@@ -271,10 +271,10 @@ export default function Personalization() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-600 transition-colors">
                     Retailer modernizes its legacy and unlocks new innovation potential
                   </h3>
-                  <p className="text-slate-600 mb-4">
+                  <p className="text-muted-foreground mb-4">
                     How a national home goods retailer deployed Bloomreach CDP to deliver individualized product recommendations and personalized email campaigns—driving 34% revenue lift and $18M in incremental annual revenue.
                   </p>
                   <span className="text-blue-600 font-semibold group-hover:underline">
@@ -295,10 +295,10 @@ export default function Personalization() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-600 transition-colors">
                     Fintech speeds up terminal onboarding with personalized workflows
                   </h3>
-                  <p className="text-slate-600 mb-4">
+                  <p className="text-muted-foreground mb-4">
                     How a payment processor implemented Sitecore DXP and journey mapping to deliver personalized merchant onboarding experiences—reducing time-to-activation by 52% and increasing merchant satisfaction scores.
                   </p>
                   <span className="text-blue-600 font-semibold group-hover:underline">
@@ -319,10 +319,10 @@ export default function Personalization() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-600 transition-colors">
                     Logistics company enables faster access to product information
                   </h3>
-                  <p className="text-slate-600 mb-4">
+                  <p className="text-muted-foreground mb-4">
                     How a global logistics provider leveraged Commercetools and customer insights to deliver personalized product catalogs and dynamic pricing—accelerating quote generation by 3.2x and reducing sales cycle length by 28%.
                   </p>
                   <span className="text-blue-600 font-semibold group-hover:underline">
@@ -336,8 +336,8 @@ export default function Personalization() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="relative py-20 md:py-28 bg-gradient-to-br from-red-900 via-[#2D5BFF] to-[#5B7FFF] text-white overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-red-900/90 via-[#2D5BFF]/80 to-transparent"></div>
+      <section className="relative py-20 md:py-28 bg-gradient-to-br from-red-900 via-primary to-secondary text-white overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-red-900/90 via-primary/80 to-transparent"></div>
         
         <div className="container relative">
           <div className="max-w-2xl mx-auto">

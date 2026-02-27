@@ -39,8 +39,8 @@ export default function UtilityBar({ isScrolled, isNavbarLight }: UtilityBarProp
           : "h-9 opacity-100"
       } ${
         isNavbarLight
-          ? "bg-[#1A1A1A] text-white/90"
-          : "bg-black/30 backdrop-blur-sm text-white/80 border-b border-white/10"
+          ? "bg-base text-on-dark/90"
+          : "bg-charcoal/30 backdrop-blur-sm text-white/80 border-b border-white/10"
       }`}
     >
       <div className="flex h-full items-center justify-between w-full px-6 lg:px-12">
@@ -74,21 +74,21 @@ export default function UtilityBar({ isScrolled, isNavbarLight }: UtilityBarProp
 
             {/* Language Dropdown */}
             {languageOpen && (
-              <div className="absolute top-full right-0 mt-1 bg-white text-[#1A1A1A] rounded shadow-lg border border-gray-200 py-1 min-w-[160px] z-[60]">
+              <div className="absolute top-full right-0 mt-1 bg-white text-charcoal rounded shadow-lg border border-border py-1 min-w-[160px] z-[60]">
                 <button
-                  className="w-full text-left px-4 py-2 text-xs font-medium hover:bg-gray-50 bg-gray-50"
+                  className="w-full text-left px-4 py-2 text-xs font-medium hover:bg-subtle bg-subtle"
                   onClick={() => setLanguageOpen(false)}
                 >
                   English (Global)
                 </button>
                 <button
-                  className="w-full text-left px-4 py-2 text-xs font-medium hover:bg-gray-50 text-gray-500 cursor-not-allowed"
+                  className="w-full text-left px-4 py-2 text-xs font-medium hover:bg-subtle text-muted-foreground cursor-not-allowed"
                   disabled
                 >
                   Français (Coming Soon)
                 </button>
                 <button
-                  className="w-full text-left px-4 py-2 text-xs font-medium hover:bg-gray-50 text-gray-500 cursor-not-allowed"
+                  className="w-full text-left px-4 py-2 text-xs font-medium hover:bg-subtle text-muted-foreground cursor-not-allowed"
                   disabled
                 >
                   Español (Coming Soon)
@@ -110,7 +110,7 @@ export default function UtilityBar({ isScrolled, isNavbarLight }: UtilityBarProp
               const toast = document.createElement("div");
               toast.textContent = "Saved Items — Feature coming soon";
               toast.className =
-                "fixed top-16 right-6 bg-[#1A1A1A] text-white text-sm px-4 py-2 rounded shadow-lg z-[100] animate-in fade-in slide-in-from-top-2";
+                "fixed top-16 right-6 bg-base text-text-light text-sm px-4 py-2 rounded shadow-lg z-[100] animate-in fade-in slide-in-from-top-2";
               document.body.appendChild(toast);
               setTimeout(() => toast.remove(), 2500);
             }}

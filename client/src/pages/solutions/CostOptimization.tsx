@@ -35,7 +35,7 @@ export default function CostOptimization() {
       <Navigation />
 
       {/* Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[70vh] flex items-center pt-20 bg-black">
+      <section className="relative min-h-[70vh] flex items-center pt-20 bg-charcoal">
         <div className="container px-4 md:px-12 grid md:grid-cols-2 gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -49,7 +49,7 @@ export default function CostOptimization() {
             
             <h1 className="text-5xl md:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.05] mb-4">
               Cost<br />
-              <span className="text-[#0077B5]">Optimization</span>
+              <span className="text-primary">Optimization</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
@@ -58,7 +58,7 @@ export default function CostOptimization() {
             
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
                   Schedule a Cost Review
                 </Button>
               </Link>
@@ -86,7 +86,7 @@ export default function CostOptimization() {
       </section>
 
       {/* At a Glance Section */}
-      <section className="py-16 bg-white border-b border-gray-100">
+      <section className="py-16 bg-white border-b border-border/50">
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -103,8 +103,8 @@ export default function CostOptimization() {
                 transition={{ delay: i * 0.1 }}
                 className="text-center md:text-left"
               >
-                <div className="text-4xl md:text-5xl font-bold text-[#051C2C] mb-2">{stat.value}</div>
-                <div className="text-sm text-gray-600">{stat.label}</div>
+                <div className="text-4xl md:text-5xl font-bold text-charcoal mb-2">{stat.value}</div>
+                <div className="text-sm text-muted-foreground">{stat.label}</div>
               </motion.div>
             ))}
           </div>
@@ -120,23 +120,23 @@ export default function CostOptimization() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
+              <p className="text-xl md:text-2xl text-charcoal/80 leading-relaxed mb-8">
                 Most growing companies are spending more on technology than they need to. Unused licenses, oversized infrastructure, duplicate tools, and unfavorable contracts quietly drain budgets—often without anyone noticing until cash gets tight.
               </p>
               
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 We help you find and eliminate technology waste without sacrificing capability. This isn't about cutting corners—it's about getting the same (or better) results for less money:
               </p>
               
-              <div className="space-y-6 text-gray-700">
+              <div className="space-y-6 text-charcoal/80">
                 <p>
-                  <strong className="text-[#051C2C]">Visibility comes first:</strong> You can't optimize what you can't see. We start by mapping every technology expense—subscriptions, licenses, infrastructure, services—so you know exactly where your money goes.
+                  <strong className="text-charcoal">Visibility comes first:</strong> You can't optimize what you can't see. We start by mapping every technology expense—subscriptions, licenses, infrastructure, services—so you know exactly where your money goes.
                 </p>
                 <p>
-                  <strong className="text-[#051C2C]">Right-size everything:</strong> Most companies over-provision. We analyze actual usage patterns and resize infrastructure, licenses, and subscriptions to match what you actually need.
+                  <strong className="text-charcoal">Right-size everything:</strong> Most companies over-provision. We analyze actual usage patterns and resize infrastructure, licenses, and subscriptions to match what you actually need.
                 </p>
                 <p>
-                  <strong className="text-[#051C2C]">Negotiate smarter:</strong> Vendors expect you to accept their first offer. We bring market intelligence and negotiation expertise to get you better terms on renewals and new contracts.
+                  <strong className="text-charcoal">Negotiate smarter:</strong> Vendors expect you to accept their first offer. We bring market intelligence and negotiation expertise to get you better terms on renewals and new contracts.
                 </p>
               </div>
             </motion.div>
@@ -145,7 +145,7 @@ export default function CostOptimization() {
       </section>
 
       {/* How We Can Help - H100 Capability Cards */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -153,13 +153,13 @@ export default function CostOptimization() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Our Cost Optimization Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               End-to-end cost optimization services from assessment to implementation.
             </p>
           </motion.div>
@@ -206,7 +206,7 @@ export default function CostOptimization() {
       </section>
 
       {/* Our Approach Section (3-Column Consulting Format) */}
-      <section id="process" className="py-20 bg-[#051C2C]">
+      <section id="process" className="py-20 bg-base">
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -214,7 +214,7 @@ export default function CostOptimization() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00d4ff] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">
               Our Approach
             </span>
             <h2 className="text-3xl md:text-5xl eb-garamond font-light text-white">
@@ -245,7 +245,7 @@ export default function CostOptimization() {
                 transition={{ delay: i * 0.1 }}
               >
                 <h3 className="text-xl font-bold text-white mb-4">{pillar.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{pillar.description}</p>
+                <p className="text-muted-foreground/50 leading-relaxed">{pillar.description}</p>
               </motion.div>
             ))}
           </div>
@@ -269,10 +269,10 @@ export default function CostOptimization() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
               Quick Wins
             </span>
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal mb-6">
               Savings you can capture in the first 90 days.
             </h2>
           </motion.div>
@@ -301,11 +301,11 @@ export default function CostOptimization() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-8 border border-gray-200 hover:border-[#0077B5] transition-colors"
+                className="p-8 border border-border hover:border-primary transition-colors"
               >
-                <h3 className="text-xl font-bold text-[#051C2C] mb-4">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed mb-4">{item.description}</p>
-                <p className="text-[#0077B5] font-semibold">Typical savings: {item.savings}</p>
+                <h3 className="text-xl font-bold text-charcoal mb-4">{item.title}</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">{item.description}</p>
+                <p className="text-primary font-semibold">Typical savings: {item.savings}</p>
               </motion.div>
             ))}
           </div>
@@ -313,7 +313,7 @@ export default function CostOptimization() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-subtle">
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -321,20 +321,20 @@ export default function CostOptimization() {
             viewport={{ once: true }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal mb-6">
               Ready to find hidden savings in your tech spend?
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-muted-foreground mb-8">
               Let's start with a free assessment to identify your biggest optimization opportunities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
-                <button className="px-8 py-4 bg-[#0077B5] text-white font-semibold rounded hover:bg-[#005a8c] transition-colors">
+                <button className="px-8 py-4 bg-primary text-white font-semibold rounded hover:bg-primary/90 transition-colors">
                   Get a Free Assessment
                 </button>
               </Link>
               <Link href="/solutions/enterprise-transformation">
-                <button className="px-8 py-4 border border-gray-300 text-[#051C2C] font-semibold rounded hover:bg-gray-100 transition-colors">
+                <button className="px-8 py-4 border border-border text-charcoal font-semibold rounded hover:bg-subtle transition-colors">
                   Explore All Technology Services
                 </button>
               </Link>

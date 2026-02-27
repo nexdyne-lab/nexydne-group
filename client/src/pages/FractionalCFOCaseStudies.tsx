@@ -71,7 +71,7 @@ export default function FractionalCFOCaseStudies() {
               <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3">
                 Fractional CFO Success Stories
               </h1>
-              <p className="text-xl text-slate-300 leading-relaxed">
+              <p className="text-xl text-muted-foreground/50 leading-relaxed">
                 Discover how NexDyne's Fractional CFO services have transformed financial functions from back-office necessities into strategic growth engines for mid-market companies.
               </p>
             </div>
@@ -101,38 +101,38 @@ export default function FractionalCFOCaseStudies() {
                             <div className={`w-12 h-12 rounded-lg sm:rounded-xl bg-gradient-to-br ${study.gradient} flex items-center justify-center`}>
                               <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                             </div>
-                            <div className="text-sm font-semibold text-slate-500 uppercase tracking-wider">
+                            <div className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">
                               {study.industry}
                             </div>
                           </div>
 
-                          <h2 className="text-3xl font-bold text-slate-900 mb-4 group-hover:text-blue-600 transition-colors">
+                          <h2 className="text-3xl font-bold text-charcoal mb-4 group-hover:text-blue-600 transition-colors">
                             {study.title}
                           </h2>
 
                           <div className="mb-6">
-                            <div className="text-sm font-semibold text-slate-500 mb-2">Company</div>
-                            <div className="text-lg text-slate-900">{study.company}</div>
+                            <div className="text-sm font-semibold text-muted-foreground mb-2">Company</div>
+                            <div className="text-lg text-charcoal">{study.company}</div>
                           </div>
 
                           <div className="mb-6">
-                            <div className="text-sm font-semibold text-slate-500 mb-2">Challenge</div>
-                            <p className="text-slate-700 leading-relaxed">{study.challenge}</p>
+                            <div className="text-sm font-semibold text-muted-foreground mb-2">Challenge</div>
+                            <p className="text-charcoal/80 leading-relaxed">{study.challenge}</p>
                           </div>
 
                           <div className="mb-5 sm:mb-6 md:mb-8">
-                            <div className="text-sm font-semibold text-slate-500 mb-2">Result</div>
-                            <p className="text-slate-900 font-medium leading-relaxed">{study.result}</p>
+                            <div className="text-sm font-semibold text-muted-foreground mb-2">Result</div>
+                            <p className="text-charcoal font-medium leading-relaxed">{study.result}</p>
                           </div>
 
                           {/* Metrics */}
                           <div className="grid grid-cols-3 gap-4 sm:p-5 md:p-6 mb-5 sm:mb-6 md:mb-8">
                             {study.metrics.map((metric, idx) => (
                               <div key={idx}>
-                                <div className="text-2xl font-bold text-slate-900 mb-1">
+                                <div className="text-2xl font-bold text-charcoal mb-1">
                                   {metric.value}
                                 </div>
-                                <div className="text-xs text-slate-600">
+                                <div className="text-xs text-muted-foreground">
                                   {metric.label}
                                 </div>
                               </div>
@@ -156,10 +156,10 @@ export default function FractionalCFOCaseStudies() {
         <div className="bg-slate-50 py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-24">
           <div className="container">
             <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-6 sm:p-8 md:p-12 text-center shadow-lg">
-              <h2 className="text-3xl font-bold text-slate-900 mb-6">
+              <h2 className="text-3xl font-bold text-charcoal mb-6">
                 Ready to professionalize your finance function?
               </h2>
-              <p className="text-lg text-slate-600 mb-5 sm:mb-6 md:mb-8 max-w-2xl mx-auto">
+              <p className="text-lg text-muted-foreground mb-5 sm:mb-6 md:mb-8 max-w-2xl mx-auto">
                 Don't let financial opacity hold back your growth. Our Fractional CFO services provide the leadership you need, when you need it.
               </p>
               <Link href="/contact">

@@ -52,7 +52,7 @@ export function LowcodeDevelopment() {
                 </div>
                 <div>
                   <p className="font-semibold mb-2">Do you want to know more?</p>
-                  <button className="px-6 py-2 border-2 border-black rounded-full hover:bg-black hover:text-white transition-colors">
+                  <button className="px-6 py-2 border-2 border-primary text-charcoal rounded-full hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out">
                     Ask Martijn Voorveld
                   </button>
                 </div>
@@ -106,7 +106,7 @@ export function LowcodeDevelopment() {
       </section>
 
       {/* Content Explanation Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-subtle">
         <div className="container max-w-4xl">
           <h2 className="text-4xl font-bold mb-8 text-center">Accelerate innovation with low-code</h2>
           <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
@@ -158,10 +158,10 @@ export function LowcodeDevelopment() {
                 <p className="text-lg mb-2">Martijn Voorveld</p>
                 <p className="text-muted-foreground mb-6">Chief Technology Officer</p>
                 <div className="flex gap-4">
-                  <button className="px-8 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
+                  <button className="px-8 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors duration-200 ease-in-out">
                     Get in touch
                   </button>
-                  <button className="px-8 py-3 border-2 border-black rounded-full hover:bg-black hover:text-white transition-colors flex items-center gap-2">
+                  <button className="px-8 py-3 border-2 border-primary text-charcoal rounded-full hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out flex items-center gap-2">
                     Schedule a meeting <ArrowRight className="w-4 h-4" />
                   </button>
                 </div>
@@ -178,13 +178,13 @@ export function LowcodeDevelopment() {
             <div className="mb-12">
               <p className="text-sm font-semibold text-blue-600 mb-2">Partners</p>
               <h2 className="text-4xl font-bold mb-4">Platform partners that power rapid delivery</h2>
-              <button className="px-6 py-2 border-2 border-black rounded-full hover:bg-black hover:text-white transition-colors">
+              <button className="px-6 py-2 border-2 border-primary text-charcoal rounded-full hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out">
                 All partners
               </button>
             </div>
             
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="p-8 border-2 border-gray-200 rounded-lg hover:border-blue-500 transition-colors">
+              <div className="p-8 border-2 border-border rounded-lg hover:border-blue-500 transition-colors">
                 <div className="h-24 flex items-center justify-center mb-4">
                   <div className="text-2xl font-bold text-blue-600">Mendix</div>
                 </div>
@@ -192,7 +192,7 @@ export function LowcodeDevelopment() {
                 <p className="text-sm text-muted-foreground">Enterprise-grade low-code platform for complex applications</p>
               </div>
 
-              <div className="p-8 border-2 border-gray-200 rounded-lg hover:border-blue-500 transition-colors">
+              <div className="p-8 border-2 border-border rounded-lg hover:border-blue-500 transition-colors">
                 <div className="h-24 flex items-center justify-center mb-4">
                   <div className="text-2xl font-bold text-blue-600">OutSystems</div>
                 </div>
@@ -200,7 +200,7 @@ export function LowcodeDevelopment() {
                 <p className="text-sm text-muted-foreground">High-performance low-code for mission-critical systems</p>
               </div>
 
-              <div className="p-8 border-2 border-gray-200 rounded-lg hover:border-blue-500 transition-colors">
+              <div className="p-8 border-2 border-border rounded-lg hover:border-blue-500 transition-colors">
                 <div className="h-24 flex items-center justify-center mb-4">
                   <div className="text-2xl font-bold text-blue-600">Power Platform</div>
                 </div>
@@ -213,7 +213,7 @@ export function LowcodeDevelopment() {
       </section>
 
       {/* Why NEXDYNE Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-subtle">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div>
@@ -228,7 +228,7 @@ export function LowcodeDevelopment() {
               <p className="text-lg leading-relaxed text-muted-foreground mb-6">
                 Whether you need a strategic technology partner, acceleration for your digital transformation, or exceptional user experiences for your customers, you've found the right team. With our next-generation low-code solutions, you'll always stay ahead of the competition.
               </p>
-              <button className="px-8 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
+              <button className="px-8 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors duration-200 ease-in-out">
                 Get in touch
               </button>
             </div>
@@ -245,7 +245,7 @@ export function LowcodeDevelopment() {
             <p className="text-lg text-muted-foreground max-w-3xl mb-8">
               Heard of a business that transforms unique business challenges into exceptional outcomes? That'd be us. Check out these inspiring cases!
             </p>
-            <button className="px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
+            <button className="px-6 py-2 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors duration-200 ease-in-out">
               All cases
             </button>
           </div>

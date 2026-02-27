@@ -11,7 +11,7 @@ export default function CustomerJourneyMap() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#8B2635] to-[#5C1A23] text-white py-24">
+      <section className="bg-gradient-to-br from-destructive to-base text-white py-24">
         <div className="container">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 text-sm mb-12 text-white/80">
@@ -72,7 +72,7 @@ export default function CustomerJourneyMap() {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Customer-focused insights</h3>
-                    <p className="text-lg text-slate-600 leading-relaxed">
+                    <p className="text-lg text-muted-foreground leading-relaxed">
                       Provides precise insights into customers' priorities and brand experience, revealing what matters most at each stage of their journey.
                     </p>
                   </div>
@@ -87,7 +87,7 @@ export default function CustomerJourneyMap() {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Identify pain points and opportunities</h3>
-                    <p className="text-lg text-slate-600 leading-relaxed">
+                    <p className="text-lg text-muted-foreground leading-relaxed">
                       Visualizes problems and potential improvements throughout the customer journey, pinpointing exactly where friction occurs and where value can be added.
                     </p>
                   </div>
@@ -102,7 +102,7 @@ export default function CustomerJourneyMap() {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Touchpoint optimization</h3>
-                    <p className="text-lg text-slate-600 leading-relaxed">
+                    <p className="text-lg text-muted-foreground leading-relaxed">
                       Makes every interaction relevant and meaningful, giving customers what they really want at the precise moment they need it.
                     </p>
                   </div>
@@ -117,7 +117,7 @@ export default function CustomerJourneyMap() {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Data-driven decisions</h3>
-                    <p className="text-lg text-slate-600 leading-relaxed">
+                    <p className="text-lg text-muted-foreground leading-relaxed">
                       Supports strategic choices with deep insights into customer behavior and expectations, enabling confident investment in high-impact improvements.
                     </p>
                   </div>
@@ -132,7 +132,7 @@ export default function CustomerJourneyMap() {
       <section className="py-20">
         <div className="container max-w-4xl">
           <h2 className="text-4xl font-bold mb-8 text-center">About Customer Journey Mapping</h2>
-          <div className="prose prose-lg max-w-none text-slate-700 leading-relaxed">
+          <div className="prose prose-lg max-w-none text-charcoal/80 leading-relaxed">
             <p className="text-xl mb-6">
               Customer journey mapping gives you a fresh perspective on your customers' true brand experience. It maps each step of the customer experience to reveal what customers like and dislike. Data analysis and customer insights point you toward opportunities to make interactions more personal and valuable. The result? Meaningful interactions at every touchpoint, boosting customer satisfaction and loyalty.
             </p>
@@ -143,10 +143,10 @@ export default function CustomerJourneyMap() {
       {/* Quote Section */}
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl text-center">
-          <blockquote className="text-3xl md:text-4xl font-bold text-[#8B2635] mb-8 leading-relaxed">
+          <blockquote className="text-3xl md:text-4xl font-bold text-destructive mb-8 leading-relaxed">
             "Thanks to the latest data technologies, customer journey mapping has never been more effective or relevant."
           </blockquote>
-          <p className="text-xl text-slate-600">
+          <p className="text-xl text-muted-foreground">
             Rachel Foster - Director of Experience Design | Customer Intelligence
           </p>
         </div>
@@ -156,7 +156,7 @@ export default function CustomerJourneyMap() {
       <section className="py-20">
         <div className="container max-w-4xl">
           <h2 className="text-4xl font-bold mb-8 text-center">Our Customer Journey Mapping solution</h2>
-          <div className="prose prose-lg max-w-none text-slate-700 leading-relaxed">
+          <div className="prose prose-lg max-w-none text-charcoal/80 leading-relaxed">
             <p className="text-xl mb-6">
               At NEXDYNE, we help organizations develop these customer-focused visualizations with deep data insights and analysis tools. Our approach is focused on identifying pivotal moments in the customer experience. And it works: we help you improve current interactions and effectively anticipate future customer expectations. The result? Meaningful interactions at every touchpoint, boosting customer engagement and loyalty.
             </p>
@@ -183,7 +183,7 @@ export default function CustomerJourneyMap() {
             <div>
               <h2 className="text-4xl font-bold mb-6">Do you want to know more?</h2>
               <p className="text-2xl font-semibold mb-2">Rachel Foster</p>
-              <p className="text-xl text-slate-600 mb-8">Director of Experience Design</p>
+              <p className="text-xl text-muted-foreground mb-8">Director of Experience Design</p>
               
               <div className="flex flex-wrap gap-4">
                 <button className="px-8 py-4 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-all flex items-center gap-2 text-lg font-semibold">
@@ -216,7 +216,7 @@ export default function CustomerJourneyMap() {
             {/* Right: Content */}
             <div>
               <h2 className="text-4xl font-bold mb-6">Why NEXDYNE</h2>
-              <p className="text-xl text-slate-700 leading-relaxed mb-8">
+              <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
                 Whether you're looking for a strategic partner, a boost for your digital transformation, or the ultimate customer experience for your customers, you've come to the right place. With our next-generation digital solutions, you'll always be one step ahead of the competition.
               </p>
               <button className="px-8 py-4 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-all text-lg font-semibold">
@@ -233,9 +233,9 @@ export default function CustomerJourneyMap() {
           <div className="grid md:grid-cols-12 gap-12">
             {/* Left: Content */}
             <div className="md:col-span-4">
-              <p className="text-sm uppercase tracking-wider text-slate-500 mb-4">Partners</p>
+              <p className="text-sm uppercase tracking-wider text-muted-foreground mb-4">Partners</p>
               <h2 className="text-4xl font-bold mb-6">Awesome partners turn dreams into reality</h2>
-              <p className="text-lg text-slate-600 mb-8">
+              <p className="text-lg text-muted-foreground mb-8">
                 With these partners we realize our personalization solutions
               </p>
               <button className="px-6 py-3 border-2 border-slate-900 rounded-full hover:bg-slate-900 hover:text-white transition-all">
@@ -252,7 +252,7 @@ export default function CustomerJourneyMap() {
                     <div className="w-24 h-24 mx-auto mb-4 bg-blue-500 rounded-full flex items-center justify-center">
                       <span className="text-white text-3xl font-bold">B</span>
                     </div>
-                    <h3 className="text-2xl font-bold text-[#8B2635]">Bloomreach</h3>
+                    <h3 className="text-2xl font-bold text-destructive">Bloomreach</h3>
                   </div>
                 </div>
 
@@ -264,7 +264,7 @@ export default function CustomerJourneyMap() {
                         <path d="M50 10 L90 30 L90 70 L50 90 L10 70 L10 30 Z" stroke="currentColor" strokeWidth="3" fill="none"/>
                       </svg>
                     </div>
-                    <h3 className="text-2xl font-bold text-[#8B2635]">Commercetools</h3>
+                    <h3 className="text-2xl font-bold text-destructive">Commercetools</h3>
                   </div>
                 </div>
 
@@ -283,7 +283,7 @@ export default function CustomerJourneyMap() {
                         <circle cx="50" cy="50" r="40" />
                       </svg>
                     </div>
-                    <h3 className="text-2xl font-bold text-[#8B2635]">Sitecore</h3>
+                    <h3 className="text-2xl font-bold text-destructive">Sitecore</h3>
                   </div>
                 </div>
               </div>

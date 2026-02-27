@@ -11,12 +11,12 @@ import SocialShare from '@/components/SocialShare';
 
 export default function ChurnPredictionPlaybook() {
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-[#00d4ff] selection:text-[#0a0e3d]">
+    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-secondary selection:text-base">
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-[#0a0e3d] text-white py-16 md:py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0a0e3d]/50 z-10" />
+      <section className="bg-base text-white py-16 md:py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-base/50 z-10" />
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2670&auto=format&fit=crop')] opacity-10 bg-cover bg-center" />
         
         <div className="container max-w-4xl mx-auto px-4 relative z-20">
@@ -29,21 +29,21 @@ export default function ChurnPredictionPlaybook() {
               <Code className="w-4 h-4" />
               Technical Guide
             </span>
-            <span className="inline-flex items-center gap-2 text-sm text-gray-300">
+            <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/50">
               <Calendar className="w-4 h-4" />
               March 5, 2025
             </span>
-            <span className="inline-flex items-center gap-2 text-sm text-gray-300">
+            <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/50">
               <Clock className="w-4 h-4" />
               12 min read
             </span>
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold mb-3 leading-tight tracking-tight">
-            The Churn Prediction Playbook: <span className="text-[#00d4ff]">From Random Forest to Production</span>
+            The Churn Prediction Playbook: <span className="text-secondary">From Random Forest to Production</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-300 font-light leading-relaxed max-w-3xl">
+          <p className="text-xl md:text-2xl text-muted-foreground/50 font-light leading-relaxed max-w-3xl">
             A technical walkthrough of building, training, and deploying a churn prediction model that actually integrates with your CRM.
           </p>
         </div>
@@ -53,7 +53,7 @@ export default function ChurnPredictionPlaybook() {
       <article className="py-16 md:py-24">
         <div className="container max-w-3xl mx-auto px-4">
           {/* Featured Image */}
-          <div className="aspect-video bg-gray-100 rounded-2xl mb-12 overflow-hidden shadow-xl">
+          <div className="aspect-video bg-subtle rounded-2xl mb-12 overflow-hidden shadow-xl">
             <img 
               src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2670&auto=format&fit=crop" 
               alt="Code on screen" 
@@ -61,9 +61,9 @@ export default function ChurnPredictionPlaybook() {
             />
           </div>
 
-          <div className="flex justify-between items-center mb-12 border-b border-gray-200 pb-8">
+          <div className="flex justify-between items-center mb-12 border-b border-border pb-8">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-gray-200 rounded-full overflow-hidden">
+              <div className="w-12 h-12 bg-muted rounded-full overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop" 
                   alt="Sarah Jenkins" 
@@ -71,15 +71,15 @@ export default function ChurnPredictionPlaybook() {
                 />
               </div>
               <div>
-                <h4 className="font-bold text-gray-900">Sarah Jenkins</h4>
-                <p className="text-sm text-gray-500">Lead ML Engineer</p>
+                <h4 className="font-bold text-charcoal">Sarah Jenkins</h4>
+                <p className="text-sm text-muted-foreground">Lead ML Engineer</p>
               </div>
             </div>
             <SocialShare title="The Churn Prediction Playbook" />
           </div>
 
-          <div className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-[#0a0e3d] prose-a:text-[#00d4ff] prose-img:rounded-xl prose-pre:bg-[#0a0e3d] prose-pre:text-gray-100">
-            <p className="lead text-xl text-gray-600 mb-8">
+          <div className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-base prose-a:text-secondary prose-img:rounded-xl prose-pre:bg-base prose-pre:text-gray-100">
+            <p className="lead text-xl text-muted-foreground mb-8">
               Most churn prediction models fail not because the math is wrong, but because the engineering is disconnected from the business process. A model that lives in a Jupyter notebook is useless. A model that pushes probability scores into Salesforce is a revenue engine.
             </p>
 
@@ -93,20 +93,20 @@ export default function ChurnPredictionPlaybook() {
             </p>
             
             <div className="grid md:grid-cols-3 gap-6 my-8 not-prose">
-              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                <Database className="w-8 h-8 text-[#00d4ff] mb-4" />
-                <h4 className="font-bold text-[#0a0e3d] mb-2">Product Analytics</h4>
-                <p className="text-sm text-gray-600">Login frequency, feature usage, session duration (Segment, Mixpanel).</p>
+              <div className="bg-subtle p-6 rounded-xl border border-border">
+                <Database className="w-8 h-8 text-secondary mb-4" />
+                <h4 className="font-bold text-base mb-2">Product Analytics</h4>
+                <p className="text-sm text-muted-foreground">Login frequency, feature usage, session duration (Segment, Mixpanel).</p>
               </div>
-              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                <Server className="w-8 h-8 text-[#00d4ff] mb-4" />
-                <h4 className="font-bold text-[#0a0e3d] mb-2">CRM & Billing</h4>
-                <p className="text-sm text-gray-600">Contract value, tenure, payment history, support tickets (Salesforce, Stripe).</p>
+              <div className="bg-subtle p-6 rounded-xl border border-border">
+                <Server className="w-8 h-8 text-secondary mb-4" />
+                <h4 className="font-bold text-base mb-2">CRM & Billing</h4>
+                <p className="text-sm text-muted-foreground">Contract value, tenure, payment history, support tickets (Salesforce, Stripe).</p>
               </div>
-              <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                <Cpu className="w-8 h-8 text-[#00d4ff] mb-4" />
-                <h4 className="font-bold text-[#0a0e3d] mb-2">Interaction Data</h4>
-                <p className="text-sm text-gray-600">Email sentiment, call transcripts, meeting frequency (Gong, Outreach).</p>
+              <div className="bg-subtle p-6 rounded-xl border border-border">
+                <Cpu className="w-8 h-8 text-secondary mb-4" />
+                <h4 className="font-bold text-base mb-2">Interaction Data</h4>
+                <p className="text-sm text-muted-foreground">Email sentiment, call transcripts, meeting frequency (Gong, Outreach).</p>
               </div>
             </div>
 
@@ -162,8 +162,8 @@ importances = rf.feature_importances_`}
             <p>
               The final step is automation. We set up triggers in the CRM:
             </p>
-            <div className="bg-blue-50 border-l-4 border-[#00d4ff] p-6 my-8 rounded-r-lg">
-              <ul className="mb-0 text-gray-700 list-none pl-0 space-y-2">
+            <div className="bg-blue-50 border-l-4 border-secondary p-6 my-8 rounded-r-lg">
+              <ul className="mb-0 text-charcoal/80 list-none pl-0 space-y-2">
                 <li><strong>Score &gt; 70%:</strong> Alert CSM Manager, create "At Risk" opportunity.</li>
                 <li><strong>Score 50-70%:</strong> Trigger automated email sequence from CSM.</li>
                 <li><strong>Score &lt; 20%:</strong> Trigger upsell campaign.</li>
@@ -177,15 +177,15 @@ importances = rf.feature_importances_`}
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 md:p-12 bg-[#0a0e3d] rounded-2xl text-white relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#00d4ff]/10 rounded-full blur-3xl -mr-32 -mt-32" />
+          <div className="mt-16 p-8 md:p-12 bg-base rounded-2xl text-white relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -mr-32 -mt-32" />
             <div className="relative z-10">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">Don't build this from scratch.</h3>
-              <p className="text-gray-300 mb-8 max-w-xl text-lg">
+              <p className="text-muted-foreground/50 mb-8 max-w-xl text-lg">
                 NexDyne's Data Engineering team can deploy a production-ready churn prediction pipeline in your infrastructure in under 4 weeks.
               </p>
               <Link href="/contact">
-                <button className="px-8 py-4 bg-[#00d4ff] hover:bg-[#00bce3] text-[#0a0e3d] rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
+                <button className="px-8 py-4 bg-secondary hover:bg-secondary text-base rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
                   Get the Technical Specs
                 </button>
               </Link>
@@ -198,45 +198,45 @@ importances = rf.feature_importances_`}
           </div>
 
           {/* Related Posts */}
-          <div className="mt-16 pt-16 border-t border-gray-200">
-            <h3 className="text-2xl font-bold text-[#0a0e3d] mb-8">Related Engineering Insights</h3>
+          <div className="mt-16 pt-16 border-t border-border">
+            <h3 className="text-2xl font-bold text-base mb-8">Related Engineering Insights</h3>
             <div className="grid md:grid-cols-2 gap-8">
               <Link href="/insights/why-nps-is-a-vanity-metric">
                 <div className="group cursor-pointer">
-                  <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden">
+                  <div className="aspect-video bg-subtle rounded-xl mb-4 overflow-hidden">
                     <img 
                       src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop" 
                       alt="Data dashboard" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <div className="flex items-center gap-2 text-sm text-[#00d4ff] font-medium mb-2">
+                  <div className="flex items-center gap-2 text-sm text-secondary font-medium mb-2">
                     <Tag className="w-3 h-3" /> Data Science
                   </div>
-                  <h4 className="font-bold text-xl text-[#0a0e3d] group-hover:text-[#00d4ff] transition-colors mb-2">
+                  <h4 className="font-bold text-xl text-base group-hover:text-secondary transition-colors mb-2">
                     Why NPS is a Vanity Metric
                   </h4>
-                  <p className="text-gray-600 text-sm line-clamp-2">
+                  <p className="text-muted-foreground text-sm line-clamp-2">
                     Net Promoter Score tells you how customers felt yesterday. It doesn't tell you who will leave tomorrow.
                   </p>
                 </div>
               </Link>
               <Link href="/insights/economics-of-loyalty">
                 <div className="group cursor-pointer">
-                  <div className="aspect-video bg-gray-100 rounded-xl mb-4 overflow-hidden">
+                  <div className="aspect-video bg-subtle rounded-xl mb-4 overflow-hidden">
                     <img 
                       src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2672&auto=format&fit=crop" 
                       alt="Financial chart" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <div className="flex items-center gap-2 text-sm text-[#00d4ff] font-medium mb-2">
+                  <div className="flex items-center gap-2 text-sm text-secondary font-medium mb-2">
                     <Tag className="w-3 h-3" /> Unit Economics
                   </div>
-                  <h4 className="font-bold text-xl text-[#0a0e3d] group-hover:text-[#00d4ff] transition-colors mb-2">
+                  <h4 className="font-bold text-xl text-base group-hover:text-secondary transition-colors mb-2">
                     The Economics of Loyalty
                   </h4>
-                  <p className="text-gray-600 text-sm line-clamp-2">
+                  <p className="text-muted-foreground text-sm line-clamp-2">
                     Why most loyalty programs are just disguised price cuts that kill margins.
                   </p>
                 </div>

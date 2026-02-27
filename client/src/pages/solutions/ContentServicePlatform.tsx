@@ -14,7 +14,7 @@ export default function ContentServicePlatform() {
       {/* Breadcrumb */}
       <nav className="bg-slate-50 py-4">
         <div className="container">
-          <div className="flex items-center gap-2 text-sm text-slate-600">
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Link href="/">
               <a className="hover:text-blue-600">Services</a>
             </Link>
@@ -23,7 +23,7 @@ export default function ContentServicePlatform() {
               <a className="hover:text-blue-600">Data solutions</a>
             </Link>
             <span>/</span>
-            <span className="text-slate-900">Content Service Platform</span>
+            <span className="text-charcoal">Content Service Platform</span>
           </div>
         </div>
       </nav>
@@ -60,7 +60,7 @@ export default function ContentServicePlatform() {
                   </div>
                 </div>
               </div>
-              <p className="text-lg font-semibold text-slate-900 mb-4">Want to learn more?</p>
+              <p className="text-lg font-semibold text-charcoal mb-4">Want to learn more?</p>
               <Button variant="outline" className="w-full border-slate-300">
                 Ask Martijn Voorveld
               </Button>
@@ -68,7 +68,7 @@ export default function ContentServicePlatform() {
 
             {/* Right: Benefits */}
             <div>
-              <h2 className="text-4xl font-bold text-slate-900 mb-12">The benefits</h2>
+              <h2 className="text-4xl font-bold text-charcoal mb-12">The benefits</h2>
               
               <div className="space-y-12">
                 {/* Benefit 1 */}
@@ -79,10 +79,10 @@ export default function ContentServicePlatform() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                    <h3 className="text-2xl font-bold text-charcoal mb-3">
                       Instant knowledge access
                     </h3>
-                    <p className="text-lg text-slate-700">
+                    <p className="text-lg text-charcoal/80">
                       Employees find the documents, media, and data they need in seconds—no more hunting through shared drives or outdated folders.
                     </p>
                   </div>
@@ -96,10 +96,10 @@ export default function ContentServicePlatform() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                    <h3 className="text-2xl font-bold text-charcoal mb-3">
                       Built-in compliance safeguards
                     </h3>
-                    <p className="text-lg text-slate-700">
+                    <p className="text-lg text-charcoal/80">
                       Automated audit logging and role-based permissions keep sensitive information protected while meeting GDPR, HIPAA, and SOC 2 requirements.
                     </p>
                   </div>
@@ -113,10 +113,10 @@ export default function ContentServicePlatform() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                    <h3 className="text-2xl font-bold text-charcoal mb-3">
                       Single-source-of-truth versioning
                     </h3>
-                    <p className="text-lg text-slate-700">
+                    <p className="text-lg text-charcoal/80">
                       Everyone works from the latest approved version. No more email attachments labeled "final_v3_FINAL_revised.docx" causing costly mistakes.
                     </p>
                   </div>
@@ -130,16 +130,16 @@ export default function ContentServicePlatform() {
       {/* Content Explanation Section */}
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-8">
+          <h2 className="text-4xl font-bold text-charcoal mb-8">
             Content Service Platform = unified content control
           </h2>
           
           <div className="prose prose-lg max-w-none space-y-6">
-            <p className="text-lg text-slate-700">
+            <p className="text-lg text-charcoal/80">
               Your organization produces thousands of unstructured files every week: contracts, presentations, videos, design assets, email threads, and more. When this content lives in disconnected silos—local drives, SharePoint sites, Dropbox folders, email inboxes—teams waste hours searching for information and compliance risks multiply.
             </p>
 
-            <p className="text-lg text-slate-700">
+            <p className="text-lg text-charcoal/80">
               Unlike legacy document management systems that force you to migrate everything into one monolithic repository, modern Content Service Platforms connect to content wherever it lives. We implement a federated architecture that indexes and governs distributed content without disrupting existing workflows or requiring expensive data migrations.
             </p>
           </div>
@@ -152,7 +152,7 @@ export default function ContentServicePlatform() {
           <blockquote className="text-3xl font-bold text-rose-900 mb-6">
             "Deliver the right content, to the right people, at the right moment."
           </blockquote>
-          <p className="text-lg text-slate-600">
+          <p className="text-lg text-muted-foreground">
             Martijn Voorveld - Commercial Lead - NEXDYNE TECHNOLOGIES
           </p>
         </div>
@@ -161,12 +161,12 @@ export default function ContentServicePlatform() {
       {/* Partnership Section */}
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-8">
+          <h2 className="text-4xl font-bold text-charcoal mb-8">
             NEXDYNE & Alfresco
           </h2>
           
           <div className="prose prose-lg max-w-none">
-            <p className="text-lg text-slate-700 mb-6">
+            <p className="text-lg text-charcoal/80 mb-6">
               As an Alfresco certified implementation partner, NEXDYNE brings deep expertise in enterprise content management to US organizations. Our methodology starts with content discovery workshops—we map your existing repositories, understand approval workflows, and identify compliance gaps. Then we configure Alfresco's intelligent content services layer to sit on top of your current systems, adding AI-powered search, automated classification, and granular access controls without forcing migration. We integrate with Microsoft 365, Google Workspace, Salesforce, and your line-of-business applications so content flows seamlessly across your tech stack. Our US-based team provides white-glove implementation, user training, and ongoing managed services—you get a single point of contact for licensing, hosting, and support instead of juggling multiple vendors.
             </p>
           </div>
@@ -174,7 +174,7 @@ export default function ContentServicePlatform() {
       </section>
 
       {/* CTA Section with Contact Person */}
-      <section className="py-20" style={{ backgroundColor: '#f4d5c6' }}>
+      <section className="py-20" style={{ backgroundColor: 'var(--color-subtle)' }}>
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Contact Person Image */}
@@ -189,17 +189,17 @@ export default function ContentServicePlatform() {
 
             {/* Right: CTA Content */}
             <div>
-              <h2 className="text-4xl font-bold text-slate-900 mb-6">
+              <h2 className="text-4xl font-bold text-charcoal mb-6">
                 Want to learn more?
               </h2>
-              <p className="text-xl text-slate-900 mb-2">Martijn Voorveld</p>
-              <p className="text-lg text-slate-700 mb-8">Commercial Lead</p>
+              <p className="text-xl text-charcoal mb-2">Martijn Voorveld</p>
+              <p className="text-lg text-charcoal/80 mb-8">Commercial Lead</p>
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button className="bg-slate-900 hover:bg-slate-800 text-white">
                   Get in touch
                 </Button>
-                <Button variant="outline" className="border-slate-900 text-slate-900 hover:bg-slate-100">
+                <Button variant="outline" className="border-slate-900 text-charcoal hover:bg-slate-100">
                   Schedule a meeting
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -213,8 +213,8 @@ export default function ContentServicePlatform() {
       <section className="py-20 bg-white">
         <div className="container">
           <div className="mb-12">
-            <p className="text-sm text-slate-600 uppercase tracking-wide mb-2">Partners</p>
-            <h2 className="text-4xl font-bold text-slate-900">Agentic AI</h2>
+            <p className="text-sm text-muted-foreground uppercase tracking-wide mb-2">Partners</p>
+            <h2 className="text-4xl font-bold text-charcoal">Agentic AI</h2>
           </div>
 
           <div className="mb-8">
@@ -227,12 +227,12 @@ export default function ContentServicePlatform() {
           <div className="relative">
             <div className="flex items-center justify-between mb-8">
               <button className="p-2 hover:bg-slate-100 rounded-full">
-                <svg className="w-6 h-6 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-muted-foreground/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
               <button className="p-2 hover:bg-slate-100 rounded-full">
-                <svg className="w-6 h-6 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-muted-foreground/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
@@ -274,10 +274,10 @@ export default function ContentServicePlatform() {
 
             {/* Right: Content */}
             <div>
-              <h2 className="text-4xl font-bold text-slate-900 mb-6">
+              <h2 className="text-4xl font-bold text-charcoal mb-6">
                 Why NEXDYNE
               </h2>
-              <p className="text-lg text-slate-700 mb-8">
+              <p className="text-lg text-charcoal/80 mb-8">
                 Need a strategic partner who understands both technology and business transformation? NEXDYNE delivers enterprise-grade digital solutions that keep you ahead of competitors. Our US-based teams combine deep technical expertise with practical implementation experience—we don't just architect systems, we ensure they drive measurable business outcomes.
               </p>
               <Button className="bg-slate-900 hover:bg-slate-800 text-white">
@@ -292,11 +292,11 @@ export default function ContentServicePlatform() {
       <section className="py-20 bg-blue-50">
         <div className="container">
           <div className="mb-12">
-            <p className="text-sm text-slate-600 uppercase tracking-wide mb-2">Cases</p>
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">
+            <p className="text-sm text-muted-foreground uppercase tracking-wide mb-2">Cases</p>
+            <h2 className="text-4xl font-bold text-charcoal mb-4">
               Cases we love talking about
             </h2>
-            <p className="text-xl text-slate-700 max-w-3xl">
+            <p className="text-xl text-charcoal/80 max-w-3xl">
               Real organizations solving real challenges with measurable results. These case studies show how content platforms transform operations and drive ROI.
             </p>
           </div>
@@ -311,12 +311,12 @@ export default function ContentServicePlatform() {
           <div className="relative">
             <div className="flex items-center justify-end gap-4 mb-8">
               <button className="p-2 hover:bg-slate-200 rounded-full">
-                <svg className="w-6 h-6 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
               <button className="p-2 hover:bg-slate-200 rounded-full">
-                <svg className="w-6 h-6 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
@@ -334,10 +334,10 @@ export default function ContentServicePlatform() {
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-500 transition-colors">
+                    <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-500 transition-colors">
                       Media Company Centralizes 2M Assets with DAM Platform
                     </h3>
-                    <p className="text-slate-700 mb-4">
+                    <p className="text-charcoal/80 mb-4">
                       Unified digital asset library for video, audio, and image content across 12 production teams and 40 distribution channels.
                     </p>
                     <div className="flex items-center text-blue-500 font-semibold">
@@ -358,10 +358,10 @@ export default function ContentServicePlatform() {
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-500 transition-colors">
+                    <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-500 transition-colors">
                       Retailer Launches Products 60% Faster with Content Platform
                     </h3>
-                    <p className="text-slate-700 mb-4">
+                    <p className="text-charcoal/80 mb-4">
                       Automated product content workflows across 15,000 SKUs, 8 regional websites, and print catalogs.
                     </p>
                     <div className="flex items-center text-blue-500 font-semibold">
@@ -382,10 +382,10 @@ export default function ContentServicePlatform() {
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-500 transition-colors">
+                    <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-500 transition-colors">
                       Healthcare System Ensures Compliance with Content Workflows
                     </h3>
-                    <p className="text-slate-700 mb-4">
+                    <p className="text-charcoal/80 mb-4">
                       Automated approval workflows for patient education materials across 18 languages and 25 facilities.
                     </p>
                     <div className="flex items-center text-blue-500 font-semibold">
@@ -402,53 +402,53 @@ export default function ContentServicePlatform() {
       {/* Services Navigation Footer */}
       <section className="py-16 bg-white border-t border-slate-200">
         <div className="container max-w-4xl">
-          <h3 className="text-2xl font-bold text-slate-900 mb-8">Services</h3>
+          <h3 className="text-2xl font-bold text-charcoal mb-8">Services</h3>
           
           <div className="space-y-4">
             <Link href="/solutions/data-strategy">
               <div className="flex items-center justify-between p-4 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer group">
                 <div>
-                  <h4 className="text-lg font-semibold text-slate-900 group-hover:text-blue-500 transition-colors">Data Strategy</h4>
-                  <p className="text-slate-600">Define what data matters and how to monetize it. We map your data landscape and build roadmaps that align analytics with business priorities.</p>
+                  <h4 className="text-lg font-semibold text-charcoal group-hover:text-blue-500 transition-colors">Data Strategy</h4>
+                  <p className="text-muted-foreground">Define what data matters and how to monetize it. We map your data landscape and build roadmaps that align analytics with business priorities.</p>
                 </div>
-                <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-blue-500 group-hover:translate-x-1 transition-all" />
+                <ArrowRight className="w-5 h-5 text-muted-foreground/70 group-hover:text-blue-500 group-hover:translate-x-1 transition-all" />
               </div>
             </Link>
 
             <Link href="/solutions/data-platform">
               <div className="flex items-center justify-between p-4 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer group">
                 <div>
-                  <h4 className="text-lg font-semibold text-slate-900 group-hover:text-blue-500 transition-colors">Data Platform</h4>
-                  <p className="text-slate-600">Modern data warehouses and lakes built on cloud infrastructure. Scalable architectures that ingest, transform, and serve data at enterprise scale.</p>
+                  <h4 className="text-lg font-semibold text-charcoal group-hover:text-blue-500 transition-colors">Data Platform</h4>
+                  <p className="text-muted-foreground">Modern data warehouses and lakes built on cloud infrastructure. Scalable architectures that ingest, transform, and serve data at enterprise scale.</p>
                 </div>
-                <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-blue-500 group-hover:translate-x-1 transition-all" />
+                <ArrowRight className="w-5 h-5 text-muted-foreground/70 group-hover:text-blue-500 group-hover:translate-x-1 transition-all" />
               </div>
             </Link>
 
             <Link href="/solutions/data-visualization">
               <div className="flex items-center justify-between p-4 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer group">
                 <div>
-                  <h4 className="text-lg font-semibold text-slate-900 group-hover:text-blue-500 transition-colors">Data visualization</h4>
-                  <p className="text-slate-600">Real-time dashboards and analytics interfaces that surface insights when decisions get made. Executive scorecards and operational metrics that drive action.</p>
+                  <h4 className="text-lg font-semibold text-charcoal group-hover:text-blue-500 transition-colors">Data visualization</h4>
+                  <p className="text-muted-foreground">Real-time dashboards and analytics interfaces that surface insights when decisions get made. Executive scorecards and operational metrics that drive action.</p>
                 </div>
-                <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-blue-500 group-hover:translate-x-1 transition-all" />
+                <ArrowRight className="w-5 h-5 text-muted-foreground/70 group-hover:text-blue-500 group-hover:translate-x-1 transition-all" />
               </div>
             </Link>
 
             <Link href="/solutions/data-training">
               <div className="flex items-center justify-between p-4 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer group">
                 <div>
-                  <h4 className="text-lg font-semibold text-slate-900 group-hover:text-blue-500 transition-colors">Data Training</h4>
-                  <p className="text-slate-600">Give your employees the knowledge and skills they need to get data under control, from newbie to boss level.</p>
+                  <h4 className="text-lg font-semibold text-charcoal group-hover:text-blue-500 transition-colors">Data Training</h4>
+                  <p className="text-muted-foreground">Give your employees the knowledge and skills they need to get data under control, from newbie to boss level.</p>
                 </div>
-                <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-blue-500 group-hover:translate-x-1 transition-all" />
+                <ArrowRight className="w-5 h-5 text-muted-foreground/70 group-hover:text-blue-500 group-hover:translate-x-1 transition-all" />
               </div>
             </Link>
 
             <div className="flex items-center justify-between p-4 bg-slate-50 rounded-lg">
               <div>
-                <h4 className="text-lg font-semibold text-slate-900">Content Service Platform</h4>
-                <p className="text-slate-600">Streamline how your organization creates, manages, and distributes digital content. Centralized governance meets federated access.</p>
+                <h4 className="text-lg font-semibold text-charcoal">Content Service Platform</h4>
+                <p className="text-muted-foreground">Streamline how your organization creates, manages, and distributes digital content. Centralized governance meets federated access.</p>
               </div>
               <ArrowRight className="w-5 h-5 text-blue-500" />
             </div>
@@ -456,10 +456,10 @@ export default function ContentServicePlatform() {
             <Link href="/solutions/data-governance">
               <div className="flex items-center justify-between p-4 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer group">
                 <div>
-                  <h4 className="text-lg font-semibold text-slate-900 group-hover:text-blue-500 transition-colors">Data Governance</h4>
-                  <p className="text-slate-600">Access controls, compliance frameworks, and data quality monitoring. Ensure teams get the data they need while maintaining security and compliance.</p>
+                  <h4 className="text-lg font-semibold text-charcoal group-hover:text-blue-500 transition-colors">Data Governance</h4>
+                  <p className="text-muted-foreground">Access controls, compliance frameworks, and data quality monitoring. Ensure teams get the data they need while maintaining security and compliance.</p>
                 </div>
-                <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-blue-500 group-hover:translate-x-1 transition-all" />
+                <ArrowRight className="w-5 h-5 text-muted-foreground/70 group-hover:text-blue-500 group-hover:translate-x-1 transition-all" />
               </div>
             </Link>
           </div>

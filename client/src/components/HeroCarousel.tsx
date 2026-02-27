@@ -151,7 +151,7 @@ export function HeroCarousel() {
       </motion.div>
 
       {/* Swipe indicator for mobile */}
-      <div className="flex sm:hidden items-center justify-center gap-2 mt-2 text-[#1A1A1A]/40 text-xs">
+      <div className="flex sm:hidden items-center justify-center gap-2 mt-2 text-charcoal/40 text-xs">
         <ChevronLeft className="w-3 h-3" />
         <span>Swipe to navigate</span>
         <ChevronRight className="w-3 h-3" />
@@ -161,28 +161,28 @@ export function HeroCarousel() {
       <div className="flex items-center justify-center sm:justify-start gap-3 sm:gap-2 mt-4">
         <button
           onClick={() => setIsPlaying(!isPlaying)}
-          className="p-3 sm:p-2 rounded-md border border-[#1A1A1A]/20 hover:bg-[#1A1A1A]/5 active:bg-[#1A1A1A]/10 transition-colors touch-manipulation"
+          className="p-3 sm:p-2 rounded-md border border-charcoal/20 hover:bg-charcoal/5 active:bg-charcoal/10 transition-colors touch-manipulation"
           aria-label={isPlaying ? "Pause carousel" : "Play carousel"}
         >
           {isPlaying ? (
-            <Pause className="w-5 h-5 sm:w-4 sm:h-4 text-[#1A1A1A]" />
+            <Pause className="w-5 h-5 sm:w-4 sm:h-4 text-charcoal" />
           ) : (
-            <Play className="w-5 h-5 sm:w-4 sm:h-4 text-[#1A1A1A]" />
+            <Play className="w-5 h-5 sm:w-4 sm:h-4 text-charcoal" />
           )}
         </button>
         <button
           onClick={goToPrev}
-          className="p-3 sm:p-2 rounded-md border border-[#1A1A1A]/20 hover:bg-[#1A1A1A]/5 active:bg-[#1A1A1A]/10 transition-colors touch-manipulation"
+          className="p-3 sm:p-2 rounded-md border border-charcoal/20 hover:bg-charcoal/5 active:bg-charcoal/10 transition-colors touch-manipulation"
           aria-label="Previous slide"
         >
-          <ChevronLeft className="w-5 h-5 sm:w-4 sm:h-4 text-[#1A1A1A]" />
+          <ChevronLeft className="w-5 h-5 sm:w-4 sm:h-4 text-charcoal" />
         </button>
         <button
           onClick={goToNext}
-          className="p-3 sm:p-2 rounded-md border border-[#1A1A1A]/20 hover:bg-[#1A1A1A]/5 active:bg-[#1A1A1A]/10 transition-colors touch-manipulation"
+          className="p-3 sm:p-2 rounded-md border border-charcoal/20 hover:bg-charcoal/5 active:bg-charcoal/10 transition-colors touch-manipulation"
           aria-label="Next slide"
         >
-          <ChevronRight className="w-5 h-5 sm:w-4 sm:h-4 text-[#1A1A1A]" />
+          <ChevronRight className="w-5 h-5 sm:w-4 sm:h-4 text-charcoal" />
         </button>
       </div>
 
@@ -194,8 +194,8 @@ export function HeroCarousel() {
             onClick={() => setActiveIndex(index)}
             className={`w-2 h-2 rounded-full transition-all duration-300 touch-manipulation ${
               index === activeIndex 
-                ? 'bg-[#051C2C] w-4' 
-                : 'bg-[#1A1A1A]/20'
+                ? 'bg-base w-4' 
+                : 'bg-charcoal/20'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
@@ -288,7 +288,7 @@ function CarouselCardComponent({ card, isCenter, position, isDragging }: CardPro
       <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-5 md:p-6">
         {/* Top: Category Badge */}
         <div>
-          <span className="inline-block px-2.5 sm:px-3 py-1 sm:py-1.5 bg-[#E8F5E9] text-[#1A1A1A] text-[9px] sm:text-[10px] md:text-xs font-semibold rounded-full tracking-wide">
+          <span className="inline-block px-2.5 sm:px-3 py-1 sm:py-1.5 bg-subtle text-charcoal text-[9px] sm:text-[10px] md:text-xs font-semibold rounded-full tracking-wide">
             {card.category}
           </span>
         </div>
@@ -329,7 +329,7 @@ function CarouselCardComponent({ card, isCenter, position, isDragging }: CardPro
                 
                 {/* CTA Button - larger touch target on mobile */}
                 <Link href={card.link}>
-                  <button className="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-2.5 bg-[#E8F5E9] text-[#1A1A1A] rounded font-semibold text-xs sm:text-sm hover:bg-white active:bg-white/90 transition-colors touch-manipulation min-h-[44px]">
+                  <button className="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-2.5 bg-subtle text-charcoal rounded font-semibold text-xs sm:text-sm hover:bg-white active:bg-white/90 transition-colors touch-manipulation min-h-[44px]">
                     Learn More
                     <ArrowRight className="w-4 h-4" />
                   </button>

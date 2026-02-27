@@ -272,7 +272,7 @@ export function InsightsCarousel() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2 }}
                           >
-                            <span className="inline-block px-3 py-1.5 bg-[#1a3d2e]/90 text-white text-[9px] sm:text-[10px] font-semibold tracking-wider uppercase rounded-sm">
+                            <span className="inline-block px-3 py-1.5 bg-base/90 text-white text-[9px] sm:text-[10px] font-semibold tracking-wider uppercase rounded-sm">
                               {item.category}
                             </span>
                           </motion.div>
@@ -287,7 +287,7 @@ export function InsightsCarousel() {
                             transition={{ delay: 0.1 }}
                           >
                             {/* Type & Date */}
-                            <div className="flex items-center gap-2 mb-1.5 text-gray-500 text-[10px] sm:text-[11px]">
+                            <div className="flex items-center gap-2 mb-1.5 text-muted-foreground text-[10px] sm:text-[11px]">
                               <span className="uppercase font-medium">
                                 {item.type === "case-study" ? "Case Study" : item.type === "article" ? "Article" : "Insight"}
                               </span>
@@ -297,7 +297,7 @@ export function InsightsCarousel() {
                             
                             {/* Title */}
                             <h3 
-                              className="text-gray-900 text-sm sm:text-base font-medium leading-snug line-clamp-2"
+                              className="text-charcoal text-sm sm:text-base font-medium leading-snug line-clamp-2"
                               style={{ fontFamily: "'Source Serif 4', Georgia, serif" }}
                             >
                               {item.title}
@@ -317,20 +317,20 @@ export function InsightsCarousel() {
             {/* Pause/Play Button */}
             <button
               onClick={() => setIsPaused(!isPaused)}
-              className="w-9 h-9 flex items-center justify-center border border-gray-300 hover:border-gray-500 transition-colors rounded-sm"
+              className="w-9 h-9 flex items-center justify-center border border-border hover:border-gray-500 transition-colors rounded-sm"
               aria-label={isPaused ? "Play carousel" : "Pause carousel"}
             >
               {isPaused ? (
-                <Play className="w-3.5 h-3.5 text-gray-600" />
+                <Play className="w-3.5 h-3.5 text-muted-foreground" />
               ) : (
-                <Pause className="w-3.5 h-3.5 text-gray-600" />
+                <Pause className="w-3.5 h-3.5 text-muted-foreground" />
               )}
             </button>
             
             {/* Previous Button */}
             <button
               onClick={goToPrev}
-              className="w-9 h-9 flex items-center justify-center border border-gray-300 hover:border-gray-500 text-gray-600 transition-colors rounded-sm"
+              className="w-9 h-9 flex items-center justify-center border border-border hover:border-gray-500 text-muted-foreground transition-colors rounded-sm"
               aria-label="Previous"
             >
               <ChevronLeft className="w-4 h-4" />
@@ -339,7 +339,7 @@ export function InsightsCarousel() {
             {/* Next Button */}
             <button
               onClick={goToNext}
-              className="w-9 h-9 flex items-center justify-center border border-gray-300 hover:border-gray-500 text-gray-600 transition-colors rounded-sm"
+              className="w-9 h-9 flex items-center justify-center border border-border hover:border-gray-500 text-muted-foreground transition-colors rounded-sm"
               aria-label="Next"
             >
               <ChevronRight className="w-4 h-4" />

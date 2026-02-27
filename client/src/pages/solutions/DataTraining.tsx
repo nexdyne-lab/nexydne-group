@@ -12,7 +12,7 @@ export default function DataTraining() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-purple-900 via-[#2D5BFF] to-[#4169FF] text-white py-20">
+      <section className="relative bg-gradient-to-br from-purple-900 via-primary to-primary text-white py-20">
         <div className="container">
           {/* Breadcrumb */}
           <nav className="text-sm mb-8 text-purple-200">
@@ -48,7 +48,7 @@ export default function DataTraining() {
                 <div className="w-48 h-48 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <div className="w-40 h-40 bg-slate-200 rounded-full"></div>
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-4 text-center">
+                <h3 className="text-2xl font-bold text-charcoal mb-4 text-center">
                   Want to know more?
                 </h3>
                 <div className="flex flex-col gap-3">
@@ -62,7 +62,7 @@ export default function DataTraining() {
             {/* Benefits */}
             <div className="md:col-span-2 space-y-12">
               <div>
-                <h2 className="text-4xl font-bold text-slate-900 mb-8">The benefits</h2>
+                <h2 className="text-4xl font-bold text-charcoal mb-8">The benefits</h2>
               </div>
 
               {/* Benefit 1 */}
@@ -75,8 +75,8 @@ export default function DataTraining() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3">Useful from day one</h3>
-                  <p className="text-lg text-slate-700">
+                  <h3 className="text-2xl font-bold text-charcoal mb-3">Useful from day one</h3>
+                  <p className="text-lg text-charcoal/80">
                     Real-world training that applies directly to day-to-day work. Forget theory—we're talking real use cases. Participants leave with skills they can deploy immediately, not concepts they'll never use.
                   </p>
                 </div>
@@ -92,8 +92,8 @@ export default function DataTraining() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3">Suitable for all levels</h3>
-                  <p className="text-lg text-slate-700">
+                  <h3 className="text-2xl font-bold text-charcoal mb-3">Suitable for all levels</h3>
+                  <p className="text-lg text-charcoal/80">
                     From data specialists to end users, whether they're just getting started or want to dive into the detail. We tailor content to audience—business users learn self-service analytics, technical teams learn pipeline engineering.
                   </p>
                 </div>
@@ -109,8 +109,8 @@ export default function DataTraining() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3">Learn from experts</h3>
-                  <p className="text-lg text-slate-700">
+                  <h3 className="text-2xl font-bold text-charcoal mb-3">Learn from experts</h3>
+                  <p className="text-lg text-charcoal/80">
                     Data courses delivered by professionals who live and breathe data, keen to share their knowledge. Our trainers build production systems for Fortune 500 companies—they teach what actually works, not textbook theory.
                   </p>
                 </div>
@@ -126,8 +126,8 @@ export default function DataTraining() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3">Data training made to measure</h3>
-                  <p className="text-lg text-slate-700">
+                  <h3 className="text-2xl font-bold text-charcoal mb-3">Data training made to measure</h3>
+                  <p className="text-lg text-charcoal/80">
                     Company-specific training or a complete course, specially designed for your teams. We build curricula around your tech stack, your data, and your business problems—not generic examples from other industries.
                   </p>
                 </div>
@@ -140,10 +140,10 @@ export default function DataTraining() {
       {/* Knowledge Gets You There Section */}
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">
+          <h2 className="text-4xl font-bold text-charcoal mb-6">
             Knowledge gets you there
           </h2>
-          <div className="space-y-4 text-lg text-slate-700 mb-8">
+          <div className="space-y-4 text-lg text-charcoal/80 mb-8">
             <p>
               When it comes to data, it's not the technology that's the bottleneck anymore. It's knowing what, how and why. With us, training doesn't mean just taking a course. We actually help your technical teams and your business users with hands-on knowledge of the data world—whether it's Python, SQL, or specific tools like dbt or Looker.
             </p>
@@ -157,7 +157,7 @@ export default function DataTraining() {
             <blockquote className="text-2xl font-semibold text-purple-900 mb-4">
               "We want to empower our customers to innovate themselves, not to permanently depend on us."
             </blockquote>
-            <p className="text-slate-600">
+            <p className="text-muted-foreground">
               Martijn Voorveld, Commercial Lead - NEXDYNE TECHNOLOGIES
             </p>
           </div>
@@ -167,10 +167,10 @@ export default function DataTraining() {
       {/* Helping You to Help Yourself Section */}
       <section className="py-20">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">
+          <h2 className="text-4xl font-bold text-charcoal mb-6">
             Helping you to help yourself
           </h2>
-          <div className="space-y-4 text-lg text-slate-700">
+          <div className="space-y-4 text-lg text-charcoal/80">
             <p>
               We believe in making organizations self-reliant. That's why, as well as traditional training, we also offer training on the job that fits alongside ongoing projects. We teach your teams not only how to use solutions, but more than anything how to manage them.
             </p>
@@ -195,10 +195,10 @@ export default function DataTraining() {
                 </div>
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-slate-900 mb-4">
+                <h2 className="text-3xl font-bold text-charcoal mb-4">
                   Want to know more?
                 </h2>
-                <p className="text-lg text-slate-700 mb-6">
+                <p className="text-lg text-charcoal/80 mb-6">
                   <strong>Martijn Voorveld</strong><br />
                   Senior Sales Manager
                 </p>
@@ -221,15 +221,15 @@ export default function DataTraining() {
       <section className="py-20 bg-slate-50">
         <div className="container">
           <div className="mb-12">
-            <span className="text-sm text-slate-600 uppercase tracking-wide font-semibold">Partners</span>
-            <h2 className="text-4xl font-bold text-slate-900 mt-2">Agentic AI</h2>
+            <span className="text-sm text-muted-foreground uppercase tracking-wide font-semibold">Partners</span>
+            <h2 className="text-4xl font-bold text-charcoal mt-2">Agentic AI</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Glean */}
             <div className="bg-white p-8 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold text-purple-900 mb-3">Glean</h3>
-              <p className="text-slate-700">
+              <p className="text-charcoal/80">
                 Enterprise search and knowledge discovery platform that connects all your company data sources.
               </p>
             </div>
@@ -237,7 +237,7 @@ export default function DataTraining() {
             {/* Weaviate */}
             <div className="bg-white p-8 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold text-purple-900 mb-3">Weaviate</h3>
-              <p className="text-slate-700">
+              <p className="text-charcoal/80">
                 Open-source vector database for AI-native applications and semantic search capabilities.
               </p>
             </div>
@@ -245,7 +245,7 @@ export default function DataTraining() {
             {/* LangChain */}
             <div className="bg-white p-8 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold text-purple-900 mb-3">LangChain</h3>
-              <p className="text-slate-700">
+              <p className="text-charcoal/80">
                 Framework for building context-aware reasoning applications powered by language models.
               </p>
             </div>
@@ -253,7 +253,7 @@ export default function DataTraining() {
             {/* N8N */}
             <div className="bg-white p-8 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-bold text-purple-900 mb-3">N8N</h3>
-              <p className="text-slate-700">
+              <p className="text-charcoal/80">
                 Workflow automation platform that connects AI models with business processes and data sources.
               </p>
             </div>
@@ -273,10 +273,10 @@ export default function DataTraining() {
               />
             </div>
             <div>
-              <h2 className="text-4xl font-bold text-slate-900 mb-6">
+              <h2 className="text-4xl font-bold text-charcoal mb-6">
                 Why NEXDYNE
               </h2>
-              <p className="text-lg text-slate-700 mb-6">
+              <p className="text-lg text-charcoal/80 mb-6">
                 Whether you're looking for a strategic partner, a boost for your digital transformation, or the ultimate customer experience for your customers, you've come to the right place. With our next-generation digital solutions, you'll always be one step ahead of the competition.
               </p>
               <Button className="bg-slate-900 hover:bg-slate-800 text-white">
@@ -291,8 +291,8 @@ export default function DataTraining() {
       <section className="py-20 bg-slate-50">
         <div className="container">
           <div className="mb-12">
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Cases we love talking about</h2>
-            <p className="text-xl text-slate-700">
+            <h2 className="text-4xl font-bold text-charcoal mb-4">Cases we love talking about</h2>
+            <p className="text-xl text-charcoal/80">
               Heard of a business that transforms unique business challenges into exceptional outcomes? That'd be us. Check out these inspiring cases.
             </p>
           </div>
@@ -303,10 +303,10 @@ export default function DataTraining() {
               <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all group cursor-pointer">
                 <img src="/financial-services-training.55081221.jpg" alt="Financial Services Training" className="h-48 w-full object-cover" />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-600 transition-colors">
                     Financial Services Firm Upskills 50 Analysts
                   </h3>
-                  <p className="text-slate-700 mb-4">
+                  <p className="text-charcoal/80 mb-4">
                     8-week SQL and Python bootcamp transformed business analysts into self-sufficient data practitioners, reducing IT backlog 60%.
                   </p>
                   <Button variant="ghost" className="text-blue-600 hover:text-blue-700 p-0">
@@ -322,10 +322,10 @@ export default function DataTraining() {
               <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all group cursor-pointer">
                 <img src="/retail-data-academy.84cb2568.jpg" alt="Retail Data Academy" className="h-48 w-full object-cover" />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-600 transition-colors">
                     Retailer Builds Internal Data Academy
                   </h3>
-                  <p className="text-slate-700 mb-4">
+                  <p className="text-charcoal/80 mb-4">
                     Custom curriculum covering analytics fundamentals through ML deployment trained 120 employees across 6 departments in 12 months.
                   </p>
                   <Button variant="ghost" className="text-blue-600 hover:text-blue-700 p-0">
@@ -341,10 +341,10 @@ export default function DataTraining() {
               <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all group cursor-pointer">
                 <img src="/healthcare-dashboard-training.fff5ec24.jpg" alt="Healthcare Dashboard Training" className="h-48 w-full object-cover" />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-600 transition-colors">
                     Healthcare Network Trains Clinical Staff on Dashboards
                   </h3>
-                  <p className="text-slate-700 mb-4">
+                  <p className="text-charcoal/80 mb-4">
                     Half-day workshops taught 200 clinicians to build custom Tableau dashboards, improving patient outcome visibility 45%.
                   </p>
                   <Button variant="ghost" className="text-blue-600 hover:text-blue-700 p-0">
@@ -361,30 +361,30 @@ export default function DataTraining() {
       {/* Related Services Section */}
       <section className="py-20">
         <div className="container">
-          <h2 className="text-4xl font-bold text-slate-900 mb-12">Related Services</h2>
+          <h2 className="text-4xl font-bold text-charcoal mb-12">Related Services</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Data Strategy */}
             <Link href="/solutions/data-strategy">
               <div className="p-6 rounded-lg border-2 border-dashed border-slate-300 hover:border-blue-500 hover:bg-blue-50 transition-all cursor-pointer">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Data Strategy</h3>
-                <p className="text-slate-700">Define what data matters and how to monetize it.</p>
+                <h3 className="text-xl font-bold text-charcoal mb-2">Data Strategy</h3>
+                <p className="text-charcoal/80">Define what data matters and how to monetize it.</p>
               </div>
             </Link>
 
             {/* Data Platform */}
             <Link href="/solutions/data-platform">
               <div className="p-6 rounded-lg border-2 border-dashed border-slate-300 hover:border-blue-500 hover:bg-blue-50 transition-all cursor-pointer">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Data Platform</h3>
-                <p className="text-slate-700">Modern data warehouses and lakes built on cloud infrastructure.</p>
+                <h3 className="text-xl font-bold text-charcoal mb-2">Data Platform</h3>
+                <p className="text-charcoal/80">Modern data warehouses and lakes built on cloud infrastructure.</p>
               </div>
             </Link>
 
             {/* Data Visualization */}
             <Link href="/solutions/data-visualization">
               <div className="p-6 rounded-lg border-2 border-dashed border-slate-300 hover:border-blue-500 hover:bg-blue-50 transition-all cursor-pointer">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Data visualization</h3>
-                <p className="text-slate-700">Real-time dashboards and analytics interfaces that surface insights.</p>
+                <h3 className="text-xl font-bold text-charcoal mb-2">Data visualization</h3>
+                <p className="text-charcoal/80">Real-time dashboards and analytics interfaces that surface insights.</p>
               </div>
             </Link>
 
@@ -393,27 +393,27 @@ export default function DataTraining() {
               <div className="absolute top-2 right-2">
                 <span className="text-xs font-semibold text-blue-600 bg-blue-100 px-2 py-1 rounded">Current page</span>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Data training</h3>
-              <p className="text-slate-700">Give your employees the knowledge and skills they need.</p>
+              <h3 className="text-xl font-bold text-charcoal mb-2">Data training</h3>
+              <p className="text-charcoal/80">Give your employees the knowledge and skills they need.</p>
             </div>
 
             {/* Data Governance */}
             <div className="p-6 rounded-lg border-2 border-dashed border-slate-300 hover:border-blue-500 hover:bg-blue-50 transition-all cursor-pointer">
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Data governance</h3>
-              <p className="text-slate-700">Access controls, compliance frameworks, and data quality monitoring.</p>
+              <h3 className="text-xl font-bold text-charcoal mb-2">Data governance</h3>
+              <p className="text-charcoal/80">Access controls, compliance frameworks, and data quality monitoring.</p>
             </div>
 
             {/* Data Engineering */}
             <div className="p-6 rounded-lg border-2 border-dashed border-slate-300 hover:border-blue-500 hover:bg-blue-50 transition-all cursor-pointer">
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Data Engineering</h3>
-              <p className="text-slate-700">Augment your team with certified data engineers and architects.</p>
+              <h3 className="text-xl font-bold text-charcoal mb-2">Data Engineering</h3>
+              <p className="text-charcoal/80">Augment your team with certified data engineers and architects.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-purple-900 via-[#2D5BFF] to-[#4169FF] text-white">
+      <section className="py-20 bg-gradient-to-br from-purple-900 via-primary to-primary text-white">
         <div className="container text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to build a self-sufficient data team?

@@ -34,14 +34,14 @@ export default function CustomModelTuning() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#051C2C] text-white font-sans selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-base text-white font-sans selection:bg-primary selection:text-white">
       <Navbar />
       <Breadcrumb items={breadcrumbItems} />
 
       {/* DZ10 Hero Section */}
       <section className="relative pt-24 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#051C2C] via-[#051C2C]/60 to-[#051C2C] z-10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base z-10" />
           <img 
             src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2670&auto=format&fit=crop" 
             alt="AI Model Tuning" 
@@ -62,14 +62,14 @@ export default function CustomModelTuning() {
             
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-2 sm:mb-3 md:mb-4 leading-[1.05] eb-garamond">
               Custom Model <br />
-              <span className="text-[#0077B5]">Tuning</span>
+              <span className="text-primary">Tuning</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 max-w-2xl leading-relaxed mb-10">
               Fine-tune open-source models on your proprietary data, ensuring you own the intelligence and maintain a competitive edge while keeping your data secure.
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-[#0077B5] hover:bg-[#005a8c] text-white px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all">
+                <Button className="bg-primary hover:bg-primary/90 text-white px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all">
                   Start Tuning
                 </Button>
               </Link>
@@ -82,7 +82,7 @@ export default function CustomModelTuning() {
       </section>
 
       {/* DZ10 What We Do Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container mx-auto px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -91,11 +91,11 @@ export default function CustomModelTuning() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               What We Do
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 eb-garamond">What we do</h2>
-            <p className="text-base sm:text-lg md:text-xl text-[#051C2C]/70 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal/70 leading-relaxed">
               We specialize in adapting state-of-the-art open-source models to your specific business domain, creating highly specialized tools that outperform generic alternatives.
             </p>
           </motion.div>
@@ -123,10 +123,10 @@ export default function CustomModelTuning() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group"
               >
-                <h3 className="text-2xl font-serif font-bold text-[#051C2C] mb-4 group-hover:text-[#0077B5] transition-colors">
+                <h3 className="text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-[#051C2C]/70 leading-relaxed">
+                <p className="text-charcoal/70 leading-relaxed">
                   {item.description}
                 </p>
               </motion.div>
@@ -136,7 +136,7 @@ export default function CustomModelTuning() {
       </section>
 
       {/* DZ10 Why Tune Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container mx-auto px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -177,7 +177,7 @@ export default function CustomModelTuning() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group"
               >
-                <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-[#0077B5] transition-colors">
+                <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-white/60 leading-relaxed">
@@ -190,7 +190,7 @@ export default function CustomModelTuning() {
       </section>
 
       {/* DZ10 Value Proposition Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container mx-auto px-4 md:px-12">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             <motion.div
@@ -201,9 +201,9 @@ export default function CustomModelTuning() {
             >
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 eb-garamond">
                 Your Data, <br/>
-                <span className="text-[#0077B5]">Your Intelligence</span>
+                <span className="text-primary">Your Intelligence</span>
               </h2>
-              <div className="space-y-6 text-lg text-[#051C2C]/70 leading-relaxed">
+              <div className="space-y-6 text-lg text-charcoal/70 leading-relaxed">
                 <p>
                   Generic AI models are powerful, but they lack the specific context of your business. By fine-tuning open-source foundation models on your proprietary data, we create bespoke AI solutions that understand your unique terminology, processes, and customers.
                 </p>
@@ -213,13 +213,13 @@ export default function CustomModelTuning() {
               </div>
               
               <div className="mt-8 grid grid-cols-2 gap-4 sm:p-5 md:p-6">
-                <div className="p-4 sm:p-5 md:p-6 rounded-lg bg-[#051C2C]/5">
-                  <div className="text-4xl font-bold text-[#0077B5] mb-2">3x</div>
-                  <div className="text-sm text-[#051C2C]/60">Performance Boost</div>
+                <div className="p-4 sm:p-5 md:p-6 rounded-lg bg-base/5">
+                  <div className="text-4xl font-bold text-primary mb-2">3x</div>
+                  <div className="text-sm text-charcoal/60">Performance Boost</div>
                 </div>
-                <div className="p-4 sm:p-5 md:p-6 rounded-lg bg-[#051C2C]/5">
-                  <div className="text-4xl font-bold text-[#0077B5] mb-2">100%</div>
-                  <div className="text-sm text-[#051C2C]/60">Data Ownership</div>
+                <div className="p-4 sm:p-5 md:p-6 rounded-lg bg-base/5">
+                  <div className="text-4xl font-bold text-primary mb-2">100%</div>
+                  <div className="text-sm text-charcoal/60">Data Ownership</div>
                 </div>
               </div>
             </motion.div>
@@ -241,7 +241,7 @@ export default function CustomModelTuning() {
       </section>
 
       {/* DZ10 Case Studies Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container mx-auto px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -292,7 +292,7 @@ export default function CustomModelTuning() {
                 className="group"
               >
                 <Link href={item.link} className="block">
-                  <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-[#0077B5] transition-colors flex items-center gap-2">
+                  <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors flex items-center gap-2">
                     {item.title}
                     <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
                   </h3>
@@ -310,7 +310,7 @@ export default function CustomModelTuning() {
       </section>
 
       {/* DZ10 Key Capabilities Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container mx-auto px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -319,11 +319,11 @@ export default function CustomModelTuning() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Capabilities
             </span>
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 eb-garamond">Precision Engineering for AI</h2>
-            <p className="text-[#051C2C]/70 text-lg">
+            <p className="text-charcoal/70 text-lg">
               We leverage state-of-the-art techniques to adapt powerful foundation models to your specific needs.
             </p>
           </motion.div>
@@ -369,11 +369,11 @@ export default function CustomModelTuning() {
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                 className="group flex flex-col h-full"
               >
-                <div className="mb-6 p-4 bg-[#051C2C]/5 w-fit rounded-lg sm:rounded-xl text-[#0077B5] group-hover:bg-[#0077B5] group-hover:text-white transition-all duration-300">
+                <div className="mb-6 p-4 bg-base/5 w-fit rounded-lg sm:rounded-xl text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
                   {item.icon}
                 </div>
-                <h4 className="text-2xl font-serif font-bold text-[#051C2C] mb-4 group-hover:text-[#0077B5] transition-colors">{item.title}</h4>
-                <p className="text-[#051C2C]/70 leading-relaxed">
+                <h4 className="text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">{item.title}</h4>
+                <p className="text-charcoal/70 leading-relaxed">
                   {item.desc}
                 </p>
               </motion.div>
@@ -383,7 +383,7 @@ export default function CustomModelTuning() {
       </section>
 
       {/* DZ10 How We Work Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container mx-auto px-4 md:px-12">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
             <motion.div
@@ -422,11 +422,11 @@ export default function CustomModelTuning() {
                   }
                 ].map((step, i) => (
                   <div key={i} className="flex gap-4 sm:p-5 md:p-6 group">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#0077B5]/10 border border-[#0077B5]/20 flex items-center justify-center text-[#0077B5] font-bold group-hover:bg-[#0077B5] group-hover:text-white transition-all duration-300">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary font-bold group-hover:bg-primary group-hover:text-white transition-all duration-300">
                       {i + 1}
                     </div>
                     <div>
-                      <h4 className="text-xl font-serif font-bold text-white mb-2 group-hover:text-[#0077B5] transition-colors">{step.title}</h4>
+                      <h4 className="text-xl font-serif font-bold text-white mb-2 group-hover:text-primary transition-colors">{step.title}</h4>
                       <p className="text-white/60">{step.desc}</p>
                     </div>
                   </div>
@@ -446,14 +446,14 @@ export default function CustomModelTuning() {
                 alt="Code Interface" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#051C2C] via-[#051C2C]/40 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-base via-base/40 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-8 md:p-12">
                 <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl">
                   <h4 className="text-white font-serif font-bold text-lg mb-2">Open Source Power</h4>
                   <p className="text-white/80 text-sm mb-4">
                     We build on top of the world's best open models, giving you state-of-the-art performance without the licensing fees.
                   </p>
-                  <div className="flex items-center gap-2 text-[#0077B5] text-sm font-medium">
+                  <div className="flex items-center gap-2 text-primary text-sm font-medium">
                     <Code className="w-3 h-3 sm:w-4 sm:h-4" />
                     <span>Llama, Mistral, Falcon & More</span>
                   </div>
@@ -468,7 +468,7 @@ export default function CustomModelTuning() {
       <RelatedInsights />
 
       {/* DZ10 CTA Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#0077B5] relative overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-primary relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
         <div className="container mx-auto px-4 md:px-12 relative z-10 text-center">
           <motion.div
@@ -484,7 +484,7 @@ export default function CustomModelTuning() {
               Stop renting intelligence from big tech. Start building your own asset today.
             </p>
             <Link href="/contact">
-              <Button className="bg-white text-[#0077B5] hover:bg-white/90 px-10 py-6 text-lg font-bold transition-all">
+              <Button className="bg-white text-primary hover:bg-white/90 px-10 py-6 text-lg font-bold transition-all">
                 Consult an ML Engineer
               </Button>
             </Link>

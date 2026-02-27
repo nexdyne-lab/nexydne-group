@@ -85,10 +85,10 @@ export default function TableOfContents({ contentSelector = "article" }: TableOf
   }
 
   return (
-    <div className="bg-[#F5F5F5] rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6">
+    <div className="bg-subtle rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6">
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="flex items-center gap-2 w-full text-left text-sm font-bold uppercase tracking-wider text-[#1A1A1A]/50 mb-4"
+          className="flex items-center gap-2 w-full text-left text-sm font-bold uppercase tracking-wider text-charcoal/50 mb-4"
         >
           <List className="w-3 h-3 sm:w-4 sm:h-4" />
           <span>Table of Contents</span>
@@ -105,8 +105,8 @@ export default function TableOfContents({ contentSelector = "article" }: TableOf
                     ${heading.level === 3 ? "pl-5" : ""}
                     ${
                       activeId === heading.id
-                        ? "bg-[#0077B5]/10 text-[#0077B5] font-medium border-l-2 border-[#0077B5]"
-                        : "text-[#1A1A1A]/60 hover:text-[#1A1A1A] hover:bg-white"
+                        ? "bg-primary/10 text-primary font-medium border-l-2 border-primary"
+                        : "text-charcoal/60 hover:text-charcoal hover:bg-white"
                     }
                   `}
                 >

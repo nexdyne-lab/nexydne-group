@@ -12,7 +12,7 @@ import { SEO } from "@/components/SEO";
 
 export default function DistributionWorkingCapital() {
   return (
-    <div className="min-h-screen bg-[#051C2C] text-white selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
       <SEO 
         title="Working Capital Optimization | Case Study | NexDyne Technologies" 
         description="How we helped a distribution company free up $12M in working capital through inventory optimization and process improvement."
@@ -23,14 +23,14 @@ export default function DistributionWorkingCapital() {
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-30"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#051C2C] via-[#051C2C]/60 to-[#051C2C]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
         
         <div className="container relative z-10 px-4 md:px-12">
           <Breadcrumbs />
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-4xl">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">Case Study · Distribution</span>
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">Case Study · Distribution</span>
             <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-4">
-              <span className="text-[#0077B5]">$12M</span> freed through working capital optimization
+              <span className="text-primary">$12M</span> freed through working capital optimization
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mb-8">
               How we helped a distribution company unlock significant cash through inventory optimization, receivables management, and process improvement.
@@ -55,7 +55,7 @@ export default function DistributionWorkingCapital() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-[#051C2C] border-t border-white/10">
+      <section className="py-16 bg-base border-t border-white/10">
         <div className="container px-4 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             {[
@@ -64,8 +64,8 @@ export default function DistributionWorkingCapital() {
               { metric: "12 days", label: "DSO improvement" },
               { metric: "99.5%", label: "Service level maintained" }
             ].map((stat, index) => (
-              <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }} className="border-l-2 border-[#0077B5]/50 pl-8">
-                <div className="text-5xl font-serif font-bold text-[#0077B5] mb-2">{stat.metric}</div>
+              <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }} className="border-l-2 border-primary/50 pl-8">
+                <div className="text-5xl font-serif font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-base text-white/70">{stat.label}</div>
               </motion.div>
             ))}
@@ -74,40 +74,40 @@ export default function DistributionWorkingCapital() {
       </section>
 
       {/* Sticky Navigation */}
-      <nav className="sticky top-20 bg-[#051C2C] text-white z-40 border-y border-white/10">
+      <nav className="sticky top-20 bg-base text-white z-40 border-y border-white/10">
         <div className="container px-4 md:px-12">
           <div className="flex items-center gap-1">
-            <a href="#challenge" className="px-6 py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-[#0077B5]">THE CHALLENGE</a>
-            <a href="#solution" className="px-6 py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-[#0077B5]">THE SOLUTION</a>
-            <a href="#impact" className="px-6 py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-[#0077B5]">THE IMPACT</a>
+            <a href="#challenge" className="px-6 py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">THE CHALLENGE</a>
+            <a href="#solution" className="px-6 py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">THE SOLUTION</a>
+            <a href="#impact" className="px-6 py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">THE IMPACT</a>
           </div>
         </div>
       </nav>
 
       {/* Company Overview */}
-      <section className="py-16 bg-white text-[#051C2C]">
+      <section className="py-16 bg-white text-charcoal">
         <div className="container px-4 md:px-12 max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <h2 className="text-3xl font-serif font-bold text-[#051C2C] mb-6">Company Overview</h2>
+            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
-              <p className="text-[#051C2C]/80 leading-relaxed mb-4">
+              <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client is a specialty distribution company with $180M in revenue, serving industrial and commercial customers with a catalog of over 50,000 SKUs. The company had grown rapidly through acquisition but hadn't optimized working capital management.
               </p>
-              <p className="text-[#051C2C]/70 leading-relaxed">
+              <p className="text-charcoal/70 leading-relaxed">
                 With significant debt from recent acquisitions, the company needed to free up cash to fund growth initiatives and reduce leverage. Working capital optimization represented the largest opportunity to generate cash without impacting operations.
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-[#051C2C]/5 rounded-xl">
-              <div><div className="text-sm font-semibold text-[#0077B5] mb-2">Industry</div><div className="text-[#051C2C] font-medium">Specialty Distribution</div></div>
-              <div><div className="text-sm font-semibold text-[#0077B5] mb-2">SKUs</div><div className="text-[#051C2C] font-medium">50,000+</div></div>
-              <div><div className="text-sm font-semibold text-[#0077B5] mb-2">Annual Revenue</div><div className="text-[#051C2C] font-medium">$180M</div></div>
+            <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-base/5 rounded-xl">
+              <div><div className="text-sm font-semibold text-primary mb-2">Industry</div><div className="text-charcoal font-medium">Specialty Distribution</div></div>
+              <div><div className="text-sm font-semibold text-primary mb-2">SKUs</div><div className="text-charcoal font-medium">50,000+</div></div>
+              <div><div className="text-sm font-semibold text-primary mb-2">Annual Revenue</div><div className="text-charcoal font-medium">$180M</div></div>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* Challenge Section */}
-      <section id="challenge" className="py-24 md:py-32 bg-[#0077B5]">
+      <section id="challenge" className="py-24 md:py-32 bg-primary">
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">The Challenge</span>
@@ -116,30 +116,30 @@ export default function DistributionWorkingCapital() {
         </div>
       </section>
 
-      <section className="py-16 bg-white text-[#051C2C]">
+      <section className="py-16 bg-white text-charcoal">
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4">Excess inventory across the network</h3>
-              <p className="text-[#051C2C]/70 leading-relaxed">Inventory had grown faster than sales, with significant excess and obsolete stock. Multiple acquired companies had brought their own inventory policies, resulting in inconsistent practices and excess safety stock.</p>
+              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Excess inventory across the network</h3>
+              <p className="text-charcoal/70 leading-relaxed">Inventory had grown faster than sales, with significant excess and obsolete stock. Multiple acquired companies had brought their own inventory policies, resulting in inconsistent practices and excess safety stock.</p>
             </div>
             <div>
-              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4">Slow receivables collection</h3>
-              <p className="text-[#051C2C]/70 leading-relaxed">Days Sales Outstanding (DSO) had crept up to 52 days, well above industry benchmarks. Collection processes were manual and inconsistent, and credit policies varied across acquired businesses.</p>
+              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Slow receivables collection</h3>
+              <p className="text-charcoal/70 leading-relaxed">Days Sales Outstanding (DSO) had crept up to 52 days, well above industry benchmarks. Collection processes were manual and inconsistent, and credit policies varied across acquired businesses.</p>
             </div>
             <div>
-              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4">Fear of service level impact</h3>
-              <p className="text-[#051C2C]/70 leading-relaxed">Previous inventory reduction efforts had resulted in stockouts and customer complaints. The organization was hesitant to reduce inventory without confidence that service levels could be maintained.</p>
+              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Fear of service level impact</h3>
+              <p className="text-charcoal/70 leading-relaxed">Previous inventory reduction efforts had resulted in stockouts and customer complaints. The organization was hesitant to reduce inventory without confidence that service levels could be maintained.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Quote Section */}
-      <section className="py-24 md:py-32 bg-[#051C2C]">
+      <section className="py-24 md:py-32 bg-base">
         <div className="container px-4 md:px-12 max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <blockquote className="text-3xl md:text-4xl font-serif text-[#0077B5] leading-tight mb-8">
+            <blockquote className="text-3xl md:text-4xl font-serif text-primary leading-tight mb-8">
               "We knew we had too much cash tied up in working capital, but we were afraid to make changes that might hurt customer service. We needed a data-driven approach that would give us confidence we could reduce inventory without impacting fill rates."
             </blockquote>
             <div className="text-base text-white"><div className="font-semibold">— Jennifer Davis</div><div className="text-white/60">CFO, Client Company</div></div>
@@ -148,7 +148,7 @@ export default function DistributionWorkingCapital() {
       </section>
 
       {/* Solution Section */}
-      <section id="solution" className="py-24 md:py-32 bg-[#0077B5]">
+      <section id="solution" className="py-24 md:py-32 bg-primary">
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">The Solution</span>
@@ -157,43 +157,43 @@ export default function DistributionWorkingCapital() {
         </div>
       </section>
 
-      <section className="py-16 bg-white text-[#051C2C]">
+      <section className="py-16 bg-white text-charcoal">
         <div className="container px-4 md:px-12 max-w-4xl">
-          <p className="text-xl text-[#051C2C]/80 leading-relaxed mb-12">We implemented a comprehensive working capital optimization program using advanced analytics to right-size inventory while improving service levels.</p>
+          <p className="text-xl text-charcoal/80 leading-relaxed mb-12">We implemented a comprehensive working capital optimization program using advanced analytics to right-size inventory while improving service levels.</p>
           <div className="space-y-12">
             <div className="flex gap-8">
-              <div className="flex-shrink-0"><div className="w-12 h-12 bg-[#0077B5] text-white rounded-full flex items-center justify-center font-bold text-lg">1</div></div>
+              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">1</div></div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 flex items-center gap-3"><Package className="w-6 h-6 text-[#0077B5]" />Inventory optimization</h3>
-                <p className="text-[#051C2C]/70 leading-relaxed mb-4">We used advanced analytics to segment SKUs and optimize inventory levels based on demand patterns, lead times, and service level requirements.</p>
-                <ul className="space-y-2 text-[#051C2C]/70">
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" /><span>SKU segmentation and demand analysis</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" /><span>Safety stock optimization by segment</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" /><span>Excess and obsolete inventory disposition</span></li>
+                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3"><Package className="w-6 h-6 text-primary" />Inventory optimization</h3>
+                <p className="text-charcoal/70 leading-relaxed mb-4">We used advanced analytics to segment SKUs and optimize inventory levels based on demand patterns, lead times, and service level requirements.</p>
+                <ul className="space-y-2 text-charcoal/70">
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>SKU segmentation and demand analysis</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Safety stock optimization by segment</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Excess and obsolete inventory disposition</span></li>
                 </ul>
               </div>
             </div>
             <div className="flex gap-8">
-              <div className="flex-shrink-0"><div className="w-12 h-12 bg-[#0077B5] text-white rounded-full flex items-center justify-center font-bold text-lg">2</div></div>
+              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">2</div></div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 flex items-center gap-3"><DollarSign className="w-6 h-6 text-[#0077B5]" />Receivables improvement</h3>
-                <p className="text-[#051C2C]/70 leading-relaxed mb-4">We standardized credit policies and implemented systematic collection processes to accelerate cash collection.</p>
-                <ul className="space-y-2 text-[#051C2C]/70">
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" /><span>Credit policy standardization</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" /><span>Collections process redesign</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" /><span>Automated dunning and escalation</span></li>
+                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3"><DollarSign className="w-6 h-6 text-primary" />Receivables improvement</h3>
+                <p className="text-charcoal/70 leading-relaxed mb-4">We standardized credit policies and implemented systematic collection processes to accelerate cash collection.</p>
+                <ul className="space-y-2 text-charcoal/70">
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Credit policy standardization</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Collections process redesign</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Automated dunning and escalation</span></li>
                 </ul>
               </div>
             </div>
             <div className="flex gap-8">
-              <div className="flex-shrink-0"><div className="w-12 h-12 bg-[#0077B5] text-white rounded-full flex items-center justify-center font-bold text-lg">3</div></div>
+              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">3</div></div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 flex items-center gap-3"><BarChart3 className="w-6 h-6 text-[#0077B5]" />Demand planning improvement</h3>
-                <p className="text-[#051C2C]/70 leading-relaxed mb-4">We implemented improved demand forecasting and planning processes to reduce forecast error and enable leaner inventory.</p>
-                <ul className="space-y-2 text-[#051C2C]/70">
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" /><span>Statistical forecasting implementation</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" /><span>S&OP process establishment</span></li>
-                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-[#0077B5] flex-shrink-0 mt-0.5" /><span>Supplier collaboration for lead time reduction</span></li>
+                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3"><BarChart3 className="w-6 h-6 text-primary" />Demand planning improvement</h3>
+                <p className="text-charcoal/70 leading-relaxed mb-4">We implemented improved demand forecasting and planning processes to reduce forecast error and enable leaner inventory.</p>
+                <ul className="space-y-2 text-charcoal/70">
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Statistical forecasting implementation</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>S&OP process establishment</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Supplier collaboration for lead time reduction</span></li>
                 </ul>
               </div>
             </div>
@@ -202,7 +202,7 @@ export default function DistributionWorkingCapital() {
       </section>
 
       {/* Impact Section */}
-      <section id="impact" className="py-24 md:py-32 bg-[#0077B5]">
+      <section id="impact" className="py-24 md:py-32 bg-primary">
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">The Impact</span>
@@ -211,36 +211,36 @@ export default function DistributionWorkingCapital() {
         </div>
       </section>
 
-      <section className="py-16 bg-white text-[#051C2C]">
+      <section className="py-16 bg-white text-charcoal">
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 flex items-center gap-3"><DollarSign className="w-6 h-6 text-[#0077B5]" />Significant cash release</h3>
-              <p className="text-[#051C2C]/70 leading-relaxed mb-4">The program freed up $12M in working capital, enabling the company to pay down debt and fund growth initiatives without external financing.</p>
+              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3"><DollarSign className="w-6 h-6 text-primary" />Significant cash release</h3>
+              <p className="text-charcoal/70 leading-relaxed mb-4">The program freed up $12M in working capital, enabling the company to pay down debt and fund growth initiatives without external financing.</p>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="p-6 bg-[#051C2C]/5 rounded-xl"><div className="text-3xl font-serif font-bold text-[#051C2C] mb-2">$12M</div><div className="text-sm text-[#051C2C]/60">Working capital freed</div></div>
-                <div className="p-6 bg-[#051C2C]/5 rounded-xl"><div className="text-3xl font-serif font-bold text-[#051C2C] mb-2">35%</div><div className="text-sm text-[#051C2C]/60">Inventory reduction</div></div>
+                <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-serif font-bold text-charcoal mb-2">$12M</div><div className="text-sm text-charcoal/60">Working capital freed</div></div>
+                <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-serif font-bold text-charcoal mb-2">35%</div><div className="text-sm text-charcoal/60">Inventory reduction</div></div>
               </div>
             </div>
             <div>
-              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 flex items-center gap-3"><TrendingUp className="w-6 h-6 text-[#0077B5]" />Improved cash conversion</h3>
-              <p className="text-[#051C2C]/70 leading-relaxed mb-4">DSO improved by 12 days through standardized credit policies and systematic collection processes, accelerating cash flow.</p>
-              <div className="p-6 bg-[#051C2C]/5 rounded-xl"><div className="text-3xl font-serif font-bold text-[#051C2C] mb-2">12 days</div><div className="text-sm text-[#051C2C]/60">DSO improvement</div></div>
+              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3"><TrendingUp className="w-6 h-6 text-primary" />Improved cash conversion</h3>
+              <p className="text-charcoal/70 leading-relaxed mb-4">DSO improved by 12 days through standardized credit policies and systematic collection processes, accelerating cash flow.</p>
+              <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-serif font-bold text-charcoal mb-2">12 days</div><div className="text-sm text-charcoal/60">DSO improvement</div></div>
             </div>
             <div>
-              <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 flex items-center gap-3"><Target className="w-6 h-6 text-[#0077B5]" />Service levels maintained</h3>
-              <p className="text-[#051C2C]/70 leading-relaxed mb-4">Despite significant inventory reduction, service levels actually improved to 99.5% fill rate through better demand planning and inventory positioning.</p>
-              <div className="p-6 bg-[#051C2C]/5 rounded-xl"><div className="text-3xl font-serif font-bold text-[#051C2C] mb-2">99.5%</div><div className="text-sm text-[#051C2C]/60">Service level achieved</div></div>
+              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3"><Target className="w-6 h-6 text-primary" />Service levels maintained</h3>
+              <p className="text-charcoal/70 leading-relaxed mb-4">Despite significant inventory reduction, service levels actually improved to 99.5% fill rate through better demand planning and inventory positioning.</p>
+              <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-serif font-bold text-charcoal mb-2">99.5%</div><div className="text-sm text-charcoal/60">Service level achieved</div></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Quote Section 2 */}
-      <section className="py-24 md:py-32 bg-[#051C2C]">
+      <section className="py-24 md:py-32 bg-base">
         <div className="container px-4 md:px-12 max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <blockquote className="text-3xl md:text-4xl font-serif text-[#0077B5] leading-tight mb-8">
+            <blockquote className="text-3xl md:text-4xl font-serif text-primary leading-tight mb-8">
               "The results exceeded our expectations. We freed up $12M in cash while actually improving service levels. NexDyne's data-driven approach gave us confidence to make changes we wouldn't have made on our own."
             </blockquote>
             <div className="text-base text-white"><div className="font-semibold">— Jennifer Davis</div><div className="text-white/60">CFO, Client Company</div></div>
@@ -256,7 +256,7 @@ export default function DistributionWorkingCapital() {
       </section>
 
       {/* Related Cases */}
-      <section className="py-24 md:py-32 bg-[#051C2C]">
+      <section className="py-24 md:py-32 bg-base">
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-16">
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">Related Case Studies</span>
@@ -269,10 +269,10 @@ export default function DistributionWorkingCapital() {
             ].map((item, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
-                  <span className="text-xs font-bold text-[#0077B5] uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-[#0077B5] transition-colors">{item.title}</h3>
+                  <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
+                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
                   <p className="text-white/60 mt-2">{item.description}</p>
-                  <span className="text-[#0077B5] text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">Read case study <ArrowRight className="w-3 h-3" /></span>
+                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">Read case study <ArrowRight className="w-3 h-3" /></span>
                 </Link>
               </motion.div>
             ))}

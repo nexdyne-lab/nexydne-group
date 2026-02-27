@@ -36,7 +36,7 @@ export default function IoT() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Internet of Things (IoT)" 
         description="Connect, monitor, and optimize your physical assets with intelligent IoT solutions that drive operational excellence and unlock new business models."
@@ -45,7 +45,7 @@ export default function IoT() {
       <Navigation />
 
       {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-black">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -64,7 +64,7 @@ export default function IoT() {
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
                   Schedule a Consultation
                 </Button>
               </Link>
@@ -92,7 +92,7 @@ export default function IoT() {
       </section>
 
       {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -101,7 +101,7 @@ export default function IoT() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-[#051C2C] eb-garamond">Our Experience & Impact</h2>
+            <h2 className="text-2xl font-bold text-charcoal eb-garamond">Our Experience & Impact</h2>
           </motion.div>
           
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
@@ -117,8 +117,8 @@ export default function IoT() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -134,7 +134,7 @@ export default function IoT() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               The Internet of Things is transforming how organizations operate, compete, and create value. By connecting physical assets to digital systems, IoT enables real-time visibility, predictive maintenance, and automated decision-making at unprecedented scale.
             </motion.p>
@@ -144,7 +144,7 @@ export default function IoT() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               Yet many IoT initiatives fail to deliver expected value. The challenge isn't the technology—it's the integration. Successful IoT requires seamless connection between sensors, edge computing, cloud platforms, and business applications. We help organizations navigate this complexity with proven architectures and implementation approaches.
             </motion.p>
@@ -154,7 +154,7 @@ export default function IoT() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               The real opportunity lies in combining IoT data with AI and analytics. When you can predict equipment failures before they happen, optimize energy consumption in real-time, and automate responses to changing conditions, you unlock transformative operational improvements.
             </motion.p>
@@ -171,13 +171,13 @@ export default function IoT() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#051C2C] mb-6 eb-garamond">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6 eb-garamond">
               Our IoT Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               End-to-end services from strategy to deployment and continuous optimization.
             </p>
           </motion.div>
@@ -225,7 +225,7 @@ export default function IoT() {
       </section>
 
       {/* Section 4: Our Approach (3-Column Consulting Format) */}
-      <section className="py-20 bg-[#051C2C]">
+      <section className="py-20 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -233,7 +233,7 @@ export default function IoT() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00d4ff] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">
               Our Approach
             </span>
             <h2 className="text-3xl md:text-5xl font-light text-white eb-garamond">
@@ -264,7 +264,7 @@ export default function IoT() {
                 transition={{ delay: i * 0.1 }}
               >
                 <h3 className="text-xl font-bold text-white mb-4">{pillar.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{pillar.description}</p>
+                <p className="text-muted-foreground/50 leading-relaxed">{pillar.description}</p>
               </motion.div>
             ))}
           </div>
@@ -280,7 +280,7 @@ export default function IoT() {
       </section>
 
       {/* Section 5: Case Studies (F100) */}
-      <section className="py-24 bg-[#051C2C]">
+      <section className="py-24 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
             <motion.div
@@ -288,7 +288,7 @@ export default function IoT() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-4 block">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
                 Client Results
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-white eb-garamond">
@@ -333,10 +333,10 @@ export default function IoT() {
                       alt={study.title} 
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#051C2C] via-[#051C2C]/50 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-8">
-                      <span className="text-xs font-bold text-[#0077B5] mb-3 uppercase tracking-wider block">{study.category}</span>
-                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#0077B5] transition-colors">
+                      <span className="text-xs font-bold text-primary mb-3 uppercase tracking-wider block">{study.category}</span>
+                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
                         {study.title}
                       </h3>
                       <p className="text-white/70 line-clamp-2">{study.description}</p>
@@ -350,7 +350,7 @@ export default function IoT() {
       </section>
 
       {/* Section 6: Related Capabilities - H100 Hover */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -358,10 +358,10 @@ export default function IoT() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
               Related Capabilities
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#051C2C] eb-garamond">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal eb-garamond">
               Explore more AI capabilities
             </h2>
           </motion.div>
@@ -387,7 +387,7 @@ export default function IoT() {
       </section>
 
       {/* Section 7: CTA Section (F100 - Blue Background) */}
-      <section className="py-24 bg-[#0077B5]">
+      <section className="py-24 bg-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 eb-garamond">
@@ -397,7 +397,7 @@ export default function IoT() {
               Let's discuss how IoT can transform your physical assets into intelligent, connected systems.
             </p>
             <Link href="/contact">
-              <Button className="bg-white hover:bg-gray-100 text-[#0077B5] px-10 py-6 text-lg font-semibold">
+              <Button className="bg-white hover:bg-subtle text-primary px-10 py-6 text-lg font-semibold">
                 Start a Conversation <ArrowRight className="ml-2 w-5 h-5 inline" />
               </Button>
             </Link>

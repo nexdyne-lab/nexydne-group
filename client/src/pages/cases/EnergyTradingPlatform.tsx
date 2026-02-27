@@ -33,7 +33,7 @@ export function EnergyTradingPlatform() {
           </p>
           <div className="flex flex-wrap gap-4">
             <div className="flex items-center gap-2">
-              <TrendingUp className="h-5 w-5 text-green-600" />
+              <TrendingUp className="h-5 w-5 text-secondary" />
               <span className="font-semibold">$50M daily volume</span>
             </div>
             <div className="flex items-center gap-2">
@@ -67,7 +67,7 @@ export function EnergyTradingPlatform() {
       </section>
 
       {/* Solution Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-subtle">
         <div className="container max-w-4xl">
           <h2 className="text-3xl font-bold mb-6">The Solution</h2>
           <div className="space-y-4 text-lg text-muted-foreground">
@@ -90,15 +90,15 @@ export function EnergyTradingPlatform() {
           <h2 className="text-3xl font-bold mb-6">The Results</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-[#8B2635] mb-2">$50M</div>
+              <div className="text-4xl font-bold text-destructive mb-2">$50M</div>
               <div className="text-muted-foreground">Daily trading volume processed</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-[#8B2635] mb-2">99.99%</div>
+              <div className="text-4xl font-bold text-destructive mb-2">99.99%</div>
               <div className="text-muted-foreground">Platform uptime achieved</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-[#8B2635] mb-2">85%</div>
+              <div className="text-4xl font-bold text-destructive mb-2">85%</div>
               <div className="text-muted-foreground">Reduction in execution latency</div>
             </div>
           </div>
@@ -117,7 +117,7 @@ export function EnergyTradingPlatform() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#2D5BFF] via-[#4169FF] to-[#5B7FFF] text-white">
+      <section className="py-20 bg-gradient-to-br from-primary via-primary to-secondary text-white">
         <div className="container max-w-4xl text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to build custom software that delivers competitive advantage?</h2>
           <p className="text-xl mb-8 opacity-90">
@@ -128,7 +128,7 @@ export function EnergyTradingPlatform() {
               <a href="mailto:martijn@nexdyne.com">Schedule a consultation</a>
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-[#8B2635]">
+            <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-destructive">
               <Link href="/solutions/custom-software">Learn more about custom software</Link>
             </Button>
           </div>

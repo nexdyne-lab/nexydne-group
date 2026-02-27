@@ -10,7 +10,7 @@ export default function FinancialServicesSQLBootcamp() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-purple-900 via-[#2D5BFF] to-[#4169FF] text-white py-20">
+      <section className="relative bg-gradient-to-br from-purple-900 via-primary to-primary text-white py-20">
         <div className="container">
           {/* Breadcrumb */}
           <nav className="text-sm mb-8 text-purple-200">
@@ -37,8 +37,8 @@ export default function FinancialServicesSQLBootcamp() {
       {/* Challenge Section */}
       <section className="py-20">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">The Challenge</h2>
-          <div className="space-y-4 text-lg text-slate-700">
+          <h2 className="text-4xl font-bold text-charcoal mb-6">The Challenge</h2>
+          <div className="space-y-4 text-lg text-charcoal/80">
             <p>
               A mid-market investment firm with $8B AUM faced a critical bottleneck: business analysts relied entirely on IT for data extraction and analysis. Simple requests—portfolio performance by sector, client segmentation, risk exposure calculations—required submitting tickets that took 2-3 weeks to fulfill.
             </p>
@@ -55,8 +55,8 @@ export default function FinancialServicesSQLBootcamp() {
       {/* Solution Section */}
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">The Solution</h2>
-          <div className="space-y-4 text-lg text-slate-700">
+          <h2 className="text-4xl font-bold text-charcoal mb-6">The Solution</h2>
+          <div className="space-y-4 text-lg text-charcoal/80">
             <p>
               NEXDYNE designed an 8-week SQL and Python bootcamp tailored to the firm's data environment and business problems. Rather than generic training, we built curriculum around their actual data warehouse schema, real portfolio datasets, and common analytical workflows.
             </p>
@@ -82,26 +82,26 @@ export default function FinancialServicesSQLBootcamp() {
       {/* Results Section */}
       <section className="py-20">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">The Results</h2>
+          <h2 className="text-4xl font-bold text-charcoal mb-6">The Results</h2>
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-600">
               <div className="text-4xl font-bold text-purple-900 mb-2">60%</div>
-              <div className="text-slate-700">Reduction in IT data request backlog within 3 months</div>
+              <div className="text-charcoal/80">Reduction in IT data request backlog within 3 months</div>
             </div>
             <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
               <div className="text-4xl font-bold text-blue-900 mb-2">85%</div>
-              <div className="text-slate-700">Of analysts now write SQL queries independently</div>
+              <div className="text-charcoal/80">Of analysts now write SQL queries independently</div>
             </div>
             <div className="bg-indigo-50 p-6 rounded-lg border-l-4 border-indigo-600">
               <div className="text-4xl font-bold text-indigo-900 mb-2">3 weeks → 2 hours</div>
-              <div className="text-slate-700">Time to deliver portfolio performance analysis</div>
+              <div className="text-charcoal/80">Time to deliver portfolio performance analysis</div>
             </div>
             <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
               <div className="text-4xl font-bold text-red-900 mb-2">$400K</div>
-              <div className="text-slate-700">Annual savings from reduced manual data processing</div>
+              <div className="text-charcoal/80">Annual savings from reduced manual data processing</div>
             </div>
           </div>
-          <div className="space-y-4 text-lg text-slate-700">
+          <div className="space-y-4 text-lg text-charcoal/80">
             <p>
               Six months post-training, analysts had built 120+ automated reports and dashboards that previously required manual Excel work. The IT team shifted focus from ad-hoc data requests to strategic infrastructure projects—migrating to a modern cloud data warehouse and implementing real-time risk monitoring.
             </p>
@@ -118,11 +118,11 @@ export default function FinancialServicesSQLBootcamp() {
       {/* Technology Stack Section */}
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">Technology Stack</h2>
+          <h2 className="text-4xl font-bold text-charcoal mb-6">Technology Stack</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Training Platform</h3>
-              <ul className="space-y-2 text-slate-700">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Training Platform</h3>
+              <ul className="space-y-2 text-charcoal/80">
                 <li>• Jupyter Notebooks for hands-on exercises</li>
                 <li>• Zoom for live instruction and office hours</li>
                 <li>• Slack workspace for peer collaboration</li>
@@ -130,8 +130,8 @@ export default function FinancialServicesSQLBootcamp() {
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Technologies Taught</h3>
-              <ul className="space-y-2 text-slate-700">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Technologies Taught</h3>
+              <ul className="space-y-2 text-charcoal/80">
                 <li>• PostgreSQL (firm's data warehouse)</li>
                 <li>• Python 3.9 (Pandas, NumPy, Matplotlib)</li>
                 <li>• Jupyter for interactive analysis</li>
@@ -143,7 +143,7 @@ export default function FinancialServicesSQLBootcamp() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-purple-900 via-[#2D5BFF] to-[#4169FF] text-white">
+      <section className="py-20 bg-gradient-to-br from-purple-900 via-primary to-primary text-white">
         <div className="container text-center">
           <h2 className="text-4xl font-bold mb-6">
             Ready to upskill your team?

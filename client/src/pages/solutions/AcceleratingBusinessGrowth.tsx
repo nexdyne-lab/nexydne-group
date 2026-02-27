@@ -47,7 +47,7 @@ export default function AcceleratingBusinessGrowth() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#1A1A1A]">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
       <SEO 
         title="Accelerating Business Growth" 
         description="Launch new digital products and channels. Drive revenue through e-commerce and digital innovation."
@@ -56,7 +56,7 @@ export default function AcceleratingBusinessGrowth() {
       <Navigation />
       
       {/* Hero Section - Black Background */}
-      <section className="relative min-h-[50vh] md:min-h-[60vh] bg-black pt-20">
+      <section className="relative min-h-[50vh] md:min-h-[60vh] bg-charcoal pt-20">
         <div className="container px-4 sm:px-6 md:px-12 h-full">
           <div className="flex items-center min-h-[40vh] md:min-h-[50vh]">
             <motion.div
@@ -87,7 +87,7 @@ export default function AcceleratingBusinessGrowth() {
       </section>
 
       {/* Statistics Section - Bain Style */}
-      <section className="py-16 md:py-20 bg-white border-b border-gray-200">
+      <section className="py-16 md:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -95,7 +95,7 @@ export default function AcceleratingBusinessGrowth() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-[#CC0000] mb-12">
+            <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-destructive mb-12">
               Our experience & impact
             </h2>
             
@@ -112,12 +112,12 @@ export default function AcceleratingBusinessGrowth() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className={`py-6 sm:py-8 px-4 sm:px-6 ${i > 0 ? 'md:border-l border-gray-200' : ''} ${i >= 2 ? 'border-t md:border-t-0 border-gray-200' : ''}`}
+                  className={`py-6 sm:py-8 px-4 sm:px-6 ${i > 0 ? 'md:border-l border-border' : ''} ${i >= 2 ? 'border-t md:border-t-0 border-border' : ''}`}
                 >
-                  <div className="text-3xl sm:text-4xl md:text-6xl font-serif font-bold text-[#1A1A1A] mb-2 sm:mb-3">
+                  <div className="text-3xl sm:text-4xl md:text-6xl font-serif font-bold text-charcoal mb-2 sm:mb-3">
                     {item.stat}
                   </div>
-                  <div className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                  <div className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                     {item.label}
                   </div>
                 </motion.div>
@@ -138,29 +138,29 @@ export default function AcceleratingBusinessGrowth() {
               transition={{ duration: 0.6 }}
               className="space-y-8"
             >
-              <p className="text-2xl md:text-3xl text-[#1A1A1A] leading-relaxed font-serif">
+              <p className="text-2xl md:text-3xl text-charcoal leading-relaxed font-serif">
                 Growth has never been harder—or more urgent. The playbooks that built your business won't scale it to the next level. We help mid-market companies break through growth ceilings by launching digital products, channels, and business models that compound over time.
               </p>
               
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 The companies winning today aren't just optimizing what they have—they're building entirely new revenue engines. Consider the forces reshaping growth:
               </p>
               
               <div className="space-y-6 pt-4">
                 <div>
-                  <p className="text-lg text-[#1A1A1A] leading-relaxed">
+                  <p className="text-lg text-charcoal leading-relaxed">
                     <span className="font-bold">Your existing channels have peaked.</span> Most mid-market companies have squeezed every dollar from their traditional sales and marketing. The next 10% improvement costs more than the last 50%. It's time to build new engines, not tune old ones.
                   </p>
                 </div>
                 
                 <div>
-                  <p className="text-lg text-[#1A1A1A] leading-relaxed">
+                  <p className="text-lg text-charcoal leading-relaxed">
                     <span className="font-bold">Digital-native competitors are eating your lunch.</span> Companies born in the cloud acquire customers at half your cost and scale revenue 3x faster. They're not playing by the same rules—and neither should you.
                   </p>
                 </div>
                 
                 <div>
-                  <p className="text-lg text-[#1A1A1A] leading-relaxed">
+                  <p className="text-lg text-charcoal leading-relaxed">
                     <span className="font-bold">The window for digital transformation is closing.</span> Every month you delay, competitors capture market share that becomes exponentially harder to reclaim. The best time to launch was yesterday. The second best time is now.
                   </p>
                 </div>
@@ -171,7 +171,7 @@ export default function AcceleratingBusinessGrowth() {
       </section>
 
       {/* What's Your Growth Ambition - Bain Hover Cards */}
-      <section className="py-16 md:py-24 bg-[#F8F9FA]">
+      <section className="py-16 md:py-24 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -180,10 +180,10 @@ export default function AcceleratingBusinessGrowth() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-[#1A1A1A] mb-4">
+            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal mb-4">
               What's your growth ambition?
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl">
+            <p className="text-lg text-muted-foreground max-w-3xl">
               We've helped companies at every stage of the growth journey—from those launching their first digital channel to those scaling platform business models. Where are you?
             </p>
           </motion.div>
@@ -248,14 +248,14 @@ export default function AcceleratingBusinessGrowth() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-[#CC0000] mb-4">
+              <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-destructive mb-4">
                 AI in Sales & Marketing
               </h2>
-              <h3 className="text-3xl md:text-4xl font-serif font-bold text-[#1A1A1A] mb-6 leading-tight">
+              <h3 className="text-3xl md:text-4xl font-serif font-bold text-charcoal mb-6 leading-tight">
                 AI isn't replacing your growth team—it's multiplying their impact
               </h3>
               
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              <p className="text-lg text-charcoal/80 mb-8 leading-relaxed">
                 The hype around AI in marketing is deafening, but the practical applications are transformative. We help mid-market companies deploy AI where it actually moves the needle—not chasing shiny objects, but building sustainable competitive advantage.
               </p>
               
@@ -268,35 +268,35 @@ export default function AcceleratingBusinessGrowth() {
                   "Automated campaign optimization that continuously improves performance without manual intervention"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start">
-                    <span className="w-2 h-2 bg-[#CC0000] rounded-full mt-2 mr-4 flex-shrink-0" />
-                    <span className="text-gray-700">{item}</span>
+                    <span className="w-2 h-2 bg-destructive rounded-full mt-2 mr-4 flex-shrink-0" />
+                    <span className="text-charcoal/80">{item}</span>
                   </li>
                 ))}
               </ul>
               
               {/* Real Outcomes */}
-              <div className="border-t border-gray-200 pt-8 mb-8">
-                <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-[#CC0000] mb-4">
+              <div className="border-t border-border pt-8 mb-8">
+                <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-destructive mb-4">
                   Real outcomes we've delivered
                 </h4>
                 <div className="grid grid-cols-2 gap-6">
                   <div>
-                    <div className="text-3xl font-serif font-bold text-[#1A1A1A]">3.2x</div>
-                    <div className="text-sm text-gray-600">improvement in lead-to-close conversion</div>
+                    <div className="text-3xl font-serif font-bold text-charcoal">3.2x</div>
+                    <div className="text-sm text-muted-foreground">improvement in lead-to-close conversion</div>
                   </div>
                   <div>
-                    <div className="text-3xl font-serif font-bold text-[#1A1A1A]">47%</div>
-                    <div className="text-sm text-gray-600">reduction in customer acquisition cost</div>
+                    <div className="text-3xl font-serif font-bold text-charcoal">47%</div>
+                    <div className="text-sm text-muted-foreground">reduction in customer acquisition cost</div>
                   </div>
                 </div>
               </div>
               
               {/* How We Help */}
-              <div className="border-t border-gray-200 pt-8">
-                <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-[#CC0000] mb-4">
+              <div className="border-t border-border pt-8">
+                <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-destructive mb-4">
                   How we help
                 </h4>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-charcoal/80 leading-relaxed">
                   We start with your actual data and business goals—not theoretical AI capabilities. Our approach identifies the highest-impact use cases, builds proof-of-concept models with your real data, and scales what works into production systems your team can operate.
                 </p>
               </div>
@@ -306,7 +306,7 @@ export default function AcceleratingBusinessGrowth() {
       </section>
 
       {/* A Closer Look - Insight Cards */}
-      <section className="py-16 md:py-24 bg-[#F8F9FA]">
+      <section className="py-16 md:py-24 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -315,10 +315,10 @@ export default function AcceleratingBusinessGrowth() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-[#CC0000] mb-4">
+            <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-destructive mb-4">
               A closer look
             </h2>
-            <p className="text-2xl md:text-3xl font-serif text-[#1A1A1A]">
+            <p className="text-2xl md:text-3xl font-serif text-charcoal">
               Deep dives into growth strategy
             </p>
           </motion.div>
@@ -354,14 +354,14 @@ export default function AcceleratingBusinessGrowth() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
               >
                 <Link href={insight.link}>
-                  <div className="bg-white p-8 border border-gray-200 hover:border-[#CC0000] transition-colors group cursor-pointer h-full">
-                    <h3 className="text-xl font-bold text-[#1A1A1A] mb-4 group-hover:text-[#CC0000] transition-colors leading-tight">
+                  <div className="bg-white p-8 border border-border hover:border-destructive transition-colors group cursor-pointer h-full">
+                    <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-destructive transition-colors leading-tight">
                       {insight.title}
                     </h3>
-                    <p className="text-gray-600 mb-6 leading-relaxed">
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
                       {insight.description}
                     </p>
-                    <span className="inline-flex items-center text-[#CC0000] font-semibold">
+                    <span className="inline-flex items-center text-destructive font-semibold">
                       Read more <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </span>
                   </div>
@@ -382,10 +382,10 @@ export default function AcceleratingBusinessGrowth() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-[#CC0000] mb-4">
+            <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-destructive mb-4">
               How we can help
             </h2>
-            <p className="text-2xl md:text-3xl font-serif text-[#1A1A1A] max-w-3xl leading-relaxed">
+            <p className="text-2xl md:text-3xl font-serif text-charcoal max-w-3xl leading-relaxed">
               We combine strategy, technology, and execution to launch digital growth initiatives that drive measurable revenue.
             </p>
           </motion.div>
@@ -426,7 +426,7 @@ export default function AcceleratingBusinessGrowth() {
       </section>
 
       {/* Client Results - Tabbed Section */}
-      <section className="py-16 md:py-24 bg-[#F8F9FA]">
+      <section className="py-16 md:py-24 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -435,24 +435,24 @@ export default function AcceleratingBusinessGrowth() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-[#CC0000] mb-4">
+            <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-destructive mb-4">
               Our client results
             </h2>
-            <p className="text-2xl md:text-3xl font-serif text-[#1A1A1A]">
+            <p className="text-2xl md:text-3xl font-serif text-charcoal">
               Real outcomes from real engagements
             </p>
           </motion.div>
           
           {/* Tabs */}
-          <div className="flex flex-wrap gap-4 mb-8 border-b border-gray-200 pb-4">
+          <div className="flex flex-wrap gap-4 mb-8 border-b border-border pb-4">
             {clientResults.map((result, i) => (
               <button
                 key={i}
                 onClick={() => setActiveTab(i)}
                 className={`px-6 py-3 text-sm font-semibold transition-all ${
                   activeTab === i 
-                    ? 'bg-[#CC0000] text-white' 
-                    : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'
+                    ? 'bg-destructive text-white' 
+                    : 'bg-white text-muted-foreground hover:bg-subtle border border-border'
                 }`}
               >
                 {result.title.split(' ').slice(0, 3).join(' ')}...
@@ -469,18 +469,18 @@ export default function AcceleratingBusinessGrowth() {
             className="grid lg:grid-cols-2 gap-12 items-center"
           >
             <div>
-              <h3 className="text-2xl md:text-3xl font-serif font-bold text-[#1A1A1A] mb-6 leading-tight">
+              <h3 className="text-2xl md:text-3xl font-serif font-bold text-charcoal mb-6 leading-tight">
                 {clientResults[activeTab].title}
               </h3>
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              <p className="text-lg text-charcoal/80 mb-8 leading-relaxed">
                 {clientResults[activeTab].description}
               </p>
               
               <div className="grid grid-cols-3 gap-6">
                 {clientResults[activeTab].stats.map((stat, i) => (
                   <div key={i}>
-                    <div className="text-3xl font-serif font-bold text-[#CC0000]">{stat.value}</div>
-                    <div className="text-sm text-gray-600">{stat.label}</div>
+                    <div className="text-3xl font-serif font-bold text-destructive">{stat.value}</div>
+                    <div className="text-sm text-muted-foreground">{stat.label}</div>
                   </div>
                 ))}
               </div>
@@ -498,7 +498,7 @@ export default function AcceleratingBusinessGrowth() {
       </section>
 
       {/* Consulting Services Links */}
-      <section className="py-16 md:py-20 bg-white border-t border-gray-200">
+      <section className="py-16 md:py-20 bg-white border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -506,7 +506,7 @@ export default function AcceleratingBusinessGrowth() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-[#CC0000] mb-8">
+            <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-destructive mb-8">
               Consulting services
             </h2>
             
@@ -522,11 +522,11 @@ export default function AcceleratingBusinessGrowth() {
                 { title: "Platform & Marketplace", link: "/services/platforms" }
               ].map((service, i) => (
                 <Link key={i} href={service.link}>
-                  <div className="group flex items-center justify-between py-4 border-b border-gray-200 hover:border-[#CC0000] transition-colors cursor-pointer">
-                    <span className="text-[#1A1A1A] group-hover:text-[#CC0000] transition-colors font-medium">
+                  <div className="group flex items-center justify-between py-4 border-b border-border hover:border-destructive transition-colors cursor-pointer">
+                    <span className="text-charcoal group-hover:text-destructive transition-colors font-medium">
                       {service.title}
                     </span>
-                    <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-[#CC0000] group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="w-4 h-4 text-muted-foreground/70 group-hover:text-destructive group-hover:translate-x-1 transition-all" />
                   </div>
                 </Link>
               ))}
@@ -536,7 +536,7 @@ export default function AcceleratingBusinessGrowth() {
       </section>
 
       {/* Growth Ecosystem Section */}
-      <section className="py-16 md:py-20 bg-[#F8F9FA]">
+      <section className="py-16 md:py-20 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -545,10 +545,10 @@ export default function AcceleratingBusinessGrowth() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-[#CC0000] mb-4">
+            <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-destructive mb-4">
               Our Growth Ecosystem
             </h2>
-            <p className="text-xl md:text-2xl font-serif text-[#1A1A1A] max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl font-serif text-charcoal max-w-2xl mx-auto">
               We partner with leading e-commerce and growth platforms to accelerate your digital transformation
             </p>
           </motion.div>
@@ -590,7 +590,7 @@ export default function AcceleratingBusinessGrowth() {
       </section>
 
       {/* Ready to Talk CTA - Bain Style Two Column */}
-      <section className="py-16 md:py-24 bg-white border-t border-gray-200">
+      <section className="py-16 md:py-24 bg-white border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <motion.div
@@ -599,10 +599,10 @@ export default function AcceleratingBusinessGrowth() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-[#CC0000] mb-4">
+              <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-destructive mb-4">
                 Ready to talk?
               </h2>
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#1A1A1A] leading-tight">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-charcoal leading-tight">
                 Let's build your next growth engine together.
               </h3>
             </motion.div>
@@ -613,17 +613,17 @@ export default function AcceleratingBusinessGrowth() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 We work with mid-market companies ready to break through growth ceilings. Whether you're launching your first digital channel or scaling a platform business model, our team is ready to help you capture the opportunity.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact">
-                  <Button className="bg-[#CC0000] hover:bg-[#990000] text-white px-8 py-4 text-lg font-semibold">
+                  <Button className="bg-destructive hover:bg-destructive text-white px-8 py-4 text-lg font-semibold">
                     Start a Conversation
                   </Button>
                 </Link>
                 <Link href="/case-studies">
-                  <Button variant="outline" className="border-[#1A1A1A] text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-white px-8 py-4 text-lg font-semibold">
+                  <Button variant="outline" className="border-charcoal text-charcoal hover:bg-charcoal hover:text-white px-8 py-4 text-lg font-semibold">
                     View Our Work
                   </Button>
                 </Link>

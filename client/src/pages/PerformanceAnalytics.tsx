@@ -9,7 +9,7 @@ import { RelatedContent } from "@/components/RelatedContent";
 
 export default function PerformanceAnalytics() {
   return (
-    <div className="min-h-screen bg-[#051C2C] font-sans text-white selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
       <SEO 
         title="Performance Analytics & KPIs" 
         description="Make data-driven decisions with real-time operational intelligence. Build dashboards, KPI frameworks, and predictive analytics capabilities."
@@ -25,8 +25,8 @@ export default function PerformanceAnalytics() {
             alt="Performance Analytics" 
             className="w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#051C2C] via-[#051C2C]/80 to-[#051C2C]/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#051C2C] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/80 to-base/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent" />
         </div>
         
         <div className="container px-4 sm:px-6 md:px-12 relative z-10">
@@ -42,7 +42,7 @@ export default function PerformanceAnalytics() {
             
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold tracking-tight text-white leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               Performance <br />
-              <span className="text-[#0077B5]">Analytics</span>
+              <span className="text-primary">Analytics</span>
             </h1>
             
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
@@ -51,7 +51,7 @@ export default function PerformanceAnalytics() {
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-[#0077B5] hover:bg-[#005a8c] text-white px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-[#0077B5]/20">
+                <Button className="bg-primary hover:bg-primary/90 text-white px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-primary/20">
                   Build Your Analytics
                 </Button>
               </Link>
@@ -66,7 +66,7 @@ export default function PerformanceAnalytics() {
       </section>
 
       {/* DZ10 Philosophy Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid md:grid-cols-2 gap-16 lg:gap-8 sm:gap-6 sm:p-6 sm:p-8 md:p-12 lg:gap-8 sm:gap-6 sm:p-8 md:p-12 lg:gap-24 items-center">
             <motion.div
@@ -75,31 +75,31 @@ export default function PerformanceAnalytics() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 The Challenge
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight mb-5 sm:mb-6 md:mb-8">
                 You can't improve what <br />
-                <span className="text-[#0077B5]">you can't measure.</span>
+                <span className="text-primary">you can't measure.</span>
               </h2>
               
-              <div className="space-y-6 text-lg text-[#051C2C]/70 leading-relaxed">
+              <div className="space-y-6 text-lg text-charcoal/70 leading-relaxed">
                 <p>
                   Most organizations are data-rich but insight-poor. They have mountains of operational data but lack the visibility and analytics to turn it into actionable intelligence that drives performance improvement.
                 </p>
                 <p>
-                  NexDyne brings <strong className="text-[#051C2C] font-semibold">performance analytics expertise</strong> that transforms how organizations measure, monitor, and improve operations. We design KPI frameworks, build dashboards, and deploy analytics that provide real-time visibility and predictive insights.
+                  NexDyne brings <strong className="text-charcoal font-semibold">performance analytics expertise</strong> that transforms how organizations measure, monitor, and improve operations. We design KPI frameworks, build dashboards, and deploy analytics that provide real-time visibility and predictive insights.
                 </p>
               </div>
 
               <div className="pt-8 grid grid-cols-2 gap-4 sm:p-5 md:p-6">
-                <div className="p-4 sm:p-5 md:p-6 bg-[#051C2C]/5 rounded-lg sm:rounded-xl">
-                  <div className="text-4xl font-serif font-bold text-[#0077B5] mb-2">100%</div>
-                  <p className="text-sm text-[#051C2C]/60 uppercase tracking-wider">Real-Time Visibility</p>
+                <div className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl">
+                  <div className="text-4xl font-serif font-bold text-primary mb-2">100%</div>
+                  <p className="text-sm text-charcoal/60 uppercase tracking-wider">Real-Time Visibility</p>
                 </div>
-                <div className="p-4 sm:p-5 md:p-6 bg-[#051C2C]/5 rounded-lg sm:rounded-xl">
-                  <div className="text-4xl font-serif font-bold text-[#0077B5] mb-2">50-70%</div>
-                  <p className="text-sm text-[#051C2C]/60 uppercase tracking-wider">Faster Decision-Making</p>
+                <div className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl">
+                  <div className="text-4xl font-serif font-bold text-primary mb-2">50-70%</div>
+                  <p className="text-sm text-charcoal/60 uppercase tracking-wider">Faster Decision-Making</p>
                 </div>
               </div>
             </motion.div>
@@ -111,13 +111,13 @@ export default function PerformanceAnalytics() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="grid grid-cols-2 gap-4"
             >
-              <div className="p-4 sm:p-6 md:p-8 bg-[#051C2C]/5 rounded-lg sm:rounded-xl">
-                <div className="text-4xl font-serif font-bold text-[#0077B5] mb-2">20-30%</div>
-                <div className="text-sm text-[#051C2C]/60">Performance improvement</div>
+              <div className="p-4 sm:p-6 md:p-8 bg-base/5 rounded-lg sm:rounded-xl">
+                <div className="text-4xl font-serif font-bold text-primary mb-2">20-30%</div>
+                <div className="text-sm text-charcoal/60">Performance improvement</div>
               </div>
-              <div className="p-4 sm:p-6 md:p-8 bg-[#051C2C]/5 rounded-lg sm:rounded-xl">
-                <div className="text-4xl font-serif font-bold text-[#0077B5] mb-2">80%</div>
-                <div className="text-sm text-[#051C2C]/60">Reporting time reduction</div>
+              <div className="p-4 sm:p-6 md:p-8 bg-base/5 rounded-lg sm:rounded-xl">
+                <div className="text-4xl font-serif font-bold text-primary mb-2">80%</div>
+                <div className="text-sm text-charcoal/60">Reporting time reduction</div>
               </div>
               <div className="col-span-2 relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img 
@@ -125,7 +125,7 @@ export default function PerformanceAnalytics() {
                   alt="Analytics Excellence" 
                   className="w-full h-48 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#051C2C] via-transparent to-transparent opacity-60" />
+                <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent opacity-60" />
               </div>
             </motion.div>
           </div>
@@ -133,7 +133,7 @@ export default function PerformanceAnalytics() {
       </section>
 
       {/* DZ10 Offerings Grid */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -195,11 +195,11 @@ export default function PerformanceAnalytics() {
                 className="group"
               >
                 <div className="h-full flex flex-col">
-                  <div className="mb-6 p-3 bg-white/5 w-fit rounded-lg text-[#0077B5] group-hover:bg-[#0077B5] group-hover:text-white transition-all duration-300">
+                  <div className="mb-6 p-3 bg-white/5 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
                     {item.icon}
                   </div>
                   
-                  <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-[#0077B5] transition-colors">
+                  <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   
@@ -214,7 +214,7 @@ export default function PerformanceAnalytics() {
       </section>
 
       {/* DZ10 Methodology Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 sm:gap-6 sm:p-6 sm:p-8 md:p-12 lg:gap-8 sm:gap-6 sm:p-8 md:p-12 lg:gap-16 items-center">
             <motion.div
@@ -223,13 +223,13 @@ export default function PerformanceAnalytics() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Our Approach
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6">
-                The NexDyne <span className="text-[#0077B5]">Methodology</span>
+                The NexDyne <span className="text-primary">Methodology</span>
               </h2>
-              <p className="text-lg text-[#051C2C]/70 leading-relaxed mb-5 sm:mb-6 md:mb-8">
+              <p className="text-lg text-charcoal/70 leading-relaxed mb-5 sm:mb-6 md:mb-8">
                 We design comprehensive performance management systems that connect strategy to execution. From KPI framework design to dashboard implementation, we build analytics capabilities that provide actionable insights.
               </p>
               
@@ -241,10 +241,10 @@ export default function PerformanceAnalytics() {
                   { num: "04", title: "Embed", desc: "Train users, establish governance, and embed analytics into daily management routines." }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 items-start">
-                    <div className="text-2xl font-serif font-bold text-[#0077B5]">{item.num}</div>
+                    <div className="text-2xl font-serif font-bold text-primary">{item.num}</div>
                     <div>
-                      <h3 className="text-lg font-bold text-[#051C2C] mb-1">{item.title}</h3>
-                      <p className="text-[#051C2C]/60 text-sm">{item.desc}</p>
+                      <h3 className="text-lg font-bold text-charcoal mb-1">{item.title}</h3>
+                      <p className="text-charcoal/60 text-sm">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -264,7 +264,7 @@ export default function PerformanceAnalytics() {
                   alt="Analytics Methodology" 
                   className="w-full h-auto"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#051C2C] via-transparent to-transparent opacity-60" />
+                <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent opacity-60" />
               </div>
             </motion.div>
           </div>
@@ -272,7 +272,7 @@ export default function PerformanceAnalytics() {
       </section>
 
       {/* DZ10 Case Studies Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 sm:mb-12 md:mb-16 gap-4 sm:p-5 md:p-6">
             <motion.div
@@ -327,10 +327,10 @@ export default function PerformanceAnalytics() {
                     alt={study.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
+                  <div className="absolute inset-0 bg-charcoal/20 group-hover:bg-transparent transition-colors duration-500" />
                 </div>
-                <div className="text-[#0077B5] text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
-                <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-[#0077B5] transition-colors leading-tight">
+                <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
+                <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">
                   {study.title}
                 </h3>
                 <div className="flex items-center text-white text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
@@ -343,7 +343,7 @@ export default function PerformanceAnalytics() {
       </section>
 
       {/* DZ10 Why NexDyne Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -352,10 +352,10 @@ export default function PerformanceAnalytics() {
             transition={{ duration: 0.6 }}
             className="text-center mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Why NexDyne
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#051C2C] mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-charcoal mb-6">
               The analytics partner <br />you've been looking for
             </h2>
           </motion.div>
@@ -373,10 +373,10 @@ export default function PerformanceAnalytics() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center p-4 sm:p-6 md:p-8 bg-[#051C2C]/5 rounded-lg sm:rounded-xl"
+                className="text-center p-4 sm:p-6 md:p-8 bg-base/5 rounded-lg sm:rounded-xl"
               >
-                <div className="text-5xl font-serif font-bold text-[#0077B5] mb-2">{item.metric}</div>
-                <p className="text-sm text-[#051C2C]/60 uppercase tracking-wider">{item.label}</p>
+                <div className="text-5xl font-serif font-bold text-primary mb-2">{item.metric}</div>
+                <p className="text-sm text-charcoal/60 uppercase tracking-wider">{item.label}</p>
               </motion.div>
             ))}
           </div>

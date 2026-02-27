@@ -432,8 +432,8 @@ export default function TeamMemberProfile() {
         <Navigation />
         <div className="container py-16 sm:py-20 md:py-24 lg:py-16 sm:py-20 md:py-24 lg:py-32">
           <div className="max-w-2xl mx-auto text-center">
-            <h1 className="text-4xl font-bold text-slate-900 mb-4">Team Member Not Found</h1>
-            <p className="text-lg text-slate-600 mb-5 sm:mb-6 md:mb-8">The team member you're looking for doesn't exist.</p>
+            <h1 className="text-4xl font-bold text-charcoal mb-4">Team Member Not Found</h1>
+            <p className="text-lg text-muted-foreground mb-5 sm:mb-6 md:mb-8">The team member you're looking for doesn't exist.</p>
             <Link href="/team">
               <a className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white font-semibold rounded-lg hover:bg-slate-800 transition-colors">
                 <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4" />
@@ -455,7 +455,7 @@ export default function TeamMemberProfile() {
       <section className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50/20 pt-32 pb-16">
         <div className="container">
           <Link href="/team">
-            <a className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-slate-900 transition-colors mb-5 sm:mb-6 md:mb-8">
+            <a className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground hover:text-charcoal transition-colors mb-5 sm:mb-6 md:mb-8">
               <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4" />
               Back to Team
             </a>
@@ -492,25 +492,25 @@ export default function TeamMemberProfile() {
 
             {/* Profile Info */}
             <div>
-              <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-slate-900 mb-4 leading-tight tracking-tight">
+              <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-charcoal mb-4 leading-tight tracking-tight">
                 {member.name}
               </h1>
               <p className="text-xl font-bold text-blue-600 mb-3 tracking-wide uppercase">
                 {member.title}
               </p>
-              <p className="text-lg text-slate-600 mb-5 sm:mb-6 md:mb-8 flex items-center gap-2">
+              <p className="text-lg text-muted-foreground mb-5 sm:mb-6 md:mb-8 flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-slate-400" />
                 {member.location}
               </p>
 
               {/* Expertise Tags */}
               <div className="mb-5 sm:mb-6 md:mb-8">
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">Expertise</p>
+                <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-3">Expertise</p>
                 <div className="flex flex-wrap gap-2">
                   {member.expertise.map((skill, index) => (
                     <span 
                       key={index}
-                      className="px-4 py-2 text-sm font-semibold bg-slate-100 text-slate-700 rounded-lg border border-slate-200"
+                      className="px-4 py-2 text-sm font-semibold bg-slate-100 text-charcoal/80 rounded-lg border border-slate-200"
                     >
                       {skill}
                     </span>
@@ -520,7 +520,7 @@ export default function TeamMemberProfile() {
 
               {/* Industries */}
               <div>
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">Industries</p>
+                <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-3">Industries</p>
                 <div className="flex flex-wrap gap-2">
                   {member.industries.map((industry, index) => (
                     <span 
@@ -541,9 +541,9 @@ export default function TeamMemberProfile() {
       <section className="py-10 sm:py-12 lg:py-16 bg-white border-b border-slate-100">
         <div className="container">
           <div className="max-w-4xl">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">Background</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Background</h2>
             <div className="prose prose-lg max-w-none">
-              <p className="text-lg text-slate-700 leading-relaxed mb-4">
+              <p className="text-lg text-charcoal/80 leading-relaxed mb-4">
                 {member.fullBio}
               </p>
             </div>
@@ -557,7 +557,7 @@ export default function TeamMemberProfile() {
           <div className="max-w-4xl">
             <div className="flex items-center gap-3 mb-5 sm:mb-6 md:mb-8">
               <FileText className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
-              <h2 className="text-3xl font-bold text-slate-900">Publications & Research</h2>
+              <h2 className="text-3xl font-bold text-charcoal">Publications & Research</h2>
             </div>
             
             <div className="space-y-6">
@@ -567,17 +567,17 @@ export default function TeamMemberProfile() {
                   className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-6 border border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all"
                 >
                   <div className="flex items-start justify-between gap-4 mb-3">
-                    <h3 className="text-xl font-bold text-slate-900 leading-tight">
+                    <h3 className="text-xl font-bold text-charcoal leading-tight">
                       {pub.title}
                     </h3>
-                    <span className="text-sm font-semibold text-slate-500 whitespace-nowrap">
+                    <span className="text-sm font-semibold text-muted-foreground whitespace-nowrap">
                       {pub.year}
                     </span>
                   </div>
                   <p className="text-sm font-semibold text-blue-600 mb-3 uppercase tracking-wide">
                     {pub.type}
                   </p>
-                  <p className="text-slate-600 leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed">
                     {pub.description}
                   </p>
                 </div>
@@ -593,7 +593,7 @@ export default function TeamMemberProfile() {
           <div className="max-w-4xl">
             <div className="flex items-center gap-3 mb-5 sm:mb-6 md:mb-8">
               <Briefcase className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
-              <h2 className="text-3xl font-bold text-slate-900">Client Work Examples</h2>
+              <h2 className="text-3xl font-bold text-charcoal">Client Work Examples</h2>
             </div>
             
             <div className="space-y-8">
@@ -604,7 +604,7 @@ export default function TeamMemberProfile() {
                 >
                   <div className="flex items-start justify-between gap-4 mb-4">
                     <div>
-                      <h3 className="text-2xl font-bold text-slate-900 mb-2">
+                      <h3 className="text-2xl font-bold text-charcoal mb-2">
                         {work.client}
                       </h3>
                       <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide">
@@ -615,22 +615,22 @@ export default function TeamMemberProfile() {
 
                   <div className="space-y-4">
                     <div>
-                      <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Challenge</p>
-                      <p className="text-slate-700 leading-relaxed">
+                      <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-2">Challenge</p>
+                      <p className="text-charcoal/80 leading-relaxed">
                         {work.challenge}
                       </p>
                     </div>
 
                     <div>
-                      <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Solution</p>
-                      <p className="text-slate-700 leading-relaxed">
+                      <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-2">Solution</p>
+                      <p className="text-charcoal/80 leading-relaxed">
                         {work.solution}
                       </p>
                     </div>
 
                     <div className="bg-blue-50 rounded-lg p-4 border border-blue-100">
                       <p className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2">Result</p>
-                      <p className="text-slate-900 font-semibold leading-relaxed">
+                      <p className="text-charcoal font-semibold leading-relaxed">
                         {work.result}
                       </p>
                     </div>
@@ -652,14 +652,14 @@ export default function TeamMemberProfile() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white leading-tight tracking-tight">
               Work with {member.name.split(' ')[0]}
             </h2>
-            <p className="text-xl mb-10 text-slate-300 leading-relaxed font-light">
+            <p className="text-xl mb-10 text-muted-foreground/50 leading-relaxed font-light">
               Interested in learning how {member.name.split(' ')[0]} can help your organization? 
               Schedule a consultation to discuss your specific needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <a 
                 href="/contact" 
-                className="inline-flex items-center justify-center px-8 py-4 bg-white text-slate-900 font-semibold rounded-lg sm:rounded-xl hover:bg-slate-100 transition-all hover:shadow-xl sm:shadow-xl sm:shadow-2xl hover:shadow-white/20 hover:-translate-y-1"
+                className="inline-flex items-center justify-center px-8 py-4 bg-white text-charcoal font-semibold rounded-lg sm:rounded-xl hover:bg-slate-100 transition-all hover:shadow-xl sm:shadow-xl sm:shadow-2xl hover:shadow-white/20 hover:-translate-y-1"
               >
                 Schedule Consultation
               </a>

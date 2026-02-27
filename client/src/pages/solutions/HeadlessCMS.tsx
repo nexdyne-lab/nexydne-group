@@ -13,7 +13,7 @@ export default function HeadlessCMS() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#7d1e3c] to-[#4a1225] text-white py-24">
+      <section className="relative bg-gradient-to-br from-base to-base text-white py-24">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -34,7 +34,7 @@ export default function HeadlessCMS() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-subtle">
         <div className="container">
           <div className="grid lg:grid-cols-4 gap-8">
             {/* Want to know more card */}
@@ -45,7 +45,7 @@ export default function HeadlessCMS() {
                 Sarah Chen<br />
                 Content Strategy Director
               </p>
-              <Button className="w-full">Ask Sarah Chen</Button>
+              <Button className="w-full bg-primary hover:bg-primary/90 text-white transition-colors duration-200 ease-in-out">Ask Sarah Chen</Button>
             </Card>
 
             {/* Benefit cards */}
@@ -104,9 +104,9 @@ export default function HeadlessCMS() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-subtle">
         <div className="container max-w-4xl text-center">
-          <blockquote className="text-3xl font-bold text-[#7d1e3c] mb-6">
+          <blockquote className="text-3xl font-bold text-base mb-6">
             "Headless CMS: the architecture that turns content into your competitive advantage."
           </blockquote>
           <p className="text-lg text-muted-foreground">
@@ -153,8 +153,8 @@ export default function HeadlessCMS() {
                 <span className="text-lg">Content Strategy Director</span>
               </p>
               <div className="flex gap-4">
-                <Button size="lg">Get in touch</Button>
-                <Button size="lg" variant="outline">Schedule a meeting</Button>
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white transition-colors duration-200 ease-in-out">Get in touch</Button>
+                <Button size="lg" variant="outline" className="border-primary text-charcoal hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out">Schedule a meeting</Button>
               </div>
             </div>
             <div className="w-64 h-64 rounded-full bg-blue-200 ml-auto"></div>
@@ -169,23 +169,23 @@ export default function HeadlessCMS() {
           <p className="text-xl text-muted-foreground mb-12">Awesome partners turn dreams into reality</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <Card className="p-8 flex items-center justify-center">
-              <span className="text-xl font-bold text-[#7d1e3c]">Contentful</span>
+              <span className="text-xl font-bold text-base">Contentful</span>
             </Card>
             <Card className="p-8 flex items-center justify-center">
-              <span className="text-xl font-bold text-[#7d1e3c]">Contentstack</span>
+              <span className="text-xl font-bold text-base">Contentstack</span>
             </Card>
             <Card className="p-8 flex items-center justify-center">
-              <span className="text-xl font-bold text-[#7d1e3c]">Storyblok</span>
+              <span className="text-xl font-bold text-base">Storyblok</span>
             </Card>
             <Card className="p-8 flex items-center justify-center">
-              <span className="text-xl font-bold text-[#7d1e3c]">Sanity</span>
+              <span className="text-xl font-bold text-base">Sanity</span>
             </Card>
           </div>
         </div>
       </section>
 
       {/* Why NEXDYNE Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-subtle">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -203,7 +203,7 @@ export default function HeadlessCMS() {
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 With our headless CMS expertise, you'll always be one step ahead of the competition. We've delivered content platforms for Fortune 500 enterprises and fast-growing startups—architecting systems that handle millions of requests while keeping content teams productive.
               </p>
-              <Button size="lg">Get in touch</Button>
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white transition-colors duration-200 ease-in-out">Get in touch</Button>
             </div>
           </div>
         </div>
@@ -218,7 +218,7 @@ export default function HeadlessCMS() {
             <p className="text-xl text-muted-foreground mb-8">
               Heard of a business that transforms unique business challenges into exceptional outcomes? That'd be us. Check out these inspiring cases.
             </p>
-            <Button>All cases</Button>
+            <Button className="bg-primary hover:bg-primary/90 text-white transition-colors duration-200 ease-in-out">All cases</Button>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -312,10 +312,10 @@ export default function HeadlessCMS() {
               </Card>
             </Link>
 
-            <Card className="p-8 bg-gray-50">
+            <Card className="p-8 bg-subtle">
               <h3 className="text-xl font-bold mb-3 flex items-center justify-between">
                 Headless CMS
-                <ArrowRight className="w-5 h-5 text-gray-400" />
+                <ArrowRight className="w-5 h-5 text-muted-foreground/70" />
               </h3>
               <p className="text-muted-foreground">
                 Go headless today and enjoy flexible, sustainable growth with content that adapts to any channel.

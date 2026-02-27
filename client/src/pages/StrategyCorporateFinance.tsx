@@ -67,7 +67,7 @@ export default function StrategyCorporateFinance() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Strategy & Corporate Finance" 
         description="Align your financial resources with strategic goals to maximize ROI and secure sustainable long-term growth for ambitious SMEs."
@@ -76,7 +76,7 @@ export default function StrategyCorporateFinance() {
       <Navbar />
       
       {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[70vh] flex items-center pt-20 bg-black">
+      <section className="relative min-h-[70vh] flex items-center pt-20 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12 grid sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -97,7 +97,7 @@ export default function StrategyCorporateFinance() {
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
                   Schedule a Consultation
                 </Button>
               </Link>
@@ -125,7 +125,7 @@ export default function StrategyCorporateFinance() {
       </section>
 
       {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -134,7 +134,7 @@ export default function StrategyCorporateFinance() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-[#051C2C]">Our Experience & Impact</h2>
+            <h2 className="text-2xl font-bold text-charcoal">Our Experience & Impact</h2>
           </motion.div>
           
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
@@ -151,8 +151,8 @@ export default function StrategyCorporateFinance() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className=" pl-6"
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-3">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-3">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -168,7 +168,7 @@ export default function StrategyCorporateFinance() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               In today's complex business environment, financial leadership isn't just about managing numbers—it's about aligning resources with strategic vision to unlock sustainable growth. For growing mid-market organizations, access to sophisticated financial expertise can be the difference between stagnation and transformation.
             </motion.p>
@@ -178,7 +178,7 @@ export default function StrategyCorporateFinance() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               The most successful organizations share a common trait: they've moved beyond reactive financial management to build proactive strategic finance functions. This means investing in capabilities that enable real-time visibility, predictive decision-making, and capital optimization—turning finance from a cost center into a competitive weapon.
             </motion.p>
@@ -188,7 +188,7 @@ export default function StrategyCorporateFinance() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               Our approach to financial transformation combines deep expertise with practical business acumen. We don't just implement tools; we refactor the entire financial operating model. From optimizing capital structure to designing performance management systems, we help you build a finance function that operates with the precision of a well-tuned engine.
             </motion.p>
@@ -198,7 +198,7 @@ export default function StrategyCorporateFinance() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               The shift from transactional to strategic finance has fundamentally changed what excellence looks like. Modern finance teams need end-to-end visibility, the ability to model scenarios before committing resources, and feedback loops that enable continuous improvement. We work alongside your team to build these capabilities while maintaining the agility to adapt as markets evolve.
             </motion.p>
@@ -207,7 +207,7 @@ export default function StrategyCorporateFinance() {
       </section>
 
       {/* Section 4: Our Approach (F100 - Dark Navy Background) */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#0a1628] text-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -216,7 +216,7 @@ export default function StrategyCorporateFinance() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Our Approach
             </span>
             <h2 className="text-4xl md:text-5xl font-serif font-bold">
@@ -254,7 +254,7 @@ export default function StrategyCorporateFinance() {
           
           <div className="text-center">
             <Link href="/contact">
-              <Button className="bg-[#0077B5] hover:bg-[#005a8c] text-white px-8 py-6 text-base font-semibold transition-all">
+              <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-all">
                 Get in touch
               </Button>
             </Link>
@@ -263,7 +263,7 @@ export default function StrategyCorporateFinance() {
       </section>
 
       {/* Section 5: How We Can Help - Capability Cards with H100 Hover Effect */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#f8f8f7]">
+      <section className="py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -272,13 +272,13 @@ export default function StrategyCorporateFinance() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal mb-6">
               Our Strategy & Finance Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               We help you build strategic finance capabilities that drive sustainable growth and maximize shareholder value.
             </p>
           </motion.div>
@@ -314,15 +314,15 @@ export default function StrategyCorporateFinance() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Client Results
               </span>
-              <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#051C2C]">
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal">
                 Driving financial transformation
               </h2>
             </motion.div>
             <Link href="/capabilities/strategy-corporate-finance/case-studies">
-              <Button variant="outline" className="border-[#051C2C]/20 text-[#051C2C] hover:bg-[#051C2C]/5 bg-transparent transition-all duration-300">
+              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/5 bg-transparent transition-all duration-300">
                 View all case studies
               </Button>
             </Link>
@@ -358,18 +358,18 @@ export default function StrategyCorporateFinance() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-[#0077B5] text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded">
+                    <span className="bg-primary text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded">
                       {study.category}
                     </span>
                   </div>
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-[#051C2C] mb-4 group-hover:text-[#0077B5] transition-colors leading-tight">
+                <h3 className="text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                   {study.title}
                 </h3>
-                <p className="text-[#051C2C]/60 mb-4 leading-relaxed">
+                <p className="text-charcoal/60 mb-4 leading-relaxed">
                   {study.description}
                 </p>
-                <div className="flex items-center text-[#0077B5] text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                   Read case study <ArrowRight className="ml-2 w-4 h-4" />
                 </div>
               </motion.div>
@@ -379,7 +379,7 @@ export default function StrategyCorporateFinance() {
       </section>
 
       {/* Section 7: Latest Insights (F100) */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#f8f8f7]">
+      <section className="py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
             <motion.div
@@ -388,15 +388,15 @@ export default function StrategyCorporateFinance() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Insights
               </span>
-              <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#051C2C]">
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal">
                 Latest Insights
               </h2>
             </motion.div>
             <Link href="/insights">
-              <Button variant="outline" className="border-[#051C2C]/20 text-[#051C2C] hover:bg-[#051C2C]/5 bg-transparent transition-all duration-300">
+              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/5 bg-transparent transition-all duration-300">
                 View all insights
               </Button>
             </Link>
@@ -432,17 +432,17 @@ export default function StrategyCorporateFinance() {
                 className="group cursor-pointer"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-[#0077B5] text-xs font-bold uppercase tracking-wider">{insight.category}</span>
-                  <span className="text-[#051C2C]/40">•</span>
-                  <span className="text-[#051C2C]/40 text-xs">{insight.readTime}</span>
+                  <span className="text-primary text-xs font-bold uppercase tracking-wider">{insight.category}</span>
+                  <span className="text-charcoal/40">•</span>
+                  <span className="text-charcoal/40 text-xs">{insight.readTime}</span>
                 </div>
-                <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 group-hover:text-[#0077B5] transition-colors leading-tight">
+                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                   {insight.title}
                 </h3>
-                <p className="text-[#051C2C]/60 text-sm mb-4 leading-relaxed">
+                <p className="text-charcoal/60 text-sm mb-4 leading-relaxed">
                   {insight.description}
                 </p>
-                <div className="flex items-center text-[#0077B5] text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                   Read article <ArrowRight className="ml-2 w-4 h-4" />
                 </div>
               </motion.div>
@@ -461,10 +461,10 @@ export default function StrategyCorporateFinance() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Related Capabilities
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#051C2C]">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal">
               Explore related capabilities
             </h2>
           </motion.div>
@@ -491,7 +491,7 @@ export default function StrategyCorporateFinance() {
       </section>
 
       {/* Section 9: CTA Section (F100 - Cyan Background) */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#0077B5]">
+      <section className="py-12 sm:py-16 lg:py-24 bg-primary">
         <div className="container px-4 sm:px-6 md:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -506,7 +506,7 @@ export default function StrategyCorporateFinance() {
               Let's discuss how strategic financial leadership can accelerate your growth and unlock new opportunities.
             </p>
             <Link href="/contact">
-              <Button className="bg-white hover:bg-gray-100 text-[#051C2C] px-10 py-6 text-lg font-semibold transition-all">
+              <Button className="bg-white hover:bg-subtle text-charcoal px-10 py-6 text-lg font-semibold transition-all">
                 Schedule a Consultation
               </Button>
             </Link>

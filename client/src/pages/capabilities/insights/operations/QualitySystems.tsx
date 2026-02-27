@@ -25,21 +25,21 @@ export default function QualitySystems() {
         },
       ]}
     >
-      <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+      <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
         Quality management is often a casualty of growth. As companies scale, the informal quality processes that worked at smaller scale break down. This guide outlines how to build quality systems that scale with your business.
       </p>
 
-      <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
         The Quality Challenge
       </h2>
-      <p className="text-gray-700 mb-6 leading-relaxed">
+      <p className="text-charcoal/80 mb-6 leading-relaxed">
         Growing companies face a common quality dilemma: the processes that ensured quality at smaller scale become bottlenecks as volume increases. The solution is building scalable quality systems.
       </p>
 
-      <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
         Key Takeaways
       </h2>
-      <ul className="list-disc pl-6 text-gray-700 space-y-3 mb-8">
+      <ul className="list-disc pl-6 text-charcoal/80 space-y-3 mb-8">
         <li>Quality systems must evolve as companies grow</li>
         <li>Prevention is more scalable than inspection</li>
         <li>Technology enables quality at scale</li>

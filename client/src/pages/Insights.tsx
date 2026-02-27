@@ -191,13 +191,13 @@ export default function Insights() {
       <Navigation />
       
       {/* Hero Section - Clean white background */}
-      <section className="bg-white pt-32 pb-16 border-b border-gray-200">
+      <section className="bg-white pt-32 pb-16 border-b border-border">
         <div className="container">
           <div className="max-w-4xl">
-            <h1 className="text-5xl md:text-6xl font-serif font-normal text-gray-900 mb-3">
+            <h1 className="text-5xl md:text-6xl font-serif font-normal text-charcoal mb-3">
               Insights
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
+            <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
               Expert perspectives on strategy, technology, operations, and growth from our consultants and partners around the world.
             </p>
           </div>
@@ -205,7 +205,7 @@ export default function Insights() {
       </section>
 
       {/* Category Filters */}
-      <section className="bg-white py-6 border-b border-gray-200 sticky top-0 z-40">
+      <section className="bg-white py-6 border-b border-border sticky top-0 z-40">
         <div className="container">
           <div className="flex flex-wrap gap-2">
             {categories.map((category) => (
@@ -215,7 +215,7 @@ export default function Insights() {
                 className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${
                   selectedCategory === category
                     ? 'bg-red-600 text-white'
-                    : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'
+                    : 'bg-white text-charcoal/80 hover:bg-subtle border border-border'
                 }`}
               >
                 {category}
@@ -229,7 +229,7 @@ export default function Insights() {
       {featuredInsights.length > 0 && (
         <section className="py-10 sm:py-12 lg:py-10 sm:py-12 lg:py-16 bg-white">
           <div className="container">
-            <h2 className="text-sm font-bold text-red-600 uppercase tracking-wider mb-8">
+            <h2 className="text-sm font-bold text-destructive uppercase tracking-wider mb-8">
               Featured Insights
             </h2>
             
@@ -250,17 +250,17 @@ export default function Insights() {
                   </div>
                   
                   {/* Category */}
-                  <p className="text-red-600 text-sm font-medium mb-2">
+                  <p className="text-destructive text-sm font-medium mb-2">
                     {insight.category}
                   </p>
                   
                   {/* Title */}
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-3 leading-tight group-hover:text-blue-600 transition-colors">
                     {insight.title}
                   </h3>
                   
                   {/* Description */}
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                  <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
                     {insight.description}
                   </p>
                   
@@ -268,9 +268,9 @@ export default function Insights() {
                   <div className="flex items-center justify-between">
                     <div>
                       {insight.author && (
-                        <p className="text-sm font-medium text-gray-900">{insight.author}</p>
+                        <p className="text-sm font-medium text-charcoal">{insight.author}</p>
                       )}
-                      <div className="flex items-center gap-3 text-xs text-gray-500">
+                      <div className="flex items-center gap-3 text-xs text-muted-foreground">
                         <span>{insight.date}</span>
                         <span className="flex items-center gap-1">
                           <Clock className="w-3 h-3" /> {insight.readTime}
@@ -278,7 +278,7 @@ export default function Insights() {
                       </div>
                     </div>
                     <button 
-                      className="text-gray-400 hover:text-gray-600 transition-colors"
+                      className="text-muted-foreground/70 hover:text-muted-foreground transition-colors"
                       onClick={(e) => {
                         e.preventDefault();
                         // Bookmark functionality placeholder
@@ -296,9 +296,9 @@ export default function Insights() {
 
       {/* All Insights - Grid */}
       {remainingInsights.length > 0 && (
-        <section className="py-10 sm:py-12 lg:py-10 sm:py-12 lg:py-16 bg-gray-50">
+        <section className="py-10 sm:py-12 lg:py-10 sm:py-12 lg:py-16 bg-subtle">
           <div className="container">
-            <h2 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-8">
+            <h2 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-8">
               All Insights
             </h2>
             
@@ -321,22 +321,22 @@ export default function Insights() {
                   {/* Content */}
                   <div className="p-5">
                     {/* Category */}
-                    <p className="text-red-600 text-xs font-medium mb-2">
+                    <p className="text-destructive text-xs font-medium mb-2">
                       {insight.category}
                     </p>
                     
                     {/* Title */}
-                    <h3 className="text-base font-bold text-gray-900 mb-2 leading-tight group-hover:text-blue-600 transition-colors line-clamp-2">
+                    <h3 className="text-base font-bold text-charcoal mb-2 leading-tight group-hover:text-blue-600 transition-colors line-clamp-2">
                       {insight.title}
                     </h3>
                     
                     {/* Description */}
-                    <p className="text-gray-600 text-sm mb-3 line-clamp-2">
+                    <p className="text-muted-foreground text-sm mb-3 line-clamp-2">
                       {insight.description}
                     </p>
                     
                     {/* Meta */}
-                    <div className="flex items-center gap-3 text-xs text-gray-500">
+                    <div className="flex items-center gap-3 text-xs text-muted-foreground">
                       <span>{insight.date}</span>
                       <span className="flex items-center gap-1">
                         <Clock className="w-3 h-3" /> {insight.readTime}
@@ -360,7 +360,7 @@ export default function Insights() {
       {filteredInsights.length === 0 && (
         <section className="py-12 sm:py-16 lg:py-12 sm:py-16 lg:py-20 bg-white">
           <div className="container text-center">
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-muted-foreground">
               No insights found for this category.
             </p>
           </div>
@@ -374,7 +374,7 @@ export default function Insights() {
             <h2 className="text-3xl md:text-4xl font-serif font-normal mb-6">
               Stay informed
             </h2>
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-xl text-muted-foreground/50 mb-8">
               Subscribe to receive our latest insights and perspectives directly in your inbox.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
@@ -387,7 +387,7 @@ export default function Insights() {
                 Subscribe <ArrowRight className="w-4 h-4" />
               </button>
             </div>
-            <p className="text-sm text-gray-500 mt-4">
+            <p className="text-sm text-muted-foreground mt-4">
               By subscribing, you agree to our privacy policy.
             </p>
           </div>

@@ -10,7 +10,7 @@ import { SEO } from "@/components/SEO";
 
 export default function ServiceDesign() {
   return (
-    <div className="min-h-screen bg-[#051C2C] text-white selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
       <SEO 
         title="Service Design | NexDyne Technologies" 
         description="Service blueprinting, employee experience design, and physical-digital integration. We orchestrate the invisible to deliver seamless services."
@@ -21,7 +21,7 @@ export default function ServiceDesign() {
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-30"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#051C2C] via-[#051C2C]/60 to-[#051C2C]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
         
         <div className="container relative z-10 px-4 md:px-12">
           <Breadcrumbs />
@@ -32,21 +32,21 @@ export default function ServiceDesign() {
             className="max-w-4xl"
           >
             <Link href="/capabilities/growth-marketing-sales">
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block hover:text-white transition-colors cursor-pointer">
+              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block hover:text-white transition-colors cursor-pointer">
                 Growth, Marketing & Sales
               </span>
             </Link>
             
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-2 sm:mb-3 md:mb-4 eb-garamond">
               Service <br />
-              <span className="text-[#0077B5]">Design</span>
+              <span className="text-primary">Design</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
               Orchestrate the invisible. We align people, infrastructure, and technology to deliver services that are seamless, scalable, and human-centered.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
-                <Button className="bg-[#0077B5] hover:bg-[#005a8c] text-white px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all">
+                <Button className="bg-primary hover:bg-primary/90 text-white px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all">
                   Assess Your Service Architecture
                 </Button>
               </Link>
@@ -61,7 +61,7 @@ export default function ServiceDesign() {
       </section>
 
       {/* DZ10 Introduction Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             <motion.div
@@ -70,20 +70,20 @@ export default function ServiceDesign() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Our Approach
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-5 sm:mb-6 md:mb-8 eb-garamond">
                 Engineering great <br />
-                <span className="text-[#0077B5]">services.</span>
+                <span className="text-primary">services.</span>
               </h2>
               
-              <div className="space-y-6 text-lg text-[#051C2C]/70 leading-relaxed">
+              <div className="space-y-6 text-lg text-charcoal/70 leading-relaxed">
                 <p>
                   Great services don't happen by accident; they are engineered. In complex organizations, the gap between what a customer experiences and what the business intends is often where value is lost. Siloed departments, disjointed systems, and misaligned incentives create friction that frustrates users and drains efficiency.
                 </p>
                 <p>
-                  NexDyne's Service Design practice bridges this gap. We look beyond the user interface to the underlying operational layers—the <strong className="text-[#051C2C] font-semibold">"backstage" processes</strong> that power the "frontstage" experience. By treating your service as a holistic ecosystem, we design resilient systems that deliver consistent quality at scale, turning operational complexity into competitive advantage.
+                  NexDyne's Service Design practice bridges this gap. We look beyond the user interface to the underlying operational layers—the <strong className="text-charcoal font-semibold">"backstage" processes</strong> that power the "frontstage" experience. By treating your service as a holistic ecosystem, we design resilient systems that deliver consistent quality at scale, turning operational complexity into competitive advantage.
                 </p>
               </div>
             </motion.div>
@@ -108,7 +108,7 @@ export default function ServiceDesign() {
       </section>
 
       {/* DZ10 What We Do Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -157,11 +157,11 @@ export default function ServiceDesign() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group"
               >
-                <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-[#0077B5]/50 transition-all duration-300 hover:bg-white/10">
-                  <div className="mb-6 p-3 bg-[#0077B5]/10 w-fit rounded-lg text-[#0077B5] group-hover:bg-[#0077B5] group-hover:text-white transition-all duration-300">
+                <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300 hover:bg-white/10">
+                  <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
                     {item.icon}
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-[#0077B5] transition-colors">
+                  <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 leading-relaxed">
@@ -175,7 +175,7 @@ export default function ServiceDesign() {
       </section>
 
       {/* DZ10 Case Studies Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -184,10 +184,10 @@ export default function ServiceDesign() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Examples of Our Work
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#051C2C] mb-6 eb-garamond">Examples of our work</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">Examples of our work</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4 sm:p-6 md:p-8 lg:gap-10">
@@ -223,20 +223,20 @@ export default function ServiceDesign() {
                 className="group"
               >
                 <Link href={item.link} className="block h-full">
-                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-[#051C2C]/5 hover:bg-[#051C2C] transition-all duration-500 hover:scale-[1.02]">
-                    <div className="text-4xl font-serif font-bold text-[#0077B5] mb-2 group-hover:text-white transition-colors">
+                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-base/5 hover:bg-base transition-all duration-500 hover:scale-[1.02]">
+                    <div className="text-4xl font-serif font-bold text-primary mb-2 group-hover:text-white transition-colors">
                       {item.metric}
                     </div>
-                    <div className="text-sm text-[#051C2C]/60 mb-6 group-hover:text-white/60 transition-colors">
+                    <div className="text-sm text-charcoal/60 mb-6 group-hover:text-white/60 transition-colors">
                       {item.metricLabel}
                     </div>
-                    <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 group-hover:text-white transition-colors">
+                    <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-white transition-colors">
                       {item.title}
                     </h3>
-                    <p className="text-[#051C2C]/70 leading-relaxed mb-6 group-hover:text-white/70 transition-colors">
+                    <p className="text-charcoal/70 leading-relaxed mb-6 group-hover:text-white/70 transition-colors">
                       {item.description}
                     </p>
-                    <div className="flex items-center text-[#0077B5] font-medium group-hover:text-white group-hover:translate-x-2 transition-all">
+                    <div className="flex items-center text-primary font-medium group-hover:text-white group-hover:translate-x-2 transition-all">
                       Read case study <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4" />
                     </div>
                   </div>
@@ -248,7 +248,7 @@ export default function ServiceDesign() {
       </section>
 
       {/* DZ10 Related Capabilities Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -284,10 +284,10 @@ export default function ServiceDesign() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={item.link} className="group block h-full">
-                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-[#0077B5]/50 transition-all duration-300 hover:bg-white/10">
-                    <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-[#0077B5] transition-colors flex items-center gap-2">
+                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300 hover:bg-white/10">
+                    <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors flex items-center gap-2">
                       {item.title}
-                      <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-[#0077B5] opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+                      <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-primary opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
                     </h3>
                     <p className="text-white/60 leading-relaxed">
                       {item.description}
@@ -301,7 +301,7 @@ export default function ServiceDesign() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#0077B5]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -317,7 +317,7 @@ export default function ServiceDesign() {
               A great interface cannot fix a broken process. Our Service Design Assessment uncovers the operational disconnects that are compromising your customer promise.
             </p>
             <Link href="/contact">
-              <Button className="bg-white text-[#0077B5] hover:bg-white/90 px-10 py-6 text-lg font-semibold transition-all hover:scale-[1.02] hover:shadow-lg">
+              <Button className="bg-white text-primary hover:bg-white/90 px-10 py-6 text-lg font-semibold transition-all hover:scale-[1.02] hover:shadow-lg">
                 Assess Your Service Architecture
               </Button>
             </Link>
