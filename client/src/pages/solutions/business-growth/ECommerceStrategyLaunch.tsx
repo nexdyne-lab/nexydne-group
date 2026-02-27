@@ -38,14 +38,14 @@ export default function ECommerceStrategyLaunch() {
       />
       <Navigation />
       <main>
-        <section className="bg-[#051C2C] text-white">
+        <section className="bg-base text-white">
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-16 md:py-24">
             <div className="space-y-6">
               <Breadcrumbs variant="light" />
               <h1 className="text-4xl md:text-5xl font-bold eb-garamond">E-Commerce Strategy & Launch</h1>
-              <p className="text-lg text-gray-300">Help organizations build and scale e-commerce platforms, from marketplace strategy to omnichannel retail execution. Focus on platform selection, UX optimization, payment integration, and launch strategy.</p>
+              <p className="text-lg text-muted-foreground/50">Help organizations build and scale e-commerce platforms, from marketplace strategy to omnichannel retail execution. Focus on platform selection, UX optimization, payment integration, and launch strategy.</p>
               <div className="flex space-x-4">
-                <Button asChild size="lg" className="bg-[#0077B5] hover:bg-[#005f8a]">
+                <Button asChild size="lg" className="bg-primary hover:bg-base">
                   <Link href="/contact">Request a Consultation</Link>
                 </Button>
                 <Button asChild size="lg" variant="outline">
@@ -62,24 +62,24 @@ export default function ECommerceStrategyLaunch() {
         <section className="py-16 bg-white">
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <p className="text-4xl font-bold text-[#051C2C]">75%</p>
-              <p className="text-gray-600">of consumers are more likely to buy from a retailer that recognizes them by name and recommends products based on past purchases.</p>
+              <p className="text-4xl font-bold text-charcoal">75%</p>
+              <p className="text-muted-foreground">of consumers are more likely to buy from a retailer that recognizes them by name and recommends products based on past purchases.</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-[#051C2C]">$6.3 Trillion</p>
-              <p className="text-gray-600">is the projected value of global e-commerce sales by 2024, highlighting the immense growth opportunity.</p>
+              <p className="text-4xl font-bold text-charcoal">$6.3 Trillion</p>
+              <p className="text-muted-foreground">is the projected value of global e-commerce sales by 2024, highlighting the immense growth opportunity.</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-[#051C2C]">88%</p>
-              <p className="text-gray-600">of online shoppers are less likely to return to a site after a bad user experience, making UX a critical factor for success.</p>
+              <p className="text-4xl font-bold text-charcoal">88%</p>
+              <p className="text-muted-foreground">of online shoppers are less likely to return to a site after a bad user experience, making UX a critical factor for success.</p>
             </div>
           </div>
         </section>
 
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-subtle">
           <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl font-bold text-[#051C2C]">From Clicks to Conversions</h2>
-            <div className="text-left space-y-4 mt-6 text-gray-700">
+            <h2 className="text-3xl font-bold text-charcoal">From Clicks to Conversions</h2>
+            <div className="text-left space-y-4 mt-6 text-charcoal/80">
               <p>The digital marketplace is more crowded than ever. Launching a successful e-commerce venture requires more than just a functional website; it demands a comprehensive strategy that encompasses user experience, technology, and marketing. Without a clear roadmap, businesses risk getting lost in the noise, facing low conversion rates, and ultimately failing to capture their share of the booming online market. A poorly executed launch can lead to wasted resources, brand damage, and missed revenue opportunities.</p>
               <p>NexDyne provides end-to-end support for your e-commerce journey. We help you navigate the complexities of platform selection, design intuitive user interfaces, and integrate secure payment systems. Our data-driven approach ensures your launch is not just a deployment, but a strategic market entry designed for sustained growth. We partner with you to build a scalable, high-performing e-commerce platform that not only meets customer expectations but also drives long-term profitability and brand loyalty.</p>
             </div>
@@ -88,92 +88,92 @@ export default function ECommerceStrategyLaunch() {
 
         <section className="py-16 bg-white">
           <div className="container mx-auto">
-            <h2 className="text-3xl font-bold text-center text-[#051C2C]">How We Can Help</h2>
+            <h2 className="text-3xl font-bold text-center text-charcoal">How We Can Help</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
               {capabilities.map((cap, index) => (
-                <motion.div key={index} className="group relative p-6 bg-gray-50 rounded-lg overflow-hidden" whileHover={{ scale: 1.05 }}>
-                  <div className="absolute left-0 top-0 h-full w-1 bg-transparent transition-all duration-300 group-hover:bg-[#CC0000]"></div>
-                  <h3 className="text-xl font-bold text-[#051C2C] transition-all duration-300 group-hover:text-base">{cap.title}</h3>
-                  <p className="text-gray-600 h-0 opacity-0 transition-all duration-300 group-hover:h-auto group-hover:opacity-100 group-hover:mt-2">{cap.description}</p>
+                <motion.div key={index} className="group relative p-6 bg-subtle rounded-lg overflow-hidden" whileHover={{ scale: 1.05 }}>
+                  <div className="absolute left-0 top-0 h-full w-1 bg-transparent transition-all duration-300 group-hover:bg-destructive"></div>
+                  <h3 className="text-xl font-bold text-charcoal transition-all duration-300 group-hover:text-base">{cap.title}</h3>
+                  <p className="text-muted-foreground h-0 opacity-0 transition-all duration-300 group-hover:h-auto group-hover:opacity-100 group-hover:mt-2">{cap.description}</p>
                 </motion.div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="py-16 bg-[#051C2C] text-white">
+        <section className="py-16 bg-base text-white">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold">Our Approach</h2>
             <div className="grid md:grid-cols-3 gap-8 mt-10 max-w-5xl mx-auto">
               <div className="p-6">
-                <p className="text-4xl font-bold text-[#00d4ff]">1</p>
+                <p className="text-4xl font-bold text-secondary">1</p>
                 <h3 className="text-xl font-semibold mt-4">Discovery & Strategy</h3>
-                <p className="text-gray-300 mt-2">We begin by understanding your business goals, target audience, and competitive landscape to build a tailored e-commerce strategy.</p>
+                <p className="text-muted-foreground/50 mt-2">We begin by understanding your business goals, target audience, and competitive landscape to build a tailored e-commerce strategy.</p>
               </div>
               <div className="p-6">
-                <p className="text-4xl font-bold text-[#00d4ff]">2</p>
+                <p className="text-4xl font-bold text-secondary">2</p>
                 <h3 className="text-xl font-semibold mt-4">Implementation & Launch</h3>
-                <p className="text-gray-300 mt-2">Our team manages the end-to-end development process, from platform configuration to launch, ensuring a seamless and on-time delivery.</p>
+                <p className="text-muted-foreground/50 mt-2">Our team manages the end-to-end development process, from platform configuration to launch, ensuring a seamless and on-time delivery.</p>
               </div>
               <div className="p-6">
-                <p className="text-4xl font-bold text-[#00d4ff]">3</p>
+                <p className="text-4xl font-bold text-secondary">3</p>
                 <h3 className="text-xl font-semibold mt-4">Optimization & Growth</h3>
-                <p className="text-gray-300 mt-2">Post-launch, we continuously analyze performance, optimize for conversions, and implement growth marketing campaigns to scale your business.</p>
+                <p className="text-muted-foreground/50 mt-2">Post-launch, we continuously analyze performance, optimize for conversions, and implement growth marketing campaigns to scale your business.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="py-16 bg-[#051C2C] text-white">
+        <section className="py-16 bg-base text-white">
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold text-center">Case Studies</h2>
             <div className="grid md:grid-cols-2 gap-8 mt-10 max-w-4xl mx-auto">
               <div className="bg-gray-800 p-6 rounded-lg">
-                <p className="text-sm text-[#00d4ff]">Retail Fashion</p>
+                <p className="text-sm text-secondary">Retail Fashion</p>
                 <h3 className="text-xl font-semibold mt-2">Global Fashion Brand Increases Online Sales by 300% with New E-Commerce Platform</h3>
               </div>
               <div className="bg-gray-800 p-6 rounded-lg">
-                <p className="text-sm text-[#00d4ff]">Consumer Electronics</p>
+                <p className="text-sm text-secondary">Consumer Electronics</p>
                 <h3 className="text-xl font-semibold mt-2">Electronics Retailer Achieves 40% Higher Conversion Rate with UX Overhaul</h3>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="py-16 bg-gray-100">
+        <section className="py-16 bg-subtle">
           <div className="container mx-auto">
-            <h2 className="text-3xl font-bold text-center text-[#051C2C]">Related Capabilities</h2>
+            <h2 className="text-3xl font-bold text-center text-charcoal">Related Capabilities</h2>
             <div className="grid md:grid-cols-3 gap-8 mt-10 max-w-5xl mx-auto">
               <Link href="/solutions/business-growth/digital-product-development">
                 <a className="block p-6 bg-white rounded-lg shadow hover:shadow-lg transition-shadow">
-                  <h3 className="text-xl font-semibold text-[#051C2C]">Digital Product Development</h3>
-                  <p className="text-gray-600 mt-2">Innovate and build digital products that captivate users and drive business outcomes.</p>
-                  <div className="flex items-center text-[#0077B5] font-semibold mt-4">Learn More <ArrowRight className="ml-2 h-5 w-5" /></div>
+                  <h3 className="text-xl font-semibold text-charcoal">Digital Product Development</h3>
+                  <p className="text-muted-foreground mt-2">Innovate and build digital products that captivate users and drive business outcomes.</p>
+                  <div className="flex items-center text-primary font-semibold mt-4">Learn More <ArrowRight className="ml-2 h-5 w-5" /></div>
                 </a>
               </Link>
               <Link href="/solutions/business-growth/growth-marketing-acquisition">
                 <a className="block p-6 bg-white rounded-lg shadow hover:shadow-lg transition-shadow">
-                  <h3 className="text-xl font-semibold text-[#051C2C]">Growth Marketing & Acquisition</h3>
-                  <p className="text-gray-600 mt-2">Acquire and retain high-value customers through data-driven marketing strategies.</p>
-                  <div className="flex items-center text-[#0077B5] font-semibold mt-4">Learn More <ArrowRight className="ml-2 h-5 w-5" /></div>
+                  <h3 className="text-xl font-semibold text-charcoal">Growth Marketing & Acquisition</h3>
+                  <p className="text-muted-foreground mt-2">Acquire and retain high-value customers through data-driven marketing strategies.</p>
+                  <div className="flex items-center text-primary font-semibold mt-4">Learn More <ArrowRight className="ml-2 h-5 w-5" /></div>
                 </a>
               </Link>
               <Link href="/solutions/business-growth/revenue-operations-analytics">
                 <a className="block p-6 bg-white rounded-lg shadow hover:shadow-lg transition-shadow">
-                  <h3 className="text-xl font-semibold text-[#051C2C]">Revenue Operations & Analytics</h3>
-                  <p className="text-gray-600 mt-2">Align your sales, marketing, and service operations to maximize revenue.</p>
-                  <div className="flex items-center text-[#0077B5] font-semibold mt-4">Learn More <ArrowRight className="ml-2 h-5 w-5" /></div>
+                  <h3 className="text-xl font-semibold text-charcoal">Revenue Operations & Analytics</h3>
+                  <p className="text-muted-foreground mt-2">Align your sales, marketing, and service operations to maximize revenue.</p>
+                  <div className="flex items-center text-primary font-semibold mt-4">Learn More <ArrowRight className="ml-2 h-5 w-5" /></div>
                 </a>
               </Link>
             </div>
           </div>
         </section>
 
-        <section className="bg-[#0077B5] text-white">
+        <section className="bg-primary text-white">
           <div className="container mx-auto text-center py-16">
             <h2 className="text-3xl font-bold">Ready to Build Your E-Commerce Empire?</h2>
             <p className="mt-4 max-w-2xl mx-auto">Let's discuss how NexDyne can help you launch and scale a successful e-commerce business. Reach out to our experts today for a personalized consultation.</p>
-            <Button asChild size="lg" variant="outline" className="mt-8 bg-white text-[#0077B5] hover:bg-gray-100">
+            <Button asChild size="lg" variant="outline" className="mt-8 bg-white text-primary hover:bg-subtle">
               <Link href="/contact">Contact Us</Link>
             </Button>
           </div>

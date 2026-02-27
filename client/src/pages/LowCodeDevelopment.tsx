@@ -42,41 +42,41 @@ export default function LowCodeDevelopment() {
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 max-w-7xl mx-auto">
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <Zap className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">10x faster delivery</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">10x faster delivery</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 Visual development accelerates application creation dramatically. Launch in weeks instead of months, capturing market opportunities before competitors.
               </p>
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <DollarSign className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Lower development costs</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Lower development costs</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 Reduce development expenses by 50-70% compared to traditional coding. Reusable components and visual builders eliminate redundant work.
               </p>
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <Blocks className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Perfect business fit</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Perfect business fit</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 Build applications that precisely match your unique processes and requirements—no compromises, no workarounds, no unused features.
               </p>
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-[#2D5BFF] rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
                 <RefreshCw className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Effortless evolution</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-charcoal">Effortless evolution</h3>
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 Adapt applications as business needs change. Updates and enhancements happen in days, keeping pace with market dynamics.
               </p>
             </div>
@@ -85,16 +85,16 @@ export default function LowCodeDevelopment() {
       </section>
 
       {/* What is Low-Code Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container max-w-5xl mx-auto">
           <div className="mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Understanding Low-Code</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Understanding Low-Code</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               The development paradigm shift
             </h2>
           </div>
           
-          <div className="prose prose-xl max-w-none text-gray-700 leading-relaxed space-y-6">
+          <div className="prose prose-xl max-w-none text-charcoal/80 leading-relaxed space-y-6">
             <p>
               Low-code development platforms revolutionize how organizations build software by replacing manual coding with visual development environments. Instead of writing thousands of lines of code, developers and business users assemble applications using drag-and-drop components, pre-built templates, and declarative logic—accelerating development by an order of magnitude while maintaining enterprise-grade quality and security.
             </p>
@@ -107,11 +107,11 @@ export default function LowCodeDevelopment() {
           </div>
 
           {/* Quote */}
-          <div className="mt-12 border-l-4 border-[#2D5BFF] pl-8 py-6 bg-white">
+          <div className="mt-12 border-l-4 border-primary pl-8 py-6 bg-white">
             <p className="text-xl italic text-gray-800 mb-4">
               "We needed a custom CRM that integrated with our existing systems, but quotes for traditional development came in at $300K and 9 months. Low-code let us build exactly what we needed for under $50K in 6 weeks. The ROI was immediate."
             </p>
-            <p className="text-lg font-semibold text-gray-900">VP of Operations, Manufacturing Company</p>
+            <p className="text-lg font-semibold text-charcoal">VP of Operations, Manufacturing Company</p>
           </div>
         </div>
       </section>
@@ -140,7 +140,7 @@ export default function LowCodeDevelopment() {
               <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-slate-900">1</span>
+                    <span className="text-2xl font-bold text-charcoal">1</span>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Discovery & Design</h3>
@@ -154,7 +154,7 @@ export default function LowCodeDevelopment() {
               <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-slate-900">2</span>
+                    <span className="text-2xl font-bold text-charcoal">2</span>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Rapid Development</h3>
@@ -168,7 +168,7 @@ export default function LowCodeDevelopment() {
               <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-slate-900">3</span>
+                    <span className="text-2xl font-bold text-charcoal">3</span>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-3">Deploy & Evolve</h3>
@@ -187,57 +187,57 @@ export default function LowCodeDevelopment() {
       <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-white">
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Applications</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Applications</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               Where low-code accelerates delivery
             </h2>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-7xl mx-auto">
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Code2 className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Custom CRM Systems</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Code2 className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Custom CRM Systems</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Build customer relationship management applications tailored to your sales process, industry requirements, and integration needs.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Users className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Employee Portals</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Users className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Employee Portals</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Create self-service portals for HR requests, expense management, time tracking, and internal communications.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Blocks className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Workflow Automation</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Blocks className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Workflow Automation</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Digitize manual processes—approval workflows, document management, compliance tracking, and cross-departmental coordination.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <DollarSign className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Field Service Apps</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <DollarSign className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Field Service Apps</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Equip field teams with mobile applications for work orders, inventory management, customer data access, and real-time updates.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <RefreshCw className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Partner Portals</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <RefreshCw className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Partner Portals</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Enable partners, vendors, and distributors to access information, submit orders, track shipments, and collaborate seamlessly.
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300">
-              <Zap className="w-12 h-12 text-[#2D5BFF] mb-4" />
-              <h3 className="text-xl font-bold mb-3 text-gray-900">Operational Dashboards</h3>
-              <p className="text-gray-700 leading-relaxed">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+              <Zap className="w-12 h-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-charcoal">Operational Dashboards</h3>
+              <p className="text-charcoal/80 leading-relaxed">
                 Aggregate data from multiple systems into unified dashboards that provide real-time visibility into business performance.
               </p>
             </div>
@@ -246,25 +246,25 @@ export default function LowCodeDevelopment() {
       </section>
 
       {/* Related Services Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Related Capabilities</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Related Capabilities</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               Comprehensive development solutions
             </h2>
           </div>
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-6xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/app-development/custom-software" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 h-full bg-white">
-                <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+                <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   Custom Software
                 </h3>
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <p className="text-charcoal/80 mb-4 leading-relaxed">
                   For complex requirements beyond low-code capabilities, we build fully custom solutions tailored to your exact specifications.
                 </p>
-                <div className="flex items-center text-[#2D5BFF] font-semibold">
+                <div className="flex items-center text-primary font-semibold">
                   Learn more
                   <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -272,14 +272,14 @@ export default function LowCodeDevelopment() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/service-portals" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 h-full bg-white">
-                <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+                <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   Service Portals
                 </h3>
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <p className="text-charcoal/80 mb-4 leading-relaxed">
                   Deploy 24/7 self-service portals that improve customer satisfaction while reducing support burden on your team.
                 </p>
-                <div className="flex items-center text-[#2D5BFF] font-semibold">
+                <div className="flex items-center text-primary font-semibold">
                   Learn more
                   <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -287,14 +287,14 @@ export default function LowCodeDevelopment() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/it-modernization" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 h-full bg-white">
-                <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-[#2D5BFF] transition-colors">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+                <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   IT Modernization
                 </h3>
-                <p className="text-gray-700 mb-4 leading-relaxed">
+                <p className="text-charcoal/80 mb-4 leading-relaxed">
                   Replace legacy systems with modern, cloud-native architectures that accelerate innovation and reduce technical debt.
                 </p>
-                <div className="flex items-center text-[#2D5BFF] font-semibold">
+                <div className="flex items-center text-primary font-semibold">
                   Learn more
                   <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -314,7 +314,7 @@ export default function LowCodeDevelopment() {
             Schedule a complimentary consultation to explore how low-code development can help you build custom applications faster and more cost-effectively.
           </p>
           <Link href="/contact">
-            <Button size="lg" className="bg-[#2D5BFF] hover:bg-[#1e40af] text-white text-lg px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6">
+            <Button size="lg" className="bg-primary hover:bg-primary-hover text-white text-lg px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6">
               Schedule consultation
               <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
             </Button>

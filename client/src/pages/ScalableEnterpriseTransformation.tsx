@@ -40,7 +40,7 @@ export default function ScalableEnterpriseTransformation() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#1A1A1A]">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
       <SEO 
         title="Scalable Enterprise Transformation" 
         description="Modernize your core technology stack. Build cloud-native infrastructure that scales with your ambition."
@@ -49,7 +49,7 @@ export default function ScalableEnterpriseTransformation() {
       <Navigation />
       
       {/* Hero Section - Black Background */}
-      <section className="relative min-h-[70vh] md:min-h-[80vh] bg-black pt-20">
+      <section className="relative min-h-[70vh] md:min-h-[80vh] bg-charcoal pt-20">
         <div className="container px-4 sm:px-6 md:px-12 h-full">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-0 items-center min-h-[60vh] md:min-h-[70vh]">
             {/* Left Column - Text Content */}
@@ -96,7 +96,7 @@ export default function ScalableEnterpriseTransformation() {
       </section>
 
       {/* Our Experience & Impact - Bain Style Statistics */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -104,7 +104,7 @@ export default function ScalableEnterpriseTransformation() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-lg font-semibold text-[#1A1A1A] mb-12">
+            <h2 className="text-lg font-semibold text-charcoal mb-12">
               Our Experience & Impact
             </h2>
             
@@ -120,12 +120,12 @@ export default function ScalableEnterpriseTransformation() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className={`py-8 ${i < 2 ? 'md:border-r border-gray-200' : ''} ${i > 0 ? 'md:pl-12' : ''} ${i < 2 ? 'md:pr-12' : ''}`}
+                  className={`py-8 ${i < 2 ? 'md:border-r border-border' : ''} ${i > 0 ? 'md:pl-12' : ''} ${i < 2 ? 'md:pr-12' : ''}`}
                 >
-                  <div className="text-4xl md:text-5xl font-serif font-normal text-[#1A1A1A] mb-3">
+                  <div className="text-4xl md:text-5xl font-serif font-normal text-charcoal mb-3">
                     {item.stat}
                   </div>
-                  <div className="text-sm text-gray-600 leading-relaxed">
+                  <div className="text-sm text-muted-foreground leading-relaxed">
                     {item.label}
                   </div>
                 </motion.div>
@@ -146,29 +146,29 @@ export default function ScalableEnterpriseTransformation() {
               transition={{ duration: 0.6 }}
               className="space-y-6"
             >
-              <p className="text-lg sm:text-xl md:text-2xl text-[#1A1A1A] leading-relaxed font-serif">
+              <p className="text-lg sm:text-xl md:text-2xl text-charcoal leading-relaxed font-serif">
                 Most mid-market companies are running on technology that was never designed for where they're headed. Systems built for 50 employees struggle under 200. Infrastructure that worked five years ago now costs more to maintain than to replace. We've spent the last decade helping companies break free from this trap.
               </p>
               
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg text-charcoal/80 leading-relaxed">
                 The challenge isn't just technical—it's strategic. Legacy systems create invisible constraints that limit what your business can become. Modern architecture removes those constraints. But the path from here to there requires more than technology expertise. It requires understanding your business well enough to know what to modernize first, what to migrate, and what to rebuild entirely.
               </p>
               
               <div className="space-y-6 pt-4">
                 <div>
-                  <p className="text-lg text-[#1A1A1A] leading-relaxed">
+                  <p className="text-lg text-charcoal leading-relaxed">
                     <span className="font-bold">Your competitors have already started:</span> Companies that modernized their infrastructure 3-5 years ago now deploy new features in days, not months. They scale without hiring armies of IT staff. They're winning deals you're losing because they can move faster.
                   </p>
                 </div>
                 
                 <div>
-                  <p className="text-lg text-[#1A1A1A] leading-relaxed">
+                  <p className="text-lg text-charcoal leading-relaxed">
                     <span className="font-bold">The cost of waiting compounds:</span> Every year you delay modernization, technical debt accumulates. Integration becomes harder. The gap between your capabilities and market expectations widens. The transformation that costs $2M today will cost $5M in three years.
                   </p>
                 </div>
                 
                 <div>
-                  <p className="text-lg text-[#1A1A1A] leading-relaxed">
+                  <p className="text-lg text-charcoal leading-relaxed">
                     <span className="font-bold">Cloud-native isn't optional anymore:</span> It's the baseline. Companies that can't scale elastically, deploy continuously, and recover instantly aren't competing—they're surviving. The question isn't whether to transform, but how fast you can get there.
                   </p>
                 </div>
@@ -179,7 +179,7 @@ export default function ScalableEnterpriseTransformation() {
       </section>
 
       {/* What's Your Transformation Ambition - Bain Hover Cards */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-white border-t border-gray-200">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-white border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -188,10 +188,10 @@ export default function ScalableEnterpriseTransformation() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-serif text-[#1A1A1A] mb-4">
+            <h2 className="text-3xl md:text-4xl font-serif text-charcoal mb-4">
               What's your transformation ambition?
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-muted-foreground max-w-2xl mx-auto">
               We've helped companies at every stage of the transformation journey—from those just starting to assess their technical debt to those ready to rebuild their entire platform. Where are you?
             </p>
           </motion.div>
@@ -232,7 +232,7 @@ export default function ScalableEnterpriseTransformation() {
       </section>
 
       {/* AI in Enterprise Technology Section */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-[#1A1A1A]">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Left Column - Content */}
@@ -246,30 +246,30 @@ export default function ScalableEnterpriseTransformation() {
                 AI in Enterprise Technology
               </h2>
               
-              <p className="text-gray-400 mb-8 leading-relaxed">
+              <p className="text-muted-foreground/70 mb-8 leading-relaxed">
                 AI is fundamentally changing how enterprise technology teams operate. From code generation to infrastructure optimization, the companies that figure out how to embed AI into their technology function will outpace those that don't. We help you move beyond pilots to production-scale AI that transforms how your team builds and operates:
               </p>
               
-              <ul className="space-y-4 text-gray-300">
+              <ul className="space-y-4 text-muted-foreground/50">
                 <li className="flex items-start">
-                  <span className="text-red-500 mr-3">•</span>
+                  <span className="text-destructive mr-3">•</span>
                   <span><strong className="text-white">AI-assisted development.</strong> Accelerate coding with intelligent assistants that understand your codebase, suggest improvements, and catch errors before they reach production.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-red-500 mr-3">•</span>
+                  <span className="text-destructive mr-3">•</span>
                   <span><strong className="text-white">Intelligent infrastructure.</strong> Deploy AI-powered monitoring that predicts failures, optimizes resource allocation, and automates routine maintenance tasks.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-red-500 mr-3">•</span>
+                  <span className="text-destructive mr-3">•</span>
                   <span><strong className="text-white">Automated testing.</strong> Generate comprehensive test suites, identify edge cases, and reduce QA cycles from weeks to days.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-red-500 mr-3">•</span>
+                  <span className="text-destructive mr-3">•</span>
                   <span><strong className="text-white">Security automation.</strong> Detect vulnerabilities, respond to threats, and maintain compliance with AI systems that learn from your environment.</span>
                 </li>
               </ul>
               
-              <Link href="/insights/ai-enterprise-technology" className="inline-flex items-center text-red-500 font-semibold mt-8 hover:text-red-400 transition-colors">
+              <Link href="/insights/ai-enterprise-technology" className="inline-flex items-center text-destructive font-semibold mt-8 hover:text-red-400 transition-colors">
                 How AI is transforming enterprise technology <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </motion.div>
@@ -299,10 +299,10 @@ export default function ScalableEnterpriseTransformation() {
               transition={{ duration: 0.6 }}
             >
               <h3 className="text-xl font-bold text-white mb-4">Real Outcomes</h3>
-              <p className="text-gray-400 mb-6 leading-relaxed">
+              <p className="text-muted-foreground/70 mb-6 leading-relaxed">
                 We've helped technology teams across healthcare, financial services, manufacturing, and professional services implement AI that delivers measurable productivity gains—from 40% faster development cycles to 60% reduction in infrastructure incidents.
               </p>
-              <Link href="/case-studies" className="inline-flex items-center text-white hover:text-gray-300 transition-colors">
+              <Link href="/case-studies" className="inline-flex items-center text-white hover:text-muted-foreground/50 transition-colors">
                 See how we're helping companies transform with AI <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </motion.div>
@@ -314,10 +314,10 @@ export default function ScalableEnterpriseTransformation() {
               transition={{ duration: 0.6, delay: 0.1 }}
             >
               <h3 className="text-xl font-bold text-white mb-4">How We Help</h3>
-              <p className="text-gray-400 mb-6 leading-relaxed">
+              <p className="text-muted-foreground/70 mb-6 leading-relaxed">
                 We help enterprise technology teams identify high-impact AI use cases, build the infrastructure to support them, and develop the skills to maintain them. Our approach focuses on production-ready implementations that deliver ROI within months, not years.
               </p>
-              <Link href="/capabilities/ai" className="inline-flex items-center text-white hover:text-gray-300 transition-colors">
+              <Link href="/capabilities/ai" className="inline-flex items-center text-white hover:text-muted-foreground/50 transition-colors">
                 Learn more about our AI approach <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </motion.div>
@@ -326,7 +326,7 @@ export default function ScalableEnterpriseTransformation() {
       </section>
 
       {/* How We Can Help - Bain Hover Cards */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-white border-t border-gray-200">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-white border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -335,7 +335,7 @@ export default function ScalableEnterpriseTransformation() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-serif text-[#1A1A1A] mb-4">
+            <h2 className="text-3xl md:text-4xl font-serif text-charcoal mb-4">
               How We Can Help
             </h2>
           </motion.div>
@@ -386,7 +386,7 @@ export default function ScalableEnterpriseTransformation() {
       </section>
 
       {/* A Closer Look - Two Column Insight Cards */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-[#F8F9FA] border-t border-gray-200">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-subtle border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -395,7 +395,7 @@ export default function ScalableEnterpriseTransformation() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-serif text-[#1A1A1A]">
+            <h2 className="text-3xl md:text-4xl font-serif text-charcoal">
               A Closer Look
             </h2>
           </motion.div>
@@ -421,14 +421,14 @@ export default function ScalableEnterpriseTransformation() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
               >
                 <Link href={insight.link}>
-                  <div className="bg-white border border-gray-200 p-8 h-full hover:border-gray-400 transition-colors group cursor-pointer">
-                    <h3 className="text-xl font-bold text-[#1A1A1A] mb-4 leading-tight group-hover:text-[#5B21B6] transition-colors">
+                  <div className="bg-white border border-border p-8 h-full hover:border-gray-400 transition-colors group cursor-pointer">
+                    <h3 className="text-xl font-bold text-charcoal mb-4 leading-tight group-hover:text-primary transition-colors">
                       {insight.title}
                     </h3>
-                    <p className="text-gray-600 mb-6 leading-relaxed">
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
                       {insight.description}
                     </p>
-                    <span className="inline-flex items-center text-[#1A1A1A] font-semibold">
+                    <span className="inline-flex items-center text-charcoal font-semibold">
                       <ArrowRight className="w-5 h-5" />
                     </span>
                   </div>
@@ -440,7 +440,7 @@ export default function ScalableEnterpriseTransformation() {
       </section>
 
       {/* Our Client Results - Tabbed Section */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-white border-t border-gray-200">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-white border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -449,7 +449,7 @@ export default function ScalableEnterpriseTransformation() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-serif text-[#1A1A1A]">
+            <h2 className="text-3xl md:text-4xl font-serif text-charcoal">
               Our Client Results in Enterprise Transformation
             </h2>
           </motion.div>
@@ -462,8 +462,8 @@ export default function ScalableEnterpriseTransformation() {
                 onClick={() => setActiveResultTab(i)}
                 className={`px-6 py-3 text-sm font-semibold transition-colors ${
                   activeResultTab === i 
-                    ? 'bg-[#1A1A1A] text-white' 
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    ? 'bg-charcoal text-white' 
+                    : 'bg-subtle text-muted-foreground hover:bg-muted'
                 }`}
               >
                 {result.tab}
@@ -487,16 +487,16 @@ export default function ScalableEnterpriseTransformation() {
               />
             </div>
             <div>
-              <span className="text-red-600 text-sm font-bold uppercase tracking-wider mb-3 block">
+              <span className="text-destructive text-sm font-bold uppercase tracking-wider mb-3 block">
                 {clientResults[activeResultTab].industry}
               </span>
-              <h3 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-4 leading-tight">
+              <h3 className="text-2xl md:text-3xl font-bold text-charcoal mb-4 leading-tight">
                 {clientResults[activeResultTab].title}
               </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-6 leading-relaxed">
                 {clientResults[activeResultTab].description}
               </p>
-              <Link href="/case-studies" className="inline-flex items-center text-red-600 font-semibold hover:text-red-700 transition-colors">
+              <Link href="/case-studies" className="inline-flex items-center text-destructive font-semibold hover:text-red-700 transition-colors">
                 Read the full story <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </div>
@@ -505,7 +505,7 @@ export default function ScalableEnterpriseTransformation() {
           {/* See More Button */}
           <div className="text-center mt-12">
             <Link href="/case-studies">
-              <Button variant="outline" className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-8 py-3">
+              <Button variant="outline" className="border-red-600 text-destructive hover:bg-red-600 hover:text-white px-8 py-3">
                 SEE MORE
               </Button>
             </Link>
@@ -514,7 +514,7 @@ export default function ScalableEnterpriseTransformation() {
       </section>
 
       {/* Our Insights Section */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-[#F8F9FA] border-t border-gray-200">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-subtle border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -523,7 +523,7 @@ export default function ScalableEnterpriseTransformation() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-serif text-[#1A1A1A]">
+            <h2 className="text-3xl md:text-4xl font-serif text-charcoal">
               Our Enterprise Transformation Insights
             </h2>
           </motion.div>
@@ -564,18 +564,18 @@ export default function ScalableEnterpriseTransformation() {
               >
                 <Link href={insight.link}>
                   <div className="group cursor-pointer h-full">
-                    <div className="aspect-[4/3] bg-gradient-to-br from-[#1E1B4B] to-[#5B21B6] mb-4 overflow-hidden">
+                    <div className="aspect-[4/3] bg-gradient-to-br from-base to-primary mb-4 overflow-hidden">
                       <div className="w-full h-full flex items-center justify-center">
                         <span className="text-white/20 text-4xl font-serif">{i + 1}</span>
                       </div>
                     </div>
-                    <span className="text-xs font-bold uppercase tracking-[0.15em] text-red-600 mb-2 block">
+                    <span className="text-xs font-bold uppercase tracking-[0.15em] text-destructive mb-2 block">
                       {insight.category}
                     </span>
-                    <h3 className="text-lg font-bold text-[#1A1A1A] mb-2 group-hover:text-[#5B21B6] transition-colors leading-tight">
+                    <h3 className="text-lg font-bold text-charcoal mb-2 group-hover:text-primary transition-colors leading-tight">
                       {insight.title}
                     </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-muted-foreground text-sm leading-relaxed">
                       {insight.description}
                     </p>
                   </div>
@@ -587,7 +587,7 @@ export default function ScalableEnterpriseTransformation() {
           {/* See More Button */}
           <div className="text-center mt-12">
             <Link href="/insights">
-              <Button variant="outline" className="border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-8 py-3">
+              <Button variant="outline" className="border-red-600 text-destructive hover:bg-red-600 hover:text-white px-8 py-3">
                 SEE MORE
               </Button>
             </Link>
@@ -596,7 +596,7 @@ export default function ScalableEnterpriseTransformation() {
       </section>
 
       {/* Consulting Services Link List */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-white border-t border-gray-200">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-white border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -605,7 +605,7 @@ export default function ScalableEnterpriseTransformation() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-serif text-[#1A1A1A]">
+            <h2 className="text-3xl md:text-4xl font-serif text-charcoal">
               Consulting Services
             </h2>
           </motion.div>
@@ -620,11 +620,11 @@ export default function ScalableEnterpriseTransformation() {
               { name: "Technology Strategy", link: "/capabilities/technology" }
             ].map((service, i) => (
               <Link key={i} href={service.link}>
-                <div className="flex items-center justify-between py-4 border-b border-gray-200 hover:border-gray-400 transition-colors group cursor-pointer">
-                  <span className="text-[#1A1A1A] font-medium group-hover:text-[#5B21B6] transition-colors">
+                <div className="flex items-center justify-between py-4 border-b border-border hover:border-gray-400 transition-colors group cursor-pointer">
+                  <span className="text-charcoal font-medium group-hover:text-primary transition-colors">
                     {service.name}
                   </span>
-                  <ArrowRight className="w-4 h-4 text-red-600" />
+                  <ArrowRight className="w-4 h-4 text-destructive" />
                 </div>
               </Link>
             ))}
@@ -633,7 +633,7 @@ export default function ScalableEnterpriseTransformation() {
       </section>
 
       {/* Ready to Talk CTA Section - Bain Style Two Column */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-[#F8F9FA] border-t border-gray-200">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-subtle border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <motion.div
@@ -642,10 +642,10 @@ export default function ScalableEnterpriseTransformation() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#1A1A1A] mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-charcoal mb-6">
                 Ready to talk?
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 We work with technology leaders who want to build infrastructure that enables growth, not constrains it. Together, we can design a transformation roadmap that delivers measurable results.
               </p>
             </motion.div>
@@ -657,7 +657,7 @@ export default function ScalableEnterpriseTransformation() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="space-y-6"
             >
-              <p className="text-gray-600">
+              <p className="text-muted-foreground">
                 Tell us about your transformation challenges and we'll connect you with the right experts.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -667,7 +667,7 @@ export default function ScalableEnterpriseTransformation() {
                   </Button>
                 </Link>
                 <Link href="/case-studies">
-                  <Button variant="outline" className="border-[#1A1A1A] text-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-white px-8 py-4 text-base font-semibold">
+                  <Button variant="outline" className="border-charcoal text-charcoal hover:bg-charcoal hover:text-white px-8 py-4 text-base font-semibold">
                     View Our Work
                   </Button>
                 </Link>

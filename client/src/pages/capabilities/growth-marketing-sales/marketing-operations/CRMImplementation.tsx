@@ -12,7 +12,7 @@ export default function CRMImplementation() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-[#0a0e3d] text-white pt-32 pb-20 px-4 relative overflow-hidden">
+      <section className="bg-base text-white pt-32 pb-20 px-4 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-20">
           <div className="absolute top-20 right-20 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
           <div className="absolute bottom-20 left-20 w-96 h-96 bg-indigo-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
@@ -37,8 +37,8 @@ export default function CRMImplementation() {
       {/* The Strategy Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto max-w-4xl px-4">
-          <div className="prose prose-lg max-w-none text-slate-600">
-            <h2 className="text-3xl font-bold text-[#0a0e3d] mb-6 eb-garamond">
+          <div className="prose prose-lg max-w-none text-muted-foreground">
+            <h2 className="text-3xl font-bold text-base mb-6 eb-garamond">
               Engineering the Perfect Sales Engine
             </h2>
             <p className="mb-6">
@@ -51,38 +51,38 @@ export default function CRMImplementation() {
 
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 mt-12">
             <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-slate-100">
-              <h3 className="text-xl font-bold text-[#0a0e3d] mb-4 flex items-center">
+              <h3 className="text-xl font-bold text-base mb-4 flex items-center">
                 <Users className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-blue-600" />
                 Adoption by Design
               </h3>
-              <p className="text-slate-600">
+              <p className="text-muted-foreground">
                 We build interfaces that sales professionals love. By prioritizing user experience and reducing administrative friction, we ensure high adoption rates and consistent data entry.
               </p>
             </div>
             <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-slate-100">
-              <h3 className="text-xl font-bold text-[#0a0e3d] mb-4 flex items-center">
+              <h3 className="text-xl font-bold text-base mb-4 flex items-center">
                 <Database className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-blue-600" />
                 Data Excellence
               </h3>
-              <p className="text-slate-600">
+              <p className="text-muted-foreground">
                 Reliable data is the foundation of good decision-making. We implement robust validation, enrichment, and governance protocols to ensure your CRM remains a pristine source of truth.
               </p>
             </div>
             <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-slate-100">
-              <h3 className="text-xl font-bold text-[#0a0e3d] mb-4 flex items-center">
+              <h3 className="text-xl font-bold text-base mb-4 flex items-center">
                 <Zap className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-blue-600" />
                 Intelligent Automation
               </h3>
-              <p className="text-slate-600">
+              <p className="text-muted-foreground">
                 We automate routine workflows—from lead routing to contract generation—allowing your team to focus entirely on high-value interactions and closing deals.
               </p>
             </div>
             <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-slate-100">
-              <h3 className="text-xl font-bold text-[#0a0e3d] mb-4 flex items-center">
+              <h3 className="text-xl font-bold text-base mb-4 flex items-center">
                 <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-blue-600" />
                 Enterprise Governance
               </h3>
-              <p className="text-slate-600">
+              <p className="text-muted-foreground">
                 We design secure, scalable permission structures that protect sensitive data while ensuring the right stakeholders have immediate access to critical information.
               </p>
             </div>
@@ -94,10 +94,10 @@ export default function CRMImplementation() {
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <h2 className="text-3xl font-bold text-[#0a0e3d] mb-4 eb-garamond">
+            <h2 className="text-3xl font-bold text-base mb-4 eb-garamond">
               Implementation Methodology
             </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               A structured, agile approach to deploying world-class revenue infrastructure.
             </p>
           </div>
@@ -129,8 +129,8 @@ export default function CRMImplementation() {
                 <div className="text-6xl font-bold text-slate-100 absolute -top-4 -right-4 select-none">
                   {item.step}
                 </div>
-                <h3 className="text-xl font-bold text-[#0a0e3d] mb-3 relative z-10">{item.title}</h3>
-                <p className="text-slate-600 text-sm relative z-10">{item.desc}</p>
+                <h3 className="text-xl font-bold text-base mb-3 relative z-10">{item.title}</h3>
+                <p className="text-muted-foreground text-sm relative z-10">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -140,10 +140,10 @@ export default function CRMImplementation() {
       {/* CTA */}
       <section className="py-20 bg-white border-t border-slate-100">
         <div className="container mx-auto max-w-4xl px-4 text-center">
-          <h2 className="text-3xl font-bold text-[#0a0e3d] mb-6 eb-garamond">
+          <h2 className="text-3xl font-bold text-base mb-6 eb-garamond">
             Architect Your Growth Engine
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-slate-600 mb-5 sm:mb-6 md:mb-8">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-5 sm:mb-6 md:mb-8">
             Partner with us to build a CRM foundation that scales with your ambition.
           </p>
           <Link href="/contact">

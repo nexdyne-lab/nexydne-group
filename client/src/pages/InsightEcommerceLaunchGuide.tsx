@@ -8,7 +8,7 @@ import { SEO } from "@/components/SEO";
 
 export default function InsightEcommerceLaunchGuide() {
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="E-commerce Launch Guide: Zero to Revenue in 90 Days | Insights" 
         description="A practical guide for launching e-commerce capabilities quickly and effectively, from platform selection to first revenue."
@@ -17,9 +17,9 @@ export default function InsightEcommerceLaunchGuide() {
       <Navigation />
       
       {/* DZ10 Hero Section */}
-      <section className="relative pt-32 pb-20 bg-[#051C2C] overflow-hidden">
+      <section className="relative pt-32 pb-20 bg-base overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#051C2C] via-[#0a2940] to-[#051C2C]" />
+          <div className="absolute inset-0 bg-gradient-to-br from-base via-base to-base" />
           <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-amber-500/10 to-transparent" />
         </div>
         
@@ -31,7 +31,7 @@ export default function InsightEcommerceLaunchGuide() {
             className="max-w-4xl"
           >
             <Link href="/solutions/accelerating-business-growth">
-              <span className="inline-flex items-center text-sm text-white/60 hover:text-[#0077B5] transition-colors mb-6 cursor-pointer">
+              <span className="inline-flex items-center text-sm text-white/60 hover:text-primary transition-colors mb-6 cursor-pointer">
                 <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
                 Back to Accelerating Business Growth
               </span>
@@ -81,12 +81,12 @@ export default function InsightEcommerceLaunchGuide() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="prose prose-lg max-w-none"
               >
-                <div className="text-[#051C2C]/80 leading-relaxed space-y-6">
-                  <p className="text-xl font-medium text-[#051C2C]">
+                <div className="text-charcoal/80 leading-relaxed space-y-6">
+                  <p className="text-xl font-medium text-charcoal">
                     Launching e-commerce doesn't have to take years or cost millions. With the right approach, you can go from zero to generating revenue in 90 days. This guide provides a practical, week-by-week roadmap based on our experience launching dozens of e-commerce initiatives.
                   </p>
 
-                  <h2 className="text-3xl font-serif font-bold text-[#051C2C] mt-12 mb-6">
+                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
                     The 90-day framework
                   </h2>
                   
@@ -94,18 +94,18 @@ export default function InsightEcommerceLaunchGuide() {
                     Our approach divides the launch into three phases: Foundation (weeks 1-4), Build (weeks 5-10), and Launch (weeks 11-12). Each phase has specific deliverables and decision points that keep the project on track.
                   </p>
 
-                  <div className="bg-[#F8F9FA] p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
-                    <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4">Why 90 Days?</h3>
-                    <p className="text-[#051C2C]/70 mb-0">
+                  <div className="bg-subtle p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
+                    <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Why 90 Days?</h3>
+                    <p className="text-charcoal/70 mb-0">
                       90 days is long enough to build something meaningful but short enough to maintain momentum and urgency. Longer timelines often lead to scope creep, analysis paralysis, and lost market opportunity. The constraint forces focus on what truly matters for launch.
                     </p>
                   </div>
 
-                  <h2 className="text-3xl font-serif font-bold text-[#051C2C] mt-12 mb-6">
+                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
                     Phase 1: Foundation (Weeks 1-4)
                   </h2>
 
-                  <h3 className="text-2xl font-serif font-bold text-[#051C2C] mt-8 mb-4">
+                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
                     Week 1: Strategy and requirements
                   </h3>
                   
@@ -122,13 +122,13 @@ export default function InsightEcommerceLaunchGuide() {
                   </ul>
 
                   <div className="bg-amber-50 border-l-4 border-amber-500 p-4 sm:p-5 md:p-6 my-8">
-                    <h4 className="font-bold text-[#051C2C] mb-2">Pro Tip</h4>
-                    <p className="text-[#051C2C]/70 mb-0 text-sm">
+                    <h4 className="font-bold text-charcoal mb-2">Pro Tip</h4>
+                    <p className="text-charcoal/70 mb-0 text-sm">
                       Don't try to replicate your entire product catalog online. Start with your top 20% of products that drive 80% of revenue. You can expand the catalog after launch based on customer demand.
                     </p>
                   </div>
 
-                  <h3 className="text-2xl font-serif font-bold text-[#051C2C] mt-8 mb-4">
+                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
                     Week 2: Platform selection
                   </h3>
                   
@@ -139,43 +139,43 @@ export default function InsightEcommerceLaunchGuide() {
                   <div className="overflow-x-auto my-8">
                     <table className="w-full border-collapse">
                       <thead>
-                        <tr className="bg-[#051C2C] text-white">
+                        <tr className="bg-base text-white">
                           <th className="p-4 text-left font-semibold">Platform</th>
                           <th className="p-4 text-left font-semibold">Best For</th>
                           <th className="p-4 text-left font-semibold">Timeline</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr className="border-b border-gray-200">
+                        <tr className="border-b border-border">
                           <td className="p-4 font-semibold">Shopify</td>
-                          <td className="p-4 text-[#051C2C]/70">B2C, simple catalog, fast launch</td>
-                          <td className="p-4 text-[#051C2C]/70">4-8 weeks</td>
+                          <td className="p-4 text-charcoal/70">B2C, simple catalog, fast launch</td>
+                          <td className="p-4 text-charcoal/70">4-8 weeks</td>
                         </tr>
-                        <tr className="border-b border-gray-200 bg-gray-50">
+                        <tr className="border-b border-border bg-subtle">
                           <td className="p-4 font-semibold">Shopify Plus</td>
-                          <td className="p-4 text-[#051C2C]/70">High-volume B2C, customization needs</td>
-                          <td className="p-4 text-[#051C2C]/70">6-10 weeks</td>
+                          <td className="p-4 text-charcoal/70">High-volume B2C, customization needs</td>
+                          <td className="p-4 text-charcoal/70">6-10 weeks</td>
                         </tr>
-                        <tr className="border-b border-gray-200">
+                        <tr className="border-b border-border">
                           <td className="p-4 font-semibold">BigCommerce</td>
-                          <td className="p-4 text-[#051C2C]/70">B2B features, complex pricing</td>
-                          <td className="p-4 text-[#051C2C]/70">8-12 weeks</td>
+                          <td className="p-4 text-charcoal/70">B2B features, complex pricing</td>
+                          <td className="p-4 text-charcoal/70">8-12 weeks</td>
                         </tr>
-                        <tr className="border-b border-gray-200 bg-gray-50">
+                        <tr className="border-b border-border bg-subtle">
                           <td className="p-4 font-semibold">WooCommerce</td>
-                          <td className="p-4 text-[#051C2C]/70">WordPress integration, flexibility</td>
-                          <td className="p-4 text-[#051C2C]/70">6-10 weeks</td>
+                          <td className="p-4 text-charcoal/70">WordPress integration, flexibility</td>
+                          <td className="p-4 text-charcoal/70">6-10 weeks</td>
                         </tr>
                         <tr>
                           <td className="p-4 font-semibold">Custom</td>
-                          <td className="p-4 text-[#051C2C]/70">Unique requirements, full control</td>
-                          <td className="p-4 text-[#051C2C]/70">12-20+ weeks</td>
+                          <td className="p-4 text-charcoal/70">Unique requirements, full control</td>
+                          <td className="p-4 text-charcoal/70">12-20+ weeks</td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
 
-                  <h3 className="text-2xl font-serif font-bold text-[#051C2C] mt-8 mb-4">
+                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
                     Weeks 3-4: Design and planning
                   </h3>
                   
@@ -191,11 +191,11 @@ export default function InsightEcommerceLaunchGuide() {
                     <li>Set up project management and communication tools</li>
                   </ul>
 
-                  <h2 className="text-3xl font-serif font-bold text-[#051C2C] mt-12 mb-6">
+                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
                     Phase 2: Build (Weeks 5-10)
                   </h2>
 
-                  <h3 className="text-2xl font-serif font-bold text-[#051C2C] mt-8 mb-4">
+                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
                     Weeks 5-6: Core platform setup
                   </h3>
                   
@@ -211,7 +211,7 @@ export default function InsightEcommerceLaunchGuide() {
                     <li>Configure tax calculation</li>
                   </ul>
 
-                  <h3 className="text-2xl font-serif font-bold text-[#051C2C] mt-8 mb-4">
+                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
                     Weeks 7-8: Product catalog and content
                   </h3>
                   
@@ -227,7 +227,7 @@ export default function InsightEcommerceLaunchGuide() {
                     <li>Add trust signals (reviews, security badges, guarantees)</li>
                   </ul>
 
-                  <div className="bg-[#051C2C] text-white p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
+                  <div className="bg-base text-white p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
                     <h3 className="text-xl font-serif font-bold mb-4">Content That Converts</h3>
                     <p className="text-white/80 mb-4">
                       Product pages are your sales team online. Invest in:
@@ -252,7 +252,7 @@ export default function InsightEcommerceLaunchGuide() {
                     </ul>
                   </div>
 
-                  <h3 className="text-2xl font-serif font-bold text-[#051C2C] mt-8 mb-4">
+                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
                     Weeks 9-10: Integrations and testing
                   </h3>
                   
@@ -269,11 +269,11 @@ export default function InsightEcommerceLaunchGuide() {
                     <li>Load testing if expecting significant traffic</li>
                   </ul>
 
-                  <h2 className="text-3xl font-serif font-bold text-[#051C2C] mt-12 mb-6">
+                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
                     Phase 3: Launch (Weeks 11-12)
                   </h2>
 
-                  <h3 className="text-2xl font-serif font-bold text-[#051C2C] mt-8 mb-4">
+                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
                     Week 11: Soft launch
                   </h3>
                   
@@ -289,7 +289,7 @@ export default function InsightEcommerceLaunchGuide() {
                     <li>Finalize launch marketing materials</li>
                   </ul>
 
-                  <h3 className="text-2xl font-serif font-bold text-[#051C2C] mt-8 mb-4">
+                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
                     Week 12: Public launch
                   </h3>
                   
@@ -305,7 +305,7 @@ export default function InsightEcommerceLaunchGuide() {
                     <li>Be ready to respond quickly to issues</li>
                   </ul>
 
-                  <h2 className="text-3xl font-serif font-bold text-[#051C2C] mt-12 mb-6">
+                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
                     Post-launch: The first 30 days
                   </h2>
                   
@@ -320,17 +320,17 @@ export default function InsightEcommerceLaunchGuide() {
                       { icon: <Globe className="w-5 h-5 sm:w-6 sm:h-6" />, title: "Optimize Conversion", desc: "A/B test headlines, images, and CTAs to improve conversion" },
                       { icon: <ShoppingCart className="w-5 h-5 sm:w-6 sm:h-6" />, title: "Reduce Abandonment", desc: "Implement abandoned cart emails and exit-intent offers" }
                     ].map((item, index) => (
-                      <div key={index} className="bg-[#F8F9FA] p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl">
+                      <div key={index} className="bg-subtle p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl">
                         <div className="w-10 h-10 bg-amber-500/10 text-amber-600 rounded-lg flex items-center justify-center mb-4">
                           {item.icon}
                         </div>
-                        <h4 className="font-bold text-[#051C2C] mb-2">{item.title}</h4>
-                        <p className="text-sm text-[#051C2C]/60 mb-0">{item.desc}</p>
+                        <h4 className="font-bold text-charcoal mb-2">{item.title}</h4>
+                        <p className="text-sm text-charcoal/60 mb-0">{item.desc}</p>
                       </div>
                     ))}
                   </div>
 
-                  <h2 className="text-3xl font-serif font-bold text-[#051C2C] mt-12 mb-6">
+                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
                     Common pitfalls to avoid
                   </h2>
                   
@@ -343,7 +343,7 @@ export default function InsightEcommerceLaunchGuide() {
                     <li><strong>Underestimating fulfillment:</strong> Test your fulfillment process before launch.</li>
                   </ul>
 
-                  <h2 className="text-3xl font-serif font-bold text-[#051C2C] mt-12 mb-6">
+                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
                     Conclusion
                   </h2>
                   
@@ -363,7 +363,7 @@ export default function InsightEcommerceLaunchGuide() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="mt-16 p-4 sm:p-6 md:p-8 bg-[#F8F9FA] rounded-lg sm:rounded-xl"
+                className="mt-16 p-4 sm:p-6 md:p-8 bg-subtle rounded-lg sm:rounded-xl"
               >
                 <h3 className="text-lg font-serif font-bold mb-4">About the Author</h3>
                 <div className="flex items-start gap-4">
@@ -371,9 +371,9 @@ export default function InsightEcommerceLaunchGuide() {
                     NG
                   </div>
                   <div>
-                    <p className="font-bold text-[#051C2C]">NEXDYNE Growth Practice</p>
-                    <p className="text-[#051C2C]/60 text-sm mb-3">E-Commerce & Digital Growth</p>
-                    <p className="text-[#051C2C]/70 text-sm">
+                    <p className="font-bold text-charcoal">NEXDYNE Growth Practice</p>
+                    <p className="text-charcoal/60 text-sm mb-3">E-Commerce & Digital Growth</p>
+                    <p className="text-charcoal/70 text-sm">
                       Our Growth Practice has launched dozens of e-commerce initiatives for mid-market companies, consistently delivering results in 90 days or less.
                     </p>
                   </div>
@@ -389,17 +389,17 @@ export default function InsightEcommerceLaunchGuide() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.3 }}
-                  className="bg-[#F8F9FA] p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
+                  className="bg-subtle p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
                 >
-                  <h3 className="text-sm font-bold uppercase tracking-wider text-[#051C2C]/60 mb-4">Share this article</h3>
+                  <h3 className="text-sm font-bold uppercase tracking-wider text-charcoal/60 mb-4">Share this article</h3>
                   <div className="flex gap-3">
-                    <button className="w-10 h-10 bg-[#0077B5] text-white rounded-lg flex items-center justify-center hover:bg-[#005a8c] transition-colors">
+                    <button className="w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center hover:bg-primary/90 transition-colors">
                       <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                     </button>
-                    <button className="w-10 h-10 bg-[#1DA1F2] text-white rounded-lg flex items-center justify-center hover:bg-[#0d8bd9] transition-colors">
+                    <button className="w-10 h-10 bg-[#1DA1F2] text-white rounded-lg flex items-center justify-center hover:bg-base transition-colors">
                       <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
                     </button>
-                    <button className="w-10 h-10 bg-[#4267B2] text-white rounded-lg flex items-center justify-center hover:bg-[#365899] transition-colors">
+                    <button className="w-10 h-10 bg-[#4267B2] text-white rounded-lg flex items-center justify-center hover:bg-[#4267B2] transition-colors">
                       <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
                     </button>
                   </div>
@@ -410,7 +410,7 @@ export default function InsightEcommerceLaunchGuide() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
-                  className="bg-[#051C2C] text-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
+                  className="bg-base text-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
                 >
                   <h3 className="text-sm font-bold uppercase tracking-wider text-white/60 mb-4">90-Day Timeline</h3>
                   <ul className="space-y-3">
@@ -433,24 +433,24 @@ export default function InsightEcommerceLaunchGuide() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.5 }}
-                  className="bg-[#F8F9FA] p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
+                  className="bg-subtle p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
                 >
-                  <h3 className="text-sm font-bold uppercase tracking-wider text-[#051C2C]/60 mb-4">Related Reading</h3>
+                  <h3 className="text-sm font-bold uppercase tracking-wider text-charcoal/60 mb-4">Related Reading</h3>
                   <div className="space-y-4">
                     <Link href="/insights/digital-channels-growth">
                       <div className="group cursor-pointer">
-                        <p className="font-semibold text-[#051C2C] group-hover:text-[#0077B5] transition-colors text-sm">
+                        <p className="font-semibold text-charcoal group-hover:text-primary transition-colors text-sm">
                           Digital channels driving revenue growth
                         </p>
-                        <p className="text-xs text-[#051C2C]/60 mt-1">12 min read</p>
+                        <p className="text-xs text-charcoal/60 mt-1">12 min read</p>
                       </div>
                     </Link>
                     <Link href="/insights/subscription-economy-playbook">
                       <div className="group cursor-pointer">
-                        <p className="font-semibold text-[#051C2C] group-hover:text-[#0077B5] transition-colors text-sm">
+                        <p className="font-semibold text-charcoal group-hover:text-primary transition-colors text-sm">
                           The subscription economy playbook
                         </p>
-                        <p className="text-xs text-[#051C2C]/60 mt-1">8 min read</p>
+                        <p className="text-xs text-charcoal/60 mt-1">8 min read</p>
                       </div>
                     </Link>
                   </div>

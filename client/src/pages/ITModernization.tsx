@@ -83,7 +83,7 @@ export default function ITModernization() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#051C2C] font-sans text-white selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
       <SEO 
         title="IT Modernization" 
         description="Upgrade your IT infrastructure and accelerate your organization with modern, cloud-native architectures."
@@ -99,8 +99,8 @@ export default function ITModernization() {
             alt="IT Modernization" 
             className="w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#051C2C] via-[#051C2C]/80 to-[#051C2C]/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#051C2C] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/80 to-base/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent" />
         </div>
         
         <div className="container px-4 sm:px-6 md:px-12 relative z-10">
@@ -116,7 +116,7 @@ export default function ITModernization() {
             
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold tracking-tight text-white leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               IT <br />
-              <span className="text-[#0077B5]">Modernization</span>
+              <span className="text-primary">Modernization</span>
             </h1>
             
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
@@ -125,7 +125,7 @@ export default function ITModernization() {
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-[#0077B5] hover:bg-[#005a8c] text-white px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-[#0077B5]/20">
+                <Button className="bg-primary hover:bg-primary/90 text-white px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-primary/20">
                   Start Modernization
                 </Button>
               </Link>
@@ -140,7 +140,7 @@ export default function ITModernization() {
       </section>
 
       {/* DZ10 Benefits Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -149,10 +149,10 @@ export default function ITModernization() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Why Modernize
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#051C2C] mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-charcoal mb-6">
               Transform your technology landscape
             </h2>
           </motion.div>
@@ -188,16 +188,16 @@ export default function ITModernization() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group"
               >
-                <div className="p-4 sm:p-6 md:p-8 bg-[#051C2C]/5 rounded-lg sm:rounded-xl hover:bg-[#051C2C] transition-all duration-500 hover:scale-[1.02] hover:shadow-xl h-full">
-                  <div className="mb-6 p-3 bg-[#0077B5]/10 w-fit rounded-lg text-[#0077B5] group-hover:bg-[#0077B5] group-hover:text-white transition-all duration-300">
+                <div className="p-4 sm:p-6 md:p-8 bg-base/5 rounded-lg sm:rounded-xl hover:bg-base transition-all duration-500 hover:scale-[1.02] hover:shadow-xl h-full">
+                  <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
                     {item.icon}
                   </div>
                   
-                  <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 group-hover:text-white transition-colors">
+                  <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-white transition-colors">
                     {item.title}
                   </h3>
                   
-                  <p className="text-[#051C2C]/60 leading-relaxed text-sm group-hover:text-white/70 transition-colors">
+                  <p className="text-charcoal/60 leading-relaxed text-sm group-hover:text-white/70 transition-colors">
                     {item.description}
                   </p>
                 </div>
@@ -208,7 +208,7 @@ export default function ITModernization() {
       </section>
 
       {/* DZ10 Legacy Trap Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid md:grid-cols-2 gap-16 lg:gap-8 sm:gap-6 sm:p-6 sm:p-8 md:p-12 lg:gap-8 sm:gap-6 sm:p-8 md:p-12 lg:gap-24 items-center">
             <motion.div
@@ -221,7 +221,7 @@ export default function ITModernization() {
                 Understanding IT Modernization
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-5 sm:mb-6 md:mb-8">
-                The <span className="text-[#0077B5]">legacy trap</span>
+                The <span className="text-primary">legacy trap</span>
               </h2>
               
               <div className="space-y-6 text-lg text-white/70 leading-relaxed">
@@ -249,7 +249,7 @@ export default function ITModernization() {
                   "Our 15-year-old ERP system was costing us $200K annually in maintenance and preventing us from launching new products. Modernization cut our IT costs in half and reduced our product launch cycle from 9 months to 6 weeks."
                 </p>
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-[#0077B5] rounded-full flex items-center justify-center text-white font-bold">
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
                     CTO
                   </div>
                   <div>
@@ -264,7 +264,7 @@ export default function ITModernization() {
       </section>
 
       {/* DZ10 Offerings Grid */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -273,13 +273,13 @@ export default function ITModernization() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Our Capabilities
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#051C2C] mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-charcoal mb-6">
               Modernization services
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               Comprehensive IT transformation capabilities to future-proof your technology landscape.
             </p>
           </motion.div>
@@ -331,20 +331,20 @@ export default function ITModernization() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={item.link} className="group block h-full">
-                  <div className="h-full flex flex-col p-4 sm:p-6 md:p-8 bg-[#051C2C]/5 rounded-lg sm:rounded-xl hover:bg-[#051C2C] transition-all duration-500 hover:scale-[1.02] hover:shadow-xl">
-                    <div className="mb-6 p-3 bg-[#0077B5]/10 w-fit rounded-lg text-[#0077B5] group-hover:bg-[#0077B5] group-hover:text-white transition-all duration-300">
+                  <div className="h-full flex flex-col p-4 sm:p-6 md:p-8 bg-base/5 rounded-lg sm:rounded-xl hover:bg-base transition-all duration-500 hover:scale-[1.02] hover:shadow-xl">
+                    <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
                       {item.icon}
                     </div>
                     
-                    <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 group-hover:text-white transition-colors">
+                    <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-white transition-colors">
                       {item.title}
                     </h3>
                     
-                    <p className="text-[#051C2C]/60 leading-relaxed text-sm flex-grow group-hover:text-white/70 transition-colors">
+                    <p className="text-charcoal/60 leading-relaxed text-sm flex-grow group-hover:text-white/70 transition-colors">
                       {item.description}
                     </p>
                     
-                    <div className="mt-6 flex items-center text-[#0077B5] text-sm font-semibold opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                    <div className="mt-6 flex items-center text-primary text-sm font-semibold opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
                       Learn more <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4" />
                     </div>
                   </div>
@@ -356,7 +356,7 @@ export default function ITModernization() {
       </section>
 
       {/* DZ10 Case Studies Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 sm:mb-12 md:mb-16 gap-4 sm:p-5 md:p-6">
             <motion.div
@@ -417,10 +417,10 @@ export default function ITModernization() {
                       alt={study.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
+                    <div className="absolute inset-0 bg-charcoal/20 group-hover:bg-transparent transition-colors duration-500" />
                   </div>
-                  <div className="text-[#0077B5] text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
-                  <h3 className="text-xl font-serif font-bold text-white mb-2 group-hover:text-[#0077B5] transition-colors leading-tight">
+                  <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
+                  <h3 className="text-xl font-serif font-bold text-white mb-2 group-hover:text-primary transition-colors leading-tight">
                     {study.title}
                   </h3>
                   <p className="text-white/60 text-sm mb-4">{study.description}</p>
@@ -435,7 +435,7 @@ export default function ITModernization() {
       </section>
 
       {/* Tech Stack Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -444,10 +444,10 @@ export default function ITModernization() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Technology Partners
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#051C2C] mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-charcoal mb-6">
               Modernization technology stack
             </h2>
           </motion.div>
@@ -460,7 +460,7 @@ export default function ITModernization() {
       </section>
 
       {/* Readiness Assessment */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -489,7 +489,7 @@ export default function ITModernization() {
       </section>
 
       {/* Related Capabilities Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -538,15 +538,15 @@ export default function ITModernization() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={capability.link} className="group block h-full">
-                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-[#0077B5]/50 transition-all duration-300 hover:bg-white/10">
-                    <div className="text-[#0077B5] text-xs font-bold uppercase tracking-[0.15em] mb-2">{capability.title}</div>
-                    <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-[#0077B5] transition-colors">
+                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300 hover:bg-white/10">
+                    <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-2">{capability.title}</div>
+                    <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors">
                       {capability.subtitle}
                     </h3>
                     <p className="text-white/60 leading-relaxed text-sm mb-6">
                       {capability.description}
                     </p>
-                    <div className="flex items-center text-[#0077B5] text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                    <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                       Explore capability <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4" />
                     </div>
                   </div>

@@ -9,7 +9,7 @@ export default function GlobalRetailer() {
     <div className="min-h-screen bg-white">
       <Navigation />
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-red-900 via-red-700 to-[#5B7FFF] text-white py-20">
+      <section className="bg-gradient-to-br from-red-900 via-red-700 to-secondary text-white py-20">
         <div className="container">
           <Link href="/cases">
             <Button variant="ghost" className="text-white hover:bg-white/10 mb-8">
@@ -36,10 +36,10 @@ export default function GlobalRetailer() {
       <section className="py-20">
         <div className="container max-w-4xl">
           <h2 className="text-4xl font-bold mb-6">The Challenge</h2>
-          <p className="text-lg text-slate-700 leading-relaxed mb-6">
+          <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
             A multinational retail chain with 200+ locations was drowning in manual order processing. Their procurement team spent 40+ hours weekly transferring data between their legacy ERP system, supplier portals, and inventory management platform. Each order required manual entry across three systems, creating bottlenecks that delayed restocking and frustrated store managers.
           </p>
-          <p className="text-lg text-slate-700 leading-relaxed">
+          <p className="text-lg text-charcoal/80 leading-relaxed">
             The manual process introduced errors that cascaded through the supply chain—incorrect quantities, wrong SKUs, duplicate orders. These mistakes cost the company $2M+ annually in expedited shipping fees, stockouts, and excess inventory. Traditional integration wasn't viable because their ERP system was scheduled for replacement within 18 months, making API development economically unjustifiable.
           </p>
         </div>
@@ -49,14 +49,14 @@ export default function GlobalRetailer() {
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl">
           <h2 className="text-4xl font-bold mb-6">The Solution</h2>
-          <p className="text-lg text-slate-700 leading-relaxed mb-6">
+          <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
             NEXDYNE deployed UiPath RPA bots that automated the entire order-to-inventory workflow. The bots logged into each system, extracted order data, validated quantities against inventory levels, and submitted purchase orders to suppliers—executing in minutes what previously took hours of manual work.
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 my-12">
             <div className="bg-white p-8 rounded-lg border border-slate-200">
               <h3 className="text-2xl font-bold mb-4">Implementation Approach</h3>
-              <ul className="space-y-3 text-slate-700">
+              <ul className="space-y-3 text-charcoal/80">
                 <li className="flex items-start">
                   <ArrowRight className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
                   <span>Process discovery workshops with procurement team</span>
@@ -78,7 +78,7 @@ export default function GlobalRetailer() {
 
             <div className="bg-white p-8 rounded-lg border border-slate-200">
               <h3 className="text-2xl font-bold mb-4">Technical Details</h3>
-              <ul className="space-y-3 text-slate-700">
+              <ul className="space-y-3 text-charcoal/80">
                 <li className="flex items-start">
                   <ArrowRight className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
                   <span>UiPath Studio for bot development</span>
@@ -109,21 +109,21 @@ export default function GlobalRetailer() {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
               <div className="text-5xl font-bold text-blue-500 mb-2">45%</div>
-              <div className="text-lg text-slate-600">Reduction in processing time</div>
+              <div className="text-lg text-muted-foreground">Reduction in processing time</div>
             </div>
             <div className="text-center">
               <div className="text-5xl font-bold text-blue-500 mb-2">60%</div>
-              <div className="text-lg text-slate-600">Decrease in order errors</div>
+              <div className="text-lg text-muted-foreground">Decrease in order errors</div>
             </div>
             <div className="text-center">
               <div className="text-5xl font-bold text-blue-500 mb-2">$1.8M</div>
-              <div className="text-lg text-slate-600">Annual cost savings</div>
+              <div className="text-lg text-muted-foreground">Annual cost savings</div>
             </div>
           </div>
 
           <div className="bg-blue-50 p-8 rounded-lg">
             <h3 className="text-2xl font-bold mb-4">Business Impact</h3>
-            <ul className="space-y-3 text-slate-700">
+            <ul className="space-y-3 text-charcoal/80">
               <li className="flex items-start">
                 <ArrowRight className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
                 <span><strong>Procurement team productivity:</strong> Freed 40 hours weekly for strategic supplier negotiations and vendor relationship management</span>
@@ -146,10 +146,10 @@ export default function GlobalRetailer() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#2D5BFF] via-[#4169FF] to-[#5B7FFF] text-white">
+      <section className="py-20 bg-gradient-to-br from-primary via-primary to-secondary text-white">
         <div className="container text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to transform your operations?</h2>
-          <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground/50 mb-8 max-w-2xl mx-auto">
             Let's discuss how RPA can eliminate manual work and accelerate execution in your organization.
           </p>
           <div className="flex gap-4 justify-center">

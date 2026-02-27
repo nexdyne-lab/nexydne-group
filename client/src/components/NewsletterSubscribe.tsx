@@ -40,11 +40,11 @@ export default function NewsletterSubscribe() {
       <div className="max-w-2xl mx-auto text-center">
         <div className="flex items-center justify-center gap-2 mb-4">
           <Mail className="w-6 h-6 text-orange-500" />
-          <h3 className="text-2xl font-bold text-slate-900">
+          <h3 className="text-2xl font-bold text-charcoal">
             Subscribe to Insights
           </h3>
         </div>
-        <p className="text-slate-600 mb-6">
+        <p className="text-muted-foreground mb-6">
           Get the latest articles on intelligent automation, AI agents, and process optimization delivered to your inbox. No spam, unsubscribe anytime.
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
@@ -64,7 +64,7 @@ export default function NewsletterSubscribe() {
             {isLoading ? "Subscribing..." : "Subscribe"}
           </Button>
         </form>
-        <p className="text-xs text-slate-500 mt-4">
+        <p className="text-xs text-muted-foreground mt-4">
           By subscribing, you agree to receive marketing communications from NEXDYNE TECHNOLOGIES. You can unsubscribe at any time.
         </p>
       </div>

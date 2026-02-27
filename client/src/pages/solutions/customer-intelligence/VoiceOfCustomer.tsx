@@ -36,7 +36,7 @@ export default function VoiceOfCustomer() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Voice of Customer Programs" 
         description="Capture, analyze, and act on customer feedback across every channel to drive product innovation and service excellence."
@@ -45,7 +45,7 @@ export default function VoiceOfCustomer() {
       <Navigation />
 
       {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-black">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -64,7 +64,7 @@ export default function VoiceOfCustomer() {
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
                   Request a Consultation
                 </Button>
               </Link>
@@ -92,7 +92,7 @@ export default function VoiceOfCustomer() {
       </section>
 
       {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -101,7 +101,7 @@ export default function VoiceOfCustomer() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl eb-garamond font-bold text-[#051C2C]">Our Experience & Impact</h2>
+            <h2 className="text-2xl eb-garamond font-bold text-charcoal">Our Experience & Impact</h2>
           </motion.div>
           
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
@@ -117,8 +117,8 @@ export default function VoiceOfCustomer() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -134,7 +134,7 @@ export default function VoiceOfCustomer() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               In today's competitive landscape, understanding your customer is no longer a luxury—it's the core driver of sustainable growth. A Voice of the Customer (VoC) program is your strategic framework for systematically gathering, analyzing, and acting upon customer feedback. It moves beyond passive listening to create a proactive, organization-wide dialogue that informs everything from product development to service delivery.
             </motion.p>
@@ -144,7 +144,7 @@ export default function VoiceOfCustomer() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               By integrating feedback from every touchpoint—surveys, reviews, social media, call center interactions, and more—you gain an unparalleled, real-time understanding of customer sentiment and expectations. This holistic view enables you to identify unmet needs, anticipate market shifts, and resolve issues before they escalate. A successful VoC program transforms customer feedback from raw data into your most valuable strategic asset.
             </motion.p>
@@ -161,13 +161,13 @@ export default function VoiceOfCustomer() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Our Voice of Customer Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               We help you build and optimize a world-class VoC program that delivers measurable results.
             </p>
           </motion.div>
@@ -214,7 +214,7 @@ export default function VoiceOfCustomer() {
       </section>
 
       {/* Section 5: Our Approach */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#051C2C] text-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -224,7 +224,7 @@ export default function VoiceOfCustomer() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl eb-garamond font-bold mb-4">
-              Our Approach to <span className="text-[#00d4ff]">Customer-Centricity</span>
+              Our Approach to <span className="text-secondary">Customer-Centricity</span>
             </h2>
             <p className="text-lg text-white/60 max-w-3xl mx-auto">
               Our methodology ensures your VoC program is not just a listening post, but a powerful engine for business transformation.
@@ -262,7 +262,7 @@ export default function VoiceOfCustomer() {
       </section>
 
       {/* Section 6: Case Studies */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#051C2C] text-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -315,14 +315,14 @@ export default function VoiceOfCustomer() {
       </section>
 
       {/* Section 7: Related Capabilities */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-[#f8f8f7]">
+      <section className="py-12 sm:py-16 lg:py-20 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl font-serif font-bold text-center mb-12 text-[#051C2C]"
+            className="text-3xl font-serif font-bold text-center mb-12 text-charcoal"
           >
             Expand Your Customer Intelligence
           </motion.h2>
@@ -334,12 +334,12 @@ export default function VoiceOfCustomer() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white p-8 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow duration-300"
+                className="bg-white p-8 rounded-lg border border-border hover:shadow-lg transition-shadow duration-300"
               >
                 <Link href={capability.link}>
-                  <h3 className="text-xl font-bold text-[#051C2C] mb-3">{capability.title}</h3>
-                  <p className="text-[#051C2C]/60 mb-4">{capability.description}</p>
-                  <span className="text-[#0077B5] font-semibold flex items-center">Explore <ArrowRight className="ml-2 w-4 h-4" /></span>
+                  <h3 className="text-xl font-bold text-charcoal mb-3">{capability.title}</h3>
+                  <p className="text-charcoal/60 mb-4">{capability.description}</p>
+                  <span className="text-primary font-semibold flex items-center">Explore <ArrowRight className="ml-2 w-4 h-4" /></span>
                 </Link>
               </motion.div>
             ))}
@@ -348,7 +348,7 @@ export default function VoiceOfCustomer() {
       </section>
 
       {/* Section 8: CTA Section */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-[#0077B5] text-white">
+      <section className="py-16 sm:py-20 lg:py-24 bg-primary text-white">
         <div className="container px-4 sm:px-6 md:px-12 text-center">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -375,7 +375,7 @@ export default function VoiceOfCustomer() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <Link href="/contact">
-              <Button className="bg-white hover:bg-gray-200 text-black px-10 py-7 text-lg font-semibold transition-all">
+              <Button className="bg-white hover:bg-muted text-charcoal px-10 py-7 text-lg font-semibold transition-all">
                 Contact Us
               </Button>
             </Link>

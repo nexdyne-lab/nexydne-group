@@ -108,7 +108,7 @@ export default function LeadsDashboard() {
 
   const getScoreBadge = (score: number | null) => {
     const s = score || 0;
-    if (s >= 70) return <Badge className="bg-green-500 hover:bg-green-600">High Intent ({s})</Badge>;
+    if (s >= 70) return <Badge className="bg-secondary/100 hover:bg-green-600">High Intent ({s})</Badge>;
     if (s >= 40) return <Badge className="bg-yellow-500 hover:bg-yellow-600">Medium ({s})</Badge>;
     return <Badge variant="secondary">Standard ({s})</Badge>;
   };
@@ -132,7 +132,7 @@ export default function LeadsDashboard() {
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center p-4">
         <Card className="max-w-md w-full">
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl text-red-600">Access Denied</CardTitle>
+            <CardTitle className="text-2xl text-destructive">Access Denied</CardTitle>
             <CardDescription>
               You need admin privileges to access this dashboard.
             </CardDescription>
@@ -164,8 +164,8 @@ export default function LeadsDashboard() {
                 </Button>
               </Link>
               <div>
-                <h1 className="text-2xl font-bold text-slate-900">Lead Management</h1>
-                <p className="text-sm text-slate-500">Track and export captured leads</p>
+                <h1 className="text-2xl font-bold text-charcoal">Lead Management</h1>
+                <p className="text-sm text-muted-foreground">Track and export captured leads</p>
               </div>
             </div>
             <Button onClick={handleExport} disabled={exportMutation.isFetching}>
@@ -181,27 +181,27 @@ export default function LeadsDashboard() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
-              <CardTitle className="text-sm font-medium text-slate-500">Total Leads</CardTitle>
-              <Users className="w-4 h-4 text-slate-400" />
+              <CardTitle className="text-sm font-medium text-muted-foreground">Total Leads</CardTitle>
+              <Users className="w-4 h-4 text-muted-foreground/70" />
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-slate-900">
+              <div className="text-3xl font-bold text-charcoal">
                 {statsLoading ? "..." : stats?.totalLeads || 0}
               </div>
-              <p className="text-xs text-slate-500 mt-1">All time</p>
+              <p className="text-xs text-muted-foreground mt-1">All time</p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
-              <CardTitle className="text-sm font-medium text-slate-500">This Week</CardTitle>
-              <Calendar className="w-4 h-4 text-slate-400" />
+              <CardTitle className="text-sm font-medium text-muted-foreground">This Week</CardTitle>
+              <Calendar className="w-4 h-4 text-muted-foreground/70" />
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-blue-600">
                 {statsLoading ? "..." : stats?.leadsThisWeek || 0}
               </div>
-              <p className="text-xs text-slate-500 mt-1">
+              <p className="text-xs text-muted-foreground mt-1">
                 {stats?.leadsToday || 0} today
               </p>
             </CardContent>
@@ -209,27 +209,27 @@ export default function LeadsDashboard() {
 
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
-              <CardTitle className="text-sm font-medium text-slate-500">This Month</CardTitle>
-              <TrendingUp className="w-4 h-4 text-slate-400" />
+              <CardTitle className="text-sm font-medium text-muted-foreground">This Month</CardTitle>
+              <TrendingUp className="w-4 h-4 text-muted-foreground/70" />
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-green-600">
+              <div className="text-3xl font-bold text-secondary">
                 {statsLoading ? "..." : stats?.leadsThisMonth || 0}
               </div>
-              <p className="text-xs text-slate-500 mt-1">New leads</p>
+              <p className="text-xs text-muted-foreground mt-1">New leads</p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
-              <CardTitle className="text-sm font-medium text-slate-500">Avg Lead Score</CardTitle>
-              <Star className="w-4 h-4 text-slate-400" />
+              <CardTitle className="text-sm font-medium text-muted-foreground">Avg Lead Score</CardTitle>
+              <Star className="w-4 h-4 text-muted-foreground/70" />
             </CardHeader>
             <CardContent>
               <div className="text-3xl font-bold text-amber-600">
                 {statsLoading ? "..." : stats?.avgLeadScore || 0}
               </div>
-              <p className="text-xs text-slate-500 mt-1">Out of 100</p>
+              <p className="text-xs text-muted-foreground mt-1">Out of 100</p>
             </CardContent>
           </Card>
         </div>
@@ -252,7 +252,7 @@ export default function LeadsDashboard() {
                       <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-semibold text-sm">
                         {index + 1}
                       </div>
-                      <span className="font-medium text-slate-700 truncate max-w-md">{cs.title}</span>
+                      <span className="font-medium text-charcoal/80 truncate max-w-md">{cs.title}</span>
                     </div>
                     <Badge variant="outline">{cs.downloads} downloads</Badge>
                   </div>
@@ -267,7 +267,7 @@ export default function LeadsDashboard() {
           <CardContent className="pt-6">
             <div className="flex flex-col md:flex-row gap-4">
               <div className="flex-1 relative">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground/70" />
                 <Input
                   placeholder="Search by email, name, or company..."
                   value={search}
@@ -322,13 +322,13 @@ export default function LeadsDashboard() {
             {leadsLoading ? (
               <div className="text-center py-12">
                 <div className="animate-spin w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full mx-auto mb-4"></div>
-                <p className="text-slate-500">Loading leads...</p>
+                <p className="text-muted-foreground">Loading leads...</p>
               </div>
             ) : leadsData?.leads.length === 0 ? (
               <div className="text-center py-12">
-                <Users className="w-12 h-12 text-slate-300 mx-auto mb-4" />
-                <h3 className="text-lg font-medium text-slate-700 mb-2">No leads found</h3>
-                <p className="text-slate-500">
+                <Users className="w-12 h-12 text-muted-foreground/50 mx-auto mb-4" />
+                <h3 className="text-lg font-medium text-charcoal/80 mb-2">No leads found</h3>
+                <p className="text-muted-foreground">
                   {search ? "Try adjusting your search criteria" : "Leads will appear here when visitors download case studies"}
                 </p>
               </div>
@@ -349,17 +349,17 @@ export default function LeadsDashboard() {
                     <TableBody>
                       {leadsData?.leads.map((lead, index) => (
                         <TableRow key={lead.id}>
-                          <TableCell className="text-slate-500">
+                          <TableCell className="text-muted-foreground">
                             {page * limit + index + 1}
                           </TableCell>
                           <TableCell>
                             <div className="space-y-1">
                               <div className="flex items-center gap-2">
-                                <Mail className="w-3 h-3 text-slate-400" />
+                                <Mail className="w-3 h-3 text-muted-foreground/70" />
                                 <span className="font-medium">{lead.email}</span>
                               </div>
                               {(lead.firstName || lead.lastName) && (
-                                <div className="text-sm text-slate-500">
+                                <div className="text-sm text-muted-foreground">
                                   {lead.firstName} {lead.lastName}
                                 </div>
                               )}
@@ -369,24 +369,24 @@ export default function LeadsDashboard() {
                             {lead.company ? (
                               <div className="space-y-1">
                                 <div className="flex items-center gap-2">
-                                  <Building2 className="w-3 h-3 text-slate-400" />
+                                  <Building2 className="w-3 h-3 text-muted-foreground/70" />
                                   <span>{lead.company}</span>
                                 </div>
                                 {lead.jobTitle && (
-                                  <div className="flex items-center gap-2 text-sm text-slate-500">
+                                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
                                     <Briefcase className="w-3 h-3" />
                                     <span>{lead.jobTitle}</span>
                                   </div>
                                 )}
                               </div>
                             ) : (
-                              <span className="text-slate-400">—</span>
+                              <span className="text-muted-foreground/70">—</span>
                             )}
                           </TableCell>
                           <TableCell>
                             <div className="space-y-1">
                               <div className="flex items-center gap-2">
-                                <FileText className="w-3 h-3 text-slate-400" />
+                                <FileText className="w-3 h-3 text-muted-foreground/70" />
                                 <span className="text-sm max-w-xs truncate" title={lead.caseStudyTitle || ""}>                                  {lead.caseStudyTitle || "—"}
                                 </span>
                               </div>
@@ -400,7 +400,7 @@ export default function LeadsDashboard() {
                           <TableCell>
                             {getScoreBadge(lead.leadScore)}
                           </TableCell>
-                          <TableCell className="text-sm text-slate-500">
+                          <TableCell className="text-sm text-muted-foreground">
                             {formatDate(lead.createdAt)}
                           </TableCell>
                         </TableRow>
@@ -412,7 +412,7 @@ export default function LeadsDashboard() {
                 {/* Pagination */}
                 {totalPages > 1 && (
                   <div className="flex items-center justify-between mt-6 pt-4 border-t">
-                    <p className="text-sm text-slate-500">
+                    <p className="text-sm text-muted-foreground">
                       Showing {page * limit + 1} to {Math.min((page + 1) * limit, leadsData?.total || 0)} of {leadsData?.total || 0}
                     </p>
                     <div className="flex items-center gap-2">
@@ -425,7 +425,7 @@ export default function LeadsDashboard() {
                         <ChevronLeft className="w-4 h-4" />
                         Previous
                       </Button>
-                      <span className="text-sm text-slate-500 px-2">
+                      <span className="text-sm text-muted-foreground px-2">
                         Page {page + 1} of {totalPages}
                       </span>
                       <Button
@@ -479,7 +479,7 @@ export default function LeadsDashboard() {
                           {item.caseStudyIndustry ? (
                             <Badge variant="outline">{item.caseStudyIndustry}</Badge>
                           ) : (
-                            <span className="text-slate-400">—</span>
+                            <span className="text-muted-foreground/70">—</span>
                           )}
                         </TableCell>
                         <TableCell className="text-center">

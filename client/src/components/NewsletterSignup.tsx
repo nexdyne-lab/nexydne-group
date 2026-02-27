@@ -41,7 +41,7 @@ export default function NewsletterSignup() {
   };
 
   return (
-    <div className="bg-gradient-to-br from-[#1a2b5c] via-[#2D5BFF] to-[#4169FF] text-white p-8 md:p-12 rounded-lg">
+    <div className="bg-gradient-to-br from-base via-primary to-primary text-white p-8 md:p-12 rounded-lg">
       <div className="max-w-2xl">
         <h3 className="text-2xl md:text-3xl font-bold mb-4">
           Get automation insights delivered to your inbox
@@ -57,12 +57,12 @@ export default function NewsletterSignup() {
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email address"
             disabled={status === "submitting" || status === "success"}
-            className="flex-1 px-4 py-3 rounded-md text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="flex-1 px-4 py-3 rounded-md text-charcoal placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-cyan-400 disabled:opacity-50 disabled:cursor-not-allowed"
           />
           <button
             type="submit"
             disabled={status === "submitting" || status === "success"}
-            className="px-8 py-3 bg-cyan-400 text-gray-900 font-semibold rounded-md hover:bg-cyan-300 transition-colors disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+            className="px-8 py-3 bg-cyan-400 text-charcoal font-semibold rounded-md hover:bg-cyan-300 transition-colors disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
           >
             {status === "submitting" ? "Subscribing..." : status === "success" ? "Subscribed!" : "Subscribe"}
           </button>

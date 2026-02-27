@@ -62,7 +62,7 @@ export default function BusinessBuilding() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Business Building" 
         description="Launch new digital ventures and revenue streams with NexDyne's proven playbook for rapid scaling and market validation."
@@ -71,7 +71,7 @@ export default function BusinessBuilding() {
       <Navigation />
       
       {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-black">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -92,7 +92,7 @@ export default function BusinessBuilding() {
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
                   Schedule a Consultation
                 </Button>
               </Link>
@@ -120,7 +120,7 @@ export default function BusinessBuilding() {
       </section>
 
       {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -129,7 +129,7 @@ export default function BusinessBuilding() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-[#051C2C] eb-garamond">Our Experience & Impact</h2>
+            <h2 className="text-2xl font-bold text-charcoal eb-garamond">Our Experience & Impact</h2>
           </motion.div>
           
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
@@ -145,8 +145,8 @@ export default function BusinessBuilding() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -162,7 +162,7 @@ export default function BusinessBuilding() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               Your competitors are launching new products. Are you? Most mid-market companies know they need to diversify their revenue. The problem is execution. Internal teams are stretched thin running the core business. Hiring a product team takes months. And consultants who only deliver PowerPoints don't help you ship anything.
             </motion.p>
@@ -172,7 +172,7 @@ export default function BusinessBuilding() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               We work differently. Our team embeds with yours to actually build the thing—from validating the idea to writing the code to acquiring the first customers. You get a working product, not a strategy deck. The difference isn't luck. It's process. We've refined our approach over 40+ launches, learning what works for companies your size.
             </motion.p>
@@ -182,7 +182,7 @@ export default function BusinessBuilding() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               We know how to validate ideas quickly, build MVPs that actually test hypotheses, and scale what works. More importantly, we know when to kill ideas that aren't working—before you've spent a fortune on them. 78% of corporate ventures fail. Ours don't.
             </motion.p>
@@ -192,7 +192,7 @@ export default function BusinessBuilding() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               We handle the entire journey—market research, product design, development, launch, and initial growth. Our team works alongside yours, transferring knowledge so you can run the business independently once it's established. From idea to revenue in months, not years.
             </motion.p>
@@ -218,7 +218,7 @@ export default function BusinessBuilding() {
                 className="w-full h-auto rounded-lg shadow-lg"
               />
               {/* Accent block */}
-              <div className="absolute bottom-6 right-6 w-24 h-24 bg-[#0077B5] rounded-lg" />
+              <div className="absolute bottom-6 right-6 w-24 h-24 bg-primary rounded-lg" />
             </motion.div>
             
             {/* Content */}
@@ -228,15 +228,15 @@ export default function BusinessBuilding() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#051C2C] leading-[1.1] mb-8 eb-garamond">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal leading-[1.1] mb-8 eb-garamond">
                 We've learned what works—and what doesn't.
               </h2>
               
-              <p className="text-xl text-[#051C2C]/70 leading-relaxed mb-6">
+              <p className="text-xl text-charcoal/70 leading-relaxed mb-6">
                 The difference isn't luck. It's process. We've refined our approach over 40+ launches, learning what works for companies your size. We know how to validate ideas quickly, build MVPs that actually test hypotheses, and scale what works.
               </p>
               
-              <p className="text-xl text-[#051C2C]/70 leading-relaxed">
+              <p className="text-xl text-charcoal/70 leading-relaxed">
                 More importantly, we know when to kill ideas that aren't working—before you've spent a fortune on them.
               </p>
             </motion.div>
@@ -245,7 +245,7 @@ export default function BusinessBuilding() {
       </section>
 
       {/* Section 5: Our Approach (F100 - Dark Navy Background) */}
-      <section className="py-24 bg-[#0a1628] text-white">
+      <section className="py-24 bg-base text-white">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -254,7 +254,7 @@ export default function BusinessBuilding() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Our Approach
             </span>
             <h2 className="text-4xl md:text-5xl font-bold eb-garamond">
@@ -292,7 +292,7 @@ export default function BusinessBuilding() {
           
           <div className="text-center">
             <Link href="/contact">
-              <Button className="bg-[#0077B5] hover:bg-[#005a8c] text-white px-8 py-6 text-base font-semibold transition-all">
+              <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-all">
                 Get in touch
               </Button>
             </Link>
@@ -301,7 +301,7 @@ export default function BusinessBuilding() {
       </section>
 
       {/* Section 5: How We Can Help - Capability Cards with H100 Hover Effect */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -310,13 +310,13 @@ export default function BusinessBuilding() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#051C2C] mb-6 eb-garamond">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6 eb-garamond">
               Our Business Building Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               We bring expertise across the entire venture lifecycle to help you launch, scale, and sustain new digital businesses.
             </p>
           </motion.div>
@@ -353,34 +353,34 @@ export default function BusinessBuilding() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-[#051C2C] leading-[1.1] mb-8 eb-garamond">
+              <h2 className="text-4xl md:text-5xl font-bold text-charcoal leading-[1.1] mb-8 eb-garamond">
                 How AI is Transforming Business Building
               </h2>
               
-              <p className="text-xl text-[#051C2C]/70 leading-relaxed mb-8">
+              <p className="text-xl text-charcoal/70 leading-relaxed mb-8">
                 We're helping mid-market companies move quickly from experimentation to scale and generate real value from AI. Working closely with leadership teams, we can help you:
               </p>
               
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start gap-3">
-                  <span className="text-[#051C2C]/40 mt-1">•</span>
-                  <span className="text-[#051C2C]/70">Identify where AI can accelerate your venture development and reduce time-to-market</span>
+                  <span className="text-charcoal/40 mt-1">•</span>
+                  <span className="text-charcoal/70">Identify where AI can accelerate your venture development and reduce time-to-market</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#051C2C]/40 mt-1">•</span>
-                  <span className="text-[#051C2C]/70">Develop a clear roadmap for AI's impact on your product development, customer experience, and operational efficiency</span>
+                  <span className="text-charcoal/40 mt-1">•</span>
+                  <span className="text-charcoal/70">Develop a clear roadmap for AI's impact on your product development, customer experience, and operational efficiency</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#051C2C]/40 mt-1">•</span>
-                  <span className="text-[#051C2C]/70">Approach AI as a business accelerator, not just a technology deployment</span>
+                  <span className="text-charcoal/40 mt-1">•</span>
+                  <span className="text-charcoal/70">Approach AI as a business accelerator, not just a technology deployment</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-[#051C2C]/40 mt-1">•</span>
-                  <span className="text-[#051C2C]/70">Build AI-native products that create sustainable competitive advantage</span>
+                  <span className="text-charcoal/40 mt-1">•</span>
+                  <span className="text-charcoal/70">Build AI-native products that create sustainable competitive advantage</span>
                 </li>
               </ul>
               
-              <Link href="/insights" className="inline-flex items-center text-[#CC0000] font-semibold hover:underline group">
+              <Link href="/insights" className="inline-flex items-center text-destructive font-semibold hover:underline group">
                 Five key questions for business leaders <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>
@@ -409,17 +409,17 @@ export default function BusinessBuilding() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="border-t border-gray-200 pt-8"
+              className="border-t border-border pt-8"
             >
-              <h3 className="text-2xl font-serif font-bold text-[#051C2C] mb-4">Real Outcomes</h3>
-              <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+              <h3 className="text-2xl font-serif font-bold text-charcoal mb-4">Real Outcomes</h3>
+              <p className="text-charcoal/70 leading-relaxed mb-6">
                 From fintech startups to established distributors, we've helped companies across industries achieve breakthrough results with AI-powered ventures. As one example, we worked with a regional bank to transform their loan origination process from 14 days to just 4 hours using AI.
               </p>
-              <Link href="/case-studies" className="inline-flex items-center text-[#CC0000] font-semibold hover:underline group">
+              <Link href="/case-studies" className="inline-flex items-center text-destructive font-semibold hover:underline group">
                 How we helped a bank 10x their loan processing speed <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
               <div className="mt-4">
-                <Link href="/case-studies" className="inline-flex items-center text-[#CC0000] font-semibold hover:underline group">
+                <Link href="/case-studies" className="inline-flex items-center text-destructive font-semibold hover:underline group">
                   See how we're helping mid-market companies win with AI <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -431,17 +431,17 @@ export default function BusinessBuilding() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="border-t border-gray-200 pt-8"
+              className="border-t border-border pt-8"
             >
-              <h3 className="text-2xl font-serif font-bold text-[#051C2C] mb-4">How We Help</h3>
-              <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+              <h3 className="text-2xl font-serif font-bold text-charcoal mb-4">How We Help</h3>
+              <p className="text-charcoal/70 leading-relaxed mb-6">
                 Harness the full power of generative and agentic AI by envisioning and deploying a comprehensive strategy that addresses governance, talent, vendor selection, and technology infrastructure. Our AI-first approach to business building means we're not just adding AI to existing processes—we're reimagining what's possible.
               </p>
-              <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center text-[#CC0000] font-semibold hover:underline group">
+              <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center text-destructive font-semibold hover:underline group">
                 Learn more about our AI capabilities <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
               <div className="mt-4">
-                <Link href="/about" className="inline-flex items-center text-[#CC0000] font-semibold hover:underline group">
+                <Link href="/about" className="inline-flex items-center text-destructive font-semibold hover:underline group">
                   Learn more about our approach <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -451,7 +451,7 @@ export default function BusinessBuilding() {
       </section>
 
       {/* Section 7: Client Results (F100) */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
             <motion.div
@@ -460,15 +460,15 @@ export default function BusinessBuilding() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Client Results
               </span>
-              <h2 className="text-4xl md:text-5xl font-bold text-[#051C2C] eb-garamond">
+              <h2 className="text-4xl md:text-5xl font-bold text-charcoal eb-garamond">
                 Recent work
               </h2>
             </motion.div>
             <Link href="/case-studies">
-              <Button variant="outline" className="border-[#051C2C]/20 text-[#051C2C] hover:bg-[#051C2C]/5 bg-transparent transition-all duration-300">
+              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/5 bg-transparent transition-all duration-300">
                 View all case studies
               </Button>
             </Link>
@@ -504,18 +504,18 @@ export default function BusinessBuilding() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-[#0077B5] text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded">
+                    <span className="bg-primary text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded">
                       {study.category}
                     </span>
                   </div>
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-[#051C2C] mb-4 group-hover:text-[#0077B5] transition-colors leading-tight">
+                <h3 className="text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                   {study.title}
                 </h3>
-                <p className="text-[#051C2C]/60 mb-4 leading-relaxed">
+                <p className="text-charcoal/60 mb-4 leading-relaxed">
                   {study.description}
                 </p>
-                <div className="flex items-center text-[#0077B5] text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                   Read case study <ArrowRight className="ml-2 w-4 h-4" />
                 </div>
               </motion.div>
@@ -525,7 +525,7 @@ export default function BusinessBuilding() {
       </section>
 
       {/* Section 7: Latest Insights (F100) */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
             <motion.div
@@ -534,15 +534,15 @@ export default function BusinessBuilding() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Insights
               </span>
-              <h2 className="text-4xl md:text-5xl font-bold text-[#051C2C] eb-garamond">
+              <h2 className="text-4xl md:text-5xl font-bold text-charcoal eb-garamond">
                 Latest Insights
               </h2>
             </motion.div>
             <Link href="/insights">
-              <Button variant="outline" className="border-[#051C2C]/20 text-[#051C2C] hover:bg-[#051C2C]/5 bg-transparent transition-all duration-300">
+              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/5 bg-transparent transition-all duration-300">
                 View all insights
               </Button>
             </Link>
@@ -578,17 +578,17 @@ export default function BusinessBuilding() {
                 className="group cursor-pointer"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-[#0077B5] text-xs font-bold uppercase tracking-wider">{insight.category}</span>
-                  <span className="text-[#051C2C]/40">•</span>
-                  <span className="text-[#051C2C]/40 text-xs">{insight.readTime}</span>
+                  <span className="text-primary text-xs font-bold uppercase tracking-wider">{insight.category}</span>
+                  <span className="text-charcoal/40">•</span>
+                  <span className="text-charcoal/40 text-xs">{insight.readTime}</span>
                 </div>
-                <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 group-hover:text-[#0077B5] transition-colors leading-tight">
+                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                   {insight.title}
                 </h3>
-                <p className="text-[#051C2C]/60 text-sm mb-4 leading-relaxed">
+                <p className="text-charcoal/60 text-sm mb-4 leading-relaxed">
                   {insight.description}
                 </p>
-                <div className="flex items-center text-[#0077B5] text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                   Read article <ArrowRight className="ml-2 w-4 h-4" />
                 </div>
               </motion.div>
@@ -607,10 +607,10 @@ export default function BusinessBuilding() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Related Capabilities
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#051C2C] eb-garamond">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal eb-garamond">
               Explore related capabilities
             </h2>
           </motion.div>
@@ -637,7 +637,7 @@ export default function BusinessBuilding() {
       </section>
 
       {/* Section 9: CTA Section (F100 - Cyan Background) */}
-      <section className="py-24 bg-[#0077B5]">
+      <section className="py-24 bg-primary">
         <div className="container px-4 md:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -652,7 +652,7 @@ export default function BusinessBuilding() {
               We'll give you an honest assessment of whether it's worth pursuing—and what it would take to build it.
             </p>
             <Link href="/contact">
-              <Button className="bg-white hover:bg-gray-100 text-[#051C2C] px-10 py-6 text-lg font-semibold transition-all">
+              <Button className="bg-white hover:bg-subtle text-charcoal px-10 py-6 text-lg font-semibold transition-all">
                 Schedule a Consultation
               </Button>
             </Link>

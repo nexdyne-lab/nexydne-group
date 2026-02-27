@@ -11,9 +11,9 @@ export interface GradientCardProps extends React.ComponentProps<"div"> {
 const GradientCard = React.forwardRef<HTMLDivElement, GradientCardProps>(
   ({ className, children, hoverScale = true, gradientIntensity = "medium", ...props }, ref) => {
     const intensityMap = {
-      light: "from-[#00d4ff]/0 via-[#00d4ff]/5 to-[#00d4ff]/0",
-      medium: "from-[#00d4ff]/0 via-[#00d4ff]/10 to-[#00d4ff]/0",
-      strong: "from-[#00d4ff]/0 via-[#00d4ff]/15 to-[#00d4ff]/0",
+      light: "from-secondary/0 via-secondary/5 to-secondary/0",
+      medium: "from-secondary/0 via-secondary/10 to-secondary/0",
+      strong: "from-secondary/0 via-secondary/15 to-secondary/0",
     };
 
     return (
@@ -21,8 +21,8 @@ const GradientCard = React.forwardRef<HTMLDivElement, GradientCardProps>(
         ref={ref}
         className={cn(
           "relative overflow-hidden transition-all duration-300",
-          "border-2 border-[#00d4ff]/20 hover:border-[#00d4ff]",
-          "hover:shadow-2xl hover:shadow-[#00d4ff]/30",
+          "border-2 border-secondary/20 hover:border-secondary",
+          "hover:shadow-2xl hover:shadow-secondary/30",
           hoverScale && "hover:scale-[1.02]",
           className
         )}

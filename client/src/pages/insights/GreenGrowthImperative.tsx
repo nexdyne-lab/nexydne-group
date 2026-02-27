@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 
 export default function GreenGrowthImperative() {
   return (
-    <div className="min-h-screen bg-white font-sans text-slate-900">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
       <Navigation />
       
       {/* Hero Section - Immersive Nature Background */}
@@ -18,7 +18,7 @@ export default function GreenGrowthImperative() {
             alt="Green Growth Landscape" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/30 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-charcoal/30 mix-blend-multiply" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
         </div>
 
@@ -45,15 +45,15 @@ export default function GreenGrowthImperative() {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
             <div className="lg:col-span-4">
-              <h2 className="text-4xl md:text-5xl font-serif text-slate-900 leading-tight sticky top-24">
+              <h2 className="text-4xl md:text-5xl font-serif text-charcoal leading-tight sticky top-24">
                 Sustainability as a <span className="text-emerald-700 italic">competitive advantage</span>
               </h2>
             </div>
             <div className="lg:col-span-8 space-y-8">
-              <p className="text-xl text-slate-600 leading-relaxed font-light">
+              <p className="text-xl text-muted-foreground leading-relaxed font-light">
                 We consider green growth to be sustainable growth that can be generated with the power of the ESG levers that companies are already implementing. The journey to net zero will create opportunities—and challenges—for B2B and B2C companies in many industries.
               </p>
-              <p className="text-xl text-slate-600 leading-relaxed font-light">
+              <p className="text-xl text-muted-foreground leading-relaxed font-light">
                 Companies need to play offense, however, on this journey—not just to protect their core business, but also to capture the full value from sustainability. It's undeniable that the transition to net zero requires significant investment. We're here to help companies to achieve strong returns on these investments.
               </p>
               
@@ -73,8 +73,8 @@ export default function GreenGrowthImperative() {
       {/* What We Do - Floating Cards / Split Layout */}
       <section className="py-24 bg-slate-50 overflow-hidden">
         <div className="container mb-20">
-          <h2 className="text-4xl md:text-6xl font-serif text-center text-slate-900 mb-4">What we do</h2>
-          <p className="text-xl text-slate-500 text-center max-w-2xl mx-auto font-light">
+          <h2 className="text-4xl md:text-6xl font-serif text-center text-charcoal mb-4">What we do</h2>
+          <p className="text-xl text-muted-foreground text-center max-w-2xl mx-auto font-light">
             Commercializing green opportunities along the full value chain.
           </p>
         </div>
@@ -95,8 +95,8 @@ export default function GreenGrowthImperative() {
                 <div className="absolute -bottom-12 -left-12 w-full h-full border-2 border-emerald-200 rounded-2xl -z-0 hidden lg:block" />
               </div>
               <div className="order-1 lg:order-2 lg:pl-12">
-                <h3 className="text-3xl md:text-4xl font-serif mb-6 text-slate-900">Green revenue growth management</h3>
-                <p className="text-lg text-slate-600 leading-relaxed mb-8 font-light">
+                <h3 className="text-3xl md:text-4xl font-serif mb-6 text-charcoal">Green revenue growth management</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-8 font-light">
                   We help to investigate what the most attractive value pools are based on, where you can have sustainability impact, and if there is a willingness to pay. Organizations need to look at their ESG operations through the eyes of their customers to understand where they could create additional value.
                 </p>
                 <ul className="space-y-4">
@@ -104,13 +104,13 @@ export default function GreenGrowthImperative() {
                     <div className="mt-1 p-1 bg-emerald-100 rounded-full text-emerald-700">
                       <Leaf className="w-4 h-4" />
                     </div>
-                    <span className="text-slate-700">Identify high-impact sustainability value pools</span>
+                    <span className="text-charcoal/80">Identify high-impact sustainability value pools</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="mt-1 p-1 bg-emerald-100 rounded-full text-emerald-700">
                       <BarChart3 className="w-4 h-4" />
                     </div>
-                    <span className="text-slate-700">Quantify customer willingness to pay for green attributes</span>
+                    <span className="text-charcoal/80">Quantify customer willingness to pay for green attributes</span>
                   </li>
                 </ul>
               </div>
@@ -121,8 +121,8 @@ export default function GreenGrowthImperative() {
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="lg:pr-12">
-                <h3 className="text-3xl md:text-4xl font-serif mb-6 text-slate-900">Pricing and margin management</h3>
-                <p className="text-lg text-slate-600 leading-relaxed mb-8 font-light">
+                <h3 className="text-3xl md:text-4xl font-serif mb-6 text-charcoal">Pricing and margin management</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-8 font-light">
                   Companies can achieve premiums, but customers' willingness to pay varies by segment and changes constantly. To succeed in the long term, companies must understand how demand-supply scenarios and regulations may affect prices.
                 </p>
                 <ul className="space-y-4">
@@ -130,13 +130,13 @@ export default function GreenGrowthImperative() {
                     <div className="mt-1 p-1 bg-emerald-100 rounded-full text-emerald-700">
                       <Globe className="w-4 h-4" />
                     </div>
-                    <span className="text-slate-700">Dynamic pricing strategies for sustainable products</span>
+                    <span className="text-charcoal/80">Dynamic pricing strategies for sustainable products</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="mt-1 p-1 bg-emerald-100 rounded-full text-emerald-700">
                       <Zap className="w-4 h-4" />
                     </div>
-                    <span className="text-slate-700">Commercial models that capture full ESG value</span>
+                    <span className="text-charcoal/80">Commercial models that capture full ESG value</span>
                   </li>
                 </ul>
               </div>
@@ -160,8 +160,8 @@ export default function GreenGrowthImperative() {
       <section className="py-24 bg-white">
         <div className="container">
           <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif text-slate-900 mb-6">Sectors in transition</h2>
-            <p className="text-xl text-slate-600 font-light max-w-3xl">
+            <h2 className="text-4xl md:text-5xl font-serif text-charcoal mb-6">Sectors in transition</h2>
+            <p className="text-xl text-muted-foreground font-light max-w-3xl">
               The path to net zero looks different for every industry. We help organizations navigate their specific challenges and opportunities.
             </p>
           </div>
@@ -231,7 +231,7 @@ export default function GreenGrowthImperative() {
         <div className="container relative z-10">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-serif mb-6">Impact by the numbers</h2>
-            <p className="text-xl text-slate-300 font-light">Real results from our green growth transformations.</p>
+            <p className="text-xl text-muted-foreground/50 font-light">Real results from our green growth transformations.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
@@ -239,7 +239,7 @@ export default function GreenGrowthImperative() {
               <div className="text-6xl font-serif text-emerald-400">10%+</div>
               <div className="h-px w-12 bg-emerald-500/50 mx-auto" />
               <h4 className="text-lg font-medium">Green Willingness to Pay</h4>
-              <p className="text-sm text-slate-400 leading-relaxed">
+              <p className="text-sm text-muted-foreground/70 leading-relaxed">
                 Identified in selected customer segments and regions for B2B corporations.
               </p>
             </div>
@@ -248,7 +248,7 @@ export default function GreenGrowthImperative() {
               <div className="text-6xl font-serif text-emerald-400">$50bn</div>
               <div className="h-px w-12 bg-emerald-500/50 mx-auto" />
               <h4 className="text-lg font-medium">Risk Assessment</h4>
-              <p className="text-sm text-slate-400 leading-relaxed">
+              <p className="text-sm text-muted-foreground/70 leading-relaxed">
                 Potential green value pools identified through TCFD assessment.
               </p>
             </div>
@@ -257,7 +257,7 @@ export default function GreenGrowthImperative() {
               <div className="text-6xl font-serif text-emerald-400">$3bn</div>
               <div className="h-px w-12 bg-emerald-500/50 mx-auto" />
               <h4 className="text-lg font-medium">Decarbonization</h4>
-              <p className="text-sm text-slate-400 leading-relaxed">
+              <p className="text-sm text-muted-foreground/70 leading-relaxed">
                 Potential value found for a client in Asia accelerating their net-zero race.
               </p>
             </div>
@@ -266,7 +266,7 @@ export default function GreenGrowthImperative() {
               <div className="text-6xl font-serif text-emerald-400">30-50%</div>
               <div className="h-px w-12 bg-emerald-500/50 mx-auto" />
               <h4 className="text-lg font-medium">Sustainable Materials</h4>
-              <p className="text-sm text-slate-400 leading-relaxed">
+              <p className="text-sm text-muted-foreground/70 leading-relaxed">
                 Potential premium compared to conventional incumbent products.
               </p>
             </div>
@@ -279,8 +279,8 @@ export default function GreenGrowthImperative() {
         <div className="container">
           <div className="flex justify-between items-end mb-12">
             <div>
-              <h2 className="text-4xl md:text-5xl font-serif text-slate-900 mb-4">Featured insights</h2>
-              <p className="text-xl text-slate-600 font-light">Our latest thinking on sustainability and growth.</p>
+              <h2 className="text-4xl md:text-5xl font-serif text-charcoal mb-4">Featured insights</h2>
+              <p className="text-xl text-muted-foreground font-light">Our latest thinking on sustainability and growth.</p>
             </div>
             <Link href="/insights">
               <button className="hidden md:flex items-center gap-2 text-emerald-700 font-medium hover:gap-3 transition-all">
@@ -301,13 +301,13 @@ export default function GreenGrowthImperative() {
               </div>
               <div className="space-y-3">
                 <span className="text-xs font-bold tracking-widest text-emerald-700 uppercase">Report</span>
-                <h3 className="text-xl font-serif text-slate-900 group-hover:text-emerald-700 transition-colors">
+                <h3 className="text-xl font-serif text-charcoal group-hover:text-emerald-700 transition-colors">
                   The Net Zero Transition: What it would cost, what it could bring
                 </h3>
-                <p className="text-slate-600 font-light line-clamp-2">
+                <p className="text-muted-foreground font-light line-clamp-2">
                   A detailed analysis of the economic transformation required to achieve net-zero emissions by 2050.
                 </p>
-                <span className="inline-flex items-center gap-2 text-sm text-slate-400 mt-2">
+                <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/70 mt-2">
                   <ArrowRight className="w-4 h-4" /> Read the report
                 </span>
               </div>
@@ -324,13 +324,13 @@ export default function GreenGrowthImperative() {
               </div>
               <div className="space-y-3">
                 <span className="text-xs font-bold tracking-widest text-emerald-700 uppercase">Article</span>
-                <h3 className="text-xl font-serif text-slate-900 group-hover:text-emerald-700 transition-colors">
+                <h3 className="text-xl font-serif text-charcoal group-hover:text-emerald-700 transition-colors">
                   Carbon Markets 2025: From voluntary to compliance
                 </h3>
-                <p className="text-slate-600 font-light line-clamp-2">
+                <p className="text-muted-foreground font-light line-clamp-2">
                   How evolving regulations are reshaping the landscape for carbon credits and trading.
                 </p>
-                <span className="inline-flex items-center gap-2 text-sm text-slate-400 mt-2">
+                <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/70 mt-2">
                   <ArrowRight className="w-4 h-4" /> Read the article
                 </span>
               </div>
@@ -347,13 +347,13 @@ export default function GreenGrowthImperative() {
               </div>
               <div className="space-y-3">
                 <span className="text-xs font-bold tracking-widest text-emerald-700 uppercase">Perspective</span>
-                <h3 className="text-xl font-serif text-slate-900 group-hover:text-emerald-700 transition-colors">
+                <h3 className="text-xl font-serif text-charcoal group-hover:text-emerald-700 transition-colors">
                   The Green Materials Revolution
                 </h3>
-                <p className="text-slate-600 font-light line-clamp-2">
+                <p className="text-muted-foreground font-light line-clamp-2">
                   Why sustainable materials are becoming a primary driver of product innovation and value.
                 </p>
-                <span className="inline-flex items-center gap-2 text-sm text-slate-400 mt-2">
+                <span className="inline-flex items-center gap-2 text-sm text-muted-foreground/70 mt-2">
                   <ArrowRight className="w-4 h-4" /> Read the perspective
                 </span>
               </div>

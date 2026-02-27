@@ -37,8 +37,8 @@ export function ResearchInsight({
               Our Research Shows
             </span>
           </div>
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">{title}</h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">{subtitle}</p>
+          <h2 className="text-4xl font-bold text-charcoal mb-4">{title}</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">{subtitle}</p>
         </div>
 
         {/* Insights Grid */}
@@ -53,14 +53,14 @@ export function ResearchInsight({
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center mb-4">
                   <Icon className="w-6 h-6 text-white" />
                 </div>
-                <div className="text-4xl font-bold text-slate-900 mb-2">
+                <div className="text-4xl font-bold text-charcoal mb-2">
                   {insight.statistic}
                 </div>
-                <p className="text-slate-600 leading-relaxed mb-2">
+                <p className="text-muted-foreground leading-relaxed mb-2">
                   {insight.description}
                 </p>
                 {insight.source && (
-                  <p className="text-xs text-slate-400 italic">
+                  <p className="text-xs text-muted-foreground/70 italic">
                     Source: {insight.source}
                   </p>
                 )}
@@ -72,8 +72,8 @@ export function ResearchInsight({
         {/* Citation */}
         {citation && (
           <div className="bg-slate-50 border-l-4 border-cyan-500 p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 rounded-r-lg">
-            <p className="text-sm text-slate-600 italic">
-              <span className="font-semibold text-slate-900">Research Methodology:</span> {citation}
+            <p className="text-sm text-muted-foreground italic">
+              <span className="font-semibold text-charcoal">Research Methodology:</span> {citation}
             </p>
           </div>
         )}

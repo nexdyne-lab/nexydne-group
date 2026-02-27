@@ -34,17 +34,17 @@ const testimonials: Testimonial[] = [
 
 export function TestimonialsSection() {
   return (
-    <section className="py-12 sm:py-16 md:py-28 bg-[#F5F5F5]">
+    <section className="py-12 sm:py-16 md:py-28 bg-subtle">
       <div className="container px-4 sm:px-6 md:px-8 lg:px-12">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12 md:mb-16">
-          <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#1A1A1A]/60 mb-4 sm:mb-6 block">
+          <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-charcoal/60 mb-4 sm:mb-6 block">
             CLIENT TESTIMONIALS
           </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold mb-4 sm:mb-6 font-serif text-[#1A1A1A] px-2 sm:px-0">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-bold mb-4 sm:mb-6 font-serif text-charcoal px-2 sm:px-0">
             Trusted by industry leaders
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-[#1A1A1A]/70">
+          <p className="text-sm sm:text-base md:text-lg text-charcoal/70">
             Hear from executives who have transformed their organizations with NexDyne.
           </p>
         </div>
@@ -63,7 +63,7 @@ export function TestimonialsSection() {
               >
               {/* Quote Icon */}
               <svg 
-                className="w-8 h-8 sm:w-10 sm:h-10 text-[#0077B5]/20 mb-4 sm:mb-6" 
+                className="w-8 h-8 sm:w-10 sm:h-10 text-primary/20 mb-4 sm:mb-6" 
                 fill="currentColor" 
                 viewBox="0 0 24 24"
               >
@@ -71,19 +71,19 @@ export function TestimonialsSection() {
               </svg>
 
               {/* Quote */}
-              <blockquote className="text-sm sm:text-base text-[#1A1A1A]/80 leading-relaxed mb-4 sm:mb-6">
+              <blockquote className="text-sm sm:text-base text-charcoal/80 leading-relaxed mb-4 sm:mb-6">
                 "{testimonial.quote}"
               </blockquote>
 
               {/* Author */}
-              <div className="flex items-center gap-3 sm:gap-4 pt-4 sm:pt-6 border-t border-[#1A1A1A]/10">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#051C2C] rounded-full flex items-center justify-center text-white font-bold text-sm sm:text-base">
+              <div className="flex items-center gap-3 sm:gap-4 pt-4 sm:pt-6 border-t border-charcoal/10">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-base rounded-full flex items-center justify-center text-white font-bold text-sm sm:text-base">
                   {testimonial.initials}
                 </div>
                 <div>
-                  <div className="font-semibold text-[#1A1A1A] text-sm sm:text-base">{testimonial.author}</div>
-                  <div className="text-xs sm:text-sm text-[#1A1A1A]/60">{testimonial.title}</div>
-                  <div className="text-xs sm:text-sm text-[#0077B5]">{testimonial.company}</div>
+                  <div className="font-semibold text-charcoal text-sm sm:text-base">{testimonial.author}</div>
+                  <div className="text-xs sm:text-sm text-charcoal/60">{testimonial.title}</div>
+                  <div className="text-xs sm:text-sm text-primary">{testimonial.company}</div>
                 </div>
               </div>
             </motion.div>
@@ -95,7 +95,7 @@ export function TestimonialsSection() {
             {testimonials.map((_, index) => (
               <div 
                 key={index} 
-                className="w-2 h-2 rounded-full bg-[#1A1A1A]/20"
+                className="w-2 h-2 rounded-full bg-charcoal/20"
               />
             ))}
           </div>
@@ -115,13 +115,13 @@ export function TestimonialCard({
   variant = "light"
 }: Testimonial & { variant?: "light" | "dark" }) {
   const bgColor = variant === "light" ? "bg-slate-50" : "bg-slate-800";
-  const textColor = variant === "light" ? "text-slate-700" : "text-white/90";
-  const authorColor = variant === "light" ? "text-slate-900" : "text-white";
-  const subtitleColor = variant === "light" ? "text-slate-600" : "text-white/70";
+  const textColor = variant === "light" ? "text-charcoal/80" : "text-white/90";
+  const authorColor = variant === "light" ? "text-charcoal" : "text-white";
+  const subtitleColor = variant === "light" ? "text-muted-foreground" : "text-white/70";
   const borderColor = variant === "light" ? "border-slate-200" : "border-white/10";
   const quoteColor = variant === "light" ? "text-blue-600" : "text-blue-400";
   const avatarBg = variant === "light" ? "bg-slate-300" : "bg-slate-600";
-  const avatarText = variant === "light" ? "text-slate-600" : "text-white";
+  const avatarText = variant === "light" ? "text-muted-foreground" : "text-white";
 
   return (
     <div className={`${bgColor} p-8 md:p-12 rounded-2xl border ${borderColor}`}>

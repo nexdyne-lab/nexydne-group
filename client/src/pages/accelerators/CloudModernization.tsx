@@ -110,7 +110,7 @@ const useCases = [
 
 export default function CloudModernization() {
   return (
-    <div className="min-h-screen bg-white text-[#1A1A1A]">
+    <div className="min-h-screen bg-white text-charcoal">
       <SEO 
         title="Cloud Modernization Pathways - Future-Proof Infrastructure" 
         description="Transform legacy systems into cloud-native architectures with NexDyne's certified modernization frameworks. AWS and Google Cloud partnerships ensure security, scalability, and operational resilience."
@@ -120,7 +120,7 @@ export default function CloudModernization() {
       <Navigation />
 
       {/* Hero Section - Clean minimal design */}
-      <section className="relative min-h-[85vh] flex items-center pt-20 overflow-hidden bg-black">
+      <section className="relative min-h-[85vh] flex items-center pt-20 overflow-hidden bg-charcoal">
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -165,13 +165,13 @@ export default function CloudModernization() {
             variants={staggerContainer}
             className="max-w-3xl mx-auto text-center mb-16"
           >
-            <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-slate-500 uppercase mb-4 block">
+            <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Core Capabilities
             </motion.span>
-            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 eb-garamond">
+            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
               Enterprise-grade cloud expertise
             </motion.h2>
-            <motion.p variants={fadeInUp} className="text-lg text-slate-600 leading-relaxed">
+            <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
               Four pillars of cloud modernization that ensure your transformation delivers lasting value.
             </motion.p>
           </motion.div>
@@ -192,11 +192,11 @@ export default function CloudModernization() {
                 <div className="w-14 h-14 bg-blue-900 rounded-xl flex items-center justify-center mb-6">
                   <capability.icon className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3">{capability.title}</h3>
-                <p className="text-slate-600 mb-6 leading-relaxed">{capability.description}</p>
+                <h3 className="text-xl font-bold text-charcoal mb-3">{capability.title}</h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">{capability.description}</p>
                 <ul className="space-y-2">
                   {capability.benefits.map((benefit, j) => (
-                    <li key={j} className="flex items-center text-sm text-slate-700">
+                    <li key={j} className="flex items-center text-sm text-charcoal/80">
                       <CheckCircle2 className="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0" />
                       {benefit}
                     </li>
@@ -218,13 +218,13 @@ export default function CloudModernization() {
             variants={staggerContainer}
             className="max-w-3xl mx-auto text-center mb-16"
           >
-            <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-slate-500 uppercase mb-4 block">
+            <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Migration Options
             </motion.span>
-            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 eb-garamond">
+            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
               Choose your pathway
             </motion.h2>
-            <motion.p variants={fadeInUp} className="text-lg text-slate-600 leading-relaxed">
+            <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
               Three proven approaches tailored to your timeline, budget, and strategic objectives.
             </motion.p>
           </motion.div>
@@ -242,16 +242,16 @@ export default function CloudModernization() {
                 variants={fadeInUp}
                 className="bg-white rounded-2xl p-8 border border-slate-200 hover:border-blue-300 hover:shadow-lg transition-all"
               >
-                <h3 className="text-2xl font-bold text-slate-900 mb-4">{pathway.title}</h3>
-                <p className="text-slate-600 mb-6 leading-relaxed">{pathway.description}</p>
+                <h3 className="text-2xl font-bold text-charcoal mb-4">{pathway.title}</h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">{pathway.description}</p>
                 <div className="space-y-4 pt-4 border-t border-slate-100">
                   <div>
-                    <span className="text-xs font-medium tracking-wider text-slate-500 uppercase">Timeline</span>
+                    <span className="text-xs font-medium tracking-wider text-muted-foreground uppercase">Timeline</span>
                     <div className="text-lg font-semibold text-blue-900">{pathway.timeline}</div>
                   </div>
                   <div>
-                    <span className="text-xs font-medium tracking-wider text-slate-500 uppercase">Best For</span>
-                    <div className="text-sm text-slate-600">{pathway.bestFor}</div>
+                    <span className="text-xs font-medium tracking-wider text-muted-foreground uppercase">Best For</span>
+                    <div className="text-sm text-muted-foreground">{pathway.bestFor}</div>
                   </div>
                 </div>
               </motion.div>
@@ -270,13 +270,13 @@ export default function CloudModernization() {
             variants={staggerContainer}
             className="max-w-3xl mx-auto text-center mb-16"
           >
-            <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-slate-500 uppercase mb-4 block">
+            <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Industry Applications
             </motion.span>
-            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 eb-garamond">
+            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
               Cloud modernization in action
             </motion.h2>
-            <motion.p variants={fadeInUp} className="text-lg text-slate-600 leading-relaxed">
+            <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
               See how organizations across industries are transforming their infrastructure.
             </motion.p>
           </motion.div>
@@ -339,7 +339,7 @@ export default function CloudModernization() {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Link href="/contact">
-                <span className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-900 font-semibold rounded-full hover:bg-gray-100 transition-all cursor-pointer group">
+                <span className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-900 font-semibold rounded-full hover:bg-subtle transition-all cursor-pointer group">
                   Get Cloud Assessment
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>

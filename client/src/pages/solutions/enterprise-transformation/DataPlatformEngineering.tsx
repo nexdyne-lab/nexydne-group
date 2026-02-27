@@ -35,7 +35,7 @@ export default function DataPlatformEngineering() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Data Platform Engineering" 
         description="Design and build modern data platforms that unify data sources, enable real-time analytics, and power AI/ML workloads at enterprise scale."
@@ -43,7 +43,7 @@ export default function DataPlatformEngineering() {
       />
       <Navigation />
 
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-black">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -62,12 +62,12 @@ export default function DataPlatformEngineering() {
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out">
                   Build Your Data Platform
                 </Button>
               </Link>
               <Link href="/cases">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
+                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out bg-transparent">
                   See Our Data Solutions
                 </Button>
               </Link>
@@ -89,7 +89,7 @@ export default function DataPlatformEngineering() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -98,7 +98,7 @@ export default function DataPlatformEngineering() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-[#051C2C]">The Impact of Unified Data</h2>
+            <h2 className="text-2xl font-bold text-charcoal">The Impact of Unified Data</h2>
           </motion.div>
           
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
@@ -114,8 +114,8 @@ export default function DataPlatformEngineering() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -130,7 +130,7 @@ export default function DataPlatformEngineering() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               In today's digital economy, data is the lifeblood of the enterprise. However, siloed data sources, legacy infrastructure, and inconsistent data quality prevent organizations from realizing the full potential of their data assets. A modern data platform is not just a repository; it's a strategic enabler that unifies disparate data, provides a single source of truth, and empowers teams with self-service analytics and AI capabilities.
             </motion.p>
@@ -140,7 +140,7 @@ export default function DataPlatformEngineering() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               We engineer scalable, cloud-native data platforms that serve as the foundation for your data-driven future. By leveraging modern architectures like data mesh and data fabric, we break down data silos and create a seamless, accessible data ecosystem. Our platforms are designed for performance, reliability, and security, enabling you to run everything from real-time analytics and business intelligence to complex machine learning models at enterprise scale.
             </motion.p>
@@ -156,13 +156,13 @@ export default function DataPlatformEngineering() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Our Data Platform Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               We provide end-to-end services to design, build, and manage your modern data platform.
             </p>
           </motion.div>
@@ -208,7 +208,7 @@ export default function DataPlatformEngineering() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 lg:py-24 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -250,7 +250,7 @@ export default function DataPlatformEngineering() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-6xl font-bold text-[#0077B5] mb-4">{item.step}</div>
+                <div className="text-6xl font-bold text-primary mb-4">{item.step}</div>
                 <h3 className="text-2xl font-bold mb-3">{item.title}</h3>
                 <p className="text-white/70">{item.description}</p>
               </motion.div>
@@ -259,7 +259,7 @@ export default function DataPlatformEngineering() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#051C2C] border-t border-white/10">
+      <section className="py-12 sm:py-16 lg:py-24 bg-base border-t border-white/10">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -276,11 +276,11 @@ export default function DataPlatformEngineering() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="bg-black/20 p-8 rounded-lg"
+              className="bg-charcoal/20 p-8 rounded-lg"
             >
-              <span className="text-sm font-bold uppercase tracking-widest text-[#00d4ff] mb-4 block">Retail & E-commerce</span>
+              <span className="text-sm font-bold uppercase tracking-widest text-secondary mb-4 block">Retail & E-commerce</span>
               <h3 className="text-2xl font-bold text-white mb-4">Global retailer achieves real-time inventory visibility, reducing stockouts by 30%.</h3>
-              <Link to="/cases/retail-inventory-optimization" className="text-white font-semibold hover:text-[#00d4ff] transition-colors flex items-center">
+              <Link to="/cases/retail-inventory-optimization" className="text-white font-semibold hover:text-secondary transition-colors flex items-center">
                 Read Case Study <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </motion.div>
@@ -289,11 +289,11 @@ export default function DataPlatformEngineering() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-black/20 p-8 rounded-lg"
+              className="bg-charcoal/20 p-8 rounded-lg"
             >
-              <span className="text-sm font-bold uppercase tracking-widest text-[#00d4ff] mb-4 block">Financial Services</span>
+              <span className="text-sm font-bold uppercase tracking-widest text-secondary mb-4 block">Financial Services</span>
               <h3 className="text-2xl font-bold text-white mb-4">Investment bank builds a scalable platform for algorithmic trading, increasing trade execution speed by 40%.</h3>
-              <Link to="/cases/algorithmic-trading-platform" className="text-white font-semibold hover:text-[#00d4ff] transition-colors flex items-center">
+              <Link to="/cases/algorithmic-trading-platform" className="text-white font-semibold hover:text-secondary transition-colors flex items-center">
                 Read Case Study <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </motion.div>
@@ -301,7 +301,7 @@ export default function DataPlatformEngineering() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -309,7 +309,7 @@ export default function DataPlatformEngineering() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-4xl eb-garamond font-bold text-[#051C2C]">Related Capabilities</h2>
+            <h2 className="text-4xl eb-garamond font-bold text-charcoal">Related Capabilities</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -328,7 +328,7 @@ export default function DataPlatformEngineering() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 lg:py-24 bg-[#0077B5]">
+      <section className="py-16 sm:py-20 lg:py-24 bg-primary">
         <div className="container px-4 sm:px-6 md:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -343,7 +343,7 @@ export default function DataPlatformEngineering() {
               Let's discuss how a modern data platform can transform your business. Our experts are ready to help you design and build a solution tailored to your unique needs.
             </p>
             <Link href="/contact">
-              <Button className="bg-white hover:bg-gray-200 text-black px-10 py-7 text-lg font-semibold transition-all">
+              <Button className="bg-white hover:bg-white/90 text-primary px-10 py-7 text-lg font-semibold transition-colors duration-200 ease-in-out">
                 Schedule a Consultation
               </Button>
             </Link>

@@ -119,7 +119,7 @@ export function EmailCaptureModal({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50"
+            className="fixed inset-0 bg-charcoal/60 backdrop-blur-sm z-50"
             onClick={onClose}
           />
           
@@ -134,7 +134,7 @@ export function EmailCaptureModal({
           >
             <div className="bg-white rounded-xl sm:rounded-xl sm:rounded-2xl shadow-xl sm:shadow-xl sm:shadow-2xl w-full max-w-lg overflow-hidden">
               {/* Header */}
-              <div className="bg-gradient-to-r from-[#051C2C] to-[#0a3d5c] p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 relative">
+              <div className="bg-gradient-to-r from-base to-base p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 relative">
                 <button
                   onClick={onClose}
                   className="absolute top-4 right-4 text-white/60 hover:text-white transition-colors"
@@ -143,8 +143,8 @@ export function EmailCaptureModal({
                 </button>
                 
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-12 h-12 bg-[#0077B5]/20 rounded-lg sm:rounded-lg sm:rounded-xl flex items-center justify-center">
-                    <Download className="w-6 h-6 text-[#0077B5]" />
+                  <div className="w-12 h-12 bg-primary/20 rounded-lg sm:rounded-lg sm:rounded-xl flex items-center justify-center">
+                    <Download className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h2 className="text-xl font-bold text-white">Download Case Study</h2>
@@ -166,57 +166,57 @@ export function EmailCaptureModal({
                     animate={{ opacity: 1, scale: 1 }}
                     className="py-8 text-center"
                   >
-                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <CheckCircle className="w-8 h-8 text-green-600" />
+                    <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <CheckCircle className="w-8 h-8 text-secondary" />
                     </div>
-                    <h3 className="text-xl font-bold text-[#051C2C] mb-2">Success!</h3>
-                    <p className="text-[#051C2C]/60">Your download will begin shortly...</p>
+                    <h3 className="text-xl font-bold text-charcoal mb-2">Success!</h3>
+                    <p className="text-charcoal/60">Your download will begin shortly...</p>
                   </motion.div>
                 ) : (
                   <>
                     {/* Email - Required */}
                     <div>
-                      <label className="block text-sm font-medium text-[#051C2C] mb-1.5">
-                        Work Email <span className="text-red-500">*</span>
+                      <label className="block text-sm font-medium text-charcoal mb-1.5">
+                        Work Email <span className="text-destructive">*</span>
                       </label>
                       <div className="relative">
-                        <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-[#051C2C]/40" />
+                        <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-charcoal/40" />
                         <input
                           type="email"
                           name="email"
                           value={formData.email}
                           onChange={handleInputChange}
                           placeholder="you@company.com"
-                          className={`w-full pl-10 pr-4 py-3 border rounded-lg text-[#051C2C] placeholder:text-[#051C2C]/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all ${
-                            errors.email ? 'border-red-500' : 'border-[#051C2C]/20'
+                          className={`w-full pl-10 pr-4 py-3 border rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all ${
+                            errors.email ? 'border-red-500' : 'border-base/20'
                           }`}
                         />
                       </div>
                       {errors.email && (
-                        <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+                        <p className="text-destructive text-sm mt-1">{errors.email}</p>
                       )}
                     </div>
 
                     {/* Name Row */}
                     <div className="grid grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-sm font-medium text-[#051C2C] mb-1.5">
+                        <label className="block text-sm font-medium text-charcoal mb-1.5">
                           First Name
                         </label>
                         <div className="relative">
-                          <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-[#051C2C]/40" />
+                          <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-charcoal/40" />
                           <input
                             type="text"
                             name="firstName"
                             value={formData.firstName}
                             onChange={handleInputChange}
                             placeholder="John"
-                            className="w-full pl-10 pr-4 py-3 border border-[#051C2C]/20 rounded-lg text-[#051C2C] placeholder:text-[#051C2C]/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all"
+                            className="w-full pl-10 pr-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all"
                           />
                         </div>
                       </div>
                       <div>
-                        <label className="block text-sm font-medium text-[#051C2C] mb-1.5">
+                        <label className="block text-sm font-medium text-charcoal mb-1.5">
                           Last Name
                         </label>
                         <input
@@ -225,43 +225,43 @@ export function EmailCaptureModal({
                           value={formData.lastName}
                           onChange={handleInputChange}
                           placeholder="Smith"
-                          className="w-full px-4 py-3 border border-[#051C2C]/20 rounded-lg text-[#051C2C] placeholder:text-[#051C2C]/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all"
+                          className="w-full px-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all"
                         />
                       </div>
                     </div>
 
                     {/* Company */}
                     <div>
-                      <label className="block text-sm font-medium text-[#051C2C] mb-1.5">
+                      <label className="block text-sm font-medium text-charcoal mb-1.5">
                         Company
                       </label>
                       <div className="relative">
-                        <Building2 className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-[#051C2C]/40" />
+                        <Building2 className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-charcoal/40" />
                         <input
                           type="text"
                           name="company"
                           value={formData.company}
                           onChange={handleInputChange}
                           placeholder="Acme Inc."
-                          className="w-full pl-10 pr-4 py-3 border border-[#051C2C]/20 rounded-lg text-[#051C2C] placeholder:text-[#051C2C]/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all"
+                          className="w-full pl-10 pr-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all"
                         />
                       </div>
                     </div>
 
                     {/* Job Title */}
                     <div>
-                      <label className="block text-sm font-medium text-[#051C2C] mb-1.5">
+                      <label className="block text-sm font-medium text-charcoal mb-1.5">
                         Job Title
                       </label>
                       <div className="relative">
-                        <Briefcase className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-[#051C2C]/40" />
+                        <Briefcase className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-charcoal/40" />
                         <input
                           type="text"
                           name="jobTitle"
                           value={formData.jobTitle}
                           onChange={handleInputChange}
                           placeholder="VP of Operations"
-                          className="w-full pl-10 pr-4 py-3 border border-[#051C2C]/20 rounded-lg text-[#051C2C] placeholder:text-[#051C2C]/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all"
+                          className="w-full pl-10 pr-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all"
                         />
                       </div>
                     </div>
@@ -274,9 +274,9 @@ export function EmailCaptureModal({
                         id="marketingConsent"
                         checked={formData.marketingConsent}
                         onChange={handleInputChange}
-                        className="mt-1 w-3 h-3 sm:w-4 sm:h-4 text-[#0077B5] border-[#051C2C]/20 rounded focus:ring-[#0077B5]"
+                        className="mt-1 w-3 h-3 sm:w-4 sm:h-4 text-primary border-base/20 rounded focus:ring-[#0077B5]"
                       />
-                      <label htmlFor="marketingConsent" className="text-sm text-[#051C2C]/70 leading-relaxed">
+                      <label htmlFor="marketingConsent" className="text-sm text-charcoal/70 leading-relaxed">
                         I'd like to receive insights, case studies, and updates from NexDyne Consulting Group. 
                         You can unsubscribe at any time.
                       </label>
@@ -286,7 +286,7 @@ export function EmailCaptureModal({
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full py-3.5 bg-[#0077B5] hover:bg-[#005a8c] text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="w-full py-3.5 bg-primary hover:bg-primary/90 text-white font-semibold rounded-lg transition-colors flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       {isSubmitting ? (
                         <>
@@ -302,9 +302,9 @@ export function EmailCaptureModal({
                     </button>
 
                     {/* Privacy Note */}
-                    <p className="text-xs text-center text-[#051C2C]/50">
+                    <p className="text-xs text-center text-charcoal/50">
                       By downloading, you agree to our{' '}
-                      <a href="/privacy" className="text-[#0077B5] hover:underline">Privacy Policy</a>.
+                      <a href="/privacy" className="text-primary hover:underline">Privacy Policy</a>.
                       We respect your privacy and will never share your information.
                     </p>
                   </>

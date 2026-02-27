@@ -77,15 +77,15 @@ export function BusinessBuildingInitiatives() {
           transition={{ duration: 0.6 }}
           className="text-center mb-8 sm:mb-12 md:mb-16"
         >
-          <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.1em] sm:tracking-[0.15em] text-slate-500 mb-4 sm:mb-6 block">
+          <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.1em] sm:tracking-[0.15em] text-muted-foreground mb-4 sm:mb-6 block">
             NexDyne Initiatives
           </span>
 
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight leading-[1.2] sm:leading-[1.15] text-slate-900 mb-4 sm:mb-6 font-serif max-w-4xl mx-auto px-2 sm:px-0">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight leading-[1.2] sm:leading-[1.15] text-charcoal mb-4 sm:mb-6 font-serif max-w-4xl mx-auto px-2 sm:px-0">
             Building intelligent, competitive, and resilient mid-market businesses across the United States
           </h2>
           
-          <p className="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
             Programs that advance entrepreneurship, operational excellence, and regional economic competitiveness
           </p>
         </motion.div>
@@ -118,8 +118,8 @@ export function BusinessBuildingInitiatives() {
                   </div>
                   
                   {/* Text Section - Bottom with Deep McKinsey Blue Background */}
-                  <div className="bg-[#003A70] p-4 sm:p-5 md:p-6 flex-1 flex flex-col">
-                    <span className="text-[#7FB3D5] text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.1em] sm:tracking-[0.15em] mb-1.5 sm:mb-2 block">
+                  <div className="bg-base p-4 sm:p-5 md:p-6 flex-1 flex flex-col">
+                    <span className="text-secondary text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.1em] sm:tracking-[0.15em] mb-1.5 sm:mb-2 block">
                       {initiative.headline}
                     </span>
                     <h3 className="text-base sm:text-lg md:text-xl font-bold text-white leading-tight font-serif mb-2 sm:mb-3">
@@ -129,7 +129,7 @@ export function BusinessBuildingInitiatives() {
                       {initiative.description}
                     </p>
                     <div className="mt-auto">
-                      <span className="inline-flex items-center gap-1.5 sm:gap-2 px-4 sm:px-5 py-2 sm:py-2.5 bg-white text-[#003A70] rounded font-semibold text-xs sm:text-sm hover:bg-white/90 transition-colors">
+                      <span className="inline-flex items-center gap-1.5 sm:gap-2 px-4 sm:px-5 py-2 sm:py-2.5 bg-white text-base rounded font-semibold text-xs sm:text-sm hover:bg-white/90 transition-colors">
                         Learn more
                         <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 transform group-hover:translate-x-1 transition-transform duration-200" />
                       </span>
@@ -151,7 +151,7 @@ export function BusinessBuildingInitiatives() {
           className="text-center"
         >
           <Link href="/initiatives">
-            <button className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-[#003A70] text-white rounded font-semibold text-sm sm:text-base hover:bg-[#002855] transition-colors">
+            <button className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-base text-white rounded font-semibold text-sm sm:text-base hover:bg-base transition-colors">
               Explore All Initiatives
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>

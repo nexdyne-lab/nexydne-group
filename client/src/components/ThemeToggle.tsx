@@ -37,14 +37,14 @@ export function ThemeToggle() {
             variant="ghost"
             size="icon"
             onClick={toggleTheme}
-            className="relative h-9 w-9 text-slate-400 hover:text-white hover:bg-white/10 transition-colors"
+            className="relative h-9 w-9 text-muted-foreground/70 hover:text-white hover:bg-white/10 transition-colors"
           >
             <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <Terminal className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 text-[#00d4ff]" />
+            <Terminal className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 text-secondary" />
             <span className="sr-only">Toggle engineering mode</span>
           </Button>
         </TooltipTrigger>
-        <TooltipContent side="bottom" className="bg-[#0a0e3d] border-slate-700 text-white">
+        <TooltipContent side="bottom" className="bg-base border-slate-700 text-white">
           <p>{theme === "light" ? "Enable Engineering Mode" : "Disable Engineering Mode"}</p>
         </TooltipContent>
       </Tooltip>

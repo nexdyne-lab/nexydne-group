@@ -140,13 +140,13 @@ export default function DataSolutions() {
       <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-white">
         <div className="container max-w-5xl mx-auto">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">What We Do</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8 text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">What We Do</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8 text-charcoal">
               Turn data into competitive advantage
             </h2>
           </div>
           
-          <div className="prose prose-xl max-w-none text-gray-700 leading-relaxed space-y-6">
+          <div className="prose prose-xl max-w-none text-charcoal/80 leading-relaxed space-y-6">
             <p>
               Data is all around us. But are you actually leveraging it to its full potential? If you want to make your data truly valuable, you need expertise that spans from strategy to implementation, from reporting and dashboards to data engineering solutions.
             </p>
@@ -167,95 +167,95 @@ export default function DataSolutions() {
       />
 
       {/* Related Services Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-gray-500">Our Capabilities</p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-muted-foreground">Our Capabilities</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
               End-to-end data solutions
             </h2>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-7xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/data-solutions/data-strategy" className="block">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
-                  <TrendingUp className="w-8 h-8 text-[#2D5BFF] mr-3 flex-shrink-0" />
-                  <h3 className="text-xl font-bold text-gray-900">
+                  <TrendingUp className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
+                  <h3 className="text-xl font-bold text-charcoal">
                     Data Strategy
                   </h3>
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-charcoal/80 leading-relaxed">
                   Organizations that leverage data achieve success. We help you plot a winning strategy that aligns data initiatives with business objectives and ROI.
                 </p>
               </div>
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/data-solutions/data-platform" className="block">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
-                  <Database className="w-8 h-8 text-[#2D5BFF] mr-3 flex-shrink-0" />
-                  <h3 className="text-xl font-bold text-gray-900">
+                  <Database className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
+                  <h3 className="text-xl font-bold text-charcoal">
                     Data Platform
                   </h3>
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-charcoal/80 leading-relaxed">
                   A data-driven organization needs a solid foundation. We build the platform that fits your data ambitions—scalable, secure, and future-proof.
                 </p>
               </div>
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/data-solutions/data-analytics" className="block">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
-                  <BarChart3 className="w-8 h-8 text-[#2D5BFF] mr-3 flex-shrink-0" />
-                  <h3 className="text-xl font-bold text-gray-900">
+                  <BarChart3 className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
+                  <h3 className="text-xl font-bold text-charcoal">
                     Data Analytics
                   </h3>
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-charcoal/80 leading-relaxed">
                   Build data analytics dashboards that add real value with the right insights, so you know exactly where to optimize your business for maximum impact.
                 </p>
               </div>
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/data-solutions/data-training" className="block">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
-                  <GraduationCap className="w-8 h-8 text-[#2D5BFF] mr-3 flex-shrink-0" />
-                  <h3 className="text-xl font-bold text-gray-900">
+                  <GraduationCap className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
+                  <h3 className="text-xl font-bold text-charcoal">
                     Data Training
                   </h3>
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-charcoal/80 leading-relaxed">
                   Give your employees the knowledge and skills they need to get data under control, from foundational concepts to advanced analytics techniques.
                 </p>
               </div>
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/data-solutions/data-governance" className="block">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
-                  <Shield className="w-8 h-8 text-[#2D5BFF] mr-3 flex-shrink-0" />
-                  <h3 className="text-xl font-bold text-gray-900">
+                  <Shield className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
+                  <h3 className="text-xl font-bold text-charcoal">
                     Data Governance
                   </h3>
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-charcoal/80 leading-relaxed">
                   Work efficiently and securely with maximum control over access, compliance, and version control. Ensure the right information reaches the right people at the right time.
                 </p>
               </div>
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/data-solutions/data-consultancy" className="block">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-gray-200 hover:border-[#2D5BFF] transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
-                  <Users className="w-8 h-8 text-[#2D5BFF] mr-3 flex-shrink-0" />
-                  <h3 className="text-xl font-bold text-gray-900">
+                  <Users className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
+                  <h3 className="text-xl font-bold text-charcoal">
                     Data Consultancy
                   </h3>
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-charcoal/80 leading-relaxed">
                   Cut your time to market and strengthen your data team with experienced, certified professionals who help grow your organization's data maturity.
                 </p>
               </div>
@@ -280,7 +280,7 @@ export default function DataSolutions() {
       />
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-[#2D5BFF] text-white">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-primary text-white">
         <div className="container text-center max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8">
             Ready to unlock your data's potential?
@@ -289,7 +289,7 @@ export default function DataSolutions() {
             From strategy to implementation, we help you turn raw data into business value.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:p-5 md:p-6">
-            <Button className="bg-white text-[#2D5BFF] hover:bg-gray-100 text-lg px-10 py-6 rounded-full font-bold shadow-lg transition-all hover:scale-105">
+            <Button className="bg-white text-primary hover:bg-subtle text-lg px-10 py-6 rounded-full font-bold shadow-lg transition-all hover:scale-105">
               Start Your Data Journey
             </Button>
             <Button variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-10 py-6 rounded-full font-bold">

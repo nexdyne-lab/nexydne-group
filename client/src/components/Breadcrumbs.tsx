@@ -279,10 +279,10 @@ export default function Breadcrumbs({ className, variant = "light" }: Breadcrumb
     return { name, path, isLast };
   });
 
-  const textColor = variant === "light" ? "text-white/70 hover:text-white" : "text-gray-500 hover:text-gray-900";
-  const activeColor = variant === "light" ? "text-white" : "text-[#0051ff]";
-  const separatorColor = variant === "light" ? "text-white/40" : "text-gray-400";
-  const homeIconColor = variant === "light" ? "text-white/70 hover:text-white" : "text-gray-400 hover:text-[#0051ff]";
+  const textColor = variant === "light" ? "text-white/70 hover:text-white" : "text-muted-foreground hover:text-charcoal";
+  const activeColor = variant === "light" ? "text-white" : "text-primary";
+  const separatorColor = variant === "light" ? "text-white/40" : "text-muted-foreground/70";
+  const homeIconColor = variant === "light" ? "text-white/70 hover:text-white" : "text-muted-foreground/70 hover:text-primary";
 
   return (
     <nav className={cn("flex items-center text-sm mb-6 overflow-x-auto whitespace-nowrap pb-2", className)}>

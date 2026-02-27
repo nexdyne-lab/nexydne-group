@@ -92,7 +92,7 @@ export default function CustomerIntelligenceCaseStudies() {
   const otherStudies = caseStudies.filter(s => !s.featured);
 
   return (
-    <div className="min-h-screen bg-[#051C2C] font-sans text-white selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
       <SEO 
         title="Customer Intelligence Case Studies" 
         description="Real-world examples of how companies transformed customer understanding with data-driven intelligence."
@@ -103,7 +103,7 @@ export default function CustomerIntelligenceCaseStudies() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#051C2C] via-[#051C2C]/95 to-[#051C2C]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-base via-base/95 to-base" />
         </div>
         
         <div className="container px-4 md:px-12 relative z-10">
@@ -112,12 +112,12 @@ export default function CustomerIntelligenceCaseStudies() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <Link href="/solutions/data-driven-customer-intelligence" className="inline-flex items-center text-white/60 hover:text-[#0077B5] mb-8 transition-colors">
+            <Link href="/solutions/data-driven-customer-intelligence" className="inline-flex items-center text-white/60 hover:text-primary mb-8 transition-colors">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Customer Intelligence
             </Link>
             
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Case Studies
             </span>
             
@@ -133,7 +133,7 @@ export default function CustomerIntelligenceCaseStudies() {
       </section>
 
       {/* Featured Case Studies */}
-      <section className="py-16 bg-[#051C2C]">
+      <section className="py-16 bg-base">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -161,10 +161,10 @@ export default function CustomerIntelligenceCaseStudies() {
                       alt={study.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
+                    <div className="absolute inset-0 bg-charcoal/20 group-hover:bg-transparent transition-colors duration-500" />
                   </div>
-                  <div className="text-[#0077B5] text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
-                  <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-[#0077B5] transition-colors leading-tight">
+                  <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
+                  <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">
                     {study.title}
                   </h3>
                   <p className="text-white/60 text-sm mb-6 leading-relaxed">
@@ -173,7 +173,7 @@ export default function CustomerIntelligenceCaseStudies() {
                   <div className="flex gap-6 mb-6">
                     {study.stats.slice(0, 2).map((stat, i) => (
                       <div key={i}>
-                        <div className="text-2xl font-serif font-bold text-[#0077B5]">{stat.value}</div>
+                        <div className="text-2xl font-serif font-bold text-primary">{stat.value}</div>
                         <div className="text-white/40 text-xs">{stat.label}</div>
                       </div>
                     ))}
@@ -189,7 +189,7 @@ export default function CustomerIntelligenceCaseStudies() {
       </section>
 
       {/* Other Case Studies */}
-      <section className="py-16 bg-white text-[#051C2C]">
+      <section className="py-16 bg-white text-charcoal">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -217,24 +217,24 @@ export default function CustomerIntelligenceCaseStudies() {
                       alt={study.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
+                    <div className="absolute inset-0 bg-charcoal/10 group-hover:bg-transparent transition-colors duration-500" />
                   </div>
-                  <div className="text-[#0077B5] text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
-                  <h3 className="text-xl font-serif font-bold mb-4 group-hover:text-[#0077B5] transition-colors leading-tight">
+                  <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
+                  <h3 className="text-xl font-serif font-bold mb-4 group-hover:text-primary transition-colors leading-tight">
                     {study.title}
                   </h3>
-                  <p className="text-[#051C2C]/60 text-sm mb-6 leading-relaxed">
+                  <p className="text-charcoal/60 text-sm mb-6 leading-relaxed">
                     {study.description}
                   </p>
                   <div className="flex gap-6 mb-6">
                     {study.stats.slice(0, 2).map((stat, i) => (
                       <div key={i}>
-                        <div className="text-2xl font-serif font-bold text-[#0077B5]">{stat.value}</div>
-                        <div className="text-[#051C2C]/40 text-xs">{stat.label}</div>
+                        <div className="text-2xl font-serif font-bold text-primary">{stat.value}</div>
+                        <div className="text-charcoal/40 text-xs">{stat.label}</div>
                       </div>
                     ))}
                   </div>
-                  <div className="flex items-center text-[#0077B5] text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                  <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                     Read case study <ArrowRight className="ml-2 w-4 h-4" />
                   </div>
                 </Link>
@@ -245,7 +245,7 @@ export default function CustomerIntelligenceCaseStudies() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-[#0077B5]">
+      <section className="py-24 bg-primary">
         <div className="container px-4 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
             <motion.div
@@ -261,7 +261,7 @@ export default function CustomerIntelligenceCaseStudies() {
                 Let's discuss how customer intelligence can transform your business outcomes.
               </p>
               <Link href="/contact">
-                <Button className="bg-white text-[#0077B5] hover:bg-white/90 px-10 py-6 text-base font-semibold">
+                <Button className="bg-white text-primary hover:bg-white/90 px-10 py-6 text-base font-semibold">
                   Schedule a Consultation
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>

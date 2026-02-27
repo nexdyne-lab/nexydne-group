@@ -51,14 +51,14 @@ export default function ConsultationForm() {
     return (
       <div className="bg-white rounded-xl sm:rounded-xl sm:rounded-2xl p-12 shadow-xl sm:shadow-xl sm:shadow-2xl border border-slate-200">
         <div className="text-center">
-          <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-            <CheckCircle2 className="w-10 h-10 text-green-600" />
+          <div className="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <CheckCircle2 className="w-10 h-10 text-secondary" />
           </div>
-          <h3 className="text-3xl font-bold text-slate-900 mb-4">Thank you for your interest!</h3>
-          <p className="text-lg text-slate-600 mb-6">
+          <h3 className="text-3xl font-bold text-charcoal mb-4">Thank you for your interest!</h3>
+          <p className="text-lg text-muted-foreground mb-6">
             We've received your consultation request. Our business building team will reach out within 24 hours to schedule a discovery call.
           </p>
-          <p className="text-sm text-slate-500">
+          <p className="text-sm text-muted-foreground">
             In the meantime, check your email for our Business Building Playbook.
           </p>
         </div>
@@ -69,8 +69,8 @@ export default function ConsultationForm() {
   return (
     <div className="bg-white rounded-xl sm:rounded-xl sm:rounded-2xl p-12 shadow-xl sm:shadow-xl sm:shadow-2xl border border-slate-200">
       <div className="mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">
-        <h3 className="text-3xl font-bold text-slate-900 mb-4">Start Your Business Building Journey</h3>
-        <p className="text-lg text-slate-600">
+        <h3 className="text-3xl font-bold text-charcoal mb-4">Start Your Business Building Journey</h3>
+        <p className="text-lg text-muted-foreground">
           Schedule a consultation with our business building experts to discuss your growth objectives and explore how we can help you launch and scale new ventures.
         </p>
       </div>
@@ -78,7 +78,7 @@ export default function ConsultationForm() {
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:p-5 md:p-4 sm:p-5 md:p-6">
           <div>
-            <label htmlFor="firstName" className="block text-sm font-semibold text-slate-700 mb-2">
+            <label htmlFor="firstName" className="block text-sm font-semibold text-charcoal/80 mb-2">
               First Name *
             </label>
             <input
@@ -94,7 +94,7 @@ export default function ConsultationForm() {
           </div>
 
           <div>
-            <label htmlFor="lastName" className="block text-sm font-semibold text-slate-700 mb-2">
+            <label htmlFor="lastName" className="block text-sm font-semibold text-charcoal/80 mb-2">
               Last Name *
             </label>
             <input
@@ -111,7 +111,7 @@ export default function ConsultationForm() {
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-semibold text-slate-700 mb-2">
+          <label htmlFor="email" className="block text-sm font-semibold text-charcoal/80 mb-2">
             Work Email *
           </label>
           <input
@@ -128,7 +128,7 @@ export default function ConsultationForm() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:p-5 md:p-4 sm:p-5 md:p-6">
           <div>
-            <label htmlFor="company" className="block text-sm font-semibold text-slate-700 mb-2">
+            <label htmlFor="company" className="block text-sm font-semibold text-charcoal/80 mb-2">
               Company *
             </label>
             <input
@@ -144,7 +144,7 @@ export default function ConsultationForm() {
           </div>
 
           <div>
-            <label htmlFor="phone" className="block text-sm font-semibold text-slate-700 mb-2">
+            <label htmlFor="phone" className="block text-sm font-semibold text-charcoal/80 mb-2">
               Phone Number
             </label>
             <input
@@ -160,7 +160,7 @@ export default function ConsultationForm() {
         </div>
 
         <div>
-          <label htmlFor="interest" className="block text-sm font-semibold text-slate-700 mb-2">
+          <label htmlFor="interest" className="block text-sm font-semibold text-charcoal/80 mb-2">
             Primary Interest *
           </label>
           <select
@@ -183,7 +183,7 @@ export default function ConsultationForm() {
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-sm font-semibold text-slate-700 mb-2">
+          <label htmlFor="message" className="block text-sm font-semibold text-charcoal/80 mb-2">
             Tell us about your business building goals
           </label>
           <textarea
@@ -217,7 +217,7 @@ export default function ConsultationForm() {
           </Button>
         </div>
 
-        <p className="text-xs text-slate-500 text-center mt-4">
+        <p className="text-xs text-muted-foreground text-center mt-4">
           By submitting this form, you agree to our Privacy Policy. We'll use your information to contact you about our services and may send you relevant business building insights.
         </p>
       </form>

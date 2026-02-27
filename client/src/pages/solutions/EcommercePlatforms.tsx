@@ -10,7 +10,7 @@ export default function EcommercePlatforms() {
       <Navigation />
       
       {/* Hero Section - Maroon Background */}
-      <section className="relative bg-gradient-to-br from-red-900 via-[#2D5BFF] to-[#4169FF] text-white py-20 md:py-28">
+      <section className="relative bg-gradient-to-br from-red-900 via-primary to-primary text-white py-20 md:py-28">
         <div className="container">
           <div className="mb-8">
             <div className="flex items-center gap-2 text-sm opacity-90">
@@ -51,15 +51,15 @@ export default function EcommercePlatforms() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Want to know more?</h3>
-              <button className="border-2 border-slate-900 text-slate-900 px-8 py-3 rounded-full font-semibold hover:bg-slate-900 hover:text-white transition-colors">
+              <h3 className="text-xl font-bold text-charcoal mb-2">Want to know more?</h3>
+              <button className="border-2 border-slate-900 text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-slate-900 hover:text-white transition-colors">
                 Ask James Wilson
               </button>
             </div>
             
             {/* Benefits Grid */}
             <div>
-              <h2 className="text-4xl font-bold text-slate-900 mb-12">The benefits of e-commerce platforms</h2>
+              <h2 className="text-4xl font-bold text-charcoal mb-12">The benefits of e-commerce platforms</h2>
               
               <div className="space-y-8">
                 <div className="flex gap-6">
@@ -69,8 +69,8 @@ export default function EcommercePlatforms() {
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-slate-900 mb-3">Add new features faster</h3>
-                    <p className="text-slate-600 leading-relaxed">
+                    <h3 className="text-2xl font-bold text-charcoal mb-3">Add new features faster</h3>
+                    <p className="text-muted-foreground leading-relaxed">
                       An awesome e-commerce platform lets you launch new channels and features instantly. The key to flexibility and staying growth-ready is composable architecture that adapts to your business needs.
                     </p>
                   </div>
@@ -83,8 +83,8 @@ export default function EcommercePlatforms() {
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-slate-900 mb-3">Leap ahead of the competition</h3>
-                    <p className="text-slate-600 leading-relaxed">
+                    <h3 className="text-2xl font-bold text-charcoal mb-3">Leap ahead of the competition</h3>
+                    <p className="text-muted-foreground leading-relaxed">
                       Predict market shifts and leave your competitors in the dust. A MACH platform gives you ultimate flexibility. Get ready to be unstoppable with headless commerce and API-first architecture.
                     </p>
                   </div>
@@ -97,8 +97,8 @@ export default function EcommercePlatforms() {
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-slate-900 mb-3">The right tool for the right job</h3>
-                    <p className="text-slate-600 leading-relaxed">
+                    <h3 className="text-2xl font-bold text-charcoal mb-3">The right tool for the right job</h3>
+                    <p className="text-muted-foreground leading-relaxed">
                       The best tools in a single platform, optimizing relevance for every user. Just like a smartphone's unique set of apps, your e-commerce stack should be tailored to your business needs.
                     </p>
                   </div>
@@ -111,8 +111,8 @@ export default function EcommercePlatforms() {
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-slate-900 mb-3">Our e-commerce expertise</h3>
-                    <p className="text-slate-600 leading-relaxed">
+                    <h3 className="text-2xl font-bold text-charcoal mb-3">Our e-commerce expertise</h3>
+                    <p className="text-muted-foreground leading-relaxed">
                       Our knowledge of user experience, backend and APIs makes your e-commerce vision happen. Long story short? NEXDYNE gives you the very best results with proven platform expertise.
                     </p>
                   </div>
@@ -126,12 +126,12 @@ export default function EcommercePlatforms() {
       {/* About Section */}
       <section className="py-20 md:py-28 bg-slate-50">
         <div className="container">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">About e-commerce platforms</h2>
+          <h2 className="text-4xl font-bold text-charcoal mb-6">About e-commerce platforms</h2>
           <div className="max-w-4xl">
-            <p className="text-xl text-slate-600 leading-relaxed mb-6">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-6">
               A new e-commerce platform is your secret ingredient for growth. For clicks and bricks retailers, it means ultimate flexibility, the ability to launch new channels and seamless integration with your stores. In a fiercely competitive market, you need to lead the pack. No prizes for second best.
             </p>
-            <p className="text-xl text-slate-600 leading-relaxed">
+            <p className="text-xl text-muted-foreground leading-relaxed">
               A MACH platform with microservices and APIs gives you that much-needed edge. We make sure your transition is frictionless, giving you a solid basis that keeps you one step ahead of the competition.
             </p>
           </div>
@@ -147,8 +147,8 @@ export default function EcommercePlatforms() {
       {/* How We Work Section */}
       <section className="py-20 md:py-28 bg-white">
         <div className="container">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">How we build e-commerce platforms</h2>
-          <p className="text-xl text-slate-600 mb-12 max-w-3xl">
+          <h2 className="text-4xl font-bold text-charcoal mb-4">How we build e-commerce platforms</h2>
+          <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
             Our proven methodology combines MACH principles with composable commerce to deliver flexible, scalable platforms that grow with your business.
           </p>
           
@@ -156,8 +156,8 @@ export default function EcommercePlatforms() {
             {/* Step 1 */}
             <div className="bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-600 hover:shadow-lg transition-all duration-300">
               <div className="text-blue-600 font-bold text-sm mb-2">STEP 1</div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Discovery & Strategy</h3>
-              <p className="text-slate-600">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Discovery & Strategy</h3>
+              <p className="text-muted-foreground">
                 Analyze current platform, customer journeys, and business goals. Define platform requirements, technology stack, and migration roadmap aligned with growth objectives.
               </p>
             </div>
@@ -165,8 +165,8 @@ export default function EcommercePlatforms() {
             {/* Step 2 */}
             <div className="bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-600 hover:shadow-lg transition-all duration-300">
               <div className="text-blue-600 font-bold text-sm mb-2">STEP 2</div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Platform Design</h3>
-              <p className="text-slate-600">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Platform Design</h3>
+              <p className="text-muted-foreground">
                 Design composable architecture with headless commerce, API-first integrations, and microservices. Create UX/UI designs optimized for conversion and mobile experience.
               </p>
             </div>
@@ -174,8 +174,8 @@ export default function EcommercePlatforms() {
             {/* Step 3 */}
             <div className="bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-600 hover:shadow-lg transition-all duration-300">
               <div className="text-blue-600 font-bold text-sm mb-2">STEP 3</div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Build & Integrate</h3>
-              <p className="text-slate-600">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Build & Integrate</h3>
+              <p className="text-muted-foreground">
                 Implement platform with payment gateways, inventory management, CRM, and marketing tools. Conduct thorough testing including performance, security, and user acceptance.
               </p>
             </div>
@@ -183,8 +183,8 @@ export default function EcommercePlatforms() {
             {/* Step 4 */}
             <div className="bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-600 hover:shadow-lg transition-all duration-300">
               <div className="text-blue-600 font-bold text-sm mb-2">STEP 4</div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Launch & Optimize</h3>
-              <p className="text-slate-600">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Launch & Optimize</h3>
+              <p className="text-muted-foreground">
                 Execute phased launch with data migration and traffic cutover. Continuously optimize conversion rates, performance, and add new features based on analytics.
               </p>
             </div>
@@ -195,8 +195,8 @@ export default function EcommercePlatforms() {
       {/* Platform Partners Section */}
       <section className="py-20 md:py-28 bg-slate-50">
         <div className="container">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">E-commerce platform expertise</h2>
-          <p className="text-xl text-slate-600 mb-12 max-w-3xl">
+          <h2 className="text-4xl font-bold text-charcoal mb-4">E-commerce platform expertise</h2>
+          <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
             We partner with leading e-commerce platforms to deliver best-in-class solutions tailored to your business needs.
           </p>
           
@@ -209,12 +209,12 @@ export default function EcommercePlatforms() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900">Commercetools</h3>
+                <h3 className="text-2xl font-bold text-charcoal">Commercetools</h3>
               </div>
-              <p className="text-slate-600 mb-4">
+              <p className="text-muted-foreground mb-4">
                 API-first, headless commerce platform built on MACH principles. Enables ultimate flexibility with microservices architecture and cloud-native infrastructure.
               </p>
-              <ul className="space-y-2 text-slate-600">
+              <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -244,12 +244,12 @@ export default function EcommercePlatforms() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900">Shopware</h3>
+                <h3 className="text-2xl font-bold text-charcoal">Shopware</h3>
               </div>
-              <p className="text-slate-600 mb-4">
+              <p className="text-muted-foreground mb-4">
                 Open-source e-commerce platform with powerful features for B2C and B2B. Combines flexibility with enterprise-grade capabilities for mid-market retailers.
               </p>
-              <ul className="space-y-2 text-slate-600">
+              <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -279,12 +279,12 @@ export default function EcommercePlatforms() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900">Intershop</h3>
+                <h3 className="text-2xl font-bold text-charcoal">Intershop</h3>
               </div>
-              <p className="text-slate-600 mb-4">
+              <p className="text-muted-foreground mb-4">
                 Enterprise B2B e-commerce platform with complex pricing, quoting, and procurement workflows. Ideal for manufacturers and distributors with sophisticated requirements.
               </p>
-              <ul className="space-y-2 text-slate-600">
+              <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -312,8 +312,8 @@ export default function EcommercePlatforms() {
       {/* Case Studies Section */}
       <section className="py-20 md:py-28 bg-blue-50">
         <div className="container">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">Success stories</h2>
-          <p className="text-xl text-slate-600 mb-12 max-w-3xl">
+          <h2 className="text-4xl font-bold text-charcoal mb-4">Success stories</h2>
+          <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
             See how we've built cutting-edge e-commerce platforms that drive growth and exceed expectations.
           </p>
           
@@ -330,24 +330,24 @@ export default function EcommercePlatforms() {
                 </div>
                 <div className="p-6">
                   <div className="text-sm text-blue-600 font-semibold mb-2">FASHION RETAIL</div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-2 group-hover:text-blue-600 transition-colors">
                     Fashion Retailer Achieves 200% Mobile Conversion Growth
                   </h3>
-                  <p className="text-slate-600 mb-4">
+                  <p className="text-muted-foreground mb-4">
                     Implemented headless commerce with Commercetools enabling omnichannel experiences that increased mobile conversion by 200% and reduced time-to-market for new features by 75%.
                   </p>
                   <div className="flex gap-4 text-sm">
                     <div>
                       <div className="text-2xl font-bold text-blue-600">200%</div>
-                      <div className="text-slate-500">Mobile Conv.</div>
+                      <div className="text-muted-foreground">Mobile Conv.</div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-blue-600">75%</div>
-                      <div className="text-slate-500">Faster Launch</div>
+                      <div className="text-muted-foreground">Faster Launch</div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-blue-600">40%</div>
-                      <div className="text-slate-500">More Orders</div>
+                      <div className="text-muted-foreground">More Orders</div>
                     </div>
                   </div>
                 </div>
@@ -366,24 +366,24 @@ export default function EcommercePlatforms() {
                 </div>
                 <div className="p-6">
                   <div className="text-sm text-blue-600 font-semibold mb-2">OPTICS RETAIL</div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-2 group-hover:text-blue-600 transition-colors">
                     A Cutting-Edge Webshop Platform for Global Leader
                   </h3>
-                  <p className="text-slate-600 mb-4">
+                  <p className="text-muted-foreground mb-4">
                     Built innovative e-commerce platform with virtual try-on, prescription management, and seamless store integration enabling 150% online revenue growth for global optics retailer.
                   </p>
                   <div className="flex gap-4 text-sm">
                     <div>
                       <div className="text-2xl font-bold text-blue-600">150%</div>
-                      <div className="text-slate-500">Revenue</div>
+                      <div className="text-muted-foreground">Revenue</div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-blue-600">3x</div>
-                      <div className="text-slate-500">Traffic</div>
+                      <div className="text-muted-foreground">Traffic</div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-blue-600">60%</div>
-                      <div className="text-slate-500">Mobile Sales</div>
+                      <div className="text-muted-foreground">Mobile Sales</div>
                     </div>
                   </div>
                 </div>
@@ -402,24 +402,24 @@ export default function EcommercePlatforms() {
                 </div>
                 <div className="p-6">
                   <div className="text-sm text-blue-600 font-semibold mb-2">B2B MANUFACTURING</div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-2 group-hover:text-blue-600 transition-colors">
                     B2B Platform Automates 80% of Order Processing
                   </h3>
-                  <p className="text-slate-600 mb-4">
+                  <p className="text-muted-foreground mb-4">
                     Implemented Intershop B2B commerce with custom pricing, approval workflows, and ERP integration automating 80% of orders and reducing processing time from days to minutes.
                   </p>
                   <div className="flex gap-4 text-sm">
                     <div>
                       <div className="text-2xl font-bold text-blue-600">80%</div>
-                      <div className="text-slate-500">Automated</div>
+                      <div className="text-muted-foreground">Automated</div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-blue-600">90%</div>
-                      <div className="text-slate-500">Faster Orders</div>
+                      <div className="text-muted-foreground">Faster Orders</div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-blue-600">$2M</div>
-                      <div className="text-slate-500">Cost Savings</div>
+                      <div className="text-muted-foreground">Cost Savings</div>
                     </div>
                   </div>
                 </div>
@@ -432,81 +432,81 @@ export default function EcommercePlatforms() {
       {/* E-commerce Capabilities Section */}
       <section className="py-20 md:py-28 bg-white">
         <div className="container">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">E-commerce capabilities & services</h2>
-          <p className="text-xl text-slate-600 mb-12 max-w-3xl">
+          <h2 className="text-4xl font-bold text-charcoal mb-4">E-commerce capabilities & services</h2>
+          <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
             Our e-commerce expertise spans modern platforms and best practices.
           </p>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="border-l-4 border-blue-600 pl-6">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Headless Commerce</h3>
-              <p className="text-slate-600 mb-3">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Headless Commerce</h3>
+              <p className="text-muted-foreground mb-3">
                 Decouple frontend from backend with headless architecture. Enable omnichannel experiences, faster innovation, and ultimate flexibility.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">React</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Next.js</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Vue.js</span>
+                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">React</span>
+                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Next.js</span>
+                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Vue.js</span>
               </div>
             </div>
 
             <div className="border-l-4 border-blue-600 pl-6">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Payment Integration</h3>
-              <p className="text-slate-600 mb-3">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Payment Integration</h3>
+              <p className="text-muted-foreground mb-3">
                 Integrate multiple payment gateways with Stripe, Adyen, or PayPal. Support local payment methods, subscriptions, and fraud prevention.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Stripe</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Adyen</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">PayPal</span>
+                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Stripe</span>
+                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Adyen</span>
+                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">PayPal</span>
               </div>
             </div>
 
             <div className="border-l-4 border-blue-600 pl-6">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Search & Merchandising</h3>
-              <p className="text-slate-600 mb-3">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Search & Merchandising</h3>
+              <p className="text-muted-foreground mb-3">
                 Implement AI-powered search with Algolia or Elasticsearch. Enable faceted navigation, personalized recommendations, and visual search.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Algolia</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Elasticsearch</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Bloomreach</span>
+                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Algolia</span>
+                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Elasticsearch</span>
+                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Bloomreach</span>
               </div>
             </div>
 
             <div className="border-l-4 border-blue-600 pl-6">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Order Management</h3>
-              <p className="text-slate-600 mb-3">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Order Management</h3>
+              <p className="text-muted-foreground mb-3">
                 Centralize order processing across channels with OMS. Manage inventory, fulfillment, returns, and customer service from single platform.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Fluent Commerce</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Manhattan</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Brightpearl</span>
+                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Fluent Commerce</span>
+                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Manhattan</span>
+                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Brightpearl</span>
               </div>
             </div>
 
             <div className="border-l-4 border-blue-600 pl-6">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Marketing Automation</h3>
-              <p className="text-slate-600 mb-3">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Marketing Automation</h3>
+              <p className="text-muted-foreground mb-3">
                 Integrate marketing tools for email campaigns, abandoned cart recovery, and customer segmentation. Automate personalized communications.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Klaviyo</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Braze</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Mailchimp</span>
+                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Klaviyo</span>
+                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Braze</span>
+                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Mailchimp</span>
               </div>
             </div>
 
             <div className="border-l-4 border-blue-600 pl-6">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Analytics & Optimization</h3>
-              <p className="text-slate-600 mb-3">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Analytics & Optimization</h3>
+              <p className="text-muted-foreground mb-3">
                 Track customer behavior, conversion funnels, and revenue metrics. Implement A/B testing and continuous optimization programs.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Google Analytics</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Optimizely</span>
-                <span className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Hotjar</span>
+                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Google Analytics</span>
+                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Optimizely</span>
+                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Hotjar</span>
               </div>
             </div>
           </div>
@@ -516,8 +516,8 @@ export default function EcommercePlatforms() {
       {/* Our Solutions Section */}
       <section className="py-20 md:py-28 bg-slate-50">
         <div className="container">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">Our e-commerce solutions</h2>
-          <p className="text-xl text-slate-600 mb-12 max-w-3xl">
+          <h2 className="text-4xl font-bold text-charcoal mb-4">Our e-commerce solutions</h2>
+          <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
             NEXDYNE has all the tools to take your e-commerce platform to new heights. Want a top-notch user experience design, solid backend, smart APIs? No sweat. Whether you're a pure player or omnichannel pro, we prime your platform for success from the first design to the last integration. Ready for more? Our experts are ready to help you take the next big step.
           </p>
           
@@ -529,22 +529,22 @@ export default function EcommercePlatforms() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900">James Wilson</h3>
+                <h3 className="text-2xl font-bold text-charcoal">James Wilson</h3>
               </div>
-              <p className="text-slate-700 mb-4">Ecommerce Director</p>
+              <p className="text-charcoal/80 mb-4">Ecommerce Director</p>
               <div className="flex gap-4">
-                <button className="bg-slate-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-slate-800 transition-colors">
+                <button className="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors duration-200 ease-in-out">
                   Get in touch
                 </button>
-                <button className="border-2 border-slate-900 text-slate-900 px-6 py-3 rounded-full font-semibold hover:bg-slate-900 hover:text-white transition-colors">
+                <button className="border-2 border-primary text-charcoal px-6 py-3 rounded-full font-semibold hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out">
                   Schedule a meeting
                 </button>
               </div>
             </div>
 
             <div className="bg-white p-8 rounded-lg border-2 border-slate-200">
-              <h3 className="text-xl font-bold text-slate-900 mb-4">Why Incentro</h3>
-              <p className="text-slate-600">
+              <h3 className="text-xl font-bold text-charcoal mb-4">Why Incentro</h3>
+              <p className="text-muted-foreground">
                 Whether you're looking for a strategic partner, a boost for your digital transformation, or the ultimate customer experience for your customers, you've come to the right place. With our next-generation digital solutions, you'll always be one step ahead of the competition.
               </p>
             </div>
@@ -553,7 +553,7 @@ export default function EcommercePlatforms() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-20 md:py-28 bg-gradient-to-br from-red-900 to-red-950 text-white overflow-hidden">
+      <section className="relative py-20 md:py-28 bg-primary text-white overflow-hidden">
         {/* Curved Top Divider */}
         <div className="absolute top-0 left-0 right-0 -mt-1">
           <svg className="w-full h-16 text-white" viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -568,10 +568,10 @@ export default function EcommercePlatforms() {
               Let's create an e-commerce platform that's flexible, scalable, and always one step ahead. Our experts are ready to bring your vision to life.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition-colors">
+              <button className="bg-white text-primary px-8 py-4 rounded-full font-semibold hover:bg-white/90 transition-colors duration-200 ease-in-out">
                 Schedule a consultation
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-red-900 transition-colors">
+              <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary transition-colors duration-200 ease-in-out">
                 Download platform guide
               </button>
             </div>

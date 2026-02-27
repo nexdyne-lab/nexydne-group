@@ -16,7 +16,7 @@ export default function IntelligentAdoption() {
       <Navigation />
       
       {/* Hero Section - Clean minimal design */}
-      <section className="relative min-h-[85vh] flex items-center pt-20 overflow-hidden bg-black">
+      <section className="relative min-h-[85vh] flex items-center pt-20 overflow-hidden bg-charcoal">
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -45,20 +45,20 @@ export default function IntelligentAdoption() {
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <p className="text-4xl md:text-5xl font-bold text-slate-900 mb-2">92%</p>
-              <p className="text-slate-600">Technology adoption rate</p>
+              <p className="text-4xl md:text-5xl font-bold text-charcoal mb-2">92%</p>
+              <p className="text-muted-foreground">Technology adoption rate</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl md:text-5xl font-bold text-slate-900 mb-2">4.2x</p>
-              <p className="text-slate-600">Faster time-to-value</p>
+              <p className="text-4xl md:text-5xl font-bold text-charcoal mb-2">4.2x</p>
+              <p className="text-muted-foreground">Faster time-to-value</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl md:text-5xl font-bold text-slate-900 mb-2">78%</p>
-              <p className="text-slate-600">Reduction in resistance</p>
+              <p className="text-4xl md:text-5xl font-bold text-charcoal mb-2">78%</p>
+              <p className="text-muted-foreground">Reduction in resistance</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl md:text-5xl font-bold text-slate-900 mb-2">95%</p>
-              <p className="text-slate-600">Employee satisfaction post-change</p>
+              <p className="text-4xl md:text-5xl font-bold text-charcoal mb-2">95%</p>
+              <p className="text-muted-foreground">Employee satisfaction post-change</p>
             </div>
           </div>
         </div>
@@ -71,23 +71,23 @@ export default function IntelligentAdoption() {
             <p className="text-violet-600 text-sm font-medium tracking-widest uppercase mb-4">
               The Challenge
             </p>
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-slate-900 mb-8">
+            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-8">
               Technology fails when people aren't ready
             </h2>
             <div className="prose prose-lg prose-slate max-w-none">
-              <p className="text-slate-600 leading-relaxed mb-6">
+              <p className="text-muted-foreground leading-relaxed mb-6">
                 The statistics are sobering: 70% of digital transformation initiatives fail to achieve 
                 their objectives. The culprit isn't usually the technology—it's the human response to 
                 change. Employees who feel threatened by automation resist it. Teams that don't understand 
                 new systems work around them. Leaders who can't articulate the vision fail to inspire adoption.
               </p>
-              <p className="text-slate-600 leading-relaxed mb-6">
+              <p className="text-muted-foreground leading-relaxed mb-6">
                 For mid-market organizations, these challenges are amplified. You don't have the luxury 
                 of dedicated change management teams or months of runway to prepare your workforce. 
                 Every day of delayed adoption costs money and erodes the competitive advantage your 
                 technology investment was meant to create.
               </p>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed">
                 The solution isn't to slow down transformation—it's to approach change management with 
                 the same rigor and intentionality you bring to technology implementation. This is what 
                 sets successful transformations apart from expensive failures.
@@ -104,14 +104,14 @@ export default function IntelligentAdoption() {
             <p className="text-violet-600 text-sm font-medium tracking-widest uppercase mb-4">
               Our Approach
             </p>
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-slate-900 mb-12">
+            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-12">
               Change management that accelerates transformation
             </h2>
             
             <div className="space-y-12">
               <div className="border-l-4 border-violet-600 pl-8">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Readiness Assessment</h3>
-                <p className="text-slate-600 leading-relaxed">
+                <h3 className="text-xl font-bold text-charcoal mb-4">Readiness Assessment</h3>
+                <p className="text-muted-foreground leading-relaxed">
                   Before any technology deployment, we assess your organization's readiness for change. 
                   We identify potential resistance points, evaluate leadership alignment, and understand 
                   the cultural factors that will influence adoption. This diagnostic shapes a change 
@@ -120,8 +120,8 @@ export default function IntelligentAdoption() {
               </div>
               
               <div className="border-l-4 border-violet-600 pl-8">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Leadership Alignment</h3>
-                <p className="text-slate-600 leading-relaxed">
+                <h3 className="text-xl font-bold text-charcoal mb-4">Leadership Alignment</h3>
+                <p className="text-muted-foreground leading-relaxed">
                   Successful change starts at the top. We work with your leadership team to build a 
                   compelling vision for transformation, develop consistent messaging, and equip leaders 
                   to champion change throughout the organization. When leaders are aligned and visible, 
@@ -130,8 +130,8 @@ export default function IntelligentAdoption() {
               </div>
               
               <div className="border-l-4 border-violet-600 pl-8">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Workforce Enablement</h3>
-                <p className="text-slate-600 leading-relaxed">
+                <h3 className="text-xl font-bold text-charcoal mb-4">Workforce Enablement</h3>
+                <p className="text-muted-foreground leading-relaxed">
                   We design and deliver training programs that go beyond button-clicking tutorials. 
                   Our approach helps employees understand not just how to use new systems, but why 
                   these changes matter and how they'll benefit from them. We create internal champions 
@@ -140,8 +140,8 @@ export default function IntelligentAdoption() {
               </div>
               
               <div className="border-l-4 border-violet-600 pl-8">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Adoption Monitoring</h3>
-                <p className="text-slate-600 leading-relaxed">
+                <h3 className="text-xl font-bold text-charcoal mb-4">Adoption Monitoring</h3>
+                <p className="text-muted-foreground leading-relaxed">
                   Change doesn't end at go-live. We implement adoption analytics that track how 
                   employees are actually using new systems, identify struggling teams, and surface 
                   opportunities for additional support. This data-driven approach ensures you achieve 
@@ -160,7 +160,7 @@ export default function IntelligentAdoption() {
             <p className="text-violet-600 text-sm font-medium tracking-widest uppercase mb-4">
               Capabilities
             </p>
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-slate-900 mb-12">
+            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-12">
               What we deliver
             </h2>
             
@@ -239,7 +239,7 @@ export default function IntelligentAdoption() {
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-['EB Garamond',serif] font-bold text-slate-900 mb-8">Related Services</h2>
+            <h2 className="text-2xl font-['EB Garamond',serif] font-bold text-charcoal mb-8">Related Services</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
               <BainHoverCard
@@ -261,18 +261,18 @@ export default function IntelligentAdoption() {
       <section className="py-20 bg-slate-50">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-slate-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-6">
               Ready to ensure your transformation succeeds?
             </h2>
-            <p className="text-xl text-slate-600 mb-8">
+            <p className="text-xl text-muted-foreground mb-8">
               Let's discuss how change management can accelerate your technology adoption and maximize ROI.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#4ade80] text-slate-900 font-semibold rounded-full hover:bg-[#22c55e] transition-colors">
+              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-secondary text-charcoal font-semibold rounded-full hover:bg-secondary transition-colors">
                 Schedule a Consultation
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
-              <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center justify-center px-8 py-4 border border-slate-300 text-slate-700 font-semibold rounded-full hover:bg-slate-100 transition-colors">
+              <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center justify-center px-8 py-4 border border-slate-300 text-charcoal/80 font-semibold rounded-full hover:bg-slate-100 transition-colors">
                 Explore AI & Technology
               </Link>
             </div>

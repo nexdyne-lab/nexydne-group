@@ -39,16 +39,16 @@ const insights: (Insight & { href: string })[] = [
 
 export default function RelatedInsights() {
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-[#050829] border-t border-white/5">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-base border-t border-white/5">
       <div className="container px-6 md:px-12">
         <div className="flex items-end justify-between mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
           <div>
             <h2 className="text-3xl font-bold text-white mb-4">Featured Thinking</h2>
-            <p className="text-slate-400 max-w-xl">
+            <p className="text-muted-foreground/70 max-w-xl">
               Latest perspectives from our engineering and strategy teams.
             </p>
           </div>
-          <button className="hidden md:flex items-center text-[#00d4ff] hover:text-white transition-colors duration-300 font-medium">
+          <button className="hidden md:flex items-center text-secondary hover:text-white transition-colors duration-300 font-medium">
             View all insights <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4" />
           </button>
         </div>
@@ -57,14 +57,14 @@ export default function RelatedInsights() {
           {insights.map((item, i) => (
             <a key={i} href={item.href} className="group cursor-pointer block">
               <div className="relative overflow-hidden rounded-lg sm:rounded-lg sm:rounded-xl mb-6 aspect-video">
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300 z-10" />
+                <div className="absolute inset-0 bg-charcoal/20 group-hover:bg-transparent transition-colors duration-300 z-10" />
                 <img 
                   src={item.image} 
                   alt={item.title}
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute top-4 left-4 z-20">
-                  <span className="px-3 py-1 rounded-full bg-black/50 backdrop-blur-md border border-white/10 text-xs font-medium text-white flex items-center gap-2">
+                  <span className="px-3 py-1 rounded-full bg-charcoal/50 backdrop-blur-md border border-white/10 text-xs font-medium text-white flex items-center gap-2">
                     {item.type === "Article" && <FileText className="w-3 h-3" />}
                     {item.type === "Video" && <Video className="w-3 h-3" />}
                     {item.type === "Podcast" && <Mic className="w-3 h-3" />}
@@ -73,16 +73,16 @@ export default function RelatedInsights() {
                 </div>
               </div>
               
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#00d4ff] transition-colors duration-300">
+              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-secondary transition-colors duration-300">
                 {item.title}
               </h3>
-              <p className="text-slate-400 text-sm leading-relaxed mb-4 line-clamp-2">
+              <p className="text-muted-foreground/70 text-sm leading-relaxed mb-4 line-clamp-2">
                 {item.description}
               </p>
-              <div className="flex items-center text-xs text-slate-500 font-medium">
+              <div className="flex items-center text-xs text-muted-foreground font-medium">
                 <span>{item.readTime}</span>
                 <span className="mx-2">•</span>
-                <span className="group-hover:translate-x-1 transition-transform duration-300 flex items-center text-[#00d4ff]">
+                <span className="group-hover:translate-x-1 transition-transform duration-300 flex items-center text-secondary">
                   Read now <ArrowRight className="ml-1 w-3 h-3" />
                 </span>
               </div>
@@ -91,7 +91,7 @@ export default function RelatedInsights() {
         </div>
         
         <div className="mt-12 md:hidden text-center">
-          <button className="inline-flex items-center text-[#00d4ff] hover:text-white transition-colors duration-300 font-medium">
+          <button className="inline-flex items-center text-secondary hover:text-white transition-colors duration-300 font-medium">
             View all insights <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4" />
           </button>
         </div>

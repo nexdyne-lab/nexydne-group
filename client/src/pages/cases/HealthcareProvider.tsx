@@ -36,10 +36,10 @@ export default function HealthcareProvider() {
       <section className="py-20">
         <div className="container max-w-4xl">
           <h2 className="text-4xl font-bold mb-6">The Challenge</h2>
-          <p className="text-lg text-slate-700 leading-relaxed mb-6">
+          <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
             A multi-location healthcare network serving 50,000+ patients annually was overwhelmed by administrative burden. Their staff spent 300+ hours weekly manually transferring patient data between their EHR system, insurance portals, and billing platform. Each patient visit required data entry across four different systems, creating bottlenecks that delayed care and frustrated both staff and patients.
           </p>
-          <p className="text-lg text-slate-700 leading-relaxed">
+          <p className="text-lg text-charcoal/80 leading-relaxed">
             Manual data entry introduced errors that cascaded through the revenue cycle—incorrect insurance information, missing authorizations, duplicate claims. These mistakes cost the network $3M+ annually in claim denials, delayed reimbursements, and administrative appeals. Staff burnout from repetitive data entry was driving turnover rates above 40%, creating additional recruitment and training costs.
           </p>
         </div>
@@ -49,14 +49,14 @@ export default function HealthcareProvider() {
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl">
           <h2 className="text-4xl font-bold mb-6">The Solution</h2>
-          <p className="text-lg text-slate-700 leading-relaxed mb-6">
+          <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
             NEXDYNE deployed an end-to-end automation solution that integrated patient registration, insurance verification, and claims processing. RPA bots extracted patient information from intake forms, verified insurance eligibility in real-time, updated EHR records, and submitted claims automatically—transforming hours of manual work into minutes of automated execution.
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 my-12">
             <div className="bg-white p-8 rounded-lg border border-slate-200">
               <h3 className="text-2xl font-bold mb-4">Implementation Approach</h3>
-              <ul className="space-y-3 text-slate-700">
+              <ul className="space-y-3 text-charcoal/80">
                 <li className="flex items-start">
                   <ArrowRight className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
                   <span>Patient journey mapping with clinical and admin staff</span>
@@ -78,7 +78,7 @@ export default function HealthcareProvider() {
 
             <div className="bg-white p-8 rounded-lg border border-slate-200">
               <h3 className="text-2xl font-bold mb-4">Technical Details</h3>
-              <ul className="space-y-3 text-slate-700">
+              <ul className="space-y-3 text-charcoal/80">
                 <li className="flex items-start">
                   <ArrowRight className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
                   <span>UiPath with HIPAA-compliant credential management</span>
@@ -109,21 +109,21 @@ export default function HealthcareProvider() {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
               <div className="text-5xl font-bold text-blue-500 mb-2">40%</div>
-              <div className="text-lg text-slate-600">Reduction in admin overhead</div>
+              <div className="text-lg text-muted-foreground">Reduction in admin overhead</div>
             </div>
             <div className="text-center">
               <div className="text-5xl font-bold text-blue-500 mb-2">50%</div>
-              <div className="text-lg text-slate-600">Faster claim processing</div>
+              <div className="text-lg text-muted-foreground">Faster claim processing</div>
             </div>
             <div className="text-center">
               <div className="text-5xl font-bold text-blue-500 mb-2">95%</div>
-              <div className="text-lg text-slate-600">Data accuracy rate</div>
+              <div className="text-lg text-muted-foreground">Data accuracy rate</div>
             </div>
           </div>
 
           <div className="bg-blue-50 p-8 rounded-lg">
             <h3 className="text-2xl font-bold mb-4">Business Impact</h3>
-            <ul className="space-y-3 text-slate-700">
+            <ul className="space-y-3 text-charcoal/80">
               <li className="flex items-start">
                 <ArrowRight className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
                 <span><strong>Administrative efficiency:</strong> Freed 240 hours weekly, allowing staff to focus on patient care and complex case management</span>
@@ -146,10 +146,10 @@ export default function HealthcareProvider() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#2D5BFF] via-[#4169FF] to-[#5B7FFF] text-white">
+      <section className="py-20 bg-gradient-to-br from-primary via-primary to-secondary text-white">
         <div className="container text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to transform your operations?</h2>
-          <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground/50 mb-8 max-w-2xl mx-auto">
             Let's discuss how automation can reduce administrative burden and improve patient care delivery.
           </p>
           <div className="flex gap-4 justify-center">

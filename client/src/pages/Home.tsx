@@ -11,7 +11,7 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-[#1A1A1A]">
+    <div className="min-h-screen bg-white text-charcoal">
       <SEO 
         title="Home" 
         description="NexDyne Technologies delivers intelligent automation and data-driven solutions to transform your business. Unlock new growth with our AI and strategy expertise."
@@ -35,11 +35,11 @@ export default function Home() {
               transition={{ duration: 0.7 }}
               className="text-center"
             >
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-[#1A1A1A] leading-[1.2]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-charcoal leading-[1.2]">
               Governing Intelligence. Scaling Judgment. Leading in the Age of Intelligent Machines.
 
               </h2>
-              <p className="mt-4 md:mt-6 text-sm sm:text-base md:text-[17px] text-[#4a4a4a] leading-relaxed">
+              <p className="mt-4 md:mt-6 text-sm  md:text-[17px] text-charcoal leading-relaxed">
               The organizations that will define the next decade will be the ones that govern intelligence as deliberately as they deploy it. NexDyne combines deep industry expertise with structured intelligence governance to help ambitious leaders harness AI, data, and operational power — while strengthening the human judgment, accountability, and trust that no machine can provide. From modernizing legacy systems to designing AI-enabled operating models, we build transformations that perform, endure, and scale. NexDyne is where governance meets growth.
 
               </p>
@@ -47,29 +47,29 @@ export default function Home() {
 
             {/* NexDyne Spotlight - Compact Horizontal Bar */}
             <div className="mt-8 md:mt-10">
-              <div className="border-t border-b border-gray-200 px-4 sm:px-6 py-4">
+              <div className="border-t border-b border-border px-4 sm:px-6 py-4">
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-8 md:gap-10">
-                  <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#1A1A1A]/40 shrink-0">
+                  <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-charcoal/40 shrink-0">
                     NexDyne Spotlight
                   </span>
                   <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 md:gap-10">
                     <Link href="/capabilities/artificial-intelligence">
-                      <span className="text-[12px] sm:text-[13px] font-bold uppercase tracking-[0.15em] text-[#1A1A1A] underline underline-offset-4 decoration-1 hover:text-[#00d4ff] hover:decoration-[#00d4ff] transition-colors cursor-pointer">
+                      <span className="text-[12px] sm:text-[13px] font-bold uppercase tracking-[0.15em] text-charcoal underline underline-offset-4 decoration-1 hover:text-secondary hover:decoration-secondary transition-colors cursor-pointer">
                         Artificial Intelligence
                       </span>
                     </Link>
                     <Link href="/capabilities/technology">
-                      <span className="text-[12px] sm:text-[13px] font-bold uppercase tracking-[0.15em] text-[#1A1A1A] underline underline-offset-4 decoration-1 hover:text-[#00d4ff] hover:decoration-[#00d4ff] transition-colors cursor-pointer">
+                      <span className="text-[12px] sm:text-[13px] font-bold uppercase tracking-[0.15em] text-charcoal underline underline-offset-4 decoration-1 hover:text-secondary hover:decoration-secondary transition-colors cursor-pointer">
                         Technology
                       </span>
                     </Link>
                     <Link href="/capabilities/growth-marketing-sales">
-                      <span className="text-[12px] sm:text-[13px] font-bold uppercase tracking-[0.15em] text-[#1A1A1A] underline underline-offset-4 decoration-1 hover:text-[#00d4ff] hover:decoration-[#00d4ff] transition-colors cursor-pointer">
+                      <span className="text-[12px] sm:text-[13px] font-bold uppercase tracking-[0.15em] text-charcoal underline underline-offset-4 decoration-1 hover:text-secondary hover:decoration-secondary transition-colors cursor-pointer">
                         Growth & Marketing
                       </span>
                     </Link>
                     <Link href="/insights/ceo-guide-data-modernization">
-                      <span className="text-[12px] sm:text-[13px] font-bold uppercase tracking-[0.15em] text-[#1A1A1A] underline underline-offset-4 decoration-1 hover:text-[#00d4ff] hover:decoration-[#00d4ff] transition-colors cursor-pointer">
+                      <span className="text-[12px] sm:text-[13px] font-bold uppercase tracking-[0.15em] text-charcoal underline underline-offset-4 decoration-1 hover:text-secondary hover:decoration-secondary transition-colors cursor-pointer">
                         CEO Agenda
                       </span>
                     </Link>
@@ -96,7 +96,7 @@ export default function Home() {
               alt="AI and Technology Consulting" 
               className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
-            <div className="absolute inset-0 bg-black/10" />
+            <div className="absolute inset-0 bg-charcoal/10" />
           </motion.div>
 
           {/* Right - Text content - animate on mount for reliable initial load */}
@@ -106,22 +106,22 @@ export default function Home() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
             className="bg-white flex flex-col justify-center px-8 sm:px-12 md:px-16 lg:px-20 py-16 md:py-20"
           >
-            <span className="text-[11px] font-bold text-[#1A1A1A] uppercase tracking-[0.2em] mb-5 block">AI & Technology</span>
-            <h2 className="text-3xl sm:text-4xl md:text-[42px] text-[#1A1A1A] leading-[1.15] mb-6">
+            <span className="text-[11px] font-bold text-charcoal uppercase tracking-[0.2em] mb-5 block">AI & Technology</span>
+            <h2 className="text-3xl sm:text-4xl md:text-[42px] text-charcoal leading-[1.15] mb-6">
               AI and Technology Consulting
             </h2>
-            <p className="text-base sm:text-lg text-[#4a4a4a] leading-relaxed mb-10">
+            <p className="text-base sm:text-lg text-charcoal leading-relaxed mb-10">
               Learn how our AI and Technology consulting is helping clients to outcompete and deliver value at scale through the latest trends in tech. From intelligent automation and machine learning to cloud-native architecture and data strategy, we partner with organizations to build resilient, future-ready technology foundations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/capabilities/ai-technology-consulting">
-                <span className="inline-flex items-center gap-3 px-7 py-3 border border-[#1A1A1A] text-[#1A1A1A] font-semibold text-[13px] tracking-wide hover:bg-[#1A1A1A] hover:text-white transition-colors cursor-pointer">
+                <span className="inline-flex items-center gap-3 px-7 py-3 bg-primary text-primary-foreground font-semibold text-[13px] tracking-wide hover:bg-primary/90 transition-all duration-200 ease-in-out cursor-pointer focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2">
                   EXPLORE OUR AI SOLUTIONS
                   <ArrowUpRight className="w-4 h-4" />
                 </span>
               </Link>
               <Link href="/capabilities">
-                <span className="inline-flex items-center gap-3 px-7 py-3 border border-[#1A1A1A] text-[#1A1A1A] font-semibold text-[13px] tracking-wide hover:bg-[#1A1A1A] hover:text-white transition-colors cursor-pointer">
+                <span className="inline-flex items-center gap-3 px-7 py-3 border-2 border-primary text-primary font-semibold text-[13px] tracking-wide hover:bg-primary/10 hover:text-primary transition-all duration-200 ease-in-out cursor-pointer focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2">
                   OUR CAPABILITIES
                   <ArrowUpRight className="w-4 h-4" />
                 </span>
@@ -139,10 +139,10 @@ export default function Home() {
         <div className="px-6 sm:px-8 md:px-12 lg:px-16">
           {/* Section Header - Left aligned */}
           <div className="max-w-4xl mb-8 sm:mb-12 md:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-[#1A1A1A] leading-tight mb-4 sm:mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-charcoal leading-tight mb-4 sm:mb-6">
               Our Operational Excellence Services and Tools
             </h2>
-            <p className="text-base sm:text-lg text-[#1A1A1A]/70 leading-relaxed max-w-3xl">
+            <p className="text-base sm:text-lg text-charcoal/70 leading-relaxed max-w-3xl">
               The following services and tools provide a glimpse into the level of sophistication and rigor our operational excellence consulting experts bring to every client engagement:
             </p>
           </div>
@@ -182,12 +182,15 @@ export default function Home() {
                 transition={{ delay: i * 0.1 }}
                 className="group"
               >
-                <Link href={solution.link}>
-                  <div className="cursor-pointer bg-white border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-500 h-full">
+                <Link
+                  href={solution.link}
+                  className="block outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 focus-visible:rounded"
+                >
+                  <div className="cursor-pointer bg-white border border-border overflow-hidden hover:shadow-lg hover:border-primary/20 transition-all duration-200 ease-in-out h-full">
                     {/* Card content container */}
                     <div className="relative aspect-[16/10] overflow-hidden">
                       {/* Image - visible by default, hidden on hover */}
-                      <div className="absolute inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                      <div className="absolute inset-0 transition-opacity duration-300 ease-in-out group-hover:opacity-0">
                         <img 
                           src={solution.image} 
                           alt={solution.title}
@@ -195,26 +198,26 @@ export default function Home() {
                         />
                       </div>
                       {/* Description overlay - hidden by default, visible on hover */}
-                      <div className="absolute inset-0 bg-white p-6 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+                      <div className="absolute inset-0 bg-white p-6 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                         <div>
-                          <h2 className="text-2xl sm:text-3xl md:text-[2rem] font-semibold eb-garamond text-[#1A1A1A] mb-3 leading-tight">
+                          <h2 className="text-2xl sm:text-3xl md:text-[2rem] font-semibold eb-garamond text-charcoal mb-3 leading-tight">
                             {solution.title}
                           </h2>
-                          <p className="text-sm text-gray-600 leading-relaxed text-left">
+                          <p className="text-sm text-charcoal/70 leading-relaxed text-left">
                             {solution.description}
                           </p>
                         </div>
                         <div className="mt-4">
-                          {/* <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#1A1A1A] text-white text-sm font-medium rounded hover:bg-[#333] transition-colors">
+                          {/* <span className="inline-flex items-center gap-2 px-4 py-2 bg-charcoal text-white text-sm font-medium rounded hover:bg-charcoal transition-colors">
                             LEARN MORE
                             <ArrowRight className="w-4 h-4" />
                           </span> */}
                         </div>
                       </div>
                     </div>
-                    {/* Title - always visible below */}
-                    <div className="p-4 sm:p-5 bg-white border-t border-gray-100 group-hover:bg-gray-50 transition-colors duration-300">
-                      <h2 className="text-2xl sm:text-3xl md:text-[2rem] font-semibold leading-tight text-[#1A1A1A] eb-garamond">
+                    {/* Title - always visible below; hover → primary */}
+                    <div className="p-4 sm:p-5 bg-white border-t border-border/50 group-hover:bg-subtle transition-colors duration-200 ease-in-out">
+                      <h2 className="text-2xl sm:text-3xl md:text-[2rem] font-semibold leading-tight text-charcoal group-hover:text-primary eb-garamond transition-colors duration-200 ease-in-out">
                         {solution.title}
                       </h2>
                     </div>
@@ -227,20 +230,20 @@ export default function Home() {
       </section>
 
       {/* Insights Section - BCG/McKinsey Style */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-28 bg-[#f8f8f8]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-28 bg-subtle">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16">
           {/* Section Header */}
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-8 sm:mb-12 md:mb-16 gap-4">
             <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-[#1A1A1A] leading-tight eb-garamond">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] text-charcoal leading-tight eb-garamond">
                 Latest Insights
               </h2>
-              <p className="text-base sm:text-lg text-[#1A1A1A]/70 mt-3 max-w-2xl">
+              <p className="text-base sm:text-lg text-charcoal/70 mt-3 max-w-2xl">
                 Practical perspectives for mid-market leaders navigating growth and transformation.
               </p>
             </div>
             <Link href="/insights">
-              <span className="inline-flex items-center gap-2 text-[#1a3d2e] font-semibold hover:text-[#0d2318] transition-colors group">
+              <span className="inline-flex items-center gap-2 text-secondary font-semibold hover:text-primary transition-colors duration-200 ease-in-out group">
                 View all insights
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -265,17 +268,17 @@ export default function Home() {
                       alt="How Mid-Market Companies Are Winning with AI"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-black/10" />
+                    <div className="absolute inset-0 bg-charcoal/10" />
                   </div>
                   <div className="p-6 md:p-8">
-                    <span className="text-xs font-semibold text-[#1a3d2e] uppercase tracking-wider">Featured</span>
-                    <h3 className="text-xl sm:text-2xl md:text-[1.75rem] text-[#1A1A1A] leading-tight mt-3 mb-4 group-hover:text-[#1a3d2e] transition-colors">
+                    <span className="text-xs font-semibold text-primary uppercase tracking-wider">Featured</span>
+                    <h3 className="text-xl sm:text-2xl md:text-[1.75rem] text-charcoal leading-tight mt-3 mb-4 group-hover:text-primary transition-colors duration-200 ease-in-out">
                       How Mid-Market Companies Are Winning with AI: A Practical Guide
                     </h3>
-                    <p className="text-[#1A1A1A]/70 leading-relaxed mb-4">
+                    <p className="text-charcoal/70 leading-relaxed mb-4">
                       Discover how growing businesses are leveraging artificial intelligence to compete with larger enterprises—without the enterprise budget.
                     </p>
-                    <span className="inline-flex items-center gap-2 text-[#1a3d2e] font-semibold text-sm group-hover:gap-3 transition-all">
+                    <span className="inline-flex items-center gap-2 text-secondary font-semibold text-sm group-hover:gap-3 group-hover:text-primary transition-all duration-200 ease-in-out">
                       Read article <ArrowRight className="w-4 h-4" />
                     </span>
                   </div>
@@ -325,14 +328,14 @@ export default function Home() {
                           alt={article.title}
                           className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ${(article as any).imagePosition || ''}`}
                         />
-                        <div className="absolute inset-0 bg-black/10" />
+                        <div className="absolute inset-0 bg-charcoal/10" />
                       </div>
                       <div className="flex-1 p-4 sm:p-5 md:p-6 flex flex-col justify-center">
-                        <span className="text-xs font-semibold text-[#1a3d2e] uppercase tracking-wider">{article.category}</span>
-                        <h3 className="text-base sm:text-lg md:text-xl text-[#1A1A1A] leading-tight mt-2 mb-2 group-hover:text-[#1a3d2e] transition-colors">
+                        <span className="text-xs font-semibold text-primary uppercase tracking-wider">{article.category}</span>
+                        <h3 className="text-base sm:text-lg md:text-xl text-charcoal leading-tight mt-2 mb-2 group-hover:text-primary transition-colors duration-200 ease-in-out">
                           {article.title}
                         </h3>
-                        <p className="text-sm text-[#1A1A1A]/70 leading-relaxed hidden sm:block">
+                        <p className="text-sm text-charcoal/70 leading-relaxed hidden sm:block">
                           {article.description}
                         </p>
                       </div>
@@ -346,18 +349,18 @@ export default function Home() {
       </section>
 
       {/* CTA Section - Bain-Inspired Interactive Design */}
-      <section className="py-16 sm:py-20 md:py-28 bg-white border-t border-gray-200">
+      <section className="py-16 sm:py-20 md:py-28 bg-white border-t border-border">
         <div className="container px-4 sm:px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             {/* Left Column - Interactive Selector */}
             <div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#1A1A1A] leading-tight mb-8 eb-garamond">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl text-charcoal leading-tight mb-8 eb-garamond">
               Start the Conversation.
 
               </h2>
               
               <div className="space-y-4">
-                <p className="text-lg sm:text-xl text-gray-600">
+                <p className="text-lg sm:text-xl text-muted-foreground">
                 I would like to speak with your team about:
 
                 </p>
@@ -365,7 +368,7 @@ export default function Home() {
                 {/* Dropdown Selector */}
                 <div className="relative">
                   <select 
-                    className="w-full appearance-none bg-white border-b-2 border-[#CC0000] text-2xl sm:text-3xl font-semibold text-[#1A1A1A] py-3 pr-10 focus:outline-none cursor-pointer"
+                    className="w-full appearance-none bg-white border-b-2 border-primary text-2xl sm:text-3xl font-semibold text-charcoal py-3 pr-10 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-0 cursor-pointer transition-shadow duration-200 ease-in-out"
                     defaultValue="ai-intelligent-systems"
                   >
                     <option value="ai-intelligent-systems">AI & Intelligent Systems</option>
@@ -379,7 +382,7 @@ export default function Home() {
                     <option value="digital-twins-iot">Digital Twins & IoT</option>
                   </select>
                   <div className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none">
-                    <svg className="w-6 h-6 text-[#CC0000]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </div>
@@ -389,7 +392,7 @@ export default function Home() {
             
             {/* Right Column - Contact Form */}
             <div>
-              <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
+              <p className="text-lg sm:text-xl text-muted-foreground mb-8 leading-relaxed">
               We work with leaders who believe governance comes before automation — and that the organizations built to last will be the ones where human judgment scales with the technology around it.
 
               </p>
@@ -399,13 +402,13 @@ export default function Home() {
                 <input 
                   type="email" 
                   placeholder="Your email"
-                  className="w-full px-0 py-4 text-lg border-b border-gray-300 focus:border-[#CC0000] focus:outline-none transition-colors bg-transparent placeholder:text-gray-400"
+                  className="w-full px-0 py-4 text-lg border-b border-border focus:border-secondary focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0 transition-all duration-200 ease-in-out bg-transparent placeholder:text-muted-foreground/70"
                 />
               </div>
               
               {/* CTA Button */}
               <Link href="/contact">
-                <button className="px-10 py-4 bg-[#CC0000] text-white font-bold text-lg hover:bg-[#a30000] transition-colors">
+                <button className="px-10 py-4 bg-primary text-primary-foreground font-bold text-lg hover:bg-primary/90 transition-all duration-200 ease-in-out focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2">
                   CONTACT US
                 </button>
               </Link>
@@ -423,26 +426,26 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.01, margin: "0px 0px 80px 0px" }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="bg-[#f1f1f1] flex flex-col justify-center px-8 sm:px-12 md:px-16 lg:px-20 py-16 md:py-20"
+            className="bg-subtle flex flex-col justify-center px-8 sm:px-12 md:px-16 lg:px-20 py-16 md:py-20"
           >
-            <span className="text-[11px] font-bold text-[#1A1A1A] uppercase tracking-[0.2em] mb-5 block">NexDyne Careers</span>
-            <h2 className="text-3xl sm:text-4xl md:text-[42px] text-[#1A1A1A] leading-[1.15] mb-6 eb-garamond">
+            <span className="text-[11px] font-bold text-charcoal uppercase tracking-[0.2em] mb-5 block">NexDyne Careers</span>
+            <h2 className="text-3xl sm:text-4xl md:text-[42px] text-charcoal leading-[1.15] mb-6 eb-garamond">
             Where Human Intelligence Leads
 
             </h2>
-            <p className="text-base sm:text-lg text-[#4a4a4a] leading-relaxed mb-10 max-w-lg">
+            <p className="text-base sm:text-lg text-charcoal leading-relaxed mb-10 max-w-lg">
             We help organizations govern intelligence and lead with judgment in the age of AI. If you bring ambition, clarity, and the will to shape what comes next — this is where you belong.
 
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/careers">
-                <span className="inline-flex items-center gap-3 px-7 py-3 border border-[#1A1A1A] text-[#1A1A1A] font-semibold text-[13px] tracking-wide hover:bg-[#1A1A1A] hover:text-white transition-colors cursor-pointer">
+                <span className="inline-flex items-center gap-3 px-7 py-3 bg-primary text-primary-foreground font-semibold text-[13px] tracking-wide hover:bg-primary/90 transition-all duration-200 ease-in-out cursor-pointer focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2">
                   EXPLORE NEXDYNE CAREERS
                   <ArrowUpRight className="w-4 h-4" />
                 </span>
               </Link>
               <Link href="/careers">
-                <span className="inline-flex items-center gap-3 px-7 py-3 border border-[#1A1A1A] text-[#1A1A1A] font-semibold text-[13px] tracking-wide hover:bg-[#1A1A1A] hover:text-white transition-colors cursor-pointer">
+                <span className="inline-flex items-center gap-3 px-7 py-3 border-2 border-primary text-primary font-semibold text-[13px] tracking-wide hover:bg-primary/10 hover:text-primary transition-all duration-200 ease-in-out cursor-pointer focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2">
                   APPLY TODAY
                   <ArrowUpRight className="w-4 h-4" />
                 </span>
@@ -463,7 +466,7 @@ export default function Home() {
               alt="NexDyne team collaborating" 
               className="absolute inset-0 w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-black/10" />
+            <div className="absolute inset-0 bg-charcoal/10" />
           </motion.div>
         </div>
       </section>

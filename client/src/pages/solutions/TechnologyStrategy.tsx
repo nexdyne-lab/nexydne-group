@@ -45,7 +45,7 @@ export default function TechnologyStrategy() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Technology Strategy" 
         description="Build a technology roadmap that aligns with where your business is heading. We help you prioritize investments and avoid costly detours."
@@ -54,7 +54,7 @@ export default function TechnologyStrategy() {
       <Navigation />
 
       {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[70vh] flex items-center pt-20 bg-black">
+      <section className="relative min-h-[70vh] flex items-center pt-20 bg-charcoal">
         <div className="container px-4 md:px-12 grid md:grid-cols-2 gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -65,7 +65,7 @@ export default function TechnologyStrategy() {
             
             <h1 className="text-5xl md:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.05] mb-4">
               Technology<br />
-              <span className="text-[#0077B5]">Strategy</span>
+              <span className="text-primary">Strategy</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
@@ -74,7 +74,7 @@ export default function TechnologyStrategy() {
             
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
                   Schedule a Strategy Session
                 </Button>
               </Link>
@@ -102,7 +102,7 @@ export default function TechnologyStrategy() {
       </section>
 
       {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-20 bg-white border-b border-gray-200">
+      <section className="py-20 bg-white border-b border-border">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -111,7 +111,7 @@ export default function TechnologyStrategy() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-[#051C2C]">Our Experience & Impact</h2>
+            <h2 className="text-2xl font-bold text-charcoal">Our Experience & Impact</h2>
           </motion.div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -127,8 +127,8 @@ export default function TechnologyStrategy() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="text-5xl md:text-6xl font-bold text-[#051C2C] mb-3">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-5xl md:text-6xl font-bold text-charcoal mb-3">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -144,7 +144,7 @@ export default function TechnologyStrategy() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               Technology decisions made today shape your business for years to come. Yet many growing companies invest in tools and systems without a clear view of where they're heading—leading to fragmented systems, wasted budgets, and technical debt that slows everything down.
             </motion.p>
@@ -154,7 +154,7 @@ export default function TechnologyStrategy() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               We help you build a technology strategy that connects your business goals to your technology investments. This isn't about chasing trends or buying the latest tools—it's about making smart choices that compound over time.
             </motion.p>
@@ -164,7 +164,7 @@ export default function TechnologyStrategy() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               Start with business outcomes. Prioritize ruthlessly—you can't do everything at once. Build for flexibility—markets change, and your systems should evolve with your needs.
             </motion.p>
@@ -181,13 +181,13 @@ export default function TechnologyStrategy() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Our Technology Strategy Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               Strategic advisory services that align technology investments with business outcomes.
             </p>
           </motion.div>
@@ -251,7 +251,7 @@ export default function TechnologyStrategy() {
                 className="w-full h-auto rounded-lg shadow-lg"
               />
               {/* Accent block */}
-              <div className="absolute bottom-6 right-6 w-24 h-24 bg-[#0077B5] rounded-lg" />
+              <div className="absolute bottom-6 right-6 w-24 h-24 bg-primary rounded-lg" />
             </motion.div>
             
             {/* Content */}
@@ -261,15 +261,15 @@ export default function TechnologyStrategy() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold text-[#051C2C] leading-[1.1] mb-8">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold text-charcoal leading-[1.1] mb-8">
                 We've learned what works—and what doesn't.
               </h2>
               
-              <p className="text-xl text-[#051C2C]/70 leading-relaxed mb-6">
+              <p className="text-xl text-charcoal/70 leading-relaxed mb-6">
                 The difference isn't luck. It's process. We've refined our approach over 60+ technology strategies, learning what works for companies your size. We know how to balance ambition with pragmatism.
               </p>
               
-              <p className="text-xl text-[#051C2C]/70 leading-relaxed">
+              <p className="text-xl text-charcoal/70 leading-relaxed">
                 More importantly, we know when to say no—avoiding the shiny object syndrome that derails most technology roadmaps.
               </p>
             </motion.div>
@@ -278,7 +278,7 @@ export default function TechnologyStrategy() {
       </section>
 
       {/* Section 5: Our Approach (3-Column Consulting Format) */}
-      <section className="py-20 bg-[#051C2C]">
+      <section className="py-20 bg-base">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -286,7 +286,7 @@ export default function TechnologyStrategy() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00d4ff] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">
               Our Approach
             </span>
             <h2 className="text-3xl md:text-5xl eb-garamond font-light text-white">
@@ -317,7 +317,7 @@ export default function TechnologyStrategy() {
                 transition={{ delay: i * 0.1 }}
               >
                 <h3 className="text-xl font-bold text-white mb-4">{pillar.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{pillar.description}</p>
+                <p className="text-muted-foreground/50 leading-relaxed">{pillar.description}</p>
               </motion.div>
             ))}
           </div>
@@ -333,7 +333,7 @@ export default function TechnologyStrategy() {
       </section>
 
       {/* Section 6: Key Benefits - H100 Hover Cards */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -341,10 +341,10 @@ export default function TechnologyStrategy() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               What You Get
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               A roadmap that turns technology into competitive advantage.
             </h2>
           </motion.div>
@@ -392,10 +392,10 @@ export default function TechnologyStrategy() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
               Sound Familiar?
             </span>
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal mb-6">
               Challenges we help growing companies solve.
             </h2>
           </motion.div>
@@ -425,10 +425,10 @@ export default function TechnologyStrategy() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group p-8 border border-gray-200 hover:border-[#0077B5] hover:shadow-lg transition-all"
+                className="group p-8 border border-border hover:border-primary hover:shadow-lg transition-all"
               >
-                <p className="text-lg font-serif font-semibold text-[#051C2C] mb-4 group-hover:text-[#0077B5] transition-colors">"{item.challenge}"</p>
-                <p className="text-gray-600 leading-relaxed">{item.solution}</p>
+                <p className="text-lg font-serif font-semibold text-charcoal mb-4 group-hover:text-primary transition-colors">"{item.challenge}"</p>
+                <p className="text-muted-foreground leading-relaxed">{item.solution}</p>
               </motion.div>
             ))}
           </div>
@@ -436,7 +436,7 @@ export default function TechnologyStrategy() {
       </section>
 
       {/* Section 8: Related Capabilities - H100 Hover */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -444,10 +444,10 @@ export default function TechnologyStrategy() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
               Related Capabilities
             </span>
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-[#051C2C]">
+            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal">
               Explore more Technology capabilities
             </h2>
           </motion.div>
@@ -469,7 +469,7 @@ export default function TechnologyStrategy() {
       </section>
 
       {/* Section 9: CTA Section (F100 - Cyan Background) */}
-      <section className="py-24 bg-[#0077B5]">
+      <section className="py-24 bg-primary">
         <div className="container px-4 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl eb-garamond font-bold text-white mb-6">
@@ -480,7 +480,7 @@ export default function TechnologyStrategy() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-100 text-[#0077B5] px-10 py-6 text-lg font-semibold">
+                <Button className="bg-white hover:bg-subtle text-primary px-10 py-6 text-lg font-semibold">
                   Schedule a Strategy Session <ArrowRight className="ml-2 w-5 h-5 inline" />
                 </Button>
               </Link>

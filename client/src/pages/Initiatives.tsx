@@ -50,13 +50,13 @@ export default function Initiatives() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl"
           >
-            <span className="text-xs sm:text-sm font-semibold tracking-[0.2em] text-[#3DCD58] uppercase mb-4 block">
+            <span className="text-xs sm:text-sm font-semibold tracking-[0.2em] text-secondary uppercase mb-4 block">
               NEXDYNE INITIATIVES
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#1A1A1A] leading-tight mb-3 eb-garamond">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-charcoal leading-tight mb-3 eb-garamond">
               Building intelligent, competitive, and resilient mid-market businesses across the United States
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-[#1A1A1A]/70 leading-relaxed max-w-3xl">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-3xl">
               Programs that advance entrepreneurship, operational excellence, and regional economic competitiveness
             </p>
           </motion.div>
@@ -64,7 +64,7 @@ export default function Initiatives() {
       </section>
 
       {/* Initiatives Grid */}
-      <section className="py-16 sm:py-20 md:py-12 sm:py-16 lg:py-24 bg-[#F8F9FA]">
+      <section className="py-16 sm:py-20 md:py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="space-y-8 sm:space-y-12 md:space-y-16">
             {initiatives.map((initiative, index) => (
@@ -84,21 +84,21 @@ export default function Initiatives() {
                         className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out group-hover:scale-105"
                         style={{ backgroundImage: `url(${initiative.image})` }}
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A]/60 via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
                     </div>
                     
                     {/* Content */}
                     <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                      <span className="text-xs font-semibold tracking-[0.15em] text-[#3DCD58] uppercase mb-3 block">
+                      <span className="text-xs font-semibold tracking-[0.15em] text-secondary uppercase mb-3 block">
                         {initiative.label}
                       </span>
-                      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-[#1A1A1A] leading-tight mb-4 group-hover:text-[#3DCD58] transition-colors duration-300">
+                      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-charcoal leading-tight mb-4 group-hover:text-secondary transition-colors duration-300">
                         {initiative.title}
                       </h2>
-                      <p className="text-sm sm:text-base md:text-lg text-[#1A1A1A]/70 leading-relaxed mb-6">
+                      <p className="text-sm sm:text-base md:text-lg text-charcoal/70 leading-relaxed mb-6">
                         {initiative.description}
                       </p>
-                      <span className="inline-flex items-center text-[#1A1A1A] font-semibold text-sm sm:text-base group-hover:text-[#3DCD58] transition-colors">
+                      <span className="inline-flex items-center text-charcoal font-semibold text-sm sm:text-base group-hover:text-secondary transition-colors">
                         Learn more
                         <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:translate-x-1" />
                       </span>
@@ -112,7 +112,7 @@ export default function Initiatives() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 sm:py-20 md:py-12 sm:py-16 lg:py-24 bg-[#1A1A1A]">
+      <section className="py-16 sm:py-20 md:py-12 sm:py-16 lg:py-24 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
             <motion.div
@@ -128,7 +128,7 @@ export default function Initiatives() {
                 Partner with NexDyne to bring enterprise-grade intelligence and technology to your organization or community.
               </p>
               <Link href="/contact">
-                <button className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-[#7ef473] text-[#1A1A1A] font-semibold rounded-full hover:bg-[#6de362] transition-colors">
+                <button className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-secondary text-charcoal font-semibold rounded-full hover:bg-secondary transition-colors">
                   Get in Touch
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
                 </button>

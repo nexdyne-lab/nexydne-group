@@ -49,7 +49,7 @@ export default function SystemIntegration() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="System Integration" 
         description="Unify your digital core. We connect disparate apps, data, and partners into a seamless, synchronized ecosystem."
@@ -58,7 +58,7 @@ export default function SystemIntegration() {
       <Navigation />
 
       {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[70vh] flex items-center pt-20 bg-black">
+      <section className="relative min-h-[70vh] flex items-center pt-20 bg-charcoal">
         <div className="container px-4 md:px-12 grid md:grid-cols-2 gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -69,7 +69,7 @@ export default function SystemIntegration() {
             
             <h1 className="text-5xl md:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.05] mb-4">
               Integration &<br />
-              <span className="text-[#0077B5]">APIs</span>
+              <span className="text-primary">APIs</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
@@ -78,12 +78,12 @@ export default function SystemIntegration() {
             
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out">
                   Schedule a Consultation
                 </Button>
               </Link>
               <Link href="/case-studies">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
+                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out bg-transparent">
                   View Case Studies
                 </Button>
               </Link>
@@ -106,7 +106,7 @@ export default function SystemIntegration() {
       </section>
 
       {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-20 bg-white border-b border-gray-200">
+      <section className="py-20 bg-white border-b border-border">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -115,7 +115,7 @@ export default function SystemIntegration() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl eb-garamond font-bold text-[#051C2C]">Our Experience & Impact</h2>
+            <h2 className="text-2xl eb-garamond font-bold text-charcoal">Our Experience & Impact</h2>
           </motion.div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -131,8 +131,8 @@ export default function SystemIntegration() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="text-5xl md:text-6xl font-bold text-[#051C2C] mb-3">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-5xl md:text-6xl font-bold text-charcoal mb-3">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -148,7 +148,7 @@ export default function SystemIntegration() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               Integration isn't just plumbing; it's the enabler of agility. When your systems talk, your business moves faster. When they don't, every initiative becomes a multi-month IT project.
             </motion.p>
@@ -158,7 +158,7 @@ export default function SystemIntegration() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               We've helped organizations break down data silos, automate cross-system workflows, and build API-first architectures that turn internal capabilities into competitive advantages.
             </motion.p>
@@ -168,7 +168,7 @@ export default function SystemIntegration() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               Silos are strategy killers—when sales can't see inventory and finance can't see real-time revenue, everyone loses. APIs are products with their own roadmaps and developer experience. Event-driven is the future—modern systems react to events in real-time, enabling automation that was previously impossible.
             </motion.p>
@@ -185,13 +185,13 @@ export default function SystemIntegration() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Our Integration & API Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               End-to-end integration services from strategy to implementation to ongoing management.
             </p>
           </motion.div>
@@ -255,7 +255,7 @@ export default function SystemIntegration() {
                 className="w-full h-auto rounded-lg shadow-lg"
               />
               {/* Accent block */}
-              <div className="absolute bottom-6 right-6 w-24 h-24 bg-[#0077B5] rounded-lg" />
+              <div className="absolute bottom-6 right-6 w-24 h-24 bg-primary rounded-lg" />
             </motion.div>
             
             {/* Content */}
@@ -265,15 +265,15 @@ export default function SystemIntegration() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold text-[#051C2C] leading-[1.1] mb-8">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold text-charcoal leading-[1.1] mb-8">
                 We've learned what works—and what doesn't.
               </h2>
               
-              <p className="text-xl text-[#051C2C]/70 leading-relaxed mb-6">
+              <p className="text-xl text-charcoal/70 leading-relaxed mb-6">
                 The difference isn't luck. It's process. We've refined our approach over 200+ integrations, learning what works for companies your size. We know how to design clean API contracts, build resilient middleware, and avoid the integration debt that plagues most organizations.
               </p>
               
-              <p className="text-xl text-[#051C2C]/70 leading-relaxed">
+              <p className="text-xl text-charcoal/70 leading-relaxed">
                 More importantly, we know when to use point-to-point versus hub-and-spoke architectures—saving you from unnecessary complexity.
               </p>
             </motion.div>
@@ -282,7 +282,7 @@ export default function SystemIntegration() {
       </section>
 
       {/* Section 5: Our Approach (3-Column Consulting Format) */}
-      <section className="py-20 bg-[#051C2C]">
+      <section className="py-20 bg-base">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -290,7 +290,7 @@ export default function SystemIntegration() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00d4ff] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">
               Our Approach
             </span>
             <h2 className="text-3xl md:text-5xl eb-garamond font-light text-white">
@@ -321,14 +321,14 @@ export default function SystemIntegration() {
                 transition={{ delay: i * 0.1 }}
               >
                 <h3 className="text-xl font-bold text-white mb-4">{pillar.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{pillar.description}</p>
+                <p className="text-muted-foreground/50 leading-relaxed">{pillar.description}</p>
               </motion.div>
             ))}
           </div>
 
           <div className="text-center mt-12">
             <Link href="/contact">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-4 bg-transparent">
+              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-4 bg-transparent transition-colors duration-200 ease-in-out">
                 Get in touch
               </Button>
             </Link>
@@ -337,7 +337,7 @@ export default function SystemIntegration() {
       </section>
 
       {/* Section 6: Key Benefits - H100 Hover Cards */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -345,10 +345,10 @@ export default function SystemIntegration() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               The Power of Unity
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               When your systems talk, your business moves faster.
             </h2>
           </motion.div>
@@ -391,13 +391,13 @@ export default function SystemIntegration() {
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-12">
           <div className="text-center mb-12">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
               Integration Toolkit
             </span>
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-[#051C2C] mb-4">
+            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal mb-4">
               Modern Integration Technologies
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               We leverage best-in-class tools to build scalable, maintainable integrations.
             </p>
           </div>
@@ -430,14 +430,14 @@ export default function SystemIntegration() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
               >
-                <div className="group bg-gray-50 p-8 rounded-lg border border-gray-200 hover:border-[#0077B5] hover:shadow-lg transition-all h-full">
+                <div className="group bg-subtle p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition-all h-full">
                   <div className="text-4xl mb-4">{stack.icon}</div>
-                  <div className="text-2xl font-bold text-[#051C2C] mb-2 group-hover:text-[#0077B5] transition-colors">{stack.category}</div>
-                  <p className="text-sm text-gray-500 mb-6">{stack.subtitle}</p>
+                  <div className="text-2xl font-bold text-charcoal mb-2 group-hover:text-primary transition-colors">{stack.category}</div>
+                  <p className="text-sm text-muted-foreground mb-6">{stack.subtitle}</p>
                   <ul className="space-y-3">
                     {stack.tools.map((tool, j) => (
-                      <li key={j} className="flex items-center gap-3 text-sm text-gray-700">
-                        <CheckCircle2 className="w-4 h-4 text-[#0077B5] shrink-0" />
+                      <li key={j} className="flex items-center gap-3 text-sm text-charcoal/80">
+                        <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                         <span>{tool}</span>
                       </li>
                     ))}
@@ -450,7 +450,7 @@ export default function SystemIntegration() {
       </section>
 
       {/* Section 8: Case Studies (F100) */}
-      <section className="py-24 bg-[#051C2C]">
+      <section className="py-24 bg-base">
         <div className="container px-4 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
             <motion.div
@@ -458,7 +458,7 @@ export default function SystemIntegration() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-4 block">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
                 Client Results
               </span>
               <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-white">
@@ -466,7 +466,7 @@ export default function SystemIntegration() {
               </h2>
             </motion.div>
             <Link href="/cases">
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 bg-transparent">
+              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 bg-transparent transition-colors duration-200 ease-in-out">
                 View all case studies
               </Button>
             </Link>
@@ -503,10 +503,10 @@ export default function SystemIntegration() {
                       alt={study.title} 
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#051C2C] via-[#051C2C]/50 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent" />
                     <div className="absolute bottom-0 left-0 p-8">
-                      <span className="text-xs font-bold text-[#0077B5] mb-3 uppercase tracking-wider block">{study.category}</span>
-                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#0077B5] transition-colors">
+                      <span className="text-xs font-bold text-primary mb-3 uppercase tracking-wider block">{study.category}</span>
+                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
                         {study.title}
                       </h3>
                       <p className="text-white/70 line-clamp-2">{study.description}</p>
@@ -520,7 +520,7 @@ export default function SystemIntegration() {
       </section>
 
       {/* Section 9: Featured Insight Banner (Preserved Unique Section) */}
-      <section className="py-16 bg-[#0077B5]">
+      <section className="py-16 bg-primary">
         <div className="container px-4 md:px-12">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="text-white">
@@ -529,7 +529,7 @@ export default function SystemIntegration() {
               <p className="text-white/80">A comprehensive guide to building API-first architectures.</p>
             </div>
             <Link href="/insights/api-strategy-playbook">
-              <Button className="bg-white text-[#0077B5] hover:bg-gray-100 px-8 py-4 font-semibold whitespace-nowrap">
+              <Button className="bg-white text-primary hover:bg-white/90 px-8 py-4 font-semibold whitespace-nowrap transition-colors duration-200 ease-in-out">
                 Download the Playbook <ArrowRight className="ml-2 w-4 h-4 inline" />
               </Button>
             </Link>
@@ -538,7 +538,7 @@ export default function SystemIntegration() {
       </section>
 
       {/* Section 10: Related Capabilities - H100 Hover */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -546,10 +546,10 @@ export default function SystemIntegration() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
               Related Capabilities
             </span>
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-[#051C2C]">
+            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal">
               Explore more Technology capabilities
             </h2>
           </motion.div>
@@ -571,7 +571,7 @@ export default function SystemIntegration() {
       </section>
 
       {/* Section 11: CTA Section (F100 - Cyan Background) */}
-      <section className="py-24 bg-[#0077B5]">
+      <section className="py-24 bg-primary">
         <div className="container px-4 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl eb-garamond font-bold text-white mb-6">
@@ -581,7 +581,7 @@ export default function SystemIntegration() {
               Let's discuss how our integration expertise can help you build a unified digital ecosystem.
             </p>
             <Link href="/contact">
-              <Button className="bg-white hover:bg-gray-100 text-[#0077B5] px-10 py-6 text-lg font-semibold">
+              <Button className="bg-white hover:bg-white/90 text-primary px-10 py-6 text-lg font-semibold transition-colors duration-200 ease-in-out">
                 Start a Conversation <ArrowRight className="ml-2 w-5 h-5 inline" />
               </Button>
             </Link>

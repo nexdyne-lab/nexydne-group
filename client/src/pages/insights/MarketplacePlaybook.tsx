@@ -11,7 +11,7 @@ import SocialShare from "@/components/SocialShare";
 
 export default function MarketplacePlaybook() {
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="The Marketplace Playbook: Building Network Effects" 
         description="A comprehensive guide to launching and scaling two-sided marketplaces that create sustainable competitive advantages."
@@ -20,15 +20,15 @@ export default function MarketplacePlaybook() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center pt-20 overflow-hidden bg-[#051C2C]">
+      <section className="relative min-h-[60vh] flex items-center pt-20 overflow-hidden bg-base">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2000&q=80" 
             alt="Marketplace Analytics Dashboard" 
             className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#051C2C] via-[#051C2C]/90 to-[#051C2C]/70" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#051C2C] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/90 to-base/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent" />
         </div>
         
         <div className="container px-4 md:px-12 relative z-10">
@@ -39,7 +39,7 @@ export default function MarketplacePlaybook() {
             className="max-w-4xl"
           >
             <Link href="/solutions/accelerating-business-growth">
-              <span className="inline-flex items-center text-sm text-white/60 hover:text-[#0077B5] transition-colors mb-6 cursor-pointer">
+              <span className="inline-flex items-center text-sm text-white/60 hover:text-primary transition-colors mb-6 cursor-pointer">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Accelerating Business Growth
               </span>
@@ -80,20 +80,20 @@ export default function MarketplacePlaybook() {
             {/* Sidebar */}
             <div className="md:col-span-3 hidden md:block">
               <div className="sticky top-32">
-                <h4 className="font-bold text-[#051C2C] mb-4">Table of Contents</h4>
-                <ul className="space-y-3 text-sm text-[#051C2C]/60 border-l border-[#051C2C]/10 pl-4">
-                  <li className="hover:text-[#0077B5] cursor-pointer">Why Marketplaces Win</li>
-                  <li className="hover:text-[#0077B5] cursor-pointer">The Chicken-and-Egg Problem</li>
-                  <li className="hover:text-[#0077B5] cursor-pointer">Network Effects Explained</li>
-                  <li className="hover:text-[#0077B5] cursor-pointer">Marketplace Business Models</li>
-                  <li className="hover:text-[#0077B5] cursor-pointer">Launch Strategies</li>
-                  <li className="hover:text-[#0077B5] cursor-pointer">Scaling the Platform</li>
-                  <li className="hover:text-[#0077B5] cursor-pointer">Governance & Trust</li>
-                  <li className="hover:text-[#0077B5] cursor-pointer">Metrics That Matter</li>
+                <h4 className="font-bold text-charcoal mb-4">Table of Contents</h4>
+                <ul className="space-y-3 text-sm text-charcoal/60 border-l border-base/10 pl-4">
+                  <li className="hover:text-primary cursor-pointer">Why Marketplaces Win</li>
+                  <li className="hover:text-primary cursor-pointer">The Chicken-and-Egg Problem</li>
+                  <li className="hover:text-primary cursor-pointer">Network Effects Explained</li>
+                  <li className="hover:text-primary cursor-pointer">Marketplace Business Models</li>
+                  <li className="hover:text-primary cursor-pointer">Launch Strategies</li>
+                  <li className="hover:text-primary cursor-pointer">Scaling the Platform</li>
+                  <li className="hover:text-primary cursor-pointer">Governance & Trust</li>
+                  <li className="hover:text-primary cursor-pointer">Metrics That Matter</li>
                 </ul>
                 
                 <div className="mt-12">
-                  <h4 className="font-bold text-[#051C2C] mb-4">Share this insight</h4>
+                  <h4 className="font-bold text-charcoal mb-4">Share this insight</h4>
                   <SocialShare 
                     title="The Marketplace Playbook: Building Network Effects" 
                     url="https://nexdyne.com/insights/marketplace-playbook" 
@@ -105,45 +105,45 @@ export default function MarketplacePlaybook() {
             {/* Main Text */}
             <div className="md:col-span-7">
               <div className="prose prose-lg prose-slate max-w-none">
-                <p className="lead text-xl text-[#051C2C]/70 mb-8">
+                <p className="lead text-xl text-charcoal/70 mb-8">
                   Marketplaces are among the most valuable business models in the digital economy. Amazon, Airbnb, Uber, and Alibaba have created trillions in value by connecting buyers and sellers at scale. But for every successful marketplace, hundreds have failed. This playbook distills the strategies that separate winners from losers.
                 </p>
                 
-                <h2 className="text-2xl font-bold text-[#051C2C] mt-12 mb-6">Why Marketplaces Win</h2>
-                <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Why Marketplaces Win</h2>
+                <p className="text-charcoal/70 leading-relaxed mb-6">
                   Marketplaces create value by reducing friction between supply and demand. They aggregate fragmented markets, provide trust mechanisms, and enable transactions that wouldn't otherwise occur. When they work, they create powerful competitive moats through network effects.
                 </p>
-                <p className="text-[#051C2C]/70 leading-relaxed mb-8">
+                <p className="text-charcoal/70 leading-relaxed mb-8">
                   The most successful marketplaces share common characteristics: they solve a genuine matching problem, they create value for both sides, and they become more valuable as they grow. Understanding these dynamics is essential before building.
                 </p>
 
-                <div className="bg-[#F8F9FA] p-8 rounded-xl border border-[#051C2C]/10 my-10">
-                  <h4 className="font-bold text-[#051C2C] mb-4 flex items-center gap-2">
+                <div className="bg-subtle p-8 rounded-xl border border-base/10 my-10">
+                  <h4 className="font-bold text-charcoal mb-4 flex items-center gap-2">
                     <Network className="w-5 h-5 text-violet-500" />
                     Marketplace Value Creation
                   </h4>
                   <div className="grid md:grid-cols-3 gap-6 text-center">
                     <div>
                       <div className="text-3xl font-serif font-bold text-violet-500">$4.5T</div>
-                      <div className="text-sm text-[#051C2C]/60">Combined market cap of top 10 marketplaces</div>
+                      <div className="text-sm text-charcoal/60">Combined market cap of top 10 marketplaces</div>
                     </div>
                     <div>
                       <div className="text-3xl font-serif font-bold text-violet-500">70%</div>
-                      <div className="text-sm text-[#051C2C]/60">of unicorns are platform businesses</div>
+                      <div className="text-sm text-charcoal/60">of unicorns are platform businesses</div>
                     </div>
                     <div>
                       <div className="text-3xl font-serif font-bold text-violet-500">2.5x</div>
-                      <div className="text-sm text-[#051C2C]/60">higher valuation multiples vs. linear businesses</div>
+                      <div className="text-sm text-charcoal/60">higher valuation multiples vs. linear businesses</div>
                     </div>
                   </div>
                 </div>
 
-                <h2 className="text-2xl font-bold text-[#051C2C] mt-12 mb-6">The Chicken-and-Egg Problem</h2>
-                <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">The Chicken-and-Egg Problem</h2>
+                <p className="text-charcoal/70 leading-relaxed mb-6">
                   Every marketplace faces the same fundamental challenge: buyers won't come without sellers, and sellers won't come without buyers. Solving this "cold start" problem is the first and often most difficult hurdle.
                 </p>
 
-                <div className="bg-[#051C2C] p-8 rounded-xl my-10 text-white">
+                <div className="bg-base p-8 rounded-xl my-10 text-white">
                   <h4 className="font-bold mb-6 flex items-center gap-2">
                     <Layers className="w-5 h-5 text-violet-400" />
                     Cold Start Strategies
@@ -184,8 +184,8 @@ export default function MarketplacePlaybook() {
                   </div>
                 </div>
 
-                <h2 className="text-2xl font-bold text-[#051C2C] mt-12 mb-6">Network Effects Explained</h2>
-                <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Network Effects Explained</h2>
+                <p className="text-charcoal/70 leading-relaxed mb-6">
                   Network effects occur when a product becomes more valuable as more people use it. In marketplaces, this typically manifests as cross-side network effects: more sellers attract more buyers, which attracts more sellers, creating a virtuous cycle.
                 </p>
 
@@ -212,49 +212,49 @@ export default function MarketplacePlaybook() {
                       description: "Third-party developers create additional value. App stores, APIs."
                     }
                   ].map((effect, index) => (
-                    <div key={index} className="p-6 bg-[#F8F9FA] rounded-xl">
+                    <div key={index} className="p-6 bg-subtle rounded-xl">
                       <div className="mb-4">{effect.icon}</div>
-                      <h4 className="font-bold text-[#051C2C] mb-2">{effect.title}</h4>
-                      <p className="text-[#051C2C]/60 text-sm">{effect.description}</p>
+                      <h4 className="font-bold text-charcoal mb-2">{effect.title}</h4>
+                      <p className="text-charcoal/60 text-sm">{effect.description}</p>
                     </div>
                   ))}
                 </div>
 
-                <h2 className="text-2xl font-bold text-[#051C2C] mt-12 mb-6">Marketplace Business Models</h2>
-                <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Marketplace Business Models</h2>
+                <p className="text-charcoal/70 leading-relaxed mb-6">
                   How you monetize determines your incentives and growth trajectory. The most common models:
                 </p>
 
                 <div className="overflow-x-auto my-8">
                   <table className="w-full text-sm">
                     <thead>
-                      <tr className="border-b border-[#051C2C]/10">
-                        <th className="text-left py-3 font-bold text-[#051C2C]">Model</th>
-                        <th className="text-left py-3 font-bold text-[#051C2C]">How It Works</th>
-                        <th className="text-left py-3 font-bold text-[#051C2C]">Examples</th>
-                        <th className="text-left py-3 font-bold text-[#051C2C]">Take Rate</th>
+                      <tr className="border-b border-base/10">
+                        <th className="text-left py-3 font-bold text-charcoal">Model</th>
+                        <th className="text-left py-3 font-bold text-charcoal">How It Works</th>
+                        <th className="text-left py-3 font-bold text-charcoal">Examples</th>
+                        <th className="text-left py-3 font-bold text-charcoal">Take Rate</th>
                       </tr>
                     </thead>
-                    <tbody className="text-[#051C2C]/70">
-                      <tr className="border-b border-[#051C2C]/10">
+                    <tbody className="text-charcoal/70">
+                      <tr className="border-b border-base/10">
                         <td className="py-3 font-semibold">Transaction Fee</td>
                         <td className="py-3">Percentage of each transaction</td>
                         <td className="py-3">eBay, Airbnb, Uber</td>
                         <td className="py-3">5-30%</td>
                       </tr>
-                      <tr className="border-b border-[#051C2C]/10">
+                      <tr className="border-b border-base/10">
                         <td className="py-3 font-semibold">Subscription</td>
                         <td className="py-3">Monthly/annual fee for access</td>
                         <td className="py-3">LinkedIn, Alibaba</td>
                         <td className="py-3">Fixed</td>
                       </tr>
-                      <tr className="border-b border-[#051C2C]/10">
+                      <tr className="border-b border-base/10">
                         <td className="py-3 font-semibold">Listing Fee</td>
                         <td className="py-3">Fee to list products/services</td>
                         <td className="py-3">Etsy, Craigslist</td>
                         <td className="py-3">$0.20-$5</td>
                       </tr>
-                      <tr className="border-b border-[#051C2C]/10">
+                      <tr className="border-b border-base/10">
                         <td className="py-3 font-semibold">Lead Generation</td>
                         <td className="py-3">Fee for qualified leads</td>
                         <td className="py-3">Thumbtack, Houzz</td>
@@ -270,55 +270,55 @@ export default function MarketplacePlaybook() {
                   </table>
                 </div>
 
-                <h2 className="text-2xl font-bold text-[#051C2C] mt-12 mb-6">Launch Strategies by Market Type</h2>
-                <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Launch Strategies by Market Type</h2>
+                <p className="text-charcoal/70 leading-relaxed mb-6">
                   The right launch strategy depends on your market characteristics. Here's how to approach different scenarios:
                 </p>
 
                 <div className="space-y-6 my-8">
-                  <div className="p-6 border border-[#051C2C]/10 rounded-xl">
+                  <div className="p-6 border border-base/10 rounded-xl">
                     <div className="flex items-center gap-2 text-violet-500 text-sm font-semibold mb-2">
                       <Target className="w-4 h-4" />
                       HIGH FRAGMENTATION
                     </div>
-                    <h4 className="font-bold text-[#051C2C] mb-2">Many Small Suppliers</h4>
-                    <p className="text-[#051C2C]/60 text-sm mb-4">
+                    <h4 className="font-bold text-charcoal mb-2">Many Small Suppliers</h4>
+                    <p className="text-charcoal/60 text-sm mb-4">
                       Markets with thousands of small suppliers (restaurants, contractors, freelancers) benefit from aggregation. Focus on making it easy for suppliers to join and manage their presence.
                     </p>
-                    <div className="text-sm text-[#051C2C]/70">
+                    <div className="text-sm text-charcoal/70">
                       <strong>Strategy:</strong> Self-service onboarding, automated tools, mobile-first experience
                     </div>
                   </div>
-                  <div className="p-6 border border-[#051C2C]/10 rounded-xl">
+                  <div className="p-6 border border-base/10 rounded-xl">
                     <div className="flex items-center gap-2 text-violet-500 text-sm font-semibold mb-2">
                       <Target className="w-4 h-4" />
                       HIGH VALUE TRANSACTIONS
                     </div>
-                    <h4 className="font-bold text-[#051C2C] mb-2">B2B or Enterprise</h4>
-                    <p className="text-[#051C2C]/60 text-sm mb-4">
+                    <h4 className="font-bold text-charcoal mb-2">B2B or Enterprise</h4>
+                    <p className="text-charcoal/60 text-sm mb-4">
                       Large transactions justify high-touch sales and white-glove service. Focus on trust, compliance, and integration with existing workflows.
                     </p>
-                    <div className="text-sm text-[#051C2C]/70">
+                    <div className="text-sm text-charcoal/70">
                       <strong>Strategy:</strong> Direct sales, account management, enterprise features
                     </div>
                   </div>
-                  <div className="p-6 border border-[#051C2C]/10 rounded-xl">
+                  <div className="p-6 border border-base/10 rounded-xl">
                     <div className="flex items-center gap-2 text-violet-500 text-sm font-semibold mb-2">
                       <Target className="w-4 h-4" />
                       LOCAL/GEOGRAPHIC
                     </div>
-                    <h4 className="font-bold text-[#051C2C] mb-2">Location-Dependent Services</h4>
-                    <p className="text-[#051C2C]/60 text-sm mb-4">
+                    <h4 className="font-bold text-charcoal mb-2">Location-Dependent Services</h4>
+                    <p className="text-charcoal/60 text-sm mb-4">
                       Services that require physical proximity need density in each market. Launch city-by-city and achieve critical mass before expanding.
                     </p>
-                    <div className="text-sm text-[#051C2C]/70">
+                    <div className="text-sm text-charcoal/70">
                       <strong>Strategy:</strong> Hyper-local marketing, city launchers, geographic expansion playbook
                     </div>
                   </div>
                 </div>
 
-                <h2 className="text-2xl font-bold text-[#051C2C] mt-12 mb-6">Scaling the Platform</h2>
-                <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Scaling the Platform</h2>
+                <p className="text-charcoal/70 leading-relaxed mb-6">
                   Once you've achieved product-market fit in your initial market, scaling requires different capabilities. The key challenges at scale:
                 </p>
 
@@ -345,22 +345,22 @@ export default function MarketplacePlaybook() {
                       description: "Suppliers and buyers may use multiple platforms. Differentiate through unique features, better economics, or exclusive supply."
                     }
                   ].map((challenge, index) => (
-                    <div key={index} className="flex gap-4 p-4 bg-[#F8F9FA] rounded-lg">
+                    <div key={index} className="flex gap-4 p-4 bg-subtle rounded-lg">
                       <CheckCircle2 className="w-6 h-6 text-violet-500 flex-shrink-0 mt-1" />
                       <div>
-                        <h4 className="font-bold text-[#051C2C] mb-1">{challenge.title}</h4>
-                        <p className="text-[#051C2C]/60 text-sm">{challenge.description}</p>
+                        <h4 className="font-bold text-charcoal mb-1">{challenge.title}</h4>
+                        <p className="text-charcoal/60 text-sm">{challenge.description}</p>
                       </div>
                     </div>
                   ))}
                 </div>
 
-                <h2 className="text-2xl font-bold text-[#051C2C] mt-12 mb-6">Governance & Trust</h2>
-                <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Governance & Trust</h2>
+                <p className="text-charcoal/70 leading-relaxed mb-6">
                   Marketplaces are mini-economies that require governance. The rules you set—and how you enforce them—determine the health of your ecosystem.
                 </p>
 
-                <div className="bg-[#051C2C] p-8 rounded-xl my-10 text-white">
+                <div className="bg-base p-8 rounded-xl my-10 text-white">
                   <h4 className="font-bold mb-6 flex items-center gap-2">
                     <Shield className="w-5 h-5 text-violet-400" />
                     Trust Architecture
@@ -387,8 +387,8 @@ export default function MarketplacePlaybook() {
                   </div>
                 </div>
 
-                <h2 className="text-2xl font-bold text-[#051C2C] mt-12 mb-6">Metrics That Matter</h2>
-                <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Metrics That Matter</h2>
+                <p className="text-charcoal/70 leading-relaxed mb-6">
                   Marketplace metrics differ from traditional SaaS or e-commerce. Focus on these key indicators:
                 </p>
 
@@ -425,24 +425,24 @@ export default function MarketplacePlaybook() {
                       benchmark: "50+ for both sides"
                     }
                   ].map((item, index) => (
-                    <div key={index} className="p-4 border border-[#051C2C]/10 rounded-lg">
-                      <h4 className="font-bold text-[#051C2C] mb-1">{item.metric}</h4>
-                      <p className="text-[#051C2C]/60 text-sm mb-2">{item.description}</p>
+                    <div key={index} className="p-4 border border-base/10 rounded-lg">
+                      <h4 className="font-bold text-charcoal mb-1">{item.metric}</h4>
+                      <p className="text-charcoal/60 text-sm mb-2">{item.description}</p>
                       <p className="text-xs text-violet-500 font-semibold">{item.benchmark}</p>
                     </div>
                   ))}
                 </div>
 
-                <h2 className="text-2xl font-bold text-[#051C2C] mt-12 mb-6">Case Example: B2B Industrial Marketplace</h2>
-                <p className="text-[#051C2C]/70 leading-relaxed mb-6">
+                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Case Example: B2B Industrial Marketplace</h2>
+                <p className="text-charcoal/70 leading-relaxed mb-6">
                   A NEXDYNE client built a B2B marketplace connecting industrial manufacturers with distributors across Africa. Here's how they applied these principles:
                 </p>
 
-                <div className="bg-[#F8F9FA] p-8 rounded-xl my-8">
+                <div className="bg-subtle p-8 rounded-xl my-8">
                   <div className="grid md:grid-cols-2 gap-8">
                     <div>
-                      <h4 className="font-bold text-[#051C2C] mb-4">Launch Strategy</h4>
-                      <ul className="space-y-2 text-sm text-[#051C2C]/70">
+                      <h4 className="font-bold text-charcoal mb-4">Launch Strategy</h4>
+                      <ul className="space-y-2 text-sm text-charcoal/70">
                         <li>• Started with single product category (industrial fasteners)</li>
                         <li>• Seeded supply by onboarding 50 manufacturers directly</li>
                         <li>• Offered free listings for first year to build catalog</li>
@@ -450,8 +450,8 @@ export default function MarketplacePlaybook() {
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-bold text-[#051C2C] mb-4">Results (18 months)</h4>
-                      <ul className="space-y-2 text-sm text-[#051C2C]/70">
+                      <h4 className="font-bold text-charcoal mb-4">Results (18 months)</h4>
+                      <ul className="space-y-2 text-sm text-charcoal/70">
                         <li>• $10M GMV achieved</li>
                         <li>• 2,500+ active users</li>
                         <li>• 15% take rate on transactions</li>
@@ -462,8 +462,8 @@ export default function MarketplacePlaybook() {
                 </div>
 
                 <div className="bg-violet-500/10 p-8 rounded-xl my-10">
-                  <h4 className="font-bold text-[#051C2C] mb-4">Ready to build your marketplace?</h4>
-                  <p className="text-[#051C2C]/70 mb-6">
+                  <h4 className="font-bold text-charcoal mb-4">Ready to build your marketplace?</h4>
+                  <p className="text-charcoal/70 mb-6">
                     NEXDYNE helps companies design, build, and scale marketplace platforms. From strategy to technology to growth, we've helped launch marketplaces across industries.
                   </p>
                   <Link href="/contact">
@@ -479,25 +479,25 @@ export default function MarketplacePlaybook() {
             {/* Right Sidebar */}
             <div className="md:col-span-2 hidden lg:block">
               <div className="sticky top-32">
-                <div className="p-6 bg-[#F8F9FA] rounded-xl">
-                  <h4 className="font-bold text-[#051C2C] mb-4">Related Case Studies</h4>
+                <div className="p-6 bg-subtle rounded-xl">
+                  <h4 className="font-bold text-charcoal mb-4">Related Case Studies</h4>
                   <div className="space-y-4">
                     <Link href="/cases/retail-ecommerce-growth">
                       <div className="group cursor-pointer">
-                        <p className="text-sm font-semibold text-[#051C2C] group-hover:text-[#0077B5] transition-colors">Outdoor Gear E-commerce</p>
-                        <p className="text-xs text-[#051C2C]/60">180% revenue growth</p>
+                        <p className="text-sm font-semibold text-charcoal group-hover:text-primary transition-colors">Outdoor Gear E-commerce</p>
+                        <p className="text-xs text-charcoal/60">180% revenue growth</p>
                       </div>
                     </Link>
                     <Link href="/cases/b2b-digital-ordering">
                       <div className="group cursor-pointer">
-                        <p className="text-sm font-semibold text-[#051C2C] group-hover:text-[#0077B5] transition-colors">B2B Digital Ordering</p>
-                        <p className="text-xs text-[#051C2C]/60">$4.5M new revenue</p>
+                        <p className="text-sm font-semibold text-charcoal group-hover:text-primary transition-colors">B2B Digital Ordering</p>
+                        <p className="text-xs text-charcoal/60">$4.5M new revenue</p>
                       </div>
                     </Link>
                     <Link href="/cases/training-subscription-platform">
                       <div className="group cursor-pointer">
-                        <p className="text-sm font-semibold text-[#051C2C] group-hover:text-[#0077B5] transition-colors">Subscription Platform</p>
-                        <p className="text-xs text-[#051C2C]/60">$1.8M ARR</p>
+                        <p className="text-sm font-semibold text-charcoal group-hover:text-primary transition-colors">Subscription Platform</p>
+                        <p className="text-xs text-charcoal/60">$1.8M ARR</p>
                       </div>
                     </Link>
                   </div>
@@ -537,7 +537,7 @@ export default function MarketplacePlaybook() {
       />
 
       {/* CTA Section */}
-      <section className="py-24 md:py-32 bg-[#051C2C]">
+      <section className="py-24 md:py-32 bg-base">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

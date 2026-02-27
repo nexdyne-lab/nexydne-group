@@ -220,7 +220,7 @@ export function CaseStudyPDFLink({
       <button
         onClick={handleDownloadClick}
         disabled={isGenerating}
-        className={`inline-flex items-center gap-2 text-[#0077B5] hover:text-[#005a8c] font-medium transition-colors disabled:opacity-50 ${className}`}
+        className={`inline-flex items-center gap-2 text-primary hover:text-primary/90 font-medium transition-colors disabled:opacity-50 ${className}`}
       >
         {isGenerating ? (
           <Loader2 className="w-3 h-3 sm:w-4 sm:h-4 animate-spin" />

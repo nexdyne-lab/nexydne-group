@@ -28,7 +28,7 @@ export function InitiativeCardSkeleton() {
       </div>
       
       {/* Text Section Skeleton - Bottom with Blue Background - Tighter spacing */}
-      <div className="bg-[#0066CC] p-5 md:p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 flex-1 flex flex-col">
+      <div className="bg-primary p-5 md:p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 flex-1 flex flex-col">
         {/* Category tag skeleton */}
         <motion.div 
           className="h-2.5 w-36 bg-white/20 rounded mb-2"

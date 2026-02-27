@@ -210,7 +210,7 @@ export default function Technology() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 overflow-hidden bg-[#051C2C]">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 overflow-hidden bg-base">
         <div className="container px-4 sm:px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <motion.div
@@ -218,7 +218,7 @@ export default function Technology() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <nav className="flex items-center gap-2 text-xs sm:text-sm text-gray-400 mb-6 sm:mb-8 flex-wrap">
+              <nav className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground/70 mb-6 sm:mb-8 flex-wrap">
                 <Link href="/" className="hover:text-white transition-colors">Home</Link>
                 <span>/</span>
                 <Link href="/capabilities" className="hover:text-white transition-colors">Capabilities</Link>
@@ -230,7 +230,7 @@ export default function Technology() {
                 Technology
               </h1>
               
-              <p className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-xl">
+              <p className="text-base sm:text-lg lg:text-xl text-muted-foreground/50 leading-relaxed max-w-xl">
                 Companies with a strategic focus on technology outperform across industries. Stay ahead with tech foundations that fuel lasting growth.
               </p>
             </motion.div>
@@ -252,7 +252,7 @@ export default function Technology() {
       </section>
 
       {/* Experience & Impact Section - F100 Style */}
-      <section className="py-20 bg-white border-b border-gray-200">
+      <section className="py-20 bg-white border-b border-border">
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -261,7 +261,7 @@ export default function Technology() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl eb-garamond font-bold text-[#051C2C]">Our Experience & Impact</h2>
+            <h2 className="text-2xl eb-garamond font-bold text-charcoal">Our Experience & Impact</h2>
           </motion.div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -286,8 +286,8 @@ export default function Technology() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
               >
-                <div className="text-5xl md:text-6xl font-bold text-[#051C2C] mb-3">{stat.value}</div>
-                <p className="text-lg text-[#051C2C]/60">{stat.description}</p>
+                <div className="text-5xl md:text-6xl font-bold text-charcoal mb-3">{stat.value}</div>
+                <p className="text-lg text-charcoal/60">{stat.description}</p>
               </motion.div>
             ))}
           </div>
@@ -295,11 +295,11 @@ export default function Technology() {
       </section>
 
       {/* Sticky Navigation */}
-      {/* <nav className="sticky top-0 z-40 bg-white border-b border-gray-200 shadow-sm">
+      {/* <nav className="sticky top-0 z-40 bg-white border-b border-border shadow-sm">
         <div className="container">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-1 overflow-x-auto py-4">
-              <span className="text-sm text-gray-500 mr-4 whitespace-nowrap">On this page:</span>
+              <span className="text-sm text-muted-foreground mr-4 whitespace-nowrap">On this page:</span>
               {sections.map((section) => (
                 <button
                   key={section.id}
@@ -309,8 +309,8 @@ export default function Technology() {
                   }}
                   className={`px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors ${
                     activeSection === section.id
-                      ? "text-[#0077B5] border-b-2 border-[#0077B5]"
-                      : "text-gray-600 hover:text-[#0077B5]"
+                      ? "text-primary border-b-2 border-primary"
+                      : "text-muted-foreground hover:text-primary"
                   }`}
                 >
                   {section.label}
@@ -318,7 +318,7 @@ export default function Technology() {
               ))}
             </div>
             <Link href="/contact" className="hidden md:block">
-              <Button className="bg-[#0077B5] hover:bg-[#005885] text-white">
+              <Button className="bg-primary hover:bg-base text-white">
                 Talk to our team
               </Button>
             </Link>
@@ -337,11 +337,11 @@ export default function Technology() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-2xl md:text-3xl font-serif text-[#051C2C] leading-relaxed mb-8">
+              <p className="text-2xl md:text-3xl font-serif text-charcoal leading-relaxed mb-8">
                 Your technology should be a growth engine, not a bottleneck. But for most mid-market companies, the reality is different: aging systems that cannot scale, data trapped in silos, and IT teams stretched thin just keeping things running.
               </p>
               
-              <p className="text-lg text-[#051C2C]/70 leading-relaxed">
+              <p className="text-lg text-charcoal/70 leading-relaxed">
                 Meanwhile, your competitors are moving faster, serving customers better, and making decisions with data you cannot access.
               </p>
             </motion.div>
@@ -353,7 +353,7 @@ export default function Technology() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <p className="text-lg text-[#051C2C]/70 leading-relaxed mb-8">
+              <p className="text-lg text-charcoal/70 leading-relaxed mb-8">
                 We work with growing companies who have outgrown their starter tech stack but are not ready for the complexity and cost of enterprise solutions. Our approach is practical: we modernize your systems and architecture in phases, align your technology strategy with where your business is actually heading, and build foundations that support AI and automation without requiring a Fortune 500 budget.
               </p>
               
@@ -367,8 +367,8 @@ export default function Technology() {
                   "Migrate to cloud with a roadmap that fits your budget and risk tolerance"
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-[#0077B5] rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-[#051C2C]/70">{item}</span>
+                    <span className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
+                    <span className="text-charcoal/70">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -395,7 +395,7 @@ export default function Technology() {
                 className="w-full h-auto rounded-lg shadow-lg"
               />
               {/* Accent block */}
-              <div className="absolute bottom-6 right-6 w-24 h-24 bg-[#0077B5] rounded-lg" />
+              <div className="absolute bottom-6 right-6 w-24 h-24 bg-primary rounded-lg" />
             </motion.div>
             
             {/* Content */}
@@ -405,15 +405,15 @@ export default function Technology() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold text-[#051C2C] leading-[1.1] mb-8">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold text-charcoal leading-[1.1] mb-8">
                 We've learned what works—and what doesn't.
               </h2>
               
-              <p className="text-xl text-[#051C2C]/70 leading-relaxed mb-6">
+              <p className="text-xl text-charcoal/70 leading-relaxed mb-6">
                 The difference isn't luck. It's process. We've refined our approach over 60+ technology projects, learning what works for companies your size. We know how to modernize systems without disrupting operations, migrate to cloud without the drama, and build foundations that actually scale.
               </p>
               
-              <p className="text-xl text-[#051C2C]/70 leading-relaxed">
+              <p className="text-xl text-charcoal/70 leading-relaxed">
                 More importantly, we know when to say no—to shiny new tools that won't deliver ROI, to over-engineered solutions that your team can't maintain, and to timelines that set everyone up for failure.
               </p>
             </motion.div>
@@ -422,7 +422,7 @@ export default function Technology() {
       </section>
 
       {/* Our Approach Section - McKinsey-inspired */}
-      <section className="py-20 bg-[#051C2C]">
+      <section className="py-20 bg-base">
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -430,7 +430,7 @@ export default function Technology() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00d4ff] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">
               Our Approach
             </span>
             <h2 className="text-3xl md:text-5xl eb-garamond font-light text-white">
@@ -455,14 +455,14 @@ export default function Technology() {
             ].map((pillar, i) => (
               <div key={i}>
                 <h3 className="text-xl font-bold text-white mb-4">{pillar.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{pillar.description}</p>
+                <p className="text-muted-foreground/50 leading-relaxed">{pillar.description}</p>
               </div>
             ))}
           </div>
 
           <div className="text-center mt-12">
             <Link href="/contact">
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-[#051C2C]">
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-charcoal">
                 Get in touch
               </Button>
             </Link>
@@ -480,10 +480,10 @@ export default function Technology() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-[#051C2C] mb-6">
+              <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal mb-6">
                 How AI is Transforming Technology Operations
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-8">
+              <p className="text-muted-foreground leading-relaxed mb-8">
                 AI is reshaping how growing companies run their technology operations. Smart teams are embedding AI directly into their existing workflows—accelerating development cycles, strengthening security, and giving their people more time to focus on strategic work. Here's where we're seeing the biggest impact:
               </p>
               
@@ -498,16 +498,16 @@ export default function Technology() {
                   { title: "Data quality", desc: "Catch inconsistencies and duplicates across your systems automatically" }
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <span className="text-[#051C2C] mt-1">•</span>
+                    <span className="text-charcoal mt-1">•</span>
                     <div>
-                      <span className="font-bold text-[#051C2C]">{item.title}.</span>{" "}
-                      <span className="text-gray-600">{item.desc}</span>
+                      <span className="font-bold text-charcoal">{item.title}.</span>{" "}
+                      <span className="text-muted-foreground">{item.desc}</span>
                     </div>
                   </li>
                 ))}
               </ul>
               
-              <Link href="/capabilities/artificial-intelligence" className="inline-flex items-center text-[#CC0000] font-semibold hover:underline">
+              <Link href="/capabilities/artificial-intelligence" className="inline-flex items-center text-destructive font-semibold hover:underline">
                 See how we help companies implement practical AI <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </motion.div>
@@ -530,21 +530,21 @@ export default function Technology() {
           </div>
 
           {/* Results & Approach Two-Column Section */}
-          <div className="grid md:grid-cols-2 gap-0 mt-16 border-t border-gray-200">
+          <div className="grid md:grid-cols-2 gap-0 mt-16 border-t border-border">
             {/* Left Column - Results We've Delivered */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="p-8 md:p-12 md:border-r border-gray-200"
+              className="p-8 md:p-12 md:border-r border-border"
             >
-              <h3 className="text-2xl font-bold text-[#051C2C] mb-4">
+              <h3 className="text-2xl font-bold text-charcoal mb-4">
                 Results We've Delivered
               </h3>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-muted-foreground leading-relaxed mb-6">
                 From professional services firms to healthcare providers, we've helped companies across industries identify and implement AI use cases that align with their specific business goals and operational realities.
               </p>
-              <Link href="/case-studies" className="inline-flex items-center text-[#051C2C] font-semibold hover:underline">
+              <Link href="/case-studies" className="inline-flex items-center text-charcoal font-semibold hover:underline">
                 See how we're helping companies win with AI <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </motion.div>
@@ -557,13 +557,13 @@ export default function Technology() {
               transition={{ delay: 0.1 }}
               className="p-8 md:p-12"
             >
-              <h3 className="text-2xl font-bold text-[#051C2C] mb-4">
+              <h3 className="text-2xl font-bold text-charcoal mb-4">
                 Our Approach
               </h3>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <p className="text-muted-foreground leading-relaxed mb-6">
                 We help technology teams become AI-ready by strengthening their foundations first—improving data quality, organizing knowledge assets, and ensuring existing systems can work alongside AI tools. Then we move fast to capture value while managing risk.
               </p>
-              <Link href="/capabilities/artificial-intelligence" className="inline-flex items-center text-[#051C2C] font-semibold hover:underline">
+              <Link href="/capabilities/artificial-intelligence" className="inline-flex items-center text-charcoal font-semibold hover:underline">
                 Learn more about our AI approach <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </motion.div>
@@ -572,7 +572,7 @@ export default function Technology() {
       </section>
 
       {/* How We Can Help Section - H100 Style */}
-      <section id="capabilities" className="py-12 sm:py-16 lg:py-24 bg-[#f8f8f7]">
+      <section id="capabilities" className="py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -580,10 +580,10 @@ export default function Technology() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C]">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal">
               Our Technology Capabilities
             </h2>
           </motion.div>
@@ -614,14 +614,14 @@ export default function Technology() {
             className="flex justify-between items-end mb-12"
           >
             <div>
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-4 block">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
                 Recent Work
               </span>
-              <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-[#051C2C]">
+              <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal">
                 Results from companies like yours.
               </h2>
             </div>
-            <Link href="/case-studies" className="hidden md:flex items-center text-[#0077B5] font-semibold hover:underline">
+            <Link href="/case-studies" className="hidden md:flex items-center text-primary font-semibold hover:underline">
               View all case studies <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
           </motion.div>
@@ -636,28 +636,28 @@ export default function Technology() {
                 transition={{ delay: index * 0.1 }}
               >
                 <Link href={study.link} className="group block">
-                  <div className="relative overflow-hidden rounded-lg bg-gray-100">
+                  <div className="relative overflow-hidden rounded-lg bg-subtle">
                     <img 
                       src={study.image} 
                       alt={study.title}
                       className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-4 left-4">
-                      <span className="px-3 py-1 bg-white/90 text-xs font-bold uppercase tracking-wider text-[#051C2C] rounded">
+                      <span className="px-3 py-1 bg-white/90 text-xs font-bold uppercase tracking-wider text-charcoal rounded">
                         {study.category}
                       </span>
                     </div>
                   </div>
                   <div className="pt-6">
-                    <h3 className="text-xl font-bold text-[#051C2C] mb-3 group-hover:text-[#0077B5] transition-colors">
+                    <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
                       {study.title}
                     </h3>
-                    <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                    <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                       {study.description}
                     </p>
                     <div className="flex items-center gap-4">
-                      <span className="text-3xl font-bold text-[#0077B5]">{study.metric}</span>
-                      <span className="text-sm text-gray-500">{study.metricLabel}</span>
+                      <span className="text-3xl font-bold text-primary">{study.metric}</span>
+                      <span className="text-sm text-muted-foreground">{study.metricLabel}</span>
                     </div>
                   </div>
                 </Link>
@@ -668,7 +668,7 @@ export default function Technology() {
       </section>
 
       {/* How We Work Section - Clean F100 Style */}
-      <section id="how-we-work" className="py-12 sm:py-16 lg:py-24 bg-[#051C2C]">
+      <section id="how-we-work" className="py-12 sm:py-16 lg:py-24 bg-base">
         <div className="container px-4 sm:px-6">
           {/* Header */}
           <motion.div
@@ -677,7 +677,7 @@ export default function Technology() {
             viewport={{ once: true }}
             className="text-center mb-20"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Our Process
             </span>
             <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-white mb-6">
@@ -700,7 +700,7 @@ export default function Technology() {
                 className="group"
               >
                 {/* Large Step Number */}
-                <div className="text-5xl sm:text-6xl lg:text-8xl font-bold text-[#0077B5]/30 group-hover:text-[#0077B5]/50 transition-colors duration-300 mb-4 sm:mb-6">
+                <div className="text-5xl sm:text-6xl lg:text-8xl font-bold text-primary/30 group-hover:text-primary/50 transition-colors duration-300 mb-4 sm:mb-6">
                   {step.step}
                 </div>
                 
@@ -730,7 +730,7 @@ export default function Technology() {
             className="flex items-center gap-6 mb-16"
           >
             <div className="flex-1 h-px bg-gray-300" />
-            <h2 className="text-2xl md:text-3xl eb-garamond font-bold text-[#051C2C] text-center whitespace-nowrap">
+            <h2 className="text-2xl md:text-3xl eb-garamond font-bold text-charcoal text-center whitespace-nowrap">
               Our Enterprise Technology Insights
             </h2>
             <div className="flex-1 h-px bg-gray-300" />
@@ -758,24 +758,24 @@ export default function Technology() {
                     </div>
                     
                     {/* Category tag */}
-                    <span className="text-sm font-semibold text-[#CC0000] mb-2">
+                    <span className="text-sm font-semibold text-destructive mb-2">
                       {insight.category}
                     </span>
                     
                     {/* Title */}
-                    <h3 className="text-lg font-bold text-[#051C2C] mb-3 leading-tight group-hover:underline">
+                    <h3 className="text-lg font-bold text-charcoal mb-3 leading-tight group-hover:underline">
                       {insight.title}
                     </h3>
                     
                     {/* Description */}
-                    <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-1">
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-1">
                       {insight.description}
                     </p>
                     
                     {/* Content type and bookmark */}
-                    <div className="flex items-center justify-between pt-4 border-t border-gray-200">
-                      <span className="text-sm text-gray-500">{insight.type}</span>
-                      <svg className="w-5 h-5 text-gray-400 hover:text-[#051C2C] cursor-pointer transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="flex items-center justify-between pt-4 border-t border-border">
+                      <span className="text-sm text-muted-foreground">{insight.type}</span>
+                      <svg className="w-5 h-5 text-muted-foreground/70 hover:text-charcoal cursor-pointer transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
                       </svg>
                     </div>
@@ -788,7 +788,7 @@ export default function Technology() {
           {/* See More button */}
           <div className="text-center mt-12">
             <Link href="/insights">
-              <Button variant="outline" className="border-[#051C2C] text-[#051C2C] hover:bg-[#051C2C] hover:text-white px-8">
+              <Button variant="outline" className="border-base text-charcoal hover:bg-base hover:text-white px-8">
                 SEE MORE
               </Button>
             </Link>
@@ -806,10 +806,10 @@ export default function Technology() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Related Capabilities
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C]">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal">
               Explore related capabilities
             </h2>
           </motion.div>
@@ -848,7 +848,7 @@ export default function Technology() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-[#0077B5]">
+      <section className="py-24 bg-primary">
         <div className="container text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -863,7 +863,7 @@ export default function Technology() {
               Let's talk about your technology challenges. No sales pitch—just an honest conversation about what's possible.
             </p>
             <Link href="/contact">
-              <Button className="bg-white hover:bg-gray-100 text-[#051C2C] px-10 py-6 text-lg font-semibold transition-all">
+              <Button className="bg-white hover:bg-subtle text-charcoal px-10 py-6 text-lg font-semibold transition-all">
                 Schedule a Conversation
               </Button>
             </Link>

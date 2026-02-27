@@ -16,7 +16,7 @@ export default function CyberResilience() {
       <Navigation />
       
       {/* Hero Section - Clean minimal design */}
-      <section className="relative min-h-[85vh] flex items-center pt-20 overflow-hidden bg-black">
+      <section className="relative min-h-[85vh] flex items-center pt-20 overflow-hidden bg-charcoal">
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -45,20 +45,20 @@ export default function CyberResilience() {
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <p className="text-4xl md:text-5xl font-bold text-slate-900 mb-2">100%</p>
-              <p className="text-slate-600">Compliance audit pass rate</p>
+              <p className="text-4xl md:text-5xl font-bold text-charcoal mb-2">100%</p>
+              <p className="text-muted-foreground">Compliance audit pass rate</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl md:text-5xl font-bold text-slate-900 mb-2">85%</p>
-              <p className="text-slate-600">Reduction in security incidents</p>
+              <p className="text-4xl md:text-5xl font-bold text-charcoal mb-2">85%</p>
+              <p className="text-muted-foreground">Reduction in security incidents</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl md:text-5xl font-bold text-slate-900 mb-2">24/7</p>
-              <p className="text-slate-600">Threat monitoring capability</p>
+              <p className="text-4xl md:text-5xl font-bold text-charcoal mb-2">24/7</p>
+              <p className="text-muted-foreground">Threat monitoring capability</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl md:text-5xl font-bold text-slate-900 mb-2">0</p>
-              <p className="text-slate-600">Data breaches across clients</p>
+              <p className="text-4xl md:text-5xl font-bold text-charcoal mb-2">0</p>
+              <p className="text-muted-foreground">Data breaches across clients</p>
             </div>
           </div>
         </div>
@@ -71,23 +71,23 @@ export default function CyberResilience() {
             <p className="text-emerald-600 text-sm font-medium tracking-widest uppercase mb-4">
               The Challenge
             </p>
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-slate-900 mb-8">
+            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-8">
               Security as an enabler, not a barrier
             </h2>
             <div className="prose prose-lg prose-slate max-w-none">
-              <p className="text-slate-600 leading-relaxed mb-6">
+              <p className="text-muted-foreground leading-relaxed mb-6">
                 For mid-market organizations, cybersecurity presents a paradox. The same digital transformation 
                 initiatives that drive competitive advantage also expand the attack surface. Every new cloud 
                 service, every AI integration, every connected device creates potential vulnerabilities that 
                 sophisticated threat actors are eager to exploit.
               </p>
-              <p className="text-slate-600 leading-relaxed mb-6">
+              <p className="text-muted-foreground leading-relaxed mb-6">
                 Meanwhile, regulatory requirements continue to multiply. HIPAA, SOC 2, GDPR, state privacy 
                 laws—compliance has become a full-time job. Many organizations find themselves caught between 
                 the need to innovate and the fear of security failures that could devastate their business 
                 and reputation.
               </p>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed">
                 The traditional approach—bolting security onto systems after they're built—no longer works. 
                 Modern threats require security to be woven into the fabric of your technology architecture 
                 from the beginning. This is what we mean by Security-by-Design.
@@ -104,14 +104,14 @@ export default function CyberResilience() {
             <p className="text-emerald-600 text-sm font-medium tracking-widest uppercase mb-4">
               Our Approach
             </p>
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-slate-900 mb-12">
+            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-12">
               Security that enables transformation
             </h2>
             
             <div className="space-y-12">
               <div className="border-l-4 border-emerald-600 pl-8">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Risk Assessment & Strategy</h3>
-                <p className="text-slate-600 leading-relaxed">
+                <h3 className="text-xl font-bold text-charcoal mb-4">Risk Assessment & Strategy</h3>
+                <p className="text-muted-foreground leading-relaxed">
                   We begin with a comprehensive assessment of your security posture, identifying vulnerabilities, 
                   mapping data flows, and evaluating your exposure to industry-specific threats. Our risk-based 
                   approach prioritizes investments where they'll have the greatest impact on protecting your 
@@ -120,8 +120,8 @@ export default function CyberResilience() {
               </div>
               
               <div className="border-l-4 border-emerald-600 pl-8">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Security Architecture Design</h3>
-                <p className="text-slate-600 leading-relaxed">
+                <h3 className="text-xl font-bold text-charcoal mb-4">Security Architecture Design</h3>
+                <p className="text-muted-foreground leading-relaxed">
                   We design security architectures that protect without impeding. Zero-trust principles, 
                   defense-in-depth strategies, and modern identity management create robust protection while 
                   maintaining the agility your business requires. Every architecture decision considers both 
@@ -130,8 +130,8 @@ export default function CyberResilience() {
               </div>
               
               <div className="border-l-4 border-emerald-600 pl-8">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Compliance Framework Implementation</h3>
-                <p className="text-slate-600 leading-relaxed">
+                <h3 className="text-xl font-bold text-charcoal mb-4">Compliance Framework Implementation</h3>
+                <p className="text-muted-foreground leading-relaxed">
                   We implement compliance frameworks that satisfy regulatory requirements while minimizing 
                   operational burden. Our approach automates compliance monitoring and reporting wherever 
                   possible, freeing your team to focus on strategic initiatives rather than audit preparation.
@@ -139,8 +139,8 @@ export default function CyberResilience() {
               </div>
               
               <div className="border-l-4 border-emerald-600 pl-8">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Continuous Monitoring & Response</h3>
-                <p className="text-slate-600 leading-relaxed">
+                <h3 className="text-xl font-bold text-charcoal mb-4">Continuous Monitoring & Response</h3>
+                <p className="text-muted-foreground leading-relaxed">
                   Security isn't a one-time project—it's an ongoing discipline. We establish monitoring 
                   capabilities that detect threats in real-time and response procedures that minimize 
                   impact when incidents occur. Our clients gain the security operations capabilities of 
@@ -159,7 +159,7 @@ export default function CyberResilience() {
             <p className="text-emerald-600 text-sm font-medium tracking-widest uppercase mb-4">
               Capabilities
             </p>
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-slate-900 mb-12">
+            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-12">
               What we deliver
             </h2>
             
@@ -240,7 +240,7 @@ export default function CyberResilience() {
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-['EB Garamond',serif] font-bold text-slate-900 mb-8">Related Services</h2>
+            <h2 className="text-2xl font-['EB Garamond',serif] font-bold text-charcoal mb-8">Related Services</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
               <BainHoverCard
@@ -262,18 +262,18 @@ export default function CyberResilience() {
       <section className="py-20 bg-slate-50">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-slate-900 mb-6">
+            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-6">
               Ready to strengthen your security posture?
             </h2>
-            <p className="text-xl text-slate-600 mb-8">
+            <p className="text-xl text-muted-foreground mb-8">
               Let's discuss how we can help you build resilient, compliant systems that protect your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#4ade80] text-slate-900 font-semibold rounded-full hover:bg-[#22c55e] transition-colors">
+              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-secondary text-charcoal font-semibold rounded-full hover:bg-secondary transition-colors">
                 Schedule a Security Assessment
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
-              <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center justify-center px-8 py-4 border border-slate-300 text-slate-700 font-semibold rounded-full hover:bg-slate-100 transition-colors">
+              <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center justify-center px-8 py-4 border border-slate-300 text-charcoal/80 font-semibold rounded-full hover:bg-slate-100 transition-colors">
                 Explore AI & Technology
               </Link>
             </div>

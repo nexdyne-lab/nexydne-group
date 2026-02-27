@@ -116,19 +116,19 @@ export function Search() {
   const SearchContent = () => (
     <div className="flex flex-col h-full w-full">
       <div className="flex items-center p-3 border-b border-white/10">
-        <SearchIcon className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 ml-1" />
+        <SearchIcon className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground/70 ml-1" />
         <Input
           ref={inputRef}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Search insights, services, capabilities..."
-          className="border-0 bg-transparent focus-visible:ring-0 text-white placeholder:text-gray-500 h-10 text-base md:text-sm flex-1"
+          className="border-0 bg-transparent focus-visible:ring-0 text-white placeholder:text-muted-foreground h-10 text-base md:text-sm flex-1"
         />
         <Button 
           variant="ghost" 
           size="icon" 
-          className="h-8 w-8 text-gray-400 hover:text-white"
+          className="h-8 w-8 text-muted-foreground/70 hover:text-white"
           onClick={() => {
             setIsOpen(false);
             setQuery("");
@@ -154,41 +154,41 @@ export function Search() {
                 <div className="flex-1 min-w-0 mr-4">
                   <div className={cn(
                     "text-sm font-medium transition-colors truncate",
-                    selectedIndex === index ? "text-[#00d4ff]" : "text-white group-hover:text-[#00d4ff]"
+                    selectedIndex === index ? "text-secondary" : "text-white group-hover:text-secondary"
                   )}>
                     {result.title}
                   </div>
                   <div className="flex items-center gap-2 mt-1">
-                    <span className="text-xs text-gray-500 bg-white/5 px-1.5 py-0.5 rounded border border-white/5">
+                    <span className="text-xs text-muted-foreground bg-white/5 px-1.5 py-0.5 rounded border border-white/5">
                       {result.type}
                     </span>
                     {result.description && (
-                      <span className="text-xs text-gray-500 truncate hidden sm:inline-block">
+                      <span className="text-xs text-muted-foreground truncate hidden sm:inline-block">
                         {result.description}
                       </span>
                     )}
                   </div>
                 </div>
                 <ArrowRight className={cn(
-                  "w-3 h-3 sm:w-4 sm:h-4 text-gray-600 transition-all flex-shrink-0",
-                  selectedIndex === index ? "text-[#00d4ff] opacity-100 translate-x-0" : "group-hover:text-[#00d4ff] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"
+                  "w-3 h-3 sm:w-4 sm:h-4 text-muted-foreground transition-all flex-shrink-0",
+                  selectedIndex === index ? "text-secondary opacity-100 translate-x-0" : "group-hover:text-secondary opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"
                 )} />
               </button>
             ))}
           </div>
         ) : query.length > 0 ? (
-          <div className="p-4 sm:p-6 md:p-4 sm:p-6 md:p-8 text-center text-gray-500">
+          <div className="p-4 sm:p-6 md:p-4 sm:p-6 md:p-8 text-center text-muted-foreground">
             <p className="text-sm">No results found for "{query}"</p>
-            <p className="text-xs mt-2 text-gray-600">Try searching for "AI", "Data", or "Consulting"</p>
+            <p className="text-xs mt-2 text-muted-foreground">Try searching for "AI", "Data", or "Consulting"</p>
           </div>
         ) : (
           <div className="p-4">
-            <div className="text-xs font-medium text-gray-500 uppercase tracking-wider mb-3 px-2">Suggested</div>
+            <div className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-3 px-2">Suggested</div>
             <div className="space-y-1">
               {SEARCH_INDEX.slice(0, 5).map((item, i) => (
                 <button
                   key={i}
-                  className="w-full text-left px-4 py-2 rounded-md hover:bg-white/5 text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+                  className="w-full text-left px-4 py-2 rounded-md hover:bg-white/5 text-sm text-muted-foreground/70 hover:text-white transition-colors flex items-center gap-2"
                   onClick={() => handleSelect(item.href)}
                 >
                   <SearchIcon className="w-3 h-3 opacity-50" />
@@ -201,12 +201,12 @@ export function Search() {
       </div>
       
       {!isMobile && (
-        <div className="p-2 border-t border-white/10 text-[10px] text-gray-600 flex justify-between px-4">
+        <div className="p-2 border-t border-white/10 text-[10px] text-muted-foreground flex justify-between px-4">
           <div className="flex gap-3">
-            <span><kbd className="font-sans bg-white/10 px-1 rounded text-gray-400">↑</kbd> <kbd className="font-sans bg-white/10 px-1 rounded text-gray-400">↓</kbd> to navigate</span>
-            <span><kbd className="font-sans bg-white/10 px-1 rounded text-gray-400">↵</kbd> to select</span>
+            <span><kbd className="font-sans bg-white/10 px-1 rounded text-muted-foreground/70">↑</kbd> <kbd className="font-sans bg-white/10 px-1 rounded text-muted-foreground/70">↓</kbd> to navigate</span>
+            <span><kbd className="font-sans bg-white/10 px-1 rounded text-muted-foreground/70">↵</kbd> to select</span>
           </div>
-          <span><kbd className="font-sans bg-white/10 px-1 rounded text-gray-400">Esc</kbd> to close</span>
+          <span><kbd className="font-sans bg-white/10 px-1 rounded text-muted-foreground/70">Esc</kbd> to close</span>
         </div>
       )}
     </div>
@@ -219,12 +219,12 @@ export function Search() {
           <Button 
             variant="ghost" 
             size="icon" 
-            className="text-white/90 hover:text-[#00d4ff] hover:bg-white/5"
+            className="text-white/90 hover:text-secondary hover:bg-white/5"
           >
             <SearchIcon className="w-4 h-4 sm:w-5 sm:h-5" />
           </Button>
         </DialogTrigger>
-        <DialogContent className="p-0 bg-[#0a0e3d] border-white/10 text-white w-full h-[100dvh] max-w-full rounded-none sm:rounded-lg sm:h-auto sm:max-h-[85vh] gap-0">
+        <DialogContent className="p-0 bg-base border-white/10 text-white w-full h-[100dvh] max-w-full rounded-none sm:rounded-lg sm:h-auto sm:max-h-[85vh] gap-0">
           <SearchContent />
         </DialogContent>
       </Dialog>
@@ -237,16 +237,16 @@ export function Search() {
         <Button 
           variant="ghost" 
           size="icon" 
-          className="text-white/90 hover:text-[#00d4ff] hover:bg-white/5 group relative"
+          className="text-white/90 hover:text-secondary hover:bg-white/5 group relative"
           onClick={() => setIsOpen(true)}
         >
           <SearchIcon className="w-4 h-4 sm:w-5 sm:h-5" />
-          <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-black/80 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap border border-white/10">
+          <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-charcoal/80 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap border border-white/10">
             Search (⌘K)
           </span>
         </Button>
       ) : (
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[450px] bg-[#0a0e3d] border border-white/10 rounded-lg shadow-xl sm:shadow-xl sm:shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200 z-50 max-h-[80vh] flex flex-col">
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[450px] bg-base border border-white/10 rounded-lg shadow-xl sm:shadow-xl sm:shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200 z-50 max-h-[80vh] flex flex-col">
           <SearchContent />
         </div>
       )}

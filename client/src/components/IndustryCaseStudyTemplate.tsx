@@ -123,7 +123,7 @@ export default function IndustryCaseStudyTemplate({
   ctaDescription
 }: IndustryCaseStudyProps) {
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title={seoTitle}
         description={seoDescription}
@@ -132,7 +132,7 @@ export default function IndustryCaseStudyTemplate({
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 bg-[#051C2C]">
+      <section className="relative pt-32 pb-16 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <Link href={industryLink}>
             <motion.button 
@@ -151,7 +151,7 @@ export default function IndustryCaseStudyTemplate({
             transition={{ duration: 0.8 }}
             className="max-w-4xl"
           >
-            <span className="inline-block px-4 py-1.5 bg-[#0077B5]/20 text-[#0077B5] text-xs font-bold uppercase tracking-wider rounded-full mb-6">
+            <span className="inline-block px-4 py-1.5 bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider rounded-full mb-6">
               {industry}
             </span>
             
@@ -167,7 +167,7 @@ export default function IndustryCaseStudyTemplate({
       </section>
 
       {/* Key Metrics Bar */}
-      <section className="bg-[#0077B5] py-8">
+      <section className="bg-primary py-8">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:p-6 md:p-4 sm:p-6 md:p-8">
             {metrics.map((metric, index) => (
@@ -214,17 +214,17 @@ export default function IndustryCaseStudyTemplate({
               transition={{ duration: 0.6 }}
               className="lg:col-span-2"
             >
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 block">
+              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 block">
                 Client Context
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#051C2C] mb-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-6">
                 {clientContextTitle}
               </h2>
               <div className="prose prose-lg max-w-none">
-                <p className="text-lg text-[#051C2C]/70 leading-relaxed mb-6 first-letter:text-5xl first-letter:font-serif first-letter:font-bold first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:text-[#0077B5]">
+                <p className="text-lg text-charcoal/70 leading-relaxed mb-6 first-letter:text-5xl first-letter:font-serif first-letter:font-bold first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:text-primary">
                   {clientContextIntro}
                 </p>
-                <p className="text-lg text-[#051C2C]/70 leading-relaxed">
+                <p className="text-lg text-charcoal/70 leading-relaxed">
                   {clientContextBody}
                 </p>
               </div>
@@ -235,37 +235,37 @@ export default function IndustryCaseStudyTemplate({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-[#f8f9fa] p-4 sm:p-6 md:p-4 sm:p-6 md:p-8"
+              className="bg-subtle p-4 sm:p-6 md:p-4 sm:p-6 md:p-8"
             >
-              <h3 className="text-lg font-bold text-[#051C2C] mb-6">Client Profile</h3>
+              <h3 className="text-lg font-bold text-charcoal mb-6">Client Profile</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <Building2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#0077B5] mt-1" />
+                  <Building2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-1" />
                   <div>
-                    <div className="text-sm text-[#051C2C]/50">Industry</div>
-                    <div className="font-medium text-[#051C2C]">{clientProfile.industry}</div>
+                    <div className="text-sm text-charcoal/50">Industry</div>
+                    <div className="font-medium text-charcoal">{clientProfile.industry}</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Users className="w-4 h-4 sm:w-5 sm:h-5 text-[#0077B5] mt-1" />
+                  <Users className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-1" />
                   <div>
-                    <div className="text-sm text-[#051C2C]/50">Company Size</div>
-                    <div className="font-medium text-[#051C2C]">{clientProfile.companySize}</div>
+                    <div className="text-sm text-charcoal/50">Company Size</div>
+                    <div className="font-medium text-charcoal">{clientProfile.companySize}</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-[#0077B5] mt-1" />
+                  <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-1" />
                   <div>
-                    <div className="text-sm text-[#051C2C]/50">Project Duration</div>
-                    <div className="font-medium text-[#051C2C]">{clientProfile.projectDuration}</div>
+                    <div className="text-sm text-charcoal/50">Project Duration</div>
+                    <div className="font-medium text-charcoal">{clientProfile.projectDuration}</div>
                   </div>
                 </div>
                 {clientProfile.additionalInfo && (
                   <div className="flex items-start gap-3">
-                    <Building2 className="w-4 h-4 sm:w-5 sm:h-5 text-[#0077B5] mt-1" />
+                    <Building2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-1" />
                     <div>
-                      <div className="text-sm text-[#051C2C]/50">{clientProfile.additionalLabel || "Additional Info"}</div>
-                      <div className="font-medium text-[#051C2C]">{clientProfile.additionalInfo}</div>
+                      <div className="text-sm text-charcoal/50">{clientProfile.additionalLabel || "Additional Info"}</div>
+                      <div className="font-medium text-charcoal">{clientProfile.additionalInfo}</div>
                     </div>
                   </div>
                 )}
@@ -276,7 +276,7 @@ export default function IndustryCaseStudyTemplate({
       </section>
 
       {/* The Challenge */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-[#f8f9fa]">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto">
             <motion.div
@@ -285,10 +285,10 @@ export default function IndustryCaseStudyTemplate({
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 block">
+              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 block">
                 The Challenge
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#051C2C] mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">
                 {challengeTitle}
               </h2>
               
@@ -300,11 +300,11 @@ export default function IndustryCaseStudyTemplate({
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
-                    className="bg-white p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 border-l-4 border-[#0077B5]"
+                    className="bg-white p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 border-l-4 border-primary"
                   >
-                    <challenge.icon className="w-8 h-8 text-[#0077B5] mb-4" />
-                    <h3 className="text-lg font-bold text-[#051C2C] mb-2">{challenge.title}</h3>
-                    <p className="text-[#051C2C]/70">{challenge.description}</p>
+                    <challenge.icon className="w-8 h-8 text-primary mb-4" />
+                    <h3 className="text-lg font-bold text-charcoal mb-2">{challenge.title}</h3>
+                    <p className="text-charcoal/70">{challenge.description}</p>
                   </motion.div>
                 ))}
               </div>
@@ -323,14 +323,14 @@ export default function IndustryCaseStudyTemplate({
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 block">
+              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 block">
                 Our Approach
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#051C2C] mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">
                 {approachTitle}
               </h2>
               
-              <p className="text-lg text-[#051C2C]/70 leading-relaxed mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
+              <p className="text-lg text-charcoal/70 leading-relaxed mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
                 {approachIntro}
               </p>
 
@@ -344,12 +344,12 @@ export default function IndustryCaseStudyTemplate({
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     className="flex gap-4 sm:p-5 md:p-4 sm:p-5 md:p-6"
                   >
-                    <div className="flex-shrink-0 w-16 h-16 bg-[#051C2C] text-white flex items-center justify-center font-serif font-bold text-xl">
+                    <div className="flex-shrink-0 w-16 h-16 bg-base text-white flex items-center justify-center font-serif font-bold text-xl">
                       {step.step}
                     </div>
                     <div className="pt-2">
-                      <h3 className="text-xl font-bold text-[#051C2C] mb-2">{step.title}</h3>
-                      <p className="text-[#051C2C]/70 leading-relaxed">{step.description}</p>
+                      <h3 className="text-xl font-bold text-charcoal mb-2">{step.title}</h3>
+                      <p className="text-charcoal/70 leading-relaxed">{step.description}</p>
                     </div>
                   </motion.div>
                 ))}
@@ -360,7 +360,7 @@ export default function IndustryCaseStudyTemplate({
       </section>
 
       {/* Results */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-[#051C2C] text-white">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto">
             <motion.div
@@ -369,7 +369,7 @@ export default function IndustryCaseStudyTemplate({
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 block">
+              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 block">
                 The Results
               </span>
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-white mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
@@ -386,8 +386,8 @@ export default function IndustryCaseStudyTemplate({
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     className="bg-white/5 border border-white/10 p-4 sm:p-6 md:p-4 sm:p-6 md:p-8"
                   >
-                    <result.icon className="w-8 h-8 text-[#0077B5] mb-4" />
-                    <div className="text-4xl font-bold text-[#0077B5] mb-2">{result.value}</div>
+                    <result.icon className="w-8 h-8 text-primary mb-4" />
+                    <div className="text-4xl font-bold text-primary mb-2">{result.value}</div>
                     <div className="text-lg font-medium text-white mb-2">{result.label}</div>
                     <div className="text-white/60 text-sm">{result.detail}</div>
                   </motion.div>
@@ -409,14 +409,14 @@ export default function IndustryCaseStudyTemplate({
               transition={{ duration: 0.6 }}
               className="relative"
             >
-              <Quote className="w-16 h-16 text-[#0077B5]/20 absolute -top-4 -left-4" />
-              <blockquote className="relative z-10 pl-8 border-l-4 border-[#0077B5]">
-                <p className="text-2xl md:text-3xl font-serif text-[#051C2C] leading-relaxed mb-6">
+              <Quote className="w-16 h-16 text-primary/20 absolute -top-4 -left-4" />
+              <blockquote className="relative z-10 pl-8 border-l-4 border-primary">
+                <p className="text-2xl md:text-3xl font-serif text-charcoal leading-relaxed mb-6">
                   "{quote}"
                 </p>
                 <footer>
-                  <div className="font-bold text-[#051C2C]">{quoteAuthor}</div>
-                  <div className="text-[#051C2C]/60">{quoteRole}</div>
+                  <div className="font-bold text-charcoal">{quoteAuthor}</div>
+                  <div className="text-charcoal/60">{quoteRole}</div>
                 </footer>
               </blockquote>
             </motion.div>
@@ -425,7 +425,7 @@ export default function IndustryCaseStudyTemplate({
       </section>
 
       {/* Related Case Studies */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-[#f8f9fa]">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -434,7 +434,7 @@ export default function IndustryCaseStudyTemplate({
             transition={{ duration: 0.6 }}
             className="mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12"
           >
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-[#051C2C]">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-charcoal">
               Related Case Studies
             </h2>
           </motion.div>
@@ -456,9 +456,9 @@ export default function IndustryCaseStudyTemplate({
                       className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
-                  <div className="text-3xl font-bold text-[#0077B5] mb-1">{study.metric}</div>
-                  <div className="text-sm text-[#051C2C]/60 mb-2">{study.label}</div>
-                  <h3 className="text-xl font-serif font-bold text-[#051C2C] group-hover:text-[#0077B5] transition-colors">
+                  <div className="text-3xl font-bold text-primary mb-1">{study.metric}</div>
+                  <div className="text-sm text-charcoal/60 mb-2">{study.label}</div>
+                  <h3 className="text-xl font-serif font-bold text-charcoal group-hover:text-primary transition-colors">
                     {study.title}
                   </h3>
                 </Link>
@@ -469,7 +469,7 @@ export default function IndustryCaseStudyTemplate({
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-[#051C2C]">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-base">
         <div className="container px-4 sm:px-6 md:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -484,7 +484,7 @@ export default function IndustryCaseStudyTemplate({
               {ctaDescription}
             </p>
             <Link href="/contact">
-              <button className="px-8 py-4 bg-[#0077B5] text-white font-semibold hover:bg-[#005a8c] transition-colors">
+              <button className="px-8 py-4 bg-primary text-white font-semibold hover:bg-primary/90 transition-colors">
                 Start a Conversation <ArrowRight className="inline ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </button>
             </Link>

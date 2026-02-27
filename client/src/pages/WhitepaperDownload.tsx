@@ -136,7 +136,7 @@ export default function WhitepaperDownload() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#051C2C] via-[#0a3d5c] to-[#051C2C] text-white py-16">
+      <section className="bg-gradient-to-br from-base via-base to-base text-white py-16">
         <div className="container">
           <Link href="/insights" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-5 sm:mb-6 md:mb-8 transition-colors">
             <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4" />
@@ -179,15 +179,15 @@ export default function WhitepaperDownload() {
 
               {/* Description */}
               <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 shadow-sm mb-5 sm:mb-6 md:mb-8">
-                <h2 className="text-2xl font-bold text-slate-900 mb-4">About This Whitepaper</h2>
-                <p className="text-slate-600 leading-relaxed mb-6">{whitepaper.description}</p>
+                <h2 className="text-2xl font-bold text-charcoal mb-4">About This Whitepaper</h2>
+                <p className="text-muted-foreground leading-relaxed mb-6">{whitepaper.description}</p>
 
                 {/* Topics */}
                 <div className="flex flex-wrap gap-2 mb-5 sm:mb-6 md:mb-8">
                   {whitepaper.topics.map((topic) => (
                     <span
                       key={topic}
-                      className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm"
+                      className="px-3 py-1 bg-slate-100 text-charcoal/80 rounded-full text-sm"
                     >
                       {topic}
                     </span>
@@ -195,12 +195,12 @@ export default function WhitepaperDownload() {
                 </div>
 
                 {/* Key Insights */}
-                <h3 className="text-xl font-bold text-slate-900 mb-4">What You'll Learn</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-4">What You'll Learn</h3>
                 <ul className="space-y-3">
                   {whitepaper.keyInsights.map((insight, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-slate-600">{insight}</span>
+                      <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-secondary flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{insight}</span>
                     </li>
                   ))}
                 </ul>
@@ -208,41 +208,41 @@ export default function WhitepaperDownload() {
 
               {/* Related Resources */}
               <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 shadow-sm">
-                <h3 className="text-xl font-bold text-slate-900 mb-6">Related Resources</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-6">Related Resources</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <Link
                     href="/insights/why-intelligent-automation"
-                    className="group p-4 border border-slate-200 rounded-lg hover:border-[#0077B5] transition-colors"
+                    className="group p-4 border border-slate-200 rounded-lg hover:border-primary transition-colors"
                   >
-                    <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Article</p>
-                    <h4 className="font-semibold text-slate-900 group-hover:text-[#0077B5] transition-colors">
+                    <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Article</p>
+                    <h4 className="font-semibold text-charcoal group-hover:text-primary transition-colors">
                       Why Intelligent Automation Isn't Optional Anymore
                     </h4>
                   </Link>
                   <Link
                     href="/insights/process-mining-guide"
-                    className="group p-4 border border-slate-200 rounded-lg hover:border-[#0077B5] transition-colors"
+                    className="group p-4 border border-slate-200 rounded-lg hover:border-primary transition-colors"
                   >
-                    <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Guide</p>
-                    <h4 className="font-semibold text-slate-900 group-hover:text-[#0077B5] transition-colors">
+                    <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Guide</p>
+                    <h4 className="font-semibold text-charcoal group-hover:text-primary transition-colors">
                       Process Mining: The Complete Guide
                     </h4>
                   </Link>
                   <Link
                     href="/case-studies"
-                    className="group p-4 border border-slate-200 rounded-lg hover:border-[#0077B5] transition-colors"
+                    className="group p-4 border border-slate-200 rounded-lg hover:border-primary transition-colors"
                   >
-                    <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Case Studies</p>
-                    <h4 className="font-semibold text-slate-900 group-hover:text-[#0077B5] transition-colors">
+                    <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Case Studies</p>
+                    <h4 className="font-semibold text-charcoal group-hover:text-primary transition-colors">
                       See How We've Helped Others
                     </h4>
                   </Link>
                   <Link
                     href="/contact"
-                    className="group p-4 border border-slate-200 rounded-lg hover:border-[#0077B5] transition-colors"
+                    className="group p-4 border border-slate-200 rounded-lg hover:border-primary transition-colors"
                   >
-                    <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">Contact</p>
-                    <h4 className="font-semibold text-slate-900 group-hover:text-[#0077B5] transition-colors">
+                    <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Contact</p>
+                    <h4 className="font-semibold text-charcoal group-hover:text-primary transition-colors">
                       Speak With an Expert
                     </h4>
                   </Link>
@@ -265,7 +265,7 @@ export default function WhitepaperDownload() {
       {/* More Whitepapers Section */}
       <section className="py-10 sm:py-12 lg:py-16 bg-white">
         <div className="container">
-          <h2 className="text-3xl font-bold text-slate-900 mb-5 sm:mb-6 md:mb-8">More Whitepapers</h2>
+          <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">More Whitepapers</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8">
             {Object.values(whitepapers)
               .filter((wp) => wp.id !== whitepaper.id)
@@ -289,10 +289,10 @@ export default function WhitepaperDownload() {
                       </span>
                     </div>
                   </div>
-                  <h3 className="font-bold text-slate-900 group-hover:text-[#0077B5] transition-colors mb-2">
+                  <h3 className="font-bold text-charcoal group-hover:text-primary transition-colors mb-2">
                     {wp.title}
                   </h3>
-                  <p className="text-sm text-slate-600 line-clamp-2">{wp.subtitle}</p>
+                  <p className="text-sm text-muted-foreground line-clamp-2">{wp.subtitle}</p>
                 </Link>
               ))}
           </div>

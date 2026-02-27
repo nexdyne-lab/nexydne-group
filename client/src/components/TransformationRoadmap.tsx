@@ -32,12 +32,12 @@ export function TransformationRoadmap({
               Implementation Timeline
             </span>
           </div>
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">{title}</h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-6">{subtitle}</p>
+          <h2 className="text-4xl font-bold text-charcoal mb-4">{title}</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-6">{subtitle}</p>
           {totalDuration && (
             <div className="inline-flex items-center gap-2 bg-white border border-slate-200 rounded-full px-6 py-3 shadow-sm">
               <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-600" />
-              <span className="text-slate-700 font-semibold">Total Duration: {totalDuration}</span>
+              <span className="text-charcoal/80 font-semibold">Total Duration: {totalDuration}</span>
             </div>
           )}
         </div>
@@ -65,27 +65,27 @@ export function TransformationRoadmap({
                             {phase.phase}
                           </div>
                           <div className="flex items-center gap-2 mb-2">
-                            <Calendar className="w-3 h-3 sm:w-4 sm:h-4 text-slate-400" />
-                            <span className="text-sm text-slate-500 font-medium">{phase.duration}</span>
+                            <Calendar className="w-3 h-3 sm:w-4 sm:h-4 text-muted-foreground/70" />
+                            <span className="text-sm text-muted-foreground font-medium">{phase.duration}</span>
                           </div>
-                          <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                          <h3 className="text-2xl font-bold text-charcoal mb-3">
                             {phase.title}
                           </h3>
-                          <p className="text-slate-600 leading-relaxed">
+                          <p className="text-muted-foreground leading-relaxed">
                             {phase.description}
                           </p>
                         </div>
 
                         {/* Deliverables */}
                         <div className="mb-4">
-                          <h4 className="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-3">
+                          <h4 className="text-sm font-semibold text-charcoal uppercase tracking-wider mb-3">
                             Key Deliverables
                           </h4>
                           <div className="space-y-2">
                             {phase.deliverables.map((deliverable, idx) => (
                               <div key={idx} className="flex items-start gap-2">
                                 <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-cyan-600 flex-shrink-0 mt-0.5" />
-                                <span className="text-sm text-slate-700">{deliverable}</span>
+                                <span className="text-sm text-charcoal/80">{deliverable}</span>
                               </div>
                             ))}
                           </div>
@@ -93,7 +93,7 @@ export function TransformationRoadmap({
 
                         {/* Milestones */}
                         <div>
-                          <h4 className="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-3">
+                          <h4 className="text-sm font-semibold text-charcoal uppercase tracking-wider mb-3">
                             Success Milestones
                           </h4>
                           <div className="flex flex-wrap gap-2">
@@ -129,10 +129,10 @@ export function TransformationRoadmap({
         {/* CTA */}
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 rounded-lg p-4 sm:p-6 md:p-4 sm:p-6 md:p-8">
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">
+            <h3 className="text-2xl font-bold text-charcoal mb-4">
               Ready to Start Your Transformation Journey?
             </h3>
-            <p className="text-slate-600 mb-6 max-w-2xl mx-auto">
+            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
               Our structured approach ensures predictable outcomes, minimized risk, and accelerated time-to-value.
             </p>
             <button className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-500/50 transition-all">

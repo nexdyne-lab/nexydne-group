@@ -35,7 +35,7 @@ export default function ProcessOrchestration() {
               <p className="text-xl text-purple-100 mb-8">
                 Coordinate complex workflows across multiple systems and teams. Orchestration engines manage dependencies, handle exceptions, and ensure processes complete successfully—turning fragmented operations into seamless end-to-end execution.
               </p>
-              <Button size="lg" className="bg-blue-500 hover:bg-blue-600 text-white">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white transition-colors duration-200 ease-in-out">
                 Do you want to know more?
               </Button>
             </div>
@@ -53,7 +53,7 @@ export default function ProcessOrchestration() {
       {/* Benefits Section */}
       <section className="py-20">
         <div className="container">
-          <h2 className="text-4xl font-bold text-slate-900 mb-12">
+          <h2 className="text-4xl font-bold text-charcoal mb-12">
             Why NEXDYNE Process Orchestration delivers results
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-start">
@@ -65,10 +65,10 @@ export default function ProcessOrchestration() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-slate-900 mb-2">
+                  <h3 className="text-xl font-semibold text-charcoal mb-2">
                     Complete process visibility
                   </h3>
-                  <p className="text-slate-600">
+                  <p className="text-muted-foreground">
                     See exactly where work sits across your organization. Orchestration platforms visualize workflows, identify bottlenecks, and surface exceptions—no more mystery delays or lost tasks.
                   </p>
                 </div>
@@ -81,10 +81,10 @@ export default function ProcessOrchestration() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-slate-900 mb-2">
+                  <h3 className="text-xl font-semibold text-charcoal mb-2">
                     Intelligent error handling
                   </h3>
-                  <p className="text-slate-600">
+                  <p className="text-muted-foreground">
                     Automated retry logic, escalation rules, and exception routing ensure processes complete successfully. When failures occur, the system knows exactly what to do—no manual intervention required.
                   </p>
                 </div>
@@ -97,10 +97,10 @@ export default function ProcessOrchestration() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-slate-900 mb-2">
+                  <h3 className="text-xl font-semibold text-charcoal mb-2">
                     Cross-team coordination
                   </h3>
-                  <p className="text-slate-600">
+                  <p className="text-muted-foreground">
                     Orchestration acts as the overarching layer across your organization, enabling departments to collaborate seamlessly. Work flows between teams automatically without handoff delays.
                   </p>
                 </div>
@@ -113,10 +113,10 @@ export default function ProcessOrchestration() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-slate-900 mb-2">
+                  <h3 className="text-xl font-semibold text-charcoal mb-2">
                     Scale without complexity
                   </h3>
-                  <p className="text-slate-600">
+                  <p className="text-muted-foreground">
                     Handle more customers with fewer staff by automating task coordination. Your business grows without increasing operational costs—orchestration ensures efficiency scales linearly.
                   </p>
                 </div>
@@ -137,10 +137,10 @@ export default function ProcessOrchestration() {
       {/* What is Process Orchestration Section */}
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">
+          <h2 className="text-4xl font-bold text-charcoal mb-6">
             Working smarter? Process Orchestration!
           </h2>
-          <div className="prose prose-lg max-w-none text-slate-700 space-y-4">
+          <div className="prose prose-lg max-w-none text-charcoal/80 space-y-4">
             <p>
               Process Orchestration acts as an overarching layer across your organization, automating and streamlining entire business processes from start to finish. It integrates various systems, departments, and devices to ensure seamless collaboration. Unlike point solutions that automate individual tasks, orchestration coordinates complex workflows spanning multiple teams and technologies.
             </p>
@@ -158,7 +158,7 @@ export default function ProcessOrchestration() {
             <p className="text-2xl md:text-3xl font-medium text-purple-900 mb-6">
               "Process Orchestration enables you to optimize all processes across departments, systems, and people. It's not just workflow automation—it's the intelligence layer that ensures every step executes correctly and exceptions get handled automatically."
             </p>
-            <footer className="text-slate-600 text-lg">
+            <footer className="text-muted-foreground text-lg">
               Edwin Nooijen - Sales Director - NEXDYNE TECHNOLOGIES
             </footer>
           </blockquote>
@@ -168,10 +168,10 @@ export default function ProcessOrchestration() {
       {/* The Solution You Didn't Know You Needed Section */}
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">
+          <h2 className="text-4xl font-bold text-charcoal mb-6">
             The solution you didn't know you needed
           </h2>
-          <div className="prose prose-lg max-w-none text-slate-700 space-y-4">
+          <div className="prose prose-lg max-w-none text-charcoal/80 space-y-4">
             <p>
               Process Orchestration often isn't what you're searching for—it's the solution to a company-wide problem. Your business is growing, but your team can't keep up. Processes are clunky, staff turnover is rising, and your efficiency metrics keep dropping. It's time for change.
             </p>
@@ -185,10 +185,10 @@ export default function ProcessOrchestration() {
       {/* The Process Orchestration Method Works Section */}
       <section className="py-20">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">
+          <h2 className="text-4xl font-bold text-charcoal mb-6">
             The Process Orchestration method works
           </h2>
-          <div className="prose prose-lg max-w-none text-slate-700 space-y-4">
+          <div className="prose prose-lg max-w-none text-charcoal/80 space-y-4">
             <p>
               Most orchestration projects fail because they try to model every process simultaneously. We start with your most painful cross-functional workflow—typically order-to-cash or procure-to-pay—and deploy it completely in 4-6 weeks. This delivers immediate visibility into process bottlenecks and proves the platform's value before expanding.
             </p>
@@ -203,7 +203,7 @@ export default function ProcessOrchestration() {
       <section className="py-20 bg-blue-50">
         <div className="container">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8">
+            <h2 className="text-3xl font-bold text-charcoal mb-8">
               Do you want to know more?
             </h2>
             <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -215,18 +215,18 @@ export default function ProcessOrchestration() {
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-semibold text-slate-900 mb-2">
+                <h3 className="text-2xl font-semibold text-charcoal mb-2">
                   Floris Weegink
                 </h3>
-                <p className="text-lg text-slate-600 mb-6">Field CTO</p>
+                <p className="text-lg text-muted-foreground mb-6">Field CTO</p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="bg-slate-900 hover:bg-slate-800 text-white">
+                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-white transition-colors duration-200 ease-in-out">
                     Get in touch
                   </Button>
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-slate-900 text-slate-900 hover:bg-slate-50"
+                    className="border-primary text-charcoal hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out"
                   >
                     Schedule a meeting
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -245,10 +245,10 @@ export default function ProcessOrchestration() {
             <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">
               PARTNERS
             </p>
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">
+            <h2 className="text-4xl font-bold text-charcoal mb-4">
               Enterprise orchestration through proven platforms
             </h2>
-            <p className="text-lg text-slate-600 max-w-3xl">
+            <p className="text-lg text-muted-foreground max-w-3xl">
               We deploy enterprise-grade orchestration platforms—Camunda for complex business process management and N8N for flexible workflow automation. These partnerships enable us to deliver process visibility and exception handling at scale.
             </p>
           </div>
@@ -256,13 +256,13 @@ export default function ProcessOrchestration() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg border border-slate-200">
               <h3 className="text-3xl font-bold text-blue-600 mb-4">Camunda</h3>
-              <p className="text-slate-700">
+              <p className="text-charcoal/80">
                 Business process orchestration engine managing complex workflows. Coordinates multi-system processes with full visibility, exception handling, and automated decision-making.
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg border border-slate-200">
               <h3 className="text-3xl font-bold text-blue-600 mb-4">N8N</h3>
-              <p className="text-slate-700">
+              <p className="text-charcoal/80">
                 Workflow automation platform enabling rapid process design and deployment. Connects applications, automates tasks, and orchestrates data flows across your technology stack.
               </p>
             </div>
@@ -282,8 +282,8 @@ export default function ProcessOrchestration() {
               />
             </div>
             <div>
-              <h2 className="text-4xl font-bold text-slate-900 mb-6">Why NEXDYNE</h2>
-              <div className="prose prose-lg text-slate-700">
+              <h2 className="text-4xl font-bold text-charcoal mb-6">Why NEXDYNE</h2>
+              <div className="prose prose-lg text-charcoal/80">
                 <p>
                   Most orchestration vendors sell platform licenses. We deliver coordinated processes. Our orchestration practice combines process mining expertise with technical execution—we don't just model workflows, we redesign operations to eliminate handoffs and ensure end-to-end completion.
                 </p>
@@ -303,10 +303,10 @@ export default function ProcessOrchestration() {
             <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">
               CASES
             </p>
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">
+            <h2 className="text-4xl font-bold text-charcoal mb-4">
               Cases we love talking about
             </h2>
-            <p className="text-lg text-slate-600 max-w-3xl">
+            <p className="text-lg text-muted-foreground max-w-3xl">
               Real implementations. Real results. See how we've deployed Process Orchestration to coordinate complex workflows and eliminate operational bottlenecks.
             </p>
           </div>
@@ -324,20 +324,20 @@ export default function ProcessOrchestration() {
                   <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded-full mb-3">
                     RETAIL
                   </span>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">
+                  <h3 className="text-xl font-bold text-charcoal mb-2">
                     Global Retailer
                   </h3>
-                  <p className="text-slate-600 mb-4">
+                  <p className="text-muted-foreground mb-4">
                     Implemented headless commerce platform reducing page load times by 45% and increasing mobile conversion by 60%.
                   </p>
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div>
                       <div className="text-2xl font-bold text-blue-600">45%</div>
-                      <div className="text-sm text-slate-600">Faster load times</div>
+                      <div className="text-sm text-muted-foreground">Faster load times</div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-blue-600">60%</div>
-                      <div className="text-sm text-slate-600">Mobile conversion</div>
+                      <div className="text-sm text-muted-foreground">Mobile conversion</div>
                     </div>
                   </div>
                 </div>
@@ -356,20 +356,20 @@ export default function ProcessOrchestration() {
                   <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded-full mb-3">
                     FINANCIAL SERVICES
                   </span>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">
+                  <h3 className="text-xl font-bold text-charcoal mb-2">
                     Financial Institution
                   </h3>
-                  <p className="text-slate-600 mb-4">
+                  <p className="text-muted-foreground mb-4">
                     Deployed RPA bots automating 80% of manual processing, saving 120K+ hours annually and improving accuracy to 99.9%.
                   </p>
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div>
                       <div className="text-2xl font-bold text-blue-600">80%</div>
-                      <div className="text-sm text-slate-600">Process automation</div>
+                      <div className="text-sm text-muted-foreground">Process automation</div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-blue-600">120K+</div>
-                      <div className="text-sm text-slate-600">Hours saved/year</div>
+                      <div className="text-sm text-muted-foreground">Hours saved/year</div>
                     </div>
                   </div>
                 </div>
@@ -388,20 +388,20 @@ export default function ProcessOrchestration() {
                   <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded-full mb-3">
                     HEALTHCARE
                   </span>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">
+                  <h3 className="text-xl font-bold text-charcoal mb-2">
                     Healthcare Provider
                   </h3>
-                  <p className="text-slate-600 mb-4">
+                  <p className="text-muted-foreground mb-4">
                     Built AI-powered patient engagement platform reducing no-shows by 40% and improving patient satisfaction scores by 35%.
                   </p>
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div>
                       <div className="text-2xl font-bold text-blue-600">40%</div>
-                      <div className="text-sm text-slate-600">Reduced no-shows</div>
+                      <div className="text-sm text-muted-foreground">Reduced no-shows</div>
                     </div>
                     <div>
                       <div className="text-2xl font-bold text-blue-600">35%</div>
-                      <div className="text-sm text-slate-600">Higher satisfaction</div>
+                      <div className="text-sm text-muted-foreground">Higher satisfaction</div>
                     </div>
                   </div>
                 </div>
@@ -411,7 +411,7 @@ export default function ProcessOrchestration() {
 
           <div className="text-center">
             <Link href="/cases">
-              <Button variant="outline" size="lg" className="border-slate-900 text-slate-900 hover:bg-slate-50">
+              <Button variant="outline" size="lg" className="border-primary text-charcoal hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out">
                 All cases
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -427,16 +427,16 @@ export default function ProcessOrchestration() {
             <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">
               PROCESS AUTOMATION
             </p>
-            <h2 className="text-4xl font-bold text-slate-900">Services</h2>
+            <h2 className="text-4xl font-bold text-charcoal">Services</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <Link href="/solutions/rpa">
               <div className="bg-white p-8 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow cursor-pointer">
-                <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                <h3 className="text-2xl font-bold text-charcoal mb-4">
                   Robotic Process Automation (RPA)
                 </h3>
-                <p className="text-slate-600 mb-6">
+                <p className="text-muted-foreground mb-6">
                   Software robots that execute repetitive tasks with perfect consistency. Deploy bots that handle data entry, invoice processing, and system updates—freeing your team for strategic work.
                 </p>
                 <div className="flex items-center text-blue-600 font-semibold">
@@ -448,8 +448,8 @@ export default function ProcessOrchestration() {
 
             <Link href="/solutions/ipaas">
               <div className="bg-white p-8 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow cursor-pointer">
-                <h3 className="text-2xl font-bold text-slate-900 mb-4">iPaaS</h3>
-                <p className="text-slate-600 mb-6">
+                <h3 className="text-2xl font-bold text-charcoal mb-4">iPaaS</h3>
+                <p className="text-muted-foreground mb-6">
                   Connect disparate systems without custom code. Real-time data synchronization across your ERP, CRM, and legacy systems—eliminating manual data transfer.
                 </p>
                 <div className="flex items-center text-blue-600 font-semibold">
@@ -460,10 +460,10 @@ export default function ProcessOrchestration() {
             </Link>
 
             <div className="bg-white p-8 rounded-lg border-2 border-blue-500 shadow-lg">
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">
+              <h3 className="text-2xl font-bold text-charcoal mb-4">
                 Process Orchestration
               </h3>
-              <p className="text-slate-600 mb-6">
+              <p className="text-muted-foreground mb-6">
                 Coordinate complex workflows across multiple systems and teams. Orchestration engines manage dependencies, handle exceptions, and ensure seamless end-to-end execution.
               </p>
               <div className="flex items-center text-blue-600 font-semibold">
@@ -475,13 +475,13 @@ export default function ProcessOrchestration() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-red-600 to-red-500 text-white">
+      <section className="py-20 bg-primary text-white">
         <div className="container max-w-4xl text-center">
           <h2 className="text-4xl font-bold mb-4">Ready to transform?</h2>
           <p className="text-xl mb-8 text-red-100">
             Let's talk about how AI-powered automation can accelerate your business.
           </p>
-          <Button size="lg" className="bg-white text-red-600 hover:bg-red-50">
+          <Button size="lg" className="bg-white text-primary hover:bg-white/90 transition-colors duration-200 ease-in-out">
             Contact us
           </Button>
           <p className="mt-6 text-red-100">or call us at +1 (555) 123-4567</p>

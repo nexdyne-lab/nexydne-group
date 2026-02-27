@@ -13,7 +13,7 @@ const fadeInUp = {
 
 export default function ChangeManagementAISuccess() {
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-sans">
+    <div className="min-h-screen bg-white text-charcoal font-sans">
       <SEO 
         title="Why Change Management Determines AI Project Success | NexDyne Technologies" 
         description="Technology is the easy part. Learn why change management is the critical factor that separates successful AI implementations from expensive failures."
@@ -69,7 +69,7 @@ export default function ChangeManagementAISuccess() {
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <div className="text-6xl font-bold text-teal-900 mb-4">70%</div>
-            <p className="text-xl text-slate-700">
+            <p className="text-xl text-charcoal/80">
               of AI and automation projects fail to deliver expected value—not because of technology limitations, but because of inadequate change management.
             </p>
           </div>
@@ -270,7 +270,7 @@ export default function ChangeManagementAISuccess() {
       <section className="py-20 bg-slate-50">
         <div className="container px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 mb-8">Related Insights</h2>
+            <h2 className="text-2xl font-bold text-charcoal mb-8">Related Insights</h2>
             
             <div className="grid md:grid-cols-3 gap-8">
               <Link href="/insights/mid-market-ai-access" className="group">
@@ -278,7 +278,7 @@ export default function ChangeManagementAISuccess() {
                   <div className="aspect-[16/10] bg-gradient-to-br from-slate-700 to-slate-900"></div>
                   <div className="p-6">
                     <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">Report</span>
-                    <h3 className="text-lg font-semibold text-slate-900 mt-2 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-blue-600 transition-colors">
                       Mid-Market AI Access: How growing businesses can compete with enterprise technology
                     </h3>
                   </div>
@@ -290,7 +290,7 @@ export default function ChangeManagementAISuccess() {
                   <div className="aspect-[16/10] bg-gradient-to-br from-emerald-700 to-emerald-900"></div>
                   <div className="p-6">
                     <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">Article</span>
-                    <h3 className="text-lg font-semibold text-slate-900 mt-2 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-blue-600 transition-colors">
                       The 85% efficiency improvement: What our clients actually experience
                     </h3>
                   </div>
@@ -302,7 +302,7 @@ export default function ChangeManagementAISuccess() {
                   <div className="aspect-[16/10] bg-gradient-to-br from-blue-700 to-blue-900"></div>
                   <div className="p-6">
                     <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">Whitepaper</span>
-                    <h3 className="text-lg font-semibold text-slate-900 mt-2 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-blue-600 transition-colors">
                       Process mining fundamentals: From operational mapping to AI automation
                     </h3>
                   </div>

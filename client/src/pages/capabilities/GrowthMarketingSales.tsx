@@ -10,7 +10,7 @@ import BainHoverCard from "@/components/BainHoverCard";
 
 export default function GrowthMarketingSales() {
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Growth, Marketing & Sales" 
         description="Drive sustainable revenue growth by aligning strategy, customer experience, and commercial execution with data-driven precision."
@@ -19,7 +19,7 @@ export default function GrowthMarketingSales() {
       <Navbar />
       
       {/* Hero Section - Dark Background */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-black">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <motion.div
@@ -39,7 +39,7 @@ export default function GrowthMarketingSales() {
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact">
-                  <Button className="bg-[#0077B5] hover:bg-[#005a8c] text-white px-8 py-6 text-base font-semibold transition-all duration-300">
+                  <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-all duration-300">
                     Accelerate Growth <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </Link>
@@ -68,14 +68,14 @@ export default function GrowthMarketingSales() {
       </section>
 
       {/* F100/H100 Experience & Impact Section - Border-Left Accent Animation */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-2xl font-bold text-[#051C2C] mb-12 eb-garamond"
+            className="text-2xl font-bold text-charcoal mb-12 eb-garamond"
           >
             Our Experience & Impact
           </motion.h2>
@@ -92,11 +92,11 @@ export default function GrowthMarketingSales() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`${index > 0 ? 'md:border-l border-gray-200 md:pl-8' : ''}`}
+                className={`${index > 0 ? 'md:border-l border-border md:pl-8' : ''}`}
               >
                 <div>
-                  <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-3 sm:mb-4">{item.metric}</div>
-                  <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                  <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-3 sm:mb-4">{item.metric}</div>
+                  <p className="text-lg text-charcoal/60">{item.label}</p>
                 </div>
               </motion.div>
             ))}
@@ -114,7 +114,7 @@ export default function GrowthMarketingSales() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-[#051C2C] leading-tight eb-garamond">
+              <h2 className="text-4xl md:text-5xl font-bold text-charcoal leading-tight eb-garamond">
                 Turn growth ambitions into commercial results.
               </h2>
             </motion.div>
@@ -124,28 +124,28 @@ export default function GrowthMarketingSales() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="space-y-6 text-lg text-[#051C2C]/80 leading-relaxed"
+              className="space-y-6 text-lg text-charcoal/80 leading-relaxed"
             >
               <p>
                 Growth in today's market requires more than good products and aggressive targets. It demands a clear understanding of where your customers are, what drives their decisions, and how to reach them efficiently across an increasingly fragmented landscape.
               </p>
               <p>
-                We work with growing companies who have proven product-market fit but are struggling to scale their commercial engine. Our approach connects <strong className="text-[#051C2C] font-semibold">customer insights, marketing operations, and sales execution</strong> into a unified growth system—one that delivers predictable revenue without burning through budget on tactics that don't work.
+                We work with growing companies who have proven product-market fit but are struggling to scale their commercial engine. Our approach connects <strong className="text-charcoal font-semibold">customer insights, marketing operations, and sales execution</strong> into a unified growth system—one that delivers predictable revenue without burning through budget on tactics that don't work.
               </p>
               <p>
                 Whether you're optimizing pricing, building a scalable marketing function, or transforming your sales organization, we bring the strategic frameworks and hands-on expertise to help you compete against larger players and win in your target markets.
               </p>
               <ul className="space-y-3 mt-6">
                 <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-[#06b6d4] mt-2 flex-shrink-0"></span>
+                  <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
                   <span>Customer insights that drive strategic decisions</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-[#06b6d4] mt-2 flex-shrink-0"></span>
+                  <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
                   <span>Marketing operations that scale efficiently</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-[#06b6d4] mt-2 flex-shrink-0"></span>
+                  <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
                   <span>Sales execution that converts opportunities</span>
                 </li>
               </ul>
@@ -155,7 +155,7 @@ export default function GrowthMarketingSales() {
       </section>
 
       {/* Our Approach Section - 3 Column Dark Background */}
-      <section className="py-24 bg-[#0a1628] text-white">
+      <section className="py-24 bg-base text-white">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -164,7 +164,7 @@ export default function GrowthMarketingSales() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
               Our Approach
             </span>
             <h2 className="text-4xl md:text-5xl font-bold eb-garamond">
@@ -198,7 +198,7 @@ export default function GrowthMarketingSales() {
                 <h3 className="text-xl font-bold mb-4">
                   {pillar.title}
                 </h3>
-                <p className="text-white/70 leading-relaxed">
+                <p className="text-white leading-relaxed">
                   {pillar.description}
                 </p>
               </motion.div>
@@ -222,7 +222,7 @@ export default function GrowthMarketingSales() {
       </section>
 
       {/* F100/H100 Core Capabilities Grid - H100 Hover Cards with Red Border-Left */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -231,13 +231,13 @@ export default function GrowthMarketingSales() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Help
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#051C2C] mb-6 eb-garamond">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6 eb-garamond">
               Commercial transformation capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               We partner with organizations to transform their commercial engines and unlock sustainable growth through integrated capabilities across the entire customer lifecycle.
             </p>
           </motion.div>
@@ -299,7 +299,7 @@ export default function GrowthMarketingSales() {
       </section>
 
       {/* Specialized Capabilities - White Background */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="py-12 md:py-28 bg-white">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -308,10 +308,10 @@ export default function GrowthMarketingSales() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Specialized Expertise
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#051C2C] mb-6 eb-garamond">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
               Deep expertise across the commercial stack
             </h2>
           </motion.div>
@@ -387,10 +387,10 @@ export default function GrowthMarketingSales() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-[#051C2C] mb-6 eb-garamond">
+              <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-6 eb-garamond">
                 How AI is Transforming Growth & Marketing
               </h2>
-              <p className="text-lg text-[#051C2C]/70 leading-relaxed mb-8">
+              <p className="text-lg text-charcoal/70 leading-relaxed mb-8">
                 AI is fundamentally changing how companies acquire, engage, and retain customers. Forward-thinking marketing and sales teams are embedding AI across their commercial operations—personalizing experiences at scale, predicting customer behavior, and optimizing spend in real-time. Here's where we're seeing the biggest impact:
               </p>
               
@@ -405,16 +405,16 @@ export default function GrowthMarketingSales() {
                   { title: "Sales forecasting", desc: "Improve pipeline accuracy with AI-powered deal scoring and close predictions" }
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <span className="text-[#0077B5] mt-1">•</span>
+                    <span className="text-primary mt-1">•</span>
                     <div>
-                      <span className="font-semibold text-[#051C2C]">{item.title}.</span>{" "}
-                      <span className="text-[#051C2C]/70">{item.desc}</span>
+                      <span className="font-semibold text-charcoal">{item.title}.</span>{" "}
+                      <span className="text-charcoal/70">{item.desc}</span>
                     </div>
                   </div>
                 ))}
               </div>
               
-              <Link href="/capabilities/artificial-intelligence" className="inline-flex items-center text-[#c41230] font-semibold mt-8 hover:underline">
+              <Link href="/capabilities/artificial-intelligence" className="inline-flex items-center text-destructive font-semibold mt-8 hover:underline">
                 See how we help companies implement AI for growth <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </motion.div>
@@ -433,21 +433,21 @@ export default function GrowthMarketingSales() {
               
               {/* Results & Approach Two-Column */}
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="border-l-2 border-[#0077B5] pl-6">
-                  <h3 className="text-lg font-serif font-bold text-[#051C2C] mb-3">Results We've Delivered</h3>
-                  <p className="text-[#051C2C]/70 text-sm leading-relaxed mb-4">
+                <div className="border-l-2 border-primary pl-6">
+                  <h3 className="text-lg font-serif font-bold text-charcoal mb-3">Results We've Delivered</h3>
+                  <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
                     From retail to professional services, we've helped companies across industries implement AI-powered growth strategies that deliver measurable commercial results.
                   </p>
-                  <Link href="/capabilities/artificial-intelligence" className="text-sm text-[#051C2C] font-semibold hover:text-[#0077B5] transition-colors flex items-center">
+                  <Link href="/capabilities/artificial-intelligence" className="text-sm text-charcoal font-semibold hover:text-primary transition-colors flex items-center">
                     See how we're helping companies grow with AI <ArrowRight className="ml-1 w-3 h-3" />
                   </Link>
                 </div>
-                <div className="border-l-2 border-[#0077B5] pl-6">
-                  <h3 className="text-lg font-serif font-bold text-[#051C2C] mb-3">Our Approach</h3>
-                  <p className="text-[#051C2C]/70 text-sm leading-relaxed mb-4">
+                <div className="border-l-2 border-primary pl-6">
+                  <h3 className="text-lg font-serif font-bold text-charcoal mb-3">Our Approach</h3>
+                  <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
                     We help marketing and sales teams become AI-ready by connecting customer data, building the right infrastructure, and implementing use cases that deliver quick wins while building toward long-term transformation.
                   </p>
-                  <Link href="/capabilities/artificial-intelligence" className="text-sm text-[#051C2C] font-semibold hover:text-[#0077B5] transition-colors flex items-center">
+                  <Link href="/capabilities/artificial-intelligence" className="text-sm text-charcoal font-semibold hover:text-primary transition-colors flex items-center">
                     Learn more about our AI approach <ArrowRight className="ml-1 w-3 h-3" />
                   </Link>
                 </div>
@@ -458,7 +458,7 @@ export default function GrowthMarketingSales() {
       </section>
 
       {/* Case Studies Section - Light Gray Background */}
-      <section className="py-20 md:py-28 bg-[#f8f8f7]">
+      <section className="py-20 md:py-28 bg-subtle">
         <div className="container px-4 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
             <motion.div
@@ -467,15 +467,15 @@ export default function GrowthMarketingSales() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Featured Case Studies
               </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#051C2C] eb-garamond">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal eb-garamond">
                 Driving commercial transformation
               </h2>
             </motion.div>
             <Link href="/capabilities/growth-marketing-sales/case-studies">
-              <Button variant="outline" className="border-[#051C2C]/20 text-[#051C2C] hover:bg-[#051C2C]/5 bg-transparent">
+              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/5 bg-transparent">
                 View all case studies
               </Button>
             </Link>
@@ -521,19 +521,19 @@ export default function GrowthMarketingSales() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4">
-                    <span className="inline-block px-3 py-1 bg-[#0077B5] text-white text-xs font-bold rounded">
+                    <span className="inline-block px-3 py-1 bg-primary text-white text-xs font-bold rounded">
                       {study.result}
                     </span>
                   </div>
                 </div>
-                <div className="text-[#0077B5] text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
-                <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-3 group-hover:text-[#0077B5] transition-colors leading-tight">
+                <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
+                <h3 className="text-xl font-serif font-bold text-charcoal mb-3 group-hover:text-primary transition-colors leading-tight">
                   {study.title}
                 </h3>
-                <p className="text-[#051C2C]/60 text-sm leading-relaxed mb-4">
+                <p className="text-charcoal/60 text-sm leading-relaxed mb-4">
                   {study.description}
                 </p>
-                <div className="flex items-center text-[#0077B5] text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                   Read case study <ArrowRight className="ml-2 w-4 h-4" />
                 </div>
               </motion.div>
@@ -548,7 +548,7 @@ export default function GrowthMarketingSales() {
           {/* Header with horizontal lines */}
           <div className="flex items-center justify-center mb-16">
             <div className="flex-1 h-px bg-gray-300"></div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#051C2C] px-8 text-center eb-garamond">
+            <h2 className="text-2xl md:text-3xl font-bold text-charcoal px-8 text-center eb-garamond">
               Our Growth & Marketing Insights
             </h2>
             <div className="flex-1 h-px bg-gray-300"></div>
@@ -606,18 +606,18 @@ export default function GrowthMarketingSales() {
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>
-                  <div className="text-[#c41230] text-xs font-bold uppercase tracking-wider mb-2">
+                  <div className="text-destructive text-xs font-bold uppercase tracking-wider mb-2">
                     {insight.category}
                   </div>
-                  <h3 className="text-lg font-serif font-bold text-[#051C2C] mb-2 leading-tight group-hover:underline decoration-1 underline-offset-2">
+                  <h3 className="text-lg font-serif font-bold text-charcoal mb-2 leading-tight group-hover:underline decoration-1 underline-offset-2">
                     {insight.title}
                   </h3>
-                  <p className="text-[#051C2C]/60 text-sm leading-relaxed mb-4">
+                  <p className="text-charcoal/60 text-sm leading-relaxed mb-4">
                     {insight.description}
                   </p>
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-[#051C2C]/50">{insight.type}</span>
-                    <svg className="w-5 h-5 text-[#051C2C]/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <span className="text-charcoal/50">{insight.type}</span>
+                    <svg className="w-5 h-5 text-charcoal/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
                     </svg>
                   </div>
@@ -635,7 +635,7 @@ export default function GrowthMarketingSales() {
             className="text-center mt-12"
           >
             <Link href="/insights">
-              <Button variant="outline" className="border-[#c41230] text-[#c41230] hover:bg-[#c41230]/5 bg-transparent px-8 py-4">
+              <Button variant="outline" className="border-destructive text-destructive hover:bg-destructive/5 bg-transparent px-8 py-4">
                 SEE MORE
               </Button>
             </Link>
@@ -644,7 +644,7 @@ export default function GrowthMarketingSales() {
       </section>
 
       {/* Related Capabilities Section - Light Gray Background */}
-      <section className="py-20 md:py-28 bg-[#f8f8f7]">
+      <section className="py-20 md:py-28 bg-subtle">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -653,13 +653,13 @@ export default function GrowthMarketingSales() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Explore Further
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#051C2C] mb-6 eb-garamond">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
               Related Capabilities
             </h2>
-            <p className="text-lg text-[#051C2C]/60 max-w-2xl mx-auto">
+            <p className="text-lg text-charcoal/60 max-w-2xl mx-auto">
               Discover how our integrated capabilities can amplify your growth initiatives.
             </p>
           </motion.div>
@@ -693,15 +693,15 @@ export default function GrowthMarketingSales() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={capability.link} className="group block h-full">
-                  <div className="h-full p-8 rounded-lg bg-white border border-gray-200 hover:border-[#0077B5]/50 transition-all duration-300 hover:shadow-lg">
-                    <div className="text-[#0077B5] text-xs font-bold uppercase tracking-[0.15em] mb-2">{capability.title}</div>
-                    <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 group-hover:text-[#0077B5] transition-colors">
+                  <div className="h-full p-8 rounded-lg bg-white border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                    <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-2">{capability.title}</div>
+                    <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
                       {capability.subtitle}
                     </h3>
-                    <p className="text-[#051C2C]/60 leading-relaxed mb-6">
+                    <p className="text-charcoal/60 leading-relaxed mb-6">
                       {capability.description}
                     </p>
-                    <div className="flex items-center text-[#0077B5] text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                    <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                       Explore capability <ArrowRight className="ml-2 w-4 h-4" />
                     </div>
                   </div>
@@ -713,7 +713,7 @@ export default function GrowthMarketingSales() {
       </section>
 
       {/* CTA Section - Blue Background */}
-      <section className="py-20 md:py-28 bg-[#0077B5]">
+      <section className="py-20 md:py-28 bg-primary">
         <div className="container px-4 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
             <motion.div
@@ -729,7 +729,7 @@ export default function GrowthMarketingSales() {
                 Let's discuss how we can help transform your commercial engine and drive sustainable revenue growth.
               </p>
               <Link href="/contact">
-                <Button className="bg-white text-[#0077B5] hover:bg-white/90 px-10 py-6 text-lg font-semibold">
+                <Button className="bg-white text-primary hover:bg-white/90 px-10 py-6 text-lg font-semibold">
                   Schedule a Consultation <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>

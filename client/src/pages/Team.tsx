@@ -72,7 +72,7 @@ export default function Team() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#333]">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
       <SEO 
         title="Leadership Team | NexDyne Consulting Group" 
         description="Meet the leaders and experts who drive transformation for our clients. Our team combines deep technical expertise with practical business experience."
@@ -81,7 +81,7 @@ export default function Team() {
       <Navigation />
       
       {/* Hero Section - Clean McKinsey Style */}
-      <section className="relative min-h-[50vh] flex items-center pt-16 overflow-hidden bg-[#051c2c]">
+      <section className="relative min-h-[50vh] flex items-center pt-16 overflow-hidden bg-base">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -89,7 +89,7 @@ export default function Team() {
             alt="Team collaboration" 
             className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#051c2c] via-[#051c2c]/90 to-[#051c2c]/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/90 to-base/70" />
         </div>
         
         {/* Hero Content */}
@@ -100,11 +100,11 @@ export default function Team() {
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
-            <p className="text-[#0052cc] text-sm font-bold uppercase tracking-widest mb-4">
+            <p className="text-primary-hover text-sm font-bold uppercase tracking-widest mb-4">
               Our Team
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-white leading-[1.1] mb-3">
-              Our <span className="text-[#0052cc]">People</span>
+              Our <span className="text-primary-hover">People</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-white/80 leading-relaxed max-w-2xl">
               Meet the leaders and experts who drive transformation for our clients
@@ -114,7 +114,7 @@ export default function Team() {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-20 md:py-28 bg-white border-b border-gray-100">
+      <section className="py-20 md:py-28 bg-white border-b border-border/50">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -124,7 +124,7 @@ export default function Team() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 leading-tight mb-6">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal leading-tight mb-6">
                   Built on trust.<br />
                   Driven by results.
                 </h2>
@@ -136,16 +136,16 @@ export default function Team() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="space-y-6"
               >
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-lg text-muted-foreground leading-relaxed">
                   Our philosophy is simple: deliver cutting-edge technologies with customer-centric solutions, and back every 
                   partnership with hands-on expertise. We don't oversell or overcomplicate—we build systems that work from day one.
                 </p>
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-lg text-muted-foreground leading-relaxed">
                   Earning your trust through proven results and transparent communication is our top priority. Every engagement 
                   is an opportunity to demonstrate the transformative power of intelligent automation.
                 </p>
                 <Link href="/case-studies">
-                  <a className="inline-flex items-center gap-2 text-[#0052cc] font-semibold hover:gap-3 transition-all">
+                  <a className="inline-flex items-center gap-2 text-primary-hover font-semibold hover:gap-3 transition-all">
                     See Our Work <ArrowRight className="w-4 h-4" />
                   </a>
                 </Link>
@@ -156,7 +156,7 @@ export default function Team() {
       </section>
 
       {/* Team Grid */}
-      <section className="py-20 md:py-28 bg-[#f5f5f5]">
+      <section className="py-20 md:py-28 bg-subtle">
         <div className="container px-4 md:px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -165,10 +165,10 @@ export default function Team() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal mb-6">
               Meet our consultants
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Our team combines deep technical expertise with practical business experience to deliver 
               automation solutions that create measurable value.
             </p>
@@ -196,13 +196,13 @@ export default function Team() {
                     
                     {/* Content */}
                     <div className="p-6">
-                      <h3 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-[#0052cc] transition-colors">
+                      <h3 className="text-xl font-bold text-charcoal mb-1 group-hover:text-primary-hover transition-colors">
                         {consultant.name}
                       </h3>
-                      <p className="text-sm font-semibold text-[#0052cc] mb-2">
+                      <p className="text-sm font-semibold text-primary-hover mb-2">
                         {consultant.title}
                       </p>
-                      <p className="text-sm text-gray-500 mb-4">
+                      <p className="text-sm text-muted-foreground mb-4">
                         {consultant.location}
                       </p>
                       
@@ -211,13 +211,13 @@ export default function Team() {
                         {consultant.expertise.slice(0, 2).map((skill, skillIndex) => (
                           <span 
                             key={skillIndex}
-                            className="px-3 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded"
+                            className="px-3 py-1 text-xs font-medium bg-subtle text-muted-foreground rounded"
                           >
                             {skill}
                           </span>
                         ))}
                         {consultant.expertise.length > 2 && (
-                          <span className="px-3 py-1 text-xs font-medium bg-[#0052cc]/10 text-[#0052cc] rounded">
+                          <span className="px-3 py-1 text-xs font-medium bg-primary-hover/10 text-primary-hover rounded">
                             +{consultant.expertise.length - 2} more
                           </span>
                         )}
@@ -232,7 +232,7 @@ export default function Team() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-28 bg-[#051c2c] text-white">
+      <section className="py-20 md:py-28 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
@@ -250,7 +250,7 @@ export default function Team() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact">
-                  <a className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#051c2c] font-semibold rounded hover:bg-gray-100 transition-colors">
+                  <a className="inline-flex items-center justify-center px-8 py-4 bg-white text-base font-semibold rounded hover:bg-subtle transition-colors">
                     Schedule Consultation
                   </a>
                 </Link>

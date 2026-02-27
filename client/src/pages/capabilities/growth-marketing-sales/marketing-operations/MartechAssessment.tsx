@@ -10,7 +10,7 @@ import { SEO } from "@/components/SEO";
 
 export default function MartechAssessment() {
   return (
-    <div className="min-h-screen bg-[#051C2C] text-white selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
       <SEO 
         title="MarTech Stack Assessment | NexDyne Technologies" 
         description="Audit your marketing technology ecosystem to identify gaps, redundancies, and optimization opportunities. Build a roadmap for a unified, high-performing tech stack."
@@ -21,7 +21,7 @@ export default function MartechAssessment() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-30"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#051C2C] via-[#051C2C]/60 to-[#051C2C]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
         
         <div className="container relative z-10 px-4 md:px-12">
           <Breadcrumbs />
@@ -32,21 +32,21 @@ export default function MartechAssessment() {
             className="max-w-4xl"
           >
             <Link href="/capabilities/growth-marketing-sales/marketing-operations">
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block hover:text-white transition-colors cursor-pointer">
+              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block hover:text-white transition-colors cursor-pointer">
                 Marketing Operations
               </span>
             </Link>
             
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4 eb-garamond">
               MarTech Stack <br />
-              <span className="text-[#0077B5]">Assessment</span>
+              <span className="text-primary">Assessment</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
               Audit your existing marketing technology ecosystem, identify gaps and redundancies, and build a roadmap for optimization. Turn your scattered tools into a unified growth engine.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
-                <Button className="bg-[#0077B5] hover:bg-[#005a8c] text-white px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all">
+                <Button className="bg-primary hover:bg-primary/90 text-white px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all">
                   Request a Stack Audit
                 </Button>
               </Link>
@@ -61,7 +61,7 @@ export default function MartechAssessment() {
       </section>
 
       {/* Our Experience Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-20 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -71,17 +71,17 @@ export default function MartechAssessment() {
           >
             <h2 className="text-xl sm:text-2xl font-bold mb-8 sm:mb-12 eb-garamond">Our Experience</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
-              <div className="border-l-2 border-[#0077B5] pl-6">
-                <div className="text-4xl sm:text-5xl font-bold text-[#051C2C] mb-2">150+</div>
-                <div className="text-sm sm:text-base text-[#051C2C]/60">martech stack assessments completed</div>
+              <div className="border-l-2 border-primary pl-6">
+                <div className="text-4xl sm:text-5xl font-bold text-charcoal mb-2">150+</div>
+                <div className="text-sm sm:text-base text-charcoal/60">martech stack assessments completed</div>
               </div>
-              <div className="border-l-2 border-[#0077B5] pl-6">
-                <div className="text-4xl sm:text-5xl font-bold text-[#051C2C] mb-2">25-40%</div>
-                <div className="text-sm sm:text-base text-[#051C2C]/60">typical reduction in tech stack costs</div>
+              <div className="border-l-2 border-primary pl-6">
+                <div className="text-4xl sm:text-5xl font-bold text-charcoal mb-2">25-40%</div>
+                <div className="text-sm sm:text-base text-charcoal/60">typical reduction in tech stack costs</div>
               </div>
-              <div className="border-l-2 border-[#0077B5] pl-6">
-                <div className="text-4xl sm:text-5xl font-bold text-[#051C2C] mb-2">12</div>
-                <div className="text-sm sm:text-base text-[#051C2C]/60">average tools per company assessed</div>
+              <div className="border-l-2 border-primary pl-6">
+                <div className="text-4xl sm:text-5xl font-bold text-charcoal mb-2">12</div>
+                <div className="text-sm sm:text-base text-charcoal/60">average tools per company assessed</div>
               </div>
             </div>
           </motion.div>
@@ -89,7 +89,7 @@ export default function MartechAssessment() {
       </section>
 
       {/* Thought Leadership Section */}
-      <section className="py-12 sm:py-16 md:py-24 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -98,7 +98,7 @@ export default function MartechAssessment() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
-            <div className="space-y-8 text-lg sm:text-xl text-[#051C2C]/80 leading-relaxed font-serif">
+            <div className="space-y-8 text-lg sm:text-xl text-charcoal/80 leading-relaxed font-serif">
               <p>
                 The average mid-market company uses 12-15 marketing tools—and most of them barely talk to each other. What starts as solving individual problems quickly becomes a tangled web of overlapping capabilities, data silos, and integration headaches. The result: marketing teams spend more time wrestling with technology than using it to drive growth.
               </p>
@@ -117,7 +117,7 @@ export default function MartechAssessment() {
       </section>
 
       {/* What We Do Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -166,11 +166,11 @@ export default function MartechAssessment() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group"
               >
-                <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-[#0077B5]/50 transition-all duration-300 hover:bg-white/10">
-                  <div className="mb-6 p-3 bg-[#0077B5]/10 w-fit rounded-lg text-[#0077B5] group-hover:bg-[#0077B5] group-hover:text-white transition-all duration-300">
+                <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300 hover:bg-white/10">
+                  <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
                     {item.icon}
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-[#0077B5] transition-colors">
+                  <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 leading-relaxed">
@@ -184,7 +184,7 @@ export default function MartechAssessment() {
       </section>
 
       {/* Case Studies Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -193,10 +193,10 @@ export default function MartechAssessment() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Examples of Our Work
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#051C2C] mb-6 eb-garamond">Examples of our work</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">Examples of our work</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4 sm:p-6 md:p-8 lg:gap-10">
@@ -228,17 +228,17 @@ export default function MartechAssessment() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group"
               >
-                <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-[#051C2C]/5 hover:bg-[#051C2C] transition-all duration-500 hover:scale-[1.02]">
-                  <div className="text-4xl font-serif font-bold text-[#0077B5] mb-2 group-hover:text-white transition-colors">
+                <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-base/5 hover:bg-base transition-all duration-500 hover:scale-[1.02]">
+                  <div className="text-4xl font-serif font-bold text-primary mb-2 group-hover:text-white transition-colors">
                     {item.metric}
                   </div>
-                  <div className="text-sm text-[#051C2C]/60 mb-6 group-hover:text-white/60 transition-colors">
+                  <div className="text-sm text-charcoal/60 mb-6 group-hover:text-white/60 transition-colors">
                     {item.metricLabel}
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-4 group-hover:text-white transition-colors">
+                  <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-white transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-[#051C2C]/70 leading-relaxed group-hover:text-white/70 transition-colors">
+                  <p className="text-charcoal/70 leading-relaxed group-hover:text-white/70 transition-colors">
                     {item.description}
                   </p>
                 </div>
@@ -249,7 +249,7 @@ export default function MartechAssessment() {
       </section>
 
       {/* Featured Capabilities Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -293,17 +293,17 @@ export default function MartechAssessment() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={item.link} className="group block h-full">
-                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-[#0077B5]/50 transition-all duration-300 hover:bg-white/10">
-                    <div className="mb-6 p-3 bg-[#0077B5]/10 w-fit rounded-lg text-[#0077B5] group-hover:bg-[#0077B5] group-hover:text-white transition-all duration-300">
+                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300 hover:bg-white/10">
+                    <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
                       {item.icon}
                     </div>
-                    <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-[#0077B5] transition-colors">
+                    <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-white/60 leading-relaxed mb-6">
                       {item.description}
                     </p>
-                    <div className="flex items-center text-[#0077B5] text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                    <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                       Learn more <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4" />
                     </div>
                   </div>
@@ -315,7 +315,7 @@ export default function MartechAssessment() {
       </section>
 
       {/* Insights Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 sm:mb-12 md:mb-16 gap-4 sm:p-5 md:p-6">
             <motion.div
@@ -324,15 +324,15 @@ export default function MartechAssessment() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Insights
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#051C2C] eb-garamond">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal eb-garamond">
                 The Latest on MarTech
               </h2>
             </motion.div>
             <Link href="/insights">
-              <Button variant="outline" className="border-[#051C2C]/20 text-[#051C2C] hover:bg-[#051C2C]/10 transition-all duration-300 hover:scale-[1.02]">
+              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/10 transition-all duration-300 hover:scale-[1.02]">
                 View all insights
               </Button>
             </Link>
@@ -380,14 +380,14 @@ export default function MartechAssessment() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                   </div>
-                  <span className="text-xs font-bold text-[#0077B5] uppercase tracking-wider mb-3 block">Article</span>
-                  <h3 className="text-lg font-serif font-bold text-[#051C2C] mb-3 group-hover:text-[#0077B5] transition-colors leading-tight">
+                  <span className="text-xs font-bold text-primary uppercase tracking-wider mb-3 block">Article</span>
+                  <h3 className="text-lg font-serif font-bold text-charcoal mb-3 group-hover:text-primary transition-colors leading-tight">
                     {item.title}
                   </h3>
-                  <p className="text-[#051C2C]/60 text-sm leading-relaxed mb-4">
+                  <p className="text-charcoal/60 text-sm leading-relaxed mb-4">
                     {item.description}
                   </p>
-                  <span className="text-[#0077B5] text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                  <span className="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
                     Read more <ArrowRight className="w-3 h-3" />
                   </span>
                 </Link>
@@ -398,7 +398,7 @@ export default function MartechAssessment() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -414,7 +414,7 @@ export default function MartechAssessment() {
               Let's audit your current technology ecosystem and build a roadmap for a unified, high-performing marketing stack.
             </p>
             <Link href="/contact">
-              <Button className="bg-[#0077B5] hover:bg-[#005a8c] text-white px-10 py-6 text-lg font-semibold transition-all hover:scale-[1.02] hover:shadow-lg hover:shadow-[#0077B5]/20">
+              <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-lg font-semibold transition-all hover:scale-[1.02] hover:shadow-lg hover:shadow-primary/20">
                 Request a Stack Audit
               </Button>
             </Link>

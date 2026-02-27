@@ -25,7 +25,7 @@ export default function DataEngineering() {
       </div>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#2D5BFF] via-[#4169FF] to-[#5B7FFF] text-white py-24">
+      <section className="bg-gradient-to-br from-primary via-primary to-secondary text-white py-24">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -172,10 +172,10 @@ export default function DataEngineering() {
                 <p className="text-lg text-muted-foreground">Commercial Lead</p>
               </div>
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-black hover:bg-black/90 text-white rounded-full px-8">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 transition-colors duration-200 ease-in-out">
                   Get in touch
                 </Button>
-                <Button size="lg" variant="outline" className="rounded-full px-8">
+                <Button size="lg" variant="outline" className="rounded-full px-8 border-primary text-charcoal hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out">
                   Schedule a meeting
                 </Button>
               </div>
@@ -197,19 +197,19 @@ export default function DataEngineering() {
             </div>
             <div className="grid md:grid-cols-3 gap-8 items-center">
               <div className="text-center">
-                <div className="text-2xl font-bold text-[#8B2635] mb-4">Glean</div>
+                <div className="text-2xl font-bold text-destructive mb-4">Glean</div>
                 <div className="w-32 h-32 mx-auto bg-blue-100 rounded-lg flex items-center justify-center">
                   <span className="text-4xl text-blue-600">g</span>
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-[#8B2635] mb-4">Weaviate</div>
+                <div className="text-2xl font-bold text-destructive mb-4">Weaviate</div>
                 <div className="w-32 h-32 mx-auto bg-blue-100 rounded-lg flex items-center justify-center">
                   <span className="text-4xl text-blue-600">W</span>
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-[#8B2635] mb-4">LangChain</div>
+                <div className="text-2xl font-bold text-destructive mb-4">LangChain</div>
                 <div className="w-32 h-32 mx-auto bg-blue-100 rounded-lg flex items-center justify-center">
                   <span className="text-4xl text-blue-600">🦜</span>
                 </div>
@@ -235,7 +235,7 @@ export default function DataEngineering() {
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Looking for a strategic partner who understands both cutting-edge technology and practical business transformation? NEXDYNE delivers enterprise-grade data engineering solutions that keep you ahead of the competition. Our US-based teams combine deep technical expertise with real-world implementation experience—we don't just architect systems, we ensure they drive measurable business outcomes and empower your team to operate independently.
               </p>
-              <Button size="lg" className="bg-black hover:bg-black/90 text-white rounded-full px-8">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 transition-colors duration-200 ease-in-out">
                 Get in touch
               </Button>
             </div>
@@ -265,13 +265,13 @@ export default function DataEngineering() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2 group-hover:text-[#8B2635] transition-colors">
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-destructive transition-colors">
                     Fintech Scales Real-Time Transaction Processing
                   </h3>
                   <p className="text-muted-foreground mb-4">
                     Payment processor builds Kafka streaming pipeline handling 50K transactions/second with 99.99% uptime.
                   </p>
-                  <div className="flex items-center text-[#8B2635] font-semibold">
+                  <div className="flex items-center text-destructive font-semibold">
                     Read case study
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>
@@ -290,13 +290,13 @@ export default function DataEngineering() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2 group-hover:text-[#8B2635] transition-colors">
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-destructive transition-colors">
                     E-Commerce Retailer Migrates to Snowflake
                   </h3>
                   <p className="text-muted-foreground mb-4">
                     Multi-brand retailer modernizes legacy data warehouse, reducing query times by 85% and cutting infrastructure costs 40%.
                   </p>
-                  <div className="flex items-center text-[#8B2635] font-semibold">
+                  <div className="flex items-center text-destructive font-semibold">
                     Read case study
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>
@@ -315,13 +315,13 @@ export default function DataEngineering() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2 group-hover:text-[#8B2635] transition-colors">
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-destructive transition-colors">
                     Manufacturer Builds IoT Sensor Data Platform
                   </h3>
                   <p className="text-muted-foreground mb-4">
                     Industrial equipment company ingests 2M sensor events/hour, enabling predictive maintenance and 30% downtime reduction.
                   </p>
-                  <div className="flex items-center text-[#8B2635] font-semibold">
+                  <div className="flex items-center text-destructive font-semibold">
                     Read case study
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>

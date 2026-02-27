@@ -35,7 +35,7 @@ export default function CloudCostOptimization() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Cloud Cost Optimization" 
         description="Reduce cloud spend by 30-50% through FinOps practices, right-sizing, reserved capacity planning, and automated cost governance."
@@ -44,7 +44,7 @@ export default function CloudCostOptimization() {
       <Navigation />
 
       {/* Section 1: Hero Section */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-black">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -63,7 +63,7 @@ export default function CloudCostOptimization() {
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out">
                   Request a Cost Analysis
                 </Button>
               </Link>
@@ -91,7 +91,7 @@ export default function CloudCostOptimization() {
       </section>
 
       {/* Section 2: Stats */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -100,7 +100,7 @@ export default function CloudCostOptimization() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-[#051C2C]">Our Experience & Impact</h2>
+            <h2 className="text-2xl font-bold text-charcoal">Our Experience & Impact</h2>
           </motion.div>
           
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
@@ -116,8 +116,8 @@ export default function CloudCostOptimization() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -133,7 +133,7 @@ export default function CloudCostOptimization() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               The cloud offers unparalleled agility, but its pay-as-you-go model can lead to spiraling costs if not managed with discipline. Many organizations find their cloud spend growing unpredictably, hampered by oversized resources, idle instances, and a lack of financial governance. Effective Cloud Cost Optimization, or FinOps, is not about cutting back on innovation; it's about instilling a culture of financial accountability and maximizing the economic value of every dollar spent in the cloud.
             </motion.p>
@@ -143,7 +143,7 @@ export default function CloudCostOptimization() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               We approach cloud cost management as a continuous, data-driven cycle. By integrating financial and operational data, we provide clear visibility into where your money is going. This allows us to implement a multi-faceted strategy encompassing right-sizing instances, leveraging reserved capacity and savings plans, automating cost-control policies, and architecting for cost-efficiency from the ground up. The goal is to transform your cloud budget from a reactive operational expense into a predictable, strategic investment.
             </motion.p>
@@ -160,13 +160,13 @@ export default function CloudCostOptimization() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Our FinOps Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               From strategic advice to hands-on implementation, we provide a comprehensive suite of services.
             </p>
           </motion.div>
@@ -213,7 +213,7 @@ export default function CloudCostOptimization() {
       </section>
 
       {/* Section 5: Our Approach */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#051C2C] text-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -223,7 +223,7 @@ export default function CloudCostOptimization() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl eb-garamond font-bold mb-4">
-              Our Approach to <span className="text-[#00d4ff]">Cloud Value</span>
+              Our Approach to <span className="text-secondary">Cloud Value</span>
             </h2>
             <p className="text-lg text-white/60 max-w-3xl mx-auto">
               We follow a structured methodology to ensure that cloud cost optimization delivers tangible business value, moving from data to insight to action.
@@ -261,7 +261,7 @@ export default function CloudCostOptimization() {
       </section>
 
       {/* Section 6: Case Studies */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#051C2C] text-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -314,14 +314,14 @@ export default function CloudCostOptimization() {
       </section>
 
       {/* Section 7: Related Capabilities */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-[#f8f8f7]">
+      <section className="py-12 sm:py-16 lg:py-20 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl font-serif font-bold text-center mb-12 text-[#051C2C]"
+            className="text-3xl font-serif font-bold text-center mb-12 text-charcoal"
           >
             Continue Your Transformation Journey
           </motion.h2>
@@ -342,7 +342,7 @@ export default function CloudCostOptimization() {
       </section>
 
       {/* Section 8: CTA Section */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-[#0077B5] text-white">
+      <section className="py-16 sm:py-20 lg:py-24 bg-primary text-white">
         <div className="container px-4 sm:px-6 md:px-12 text-center">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -369,7 +369,7 @@ export default function CloudCostOptimization() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <Link href="/contact">
-              <Button className="bg-white hover:bg-gray-200 text-black px-10 py-7 text-lg font-semibold transition-all">
+              <Button className="bg-white hover:bg-white/90 text-primary px-10 py-7 text-lg font-semibold transition-colors duration-200 ease-in-out">
                 Contact Us
               </Button>
             </Link>

@@ -61,7 +61,7 @@ function CapabilityCard({ capability, index }: { capability: typeof capabilities
       className="group"
     >
       <Link href={capability.link}>
-        <div className="cursor-pointer bg-white border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-500 h-full">
+        <div className="cursor-pointer bg-white border border-border overflow-hidden hover:shadow-lg transition-all duration-500 h-full">
           {/* Card content container with fixed height */}
           <div className="relative aspect-[4/3] overflow-hidden">
             {/* Image - visible by default, hidden on hover */}
@@ -76,17 +76,17 @@ function CapabilityCard({ capability, index }: { capability: typeof capabilities
             {/* Description overlay - hidden by default, visible on hover */}
             <div className="absolute inset-0 bg-white p-6 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
               <div>
-                <h3 className="text-lg font-semibold text-[#1A1A1A] mb-3">
+                <h3 className="text-lg font-semibold text-charcoal mb-3">
                   {capability.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   {capability.description}
                 </p>
               </div>
               
               {/* Learn More button */}
               <div className="mt-4">
-                <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#1A1A1A] text-white text-sm font-medium rounded hover:bg-[#333] transition-colors">
+                <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground text-sm font-medium rounded hover:bg-[var(--color-primary-hover)] transition-all duration-200 ease-in-out focus-visible:outline focus-visible:ring-2 focus-visible:ring-secondary">
                   LEARN MORE
                   <ArrowRight className="w-4 h-4" />
                 </span>
@@ -95,8 +95,8 @@ function CapabilityCard({ capability, index }: { capability: typeof capabilities
           </div>
           
           {/* Title Container - always visible below */}
-          <div className="p-4 bg-white border-t border-gray-100 group-hover:bg-gray-50 transition-colors duration-300">
-            <h3 className="text-base font-medium text-[#1A1A1A]">
+          <div className="p-4 bg-white border-t border-border/50 group-hover:bg-subtle transition-colors duration-300">
+            <h3 className="text-base font-medium text-charcoal">
               {capability.title}
             </h3>
           </div>
@@ -108,7 +108,7 @@ function CapabilityCard({ capability, index }: { capability: typeof capabilities
 
 export default function Capabilities() {
   return (
-    <div className="min-h-screen bg-white text-[#1A1A1A] font-sans">
+    <div className="min-h-screen bg-white text-charcoal font-sans">
       <SEO 
         title="Capabilities" 
         description="Transformative solutions that bridge strategy and execution, powered by cutting-edge technology and deep industry expertise."
@@ -117,7 +117,7 @@ export default function Capabilities() {
       <Navigation />
       
       {/* Hero Section - All Black Background */}
-      <section className="relative min-h-[50vh] md:min-h-[60vh] bg-black pt-20">
+      <section className="relative min-h-[50vh] md:min-h-[60vh] bg-charcoal pt-20">
         <div className="container px-4 sm:px-6 md:px-12 h-full">
           <div className="flex items-center min-h-[40vh] md:min-h-[50vh]">
             <motion.div
@@ -161,13 +161,13 @@ export default function Capabilities() {
             transition={{ duration: 0.6 }}
             className="mb-12 md:mb-16 max-w-3xl"
           >
-            <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-[#CC0000] uppercase">
+            <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase">
               Our Expertise
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-[#1A1A1A] mt-4 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal mt-4 leading-tight">
               Six pillars of transformation that drive measurable business outcomes
             </h2>
-            <p className="text-base md:text-lg text-[#1A1A1A]/70 mt-6 leading-relaxed">
+            <p className="text-base md:text-lg text-charcoal/70 mt-6 leading-relaxed">
               We combine deep expertise across six core disciplines to deliver measurable business outcomes. From intelligent automation to strategic growth, our integrated approach ensures every capability works in concert.
             </p>
           </motion.div>
@@ -182,7 +182,7 @@ export default function Capabilities() {
       </section>
 
       {/* Featured Capability Section */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-[#F8F9FA] overflow-hidden">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-subtle overflow-hidden">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
             {/* Image with layered depth */}
@@ -195,7 +195,7 @@ export default function Capabilities() {
             >
               <div className="relative">
                 {/* Background accent shape */}
-                <div className="absolute -inset-4 bg-gradient-to-br from-[#0051ff]/10 to-purple-500/10 rounded-3xl transform -rotate-3" />
+                <div className="absolute -inset-4 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl transform -rotate-3" />
                 
                 <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
                   <img 
@@ -211,15 +211,15 @@ export default function Capabilities() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.4, duration: 0.5 }}
-                  className="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-xl p-4 border border-gray-100"
+                  className="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-xl p-4 border border-border/50"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#0051ff] to-purple-600 flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                       <Sparkles className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <div className="text-xs text-gray-500 font-medium">Powered by</div>
-                      <div className="text-sm font-bold text-[#1A1A1A]">Advanced AI</div>
+                      <div className="text-xs text-muted-foreground font-medium">Powered by</div>
+                      <div className="text-sm font-bold text-charcoal">Advanced AI</div>
                     </div>
                   </div>
                 </motion.div>
@@ -234,30 +234,29 @@ export default function Capabilities() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             >
-              <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-[#0051ff] uppercase mb-4 block">
+              <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase mb-4 block">
                 Capabilities Overview
               </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-6 text-[#1A1A1A] leading-tight">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-6 text-charcoal leading-tight">
                 AI and Technology{" "}
                 <span className="relative">
-                  <span className="relative z-10 text-[#0051ff]">Consulting</span>
-                  <span className="absolute bottom-2 left-0 right-0 h-3 bg-[#0051ff]/10 -z-0" />
+                  <span className="relative z-10 text-primary">Consulting</span>
+                  <span className="absolute bottom-2 left-0 right-0 h-3 bg-primary/10 -z-0" />
                 </span>
               </h2>
-              <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-8">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
                 Learn how our AI and Technology consulting is helping clients to outcompete and deliver value at scale through the latest trends in tech.
               </p>
               
               {/* Enhanced CTA button */}
               <Link href="/capabilities/ai-technology-consulting">
                 <motion.span 
-                  className="inline-flex items-center gap-3 px-8 py-4 bg-[#1A1A1A] text-white font-bold text-base rounded-xl cursor-pointer group overflow-hidden relative"
+                  className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-bold text-base rounded-xl cursor-pointer group overflow-hidden relative transition-all duration-200 ease-in-out hover:bg-[var(--color-primary-hover)] focus-visible:outline focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <span className="absolute inset-0 bg-gradient-to-r from-[#0051ff] to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <span className="relative">Explore our AI solutions</span>
-                  <ArrowUpRight className="relative w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+                  <ArrowUpRight className="relative w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-200 ease-in-out" />
                 </motion.span>
               </Link>
             </motion.div>
@@ -266,7 +265,7 @@ export default function Capabilities() {
       </section>
 
       {/* Keep Exploring Section */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-[#1A1A1A] via-[#2A2A2A] to-[#1A1A1A] text-white relative overflow-hidden">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-base via-charcoal to-base text-on-dark relative overflow-hidden">
         {/* Background pattern */}
         <div className="absolute inset-0 opacity-10">
           <div 
@@ -315,7 +314,7 @@ export default function Capabilities() {
       </section>
 
       {/* Connect Section */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-gray-50">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -324,12 +323,12 @@ export default function Capabilities() {
             className="flex flex-col md:flex-row items-center justify-between gap-6"
           >
             <div className="text-center md:text-left">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-[#1A1A1A] mb-4">Connect</h2>
-              <p className="text-gray-600 text-base md:text-lg">Ready to transform your business?</p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal mb-4">Connect</h2>
+              <p className="text-muted-foreground text-base md:text-lg">Ready to transform your business?</p>
             </div>
             <Link href="/contact">
               <motion.button 
-                className="px-10 py-4 bg-[#0051ff] text-white font-bold text-base hover:bg-[#0041cc] transition-all duration-300 shadow-lg hover:shadow-xl rounded-xl w-full md:w-auto"
+                className="px-10 py-4 bg-primary text-primary-foreground font-bold text-base hover:bg-[var(--color-primary-hover)] transition-all duration-200 ease-in-out shadow-lg hover:shadow-xl rounded-xl w-full md:w-auto focus-visible:outline focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -338,13 +337,13 @@ export default function Capabilities() {
             </Link>
           </motion.div>
           
-          <div className="mt-12 pt-8 border-t border-gray-200">
-            <div className="flex flex-wrap justify-center md:justify-start gap-6 text-[#1A1A1A]">
+          <div className="mt-12 pt-8 border-t border-border">
+            <div className="flex flex-wrap justify-center md:justify-start gap-6 text-charcoal">
               {["LinkedIn", "Twitter", "Facebook"].map((social) => (
                 <a 
                   key={social} 
                   href="#" 
-                  className="text-sm font-medium hover:text-[#0051ff] transition-colors duration-300"
+                  className="text-sm font-medium hover:text-primary transition-colors duration-200 ease-in-out"
                 >
                   {social}
                 </a>

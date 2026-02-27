@@ -356,7 +356,7 @@ export default function GenericIndustryPage({ config }: { config: GenericIndustr
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#051C2C] via-[#0a3d5c] to-[#051C2C] text-white py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-base via-base to-base text-white py-24 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img
             src={config.heroImage}
@@ -364,7 +364,7 @@ export default function GenericIndustryPage({ config }: { config: GenericIndustr
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#051C2C] via-[#051C2C]/90 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-base via-base/90 to-transparent" />
         <div className="container relative z-10">
           <div className="max-w-3xl">
             <Link href="/industries" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-6 transition-colors text-sm">
@@ -382,14 +382,14 @@ export default function GenericIndustryPage({ config }: { config: GenericIndustr
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 bg-white text-[#051C2C] px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-all duration-200 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
               >
                 Talk to an Expert
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
                 href="/cases"
-                className="inline-flex items-center gap-2 border border-white/30 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors"
+                className="inline-flex items-center gap-2 border border-white/30 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all duration-200 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
               >
                 View Case Studies
               </Link>
@@ -404,10 +404,10 @@ export default function GenericIndustryPage({ config }: { config: GenericIndustr
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {config.stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-[#051C2C] mb-2">
+                <div className="text-3xl md:text-4xl font-bold text-charcoal mb-2">
                   {stat.value}
                 </div>
-                <div className="text-slate-600 text-sm">{stat.label}</div>
+                <div className="text-muted-foreground text-sm">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -418,10 +418,10 @@ export default function GenericIndustryPage({ config }: { config: GenericIndustr
       <section className="py-20">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-slate-900 mb-4">
+            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal mb-4">
               Industry Challenges We Address
             </h2>
-            <p className="text-lg text-slate-600">
+            <p className="text-lg text-muted-foreground">
               We understand the unique pressures facing {config.industry.toLowerCase()} organizations today.
             </p>
           </div>
@@ -429,13 +429,13 @@ export default function GenericIndustryPage({ config }: { config: GenericIndustr
             {config.challenges.map((challenge, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-xl border border-slate-200 hover:border-[#0077B5] hover:shadow-lg transition-all"
+                className="bg-white p-6 rounded-xl border border-slate-200 hover:border-primary hover:shadow-lg transition-all"
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 bg-[#051C2C] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  <div className="flex-shrink-0 w-8 h-8 bg-base rounded-full flex items-center justify-center text-white font-bold text-sm">
                     {index + 1}
                   </div>
-                  <p className="text-slate-700 font-medium">{challenge}</p>
+                  <p className="text-charcoal/80 font-medium">{challenge}</p>
                 </div>
               </div>
             ))}
@@ -447,10 +447,10 @@ export default function GenericIndustryPage({ config }: { config: GenericIndustr
       <section className="py-20 bg-slate-50">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-slate-900 mb-4">
+            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal mb-4">
               Our Solutions for {config.industry}
             </h2>
-            <p className="text-lg text-slate-600">
+            <p className="text-lg text-muted-foreground">
               Tailored approaches that deliver measurable results for your organization.
             </p>
           </div>
@@ -462,13 +462,13 @@ export default function GenericIndustryPage({ config }: { config: GenericIndustr
                   key={index}
                   className="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-shadow"
                 >
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-[#051C2C] rounded-lg mb-4">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-base rounded-lg mb-4">
                     <Icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">
+                  <h3 className="text-xl font-bold text-charcoal mb-3">
                     {solution.title}
                   </h3>
-                  <p className="text-slate-600">{solution.description}</p>
+                  <p className="text-muted-foreground">{solution.description}</p>
                 </div>
               );
             })}
@@ -477,7 +477,7 @@ export default function GenericIndustryPage({ config }: { config: GenericIndustr
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#051C2C] text-white">
+      <section className="py-20 bg-base text-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl eb-garamond font-bold mb-6">
@@ -489,14 +489,14 @@ export default function GenericIndustryPage({ config }: { config: GenericIndustr
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 bg-white text-[#051C2C] px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition-all duration-200 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
               >
                 Schedule a Consultation
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
                 href="/cases"
-                className="inline-flex items-center gap-2 border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-colors"
+                className="inline-flex items-center gap-2 border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-all duration-200 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
               >
                 Explore Case Studies
               </Link>

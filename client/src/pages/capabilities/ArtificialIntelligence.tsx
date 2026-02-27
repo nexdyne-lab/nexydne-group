@@ -176,7 +176,7 @@ export default function ArtificialIntelligence() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#1A1A1A]">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
       <SEO 
         title="Artificial Intelligence" 
         description="Harness the power of AI to transform your mid-market business. We help companies with 50-500 employees implement practical AI solutions that deliver measurable ROI."
@@ -185,7 +185,7 @@ export default function ArtificialIntelligence() {
       <Navbar />
       
       {/* Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-black">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -208,7 +208,7 @@ export default function ArtificialIntelligence() {
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
                   Start Your AI Journey
                 </Button>
               </Link>
@@ -236,14 +236,14 @@ export default function ArtificialIntelligence() {
       </section>
 
       {/* Our Experience & Impact - Bain Style with Border-Left Accent */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-2xl font-bold text-[#051C2C] mb-12 eb-garamond"
+            className="text-2xl font-bold text-charcoal mb-12 eb-garamond"
           >
             Our Experience & Impact
           </motion.h2>
@@ -260,11 +260,11 @@ export default function ArtificialIntelligence() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`${index > 0 ? 'md:border-l border-gray-200 md:pl-8' : ''}`}
+                className={`${index > 0 ? 'md:border-l border-border md:pl-8' : ''}`}
               >
                 <div>
-                  <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-3 sm:mb-4">{item.metric}</div>
-                  <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                  <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-3 sm:mb-4">{item.metric}</div>
+                  <p className="text-lg text-charcoal/60">{item.label}</p>
                 </div>
               </motion.div>
             ))}
@@ -282,7 +282,7 @@ export default function ArtificialIntelligence() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-[#051C2C] leading-tight eb-garamond">
+              <h2 className="text-4xl md:text-5xl font-bold text-charcoal leading-tight eb-garamond">
                 AI isn't just for Fortune 500 companies anymore.
               </h2>
             </motion.div>
@@ -292,7 +292,7 @@ export default function ArtificialIntelligence() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="space-y-6 text-lg text-[#051C2C]/80 leading-relaxed"
+              className="space-y-6 text-lg text-charcoal/80 leading-relaxed"
             >
               <p>
                 The same technologies powering enterprise transformation are now accessible, affordable, and practical for mid-market organizations. But most AI vendors sell solutions designed for unlimited budgets and dedicated data science teams.
@@ -305,15 +305,15 @@ export default function ArtificialIntelligence() {
               </p>
               <ul className="space-y-3 mt-6">
                 <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-[#06b6d4] mt-2 flex-shrink-0"></span>
+                  <span className="w-2 h-2 rounded-full bg-white mt-2 flex-shrink-0"></span>
                   <span>You don't need a data science team to start</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-[#06b6d4] mt-2 flex-shrink-0"></span>
+                  <span className="w-2 h-2 rounded-full bg-white mt-2 flex-shrink-0"></span>
                   <span>Modern AI tools enable meaningful results without hiring PhDs</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-[#06b6d4] mt-2 flex-shrink-0"></span>
+                  <span className="w-2 h-2 rounded-full bg-white mt-2 flex-shrink-0"></span>
                   <span>Mid-market agility means faster implementation than larger competitors</span>
                 </li>
               </ul>
@@ -323,7 +323,7 @@ export default function ArtificialIntelligence() {
       </section>
 
       {/* Our Approach Section (3-Column Consulting Format) */}
-      <section className="py-20 bg-[#051C2C]">
+      <section className="py-20 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -331,7 +331,7 @@ export default function ArtificialIntelligence() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00d4ff] mb-4 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">
               Our Approach
             </span>
             <h2 className="text-3xl md:text-5xl font-light text-white eb-garamond">
@@ -362,7 +362,7 @@ export default function ArtificialIntelligence() {
                 transition={{ delay: i * 0.1 }}
               >
                 <h3 className="text-xl font-bold text-white mb-4">{pillar.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{pillar.description}</p>
+                <p className="text-white leading-relaxed">{pillar.description}</p>
               </motion.div>
             ))}
           </div>
@@ -378,7 +378,7 @@ export default function ArtificialIntelligence() {
       </section>
 
       {/* What's Your AI Ambition Section - Bain hover cards */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -386,10 +386,10 @@ export default function ArtificialIntelligence() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 eb-garamond">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4 eb-garamond">
               What's your AI ambition?
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl">
+            <p className="text-lg text-muted-foreground max-w-3xl">
               We've helped companies at every stage of the AI journey—from those running their first pilot to those scaling AI across the enterprise. Where are you?
             </p>
           </motion.div>
@@ -424,7 +424,7 @@ export default function ArtificialIntelligence() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden mb-8">
+              <div className="aspect-[4/3] bg-subtle rounded-lg overflow-hidden mb-8">
                 <img 
                   src="/images/ai-team-collaboration.jpg" 
                   alt="AI implementation team" 
@@ -432,15 +432,15 @@ export default function ArtificialIntelligence() {
                 />
               </div>
               
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-6 eb-garamond">
+              <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-6 eb-garamond">
                 Generative AI in practice
               </h2>
               
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 The hype around generative AI is real—but so is the confusion. Most mid-market companies are stuck between "we should do something" and "we don't know where to start."
               </p>
               
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed">
                 We cut through the noise with a practical approach: identify high-impact use cases, start with quick wins, and build toward enterprise-scale deployment. No science projects. No endless pilots. Just AI that works.
               </p>
             </motion.div>
@@ -454,7 +454,7 @@ export default function ArtificialIntelligence() {
             >
               {/* Real Outcomes */}
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider text-[#CC0000] mb-6">
+                <h3 className="text-sm font-bold uppercase tracking-wider text-charcoal mb-6">
                   Real Outcomes
                 </h3>
                 <ul className="space-y-4">
@@ -465,8 +465,8 @@ export default function ArtificialIntelligence() {
                     "Marketing teams producing 5x more content with consistent brand voice"
                   ].map((outcome, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#CC0000] rounded-full mt-2 flex-shrink-0" />
-                      <span className="text-gray-700">{outcome}</span>
+                      <div className="w-2 h-2 bg-charcoal rounded-full mt-2 flex-shrink-0" />
+                      <span className="text-charcoal/80">{outcome}</span>
                     </li>
                   ))}
                 </ul>
@@ -474,7 +474,7 @@ export default function ArtificialIntelligence() {
 
               {/* How We Help */}
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider text-[#CC0000] mb-6">
+                <h3 className="text-sm font-bold uppercase tracking-wider text-charcoal mb-6">
                   How We Help
                 </h3>
                 <ul className="space-y-4">
@@ -487,8 +487,8 @@ export default function ArtificialIntelligence() {
                     "Training and change management for sustainable adoption"
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#1A1A1A] rounded-full mt-2 flex-shrink-0" />
-                      <span className="text-gray-700">{item}</span>
+                      <div className="w-2 h-2 bg-charcoal rounded-full mt-2 flex-shrink-0" />
+                      <span className="text-charcoal/80">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -499,7 +499,7 @@ export default function ArtificialIntelligence() {
       </section>
 
       {/* How We Can Help Section - Bain hover cards */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
+      <section className="py-12 sm:py-16 lg:py-20 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -507,10 +507,10 @@ export default function ArtificialIntelligence() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 eb-garamond">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4 eb-garamond">
               How we can help
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl">
+            <p className="text-lg text-muted-foreground max-w-3xl">
               We combine technical expertise with business acumen to deliver AI solutions that actually get used—and actually drive results.
             </p>
           </motion.div>
@@ -544,29 +544,29 @@ export default function ArtificialIntelligence() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 eb-garamond">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4 eb-garamond">
               Our client results
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl">
+            <p className="text-lg text-muted-foreground max-w-3xl">
               Real outcomes from real mid-market companies. No theoretical case studies—just practical AI implementations that delivered measurable ROI.
             </p>
           </motion.div>
 
           {/* Tabs */}
-          <div className="flex flex-wrap gap-1 sm:gap-2 mb-6 sm:mb-10 border-b border-gray-200 overflow-x-auto">
+          <div className="flex flex-wrap gap-1 sm:gap-2 mb-6 sm:mb-10 border-b border-border overflow-x-auto">
             {clientResults.map((result, index) => (
               <button
                 key={index}
                 onClick={() => setActiveTab(index)}
                 className={`px-3 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium transition-all relative whitespace-nowrap ${
                   activeTab === index 
-                    ? 'text-[#CC0000]' 
-                    : 'text-gray-500 hover:text-gray-700'
+                    ? 'text-destructive' 
+                    : 'text-muted-foreground hover:text-charcoal/80'
                 }`}
               >
                 {result.tab}
                 {activeTab === index && (
-                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#CC0000]" />
+                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-destructive" />
                 )}
               </button>
             ))}
@@ -575,7 +575,7 @@ export default function ArtificialIntelligence() {
           {/* Tab Content */}
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-start">
             <div>
-              <div className="aspect-[16/10] bg-gray-100 rounded-lg overflow-hidden mb-6">
+              <div className="aspect-[16/10] bg-subtle rounded-lg overflow-hidden mb-6">
                 <img 
                   src={clientResults[activeTab].image}
                   alt={clientResults[activeTab].title}
@@ -585,28 +585,28 @@ export default function ArtificialIntelligence() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-serif font-bold text-[#1A1A1A] mb-6">
+              <h3 className="text-2xl font-serif font-bold text-charcoal mb-6">
                 {clientResults[activeTab].title}
               </h3>
               
               <div className="space-y-6">
                 <div>
-                  <h4 className="text-sm font-bold uppercase tracking-wider text-gray-500 mb-2">The Challenge</h4>
-                  <p className="text-gray-700">{clientResults[activeTab].challenge}</p>
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-muted-foreground mb-2">The Challenge</h4>
+                  <p className="text-charcoal/80">{clientResults[activeTab].challenge}</p>
                 </div>
                 
                 <div>
-                  <h4 className="text-sm font-bold uppercase tracking-wider text-gray-500 mb-2">Our Solution</h4>
-                  <p className="text-gray-700">{clientResults[activeTab].solution}</p>
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-muted-foreground mb-2">Our Solution</h4>
+                  <p className="text-charcoal/80">{clientResults[activeTab].solution}</p>
                 </div>
                 
                 <div>
-                  <h4 className="text-sm font-bold uppercase tracking-wider text-gray-500 mb-3">Results</h4>
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-muted-foreground mb-3">Results</h4>
                   <ul className="space-y-2">
                     {clientResults[activeTab].results.map((result, i) => (
                       <li key={i} className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-[#CC0000] rounded-full mt-2 flex-shrink-0" />
-                        <span className="text-gray-700">{result}</span>
+                        <div className="w-2 h-2 bg-destructive rounded-full mt-2 flex-shrink-0" />
+                        <span className="text-charcoal/80">{result}</span>
                       </li>
                     ))}
                   </ul>
@@ -618,13 +618,13 @@ export default function ArtificialIntelligence() {
       </section>
 
       {/* AI Ecosystem Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="text-center mb-10">
-            <h2 className="text-2xl font-bold text-[#1A1A1A] mb-3 eb-garamond">
+            <h2 className="text-2xl font-bold text-charcoal mb-3 eb-garamond">
               Our AI ecosystem
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-muted-foreground max-w-2xl mx-auto">
               We partner with leading AI providers to deliver the best solutions for your specific needs.
             </p>
           </div>
@@ -637,9 +637,9 @@ export default function ArtificialIntelligence() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="px-8 py-4 bg-white border border-gray-200 rounded-lg"
+                className="px-8 py-4 bg-white border border-border rounded-lg"
               >
-                <span className="text-gray-600 font-medium text-sm">{partner}</span>
+                <span className="text-muted-foreground font-medium text-sm">{partner}</span>
               </motion.div>
             ))}
           </div>
@@ -647,7 +647,7 @@ export default function ArtificialIntelligence() {
       </section>
 
       {/* Our Leaders in AI Section */}
-      <section className="py-20 bg-white border-t border-gray-100">
+      <section className="py-20 bg-white border-t border-border/50">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -657,7 +657,7 @@ export default function ArtificialIntelligence() {
           >
             <div className="flex items-center justify-center gap-4 mb-4">
               <div className="h-px w-16 bg-gray-300" />
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] eb-garamond">
+              <h2 className="text-3xl md:text-4xl font-bold text-charcoal eb-garamond">
                 Our Leaders in AI
               </h2>
               <div className="h-px w-16 bg-gray-300" />
@@ -707,23 +707,23 @@ export default function ArtificialIntelligence() {
                 transition={{ delay: index * 0.1 }}
                 className="group"
               >
-                <div className="aspect-[4/3] bg-gray-100 overflow-hidden mb-4">
+                <div className="aspect-[4/3] bg-subtle overflow-hidden mb-4">
                   <img 
                     src={leader.image}
                     alt={leader.name}
                     className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="text-xs font-bold uppercase tracking-wider text-[#CC0000] mb-2">
+                <div className="text-xs font-bold uppercase tracking-wider text-destructive mb-2">
                   {leader.industry}
                 </div>
-                <h3 className="text-lg font-semibold text-[#1A1A1A] leading-tight mb-1">
+                <h3 className="text-lg font-semibold text-charcoal leading-tight mb-1">
                   {leader.name}
                 </h3>
-                <p className="text-sm text-gray-500 mb-3">
+                <p className="text-sm text-muted-foreground mb-3">
                   {leader.title}, {leader.company}
                 </p>
-                <p className="text-sm text-gray-600 italic leading-relaxed">
+                <p className="text-sm text-muted-foreground italic leading-relaxed">
                   "{leader.quote}"
                 </p>
               </motion.div>
@@ -733,7 +733,7 @@ export default function ArtificialIntelligence() {
       </section>
 
       {/* A Closer Look - Insights Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -742,15 +742,15 @@ export default function ArtificialIntelligence() {
             className="flex justify-between items-end mb-12"
           >
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] mb-4 eb-garamond">
+              <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4 eb-garamond">
                 A closer look
               </h2>
-              <p className="text-lg text-gray-600">
+              <p className="text-lg text-muted-foreground">
                 Deep dives into AI strategy, implementation, and outcomes.
               </p>
             </div>
             <Link href="/insights?topic=ai">
-              <span className="hidden md:flex items-center text-[#CC0000] font-medium hover:underline">
+              <span className="hidden md:flex items-center text-destructive font-medium hover:underline">
                 View all insights <ArrowRight className="ml-2 w-4 h-4" />
               </span>
             </Link>
@@ -767,17 +767,17 @@ export default function ArtificialIntelligence() {
               >
                 <Link href={insight.link}>
                   <div className="group cursor-pointer">
-                    <div className="aspect-[16/10] bg-gray-100 rounded-lg overflow-hidden mb-4">
+                    <div className="aspect-[16/10] bg-subtle rounded-lg overflow-hidden mb-4">
                       <img 
                         src={insight.image}
                         alt={insight.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>
-                    <div className="text-xs font-bold uppercase tracking-wider text-[#CC0000] mb-2">
+                    <div className="text-xs font-bold uppercase tracking-wider text-destructive mb-2">
                       {insight.category}
                     </div>
-                    <h3 className="text-lg font-semibold text-[#1A1A1A] group-hover:text-[#CC0000] transition-colors leading-tight">
+                    <h3 className="text-lg font-semibold text-charcoal group-hover:text-destructive transition-colors leading-tight">
                       {insight.title}
                     </h3>
                   </div>
@@ -789,13 +789,13 @@ export default function ArtificialIntelligence() {
       </section>
 
       {/* Consulting Services Links */}
-      <section className="py-16 bg-gray-50 border-t border-gray-200">
+      <section className="py-16 bg-subtle border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
-          <h3 className="text-lg font-bold text-[#1A1A1A] mb-6">Consulting services</h3>
+          <h3 className="text-lg font-bold text-charcoal mb-6">Consulting services</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {consultingServices.map((service, index) => (
               <Link key={index} href={service.link}>
-                <span className="flex items-center text-[#CC0000] hover:underline">
+                <span className="flex items-center text-destructive hover:underline">
                   {service.title} <ArrowRight className="ml-2 w-4 h-4" />
                 </span>
               </Link>
@@ -805,7 +805,7 @@ export default function ArtificialIntelligence() {
       </section>
 
       {/* Ready to Talk CTA - Bain two-column style */}
-      <section className="py-20 bg-[#1A1A1A]">
+      <section className="py-20 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -819,7 +819,7 @@ export default function ArtificialIntelligence() {
             
             <div className="flex flex-col sm:flex-row gap-4 lg:justify-end">
               <Link href="/contact">
-                <Button className="bg-white text-[#1A1A1A] hover:bg-gray-100 px-8 py-6 text-base font-semibold">
+                <Button className="bg-white text-charcoal hover:bg-subtle px-8 py-6 text-base font-semibold">
                   Start a Conversation <ArrowRight className="ml-2 w-5 h-5 inline" />
                 </Button>
               </Link>

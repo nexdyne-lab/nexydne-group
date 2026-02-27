@@ -100,13 +100,13 @@ export default function USOffice() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-white pt-32 pb-16 border-b border-gray-200">
+      <section className="bg-white pt-32 pb-16 border-b border-border">
         <div className="container">
           <div className="max-w-4xl">
-            <h1 className="text-5xl md:text-6xl font-serif font-normal text-gray-900 mb-3">
+            <h1 className="text-5xl md:text-6xl font-serif font-normal text-charcoal mb-3">
               Our Offices
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
+            <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
               With offices across the globe, we bring local expertise and global perspective to every engagement. Find the office nearest you.
             </p>
           </div>
@@ -114,31 +114,31 @@ export default function USOffice() {
       </section>
 
       {/* Global Presence Stats */}
-      <section className="bg-gray-50 py-12 border-b border-gray-200">
+      <section className="bg-subtle py-12 border-b border-border">
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <p className="text-4xl font-bold text-gray-900 mb-2">6</p>
-              <p className="text-gray-600">Global Offices</p>
+              <p className="text-4xl font-bold text-charcoal mb-2">6</p>
+              <p className="text-muted-foreground">Global Offices</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl font-bold text-gray-900 mb-2">4</p>
-              <p className="text-gray-600">Continents</p>
+              <p className="text-4xl font-bold text-charcoal mb-2">4</p>
+              <p className="text-muted-foreground">Continents</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl font-bold text-gray-900 mb-2">500+</p>
-              <p className="text-gray-600">Consultants</p>
+              <p className="text-4xl font-bold text-charcoal mb-2">500+</p>
+              <p className="text-muted-foreground">Consultants</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl font-bold text-gray-900 mb-2">24/7</p>
-              <p className="text-gray-600">Global Coverage</p>
+              <p className="text-4xl font-bold text-charcoal mb-2">24/7</p>
+              <p className="text-muted-foreground">Global Coverage</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Region Filter */}
-      <section className="bg-white py-6 border-b border-gray-200 sticky top-0 z-40">
+      <section className="bg-white py-6 border-b border-border sticky top-0 z-40">
         <div className="container">
           <div className="flex flex-wrap gap-2">
             {regions.map((region) => (
@@ -147,7 +147,7 @@ export default function USOffice() {
                 className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${
                   region === 'All Regions'
                     ? 'bg-red-600 text-white'
-                    : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'
+                    : 'bg-white text-charcoal/80 hover:bg-subtle border border-border'
                 }`}
               >
                 {region}
@@ -164,7 +164,7 @@ export default function USOffice() {
             {offices.map((office) => (
               <div 
                 key={office.id}
-                className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
+                className="bg-white border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
               >
                 {/* Office Image */}
                 <div className="aspect-[16/9] overflow-hidden">
@@ -180,25 +180,25 @@ export default function USOffice() {
                   {/* City & Country */}
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <h3 className="text-2xl font-bold text-gray-900">
+                      <h3 className="text-2xl font-bold text-charcoal">
                         {office.city}
                         {office.isHeadquarters && (
-                          <span className="ml-2 text-xs font-medium text-red-600 uppercase tracking-wide">
+                          <span className="ml-2 text-xs font-medium text-destructive uppercase tracking-wide">
                             HQ
                           </span>
                         )}
                       </h3>
-                      <p className="text-gray-600">{office.country}</p>
+                      <p className="text-muted-foreground">{office.country}</p>
                     </div>
-                    <span className="text-xs font-medium text-gray-500 uppercase tracking-wide bg-gray-100 px-2 py-1 rounded">
+                    <span className="text-xs font-medium text-muted-foreground uppercase tracking-wide bg-subtle px-2 py-1 rounded">
                       {office.region}
                     </span>
                   </div>
                   
                   {/* Address */}
                   <div className="flex items-start gap-3 mb-4">
-                    <MapPin className="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0" />
-                    <div className="text-gray-600 text-sm">
+                    <MapPin className="w-5 h-5 text-muted-foreground/70 mt-0.5 flex-shrink-0" />
+                    <div className="text-muted-foreground text-sm">
                       {office.address.map((line, i) => (
                         <p key={i}>{line}</p>
                       ))}
@@ -207,10 +207,10 @@ export default function USOffice() {
                   
                   {/* Phone */}
                   <div className="flex items-center gap-3 mb-3">
-                    <Phone className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                    <Phone className="w-5 h-5 text-muted-foreground/70 flex-shrink-0" />
                     <a 
                       href={`tel:${office.phone}`}
-                      className="text-gray-600 text-sm hover:text-red-600 transition-colors"
+                      className="text-muted-foreground text-sm hover:text-destructive transition-colors"
                     >
                       {office.phone}
                     </a>
@@ -218,10 +218,10 @@ export default function USOffice() {
                   
                   {/* Email */}
                   <div className="flex items-center gap-3 mb-3">
-                    <Mail className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                    <Mail className="w-5 h-5 text-muted-foreground/70 flex-shrink-0" />
                     <a 
                       href={`mailto:${office.email}`}
-                      className="text-gray-600 text-sm hover:text-red-600 transition-colors"
+                      className="text-muted-foreground text-sm hover:text-destructive transition-colors"
                     >
                       {office.email}
                     </a>
@@ -229,8 +229,8 @@ export default function USOffice() {
                   
                   {/* Hours */}
                   <div className="flex items-center gap-3 mb-4">
-                    <Clock className="w-5 h-5 text-gray-400 flex-shrink-0" />
-                    <p className="text-gray-600 text-sm">{office.hours}</p>
+                    <Clock className="w-5 h-5 text-muted-foreground/70 flex-shrink-0" />
+                    <p className="text-muted-foreground text-sm">{office.hours}</p>
                   </div>
                   
                   {/* Get Directions Link */}
@@ -238,7 +238,7 @@ export default function USOffice() {
                     href={`https://maps.google.com/?q=${encodeURIComponent(office.address.join(', '))}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-red-600 font-medium text-sm hover:gap-3 transition-all"
+                    className="inline-flex items-center gap-2 text-destructive font-medium text-sm hover:gap-3 transition-all"
                   >
                     Get Directions <ArrowRight className="w-4 h-4" />
                   </a>
@@ -250,13 +250,13 @@ export default function USOffice() {
       </section>
 
       {/* Map Section Placeholder */}
-      <section className="py-10 sm:py-12 lg:py-16 bg-gray-100">
+      <section className="py-10 sm:py-12 lg:py-16 bg-subtle">
         <div className="container">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-serif font-normal text-gray-900 mb-4">
+            <h2 className="text-3xl font-serif font-normal text-charcoal mb-4">
               Global Presence
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-muted-foreground max-w-2xl mx-auto">
               Our network spans across major business centers, ensuring we're always close to our clients.
             </p>
           </div>
@@ -264,11 +264,11 @@ export default function USOffice() {
           {/* World Map Placeholder */}
           <div className="bg-white rounded-lg shadow-sm p-8 aspect-[2/1] flex items-center justify-center">
             <div className="text-center">
-              <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin className="w-8 h-8 text-gray-400" />
+              <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mx-auto mb-4">
+                <MapPin className="w-8 h-8 text-muted-foreground/70" />
               </div>
-              <p className="text-gray-500">Interactive map coming soon</p>
-              <p className="text-sm text-gray-400 mt-2">View our offices on Google Maps</p>
+              <p className="text-muted-foreground">Interactive map coming soon</p>
+              <p className="text-sm text-muted-foreground/70 mt-2">View our offices on Google Maps</p>
             </div>
           </div>
         </div>
@@ -281,7 +281,7 @@ export default function USOffice() {
             <h2 className="text-3xl md:text-4xl font-serif font-normal mb-6">
               Ready to connect?
             </h2>
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-xl text-muted-foreground/50 mb-8">
               Reach out to your nearest office or contact us directly to start a conversation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

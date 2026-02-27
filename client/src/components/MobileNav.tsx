@@ -48,7 +48,7 @@ function HamburgerButton({ isOpen, onClick, isScrolled }: HamburgerButtonProps) 
         {/* Top line */}
         <span
           className={`block h-0.5 w-6 rounded-full transform transition-all duration-300 ease-out ${
-            isScrolled ? 'bg-white' : 'bg-[#1A1A1A]'
+            isScrolled ? 'bg-white' : 'bg-charcoal'
           } ${
             isOpen 
               ? 'rotate-45 translate-y-[9px] bg-white' 
@@ -58,7 +58,7 @@ function HamburgerButton({ isOpen, onClick, isScrolled }: HamburgerButtonProps) 
         {/* Middle line */}
         <span
           className={`block h-0.5 w-6 rounded-full transform transition-all duration-200 ease-out ${
-            isScrolled ? 'bg-white' : 'bg-[#1A1A1A]'
+            isScrolled ? 'bg-white' : 'bg-charcoal'
           } ${
             isOpen 
               ? 'opacity-0 translate-x-3 bg-white' 
@@ -68,7 +68,7 @@ function HamburgerButton({ isOpen, onClick, isScrolled }: HamburgerButtonProps) 
         {/* Bottom line */}
         <span
           className={`block h-0.5 w-6 rounded-full transform transition-all duration-300 ease-out ${
-            isScrolled ? 'bg-white' : 'bg-[#1A1A1A]'
+            isScrolled ? 'bg-white' : 'bg-charcoal'
           } ${
             isOpen 
               ? '-rotate-45 -translate-y-[9px] bg-white' 
@@ -121,7 +121,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
     <>
       {/* Backdrop */}
       <div
-        className={`fixed inset-0 bg-black/60 backdrop-blur-sm z-40 lg:hidden transition-opacity duration-300 ${
+        className={`fixed inset-0 bg-charcoal/60 backdrop-blur-sm z-40 lg:hidden transition-opacity duration-300 ${
           isAnimating ? 'opacity-100' : 'opacity-0'
         }`}
         onClick={onClose}
@@ -130,7 +130,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
 
       {/* Menu Panel */}
       <div
-        className={`fixed top-0 right-0 h-full w-full max-w-sm bg-[#051C2C] z-50 lg:hidden shadow-2xl transform transition-transform duration-300 ease-out ${
+        className={`fixed top-0 right-0 h-full w-full max-w-sm bg-base z-50 lg:hidden shadow-2xl transform transition-transform duration-300 ease-out ${
           isAnimating ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -145,7 +145,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
           </Link>
           <button
             onClick={onClose}
-            className="w-12 h-12 min-w-[48px] min-h-[48px] flex items-center justify-center text-white hover:text-[#0077B5] active:text-[#0077B5] transition-colors touch-manipulation"
+            className="w-12 h-12 min-w-[48px] min-h-[48px] flex items-center justify-center text-white hover:text-primary active:text-primary transition-colors touch-manipulation"
             aria-label="Close menu"
           >
             <svg
@@ -178,42 +178,42 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
                   }`}
                   style={{ transitionDelay: '50ms' }}
                 >
-                  <AccordionTrigger className="text-lg font-medium text-white hover:text-[#0077B5] active:text-[#0077B5] hover:no-underline py-4 min-h-[48px] touch-manipulation">
+                  <AccordionTrigger className="text-lg font-medium text-white hover:text-primary active:text-primary hover:no-underline py-4 min-h-[48px] touch-manipulation">
                     Expertise
                   </AccordionTrigger>
                   <AccordionContent>
                     <div className="flex flex-col gap-4 pl-4 py-2">
                       <div className="space-y-2">
                         <h4 className="text-xs font-bold text-white/50 uppercase tracking-wider">Solutions</h4>
-                        <Link href="/solutions/intelligent-process-optimization" className="block text-white/70 hover:text-[#0077B5] active:text-[#0077B5] py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
+                        <Link href="/solutions/intelligent-process-optimization" className="block text-white/70 hover:text-primary active:text-primary py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
                           Intelligent Process Optimization
                         </Link>
-                        <Link href="/solutions/data-solutions" className="block text-white/70 hover:text-[#0077B5] active:text-[#0077B5] py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
+                        <Link href="/solutions/data-solutions" className="block text-white/70 hover:text-primary active:text-primary py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
                           Data-Driven Customer Intelligence
                         </Link>
-                        <Link href="/solutions/process-orchestration" className="block text-white/70 hover:text-[#0077B5] active:text-[#0077B5] py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
+                        <Link href="/solutions/process-orchestration" className="block text-white/70 hover:text-primary active:text-primary py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
                           Scalable Enterprise Transformation
                         </Link>
-                        <Link href="/capabilities/growth-marketing-sales" className="block text-white/70 hover:text-[#0077B5] active:text-[#0077B5] py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
+                        <Link href="/capabilities/growth-marketing-sales" className="block text-white/70 hover:text-primary active:text-primary py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
                           Accelerating Business Growth
                         </Link>
                       </div>
                       
                       <div className="space-y-2 mt-2 pt-2 border-t border-white/10">
                         <h4 className="text-xs font-bold text-white/50 uppercase tracking-wider">Services</h4>
-                        <Link href="/capabilities" className="block text-white/70 hover:text-[#0077B5] active:text-[#0077B5] py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
+                        <Link href="/capabilities" className="block text-white/70 hover:text-primary active:text-primary py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
                           Process Automation
                         </Link>
-                        <Link href="/capabilities" className="block text-white/70 hover:text-[#0077B5] active:text-[#0077B5] py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
+                        <Link href="/capabilities" className="block text-white/70 hover:text-primary active:text-primary py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
                           App Development
                         </Link>
-                        <Link href="/capabilities" className="block text-white/70 hover:text-[#0077B5] active:text-[#0077B5] py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
+                        <Link href="/capabilities" className="block text-white/70 hover:text-primary active:text-primary py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
                           Data Solutions
                         </Link>
-                        <Link href="/capabilities" className="block text-white/70 hover:text-[#0077B5] active:text-[#0077B5] py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
+                        <Link href="/capabilities" className="block text-white/70 hover:text-primary active:text-primary py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
                           Digital Engagement
                         </Link>
-                        <Link href="/capabilities/growth-marketing-sales" className="block text-white/70 hover:text-[#0077B5] active:text-[#0077B5] py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
+                        <Link href="/capabilities/growth-marketing-sales" className="block text-white/70 hover:text-primary active:text-primary py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
                           E-commerce
                         </Link>
                       </div>
@@ -229,7 +229,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
                   }`}
                   style={{ transitionDelay: '100ms' }}
                 >
-                  <AccordionTrigger className="text-lg font-medium text-white hover:text-[#0077B5] active:text-[#0077B5] hover:no-underline py-4 min-h-[48px] touch-manipulation">
+                  <AccordionTrigger className="text-lg font-medium text-white hover:text-primary active:text-primary hover:no-underline py-4 min-h-[48px] touch-manipulation">
                     Industries
                   </AccordionTrigger>
                   <AccordionContent>
@@ -238,7 +238,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
                         <Link 
                           key={industry.slug}
                           href={`/industries/${industry.slug}`} 
-                          className="block text-white/70 hover:text-[#0077B5] active:text-[#0077B5] py-3 min-h-[44px] transition-colors touch-manipulation" 
+                          className="block text-white/70 hover:text-primary active:text-primary py-3 min-h-[44px] transition-colors touch-manipulation" 
                           onClick={onClose}
                         >
                           {industry.name}
@@ -256,21 +256,21 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
                   }`}
                   style={{ transitionDelay: '150ms' }}
                 >
-                  <AccordionTrigger className="text-lg font-medium text-white hover:text-[#0077B5] active:text-[#0077B5] hover:no-underline py-4 min-h-[48px] touch-manipulation">
+                  <AccordionTrigger className="text-lg font-medium text-white hover:text-primary active:text-primary hover:no-underline py-4 min-h-[48px] touch-manipulation">
                     Organization
                   </AccordionTrigger>
                   <AccordionContent>
                     <div className="flex flex-col gap-1 pl-4 py-2">
-                      <Link href="/about" className="block text-white/70 hover:text-[#0077B5] active:text-[#0077B5] py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
+                      <Link href="/about" className="block text-white/70 hover:text-primary active:text-primary py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
                         About Us
                       </Link>
-                      <Link href="/team" className="block text-white/70 hover:text-[#0077B5] active:text-[#0077B5] py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
+                      <Link href="/team" className="block text-white/70 hover:text-primary active:text-primary py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
                         Our People
                       </Link>
-                      <Link href="/insights" className="block text-white/70 hover:text-[#0077B5] active:text-[#0077B5] py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
+                      <Link href="/insights" className="block text-white/70 hover:text-primary active:text-primary py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
                         Insights
                       </Link>
-                      <Link href="/careers" className="block text-white/70 hover:text-[#0077B5] active:text-[#0077B5] py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
+                      <Link href="/careers" className="block text-white/70 hover:text-primary active:text-primary py-3 min-h-[44px] transition-colors touch-manipulation" onClick={onClose}>
                         Careers
                       </Link>
                     </div>
@@ -281,7 +281,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
               {/* Direct links with staggered animation */}
               <Link 
                 href="/capabilities" 
-                className={`block text-lg font-medium text-white hover:text-[#0077B5] active:text-[#0077B5] py-4 min-h-[52px] border-b border-white/10 transition-all duration-300 touch-manipulation ${
+                className={`block text-lg font-medium text-white hover:text-primary active:text-primary py-4 min-h-[52px] border-b border-white/10 transition-all duration-300 touch-manipulation ${
                   isAnimating ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
                 }`}
                 style={{ transitionDelay: '200ms' }}
@@ -292,7 +292,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
 
               <Link 
                 href="/cases" 
-                className={`block text-lg font-medium text-white hover:text-[#0077B5] active:text-[#0077B5] py-4 min-h-[52px] border-b border-white/10 transition-all duration-300 touch-manipulation ${
+                className={`block text-lg font-medium text-white hover:text-primary active:text-primary py-4 min-h-[52px] border-b border-white/10 transition-all duration-300 touch-manipulation ${
                   isAnimating ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
                 }`}
                 style={{ transitionDelay: '250ms' }}
@@ -306,7 +306,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
                   scrollToInitiatives(e);
                   onClose();
                 }}
-                className={`block w-full text-left text-lg font-medium text-white hover:text-[#0077B5] active:text-[#0077B5] py-4 min-h-[52px] border-b border-white/10 transition-all duration-300 touch-manipulation ${
+                className={`block w-full text-left text-lg font-medium text-white hover:text-primary active:text-primary py-4 min-h-[52px] border-b border-white/10 transition-all duration-300 touch-manipulation ${
                   isAnimating ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
                 }`}
                 style={{ transitionDelay: '300ms' }}
@@ -323,7 +323,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
               style={{ transitionDelay: '350ms' }}
             >
               <Link href="/contact" onClick={onClose}>
-                <Button className="bg-[#0077B5] hover:bg-[#005a8c] active:bg-[#004a70] text-white font-semibold w-full py-6 min-h-[56px] text-lg rounded-lg transition-colors touch-manipulation">
+                <Button className="bg-primary hover:bg-primary/90 active:bg-secondary text-white font-semibold w-full py-6 min-h-[56px] text-lg rounded-lg transition-colors touch-manipulation">
                   Contact us
                 </Button>
               </Link>

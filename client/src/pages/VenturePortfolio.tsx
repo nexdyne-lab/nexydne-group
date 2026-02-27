@@ -91,7 +91,7 @@ export default function VenturePortfolio() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0e3d] text-white font-sans selection:bg-[#00d4ff] selection:text-[#0a0e3d]">
+    <div className="min-h-screen bg-base text-white font-sans selection:bg-secondary selection:text-base">
       <Navigation />
       
       {/* Breadcrumb */}
@@ -105,7 +105,7 @@ export default function VenturePortfolio() {
       {/* Hero Section */}
       <section className="relative py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0e3d] via-[#0a0e3d]/95 to-[#050829]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-base via-base/95 to-base" />
         </div>
 
         <div className="container px-4 sm:px-6 md:px-12 relative z-10">
@@ -117,17 +117,17 @@ export default function VenturePortfolio() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-5 sm:mb-6 md:mb-8">
 
-              <span className="text-sm font-medium text-[#00d4ff] uppercase tracking-wider">Venture Portfolio</span>
+              <span className="text-sm font-medium text-secondary uppercase tracking-wider">Venture Portfolio</span>
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-3">
               We don't just advise. <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00d4ff] to-blue-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-blue-400">
                 We build and launch.
               </span>
             </h1>
             
-            <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl text-muted-foreground/50 mb-10 max-w-2xl mx-auto leading-relaxed">
               Explore our track record of turning strategic concepts into fully operational, revenue-generating businesses across industries.
             </p>
           </motion.div>
@@ -135,7 +135,7 @@ export default function VenturePortfolio() {
       </section>
 
       {/* Portfolio Grid */}
-      <section className="pb-32 bg-[#050829]">
+      <section className="pb-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8">
             {ventures.map((venture, index) => (
@@ -145,11 +145,11 @@ export default function VenturePortfolio() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group relative bg-[#0a0e3d] border border-white/10 rounded-xl sm:rounded-2xl overflow-hidden hover:border-[#00d4ff]/50 transition-all duration-500 flex flex-col"
+                className="group relative bg-base border border-white/10 rounded-xl sm:rounded-2xl overflow-hidden hover:border-secondary/50 transition-all duration-500 flex flex-col"
               >
                 {/* Image Header */}
                 <div className="h-48 overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0e3d] to-transparent z-10" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-base to-transparent z-10" />
                   <img 
                     src={venture.image} 
                     alt={venture.title} 
@@ -168,18 +168,18 @@ export default function VenturePortfolio() {
                 {/* Content */}
                 <div className="p-4 sm:p-6 md:p-8 flex-1 flex flex-col">
                   <Link href={venture.slug ? `/cases/${venture.slug}` : "#"}>
-                    <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-[#00d4ff] transition-colors cursor-pointer">
+                    <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-secondary transition-colors cursor-pointer">
                       {venture.title}
                     </h3>
                   </Link>
-                  <p className="text-gray-400 mb-5 sm:mb-6 md:mb-8 leading-relaxed flex-1">
+                  <p className="text-muted-foreground/70 mb-5 sm:mb-6 md:mb-8 leading-relaxed flex-1">
                     {venture.description}
                   </p>
 
                   {/* Metrics Grid */}
                   <div className="grid grid-cols-2 gap-4 pt-6 border-t border-white/10">
                     <div>
-                      <div className="flex items-center gap-2 mb-1 text-gray-500 text-xs uppercase tracking-wider">
+                      <div className="flex items-center gap-2 mb-1 text-muted-foreground text-xs uppercase tracking-wider">
 
                         {venture.timelineLabel}
                       </div>
@@ -188,7 +188,7 @@ export default function VenturePortfolio() {
                       </div>
                     </div>
                     <div>
-                      <div className="flex items-center gap-2 mb-1 text-gray-500 text-xs uppercase tracking-wider">
+                      <div className="flex items-center gap-2 mb-1 text-muted-foreground text-xs uppercase tracking-wider">
 
                         {venture.outcomeLabel}
                       </div>
@@ -205,16 +205,16 @@ export default function VenturePortfolio() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-[#0a0e3d] border-t border-white/5">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-base border-t border-white/5">
         <div className="container px-4 sm:px-6 md:px-12 text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Have a concept ready to scale?
           </h2>
-          <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground/70 mb-10 max-w-2xl mx-auto">
             Let's validate your idea and build your growth engine.
           </p>
           <Link href="/contact">
-            <button className="px-10 py-4 bg-[#00d4ff] text-[#0a0e3d] font-bold rounded-full hover:bg-white transition-all shadow-lg hover:shadow-[#00d4ff]/20">
+            <button className="px-10 py-4 bg-secondary text-base font-bold rounded-full hover:bg-white transition-all shadow-lg hover:shadow-secondary/20">
               Start Building With Us
             </button>
           </Link>

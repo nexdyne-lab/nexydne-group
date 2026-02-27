@@ -9,7 +9,7 @@ import { SEO } from "@/components/SEO";
 
 export default function StrategicProcurement() {
   return (
-    <div className="min-h-screen bg-white text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Strategic Procurement" 
         description="Transform procurement from a cost center to a strategic advantage. Optimize supplier relationships, reduce costs, and manage risk across your supply base."
@@ -18,7 +18,7 @@ export default function StrategicProcurement() {
       <Navbar />
       
       {/* Hero Section - Dark Background */}
-      <section className="relative min-h-[70vh] flex items-center pt-20 bg-black">
+      <section className="relative min-h-[70vh] flex items-center pt-20 bg-charcoal">
         <div className="container px-4 md:px-12 grid md:grid-cols-2 gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -40,7 +40,7 @@ export default function StrategicProcurement() {
             
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
                   Discuss Your Procurement
                 </Button>
               </Link>
@@ -68,14 +68,14 @@ export default function StrategicProcurement() {
       </section>
 
       {/* Our Experience & Impact - Bain Style */}
-      <section className="py-20 bg-white border-b border-gray-200">
+      <section className="py-20 bg-white border-b border-border">
         <div className="container px-4 md:px-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-2xl eb-garamond font-bold text-[#051C2C] mb-12"
+            className="text-2xl eb-garamond font-bold text-charcoal mb-12"
           >
             Our Experience & Impact
           </motion.h2>
@@ -92,10 +92,10 @@ export default function StrategicProcurement() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`${index > 0 ? 'border-l border-gray-200 pl-8' : ''}`}
+                className={`${index > 0 ? 'border-l border-border pl-8' : ''}`}
               >
-                <div className="text-5xl md:text-6xl font-bold text-[#051C2C] mb-4">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-5xl md:text-6xl font-bold text-charcoal mb-4">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -112,16 +112,16 @@ export default function StrategicProcurement() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-xl md:text-2xl text-[#051C2C] leading-relaxed mb-8">
+              <p className="text-xl md:text-2xl text-charcoal leading-relaxed mb-8">
                 For midmarket companies, procurement often operates as a transactional function—processing purchase orders and managing vendor payments. Yet the most successful growing businesses recognize that strategic procurement can be a powerful lever for competitive advantage, driving cost savings, innovation, and risk mitigation.
               </p>
-              <p className="text-lg text-[#051C2C]/70 leading-relaxed mb-8">
+              <p className="text-lg text-charcoal/70 leading-relaxed mb-8">
                 We help midmarket companies transform their procurement capabilities from reactive purchasing to proactive strategic sourcing. Our approach combines category management expertise with practical implementation support, enabling you to capture savings while building supplier relationships that support your growth.
               </p>
-              <p className="text-lg text-[#051C2C]/70 leading-relaxed mb-8">
+              <p className="text-lg text-charcoal/70 leading-relaxed mb-8">
                 In an era of supply chain volatility, procurement excellence isn't just about cost reduction—it's about building resilience. We help you develop supplier diversification strategies, risk assessment frameworks, and contingency plans that protect your operations from disruption.
               </p>
-              <p className="text-lg text-[#051C2C]/70 leading-relaxed">
+              <p className="text-lg text-charcoal/70 leading-relaxed">
                 Our team brings deep category expertise across direct and indirect spend, combined with practical experience helping companies at your scale. We understand the resource constraints of midmarket organizations and design solutions that deliver impact without requiring enterprise-level investments.
               </p>
             </motion.div>
@@ -130,7 +130,7 @@ export default function StrategicProcurement() {
       </section>
 
       {/* Our Approach Section - Dark Background */}
-      <section className="py-24 bg-[#0a1628]">
+      <section className="py-24 bg-base">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -139,7 +139,7 @@ export default function StrategicProcurement() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Our Approach
             </span>
             <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-white mb-6">
@@ -179,7 +179,7 @@ export default function StrategicProcurement() {
       </section>
 
       {/* How We Can Help Section - H100 Hover Effect */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -188,13 +188,13 @@ export default function StrategicProcurement() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Our Procurement Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-3xl">
+            <p className="text-xl text-charcoal/60 max-w-3xl">
               We help you build procurement capabilities that drive cost savings, manage risk, and support your growth strategy.
             </p>
           </motion.div>
@@ -261,10 +261,10 @@ export default function StrategicProcurement() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Client Results
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Procurement transformations that deliver
             </h2>
           </motion.div>
@@ -301,14 +301,14 @@ export default function StrategicProcurement() {
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>
-                  <span className="text-[#0077B5] text-xs font-bold uppercase tracking-wider mb-3 block">{result.category}</span>
-                  <h3 className="text-2xl eb-garamond font-bold text-[#051C2C] mb-4 group-hover:text-[#0077B5] transition-colors leading-tight">
+                  <span className="text-primary text-xs font-bold uppercase tracking-wider mb-3 block">{result.category}</span>
+                  <h3 className="text-2xl eb-garamond font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                     {result.title}
                   </h3>
-                  <p className="text-[#051C2C]/60 leading-relaxed mb-4">
+                  <p className="text-charcoal/60 leading-relaxed mb-4">
                     {result.description}
                   </p>
-                  <div className="flex items-center text-[#0077B5] text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                  <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                     Read full case study <ArrowRight className="ml-2 w-4 h-4" />
                   </div>
                 </Link>
@@ -319,7 +319,7 @@ export default function StrategicProcurement() {
       </section>
 
       {/* Latest Insights Section */}
-      <section className="py-24 bg-[#f8f8f7]">
+      <section className="py-24 bg-subtle">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -329,14 +329,14 @@ export default function StrategicProcurement() {
             className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6"
           >
             <div>
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Latest Insights
               </span>
-              <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C]">
+              <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal">
                 Procurement perspectives
               </h2>
             </div>
-            <Link href="/insights" className="group flex items-center text-[#051C2C] font-semibold hover:text-[#0077B5] transition-colors">
+            <Link href="/insights" className="group flex items-center text-charcoal font-semibold hover:text-primary transition-colors">
               View all insights <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>
@@ -373,19 +373,19 @@ export default function StrategicProcurement() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={insight.link} className="group block h-full">
-                  <div className="h-full p-8 rounded-xl bg-white border border-gray-200 hover:border-[#0077B5]/50 transition-all duration-300 hover:shadow-lg">
+                  <div className="h-full p-8 rounded-xl bg-white border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
                     <div className="flex items-center gap-3 mb-4">
-                      <span className="text-[#0077B5] text-xs font-bold uppercase tracking-wider">{insight.category}</span>
-                      <span className="text-[#051C2C]/40">•</span>
-                      <span className="text-[#051C2C]/60 text-sm">{insight.readTime}</span>
+                      <span className="text-primary text-xs font-bold uppercase tracking-wider">{insight.category}</span>
+                      <span className="text-charcoal/40">•</span>
+                      <span className="text-charcoal/60 text-sm">{insight.readTime}</span>
                     </div>
-                    <h3 className="text-xl eb-garamond font-bold text-[#051C2C] mb-4 group-hover:text-[#0077B5] transition-colors leading-tight">
+                    <h3 className="text-xl eb-garamond font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                       {insight.title}
                     </h3>
-                    <p className="text-[#051C2C]/60 text-sm leading-relaxed mb-6">
+                    <p className="text-charcoal/60 text-sm leading-relaxed mb-6">
                       {insight.description}
                     </p>
-                    <div className="flex items-center text-[#0077B5] text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                    <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                       Read article <ArrowRight className="ml-2 w-4 h-4" />
                     </div>
                   </div>
@@ -406,10 +406,10 @@ export default function StrategicProcurement() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Related Capabilities
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Explore related capabilities
             </h2>
           </motion.div>
@@ -452,7 +452,7 @@ export default function StrategicProcurement() {
       </section>
 
       {/* CTA Section - Blue Background */}
-      <section className="py-24 bg-[#0077B5]">
+      <section className="py-24 bg-primary">
         <div className="container px-4 md:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -468,7 +468,7 @@ export default function StrategicProcurement() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-100 text-[#0077B5] px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-white hover:bg-subtle text-primary px-8 py-6 text-base font-semibold transition-all">
                   Schedule a Consultation
                 </Button>
               </Link>

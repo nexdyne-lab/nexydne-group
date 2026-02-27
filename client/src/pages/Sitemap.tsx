@@ -213,7 +213,7 @@ export default function Sitemap() {
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-3">
               Explore NexDyne Technologies
             </h1>
-            <p className="text-xl text-slate-300">
+            <p className="text-xl text-muted-foreground/50">
               A comprehensive overview of all our services, capabilities, case studies, and insights. Find exactly what you're looking for.
             </p>
           </div>
@@ -228,10 +228,10 @@ export default function Sitemap() {
               <div key={index} className="space-y-6">
                 {/* Section Header */}
                 <div className="flex items-center gap-3 pb-4 border-b-2 border-slate-200">
-                  <div className="text-[#2D5BFF]">
+                  <div className="text-primary">
                     {section.icon}
                   </div>
-                  <h2 className="text-2xl font-bold text-slate-900">
+                  <h2 className="text-2xl font-bold text-charcoal">
                     {section.title}
                   </h2>
                 </div>
@@ -241,11 +241,11 @@ export default function Sitemap() {
                   {section.links.map((link, linkIndex) => (
                     <Link key={linkIndex} href={link.href}>
                       <div className="group cursor-pointer p-4 rounded-lg hover:bg-slate-50 transition-colors border border-transparent hover:border-slate-200">
-                        <h3 className="font-semibold text-slate-900 group-hover:text-[#2D5BFF] transition-colors mb-1">
+                        <h3 className="font-semibold text-charcoal group-hover:text-primary transition-colors mb-1">
                           {link.label}
                         </h3>
                         {link.description && (
-                          <p className="text-sm text-slate-600">
+                          <p className="text-sm text-muted-foreground">
                             {link.description}
                           </p>
                         )}
@@ -259,25 +259,25 @@ export default function Sitemap() {
 
           {/* Search CTA */}
           <div className="mt-16 p-4 sm:p-6 md:p-8 bg-slate-50 rounded-lg sm:rounded-xl border border-slate-200 text-center">
-            <h3 className="text-2xl font-bold text-slate-900 mb-3">
+            <h3 className="text-2xl font-bold text-charcoal mb-3">
               Can't find what you're looking for?
             </h3>
-            <p className="text-slate-600 mb-6 max-w-2xl mx-auto">
+            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
               Use our search feature to quickly find specific services, case studies, or insights across the entire site.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link href="/">
-                <button className="px-6 py-3 bg-[#2D5BFF] text-white rounded-lg font-semibold hover:bg-[#2347CC] transition-colors">
+                <button className="px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary transition-colors">
                   Go to Homepage
                 </button>
               </Link>
               <Link href="/insights">
-                <button className="px-6 py-3 bg-white text-slate-900 rounded-lg font-semibold border border-slate-300 hover:bg-slate-50 transition-colors">
+                <button className="px-6 py-3 bg-white text-charcoal rounded-lg font-semibold border border-slate-300 hover:bg-slate-50 transition-colors">
                   Browse Insights
                 </button>
               </Link>
             </div>
-            <p className="text-sm text-slate-500 mt-4">
+            <p className="text-sm text-muted-foreground mt-4">
               Press <kbd className="px-2 py-1 bg-white border border-slate-300 rounded text-xs font-mono">⌘K</kbd> or{' '}
               <kbd className="px-2 py-1 bg-white border border-slate-300 rounded text-xs font-mono">Ctrl+K</kbd> to open search from anywhere
             </p>

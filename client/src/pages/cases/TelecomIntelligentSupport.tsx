@@ -21,7 +21,7 @@ export default function TelecomIntelligentSupport() {
       </div>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-[#2D5BFF] via-[#4169FF] to-[#5B7FFF] text-white">
+      <section className="py-20 bg-gradient-to-r from-primary via-primary to-secondary text-white">
         <div className="container">
           <h1 className="text-5xl font-bold mb-3">Telecom Provider Improves CSAT by 38 Points Through Intelligent Support</h1>
           <p className="text-2xl opacity-90 max-w-4xl">

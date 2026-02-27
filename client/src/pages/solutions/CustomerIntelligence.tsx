@@ -14,7 +14,7 @@ export default function CustomerIntelligence() {
       <Navigation />
 
       {/* Hero Section - Black Background (matches IntelligentProcessOptimization) */}
-      <section className="relative min-h-[70vh] md:min-h-[80vh] bg-black pt-20">
+      <section className="relative min-h-[70vh] md:min-h-[80vh] bg-charcoal pt-20">
         <div className="container px-4 sm:px-6 md:px-12 h-full">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-0 items-center min-h-[60vh] md:min-h-[70vh]">
             {/* Left Column - Text Content */}

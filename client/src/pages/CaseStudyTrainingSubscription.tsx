@@ -9,7 +9,7 @@ import { SEO } from "@/components/SEO";
 
 export default function CaseStudyTrainingSubscription() {
   return (
-    <div className="min-h-screen bg-[#051C2C] font-sans text-white selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
       <SEO 
         title="Case Study: Training Company Subscription Platform" 
         description="How a professional services training company launched a subscription platform and grew to 2,400 active members with $1.8M annual recurring revenue."
@@ -25,8 +25,8 @@ export default function CaseStudyTrainingSubscription() {
             alt="Professional Training Session" 
             className="w-full h-full object-cover opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#051C2C] via-[#051C2C]/85 to-[#051C2C]/50" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#051C2C] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/85 to-base/50" />
+          <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent" />
         </div>
         
         <div className="container px-4 sm:px-6 md:px-12 relative z-10">
@@ -37,7 +37,7 @@ export default function CaseStudyTrainingSubscription() {
             className="max-w-4xl"
           >
             <Link href="/solutions/accelerating-business-growth">
-              <span className="inline-flex items-center text-sm text-white/60 hover:text-[#0077B5] transition-colors mb-6 cursor-pointer">
+              <span className="inline-flex items-center text-sm text-white/60 hover:text-primary transition-colors mb-6 cursor-pointer">
                 <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
                 Back to Accelerating Business Growth
               </span>
@@ -95,7 +95,7 @@ export default function CaseStudyTrainingSubscription() {
       </section>
 
       {/* Company Overview */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid md:grid-cols-2 gap-16 lg:gap-8 sm:gap-6 lg:gap-8 sm:gap-6 lg:gap-24 items-start">
             <motion.div
@@ -104,14 +104,14 @@ export default function CaseStudyTrainingSubscription() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Company Overview
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight mb-5 sm:mb-6 md:mb-8">
                 A training company seeking sustainable growth
               </h2>
               
-              <div className="space-y-6 text-lg text-[#051C2C]/70 leading-relaxed">
+              <div className="space-y-6 text-lg text-charcoal/70 leading-relaxed">
                 <p>
                   This professional services training company had built a strong reputation over 15 years, delivering in-person workshops to accounting, legal, and consulting firms. With 45 employees and $6M in annual revenue, they were the go-to provider for continuing professional education in their niche.
                 </p>
@@ -126,28 +126,28 @@ export default function CaseStudyTrainingSubscription() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-[#F8F9FA] p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl"
+              className="bg-subtle p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl"
             >
               <h3 className="text-xl font-serif font-bold mb-6">Company Profile</h3>
               <div className="space-y-4">
-                <div className="flex justify-between py-3 border-b border-[#051C2C]/10">
-                  <span className="text-[#051C2C]/60">Industry</span>
+                <div className="flex justify-between py-3 border-b border-base/10">
+                  <span className="text-charcoal/60">Industry</span>
                   <span className="font-semibold">Professional Training</span>
                 </div>
-                <div className="flex justify-between py-3 border-b border-[#051C2C]/10">
-                  <span className="text-[#051C2C]/60">Employees</span>
+                <div className="flex justify-between py-3 border-b border-base/10">
+                  <span className="text-charcoal/60">Employees</span>
                   <span className="font-semibold">45</span>
                 </div>
-                <div className="flex justify-between py-3 border-b border-[#051C2C]/10">
-                  <span className="text-[#051C2C]/60">Annual Revenue</span>
+                <div className="flex justify-between py-3 border-b border-base/10">
+                  <span className="text-charcoal/60">Annual Revenue</span>
                   <span className="font-semibold">$6M (pre-project)</span>
                 </div>
-                <div className="flex justify-between py-3 border-b border-[#051C2C]/10">
-                  <span className="text-[#051C2C]/60">Business Model</span>
+                <div className="flex justify-between py-3 border-b border-base/10">
+                  <span className="text-charcoal/60">Business Model</span>
                   <span className="font-semibold">In-person workshops</span>
                 </div>
                 <div className="flex justify-between py-3">
-                  <span className="text-[#051C2C]/60">Project Duration</span>
+                  <span className="text-charcoal/60">Project Duration</span>
                   <span className="font-semibold">12 months</span>
                 </div>
               </div>
@@ -157,7 +157,7 @@ export default function CaseStudyTrainingSubscription() {
       </section>
 
       {/* The Challenge */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -209,7 +209,7 @@ export default function CaseStudyTrainingSubscription() {
       </section>
 
       {/* The Solution */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -218,13 +218,13 @@ export default function CaseStudyTrainingSubscription() {
             transition={{ duration: 0.6 }}
             className="text-center mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               The Solution
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6">
               A comprehensive learning membership platform
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-3xl mx-auto">
+            <p className="text-xl text-charcoal/60 max-w-3xl mx-auto">
               NEXDYNE designed and built a subscription-based learning platform that combined on-demand content, live sessions, and community features.
             </p>
           </motion.div>
@@ -241,7 +241,7 @@ export default function CaseStudyTrainingSubscription() {
                 icon: <Calendar className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Live Virtual Sessions",
                 description: "Weekly live workshops, Q&A sessions, and expert panels that create ongoing engagement and justify subscription value.",
-                color: "from-[#0077B5] to-[#00A3E0]"
+                color: "from-[#0077B5] to-secondary"
               },
               {
                 icon: <Users className="w-5 h-5 sm:w-6 sm:h-6" />,
@@ -265,7 +265,7 @@ export default function CaseStudyTrainingSubscription() {
                 icon: <RefreshCw className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Retention Automation",
                 description: "Engagement scoring, at-risk member identification, and automated re-engagement campaigns to maximize retention.",
-                color: "from-[#005a8c] to-[#0077B5]"
+                color: "from-base to-[#0077B5]"
               }
             ].map((item, index) => (
               <motion.div
@@ -276,14 +276,14 @@ export default function CaseStudyTrainingSubscription() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group"
               >
-                <div className="h-full bg-[#F8F9FA] p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl hover:shadow-xl transition-all duration-300">
+                <div className="h-full bg-subtle p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl hover:shadow-xl transition-all duration-300">
                   <div className={`w-12 h-12 bg-gradient-to-br ${item.color} rounded-lg flex items-center justify-center mb-6 text-white`}>
                     {item.icon}
                   </div>
-                  <h3 className="text-xl font-serif font-bold mb-4 group-hover:text-[#0077B5] transition-colors">
+                  <h3 className="text-xl font-serif font-bold mb-4 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-[#051C2C]/60 leading-relaxed text-sm">
+                  <p className="text-charcoal/60 leading-relaxed text-sm">
                     {item.description}
                   </p>
                 </div>
@@ -294,7 +294,7 @@ export default function CaseStudyTrainingSubscription() {
       </section>
 
       {/* Implementation Timeline */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#F8F9FA] text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-subtle text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -303,7 +303,7 @@ export default function CaseStudyTrainingSubscription() {
             transition={{ duration: 0.6 }}
             className="text-center mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Implementation
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6">
@@ -342,12 +342,12 @@ export default function CaseStudyTrainingSubscription() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl shadow-sm"
               >
-                <span className="text-xs font-bold uppercase tracking-wider text-[#0077B5] mb-2 block">{phase.phase}</span>
+                <span className="text-xs font-bold uppercase tracking-wider text-primary mb-2 block">{phase.phase}</span>
                 <h3 className="text-lg font-serif font-bold mb-4">{phase.title}</h3>
                 <ul className="space-y-2">
                   {phase.items.map((item, i) => (
-                    <li key={i} className="flex items-start text-sm text-[#051C2C]/70">
-                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-[#0077B5] mr-2 flex-shrink-0 mt-0.5" />
+                    <li key={i} className="flex items-start text-sm text-charcoal/70">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-primary mr-2 flex-shrink-0 mt-0.5" />
                       {item}
                     </li>
                   ))}
@@ -359,7 +359,7 @@ export default function CaseStudyTrainingSubscription() {
       </section>
 
       {/* Results */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -427,7 +427,7 @@ export default function CaseStudyTrainingSubscription() {
       </section>
 
       {/* Related Case Studies */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#F8F9FA] text-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-subtle text-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -436,7 +436,7 @@ export default function CaseStudyTrainingSubscription() {
             transition={{ duration: 0.6 }}
             className="text-center mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#0077B5] mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold">
@@ -457,7 +457,7 @@ export default function CaseStudyTrainingSubscription() {
                 category: "B2B Manufacturing",
                 title: "Industrial supplier adds $4.5M revenue through digital ordering",
                 stats: [{ value: "$4.5M", label: "New revenue" }, { value: "58%", label: "Self-service orders" }],
-                color: "from-[#0077B5] to-[#00A3E0]",
+                color: "from-[#0077B5] to-secondary",
                 link: "/cases/b2b-digital-ordering"
               }
             ].map((caseStudy, index) => (
@@ -473,21 +473,21 @@ export default function CaseStudyTrainingSubscription() {
                   <div className="bg-white rounded-lg sm:rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer h-full flex flex-col">
                     <div className={`h-40 bg-gradient-to-br ${caseStudy.color}`} />
                     <div className="p-4 sm:p-5 md:p-6 flex-grow flex flex-col">
-                      <span className="text-xs font-bold uppercase tracking-wider text-[#0077B5] mb-2">
+                      <span className="text-xs font-bold uppercase tracking-wider text-primary mb-2">
                         {caseStudy.category}
                       </span>
-                      <h3 className="text-xl font-serif font-bold mb-4 group-hover:text-[#0077B5] transition-colors">
+                      <h3 className="text-xl font-serif font-bold mb-4 group-hover:text-primary transition-colors">
                         {caseStudy.title}
                       </h3>
                       <div className="grid grid-cols-2 gap-4 mb-6 mt-auto">
                         {caseStudy.stats.map((stat, i) => (
                           <div key={i}>
-                            <p className="text-2xl font-serif font-bold text-[#0077B5]">{stat.value}</p>
-                            <p className="text-xs text-[#051C2C]/60">{stat.label}</p>
+                            <p className="text-2xl font-serif font-bold text-primary">{stat.value}</p>
+                            <p className="text-xs text-charcoal/60">{stat.label}</p>
                           </div>
                         ))}
                       </div>
-                      <div className="flex items-center text-[#0077B5] font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
+                      <div className="flex items-center text-primary font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
                         Read case study
                         <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
                       </div>
@@ -501,7 +501,7 @@ export default function CaseStudyTrainingSubscription() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-[#051C2C]">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -517,7 +517,7 @@ export default function CaseStudyTrainingSubscription() {
               Let's discuss how we can help you transform your business model with subscription-based offerings.
             </p>
             <Link href="/contact">
-              <Button className="bg-[#0077B5] hover:bg-[#005a8c] text-white px-10 py-6 text-lg font-semibold transition-all">
+              <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-lg font-semibold transition-all">
                 Schedule a Consultation
                 <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </Button>

@@ -25,7 +25,7 @@ export function CustomSoftware() {
       </div>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#2D5BFF] via-[#4169FF] to-[#5B7FFF] text-white py-20">
+      <section className="bg-gradient-to-br from-primary via-primary to-secondary text-white py-20">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -46,7 +46,7 @@ export function CustomSoftware() {
           <div className="grid lg:grid-cols-[300px_1fr] gap-12">
             {/* Contact Person */}
             <div className="space-y-4">
-              <div className="w-32 h-32 rounded-full bg-gradient-to-br from-[#4169FF] to-[#5B7FFF] flex items-center justify-center text-white text-3xl font-bold">
+              <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-3xl font-bold">
                 MV
               </div>
               <div>
@@ -105,7 +105,7 @@ export function CustomSoftware() {
       </section>
 
       {/* Content Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-subtle">
         <div className="container max-w-4xl">
           <h2 className="text-3xl eb-garamond font-bold mb-8">Isn't custom software prohibitively expensive?</h2>
           <div className="space-y-6 text-lg text-muted-foreground">
@@ -128,7 +128,7 @@ export function CustomSoftware() {
       {/* Quote Section */}
       <section className="py-20 bg-gradient-to-br from-rose-100 to-blue-50">
         <div className="container max-w-4xl text-center">
-          <blockquote className="text-3xl font-semibold text-gray-900 mb-6">
+          <blockquote className="text-3xl font-semibold text-charcoal mb-6">
             "Custom software lets smaller businesses compete with enterprise capabilities while helping larger organizations eliminate licensing costs that don't scale."
           </blockquote>
           <p className="text-lg text-muted-foreground">
@@ -164,7 +164,7 @@ export function CustomSoftware() {
           <div className="grid lg:grid-cols-[300px_1fr] gap-12 items-center">
             {/* Contact Person */}
             <div className="space-y-4">
-              <div className="w-32 h-32 rounded-full bg-gradient-to-br from-[#4169FF] to-[#5B7FFF] flex items-center justify-center text-white text-3xl font-bold">
+              <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-3xl font-bold">
                 MV
               </div>
               <div>
@@ -180,8 +180,8 @@ export function CustomSoftware() {
                 Let's discuss your requirements, timeline, and budget. We'll show you how custom development can deliver better ROI than off-the-shelf alternatives.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-[#8B2635] hover:bg-[#6B1F2A]">
-                  <a href="mailto:martijn@nexdyne.com">Schedule a consultation</a>
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white transition-colors duration-200 ease-in-out">
+                  <a href="mailto:martijn@nexdyne.com" className="text-inherit">Schedule a consultation</a>
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
                 <Button size="lg" variant="outline">
@@ -203,19 +203,19 @@ export function CustomSoftware() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center max-w-4xl mx-auto">
             <div className="text-center space-y-2">
-              <div className="text-4xl font-bold text-gray-900">React</div>
+              <div className="text-4xl font-bold text-charcoal">React</div>
               <p className="text-sm text-muted-foreground">Frontend framework</p>
             </div>
             <div className="text-center space-y-2">
-              <div className="text-4xl font-bold text-gray-900">Node.js</div>
+              <div className="text-4xl font-bold text-charcoal">Node.js</div>
               <p className="text-sm text-muted-foreground">Backend runtime</p>
             </div>
             <div className="text-center space-y-2">
-              <div className="text-4xl font-bold text-gray-900">PostgreSQL</div>
+              <div className="text-4xl font-bold text-charcoal">PostgreSQL</div>
               <p className="text-sm text-muted-foreground">Database</p>
             </div>
             <div className="text-center space-y-2">
-              <div className="text-4xl font-bold text-gray-900">AWS</div>
+              <div className="text-4xl font-bold text-charcoal">AWS</div>
               <p className="text-sm text-muted-foreground">Cloud infrastructure</p>
             </div>
           </div>
@@ -223,7 +223,7 @@ export function CustomSoftware() {
       </section>
 
       {/* Why NEXDYNE Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-subtle">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -271,7 +271,7 @@ export function CustomSoftware() {
                   <p className="text-muted-foreground">
                     Custom React/Node.js platform processes 50,000 trades daily with sub-second latency, replacing legacy system that couldn't scale.
                   </p>
-                  <div className="flex items-center text-[#8B2635] font-semibold">
+                  <div className="flex items-center text-destructive font-semibold">
                     Read case study <ArrowRight className="ml-2 h-4 w-4" />
                   </div>
                 </div>
@@ -291,7 +291,7 @@ export function CustomSoftware() {
                   <p className="text-muted-foreground">
                     Custom compliance management system reduced audit prep time by 78% and eliminated manual spreadsheet tracking for 200+ users.
                   </p>
-                  <div className="flex items-center text-[#8B2635] font-semibold">
+                  <div className="flex items-center text-destructive font-semibold">
                     Read case study <ArrowRight className="ml-2 h-4 w-4" />
                   </div>
                 </div>
@@ -311,7 +311,7 @@ export function CustomSoftware() {
                   <p className="text-muted-foreground">
                     Custom web and mobile app consolidated scheduling, resource allocation, and financial tracking—saving $180K annually in software costs.
                   </p>
-                  <div className="flex items-center text-[#8B2635] font-semibold">
+                  <div className="flex items-center text-destructive font-semibold">
                     Read case study <ArrowRight className="ml-2 h-4 w-4" />
                   </div>
                 </div>

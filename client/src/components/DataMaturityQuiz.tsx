@@ -194,16 +194,16 @@ export default function DataMaturityQuiz() {
         <>
           <div className="mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">
             <div className="flex justify-between items-center mb-4">
-              <span className="text-[#00d4ff] font-bold uppercase tracking-wider text-sm">
+              <span className="text-secondary font-bold uppercase tracking-wider text-sm">
                 Assessment Question {currentQuestion + 1} of {questions.length}
               </span>
-              <span className="text-slate-400 text-sm">
+              <span className="text-muted-foreground/70 text-sm">
                 {Math.round(((currentQuestion) / questions.length) * 100)}% Complete
               </span>
             </div>
             <div className="w-full bg-white/10 h-1 rounded-full overflow-hidden">
               <div 
-                className="bg-[#00d4ff] h-full transition-all duration-500 ease-out"
+                className="bg-secondary h-full transition-all duration-500 ease-out"
                 style={{ width: `${((currentQuestion) / questions.length) * 100}%` }}
               />
             </div>
@@ -218,30 +218,30 @@ export default function DataMaturityQuiz() {
               <button
                 key={index}
                 onClick={() => handleAnswer(option.score)}
-                className="w-full text-left p-4 rounded-lg sm:rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:bg-[#00d4ff]/10 hover:border-[#00d4ff] transition-all duration-200 group flex items-center justify-between"
+                className="w-full text-left p-4 rounded-lg sm:rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:bg-secondary/10 hover:border-secondary transition-all duration-200 group flex items-center justify-between"
               >
-                <span className="text-slate-300 group-hover:text-white font-medium">
+                <span className="text-muted-foreground/50 group-hover:text-white font-medium">
                   {option.text}
                 </span>
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-white/0 group-hover:text-[#00d4ff] transition-all transform translate-x-[-10px] group-hover:translate-x-0" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-white/0 group-hover:text-secondary transition-all transform translate-x-[-10px] group-hover:translate-x-0" />
               </button>
             ))}
           </div>
         </>
       ) : (
         <div className="text-center py-8">
-          <div className="w-20 h-20 bg-[#00d4ff]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-            <CheckCircle2 className="w-10 h-10 text-[#00d4ff]" />
+          <div className="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <CheckCircle2 className="w-10 h-10 text-secondary" />
           </div>
           
           <h3 className="text-3xl font-bold text-white mb-2">Assessment Complete</h3>
-          <p className="text-slate-400 mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">Here is your data maturity profile:</p>
+          <p className="text-muted-foreground/70 mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">Here is your data maturity profile:</p>
           
           <div className="bg-white/5 rounded-lg sm:rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8 border border-white/10">
             <div className={`text-2xl font-bold mb-2 ${result?.color}`}>
               {result?.level}
             </div>
-            <p className="text-slate-300 leading-relaxed">
+            <p className="text-muted-foreground/50 leading-relaxed">
               {result?.description}
             </p>
           </div>
@@ -257,7 +257,7 @@ export default function DataMaturityQuiz() {
             </Button>
             <Button 
               onClick={generatePDF}
-              className="bg-[#00d4ff] hover:bg-[#00bce3] text-[#0a0e3d] font-bold gap-2"
+              className="bg-secondary hover:bg-secondary text-base font-bold gap-2"
             >
               <Download className="w-3 h-3 sm:w-4 sm:h-4" />
               Get Full Report

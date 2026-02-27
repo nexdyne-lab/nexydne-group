@@ -206,7 +206,7 @@ export default function AITechnologyConsulting() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-[#1A1A1A] font-sans">
+    <div className="min-h-screen bg-white text-charcoal font-sans">
       <SEO 
         title="AI and Technology Consulting" 
         description="NexDyne delivers AI and technology consulting for mid-market organizations. Our proprietary Accelerators, including ProcessFlow AI, help businesses achieve 85% average efficiency improvements through intelligent automation and sustainable transformation."
@@ -216,7 +216,7 @@ export default function AITechnologyConsulting() {
       <Navigation />
 
       {/* Hero Section - Clean minimal design */}
-      <section className="relative min-h-[85vh] flex items-center pt-20 overflow-hidden bg-black">
+      <section className="relative min-h-[85vh] flex items-center pt-20 overflow-hidden bg-charcoal">
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -252,21 +252,21 @@ export default function AITechnologyConsulting() {
       {/* On-page Navigation */}
       {/* <div 
         ref={navRef}
-        className={`bg-white border-b border-gray-200 transition-all duration-300 ${
+        className={`bg-white border-b border-border transition-all duration-300 ${
           isNavSticky ? "sticky top-[72px] z-40 shadow-sm" : ""
         }`}
       >
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex items-center justify-center gap-2 sm:gap-4 md:gap-8 py-4 overflow-x-auto">
-            <span className="text-sm font-medium text-gray-500 whitespace-nowrap hidden sm:block">On this page:</span>
+            <span className="text-sm font-medium text-muted-foreground whitespace-nowrap hidden sm:block">On this page:</span>
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
                 className={`text-sm font-medium whitespace-nowrap px-3 py-2 rounded-full transition-colors ${
                   activeSection === item.id
-                    ? "bg-gray-100 text-[#1A1A1A] font-semibold"
-                    : "text-gray-600 hover:text-[#1A1A1A]"
+                    ? "bg-subtle text-charcoal font-semibold"
+                    : "text-muted-foreground hover:text-charcoal"
                 }`}
               >
                 {item.label}
@@ -287,14 +287,14 @@ export default function AITechnologyConsulting() {
             variants={fadeInUp}
             className="text-center max-w-4xl mx-auto mb-16 md:mb-24"
           >
-            <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-gray-500 uppercase mb-4 block">
+            <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Our Approach
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif leading-tight">
               Strategy, technology, and people—{" "}
               <span className="italic">integrated for impact.</span>
             </h2>
-            <p className="text-lg text-gray-600 mt-6 max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
               We've learned that sustainable transformation requires more than great technology. It demands strategic clarity, proven tools, and teams ready to embrace change.
             </p>
           </motion.div>
@@ -314,7 +314,7 @@ export default function AITechnologyConsulting() {
                 className="group"
               >
                 {/* Image */}
-                <div className="relative aspect-[4/3] overflow-hidden rounded-xl mb-6 bg-gray-100">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-xl mb-6 bg-subtle">
                   <img 
                     src={pillar.image} 
                     alt={pillar.title}
@@ -322,15 +322,15 @@ export default function AITechnologyConsulting() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                   <div className="absolute bottom-4 left-4 w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-lg">
-                    <pillar.icon className="w-6 h-6 text-[#1A1A1A]" />
+                    <pillar.icon className="w-6 h-6 text-charcoal" />
                   </div>
                 </div>
                 
                 {/* Content */}
-                <h3 className="text-xl sm:text-2xl font-serif font-bold mb-4 text-[#1A1A1A]">
+                <h3 className="text-xl sm:text-2xl font-serif font-bold mb-4 text-charcoal">
                   {pillar.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed">
                   {pillar.description}
                 </p>
               </motion.div>
@@ -346,7 +346,7 @@ export default function AITechnologyConsulting() {
             className="text-center mt-16"
           >
             <Link href="/contact">
-              <span className="inline-flex items-center gap-2 px-8 py-4 border-2 border-[#1A1A1A] text-[#1A1A1A] font-bold rounded-full cursor-pointer hover:bg-[#3DCD58] hover:border-[#3DCD58] hover:text-white transition-colors group">
+              <span className="inline-flex items-center gap-2 px-8 py-4 border-2 border-charcoal text-charcoal font-bold rounded-full cursor-pointer hover:bg-secondary hover:border-secondary hover:text-white transition-colors group">
                 Discuss your transformation
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -366,13 +366,13 @@ export default function AITechnologyConsulting() {
             variants={fadeInUp}
             className="text-center max-w-4xl mx-auto mb-16"
           >
-            <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-gray-500 uppercase mb-4 block">
+            <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Proprietary Tools
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif leading-tight">
               NexDyne Accelerators
             </h2>
-            <p className="text-lg text-gray-600 mt-6 max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
               Our proprietary frameworks and tools deliver consistent, high-quality results faster—shifting our value proposition from services-only to services plus proven technology.
             </p>
           </motion.div>
@@ -394,7 +394,7 @@ export default function AITechnologyConsulting() {
                 }`}
               >
                 {/* Image */}
-                <div className={`relative aspect-[16/10] overflow-hidden rounded-xl bg-gray-200 ${
+                <div className={`relative aspect-[16/10] overflow-hidden rounded-xl bg-muted ${
                   index % 2 === 1 ? "lg:order-2" : ""
                 }`}>
                   <img 
@@ -406,13 +406,13 @@ export default function AITechnologyConsulting() {
                 
                 {/* Content */}
                 <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                  <span className="text-xs font-bold tracking-[0.15em] text-gray-500 uppercase mb-2 block">
+                  <span className="text-xs font-bold tracking-[0.15em] text-muted-foreground uppercase mb-2 block">
                     {accelerator.tagline}
                   </span>
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-4 text-[#1A1A1A]">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-4 text-charcoal">
                     {accelerator.name}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed mb-6">
+                  <p className="text-muted-foreground leading-relaxed mb-6">
                     {accelerator.description}
                   </p>
                   
@@ -421,7 +421,7 @@ export default function AITechnologyConsulting() {
                     {accelerator.features.map((feature, i) => (
                       <span 
                         key={i}
-                        className="px-3 py-1 bg-white border border-gray-200 rounded-full text-sm text-gray-700"
+                        className="px-3 py-1 bg-white border border-border rounded-full text-sm text-charcoal/80"
                       >
                         {feature}
                       </span>
@@ -429,7 +429,7 @@ export default function AITechnologyConsulting() {
                   </div>
                   
                   <Link href={accelerator.link}>
-                    <span className="inline-flex items-center gap-2 text-[#1A1A1A] font-medium hover:text-[#3DCD58] transition-colors group">
+                    <span className="inline-flex items-center gap-2 text-charcoal font-medium hover:text-secondary transition-colors group">
                       Learn more
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </span>
@@ -452,13 +452,13 @@ export default function AITechnologyConsulting() {
             variants={fadeInUp}
             className="text-center max-w-3xl mx-auto mb-16"
           >
-            <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-gray-500 uppercase mb-4 block">
+            <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Client Success
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif leading-tight">
               Results that speak for themselves
             </h2>
-            <p className="text-lg text-gray-600 mt-6">
+            <p className="text-lg text-muted-foreground mt-6">
               See how mid-market organizations like yours have transformed operations with NexDyne's AI and technology solutions.
             </p>
           </motion.div>
@@ -478,7 +478,7 @@ export default function AITechnologyConsulting() {
                 className="group cursor-pointer"
               >
                 <Link href={study.link}>
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl mb-4 bg-gray-100">
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl mb-4 bg-subtle">
                     <img 
                       src={study.image} 
                       alt={study.title}
@@ -491,13 +491,13 @@ export default function AITechnologyConsulting() {
                       </span>
                     </div>
                   </div>
-                  <h3 className="text-lg font-serif font-bold text-[#1A1A1A] group-hover:text-[#3DCD58] transition-colors leading-snug mb-2">
+                  <h3 className="text-lg font-serif font-bold text-charcoal group-hover:text-secondary transition-colors leading-snug mb-2">
                     {study.title}
                   </h3>
-                  <p className="text-sm text-gray-600 mb-2">
+                  <p className="text-sm text-muted-foreground mb-2">
                     {study.description}
                   </p>
-                  <span className="text-sm font-semibold text-[#1A1A1A]">
+                  <span className="text-sm font-semibold text-charcoal">
                     {study.metrics}
                   </span>
                 </Link>
@@ -514,7 +514,7 @@ export default function AITechnologyConsulting() {
             className="text-center mt-12"
           >
             <Link href="/case-studies">
-              <span className="inline-flex items-center gap-2 px-8 py-4 border-2 border-[#1A1A1A] text-[#1A1A1A] font-bold rounded-full cursor-pointer hover:bg-[#3DCD58] hover:border-[#3DCD58] hover:text-white transition-colors group">
+              <span className="inline-flex items-center gap-2 px-8 py-4 border-2 border-charcoal text-charcoal font-bold rounded-full cursor-pointer hover:bg-secondary hover:border-secondary hover:text-white transition-colors group">
                 View all case studies
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -534,13 +534,13 @@ export default function AITechnologyConsulting() {
             variants={fadeInUp}
             className="text-center max-w-3xl mx-auto mb-16"
           >
-            <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-gray-500 uppercase mb-4 block">
+            <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Foundational Services
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif leading-tight">
               The complete value chain
             </h2>
-            <p className="text-lg text-gray-600 mt-6">
+            <p className="text-lg text-muted-foreground mt-6">
               From foundational architecture and security to cutting-edge AI deployment and change management—we control every element of your transformation.
             </p>
           </motion.div>
@@ -560,17 +560,17 @@ export default function AITechnologyConsulting() {
                 className="group"
               >
                 <Link href={service.link}>
-                  <div className="bg-white rounded-xl p-8 h-full border border-gray-100 hover:shadow-lg hover:border-gray-200 transition-all cursor-pointer">
-                    <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-[#3DCD58] group-hover:text-white transition-colors">
-                      <service.icon className="w-6 h-6 text-[#1A1A1A] group-hover:text-white transition-colors" />
+                  <div className="bg-white rounded-xl p-8 h-full border border-border/50 hover:shadow-lg hover:border-border transition-all cursor-pointer">
+                    <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
+                      <service.icon className="w-6 h-6 text-charcoal group-hover:text-white transition-colors" />
                     </div>
-                    <h3 className="text-xl font-serif font-bold mb-3 text-[#1A1A1A]">
+                    <h3 className="text-xl font-serif font-bold mb-3 text-charcoal">
                       {service.title}
                     </h3>
-                    <p className="text-gray-600 leading-relaxed mb-4">
+                    <p className="text-muted-foreground leading-relaxed mb-4">
                       {service.description}
                     </p>
-                    <span className="inline-flex items-center gap-2 text-[#1A1A1A] font-medium text-sm group-hover:text-[#3DCD58] transition-colors">
+                    <span className="inline-flex items-center gap-2 text-charcoal font-medium text-sm group-hover:text-secondary transition-colors">
                       Learn more
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </span>
@@ -593,7 +593,7 @@ export default function AITechnologyConsulting() {
             variants={fadeInUp}
             className="text-center max-w-3xl mx-auto mb-16"
           >
-            <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-gray-500 uppercase mb-4 block">
+            <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Insights
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif leading-tight">
@@ -616,17 +616,17 @@ export default function AITechnologyConsulting() {
                 className="group cursor-pointer"
               >
                 <Link href={insight.link}>
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl mb-4 bg-gray-100">
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-xl mb-4 bg-subtle">
                     <img 
                       src={insight.image} 
                       alt={insight.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                   </div>
-                  <span className="text-xs font-bold tracking-wider text-gray-500 uppercase">
+                  <span className="text-xs font-bold tracking-wider text-muted-foreground uppercase">
                     {insight.type}
                   </span>
-                  <h3 className="text-base font-serif font-bold mt-2 text-[#1A1A1A] group-hover:text-[#3DCD58] transition-colors leading-snug">
+                  <h3 className="text-base font-serif font-bold mt-2 text-charcoal group-hover:text-secondary transition-colors leading-snug">
                     {insight.title}
                   </h3>
                 </Link>
@@ -643,7 +643,7 @@ export default function AITechnologyConsulting() {
             className="text-center mt-12"
           >
             <Link href="/insights">
-              <span className="inline-flex items-center gap-2 px-8 py-4 border-2 border-[#1A1A1A] text-[#1A1A1A] font-bold rounded-full cursor-pointer hover:bg-[#3DCD58] hover:border-[#3DCD58] hover:text-white transition-colors group">
+              <span className="inline-flex items-center gap-2 px-8 py-4 border-2 border-charcoal text-charcoal font-bold rounded-full cursor-pointer hover:bg-secondary hover:border-secondary hover:text-white transition-colors group">
                 See all insights
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -653,7 +653,7 @@ export default function AITechnologyConsulting() {
       </section>
 
       {/* CTA Section - Dark background instead of green */}
-      <section className="py-20 md:py-32 bg-[#1A1A1A]">
+      <section className="py-20 md:py-32 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div 
             initial="hidden"
@@ -670,13 +670,13 @@ export default function AITechnologyConsulting() {
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4">
               <Link href="/contact">
-                <span className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#1A1A1A] font-bold rounded-full cursor-pointer hover:bg-[#3DCD58] hover:text-white transition-colors group">
+                <span className="inline-flex items-center gap-2 px-8 py-4 bg-white text-charcoal font-bold rounded-full cursor-pointer hover:bg-secondary hover:text-white transition-colors group">
                   Start a conversation
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Link>
               <Link href="/capabilities">
-                <span className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white text-white font-bold rounded-full cursor-pointer hover:bg-white hover:text-[#1A1A1A] transition-colors">
+                <span className="inline-flex items-center gap-2 px-8 py-4 border-2 border-white text-white font-bold rounded-full cursor-pointer hover:bg-white hover:text-charcoal transition-colors">
                   Explore all capabilities
                 </span>
               </Link>

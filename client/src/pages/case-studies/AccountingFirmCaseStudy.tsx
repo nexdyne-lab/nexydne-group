@@ -82,7 +82,7 @@ const results = [
 
 export default function AccountingFirmCaseStudy() {
   return (
-    <div className="min-h-screen bg-white text-[#1A1A1A] font-sans">
+    <div className="min-h-screen bg-white text-charcoal font-sans">
       <SEO 
         title="Regional Accounting Firm Automates Document Processing | Case Study" 
         description="How a 120-employee accounting firm deployed ProcessFlow AI to reduce manual document processing by 70% and transform their tax season operations."
@@ -163,13 +163,13 @@ export default function AccountingFirmCaseStudy() {
               viewport={{ once: true }}
               variants={staggerContainer}
             >
-              <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-slate-500 uppercase mb-4 block">
+              <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
                 The Challenge
               </motion.span>
-              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-8">
+              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-8">
                 Drowning in documents during tax season
               </motion.h2>
-              <motion.div variants={fadeInUp} className="prose prose-lg text-slate-600 leading-relaxed">
+              <motion.div variants={fadeInUp} className="prose prose-lg text-muted-foreground leading-relaxed">
                 <p>
                   For two decades, this regional accounting firm had built a reputation for personalized service and deep client relationships. But as their client base grew to over 800 businesses and high-net-worth individuals, their manual processes couldn't keep pace.
                 </p>
@@ -195,13 +195,13 @@ export default function AccountingFirmCaseStudy() {
               viewport={{ once: true }}
               variants={staggerContainer}
             >
-              <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-slate-500 uppercase mb-4 block">
+              <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
                 The Solution
               </motion.span>
-              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-8">
+              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-8">
                 ProcessFlow AI: From chaos to clarity
               </motion.h2>
-              <motion.div variants={fadeInUp} className="prose prose-lg text-slate-600 leading-relaxed">
+              <motion.div variants={fadeInUp} className="prose prose-lg text-muted-foreground leading-relaxed">
                 <p>
                   NexDyne deployed ProcessFlow AI to transform the firm's document handling from a manual, error-prone process into an intelligent, automated workflow. The solution combined AI-powered document recognition with smart routing and real-time tracking.
                 </p>
@@ -218,7 +218,7 @@ export default function AccountingFirmCaseStudy() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-xl font-serif font-bold text-slate-900 mb-8 text-center"
+              className="text-xl font-serif font-bold text-charcoal mb-8 text-center"
             >
               Implementation Timeline
             </motion.h3>
@@ -233,11 +233,11 @@ export default function AccountingFirmCaseStudy() {
                   className="flex gap-6"
                 >
                   <div className="flex-shrink-0 w-24">
-                    <div className="text-sm font-bold text-slate-900">{item.phase}</div>
-                    <div className="text-xs text-slate-500">{item.duration}</div>
+                    <div className="text-sm font-bold text-charcoal">{item.phase}</div>
+                    <div className="text-xs text-muted-foreground">{item.duration}</div>
                   </div>
                   <div className="flex-1 pb-6 border-l-2 border-slate-200 pl-6">
-                    <p className="text-slate-600 leading-relaxed">{item.description}</p>
+                    <p className="text-muted-foreground leading-relaxed">{item.description}</p>
                   </div>
                 </motion.div>
               ))}
@@ -257,13 +257,13 @@ export default function AccountingFirmCaseStudy() {
               variants={staggerContainer}
               className="mb-12"
             >
-              <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-slate-500 uppercase mb-4 block">
+              <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
                 The Results
               </motion.span>
-              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-6">
+              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-6">
                 Transforming tax season from crisis to confidence
               </motion.h2>
-              <motion.p variants={fadeInUp} className="text-lg text-slate-600 leading-relaxed">
+              <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
                 Within eight weeks of deployment, the firm experienced measurable improvements across every dimension of their document operations.
               </motion.p>
             </motion.div>
@@ -278,10 +278,10 @@ export default function AccountingFirmCaseStudy() {
                   transition={{ delay: i * 0.1 }}
                   className="bg-slate-50 rounded-xl p-6"
                 >
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">{result.category}</h3>
+                  <h3 className="text-lg font-bold text-charcoal mb-4">{result.category}</h3>
                   <ul className="space-y-3">
                     {result.items.map((item, j) => (
-                      <li key={j} className="text-sm text-slate-600 leading-relaxed pl-4 border-l-2 border-slate-300">
+                      <li key={j} className="text-sm text-muted-foreground leading-relaxed pl-4 border-l-2 border-slate-300">
                         {item}
                       </li>
                     ))}
@@ -329,13 +329,13 @@ export default function AccountingFirmCaseStudy() {
               viewport={{ once: true }}
               variants={staggerContainer}
             >
-              <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-slate-500 uppercase mb-4 block">
+              <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
                 Looking Forward
               </motion.span>
-              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-8">
+              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-8">
                 Building on success
               </motion.h2>
-              <motion.div variants={fadeInUp} className="prose prose-lg text-slate-600 leading-relaxed">
+              <motion.div variants={fadeInUp} className="prose prose-lg text-muted-foreground leading-relaxed">
                 <p>
                   With document processing transformed, the firm is now exploring additional automation opportunities. NexDyne is working with their leadership to implement intelligent workload balancing during peak periods and automated client communication workflows.
                 </p>
@@ -377,7 +377,7 @@ export default function AccountingFirmCaseStudy() {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Link href="/contact">
-                <span className="inline-flex items-center px-8 py-4 bg-white text-slate-900 font-semibold rounded-full hover:bg-gray-100 transition-all cursor-pointer group">
+                <span className="inline-flex items-center px-8 py-4 bg-white text-charcoal font-semibold rounded-full hover:bg-subtle transition-all cursor-pointer group">
                   Schedule a Consultation
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
@@ -396,26 +396,26 @@ export default function AccountingFirmCaseStudy() {
       <section className="py-20 md:py-24 bg-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-xl font-serif font-bold text-slate-900 mb-8">Related Case Studies</h3>
+            <h3 className="text-xl font-serif font-bold text-charcoal mb-8">Related Case Studies</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <Link href="/capabilities/ai-technology-consulting/case-study/credit-union">
                 <div className="group p-6 border border-slate-200 rounded-xl hover:border-slate-300 hover:shadow-sm transition-all cursor-pointer">
-                  <span className="text-xs font-medium tracking-wider text-slate-500 uppercase">Financial Services</span>
-                  <h4 className="text-lg font-serif font-bold text-slate-900 mt-2 group-hover:text-[#3DCD58] transition-colors">
+                  <span className="text-xs font-medium tracking-wider text-muted-foreground uppercase">Financial Services</span>
+                  <h4 className="text-lg font-serif font-bold text-charcoal mt-2 group-hover:text-secondary transition-colors">
                     Credit union transforms member services with AI-powered analytics
                   </h4>
-                  <span className="inline-flex items-center text-sm text-slate-600 mt-4 group-hover:text-[#3DCD58] transition-colors">
+                  <span className="inline-flex items-center text-sm text-muted-foreground mt-4 group-hover:text-secondary transition-colors">
                     Read case study <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </Link>
               <Link href="/capabilities/ai-technology-consulting/case-study/medical-practice">
                 <div className="group p-6 border border-slate-200 rounded-xl hover:border-slate-300 hover:shadow-sm transition-all cursor-pointer">
-                  <span className="text-xs font-medium tracking-wider text-slate-500 uppercase">Healthcare</span>
-                  <h4 className="text-lg font-serif font-bold text-slate-900 mt-2 group-hover:text-[#3DCD58] transition-colors">
+                  <span className="text-xs font-medium tracking-wider text-muted-foreground uppercase">Healthcare</span>
+                  <h4 className="text-lg font-serif font-bold text-charcoal mt-2 group-hover:text-secondary transition-colors">
                     Medical practice network deploys predictive scheduling to optimize patient flow
                   </h4>
-                  <span className="inline-flex items-center text-sm text-slate-600 mt-4 group-hover:text-[#3DCD58] transition-colors">
+                  <span className="inline-flex items-center text-sm text-muted-foreground mt-4 group-hover:text-secondary transition-colors">
                     Read case study <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>

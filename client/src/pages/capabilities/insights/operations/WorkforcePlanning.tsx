@@ -25,21 +25,21 @@ export default function WorkforcePlanning() {
         },
       ]}
     >
-      <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+      <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
         Economic uncertainty makes workforce planning challenging. Companies must balance cost control with capability preservation. This guide provides strategies for navigating workforce decisions in uncertain times.
       </p>
 
-      <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
         The Workforce Planning Challenge
       </h2>
-      <p className="text-gray-700 mb-6 leading-relaxed">
+      <p className="text-charcoal/80 mb-6 leading-relaxed">
         In uncertain economies, workforce decisions carry high stakes. Cutting too deep damages capability; maintaining excess capacity strains finances. The key is developing flexible workforce models.
       </p>
 
-      <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
         Key Takeaways
       </h2>
-      <ul className="list-disc pl-6 text-gray-700 space-y-3 mb-8">
+      <ul className="list-disc pl-6 text-charcoal/80 space-y-3 mb-8">
         <li>Workforce planning requires balancing cost and capability</li>
         <li>Flexible workforce models provide optionality</li>
         <li>Skills-based planning improves decision quality</li>

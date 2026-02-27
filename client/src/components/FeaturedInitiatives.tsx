@@ -14,8 +14,8 @@ export function FeaturedInitiatives() {
           transition={{ duration: 0.6 }}
           className="mb-8 sm:mb-12 md:mb-8 sm:mb-12 md:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1] text-slate-900">
-            Our <span className="text-[#00d4ff]">Initiatives</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1] text-charcoal">
+            Our <span className="text-secondary">Initiatives</span>
           </h2>
         </motion.div>
 
@@ -34,7 +34,7 @@ export function FeaturedInitiatives() {
               alt="The next generation of entrepreneurialism - Business leaders collaborating on digital transformation" 
               className="absolute inset-0 w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0e3d]/95 via-[#0a0e3d]/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-base/95 via-base/60 to-transparent" />
             
             {/* Hero Text Overlay */}
             <div className="absolute bottom-0 left-0 right-0 p-12 md:p-16">
@@ -75,16 +75,16 @@ export function FeaturedInitiatives() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="group cursor-pointer bg-white p-4 sm:p-6 md:p-4 sm:p-6 md:p-8 hover:shadow-xl transition-all duration-300"
           >
-            <h3 className="text-2xl font-bold text-[#0a0e3d] mb-2">
+            <h3 className="text-2xl font-bold text-base mb-2">
               Automation Readiness Index™
             </h3>
-            <p className="text-sm text-[#00d4ff] font-semibold uppercase tracking-wider mb-4">
+            <p className="text-sm text-secondary font-semibold uppercase tracking-wider mb-4">
               Annual Research Study
             </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-6">
+            <p className="text-muted-foreground text-base leading-relaxed mb-6">
               Our annual benchmark study measures operational efficiency across industries, providing data-driven insights on where intelligent automation delivers the highest ROI.
             </p>
-            <div className="flex items-center text-[#00d4ff] font-semibold group-hover:gap-3 gap-2 transition-all">
+            <div className="flex items-center text-secondary font-semibold group-hover:gap-3 gap-2 transition-all">
               <span>Learn more</span>
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-2 transition-transform" />
             </div>
@@ -98,16 +98,16 @@ export function FeaturedInitiatives() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="group cursor-pointer bg-white p-4 sm:p-6 md:p-4 sm:p-6 md:p-8 hover:shadow-xl transition-all duration-300"
           >
-            <h3 className="text-2xl font-bold text-[#0a0e3d] mb-2">
+            <h3 className="text-2xl font-bold text-base mb-2">
               Connected Systems Framework
             </h3>
-            <p className="text-sm text-[#00d4ff] font-semibold uppercase tracking-wider mb-4">
+            <p className="text-sm text-secondary font-semibold uppercase tracking-wider mb-4">
               Open-Source Methodology
             </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-6">
+            <p className="text-muted-foreground text-base leading-relaxed mb-6">
               An open-source toolkit for evaluating integration architecture. Technical leaders use our framework to assess tech stacks, identify gaps, and eliminate data silos.
             </p>
-            <div className="flex items-center text-[#00d4ff] font-semibold group-hover:gap-3 gap-2 transition-all">
+            <div className="flex items-center text-secondary font-semibold group-hover:gap-3 gap-2 transition-all">
               <span>Learn more</span>
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-2 transition-transform" />
             </div>
@@ -121,16 +121,16 @@ export function FeaturedInitiatives() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="group cursor-pointer bg-white p-4 sm:p-6 md:p-4 sm:p-6 md:p-8 hover:shadow-xl transition-all duration-300"
           >
-            <h3 className="text-2xl font-bold text-[#0a0e3d] mb-2">
+            <h3 className="text-2xl font-bold text-base mb-2">
               AI Implementation Lab
             </h3>
-            <p className="text-sm text-[#00d4ff] font-semibold uppercase tracking-wider mb-4">
+            <p className="text-sm text-secondary font-semibold uppercase tracking-wider mb-4">
               Executive Workshop Series
             </p>
-            <p className="text-slate-600 text-base leading-relaxed mb-6">
+            <p className="text-muted-foreground text-base leading-relaxed mb-6">
               Hands-on workshops where operations leaders explore practical AI applications through real-world scenarios—from intelligent document processing to predictive analytics.
             </p>
-            <div className="flex items-center text-[#00d4ff] font-semibold group-hover:gap-3 gap-2 transition-all">
+            <div className="flex items-center text-secondary font-semibold group-hover:gap-3 gap-2 transition-all">
               <span>Learn more</span>
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-2 transition-transform" />
             </div>

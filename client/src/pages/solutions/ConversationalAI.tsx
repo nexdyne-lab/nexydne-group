@@ -24,7 +24,7 @@ export default function ConversationalAI() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#2D5BFF] via-[#4169FF] to-[#5B7FFF] text-white overflow-hidden">
+      <section className="relative bg-gradient-to-r from-primary via-primary to-secondary text-white overflow-hidden">
         <div className="container py-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -107,7 +107,7 @@ export default function ConversationalAI() {
                 <div className="flex-1">
                   <h3 className="text-xl font-bold mb-3">Do you want to know more?</h3>
                   <p className="text-sm text-muted-foreground mb-4">Ask Michael Rodriguez</p>
-                  <Button>Contact Expert</Button>
+                  <Button className="bg-primary hover:bg-primary/90 text-white transition-colors duration-200 ease-in-out">Contact Expert</Button>
                 </div>
               </div>
             </Card>
@@ -142,7 +142,7 @@ export default function ConversationalAI() {
       {/* Quote Section */}
       <section className="py-20 bg-background">
         <div className="container max-w-4xl">
-          <blockquote className="text-2xl font-serif italic text-center mb-8 text-[#6B1F3D]">
+          <blockquote className="text-2xl font-serif italic text-center mb-8 text-base">
             "Conversational AI doesn't just answer questions—it anticipates needs, resolves issues proactively, and turns support interactions into opportunities for engagement. Organizations that deploy intelligent conversational systems reduce costs while simultaneously improving customer satisfaction. It's rare to find technology that delivers both efficiency and experience gains."
           </blockquote>
           <p className="text-center text-muted-foreground">
@@ -189,8 +189,8 @@ export default function ConversationalAI() {
               <p className="text-lg text-muted-foreground mb-2">Michael Rodriguez</p>
               <p className="text-muted-foreground mb-6">Head of AI Solutions</p>
               <div className="flex gap-4">
-                <Button size="lg">Get in touch</Button>
-                <Button size="lg" variant="outline">Schedule a meeting</Button>
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white transition-colors duration-200 ease-in-out">Get in touch</Button>
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary transition-colors duration-200 ease-in-out">Schedule a meeting</Button>
               </div>
             </div>
           </div>
@@ -245,7 +245,7 @@ export default function ConversationalAI() {
               <p className="text-lg text-muted-foreground mb-8">
                 Our conversational AI solutions leverage cutting-edge natural language processing, machine learning, and continuous improvement frameworks—while maintaining the flexibility to evolve as customer expectations and AI capabilities advance. With NEXDYNE, conversational AI becomes your competitive advantage.
               </p>
-              <Button size="lg">Get in touch</Button>
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white transition-colors duration-200 ease-in-out">Get in touch</Button>
             </div>
           </div>
         </div>

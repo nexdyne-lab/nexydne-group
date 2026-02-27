@@ -9,12 +9,12 @@ import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 
 const INDUSTRIES = [
-  { id: "fintech", name: "FinTech & Financial Services", multiplier: 0.25, color: "#00d4ff" },
-  { id: "retail", name: "Retail & E-commerce", multiplier: 0.18, color: "#a855f7" },
-  { id: "logistics", name: "Logistics & Supply Chain", multiplier: 0.15, color: "#3b82f6" },
-  { id: "healthcare", name: "Healthcare & Life Sciences", multiplier: 0.22, color: "#ef4444" },
+  { id: "fintech", name: "FinTech & Financial Services", multiplier: 0.25, color: 'var(--color-secondary)' },
+  { id: "retail", name: "Retail & E-commerce", multiplier: 0.18, color: 'var(--color-primary)' },
+  { id: "logistics", name: "Logistics & Supply Chain", multiplier: 0.15, color: 'var(--color-primary)' },
+  { id: "healthcare", name: "Healthcare & Life Sciences", multiplier: 0.22, color: 'var(--color-destructive)' },
   { id: "energy", name: "Energy & Sustainability", multiplier: 0.20, color: "#eab308" },
-  { id: "manufacturing", name: "Manufacturing & IoT", multiplier: 0.16, color: "#06b6d4" },
+  { id: "manufacturing", name: "Manufacturing & IoT", multiplier: 0.16, color: 'var(--color-secondary)' },
 ];
 
 export default function GrowthSimulator() {
@@ -30,7 +30,7 @@ export default function GrowthSimulator() {
     try {
       const canvas = await html2canvas(resultsRef.current, {
         scale: 2,
-        backgroundColor: "#0a0e3d",
+        backgroundColor: 'var(--color-base)',
       });
       
       const imgData = canvas.toDataURL("image/png");
@@ -94,25 +94,25 @@ export default function GrowthSimulator() {
   const percentGrowth = Math.round((totalGrowth / revenue) * 100);
 
   return (
-    <div className="min-h-screen bg-[#0a0e3d] text-white font-sans selection:bg-[#00d4ff] selection:text-[#0a0e3d]">
+    <div className="min-h-screen bg-base text-white font-sans selection:bg-secondary selection:text-base">
       <Navigation />
 
       <section className="pt-32 pb-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0e3d] via-[#0a0e3d] to-[#050829]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-base via-base to-base" />
         
         <div className="container px-4 md:px-12 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8">
-              <BarChart3 className="w-4 h-4 text-[#00d4ff]" />
-              <span className="text-sm font-medium text-[#00d4ff] uppercase tracking-wider">Growth Simulator</span>
+              <BarChart3 className="w-4 h-4 text-secondary" />
+              <span className="text-sm font-medium text-secondary uppercase tracking-wider">Growth Simulator</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-3">
               Visualize your <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00d4ff] to-blue-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-blue-400">
                 venture potential.
               </span>
             </h1>
-            <p className="text-xl text-gray-300">
+            <p className="text-xl text-muted-foreground/50">
               See how launching a new digital venture can accelerate your revenue growth beyond organic trajectories.
             </p>
           </div>
@@ -121,22 +121,22 @@ export default function GrowthSimulator() {
             {/* Controls */}
             <div className="lg:col-span-4 bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
               <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
-                <RefreshCw className="w-5 h-5 text-[#00d4ff]" />
+                <RefreshCw className="w-5 h-5 text-secondary" />
                 Input Parameters
               </h3>
               
               <div className="space-y-8">
                 <div>
-                  <label className="block text-sm font-medium text-gray-400 mb-3">
+                  <label className="block text-sm font-medium text-muted-foreground/70 mb-3">
                     Current Annual Revenue ($M)
                   </label>
                   <div className="relative">
-                    <DollarSign className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500" />
+                    <DollarSign className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
                     <input 
                       type="number" 
                       value={revenue}
                       onChange={(e) => setRevenue(Number(e.target.value))}
-                      className="w-full bg-[#0a0e3d] border border-white/20 rounded-xl py-4 pl-12 pr-4 text-white font-bold text-lg focus:outline-none focus:border-[#00d4ff] transition-colors"
+                      className="w-full bg-base border border-white/20 rounded-xl py-4 pl-12 pr-4 text-white font-bold text-lg focus:outline-none focus:border-secondary transition-colors"
                     />
                   </div>
                   <input 
@@ -146,12 +146,12 @@ export default function GrowthSimulator() {
                     step="10"
                     value={revenue}
                     onChange={(e) => setRevenue(Number(e.target.value))}
-                    className="w-full mt-4 accent-[#00d4ff]"
+                    className="w-full mt-4 accent-secondary"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-400 mb-3">
+                  <label className="block text-sm font-medium text-muted-foreground/70 mb-3">
                     Target Industry
                   </label>
                   <div className="grid grid-cols-1 gap-3">
@@ -161,8 +161,8 @@ export default function GrowthSimulator() {
                         onClick={() => setIndustry(ind)}
                         className={`px-4 py-3 rounded-xl text-left text-sm font-medium transition-all border ${
                           industry.id === ind.id 
-                            ? "bg-[#00d4ff]/10 border-[#00d4ff] text-[#00d4ff]" 
-                            : "bg-[#0a0e3d] border-white/10 text-gray-400 hover:border-white/30"
+                            ? "bg-secondary/10 border-secondary text-secondary" 
+                            : "bg-base border-white/10 text-muted-foreground/70 hover:border-white/30"
                         }`}
                       >
                         {ind.name}
@@ -174,7 +174,7 @@ export default function GrowthSimulator() {
                 <button 
                   onClick={handleSimulate}
                   disabled={isSimulating}
-                  className="w-full py-4 bg-[#00d4ff] text-[#0a0e3d] font-bold rounded-xl hover:bg-white transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full py-4 bg-secondary text-base font-bold rounded-xl hover:bg-white transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSimulating ? (
                     <>
@@ -197,22 +197,22 @@ export default function GrowthSimulator() {
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  className="bg-[#0a0e3d] border border-white/10 rounded-2xl p-8 h-full relative"
+                  className="bg-base border border-white/10 rounded-2xl p-8 h-full relative"
                 >
-                  <div ref={resultsRef} className="bg-[#0a0e3d] p-4 rounded-xl">
+                  <div ref={resultsRef} className="bg-base p-4 rounded-xl">
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-6">
                       <div>
                         <h3 className="text-2xl font-bold mb-1">5-Year Growth Projection</h3>
-                        <p className="text-gray-400 text-sm">Based on {industry.name} benchmarks</p>
+                        <p className="text-muted-foreground/70 text-sm">Based on {industry.name} benchmarks</p>
                       </div>
                       <div className="flex gap-6">
                         <div className="text-right">
-                          <div className="text-sm text-gray-400 uppercase tracking-wider mb-1">Total Revenue</div>
+                          <div className="text-sm text-muted-foreground/70 uppercase tracking-wider mb-1">Total Revenue</div>
                           <div className="text-3xl font-bold text-white">${finalYear.total}M</div>
                         </div>
                         <div className="text-right">
-                          <div className="text-sm text-gray-400 uppercase tracking-wider mb-1">Net Growth</div>
-                          <div className="text-3xl font-bold text-[#00d4ff]">+{percentGrowth}%</div>
+                          <div className="text-sm text-muted-foreground/70 uppercase tracking-wider mb-1">Net Growth</div>
+                          <div className="text-3xl font-bold text-secondary">+{percentGrowth}%</div>
                         </div>
                       </div>
                     </div>
@@ -236,7 +236,7 @@ export default function GrowthSimulator() {
                             tickFormatter={(value) => `$${value}M`}
                           />
                           <Tooltip 
-                            contentStyle={{ backgroundColor: '#050829', borderColor: 'rgba(255,255,255,0.1)', borderRadius: '8px' }}
+                            contentStyle={{ backgroundColor: 'var(--color-base)', borderColor: 'rgba(255,255,255,0.1)', borderRadius: '8px' }}
                             itemStyle={{ color: '#fff' }}
                             cursor={{ fill: 'rgba(255,255,255,0.05)' }}
                           />
@@ -249,10 +249,10 @@ export default function GrowthSimulator() {
 
                     <div className="mt-8 p-6 bg-white/5 rounded-xl border border-white/10">
                       <h4 className="font-bold text-lg mb-2 flex items-center gap-2">
-                        <TrendingUp className="w-5 h-5 text-[#00d4ff]" />
+                        <TrendingUp className="w-5 h-5 text-secondary" />
                         Analysis
                       </h4>
-                      <p className="text-gray-300 leading-relaxed">
+                      <p className="text-muted-foreground/50 leading-relaxed">
                         By launching a new venture in <strong>{industry.name}</strong>, you could potentially add <strong>${Math.round(finalYear["New Venture"])}M</strong> in annual revenue by Year 5. This represents a diversification of your portfolio, reducing reliance on core business lines while capturing higher-growth market segments.
                       </p>
                     </div>
@@ -271,10 +271,10 @@ export default function GrowthSimulator() {
               ) : (
                 <div className="h-full min-h-[500px] bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center p-8 text-center border-dashed">
                   <div className="w-20 h-20 bg-white/5 rounded-full flex items-center justify-center mb-6">
-                    <PieChart className="w-10 h-10 text-gray-500" />
+                    <PieChart className="w-10 h-10 text-muted-foreground" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-300 mb-2">Ready to Simulate</h3>
-                  <p className="text-gray-500 max-w-md">
+                  <h3 className="text-xl font-bold text-muted-foreground/50 mb-2">Ready to Simulate</h3>
+                  <p className="text-muted-foreground max-w-md">
                     Enter your current revenue and select a target industry to visualize the potential impact of a new venture build.
                   </p>
                 </div>

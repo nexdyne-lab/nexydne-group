@@ -47,7 +47,7 @@ export default function DataStrategy() {
               <div className="w-48 h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full mb-6 flex items-center justify-center">
                 <div className="w-40 h-40 bg-gradient-to-br from-blue-200 to-blue-300 rounded-full"></div>
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Want to know more?</h3>
+              <h3 className="text-2xl font-bold text-charcoal mb-4">Want to know more?</h3>
               <button className="px-8 py-3 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-colors font-semibold">
                 Ask Martijn Voorveld
               </button>
@@ -55,7 +55,7 @@ export default function DataStrategy() {
 
             {/* Benefits - Right Side */}
             <div>
-              <h2 className="text-4xl font-bold text-slate-900 mb-12">The benefits</h2>
+              <h2 className="text-4xl font-bold text-charcoal mb-12">The benefits</h2>
               
               <div className="space-y-8">
                 {/* Benefit 1 */}
@@ -66,8 +66,8 @@ export default function DataStrategy() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">ROI-focused roadmaps</h3>
-                    <p className="text-slate-700">
+                    <h3 className="text-xl font-bold text-charcoal mb-2">ROI-focused roadmaps</h3>
+                    <p className="text-charcoal/80">
                       We prioritize use cases by business impact, not technical complexity. Quick wins in quarters one and two fund long-term infrastructure investments.
                     </p>
                   </div>
@@ -81,8 +81,8 @@ export default function DataStrategy() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">Maturity assessment that drives action</h3>
-                    <p className="text-slate-700">
+                    <h3 className="text-xl font-bold text-charcoal mb-2">Maturity assessment that drives action</h3>
+                    <p className="text-charcoal/80">
                       Our Data Maturity Framework evaluates five dimensions—infrastructure, governance, skills, culture, and use cases—to identify capability gaps and prioritize investments.
                     </p>
                   </div>
@@ -96,8 +96,8 @@ export default function DataStrategy() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">Cross-functional alignment</h3>
-                    <p className="text-slate-700">
+                    <h3 className="text-xl font-bold text-charcoal mb-2">Cross-functional alignment</h3>
+                    <p className="text-charcoal/80">
                       Data initiatives fail when IT builds infrastructure nobody uses. We facilitate workshops with business stakeholders to ensure strategy reflects operational reality.
                     </p>
                   </div>
@@ -111,8 +111,8 @@ export default function DataStrategy() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">Knowledge transfer, not dependency</h3>
-                    <p className="text-slate-700">
+                    <h3 className="text-xl font-bold text-charcoal mb-2">Knowledge transfer, not dependency</h3>
+                    <p className="text-charcoal/80">
                       Strategy documents gather dust. We train your team to execute the roadmap, make trade-off decisions, and evolve the strategy as business needs change.
                     </p>
                   </div>
@@ -126,20 +126,20 @@ export default function DataStrategy() {
       {/* Foundation Section */}
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-8">
+          <h2 className="text-4xl font-bold text-charcoal mb-8">
             Data strategy: from ambition to execution
           </h2>
           
           <div className="prose prose-lg max-w-none">
-            <p className="text-lg text-slate-700 mb-6">
+            <p className="text-lg text-charcoal/80 mb-6">
               Every organization wants to be "data-driven," but most lack a concrete plan to get there. Teams collect data in silos, analytics tools proliferate without governance, and executives can't get answers to basic questions about customer behavior or operational efficiency.
             </p>
             
-            <p className="text-lg text-slate-700 mb-6">
+            <p className="text-lg text-charcoal/80 mb-6">
               NEXDYNE's Data Strategy Sprint delivers an executable roadmap in 4-8 weeks. We assess your current state—data sources, infrastructure, skills, governance—identify high-value use cases aligned with business priorities, and sequence initiatives to deliver quick wins while building long-term capability.
             </p>
 
-            <p className="text-lg text-slate-700 mb-8">
+            <p className="text-lg text-charcoal/80 mb-8">
               The output isn't a 100-page deck. It's a prioritized backlog with technical requirements, resource estimates, and success metrics for each initiative. Your team knows what to build, in what order, and how to measure progress.
             </p>
 
@@ -147,7 +147,7 @@ export default function DataStrategy() {
               <p className="text-xl text-purple-900 font-medium italic mb-4">
                 "Organizations that treat data as a strategic asset outperform competitors by 20% in profitability. The gap isn't technology—it's having a plan to extract value systematically."
               </p>
-              <p className="text-slate-700 font-semibold">
+              <p className="text-charcoal/80 font-semibold">
                 Martijn Voorveld, Commercial Lead, NEXDYNE
               </p>
             </blockquote>
@@ -158,53 +158,53 @@ export default function DataStrategy() {
       {/* Methodology Section */}
       <section className="py-20 bg-white">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-8">
+          <h2 className="text-4xl font-bold text-charcoal mb-8">
             Five-dimension maturity framework
           </h2>
           
           <div className="prose prose-lg max-w-none">
-            <p className="text-lg text-slate-700 mb-6">
+            <p className="text-lg text-charcoal/80 mb-6">
               Data maturity isn't just about technology. We evaluate five dimensions that determine whether analytics initiatives succeed or stall:
             </p>
 
             <div className="space-y-6 mb-8">
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">1. Infrastructure & Architecture</h3>
-                <p className="text-slate-700">
+                <h3 className="text-xl font-bold text-charcoal mb-2">1. Infrastructure & Architecture</h3>
+                <p className="text-charcoal/80">
                   Can your systems ingest, transform, and serve data at the volume and speed required? We assess data warehouses, pipelines, APIs, and integration patterns.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">2. Data Availability & Quality</h3>
-                <p className="text-slate-700">
+                <h3 className="text-xl font-bold text-charcoal mb-2">2. Data Availability & Quality</h3>
+                <p className="text-charcoal/80">
                   What data exists, where does it live, and how reliable is it? We map data sources, identify gaps, and quantify quality issues blocking analytics use cases.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">3. Governance & Compliance</h3>
-                <p className="text-slate-700">
+                <h3 className="text-xl font-bold text-charcoal mb-2">3. Governance & Compliance</h3>
+                <p className="text-charcoal/80">
                   Who owns data, who can access it, and how is privacy protected? We design access controls, data catalogs, and compliance frameworks that balance security with usability.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">4. Skills & Organization</h3>
-                <p className="text-slate-700">
+                <h3 className="text-xl font-bold text-charcoal mb-2">4. Skills & Organization</h3>
+                <p className="text-charcoal/80">
                   Does your team have the technical and analytical skills to execute? We assess capability gaps and recommend hiring, training, or augmentation strategies.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">5. Culture & Adoption</h3>
-                <p className="text-slate-700">
+                <h3 className="text-xl font-bold text-charcoal mb-2">5. Culture & Adoption</h3>
+                <p className="text-charcoal/80">
                   Do business users trust data and incorporate insights into decisions? We identify organizational barriers and design change management approaches to drive adoption.
                 </p>
               </div>
             </div>
 
-            <p className="text-lg text-slate-700">
+            <p className="text-lg text-charcoal/80">
               The framework produces a maturity score for each dimension and highlights dependencies. You can't build predictive models (dimension 1) if data quality is poor (dimension 2). The roadmap sequences initiatives to address foundational gaps first.
             </p>
           </div>
@@ -220,15 +220,15 @@ export default function DataStrategy() {
             </div>
             
             <div className="flex-1">
-              <h2 className="text-3xl font-bold text-slate-900 mb-4">Want to know more?</h2>
-              <p className="text-lg text-slate-700 mb-2 font-semibold">Martijn Voorveld</p>
-              <p className="text-slate-600 mb-6">Senior Sales Manager</p>
+              <h2 className="text-3xl font-bold text-charcoal mb-4">Want to know more?</h2>
+              <p className="text-lg text-charcoal/80 mb-2 font-semibold">Martijn Voorveld</p>
+              <p className="text-muted-foreground mb-6">Senior Sales Manager</p>
               
               <div className="flex flex-wrap gap-4">
                 <button className="px-8 py-3 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-colors font-semibold">
                   Get in touch
                 </button>
-                <button className="px-8 py-3 border-2 border-slate-900 text-slate-900 rounded-full hover:bg-slate-900 hover:text-white transition-colors font-semibold">
+                <button className="px-8 py-3 border-2 border-slate-900 text-charcoal rounded-full hover:bg-slate-900 hover:text-white transition-colors font-semibold">
                   Schedule a meeting
                 </button>
               </div>
@@ -241,41 +241,41 @@ export default function DataStrategy() {
       <section className="py-20 bg-white">
         <div className="container">
           <div className="mb-12">
-            <span className="text-sm text-slate-600 uppercase tracking-wide font-semibold">PARTNERS</span>
-            <h2 className="text-4xl font-bold text-slate-900 mt-2 mb-4">Agentic AI</h2>
+            <span className="text-sm text-muted-foreground uppercase tracking-wide font-semibold">PARTNERS</span>
+            <h2 className="text-4xl font-bold text-charcoal mt-2 mb-4">Agentic AI</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             <div className="border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-shadow bg-white">
               <h3 className="text-xl font-bold text-purple-900 mb-3">Glean</h3>
-              <p className="text-slate-700">
+              <p className="text-charcoal/80">
                 Enterprise AI search platform that connects all your company's knowledge.
               </p>
             </div>
 
             <div className="border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-shadow bg-white">
               <h3 className="text-xl font-bold text-purple-900 mb-3">Weaviate</h3>
-              <p className="text-slate-700">
+              <p className="text-charcoal/80">
                 Open-source vector database powering semantic search and AI applications.
               </p>
             </div>
 
             <div className="border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-shadow bg-white">
               <h3 className="text-xl font-bold text-purple-900 mb-3">LangChain</h3>
-              <p className="text-slate-700">
+              <p className="text-charcoal/80">
                 Framework for building LLM-powered applications with intelligent workflows.
               </p>
             </div>
 
             <div className="border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-shadow bg-white">
               <h3 className="text-xl font-bold text-purple-900 mb-3">N8N</h3>
-              <p className="text-slate-700">
+              <p className="text-charcoal/80">
                 Workflow automation platform orchestrating data flows between systems.
               </p>
             </div>
           </div>
 
-          <button className="px-6 py-2 border-2 border-slate-900 text-slate-900 rounded-full hover:bg-slate-900 hover:text-white transition-colors font-semibold">
+          <button className="px-6 py-2 border-2 border-slate-900 text-charcoal rounded-full hover:bg-slate-900 hover:text-white transition-colors font-semibold">
             All partners
           </button>
         </div>
@@ -286,15 +286,15 @@ export default function DataStrategy() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="bg-slate-200 rounded-lg h-96 flex items-center justify-center">
-              <div className="text-slate-400 text-lg">Image placeholder</div>
+              <div className="text-muted-foreground/70 text-lg">Image placeholder</div>
             </div>
             
             <div>
-              <h2 className="text-4xl font-bold text-slate-900 mb-6">Why NEXDYNE</h2>
-              <p className="text-lg text-slate-700 mb-6">
+              <h2 className="text-4xl font-bold text-charcoal mb-6">Why NEXDYNE</h2>
+              <p className="text-lg text-charcoal/80 mb-6">
                 Most consultancies deliver strategy documents that sit on shelves. NEXDYNE builds the first use case during the engagement to prove the roadmap works. You see results in weeks, not quarters.
               </p>
-              <p className="text-lg text-slate-700 mb-8">
+              <p className="text-lg text-charcoal/80 mb-8">
                 We're integrators, not vendors. We recommend best-of-breed tools—cloud platforms, BI tools, ML frameworks—based on your requirements, not partnership incentives. When the engagement ends, you own the infrastructure and the knowledge to evolve it.
               </p>
               <button className="px-8 py-3 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-colors font-semibold">
@@ -309,9 +309,9 @@ export default function DataStrategy() {
       <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
         <div className="container">
           <div className="mb-12">
-            <span className="text-sm text-slate-600 uppercase tracking-wide font-semibold">CASES</span>
-            <h2 className="text-4xl font-bold text-slate-900 mt-2 mb-4">Cases we love talking about</h2>
-            <p className="text-lg text-slate-700 max-w-2xl">
+            <span className="text-sm text-muted-foreground uppercase tracking-wide font-semibold">CASES</span>
+            <h2 className="text-4xl font-bold text-charcoal mt-2 mb-4">Cases we love talking about</h2>
+            <p className="text-lg text-charcoal/80 max-w-2xl">
               Heard of a business that transforms unique business challenges into exceptional outcomes? That'd be us. Check out these inspiring cases.
             </p>
           </div>
@@ -321,10 +321,10 @@ export default function DataStrategy() {
               <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
                 <div className="h-48 bg-slate-200"></div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">
+                  <h3 className="text-xl font-bold text-charcoal mb-3">
                     Manufacturer Identifies $4M Revenue Opportunity Through Data Monetization
                   </h3>
-                  <p className="text-slate-700 mb-4">
+                  <p className="text-charcoal/80 mb-4">
                     How a mid-market manufacturer mapped their data landscape and built a roadmap to monetize equipment telemetry data.
                   </p>
                   <button className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
@@ -339,10 +339,10 @@ export default function DataStrategy() {
               <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
                 <div className="h-48 bg-slate-200"></div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">
+                  <h3 className="text-xl font-bold text-charcoal mb-3">
                     Insurance Carrier Prioritizes $12M Analytics Backlog in 6 Weeks
                   </h3>
-                  <p className="text-slate-700 mb-4">
+                  <p className="text-charcoal/80 mb-4">
                     Data strategy sprint identified high-ROI use cases and eliminated projects that wouldn't move the needle.
                   </p>
                   <button className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
@@ -357,10 +357,10 @@ export default function DataStrategy() {
               <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
                 <div className="h-48 bg-slate-200"></div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">
+                  <h3 className="text-xl font-bold text-charcoal mb-3">
                     Healthcare System Achieves Level 3 Data Maturity in 18 Months
                   </h3>
-                  <p className="text-slate-700 mb-4">
+                  <p className="text-charcoal/80 mb-4">
                     Maturity assessment and phased roadmap transformed ad-hoc reporting into self-service analytics culture.
                   </p>
                   <button className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
@@ -372,7 +372,7 @@ export default function DataStrategy() {
             </Link>
           </div>
 
-          <button className="px-6 py-2 border-2 border-slate-900 text-slate-900 rounded-full hover:bg-slate-900 hover:text-white transition-colors font-semibold flex items-center gap-2 mx-auto">
+          <button className="px-6 py-2 border-2 border-slate-900 text-charcoal rounded-full hover:bg-slate-900 hover:text-white transition-colors font-semibold flex items-center gap-2 mx-auto">
             <span>All cases</span>
             <ArrowRight className="w-4 h-4" />
           </button>
@@ -384,7 +384,7 @@ export default function DataStrategy() {
         <div className="container">
           <div className="mb-12">
             <span className="text-sm text-indigo-600 uppercase tracking-wide font-semibold">DATA & AI</span>
-            <h2 className="text-4xl font-bold text-slate-900 mt-2">Services</h2>
+            <h2 className="text-4xl font-bold text-charcoal mt-2">Services</h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -393,11 +393,11 @@ export default function DataStrategy() {
               <div className="absolute -top-3 left-6 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                 Current page
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3 flex items-center justify-between">
+              <h3 className="text-xl font-bold text-charcoal mb-3 flex items-center justify-between">
                 Data Strategy
                 <ArrowRight className="w-5 h-5 text-blue-500" />
               </h3>
-              <p className="text-slate-700">
+              <p className="text-charcoal/80">
                 Organizations that leverage data achieve success. We help you plot a winning strategy.
               </p>
             </div>
@@ -405,11 +405,11 @@ export default function DataStrategy() {
             {/* Data Platform */}
             <Link href="/solutions/data-platform">
               <div className="border-2 border-dashed border-slate-300 rounded-lg p-6 hover:border-indigo-500 hover:bg-indigo-50 transition-all cursor-pointer">
-                <h3 className="text-xl font-bold text-slate-900 mb-3 flex items-center justify-between">
+                <h3 className="text-xl font-bold text-charcoal mb-3 flex items-center justify-between">
                   Data Platform
-                  <ArrowRight className="w-5 h-5 text-slate-400" />
+                  <ArrowRight className="w-5 h-5 text-muted-foreground/70" />
                 </h3>
-                <p className="text-slate-700">
+                <p className="text-charcoal/80">
                   A data-driven organization needs a solid foundation. We'll build the platform that fits your data ambitions.
                 </p>
               </div>
@@ -418,11 +418,11 @@ export default function DataStrategy() {
             {/* Data visualization */}
             <Link href="/solutions/data-visualization">
               <div className="border-2 border-dashed border-slate-300 rounded-lg p-6 hover:border-indigo-500 hover:bg-indigo-50 transition-all cursor-pointer">
-                <h3 className="text-xl font-bold text-slate-900 mb-3 flex items-center justify-between">
+                <h3 className="text-xl font-bold text-charcoal mb-3 flex items-center justify-between">
                   Data visualization
-                  <ArrowRight className="w-5 h-5 text-slate-400" />
+                  <ArrowRight className="w-5 h-5 text-muted-foreground/70" />
                 </h3>
-                <p className="text-slate-700">
+                <p className="text-charcoal/80">
                   Build your data analytics dashboard to add real value with the right insights, so you know where to optimize your business.
                 </p>
               </div>
@@ -431,11 +431,11 @@ export default function DataStrategy() {
             {/* Data training */}
             <Link href="/solutions/data-training">
               <div className="border-2 border-dashed border-slate-300 rounded-lg p-6 hover:border-indigo-500 hover:bg-indigo-50 transition-all cursor-pointer">
-                <h3 className="text-xl font-bold text-slate-900 mb-3 flex items-center justify-between">
+                <h3 className="text-xl font-bold text-charcoal mb-3 flex items-center justify-between">
                   Data training
-                  <ArrowRight className="w-5 h-5 text-slate-400" />
+                  <ArrowRight className="w-5 h-5 text-muted-foreground/70" />
                 </h3>
-                <p className="text-slate-700">
+                <p className="text-charcoal/80">
                   Give your employees the knowledge and skills they need to get data under control, from newbie to boss level.
                 </p>
               </div>
@@ -444,11 +444,11 @@ export default function DataStrategy() {
             {/* Data governance */}
             <Link href="/solutions/data-governance">
               <div className="border-2 border-dashed border-slate-300 rounded-lg p-6 hover:border-indigo-500 hover:bg-indigo-50 transition-all cursor-pointer">
-                <h3 className="text-xl font-bold text-slate-900 mb-3 flex items-center justify-between">
+                <h3 className="text-xl font-bold text-charcoal mb-3 flex items-center justify-between">
                   Data governance
-                  <ArrowRight className="w-5 h-5 text-slate-400" />
+                  <ArrowRight className="w-5 h-5 text-muted-foreground/70" />
                 </h3>
-                <p className="text-slate-700">
+                <p className="text-charcoal/80">
                   Work efficiently and securely with maximum control over access and compliance.
                 </p>
               </div>
@@ -457,11 +457,11 @@ export default function DataStrategy() {
             {/* Data Engineering */}
             <Link href="/solutions/data-engineering">
               <div className="border-2 border-dashed border-slate-300 rounded-lg p-6 hover:border-indigo-500 hover:bg-indigo-50 transition-all cursor-pointer">
-                <h3 className="text-xl font-bold text-slate-900 mb-3 flex items-center justify-between">
+                <h3 className="text-xl font-bold text-charcoal mb-3 flex items-center justify-between">
                   Data Engineering
-                  <ArrowRight className="w-5 h-5 text-slate-400" />
+                  <ArrowRight className="w-5 h-5 text-muted-foreground/70" />
                 </h3>
-                <p className="text-slate-700">
+                <p className="text-charcoal/80">
                   Cut your time to market and strengthen your data team with experienced, certified professionals.
                 </p>
               </div>
@@ -471,13 +471,13 @@ export default function DataStrategy() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gradient-to-br from-purple-600 to-red-500 text-white">
+      <section className="py-20 bg-primary text-white">
         <div className="container text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to transform?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Let's talk about how a winning data strategy can accelerate your business.
           </p>
-          <button className="px-8 py-3 bg-white text-purple-600 rounded-full hover:bg-slate-100 transition-colors font-semibold mb-4">
+          <button className="px-8 py-3 bg-white text-primary rounded-full hover:bg-white/90 transition-colors duration-200 ease-in-out font-semibold mb-4">
             Contact us
           </button>
           <p className="text-white/90">or call us at +1 (555) 123-4567</p>

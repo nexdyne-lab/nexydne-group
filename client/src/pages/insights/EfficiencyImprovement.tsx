@@ -13,7 +13,7 @@ const fadeInUp = {
 
 export default function EfficiencyImprovement() {
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-sans">
+    <div className="min-h-screen bg-white text-charcoal font-sans">
       <SEO 
         title="The 85% Efficiency Improvement | NexDyne Technologies" 
         description="What our clients actually experience when implementing intelligent automation. Real results from real mid-market organizations."
@@ -23,7 +23,7 @@ export default function EfficiencyImprovement() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-b from-slate-800 via-slate-700 to-slate-800">
         <div className="container px-4 md:px-6">
-          <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center text-slate-400 hover:text-white mb-8 transition-colors">
+          <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center text-muted-foreground/70 hover:text-white mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to AI & Technology Consulting
           </Link>
@@ -33,11 +33,11 @@ export default function EfficiencyImprovement() {
               <span className="px-3 py-1 bg-emerald-600 text-white text-xs font-semibold uppercase tracking-wider rounded">
                 Article
               </span>
-              <div className="flex items-center text-slate-400 text-sm">
+              <div className="flex items-center text-muted-foreground/70 text-sm">
                 <Clock className="w-4 h-4 mr-1" />
                 8 min read
               </div>
-              <div className="flex items-center text-slate-400 text-sm">
+              <div className="flex items-center text-muted-foreground/70 text-sm">
                 <Calendar className="w-4 h-4 mr-1" />
                 January 2026
               </div>
@@ -56,7 +56,7 @@ export default function EfficiencyImprovement() {
               initial="hidden"
               animate="visible"
               variants={fadeInUp}
-              className="text-xl text-slate-300 leading-relaxed"
+              className="text-xl text-muted-foreground/50 leading-relaxed"
             >
               Behind the headline metrics lies a more nuanced story. This article examines what efficiency improvements really look like in practice—and what it takes to achieve them.
             </motion.p>
@@ -68,7 +68,7 @@ export default function EfficiencyImprovement() {
       <section className="py-12 bg-emerald-50">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <blockquote className="text-2xl md:text-3xl font-medium text-slate-800 italic">
+            <blockquote className="text-2xl md:text-3xl font-medium text-charcoal italic">
               "The 85% figure isn't aspirational—it's the median outcome across our client base. But achieving it requires more than technology."
             </blockquote>
           </div>
@@ -215,7 +215,7 @@ export default function EfficiencyImprovement() {
       <section className="py-20 bg-slate-50">
         <div className="container px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 mb-8">Related Insights</h2>
+            <h2 className="text-2xl font-bold text-charcoal mb-8">Related Insights</h2>
             
             <div className="grid md:grid-cols-3 gap-8">
               <Link href="/insights/mid-market-ai-access" className="group">
@@ -223,7 +223,7 @@ export default function EfficiencyImprovement() {
                   <div className="aspect-[16/10] bg-gradient-to-br from-slate-700 to-slate-900"></div>
                   <div className="p-6">
                     <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">Report</span>
-                    <h3 className="text-lg font-semibold text-slate-900 mt-2 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-blue-600 transition-colors">
                       Mid-Market AI Access: How growing businesses can compete with enterprise technology
                     </h3>
                   </div>
@@ -235,7 +235,7 @@ export default function EfficiencyImprovement() {
                   <div className="aspect-[16/10] bg-gradient-to-br from-blue-700 to-blue-900"></div>
                   <div className="p-6">
                     <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">Whitepaper</span>
-                    <h3 className="text-lg font-semibold text-slate-900 mt-2 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-blue-600 transition-colors">
                       Process mining fundamentals: From operational mapping to AI automation
                     </h3>
                   </div>
@@ -247,7 +247,7 @@ export default function EfficiencyImprovement() {
                   <div className="aspect-[16/10] bg-gradient-to-br from-teal-700 to-teal-900"></div>
                   <div className="p-6">
                     <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">Article</span>
-                    <h3 className="text-lg font-semibold text-slate-900 mt-2 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-blue-600 transition-colors">
                       Why change management determines AI project success
                     </h3>
                   </div>
@@ -265,11 +265,11 @@ export default function EfficiencyImprovement() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               What efficiency improvement could you achieve?
             </h2>
-            <p className="text-xl text-slate-300 mb-8">
+            <p className="text-xl text-muted-foreground/50 mb-8">
               Let's assess your processes and identify opportunities for intelligent automation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-white text-slate-900 font-semibold rounded-full hover:bg-slate-100 transition-colors">
+              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-white text-charcoal font-semibold rounded-full hover:bg-slate-100 transition-colors">
                 Request an Assessment
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>

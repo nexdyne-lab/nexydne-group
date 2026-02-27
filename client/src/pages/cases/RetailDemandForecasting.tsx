@@ -11,7 +11,7 @@ export default function RetailDemandForecasting() {
       {/* Breadcrumb */}
       <nav className="bg-slate-50 py-4">
         <div className="container">
-          <div className="flex items-center gap-2 text-sm text-slate-600">
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Link href="/">
               <a className="hover:text-blue-600">Home</a>
             </Link>
@@ -24,7 +24,7 @@ export default function RetailDemandForecasting() {
               <a className="hover:text-blue-600">Machine Learning</a>
             </Link>
             <span>/</span>
-            <span className="text-slate-900">Retailer Reduces Stockouts 35% with Demand Forecasting</span>
+            <span className="text-charcoal">Retailer Reduces Stockouts 35% with Demand Forecasting</span>
           </div>
         </div>
       </nav>
@@ -64,15 +64,15 @@ export default function RetailDemandForecasting() {
       {/* Challenge Section */}
       <section className="py-20">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">The Challenge</h2>
+          <h2 className="text-4xl font-bold text-charcoal mb-6">The Challenge</h2>
           <div className="prose prose-lg max-w-none">
-            <p className="text-lg text-slate-700 mb-4">
+            <p className="text-lg text-charcoal/80 mb-4">
               A mid-sized specialty retailer with 200 locations faced chronic inventory problems. Popular items sold out before replenishment arrived, while slow-moving SKUs accumulated in back rooms. Store managers ordered based on gut feel, corporate buyers relied on last year's sales, and nobody could predict seasonal spikes accurately.
             </p>
-            <p className="text-lg text-slate-700 mb-4">
+            <p className="text-lg text-charcoal/80 mb-4">
               The financial impact was severe: $12M in lost sales from stockouts, $6M in markdowns to clear excess inventory, and deteriorating customer satisfaction as shoppers learned not to rely on product availability. Their existing inventory system used simple moving averages that couldn't handle regional demand variation, promotional effects, or weather-driven purchasing patterns.
             </p>
-            <p className="text-lg text-slate-700 mb-4">
+            <p className="text-lg text-charcoal/80 mb-4">
               They needed demand forecasting that worked at SKU-store-week granularity, incorporated external signals (weather, local events, competitor promotions), and integrated with their existing replenishment systems. The solution had to be explainable—buyers needed to understand why the model recommended specific order quantities.
             </p>
           </div>
@@ -82,60 +82,60 @@ export default function RetailDemandForecasting() {
       {/* Solution Section */}
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">The Solution</h2>
+          <h2 className="text-4xl font-bold text-charcoal mb-6">The Solution</h2>
           <div className="prose prose-lg max-w-none mb-8">
-            <p className="text-lg text-slate-700 mb-4">
+            <p className="text-lg text-charcoal/80 mb-4">
               NEXDYNE built a gradient boosting model (XGBoost) that forecasts demand 8 weeks ahead for every SKU-store combination. The model ingests 3 years of transaction history, promotional calendars, local weather forecasts, regional demographics, and competitor pricing data scraped from public websites.
             </p>
-            <p className="text-lg text-slate-700 mb-4">
+            <p className="text-lg text-charcoal/80 mb-4">
               We engineered features that capture seasonal patterns (back-to-school, holidays), promotional lift (historical response to discounts), cannibalization effects (substitute products), and local preferences (regional taste differences). The model retrains weekly on fresh data, automatically detecting trend shifts and adjusting forecasts.
             </p>
-            <p className="text-lg text-slate-700 mb-4">
+            <p className="text-lg text-charcoal/80 mb-4">
               Forecasts feed directly into their replenishment system via API, generating purchase orders that optimize for target service levels while minimizing carrying costs. Store managers see predictions in their existing dashboard with confidence intervals and explanations for unusual forecasts.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white p-6 rounded-lg border border-slate-200">
-              <h3 className="text-xl font-bold text-slate-900 mb-4">Technical Approach</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Technical Approach</h3>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">XGBoost regression for SKU-store-week forecasts</span>
+                  <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                  <span className="text-charcoal/80">XGBoost regression for SKU-store-week forecasts</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">Feature engineering: seasonality, promotions, weather</span>
+                  <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                  <span className="text-charcoal/80">Feature engineering: seasonality, promotions, weather</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">Weekly automated retraining on Databricks</span>
+                  <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                  <span className="text-charcoal/80">Weekly automated retraining on Databricks</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">SHAP values for forecast explainability</span>
+                  <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                  <span className="text-charcoal/80">SHAP values for forecast explainability</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-white p-6 rounded-lg border border-slate-200">
-              <h3 className="text-xl font-bold text-slate-900 mb-4">Integration Points</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Integration Points</h3>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">REST API to replenishment system</span>
+                  <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                  <span className="text-charcoal/80">REST API to replenishment system</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">Tableau dashboard for buyers and managers</span>
+                  <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                  <span className="text-charcoal/80">Tableau dashboard for buyers and managers</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">Email alerts for anomalous predictions</span>
+                  <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                  <span className="text-charcoal/80">Email alerts for anomalous predictions</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">MLflow for model versioning and monitoring</span>
+                  <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                  <span className="text-charcoal/80">MLflow for model versioning and monitoring</span>
                 </li>
               </ul>
             </div>
@@ -146,15 +146,15 @@ export default function RetailDemandForecasting() {
       {/* Results Section */}
       <section className="py-20">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6">The Results</h2>
+          <h2 className="text-4xl font-bold text-charcoal mb-6">The Results</h2>
           <div className="prose prose-lg max-w-none mb-8">
-            <p className="text-lg text-slate-700 mb-4">
+            <p className="text-lg text-charcoal/80 mb-4">
               Within 6 months of deployment, stockouts dropped 35% and overstock situations fell 28%. The retailer saved $8.5M annually through reduced markdowns, lower carrying costs, and recaptured sales. Forecast accuracy (MAPE) improved from 42% with their old system to 18% with the ML model.
             </p>
-            <p className="text-lg text-slate-700 mb-4">
+            <p className="text-lg text-charcoal/80 mb-4">
               Store managers trust the system enough to reduce safety stock levels, freeing up working capital. Buyers spend less time firefighting stockouts and more time on strategic merchandising. Customer satisfaction scores improved 12 points as product availability became reliable.
             </p>
-            <p className="text-lg text-slate-700 mb-4">
+            <p className="text-lg text-charcoal/80 mb-4">
               The model continues to improve as it learns from new data. Seasonal forecasts get more accurate each year, promotional lift predictions adapt to changing consumer behavior, and the system automatically flags when external factors (competitor closures, new housing developments) shift local demand patterns.
             </p>
           </div>
@@ -162,15 +162,15 @@ export default function RetailDemandForecasting() {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-600">
               <div className="text-3xl font-bold text-purple-900 mb-2">18%</div>
-              <div className="text-slate-700">Mean Absolute Percentage Error (down from 42%)</div>
+              <div className="text-charcoal/80">Mean Absolute Percentage Error (down from 42%)</div>
             </div>
             <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
               <div className="text-3xl font-bold text-blue-900 mb-2">12 pts</div>
-              <div className="text-slate-700">Customer Satisfaction Improvement</div>
+              <div className="text-charcoal/80">Customer Satisfaction Improvement</div>
             </div>
-            <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
-              <div className="text-3xl font-bold text-green-900 mb-2">6 months</div>
-              <div className="text-slate-700">Time to Full ROI</div>
+            <div className="bg-secondary/10 p-6 rounded-lg border-l-4 border-green-600">
+              <div className="text-3xl font-bold text-charcoal mb-2">6 months</div>
+              <div className="text-charcoal/80">Time to Full ROI</div>
             </div>
           </div>
         </div>

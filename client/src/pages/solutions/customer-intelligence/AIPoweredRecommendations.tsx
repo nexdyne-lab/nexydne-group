@@ -35,7 +35,7 @@ export default function AIPoweredRecommendations() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-[#051C2C] selection:bg-[#0077B5] selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="AI-Powered Recommendations" 
         description="Implement intelligent recommendation engines that deliver the right product, content, or action to each customer at the right moment."
@@ -43,7 +43,7 @@ export default function AIPoweredRecommendations() {
       />
       <Navigation />
 
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-black">
+      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -62,7 +62,7 @@ export default function AIPoweredRecommendations() {
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-white hover:bg-gray-200 text-black px-8 py-6 text-base font-semibold transition-all">
+                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
                   Request a Demo
                 </Button>
               </Link>
@@ -89,7 +89,7 @@ export default function AIPoweredRecommendations() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -98,7 +98,7 @@ export default function AIPoweredRecommendations() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-[#051C2C]">Our Experience & Impact</h2>
+            <h2 className="text-2xl font-bold text-charcoal">Our Experience & Impact</h2>
           </motion.div>
           
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
@@ -114,8 +114,8 @@ export default function AIPoweredRecommendations() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#051C2C] mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-[#051C2C]/60">{item.label}</p>
+                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
+                <p className="text-lg text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -130,7 +130,7 @@ export default function AIPoweredRecommendations() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               In today's hyper-competitive digital landscape, personalization is no longer a luxury—it's an expectation. Customers are inundated with choices, and their attention is finite. AI-powered recommendation engines cut through the noise, acting as intelligent personal shoppers that anticipate needs and surface relevant products, content, and offers in real-time. This creates a more engaging, valuable, and frictionless customer experience.
             </motion.p>
@@ -140,7 +140,7 @@ export default function AIPoweredRecommendations() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-[#051C2C]/80 leading-relaxed"
+              className="text-xl text-charcoal/80 leading-relaxed"
             >
               Moving beyond simple "customers who bought this also bought" logic, modern recommendation systems leverage sophisticated machine learning models. By analyzing vast datasets of behavioral, transactional, and contextual information, we can uncover deep patterns and predict user intent with remarkable accuracy. The result is a dynamic, self-learning system that continuously adapts to individual preferences, driving higher conversion rates, increased basket sizes, and lasting customer loyalty.
             </motion.p>
@@ -156,13 +156,13 @@ export default function AIPoweredRecommendations() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0077B5] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-[#051C2C] mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Our Recommendation Engine Capabilities
             </h2>
-            <p className="text-xl text-[#051C2C]/60 max-w-2xl">
+            <p className="text-xl text-charcoal/60 max-w-2xl">
               We deliver end-to-end solutions for designing, building, and optimizing high-impact recommendation systems.
             </p>
           </motion.div>
@@ -208,7 +208,7 @@ export default function AIPoweredRecommendations() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#051C2C] text-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -216,7 +216,7 @@ export default function AIPoweredRecommendations() {
             viewport={{ once: true }}
             className="mb-16 text-center"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00d4ff] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-6 block">
               Our Approach
             </span>
             <h2 className="text-4xl md:text-5xl eb-garamond font-bold mb-6">
@@ -253,7 +253,7 @@ export default function AIPoweredRecommendations() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="relative"
               >
-                <div className="text-7xl font-serif font-bold text-[#0077B5] mb-4">{item.step}</div>
+                <div className="text-7xl font-serif font-bold text-primary mb-4">{item.step}</div>
                 <h3 className="text-2xl font-serif font-bold mb-4">{item.title}</h3>
                 <p className="text-white/60 leading-relaxed">{item.description}</p>
               </motion.div>
@@ -262,7 +262,7 @@ export default function AIPoweredRecommendations() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-[#051C2C] text-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -270,7 +270,7 @@ export default function AIPoweredRecommendations() {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00d4ff] mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-6 block">
               Case Studies
             </span>
             <h2 className="text-4xl md:text-5xl eb-garamond font-bold mb-6">
@@ -295,9 +295,9 @@ export default function AIPoweredRecommendations() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-black/20 p-8 rounded-lg"
+                className="bg-charcoal/20 p-8 rounded-lg"
               >
-                <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00d4ff] mb-4 block">{item.industry}</span>
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">{item.industry}</span>
                 <h3 className="text-2xl font-serif font-bold leading-tight">{item.headline}</h3>
               </motion.div>
             ))}
@@ -305,7 +305,7 @@ export default function AIPoweredRecommendations() {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-gray-50 border-t border-gray-200">
+      <section className="py-12 sm:py-16 lg:py-24 bg-subtle border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -313,8 +313,8 @@ export default function AIPoweredRecommendations() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-[#051C2C] mb-4">Related Capabilities</h2>
-            <p className="text-lg text-[#051C2C]/60 max-w-2xl">Explore how our other Customer Intelligence services create a holistic view of your customers.</p>
+            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal mb-4">Related Capabilities</h2>
+            <p className="text-lg text-charcoal/60 max-w-2xl">Explore how our other Customer Intelligence services create a holistic view of your customers.</p>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
@@ -327,10 +327,10 @@ export default function AIPoweredRecommendations() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={item.link}>
-                  <a className="block p-8 bg-white border border-gray-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full">
-                    <h3 className="text-xl font-serif font-bold text-[#051C2C] mb-3">{item.title}</h3>
-                    <p className="text-[#051C2C]/70 mb-4">{item.description}</p>
-                    <span className="font-semibold text-[#0077B5] flex items-center">Explore <ArrowRight className="ml-2 w-4 h-4" /></span>
+                  <a className="block p-8 bg-white border border-border hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full">
+                    <h3 className="text-xl font-serif font-bold text-charcoal mb-3">{item.title}</h3>
+                    <p className="text-charcoal/70 mb-4">{item.description}</p>
+                    <span className="font-semibold text-primary flex items-center">Explore <ArrowRight className="ml-2 w-4 h-4" /></span>
                   </a>
                 </Link>
               </motion.div>
@@ -339,7 +339,7 @@ export default function AIPoweredRecommendations() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 lg:py-24 bg-[#0077B5] text-white">
+      <section className="py-16 sm:py-20 lg:py-24 bg-primary text-white">
         <div className="container px-4 sm:px-6 md:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -352,7 +352,7 @@ export default function AIPoweredRecommendations() {
               Let's discuss how our AI-powered recommendation engines can help you create more relevant customer experiences and drive significant revenue growth. 
             </p>
             <Link href="/contact">
-              <Button className="bg-white hover:bg-gray-200 text-black px-10 py-7 text-lg font-semibold transition-all">
+              <Button className="bg-white hover:bg-muted text-charcoal px-10 py-7 text-lg font-semibold transition-all">
                 Contact Our Experts
               </Button>
             </Link>

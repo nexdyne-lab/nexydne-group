@@ -58,14 +58,14 @@ export default function InsightArticle({
       <Navigation />
       
       {/* Hero Section - Standardized for all insights */}
-      <section className="pt-24 pb-12 md:pt-32 md:pb-16 bg-[#f8f8f8]">
+      <section className="pt-24 pb-12 md:pt-32 md:pb-16 bg-subtle">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           {/* Back Link */}
           <Link href="/insights">
             <motion.span 
               initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
-              className="inline-flex items-center gap-2 text-[#1a3d2e] font-medium mb-8 hover:gap-3 transition-all cursor-pointer"
+              className="inline-flex items-center gap-2 text-base font-medium mb-8 hover:gap-3 transition-all cursor-pointer"
             >
               <ArrowLeft className="w-4 h-4" /> Back to Insights
             </motion.span>
@@ -77,7 +77,7 @@ export default function InsightArticle({
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="inline-block text-xs font-semibold text-[#1a3d2e] uppercase tracking-wider mb-4 hover:underline cursor-pointer"
+              className="inline-block text-xs font-semibold text-base uppercase tracking-wider mb-4 hover:underline cursor-pointer"
             >
               {category}
             </motion.span>
@@ -88,7 +88,7 @@ export default function InsightArticle({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] text-[#1A1A1A] leading-tight max-w-4xl mb-3"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] text-charcoal leading-tight max-w-4xl mb-3"
             style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
           >
             {title}
@@ -99,7 +99,7 @@ export default function InsightArticle({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-lg sm:text-xl text-[#1A1A1A]/70 max-w-3xl mb-8 leading-relaxed"
+            className="text-lg sm:text-xl text-charcoal/70 max-w-3xl mb-8 leading-relaxed"
           >
             {subtitle}
           </motion.p>
@@ -109,7 +109,7 @@ export default function InsightArticle({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="flex flex-wrap items-center gap-6 text-sm text-[#1A1A1A]/60"
+            className="flex flex-wrap items-center gap-6 text-sm text-charcoal/60"
           >
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4" /> {displayDate}
@@ -146,14 +146,14 @@ export default function InsightArticle({
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
               className="prose prose-lg max-w-none
-                prose-headings:font-normal prose-headings:text-[#1A1A1A]
+                prose-headings:font-normal prose-headings:text-charcoal
                 prose-h2:text-2xl prose-h2:sm:text-3xl prose-h2:mt-12 prose-h2:mb-6
                 prose-h3:text-xl prose-h3:sm:text-2xl prose-h3:mt-8 prose-h3:mb-4
-                prose-p:text-[#1A1A1A]/80 prose-p:leading-relaxed prose-p:mb-6
-                prose-li:text-[#1A1A1A]/80
-                prose-strong:text-[#1A1A1A] prose-strong:font-semibold
-                prose-a:text-[#1a3d2e] prose-a:no-underline hover:prose-a:underline
-                prose-blockquote:border-l-4 prose-blockquote:border-[#1a3d2e] prose-blockquote:bg-[#f8f8f8] prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:not-italic prose-blockquote:text-[#1A1A1A]/80"
+                prose-p:text-charcoal/80 prose-p:leading-relaxed prose-p:mb-6
+                prose-li:text-charcoal/80
+                prose-strong:text-charcoal prose-strong:font-semibold
+                prose-a:text-base prose-a:no-underline hover:prose-a:underline
+                prose-blockquote:border-l-4 prose-blockquote:border-base prose-blockquote:bg-subtle prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:not-italic prose-blockquote:text-charcoal/80"
               style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
             >
               {children}
@@ -163,7 +163,7 @@ export default function InsightArticle({
       </article>
       
       {/* CTA Section */}
-      <section className="py-12 md:py-16 bg-[#1a3d2e] text-white">
+      <section className="py-12 md:py-16 bg-base text-white">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16 text-center">
           <h2 className="text-2xl sm:text-3xl mb-4" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
             Ready to Apply These Insights?
@@ -172,7 +172,7 @@ export default function InsightArticle({
             Our experts can help you implement these strategies for your business.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-4 bg-white text-[#1a3d2e] font-semibold rounded-full hover:bg-gray-100 transition-colors">
+            <button className="px-8 py-4 bg-white text-base font-semibold rounded-full hover:bg-subtle transition-colors">
               Schedule a Consultation
             </button>
           </Link>
@@ -181,9 +181,9 @@ export default function InsightArticle({
       
       {/* Related Insights */}
       {allRelatedInsights.length > 0 && (
-        <section className="py-12 md:py-16 bg-[#f8f8f8]">
+        <section className="py-12 md:py-16 bg-subtle">
           <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
-            <h2 className="text-2xl sm:text-3xl text-[#1A1A1A] mb-8" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+            <h2 className="text-2xl sm:text-3xl text-charcoal mb-8" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
               Related Insights
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -198,8 +198,8 @@ export default function InsightArticle({
                       />
                     </div>
                     <div className="p-5">
-                      <span className="text-xs font-semibold text-[#1a3d2e] uppercase tracking-wider">{insight.category}</span>
-                      <h3 className="text-lg text-[#1A1A1A] leading-tight mt-2 group-hover:text-[#1a3d2e] transition-colors" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+                      <span className="text-xs font-semibold text-base uppercase tracking-wider">{insight.category}</span>
+                      <h3 className="text-lg text-charcoal leading-tight mt-2 group-hover:text-base transition-colors" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
                         {insight.title}
                       </h3>
                     </div>

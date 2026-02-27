@@ -10,7 +10,7 @@ export default function DataVisualization() {
     <div className="min-h-screen bg-white">
       <Navigation />
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-red-800 via-red-700 to-[#5B7FFF] text-white py-20">
+      <section className="relative bg-gradient-to-br from-red-800 via-red-700 to-secondary text-white py-20">
         <div className="container">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 text-sm mb-8 text-white/90">
@@ -47,7 +47,7 @@ export default function DataVisualization() {
               <div className="w-48 h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full mb-6 flex items-center justify-center">
                 <div className="w-40 h-40 bg-gradient-to-br from-blue-200 to-blue-300 rounded-full"></div>
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Want to know more?</h3>
+              <h3 className="text-2xl font-bold text-charcoal mb-4">Want to know more?</h3>
               <button className="px-8 py-3 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-colors font-semibold">
                 Ask Martijn Voorveld
               </button>
@@ -55,7 +55,7 @@ export default function DataVisualization() {
 
             {/* Benefits - Right Side */}
             <div>
-              <h2 className="text-4xl font-bold text-slate-900 mb-12">The benefits</h2>
+              <h2 className="text-4xl font-bold text-charcoal mb-12">The benefits</h2>
               
               <div className="space-y-8">
                 {/* Benefit 1 */}
@@ -66,8 +66,8 @@ export default function DataVisualization() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">Decision-focused design</h3>
-                    <p className="text-slate-700">
+                    <h3 className="text-xl font-bold text-charcoal mb-2">Decision-focused design</h3>
+                    <p className="text-charcoal/80">
                       Dashboards built around decision workflows, not data availability. Sales managers see pipeline velocity and conversion bottlenecks. Operations teams spot capacity constraints before they cause delays.
                     </p>
                   </div>
@@ -81,8 +81,8 @@ export default function DataVisualization() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">Real-time operational visibility</h3>
-                    <p className="text-slate-700">
+                    <h3 className="text-xl font-bold text-charcoal mb-2">Real-time operational visibility</h3>
+                    <p className="text-charcoal/80">
                       Live dashboards refresh every 60 seconds, surfacing issues as they emerge. Dispatchers intervene on at-risk shipments before delays impact customers. Production teams adjust schedules based on real-time equipment status.
                     </p>
                   </div>
@@ -96,8 +96,8 @@ export default function DataVisualization() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">Quantified business impact</h3>
-                    <p className="text-slate-700">
+                    <h3 className="text-xl font-bold text-charcoal mb-2">Quantified business impact</h3>
+                    <p className="text-charcoal/80">
                       Measure what was previously invisible—waste margins, churn risk, inventory turnover, equipment health. Dashboards quantify problems so teams can prioritize improvements by ROI.
                     </p>
                   </div>
@@ -111,8 +111,8 @@ export default function DataVisualization() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">Predictive alerts, not reactive reports</h3>
-                    <p className="text-slate-700">
+                    <h3 className="text-xl font-bold text-charcoal mb-2">Predictive alerts, not reactive reports</h3>
+                    <p className="text-charcoal/80">
                       Leading indicators surface opportunities and risks weeks in advance. Maintenance teams schedule interventions before equipment fails. Finance tracks burn rate against runway with 12-week forecast.
                     </p>
                   </div>
@@ -126,8 +126,8 @@ export default function DataVisualization() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">Self-service without IT bottlenecks</h3>
-                    <p className="text-slate-700">
+                    <h3 className="text-xl font-bold text-charcoal mb-2">Self-service without IT bottlenecks</h3>
+                    <p className="text-charcoal/80">
                       Business users filter, drill down, and export data without waiting for analyst support. Automated report generation eliminates manual Excel work. AI summaries explain anomalies in plain language.
                     </p>
                   </div>
@@ -141,20 +141,20 @@ export default function DataVisualization() {
       {/* Impact Section */}
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-8">
+          <h2 className="text-4xl font-bold text-charcoal mb-8">
             Visualization that drives outcomes
           </h2>
           
           <div className="prose prose-lg max-w-none">
-            <p className="text-lg text-slate-700 mb-6">
+            <p className="text-lg text-charcoal/80 mb-6">
               Pretty charts don't create value—actionable insights do. Most dashboards fail because they're designed around data availability instead of decision workflows. Teams get overwhelmed by metrics that don't drive action. Executives can't find the three KPIs that actually matter buried among 47 vanity metrics.
             </p>
             
-            <p className="text-lg text-slate-700 mb-6">
+            <p className="text-lg text-charcoal/80 mb-6">
               NEXDYNE builds dashboards around decision moments. We start by understanding what questions your teams need answered to make better decisions—sales managers evaluating pipeline health, operations teams allocating capacity, finance tracking burn rate. Then we design visualizations that surface those insights at the moment of decision.
             </p>
 
-            <p className="text-lg text-slate-700 mb-8">
+            <p className="text-lg text-charcoal/80 mb-8">
               From executive scorecards tracking strategic KPIs to operational dashboards monitoring real-time performance, we create tailor-made solutions that fit your workflow. No generic templates. No forcing your processes into vendor constraints. Dashboards that provide the insight your organization needs, designed for the people who will actually use them.
             </p>
 
@@ -162,7 +162,7 @@ export default function DataVisualization() {
               <p className="text-xl text-red-900 font-medium italic mb-4">
                 "Data becomes valuable when everyone can act on it. A good dashboard doesn't just show what's happening now—it tells you what to do next. We've seen operations teams reduce delivery delays 40% by surfacing at-risk shipments 2 hours before they miss windows."
               </p>
-              <p className="text-slate-700 font-semibold">
+              <p className="text-charcoal/80 font-semibold">
                 Martijn Voorveld, Field CTO - NEXDYNE TECHNOLOGIES
               </p>
             </blockquote>
@@ -173,16 +173,16 @@ export default function DataVisualization() {
       {/* Approach Section */}
       <section className="py-20 bg-white">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-8">
+          <h2 className="text-4xl font-bold text-charcoal mb-8">
             Our approach
           </h2>
           
           <div className="prose prose-lg max-w-none">
-            <p className="text-lg text-slate-700 mb-6">
+            <p className="text-lg text-charcoal/80 mb-6">
               We don't start with technology or available data—we start with your decision-making process. What do your teams need to know to make better decisions? What impact does that have on business outcomes? The answers determine how we build dashboards that provide actionable insight.
             </p>
 
-            <p className="text-lg text-slate-700">
+            <p className="text-lg text-charcoal/80">
               We build working prototypes in 2-3 weeks using sample data. You validate the design with actual users before we connect to production systems. This approach catches usability issues early—confusing layouts, missing drill-downs, incorrect alert thresholds—when they're cheap to fix. We work closely with dashboard users throughout implementation to ensure the technology delivers real impact, because only then can you make better data-driven decisions.
             </p>
           </div>
@@ -195,14 +195,14 @@ export default function DataVisualization() {
           <div className="bg-white rounded-2xl shadow-lg p-12">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold text-slate-900 mb-4">Want to know more?</h2>
-                <p className="text-xl text-slate-700 mb-2 font-semibold">Martijn Voorveld</p>
-                <p className="text-slate-600 mb-8">Senior Sales Manager</p>
+                <h2 className="text-3xl font-bold text-charcoal mb-4">Want to know more?</h2>
+                <p className="text-xl text-charcoal/80 mb-2 font-semibold">Martijn Voorveld</p>
+                <p className="text-muted-foreground mb-8">Senior Sales Manager</p>
                 <div className="flex flex-wrap gap-4">
                   <button className="px-8 py-3 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-colors font-semibold">
                     Get in touch
                   </button>
-                  <button className="px-8 py-3 border-2 border-slate-900 text-slate-900 rounded-full hover:bg-slate-900 hover:text-white transition-colors font-semibold">
+                  <button className="px-8 py-3 border-2 border-slate-900 text-charcoal rounded-full hover:bg-slate-900 hover:text-white transition-colors font-semibold">
                     Schedule a meeting
                   </button>
                 </div>
@@ -221,38 +221,38 @@ export default function DataVisualization() {
       <section className="py-20 bg-white">
         <div className="container max-w-6xl">
           <div className="mb-12">
-            <p className="text-sm font-semibold text-slate-600 mb-2">Partners</p>
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">Agentic AI</h2>
-            <button className="px-6 py-2 border-2 border-slate-900 text-slate-900 rounded-full hover:bg-slate-900 hover:text-white transition-colors font-semibold">
+            <p className="text-sm font-semibold text-muted-foreground mb-2">Partners</p>
+            <h2 className="text-4xl font-bold text-charcoal mb-4">Agentic AI</h2>
+            <button className="px-6 py-2 border-2 border-slate-900 text-charcoal rounded-full hover:bg-slate-900 hover:text-white transition-colors font-semibold">
               All partners
             </button>
           </div>
 
           <div className="grid md:grid-cols-4 gap-6">
             <div className="bg-white border-2 border-slate-200 rounded-lg p-8 hover:border-blue-500 transition-colors">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Glean</h3>
-              <p className="text-slate-700">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Glean</h3>
+              <p className="text-charcoal/80">
                 Enterprise AI search platform connecting knowledge across all company systems.
               </p>
             </div>
 
             <div className="bg-white border-2 border-slate-200 rounded-lg p-8 hover:border-blue-500 transition-colors">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Weaviate</h3>
-              <p className="text-slate-700">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Weaviate</h3>
+              <p className="text-charcoal/80">
                 Open-source vector database powering semantic search and AI applications.
               </p>
             </div>
 
             <div className="bg-white border-2 border-slate-200 rounded-lg p-8 hover:border-blue-500 transition-colors">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">LangChain</h3>
-              <p className="text-slate-700">
+              <h3 className="text-xl font-bold text-charcoal mb-3">LangChain</h3>
+              <p className="text-charcoal/80">
                 Framework for building LLM-powered applications with intelligent workflows.
               </p>
             </div>
 
             <div className="bg-white border-2 border-slate-200 rounded-lg p-8 hover:border-blue-500 transition-colors">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">N8N</h3>
-              <p className="text-slate-700">
+              <h3 className="text-xl font-bold text-charcoal mb-3">N8N</h3>
+              <p className="text-charcoal/80">
                 Workflow automation platform orchestrating data flows between systems.
               </p>
             </div>
@@ -266,11 +266,11 @@ export default function DataVisualization() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="h-96 bg-slate-200 rounded-lg"></div>
             <div>
-              <h2 className="text-4xl font-bold text-slate-900 mb-6">Why NEXDYNE</h2>
-              <p className="text-lg text-slate-700 mb-6">
+              <h2 className="text-4xl font-bold text-charcoal mb-6">Why NEXDYNE</h2>
+              <p className="text-lg text-charcoal/80 mb-6">
                 Most consultancies deliver dashboard mockups that look impressive in presentations but fail in production. NEXDYNE builds working prototypes during the engagement so you see real data flowing through real visualizations before we scale. You validate the approach with actual users, not hypothetical personas.
               </p>
-              <p className="text-lg text-slate-700 mb-8">
+              <p className="text-lg text-charcoal/80 mb-8">
                 We're integrators, not BI vendors. We recommend best-of-breed tools—Tableau, Power BI, Looker, custom React dashboards—based on your requirements, not partnership incentives. When the engagement ends, you own the dashboards and the knowledge to evolve them.
               </p>
               <button className="px-8 py-3 bg-slate-900 text-white rounded-full hover:bg-slate-800 transition-colors font-semibold">
@@ -285,11 +285,11 @@ export default function DataVisualization() {
       <section className="py-20 bg-white">
         <div className="container max-w-6xl">
           <div className="mb-12">
-            <p className="text-sm font-semibold text-slate-600 mb-2">CASES</p>
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">
+            <p className="text-sm font-semibold text-muted-foreground mb-2">CASES</p>
+            <h2 className="text-4xl font-bold text-charcoal mb-4">
               Cases we love talking about
             </h2>
-            <p className="text-lg text-slate-700 max-w-3xl">
+            <p className="text-lg text-charcoal/80 max-w-3xl">
               Heard of a business that transforms unique business challenges into exceptional outcomes? That'd be us. Check out these inspiring cases.
             </p>
           </div>
@@ -299,10 +299,10 @@ export default function DataVisualization() {
               <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
                 <div className="h-48 bg-slate-200"></div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">
+                  <h3 className="text-xl font-bold text-charcoal mb-3">
                     Logistics Company Reduces Delivery Delays 40% with Real-Time Operations Dashboard
                   </h3>
-                  <p className="text-slate-700 mb-4">
+                  <p className="text-charcoal/80 mb-4">
                     Custom dashboard surfaced capacity bottlenecks and route inefficiencies, enabling proactive intervention before delays occurred.
                   </p>
                   <button className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
@@ -317,10 +317,10 @@ export default function DataVisualization() {
               <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
                 <div className="h-48 bg-slate-200"></div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">
+                  <h3 className="text-xl font-bold text-charcoal mb-3">
                     SaaS Company Increases Trial-to-Paid Conversion 28% with Product Analytics Dashboard
                   </h3>
-                  <p className="text-slate-700 mb-4">
+                  <p className="text-charcoal/80 mb-4">
                     Usage analytics identified friction points in onboarding flow, driving targeted improvements that boosted conversion rates.
                   </p>
                   <button className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
@@ -335,10 +335,10 @@ export default function DataVisualization() {
               <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
                 <div className="h-48 bg-slate-200"></div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">
+                  <h3 className="text-xl font-bold text-charcoal mb-3">
                     Manufacturing Plant Cuts Downtime 35% with Predictive Maintenance Dashboard
                   </h3>
-                  <p className="text-slate-700 mb-4">
+                  <p className="text-charcoal/80 mb-4">
                     Equipment health dashboard predicted failures 2 weeks in advance, enabling scheduled maintenance instead of emergency repairs.
                   </p>
                   <button className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
@@ -350,7 +350,7 @@ export default function DataVisualization() {
             </Link>
           </div>
 
-          <button className="px-6 py-2 border-2 border-slate-900 text-slate-900 rounded-full hover:bg-slate-900 hover:text-white transition-colors font-semibold flex items-center gap-2 mx-auto">
+          <button className="px-6 py-2 border-2 border-slate-900 text-charcoal rounded-full hover:bg-slate-900 hover:text-white transition-colors font-semibold flex items-center gap-2 mx-auto">
             <span>All cases</span>
           </button>
         </div>
@@ -359,13 +359,13 @@ export default function DataVisualization() {
       {/* Related Services Section */}
       <section className="py-20 bg-slate-50">
         <div className="container max-w-6xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-12">Related services</h2>
+          <h2 className="text-4xl font-bold text-charcoal mb-12">Related services</h2>
           
           <div className="grid md:grid-cols-3 gap-6">
             <Link href="/solutions/data-strategy">
               <div className="bg-white border-2 border-dashed border-slate-300 rounded-lg p-6 hover:border-blue-500 transition-colors">
-                <h3 className="text-xl font-bold text-slate-900 mb-3">Data Strategy</h3>
-                <p className="text-slate-700 mb-4">
+                <h3 className="text-xl font-bold text-charcoal mb-3">Data Strategy</h3>
+                <p className="text-charcoal/80 mb-4">
                   Define what data matters and how to monetize it. Map your data landscape, identify high-value use cases, and build executable roadmaps.
                 </p>
                 <span className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
@@ -377,8 +377,8 @@ export default function DataVisualization() {
 
             <Link href="/solutions/data-platform">
               <div className="bg-white border-2 border-dashed border-slate-300 rounded-lg p-6 hover:border-blue-500 transition-colors">
-                <h3 className="text-xl font-bold text-slate-900 mb-3">Data Platform</h3>
-                <p className="text-slate-700 mb-4">
+                <h3 className="text-xl font-bold text-charcoal mb-3">Data Platform</h3>
+                <p className="text-charcoal/80 mb-4">
                   Modern data warehouses and lakes built on cloud infrastructure. Scalable architectures that ingest, transform, and serve data at enterprise scale.
                 </p>
                 <span className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
@@ -392,8 +392,8 @@ export default function DataVisualization() {
               <div className="absolute -top-3 left-6 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                 Current page
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Data visualization</h3>
-              <p className="text-slate-700 mb-4">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Data visualization</h3>
+              <p className="text-charcoal/80 mb-4">
                 Real-time dashboards and analytics interfaces that surface insights when decisions get made. Executive scorecards, operational metrics, embedded analytics.
               </p>
               <span className="text-blue-500 font-semibold flex items-center gap-2">
@@ -403,8 +403,8 @@ export default function DataVisualization() {
             </div>
 
             <div className="bg-white border-2 border-dashed border-slate-300 rounded-lg p-6 hover:border-blue-500 transition-colors">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Data training</h3>
-              <p className="text-slate-700 mb-4">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Data training</h3>
+              <p className="text-charcoal/80 mb-4">
                 Upskill your teams on analytics tools, data literacy, and self-service capabilities. Hands-on workshops that build internal capability.
               </p>
               <span className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
@@ -414,8 +414,8 @@ export default function DataVisualization() {
             </div>
 
             <div className="bg-white border-2 border-dashed border-slate-300 rounded-lg p-6 hover:border-blue-500 transition-colors">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Data governance</h3>
-              <p className="text-slate-700 mb-4">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Data governance</h3>
+              <p className="text-charcoal/80 mb-4">
                 Policies, processes, and controls that ensure data quality, security, and compliance. Stewardship programs that scale with your organization.
               </p>
               <span className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
@@ -425,8 +425,8 @@ export default function DataVisualization() {
             </div>
 
             <div className="bg-white border-2 border-dashed border-slate-300 rounded-lg p-6 hover:border-blue-500 transition-colors">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Data Engineering</h3>
-              <p className="text-slate-700 mb-4">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Data Engineering</h3>
+              <p className="text-charcoal/80 mb-4">
                 Dedicated teams that build and maintain your data infrastructure. Pipelines, transformations, quality monitoring, and platform operations.
               </p>
               <span className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
@@ -439,7 +439,7 @@ export default function DataVisualization() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-red-700 to-[#5B7FFF] text-white">
+      <section className="py-20 bg-gradient-to-br from-red-700 to-secondary text-white">
         <div className="container max-w-4xl text-center">
           <h2 className="text-4xl font-bold mb-6">
             Ready to turn data into action?

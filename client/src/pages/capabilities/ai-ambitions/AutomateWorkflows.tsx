@@ -75,7 +75,7 @@ const insights = [
 
 export default function AutomateWorkflows() {
   return (
-    <div className="min-h-screen bg-white text-[#1A1A1A] font-sans">
+    <div className="min-h-screen bg-white text-charcoal font-sans">
       <SEO 
         title="Automate Repetitive Workflows | AI Solutions" 
         description="See how leading companies are using AI to automate repetitive workflows, reduce manual effort, and accelerate business processes."
@@ -87,7 +87,7 @@ export default function AutomateWorkflows() {
       <section className="relative w-full pt-20">
         <div className="relative h-[350px] md:h-[400px] overflow-hidden">
           {/* Background with gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#CC0000] via-[#990000] to-[#660033]">
+          <div className="absolute inset-0 bg-gradient-to-r from-destructive via-destructive to-base">
             {/* Abstract pattern overlay */}
             <div className="absolute inset-0 opacity-30">
               <svg className="w-full h-full" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice">
@@ -157,21 +157,21 @@ export default function AutomateWorkflows() {
                   {/* Video play button overlay */}
                   {study.hasVideo && (
                     <div className="absolute top-4 left-4 w-12 h-12 bg-white/90 rounded-full flex items-center justify-center">
-                      <Play className="w-5 h-5 text-[#CC0000] fill-current ml-1" />
+                      <Play className="w-5 h-5 text-destructive fill-current ml-1" />
                     </div>
                   )}
                 </div>
 
                 {/* Content */}
                 <div>
-                  <span className="text-[#CC0000] text-sm font-medium">{study.industry}</span>
-                  <h3 className="text-xl md:text-2xl font-bold text-[#1A1A1A] mt-2 mb-3 leading-tight group-hover:text-[#CC0000] transition-colors" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+                  <span className="text-destructive text-sm font-medium">{study.industry}</span>
+                  <h3 className="text-xl md:text-2xl font-bold text-charcoal mt-2 mb-3 leading-tight group-hover:text-destructive transition-colors" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
                     {study.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed mb-4">
+                  <p className="text-muted-foreground leading-relaxed mb-4">
                     {study.description}
                   </p>
-                  <span className="text-sm text-gray-500">{study.company}</span>
+                  <span className="text-sm text-muted-foreground">{study.company}</span>
                 </div>
               </motion.article>
             ))}
@@ -181,7 +181,7 @@ export default function AutomateWorkflows() {
 
       {/* Our AI Consulting Services Banner */}
       <section className="relative py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a2e] via-[#16213e] to-[#0f3460]">
+        <div className="absolute inset-0 bg-gradient-to-r from-base via-base to-base">
           {/* Abstract pattern */}
           <div className="absolute inset-0 opacity-20">
             <svg className="w-full h-full" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid slice">
@@ -205,11 +205,11 @@ export default function AutomateWorkflows() {
         <div className="container px-6 md:px-12">
           {/* Section Header with decorative lines */}
           <div className="flex items-center justify-center mb-12">
-            <div className="flex-1 h-px bg-gray-200"></div>
-            <h2 className="px-8 text-2xl md:text-3xl font-bold text-[#1A1A1A]" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+            <div className="flex-1 h-px bg-muted"></div>
+            <h2 className="px-8 text-2xl md:text-3xl font-bold text-charcoal" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
               Our Latest AI Insights
             </h2>
-            <div className="flex-1 h-px bg-gray-200"></div>
+            <div className="flex-1 h-px bg-muted"></div>
           </div>
 
           {/* Insights Grid */}
@@ -230,11 +230,11 @@ export default function AutomateWorkflows() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
-                <span className="text-[#CC0000] text-sm font-medium">{insight.category}</span>
-                <h3 className="text-lg font-bold text-[#1A1A1A] mt-2 mb-2 leading-tight group-hover:text-[#CC0000] transition-colors" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+                <span className="text-destructive text-sm font-medium">{insight.category}</span>
+                <h3 className="text-lg font-bold text-charcoal mt-2 mb-2 leading-tight group-hover:text-destructive transition-colors" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
                   {insight.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   {insight.description}
                 </p>
               </motion.article>
@@ -244,16 +244,16 @@ export default function AutomateWorkflows() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-20 bg-[#f5f5f5]">
+      <section className="py-16 md:py-20 bg-subtle">
         <div className="container px-6 md:px-12 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-4" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+          <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-4" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
             Ready to automate your workflows?
           </h2>
-          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
             Let's discuss how intelligent automation can transform your operations and free your team for higher-value work.
           </p>
           <Link href="/contact">
-            <span className="inline-flex items-center px-8 py-4 bg-[#CC0000] text-white font-semibold rounded hover:bg-[#aa0000] transition-colors cursor-pointer">
+            <span className="inline-flex items-center px-8 py-4 bg-destructive text-white font-semibold rounded hover:bg-destructive transition-colors cursor-pointer">
               Contact Us
               <ArrowRight className="w-5 h-5 ml-2" />
             </span>

@@ -13,7 +13,7 @@ export default function DataGovernance() {
       {/* Breadcrumb */}
       <nav className="bg-slate-50 py-4">
         <div className="container">
-          <div className="flex items-center gap-2 text-sm text-slate-600">
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Link href="/">
               <a className="hover:text-blue-600">Home</a>
             </Link>
@@ -22,7 +22,7 @@ export default function DataGovernance() {
               <a className="hover:text-blue-600">Data Solutions</a>
             </Link>
             <span>/</span>
-            <span className="text-slate-900">Data Governance</span>
+            <span className="text-charcoal">Data Governance</span>
           </div>
         </div>
       </nav>
@@ -60,7 +60,7 @@ export default function DataGovernance() {
             <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">
               THE BENEFITS
             </p>
-            <h2 className="text-4xl font-bold text-slate-900">
+            <h2 className="text-4xl font-bold text-charcoal">
               Why Data Governance Matters
             </h2>
           </div>
@@ -74,10 +74,10 @@ export default function DataGovernance() {
                 </svg>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                <h3 className="text-2xl font-bold text-charcoal mb-3">
                   Compliance you can prove
                 </h3>
-                <p className="text-lg text-slate-700">
+                <p className="text-lg text-charcoal/80">
                   Audit trails that document who accessed what data, when, and why. Automated compliance reporting for GDPR, HIPAA, SOC 2, and industry-specific regulations. When auditors ask questions, you have answers backed by immutable logs and policy enforcement records.
                 </p>
               </div>
@@ -91,10 +91,10 @@ export default function DataGovernance() {
                 </svg>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                <h3 className="text-2xl font-bold text-charcoal mb-3">
                   Access controls that scale
                 </h3>
-                <p className="text-lg text-slate-700">
+                <p className="text-lg text-charcoal/80">
                   Role-based permissions that grant data access based on job function, not manual approvals. Attribute-based policies that enforce row-level security automatically. Self-service data access for analysts without exposing sensitive fields or violating compliance rules.
                 </p>
               </div>
@@ -108,10 +108,10 @@ export default function DataGovernance() {
                 </svg>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                <h3 className="text-2xl font-bold text-charcoal mb-3">
                   Data quality you can trust
                 </h3>
-                <p className="text-lg text-slate-700">
+                <p className="text-lg text-charcoal/80">
                   Automated validation rules that catch bad data before it corrupts downstream systems. Data quality dashboards that track completeness, accuracy, consistency, and timeliness metrics. Alerting that notifies data owners when quality thresholds are breached.
                 </p>
               </div>
@@ -125,10 +125,10 @@ export default function DataGovernance() {
                 </svg>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                <h3 className="text-2xl font-bold text-charcoal mb-3">
                   Discoverable and documented
                 </h3>
-                <p className="text-lg text-slate-700">
+                <p className="text-lg text-charcoal/80">
                   Data catalogs that make datasets searchable by business term, not technical table name. Automated lineage tracking that shows where data comes from and where it's used. Business glossaries that define metrics consistently across teams so "revenue" means the same thing everywhere.
                 </p>
               </div>
@@ -140,11 +140,11 @@ export default function DataGovernance() {
       {/* Methodology Section */}
       <section className="py-20 bg-slate-50">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-8">
+          <h2 className="text-4xl font-bold text-charcoal mb-8">
             From chaos to control
           </h2>
           
-          <div className="prose prose-lg max-w-none text-slate-700 space-y-6">
+          <div className="prose prose-lg max-w-none text-charcoal/80 space-y-6">
             <p>
               Most organizations treat data governance as a compliance checkbox—policies nobody reads, committees that never meet, and tools that collect dust. We build governance systems that people actually use because they make work easier, not harder.
             </p>
@@ -157,10 +157,10 @@ export default function DataGovernance() {
               We implement governance in layers: access controls at the data platform level (who can query what tables), row-level security for multi-tenant scenarios (customers only see their own data), field-level masking for sensitive attributes (analysts see anonymized PII), and audit logging that captures every data access event with tamper-proof timestamps.
             </p>
 
-            <blockquote className="border-l-4 border-blue-500 pl-6 italic text-xl text-slate-800">
+            <blockquote className="border-l-4 border-blue-500 pl-6 italic text-xl text-charcoal">
               "Governance that works is governance that's invisible. Users get the data they need without thinking about policies, and compliance happens automatically."
             </blockquote>
-            <p className="text-sm text-slate-600">
+            <p className="text-sm text-muted-foreground">
               — Martijn Voorveld, Commercial Lead - NEXDYNE TECHNOLOGIES
             </p>
           </div>
@@ -170,11 +170,11 @@ export default function DataGovernance() {
       {/* Data Quality Section */}
       <section className="py-20">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-slate-900 mb-8">
+          <h2 className="text-4xl font-bold text-charcoal mb-8">
             Data quality at scale
           </h2>
           
-          <div className="prose prose-lg max-w-none text-slate-700 space-y-6">
+          <div className="prose prose-lg max-w-none text-charcoal/80 space-y-6">
             <p>
               Bad data costs money—incorrect forecasts, failed campaigns, compliance violations, and lost customer trust. We build data quality systems that prevent problems instead of detecting them after the damage is done.
             </p>
@@ -197,16 +197,16 @@ export default function DataGovernance() {
             <div className="flex items-center gap-8">
               <div className="w-24 h-24 bg-slate-200 rounded-full"></div>
               <div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                <h3 className="text-2xl font-bold text-charcoal mb-3">
                   Want to know more?
                 </h3>
-                <p className="text-slate-600 mb-4">Martijn Voorveld</p>
-                <p className="text-sm text-slate-500 mb-6">Senior Sales Manager</p>
+                <p className="text-muted-foreground mb-4">Martijn Voorveld</p>
+                <p className="text-sm text-muted-foreground mb-6">Senior Sales Manager</p>
                 <div className="flex gap-4">
                   <Button className="bg-slate-900 hover:bg-slate-800 text-white">
                     Get in touch
                   </Button>
-                  <Button variant="ghost" className="text-slate-900">
+                  <Button variant="ghost" className="text-charcoal">
                     Schedule a meeting
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
@@ -224,36 +224,36 @@ export default function DataGovernance() {
             <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">
               PARTNERS
             </p>
-            <h2 className="text-4xl font-bold text-slate-900">
+            <h2 className="text-4xl font-bold text-charcoal">
               Governance & Compliance Tools
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="border border-slate-200 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Collibra</h3>
-              <p className="text-slate-600">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Collibra</h3>
+              <p className="text-muted-foreground">
                 Enterprise data catalog and governance platform for policy management and lineage tracking.
               </p>
             </div>
 
             <div className="border border-slate-200 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Alation</h3>
-              <p className="text-slate-600">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Alation</h3>
+              <p className="text-muted-foreground">
                 Data catalog with AI-powered search, automated documentation, and collaborative data stewardship.
               </p>
             </div>
 
             <div className="border border-slate-200 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Monte Carlo</h3>
-              <p className="text-slate-600">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Monte Carlo</h3>
+              <p className="text-muted-foreground">
                 Data observability platform for automated quality monitoring, anomaly detection, and incident management.
               </p>
             </div>
 
             <div className="border border-slate-200 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Immuta</h3>
-              <p className="text-slate-600">
+              <h3 className="text-xl font-bold text-charcoal mb-3">Immuta</h3>
+              <p className="text-muted-foreground">
                 Automated data access control and privacy enforcement for cloud data platforms.
               </p>
             </div>
@@ -268,10 +268,10 @@ export default function DataGovernance() {
             <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">
               CASES
             </p>
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">
+            <h2 className="text-4xl font-bold text-charcoal mb-4">
               Cases we love talking about
             </h2>
-            <p className="text-lg text-slate-600 max-w-3xl">
+            <p className="text-lg text-muted-foreground max-w-3xl">
               Real governance implementations. Real compliance outcomes. See how we've deployed data governance systems that balance security with accessibility.
             </p>
           </div>
@@ -289,10 +289,10 @@ export default function DataGovernance() {
                   <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded-full mb-3">
                     HEALTHCARE
                   </span>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">
+                  <h3 className="text-xl font-bold text-charcoal mb-2">
                     Hospital Achieves HIPAA Compliance with Automated Audit Trails
                   </h3>
-                  <p className="text-slate-600 mb-4">
+                  <p className="text-muted-foreground mb-4">
                     Automated access controls and audit logging for 12,000 employees accessing patient records across 8 facilities.
                   </p>
                   <div className="flex items-center justify-between text-sm">
@@ -312,13 +312,13 @@ export default function DataGovernance() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <span className="inline-block px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold rounded-full mb-3">
+                  <span className="inline-block px-3 py-1 bg-secondary/10 text-secondary text-xs font-semibold rounded-full mb-3">
                     FINANCIAL SERVICES
                   </span>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">
+                  <h3 className="text-xl font-bold text-charcoal mb-2">
                     Bank Reduces Data Quality Issues 78% with Automated Validation
                   </h3>
-                  <p className="text-slate-600 mb-4">
+                  <p className="text-muted-foreground mb-4">
                     Real-time data quality monitoring across 200+ source systems feeding regulatory reports.
                   </p>
                   <div className="flex items-center justify-between text-sm">
@@ -341,10 +341,10 @@ export default function DataGovernance() {
                   <span className="inline-block px-3 py-1 bg-purple-100 text-purple-700 text-xs font-semibold rounded-full mb-3">
                     RETAIL
                   </span>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">
+                  <h3 className="text-xl font-bold text-charcoal mb-2">
                     Retailer Implements GDPR-Compliant Data Catalog for 15M Customers
                   </h3>
-                  <p className="text-slate-600 mb-4">
+                  <p className="text-muted-foreground mb-4">
                     Consent management, right-to-be-forgotten workflows, and data residency controls across EU markets.
                   </p>
                   <div className="flex items-center justify-between text-sm">

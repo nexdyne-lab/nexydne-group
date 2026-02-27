@@ -254,19 +254,19 @@ export default function BCGNavigation() {
                 menuOpen 
                   ? 'bg-transparent' 
                   : isScrolled 
-                    ? 'bg-gray-100 hover:bg-gray-200' 
+                    ? 'bg-subtle hover:bg-muted' 
                     : 'bg-white/90 hover:bg-white'
               }`}
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               aria-expanded={menuOpen}
             >
               {menuOpen ? (
-                <X className="w-6 h-6 text-[#1A1A1A]" />
+                <X className="w-6 h-6 text-charcoal" />
               ) : (
                 <div className="flex flex-col gap-1.5">
-                  <span className="block w-5 h-0.5 bg-[#1A1A1A]" />
-                  <span className="block w-5 h-0.5 bg-[#1A1A1A]" />
-                  <span className="block w-5 h-0.5 bg-[#1A1A1A]" />
+                  <span className="block w-5 h-0.5 bg-charcoal" />
+                  <span className="block w-5 h-0.5 bg-charcoal" />
+                  <span className="block w-5 h-0.5 bg-charcoal" />
                 </div>
               )}
             </button>
@@ -291,8 +291,8 @@ export default function BCGNavigation() {
                 onClick={() => setMenuOpen(true)}
                 className={`w-10 h-10 flex items-center justify-center rounded-full transition-colors ${
                   isScrolled 
-                    ? 'hover:bg-gray-100 text-[#1A1A1A]' 
-                    : 'hover:bg-white/20 text-[#1A1A1A]'
+                    ? 'hover:bg-subtle text-charcoal' 
+                    : 'hover:bg-white/20 text-charcoal'
                 }`}
                 aria-label="Search"
               >
@@ -305,8 +305,8 @@ export default function BCGNavigation() {
               href="/contact"
               className={`font-semibold text-sm uppercase tracking-wider transition-colors ${
                 menuOpen || isScrolled 
-                  ? 'text-[#1A1A1A] hover:text-[#1B5E3A]' 
-                  : 'text-[#1A1A1A] hover:text-[#1B5E3A]'
+                  ? 'text-charcoal hover:text-base' 
+                  : 'text-charcoal hover:text-base'
               }`}
               onClick={() => handleNavigation("/contact")}
             >
@@ -325,10 +325,10 @@ export default function BCGNavigation() {
       >
         <div className="h-full overflow-y-auto">
           {/* Search Bar */}
-          <div className="border-b border-gray-200">
+          <div className="border-b border-border">
             <div className="container px-4 md:px-6 py-4">
               <div className="flex items-center gap-3 max-w-2xl">
-                <Search className="w-5 h-5 text-gray-400" />
+                <Search className="w-5 h-5 text-muted-foreground/70" />
                 <input
                   type="text"
                   placeholder="Type to search"
@@ -351,8 +351,8 @@ export default function BCGNavigation() {
                     onClick={() => handleSectionClick('services')}
                     className={`w-full text-left py-4 text-2xl font-semibold transition-colors ${
                       activeSection === 'services' 
-                        ? 'text-[#1B5E3A]' 
-                        : 'text-[#1A1A1A] hover:text-[#1B5E3A]'
+                        ? 'text-base' 
+                        : 'text-charcoal hover:text-base'
                     }`}
                   >
                     {menuStructure.services.title}
@@ -370,8 +370,8 @@ export default function BCGNavigation() {
                           onMouseEnter={() => handleCategoryHover(cat.name)}
                           className={`block w-full text-left py-2 text-base transition-colors ${
                             activeCategory === cat.name 
-                              ? 'text-[#1B5E3A] font-medium bg-[#1B5E3A]/5 px-3 -mx-3 rounded' 
-                              : 'text-gray-600 hover:text-[#1B5E3A]'
+                              ? 'text-base font-medium bg-base/5 px-3 -mx-3 rounded' 
+                              : 'text-muted-foreground hover:text-base'
                           }`}
                         >
                           {cat.name}
@@ -387,8 +387,8 @@ export default function BCGNavigation() {
                     onClick={() => handleSectionClick('insights')}
                     className={`w-full text-left py-4 text-2xl font-semibold transition-colors ${
                       activeSection === 'insights' 
-                        ? 'text-[#1B5E3A]' 
-                        : 'text-[#1A1A1A] hover:text-[#1B5E3A]'
+                        ? 'text-base' 
+                        : 'text-charcoal hover:text-base'
                     }`}
                   >
                     {menuStructure.insights.title}
@@ -406,8 +406,8 @@ export default function BCGNavigation() {
                           onMouseEnter={() => handleCategoryHover(cat.name)}
                           className={`block w-full text-left py-2 text-base transition-colors ${
                             activeCategory === cat.name 
-                              ? 'text-[#1B5E3A] font-medium bg-[#1B5E3A]/5 px-3 -mx-3 rounded' 
-                              : 'text-gray-600 hover:text-[#1B5E3A]'
+                              ? 'text-base font-medium bg-base/5 px-3 -mx-3 rounded' 
+                              : 'text-muted-foreground hover:text-base'
                           }`}
                         >
                           {cat.name}
@@ -423,8 +423,8 @@ export default function BCGNavigation() {
                     onClick={() => handleSectionClick('company')}
                     className={`w-full text-left py-4 text-2xl font-semibold transition-colors ${
                       activeSection === 'company' 
-                        ? 'text-[#1B5E3A]' 
-                        : 'text-[#1A1A1A] hover:text-[#1B5E3A]'
+                        ? 'text-base' 
+                        : 'text-charcoal hover:text-base'
                     }`}
                   >
                     {menuStructure.company.title}
@@ -442,8 +442,8 @@ export default function BCGNavigation() {
                           onMouseEnter={() => handleCategoryHover(cat.name)}
                           className={`block w-full text-left py-2 text-base transition-colors ${
                             activeCategory === cat.name 
-                              ? 'text-[#1B5E3A] font-medium bg-[#1B5E3A]/5 px-3 -mx-3 rounded' 
-                              : 'text-gray-600 hover:text-[#1B5E3A]'
+                              ? 'text-base font-medium bg-base/5 px-3 -mx-3 rounded' 
+                              : 'text-muted-foreground hover:text-base'
                           }`}
                         >
                           {cat.name}
@@ -454,24 +454,24 @@ export default function BCGNavigation() {
                 </div>
 
                 {/* Direct Links */}
-                <div className="pt-6 border-t border-gray-200 mt-6">
+                <div className="pt-6 border-t border-border mt-6">
                   <Link
                     href="/insights"
-                    className="block py-3 text-lg text-gray-600 hover:text-[#1B5E3A] transition-colors"
+                    className="block py-3 text-lg text-muted-foreground hover:text-base transition-colors"
                     onClick={() => handleNavigation("/insights")}
                   >
                     All Insights
                   </Link>
                   <Link
                     href="/cases"
-                    className="block py-3 text-lg text-gray-600 hover:text-[#1B5E3A] transition-colors"
+                    className="block py-3 text-lg text-muted-foreground hover:text-base transition-colors"
                     onClick={() => handleNavigation("/cases")}
                   >
                     All Case Studies
                   </Link>
                   <Link
                     href="/careers"
-                    className="block py-3 text-lg text-gray-600 hover:text-[#1B5E3A] transition-colors"
+                    className="block py-3 text-lg text-muted-foreground hover:text-base transition-colors"
                     onClick={() => handleNavigation("/careers")}
                   >
                     Careers
@@ -485,10 +485,10 @@ export default function BCGNavigation() {
                   <div className="animate-in fade-in duration-300">
                     {/* Category Header */}
                     <div className="mb-8">
-                      <h2 className="text-2xl font-bold text-[#1A1A1A] mb-2">
+                      <h2 className="text-2xl font-bold text-charcoal mb-2">
                         {currentCategory.name}
                       </h2>
-                      <p className="text-gray-600">
+                      <p className="text-muted-foreground">
                         {currentCategory.description}
                       </p>
                     </div>
@@ -499,7 +499,7 @@ export default function BCGNavigation() {
                         <Link
                           key={item.href}
                           href={item.href}
-                          className="block py-2.5 text-[#1A1A1A] hover:text-[#1B5E3A] transition-colors border-b border-transparent hover:border-[#1B5E3A]/20"
+                          className="block py-2.5 text-charcoal hover:text-base transition-colors border-b border-transparent hover:border-secondary/20"
                           onClick={() => handleNavigation(item.href)}
                         >
                           {item.name}
@@ -512,7 +512,7 @@ export default function BCGNavigation() {
                       <div className="mt-8">
                         <Link
                           href="/industries"
-                          className="inline-flex items-center text-[#1B5E3A] font-semibold hover:underline"
+                          className="inline-flex items-center text-base font-semibold hover:underline"
                           onClick={() => handleNavigation("/industries")}
                         >
                           View all industries →
@@ -523,7 +523,7 @@ export default function BCGNavigation() {
                       <div className="mt-8">
                         <Link
                           href="/capabilities"
-                          className="inline-flex items-center text-[#1B5E3A] font-semibold hover:underline"
+                          className="inline-flex items-center text-base font-semibold hover:underline"
                           onClick={() => handleNavigation("/capabilities")}
                         >
                           View all capabilities →
@@ -535,7 +535,7 @@ export default function BCGNavigation() {
 
                 {/* Default state when no category selected */}
                 {!currentCategory && activeSection && (
-                  <div className="flex items-center justify-center h-64 text-gray-400">
+                  <div className="flex items-center justify-center h-64 text-muted-foreground/70">
                     <p>Select a category to view options</p>
                   </div>
                 )}
@@ -543,10 +543,10 @@ export default function BCGNavigation() {
                 {/* Default state when menu first opens */}
                 {!activeSection && (
                   <div className="flex flex-col items-start justify-center h-64">
-                    <h2 className="text-3xl font-bold text-[#1A1A1A] mb-4">
+                    <h2 className="text-3xl font-bold text-charcoal mb-4">
                       How can we assist you today?
                     </h2>
-                    <p className="text-gray-600 text-lg">
+                    <p className="text-muted-foreground text-lg">
                       Learn more about our core areas of expertise by selecting your topic of interest.
                     </p>
                   </div>

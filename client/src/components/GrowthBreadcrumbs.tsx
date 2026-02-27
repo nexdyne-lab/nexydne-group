@@ -58,7 +58,7 @@ export default function GrowthBreadcrumbs() {
   });
 
   return (
-    <nav className="flex items-center text-sm text-slate-400 mb-6 overflow-x-auto whitespace-nowrap pb-2">
+    <nav className="flex items-center text-sm text-muted-foreground/70 mb-6 overflow-x-auto whitespace-nowrap pb-2">
       <Link href="/">
         <a className="hover:text-blue-400 transition-colors flex items-center">
           <Home className="w-3 h-3 sm:w-4 sm:h-4" />
@@ -67,7 +67,7 @@ export default function GrowthBreadcrumbs() {
       
       {breadcrumbs.map((item, index) => (
         <div key={item.path} className="flex items-center">
-          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 mx-2 text-slate-600" />
+          <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 mx-2 text-muted-foreground" />
           {item.isLast ? (
             <span className="text-blue-400 font-medium">{item.name}</span>
           ) : (

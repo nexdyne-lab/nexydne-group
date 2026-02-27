@@ -48,7 +48,7 @@ export default function CaseStudyTemplate({
   relatedCapability
 }: CaseStudyTemplateProps) {
   return (
-    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-100">
+    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-blue-100">
       <Navigation />
 
       {/* Hero Section */}
@@ -57,13 +57,13 @@ export default function CaseStudyTemplate({
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center gap-3 text-sm font-bold text-blue-700 uppercase tracking-wider mb-6">
               <span>{industry}</span>
-              <span className="text-slate-300">•</span>
+              <span className="text-muted-foreground/50">•</span>
               <span>{client}</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight text-slate-900 mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8 leading-[1.1]">
+            <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight text-charcoal mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8 leading-[1.1]">
               {title}
             </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-slate-600 leading-relaxed max-w-3xl font-light font-serif">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-3xl font-light font-serif">
               {subtitle}
             </p>
           </div>
@@ -91,17 +91,17 @@ export default function CaseStudyTemplate({
                 {metrics.map((metric, index) => (
                   <div key={index}>
                     <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-blue-400 mb-2">{metric.value}</div>
-                    <div className="text-slate-300 text-sm leading-relaxed">{metric.label}</div>
+                    <div className="text-muted-foreground/50 text-sm leading-relaxed">{metric.label}</div>
                   </div>
                 ))}
               </div>
             </div>
 
             <div>
-              <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-6">Capabilities</h3>
+              <h3 className="text-sm font-bold text-charcoal uppercase tracking-wider mb-6">Capabilities</h3>
               <div className="flex flex-wrap gap-2">
                 {tags.map((tag, index) => (
-                  <span key={index} className="px-3 py-1 bg-slate-100 text-slate-600 text-sm font-medium rounded-full">
+                  <span key={index} className="px-3 py-1 bg-slate-100 text-muted-foreground text-sm font-medium rounded-full">
                     {tag}
                   </span>
                 ))}
@@ -123,11 +123,11 @@ export default function CaseStudyTemplate({
           <div className="lg:col-span-8 space-y-16 order-1 lg:order-2">
             
             <section>
-              <h2 className="text-3xl font-serif font-bold text-slate-900 mb-6 flex items-center gap-3">
+              <h2 className="text-3xl font-serif font-bold text-charcoal mb-6 flex items-center gap-3">
                 <span className="w-8 h-1 bg-blue-600 block"></span>
                 The Challenge
               </h2>
-              <div className="prose prose-lg prose-slate text-slate-600 leading-relaxed">
+              <div className="prose prose-lg prose-slate text-muted-foreground leading-relaxed">
                 {challenge.split('\n').map((paragraph, i) => (
                   <p key={i}>{paragraph}</p>
                 ))}
@@ -135,11 +135,11 @@ export default function CaseStudyTemplate({
             </section>
 
             <section>
-              <h2 className="text-3xl font-serif font-bold text-slate-900 mb-6 flex items-center gap-3">
+              <h2 className="text-3xl font-serif font-bold text-charcoal mb-6 flex items-center gap-3">
                 <span className="w-8 h-1 bg-blue-600 block"></span>
                 The Solution
               </h2>
-              <div className="prose prose-lg prose-slate text-slate-600 leading-relaxed">
+              <div className="prose prose-lg prose-slate text-muted-foreground leading-relaxed">
                 {solution.split('\n').map((paragraph, i) => (
                   <p key={i}>{paragraph}</p>
                 ))}
@@ -149,22 +149,22 @@ export default function CaseStudyTemplate({
             {quote && (
               <blockquote className="border-l-4 border-blue-600 pl-8 py-2 my-12 bg-slate-50 p-4 sm:p-6 md:p-4 sm:p-6 md:p-8 rounded-r-sm">
                 <Quote className="w-8 h-8 text-blue-200 mb-4" />
-                <p className="text-2xl font-serif italic text-slate-800 mb-6 leading-relaxed">
+                <p className="text-2xl font-serif italic text-charcoal mb-6 leading-relaxed">
                   "{quote.text}"
                 </p>
                 <footer>
-                  <div className="font-bold text-slate-900">{quote.author}</div>
-                  <div className="text-slate-500 text-sm">{quote.role}</div>
+                  <div className="font-bold text-charcoal">{quote.author}</div>
+                  <div className="text-muted-foreground text-sm">{quote.role}</div>
                 </footer>
               </blockquote>
             )}
 
             <section>
-              <h2 className="text-3xl font-serif font-bold text-slate-900 mb-6 flex items-center gap-3">
+              <h2 className="text-3xl font-serif font-bold text-charcoal mb-6 flex items-center gap-3">
                 <span className="w-8 h-1 bg-blue-600 block"></span>
                 The Impact
               </h2>
-              <div className="prose prose-lg prose-slate text-slate-600 leading-relaxed">
+              <div className="prose prose-lg prose-slate text-muted-foreground leading-relaxed">
                 {impact.split('\n').map((paragraph, i) => (
                   <p key={i}>{paragraph}</p>
                 ))}

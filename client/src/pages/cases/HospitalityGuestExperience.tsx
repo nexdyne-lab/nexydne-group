@@ -19,7 +19,7 @@ export default function HospitalityGuestExperience() {
       </div>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-[#2D5BFF] via-[#4169FF] to-[#5B7FFF] text-white">
+      <section className="py-20 bg-gradient-to-r from-primary via-primary to-secondary text-white">
         <div className="container max-w-4xl">
           <h1 className="text-5xl font-bold mb-3">Hotel Chain Elevates Guest Experience Through Digital Engagement</h1>
           <p className="text-2xl opacity-95">
@@ -102,7 +102,7 @@ export default function HospitalityGuestExperience() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#FFE5D9]">
+      <section className="py-20 bg-subtle">
         <div className="container max-w-4xl text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to elevate guest experiences?</h2>
           <p className="text-lg mb-8">Let's build digital engagement that drives satisfaction and revenue.</p>
