@@ -41,6 +41,640 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   
+  /* ── Brand Color Tokens — NexDyne Brand Guideline v2 ── */
+  /* Neutrals-first system. 70–80% neutrals / 10–15% signal / 5–10% supporting. */
+
+  /* Foundation (Tier 1): neutrals that form the default environment */
+  --color-off-white: #F7F9FC;   /* Primary Background — website, decks, reports */
+  --color-white:     #FFFFFF;   /* Clarity Layer — cards, sections, data blocks */
+  --color-charcoal:  #242424;   /* Authority Layer — headlines, body text, dark sections */
+  --color-grey:      #E5E7EB;   /* Support Layer — dividers, grids, borders */
+
+  /* Signal (Tier 2): Orange-Red — emphasis only, never the canvas */
+  --color-signal:        #E04C2C;
+  --color-signal-hover:  #B83B1F;
+
+  /* Supporting (Tier 3): contextual, for HIG™ visuals + data storytelling */
+  --color-purple: #6F44A3;   /* Intelligence & Strategy — HIG "H" */
+  --color-amber:  #FFB41D;   /* Clarity & Outcomes — HIG "I" */
+
+  /* ── Legacy token aliases (do not remove — many components reference these) ── */
+  --color-base:            var(--color-charcoal);   /* was Deep Navy; now premium charcoal canvas */
+  --color-primary:         var(--color-signal);     /* CTAs, primary buttons */
+  --color-primary-hover:   var(--color-signal-hover);
+  --color-secondary:       var(--color-purple);     /* links, secondary accents */
+  --color-secondary-hover: #5A3788;
+  --color-text-light:      var(--color-off-white);  /* text on dark bg */
+  --color-text-dark:       var(--color-charcoal);   /* text on light bg */
+  --color-on-dark:         var(--color-off-white);
+  --color-subtle:          var(--color-off-white);  /* alt section bg */
+}
+
+:root {
+  /* ── NexDyne light mode (default) ──
+     Canvas: Off-White #F7F9FC · Text: Charcoal #242424 · Signal: Orange-Red #E04C2C
+     Governed Radiance — neutrals build the system; colour communicates meaning. */
+
+  --primary: var(--color-signal);                /* CTAs, primary buttons */
+  --primary-foreground: var(--color-white);
+
+  --accent: var(--color-signal);                 /* accent highlights = signal */
+  --accent-foreground: var(--color-white);
+
+  --ring: var(--color-signal);                   /* focus ring = signal */
+
+  --sidebar-primary: var(--color-charcoal);      /* dark sidebar accents */
+  --sidebar-primary-foreground: var(--color-off-white);
+
+  /* Chart palette follows HIG framework colours */
+  --chart-1: var(--color-signal);     /* Orange-Red = Governance */
+  --chart-2: var(--color-purple);     /* Purple     = Human Intelligence */
+  --chart-3: var(--color-amber);      /* Amber      = Intelligence / Insight */
+  --chart-4: var(--color-charcoal);
+  --chart-5: var(--color-grey);
+
+  --radius: 0.25rem;
+
+  --background: var(--color-off-white);          /* off-white canvas */
+  --foreground: var(--color-charcoal);
+
+  --card: var(--color-white);                    /* white cards on off-white */
+  --card-foreground: var(--color-charcoal);
+
+  --popover: var(--color-white);
+  --popover-foreground: var(--color-charcoal);
+
+  --secondary: var(--color-grey);                /* structural grey */
+  --secondary-foreground: var(--color-charcoal);
+
+  --muted: var(--color-grey);
+  --muted-foreground: #6B7280;                   /* slate-500, on structural grey */
+
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+
+  --border: var(--color-grey);
+  --input:  var(--color-grey);
+
+  --sidebar: var(--color-white);
+  --sidebar-foreground: var(--color-charcoal);
+  --sidebar-accent: var(--color-off-white);
+  --sidebar-accent-foreground: var(--color-charcoal);
+  --sidebar-border: var(--color-grey);
+  --sidebar-ring: var(--color-signal);
+}
+
+.dark {
+  /* ── NexDyne dark / "premium governance" mode ──
+     Canvas: Charcoal · Text: Off-White · Accents: Amber/Gold + subtle Orange-Red */
+
+  --primary: var(--color-signal);
+  --primary-foreground: var(--color-white);
+
+  --sidebar-primary: var(--color-signal);
+  --sidebar-primary-foreground: var(--color-white);
+
+  --background: var(--color-charcoal);
+  --foreground: var(--color-off-white);
+
+  --card: #2E2E2E;                               /* slightly lifted charcoal */
+  --card-foreground: var(--color-off-white);
+
+  --popover: #2E2E2E;
+  --popover-foreground: var(--color-off-white);
+
+  --secondary: #3A3A3A;
+  --secondary-foreground: var(--color-off-white);
+
+  --muted: #3A3A3A;
+  --muted-foreground: #B3B3B3;
+
+  --accent: var(--color-amber);                  /* amber/gold warmth on charcoal */
+  --accent-foreground: var(--color-charcoal);
+
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.985 0 0);
+
+  --border: rgba(255, 255, 255, 0.10);
+  --input:  rgba(255, 255, 255, 0.15);
+  --ring:   var(--color-signal);
+
+  --chart-1: var(--color-signal);
+  --chart-2: var(--color-amber);
+  --chart-3: var(--color-purple);
+  --chart-4: rgba(255, 255, 255, 0.40);
+  --chart-5: rgba(255, 255, 255, 0.20);
+
+  --sidebar: #1E1E1E;
+  --sidebar-foreground: var(--color-off-white);
+  --sidebar-accent: var(--color-signal);
+  --sidebar-accent-foreground: var(--color-white);
+  --sidebar-border: rgba(255, 255, 255, 0.10);
+  --sidebar-ring: var(--color-signal);
+}
+
+/* Legacy alias — previously EB Garamond, now Instrument Sans per brand v2.
+   Kept so existing component class names don't need to change. */
+.eb-garamond {
+  font-family: "Instrument Sans", system-ui, -apple-system, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.015em;
+}
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Instrument Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-feature-settings: 'ss01', 'ss02';
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Brand v2 — Instrument Sans is the sole typeface.
+     .font-serif kept as a legacy alias (now sans-serif) so old markup still renders cleanly. */
+  .font-serif {
+    font-family: "Instrument Sans", system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.015em;
+  }
+  .font-sans {
+    font-family: "Instrument Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* Typography scale — Instrument Sans, light→regular weights, tight tracking.
+     Philosophy: "thin, precisely weighted letterforms … whisper and declaration." */
+
+  /* H1 — hero headlines */
+  h1 {
+    font-family: "Instrument Sans", system-ui, -apple-system, sans-serif !important;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    color: inherit;
+  }
+  @media (min-width: 768px) { h1 { font-size: 3.5rem; } }
+  @media (min-width: 1024px) { h1 { font-size: 4rem; } }
+  h1.font-serif { font-family: "Instrument Sans", system-ui, -apple-system, sans-serif !important; }
+
+  /* H2 — section headlines */
+  h2 {
+    font-family: "Instrument Sans", system-ui, -apple-system, sans-serif !important;
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+  @media (min-width: 768px) { h2 { font-size: 2.5rem; } }
+  @media (min-width: 1024px) { h2 { font-size: 2.75rem; } }
+  h2.font-serif { font-family: "Instrument Sans", system-ui, -apple-system, sans-serif !important; }
+
+  /* H3 — subsection */
+  h3 {
+    font-family: "Instrument Sans", system-ui, -apple-system, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+  }
+  @media (min-width: 768px) { h3 { font-size: 1.875rem; } }
+  @media (min-width: 1024px) { h3 { font-size: 2rem; } }
+
+  /* H4–H6 */
+  h4 {
+    font-family: "Instrument Sans", system-ui, -apple-system, sans-serif;
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+  }
+  @media (min-width: 768px) { h4 { font-size: 1.5rem; } }
+
+  h5 {
+    font-family: "Instrument Sans", system-ui, -apple-system, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -0.005em;
+  }
+
+  /* H6 / Section Labels — ALL CAPS, bold, wide tracking */
+  h6 {
+    font-family: "Instrument Sans", system-ui, -apple-system, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  
+  /* Body text */
+  p {
+    font-size: 1rem;
+    line-height: 1.7;
+    letter-spacing: 0;
+  }
+  
+  /* Section Label - charcoal on light backgrounds */
+  .section-label {
+    font-family: "Instrument Sans", system-ui, -apple-system, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-charcoal);
+  }
+  
+  /* Link styles - Secondary accent underline, hover to primary */
+  a {
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .dz-link {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--color-secondary);
+    text-underline-offset: 3px;
+    transition: color 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out;
+  }
+  .dz-link:hover {
+    color: var(--color-primary);
+    text-decoration-color: var(--color-primary);
+  }
+  
+  /* Text size utilities */
+  .text-lg {
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+  
+  .text-sm {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  .text-xs {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+  }
+  
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+  
+  /* Form input focus - Secondary (Azure) ring */
+  input:focus, textarea:focus, select:focus {
+    transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  }
+  input:focus-visible, textarea:focus-visible, select:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-secondary);
+  }
+}
+
+@layer components {
+  /* Container utility */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+  
+  /* Primary Button - Primary accent bg, hover darken / shift to secondary */
+  .dz-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 1.75rem;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    font-family: "Instrument Sans", system-ui, -apple-system, sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+  }
+  .dz-btn-primary:hover {
+    background-color: var(--color-primary-hover);
+  }
+  .dz-btn-primary:focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 2px;
+  }
+  
+  /* Text Link CTA - Secondary underline, hover to primary */
+  .dz-text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-charcoal);
+    font-family: "Instrument Sans", system-ui, -apple-system, sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: var(--color-secondary);
+    text-underline-offset: 3px;
+    transition: all 0.2s ease-in-out;
+  }
+  .dz-text-link:hover {
+    color: var(--color-primary);
+    text-decoration-color: var(--color-primary);
+  }
+  
+  /* Card - headline hover to primary accent */
+  .dz-card {
+    background-color: var(--color-text-light);
+    padding: 1.5rem;
+    transition: none;
+  }
+  .dz-card:hover .dz-card-title {
+    color: var(--color-primary);
+  }
+  .dz-card-title {
+    transition: color 0.2s ease-in-out;
+  }
+
+  /* Section backgrounds */
+  .dz-bg-white {
+    background-color: var(--color-text-light);
+  }
+  .dz-bg-subtle {
+    background-color: var(--color-subtle);
+  }
+  .dz-bg-navy {
+    background-color: var(--color-base);
+  }
+  
+  /* DZ10 Section padding */
+  .dz-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  @media (min-width: 768px) {
+    .dz-section {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+}
+
+@layer utilities {
+  .page-transition {
+    animation: fadeIn 0.3s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* DZ10 Micro-Animation Utilities */
+  
+  /* Card hover lift effect */
+  .card-lift {
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  }
+  .card-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px -12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Card hover scale effect */
+  .card-scale {
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  }
+  .card-scale:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Premium card with lift + shadow depth */
+  .card-premium {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card-premium:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 25px 60px -20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Icon container animation */
+  .icon-animate {
+    transition: all 0.2s ease-in-out;
+  }
+  .group:hover .icon-animate {
+    transform: scale(1.1);
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+  }
+  
+  /* Text reveal animation on hover */
+  .text-reveal {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: all 0.3s ease-out;
+  }
+  .group:hover .text-reveal {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Image zoom on hover */
+  .img-zoom {
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .group:hover .img-zoom {
+    transform: scale(1.05);
+  }
+  
+  /* Arrow slide animation */
+  .arrow-slide {
+    transition: transform 0.3s ease-out;
+  }
+  .group:hover .arrow-slide {
+    transform: translateX(4px);
+  }
+  
+  /* Stagger animation delay utilities */
+  .stagger-1 { transition-delay: 0.05s; }
+  .stagger-2 { transition-delay: 0.1s; }
+  .stagger-3 { transition-delay: 0.15s; }
+  .stagger-4 { transition-delay: 0.2s; }
+  .stagger-5 { transition-delay: 0.25s; }
+  .stagger-6 { transition-delay: 0.3s; }
+  
+  /* Button hover effects */
+  .btn-hover-lift {
+    transition: all 0.2s ease-in-out;
+  }
+  .btn-hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px -8px rgba(224, 76, 44, 0.35); /* signal orange-red */
+  }
+  
+  /* Smooth color transitions */
+  .color-transition {
+    transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+  }
+  
+  /* Pulse animation for CTAs */
+  @keyframes subtle-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(224, 76, 44, 0.4); }
+    50% { box-shadow: 0 0 0 8px rgba(224, 76, 44, 0); }
+  }
+  .pulse-cta {
+    animation: subtle-pulse 2s infinite;
+  }
+  
+  /* Shimmer effect for loading states */
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  
+  /* Gradient shift animation for AI badge */
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .shimmer {
+    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+  .animate-shimmer {
+    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.2) 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+  
+  /* Touch-friendly utilities */
+  .touch-manipulation {
+    touch-action: manipulation;
+  }
+  
+  /* Improved tap highlight for mobile */
+  @media (hover: none) and (pointer: coarse) {
+    button, a, [role="button"] {
+      -webkit-tap-highlight-color: rgba(224, 76, 44, 0.15);
+    }
+  }
+  
+  /* Hide scrollbar for horizontal scroll sections */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
   /* ── Brand Color Tokens ── */
   /* Base (Deep Navy): main backgrounds, header, footer, hero, section dividers */
   --color-base: #000080;
