@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, ChevronDown } from "lucide-react";
 
 interface FeaturedSlide {
   id: number;
@@ -165,16 +164,15 @@ export function BainHero() {
                 {currentSlide.category}
               </span>
               
-              {/* Main Title - Bain Style (Libre Baskerville / Georgia) */}
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-normal text-white leading-[1.15] sm:leading-[1.1] tracking-tight mb-6 sm:mb-8 whitespace-pre-line" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+              {/* Main Title */}
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-medium text-white leading-[1.1] tracking-tight mb-6 sm:mb-8 whitespace-pre-line" style={{ letterSpacing: "-0.02em" }}>
                 {currentSlide.title}
               </h1>
-              
-              {/* CTA Link */}
+
+              {/* CTA Link — text with underline on hover */}
               <Link href={currentSlide.ctaLink}>
-                <span className="group inline-flex items-center gap-3 text-white text-sm font-medium tracking-wider uppercase hover:opacity-80 transition-opacity cursor-pointer">
+                <span className="inline-block text-white text-sm font-semibold tracking-[0.15em] uppercase border-b border-white/60 pb-1 hover:border-white transition-colors cursor-pointer">
                   {currentSlide.ctaText}
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Link>
             </motion.div>
@@ -221,13 +219,13 @@ export function BainHero() {
               ))}
             </div>
 
-            {/* Scroll Indicator */}
-            <button 
-              className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-white/30 flex items-center justify-center text-white/70 hover:text-white hover:border-white/60 transition-colors"
+            {/* Scroll Indicator — minimal text cue, no icon */}
+            <button
+              className="flex-shrink-0 text-[11px] font-semibold tracking-[0.2em] uppercase text-white/60 hover:text-white transition-colors pb-1 border-b border-white/30 hover:border-white/80"
               onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
               aria-label="Scroll down"
             >
-              <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5" />
+              Scroll
             </button>
           </div>
         </div>
