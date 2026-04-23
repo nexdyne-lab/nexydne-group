@@ -1,10 +1,14 @@
-import React from 'react';
-import { Link } from 'wouter';
-import { Separator } from '@/components/ui/separator';
-import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle2, BarChart3, Quote } from 'lucide-react';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+// CaseStudyTemplate.tsx — PR 2 rewrite
+// Changes: removed lucide-react, shadcn Button, font-serif, gradient overlays,
+// bg-blue-* colors, rounded pills/cards. Light editorial layout with
+// split-grid hero (image left, text right) matching Home.tsx Careers section.
+// Metric grid replaces icon+text layout. Pullquote is typography-only.
+
+import React from "react";
+import { Link } from "wouter";
+import { Separator } from "@/components/ui/separator";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 interface Metric {
   value: string;
@@ -48,147 +52,198 @@ export default function CaseStudyTemplate({
   relatedCapability
 }: CaseStudyTemplateProps) {
   return (
-    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-blue-100">
+    <div className="min-h-screen bg-white text-charcoal">
       <Navigation />
 
-      {/* Hero Section */}
-      <header className="pt-32 pb-20 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <div className="flex items-center gap-3 text-sm font-bold text-blue-700 uppercase tracking-wider mb-6">
-              <span>{industry}</span>
-              <span className="text-muted-foreground/50">•</span>
-              <span>{client}</span>
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-charcoal mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8 leading-[1.1]">
+      {/* Hero — split-grid, image left / text right. No gradient overlay. */}
+      <section className="w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[520px]">
+          {/* Left — full image, flat overlay for legibility if needed */}
+          <div className="relative min-h-[340px] lg:min-h-0 overflow-hidden">
+            <img
+              src={heroImage}
+              alt={title}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            {/* Flat single-color overlay — only when image is dark enough to warrant it */}
+            <div className="absolute inset-0 bg-charcoal/10" />
+          </div>
+
+          {/* Right — text column */}
+          <div className="bg-white flex flex-col justify-center px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24 py-20 md:py-24">
+            {/* Industry + client eyebrow */}
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              {industry} · {client}
+            </span>
+            <h1
+              className="text-3xl sm:text-4xl md:text-[2.75rem] lg:text-[3.25rem] text-charcoal leading-[1.1] mb-6"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
               {title}
             </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-3xl font-light ">
+            <p className="text-base sm:text-lg text-charcoal/80 leading-[1.7] mb-10 max-w-xl">
               {subtitle}
             </p>
-          </div>
-        </div>
-      </header>
 
-      {/* Hero Image */}
-      <div className="w-full h-[60vh] overflow-hidden relative">
-        <img 
-          src={heroImage} 
-          alt={title} 
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent opacity-60"></div>
-      </div>
-
-      <main className="container mx-auto px-4 py-12 sm:py-16 lg:py-20">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-8 sm:gap-12 lg:gap-16">
-          
-          {/* Left Column: Key Metrics & Tags */}
-          <div className="lg:col-span-4 space-y-12 order-2 lg:order-1">
-            <div className="bg-slate-900 text-white p-4 sm:p-6 md:p-4 sm:p-6 md:p-8 rounded-sm">
-              <h3 className="text-sm font-bold uppercase tracking-wider mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8 border-b border-slate-700 pb-4">Key Results</h3>
-              <div className="space-y-8">
-                {metrics.map((metric, index) => (
-                  <div key={index}>
-                    <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-blue-400 mb-2">{metric.value}</div>
-                    <div className="text-muted-foreground/50 text-sm leading-relaxed">{metric.label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-sm font-bold text-charcoal uppercase tracking-wider mb-6">Capabilities</h3>
-              <div className="flex flex-wrap gap-2">
-                {tags.map((tag, index) => (
-                  <span key={index} className="px-3 py-1 bg-slate-100 text-muted-foreground text-sm font-medium rounded-full">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            <div className="p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 bg-blue-50 border border-blue-100 rounded-sm">
-              <h4 className="font-bold text-blue-900 mb-2">Ready to achieve similar results?</h4>
-              <p className="text-sm text-blue-800 mb-4">See how our {relatedCapability.title} practice can help.</p>
+            {/* Capability link */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">
               <Link href={relatedCapability.link}>
-                <Button variant="link" className="p-0 h-auto text-blue-700 font-bold hover:text-blue-900">
-                  Explore Capability <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1" />
-                </Button>
+                <span className="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold text-[13px] tracking-[0.1em] uppercase hover:bg-primary-hover transition-colors cursor-pointer">
+                  Explore {relatedCapability.title}
+                </span>
+              </Link>
+              <Link href="/case-studies">
+                <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-charcoal border-b border-charcoal/40 hover:border-primary hover:text-primary transition-colors cursor-pointer pb-1">
+                  All Case Studies
+                </span>
               </Link>
             </div>
-          </div>
-
-          {/* Right Column: Narrative */}
-          <div className="lg:col-span-8 space-y-16 order-1 lg:order-2">
-            
-            <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-6 flex items-center gap-3">
-                <span className="w-8 h-1 bg-blue-600 block"></span>
-                The Challenge
-              </h2>
-              <div className="prose prose-lg prose-slate text-muted-foreground leading-relaxed">
-                {challenge.split('\n').map((paragraph, i) => (
-                  <p key={i}>{paragraph}</p>
-                ))}
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-6 flex items-center gap-3">
-                <span className="w-8 h-1 bg-blue-600 block"></span>
-                The Solution
-              </h2>
-              <div className="prose prose-lg prose-slate text-muted-foreground leading-relaxed">
-                {solution.split('\n').map((paragraph, i) => (
-                  <p key={i}>{paragraph}</p>
-                ))}
-              </div>
-            </section>
-
-            {quote && (
-              <blockquote className="border-l-4 border-blue-600 pl-8 py-2 my-12 bg-slate-50 p-4 sm:p-6 md:p-4 sm:p-6 md:p-8 rounded-r-sm">
-                <Quote className="w-8 h-8 text-blue-200 mb-4" />
-                <p className="text-2xl text-charcoal mb-6 leading-relaxed">
-                  "{quote.text}"
-                </p>
-                <footer>
-                  <div className="font-bold text-charcoal">{quote.author}</div>
-                  <div className="text-muted-foreground text-sm">{quote.role}</div>
-                </footer>
-              </blockquote>
-            )}
-
-            <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-6 flex items-center gap-3">
-                <span className="w-8 h-1 bg-blue-600 block"></span>
-                The Impact
-              </h2>
-              <div className="prose prose-lg prose-slate text-muted-foreground leading-relaxed">
-                {impact.split('\n').map((paragraph, i) => (
-                  <p key={i}>{paragraph}</p>
-                ))}
-              </div>
-            </section>
-
-            <Separator className="my-12" />
-
-            <div className="flex justify-between items-center">
-              <Link href="/cases">
-                <Button variant="outline" className="gap-2">
-                  <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 rotate-180" /> Back to all cases
-                </Button>
-              </Link>
-              <Link href="/contact">
-                <Button className="gap-2 bg-blue-700 hover:bg-blue-800 text-white">
-                  Start your project <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
-                </Button>
-              </Link>
-            </div>
-
           </div>
         </div>
-      </main>
+      </section>
+
+      {/* Key Metrics — typography grid, no icons, no dark card */}
+      <section className="py-20 md:py-24 bg-subtle">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16">
+          <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            Key Results
+          </span>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 md:gap-12">
+            {metrics.map((metric, index) => (
+              <div key={index}>
+                <p
+                  className="text-3xl sm:text-4xl md:text-5xl text-primary mb-2"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  {metric.value}
+                </p>
+                <p className="text-[13px] text-charcoal/60 leading-[1.6]">
+                  {metric.label}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Narrative — two-column layout */}
+      <section className="py-20 md:py-24 bg-white">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+
+            {/* Left sidebar — tags + related capability */}
+            <div className="lg:col-span-4 order-2 lg:order-1 space-y-12">
+              {/* Capabilities tags — square pills */}
+              <div>
+                <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+                  Capabilities
+                </span>
+                <div className="flex flex-wrap gap-2">
+                  {tags.map((tag, index) => (
+                    <span
+                      key={index}
+                      className="px-3 py-1.5 bg-subtle text-charcoal/70 text-[12px] font-medium tracking-[0.05em]"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Related capability CTA */}
+              <div className="border-t border-charcoal/10 pt-8">
+                <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-4">
+                  Ready for Similar Results?
+                </span>
+                <p className="text-[14px] text-charcoal/70 leading-[1.65] mb-6">
+                  See how our {relatedCapability.title} practice can help your organization.
+                </p>
+                <Link href={relatedCapability.link}>
+                  <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-charcoal border-b border-charcoal/40 hover:border-primary hover:text-primary transition-colors cursor-pointer pb-1">
+                    Explore Capability
+                  </span>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right column — narrative prose */}
+            <div className="lg:col-span-8 order-1 lg:order-2 space-y-14">
+
+              {/* The Challenge */}
+              <div>
+                <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+                  The Challenge
+                </span>
+                <div className="space-y-4 text-base text-charcoal/80 leading-[1.7]">
+                  {challenge.split("\n").map((paragraph, i) => (
+                    paragraph.trim() ? <p key={i}>{paragraph}</p> : null
+                  ))}
+                </div>
+              </div>
+
+              {/* The Solution */}
+              <div>
+                <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+                  The Solution
+                </span>
+                <div className="space-y-4 text-base text-charcoal/80 leading-[1.7]">
+                  {solution.split("\n").map((paragraph, i) => (
+                    paragraph.trim() ? <p key={i}>{paragraph}</p> : null
+                  ))}
+                </div>
+              </div>
+
+              {/* Pullquote — no icon, typography-only */}
+              {quote && (
+                <blockquote className="border-l-4 border-primary pl-8 py-4">
+                  <p
+                    className="text-xl sm:text-2xl text-charcoal leading-[1.4] mb-6"
+                    style={{ fontWeight: 400, letterSpacing: "-0.01em" }}
+                  >
+                    "{quote.text}"
+                  </p>
+                  <footer>
+                    <p className="text-[13px] font-semibold uppercase tracking-[0.1em] text-charcoal">
+                      {quote.author}
+                    </p>
+                    <p className="text-[13px] text-charcoal/60 mt-1">
+                      {quote.role}
+                    </p>
+                  </footer>
+                </blockquote>
+              )}
+
+              {/* The Impact */}
+              <div>
+                <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+                  The Impact
+                </span>
+                <div className="space-y-4 text-base text-charcoal/80 leading-[1.7]">
+                  {impact.split("\n").map((paragraph, i) => (
+                    paragraph.trim() ? <p key={i}>{paragraph}</p> : null
+                  ))}
+                </div>
+              </div>
+
+              <Separator className="my-4" />
+
+              {/* Bottom nav — text-link CTAs, no icon arrows */}
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+                <Link href="/case-studies">
+                  <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-charcoal border-b border-charcoal/40 hover:border-primary hover:text-primary transition-colors cursor-pointer pb-1">
+                    Back to All Case Studies
+                  </span>
+                </Link>
+                <Link href="/contact">
+                  <span className="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold text-[13px] tracking-[0.1em] uppercase hover:bg-primary-hover transition-colors cursor-pointer">
+                    Start Your Project
+                  </span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </div>
