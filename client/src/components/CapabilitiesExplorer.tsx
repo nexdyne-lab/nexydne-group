@@ -1,5 +1,4 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, ChevronDown, ChevronUp } from "lucide-react";
 import { Link } from "wouter";
 import { useState } from "react";
 
@@ -189,11 +188,9 @@ export function CapabilitiesExplorer() {
                   <span className="font-medium text-sm sm:text-base truncate pr-2">
                     {selectedCapability ? selectedCapability.title : 'Capabilities'}
                   </span>
-                  {activeDropdown === 'capabilities' ? (
-                    <ChevronUp className="w-5 h-5 flex-shrink-0" />
-                  ) : (
-                    <ChevronDown className="w-5 h-5 flex-shrink-0" />
-                  )}
+                  <span className="font-light text-lg leading-none flex-shrink-0 select-none" aria-hidden="true">
+                    {activeDropdown === 'capabilities' ? '−' : '+'}
+                  </span>
                 </button>
 
                 {/* Capabilities Dropdown Menu */}
@@ -233,11 +230,9 @@ export function CapabilitiesExplorer() {
                   <span className="font-medium text-sm sm:text-base truncate pr-2">
                     {selectedIndustry ? selectedIndustry.title : 'Industries'}
                   </span>
-                  {activeDropdown === 'industries' ? (
-                    <ChevronUp className="w-5 h-5 flex-shrink-0" />
-                  ) : (
-                    <ChevronDown className="w-5 h-5 flex-shrink-0" />
-                  )}
+                  <span className="font-light text-lg leading-none flex-shrink-0 select-none" aria-hidden="true">
+                    {activeDropdown === 'industries' ? '−' : '+'}
+                  </span>
                 </button>
 
                 {/* Industries Dropdown Menu */}
@@ -307,28 +302,20 @@ export function CapabilitiesExplorer() {
                   </span>
                   
                   {/* Title */}
-                  <h3 
-                    className="text-xl sm:text-2xl md:text-3xl text-charcoal leading-tight mb-4"
-                    style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
-                  >
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-medium text-charcoal leading-tight mb-4" style={{ letterSpacing: "-0.015em" }}>
                     {currentSelection.title}
                   </h3>
-                  
+
                   {/* Description */}
                   <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed mb-6">
                     {currentSelection.description}
                   </p>
-                  
+
                   {/* CTA Button */}
                   <Link href={currentSelection.link}>
-                    <motion.button
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-base text-white rounded-full font-semibold text-sm sm:text-base hover:bg-secondary transition-colors"
-                    >
-                      EXPLORE
-                      <ArrowRight className="w-4 h-4" />
-                    </motion.button>
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold text-[13px] tracking-[0.1em] uppercase hover:bg-primary-hover transition-colors cursor-pointer">
+                      Explore
+                    </span>
                   </Link>
                 </div>
               </motion.div>
