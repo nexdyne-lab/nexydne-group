@@ -35,7 +35,7 @@ export default function WhyIntelligentAutomationInsight() {
               <span className="text-primary text-sm font-semibold tracking-wider uppercase mb-4 block">
                 Strategy
               </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-3 text-charcoal font-serif">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-3 text-charcoal ">
                 Why Intelligent Automation Isn't Optional Anymore
               </h1>
               <p className="text-xl text-charcoal/70 leading-relaxed mb-8">
@@ -74,11 +74,11 @@ export default function WhyIntelligentAutomationInsight() {
               className="prose prose-lg max-w-none"
             >
               {/* Lead Paragraph */}
-              <p className="text-xl text-charcoal leading-relaxed font-serif mb-8 not-prose">
+              <p className="text-xl text-charcoal leading-relaxed mb-8 not-prose">
                 Five years ago, intelligent automation was a competitive advantage. Today, it's table stakes. The organizations that recognized this shift early are now operating at a fundamentally different level of efficiency and agility than their peers.
               </p>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 font-serif">The New Competitive Reality</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">The New Competitive Reality</h2>
               
               <p className="text-charcoal/80 leading-relaxed mb-6">
                 The data is unambiguous. According to recent research from McKinsey, organizations that have successfully scaled automation are seeing 20-30% improvements in operational efficiency. More importantly, they're using these gains not just to cut costs, but to reinvest in growth, innovation, and customer experience.
@@ -90,12 +90,12 @@ export default function WhyIntelligentAutomationInsight() {
 
               {/* Pull Quote */}
               <blockquote className="border-l-4 border-primary pl-6 my-10 not-prose">
-                <p className="text-2xl text-charcoal font-serif italic leading-relaxed">
+                <p className="text-2xl text-charcoal leading-relaxed">
                   "The question is no longer whether to automate, but how quickly you can scale automation across your organization."
                 </p>
               </blockquote>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 font-serif">Three Forces Driving the Imperative</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">Three Forces Driving the Imperative</h2>
 
               <h3 className="text-xl font-bold text-charcoal mt-8 mb-4">1. Labor Market Dynamics</h3>
               <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -130,7 +130,7 @@ export default function WhyIntelligentAutomationInsight() {
                 </div>
               </div>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 font-serif">What Separates Leaders from Laggards</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">What Separates Leaders from Laggards</h2>
 
               <p className="text-charcoal/80 leading-relaxed mb-6">
                 Our research into automation success patterns reveals clear differentiators between organizations that achieve transformational results and those that struggle to scale beyond pilots.
@@ -148,7 +148,7 @@ export default function WhyIntelligentAutomationInsight() {
                 <strong>Leaders think in platforms, not projects.</strong> Rather than implementing automation one process at a time, leaders build reusable platforms and capabilities that accelerate subsequent automation initiatives.
               </p>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 font-serif">The Path Forward</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">The Path Forward</h2>
 
               <p className="text-charcoal/80 leading-relaxed mb-6">
                 For organizations that haven't yet begun their automation journey, the time to start is now. The good news is that the technology has matured significantly, implementation approaches have been refined, and the path to value is clearer than ever.
@@ -245,7 +245,7 @@ export default function WhyIntelligentAutomationInsight() {
       <section className="py-16 md:py-20 bg-subtle">
         <div className="container px-4 md:px-8 lg:px-12">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-8 font-serif">More Insights</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-8 ">More Insights</h2>
             
             <div className="grid md:grid-cols-3 gap-8">
               {[
@@ -280,7 +280,7 @@ export default function WhyIntelligentAutomationInsight() {
                       <span className="text-primary font-semibold uppercase tracking-wider">{insight.category}</span>
                       <span className="text-muted-foreground">{insight.readTime}</span>
                     </div>
-                    <h3 className="text-lg font-bold text-charcoal mb-4 group-hover:text-primary transition-colors font-serif leading-snug">
+                    <h3 className="text-lg font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-snug">
                       {insight.title}
                     </h3>
                     <span className="inline-flex items-center text-primary text-sm font-medium">

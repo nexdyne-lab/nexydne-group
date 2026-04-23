@@ -128,7 +128,7 @@ export default function DistinctiveExpertise() {
               className="lg:col-span-4"
             >
               <div className="lg:sticky lg:top-32">
-                <h3 className="text-2xl md:text-3xl font-serif font-bold text-charcoal mb-6">The Reinvention Trap</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-charcoal mb-6">The Reinvention Trap</h3>
                 <p className="text-lg text-charcoal/70 leading-relaxed mb-5 sm:mb-6 md:mb-8">
                   Most mid-market companies approach growth initiatives as if they're inventing something entirely new. They spend months developing custom frameworks, testing unproven approaches, and learning lessons that others have already learned—often the hard way.
                 </p>
@@ -172,28 +172,28 @@ export default function DistinctiveExpertise() {
                 
                 <div className="grid md:grid-cols-2 gap-x-12 gap-y-16">
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Industry-Specific Playbooks</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Industry-Specific Playbooks</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       We maintain comprehensive playbooks for 12 core industries, each containing market entry strategies, competitive positioning frameworks, and operational best practices. These playbooks codify lessons from successful transformations—documenting what works, what fails, and why. Rather than generic consulting advice, you receive specific guidance tailored to your industry's unique dynamics, regulatory environment, and competitive landscape.
                     </p>
                   </div>
 
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Growth Strategy Templates</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Growth Strategy Templates</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       Our growth strategy templates provide structured frameworks for market expansion, product diversification, and partnership development. Each template includes scenario modeling tools, resource allocation guidelines, and risk assessment matrices. We've standardized the strategic planning process, enabling you to develop comprehensive growth strategies in weeks rather than months while maintaining analytical rigor and strategic depth.
                     </p>
                   </div>
 
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Best Practice Repositories</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Best Practice Repositories</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       We provide access to curated repositories of operational best practices spanning sales enablement, customer success, product development, and financial management. These repositories contain process documentation, workflow templates, and performance benchmarks from high-performing mid-market companies. You can implement proven processes immediately rather than developing them through costly trial and error.
                     </p>
                   </div>
 
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Transformation Roadmaps</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Transformation Roadmaps</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       Our transformation roadmaps provide phase-by-phase implementation plans for complex initiatives. Each roadmap defines critical milestones, resource requirements, and success criteria while anticipating common obstacles and providing mitigation strategies. These roadmaps compress transformation timelines by eliminating planning delays and providing clear execution pathways that teams can follow with confidence.
                     </p>
@@ -308,15 +308,15 @@ export default function DistinctiveExpertise() {
           >
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 mb-6 sm:mb-8 md:mb-12">
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-2">3 Weeks</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">3 Weeks</div>
                 <p className="text-sm text-charcoal/50 uppercase tracking-wider font-medium">Strategy Development Time</p>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-2">60%</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">60%</div>
                 <p className="text-sm text-charcoal/50 uppercase tracking-wider font-medium">Faster Time to Market</p>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-2">$3.2M</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">$3.2M</div>
                 <p className="text-sm text-charcoal/50 uppercase tracking-wider font-medium">First-Year Revenue</p>
               </div>
             </div>

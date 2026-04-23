@@ -158,12 +158,12 @@ export default function CommercialArchitecture() {
                 <div className="p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300 hover:bg-white/10">
                   <div className="flex gap-4 sm:p-5 md:p-6">
                     <div className="flex-shrink-0">
-                      <div className="w-14 h-14 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center text-primary font-bold font-serif text-2xl group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                      <div className="w-14 h-14 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center text-primary font-bold text-2xl group-hover:bg-primary group-hover:text-white transition-all duration-300">
                         {item.number}
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors">
+                      <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
                         {item.title}
                       </h3>
                       <p className="text-white/60 leading-relaxed">
@@ -216,7 +216,7 @@ export default function CommercialArchitecture() {
                 className="group"
               >
                 <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-base/5 hover:bg-base transition-all duration-500 hover:scale-[1.02]">
-                  <div className="text-5xl font-serif font-bold text-primary mb-2 group-hover:text-white transition-colors">
+                  <div className="text-5xl font-bold text-primary mb-2 group-hover:text-white transition-colors">
                     {item.metric}
                   </div>
                   <div className="text-sm font-bold text-charcoal/60 uppercase tracking-wider mb-6 group-hover:text-white/60 transition-colors">
@@ -270,7 +270,7 @@ export default function CommercialArchitecture() {
               >
                 <Link href={item.link} className="group block h-full">
                   <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300 hover:bg-white/10">
-                    <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors flex items-center gap-2">
+                    <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors flex items-center gap-2">
                       {item.title}
                       <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-primary opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
                     </h3>

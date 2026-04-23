@@ -79,15 +79,15 @@ export function MunicipalPermitSystem() {
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">7 days</div>
+              <div className="text-5xl font-bold text-primary mb-2">7 days</div>
               <div className="text-lg text-muted-foreground">Average approval time</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">82%</div>
+              <div className="text-5xl font-bold text-primary mb-2">82%</div>
               <div className="text-lg text-muted-foreground">Online submission rate</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">58 pts</div>
+              <div className="text-5xl font-bold text-primary mb-2">58 pts</div>
               <div className="text-lg text-muted-foreground">Satisfaction improvement</div>
             </div>
           </div>

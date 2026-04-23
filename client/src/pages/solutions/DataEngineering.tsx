@@ -64,7 +64,7 @@ export default function DataEngineering() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                  <FastForward className="w-6 h-6 text-blue-600" />
+                  <FastForward className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold">Faster delivery</h3>
                 <p className="text-muted-foreground">
@@ -74,7 +74,7 @@ export default function DataEngineering() {
 
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                  <Award className="w-6 h-6 text-blue-600" />
+                  <Award className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold">Proven expertise</h3>
                 <p className="text-muted-foreground">
@@ -84,7 +84,7 @@ export default function DataEngineering() {
 
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                  <Users className="w-6 h-6 text-blue-600" />
+                  <Users className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold">Flexible capacity</h3>
                 <p className="text-muted-foreground">
@@ -94,7 +94,7 @@ export default function DataEngineering() {
 
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                  <BookOpen className="w-6 h-6 text-blue-600" />
+                  <BookOpen className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold">Knowledge transfer</h3>
                 <p className="text-muted-foreground">
@@ -104,7 +104,7 @@ export default function DataEngineering() {
 
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                  <Target className="w-6 h-6 text-blue-600" />
+                  <Target className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold">End-to-end ownership</h3>
                 <p className="text-muted-foreground">
@@ -199,19 +199,19 @@ export default function DataEngineering() {
               <div className="text-center">
                 <div className="text-2xl font-bold text-destructive mb-4">Glean</div>
                 <div className="w-32 h-32 mx-auto bg-blue-100 rounded-lg flex items-center justify-center">
-                  <span className="text-4xl text-blue-600">g</span>
+                  <span className="text-4xl text-primary">g</span>
                 </div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-destructive mb-4">Weaviate</div>
                 <div className="w-32 h-32 mx-auto bg-blue-100 rounded-lg flex items-center justify-center">
-                  <span className="text-4xl text-blue-600">W</span>
+                  <span className="text-4xl text-primary">W</span>
                 </div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-destructive mb-4">LangChain</div>
                 <div className="w-32 h-32 mx-auto bg-blue-100 rounded-lg flex items-center justify-center">
-                  <span className="text-4xl text-blue-600">🦜</span>
+                  <span className="text-4xl text-primary">🦜</span>
                 </div>
               </div>
             </div>

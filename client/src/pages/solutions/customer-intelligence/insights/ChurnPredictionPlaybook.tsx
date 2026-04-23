@@ -122,7 +122,7 @@ export default function ChurnPredictionPlaybook() {
                 The features you use to predict churn are more important than the algorithm you choose. Based on our experience across 50+ SaaS churn projects, here are the feature categories that consistently drive predictive power:
               </p>
 
-              <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Product Usage Features</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Product Usage Features</h3>
 
               <p>
                 These are typically your strongest predictors. Key metrics include:
@@ -153,7 +153,7 @@ export default function ChurnPredictionPlaybook() {
                 </ul>
               </div>
 
-              <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Support & Sentiment Features</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Support & Sentiment Features</h3>
 
               <p>
                 Customer support interactions often signal dissatisfaction before it manifests in usage decline:
@@ -184,7 +184,7 @@ export default function ChurnPredictionPlaybook() {
                 </ul>
               </div>
 
-              <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Commercial Features</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Commercial Features</h3>
 
               <p>
                 Contract and billing data provide important context:
@@ -236,13 +236,13 @@ export default function ChurnPredictionPlaybook() {
                 With your features assembled and horizon defined, it's time to build the model. A few practical recommendations:
               </p>
 
-              <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Algorithm Selection</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Algorithm Selection</h3>
 
               <p>
                 For churn prediction, gradient boosting models (XGBoost, LightGBM) typically outperform other approaches. They handle mixed feature types well, are robust to outliers, and provide feature importance insights that help with explainability.
               </p>
 
-              <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Handling Class Imbalance</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Handling Class Imbalance</h3>
 
               <p>
                 Churn is typically a rare event (5-15% of customers), creating class imbalance. Techniques to address this:
@@ -255,7 +255,7 @@ export default function ChurnPredictionPlaybook() {
                 <li>Optimize for precision-recall rather than accuracy</li>
               </ul>
 
-              <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Validation Strategy</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Validation Strategy</h3>
 
               <p>
                 Use time-based cross-validation to simulate real-world deployment. Train on historical data, validate on future data. This prevents data leakage and gives you realistic performance estimates.
@@ -267,7 +267,7 @@ export default function ChurnPredictionPlaybook() {
                 A churn prediction model is worthless if it doesn't drive action. The final step is connecting predictions to interventions.
               </p>
 
-              <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Risk Stratification</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Risk Stratification</h3>
 
               <p>
                 Convert continuous probability scores into actionable risk tiers:
@@ -299,7 +299,7 @@ export default function ChurnPredictionPlaybook() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Intervention Playbooks</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Intervention Playbooks</h3>
 
               <p>
                 Develop specific playbooks for each risk tier and churn driver. If the model identifies "declining usage" as the primary risk factor, the intervention should address that specifically—perhaps a training session or feature walkthrough—rather than a generic discount offer.

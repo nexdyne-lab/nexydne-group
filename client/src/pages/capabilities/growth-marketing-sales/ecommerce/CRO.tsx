@@ -76,7 +76,7 @@ export function CRO() {
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="p-3 bg-blue-100 rounded-lg h-fit">
-                    <Zap className="w-6 h-6 text-blue-600" />
+                    <Zap className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h4 className="font-bold text-charcoal mb-2">Site Speed & Performance</h4>
@@ -85,7 +85,7 @@ export function CRO() {
                 </div>
                 <div className="flex gap-4">
                   <div className="p-3 bg-blue-100 rounded-lg h-fit">
-                    <MousePointerClick className="w-6 h-6 text-blue-600" />
+                    <MousePointerClick className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h4 className="font-bold text-charcoal mb-2">UX & Usability</h4>
@@ -94,7 +94,7 @@ export function CRO() {
                 </div>
                 <div className="flex gap-4">
                   <div className="p-3 bg-blue-100 rounded-lg h-fit">
-                    <Users className="w-6 h-6 text-blue-600" />
+                    <Users className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h4 className="font-bold text-charcoal mb-2">Trust & Social Proof</h4>
@@ -113,22 +113,22 @@ export function CRO() {
             <div className="grid md:grid-cols-4 gap-4 sm:p-6 md:p-8">
               {[
                 {
-                  icon: <Search className="w-8 h-8 text-blue-600" />,
+                  icon: <Search className="w-8 h-8 text-primary" />,
                   title: "Analyze",
                   desc: "Gather data from GA4, heatmaps, and session recordings to find drop-off points."
                 },
                 {
-                  icon: <BarChart3 className="w-8 h-8 text-blue-600" />,
+                  icon: <BarChart3 className="w-8 h-8 text-primary" />,
                   title: "Hypothesize",
                   desc: "Formulate data-backed theories on what changes will drive lift."
                 },
                 {
-                  icon: <Smartphone className="w-8 h-8 text-blue-600" />,
+                  icon: <Smartphone className="w-8 h-8 text-primary" />,
                   title: "Experiment",
                   desc: "Design and launch controlled A/B tests to validate hypotheses."
                 },
                 {
-                  icon: <CheckCircle2 className="w-8 h-8 text-blue-600" />,
+                  icon: <CheckCircle2 className="w-8 h-8 text-primary" />,
                   title: "Iterate",
                   desc: "Implement winners, learn from losers, and restart the cycle."
                 }

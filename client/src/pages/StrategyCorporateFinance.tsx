@@ -149,7 +149,7 @@ export default function StrategyCorporateFinance() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className=" pl-6"
+                className="pl-6"
               >
                 <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-3">{item.metric}</div>
                 <p className="text-lg text-charcoal/60">{item.label}</p>
@@ -219,7 +219,7 @@ export default function StrategyCorporateFinance() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Our Approach
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold">
+            <h2 className="text-4xl md:text-5xl font-bold">
               Build a finance function that drives growth
             </h2>
           </motion.div>
@@ -275,7 +275,7 @@ export default function StrategyCorporateFinance() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
               Our Strategy & Finance Capabilities
             </h2>
             <p className="text-xl text-charcoal/60 max-w-2xl">
@@ -317,7 +317,7 @@ export default function StrategyCorporateFinance() {
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Client Results
               </span>
-              <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal">
+              <h2 className="text-4xl md:text-5xl font-bold text-charcoal">
                 Driving financial transformation
               </h2>
             </motion.div>
@@ -363,7 +363,7 @@ export default function StrategyCorporateFinance() {
                     </span>
                   </div>
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
+                <h3 className="text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                   {study.title}
                 </h3>
                 <p className="text-charcoal/60 mb-4 leading-relaxed">
@@ -391,7 +391,7 @@ export default function StrategyCorporateFinance() {
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Insights
               </span>
-              <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal">
+              <h2 className="text-4xl md:text-5xl font-bold text-charcoal">
                 Latest Insights
               </h2>
             </motion.div>
@@ -436,7 +436,7 @@ export default function StrategyCorporateFinance() {
                   <span className="text-charcoal/40">•</span>
                   <span className="text-charcoal/40 text-xs">{insight.readTime}</span>
                 </div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
+                <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                   {insight.title}
                 </h3>
                 <p className="text-charcoal/60 text-sm mb-4 leading-relaxed">
@@ -464,7 +464,7 @@ export default function StrategyCorporateFinance() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Related Capabilities
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">
               Explore related capabilities
             </h2>
           </motion.div>
@@ -499,7 +499,7 @@ export default function StrategyCorporateFinance() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Ready to transform your financial strategy?
             </h2>
             <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">

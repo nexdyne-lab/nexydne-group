@@ -36,7 +36,7 @@ export default function ModernSalesStack() {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-3 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold mb-3 leading-tight">
             Architecting the Modern Sales Stack: Consolidation is the New Innovation
           </h1>
           
@@ -143,7 +143,7 @@ export default function ModernSalesStack() {
               </div>
               <div>
                 <h4 className="font-bold text-charcoal text-lg">Elena Rodriguez</h4>
-                <p className="text-blue-600 font-medium text-sm mb-2">Associate Partner, RevOps</p>
+                <p className="text-primary font-medium text-sm mb-2">Associate Partner, RevOps</p>
                 <p className="text-muted-foreground text-sm">
                   Elena leads the Revenue Operations practice at NexDyne. She specializes in CRM architecture and has overseen stack migrations for 50+ enterprise clients.
                 </p>
@@ -169,13 +169,13 @@ export default function ModernSalesStack() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <h4 className="font-bold text-lg group-hover:text-blue-600 transition-colors">
+                  <h4 className="font-bold text-lg group-hover:text-primary transition-colors">
                     The End of "Gut Feel" Forecasting
                   </h4>
                   <p className="text-muted-foreground text-sm mt-2">
                     How predictive AI is replacing manual commits and increasing forecast accuracy.
                   </p>
-                  <div className="flex items-center text-blue-600 font-medium text-sm mt-3 group-hover:translate-x-1 transition-transform">
+                  <div className="flex items-center text-primary font-medium text-sm mt-3 group-hover:translate-x-1 transition-transform">
                     Read Article <ArrowRight className="ml-1 w-3 h-3" />
                   </div>
                 </div>
@@ -189,13 +189,13 @@ export default function ModernSalesStack() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <h4 className="font-bold text-lg group-hover:text-blue-600 transition-colors">
+                  <h4 className="font-bold text-lg group-hover:text-primary transition-colors">
                     Algorithmic Territory Planning
                   </h4>
                   <p className="text-muted-foreground text-sm mt-2">
                     Using geospatial data and propensity modeling to optimize sales coverage.
                   </p>
-                  <div className="flex items-center text-blue-600 font-medium text-sm mt-3 group-hover:translate-x-1 transition-transform">
+                  <div className="flex items-center text-primary font-medium text-sm mt-3 group-hover:translate-x-1 transition-transform">
                     Read Article <ArrowRight className="ml-1 w-3 h-3" />
                   </div>
                 </div>

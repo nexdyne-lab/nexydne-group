@@ -172,7 +172,7 @@ export default function GenerativeSupplyChain() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <h4 className="font-bold text-lg group-hover:text-blue-600 transition-colors">
+                  <h4 className="font-bold text-lg group-hover:text-primary transition-colors">
                     Beyond Segmentation: The Era of N=1 Marketing
                   </h4>
                   <p className="text-muted-foreground text-sm mt-2">
@@ -189,7 +189,7 @@ export default function GenerativeSupplyChain() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <h4 className="font-bold text-lg group-hover:text-blue-600 transition-colors">
+                  <h4 className="font-bold text-lg group-hover:text-primary transition-colors">
                     Why Intelligent Automation Isn't Optional Anymore
                   </h4>
                   <p className="text-muted-foreground text-sm mt-2">

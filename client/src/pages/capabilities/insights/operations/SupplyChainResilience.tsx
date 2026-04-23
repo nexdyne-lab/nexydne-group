@@ -83,7 +83,7 @@ export default function SupplyChainResilience() {
       <article className="py-16">
         <div className="container max-w-3xl">
           <div className="prose prose-lg max-w-none">
-            <p className="text-xl text-charcoal/80 leading-relaxed mb-8 font-serif">
+            <p className="text-xl text-charcoal/80 leading-relaxed mb-8 ">
               The past few years have taught every company the importance of supply chain resilience. But for mid-size companies, building resilience often seems like a luxury—something that requires the deep pockets and sophisticated systems of larger enterprises. This doesn't have to be the case.
             </p>
             

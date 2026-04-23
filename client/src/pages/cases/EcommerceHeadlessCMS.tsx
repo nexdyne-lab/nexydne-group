@@ -29,7 +29,7 @@ export default function EcommerceHeadlessCMS() {
       {/* Hero Section */}
       <section className="py-20">
         <div className="container max-w-4xl">
-          <Link href="/solutions/headless-cms" className="inline-flex items-center text-blue-600 hover:text-blue-700 mb-8">
+          <Link href="/solutions/headless-cms" className="inline-flex items-center text-primary hover:text-blue-700 mb-8">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Headless CMS
           </Link>
@@ -84,15 +84,15 @@ export default function EcommerceHeadlessCMS() {
             <h2 className="text-3xl font-bold mb-6">The Results</h2>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <Card className="p-6 text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">47%</div>
+                <div className="text-4xl font-bold text-primary mb-2">47%</div>
                 <div className="text-sm text-muted-foreground">Revenue per customer increase</div>
               </Card>
               <Card className="p-6 text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">6</div>
+                <div className="text-4xl font-bold text-primary mb-2">6</div>
                 <div className="text-sm text-muted-foreground">New channels launched in 8 months</div>
               </Card>
               <Card className="p-6 text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-2">68%</div>
+                <div className="text-4xl font-bold text-primary mb-2">68%</div>
                 <div className="text-sm text-muted-foreground">Faster content publishing</div>
               </Card>
             </div>
@@ -118,7 +118,7 @@ export default function EcommerceHeadlessCMS() {
 
           {/* Learn more */}
           <div className="border-t pt-8">
-            <Link href="/solutions/headless-cms" className="inline-flex items-center text-blue-600 hover:text-blue-700 text-lg font-semibold">
+            <Link href="/solutions/headless-cms" className="inline-flex items-center text-primary hover:text-blue-700 text-lg font-semibold">
               Learn more about Headless CMS
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>

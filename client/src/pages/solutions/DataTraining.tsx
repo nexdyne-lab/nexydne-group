@@ -303,13 +303,13 @@ export default function DataTraining() {
               <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all group cursor-pointer">
                 <img src="/financial-services-training.55081221.jpg" alt="Financial Services Training" className="h-48 w-full object-cover" />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
                     Financial Services Firm Upskills 50 Analysts
                   </h3>
                   <p className="text-charcoal/80 mb-4">
                     8-week SQL and Python bootcamp transformed business analysts into self-sufficient data practitioners, reducing IT backlog 60%.
                   </p>
-                  <Button variant="ghost" className="text-blue-600 hover:text-blue-700 p-0">
+                  <Button variant="ghost" className="text-primary hover:text-blue-700 p-0">
                     Read more
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
@@ -322,13 +322,13 @@ export default function DataTraining() {
               <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all group cursor-pointer">
                 <img src="/retail-data-academy.84cb2568.jpg" alt="Retail Data Academy" className="h-48 w-full object-cover" />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
                     Retailer Builds Internal Data Academy
                   </h3>
                   <p className="text-charcoal/80 mb-4">
                     Custom curriculum covering analytics fundamentals through ML deployment trained 120 employees across 6 departments in 12 months.
                   </p>
-                  <Button variant="ghost" className="text-blue-600 hover:text-blue-700 p-0">
+                  <Button variant="ghost" className="text-primary hover:text-blue-700 p-0">
                     Read more
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
@@ -341,13 +341,13 @@ export default function DataTraining() {
               <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all group cursor-pointer">
                 <img src="/healthcare-dashboard-training.fff5ec24.jpg" alt="Healthcare Dashboard Training" className="h-48 w-full object-cover" />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
                     Healthcare Network Trains Clinical Staff on Dashboards
                   </h3>
                   <p className="text-charcoal/80 mb-4">
                     Half-day workshops taught 200 clinicians to build custom Tableau dashboards, improving patient outcome visibility 45%.
                   </p>
-                  <Button variant="ghost" className="text-blue-600 hover:text-blue-700 p-0">
+                  <Button variant="ghost" className="text-primary hover:text-blue-700 p-0">
                     Read more
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
@@ -391,7 +391,7 @@ export default function DataTraining() {
             {/* Data Training - Current Page */}
             <div className="p-6 rounded-lg border-2 border-blue-500 bg-blue-50 relative">
               <div className="absolute top-2 right-2">
-                <span className="text-xs font-semibold text-blue-600 bg-blue-100 px-2 py-1 rounded">Current page</span>
+                <span className="text-xs font-semibold text-primary bg-blue-100 px-2 py-1 rounded">Current page</span>
               </div>
               <h3 className="text-xl font-bold text-charcoal mb-2">Data training</h3>
               <p className="text-charcoal/80">Give your employees the knowledge and skills they need.</p>

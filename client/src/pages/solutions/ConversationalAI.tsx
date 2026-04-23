@@ -142,7 +142,7 @@ export default function ConversationalAI() {
       {/* Quote Section */}
       <section className="py-20 bg-background">
         <div className="container max-w-4xl">
-          <blockquote className="text-2xl font-serif italic text-center mb-8 text-base">
+          <blockquote className="text-2xl text-center mb-8 text-base">
             "Conversational AI doesn't just answer questions—it anticipates needs, resolves issues proactively, and turns support interactions into opportunities for engagement. Organizations that deploy intelligent conversational systems reduce costs while simultaneously improving customer satisfaction. It's rare to find technology that delivers both efficiency and experience gains."
           </blockquote>
           <p className="text-center text-muted-foreground">

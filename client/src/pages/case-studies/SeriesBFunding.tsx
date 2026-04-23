@@ -36,7 +36,7 @@ export default function SeriesBFunding() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Case Study · HealthTech
             </span>
-            <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-4">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-4">
               <span className="text-primary">$45M</span> Series B at 3x valuation premium
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mb-8">
@@ -79,7 +79,7 @@ export default function SeriesBFunding() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-5xl font-serif font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-5xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-base text-white/70">{stat.label}</div>
               </motion.div>
             ))}
@@ -113,7 +113,7 @@ export default function SeriesBFunding() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Company Overview</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client is a healthtech company that developed an AI-powered platform for chronic disease management. With $8M in ARR and 150% year-over-year growth, they had proven product-market fit and were ready to scale. The company had raised a $12M Series A two years prior and was seeking Series B funding to accelerate growth.
@@ -153,7 +153,7 @@ export default function SeriesBFunding() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Positioning for premium valuation in a competitive market
             </h2>
           </motion.div>
@@ -164,21 +164,21 @@ export default function SeriesBFunding() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Crowded market with multiple well-funded competitors</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Crowded market with multiple well-funded competitors</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The digital health space had seen significant investment, with several competitors having raised larger rounds. Investors were becoming more selective, and the company needed to clearly differentiate its approach and demonstrate why it would win in a competitive market.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Complex business model requiring clear articulation</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Complex business model requiring clear articulation</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The company's revenue model involved multiple stakeholders—health systems, payers, and employers—each with different value propositions and sales cycles. Investors needed to understand how these pieces fit together and why the multi-stakeholder approach created defensibility rather than complexity.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Limited bandwidth for fundraising while running the business</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Limited bandwidth for fundraising while running the business</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The CEO and CFO were already stretched thin managing rapid growth. They couldn't afford to spend months on fundraising while neglecting customers and operations. They needed a process that was efficient and well-orchestrated to minimize distraction from the core business.
               </p>
@@ -196,7 +196,7 @@ export default function SeriesBFunding() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-3xl md:text-4xl font-serif text-primary leading-tight mb-8">
+            <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "We knew we had a great company, but we weren't sure how to tell our story in a way that would resonate with growth investors. We needed help translating our clinical outcomes into a compelling investment thesis."
             </blockquote>
             <div className="text-base text-white">
@@ -219,7 +219,7 @@ export default function SeriesBFunding() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Solution
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Comprehensive fundraising preparation and execution
             </h2>
           </motion.div>
@@ -241,7 +241,7 @@ export default function SeriesBFunding() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <Target className="w-6 h-6 text-primary" />
                   Strategic positioning and narrative development
                 </h3>
@@ -273,7 +273,7 @@ export default function SeriesBFunding() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <FileText className="w-6 h-6 text-primary" />
                   Financial modeling and materials development
                 </h3>
@@ -305,7 +305,7 @@ export default function SeriesBFunding() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <Users className="w-6 h-6 text-primary" />
                   Investor targeting and outreach
                 </h3>
@@ -337,7 +337,7 @@ export default function SeriesBFunding() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <DollarSign className="w-6 h-6 text-primary" />
                   Process management and negotiation support
                 </h3>
@@ -376,7 +376,7 @@ export default function SeriesBFunding() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Impact
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Results & Impact
             </h2>
           </motion.div>
@@ -387,7 +387,7 @@ export default function SeriesBFunding() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <DollarSign className="w-6 h-6 text-primary" />
                 Oversubscribed round at premium valuation
               </h3>
@@ -396,18 +396,18 @@ export default function SeriesBFunding() {
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="p-6 bg-base/5 rounded-xl">
-                  <div className="text-3xl font-serif font-bold text-charcoal mb-2">$45M</div>
+                  <div className="text-3xl font-bold text-charcoal mb-2">$45M</div>
                   <div className="text-sm text-charcoal/60">Series B raised (vs. $25M target)</div>
                 </div>
                 <div className="p-6 bg-base/5 rounded-xl">
-                  <div className="text-3xl font-serif font-bold text-charcoal mb-2">12</div>
+                  <div className="text-3xl font-bold text-charcoal mb-2">12</div>
                   <div className="text-sm text-charcoal/60">Term sheets received</div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <TrendingUp className="w-6 h-6 text-primary" />
                 Efficient process with minimal business disruption
               </h3>
@@ -415,13 +415,13 @@ export default function SeriesBFunding() {
                 The entire process from launch to close took just 8 weeks, allowing the leadership team to maintain focus on the business. The CEO spent less than 20% of her time on fundraising activities during the process.
               </p>
               <div className="p-6 bg-base/5 rounded-xl">
-                <div className="text-3xl font-serif font-bold text-charcoal mb-2">8 weeks</div>
+                <div className="text-3xl font-bold text-charcoal mb-2">8 weeks</div>
                 <div className="text-sm text-charcoal/60">From process launch to close</div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <Users className="w-6 h-6 text-primary" />
                 Strategic investor adds value beyond capital
               </h3>
@@ -429,7 +429,7 @@ export default function SeriesBFunding() {
                 The lead investor brought deep healthcare expertise and a network of health system relationships that accelerated the company's enterprise sales efforts. Within six months of close, the company had signed three major health system partnerships facilitated by investor introductions.
               </p>
               <div className="p-6 bg-base/5 rounded-xl">
-                <div className="text-3xl font-serif font-bold text-charcoal mb-2">3</div>
+                <div className="text-3xl font-bold text-charcoal mb-2">3</div>
                 <div className="text-sm text-charcoal/60">Major partnerships facilitated by investor network</div>
               </div>
             </div>
@@ -446,7 +446,7 @@ export default function SeriesBFunding() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-3xl md:text-4xl font-serif text-primary leading-tight mb-8">
+            <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "The NexDyne team transformed our fundraising process. They helped us tell our story in a way that resonated with investors and created competitive dynamics that resulted in terms we never thought possible. The investment in their support paid for itself many times over."
             </blockquote>
             <div className="text-base text-white">
@@ -477,7 +477,7 @@ export default function SeriesBFunding() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white">More success stories</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -504,7 +504,7 @@ export default function SeriesBFunding() {
               >
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>

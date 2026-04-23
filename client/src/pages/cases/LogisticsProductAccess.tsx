@@ -41,25 +41,25 @@ export default function LogisticsProductAccess() {
         <div className="container">
           <div className="grid md:grid-cols-4 gap-8">
             <Card className="p-6 text-center">
-              <Zap className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <Zap className="w-12 h-12 text-primary mx-auto mb-4" />
               <div className="text-4xl font-bold text-charcoal mb-2">3.2x</div>
               <div className="text-muted-foreground">Faster Product Discovery</div>
             </Card>
             
             <Card className="p-6 text-center">
-              <Search className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <Search className="w-12 h-12 text-primary mx-auto mb-4" />
               <div className="text-4xl font-bold text-charcoal mb-2">68%</div>
               <div className="text-muted-foreground">Search Conversion Increase</div>
             </Card>
             
             <Card className="p-6 text-center">
-              <ShoppingCart className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <ShoppingCart className="w-12 h-12 text-primary mx-auto mb-4" />
               <div className="text-4xl font-bold text-charcoal mb-2">41%</div>
               <div className="text-muted-foreground">Average Order Value Lift</div>
             </Card>
             
             <Card className="p-6 text-center">
-              <TrendingUp className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <TrendingUp className="w-12 h-12 text-primary mx-auto mb-4" />
               <div className="text-4xl font-bold text-charcoal mb-2">$12M</div>
               <div className="text-muted-foreground">Incremental Revenue</div>
             </Card>
@@ -206,28 +206,28 @@ export default function LogisticsProductAccess() {
           
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-bold text-blue-600 mb-3">3.2x Faster Product Discovery</h3>
+              <h3 className="text-2xl font-bold text-primary mb-3">3.2x Faster Product Discovery</h3>
               <p className="text-lg text-muted-foreground">
                 Average time from search to add-to-cart decreased from 8.4 minutes to 2.6 minutes. Intelligent search relevance and personalized results helped customers find the right products on the first try, eliminating frustrating trial-and-error searches. Zero-result searches dropped from 18% to 2%.
               </p>
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold text-blue-600 mb-3">68% Increase in Search Conversion</h3>
+              <h3 className="text-2xl font-bold text-primary mb-3">68% Increase in Search Conversion</h3>
               <p className="text-lg text-muted-foreground">
                 Customers who used search converted at 24% (vs. 14% previously). Personalized search results matched customer intent more accurately, reducing search abandonment and increasing purchase confidence. Search-driven revenue grew from 31% to 52% of total e-commerce sales.
               </p>
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold text-blue-600 mb-3">41% Average Order Value Lift</h3>
+              <h3 className="text-2xl font-bold text-primary mb-3">41% Average Order Value Lift</h3>
               <p className="text-lg text-muted-foreground">
                 Intelligent product recommendations drove cross-sell and upsell revenue. Average order value increased from $342 to $482 as customers discovered complementary products and complete solutions. Recommendation click-through rates reached 34%, with 62% of customers adding at least one recommended item to their cart.
               </p>
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold text-blue-600 mb-3">$12M Incremental Annual Revenue</h3>
+              <h3 className="text-2xl font-bold text-primary mb-3">$12M Incremental Annual Revenue</h3>
               <p className="text-lg text-muted-foreground">
                 Improved product discovery and personalized recommendations generated $12M in incremental revenue in the first year. Self-service orders increased from 58% to 87% of total orders, reducing sales support costs by $1.8M annually. Customer satisfaction scores improved from 3.2/5 to 4.6/5, with customers praising the "Amazon-like" experience.
               </p>

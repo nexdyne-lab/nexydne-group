@@ -76,7 +76,7 @@ export default function UrbanDevelopmentIndustry() {
               transition={{ duration: 0.6 }}
               className="prose prose-lg max-w-none"
             >
-              <p className="text-lg sm:text-xl md:text-2xl text-charcoal/80 leading-relaxed mb-8 first-letter:text-6xl first-letter:font-serif first-letter:font-bold first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:text-primary">
+              <p className="text-lg sm:text-xl md:text-2xl text-charcoal/80 leading-relaxed mb-8">
                 By 2050, nearly 70% of the world's population will live in cities. This urban transformation creates both challenges and opportunities. Cities that can harness technology, data, and innovative governance will create thriving communities. Those that can't will struggle with congestion, pollution, inequality, and declining quality of life.
               </p>
               
@@ -118,7 +118,7 @@ export default function UrbanDevelopmentIndustry() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-left"
               >
-                <div className="text-4xl md:text-5xl font-serif font-bold text-base mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-base mb-2">
                   {stat.value}
                 </div>
                 <div className="text-base text-muted-foreground leading-snug">
@@ -232,7 +232,7 @@ export default function UrbanDevelopmentIndustry() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="lg:col-span-3"
             >
-              <div className="text-6xl md:text-7xl font-serif font-bold text-primary mb-4">
+              <div className="text-6xl md:text-7xl font-bold text-primary mb-4">
                 35%
               </div>
               <div className="text-xl font-medium text-charcoal mb-6">
@@ -342,7 +342,7 @@ export default function UrbanDevelopmentIndustry() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-t-2 border-base/10 pt-8"
               >
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+                <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                   {cap.title}
                 </h3>
                 <p className="text-charcoal/70 leading-relaxed">{cap.desc}</p>
@@ -480,7 +480,7 @@ export default function UrbanDevelopmentIndustry() {
                   <div className="flex items-center justify-between">
                     <div>
                       <span className="text-xs font-bold uppercase tracking-[0.15em] text-primary group-hover:text-white/60 transition-colors">Industry</span>
-                      <h3 className="text-lg font-serif font-bold text-charcoal group-hover:text-white transition-colors mt-1">{industry.title}</h3>
+                      <h3 className="text-lg font-bold text-charcoal group-hover:text-white transition-colors mt-1">{industry.title}</h3>
                     </div>
                     <ChevronRight className="w-5 h-5 text-charcoal/30 group-hover:text-white group-hover:translate-x-1 transition-all" />
                   </div>

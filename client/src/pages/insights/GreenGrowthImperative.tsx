@@ -29,7 +29,7 @@ export default function GreenGrowthImperative() {
               Back to Growth Strategy
             </Link>
             
-            <h1 className="text-5xl md:text-7xl font-serif font-medium text-white mb-4 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-medium text-white mb-4 leading-tight">
               Green Growth
             </h1>
             
@@ -45,7 +45,7 @@ export default function GreenGrowthImperative() {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
             <div className="lg:col-span-4">
-              <h2 className="text-4xl md:text-5xl font-serif text-charcoal leading-tight sticky top-24">
+              <h2 className="text-4xl md:text-5xl text-charcoal leading-tight sticky top-24">
                 Sustainability as a <span className="text-emerald-700 italic">competitive advantage</span>
               </h2>
             </div>
@@ -73,7 +73,7 @@ export default function GreenGrowthImperative() {
       {/* What We Do - Floating Cards / Split Layout */}
       <section className="py-24 bg-slate-50 overflow-hidden">
         <div className="container mb-20">
-          <h2 className="text-4xl md:text-6xl font-serif text-center text-charcoal mb-4">What we do</h2>
+          <h2 className="text-4xl md:text-6xl text-center text-charcoal mb-4">What we do</h2>
           <p className="text-xl text-muted-foreground text-center max-w-2xl mx-auto font-light">
             Commercializing green opportunities along the full value chain.
           </p>
@@ -95,7 +95,7 @@ export default function GreenGrowthImperative() {
                 <div className="absolute -bottom-12 -left-12 w-full h-full border-2 border-emerald-200 rounded-2xl -z-0 hidden lg:block" />
               </div>
               <div className="order-1 lg:order-2 lg:pl-12">
-                <h3 className="text-3xl md:text-4xl font-serif mb-6 text-charcoal">Green revenue growth management</h3>
+                <h3 className="text-3xl md:text-4xl mb-6 text-charcoal">Green revenue growth management</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8 font-light">
                   We help to investigate what the most attractive value pools are based on, where you can have sustainability impact, and if there is a willingness to pay. Organizations need to look at their ESG operations through the eyes of their customers to understand where they could create additional value.
                 </p>
@@ -121,7 +121,7 @@ export default function GreenGrowthImperative() {
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="lg:pr-12">
-                <h3 className="text-3xl md:text-4xl font-serif mb-6 text-charcoal">Pricing and margin management</h3>
+                <h3 className="text-3xl md:text-4xl mb-6 text-charcoal">Pricing and margin management</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8 font-light">
                   Companies can achieve premiums, but customers' willingness to pay varies by segment and changes constantly. To succeed in the long term, companies must understand how demand-supply scenarios and regulations may affect prices.
                 </p>
@@ -160,7 +160,7 @@ export default function GreenGrowthImperative() {
       <section className="py-24 bg-white">
         <div className="container">
           <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif text-charcoal mb-6">Sectors in transition</h2>
+            <h2 className="text-4xl md:text-5xl text-charcoal mb-6">Sectors in transition</h2>
             <p className="text-xl text-muted-foreground font-light max-w-3xl">
               The path to net zero looks different for every industry. We help organizations navigate their specific challenges and opportunities.
             </p>
@@ -176,7 +176,7 @@ export default function GreenGrowthImperative() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 p-8">
-                <h3 className="text-2xl font-serif text-white mb-2">Energy & Materials</h3>
+                <h3 className="text-2xl text-white mb-2">Energy & Materials</h3>
                 <p className="text-white/80 font-light transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
                   Decarbonizing heavy industry while maintaining competitiveness.
                 </p>
@@ -192,7 +192,7 @@ export default function GreenGrowthImperative() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 p-8">
-                <h3 className="text-2xl font-serif text-white mb-2">Consumer Goods</h3>
+                <h3 className="text-2xl text-white mb-2">Consumer Goods</h3>
                 <p className="text-white/80 font-light transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
                   Meeting the rising demand for sustainable products and packaging.
                 </p>
@@ -208,7 +208,7 @@ export default function GreenGrowthImperative() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 p-8">
-                <h3 className="text-2xl font-serif text-white mb-2">Advanced Manufacturing</h3>
+                <h3 className="text-2xl text-white mb-2">Advanced Manufacturing</h3>
                 <p className="text-white/80 font-light transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
                   Building circular supply chains and efficient production systems.
                 </p>
@@ -230,13 +230,13 @@ export default function GreenGrowthImperative() {
         
         <div className="container relative z-10">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-serif mb-6">Impact by the numbers</h2>
+            <h2 className="text-4xl md:text-5xl mb-6">Impact by the numbers</h2>
             <p className="text-xl text-muted-foreground/50 font-light">Real results from our green growth transformations.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
             <div className="space-y-4">
-              <div className="text-6xl font-serif text-emerald-400">10%+</div>
+              <div className="text-6xl text-emerald-400">10%+</div>
               <div className="h-px w-12 bg-emerald-500/50 mx-auto" />
               <h4 className="text-lg font-medium">Green Willingness to Pay</h4>
               <p className="text-sm text-muted-foreground/70 leading-relaxed">
@@ -245,7 +245,7 @@ export default function GreenGrowthImperative() {
             </div>
 
             <div className="space-y-4">
-              <div className="text-6xl font-serif text-emerald-400">$50bn</div>
+              <div className="text-6xl text-emerald-400">$50bn</div>
               <div className="h-px w-12 bg-emerald-500/50 mx-auto" />
               <h4 className="text-lg font-medium">Risk Assessment</h4>
               <p className="text-sm text-muted-foreground/70 leading-relaxed">
@@ -254,7 +254,7 @@ export default function GreenGrowthImperative() {
             </div>
 
             <div className="space-y-4">
-              <div className="text-6xl font-serif text-emerald-400">$3bn</div>
+              <div className="text-6xl text-emerald-400">$3bn</div>
               <div className="h-px w-12 bg-emerald-500/50 mx-auto" />
               <h4 className="text-lg font-medium">Decarbonization</h4>
               <p className="text-sm text-muted-foreground/70 leading-relaxed">
@@ -263,7 +263,7 @@ export default function GreenGrowthImperative() {
             </div>
 
             <div className="space-y-4">
-              <div className="text-6xl font-serif text-emerald-400">30-50%</div>
+              <div className="text-6xl text-emerald-400">30-50%</div>
               <div className="h-px w-12 bg-emerald-500/50 mx-auto" />
               <h4 className="text-lg font-medium">Sustainable Materials</h4>
               <p className="text-sm text-muted-foreground/70 leading-relaxed">
@@ -279,7 +279,7 @@ export default function GreenGrowthImperative() {
         <div className="container">
           <div className="flex justify-between items-end mb-12">
             <div>
-              <h2 className="text-4xl md:text-5xl font-serif text-charcoal mb-4">Featured insights</h2>
+              <h2 className="text-4xl md:text-5xl text-charcoal mb-4">Featured insights</h2>
               <p className="text-xl text-muted-foreground font-light">Our latest thinking on sustainability and growth.</p>
             </div>
             <Link href="/insights">
@@ -301,7 +301,7 @@ export default function GreenGrowthImperative() {
               </div>
               <div className="space-y-3">
                 <span className="text-xs font-bold tracking-widest text-emerald-700 uppercase">Report</span>
-                <h3 className="text-xl font-serif text-charcoal group-hover:text-emerald-700 transition-colors">
+                <h3 className="text-xl text-charcoal group-hover:text-emerald-700 transition-colors">
                   The Net Zero Transition: What it would cost, what it could bring
                 </h3>
                 <p className="text-muted-foreground font-light line-clamp-2">
@@ -324,7 +324,7 @@ export default function GreenGrowthImperative() {
               </div>
               <div className="space-y-3">
                 <span className="text-xs font-bold tracking-widest text-emerald-700 uppercase">Article</span>
-                <h3 className="text-xl font-serif text-charcoal group-hover:text-emerald-700 transition-colors">
+                <h3 className="text-xl text-charcoal group-hover:text-emerald-700 transition-colors">
                   Carbon Markets 2025: From voluntary to compliance
                 </h3>
                 <p className="text-muted-foreground font-light line-clamp-2">
@@ -347,7 +347,7 @@ export default function GreenGrowthImperative() {
               </div>
               <div className="space-y-3">
                 <span className="text-xs font-bold tracking-widest text-emerald-700 uppercase">Perspective</span>
-                <h3 className="text-xl font-serif text-charcoal group-hover:text-emerald-700 transition-colors">
+                <h3 className="text-xl text-charcoal group-hover:text-emerald-700 transition-colors">
                   The Green Materials Revolution
                 </h3>
                 <p className="text-muted-foreground font-light line-clamp-2">
@@ -365,7 +365,7 @@ export default function GreenGrowthImperative() {
       {/* CTA Section */}
       <section className="py-24 bg-emerald-900 text-white">
         <div className="container max-w-4xl text-center">
-          <h2 className="text-4xl md:text-5xl font-serif mb-8">Ready to grow sustainably?</h2>
+          <h2 className="text-4xl md:text-5xl mb-8">Ready to grow sustainably?</h2>
           <p className="text-xl text-emerald-100 mb-12 font-light leading-relaxed">
             Let's discuss how NewCo can help you identify value pools, optimize pricing, and build the capabilities needed for a green future.
           </p>

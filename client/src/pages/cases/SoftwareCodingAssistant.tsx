@@ -83,15 +83,15 @@ export default function SoftwareCodingAssistant() {
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">40%</div>
+              <div className="text-5xl font-bold text-primary mb-2">40%</div>
               <div className="text-muted-foreground">Increase in coding velocity</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">50%</div>
+              <div className="text-5xl font-bold text-primary mb-2">50%</div>
               <div className="text-muted-foreground">Reduction in code review time</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">90%</div>
+              <div className="text-5xl font-bold text-primary mb-2">90%</div>
               <div className="text-muted-foreground">Developer adoption rate</div>
             </div>
           </div>

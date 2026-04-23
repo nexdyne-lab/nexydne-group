@@ -508,7 +508,7 @@ export default function DataModernization() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="text-white">
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/70 mb-2 block">Featured Insight</span>
-              <h3 className="text-2xl md:text-3xl font-serif font-bold mb-2">The CEO's Guide to Data Modernization</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-2">The CEO's Guide to Data Modernization</h3>
               <p className="text-white/80">A comprehensive framework for transforming your data foundation.</p>
             </div>
             <Link href="/insights/ceo-guide-data-modernization">

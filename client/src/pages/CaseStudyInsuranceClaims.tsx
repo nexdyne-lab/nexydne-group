@@ -36,7 +36,7 @@ export default function CaseStudyInsuranceClaims() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Case Study · Insurance
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               Accelerating claims processing by <span className="text-primary">68%</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mb-5 sm:mb-6 md:mb-8">
@@ -78,7 +78,7 @@ export default function CaseStudyInsuranceClaims() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-6xl font-serif font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-6xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-lg text-white">{stat.label}</div>
                 <div className="text-sm text-white/60">{stat.sublabel}</div>
               </motion.div>
@@ -116,7 +116,7 @@ export default function CaseStudyInsuranceClaims() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Opportunity
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Competing on speed in a market where customer expectations are rising
             </h2>
           </motion.div>
@@ -151,7 +151,7 @@ export default function CaseStudyInsuranceClaims() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
               "Our adjusters were drowning in paperwork while customers waited days for updates on straightforward claims. We were providing slow service at high cost—the worst of both worlds."
             </blockquote>
             <div className="text-base text-white">
@@ -174,7 +174,7 @@ export default function CaseStudyInsuranceClaims() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Intelligent automation that handles routine work while empowering adjusters to focus on complex cases
             </h2>
           </motion.div>
@@ -188,22 +188,22 @@ export default function CaseStudyInsuranceClaims() {
               We designed and implemented an intelligent claims processing platform that automated routine tasks while maintaining the human judgment required for complex claims. The $75,000 investment focused on creating seamless integration with existing systems and ensuring regulatory compliance across all automated workflows.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Automated intake and triage</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Automated intake and triage</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               The platform automated claims intake through multiple channels including web portal, mobile app, email, and phone. Natural language processing extracted key information from unstructured submissions, automatically populating claim records and requesting any missing documentation. Machine learning models assessed claim complexity, routing straightforward cases to automated processing while flagging complex claims for adjuster review. Policyholders received immediate acknowledgment and estimated resolution timelines based on claim characteristics.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Straight-through processing for routine claims</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Straight-through processing for routine claims</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               For claims meeting specific criteria including claim amount, policy coverage, and loss type, the system handled the entire process automatically. The platform verified coverage, assessed damages using industry databases and repair cost estimators, determined settlement amounts within policy limits, and initiated payment processing. Automated fraud detection algorithms flagged suspicious patterns for human review. The entire process completed in hours rather than days, with policyholders receiving real-time status updates via their preferred communication channel.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Adjuster productivity tools</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Adjuster productivity tools</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               For claims requiring human judgment, the platform provided adjusters with comprehensive case summaries, relevant policy provisions, comparable claims data, and recommended next steps. Automated workflows handled scheduling, document collection, and stakeholder communications, allowing adjusters to focus on investigation and decision-making. The system learned from adjuster decisions, continuously improving its recommendations and triage accuracy.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Compliance and quality assurance</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Compliance and quality assurance</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
               All automated decisions included full audit trails documenting the reasoning and data sources used. The platform enforced state-specific regulatory requirements and company policies, preventing non-compliant actions. Quality assurance sampling reviewed automated decisions against adjuster outcomes, identifying opportunities to refine algorithms and expand automation scope. Regular compliance reports provided management with visibility into processing patterns and potential issues.
             </p>
@@ -220,7 +220,7 @@ export default function CaseStudyInsuranceClaims() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
               "The system handles the routine work flawlessly, which means our adjusters can spend their time on the cases where their expertise really matters. It's the best use of both human and machine capabilities."
             </blockquote>
             <div className="text-base text-white">
@@ -243,7 +243,7 @@ export default function CaseStudyInsuranceClaims() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               From operational bottleneck to competitive differentiator
             </h2>
           </motion.div>
@@ -257,22 +257,22 @@ export default function CaseStudyInsuranceClaims() {
               Within 16 months of deployment, the claims automation platform transformed the carrier's operations, delivering improvements in processing speed, customer satisfaction, and cost efficiency.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Processing speed and efficiency</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Processing speed and efficiency</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Average claims cycle time decreased from 14 days to 4.5 days, with routine claims now resolving in under 24 hours. The platform processes 92% of straightforward claims without human intervention, freeing adjusters to focus on complex cases requiring investigation and negotiation. Adjuster productivity increased by 180%, enabling the company to handle 40% more claims with the same staff. The need for temporary workers during peak periods was eliminated, saving $320,000 annually.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Customer satisfaction and retention</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Customer satisfaction and retention</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Net Promoter Score increased by 35 points, moving from below industry average to top quartile performance. Customer complaints about processing delays dropped by 88%. Policyholders particularly valued the real-time status updates and faster resolution, with 94% rating the claims experience as good or excellent. Policy retention rates improved by 12 percentage points, and independent agents reported that fast claims processing became a key selling point when competing for new business.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Fraud detection and loss control</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Fraud detection and loss control</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               The automated fraud detection algorithms identified 28% more potentially fraudulent claims than the previous manual review process, preventing an estimated $450,000 in inappropriate payments during the measurement period. Pattern recognition capabilities spotted emerging fraud schemes faster than human reviewers, enabling proactive responses. The platform also identified opportunities to improve loss control recommendations to policyholders, reducing repeat claims.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Financial performance</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Financial performance</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
               The $75,000 investment in the platform generated annual benefits of $895,000 through reduced staffing costs ($320,000), fraud prevention ($450,000), and improved retention value ($125,000). This represents a 340% ROI over 18 months. The company's combined ratio improved by 4.2 points, driven by both expense reduction and better loss outcomes. Management views the platform as a strategic asset that enables profitable growth in the small commercial segment where larger competitors struggle to achieve acceptable unit economics.
             </p>
@@ -293,7 +293,7 @@ export default function CaseStudyInsuranceClaims() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Get In Touch
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white">Our experts</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Our experts</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl">
@@ -322,7 +322,7 @@ export default function CaseStudyInsuranceClaims() {
                 <div className="flex items-start gap-4">
                   <img className="w-20 h-20 rounded-full object-cover flex-shrink-0" src={expert.image} alt={expert.name} />
                   <div>
-                    <h3 className="text-2xl font-serif font-bold mb-2">{expert.name}</h3>
+                    <h3 className="text-2xl font-bold mb-2">{expert.name}</h3>
                     <p className="text-sm text-primary mb-4">{expert.location}</p>
                     <p className="text-base leading-relaxed text-charcoal/70">
                       {expert.description}
@@ -355,7 +355,7 @@ export default function CaseStudyInsuranceClaims() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white">More success stories</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">More success stories</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -405,7 +405,7 @@ export default function CaseStudyInsuranceClaims() {
                     </div>
                   </div>
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">

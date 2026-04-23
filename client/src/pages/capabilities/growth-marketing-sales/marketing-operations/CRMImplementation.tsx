@@ -52,7 +52,7 @@ export default function CRMImplementation() {
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 mt-12">
             <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-slate-100">
               <h3 className="text-xl font-bold text-base mb-4 flex items-center">
-                <Users className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-blue-600" />
+                <Users className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-primary" />
                 Adoption by Design
               </h3>
               <p className="text-muted-foreground">
@@ -61,7 +61,7 @@ export default function CRMImplementation() {
             </div>
             <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-slate-100">
               <h3 className="text-xl font-bold text-base mb-4 flex items-center">
-                <Database className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-blue-600" />
+                <Database className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-primary" />
                 Data Excellence
               </h3>
               <p className="text-muted-foreground">
@@ -70,7 +70,7 @@ export default function CRMImplementation() {
             </div>
             <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-slate-100">
               <h3 className="text-xl font-bold text-base mb-4 flex items-center">
-                <Zap className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-blue-600" />
+                <Zap className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-primary" />
                 Intelligent Automation
               </h3>
               <p className="text-muted-foreground">
@@ -79,7 +79,7 @@ export default function CRMImplementation() {
             </div>
             <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-slate-100">
               <h3 className="text-xl font-bold text-base mb-4 flex items-center">
-                <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-blue-600" />
+                <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-primary" />
                 Enterprise Governance
               </h3>
               <p className="text-muted-foreground">

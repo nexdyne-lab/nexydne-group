@@ -226,7 +226,7 @@ export default function Technology() {
                 <span className="text-white">Technology</span>
               </nav>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl eb-garamond  tracking-tight text-white leading-[1.05] mb-3 sm:mb-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl eb-garamond tracking-tight text-white leading-[1.05] mb-3 sm:mb-4">
                 Technology
               </h1>
               
@@ -337,7 +337,7 @@ export default function Technology() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <p className="text-2xl md:text-3xl font-serif text-charcoal leading-relaxed mb-8">
+              <p className="text-2xl md:text-3xl text-charcoal leading-relaxed mb-8">
                 Your technology should be a growth engine, not a bottleneck. But for most mid-market companies, the reality is different: aging systems that cannot scale, data trapped in silos, and IT teams stretched thin just keeping things running.
               </p>
               
@@ -705,7 +705,7 @@ export default function Technology() {
                 </div>
                 
                 {/* Title */}
-                <h3 className="text-2xl font-serif font-bold text-white mb-4">
+                <h3 className="text-2xl font-bold text-white mb-4">
                   {step.title}
                 </h3>
                 

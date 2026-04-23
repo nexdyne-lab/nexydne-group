@@ -36,7 +36,7 @@ export default function OperationalExcellenceHealthcare() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Case Study · Performance Improvement
             </span>
-            <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-4">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-4">
               Operational Excellence in <span className="text-primary">Multi-Site Healthcare</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mb-8">
@@ -79,7 +79,7 @@ export default function OperationalExcellenceHealthcare() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-base text-white/70">{stat.label}</div>
               </motion.div>
             ))}
@@ -113,7 +113,7 @@ export default function OperationalExcellenceHealthcare() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Organization Background</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Organization Background</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client operates a network of 12 outpatient healthcare facilities across a three-state region, providing primary care, specialty services, and diagnostic capabilities. With 850 employees serving approximately 85,000 active patients, the organization had grown through a combination of organic expansion and strategic acquisitions over 15 years.
@@ -168,7 +168,7 @@ export default function OperationalExcellenceHealthcare() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Mounting Pressure on Margins and Operations
             </h2>
           </motion.div>
@@ -179,28 +179,28 @@ export default function OperationalExcellenceHealthcare() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Process Inconsistency</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Process Inconsistency</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 Each facility had evolved unique workflows for scheduling, patient intake, clinical documentation, and billing. This variation created inefficiencies, complicated staff training when employees moved between sites, and made it difficult to identify and replicate best practices across the network.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Resource Utilization Gaps</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Resource Utilization Gaps</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 Analysis revealed significant variation in productivity metrics across facilities. Some sites operated at 65% provider utilization while others exceeded 90%. Support staff ratios varied by 40% across comparable facilities, suggesting substantial optimization opportunities.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Revenue Cycle Inefficiencies</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Revenue Cycle Inefficiencies</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 Billing and collections processes were fragmented and inefficient. Days in accounts receivable averaged 52 days, denial rates exceeded industry benchmarks by 30%, and significant revenue was lost due to incomplete documentation and missed charge capture.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Limited Performance Visibility</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Limited Performance Visibility</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The organization lacked standardized metrics and reporting infrastructure. Leadership had limited visibility into facility-level performance, making it difficult to identify issues proactively or hold site managers accountable for operational improvements.
               </p>
@@ -225,7 +225,7 @@ export default function OperationalExcellenceHealthcare() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-3xl md:text-4xl font-serif text-primary leading-tight mb-8">
+            <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "We needed to achieve significant cost reductions without compromising the quality of care that our patients and communities depend on. It seemed like an impossible balance."
             </blockquote>
             <div className="text-base text-white">
@@ -248,7 +248,7 @@ export default function OperationalExcellenceHealthcare() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Solution
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Comprehensive Operational Excellence Program
             </h2>
           </motion.div>
@@ -270,7 +270,7 @@ export default function OperationalExcellenceHealthcare() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-2">Comprehensive Diagnostic and Opportunity Identification</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-2">Comprehensive Diagnostic and Opportunity Identification</h3>
                 <p className="text-sm text-primary mb-4">Months 1-2</p>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
                   We conducted a rigorous diagnostic across all 12 facilities, analyzing operational data, observing workflows, interviewing staff and providers, and benchmarking performance against industry standards.
@@ -300,7 +300,7 @@ export default function OperationalExcellenceHealthcare() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-2">Process Standardization and Optimization</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-2">Process Standardization and Optimization</h3>
                 <p className="text-sm text-primary mb-4">Months 3-7</p>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
                   Working with cross-functional teams, we redesigned core processes to eliminate waste, reduce variation, and improve patient experience.
@@ -330,7 +330,7 @@ export default function OperationalExcellenceHealthcare() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-2">Performance Management Infrastructure</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-2">Performance Management Infrastructure</h3>
                 <p className="text-sm text-primary mb-4">Months 6-9</p>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
                   We established comprehensive performance management infrastructure to provide visibility into operations, enable data-driven decision making, and create accountability for results.
@@ -360,7 +360,7 @@ export default function OperationalExcellenceHealthcare() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-2">Continuous Improvement Capability Building</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-2">Continuous Improvement Capability Building</h3>
                 <p className="text-sm text-primary mb-4">Months 9-12</p>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
                   The final phase focused on building internal capabilities to sustain improvements and drive ongoing optimization.
@@ -397,7 +397,7 @@ export default function OperationalExcellenceHealthcare() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Impact
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Transformational Results Across All Dimensions
             </h2>
           </motion.div>
@@ -408,84 +408,84 @@ export default function OperationalExcellenceHealthcare() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <TrendingUp className="w-6 h-6 text-primary" />
                 Financial Performance
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">$8.4M</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">$8.4M</div>
                   <div className="text-sm text-charcoal/60">Annual cost savings</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">22%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">22%</div>
                   <div className="text-sm text-charcoal/60">Operating cost reduction per visit</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">2.8% → 10%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">2.8% → 10%</div>
                   <div className="text-sm text-charcoal/60">Operating margin improvement</div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <Target className="w-6 h-6 text-primary" />
                 Operational Efficiency
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">18%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">18%</div>
                   <div className="text-sm text-charcoal/60">Provider productivity improvement</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">50%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">50%</div>
                   <div className="text-sm text-charcoal/60">Reduction in patient no-shows</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">85%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">85%</div>
                   <div className="text-sm text-charcoal/60">Core processes standardized</div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <CheckCircle2 className="w-6 h-6 text-primary" />
                 Revenue Cycle Excellence
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">52 → 38 days</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">52 → 38 days</div>
                   <div className="text-sm text-charcoal/60">Days in accounts receivable</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">35%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">35%</div>
                   <div className="text-sm text-charcoal/60">Reduction in claim denials</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">$1.8M</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">$1.8M</div>
                   <div className="text-sm text-charcoal/60">Additional revenue recovered</div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <Heart className="w-6 h-6 text-primary" />
                 Quality and Patient Experience
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">15%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">15%</div>
                   <div className="text-sm text-charcoal/60">Patient satisfaction increase</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">28%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">28%</div>
                   <div className="text-sm text-charcoal/60">Clinical quality improvement</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">72% → 89%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">72% → 89%</div>
                   <div className="text-sm text-charcoal/60">Employee engagement scores</div>
                 </div>
               </div>
@@ -503,7 +503,7 @@ export default function OperationalExcellenceHealthcare() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-3xl md:text-4xl font-serif text-primary leading-tight mb-8">
+            <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "This program transformed our organization. We achieved cost savings that seemed impossible while actually improving patient care and employee satisfaction. The NexDyne team helped us build capabilities that continue to drive improvements long after the formal engagement ended."
             </blockquote>
             <div className="text-base text-white">
@@ -517,32 +517,32 @@ export default function OperationalExcellenceHealthcare() {
       {/* Key Success Factors */}
       <section className="py-16 bg-white text-charcoal">
         <div className="container px-4 md:px-12 max-w-4xl">
-          <h2 className="text-3xl font-serif font-bold text-charcoal mb-8">Key Success Factors</h2>
+          <h2 className="text-3xl font-bold text-charcoal mb-8">Key Success Factors</h2>
           
           <div className="grid md:grid-cols-2 gap-6">
             <div className="border-l-4 border-primary pl-6">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-3">Balanced Approach</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-3">Balanced Approach</h3>
               <p className="text-charcoal/70">
                 Simultaneously pursuing cost reduction and quality improvement ensured sustainable results by focusing on eliminating waste rather than simply cutting resources.
               </p>
             </div>
 
             <div className="border-l-4 border-primary pl-6">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-3">Frontline Engagement</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-3">Frontline Engagement</h3>
               <p className="text-charcoal/70">
                 Involving providers and staff in process redesign ensured solutions were practical and gained strong adoption.
               </p>
             </div>
 
             <div className="border-l-4 border-primary pl-6">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-3">Data-Driven Decisions</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-3">Data-Driven Decisions</h3>
               <p className="text-charcoal/70">
                 Rigorous analysis and measurement discipline ensured efforts focused on high-impact opportunities and enabled objective assessment of progress.
               </p>
             </div>
 
             <div className="border-l-4 border-primary pl-6">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-3">Capability Building</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-3">Capability Building</h3>
               <p className="text-charcoal/70">
                 Investing in training and establishing continuous improvement infrastructure ensured the organization could sustain gains independently.
               </p>
@@ -571,7 +571,7 @@ export default function OperationalExcellenceHealthcare() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white">More success stories</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -607,7 +607,7 @@ export default function OperationalExcellenceHealthcare() {
                     />
                   </div>
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>

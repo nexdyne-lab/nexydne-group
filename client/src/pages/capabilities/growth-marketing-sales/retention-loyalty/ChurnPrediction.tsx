@@ -56,7 +56,7 @@ export default function ChurnPrediction() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <div className="mt-1 bg-blue-50 p-1 rounded">
-                      <Activity className="w-3 h-3 sm:w-4 sm:h-4 text-blue-600" />
+                      <Activity className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                     </div>
                     <div>
                       <strong className="text-charcoal">Behavioral Pattern Recognition</strong>
@@ -65,7 +65,7 @@ export default function ChurnPrediction() {
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="mt-1 bg-blue-50 p-1 rounded">
-                      <ShieldCheck className="w-3 h-3 sm:w-4 sm:h-4 text-blue-600" />
+                      <ShieldCheck className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                     </div>
                     <div>
                       <strong className="text-charcoal">Automated Intervention</strong>
@@ -74,7 +74,7 @@ export default function ChurnPrediction() {
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="mt-1 bg-blue-50 p-1 rounded">
-                      <Users className="w-3 h-3 sm:w-4 sm:h-4 text-blue-600" />
+                      <Users className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                     </div>
                     <div>
                       <strong className="text-charcoal">Cohort Analysis</strong>

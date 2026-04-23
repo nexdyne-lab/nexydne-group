@@ -42,14 +42,14 @@ export default function SaasCaseStudy() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:p-6 md:p-8">
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                <TrendingUp className="w-8 h-8 text-blue-600" />
+                <TrendingUp className="w-8 h-8 text-primary" />
               </div>
               <div className="text-4xl font-bold text-charcoal mb-2">78%</div>
               <div className="text-muted-foreground">Faster onboarding</div>
             </div>
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                <Clock className="w-8 h-8 text-blue-600" />
+                <Clock className="w-8 h-8 text-primary" />
               </div>
               <div className="text-4xl font-bold text-charcoal mb-2">26hrs</div>
               <div className="text-muted-foreground">Setup time</div>
@@ -176,7 +176,7 @@ export default function SaasCaseStudy() {
             <h2 className="text-3xl font-bold text-charcoal mb-6">The Results</h2>
             <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 mb-6 sm:mb-8 md:mb-12">
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-slate-200">
-                <div className="text-5xl font-bold text-blue-600 mb-2">78%</div>
+                <div className="text-5xl font-bold text-primary mb-2">78%</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">Faster onboarding</div>
                 <p className="text-muted-foreground">
                   Customer onboarding time reduced from 5 days (120 hours) to 26 hours, accelerating time-to-value and revenue recognition.
@@ -184,7 +184,7 @@ export default function SaasCaseStudy() {
               </div>
               
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-slate-200">
-                <div className="text-5xl font-bold text-blue-600 mb-2">26hrs</div>
+                <div className="text-5xl font-bold text-primary mb-2">26hrs</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">Setup time</div>
                 <p className="text-muted-foreground">
                   Average time from contract signature to fully operational account, including data migration and initial training.
@@ -212,19 +212,19 @@ export default function SaasCaseStudy() {
               <h3 className="text-2xl font-bold text-charcoal mb-4">Business Impact</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>Customer satisfaction scores during onboarding increased from 3.9 to 4.8 out of 5</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>First-90-day churn rate decreased from 12% to 3%</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>Revenue recognition timeline accelerated by 35 days on average</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>Customer success team capacity increased 5x without headcount growth</span>
                 </li>
               </ul>

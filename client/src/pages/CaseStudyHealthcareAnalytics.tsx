@@ -35,7 +35,7 @@ export default function CaseStudyHealthcareAnalytics() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Case Study · Healthcare
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               Reducing hospital readmissions by <span className="text-primary">34%</span> through predictive analytics
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mb-5 sm:mb-6 md:mb-8">
@@ -77,7 +77,7 @@ export default function CaseStudyHealthcareAnalytics() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-6xl font-serif font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-6xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-lg text-white">{stat.label}</div>
                 <div className="text-sm text-white/60">{stat.sublabel}</div>
               </motion.div>
@@ -115,7 +115,7 @@ export default function CaseStudyHealthcareAnalytics() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Opportunity
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Managing population health risk in a value-based care environment
             </h2>
           </motion.div>
@@ -147,7 +147,7 @@ export default function CaseStudyHealthcareAnalytics() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
               "We were managing population health with rear-view mirror data. By the time we knew patients were struggling, they were already back in the hospital."
             </blockquote>
             <div className="text-base text-white">
@@ -170,7 +170,7 @@ export default function CaseStudyHealthcareAnalytics() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Predictive analytics that enables proactive, data-driven care management
             </h2>
           </motion.div>
@@ -205,7 +205,7 @@ export default function CaseStudyHealthcareAnalytics() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               From financial risk to value-based care success
             </h2>
           </motion.div>
@@ -235,7 +235,7 @@ export default function CaseStudyHealthcareAnalytics() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Get In Touch
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white">Our experts</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Our experts</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl">
@@ -264,7 +264,7 @@ export default function CaseStudyHealthcareAnalytics() {
                 <div className="flex items-start gap-4">
                   <img className="w-20 h-20 rounded-full object-cover flex-shrink-0" src={expert.image} alt={expert.name} />
                   <div>
-                    <h3 className="text-2xl font-serif font-bold mb-2">{expert.name}</h3>
+                    <h3 className="text-2xl font-bold mb-2">{expert.name}</h3>
                     <p className="text-sm text-primary mb-4">{expert.location}</p>
                     <p className="text-base leading-relaxed text-charcoal/70">
                       {expert.description}
@@ -290,7 +290,7 @@ export default function CaseStudyHealthcareAnalytics() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-charcoal">More success stories</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -340,7 +340,7 @@ export default function CaseStudyHealthcareAnalytics() {
                     </div>
                   </div>
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-serif font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">

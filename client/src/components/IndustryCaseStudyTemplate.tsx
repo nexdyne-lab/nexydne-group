@@ -155,7 +155,7 @@ export default function IndustryCaseStudyTemplate({
               {industry}
             </span>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-[1.1] mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-6">
               {title}
             </h1>
             
@@ -217,11 +217,11 @@ export default function IndustryCaseStudyTemplate({
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 block">
                 Client Context
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6">
                 {clientContextTitle}
               </h2>
               <div className="prose prose-lg max-w-none">
-                <p className="text-lg text-charcoal/70 leading-relaxed mb-6 first-letter:text-5xl first-letter:font-serif first-letter:font-bold first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:text-primary">
+                <p className="text-lg text-charcoal/70 leading-relaxed mb-6">
                   {clientContextIntro}
                 </p>
                 <p className="text-lg text-charcoal/70 leading-relaxed">
@@ -288,7 +288,7 @@ export default function IndustryCaseStudyTemplate({
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 block">
                 The Challenge
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">
                 {challengeTitle}
               </h2>
               
@@ -326,7 +326,7 @@ export default function IndustryCaseStudyTemplate({
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 block">
                 Our Approach
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">
                 {approachTitle}
               </h2>
               
@@ -344,7 +344,7 @@ export default function IndustryCaseStudyTemplate({
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     className="flex gap-4 sm:p-5 md:p-4 sm:p-5 md:p-6"
                   >
-                    <div className="flex-shrink-0 w-16 h-16 bg-base text-white flex items-center justify-center font-serif font-bold text-xl">
+                    <div className="flex-shrink-0 w-16 h-16 bg-base text-white flex items-center justify-center font-bold text-xl">
                       {step.step}
                     </div>
                     <div className="pt-2">
@@ -372,7 +372,7 @@ export default function IndustryCaseStudyTemplate({
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 block">
                 The Results
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-white mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
                 {resultsTitle}
               </h2>
 
@@ -411,7 +411,7 @@ export default function IndustryCaseStudyTemplate({
             >
               <Quote className="w-16 h-16 text-primary/20 absolute -top-4 -left-4" />
               <blockquote className="relative z-10 pl-8 border-l-4 border-primary">
-                <p className="text-2xl md:text-3xl font-serif text-charcoal leading-relaxed mb-6">
+                <p className="text-2xl md:text-3xl text-charcoal leading-relaxed mb-6">
                   "{quote}"
                 </p>
                 <footer>
@@ -434,7 +434,7 @@ export default function IndustryCaseStudyTemplate({
             transition={{ duration: 0.6 }}
             className="mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12"
           >
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-charcoal">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal">
               Related Case Studies
             </h2>
           </motion.div>
@@ -458,7 +458,7 @@ export default function IndustryCaseStudyTemplate({
                   </div>
                   <div className="text-3xl font-bold text-primary mb-1">{study.metric}</div>
                   <div className="text-sm text-charcoal/60 mb-2">{study.label}</div>
-                  <h3 className="text-xl font-serif font-bold text-charcoal group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal group-hover:text-primary transition-colors">
                     {study.title}
                   </h3>
                 </Link>
@@ -477,7 +477,7 @@ export default function IndustryCaseStudyTemplate({
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-white mb-6">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
               {ctaTitle}
             </h2>
             <p className="text-xl text-white/70 mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8 max-w-2xl mx-auto">

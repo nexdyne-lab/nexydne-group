@@ -52,7 +52,7 @@ export default function ValuationMistakes() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-4">
               Five Valuation Mistakes That <span className="text-primary">Cost Founders Millions</span>
             </h1>
             
@@ -81,7 +81,7 @@ export default function ValuationMistakes() {
               Valuation is one of the most misunderstood aspects of venture fundraising. Founders often optimize for the highest possible valuation without understanding the downstream implications. The reality is that valuation is just one variable in a complex equation that determines founder outcomes, and getting it wrong can cost millions in eventual exit proceeds.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Mistake #1: Optimizing for Headline Valuation Over Terms
             </h2>
             
@@ -94,7 +94,7 @@ export default function ValuationMistakes() {
             </p>
 
             <div className="bg-red-50 border-l-4 border-red-500 p-6 my-8 rounded-r-xl">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-2">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-2">
                 <AlertTriangle className="w-5 h-5 text-destructive" />
                 Warning Signs of Problematic Terms
               </h3>
@@ -107,7 +107,7 @@ export default function ValuationMistakes() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Mistake #2: Raising at Unsustainable Valuations
             </h2>
             
@@ -119,7 +119,7 @@ export default function ValuationMistakes() {
               The sustainable valuation approach is to raise at a multiple that's defensible based on current performance and reasonable growth projections. For SaaS companies, this typically means 10-15x ARR at Series A, 15-20x at Series B, and 20-30x at later stages, adjusted for growth rate and market conditions. Raising at 40x ARR might feel like a win, but it sets you up for failure unless you can sustain extraordinary growth.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Mistake #3: Ignoring Dilution Math Across Multiple Rounds
             </h2>
             
@@ -132,7 +132,7 @@ export default function ValuationMistakes() {
             </p>
 
             <div className="bg-primary/10 border-l-4 border-primary p-6 my-8 rounded-r-xl">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Dilution Management Strategies</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Dilution Management Strategies</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Raise only what you need:</strong> More capital = more dilution without proportional benefit</li>
                 <li><strong>Extend runway through efficiency:</strong> Delay next round to grow into better valuation</li>
@@ -142,7 +142,7 @@ export default function ValuationMistakes() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Mistake #4: Misunderstanding Pre-Money vs Post-Money Valuation
             </h2>
             
@@ -154,7 +154,7 @@ export default function ValuationMistakes() {
               The confusion intensifies with option pools. If the term sheet specifies a 15% option pool on a pre-money basis, that pool comes out of founder shares before the investor money comes in. This means founders are diluted by both the option pool and the investment, while investors are only diluted by the investment. Always clarify whether the option pool is pre-money or post-money—it can mean millions of dollars in founder outcomes.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Mistake #5: Failing to Model Exit Scenarios
             </h2>
             
@@ -167,7 +167,7 @@ export default function ValuationMistakes() {
             </p>
 
             <div className="bg-base/5 border-l-4 border-base/30 p-6 my-8 rounded-r-xl">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Exit Scenario Modeling Example</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Exit Scenario Modeling Example</h3>
               <p className="text-charcoal/70 mb-4">Company raises $30M total across three rounds with 1.5x average liquidation preference:</p>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>$60M exit:</strong> Investors get $45M (1.5x $30M), founders get $15M</li>
@@ -177,7 +177,7 @@ export default function ValuationMistakes() {
               <p className="text-charcoal/70 mt-4">Notice how liquidation preferences devastate founder outcomes in modest exits but become irrelevant in large exits.</p>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Building a Sustainable Valuation Strategy
             </h2>
             
@@ -189,7 +189,7 @@ export default function ValuationMistakes() {
               Remember that valuation is a means to an end. The goal isn't to maximize valuation at each round—it's to build a valuable company while maintaining enough founder ownership to make the journey worthwhile. Sometimes the best decision is to accept a lower valuation with better terms, raise less capital to minimize dilution, or extend runway through operational efficiency rather than raising another round.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               How NexDyne Helps Founders Navigate Valuation
             </h2>
             
@@ -224,7 +224,7 @@ export default function ValuationMistakes() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
               Related Insights
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white">Continue reading</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">Continue reading</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -251,7 +251,7 @@ export default function ValuationMistakes() {
               >
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.category}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>

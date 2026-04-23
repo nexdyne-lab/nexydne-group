@@ -37,11 +37,11 @@ export function EnergyTradingPlatform() {
               <span className="font-semibold">$50M daily volume</span>
             </div>
             <div className="flex items-center gap-2">
-              <Zap className="h-5 w-5 text-blue-600" />
+              <Zap className="h-5 w-5 text-primary" />
               <span className="font-semibold">Sub-second latency</span>
             </div>
             <div className="flex items-center gap-2">
-              <Shield className="h-5 w-5 text-blue-600" />
+              <Shield className="h-5 w-5 text-primary" />
               <span className="font-semibold">99.99% uptime</span>
             </div>
           </div>

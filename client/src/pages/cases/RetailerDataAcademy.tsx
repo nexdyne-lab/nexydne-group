@@ -96,7 +96,7 @@ export default function RetailerDataAcademy() {
               <div className="text-4xl font-bold text-blue-900 mb-2">250+</div>
               <div className="text-charcoal/80">Custom dashboards and reports built by business users</div>
             </div>
-            <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
+            <div className="bg-red-50 p-6 rounded-lg border-l-4 border-primary">
               <div className="text-4xl font-bold text-red-900 mb-2">$1.2M</div>
               <div className="text-charcoal/80">Annual savings from reduced external analytics consulting</div>
             </div>

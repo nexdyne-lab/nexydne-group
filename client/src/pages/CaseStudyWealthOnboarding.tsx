@@ -36,7 +36,7 @@ export default function CaseStudyWealthOnboarding() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Case Study · Financial Services
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               Client onboarding from weeks to <span className="text-primary">3 days</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mb-5 sm:mb-6 md:mb-8">
@@ -78,7 +78,7 @@ export default function CaseStudyWealthOnboarding() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-6xl font-serif font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-6xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-lg text-white">{stat.label}</div>
                 <div className="text-sm text-white/60">{stat.sublabel}</div>
               </motion.div>
@@ -116,7 +116,7 @@ export default function CaseStudyWealthOnboarding() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Opportunity
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Losing high-net-worth clients to competitors with faster, more modern onboarding
             </h2>
           </motion.div>
@@ -151,7 +151,7 @@ export default function CaseStudyWealthOnboarding() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
               "We were winning on investment performance and losing on client experience. Prospects would choose competitors simply because they could start investing two weeks sooner."
             </blockquote>
             <div className="text-base text-white">
@@ -174,7 +174,7 @@ export default function CaseStudyWealthOnboarding() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Digital onboarding that combines automation with white-glove service
             </h2>
           </motion.div>
@@ -188,22 +188,22 @@ export default function CaseStudyWealthOnboarding() {
               We partnered with the wealth management firm to design and implement a comprehensive digital onboarding platform that automated compliance and operational workflows while preserving the personalized advisory relationship. The $125,000 investment focused on creating seamless integration across multiple systems and ensuring regulatory compliance throughout the automated processes.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Digital client portal and document collection</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Digital client portal and document collection</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               The platform provided new clients with a secure, branded portal accessible via web or mobile app. Clients completed account applications digitally with intelligent form guidance that explained requirements and suggested appropriate account structures based on stated goals. The system requested only necessary documentation based on account type and client circumstances, eliminating unnecessary paperwork. Document upload supported multiple formats with automatic quality verification, requesting resubmission only when documents were illegible or incomplete. Clients received real-time status updates showing exactly where their application stood in the process.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Automated compliance verification and KYC</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Automated compliance verification and KYC</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               The platform automated Know Your Customer verification through integration with identity verification services, sanctions screening databases, and public records. The system performed automated checks against OFAC lists, PEP databases, and adverse media sources, flagging potential issues for compliance review. Accredited investor verification occurred automatically through integration with third-party verification services. For complex cases requiring manual review, the system compiled all relevant information and highlighted specific items requiring compliance officer attention, reducing review time from hours to minutes.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Intelligent account setup and funding</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Intelligent account setup and funding</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Once compliance verification completed, the platform automatically created accounts in the portfolio management system with appropriate registrations, beneficiaries, and investment restrictions. The system generated all required account opening documents, obtained electronic signatures, and filed regulatory notifications. Clients could fund accounts through multiple methods including ACH, wire transfer, or ACAT transfer from existing brokerage accounts. The platform monitored funding status and automatically notified advisors when accounts were ready for investment, enabling same-day trade execution for many clients.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Advisor collaboration and oversight</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Advisor collaboration and oversight</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
               Throughout the automated process, advisors maintained visibility and control through real-time dashboards showing each client's onboarding status. The system automatically scheduled advisor check-in calls at key milestones, ensuring personal touchpoints during the digital process. Advisors could intervene at any point to provide guidance or address questions, with the platform seamlessly transitioning between automated and manual workflows. The system learned from advisor interventions, identifying opportunities to improve the automated experience and reduce the need for manual assistance.
             </p>
@@ -220,7 +220,7 @@ export default function CaseStudyWealthOnboarding() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
               "The platform handles all the compliance and operational complexity automatically, so our advisors can focus entirely on understanding client goals and building investment strategies."
             </blockquote>
             <div className="text-base text-white">
@@ -243,7 +243,7 @@ export default function CaseStudyWealthOnboarding() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               From competitive liability to strategic differentiator
             </h2>
           </motion.div>
@@ -257,17 +257,17 @@ export default function CaseStudyWealthOnboarding() {
               Within 24 months of deployment, the digital onboarding platform transformed the firm's client acquisition capabilities and operational efficiency, delivering measurable improvements in speed, capacity, and compliance.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Onboarding speed and client experience</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Onboarding speed and client experience</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Average time-to-first-trade decreased from 18 days to 3 days, with straightforward cases completing in under 24 hours. Client satisfaction with the onboarding experience increased by 52 points, with digital convenience and transparency cited as primary improvements. The firm's Net Promoter Score among new clients improved from 58 to 84, significantly above wealth management industry averages. Prospect-to-client conversion rates increased by 28 percentage points, with advisors reporting that onboarding speed became a competitive advantage rather than a liability.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Operational capacity and efficiency</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Operational capacity and efficiency</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               The firm's capacity to onboard new clients increased by 45% with the same operations staff. Manual data entry time decreased by 88%, with information flowing automatically from client input to portfolio management and CRM systems. Compliance review time per account decreased from 4.2 hours to 35 minutes, enabling the compliance team to handle significantly higher volumes while improving thoroughness. The operations team shifted focus from routine processing to complex account structures and exception handling, improving service quality for the firm's most sophisticated clients.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Growth and strategic positioning</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Growth and strategic positioning</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
               The $125,000 investment generated annual benefits of $1.95 million through increased client acquisition ($1.2 million in additional fee revenue), operational efficiency ($570,000 in time savings), and avoided compliance costs ($180,000), representing a 255% ROI over 24 months. More strategically, the platform enabled the firm to compete effectively for younger high-net-worth clients who expected digital experiences. Assets under management grew by $2.1 billion over the measurement period, with 42% of new assets from clients under age 50 versus 18% previously. The firm's ability to combine sophisticated investment management with modern client experience became a key differentiator in competitive situations. Management views the platform as foundational infrastructure that will support the firm's growth to $15 billion in assets under management without proportional increases in operations staff.
             </p>
@@ -288,7 +288,7 @@ export default function CaseStudyWealthOnboarding() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Get In Touch
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white">Our experts</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Our experts</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl">
@@ -317,7 +317,7 @@ export default function CaseStudyWealthOnboarding() {
                 <div className="flex items-start gap-4">
                   <img className="w-20 h-20 rounded-full object-cover flex-shrink-0" src={expert.image} alt={expert.name} />
                   <div>
-                    <h3 className="text-2xl font-serif font-bold mb-2">{expert.name}</h3>
+                    <h3 className="text-2xl font-bold mb-2">{expert.name}</h3>
                     <p className="text-sm text-primary mb-4">{expert.location}</p>
                     <p className="text-base leading-relaxed text-charcoal/70">
                       {expert.description}
@@ -350,7 +350,7 @@ export default function CaseStudyWealthOnboarding() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white">More success stories</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">More success stories</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -400,7 +400,7 @@ export default function CaseStudyWealthOnboarding() {
                     </div>
                   </div>
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">

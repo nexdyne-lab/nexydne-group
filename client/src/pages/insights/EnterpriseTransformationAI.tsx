@@ -44,7 +44,7 @@ export default function EnterpriseTransformationAI() {
               </span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold tracking-tight leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-4">
               Enterprise transformation in the AI era
             </h1>
             
@@ -55,7 +55,7 @@ export default function EnterpriseTransformationAI() {
             <div className="flex items-center justify-between border-t border-b border-base/10 py-6">
               <div className="flex items-center gap-6">
                 <div>
-                  <p className="font-serif font-bold">NEXDYNE Research</p>
+                  <p className="font-bold">NEXDYNE Research</p>
                   <p className="text-sm text-charcoal/60 flex items-center">
                     <Calendar className="w-4 h-4 mr-1" />
                     October 28, 2025
@@ -111,7 +111,7 @@ export default function EnterpriseTransformationAI() {
                 The convergence of artificial intelligence, cloud computing, and modern software architectures is fundamentally reshaping how enterprises operate. Organizations that successfully navigate this transformation are achieving 3-5x improvements in operational efficiency while creating entirely new sources of competitive advantage.
               </p>
 
-              <h2 className="text-3xl font-serif font-bold mt-12 mb-6">The imperative for AI-native architecture</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">The imperative for AI-native architecture</h2>
               
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 Traditional enterprise architectures were designed for a world of predictable workloads, batch processing, and human-in-the-loop decision-making. AI changes all of these assumptions. Machine learning models require elastic compute resources that scale with training and inference demands. Real-time AI applications need sub-millisecond latency that legacy architectures cannot deliver. And the volume of data required to train and operate AI systems exceeds what traditional data warehouses can handle.
@@ -122,13 +122,13 @@ export default function EnterpriseTransformationAI() {
               </p>
 
               <div className="bg-subtle p-8 rounded-xl my-12">
-                <h3 className="text-xl font-serif font-bold mb-4">Key Finding</h3>
+                <h3 className="text-xl font-bold mb-4">Key Finding</h3>
                 <p className="text-charcoal/70 leading-relaxed mb-0">
                   Companies with modern cloud-native architectures are 5x more likely to successfully deploy AI at scale compared to those with legacy infrastructure.
                 </p>
               </div>
 
-              <h2 className="text-3xl font-serif font-bold mt-12 mb-6">Four pillars of AI-ready infrastructure</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">Four pillars of AI-ready infrastructure</h2>
 
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 Based on our analysis of successful transformations, we've identified four architectural pillars that distinguish AI-ready enterprises:
@@ -169,7 +169,7 @@ export default function EnterpriseTransformationAI() {
                   <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4 text-primary">
                     {pillar.icon}
                   </div>
-                  <h3 className="text-lg font-serif font-bold mb-2">{pillar.title}</h3>
+                  <h3 className="text-lg font-bold mb-2">{pillar.title}</h3>
                   <p className="text-white/60 text-sm leading-relaxed">{pillar.description}</p>
                 </div>
               ))}
@@ -182,23 +182,23 @@ export default function EnterpriseTransformationAI() {
               transition={{ duration: 0.6 }}
               className="prose prose-lg max-w-none"
             >
-              <h2 className="text-3xl font-serif font-bold mt-12 mb-6">The transformation roadmap</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">The transformation roadmap</h2>
 
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 Successful AI-era transformations follow a deliberate sequence that balances quick wins with foundational investments. Based on our experience guiding 200+ transformations, we recommend a phased approach:
               </p>
 
-              <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Phase 1: Foundation (Months 1-6)</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Phase 1: Foundation (Months 1-6)</h3>
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 Establish cloud landing zone with security and governance controls. Migrate initial workloads to validate architecture and build team capabilities. Implement data platform foundations that will support AI initiatives.
               </p>
 
-              <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Phase 2: Modernization (Months 7-12)</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Phase 2: Modernization (Months 7-12)</h3>
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 Decompose monolithic applications into microservices. Build CI/CD pipelines and DevOps practices. Establish MLOps infrastructure for model development and deployment.
               </p>
 
-              <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Phase 3: AI Enablement (Months 13-18)</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Phase 3: AI Enablement (Months 13-18)</h3>
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 Deploy AI capabilities across prioritized use cases. Scale successful pilots to production. Build feedback loops for continuous model improvement.
               </p>
@@ -210,7 +210,7 @@ export default function EnterpriseTransformationAI() {
                 <p className="text-charcoal/60 mt-4 mb-0">— NEXDYNE Research Team</p>
               </div>
 
-              <h2 className="text-3xl font-serif font-bold mt-12 mb-6">Measuring transformation success</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">Measuring transformation success</h2>
 
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 Effective transformation requires clear metrics that connect technical progress to business outcomes. We recommend tracking:
@@ -224,7 +224,7 @@ export default function EnterpriseTransformationAI() {
                 <li><strong>Infrastructure cost efficiency:</strong> What's your cost per transaction/user? Leaders reduce costs 40-60%.</li>
               </ul>
 
-              <h2 className="text-3xl font-serif font-bold mt-12 mb-6">Getting started</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">Getting started</h2>
 
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 The journey to AI-ready infrastructure begins with honest assessment of your current state. Most organizations overestimate their readiness and underestimate the foundational work required. A structured assessment that evaluates architecture, data, talent, and processes provides the clarity needed to build an effective transformation roadmap.
@@ -276,7 +276,7 @@ export default function EnterpriseTransformationAI() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Ready to transform your enterprise?
             </h2>
             <p className="text-xl text-white/70 leading-relaxed mb-10">

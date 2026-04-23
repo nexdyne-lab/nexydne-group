@@ -35,7 +35,7 @@ export default function CaseStudyBankProcess() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Case Study · Financial Services
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               Transforming compliance and <span className="text-primary">KYC processing</span> at a major US bank
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mb-5 sm:mb-6 md:mb-8">
@@ -77,7 +77,7 @@ export default function CaseStudyBankProcess() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-6xl font-serif font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-6xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-lg text-white">{stat.label}</div>
                 <div className="text-sm text-white/60">{stat.sublabel}</div>
               </motion.div>
@@ -115,7 +115,7 @@ export default function CaseStudyBankProcess() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Opportunity
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Managing regulatory complexity in a rapidly evolving market
             </h2>
           </motion.div>
@@ -150,7 +150,7 @@ export default function CaseStudyBankProcess() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
               "Compliance cannot be a bottleneck to growth. We needed systems that could handle increasing volume while actually improving our risk management capabilities."
             </blockquote>
             <div className="text-base text-white">
@@ -173,7 +173,7 @@ export default function CaseStudyBankProcess() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Building an intelligent compliance automation platform
             </h2>
           </motion.div>
@@ -187,17 +187,17 @@ export default function CaseStudyBankProcess() {
               We worked with the bank's compliance, technology, and operations teams to design an end-to-end automation platform that transformed KYC processing and regulatory reporting while maintaining rigorous controls and audit trails.
             </p>
             
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Intelligent document processing</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Intelligent document processing</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               The platform uses optical character recognition and machine learning to automatically extract data from identity documents, business registration certificates, and financial statements. The system verifies document authenticity, cross-references information against OFAC, state databases, and credit bureaus, and flags inconsistencies for human review. What previously took compliance officers hours now happens in minutes, with higher accuracy than manual processing.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Automated risk assessment</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Automated risk assessment</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               We implemented a risk scoring engine that analyzes customer profiles against regulatory requirements and the bank's risk appetite. The system automatically assigns risk ratings, determines appropriate due diligence levels, and routes high-risk cases to senior compliance officers. Machine learning models continuously improve risk detection by learning from historical cases and regulatory guidance updates.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Regulatory reporting automation</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Regulatory reporting automation</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
               The platform automatically generates regulatory reports by extracting data from core banking systems, applying business rules, and performing validation checks. Reports are generated on schedule with complete audit trails showing data lineage and transformation logic. The system alerts compliance teams to potential issues before submission deadlines, eliminating last-minute scrambles and reducing regulatory risk.
             </p>
@@ -214,7 +214,7 @@ export default function CaseStudyBankProcess() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
               "The platform doesn't just save time—it makes us smarter about risk. We catch issues earlier and make better decisions faster."
             </blockquote>
             <div className="text-base text-white">
@@ -237,7 +237,7 @@ export default function CaseStudyBankProcess() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Achieving operational excellence and regulatory confidence
             </h2>
           </motion.div>
@@ -251,22 +251,22 @@ export default function CaseStudyBankProcess() {
               Within one year of deployment, the compliance automation platform delivered transformative results across efficiency, accuracy, and risk management.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Operational efficiency</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Operational efficiency</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               KYC processing time dropped from an average of 12 days to 2 days for retail customers and from 14 days to 3 days for corporate accounts. The compliance team's capacity increased by 180% without adding headcount, enabling the bank to support customer acquisition targets. Over 5,400 hours of manual work were eliminated annually, allowing compliance officers to focus on complex investigations and strategic risk management.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Accuracy and risk management</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Accuracy and risk management</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Regulatory reporting accuracy improved to 99.8%, eliminating the errors that had previously resulted in fines and regulatory scrutiny. The bank has had zero reporting violations since platform deployment. Risk detection improved significantly, with the system identifying 32% more high-risk customers than the previous manual process, enabling proactive risk mitigation.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Customer experience</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Customer experience</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Faster KYC processing translated directly to improved customer satisfaction. Corporate clients specifically cited onboarding speed as a differentiator in choosing the bank over competitors. The bank's Net Promoter Score among business customers increased by 18 points, with onboarding experience cited as a key driver.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Strategic positioning</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Strategic positioning</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
               The platform positioned the bank as a compliance leader in the regional banking market. The OCC has cited the bank's systems as best practice examples during examinations, and the bank now advises American Bankers Association working groups on compliance automation standards. The $135,000 investment in the platform generated annual cost savings of $385,000 through reduced manual work and eliminated fines, achieving a 265% ROI over 24 months. The Chief Compliance Officer estimates that the platform has created a sustainable competitive advantage worth significantly more than the direct cost savings.
             </p>
@@ -287,7 +287,7 @@ export default function CaseStudyBankProcess() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Get In Touch
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white">Our experts</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Our experts</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl">
@@ -316,7 +316,7 @@ export default function CaseStudyBankProcess() {
                 <div className="flex items-start gap-4">
                   <img className="w-20 h-20 rounded-full object-cover flex-shrink-0" src={expert.image} alt={expert.name} />
                   <div>
-                    <h3 className="text-2xl font-serif font-bold mb-2">{expert.name}</h3>
+                    <h3 className="text-2xl font-bold mb-2">{expert.name}</h3>
                     <p className="text-sm text-primary mb-4">{expert.location}</p>
                     <p className="text-base leading-relaxed text-charcoal/70">
                       {expert.description}
@@ -342,7 +342,7 @@ export default function CaseStudyBankProcess() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-charcoal">More success stories</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -392,7 +392,7 @@ export default function CaseStudyBankProcess() {
                     </div>
                   </div>
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-serif font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">

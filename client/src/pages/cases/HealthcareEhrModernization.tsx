@@ -162,17 +162,17 @@ export default function HealthcareEhrModernization() {
           <h2 className="text-4xl font-bold mb-12">The Results</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">41%</div>
+              <div className="text-5xl font-bold text-primary mb-2">41%</div>
               <div className="text-sm text-muted-foreground">
                 Improvement in clinician satisfaction
               </div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">2.8hrs</div>
+              <div className="text-5xl font-bold text-primary mb-2">2.8hrs</div>
               <div className="text-sm text-muted-foreground">Daily time savings per clinician</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">89%</div>
+              <div className="text-5xl font-bold text-primary mb-2">89%</div>
               <div className="text-sm text-muted-foreground">Staff adoption rate</div>
             </div>
           </div>

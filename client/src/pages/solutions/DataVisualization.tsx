@@ -158,7 +158,7 @@ export default function DataVisualization() {
               From executive scorecards tracking strategic KPIs to operational dashboards monitoring real-time performance, we create tailor-made solutions that fit your workflow. No generic templates. No forcing your processes into vendor constraints. Dashboards that provide the insight your organization needs, designed for the people who will actually use them.
             </p>
 
-            <blockquote className="border-l-4 border-red-600 pl-6 py-4 my-8 bg-white">
+            <blockquote className="border-l-4 border-primary pl-6 py-4 my-8 bg-white">
               <p className="text-xl text-red-900 font-medium italic mb-4">
                 "Data becomes valuable when everyone can act on it. A good dashboard doesn't just show what's happening now—it tells you what to do next. We've seen operations teams reduce delivery delays 40% by surfacing at-risk shipments 2 hours before they miss windows."
               </p>
@@ -305,7 +305,7 @@ export default function DataVisualization() {
                   <p className="text-charcoal/80 mb-4">
                     Custom dashboard surfaced capacity bottlenecks and route inefficiencies, enabling proactive intervention before delays occurred.
                   </p>
-                  <button className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
+                  <button className="text-blue-500 hover:text-primary font-semibold flex items-center gap-2">
                     <span>Read more</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
@@ -323,7 +323,7 @@ export default function DataVisualization() {
                   <p className="text-charcoal/80 mb-4">
                     Usage analytics identified friction points in onboarding flow, driving targeted improvements that boosted conversion rates.
                   </p>
-                  <button className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
+                  <button className="text-blue-500 hover:text-primary font-semibold flex items-center gap-2">
                     <span>Read more</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
@@ -341,7 +341,7 @@ export default function DataVisualization() {
                   <p className="text-charcoal/80 mb-4">
                     Equipment health dashboard predicted failures 2 weeks in advance, enabling scheduled maintenance instead of emergency repairs.
                   </p>
-                  <button className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
+                  <button className="text-blue-500 hover:text-primary font-semibold flex items-center gap-2">
                     <span>Read more</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
@@ -368,7 +368,7 @@ export default function DataVisualization() {
                 <p className="text-charcoal/80 mb-4">
                   Define what data matters and how to monetize it. Map your data landscape, identify high-value use cases, and build executable roadmaps.
                 </p>
-                <span className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
+                <span className="text-blue-500 hover:text-primary font-semibold flex items-center gap-2">
                   Learn more
                   <ArrowRight className="w-4 h-4" />
                 </span>
@@ -381,7 +381,7 @@ export default function DataVisualization() {
                 <p className="text-charcoal/80 mb-4">
                   Modern data warehouses and lakes built on cloud infrastructure. Scalable architectures that ingest, transform, and serve data at enterprise scale.
                 </p>
-                <span className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
+                <span className="text-blue-500 hover:text-primary font-semibold flex items-center gap-2">
                   Learn more
                   <ArrowRight className="w-4 h-4" />
                 </span>
@@ -407,7 +407,7 @@ export default function DataVisualization() {
               <p className="text-charcoal/80 mb-4">
                 Upskill your teams on analytics tools, data literacy, and self-service capabilities. Hands-on workshops that build internal capability.
               </p>
-              <span className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
+              <span className="text-blue-500 hover:text-primary font-semibold flex items-center gap-2">
                 Learn more
                 <ArrowRight className="w-4 h-4" />
               </span>
@@ -418,7 +418,7 @@ export default function DataVisualization() {
               <p className="text-charcoal/80 mb-4">
                 Policies, processes, and controls that ensure data quality, security, and compliance. Stewardship programs that scale with your organization.
               </p>
-              <span className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
+              <span className="text-blue-500 hover:text-primary font-semibold flex items-center gap-2">
                 Learn more
                 <ArrowRight className="w-4 h-4" />
               </span>
@@ -429,7 +429,7 @@ export default function DataVisualization() {
               <p className="text-charcoal/80 mb-4">
                 Dedicated teams that build and maintain your data infrastructure. Pipelines, transformations, quality monitoring, and platform operations.
               </p>
-              <span className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
+              <span className="text-blue-500 hover:text-primary font-semibold flex items-center gap-2">
                 Learn more
                 <ArrowRight className="w-4 h-4" />
               </span>

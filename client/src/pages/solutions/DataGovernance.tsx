@@ -15,11 +15,11 @@ export default function DataGovernance() {
         <div className="container">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Link href="/">
-              <a className="hover:text-blue-600">Home</a>
+              <a className="hover:text-primary">Home</a>
             </Link>
             <span>/</span>
             <Link href="/solutions/data-solutions">
-              <a className="hover:text-blue-600">Data Solutions</a>
+              <a className="hover:text-primary">Data Solutions</a>
             </Link>
             <span>/</span>
             <span className="text-charcoal">Data Governance</span>
@@ -57,7 +57,7 @@ export default function DataGovernance() {
       <section className="py-20">
         <div className="container">
           <div className="mb-12">
-            <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">
+            <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">
               THE BENEFITS
             </p>
             <h2 className="text-4xl font-bold text-charcoal">
@@ -221,7 +221,7 @@ export default function DataGovernance() {
       <section className="py-20">
         <div className="container">
           <div className="mb-12">
-            <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">
+            <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">
               PARTNERS
             </p>
             <h2 className="text-4xl font-bold text-charcoal">
@@ -265,7 +265,7 @@ export default function DataGovernance() {
       <section className="py-20 bg-slate-50">
         <div className="container">
           <div className="mb-12">
-            <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">
+            <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">
               CASES
             </p>
             <h2 className="text-4xl font-bold text-charcoal mb-4">
@@ -296,8 +296,8 @@ export default function DataGovernance() {
                     Automated access controls and audit logging for 12,000 employees accessing patient records across 8 facilities.
                   </p>
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-blue-600 font-semibold">Read more</span>
-                    <ArrowRight className="w-4 h-4 text-blue-600" />
+                    <span className="text-primary font-semibold">Read more</span>
+                    <ArrowRight className="w-4 h-4 text-primary" />
                   </div>
                 </div>
               </div>
@@ -322,8 +322,8 @@ export default function DataGovernance() {
                     Real-time data quality monitoring across 200+ source systems feeding regulatory reports.
                   </p>
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-blue-600 font-semibold">Read more</span>
-                    <ArrowRight className="w-4 h-4 text-blue-600" />
+                    <span className="text-primary font-semibold">Read more</span>
+                    <ArrowRight className="w-4 h-4 text-primary" />
                   </div>
                 </div>
               </div>
@@ -348,8 +348,8 @@ export default function DataGovernance() {
                     Consent management, right-to-be-forgotten workflows, and data residency controls across EU markets.
                   </p>
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-blue-600 font-semibold">Read more</span>
-                    <ArrowRight className="w-4 h-4 text-blue-600" />
+                    <span className="text-primary font-semibold">Read more</span>
+                    <ArrowRight className="w-4 h-4 text-primary" />
                   </div>
                 </div>
               </div>

@@ -42,14 +42,14 @@ export default function InsuranceCaseStudy() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                <Clock className="w-8 h-8 text-blue-600" />
+                <Clock className="w-8 h-8 text-primary" />
               </div>
               <div className="text-4xl font-bold text-charcoal mb-2">73%</div>
               <div className="text-muted-foreground">Faster processing</div>
             </div>
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                <FileText className="w-8 h-8 text-blue-600" />
+                <FileText className="w-8 h-8 text-primary" />
               </div>
               <div className="text-4xl font-bold text-charcoal mb-2">85%</div>
               <div className="text-muted-foreground">Auto-adjudication rate</div>
@@ -176,7 +176,7 @@ export default function InsuranceCaseStudy() {
             <h2 className="text-3xl font-bold text-charcoal mb-6">The Results</h2>
             <div className="grid md:grid-cols-2 gap-4 mb-6 sm:mb-8 md:mb-12">
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-slate-200">
-                <div className="text-5xl font-bold text-blue-600 mb-2">73%</div>
+                <div className="text-5xl font-bold text-primary mb-2">73%</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">Faster processing</div>
                 <p className="text-muted-foreground">
                   Average claims cycle time reduced from 14 days to 3.8 days, with simple claims resolved in under 24 hours.
@@ -184,7 +184,7 @@ export default function InsuranceCaseStudy() {
               </div>
               
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-slate-200">
-                <div className="text-5xl font-bold text-blue-600 mb-2">85%</div>
+                <div className="text-5xl font-bold text-primary mb-2">85%</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">Auto-adjudication rate</div>
                 <p className="text-muted-foreground">
                   85% of claims now processed without human intervention, freeing adjusters to focus on complex cases requiring expertise.
@@ -212,19 +212,19 @@ export default function InsuranceCaseStudy() {
               <h3 className="text-2xl font-bold text-charcoal mb-4">Business Impact</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>Customer satisfaction scores improved from 72 to 89 NPS</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>Call center volume reduced 54% through self-service and proactive communication</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>Regulatory compliance improved with consistent, auditable decision trails</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>Adjuster capacity increased 3x, enabling growth without proportional hiring</span>
                 </li>
               </ul>
@@ -238,7 +238,7 @@ export default function InsuranceCaseStudy() {
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="bg-slate-50 p-6 sm:p-8 md:p-12 rounded-xl sm:rounded-2xl border border-slate-200">
-              <svg className="w-12 h-12 text-blue-600 mb-6" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-12 h-12 text-primary mb-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
               <blockquote className="text-base sm:text-lg md:text-xl lg:text-2xl text-charcoal/80 leading-relaxed mb-6">

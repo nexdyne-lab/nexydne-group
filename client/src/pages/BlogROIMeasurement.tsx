@@ -232,15 +232,15 @@ export default function BlogROIMeasurement() {
             </p>
             <ul className="space-y-3 text-charcoal/80">
               <li className="flex items-start gap-3">
-                <span className="text-blue-600 font-bold mt-1">•</span>
+                <span className="text-primary font-bold mt-1">•</span>
                 <span><span className="font-semibold">Change management:</span> Training, process documentation, and adoption support typically add 15-20% to initial investment</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-blue-600 font-bold mt-1">•</span>
+                <span className="text-primary font-bold mt-1">•</span>
                 <span><span className="font-semibold">Maintenance and updates:</span> Annual costs of 12-18% of initial investment for platform maintenance, updates, and minor enhancements</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-blue-600 font-bold mt-1">•</span>
+                <span className="text-primary font-bold mt-1">•</span>
                 <span><span className="font-semibold">Integration updates:</span> When connected systems change, automation may require updates (budget 5-8% annually)</span>
               </li>
             </ul>

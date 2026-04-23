@@ -36,7 +36,7 @@ export default function PsychologyOfValue() {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-3 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold mb-3 leading-tight">
             The Psychology of Value: Why "Cost-Plus" Fails in the Digital Age
           </h1>
           
@@ -139,7 +139,7 @@ export default function PsychologyOfValue() {
               </div>
               <div>
                 <h4 className="font-bold text-charcoal text-lg">Elena Rossi</h4>
-                <p className="text-blue-600 font-medium text-sm mb-2">Partner, Pricing Strategy</p>
+                <p className="text-primary font-medium text-sm mb-2">Partner, Pricing Strategy</p>
                 <p className="text-muted-foreground text-sm">
                   Elena is an economist and data scientist specializing in behavioral pricing and conjoint analysis. She helps clients unlock hidden margin through value-based pricing architectures.
                 </p>
@@ -165,13 +165,13 @@ export default function PsychologyOfValue() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <h4 className="font-bold text-lg group-hover:text-blue-600 transition-colors">
+                  <h4 className="font-bold text-lg group-hover:text-primary transition-colors">
                     Algorithmic Pricing for SMEs
                   </h4>
                   <p className="text-muted-foreground text-sm mt-2">
                     Dynamic pricing technology is now accessible to mid-market companies.
                   </p>
-                  <div className="flex items-center text-blue-600 font-medium text-sm mt-3 group-hover:translate-x-1 transition-transform">
+                  <div className="flex items-center text-primary font-medium text-sm mt-3 group-hover:translate-x-1 transition-transform">
                     Read Article <ArrowRight className="ml-1 w-3 h-3" />
                   </div>
                 </div>
@@ -185,13 +185,13 @@ export default function PsychologyOfValue() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <h4 className="font-bold text-lg group-hover:text-blue-600 transition-colors">
+                  <h4 className="font-bold text-lg group-hover:text-primary transition-colors">
                     Optimizing Subscription Models
                   </h4>
                   <p className="text-muted-foreground text-sm mt-2">
                     Explore usage-based, tiered, and hybrid models that align revenue with success.
                   </p>
-                  <div className="flex items-center text-blue-600 font-medium text-sm mt-3 group-hover:translate-x-1 transition-transform">
+                  <div className="flex items-center text-primary font-medium text-sm mt-3 group-hover:translate-x-1 transition-transform">
                     Read Article <ArrowRight className="ml-1 w-3 h-3" />
                   </div>
                 </div>

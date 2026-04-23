@@ -253,8 +253,8 @@ export default function AIPoweredRecommendations() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="relative"
               >
-                <div className="text-7xl font-serif font-bold text-primary mb-4">{item.step}</div>
-                <h3 className="text-2xl font-serif font-bold mb-4">{item.title}</h3>
+                <div className="text-7xl font-bold text-primary mb-4">{item.step}</div>
+                <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
                 <p className="text-white/60 leading-relaxed">{item.description}</p>
               </motion.div>
             ))}
@@ -298,7 +298,7 @@ export default function AIPoweredRecommendations() {
                 className="bg-charcoal/20 p-8 rounded-lg"
               >
                 <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">{item.industry}</span>
-                <h3 className="text-2xl font-serif font-bold leading-tight">{item.headline}</h3>
+                <h3 className="text-2xl font-bold leading-tight">{item.headline}</h3>
               </motion.div>
             ))}
           </div>
@@ -328,7 +328,7 @@ export default function AIPoweredRecommendations() {
               >
                 <Link href={item.link}>
                   <a className="block p-8 bg-white border border-border hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full">
-                    <h3 className="text-xl font-serif font-bold text-charcoal mb-3">{item.title}</h3>
+                    <h3 className="text-xl font-bold text-charcoal mb-3">{item.title}</h3>
                     <p className="text-charcoal/70 mb-4">{item.description}</p>
                     <span className="font-semibold text-primary flex items-center">Explore <ArrowRight className="ml-2 w-4 h-4" /></span>
                   </a>

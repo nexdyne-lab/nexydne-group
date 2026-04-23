@@ -51,7 +51,7 @@ export default function EcommerceEconomics() {
               <span className="text-white/60">10 min read</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-white leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-4">
               E-commerce economics: Building profitable D2C channels
             </h1>
             
@@ -471,7 +471,7 @@ export default function EcommerceEconomics() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Ready to launch your D2C channel?
             </h2>
             <p className="text-xl text-white/70 leading-relaxed mb-10">

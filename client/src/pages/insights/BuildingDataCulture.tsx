@@ -102,7 +102,7 @@ export default function BuildingDataCulture() {
               </div>
             </div>
             
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold leading-[1.15] mb-3 text-white">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.15] mb-3 text-white">
               Building a Data-First Culture
             </h1>
             
@@ -144,7 +144,7 @@ export default function BuildingDataCulture() {
                 </div>
               </div>
 
-              <div className="prose prose-lg max-w-none prose-headings:font-serif prose-headings:text-charcoal prose-headings:font-bold prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-p:text-charcoal/70 prose-p:leading-relaxed prose-p:mb-6 prose-li:text-charcoal/70 prose-li:leading-relaxed prose-strong:text-charcoal prose-strong:font-semibold">
+              <div className="prose prose-lg max-w-none prose-headings: prose-headings:text-charcoal prose-headings:font-bold prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-p:text-charcoal/70 prose-p:leading-relaxed prose-p:mb-6 prose-li:text-charcoal/70 prose-li:leading-relaxed prose-strong:text-charcoal prose-strong:font-semibold">
                 <h2>Key Takeaways</h2>
                 <ul className="space-y-4 list-none pl-0">
                   <li className="flex items-start gap-3">
@@ -183,7 +183,7 @@ export default function BuildingDataCulture() {
                     <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80" alt="Sarah Jenkins" className="w-full h-full object-cover" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-serif font-bold text-charcoal">Sarah Jenkins</h3>
+                    <h3 className="text-lg font-bold text-charcoal">Sarah Jenkins</h3>
                     <p className="text-charcoal/50 text-sm">Chief Data Officer, NexDyne</p>
                   </div>
                 </div>
@@ -250,7 +250,7 @@ export default function BuildingDataCulture() {
 
                 {/* Newsletter CTA */}
                 <div className="bg-base rounded-lg p-6 text-white">
-                  <h3 className="text-lg font-serif font-bold mb-2">Stay ahead of the curve</h3>
+                  <h3 className="text-lg font-bold mb-2">Stay ahead of the curve</h3>
                   <p className="text-white/60 text-sm mb-6">
                     Get the latest strategic insights delivered directly to your inbox.
                   </p>
@@ -281,7 +281,7 @@ export default function BuildingDataCulture() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-serif italic font-bold mb-4 text-charcoal">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-charcoal">
                 Related Thinking
               </h2>
               <p className="text-charcoal/60">Continue exploring our latest perspectives.</p>
@@ -315,7 +315,7 @@ export default function BuildingDataCulture() {
                       <span className="text-xs font-bold uppercase tracking-wider text-charcoal">{article.category}</span>
                     </div>
                   </div>
-                  <h3 className="text-xl font-serif font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">{article.title}</h3>
+                  <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">{article.title}</h3>
                   <p className="text-charcoal/60 text-sm mb-4 leading-relaxed">{article.description}</p>
                   <div className="flex items-center gap-2 text-sm text-charcoal/50">
                     <span>{article.readTime}</span>

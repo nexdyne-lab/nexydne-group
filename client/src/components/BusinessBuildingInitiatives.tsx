@@ -81,7 +81,7 @@ export function BusinessBuildingInitiatives() {
             NexDyne Initiatives
           </span>
 
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight leading-[1.2] sm:leading-[1.15] text-charcoal mb-4 sm:mb-6 font-serif max-w-4xl mx-auto px-2 sm:px-0">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight leading-[1.2] sm:leading-[1.15] text-charcoal mb-4 sm:mb-6 max-w-4xl mx-auto px-2 sm:px-0">
             Building intelligent, competitive, and resilient mid-market businesses across the United States
           </h2>
           
@@ -122,7 +122,7 @@ export function BusinessBuildingInitiatives() {
                     <span className="text-secondary text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.1em] sm:tracking-[0.15em] mb-1.5 sm:mb-2 block">
                       {initiative.headline}
                     </span>
-                    <h3 className="text-base sm:text-lg md:text-xl font-bold text-white leading-tight font-serif mb-2 sm:mb-3">
+                    <h3 className="text-base sm:text-lg md:text-xl font-bold text-white leading-tight mb-2 sm:mb-3">
                       {initiative.title}
                     </h3>
                     <p className="text-white/75 text-xs sm:text-sm leading-relaxed mb-4 sm:mb-5 flex-grow">

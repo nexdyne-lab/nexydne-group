@@ -259,7 +259,7 @@ export default function DataSolutions() {
       <section className="py-20 bg-slate-50">
         <div className="container">
           <div className="mb-12">
-            <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">
+            <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">
               CASES
             </p>
             <h2 className="text-4xl font-bold text-charcoal mb-4">
@@ -291,11 +291,11 @@ export default function DataSolutions() {
                   </p>
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div>
-                      <div className="text-2xl font-bold text-blue-600">45%</div>
+                      <div className="text-2xl font-bold text-primary">45%</div>
                       <div className="text-sm text-muted-foreground">Faster load times</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-blue-600">60%</div>
+                      <div className="text-2xl font-bold text-primary">60%</div>
                       <div className="text-sm text-muted-foreground">Mobile conversion</div>
                     </div>
                   </div>
@@ -323,11 +323,11 @@ export default function DataSolutions() {
                   </p>
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div>
-                      <div className="text-2xl font-bold text-blue-600">80%</div>
+                      <div className="text-2xl font-bold text-primary">80%</div>
                       <div className="text-sm text-muted-foreground">Process automation</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-blue-600">120K+</div>
+                      <div className="text-2xl font-bold text-primary">120K+</div>
                       <div className="text-sm text-muted-foreground">Hours saved/year</div>
                     </div>
                   </div>
@@ -355,11 +355,11 @@ export default function DataSolutions() {
                   </p>
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div>
-                      <div className="text-2xl font-bold text-blue-600">40%</div>
+                      <div className="text-2xl font-bold text-primary">40%</div>
                       <div className="text-sm text-muted-foreground">Reduced no-shows</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-blue-600">35%</div>
+                      <div className="text-2xl font-bold text-primary">35%</div>
                       <div className="text-sm text-muted-foreground">Higher satisfaction</div>
                     </div>
                   </div>

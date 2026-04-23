@@ -75,12 +75,12 @@ export function SplitHero() {
               </span>
               
               {/* Main Tagline - Serif Font like Solutions Section */}
-              <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] xl:text-[3.25rem] font-serif text-charcoal leading-[1.15] tracking-tight mb-6">
+              <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] xl:text-[3.25rem] text-charcoal leading-[1.15] tracking-tight mb-6">
                 Redefining what's possible with Artificial Intelligence
               </h1>
               
               {/* Subtext - Black */}
-              <p className="text-base sm:text-lg font-serif text-charcoal/80 leading-relaxed mb-10 max-w-lg">
+              <p className="text-base sm:text-lg text-charcoal/80 leading-relaxed mb-10 max-w-lg">
                 We partner with forward-thinking organizations to unlock the power of AI and data—transforming complexity into competitive advantage.
               </p>
               

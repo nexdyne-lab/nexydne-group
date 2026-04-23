@@ -42,7 +42,7 @@ export default function CloudNativeArchitecture() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-bold font-serif leading-tight mb-6 text-charcoal"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-charcoal"
             >
               Cloud-Native Architecture for Scale: Building Infrastructure That Grows With Your Ambition
             </motion.h1>
@@ -103,7 +103,7 @@ export default function CloudNativeArchitecture() {
             <div className="max-w-3xl">
               {/* Executive Summary */}
               <div className="bg-text-light border border-border rounded-lg p-8 mb-12">
-                <h2 className="text-xl font-bold font-serif mb-4 text-charcoal">Executive Summary</h2>
+                <h2 className="text-xl font-bold mb-4 text-charcoal">Executive Summary</h2>
                 <p className="text-charcoal/70 leading-relaxed">
                   As organizations pursue digital transformation, their technology infrastructure must evolve from a cost center to a strategic enabler. Cloud-native architecture—built on principles of containerization, microservices, and continuous delivery—offers a path to infrastructure that scales elastically, recovers automatically, and enables rapid innovation. This whitepaper examines the core principles, implementation patterns, and organizational considerations for enterprises embarking on cloud-native transformation.
                 </p>
@@ -122,7 +122,7 @@ export default function CloudNativeArchitecture() {
 
               {/* Section 1 */}
               <section className="mb-12">
-                <h2 className="text-2xl md:text-3xl font-bold font-serif mb-6 text-charcoal">
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-charcoal">
                   Understanding Cloud-Native Architecture
                 </h2>
                 <p className="text-lg text-charcoal/70 leading-relaxed mb-6">
@@ -135,7 +135,7 @@ export default function CloudNativeArchitecture() {
 
               {/* Pull Quote */}
               <blockquote className="border-l-4 border-primary-hover pl-6 py-4 my-12 bg-subtle">
-                <p className="text-xl md:text-2xl font-serif text-primary-hover leading-relaxed mb-4">
+                <p className="text-xl md:text-2xl text-primary-hover leading-relaxed mb-4">
                   "Cloud-native is not a destination but a journey. The goal is not to adopt every new technology, but to build systems that can evolve as business needs and technology capabilities change."
                 </p>
                 <cite className="text-sm text-charcoal/60 not-italic">
@@ -145,7 +145,7 @@ export default function CloudNativeArchitecture() {
 
               {/* Section 2 */}
               <section className="mb-12">
-                <h2 className="text-2xl md:text-3xl font-bold font-serif mb-6 text-charcoal">
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-charcoal">
                   The Five Pillars of Cloud-Native Architecture
                 </h2>
                 <p className="text-lg text-charcoal/70 leading-relaxed mb-6">
@@ -238,7 +238,7 @@ export default function CloudNativeArchitecture() {
 
               {/* Section 3 */}
               <section className="mb-12">
-                <h2 className="text-2xl md:text-3xl font-bold font-serif mb-6 text-charcoal">
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-charcoal">
                   Implementation Patterns and Anti-Patterns
                 </h2>
                 <p className="text-lg text-charcoal/70 leading-relaxed mb-6">
@@ -251,7 +251,7 @@ export default function CloudNativeArchitecture() {
 
               {/* Section 4 */}
               <section className="mb-12">
-                <h2 className="text-2xl md:text-3xl font-bold font-serif mb-6 text-charcoal">
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-charcoal">
                   Organizational Considerations
                 </h2>
                 <p className="text-lg text-charcoal/70 leading-relaxed mb-6">
@@ -267,7 +267,7 @@ export default function CloudNativeArchitecture() {
 
               {/* Section 5 */}
               <section className="mb-12">
-                <h2 className="text-2xl md:text-3xl font-bold font-serif mb-6 text-charcoal">
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-charcoal">
                   Security in Cloud-Native Environments
                 </h2>
                 <p className="text-lg text-charcoal/70 leading-relaxed mb-6">
@@ -280,7 +280,7 @@ export default function CloudNativeArchitecture() {
 
               {/* Section 6 */}
               <section className="mb-12">
-                <h2 className="text-2xl md:text-3xl font-bold font-serif mb-6 text-charcoal">
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-charcoal">
                   Getting Started: A Practical Roadmap
                 </h2>
                 <p className="text-lg text-charcoal/70 leading-relaxed mb-6">

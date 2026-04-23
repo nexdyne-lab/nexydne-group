@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Linkedin, Twitter, Facebook, Youtube, Instagram, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 export default function Footer() {
@@ -24,7 +24,7 @@ export default function Footer() {
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
             {/* Left: Subscription Text */}
             <div>
-              <p className="font-serif text-xl sm:text-2xl md:text-3xl text-text-light leading-relaxed italic">
+              <p className="text-xl sm:text-2xl md:text-3xl text-text-light leading-[1.4]">
               The next era belongs to leaders who prepare for it. Subscribe to NexDyne Consulting Group Insights — principled perspectives on governance, strategy, and the future of human intelligence.
               </p>
             </div>
@@ -74,7 +74,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-8 sm:gap-10 md:gap-12">
           {/* Left Column: Tagline */}
           <div className="sm:col-span-2 md:col-span-4">
-            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-text-light leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl text-text-light leading-tight">
               Unlocking the<br />
               Potential of Those<br />
               Who Advance the<br />
@@ -120,7 +120,7 @@ export default function Footer() {
 
           {/* Right Column: Contact CTA */}
           <div className="sm:col-span-2 md:col-span-5">
-            <h3 className="font-serif text-xl sm:text-2xl md:text-3xl text-text-light mb-3 sm:mb-4">
+            <h3 className="text-xl sm:text-2xl md:text-3xl text-text-light mb-3 sm:mb-4">
               How can we assist you?
             </h3>
             <p className="text-white mb-4 sm:mb-6 leading-relaxed text-sm ">
@@ -172,54 +172,13 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Right: Social Icons */}
-            <div className="flex items-center gap-3 sm:gap-4 text-white">
-              <span className="hidden sm:inline text-xs text-white uppercase tracking-wider">Follow Us</span>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 -m-2 text-white hover:text-secondary transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 -m-2 text-white hover:text-secondary transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 -m-2 text-white hover:text-secondary transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 -m-2 text-white hover:text-secondary transition-colors"
-                aria-label="YouTube"
-              >
-                <Youtube className="w-5 h-5" />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 -m-2 text-white hover:text-secondary transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
+            {/* Right: Social Links */}
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-[13px] font-semibold uppercase tracking-[0.1em] text-text-light/70 hover:text-text-light transition-colors pb-1 border-b border-transparent hover:border-text-light/60">LinkedIn</a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-[13px] font-semibold uppercase tracking-[0.1em] text-text-light/70 hover:text-text-light transition-colors pb-1 border-b border-transparent hover:border-text-light/60">Twitter</a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-[13px] font-semibold uppercase tracking-[0.1em] text-text-light/70 hover:text-text-light transition-colors pb-1 border-b border-transparent hover:border-text-light/60">Facebook</a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-[13px] font-semibold uppercase tracking-[0.1em] text-text-light/70 hover:text-text-light transition-colors pb-1 border-b border-transparent hover:border-text-light/60">YouTube</a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[13px] font-semibold uppercase tracking-[0.1em] text-text-light/70 hover:text-text-light transition-colors pb-1 border-b border-transparent hover:border-text-light/60">Instagram</a>
             </div>
           </div>
 

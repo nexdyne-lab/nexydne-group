@@ -24,10 +24,10 @@ export default function NetZeroTransition() {
               <span className="mx-2">/</span>
               <span className="text-blue-900">Report</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-serif font-bold tracking-tight text-charcoal mb-4 leading-[1.1]">
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-4 leading-[1.1]">
               The Net Zero Transition: What it would cost, what it could bring
             </h1>
-            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light font-serif">
+            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light ">
               A comprehensive analysis of the economic transformation required to achieve net-zero emissions by 2050.
             </p>
           </div>
@@ -46,7 +46,7 @@ export default function NetZeroTransition() {
                 The transition to net-zero emissions will entail a massive economic transformation. Our research suggests that capital spending on physical assets for energy and land-use systems in the net-zero transition between 2021 and 2050 would amount to about $275 trillion, or $9.2 trillion per year on average, an annual increase of as much as $3.5 trillion from today.
               </p>
               
-              <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Key Findings</h3>
+              <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Key Findings</h3>
               <ul className="list-disc pl-6 space-y-4 text-muted-foreground">
                 <li>
                   <strong>Universal transformation:</strong> The transition will affect every country and every sector of the economy, with the most significant effects in developing countries and fossil fuel-dependent regions.
@@ -62,7 +62,7 @@ export default function NetZeroTransition() {
                 </li>
               </ul>
 
-              <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">The Economic Case</h3>
+              <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">The Economic Case</h3>
               <p className="text-muted-foreground">
                 While the costs are significant, the cost of inaction is far higher. Physical risks from climate change are already manifesting and will intensify. Moreover, the transition offers a unique opportunity to modernize the global capital stock, improve energy efficiency, and drive innovation.
               </p>
@@ -76,7 +76,7 @@ export default function NetZeroTransition() {
                 </figcaption>
               </figure>
 
-              <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Managing the Transition</h3>
+              <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Managing the Transition</h3>
               <p className="text-muted-foreground">
                 Governments and businesses must work together to manage the transition. Key priorities include:
               </p>

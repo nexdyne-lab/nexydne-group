@@ -90,7 +90,7 @@ export default function IntelligentProcessOptimizationNew() {
             <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg shadow-sm border border-border">
               <div className="flex items-start gap-4 mb-4">
                 <div className="bg-blue-100 p-3 rounded-lg flex-shrink-0">
-                  <Workflow className="h-6 w-6 text-blue-600" />
+                  <Workflow className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Technology</h3>
@@ -157,7 +157,7 @@ export default function IntelligentProcessOptimizationNew() {
             
             <div className="text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <TrendingUp className="w-8 h-8 text-blue-600" />
+                <TrendingUp className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-bold mb-4">40-60% cost reduction</h3>
               <p className="text-charcoal/80 leading-relaxed">

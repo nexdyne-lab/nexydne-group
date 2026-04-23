@@ -79,15 +79,15 @@ export function InsuranceClaimsPortal() {
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">86%</div>
+              <div className="text-5xl font-bold text-primary mb-2">86%</div>
               <div className="text-lg text-muted-foreground">Digital claims adoption</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">2 hours</div>
+              <div className="text-5xl font-bold text-primary mb-2">2 hours</div>
               <div className="text-lg text-muted-foreground">Average processing time</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">42 pts</div>
+              <div className="text-5xl font-bold text-primary mb-2">42 pts</div>
               <div className="text-lg text-muted-foreground">NPS improvement</div>
             </div>
           </div>

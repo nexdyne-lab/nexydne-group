@@ -18,7 +18,7 @@ export default function QualityManagement() {
       <Navbar />
       
       {/* DZ10 Hero Section */}
-      <section className="relative min-h-[70vh] sm:min-h-[60vh] sm:min-h-[55vh] sm:min-h-[65vh] md:min-h-[55vh] sm:min-h-[65vh] md:min-h-[70vh] md:min-h-[60vh] sm:min-h-[55vh] sm:min-h-[65vh] md:min-h-[70vh] md:min-h-[75vh] md:min-h-[70vh] sm:min-h-[60vh] sm:min-h-[55vh] sm:min-h-[65vh] md:min-h-[70vh] md:min-h-[75vh] md:min-h-[85vh] flex items-center pt-16 sm:pt-16 sm:pt-20 overflow-hidden">
+      <section className="relative min-h-[440px] md:min-h-[560px] flex items-center pt-16 sm:pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80"
@@ -40,7 +40,7 @@ export default function QualityManagement() {
               Operations / Quality
             </span>
             
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold tracking-tight text-white leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight text-white leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               Quality Management <br />
               <span className="text-primary">Systems</span>
             </h1>
@@ -78,7 +78,7 @@ export default function QualityManagement() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 The Challenge
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight mb-5 sm:mb-6 md:mb-8">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-5 sm:mb-6 md:mb-8">
                 Build excellence into <br />
                 <span className="text-primary">every process.</span>
               </h2>
@@ -94,11 +94,11 @@ export default function QualityManagement() {
 
               <div className="pt-8 grid grid-cols-2 gap-4 sm:p-5 md:p-6">
                 <div className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl">
-                  <div className="text-4xl font-serif font-bold text-primary mb-2">25-40%</div>
+                  <div className="text-4xl font-bold text-primary mb-2">25-40%</div>
                   <p className="text-sm text-charcoal/60 uppercase tracking-wider">Customer Satisfaction Improvement</p>
                 </div>
                 <div className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl">
-                  <div className="text-4xl font-serif font-bold text-primary mb-2">30-50%</div>
+                  <div className="text-4xl font-bold text-primary mb-2">30-50%</div>
                   <p className="text-sm text-charcoal/60 uppercase tracking-wider">Quality Cost Reduction</p>
                 </div>
               </div>
@@ -112,11 +112,11 @@ export default function QualityManagement() {
               className="grid grid-cols-2 gap-4"
             >
               <div className="p-4 sm:p-6 md:p-8 bg-base/5 rounded-lg sm:rounded-xl">
-                <div className="text-4xl font-serif font-bold text-primary mb-2">60-80%</div>
+                <div className="text-4xl font-bold text-primary mb-2">60-80%</div>
                 <div className="text-sm text-charcoal/60">Defect reduction</div>
               </div>
               <div className="p-4 sm:p-6 md:p-8 bg-base/5 rounded-lg sm:rounded-xl">
-                <div className="text-4xl font-serif font-bold text-primary mb-2">100%</div>
+                <div className="text-4xl font-bold text-primary mb-2">100%</div>
                 <div className="text-sm text-charcoal/60">Compliance achievement</div>
               </div>
               <div className="col-span-2 relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
@@ -145,7 +145,7 @@ export default function QualityManagement() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Our Capabilities
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
               Comprehensive quality solutions
             </h2>
             <p className="text-xl text-white/60 max-w-2xl">
@@ -199,7 +199,7 @@ export default function QualityManagement() {
                     {item.icon}
                   </div>
                   
-                  <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   
@@ -226,7 +226,7 @@ export default function QualityManagement() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Our Approach
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
                 The NexDyne <span className="text-primary">Methodology</span>
               </h2>
               <p className="text-lg text-charcoal/70 leading-relaxed mb-5 sm:mb-6 md:mb-8">
@@ -241,7 +241,7 @@ export default function QualityManagement() {
                   { num: "04", title: "Sustain", desc: "Establish governance, auditing, and continuous improvement processes for lasting excellence." }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 items-start">
-                    <div className="text-2xl font-serif font-bold text-primary">{item.num}</div>
+                    <div className="text-2xl font-bold text-primary">{item.num}</div>
                     <div>
                       <h3 className="text-lg font-bold text-charcoal mb-1">{item.title}</h3>
                       <p className="text-charcoal/60 text-sm">{item.desc}</p>
@@ -284,7 +284,7 @@ export default function QualityManagement() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
                 Our Impact
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                 Quality transformations
               </h2>
             </motion.div>
@@ -330,7 +330,7 @@ export default function QualityManagement() {
                   <div className="absolute inset-0 bg-charcoal/20 group-hover:bg-transparent transition-colors duration-500" />
                 </div>
                 <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
-                <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">
+                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">
                   {study.title}
                 </h3>
                 <div className="flex items-center text-white text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
@@ -355,7 +355,7 @@ export default function QualityManagement() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Why NexDyne
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-charcoal mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               The quality partner <br />you've been looking for
             </h2>
           </motion.div>
@@ -375,7 +375,7 @@ export default function QualityManagement() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center p-4 sm:p-6 md:p-8 bg-base/5 rounded-lg sm:rounded-xl"
               >
-                <div className="text-5xl font-serif font-bold text-primary mb-2">{item.metric}</div>
+                <div className="text-5xl font-bold text-primary mb-2">{item.metric}</div>
                 <p className="text-sm text-charcoal/60 uppercase tracking-wider">{item.label}</p>
               </motion.div>
             ))}

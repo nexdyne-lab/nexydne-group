@@ -35,7 +35,7 @@ export default function CaseStudyHealthcareEHRModernization() {
       ]} />
 
       {/* DZ10 Hero Section */}
-      <section className="relative min-h-[55vh] sm:min-h-[65vh] md:min-h-[55vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center pt-16 sm:pt-16 sm:pt-20 overflow-hidden">
+      <section className="relative min-h-[55vh] sm:min-h-[65vh] md:min-h-[55vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center pt-16 sm:pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2670&auto=format&fit=crop" 
@@ -62,25 +62,25 @@ export default function CaseStudyHealthcareEHRModernization() {
               Healthcare • Data Integration
             </span>
             
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold tracking-tight text-white leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               Unifying Patient Data Across <span className="text-primary">12 Hospital Locations</span>
             </h1>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:p-6 md:p-8 border-t border-white/10 pt-8 mt-8">
               <div>
-                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary mb-1">100%</div>
+                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1">100%</div>
                 <div className="text-sm text-white/60 uppercase tracking-wider">Data Accuracy</div>
               </div>
               <div>
-                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary mb-1">30%</div>
+                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1">30%</div>
                 <div className="text-sm text-white/60 uppercase tracking-wider">Admin Time Saved</div>
               </div>
               <div>
-                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary mb-1">Real-time</div>
+                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1">Real-time</div>
                 <div className="text-sm text-white/60 uppercase tracking-wider">Patient Insights</div>
               </div>
               <div>
-                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary mb-1">HIPAA</div>
+                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1">HIPAA</div>
                 <div className="text-sm text-white/60 uppercase tracking-wider">Compliant</div>
               </div>
             </div>
@@ -126,7 +126,7 @@ export default function CaseStudyHealthcareEHRModernization() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 The Challenge
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6">
                 Fragmented patient records
               </h2>
               <div className="space-y-6 text-lg text-charcoal/70 leading-relaxed">
@@ -147,7 +147,7 @@ export default function CaseStudyHealthcareEHRModernization() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Our Approach
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6">
                 FHIR-based interoperability
               </h2>
               <div className="space-y-6 text-lg text-charcoal/70 leading-relaxed">
@@ -187,7 +187,7 @@ export default function CaseStudyHealthcareEHRModernization() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Results
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
               Business Impact
             </h2>
           </motion.div>
@@ -224,7 +224,7 @@ export default function CaseStudyHealthcareEHRModernization() {
                 <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary">
                   {item.icon}
                 </div>
-                <div className="text-4xl font-serif font-bold text-white mb-2">{item.metric}</div>
+                <div className="text-4xl font-bold text-white mb-2">{item.metric}</div>
                 <h3 className="text-xl font-bold text-primary mb-4">{item.title}</h3>
                 <p className="text-white/60 leading-relaxed">
                   {item.description}
@@ -245,7 +245,7 @@ export default function CaseStudyHealthcareEHRModernization() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <blockquote className="text-2xl md:text-3xl font-serif text-charcoal leading-relaxed mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-2xl md:text-3xl text-charcoal leading-relaxed mb-5 sm:mb-6 md:mb-8">
               "The ability to see a patient's full story at a glance has been a game-changer for our medical teams. It's not just about data; it's about better care."
             </blockquote>
             <div className="flex items-center justify-center space-x-4">
@@ -281,7 +281,7 @@ export default function CaseStudyHealthcareEHRModernization() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Related Work
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-charcoal">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
                 More Success Stories
               </h2>
             </motion.div>
@@ -333,7 +333,7 @@ export default function CaseStudyHealthcareEHRModernization() {
                     <div className="absolute inset-0 bg-charcoal/10 group-hover:bg-transparent transition-colors duration-500" />
                   </div>
                   <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
-                  <h3 className="text-xl font-serif font-bold text-charcoal mb-2 group-hover:text-primary transition-colors leading-tight">
+                  <h3 className="text-xl font-bold text-charcoal mb-2 group-hover:text-primary transition-colors leading-tight">
                     {study.title}
                   </h3>
                   <p className="text-charcoal/60 text-sm mb-4">{study.description}</p>
@@ -360,7 +360,7 @@ export default function CaseStudyHealthcareEHRModernization() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Explore Further
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
               Related Capabilities
             </h2>
             <p className="text-xl text-white/60 max-w-2xl mx-auto">
@@ -399,7 +399,7 @@ export default function CaseStudyHealthcareEHRModernization() {
                 <Link href={capability.link} className="group block h-full">
                   <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300 hover:bg-white/10">
                     <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-2">{capability.title}</div>
-                    <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors">
+                    <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
                       {capability.subtitle}
                     </h3>
                     <p className="text-white/60 leading-relaxed text-sm mb-6">

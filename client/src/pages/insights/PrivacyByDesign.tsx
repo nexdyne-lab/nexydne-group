@@ -169,7 +169,7 @@ export default function PrivacyByDesign() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <h4 className="font-bold text-lg group-hover:text-blue-600 transition-colors">
+                  <h4 className="font-bold text-lg group-hover:text-primary transition-colors">
                     Beyond Segmentation: The Era of N=1 Marketing
                   </h4>
                   <p className="text-muted-foreground text-sm mt-2">
@@ -186,7 +186,7 @@ export default function PrivacyByDesign() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <h4 className="font-bold text-lg group-hover:text-blue-600 transition-colors">
+                  <h4 className="font-bold text-lg group-hover:text-primary transition-colors">
                     Building a Data-Driven Culture: Beyond the Tools
                   </h4>
                   <p className="text-muted-foreground text-sm mt-2">

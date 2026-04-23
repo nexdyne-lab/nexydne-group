@@ -92,7 +92,7 @@ export default function ITModernization() {
       <Navbar />
       
       {/* DZ10 Hero Section */}
-      <section className="relative min-h-[70vh] sm:min-h-[60vh] sm:min-h-[55vh] sm:min-h-[65vh] md:min-h-[55vh] sm:min-h-[65vh] md:min-h-[70vh] md:min-h-[60vh] sm:min-h-[55vh] sm:min-h-[65vh] md:min-h-[70vh] md:min-h-[75vh] md:min-h-[70vh] sm:min-h-[60vh] sm:min-h-[55vh] sm:min-h-[65vh] md:min-h-[70vh] md:min-h-[75vh] md:min-h-[85vh] flex items-center pt-16 sm:pt-16 sm:pt-20 overflow-hidden">
+      <section className="relative min-h-[440px] md:min-h-[560px] flex items-center pt-16 sm:pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80"
@@ -114,7 +114,7 @@ export default function ITModernization() {
               Technology
             </span>
             
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold tracking-tight text-white leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight text-white leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               IT <br />
               <span className="text-primary">Modernization</span>
             </h1>
@@ -152,7 +152,7 @@ export default function ITModernization() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Why Modernize
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-charcoal mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               Transform your technology landscape
             </h2>
           </motion.div>
@@ -193,7 +193,7 @@ export default function ITModernization() {
                     {item.icon}
                   </div>
                   
-                  <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-white transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-white transition-colors">
                     {item.title}
                   </h3>
                   
@@ -220,7 +220,7 @@ export default function ITModernization() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
                 Understanding IT Modernization
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-5 sm:mb-6 md:mb-8">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 sm:mb-6 md:mb-8">
                 The <span className="text-primary">legacy trap</span>
               </h2>
               
@@ -276,7 +276,7 @@ export default function ITModernization() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Our Capabilities
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-charcoal mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               Modernization services
             </h2>
             <p className="text-xl text-charcoal/60 max-w-2xl">
@@ -336,7 +336,7 @@ export default function ITModernization() {
                       {item.icon}
                     </div>
                     
-                    <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-white transition-colors">
+                    <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-white transition-colors">
                       {item.title}
                     </h3>
                     
@@ -368,7 +368,7 @@ export default function ITModernization() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
                 Our Impact
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                 Modernization success stories
               </h2>
             </motion.div>
@@ -420,7 +420,7 @@ export default function ITModernization() {
                     <div className="absolute inset-0 bg-charcoal/20 group-hover:bg-transparent transition-colors duration-500" />
                   </div>
                   <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
-                  <h3 className="text-xl font-serif font-bold text-white mb-2 group-hover:text-primary transition-colors leading-tight">
+                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors leading-tight">
                     {study.title}
                   </h3>
                   <p className="text-white/60 text-sm mb-4">{study.description}</p>
@@ -447,7 +447,7 @@ export default function ITModernization() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Technology Partners
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-charcoal mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               Modernization technology stack
             </h2>
           </motion.div>
@@ -472,7 +472,7 @@ export default function ITModernization() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Self-Assessment
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
               Is your IT ready for modernization?
             </h2>
             <p className="text-xl text-white/60 max-w-2xl mx-auto">
@@ -501,7 +501,7 @@ export default function ITModernization() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Explore Further
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
               Related Capabilities
             </h2>
             <p className="text-xl text-white/60 max-w-2xl mx-auto">
@@ -540,7 +540,7 @@ export default function ITModernization() {
                 <Link href={capability.link} className="group block h-full">
                   <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300 hover:bg-white/10">
                     <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-2">{capability.title}</div>
-                    <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors">
+                    <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
                       {capability.subtitle}
                     </h3>
                     <p className="text-white/60 leading-relaxed text-sm mb-6">

@@ -51,7 +51,7 @@ export default function MarketplacePlaybook() {
               <span className="text-white/60">15 min read</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-white leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-4">
               The marketplace playbook: Building network effects
             </h1>
             
@@ -124,15 +124,15 @@ export default function MarketplacePlaybook() {
                   </h4>
                   <div className="grid md:grid-cols-3 gap-6 text-center">
                     <div>
-                      <div className="text-3xl font-serif font-bold text-violet-500">$4.5T</div>
+                      <div className="text-3xl font-bold text-violet-500">$4.5T</div>
                       <div className="text-sm text-charcoal/60">Combined market cap of top 10 marketplaces</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-serif font-bold text-violet-500">70%</div>
+                      <div className="text-3xl font-bold text-violet-500">70%</div>
                       <div className="text-sm text-charcoal/60">of unicorns are platform businesses</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-serif font-bold text-violet-500">2.5x</div>
+                      <div className="text-3xl font-bold text-violet-500">2.5x</div>
                       <div className="text-sm text-charcoal/60">higher valuation multiples vs. linear businesses</div>
                     </div>
                   </div>
@@ -546,7 +546,7 @@ export default function MarketplacePlaybook() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Ready to build your marketplace?
             </h2>
             <p className="text-xl text-white/70 leading-relaxed mb-10">

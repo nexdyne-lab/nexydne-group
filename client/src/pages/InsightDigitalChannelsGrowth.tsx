@@ -86,7 +86,7 @@ export default function InsightDigitalChannelsGrowth() {
                     The digital transformation of commerce is no longer a future trend—it's the present reality. Mid-market companies that embrace digital channels are consistently outperforming their peers, achieving 2-5x revenue growth while reducing customer acquisition costs by 30-50%.
                   </p>
 
-                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
                     The digital imperative for mid-market companies
                   </h2>
                   
@@ -99,17 +99,17 @@ export default function InsightDigitalChannelsGrowth() {
                   </p>
 
                   <div className="bg-subtle p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
-                    <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Key Finding</h3>
+                    <h3 className="text-xl font-bold text-charcoal mb-4">Key Finding</h3>
                     <p className="text-charcoal/70 mb-0">
                       Companies with mature digital channels grow revenue 3.2x faster than peers and achieve 40% higher customer lifetime value through improved retention and cross-sell opportunities.
                     </p>
                   </div>
 
-                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
                     Three digital channel strategies driving growth
                   </h2>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     1. E-commerce and direct-to-customer channels
                   </h3>
                   
@@ -128,7 +128,7 @@ export default function InsightDigitalChannelsGrowth() {
                     A specialty retailer we worked with launched e-commerce in 10 weeks and grew online revenue 180% in 18 months—adding $3.2M in incremental revenue while their physical stores continued to perform well.
                   </p>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     2. Subscription and recurring revenue models
                   </h3>
                   
@@ -147,7 +147,7 @@ export default function InsightDigitalChannelsGrowth() {
                     A professional training company we partnered with transformed from one-time workshops to a subscription learning platform. Within 12 months, they had 2,400 active members generating $1.8M in annual recurring revenue with 92% retention.
                   </p>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     3. Platform and marketplace businesses
                   </h3>
                   
@@ -163,13 +163,13 @@ export default function InsightDigitalChannelsGrowth() {
                   </ul>
 
                   <div className="bg-base text-white p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
-                    <h3 className="text-xl font-serif font-bold mb-4">The Platform Opportunity</h3>
+                    <h3 className="text-xl font-bold mb-4">The Platform Opportunity</h3>
                     <p className="text-white/80 mb-0">
                       Companies that successfully build platform businesses often achieve valuations 5-10x higher than traditional businesses in the same industry, due to the scalability and defensibility of network effects.
                     </p>
                   </div>
 
-                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
                     Implementation: From strategy to execution
                   </h2>
                   
@@ -177,7 +177,7 @@ export default function InsightDigitalChannelsGrowth() {
                     The biggest challenge isn't identifying the opportunity—it's executing effectively. Based on our experience with dozens of digital growth initiatives, here are the critical success factors:
                   </p>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     Start with customer value, not technology
                   </h3>
                   
@@ -192,7 +192,7 @@ export default function InsightDigitalChannelsGrowth() {
                     <li>How can we deliver more value more efficiently?</li>
                   </ul>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     Launch fast, iterate faster
                   </h3>
                   
@@ -204,7 +204,7 @@ export default function InsightDigitalChannelsGrowth() {
                     Our Growth Acceleration Framework emphasizes rapid validation: identify opportunities, build MVPs, test with real customers, and iterate to product-market fit before scaling. This approach minimizes risk while maximizing learning.
                   </p>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     Invest in growth capabilities
                   </h3>
                   
@@ -219,7 +219,7 @@ export default function InsightDigitalChannelsGrowth() {
                     <li><strong>Data and analytics:</strong> Dashboards, attribution, and insights to guide decision-making</li>
                   </ul>
 
-                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
                     Getting started: A practical roadmap
                   </h2>
                   
@@ -260,7 +260,7 @@ export default function InsightDigitalChannelsGrowth() {
                     </div>
                   </div>
 
-                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
                     Conclusion
                   </h2>
                   
@@ -282,7 +282,7 @@ export default function InsightDigitalChannelsGrowth() {
                 transition={{ duration: 0.6 }}
                 className="mt-16 p-4 sm:p-6 md:p-8 bg-subtle rounded-lg sm:rounded-xl"
               >
-                <h3 className="text-lg font-serif font-bold mb-4">About the Author</h3>
+                <h3 className="text-lg font-bold mb-4">About the Author</h3>
                 <div className="flex items-start gap-4">
                   <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
                     NG
@@ -380,7 +380,7 @@ export default function InsightDigitalChannelsGrowth() {
                   transition={{ duration: 0.6, delay: 0.6 }}
                   className="bg-gradient-to-br from-[#0077B5] to-base text-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
                 >
-                  <h3 className="font-serif font-bold text-lg mb-3">Ready to accelerate your digital growth?</h3>
+                  <h3 className="font-bold text-lg mb-3">Ready to accelerate your digital growth?</h3>
                   <p className="text-white/80 text-sm mb-4">
                     Schedule a consultation to discuss your digital growth opportunities.
                   </p>

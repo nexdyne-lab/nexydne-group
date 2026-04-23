@@ -60,10 +60,10 @@ export default function CaseStudyTemplate({
               <span className="text-muted-foreground/50">•</span>
               <span>{client}</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight text-charcoal mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8 leading-[1.1]">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-charcoal mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8 leading-[1.1]">
               {title}
             </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-3xl font-light font-serif">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-3xl font-light ">
               {subtitle}
             </p>
           </div>
@@ -90,7 +90,7 @@ export default function CaseStudyTemplate({
               <div className="space-y-8">
                 {metrics.map((metric, index) => (
                   <div key={index}>
-                    <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-blue-400 mb-2">{metric.value}</div>
+                    <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-blue-400 mb-2">{metric.value}</div>
                     <div className="text-muted-foreground/50 text-sm leading-relaxed">{metric.label}</div>
                   </div>
                 ))}
@@ -123,7 +123,7 @@ export default function CaseStudyTemplate({
           <div className="lg:col-span-8 space-y-16 order-1 lg:order-2">
             
             <section>
-              <h2 className="text-3xl font-serif font-bold text-charcoal mb-6 flex items-center gap-3">
+              <h2 className="text-3xl font-bold text-charcoal mb-6 flex items-center gap-3">
                 <span className="w-8 h-1 bg-blue-600 block"></span>
                 The Challenge
               </h2>
@@ -135,7 +135,7 @@ export default function CaseStudyTemplate({
             </section>
 
             <section>
-              <h2 className="text-3xl font-serif font-bold text-charcoal mb-6 flex items-center gap-3">
+              <h2 className="text-3xl font-bold text-charcoal mb-6 flex items-center gap-3">
                 <span className="w-8 h-1 bg-blue-600 block"></span>
                 The Solution
               </h2>
@@ -149,7 +149,7 @@ export default function CaseStudyTemplate({
             {quote && (
               <blockquote className="border-l-4 border-blue-600 pl-8 py-2 my-12 bg-slate-50 p-4 sm:p-6 md:p-4 sm:p-6 md:p-8 rounded-r-sm">
                 <Quote className="w-8 h-8 text-blue-200 mb-4" />
-                <p className="text-2xl font-serif italic text-charcoal mb-6 leading-relaxed">
+                <p className="text-2xl text-charcoal mb-6 leading-relaxed">
                   "{quote.text}"
                 </p>
                 <footer>
@@ -160,7 +160,7 @@ export default function CaseStudyTemplate({
             )}
 
             <section>
-              <h2 className="text-3xl font-serif font-bold text-charcoal mb-6 flex items-center gap-3">
+              <h2 className="text-3xl font-bold text-charcoal mb-6 flex items-center gap-3">
                 <span className="w-8 h-1 bg-blue-600 block"></span>
                 The Impact
               </h2>

@@ -46,7 +46,7 @@ export default function InsightSubscriptionPlaybook() {
               </span>
             </div>
             
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold tracking-tight text-white leading-[1.1] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-5 sm:mb-3 md:mb-4">
               The subscription economy playbook for traditional businesses
             </h1>
             
@@ -86,7 +86,7 @@ export default function InsightSubscriptionPlaybook() {
                     The subscription economy has grown 435% over the past decade, and it's no longer limited to software and streaming services. Traditional businesses across industries—from manufacturing to professional services—are discovering that subscription models can transform their economics and competitive position.
                   </p>
 
-                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
                     Why subscriptions matter for traditional businesses
                   </h2>
                   
@@ -111,11 +111,11 @@ export default function InsightSubscriptionPlaybook() {
                     ))}
                   </div>
 
-                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
                     Five subscription models for traditional businesses
                   </h2>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     1. Access subscriptions
                   </h3>
                   
@@ -134,7 +134,7 @@ export default function InsightSubscriptionPlaybook() {
                     <strong>Example:</strong> A professional training company we worked with transformed from selling $2,000 workshops to offering $99/month memberships with unlimited access to courses, live sessions, and community. Within 12 months, they had 2,400 members generating $1.8M in annual recurring revenue.
                   </p>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     2. Replenishment subscriptions
                   </h3>
                   
@@ -150,13 +150,13 @@ export default function InsightSubscriptionPlaybook() {
                   </ul>
 
                   <div className="bg-base text-white p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
-                    <h3 className="text-xl font-serif font-bold mb-4">The Replenishment Advantage</h3>
+                    <h3 className="text-xl font-bold mb-4">The Replenishment Advantage</h3>
                     <p className="text-white/80 mb-0">
                       Replenishment subscriptions typically achieve 85-95% retention rates because they solve a genuine customer pain point: never running out of essential products. The convenience factor creates strong switching costs.
                     </p>
                   </div>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     3. Curation subscriptions
                   </h3>
                   
@@ -171,7 +171,7 @@ export default function InsightSubscriptionPlaybook() {
                     <li>Books and media (curated recommendations)</li>
                   </ul>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     4. Membership subscriptions
                   </h3>
                   
@@ -186,7 +186,7 @@ export default function InsightSubscriptionPlaybook() {
                     <li>Fitness and wellness (facility access and classes)</li>
                   </ul>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     5. Usage-based subscriptions
                   </h3>
                   
@@ -201,11 +201,11 @@ export default function InsightSubscriptionPlaybook() {
                     <li>Equipment rental (usage-based leasing)</li>
                   </ul>
 
-                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
                     Building a successful subscription business
                   </h2>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     Define your value proposition
                   </h3>
                   
@@ -221,7 +221,7 @@ export default function InsightSubscriptionPlaybook() {
                     <li><strong>Access:</strong> Provide exclusive content, products, or experiences</li>
                   </ul>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     Design for retention
                   </h3>
                   
@@ -247,7 +247,7 @@ export default function InsightSubscriptionPlaybook() {
                     </ul>
                   </div>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     Build the right technology stack
                   </h3>
                   
@@ -263,7 +263,7 @@ export default function InsightSubscriptionPlaybook() {
                     <li><strong>Engagement tools:</strong> Drive usage and prevent churn</li>
                   </ul>
 
-                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
                     The transition roadmap
                   </h2>
                   
@@ -304,7 +304,7 @@ export default function InsightSubscriptionPlaybook() {
                     </div>
                   </div>
 
-                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
                     Conclusion
                   </h2>
                   
@@ -326,7 +326,7 @@ export default function InsightSubscriptionPlaybook() {
                 transition={{ duration: 0.6 }}
                 className="mt-16 p-4 sm:p-6 md:p-8 bg-subtle rounded-lg sm:rounded-xl"
               >
-                <h3 className="text-lg font-serif font-bold mb-4">About the Author</h3>
+                <h3 className="text-lg font-bold mb-4">About the Author</h3>
                 <div className="flex items-start gap-4">
                   <div className="w-16 h-16 bg-violet-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
                     NG
@@ -424,7 +424,7 @@ export default function InsightSubscriptionPlaybook() {
                   transition={{ duration: 0.6, delay: 0.6 }}
                   className="bg-gradient-to-br from-violet-600 to-purple-700 text-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
                 >
-                  <h3 className="font-serif font-bold text-lg mb-3">Ready to build recurring revenue?</h3>
+                  <h3 className="font-bold text-lg mb-3">Ready to build recurring revenue?</h3>
                   <p className="text-white/80 text-sm mb-4">
                     Let's discuss how subscription models could transform your business.
                   </p>

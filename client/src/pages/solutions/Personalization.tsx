@@ -97,14 +97,14 @@ export default function Personalization() {
               <a className="group block bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
                 <div className="flex items-start justify-between gap-6">
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-charcoal group-hover:text-blue-600 transition-colors mb-3">
+                    <h3 className="text-2xl font-bold text-charcoal group-hover:text-primary transition-colors mb-3">
                       Customer Data Platform (CDP)
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
                       Customer Data Platform: one central customer profile for data-driven marketing and sales that deliver. Unify fragmented customer data into a single, real-time profile that powers personalization across every channel—consolidating behavioral, transactional, and demographic data for segmentation, journey orchestration, and predictive analytics.
                     </p>
                   </div>
-                  <ArrowRight className="w-6 h-6 text-muted-foreground/70 group-hover:text-blue-600 group-hover:translate-x-1 transition-all flex-shrink-0" />
+                  <ArrowRight className="w-6 h-6 text-muted-foreground/70 group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0" />
                 </div>
               </a>
             </Link>
@@ -114,14 +114,14 @@ export default function Personalization() {
               <a className="group block bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
                 <div className="flex items-start justify-between gap-6">
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-charcoal group-hover:text-blue-600 transition-colors mb-3">
+                    <h3 className="text-2xl font-bold text-charcoal group-hover:text-primary transition-colors mb-3">
                       Customer Insights
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
                       Refine the customer experience with Customer Experience Analytics: access key insights that reveal opportunities, boost conversion and deliver serious growth. Transform raw customer data into actionable intelligence with advanced analytics that reveal hidden patterns, predict behavior, and identify high-value opportunities.
                     </p>
                   </div>
-                  <ArrowRight className="w-6 h-6 text-muted-foreground/70 group-hover:text-blue-600 group-hover:translate-x-1 transition-all flex-shrink-0" />
+                  <ArrowRight className="w-6 h-6 text-muted-foreground/70 group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0" />
                 </div>
               </a>
             </Link>
@@ -131,14 +131,14 @@ export default function Personalization() {
               <a className="group block bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
                 <div className="flex items-start justify-between gap-6">
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-charcoal group-hover:text-blue-600 transition-colors mb-3">
+                    <h3 className="text-2xl font-bold text-charcoal group-hover:text-primary transition-colors mb-3">
                       Customer Journey Map
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
                       Understand your customer at every step with a clever Customer Journey Map. Reveal valuable insights and deliver customer-focused interactions at every touchpoint. Visualize and optimize every customer interaction from awareness to advocacy—identifying friction points, quantifying drop-off rates, and revealing opportunities to personalize experiences.
                     </p>
                   </div>
-                  <ArrowRight className="w-6 h-6 text-muted-foreground/70 group-hover:text-blue-600 group-hover:translate-x-1 transition-all flex-shrink-0" />
+                  <ArrowRight className="w-6 h-6 text-muted-foreground/70 group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0" />
                 </div>
               </a>
             </Link>
@@ -148,14 +148,14 @@ export default function Personalization() {
               <a className="group block bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
                 <div className="flex items-start justify-between gap-6">
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-charcoal group-hover:text-blue-600 transition-colors mb-3">
+                    <h3 className="text-2xl font-bold text-charcoal group-hover:text-primary transition-colors mb-3">
                       Digital Experience Platform
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
                       A Digital Experience Platform marks the next smart step in your digital evolution. Discover the power of DXP and unbeatable integration. Orchestrate seamless, personalized experiences across web, mobile, and emerging channels with a unified DXP—integrating content management, personalization engines, and analytics into a single platform.
                     </p>
                   </div>
-                  <ArrowRight className="w-6 h-6 text-muted-foreground/70 group-hover:text-blue-600 group-hover:translate-x-1 transition-all flex-shrink-0" />
+                  <ArrowRight className="w-6 h-6 text-muted-foreground/70 group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0" />
                 </div>
               </a>
             </Link>
@@ -271,13 +271,13 @@ export default function Personalization() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
                     Retailer modernizes its legacy and unlocks new innovation potential
                   </h3>
                   <p className="text-muted-foreground mb-4">
                     How a national home goods retailer deployed Bloomreach CDP to deliver individualized product recommendations and personalized email campaigns—driving 34% revenue lift and $18M in incremental annual revenue.
                   </p>
-                  <span className="text-blue-600 font-semibold group-hover:underline">
+                  <span className="text-primary font-semibold group-hover:underline">
                     Read case study →
                   </span>
                 </div>
@@ -295,13 +295,13 @@ export default function Personalization() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
                     Fintech speeds up terminal onboarding with personalized workflows
                   </h3>
                   <p className="text-muted-foreground mb-4">
                     How a payment processor implemented Sitecore DXP and journey mapping to deliver personalized merchant onboarding experiences—reducing time-to-activation by 52% and increasing merchant satisfaction scores.
                   </p>
-                  <span className="text-blue-600 font-semibold group-hover:underline">
+                  <span className="text-primary font-semibold group-hover:underline">
                     Read case study →
                   </span>
                 </div>
@@ -319,13 +319,13 @@ export default function Personalization() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
                     Logistics company enables faster access to product information
                   </h3>
                   <p className="text-muted-foreground mb-4">
                     How a global logistics provider leveraged Commercetools and customer insights to deliver personalized product catalogs and dynamic pricing—accelerating quote generation by 3.2x and reducing sales cycle length by 28%.
                   </p>
-                  <span className="text-blue-600 font-semibold group-hover:underline">
+                  <span className="text-primary font-semibold group-hover:underline">
                     Read case study →
                   </span>
                 </div>

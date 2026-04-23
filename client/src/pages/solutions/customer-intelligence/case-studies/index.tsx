@@ -164,7 +164,7 @@ export default function CustomerIntelligenceCaseStudies() {
                     <div className="absolute inset-0 bg-charcoal/20 group-hover:bg-transparent transition-colors duration-500" />
                   </div>
                   <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
-                  <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">
+                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">
                     {study.title}
                   </h3>
                   <p className="text-white/60 text-sm mb-6 leading-relaxed">
@@ -173,7 +173,7 @@ export default function CustomerIntelligenceCaseStudies() {
                   <div className="flex gap-6 mb-6">
                     {study.stats.slice(0, 2).map((stat, i) => (
                       <div key={i}>
-                        <div className="text-2xl font-serif font-bold text-primary">{stat.value}</div>
+                        <div className="text-2xl font-bold text-primary">{stat.value}</div>
                         <div className="text-white/40 text-xs">{stat.label}</div>
                       </div>
                     ))}
@@ -220,7 +220,7 @@ export default function CustomerIntelligenceCaseStudies() {
                     <div className="absolute inset-0 bg-charcoal/10 group-hover:bg-transparent transition-colors duration-500" />
                   </div>
                   <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
-                  <h3 className="text-xl font-serif font-bold mb-4 group-hover:text-primary transition-colors leading-tight">
+                  <h3 className="text-xl font-bold mb-4 group-hover:text-primary transition-colors leading-tight">
                     {study.title}
                   </h3>
                   <p className="text-charcoal/60 text-sm mb-6 leading-relaxed">
@@ -229,7 +229,7 @@ export default function CustomerIntelligenceCaseStudies() {
                   <div className="flex gap-6 mb-6">
                     {study.stats.slice(0, 2).map((stat, i) => (
                       <div key={i}>
-                        <div className="text-2xl font-serif font-bold text-primary">{stat.value}</div>
+                        <div className="text-2xl font-bold text-primary">{stat.value}</div>
                         <div className="text-charcoal/40 text-xs">{stat.label}</div>
                       </div>
                     ))}

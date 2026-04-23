@@ -147,7 +147,7 @@ export default function DataDrivenCustomerIntelligence() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="text-4xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-7xl eb-garamond  tracking-tight text-white leading-[1.05] mb-6"
+                className="text-4xl sm:text-3xl sm:text-4xl md:text-5xl lg:text-7xl eb-garamond tracking-tight text-white leading-[1.05] mb-6"
               >
                 Data-Driven<br />
                 <span className="text-white">
@@ -188,7 +188,7 @@ export default function DataDrivenCustomerIntelligence() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className={`py-8 ${i !== 2 ? 'md:border-r border-border' : ''} ${i !== 0 ? 'md:pl-8' : ''} ${i !== 2 ? 'md:pr-8' : ''}`}
               >
-                <div className="text-5xl md:text-6xl font-serif text-charcoal mb-3">
+                <div className="text-5xl md:text-6xl text-charcoal mb-3">
                   {stat.value}
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
@@ -209,7 +209,7 @@ export default function DataDrivenCustomerIntelligence() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-2xl md:text-3xl font-serif text-charcoal leading-relaxed mb-8"
+              className="text-2xl md:text-3xl text-charcoal leading-relaxed mb-8"
             >
               Most mid-market companies are sitting on a goldmine of customer data they can't access. Information lives in disconnected systems—CRM here, marketing automation there, support tickets somewhere else. The result? Teams make decisions based on gut instinct instead of evidence, and customers receive generic experiences that don't reflect their actual needs or history with your company.
             </motion.p>

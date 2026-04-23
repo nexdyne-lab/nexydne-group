@@ -27,7 +27,7 @@ export default function CFODataIntegration() {
           <Breadcrumbs />
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-4xl">
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">Insight · Financial Planning & Analysis</span>
-            <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-4">
               CFO <span className="text-primary">Data Integration</span> Strategies
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl">
@@ -46,7 +46,7 @@ export default function CFODataIntegration() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="prose prose-lg max-w-none">
             
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">The Data Integration Imperative</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">The Data Integration Imperative</h2>
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Modern CFOs are expected to be strategic business partners, providing insights that drive performance across the organization. Yet many finance teams spend 80% of their time gathering and reconciling data, leaving little time for analysis and insight generation.
             </p>
@@ -54,10 +54,10 @@ export default function CFODataIntegration() {
               The root cause is often fragmented data. Financial data lives in the ERP, operational data in various systems, and the two rarely connect seamlessly. This article explores strategies for integrating financial and operational data to enable the modern finance function.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">The Integration Challenge</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">The Integration Challenge</h2>
             
             <div className="p-8 bg-base/5 rounded-xl mb-12">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3"><Database className="w-6 h-6 text-primary" />Common Data Silos</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Database className="w-6 h-6 text-primary" />Common Data Silos</h3>
               <ul className="space-y-3 text-charcoal/70">
                 <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong className="text-charcoal">Financial systems:</strong> ERP, GL, AP/AR, treasury</span></li>
                 <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong className="text-charcoal">Operational systems:</strong> CRM, supply chain, manufacturing, HR</span></li>
@@ -66,53 +66,53 @@ export default function CFODataIntegration() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Integration Strategies</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Integration Strategies</h2>
             
             <div className="space-y-8 mb-12">
               <div className="flex gap-6">
                 <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center"><Layers className="w-6 h-6" /></div></div>
                 <div>
-                  <h3 className="text-xl font-serif font-bold text-charcoal mb-2">Enterprise Data Warehouse</h3>
+                  <h3 className="text-xl font-bold text-charcoal mb-2">Enterprise Data Warehouse</h3>
                   <p className="text-charcoal/70 leading-relaxed">A centralized repository that consolidates data from multiple sources into a single, consistent view. Best for organizations with mature data infrastructure and dedicated data teams.</p>
                 </div>
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center"><Zap className="w-6 h-6" /></div></div>
                 <div>
-                  <h3 className="text-xl font-serif font-bold text-charcoal mb-2">Data Virtualization</h3>
+                  <h3 className="text-xl font-bold text-charcoal mb-2">Data Virtualization</h3>
                   <p className="text-charcoal/70 leading-relaxed">Creates a unified view of data without physically moving it. Enables faster time-to-value but may have performance limitations for complex analytics.</p>
                 </div>
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center"><Database className="w-6 h-6" /></div></div>
                 <div>
-                  <h3 className="text-xl font-serif font-bold text-charcoal mb-2">Cloud Data Platform</h3>
+                  <h3 className="text-xl font-bold text-charcoal mb-2">Cloud Data Platform</h3>
                   <p className="text-charcoal/70 leading-relaxed">Modern cloud platforms like Snowflake or Databricks offer scalable, flexible data integration with built-in analytics capabilities. Increasingly the preferred approach for mid-market organizations.</p>
                 </div>
               </div>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Key Success Factors</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Key Success Factors</h2>
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Successful data integration requires more than technology. Organizations must address governance, quality, and organizational factors to realize the full benefits.
             </p>
 
             <div className="space-y-6 mb-12">
               <div className="p-6 bg-base/5 rounded-xl">
-                <h4 className="text-lg font-serif font-bold text-charcoal mb-2 flex items-center gap-2"><Shield className="w-5 h-5 text-primary" />Data Governance</h4>
+                <h4 className="text-lg font-bold text-charcoal mb-2 flex items-center gap-2"><Shield className="w-5 h-5 text-primary" />Data Governance</h4>
                 <p className="text-charcoal/70">Establish clear ownership, definitions, and quality standards for key data elements. Without governance, integration efforts often create new silos rather than eliminating existing ones.</p>
               </div>
               <div className="p-6 bg-base/5 rounded-xl">
-                <h4 className="text-lg font-serif font-bold text-charcoal mb-2">Master Data Management</h4>
+                <h4 className="text-lg font-bold text-charcoal mb-2">Master Data Management</h4>
                 <p className="text-charcoal/70">Create single sources of truth for key entities like customers, products, and organizational hierarchies. Master data is the foundation that enables data from different systems to be connected.</p>
               </div>
               <div className="p-6 bg-base/5 rounded-xl">
-                <h4 className="text-lg font-serif font-bold text-charcoal mb-2">Data Quality</h4>
+                <h4 className="text-lg font-bold text-charcoal mb-2">Data Quality</h4>
                 <p className="text-charcoal/70">Implement processes to monitor and improve data quality at the source. Integration amplifies data quality issues—garbage in, garbage out applies at scale.</p>
               </div>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Building the Business Case</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Building the Business Case</h2>
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Data integration initiatives require significant investment. Building a compelling business case requires quantifying both efficiency gains and decision-making improvements.
             </p>
@@ -124,7 +124,7 @@ export default function CFODataIntegration() {
             </ul>
 
             <div className="p-8 bg-primary text-white rounded-xl mb-12">
-              <h3 className="text-xl font-serif font-bold mb-4">The Bottom Line</h3>
+              <h3 className="text-xl font-bold mb-4">The Bottom Line</h3>
               <p className="text-white/90 leading-relaxed">
                 Data integration is foundational to the modern finance function. While the technology landscape continues to evolve, the principles remain constant: start with clear business objectives, establish strong governance, and focus on data quality. Organizations that get data integration right position their finance teams to be true strategic partners.
               </p>
@@ -139,7 +139,7 @@ export default function CFODataIntegration() {
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-16">
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">Related Insights</span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white">Continue reading</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">Continue reading</h2>
           </motion.div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
             {[
@@ -149,7 +149,7 @@ export default function CFODataIntegration() {
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.category}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
                   <p className="text-white/60 mt-2">{item.description}</p>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">Read insight <ArrowRight className="w-3 h-3" /></span>
                 </Link>

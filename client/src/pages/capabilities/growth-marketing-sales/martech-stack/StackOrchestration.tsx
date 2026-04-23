@@ -52,7 +52,7 @@ const StackOrchestration = () => {
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             <div>
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6 eb-garamond">
-                Architecting for <span className="text-blue-600">Data Fluidity</span>
+                Architecting for <span className="text-primary">Data Fluidity</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 A marketing stack is not a collection of tools; it is a distributed system. 
@@ -68,7 +68,7 @@ const StackOrchestration = () => {
               
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <div className="p-2 rounded-lg bg-blue-50 text-blue-600 mt-1">
+                  <div className="p-2 rounded-lg bg-blue-50 text-primary mt-1">
                     <Activity className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div>
@@ -77,7 +77,7 @@ const StackOrchestration = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="p-2 rounded-lg bg-blue-50 text-blue-600 mt-1">
+                  <div className="p-2 rounded-lg bg-blue-50 text-primary mt-1">
                     <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div>
@@ -86,7 +86,7 @@ const StackOrchestration = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="p-2 rounded-lg bg-blue-50 text-blue-600 mt-1">
+                  <div className="p-2 rounded-lg bg-blue-50 text-primary mt-1">
                     <Cpu className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div>
@@ -110,7 +110,7 @@ const StackOrchestration = () => {
                     <div>
                       <div className="flex justify-between text-sm font-medium mb-2">
                         <span className="text-muted-foreground">Data Fluidity Score</span>
-                        <span className="text-blue-600">94/100</span>
+                        <span className="text-primary">94/100</span>
                       </div>
                       <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
                         <div className="h-full bg-blue-600 w-[94%] rounded-full"></div>
@@ -120,7 +120,7 @@ const StackOrchestration = () => {
                     <div>
                       <div className="flex justify-between text-sm font-medium mb-2">
                         <span className="text-muted-foreground">Redundancy Elimination</span>
-                        <span className="text-blue-600">100%</span>
+                        <span className="text-primary">100%</span>
                       </div>
                       <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
                         <div className="h-full bg-blue-600 w-full rounded-full"></div>
@@ -130,7 +130,7 @@ const StackOrchestration = () => {
                     <div>
                       <div className="flex justify-between text-sm font-medium mb-2">
                         <span className="text-muted-foreground">API Coverage</span>
-                        <span className="text-blue-600">98%</span>
+                        <span className="text-primary">98%</span>
                       </div>
                       <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
                         <div className="h-full bg-blue-600 w-[98%] rounded-full"></div>
@@ -170,7 +170,7 @@ const StackOrchestration = () => {
               </p>
             </div>
             <Link href="/cases">
-              <a className="inline-flex items-center font-bold text-blue-600 hover:text-blue-700 transition-colors">
+              <a className="inline-flex items-center font-bold text-primary hover:text-blue-700 transition-colors">
                 View all cases <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </a>
             </Link>
@@ -206,10 +206,10 @@ const StackOrchestration = () => {
               <Link key={index} href={story.link}>
                 <a className="group block h-full bg-slate-50 rounded-xl sm:rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 border border-slate-100">
                   <div className="p-4 sm:p-6 md:p-8 h-full flex flex-col">
-                    <div className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-4">
+                    <div className="text-xs font-bold text-primary uppercase tracking-wider mb-4">
                       {story.category}
                     </div>
-                    <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
                       {story.title}
                     </h3>
                     <p className="text-muted-foreground mb-5 sm:mb-6 md:mb-8 flex-grow">

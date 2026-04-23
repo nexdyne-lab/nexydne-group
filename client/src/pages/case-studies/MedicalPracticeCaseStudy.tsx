@@ -116,7 +116,7 @@ export default function MedicalPracticeCaseStudy() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white leading-[1.15] mb-6"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-[1.15] mb-6"
             >
               Medical practice network deploys predictive scheduling to optimize patient flow
             </motion.h1>
@@ -166,7 +166,7 @@ export default function MedicalPracticeCaseStudy() {
               <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
                 The Challenge
               </motion.span>
-              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-8">
+              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold text-charcoal mb-8">
                 The hidden cost of inefficient scheduling
               </motion.h2>
               <motion.div variants={fadeInUp} className="prose prose-lg text-muted-foreground leading-relaxed">
@@ -198,7 +198,7 @@ export default function MedicalPracticeCaseStudy() {
               <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
                 The Solution
               </motion.span>
-              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-8">
+              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold text-charcoal mb-8">
                 Predictive intelligence for patient flow
               </motion.h2>
               <motion.div variants={fadeInUp} className="prose prose-lg text-muted-foreground leading-relaxed">
@@ -221,7 +221,7 @@ export default function MedicalPracticeCaseStudy() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-xl font-serif font-bold text-charcoal mb-8 text-center"
+              className="text-xl font-bold text-charcoal mb-8 text-center"
             >
               Implementation Timeline
             </motion.h3>
@@ -263,7 +263,7 @@ export default function MedicalPracticeCaseStudy() {
               <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
                 The Results
               </motion.span>
-              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-6">
+              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold text-charcoal mb-6">
                 Better care through smarter scheduling
               </motion.h2>
               <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
@@ -305,7 +305,7 @@ export default function MedicalPracticeCaseStudy() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-xl sm:text-2xl font-serif text-white leading-relaxed mb-8"
+              className="text-xl sm:text-2xl text-white leading-relaxed mb-8"
             >
               "Our providers used to dread looking at their schedules—some days were impossibly packed, others had gaps that cost us revenue. Now the schedule flows naturally, patients wait less, and our team goes home on time. It's transformed how we practice medicine."
             </motion.blockquote>
@@ -335,7 +335,7 @@ export default function MedicalPracticeCaseStudy() {
               <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
                 Looking Forward
               </motion.span>
-              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-8">
+              <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl lg:text-4xl font-bold text-charcoal mb-8">
                 Expanding AI across the care continuum
               </motion.h2>
               <motion.div variants={fadeInUp} className="prose prose-lg text-muted-foreground leading-relaxed">
@@ -359,7 +359,7 @@ export default function MedicalPracticeCaseStudy() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-white mb-6"
+              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6"
             >
               Ready to optimize your patient flow?
             </motion.h2>
@@ -399,12 +399,12 @@ export default function MedicalPracticeCaseStudy() {
       <section className="py-20 md:py-24 bg-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-xl font-serif font-bold text-charcoal mb-8">Related Case Studies</h3>
+            <h3 className="text-xl font-bold text-charcoal mb-8">Related Case Studies</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <Link href="/capabilities/ai-technology-consulting/case-study/accounting-firm">
                 <div className="group p-6 border border-slate-200 rounded-xl hover:border-slate-300 hover:shadow-sm transition-all cursor-pointer">
                   <span className="text-xs font-medium tracking-wider text-muted-foreground uppercase">Professional Services</span>
-                  <h4 className="text-lg font-serif font-bold text-charcoal mt-2 group-hover:text-secondary transition-colors">
+                  <h4 className="text-lg font-bold text-charcoal mt-2 group-hover:text-secondary transition-colors">
                     Regional accounting firm automates document processing, reducing manual work by 70%
                   </h4>
                   <span className="inline-flex items-center text-sm text-muted-foreground mt-4 group-hover:text-secondary transition-colors">
@@ -415,7 +415,7 @@ export default function MedicalPracticeCaseStudy() {
               <Link href="/capabilities/ai-technology-consulting/case-study/credit-union">
                 <div className="group p-6 border border-slate-200 rounded-xl hover:border-slate-300 hover:shadow-sm transition-all cursor-pointer">
                   <span className="text-xs font-medium tracking-wider text-muted-foreground uppercase">Financial Services</span>
-                  <h4 className="text-lg font-serif font-bold text-charcoal mt-2 group-hover:text-secondary transition-colors">
+                  <h4 className="text-lg font-bold text-charcoal mt-2 group-hover:text-secondary transition-colors">
                     Credit union transforms member services with AI-powered analytics
                   </h4>
                   <span className="inline-flex items-center text-sm text-muted-foreground mt-4 group-hover:text-secondary transition-colors">

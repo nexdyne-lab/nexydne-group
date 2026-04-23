@@ -167,7 +167,7 @@ export function CaseStudies() {
       <section className="bg-white pt-32 pb-16 border-b border-border">
         <div className="container">
           <div className="max-w-4xl">
-            <h1 className="text-5xl md:text-6xl font-serif font-normal text-charcoal mb-3">
+            <h1 className="text-5xl md:text-6xl font-normal text-charcoal mb-3">
               Impact Stories
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
@@ -211,7 +211,7 @@ export function CaseStudies() {
                 onClick={() => setSelectedCategory(category.value)}
                 className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${
                   selectedCategory === category.value
-                    ? 'bg-red-600 text-white'
+                    ? 'bg-primary text-white'
                     : 'bg-white text-charcoal/80 hover:bg-subtle border border-border'
                 }`}
               >
@@ -285,7 +285,7 @@ export function CaseStudies() {
 
           {/* Load More Button */}
           <div className="text-center mt-12">
-            <button className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded transition-colors">
+            <button className="px-8 py-4 bg-primary hover:bg-red-700 text-white font-semibold rounded transition-colors">
               LOAD MORE
             </button>
           </div>
@@ -296,7 +296,7 @@ export function CaseStudies() {
       <section className="py-12 sm:py-16 lg:py-20 bg-gray-900 text-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-normal mb-6">
+            <h2 className="text-3xl md:text-4xl font-normal mb-6">
               Ready to create your own success story?
             </h2>
             <p className="text-xl text-muted-foreground/50 mb-8">
@@ -305,7 +305,7 @@ export function CaseStudies() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 href="/contact"
-                className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded transition-colors inline-flex items-center justify-center gap-2"
+                className="px-8 py-4 bg-primary hover:bg-red-700 text-white font-semibold rounded transition-colors inline-flex items-center justify-center gap-2"
               >
                 Contact Us <ArrowRight className="w-4 h-4" />
               </Link>

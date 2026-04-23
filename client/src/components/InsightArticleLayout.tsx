@@ -110,7 +110,7 @@ export default function InsightArticleLayout({
               </div>
             </div>
             
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold leading-[1.15] mb-6 text-white">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.15] mb-6 text-white">
               {title}
             </h1>
             
@@ -134,16 +134,16 @@ export default function InsightArticleLayout({
               className="lg:col-span-8"
             >
               <div className="prose prose-lg max-w-none 
-                prose-headings:font-serif prose-headings:text-charcoal prose-headings:font-bold
-                prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-12 prose-h2:mb-6
-                prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-8 prose-h3:mb-4
-                prose-p:text-charcoal/70 prose-p:leading-relaxed prose-p:mb-6
-                prose-li:text-charcoal/70 prose-li:leading-relaxed
-                prose-strong:text-charcoal prose-strong:font-semibold
-                prose-em:text-charcoal/80
-                prose-ul:my-6 prose-ol:my-6
-                prose-a:text-primary prose-a:no-underline hover:prose-a:underline
-              ">
+ prose-headings: prose-headings:text-charcoal prose-headings:font-bold
+ prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-12 prose-h2:mb-6
+ prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-8 prose-h3:mb-4
+ prose-p:text-charcoal/70 prose-p:leading-relaxed prose-p:mb-6
+ prose-li:text-charcoal/70 prose-li:leading-relaxed
+ prose-strong:text-charcoal prose-strong:font-semibold
+ prose-em:text-charcoal/80
+ prose-ul:my-6 prose-ol:my-6
+ prose-a:text-primary prose-a:no-underline hover:prose-a:underline
+ ">
                 {children}
               </div>
 
@@ -154,13 +154,13 @@ export default function InsightArticleLayout({
                     {authorImage ? (
                       <img src={authorImage} alt={authorName} className="w-full h-full object-cover" />
                     ) : (
-                      <div className="w-full h-full flex items-center justify-center text-charcoal/30 text-2xl font-serif font-bold">
+                      <div className="w-full h-full flex items-center justify-center text-charcoal/30 text-2xl font-bold">
                         {authorName.split(' ').map(n => n[0]).join('')}
                       </div>
                     )}
                   </div>
                   <div>
-                    <h3 className="text-lg font-serif font-bold text-charcoal">{authorName}</h3>
+                    <h3 className="text-lg font-bold text-charcoal">{authorName}</h3>
                     <p className="text-charcoal/50 text-sm">{authorRole}</p>
                   </div>
                 </div>
@@ -211,7 +211,7 @@ export default function InsightArticleLayout({
 
                 {/* Newsletter CTA */}
                 <div className="bg-base rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 text-white">
-                  <h3 className="text-lg font-serif font-bold mb-2">Stay ahead of the curve</h3>
+                  <h3 className="text-lg font-bold mb-2">Stay ahead of the curve</h3>
                   <p className="text-white/60 text-sm mb-6">
                     Get the latest strategic insights delivered directly to your inbox.
                   </p>
@@ -262,7 +262,7 @@ export default function InsightArticleLayout({
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif italic font-bold mb-4 text-charcoal">
+                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-charcoal">
                   Related Thinking
                 </h2>
                 <p className="text-charcoal/60">Continue exploring our latest perspectives.</p>
@@ -296,7 +296,7 @@ export default function InsightArticleLayout({
                         <span className="text-xs font-bold uppercase tracking-wider text-charcoal">{article.category}</span>
                       </div>
                     </div>
-                    <h3 className="text-xl font-serif font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">{article.title}</h3>
+                    <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">{article.title}</h3>
                     <p className="text-charcoal/60 text-sm mb-4 leading-relaxed">{article.description}</p>
                     <div className="flex items-center gap-2 text-sm text-charcoal/50">
                       <span>{article.readTime}</span>
@@ -320,7 +320,7 @@ export default function InsightArticleLayout({
 export function InsightCallout({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="bg-subtle p-4 sm:p-6 md:p-4 sm:p-6 md:p-8 rounded-lg border-l-4 border-primary my-12">
-      <h3 className="text-charcoal font-serif font-bold text-lg mb-3">{title}</h3>
+      <h3 className="text-charcoal font-bold text-lg mb-3">{title}</h3>
       <div className="text-charcoal/70 m-0">{children}</div>
     </div>
   );

@@ -76,7 +76,7 @@ export default function PrivateEquityIndustry() {
               transition={{ duration: 0.6 }}
               className="prose prose-lg max-w-none"
             >
-              <p className="text-lg sm:text-xl md:text-2xl text-charcoal/80 leading-relaxed mb-8 first-letter:text-6xl first-letter:font-serif first-letter:font-bold first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:text-primary">
+              <p className="text-lg sm:text-xl md:text-2xl text-charcoal/80 leading-relaxed mb-8">
                 The private equity playbook is evolving. Financial engineering alone no longer delivers the returns investors expect. Today's top-performing funds are those that can identify operational improvement opportunities during diligence and execute transformational change during the hold period. The firms that master this capability will outperform; those that don't will struggle to compete for deals and capital.
               </p>
               
@@ -118,7 +118,7 @@ export default function PrivateEquityIndustry() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-left"
               >
-                <div className="text-4xl md:text-5xl font-serif font-bold text-base mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-base mb-2">
                   {stat.value}
                 </div>
                 <div className="text-base text-muted-foreground leading-snug">
@@ -337,7 +337,7 @@ export default function PrivateEquityIndustry() {
               transition={{ duration: 0.5 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Revenue Growth & Pricing
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -353,7 +353,7 @@ export default function PrivateEquityIndustry() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Cost Optimization & Efficiency
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -369,7 +369,7 @@ export default function PrivateEquityIndustry() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Digital Transformation
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -385,7 +385,7 @@ export default function PrivateEquityIndustry() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Carve-outs & Integration
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -401,7 +401,7 @@ export default function PrivateEquityIndustry() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Technology Due Diligence
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -417,7 +417,7 @@ export default function PrivateEquityIndustry() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Portfolio Analytics & Monitoring
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -564,7 +564,7 @@ export default function PrivateEquityIndustry() {
                       <span className="text-xs font-bold uppercase tracking-[0.15em] text-primary group-hover:text-white/60 transition-colors">
                         Industry
                       </span>
-                      <h3 className="text-lg font-serif font-bold text-charcoal group-hover:text-white transition-colors mt-1">
+                      <h3 className="text-lg font-bold text-charcoal group-hover:text-white transition-colors mt-1">
                         {industry.title}
                       </h3>
                     </div>

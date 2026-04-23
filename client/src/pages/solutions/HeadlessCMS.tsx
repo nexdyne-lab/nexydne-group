@@ -234,7 +234,7 @@ export default function HeadlessCMS() {
                   <p className="text-muted-foreground mb-4">
                     How a digital media publisher migrated to headless CMS and achieved 73% faster time-to-publish across 12 global markets.
                   </p>
-                  <div className="flex items-center text-blue-600 font-semibold">
+                  <div className="flex items-center text-primary font-semibold">
                     Read case study <ArrowRight className="ml-2 w-4 h-4" />
                   </div>
                 </div>
@@ -253,7 +253,7 @@ export default function HeadlessCMS() {
                   <p className="text-muted-foreground mb-4">
                     How an omnichannel retailer used headless CMS to power web, mobile, in-store kiosks, and voice commerce from one content hub.
                   </p>
-                  <div className="flex items-center text-blue-600 font-semibold">
+                  <div className="flex items-center text-primary font-semibold">
                     Read case study <ArrowRight className="ml-2 w-4 h-4" />
                   </div>
                 </div>
@@ -272,7 +272,7 @@ export default function HeadlessCMS() {
                   <p className="text-muted-foreground mb-4">
                     How a global B2B company consolidated 47 regional sites into one headless platform and cut content management costs in half.
                   </p>
-                  <div className="flex items-center text-blue-600 font-semibold">
+                  <div className="flex items-center text-primary font-semibold">
                     Read case study <ArrowRight className="ml-2 w-4 h-4" />
                   </div>
                 </div>
@@ -292,7 +292,7 @@ export default function HeadlessCMS() {
               <Card className="p-8 hover:shadow-lg transition-shadow cursor-pointer">
                 <h3 className="text-xl font-bold mb-3 flex items-center justify-between">
                   Conversational AI
-                  <ArrowRight className="w-5 h-5 text-blue-600" />
+                  <ArrowRight className="w-5 h-5 text-primary" />
                 </h3>
                 <p className="text-muted-foreground">
                   Provide 24/7 customer support and smart interactions that understand customer needs.
@@ -304,7 +304,7 @@ export default function HeadlessCMS() {
               <Card className="p-8 hover:shadow-lg transition-shadow cursor-pointer">
                 <h3 className="text-xl font-bold mb-3 flex items-center justify-between">
                   Mobile apps
-                  <ArrowRight className="w-5 h-5 text-blue-600" />
+                  <ArrowRight className="w-5 h-5 text-primary" />
                 </h3>
                 <p className="text-muted-foreground">
                   Bring your mobile app idea to life with NEXDYNE's iOS and Android services.

@@ -54,7 +54,7 @@ export default function CookiePreferences() {
       <section className="bg-white pt-32 pb-16 border-b border-border/50">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl">
-            <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-charcoal tracking-tight mb-3">
+            <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-charcoal tracking-tight mb-3">
               Cookie Preferences
             </h1>
             <p className="text-lg text-muted-foreground italic">
@@ -94,7 +94,7 @@ export default function CookiePreferences() {
                 
                 {/* What Are Cookies */}
                 <section id="what-are-cookies" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     What Are Cookies
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">
@@ -107,7 +107,7 @@ export default function CookiePreferences() {
 
                 {/* How We Use Cookies */}
                 <section id="how-we-use" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     How We Use Cookies
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">
@@ -123,7 +123,7 @@ export default function CookiePreferences() {
 
                 {/* Types of Cookies */}
                 <section id="types" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Types of Cookies We Use
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -165,7 +165,7 @@ export default function CookiePreferences() {
 
                 {/* Managing Preferences */}
                 <section id="managing" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Managing Your Cookie Preferences
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">
@@ -206,7 +206,7 @@ export default function CookiePreferences() {
 
                 {/* Third-Party Cookies */}
                 <section id="third-party" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Third-Party Cookies
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">
@@ -225,7 +225,7 @@ export default function CookiePreferences() {
 
                 {/* Updates */}
                 <section id="updates" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Updates to This Notice
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed">
@@ -235,7 +235,7 @@ export default function CookiePreferences() {
 
                 {/* Contact */}
                 <section id="contact" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Contact Us
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">

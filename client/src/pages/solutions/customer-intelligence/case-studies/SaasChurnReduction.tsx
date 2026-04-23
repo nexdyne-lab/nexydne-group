@@ -54,15 +54,15 @@ export default function SaasChurnReduction() {
 
             <div className="flex flex-wrap gap-8">
               <div>
-                <div className="text-4xl font-serif font-bold text-primary">38%</div>
+                <div className="text-4xl font-bold text-primary">38%</div>
                 <div className="text-white/60 text-sm">Churn reduction</div>
               </div>
               <div>
-                <div className="text-4xl font-serif font-bold text-primary">$890K</div>
+                <div className="text-4xl font-bold text-primary">$890K</div>
                 <div className="text-white/60 text-sm">Retained ARR</div>
               </div>
               <div>
-                <div className="text-4xl font-serif font-bold text-primary">60 days</div>
+                <div className="text-4xl font-bold text-primary">60 days</div>
                 <div className="text-white/60 text-sm">Early warning lead time</div>
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function SaasChurnReduction() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div className="bg-subtle p-8 rounded-xl">
-                <h3 className="font-serif font-bold text-xl mb-6">Project Overview</h3>
+                <h3 className="font-bold text-xl mb-6">Project Overview</h3>
                 <div className="space-y-6">
                   <div>
                     <div className="text-charcoal/50 text-sm mb-1">Industry</div>
@@ -199,7 +199,7 @@ export default function SaasChurnReduction() {
                 className="bg-white/5 p-8 rounded-xl"
               >
                 <div className="text-primary text-sm font-bold mb-4">{item.phase}</div>
-                <h3 className="text-xl font-serif font-bold text-white mb-4">{item.title}</h3>
+                <h3 className="text-xl font-bold text-white mb-4">{item.title}</h3>
                 <p className="text-white/60 leading-relaxed mb-6">{item.description}</p>
                 <ul className="space-y-3">
                   {item.outcomes.map((outcome, i) => (
@@ -248,7 +248,7 @@ export default function SaasChurnReduction() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-5xl font-serif font-bold text-primary mb-2">{stat.value}</div>
+                <div className="text-5xl font-bold text-primary mb-2">{stat.value}</div>
                 <div className="font-semibold mb-1">{stat.label}</div>
                 <div className="text-charcoal/50 text-sm">{stat.detail}</div>
               </motion.div>
@@ -264,7 +264,7 @@ export default function SaasChurnReduction() {
             className="bg-subtle p-12 rounded-2xl max-w-4xl mx-auto"
           >
             <Quote className="w-12 h-12 text-primary/30 mb-6" />
-            <blockquote className="text-2xl font-serif italic text-charcoal/80 leading-relaxed mb-8">
+            <blockquote className="text-2xl text-charcoal/80 leading-relaxed mb-8">
               "NEXDYNE's Customer Intelligence Maturity Model gave us a clear roadmap from fragmented data to predictive insights. We reduced churn by 38% and identified $890K in at-risk ARR before customers even thought about canceling."
             </blockquote>
             <div>

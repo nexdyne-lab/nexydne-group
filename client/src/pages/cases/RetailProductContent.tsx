@@ -13,15 +13,15 @@ export default function RetailProductContent() {
         <div className="container">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Link href="/">
-              <a className="hover:text-blue-600">Home</a>
+              <a className="hover:text-primary">Home</a>
             </Link>
             <span>/</span>
             <Link href="/solutions/data-solutions">
-              <a className="hover:text-blue-600">Data Solutions</a>
+              <a className="hover:text-primary">Data Solutions</a>
             </Link>
             <span>/</span>
             <Link href="/solutions/content-service-platform">
-              <a className="hover:text-blue-600">Content Service Platform</a>
+              <a className="hover:text-primary">Content Service Platform</a>
             </Link>
             <span>/</span>
             <span className="text-charcoal">Retailer Launches Products 60% Faster with Content Platform</span>

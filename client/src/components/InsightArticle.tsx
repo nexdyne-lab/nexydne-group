@@ -89,7 +89,6 @@ export default function InsightArticle({
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] text-charcoal leading-tight max-w-4xl mb-3"
-            style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
           >
             {title}
           </motion.h1>
@@ -154,7 +153,6 @@ export default function InsightArticle({
                 prose-strong:text-charcoal prose-strong:font-semibold
                 prose-a:text-base prose-a:no-underline hover:prose-a:underline
                 prose-blockquote:border-l-4 prose-blockquote:border-base prose-blockquote:bg-subtle prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:not-italic prose-blockquote:text-charcoal/80"
-              style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
             >
               {children}
             </motion.div>
@@ -165,7 +163,7 @@ export default function InsightArticle({
       {/* CTA Section */}
       <section className="py-12 md:py-16 bg-base text-white">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16 text-center">
-          <h2 className="text-2xl sm:text-3xl mb-4" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+          <h2 className="text-2xl sm:text-3xl mb-4">
             Ready to Apply These Insights?
           </h2>
           <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
@@ -183,7 +181,7 @@ export default function InsightArticle({
       {allRelatedInsights.length > 0 && (
         <section className="py-12 md:py-16 bg-subtle">
           <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
-            <h2 className="text-2xl sm:text-3xl text-charcoal mb-8" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+            <h2 className="text-2xl sm:text-3xl text-charcoal mb-8">
               Related Insights
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -199,7 +197,7 @@ export default function InsightArticle({
                     </div>
                     <div className="p-5">
                       <span className="text-xs font-semibold text-base uppercase tracking-wider">{insight.category}</span>
-                      <h3 className="text-lg text-charcoal leading-tight mt-2 group-hover:text-base transition-colors" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+                      <h3 className="text-lg text-charcoal leading-tight mt-2 group-hover:text-base transition-colors">
                         {insight.title}
                       </h3>
                     </div>

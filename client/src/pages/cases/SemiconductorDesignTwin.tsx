@@ -83,15 +83,15 @@ export default function SemiconductorDesignTwin() {
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">25%</div>
+              <div className="text-5xl font-bold text-primary mb-2">25%</div>
               <div className="text-muted-foreground">Increase in first-time-right designs</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">30%</div>
+              <div className="text-5xl font-bold text-primary mb-2">30%</div>
               <div className="text-muted-foreground">Reduction in root cause analysis time</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">20%</div>
+              <div className="text-5xl font-bold text-primary mb-2">20%</div>
               <div className="text-muted-foreground">Increase in engineering capacity</div>
             </div>
           </div>

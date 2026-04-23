@@ -268,7 +268,7 @@ export default function ProcessOptimizationCaseStudies() {
                     <div className="grid grid-cols-3 gap-4 mb-6">
                       {featuredCase.results.map((result, i) => (
                         <div key={i} className="text-center">
-                          <div className="text-2xl md:text-3xl font-serif font-bold text-primary">{result.metric}</div>
+                          <div className="text-2xl md:text-3xl font-bold text-primary">{result.metric}</div>
                           <div className="text-xs text-white/50 mt-1">{result.label}</div>
                         </div>
                       ))}
@@ -321,7 +321,7 @@ export default function ProcessOptimizationCaseStudies() {
                         <span className="text-xs text-charcoal/50 mb-2">{study.client}</span>
 
                         {/* Title */}
-                        <h3 className="text-xl font-serif font-bold text-charcoal mb-3 group-hover:text-primary transition-colors leading-tight">
+                        <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors leading-tight">
                           {study.title}
                         </h3>
                         
@@ -334,7 +334,7 @@ export default function ProcessOptimizationCaseStudies() {
                         <div className="grid grid-cols-3 gap-3 pt-4 border-t border-base/10">
                           {study.results.map((result, i) => (
                             <div key={i} className="text-center">
-                              <div className="text-lg font-serif font-bold text-primary">{result.metric}</div>
+                              <div className="text-lg font-bold text-primary">{result.metric}</div>
                               <div className="text-[10px] text-charcoal/50 leading-tight">{result.label}</div>
                             </div>
                           ))}
@@ -391,7 +391,7 @@ export default function ProcessOptimizationCaseStudies() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="text-center"
               >
-                <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-white/60 text-sm">{stat.label}</div>
               </motion.div>
             ))}

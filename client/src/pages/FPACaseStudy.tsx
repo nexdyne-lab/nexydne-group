@@ -138,7 +138,7 @@ export default function FPACaseStudy() {
           <div className="max-w-4xl mx-auto">
             <div className="flex items-start gap-4 mb-6">
               <div className="p-3 bg-blue-100 rounded-lg">
-                <LineChart className="h-6 w-6 text-blue-600" />
+                <LineChart className="h-6 w-6 text-primary" />
               </div>
               <div>
                 <h2 className="text-3xl font-bold mb-4">The Solution</h2>

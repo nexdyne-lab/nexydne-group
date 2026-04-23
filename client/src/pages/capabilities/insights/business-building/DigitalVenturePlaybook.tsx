@@ -89,7 +89,7 @@ export default function DigitalVenturePlaybook() {
       <article className="py-16">
         <div className="container max-w-3xl">
           <div className="prose prose-lg max-w-none">
-            <p className="text-xl text-charcoal/80 leading-relaxed mb-8 font-serif">
+            <p className="text-xl text-charcoal/80 leading-relaxed mb-8 ">
               Mid-size companies are uniquely positioned to launch digital ventures. They have the resources and market knowledge of established businesses, combined with the agility that larger enterprises often lack. Yet most mid-market digital ventures fail—not because of bad ideas, but because of flawed execution approaches.
             </p>
             

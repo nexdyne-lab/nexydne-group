@@ -92,7 +92,7 @@ export default function RapidInnovationTesting() {
               className="lg:col-span-4"
             >
               <div className="lg:sticky lg:top-32">
-                <h3 className="text-2xl md:text-3xl font-serif font-bold text-charcoal mb-6">The Innovation Paradox</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-charcoal mb-6">The Innovation Paradox</h3>
                 <p className="text-lg text-charcoal/70 leading-relaxed mb-5 sm:mb-6 md:mb-8">
                   Mid-market companies face constant pressure to innovate—new products, new markets, new business models—but lack the resources to absorb innovation failures. Large enterprises can afford to fund dozens of experiments knowing most will fail. Mid-market companies need higher success rates with lower investment.
                 </p>
@@ -136,28 +136,28 @@ export default function RapidInnovationTesting() {
                 
                 <div className="grid md:grid-cols-2 gap-x-12 gap-y-16">
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Rapid Prototyping Frameworks</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Rapid Prototyping Frameworks</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       We build minimum viable products (MVPs) designed specifically for learning, not scaling. Our prototyping methodology focuses on testing critical assumptions with real users in weeks, not months. We use no-code and low-code platforms, API integrations, and design tools to simulate product experiences before writing production code. This approach validates concepts at a fraction of traditional development costs.
                     </p>
                   </div>
 
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Customer Discovery Programs</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Customer Discovery Programs</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       Our customer discovery methodology systematically tests market demand before product development. We design and execute structured interview programs, survey campaigns, and behavioral experiments that reveal true customer needs—not just stated preferences. We analyze competitive alternatives, willingness to pay, and adoption barriers to determine whether sufficient demand exists to justify investment.
                     </p>
                   </div>
 
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Pilot Program Design</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Pilot Program Design</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       We structure pilot programs that generate statistically valid evidence about product-market fit, operational feasibility, and unit economics. Our pilots include clear success metrics, control groups where appropriate, and structured feedback mechanisms. We design experiments that answer specific questions about scalability, pricing, customer acquisition, and retention—providing the evidence needed for confident go/no-go decisions.
                     </p>
                   </div>
 
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Innovation Governance Frameworks</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Innovation Governance Frameworks</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       We establish stage-gate processes that balance entrepreneurial speed with corporate governance. Our frameworks define clear decision criteria for each innovation stage, specify required evidence for progression, and establish kill criteria that prevent throwing good money after bad. This disciplined approach ensures innovation resources flow to the highest-potential opportunities while maintaining financial discipline.
                     </p>
@@ -281,7 +281,7 @@ export default function RapidInnovationTesting() {
             
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8">
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-4">80%</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">80%</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">Reduction in Wasted Investment</div>
                 <p className="text-charcoal/70">
                   By killing bad ideas early and doubling down on validated opportunities
@@ -289,7 +289,7 @@ export default function RapidInnovationTesting() {
               </div>
 
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-4">10-12 weeks</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">10-12 weeks</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">Validation to Decision</div>
                 <p className="text-charcoal/70">
                   From initial concept to evidence-based go/no-go decision
@@ -297,7 +297,7 @@ export default function RapidInnovationTesting() {
               </div>
 
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-4">3-5x</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">3-5x</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">Innovation Success Rate</div>
                 <p className="text-charcoal/70">
                   Compared to traditional product development approaches

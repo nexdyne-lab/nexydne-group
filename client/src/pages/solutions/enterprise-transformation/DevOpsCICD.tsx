@@ -250,7 +250,7 @@ export default function DevOpsCICD() {
                 transition={{ duration: 0.6, delay: index * 0.15 }}
               >
                 <div className="text-5xl font-bold text-primary mb-4">{item.step}</div>
-                <h3 className="text-2xl font-serif font-bold text-white mb-4">{item.title}</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">{item.title}</h3>
                 <p className="text-white/70 leading-relaxed">{item.description}</p>
               </motion.div>
             ))}

@@ -36,7 +36,7 @@ export default function CaseStudyExecutiveDashboards() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Case Study · Professional Services
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               Executive dashboards for <span className="text-primary">clarity</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mb-5 sm:mb-6 md:mb-8">
@@ -79,7 +79,7 @@ export default function CaseStudyExecutiveDashboards() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-5xl font-serif font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-5xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-base text-white/70">{stat.label}</div>
               </motion.div>
             ))}
@@ -113,7 +113,7 @@ export default function CaseStudyExecutiveDashboards() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Company Overview</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client is a professional services firm specializing in management consulting and organizational transformation. With 150 consultants across 8 offices and $32M in annual revenue, they serve Fortune 500 clients in financial services, healthcare, and technology sectors. The firm operates on a project-based model with complex resource allocation, utilization tracking, and profitability analysis requirements.
@@ -153,7 +153,7 @@ export default function CaseStudyExecutiveDashboards() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Information overload paralyzed decision-making
             </h2>
           </motion.div>
@@ -164,21 +164,21 @@ export default function CaseStudyExecutiveDashboards() {
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Information overload paralyzed decision-making</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Information overload paralyzed decision-making</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The monthly board package consisted of 40+ pages of Excel tables showing revenue, expenses, utilization, pipeline, and dozens of other metrics broken down by office, practice area, and consultant level. Board members received this package 48 hours before the meeting and were expected to come prepared with questions and recommendations. In reality, most partners skimmed the materials and arrived unprepared, leading to meetings that ran 3-4 hours as everyone tried to make sense of the data in real-time.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">No clear narrative or priorities</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">No clear narrative or priorities</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The reports presented data without context or interpretation. There was no executive summary highlighting what mattered most, no clear indication of whether performance was good or bad, and no guidance on what actions should be taken. Each partner focused on different metrics based on their own interests and biases, leading to fragmented discussions that rarely resulted in clear decisions or action items.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Static reports couldn't answer follow-up questions</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Static reports couldn't answer follow-up questions</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 When board members had questions about the data—"What's driving the utilization decline in the Chicago office?" or "How does our pipeline compare to this time last year?"—the CFO had to promise to follow up after the meeting. This meant decisions were deferred until the next month, and by then the context had changed. The inability to drill down into details during the meeting created frustration and slowed the pace of decision-making.
               </p>
@@ -196,7 +196,7 @@ export default function CaseStudyExecutiveDashboards() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
               "Our board meetings had become data review sessions instead of strategic discussions. We were drowning in metrics but starving for insights. We needed a way to cut through the noise and focus on what really mattered."
             </blockquote>
             <div className="text-base text-white">
@@ -219,7 +219,7 @@ export default function CaseStudyExecutiveDashboards() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Interactive dashboards that surface what matters
             </h2>
           </motion.div>
@@ -241,7 +241,7 @@ export default function CaseStudyExecutiveDashboards() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <Target className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   Metric prioritization and KPI framework design
                 </h3>
@@ -277,7 +277,7 @@ export default function CaseStudyExecutiveDashboards() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <Eye className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   Dashboard design and visualization development
                 </h3>
@@ -313,7 +313,7 @@ export default function CaseStudyExecutiveDashboards() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <Users className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   Training and meeting process redesign
                 </h3>
@@ -356,7 +356,7 @@ export default function CaseStudyExecutiveDashboards() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Results & Impact
             </h2>
           </motion.div>
@@ -367,7 +367,7 @@ export default function CaseStudyExecutiveDashboards() {
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <BarChart3 className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 Dramatically more efficient board meetings
               </h3>
@@ -376,18 +376,18 @@ export default function CaseStudyExecutiveDashboards() {
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl">
-                  <div className="text-3xl font-serif font-bold text-charcoal mb-2">90 min</div>
+                  <div className="text-3xl font-bold text-charcoal mb-2">90 min</div>
                   <div className="text-sm text-charcoal/60">Average meeting length (down from 3-4 hours)</div>
                 </div>
                 <div className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl">
-                  <div className="text-3xl font-serif font-bold text-charcoal mb-2">60%</div>
+                  <div className="text-3xl font-bold text-charcoal mb-2">60%</div>
                   <div className="text-sm text-charcoal/60">Improvement in meeting efficiency</div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 Faster, more confident decision-making
               </h3>
@@ -395,13 +395,13 @@ export default function CaseStudyExecutiveDashboards() {
                 The ability to drill down into data during meetings meant that questions could be answered immediately rather than deferred to the next month. This accelerated decision-making significantly—the firm reduced the average time from issue identification to decision from 60 days to 15 days. Board members also reported feeling more confident in their decisions because they had the context and detail they needed at their fingertips.
               </p>
               <div className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl">
-                <div className="text-3xl font-serif font-bold text-charcoal mb-2">75%</div>
+                <div className="text-3xl font-bold text-charcoal mb-2">75%</div>
                 <div className="text-sm text-charcoal/60">Faster issue-to-decision cycle (15 days vs. 60 days)</div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <Eye className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 Improved transparency and accountability
               </h3>
@@ -409,7 +409,7 @@ export default function CaseStudyExecutiveDashboards() {
                 The clear, objective metrics and visual status indicators eliminated ambiguity about performance. Office leaders and practice heads could no longer hide behind vague explanations or cherry-picked data—the dashboards told the truth. This transparency improved accountability and drove better performance across the firm. Within six months, overall consultant utilization increased by 8 percentage points as underperforming offices took action to improve.
               </p>
               <div className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl">
-                <div className="text-3xl font-serif font-bold text-charcoal mb-2">8 pts</div>
+                <div className="text-3xl font-bold text-charcoal mb-2">8 pts</div>
                 <div className="text-sm text-charcoal/60">Increase in average consultant utilization rate</div>
               </div>
             </div>
@@ -426,7 +426,7 @@ export default function CaseStudyExecutiveDashboards() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
               "This has completely changed how we run the business. Our board meetings are now strategic sessions instead of data review marathons. We're making better decisions faster, and everyone is aligned around what matters most. It's been transformational."
             </blockquote>
             <div className="text-base text-white">
@@ -457,7 +457,7 @@ export default function CaseStudyExecutiveDashboards() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white">More success stories</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-4 max-w-5xl">
@@ -493,7 +493,7 @@ export default function CaseStudyExecutiveDashboards() {
                     />
                   </div>
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>

@@ -36,7 +36,7 @@ export default function CaseStudyConsultingKnowledge() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Case Study · Professional Services
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               Transforming institutional knowledge into <span className="text-primary">competitive advantage</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mb-5 sm:mb-6 md:mb-8">
@@ -78,7 +78,7 @@ export default function CaseStudyConsultingKnowledge() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-6xl font-serif font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-6xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-lg text-white">{stat.label}</div>
                 <div className="text-sm text-white/60">{stat.sublabel}</div>
               </motion.div>
@@ -116,7 +116,7 @@ export default function CaseStudyConsultingKnowledge() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Opportunity
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Unlocking the value trapped in ten years of consulting engagements
             </h2>
           </motion.div>
@@ -151,7 +151,7 @@ export default function CaseStudyConsultingKnowledge() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
               "We were essentially starting from scratch on every engagement, even when we had done similar work six months earlier. It was like having amnesia as an organization."
             </blockquote>
             <div className="text-base text-white">
@@ -174,7 +174,7 @@ export default function CaseStudyConsultingKnowledge() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Building an intelligent knowledge engine that learns from every engagement
             </h2>
           </motion.div>
@@ -188,22 +188,22 @@ export default function CaseStudyConsultingKnowledge() {
               We partnered with the firm's leadership to design and implement an AI-powered knowledge management platform that would automatically capture, organize, and surface relevant insights from past engagements. The $58,000 investment focused on creating a system that required minimal manual input while delivering maximum value to consultants.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Automated knowledge capture</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Automated knowledge capture</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               The platform integrated with the firm's existing document management system, automatically indexing and categorizing deliverables, presentations, and research materials. Natural language processing extracted key insights, methodologies, and findings from each document, creating a searchable knowledge graph that connected related concepts across engagements. Consultants continued working in their familiar tools while the system captured knowledge in the background.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Intelligent search and discovery</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Intelligent search and discovery</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Rather than requiring consultants to remember specific file names or folder structures, the platform enabled semantic search that understood the intent behind queries. A consultant could search for "healthcare cost reduction strategies for regional hospitals" and receive relevant analyses from multiple past engagements, ranked by relevance and recency. The system learned from usage patterns, improving recommendations over time.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Proposal acceleration</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Proposal acceleration</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               The platform included specialized features for proposal development, automatically suggesting relevant case studies, methodologies, and team qualifications based on RFP requirements. Consultants could assemble first-draft proposals in hours rather than days, drawing on the firm's full body of work. The system also tracked proposal outcomes, identifying which approaches and positioning strategies yielded the highest win rates.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Change management and adoption</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Change management and adoption</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
               We worked closely with the firm's leadership to drive adoption through a combination of training, champions program, and visible quick wins. Early adopters were identified in each practice area and given intensive training to become internal advocates. The platform was introduced through high-value use cases like proposal development where benefits were immediately visible, building momentum for broader adoption across research and client delivery workflows.
             </p>
@@ -220,7 +220,7 @@ export default function CaseStudyConsultingKnowledge() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
               "The system pays for itself every time we win a proposal that we would have been too slow to pursue under the old process. And that happens multiple times per quarter."
             </blockquote>
             <div className="text-base text-white">
@@ -243,7 +243,7 @@ export default function CaseStudyConsultingKnowledge() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               From knowledge scarcity to knowledge abundance
             </h2>
           </motion.div>
@@ -257,22 +257,22 @@ export default function CaseStudyConsultingKnowledge() {
               Within 14 months of deployment, the knowledge management platform transformed how the firm operated, delivering measurable improvements in efficiency, win rates, and consultant satisfaction.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Research and analysis efficiency</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Research and analysis efficiency</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Time spent on background research and analysis decreased by 70%, freeing approximately 2,800 hours annually across the firm. Consultants reported that they could now find relevant past work in minutes rather than hours, and that the quality of insights improved because they were building on prior analyses rather than starting fresh. Junior consultants particularly benefited, gaining access to institutional knowledge that previously required years of experience to accumulate.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Proposal development and win rates</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Proposal development and win rates</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Proposal development time dropped from an average of 60 hours to 22 hours, enabling the firm to pursue 35% more opportunities without adding staff. More importantly, proposal win rates increased from 28% to 42%, driven by higher-quality submissions that drew on the firm's full expertise. The firm attributes three major client wins worth $1.8 million in combined fees directly to the improved proposal process.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Knowledge retention and institutional learning</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Knowledge retention and institutional learning</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               The platform successfully captured knowledge from two senior partners who retired during the measurement period, preserving their insights for future engagements. New consultants reported reaching productivity milestones 40% faster than previous cohorts, citing the knowledge platform as a critical onboarding resource. The firm now has systematic visibility into its areas of deep expertise, enabling more strategic decisions about practice development and hiring.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Financial performance</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Financial performance</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
               The $58,000 investment in the platform generated $420,000 in value during the first 18 months through a combination of increased billable hours (2,800 hours at average billing rates), improved win rates (three major engagements), and avoided hiring costs (handling 35% more proposals without adding staff). This represents a 315% ROI over 18 months. The managing partners view the platform as fundamental infrastructure that will continue generating value as the firm grows, with benefits compounding as more knowledge is captured and more consultants adopt the system.
             </p>
@@ -293,7 +293,7 @@ export default function CaseStudyConsultingKnowledge() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Get In Touch
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white">Our experts</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Our experts</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl">
@@ -322,7 +322,7 @@ export default function CaseStudyConsultingKnowledge() {
                 <div className="flex items-start gap-4">
                   <img className="w-20 h-20 rounded-full object-cover flex-shrink-0" src={expert.image} alt={expert.name} />
                   <div>
-                    <h3 className="text-2xl font-serif font-bold mb-2">{expert.name}</h3>
+                    <h3 className="text-2xl font-bold mb-2">{expert.name}</h3>
                     <p className="text-sm text-primary mb-4">{expert.location}</p>
                     <p className="text-base leading-relaxed text-charcoal/70">
                       {expert.description}
@@ -355,7 +355,7 @@ export default function CaseStudyConsultingKnowledge() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white">More success stories</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">More success stories</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -405,7 +405,7 @@ export default function CaseStudyConsultingKnowledge() {
                     </div>
                   </div>
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">

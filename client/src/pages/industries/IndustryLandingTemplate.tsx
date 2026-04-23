@@ -84,7 +84,7 @@ export default function IndustryLandingTemplate({
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold mb-2 sm:mb-3">
               {industry}
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-blue-200 mb-3 sm:mb-4 font-serif italic">
+            <p className="text-lg sm:text-xl md:text-2xl text-blue-200 mb-3 sm:mb-4 ">
               {tagline}
             </p>
             <p className="text-base sm:text-lg text-white/80 leading-relaxed mb-6 sm:mb-8">

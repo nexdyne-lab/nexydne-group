@@ -89,7 +89,7 @@ export default function CloudMigrationRoadmap() {
       <article className="py-16">
         <div className="container max-w-3xl">
           <div className="prose prose-lg max-w-none">
-            <p className="text-xl text-charcoal/80 leading-relaxed mb-8 font-serif">
+            <p className="text-xl text-charcoal/80 leading-relaxed mb-8 ">
               Cloud migration is no longer optional for mid-size companies. The question is not whether to migrate, but how to do it efficiently without the massive budgets and specialized teams that large enterprises deploy. This guide provides a practical roadmap based on our experience with 80+ mid-market cloud migrations.
             </p>
             

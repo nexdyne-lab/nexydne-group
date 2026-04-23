@@ -108,7 +108,7 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-charcoal mb-3">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl text-charcoal mb-3">
               Contact Us
             </h1>
           </motion.div>
@@ -172,7 +172,7 @@ export default function Contact() {
               className="grid lg:grid-cols-[300px_1fr] gap-8 lg:gap-16 py-12 border-b border-border"
             >
               <div>
-                <h2 className="text-2xl md:text-3xl font-serif text-charcoal">
+                <h2 className="text-2xl md:text-3xl text-charcoal">
                   About you
                 </h2>
               </div>
@@ -242,7 +242,7 @@ export default function Contact() {
               className="grid lg:grid-cols-[300px_1fr] gap-8 lg:gap-16 py-12 border-b border-border"
             >
               <div>
-                <h2 className="text-2xl md:text-3xl font-serif text-charcoal">
+                <h2 className="text-2xl md:text-3xl text-charcoal">
                   About your business
                 </h2>
               </div>
@@ -270,7 +270,7 @@ export default function Contact() {
               className="grid lg:grid-cols-[300px_1fr] gap-8 lg:gap-16 py-12 border-b border-border"
             >
               <div>
-                <h2 className="text-2xl md:text-3xl font-serif text-charcoal">
+                <h2 className="text-2xl md:text-3xl text-charcoal">
                   Your message
                 </h2>
               </div>
@@ -308,7 +308,7 @@ export default function Contact() {
                     onCheckedChange={(checked) => 
                       setFormData({ ...formData, privacyAccepted: checked as boolean })
                     }
-                    className="mt-1 border-gray-400 data-[state=checked]:bg-red-600 data-[state=checked]:border-red-600"
+                    className="mt-1 border-gray-400 data-[state=checked]:bg-primary data-[state=checked]:border-primary"
                   />
                   <label htmlFor="privacy" className="text-sm text-muted-foreground cursor-pointer">
                     <span className="text-destructive">*</span> I have read the{' '}
@@ -323,7 +323,7 @@ export default function Contact() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="bg-red-600 hover:bg-red-700 text-white px-10 py-6 text-base font-semibold rounded-none uppercase tracking-wider"
+                  className="bg-primary hover:bg-red-700 text-white px-10 py-6 text-base font-semibold rounded-none uppercase tracking-wider"
                 >
                   {isSubmitting ? 'Submitting...' : 'Submit'}
                 </Button>

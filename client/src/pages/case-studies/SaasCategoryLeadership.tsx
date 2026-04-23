@@ -36,7 +36,7 @@ export default function SaasCategoryLeadership() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Case Study · Software & Technology
             </span>
-            <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-4">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-4">
               Shifting Mindsets to <span className="text-primary">Drive Performance</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mb-8">
@@ -78,7 +78,7 @@ export default function SaasCategoryLeadership() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-5xl font-serif font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-5xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-base text-white/70">{stat.label}</div>
               </motion.div>
             ))}
@@ -112,7 +112,7 @@ export default function SaasCategoryLeadership() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Company Overview</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 A B2B SaaS platform serving mid-market companies had built a successful business by being a fast follower in their category. They watched competitors introduce new features and capabilities, then quickly replicated them with competitive pricing. This strategy had generated steady growth and profitability, but leadership recognized they had hit a ceiling.
@@ -152,7 +152,7 @@ export default function SaasCategoryLeadership() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Breaking the Fast Follower Trap
             </h2>
           </motion.div>
@@ -163,28 +163,28 @@ export default function SaasCategoryLeadership() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Reactive Product Strategy</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Reactive Product Strategy</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The company's product roadmap was driven by competitive response rather than customer insight or market opportunity. This meant they were always playing catch-up, never setting the agenda for the category.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Conservative Financial Culture</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Conservative Financial Culture</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The finance team prioritized profitability and efficiency over growth and innovation. R&D investment was constrained by short-term financial targets, preventing the company from making the bold bets required for breakthrough innovation.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Limited Revenue Diversification</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Limited Revenue Diversification</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The company relied heavily on a single core product, creating vulnerability to competitive disruption and limiting growth potential. Leadership recognized the need for new revenue streams but lacked a framework for identifying and funding them.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Misaligned Incentives</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Misaligned Incentives</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 Financial metrics and incentive structures rewarded short-term performance rather than strategic innovation. This created organizational resistance to the long-term investments required for category leadership.
               </p>
@@ -202,7 +202,7 @@ export default function SaasCategoryLeadership() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-3xl md:text-4xl font-serif text-primary leading-tight mb-8">
+            <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "We had built a successful business by being fast followers, but we knew we couldn't keep playing catch-up forever. We needed to become the company that others followed, but our financial culture was holding us back."
             </blockquote>
             <div className="text-base text-white">
@@ -225,7 +225,7 @@ export default function SaasCategoryLeadership() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Solution
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               "Insights to Action" Financial Framework
             </h2>
           </motion.div>
@@ -247,7 +247,7 @@ export default function SaasCategoryLeadership() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <Target className="w-6 h-6 text-primary" />
                   Strategic Financial Repositioning
                 </h3>
@@ -279,7 +279,7 @@ export default function SaasCategoryLeadership() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <Zap className="w-6 h-6 text-primary" />
                   Innovation Portfolio Development
                 </h3>
@@ -311,7 +311,7 @@ export default function SaasCategoryLeadership() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <DollarSign className="w-6 h-6 text-primary" />
                   Capital Allocation & Funding
                 </h3>
@@ -343,7 +343,7 @@ export default function SaasCategoryLeadership() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <TrendingUp className="w-6 h-6 text-primary" />
                   Performance Management & Governance
                 </h3>
@@ -382,7 +382,7 @@ export default function SaasCategoryLeadership() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Impact
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Category Leadership Achieved
             </h2>
           </motion.div>
@@ -393,7 +393,7 @@ export default function SaasCategoryLeadership() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <DollarSign className="w-6 h-6 text-primary" />
                 Breakthrough Product Pipeline
               </h3>
@@ -402,18 +402,18 @@ export default function SaasCategoryLeadership() {
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="p-6 bg-base/5 rounded-xl">
-                  <div className="text-3xl font-serif font-bold text-charcoal mb-2">5+</div>
+                  <div className="text-3xl font-bold text-charcoal mb-2">5+</div>
                   <div className="text-sm text-charcoal/60">New revenue streams funded</div>
                 </div>
                 <div className="p-6 bg-base/5 rounded-xl">
-                  <div className="text-3xl font-serif font-bold text-charcoal mb-2">$50M+</div>
+                  <div className="text-3xl font-bold text-charcoal mb-2">$50M+</div>
                   <div className="text-sm text-charcoal/60">Potential ARR from new products</div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <Zap className="w-6 h-6 text-primary" />
                 Strategic Repositioning
               </h3>
@@ -423,7 +423,7 @@ export default function SaasCategoryLeadership() {
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <TrendingUp className="w-6 h-6 text-primary" />
                 Accelerated Growth
               </h3>
@@ -431,13 +431,13 @@ export default function SaasCategoryLeadership() {
                 Year-over-year revenue growth accelerated from 18% to 42% as new products gained market traction, while maintaining healthy unit economics.
               </p>
               <div className="p-6 bg-base/5 rounded-xl">
-                <div className="text-3xl font-serif font-bold text-charcoal mb-2">18% → 42%</div>
+                <div className="text-3xl font-bold text-charcoal mb-2">18% → 42%</div>
                 <div className="text-sm text-charcoal/60">Year-over-year revenue growth acceleration</div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <Target className="w-6 h-6 text-primary" />
                 Cultural Transformation
               </h3>
@@ -458,7 +458,7 @@ export default function SaasCategoryLeadership() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-3xl md:text-4xl font-serif text-primary leading-tight mb-8">
+            <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "NexDyne didn't just help us create a financial plan—they helped us fundamentally rethink our relationship with innovation. By shifting finance from a control function to a strategic enabler, we were able to make the bold investments required to become a category leader. The impact on our business has been profound."
             </blockquote>
             <div className="text-base text-white">
@@ -489,7 +489,7 @@ export default function SaasCategoryLeadership() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white">More success stories</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -525,7 +525,7 @@ export default function SaasCategoryLeadership() {
                     />
                   </div>
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>

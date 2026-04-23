@@ -68,7 +68,7 @@ export default function MidMarketAIAccess() {
       <section className="py-16 bg-slate-50">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Key Findings</h2>
+            <h2 className="text-sm font-bold text-primary uppercase tracking-widest mb-4">Key Findings</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="text-5xl font-bold text-charcoal mb-2">73%</div>
@@ -200,8 +200,8 @@ export default function MidMarketAIAccess() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                   <div className="aspect-[16/10] bg-gradient-to-br from-slate-700 to-slate-900"></div>
                   <div className="p-6">
-                    <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">Article</span>
-                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-blue-600 transition-colors">
+                    <span className="text-xs font-semibold text-primary uppercase tracking-wider">Article</span>
+                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-primary transition-colors">
                       The 85% efficiency improvement: What our clients actually experience
                     </h3>
                   </div>
@@ -212,8 +212,8 @@ export default function MidMarketAIAccess() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                   <div className="aspect-[16/10] bg-gradient-to-br from-blue-700 to-blue-900"></div>
                   <div className="p-6">
-                    <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">Whitepaper</span>
-                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-blue-600 transition-colors">
+                    <span className="text-xs font-semibold text-primary uppercase tracking-wider">Whitepaper</span>
+                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-primary transition-colors">
                       Process mining fundamentals: From operational mapping to AI automation
                     </h3>
                   </div>
@@ -224,8 +224,8 @@ export default function MidMarketAIAccess() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                   <div className="aspect-[16/10] bg-gradient-to-br from-teal-700 to-teal-900"></div>
                   <div className="p-6">
-                    <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">Article</span>
-                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-blue-600 transition-colors">
+                    <span className="text-xs font-semibold text-primary uppercase tracking-wider">Article</span>
+                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-primary transition-colors">
                       Why change management determines AI project success
                     </h3>
                   </div>

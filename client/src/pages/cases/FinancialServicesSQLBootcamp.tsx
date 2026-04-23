@@ -96,7 +96,7 @@ export default function FinancialServicesSQLBootcamp() {
               <div className="text-4xl font-bold text-indigo-900 mb-2">3 weeks → 2 hours</div>
               <div className="text-charcoal/80">Time to deliver portfolio performance analysis</div>
             </div>
-            <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
+            <div className="bg-red-50 p-6 rounded-lg border-l-4 border-primary">
               <div className="text-4xl font-bold text-red-900 mb-2">$400K</div>
               <div className="text-charcoal/80">Annual savings from reduced manual data processing</div>
             </div>

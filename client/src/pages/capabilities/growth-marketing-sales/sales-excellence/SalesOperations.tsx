@@ -24,7 +24,7 @@ export default function SalesOperations() {
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1] eb-garamond">
               Sales Operations & Enablement
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light font-serif">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light ">
               Optimizing the technical backbone of your sales organization. We streamline CRM workflows, automate reporting, and ensure data hygiene.
             </p>
           </div>
@@ -48,15 +48,15 @@ export default function SalesOperations() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3 text-charcoal/80">
-                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>CAC optimization algorithms</span>
                   </li>
                   <li className="flex items-start gap-3 text-charcoal/80">
-                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>Lean back-office operations</span>
                   </li>
                   <li className="flex items-start gap-3 text-charcoal/80">
-                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>Automated quote-to-cash</span>
                   </li>
                 </ul>
@@ -69,15 +69,15 @@ export default function SalesOperations() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3 text-charcoal/80">
-                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>Contextual content delivery</span>
                   </li>
                   <li className="flex items-start gap-3 text-charcoal/80">
-                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>"Field and Forum" training</span>
                   </li>
                   <li className="flex items-start gap-3 text-charcoal/80">
-                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>Competency modeling</span>
                   </li>
                 </ul>

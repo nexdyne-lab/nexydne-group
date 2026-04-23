@@ -198,7 +198,7 @@ export default function LeadsDashboard() {
               <Calendar className="w-4 h-4 text-muted-foreground/70" />
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-blue-600">
+              <div className="text-3xl font-bold text-primary">
                 {statsLoading ? "..." : stats?.leadsThisWeek || 0}
               </div>
               <p className="text-xs text-muted-foreground mt-1">
@@ -249,7 +249,7 @@ export default function LeadsDashboard() {
                 {stats.topCaseStudies.map((cs, index) => (
                   <div key={index} className="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-semibold text-sm">
+                      <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-primary font-semibold text-sm">
                         {index + 1}
                       </div>
                       <span className="font-medium text-charcoal/80 truncate max-w-md">{cs.title}</span>
@@ -483,7 +483,7 @@ export default function LeadsDashboard() {
                           )}
                         </TableCell>
                         <TableCell className="text-center">
-                          <span className="font-semibold text-blue-600">{item.downloadCount}</span>
+                          <span className="font-semibold text-primary">{item.downloadCount}</span>
                         </TableCell>
                         <TableCell className="text-center">{item.uniqueLeads}</TableCell>
                         <TableCell className="text-center">

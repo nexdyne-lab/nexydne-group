@@ -37,11 +37,11 @@ export function ConstructionProjectManagement() {
               <span className="font-semibold">$180K annual savings</span>
             </div>
             <div className="flex items-center gap-2">
-              <Layers className="h-5 w-5 text-blue-600" />
+              <Layers className="h-5 w-5 text-primary" />
               <span className="font-semibold">5 tools replaced</span>
             </div>
             <div className="flex items-center gap-2">
-              <Smartphone className="h-5 w-5 text-blue-600" />
+              <Smartphone className="h-5 w-5 text-primary" />
               <span className="font-semibold">Mobile-first design</span>
             </div>
           </div>

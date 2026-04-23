@@ -61,7 +61,7 @@ export default function FollowUs() {
       <section className="bg-white pt-32 pb-16 border-b border-border/50">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl">
-            <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-charcoal tracking-tight mb-3">
+            <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-charcoal tracking-tight mb-3">
               Follow Us
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -96,7 +96,7 @@ export default function FollowUs() {
                       {/* Content */}
                       <div className="flex-grow">
                         <div className="flex items-center gap-3 mb-2">
-                          <h2 className="text-2xl font-serif font-bold text-charcoal group-hover:text-primary transition-colors">
+                          <h2 className="text-2xl font-bold text-charcoal group-hover:text-primary transition-colors">
                             {channel.name}
                           </h2>
                           <span className="text-sm text-muted-foreground">
@@ -136,7 +136,7 @@ export default function FollowUs() {
             <div className="w-16 h-16 bg-base rounded-lg flex items-center justify-center mx-auto mb-6">
               <Mail className="w-8 h-8 text-white" />
             </div>
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-charcoal mb-4">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-4">
               Subscribe to Our Newsletter
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-5 sm:mb-6 md:mb-8">
@@ -186,7 +186,7 @@ export default function FollowUs() {
             <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8">
               {/* Media Inquiries */}
               <div className="bg-subtle p-4 sm:p-6 md:p-8 rounded-lg">
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4">
+                <h3 className="text-xl font-bold text-charcoal mb-4">
                   Media Inquiries
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
@@ -202,7 +202,7 @@ export default function FollowUs() {
 
               {/* Speaking Engagements */}
               <div className="bg-subtle p-4 sm:p-6 md:p-8 rounded-lg">
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4">
+                <h3 className="text-xl font-bold text-charcoal mb-4">
                   Speaking Engagements
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
@@ -224,7 +224,7 @@ export default function FollowUs() {
       <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif font-bold mb-6">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
               Content Guidelines
             </h2>
             <p className="text-lg text-white/80 leading-relaxed mb-5 sm:mb-6 md:mb-8">

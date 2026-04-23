@@ -62,7 +62,7 @@ export function CustomSoftware() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                  <DollarSign className="w-6 h-6 text-blue-600" />
+                  <DollarSign className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold">Competitive total cost of ownership</h3>
                 <p className="text-muted-foreground">
@@ -72,7 +72,7 @@ export function CustomSoftware() {
 
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                  <Wrench className="w-6 h-6 text-blue-600" />
+                  <Wrench className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold">Built for your exact requirements</h3>
                 <p className="text-muted-foreground">
@@ -82,7 +82,7 @@ export function CustomSoftware() {
 
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                  <Layers className="w-6 h-6 text-blue-600" />
+                  <Layers className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold">Seamless IT ecosystem integration</h3>
                 <p className="text-muted-foreground">
@@ -92,7 +92,7 @@ export function CustomSoftware() {
 
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                  <LinkIcon className="w-6 h-6 text-blue-600" />
+                  <LinkIcon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold">Effortless third-party connectivity</h3>
                 <p className="text-muted-foreground">

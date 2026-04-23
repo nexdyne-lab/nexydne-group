@@ -76,7 +76,7 @@ export default function FinancialServicesIndustry() {
               transition={{ duration: 0.6 }}
               className="prose prose-lg max-w-none"
             >
-              <p className="text-lg sm:text-xl md:text-2xl text-charcoal/80 leading-relaxed mb-8 first-letter:text-6xl first-letter:font-serif first-letter:font-bold first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:text-primary">
+              <p className="text-lg sm:text-xl md:text-2xl text-charcoal/80 leading-relaxed mb-8">
                 We begin our financial services consulting by partnering with you to define, test, and prove how advanced data collection and analysis, AI, digital channels, and other enhancements will create value—<em>before</em> expanding or embedding these capabilities in your operating model. We automate what's transactional and create cross-functional teams to harness the ingenuity and innovation you'll need to meet customers' changing demands.
               </p>
               
@@ -118,7 +118,7 @@ export default function FinancialServicesIndustry() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-left"
               >
-                <div className="text-4xl md:text-5xl font-serif font-bold text-base mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-base mb-2">
                   {stat.value}
                 </div>
                 <div className="text-base text-muted-foreground leading-snug">
@@ -215,7 +215,7 @@ export default function FinancialServicesIndustry() {
               transition={{ duration: 0.5 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 underline decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 underline decoration-primary decoration-2 underline-offset-4">
                 Customer Insights
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -231,7 +231,7 @@ export default function FinancialServicesIndustry() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Digital Transformation
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -247,7 +247,7 @@ export default function FinancialServicesIndustry() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Risk & Compliance Management
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -263,7 +263,7 @@ export default function FinancialServicesIndustry() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Personalization at Scale
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -279,7 +279,7 @@ export default function FinancialServicesIndustry() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Pricing & Revenue Management
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -295,7 +295,7 @@ export default function FinancialServicesIndustry() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 ESG & Sustainable Finance
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -505,7 +505,7 @@ export default function FinancialServicesIndustry() {
                       className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-charcoal mb-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-2 group-hover:text-primary transition-colors">
                     {service.title}
                   </h3>
                   <p className="text-charcoal/60 text-sm leading-relaxed mb-3">
@@ -564,7 +564,7 @@ export default function FinancialServicesIndustry() {
                       <span className="text-xs font-bold uppercase tracking-[0.15em] text-primary group-hover:text-white/60 transition-colors">
                         Industry
                       </span>
-                      <h3 className="text-lg font-serif font-bold text-charcoal group-hover:text-white transition-colors mt-1">
+                      <h3 className="text-lg font-bold text-charcoal group-hover:text-white transition-colors mt-1">
                         {industry.title}
                       </h3>
                     </div>

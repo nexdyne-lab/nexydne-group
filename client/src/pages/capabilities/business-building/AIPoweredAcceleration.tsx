@@ -128,7 +128,7 @@ export default function AIPoweredAcceleration() {
               className="lg:col-span-4"
             >
               <div className="lg:sticky lg:top-32">
-                <h3 className="text-2xl md:text-3xl font-serif font-bold text-charcoal mb-6">The Intelligence Gap</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-charcoal mb-6">The Intelligence Gap</h3>
                 <p className="text-lg text-charcoal/70 leading-relaxed mb-5 sm:mb-6 md:mb-8">
                   Large enterprises invest millions in AI infrastructure, data science teams, and predictive analytics platforms. Mid-market companies lack these resources but face the same competitive pressures—making faster decisions, anticipating market shifts, and personalizing customer experiences at scale.
                 </p>
@@ -172,28 +172,28 @@ export default function AIPoweredAcceleration() {
                 
                 <div className="grid md:grid-cols-2 gap-x-12 gap-y-16">
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Strategic Planning Intelligence</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Strategic Planning Intelligence</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       Our AI-powered strategic planning platform analyzes market trends, competitive movements, and internal performance data to generate scenario-based growth strategies. Machine learning models identify emerging opportunities and risks before they appear in traditional market research, enabling proactive strategic positioning. The system continuously refines recommendations as new data emerges, ensuring your strategy evolves with market conditions.
                     </p>
                   </div>
 
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Predictive Market Intelligence</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Predictive Market Intelligence</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       We deploy natural language processing systems that monitor thousands of data sources—industry publications, competitor announcements, regulatory filings, and social signals—to detect market shifts weeks before they become obvious. Our predictive models forecast demand patterns, competitive threats, and partnership opportunities, giving you the foresight to move first while competitors react.
                     </p>
                   </div>
 
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Automated Financial Modeling</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Automated Financial Modeling</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       Our AI-driven financial modeling platform generates dynamic forecasts that update automatically as business conditions change. Machine learning algorithms analyze historical performance, seasonal patterns, and external factors to produce rolling forecasts with confidence intervals. The system stress-tests scenarios, identifies financial risks, and recommends capital allocation strategies that optimize risk-adjusted returns.
                     </p>
                   </div>
 
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Customer Intelligence Platform</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Customer Intelligence Platform</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       We build unified customer intelligence systems that aggregate behavioral data, transaction history, and engagement patterns to predict churn risk, lifetime value, and next-best actions. Our recommendation engines personalize customer experiences at scale, while sentiment analysis models monitor satisfaction in real time. This intelligence drives targeted retention programs and identifies high-value expansion opportunities.
                     </p>
@@ -308,15 +308,15 @@ export default function AIPoweredAcceleration() {
           >
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 mb-6 sm:mb-8 md:mb-12">
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-2">6 Weeks</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">6 Weeks</div>
                 <p className="text-sm text-charcoal/50 uppercase tracking-wider font-medium">Time to Market Intelligence</p>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-2">40%</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">40%</div>
                 <p className="text-sm text-charcoal/50 uppercase tracking-wider font-medium">Forecast Accuracy Improvement</p>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-2">$2.4M</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">$2.4M</div>
                 <p className="text-sm text-charcoal/50 uppercase tracking-wider font-medium">First-Year Revenue Impact</p>
               </div>
             </div>

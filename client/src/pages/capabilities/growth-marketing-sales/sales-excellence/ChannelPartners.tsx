@@ -24,7 +24,7 @@ export default function ChannelPartners() {
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1] eb-garamond">
               Channel Partner Management
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light font-serif">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light ">
               Scaling through ecosystems. We build the infrastructure for partner success, from portals to programmatic incentives.
             </p>
           </div>
@@ -48,15 +48,15 @@ export default function ChannelPartners() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3 text-charcoal/80">
-                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>Headless commerce architecture</span>
                   </li>
                   <li className="flex items-start gap-3 text-charcoal/80">
-                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>Channel conflict resolution rules</span>
                   </li>
                   <li className="flex items-start gap-3 text-charcoal/80">
-                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>Unified customer view</span>
                   </li>
                 </ul>
@@ -69,15 +69,15 @@ export default function ChannelPartners() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3 text-charcoal/80">
-                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>Secure API gateways</span>
                   </li>
                   <li className="flex items-start gap-3 text-charcoal/80">
-                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>Multi-tier data governance</span>
                   </li>
                   <li className="flex items-start gap-3 text-charcoal/80">
-                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>Cross-company attribution</span>
                   </li>
                 </ul>

@@ -12,13 +12,13 @@ export function TelecomCustomerPortal() {
       <div className="bg-subtle border-b">
         <div className="container py-4">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <Link href="/" className="hover:text-blue-600">Home</Link>
+            <Link href="/" className="hover:text-primary">Home</Link>
             <span>/</span>
-            <Link href="/intelligent-process-optimization" className="hover:text-blue-600">Intelligent Process Optimization</Link>
+            <Link href="/intelligent-process-optimization" className="hover:text-primary">Intelligent Process Optimization</Link>
             <span>/</span>
-            <Link href="/solutions/app-development" className="hover:text-blue-600">App Development</Link>
+            <Link href="/solutions/app-development" className="hover:text-primary">App Development</Link>
             <span>/</span>
-            <Link href="/solutions/customer-portal" className="hover:text-blue-600">Customer Portal</Link>
+            <Link href="/solutions/customer-portal" className="hover:text-primary">Customer Portal</Link>
             <span>/</span>
             <span className="text-charcoal">Telecom Provider Launches Self-Service Portal for 2M Customers</span>
           </div>
@@ -28,7 +28,7 @@ export function TelecomCustomerPortal() {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
         <div className="container max-w-4xl">
-          <Link href="/solutions/customer-portal" className="inline-flex items-center text-blue-600 hover:text-blue-700 mb-8">
+          <Link href="/solutions/customer-portal" className="inline-flex items-center text-primary hover:text-blue-700 mb-8">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Customer Portal
           </Link>
@@ -84,15 +84,15 @@ export function TelecomCustomerPortal() {
           <h2 className="text-3xl font-bold mb-6">The Results</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center p-6 bg-blue-50 rounded-lg">
-              <div className="text-4xl font-bold text-blue-600 mb-2">58%</div>
+              <div className="text-4xl font-bold text-primary mb-2">58%</div>
               <div className="text-charcoal/80">Reduction in support calls</div>
             </div>
             <div className="text-center p-6 bg-blue-50 rounded-lg">
-              <div className="text-4xl font-bold text-blue-600 mb-2">$4.2M</div>
+              <div className="text-4xl font-bold text-primary mb-2">$4.2M</div>
               <div className="text-charcoal/80">Annual self-service revenue</div>
             </div>
             <div className="text-center p-6 bg-blue-50 rounded-lg">
-              <div className="text-4xl font-bold text-blue-600 mb-2">84%</div>
+              <div className="text-4xl font-bold text-primary mb-2">84%</div>
               <div className="text-charcoal/80">Customer portal adoption</div>
             </div>
           </div>

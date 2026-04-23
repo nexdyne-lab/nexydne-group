@@ -265,7 +265,7 @@ export default function SecurityCompliance() {
                 <div className="relative inline-block mb-6">
                   <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-2xl font-bold">{item.step}</div>
                 </div>
-                <h3 className="text-2xl font-serif font-bold mb-4">{item.title}</h3>
+                <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
                 <p className="text-white/70">{item.description}</p>
               </motion.div>
             ))}
@@ -294,7 +294,7 @@ export default function SecurityCompliance() {
               className="bg-base p-8 rounded-lg"
             >
               <span className="text-sm font-semibold text-secondary mb-2 block">Financial Services</span>
-              <h3 className="text-2xl font-serif font-bold mb-4">Automating PCI DSS Compliance for a Fintech Leader</h3>
+              <h3 className="text-2xl font-bold mb-4">Automating PCI DSS Compliance for a Fintech Leader</h3>
               <Link href="/cases/fintech-pci-dss" className="text-white/80 hover:text-white flex items-center font-semibold">
                 Read Case Study <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
@@ -308,7 +308,7 @@ export default function SecurityCompliance() {
               className="bg-base p-8 rounded-lg"
             >
               <span className="text-sm font-semibold text-secondary mb-2 block">Healthcare</span>
-              <h3 className="text-2xl font-serif font-bold mb-4">Implementing a Zero-Trust Framework for a Major Hospital Network</h3>
+              <h3 className="text-2xl font-bold mb-4">Implementing a Zero-Trust Framework for a Major Hospital Network</h3>
               <Link href="/cases/healthcare-zero-trust" className="text-white/80 hover:text-white flex items-center font-semibold">
                 Read Case Study <ArrowRight className="ml-2 w-4 h-4" />
               </Link>

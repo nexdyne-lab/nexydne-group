@@ -68,7 +68,7 @@ export default function AgenticAI() {
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-blue-600 text-sm font-medium tracking-widest uppercase mb-4">
+            <p className="text-primary text-sm font-medium tracking-widest uppercase mb-4">
               The Opportunity
             </p>
             <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-8">
@@ -101,7 +101,7 @@ export default function AgenticAI() {
       <section className="py-20 bg-slate-50">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-blue-600 text-sm font-medium tracking-widest uppercase mb-4">
+            <p className="text-primary text-sm font-medium tracking-widest uppercase mb-4">
               Our Approach
             </p>
             <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-12">
@@ -156,7 +156,7 @@ export default function AgenticAI() {
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-blue-600 text-sm font-medium tracking-widest uppercase mb-4">
+            <p className="text-primary text-sm font-medium tracking-widest uppercase mb-4">
               Capabilities
             </p>
             <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-12">

@@ -68,7 +68,7 @@ export default function ScalableEnterpriseTransformation() {
                 <span className="text-white/70">Enterprise Transformation</span>
               </nav>
               
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold tracking-tight text-white leading-[1.1] mb-3">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-3">
                 Scalable Enterprise Transformation
               </h1>
               
@@ -122,7 +122,7 @@ export default function ScalableEnterpriseTransformation() {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className={`py-8 ${i < 2 ? 'md:border-r border-border' : ''} ${i > 0 ? 'md:pl-12' : ''} ${i < 2 ? 'md:pr-12' : ''}`}
                 >
-                  <div className="text-4xl md:text-5xl font-serif font-normal text-charcoal mb-3">
+                  <div className="text-4xl md:text-5xl font-normal text-charcoal mb-3">
                     {item.stat}
                   </div>
                   <div className="text-sm text-muted-foreground leading-relaxed">
@@ -146,7 +146,7 @@ export default function ScalableEnterpriseTransformation() {
               transition={{ duration: 0.6 }}
               className="space-y-6"
             >
-              <p className="text-lg sm:text-xl md:text-2xl text-charcoal leading-relaxed font-serif">
+              <p className="text-lg sm:text-xl md:text-2xl text-charcoal leading-relaxed ">
                 Most mid-market companies are running on technology that was never designed for where they're headed. Systems built for 50 employees struggle under 200. Infrastructure that worked five years ago now costs more to maintain than to replace. We've spent the last decade helping companies break free from this trap.
               </p>
               
@@ -188,7 +188,7 @@ export default function ScalableEnterpriseTransformation() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-serif text-charcoal mb-4">
+            <h2 className="text-3xl md:text-4xl text-charcoal mb-4">
               What's your transformation ambition?
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -242,7 +242,7 @@ export default function ScalableEnterpriseTransformation() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-serif text-white mb-6">
+              <h2 className="text-3xl md:text-4xl text-white mb-6">
                 AI in Enterprise Technology
               </h2>
               
@@ -335,7 +335,7 @@ export default function ScalableEnterpriseTransformation() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-serif text-charcoal mb-4">
+            <h2 className="text-3xl md:text-4xl text-charcoal mb-4">
               How We Can Help
             </h2>
           </motion.div>
@@ -395,7 +395,7 @@ export default function ScalableEnterpriseTransformation() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-serif text-charcoal">
+            <h2 className="text-3xl md:text-4xl text-charcoal">
               A Closer Look
             </h2>
           </motion.div>
@@ -449,7 +449,7 @@ export default function ScalableEnterpriseTransformation() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-serif text-charcoal">
+            <h2 className="text-3xl md:text-4xl text-charcoal">
               Our Client Results in Enterprise Transformation
             </h2>
           </motion.div>
@@ -505,7 +505,7 @@ export default function ScalableEnterpriseTransformation() {
           {/* See More Button */}
           <div className="text-center mt-12">
             <Link href="/case-studies">
-              <Button variant="outline" className="border-red-600 text-destructive hover:bg-red-600 hover:text-white px-8 py-3">
+              <Button variant="outline" className="border-primary text-destructive hover:bg-primary hover:text-white px-8 py-3">
                 SEE MORE
               </Button>
             </Link>
@@ -523,7 +523,7 @@ export default function ScalableEnterpriseTransformation() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-serif text-charcoal">
+            <h2 className="text-3xl md:text-4xl text-charcoal">
               Our Enterprise Transformation Insights
             </h2>
           </motion.div>
@@ -566,7 +566,7 @@ export default function ScalableEnterpriseTransformation() {
                   <div className="group cursor-pointer h-full">
                     <div className="aspect-[4/3] bg-gradient-to-br from-base to-primary mb-4 overflow-hidden">
                       <div className="w-full h-full flex items-center justify-center">
-                        <span className="text-white/20 text-4xl font-serif">{i + 1}</span>
+                        <span className="text-white/20 text-4xl ">{i + 1}</span>
                       </div>
                     </div>
                     <span className="text-xs font-bold uppercase tracking-[0.15em] text-destructive mb-2 block">
@@ -587,7 +587,7 @@ export default function ScalableEnterpriseTransformation() {
           {/* See More Button */}
           <div className="text-center mt-12">
             <Link href="/insights">
-              <Button variant="outline" className="border-red-600 text-destructive hover:bg-red-600 hover:text-white px-8 py-3">
+              <Button variant="outline" className="border-primary text-destructive hover:bg-primary hover:text-white px-8 py-3">
                 SEE MORE
               </Button>
             </Link>
@@ -605,7 +605,7 @@ export default function ScalableEnterpriseTransformation() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-serif text-charcoal">
+            <h2 className="text-3xl md:text-4xl text-charcoal">
               Consulting Services
             </h2>
           </motion.div>
@@ -642,7 +642,7 @@ export default function ScalableEnterpriseTransformation() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-charcoal mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
                 Ready to talk?
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
@@ -662,7 +662,7 @@ export default function ScalableEnterpriseTransformation() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact">
-                  <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-base font-semibold">
+                  <Button className="bg-primary hover:bg-red-700 text-white px-8 py-4 text-base font-semibold">
                     Schedule a Consultation
                   </Button>
                 </Link>

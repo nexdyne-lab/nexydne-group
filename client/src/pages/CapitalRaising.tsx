@@ -18,7 +18,7 @@ export default function CapitalRaising() {
       <Navbar />
       
       {/* DZ10 Hero Section */}
-      <section className="relative min-h-[70vh] sm:min-h-[60vh] sm:min-h-[55vh] sm:min-h-[65vh] md:min-h-[55vh] sm:min-h-[65vh] md:min-h-[70vh] md:min-h-[60vh] sm:min-h-[55vh] sm:min-h-[65vh] md:min-h-[70vh] md:min-h-[75vh] md:min-h-[70vh] sm:min-h-[60vh] sm:min-h-[55vh] sm:min-h-[65vh] md:min-h-[70vh] md:min-h-[75vh] md:min-h-[85vh] flex items-center pt-16 sm:pt-16 sm:pt-20 overflow-hidden">
+      <section className="relative min-h-[440px] md:min-h-[560px] flex items-center pt-16 sm:pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&q=80" 
@@ -83,7 +83,7 @@ export default function CapitalRaising() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Our Philosophy
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight mb-5 sm:mb-6 md:mb-8">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-5 sm:mb-6 md:mb-8">
                 Transform your growth story <br />
                 <span className="text-primary">into investor confidence.</span>
               </h2>
@@ -121,7 +121,7 @@ export default function CapitalRaising() {
                 <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent opacity-60" />
                 <div className="absolute bottom-0 left-0 p-4 sm:p-6 md:p-8">
                   <div className="text-white">
-                    <div className="font-serif font-bold text-2xl mb-2">Investment Ready</div>
+                    <div className="font-bold text-2xl mb-2">Investment Ready</div>
                     <div className="text-white/80">Where preparation meets opportunity.</div>
                   </div>
                 </div>
@@ -144,7 +144,7 @@ export default function CapitalRaising() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Core Capabilities
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
               Comprehensive fundraising support
             </h2>
             <p className="text-xl text-white/60 max-w-2xl">
@@ -188,7 +188,7 @@ export default function CapitalRaising() {
                     {item.icon}
                   </div>
                   
-                  <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   
@@ -215,7 +215,7 @@ export default function CapitalRaising() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Our Approach
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
                 The NexDyne <span className="text-primary">Fundraising Process</span>
               </h2>
               <p className="text-lg text-charcoal/70 leading-relaxed mb-5 sm:mb-6 md:mb-8">
@@ -230,7 +230,7 @@ export default function CapitalRaising() {
                   { num: "04", title: "Execution", desc: "Support through investor meetings, negotiations, and due diligence." }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 items-start">
-                    <div className="text-2xl font-serif font-bold text-primary">{item.num}</div>
+                    <div className="text-2xl font-bold text-primary">{item.num}</div>
                     <div>
                       <h3 className="text-lg font-bold text-charcoal mb-1">{item.title}</h3>
                       <p className="text-charcoal/60 text-sm">{item.desc}</p>
@@ -261,7 +261,7 @@ export default function CapitalRaising() {
                   transition={{ duration: 0.4, delay: index * 0.05 }}
                   className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl"
                 >
-                  <div className="text-3xl font-serif font-bold text-primary mb-2">{item.metric}</div>
+                  <div className="text-3xl font-bold text-primary mb-2">{item.metric}</div>
                   <p className="text-sm text-charcoal/60 uppercase tracking-wider">{item.label}</p>
                 </motion.div>
               ))}
@@ -283,7 +283,7 @@ export default function CapitalRaising() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
                 Our Impact
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                 Successful capital raises
               </h2>
             </motion.div>
@@ -333,7 +333,7 @@ export default function CapitalRaising() {
                     <div className="absolute inset-0 bg-charcoal/20 group-hover:bg-transparent transition-colors duration-500" />
                   </div>
                   <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
-                  <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">
+                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">
                     {study.title}
                   </h3>
                   <div className="flex items-center text-white text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
@@ -359,7 +359,7 @@ export default function CapitalRaising() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Related Services
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-charcoal mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               Complementary capabilities
             </h2>
             <p className="text-xl text-charcoal/60 max-w-2xl mx-auto">
@@ -394,7 +394,7 @@ export default function CapitalRaising() {
               >
                 <Link href={service.link} className="group block h-full">
                   <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-base/5 hover:bg-base transition-all duration-500 hover:scale-[1.02] hover:shadow-xl">
-                    <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-white transition-colors">
+                    <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-white transition-colors">
                       {service.title}
                     </h3>
                     <p className="text-charcoal/60 leading-relaxed text-sm mb-6 group-hover:text-white/70 transition-colors">

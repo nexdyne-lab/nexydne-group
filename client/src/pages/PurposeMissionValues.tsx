@@ -28,7 +28,7 @@ export default function PurposeMissionValues() {
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-12 gap-12 items-start">
               <div className="lg:col-span-4">
-                <h2 className="text-3xl md:text-4xl font-serif font-normal text-charcoal sticky top-32">
+                <h2 className="text-3xl md:text-4xl font-normal text-charcoal sticky top-32">
                   Our Purpose
                 </h2>
               </div>
@@ -63,7 +63,7 @@ export default function PurposeMissionValues() {
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-12 gap-12 items-start">
               <div className="lg:col-span-4">
-                <h2 className="text-3xl md:text-4xl font-serif font-normal text-charcoal sticky top-32">
+                <h2 className="text-3xl md:text-4xl font-normal text-charcoal sticky top-32">
                   Our Mission
                 </h2>
               </div>
@@ -110,7 +110,7 @@ export default function PurposeMissionValues() {
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-12 gap-12 items-start mb-16">
               <div className="lg:col-span-4">
-                <h2 className="text-3xl md:text-4xl font-serif font-normal text-charcoal sticky top-32">
+                <h2 className="text-3xl md:text-4xl font-normal text-charcoal sticky top-32">
                   Our Values
                 </h2>
               </div>
@@ -227,7 +227,7 @@ export default function PurposeMissionValues() {
       <section className="py-12 sm:py-16 lg:py-20 bg-slate-900 text-white">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-normal mb-6">
+            <h2 className="text-3xl md:text-4xl font-normal mb-6">
               Ready to work with a team that shares your values?
             </h2>
             <p className="text-xl text-muted-foreground/50 mb-10 max-w-2xl mx-auto">

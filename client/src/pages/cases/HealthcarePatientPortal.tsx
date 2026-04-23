@@ -130,7 +130,7 @@ export default function HealthcarePatientPortal() {
             Let's discuss how NEXDYNE can accelerate your digital transformation initiatives.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-blue-600 hover:bg-slate-50">
+            <Button className="bg-white text-primary hover:bg-slate-50">
               Get in touch
             </Button>
             <Button variant="outline" className="border-white text-white hover:bg-white/10">

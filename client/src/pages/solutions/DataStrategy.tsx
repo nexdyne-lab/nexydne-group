@@ -327,7 +327,7 @@ export default function DataStrategy() {
                   <p className="text-charcoal/80 mb-4">
                     How a mid-market manufacturer mapped their data landscape and built a roadmap to monetize equipment telemetry data.
                   </p>
-                  <button className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
+                  <button className="text-blue-500 hover:text-primary font-semibold flex items-center gap-2">
                     <span>Read more</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
@@ -345,7 +345,7 @@ export default function DataStrategy() {
                   <p className="text-charcoal/80 mb-4">
                     Data strategy sprint identified high-ROI use cases and eliminated projects that wouldn't move the needle.
                   </p>
-                  <button className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
+                  <button className="text-blue-500 hover:text-primary font-semibold flex items-center gap-2">
                     <span>Read more</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
@@ -363,7 +363,7 @@ export default function DataStrategy() {
                   <p className="text-charcoal/80 mb-4">
                     Maturity assessment and phased roadmap transformed ad-hoc reporting into self-service analytics culture.
                   </p>
-                  <button className="text-blue-500 hover:text-blue-600 font-semibold flex items-center gap-2">
+                  <button className="text-blue-500 hover:text-primary font-semibold flex items-center gap-2">
                     <span>Read more</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>

@@ -69,11 +69,11 @@ export function HeadlessCommerceGuide() {
               <div className="sticky top-32">
                 <h4 className="font-bold text-charcoal mb-4">Table of Contents</h4>
                 <ul className="space-y-3 text-sm text-muted-foreground border-l border-slate-200 pl-4">
-                  <li className="hover:text-blue-600 cursor-pointer">The Monolith Problem</li>
-                  <li className="hover:text-blue-600 cursor-pointer">What is Headless?</li>
-                  <li className="hover:text-blue-600 cursor-pointer">Key Benefits</li>
-                  <li className="hover:text-blue-600 cursor-pointer">Migration Strategy</li>
-                  <li className="hover:text-blue-600 cursor-pointer">The Tech Stack</li>
+                  <li className="hover:text-primary cursor-pointer">The Monolith Problem</li>
+                  <li className="hover:text-primary cursor-pointer">What is Headless?</li>
+                  <li className="hover:text-primary cursor-pointer">Key Benefits</li>
+                  <li className="hover:text-primary cursor-pointer">Migration Strategy</li>
+                  <li className="hover:text-primary cursor-pointer">The Tech Stack</li>
                 </ul>
                 
                 <div className="mt-12">
@@ -110,7 +110,7 @@ export function HeadlessCommerceGuide() {
                 </p>
                 <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 my-8">
                   <h4 className="font-bold text-charcoal mb-4 flex items-center gap-2">
-                    <Layers className="w-5 h-5 text-blue-600" />
+                    <Layers className="w-5 h-5 text-primary" />
                     The Headless Architecture
                   </h4>
                   <div className="grid md:grid-cols-3 gap-4 text-center text-sm">
@@ -136,15 +136,15 @@ export function HeadlessCommerceGuide() {
                 </p>
                 <ul className="space-y-4 mb-8">
                   <li className="flex gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-blue-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0" />
                     <span><strong>Tech Stack Freedom:</strong> Build the frontend in React, Vue, or Svelte without worrying about backend compatibility.</span>
                   </li>
                   <li className="flex gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-blue-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0" />
                     <span><strong>Faster Performance:</strong> Use static site generation (SSG) and edge caching to deliver sub-second page loads.</span>
                   </li>
                   <li className="flex gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-blue-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0" />
                     <span><strong>Omnichannel Ready:</strong> One backend can serve data to a website, mobile app, POS, and voice assistant simultaneously.</span>
                   </li>
                 </ul>

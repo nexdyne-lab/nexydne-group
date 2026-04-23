@@ -83,15 +83,15 @@ export default function FinancialComplianceAI() {
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">60%</div>
+              <div className="text-5xl font-bold text-primary mb-2">60%</div>
               <div className="text-muted-foreground">Reduction in false positive alerts</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">40%</div>
+              <div className="text-5xl font-bold text-primary mb-2">40%</div>
               <div className="text-muted-foreground">Decrease in compliance costs</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">100%</div>
+              <div className="text-5xl font-bold text-primary mb-2">100%</div>
               <div className="text-muted-foreground">Coverage of employee communications</div>
             </div>
           </div>

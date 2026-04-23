@@ -298,7 +298,6 @@ export function InsightsCarousel() {
                             {/* Title */}
                             <h3 
                               className="text-charcoal text-sm sm:text-base font-medium leading-snug line-clamp-2"
-                              style={{ fontFamily: "'Source Serif 4', Georgia, serif" }}
                             >
                               {item.title}
                             </h3>

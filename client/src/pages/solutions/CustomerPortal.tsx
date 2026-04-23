@@ -14,11 +14,11 @@ export function CustomerPortal() {
       <div className="bg-subtle border-b">
         <div className="container py-4">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <Link href="/" className="hover:text-blue-600">Home</Link>
+            <Link href="/" className="hover:text-primary">Home</Link>
             <span>/</span>
-            <Link href="/intelligent-process-optimization" className="hover:text-blue-600">Intelligent Process Optimization</Link>
+            <Link href="/intelligent-process-optimization" className="hover:text-primary">Intelligent Process Optimization</Link>
             <span>/</span>
-            <Link href="/solutions/app-development" className="hover:text-blue-600">App Development</Link>
+            <Link href="/solutions/app-development" className="hover:text-primary">App Development</Link>
             <span>/</span>
             <span className="text-charcoal">Customer Portal</span>
           </div>
@@ -65,7 +65,7 @@ export function CustomerPortal() {
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 rounded-lg bg-blue-100 flex items-center justify-center">
-                      <Settings className="w-8 h-8 text-blue-600" />
+                      <Settings className="w-8 h-8 text-primary" />
                     </div>
                   </div>
                   <div>
@@ -79,7 +79,7 @@ export function CustomerPortal() {
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 rounded-lg bg-blue-100 flex items-center justify-center">
-                      <Database className="w-8 h-8 text-blue-600" />
+                      <Database className="w-8 h-8 text-primary" />
                     </div>
                   </div>
                   <div>
@@ -93,7 +93,7 @@ export function CustomerPortal() {
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 rounded-lg bg-blue-100 flex items-center justify-center">
-                      <Globe className="w-8 h-8 text-blue-600" />
+                      <Globe className="w-8 h-8 text-primary" />
                     </div>
                   </div>
                   <div>
@@ -226,19 +226,19 @@ export function CustomerPortal() {
               <div className="flex-1 grid grid-cols-3 gap-8">
                 <div className="text-center">
                   <div className="h-24 flex items-center justify-center mb-4">
-                    <div className="text-2xl font-bold text-blue-600">Salesforce</div>
+                    <div className="text-2xl font-bold text-primary">Salesforce</div>
                   </div>
                   <p className="font-semibold">Salesforce Experience Cloud</p>
                 </div>
                 <div className="text-center">
                   <div className="h-24 flex items-center justify-center mb-4">
-                    <div className="text-2xl font-bold text-blue-600">Liferay</div>
+                    <div className="text-2xl font-bold text-primary">Liferay</div>
                   </div>
                   <p className="font-semibold">Liferay DXP</p>
                 </div>
                 <div className="text-center">
                   <div className="h-24 flex items-center justify-center mb-4">
-                    <div className="text-2xl font-bold text-blue-600">OutSystems</div>
+                    <div className="text-2xl font-bold text-primary">OutSystems</div>
                   </div>
                   <p className="font-semibold">OutSystems</p>
                 </div>
@@ -306,7 +306,7 @@ export function CustomerPortal() {
                   <p className="text-charcoal/80 mb-4">
                     Salesforce Experience Cloud portal reduces support calls by 58% while driving $4.2M in annual self-service upgrades.
                   </p>
-                  <div className="flex items-center text-blue-600 font-semibold">
+                  <div className="flex items-center text-primary font-semibold">
                     Read case study
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </div>
@@ -328,7 +328,7 @@ export function CustomerPortal() {
                   <p className="text-charcoal/80 mb-4">
                     Liferay DXP portal delivers 24/7 account access, reducing call center volume by 42% and improving payment timeliness by 28%.
                   </p>
-                  <div className="flex items-center text-blue-600 font-semibold">
+                  <div className="flex items-center text-primary font-semibold">
                     Read case study
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </div>
@@ -350,7 +350,7 @@ export function CustomerPortal() {
                   <p className="text-charcoal/80 mb-4">
                     OutSystems portal enables instant policy access, claims submission, and document management—achieving 82% digital adoption in 6 months.
                   </p>
-                  <div className="flex items-center text-blue-600 font-semibold">
+                  <div className="flex items-center text-primary font-semibold">
                     Read case study
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </div>
@@ -367,15 +367,15 @@ export function CustomerPortal() {
           <p className="text-sm text-muted-foreground mb-4">App Development</p>
           <h2 className="text-3xl font-bold mb-8">Services</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Link href="/solutions/lowcode-development" className="group flex items-start gap-3 hover:text-blue-600">
+            <Link href="/solutions/lowcode-development" className="group flex items-start gap-3 hover:text-primary">
               <ArrowRight className="w-5 h-5 mt-1 flex-shrink-0" />
               <span className="font-semibold">Low-code Development</span>
             </Link>
-            <Link href="/solutions/custom-software" className="group flex items-start gap-3 hover:text-blue-600">
+            <Link href="/solutions/custom-software" className="group flex items-start gap-3 hover:text-primary">
               <ArrowRight className="w-5 h-5 mt-1 flex-shrink-0" />
               <span className="font-semibold">Custom Software</span>
             </Link>
-            <div className="group flex items-start gap-3 text-blue-600">
+            <div className="group flex items-start gap-3 text-primary">
               <ArrowRight className="w-5 h-5 mt-1 flex-shrink-0" />
               <span className="font-semibold">Customer Portal</span>
             </div>

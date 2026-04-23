@@ -44,7 +44,7 @@ export default function CaseStudyFoodBeverageDemandForecasting() {
               Case Study • Food & Beverage
             </span>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-white leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-4">
               Transforming Demand Planning with Machine Learning
             </h1>
             
@@ -66,7 +66,7 @@ export default function CaseStudyFoodBeverageDemandForecasting() {
                   transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                   className="text-center"
                 >
-                  <div className="text-3xl md:text-4xl font-serif font-bold text-primary mb-1">{metric.value}</div>
+                  <div className="text-3xl md:text-4xl font-bold text-primary mb-1">{metric.value}</div>
                   <div className="text-sm text-white/60">{metric.label}</div>
                 </motion.div>
               ))}
@@ -88,7 +88,7 @@ export default function CaseStudyFoodBeverageDemandForecasting() {
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Client Overview
               </span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8">
                 A Regional F&B Leader Facing Modern Challenges
               </h2>
               
@@ -131,7 +131,7 @@ export default function CaseStudyFoodBeverageDemandForecasting() {
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 The Challenge
               </span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8">
                 Legacy Planning Processes Couldn't Keep Pace
               </h2>
               
@@ -191,7 +191,7 @@ export default function CaseStudyFoodBeverageDemandForecasting() {
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Our Approach
               </span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8">
                 Building an Intelligent Demand Sensing Engine
               </h2>
               
@@ -242,7 +242,7 @@ export default function CaseStudyFoodBeverageDemandForecasting() {
                       <span className="text-xs font-bold uppercase tracking-wider text-primary">{phase.phase}</span>
                       <span className="text-sm text-charcoal/50">• {phase.duration}</span>
                     </div>
-                    <h3 className="text-xl font-serif font-bold text-charcoal mb-3">{phase.title}</h3>
+                    <h3 className="text-xl font-bold text-charcoal mb-3">{phase.title}</h3>
                     <p className="text-charcoal/70 leading-relaxed mb-4">{phase.description}</p>
                     <ul className="space-y-2">
                       {phase.outcomes.map((outcome, i) => (
@@ -273,7 +273,7 @@ export default function CaseStudyFoodBeverageDemandForecasting() {
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
                 The Results
               </span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-12">
                 Transformational Impact Across the Organization
               </h2>
               
@@ -308,7 +308,7 @@ export default function CaseStudyFoodBeverageDemandForecasting() {
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     className="bg-white/5 p-8 rounded-xl"
                   >
-                    <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">{result.metric}</div>
+                    <div className="text-4xl md:text-5xl font-bold text-primary mb-2">{result.metric}</div>
                     <div className="text-lg font-semibold text-white mb-3">{result.label}</div>
                     <p className="text-white/60 text-sm leading-relaxed">{result.description}</p>
                   </motion.div>
@@ -350,7 +350,7 @@ export default function CaseStudyFoodBeverageDemandForecasting() {
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Key Takeaways
               </span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8">
                 Lessons for Your Demand Planning Journey
               </h2>
               
@@ -410,7 +410,7 @@ export default function CaseStudyFoodBeverageDemandForecasting() {
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Related Case Studies
               </span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold">
+              <h2 className="text-3xl md:text-4xl font-bold">
                 Explore more success stories
               </h2>
             </motion.div>
@@ -448,7 +448,7 @@ export default function CaseStudyFoodBeverageDemandForecasting() {
                       <span className="text-xs font-bold uppercase tracking-wider text-primary mb-4 block">
                         {caseStudy.industry}
                       </span>
-                      <h3 className="text-lg font-serif font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
+                      <h3 className="text-lg font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
                         {caseStudy.title}
                       </h3>
                       <p className="text-charcoal/60 text-sm leading-relaxed mb-4">
@@ -476,7 +476,7 @@ export default function CaseStudyFoodBeverageDemandForecasting() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                 Ready to transform your demand planning?
               </h2>
               <p className="text-xl text-white/60 mb-10 max-w-2xl mx-auto">

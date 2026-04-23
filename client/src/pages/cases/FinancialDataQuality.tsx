@@ -13,15 +13,15 @@ export default function FinancialDataQuality() {
         <div className="container">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Link href="/">
-              <a className="hover:text-blue-600">Home</a>
+              <a className="hover:text-primary">Home</a>
             </Link>
             <span>/</span>
             <Link href="/solutions/data-solutions">
-              <a className="hover:text-blue-600">Data Solutions</a>
+              <a className="hover:text-primary">Data Solutions</a>
             </Link>
             <span>/</span>
             <Link href="/solutions/data-governance">
-              <a className="hover:text-blue-600">Data Governance</a>
+              <a className="hover:text-primary">Data Governance</a>
             </Link>
             <span>/</span>
             <span className="text-charcoal">Bank Reduces Data Quality Issues 78% with Automated Validation</span>

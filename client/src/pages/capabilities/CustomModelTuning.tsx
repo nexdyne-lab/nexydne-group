@@ -123,7 +123,7 @@ export default function CustomModelTuning() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group"
               >
-                <h3 className="text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
+                <h3 className="text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-charcoal/70 leading-relaxed">
@@ -177,7 +177,7 @@ export default function CustomModelTuning() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group"
               >
-                <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors">
+                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-white/60 leading-relaxed">
@@ -292,7 +292,7 @@ export default function CustomModelTuning() {
                 className="group"
               >
                 <Link href={item.link} className="block">
-                  <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors flex items-center gap-2">
+                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors flex items-center gap-2">
                     {item.title}
                     <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
                   </h3>
@@ -372,7 +372,7 @@ export default function CustomModelTuning() {
                 <div className="mb-6 p-4 bg-base/5 w-fit rounded-lg sm:rounded-xl text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
                   {item.icon}
                 </div>
-                <h4 className="text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">{item.title}</h4>
+                <h4 className="text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">{item.title}</h4>
                 <p className="text-charcoal/70 leading-relaxed">
                   {item.desc}
                 </p>
@@ -426,7 +426,7 @@ export default function CustomModelTuning() {
                       {i + 1}
                     </div>
                     <div>
-                      <h4 className="text-xl font-serif font-bold text-white mb-2 group-hover:text-primary transition-colors">{step.title}</h4>
+                      <h4 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">{step.title}</h4>
                       <p className="text-white/60">{step.desc}</p>
                     </div>
                   </div>
@@ -449,7 +449,7 @@ export default function CustomModelTuning() {
               <div className="absolute inset-0 bg-gradient-to-t from-base via-base/40 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-8 md:p-12">
                 <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl">
-                  <h4 className="text-white font-serif font-bold text-lg mb-2">Open Source Power</h4>
+                  <h4 className="text-white font-bold text-lg mb-2">Open Source Power</h4>
                   <p className="text-white/80 text-sm mb-4">
                     We build on top of the world's best open models, giving you state-of-the-art performance without the licensing fees.
                   </p>

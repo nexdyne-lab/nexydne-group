@@ -41,25 +41,25 @@ export default function PaymentTerminalOnboarding() {
         <div className="container">
           <div className="grid md:grid-cols-4 gap-8">
             <Card className="p-6 text-center">
-              <Clock className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <Clock className="w-12 h-12 text-primary mx-auto mb-4" />
               <div className="text-4xl font-bold text-charcoal mb-2">52%</div>
               <div className="text-muted-foreground">Faster Onboarding</div>
             </Card>
             
             <Card className="p-6 text-center">
-              <TrendingUp className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <TrendingUp className="w-12 h-12 text-primary mx-auto mb-4" />
               <div className="text-4xl font-bold text-charcoal mb-2">38%</div>
               <div className="text-muted-foreground">Support Ticket Reduction</div>
             </Card>
             
             <Card className="p-6 text-center">
-              <Award className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <Award className="w-12 h-12 text-primary mx-auto mb-4" />
               <div className="text-4xl font-bold text-charcoal mb-2">4.7/5</div>
               <div className="text-muted-foreground">Merchant Satisfaction</div>
             </Card>
             
             <Card className="p-6 text-center">
-              <Users className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <Users className="w-12 h-12 text-primary mx-auto mb-4" />
               <div className="text-4xl font-bold text-charcoal mb-2">89%</div>
               <div className="text-muted-foreground">First-Time Completion Rate</div>
             </Card>
@@ -206,28 +206,28 @@ export default function PaymentTerminalOnboarding() {
           
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-bold text-blue-600 mb-3">52% Reduction in Time-to-Activation</h3>
+              <h3 className="text-2xl font-bold text-primary mb-3">52% Reduction in Time-to-Activation</h3>
               <p className="text-lg text-muted-foreground">
                 Average time from terminal delivery to first transaction dropped from 14 days to 6.7 days. Merchants completed onboarding 2x faster, enabling them to start processing payments and generating revenue sooner. The company activated 3,200 additional merchants per quarter compared to the previous year.
               </p>
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold text-blue-600 mb-3">38% Decrease in Support Tickets</h3>
+              <h3 className="text-2xl font-bold text-primary mb-3">38% Decrease in Support Tickets</h3>
               <p className="text-lg text-muted-foreground">
                 Personalized, contextual guidance reduced support contacts during onboarding from 78% to 48% of merchants. Support team capacity freed up to handle complex technical issues and revenue-generating activities like upselling value-added services. Support cost per onboarded merchant decreased by $42.
               </p>
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold text-blue-600 mb-3">4.7/5 Merchant Satisfaction Score</h3>
+              <h3 className="text-2xl font-bold text-primary mb-3">4.7/5 Merchant Satisfaction Score</h3>
               <p className="text-lg text-muted-foreground">
                 Post-onboarding satisfaction scores increased from 2.9/5 to 4.7/5. Merchants praised the intuitive, personalized experience: "It felt like the system knew exactly what I needed at each step." Net Promoter Score (NPS) for onboarding improved from -12 to +58.
               </p>
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold text-blue-600 mb-3">89% First-Time Completion Rate</h3>
+              <h3 className="text-2xl font-bold text-primary mb-3">89% First-Time Completion Rate</h3>
               <p className="text-lg text-muted-foreground">
                 Onboarding abandonment dropped from 12% to 3%, recovering $2.4M in annual processing revenue from merchants who would have previously abandoned. Proactive interventions rescued 67% of at-risk onboarding sessions, preventing abandonment before it occurred.
               </p>

@@ -50,7 +50,7 @@ function RegionalPartnershipsFAQ() {
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
             Frequently Asked Questions
           </span>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold leading-tight">
             Questions about partnerships
           </h2>
         </motion.div>
@@ -140,7 +140,7 @@ export default function RegionalPartnerships() {
               Regional Business Intelligence Partnerships
             </span>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-white leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-4">
               Partnering with local chambers to build data-driven growth ecosystems
             </h1>
             
@@ -164,7 +164,7 @@ export default function RegionalPartnerships() {
               <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
                 What It Is
               </span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-8">
                 Infrastructure-building for local economies
               </h2>
               
@@ -216,7 +216,7 @@ export default function RegionalPartnerships() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Who We Partner With
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
               Organizations that anchor local economies
             </h2>
             <p className="text-lg text-charcoal/70 leading-relaxed">
@@ -291,7 +291,7 @@ export default function RegionalPartnerships() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/50 mb-6 block">
               Why It Matters to Chambers
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
               Moving beyond networking to strategic growth enablement
             </h2>
             
@@ -355,7 +355,7 @@ export default function RegionalPartnerships() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               What Partners Receive
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
               Everything needed to deliver intelligence to members
             </h2>
             <p className="text-lg text-charcoal/70 leading-relaxed">
@@ -411,7 +411,7 @@ export default function RegionalPartnerships() {
               <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Strategic Framing
               </span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-8">
                 This is infrastructure-building for local economies
               </h2>
               
@@ -425,7 +425,7 @@ export default function RegionalPartnerships() {
               </div>
 
               <div className="bg-white rounded-lg p-8">
-                <h3 className="text-xl font-serif font-bold mb-6">The ecosystem impact</h3>
+                <h3 className="text-xl font-bold mb-6">The ecosystem impact</h3>
                 <div className="grid gap-4">
                   {[
                     "Chambers positioned as strategic growth enablers",
@@ -478,7 +478,7 @@ export default function RegionalPartnerships() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/50 mb-6 block">
               Partnership Process
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white leading-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">
               How partnerships work
             </h2>
             <p className="text-lg text-white/70 leading-relaxed">
@@ -556,7 +556,7 @@ export default function RegionalPartnerships() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Related Initiatives
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold leading-tight">
               Explore other NexDyne initiatives
             </h2>
           </motion.div>
@@ -582,7 +582,7 @@ export default function RegionalPartnerships() {
                   <span className="text-xs font-semibold uppercase tracking-[0.15em] text-primary mb-3 block">
                     Mid-Market AI Access Program
                   </span>
-                  <h3 className="text-xl font-serif font-bold mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
                     Expanding Access to Enterprise-Grade AI for America's Mid-Market
                   </h3>
                   <p className="text-sm text-charcoal/60 mb-4">
@@ -616,7 +616,7 @@ export default function RegionalPartnerships() {
                   <span className="text-xs font-semibold uppercase tracking-[0.15em] text-primary mb-3 block">
                     NexDyne Intelligence Commons
                   </span>
-                  <h3 className="text-xl font-serif font-bold mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
                     Democratizing Business Intelligence for Growing Companies
                   </h3>
                   <p className="text-sm text-charcoal/60 mb-4">

@@ -27,7 +27,7 @@ export default function ConsumerGoods() {
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1] eb-garamond">
               The Sustainable Consumer
             </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-charcoal leading-relaxed max-w-3xl font-light font-serif">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-charcoal leading-relaxed max-w-3xl font-light ">
               Meeting the rising demand for sustainable products requires a fundamental rethink of product design, sourcing, and supply chain transparency.
             </p>
           </div>
@@ -64,11 +64,11 @@ export default function ConsumerGoods() {
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3 text-charcoal/80">
-                      <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
                       <span>Material substitution analysis</span>
                     </li>
                     <li className="flex items-start gap-3 text-charcoal/80">
-                      <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
                       <span>Lifecycle assessment (LCA) modeling</span>
                     </li>
                   </ul>
@@ -81,11 +81,11 @@ export default function ConsumerGoods() {
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3 text-charcoal/80">
-                      <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
                       <span>Supplier data integration and scoring</span>
                     </li>
                     <li className="flex items-start gap-3 text-charcoal/80">
-                      <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
                       <span>Blockchain-enabled traceability</span>
                     </li>
                   </ul>
@@ -98,11 +98,11 @@ export default function ConsumerGoods() {
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3 text-charcoal/80">
-                      <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
                       <span>Generative design for material efficiency</span>
                     </li>
                     <li className="flex items-start gap-3 text-charcoal/80">
-                      <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
                       <span>Design for disassembly and repair</span>
                     </li>
                   </ul>
@@ -124,7 +124,7 @@ export default function ConsumerGoods() {
                 
                 <div className="relative z-10">
                   <div className="text-blue-400 font-bold tracking-wider uppercase text-sm mb-4">Case Study</div>
-                  <h3 className="text-2xl md:text-3xl font-serif font-bold mb-6">
+                  <h3 className="text-2xl md:text-3xl font-bold mb-6">
                     Reinventing Packaging for a Global FMCG Giant
                   </h3>
                   <p className="text-muted-foreground/50 text-lg mb-5 sm:mb-6 md:mb-8 max-w-2xl">
@@ -154,7 +154,7 @@ export default function ConsumerGoods() {
           {/* Sidebar */}
           <div className="lg:col-span-4 space-y-8">
             <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100 sticky top-24">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Get in Touch</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Get in Touch</h3>
               <p className="text-muted-foreground mb-6 text-sm">
                 Ready to build a sustainable brand? Connect with our Consumer Goods experts.
               </p>

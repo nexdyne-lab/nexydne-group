@@ -142,7 +142,7 @@ export default function OurPeople() {
             <p className="text-primary-hover text-sm font-bold uppercase tracking-widest mb-4">
               Our Team
             </p>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-white leading-[1.1] mb-3">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-3">
               Our <span className="text-primary-hover">People</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-white/80 leading-relaxed max-w-2xl">
@@ -163,7 +163,7 @@ export default function OurPeople() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal leading-tight mb-6">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-tight mb-6">
                   Built on trust.<br />
                   Driven by results.
                 </h2>
@@ -204,7 +204,7 @@ export default function OurPeople() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-charcoal mb-6">
               Meet our team
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -274,7 +274,7 @@ export default function OurPeople() {
               <span className="text-xs font-bold uppercase tracking-widest text-primary-hover mb-4 block">
                 Join Us
               </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6">
                 Build your career with us
               </h2>
               <p className="text-xl text-white/70 mb-10 max-w-2xl mx-auto">

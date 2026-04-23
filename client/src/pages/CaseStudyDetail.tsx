@@ -40,7 +40,7 @@ export default function CaseStudyDetail() {
       <div className="min-h-screen bg-base text-white flex items-center justify-center">
         <Navigation />
         <div className="text-center">
-          <h1 className="text-4xl font-serif font-bold mb-4">Case Study Not Found</h1>
+          <h1 className="text-4xl font-bold mb-4">Case Study Not Found</h1>
           <Button onClick={() => setLocation("/cases")} variant="outline" className="text-white border-white/20 bg-transparent">
             Return to Case Studies
           </Button>
@@ -80,7 +80,7 @@ export default function CaseStudyDetail() {
                 {study.clientIndustry}
               </span>
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               {study.title}
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mb-5 sm:mb-6 md:mb-8">
@@ -132,7 +132,7 @@ export default function CaseStudyDetail() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Understanding the problem
             </h2>
           </motion.div>
@@ -151,7 +151,7 @@ export default function CaseStudyDetail() {
               <div className="p-2 rounded-lg bg-primary/10 border border-primary/20">
                 <Target className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
               </div>
-              <h3 className="text-2xl font-serif font-bold text-charcoal">The Challenge</h3>
+              <h3 className="text-2xl font-bold text-charcoal">The Challenge</h3>
             </div>
             <p className="text-lg text-charcoal/70 leading-relaxed">
               {study.challenge}
@@ -172,7 +172,7 @@ export default function CaseStudyDetail() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Our approach
             </h2>
           </motion.div>
@@ -191,7 +191,7 @@ export default function CaseStudyDetail() {
               <div className="p-2 rounded-lg bg-primary/10 border border-primary/20">
                 <Lightbulb className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
               </div>
-              <h3 className="text-2xl font-serif font-bold text-charcoal">Our Solution</h3>
+              <h3 className="text-2xl font-bold text-charcoal">Our Solution</h3>
             </div>
             <p className="text-lg text-charcoal/70 leading-relaxed mb-6 sm:mb-8 md:mb-12">
               {study.solution}
@@ -227,7 +227,7 @@ export default function CaseStudyDetail() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Results
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Key outcomes
             </h2>
           </motion.div>
@@ -246,7 +246,7 @@ export default function CaseStudyDetail() {
               <div className="p-2 rounded-lg bg-primary/10 border border-primary/20">
                 <BarChart3 className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
               </div>
-              <h3 className="text-2xl font-serif font-bold text-charcoal">Key Results</h3>
+              <h3 className="text-2xl font-bold text-charcoal">Key Results</h3>
             </div>
             <div className="grid sm:grid-cols-2 gap-4 sm:p-5 md:p-6">
               {study.results.map((result, index) => (

@@ -36,7 +36,7 @@ export default function StrategicRepositioningTechnology() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Case Study · Strategic Repositioning
             </span>
-            <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-4">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-4">
               Strategic Pivot in <span className="text-primary">Enterprise Software</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mb-8">
@@ -79,7 +79,7 @@ export default function StrategicRepositioningTechnology() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-base text-white/70">{stat.label}</div>
               </motion.div>
             ))}
@@ -113,7 +113,7 @@ export default function StrategicRepositioningTechnology() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Company Background</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Background</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client had built a successful business over 18 years providing on-premise enterprise resource planning software to mid-market manufacturing companies. With 220 employees and approximately 300 enterprise customers, the company generated $9M in annual recurring revenue primarily from maintenance contracts and professional services.
@@ -168,7 +168,7 @@ export default function StrategicRepositioningTechnology() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Navigating the Innovator's Dilemma
             </h2>
           </motion.div>
@@ -179,28 +179,28 @@ export default function StrategicRepositioningTechnology() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Legacy Technology Constraints</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Legacy Technology Constraints</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The existing product architecture was fundamentally incompatible with cloud deployment. The codebase was monolithic, tightly coupled, and built on aging technology stacks. Simply "lifting and shifting" to the cloud would not deliver the scalability, multi-tenancy, or modern user experience that market demanded.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Capability and Talent Gaps</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Capability and Talent Gaps</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The engineering team's expertise centered on traditional on-premise development. Building cloud-native SaaS products required different architectural patterns, development practices, and operational capabilities. The company needed to rapidly build new capabilities while retaining institutional knowledge of the business domain.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Business Model Transformation</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Business Model Transformation</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 Shifting from perpetual licenses and professional services to subscription-based SaaS required fundamental changes to pricing, sales processes, customer success functions, and financial planning. The transition would create a revenue valley before new recurring revenue scaled.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Competitive Pressure</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Competitive Pressure</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 Well-funded cloud-native competitors were aggressively targeting the company's customer base. The company needed to move quickly to retain existing customers and recapture market momentum, but rushing the transformation risked product quality and customer satisfaction.
               </p>
@@ -225,7 +225,7 @@ export default function StrategicRepositioningTechnology() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-3xl md:text-4xl font-serif text-primary leading-tight mb-8">
+            <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "We knew we had to transform, but the path forward was unclear. Our existing business was still profitable, but we could see the cliff approaching. We needed a partner who could help us navigate this transition without destroying what we had built."
             </blockquote>
             <div className="text-base text-white">
@@ -248,7 +248,7 @@ export default function StrategicRepositioningTechnology() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Solution
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Comprehensive Strategic Repositioning
             </h2>
           </motion.div>
@@ -270,7 +270,7 @@ export default function StrategicRepositioningTechnology() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-2">Strategic Assessment and Roadmap Development</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-2">Strategic Assessment and Roadmap Development</h3>
                 <p className="text-sm text-primary mb-4">Months 1-3</p>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
                   We conducted comprehensive strategic analysis to understand market dynamics, competitive positioning, customer needs, and internal capabilities.
@@ -300,7 +300,7 @@ export default function StrategicRepositioningTechnology() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-2">Cloud-Native Product Development</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-2">Cloud-Native Product Development</h3>
                 <p className="text-sm text-primary mb-4">Months 4-15</p>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
                   We led the design and development of a modern cloud-native platform, building on microservices architecture with contemporary technology stack.
@@ -330,7 +330,7 @@ export default function StrategicRepositioningTechnology() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-2">Business Model and Go-to-Market Transformation</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-2">Business Model and Go-to-Market Transformation</h3>
                 <p className="text-sm text-primary mb-4">Months 10-18</p>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
                   Parallel to product development, we redesigned the business model, sales processes, and customer success functions to support SaaS operations.
@@ -360,7 +360,7 @@ export default function StrategicRepositioningTechnology() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-2">Market Launch and Scale</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-2">Market Launch and Scale</h3>
                 <p className="text-sm text-primary mb-4">Months 16-24</p>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
                   With product-market fit validated, we executed an aggressive growth strategy focused on customer acquisition and market positioning.
@@ -397,7 +397,7 @@ export default function StrategicRepositioningTechnology() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Impact
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               From Decline to High-Growth Leadership
             </h2>
           </motion.div>
@@ -408,84 +408,84 @@ export default function StrategicRepositioningTechnology() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <TrendingUp className="w-6 h-6 text-primary" />
                 Revenue Growth
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">$28M ARR</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">$28M ARR</div>
                   <div className="text-sm text-charcoal/60">Up from $9M at transformation start</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">3x</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">3x</div>
                   <div className="text-sm text-charcoal/60">Revenue growth in 24 months</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">85%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">85%</div>
                   <div className="text-sm text-charcoal/60">Revenue from subscriptions</div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <Target className="w-6 h-6 text-primary" />
                 Customer Success
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">420</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">420</div>
                   <div className="text-sm text-charcoal/60">Total customers (up from 300)</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">92%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">92%</div>
                   <div className="text-sm text-charcoal/60">Net revenue retention</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">65%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">65%</div>
                   <div className="text-sm text-charcoal/60">Existing customers migrated</div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <Cloud className="w-6 h-6 text-primary" />
                 Market Position
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">#2</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">#2</div>
                   <div className="text-sm text-charcoal/60">Market position in cloud ERP</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">4.7/5</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">4.7/5</div>
                   <div className="text-sm text-charcoal/60">Customer satisfaction rating</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">3</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">3</div>
                   <div className="text-sm text-charcoal/60">Industry awards for innovation</div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <Rocket className="w-6 h-6 text-primary" />
                 Organizational Growth
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">320</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">320</div>
                   <div className="text-sm text-charcoal/60">Employees (up from 220)</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">88%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">88%</div>
                   <div className="text-sm text-charcoal/60">Employee engagement score</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">$15M</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">$15M</div>
                   <div className="text-sm text-charcoal/60">Growth capital raised</div>
                 </div>
               </div>
@@ -503,7 +503,7 @@ export default function StrategicRepositioningTechnology() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-3xl md:text-4xl font-serif text-primary leading-tight mb-8">
+            <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "This transformation saved our company. We went from watching our market share erode to becoming a growth leader in our space. The NexDyne team helped us navigate incredibly complex strategic, technical, and organizational challenges."
             </blockquote>
             <div className="text-base text-white">
@@ -517,32 +517,32 @@ export default function StrategicRepositioningTechnology() {
       {/* Key Success Factors */}
       <section className="py-16 bg-white text-charcoal">
         <div className="container px-4 md:px-12 max-w-4xl">
-          <h2 className="text-3xl font-serif font-bold text-charcoal mb-8">Key Success Factors</h2>
+          <h2 className="text-3xl font-bold text-charcoal mb-8">Key Success Factors</h2>
           
           <div className="grid md:grid-cols-2 gap-6">
             <div className="border-l-4 border-primary pl-6">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-3">Customer-Centric Development</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-3">Customer-Centric Development</h3>
               <p className="text-charcoal/70">
                 Involving design partner customers early in product development ensured the cloud platform addressed real needs and achieved product-market fit.
               </p>
             </div>
 
             <div className="border-l-4 border-primary pl-6">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-3">Balanced Transformation Approach</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-3">Balanced Transformation Approach</h3>
               <p className="text-charcoal/70">
                 Maintaining the existing business while building new capabilities required careful resource allocation and leadership focus.
               </p>
             </div>
 
             <div className="border-l-4 border-primary pl-6">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-3">Talent and Capability Building</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-3">Talent and Capability Building</h3>
               <p className="text-charcoal/70">
                 Strategic hiring of cloud-native talent combined with upskilling existing team members created the capabilities needed for success.
               </p>
             </div>
 
             <div className="border-l-4 border-primary pl-6">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-3">Decisive Leadership</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-3">Decisive Leadership</h3>
               <p className="text-charcoal/70">
                 Executive commitment to transformation, even when facing short-term challenges, enabled the organization to stay focused on long-term success.
               </p>
@@ -571,7 +571,7 @@ export default function StrategicRepositioningTechnology() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white">More success stories</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -607,7 +607,7 @@ export default function StrategicRepositioningTechnology() {
                     />
                   </div>
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>

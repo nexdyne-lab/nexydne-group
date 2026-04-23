@@ -52,7 +52,7 @@ export default function IntegrationPlaybook() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-4">
               The <span className="text-primary">100-Day</span> Integration Playbook for Successful M&A
             </h1>
             
@@ -81,7 +81,7 @@ export default function IntegrationPlaybook() {
               The 100-day period following acquisition close is the most critical phase of M&A execution. This is when you must stabilize operations, retain key talent, capture quick wins, and build momentum toward full integration. Companies that execute this period well set themselves up for long-term success. Those that stumble often never recover.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Pre-Close: Setting Up for Day One Success
             </h2>
             
@@ -94,7 +94,7 @@ export default function IntegrationPlaybook() {
             </p>
 
             <div className="bg-primary/10 border-l-4 border-primary p-6 my-8 rounded-r-xl">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Pre-Close Integration Priorities</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Pre-Close Integration Priorities</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong>IMO structure:</strong> Dedicated leader, workstream owners, governance model</span></li>
                 <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong>Day-one plan:</strong> Operational continuity, system access, communication cascade</span></li>
@@ -105,7 +105,7 @@ export default function IntegrationPlaybook() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Day One: Making a Strong First Impression
             </h2>
             
@@ -117,7 +117,7 @@ export default function IntegrationPlaybook() {
               Ensure all employees have system access and can perform their jobs. Announce the integration leadership team and governance structure. Hold town halls with both companies to address questions and concerns. Reach out to key customers and partners to reassure them about continuity and support. The goal is to minimize disruption and demonstrate that you're organized and prepared.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Days 1-30: Stabilization and Assessment
             </h2>
             
@@ -130,7 +130,7 @@ export default function IntegrationPlaybook() {
             </p>
 
             <div className="bg-base/5 border-l-4 border-base/30 p-6 my-8 rounded-r-xl">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">30-Day Milestone Checklist</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">30-Day Milestone Checklist</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Operational stability:</strong> No major service disruptions or customer issues</li>
                 <li><strong>Leadership alignment:</strong> Integration team functioning effectively</li>
@@ -142,7 +142,7 @@ export default function IntegrationPlaybook() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Days 31-60: Building Momentum with Quick Wins
             </h2>
             
@@ -154,7 +154,7 @@ export default function IntegrationPlaybook() {
               Quick wins might include eliminating duplicate vendor contracts to capture immediate cost savings, cross-selling products to each other's customer bases, combining purchasing power for better pricing, or implementing best practices from one company to the other. Focus on wins that are visible, measurable, and achievable within 60 days.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
               <Puzzle className="w-8 h-8 text-primary" />
               Days 61-100: Executing Major Integration Initiatives
             </h2>
@@ -168,7 +168,7 @@ export default function IntegrationPlaybook() {
             </p>
 
             <div className="bg-primary/10 border-l-4 border-primary p-6 my-8 rounded-r-xl">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">100-Day Success Metrics</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">100-Day Success Metrics</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Revenue retention:</strong> &gt;95% of target company revenue retained</li>
                 <li><strong>Talent retention:</strong> &gt;90% of identified critical employees retained</li>
@@ -179,7 +179,7 @@ export default function IntegrationPlaybook() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
               <MessageSquare className="w-8 h-8 text-primary" />
               Communication: The Integration Backbone
             </h2>
@@ -192,7 +192,7 @@ export default function IntegrationPlaybook() {
               Be honest about challenges and setbacks. Employees can handle bad news; they can't handle being kept in the dark. Share integration progress, celebrate wins, and acknowledge where things aren't going as planned. Create channels for employees to ask questions and provide feedback. The goal is to make everyone feel informed and included rather than anxious and excluded.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
               <Users className="w-8 h-8 text-primary" />
               Talent Retention: Protecting Your Investment
             </h2>
@@ -205,7 +205,7 @@ export default function IntegrationPlaybook() {
               Beyond financial retention, focus on cultural integration and role clarity. Employees leave when they feel undervalued, confused about their future, or excluded from the new organization. Involve target company leaders in integration planning and decision-making. Provide clear career paths and development opportunities. Recognize and reward contributions from both companies equally.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
               <TrendingUp className="w-8 h-8 text-primary" />
               Synergy Capture: From Theory to Reality
             </h2>
@@ -219,7 +219,7 @@ export default function IntegrationPlaybook() {
             </p>
 
             <div className="bg-base/5 border-l-4 border-base/30 p-6 my-8 rounded-r-xl">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Synergy Categories and Timing</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Synergy Categories and Timing</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Quick wins (0-3 months):</strong> Vendor consolidation, duplicate elimination</li>
                 <li><strong>Medium-term (3-9 months):</strong> Process harmonization, facility optimization</li>
@@ -227,7 +227,7 @@ export default function IntegrationPlaybook() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Cultural Integration: The Long Game
             </h2>
             
@@ -239,7 +239,7 @@ export default function IntegrationPlaybook() {
               Identify the best elements of each culture and explicitly decide which practices to preserve, which to change, and which to create new. Form cross-company teams to work on integration initiatives, building relationships and shared understanding. Create opportunities for employees from both companies to interact informally. Celebrate successes that demonstrate the combined entity's potential.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Common Integration Pitfalls to Avoid
             </h2>
             
@@ -251,7 +251,7 @@ export default function IntegrationPlaybook() {
               Avoid these pitfalls by maintaining discipline, following your playbook, and resisting the temptation to shortcut difficult work. Integration is hard, time-consuming, and often unglamorous. But it's where M&A value is won or lost.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Beyond 100 Days: Sustaining Momentum
             </h2>
             
@@ -263,7 +263,7 @@ export default function IntegrationPlaybook() {
               Conduct a formal 100-day retrospective to identify what worked well and what could be improved. Document lessons learned to inform future acquisitions. Recognize and reward the integration team for their efforts. Then refocus on the long-term work of building a truly integrated, high-performing organization.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               How NexDyne Supports Integration Success
             </h2>
             
@@ -298,7 +298,7 @@ export default function IntegrationPlaybook() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
               Related Insights
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white">Continue reading</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">Continue reading</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -325,7 +325,7 @@ export default function IntegrationPlaybook() {
               >
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.category}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>

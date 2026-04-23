@@ -36,7 +36,7 @@ export default function HealthcareFunding() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Case Study · Medical Devices
             </span>
-            <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-4">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-4">
               <span className="text-primary">$28M</span> strategic healthcare investment
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mb-8">
@@ -79,7 +79,7 @@ export default function HealthcareFunding() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-5xl font-serif font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-5xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-base text-white/70">{stat.label}</div>
               </motion.div>
             ))}
@@ -102,7 +102,7 @@ export default function HealthcareFunding() {
       <section className="py-16 bg-white text-charcoal">
         <div className="container px-4 md:px-12 max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Company Overview</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client is a medical device company specializing in minimally invasive surgical instruments. With $15M in annual revenue and FDA clearance for their flagship product line, they had established strong clinical evidence and a growing customer base among ambulatory surgery centers.
@@ -125,7 +125,7 @@ export default function HealthcareFunding() {
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">The Challenge</span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">Finding the right strategic partner</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">Finding the right strategic partner</h2>
           </motion.div>
         </div>
       </section>
@@ -134,15 +134,15 @@ export default function HealthcareFunding() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Capital alone wasn't enough</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Capital alone wasn't enough</h3>
               <p className="text-charcoal/70 leading-relaxed">The company had received interest from several financial investors, but the founders recognized that entering the hospital market required more than capital. They needed a partner with deep healthcare relationships and operational expertise in medical device commercialization.</p>
             </div>
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Complex regulatory and reimbursement landscape</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Complex regulatory and reimbursement landscape</h3>
               <p className="text-charcoal/70 leading-relaxed">Hospital adoption required navigating complex value analysis committees, GPO contracts, and reimbursement pathways. The company needed a partner who understood these dynamics and could help accelerate market access.</p>
             </div>
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Balancing growth with founder control</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Balancing growth with founder control</h3>
               <p className="text-charcoal/70 leading-relaxed">The founders wanted to maintain operational control while bringing on a strategic partner. They needed to find an investor aligned with their long-term vision who would add value without micromanaging.</p>
             </div>
           </div>
@@ -153,7 +153,7 @@ export default function HealthcareFunding() {
       <section className="py-24 md:py-32 bg-base">
         <div className="container px-4 md:px-12 max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <blockquote className="text-3xl md:text-4xl font-serif text-primary leading-tight mb-8">
+            <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "We knew we needed a partner who understood healthcare, not just a check. The right investor would open doors that would take us years to open on our own."
             </blockquote>
             <div className="text-base text-white">
@@ -169,7 +169,7 @@ export default function HealthcareFunding() {
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">The Solution</span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">Strategic investor identification and partnership structuring</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">Strategic investor identification and partnership structuring</h2>
           </motion.div>
         </div>
       </section>
@@ -181,7 +181,7 @@ export default function HealthcareFunding() {
             <div className="flex gap-8">
               <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">1</div></div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3"><Target className="w-6 h-6 text-primary" />Strategic investor mapping</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Target className="w-6 h-6 text-primary" />Strategic investor mapping</h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">We identified healthcare-focused investors with relevant portfolio companies, hospital system relationships, and track records of supporting medical device commercialization.</p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Mapped 25 strategic investors with healthcare focus</span></li>
@@ -193,7 +193,7 @@ export default function HealthcareFunding() {
             <div className="flex gap-8">
               <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">2</div></div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3"><FileText className="w-6 h-6 text-primary" />Clinical and commercial positioning</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><FileText className="w-6 h-6 text-primary" />Clinical and commercial positioning</h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">We developed materials that highlighted clinical evidence, market opportunity, and the strategic rationale for partnership.</p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Clinical evidence summary and KOL references</span></li>
@@ -205,7 +205,7 @@ export default function HealthcareFunding() {
             <div className="flex gap-8">
               <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">3</div></div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3"><Heart className="w-6 h-6 text-primary" />Partnership structuring</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Heart className="w-6 h-6 text-primary" />Partnership structuring</h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">We structured the investment to include commercial partnership elements that would accelerate market access.</p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Equity investment with board representation</span></li>
@@ -223,7 +223,7 @@ export default function HealthcareFunding() {
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">The Impact</span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">Results & Impact</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">Results & Impact</h2>
           </motion.div>
         </div>
       </section>
@@ -232,22 +232,22 @@ export default function HealthcareFunding() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3"><DollarSign className="w-6 h-6 text-primary" />Strategic investment secured</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><DollarSign className="w-6 h-6 text-primary" />Strategic investment secured</h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">The company secured $28M from a healthcare-focused growth equity fund with deep hospital system relationships and medical device expertise.</p>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-serif font-bold text-charcoal mb-2">$28M</div><div className="text-sm text-charcoal/60">Strategic investment secured</div></div>
-                <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-serif font-bold text-charcoal mb-2">10 weeks</div><div className="text-sm text-charcoal/60">Time from launch to close</div></div>
+                <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$28M</div><div className="text-sm text-charcoal/60">Strategic investment secured</div></div>
+                <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">10 weeks</div><div className="text-sm text-charcoal/60">Time from launch to close</div></div>
               </div>
             </div>
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3"><Heart className="w-6 h-6 text-primary" />Accelerated hospital market entry</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Heart className="w-6 h-6 text-primary" />Accelerated hospital market entry</h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">Within 18 months, the company had secured contracts with four major hospital systems through investor introductions, generating 2.5x revenue growth.</p>
-              <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-serif font-bold text-charcoal mb-2">4</div><div className="text-sm text-charcoal/60">Hospital system partnerships secured</div></div>
+              <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">4</div><div className="text-sm text-charcoal/60">Hospital system partnerships secured</div></div>
             </div>
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3"><TrendingUp className="w-6 h-6 text-primary" />Operational support accelerates growth</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><TrendingUp className="w-6 h-6 text-primary" />Operational support accelerates growth</h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">The investor's operational team provided support on regulatory strategy, reimbursement, and sales force development that would have taken years to build internally.</p>
-              <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-serif font-bold text-charcoal mb-2">2.5x</div><div className="text-sm text-charcoal/60">Revenue growth in 18 months</div></div>
+              <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">2.5x</div><div className="text-sm text-charcoal/60">Revenue growth in 18 months</div></div>
             </div>
           </div>
         </div>
@@ -257,7 +257,7 @@ export default function HealthcareFunding() {
       <section className="py-24 md:py-32 bg-base">
         <div className="container px-4 md:px-12 max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <blockquote className="text-3xl md:text-4xl font-serif text-primary leading-tight mb-8">
+            <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "NexDyne helped us find exactly the right partner. The strategic value has far exceeded the capital—we've accelerated our market entry by at least two years through the relationships and expertise our investor brought to the table."
             </blockquote>
             <div className="text-base text-white"><div className="font-semibold">— Dr. Robert Kim</div><div className="text-white/60">CEO & Co-founder, Client Company</div></div>
@@ -277,7 +277,7 @@ export default function HealthcareFunding() {
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-16">
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">Related Case Studies</span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white">More success stories</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">More success stories</h2>
           </motion.div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
             {[
@@ -287,7 +287,7 @@ export default function HealthcareFunding() {
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
                   <p className="text-white/60 mt-2">{item.description}</p>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">Read case study <ArrowRight className="w-3 h-3" /></span>
                 </Link>

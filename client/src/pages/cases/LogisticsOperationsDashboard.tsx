@@ -100,20 +100,20 @@ export default function LogisticsOperationsDashboard() {
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">40%</div>
+              <div className="text-5xl font-bold text-primary mb-2">40%</div>
               <div className="text-muted-foreground">Reduction in delivery delays</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">92%</div>
+              <div className="text-5xl font-bold text-primary mb-2">92%</div>
               <div className="text-muted-foreground">On-time delivery rate achieved</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">$1.8M</div>
+              <div className="text-5xl font-bold text-primary mb-2">$1.8M</div>
               <div className="text-muted-foreground">Annual savings from reduced delays</div>
             </div>
           </div>
 
-          <div className="bg-red-50 border-l-4 border-red-600 p-6 mb-12">
+          <div className="bg-red-50 border-l-4 border-primary p-6 mb-12">
             <p className="text-lg text-charcoal/80 italic mb-4">
               "Before the dashboard, we discovered delays when customers called to complain—too late to fix the problem. Now we see at-risk shipments 2-3 hours in advance and intervene before they miss delivery windows. On-time delivery improved from 78% to 92%. Customer satisfaction scores increased 25%. The dashboard paid for itself in 4 months through reduced expedited shipping costs and penalty fees."
             </p>

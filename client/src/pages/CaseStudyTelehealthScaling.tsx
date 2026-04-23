@@ -36,7 +36,7 @@ export default function CaseStudyTelehealthScaling() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Case Study · Healthcare
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               Scaling telehealth <span className="text-primary">5x</span> while maintaining quality
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mb-5 sm:mb-6 md:mb-8">
@@ -78,7 +78,7 @@ export default function CaseStudyTelehealthScaling() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-6xl font-serif font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-6xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-lg text-white">{stat.label}</div>
                 <div className="text-sm text-white/60">{stat.sublabel}</div>
               </motion.div>
@@ -116,7 +116,7 @@ export default function CaseStudyTelehealthScaling() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Opportunity
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Meeting explosive demand without sacrificing quality or burning out staff
             </h2>
           </motion.div>
@@ -151,7 +151,7 @@ export default function CaseStudyTelehealthScaling() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
               "Our providers became healthcare professionals to help patients, not to fight with scheduling systems and insurance forms. We were losing the battle against administrative complexity."
             </blockquote>
             <div className="text-base text-white">
@@ -174,7 +174,7 @@ export default function CaseStudyTelehealthScaling() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Intelligent automation that handles complexity while preserving the human touch
             </h2>
           </motion.div>
@@ -188,22 +188,22 @@ export default function CaseStudyTelehealthScaling() {
               We partnered with the telehealth provider to design and implement an intelligent operations platform that automated administrative workflows while maintaining clinical quality and patient satisfaction. The $78,000 investment focused on creating seamless integration with existing systems and ensuring compliance with healthcare regulations.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Intelligent scheduling and capacity management</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Intelligent scheduling and capacity management</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               The platform implemented AI-powered scheduling that optimized provider capacity while respecting patient preferences and clinical requirements. Machine learning algorithms predicted no-show probability and automatically overbooked appropriately to maximize utilization. The system handled rescheduling requests automatically, finding alternative slots that met patient constraints without provider intervention. Patients received automated reminders via their preferred communication channel, with the system adapting reminder timing based on individual response patterns. Real-time capacity monitoring identified bottlenecks and suggested schedule adjustments to reduce wait times.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Automated insurance verification and prior authorization</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Automated insurance verification and prior authorization</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               The platform integrated with insurance payer systems to verify coverage and benefits in real-time during scheduling. For services requiring prior authorization, the system automatically submitted requests with supporting clinical documentation, tracked approval status, and escalated delays to staff attention. Patients received upfront cost estimates based on their specific insurance coverage, reducing billing surprises and improving collections. The automation reduced insurance-related delays from an average of 5.2 days to 8 hours, significantly improving patient access.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Clinical documentation assistance</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Clinical documentation assistance</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Natural language processing technology transcribed provider-patient conversations in real-time, generating structured clinical notes that providers could review and approve. The system extracted relevant information including symptoms, diagnoses, treatment plans, and follow-up requirements, populating EHR templates automatically. Providers spent 5-7 minutes reviewing and finalizing notes rather than 25-30 minutes creating them from scratch. The platform learned from provider edits, continuously improving note quality and reducing review time.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Care coordination and follow-up automation</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Care coordination and follow-up automation</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
               The system automated routine care coordination tasks including prescription refill requests, lab order follow-up, and specialist referrals. Patients received automated check-ins between visits based on their care plan, with responses analyzed for concerning patterns that triggered provider review. The platform identified patients overdue for follow-up appointments and automatically reached out with scheduling options. Care team members received prioritized task lists highlighting patients requiring attention, enabling proactive rather than reactive care management.
             </p>
@@ -220,7 +220,7 @@ export default function CaseStudyTelehealthScaling() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
               "The platform handles all the administrative friction that was preventing us from scaling. Our providers now spend 80% of their time on patient care instead of 40%."
             </blockquote>
             <div className="text-base text-white">
@@ -243,7 +243,7 @@ export default function CaseStudyTelehealthScaling() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Achieving sustainable growth while improving patient and provider experience
             </h2>
           </motion.div>
@@ -257,22 +257,22 @@ export default function CaseStudyTelehealthScaling() {
               Within 20 months of deployment, the operations automation platform enabled the organization to scale patient volume 5x while maintaining clinical quality and improving both patient and provider satisfaction.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Operational scalability and efficiency</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Operational scalability and efficiency</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Active patient population grew from 45,000 to 225,000 while staff increased from 110 to 220—a 5x volume increase supported by 2x headcount growth. Provider productivity increased by 140%, with each clinician handling an average of 28 patient encounters daily versus 12 previously. Administrative time per visit decreased by 78%, from 42 minutes to 9 minutes. The organization eliminated the need for 85 administrative positions that would have been required under the previous operating model, generating annual savings of $4.8 million.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Patient access and satisfaction</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Patient access and satisfaction</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Average wait time for appointments decreased from 12 days to 2.5 days despite 5x volume growth. No-show rates dropped by 62% through intelligent reminder systems and easier rescheduling. Patient satisfaction scores increased by 31 points, with scheduling convenience and provider availability cited as primary improvements. The organization's Net Promoter Score improved from 48 to 76, placing it in the top decile for telehealth providers. Patient retention rates increased by 24 percentage points, driven by improved access and care coordination.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Provider satisfaction and retention</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Provider satisfaction and retention</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Provider satisfaction scores improved by 38 points, with administrative burden reduction cited as the primary driver. Clinician turnover decreased from 28% annually to 11%, significantly below industry averages. Providers reported spending 80% of their time on direct patient care versus 40% previously, improving job satisfaction and clinical outcomes. The organization became an employer of choice in the telehealth market, with provider applications increasing 3x and enabling selective hiring of top talent.
             </p>
 
-            <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Financial performance and strategic positioning</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Financial performance and strategic positioning</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
               The $78,000 investment generated annual benefits of $5.3 million through avoided hiring costs ($4.8 million) and improved collections ($500,000), representing a 290% ROI over 18 months. More strategically, the platform enabled the organization to achieve profitable unit economics at scale, with cost per visit decreasing by 58% despite wage increases. The organization secured $25 million in Series B funding, with investors specifically citing operational excellence and scalability as key factors. Management projects the platform will support growth to 500,000 active patients without proportional increases in administrative staff, positioning the organization as a category leader in accessible, affordable telehealth services.
             </p>
@@ -293,7 +293,7 @@ export default function CaseStudyTelehealthScaling() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Get In Touch
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white">Our experts</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Our experts</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl">
@@ -322,7 +322,7 @@ export default function CaseStudyTelehealthScaling() {
                 <div className="flex items-start gap-4">
                   <img className="w-20 h-20 rounded-full object-cover flex-shrink-0" src={expert.image} alt={expert.name} />
                   <div>
-                    <h3 className="text-2xl font-serif font-bold mb-2">{expert.name}</h3>
+                    <h3 className="text-2xl font-bold mb-2">{expert.name}</h3>
                     <p className="text-sm text-primary mb-4">{expert.location}</p>
                     <p className="text-base leading-relaxed text-charcoal/70">
                       {expert.description}
@@ -355,7 +355,7 @@ export default function CaseStudyTelehealthScaling() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white">More success stories</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">More success stories</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -405,7 +405,7 @@ export default function CaseStudyTelehealthScaling() {
                     </div>
                   </div>
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">

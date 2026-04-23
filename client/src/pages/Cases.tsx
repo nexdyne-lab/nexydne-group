@@ -161,7 +161,7 @@ export default function Cases() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               Case <span className="text-primary">Studies</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mx-auto">
@@ -226,7 +226,7 @@ export default function Cases() {
                     {/* Content */}
                     <div className="space-y-3">
                       <span className="text-xs font-bold text-primary uppercase tracking-wider">{study.industry}</span>
-                      <h3 className="text-lg font-serif font-bold text-charcoal group-hover:text-primary transition-colors leading-tight">
+                      <h3 className="text-lg font-bold text-charcoal group-hover:text-primary transition-colors leading-tight">
                         {study.title}
                       </h3>
                       <p className="text-sm text-charcoal/60 italic">{study.date}</p>
@@ -258,7 +258,7 @@ export default function Cases() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               NexDyne Insights
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white">Latest thinking</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Latest thinking</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:p-6 md:p-8 mb-6 sm:mb-8 md:mb-12">
@@ -303,7 +303,7 @@ export default function Cases() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-white mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
                     {post.title}
                   </h3>
                   <p className="text-sm text-white/50 mb-3">{post.date} · {post.readTime}</p>

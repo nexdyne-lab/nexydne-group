@@ -67,7 +67,7 @@ export default function Accessibility() {
                 
                 {/* Commitment */}
                 <section id="commitment" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Our Commitment to Accessibility
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">
@@ -83,7 +83,7 @@ export default function Accessibility() {
 
                 {/* Standards */}
                 <section id="standards" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Accessibility Standards
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">
@@ -110,7 +110,7 @@ export default function Accessibility() {
 
                 {/* Features */}
                 <section id="features" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Accessibility Features
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">
@@ -153,7 +153,7 @@ export default function Accessibility() {
 
                 {/* Assistive Technologies */}
                 <section id="assistive" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Assistive Technologies
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">
@@ -173,7 +173,7 @@ export default function Accessibility() {
 
                 {/* Ongoing Efforts */}
                 <section id="ongoing" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Ongoing Efforts
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">
@@ -193,7 +193,7 @@ export default function Accessibility() {
 
                 {/* Feedback */}
                 <section id="feedback" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Feedback and Assistance
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">
@@ -217,7 +217,7 @@ export default function Accessibility() {
 
                 {/* Contact */}
                 <section id="contact" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Contact Us
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">

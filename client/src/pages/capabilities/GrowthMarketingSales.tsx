@@ -434,7 +434,7 @@ export default function GrowthMarketingSales() {
               {/* Results & Approach Two-Column */}
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="border-l-2 border-primary pl-6">
-                  <h3 className="text-lg font-serif font-bold text-charcoal mb-3">Results We've Delivered</h3>
+                  <h3 className="text-lg font-bold text-charcoal mb-3">Results We've Delivered</h3>
                   <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
                     From retail to professional services, we've helped companies across industries implement AI-powered growth strategies that deliver measurable commercial results.
                   </p>
@@ -443,7 +443,7 @@ export default function GrowthMarketingSales() {
                   </Link>
                 </div>
                 <div className="border-l-2 border-primary pl-6">
-                  <h3 className="text-lg font-serif font-bold text-charcoal mb-3">Our Approach</h3>
+                  <h3 className="text-lg font-bold text-charcoal mb-3">Our Approach</h3>
                   <p className="text-charcoal/70 text-sm leading-relaxed mb-4">
                     We help marketing and sales teams become AI-ready by connecting customer data, building the right infrastructure, and implementing use cases that deliver quick wins while building toward long-term transformation.
                   </p>
@@ -527,7 +527,7 @@ export default function GrowthMarketingSales() {
                   </div>
                 </div>
                 <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-3 group-hover:text-primary transition-colors leading-tight">
+                <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors leading-tight">
                   {study.title}
                 </h3>
                 <p className="text-charcoal/60 text-sm leading-relaxed mb-4">
@@ -609,7 +609,7 @@ export default function GrowthMarketingSales() {
                   <div className="text-destructive text-xs font-bold uppercase tracking-wider mb-2">
                     {insight.category}
                   </div>
-                  <h3 className="text-lg font-serif font-bold text-charcoal mb-2 leading-tight group-hover:underline decoration-1 underline-offset-2">
+                  <h3 className="text-lg font-bold text-charcoal mb-2 leading-tight group-hover:underline decoration-1 underline-offset-2">
                     {insight.title}
                   </h3>
                   <p className="text-charcoal/60 text-sm leading-relaxed mb-4">
@@ -695,7 +695,7 @@ export default function GrowthMarketingSales() {
                 <Link href={capability.link} className="group block h-full">
                   <div className="h-full p-8 rounded-lg bg-white border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
                     <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-2">{capability.title}</div>
-                    <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
+                    <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
                       {capability.subtitle}
                     </h3>
                     <p className="text-charcoal/60 leading-relaxed mb-6">

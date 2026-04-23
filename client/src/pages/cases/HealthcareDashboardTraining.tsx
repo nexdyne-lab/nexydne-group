@@ -88,7 +88,7 @@ export default function HealthcareDashboardTraining() {
               <div className="text-4xl font-bold text-blue-900 mb-2">200</div>
               <div className="text-charcoal/80">Clinicians trained across 12 hospitals in 3 months</div>
             </div>
-            <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
+            <div className="bg-red-50 p-6 rounded-lg border-l-4 border-primary">
               <div className="text-4xl font-bold text-red-900 mb-2">45%</div>
               <div className="text-charcoal/80">Improvement in patient outcome visibility</div>
             </div>

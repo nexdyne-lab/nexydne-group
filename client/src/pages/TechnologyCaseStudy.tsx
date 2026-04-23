@@ -42,14 +42,14 @@ export default function TechnologyCaseStudy() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                <Zap className="w-8 h-8 text-blue-600" />
+                <Zap className="w-8 h-8 text-primary" />
               </div>
               <div className="text-4xl font-bold text-charcoal mb-2">82%</div>
               <div className="text-muted-foreground">Faster deployments</div>
             </div>
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                <Server className="w-8 h-8 text-blue-600" />
+                <Server className="w-8 h-8 text-primary" />
               </div>
               <div className="text-4xl font-bold text-charcoal mb-2">99.95%</div>
               <div className="text-muted-foreground">System uptime</div>
@@ -176,7 +176,7 @@ export default function TechnologyCaseStudy() {
             <h2 className="text-3xl font-bold text-charcoal mb-6">The Results</h2>
             <div className="grid md:grid-cols-2 gap-4 mb-6 sm:mb-8 md:mb-12">
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-slate-200">
-                <div className="text-5xl font-bold text-blue-600 mb-2">82%</div>
+                <div className="text-5xl font-bold text-primary mb-2">82%</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">Faster deployments</div>
                 <p className="text-muted-foreground">
                   Deployment cycle reduced from 14 days to 2.5 days, with simple changes deployed same-day through automated pipelines.
@@ -184,7 +184,7 @@ export default function TechnologyCaseStudy() {
               </div>
               
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-slate-200">
-                <div className="text-5xl font-bold text-blue-600 mb-2">99.95%</div>
+                <div className="text-5xl font-bold text-primary mb-2">99.95%</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">System uptime</div>
                 <p className="text-muted-foreground">
                   Monthly uptime improved from 99.5% to 99.95%, exceeding enterprise SLA requirements and eliminating customer penalties.
@@ -212,19 +212,19 @@ export default function TechnologyCaseStudy() {
               <h3 className="text-2xl font-bold text-charcoal mb-4">Business Impact</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>Engineering time on infrastructure reduced from 35% to 8%, freeing capacity for feature development</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>Mean time to incident detection reduced from 23 minutes to under 2 minutes</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>All 45 engineers can now deploy safely, eliminating the 2-person bottleneck</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>Feature velocity increased 3x, accelerating product roadmap delivery by 6 months</span>
                 </li>
               </ul>
@@ -238,7 +238,7 @@ export default function TechnologyCaseStudy() {
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="bg-slate-50 p-6 sm:p-8 md:p-12 rounded-xl sm:rounded-2xl border border-slate-200">
-              <svg className="w-12 h-12 text-blue-600 mb-6" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-12 h-12 text-primary mb-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
               <blockquote className="text-base sm:text-lg md:text-xl lg:text-2xl text-charcoal/80 leading-relaxed mb-6">

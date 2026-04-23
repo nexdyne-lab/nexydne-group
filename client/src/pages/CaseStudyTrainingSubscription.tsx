@@ -18,7 +18,7 @@ export default function CaseStudyTrainingSubscription() {
       <Navigation />
       
       {/* DZ10 Hero Section */}
-      <section className="relative min-h-[55vh] sm:min-h-[65vh] md:min-h-[55vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center pt-16 sm:pt-16 sm:pt-20 overflow-hidden">
+      <section className="relative min-h-[55vh] sm:min-h-[65vh] md:min-h-[55vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center pt-16 sm:pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=2000&q=80" 
@@ -47,7 +47,7 @@ export default function CaseStudyTrainingSubscription() {
               Professional Services • Subscription
             </span>
             
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold tracking-tight text-white leading-[1.1] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1] mb-5 sm:mb-3 md:mb-4">
               Training company launches subscription platform with 2,400 members
             </h1>
             
@@ -57,15 +57,15 @@ export default function CaseStudyTrainingSubscription() {
             
             <div className="flex flex-wrap gap-4 mb-10">
               <div>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-violet-400">2,400</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-violet-400">2,400</p>
                 <p className="text-white/60 text-sm">Active Members</p>
               </div>
               <div>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-violet-400">$1.8M</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-violet-400">$1.8M</p>
                 <p className="text-white/60 text-sm">Annual MRR</p>
               </div>
               <div>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-violet-400">92%</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-violet-400">92%</p>
                 <p className="text-white/60 text-sm">Retention Rate</p>
               </div>
             </div>
@@ -107,7 +107,7 @@ export default function CaseStudyTrainingSubscription() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Company Overview
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight mb-5 sm:mb-6 md:mb-8">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-5 sm:mb-6 md:mb-8">
                 A training company seeking sustainable growth
               </h2>
               
@@ -128,7 +128,7 @@ export default function CaseStudyTrainingSubscription() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="bg-subtle p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl"
             >
-              <h3 className="text-xl font-serif font-bold mb-6">Company Profile</h3>
+              <h3 className="text-xl font-bold mb-6">Company Profile</h3>
               <div className="space-y-4">
                 <div className="flex justify-between py-3 border-b border-base/10">
                   <span className="text-charcoal/60">Industry</span>
@@ -169,7 +169,7 @@ export default function CaseStudyTrainingSubscription() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-5 sm:mb-6 md:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 sm:mb-6 md:mb-8">
               Breaking free from the workshop treadmill
             </h2>
             
@@ -221,7 +221,7 @@ export default function CaseStudyTrainingSubscription() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               A comprehensive learning membership platform
             </h2>
             <p className="text-xl text-charcoal/60 max-w-3xl mx-auto">
@@ -280,7 +280,7 @@ export default function CaseStudyTrainingSubscription() {
                   <div className={`w-12 h-12 bg-gradient-to-br ${item.color} rounded-lg flex items-center justify-center mb-6 text-white`}>
                     {item.icon}
                   </div>
-                  <h3 className="text-xl font-serif font-bold mb-4 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold mb-4 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-charcoal/60 leading-relaxed text-sm">
@@ -306,7 +306,7 @@ export default function CaseStudyTrainingSubscription() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Implementation
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               Building a subscription business in 12 months
             </h2>
           </motion.div>
@@ -343,7 +343,7 @@ export default function CaseStudyTrainingSubscription() {
                 className="bg-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl shadow-sm"
               >
                 <span className="text-xs font-bold uppercase tracking-wider text-primary mb-2 block">{phase.phase}</span>
-                <h3 className="text-lg font-serif font-bold mb-4">{phase.title}</h3>
+                <h3 className="text-lg font-bold mb-4">{phase.title}</h3>
                 <ul className="space-y-2">
                   {phase.items.map((item, i) => (
                     <li key={i} className="flex items-start text-sm text-charcoal/70">
@@ -371,7 +371,7 @@ export default function CaseStudyTrainingSubscription() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Results
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
               From workshops to recurring revenue
             </h2>
             <p className="text-xl text-white/60 max-w-3xl mx-auto">
@@ -394,7 +394,7 @@ export default function CaseStudyTrainingSubscription() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-violet-400 mb-2">
+                <div className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-violet-400 mb-2">
                   {item.stat}
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">{item.label}</h3>
@@ -419,7 +419,7 @@ export default function CaseStudyTrainingSubscription() {
               "The subscription model NEXDYNE designed transformed our business from one-time sales to recurring revenue. We now have predictable cash flow, higher customer lifetime value, and a business that investors actually want to fund."
             </p>
             <div>
-              <p className="font-serif font-bold text-white text-lg">James Mitchell</p>
+              <p className="font-bold text-white text-lg">James Mitchell</p>
               <p className="text-white/60">Founder & CEO</p>
             </div>
           </motion.div>
@@ -439,7 +439,7 @@ export default function CaseStudyTrainingSubscription() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
               More digital growth success stories
             </h2>
           </motion.div>
@@ -476,13 +476,13 @@ export default function CaseStudyTrainingSubscription() {
                       <span className="text-xs font-bold uppercase tracking-wider text-primary mb-2">
                         {caseStudy.category}
                       </span>
-                      <h3 className="text-xl font-serif font-bold mb-4 group-hover:text-primary transition-colors">
+                      <h3 className="text-xl font-bold mb-4 group-hover:text-primary transition-colors">
                         {caseStudy.title}
                       </h3>
                       <div className="grid grid-cols-2 gap-4 mb-6 mt-auto">
                         {caseStudy.stats.map((stat, i) => (
                           <div key={i}>
-                            <p className="text-2xl font-serif font-bold text-primary">{stat.value}</p>
+                            <p className="text-2xl font-bold text-primary">{stat.value}</p>
                             <p className="text-xs text-charcoal/60">{stat.label}</p>
                           </div>
                         ))}
@@ -510,7 +510,7 @@ export default function CaseStudyTrainingSubscription() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
               Ready to build recurring revenue?
             </h2>
             <p className="text-xl text-white/70 leading-relaxed mb-10">

@@ -22,12 +22,12 @@ export default function PackagingBundling() {
                 Pricing & Monetization
               </Link>
               <span className="mx-2">/</span>
-              <span className="text-blue-600">Packaging & Bundling Strategy</span>
+              <span className="text-primary">Packaging & Bundling Strategy</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1] eb-garamond">
               Packaging & Bundling Strategy
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light font-serif">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light ">
               Design the offer. We use behavioral science and conjoint analysis to create product packages and bundles that maximize perceived value and drive upsell.
             </p>
           </div>
@@ -90,7 +90,7 @@ export default function PackagingBundling() {
               <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">Our Methodology</h2>
               <div className="space-y-8">
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full flex-shrink-0 text-blue-600 font-bold text-xl font-serif">1</div>
+                  <div className="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">1</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Feature Valuation</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -99,7 +99,7 @@ export default function PackagingBundling() {
                   </div>
                 </div>
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full flex-shrink-0 text-blue-600 font-bold text-xl font-serif">2</div>
+                  <div className="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">2</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Segmentation Analysis</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -108,7 +108,7 @@ export default function PackagingBundling() {
                   </div>
                 </div>
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full flex-shrink-0 text-blue-600 font-bold text-xl font-serif">3</div>
+                  <div className="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">3</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Package Design</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -117,7 +117,7 @@ export default function PackagingBundling() {
                   </div>
                 </div>
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full flex-shrink-0 text-blue-600 font-bold text-xl font-serif">4</div>
+                  <div className="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">4</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Go-to-Market Alignment</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -135,7 +135,7 @@ export default function PackagingBundling() {
               <div className="flex flex-col md:flex-row gap-4 sm:p-6 md:p-8 items-start">
                 <div className="flex-1">
                   <div className="text-blue-400 font-bold tracking-wider text-xs uppercase mb-4">Case Study</div>
-                  <h3 className="text-2xl font-serif font-bold mb-4">SaaS Platform Increases ARPU</h3>
+                  <h3 className="text-2xl font-bold mb-4">SaaS Platform Increases ARPU</h3>
                   <p className="text-muted-foreground/50 leading-relaxed mb-6">
                     A project management software company was giving away its most valuable features in the "Basic" plan. We restructured the tiers, moving advanced reporting and integrations to the "Pro" plan.
                   </p>
@@ -207,7 +207,7 @@ export default function PackagingBundling() {
                     <p className="text-sm text-muted-foreground leading-relaxed mb-2">
                       Moving beyond flat-rate pricing to capture more value.
                     </p>
-                    <div className="text-blue-600 text-sm font-medium flex items-center">
+                    <div className="text-primary text-sm font-medium flex items-center">
                       Read more <ArrowRight className="w-3 h-3 ml-1" />
                     </div>
                   </div>
@@ -221,7 +221,7 @@ export default function PackagingBundling() {
                     <p className="text-sm text-muted-foreground leading-relaxed mb-2">
                       Understanding how customers perceive price and value.
                     </p>
-                    <div className="text-blue-600 text-sm font-medium flex items-center">
+                    <div className="text-primary text-sm font-medium flex items-center">
                       Read more <ArrowRight className="w-3 h-3 ml-1" />
                     </div>
                   </div>

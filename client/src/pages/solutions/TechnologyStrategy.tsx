@@ -427,7 +427,7 @@ export default function TechnologyStrategy() {
                 transition={{ delay: index * 0.1 }}
                 className="group p-8 border border-border hover:border-primary hover:shadow-lg transition-all"
               >
-                <p className="text-lg font-serif font-semibold text-charcoal mb-4 group-hover:text-primary transition-colors">"{item.challenge}"</p>
+                <p className="text-lg font-semibold text-charcoal mb-4 group-hover:text-primary transition-colors">"{item.challenge}"</p>
                 <p className="text-muted-foreground leading-relaxed">{item.solution}</p>
               </motion.div>
             ))}

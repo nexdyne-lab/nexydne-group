@@ -27,7 +27,7 @@ export default function RollingForecasts() {
           <Breadcrumbs />
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-4xl">
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">Insight · Financial Planning & Analysis</span>
-            <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-4">
               Rolling Forecasts: A Modern Approach to <span className="text-primary">Financial Planning</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl">
@@ -46,7 +46,7 @@ export default function RollingForecasts() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="prose prose-lg max-w-none">
             
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">The Limitations of Traditional Annual Budgets</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">The Limitations of Traditional Annual Budgets</h2>
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Traditional annual budgets served organizations well in stable, predictable environments. However, in today's rapidly changing business landscape, the annual budget cycle has significant limitations that can hinder organizational agility and decision-making.
             </p>
@@ -55,7 +55,7 @@ export default function RollingForecasts() {
             </p>
 
             <div className="p-8 bg-base/5 rounded-xl mb-12">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3"><Target className="w-6 h-6 text-primary" />Key Limitations of Annual Budgets</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Target className="w-6 h-6 text-primary" />Key Limitations of Annual Budgets</h3>
               <ul className="space-y-3 text-charcoal/70">
                 <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Quickly become outdated as conditions change</span></li>
                 <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Encourage gaming and sandbagging behavior</span></li>
@@ -64,7 +64,7 @@ export default function RollingForecasts() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">What Are Rolling Forecasts?</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">What Are Rolling Forecasts?</h2>
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Rolling forecasts are a continuous planning approach that extends the forecast horizon by a set period (typically a month or quarter) each time the current period ends. Unlike annual budgets that end at a fixed point, rolling forecasts always look the same distance into the future.
             </p>
@@ -72,39 +72,39 @@ export default function RollingForecasts() {
               For example, a 12-month rolling forecast updated quarterly would always show the next 12 months. When Q1 ends, the forecast drops Q1 actuals and adds a new Q5, maintaining a constant 12-month horizon. This ensures the organization always has visibility into the same planning horizon.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Benefits of Rolling Forecasts</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Benefits of Rolling Forecasts</h2>
             
             <div className="space-y-8 mb-12">
               <div className="flex gap-6">
                 <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center"><TrendingUp className="w-6 h-6" /></div></div>
                 <div>
-                  <h3 className="text-xl font-serif font-bold text-charcoal mb-2">Greater Agility</h3>
+                  <h3 className="text-xl font-bold text-charcoal mb-2">Greater Agility</h3>
                   <p className="text-charcoal/70 leading-relaxed">Rolling forecasts enable organizations to respond quickly to changing conditions. Instead of waiting for the next annual budget cycle, organizations can adjust plans and resource allocation in near real-time.</p>
                 </div>
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center"><BarChart3 className="w-6 h-6" /></div></div>
                 <div>
-                  <h3 className="text-xl font-serif font-bold text-charcoal mb-2">Improved Accuracy</h3>
+                  <h3 className="text-xl font-bold text-charcoal mb-2">Improved Accuracy</h3>
                   <p className="text-charcoal/70 leading-relaxed">By updating forecasts more frequently and incorporating the latest information, rolling forecasts tend to be more accurate than annual budgets. Organizations learn from recent performance and adjust expectations accordingly.</p>
                 </div>
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center"><Calendar className="w-6 h-6" /></div></div>
                 <div>
-                  <h3 className="text-xl font-serif font-bold text-charcoal mb-2">Reduced Planning Burden</h3>
+                  <h3 className="text-xl font-bold text-charcoal mb-2">Reduced Planning Burden</h3>
                   <p className="text-charcoal/70 leading-relaxed">While rolling forecasts require more frequent updates, each update is typically less intensive than an annual budget cycle. The total planning burden often decreases, and the effort is spread more evenly throughout the year.</p>
                 </div>
               </div>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Implementing Rolling Forecasts</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Implementing Rolling Forecasts</h2>
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Successful implementation of rolling forecasts requires careful planning and change management. Organizations should consider several key factors when making the transition.
             </p>
 
             <div className="p-8 bg-base/5 rounded-xl mb-12">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Implementation Considerations</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Implementation Considerations</h3>
               <div className="space-y-4 text-charcoal/70">
                 <p><strong className="text-charcoal">Forecast Horizon:</strong> Determine the appropriate forecast horizon based on your business cycle and decision-making needs. Most organizations use 12-18 months.</p>
                 <p><strong className="text-charcoal">Update Frequency:</strong> Decide how often to update the forecast. Monthly updates provide more agility but require more effort; quarterly updates balance agility with efficiency.</p>
@@ -113,7 +113,7 @@ export default function RollingForecasts() {
               </div>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Common Pitfalls to Avoid</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Common Pitfalls to Avoid</h2>
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Organizations implementing rolling forecasts often encounter several common challenges. Being aware of these pitfalls can help ensure a successful transition.
             </p>
@@ -124,7 +124,7 @@ export default function RollingForecasts() {
             </ul>
 
             <div className="p-8 bg-primary text-white rounded-xl mb-12">
-              <h3 className="text-xl font-serif font-bold mb-4">The Bottom Line</h3>
+              <h3 className="text-xl font-bold mb-4">The Bottom Line</h3>
               <p className="text-white/90 leading-relaxed">
                 Rolling forecasts offer a more agile, accurate, and efficient approach to financial planning than traditional annual budgets. While implementation requires careful planning and change management, organizations that successfully adopt rolling forecasts gain a significant competitive advantage in their ability to respond to changing conditions and make better decisions.
               </p>
@@ -139,7 +139,7 @@ export default function RollingForecasts() {
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-16">
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">Related Insights</span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white">Continue reading</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">Continue reading</h2>
           </motion.div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
             {[
@@ -149,7 +149,7 @@ export default function RollingForecasts() {
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.category}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
                   <p className="text-white/60 mt-2">{item.description}</p>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">Read insight <ArrowRight className="w-3 h-3" /></span>
                 </Link>

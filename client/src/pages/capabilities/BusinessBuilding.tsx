@@ -411,7 +411,7 @@ export default function BusinessBuilding() {
               transition={{ duration: 0.6 }}
               className="border-t border-border pt-8"
             >
-              <h3 className="text-2xl font-serif font-bold text-charcoal mb-4">Real Outcomes</h3>
+              <h3 className="text-2xl font-bold text-charcoal mb-4">Real Outcomes</h3>
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 From fintech startups to established distributors, we've helped companies across industries achieve breakthrough results with AI-powered ventures. As one example, we worked with a regional bank to transform their loan origination process from 14 days to just 4 hours using AI.
               </p>
@@ -433,7 +433,7 @@ export default function BusinessBuilding() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="border-t border-border pt-8"
             >
-              <h3 className="text-2xl font-serif font-bold text-charcoal mb-4">How We Help</h3>
+              <h3 className="text-2xl font-bold text-charcoal mb-4">How We Help</h3>
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 Harness the full power of generative and agentic AI by envisioning and deploying a comprehensive strategy that addresses governance, talent, vendor selection, and technology infrastructure. Our AI-first approach to business building means we're not just adding AI to existing processes—we're reimagining what's possible.
               </p>
@@ -509,7 +509,7 @@ export default function BusinessBuilding() {
                     </span>
                   </div>
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
+                <h3 className="text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                   {study.title}
                 </h3>
                 <p className="text-charcoal/60 mb-4 leading-relaxed">
@@ -582,7 +582,7 @@ export default function BusinessBuilding() {
                   <span className="text-charcoal/40">•</span>
                   <span className="text-charcoal/40 text-xs">{insight.readTime}</span>
                 </div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
+                <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                   {insight.title}
                 </h3>
                 <p className="text-charcoal/60 text-sm mb-4 leading-relaxed">

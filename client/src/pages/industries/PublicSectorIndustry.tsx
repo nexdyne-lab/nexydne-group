@@ -76,7 +76,7 @@ export default function PublicSectorIndustry() {
               transition={{ duration: 0.6 }}
               className="prose prose-lg max-w-none"
             >
-              <p className="text-lg sm:text-xl md:text-2xl text-charcoal/80 leading-relaxed mb-8 first-letter:text-6xl first-letter:font-serif first-letter:font-bold first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:text-primary">
+              <p className="text-lg sm:text-xl md:text-2xl text-charcoal/80 leading-relaxed mb-8">
                 Government faces unprecedented challenges. Aging infrastructure, workforce constraints, and rising citizen expectations create pressure to do more with less. At the same time, technology offers new possibilities for service delivery, operational efficiency, and data-driven decision making. The agencies that can harness these opportunities will transform how government serves citizens.
               </p>
               
@@ -118,7 +118,7 @@ export default function PublicSectorIndustry() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-left"
               >
-                <div className="text-4xl md:text-5xl font-serif font-bold text-base mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-base mb-2">
                   {stat.value}
                 </div>
                 <div className="text-base text-muted-foreground leading-snug">
@@ -232,7 +232,7 @@ export default function PublicSectorIndustry() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="lg:col-span-3"
             >
-              <div className="text-6xl md:text-7xl font-serif font-bold text-primary mb-4">
+              <div className="text-6xl md:text-7xl font-bold text-primary mb-4">
                 70%
               </div>
               <div className="text-xl font-medium text-charcoal mb-6">
@@ -337,7 +337,7 @@ export default function PublicSectorIndustry() {
               transition={{ duration: 0.5 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Digital Government Services
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -353,7 +353,7 @@ export default function PublicSectorIndustry() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Benefits Administration
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -369,7 +369,7 @@ export default function PublicSectorIndustry() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Revenue & Tax Modernization
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -385,7 +385,7 @@ export default function PublicSectorIndustry() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Public Safety & Justice
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -401,7 +401,7 @@ export default function PublicSectorIndustry() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Workforce Transformation
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -417,7 +417,7 @@ export default function PublicSectorIndustry() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Cybersecurity & Privacy
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -564,7 +564,7 @@ export default function PublicSectorIndustry() {
                       <span className="text-xs font-bold uppercase tracking-[0.15em] text-primary group-hover:text-white/60 transition-colors">
                         Industry
                       </span>
-                      <h3 className="text-lg font-serif font-bold text-charcoal group-hover:text-white transition-colors mt-1">
+                      <h3 className="text-lg font-bold text-charcoal group-hover:text-white transition-colors mt-1">
                         {industry.title}
                       </h3>
                     </div>

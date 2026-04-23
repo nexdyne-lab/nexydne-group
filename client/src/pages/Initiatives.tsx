@@ -92,7 +92,7 @@ export default function Initiatives() {
                       <span className="text-xs font-semibold tracking-[0.15em] text-secondary uppercase mb-3 block">
                         {initiative.label}
                       </span>
-                      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-charcoal leading-tight mb-4 group-hover:text-secondary transition-colors duration-300">
+                      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-charcoal leading-tight mb-4 group-hover:text-secondary transition-colors duration-300">
                         {initiative.title}
                       </h2>
                       <p className="text-sm sm:text-base md:text-lg text-charcoal/70 leading-relaxed mb-6">
@@ -121,7 +121,7 @@ export default function Initiatives() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-white leading-tight mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl text-white leading-tight mb-6">
                 Ready to join our initiatives?
               </h2>
               <p className="text-base sm:text-lg text-white/70 mb-8">

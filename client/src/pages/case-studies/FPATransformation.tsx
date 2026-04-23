@@ -36,7 +36,7 @@ export default function FPATransformation() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Case Study · Manufacturing
             </span>
-            <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-4">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-4">
               FP&A transformation delivers <span className="text-primary">60%</span> faster close
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mb-8">
@@ -97,7 +97,7 @@ export default function FPATransformation() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-5xl font-serif font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-5xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-base text-white/70">{stat.label}</div>
               </motion.div>
             ))}
@@ -131,7 +131,7 @@ export default function FPATransformation() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Company Overview</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client is a mid-market industrial equipment manufacturer with $85M in annual revenue and operations across three facilities. The company had grown rapidly through acquisition but was struggling with fragmented financial systems and manual processes that made it difficult to get a clear picture of performance.
@@ -171,7 +171,7 @@ export default function FPATransformation() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Fragmented systems and manual processes
             </h2>
           </motion.div>
@@ -182,21 +182,21 @@ export default function FPATransformation() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Multiple ERP systems with no integration</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Multiple ERP systems with no integration</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 Each of the three facilities operated on a different ERP system—a legacy of the company's acquisition-driven growth. The finance team spent days each month manually extracting data from each system, reconciling differences in chart of accounts structures, and consolidating results into Excel spreadsheets. Errors were common and difficult to trace.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Extended close process limiting strategic value</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Extended close process limiting strategic value</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The monthly close took 15 business days, meaning leadership didn't see financial results until nearly three weeks after month-end. By then, the information was too stale to drive meaningful action. The finance team was so consumed by the close process that they had no capacity for forward-looking analysis or strategic support.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Forecasting based on gut feel rather than data</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Forecasting based on gut feel rather than data</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 Annual budgets were built through a laborious bottom-up process that took three months to complete. Once approved, they were rarely updated despite significant changes in business conditions. Quarterly forecasts were essentially educated guesses based on conversations with operations leaders rather than systematic analysis of trends and drivers.
               </p>
@@ -214,7 +214,7 @@ export default function FPATransformation() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-3xl md:text-4xl font-serif text-primary leading-tight mb-8">
+            <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "Our finance team was working incredibly hard, but we weren't getting the insights we needed to run the business. We were always looking in the rearview mirror instead of through the windshield."
             </blockquote>
             <div className="text-base text-white">
@@ -237,7 +237,7 @@ export default function FPATransformation() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Solution
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Modern FP&A infrastructure and processes
             </h2>
           </motion.div>
@@ -259,7 +259,7 @@ export default function FPATransformation() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <Database className="w-6 h-6 text-primary" />
                   Data integration and standardization
                 </h3>
@@ -291,7 +291,7 @@ export default function FPATransformation() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <Clock className="w-6 h-6 text-primary" />
                   Close process redesign
                 </h3>
@@ -323,7 +323,7 @@ export default function FPATransformation() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <TrendingUp className="w-6 h-6 text-primary" />
                   Driver-based planning implementation
                 </h3>
@@ -355,7 +355,7 @@ export default function FPATransformation() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <BarChart3 className="w-6 h-6 text-primary" />
                   Executive reporting and analytics
                 </h3>
@@ -394,7 +394,7 @@ export default function FPATransformation() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Impact
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Results & Impact
             </h2>
           </motion.div>
@@ -405,7 +405,7 @@ export default function FPATransformation() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <Clock className="w-6 h-6 text-primary" />
                 Dramatically faster close
               </h3>
@@ -414,18 +414,18 @@ export default function FPATransformation() {
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="p-6 bg-base/5 rounded-xl">
-                  <div className="text-3xl font-serif font-bold text-charcoal mb-2">6 days</div>
+                  <div className="text-3xl font-bold text-charcoal mb-2">6 days</div>
                   <div className="text-sm text-charcoal/60">New close time (down from 15 days)</div>
                 </div>
                 <div className="p-6 bg-base/5 rounded-xl">
-                  <div className="text-3xl font-serif font-bold text-charcoal mb-2">60%</div>
+                  <div className="text-3xl font-bold text-charcoal mb-2">60%</div>
                   <div className="text-sm text-charcoal/60">Reduction in close cycle time</div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <Target className="w-6 h-6 text-primary" />
                 Improved forecast accuracy
               </h3>
@@ -433,13 +433,13 @@ export default function FPATransformation() {
                 The driver-based forecasting model improved forecast accuracy by 40%, with quarterly revenue forecasts now within 5% of actual results. This accuracy has enabled more confident capital allocation and hiring decisions.
               </p>
               <div className="p-6 bg-base/5 rounded-xl">
-                <div className="text-3xl font-serif font-bold text-charcoal mb-2">±5%</div>
+                <div className="text-3xl font-bold text-charcoal mb-2">±5%</div>
                 <div className="text-sm text-charcoal/60">Quarterly forecast variance (down from ±15%)</div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <TrendingUp className="w-6 h-6 text-primary" />
                 Finance team transformed to strategic partner
               </h3>
@@ -447,7 +447,7 @@ export default function FPATransformation() {
                 By automating data collection and reporting, the finance team freed up 25 hours per month that was redirected toward strategic analysis, business partnering, and process improvement. The team is now seen as a valued strategic partner rather than a reporting function.
               </p>
               <div className="p-6 bg-base/5 rounded-xl">
-                <div className="text-3xl font-serif font-bold text-charcoal mb-2">25 hrs</div>
+                <div className="text-3xl font-bold text-charcoal mb-2">25 hrs</div>
                 <div className="text-sm text-charcoal/60">Monthly time savings redirected to strategic work</div>
               </div>
             </div>
@@ -464,7 +464,7 @@ export default function FPATransformation() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-3xl md:text-4xl font-serif text-primary leading-tight mb-8">
+            <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "The transformation has been remarkable. Our finance team has gone from data gatherers to strategic advisors. We now have the insights we need to make confident decisions, and we get them when we need them—not three weeks too late."
             </blockquote>
             <div className="text-base text-white">
@@ -495,7 +495,7 @@ export default function FPATransformation() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white">More success stories</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -522,7 +522,7 @@ export default function FPATransformation() {
               >
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>

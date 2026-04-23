@@ -92,7 +92,7 @@ export default function PerformanceIntelligenceBenchmarking() {
               className="lg:col-span-4"
             >
               <div className="lg:sticky lg:top-32">
-                <h3 className="text-2xl md:text-3xl font-serif font-bold text-charcoal mb-6">The Measurement Gap</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-charcoal mb-6">The Measurement Gap</h3>
                 <p className="text-lg text-charcoal/70 leading-relaxed mb-5 sm:mb-6 md:mb-8">
                   Most mid-market companies track basic financial metrics but lack the sophisticated performance intelligence systems that guide strategic decisions at leading enterprises. Without industry benchmarks, maturity assessments, and predictive analytics, companies operate with incomplete visibility into their competitive position and improvement opportunities.
                 </p>
@@ -136,28 +136,28 @@ export default function PerformanceIntelligenceBenchmarking() {
                 
                 <div className="grid md:grid-cols-2 gap-x-12 gap-y-16">
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Industry Benchmarking</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Industry Benchmarking</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       We provide access to proprietary benchmark databases covering operational, financial, and customer metrics across industries and company sizes. Our benchmarking methodology identifies performance gaps, quantifies improvement opportunities, and establishes realistic targets based on peer company performance. This external perspective reveals blind spots and validates strategic priorities with market evidence.
                     </p>
                   </div>
 
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Maturity Assessments</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Maturity Assessments</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       Our capability maturity frameworks assess organizational readiness across critical business functions—from technology infrastructure and data analytics to sales operations and customer service. We evaluate current state against industry-standard maturity models, identify capability gaps, and develop prioritized roadmaps that sequence improvements for maximum impact. These assessments provide the foundation for multi-year transformation programs.
                     </p>
                   </div>
 
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">ROI Modeling & Business Cases</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">ROI Modeling & Business Cases</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       We build sophisticated financial models that quantify the expected return on strategic investments. Our ROI frameworks incorporate industry benchmarks, risk-adjusted projections, and sensitivity analysis to provide realistic ranges rather than point estimates. We model both direct financial returns and strategic option value, ensuring investment decisions account for both immediate impact and future flexibility.
                     </p>
                   </div>
 
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">KPI Framework Design</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">KPI Framework Design</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       We design balanced KPI frameworks that align operational metrics with strategic objectives. Our frameworks cascade from executive-level objectives to departmental and individual metrics, ensuring everyone understands how their work contributes to company goals. We establish leading and lagging indicators, define measurement methodologies, and implement dashboards that provide real-time visibility into performance trends.
                     </p>
@@ -281,7 +281,7 @@ export default function PerformanceIntelligenceBenchmarking() {
             
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8">
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-4">25-40%</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">25-40%</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">Performance Improvement</div>
                 <p className="text-charcoal/70">
                   Across benchmarked metrics within 12-18 months of implementation
@@ -289,7 +289,7 @@ export default function PerformanceIntelligenceBenchmarking() {
               </div>
 
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-4">60%</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">60%</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">Faster Decision Cycles</div>
                 <p className="text-charcoal/70">
                   With real-time performance visibility and predictive analytics
@@ -297,7 +297,7 @@ export default function PerformanceIntelligenceBenchmarking() {
               </div>
 
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-4">3-5x</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">3-5x</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">Investment ROI Accuracy</div>
                 <p className="text-charcoal/70">
                   Through benchmark-validated financial modeling and risk assessment

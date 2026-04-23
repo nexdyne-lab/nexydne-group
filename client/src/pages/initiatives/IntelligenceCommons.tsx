@@ -50,7 +50,7 @@ function IntelligenceCommonsFAQ() {
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
             Frequently Asked Questions
           </span>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold leading-tight">
             Questions about the platform
           </h2>
         </motion.div>
@@ -140,7 +140,7 @@ export default function IntelligenceCommons() {
               NexDyne Intelligence Commons
             </span>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-white leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-4">
               Democratizing business intelligence for growing companies
             </h1>
             
@@ -164,7 +164,7 @@ export default function IntelligenceCommons() {
               <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
                 What It Is
               </span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-8">
                 Enterprise intelligence without enterprise costs
               </h2>
               
@@ -216,7 +216,7 @@ export default function IntelligenceCommons() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Platform Capabilities
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
               Intelligence tools for every growth stage
             </h2>
             <p className="text-lg text-charcoal/70 leading-relaxed">
@@ -306,7 +306,7 @@ export default function IntelligenceCommons() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/50 mb-6 block">
               Why This Is Different
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
               Opening Fortune 500 capabilities to growing businesses
             </h2>
             
@@ -320,7 +320,7 @@ export default function IntelligenceCommons() {
             </div>
 
             <div className="bg-white/5 rounded-lg p-8">
-              <h3 className="text-xl font-serif font-bold text-white mb-6">The intelligence gap</h3>
+              <h3 className="text-xl font-bold text-white mb-6">The intelligence gap</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   "Competitive analysis typically costs $50-100K per engagement",
@@ -354,7 +354,7 @@ export default function IntelligenceCommons() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Public Benefit
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-8">
               Better intelligence, stronger communities
             </h2>
             
@@ -406,7 +406,7 @@ export default function IntelligenceCommons() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/50 mb-6 block">
               Platform Access
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white leading-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">
               Intelligence for every growth stage
             </h2>
             <p className="text-lg text-white/70 leading-relaxed">
@@ -470,7 +470,7 @@ export default function IntelligenceCommons() {
                 className={`rounded-lg p-8 ${tier.highlighted ? 'bg-primary ring-2 ring-[#0077B5]' : 'bg-white/5'}`}
               >
                 <h3 className="text-xl font-semibold text-white mb-2">{tier.name}</h3>
-                <p className="text-3xl font-serif font-bold text-white mb-2">{tier.price}</p>
+                <p className="text-3xl font-bold text-white mb-2">{tier.price}</p>
                 <p className="text-sm text-white/60 mb-6">{tier.description}</p>
                 <ul className="space-y-3 mb-8">
                   {tier.features.map((feature, idx) => (
@@ -509,7 +509,7 @@ export default function IntelligenceCommons() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Related Initiatives
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold leading-tight">
               Explore other NexDyne initiatives
             </h2>
           </motion.div>
@@ -535,7 +535,7 @@ export default function IntelligenceCommons() {
                   <span className="text-xs font-semibold uppercase tracking-[0.15em] text-primary mb-3 block">
                     Mid-Market AI Access Program
                   </span>
-                  <h3 className="text-xl font-serif font-bold mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
                     Expanding Access to Enterprise-Grade AI for America's Mid-Market
                   </h3>
                   <p className="text-sm text-charcoal/60 mb-4">
@@ -569,7 +569,7 @@ export default function IntelligenceCommons() {
                   <span className="text-xs font-semibold uppercase tracking-[0.15em] text-primary mb-3 block">
                     Regional Business Intelligence Partnerships
                   </span>
-                  <h3 className="text-xl font-serif font-bold mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
                     Partnering With Local Chambers to Build Data-Driven Growth Ecosystems
                   </h3>
                   <p className="text-sm text-charcoal/60 mb-4">

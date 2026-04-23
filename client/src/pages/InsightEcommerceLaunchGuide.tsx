@@ -86,7 +86,7 @@ export default function InsightEcommerceLaunchGuide() {
                     Launching e-commerce doesn't have to take years or cost millions. With the right approach, you can go from zero to generating revenue in 90 days. This guide provides a practical, week-by-week roadmap based on our experience launching dozens of e-commerce initiatives.
                   </p>
 
-                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
                     The 90-day framework
                   </h2>
                   
@@ -95,17 +95,17 @@ export default function InsightEcommerceLaunchGuide() {
                   </p>
 
                   <div className="bg-subtle p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
-                    <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Why 90 Days?</h3>
+                    <h3 className="text-xl font-bold text-charcoal mb-4">Why 90 Days?</h3>
                     <p className="text-charcoal/70 mb-0">
                       90 days is long enough to build something meaningful but short enough to maintain momentum and urgency. Longer timelines often lead to scope creep, analysis paralysis, and lost market opportunity. The constraint forces focus on what truly matters for launch.
                     </p>
                   </div>
 
-                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
                     Phase 1: Foundation (Weeks 1-4)
                   </h2>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     Week 1: Strategy and requirements
                   </h3>
                   
@@ -128,7 +128,7 @@ export default function InsightEcommerceLaunchGuide() {
                     </p>
                   </div>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     Week 2: Platform selection
                   </h3>
                   
@@ -175,7 +175,7 @@ export default function InsightEcommerceLaunchGuide() {
                     </table>
                   </div>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     Weeks 3-4: Design and planning
                   </h3>
                   
@@ -191,11 +191,11 @@ export default function InsightEcommerceLaunchGuide() {
                     <li>Set up project management and communication tools</li>
                   </ul>
 
-                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
                     Phase 2: Build (Weeks 5-10)
                   </h2>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     Weeks 5-6: Core platform setup
                   </h3>
                   
@@ -211,7 +211,7 @@ export default function InsightEcommerceLaunchGuide() {
                     <li>Configure tax calculation</li>
                   </ul>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     Weeks 7-8: Product catalog and content
                   </h3>
                   
@@ -228,7 +228,7 @@ export default function InsightEcommerceLaunchGuide() {
                   </ul>
 
                   <div className="bg-base text-white p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
-                    <h3 className="text-xl font-serif font-bold mb-4">Content That Converts</h3>
+                    <h3 className="text-xl font-bold mb-4">Content That Converts</h3>
                     <p className="text-white/80 mb-4">
                       Product pages are your sales team online. Invest in:
                     </p>
@@ -252,7 +252,7 @@ export default function InsightEcommerceLaunchGuide() {
                     </ul>
                   </div>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     Weeks 9-10: Integrations and testing
                   </h3>
                   
@@ -269,11 +269,11 @@ export default function InsightEcommerceLaunchGuide() {
                     <li>Load testing if expecting significant traffic</li>
                   </ul>
 
-                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
                     Phase 3: Launch (Weeks 11-12)
                   </h2>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     Week 11: Soft launch
                   </h3>
                   
@@ -289,7 +289,7 @@ export default function InsightEcommerceLaunchGuide() {
                     <li>Finalize launch marketing materials</li>
                   </ul>
 
-                  <h3 className="text-2xl font-serif font-bold text-charcoal mt-8 mb-4">
+                  <h3 className="text-2xl font-bold text-charcoal mt-8 mb-4">
                     Week 12: Public launch
                   </h3>
                   
@@ -305,7 +305,7 @@ export default function InsightEcommerceLaunchGuide() {
                     <li>Be ready to respond quickly to issues</li>
                   </ul>
 
-                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
                     Post-launch: The first 30 days
                   </h2>
                   
@@ -330,7 +330,7 @@ export default function InsightEcommerceLaunchGuide() {
                     ))}
                   </div>
 
-                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
                     Common pitfalls to avoid
                   </h2>
                   
@@ -343,7 +343,7 @@ export default function InsightEcommerceLaunchGuide() {
                     <li><strong>Underestimating fulfillment:</strong> Test your fulfillment process before launch.</li>
                   </ul>
 
-                  <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+                  <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
                     Conclusion
                   </h2>
                   
@@ -365,7 +365,7 @@ export default function InsightEcommerceLaunchGuide() {
                 transition={{ duration: 0.6 }}
                 className="mt-16 p-4 sm:p-6 md:p-8 bg-subtle rounded-lg sm:rounded-xl"
               >
-                <h3 className="text-lg font-serif font-bold mb-4">About the Author</h3>
+                <h3 className="text-lg font-bold mb-4">About the Author</h3>
                 <div className="flex items-start gap-4">
                   <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
                     NG
@@ -463,7 +463,7 @@ export default function InsightEcommerceLaunchGuide() {
                   transition={{ duration: 0.6, delay: 0.6 }}
                   className="bg-gradient-to-br from-amber-500 to-orange-600 text-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
                 >
-                  <h3 className="font-serif font-bold text-lg mb-3">Ready to launch your e-commerce?</h3>
+                  <h3 className="font-bold text-lg mb-3">Ready to launch your e-commerce?</h3>
                   <p className="text-white/90 text-sm mb-4">
                     Let's discuss how we can help you go from zero to revenue in 90 days.
                   </p>

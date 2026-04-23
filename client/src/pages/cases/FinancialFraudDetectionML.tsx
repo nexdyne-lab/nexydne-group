@@ -13,15 +13,15 @@ export default function FinancialFraudDetectionML() {
         <div className="container">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Link href="/">
-              <a className="hover:text-blue-600">Home</a>
+              <a className="hover:text-primary">Home</a>
             </Link>
             <span>/</span>
             <Link href="/solutions/data-solutions">
-              <a className="hover:text-blue-600">Data Solutions</a>
+              <a className="hover:text-primary">Data Solutions</a>
             </Link>
             <span>/</span>
             <Link href="/solutions/machine-learning">
-              <a className="hover:text-blue-600">Machine Learning</a>
+              <a className="hover:text-primary">Machine Learning</a>
             </Link>
             <span>/</span>
             <span className="text-charcoal">Bank Detects Fraud 40% Faster with ML Anomaly Detection</span>

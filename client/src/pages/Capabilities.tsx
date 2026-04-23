@@ -137,7 +137,7 @@ export default function Capabilities() {
                 What We Do
               </span>
               
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold tracking-tight text-white leading-[1.1] mb-3">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1] mb-3">
                 Capabilities
               </h1>
               
@@ -164,7 +164,7 @@ export default function Capabilities() {
             <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase">
               Our Expertise
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal mt-4 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-charcoal mt-4 leading-tight">
               Six pillars of transformation that drive measurable business outcomes
             </h2>
             <p className="text-base md:text-lg text-charcoal/70 mt-6 leading-relaxed">
@@ -237,7 +237,7 @@ export default function Capabilities() {
               <span className="text-xs md:text-sm font-bold tracking-[0.2em] text-primary uppercase mb-4 block">
                 Capabilities Overview
               </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-6 text-charcoal leading-tight">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6 text-charcoal leading-tight">
                 AI and Technology{" "}
                 <span className="relative">
                   <span className="relative z-10 text-primary">Consulting</span>
@@ -282,7 +282,7 @@ export default function Capabilities() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl lg:text-5xl font-serif mb-12"
+            className="text-3xl md:text-4xl lg:text-5xl mb-12"
           >
             Keep exploring
           </motion.h2>
@@ -323,7 +323,7 @@ export default function Capabilities() {
             className="flex flex-col md:flex-row items-center justify-between gap-6"
           >
             <div className="text-center md:text-left">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal mb-4">Connect</h2>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl text-charcoal mb-4">Connect</h2>
               <p className="text-muted-foreground text-base md:text-lg">Ready to transform your business?</p>
             </div>
             <Link href="/contact">

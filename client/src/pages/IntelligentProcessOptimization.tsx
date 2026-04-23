@@ -41,7 +41,7 @@ export default function IntelligentProcessOptimization() {
                 <span className="text-white/70">Process Optimization</span>
               </nav>
               
-              <h1 className="text-4xl sm:text-5xl md:text-6xl eb-garamond  tracking-tight text-white leading-[1.1] mb-3">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl eb-garamond tracking-tight text-white leading-[1.1] mb-3">
                 Intelligent Process Optimization
               </h1>
               
@@ -77,7 +77,7 @@ export default function IntelligentProcessOptimization() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-charcoal mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-12">
               Our Experience & Impact
             </h2>
             
@@ -95,7 +95,7 @@ export default function IntelligentProcessOptimization() {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className={`${i > 0 ? 'md:border-l md:border-border md:pl-8' : ''}`}
                 >
-                  <div className="text-5xl md:text-6xl font-serif font-bold text-charcoal mb-3">
+                  <div className="text-5xl md:text-6xl font-bold text-charcoal mb-3">
                     {item.stat}
                   </div>
                   <div className="text-base text-muted-foreground leading-relaxed max-w-xs">
@@ -145,7 +145,7 @@ export default function IntelligentProcessOptimization() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-charcoal">
+            <h2 className="text-2xl md:text-3xl font-bold text-charcoal">
               How We Think About Process Optimization
             </h2>
           </motion.div>
@@ -236,7 +236,7 @@ export default function IntelligentProcessOptimization() {
             <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-secondary mb-4">
               How we help clients
             </h2>
-            <p className="text-2xl md:text-3xl font-serif text-charcoal max-w-3xl leading-relaxed">
+            <p className="text-2xl md:text-3xl text-charcoal max-w-3xl leading-relaxed">
               We combine deep operational expertise with cutting-edge technology to transform how you work—eliminating friction, accelerating execution, and building sustainable competitive advantage.
             </p>
           </motion.div>
@@ -313,7 +313,7 @@ export default function IntelligentProcessOptimization() {
                 transition={{ duration: 0.6 }}
                 className="p-8 md:p-12 lg:p-16 flex flex-col justify-center"
               >
-                <h3 className="text-2xl md:text-3xl font-serif font-bold text-charcoal mb-6 leading-tight">
+                <h3 className="text-2xl md:text-3xl font-bold text-charcoal mb-6 leading-tight">
                   Process Transformations That Work
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-8">
@@ -367,7 +367,7 @@ export default function IntelligentProcessOptimization() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-charcoal mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-6">
                 Transformation with AI
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
@@ -455,7 +455,7 @@ export default function IntelligentProcessOptimization() {
           >
             <div className="flex items-center justify-center gap-4 mb-4">
               <div className="h-px bg-gray-300 w-16"></div>
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-charcoal">
+              <h2 className="text-2xl md:text-3xl font-bold text-charcoal">
                 Client Results
               </h2>
               <div className="h-px bg-gray-300 w-16"></div>
@@ -542,7 +542,7 @@ export default function IntelligentProcessOptimization() {
           >
             <div className="flex items-center justify-center gap-4 mb-4">
               <div className="h-px bg-gray-300 w-16"></div>
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-charcoal">
+              <h2 className="text-2xl md:text-3xl font-bold text-charcoal">
                 Our Process Optimization Insights
               </h2>
               <div className="h-px bg-gray-300 w-16"></div>
@@ -668,7 +668,7 @@ export default function IntelligentProcessOptimization() {
           >
             <div className="flex items-center justify-center gap-4 mb-4">
               <div className="h-px bg-gray-300 w-16"></div>
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-charcoal">
+              <h2 className="text-2xl md:text-3xl font-bold text-charcoal">
                 Related Offerings
               </h2>
               <div className="h-px bg-gray-300 w-16"></div>
@@ -731,7 +731,7 @@ export default function IntelligentProcessOptimization() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <h2 className="text-3xl md:text-4xl font-serif font-bold text-charcoal mb-8">
+                <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-8">
                   Ready to talk?
                 </h2>
                 <p className="text-muted-foreground mb-8">

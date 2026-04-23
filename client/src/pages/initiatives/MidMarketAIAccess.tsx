@@ -50,7 +50,7 @@ function FAQSection() {
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
             Frequently Asked Questions
           </span>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold leading-tight">
             Common questions about the program
           </h2>
         </motion.div>
@@ -139,7 +139,7 @@ export default function MidMarketAIAccess() {
               Mid-Market AI Access Program
             </span>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-white leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-4">
               Expanding access to enterprise-grade AI for America's mid-market
             </h1>
             
@@ -163,7 +163,7 @@ export default function MidMarketAIAccess() {
               <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
                 What It Is
               </span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-8">
                 A national effort to close the AI gap
               </h2>
               
@@ -212,7 +212,7 @@ export default function MidMarketAIAccess() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Who It Serves
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
               America's mid-market economy
             </h2>
             <p className="text-lg text-charcoal/70 leading-relaxed">
@@ -302,7 +302,7 @@ export default function MidMarketAIAccess() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/50 mb-6 block">
               Why It Matters
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
               Strengthening local economies through AI adoption
             </h2>
             
@@ -354,7 +354,7 @@ export default function MidMarketAIAccess() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Measured Impact
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
               Program goals and outcomes
             </h2>
             <p className="text-lg text-charcoal/70 leading-relaxed">
@@ -377,7 +377,7 @@ export default function MidMarketAIAccess() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="text-center"
               >
-                <p className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">{item.metric}</p>
+                <p className="text-4xl md:text-5xl font-bold text-primary mb-2">{item.metric}</p>
                 <p className="text-sm text-charcoal/60">{item.label}</p>
               </motion.div>
             ))}
@@ -398,7 +398,7 @@ export default function MidMarketAIAccess() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Program Components
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
               What the program includes
             </h2>
             <p className="text-lg text-charcoal/70 leading-relaxed">
@@ -476,7 +476,7 @@ export default function MidMarketAIAccess() {
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
               Related Initiatives
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold leading-tight">
               Explore other NexDyne initiatives
             </h2>
           </motion.div>
@@ -502,7 +502,7 @@ export default function MidMarketAIAccess() {
                   <span className="text-xs font-semibold uppercase tracking-[0.15em] text-primary mb-3 block">
                     NexDyne Intelligence Commons
                   </span>
-                  <h3 className="text-xl font-serif font-bold mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
                     Democratizing Business Intelligence for Growing Companies
                   </h3>
                   <p className="text-sm text-charcoal/60 mb-4">
@@ -536,7 +536,7 @@ export default function MidMarketAIAccess() {
                   <span className="text-xs font-semibold uppercase tracking-[0.15em] text-primary mb-3 block">
                     Regional Business Intelligence Partnerships
                   </span>
-                  <h3 className="text-xl font-serif font-bold mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
                     Partnering With Local Chambers to Build Data-Driven Growth Ecosystems
                   </h3>
                   <p className="text-sm text-charcoal/60 mb-4">

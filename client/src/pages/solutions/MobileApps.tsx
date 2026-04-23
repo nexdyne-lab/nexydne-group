@@ -63,7 +63,7 @@ export default function MobileApps() {
             {/* Benefit 1 */}
             <Card className="p-8 hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 rounded-lg bg-blue-100 flex items-center justify-center mb-6">
-                <Crown className="w-8 h-8 text-blue-600" />
+                <Crown className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-3">High customer loyalty</h3>
               <p className="text-muted-foreground">
@@ -74,7 +74,7 @@ export default function MobileApps() {
             {/* Benefit 2 */}
             <Card className="p-8 hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 rounded-lg bg-blue-100 flex items-center justify-center mb-6">
-                <Smartphone className="w-8 h-8 text-blue-600" />
+                <Smartphone className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-3">PWA technology for cost efficiency</h3>
               <p className="text-muted-foreground">
@@ -85,7 +85,7 @@ export default function MobileApps() {
             {/* Benefit 3 */}
             <Card className="p-8 hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 rounded-lg bg-blue-100 flex items-center justify-center mb-6">
-                <Rocket className="w-8 h-8 text-blue-600" />
+                <Rocket className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-3">Higher conversion rates</h3>
               <p className="text-muted-foreground">
@@ -99,7 +99,7 @@ export default function MobileApps() {
             <Card className="p-8 hover:shadow-xl transition-shadow">
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
-                  <Bell className="w-8 h-8 text-blue-600" />
+                  <Bell className="w-8 h-8 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-3">Tactical tech</h3>

@@ -277,8 +277,8 @@ export default function ChangeManagementAISuccess() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                   <div className="aspect-[16/10] bg-gradient-to-br from-slate-700 to-slate-900"></div>
                   <div className="p-6">
-                    <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">Report</span>
-                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-blue-600 transition-colors">
+                    <span className="text-xs font-semibold text-primary uppercase tracking-wider">Report</span>
+                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-primary transition-colors">
                       Mid-Market AI Access: How growing businesses can compete with enterprise technology
                     </h3>
                   </div>
@@ -289,8 +289,8 @@ export default function ChangeManagementAISuccess() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                   <div className="aspect-[16/10] bg-gradient-to-br from-emerald-700 to-emerald-900"></div>
                   <div className="p-6">
-                    <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">Article</span>
-                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-blue-600 transition-colors">
+                    <span className="text-xs font-semibold text-primary uppercase tracking-wider">Article</span>
+                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-primary transition-colors">
                       The 85% efficiency improvement: What our clients actually experience
                     </h3>
                   </div>
@@ -301,8 +301,8 @@ export default function ChangeManagementAISuccess() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                   <div className="aspect-[16/10] bg-gradient-to-br from-blue-700 to-blue-900"></div>
                   <div className="p-6">
-                    <span className="text-xs font-semibold text-blue-600 uppercase tracking-wider">Whitepaper</span>
-                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-blue-600 transition-colors">
+                    <span className="text-xs font-semibold text-primary uppercase tracking-wider">Whitepaper</span>
+                    <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-primary transition-colors">
                       Process mining fundamentals: From operational mapping to AI automation
                     </h3>
                   </div>

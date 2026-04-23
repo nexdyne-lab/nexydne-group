@@ -114,7 +114,7 @@ export default function AcceleratingBusinessGrowth() {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className={`py-6 sm:py-8 px-4 sm:px-6 ${i > 0 ? 'md:border-l border-border' : ''} ${i >= 2 ? 'border-t md:border-t-0 border-border' : ''}`}
                 >
-                  <div className="text-3xl sm:text-4xl md:text-6xl font-serif font-bold text-charcoal mb-2 sm:mb-3">
+                  <div className="text-3xl sm:text-4xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">
                     {item.stat}
                   </div>
                   <div className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
@@ -138,7 +138,7 @@ export default function AcceleratingBusinessGrowth() {
               transition={{ duration: 0.6 }}
               className="space-y-8"
             >
-              <p className="text-2xl md:text-3xl text-charcoal leading-relaxed font-serif">
+              <p className="text-2xl md:text-3xl text-charcoal leading-relaxed ">
                 Growth has never been harder—or more urgent. The playbooks that built your business won't scale it to the next level. We help mid-market companies break through growth ceilings by launching digital products, channels, and business models that compound over time.
               </p>
               
@@ -251,7 +251,7 @@ export default function AcceleratingBusinessGrowth() {
               <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-destructive mb-4">
                 AI in Sales & Marketing
               </h2>
-              <h3 className="text-3xl md:text-4xl font-serif font-bold text-charcoal mb-6 leading-tight">
+              <h3 className="text-3xl md:text-4xl font-bold text-charcoal mb-6 leading-tight">
                 AI isn't replacing your growth team—it's multiplying their impact
               </h3>
               
@@ -281,11 +281,11 @@ export default function AcceleratingBusinessGrowth() {
                 </h4>
                 <div className="grid grid-cols-2 gap-6">
                   <div>
-                    <div className="text-3xl font-serif font-bold text-charcoal">3.2x</div>
+                    <div className="text-3xl font-bold text-charcoal">3.2x</div>
                     <div className="text-sm text-muted-foreground">improvement in lead-to-close conversion</div>
                   </div>
                   <div>
-                    <div className="text-3xl font-serif font-bold text-charcoal">47%</div>
+                    <div className="text-3xl font-bold text-charcoal">47%</div>
                     <div className="text-sm text-muted-foreground">reduction in customer acquisition cost</div>
                   </div>
                 </div>
@@ -318,7 +318,7 @@ export default function AcceleratingBusinessGrowth() {
             <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-destructive mb-4">
               A closer look
             </h2>
-            <p className="text-2xl md:text-3xl font-serif text-charcoal">
+            <p className="text-2xl md:text-3xl text-charcoal">
               Deep dives into growth strategy
             </p>
           </motion.div>
@@ -385,7 +385,7 @@ export default function AcceleratingBusinessGrowth() {
             <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-destructive mb-4">
               How we can help
             </h2>
-            <p className="text-2xl md:text-3xl font-serif text-charcoal max-w-3xl leading-relaxed">
+            <p className="text-2xl md:text-3xl text-charcoal max-w-3xl leading-relaxed">
               We combine strategy, technology, and execution to launch digital growth initiatives that drive measurable revenue.
             </p>
           </motion.div>
@@ -438,7 +438,7 @@ export default function AcceleratingBusinessGrowth() {
             <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-destructive mb-4">
               Our client results
             </h2>
-            <p className="text-2xl md:text-3xl font-serif text-charcoal">
+            <p className="text-2xl md:text-3xl text-charcoal">
               Real outcomes from real engagements
             </p>
           </motion.div>
@@ -469,7 +469,7 @@ export default function AcceleratingBusinessGrowth() {
             className="grid lg:grid-cols-2 gap-12 items-center"
           >
             <div>
-              <h3 className="text-2xl md:text-3xl font-serif font-bold text-charcoal mb-6 leading-tight">
+              <h3 className="text-2xl md:text-3xl font-bold text-charcoal mb-6 leading-tight">
                 {clientResults[activeTab].title}
               </h3>
               <p className="text-lg text-charcoal/80 mb-8 leading-relaxed">
@@ -479,7 +479,7 @@ export default function AcceleratingBusinessGrowth() {
               <div className="grid grid-cols-3 gap-6">
                 {clientResults[activeTab].stats.map((stat, i) => (
                   <div key={i}>
-                    <div className="text-3xl font-serif font-bold text-destructive">{stat.value}</div>
+                    <div className="text-3xl font-bold text-destructive">{stat.value}</div>
                     <div className="text-sm text-muted-foreground">{stat.label}</div>
                   </div>
                 ))}
@@ -548,7 +548,7 @@ export default function AcceleratingBusinessGrowth() {
             <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-destructive mb-4">
               Our Growth Ecosystem
             </h2>
-            <p className="text-xl md:text-2xl font-serif text-charcoal max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl text-charcoal max-w-2xl mx-auto">
               We partner with leading e-commerce and growth platforms to accelerate your digital transformation
             </p>
           </motion.div>
@@ -602,7 +602,7 @@ export default function AcceleratingBusinessGrowth() {
               <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-destructive mb-4">
                 Ready to talk?
               </h2>
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-charcoal leading-tight">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal leading-tight">
                 Let's build your next growth engine together.
               </h3>
             </motion.div>

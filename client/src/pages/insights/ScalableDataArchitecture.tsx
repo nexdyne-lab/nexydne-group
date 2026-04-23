@@ -44,7 +44,7 @@ export default function ScalableDataArchitecture() {
               </span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold tracking-tight leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-4">
               Building scalable data architectures
             </h1>
             
@@ -55,7 +55,7 @@ export default function ScalableDataArchitecture() {
             <div className="flex items-center justify-between border-t border-b border-base/10 py-6">
               <div className="flex items-center gap-6">
                 <div>
-                  <p className="font-serif font-bold">NEXDYNE Engineering</p>
+                  <p className="font-bold">NEXDYNE Engineering</p>
                   <p className="text-sm text-charcoal/60 flex items-center">
                     <Calendar className="w-4 h-4 mr-1" />
                     September 14, 2025
@@ -111,7 +111,7 @@ export default function ScalableDataArchitecture() {
                 Data architecture decisions made today will determine your organization's ability to leverage AI, deliver real-time experiences, and compete in increasingly data-driven markets. Yet many mid-market companies are still operating on data infrastructure designed for a different era—batch processing, siloed warehouses, and manual ETL pipelines that can't keep pace with modern demands.
               </p>
 
-              <h2 className="text-3xl font-serif font-bold mt-12 mb-6">The evolution of data architecture</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">The evolution of data architecture</h2>
               
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 Data architecture has evolved through distinct generations, each responding to new business requirements and technological capabilities:
@@ -130,13 +130,13 @@ export default function ScalableDataArchitecture() {
               </p>
 
               <div className="bg-subtle p-8 rounded-xl my-12">
-                <h3 className="text-xl font-serif font-bold mb-4">Key Insight</h3>
+                <h3 className="text-xl font-bold mb-4">Key Insight</h3>
                 <p className="text-charcoal/70 leading-relaxed mb-0">
                   Organizations with modern lakehouse architectures process data 10x faster and reduce storage costs by 50% compared to traditional warehouse approaches.
                 </p>
               </div>
 
-              <h2 className="text-3xl font-serif font-bold mt-12 mb-6">Architectural patterns for scale</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">Architectural patterns for scale</h2>
 
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 Scaling data operations from millions to billions of events requires deliberate architectural choices. Here are the patterns we've seen succeed across 200+ implementations:
@@ -177,7 +177,7 @@ export default function ScalableDataArchitecture() {
                   <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4 text-primary">
                     {pattern.icon}
                   </div>
-                  <h3 className="text-lg font-serif font-bold mb-2">{pattern.title}</h3>
+                  <h3 className="text-lg font-bold mb-2">{pattern.title}</h3>
                   <p className="text-white/60 text-sm leading-relaxed">{pattern.description}</p>
                 </div>
               ))}
@@ -190,23 +190,23 @@ export default function ScalableDataArchitecture() {
               transition={{ duration: 0.6 }}
               className="prose prose-lg max-w-none"
             >
-              <h2 className="text-3xl font-serif font-bold mt-12 mb-6">Technology selection framework</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">Technology selection framework</h2>
 
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 Choosing the right technologies for your data platform requires balancing multiple factors: scale requirements, team capabilities, cost constraints, and integration needs. Here's our framework for making these decisions:
               </p>
 
-              <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Storage Layer</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Storage Layer</h3>
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 For most mid-market companies, cloud object storage (S3, Azure Blob, GCS) provides the best balance of cost, durability, and scalability. Use open table formats like Delta Lake or Apache Iceberg to add ACID transactions and time travel capabilities.
               </p>
 
-              <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Processing Layer</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Processing Layer</h3>
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 Apache Spark remains the workhorse for batch processing at scale. For streaming, choose between Kafka Streams (simpler, tightly integrated with Kafka) or Apache Flink (more powerful, steeper learning curve) based on your complexity requirements.
               </p>
 
-              <h3 className="text-2xl font-serif font-bold mt-8 mb-4">Query Layer</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Query Layer</h3>
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 Modern query engines like Databricks SQL, Snowflake, or Trino provide interactive query performance on lakehouse data. Choose based on your existing ecosystem and whether you need a fully managed service or prefer more control.
               </p>
@@ -218,7 +218,7 @@ export default function ScalableDataArchitecture() {
                 <p className="text-charcoal/60 mt-4 mb-0">— NEXDYNE Engineering Team</p>
               </div>
 
-              <h2 className="text-3xl font-serif font-bold mt-12 mb-6">Data governance at scale</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">Data governance at scale</h2>
 
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 Governance becomes exponentially more important as data volumes grow. Without proper controls, you risk compliance violations, security breaches, and the "data swamp" problem where data becomes unusable due to poor quality and discoverability.
@@ -236,7 +236,7 @@ export default function ScalableDataArchitecture() {
                 <li><strong>Privacy Controls:</strong> Masking, tokenization, and anonymization capabilities for sensitive data.</li>
               </ul>
 
-              <h2 className="text-3xl font-serif font-bold mt-12 mb-6">Implementation roadmap</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">Implementation roadmap</h2>
 
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 Modernizing data architecture is a multi-phase journey. We recommend a pragmatic approach that delivers value incrementally:
@@ -254,7 +254,7 @@ export default function ScalableDataArchitecture() {
                 <strong>Phase 3 (Months 7-12):</strong> Enable AI/ML workloads on the platform. Mature governance and quality processes. Decommission legacy systems.
               </p>
 
-              <h2 className="text-3xl font-serif font-bold mt-12 mb-6">Conclusion</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">Conclusion</h2>
 
               <p className="text-charcoal/70 leading-relaxed mb-6">
                 Building scalable data architecture is no longer optional—it's a prerequisite for competing in data-driven markets. The good news is that modern tools and patterns make it achievable for mid-market companies, not just tech giants. The key is starting with clear business objectives, choosing technologies that match your team's capabilities, and building incrementally rather than attempting a big-bang transformation.
@@ -302,7 +302,7 @@ export default function ScalableDataArchitecture() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Ready to modernize your data architecture?
             </h2>
             <p className="text-xl text-white/70 leading-relaxed mb-10">

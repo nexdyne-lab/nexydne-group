@@ -83,15 +83,15 @@ export default function EnergyGridSecurity() {
           
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">95%</div>
+              <div className="text-5xl font-bold text-primary mb-2">95%</div>
               <div className="text-muted-foreground">Ignition sources identified</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">40%</div>
+              <div className="text-5xl font-bold text-primary mb-2">40%</div>
               <div className="text-muted-foreground">Reduction in outage duration</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">$12M</div>
+              <div className="text-5xl font-bold text-primary mb-2">$12M</div>
               <div className="text-muted-foreground">Annual maintenance savings</div>
             </div>
           </div>

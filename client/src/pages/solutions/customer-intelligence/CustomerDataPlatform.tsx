@@ -314,7 +314,7 @@ export default function CustomerDataPlatform() {
               >
                 <Link href={item.link}>
                   <a className="block h-full p-8 bg-white border border-border hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                    <h3 className="text-2xl font-serif font-bold text-charcoal mb-3">{item.title}</h3>
+                    <h3 className="text-2xl font-bold text-charcoal mb-3">{item.title}</h3>
                     <p className="text-charcoal/70 mb-4">{item.description}</p>
                     <span className="text-primary font-semibold flex items-center">
                       Explore Capability <ArrowRight className="ml-2 w-4 h-4" />

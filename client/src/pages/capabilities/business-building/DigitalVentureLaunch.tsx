@@ -349,7 +349,7 @@ export default function DigitalVentureLaunch() {
                       </span>
                     </div>
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
+                  <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                     {study.title}
                   </h3>
                   <p className="text-charcoal/60 text-sm leading-relaxed mb-4">

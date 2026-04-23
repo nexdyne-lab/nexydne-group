@@ -42,14 +42,14 @@ export default function EcommerceCaseStudy() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:p-6 md:p-8">
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                <TrendingDown className="w-8 h-8 text-blue-600" />
+                <TrendingDown className="w-8 h-8 text-primary" />
               </div>
               <div className="text-4xl font-bold text-charcoal mb-2">83%</div>
               <div className="text-muted-foreground">Error reduction</div>
             </div>
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                <Clock className="w-8 h-8 text-blue-600" />
+                <Clock className="w-8 h-8 text-primary" />
               </div>
               <div className="text-4xl font-bold text-charcoal mb-2">4.2hrs</div>
               <div className="text-muted-foreground">Avg. processing time</div>
@@ -176,7 +176,7 @@ export default function EcommerceCaseStudy() {
             <h2 className="text-3xl font-bold text-charcoal mb-6">The Results</h2>
             <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 mb-6 sm:mb-8 md:mb-12">
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-slate-200">
-                <div className="text-5xl font-bold text-blue-600 mb-2">83%</div>
+                <div className="text-5xl font-bold text-primary mb-2">83%</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">Error reduction</div>
                 <p className="text-muted-foreground">
                   Fulfillment errors dropped from 6.8% to 1.2%, virtually eliminating wrong-item shipments and customer complaints.
@@ -184,7 +184,7 @@ export default function EcommerceCaseStudy() {
               </div>
               
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-slate-200">
-                <div className="text-5xl font-bold text-blue-600 mb-2">4.2hrs</div>
+                <div className="text-5xl font-bold text-primary mb-2">4.2hrs</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">Avg. processing time</div>
                 <p className="text-muted-foreground">
                   Order-to-shipment time reduced from 18 hours to 4.2 hours, enabling same-day fulfillment for orders placed before 2pm.
@@ -212,19 +212,19 @@ export default function EcommerceCaseStudy() {
               <h3 className="text-2xl font-bold text-charcoal mb-4">Business Impact</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>Amazon seller rating increased from 3.8 to 4.7 stars</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>Return rate decreased from 8.2% to 2.1%</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>Order cancellations due to overselling eliminated completely</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>Warehouse labor costs per order reduced by 34%</span>
                 </li>
               </ul>

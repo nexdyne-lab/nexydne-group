@@ -87,7 +87,7 @@ export default function MarketingROI() {
                   <div className="space-y-6">
                     <div className="flex items-center gap-4 p-4 bg-slate-50 rounded-lg border border-slate-100">
                       <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
-                        <PieChart className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
+                        <PieChart className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                       </div>
                       <div>
                         <h4 className="font-bold text-charcoal">Multi-Touch Attribution</h4>

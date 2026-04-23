@@ -41,7 +41,7 @@ export default function HealthcareCloudMigration() {
               Case Study · Healthcare Tech
             </span>
             
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold tracking-tight text-white leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1] mb-4">
               Health tech platform achieves 99.99% uptime after cloud migration
             </h1>
             
@@ -73,7 +73,7 @@ export default function HealthcareCloudMigration() {
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
                   {metric.icon}
                 </div>
-                <div className="text-4xl font-serif font-bold text-primary mb-2">{metric.value}</div>
+                <div className="text-4xl font-bold text-primary mb-2">{metric.value}</div>
                 <div className="text-sm text-charcoal/60">{metric.label}</div>
               </motion.div>
             ))}
@@ -94,7 +94,7 @@ export default function HealthcareCloudMigration() {
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 The Challenge
               </span>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-8">
                 Legacy infrastructure threatening patient care
               </h2>
               
@@ -118,7 +118,7 @@ export default function HealthcareCloudMigration() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div className="bg-white p-8 rounded-xl shadow-sm">
-                <h3 className="text-xl font-serif font-bold mb-6">Key Challenges</h3>
+                <h3 className="text-xl font-bold mb-6">Key Challenges</h3>
                 <ul className="space-y-4">
                   {[
                     "4+ hours of monthly downtime affecting patient care",
@@ -153,7 +153,7 @@ export default function HealthcareCloudMigration() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
               Our Solution
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Cloud-native architecture built for healthcare
             </h2>
             <p className="text-xl text-white/60">
@@ -205,7 +205,7 @@ export default function HealthcareCloudMigration() {
                 <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-6 text-primary">
                   {item.icon}
                 </div>
-                <h3 className="text-xl font-serif font-bold text-white mb-4">{item.title}</h3>
+                <h3 className="text-xl font-bold text-white mb-4">{item.title}</h3>
                 <p className="text-white/60 leading-relaxed">{item.description}</p>
               </motion.div>
             ))}
@@ -226,7 +226,7 @@ export default function HealthcareCloudMigration() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Implementation
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold">
+            <h2 className="text-3xl md:text-4xl font-bold">
               9-month transformation journey
             </h2>
           </motion.div>
@@ -267,7 +267,7 @@ export default function HealthcareCloudMigration() {
                 </div>
                 <div className="flex-grow pb-12 border-l-2 border-primary/20 pl-8 relative">
                   <div className="absolute -left-[9px] top-0 w-4 h-4 bg-primary rounded-full" />
-                  <h3 className="text-xl font-serif font-bold mb-3">{item.title}</h3>
+                  <h3 className="text-xl font-bold mb-3">{item.title}</h3>
                   <p className="text-charcoal/60 leading-relaxed">{item.description}</p>
                 </div>
               </motion.div>
@@ -289,7 +289,7 @@ export default function HealthcareCloudMigration() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Results
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold">
+            <h2 className="text-3xl md:text-4xl font-bold">
               Measurable business impact
             </h2>
           </motion.div>
@@ -302,7 +302,7 @@ export default function HealthcareCloudMigration() {
               transition={{ duration: 0.5 }}
               className="bg-white p-8 rounded-xl shadow-sm"
             >
-              <h3 className="text-xl font-serif font-bold mb-6">Reliability Improvements</h3>
+              <h3 className="text-xl font-bold mb-6">Reliability Improvements</h3>
               <ul className="space-y-4">
                 {[
                   "99.99% uptime (from 99.5%)",
@@ -325,7 +325,7 @@ export default function HealthcareCloudMigration() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="bg-white p-8 rounded-xl shadow-sm"
             >
-              <h3 className="text-xl font-serif font-bold mb-6">Cost & Efficiency Gains</h3>
+              <h3 className="text-xl font-bold mb-6">Cost & Efficiency Gains</h3>
               <ul className="space-y-4">
                 {[
                   "65% reduction in infrastructure costs",
@@ -354,11 +354,11 @@ export default function HealthcareCloudMigration() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <p className="text-2xl md:text-3xl font-serif text-white leading-relaxed mb-8 italic">
+            <p className="text-2xl md:text-3xl text-white leading-relaxed mb-8 italic">
               "NEXDYNE's Digital Transformation Roadmap gave us the confidence to migrate our entire infrastructure to AWS without disrupting customer operations. We achieved 99.99% uptime and reduced infrastructure costs by 65%. The transformation has been game-changing for our business."
             </p>
             <div>
-              <p className="text-white font-serif font-bold text-lg">Dr. Emily Watson</p>
+              <p className="text-white font-bold text-lg">Dr. Emily Watson</p>
               <p className="text-white/60">Chief Technology Officer, MedFlow</p>
             </div>
           </motion.div>
@@ -378,7 +378,7 @@ export default function HealthcareCloudMigration() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold">
+            <h2 className="text-3xl md:text-4xl font-bold">
               More transformation stories
             </h2>
           </motion.div>
@@ -412,7 +412,7 @@ export default function HealthcareCloudMigration() {
                       <span className="text-xs font-bold uppercase tracking-wider text-primary mb-2 block">
                         {caseStudy.category}
                       </span>
-                      <h3 className="text-xl font-serif font-bold group-hover:text-primary transition-colors">
+                      <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
                         {caseStudy.title}
                       </h3>
                     </div>
@@ -434,7 +434,7 @@ export default function HealthcareCloudMigration() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Ready to transform your infrastructure?
             </h2>
             <p className="text-xl text-white/70 leading-relaxed mb-10">

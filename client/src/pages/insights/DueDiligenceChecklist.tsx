@@ -52,7 +52,7 @@ export default function DueDiligenceChecklist() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-4">
               The Investor <span className="text-primary">Due Diligence</span> Checklist
             </h1>
             
@@ -81,7 +81,7 @@ export default function DueDiligenceChecklist() {
               Investor due diligence has evolved from a formality into a comprehensive examination of every aspect of your business. The process typically takes 4-8 weeks and involves multiple workstreams: financial, legal, technical, commercial, and organizational. Companies that anticipate these requests and prepare documentation proactively move through diligence faster and avoid the momentum-killing delays that cause deals to fall apart.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
               <FileText className="w-8 h-8 text-primary" />
               Financial Due Diligence: The Foundation
             </h2>
@@ -95,7 +95,7 @@ export default function DueDiligenceChecklist() {
             </p>
 
             <div className="bg-primary/10 border-l-4 border-primary p-6 my-8 rounded-r-xl">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Financial Documents Investors Will Request</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Financial Documents Investors Will Request</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong>Historical financials:</strong> 3 years of audited or reviewed statements</span></li>
                 <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong>Monthly management accounts:</strong> P&L, balance sheet, cash flow for 12-24 months</span></li>
@@ -107,7 +107,7 @@ export default function DueDiligenceChecklist() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Customer and Revenue Verification
             </h2>
             
@@ -119,7 +119,7 @@ export default function DueDiligenceChecklist() {
               Prepare a customer list with contract values, start dates, renewal dates, and current status. Create cohort retention analyses that show how different customer vintages perform over time. Document your top 10-20 customers with details on how you acquired them, what value you deliver, and why they're likely to renew. Identify reference customers who can speak credibly about your impact.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
               <Shield className="w-8 h-8 text-primary" />
               Legal and Compliance Documentation
             </h2>
@@ -133,7 +133,7 @@ export default function DueDiligenceChecklist() {
             </p>
 
             <div className="bg-base/5 border-l-4 border-base/30 p-6 my-8 rounded-r-xl">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Legal Documents to Prepare</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Legal Documents to Prepare</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Corporate formation:</strong> Certificate of incorporation, bylaws, board minutes</li>
                 <li><strong>Financing history:</strong> All prior investment documents, SAFEs, convertible notes</li>
@@ -145,7 +145,7 @@ export default function DueDiligenceChecklist() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
               <Code className="w-8 h-8 text-primary" />
               Technical and Product Diligence
             </h2>
@@ -158,7 +158,7 @@ export default function DueDiligenceChecklist() {
               Prepare documentation of your technical architecture with diagrams showing system components and data flows. Create a technology stack overview listing all major technologies, frameworks, and third-party services. Document your security practices, including penetration testing results, compliance certifications (SOC 2, ISO 27001), and incident response procedures. Provide your product roadmap with planned features and technical initiatives.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
               <Briefcase className="w-8 h-8 text-primary" />
               Commercial Due Diligence: Market Validation
             </h2>
@@ -172,7 +172,7 @@ export default function DueDiligenceChecklist() {
             </p>
 
             <div className="bg-primary/10 border-l-4 border-primary p-6 my-8 rounded-r-xl">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Commercial Diligence Focus Areas</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Commercial Diligence Focus Areas</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Market opportunity:</strong> TAM/SAM/SOM with supporting data and assumptions</li>
                 <li><strong>Customer acquisition:</strong> CAC by channel, payback period, scaling potential</li>
@@ -183,7 +183,7 @@ export default function DueDiligenceChecklist() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
               <Users className="w-8 h-8 text-primary" />
               Organizational and Team Assessment
             </h2>
@@ -196,7 +196,7 @@ export default function DueDiligenceChecklist() {
               Prepare an organizational chart showing reporting structures and key roles. Create team bios highlighting relevant experience and accomplishments. Document your compensation philosophy with salary bands, equity guidelines, and benefit structures. Provide turnover data and explanations for any significant departures. Outline your recruiting plan with target hires, required skills, and timeline.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Building Your Data Room
             </h2>
             
@@ -209,7 +209,7 @@ export default function DueDiligenceChecklist() {
             </p>
 
             <div className="bg-base/5 border-l-4 border-base/30 p-6 my-8 rounded-r-xl">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Data Room Organization Structure</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Data Room Organization Structure</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>1. Company Overview:</strong> Pitch deck, executive summary, company history</li>
                 <li><strong>2. Financial Information:</strong> Statements, projections, metrics, cap table</li>
@@ -221,7 +221,7 @@ export default function DueDiligenceChecklist() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Managing the Diligence Process
             </h2>
             
@@ -233,7 +233,7 @@ export default function DueDiligenceChecklist() {
               Respond to information requests promptly and completely. Track all requests in a shared spreadsheet to ensure nothing falls through the cracks. Be transparent about issues rather than trying to hide them—investors will find problems eventually, and honesty builds trust. Use diligence conversations to build relationships with the investment team and demonstrate your operational sophistication.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Red Flags That Kill Deals
             </h2>
             
@@ -245,7 +245,7 @@ export default function DueDiligenceChecklist() {
               Address potential red flags proactively. If you know about issues, disclose them early with context and remediation plans. Investors can work through most problems if they're disclosed transparently. What kills deals is discovering material issues late in the process that weren't disclosed earlier.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               How NexDyne Prepares Companies for Diligence
             </h2>
             
@@ -280,7 +280,7 @@ export default function DueDiligenceChecklist() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
               Related Insights
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white">Continue reading</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">Continue reading</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -307,7 +307,7 @@ export default function DueDiligenceChecklist() {
               >
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.category}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>

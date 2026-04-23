@@ -76,7 +76,7 @@ export function MarketplaceManagement() {
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="p-3 bg-blue-100 rounded-lg h-fit">
-                    <ShoppingBag className="w-6 h-6 text-blue-600" />
+                    <ShoppingBag className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h4 className="font-bold text-charcoal mb-2">Content Syndication</h4>
@@ -85,7 +85,7 @@ export function MarketplaceManagement() {
                 </div>
                 <div className="flex gap-4">
                   <div className="p-3 bg-blue-100 rounded-lg h-fit">
-                    <BarChart4 className="w-6 h-6 text-blue-600" />
+                    <BarChart4 className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h4 className="font-bold text-charcoal mb-2">Retail Media Buying</h4>
@@ -94,7 +94,7 @@ export function MarketplaceManagement() {
                 </div>
                 <div className="flex gap-4">
                   <div className="p-3 bg-blue-100 rounded-lg h-fit">
-                    <RefreshCw className="w-6 h-6 text-blue-600" />
+                    <RefreshCw className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h4 className="font-bold text-charcoal mb-2">Brand Protection</h4>
@@ -113,22 +113,22 @@ export function MarketplaceManagement() {
             <div className="grid md:grid-cols-4 gap-4 sm:p-6 md:p-8">
               {[
                 {
-                  icon: <Globe className="w-8 h-8 text-blue-600" />,
+                  icon: <Globe className="w-8 h-8 text-primary" />,
                   title: "Global Reach",
                   desc: "Launch into new international markets (Europe, APAC) leveraging existing marketplace infrastructure."
                 },
                 {
-                  icon: <Truck className="w-8 h-8 text-blue-600" />,
+                  icon: <Truck className="w-8 h-8 text-primary" />,
                   title: "Fulfillment Logic",
                   desc: "Smart routing between FBA, FBM, and 3PLs to optimize shipping costs and delivery speed."
                 },
                 {
-                  icon: <Layers className="w-8 h-8 text-blue-600" />,
+                  icon: <Layers className="w-8 h-8 text-primary" />,
                   title: "Tech Stack",
                   desc: "Integration with ChannelAdvisor, Feedonomics, and ERPs for real-time data flow."
                 },
                 {
-                  icon: <CheckCircle2 className="w-8 h-8 text-blue-600" />,
+                  icon: <CheckCircle2 className="w-8 h-8 text-primary" />,
                   title: "Profitability",
                   desc: "SKU-level P&L analysis to ensure marketplace fees and ads don't erode margins."
                 }

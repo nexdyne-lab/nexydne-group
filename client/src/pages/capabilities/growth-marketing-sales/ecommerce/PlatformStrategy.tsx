@@ -76,7 +76,7 @@ export function PlatformStrategy() {
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="p-3 bg-blue-100 rounded-lg h-fit">
-                    <Server className="w-6 h-6 text-blue-600" />
+                    <Server className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h4 className="font-bold text-charcoal mb-2">API-First Design</h4>
@@ -85,7 +85,7 @@ export function PlatformStrategy() {
                 </div>
                 <div className="flex gap-4">
                   <div className="p-3 bg-blue-100 rounded-lg h-fit">
-                    <Code2 className="w-6 h-6 text-blue-600" />
+                    <Code2 className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h4 className="font-bold text-charcoal mb-2">Cloud-Native Scalability</h4>
@@ -94,7 +94,7 @@ export function PlatformStrategy() {
                 </div>
                 <div className="flex gap-4">
                   <div className="p-3 bg-blue-100 rounded-lg h-fit">
-                    <Database className="w-6 h-6 text-blue-600" />
+                    <Database className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h4 className="font-bold text-charcoal mb-2">Data Consistency</h4>
@@ -113,22 +113,22 @@ export function PlatformStrategy() {
             <div className="grid md:grid-cols-4 gap-4 sm:p-6 md:p-8">
               {[
                 {
-                  icon: <Workflow className="w-8 h-8 text-blue-600" />,
+                  icon: <Workflow className="w-8 h-8 text-primary" />,
                   title: "Discovery & Audit",
                   desc: "Deep dive into current stack, data models, and business logic to map dependencies."
                 },
                 {
-                  icon: <Layers className="w-8 h-8 text-blue-600" />,
+                  icon: <Layers className="w-8 h-8 text-primary" />,
                   title: "Architecture Design",
                   desc: "Blueprinting the target state with selected best-of-breed components (MACH alliance)."
                 },
                 {
-                  icon: <Cpu className="w-8 h-8 text-blue-600" />,
+                  icon: <Cpu className="w-8 h-8 text-primary" />,
                   title: "Incremental Build",
                   desc: "Developing core services and frontend layers in parallel sprints."
                 },
                 {
-                  icon: <CheckCircle2 className="w-8 h-8 text-blue-600" />,
+                  icon: <CheckCircle2 className="w-8 h-8 text-primary" />,
                   title: "Cutover & Scale",
                   desc: "Controlled rollout with A/B testing, monitoring, and performance tuning."
                 }

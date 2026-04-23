@@ -51,7 +51,7 @@ export default function DigitalGrowthPlaybook() {
               <span className="text-white/60">8 min read</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-white leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-4">
               The digital growth playbook for mid-market companies
             </h1>
             
@@ -122,15 +122,15 @@ export default function DigitalGrowthPlaybook() {
                   </h4>
                   <div className="grid md:grid-cols-3 gap-6 text-center">
                     <div>
-                      <div className="text-3xl font-serif font-bold text-primary">67%</div>
+                      <div className="text-3xl font-bold text-primary">67%</div>
                       <div className="text-sm text-charcoal/60">of mid-market companies plan to increase digital investment</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-serif font-bold text-primary">3.2x</div>
+                      <div className="text-3xl font-bold text-primary">3.2x</div>
                       <div className="text-sm text-charcoal/60">faster growth for digitally mature mid-market firms</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-serif font-bold text-primary">42%</div>
+                      <div className="text-3xl font-bold text-primary">42%</div>
                       <div className="text-sm text-charcoal/60">report digital channels as primary growth driver</div>
                     </div>
                   </div>
@@ -406,7 +406,7 @@ export default function DigitalGrowthPlaybook() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Ready to accelerate your growth?
             </h2>
             <p className="text-xl text-white/70 leading-relaxed mb-10">

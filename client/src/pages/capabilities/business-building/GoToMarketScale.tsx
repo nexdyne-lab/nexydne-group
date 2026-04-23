@@ -128,7 +128,7 @@ export default function GoToMarketScale() {
               className="lg:col-span-4"
             >
               <div className="lg:sticky lg:top-32">
-                <h3 className="text-2xl md:text-3xl font-serif font-bold text-charcoal mb-6">The Distribution Gap</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-charcoal mb-6">The Distribution Gap</h3>
                 <p className="text-lg text-charcoal/70 leading-relaxed mb-5 sm:mb-6 md:mb-8">
                   Mid-market companies often build compelling products but struggle to reach customers at scale. They lack the distribution partnerships, channel relationships, and go-to-market infrastructure that enable rapid market penetration. Customer acquisition costs remain high, sales cycles drag on, and growth stalls despite strong product-market fit.
                 </p>
@@ -172,28 +172,28 @@ export default function GoToMarketScale() {
                 
                 <div className="grid md:grid-cols-2 gap-x-12 gap-y-16">
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Partnership Ecosystem Development</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Partnership Ecosystem Development</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       We provide access to curated networks of distribution partners, technology integrators, and channel resellers across key industries. Our partnership team identifies high-value partners, facilitates introductions, and structures partnership agreements that align incentives. Rather than building partner networks from scratch, you leverage our established relationships to accelerate market access and expand distribution reach.
                     </p>
                   </div>
 
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Channel Optimization Frameworks</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Channel Optimization Frameworks</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       We implement systematic channel optimization frameworks that maximize revenue per channel while minimizing acquisition costs. Through channel performance analysis, partner enablement programs, and incentive structure design, we ensure each distribution channel operates at peak efficiency. Our frameworks identify underperforming channels early and reallocate resources to highest-ROI opportunities.
                     </p>
                   </div>
 
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Demand Generation Systems</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Demand Generation Systems</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       We build integrated demand generation systems that create predictable pipeline across multiple channels. Our approach combines content marketing, digital advertising, account-based marketing, and event strategies into cohesive campaigns that generate qualified leads at scale. Marketing automation and lead scoring ensure sales teams focus on highest-probability opportunities while nurturing programs convert longer-cycle prospects.
                     </p>
                   </div>
 
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Sales Acceleration Methodologies</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Sales Acceleration Methodologies</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       We deploy proven sales methodologies that compress sales cycles and improve win rates. Through sales process optimization, enablement program development, and performance analytics, we transform sales from art to science. Our frameworks provide repeatable playbooks for discovery, qualification, and closing while identifying and eliminating friction points that slow deals.
                     </p>
@@ -308,15 +308,15 @@ export default function GoToMarketScale() {
           >
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 mb-6 sm:mb-8 md:mb-12">
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-2">8 Weeks</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">8 Weeks</div>
                 <p className="text-sm text-charcoal/50 uppercase tracking-wider font-medium">Partner Network Activation</p>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-2">65%</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">65%</div>
                 <p className="text-sm text-charcoal/50 uppercase tracking-wider font-medium">Reduction in CAC</p>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-2">$4.8M</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">$4.8M</div>
                 <p className="text-sm text-charcoal/50 uppercase tracking-wider font-medium">Partner-Sourced Revenue (Year 1)</p>
               </div>
             </div>

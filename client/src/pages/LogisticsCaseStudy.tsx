@@ -42,14 +42,14 @@ export default function LogisticsCaseStudy() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:p-6 md:p-8">
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                <TrendingDown className="w-8 h-8 text-blue-600" />
+                <TrendingDown className="w-8 h-8 text-primary" />
               </div>
               <div className="text-4xl font-bold text-charcoal mb-2">92%</div>
               <div className="text-muted-foreground">Error reduction</div>
             </div>
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                <Clock className="w-8 h-8 text-blue-600" />
+                <Clock className="w-8 h-8 text-primary" />
               </div>
               <div className="text-4xl font-bold text-charcoal mb-2">120hrs</div>
               <div className="text-muted-foreground">Saved per week</div>
@@ -176,7 +176,7 @@ export default function LogisticsCaseStudy() {
             <h2 className="text-3xl font-bold text-charcoal mb-6">The Results</h2>
             <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 mb-6 sm:mb-8 md:mb-12">
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-slate-200">
-                <div className="text-5xl font-bold text-blue-600 mb-2">92%</div>
+                <div className="text-5xl font-bold text-primary mb-2">92%</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">Error reduction</div>
                 <p className="text-muted-foreground">
                   Shipment processing errors dropped from 8.3% to 0.7%, virtually eliminating delivery delays caused by data entry mistakes.
@@ -184,7 +184,7 @@ export default function LogisticsCaseStudy() {
               </div>
               
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg border border-slate-200">
-                <div className="text-5xl font-bold text-blue-600 mb-2">120hrs</div>
+                <div className="text-5xl font-bold text-primary mb-2">120hrs</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">Saved per week</div>
                 <p className="text-muted-foreground">
                   Staff time freed from manual data entry and invoice reconciliation, redirected to customer service and strategic initiatives.
@@ -212,19 +212,19 @@ export default function LogisticsCaseStudy() {
               <h3 className="text-2xl font-bold text-charcoal mb-4">Business Impact</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>Customer satisfaction scores increased from 3.2 to 4.6 out of 5</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>Support ticket volume decreased 62% despite 40% increase in shipment volume</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>On-time delivery rate improved from 87% to 96%</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5" />
                   <span>Invoice payment cycle reduced from 45 days to 12 days, improving cash flow</span>
                 </li>
               </ul>

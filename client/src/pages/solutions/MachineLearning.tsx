@@ -15,11 +15,11 @@ export default function MachineLearning() {
         <div className="container">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Link href="/">
-              <a className="hover:text-blue-600">Services</a>
+              <a className="hover:text-primary">Services</a>
             </Link>
             <span>/</span>
             <Link href="/solutions/data-solutions">
-              <a className="hover:text-blue-600">Data Solutions</a>
+              <a className="hover:text-primary">Data Solutions</a>
             </Link>
             <span>/</span>
             <span className="text-charcoal">Machine Learning</span>
@@ -64,7 +64,7 @@ export default function MachineLearning() {
                 {/* Benefit 1 */}
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
-                    <svg className="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                     </svg>
                   </div>
@@ -81,7 +81,7 @@ export default function MachineLearning() {
                 {/* Benefit 2 */}
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
-                    <svg className="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                     </svg>
                   </div>
@@ -98,7 +98,7 @@ export default function MachineLearning() {
                 {/* Benefit 3 */}
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
-                    <svg className="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
@@ -115,7 +115,7 @@ export default function MachineLearning() {
                 {/* Benefit 4 */}
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
-                    <svg className="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
                   </div>
@@ -306,7 +306,7 @@ export default function MachineLearning() {
               <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all group cursor-pointer">
                 <img src="/retail-demand-forecasting.80929293.jpg" alt="Retail Demand Forecasting" className="h-48 w-full object-cover" />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
                     Retailer Reduces Stockouts 35% with Demand Forecasting
                   </h3>
                   <p className="text-charcoal/80 mb-4">
@@ -325,7 +325,7 @@ export default function MachineLearning() {
               <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all group cursor-pointer">
                 <img src="/telecom-churn-prediction.8d1a6957.jpg" alt="Telecom Churn Prediction" className="h-48 w-full object-cover" />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
                     Telecom Provider Cuts Churn 22% with Predictive Model
                   </h3>
                   <p className="text-charcoal/80 mb-4">
@@ -344,7 +344,7 @@ export default function MachineLearning() {
               <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all group cursor-pointer">
                 <img src="/financial-fraud-detection.a2088bd5.jpg" alt="Financial Fraud Detection" className="h-48 w-full object-cover" />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
                     Bank Detects Fraud 40% Faster with ML Anomaly Detection
                   </h3>
                   <p className="text-charcoal/80 mb-4">

@@ -52,7 +52,7 @@ const MiddlewareStrategy = () => {
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             <div>
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6 eb-garamond">
-                Decoupling for <span className="text-blue-600">Resilience</span>
+                Decoupling for <span className="text-primary">Resilience</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 Directly connecting your CRM to your Marketing Automation Platform creates a 
@@ -68,7 +68,7 @@ const MiddlewareStrategy = () => {
               
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <div className="p-2 rounded-lg bg-blue-50 text-blue-600 mt-1">
+                  <div className="p-2 rounded-lg bg-blue-50 text-primary mt-1">
                     <Server className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div>
@@ -77,7 +77,7 @@ const MiddlewareStrategy = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="p-2 rounded-lg bg-blue-50 text-blue-600 mt-1">
+                  <div className="p-2 rounded-lg bg-blue-50 text-primary mt-1">
                     <Zap className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div>
@@ -86,7 +86,7 @@ const MiddlewareStrategy = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="p-2 rounded-lg bg-blue-50 text-blue-600 mt-1">
+                  <div className="p-2 rounded-lg bg-blue-50 text-primary mt-1">
                     <RefreshCw className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div>
@@ -120,7 +120,7 @@ const MiddlewareStrategy = () => {
                         <div className="text-sm font-bold text-charcoal">Sync Latency</div>
                         <div className="text-xs text-muted-foreground">Average</div>
                       </div>
-                      <div className="text-xl font-bold text-blue-600">120ms</div>
+                      <div className="text-xl font-bold text-primary">120ms</div>
                     </div>
                     
                     <div className="p-4 bg-slate-50 rounded-lg sm:rounded-xl border border-slate-100 flex justify-between items-center">
@@ -169,7 +169,7 @@ const MiddlewareStrategy = () => {
               </p>
             </div>
             <Link href="/cases">
-              <a className="inline-flex items-center font-bold text-blue-600 hover:text-blue-700 transition-colors">
+              <a className="inline-flex items-center font-bold text-primary hover:text-blue-700 transition-colors">
                 View all cases <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </a>
             </Link>
@@ -205,10 +205,10 @@ const MiddlewareStrategy = () => {
               <Link key={index} href={story.link}>
                 <a className="group block h-full bg-slate-50 rounded-xl sm:rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 border border-slate-100">
                   <div className="p-4 sm:p-6 md:p-8 h-full flex flex-col">
-                    <div className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-4">
+                    <div className="text-xs font-bold text-primary uppercase tracking-wider mb-4">
                       {story.category}
                     </div>
-                    <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
                       {story.title}
                     </h3>
                     <p className="text-muted-foreground mb-5 sm:mb-6 md:mb-8 flex-grow">
@@ -258,7 +258,7 @@ const MiddlewareStrategy = () => {
               }
             ].map((item, index) => (
               <div key={index} className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
-                <div className="w-12 h-12 bg-blue-50 rounded-lg sm:rounded-xl flex items-center justify-center text-blue-600 mb-6 font-bold text-base sm:text-lg md:text-xl">
+                <div className="w-12 h-12 bg-blue-50 rounded-lg sm:rounded-xl flex items-center justify-center text-primary mb-6 font-bold text-base sm:text-lg md:text-xl">
                   {index + 1}
                 </div>
                 <h3 className="text-xl font-bold text-charcoal mb-3">{item.title}</h3>

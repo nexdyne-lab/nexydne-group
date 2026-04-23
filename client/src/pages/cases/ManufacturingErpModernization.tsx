@@ -166,15 +166,15 @@ export default function ManufacturingErpModernization() {
           <h2 className="text-4xl font-bold mb-12">The Results</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">52%</div>
+              <div className="text-5xl font-bold text-primary mb-2">52%</div>
               <div className="text-sm text-muted-foreground">Faster order processing</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">$6.2M</div>
+              <div className="text-5xl font-bold text-primary mb-2">$6.2M</div>
               <div className="text-sm text-muted-foreground">Annual cost savings</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-blue-600 mb-2">96%</div>
+              <div className="text-5xl font-bold text-primary mb-2">96%</div>
               <div className="text-sm text-muted-foreground">On-time delivery rate</div>
             </div>
           </div>

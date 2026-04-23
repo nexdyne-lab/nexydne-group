@@ -54,15 +54,15 @@ export default function BankCrossSell() {
 
             <div className="flex flex-wrap gap-8">
               <div>
-                <div className="text-4xl font-serif font-bold text-primary">2.1x</div>
+                <div className="text-4xl font-bold text-primary">2.1x</div>
                 <div className="text-white/60 text-sm">Cross-sell conversion</div>
               </div>
               <div>
-                <div className="text-4xl font-serif font-bold text-primary">$640K</div>
+                <div className="text-4xl font-bold text-primary">$640K</div>
                 <div className="text-white/60 text-sm">New revenue generated</div>
               </div>
               <div>
-                <div className="text-4xl font-serif font-bold text-primary">45%</div>
+                <div className="text-4xl font-bold text-primary">45%</div>
                 <div className="text-white/60 text-sm">Customer engagement increase</div>
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function BankCrossSell() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div className="bg-subtle p-8 rounded-xl">
-                <h3 className="font-serif font-bold text-xl mb-6">Project Overview</h3>
+                <h3 className="font-bold text-xl mb-6">Project Overview</h3>
                 <div className="space-y-6">
                   <div>
                     <div className="text-charcoal/50 text-sm mb-1">Industry</div>
@@ -199,7 +199,7 @@ export default function BankCrossSell() {
                 className="bg-white/5 p-8 rounded-xl"
               >
                 <div className="text-primary text-sm font-bold mb-4">{item.phase}</div>
-                <h3 className="text-xl font-serif font-bold text-white mb-4">{item.title}</h3>
+                <h3 className="text-xl font-bold text-white mb-4">{item.title}</h3>
                 <p className="text-white/60 leading-relaxed mb-6">{item.description}</p>
                 <ul className="space-y-3">
                   {item.outcomes.map((outcome, i) => (
@@ -248,7 +248,7 @@ export default function BankCrossSell() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-5xl font-serif font-bold text-primary mb-2">{stat.value}</div>
+                <div className="text-5xl font-bold text-primary mb-2">{stat.value}</div>
                 <div className="font-semibold mb-1">{stat.label}</div>
                 <div className="text-charcoal/50 text-sm">{stat.detail}</div>
               </motion.div>
@@ -264,7 +264,7 @@ export default function BankCrossSell() {
             className="bg-subtle p-12 rounded-2xl max-w-4xl mx-auto"
           >
             <Quote className="w-12 h-12 text-primary/30 mb-6" />
-            <blockquote className="text-2xl font-serif italic text-charcoal/80 leading-relaxed mb-8">
+            <blockquote className="text-2xl text-charcoal/80 leading-relaxed mb-8">
               "The next-best-action engine NEXDYNE built transformed our cross-sell strategy. We went from generic product pitches to personalized recommendations that doubled our conversion rate. Our customers feel understood, not marketed to."
             </blockquote>
             <div>

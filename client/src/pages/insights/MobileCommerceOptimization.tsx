@@ -69,11 +69,11 @@ export function MobileCommerceOptimization() {
               <div className="sticky top-32">
                 <h4 className="font-bold text-charcoal mb-4">Table of Contents</h4>
                 <ul className="space-y-3 text-sm text-muted-foreground border-l border-slate-200 pl-4">
-                  <li className="hover:text-blue-600 cursor-pointer">The Mobile Gap</li>
-                  <li className="hover:text-blue-600 cursor-pointer">Speed is Feature #1</li>
-                  <li className="hover:text-blue-600 cursor-pointer">Thumb-Friendly UX</li>
-                  <li className="hover:text-blue-600 cursor-pointer">Frictionless Checkout</li>
-                  <li className="hover:text-blue-600 cursor-pointer">PWA vs Native</li>
+                  <li className="hover:text-primary cursor-pointer">The Mobile Gap</li>
+                  <li className="hover:text-primary cursor-pointer">Speed is Feature #1</li>
+                  <li className="hover:text-primary cursor-pointer">Thumb-Friendly UX</li>
+                  <li className="hover:text-primary cursor-pointer">Frictionless Checkout</li>
+                  <li className="hover:text-primary cursor-pointer">PWA vs Native</li>
                 </ul>
                 
                 <div className="mt-12">
@@ -109,7 +109,7 @@ export function MobileCommerceOptimization() {
                 </p>
                 <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 my-6">
                   <div className="flex gap-4">
-                    <MousePointerClick className="w-8 h-8 text-blue-600 flex-shrink-0" />
+                    <MousePointerClick className="w-8 h-8 text-primary flex-shrink-0" />
                     <div>
                       <h4 className="font-bold text-charcoal mb-2">Design Rules</h4>
                       <ul className="text-sm text-muted-foreground space-y-1">

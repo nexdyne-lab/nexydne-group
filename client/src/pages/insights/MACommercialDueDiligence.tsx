@@ -52,7 +52,7 @@ export default function MACommercialDueDiligence() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-4">
               Commercial Due Diligence: <span className="text-primary">The Questions That Matter Most</span>
             </h1>
             
@@ -81,7 +81,7 @@ export default function MACommercialDueDiligence() {
               Commercial due diligence is where acquisition theses are validated or destroyed. While financial diligence confirms historical performance, commercial diligence assesses whether that performance can continue and grow. It examines market dynamics, competitive positioning, customer relationships, and growth potential with a skeptical eye toward management projections.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
               <Target className="w-8 h-8 text-primary" />
               Market Validation: Is the Opportunity Real?
             </h2>
@@ -95,7 +95,7 @@ export default function MACommercialDueDiligence() {
             </p>
 
             <div className="bg-primary/10 border-l-4 border-primary p-6 my-8 rounded-r-xl">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Critical Market Assessment Questions</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Critical Market Assessment Questions</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Market size:</strong> What's the addressable customer universe? How did you calculate it?</li>
                 <li><strong>Growth drivers:</strong> What's driving market growth? Are these trends sustainable?</li>
@@ -106,7 +106,7 @@ export default function MACommercialDueDiligence() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
               <Scale className="w-8 h-8 text-primary" />
               Competitive Positioning: Why Do Customers Choose This Company?
             </h2>
@@ -119,7 +119,7 @@ export default function MACommercialDueDiligence() {
               Map the competitive landscape comprehensively. Who are the direct competitors? What about indirect alternatives or substitute solutions? How do competitors' capabilities, pricing, and go-to-market approaches compare? What competitive moves are likely in the next 2-3 years? The goal is to assess whether the target's competitive position is sustainable or vulnerable to erosion.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
               <Users className="w-8 h-8 text-primary" />
               Customer Relationship Quality: Will They Stay?
             </h2>
@@ -133,7 +133,7 @@ export default function MACommercialDueDiligence() {
             </p>
 
             <div className="bg-base/5 border-l-4 border-base/30 p-6 my-8 rounded-r-xl">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Customer Relationship Assessment Framework</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Customer Relationship Assessment Framework</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Concentration analysis:</strong> Revenue distribution across customer base</li>
                 <li><strong>Contract terms:</strong> Length, renewal provisions, termination rights</li>
@@ -144,7 +144,7 @@ export default function MACommercialDueDiligence() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Product-Market Fit: Is This Truly Solving Customer Problems?
             </h2>
             
@@ -156,7 +156,7 @@ export default function MACommercialDueDiligence() {
               Assess product-market fit by examining usage metrics, feature adoption, and customer outcomes. Are customers using the product extensively or minimally? Which features drive value? Can customers quantify the ROI they're achieving? Strong product-market fit means customers can't imagine going back to their previous solution. Weak fit means they're using it because they've already paid for it.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
               <TrendingUp className="w-8 h-8 text-primary" />
               Go-to-Market Effectiveness: Can This Scale?
             </h2>
@@ -170,7 +170,7 @@ export default function MACommercialDueDiligence() {
             </p>
 
             <div className="bg-primary/10 border-l-4 border-primary p-6 my-8 rounded-r-xl">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Go-to-Market Assessment Areas</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Go-to-Market Assessment Areas</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Channel effectiveness:</strong> CAC, conversion rates, and ROI by channel</li>
                 <li><strong>Sales process:</strong> Pipeline stages, conversion rates, cycle time</li>
@@ -181,7 +181,7 @@ export default function MACommercialDueDiligence() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Growth Projections: Achievable or Aspirational?
             </h2>
             
@@ -193,7 +193,7 @@ export default function MACommercialDueDiligence() {
               Pay particular attention to inflection points in the forecast where growth accelerates. What specific initiatives or market changes drive these inflections? Are they realistic given competitive dynamics and organizational capabilities? Conservative projections that you can defend are far more valuable than aggressive projections that collapse under scrutiny.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Synergy Validation: Can We Actually Capture This Value?
             </h2>
             
@@ -205,7 +205,7 @@ export default function MACommercialDueDiligence() {
               Cost synergies are more predictable but still require careful assessment. Identify specific cost reduction opportunities with detailed implementation plans. Understand one-time costs required to achieve synergies. Model the timing of synergy realization realistically—most synergies take 12-24 months to fully capture, not the 6-12 months often assumed in deal models.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               How NexDyne Conducts Commercial Diligence
             </h2>
             
@@ -240,7 +240,7 @@ export default function MACommercialDueDiligence() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
               Related Insights
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white">Continue reading</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">Continue reading</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -267,7 +267,7 @@ export default function MACommercialDueDiligence() {
               >
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.category}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>

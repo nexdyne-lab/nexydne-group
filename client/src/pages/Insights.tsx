@@ -194,7 +194,7 @@ export default function Insights() {
       <section className="bg-white pt-32 pb-16 border-b border-border">
         <div className="container">
           <div className="max-w-4xl">
-            <h1 className="text-5xl md:text-6xl font-serif font-normal text-charcoal mb-3">
+            <h1 className="text-5xl md:text-6xl font-normal text-charcoal mb-3">
               Insights
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
@@ -214,7 +214,7 @@ export default function Insights() {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${
                   selectedCategory === category
-                    ? 'bg-red-600 text-white'
+                    ? 'bg-primary text-white'
                     : 'bg-white text-charcoal/80 hover:bg-subtle border border-border'
                 }`}
               >
@@ -255,7 +255,7 @@ export default function Insights() {
                   </p>
                   
                   {/* Title */}
-                  <h3 className="text-xl font-bold text-charcoal mb-3 leading-tight group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-3 leading-tight group-hover:text-primary transition-colors">
                     {insight.title}
                   </h3>
                   
@@ -326,7 +326,7 @@ export default function Insights() {
                     </p>
                     
                     {/* Title */}
-                    <h3 className="text-base font-bold text-charcoal mb-2 leading-tight group-hover:text-blue-600 transition-colors line-clamp-2">
+                    <h3 className="text-base font-bold text-charcoal mb-2 leading-tight group-hover:text-primary transition-colors line-clamp-2">
                       {insight.title}
                     </h3>
                     
@@ -349,7 +349,7 @@ export default function Insights() {
 
             {/* Load More Button */}
             <div className="text-center mt-12">
-              <button className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded transition-colors">
+              <button className="px-8 py-4 bg-primary hover:bg-red-700 text-white font-semibold rounded transition-colors">
                 LOAD MORE
               </button>
             </div>
@@ -371,7 +371,7 @@ export default function Insights() {
       <section className="py-12 sm:py-16 lg:py-12 sm:py-16 lg:py-20 bg-gray-900 text-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-normal mb-6">
+            <h2 className="text-3xl md:text-4xl font-normal mb-6">
               Stay informed
             </h2>
             <p className="text-xl text-muted-foreground/50 mb-8">
@@ -383,7 +383,7 @@ export default function Insights() {
                 placeholder="Enter your email"
                 className="flex-1 px-5 py-4 rounded bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-white/40"
               />
-              <button className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded transition-colors inline-flex items-center justify-center gap-2">
+              <button className="px-8 py-4 bg-primary hover:bg-red-700 text-white font-semibold rounded transition-colors inline-flex items-center justify-center gap-2">
                 Subscribe <ArrowRight className="w-4 h-4" />
               </button>
             </div>

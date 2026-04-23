@@ -64,7 +64,7 @@ export default function CustomerInsights() {
               <div className="space-y-8">
                 <div className="flex gap-6">
                   <div className="flex-shrink-0 w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
-                    <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                     </svg>
@@ -79,7 +79,7 @@ export default function CustomerInsights() {
                 
                 <div className="flex gap-6">
                   <div className="flex-shrink-0 w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
-                    <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                     </svg>
                   </div>
@@ -93,7 +93,7 @@ export default function CustomerInsights() {
                 
                 <div className="flex gap-6">
                   <div className="flex-shrink-0 w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
-                    <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
@@ -107,7 +107,7 @@ export default function CustomerInsights() {
                 
                 <div className="flex gap-6">
                   <div className="flex-shrink-0 w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
-                    <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
@@ -257,7 +257,7 @@ export default function CustomerInsights() {
                   How do you transform anonymous visitors into loyal customers? This retailer did it with advanced analytics and personalized experiences.
                 </p>
                 <Link href="/cases/ecommerce-conversion-insights">
-                  <a className="text-blue-600 font-semibold hover:text-blue-700 flex items-center gap-2">
+                  <a className="text-primary font-semibold hover:text-blue-700 flex items-center gap-2">
                     Read case study
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -283,7 +283,7 @@ export default function CustomerInsights() {
                   Complex onboarding was killing conversions. Journey mapping revealed the friction points—and the path to dramatic improvement.
                 </p>
                 <Link href="/cases/financial-journey-analytics">
-                  <a className="text-blue-600 font-semibold hover:text-blue-700 flex items-center gap-2">
+                  <a className="text-primary font-semibold hover:text-blue-700 flex items-center gap-2">
                     Read case study
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -309,7 +309,7 @@ export default function CustomerInsights() {
                   Predictive analytics identified which trial users would convert—enabling targeted interventions that dramatically improved outcomes.
                 </p>
                 <Link href="/cases/saas-predictive-insights">
-                  <a className="text-blue-600 font-semibold hover:text-blue-700 flex items-center gap-2">
+                  <a className="text-primary font-semibold hover:text-blue-700 flex items-center gap-2">
                     Read case study
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

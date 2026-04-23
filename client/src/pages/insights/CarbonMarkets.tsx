@@ -24,10 +24,10 @@ export default function CarbonMarkets() {
               <span className="mx-2">/</span>
               <span className="text-blue-900">Article</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-serif font-bold tracking-tight text-charcoal mb-4 leading-[1.1]">
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-4 leading-[1.1]">
               Carbon Markets 2025: From Voluntary to Compliance
             </h1>
-            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light font-serif">
+            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light ">
               As regulatory frameworks tighten, the distinction between voluntary and compliance carbon markets is blurring. Here is what business leaders need to know.
             </p>
           </div>
@@ -46,12 +46,12 @@ export default function CarbonMarkets() {
                 The voluntary carbon market (VCM) has grown rapidly in recent years, driven by corporate net-zero commitments. However, concerns about credit quality and a lack of standardization have held it back. Now, as we approach 2025, a new era is emerging—one defined by convergence with compliance markets and rigorous integrity standards.
               </p>
               
-              <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">The Integrity Turn</h3>
+              <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">The Integrity Turn</h3>
               <p className="text-muted-foreground">
                 The "wild west" days of carbon offsetting are ending. New guidance from the Integrity Council for the Voluntary Carbon Market (ICVCM) and the Voluntary Carbon Markets Integrity Initiative (VCMI) is setting a high bar for what counts as a high-quality credit. Buyers are increasingly demanding removal credits over avoidance credits, and they are willing to pay a premium for them.
               </p>
 
-              <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Regulatory Convergence</h3>
+              <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Regulatory Convergence</h3>
               <p className="text-muted-foreground">
                 Governments are stepping in. Article 6 of the Paris Agreement is creating a framework for international carbon trading, and jurisdictions like the EU and California are exploring ways to integrate high-quality voluntary credits into their compliance schemes. This convergence will likely drive up prices and liquidity.
               </p>
@@ -60,7 +60,7 @@ export default function CarbonMarkets() {
                 "The future of carbon markets lies in high-integrity, transparent, and regulated trading systems that can unlock the trillions needed for climate action."
               </blockquote>
 
-              <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Strategic Implications</h3>
+              <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Strategic Implications</h3>
               <p className="text-muted-foreground">
                 For companies, this means that carbon credits can no longer be a "check-the-box" exercise. They must be part of a comprehensive decarbonization strategy that prioritizes internal abatement. When credits are used, they must be high-quality and verified.
               </p>

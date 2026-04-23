@@ -92,7 +92,7 @@ export default function DigitalTransformationAccelerator() {
               className="lg:col-span-4"
             >
               <div className="lg:sticky lg:top-32">
-                <h3 className="text-2xl md:text-3xl font-serif font-bold text-charcoal mb-6">The Architecture Gap</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-charcoal mb-6">The Architecture Gap</h3>
                 <p className="text-lg text-charcoal/70 leading-relaxed mb-5 sm:mb-6 md:mb-8">
                   Most mid-market companies inherit technology stacks that were never designed for scale. Legacy systems accumulate through organic growth, acquisitions, and tactical decisions, creating fragmented architectures that slow innovation and increase operational risk.
                 </p>
@@ -136,28 +136,28 @@ export default function DigitalTransformationAccelerator() {
                 
                 <div className="grid md:grid-cols-2 gap-x-12 gap-y-16">
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Enterprise Architecture Design</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Enterprise Architecture Design</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       We design enterprise architecture frameworks that balance standardization with flexibility. Our approach maps business capabilities to technology components, identifies integration patterns, and establishes governance structures that prevent architectural drift. The result is a coherent technology blueprint that guides investment decisions and ensures new systems integrate seamlessly with existing infrastructure.
                     </p>
                   </div>
 
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Cloud Migration Strategy</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Cloud Migration Strategy</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       Our cloud migration methodology prioritizes business continuity while maximizing cloud benefits. We assess workload suitability, design hybrid architectures, and execute phased migrations that minimize disruption. Whether moving to AWS, Azure, or Google Cloud, we implement cloud-native patterns that reduce infrastructure costs while improving scalability, reliability, and security.
                     </p>
                   </div>
 
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Data Platform Engineering</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">Data Platform Engineering</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       We build modern data platforms that unify fragmented data sources into cohesive analytics infrastructure. Our platforms combine data warehousing, real-time streaming, and machine learning pipelines to support both operational reporting and advanced analytics. We implement data governance frameworks that ensure quality, security, and compliance while enabling self-service analytics for business teams.
                     </p>
                   </div>
 
                   <div className="group">
-                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">API Integration Frameworks</h3>
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">API Integration Frameworks</h3>
                     <p className="text-charcoal/70 leading-relaxed">
                       Our API integration frameworks transform brittle point-to-point integrations into scalable, maintainable architectures. We design RESTful and event-driven APIs that enable seamless data flow between systems, implement API gateways for security and monitoring, and establish integration patterns that accelerate future system additions. This foundation supports rapid business process automation and partner ecosystem development.
                     </p>
@@ -281,7 +281,7 @@ export default function DigitalTransformationAccelerator() {
             
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8">
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-4">40-60%</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">40-60%</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">Infrastructure Cost Reduction</div>
                 <p className="text-charcoal/70">
                   Through cloud optimization, workload right-sizing, and automated scaling
@@ -289,7 +289,7 @@ export default function DigitalTransformationAccelerator() {
               </div>
 
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-4">70%</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">70%</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">Faster Integration Delivery</div>
                 <p className="text-charcoal/70">
                   Standardized API frameworks accelerate new system integrations
@@ -297,7 +297,7 @@ export default function DigitalTransformationAccelerator() {
               </div>
 
               <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg">
-                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary mb-4">99.9%</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">99.9%</div>
                 <div className="text-lg font-semibold text-charcoal mb-2">System Availability</div>
                 <p className="text-charcoal/70">
                   Enterprise-grade reliability through redundancy and automated failover

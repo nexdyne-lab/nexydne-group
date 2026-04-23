@@ -98,7 +98,7 @@ export default function MartechAssessment() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
-            <div className="space-y-8 text-lg sm:text-xl text-charcoal/80 leading-relaxed font-serif">
+            <div className="space-y-8 text-lg sm:text-xl text-charcoal/80 leading-relaxed ">
               <p>
                 The average mid-market company uses 12-15 marketing tools—and most of them barely talk to each other. What starts as solving individual problems quickly becomes a tangled web of overlapping capabilities, data silos, and integration headaches. The result: marketing teams spend more time wrestling with technology than using it to drive growth.
               </p>
@@ -170,7 +170,7 @@ export default function MartechAssessment() {
                   <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
                     {item.icon}
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 leading-relaxed">
@@ -229,13 +229,13 @@ export default function MartechAssessment() {
                 className="group"
               >
                 <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-base/5 hover:bg-base transition-all duration-500 hover:scale-[1.02]">
-                  <div className="text-4xl font-serif font-bold text-primary mb-2 group-hover:text-white transition-colors">
+                  <div className="text-4xl font-bold text-primary mb-2 group-hover:text-white transition-colors">
                     {item.metric}
                   </div>
                   <div className="text-sm text-charcoal/60 mb-6 group-hover:text-white/60 transition-colors">
                     {item.metricLabel}
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-white transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-white transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-charcoal/70 leading-relaxed group-hover:text-white/70 transition-colors">
@@ -297,7 +297,7 @@ export default function MartechAssessment() {
                     <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
                       {item.icon}
                     </div>
-                    <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors">
+                    <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-white/60 leading-relaxed mb-6">
@@ -381,7 +381,7 @@ export default function MartechAssessment() {
                     />
                   </div>
                   <span className="text-xs font-bold text-primary uppercase tracking-wider mb-3 block">Article</span>
-                  <h3 className="text-lg font-serif font-bold text-charcoal mb-3 group-hover:text-primary transition-colors leading-tight">
+                  <h3 className="text-lg font-bold text-charcoal mb-3 group-hover:text-primary transition-colors leading-tight">
                     {item.title}
                   </h3>
                   <p className="text-charcoal/60 text-sm leading-relaxed mb-4">

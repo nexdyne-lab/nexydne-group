@@ -175,7 +175,7 @@ export default function EnterpriseTransformationHub() {
               Enterprise Transformation
             </span>
             
-            <h1 className="text-5xl md:text-7xl lg:text-8xl eb-garamond  tracking-tight text-white leading-[1.05] mb-4">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl eb-garamond tracking-tight text-white leading-[1.05] mb-4">
               Transform Your <br />
               <span className="text-primary">Enterprise</span>
             </h1>
@@ -248,12 +248,12 @@ export default function EnterpriseTransformationHub() {
                         {pillar.icon}
                       </div>
                       <div className="text-right">
-                        <div className="text-3xl font-serif font-bold text-primary">{pillar.stats.value}</div>
+                        <div className="text-3xl font-bold text-primary">{pillar.stats.value}</div>
                         <div className="text-sm text-charcoal/50">{pillar.stats.label}</div>
                       </div>
                     </div>
                     
-                    <h3 className="text-2xl font-serif font-bold mb-4 group-hover:text-primary transition-colors">
+                    <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">
                       {pillar.title}
                     </h3>
                     
@@ -333,9 +333,9 @@ export default function EnterpriseTransformationHub() {
                     <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center text-primary">
                       {phase.icon}
                     </div>
-                    <span className="text-4xl font-serif font-bold text-white/20">{phase.step}</span>
+                    <span className="text-4xl font-bold text-white/20">{phase.step}</span>
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-white mb-4">{phase.title}</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">{phase.title}</h3>
                   <p className="text-white/60 leading-relaxed text-sm">{phase.description}</p>
                 </div>
                 {index < 3 && (
@@ -397,7 +397,7 @@ export default function EnterpriseTransformationHub() {
                       <span className="text-xs font-bold uppercase tracking-wider text-primary mb-2 block">
                         {study.category}
                       </span>
-                      <h3 className="text-lg font-serif font-bold mb-3 group-hover:text-primary transition-colors line-clamp-2">
+                      <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors line-clamp-2">
                         {study.title}
                       </h3>
                       <p className="text-charcoal/60 text-sm mb-4 line-clamp-2">
@@ -406,7 +406,7 @@ export default function EnterpriseTransformationHub() {
                       <div className="flex gap-6">
                         {study.stats.map((stat, statIndex) => (
                           <div key={statIndex}>
-                            <div className="text-xl font-serif font-bold text-primary">{stat.value}</div>
+                            <div className="text-xl font-bold text-primary">{stat.value}</div>
                             <div className="text-charcoal/40 text-xs">{stat.label}</div>
                           </div>
                         ))}
@@ -450,7 +450,7 @@ export default function EnterpriseTransformationHub() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-5xl md:text-6xl font-serif font-bold text-white mb-2">
+                <div className="text-5xl md:text-6xl font-bold text-white mb-2">
                   {stat.value}
                 </div>
                 <div className="text-white/80">{stat.label}</div>
@@ -502,7 +502,7 @@ export default function EnterpriseTransformationHub() {
                     <span className="text-xs font-bold uppercase tracking-wider text-primary mb-3 block">
                       {insight.category}
                     </span>
-                    <h3 className="text-lg font-serif font-bold mb-3 group-hover:text-primary transition-colors">
+                    <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">
                       {insight.title}
                     </h3>
                     <p className="text-charcoal/60 text-sm mb-4 line-clamp-2">

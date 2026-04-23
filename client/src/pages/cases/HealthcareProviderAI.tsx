@@ -33,7 +33,7 @@ export default function HealthcareProviderAI() {
               <span className="text-secondary text-sm font-semibold tracking-wider uppercase mb-4 block">
                 Healthcare Provider • Healthcare & Life Sciences
               </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-3 font-serif">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-3 ">
                 Reducing patient wait times by 35% with predictive analytics
               </h1>
               <p className="text-xl text-white/80 leading-relaxed max-w-3xl">
@@ -81,7 +81,7 @@ export default function HealthcareProviderAI() {
               viewport={{ once: true }}
             >
               <h2 className="text-sm font-semibold text-destructive tracking-wider uppercase mb-6">Executive Summary</h2>
-              <p className="text-xl md:text-2xl text-charcoal leading-relaxed font-serif mb-8">
+              <p className="text-xl md:text-2xl text-charcoal leading-relaxed mb-8">
                 A regional healthcare system with 12 hospitals and 200+ outpatient facilities was facing declining patient satisfaction scores due to long wait times. NexDyne implemented a predictive analytics platform that optimized scheduling, resource allocation, and patient flow—reducing average wait times by 35% while increasing throughput by 28%.
               </p>
               <p className="text-lg text-charcoal/70 leading-relaxed">
@@ -101,7 +101,7 @@ export default function HealthcareProviderAI() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-10 font-serif">The Challenge</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-10 ">The Challenge</h2>
               
               <p className="text-lg text-charcoal/80 leading-relaxed mb-8">
                 The healthcare system served over 2 million patients annually across their network. Despite significant investments in facilities and staff, patient satisfaction scores had declined for three consecutive years, with wait times cited as the primary concern. Average emergency department wait times exceeded 4 hours during peak periods, and outpatient appointment no-show rates had climbed to 22%.
@@ -112,7 +112,7 @@ export default function HealthcareProviderAI() {
               </p>
 
               <blockquote className="border-l-4 border-destructive pl-8 my-12">
-                <p className="text-2xl md:text-3xl text-charcoal font-serif italic leading-relaxed mb-4">
+                <p className="text-2xl md:text-3xl text-charcoal leading-relaxed mb-4">
                   "Our patients were voting with their feet. We were losing market share to competitors who could offer shorter wait times and more convenient scheduling. We needed to fundamentally rethink how we manage patient flow."
                 </p>
                 <cite className="text-sm text-charcoal/60 not-italic">— Chief Operating Officer</cite>
@@ -135,7 +135,7 @@ export default function HealthcareProviderAI() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-10 font-serif">Our Approach</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-10 ">Our Approach</h2>
               
               <p className="text-lg text-charcoal/80 leading-relaxed mb-12">
                 NexDyne deployed a comprehensive patient flow optimization platform that combined predictive analytics, real-time monitoring, and intelligent scheduling to transform operations across the healthcare network. The approach balanced the need for efficiency with the reality that healthcare is inherently variable and patient-centered.
@@ -147,7 +147,7 @@ export default function HealthcareProviderAI() {
                   <span className="text-sm font-semibold text-primary tracking-wider">PHASE 1</span>
                   <span className="text-sm text-charcoal/40">Weeks 1-8</span>
                 </div>
-                <h3 className="text-2xl font-bold text-charcoal mb-6 font-serif">Predictive Demand Modeling</h3>
+                <h3 className="text-2xl font-bold text-charcoal mb-6 ">Predictive Demand Modeling</h3>
                 <p className="text-lg text-charcoal/80 leading-relaxed">
                   We built machine learning models that predict patient volumes by hour, day, and season—accounting for factors like weather, local events, flu seasons, and historical patterns to enable proactive resource planning. The models integrated over 50 data sources and achieved 94% accuracy in 72-hour demand forecasting, giving operations teams unprecedented visibility into future patient flow. Department-specific prediction models were created to account for the unique patterns of emergency, surgical, and outpatient services.
                 </p>
@@ -159,7 +159,7 @@ export default function HealthcareProviderAI() {
                   <span className="text-sm font-semibold text-primary tracking-wider">PHASE 2</span>
                   <span className="text-sm text-charcoal/40">Weeks 9-16</span>
                 </div>
-                <h3 className="text-2xl font-bold text-charcoal mb-6 font-serif">Intelligent Scheduling System</h3>
+                <h3 className="text-2xl font-bold text-charcoal mb-6 ">Intelligent Scheduling System</h3>
                 <p className="text-lg text-charcoal/80 leading-relaxed">
                   Our team implemented an AI-powered scheduling engine that optimizes appointment slots, predicts no-shows, and automatically overbooks strategically to maximize utilization while minimizing wait times. The system reduced no-show impact through predictive overbooking calibrated to each provider's historical patterns. Appointment durations were optimized by visit type based on actual data, and an automated reminder and rescheduling system was implemented that reduced no-shows by 40%.
                 </p>
@@ -171,7 +171,7 @@ export default function HealthcareProviderAI() {
                   <span className="text-sm font-semibold text-primary tracking-wider">PHASE 3</span>
                   <span className="text-sm text-charcoal/40">Weeks 17-24</span>
                 </div>
-                <h3 className="text-2xl font-bold text-charcoal mb-6 font-serif">Real-Time Flow Optimization</h3>
+                <h3 className="text-2xl font-bold text-charcoal mb-6 ">Real-Time Flow Optimization</h3>
                 <p className="text-lg text-charcoal/80 leading-relaxed">
                   We deployed a real-time command center that monitors patient flow across all facilities, identifies bottlenecks, and provides staff with actionable recommendations to optimize throughput. The network-wide patient flow visibility dashboard gives administrators a complete picture of operations at any moment. An automated bed management system optimizes patient placement, while a staff reallocation recommendations engine helps managers respond dynamically to changing conditions.
                 </p>
@@ -190,7 +190,7 @@ export default function HealthcareProviderAI() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-10 font-serif">The Results</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-10 ">The Results</h2>
               
               <p className="text-xl text-white/80 leading-relaxed mb-12">
                 Within 12 months of full deployment, the healthcare system achieved transformational improvements across all key metrics. Patient satisfaction scores increased from the 45th percentile to the 82nd percentile nationally, driven primarily by the dramatic reduction in wait times.
@@ -236,8 +236,8 @@ export default function HealthcareProviderAI() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <div className="text-7xl text-destructive mb-8 font-serif leading-none">"</div>
-              <blockquote className="text-2xl md:text-3xl text-charcoal font-serif italic leading-relaxed mb-10">
+              <div className="text-7xl text-destructive mb-8 leading-none">"</div>
+              <blockquote className="text-2xl md:text-3xl text-charcoal leading-relaxed mb-10">
                 The predictive analytics platform has transformed how we think about operations. We've moved from reactive firefighting to proactive management. Our staff are happier, our patients are happier, and our financial performance has never been stronger.
               </blockquote>
               <div>
@@ -253,7 +253,7 @@ export default function HealthcareProviderAI() {
       <section className="py-20 md:py-24">
         <div className="container px-4 md:px-8 lg:px-12">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-12 font-serif">Related Case Studies</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-12 ">Related Case Studies</h2>
             
             <div className="grid md:grid-cols-2 gap-8">
               {[
@@ -279,7 +279,7 @@ export default function HealthcareProviderAI() {
                     <span className="text-xs font-semibold tracking-widest text-charcoal/50 uppercase mb-4 block">
                       {study.client}
                     </span>
-                    <h3 className="text-xl font-bold text-charcoal mb-6 group-hover:text-primary transition-colors font-serif">
+                    <h3 className="text-xl font-bold text-charcoal mb-6 group-hover:text-primary transition-colors ">
                       {study.title}
                     </h3>
                     <span className="inline-flex items-center text-primary font-medium text-sm">
@@ -297,7 +297,7 @@ export default function HealthcareProviderAI() {
       <section className="py-20 md:py-24 bg-charcoal">
         <div className="container px-4 md:px-8 lg:px-12">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-serif">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 ">
               Ready to optimize your operations?
             </h2>
             <p className="text-lg text-white/60 mb-10">

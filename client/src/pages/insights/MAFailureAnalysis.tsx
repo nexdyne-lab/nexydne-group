@@ -52,7 +52,7 @@ export default function MAFailureAnalysis() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-4">
               Why Most Acquisitions <span className="text-primary">Fail</span> and How to Beat the Odds
             </h1>
             
@@ -81,7 +81,7 @@ export default function MAFailureAnalysis() {
               The statistics on M&A failure are sobering. Despite decades of experience and increasingly sophisticated advisory services, the majority of acquisitions destroy rather than create shareholder value. The reasons are well-documented: overpayment, poor strategic fit, cultural misalignment, failed integration, and key talent departure. Yet companies continue making the same mistakes, convinced they'll be different.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               The Root Cause: Deal Fever and Confirmation Bias
             </h2>
             
@@ -94,7 +94,7 @@ export default function MAFailureAnalysis() {
             </p>
 
             <div className="bg-red-50 border-l-4 border-red-500 p-6 my-8 rounded-r-xl">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-2">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-2">
                 <AlertTriangle className="w-5 h-5 text-destructive" />
                 Warning Signs of Deal Fever
               </h3>
@@ -107,7 +107,7 @@ export default function MAFailureAnalysis() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Overpayment: The Most Common Mistake
             </h2>
             
@@ -119,7 +119,7 @@ export default function MAFailureAnalysis() {
               Overpayment typically results from competitive bidding processes, overestimated synergies, and unrealistic growth assumptions. Acquirers convince themselves that strategic value justifies premium pricing, but strategic value must still translate into cash flows that exceed the purchase price. The discipline to walk away from overpriced deals is rare but essential.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
               <Target className="w-8 h-8 text-primary" />
               Strategic Misalignment: Acquisitions That Don't Fit
             </h2>
@@ -133,7 +133,7 @@ export default function MAFailureAnalysis() {
             </p>
 
             <div className="bg-primary/10 border-l-4 border-primary p-6 my-8 rounded-r-xl">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Strategic Fit Assessment Questions</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Strategic Fit Assessment Questions</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Capability gaps:</strong> What specific capabilities does this target provide that we lack?</li>
                 <li><strong>Market access:</strong> Does this open markets we couldn't reach organically?</li>
@@ -143,7 +143,7 @@ export default function MAFailureAnalysis() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
               <Users className="w-8 h-8 text-primary" />
               Cultural Incompatibility: The Silent Killer
             </h2>
@@ -156,7 +156,7 @@ export default function MAFailureAnalysis() {
               Cultural assessment must be rigorous and honest. Examine decision-making processes, communication styles, risk tolerance, and performance management approaches. Talk to employees at multiple levels to understand actual culture rather than aspirational statements. If significant cultural gaps exist, develop explicit plans to bridge them or accept that integration will be slower and more difficult than planned.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 flex items-center gap-3">
               <Puzzle className="w-8 h-8 text-primary" />
               Integration Failure: Where Value Goes to Die
             </h2>
@@ -170,7 +170,7 @@ export default function MAFailureAnalysis() {
             </p>
 
             <div className="bg-base/5 border-l-4 border-base/30 p-6 my-8 rounded-r-xl">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Integration Success Factors</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Integration Success Factors</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Dedicated leadership:</strong> Full-time integration leader with CEO-level support</li>
                 <li><strong>Clear governance:</strong> Decision rights, escalation paths, meeting rhythms</li>
@@ -181,7 +181,7 @@ export default function MAFailureAnalysis() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               Talent Departure: Losing What You Bought
             </h2>
             
@@ -193,7 +193,7 @@ export default function MAFailureAnalysis() {
               Talent retention must be addressed proactively. Identify critical employees before the deal closes. Develop retention packages that vest over 2-3 years to ensure continuity. Communicate clearly about roles, responsibilities, and career paths post-acquisition. Involve target company leaders in integration planning to give them ownership of the outcome. Monitor retention metrics weekly and intervene quickly when concerns emerge.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               How to Beat the Odds: A Disciplined Approach
             </h2>
             
@@ -206,7 +206,7 @@ export default function MAFailureAnalysis() {
             </p>
 
             <div className="bg-primary/10 border-l-4 border-primary p-6 my-8 rounded-r-xl">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">M&A Excellence Framework</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">M&A Excellence Framework</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong>Strategic clarity:</strong> Explicit criteria for target selection and evaluation</span></li>
                 <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span><strong>Disciplined valuation:</strong> Walk-away prices set before negotiations begin</span></li>
@@ -218,7 +218,7 @@ export default function MAFailureAnalysis() {
               </ul>
             </div>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               The Role of Independent Advisors
             </h2>
             
@@ -230,7 +230,7 @@ export default function MAFailureAnalysis() {
               Engage advisors early in the process to help define strategic criteria, assess targets objectively, and plan integration. Use them as a check on internal enthusiasm and a source of market intelligence. The cost of quality advisory support is trivial compared to the value destruction from a failed acquisition.
             </p>
 
-            <h2 className="text-3xl font-serif font-bold text-charcoal mt-12 mb-6">
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
               How NexDyne Helps Companies Execute Successful M&A
             </h2>
             
@@ -265,7 +265,7 @@ export default function MAFailureAnalysis() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
               Related Insights
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white">Continue reading</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">Continue reading</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -292,7 +292,7 @@ export default function MAFailureAnalysis() {
               >
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.category}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>

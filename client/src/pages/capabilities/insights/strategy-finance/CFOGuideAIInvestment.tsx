@@ -83,7 +83,7 @@ export default function CFOGuideAIInvestment() {
       <article className="py-16">
         <div className="container max-w-3xl">
           <div className="prose prose-lg max-w-none">
-            <p className="text-xl text-charcoal/80 leading-relaxed mb-8 font-serif">
+            <p className="text-xl text-charcoal/80 leading-relaxed mb-8 ">
               AI investments present unique challenges for CFOs. Unlike traditional technology investments with predictable costs and benefits, AI projects often have uncertain outcomes, evolving requirements, and benefits that are difficult to quantify. This guide provides a practical framework for making sound AI investment decisions.
             </p>
             

@@ -94,7 +94,7 @@ export default function Operations() {
               Operations
             </span>
             
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif font-bold tracking-tight text-white leading-[1.05] mb-4 eb-garamond">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-4 eb-garamond">
               Operational Excellence
             </h1>
             
@@ -222,7 +222,7 @@ export default function Operations() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
               Our Approach
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold">
+            <h2 className="text-4xl md:text-5xl font-bold">
               Build an operations engine that scales
             </h2>
           </motion.div>
@@ -284,7 +284,7 @@ export default function Operations() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Our Methodology
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
               The NexDyne Operations Framework
             </h2>
             <p className="text-xl text-charcoal/60 max-w-3xl mx-auto">
@@ -344,7 +344,7 @@ export default function Operations() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
               Our Operations Capabilities
             </h2>
             <p className="text-xl text-charcoal/60 max-w-2xl">
@@ -431,7 +431,7 @@ export default function Operations() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Client Results
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">
               Driving operational transformation
             </h2>
           </motion.div>
@@ -473,7 +473,7 @@ export default function Operations() {
                       </span>
                     </div>
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
+                  <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                     {study.title}
                   </h3>
                   <p className="text-charcoal/60 text-sm leading-relaxed mb-4">
@@ -502,7 +502,7 @@ export default function Operations() {
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
                 Insights
               </span>
-              <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal">
+              <h2 className="text-4xl md:text-5xl font-bold text-charcoal">
                 Latest Insights
               </h2>
               <p className="text-xl text-charcoal/60 mt-4">
@@ -554,7 +554,7 @@ export default function Operations() {
                       <span className="text-charcoal/40">•</span>
                       <span className="text-charcoal/60 text-sm">{insight.readTime}</span>
                     </div>
-                    <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
+                    <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                       {insight.title}
                     </h3>
                     <p className="text-charcoal/60 text-sm leading-relaxed mb-6">
@@ -584,7 +584,7 @@ export default function Operations() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Featured Capabilities
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-charcoal mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
               Related capabilities
             </h2>
           </motion.div>
@@ -634,7 +634,7 @@ export default function Operations() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Ready to transform your operations?
             </h2>
             <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">

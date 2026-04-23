@@ -69,11 +69,11 @@ export function AIInEcommerce() {
               <div className="sticky top-32">
                 <h4 className="font-bold text-charcoal mb-4">Table of Contents</h4>
                 <ul className="space-y-3 text-sm text-muted-foreground border-l border-slate-200 pl-4">
-                  <li className="hover:text-blue-600 cursor-pointer">The New Standard</li>
-                  <li className="hover:text-blue-600 cursor-pointer">Intelligent Search</li>
-                  <li className="hover:text-blue-600 cursor-pointer">Dynamic Pricing</li>
-                  <li className="hover:text-blue-600 cursor-pointer">Predictive Inventory</li>
-                  <li className="hover:text-blue-600 cursor-pointer">Implementation</li>
+                  <li className="hover:text-primary cursor-pointer">The New Standard</li>
+                  <li className="hover:text-primary cursor-pointer">Intelligent Search</li>
+                  <li className="hover:text-primary cursor-pointer">Dynamic Pricing</li>
+                  <li className="hover:text-primary cursor-pointer">Predictive Inventory</li>
+                  <li className="hover:text-primary cursor-pointer">Implementation</li>
                 </ul>
                 
                 <div className="mt-12">
@@ -99,7 +99,7 @@ export function AIInEcommerce() {
                 </p>
                 <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 my-6">
                   <div className="flex gap-4">
-                    <Search className="w-8 h-8 text-blue-600 flex-shrink-0" />
+                    <Search className="w-8 h-8 text-primary flex-shrink-0" />
                     <div>
                       <h4 className="font-bold text-charcoal mb-2">The Difference</h4>
                       <p className="text-sm text-muted-foreground">

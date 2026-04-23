@@ -61,7 +61,7 @@ export default function ProcessOrchestration() {
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <Search className="w-6 h-6 text-blue-600" />
+                    <Search className="w-6 h-6 text-primary" />
                   </div>
                 </div>
                 <div>
@@ -77,7 +77,7 @@ export default function ProcessOrchestration() {
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <ThumbsUp className="w-6 h-6 text-blue-600" />
+                    <ThumbsUp className="w-6 h-6 text-primary" />
                   </div>
                 </div>
                 <div>
@@ -93,7 +93,7 @@ export default function ProcessOrchestration() {
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <Users className="w-6 h-6 text-blue-600" />
+                    <Users className="w-6 h-6 text-primary" />
                   </div>
                 </div>
                 <div>
@@ -109,7 +109,7 @@ export default function ProcessOrchestration() {
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <TrendingUp className="w-6 h-6 text-blue-600" />
+                    <TrendingUp className="w-6 h-6 text-primary" />
                   </div>
                 </div>
                 <div>
@@ -242,7 +242,7 @@ export default function ProcessOrchestration() {
       <section className="py-20 bg-slate-50">
         <div className="container">
           <div className="mb-12">
-            <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">
+            <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">
               PARTNERS
             </p>
             <h2 className="text-4xl font-bold text-charcoal mb-4">
@@ -255,13 +255,13 @@ export default function ProcessOrchestration() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg border border-slate-200">
-              <h3 className="text-3xl font-bold text-blue-600 mb-4">Camunda</h3>
+              <h3 className="text-3xl font-bold text-primary mb-4">Camunda</h3>
               <p className="text-charcoal/80">
                 Business process orchestration engine managing complex workflows. Coordinates multi-system processes with full visibility, exception handling, and automated decision-making.
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg border border-slate-200">
-              <h3 className="text-3xl font-bold text-blue-600 mb-4">N8N</h3>
+              <h3 className="text-3xl font-bold text-primary mb-4">N8N</h3>
               <p className="text-charcoal/80">
                 Workflow automation platform enabling rapid process design and deployment. Connects applications, automates tasks, and orchestrates data flows across your technology stack.
               </p>
@@ -300,7 +300,7 @@ export default function ProcessOrchestration() {
       <section className="py-20 bg-slate-50">
         <div className="container">
           <div className="mb-12">
-            <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">
+            <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">
               CASES
             </p>
             <h2 className="text-4xl font-bold text-charcoal mb-4">
@@ -332,11 +332,11 @@ export default function ProcessOrchestration() {
                   </p>
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div>
-                      <div className="text-2xl font-bold text-blue-600">45%</div>
+                      <div className="text-2xl font-bold text-primary">45%</div>
                       <div className="text-sm text-muted-foreground">Faster load times</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-blue-600">60%</div>
+                      <div className="text-2xl font-bold text-primary">60%</div>
                       <div className="text-sm text-muted-foreground">Mobile conversion</div>
                     </div>
                   </div>
@@ -364,11 +364,11 @@ export default function ProcessOrchestration() {
                   </p>
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div>
-                      <div className="text-2xl font-bold text-blue-600">80%</div>
+                      <div className="text-2xl font-bold text-primary">80%</div>
                       <div className="text-sm text-muted-foreground">Process automation</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-blue-600">120K+</div>
+                      <div className="text-2xl font-bold text-primary">120K+</div>
                       <div className="text-sm text-muted-foreground">Hours saved/year</div>
                     </div>
                   </div>
@@ -396,11 +396,11 @@ export default function ProcessOrchestration() {
                   </p>
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div>
-                      <div className="text-2xl font-bold text-blue-600">40%</div>
+                      <div className="text-2xl font-bold text-primary">40%</div>
                       <div className="text-sm text-muted-foreground">Reduced no-shows</div>
                     </div>
                     <div>
-                      <div className="text-2xl font-bold text-blue-600">35%</div>
+                      <div className="text-2xl font-bold text-primary">35%</div>
                       <div className="text-sm text-muted-foreground">Higher satisfaction</div>
                     </div>
                   </div>
@@ -424,7 +424,7 @@ export default function ProcessOrchestration() {
       <section className="py-20">
         <div className="container">
           <div className="mb-12">
-            <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">
+            <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">
               PROCESS AUTOMATION
             </p>
             <h2 className="text-4xl font-bold text-charcoal">Services</h2>
@@ -439,7 +439,7 @@ export default function ProcessOrchestration() {
                 <p className="text-muted-foreground mb-6">
                   Software robots that execute repetitive tasks with perfect consistency. Deploy bots that handle data entry, invoice processing, and system updates—freeing your team for strategic work.
                 </p>
-                <div className="flex items-center text-blue-600 font-semibold">
+                <div className="flex items-center text-primary font-semibold">
                   Learn more
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </div>
@@ -452,7 +452,7 @@ export default function ProcessOrchestration() {
                 <p className="text-muted-foreground mb-6">
                   Connect disparate systems without custom code. Real-time data synchronization across your ERP, CRM, and legacy systems—eliminating manual data transfer.
                 </p>
-                <div className="flex items-center text-blue-600 font-semibold">
+                <div className="flex items-center text-primary font-semibold">
                   Learn more
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </div>
@@ -466,7 +466,7 @@ export default function ProcessOrchestration() {
               <p className="text-muted-foreground mb-6">
                 Coordinate complex workflows across multiple systems and teams. Orchestration engines manage dependencies, handle exceptions, and ensure seamless end-to-end execution.
               </p>
-              <div className="flex items-center text-blue-600 font-semibold">
+              <div className="flex items-center text-primary font-semibold">
                 Current page
               </div>
             </div>

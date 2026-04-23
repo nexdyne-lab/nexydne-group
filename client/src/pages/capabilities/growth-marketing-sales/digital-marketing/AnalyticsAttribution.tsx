@@ -31,7 +31,7 @@ export default function AnalyticsAttribution() {
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-charcoal mb-3 leading-[1.1] eb-garamond">
               Marketing Analytics & Attribution
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light font-serif">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light ">
               Decode the customer journey with advanced analytics. We help you understand what works, why it works, and where to invest next.
             </p>
           </div>
@@ -91,7 +91,7 @@ export default function AnalyticsAttribution() {
             <Separator className="bg-slate-200" />
 
             {/* Quote Section */}
-            <section className="bg-slate-50 p-10 border-l-4 border-blue-900 italic text-charcoal/80 text-xl font-serif leading-relaxed">
+            <section className="bg-slate-50 p-10 border-l-4 border-blue-900 italic text-charcoal/80 text-xl leading-relaxed">
               "Data without context is noise. We help clients filter the signal from the noise to make decisions that move the needle."
             </section>
 
@@ -124,7 +124,7 @@ export default function AnalyticsAttribution() {
             </div>
 
             <div className="bg-blue-900 text-white p-4 sm:p-6 md:p-8 rounded-sm">
-              <h3 className="text-xl font-serif font-bold mb-4">Unlock your data</h3>
+              <h3 className="text-xl font-bold mb-4">Unlock your data</h3>
               <p className="text-blue-100 mb-6">
                 Discover how advanced analytics can transform your marketing ROI.
               </p>

@@ -36,7 +36,7 @@ export default function DigitalTransformationManufacturing() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Case Study · Business Transformation
             </span>
-            <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-4">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-4">
               Digital Transformation in <span className="text-primary">Precision Manufacturing</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mb-8">
@@ -79,7 +79,7 @@ export default function DigitalTransformationManufacturing() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-base text-white/70">{stat.label}</div>
               </motion.div>
             ))}
@@ -113,7 +113,7 @@ export default function DigitalTransformationManufacturing() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Company Background</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Background</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client, a precision components manufacturer serving aerospace and medical device industries, had built a strong reputation for quality over 30 years of operation. However, the company faced increasing competitive pressure from larger manufacturers with more modern operations and lower cost structures.
@@ -168,7 +168,7 @@ export default function DigitalTransformationManufacturing() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Legacy Systems Limiting Growth Potential
             </h2>
           </motion.div>
@@ -179,28 +179,28 @@ export default function DigitalTransformationManufacturing() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Legacy Technology Constraints</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Legacy Technology Constraints</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 Disparate systems that didn't communicate with each other created data silos and required extensive manual data entry. The ERP system was 15 years old and lacked modern capabilities for production planning, inventory optimization, and real-time reporting.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Operational Inefficiencies</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Operational Inefficiencies</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 Manual processes throughout the operation created bottlenecks and quality risks. Production scheduling required days of effort each week, inventory accuracy was below 85%, and quality data collection was inconsistent across facilities.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Limited Visibility and Control</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Limited Visibility and Control</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 Management lacked real-time visibility into operations. Production status required physical walkthroughs, inventory levels were known only after physical counts, and financial reporting lagged by weeks, limiting the ability to make timely decisions.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Change Management Complexity</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Change Management Complexity</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The workforce included many long-tenured employees comfortable with existing processes. Implementing significant operational changes while maintaining production continuity and employee engagement represented a substantial organizational challenge.
               </p>
@@ -225,7 +225,7 @@ export default function DigitalTransformationManufacturing() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-3xl md:text-4xl font-serif text-primary leading-tight mb-8">
+            <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "We knew incremental improvements wouldn't be enough. We needed a comprehensive transformation to modernize operations and position the business for sustainable growth."
             </blockquote>
             <div className="text-base text-white">
@@ -248,7 +248,7 @@ export default function DigitalTransformationManufacturing() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Solution
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Comprehensive Digital Transformation Program
             </h2>
           </motion.div>
@@ -270,7 +270,7 @@ export default function DigitalTransformationManufacturing() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-2">Strategic Assessment and Roadmap Development</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-2">Strategic Assessment and Roadmap Development</h3>
                 <p className="text-sm text-primary mb-4">Months 1-3</p>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
                   We began with a comprehensive diagnostic to understand current state operations, identify improvement opportunities, and assess organizational readiness for change. This involved process mapping, system analysis, stakeholder interviews, and benchmarking against industry best practices.
@@ -300,7 +300,7 @@ export default function DigitalTransformationManufacturing() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-2">Technology Platform Modernization</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-2">Technology Platform Modernization</h3>
                 <p className="text-sm text-primary mb-4">Months 4-10</p>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
                   We led the selection and implementation of a modern cloud-based ERP system designed for mid-market manufacturers. The implementation followed an agile methodology with iterative releases, allowing the organization to realize value progressively while managing change effectively.
@@ -330,7 +330,7 @@ export default function DigitalTransformationManufacturing() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-2">Process Optimization and Capability Building</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-2">Process Optimization and Capability Building</h3>
                 <p className="text-sm text-primary mb-4">Months 8-15</p>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
                   Technology implementation was paired with comprehensive process redesign and capability building. We worked alongside client teams to redesign workflows, eliminate waste, and develop new standard operating procedures that leveraged system capabilities.
@@ -360,7 +360,7 @@ export default function DigitalTransformationManufacturing() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-2">Stabilization and Knowledge Transfer</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-2">Stabilization and Knowledge Transfer</h3>
                 <p className="text-sm text-primary mb-4">Months 15-18</p>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
                   The final phase focused on stabilizing new processes, addressing remaining issues, and ensuring the organization could sustain improvements independently. We established performance management mechanisms and transferred knowledge to internal teams.
@@ -397,7 +397,7 @@ export default function DigitalTransformationManufacturing() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Impact
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Transformational Results Across All Dimensions
             </h2>
           </motion.div>
@@ -408,84 +408,84 @@ export default function DigitalTransformationManufacturing() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <Target className="w-6 h-6 text-primary" />
                 Operational Excellence
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">35%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">35%</div>
                   <div className="text-sm text-charcoal/60">Overall operational efficiency improvement</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">98%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">98%</div>
                   <div className="text-sm text-charcoal/60">On-time delivery (up from 82%)</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">99.2%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">99.2%</div>
                   <div className="text-sm text-charcoal/60">Inventory accuracy</div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <TrendingUp className="w-6 h-6 text-primary" />
                 Financial Performance
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">$2.8M</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">$2.8M</div>
                   <div className="text-sm text-charcoal/60">Annual cost savings</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">28%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">28%</div>
                   <div className="text-sm text-charcoal/60">Inventory carrying cost reduction</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">14 mo</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">14 mo</div>
                   <div className="text-sm text-charcoal/60">Payback on transformation investment</div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <CheckCircle2 className="w-6 h-6 text-primary" />
                 Quality and Compliance
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">42%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">42%</div>
                   <div className="text-sm text-charcoal/60">Reduction in quality incidents</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">100%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">100%</div>
                   <div className="text-sm text-charcoal/60">Regulatory audit compliance</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">65%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">65%</div>
                   <div className="text-sm text-charcoal/60">Faster quality data collection</div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <Zap className="w-6 h-6 text-primary" />
                 Strategic Positioning
               </h3>
               <div className="space-y-4">
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">3</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">3</div>
                   <div className="text-sm text-charcoal/60">Major new customer accounts won</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">50%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">50%</div>
                   <div className="text-sm text-charcoal/60">Production capacity increase</div>
                 </div>
                 <div className="p-4 bg-base/5 rounded-xl">
-                  <div className="text-2xl font-serif font-bold text-charcoal mb-1">92%</div>
+                  <div className="text-2xl font-bold text-charcoal mb-1">92%</div>
                   <div className="text-sm text-charcoal/60">Employee engagement satisfaction</div>
                 </div>
               </div>
@@ -503,7 +503,7 @@ export default function DigitalTransformationManufacturing() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-3xl md:text-4xl font-serif text-primary leading-tight mb-8">
+            <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "This transformation fundamentally changed how we operate. We're not just more efficient—we're more agile, more responsive to customers, and better positioned for growth. The NexDyne team didn't just implement technology; they helped us build the capabilities to continuously improve and adapt."
             </blockquote>
             <div className="text-base text-white">
@@ -517,32 +517,32 @@ export default function DigitalTransformationManufacturing() {
       {/* Key Success Factors */}
       <section className="py-16 bg-white text-charcoal">
         <div className="container px-4 md:px-12 max-w-4xl">
-          <h2 className="text-3xl font-serif font-bold text-charcoal mb-8">Key Success Factors</h2>
+          <h2 className="text-3xl font-bold text-charcoal mb-8">Key Success Factors</h2>
           
           <div className="grid md:grid-cols-2 gap-6">
             <div className="border-l-4 border-primary pl-6">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-3">Executive Commitment</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-3">Executive Commitment</h3>
               <p className="text-charcoal/70">
                 Strong CEO and COO sponsorship ensured resources were allocated, obstacles were removed, and the organization maintained focus throughout the 18-month journey.
               </p>
             </div>
 
             <div className="border-l-4 border-primary pl-6">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-3">Phased Implementation</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-3">Phased Implementation</h3>
               <p className="text-charcoal/70">
                 Breaking the transformation into manageable phases with defined deliverables enabled progressive value realization while managing organizational change capacity.
               </p>
             </div>
 
             <div className="border-l-4 border-primary pl-6">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-3">Change Management Focus</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-3">Change Management Focus</h3>
               <p className="text-charcoal/70">
                 Investing heavily in communication, training, and stakeholder engagement ensured high adoption rates and minimized disruption.
               </p>
             </div>
 
             <div className="border-l-4 border-primary pl-6">
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-3">Process Before Technology</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-3">Process Before Technology</h3>
               <p className="text-charcoal/70">
                 Redesigning processes before implementing technology ensured systems enabled improved workflows rather than automating existing inefficiencies.
               </p>
@@ -571,7 +571,7 @@ export default function DigitalTransformationManufacturing() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white">More success stories</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -607,7 +607,7 @@ export default function DigitalTransformationManufacturing() {
                     />
                   </div>
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>

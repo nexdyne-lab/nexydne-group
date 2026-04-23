@@ -63,7 +63,7 @@ export function LowcodeDevelopment() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                  <Zap className="w-6 h-6 text-blue-600" />
+                  <Zap className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold">Rapid time-to-market</h3>
                 <p className="text-muted-foreground">
@@ -73,7 +73,7 @@ export function LowcodeDevelopment() {
 
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                  <DollarSign className="w-6 h-6 text-blue-600" />
+                  <DollarSign className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold">Lower total cost of ownership</h3>
                 <p className="text-muted-foreground">
@@ -83,7 +83,7 @@ export function LowcodeDevelopment() {
 
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                  <Puzzle className="w-6 h-6 text-blue-600" />
+                  <Puzzle className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold">Tailored business fit</h3>
                 <p className="text-muted-foreground">
@@ -93,7 +93,7 @@ export function LowcodeDevelopment() {
 
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                  <RefreshCw className="w-6 h-6 text-blue-600" />
+                  <RefreshCw className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold">Agile evolution</h3>
                 <p className="text-muted-foreground">
@@ -176,7 +176,7 @@ export function LowcodeDevelopment() {
         <div className="container">
           <div className="max-w-6xl mx-auto">
             <div className="mb-12">
-              <p className="text-sm font-semibold text-blue-600 mb-2">Partners</p>
+              <p className="text-sm font-semibold text-primary mb-2">Partners</p>
               <h2 className="text-4xl font-bold mb-4">Platform partners that power rapid delivery</h2>
               <button className="px-6 py-2 border-2 border-primary text-charcoal rounded-full hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out">
                 All partners
@@ -186,7 +186,7 @@ export function LowcodeDevelopment() {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="p-8 border-2 border-border rounded-lg hover:border-blue-500 transition-colors">
                 <div className="h-24 flex items-center justify-center mb-4">
-                  <div className="text-2xl font-bold text-blue-600">Mendix</div>
+                  <div className="text-2xl font-bold text-primary">Mendix</div>
                 </div>
                 <h3 className="font-bold mb-2">Mendix</h3>
                 <p className="text-sm text-muted-foreground">Enterprise-grade low-code platform for complex applications</p>
@@ -194,7 +194,7 @@ export function LowcodeDevelopment() {
 
               <div className="p-8 border-2 border-border rounded-lg hover:border-blue-500 transition-colors">
                 <div className="h-24 flex items-center justify-center mb-4">
-                  <div className="text-2xl font-bold text-blue-600">OutSystems</div>
+                  <div className="text-2xl font-bold text-primary">OutSystems</div>
                 </div>
                 <h3 className="font-bold mb-2">OutSystems</h3>
                 <p className="text-sm text-muted-foreground">High-performance low-code for mission-critical systems</p>
@@ -202,7 +202,7 @@ export function LowcodeDevelopment() {
 
               <div className="p-8 border-2 border-border rounded-lg hover:border-blue-500 transition-colors">
                 <div className="h-24 flex items-center justify-center mb-4">
-                  <div className="text-2xl font-bold text-blue-600">Power Platform</div>
+                  <div className="text-2xl font-bold text-primary">Power Platform</div>
                 </div>
                 <h3 className="font-bold mb-2">Microsoft Power Platform</h3>
                 <p className="text-sm text-muted-foreground">Low-code tools integrated with Microsoft 365 ecosystem</p>
@@ -240,7 +240,7 @@ export function LowcodeDevelopment() {
       <section className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
         <div className="container">
           <div className="mb-12">
-            <p className="text-sm font-semibold text-blue-600 mb-2">Cases</p>
+            <p className="text-sm font-semibold text-primary mb-2">Cases</p>
             <h2 className="text-4xl font-bold mb-4">Cases we love talking about</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mb-8">
               Heard of a business that transforms unique business challenges into exceptional outcomes? That'd be us. Check out these inspiring cases!
@@ -259,13 +259,13 @@ export function LowcodeDevelopment() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
                     Insurance Company Launches Digital Claims Portal in 8 Weeks
                   </h3>
                   <p className="text-muted-foreground mb-4">
                     Regional insurer replaces paper-based claims processing with Mendix low-code portal—reducing processing time from 14 days to 2 hours.
                   </p>
-                  <div className="flex items-center text-blue-600 font-semibold">
+                  <div className="flex items-center text-primary font-semibold">
                     Read more <ArrowRight className="ml-2 w-4 h-4" />
                   </div>
                 </div>
@@ -280,13 +280,13 @@ export function LowcodeDevelopment() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
                     Logistics Firm Builds Real-Time Tracking App for 500 Drivers
                   </h3>
                   <p className="text-muted-foreground mb-4">
                     3PL provider deploys OutSystems mobile app for package tracking and route optimization—improving on-time delivery from 82% to 96%.
                   </p>
-                  <div className="flex items-center text-blue-600 font-semibold">
+                  <div className="flex items-center text-primary font-semibold">
                     Read more <ArrowRight className="ml-2 w-4 h-4" />
                   </div>
                 </div>
@@ -301,13 +301,13 @@ export function LowcodeDevelopment() {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-blue-600 transition-colors">
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
                     City Government Modernizes Permit System Serving 250K Residents
                   </h3>
                   <p className="text-muted-foreground mb-4">
                     Municipal government replaces 30-year-old legacy system with Power Platform solution—reducing permit approval time from 45 days to 7 days.
                   </p>
-                  <div className="flex items-center text-blue-600 font-semibold">
+                  <div className="flex items-center text-primary font-semibold">
                     Read more <ArrowRight className="ml-2 w-4 h-4" />
                   </div>
                 </div>
@@ -324,8 +324,8 @@ export function LowcodeDevelopment() {
             <div>
               <h3 className="font-bold mb-4">App Development Services</h3>
               <ul className="space-y-2">
-                <li><Link href="/solutions/app-development" className="text-muted-foreground hover:text-blue-600 transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4" /> App Development</Link></li>
-                <li><Link href="/solutions/lowcode-development" className="text-blue-600 font-semibold flex items-center gap-2"><ArrowRight className="w-4 h-4" /> Low-code Development</Link></li>
+                <li><Link href="/solutions/app-development" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4" /> App Development</Link></li>
+                <li><Link href="/solutions/lowcode-development" className="text-primary font-semibold flex items-center gap-2"><ArrowRight className="w-4 h-4" /> Low-code Development</Link></li>
               </ul>
             </div>
           </div>

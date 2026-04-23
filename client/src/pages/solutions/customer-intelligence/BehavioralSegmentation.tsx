@@ -268,7 +268,7 @@ export default function BehavioralSegmentation() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-4xl font-serif font-bold text-center mb-12"
+            className="text-3xl sm:text-4xl font-bold text-center mb-12"
           >
             Success Stories in Behavioral Segmentation
           </motion.h2>
@@ -287,7 +287,7 @@ export default function BehavioralSegmentation() {
                 </div>
                 <div className="absolute bottom-0 left-0 p-6 sm:p-8">
                   <span className="text-xs font-bold uppercase tracking-widest text-white/80">Retail</span>
-                  <h3 className="text-2xl font-serif font-bold text-white mt-2">Boosting Customer Lifetime Value by 60%</h3>
+                  <h3 className="text-2xl font-bold text-white mt-2">Boosting Customer Lifetime Value by 60%</h3>
                 </div>
               </Link>
             </motion.div>
@@ -305,7 +305,7 @@ export default function BehavioralSegmentation() {
                 </div>
                 <div className="absolute bottom-0 left-0 p-6 sm:p-8">
                   <span className="text-xs font-bold uppercase tracking-widest text-white/80">Media & Entertainment</span>
-                  <h3 className="text-2xl font-serif font-bold text-white mt-2">Reducing Churn by 25% Through Proactive Engagement</h3>
+                  <h3 className="text-2xl font-bold text-white mt-2">Reducing Churn by 25% Through Proactive Engagement</h3>
                 </div>
               </Link>
             </motion.div>
@@ -321,7 +321,7 @@ export default function BehavioralSegmentation() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl font-serif font-bold text-center mb-12 text-charcoal"
+            className="text-3xl font-bold text-center mb-12 text-charcoal"
           >
             Enhance Your Customer Intelligence
           </motion.h2>
@@ -354,7 +354,7 @@ export default function BehavioralSegmentation() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-4xl font-serif font-bold mb-6"
+            className="text-3xl sm:text-4xl font-bold mb-6"
           >
             Ready to Understand Your Customers Better?
           </motion.h2>

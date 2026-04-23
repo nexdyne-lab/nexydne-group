@@ -247,7 +247,7 @@ export default function PredictiveAnalyticsModeling() {
                 transition={{ duration: 0.5, delay: index * 0.15 }}
                 className="text-center"
               >
-                <div className="text-6xl font-serif font-bold text-secondary mb-4">{item.step}</div>
+                <div className="text-6xl font-bold text-secondary mb-4">{item.step}</div>
                 <h3 className="text-xl font-bold mb-3">{item.title}</h3>
                 <p className="text-white/60">{item.description}</p>
               </motion.div>

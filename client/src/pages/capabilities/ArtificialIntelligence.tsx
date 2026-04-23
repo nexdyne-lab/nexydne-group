@@ -585,7 +585,7 @@ export default function ArtificialIntelligence() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-serif font-bold text-charcoal mb-6">
+              <h3 className="text-2xl font-bold text-charcoal mb-6">
                 {clientResults[activeTab].title}
               </h3>
               

@@ -32,7 +32,7 @@ export default function PrivacyPolicy() {
       <section className="bg-white pt-32 pb-16 border-b border-border/50">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl">
-            <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-charcoal tracking-tight mb-3">
+            <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-charcoal tracking-tight mb-3">
               Privacy Policy
             </h1>
             <p className="text-lg text-muted-foreground italic">
@@ -72,7 +72,7 @@ export default function PrivacyPolicy() {
                 
                 {/* Introduction */}
                 <section id="introduction" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Introduction
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">
@@ -88,7 +88,7 @@ export default function PrivacyPolicy() {
 
                 {/* Data Collection */}
                 <section id="data-collection" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Personal Information We Collect
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">
@@ -120,7 +120,7 @@ export default function PrivacyPolicy() {
 
                 {/* Data Usage */}
                 <section id="data-usage" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     How We Use Your Information
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">
@@ -138,7 +138,7 @@ export default function PrivacyPolicy() {
 
                 {/* Cookies */}
                 <section id="cookies" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Cookies and Tracking Technologies
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">
@@ -161,7 +161,7 @@ export default function PrivacyPolicy() {
 
                 {/* Third Parties */}
                 <section id="third-parties" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Information Sharing and Disclosure
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">
@@ -178,7 +178,7 @@ export default function PrivacyPolicy() {
 
                 {/* Security */}
                 <section id="security" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Data Security
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">
@@ -197,7 +197,7 @@ export default function PrivacyPolicy() {
 
                 {/* Retention */}
                 <section id="retention" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Data Retention
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed">
@@ -207,7 +207,7 @@ export default function PrivacyPolicy() {
 
                 {/* Rights */}
                 <section id="rights" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Your Rights and Choices
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">
@@ -228,7 +228,7 @@ export default function PrivacyPolicy() {
 
                 {/* Children */}
                 <section id="children" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Children's Privacy
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed">
@@ -238,7 +238,7 @@ export default function PrivacyPolicy() {
 
                 {/* International */}
                 <section id="international" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     International Data Transfers
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed">
@@ -248,7 +248,7 @@ export default function PrivacyPolicy() {
 
                 {/* Changes */}
                 <section id="changes" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Changes to This Policy
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed">
@@ -258,7 +258,7 @@ export default function PrivacyPolicy() {
 
                 {/* Contact */}
                 <section id="contact" className="scroll-mt-32 mb-6 sm:mb-8 md:mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-charcoal mb-4">
+                  <h2 className="text-2xl font-bold text-charcoal mb-4">
                     Contact Us
                   </h2>
                   <p className="text-charcoal/80 leading-relaxed mb-4">

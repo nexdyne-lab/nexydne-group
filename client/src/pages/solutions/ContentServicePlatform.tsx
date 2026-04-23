@@ -16,11 +16,11 @@ export default function ContentServicePlatform() {
         <div className="container">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Link href="/">
-              <a className="hover:text-blue-600">Services</a>
+              <a className="hover:text-primary">Services</a>
             </Link>
             <span>/</span>
             <Link href="/solutions/data-solutions">
-              <a className="hover:text-blue-600">Data solutions</a>
+              <a className="hover:text-primary">Data solutions</a>
             </Link>
             <span>/</span>
             <span className="text-charcoal">Content Service Platform</span>

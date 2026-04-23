@@ -120,7 +120,7 @@ export default function Careers() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-2xl md:text-3xl font-serif text-charcoal mb-8"
+            className="text-2xl md:text-3xl text-charcoal mb-8"
           >
             Explore opportunities
           </motion.h2>
@@ -167,7 +167,7 @@ export default function Careers() {
                 transition={{ duration: 0.6 }}
                 className="mb-12"
               >
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal mb-4">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl text-charcoal mb-4">
                   Build the career you never imagined
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl">
@@ -244,7 +244,7 @@ export default function Careers() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
             <div className="absolute bottom-0 left-0 p-8 md:p-12">
-              <h3 className="text-3xl md:text-4xl font-serif text-white mb-2">Our people</h3>
+              <h3 className="text-3xl md:text-4xl text-white mb-2">Our people</h3>
               <span className="text-white/80 flex items-center gap-2 group-hover:text-white transition-colors">
                 Meet your future peers <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -266,7 +266,7 @@ export default function Careers() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
             <div className="absolute bottom-0 left-0 p-8 md:p-12">
-              <h3 className="text-3xl md:text-4xl font-serif text-white mb-2">Students</h3>
+              <h3 className="text-3xl md:text-4xl text-white mb-2">Students</h3>
               <span className="text-white/80 flex items-center gap-2 group-hover:text-white transition-colors">
                 Get your start <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -301,7 +301,7 @@ export default function Careers() {
                 transition={{ duration: 0.6 }}
                 className="mb-12"
               >
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal mb-4">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl text-charcoal mb-4">
                   Industry leaders agree — our people thrive here
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-2xl">
@@ -373,7 +373,7 @@ export default function Careers() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-white mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-white mb-6">
               Ready to make your mark?
             </h2>
             <p className="text-lg text-white/70 mb-8">

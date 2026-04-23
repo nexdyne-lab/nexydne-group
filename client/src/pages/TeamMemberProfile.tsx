@@ -495,7 +495,7 @@ export default function TeamMemberProfile() {
               <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-charcoal mb-4 leading-tight tracking-tight">
                 {member.name}
               </h1>
-              <p className="text-xl font-bold text-blue-600 mb-3 tracking-wide uppercase">
+              <p className="text-xl font-bold text-primary mb-3 tracking-wide uppercase">
                 {member.title}
               </p>
               <p className="text-lg text-muted-foreground mb-5 sm:mb-6 md:mb-8 flex items-center gap-2">
@@ -556,7 +556,7 @@ export default function TeamMemberProfile() {
         <div className="container">
           <div className="max-w-4xl">
             <div className="flex items-center gap-3 mb-5 sm:mb-6 md:mb-8">
-              <FileText className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
+              <FileText className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
               <h2 className="text-3xl font-bold text-charcoal">Publications & Research</h2>
             </div>
             
@@ -574,7 +574,7 @@ export default function TeamMemberProfile() {
                       {pub.year}
                     </span>
                   </div>
-                  <p className="text-sm font-semibold text-blue-600 mb-3 uppercase tracking-wide">
+                  <p className="text-sm font-semibold text-primary mb-3 uppercase tracking-wide">
                     {pub.type}
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
@@ -592,7 +592,7 @@ export default function TeamMemberProfile() {
         <div className="container">
           <div className="max-w-4xl">
             <div className="flex items-center gap-3 mb-5 sm:mb-6 md:mb-8">
-              <Briefcase className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
+              <Briefcase className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
               <h2 className="text-3xl font-bold text-charcoal">Client Work Examples</h2>
             </div>
             
@@ -607,7 +607,7 @@ export default function TeamMemberProfile() {
                       <h3 className="text-2xl font-bold text-charcoal mb-2">
                         {work.client}
                       </h3>
-                      <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide">
+                      <p className="text-sm font-semibold text-primary uppercase tracking-wide">
                         {work.industry}
                       </p>
                     </div>
@@ -629,7 +629,7 @@ export default function TeamMemberProfile() {
                     </div>
 
                     <div className="bg-blue-50 rounded-lg p-4 border border-blue-100">
-                      <p className="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2">Result</p>
+                      <p className="text-xs font-bold text-primary uppercase tracking-wider mb-2">Result</p>
                       <p className="text-charcoal font-semibold leading-relaxed">
                         {work.result}
                       </p>

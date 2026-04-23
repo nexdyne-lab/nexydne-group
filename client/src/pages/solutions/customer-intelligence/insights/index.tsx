@@ -146,7 +146,7 @@ export default function CustomerIntelligenceInsights() {
                       {insight.readTime}
                     </span>
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">
+                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">
                     {insight.title}
                   </h3>
                   <p className="text-white/60 text-sm mb-6 leading-relaxed">
@@ -200,7 +200,7 @@ export default function CustomerIntelligenceInsights() {
                       {insight.readTime}
                     </span>
                   </div>
-                  <h3 className="text-xl font-serif font-bold mb-4 group-hover:text-primary transition-colors leading-tight">
+                  <h3 className="text-xl font-bold mb-4 group-hover:text-primary transition-colors leading-tight">
                     {insight.title}
                   </h3>
                   <p className="text-charcoal/60 text-sm mb-6 leading-relaxed">

@@ -161,7 +161,7 @@ export default function ServiceDesign() {
                   <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
                     {item.icon}
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 leading-relaxed">
@@ -224,13 +224,13 @@ export default function ServiceDesign() {
               >
                 <Link href={item.link} className="block h-full">
                   <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-base/5 hover:bg-base transition-all duration-500 hover:scale-[1.02]">
-                    <div className="text-4xl font-serif font-bold text-primary mb-2 group-hover:text-white transition-colors">
+                    <div className="text-4xl font-bold text-primary mb-2 group-hover:text-white transition-colors">
                       {item.metric}
                     </div>
                     <div className="text-sm text-charcoal/60 mb-6 group-hover:text-white/60 transition-colors">
                       {item.metricLabel}
                     </div>
-                    <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-white transition-colors">
+                    <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-white transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-charcoal/70 leading-relaxed mb-6 group-hover:text-white/70 transition-colors">
@@ -285,7 +285,7 @@ export default function ServiceDesign() {
               >
                 <Link href={item.link} className="group block h-full">
                   <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300 hover:bg-white/10">
-                    <h3 className="text-xl font-serif font-bold text-white mb-4 group-hover:text-primary transition-colors flex items-center gap-2">
+                    <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors flex items-center gap-2">
                       {item.title}
                       <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-primary opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
                     </h3>

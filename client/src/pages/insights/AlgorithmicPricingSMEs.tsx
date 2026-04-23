@@ -36,7 +36,7 @@ export default function AlgorithmicPricingSMEs() {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-3 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold mb-3 leading-tight">
             Algorithmic Pricing for SMEs: It's Not Just for Amazon Anymore
           </h1>
           
@@ -136,7 +136,7 @@ export default function AlgorithmicPricingSMEs() {
               </div>
               <div>
                 <h4 className="font-bold text-charcoal text-lg">David Chen</h4>
-                <p className="text-blue-600 font-medium text-sm mb-2">Director, Monetization Tech</p>
+                <p className="text-primary font-medium text-sm mb-2">Director, Monetization Tech</p>
                 <p className="text-muted-foreground text-sm">
                   David is an expert in implementing dynamic pricing engines and CPQ (Configure, Price, Quote) systems. He helps companies bridge the gap between pricing strategy and technical execution.
                 </p>
@@ -162,13 +162,13 @@ export default function AlgorithmicPricingSMEs() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <h4 className="font-bold text-lg group-hover:text-blue-600 transition-colors">
+                  <h4 className="font-bold text-lg group-hover:text-primary transition-colors">
                     The Psychology of Value
                   </h4>
                   <p className="text-muted-foreground text-sm mt-2">
                     Why "Cost-Plus" fails in the digital age and how to shift to value-based pricing.
                   </p>
-                  <div className="flex items-center text-blue-600 font-medium text-sm mt-3 group-hover:translate-x-1 transition-transform">
+                  <div className="flex items-center text-primary font-medium text-sm mt-3 group-hover:translate-x-1 transition-transform">
                     Read Article <ArrowRight className="ml-1 w-3 h-3" />
                   </div>
                 </div>
@@ -182,13 +182,13 @@ export default function AlgorithmicPricingSMEs() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <h4 className="font-bold text-lg group-hover:text-blue-600 transition-colors">
+                  <h4 className="font-bold text-lg group-hover:text-primary transition-colors">
                     Optimizing Subscription Models
                   </h4>
                   <p className="text-muted-foreground text-sm mt-2">
                     Explore usage-based, tiered, and hybrid models that align revenue with success.
                   </p>
-                  <div className="flex items-center text-blue-600 font-medium text-sm mt-3 group-hover:translate-x-1 transition-transform">
+                  <div className="flex items-center text-primary font-medium text-sm mt-3 group-hover:translate-x-1 transition-transform">
                     Read Article <ArrowRight className="ml-1 w-3 h-3" />
                   </div>
                 </div>

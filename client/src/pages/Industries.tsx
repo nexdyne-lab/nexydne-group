@@ -187,7 +187,7 @@ export default function Industries() {
                   <div className="w-full lg:w-1/2 p-4 sm:p-6 md:p-8 lg:p-6 sm:p-6 sm:p-8 md:p-12">
                     <div className="flex items-center gap-4 mb-6">
                       <div className="p-3 bg-blue-100 rounded-lg sm:rounded-xl">
-                        <Icon className="w-8 h-8 text-blue-600" />
+                        <Icon className="w-8 h-8 text-primary" />
                       </div>
                       <h3 className="text-3xl font-bold">{industry.title}</h3>
                     </div>
@@ -201,7 +201,7 @@ export default function Industries() {
                       <ul className="space-y-2">
                         {industry.solutions.map((solution) => (
                           <li key={solution} className="flex items-start gap-2">
-                            <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                            <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 mt-0.5" />
                             <span className="text-charcoal/80">{solution}</span>
                           </li>
                         ))}
@@ -233,7 +233,7 @@ export default function Industries() {
               Let's discuss how our industry-specific expertise can help you achieve your business objectives.
             </p>
             <Link href="/contact">
-              <a className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+              <a className="inline-flex items-center gap-2 bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
                 Schedule a Consultation
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>

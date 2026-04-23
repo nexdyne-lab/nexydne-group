@@ -358,7 +358,7 @@ export default function ProcessOptimizationInsights() {
                         </div>
 
                         {/* Title */}
-                        <h3 className="text-xl font-serif font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
+                        <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
                           {post.title}
                         </h3>
                         

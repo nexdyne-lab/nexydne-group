@@ -224,7 +224,7 @@ export default function AITechnologyConsulting() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-5xl md:text-6xl lg:text-7xl tracking-tight text-white leading-[1.05] mb-4 eb-garamond     ">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl tracking-tight text-white leading-[1.05] mb-4 eb-garamond ">
                 AI and Technology Consulting
               </h1>
               
@@ -290,7 +290,7 @@ export default function AITechnologyConsulting() {
             <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Our Approach
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
               Strategy, technology, and people—{" "}
               <span className="italic">integrated for impact.</span>
             </h2>
@@ -327,7 +327,7 @@ export default function AITechnologyConsulting() {
                 </div>
                 
                 {/* Content */}
-                <h3 className="text-xl sm:text-2xl font-serif font-bold mb-4 text-charcoal">
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 text-charcoal">
                   {pillar.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -369,7 +369,7 @@ export default function AITechnologyConsulting() {
             <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Proprietary Tools
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl leading-tight">
               NexDyne Accelerators
             </h2>
             <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
@@ -409,7 +409,7 @@ export default function AITechnologyConsulting() {
                   <span className="text-xs font-bold tracking-[0.15em] text-muted-foreground uppercase mb-2 block">
                     {accelerator.tagline}
                   </span>
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-4 text-charcoal">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-charcoal">
                     {accelerator.name}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed mb-6">
@@ -455,7 +455,7 @@ export default function AITechnologyConsulting() {
             <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Client Success
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl leading-tight">
               Results that speak for themselves
             </h2>
             <p className="text-lg text-muted-foreground mt-6">
@@ -491,7 +491,7 @@ export default function AITechnologyConsulting() {
                       </span>
                     </div>
                   </div>
-                  <h3 className="text-lg font-serif font-bold text-charcoal group-hover:text-secondary transition-colors leading-snug mb-2">
+                  <h3 className="text-lg font-bold text-charcoal group-hover:text-secondary transition-colors leading-snug mb-2">
                     {study.title}
                   </h3>
                   <p className="text-sm text-muted-foreground mb-2">
@@ -537,7 +537,7 @@ export default function AITechnologyConsulting() {
             <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Foundational Services
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl leading-tight">
               The complete value chain
             </h2>
             <p className="text-lg text-muted-foreground mt-6">
@@ -564,7 +564,7 @@ export default function AITechnologyConsulting() {
                     <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
                       <service.icon className="w-6 h-6 text-charcoal group-hover:text-white transition-colors" />
                     </div>
-                    <h3 className="text-xl font-serif font-bold mb-3 text-charcoal">
+                    <h3 className="text-xl font-bold mb-3 text-charcoal">
                       {service.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-4">
@@ -596,7 +596,7 @@ export default function AITechnologyConsulting() {
             <span className="text-xs sm:text-sm font-bold tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Insights
             </span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl leading-tight">
               Our latest thinking on AI & technology
             </h2>
           </motion.div>
@@ -626,7 +626,7 @@ export default function AITechnologyConsulting() {
                   <span className="text-xs font-bold tracking-wider text-muted-foreground uppercase">
                     {insight.type}
                   </span>
-                  <h3 className="text-base font-serif font-bold mt-2 text-charcoal group-hover:text-secondary transition-colors leading-snug">
+                  <h3 className="text-base font-bold mt-2 text-charcoal group-hover:text-secondary transition-colors leading-snug">
                     {insight.title}
                   </h3>
                 </Link>
@@ -662,7 +662,7 @@ export default function AITechnologyConsulting() {
             variants={fadeInUp}
             className="max-w-4xl mx-auto text-center"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Ready to transform your operations?
             </h2>
             <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">

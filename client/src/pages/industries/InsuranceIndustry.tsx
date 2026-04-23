@@ -76,7 +76,7 @@ export default function InsuranceIndustry() {
               transition={{ duration: 0.6 }}
               className="prose prose-lg max-w-none"
             >
-              <p className="text-lg sm:text-xl md:text-2xl text-charcoal/80 leading-relaxed mb-8 first-letter:text-6xl first-letter:font-serif first-letter:font-bold first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:text-primary">
+              <p className="text-lg sm:text-xl md:text-2xl text-charcoal/80 leading-relaxed mb-8">
                 Insurance has always been about managing risk—but the risks themselves are changing. Climate change is reshaping property and casualty exposures. Cyber threats create new categories of loss. And customers expect the same seamless digital experiences they get from tech companies. Carriers that can adapt to these changes will thrive; those that can't will struggle to remain relevant.
               </p>
               
@@ -118,7 +118,7 @@ export default function InsuranceIndustry() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-left"
               >
-                <div className="text-4xl md:text-5xl font-serif font-bold text-base mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-base mb-2">
                   {stat.value}
                 </div>
                 <div className="text-base text-muted-foreground leading-snug">
@@ -232,7 +232,7 @@ export default function InsuranceIndustry() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="lg:col-span-3"
             >
-              <div className="text-6xl md:text-7xl font-serif font-bold text-primary mb-4">
+              <div className="text-6xl md:text-7xl font-bold text-primary mb-4">
                 60%
               </div>
               <div className="text-xl font-medium text-charcoal mb-6">
@@ -337,7 +337,7 @@ export default function InsuranceIndustry() {
               transition={{ duration: 0.5 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Predictive Underwriting
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -353,7 +353,7 @@ export default function InsuranceIndustry() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Claims Analytics & Automation
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -369,7 +369,7 @@ export default function InsuranceIndustry() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Fraud Detection & Prevention
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -385,7 +385,7 @@ export default function InsuranceIndustry() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Customer Analytics & Retention
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -401,7 +401,7 @@ export default function InsuranceIndustry() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Digital Distribution Platforms
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -417,7 +417,7 @@ export default function InsuranceIndustry() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="border-t-2 border-base/10 pt-8"
             >
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4  decoration-primary decoration-2 underline-offset-4">
+              <h3 className="text-xl font-bold text-charcoal mb-4 decoration-primary decoration-2 underline-offset-4">
                 Regulatory & Compliance
               </h3>
               <p className="text-charcoal/70 leading-relaxed">
@@ -564,7 +564,7 @@ export default function InsuranceIndustry() {
                       <span className="text-xs font-bold uppercase tracking-[0.15em] text-primary group-hover:text-white/60 transition-colors">
                         Industry
                       </span>
-                      <h3 className="text-lg font-serif font-bold text-charcoal group-hover:text-white transition-colors mt-1">
+                      <h3 className="text-lg font-bold text-charcoal group-hover:text-white transition-colors mt-1">
                         {industry.title}
                       </h3>
                     </div>

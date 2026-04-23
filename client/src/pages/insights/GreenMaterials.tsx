@@ -24,10 +24,10 @@ export default function GreenMaterials() {
               <span className="mx-2">/</span>
               <span className="text-blue-900">Perspective</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-serif font-bold tracking-tight text-charcoal mb-4 leading-[1.1]">
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-4 leading-[1.1]">
               The Green Materials Revolution
             </h1>
-            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light font-serif">
+            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light ">
               From green steel to bio-based plastics, a wave of material innovation is reshaping industrial supply chains.
             </p>
           </div>
@@ -46,12 +46,12 @@ export default function GreenMaterials() {
                 Materials account for a significant portion of global greenhouse gas emissions. Steel, cement, aluminum, and chemicals alone are responsible for nearly 30% of the total. Decarbonizing these sectors is not just an environmental necessity; it is a massive commercial opportunity.
               </p>
               
-              <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">The Premium for Green</h3>
+              <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">The Premium for Green</h3>
               <p className="text-muted-foreground">
                 Early movers are already securing premiums for low-carbon materials. Automakers are signing long-term contracts for green steel to meet their scope 3 targets. Consumer goods companies are racing to secure supplies of recycled plastics and bio-based alternatives.
               </p>
 
-              <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">Technology Breakthroughs</h3>
+              <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Technology Breakthroughs</h3>
               <p className="text-muted-foreground">
                 Several technologies are reaching maturity simultaneously:
               </p>
@@ -61,12 +61,12 @@ export default function GreenMaterials() {
                 <li><strong>Bio-feedstocks:</strong> Using agricultural waste and biomass to replace fossil fuels in chemical production.</li>
               </ul>
               
-              <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">The Supply Gap</h3>
+              <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">The Supply Gap</h3>
               <p className="text-muted-foreground">
                 Despite the excitement, supply is lagging behind demand. Scaling these technologies requires massive capital investment and cheap, abundant renewable energy. We estimate a supply gap of 20-30% for green steel and recycled plastics by 2030 unless investment accelerates significantly.
               </p>
 
-              <h3 className="text-2xl font-serif font-bold text-charcoal mt-12 mb-6">What Leaders Should Do</h3>
+              <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">What Leaders Should Do</h3>
               <p className="text-muted-foreground">
                 <strong>For buyers:</strong> Send clear demand signals through advance market commitments and long-term offtake agreements.
                 <br /><br />

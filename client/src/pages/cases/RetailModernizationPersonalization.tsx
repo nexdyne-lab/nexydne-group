@@ -41,25 +41,25 @@ export default function RetailModernizationPersonalization() {
         <div className="container">
           <div className="grid md:grid-cols-4 gap-8">
             <Card className="p-6 text-center">
-              <TrendingUp className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <TrendingUp className="w-12 h-12 text-primary mx-auto mb-4" />
               <div className="text-4xl font-bold text-charcoal mb-2">34%</div>
               <div className="text-muted-foreground">Revenue Increase</div>
             </Card>
             
             <Card className="p-6 text-center">
-              <DollarSign className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <DollarSign className="w-12 h-12 text-primary mx-auto mb-4" />
               <div className="text-4xl font-bold text-charcoal mb-2">$18M</div>
               <div className="text-muted-foreground">Incremental Revenue</div>
             </Card>
             
             <Card className="p-6 text-center">
-              <Target className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <Target className="w-12 h-12 text-primary mx-auto mb-4" />
               <div className="text-4xl font-bold text-charcoal mb-2">2.8x</div>
               <div className="text-muted-foreground">Email CTR Improvement</div>
             </Card>
             
             <Card className="p-6 text-center">
-              <Users className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+              <Users className="w-12 h-12 text-primary mx-auto mb-4" />
               <div className="text-4xl font-bold text-charcoal mb-2">47%</div>
               <div className="text-muted-foreground">Conversion Rate Lift</div>
             </Card>
@@ -203,28 +203,28 @@ export default function RetailModernizationPersonalization() {
           
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-bold text-blue-600 mb-3">34% Revenue Increase</h3>
+              <h3 className="text-2xl font-bold text-primary mb-3">34% Revenue Increase</h3>
               <p className="text-lg text-muted-foreground">
                 Personalized product recommendations drove $18M in incremental annual revenue. Customers who engaged with recommendations had 2.3x higher average order values and purchased 40% more frequently than those who didn't.
               </p>
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold text-blue-600 mb-3">2.8x Email Engagement Improvement</h3>
+              <h3 className="text-2xl font-bold text-primary mb-3">2.8x Email Engagement Improvement</h3>
               <p className="text-lg text-muted-foreground">
                 Personalized email campaigns achieved 42% open rates (vs. 15% for generic campaigns) and 12% click-through rates (vs. 4% previously). Abandoned cart recovery rate increased from 8% to 23%, recovering $4.2M in otherwise lost revenue.
               </p>
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold text-blue-600 mb-3">47% Conversion Rate Lift</h3>
+              <h3 className="text-2xl font-bold text-primary mb-3">47% Conversion Rate Lift</h3>
               <p className="text-lg text-muted-foreground">
                 Website conversion rates improved from 2.1% to 3.1% across all traffic sources. Mobile conversion rates—historically lagging desktop—increased 61% as personalized recommendations adapted to smaller screens and touch interactions.
               </p>
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold text-blue-600 mb-3">Operational Efficiency Gains</h3>
+              <h3 className="text-2xl font-bold text-primary mb-3">Operational Efficiency Gains</h3>
               <p className="text-lg text-muted-foreground">
                 Marketing teams launched personalized campaigns 5x faster without IT bottlenecks. Self-service tools enabled rapid experimentation—the team ran 120+ A/B tests in the first year, continuously optimizing personalization strategies. Customer service teams gained unified customer views, reducing average handle time by 18%.
               </p>

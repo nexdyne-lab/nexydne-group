@@ -36,7 +36,7 @@ export default function CaseStudyVarianceAnalysis() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Case Study · Logistics & Warehousing
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               Automating variance analysis for <span className="text-primary">67%</span> faster close
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mb-5 sm:mb-6 md:mb-8">
@@ -79,7 +79,7 @@ export default function CaseStudyVarianceAnalysis() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-5xl font-serif font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-5xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-base text-white/70">{stat.label}</div>
               </motion.div>
             ))}
@@ -113,7 +113,7 @@ export default function CaseStudyVarianceAnalysis() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Company Overview</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client is a regional logistics and warehousing company operating 12 facilities across the Southeast United States. With 220 employees and $45M in annual revenue, they provide third-party logistics services to manufacturers, distributors, and e-commerce companies. The business operates on thin margins typical of the logistics industry, making tight financial control essential for profitability.
@@ -153,7 +153,7 @@ export default function CaseStudyVarianceAnalysis() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Manual variance analysis consumed weeks each month
             </h2>
           </motion.div>
@@ -164,21 +164,21 @@ export default function CaseStudyVarianceAnalysis() {
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Manual variance analysis consumed weeks each month</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Manual variance analysis consumed weeks each month</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The finance team spent the first 15 days of each month closing the books and preparing variance analysis reports. This involved manually extracting data from the ERP system, building complex Excel workbooks to compare actuals against budget and prior year, investigating every variance over $5,000, and writing narrative explanations for each significant difference. By the time the analysis was complete, the information was already outdated and the team had no time left for forward-looking planning.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Inconsistent analysis across business units</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Inconsistent analysis across business units</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 Each of the company's 12 facilities had its own general manager who was responsible for explaining variances in their P&L. However, there was no standardized process or template, so the quality and depth of analysis varied wildly. Some managers provided detailed, insightful commentary while others offered vague explanations or simply blamed "timing differences." This made it difficult for the CFO to understand true performance drivers or hold leaders accountable.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Errors and reconciliation issues created distrust</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Errors and reconciliation issues created distrust</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The manual process was error-prone, with frequent issues like formula mistakes, version control problems, and data entry errors. The CFO often discovered discrepancies during board presentations, which undermined confidence in the financial reporting. The team spent additional time each month reconciling and re-reconciling numbers, which further delayed the close process and created tension between finance and operations.
               </p>
@@ -196,7 +196,7 @@ export default function CaseStudyVarianceAnalysis() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
               "We were spending so much time looking backward that we had no capacity to look forward. I felt like a historian instead of a CFO. We needed to automate the routine work so we could focus on the strategic questions that actually move the business."
             </blockquote>
             <div className="text-base text-white">
@@ -219,7 +219,7 @@ export default function CaseStudyVarianceAnalysis() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Automated variance analysis system
             </h2>
           </motion.div>
@@ -241,7 +241,7 @@ export default function CaseStudyVarianceAnalysis() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   Automated data extraction and variance calculation
                 </h3>
@@ -277,7 +277,7 @@ export default function CaseStudyVarianceAnalysis() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <FileText className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   Intelligent commentary generation and standardized reporting
                 </h3>
@@ -320,7 +320,7 @@ export default function CaseStudyVarianceAnalysis() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Results & Impact
             </h2>
           </motion.div>
@@ -331,7 +331,7 @@ export default function CaseStudyVarianceAnalysis() {
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 Dramatically faster close process
               </h3>
@@ -340,18 +340,18 @@ export default function CaseStudyVarianceAnalysis() {
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl">
-                  <div className="text-3xl font-serif font-bold text-charcoal mb-2">5 days</div>
+                  <div className="text-3xl font-bold text-charcoal mb-2">5 days</div>
                   <div className="text-sm text-charcoal/60">Close-to-report time (down from 15 days)</div>
                 </div>
                 <div className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl">
-                  <div className="text-3xl font-serif font-bold text-charcoal mb-2">120 hrs</div>
+                  <div className="text-3xl font-bold text-charcoal mb-2">120 hrs</div>
                   <div className="text-sm text-charcoal/60">Finance team hours saved per month</div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 Improved accuracy and consistency
               </h3>
@@ -359,13 +359,13 @@ export default function CaseStudyVarianceAnalysis() {
                 By eliminating manual data manipulation and standardizing the analysis process, the system reduced errors by 90%. The CFO no longer worries about discovering discrepancies during board meetings, and business unit managers now provide consistently high-quality variance explanations. The audit trail and approval workflow also improved internal controls and made the year-end audit process significantly smoother.
               </p>
               <div className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl">
-                <div className="text-3xl font-serif font-bold text-charcoal mb-2">90%</div>
+                <div className="text-3xl font-bold text-charcoal mb-2">90%</div>
                 <div className="text-sm text-charcoal/60">Reduction in manual errors and reconciliation issues</div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 Freed capacity for strategic work
               </h3>
@@ -373,7 +373,7 @@ export default function CaseStudyVarianceAnalysis() {
                 With 120 hours per month freed up, the finance team redirected their efforts toward strategic initiatives like pricing optimization, customer profitability analysis, and capital investment evaluation. The CFO now spends less than 20% of his time on backward-looking reporting and more than 50% on forward-looking strategy—a complete reversal from before the automation.
               </p>
               <div className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl">
-                <div className="text-3xl font-serif font-bold text-charcoal mb-2">3x</div>
+                <div className="text-3xl font-bold text-charcoal mb-2">3x</div>
                 <div className="text-sm text-charcoal/60">Increase in time spent on strategic analysis vs. routine reporting</div>
               </div>
             </div>
@@ -390,7 +390,7 @@ export default function CaseStudyVarianceAnalysis() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
               "This automation has been a game-changer. We're no longer drowning in spreadsheets and reconciliation issues. We have time to think, to analyze, to advise the business. That's what finance should be doing—and now we actually can."
             </blockquote>
             <div className="text-base text-white">
@@ -421,7 +421,7 @@ export default function CaseStudyVarianceAnalysis() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white">More success stories</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-4 max-w-5xl">
@@ -457,7 +457,7 @@ export default function CaseStudyVarianceAnalysis() {
                     />
                   </div>
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>

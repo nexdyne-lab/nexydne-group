@@ -37,11 +37,11 @@ export function PharmaceuticalComplianceSystem() {
               <span className="font-semibold">78% faster audit prep</span>
             </div>
             <div className="flex items-center gap-2">
-              <Clock className="h-5 w-5 text-blue-600" />
+              <Clock className="h-5 w-5 text-primary" />
               <span className="font-semibold">Real-time compliance tracking</span>
             </div>
             <div className="flex items-center gap-2">
-              <Users className="h-5 w-5 text-blue-600" />
+              <Users className="h-5 w-5 text-primary" />
               <span className="font-semibold">200+ users across 12 facilities</span>
             </div>
           </div>

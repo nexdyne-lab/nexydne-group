@@ -373,7 +373,7 @@ export default function GenericIndustryPage({ config }: { config: GenericIndustr
             <h1 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold mb-3">
               {config.industry}
             </h1>
-            <p className="text-xl md:text-2xl text-blue-200 mb-4 font-serif italic">
+            <p className="text-xl md:text-2xl text-blue-200 mb-4 ">
               {config.tagline}
             </p>
             <p className="text-lg text-white/80 leading-relaxed mb-8">

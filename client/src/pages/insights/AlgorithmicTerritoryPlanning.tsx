@@ -36,7 +36,7 @@ export default function AlgorithmicTerritoryPlanning() {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-3 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold mb-3 leading-tight">
             Algorithmic Territory Planning: Optimizing Coverage with Geospatial Data
           </h1>
           
@@ -137,7 +137,7 @@ export default function AlgorithmicTerritoryPlanning() {
               </div>
               <div>
                 <h4 className="font-bold text-charcoal text-lg">Marcus Thorne</h4>
-                <p className="text-blue-600 font-medium text-sm mb-2">Partner, Sales Transformation</p>
+                <p className="text-primary font-medium text-sm mb-2">Partner, Sales Transformation</p>
                 <p className="text-muted-foreground text-sm">
                   Marcus advises Fortune 500 technology companies on revenue architecture and sales engineering. He previously served as CRO for a $2B SaaS platform.
                 </p>
@@ -163,13 +163,13 @@ export default function AlgorithmicTerritoryPlanning() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <h4 className="font-bold text-lg group-hover:text-blue-600 transition-colors">
+                  <h4 className="font-bold text-lg group-hover:text-primary transition-colors">
                     The End of "Gut Feel" Forecasting
                   </h4>
                   <p className="text-muted-foreground text-sm mt-2">
                     How predictive AI is replacing manual commits and increasing forecast accuracy.
                   </p>
-                  <div className="flex items-center text-blue-600 font-medium text-sm mt-3 group-hover:translate-x-1 transition-transform">
+                  <div className="flex items-center text-primary font-medium text-sm mt-3 group-hover:translate-x-1 transition-transform">
                     Read Article <ArrowRight className="ml-1 w-3 h-3" />
                   </div>
                 </div>
@@ -183,13 +183,13 @@ export default function AlgorithmicTerritoryPlanning() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <h4 className="font-bold text-lg group-hover:text-blue-600 transition-colors">
+                  <h4 className="font-bold text-lg group-hover:text-primary transition-colors">
                     Architecting the Modern Sales Stack
                   </h4>
                   <p className="text-muted-foreground text-sm mt-2">
                     Why tool consolidation is the new efficiency frontier for revenue leaders.
                   </p>
-                  <div className="flex items-center text-blue-600 font-medium text-sm mt-3 group-hover:translate-x-1 transition-transform">
+                  <div className="flex items-center text-primary font-medium text-sm mt-3 group-hover:translate-x-1 transition-transform">
                     Read Article <ArrowRight className="ml-1 w-3 h-3" />
                   </div>
                 </div>

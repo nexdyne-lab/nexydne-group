@@ -36,7 +36,7 @@ export default function MedicalDeviceGrowth() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Case Study · Healthcare Manufacturing
             </span>
-            <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight leading-[1.05] mb-4">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-4">
               Identifying and Capturing <span className="text-primary">Growth Opportunities</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mb-8">
@@ -78,7 +78,7 @@ export default function MedicalDeviceGrowth() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-5xl font-serif font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-5xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-base text-white/70">{stat.label}</div>
               </motion.div>
             ))}
@@ -112,7 +112,7 @@ export default function MedicalDeviceGrowth() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-serif font-bold text-charcoal mb-6">Company Overview</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 A mid-market medical device manufacturer with a strong product portfolio and established market presence faced a critical strategic challenge. While the company had achieved stable revenue growth, leadership recognized they were operating reactively rather than strategically. They lacked a systematic framework for evaluating growth opportunities and prioritizing capital allocation across potential investment channels.
@@ -152,7 +152,7 @@ export default function MedicalDeviceGrowth() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Strategic Void in Growth Planning
             </h2>
           </motion.div>
@@ -163,28 +163,28 @@ export default function MedicalDeviceGrowth() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Lack of Strategic Framework</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Lack of Strategic Framework</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 Without a systematic approach to evaluating growth opportunities, decisions were made based on intuition and anecdotal evidence rather than rigorous financial analysis. This led to inconsistent capital allocation and missed opportunities.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Limited Market Intelligence</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Limited Market Intelligence</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The finance team lacked access to external market data and competitive intelligence that could inform strategic decisions. They operated with an internal view of performance without understanding broader market dynamics.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Reactive Rather Than Proactive</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Reactive Rather Than Proactive</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The company responded to opportunities as they arose rather than actively identifying and pursuing strategic growth themes. This reactive posture meant they were often late to market with new initiatives.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4">Unclear Partnership Strategy</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Unclear Partnership Strategy</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 While leadership recognized that strategic partnerships and potential acquisitions could accelerate growth, they had no structured process for identifying, evaluating, and prioritizing potential partners in their ecosystem.
               </p>
@@ -202,7 +202,7 @@ export default function MedicalDeviceGrowth() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-3xl md:text-4xl font-serif text-primary leading-tight mb-8">
+            <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "We knew we had growth potential, but we were flying blind. Every strategic decision felt like a gamble because we lacked the analytical framework to evaluate opportunities systematically."
             </blockquote>
             <div className="text-base text-white">
@@ -225,7 +225,7 @@ export default function MedicalDeviceGrowth() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Solution
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Proprietary Financial Modeling Framework
             </h2>
           </motion.div>
@@ -247,7 +247,7 @@ export default function MedicalDeviceGrowth() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <Target className="w-6 h-6 text-primary" />
                   Strategic Assessment & Framework Development
                 </h3>
@@ -279,7 +279,7 @@ export default function MedicalDeviceGrowth() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <TrendingUp className="w-6 h-6 text-primary" />
                   Growth Theme Identification
                 </h3>
@@ -311,7 +311,7 @@ export default function MedicalDeviceGrowth() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <BarChart3 className="w-6 h-6 text-primary" />
                   Investment Channel Prioritization
                 </h3>
@@ -343,7 +343,7 @@ export default function MedicalDeviceGrowth() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                   <Users className="w-6 h-6 text-primary" />
                   Strategic Partnership Evaluation
                 </h3>
@@ -382,7 +382,7 @@ export default function MedicalDeviceGrowth() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Impact
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Strategic Clarity and Actionable Roadmap
             </h2>
           </motion.div>
@@ -393,7 +393,7 @@ export default function MedicalDeviceGrowth() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <Target className="w-6 h-6 text-primary" />
                 Clear Strategic Direction
               </h3>
@@ -402,18 +402,18 @@ export default function MedicalDeviceGrowth() {
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="p-6 bg-base/5 rounded-xl">
-                  <div className="text-3xl font-serif font-bold text-charcoal mb-2">12+</div>
+                  <div className="text-3xl font-bold text-charcoal mb-2">12+</div>
                   <div className="text-sm text-charcoal/60">Growth themes systematically evaluated</div>
                 </div>
                 <div className="p-6 bg-base/5 rounded-xl">
-                  <div className="text-3xl font-serif font-bold text-charcoal mb-2">5</div>
+                  <div className="text-3xl font-bold text-charcoal mb-2">5</div>
                   <div className="text-sm text-charcoal/60">Priority investment channels identified</div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <Users className="w-6 h-6 text-primary" />
                 Partnership Pipeline
               </h3>
@@ -421,13 +421,13 @@ export default function MedicalDeviceGrowth() {
                 The company established a robust pipeline of strategic partnership opportunities, with clear prioritization and financial models for each potential collaboration or acquisition.
               </p>
               <div className="p-6 bg-base/5 rounded-xl">
-                <div className="text-3xl font-serif font-bold text-charcoal mb-2">25+</div>
+                <div className="text-3xl font-bold text-charcoal mb-2">25+</div>
                 <div className="text-sm text-charcoal/60">Strategic partners evaluated and prioritized</div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <Lightbulb className="w-6 h-6 text-primary" />
                 Enhanced Capabilities
               </h3>
@@ -437,7 +437,7 @@ export default function MedicalDeviceGrowth() {
             </div>
 
             <div>
-              <h3 className="text-xl font-serif font-bold text-charcoal mb-4 flex items-center gap-3">
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
                 <TrendingUp className="w-6 h-6 text-primary" />
                 Board Confidence
               </h3>
@@ -458,7 +458,7 @@ export default function MedicalDeviceGrowth() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-3xl md:text-4xl font-serif text-primary leading-tight mb-8">
+            <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "NexDyne didn't just give us a report—they gave us a strategic framework that fundamentally changed how we think about growth. For the first time, we have a systematic, data-driven approach to evaluating opportunities and allocating capital. This has been transformational for our business."
             </blockquote>
             <div className="text-base text-white">
@@ -489,7 +489,7 @@ export default function MedicalDeviceGrowth() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white">More success stories</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -525,7 +525,7 @@ export default function MedicalDeviceGrowth() {
                     />
                   </div>
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-serif font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>

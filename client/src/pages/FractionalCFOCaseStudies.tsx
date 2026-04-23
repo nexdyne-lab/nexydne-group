@@ -106,7 +106,7 @@ export default function FractionalCFOCaseStudies() {
                             </div>
                           </div>
 
-                          <h2 className="text-3xl font-bold text-charcoal mb-4 group-hover:text-blue-600 transition-colors">
+                          <h2 className="text-3xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
                             {study.title}
                           </h2>
 
@@ -139,7 +139,7 @@ export default function FractionalCFOCaseStudies() {
                             ))}
                           </div>
 
-                          <div className="flex items-center text-blue-600 font-semibold group-hover:translate-x-2 transition-transform">
+                          <div className="flex items-center text-primary font-semibold group-hover:translate-x-2 transition-transform">
                             Read full case study <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
                           </div>
                         </div>

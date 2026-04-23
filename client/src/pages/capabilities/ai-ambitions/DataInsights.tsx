@@ -113,7 +113,6 @@ export default function DataInsights() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-white max-w-4xl leading-tight"
-              style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
             >
               Unlock insights from your data
             </motion.h1>
@@ -156,7 +155,7 @@ export default function DataInsights() {
                 </div>
                 <div>
                   <span className="text-destructive text-sm font-medium">{study.industry}</span>
-                  <h3 className="text-xl md:text-2xl font-bold text-charcoal mt-2 mb-3 leading-tight group-hover:text-destructive transition-colors" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+                  <h3 className="text-xl md:text-2xl font-bold text-charcoal mt-2 mb-3 leading-tight group-hover:text-destructive transition-colors">
                     {study.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed mb-4">{study.description}</p>
@@ -179,7 +178,7 @@ export default function DataInsights() {
         </div>
         <div className="relative z-10 container px-6 md:px-12">
           <Link href="/capabilities/artificial-intelligence">
-            <span className="inline-flex items-center text-white text-xl md:text-2xl font-medium cursor-pointer group" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+            <span className="inline-flex items-center text-white text-xl md:text-2xl font-medium cursor-pointer group">
               Our AI Consulting Services
               <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform" />
             </span>
@@ -192,7 +191,7 @@ export default function DataInsights() {
         <div className="container px-6 md:px-12">
           <div className="flex items-center justify-center mb-12">
             <div className="flex-1 h-px bg-muted"></div>
-            <h2 className="px-8 text-2xl md:text-3xl font-bold text-charcoal" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+            <h2 className="px-8 text-2xl md:text-3xl font-bold text-charcoal">
               Our Latest AI Insights
             </h2>
             <div className="flex-1 h-px bg-muted"></div>
@@ -212,7 +211,7 @@ export default function DataInsights() {
                   <img src={insight.image} alt={insight.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
                 <span className="text-destructive text-sm font-medium">{insight.category}</span>
-                <h3 className="text-lg font-bold text-charcoal mt-2 mb-2 leading-tight group-hover:text-destructive transition-colors" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+                <h3 className="text-lg font-bold text-charcoal mt-2 mb-2 leading-tight group-hover:text-destructive transition-colors">
                   {insight.title}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{insight.description}</p>
@@ -225,7 +224,7 @@ export default function DataInsights() {
       {/* CTA Section */}
       <section className="py-16 md:py-20 bg-subtle">
         <div className="container px-6 md:px-12 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-4" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+          <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-4">
             Ready to unlock the value in your data?
           </h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">

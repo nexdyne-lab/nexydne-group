@@ -189,8 +189,8 @@ export default function SecurityCompliance() {
                 transition={{ delay: i * 0.1 }}
                 className="text-center"
               >
-                <div className="text-7xl font-serif text-white/10 mb-4">{step.num}</div>
-                <h3 className="text-xl font-serif font-bold text-white mb-3">{step.title}</h3>
+                <div className="text-7xl text-white/10 mb-4">{step.num}</div>
+                <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
                 <p className="text-white/60 text-sm leading-relaxed">{step.desc}</p>
               </motion.div>
             ))}
@@ -328,7 +328,7 @@ export default function SecurityCompliance() {
                       </span>
                     </div>
                   </div>
-                  <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
+                  <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                     {study.title}
                   </h3>
                   <p className="text-charcoal/60 text-sm leading-relaxed mb-4">
@@ -409,7 +409,7 @@ export default function SecurityCompliance() {
                       <span className="text-charcoal/40">•</span>
                       <span className="text-charcoal/60 text-sm">{insight.readTime}</span>
                     </div>
-                    <h3 className="text-xl font-serif font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
+                    <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                       {insight.title}
                     </h3>
                     <p className="text-charcoal/60 text-sm leading-relaxed mb-6">

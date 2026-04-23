@@ -31,7 +31,7 @@ export default function PerformanceMarketing() {
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-charcoal mb-3 leading-[1.1] eb-garamond">
               Performance Marketing
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light font-serif">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light ">
               Drive measurable growth through data-driven channel optimization, precision targeting, and rigorous testing frameworks.
             </p>
           </div>
@@ -140,7 +140,7 @@ export default function PerformanceMarketing() {
             </div>
 
             <div className="bg-blue-900 text-white p-4 sm:p-6 md:p-8 rounded-sm">
-              <h3 className="text-xl font-serif font-bold mb-4">Get in touch</h3>
+              <h3 className="text-xl font-bold mb-4">Get in touch</h3>
               <p className="text-blue-100 mb-6">
                 Ready to optimize your marketing performance? Let's discuss your goals.
               </p>

@@ -35,7 +35,7 @@ export default function CompleteGuideProcessMiningInsight() {
               <span className="text-primary text-sm font-semibold tracking-wider uppercase mb-4 block">
                 Operations
               </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-3 text-charcoal font-serif">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-3 text-charcoal ">
                 The Complete Guide to Process Mining
               </h1>
               <p className="text-xl text-charcoal/70 leading-relaxed mb-8">
@@ -96,11 +96,11 @@ export default function CompleteGuideProcessMiningInsight() {
               className="prose prose-lg max-w-none"
             >
               {/* Lead Paragraph */}
-              <p className="text-xl text-charcoal leading-relaxed font-serif mb-8 not-prose">
+              <p className="text-xl text-charcoal leading-relaxed mb-8 not-prose">
                 Every organization has processes—sequences of activities that transform inputs into outputs. But few organizations truly understand how their processes actually execute. Process mining changes that by using data to reveal the reality of process execution.
               </p>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 font-serif">What is Process Mining?</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">What is Process Mining?</h2>
               
               <p className="text-charcoal/80 leading-relaxed mb-6">
                 Process mining is a family of techniques that extract knowledge from event logs recorded by information systems. By analyzing these digital footprints, process mining can automatically discover process models, check conformance to expected behavior, and identify opportunities for improvement.
@@ -137,7 +137,7 @@ export default function CompleteGuideProcessMiningInsight() {
                 ))}
               </div>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 font-serif">How Process Mining Works</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">How Process Mining Works</h2>
 
               <p className="text-charcoal/80 leading-relaxed mb-6">
                 Process mining relies on event logs—records of activities that occur within information systems. Every time someone creates an order, approves a request, or completes a task, the system records an event with a timestamp, activity name, and case identifier.
@@ -188,12 +188,12 @@ export default function CompleteGuideProcessMiningInsight() {
 
               {/* Pull Quote */}
               <blockquote className="border-l-4 border-primary pl-6 my-10 not-prose">
-                <p className="text-2xl text-charcoal font-serif italic leading-relaxed">
+                <p className="text-2xl text-charcoal leading-relaxed">
                   "Process mining reveals the truth about your operations—often showing that processes are 3-5x more complex than documented."
                 </p>
               </blockquote>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 font-serif">Key Use Cases</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">Key Use Cases</h2>
 
               <h3 className="text-xl font-bold text-charcoal mt-8 mb-4">Order-to-Cash Optimization</h3>
               <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -233,7 +233,7 @@ export default function CompleteGuideProcessMiningInsight() {
                 </div>
               </div>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 font-serif">Implementation Guide</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">Implementation Guide</h2>
 
               <p className="text-charcoal/80 leading-relaxed mb-6">
                 Successfully implementing process mining requires attention to both technical and organizational factors. Here's a structured approach:
@@ -264,7 +264,7 @@ export default function CompleteGuideProcessMiningInsight() {
                 Translate insights into action. This might include process redesign, automation opportunities, policy changes, or training needs. Prioritize improvements based on impact and feasibility. Measure results and iterate.
               </p>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 font-serif">Best Practices</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">Best Practices</h2>
 
               <div className="space-y-4 my-8 not-prose">
                 {[
@@ -283,7 +283,7 @@ export default function CompleteGuideProcessMiningInsight() {
                 ))}
               </div>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 font-serif">Getting Started</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">Getting Started</h2>
 
               <p className="text-charcoal/80 leading-relaxed mb-6">
                 Process mining has matured from an academic concept to a proven enterprise capability. Leading organizations across industries are using it to drive operational excellence, improve customer experience, and accelerate digital transformation.
@@ -398,7 +398,7 @@ export default function CompleteGuideProcessMiningInsight() {
       <section className="py-16 md:py-20 bg-subtle">
         <div className="container px-4 md:px-8 lg:px-12">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-8 font-serif">More Insights</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-8 ">More Insights</h2>
             
             <div className="grid md:grid-cols-3 gap-8">
               {[
@@ -433,7 +433,7 @@ export default function CompleteGuideProcessMiningInsight() {
                       <span className="text-primary font-semibold uppercase tracking-wider">{insight.category}</span>
                       <span className="text-muted-foreground">{insight.readTime}</span>
                     </div>
-                    <h3 className="text-lg font-bold text-charcoal mb-4 group-hover:text-primary transition-colors font-serif leading-snug">
+                    <h3 className="text-lg font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-snug">
                       {insight.title}
                     </h3>
                     <span className="inline-flex items-center text-primary text-sm font-medium">
