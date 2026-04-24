@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function EnergyTradingPlatform() {
+export function EnergyTradingPlatform() {
   return (
     <CaseStudyTemplate
       client="Energy Trading Firm"
@@ -34,3 +34,5 @@ The firm eliminated $240,000 in annual maintenance costs for the legacy system a
     />
   );
 }
+
+export default EnergyTradingPlatform;

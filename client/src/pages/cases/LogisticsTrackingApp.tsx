@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function LogisticsTrackingApp() {
+export function LogisticsTrackingApp() {
   return (
     <CaseStudyTemplate
       client="3PL Provider"
@@ -30,3 +30,5 @@ Driver productivity increased 22% as they eliminated manual paperwork and phone 
     />
   );
 }
+
+export default LogisticsTrackingApp;

@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function HospitalityGuestExperience() {
+export function HospitalityGuestExperience() {
   return (
     <CaseStudyTemplate
       client="Boutique Hotel Chain"
@@ -34,3 +34,5 @@ Ancillary revenue per stay increased by 52% as personalized recommendations surf
     />
   );
 }
+
+export default HospitalityGuestExperience;

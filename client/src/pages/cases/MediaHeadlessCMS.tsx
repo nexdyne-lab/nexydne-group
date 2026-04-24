@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function MediaHeadlessCMS() {
+export function MediaHeadlessCMS() {
   return (
     <CaseStudyTemplate
       client="Digital Media Publisher"
@@ -36,3 +36,5 @@ The business impact was substantial: advertising CPMs increased 34% due to faste
     />
   );
 }
+
+export default MediaHeadlessCMS;

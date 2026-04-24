@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function AirlineMaintenance() {
+export function AirlineMaintenance() {
   return (
     <CaseStudyTemplate
       client="Global Airline"
@@ -37,3 +37,5 @@ Maintenance costs dropped 15% as spare parts allocation became precise rather th
     />
   );
 }
+
+export default AirlineMaintenance;

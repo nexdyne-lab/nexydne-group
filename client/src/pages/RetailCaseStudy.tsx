@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function RetailCaseStudy() {
+export function RetailCaseStudy() {
   return (
     <CaseStudyTemplate
       client="Specialty Home Goods Retailer"
@@ -38,3 +38,5 @@ Seasonal markdown rate reduced from 28% to 11%, protecting gross margins signifi
     />
   );
 }
+
+export default RetailCaseStudy;

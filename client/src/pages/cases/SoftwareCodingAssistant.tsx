@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function SoftwareCodingAssistant() {
+export function SoftwareCodingAssistant() {
   return (
     <CaseStudyTemplate
       client="Enterprise Software Company"
@@ -35,3 +35,5 @@ New engineer onboarding time decreased significantly as the assistant provided i
     />
   );
 }
+
+export default SoftwareCodingAssistant;

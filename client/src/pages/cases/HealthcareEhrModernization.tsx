@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function HealthcareEhrModernization() {
+export function HealthcareEhrModernization() {
   return (
     <CaseStudyTemplate
       client="Regional Healthcare System"
@@ -34,3 +34,5 @@ Patient safety metrics showed measurable improvement. Medication error rates dec
     />
   );
 }
+
+export default HealthcareEhrModernization;

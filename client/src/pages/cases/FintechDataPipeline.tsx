@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function FintechDataPipeline() {
+export function FintechDataPipeline() {
   return (
     <CaseStudyTemplate
       client="Payment Processing Company"
@@ -30,3 +30,5 @@ The client's internal engineering team gained deep expertise in distributed stre
     />
   );
 }
+
+export default FintechDataPipeline;

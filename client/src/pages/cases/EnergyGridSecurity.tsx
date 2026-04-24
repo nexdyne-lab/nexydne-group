@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function EnergyGridSecurity() {
+export function EnergyGridSecurity() {
   return (
     <CaseStudyTemplate
       client="Major Energy Utility"
@@ -35,3 +35,5 @@ Computer vision models analyzed drone and satellite imagery to detect vegetation
     />
   );
 }
+
+export default EnergyGridSecurity;

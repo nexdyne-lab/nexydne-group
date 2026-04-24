@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function SaaSSeriesB() {
+export function SaaSSeriesB() {
   return (
     <CaseStudyTemplate
       client="B2B SaaS Company"
@@ -33,3 +33,5 @@ The preparation work paid measurable dividends: the clean SaaS metrics, complete
     />
   );
 }
+
+export default SaaSSeriesB;

@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function InsurancePolicyholderPortal() {
+export function InsurancePolicyholderPortal() {
   return (
     <CaseStudyTemplate
       client="Regional Insurance Carrier"
@@ -34,3 +34,5 @@ Retention among younger policyholders (ages 25-40) improved by 18 percentage poi
     />
   );
 }
+
+export default InsurancePolicyholderPortal;

@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function RetailOmnichannel() {
+export function RetailOmnichannel() {
   return (
     <CaseStudyTemplate
       client="National Specialty Retailer"
@@ -34,3 +34,5 @@ Customer lifetime value increased by 31% as personalized experiences drove highe
     />
   );
 }
+
+export default RetailOmnichannel;

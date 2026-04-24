@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function FoodProductionPlanning() {
+export function FoodProductionPlanning() {
   return (
     <CaseStudyTemplate
       client="Specialty Food Manufacturer"
@@ -33,3 +33,5 @@ The S&OP process created organizational alignment that had been missing: sales n
     />
   );
 }
+
+export default FoodProductionPlanning;

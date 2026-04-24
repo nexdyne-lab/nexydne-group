@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function MunicipalPermitSystem() {
+export function MunicipalPermitSystem() {
   return (
     <CaseStudyTemplate
       client="Mid-Sized City Government"
@@ -30,3 +30,5 @@ The city reduced permit processing costs by $420,000 annually through automation
     />
   );
 }
+
+export default MunicipalPermitSystem;

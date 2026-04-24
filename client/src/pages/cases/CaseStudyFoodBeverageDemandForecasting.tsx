@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function CaseStudyFoodBeverageDemandForecasting() {
+export function CaseStudyFoodBeverageDemandForecasting() {
   return (
     <CaseStudyTemplate
       client="Regional Food & Beverage Company"
@@ -36,3 +36,5 @@ The team can now run multiple demand scenarios in hours instead of weeks—3x th
     />
   );
 }
+
+export default CaseStudyFoodBeverageDemandForecasting;

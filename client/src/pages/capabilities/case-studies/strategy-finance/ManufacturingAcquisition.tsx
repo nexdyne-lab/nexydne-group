@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function ManufacturingAcquisition() {
+export function ManufacturingAcquisition() {
   return (
     <CaseStudyTemplate
       client="Precision Manufacturing Company"
@@ -33,3 +33,5 @@ The $45M deal created an entity capable of competing for programs that were prev
     />
   );
 }
+
+export default ManufacturingAcquisition;

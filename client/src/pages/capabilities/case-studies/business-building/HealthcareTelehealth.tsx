@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function HealthcareTelehealth() {
+export function HealthcareTelehealth() {
   return (
     <CaseStudyTemplate
       client="Regional Healthcare Network"
@@ -33,3 +33,5 @@ The platform enabled the network to serve rural patients who previously faced si
     />
   );
 }
+
+export default HealthcareTelehealth;

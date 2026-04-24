@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function HealthcarePatientPortal() {
+export function HealthcarePatientPortal() {
   return (
     <CaseStudyTemplate
       client="Regional Hospital System"
@@ -30,3 +30,5 @@ The mobile apps achieved 4.7-star ratings on both iOS and Android app stores, wi
     />
   );
 }
+
+export default HealthcarePatientPortal;

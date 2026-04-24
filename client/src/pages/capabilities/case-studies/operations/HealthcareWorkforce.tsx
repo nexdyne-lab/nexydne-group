@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function HealthcareWorkforce() {
+export function HealthcareWorkforce() {
   return (
     <CaseStudyTemplate
       client="Healthcare Services Company"
@@ -33,3 +33,5 @@ Staff turnover dropped 22% as schedule predictability improved—a high-value ou
     />
   );
 }
+
+export default HealthcareWorkforce;

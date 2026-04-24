@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function GlobalRetailer() {
+export function GlobalRetailer() {
   return (
     <CaseStudyTemplate
       client="Global Retailer"
@@ -30,3 +30,5 @@ Annual cost savings reached $1.8M through reduced labor, lower expedited shippin
     />
   );
 }
+
+export default GlobalRetailer;

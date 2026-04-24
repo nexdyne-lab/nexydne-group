@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function FinancialInstitution() {
+export function FinancialInstitution() {
   return (
     <CaseStudyTemplate
       client="Regional Bank"
@@ -30,3 +30,5 @@ Zero audit findings occurred in the first 12 months post-implementation, demonst
     />
   );
 }
+
+export default FinancialInstitution;

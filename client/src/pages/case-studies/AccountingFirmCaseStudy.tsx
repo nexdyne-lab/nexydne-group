@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function AccountingFirmCaseStudy() {
+export function AccountingFirmCaseStudy() {
   return (
     <CaseStudyTemplate
       client="Regional Accounting Firm"
@@ -40,3 +40,5 @@ Overtime hours during tax season reduced by 60%. Turnaround time for standard ta
     />
   );
 }
+
+export default AccountingFirmCaseStudy;

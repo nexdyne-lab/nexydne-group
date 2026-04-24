@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function HealthcareCloudMigration() {
+export function HealthcareCloudMigration() {
   return (
     <CaseStudyTemplate
       client="MedFlow"
@@ -40,3 +40,5 @@ Engineering productivity improved 40% as deployment frequency increased from mon
     />
   );
 }
+
+export default HealthcareCloudMigration;

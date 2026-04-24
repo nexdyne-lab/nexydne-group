@@ -1,7 +1,7 @@
 import React from 'react';
 import CaseStudyTemplate from '@/components/CaseStudyTemplate';
 
-export default function HealthcarePatientIntake() {
+export function HealthcarePatientIntake() {
   return (
     <CaseStudyTemplate
       client="National Healthcare Provider"
@@ -33,3 +33,5 @@ export default function HealthcarePatientIntake() {
     />
   );
 }
+
+export default HealthcarePatientIntake;

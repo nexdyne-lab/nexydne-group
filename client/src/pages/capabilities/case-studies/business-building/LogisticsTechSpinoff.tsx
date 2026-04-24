@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function LogisticsTechSpinoff() {
+export function LogisticsTechSpinoff() {
   return (
     <CaseStudyTemplate
       client="Last-Mile Logistics Firm"
@@ -31,3 +31,5 @@ The parent company retained full access to the technology through the licensing 
     />
   );
 }
+
+export default LogisticsTechSpinoff;

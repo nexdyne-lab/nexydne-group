@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function EcommerceFulfillment() {
+export function EcommerceFulfillment() {
   return (
     <CaseStudyTemplate
       client="E-commerce Home Goods Company"
@@ -33,3 +33,5 @@ Average ship time dropped to 4 hours as the wave planning system and automation 
     />
   );
 }
+
+export default EcommerceFulfillment;

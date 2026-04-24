@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function SaasChurnReduction() {
+export function SaasChurnReduction() {
   return (
     <CaseStudyTemplate
       client="B2B SaaS Platform"
@@ -40,3 +40,5 @@ Customer success team efficiency improved 3.2x—more accounts managed per repre
     />
   );
 }
+
+export default SaasChurnReduction;

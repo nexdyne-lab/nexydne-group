@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function DistributorMarketplace() {
+export function DistributorMarketplace() {
   return (
     <CaseStudyTemplate
       client="Industrial Supplies Distributor"
@@ -33,3 +33,5 @@ The marketplace transformed the company's competitive position. Rather than comp
     />
   );
 }
+
+export default DistributorMarketplace;

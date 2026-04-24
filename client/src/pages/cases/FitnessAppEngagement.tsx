@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function FitnessAppEngagement() {
+export function FitnessAppEngagement() {
   return (
     <CaseStudyTemplate
       client="Venture-Backed Fitness Startup"
@@ -30,3 +30,5 @@ Users completed 3.2 million workouts in the first year, with average session tim
     />
   );
 }
+
+export default FitnessAppEngagement;

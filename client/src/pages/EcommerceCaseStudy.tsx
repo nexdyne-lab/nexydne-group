@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function EcommerceCaseStudy() {
+export function EcommerceCaseStudy() {
   return (
     <CaseStudyTemplate
       client="Multi-Channel Home Goods Retailer"
@@ -33,3 +33,5 @@ Amazon seller rating improved from 3.8 to 4.7 stars. Return rate dropped from 8.
     />
   );
 }
+
+export default EcommerceCaseStudy;

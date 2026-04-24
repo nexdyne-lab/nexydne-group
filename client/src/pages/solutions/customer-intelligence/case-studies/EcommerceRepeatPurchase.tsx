@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function EcommerceRepeatPurchase() {
+export function EcommerceRepeatPurchase() {
   return (
     <CaseStudyTemplate
       client="Specialty E-commerce Retailer"
@@ -40,3 +40,5 @@ Customer lifetime value improved significantly as high-propensity customers were
     />
   );
 }
+
+export default EcommerceRepeatPurchase;

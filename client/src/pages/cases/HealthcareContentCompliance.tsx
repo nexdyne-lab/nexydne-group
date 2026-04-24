@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function HealthcareContentCompliance() {
+export function HealthcareContentCompliance() {
   return (
     <CaseStudyTemplate
       client="Large Healthcare System"
@@ -37,3 +37,5 @@ Patient outcomes improved measurably. Consistent, accurate, and accessible educa
     />
   );
 }
+
+export default HealthcareContentCompliance;

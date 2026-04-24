@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function LogisticsColdChain() {
+export function LogisticsColdChain() {
   return (
     <CaseStudyTemplate
       client="Pharma Logistics Firm"
@@ -30,3 +30,5 @@ Annual insurance savings reached $5M as the documented track record of product i
     />
   );
 }
+
+export default LogisticsColdChain;

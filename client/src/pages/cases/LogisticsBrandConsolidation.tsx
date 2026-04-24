@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function LogisticsBrandConsolidation() {
+export function LogisticsBrandConsolidation() {
   return (
     <CaseStudyTemplate
       client="Global Logistics Provider"
@@ -32,3 +32,5 @@ The simplified customer journey—a single point of contact and consistent servi
     />
   );
 }
+
+export default LogisticsBrandConsolidation;

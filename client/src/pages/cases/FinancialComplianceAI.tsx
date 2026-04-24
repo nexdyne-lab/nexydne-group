@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function FinancialComplianceAI() {
+export function FinancialComplianceAI() {
   return (
     <CaseStudyTemplate
       client="Multinational Bank"
@@ -35,3 +35,5 @@ False positive alerts decreased 60%, enabling the compliance team to focus their
     />
   );
 }
+
+export default FinancialComplianceAI;

@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function TelecomCustomerExperience() {
+export function TelecomCustomerExperience() {
   return (
     <CaseStudyTemplate
       client="National Telecommunications Provider"
@@ -34,3 +34,5 @@ Support costs decreased by $32 million annually as proactive service notificatio
     />
   );
 }
+
+export default TelecomCustomerExperience;

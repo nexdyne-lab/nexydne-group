@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function BankingMobileEngagement() {
+export function BankingMobileEngagement() {
   return (
     <CaseStudyTemplate
       client="Regional Bank"
@@ -34,3 +34,5 @@ Customer satisfaction scores for digital channels increased by 27 points, surpas
     />
   );
 }
+
+export default BankingMobileEngagement;

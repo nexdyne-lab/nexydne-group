@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function FinancialDataQuality() {
+export function FinancialDataQuality() {
   return (
     <CaseStudyTemplate
       client="Regional Bank"
@@ -32,3 +32,5 @@ The system caught 2,400 quality violations in the first quarter—most were upst
     />
   );
 }
+
+export default FinancialDataQuality;

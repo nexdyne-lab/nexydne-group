@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function HealthcareDataMaturity() {
+export function HealthcareDataMaturity() {
   return (
     <CaseStudyTemplate
       client="12-Hospital Healthcare System"
@@ -41,3 +41,5 @@ Self-service analytics reduced IT reporting workload 75%. Six FTEs were realloca
     />
   );
 }
+
+export default HealthcareDataMaturity;

@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function MobilityModelCity() {
+export function MobilityModelCity() {
   return (
     <CaseStudyTemplate
       client="European Capital City Government"
@@ -35,3 +35,5 @@ City planners gained the ability to test proposed changes digitally before commi
     />
   );
 }
+
+export default MobilityModelCity;

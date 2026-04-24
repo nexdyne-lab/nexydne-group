@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function SaaSCustomerServiceAI() {
+export function SaaSCustomerServiceAI() {
   return (
     <CaseStudyTemplate
       client="B2B SaaS Company"
@@ -33,3 +33,5 @@ The company avoided hiring the additional support staff that linear growth in ti
     />
   );
 }
+
+export default SaaSCustomerServiceAI;

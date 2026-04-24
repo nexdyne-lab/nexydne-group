@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function ConsumerDecisionJourney() {
+export function ConsumerDecisionJourney() {
   return (
     <CaseStudyTemplate
       client="Global Consumer Electronics Manufacturer"
@@ -32,3 +32,5 @@ The entire initial inventory sold out in 2 weeks. ROAS increased 3x versus the p
     />
   );
 }
+
+export default ConsumerDecisionJourney;

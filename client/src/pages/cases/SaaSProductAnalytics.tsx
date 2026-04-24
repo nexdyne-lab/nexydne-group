@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function SaaSProductAnalytics() {
+export function SaaSProductAnalytics() {
   return (
     <CaseStudyTemplate
       client="B2B SaaS Company"
@@ -37,3 +37,5 @@ Onboarding completion rate increased from 58% to 82% after the data-driven redes
     />
   );
 }
+
+export default SaaSProductAnalytics;

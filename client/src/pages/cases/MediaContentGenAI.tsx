@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function MediaContentGenAI() {
+export function MediaContentGenAI() {
   return (
     <CaseStudyTemplate
       client="Global Media Network"
@@ -35,3 +35,5 @@ The network expanded to 20+ language markets instantly with automated localizati
     />
   );
 }
+
+export default MediaContentGenAI;

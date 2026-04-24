@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function TelecomChurnPrediction() {
+export function TelecomChurnPrediction() {
   return (
     <CaseStudyTemplate
       client="Regional Telecom Provider"
@@ -35,3 +35,5 @@ Win-back rates for contacted customers improved from 23% to 41% as retention spe
     />
   );
 }
+
+export default TelecomChurnPrediction;

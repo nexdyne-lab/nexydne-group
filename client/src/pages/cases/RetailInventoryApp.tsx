@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function RetailInventoryApp() {
+export function RetailInventoryApp() {
   return (
     <CaseStudyTemplate
       client="Specialty Outdoor Gear Retailer"
@@ -30,3 +30,5 @@ The automated reorder system prevented 1,850 stockout incidents in the first yea
     />
   );
 }
+
+export default RetailInventoryApp;

@@ -1,7 +1,7 @@
 import React from 'react';
 import CaseStudyTemplate from '@/components/CaseStudyTemplate';
 
-export default function RetailLoyaltyProgram() {
+export function RetailLoyaltyProgram() {
   return (
     <CaseStudyTemplate
       client="Global Fashion Retailer"
@@ -38,3 +38,5 @@ export default function RetailLoyaltyProgram() {
     />
   );
 }
+
+export default RetailLoyaltyProgram;

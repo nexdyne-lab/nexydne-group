@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function DistributionFPA() {
+export function DistributionFPA() {
   return (
     <CaseStudyTemplate
       client="Industrial Distribution Company"
@@ -33,3 +33,5 @@ Working capital improved 15% as the customer profitability analysis and real-tim
     />
   );
 }
+
+export default DistributionFPA;

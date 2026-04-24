@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function HealthcareProviderAI() {
+export function HealthcareProviderAI() {
   return (
     <CaseStudyTemplate
       client="Regional Healthcare System"
@@ -42,3 +42,5 @@ Patient throughput increased 28% without adding staff or facilities, achieved th
     />
   );
 }
+
+export default HealthcareProviderAI;

@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function FinancialChurnPrediction() {
+export function FinancialChurnPrediction() {
   return (
     <CaseStudyTemplate
       client="Regional Financial Services Firm"
@@ -32,3 +32,5 @@ Retention campaign effectiveness improved dramatically. Customers contacted thro
     />
   );
 }
+
+export default FinancialChurnPrediction;

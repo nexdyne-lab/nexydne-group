@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function ManufacturingErpModernization() {
+export function ManufacturingErpModernization() {
   return (
     <CaseStudyTemplate
       client="Global Industrial Equipment Manufacturer"
@@ -34,3 +34,5 @@ Inventory carrying costs decreased by $4.7 million annually as the company balan
     />
   );
 }
+
+export default ManufacturingErpModernization;

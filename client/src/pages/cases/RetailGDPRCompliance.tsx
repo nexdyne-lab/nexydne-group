@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function RetailGDPRCompliance() {
+export function RetailGDPRCompliance() {
   return (
     <CaseStudyTemplate
       client="Mid-Sized E-Commerce Retailer"
@@ -37,3 +37,5 @@ The data catalog also delivered unexpected business value: marketing teams disco
     />
   );
 }
+
+export default RetailGDPRCompliance;

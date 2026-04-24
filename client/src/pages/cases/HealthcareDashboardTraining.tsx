@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function HealthcareDashboardTraining() {
+export function HealthcareDashboardTraining() {
   return (
     <CaseStudyTemplate
       client="Regional Healthcare Network"
@@ -39,3 +39,5 @@ Physicians identified a 12% readmission spike in heart failure patients at one h
     />
   );
 }
+
+export default HealthcareDashboardTraining;

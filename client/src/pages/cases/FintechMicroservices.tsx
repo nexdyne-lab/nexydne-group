@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function FintechMicroservices() {
+export function FintechMicroservices() {
   return (
     <CaseStudyTemplate
       client="PayStream"
@@ -39,3 +39,5 @@ Development velocity transformed dramatically: deployment frequency went from we
     />
   );
 }
+
+export default FintechMicroservices;

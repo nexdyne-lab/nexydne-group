@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function FoodDeliveryApp() {
+export function FoodDeliveryApp() {
   return (
     <CaseStudyTemplate
       client="Regional Food Delivery Service"
@@ -30,3 +30,5 @@ The app handled peak loads of 15,000 concurrent users without performance issues
     />
   );
 }
+
+export default FoodDeliveryApp;

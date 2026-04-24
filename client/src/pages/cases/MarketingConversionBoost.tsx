@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function MarketingConversionBoost() {
+export function MarketingConversionBoost() {
   return (
     <CaseStudyTemplate
       client="B2B SaaS Company"
@@ -34,3 +34,5 @@ Customer acquisition costs decreased 15% as ad spend was optimized by suppressin
     />
   );
 }
+
+export default MarketingConversionBoost;

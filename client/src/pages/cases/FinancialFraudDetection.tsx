@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function FinancialFraudDetection() {
+export function FinancialFraudDetection() {
   return (
     <CaseStudyTemplate
       client="Regional Payment Processor"
@@ -39,3 +39,5 @@ Chargeback rates decreased from 0.8% to 0.2%, saving $3.2M in chargeback fees an
     />
   );
 }
+
+export default FinancialFraudDetection;

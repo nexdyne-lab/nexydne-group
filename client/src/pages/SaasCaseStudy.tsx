@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function SaasCaseStudy() {
+export function SaasCaseStudy() {
   return (
     <CaseStudyTemplate
       client="B2B SaaS Platform"
@@ -33,3 +33,5 @@ Customer satisfaction during onboarding increased from 3.9 to 4.8 out of 5. Firs
     />
   );
 }
+
+export default SaasCaseStudy;

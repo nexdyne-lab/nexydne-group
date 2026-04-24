@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function DigitalBankMobilePlatform() {
+export function DigitalBankMobilePlatform() {
   return (
     <CaseStudyTemplate
       client="Digital-First Bank"
@@ -30,3 +30,5 @@ Mobile transactions accounted for 94% of all banking activity, validating the mo
     />
   );
 }
+
+export default DigitalBankMobilePlatform;

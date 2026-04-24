@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function SubscriptionRetention() {
+export function SubscriptionRetention() {
   return (
     <CaseStudyTemplate
       client="Digital Content Subscription Company"
@@ -33,3 +33,5 @@ The shift to proactive customer success proved particularly high-leverage: custo
     />
   );
 }
+
+export default SubscriptionRetention;

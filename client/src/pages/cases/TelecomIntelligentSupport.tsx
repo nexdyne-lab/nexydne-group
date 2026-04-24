@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function TelecomIntelligentSupport() {
+export function TelecomIntelligentSupport() {
   return (
     <CaseStudyTemplate
       client="Regional Telecommunications Provider"
@@ -34,3 +34,5 @@ Churn rates decreased by 29% as improved support experiences strengthened custom
     />
   );
 }
+
+export default TelecomIntelligentSupport;

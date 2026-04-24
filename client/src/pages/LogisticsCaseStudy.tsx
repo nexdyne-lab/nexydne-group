@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function LogisticsCaseStudy() {
+export function LogisticsCaseStudy() {
   return (
     <CaseStudyTemplate
       client="Regional Logistics Provider"
@@ -33,3 +33,5 @@ Customer satisfaction scores increased from 3.2 to 4.6 out of 5. Support ticket 
     />
   );
 }
+
+export default LogisticsCaseStudy;

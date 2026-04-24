@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function DistributionWarehouse() {
+export function DistributionWarehouse() {
   return (
     <CaseStudyTemplate
       client="Industrial Distribution Company"
@@ -33,3 +33,5 @@ The avoided expansion represented immediate capital preservation while the opera
     />
   );
 }
+
+export default DistributionWarehouse;

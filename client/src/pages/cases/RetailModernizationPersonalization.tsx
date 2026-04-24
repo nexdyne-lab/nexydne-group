@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function RetailModernizationPersonalization() {
+export function RetailModernizationPersonalization() {
   return (
     <CaseStudyTemplate
       client="National Home Goods Retailer"
@@ -33,3 +33,5 @@ Personalized email campaigns achieved 42% open rates (vs. 15% for generic campai
     />
   );
 }
+
+export default RetailModernizationPersonalization;

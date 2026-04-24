@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function InsuranceDocumentAI() {
+export function InsuranceDocumentAI() {
   return (
     <CaseStudyTemplate
       client="Regional Property & Casualty Insurance Company"
@@ -38,3 +38,5 @@ Annual financial benefits reached $1.25 million: $850,000 in labor savings, $280
     />
   );
 }
+
+export default InsuranceDocumentAI;

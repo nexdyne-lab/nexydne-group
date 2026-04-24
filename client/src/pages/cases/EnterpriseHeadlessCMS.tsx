@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function EnterpriseHeadlessCMS() {
+export function EnterpriseHeadlessCMS() {
   return (
     <CaseStudyTemplate
       client="Fortune 500 Industrial Manufacturer"
@@ -34,3 +34,5 @@ The unified platform enabled new digital experiences that were previously imposs
     />
   );
 }
+
+export default EnterpriseHeadlessCMS;

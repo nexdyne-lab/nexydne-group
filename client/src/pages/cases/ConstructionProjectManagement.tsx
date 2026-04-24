@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function ConstructionProjectManagement() {
+export function ConstructionProjectManagement() {
   return (
     <CaseStudyTemplate
       client="Regional Construction Firm"
@@ -35,3 +35,5 @@ Field crews achieved 88% adoption within the first month. The firm reduced budge
     />
   );
 }
+
+export default ConstructionProjectManagement;

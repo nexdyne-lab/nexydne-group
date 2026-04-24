@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function SoftwareSalesOptimization() {
+export function SoftwareSalesOptimization() {
   return (
     <CaseStudyTemplate
       client="Enterprise Software Company"
@@ -33,3 +33,5 @@ New hire ramp time cut from 9 months to 4 months as the codified sales playbook 
     />
   );
 }
+
+export default SoftwareSalesOptimization;

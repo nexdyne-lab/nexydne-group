@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function AerospaceQuality() {
+export function AerospaceQuality() {
   return (
     <CaseStudyTemplate
       client="Aerospace Precision Components Supplier"
@@ -33,3 +33,5 @@ The certifications opened new commercial opportunities—AS9100 certification is
     />
   );
 }
+
+export default AerospaceQuality;

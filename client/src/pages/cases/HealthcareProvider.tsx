@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function HealthcareProvider() {
+export function HealthcareProvider() {
   return (
     <CaseStudyTemplate
       client="Healthcare Provider Network"
@@ -30,3 +30,5 @@ Staff satisfaction improved dramatically: turnover declined from 40% to 18% by e
     />
   );
 }
+
+export default HealthcareProvider;

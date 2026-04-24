@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function RetailerMLForecasting() {
+export function RetailerMLForecasting() {
   return (
     <CaseStudyTemplate
       client="Major Retailer"
@@ -30,3 +30,5 @@ Stockouts in high-demand stores decreased substantially as the model correctly p
     />
   );
 }
+
+export default RetailerMLForecasting;

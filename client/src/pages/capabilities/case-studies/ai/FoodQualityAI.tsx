@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function FoodQualityAI() {
+export function FoodQualityAI() {
   return (
     <CaseStudyTemplate
       client="Regional Food Processing Company"
@@ -33,3 +33,5 @@ Annual savings of $1.8 million came from reduced waste, avoided customer penalti
     />
   );
 }
+
+export default FoodQualityAI;

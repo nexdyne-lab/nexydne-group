@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function InsuranceClimateRisk() {
+export function InsuranceClimateRisk() {
   return (
     <CaseStudyTemplate
       client="Global Property & Casualty Insurer"
@@ -30,3 +30,5 @@ The loss ratio improved 15% through more accurate risk selection and pricing. Ca
     />
   );
 }
+
+export default InsuranceClimateRisk;

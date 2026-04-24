@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function GlobalRetailerEcommerce() {
+export function GlobalRetailerEcommerce() {
   return (
     <CaseStudyTemplate
       client="Global Retailer"
@@ -42,3 +42,5 @@ Customer retention increased 65% through targeted engagement programs that antic
     />
   );
 }
+
+export default GlobalRetailerEcommerce;

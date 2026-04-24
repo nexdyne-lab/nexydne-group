@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function B2BDigitalMarketing() {
+export function B2BDigitalMarketing() {
   return (
     <CaseStudyTemplate
       client="B2B Professional Services Company"
@@ -31,3 +31,5 @@ The marketing function transformed from a cost center dependent on unpredictable
     />
   );
 }
+
+export default B2BDigitalMarketing;

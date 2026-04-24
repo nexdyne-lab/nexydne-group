@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function RetailPersonalization() {
+export function RetailPersonalization() {
   return (
     <CaseStudyTemplate
       client="National Specialty Retailer"
@@ -34,3 +34,5 @@ Email marketing performance improved dramatically, with click-through rates incr
     />
   );
 }
+
+export default RetailPersonalization;

@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function ManufacturingPredictiveMaintenance() {
+export function ManufacturingPredictiveMaintenance() {
   return (
     <CaseStudyTemplate
       client="Precision Metal Fabrication Company"
@@ -35,3 +35,5 @@ Annual financial benefits totaled $680,000: $320,000 from maintenance cost reduc
     />
   );
 }
+
+export default ManufacturingPredictiveMaintenance;

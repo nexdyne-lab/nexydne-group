@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function SemiconductorDesignTwin() {
+export function SemiconductorDesignTwin() {
   return (
     <CaseStudyTemplate
       client="Leading Semiconductor Manufacturer"
@@ -35,3 +35,5 @@ The digital twin became the company's primary innovation platform—enabling rap
     />
   );
 }
+
+export default SemiconductorDesignTwin;

@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function HealthcarePatientEngagement() {
+export function HealthcarePatientEngagement() {
   return (
     <CaseStudyTemplate
       client="Regional Healthcare System"
@@ -30,3 +30,5 @@ Operational savings reached $3.2M annually through reduced call center staffing 
     />
   );
 }
+
+export default HealthcarePatientEngagement;

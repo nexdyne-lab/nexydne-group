@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function PaymentTerminalOnboarding() {
+export function PaymentTerminalOnboarding() {
   return (
     <CaseStudyTemplate
       client="Payment Processor"
@@ -33,3 +33,5 @@ Post-onboarding satisfaction scores increased from 2.9/5 to 4.7/5. Net Promoter 
     />
   );
 }
+
+export default PaymentTerminalOnboarding;

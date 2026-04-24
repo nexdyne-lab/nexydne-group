@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function ConsultingSaaS() {
+export function ConsultingSaaS() {
   return (
     <CaseStudyTemplate
       client="Management Consulting Firm"
@@ -33,3 +33,5 @@ The SaaS product expanded the firm's addressable market to companies that couldn
     />
   );
 }
+
+export default ConsultingSaaS;

@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function RetailProductContent() {
+export function RetailProductContent() {
   return (
     <CaseStudyTemplate
       client="Mid-Sized Home Goods Retailer"
@@ -37,3 +37,5 @@ Revenue impact was significant: faster time-to-market allowed the retailer to la
     />
   );
 }
+
+export default RetailProductContent;

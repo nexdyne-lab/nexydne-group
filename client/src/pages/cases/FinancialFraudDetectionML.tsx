@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function FinancialFraudDetectionML() {
+export function FinancialFraudDetectionML() {
   return (
     <CaseStudyTemplate
       client="Regional Bank"
@@ -34,3 +34,5 @@ The bank prevented $18M in fraud losses in the first year while reducing operati
     />
   );
 }
+
+export default FinancialFraudDetectionML;

@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function LogisticsProductAccess() {
+export function LogisticsProductAccess() {
   return (
     <CaseStudyTemplate
       client="National Industrial Supply Distributor"
@@ -37,3 +37,5 @@ Average order value increased 41% from $342 to $482 as customers discovered comp
     />
   );
 }
+
+export default LogisticsProductAccess;

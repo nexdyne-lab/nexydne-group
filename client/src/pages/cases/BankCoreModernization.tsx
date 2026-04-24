@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function BankCoreModernization() {
+export function BankCoreModernization() {
   return (
     <CaseStudyTemplate
       client="Regional Bank"
@@ -34,3 +34,5 @@ Infrastructure costs decreased by $3.8 million annually, with cloud-based archit
     />
   );
 }
+
+export default BankCoreModernization;

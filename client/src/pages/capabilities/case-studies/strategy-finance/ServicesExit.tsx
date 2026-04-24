@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function ServicesExit() {
+export function ServicesExit() {
   return (
     <CaseStudyTemplate
       client="Environmental Consulting Firm"
@@ -33,3 +33,5 @@ The revenue diversification program proved particularly valuable: buyers who had
     />
   );
 }
+
+export default ServicesExit;

@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function PEGrowthHealthcare() {
+export function PEGrowthHealthcare() {
   return (
     <CaseStudyTemplate
       client="PE-Backed Healthcare Services Company"
@@ -33,3 +33,5 @@ The financial visibility created by the FP&A transformation was foundational to 
     />
   );
 }
+
+export default PEGrowthHealthcare;

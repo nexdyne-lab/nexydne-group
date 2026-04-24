@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function RetailTurnaround() {
+export function RetailTurnaround() {
   return (
     <CaseStudyTemplate
       client="Specialty Retail Company"
@@ -33,3 +33,5 @@ The 8 remaining locations, freed from the drag of underperforming stores and sup
     />
   );
 }
+
+export default RetailTurnaround;

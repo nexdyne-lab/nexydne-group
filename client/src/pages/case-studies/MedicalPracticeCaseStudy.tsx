@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function MedicalPracticeCaseStudy() {
+export function MedicalPracticeCaseStudy() {
   return (
     <CaseStudyTemplate
       client="Regional Medical Practice Network"
@@ -40,3 +40,5 @@ Provider utilization increased from 72% to 88%, and the no-show rate dropped fro
     />
   );
 }
+
+export default MedicalPracticeCaseStudy;

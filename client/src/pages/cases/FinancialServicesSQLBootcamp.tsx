@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function FinancialServicesSQLBootcamp() {
+export function FinancialServicesSQLBootcamp() {
   return (
     <CaseStudyTemplate
       client="Mid-Market Investment Firm"
@@ -34,3 +34,5 @@ Advisors now receive daily portfolio updates instead of monthly reports. The com
     />
   );
 }
+
+export default FinancialServicesSQLBootcamp;

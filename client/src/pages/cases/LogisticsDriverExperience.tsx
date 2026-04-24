@@ -1,7 +1,7 @@
 import React from 'react';
 import CaseStudyTemplate from '@/components/CaseStudyTemplate';
 
-export default function LogisticsDriverExperience() {
+export function LogisticsDriverExperience() {
   return (
     <CaseStudyTemplate
       client="Global Logistics Firm"
@@ -38,3 +38,5 @@ export default function LogisticsDriverExperience() {
     />
   );
 }
+
+export default LogisticsDriverExperience;

@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function ManufacturerEcommerce() {
+export function ManufacturerEcommerce() {
   return (
     <CaseStudyTemplate
       client="Specialty Outdoor Equipment Manufacturer"
@@ -33,3 +33,5 @@ Direct consumer data became an immediate strategic advantage: product feedback a
     />
   );
 }
+
+export default ManufacturerEcommerce;

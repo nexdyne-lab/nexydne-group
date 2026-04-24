@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function FintechMobileBanking() {
+export function FintechMobileBanking() {
   return (
     <CaseStudyTemplate
       client="Community Credit Union"
@@ -30,3 +30,5 @@ Mobile check deposits accounted for 68% of all check deposits within 3 months. P
     />
   );
 }
+
+export default FintechMobileBanking;

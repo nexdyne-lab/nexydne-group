@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function CaseStudyConsumerElectronicsDemandOptimization() {
+export function CaseStudyConsumerElectronicsDemandOptimization() {
   return (
     <CaseStudyTemplate
       client="Consumer Electronics & Furniture Retailer"
@@ -36,3 +36,5 @@ Stores now carry the right products for their local market, dramatically reducin
     />
   );
 }
+
+export default CaseStudyConsumerElectronicsDemandOptimization;

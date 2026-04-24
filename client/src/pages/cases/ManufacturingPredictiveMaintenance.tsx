@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function ManufacturingPredictiveMaintenance() {
+export function ManufacturingPredictiveMaintenance() {
   return (
     <CaseStudyTemplate
       client="Food Processing Plant"
@@ -41,3 +41,5 @@ The maintenance team shifted from fixed schedules to condition-based maintenance
     />
   );
 }
+
+export default ManufacturingPredictiveMaintenance;

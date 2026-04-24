@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function HealthcareSystemModernization() {
+export function HealthcareSystemModernization() {
   return (
     <CaseStudyTemplate
       client="Regional Healthcare System"
@@ -31,3 +31,5 @@ The modernized environment passed the most recent HIPAA audit with zero findings
     />
   );
 }
+
+export default HealthcareSystemModernization;

@@ -1,7 +1,7 @@
 import React from 'react';
 import CaseStudyTemplate from '@/components/CaseStudyTemplate';
 
-export default function StreamingRecommendationEngine() {
+export function StreamingRecommendationEngine() {
   return (
     <CaseStudyTemplate
       client="Global Streaming Service"
@@ -33,3 +33,5 @@ export default function StreamingRecommendationEngine() {
     />
   );
 }
+
+export default StreamingRecommendationEngine;

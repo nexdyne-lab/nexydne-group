@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function FinancialInstitutionAutomation() {
+export function FinancialInstitutionAutomation() {
   return (
     <CaseStudyTemplate
       client="Regional Bank"
@@ -40,3 +40,5 @@ Our team implemented a flexible workflow engine that routes applications through
     />
   );
 }
+
+export default FinancialInstitutionAutomation;

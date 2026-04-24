@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function SpecializedCodingAssistant() {
+export function SpecializedCodingAssistant() {
   return (
     <CaseStudyTemplate
       client="Major Automotive OEM"
@@ -35,3 +35,5 @@ The tool effectively encoded safety and hardware expertise that previously requi
     />
   );
 }
+
+export default SpecializedCodingAssistant;

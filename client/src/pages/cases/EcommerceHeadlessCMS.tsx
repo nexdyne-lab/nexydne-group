@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function EcommerceHeadlessCMS() {
+export function EcommerceHeadlessCMS() {
   return (
     <CaseStudyTemplate
       client="National Home Goods Retailer"
@@ -32,3 +32,5 @@ In-store kiosk orders accounted for $42M in annual revenue from products not sto
     />
   );
 }
+
+export default EcommerceHeadlessCMS;

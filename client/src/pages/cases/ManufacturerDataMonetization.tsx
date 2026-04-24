@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function ManufacturerDataMonetization() {
+export function ManufacturerDataMonetization() {
   return (
     <CaseStudyTemplate
       client="Mid-Market Industrial Equipment Manufacturer"
@@ -39,3 +39,5 @@ Beyond the primary revenue stream, the strategy eliminated 4 low-value projects 
     />
   );
 }
+
+export default ManufacturerDataMonetization;

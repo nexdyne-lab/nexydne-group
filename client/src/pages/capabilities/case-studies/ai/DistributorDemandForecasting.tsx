@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function DistributorDemandForecasting() {
+export function DistributorDemandForecasting() {
   return (
     <CaseStudyTemplate
       client="Wholesale Distribution Company"
@@ -33,3 +33,5 @@ Buyer productivity improved as exception-based workflows focused attention on it
     />
   );
 }
+
+export default DistributorDemandForecasting;

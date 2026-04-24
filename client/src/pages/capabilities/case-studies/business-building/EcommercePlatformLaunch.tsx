@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function EcommercePlatformLaunch() {
+export function EcommercePlatformLaunch() {
   return (
     <CaseStudyTemplate
       client="Industrial Distributor"
@@ -33,3 +33,5 @@ The platform enabled the company to serve customers outside their traditional ge
     />
   );
 }
+
+export default EcommercePlatformLaunch;

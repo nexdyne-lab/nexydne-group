@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function InsuranceCaseStudy() {
+export function InsuranceCaseStudy() {
   return (
     <CaseStudyTemplate
       client="Regional Property & Casualty Insurance Company"
@@ -38,3 +38,5 @@ Fraud detection rate improved from 38% to 87%—a 2.3x improvement—recovering 
     />
   );
 }
+
+export default InsuranceCaseStudy;

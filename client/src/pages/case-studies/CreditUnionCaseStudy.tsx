@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function CreditUnionCaseStudy() {
+export function CreditUnionCaseStudy() {
   return (
     <CaseStudyTemplate
       client="Community Credit Union"
@@ -40,3 +40,5 @@ Cross-sell conversion rate improved by 28%, with new member acquisition up 15% t
     />
   );
 }
+
+export default CreditUnionCaseStudy;

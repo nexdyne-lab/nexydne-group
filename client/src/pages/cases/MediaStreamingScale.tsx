@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function MediaStreamingScale() {
+export function MediaStreamingScale() {
   return (
     <CaseStudyTemplate
       client="StreamVault"
@@ -40,3 +40,5 @@ Business impact was equally strong: subscriber conversions increased 45%, social
     />
   );
 }
+
+export default MediaStreamingScale;

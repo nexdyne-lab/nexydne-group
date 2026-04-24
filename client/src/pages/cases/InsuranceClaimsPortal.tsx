@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function InsuranceClaimsPortal() {
+export function InsuranceClaimsPortal() {
   return (
     <CaseStudyTemplate
       client="Regional Property & Casualty Insurer"
@@ -30,3 +30,5 @@ The insurer reduced claims processing costs by $2.8 million annually through aut
     />
   );
 }
+
+export default InsuranceClaimsPortal;

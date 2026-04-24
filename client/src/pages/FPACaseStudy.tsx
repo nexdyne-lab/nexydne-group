@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function FPACaseStudy() {
+export function FPACaseStudy() {
   return (
     <CaseStudyTemplate
       client="B2B SaaS Company"
@@ -32,3 +32,5 @@ Scenario analysis directly avoided $2.4 million in unnecessary costs: analysis r
     />
   );
 }
+
+export default FPACaseStudy;

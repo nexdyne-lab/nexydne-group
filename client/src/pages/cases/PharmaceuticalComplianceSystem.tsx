@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function PharmaceuticalComplianceSystem() {
+export function PharmaceuticalComplianceSystem() {
   return (
     <CaseStudyTemplate
       client="Pharmaceutical Manufacturer"
@@ -34,3 +34,5 @@ During their most recent FDA inspection, auditors praised the system's comprehen
     />
   );
 }
+
+export default PharmaceuticalComplianceSystem;

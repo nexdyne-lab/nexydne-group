@@ -1,7 +1,7 @@
 import React from 'react';
 import CaseStudyTemplate from '@/components/CaseStudyTemplate';
 
-export default function FinancialServicesEmail() {
+export function FinancialServicesEmail() {
   return (
     <CaseStudyTemplate
       client="Tier-1 Financial Services Firm"
@@ -33,3 +33,5 @@ export default function FinancialServicesEmail() {
     />
   );
 }
+
+export default FinancialServicesEmail;

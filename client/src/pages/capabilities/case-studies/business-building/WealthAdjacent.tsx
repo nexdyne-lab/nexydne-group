@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function WealthAdjacent() {
+export function WealthAdjacent() {
   return (
     <CaseStudyTemplate
       client="Wealth Management Firm"
@@ -31,3 +31,5 @@ The expansion also proved defensive: clients who received integrated personal an
     />
   );
 }
+
+export default WealthAdjacent;

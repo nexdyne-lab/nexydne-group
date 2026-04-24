@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function HealthcareDataPlatform() {
+export function HealthcareDataPlatform() {
   return (
     <CaseStudyTemplate
       client="Regional Hospital Network"
@@ -30,3 +30,5 @@ The 20% reduction in readmissions resulted from better predictive risk modeling 
     />
   );
 }
+
+export default HealthcareDataPlatform;

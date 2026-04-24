@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function LogisticsOperationsDashboard() {
+export function LogisticsOperationsDashboard() {
   return (
     <CaseStudyTemplate
       client="Regional Logistics Company"
@@ -39,3 +39,5 @@ Annual savings reached $1.8M: $1.2M from reduced expedited shipping costs and $6
     />
   );
 }
+
+export default LogisticsOperationsDashboard;

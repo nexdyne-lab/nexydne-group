@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function RetailShrinkage() {
+export function RetailShrinkage() {
   return (
     <CaseStudyTemplate
       client="National Retail Chain"
@@ -35,3 +35,5 @@ The system paid for itself in six months. Catching previously invisible theft en
     />
   );
 }
+
+export default RetailShrinkage;

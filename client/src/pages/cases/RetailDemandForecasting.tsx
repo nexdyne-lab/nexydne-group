@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function RetailDemandForecasting() {
+export function RetailDemandForecasting() {
   return (
     <CaseStudyTemplate
       client="Mid-Sized Specialty Retailer"
@@ -35,3 +35,5 @@ Store managers trust the system enough to reduce safety stock levels, freeing up
     />
   );
 }
+
+export default RetailDemandForecasting;

@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function TechnologyCaseStudy() {
+export function TechnologyCaseStudy() {
   return (
     <CaseStudyTemplate
       client="B2B Workflow Automation Company"
@@ -38,3 +38,5 @@ Engineering time spent on infrastructure dropped from 35% to 8%, freeing signifi
     />
   );
 }
+
+export default TechnologyCaseStudy;

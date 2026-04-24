@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function DistributionPricing() {
+export function DistributionPricing() {
   return (
     <CaseStudyTemplate
       client="Industrial Distribution Company"
@@ -33,3 +33,5 @@ Pricing consistency improved 30% as the new governance structure eliminated the 
     />
   );
 }
+
+export default DistributionPricing;

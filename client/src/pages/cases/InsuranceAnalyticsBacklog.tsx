@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function InsuranceAnalyticsBacklog() {
+export function InsuranceAnalyticsBacklog() {
   return (
     <CaseStudyTemplate
       client="Regional P&C Insurance Carrier"
@@ -39,3 +39,5 @@ Delivery predictability transformed: the capacity-based roadmap set realistic ex
     />
   );
 }
+
+export default InsuranceAnalyticsBacklog;

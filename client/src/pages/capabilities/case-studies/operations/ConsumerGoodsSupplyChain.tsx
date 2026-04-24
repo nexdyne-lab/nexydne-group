@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function ConsumerGoodsSupplyChain() {
+export function ConsumerGoodsSupplyChain() {
   return (
     <CaseStudyTemplate
       client="Consumer Goods Manufacturer"
@@ -33,3 +33,5 @@ Working capital improved significantly as inventory levels normalized across fac
     />
   );
 }
+
+export default ConsumerGoodsSupplyChain;

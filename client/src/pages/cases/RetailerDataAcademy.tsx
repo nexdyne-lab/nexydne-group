@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function RetailerDataAcademy() {
+export function RetailerDataAcademy() {
   return (
     <CaseStudyTemplate
       client="Regional Retail Chain"
@@ -39,3 +39,5 @@ The blended delivery model combined live workshops (monthly), self-paced online 
     />
   );
 }
+
+export default RetailerDataAcademy;

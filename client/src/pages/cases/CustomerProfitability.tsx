@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function CustomerProfitability() {
+export function CustomerProfitability() {
   return (
     <CaseStudyTemplate
       client="Regional Bank"
@@ -32,3 +32,5 @@ Primary bank status among migrated customers increased 15%, creating deeper rela
     />
   );
 }
+
+export default CustomerProfitability;

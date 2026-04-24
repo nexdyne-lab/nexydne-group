@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function EcommerceDataWarehouse() {
+export function EcommerceDataWarehouse() {
   return (
     <CaseStudyTemplate
       client="Multi-Brand E-Commerce Retailer"
@@ -30,3 +30,5 @@ Infrastructure costs dropped 40% ($72K annually) by eliminating Oracle licensing
     />
   );
 }
+
+export default EcommerceDataWarehouse;

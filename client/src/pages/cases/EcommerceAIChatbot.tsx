@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function EcommerceAIChatbot() {
+export function EcommerceAIChatbot() {
   return (
     <CaseStudyTemplate
       client="Leading Online Retailer"
@@ -34,3 +34,5 @@ Customer satisfaction scores for bot-handled inquiries reached 87%—exceeding h
     />
   );
 }
+
+export default EcommerceAIChatbot;

@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function TelecomCustomerPortal() {
+export function TelecomCustomerPortal() {
   return (
     <CaseStudyTemplate
       client="Regional Telecommunications Provider"
@@ -34,3 +34,5 @@ The portal's personalized offer engine drove $4.2 million in incremental annual 
     />
   );
 }
+
+export default TelecomCustomerPortal;

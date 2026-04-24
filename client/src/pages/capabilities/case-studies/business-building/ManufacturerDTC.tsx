@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function ManufacturerDTC() {
+export function ManufacturerDTC() {
   return (
     <CaseStudyTemplate
       client="Specialty Outdoor Equipment Manufacturer"
@@ -31,3 +31,5 @@ The customer data generated through direct relationships became a strategic asse
     />
   );
 }
+
+export default ManufacturerDTC;

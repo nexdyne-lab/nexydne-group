@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function TechABM() {
+export function TechABM() {
   return (
     <CaseStudyTemplate
       client="Workflow Automation Software Company"
@@ -33,3 +33,5 @@ The enterprise wins validated the upmarket strategy and created reference accoun
     />
   );
 }
+
+export default TechABM;

@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function LenderAIUnderwriting() {
+export function LenderAIUnderwriting() {
   return (
     <CaseStudyTemplate
       client="Specialty Lending Firm"
@@ -33,3 +33,5 @@ The expanded capacity enabled $45 million in new loan volume in the first year. 
     />
   );
 }
+
+export default LenderAIUnderwriting;

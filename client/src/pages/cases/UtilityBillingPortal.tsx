@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function UtilityBillingPortal() {
+export function UtilityBillingPortal() {
   return (
     <CaseStudyTemplate
       client="Municipal Electric and Water Utility"
@@ -34,3 +34,5 @@ Late payment rates dropped from 18% to 13%, driven by automated payment reminder
     />
   );
 }
+
+export default UtilityBillingPortal;

@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function HealthcareHIPAACompliance() {
+export function HealthcareHIPAACompliance() {
   return (
     <CaseStudyTemplate
       client="Regional Hospital System"
@@ -35,3 +35,5 @@ Clinical staff initially worried that tighter access controls would slow them do
     />
   );
 }
+
+export default HealthcareHIPAACompliance;

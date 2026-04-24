@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function MediaCompanyDAM() {
+export function MediaCompanyDAM() {
   return (
     <CaseStudyTemplate
       client="Regional Broadcast Media Company"
@@ -37,3 +37,5 @@ Rights management prevented costly violations. The system tracks usage rights an
     />
   );
 }
+
+export default MediaCompanyDAM;

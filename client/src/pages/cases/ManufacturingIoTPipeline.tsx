@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function ManufacturingIoTPipeline() {
+export function ManufacturingIoTPipeline() {
   return (
     <CaseStudyTemplate
       client="Mid-Sized Industrial Equipment Manufacturer"
@@ -30,3 +30,5 @@ Maintenance costs decreased $1.8M annually by reducing emergency service calls, 
     />
   );
 }
+
+export default ManufacturingIoTPipeline;

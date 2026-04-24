@@ -1,6 +1,6 @@
 import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
-export default function BankCrossSell() {
+export function BankCrossSell() {
   return (
     <CaseStudyTemplate
       client="Regional Community Bank"
@@ -40,3 +40,5 @@ Customers who received consistent recommendations across branch, digital, and ca
     />
   );
 }
+
+export default BankCrossSell;
