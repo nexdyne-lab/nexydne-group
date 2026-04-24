@@ -255,15 +255,15 @@ export default function MedicalDeviceGrowth() {
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Established clear evaluation criteria for growth opportunities</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Integrated market size, growth rate, and competitive intensity metrics</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Created accessible framework for non-financial stakeholders</span>
                   </li>
                 </ul>
@@ -287,15 +287,15 @@ export default function MedicalDeviceGrowth() {
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Pulled external market data from industry reports and regulatory filings</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Validated assumptions through competitive intelligence sources</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Revealed high-potential opportunities previously overlooked</span>
                   </li>
                 </ul>
@@ -319,15 +319,15 @@ export default function MedicalDeviceGrowth() {
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Conducted sensitivity analysis on key assumptions</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Developed detailed implementation roadmaps</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Created risk management frameworks for each channel</span>
                   </li>
                 </ul>
@@ -351,15 +351,15 @@ export default function MedicalDeviceGrowth() {
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Developed partnership prioritization matrix</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Modeled potential partnership structures from licensing to acquisition</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Focused business development on highest-value opportunities</span>
                   </li>
                 </ul>
@@ -529,7 +529,7 @@ export default function MedicalDeviceGrowth() {
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
-                    Read case study <ArrowRight className="w-3 h-3" />
+                    Read case study 
                   </span>
                 </Link>
               </motion.div>

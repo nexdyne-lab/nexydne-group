@@ -255,15 +255,15 @@ export default function SaasCategoryLeadership() {
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Established new financial framework balancing short-term profitability with strategic investment</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Created separate financial targets for core operations and innovation initiatives</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Protected innovation investments from quarterly earnings pressure</span>
                   </li>
                 </ul>
@@ -287,15 +287,15 @@ export default function SaasCategoryLeadership() {
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Established clear investment criteria and stage-gate processes</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Evaluated opportunities based on market size, competitive positioning, and strategic fit</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Ensured innovation investments were strategic rather than speculative</span>
                   </li>
                 </ul>
@@ -319,15 +319,15 @@ export default function SaasCategoryLeadership() {
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Reallocated resources from lower-priority initiatives</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Developed compelling investment thesis for the board</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Created multi-year financial plan demonstrating long-term value creation</span>
                   </li>
                 </ul>
@@ -351,15 +351,15 @@ export default function SaasCategoryLeadership() {
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Implemented quarterly innovation reviews with executive team and board</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Focused on learning and adaptation, not just financial performance</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Fostered culture of strategic experimentation</span>
                   </li>
                 </ul>
@@ -529,7 +529,7 @@ export default function SaasCategoryLeadership() {
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
-                    Read case study <ArrowRight className="w-3 h-3" />
+                    Read case study 
                   </span>
                 </Link>
               </motion.div>

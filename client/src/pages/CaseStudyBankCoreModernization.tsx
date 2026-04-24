@@ -52,7 +52,7 @@ export default function CaseStudyBankCoreModernization() {
             className="max-w-4xl"
           >
             <Link href="/cases" className="inline-flex items-center text-primary hover:text-white transition-colors mb-5 sm:mb-6 md:mb-8 group text-sm font-semibold">
-              <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
+              
               Back to Case Studies
             </Link>
 

@@ -269,7 +269,7 @@ export default function CaseStudyDetail() {
         <div className="container px-4 sm:px-6 md:px-12 text-center">
           <Link href="/cases">
             <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all bg-transparent">
-              <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
+              
               Back to all case studies
             </Button>
           </Link>

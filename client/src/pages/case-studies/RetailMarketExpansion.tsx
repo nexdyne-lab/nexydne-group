@@ -255,15 +255,15 @@ export default function RetailMarketExpansion() {
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Developed performance attribution model identifying key success drivers</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Analyzed population density, median income, and competitive density</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Created foundation for geographic expansion strategy</span>
                   </li>
                 </ul>
@@ -287,15 +287,15 @@ export default function RetailMarketExpansion() {
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Applied clustering analysis to identify regional groupings</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Created "beachhead" strategies for market dominance</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Prioritized expansion to adjacent high-potential territories</span>
                   </li>
                 </ul>
@@ -319,15 +319,15 @@ export default function RetailMarketExpansion() {
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Developed detailed financial models for each priority cluster</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Created clear roadmap with store count targets and revenue projections</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Established market share objectives for each geographic region</span>
                   </li>
                 </ul>
@@ -351,15 +351,15 @@ export default function RetailMarketExpansion() {
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Established KPIs and monitoring dashboards</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Created disciplined capital allocation process</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Implemented quarterly performance reviews against strategic plan</span>
                   </li>
                 </ul>
@@ -537,7 +537,7 @@ export default function RetailMarketExpansion() {
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
-                    Read case study <ArrowRight className="w-3 h-3" />
+                    Read case study 
                   </span>
                 </Link>
               </motion.div>

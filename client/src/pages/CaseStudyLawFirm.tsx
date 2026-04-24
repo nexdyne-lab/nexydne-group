@@ -351,7 +351,7 @@ export default function CaseStudyLawFirm() {
                     {item.title}
                   </h3>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
-                    Read case study <ArrowRight className="w-3 h-3" />
+                    Read case study 
                   </span>
                 </Link>
               </motion.div>

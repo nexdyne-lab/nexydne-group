@@ -249,19 +249,19 @@ export default function CaseStudyVarianceAnalysis() {
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Automated daily ERP data extraction with validation checks</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Built multi-dimensional variance calculation engine</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Implemented exception-based reporting with configurable thresholds</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Created drill-down capabilities to transaction-level detail</span>
                   </li>
                 </ul>
@@ -285,19 +285,19 @@ export default function CaseStudyVarianceAnalysis() {
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Built pattern recognition engine to identify common variance drivers</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Developed automated commentary generation with manager review workflow</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Created standardized templates for facility and consolidated reporting</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 mt-0.5" />
+                    
                     <span>Implemented approval workflows with audit trail</span>
                   </li>
                 </ul>
@@ -461,7 +461,7 @@ export default function CaseStudyVarianceAnalysis() {
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
-                    Read case study <ArrowRight className="w-3 h-3" />
+                    Read case study 
                   </span>
                 </Link>
               </motion.div>

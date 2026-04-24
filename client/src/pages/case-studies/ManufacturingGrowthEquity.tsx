@@ -271,7 +271,7 @@ export default function ManufacturingGrowthEquity() {
                   <span className="text-xs text-primary uppercase tracking-wider">{item.industry}</span>
                   <h3 className="text-xl text-white mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
                   <p className="text-white/60 mt-2">{item.description}</p>
-                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">Read case study <ArrowRight className="w-3 h-3" /></span>
+                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">Read case study </span>
                 </Link>
               </motion.div>
             ))}

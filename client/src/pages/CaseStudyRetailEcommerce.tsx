@@ -489,7 +489,7 @@ export default function CaseStudyRetailEcommerce() {
                       </div>
                       <div className="flex items-center text-primary font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
                         Read case study
-                        <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
+                        
                       </div>
                     </div>
                   </div>
@@ -519,7 +519,7 @@ export default function CaseStudyRetailEcommerce() {
             <Link href="/contact">
               <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-lg font-semibold transition-all">
                 Schedule a Consultation
-                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
+                
               </Button>
             </Link>
           </motion.div>
