@@ -1,6 +1,3 @@
-import { motion } from "framer-motion";
-import { Link } from "wouter";
-import { ArrowRight, ArrowLeft, Eye, BarChart3, Users, TrendingUp, Target, Download } from 'lucide-react';
 import { CaseStudyPDFButton } from "@/components/CaseStudyPDFButton";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -12,19 +9,19 @@ import { SEO } from "@/components/SEO";
 
 export default function CaseStudyExecutiveDashboards() {
   return (
-    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
-      <SEO 
-        title="Executive Dashboards | Case Study | NexDyne Technologies" 
+    <div className="min-h-screen bg-white text-white selection:bg-primary selection:text-white">
+      <SEO
+        title="Executive Dashboards | Case Study | NexDyne Technologies"
         description="How we transformed 40-page Excel workbooks into interactive dashboards that surfaced the top 10 metrics that mattered—improving board meeting efficiency by 60%."
         canonical="/cases/executive-dashboards"
       />
       <Navigation />
-      
+
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('/case-dashboards.8b2c4d91.jpg')] bg-cover bg-center opacity-30"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
-        
+        <div className="absolute inset-0"></div>
+
         <div className="container relative z-10 px-4 md:px-12">
           <Breadcrumbs />
           <motion.div
@@ -33,16 +30,16 @@ export default function CaseStudyExecutiveDashboards() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
+            <span className="text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Case Study · Professional Services
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               Executive dashboards for <span className="text-primary">clarity</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mb-5 sm:mb-6 md:mb-8">
               How we transformed 40-page Excel workbooks into interactive dashboards that surfaced the top 10 metrics that mattered—improving board meeting efficiency by 60% and enabling faster, more confident decision-making.
             </p>
-            
+
             {/* PDF Download Button */}
             <CaseStudyPDFButton
               title="Executive dashboards for clarity"
@@ -62,7 +59,7 @@ export default function CaseStudyExecutiveDashboards() {
       </section>
 
       {/* DZ10 Stats Section */}
-      <section className="py-10 sm:py-12 lg:py-16 bg-base border-t border-white/10">
+      <section className="py-10 sm:py-12 lg:py-16 bg-white border-t border-white/10">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 sm:gap-8 lg:gap-12">
             {[
@@ -79,7 +76,7 @@ export default function CaseStudyExecutiveDashboards() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-5xl font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-5xl text-primary mb-2">{stat.metric}</div>
                 <div className="text-base text-white/70">{stat.label}</div>
               </motion.div>
             ))}
@@ -88,7 +85,7 @@ export default function CaseStudyExecutiveDashboards() {
       </section>
 
       {/* DZ10 Sticky Navigation */}
-      <nav className="sticky top-20 bg-base text-white z-40 border-y border-white/10">
+      <nav className="sticky top-20 bg-white text-white z-40 border-y border-white/10">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex items-center gap-1">
             <a href="#challenge" className="px-4 sm:px-5 md:px-6 py-3 sm:py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">
@@ -113,7 +110,7 @@ export default function CaseStudyExecutiveDashboards() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
+            <h2 className="text-3xl text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client is a professional services firm specializing in management consulting and organizational transformation. With 150 consultants across 8 offices and $32M in annual revenue, they serve Fortune 500 clients in financial services, healthcare, and technology sectors. The firm operates on a project-based model with complex resource allocation, utilization tracking, and profitability analysis requirements.
@@ -123,7 +120,7 @@ export default function CaseStudyExecutiveDashboards() {
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12 p-4 sm:p-6 md:p-8 bg-base/5 rounded-lg sm:rounded-xl">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12 p-4 sm:p-6 md:p-8 bg-white/5 rounded-lg sm:">
               <div>
                 <div className="text-sm font-semibold text-primary mb-2">Industry</div>
                 <div className="text-charcoal font-medium">Professional Services</div>
@@ -150,10 +147,10 @@ export default function CaseStudyExecutiveDashboards() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white max-w-4xl leading-tight">
               Information overload paralyzed decision-making
             </h2>
           </motion.div>
@@ -164,21 +161,21 @@ export default function CaseStudyExecutiveDashboards() {
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-bold text-charcoal mb-4">Information overload paralyzed decision-making</h3>
+              <h3 className="text-xl text-charcoal mb-4">Information overload paralyzed decision-making</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The monthly board package consisted of 40+ pages of Excel tables showing revenue, expenses, utilization, pipeline, and dozens of other metrics broken down by office, practice area, and consultant level. Board members received this package 48 hours before the meeting and were expected to come prepared with questions and recommendations. In reality, most partners skimmed the materials and arrived unprepared, leading to meetings that ran 3-4 hours as everyone tried to make sense of the data in real-time.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-charcoal mb-4">No clear narrative or priorities</h3>
+              <h3 className="text-xl text-charcoal mb-4">No clear narrative or priorities</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The reports presented data without context or interpretation. There was no executive summary highlighting what mattered most, no clear indication of whether performance was good or bad, and no guidance on what actions should be taken. Each partner focused on different metrics based on their own interests and biases, leading to fragmented discussions that rarely resulted in clear decisions or action items.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-charcoal mb-4">Static reports couldn't answer follow-up questions</h3>
+              <h3 className="text-xl text-charcoal mb-4">Static reports couldn't answer follow-up questions</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 When board members had questions about the data—"What's driving the utilization decline in the Chicago office?" or "How does our pipeline compare to this time last year?"—the CFO had to promise to follow up after the meeting. This meant decisions were deferred until the next month, and by then the context had changed. The inability to drill down into details during the meeting created frustration and slowed the pace of decision-making.
               </p>
@@ -188,7 +185,7 @@ export default function CaseStudyExecutiveDashboards() {
       </section>
 
       {/* DZ10 Quote Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white">
         <div className="container px-4 sm:px-6 md:px-12 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -216,10 +213,10 @@ export default function CaseStudyExecutiveDashboards() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white max-w-4xl leading-tight">
               Interactive dashboards that surface what matters
             </h2>
           </motion.div>
@@ -236,13 +233,13 @@ export default function CaseStudyExecutiveDashboards() {
             {/* Phase 1 */}
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="w-12 h-12 bg-primary text-white flex items-center justify-center text-lg">
                   1
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
-                  <Target className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+                <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">
+
                   Metric prioritization and KPI framework design
                 </h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
@@ -272,13 +269,13 @@ export default function CaseStudyExecutiveDashboards() {
             {/* Phase 2 */}
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="w-12 h-12 bg-primary text-white flex items-center justify-center text-lg">
                   2
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
-                  <Eye className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+                <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">
+
                   Dashboard design and visualization development
                 </h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
@@ -308,13 +305,13 @@ export default function CaseStudyExecutiveDashboards() {
             {/* Phase 3 */}
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="w-12 h-12 bg-primary text-white flex items-center justify-center text-lg">
                   3
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
-                  <Users className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+                <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">
+
                   Training and meeting process redesign
                 </h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
@@ -353,10 +350,10 @@ export default function CaseStudyExecutiveDashboards() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white max-w-4xl leading-tight">
               Results & Impact
             </h2>
           </motion.div>
@@ -367,49 +364,49 @@ export default function CaseStudyExecutiveDashboards() {
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
-                <BarChart3 className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+              <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">
+
                 Dramatically more efficient board meetings
               </h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">
                 Board meetings were cut from 3-4 hours to 90 minutes—a 60% reduction—while covering more ground and making better decisions. Instead of spending the first two hours reviewing data, meetings now start with a 10-minute dashboard walkthrough highlighting key issues, followed by 80 minutes of strategic discussion and decision-making. Board members report feeling more informed and engaged than ever before.
               </p>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl">
-                  <div className="text-3xl font-bold text-charcoal mb-2">90 min</div>
+                <div className="p-4 sm:p-5 md:p-6 bg-white/5 rounded-lg sm:">
+                  <div className="text-3xl text-charcoal mb-2">90 min</div>
                   <div className="text-sm text-charcoal/60">Average meeting length (down from 3-4 hours)</div>
                 </div>
-                <div className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl">
-                  <div className="text-3xl font-bold text-charcoal mb-2">60%</div>
+                <div className="p-4 sm:p-5 md:p-6 bg-white/5 rounded-lg sm:">
+                  <div className="text-3xl text-charcoal mb-2">60%</div>
                   <div className="text-sm text-charcoal/60">Improvement in meeting efficiency</div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
-                <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+              <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">
+
                 Faster, more confident decision-making
               </h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">
                 The ability to drill down into data during meetings meant that questions could be answered immediately rather than deferred to the next month. This accelerated decision-making significantly—the firm reduced the average time from issue identification to decision from 60 days to 15 days. Board members also reported feeling more confident in their decisions because they had the context and detail they needed at their fingertips.
               </p>
-              <div className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl">
-                <div className="text-3xl font-bold text-charcoal mb-2">75%</div>
+              <div className="p-4 sm:p-5 md:p-6 bg-white/5 rounded-lg sm:">
+                <div className="text-3xl text-charcoal mb-2">75%</div>
                 <div className="text-sm text-charcoal/60">Faster issue-to-decision cycle (15 days vs. 60 days)</div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
-                <Eye className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+              <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">
+
                 Improved transparency and accountability
               </h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">
                 The clear, objective metrics and visual status indicators eliminated ambiguity about performance. Office leaders and practice heads could no longer hide behind vague explanations or cherry-picked data—the dashboards told the truth. This transparency improved accountability and drove better performance across the firm. Within six months, overall consultant utilization increased by 8 percentage points as underperforming offices took action to improve.
               </p>
-              <div className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl">
-                <div className="text-3xl font-bold text-charcoal mb-2">8 pts</div>
+              <div className="p-4 sm:p-5 md:p-6 bg-white/5 rounded-lg sm:">
+                <div className="text-3xl text-charcoal mb-2">8 pts</div>
                 <div className="text-sm text-charcoal/60">Increase in average consultant utilization rate</div>
               </div>
             </div>
@@ -418,7 +415,7 @@ export default function CaseStudyExecutiveDashboards() {
       </section>
 
       {/* DZ10 Quote Section 2 */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white">
         <div className="container px-4 sm:px-6 md:px-12 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -445,7 +442,7 @@ export default function CaseStudyExecutiveDashboards() {
       </section>
 
       {/* DZ10 Related Cases Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -454,10 +451,10 @@ export default function CaseStudyExecutiveDashboards() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
+            <span className="text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">More success stories</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-4 max-w-5xl">
@@ -485,15 +482,15 @@ export default function CaseStudyExecutiveDashboards() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={item.link} className="group block h-full">
-                  <div className="aspect-[16/9] overflow-hidden mb-6 rounded-lg sm:rounded-xl relative bg-white/5">
+                  <div className="aspect-[16/9] overflow-hidden mb-6 rounded-lg sm: relative bg-white/5">
                     <img
                       src={item.image}
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                   </div>
-                  <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <span className="text-xs text-primary uppercase tracking-wider">{item.industry}</span>
+                  <h3 className="text-xl text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>
@@ -508,7 +505,7 @@ export default function CaseStudyExecutiveDashboards() {
           <div className="text-center mt-16">
             <Link href="/cases">
               <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all bg-transparent">
-                <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
+
                 Back to all case studies
               </Button>
             </Link>
