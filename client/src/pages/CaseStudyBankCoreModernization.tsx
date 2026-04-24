@@ -1,3 +1,6 @@
+import { Link } from "wouter";
+import { useEffect } from "react";
+import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { CaseStudyPDFButton } from "@/components/CaseStudyPDFButton";
 import { Button } from "@/components/ui/button";

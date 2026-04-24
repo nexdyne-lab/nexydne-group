@@ -1,3 +1,9 @@
+import { Link } from "wouter";
+import { useEffect } from "react";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import { BackToTop } from "@/components/BackToTop";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
