@@ -159,16 +159,16 @@ export default function Home() {
             </motion.div>
           </div>
 
-          {/* Horizontal category nav — flat, 11px uppercase */}
+          {/* Editorial category strip — centered, medium-small, hairline top */}
           <div className="mt-16 md:mt-20 pt-8 border-t border-charcoal/15">
-            <div className="flex flex-wrap items-baseline gap-x-8 gap-y-3 sm:gap-x-10">
+            <div className="flex flex-wrap justify-center items-baseline gap-x-10 gap-y-4 md:gap-x-14">
               {perspectiveCategories.map((cat) => (
                 <Link key={cat.label} href={cat.href}>
                   <span
-                    className={`text-[11px] font-semibold uppercase tracking-[0.2em] pb-1 transition-colors cursor-pointer ${
+                    className={`text-[13px] font-semibold uppercase tracking-[0.2em] pb-2 transition-colors cursor-pointer ${
                       cat.active
-                        ? "text-charcoal border-b border-charcoal/40"
-                        : "text-charcoal/60 hover:text-primary"
+                        ? "text-charcoal border-b-2 border-primary"
+                        : "text-charcoal/60 hover:text-charcoal"
                     }`}
                   >
                     {cat.label}
