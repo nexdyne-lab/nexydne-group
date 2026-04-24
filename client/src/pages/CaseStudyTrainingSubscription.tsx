@@ -229,37 +229,37 @@ export default function CaseStudyTrainingSubscription() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
             {[
               {
-                icon: ,
+                icon: null,
                 title: "On-Demand Learning Library",
                 description: "200+ hours of professionally produced video courses with quizzes, certificates, and progress tracking for CPE credits.",
                 color: "from-violet-500 to-purple-600"
               },
               {
-                icon: ,
+                icon: null,
                 title: "Live Virtual Sessions",
                 description: "Weekly live workshops, Q&A sessions, and expert panels that create ongoing engagement and justify subscription value.",
                 color: "from-[#0077B5] to-secondary"
               },
               {
-                icon: ,
+                icon: null,
                 title: "Professional Community",
                 description: "Discussion forums, peer networking, and study groups that create stickiness and reduce churn through social connections.",
                 color: "from-amber-500 to-orange-600"
               },
               {
-                icon: ,
+                icon: null,
                 title: "Certification Programs",
                 description: "Structured learning paths with assessments and credentials that professionals can add to their LinkedIn profiles.",
                 color: "from-emerald-500 to-teal-600"
               },
               {
-                icon: ,
+                icon: null,
                 title: "Subscription Management",
                 description: "Stripe-powered billing with monthly and annual plans, team accounts, and enterprise licensing options.",
                 color: "from-rose-500 to-pink-600"
               },
               {
-                icon: ,
+                icon: null,
                 title: "Retention Automation",
                 description: "Engagement scoring, at-risk member identification, and automated re-engagement campaigns to maximize retention.",
                 color: "from-base to-[#0077B5]"

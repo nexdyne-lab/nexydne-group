@@ -229,37 +229,37 @@ export default function CaseStudyB2BDigitalOrdering() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
             {[
               {
-                icon: ,
+                icon: null,
                 title: "Self-Service Portal",
                 description: "Customer-facing portal with product search, filtering, and ordering capabilities available 24/7 with mobile-responsive design.",
                 color: "from-[#0077B5] to-secondary"
               },
               {
-                icon: ,
+                icon: null,
                 title: "Complex Pricing Engine",
                 description: "Customer-specific pricing, volume discounts, contract pricing, and promotional rules integrated with ERP master data.",
                 color: "from-amber-500 to-orange-600"
               },
               {
-                icon: ,
+                icon: null,
                 title: "Real-Time Inventory",
                 description: "Live inventory visibility across all 3 distribution centers with ATP (available-to-promise) calculations and backorder handling.",
                 color: "from-violet-500 to-purple-600"
               },
               {
-                icon: ,
+                icon: null,
                 title: "Quick Reorder",
                 description: "One-click reordering from purchase history, saved order templates, and scheduled recurring orders for consumables.",
                 color: "from-emerald-500 to-teal-600"
               },
               {
-                icon: ,
+                icon: null,
                 title: "Order Tracking",
                 description: "Real-time shipment tracking, delivery notifications, and proof-of-delivery documentation accessible in the portal.",
                 color: "from-rose-500 to-pink-600"
               },
               {
-                icon: ,
+                icon: null,
                 title: "ERP Integration",
                 description: "Bi-directional integration with Epicor ERP for orders, inventory, pricing, and customer data synchronization.",
                 color: "from-base to-[#0077B5]"

@@ -230,37 +230,37 @@ export default function CaseStudyRetailEcommerce() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
             {[
               {
-                icon: ,
+                icon: null,
                 title: "Shopify Plus Platform",
                 description: "Enterprise e-commerce platform with custom theme, product configurators, and seamless checkout experience optimized for outdoor gear shoppers.",
                 color: "from-amber-500 to-orange-600"
               },
               {
-                icon: ,
+                icon: null,
                 title: "Omnichannel Fulfillment",
                 description: "Ship-from-store, buy-online-pickup-in-store (BOPIS), and real-time inventory visibility across all 12 locations.",
                 color: "from-[#0077B5] to-secondary"
               },
               {
-                icon: ,
+                icon: null,
                 title: "Personalization Engine",
                 description: "AI-powered product recommendations based on browsing behavior, purchase history, and activity preferences.",
                 color: "from-violet-500 to-purple-600"
               },
               {
-                icon: ,
+                icon: null,
                 title: "Analytics & Attribution",
                 description: "Customer journey tracking, conversion optimization, and marketing attribution to measure ROI across channels.",
                 color: "from-emerald-500 to-teal-600"
               },
               {
-                icon: ,
+                icon: null,
                 title: "Performance Marketing",
                 description: "Google Ads, Meta campaigns, and SEO strategy to drive qualified traffic and acquire customers cost-effectively.",
                 color: "from-rose-500 to-pink-600"
               },
               {
-                icon: ,
+                icon: null,
                 title: "POS Integration",
                 description: "Real-time sync with existing Lightspeed POS for unified inventory, customer data, and order management.",
                 color: "from-base to-[#0077B5]"

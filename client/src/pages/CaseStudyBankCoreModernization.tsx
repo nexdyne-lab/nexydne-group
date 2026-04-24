@@ -189,19 +189,19 @@ export default function CaseStudyBankCoreModernization() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8">
             {[
               {
-                icon: ,
+                icon: null,
                 metric: "4x Faster",
                 title: "Feature Velocity",
                 description: "Release cycles dropped from quarterly to weekly, allowing the bank to launch mobile check deposit and P2P payments ahead of competitors."
               },
               {
-                icon: ,
+                icon: null,
                 metric: "40% Less",
                 title: "Operational Costs",
                 description: "Retiring the mainframe and moving to on-demand cloud infrastructure significantly reduced hardware maintenance and licensing fees."
               },
               {
-                icon: ,
+                icon: null,
                 metric: "Zero",
                 title: "Downtime Deployments",
                 description: "Blue-green deployment strategies eliminated maintenance windows, ensuring 24/7 availability for customers."

@@ -189,19 +189,19 @@ export default function CaseStudyFintechPayment() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8">
             {[
               {
-                icon: ,
+                icon: null,
                 metric: "10x",
                 title: "Volume Capacity",
                 description: "The platform now handles ten times the transaction volume with the same team size, significantly improving unit economics."
               },
               {
-                icon: ,
+                icon: null,
                 metric: "85%",
                 title: "Auto-Resolution",
                 description: "The vast majority of exceptions are now resolved instantly by the system without human intervention."
               },
               {
-                icon: ,
+                icon: null,
                 metric: "99.9%",
                 title: "Accuracy",
                 description: "Automated checks and balances have virtually eliminated manual errors in reconciliation and payment processing."

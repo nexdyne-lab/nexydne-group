@@ -189,19 +189,19 @@ export default function CaseStudyHealthcareEHRModernization() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8">
             {[
               {
-                icon: ,
+                icon: null,
                 metric: "Unified",
                 title: "Patient View",
                 description: "Clinicians now have immediate access to complete patient histories, reducing duplicate tests and improving diagnosis accuracy."
               },
               {
-                icon: ,
+                icon: null,
                 metric: "30%",
                 title: "Efficiency Gain",
                 description: "Automated data reconciliation eliminated manual record retrieval, freeing up administrative staff for higher-value tasks."
               },
               {
-                icon: ,
+                icon: null,
                 metric: "100%",
                 title: "Compliance",
                 description: "The new architecture meets all regulatory requirements for data privacy and security, reducing risk for the organization."
