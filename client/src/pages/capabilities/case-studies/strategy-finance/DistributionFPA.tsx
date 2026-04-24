@@ -1,70 +1,35 @@
-import CaseStudyArticle from "@/components/CaseStudyArticle";
+import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
 export default function DistributionFPA() {
   return (
-    <CaseStudyArticle
-      industry="Strategy & Corporate Finance"
-      industryHref="/capabilities/strategy-corporate-finance"
+    <CaseStudyTemplate
+      client="Industrial Distribution Company"
+      industry="Distribution · Strategy & Finance"
       title="FP&A Transformation Enables Data-Driven Decisions"
-      subtitle="How a distribution company modernized its finance function to gain real-time visibility and accelerate decision-making"
-      client="A 200-employee industrial distribution company with $75M in revenue, operating 8 warehouses across the Midwest and serving manufacturing customers."
-      challenge="The company was growing rapidly but flying blind. Monthly financials took 20+ days to close, making it impossible to respond to market changes. Leadership made decisions based on intuition rather than data, and the finance team spent all their time on transaction processing rather than analysis."
+      subtitle="How a distribution company modernized its finance function to gain real-time visibility and accelerate decision-making."
+      heroImage="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1600&q=80"
+      challenge={`The company was growing rapidly but flying blind. Monthly financials took 20+ days to close, making it impossible to respond to market changes. Leadership made decisions based on intuition rather than data, and the finance team spent all their time on transaction processing rather than analysis.
+
+A 200-employee industrial distribution company with $75M in revenue operates 8 warehouses across the Midwest serving manufacturing customers. The diagnostic revealed a finance function overwhelmed by manual processes: 80% of team time spent on data entry and reconciliation, multiple disconnected systems requiring manual data transfer, no standardized chart of accounts across locations, inventory valuation updated only monthly, and customer profitability unknown at the account level.`}
+      solution={`NEXDYNE implemented a cloud-based ERP system integrating financials, inventory, and sales—including data migration and cleansing from legacy systems, a standardized chart of accounts and cost centers, automated bank reconciliations and intercompany eliminations, and integration with the warehouse management system for real-time inventory visibility.
+
+With clean data flowing into a single system, analytical tools were built to serve the business: executive dashboards showing revenue, margin, and inventory turns by location, customer profitability analysis incorporating all costs to serve, product margin analysis identifying pricing optimization opportunities, and a rolling 13-week cash flow forecast.
+
+Finance team transformation restructured roles to separate transaction processing from analysis, trained team members on new tools and analytical techniques, established a business partner model with finance liaisons for each region, and created a monthly business review process driving accountability.`}
+      impact={`Monthly close time dropped from 20+ days to 5 days, enabling leadership to identify and respond to performance issues in weeks rather than months. Real-time dashboards gave location managers and executives visibility into key operational and financial metrics for the first time. Finance team productivity tripled as automation freed the team from transaction processing for genuine business partnership.
+
+Working capital improved 15% as the customer profitability analysis and real-time inventory data revealed opportunities to optimize receivables, payables, and inventory levels that had been invisible in the previous fragmented system. The business now has the financial infrastructure to support continued growth—each new warehouse can be onboarded with standardized reporting from day one rather than requiring manual reconciliation.`}
       metrics={[
-        { value: "5 days", label: "Faster Close" },
-        { value: "Real-time", label: "Performance Visibility" },
-        { value: "15%", label: "Working Capital Freed" },
-        { value: "3x", label: "Finance Productivity" }
+        { value: "5 days", label: "Faster monthly close" },
+        { value: "Real-time", label: "Performance visibility" },
+        { value: "15%", label: "Working capital freed" },
+        { value: "3x", label: "Finance productivity" }
       ]}
-      relatedCaseStudies={[
-        {
-          title: "Private Equity-Backed Growth: From $40M to $120M Revenue",
-          href: "/capabilities/strategy-corporate-finance/case-studies/pe-growth-healthcare",
-          industry: "Healthcare"
-        },
-        {
-          title: "Turnaround Strategy Restores Profitability",
-          href: "/capabilities/strategy-corporate-finance/case-studies/retail-turnaround",
-          industry: "Retail"
-        },
-        {
-          title: "Series B Fundraise Supports Technology Expansion",
-          href: "/capabilities/strategy-corporate-finance/case-studies/saas-series-b",
-          industry: "Technology"
-        }
-      ]}
-    >
-      <h2>Assessing the Current State</h2>
-      <p>
-        Our diagnostic revealed a finance function that was overwhelmed by manual processes. The team spent 80% of their time on data entry and reconciliation, leaving little capacity for analysis or business partnership. Key issues included multiple disconnected systems requiring manual data transfer, no standardized chart of accounts across locations, inventory valuation that was updated only monthly, and customer profitability that was unknown at the account level.
-      </p>
-
-      <h2>Designing the Future State</h2>
-      <p>
-        We worked with leadership to define what a world-class FP&A function would look like for a company of their size and complexity. The vision included a 5-day monthly close with automated reconciliations, real-time dashboards showing key operational and financial metrics, weekly forecasting that incorporated leading indicators, and customer and product profitability analysis to guide pricing and resource allocation.
-      </p>
-
-      <h2>Implementing the Technology Foundation</h2>
-      <p>
-        We selected and implemented a cloud-based ERP system that integrated financials, inventory, and sales. The implementation included data migration and cleansing from legacy systems, standardized chart of accounts and cost centers, automated bank reconciliations and intercompany eliminations, and integration with the warehouse management system for real-time inventory.
-      </p>
-
-      <h2>Building Analytical Capabilities</h2>
-      <p>
-        With clean data flowing into a single system, we built the analytical tools the business needed. This included executive dashboards showing revenue, margin, and inventory turns by location, customer profitability analysis incorporating all costs to serve, product margin analysis identifying opportunities for pricing optimization, and a rolling 13-week cash flow forecast.
-      </p>
-
-      <h2>Transforming the Finance Team</h2>
-      <p>
-        Technology alone wasn't enough—we also needed to transform how the finance team worked. We restructured roles to separate transaction processing from analysis, trained team members on new tools and analytical techniques, established a business partner model with finance liaisons for each region, and created a monthly business review process to drive accountability.
-      </p>
-
-      <h2>Key Lessons</h2>
-      <ul>
-        <li>Technology implementation must be accompanied by process redesign</li>
-        <li>Data quality is the foundation—garbage in, garbage out</li>
-        <li>Finance teams need to shift from scorekeeping to business partnership</li>
-        <li>Quick wins build momentum for larger transformation efforts</li>
-      </ul>
-    </CaseStudyArticle>
+      tags={["Distribution", "FP&A", "Finance Transformation", "Strategy"]}
+      relatedCapability={{
+        title: "Strategy & Finance",
+        link: "/capabilities/strategy-finance"
+      }}
+    />
   );
 }

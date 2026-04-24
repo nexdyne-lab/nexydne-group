@@ -1,70 +1,35 @@
-import CaseStudyArticle from "@/components/CaseStudyArticle";
+import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
 export default function SaaSSeriesB() {
   return (
-    <CaseStudyArticle
-      industry="Strategy & Corporate Finance"
-      industryHref="/capabilities/strategy-corporate-finance"
+    <CaseStudyTemplate
+      client="B2B SaaS Company"
+      industry="Technology · Strategy & Finance"
       title="Series B Fundraise Supports Technology Expansion"
-      subtitle="How a B2B software company prepared for and executed a successful growth capital raise at an 8x revenue multiple"
-      client="A 120-employee B2B SaaS company providing workflow automation software to mid-size professional services firms, with $15M ARR and strong unit economics."
-      challenge="The company had achieved product-market fit and was ready to accelerate growth, but the founders had never raised institutional capital. They needed to prepare the company for investor scrutiny, develop compelling materials, and navigate the fundraising process."
+      subtitle="How a B2B software company prepared for and executed a successful growth capital raise at an 8x revenue multiple."
+      heroImage="https://images.unsplash.com/photo-1553484771-371a605b060b?w=1600&q=80"
+      challenge={`The company had achieved product-market fit and was ready to accelerate growth, but the founders had never raised institutional capital. They needed to prepare the company for investor scrutiny, develop compelling materials, and navigate the fundraising process.
+
+A 120-employee B2B SaaS company providing workflow automation software to mid-size professional services firms had $15M ARR and strong unit economics. The readiness assessment revealed several areas requiring attention before approaching investors: financial reporting that didn't clearly show SaaS metrics, incomplete customer cohort data, a sales pipeline not systematically tracked, and legal housekeeping including option grants and IP assignments.`}
+      solution={`NEXDYNE developed a comprehensive financial model telling the company's growth story—historical performance with clear SaaS metrics (ARR, MRR, churn, LTV/CAC), a bottoms-up revenue forecast based on sales capacity and conversion rates, expense projections tied to hiring plan and go-to-market investments, and scenario analysis showing different growth trajectories.
+
+The investment narrative was crafted to resonate with growth investors: a large and growing market opportunity, differentiated product with strong customer retention, a proven go-to-market motion ready to scale, and an experienced team with relevant domain expertise. Pitch deck, executive summary, and detailed data room materials were created.
+
+A structured fundraising process identified and prioritized 50+ potential investors, managed outreach and scheduling, prepared founders for investor meetings, coordinated due diligence requests, and negotiated term sheet provisions—designed to create competitive tension while minimizing distraction for the management team.`}
+      impact={`The process generated strong investor interest, resulting in three competing term sheets. The final deal closed $35 million at an 8x revenue multiple within 12 weeks of launching the process. The lead investor took a board seat with founder-friendly governance and standard protective provisions without unusual terms; a secondary component allowed founders to take some liquidity while remaining fully invested in the outcome.
+
+The preparation work paid measurable dividends: the clean SaaS metrics, complete cohort data, and proactive due diligence materials reduced investor friction and accelerated diligence timelines. Competing term sheets gave the founders genuine negotiating leverage on governance provisions that matter as much as valuation over the life of the investment.`}
       metrics={[
-        { value: "$35M", label: "Capital Raised" },
-        { value: "8x", label: "Revenue Multiple" },
-        { value: "12 weeks", label: "Process Duration" },
-        { value: "3", label: "Competing Term Sheets" }
+        { value: "$35M", label: "Capital raised" },
+        { value: "8x", label: "Revenue multiple" },
+        { value: "12 weeks", label: "Process duration" },
+        { value: "3", label: "Competing term sheets" }
       ]}
-      relatedCaseStudies={[
-        {
-          title: "Exit Preparation Maximizes Founder Value",
-          href: "/capabilities/strategy-corporate-finance/case-studies/services-exit",
-          industry: "Professional Services"
-        },
-        {
-          title: "Private Equity-Backed Growth: From $40M to $120M Revenue",
-          href: "/capabilities/strategy-corporate-finance/case-studies/pe-growth-healthcare",
-          industry: "Healthcare"
-        },
-        {
-          title: "Strategic Acquisition Doubles Market Presence",
-          href: "/capabilities/strategy-corporate-finance/case-studies/manufacturing-acquisition",
-          industry: "Manufacturing"
-        }
-      ]}
-    >
-      <h2>Preparing the Company for Investor Scrutiny</h2>
-      <p>
-        Before approaching investors, we conducted a thorough readiness assessment. This revealed several areas that needed attention: financial reporting that didn't clearly show SaaS metrics, customer cohort data that was incomplete, a sales pipeline that wasn't systematically tracked, and legal housekeeping items including option grants and IP assignments.
-      </p>
-
-      <h2>Building the Financial Model</h2>
-      <p>
-        We developed a comprehensive financial model that told the company's growth story. The model included historical performance with clear SaaS metrics (ARR, MRR, churn, LTV/CAC), a bottoms-up revenue forecast based on sales capacity and conversion rates, expense projections tied to hiring plan and go-to-market investments, and scenario analysis showing different growth trajectories.
-      </p>
-
-      <h2>Crafting the Investment Narrative</h2>
-      <p>
-        We worked with the founders to develop a compelling pitch that would resonate with growth investors. The narrative focused on a large and growing market opportunity, differentiated product with strong customer retention, proven go-to-market motion ready to scale, and an experienced team with relevant domain expertise. We created a pitch deck, executive summary, and detailed data room materials.
-      </p>
-
-      <h2>Managing the Fundraising Process</h2>
-      <p>
-        We ran a structured process designed to create competitive tension while minimizing distraction for the management team. This included identifying and prioritizing 50+ potential investors, managing outreach and scheduling, preparing founders for investor meetings, coordinating due diligence requests, and negotiating term sheet provisions.
-      </p>
-
-      <h2>Closing the Transaction</h2>
-      <p>
-        The process generated strong interest, resulting in three competing term sheets. We helped the founders evaluate offers not just on valuation but also on investor fit, board composition, and protective provisions. The final deal included $35M at an 8x revenue multiple, a board seat for the lead investor with founder-friendly governance, standard protective provisions without unusual terms, and a secondary component allowing founders to take some chips off the table.
-      </p>
-
-      <h2>Key Lessons</h2>
-      <ul>
-        <li>Preparation is critical—investors will find issues, so address them proactively</li>
-        <li>SaaS metrics matter—make sure your reporting tells the right story</li>
-        <li>Process creates leverage—multiple interested parties improve terms</li>
-        <li>Investor fit matters as much as valuation for long-term success</li>
-      </ul>
-    </CaseStudyArticle>
+      tags={["Technology", "SaaS", "Fundraising", "Strategy"]}
+      relatedCapability={{
+        title: "Strategy & Finance",
+        link: "/capabilities/strategy-finance"
+      }}
+    />
   );
 }

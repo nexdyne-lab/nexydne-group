@@ -1,70 +1,35 @@
-import CaseStudyArticle from "@/components/CaseStudyArticle";
+import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
 export default function DistributionPricing() {
   return (
-    <CaseStudyArticle
-      industry="Growth, Marketing & Sales"
-      industryHref="/capabilities/growth-marketing-sales"
+    <CaseStudyTemplate
+      client="Industrial Distribution Company"
+      industry="Distribution · Growth Marketing"
       title="Pricing Optimization Improves Margins by 8 Points"
-      subtitle="How a distribution company transformed their pricing approach to capture value while maintaining customer relationships"
-      client="A 160-employee distribution company with $125M in annual revenue, serving industrial customers with MRO supplies and equipment. The company had grown through acquisition but pricing was inconsistent across the combined customer base."
-      challenge="Gross margins had eroded from 28% to 22% over five years as sales reps discounted to win deals. Pricing was ad hoc, with no systematic approach to setting or managing prices. Customer profitability varied wildly, with some accounts actually losing money. Competitors were using data-driven pricing while the company relied on gut feel."
+      subtitle="How a distribution company transformed their pricing approach to capture value while maintaining customer relationships."
+      heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80"
+      challenge={`Gross margins had eroded from 28% to 22% over five years as sales reps discounted to win deals. Pricing was ad hoc, with no systematic approach to setting or managing prices. Customer profitability varied wildly, with some accounts actually losing money. Competitors were using data-driven pricing while the company relied on gut feel.
+
+A 160-employee distribution company with $125M in annual revenue serves industrial customers with MRO supplies and equipment. The company had grown through acquisition but pricing was inconsistent across the combined customer base. Analysis revealed significant value leakage across multiple dimensions: list prices hadn't been updated in years, discounting was inconsistent with similar customers receiving vastly different prices, freight and handling charges were regularly waived without justification, and rebates and allowances had accumulated without systematic review.`}
+      solution={`NEXDYNE established the infrastructure for systematic pricing management, implementing pricing software for visibility and control, creating a pricing governance structure with clear roles and approval authorities, building pricing analytics to track performance and identify opportunities, and forming a dedicated pricing team.
+
+A data-driven approach to list prices analyzed competitive positioning and price elasticity by product category, implementing market-based pricing reflecting value and competition with a regular review cadence. Discount management was transformed through guidelines based on customer value and competitive situation, approval workflows requiring justification for exceptions, deal desk support for complex situations, and reporting tracking discount trends and outliers.
+
+The sales team was enabled for value-based pricing conversations through training on pricing strategy and negotiation, tools showing customer profitability and pricing history, incentives rewarding margin rather than just revenue, and coaching programs reinforcing pricing discipline.`}
+      impact={`Gross margins improved 8 percentage points over 18 months, generating $10 million in annual profit impact on a $125 million revenue base. Importantly, customer retention improved 3% during the transition—demonstrating that the pricing changes were defensible and that value-based conversations strengthened rather than damaged customer relationships.
+
+Pricing consistency improved 30% as the new governance structure eliminated the arbitrary variation that had made customer profitability so unpredictable. Sales reps who initially resisted the changes became advocates as they found that pricing discipline gave them more confidence and credibility in customer negotiations, not less flexibility.`}
       metrics={[
-        { value: "8pts", label: "Margin Improvement" },
-        { value: "3%", label: "Customer Retention" },
-        { value: "$10M", label: "Profit Impact" },
-        { value: "30%", label: "Pricing Consistency" },
+        { value: "8pts", label: "Margin improvement" },
+        { value: "3%", label: "Customer retention gain" },
+        { value: "$10M", label: "Profit impact" },
+        { value: "30%", label: "Pricing consistency improvement" }
       ]}
-      relatedCaseStudies={[
-        {
-          title: "Sales Process Optimization Increases Win Rate",
-          href: "/capabilities/growth-marketing-sales/case-studies/software-sales-optimization",
-          industry: "Technology"
-        },
-        {
-          title: "E-commerce Launch Drives $5M New Revenue",
-          href: "/capabilities/growth-marketing-sales/case-studies/manufacturer-ecommerce",
-          industry: "Manufacturing"
-        },
-        {
-          title: "Account-Based Marketing Lands Enterprise Clients",
-          href: "/capabilities/growth-marketing-sales/case-studies/tech-abm",
-          industry: "Technology"
-        }
-      ]}
-    >
-      <h2>Diagnosing Pricing Leakage</h2>
-      <p>
-        Our analysis revealed significant value leakage across multiple dimensions. List prices hadn't been updated in years and didn't reflect market conditions. Discounting was inconsistent—similar customers received vastly different prices. Freight and handling charges were often waived without justification. Rebates and allowances had accumulated without systematic review.
-      </p>
-
-      <h2>Building the Pricing Foundation</h2>
-      <p>
-        We established the infrastructure for systematic pricing management. We implemented pricing software that provided visibility and control. We created a pricing governance structure with clear roles and approval authorities. We established pricing analytics that tracked performance and identified opportunities. We also built a pricing team with dedicated resources and capabilities.
-      </p>
-
-      <h2>Optimizing List Prices</h2>
-      <p>
-        We developed a data-driven approach to setting list prices. We analyzed competitive positioning and price elasticity by product category. We implemented market-based pricing that reflected value and competition. We established a regular review cadence to keep prices current. We also created a process for pricing new products at launch.
-      </p>
-
-      <h2>Managing Discounts and Exceptions</h2>
-      <p>
-        We transformed how discounts were granted and managed. We created discount guidelines based on customer value and competitive situation. We implemented approval workflows that required justification for exceptions. We established deal desk support for complex pricing situations. We also built reporting that tracked discount trends and outliers.
-      </p>
-
-      <h2>Enabling the Sales Team</h2>
-      <p>
-        We equipped sales reps to have value-based pricing conversations. We developed training on pricing strategy and negotiation techniques. We created tools that showed customer profitability and pricing history. We established incentives that rewarded margin, not just revenue. We also built coaching programs that reinforced pricing discipline.
-      </p>
-
-      <h2>Key Lessons</h2>
-      <ul>
-        <li>Pricing visibility is the first step to pricing improvement</li>
-        <li>Discount governance prevents margin erosion</li>
-        <li>Sales enablement is essential for pricing execution</li>
-        <li>Pricing improvement is sustainable with the right infrastructure</li>
-      </ul>
-    </CaseStudyArticle>
+      tags={["Distribution", "Pricing", "Margin Improvement", "Growth"]}
+      relatedCapability={{
+        title: "Growth Marketing & Sales",
+        link: "/capabilities/growth-marketing-sales"
+      }}
+    />
   );
 }

@@ -1,70 +1,35 @@
-import CaseStudyArticle from "@/components/CaseStudyArticle";
+import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
 export default function ServicesExit() {
   return (
-    <CaseStudyArticle
-      industry="Strategy & Corporate Finance"
-      industryHref="/capabilities/strategy-corporate-finance"
+    <CaseStudyTemplate
+      client="Environmental Consulting Firm"
+      industry="Professional Services · Strategy & Finance"
       title="Exit Preparation Maximizes Founder Value"
-      subtitle="How a professional services firm prepared for sale and achieved a 40% valuation premium through strategic positioning"
-      client="A 140-employee professional services firm specializing in environmental consulting, with $20M in revenue and a founder approaching retirement age."
-      challenge="The founder wanted to exit within 2-3 years but the company wasn't ready for sale. Revenue was concentrated in a few large clients, key relationships were tied to the founder personally, and financial reporting didn't present the business in the best light."
+      subtitle="How a professional services firm prepared for sale and achieved a 40% valuation premium through strategic positioning."
+      heroImage="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80"
+      challenge={`The founder wanted to exit within 2-3 years but the company wasn't ready for sale. Revenue was concentrated in a few large clients, key relationships were tied to the founder personally, and financial reporting didn't present the business in the best light.
+
+A 140-employee professional services firm specializing in environmental consulting with $20M in revenue had a founder approaching retirement age. The sale readiness assessment identified issues that would reduce value or complicate a sale: top 3 clients representing 60% of revenue, the founder personally involved in most client relationships, EBITDA understated due to above-market owner compensation, and no clear succession plan for leadership.`}
+      solution={`NEXDYNE implemented a systematic program over 18 months to reduce customer concentration through a new business development function focused on mid-size clients, expansion into adjacent service lines with existing clients, and pricing strategy improving margins on concentrated accounts. By the time of sale, no single client represented more than 15% of revenue.
+
+Founder relationship transition introduced senior team members to key client contacts, documented institutional knowledge and client preferences, established account management processes not dependent on the founder personally, and created retention agreements for key employees.
+
+Financial presentation was optimized by normalizing owner compensation to market rates, identifying and documenting add-backs for one-time expenses, separating real estate into a distinct entity, and preparing quality of earnings analysis proactively. When the company was ready, a competitive sale process was run that generated interest from both strategic and financial buyers.`}
+      impact={`The final sale achieved a 40% premium over initial indications of value—directly attributable to the preparation work that eliminated the risk discounts buyers apply to concentrated, founder-dependent businesses. The company sold at a 5x EBITDA multiple. The founder achieved complete transition within 6 months of closing, with a succession plan that protected the client relationships and employee base built over decades.
+
+The revenue diversification program proved particularly valuable: buyers who had initially valued the business at a discount for concentration risk revised their valuations upward significantly once they saw the diversified client base and demonstrated new business development capability. The preparation investment of 18 months generated returns many multiples of its cost in the final sale price.`}
       metrics={[
-        { value: "40%", label: "Valuation Premium" },
-        { value: "6 months", label: "Preparation Time" },
-        { value: "5x", label: "EBITDA Multiple" },
-        { value: "100%", label: "Founder Transition" }
+        { value: "40%", label: "Valuation premium" },
+        { value: "6 months", label: "Founder transition" },
+        { value: "5x", label: "EBITDA multiple" },
+        { value: "100%", label: "Founder exit completed" }
       ]}
-      relatedCaseStudies={[
-        {
-          title: "Series B Fundraise Supports Technology Expansion",
-          href: "/capabilities/strategy-corporate-finance/case-studies/saas-series-b",
-          industry: "Technology"
-        },
-        {
-          title: "Strategic Acquisition Doubles Market Presence",
-          href: "/capabilities/strategy-corporate-finance/case-studies/manufacturing-acquisition",
-          industry: "Manufacturing"
-        },
-        {
-          title: "Private Equity-Backed Growth: From $40M to $120M Revenue",
-          href: "/capabilities/strategy-corporate-finance/case-studies/pe-growth-healthcare",
-          industry: "Healthcare"
-        }
-      ]}
-    >
-      <h2>Assessing Sale Readiness</h2>
-      <p>
-        We began with a comprehensive assessment of the company's attractiveness to potential buyers. The analysis identified several issues that would reduce value or complicate a sale: top 3 clients represented 60% of revenue, the founder was personally involved in most client relationships, EBITDA was understated due to above-market owner compensation, and there was no clear succession plan for leadership.
-      </p>
-
-      <h2>Diversifying the Revenue Base</h2>
-      <p>
-        Over 18 months, we implemented a systematic program to reduce customer concentration. This included a new business development function focused on mid-size clients, expansion into adjacent service lines with existing clients, and a pricing strategy that improved margins on concentrated accounts. By the time of sale, no single client represented more than 15% of revenue.
-      </p>
-
-      <h2>Transitioning Key Relationships</h2>
-      <p>
-        The founder's personal relationships were both an asset and a liability. We developed a transition plan that introduced senior team members to key client contacts, documented institutional knowledge and client preferences, established account management processes that didn't depend on the founder, and created retention agreements for key employees.
-      </p>
-
-      <h2>Optimizing Financial Presentation</h2>
-      <p>
-        We worked with the company's accountants to present financials in the most favorable light. This included normalizing owner compensation to market rates, identifying and documenting add-backs for one-time expenses, separating real estate into a distinct entity, and preparing quality of earnings analysis proactively.
-      </p>
-
-      <h2>Executing the Sale Process</h2>
-      <p>
-        When the company was ready, we ran a competitive sale process that generated strong interest from both strategic and financial buyers. The preparation work paid off—buyers were impressed by the diversified revenue base, clear succession plan, and clean financials. The final sale achieved a 40% premium over initial indications of value.
-      </p>
-
-      <h2>Key Lessons</h2>
-      <ul>
-        <li>Exit preparation should begin 2-3 years before the target sale date</li>
-        <li>Customer concentration is the #1 value killer—address it early</li>
-        <li>Founder transition is critical for professional services firms</li>
-        <li>Clean financials and proactive due diligence preparation accelerate deals</li>
-      </ul>
-    </CaseStudyArticle>
+      tags={["Professional Services", "Exit Planning", "M&A", "Strategy"]}
+      relatedCapability={{
+        title: "Strategy & Finance",
+        link: "/capabilities/strategy-finance"
+      }}
+    />
   );
 }

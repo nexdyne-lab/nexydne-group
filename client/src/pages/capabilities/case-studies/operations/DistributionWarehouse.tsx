@@ -1,70 +1,35 @@
-import CaseStudyArticle from "@/components/CaseStudyArticle";
+import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
 export default function DistributionWarehouse() {
   return (
-    <CaseStudyArticle
-      industry="Operations"
-      industryHref="/capabilities/operations"
+    <CaseStudyTemplate
+      client="Industrial Distribution Company"
+      industry="Distribution · Operations"
       title="Warehouse Optimization Doubles Throughput"
-      subtitle="How a distribution company transformed their warehouse operations to double capacity without expanding footprint"
-      client="A 180-employee distribution company with $95M in annual revenue, serving industrial customers across the Southeast. The company operates a 350,000 square foot distribution center handling 15,000 SKUs."
-      challenge="Growing demand had pushed the warehouse to apparent capacity limits. Management was planning a $12M facility expansion, but lead times and capital constraints made this problematic. The company needed to find capacity within the existing footprint while improving service levels."
+      subtitle="How a distribution company transformed their warehouse operations to double capacity without expanding footprint."
+      heroImage="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80"
+      challenge={`Growing demand had pushed the warehouse to apparent capacity limits. Management was planning a $12M facility expansion, but lead times and capital constraints made this problematic. The company needed to find capacity within the existing footprint while improving service levels.
+
+A 180-employee distribution company with $95M in annual revenue operates a 350,000 square foot distribution center handling 15,000 SKUs serving industrial customers across the Southeast. Analysis revealed the warehouse wasn't actually at physical capacity—it was at the limit of current processes. Vertical space was underutilized at only 60% of available racking height. Slotting hadn't been optimized in years, so fast-moving items were scattered throughout the facility. Pick paths were inefficient, with workers frequently backtracking. Receiving and shipping competed for the same dock doors during peak periods.`}
+      solution={`NEXDYNE implemented a comprehensive storage optimization program: narrow-aisle racking increasing storage positions by 40%, velocity-based slotting placing fast movers in prime locations, vertical lift modules for small parts storage, and a forward pick area reducing travel for high-frequency items.
+
+The facility layout was redesigned to eliminate bottlenecks and reduce travel—separating receiving and shipping to dedicated dock areas, implementing cross-docking for high-velocity items, creating staging zones smoothing flow between operations, and establishing one-way traffic patterns eliminating congestion.
+
+Lean operations implementation included wave planning batching orders for efficient processing, pick-to-cart systems allowing simultaneous multi-order picking, standard work for all warehouse operations, and visual management systems making performance visible in real-time. Supervisors were trained in lean management principles, a continuous improvement program with regular kaizen events was established, and a slotting review process maintained optimal product placement.`}
+      impact={`Throughput doubled within the existing 350,000 square foot footprint, making the planned $12 million facility expansion unnecessary. Space utilization improved 30% through vertical storage additions and slotting optimization. Order accuracy reached 99.5% as standardized pick processes replaced the inconsistent individual approaches that had driven errors.
+
+The avoided expansion represented immediate capital preservation while the operational improvements also reduced ongoing labor costs per unit processed. The lean management system, now embedded in daily operations, continues to generate incremental improvements through the kaizen program. The company gained capacity for projected growth over the next 5 years without the facility investment, lead time, and disruption that the expansion would have required.`}
       metrics={[
-        { value: "2x", label: "Throughput Increase" },
-        { value: "30%", label: "Space Utilization Gain" },
-        { value: "$12M", label: "Expansion Avoided" },
-        { value: "99.5%", label: "Order Accuracy" },
+        { value: "2x", label: "Throughput increase" },
+        { value: "30%", label: "Space utilization gain" },
+        { value: "$12M", label: "Expansion avoided" },
+        { value: "99.5%", label: "Order accuracy" }
       ]}
-      relatedCaseStudies={[
-        {
-          title: "Supply Chain Optimization Reduces Costs by 25%",
-          href: "/capabilities/operations/case-studies/consumer-goods-supply-chain",
-          industry: "Manufacturing"
-        },
-        {
-          title: "Process Automation Transforms Order Fulfillment",
-          href: "/capabilities/operations/case-studies/ecommerce-fulfillment",
-          industry: "E-commerce"
-        },
-        {
-          title: "Production Planning Reduces Inventory by 35%",
-          href: "/capabilities/operations/case-studies/food-production-planning",
-          industry: "Food & Beverage"
-        }
-      ]}
-    >
-      <h2>Diagnosing the Capacity Constraint</h2>
-      <p>
-        Our analysis revealed that the warehouse wasn't actually at capacity—it was at the limit of current processes. Vertical space was underutilized, with racking only 60% of available height. Slotting hadn't been optimized in years, so fast-moving items were scattered throughout the facility. Pick paths were inefficient, with workers backtracking frequently. Receiving and shipping competed for the same dock doors during peak periods.
-      </p>
-
-      <h2>Optimizing Storage Density</h2>
-      <p>
-        We implemented a comprehensive storage optimization program. We installed narrow-aisle racking that increased storage positions by 40%. We implemented velocity-based slotting that placed fast movers in prime locations. We deployed vertical lift modules for small parts storage. We also created a forward pick area that reduced travel for high-frequency items.
-      </p>
-
-      <h2>Redesigning Material Flow</h2>
-      <p>
-        The facility layout was redesigned to eliminate bottlenecks and reduce travel. We separated receiving and shipping to dedicated dock areas. We implemented cross-docking for high-velocity items that didn't need storage. We created staging zones that smoothed flow between operations. We also established one-way traffic patterns that eliminated congestion.
-      </p>
-
-      <h2>Implementing Lean Operations</h2>
-      <p>
-        Beyond physical changes, we transformed how work was organized and managed. We implemented wave planning that batched orders for efficient processing. We deployed pick-to-cart systems that allowed simultaneous multi-order picking. We established standard work for all warehouse operations. We also created visual management systems that made performance visible in real-time.
-      </p>
-
-      <h2>Building Sustainable Capability</h2>
-      <p>
-        To ensure improvements would stick, we focused on building organizational capability. We trained supervisors in lean management principles and daily management systems. We established a continuous improvement program with regular kaizen events. We implemented a slotting review process that maintained optimal product placement. We also created performance dashboards that drove accountability.
-      </p>
-
-      <h2>Key Lessons</h2>
-      <ul>
-        <li>Apparent capacity constraints often reflect process limitations, not physical limits</li>
-        <li>Vertical space is frequently the most underutilized resource</li>
-        <li>Slotting optimization delivers ongoing productivity benefits</li>
-        <li>Lean principles apply to distribution as effectively as manufacturing</li>
-      </ul>
-    </CaseStudyArticle>
+      tags={["Distribution", "Warehouse", "Operations", "Lean"]}
+      relatedCapability={{
+        title: "Operations",
+        link: "/capabilities/operations"
+      }}
+    />
   );
 }

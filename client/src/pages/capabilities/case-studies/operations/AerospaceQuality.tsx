@@ -1,70 +1,35 @@
-import CaseStudyArticle from "@/components/CaseStudyArticle";
+import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
 export default function AerospaceQuality() {
   return (
-    <CaseStudyArticle
-      industry="Operations"
-      industryHref="/capabilities/operations"
+    <CaseStudyTemplate
+      client="Aerospace Precision Components Supplier"
+      industry="Aerospace · Operations"
       title="Quality System Implementation Achieves ISO Certification"
-      subtitle="How an aerospace supplier built a world-class quality management system to meet customer requirements and reduce defects"
-      client="A 150-employee aerospace supplier with $55M in annual revenue, manufacturing precision-machined components for commercial and defense aircraft. The company serves Tier 1 suppliers to major OEMs."
-      challenge="A major customer audit revealed significant gaps in the quality management system, putting $15M in annual contracts at risk. The company had 90 days to demonstrate substantial progress toward ISO 9001 and AS9100 certification or face disqualification from the approved supplier list."
+      subtitle="How an aerospace supplier built a world-class quality management system to meet customer requirements and reduce defects."
+      heroImage="https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=1600&q=80"
+      challenge={`A major customer audit revealed significant gaps in the quality management system, putting $15M in annual contracts at risk. The company had 90 days to demonstrate substantial progress toward ISO 9001 and AS9100 certification or face disqualification from the approved supplier list.
+
+A 150-employee aerospace supplier with $55M in annual revenue manufactures precision-machined components for commercial and defense aircraft, serving Tier 1 suppliers to major OEMs. The rapid assessment revealed a quality system that existed on paper but wasn't consistently followed in practice: outdated documentation not reflecting actual processes, incomplete inspection records making traceability impossible, corrective action requests piling up without systematic resolution, and training records unable to demonstrate competency for critical operations.`}
+      solution={`NEXDYNE implemented a comprehensive quality management system aligned with AS9100 requirements. All quality procedures were rewritten to reflect actual best practices, a document control system ensured current versions were always available, a calibration program was established for all measurement equipment, and a training matrix linked job functions to required competencies.
+
+Beyond documentation, process controls were built into production: statistical process control for critical dimensions, first article inspection procedures for all new parts, in-process inspection checkpoints at key operations, and visual management systems making quality status visible on the shop floor. Continuous improvement mechanisms included corrective action processes with root cause analysis requirements, a supplier quality program extending standards to the supply base, monthly management reviews tracking quality metrics, and a quality awareness program engaging all employees.
+
+Internal audits identified and closed gaps before external review, and staff were prepared for audit interviews through mock assessments. The company achieved ISO 9001 certification in 6 months and AS9100 certification 3 months later.`}
+      impact={`Both ISO 9001 and AS9100 certifications were achieved within 9 months, securing the $15 million in contracts that had been at risk. Defects dropped 45% as process controls replaced inspection-dependent quality assurance. The quality management system transformed from a compliance exercise into a genuine operational capability.
+
+The certifications opened new commercial opportunities—AS9100 certification is a prerequisite for many aerospace supply relationships, and the company successfully pursued two new Tier 1 customers that had previously been inaccessible. The corrective action system, now functioning properly, drove ongoing improvement that continued to reduce defect rates beyond the initial 45% gain.`}
       metrics={[
-        { value: "ISO 9001", label: "Certification Achieved" },
-        { value: "45%", label: "Defect Reduction" },
-        { value: "$15M", label: "Contracts Retained" },
-        { value: "AS9100", label: "Certification Achieved" },
+        { value: "ISO 9001", label: "Certification achieved" },
+        { value: "AS9100", label: "Certification achieved" },
+        { value: "45%", label: "Defect reduction" },
+        { value: "$15M", label: "Contracts retained" }
       ]}
-      relatedCaseStudies={[
-        {
-          title: "Supply Chain Optimization Reduces Costs by 25%",
-          href: "/capabilities/operations/case-studies/consumer-goods-supply-chain",
-          industry: "Manufacturing"
-        },
-        {
-          title: "Production Planning Reduces Inventory by 35%",
-          href: "/capabilities/operations/case-studies/food-production-planning",
-          industry: "Food & Beverage"
-        },
-        {
-          title: "Workforce Optimization Improves Productivity by 28%",
-          href: "/capabilities/operations/case-studies/healthcare-workforce",
-          industry: "Healthcare"
-        }
-      ]}
-    >
-      <h2>Assessing the Quality Gap</h2>
-      <p>
-        Our rapid assessment revealed a quality system that existed on paper but wasn't consistently followed in practice. Documentation was outdated and didn't reflect actual processes. Inspection records were incomplete, making traceability impossible. Corrective action requests piled up without systematic resolution. Training records couldn't demonstrate competency for critical operations.
-      </p>
-
-      <h2>Building the Quality Foundation</h2>
-      <p>
-        We implemented a comprehensive quality management system aligned with AS9100 requirements. We rewrote all quality procedures to reflect actual best practices. We implemented a document control system that ensured current versions were always available. We established a calibration program for all measurement equipment. We also created a training matrix that linked job functions to required competencies.
-      </p>
-
-      <h2>Implementing Process Controls</h2>
-      <p>
-        Beyond documentation, we focused on building quality into production processes. We implemented statistical process control for critical dimensions. We established first article inspection procedures for all new parts. We created in-process inspection checkpoints at key operations. We also deployed visual management systems that made quality status visible on the shop floor.
-      </p>
-
-      <h2>Driving Continuous Improvement</h2>
-      <p>
-        The quality system included robust mechanisms for continuous improvement. We implemented a corrective action process with root cause analysis requirements. We established a supplier quality program that extended standards to the supply base. We created a management review process that tracked quality metrics monthly. We also launched a quality awareness program that engaged all employees.
-      </p>
-
-      <h2>Achieving Certification</h2>
-      <p>
-        The certification journey required sustained focus and executive commitment. We conducted internal audits to identify and close gaps before external review. We engaged a registrar early to align expectations and timeline. We prepared staff for audit interviews through mock assessments. The company achieved ISO 9001 certification in 6 months and AS9100 certification 3 months later.
-      </p>
-
-      <h2>Key Lessons</h2>
-      <ul>
-        <li>Quality systems must reflect actual practice, not aspirational procedures</li>
-        <li>Process controls prevent defects; inspection only detects them</li>
-        <li>Management commitment is essential for successful certification</li>
-        <li>Continuous improvement sustains quality performance over time</li>
-      </ul>
-    </CaseStudyArticle>
+      tags={["Aerospace", "Quality Management", "ISO Certification", "Operations"]}
+      relatedCapability={{
+        title: "Operations",
+        link: "/capabilities/operations"
+      }}
+    />
   );
 }

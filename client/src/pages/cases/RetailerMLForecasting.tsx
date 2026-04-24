@@ -1,155 +1,32 @@
-import React, { useEffect } from "react";
-import Navbar from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import { ArrowLeft, BarChart3, TrendingUp, CheckCircle2 } from "lucide-react";
-import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
+import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
 export default function RetailerMLForecasting() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
-    <div className="min-h-screen bg-base text-white font-sans selection:bg-secondary selection:text-base">
-      <Navbar />
+    <CaseStudyTemplate
+      client="Major Retailer"
+      industry="Retail · AI & Machine Learning"
+      title="Predicting Demand with 98% Accuracy"
+      subtitle="How a major retailer reduced inventory waste by 30% using an ML-powered forecasting engine."
+      heroImage="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1600&auto=format&fit=crop"
+      challenge={`The client was relying on legacy spreadsheet-based forecasting methods that couldn't account for complex variables like weather, local events, and social media trends. This led to excess inventory in some regions causing markdowns, stockouts in high-demand stores resulting in lost revenue, and manual planning processes taking 2+ weeks per cycle.
 
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden min-h-[60vh] flex items-center">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-base via-base/90 to-base z-10" />
-          <img 
-            src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=2670&auto=format&fit=crop" 
-            alt="Retail Analytics" 
-            className="w-full h-full object-cover opacity-40"
-          />
-        </div>
+The legacy approach could not operate at SKU-store-week granularity or adapt to the dynamic, multi-variable nature of modern retail demand.`}
+      solution={`NEXDYNE built a custom Machine Learning pipeline on Databricks that ingests real-time sales data, weather patterns, and marketing calendars to predict SKU-level demand.
 
-        <div className="container mx-auto px-6 relative z-20">
-          <Link href="/solutions/enterprise-transformation/legacy-modernization">
-            <Button variant="ghost" className="text-muted-foreground/70 hover:text-white mb-8 pl-0 hover:bg-transparent">
-              <ArrowLeft className="w-4 h-4 mr-2" /> Back to Data Modernization
-            </Button>
-          </Link>
-          
-          <div className="max-w-4xl">
-            <div className="inline-flex items-center space-x-2 bg-secondary/10 backdrop-blur-md border border-secondary/20 rounded-full px-4 py-1.5 mb-6">
-              <span className="text-sm font-medium text-secondary tracking-widest uppercase">Retail Case Study</span>
-            </div>
-            
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-3 leading-tight">
-              Predicting Demand with <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary-hover">
-                98% Accuracy
-              </span>
-            </h1>
-            <p className="text-xl text-muted-foreground/50 max-w-2xl leading-relaxed font-light">
-              How a major retailer reduced inventory waste by 30% using our ML-powered forecasting engine.
-            </p>
-          </div>
-        </div>
-      </section>
+XGBoost models were trained on 5 years of historical data and re-trained weekly to adapt to new trends. The demand forecasting model incorporated variables including weather, local events, promotions, and social signals—providing a far more accurate picture than traditional moving averages. Integration with the client's ERP system enabled automated purchase order generation based on predicted demand, closing the loop from forecast to replenishment without manual intervention.`}
+      impact={`Forecast accuracy reached 98% at the SKU/store level for a 2-week horizon—dramatically exceeding the previous system's performance. Inventory waste (markdowns from excess stock) decreased 30% as buyers confidently ordered closer to actual demand. Planning cycle time reduced 10x, from weeks to days, freeing demand planning teams for strategic work instead of manual data processing.
 
-      {/* Challenge & Solution */}
-      <section className="py-20 bg-base">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-start">
-            <div>
-              <h2 className="text-3xl font-bold text-white mb-6">The Challenge</h2>
-              <p className="text-muted-foreground/70 leading-relaxed mb-6">
-                The client was relying on legacy spreadsheet-based forecasting methods that couldn't account for complex variables like weather, local events, and social media trends. This led to:
-              </p>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <div className="w-6 h-6 rounded-full bg-red-500/10 flex items-center justify-center mt-1 mr-4">
-                    <span className="w-2 h-2 rounded-full bg-red-500" />
-                  </div>
-                  <span className="text-muted-foreground/50">Excess inventory in some regions, leading to markdowns.</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-6 h-6 rounded-full bg-red-500/10 flex items-center justify-center mt-1 mr-4">
-                    <span className="w-2 h-2 rounded-full bg-red-500" />
-                  </div>
-                  <span className="text-muted-foreground/50">Stockouts in high-demand stores, resulting in lost revenue.</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-6 h-6 rounded-full bg-red-500/10 flex items-center justify-center mt-1 mr-4">
-                    <span className="w-2 h-2 rounded-full bg-red-500" />
-                  </div>
-                  <span className="text-muted-foreground/50">Manual planning processes taking 2+ weeks per cycle.</span>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h2 className="text-3xl font-bold text-white mb-6">The Solution</h2>
-              <p className="text-muted-foreground/70 leading-relaxed mb-6">
-                We built a custom Machine Learning pipeline on Databricks that ingests real-time sales data, weather patterns, and marketing calendars to predict SKU-level demand.
-              </p>
-              <div className="space-y-6">
-                <div className="bg-white/5 border border-white/10 p-6 rounded-xl">
-                  <div className="flex items-center mb-4">
-                    <BarChart3 className="w-6 h-6 text-secondary mr-3" />
-                    <h3 className="text-xl font-bold text-white">Demand Forecasting Model</h3>
-                  </div>
-                  <p className="text-muted-foreground/70 text-sm">
-                    XGBoost models trained on 5 years of historical data, re-trained weekly to adapt to new trends.
-                  </p>
-                </div>
-                <div className="bg-white/5 border border-white/10 p-6 rounded-xl">
-                  <div className="flex items-center mb-4">
-                    <TrendingUp className="w-6 h-6 text-secondary mr-3" />
-                    <h3 className="text-xl font-bold text-white">Automated Replenishment</h3>
-                  </div>
-                  <p className="text-muted-foreground/70 text-sm">
-                    Integration with ERP to automatically generate purchase orders based on predicted demand.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Results Stats */}
-      <section className="py-20 bg-base border-y border-white/5">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">Key Outcomes</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-8">
-              <div className="text-5xl font-bold text-secondary mb-4">30%</div>
-              <div className="text-white font-medium text-lg mb-2">Reduction in Waste</div>
-              <p className="text-muted-foreground/70 text-sm">Inventory markdowns significantly reduced.</p>
-            </div>
-            <div className="text-center p-8 border-x border-white/5">
-              <div className="text-5xl font-bold text-secondary mb-4">98%</div>
-              <div className="text-white font-medium text-lg mb-2">Forecast Accuracy</div>
-              <p className="text-muted-foreground/70 text-sm">At SKU/Store level for 2-week horizon.</p>
-            </div>
-            <div className="text-center p-8">
-              <div className="text-5xl font-bold text-secondary mb-4">10x</div>
-              <div className="text-white font-medium text-lg mb-2">Faster Planning</div>
-              <p className="text-muted-foreground/70 text-sm">Planning cycle reduced from weeks to days.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-24 bg-base">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
-            Ready to optimize your operations?
-          </h2>
-          <Link href="/contact">
-            <Button className="bg-secondary hover:bg-secondary text-base rounded-full px-8 py-6 text-lg font-bold">
-              Schedule a Demo
-            </Button>
-          </Link>
-        </div>
-      </section>
-
-      <Footer />
-    </div>
+Stockouts in high-demand stores decreased substantially as the model correctly predicted regional demand spikes. The combination of fewer markdowns and fewer lost sales from stockouts produced substantial financial improvements across the retail network.`}
+      metrics={[
+        { value: "30%", label: "Reduction in inventory waste" },
+        { value: "98%", label: "Forecast accuracy at SKU/store level" },
+        { value: "10x", label: "Faster planning cycle" }
+      ]}
+      tags={["Retail", "Machine Learning", "Demand Forecasting", "AI"]}
+      relatedCapability={{
+        title: "AI & Machine Learning",
+        link: "/capabilities/ai"
+      }}
+    />
   );
 }

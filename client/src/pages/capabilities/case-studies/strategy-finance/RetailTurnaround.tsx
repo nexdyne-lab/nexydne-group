@@ -1,70 +1,35 @@
-import CaseStudyArticle from "@/components/CaseStudyArticle";
+import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 
 export default function RetailTurnaround() {
   return (
-    <CaseStudyArticle
-      industry="Strategy & Corporate Finance"
-      industryHref="/capabilities/strategy-corporate-finance"
+    <CaseStudyTemplate
+      client="Specialty Retail Company"
+      industry="Retail · Strategy & Finance"
       title="Turnaround Strategy Restores Profitability"
-      subtitle="How a retail company recovered from market disruption through strategic cost reduction and operational restructuring"
-      client="A 175-employee specialty retail company with 12 locations across the Southeast, facing declining sales and mounting losses after a major competitor entered the market."
-      challenge="The company had lost 25% of revenue over two years as a new competitor opened nearby locations. EBITDA had turned negative, cash was running low, and the bank was threatening to call the loan. The founding family needed to act quickly to save the business."
+      subtitle="How a retail company recovered from market disruption through strategic cost reduction and operational restructuring."
+      heroImage="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600&q=80"
+      challenge={`The company had lost 25% of revenue over two years as a new competitor opened nearby locations. EBITDA had turned negative, cash was running low, and the bank was threatening to call the loan. The founding family needed to act quickly to save the business.
+
+A 175-employee specialty retail company with 12 locations across the Southeast faced a crisis: a major competitor entering the market had triggered rapid revenue decline, and the cost structure had not been adjusted as revenue fell. Analysis revealed that not all locations were equally affected—some remained profitable while others were deeply underwater. Inventory was bloated with slow-moving SKUs tying up cash, and pricing had not been reviewed in years despite rising costs.`}
+      solution={`NEXDYNE first stabilized the situation by implementing a 13-week cash flow forecast to manage liquidity, negotiating extended payment terms with key vendors, eliminating non-essential spending immediately, and beginning conversations with the bank about restructuring the credit facility.
+
+Based on location-level profitability analysis, 4 underperforming locations were closed while investment was focused on the 8 strongest stores. Closures were executed carefully to minimize customer disruption, with inventory transferred to remaining locations and employees offered positions where possible.
+
+Cost restructuring identified $8M in annual savings through renegotiated vendor contracts and supplier consolidation, 30% reduction in corporate overhead, staffing model optimization based on traffic patterns, and renegotiated real estate lease for headquarters. Revenue revitalization refreshed merchandise assortment based on customer data, implemented a loyalty program, upgraded the e-commerce platform, and trained staff on consultative selling to differentiate from the new competitor.`}
+      impact={`Profitability was restored within 6 months—an outcome that required both the speed of the stabilization actions and the discipline to simultaneously address cost structure and revenue quality. EBITDA margin recovered to 15% on the restructured footprint. $8 million in annual cost savings were captured through the combination of location closures, vendor renegotiations, and overhead reduction. Bank debt was fully restructured on terms sustainable for the leaner, stronger business.
+
+The 8 remaining locations, freed from the drag of underperforming stores and supported by improved economics, performed significantly better than before the restructuring. The loyalty program and e-commerce investment created the digital capabilities the business needed to compete with the new entrant's inevitable online presence.`}
       metrics={[
-        { value: "15%", label: "EBITDA Margin Restored" },
-        { value: "$8M", label: "Cost Reduction" },
-        { value: "6 months", label: "To Profitability" },
-        { value: "100%", label: "Debt Restructured" }
+        { value: "15%", label: "EBITDA margin restored" },
+        { value: "$8M", label: "Annual cost reduction" },
+        { value: "6 months", label: "To profitability" },
+        { value: "100%", label: "Debt restructured" }
       ]}
-      relatedCaseStudies={[
-        {
-          title: "FP&A Transformation Enables Data-Driven Decisions",
-          href: "/capabilities/strategy-corporate-finance/case-studies/distribution-fpa",
-          industry: "Distribution"
-        },
-        {
-          title: "Exit Preparation Maximizes Founder Value",
-          href: "/capabilities/strategy-corporate-finance/case-studies/services-exit",
-          industry: "Professional Services"
-        },
-        {
-          title: "Private Equity-Backed Growth: From $40M to $120M Revenue",
-          href: "/capabilities/strategy-corporate-finance/case-studies/pe-growth-healthcare",
-          industry: "Healthcare"
-        }
-      ]}
-    >
-      <h2>Stabilizing the Situation</h2>
-      <p>
-        The first priority was to stop the bleeding and buy time for a more comprehensive restructuring. We implemented a 13-week cash flow forecast to manage liquidity, negotiated extended payment terms with key vendors, identified and eliminated non-essential spending immediately, and began conversations with the bank about restructuring the credit facility.
-      </p>
-
-      <h2>Diagnosing the Root Causes</h2>
-      <p>
-        With the immediate crisis stabilized, we conducted a thorough diagnostic to understand what was driving the losses. The analysis revealed that not all locations were equally affected—some were still profitable while others were deeply underwater. The company had not adjusted its cost structure as revenue declined, and inventory was bloated with slow-moving SKUs tying up cash. Additionally, pricing had not been reviewed in years despite rising costs.
-      </p>
-
-      <h2>Rightsizing the Footprint</h2>
-      <p>
-        Based on location-level profitability analysis, we developed a plan to close 4 underperforming locations while investing in the 8 strongest stores. The closures were executed carefully to minimize customer disruption, with inventory transferred to remaining locations and employees offered positions where possible.
-      </p>
-
-      <h2>Restructuring the Cost Base</h2>
-      <p>
-        Beyond the store closures, we identified $8M in annual cost savings through renegotiated vendor contracts and consolidated suppliers, reduced corporate overhead by 30%, optimized staffing models based on traffic patterns, and renegotiated the real estate lease for the headquarters.
-      </p>
-
-      <h2>Revitalizing the Core Business</h2>
-      <p>
-        Cost cutting alone wouldn't save the business—we also needed to strengthen the competitive position. We refreshed the merchandise assortment based on customer data, implemented a loyalty program to increase repeat visits, upgraded the e-commerce platform to capture online sales, and trained staff on consultative selling to differentiate from the competitor.
-      </p>
-
-      <h2>Key Lessons</h2>
-      <ul>
-        <li>Speed is critical in turnarounds—delay makes every problem worse</li>
-        <li>Not all locations or products deserve equal investment</li>
-        <li>Cost cutting must be paired with revenue initiatives</li>
-        <li>Stakeholder communication builds the trust needed for difficult decisions</li>
-      </ul>
-    </CaseStudyArticle>
+      tags={["Retail", "Turnaround", "Cost Reduction", "Strategy"]}
+      relatedCapability={{
+        title: "Strategy & Finance",
+        link: "/capabilities/strategy-finance"
+      }}
+    />
   );
 }
