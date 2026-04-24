@@ -1,5 +1,6 @@
-import { Link } from "wouter";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { ArrowRight, ArrowLeft, DollarSign, Target, TrendingUp, Users, Zap, Download } from 'lucide-react';
 import { CaseStudyPDFButton } from "@/components/CaseStudyPDFButton";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -11,19 +12,19 @@ import { SEO } from "@/components/SEO";
 
 export default function SaasCategoryLeadership() {
   return (
-    <div className="min-h-screen bg-white text-white selection:bg-primary selection:text-white">
-      <SEO
-        title="Shifting Mindsets to Drive Performance | Case Study | NexDyne Technologies"
+    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
+      <SEO 
+        title="Shifting Mindsets to Drive Performance | Case Study | NexDyne Technologies" 
         description="How an 'insights to action' financial approach helped a B2B SaaS platform transition from fast follower to category leader with $50M+ in new ARR potential."
         canonical="/case-studies/saas-category-leadership"
       />
       <Navigation />
-
+      
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-30"></div>
-        <div className="absolute inset-0"></div>
-
+        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
+        
         <div className="container relative z-10 px-4 md:px-12">
           <Breadcrumbs />
           <motion.div
@@ -32,16 +33,16 @@ export default function SaasCategoryLeadership() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl"
           >
-            <span className="text-xs uppercase tracking-[0.2em] text-primary mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Case Study · Software & Technology
             </span>
-            <h1 className="text-5xl md:text-7xl tracking-tight leading-[1.05] mb-4">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-4">
               Shifting Mindsets to <span className="text-primary">Drive Performance</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mb-8">
               How an "insights to action" financial approach helped a B2B SaaS platform transition from fast follower to category leader with $50M+ in new ARR potential.
             </p>
-
+            
             {/* PDF Download Button */}
             <CaseStudyPDFButton
               title="Shifting Mindsets to Drive Performance"
@@ -61,7 +62,7 @@ export default function SaasCategoryLeadership() {
       </section>
 
       {/* DZ10 Stats Section */}
-      <section className="py-16 bg-white border-t border-white/10">
+      <section className="py-16 bg-base border-t border-white/10">
         <div className="container px-4 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
@@ -77,7 +78,7 @@ export default function SaasCategoryLeadership() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-5xl text-primary mb-2">{stat.metric}</div>
+                <div className="text-5xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-base text-white/70">{stat.label}</div>
               </motion.div>
             ))}
@@ -86,7 +87,7 @@ export default function SaasCategoryLeadership() {
       </section>
 
       {/* DZ10 Sticky Navigation */}
-      <nav className="sticky top-20 bg-white text-white z-40 border-y border-white/10">
+      <nav className="sticky top-20 bg-base text-white z-40 border-y border-white/10">
         <div className="container px-4 md:px-12">
           <div className="flex items-center gap-1">
             <a href="#challenge" className="px-6 py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">
@@ -111,7 +112,7 @@ export default function SaasCategoryLeadership() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl text-charcoal mb-6">Company Overview</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 A B2B SaaS platform serving mid-market companies had built a successful business by being a fast follower in their category. They watched competitors introduce new features and capabilities, then quickly replicated them with competitive pricing. This strategy had generated steady growth and profitability, but leadership recognized they had hit a ceiling.
@@ -121,7 +122,7 @@ export default function SaasCategoryLeadership() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-white/5">
+            <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-base/5 rounded-xl">
               <div>
                 <div className="text-sm font-semibold text-primary mb-2">Industry</div>
                 <div className="text-charcoal font-medium">B2B SaaS</div>
@@ -148,10 +149,10 @@ export default function SaasCategoryLeadership() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs uppercase tracking-[0.2em] text-white/80 mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-4xl md:text-5xl text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Breaking the Fast Follower Trap
             </h2>
           </motion.div>
@@ -162,28 +163,28 @@ export default function SaasCategoryLeadership() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl text-charcoal mb-4">Reactive Product Strategy</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Reactive Product Strategy</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The company's product roadmap was driven by competitive response rather than customer insight or market opportunity. This meant they were always playing catch-up, never setting the agenda for the category.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl text-charcoal mb-4">Conservative Financial Culture</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Conservative Financial Culture</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The finance team prioritized profitability and efficiency over growth and innovation. R&D investment was constrained by short-term financial targets, preventing the company from making the bold bets required for breakthrough innovation.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl text-charcoal mb-4">Limited Revenue Diversification</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Limited Revenue Diversification</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 The company relied heavily on a single core product, creating vulnerability to competitive disruption and limiting growth potential. Leadership recognized the need for new revenue streams but lacked a framework for identifying and funding them.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl text-charcoal mb-4">Misaligned Incentives</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Misaligned Incentives</h3>
               <p className="text-charcoal/70 leading-relaxed">
                 Financial metrics and incentive structures rewarded short-term performance rather than strategic innovation. This created organizational resistance to the long-term investments required for category leadership.
               </p>
@@ -193,7 +194,7 @@ export default function SaasCategoryLeadership() {
       </section>
 
       {/* DZ10 Quote Section */}
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-24 md:py-32 bg-base">
         <div className="container px-4 md:px-12 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -221,10 +222,10 @@ export default function SaasCategoryLeadership() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs uppercase tracking-[0.2em] text-white/80 mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Solution
             </span>
-            <h2 className="text-4xl md:text-5xl text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               "Insights to Action" Financial Framework
             </h2>
           </motion.div>
@@ -241,13 +242,13 @@ export default function SaasCategoryLeadership() {
             {/* Phase 1 */}
             <div className="flex gap-8">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary text-white flex items-center justify-center text-lg">
+                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
                   1
                 </div>
               </div>
               <div>
-                <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">
-
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
+                  <Target className="w-6 h-6 text-primary" />
                   Strategic Financial Repositioning
                 </h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
@@ -255,15 +256,15 @@ export default function SaasCategoryLeadership() {
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Established new financial framework balancing short-term profitability with strategic investment</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Created separate financial targets for core operations and innovation initiatives</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Protected innovation investments from quarterly earnings pressure</span>
                   </li>
                 </ul>
@@ -273,13 +274,13 @@ export default function SaasCategoryLeadership() {
             {/* Phase 2 */}
             <div className="flex gap-8">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary text-white flex items-center justify-center text-lg">
+                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
                   2
                 </div>
               </div>
               <div>
-                <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">
-
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
+                  <Zap className="w-6 h-6 text-primary" />
                   Innovation Portfolio Development
                 </h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
@@ -287,15 +288,15 @@ export default function SaasCategoryLeadership() {
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Established clear investment criteria and stage-gate processes</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Evaluated opportunities based on market size, competitive positioning, and strategic fit</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Ensured innovation investments were strategic rather than speculative</span>
                   </li>
                 </ul>
@@ -305,13 +306,13 @@ export default function SaasCategoryLeadership() {
             {/* Phase 3 */}
             <div className="flex gap-8">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary text-white flex items-center justify-center text-lg">
+                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
                   3
                 </div>
               </div>
               <div>
-                <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">
-
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
+                  <DollarSign className="w-6 h-6 text-primary" />
                   Capital Allocation & Funding
                 </h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
@@ -319,15 +320,15 @@ export default function SaasCategoryLeadership() {
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Reallocated resources from lower-priority initiatives</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Developed compelling investment thesis for the board</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Created multi-year financial plan demonstrating long-term value creation</span>
                   </li>
                 </ul>
@@ -337,13 +338,13 @@ export default function SaasCategoryLeadership() {
             {/* Phase 4 */}
             <div className="flex gap-8">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary text-white flex items-center justify-center text-lg">
+                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
                   4
                 </div>
               </div>
               <div>
-                <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">
-
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
+                  <TrendingUp className="w-6 h-6 text-primary" />
                   Performance Management & Governance
                 </h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
@@ -351,15 +352,15 @@ export default function SaasCategoryLeadership() {
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">
-                    
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Implemented quarterly innovation reviews with executive team and board</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Focused on learning and adaptation, not just financial performance</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Fostered culture of strategic experimentation</span>
                   </li>
                 </ul>
@@ -378,10 +379,10 @@ export default function SaasCategoryLeadership() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs uppercase tracking-[0.2em] text-white/80 mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
               The Impact
             </span>
-            <h2 className="text-4xl md:text-5xl text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
               Category Leadership Achieved
             </h2>
           </motion.div>
@@ -392,28 +393,28 @@ export default function SaasCategoryLeadership() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">
-
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
+                <DollarSign className="w-6 h-6 text-primary" />
                 Breakthrough Product Pipeline
               </h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">
                 Funded development of five new revenue streams with potential to generate over $50 million in annual recurring revenue, diversifying the company's product portfolio.
               </p>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="p-6 bg-white/5">
-                  <div className="text-3xl text-charcoal mb-2">5+</div>
+                <div className="p-6 bg-base/5 rounded-xl">
+                  <div className="text-3xl font-bold text-charcoal mb-2">5+</div>
                   <div className="text-sm text-charcoal/60">New revenue streams funded</div>
                 </div>
-                <div className="p-6 bg-white/5">
-                  <div className="text-3xl text-charcoal mb-2">$50M+</div>
+                <div className="p-6 bg-base/5 rounded-xl">
+                  <div className="text-3xl font-bold text-charcoal mb-2">$50M+</div>
                   <div className="text-sm text-charcoal/60">Potential ARR from new products</div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">
-
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
+                <Zap className="w-6 h-6 text-primary" />
                 Strategic Repositioning
               </h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">
@@ -422,22 +423,22 @@ export default function SaasCategoryLeadership() {
             </div>
 
             <div>
-              <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">
-
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
+                <TrendingUp className="w-6 h-6 text-primary" />
                 Accelerated Growth
               </h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">
                 Year-over-year revenue growth accelerated from 18% to 42% as new products gained market traction, while maintaining healthy unit economics.
               </p>
-              <div className="p-6 bg-white/5">
-                <div className="text-3xl text-charcoal mb-2">18% → 42%</div>
+              <div className="p-6 bg-base/5 rounded-xl">
+                <div className="text-3xl font-bold text-charcoal mb-2">18% → 42%</div>
                 <div className="text-sm text-charcoal/60">Year-over-year revenue growth acceleration</div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">
-
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3">
+                <Target className="w-6 h-6 text-primary" />
                 Cultural Transformation
               </h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">
@@ -449,7 +450,7 @@ export default function SaasCategoryLeadership() {
       </section>
 
       {/* DZ10 Quote Section 2 */}
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-24 md:py-32 bg-base">
         <div className="container px-4 md:px-12 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -476,7 +477,7 @@ export default function SaasCategoryLeadership() {
       </section>
 
       {/* DZ10 Related Cases Section */}
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-24 md:py-32 bg-base">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -485,10 +486,10 @@ export default function SaasCategoryLeadership() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs uppercase tracking-[0.2em] text-white/60 mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-4xl md:text-5xl text-white">More success stories</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -516,20 +517,20 @@ export default function SaasCategoryLeadership() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={item.link} className="group block h-full">
-                  <div className="aspect-[16/9] overflow-hidden mb-6 relative bg-white/5">
+                  <div className="aspect-[16/9] overflow-hidden mb-6 rounded-xl relative bg-white/5">
                     <img
                       src={item.image}
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                   </div>
-                  <span className="text-xs text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl text-white mt-2 group-hover:text-primary transition-colors">
+                  <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-white/60 mt-2">{item.description}</p>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
-                    Read case study 
+                    Read case study <ArrowRight className="w-3 h-3" />
                   </span>
                 </Link>
               </motion.div>
@@ -539,7 +540,7 @@ export default function SaasCategoryLeadership() {
           <div className="text-center mt-16">
             <Link href="/cases">
               <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
-
+                <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to all case studies
               </Button>
             </Link>

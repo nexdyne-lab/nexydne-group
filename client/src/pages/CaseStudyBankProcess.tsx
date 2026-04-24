@@ -1,5 +1,6 @@
-import { Link } from "wouter";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { ArrowRight, ArrowLeft, Download } from 'lucide-react';
 import { CaseStudyPDFButton } from "@/components/CaseStudyPDFButton";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -10,19 +11,19 @@ import { SEO } from "@/components/SEO";
 
 export default function CaseStudyBankProcess() {
   return (
-    <div className="min-h-screen bg-white text-white selection:bg-primary selection:text-white">
-      <SEO
-        title="Bank Process Automation | Case Study | NexDyne Technologies"
+    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
+      <SEO 
+        title="Bank Process Automation | Case Study | NexDyne Technologies" 
         description="How RPA eliminated 10,000+ hours of manual work at a major bank, achieving 75% reduction in manual compliance work."
         canonical="/cases/bank-process-automation"
       />
       <Navigation />
-
+      
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('/case-banker-meeting.c53f3999.jpg')] bg-cover bg-center opacity-30"></div>
-        <div className="absolute inset-0"></div>
-
+        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
+        
         <div className="container relative z-10 px-4 md:px-12">
           <Breadcrumbs />
           <motion.div
@@ -31,16 +32,16 @@ export default function CaseStudyBankProcess() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl"
           >
-            <span className="text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Case Study · Financial Services
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               Transforming compliance and <span className="text-primary">KYC processing</span> at a major US bank
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mb-5 sm:mb-6 md:mb-8">
               A 220-employee regional bank automated KYC processing and regulatory reporting, achieving 75% reduction in manual compliance work while improving accuracy to 99.8%.
             </p>
-
+            
             {/* PDF Download Button */}
             <CaseStudyPDFButton
               title="Transforming compliance and KYC processing at a major US bank"
@@ -60,7 +61,7 @@ export default function CaseStudyBankProcess() {
       </section>
 
       {/* DZ10 Stats Section */}
-      <section className="py-10 sm:py-12 lg:py-16 bg-white border-t border-white/10">
+      <section className="py-10 sm:py-12 lg:py-16 bg-base border-t border-white/10">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
             {[
@@ -76,7 +77,7 @@ export default function CaseStudyBankProcess() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-6xl text-primary mb-2">{stat.metric}</div>
+                <div className="text-6xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-lg text-white">{stat.label}</div>
                 <div className="text-sm text-white/60">{stat.sublabel}</div>
               </motion.div>
@@ -86,7 +87,7 @@ export default function CaseStudyBankProcess() {
       </section>
 
       {/* DZ10 Sticky Navigation */}
-      <nav className="sticky top-20 bg-white text-white z-40 border-y border-white/10">
+      <nav className="sticky top-20 bg-base text-white z-40 border-y border-white/10">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex items-center gap-1">
             <a href="#opportunity" className="px-4 sm:px-5 md:px-6 py-3 sm:py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">
@@ -111,10 +112,10 @@ export default function CaseStudyBankProcess() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Opportunity
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Managing regulatory complexity in a rapidly evolving market
             </h2>
           </motion.div>
@@ -141,7 +142,7 @@ export default function CaseStudyBankProcess() {
       </section>
 
       {/* DZ10 Quote Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -169,10 +170,10 @@ export default function CaseStudyBankProcess() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Building an intelligent compliance automation platform
             </h2>
           </motion.div>
@@ -185,18 +186,18 @@ export default function CaseStudyBankProcess() {
             <p className="text-xl leading-relaxed text-charcoal/80 mb-6">
               We worked with the bank's compliance, technology, and operations teams to design an end-to-end automation platform that transformed KYC processing and regulatory reporting while maintaining rigorous controls and audit trails.
             </p>
-
-            <h3 className="text-2xl text-charcoal mt-12 mb-6">Intelligent document processing</h3>
+            
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Intelligent document processing</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               The platform uses optical character recognition and machine learning to automatically extract data from identity documents, business registration certificates, and financial statements. The system verifies document authenticity, cross-references information against OFAC, state databases, and credit bureaus, and flags inconsistencies for human review. What previously took compliance officers hours now happens in minutes, with higher accuracy than manual processing.
             </p>
 
-            <h3 className="text-2xl text-charcoal mt-12 mb-6">Automated risk assessment</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Automated risk assessment</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               We implemented a risk scoring engine that analyzes customer profiles against regulatory requirements and the bank's risk appetite. The system automatically assigns risk ratings, determines appropriate due diligence levels, and routes high-risk cases to senior compliance officers. Machine learning models continuously improve risk detection by learning from historical cases and regulatory guidance updates.
             </p>
 
-            <h3 className="text-2xl text-charcoal mt-12 mb-6">Regulatory reporting automation</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Regulatory reporting automation</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
               The platform automatically generates regulatory reports by extracting data from core banking systems, applying business rules, and performing validation checks. Reports are generated on schedule with complete audit trails showing data lineage and transformation logic. The system alerts compliance teams to potential issues before submission deadlines, eliminating last-minute scrambles and reducing regulatory risk.
             </p>
@@ -205,7 +206,7 @@ export default function CaseStudyBankProcess() {
       </section>
 
       {/* DZ10 Quote Section 2 */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -233,10 +234,10 @@ export default function CaseStudyBankProcess() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
               Achieving operational excellence and regulatory confidence
             </h2>
           </motion.div>
@@ -250,22 +251,22 @@ export default function CaseStudyBankProcess() {
               Within one year of deployment, the compliance automation platform delivered transformative results across efficiency, accuracy, and risk management.
             </p>
 
-            <h3 className="text-2xl text-charcoal mt-12 mb-6">Operational efficiency</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Operational efficiency</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               KYC processing time dropped from an average of 12 days to 2 days for retail customers and from 14 days to 3 days for corporate accounts. The compliance team's capacity increased by 180% without adding headcount, enabling the bank to support customer acquisition targets. Over 5,400 hours of manual work were eliminated annually, allowing compliance officers to focus on complex investigations and strategic risk management.
             </p>
 
-            <h3 className="text-2xl text-charcoal mt-12 mb-6">Accuracy and risk management</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Accuracy and risk management</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Regulatory reporting accuracy improved to 99.8%, eliminating the errors that had previously resulted in fines and regulatory scrutiny. The bank has had zero reporting violations since platform deployment. Risk detection improved significantly, with the system identifying 32% more high-risk customers than the previous manual process, enabling proactive risk mitigation.
             </p>
 
-            <h3 className="text-2xl text-charcoal mt-12 mb-6">Customer experience</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Customer experience</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Faster KYC processing translated directly to improved customer satisfaction. Corporate clients specifically cited onboarding speed as a differentiator in choosing the bank over competitors. The bank's Net Promoter Score among business customers increased by 18 points, with onboarding experience cited as a key driver.
             </p>
 
-            <h3 className="text-2xl text-charcoal mt-12 mb-6">Strategic positioning</h3>
+            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Strategic positioning</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
               The platform positioned the bank as a compliance leader in the regional banking market. The OCC has cited the bank's systems as best practice examples during examinations, and the bank now advises American Bankers Association working groups on compliance automation standards. The $135,000 investment in the platform generated annual cost savings of $385,000 through reduced manual work and eliminated fines, achieving a 265% ROI over 24 months. The Chief Compliance Officer estimates that the platform has created a sustainable competitive advantage worth significantly more than the direct cost savings.
             </p>
@@ -274,7 +275,7 @@ export default function CaseStudyBankProcess() {
       </section>
 
       {/* DZ10 Contact Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -283,10 +284,10 @@ export default function CaseStudyBankProcess() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Get In Touch
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white">Our experts</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Our experts</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl">
@@ -310,12 +311,12 @@ export default function CaseStudyBankProcess() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white text-charcoal p-4 sm:p-6 md:p-8 rounded-lg sm:"
+                className="bg-white text-charcoal p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl"
               >
                 <div className="flex items-start gap-4">
-                  <img className="w-20 h-20 object-cover flex-shrink-0" src={expert.image} alt={expert.name} />
+                  <img className="w-20 h-20 rounded-full object-cover flex-shrink-0" src={expert.image} alt={expert.name} />
                   <div>
-                    <h3 className="text-2xl mb-2">{expert.name}</h3>
+                    <h3 className="text-2xl font-bold mb-2">{expert.name}</h3>
                     <p className="text-sm text-primary mb-4">{expert.location}</p>
                     <p className="text-base leading-relaxed text-charcoal/70">
                       {expert.description}
@@ -338,10 +339,10 @@ export default function CaseStudyBankProcess() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-charcoal">More success stories</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -379,23 +380,23 @@ export default function CaseStudyBankProcess() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={item.link} className="group block h-full">
-                  <div className="aspect-[4/3] overflow-hidden mb-6 rounded-lg sm: relative">
+                  <div className="aspect-[4/3] overflow-hidden mb-6 rounded-lg sm:rounded-xl relative">
                     <img
                       src={item.image}
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute top-4 left-4 bg-white/90 px-3 py-1">
-                      <span className="text-xs text-primary">{item.metric}</span>
+                    <div className="absolute top-4 left-4 bg-base/90 px-3 py-1 rounded-full">
+                      <span className="text-xs font-bold text-primary">{item.metric}</span>
                       <span className="text-xs text-white/70 ml-1">{item.metricLabel}</span>
                     </div>
                   </div>
-                  <span className="text-xs text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl text-charcoal mt-2 group-hover:text-primary transition-colors">
+                  <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
+                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
-                    Read case study 
+                    Read case study <ArrowRight className="w-3 h-3" />
                   </span>
                 </Link>
               </motion.div>
@@ -404,8 +405,8 @@ export default function CaseStudyBankProcess() {
 
           <div className="text-center mt-16">
             <Link href="/cases">
-              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-white/10 px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all">
-
+              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/10 px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all">
+                <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
                 Back to all case studies
               </Button>
             </Link>

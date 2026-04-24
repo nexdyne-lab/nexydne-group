@@ -1,5 +1,6 @@
-import { Link } from "wouter";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { ArrowRight, ArrowLeft, TrendingUp, Target, Heart, Users, BarChart3, CheckCircle2, Download } from 'lucide-react';
 import { CaseStudyPDFButton } from "@/components/CaseStudyPDFButton";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -11,30 +12,30 @@ import { SEO } from "@/components/SEO";
 
 export default function HealthcareTransformation() {
   return (
-    <div className="min-h-screen bg-white text-white selection:bg-primary selection:text-white">
-      <SEO
-        title="Healthcare Transformation | Case Study | NexDyne Technologies"
+    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
+      <SEO 
+        title="Healthcare Transformation | Case Study | NexDyne Technologies" 
         description="How we helped a healthcare organization transform operations, improving patient outcomes while reducing costs by 22%."
         canonical="/case-studies/healthcare-transformation"
       />
       <Navigation />
-
+      
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-30"></div>
-        <div className="absolute inset-0"></div>
-
+        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
+        
         <div className="container relative z-10 px-4 md:px-12">
           <Breadcrumbs />
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-4xl">
-            <span className="text-xs uppercase tracking-[0.2em] text-primary mb-6 block">Case Study · Healthcare</span>
-            <h1 className="text-5xl md:text-7xl tracking-tight leading-[1.05] mb-4">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">Case Study · Healthcare</span>
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-4">
               <span className="text-primary">22%</span> cost reduction while improving outcomes
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mb-8">
               How we helped a healthcare organization transform operations to improve patient outcomes, enhance staff satisfaction, and reduce costs through strategic redesign.
             </p>
-
+            
             {/* PDF Download Button */}
             <CaseStudyPDFButton
               title="22% cost reduction while improving outcomes"
@@ -54,7 +55,7 @@ export default function HealthcareTransformation() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-white border-t border-white/10">
+      <section className="py-16 bg-base border-t border-white/10">
         <div className="container px-4 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             {[
@@ -64,7 +65,7 @@ export default function HealthcareTransformation() {
               { metric: "18pts", label: "Staff engagement increase" }
             ].map((stat, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }} className="border-l-2 border-primary/50 pl-8">
-                <div className="text-5xl text-primary mb-2">{stat.metric}</div>
+                <div className="text-5xl font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-base text-white/70">{stat.label}</div>
               </motion.div>
             ))}
@@ -73,7 +74,7 @@ export default function HealthcareTransformation() {
       </section>
 
       {/* Sticky Navigation */}
-      <nav className="sticky top-20 bg-white text-white z-40 border-y border-white/10">
+      <nav className="sticky top-20 bg-base text-white z-40 border-y border-white/10">
         <div className="container px-4 md:px-12">
           <div className="flex items-center gap-1">
             <a href="#challenge" className="px-6 py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">THE CHALLENGE</a>
@@ -87,7 +88,7 @@ export default function HealthcareTransformation() {
       <section className="py-16 bg-white text-charcoal">
         <div className="container px-4 md:px-12 max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <h2 className="text-3xl text-charcoal mb-6">Company Overview</h2>
+            <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
                 Our client is a regional healthcare system with three hospitals and 25 outpatient facilities serving a population of 1.2 million. With $850M in annual revenue and 6,500 employees, they are a major employer and healthcare provider in their region.
@@ -96,7 +97,7 @@ export default function HealthcareTransformation() {
                 Facing pressure from value-based care models and increasing competition, the organization needed to transform operations to improve quality while reducing costs—a challenge that required fundamental changes to how care was delivered.
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-white/5">
+            <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-base/5 rounded-xl">
               <div><div className="text-sm font-semibold text-primary mb-2">Industry</div><div className="text-charcoal font-medium">Healthcare System</div></div>
               <div><div className="text-sm font-semibold text-primary mb-2">Employees</div><div className="text-charcoal font-medium">6,500</div></div>
               <div><div className="text-sm font-semibold text-primary mb-2">Annual Revenue</div><div className="text-charcoal font-medium">$850M</div></div>
@@ -109,8 +110,8 @@ export default function HealthcareTransformation() {
       <section id="challenge" className="py-24 md:py-32 bg-primary">
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <span className="text-xs uppercase tracking-[0.2em] text-white/80 mb-6 block">The Challenge</span>
-            <h2 className="text-4xl md:text-5xl text-white max-w-4xl leading-tight">Transforming care delivery in a changing landscape</h2>
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">The Challenge</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">Transforming care delivery in a changing landscape</h2>
           </motion.div>
         </div>
       </section>
@@ -119,15 +120,15 @@ export default function HealthcareTransformation() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl text-charcoal mb-4">Shift to value-based care</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Shift to value-based care</h3>
               <p className="text-charcoal/70 leading-relaxed">Reimbursement was increasingly tied to outcomes rather than volume. The organization needed to redesign care delivery to improve quality metrics while managing costs—a fundamental shift from traditional fee-for-service models.</p>
             </div>
             <div>
-              <h3 className="text-xl text-charcoal mb-4">Fragmented care delivery</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Fragmented care delivery</h3>
               <p className="text-charcoal/70 leading-relaxed">Care was delivered in silos with limited coordination between hospitals, outpatient facilities, and community providers. Patients experienced gaps in care, redundant testing, and poor transitions between settings.</p>
             </div>
             <div>
-              <h3 className="text-xl text-charcoal mb-4">Staff burnout and turnover</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4">Staff burnout and turnover</h3>
               <p className="text-charcoal/70 leading-relaxed">Clinical staff were overwhelmed with administrative burden and inefficient workflows. Turnover was high, particularly among nurses, creating quality and cost challenges.</p>
             </div>
           </div>
@@ -135,7 +136,7 @@ export default function HealthcareTransformation() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-24 md:py-32 bg-base">
         <div className="container px-4 md:px-12 max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
@@ -150,8 +151,8 @@ export default function HealthcareTransformation() {
       <section id="solution" className="py-24 md:py-32 bg-primary">
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <span className="text-xs uppercase tracking-[0.2em] text-white/80 mb-6 block">The Solution</span>
-            <h2 className="text-4xl md:text-5xl text-white max-w-4xl leading-tight">Comprehensive care delivery transformation</h2>
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">The Solution</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">Comprehensive care delivery transformation</h2>
           </motion.div>
         </div>
       </section>
@@ -161,38 +162,38 @@ export default function HealthcareTransformation() {
           <p className="text-xl text-charcoal/80 leading-relaxed mb-12">We partnered with the organization on a multi-year transformation that redesigned care delivery, improved operations, and enhanced the employee experience.</p>
           <div className="space-y-12">
             <div className="flex gap-8">
-              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white flex items-center justify-center text-lg">1</div></div>
+              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">1</div></div>
               <div>
-                <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">Care model redesign</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Heart className="w-6 h-6 text-primary" />Care model redesign</h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">We redesigned care delivery around patient needs, creating integrated care teams and standardized pathways for high-volume conditions.</p>
                 <ul className="space-y-2 text-charcoal/70">
-                  <li className="flex items-start gap-2"><span>Integrated care team model development</span></li>
-                  <li className="flex items-start gap-2"><span>Clinical pathway standardization</span></li>
-                  <li className="flex items-start gap-2"><span>Care coordination infrastructure</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Integrated care team model development</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Clinical pathway standardization</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Care coordination infrastructure</span></li>
                 </ul>
               </div>
             </div>
             <div className="flex gap-8">
-              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white flex items-center justify-center text-lg">2</div></div>
+              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">2</div></div>
               <div>
-                <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">Operational excellence</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><BarChart3 className="w-6 h-6 text-primary" />Operational excellence</h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">We implemented lean principles across the organization to eliminate waste, reduce variation, and improve efficiency.</p>
                 <ul className="space-y-2 text-charcoal/70">
-                  <li className="flex items-start gap-2"><span>Lean transformation and waste elimination</span></li>
-                  <li className="flex items-start gap-2"><span>Workflow redesign and automation</span></li>
-                  <li className="flex items-start gap-2"><span>Performance management systems</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Lean transformation and waste elimination</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Workflow redesign and automation</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Performance management systems</span></li>
                 </ul>
               </div>
             </div>
             <div className="flex gap-8">
-              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white flex items-center justify-center text-lg">3</div></div>
+              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">3</div></div>
               <div>
-                <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">Workforce transformation</h3>
+                <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Users className="w-6 h-6 text-primary" />Workforce transformation</h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">We redesigned roles and workflows to reduce administrative burden and improve the employee experience.</p>
                 <ul className="space-y-2 text-charcoal/70">
-                  <li className="flex items-start gap-2"><span>Role redesign and task optimization</span></li>
-                  <li className="flex items-start gap-2"><span>Administrative burden reduction</span></li>
-                  <li className="flex items-start gap-2"><span>Leadership development and change management</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Role redesign and task optimization</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Administrative burden reduction</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" /><span>Leadership development and change management</span></li>
                 </ul>
               </div>
             </div>
@@ -204,8 +205,8 @@ export default function HealthcareTransformation() {
       <section id="impact" className="py-24 md:py-32 bg-primary">
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <span className="text-xs uppercase tracking-[0.2em] text-white/80 mb-6 block">The Impact</span>
-            <h2 className="text-4xl md:text-5xl text-white max-w-4xl leading-tight">Results & Impact</h2>
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">The Impact</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">Results & Impact</h2>
           </motion.div>
         </div>
       </section>
@@ -214,29 +215,29 @@ export default function HealthcareTransformation() {
         <div className="container px-4 md:px-12 max-w-4xl">
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">Significant cost reduction</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><TrendingUp className="w-6 h-6 text-primary" />Significant cost reduction</h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">Operating costs decreased by 22% through improved efficiency, reduced waste, and optimized care delivery—generating $187M in annual savings.</p>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="p-6 bg-white/5"><div className="text-3xl text-charcoal mb-2">22%</div><div className="text-sm text-charcoal/60">Cost reduction achieved</div></div>
-                <div className="p-6 bg-white/5"><div className="text-3xl text-charcoal mb-2">$187M</div><div className="text-sm text-charcoal/60">Annual savings</div></div>
+                <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">22%</div><div className="text-sm text-charcoal/60">Cost reduction achieved</div></div>
+                <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$187M</div><div className="text-sm text-charcoal/60">Annual savings</div></div>
               </div>
             </div>
             <div>
-              <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">Improved patient experience</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Heart className="w-6 h-6 text-primary" />Improved patient experience</h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">Patient satisfaction improved by 35% as care became more coordinated, wait times decreased, and outcomes improved.</p>
-              <div className="p-6 bg-white/5"><div className="text-3xl text-charcoal mb-2">35%</div><div className="text-sm text-charcoal/60">Improvement in patient satisfaction</div></div>
+              <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">35%</div><div className="text-sm text-charcoal/60">Improvement in patient satisfaction</div></div>
             </div>
             <div>
-              <h3 className="text-xl text-charcoal mb-4 flex items-center gap-3">Enhanced staff engagement</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Users className="w-6 h-6 text-primary" />Enhanced staff engagement</h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">Staff engagement scores increased 18 points as administrative burden decreased and clinicians could focus on patient care.</p>
-              <div className="p-6 bg-white/5"><div className="text-3xl text-charcoal mb-2">+18pts</div><div className="text-sm text-charcoal/60">Staff engagement increase</div></div>
+              <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">+18pts</div><div className="text-sm text-charcoal/60">Staff engagement increase</div></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Quote Section 2 */}
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-24 md:py-32 bg-base">
         <div className="container px-4 md:px-12 max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
@@ -255,11 +256,11 @@ export default function HealthcareTransformation() {
       </section>
 
       {/* Related Cases */}
-      <section className="py-24 md:py-32 bg-white">
+      <section className="py-24 md:py-32 bg-base">
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-16">
-            <span className="text-xs uppercase tracking-[0.2em] text-white/60 mb-6 block">Related Case Studies</span>
-            <h2 className="text-4xl md:text-5xl text-white">More success stories</h2>
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">Related Case Studies</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">More success stories</h2>
           </motion.div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
             {[
@@ -267,17 +268,17 @@ export default function HealthcareTransformation() {
               { title: "Distribution restructuring", industry: "Distribution", description: "How we helped improve operating margins by 40%", link: "/case-studies/distribution-restructuring" }
             ].map((item, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>
-                <Link href={item.link} className="group block h-full p-8 bg-white/5 hover:bg-white/10 transition-colors">
-                  <span className="text-xs text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl text-white mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
+                <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
+                  <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
                   <p className="text-white/60 mt-2">{item.description}</p>
-                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">Read case study </span>
+                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">Read case study <ArrowRight className="w-3 h-3" /></span>
                 </Link>
               </motion.div>
             ))}
           </div>
           <div className="text-center mt-16">
-            <Link href="/case-studies"><Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">Back to all case studies</Button></Link>
+            <Link href="/case-studies"><Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent"><ArrowLeft className="w-4 h-4 mr-2" />Back to all case studies</Button></Link>
           </div>
         </div>
       </section>
