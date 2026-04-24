@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { CaseStudyPDFButton } from "@/components/CaseStudyPDFButton";
 import { Button } from "@/components/ui/button";
 import CaseStudyContactForm from "@/components/CaseStudyContactForm";

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { CaseStudyPDFButton } from "@/components/CaseStudyPDFButton";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
