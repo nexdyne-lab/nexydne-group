@@ -1,99 +1,67 @@
 import React, { useEffect } from "react";
-import { useLocation, Link } from "wouter";
+import { Link } from "wouter";
 import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { ArrowRight } from "lucide-react";
+import SolutionHero from "@/components/SolutionHero";
 import BainHoverCard from "@/components/BainHoverCard";
 import { SEO } from "@/components/SEO";
-import { Button } from "@/components/ui/button";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function ProcessDiscoveryMining() {
-  const [location, setLocation] = useLocation();
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Related capabilities data
   const relatedCapabilities = [
     {
       title: "Intelligent Automation Design",
-      description: "Design and implement robust automation solutions based on data-driven process insights.",
-      link: "/solutions/process-optimization/intelligent-automation-design"
+      description:
+        "Design and implement robust automation solutions based on data-driven process insights.",
+      link: "/solutions/process-optimization/intelligent-automation-design",
     },
     {
       title: "Workflow Optimization",
-      description: "Redesign and streamline workflows to eliminate bottlenecks and improve operational efficiency.",
-      link: "/solutions/process-optimization/workflow-optimization"
+      description:
+        "Redesign and streamline workflows to eliminate bottlenecks and improve operational efficiency.",
+      link: "/solutions/process-optimization/workflow-optimization",
     },
     {
       title: "AI-Powered Decision Support",
-      description: "Leverage AI to provide real-time insights and recommendations for better decision-making.",
-      link: "/solutions/process-optimization/ai-powered-decision-support"
-    }
+      description:
+        "Leverage AI to provide real-time insights and recommendations for better decision-making.",
+      link: "/solutions/process-optimization/ai-powered-decision-support",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Process Discovery & Mining" 
+      <SEO
+        title="Process Discovery & Mining"
         description="Uncover hidden inefficiencies and bottlenecks through advanced process mining, creating a data-driven foundation for transformation."
         canonical="/solutions/process-optimization/process-discovery-mining"
       />
       <Navigation />
 
-      {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
-        <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Breadcrumbs variant="light" />
-            
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.05] mb-3 sm:mb-4">
-              Process Discovery & Mining
-            </h1>
-            
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl mb-6 sm:mb-10">
-              Uncover hidden inefficiencies and bottlenecks through advanced process mining, creating a data-driven foundation for transformation.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href="/contact">
-                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out">
-                  Request a Process Analysis
-                </Button>
-              </Link>
-              <Link href="/cases">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out bg-transparent">
-                  Explore Our Impact
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/ahRLBXyxjnIStHiI.jpg" 
-              alt="Process Discovery & Mining Visualization" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
-        </div>
-      </section>
+      <SolutionHero
+        eyebrow="INTELLIGENT PROCESS OPTIMIZATION · PROCESS DISCOVERY & MINING"
+        title="Process Discovery & Mining"
+        subtitle="Uncover hidden inefficiencies and bottlenecks through advanced process mining, creating a data-driven foundation for transformation."
+        backgroundImage="https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/ahRLBXyxjnIStHiI.jpg"
+        primaryCta={{ label: "Request a Process Analysis", href: "/contact" }}
+        secondaryCta={{ label: "Explore Our Impact", href: "/cases" }}
+      />
 
-      {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* Breadcrumbs */}
+      <div className="bg-white border-b border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16 py-5">
+          <Breadcrumbs variant="dark" />
+        </div>
+      </div>
+
+      {/* Experience & Impact */}
+      <section className="py-20 md:py-24 bg-white border-b border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -101,14 +69,25 @@ export default function ProcessDiscoveryMining() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl eb-garamond font-bold text-charcoal">Our Experience & Impact</h2>
+            <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 mb-4 block">
+              Our Experience &amp; Impact
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-charcoal max-w-[32ch]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The numbers behind our process mining work.
+            </h2>
           </motion.div>
-          
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
             {[
               { metric: "40%", label: "Increase in process efficiency" },
-              { metric: "95%", label: "Accuracy in identifying process deviations" },
-              { metric: "6 months", label: "Average time to ROI" }
+              {
+                metric: "95%",
+                label: "Accuracy in identifying process deviations",
+              },
+              { metric: "6 months", label: "Average time to ROI" },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -117,87 +96,127 @@ export default function ProcessDiscoveryMining() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-charcoal/60">{item.label}</p>
+                <div
+                  className="text-5xl md:text-6xl text-charcoal mb-3"
+                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                >
+                  {item.metric}
+                </div>
+                <p className="text-base text-charcoal/70 leading-[1.65]">
+                  {item.label}
+                </p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 3: Thought Leadership Paragraphs (F100) */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-4xl mx-auto space-y-8">
+      {/* Thought Leadership */}
+      <section className="py-20 md:py-28 bg-white">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-[72ch]">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
+              className="text-2xl md:text-3xl text-charcoal leading-[1.3] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.015em" }}
             >
-              Your business processes are the engines of value creation, but are they running at peak performance? Many organizations operate with an incomplete understanding of their own workflows, relying on anecdotal evidence and outdated process maps. Process discovery and mining offers a data-driven alternative, transforming digital footprints from your existing IT systems into a dynamic, objective view of how work actually gets done.
+              Your business processes are the engines of value creation, but
+              are they running at peak performance? Many organizations operate
+              with an incomplete understanding of their own workflows&mdash;
+              relying on anecdotal evidence and outdated process maps.
             </motion.p>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
+              className="text-base md:text-lg text-charcoal/80 leading-[1.65] mb-6"
             >
-              By analyzing event logs from systems like your ERP, CRM, and custom applications, we create a living model of your end-to-end processes. This reveals not just the "happy path," but every variation, bottleneck, and compliance deviation. It’s the difference between looking at a static blueprint and watching a live MRI of your organization in action. This clarity is the essential first step toward meaningful, sustainable process improvement.
+              Process discovery and mining offers a data-driven alternative,
+              transforming digital footprints from your existing IT systems
+              into a dynamic, objective view of how work actually gets done. By
+              analyzing event logs from systems like your ERP, CRM, and custom
+              applications, we create a living model of your end-to-end
+              processes.
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-base md:text-lg text-charcoal/80 leading-[1.65]"
+            >
+              This reveals not just the &ldquo;happy path,&rdquo; but every
+              variation, bottleneck, and compliance deviation. It&rsquo;s the
+              difference between looking at a static blueprint and watching a
+              live MRI of your organization in action&mdash;the essential first
+              step toward meaningful, sustainable process improvement.
             </motion.p>
           </div>
         </div>
       </section>
 
-      {/* How We Can Help Section */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* How We Can Help */}
+      <section className="py-20 md:py-28 bg-off-white border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-16"
+            className="mb-14 max-w-[60ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
+            <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 mb-4 block">
               How We Can Help
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-charcoal"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
               Our Process Mining Capabilities
             </h2>
-            <p className="text-xl text-charcoal/60 max-w-2xl">
-              From data extraction to actionable insights, we provide a comprehensive suite of services.
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] mt-6">
+              From data extraction to actionable insights, we provide a
+              comprehensive suite of services.
             </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 title: "Automated Process Discovery",
-                description: "Utilize advanced algorithms to automatically construct detailed process models from your raw system data, revealing the true state of your operations."
+                description:
+                  "Utilize advanced algorithms to automatically construct detailed process models from your raw system data, revealing the true state of your operations.",
               },
               {
                 title: "Conformance Checking",
-                description: "Compare your actual process execution against ideal-state models to pinpoint compliance issues, policy violations, and costly deviations."
+                description:
+                  "Compare your actual process execution against ideal-state models to pinpoint compliance issues, policy violations, and costly deviations.",
               },
               {
                 title: "Root Cause Analysis",
-                description: "Drill down into process inefficiencies to identify the underlying causes of bottlenecks, delays, and rework using data-driven techniques."
+                description:
+                  "Drill down into process inefficiencies to identify the underlying causes of bottlenecks, delays, and rework using data-driven techniques.",
               },
               {
                 title: "Performance & KPI Monitoring",
-                description: "Establish real-time dashboards to track key process indicators, monitor performance against benchmarks, and detect emerging issues proactively."
+                description:
+                  "Establish real-time dashboards to track key process indicators, monitor performance against benchmarks, and detect emerging issues proactively.",
               },
               {
                 title: "Predictive Process Analytics",
-                description: "Leverage machine learning to forecast future process outcomes, predict potential bottlenecks, and anticipate SLA breaches before they occur."
+                description:
+                  "Leverage machine learning to forecast future process outcomes, predict potential bottlenecks, and anticipate SLA breaches before they occur.",
               },
               {
                 title: "Digital Twin of an Organization (DTO)",
-                description: "Create a dynamic virtual model of your business processes to simulate the impact of changes, test optimization scenarios, and drive continuous improvement."
-              }
+                description:
+                  "Create a dynamic virtual model of your business processes to simulate the impact of changes, test optimization scenarios, and drive continuous improvement.",
+              },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -206,45 +225,61 @@ export default function ProcessDiscoveryMining() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
               >
-                <BainHoverCard title={item.title} description={item.description} />
+                <BainHoverCard
+                  title={item.title}
+                  description={item.description}
+                />
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 5: Our Approach */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* Our Approach */}
+      <section className="py-20 md:py-28 bg-charcoal text-white">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="mb-16 max-w-[60ch]"
           >
-            <h2 className="text-3xl sm:text-4xl eb-garamond font-bold mb-4">
-              Our Approach to <span className="text-secondary">Process Transformation</span>
+            <span className="text-[11px] uppercase tracking-[0.2em] text-white/60 mb-4 block">
+              Our Approach
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-white"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              From data, to insight, to action.
             </h2>
-            <p className="text-lg text-white/60 max-w-3xl mx-auto">
-              We follow a structured methodology to ensure that process mining delivers tangible business value, moving from data to insight to action.
+            <p className="text-base md:text-lg text-white/70 leading-[1.65] mt-6">
+              We follow a structured methodology to ensure that process mining
+              delivers tangible business value.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8 sm:gap-12">
+          <div className="grid md:grid-cols-3 gap-10 md:gap-12">
             {[
               {
-                title: "1. Data Scoping & Extraction",
-                description: "We work with your teams to identify the most critical processes for analysis and establish a secure, robust pipeline for extracting event data from source systems."
+                step: "01",
+                title: "Data Scoping & Extraction",
+                description:
+                  "We work with your teams to identify the most critical processes for analysis and establish a secure, robust pipeline for extracting event data from source systems.",
               },
               {
-                title: "2. Analysis & Insight Generation",
-                description: "Our experts apply advanced mining algorithms to model your processes, quantify inefficiencies, and identify the highest-impact opportunities for improvement."
+                step: "02",
+                title: "Analysis & Insight Generation",
+                description:
+                  "Our experts apply advanced mining algorithms to model your processes, quantify inefficiencies, and identify the highest-impact opportunities for improvement.",
               },
               {
-                title: "3. Action & Value Realization",
-                description: "We translate insights into a concrete action plan, whether it involves automation, workflow redesign, or training, and help you implement and measure the results."
-              }
+                step: "03",
+                title: "Action & Value Realization",
+                description:
+                  "We translate insights into a concrete action plan&mdash;automation, workflow redesign, or training&mdash;and help you implement and measure the results.",
+              },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -253,80 +288,115 @@ export default function ProcessDiscoveryMining() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <h3 className="text-xl font-bold text-white mb-4">{item.title}</h3>
-                <p className="text-white/60">{item.description}</p>
+                <span className="text-[11px] uppercase tracking-[0.2em] text-primary mb-4 block">
+                  {item.step}
+                </span>
+                <h3
+                  className="text-xl text-white mb-4 leading-[1.25]"
+                  style={{ fontWeight: 500, letterSpacing: "-0.01em" }}
+                >
+                  {item.title}
+                </h3>
+                <p className="text-white/70 text-base leading-[1.65]">
+                  {item.description}
+                </p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 6: Case Studies */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.h2 
+      {/* Case Studies */}
+      <section className="py-20 md:py-28 bg-charcoal text-white border-t border-white/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-4xl eb-garamond font-bold text-center mb-12"
+            className="mb-14 max-w-[60ch]"
           >
-            Success Stories in Process Mining
-          </motion.h2>
-          <div className="grid md:grid-cols-2 gap-8 sm:gap-12">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="group relative"
+            <span className="text-[11px] uppercase tracking-[0.2em] text-white/60 mb-4 block">
+              Client Results
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-white"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              <Link href="/cases/manufacturing-optimization">
-                <div className="relative overflow-hidden rounded-lg">
-                  <img src="https://images.unsplash.com/photo-placeholder" alt="Manufacturing Process Optimization" className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                </div>
-                <div className="absolute bottom-0 left-0 p-6 sm:p-8">
-                  <span className="text-xs font-bold uppercase tracking-widest text-white/80">Manufacturing</span>
-                  <h3 className="text-2xl eb-garamond font-bold text-white mt-2">Reducing Production Cycle Time by 22%</h3>
-                </div>
-              </Link>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="group relative"
-            >
-              <Link href="/cases/financial-services-compliance">
-                <div className="relative overflow-hidden rounded-lg">
-                  <img src="https://images.unsplash.com/photo-placeholder" alt="Financial Services Compliance" className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                </div>
-                <div className="absolute bottom-0 left-0 p-6 sm:p-8">
-                  <span className="text-xs font-bold uppercase tracking-widest text-white/80">Financial Services</span>
-                  <h3 className="text-2xl eb-garamond font-bold text-white mt-2">Eliminating 98% of Compliance Deviations</h3>
-                </div>
-              </Link>
-            </motion.div>
+              Success stories in process mining.
+            </h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {[
+              {
+                category: "Manufacturing",
+                title: "Reducing Production Cycle Time by 22%",
+                image: "https://images.unsplash.com/photo-placeholder",
+                link: "/cases/manufacturing-optimization",
+              },
+              {
+                category: "Financial Services",
+                title: "Eliminating 98% of Compliance Deviations",
+                image: "https://images.unsplash.com/photo-placeholder",
+                link: "/cases/financial-services-compliance",
+              },
+            ].map((cs, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={cs.link} className="group block">
+                  <div className="relative overflow-hidden aspect-[4/3] border border-white/10">
+                    <img
+                      src={cs.image}
+                      alt={cs.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="pt-6">
+                    <span className="text-[11px] uppercase tracking-[0.2em] text-white/60 mb-3 block">
+                      {cs.category}
+                    </span>
+                    <h3
+                      className="text-xl md:text-2xl text-white leading-[1.2] group-hover:text-primary transition-colors"
+                      style={{ fontWeight: 500, letterSpacing: "-0.01em" }}
+                    >
+                      {cs.title}
+                    </h3>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Section 7: Related Capabilities */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-subtle">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.h2 
+      {/* Related Capabilities */}
+      <section className="py-20 md:py-28 bg-off-white">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl eb-garamond font-bold text-center mb-12 text-charcoal"
+            className="mb-14 max-w-[60ch]"
           >
-            Continue Your Transformation Journey
-          </motion.h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 mb-4 block">
+              Related Capabilities
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-charcoal"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Continue your transformation journey.
+            </h2>
+          </motion.div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {relatedCapabilities.map((capability, index) => (
               <motion.div
                 key={index}
@@ -335,46 +405,55 @@ export default function ProcessDiscoveryMining() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <BainHoverCard title={capability.title} description={capability.description} link={capability.link} />
+                <BainHoverCard
+                  title={capability.title}
+                  description={capability.description}
+                  link={capability.link}
+                />
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 8: CTA Section */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-primary text-white">
-        <div className="container px-4 sm:px-6 md:px-12 text-center">
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-4xl eb-garamond font-bold mb-6"
-          >
-            Ready to Uncover Your Hidden Factory?
-          </motion.h2>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto mb-8"
-          >
-            Let's talk about how Process Discovery and Mining can illuminate the path to operational excellence for your business. Schedule a complimentary consultation with our experts today.
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <Link href="/contact">
-              <Button className="bg-white hover:bg-white/90 text-primary px-10 py-7 text-lg font-semibold transition-colors duration-200 ease-in-out">
-                Contact Us
-              </Button>
-            </Link>
-          </motion.div>
+      {/* CTA */}
+      <section className="py-20 md:py-28 bg-charcoal text-white">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-[60ch]">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-white mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Ready to uncover your hidden factory?
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-base md:text-lg text-white/80 leading-[1.65] mb-10 max-w-[60ch]"
+            >
+              Let&rsquo;s talk about how Process Discovery and Mining can
+              illuminate the path to operational excellence for your business.
+              Schedule a complimentary consultation with our experts today.
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <Link href="/contact">
+                <span className="inline-block px-6 py-3 bg-primary text-primary-foreground text-[13px] uppercase tracking-[0.1em] font-semibold hover:bg-primary-hover transition-colors cursor-pointer">
+                  Contact Us
+                </span>
+              </Link>
+            </motion.div>
+          </div>
         </div>
       </section>
 
