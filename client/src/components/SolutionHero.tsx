@@ -37,14 +37,14 @@ export default function SolutionHero({
 
       {/* Content — left-aligned, centered vertically */}
       <div className="relative z-10 h-full flex flex-col justify-center px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24">
-        <div className="max-w-[900px]">
+        <div className="max-w-[1000px]">
           {eyebrow && (
             <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
               {eyebrow}
             </span>
           )}
           <h1
-            className="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"
+            className="text-5xl md:text-6xl lg:text-7xl text-white leading-[1.05] mb-6"
             style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
           >
             {title}
