@@ -68,7 +68,6 @@ import CIJourneyAnalyticsOptimization from "./pages/solutions/customer-intellige
 import CIPersonalizationStrategy from "./pages/solutions/customer-intelligence/PersonalizationStrategy";
 import CIVoiceOfCustomer from "./pages/solutions/customer-intelligence/VoiceOfCustomer";
 import CIAIPoweredRecommendations from "./pages/solutions/customer-intelligence/AIPoweredRecommendations";
-import ScalableEnterpriseTransformation from "./pages/ScalableEnterpriseTransformation";
 
 // Enterprise Transformation Sub-Pages (new design)
 import SETCloudMigrationArchitecture from "./pages/solutions/enterprise-transformation/CloudMigrationArchitecture";
@@ -817,7 +816,7 @@ function Router() {
         <Route path="/solutions/customer-intelligence/personalization-strategy" component={CIPersonalizationStrategy} />
         <Route path="/solutions/customer-intelligence/voice-of-customer" component={CIVoiceOfCustomer} />
         <Route path="/solutions/customer-intelligence/ai-powered-recommendations" component={CIAIPoweredRecommendations} />
-        <Route path="/solutions/scalable-enterprise-transformation" component={ScalableEnterpriseTransformation} />
+        <Route path="/solutions/scalable-enterprise-transformation" component={EnterpriseTransformation} />
         <Route path="/solutions/enterprise-transformation/cloud-migration-architecture" component={SETCloudMigrationArchitecture} />
         <Route path="/solutions/enterprise-transformation/infrastructure-modernization" component={SETInfrastructureModernization} />
         <Route path="/solutions/enterprise-transformation/platform-engineering" component={SETPlatformEngineering} />
