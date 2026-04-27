@@ -1,346 +1,590 @@
 import { motion } from "framer-motion";
-import { Link } from 'wouter';
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
-import { ArrowRight, MessageSquare, Smartphone, Users, Zap, ChevronRight } from 'lucide-react';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import { RelatedContent } from "@/components/RelatedContent";
-import { dataRelatedItems } from "@/data/related-content";
+import { Link } from "wouter";
+import { useState } from "react";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import SolutionHero from "@/components/SolutionHero";
+import { SEO } from "@/components/SEO";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function DigitalEngagement() {
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
+
+  const services = [
+    {
+      title: "Marketing Automation",
+      description:
+        "Implement and optimize Marketo, HubSpot, Braze, or Iterable. We design programs that move customers down the funnel without burning the list.",
+      link: "/solutions/digital-engagement/marketing-automation",
+    },
+    {
+      title: "Lifecycle Messaging",
+      description:
+        "Onboarding, activation, retention, win-back. We design the full customer lifecycle so each message earns the next one.",
+      link: "/solutions/digital-engagement/lifecycle-messaging",
+    },
+    {
+      title: "Personalization",
+      description:
+        "From rules-based segmentation to ML-driven recommendations. We deploy personalization that materially moves conversion, not just open rates.",
+      link: "/solutions/digital-engagement/personalization",
+    },
+    {
+      title: "Loyalty Programs",
+      description:
+        "Design loyalty mechanics that create durable repeat behavior&mdash;not just discount addiction. Earn margin, not erode it.",
+      link: "/solutions/digital-engagement/loyalty-programs",
+    },
+    {
+      title: "Web &amp; Mobile Experience",
+      description:
+        "Conversion-focused web and mobile experiences. We optimize the moments where intent meets product&mdash;and revenue follows.",
+      link: "/solutions/digital-engagement/web-mobile-experience",
+    },
+    {
+      title: "A/B Testing &amp; Optimization",
+      description:
+        "Stand up a real experimentation program: governance, statistical rigor, executive reporting. Decisions get faster and the wins compound.",
+      link: "/solutions/digital-engagement/ab-testing",
+    },
+  ];
+
+  const outcomes = [
+    {
+      stat: "200+",
+      label: "engagement programs delivered for B2C and B2B clients",
+    },
+    {
+      stat: "41%",
+      label: "median lift in lifecycle revenue across our engagements",
+    },
+    {
+      stat: "2.7x",
+      label: "average return on incremental marketing technology spend",
+    },
+  ];
+
+  const approach = [
+    {
+      title: "Map the Customer Lifecycle",
+      description:
+        "We chart the actual journey from first impression to repeat purchase&mdash;and find the moments where engagement actually moves revenue.",
+      link: "/solutions/digital-engagement/lifecycle-messaging",
+    },
+    {
+      title: "Wire the Stack",
+      description:
+        "CDP, ESP, automation, analytics, web, mobile. We connect the systems so a single customer view drives every channel in real time.",
+      link: "/solutions/digital-engagement/marketing-automation",
+    },
+    {
+      title: "Design Programs That Earn",
+      description:
+        "Onboarding, retention, reactivation. We design programs measured on incremental revenue, not vanity engagement metrics.",
+      link: "/solutions/digital-engagement/personalization",
+    },
+    {
+      title: "Test, Learn, Compound",
+      description:
+        "Stand up a disciplined experimentation cadence so the program improves every quarter&mdash;not every reorg.",
+      link: "/solutions/digital-engagement/ab-testing",
+    },
+  ];
+
+  const cases = [
+    {
+      industry: "Retail &amp; E-commerce",
+      title: "Specialty Retailer Lifts Lifecycle Revenue 38% in Two Quarters",
+      description:
+        "End-to-end automation rebuild plus personalized lifecycle programs unlocked durable repeat-purchase behavior across email and SMS.",
+      image: "/images/case-engage-retail.jpg",
+      link: "/cases/retail-engagement",
+    },
+    {
+      industry: "SaaS",
+      title: "B2B SaaS Cuts Trial-to-Paid Lag by 44%",
+      description:
+        "Behavior-triggered onboarding journeys replaced static drip sequences and pulled forward revenue recognition by weeks per cohort.",
+      image: "/images/case-engage-saas.jpg",
+      link: "/cases/saas-onboarding",
+    },
+  ];
+
+  const relatedOfferings = [
+    {
+      title: "Customer Intelligence",
+      link: "/solutions/customer-intelligence",
+    },
+    {
+      title: "Customer Portal",
+      link: "/solutions/customer-portal",
+    },
+    {
+      title: "Conversational AI",
+      link: "/solutions/conversational-ai",
+    },
+    {
+      title: "App Development",
+      link: "/solutions/app-development",
+    },
+  ];
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Digital Engagement"
+        description="Customer engagement across email, web, mobile, and in-app. Drive retention, conversion, and lifecycle revenue at scale."
+        canonical="/solutions/digital-engagement"
+      />
       <Navigation />
 
-      {/* Hero Section - Black Background (matches IntelligentProcessOptimization) */}
-      <section className="relative min-h-[70vh] md:min-h-[80vh] bg-charcoal pt-20">
-        <div className="container px-4 sm:px-6 md:px-12 h-full">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-0 items-center min-h-[60vh] md:min-h-[70vh]">
-            {/* Left Column - Text Content */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="max-w-xl py-12 lg:py-0 lg:pr-12"
+      {/* SLOT 1 — Charcoal hero */}
+      <SolutionHero
+        eyebrow="SOLUTION · DIGITAL ENGAGEMENT"
+        title="Digital Engagement"
+        subtitle="Customer engagement across email, web, mobile, and in-app&mdash;designed to compound retention, conversion, and lifecycle revenue."
+        backgroundImage="/images/solution-digital-engagement.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[72ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              {/* Breadcrumb */}
-              <nav className="flex items-center space-x-2 text-sm text-white/50 mb-8">
-                <Link href="/" className="hover:text-white transition-colors">Home</Link>
-                <ChevronRight className="w-3 h-3" />
-                <Link href="/solutions" className="hover:text-white transition-colors">Solutions</Link>
-                <ChevronRight className="w-3 h-3" />
-                <span className="text-white/70">Digital Engagement</span>
-              </nav>
-
-              <h1 className="text-4xl sm:text-5xl md:text-6xl eb-garamond tracking-tight text-white leading-[1.1] mb-3">
-                Digital Engagement
-              </h1>
-
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed italic">
-                Build meaningful customer relationships through intelligent, omnichannel engagement at every touchpoint.
-              </p>
-            </motion.div>
-
-            {/* Right Column - Hero Image */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.3 }}
-              className="relative h-[300px] sm:h-[400px] lg:h-full lg:absolute lg:right-0 lg:top-0 lg:w-1/2"
-            >
-              <img
-                src="/digital-engagement-hero.5ffb7f81.jpg"
-                alt="Digital Engagement - Omnichannel customer experience"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent lg:block hidden" />
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* What we do Section */}
-      <section className="py-20 bg-background">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <img 
-                src="/digital-engagement-hero.5ffb7f81.jpg" 
-                alt="Customer engagement strategy" 
-                className="rounded-lg shadow-lg"
-              />
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold mb-6 eb-garamond">What we do</h2>
-              <p className="text-lg leading-relaxed mb-6">
-                Want to build and consolidate deep customer relationships across all channels through targeted interactions? Digital Engagement is what you need. Customers expect speed and relevant results. That's why a smart engagement strategy zooms in on preferences and behavior. By delivering targeted interactions at just the right moment, Digital Engagement takes customer satisfaction and brand loyalty to new heights.
-              </p>
-              <p className="text-lg leading-relaxed">
-                NEXDYNE architects omnichannel engagement platforms that unify customer touchpoints—mobile apps, web portals, email, SMS, push notifications, and conversational AI. Our solutions combine real-time behavioral triggers, predictive analytics, and dynamic content personalization to ensure every interaction feels relevant, timely, and valuable. Whether you're launching a customer loyalty program, building a mobile-first experience, or implementing conversational AI for support, we design engagement systems that drive measurable improvements in retention, satisfaction, and lifetime value.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <p className="text-sm font-semibold text-muted-foreground mb-4">Digital Engagement</p>
-              <h2 className="text-3xl font-bold mb-8 eb-garamond">Services</h2>
-              
-              <Card className="p-8 bg-background">
-                <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-2xl font-bold text-primary-foreground">?</span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Do you want to know more?</h3>
-                    <Button className="mb-4">Get in touch</Button>
-                    <Link href="#schedule" className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-2">
-                      Schedule a meeting
-                      <ArrowRight className="w-4 h-4" />
-                    </Link>
-                  </div>
-                </div>
-              </Card>
-            </div>
-
+              Most engagement programs measure activity. Few measure
+              incremental revenue. The gap is where margin disappears.
+            </h3>
             <div className="space-y-6">
-              <Link href="/solutions/conversational-ai" className="block group">
-                <Card className="p-6 hover:shadow-lg transition-shadow">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Conversational AI</h3>
-                      <p className="text-muted-foreground">
-                        Provide 24/7 customer support and smart interactions that understand customer needs. Conversational AI takes your customer experience to the next level.
-                      </p>
-                    </div>
-                    <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0" />
-                  </div>
-                </Card>
-              </Link>
-
-              <Link href="/solutions/mobile-apps" className="block group">
-                <Card className="p-6 hover:shadow-lg transition-shadow">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Mobile apps</h3>
-                      <p className="text-muted-foreground">
-                        Bring your mobile app idea to life with NEXDYNE's iOS and Android services that deliver seamless, engaging experiences customers love.
-                      </p>
-                    </div>
-                    <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0" />
-                  </div>
-                </Card>
-              </Link>
-
-              <Link href="/solutions/headless-cms" className="block group">
-                <Card className="p-6 hover:shadow-lg transition-shadow">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">Headless CMS</h3>
-                      <p className="text-muted-foreground">
-                        Still working with a traditional CMS? Go headless today and enjoy flexible, sustainable growth with content that adapts to any channel.
-                      </p>
-                    </div>
-                    <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0" />
-                  </div>
-                </Card>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-subtle">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold mb-6 eb-garamond">Want to know more?</h2>
-              <p className="text-lg mb-8">
-                Let's discuss how digital engagement can transform your customer relationships and drive measurable business outcomes.
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                Open rates climb. Click rates climb. Sends climb. And revenue
+                stays flat&mdash;because the program is optimizing for the
+                wrong outcome. The engagement industry has produced more
+                tooling than discipline, and the cost shows up in CAC and
+                churn.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                NexDyne&rsquo;s{" "}
+                <Link
+                  href="/insights/lifecycle-economics"
+                  className="text-primary hover:text-primary-hover transition-colors"
+                >
+                  digital engagement consultants
+                </Link>{" "}
+                build programs measured on incremental revenue&mdash;designed
+                across the full lifecycle, instrumented end-to-end, and tied
+                directly to P&amp;L outcomes the CFO will defend.
               </p>
             </div>
-            <div className="flex items-center gap-6">
-              <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-primary-foreground text-2xl font-bold flex-shrink-0">
-                SC
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-1">Sarah Chen</h3>
-                <p className="text-muted-foreground mb-3">Chief Analytics Officer</p>
-                <div className="flex gap-3">
-                  <Button>Get in touch</Button>
-                  <Button variant="outline">Schedule a meeting</Button>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Help Clients
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six ways we turn engagement into revenue.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              We combine martech depth with disciplined program design to
+              deliver lifecycle engagement that compounds in value rather than
+              fatigues the customer.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {services.map((service, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={service.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col">
+                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                      {service.description}
+                    </p>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Learn more
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Experience &amp; Impact
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Measurable outcomes from engagement programs in market.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
+            {outcomes.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`${
+                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
+                }`}
+              >
+                <div
+                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
+                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                >
+                  {item.stat}
                 </div>
-              </div>
+                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
+                  {item.label}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 5 — Light grey Approach / Methodology framework */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Think About It
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The Engagement-to-Revenue Framework
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Four integrated phases that turn fragmented activity into
+              compounding lifecycle revenue.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {approach.map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={step.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 flex flex-col">
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
+                      {step.description}
+                    </p>
+                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Explore
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Engagement that earns its keep. NexDyne clients have lifted
+              lifecycle revenue by 41% on median&mdash;measured by incremental
+              dollars, not opens or clicks.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              We&rsquo;ve rebuilt engagement programs across retail, SaaS,
+              financial services, and consumer subscription&mdash;tying every
+              touchpoint to P&amp;L the CFO will defend.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 7 — White Case studies / proof */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Engagement, proved in outcomes.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={result.image}
+                        alt={result.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="p-8 lg:p-10">
+                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                        {result.industry}
+                      </span>
+                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                        {result.title}
+                      </h3>
+                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
+                        {result.description}
+                      </p>
+                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                        Read Case
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-14">
+            <Link href="/cases">
+              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                See All Case Studies
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 8 — White Related capabilities / cross-sell */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Related Offerings
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Adjacent capabilities for a complete engagement program.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {relatedOfferings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Stop measuring opens. Start compounding revenue.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="retail">Retail &amp; E-commerce</SelectItem>
+                    <SelectItem value="saas">SaaS &amp; Subscription</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="travel">Travel &amp; Hospitality</SelectItem>
+                    <SelectItem value="b2b">B2B</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders who want lifecycle programs measured on
+                  the same yardstick as the rest of the business&mdash;
+                  incremental margin and durable customer value.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Partners Section */}
-      <section className="py-20 bg-background">
-        <div className="container">
-          <p className="text-sm font-semibold text-muted-foreground mb-4">Partners</p>
-          <h2 className="text-3xl font-bold mb-4 eb-garamond">Awesome partners turn dreams into reality</h2>
-          <p className="text-lg text-muted-foreground mb-12">With these technologies we build digital engagement platforms</p>
-          
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Card className="p-8 text-center hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold">Contentful</h3>
-            </Card>
-            <Card className="p-8 text-center hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold">Storyblok</h3>
-            </Card>
-            <Card className="p-8 text-center hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold">Contentstack</h3>
-            </Card>
-          </div>
-
-          <Link href="/partners">
-            <Button variant="outline">All partners</Button>
-          </Link>
-        </div>
-      </section>
-
-      {/* Why NEXDYNE Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <img 
-                src="/digital-engagement-why-nexdyne.38489b67.jpg" 
-                alt="Why NEXDYNE" 
-                className="rounded-lg shadow-lg"
-              />
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold mb-6 eb-garamond">Why NEXDYNE</h2>
-              <p className="text-lg leading-relaxed mb-6">
-                Whether you're looking for a strategic partner, a boost for your digital transformation, or the ultimate customer experience for your customers, you've come to the right place. With our next-generation digital solutions, you'll always be one step ahead of the competition.
-              </p>
-              <p className="text-lg leading-relaxed mb-8">
-                NEXDYNE combines deep expertise in customer engagement platforms with proven implementation methodologies that minimize risk and accelerate time-to-value. Our engagement solutions leverage cutting-edge technologies—conversational AI, real-time personalization, omnichannel orchestration—while maintaining the flexibility to evolve as customer expectations shift. With NEXDYNE, digital engagement becomes your competitive advantage.
-              </p>
-              <Button>Get in touch</Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Cases Section */}
-      <section className="py-20 bg-subtle">
-        <div className="container">
-          <p className="text-sm font-semibold text-muted-foreground mb-4">Cases</p>
-          <h2 className="text-3xl font-bold mb-4 eb-garamond">Cases we love talkin' about</h2>
-          <p className="text-lg text-muted-foreground mb-12">
-            Heard of a business that transforms customer engagement into competitive advantage? That'd be us. Check out these inspiring cases.
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Link href="/cases/retail-omnichannel" className="block group">
-              <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-                <img 
-                  src="/digital-engagement-case-retail.97f87b05.jpg" 
-                  alt="Retail Omnichannel Engagement" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-                    Retailer Increases Customer Engagement by 156% with Omnichannel Platform
-                  </h3>
-                  <p className="text-muted-foreground mb-4">
-                    Mobile-first engagement strategy drives 43% increase in app usage and 31% boost in customer lifetime value through personalized experiences.
-                  </p>
-                  <Button variant="outline" className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                    Read case study
-                  </Button>
-                </div>
-              </Card>
-            </Link>
-
-            <Link href="/cases/banking-mobile-engagement" className="block group">
-              <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-                <img 
-                  src="/digital-engagement-case-banking.a7d48e8c.jpg" 
-                  alt="Banking Mobile Engagement" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-                    Bank Transforms Digital Experience with AI-Powered Mobile App
-                  </h3>
-                  <p className="text-muted-foreground mb-4">
-                    Conversational AI and proactive notifications reduce call center volume by 38% while improving customer satisfaction scores by 27 points.
-                  </p>
-                  <Button variant="outline" className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                    Read case study
-                  </Button>
-                </div>
-              </Card>
-            </Link>
-
-            <Link href="/cases/hospitality-guest-experience" className="block group">
-              <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-                <img 
-                  src="/digital-engagement-case-hospitality.829438cc.jpg" 
-                  alt="Hospitality Guest Experience" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-                    Hotel Chain Elevates Guest Experience Through Digital Engagement
-                  </h3>
-                  <p className="text-muted-foreground mb-4">
-                    Personalized mobile concierge service increases guest satisfaction by 34% and drives 52% growth in ancillary revenue per stay.
-                  </p>
-                  <Button variant="outline" className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                    Read case study
-                  </Button>
-                </div>
-              </Card>
-            </Link>
-          </div>
-
-          <Link href="/cases">
-            <Button>All cases</Button>
-          </Link>
-        </div>
-      </section>
-
-      {/* Services Footer Navigation */}
-      <section className="py-16 bg-background border-t">
-        <div className="container">
-          <h2 className="text-2xl font-bold mb-8 eb-garamond">SERVICES</h2>
-          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
-            <Link href="/solutions/process-automation" className="text-muted-foreground hover:text-foreground transition-colors">
-              Process Automation
-            </Link>
-            <Link href="/solutions/app-development" className="text-muted-foreground hover:text-foreground transition-colors">
-              App Development
-            </Link>
-            <Link href="/solutions/customer-intelligence" className="text-muted-foreground hover:text-foreground transition-colors">
-              Data-Driven Customer Intelligence
-            </Link>
-            <Link href="/solutions/digital-engagement" className="text-foreground font-semibold">
-              Digital Engagement
-            </Link>
-            <Link href="/solutions/ecommerce" className="text-muted-foreground hover:text-foreground transition-colors">
-              E-commerce
-            </Link>
-            <Link href="/solutions/agentic-ai" className="text-muted-foreground hover:text-foreground transition-colors">
-              Agentic AI
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <RelatedContent items={dataRelatedItems} />
       <Footer />
     </div>
   );

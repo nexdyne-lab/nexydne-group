@@ -1,104 +1,302 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Code, Smartphone, Globe, Layers, Zap, Shield } from "lucide-react";
-import BainHoverCard from "@/components/BainHoverCard";
 import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SolutionHero from "@/components/SolutionHero";
 import { SEO } from "@/components/SEO";
-import Breadcrumbs from "@/components/Breadcrumbs";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function AppDevelopment() {
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
+
+  const services = [
+    {
+      title: "Native iOS Development",
+      description:
+        "Build performant, App Store-grade iOS experiences in Swift and SwiftUI. Engineered for the device, optimized for the user, ready for scale.",
+      link: "/solutions/app-development/native-ios",
+    },
+    {
+      title: "Native Android Development",
+      description:
+        "Ship Android apps in Kotlin and Jetpack Compose that handle real-world device fragmentation while delivering Material-grade polish.",
+      link: "/solutions/app-development/native-android",
+    },
+    {
+      title: "React Native Cross-Platform",
+      description:
+        "One codebase, two stores. We build React Native apps that match native feel without doubling your engineering spend.",
+      link: "/solutions/app-development/react-native",
+    },
+    {
+      title: "Progressive Web Apps",
+      description:
+        "Installable, offline-capable web apps that bypass app-store friction. PWAs give you mobile reach without mobile distribution overhead.",
+      link: "/solutions/app-development/progressive-web-apps",
+    },
+    {
+      title: "App Modernization",
+      description:
+        "Replatform legacy apps stuck on older frameworks. We modernize the stack, refactor the architecture, and preserve the customer experience.",
+      link: "/solutions/app-development/app-modernization",
+    },
+    {
+      title: "App Analytics & Optimization",
+      description:
+        "Instrument every screen, every event, every funnel. We turn raw app telemetry into product decisions that move retention and revenue.",
+      link: "/solutions/app-development/app-analytics",
+    },
+  ];
+
+  const outcomes = [
+    {
+      stat: "120+",
+      label: "mobile and web apps shipped to production for mid-market clients",
+    },
+    {
+      stat: "62%",
+      label: "average reduction in time-to-market across our app engagements",
+    },
+    {
+      stat: "2.4x",
+      label: "typical lift in user retention after our app modernization work",
+    },
+  ];
+
+  const approach = [
+    {
+      title: "Discover the Real Problem",
+      description:
+        "Before a line of code, we map the actual user job-to-be-done and the business outcome that matters. No solution searches for a problem.",
+      link: "/solutions/app-development/native-ios",
+    },
+    {
+      title: "Architect for Scale",
+      description:
+        "Design the data model, API contracts, and platform choices for where you&rsquo;ll be at 10x users&mdash;not just where you are today.",
+      link: "/solutions/app-development/react-native",
+    },
+    {
+      title: "Ship in Increments",
+      description:
+        "Two-week increments, every increment shippable. Real users see real progress before the architecture is fully proven.",
+      link: "/solutions/app-development/progressive-web-apps",
+    },
+    {
+      title: "Measure and Iterate",
+      description:
+        "Instrument behavior from day one. The product team that knows what users do beats the team that guesses every time.",
+      link: "/solutions/app-development/app-analytics",
+    },
+  ];
+
+  const cases = [
+    {
+      industry: "Healthcare",
+      title: "Health-Tech Startup Scales from 10K to 2M Users on Single Codebase",
+      description:
+        "React Native architecture and modular feature flags let one team ship to iOS and Android in lockstep through hypergrowth.",
+      image: "/images/case-app-health.jpg",
+      link: "/cases/healthtech-react-native",
+    },
+    {
+      industry: "Financial Services",
+      title: "Regional Bank Cuts Mobile App Crash Rate by 71%",
+      description:
+        "Modernization of a six-year-old hybrid codebase to native Swift and Kotlin restored stability and unlocked feature velocity.",
+      image: "/images/case-app-bank.jpg",
+      link: "/cases/bank-app-modernization",
+    },
+  ];
+
+  const relatedOfferings = [
+    {
+      title: "Cloud Infrastructure",
+      link: "/solutions/cloud-infrastructure",
+    },
+    {
+      title: "Digital Engagement",
+      link: "/solutions/digital-engagement",
+    },
+    {
+      title: "Customer Portal",
+      link: "/solutions/customer-portal",
+    },
+    {
+      title: "Conversational AI",
+      link: "/solutions/conversational-ai",
+    },
+  ];
+
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Application Development" 
-        description="Build custom web and mobile applications that solve real business problems. From concept to production with no compromises on quality or user experience."
-        canonical="/solutions/enterprise-transformation/app-development"
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="App Development"
+        description="Native and cross-platform mobile and web apps engineered to scale from prototype to millions of users."
+        canonical="/solutions/app-development"
       />
       <Navigation />
-      
-      {/* Hero Section - Dark Background */}
-      <section className="relative min-h-[70vh] flex items-center pt-20 bg-charcoal">
-        <div className="container px-4 md:px-12 grid md:grid-cols-2 gap-8 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Link href="/solutions/enterprise-transformation" className="inline-flex items-center text-white/60 hover:text-white mb-6 text-sm transition-colors">
-              <ArrowRight className="w-4 h-4 mr-2 rotate-180" />
-              Technology
-            </Link>
-            
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white leading-[0.95] mb-3 sm:mb-4 eb-garamond">
-              Application<br />
-              <span className="text-primary">Development</span>
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
-              Build web and mobile applications that fit your operations like a custom suit. We design, develop, and deploy software that solves real business problems.
-            </p>
-            
-            <div className="flex flex-wrap gap-4">
-              <Link href="/contact">
-                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
-                  Start Your Project
-                </Button>
-              </Link>
-              <Link href="/case-studies">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
-                  View Case Studies
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80" 
-              alt="Application Development" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
-        </div>
-      </section>
 
-      {/* Our Experience & Impact - Bain Style with Border-Left Accent */}
-      <section className="py-20 bg-white border-b border-border">
-        <div className="container px-4 md:px-12">
-          <motion.h2
+      {/* SLOT 1 — Charcoal hero */}
+      <SolutionHero
+        eyebrow="SOLUTION · APP DEVELOPMENT"
+        title="App Development"
+        subtitle="Native and cross-platform mobile and web apps engineered to scale from prototype to millions of users&mdash;without rewriting at every growth stage."
+        backgroundImage="/images/solution-app-development.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-2xl eb-garamond font-bold text-charcoal mb-12"
+            className="max-w-[72ch]"
           >
-            Our Experience & Impact
-          </motion.h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { metric: "200+", label: "custom applications delivered across web and mobile platforms" },
-              { metric: "40%", label: "average reduction in development time through modern practices" },
-              { metric: "99.9%", label: "uptime achieved for mission-critical applications" }
-            ].map((item, index) => (
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Most apps die between prototype and scale. The ones that survive
+              were built for the second act on day one.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                The expensive lesson in app development isn&rsquo;t writing the
+                first version&mdash;it&rsquo;s rewriting it. Apps stall because
+                early architectural shortcuts become structural debt: brittle
+                state management, ad-hoc APIs, no real telemetry. By the time
+                growth arrives, the team is rebuilding instead of shipping.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                NexDyne&rsquo;s{" "}
+                <Link
+                  href="/insights/app-architecture-debt"
+                  className="text-primary hover:text-primary-hover transition-colors"
+                >
+                  app development consultants
+                </Link>{" "}
+                build for the second act on day one&mdash;native or
+                cross-platform, modular by default, instrumented for product
+                decisions, and architected to absorb 10x growth without a
+                rewrite.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Help Clients
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six ways we ship apps that scale.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              We combine native platform depth with cross-platform efficiency
+              to deliver apps that hold up under real-world traffic, real-world
+              fragmentation, and real-world product change.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {services.map((service, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`${index > 0 ? 'border-l border-border pl-8' : ''}`}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <div>
-                  <div className="text-5xl md:text-6xl font-bold text-charcoal mb-4">{item.metric}</div>
-                  <p className="text-lg text-charcoal/60">{item.label}</p>
+                <Link href={service.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col">
+                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                      {service.description}
+                    </p>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Learn more
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Experience &amp; Impact
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Measurable outcomes from apps in production.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
+            {outcomes.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`${
+                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
+                }`}
+              >
+                <div
+                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
+                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                >
+                  {item.stat}
+                </div>
+                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
+                  {item.label}
                 </div>
               </motion.div>
             ))}
@@ -106,312 +304,206 @@ export default function AppDevelopment() {
         </div>
       </section>
 
-      {/* Thought Leadership - 2-Column Layout */}
-      <section className="py-20 bg-white">
-        <div className="container px-4 md:px-12">
-          <div className="grid md:grid-cols-2 gap-16 items-start">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal leading-tight">
-                Custom software is your competitive moat—or your Achilles heel.
-              </h2>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="space-y-6 text-lg text-charcoal/80 leading-relaxed"
-            >
-              <p>
-                Off-the-shelf software forces you to adapt your business to its limitations. Custom applications adapt to your business—automating unique workflows, integrating with existing systems, and delivering experiences that differentiate you from competitors.
-              </p>
-              <p>
-                But custom development is risky. Projects run over budget, miss deadlines, and deliver products nobody wants to use. The difference between success and failure lies in the approach: user-centered design, iterative delivery, and relentless focus on business outcomes.
-              </p>
-              <p>
-                We've built applications for startups and Fortune 500 companies. We know how to balance speed with quality, innovation with reliability, and ambition with pragmatism.
-              </p>
-              <ul className="space-y-3 mt-6">
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-                  <span>User-centered design that drives adoption and satisfaction</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-                  <span>Modern architectures that scale with your business</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-                  <span>Agile delivery that reduces risk and accelerates time-to-value</span>
-                </li>
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Approach Section - 4-Step Numbered Format */}
-      <section className="py-24 bg-base text-white">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 5 — Light grey Approach / Methodology framework */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              Our Approach
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Think About It
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold">
-              We build software that solves real problems, not just checks boxes.
-            </h2>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The Build-to-Scale Framework
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Four integrated phases that move an app from concept to growth
+              without architectural rewrites along the way.
+            </p>
           </motion.div>
-          
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
-            {[
-              { num: "01", title: "Discover", desc: "Understand your users, workflows, and pain points through research, interviews, and process mapping." },
-              { num: "02", title: "Design", desc: "Prototype and validate solutions before writing code. Design sprints compress months of uncertainty into weeks." },
-              { num: "03", title: "Build", desc: "Deliver working software every two weeks. Each sprint produces something real that users can test." },
-              { num: "04", title: "Evolve", desc: "Launch is the beginning. We establish monitoring and CI/CD pipelines for rapid iteration based on usage." }
-            ].map((step, i) => (
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {approach.map((step, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="text-center"
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <div className="text-7xl text-white/10 mb-4">{step.num}</div>
-                <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
-                <p className="text-white/60 text-sm leading-relaxed">{step.desc}</p>
+                <Link href={step.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 flex flex-col">
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
+                      {step.description}
+                    </p>
+                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Explore
+                    </span>
+                  </div>
+                </Link>
               </motion.div>
             ))}
-          </div>
-          
-          <div className="text-center">
-            <Link href="/contact">
-              <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-all">
-                Start Your Project
-              </Button>
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* How We Can Help - H100 Capability Cards */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              How We Can Help
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
-              Our Application Development Capabilities
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Apps that earn the second download. NexDyne clients have cut
+              time-to-market by more than half and lifted retention into the
+              top quartile of their category.
             </h2>
-            <p className="text-xl text-charcoal/60 max-w-2xl">
-              Full-stack development services from concept to production.
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              We&rsquo;ve shipped consumer, enterprise, and regulated-industry
+              apps from MVP through hyperscale&mdash;treating performance,
+              accessibility, and observability as launch features, not later
+              phases.
             </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
           </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                title: "Web Applications",
-                description: "Modern web apps built with React, Vue, or Angular. Progressive web apps that work offline. Server-side rendering for performance and SEO."
-              },
-              {
-                title: "Mobile Applications",
-                description: "Native iOS and Android apps, or cross-platform with React Native and Flutter. We choose the right approach based on your requirements and budget."
-              },
-              {
-                title: "Custom Software",
-                description: "Enterprise applications, internal tools, and workflow automation. We build software that fits your processes, not the other way around."
-              },
-              {
-                title: "API Development",
-                description: "RESTful and GraphQL APIs that power your digital ecosystem. Microservices architectures that scale independently and deploy continuously."
-              },
-              {
-                title: "Low-Code Platforms",
-                description: "Accelerate development with platforms like OutSystems, Mendix, and Power Apps. Right-sized solutions for rapid prototyping and citizen development."
-              },
-              {
-                title: "Legacy Modernization",
-                description: "Migrate aging applications to modern architectures. Strangler fig patterns that reduce risk while preserving business continuity."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-              >
-                <BainHoverCard title={item.title} description={item.description} />
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
-      {/* Client Results Section */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 7 — White Case studies / proof */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-16"
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
               Client Results
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal">
-              Applications that transform businesses
-            </h2>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              App development, proved in outcomes.
+            </h3>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                category: "HEALTHCARE",
-                title: "Patient portal reduces call center volume by 45%",
-                description: "A regional health system launched a mobile-first patient portal that enables self-service scheduling, prescription refills, and secure messaging. Patient satisfaction increased while operational costs decreased.",
-                image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80"
-              },
-              {
-                category: "LOGISTICS",
-                title: "Real-time tracking app improves delivery accuracy to 99.5%",
-                description: "A logistics company replaced paper-based processes with a mobile app for drivers and a web dashboard for dispatchers. Real-time visibility transformed customer service and operational efficiency.",
-                image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80"
-              }
-            ].map((study, index) => (
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group"
+                transition={{ duration: 0.5, delay: i * 0.1 }}
               >
-                <Link href="/case-studies" className="block">
-                  <div className="relative overflow-hidden rounded-xl aspect-[16/10] mb-6">
-                    <img 
-                      src={study.image} 
-                      alt={study.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute top-4 left-4">
-                      <span className="px-3 py-1 bg-primary text-white text-xs font-bold uppercase tracking-wider rounded">
-                        {study.category}
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={result.image}
+                        alt={result.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="p-8 lg:p-10">
+                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                        {result.industry}
+                      </span>
+                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                        {result.title}
+                      </h3>
+                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
+                        {result.description}
+                      </p>
+                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                        Read Case
                       </span>
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
-                    {study.title}
-                  </h3>
-                  <p className="text-charcoal/60 text-sm leading-relaxed mb-4">
-                    {study.description}
-                  </p>
-                  <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                    Read case study <ArrowRight className="ml-2 w-4 h-4" />
-                  </div>
                 </Link>
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* Latest Insights Section */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 md:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-                Insights
+          <div className="mt-14">
+            <Link href="/cases">
+              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                See All Case Studies
               </span>
-              <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal">
-                Latest Insights
-              </h2>
-              <p className="text-xl text-charcoal/60 mt-4">
-                Expert perspectives on application development.
-              </p>
-            </motion.div>
-            <Link href="/insights">
-              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/5 bg-transparent transition-all duration-300">
-                View all insights
-              </Button>
             </Link>
           </div>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                category: "Development",
-                readTime: "7 min read",
-                title: "The Build vs. Buy Decision Framework",
-                description: "When custom development makes sense and when off-the-shelf solutions are the smarter choice.",
-                link: "/insights/build-vs-buy"
-              },
-              {
-                category: "Architecture",
-                readTime: "8 min read",
-                title: "Microservices: Right-Sizing Your Architecture",
-                description: "How to avoid the complexity trap while gaining the benefits of distributed systems.",
-                link: "/insights/microservices-rightsizing"
-              },
-              {
-                category: "Mobile",
-                readTime: "6 min read",
-                title: "Native vs. Cross-Platform: The 2024 Calculus",
-                description: "How React Native and Flutter have changed the mobile development equation.",
-                link: "/insights/native-vs-crossplatform"
-              }
-            ].map((insight, index) => (
+      {/* SLOT 8 — White Related capabilities / cross-sell */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Related Offerings
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Adjacent capabilities for a complete app program.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {relatedOfferings.map((offering, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <Link href={insight.link} className="group block h-full">
-                  <div className="h-full p-8 rounded-xl bg-white border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
-                    <div className="flex items-center gap-3 mb-4">
-                      <span className="text-primary text-xs font-bold uppercase tracking-wider">{insight.category}</span>
-                      <span className="text-charcoal/40">•</span>
-                      <span className="text-charcoal/60 text-sm">{insight.readTime}</span>
-                    </div>
-                    <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
-                      {insight.title}
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
                     </h3>
-                    <p className="text-charcoal/60 text-sm leading-relaxed mb-6">
-                      {insight.description}
-                    </p>
-                    <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                      Read article <ArrowRight className="ml-2 w-4 h-4" />
-                    </div>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
                   </div>
                 </Link>
               </motion.div>
@@ -420,77 +512,80 @@ export default function AppDevelopment() {
         </div>
       </section>
 
-      {/* Related Capabilities Section */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              Related Capabilities
-            </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
-              Explore related capabilities
-            </h2>
-          </motion.div>
-          
-          <div className="grid md:grid-cols-4 gap-6">
-            {[
-              {
-                title: "Integration & APIs",
-                description: "Connect your applications to the systems and data they need. Modern API platforms that enable seamless data flow across your enterprise.",
-                link: "/solutions/enterprise-transformation/api-integration"
-              },
-              {
-                title: "Cloud Infrastructure",
-                description: "Scalable, secure foundations for your applications. Build on AWS, Azure, or GCP with architectures that grow with your business.",
-                link: "/solutions/enterprise-transformation/cloud-infrastructure"
-              },
-              {
-                title: "AI & Automation",
-                description: "Embed intelligence into your applications. From chatbots to predictive analytics, we help you build smarter software.",
-                link: "/solutions/enterprise-transformation/ai-automation"
-              }
-            ].map((capability, index) => (
+      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
               <motion.div
-                key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.6 }}
               >
-                <BainHoverCard title={capability.title} description={capability.description} link={capability.link} />
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our app team into your next product conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="retail">Retail &amp; E-commerce</SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
               </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* CTA Section - Blue Background */}
-      <section className="py-24 bg-primary">
-        <div className="container px-4 md:px-12 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-white mb-6">
-              Ready to build your next application?
-            </h2>
-            <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">
-              Let's discuss how custom software can solve your unique business challenges and create competitive advantage.
-            </p>
-            <Link href="/contact">
-              <Button className="bg-white hover:bg-subtle text-charcoal px-10 py-6 text-lg font-semibold transition-all">
-                Start Your Project
-              </Button>
-            </Link>
-          </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders ready to ship apps that survive
+                  scale&mdash;native, cross-platform, or web&mdash;and outlast
+                  the next architectural pivot.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 

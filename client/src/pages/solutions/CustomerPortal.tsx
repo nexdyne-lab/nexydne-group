@@ -1,393 +1,594 @@
+import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Link } from "wouter";
-import { ArrowRight, Settings, Database, Globe, CheckCircle2 } from "lucide-react";
-import { RelatedContent } from "@/components/RelatedContent";
-import { dataRelatedItems } from "@/data/related-content";
+import SolutionHero from "@/components/SolutionHero";
+import { SEO } from "@/components/SEO";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
-export function CustomerPortal() {
+export default function CustomerPortal() {
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
+
+  const services = [
+    {
+      title: "Account Self-Service",
+      description:
+        "Profile, preferences, subscriptions, and account history. Customers manage themselves&mdash;and your support team handles the work that actually needs a human.",
+      link: "/solutions/customer-portal/account-self-service",
+    },
+    {
+      title: "Knowledge Base",
+      description:
+        "Searchable, structured help content that deflects tickets without frustrating customers. Built for findability, not just authoring convenience.",
+      link: "/solutions/customer-portal/knowledge-base",
+    },
+    {
+      title: "Support Ticketing",
+      description:
+        "Native ticketing or integrated Zendesk, Salesforce, or ServiceNow. Customers see status. Agents see context. Resolution times drop.",
+      link: "/solutions/customer-portal/support-ticketing",
+    },
+    {
+      title: "Billing &amp; Payments",
+      description:
+        "Invoices, payment methods, dispute flows, and self-service refunds. Reduce billing-related contact volume by half&mdash;or more.",
+      link: "/solutions/customer-portal/billing-payments",
+    },
+    {
+      title: "Partner &amp; Dealer Portals",
+      description:
+        "B2B portals for distributors, dealers, brokers, and resellers. Order entry, claims, marketing assets, training&mdash;all in one place.",
+      link: "/solutions/customer-portal/partner-dealer-portals",
+    },
+    {
+      title: "White-Label Portals",
+      description:
+        "Multi-tenant, brandable portal platforms for clients who serve clients. Theme, configure, deploy&mdash;without rebuilding the core.",
+      link: "/solutions/customer-portal/white-label-portals",
+    },
+  ];
+
+  const outcomes = [
+    {
+      stat: "75+",
+      label: "customer and partner portals delivered across regulated and consumer industries",
+    },
+    {
+      stat: "52%",
+      label: "median reduction in support contact volume after portal launch",
+    },
+    {
+      stat: "+18",
+      label: "point average increase in customer satisfaction post-deployment",
+    },
+  ];
+
+  const approach = [
+    {
+      title: "Map the Top Reasons Customers Call",
+      description:
+        "We start with the support data, not the wireframes. Top-15 contact reasons drive what the portal must absorb&mdash;and the deflection ROI.",
+      link: "/solutions/customer-portal/support-ticketing",
+    },
+    {
+      title: "Design for Self-Service",
+      description:
+        "Information architecture, navigation, and content design that lets customers find answers in seconds&mdash;not search-and-give-up.",
+      link: "/solutions/customer-portal/knowledge-base",
+    },
+    {
+      title: "Integrate the Systems of Record",
+      description:
+        "Billing, CRM, support, identity. We wire the portal into the systems behind it so the customer sees one experience, not five.",
+      link: "/solutions/customer-portal/billing-payments",
+    },
+    {
+      title: "Measure Deflection and CSAT",
+      description:
+        "Instrument every flow. We track contact volume, self-service completion, and CSAT impact so the portal&rsquo;s value is provable, not asserted.",
+      link: "/solutions/customer-portal/account-self-service",
+    },
+  ];
+
+  const cases = [
+    {
+      industry: "Insurance",
+      title: "Regional Insurer Cuts Inbound Call Volume by 47% with Portal Launch",
+      description:
+        "Self-service claims status, billing, and document upload absorbed the top three contact reasons within the first six months in market.",
+      image: "/images/case-portal-insurance.jpg",
+      link: "/cases/insurance-portal",
+    },
+    {
+      industry: "Industrial Distribution",
+      title: "B2B Distributor Lifts Repeat Order Rate 23% with Dealer Portal",
+      description:
+        "Reorder, account history, and pricing transparency drove durable behavior change across a 1,200-dealer network.",
+      image: "/images/case-portal-distribution.jpg",
+      link: "/cases/distribution-dealer-portal",
+    },
+  ];
+
+  const relatedOfferings = [
+    {
+      title: "Digital Engagement",
+      link: "/solutions/digital-engagement",
+    },
+    {
+      title: "Conversational AI",
+      link: "/solutions/conversational-ai",
+    },
+    {
+      title: "App Development",
+      link: "/solutions/app-development",
+    },
+    {
+      title: "Customer Intelligence",
+      link: "/solutions/customer-intelligence",
+    },
+  ];
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Customer Portal"
+        description="Self-service customer portals that reduce support cost, lift CSAT, and build sticky relationships."
+        canonical="/solutions/customer-portal"
+      />
       <Navigation />
-      
-      {/* Breadcrumb */}
-      <div className="bg-subtle border-b">
-        <div className="container py-4">
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <Link href="/" className="hover:text-primary">Home</Link>
-            <span>/</span>
-            <Link href="/intelligent-process-optimization" className="hover:text-primary">Intelligent Process Optimization</Link>
-            <span>/</span>
-            <Link href="/solutions/app-development" className="hover:text-primary">App Development</Link>
-            <span>/</span>
-            <span className="text-charcoal">Customer Portal</span>
-          </div>
-        </div>
-      </div>
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-rose-900 to-rose-800 text-white py-24">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl font-bold mb-3 eb-garamond">Customer portal</h1>
-            </div>
-            <div>
-              <p className="text-xl leading-relaxed">
-                Empower customers with 24/7 self-service access while freeing your team to focus on high-value interactions. Modern portals drive satisfaction, reduce support costs, and unlock revenue through seamless digital experiences.
+      {/* SLOT 1 — Charcoal hero */}
+      <SolutionHero
+        eyebrow="SOLUTION · CUSTOMER PORTAL"
+        title="Customer Portal"
+        subtitle="Self-service portals that absorb the work customers want to do themselves&mdash;reducing support cost, lifting CSAT, and building stickier relationships."
+        backgroundImage="/images/solution-customer-portal.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[72ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Customers want to help themselves. Most portals make it harder
+              than picking up the phone.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                The economics of customer support keep shifting. Headcount
+                inflates, ticket volume compounds, and the easy contacts
+                crowd out the complex ones that actually need a human.
+                Meanwhile, customers reach for the phone the moment the portal
+                fails them&mdash;every time.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                NexDyne&rsquo;s{" "}
+                <Link
+                  href="/insights/portal-deflection-economics"
+                  className="text-primary hover:text-primary-hover transition-colors"
+                >
+                  customer portal consultants
+                </Link>{" "}
+                start with the support data, design for the top contact
+                reasons, integrate the systems of record, and measure
+                deflection in dollars&mdash;not page views.
               </p>
             </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Help Clients
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six ways we build portals customers actually use.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              We combine experience design with deep systems-integration work
+              so portals deflect contacts, lift satisfaction, and pay back the
+              build cost within a measurable window.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {services.map((service, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={service.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col">
+                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                      {service.description}
+                    </p>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Learn more
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="py-20 bg-white">
-        <div className="container">
-          <div className="grid md:grid-cols-[300px_1fr] gap-16">
-            {/* Contact Person */}
-            <div>
-              <div className="sticky top-8">
-                <div className="w-48 h-48 bg-blue-100 rounded-full mb-6 flex items-center justify-center">
-                  <div className="w-40 h-40 bg-blue-200 rounded-full"></div>
-                </div>
-                <h3 className="text-xl font-bold mb-4">Want to know more?</h3>
-                <button className="px-6 py-3 border-2 border-charcoal rounded-full hover:bg-charcoal hover:text-white transition-colors">
-                  Ask Martijn Voorveld
-                </button>
-              </div>
-            </div>
+      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Experience &amp; Impact
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Measurable outcomes from portals in production.
+            </h3>
+          </motion.div>
 
-            {/* Benefits Grid */}
-            <div>
-              <h2 className="text-4xl font-bold mb-12">The benefits of a customer portal</h2>
-              <div className="space-y-12">
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 rounded-lg bg-blue-100 flex items-center justify-center">
-                      <Settings className="w-8 h-8 text-primary" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
+            {outcomes.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`${
+                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
+                }`}
+              >
+                <div
+                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
+                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                >
+                  {item.stat}
+                </div>
+                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
+                  {item.label}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 5 — Light grey Approach / Methodology framework */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Think About It
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The Self-Service Framework
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Four integrated phases that turn a customer portal from cost
+              center into measurable deflection asset.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {approach.map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={step.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 flex flex-col">
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
+                      {step.description}
+                    </p>
+                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Explore
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Portals that pay for themselves. NexDyne clients have cut
+              inbound contact volume by half and lifted CSAT by double-digit
+              points within a year of launch.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              We&rsquo;ve shipped customer, partner, and white-label portals
+              across insurance, financial services, distribution, and
+              healthcare&mdash;each measured on contact deflection, not vanity
+              adoption metrics.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 7 — White Case studies / proof */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Customer portals, proved in outcomes.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={result.image}
+                        alt={result.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="p-8 lg:p-10">
+                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                        {result.industry}
+                      </span>
+                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                        {result.title}
+                      </h3>
+                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
+                        {result.description}
+                      </p>
+                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                        Read Case
+                      </span>
                     </div>
                   </div>
-                  <div>
-                    <h3 className="text-2xl font-bold mb-3">Operational efficiency</h3>
-                    <p className="text-charcoal/80 leading-relaxed">
-                      Automate repetitive inquiries and transactions through self-service workflows. Your support team escapes the ticket treadmill and focuses on complex issues that require human expertise and empathy.
-                    </p>
-                  </div>
-                </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
 
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 rounded-lg bg-blue-100 flex items-center justify-center">
-                      <Database className="w-8 h-8 text-primary" />
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold mb-3">Data-driven insights (and revenue)</h3>
-                    <p className="text-charcoal/80 leading-relaxed">
-                      Transform your portal into a customer intelligence engine. Every interaction captures behavioral data, preference signals, and friction points—enabling smarter service delivery and targeted upsell opportunities.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 rounded-lg bg-blue-100 flex items-center justify-center">
-                      <Globe className="w-8 h-8 text-primary" />
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold mb-3">Always-on accessibility</h3>
-                    <p className="text-charcoal/80 leading-relaxed">
-                      Build a portal that never sleeps. Customers manage accounts, submit requests, and access information on their schedule—no hold music, no business hours, no geographic boundaries. Pure convenience drives loyalty.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="mt-14">
+            <Link href="/cases">
+              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                See All Case Studies
+              </span>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Content Section */}
-      <section className="py-20 bg-subtle">
-        <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold mb-8">Tailored customer portals</h2>
-          <div className="prose prose-lg max-w-none">
-            <p className="text-charcoal/80 leading-relaxed mb-6">
-              Customer portals transform how organizations deliver service and build relationships. A well-designed self-service portal eliminates friction by giving customers direct access to the information and tools they need—anytime, anywhere. Whether they're tracking orders, updating account details, or submitting support requests, customers get instant gratification instead of waiting in queue.
-            </p>
-            <p className="text-charcoal/80 leading-relaxed mb-6">
-              But the real magic happens behind the scenes. While customers enjoy autonomy, your support team gains breathing room to tackle complex challenges that require judgment and creativity. No more wasting hours on password resets or address changes. Instead, they're solving problems that move the needle on customer satisfaction and retention.
-            </p>
-            <p className="text-charcoal/80 leading-relaxed">
-              Every portal interaction generates valuable data about customer behavior, preferences, and pain points. This intelligence fuels continuous improvement—helping you refine workflows, personalize experiences, and identify upsell opportunities that feel helpful rather than pushy.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* SLOT 8 — White Related capabilities / cross-sell */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Related Offerings
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Adjacent capabilities for a complete portal program.
+            </h3>
+          </motion.div>
 
-      {/* Quote Section */}
-      <section className="py-20 bg-white">
-        <div className="container max-w-4xl">
-          <blockquote className="text-center">
-            <p className="text-3xl font-bold text-rose-900 mb-6 leading-relaxed">
-              "NEXDYNE's team doesn't just build portals—they architect customer experiences. They pinpointed exactly what our users needed, delivering a platform that feels intuitive and empowering."
-            </p>
-            <footer className="text-muted-foreground">
-              <p className="font-semibold">Sarah Mitchell, VP of Customer Experience at TechCorp</p>
-            </footer>
-          </blockquote>
-        </div>
-      </section>
-
-      {/* Approach Section */}
-      <section className="py-20 bg-subtle">
-        <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold mb-8">Customer portal software: choosing the right path</h2>
-          <div className="prose prose-lg max-w-none mb-12">
-            <p className="text-charcoal/80 leading-relaxed mb-6">
-              <strong>Build or buy?</strong> It's fundamentally a choice between flexibility and speed, functionality versus budget. While off-the-shelf portal packages offer quick deployment, we know that one size rarely fits all. So, how do we build portals that match your unique requirements?
-            </p>
-          </div>
-
-          <div className="space-y-6 mb-12">
-            <div>
-              <h3 className="text-xl font-bold mb-2">• Low-code platforms:</h3>
-              <p className="text-charcoal/80 leading-relaxed">
-                Accelerate time-to-market with visual development tools that balance speed with customization flexibility.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-2">• Custom development:</h3>
-              <p className="text-charcoal/80 leading-relaxed">
-                Maximum control to address complex workflows and deliver award-winning user experiences tailored to your brand.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-2">• Hybrid approach:</h3>
-              <p className="text-charcoal/80 leading-relaxed">
-                Combine multiple technologies to achieve the optimal balance of speed, functionality, and long-term maintainability.
-              </p>
-            </div>
-          </div>
-
-          <div className="prose prose-lg max-w-none">
-            <p className="text-charcoal/80 leading-relaxed">
-              Our multidisciplinary team works in agile sprints on each project. We gather insights from usage data, optimize iteratively, and ensure your portal evolves alongside your customers' expectations.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-100 to-blue-50">
-        <div className="container">
-          <div className="flex items-center gap-12">
-            <div className="flex-shrink-0">
-              <div className="w-64 h-64 bg-blue-100 rounded-full flex items-center justify-center">
-                <div className="w-56 h-56 bg-blue-200 rounded-full"></div>
-              </div>
-            </div>
-            <div className="flex-1">
-              <h2 className="text-3xl font-bold mb-4">Want to know more?</h2>
-              <p className="text-xl mb-2">Martijn Voorveld</p>
-              <p className="text-charcoal/80 mb-8">Digital Solutions Director</p>
-              <div className="flex gap-4">
-                <button className="px-8 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors duration-200 ease-in-out">
-                  Get in touch
-                </button>
-                <button className="px-8 py-3 border-2 border-primary text-charcoal rounded-full hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out">
-                  Schedule a meeting
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Partners Section */}
-      <section className="py-20 bg-white">
-        <div className="container">
-          <div className="grid md:grid-cols-[400px_1fr] gap-12">
-            <div>
-              <p className="text-sm text-muted-foreground mb-2">Partners</p>
-              <h2 className="text-4xl font-bold mb-6">Proven platforms power exceptional portals</h2>
-              <button className="px-6 py-3 border-2 border-primary text-charcoal rounded-full hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out">
-                All partners
-              </button>
-            </div>
-            <div className="flex items-center gap-8">
-              <button className="p-2 hover:bg-subtle rounded-full">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-              <div className="flex-1 grid grid-cols-3 gap-8">
-                <div className="text-center">
-                  <div className="h-24 flex items-center justify-center mb-4">
-                    <div className="text-2xl font-bold text-primary">Salesforce</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {relatedOfferings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
                   </div>
-                  <p className="font-semibold">Salesforce Experience Cloud</p>
-                </div>
-                <div className="text-center">
-                  <div className="h-24 flex items-center justify-center mb-4">
-                    <div className="text-2xl font-bold text-primary">Liferay</div>
-                  </div>
-                  <p className="font-semibold">Liferay DXP</p>
-                </div>
-                <div className="text-center">
-                  <div className="h-24 flex items-center justify-center mb-4">
-                    <div className="text-2xl font-bold text-primary">OutSystems</div>
-                  </div>
-                  <p className="font-semibold">OutSystems</p>
-                </div>
-              </div>
-              <button className="p-2 hover:bg-subtle rounded-full">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </div>
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Why NEXDYNE Section */}
-      <section className="py-20 bg-subtle">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <img 
-                src="/app-development-hero.af074160.jpg" 
-                alt="NEXDYNE office" 
-                className="rounded-lg w-full h-auto"
-              />
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold mb-6">Why NEXDYNE</h2>
-              <p className="text-charcoal/80 leading-relaxed mb-6">
-                Whether you're seeking a strategic partner, a catalyst for digital transformation, or the ultimate customer experience for your users, you've found the right team. With our next-generation digital solutions, you'll stay ahead of the competition.
-              </p>
-              <button className="px-8 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors duration-200 ease-in-out">
-                Get in touch
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Let customers help themselves. Free your team for the work
+                  that needs them.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="insurance">Insurance</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="distribution">
+                      Distribution &amp; Wholesale
+                    </SelectItem>
+                    <SelectItem value="utilities">Utilities</SelectItem>
+                    <SelectItem value="saas">SaaS</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
 
-      {/* Cases Section */}
-      <section className="py-20 bg-blue-50">
-        <div className="container">
-          <div className="text-center mb-12">
-            <p className="text-sm text-muted-foreground mb-2">Cases</p>
-            <h2 className="text-4xl font-bold mb-4">Cases we love talkin' about</h2>
-            <p className="text-xl text-charcoal/80 max-w-3xl mx-auto mb-8">
-              Heard of a business that transforms unique challenges into exceptional outcomes? That'd be us. Check out these inspiring cases.
-            </p>
-            <button className="px-8 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors duration-200 ease-in-out">
-              All cases
-            </button>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
-            <Link href="/cases/telecom-customer-portal" className="group">
-              <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <div className="aspect-video bg-muted overflow-hidden">
-                  <img 
-                    src="/telecom-customer-portal.8f77b841.jpg" 
-                    alt="Telecom customer portal" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders ready to redesign the support
+                  economic&mdash;portals that deflect, integrate, and pay back
+                  on a board-defensible timeline.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
                   />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3">Telecom Provider Launches Self-Service Portal for 2M Customers</h3>
-                  <p className="text-charcoal/80 mb-4">
-                    Salesforce Experience Cloud portal reduces support calls by 58% while driving $4.2M in annual self-service upgrades.
-                  </p>
-                  <div className="flex items-center text-primary font-semibold">
-                    Read case study
-                    <ArrowRight className="ml-2 w-5 h-5" />
-                  </div>
-                </div>
-              </div>
-            </Link>
-
-            <Link href="/cases/utility-billing-portal" className="group">
-              <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <div className="aspect-video bg-muted overflow-hidden">
-                  <img 
-                    src="/utility-billing-portal.a6b35464.jpg" 
-                    alt="Utility billing portal" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3">Utility Company Modernizes Billing Portal for 500K Households</h3>
-                  <p className="text-charcoal/80 mb-4">
-                    Liferay DXP portal delivers 24/7 account access, reducing call center volume by 42% and improving payment timeliness by 28%.
-                  </p>
-                  <div className="flex items-center text-primary font-semibold">
-                    Read case study
-                    <ArrowRight className="ml-2 w-5 h-5" />
-                  </div>
-                </div>
-              </div>
-            </Link>
-
-            <Link href="/cases/insurance-policyholder-portal" className="group">
-              <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                <div className="aspect-video bg-muted overflow-hidden">
-                  <img 
-                    src="/insurance-policyholder-portal.39eb5bb4.jpg" 
-                    alt="Insurance policyholder portal" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3">Insurer Builds Policyholder Portal Serving 1.2M Members</h3>
-                  <p className="text-charcoal/80 mb-4">
-                    OutSystems portal enables instant policy access, claims submission, and document management—achieving 82% digital adoption in 6 months.
-                  </p>
-                  <div className="flex items-center text-primary font-semibold">
-                    Read case study
-                    <ArrowRight className="ml-2 w-5 h-5" />
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Footer Section */}
-      <section className="py-16 bg-white border-t">
-        <div className="container">
-          <p className="text-sm text-muted-foreground mb-4">App Development</p>
-          <h2 className="text-3xl font-bold mb-8">Services</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Link href="/solutions/lowcode-development" className="group flex items-start gap-3 hover:text-primary">
-              <ArrowRight className="w-5 h-5 mt-1 flex-shrink-0" />
-              <span className="font-semibold">Low-code Development</span>
-            </Link>
-            <Link href="/solutions/custom-software" className="group flex items-start gap-3 hover:text-primary">
-              <ArrowRight className="w-5 h-5 mt-1 flex-shrink-0" />
-              <span className="font-semibold">Custom Software</span>
-            </Link>
-            <div className="group flex items-start gap-3 text-primary">
-              <ArrowRight className="w-5 h-5 mt-1 flex-shrink-0" />
-              <span className="font-semibold">Customer Portal</span>
-            </div>
-            <div className="group flex items-start gap-3 text-muted-foreground/70">
-              <ArrowRight className="w-5 h-5 mt-1 flex-shrink-0" />
-              <span className="font-semibold">Legacy Modernization</span>
+              </motion.div>
             </div>
           </div>
         </div>
       </section>
 
-      <RelatedContent items={dataRelatedItems} />
       <Footer />
     </div>
   );

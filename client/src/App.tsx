@@ -375,7 +375,7 @@ import { CustomSoftware } from "./pages/solutions/CustomSoftware";
 import { EnergyTradingPlatform } from "./pages/cases/EnergyTradingPlatform";
 import { PharmaceuticalComplianceSystem } from "./pages/cases/PharmaceuticalComplianceSystem";
 import { ConstructionProjectManagement } from "./pages/cases/ConstructionProjectManagement";
-import { CustomerPortal } from "./pages/solutions/CustomerPortal";
+import CustomerPortal from "./pages/solutions/CustomerPortal";
 import { TelecomCustomerPortal } from "./pages/cases/TelecomCustomerPortal";
 import { UtilityBillingPortal } from "./pages/cases/UtilityBillingPortal";
 import { InsurancePolicyholderPortal } from "./pages/cases/InsurancePolicyholderPortal";

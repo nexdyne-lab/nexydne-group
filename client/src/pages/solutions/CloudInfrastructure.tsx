@@ -1,513 +1,254 @@
-import React, { useEffect } from "react";
-import { useLocation, Link } from "wouter";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { 
-  Cloud, 
-  Shield, 
-  Zap, 
-  Server, 
-  ArrowRight, 
-  ArrowLeft,
-  CheckCircle2,
-  Scale,
-  Globe,
-  Lock
-} from "lucide-react";
-import BainHoverCard from "@/components/BainHoverCard";
+import SolutionHero from "@/components/SolutionHero";
 import { SEO } from "@/components/SEO";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import { Button } from "@/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function CloudInfrastructure() {
-  const [location, setLocation] = useLocation();
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  // Related capabilities data
-  const relatedCapabilities = [
+  const services = [
     {
-      title: "Data Modernization",
-      description: "Transform legacy silos into intelligent data platforms that drive real-time insights.",
-      link: "/solutions/enterprise-transformation/legacy-modernization"
+      title: "Cloud Migration",
+      description:
+        "Lift-and-shift, replatform, or refactor. We pick the right strategy per workload and deliver migrations that actually finish&mdash;on schedule, on budget.",
+      link: "/solutions/cloud-infrastructure/cloud-migration",
     },
     {
-      title: "API Integration",
-      description: "Connect disparate apps, data, and partners into a seamless ecosystem.",
-      link: "/solutions/enterprise-transformation/api-integration"
+      title: "Cloud-Native Architecture",
+      description:
+        "Containers, Kubernetes, serverless, event-driven. We design cloud-native systems that scale elastically and stay operable as the team grows.",
+      link: "/solutions/cloud-infrastructure/cloud-native-architecture",
     },
     {
-      title: "DevOps & Security",
-      description: "Ship faster with automated pipelines that have compliance baked in.",
-      link: "/solutions/enterprise-transformation/devops-automation"
-    }
+      title: "Multi-Cloud Strategy",
+      description:
+        "AWS, Azure, GCP. We design portability where it matters and accept lock-in where it pays. The strategy is deliberate, not accidental.",
+      link: "/solutions/cloud-infrastructure/multi-cloud-strategy",
+    },
+    {
+      title: "Cost Optimization (FinOps)",
+      description:
+        "Stand up FinOps as an operating discipline. Visibility, accountability, rightsizing, and savings plans tied to engineering decisions.",
+      link: "/solutions/cloud-infrastructure/finops",
+    },
+    {
+      title: "Security &amp; Compliance",
+      description:
+        "Identity, network, data, and workload security baked into the platform. SOC 2, HIPAA, PCI&mdash;evidence-ready, not audit-scrambling.",
+      link: "/solutions/cloud-infrastructure/security-compliance",
+    },
+    {
+      title: "Platform Engineering",
+      description:
+        "Internal developer platforms that turn cloud capability into developer velocity. Golden paths, paved roads, and self-service that scales.",
+      link: "/solutions/cloud-infrastructure/platform-engineering",
+    },
+  ];
+
+  const outcomes = [
+    {
+      stat: "140+",
+      label: "cloud migration and modernization programs delivered to production",
+    },
+    {
+      stat: "37%",
+      label: "median reduction in run-rate cloud spend after FinOps engagement",
+    },
+    {
+      stat: "3.5x",
+      label: "average lift in deploy frequency after platform engineering investment",
+    },
+  ];
+
+  const approach = [
+    {
+      title: "Assess the Estate",
+      description:
+        "Workload-by-workload assessment of cost, risk, dependencies, and modernization fit. We map the estate before we move anything.",
+      link: "/solutions/cloud-infrastructure/cloud-migration",
+    },
+    {
+      title: "Design the Target Platform",
+      description:
+        "Landing zones, networking, identity, security, and operating model. The target architecture is defensible to engineering and to audit.",
+      link: "/solutions/cloud-infrastructure/cloud-native-architecture",
+    },
+    {
+      title: "Migrate in Waves",
+      description:
+        "Wave-based migration with measurable gates. Each wave proves the platform, retires legacy, and unlocks the next set of workloads.",
+      link: "/solutions/cloud-infrastructure/multi-cloud-strategy",
+    },
+    {
+      title: "Operate as a Product",
+      description:
+        "Platform engineering, FinOps, and security run as ongoing products&mdash;with SLAs, roadmaps, and customer-developer feedback loops.",
+      link: "/solutions/cloud-infrastructure/platform-engineering",
+    },
+  ];
+
+  const cases = [
+    {
+      industry: "Financial Services",
+      title: "Mid-Market Bank Migrates Core Workloads and Cuts Cloud Spend 41%",
+      description:
+        "Wave-based migration plus FinOps discipline retired three data centers, reduced run rate, and accelerated regulatory delivery cadence.",
+      image: "/images/case-cloud-bank.jpg",
+      link: "/cases/bank-cloud-migration",
+    },
+    {
+      industry: "Healthcare",
+      title: "Health-Tech Vendor Lifts Deploy Frequency 4.2x with Platform Engineering",
+      description:
+        "Internal developer platform consolidated CI/CD, environments, and observability&mdash;turning weekly releases into multiple per day across teams.",
+      image: "/images/case-cloud-healthtech.jpg",
+      link: "/cases/healthtech-platform-engineering",
+    },
+  ];
+
+  const relatedOfferings = [
+    {
+      title: "App Development",
+      link: "/solutions/app-development",
+    },
+    {
+      title: "Data Solutions",
+      link: "/solutions/data-solutions",
+    },
+    {
+      title: "Machine Learning",
+      link: "/solutions/machine-learning",
+    },
+    {
+      title: "Data Strategy",
+      link: "/solutions/data-strategy",
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Cloud Infrastructure" 
-        description="Build adaptive, cloud-native environments that expand and contract with your business pulse—delivering performance when you need it and savings when you don't."
-        canonical="/solutions/enterprise-transformation/cloud-infrastructure"
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Cloud Infrastructure"
+        description="Cloud-native modernization on AWS, Azure, and GCP. Build elastic, secure, cost-optimized platforms that compound developer velocity."
+        canonical="/solutions/cloud-infrastructure"
       />
       <Navigation />
 
-      {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[70vh] flex items-center pt-20 bg-charcoal">
-        <div className="container px-4 md:px-12 grid md:grid-cols-2 gap-8 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Breadcrumbs variant="light" />
-            
-            <h1 className="text-5xl md:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.05] mb-4">
-              Cloud Infrastructure
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
-              Scalable, secure foundations on AWS, Azure, and GCP. Build adaptive, cloud-native environments that expand and contract with your business needs.
-            </p>
-            
-            <div className="flex flex-wrap gap-4">
-              <Link href="/contact">
-                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
-                  Schedule a Consultation
-                </Button>
-              </Link>
-              <Link href="/case-studies">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
-                  View Case Studies
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="/images/cloud-infrastructure-abstract.jpg" 
-              alt="Cloud Infrastructure Visualization" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
-        </div>
-      </section>
+      {/* SLOT 1 — Charcoal hero */}
+      <SolutionHero
+        eyebrow="SOLUTION · CLOUD INFRASTRUCTURE"
+        title="Cloud Infrastructure"
+        subtitle="Cloud-native modernization across AWS, Azure, and GCP&mdash;elastic, secure, cost-optimized platforms that compound developer velocity, not cloud bills."
+        backgroundImage="/images/solution-cloud-infrastructure.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+      />
 
-      {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-20 bg-white border-b border-border">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-12"
+            className="max-w-[72ch]"
           >
-            <h2 className="text-2xl font-bold text-charcoal">Our Experience & Impact</h2>
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Most cloud programs trade one set of bills for another. The
+              ones that compound do platform engineering, not lift-and-shift.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                The first cloud migration retires the data center and
+                introduces a new bill. The second migration tries to optimize
+                that bill. The third&mdash;done well&mdash;turns the cloud
+                into a developer-velocity platform that compounds. Most
+                programs stop at the first phase and wonder where the value
+                went.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                NexDyne&rsquo;s{" "}
+                <Link
+                  href="/insights/cloud-platform-compounding"
+                  className="text-primary hover:text-primary-hover transition-colors"
+                >
+                  cloud infrastructure consultants
+                </Link>{" "}
+                design platforms that compound: assessed estate, defensible
+                target architecture, wave-based migration, FinOps as a
+                discipline, and platform engineering that turns cloud into
+                deploy frequency.
+              </p>
+            </div>
           </motion.div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { metric: "99.99%", label: "Uptime SLA achieved across deployments" },
-              { metric: "40%", label: "Average cost reduction post-migration" },
-              { metric: "100+", label: "Cloud migrations delivered" }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="text-5xl md:text-6xl font-bold text-charcoal mb-3">{item.metric}</div>
-                <p className="text-lg text-charcoal/60">{item.label}</p>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
-      {/* Section 3: Thought Leadership Paragraphs (F100) */}
-      <section className="py-20 bg-white">
-        <div className="container px-4 md:px-12">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              True cloud value comes from re-architecting, not just re-hosting. A simple "lift and shift" migration often results in higher costs and the same operational headaches—just in a different location.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              We build systems that leverage the unique capabilities of the cloud—auto-scaling, managed services, and global distribution—to deliver performance, resilience, and cost efficiency that on-premise infrastructure simply cannot match.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              Infrastructure should be code. Manual server provisioning is a relic. Infrastructure-as-Code (IaC) enables version control, automated testing, and disaster recovery in minutes, not days. Multi-cloud is often the answer—vendor lock-in is a real risk. FinOps is non-negotiable—cloud bills can spiral without proper governance.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
-      {/* How We Can Help Section - Cloud Infrastructure Capabilities */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-16"
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              How We Can Help
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Help Clients
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
-              Our Cloud Infrastructure Capabilities
-            </h2>
-            <p className="text-xl text-charcoal/60 max-w-2xl">
-              End-to-end cloud services from strategy to migration to ongoing optimization.
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six ways we make the cloud compound.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              We combine deep platform engineering with disciplined FinOps
+              and security to deliver cloud programs that retire legacy,
+              accelerate delivery, and stay defensible to the audit.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                title: "Cloud Migration Planning",
-                description: "Comprehensive assessment and roadmap for moving workloads to AWS, Azure, or GCP. We identify dependencies, risks, and the optimal migration sequence."
-              },
-              {
-                title: "Multi-Cloud Architecture",
-                description: "Design and implement architectures that span multiple cloud providers. Avoid vendor lock-in while leveraging the best services from each platform."
-              },
-              {
-                title: "Infrastructure as Code",
-                description: "Terraform, CloudFormation, and Pulumi implementations that make your infrastructure version-controlled, repeatable, and disaster-recovery ready."
-              },
-              {
-                title: "Kubernetes & Containers",
-                description: "Container orchestration with EKS, AKS, or GKE. We design, deploy, and manage Kubernetes clusters that scale with your workloads."
-              },
-              {
-                title: "Cloud Security & Compliance",
-                description: "Security-first architectures with IAM, encryption, network segmentation, and compliance frameworks for HIPAA, SOC 2, and PCI-DSS."
-              },
-              {
-                title: "FinOps & Cost Optimization",
-                description: "Implement cloud financial management practices. Reserved instances, spot pricing, right-sizing, and governance to control cloud spend."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-              >
-                <BainHoverCard title={item.title} description={item.description} />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4: Differentiator Section */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-12">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Image with accent block */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="relative"
-            >
-              <img 
-                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80" 
-                alt="Cloud infrastructure visualization" 
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-              {/* Accent block */}
-              <div className="absolute bottom-6 right-6 w-24 h-24 bg-primary rounded-lg" />
-            </motion.div>
-            
-            {/* Content */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold text-charcoal leading-[1.1] mb-8">
-                We've learned what works—and what doesn't.
-              </h2>
-              
-              <p className="text-xl text-charcoal/70 leading-relaxed mb-6">
-                The difference isn't luck. It's process. We've refined our approach over 100+ cloud migrations, learning what works for companies your size. We know how to architect for scale, optimize costs from day one, and avoid the pitfalls that derail most cloud projects.
-              </p>
-              
-              <p className="text-xl text-charcoal/70 leading-relaxed">
-                More importantly, we know when to go multi-cloud versus single-provider—saving you from vendor lock-in and unnecessary complexity.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 5: Our Approach (3-Column Consulting Format) */}
-      <section className="py-20 bg-base">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">
-              Our Approach
-            </span>
-            <h2 className="text-3xl md:text-5xl eb-garamond font-light text-white">
-              Build infrastructure that scales with your ambition
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-12">
-            {[
-              {
-                title: "Rethink your infrastructure",
-                description: "We help you move from rigid, on-premise systems to flexible cloud environments that adapt to business demands—scaling up for growth spurts and down during quiet periods."
-              },
-              {
-                title: "Migrate without disruption",
-                description: "We plan and execute migrations that keep your business running. Zero-downtime cutovers, automated rollback plans, and continuous validation ensure nothing breaks."
-              },
-              {
-                title: "Optimize continuously",
-                description: "Cloud isn't a destination—it's an operating model. We establish FinOps practices, automated monitoring, and governance frameworks that keep costs controlled and performance optimized."
-              }
-            ].map((pillar, i) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {services.map((service, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <h3 className="text-xl font-bold text-white mb-4">{pillar.title}</h3>
-                <p className="text-muted-foreground/50 leading-relaxed">{pillar.description}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Link href="/contact">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-4 bg-transparent">
-                Get in touch
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 6: Key Benefits - H100 Hover Cards */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              Beyond Lift and Shift
-            </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
-              Build systems that leverage the unique capabilities of the cloud.
-            </h2>
-          </motion.div>
-
-          {/* H100 Hover Effect Cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                title: "Adaptive Scaling",
-                description: "Auto-scaling groups and serverless patterns that handle millions of requests without manual intervention."
-              },
-              {
-                title: "Resilience First",
-                description: "Multi-region, active-active architectures that survive data center failures and keep your business online."
-              },
-              {
-                title: "Cost Intelligence",
-                description: "FinOps practices, spot instances, and automated resource scheduling to maximize every dollar spent."
-              },
-              {
-                title: "Cloud-Native Core",
-                description: "Managed services from Kubernetes to serverless databases that reduce operational overhead."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-              >
-                <BainHoverCard title={item.title} description={item.description} />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 7: Tech Stack Section (Preserved Unique Section - Enhanced) */}
-      <section className="py-20 bg-white">
-        <div className="container px-4 md:px-12">
-          <div className="text-center mb-12">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-              Platform Mastery
-            </span>
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal mb-4">
-              Multi-Cloud Expertise
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We maintain deep partnerships and certifications across all major cloud providers.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { 
-                provider: "AWS", 
-                subtitle: "Advanced Consulting Partner",
-                icon: "☁️",
-                services: ["EC2, Lambda, Fargate", "RDS, DynamoDB, Aurora", "CloudFront, Route53"] 
-              },
-              { 
-                provider: "Azure", 
-                subtitle: "Gold Cloud Platform",
-                icon: "⚡",
-                services: ["AKS, App Service", "Cosmos DB, SQL Database", "Azure DevOps, GitHub Actions"] 
-              },
-              { 
-                provider: "Google Cloud", 
-                subtitle: "Premier Partner",
-                icon: "🌐",
-                services: ["GKE, Cloud Run", "BigQuery, Cloud Spanner", "Vertex AI, TensorFlow"] 
-              }
-            ].map((stack, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <div className="group bg-subtle p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition-all h-full">
-                  <div className="text-4xl mb-4">{stack.icon}</div>
-                  <div className="text-2xl font-bold text-charcoal mb-2 group-hover:text-primary transition-colors">{stack.provider}</div>
-                  <p className="text-sm text-muted-foreground mb-6">{stack.subtitle}</p>
-                  <ul className="space-y-3">
-                    {stack.services.map((service, j) => (
-                      <li key={j} className="flex items-center gap-3 text-sm text-charcoal/80">
-                        <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-                        <span>{service}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 8: Case Studies (F100) */}
-      <section className="py-24 bg-base">
-        <div className="container px-4 md:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-                Client Results
-              </span>
-              <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-white">
-                See how we've transformed cloud infrastructure for leading organizations.
-              </h2>
-            </motion.div>
-            <Link href="/cases">
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 bg-transparent">
-                View all case studies
-              </Button>
-            </Link>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                title: "Zero-Downtime Migration to AWS",
-                category: "Retail",
-                description: "Moving a $2B retailer from on-premise to cloud without a single minute of downtime.",
-                image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop",
-                link: "/cases/retail-cloud-migration"
-              },
-              {
-                title: "Multi-Region Architecture for FinTech",
-                category: "Financial Services",
-                description: "Building a globally distributed platform that processes 10M transactions daily with 99.99% uptime.",
-                image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-                link: "/cases/fintech-multi-region"
-              }
-            ].map((study, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <Link href={study.link} className="group block">
-                  <div className="relative h-[350px] rounded-lg overflow-hidden">
-                    <img 
-                      src={study.image}
-                      alt={study.title} 
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent" />
-                    <div className="absolute bottom-0 left-0 p-8">
-                      <span className="text-xs font-bold text-primary mb-3 uppercase tracking-wider block">{study.category}</span>
-                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
-                        {study.title}
-                      </h3>
-                      <p className="text-white/70 line-clamp-2">{study.description}</p>
-                    </div>
+                <Link href={service.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col">
+                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                      {service.description}
+                    </p>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Learn more
+                    </span>
                   </div>
                 </Link>
               </motion.div>
@@ -516,72 +257,334 @@ export default function CloudInfrastructure() {
         </div>
       </section>
 
-      {/* Section 9: Featured Insight Banner (Preserved Unique Section) */}
-      <section className="py-16 bg-primary">
-        <div className="container px-4 md:px-12">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="text-white">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/70 mb-2 block">Featured Insight</span>
-              <h3 className="text-2xl md:text-3xl font-bold mb-2">The CTO's Guide to Cloud Modernization</h3>
-              <p className="text-white/80">A comprehensive framework for transforming your infrastructure.</p>
-            </div>
-            <Link href="/insights/cto-guide-cloud-modernization">
-              <Button className="bg-white text-primary hover:bg-subtle px-8 py-4 font-semibold whitespace-nowrap">
-                Download the Guide <ArrowRight className="ml-2 w-4 h-4 inline" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 10: Related Capabilities - H100 Hover */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-12"
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-              Related Capabilities
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Experience &amp; Impact
             </span>
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal">
-              Explore more Technology capabilities
-            </h2>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Measurable outcomes from cloud platforms in production.
+            </h3>
           </motion.div>
 
-          <div className="grid md:grid-cols-4 gap-6">
-            {relatedCapabilities.map((cap, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
+            {outcomes.map((item, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`${
+                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
+                }`}
               >
-                <BainHoverCard title={cap.title} description={cap.description} link={cap.link} />
+                <div
+                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
+                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                >
+                  {item.stat}
+                </div>
+                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
+                  {item.label}
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 11: CTA Section (F100 - Cyan Background) */}
-      <section className="py-24 bg-primary">
-        <div className="container px-4 md:px-12">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl eb-garamond font-bold text-white mb-6">
-              Ready to modernize your cloud infrastructure?
-            </h2>
-            <p className="text-xl text-white/80 mb-10">
-              Let's discuss how our cloud expertise can help you build a scalable, resilient foundation.
+      {/* SLOT 5 — Light grey Approach / Methodology framework */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Think About It
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The Compounding Cloud Framework
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Four integrated phases that move cloud from cost shift to
+              durable platform advantage.
             </p>
-            <Link href="/contact">
-              <Button className="bg-white hover:bg-subtle text-primary px-10 py-6 text-lg font-semibold">
-                Start a Conversation <ArrowRight className="ml-2 w-5 h-5 inline" />
-              </Button>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {approach.map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={step.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 flex flex-col">
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
+                      {step.description}
+                    </p>
+                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Explore
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Cloud that compounds. NexDyne clients have cut run-rate spend
+              by more than a third while lifting deploy frequency by
+              multiples&mdash;turning cloud into measurable advantage.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              We&rsquo;ve led migrations and modernizations across financial
+              services, healthcare, retail, and industrial&mdash;each held
+              accountable to deploy frequency, change-failure rate, and unit
+              economics, not just cost takeout.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
             </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 7 — White Case studies / proof */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Cloud infrastructure, proved in outcomes.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={result.image}
+                        alt={result.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="p-8 lg:p-10">
+                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                        {result.industry}
+                      </span>
+                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                        {result.title}
+                      </h3>
+                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
+                        {result.description}
+                      </p>
+                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                        Read Case
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-14">
+            <Link href="/cases">
+              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                See All Case Studies
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 8 — White Related capabilities / cross-sell */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Related Offerings
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Adjacent capabilities for a complete cloud program.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {relatedOfferings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Make the cloud compound. Start with a defensible target
+                  architecture.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="retail">Retail &amp; E-commerce</SelectItem>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="public-sector">Public Sector</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders ready to treat cloud as a platform
+                  product&mdash;assessed, designed, migrated in waves, and
+                  operated against unit economics that hold up to the CFO.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>
