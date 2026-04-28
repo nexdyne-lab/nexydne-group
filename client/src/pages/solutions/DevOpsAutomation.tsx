@@ -1,454 +1,255 @@
-import React, { useEffect } from "react";
-import { useLocation, Link } from "wouter";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { 
-  GitBranch, 
-  Terminal, 
-  Zap, 
-  Shield, 
-  CheckCircle2,
-  RefreshCw,
-  Settings,
-  Server,
-  Lock,
-  Activity,
-  ArrowRight,
-  ArrowLeft
-} from "lucide-react";
-import BainHoverCard from "@/components/BainHoverCard";
+import SolutionHero from "@/components/SolutionHero";
 import { SEO } from "@/components/SEO";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import { Button } from "@/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
-export default function DevOpsSecurity() {
-  const [location, setLocation] = useLocation();
+export default function DevOpsAutomation() {
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  // Related capabilities data
-  const relatedCapabilities = [
+  const services = [
     {
-      title: "Data Modernization",
-      description: "Transform legacy silos into intelligent data platforms that drive real-time insights.",
-      link: "/solutions/enterprise-transformation/legacy-modernization"
+      title: "CI/CD Pipeline Implementation",
+      description:
+        "Modern delivery pipelines on GitHub Actions, GitLab CI, CircleCI, or Jenkins. Built for branch-to-prod in under thirty minutes — and the rollback safety to make that bearable.",
+      link: "/solutions/devops-automation/ci-cd-pipelines",
     },
     {
-      title: "Cloud Infrastructure",
-      description: "Scalable, secure foundations on AWS, Azure, and GCP.",
-      link: "/solutions/enterprise-transformation/cloud-infrastructure"
+      title: "Infrastructure as Code (Terraform, Pulumi)",
+      description:
+        "Reproducible infrastructure on Terraform, Pulumi, or CDK. Drift detection, module standards, and the discipline that turns infrastructure into code your team can review.",
+      link: "/solutions/devops-automation/infrastructure-as-code",
     },
     {
-      title: "System Integration",
-      description: "Connect disparate apps, data, and partners into a seamless ecosystem.",
-      link: "/solutions/enterprise-transformation/api-integration"
-    }
+      title: "Automated Testing Frameworks",
+      description:
+        "Unit, integration, contract, and end-to-end test automation wired into the pipeline. We design test pyramids that catch the right bugs at the right cost.",
+      link: "/solutions/devops-automation/automated-testing",
+    },
+    {
+      title: "Deployment Automation",
+      description:
+        "Blue-green, canary, and progressive delivery with feature flags. Cut deploy risk to the point where Friday deploys stop being a punchline.",
+      link: "/solutions/devops-automation/deployment-automation",
+    },
+    {
+      title: "Observability & Monitoring",
+      description:
+        "Logs, metrics, traces, and SLOs on Datadog, Grafana, OpenTelemetry, or your stack. The team that can see production sleeps better than the team that guesses.",
+      link: "/solutions/devops-automation/observability-monitoring",
+    },
+    {
+      title: "DevOps Maturity Assessment",
+      description:
+        "Where you are on DORA metrics, where peers are, and the eighteen-month roadmap that closes the gap. A baseline that turns DevOps from culture talk into a plan.",
+      link: "/solutions/devops-automation/maturity-assessment",
+    },
+  ];
+
+  const outcomes = [
+    {
+      // TODO: replace with real stat
+      stat: "120+",
+      label: "CI/CD pipelines designed and deployed across enterprise engineering teams",
+    },
+    {
+      // TODO: replace with real stat
+      stat: "6.8x",
+      label: "increase in deployment frequency after a typical DevOps engagement",
+    },
+    {
+      // TODO: replace with real stat
+      stat: "74%",
+      label: "average reduction in mean-time-to-restore after observability rollout",
+    },
+  ];
+
+  const approach = [
+    {
+      title: "Measure DORA First",
+      description:
+        "Deploy frequency, lead time, change-failure rate, MTTR. We baseline DORA before we touch a pipeline — so improvement isn't anecdotal.",
+      link: "/solutions/devops-automation/maturity-assessment",
+    },
+    {
+      title: "Pipeline as Product",
+      description:
+        "The pipeline has users — your engineers. We design it as a product with feedback loops, error messages, and the speed they actually need.",
+      link: "/solutions/devops-automation/ci-cd-pipelines",
+    },
+    {
+      title: "Automate the Risk Out",
+      description:
+        "Canary deploys, feature flags, automated rollbacks. We design delivery so that shipping at noon is no riskier than shipping at midnight.",
+      link: "/solutions/devops-automation/deployment-automation",
+    },
+    {
+      title: "Wire Observability In",
+      description:
+        "Logs, metrics, traces, and SLOs ship with the service — not after the first incident. The system that can be seen can be operated.",
+      link: "/solutions/devops-automation/observability-monitoring",
+    },
+  ];
+
+  const cases = [
+    {
+      industry: "SaaS & Technology",
+      title: "B2B SaaS Cuts Lead Time from Six Days to Four Hours",
+      description:
+        "A pipeline rebuild on GitHub Actions plus progressive delivery turned a quarterly release cadence into a multiple-deploys-per-day operation.",
+      image: "/images/case-devops-saas.jpg",
+      link: "/cases/saas-deploy-velocity",
+    },
+    {
+      industry: "Financial Services",
+      title: "Regional Bank Achieves Zero-Downtime Deploys with Canary Pipeline",
+      description:
+        "A regulated environment moved from off-hours change windows to safe-by-design canary deploys — and an audit trail the regulator approved.",
+      image: "/images/case-devops-bank.jpg",
+      link: "/cases/bank-canary-deploys",
+    },
+  ];
+
+  const relatedOfferings = [
+    {
+      title: "Cloud Modernization",
+      link: "/solutions/cloud-modernization",
+    },
+    {
+      title: "Site Reliability Engineering",
+      link: "/solutions/site-reliability-engineering",
+    },
+    {
+      title: "Application Modernization",
+      link: "/solutions/application-modernization",
+    },
+    {
+      title: "Platform Engineering",
+      link: "/solutions/platform-engineering",
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="DevOps & Security" 
-        description="Velocity meets security. Ship faster with automated pipelines that have compliance and safety baked in from day one."
-        canonical="/solutions/enterprise-transformation/devops-automation"
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="DevOps Automation"
+        description="CI/CD pipelines, infrastructure as code, deployment automation, and observability — engineered to take engineering velocity from quarterly to daily."
+        canonical="/solutions/devops-automation"
       />
       <Navigation />
 
-      {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[70vh] flex items-center pt-20 bg-charcoal">
-        <div className="container px-4 md:px-12 grid md:grid-cols-2 gap-8 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Breadcrumbs variant="light" />
-            
-            <h1 className="text-5xl md:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.05] mb-4">
-              DevOps & Security
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
-              Velocity meets security. Ship faster with automated pipelines that have compliance and safety baked in from day one.
-            </p>
-            
-            <div className="flex flex-wrap gap-4">
-              <Link href="/contact">
-                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
-                  Schedule a Consultation
-                </Button>
-              </Link>
-              <Link href="/case-studies">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
-                  View Case Studies
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="/images/devops-security-abstract.jpg" 
-              alt="DevOps & Security Visualization" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
-        </div>
-      </section>
+      {/* SLOT 1 — Charcoal hero */}
+      <SolutionHero
+        eyebrow="SOLUTION · DEVOPS AUTOMATION"
+        title="DevOps Automation"
+        subtitle="CI/CD, infrastructure as code, deployment automation, and observability — engineered to move engineering velocity from quarterly windows to multiple safe deploys a day."
+        backgroundImage="/images/solution-devops.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+      />
 
-      {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-20 bg-white border-b border-border">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-12"
+            className="max-w-[72ch]"
           >
-            <h2 className="text-2xl font-bold text-charcoal">Our Experience & Impact</h2>
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The deploy is the product. Everything else is opinion.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                A decade of DORA research has settled the debate: high-performing
+                engineering teams deploy more often, recover faster, and ship with
+                fewer change failures. The tools have caught up — Terraform, GitHub
+                Actions, Datadog, Argo — and the playbook is well known. The gap is
+                in execution discipline, not in technology choice.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                NexDyne's{" "}
+                <Link
+                  href="/insights/dora-metrics-roadmap"
+                  className="text-primary hover:text-primary-hover transition-colors"
+                >
+                  DevOps consultants
+                </Link>{" "}
+                build the pipelines, the IaC standards, and the observability stack
+                that move clients up the DORA performance bands — and stay there once
+                we hand off, because the platform was designed for the engineers who'd
+                inherit it.
+              </p>
+            </div>
           </motion.div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { metric: "90%", label: "Faster release cycles for clients" },
-              { metric: "99.9%", label: "Deployment success rate" },
-              { metric: "70%", label: "Fewer security incidents post-implementation" }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="text-5xl md:text-6xl font-bold text-charcoal mb-3">{item.metric}</div>
-                <p className="text-lg text-charcoal/60">{item.label}</p>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
-      {/* Section 3: Thought Leadership Paragraphs (F100) */}
-      <section className="py-20 bg-white">
-        <div className="container px-4 md:px-12">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              Traditional security gates slow you down. They create friction between development and operations, turning every release into a multi-week ordeal of manual reviews and sign-offs.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              We shift security left, making it an accelerator of innovation rather than a bottleneck. By embedding security into every stage of the development lifecycle, we help organizations ship faster while reducing risk.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              Speed and security aren't trade-offs—the fastest organizations are also the most secure. Automation eliminates the human errors that cause most breaches. Compliance should be continuous, not an annual fire drill. Infrastructure is code, version-controlled, tested, and reproducible.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4: Differentiator Section */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-12">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Image with accent block */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="relative"
-            >
-              <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80" 
-                alt="DevOps pipeline visualization" 
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-              {/* Accent block */}
-              <div className="absolute bottom-6 right-6 w-24 h-24 bg-primary rounded-lg" />
-            </motion.div>
-            
-            {/* Content */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold text-charcoal leading-[1.1] mb-8">
-                We've learned what works—and what doesn't.
-              </h2>
-              
-              <p className="text-xl text-charcoal/70 leading-relaxed mb-6">
-                The difference isn't luck. It's process. We've refined our approach across dozens of DevSecOps transformations, learning what works for companies your size. We know how to build pipelines that are both fast and secure.
-              </p>
-              
-              <p className="text-xl text-charcoal/70 leading-relaxed">
-                More importantly, we know when to automate and when to keep humans in the loop—avoiding the over-engineering that plagues most DevOps initiatives.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 5: Our Approach (3-Column Consulting Format) */}
-      <section className="py-20 bg-base">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">
-              Our Approach
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Help Clients
             </span>
-            <h2 className="text-3xl md:text-5xl eb-garamond font-light text-white">
-              Ship faster without sacrificing quality or security
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-12">
-            {[
-              {
-                title: "Automate the boring stuff",
-                description: "Manual deployments, environment setup, and testing slow teams down and introduce errors. We build pipelines that handle the repetitive work so your engineers can focus on solving problems."
-              },
-              {
-                title: "Bake security in from the start",
-                description: "Security can't be an afterthought. We integrate vulnerability scanning, compliance checks, and access controls into your CI/CD pipeline—catching issues before they reach production."
-              },
-              {
-                title: "Build a culture, not just tools",
-                description: "Tools alone don't create DevOps success. We help teams adopt shared ownership, blameless postmortems, and continuous improvement practices that sustain velocity over time."
-              }
-            ].map((pillar, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <h3 className="text-xl font-bold text-white mb-4">{pillar.title}</h3>
-                <p className="text-muted-foreground/50 leading-relaxed">{pillar.description}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Link href="/contact">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-4 bg-transparent">
-                Get in touch
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 6: Key Benefits - H100 Hover Cards */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              The DevSecOps Advantage
-            </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
-              Security as an accelerator, not a bottleneck.
-            </h2>
-          </motion.div>
-
-          {/* H100 Hover Effect Cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                title: "Rapid Release Cycles",
-                description: "Move from quarterly releases to on-demand deployment with CI/CD pipelines that reduce cycle time by 90%."
-              },
-              {
-                title: "Automated Compliance",
-                description: "Bake compliance checks (SOC2, HIPAA, GDPR) into the code itself, ensuring every commit is verified."
-              },
-              {
-                title: "Infrastructure as Code",
-                description: "Provision environments instantly with Terraform and Ansible, eliminating configuration drift."
-              },
-              {
-                title: "Proactive Monitoring",
-                description: "Full-stack observability that correlates logs, metrics, and traces for instant root cause analysis."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-              >
-                <BainHoverCard title={item.title} description={item.description} />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 7: Tech Stack Section (Preserved Unique Section - Enhanced) */}
-      <section className="py-20 bg-white">
-        <div className="container px-4 md:px-12">
-          <div className="text-center mb-12">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-              DevSecOps Toolchain
-            </span>
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal mb-4">
-              Enterprise-Grade Tools
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We leverage best-in-class tools to build secure, automated delivery pipelines.
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six ways we move you up the DORA bands.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              We combine modern delivery tooling with the operational discipline of
+              teams that have lived through the post-mortem — engineering pipelines,
+              infrastructure, and observability that hold up at production scale.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { 
-                category: "CI/CD", 
-                subtitle: "Automation Engines",
-                icon: "⚙️",
-                tools: ["GitHub Actions", "GitLab CI", "Jenkins"] 
-              },
-              { 
-                category: "Infrastructure", 
-                subtitle: "Provisioning & Config",
-                icon: "🏗️",
-                tools: ["Terraform", "Ansible", "Pulumi"] 
-              },
-              { 
-                category: "Security", 
-                subtitle: "Scanning & Compliance",
-                icon: "🛡️",
-                tools: ["SonarQube (SAST)", "OWASP ZAP (DAST)", "Snyk (Dependency)"] 
-              }
-            ].map((stack, i) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {services.map((service, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <div className="group bg-subtle p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition-all h-full">
-                  <div className="text-4xl mb-4">{stack.icon}</div>
-                  <div className="text-2xl font-bold text-charcoal mb-2 group-hover:text-primary transition-colors">{stack.category}</div>
-                  <p className="text-sm text-muted-foreground mb-6">{stack.subtitle}</p>
-                  <ul className="space-y-3">
-                    {stack.tools.map((tool, j) => (
-                      <li key={j} className="flex items-center gap-3 text-sm text-charcoal/80">
-                        <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-                        <span>{tool}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 8: Case Studies (F100) */}
-      <section className="py-24 bg-base">
-        <div className="container px-4 md:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-                Client Results
-              </span>
-              <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-white">
-                See how we've transformed engineering organizations.
-              </h2>
-            </motion.div>
-            <Link href="/cases">
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 bg-transparent">
-                View all case studies
-              </Button>
-            </Link>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                title: "From 4 Releases to 400 Per Year",
-                category: "Financial Services",
-                description: "How a regional bank transformed their release cadence while maintaining regulatory compliance.",
-                image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-                link: "/cases/bank-devops-transformation"
-              },
-              {
-                title: "Zero-Trust Security at Scale",
-                category: "Healthcare",
-                description: "Building a HIPAA-compliant CI/CD pipeline that processes 10,000 deployments monthly.",
-                image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2670&auto=format&fit=crop",
-                link: "/cases/healthcare-devsecops"
-              }
-            ].map((study, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <Link href={study.link} className="group block">
-                  <div className="relative h-[350px] rounded-lg overflow-hidden">
-                    <img 
-                      src={study.image}
-                      alt={study.title} 
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent" />
-                    <div className="absolute bottom-0 left-0 p-8">
-                      <span className="text-xs font-bold text-primary mb-3 uppercase tracking-wider block">{study.category}</span>
-                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
-                        {study.title}
-                      </h3>
-                      <p className="text-white/70 line-clamp-2">{study.description}</p>
-                    </div>
+                <Link href={service.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col">
+                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                      {service.description}
+                    </p>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Learn more
+                    </span>
                   </div>
                 </Link>
               </motion.div>
@@ -457,72 +258,336 @@ export default function DevOpsSecurity() {
         </div>
       </section>
 
-      {/* Section 9: Featured Insight Banner (Preserved Unique Section) */}
-      <section className="py-16 bg-primary">
-        <div className="container px-4 md:px-12">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="text-white">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/70 mb-2 block">Featured Insight</span>
-              <h3 className="text-2xl md:text-3xl font-bold mb-2">The DevSecOps Maturity Model</h3>
-              <p className="text-white/80">A comprehensive framework for building secure, high-velocity engineering teams.</p>
-            </div>
-            <Link href="/insights/devsecops-maturity-model">
-              <Button className="bg-white text-primary hover:bg-subtle px-8 py-4 font-semibold whitespace-nowrap">
-                Download the Guide <ArrowRight className="ml-2 w-4 h-4 inline" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 10: Related Capabilities - H100 Hover */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-12"
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-              Related Capabilities
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Experience & Impact
             </span>
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal">
-              Explore more Technology capabilities
-            </h2>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Measurable outcomes from teams shipping daily.
+            </h3>
           </motion.div>
 
-          <div className="grid md:grid-cols-4 gap-6">
-            {relatedCapabilities.map((cap, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
+            {outcomes.map((item, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`${
+                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
+                }`}
               >
-                <BainHoverCard title={cap.title} description={cap.description} link={cap.link} />
+                {/* TODO: replace with real stat */}
+                <div
+                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
+                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                >
+                  {item.stat}
+                </div>
+                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
+                  {item.label}
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 11: CTA Section (F100 - Cyan Background) */}
-      <section className="py-24 bg-primary">
-        <div className="container px-4 md:px-12">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl eb-garamond font-bold text-white mb-6">
-              Ready to accelerate your engineering velocity?
-            </h2>
-            <p className="text-xl text-white/80 mb-10">
-              Let's discuss how our DevSecOps expertise can help you ship faster and more securely.
+      {/* SLOT 5 — Light grey Approach / Methodology framework */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Think About It
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The DORA-First Framework
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Four integrated disciplines that take engineering teams from monthly
+              releases to multiple-deploys-a-day — without the on-call cost.
             </p>
-            <Link href="/contact">
-              <Button className="bg-white hover:bg-subtle text-primary px-10 py-6 text-lg font-semibold">
-                Start a Conversation <ArrowRight className="ml-2 w-5 h-5 inline" />
-              </Button>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {approach.map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={step.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 flex flex-col">
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
+                      {step.description}
+                    </p>
+                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Explore
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Engineering velocity that compounds. NexDyne DevOps clients have moved
+              from quarterly releases to multiple safe deploys a day — and from
+              hour-long incidents to minute-long ones.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              We've rebuilt delivery platforms across SaaS, financial services,
+              healthcare, and regulated industries — treating velocity, safety, and
+              observability as the trio that has to ship together.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
             </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 7 — White Case studies / proof */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              DevOps automation, proved in outcomes.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={result.image}
+                        alt={result.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="p-8 lg:p-10">
+                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                        {result.industry}
+                      </span>
+                      {/* TODO: replace with real stat */}
+                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                        {result.title}
+                      </h3>
+                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
+                        {result.description}
+                      </p>
+                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                        Read Case
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-14">
+            <Link href="/cases">
+              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                See All Case Studies
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 8 — White Related capabilities / cross-sell */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Related Offerings
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Adjacent capabilities for a complete platform program.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {relatedOfferings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our DevOps team into your next delivery conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="technology">Technology & SaaS</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="retail">Retail & E-commerce</SelectItem>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders ready to move engineering velocity from
+                  quarterly to daily — and to inherit a delivery platform that the
+                  in-house team can run after we leave.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>

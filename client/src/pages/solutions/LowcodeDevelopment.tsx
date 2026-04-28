@@ -1,338 +1,598 @@
+import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Link } from "wouter";
-import { ArrowRight, Zap, DollarSign, Puzzle, RefreshCw } from "lucide-react";
-import { RelatedContent } from "@/components/RelatedContent";
-import { dataRelatedItems } from "@/data/related-content";
+import SolutionHero from "@/components/SolutionHero";
+import { SEO } from "@/components/SEO";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
-export function LowcodeDevelopment() {
+export default function LowcodeDevelopment() {
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
+
+  const services = [
+    {
+      title: "Platform Selection",
+      description:
+        "OutSystems, Mendix, PowerApps, Appian, ServiceNow App Engine. We run a structured selection that maps your portfolio, your stack, and your IT operating model to the right platform — not the loudest one.",
+      link: "/solutions/lowcode-development/platform-selection",
+    },
+    {
+      title: "Citizen Developer Enablement",
+      description:
+        "Training, guardrails, and the support model that turns business analysts into productive app builders — without creating shadow IT.",
+      link: "/solutions/lowcode-development/citizen-developer-enablement",
+    },
+    {
+      title: "Lowcode App Development",
+      description:
+        "We build production-grade lowcode apps for the use cases where lowcode wins — workflow, internal tools, customer portals, and operational front ends.",
+      link: "/solutions/lowcode-development/app-development",
+    },
+    {
+      title: "Enterprise Integration",
+      description:
+        "Lowcode apps that talk to SAP, Salesforce, and the rest of your stack. We design the integration layer so apps don't end up as pretty data silos.",
+      link: "/solutions/lowcode-development/enterprise-integration",
+    },
+    {
+      title: "Governance for Lowcode",
+      description:
+        "Application standards, lifecycle gates, environment management, and the security review process that keeps your lowcode estate auditable.",
+      link: "/solutions/lowcode-development/governance",
+    },
+    {
+      title: "Lowcode CoE Establishment",
+      description:
+        "Stand up the Center of Excellence — operating model, roles, KPIs, and onboarding — that turns lowcode from a tool into a capability your business can scale.",
+      link: "/solutions/lowcode-development/coe-establishment",
+    },
+  ];
+
+  const outcomes = [
+    {
+      // TODO: replace with real stat
+      stat: "85+",
+      label: "lowcode applications shipped on OutSystems, Mendix, and PowerApps",
+    },
+    {
+      // TODO: replace with real stat
+      stat: "5.4x",
+      label: "average delivery speed advantage on lowcode versus equivalent custom build",
+    },
+    {
+      // TODO: replace with real stat
+      stat: "40%",
+      label: "average reduction in IT backlog after a citizen developer program",
+    },
+  ];
+
+  const approach = [
+    {
+      title: "Pick the Right Workload",
+      description:
+        "Lowcode isn't for everything. We help you identify the apps where lowcode is the right answer — and steer the rest to custom or COTS.",
+      link: "/solutions/lowcode-development/platform-selection",
+    },
+    {
+      title: "Govern from Day One",
+      description:
+        "Without governance, lowcode becomes shadow IT. We design the lifecycle gates, environment standards, and security reviews up front.",
+      link: "/solutions/lowcode-development/governance",
+    },
+    {
+      title: "Enable, Don't Replace",
+      description:
+        "Citizen developers and pro developers belong in the same operating model. We design the support and escalation paths that keep both productive.",
+      link: "/solutions/lowcode-development/citizen-developer-enablement",
+    },
+    {
+      title: "Build the CoE",
+      description:
+        "Sustained lowcode value comes from the Center of Excellence — the standards, the platform team, and the community that holds it all together.",
+      link: "/solutions/lowcode-development/coe-establishment",
+    },
+  ];
+
+  const cases = [
+    {
+      industry: "Manufacturing",
+      title: "Industrial Manufacturer Ships 28 OutSystems Apps in Eighteen Months",
+      description:
+        "A new lowcode CoE plus a citizen-developer cohort cleared an eighteen-month IT backlog and shipped twenty-eight production apps in the same window.",
+      image: "/images/case-lowcode-mfg.jpg",
+      link: "/cases/mfg-lowcode-coe",
+    },
+    {
+      industry: "Insurance",
+      title: "Regional Insurer Cuts Claims Triage Time by 64% with PowerApps",
+      description:
+        "A targeted PowerApps build wrapped around the existing core system delivered claims-triage automation in twelve weeks — without a system replacement.",
+      image: "/images/case-lowcode-insurer.jpg",
+      link: "/cases/insurer-lowcode-claims",
+    },
+  ];
+
+  const relatedOfferings = [
+    {
+      title: "Custom Software",
+      link: "/solutions/custom-software",
+    },
+    {
+      title: "Application Modernization",
+      link: "/solutions/application-modernization",
+    },
+    {
+      title: "Workflow Automation",
+      link: "/solutions/workflow-automation",
+    },
+    {
+      title: "Enterprise Integration",
+      link: "/solutions/enterprise-integration",
+    },
+  ];
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Lowcode Development"
+        description="Lowcode and nocode platform implementation — OutSystems, Mendix, PowerApps. Strategy, build, governance, and the Center of Excellence to make it stick."
+        canonical="/solutions/lowcode-development"
+      />
       <Navigation />
-      
-      {/* Breadcrumb */}
-      <div className="container py-4">
-        <div className="flex items-center gap-2 text-sm text-muted-foreground">
-          <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
-          <span>/</span>
-          <Link href="/intelligent-process-optimization" className="hover:text-foreground transition-colors">Intelligent Process Optimization</Link>
-          <span>/</span>
-          <Link href="/solutions/app-development" className="hover:text-foreground transition-colors">App Development</Link>
-          <span>/</span>
-          <span className="text-foreground">Low-code Development</span>
-        </div>
-      </div>
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-rose-900 to-rose-800 text-white py-24">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl font-bold mb-3 eb-garamond">Low-code Development</h1>
-            </div>
-            <div>
-              <p className="text-xl leading-relaxed">
-                Build unique applications that differentiate your business. Fast time-to-market, agile iteration, and flexible customization for evolving requirements.
+      {/* SLOT 1 — Charcoal hero */}
+      <SolutionHero
+        eyebrow="SOLUTION · LOWCODE DEVELOPMENT"
+        title="Lowcode Development"
+        subtitle="OutSystems, Mendix, PowerApps, and the platforms that turn workflow apps from twelve-month builds into twelve-week deliveries — without sacrificing the governance enterprises require."
+        backgroundImage="/images/solution-lowcode.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[72ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Lowcode isn't a shortcut. It's a different stack — for a specific kind of work.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                The lowcode market has matured past the early hype. Platforms like
+                OutSystems, Mendix, and PowerApps now ship enterprise-grade workflow,
+                portal, and operational apps at five-times-plus the velocity of
+                equivalent custom builds. The gap between high and low performers
+                isn't tooling — it's governance, platform selection, and the
+                operating model around the build.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                NexDyne's{" "}
+                <Link
+                  href="/insights/lowcode-platform-selection"
+                  className="text-primary hover:text-primary-hover transition-colors"
+                >
+                  lowcode consultants
+                </Link>{" "}
+                run platform selection, build the apps, and stand up the Center of
+                Excellence — so that lowcode becomes a sustained capability your
+                business can scale, not a one-time project that decays into shadow IT.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="py-20 bg-white">
-        <div className="container">
-          <div className="grid md:grid-cols-[300px_1fr] gap-16">
-            {/* Contact Person */}
-            <div>
-              <h2 className="text-3xl font-bold mb-8">The benefits of low-code</h2>
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-24 h-24 rounded-full bg-blue-200"></div>
-                </div>
-                <div>
-                  <p className="font-semibold mb-2">Do you want to know more?</p>
-                  <button className="px-6 py-2 border-2 border-primary text-charcoal rounded-full hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out">
-                    Ask Martijn Voorveld
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* Benefits Grid */}
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                  <Zap className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold">Rapid time-to-market</h3>
-                <p className="text-muted-foreground">
-                  Visual development accelerates delivery by 5-10x compared to traditional coding. Launch MVPs in weeks, not quarters, and validate ideas before competitors catch up.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                  <DollarSign className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold">Lower total cost of ownership</h3>
-                <p className="text-muted-foreground">
-                  Reduce development costs by 50-70% while maintaining enterprise-grade quality. Faster delivery means revenue generation starts sooner, improving ROI on every project.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                  <Puzzle className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold">Tailored business fit</h3>
-                <p className="text-muted-foreground">
-                  Low-code platforms make customization straightforward. Build applications that match your exact workflows and business logic—no compromising on generic SaaS features.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
-                  <RefreshCw className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-xl font-bold">Agile evolution</h3>
-                <p className="text-muted-foreground">
-                  Adapt to changing requirements without rewriting code. Updates and enhancements deploy in days, keeping your applications aligned with business needs as markets shift.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Content Explanation Section */}
-      <section className="py-20 bg-subtle">
-        <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold mb-8 text-center">Accelerate innovation with low-code</h2>
-          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
-            <p>
-              Low-code development uses visual modeling and pre-built components to create enterprise applications with minimal hand-coding. Instead of writing thousands of lines of code, developers assemble applications using drag-and-drop interfaces, workflow builders, and reusable templates. This approach compresses development timelines from months to weeks while maintaining the flexibility to customize for unique business requirements.
+      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Help Clients
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+            style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six ways we make lowcode an enterprise capability.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              We combine deep platform fluency in OutSystems, Mendix, and PowerApps
+              with the governance discipline of teams that have lived through the
+              shadow-IT clean-up — building lowcode programs that scale.
             </p>
-            <p>
-              The benefits extend beyond speed. Low-code reduces costs by 50-70%, makes applications easier to maintain, and enables rapid iteration based on user feedback. It's ideal for organizations that need to innovate quickly, relieve pressure on IT teams, or test new ideas without committing to lengthy development cycles. Even non-technical business analysts can participate in application design, bridging the gap between business needs and technical execution.
-            </p>
-          </div>
-        </div>
-      </section>
+          </motion.div>
 
-      {/* Quote Section */}
-      <section className="py-20 bg-gradient-to-br from-rose-100 to-rose-50">
-        <div className="container max-w-4xl text-center">
-          <blockquote className="text-3xl font-bold text-rose-900 mb-6">
-            "With low-code, speed to market isn't a compromise—it's your competitive advantage. Imagine it, and we'll build it in weeks, not quarters."
-          </blockquote>
-          <p className="text-lg text-muted-foreground">Martijn Voorveld - Chief Technology Officer, NEXDYNE</p>
-        </div>
-      </section>
-
-      {/* Approach Section */}
-      <section className="py-20 bg-white">
-        <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold mb-8 text-center">How we approach low-code</h2>
-          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
-            <p>
-              Whether you're launching a new product or modernizing legacy systems, you need a partner who understands both business strategy and technical execution. As low-code specialists with expertise across multiple platforms—Mendix, OutSystems, Microsoft Power Platform—we deliver solutions that scale with your business. We think long-term: every application we build is designed for maintainability, extensibility, and future growth.
-            </p>
-            <p>
-              Our approach starts with understanding your business objectives, not just technical requirements. We map workflows, identify integration points, and design data models that support your operations. Then we build iteratively, delivering working prototypes in weeks so you can validate assumptions and gather user feedback early. This agile methodology reduces risk and ensures the final application solves real problems, not hypothetical ones.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-100 to-peach-100">
-        <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-[200px_1fr] gap-12 items-center">
-              <div className="flex items-center justify-center">
-                <div className="w-40 h-40 rounded-full bg-blue-200"></div>
-              </div>
-              <div>
-                <h2 className="text-3xl font-bold mb-4">Do you want to know more?</h2>
-                <p className="text-lg mb-2">Martijn Voorveld</p>
-                <p className="text-muted-foreground mb-6">Chief Technology Officer</p>
-                <div className="flex gap-4">
-                  <button className="px-8 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors duration-200 ease-in-out">
-                    Get in touch
-                  </button>
-                  <button className="px-8 py-3 border-2 border-primary text-charcoal rounded-full hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out flex items-center gap-2">
-                    Schedule a meeting <ArrowRight className="w-4 h-4" />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Partners Section */}
-      <section className="py-20 bg-white">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="mb-12">
-              <p className="text-sm font-semibold text-primary mb-2">Partners</p>
-              <h2 className="text-4xl font-bold mb-4">Platform partners that power rapid delivery</h2>
-              <button className="px-6 py-2 border-2 border-primary text-charcoal rounded-full hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out">
-                All partners
-              </button>
-            </div>
-            
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="p-8 border-2 border-border rounded-lg hover:border-blue-500 transition-colors">
-                <div className="h-24 flex items-center justify-center mb-4">
-                  <div className="text-2xl font-bold text-primary">Mendix</div>
-                </div>
-                <h3 className="font-bold mb-2">Mendix</h3>
-                <p className="text-sm text-muted-foreground">Enterprise-grade low-code platform for complex applications</p>
-              </div>
-
-              <div className="p-8 border-2 border-border rounded-lg hover:border-blue-500 transition-colors">
-                <div className="h-24 flex items-center justify-center mb-4">
-                  <div className="text-2xl font-bold text-primary">OutSystems</div>
-                </div>
-                <h3 className="font-bold mb-2">OutSystems</h3>
-                <p className="text-sm text-muted-foreground">High-performance low-code for mission-critical systems</p>
-              </div>
-
-              <div className="p-8 border-2 border-border rounded-lg hover:border-blue-500 transition-colors">
-                <div className="h-24 flex items-center justify-center mb-4">
-                  <div className="text-2xl font-bold text-primary">Power Platform</div>
-                </div>
-                <h3 className="font-bold mb-2">Microsoft Power Platform</h3>
-                <p className="text-sm text-muted-foreground">Low-code tools integrated with Microsoft 365 ecosystem</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why NEXDYNE Section */}
-      <section className="py-20 bg-subtle">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            <div>
-              <img 
-                src="/app-development-hero.af074160.jpg" 
-                alt="NEXDYNE office" 
-                className="w-full h-[400px] object-cover rounded-lg"
-              />
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold mb-6">Why NEXDYNE</h2>
-              <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-                Whether you need a strategic technology partner, acceleration for your digital transformation, or exceptional user experiences for your customers, you've found the right team. With our next-generation low-code solutions, you'll always stay ahead of the competition.
-              </p>
-              <button className="px-8 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors duration-200 ease-in-out">
-                Get in touch
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Cases Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
-        <div className="container">
-          <div className="mb-12">
-            <p className="text-sm font-semibold text-primary mb-2">Cases</p>
-            <h2 className="text-4xl font-bold mb-4">Cases we love talking about</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mb-8">
-              Heard of a business that transforms unique business challenges into exceptional outcomes? That'd be us. Check out these inspiring cases!
-            </p>
-            <button className="px-6 py-2 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors duration-200 ease-in-out">
-              All cases
-            </button>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <Link href="/cases/insurance-claims-portal" className="group">
-              <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-                <img 
-                  src="/insurance-claims-portal.92f37a95.jpg" 
-                  alt="Insurance Claims Portal" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                    Insurance Company Launches Digital Claims Portal in 8 Weeks
-                  </h3>
-                  <p className="text-muted-foreground mb-4">
-                    Regional insurer replaces paper-based claims processing with Mendix low-code portal—reducing processing time from 14 days to 2 hours.
-                  </p>
-                  <div className="flex items-center text-primary font-semibold">
-                    Read more <ArrowRight className="ml-2 w-4 h-4" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {services.map((service, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={service.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col">
+                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                      {service.description}
+                    </p>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Learn more
+                    </span>
                   </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Experience & Impact
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Measurable outcomes from lowcode programs in production.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
+            {outcomes.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`${
+                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
+                }`}
+              >
+                {/* TODO: replace with real stat */}
+                <div
+                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
+                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                >
+                  {item.stat}
                 </div>
-              </div>
+                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
+                  {item.label}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 5 — Light grey Approach / Methodology framework */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Think About It
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The Lowcode-at-Scale Framework
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Four integrated phases that turn lowcode from a one-off pilot into the
+              sustained delivery capability your business can keep scaling.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {approach.map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={step.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 flex flex-col">
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
+                      {step.description}
+                    </p>
+                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Explore
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Lowcode that lasts. NexDyne clients have cleared multi-year IT
+              backlogs, stood up Centers of Excellence, and turned platform pilots
+              into the most productive part of the engineering portfolio.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              We've built lowcode programs across manufacturing, insurance,
+              healthcare, and the public sector — treating governance, integration,
+              and the operating model as the inputs that decide whether lowcode
+              scales or shrinks.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
             </Link>
+          </motion.div>
+        </div>
+      </section>
 
-            <Link href="/cases/logistics-tracking-app" className="group">
-              <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-                <img 
-                  src="/logistics-tracking-app.6af6fd0f.jpg" 
-                  alt="Logistics Tracking App" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                    Logistics Firm Builds Real-Time Tracking App for 500 Drivers
-                  </h3>
-                  <p className="text-muted-foreground mb-4">
-                    3PL provider deploys OutSystems mobile app for package tracking and route optimization—improving on-time delivery from 82% to 96%.
-                  </p>
-                  <div className="flex items-center text-primary font-semibold">
-                    Read more <ArrowRight className="ml-2 w-4 h-4" />
-                  </div>
-                </div>
-              </div>
-            </Link>
+      {/* SLOT 7 — White Case studies / proof */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Lowcode, proved in outcomes.
+            </h3>
+          </motion.div>
 
-            <Link href="/cases/municipal-permit-system" className="group">
-              <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-                <img 
-                  src="/municipal-permit-system.03378c44.jpg" 
-                  alt="Municipal Permit System" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                    City Government Modernizes Permit System Serving 250K Residents
-                  </h3>
-                  <p className="text-muted-foreground mb-4">
-                    Municipal government replaces 30-year-old legacy system with Power Platform solution—reducing permit approval time from 45 days to 7 days.
-                  </p>
-                  <div className="flex items-center text-primary font-semibold">
-                    Read more <ArrowRight className="ml-2 w-4 h-4" />
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={result.image}
+                        alt={result.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="p-8 lg:p-10">
+                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                        {result.industry}
+                      </span>
+                      {/* TODO: replace with real stat */}
+                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                        {result.title}
+                      </h3>
+                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
+                        {result.description}
+                      </p>
+                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                        Read Case
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-14">
+            <Link href="/cases">
+              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                See All Case Studies
+              </span>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Services Footer Navigation */}
-      <section className="py-12 bg-white border-t">
-        <div className="container">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="font-bold mb-4">App Development Services</h3>
-              <ul className="space-y-2">
-                <li><Link href="/solutions/app-development" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"><ArrowRight className="w-4 h-4" /> App Development</Link></li>
-                <li><Link href="/solutions/lowcode-development" className="text-primary font-semibold flex items-center gap-2"><ArrowRight className="w-4 h-4" /> Low-code Development</Link></li>
-              </ul>
+      {/* SLOT 8 — White Related capabilities / cross-sell */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Related Offerings
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Adjacent capabilities for a complete delivery portfolio.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {relatedOfferings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our lowcode team into your next platform conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="insurance">Insurance</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="public-sector">Public Sector</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders ready to treat lowcode as the enterprise
+                  capability it is — with the platform, the governance, and the
+                  Center of Excellence to back it.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
             </div>
           </div>
         </div>
       </section>
 
-      <RelatedContent items={dataRelatedItems} />
       <Footer />
     </div>
   );

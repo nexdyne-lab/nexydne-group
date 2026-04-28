@@ -1,386 +1,596 @@
+import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { RelatedContent } from "@/components/RelatedContent";
-import { dataRelatedItems } from "@/data/related-content";
+import SolutionHero from "@/components/SolutionHero";
+import { SEO } from "@/components/SEO";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function DataGovernance() {
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
+
+  const services = [
+    {
+      title: "Governance Framework Design",
+      description:
+        "Define ownership, decision rights, and policy. We design governance frameworks that fit your operating model — not the textbook one — and that people will actually follow.",
+      link: "/solutions/data-governance/framework-design",
+    },
+    {
+      title: "Data Lineage & Cataloging",
+      description:
+        "End-to-end lineage and discoverability across the modern stack. Collibra, Alation, OpenMetadata, Unity Catalog — picked and configured for the platform you actually run.",
+      link: "/solutions/data-governance/lineage-cataloging",
+    },
+    {
+      title: "Data Quality Programs",
+      description:
+        "Quality as a managed program — KPIs, ownership, remediation cycles. We build the operating cadence that turns one-off cleanups into sustained data trust.",
+      link: "/solutions/data-governance/quality-programs",
+    },
+    {
+      title: "Regulatory Compliance (GDPR, CCPA, HIPAA)",
+      description:
+        "Privacy-by-design controls, subject-rights workflows, retention policies, and audit trails. Compliance built into the platform, not bolted onto the dashboard.",
+      link: "/solutions/data-governance/regulatory-compliance",
+    },
+    {
+      title: "Data Stewardship Programs",
+      description:
+        "Stewards who own the data, the definitions, and the remediation. We design the role, the responsibilities, and the working agreements that make stewardship stick.",
+      link: "/solutions/data-governance/stewardship-programs",
+    },
+    {
+      title: "Governance Maturity Assessment",
+      description:
+        "Where you are, where peers are, and what the next eighteen months should look like. A baseline assessment that turns governance from theory into a roadmap.",
+      link: "/solutions/data-governance/maturity-assessment",
+    },
+  ];
+
+  const outcomes = [
+    {
+      // TODO: replace with real stat
+      stat: "45+",
+      label: "data governance programs designed and operationalized for mid-market enterprises",
+    },
+    {
+      // TODO: replace with real stat
+      stat: "3.2x",
+      label: "increase in business confidence in reported data after governance rollout",
+    },
+    {
+      // TODO: replace with real stat
+      stat: "67%",
+      label: "average reduction in time to fulfill regulatory data subject requests",
+    },
+  ];
+
+  const approach = [
+    {
+      title: "Start with Trust",
+      description:
+        "Governance only works if the business trusts the data and the process. We build trust before we build policy — by demonstrating quality wins early.",
+      link: "/solutions/data-governance/quality-programs",
+    },
+    {
+      title: "Pick the Right Battles",
+      description:
+        "You can't govern everything at once. We help leaders prioritize the domains that drive the most regulatory, financial, or operational risk first.",
+      link: "/solutions/data-governance/maturity-assessment",
+    },
+    {
+      title: "Design for the Operator",
+      description:
+        "The steward, the engineer, and the analyst are the ones living with the policy. We design controls that fit their workflow — not anchor them down.",
+      link: "/solutions/data-governance/stewardship-programs",
+    },
+    {
+      title: "Wire It Into the Platform",
+      description:
+        "Governance built into the catalog, the pipeline, and the warehouse — not a separate spreadsheet — is the only governance that survives a re-org.",
+      link: "/solutions/data-governance/lineage-cataloging",
+    },
+  ];
+
+  const cases = [
+    {
+      industry: "Healthcare",
+      title: "Health System Achieves HIPAA Audit Pass with Zero Findings",
+      description:
+        "A governance framework rebuilt around lineage, access controls, and steward-led remediation cleared the audit window with the regulator's full approval.",
+      image: "/images/case-governance-health.jpg",
+      link: "/cases/health-hipaa-audit",
+    },
+    {
+      industry: "Financial Services",
+      title: "Mid-Market Bank Cuts Data Subject Request Turnaround by 79%",
+      description:
+        "A subject-rights workflow wired into the catalog and CRM turned a manual six-week process into a four-day operation.",
+      image: "/images/case-governance-bank.jpg",
+      link: "/cases/bank-subject-rights",
+    },
+  ];
+
+  const relatedOfferings = [
+    {
+      title: "Data Strategy",
+      link: "/solutions/data-strategy",
+    },
+    {
+      title: "Data Engineering",
+      link: "/solutions/data-engineering",
+    },
+    {
+      title: "Cybersecurity & Compliance",
+      link: "/solutions/cybersecurity-compliance",
+    },
+    {
+      title: "Risk Management",
+      link: "/solutions/risk-management",
+    },
+  ];
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Data Governance"
+        description="Frameworks for trustworthy data — lineage, quality, regulatory compliance, and stewardship designed to fit your operating model and survive a re-org."
+        canonical="/solutions/data-governance"
+      />
       <Navigation />
-      {/* Breadcrumb */}
-      <nav className="bg-slate-50 py-4">
-        <div className="container">
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <Link href="/">
-              <a className="hover:text-primary">Home</a>
-            </Link>
-            <span>/</span>
-            <Link href="/solutions/data-solutions">
-              <a className="hover:text-primary">Data Solutions</a>
-            </Link>
-            <span>/</span>
-            <span className="text-charcoal">Data Governance</span>
-          </div>
-        </div>
-      </nav>
 
-      {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-slate-900 to-slate-700">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-white">
-              <h1 className="text-5xl font-bold mb-3 eb-garamond">
-                Data Governance
-              </h1>
-              <p className="text-xl mb-8 text-slate-200">
-                Access controls, compliance frameworks, and data quality monitoring. Ensure teams get the data they need while maintaining security, privacy, and regulatory compliance.
+      {/* SLOT 1 — Charcoal hero */}
+      <SolutionHero
+        eyebrow="SOLUTION · DATA GOVERNANCE"
+        title="Data Governance"
+        subtitle="Frameworks for trustworthy data — lineage, quality, regulatory compliance, and stewardship — built to fit your operating model and earn the trust of the business that depends on it."
+        backgroundImage="/images/solution-data-governance.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[72ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Governance is the work nobody asks for until the audit. We build it before that.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                Most data governance programs fail the same way: a steering committee,
+                a glossary nobody reads, and a tool that becomes shelfware in eighteen
+                months. The programs that succeed look different — they start with a
+                quality win, build trust with the business, and only then introduce
+                policy that people are willing to follow.
               </p>
-              <Button size="lg" className="bg-blue-500 hover:bg-blue-600 text-white">
-                Ask Martijn Voorveld
-              </Button>
-            </div>
-            <div className="relative">
-              <img
-                src="/data-governance-hero.3e546fbe.jpg"
-                alt="Data Governance"
-                className="rounded-lg shadow-2xl"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="mb-12">
-            <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">
-              THE BENEFITS
-            </p>
-            <h2 className="text-4xl font-bold text-charcoal">
-              Why Data Governance Matters
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Benefit 1 */}
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <svg className="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-charcoal mb-3">
-                  Compliance you can prove
-                </h3>
-                <p className="text-lg text-charcoal/80">
-                  Audit trails that document who accessed what data, when, and why. Automated compliance reporting for GDPR, HIPAA, SOC 2, and industry-specific regulations. When auditors ask questions, you have answers backed by immutable logs and policy enforcement records.
-                </p>
-              </div>
-            </div>
-
-            {/* Benefit 2 */}
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <svg className="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-charcoal mb-3">
-                  Access controls that scale
-                </h3>
-                <p className="text-lg text-charcoal/80">
-                  Role-based permissions that grant data access based on job function, not manual approvals. Attribute-based policies that enforce row-level security automatically. Self-service data access for analysts without exposing sensitive fields or violating compliance rules.
-                </p>
-              </div>
-            </div>
-
-            {/* Benefit 3 */}
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <svg className="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-charcoal mb-3">
-                  Data quality you can trust
-                </h3>
-                <p className="text-lg text-charcoal/80">
-                  Automated validation rules that catch bad data before it corrupts downstream systems. Data quality dashboards that track completeness, accuracy, consistency, and timeliness metrics. Alerting that notifies data owners when quality thresholds are breached.
-                </p>
-              </div>
-            </div>
-
-            {/* Benefit 4 */}
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <svg className="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-charcoal mb-3">
-                  Discoverable and documented
-                </h3>
-                <p className="text-lg text-charcoal/80">
-                  Data catalogs that make datasets searchable by business term, not technical table name. Automated lineage tracking that shows where data comes from and where it's used. Business glossaries that define metrics consistently across teams so "revenue" means the same thing everywhere.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Methodology Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-charcoal mb-8">
-            From chaos to control
-          </h2>
-          
-          <div className="prose prose-lg max-w-none text-charcoal/80 space-y-6">
-            <p>
-              Most organizations treat data governance as a compliance checkbox—policies nobody reads, committees that never meet, and tools that collect dust. We build governance systems that people actually use because they make work easier, not harder.
-            </p>
-
-            <p>
-              Our approach starts with understanding your risk profile and regulatory requirements. Healthcare organizations need HIPAA-compliant audit trails. Financial services need SOC 2 controls and data residency guarantees. Retailers need GDPR consent management and right-to-be-forgotten workflows. We map your obligations to technical controls that enforce compliance automatically.
-            </p>
-
-            <p>
-              We implement governance in layers: access controls at the data platform level (who can query what tables), row-level security for multi-tenant scenarios (customers only see their own data), field-level masking for sensitive attributes (analysts see anonymized PII), and audit logging that captures every data access event with tamper-proof timestamps.
-            </p>
-
-            <blockquote className="border-l-4 border-blue-500 pl-6 italic text-xl text-charcoal">
-              "Governance that works is governance that's invisible. Users get the data they need without thinking about policies, and compliance happens automatically."
-            </blockquote>
-            <p className="text-sm text-muted-foreground">
-              — Martijn Voorveld, Commercial Lead - NEXDYNE TECHNOLOGIES
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Data Quality Section */}
-      <section className="py-20">
-        <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-charcoal mb-8">
-            Data quality at scale
-          </h2>
-          
-          <div className="prose prose-lg max-w-none text-charcoal/80 space-y-6">
-            <p>
-              Bad data costs money—incorrect forecasts, failed campaigns, compliance violations, and lost customer trust. We build data quality systems that prevent problems instead of detecting them after the damage is done.
-            </p>
-
-            <p>
-              Our quality framework includes validation rules at ingestion (reject malformed records before they enter the warehouse), transformation tests that verify business logic (revenue should always be positive), schema evolution monitoring (alert when upstream systems change field definitions), and reconciliation checks that compare record counts and totals across systems.
-            </p>
-
-            <p>
-              We instrument quality metrics into dashboards that data owners monitor daily: completeness (what percentage of records have required fields populated), accuracy (how often do values match authoritative sources), consistency (do related fields agree logically), and timeliness (how fresh is the data compared to SLAs). When quality degrades, automated alerts notify responsible teams with enough context to diagnose root causes quickly.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container">
-          <div className="max-w-3xl mx-auto bg-white rounded-lg p-12 shadow-lg">
-            <div className="flex items-center gap-8">
-              <div className="w-24 h-24 bg-slate-200 rounded-full"></div>
-              <div>
-                <h3 className="text-2xl font-bold text-charcoal mb-3">
-                  Want to know more?
-                </h3>
-                <p className="text-muted-foreground mb-4">Martijn Voorveld</p>
-                <p className="text-sm text-muted-foreground mb-6">Senior Sales Manager</p>
-                <div className="flex gap-4">
-                  <Button className="bg-slate-900 hover:bg-slate-800 text-white">
-                    Get in touch
-                  </Button>
-                  <Button variant="ghost" className="text-charcoal">
-                    Schedule a meeting
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Partners Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="mb-12">
-            <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">
-              PARTNERS
-            </p>
-            <h2 className="text-4xl font-bold text-charcoal">
-              Governance & Compliance Tools
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="border border-slate-200 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-charcoal mb-3">Collibra</h3>
-              <p className="text-muted-foreground">
-                Enterprise data catalog and governance platform for policy management and lineage tracking.
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                NexDyne's{" "}
+                <Link
+                  href="/insights/data-governance-that-sticks"
+                  className="text-primary hover:text-primary-hover transition-colors"
+                >
+                  data governance consultants
+                </Link>{" "}
+                build frameworks that fit your operating model — GDPR, CCPA, HIPAA,
+                SOX, or your industry's specific regime — wired into the catalog and
+                the pipeline so governance survives the next re-org and the next
+                platform migration.
               </p>
             </div>
-
-            <div className="border border-slate-200 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-charcoal mb-3">Alation</h3>
-              <p className="text-muted-foreground">
-                Data catalog with AI-powered search, automated documentation, and collaborative data stewardship.
-              </p>
-            </div>
-
-            <div className="border border-slate-200 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-charcoal mb-3">Monte Carlo</h3>
-              <p className="text-muted-foreground">
-                Data observability platform for automated quality monitoring, anomaly detection, and incident management.
-              </p>
-            </div>
-
-            <div className="border border-slate-200 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-charcoal mb-3">Immuta</h3>
-              <p className="text-muted-foreground">
-                Automated data access control and privacy enforcement for cloud data platforms.
-              </p>
-            </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Case Studies Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container">
-          <div className="mb-12">
-            <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">
-              CASES
+      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Help Clients
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six ways we make governance stick.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              We combine regulatory fluency with the operational discipline of teams
+              that have lived through audits — designing controls that fit the
+              platform, the steward, and the regulator all at once.
             </p>
-            <h2 className="text-4xl font-bold text-charcoal mb-4">
-              Cases we love talking about
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl">
-              Real governance implementations. Real compliance outcomes. See how we've deployed data governance systems that balance security with accessibility.
-            </p>
-          </div>
+          </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Healthcare HIPAA Case */}
-            <Link href="/cases/healthcare-hipaa-compliance">
-              <div className="bg-white rounded-lg overflow-hidden border border-slate-200 hover:shadow-lg transition-shadow cursor-pointer">
-                <img
-                  src="/healthcare-hipaa-compliance.14a658d2.jpg"
-                  alt="Healthcare HIPAA Compliance"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded-full mb-3">
-                    HEALTHCARE
-                  </span>
-                  <h3 className="text-xl font-bold text-charcoal mb-2">
-                    Hospital Achieves HIPAA Compliance with Automated Audit Trails
-                  </h3>
-                  <p className="text-muted-foreground mb-4">
-                    Automated access controls and audit logging for 12,000 employees accessing patient records across 8 facilities.
-                  </p>
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-primary font-semibold">Read more</span>
-                    <ArrowRight className="w-4 h-4 text-primary" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {services.map((service, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={service.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col">
+                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                      {service.description}
+                    </p>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Learn more
+                    </span>
                   </div>
-                </div>
-              </div>
-            </Link>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            {/* Financial Data Quality Case */}
-            <Link href="/cases/financial-data-quality">
-              <div className="bg-white rounded-lg overflow-hidden border border-slate-200 hover:shadow-lg transition-shadow cursor-pointer">
-                <img
-                  src="/financial-data-quality.4282ec32.jpg"
-                  alt="Financial Data Quality"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <span className="inline-block px-3 py-1 bg-secondary/10 text-secondary text-xs font-semibold rounded-full mb-3">
-                    FINANCIAL SERVICES
-                  </span>
-                  <h3 className="text-xl font-bold text-charcoal mb-2">
-                    Bank Reduces Data Quality Issues 78% with Automated Validation
-                  </h3>
-                  <p className="text-muted-foreground mb-4">
-                    Real-time data quality monitoring across 200+ source systems feeding regulatory reports.
-                  </p>
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-primary font-semibold">Read more</span>
-                    <ArrowRight className="w-4 h-4 text-primary" />
-                  </div>
-                </div>
-              </div>
-            </Link>
+      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Experience & Impact
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Measurable outcomes from governance programs that survived the audit.
+            </h3>
+          </motion.div>
 
-            {/* Retail GDPR Case */}
-            <Link href="/cases/retail-gdpr-compliance">
-              <div className="bg-white rounded-lg overflow-hidden border border-slate-200 hover:shadow-lg transition-shadow cursor-pointer">
-                <img
-                  src="/retail-gdpr-compliance.2c43df67.jpg"
-                  alt="Retail GDPR Compliance"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <span className="inline-block px-3 py-1 bg-purple-100 text-purple-700 text-xs font-semibold rounded-full mb-3">
-                    RETAIL
-                  </span>
-                  <h3 className="text-xl font-bold text-charcoal mb-2">
-                    Retailer Implements GDPR-Compliant Data Catalog for 15M Customers
-                  </h3>
-                  <p className="text-muted-foreground mb-4">
-                    Consent management, right-to-be-forgotten workflows, and data residency controls across EU markets.
-                  </p>
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-primary font-semibold">Read more</span>
-                    <ArrowRight className="w-4 h-4 text-primary" />
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
+            {outcomes.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`${
+                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
+                }`}
+              >
+                {/* TODO: replace with real stat */}
+                <div
+                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
+                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                >
+                  {item.stat}
                 </div>
-              </div>
+                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
+                  {item.label}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 5 — Light grey Approach / Methodology framework */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Think About It
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The Trust-First Framework
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Four integrated phases that take governance from steering-committee
+              theatre to the operating discipline that earns the business's trust.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {approach.map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={step.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 flex flex-col">
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
+                      {step.description}
+                    </p>
+                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Explore
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Governance the auditors believe and the business respects. NexDyne
+              clients have cleared regulator audits, cut subject-request turnaround,
+              and rebuilt the trust that makes data a strategic asset.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              We've built governance programs across healthcare, financial services,
+              retail, and the public sector — designed to fit the regulator, the
+              steward, and the platform you actually run.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 7 — White Case studies / proof */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Governance, proved in outcomes.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={result.image}
+                        alt={result.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="p-8 lg:p-10">
+                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                        {result.industry}
+                      </span>
+                      {/* TODO: replace with real stat */}
+                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                        {result.title}
+                      </h3>
+                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
+                        {result.description}
+                      </p>
+                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                        Read Case
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-14">
+            <Link href="/cases">
+              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                See All Case Studies
+              </span>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-700 text-white">
-        <div className="container text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            Ready to implement data governance that actually works?
-          </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto text-slate-200">
-            Let's build compliance frameworks, access controls, and data quality systems that protect your business while enabling self-service analytics.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-500 hover:bg-blue-600 text-white">
-              Get in touch
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              Schedule a meeting
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
+      {/* SLOT 8 — White Related capabilities / cross-sell */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Related Offerings
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Adjacent capabilities for a complete data trust program.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {relatedOfferings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
-          <RelatedContent items={dataRelatedItems} />
+
+      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our governance team into your next audit-readiness conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="public-sector">Public Sector</SelectItem>
+                    <SelectItem value="retail">Retail & E-commerce</SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders ready to treat data governance as the trust
+                  contract it is — with the regulator, the customer, and the business
+                  that depends on the dashboard.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
-
     </div>
   );
 }

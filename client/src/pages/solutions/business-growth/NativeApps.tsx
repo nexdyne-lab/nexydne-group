@@ -1,271 +1,596 @@
+import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { AnimatedSection } from "@/components/AnimatedSection";
-import { ArrowRight, Smartphone, Zap, Shield, Crown } from "lucide-react";
-import { RelatedContent } from "@/components/RelatedContent";
-import { dataRelatedItems } from "@/data/related-content";
+import SolutionHero from "@/components/SolutionHero";
+import { SEO } from "@/components/SEO";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function NativeApps() {
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
+
+  const services = [
+    {
+      title: "iOS Native (Swift)",
+      description:
+        "Swift and SwiftUI engineered for the device. We build apps that feel like first-party Apple — fluid, responsive, and at home on every iPhone and iPad screen size.",
+      link: "/solutions/native-apps/ios-native",
+    },
+    {
+      title: "Android Native (Kotlin)",
+      description:
+        "Kotlin and Jetpack Compose for the full Android device matrix. Material 3 fidelity, deep integration with Google services, and the performance ceiling of pure native.",
+      link: "/solutions/native-apps/android-native",
+    },
+    {
+      title: "Native UX/UI Design",
+      description:
+        "Platform-respecting interaction design. We design to the Human Interface Guidelines and Material spec — not against them — so the app feels native, not ported.",
+      link: "/solutions/native-apps/native-ux-ui",
+    },
+    {
+      title: "Native Modernization",
+      description:
+        "Replatform legacy hybrid or aging Objective-C and Java codebases onto modern Swift and Kotlin. Cut crash rates, restore feature velocity, and unlock platform features.",
+      link: "/solutions/native-apps/native-modernization",
+    },
+    {
+      title: "Native Performance Optimization",
+      description:
+        "Frame-by-frame profiling, memory tuning, battery-conscious architecture. When the App Store ranking depends on speed, we deliver the milliseconds that matter.",
+      link: "/solutions/native-apps/performance-optimization",
+    },
+    {
+      title: "Native App Analytics & Instrumentation",
+      description:
+        "Crash analytics, funnel telemetry, A/B infrastructure, and event taxonomy. The team that measures the device beats the team that guesses about it.",
+      link: "/solutions/native-apps/analytics-instrumentation",
+    },
+  ];
+
+  const outcomes = [
+    {
+      // TODO: replace with real stat
+      stat: "60+",
+      label: "native iOS and Android apps shipped to the App Store and Play Store",
+    },
+    {
+      // TODO: replace with real stat
+      stat: "73%",
+      label: "average crash rate reduction after a native modernization engagement",
+    },
+    {
+      // TODO: replace with real stat
+      stat: "4.0",
+      label: "median App Store and Play Store rating across our shipped portfolio",
+    },
+  ];
+
+  const approach = [
+    {
+      title: "Decide Native, Decide Why",
+      description:
+        "Native is a choice with cost. We make it for performance, platform integration, or App Store positioning — never by default.",
+      link: "/solutions/native-apps/native-ux-ui",
+    },
+    {
+      title: "Design to the Platform",
+      description:
+        "Apple and Google have spent decades shaping interaction patterns. We design with their grain, not against it, for instant familiarity.",
+      link: "/solutions/native-apps/native-ux-ui",
+    },
+    {
+      title: "Engineer for the Device",
+      description:
+        "Native means leveraging the device — Metal, Core ML, ARKit, CameraX, sensors. We architect to use what's there, not abstract it away.",
+      link: "/solutions/native-apps/performance-optimization",
+    },
+    {
+      title: "Instrument Before Launch",
+      description:
+        "Crash analytics, performance traces, and event telemetry ship with v1. The native app that measures itself improves; the one that doesn't decays.",
+      link: "/solutions/native-apps/analytics-instrumentation",
+    },
+  ];
+
+  const cases = [
+    {
+      industry: "Media & Entertainment",
+      title: "Streaming Service Cuts Startup Time by 62% with a Swift Rewrite",
+      description:
+        "A legacy hybrid app rebuilt natively in Swift restored category-leading launch performance and lifted day-one viewership.",
+      image: "/images/case-native-streaming.jpg",
+      link: "/cases/streaming-native-rewrite",
+    },
+    {
+      industry: "Healthcare",
+      title: "Medical Device App Achieves Sub-100ms Response on Kotlin Native",
+      description:
+        "A regulated Android app demanding real-time sensor fusion required pure Kotlin native — and the precision it delivered.",
+      image: "/images/case-native-medical.jpg",
+      link: "/cases/medical-native-kotlin",
+    },
+  ];
+
+  const relatedOfferings = [
+    {
+      title: "Mobile Apps",
+      link: "/solutions/mobile-apps",
+    },
+    {
+      title: "Cross-Platform Apps",
+      link: "/solutions/cross-platform-apps",
+    },
+    {
+      title: "Mobile UX Design",
+      link: "/solutions/mobile-ux-design",
+    },
+    {
+      title: "App Modernization",
+      link: "/solutions/app-modernization",
+    },
+  ];
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Native Apps"
+        description="Pure native iOS (Swift) and Android (Kotlin) development for apps where performance, platform integration, and App Store positioning matter."
+        canonical="/solutions/native-apps"
+      />
       <Navigation />
 
-      {/* Hero Section - Blue Background */}
-      <section className="relative bg-gradient-to-br from-base via-base to-base text-white py-16 md:py-20 lg:py-24">
-        <div className="container">
-          <div className="mb-6 md:mb-8">
-            <div className="flex items-center gap-2 text-xs md:text-sm text-white/70">
-              <Link href="/services/ecommerce" className="hover:text-white transition-colors">
-                Services
-              </Link>
-              <span>/</span>
-              <Link href="/services/ecommerce" className="hover:text-white transition-colors">
-                E-commerce
-              </Link>
-              <span>/</span>
-              <span className="text-white">Native apps</span>
-            </div>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 eb-garamond">Native apps</h1>
-            </div>
-            <div>
-              <p className="text-lg md:text-xl leading-relaxed">
-                Unlock device-native capabilities and deliver seamless mobile experiences that drive lasting customer engagement.
+      {/* SLOT 1 — Charcoal hero */}
+      <SolutionHero
+        eyebrow="SOLUTION · NATIVE APPS"
+        title="Native Apps"
+        subtitle="Pure native iOS and Android — Swift and Kotlin — for apps where performance, platform integration, and App Store positioning are the difference between leading and lagging."
+        backgroundImage="/images/solution-native-apps.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[72ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Cross-platform is the right answer most of the time. Native is the right answer when it isn't.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                For roughly seventy percent of mobile programs, React Native or Flutter
+                is the right call. For the other thirty — apps where the performance
+                ceiling, platform integration, or App Store ranking decides the
+                business outcome — pure native still wins. The challenge is knowing
+                which side of that line your product sits on, and committing fully
+                once you do.
               </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                NexDyne's{" "}
+                <Link
+                  href="/insights/native-vs-cross-platform"
+                  className="text-primary hover:text-primary-hover transition-colors"
+                >
+                  native mobile consultants
+                </Link>{" "}
+                build Swift and Kotlin apps that use the device — Metal, Core ML,
+                CameraX, the full sensor stack — and ship with the instrumentation
+                discipline of teams that have lived through one hypergrowth launch
+                already.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Help Clients
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six ways we ship native that earns the App Store front page.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              We combine deep platform fluency in Swift and Kotlin with the
+              instrumentation discipline of teams that have shipped through scale —
+              delivering apps that feel native, perform native, and rank native.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {services.map((service, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={service.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col">
+                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                      {service.description}
+                    </p>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Learn more
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Experience & Impact
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Measurable outcomes from native apps in production.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
+            {outcomes.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`${
+                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
+                }`}
+              >
+                {/* TODO: replace with real stat */}
+                <div
+                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
+                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                >
+                  {item.stat}
+                </div>
+                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
+                  {item.label}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 5 — Light grey Approach / Methodology framework */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Think About It
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The Native-First Framework
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Four integrated phases that take a native app from platform decision to
+              App Store ranking — without the architectural detours.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {approach.map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={step.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 flex flex-col">
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
+                      {step.description}
+                    </p>
+                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Explore
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Apps that the App Store rewards. NexDyne native clients ship faster
+              startups, smoother frames, and the kind of category rankings that
+              compound into install velocity.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              We've built consumer, enterprise, and regulated-industry native apps
+              from MVP through hyperscale — treating performance, accessibility, and
+              observability as launch features, not later phases.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 7 — White Case studies / proof */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Native apps, proved in outcomes.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={result.image}
+                        alt={result.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="p-8 lg:p-10">
+                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                        {result.industry}
+                      </span>
+                      {/* TODO: replace with real stat */}
+                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                        {result.title}
+                      </h3>
+                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
+                        {result.description}
+                      </p>
+                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                        Read Case
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-14">
+            <Link href="/cases">
+              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                See All Case Studies
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 8 — White Related capabilities / cross-sell */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Related Offerings
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Adjacent capabilities for a complete mobile program.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {relatedOfferings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our native team into your next App Store conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="media">Media & Entertainment</SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="retail">Retail & E-commerce</SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders who treat the App Store ranking as a business
+                  metric — not a marketing one — and want a native partner that ships
+                  with the device, not against it.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Benefits Section - White Background */}
-      <AnimatedSection className="py-12 md:py-16 lg:py-20 bg-white">
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
-            {/* Contact Person Card */}
-            <div className="lg:col-span-1">
-              <Card className="p-6 md:p-8 bg-gradient-to-br from-secondary/10 to-primary/10 border-secondary/20">
-                <div className="flex flex-col items-center text-center">
-                  <div className="relative mb-6">
-                    <div className="absolute inset-0 bg-secondary rounded-full blur-xl opacity-30"></div>
-                    <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-secondary/30">
-                      <img
-                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
-                        alt="Contact person"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-                  <h3 className="text-lg md:text-xl font-bold mb-4 text-base">Do you want to know more?</h3>
-                  <Button className="bg-primary text-white hover:bg-primary/90 rounded-full px-8 w-full sm:w-auto transition-colors duration-200 ease-in-out">
-                    Ask Sarah Chen
-                  </Button>
-                </div>
-              </Card>
-            </div>
-
-            {/* Benefits Cards */}
-            <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {[
-                {
-                  icon: <Smartphone className="w-8 h-8" />,
-                  title: "Offline-first architecture",
-                  description: "Essential features work seamlessly without internet. Empower your users to stay productive anywhere, anytime."
-                },
-                {
-                  icon: <Zap className="w-8 h-8" />,
-                  title: "Native-speed performance",
-                  description: "Instant load times and buttery-smooth animations. Deliver experiences that feel natural and keep users coming back."
-                },
-                {
-                  icon: <Shield className="w-8 h-8" />,
-                  title: "Bank-level security",
-                  description: "End-to-end encryption and biometric authentication. Protect sensitive data with enterprise-grade security standards."
-                },
-                {
-                  icon: <Crown className="w-8 h-8" />,
-                  title: "Direct customer engagement",
-                  description: "Push notifications, in-app messaging, and personalized experiences. Build lasting relationships that drive retention and loyalty."
-                }
-              ].map((benefit, index) => (
-                <AnimatedSection
-                  key={index}
-                  animation="fade-up"
-                  delay={index * 100}
-                  className="p-5 md:p-6 rounded-xl border-2 border-border hover:border-secondary hover:shadow-lg hover:shadow-secondary/20 transition-all duration-300 bg-white group"
-                >
-                  <div className="text-secondary mb-4 group-hover:scale-110 transition-transform">
-                    {benefit.icon}
-                  </div>
-                  <h3 className="text-lg md:text-xl font-bold mb-2 text-base group-hover:text-secondary transition-colors">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{benefit.description}</p>
-                </AnimatedSection>
-              ))}
-            </div>
-          </div>
-        </div>
-      </AnimatedSection>
-
-      {/* About Native Apps Section - Blue Background */}
-      <AnimatedSection className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-base via-base to-base">
-        <div className="container">
-          <div className="max-w-4xl mx-auto text-center px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-white">
-              What makes native apps different
-            </h2>
-            <p className="text-base md:text-lg lg:text-xl text-white/90 leading-relaxed">
-              Native applications deliver unmatched mobile experiences through deep hardware integration. Full access to GPS, Bluetooth, background processes, and push notifications unlocks capabilities web apps can't match. While progressive web apps serve certain use cases, native development offers superior performance and richer functionality. Native apps provide seamless experiences and sophisticated features that mobile browsers simply cannot replicate.
-            </p>
-          </div>
-        </div>
-      </AnimatedSection>
-
-      {/* Quote Section - White Background */}
-      <AnimatedSection className="py-12 md:py-16 lg:py-20 bg-white">
-        <div className="container">
-          <div className="max-w-4xl mx-auto px-4">
-            <blockquote className="text-xl md:text-2xl lg:text-3xl font-medium text-base mb-6 italic leading-relaxed">
-              "We architect native apps that function fully offline—critical for field teams and international users operating beyond reliable connectivity."
-            </blockquote>
-            <p className="text-base md:text-lg text-muted-foreground">
-              Marcus Rivera - Mobile Solutions Lead | NEXDYNE TECHNOLOGIES
-            </p>
-          </div>
-        </div>
-      </AnimatedSection>
-
-      {/* Our Native App Solutions Section - White Background */}
-      <AnimatedSection className="py-12 md:py-16 lg:py-20 bg-white">
-        <div className="container">
-          <div className="max-w-5xl mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-base">
-              NEXDYNE's native app approach
-            </h2>
-            <p className="text-base md:text-lg lg:text-xl text-charcoal/80 leading-relaxed mb-8 md:mb-12">
-              NEXDYNE engineers native applications precisely calibrated to organizational requirements and user expectations. Our focus on speed, security, and intuitive design creates meaningful brand interactions that drive measurable results. The outcome: heightened engagement and sustained customer loyalty. Native apps remain the optimal choice for enterprises seeking to harness full device capabilities and strengthen customer relationships.
-            </p>
-
-            {/* Large Contact Card */}
-            <Card className="p-6 md:p-10 lg:p-12 bg-white border-2 border-secondary/20 hover:border-secondary hover:shadow-2xl hover:shadow-secondary/20 transition-all duration-300">
-              <div className="flex flex-col md:flex-row items-center gap-8">
-                <div className="relative flex-shrink-0">
-                  <div className="absolute inset-0 bg-secondary rounded-full blur-2xl opacity-30"></div>
-                  <div className="relative w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-secondary/30">
-                    <img
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
-                      alt="Sarah Chen"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-2xl md:text-3xl font-bold mb-4 text-base">
-                    Do you want to know more?
-                  </h3>
-                  <p className="text-lg md:text-xl mb-2 font-semibold text-base">Sarah Chen</p>
-                  <p className="text-base md:text-lg text-muted-foreground mb-6">Mobile Solutions Director</p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <Button className="bg-primary text-white hover:bg-primary/90 rounded-full px-8 w-full sm:w-auto transition-colors duration-200 ease-in-out">
-                      Get in touch
-                    </Button>
-                    <Button variant="outline" className="border-2 border-primary text-charcoal hover:bg-primary hover:text-white rounded-full px-8 w-full sm:w-auto transition-colors duration-200 ease-in-out">
-                      Schedule a meeting
-                      <ArrowRight className="w-5 h-5 ml-2" />
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </Card>
-          </div>
-        </div>
-      </AnimatedSection>
-
-      {/* Why NEXDYNE Section - White Background */}
-      <AnimatedSection className="py-12 md:py-16 lg:py-20 bg-white">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="relative group order-2 md:order-1">
-              <div className="absolute inset-0 bg-secondary rounded-2xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
-              <img
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop"
-                alt="NEXDYNE office building"
-                className="relative rounded-2xl shadow-xl w-full"
-              />
-            </div>
-            <div className="order-1 md:order-2">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-base">
-                Why choose NEXDYNE
-              </h2>
-              <p className="text-base md:text-lg text-charcoal/80 leading-relaxed mb-6">
-                Seeking a strategic technology partner to accelerate digital transformation? NEXDYNE delivers next-generation solutions that position you ahead of market competition.
-              </p>
-              <p className="text-base md:text-lg text-charcoal/80 leading-relaxed mb-8">
-                Our mobile expertise creates exceptional customer experiences that drive business outcomes and sustainable competitive advantage.
-              </p>
-              <Button className="bg-primary text-white hover:bg-primary/90 rounded-full px-8 w-full sm:w-auto transition-colors duration-200 ease-in-out">
-                Get in touch
-              </Button>
-            </div>
-          </div>
-        </div>
-      </AnimatedSection>
-
-      {/* Partners Section - White Background */}
-      <AnimatedSection className="py-12 md:py-16 lg:py-20 bg-white border-t border-border">
-        <div className="container">
-          <div className="text-center mb-8 md:mb-12 px-4">
-            <p className="text-xs md:text-sm font-semibold text-secondary uppercase tracking-wide mb-2">PARTNERS</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-base">
-              Technology partners for native app excellence
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto px-4">
-            {["React Native", "Flutter", "Swift", "Kotlin"].map((partner, index) => (
-              <AnimatedSection
-                key={index}
-                animation="scale"
-                delay={index * 100}
-              >
-                <Card className="p-4 md:p-6 lg:p-8 h-32 md:h-40 flex items-center justify-center bg-white border-2 border-border hover:border-secondary hover:shadow-lg hover:shadow-secondary/20 transition-all duration-300 group">
-                  <span className="text-lg md:text-xl lg:text-2xl font-bold text-base group-hover:text-secondary transition-colors text-center">
-                    {partner}
-                  </span>
-                </Card>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </AnimatedSection>
-
-      {/* CTA Section - Blue Gradient */}
-      <AnimatedSection className="py-16 md:py-20 lg:py-24 bg-gradient-to-br from-base via-base to-base text-white">
-        <div className="container text-center px-4">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Ready to build your native app?
-          </h2>
-          <p className="text-base md:text-lg lg:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Let's create a powerful mobile experience that drives engagement and loyalty.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-primary hover:bg-white/90 rounded-full px-8 text-base md:text-lg w-full sm:w-auto transition-colors duration-200 ease-in-out">
-              Get Started
-            </Button>
-            <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary rounded-full px-8 text-base md:text-lg w-full sm:w-auto transition-colors duration-200 ease-in-out">
-              View Our Work
-            </Button>
-          </div>
-        </div>
-      </AnimatedSection>
-
-      <RelatedContent items={dataRelatedItems} />
       <Footer />
     </div>
   );

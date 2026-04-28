@@ -1,254 +1,598 @@
+import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { AnimatedSection } from "@/components/AnimatedSection";
-import { ArrowRight, Zap, Sparkles, MessageCircle, TrendingUp } from "lucide-react";
-import { RelatedContent } from "@/components/RelatedContent";
-import { dataRelatedItems } from "@/data/related-content";
+import SolutionHero from "@/components/SolutionHero";
+import { SEO } from "@/components/SEO";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function Chatbots() {
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
+
+  const services = [
+    {
+      title: "Customer Support Chatbots",
+      description:
+        "Deflect Tier 1 tickets and resolve common inquiries 24/7. Scripted flows backed by LLM augmentation handle the routine and escalate cleanly when humans are needed.",
+      link: "/solutions/chatbots/customer-support",
+    },
+    {
+      title: "Lead-Gen and Sales Chatbots",
+      description:
+        "Qualify, route, and book meetings on the website surface where intent is highest. Bots that capture context and hand sales a warm conversation, not a cold form.",
+      link: "/solutions/chatbots/lead-gen-sales",
+    },
+    {
+      title: "Internal Helpdesk Chatbots",
+      description:
+        "IT, HR, and ops self-service inside Slack, Teams, or your portal. Cut ticket volume by answering policy and password questions without a human in the loop.",
+      link: "/solutions/chatbots/internal-helpdesk",
+    },
+    {
+      title: "Multilingual Chatbots",
+      description:
+        "Serve global customers in their language with parity quality. Translation pipelines and language-aware intent routing built in from day one.",
+      link: "/solutions/chatbots/multilingual",
+    },
+    {
+      title: "Voice-Enabled Chatbots",
+      description:
+        "Conversational voice in IVR, kiosk, and mobile contexts. We design call flows that respect the channel and hand off to live agents without losing state.",
+      link: "/solutions/chatbots/voice-enabled",
+    },
+    {
+      title: "Bot Orchestration and Handoff",
+      description:
+        "The hardest part of chatbots is the handoff. We build orchestration layers that route between bots, agents, and systems while keeping the conversation context intact.",
+      link: "/solutions/chatbots/orchestration-handoff",
+    },
+  ];
+
+  const outcomes = [
+    {
+      // TODO: replace with real stat
+      stat: "70+",
+      label: "production chatbots deployed across support, sales, and internal ops",
+    },
+    {
+      // TODO: replace with real stat
+      stat: "62%",
+      label: "average Tier 1 ticket deflection within the first quarter live",
+    },
+    {
+      // TODO: replace with real stat
+      stat: "3.4x",
+      label: "ROI on lead-gen bot programs within twelve months",
+    },
+  ];
+
+  const approach = [
+    {
+      title: "Map the Conversation",
+      description:
+        "Audit real transcripts and tickets before designing flows. The bot script is shaped by what users actually say, not what we think they will.",
+      link: "/solutions/chatbots/customer-support",
+    },
+    {
+      title: "Hybrid by Design",
+      description:
+        "Combine deterministic scripts for compliance-sensitive paths with LLM augmentation for the long tail. Neither approach alone is enough.",
+      link: "/solutions/chatbots/orchestration-handoff",
+    },
+    {
+      title: "Instrument Every Turn",
+      description:
+        "Every utterance, intent match, and fallback gets logged. The bot that measures itself improves; the bot that doesn't decays.",
+      link: "/solutions/chatbots/internal-helpdesk",
+    },
+    {
+      title: "Design the Handoff",
+      description:
+        "When the bot can't help, the human takeover must feel seamless. We design escalation as a first-class feature, not an afterthought.",
+      link: "/solutions/chatbots/orchestration-handoff",
+    },
+  ];
+
+  const cases = [
+    {
+      industry: "Retail",
+      title: "National Retailer Deflects 68% of Support Tickets with a Hybrid Bot",
+      description:
+        "A scripted-plus-LLM chatbot handled order status, returns, and store hours, freeing live agents for high-value conversations.",
+      image: "/images/case-chatbot-retail.jpg",
+      link: "/cases/retail-chatbot-deflection",
+    },
+    {
+      industry: "Financial Services",
+      title: "Regional Bank Books 4x More Demos with a Lead-Gen Chatbot",
+      description:
+        "An on-site qualification bot turned anonymous traffic into qualified pipeline by routing intent in under thirty seconds.",
+      image: "/images/case-chatbot-bank.jpg",
+      link: "/cases/bank-chatbot-leadgen",
+    },
+  ];
+
+  const relatedOfferings = [
+    {
+      title: "Conversational AI",
+      link: "/solutions/conversational-ai",
+    },
+    {
+      title: "Customer Experience",
+      link: "/solutions/customer-experience",
+    },
+    {
+      title: "Contact Center Modernization",
+      link: "/solutions/contact-center-modernization",
+    },
+    {
+      title: "Digital Engagement",
+      link: "/solutions/digital-engagement",
+    },
+  ];
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Chatbots"
+        description="Conversational chatbots for support, sales, and internal helpdesk. Scripted flows, LLM augmentation, voice, and orchestration built for production."
+        canonical="/solutions/chatbots"
+      />
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-base via-base to-base text-white py-16 md:py-20 lg:py-24">
-        <div className="container px-4">
-          <div className="mb-6 md:mb-8">
-            <div className="flex items-center gap-2 text-xs md:text-sm text-white/70">
-              <Link href="/services/ecommerce" className="hover:text-white transition-colors">
-                Services
-              </Link>
-              <span>/</span>
-              <Link href="/services/ecommerce" className="hover:text-white transition-colors">
-                E-commerce
-              </Link>
-              <span>/</span>
-              <span className="text-white">Chatbots</span>
-            </div>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 eb-garamond">Chatbots</h1>
-            </div>
-            <div>
-              <p className="text-lg md:text-xl leading-relaxed">
-                Transform customer engagement with intelligent chatbot solutions. We build seamless, conversational experiences that drive satisfaction and loyalty.
+      {/* SLOT 1 — Charcoal hero */}
+      <SolutionHero
+        eyebrow="SOLUTION · CHATBOTS"
+        title="Chatbots"
+        subtitle="Conversational chatbots that deflect tickets, qualify leads, and serve employees. Scripted flows, LLM augmentation, voice, and orchestration — built to ship and built to scale."
+        backgroundImage="/images/solution-chatbots.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[72ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The chatbot is the new front door. Most companies are still letting it slam.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                Chatbots used to be a punchline — rigid scripts, dead-end flows, the
+                infamous "I didn't understand that." The combination of intent-trained
+                NLU and LLM augmentation has changed the math entirely. A well-designed
+                bot now resolves the majority of Tier 1 inquiries, qualifies the
+                majority of inbound leads, and never sleeps.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                NexDyne's{" "}
+                <Link
+                  href="/insights/chatbot-design-guide"
+                  className="text-primary hover:text-primary-hover transition-colors"
+                >
+                  chatbot design consultants
+                </Link>{" "}
+                build hybrid bots that combine the safety of scripted flows with the
+                flexibility of LLMs — instrumented, multilingual, and engineered for
+                the handoff moment that decides whether the conversation ends in
+                resolution or churn.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* The benefits of Chatbots Section */}
-      <AnimatedSection className="py-12 md:py-16 lg:py-20 bg-white">
-        <div className="container px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
-            {/* Contact Person Card */}
-            <div className="lg:col-span-1">
-              <Card className="p-6 md:p-8 bg-gradient-to-br from-secondary/10 to-primary/10 border-secondary/20">
-                <div className="mb-6">
-                  <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto mb-6 rounded-full overflow-hidden bg-gradient-to-br from-secondary/20 to-primary/20 flex items-center justify-center">
-                    <img 
-                      src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop" 
-                      alt="Contact person"
-                      className="w-full h-full object-cover"
-                    />
+      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Help Clients
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six ways we ship chatbots that actually work.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              We combine conversation design, NLU engineering, and LLM augmentation to
+              build chatbots that hold up under real customer traffic, real edge cases,
+              and the real cost of a bad answer.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {services.map((service, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={service.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col">
+                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                      {service.description}
+                    </p>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Learn more
+                    </span>
                   </div>
-                </div>
-                <h3 className="text-lg md:text-xl font-bold text-base mb-4 text-center">Want to learn more?</h3>
-                <Button 
-                  variant="outline" 
-                  className="w-full border-secondary text-base hover:bg-secondary/10"
-                >
-                  Contact our expert
-                </Button>
-              </Card>
-            </div>
-
-            {/* Benefits Cards */}
-            <div className="lg:col-span-2">
-              <h2 className="text-3xl md:text-4xl font-bold text-base mb-8 md:mb-12">The benefits of Chatbots</h2>
-              
-              <div className="space-y-6 md:space-y-8">
-                {[
-                  {
-                    icon: <Zap className="w-8 h-8" />,
-                    title: "Efficiency 3.0",
-                    description: "Streamline repetitive workflows and optimize resource deployment. Empower your team to focus on high-value interactions."
-                  },
-                  {
-                    icon: <Sparkles className="w-8 h-8" />,
-                    title: "Reduce costs",
-                    description: "Minimize support overhead while maximizing impact. Intelligent automation delivers more with less."
-                  },
-                  {
-                    icon: <MessageCircle className="w-8 h-8" />,
-                    title: "Instant customer satisfaction",
-                    description: "Speed wins loyalty: immediate responses create exceptional experiences. Real-time answers equal real-time delight."
-                  },
-                  {
-                    icon: <TrendingUp className="w-8 h-8" />,
-                    title: "Data-based insights",
-                    description: "Capture actionable intelligence from every interaction. Transform conversations into strategic advantage and continuous improvement."
-                  }
-                ].map((benefit, index) => (
-                  <Card 
-                    key={index}
-                    className="p-5 md:p-6 lg:p-8 hover:shadow-xl transition-all border-border hover:border-secondary/30 group cursor-pointer bg-white relative overflow-hidden"
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-br from-secondary/0 to-secondary/0 group-hover:from-secondary/5 group-hover:to-secondary/10 transition-all duration-300" />
-                    <div className="flex flex-col sm:flex-row gap-4 md:gap-6 relative z-10">
-                      <div className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-lg flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
-                        {benefit.icon}
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-xl md:text-2xl font-bold text-base mb-2 md:mb-3">{benefit.title}</h3>
-                        <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{benefit.description}</p>
-                      </div>
-                    </div>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </AnimatedSection>
-
-      {/* About chatbots Section */}
-      <AnimatedSection delay={0.1} className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-base via-base to-base text-white">
-        <div className="container max-w-4xl px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center">About chatbots</h2>
-          <p className="text-base md:text-lg leading-relaxed mb-8 md:mb-12 text-white/90">
-            Intelligent chatbots serve as the foundation of contemporary digital support, resolving common inquiries and routine requests instantly. This approach minimizes response delays, cuts operational expenses, and enables your staff to address sophisticated challenges. Beyond answering questions, chatbots collect behavioral insights and preference patterns—a critical resource for informed business strategy. Serving as your initial touchpoint, chatbots elevate the customer journey through reliable, intelligent engagement across all platforms.
-          </p>
-
-          <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 md:p-8">
-            <blockquote className="text-xl md:text-2xl font-medium text-secondary mb-4">
-              "Artificial intelligence is revolutionizing chatbots—making them faster, more intuitive, and remarkably customer-centric."
-            </blockquote>
-            <p className="text-sm md:text-base text-white/70">NEXDYNE Conversational AI Expert</p>
-          </div>
-        </div>
-      </AnimatedSection>
-
-      {/* Our chatbot solutions Section */}
-      <AnimatedSection delay={0.2} className="py-12 md:py-16 lg:py-20 bg-white">
-        <div className="container max-w-4xl px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-base mb-6 md:mb-8 text-center">Our chatbot solutions</h2>
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8 md:mb-12 text-center">
-            NEXDYNE engineers bespoke chatbot platforms that integrate flawlessly with your operational ecosystem and business objectives. Powered by advanced AI, our solutions employ sophisticated dialogue patterns and evolve through continuous data analysis. Built-in intelligence and adaptive learning capabilities enhance real-time customer interactions while generating strategic insights that optimize your go-to-market approach.
-          </p>
-
-          <Card className="p-6 md:p-10 lg:p-12 bg-gradient-to-br from-secondary/10 via-primary/10 to-base/10 border-secondary/20">
-            <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
-              <div className="flex-shrink-0">
-                <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full overflow-hidden bg-gradient-to-br from-secondary/20 to-primary/20 flex items-center justify-center">
-                  <img 
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop" 
-                    alt="NEXDYNE Expert"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-              <div className="flex-1 text-center md:text-left">
-                <h3 className="text-2xl md:text-3xl font-bold text-base mb-2">Want to learn more?</h3>
-                <p className="text-base md:text-lg text-muted-foreground mb-2">NEXDYNE Conversational AI Expert</p>
-                <p className="text-base md:text-lg text-muted-foreground mb-6">Director of Digital Solutions</p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                  <Button className="bg-secondary hover:bg-secondary text-white w-full sm:w-auto">
-                    Start a conversation
-                  </Button>
-                  <Button variant="outline" className="border-secondary text-base hover:bg-secondary/10 w-full sm:w-auto">
-                    Book a consultation
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </Card>
-        </div>
-      </AnimatedSection>
-
-      {/* Why NEXDYNE Section */}
-      <AnimatedSection delay={0.3} className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-subtle to-muted">
-        <div className="container px-4">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="order-2 md:order-1">
-              <img 
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop" 
-                alt="NEXDYNE office building"
-                className="rounded-lg shadow-2xl w-full h-64 md:h-80 lg:h-auto object-cover"
-              />
-            </div>
-            <div className="order-1 md:order-2">
-              <h2 className="text-3xl md:text-4xl font-bold text-base mb-6">Why NEXDYNE</h2>
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
-                Seeking a trusted technology partner, an accelerator for your digital evolution, or exceptional experiences that wow your customers? You're in the right place. Our cutting-edge solutions position you ahead of market trends and competitive pressures.
-              </p>
-              <Button className="bg-secondary hover:bg-secondary text-white w-full sm:w-auto">
-                Start a conversation
-              </Button>
-            </div>
-          </div>
-        </div>
-      </AnimatedSection>
-
-      {/* Partners Section */}
-      <AnimatedSection delay={0.4} className="py-12 md:py-16 lg:py-20 bg-white">
-        <div className="container px-4">
-          <div className="text-center mb-8 md:mb-12">
-            <p className="text-xs md:text-sm text-secondary font-semibold mb-2 uppercase tracking-wider">Partners</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-base mb-4">Awesome partners turn dreams into reality</h2>
-            <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8">Together with these technology leaders, we deliver world-class e-commerce experiences.</p>
-            <Button variant="outline" className="border-secondary text-base hover:bg-secondary/10 w-full sm:w-auto">
-              View all partners
-            </Button>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
-            {[
-              "Bloomreach",
-              "Commercetools",
-              "Intershop",
-              "Shopware"
-            ].map((partner) => (
-              <Card key={partner} className="p-6 md:p-8 flex flex-col items-center justify-center hover:shadow-xl transition-all border-border hover:border-secondary/30 group cursor-pointer bg-white relative overflow-hidden h-32 md:h-40">
-                <div className="absolute inset-0 bg-gradient-to-br from-secondary/0 to-secondary/0 group-hover:from-secondary/5 group-hover:to-secondary/10 transition-all duration-300" />
-                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-base group-hover:text-secondary transition-all duration-300 relative z-10 text-center">
-                  {partner}
-                </h3>
-              </Card>
+                </Link>
+              </motion.div>
             ))}
           </div>
         </div>
-      </AnimatedSection>
+      </section>
 
-      {/* CTA Section */}
-      <section className="relative bg-gradient-to-br from-base via-base to-base text-white py-16 md:py-20">
-        <div className="container max-w-4xl text-center px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to revolutionize customer service?</h2>
-          <p className="text-base md:text-lg lg:text-xl text-white/90 mb-8 leading-relaxed">
-            Let's explore how intelligent chatbot technology can elevate customer satisfaction, streamline operations, and unlock new growth opportunities.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6 md:mb-8">
-            <Button className="bg-secondary hover:bg-secondary text-white text-base md:text-lg px-8 py-4 md:py-6 w-full sm:w-auto">
-              Start a conversation
-            </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white/10 text-base md:text-lg px-8 py-4 md:py-6 w-full sm:w-auto">
-              Book a consultation
-            </Button>
+      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Experience & Impact
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Measurable outcomes from chatbots in production.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
+            {outcomes.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`${
+                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
+                }`}
+              >
+                {/* TODO: replace with real stat */}
+                <div
+                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
+                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                >
+                  {item.stat}
+                </div>
+                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
+                  {item.label}
+                </div>
+              </motion.div>
+            ))}
           </div>
-          <p className="text-sm md:text-base text-white/70">
-            Or reach us directly: <a href="tel:+15551234567" className="text-secondary hover:underline">+1 (555) 123-4567</a>
-          </p>
         </div>
       </section>
 
-      <RelatedContent items={dataRelatedItems} />
+      {/* SLOT 5 — Light grey Approach / Methodology framework */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Think About It
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The Conversation-First Framework
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Four integrated phases that take a chatbot from intent map to production
+              traffic without the embarrassing demo moments.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {approach.map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={step.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 flex flex-col">
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
+                      {step.description}
+                    </p>
+                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Explore
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Chatbots that earn their seat at the front door. NexDyne clients have
+              cut Tier 1 ticket volume by more than half and turned anonymous web
+              traffic into qualified pipeline.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              We've built support, sales, and internal helpdesk chatbots across
+              regulated and unregulated industries — treating instrumentation,
+              handoff design, and language coverage as launch features, not later
+              phases.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 7 — White Case studies / proof */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Chatbots, proved in outcomes.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={result.image}
+                        alt={result.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="p-8 lg:p-10">
+                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                        {result.industry}
+                      </span>
+                      {/* TODO: replace with real stat */}
+                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                        {result.title}
+                      </h3>
+                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
+                        {result.description}
+                      </p>
+                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                        Read Case
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-14">
+            <Link href="/cases">
+              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                See All Case Studies
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 8 — White Related capabilities / cross-sell */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Related Offerings
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Adjacent capabilities for a complete conversation strategy.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {relatedOfferings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our chatbot team into your next CX conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="retail">Retail & E-commerce</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders ready to ship chatbots that resolve, qualify,
+                  and serve at scale — across web, mobile, voice, and the channels
+                  your customers actually use.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
