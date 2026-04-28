@@ -1,337 +1,363 @@
-import React, { useEffect } from "react";
-import { useLocation, Link } from "wouter";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { ArrowRight } from "lucide-react";
+import SolutionHero from "@/components/SolutionHero";
 import { SEO } from "@/components/SEO";
-import { Button } from "@/components/ui/button";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import BainHoverCard from "@/components/BainHoverCard";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function AIPoweredRecommendations() {
-  const [location, setLocation] = useLocation();
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // ── Methodology phases (SLOT 3) ──────────────────────────────────────────────
+  const phases = [
+    {
+      name: "Use-case prioritization",
+      description:
+        "Recommendations only earn their cost when they touch a high-frequency, high-margin decision. We triage the candidate surfaces — product detail page, search, cart, post-purchase email, app home, contact-center next-best-offer — by addressable revenue, decision cadence, and feasibility against the data already in flight. The output is a sequenced surface roadmap, not a generic 'add a recommender' wishlist.",
+    },
+    {
+      name: "Algorithm selection",
+      description:
+        "Different surfaces want different algorithms. We pick deliberately across collaborative filtering, content-based similarity, matrix factorization, two-tower neural retrieval, sequence models, contextual bandits, and hybrid stacks — matched to catalog depth, cold-start exposure, latency budget, and explainability needs. Where a simpler model wins on lift, we ship the simpler model.",
+    },
+    {
+      name: "Model training and validation",
+      description:
+        "Every recommender we ship is benchmarked on precision and recall at k, hit-rate, NDCG, and the diversity and serendipity metrics that keep the catalog from collapsing onto its head items. Validation runs on held-out user sessions and against the current rule or merchandising baseline — a model that wins offline but degrades the long tail does not move to production.",
+    },
+    {
+      name: "Channel deployment",
+      description:
+        "Predictions are worthless until they reach the surface. We design the serving architecture — real-time inference, candidate generation plus reranking, feature store, edge cache — and wire recommendations into web, mobile, email, app, and contact-center experiences with consistent personalization keys. Cold-start fallbacks, content rules, and merchandising overrides are engineered, not improvised.",
+    },
+    {
+      name: "Ongoing optimization",
+      description:
+        "Recommenders decay faster than most models because the catalog and user base shift continuously. We stand up the A/B framework, the bandit exploration cadence, the drift monitoring on input features and ranking distributions, and the retraining schedule that keeps lift compounding. Champion-challenger contests are a feature of the program, not an afterthought.",
+    },
+  ];
 
-  const relatedCapabilities = [
+  // ── Deliverables (SLOT 4) ────────────────────────────────────────────────────
+  const deliverables = [
+    {
+      name: "Recommendation use-case roadmap",
+      description:
+        "Sequenced map of the surfaces and decisions where recommendations earn their keep — scored on revenue impact, decision cadence, and feasibility against the existing data spine.",
+    },
+    {
+      name: "Algorithm and model specification",
+      description:
+        "Documented model architecture per surface — collaborative filtering, content-based, two-tower retrieval, contextual bandits, hybrid stacks — with the rationale for each algorithm choice traceable to the surface it serves.",
+    },
+    {
+      name: "Accuracy benchmarks",
+      description:
+        "Validated production models with documented precision and recall at k, hit-rate, NDCG, diversity, and serendipity metrics — benchmarked against the current rule or merchandising baseline.",
+    },
+    {
+      name: "Channel deployment architecture",
+      description:
+        "Reference architecture covering real-time inference, candidate generation plus reranking, feature store, edge cache, and the integration into web, mobile, email, app, and contact-center surfaces.",
+    },
+    {
+      name: "A/B test framework",
+      description:
+        "Production experimentation surface with bandit exploration, holdout discipline, guardrail metrics, and the governance to stop a losing variant before it costs the quarter.",
+    },
+    {
+      name: "Recommendation performance dashboard",
+      description:
+        "Live operating dashboard tracking revenue per impression, lift over baseline, coverage of the long tail, and drift on input and ranking distributions — with alert thresholds wired to the model owners.",
+    },
+  ];
+
+  // ── Sibling sub-offerings (SLOT 7) ───────────────────────────────────────────
+  const siblings = [
     {
       title: "Predictive Analytics & Modeling",
-      description: "Anticipate customer behavior and future trends by leveraging advanced predictive models.",
-      link: "/solutions/customer-intelligence/predictive-analytics-modeling"
+      link: "/solutions/customer-intelligence/predictive-analytics-modeling",
+    },
+    {
+      title: "Personalization",
+      link: "/solutions/customer-intelligence/personalization",
+    },
+    {
+      title: "Personalization Strategy",
+      link: "/solutions/customer-intelligence/personalization-strategy",
+    },
+    {
+      title: "Customer Data Platform",
+      link: "/solutions/customer-intelligence/customer-data-platform",
     },
     {
       title: "Behavioral Segmentation",
-      description: "Group customers into meaningful segments based on their actions, preferences, and lifecycle stage.",
-      link: "/solutions/customer-intelligence/behavioral-segmentation"
+      link: "/solutions/customer-intelligence/behavioral-segmentation",
+    },
+  ];
+
+  // ── Case studies (SLOT 6) ────────────────────────────────────────────────────
+  const cases = [
+    {
+      industry: "Specialty Retail",
+      // TODO: replace with real stat
+      title:
+        "Two-tower retrieval lifts product-detail page revenue per session by 23 percent",
+      description:
+        "A multi-category specialty retailer was running a category-best-seller rule on the product detail page that ignored user history beyond the current session. We replaced it with a two-tower retrieval model reranked by a contextual bandit, served at sub-100ms latency. Revenue per session on the PDP rose 23 percent, with long-tail catalog coverage doubling in the first quarter.",
+      link: "/cases/retail-pdp-recommender",
     },
     {
-      title: "Voice of Customer Programs",
-      description: "Capture, analyze, and act on customer feedback from all channels to drive experience improvements.",
-      link: "/solutions/customer-intelligence/voice-of-customer"
-    }
+      industry: "Subscription Streaming",
+      // TODO: replace with real stat
+      title:
+        "Hybrid recommender drives a 17 percent lift in week-one engagement on new titles",
+      description:
+        "A streaming operator's content recommender was top-heavy on tenured catalog and starved new releases of attention. We built a hybrid model blending collaborative filtering with content-affinity features and recency boosts, then wired it into the home rail and the post-watch carousel. Week-one engagement on new titles rose 17 percent without erosion on the back catalog.",
+      link: "/cases/streaming-hybrid-recommender",
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="AI-Powered Recommendations" 
-        description="Implement intelligent recommendation engines that deliver the right product, content, or action to each customer at the right moment."
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="AI-Powered Recommendations"
+        description="Build recommendation engines that drive revenue across product, content, and next-best-offer surfaces — with the deployment, A/B framework, and monitoring that keeps them earning."
         canonical="/solutions/customer-intelligence/ai-powered-recommendations"
       />
       <Navigation />
 
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
-        <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Breadcrumbs variant="light" />
-            
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.05] mb-3 sm:mb-4">
-              AI-Powered Recommendations
-            </h1>
-            
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl mb-6 sm:mb-10">
-              Implement intelligent recommendation engines that deliver the right product, content, or action to each customer at the right moment.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href="/contact">
-                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
-                  Request a Demo
-                </Button>
-              </Link>
-              <Link href="/cases">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
-                  See Our Results
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/xLjPiHYkOtTAdvbW.jpg" 
-              alt="AI-Powered Recommendations Visualization" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
-        </div>
-      </section>
+      {/* SLOT 1 — Charcoal hero (downshifted H1, ~25% shorter container per Cat 6 entry) */}
+      <SolutionHero
+        eyebrow="SOLUTION · CUSTOMER INTELLIGENCE · AI-POWERED RECOMMENDATIONS"
+        title="AI-Powered Recommendations"
+        subtitle="Recommendations are the highest-leverage personalization surface in your business — and the easiest one to ship a mediocre version of. We build the production-grade recommender systems, the deployment architecture, and the optimization discipline that turn product, content, and next-best-offer recs into compounding revenue."
+        backgroundImage="/customer-intelligence-hero.57680a35.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"
+        containerClassName="h-[70vh] min-h-[500px] sm:min-h-[560px] lg:min-h-[640px]"
+      />
 
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-12"
+            className="max-w-[72ch]"
           >
-            <h2 className="text-2xl font-bold text-charcoal">Our Experience & Impact</h2>
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The recommender is not the model. It is the system around the model.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                Recommendation is the most-attempted and most-disappointing AI use case in the enterprise. A team picks an algorithm, ships a carousel, watches click-through rise on a popular item, and declares victory — meanwhile the long tail of the catalog goes dark, cold-start users see noise, and the lift evaporates inside a quarter. The win is rarely about the algorithm. It is about the surface, the latency, the fallback, the experimentation discipline, and the governance that says when to retire a model.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                We build recommender programs that compound. Collaborative filtering, content-based, two-tower retrieval, contextual bandits, hybrid stacks — chosen deliberately per surface and benchmarked on the metrics that protect the catalog, not just the click. The serving architecture, the A/B framework, the cold-start strategy, and the merchandising override layer are designed in from the start, because the difference between a recommender that earns a quarter and one that earns a decade is the system around the score.
+              </p>
+            </div>
           </motion.div>
-          
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-            {[
-              { metric: "35%", label: "Of e-commerce revenue from recommendations" },
-              { metric: "5x", label: "Higher engagement with recommended content" },
-              { metric: "150M+", label: "Personalized recommendations served monthly" }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-charcoal/60">{item.label}</p>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              In today's hyper-competitive digital landscape, personalization is no longer a luxury—it's an expectation. Customers are inundated with choices, and their attention is finite. AI-powered recommendation engines cut through the noise, acting as intelligent personal shoppers that anticipate needs and surface relevant products, content, and offers in real-time. This creates a more engaging, valuable, and frictionless customer experience.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              Moving beyond simple "customers who bought this also bought" logic, modern recommendation systems leverage sophisticated machine learning models. By analyzing vast datasets of behavioral, transactional, and contextual information, we can uncover deep patterns and predict user intent with remarkable accuracy. The result is a dynamic, self-learning system that continuously adapts to individual preferences, driving higher conversion rates, increased basket sizes, and lasting customer loyalty.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 sm:py-16 lg:py-24 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* SLOT 3 — Light-grey methodology / phased approach (5 numbered phase cards) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-16"
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              How We Can Help
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Deliver
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
-              Our Recommendation Engine Capabilities
-            </h2>
-            <p className="text-xl text-charcoal/60 max-w-2xl">
-              We deliver end-to-end solutions for designing, building, and optimizing high-impact recommendation systems.
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              A five-phase approach from use-case to live recommender.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Each phase is timeboxed and produces a tangible artifact. Most engagements run twelve to twenty weeks from prioritization to a live recommender with monitoring and an A/B framework in place.
             </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {[
-              {
-                title: "Recommendation Strategy & Roadmap",
-                description: "Define the optimal recommendation strategies for your business goals, from product discovery to content engagement, and create a phased implementation plan."
-              },
-              {
-                title: "Algorithm & Model Development",
-                description: "Design and train custom machine learning models (Collaborative Filtering, Content-Based, Hybrid) tailored to your specific data and use cases."
-              },
-              {
-                title: "Real-Time Personalization Infrastructure",
-                description: "Build scalable, low-latency systems to process user interactions and serve personalized recommendations in real-time across all touchpoints."
-              },
-              {
-                title: "A/B Testing & Performance Optimization",
-                description: "Implement rigorous testing frameworks to continuously evaluate and refine recommendation algorithms, user interfaces, and business logic for maximum impact."
-              },
-              {
-                title: "Cross-Channel Recommendation Delivery",
-                description: "Integrate recommendation services across your entire ecosystem, including web, mobile apps, email marketing, and in-store digital experiences."
-              },
-              {
-                title: "Explainable AI (XAI) for Recommendations",
-                description: "Provide transparency into why specific recommendations are made, building user trust and providing valuable insights for business teams."
-              }
-            ].map((item, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {phases.map((phase, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <BainHoverCard title={item.title} description={item.description} />
+                <div className="h-full p-8 lg:p-10 flex flex-col">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-5">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25]">
+                    {phase.name}
+                  </h3>
+                  <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                    {phase.description}
+                  </p>
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* SLOT 4 — White deliverables / what you get (flat hairline-bordered list) */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-16 text-center"
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-6 block">
-              Our Approach
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              What You Get
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold mb-6">
-              Delivering Recommendation Excellence
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six concrete artifacts every engagement leaves behind.
+            </h3>
+          </motion.div>
+
+          <div className="border-t border-charcoal/10">
+            {deliverables.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="border-b border-charcoal/10 py-8 lg:py-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start"
+              >
+                <div className="lg:col-span-1">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <div className="lg:col-span-4">
+                  <h4 className="text-xl text-charcoal font-medium leading-[1.25]">
+                    {item.name}
+                  </h4>
+                </div>
+                <div className="lg:col-span-7">
+                  <p className="text-base text-charcoal/75 leading-[1.55]">
+                    {item.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 5 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment, Pattern 2) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            {/* TODO: replace with real stat */}
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Programs that move from rule-based to ML-based recommendations on the highest-leverage surfaces typically lift attributable revenue by 10 to 25 percent within twelve months — and the A/B framework is what compounds the gain.
             </h2>
-            <p className="text-xl text-white/60 max-w-2xl mx-auto">
-              Our methodology ensures your recommendation engine delivers measurable business value from day one.
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              The economics work because the recommender reaches the surface where the decision happens — at the right latency, with the right fallback, inside the right experiment. We do not ship a notebook and walk away. We engineer the system around the model that turns predictions into compounding revenue.
             </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
           </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8 sm:gap-12 text-center md:text-left">
-            {[
-              {
-                step: "01",
-                title: "Data Foundation & Strategy",
-                description: "We begin by auditing your data ecosystem and defining a clear strategy that aligns recommendation use cases with your core business objectives."
-              },
-              {
-                step: "02",
-                title: "Iterative Modeling & Deployment",
-                description: "We develop and test multiple recommendation models in parallel, deploying the most promising candidates for live A/B testing to validate performance."
-              },
-              {
-                step: "03",
-                title: "Continuous Optimization & Scaling",
-                description: "We establish a framework for ongoing monitoring and optimization, ensuring your engine adapts to new data and evolving customer behaviors."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="relative"
-              >
-                <div className="text-7xl font-bold text-primary mb-4">{item.step}</div>
-                <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
-                <p className="text-white/60 leading-relaxed">{item.description}</p>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* SLOT 6 — White case studies / proof (1-2 cards, narrower than Cat 5) */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-16"
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-6 block">
-              Case Studies
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold mb-6">
-              Proven Impact Through Personalization
-            </h2>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              When the system around the model is engineered, the lift compounds.
+            </h3>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8 sm:gap-12">
-            {[
-              {
-                industry: "E-COMMERCE & RETAIL",
-                headline: "Boosting Average Order Value by 25% for a Global Fashion Retailer"
-              },
-              {
-                industry: "MEDIA & ENTERTAINMENT",
-                headline: "Increasing Viewer Engagement by 80% for a Major Streaming Platform"
-              }
-            ].map((item, index) => (
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-charcoal/20 p-8 rounded-lg"
+                transition={{ duration: 0.5, delay: i * 0.1 }}
               >
-                <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">{item.industry}</span>
-                <h3 className="text-2xl font-bold leading-tight">{item.headline}</h3>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 sm:py-16 lg:py-24 bg-subtle border-t border-border">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal mb-4">Related Capabilities</h2>
-            <p className="text-lg text-charcoal/60 max-w-2xl">Explore how our other Customer Intelligence services create a holistic view of your customers.</p>
-          </motion.div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {relatedCapabilities.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <Link href={item.link}>
-                  <a className="block p-8 bg-white border border-border hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full">
-                    <h3 className="text-xl font-bold text-charcoal mb-3">{item.title}</h3>
-                    <p className="text-charcoal/70 mb-4">{item.description}</p>
-                    <span className="font-semibold text-primary flex items-center">Explore <ArrowRight className="ml-2 w-4 h-4" /></span>
-                  </a>
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white p-8 lg:p-10 h-full flex flex-col">
+                    <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {result.industry}
+                    </span>
+                    {/* TODO: replace with real stat */}
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                      {result.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] mb-6 flex-1">
+                      {result.description}
+                    </p>
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read Case
+                    </span>
+                  </div>
                 </Link>
               </motion.div>
             ))}
@@ -339,24 +365,125 @@ export default function AIPoweredRecommendations() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 lg:py-24 bg-primary text-white">
-        <div className="container px-4 sm:px-6 md:px-12 text-center">
+      {/* SLOT 7 — White intra-cluster sibling sub-offerings (5 links inside Customer Intelligence) */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl eb-garamond font-bold mb-6">Ready to Unlock Personalization at Scale?</h2>
-            <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto mb-10">
-              Let's discuss how our AI-powered recommendation engines can help you create more relevant customer experiences and drive significant revenue growth. 
-            </p>
-            <Link href="/contact">
-              <Button className="bg-white hover:bg-muted text-charcoal px-10 py-7 text-lg font-semibold transition-all">
-                Contact Our Experts
-              </Button>
-            </Link>
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Other Ways We Help in Customer Intelligence
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Sibling offerings inside this cluster.
+            </h3>
           </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {siblings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 8 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our recommender team into your next revenue-surface conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders who want their highest-leverage personalization surfaces engineered to compound. Recommendations are how that conversation begins.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
