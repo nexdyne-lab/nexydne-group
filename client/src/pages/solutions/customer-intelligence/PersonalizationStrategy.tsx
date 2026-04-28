@@ -1,248 +1,363 @@
-import React, { useEffect } from "react";
-import { useLocation, Link } from "wouter";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { ArrowRight } from "lucide-react";
+import SolutionHero from "@/components/SolutionHero";
 import { SEO } from "@/components/SEO";
-import { Button } from "@/components/ui/button";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import BainHoverCard from "@/components/BainHoverCard";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function PersonalizationStrategy() {
-  const [location, setLocation] = useLocation();
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  // Related capabilities data
-  const relatedCapabilities = [
+  // ── Methodology phases (SLOT 3) ──────────────────────────────────────────────
+  const phases = [
     {
-      title: "Behavioral Segmentation",
-      description: "Group customers into meaningful segments based on their behaviors and preferences.",
-      link: "/solutions/customer-intelligence/behavioral-segmentation"
+      name: "Personalization opportunity assessment",
+      description:
+        "Most personalization programs personalize whatever the platform makes easy — usually email subject lines and a homepage hero — and ignore the moments where personalization actually moves revenue. We start with a moment-by-moment opportunity audit across the journey, scoring each candidate moment on value at stake, decision cadence, and content feasibility. The output is a prioritized map of where personalization earns its keep.",
+    },
+    {
+      name: "Technology stack design",
+      description:
+        "Every personalization stack we inherit is overbought in one tier and underbuilt in another — a CDP without a decisioning engine, a real-time engine without a content service, four overlapping tools no one can sequence. We design the target stack the program actually needs: data layer, decisioning, content service, delivery channels, measurement — sized to your existing estate and the moments you have prioritized.",
+    },
+    {
+      name: "Content and data strategy",
+      description:
+        "Personalization at scale is a content-supply problem before it is a delivery problem. We design the content strategy — modularization, variant logic, asset taxonomy, governance — and the data strategy that feeds it: identity resolution, signal hierarchy, audience definition, real-time event coverage. Without this layer the rest of the stack is decorating an empty room.",
+    },
+    {
+      name: "Deployment governance",
+      description:
+        "Personalization decisions touch brand, legal, marketing, product, and engineering at the same time. We stand up the decision-rights framework — what gets personalized, by whom, with what content, at what risk threshold — and the operating cadence that turns the framework into actual decisions made on a known timeline. Governance is what lets the program move fast without breaking the brand.",
+    },
+    {
+      name: "Performance measurement",
+      description:
+        "Personalization programs typically over-claim and under-attribute. We design the measurement model — incrementality testing, holdout management, contribution margin tracking, and the ROI framework that survives a CFO conversation. The measurement layer is wired into the executive dashboard so the personalization investment defends itself in the planning cycle.",
+    },
+  ];
+
+  // ── Deliverables (SLOT 4) ────────────────────────────────────────────────────
+  const deliverables = [
+    {
+      name: "Personalization maturity assessment",
+      description:
+        "Honest read of the program against a five-stage maturity model — capability, content, data, governance, measurement — with the explicit gaps that block the next stage of value.",
+    },
+    {
+      name: "Opportunity prioritization roadmap",
+      description:
+        "Moment-by-moment map of where personalization earns its keep, scored on value at stake, decision cadence, and content feasibility — sequenced into a defensible roadmap.",
+    },
+    {
+      name: "Tech stack recommendation",
+      description:
+        "Vendor-neutral target architecture across data layer, decisioning, content service, delivery, and measurement — sized to your existing estate, not bolted on top of it.",
+    },
+    {
+      name: "Content and data strategy",
+      description:
+        "Operating model for content modularization, variant logic, asset taxonomy, and the data strategy — identity, signals, audiences, real-time events — that feeds the decisioning layer.",
+    },
+    {
+      name: "Governance and decision-rights framework",
+      description:
+        "End-to-end framework covering what gets personalized, by whom, with what content, at what risk threshold — and the operating cadence that turns the framework into decisions.",
+    },
+    {
+      name: "ROI measurement model",
+      description:
+        "Incrementality-led measurement model, holdout discipline, and contribution-margin tracking — wired into an executive dashboard the CFO will read.",
+    },
+  ];
+
+  // ── Sibling sub-offerings (SLOT 7) ───────────────────────────────────────────
+  const siblings = [
+    {
+      title: "Personalization",
+      link: "/solutions/customer-intelligence/personalization",
     },
     {
       title: "AI-Powered Recommendations",
-      description: "Deliver relevant product and content recommendations to every customer.",
-      link: "/solutions/customer-intelligence/ai-powered-recommendations"
+      link: "/solutions/customer-intelligence/ai-powered-recommendations",
+    },
+    {
+      title: "Customer Data Platform",
+      link: "/solutions/customer-intelligence/customer-data-platform",
+    },
+    {
+      title: "Behavioral Segmentation",
+      link: "/solutions/customer-intelligence/behavioral-segmentation",
     },
     {
       title: "Journey Analytics & Optimization",
-      description: "Analyze and optimize the entire customer journey across all touchpoints.",
-      link: "/solutions/customer-intelligence/journey-analytics-optimization"
-    }
+      link: "/solutions/customer-intelligence/journey-analytics-optimization",
+    },
+  ];
+
+  // ── Case studies (SLOT 6) ────────────────────────────────────────────────────
+  const cases = [
+    {
+      industry: "Consumer Finance",
+      // TODO: replace with real stat
+      title:
+        "Personalization strategy reroutes investment from email subject lines to in-app moments, lifting product attach 22 percent",
+      description:
+        "A consumer-finance app was personalizing email subject lines and a homepage hero — neither of which was where customers actually decided. We rebuilt the strategy around three high-stakes in-app moments and reallocated the existing budget against them. Product attach on the priority cohort lifted 22 percent within two quarters, on a smaller marketing tech footprint.",
+      link: "/cases/finance-personalization-strategy-reroute",
+    },
+    {
+      industry: "Direct-to-Consumer Retail",
+      // TODO: replace with real stat
+      title:
+        "Tech stack redesign retires three tools and lifts personalization throughput from one to nine releases per month",
+      description:
+        "A DTC retailer's personalization program was bottlenecked on a stack with four overlapping tools and no clear decisioning layer. We designed the target stack, retired three of the four, and stood up the content modularization and governance cadence that the program actually needed. Throughput moved from one personalization release per month to nine, with no incremental headcount.",
+      link: "/cases/dtc-personalization-stack-redesign",
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Personalization Strategy & Execution" 
-        description="Design and execute hyper-personalized customer experiences across channels using AI-driven content, offers, and interaction strategies."
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Personalization Strategy"
+        description="Design the strategy layer above personalization tactics — where to personalize, how, the tech stack, the content and data strategy, and the ROI model that defends the investment."
         canonical="/solutions/customer-intelligence/personalization-strategy"
       />
       <Navigation />
 
-      {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
-        <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
+      {/* SLOT 1 — Charcoal hero (downshifted H1, ~25% shorter container per Cat 6 entry) */}
+      <SolutionHero
+        eyebrow="SOLUTION · CUSTOMER INTELLIGENCE · PERSONALIZATION STRATEGY"
+        title="Personalization Strategy"
+        subtitle="Most personalization programs personalize what the platform makes easy and miss the moments that actually move revenue. We design the strategy above the tactics — where to personalize, how, the tech stack, the content, and the ROI model that defends the investment."
+        backgroundImage="/customer-intelligence-hero.57680a35.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"
+        containerClassName="h-[70vh] min-h-[500px] sm:min-h-[560px] lg:min-h-[640px]"
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[72ch]"
           >
-            <Breadcrumbs variant="light" />
-            
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.05] mb-3 sm:mb-4">
-              Personalization Strategy & Execution
-            </h1>
-            
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl mb-6 sm:mb-10">
-              Design and execute hyper-personalized customer experiences across channels using AI-driven content, offers, and interaction strategies.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href="/contact">
-                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
-                  Request a Personalization Audit
-                </Button>
-              </Link>
-              <Link href="/cases">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
-                  See Personalization in Action
-                </Button>
-              </Link>
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Personalization is a strategy decision before it is a platform decision.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                Most personalization programs we audit have the same shape: the platform was selected first, the content team scrambled to feed it, the decisioning logic accreted in three different places, and the results are quietly disappointing. The leaders we work with start one level higher — with where personalization earns its keep, what content the program actually needs, what the data layer must do, and how decisions get made when brand, legal, and marketing each have a vote.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                The strategy answers four questions the platform vendor cannot: which moments matter, what content modularization the team can sustain, what the decisioning logic should optimize for, and how the program proves its return on a CFO timeline. The tactical layer — the rules, the variants, the channels — drops out of the strategy. Without it, the platform is decoration.
+              </p>
             </div>
           </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/lGTepMCKcSnUtMbo.jpg" 
-              alt="Personalization Strategy & Execution Visualization" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
         </div>
       </section>
 
-      {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* SLOT 3 — Light-grey methodology / phased approach (5 numbered phase cards) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-12"
+            className="mb-16 max-w-[60ch]"
           >
-            <h2 className="text-2xl eb-garamond font-bold text-charcoal">Our Experience & Impact</h2>
-          </motion.div>
-          
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-            {[
-              { metric: "3x", label: "Revenue lift from personalized experiences" },
-              { metric: "70%", label: "Of customers expect personalization" },
-              { metric: "25%", label: "Increase in average order value" }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-charcoal/60">{item.label}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 3: Thought Leadership Paragraphs (F100) */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              In today's crowded market, one-size-fits-all messaging falls flat. Customers expect brands to understand their individual needs and preferences. Personalization is no longer a luxury; it's a fundamental driver of customer loyalty and revenue growth. We help you move beyond basic segmentation to deliver truly individualized experiences at scale.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              Effective personalization requires a synthesis of data, technology, and strategy. By harnessing the power of AI and machine learning, we analyze customer data in real-time to predict intent and deliver the most relevant content, offers, and interactions. This data-driven approach ensures that every touchpoint is an opportunity to build a stronger, more profitable customer relationship.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
-      {/* How We Can Help Section */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              How We Can Help
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Deliver
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
-              Our Personalization Capabilities
-            </h2>
-            <p className="text-xl text-charcoal/60 max-w-2xl">
-              From strategy to execution, we offer a complete suite of personalization services.
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              A five-phase approach from opportunity audit to ROI measurement.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Each phase is timeboxed and produces a tangible artifact. Most engagements run ten to sixteen weeks from assessment to a production-ready strategy and governance model.
             </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {[
-              {
-                title: "Personalization Roadmap",
-                description: "Develop a strategic roadmap for implementing and scaling personalization initiatives across your organization."
-              },
-              {
-                title: "AI-Driven Content & Offer Targeting",
-                description: "Use machine learning to automatically match the right content and offers to the right customer at the right time."
-              },
-              {
-                title: "Omnichannel Experience Orchestration",
-                description: "Create seamless, consistent, and personalized customer journeys across all channels, from web and mobile to email and in-store."
-              },
-              {
-                title: "Dynamic Creative Optimization",
-                description: "Automatically test and optimize creative elements in real-time to maximize engagement and conversion."
-              },
-              {
-                title: "Personalization Technology Stack",
-                description: "Select, implement, and integrate the right technology stack to power your personalization efforts."
-              },
-              {
-                title: "Measurement & Attribution",
-                description: "Establish a robust measurement framework to track the ROI of your personalization initiatives and continuously optimize performance."
-              }
-            ].map((item, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {phases.map((phase, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <BainHoverCard title={item.title} description={item.description} />
+                <div className="h-full p-8 lg:p-10 flex flex-col">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-5">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25]">
+                    {phase.name}
+                  </h3>
+                  <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                    {phase.description}
+                  </p>
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 5: Related Capabilities (F100) */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-subtle border-t border-border">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* SLOT 4 — White deliverables / what you get (flat hairline-bordered list) */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-12 text-center"
+            className="mb-16 max-w-[60ch]"
           >
-            <h2 className="text-3xl sm:text-4xl eb-garamond font-bold text-charcoal mb-4">Explore Related Capabilities</h2>
-            <p className="text-lg text-charcoal/60 max-w-2xl mx-auto">Deepen your customer intelligence with our complementary services.</p>
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              What You Get
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six concrete artifacts every engagement leaves behind.
+            </h3>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {relatedCapabilities.map((capability, index) => (
+          <div className="border-t border-charcoal/10">
+            {deliverables.map((item, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white p-8 border border-border hover:shadow-lg transition-shadow duration-300 group"
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="border-b border-charcoal/10 py-8 lg:py-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start"
               >
-                <h3 className="text-xl font-bold text-charcoal mb-3">{capability.title}</h3>
-                <p className="text-charcoal/70 mb-6">{capability.description}</p>
-                <Link href={capability.link}>
-                  <span className="text-primary font-semibold flex items-center group-hover:underline">
-                    Learn More <ArrowRight className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                <div className="lg:col-span-1">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60">
+                    {String(i + 1).padStart(2, "0")}
                   </span>
+                </div>
+                <div className="lg:col-span-4">
+                  <h4 className="text-xl text-charcoal font-medium leading-[1.25]">
+                    {item.name}
+                  </h4>
+                </div>
+                <div className="lg:col-span-7">
+                  <p className="text-base text-charcoal/75 leading-[1.55]">
+                    {item.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 5 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment, Pattern 2) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            {/* TODO: replace with real stat */}
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Programs that move from platform-led personalization to strategy-led personalization typically retire 30 to 50 percent of their tooling and lift incremental revenue per personalized impression by a multiple.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              The economics work because the strategy decides what the platform should do — not the other way around. We do not implement another tool; we redesign the program around the moments, the content, and the governance the leaders we work with actually need.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — White case studies / proof (1-2 cards, narrower than Cat 5) */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              When the strategy comes first, the stack stops bloating.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white p-8 lg:p-10 h-full flex flex-col">
+                    <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {result.industry}
+                    </span>
+                    {/* TODO: replace with real stat */}
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                      {result.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] mb-6 flex-1">
+                      {result.description}
+                    </p>
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read Case
+                    </span>
+                  </div>
                 </Link>
               </motion.div>
             ))}
@@ -250,27 +365,125 @@ export default function PersonalizationStrategy() {
         </div>
       </section>
 
-      {/* Section 6: CTA (F100) */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12 text-center">
+      {/* SLOT 7 — White intra-cluster sibling sub-offerings (5 links inside Customer Intelligence) */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6 leading-tight max-w-3xl mx-auto">
-              Ready to Unlock the Power of Personalization?
-            </h2>
-            <p className="text-lg sm:text-xl text-charcoal/70 mb-10 max-w-2xl mx-auto">
-              Let's discuss how our personalization strategies can drive growth for your business. Schedule a complimentary consultation with our experts today.
-            </p>
-            <Link href="/contact">
-              <Button size="lg" className="bg-primary hover:bg-secondary text-white px-10 py-7 text-lg font-semibold transition-all">
-                Schedule Your Free Consultation
-              </Button>
-            </Link>
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Other Ways We Help in Customer Intelligence
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Sibling offerings inside this cluster.
+            </h3>
           </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {siblings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 8 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our personalization strategists into your next operating-model conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders who want their personalization investment defended on incrementality, not impressions. Strategy is how that conversation begins.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -1,344 +1,363 @@
-import React, { useEffect } from "react";
-import { useLocation, Link } from "wouter";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { ArrowRight } from "lucide-react";
+import SolutionHero from "@/components/SolutionHero";
 import { SEO } from "@/components/SEO";
-import { Button } from "@/components/ui/button";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import BainHoverCard from "@/components/BainHoverCard";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function BehavioralSegmentation() {
-  const [location, setLocation] = useLocation();
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // ── Methodology phases (SLOT 3) ──────────────────────────────────────────────
+  const phases = [
+    {
+      name: "Behavioral data inventory",
+      description:
+        "Demographic personas describe the customer the marketing deck wants. Behavioral segments describe the customer your systems already know. We start by inventorying the actual signal — transactions, sessions, content interactions, support contacts, channel preferences, recency and frequency patterns — across the CDP, warehouse, and operational stores. Coverage gaps are flagged before clustering begins, not after.",
+    },
+    {
+      name: "Segment design and clustering",
+      description:
+        "We design segments to be operationally useful first, statistically clean second. Candidate clustering approaches — k-means, hierarchical, latent class, RFM hybrids — are run against the feature space, and the contender that produces segments leadership can name and channels can target wins. Segments must be distinct, stable across time, and large enough to invest behind.",
+    },
+    {
+      name: "Segment validation",
+      description:
+        "Every segment is validated on three axes before activation: business value (size, margin, growth), operational tractability (can we reach them, in what channel, with what content), and stability (does the segment hold up across the next quarter of data). We size each segment in revenue and contribution-margin terms so the activation conversation starts with the value pool.",
+    },
+    {
+      name: "Omnichannel activation",
+      description:
+        "Segments only earn their keep when they reach the operator who acts on them. We design the activation surface — audiences synced into the marketing automation, ad platforms, CDP destinations, contact-center scripts, and product-experience flags — and the channel-specific playbook that tells each team what the segment means, how to talk to it, and what to measure.",
+    },
+    {
+      name: "Ongoing refinement",
+      description:
+        "Behavioral segments are not a one-time strategy artifact. Customer behavior shifts, new products launch, channels saturate, and segments drift. We stand up the refinement cadence — quarterly review, segment-level KPI dashboard, recluster trigger criteria, and the cross-functional governance that owns the segmentation as a living asset rather than a slide deck.",
+    },
+  ];
 
-  const relatedCapabilities = [
+  // ── Deliverables (SLOT 4) ────────────────────────────────────────────────────
+  const deliverables = [
+    {
+      name: "Behavioral data audit",
+      description:
+        "Inventory of customer-behavior signal across CDP, warehouse, and operational systems — with coverage gaps, quality scores, and the recommended fixes to unlock segmentation.",
+    },
+    {
+      name: "Segment cluster model",
+      description:
+        "Production-grade clustering pipeline owned by the data team — versioned, tested, and reproducible against new data refreshes.",
+    },
+    {
+      name: "Validated segment definitions with size and value",
+      description:
+        "Final segment library with each segment sized in customer count, revenue, contribution margin, and growth trajectory — alongside the signal definition that drives membership.",
+    },
+    {
+      name: "Channel-specific activation playbook",
+      description:
+        "Per-segment, per-channel guidance covering content strategy, offer logic, contact cadence, and measurement — wired to the marketing automation, ad platforms, and CDP destinations.",
+    },
+    {
+      name: "Segment performance dashboard",
+      description:
+        "Live dashboard showing segment movement, value, and channel performance — the surface the steering committee uses to decide where to invest next.",
+    },
+    {
+      name: "Refinement cadence playbook",
+      description:
+        "Operating model for the segmentation as a living asset — quarterly review triggers, recluster criteria, governance roles, and the change-management discipline that keeps segments earning.",
+    },
+  ];
+
+  // ── Sibling sub-offerings (SLOT 7) ───────────────────────────────────────────
+  const siblings = [
     {
       title: "Predictive Analytics & Modeling",
-      description: "Anticipate customer needs and actions by leveraging historical data and machine learning.",
-      link: "/solutions/customer-intelligence/predictive-analytics-modeling"
+      link: "/solutions/customer-intelligence/predictive-analytics-modeling",
     },
     {
-      title: "Personalization Strategy & Execution",
-      description: "Craft and deliver tailored experiences that resonate with individual customer preferences and behaviors.",
-      link: "/solutions/customer-intelligence/personalization-strategy"
+      title: "Customer Data Platform",
+      link: "/solutions/customer-intelligence/customer-data-platform",
     },
     {
-      title: "Journey Analytics & Optimization",
-      description: "Map and analyze customer journeys to identify friction points and opportunities for enhancement.",
-      link: "/solutions/customer-intelligence/journey-analytics-optimization"
-    }
+      title: "Personalization Strategy",
+      link: "/solutions/customer-intelligence/personalization-strategy",
+    },
+    {
+      title: "Customer Journey Map",
+      link: "/solutions/customer-intelligence/customer-journey-map",
+    },
+    {
+      title: "Customer Insights",
+      link: "/solutions/customer-intelligence/customer-insights",
+    },
+  ];
+
+  // ── Case studies (SLOT 6) ────────────────────────────────────────────────────
+  const cases = [
+    {
+      industry: "Specialty Retail",
+      // TODO: replace with real stat
+      title:
+        "Behavioral segmentation moves email revenue per send up 42 percent against the demographic baseline",
+      description:
+        "A specialty retailer was sending the same five email campaigns to four demographic personas with declining engagement. We replaced the persona model with seven behavioral segments built on browse intent, purchase recency, and category affinity, then activated them through the marketing automation. Email revenue per send rose 42 percent over the next two quarters, and unsubscribe rate fell by a third on the highest-value segment.",
+      link: "/cases/retail-behavioral-email-revenue",
+    },
+    {
+      industry: "B2B Software",
+      // TODO: replace with real stat
+      title:
+        "Product-usage segments reroute customer-success capacity toward the at-risk expansion cohort",
+      description:
+        "A SaaS provider's customer-success team was sized to revenue tier, not to risk or expansion potential. We built behavioral segments on product-usage telemetry — depth of feature adoption, integration footprint, login cadence — and rerouted CS capacity against them. Net revenue retention on the segmented book lifted six points in three quarters with no headcount change.",
+      link: "/cases/saas-usage-segmentation-cs-routing",
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Behavioral Segmentation" 
-        description="Move beyond demographics to segment customers by actual behavior, preferences, and engagement patterns for precision targeting."
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Behavioral Segmentation"
+        description="Replace demographic personas with behavioral segments — clusters built on what customers actually do, sized in value, and activated across every channel."
         canonical="/solutions/customer-intelligence/behavioral-segmentation"
       />
       <Navigation />
 
-      {/* Section 1: Hero Section */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
-        <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
+      {/* SLOT 1 — Charcoal hero (downshifted H1, ~25% shorter container per Cat 6 entry) */}
+      <SolutionHero
+        eyebrow="SOLUTION · CUSTOMER INTELLIGENCE · BEHAVIORAL SEGMENTATION"
+        title="Behavioral Segmentation"
+        subtitle="Demographic personas describe the customer your marketing deck wants. Behavioral segments describe the customer your systems already know. We design the segments, size them in value, and wire them into every channel that needs them."
+        backgroundImage="/customer-intelligence-hero.57680a35.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"
+        containerClassName="h-[70vh] min-h-[500px] sm:min-h-[560px] lg:min-h-[640px]"
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[72ch]"
           >
-            <Breadcrumbs variant="light" />
-            
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.05] mb-3 sm:mb-4">
-              Behavioral Segmentation
-            </h1>
-            
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl mb-6 sm:mb-10">
-              Move beyond demographics to segment customers by actual behavior, preferences, and engagement patterns for precision targeting.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href="/contact">
-                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
-                  Request a Consultation
-                </Button>
-              </Link>
-              <Link href="/cases">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
-                  See Our Work
-                </Button>
-              </Link>
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Cluster on what customers do — not on who the deck thinks they are.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                Most segmentations we inherit are demographic by default. Four personas, named after archetypes, decorated with stock photography, and activated by a marketing team that quietly stopped trusting them years ago. The reason is simple: those personas describe the audience the brand wants, not the audience the data has, and every campaign result reminds the team of the gap.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                Behavioral segmentation starts from the other side. We cluster on what customers actually do — recency, frequency, monetary value, content affinity, channel preference, support pattern — and validate each cluster on whether it holds value, holds up across time, and holds operational meaning. The result is a segmentation the marketing team trusts, the channels can act on, and the steering committee can fund.
+              </p>
             </div>
           </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/WDvWcRAPdhdSnnCO.jpg" 
-              alt="Behavioral Segmentation Visualization" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
         </div>
       </section>
 
-      {/* Section 2: Stats */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* SLOT 3 — Light-grey methodology / phased approach (5 numbered phase cards) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-12"
+            className="mb-16 max-w-[60ch]"
           >
-            <h2 className="text-2xl eb-garamond font-bold text-charcoal">The Impact of Behavioral Insights</h2>
-          </motion.div>
-          
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-            {[
-              { metric: "8x", label: "More precise than demographic segmentation" },
-              { metric: "45%", label: "Improvement in campaign conversion rates" },
-              { metric: "200+", label: "Behavioral attributes analyzed" }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-charcoal/60">{item.label}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 3: Thought Leadership */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              Knowing *who* your customers are is only half the story. True competitive advantage lies in understanding *how* they behave. Traditional demographic segmentation provides a static, one-dimensional view that often fails to capture the nuances of modern consumer behavior. To build meaningful relationships and drive growth, you must move beyond age and location to segment based on actions, preferences, and intent.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              Behavioral segmentation unlocks this deeper understanding. By analyzing transactional data, digital engagement, and service interactions, we help you identify distinct customer groups with unique needs and motivations. This allows for hyper-targeted marketing campaigns, personalized product recommendations, and proactive customer service—transforming generic outreach into relevant, valuable conversations that foster loyalty and increase lifetime value.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4: How We Can Help */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              How We Can Help
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Deliver
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
-              Our Behavioral Segmentation Capabilities
-            </h2>
-            <p className="text-xl text-charcoal/60 max-w-2xl">
-              We provide end-to-end services to turn behavioral data into a strategic asset.
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              A five-phase approach from data inventory to activated segments.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Each phase is timeboxed and produces a tangible artifact. Most engagements run ten to sixteen weeks from signal inventory through activation, with refinement extending into a quarterly cadence.
             </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {[
-              {
-                title: "Transactional Analysis",
-                description: "Analyze purchase history, frequency, and value to identify your most valuable customer segments."
-              },
-              {
-                title: "Engagement Pattern Recognition",
-                description: "Map digital and offline interactions to understand how customers engage with your brand across channels."
-              },
-              {
-                title: "Lifecycle Stage Segmentation",
-                description: "Group customers based on their journey stage, from new prospects to loyal advocates, to tailor outreach."
-              },
-              {
-                title: "Preference & Intent Modeling",
-                description: "Use browsing data and interactions to model customer preferences and predict future intent."
-              },
-              {
-                title: "Cross-Channel Behavior Mapping",
-                description: "Create a unified view of customer behavior across web, mobile, email, and in-store channels."
-              },
-              {
-                title: "Real-Time Segmentation APIs",
-                description: "Develop APIs that provide real-time segment data to power dynamic personalization engines."
-              }
-            ].map((item, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {phases.map((phase, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <BainHoverCard title={item.title} description={item.description} />
+                <div className="h-full p-8 lg:p-10 flex flex-col">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-5">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25]">
+                    {phase.name}
+                  </h3>
+                  <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                    {phase.description}
+                  </p>
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 5: Our Approach */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* SLOT 4 — White deliverables / what you get (flat hairline-bordered list) */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="mb-16 max-w-[60ch]"
           >
-            <h2 className="text-3xl sm:text-4xl eb-garamond font-bold mb-4">
-              Our Approach to <span className="text-secondary">Actionable Segmentation</span>
-            </h2>
-            <p className="text-lg text-white/60 max-w-3xl mx-auto">
-              We employ a rigorous, data-driven methodology to move from raw data to impactful business strategies.
-            </p>
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              What You Get
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six concrete artifacts every engagement leaves behind.
+            </h3>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8 sm:gap-12">
-            {[
-              {
-                title: "1. Data Aggregation & Enrichment",
-                description: "We consolidate behavioral data from all relevant sources—CRM, analytics, marketing platforms—and enrich it with third-party data for a complete picture."
-              },
-              {
-                title: "2. Unsupervised & Supervised Modeling",
-                description: "Our data scientists apply a mix of clustering algorithms and predictive models to uncover natural behavioral groupings and validate their business value."
-              },
-              {
-                title: "3. Activation & Measurement",
-                description: "We help you activate these segments across your marketing and sales platforms and establish a framework for measuring the uplift in engagement and conversion."
-              }
-            ].map((item, index) => (
+          <div className="border-t border-charcoal/10">
+            {deliverables.map((item, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="border-b border-charcoal/10 py-8 lg:py-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start"
               >
-                <h3 className="text-xl font-bold text-white mb-4">{item.title}</h3>
-                <p className="text-white/60">{item.description}</p>
+                <div className="lg:col-span-1">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <div className="lg:col-span-4">
+                  <h4 className="text-xl text-charcoal font-medium leading-[1.25]">
+                    {item.name}
+                  </h4>
+                </div>
+                <div className="lg:col-span-7">
+                  <p className="text-base text-charcoal/75 leading-[1.55]">
+                    {item.description}
+                  </p>
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 6: Case Studies */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.h2 
+      {/* SLOT 5 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment, Pattern 2) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-4xl font-bold text-center mb-12"
           >
-            Success Stories in Behavioral Segmentation
-          </motion.h2>
-          <div className="grid md:grid-cols-2 gap-8 sm:gap-12">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="group relative"
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            {/* TODO: replace with real stat */}
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              <Link href="/cases/retail-segmentation">
-                <div className="relative overflow-hidden rounded-lg">
-                  <img src="https://images.unsplash.com/photo-placeholder" alt="Retail Segmentation" className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                </div>
-                <div className="absolute bottom-0 left-0 p-6 sm:p-8">
-                  <span className="text-xs font-bold uppercase tracking-widest text-white/80">Retail</span>
-                  <h3 className="text-2xl font-bold text-white mt-2">Boosting Customer Lifetime Value by 60%</h3>
-                </div>
-              </Link>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="group relative"
-            >
-              <Link href="/cases/media-churn-reduction">
-                <div className="relative overflow-hidden rounded-lg">
-                  <img src="https://images.unsplash.com/photo-placeholder" alt="Media Churn Reduction" className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                </div>
-                <div className="absolute bottom-0 left-0 p-6 sm:p-8">
-                  <span className="text-xs font-bold uppercase tracking-widest text-white/80">Media & Entertainment</span>
-                  <h3 className="text-2xl font-bold text-white mt-2">Reducing Churn by 25% Through Proactive Engagement</h3>
-                </div>
-              </Link>
-            </motion.div>
-          </div>
+              Brands that move from demographic personas to validated behavioral segments typically lift engagement 25 to 45 percent and contribution margin 8 to 15 percent in the first year.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              The economics work because every channel finally has the same definition of the customer it is talking to. We do not deliver a segmentation slide and walk away — we wire the audiences into the systems of action and stand up the cadence that keeps them current.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
+          </motion.div>
         </div>
       </section>
 
-      {/* Section 7: Related Capabilities */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-subtle">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.h2 
+      {/* SLOT 6 — White case studies / proof (1-2 cards, narrower than Cat 5) */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl font-bold text-center mb-12 text-charcoal"
+            className="mb-16 max-w-[60ch]"
           >
-            Enhance Your Customer Intelligence
-          </motion.h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {relatedCapabilities.map((capability, index) => (
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              When the segments are real, the channels stop arguing.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white p-8 rounded-lg border border-border hover:shadow-lg transition-shadow duration-300"
+                transition={{ duration: 0.5, delay: i * 0.1 }}
               >
-                <Link href={capability.link}>
-                  <h3 className="text-xl font-bold text-charcoal mb-3">{capability.title}</h3>
-                  <p className="text-charcoal/60 mb-4">{capability.description}</p>
-                  <span className="text-primary font-semibold flex items-center">Explore <ArrowRight className="ml-2 w-4 h-4" /></span>
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white p-8 lg:p-10 h-full flex flex-col">
+                    <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {result.industry}
+                    </span>
+                    {/* TODO: replace with real stat */}
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                      {result.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] mb-6 flex-1">
+                      {result.description}
+                    </p>
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read Case
+                    </span>
+                  </div>
                 </Link>
               </motion.div>
             ))}
@@ -346,39 +365,125 @@ export default function BehavioralSegmentation() {
         </div>
       </section>
 
-      {/* Section 8: CTA Section */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-primary text-white">
-        <div className="container px-4 sm:px-6 md:px-12 text-center">
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-4xl font-bold mb-6"
-          >
-            Ready to Understand Your Customers Better?
-          </motion.h2>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto mb-8"
-          >
-            Discover how behavioral segmentation can unlock new growth opportunities for your business. Contact us for a personalized consultation and see how we can help you turn customer actions into actionable insights.
-          </motion.p>
+      {/* SLOT 7 — White intra-cluster sibling sub-offerings (5 links inside Customer Intelligence) */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <Link href="/contact">
-              <Button className="bg-white hover:bg-muted text-charcoal px-10 py-7 text-lg font-semibold transition-all">
-                Contact Us
-              </Button>
-            </Link>
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Other Ways We Help in Customer Intelligence
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Sibling offerings inside this cluster.
+            </h3>
           </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {siblings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 8 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our segmentation team into your next customer-strategy conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders who want their channels aligned on the same definition of the customer. Behavioral segmentation is how that conversation begins.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
