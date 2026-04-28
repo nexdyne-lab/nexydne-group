@@ -1,430 +1,227 @@
-import { useEffect } from "react";
-import { useLocation, Link } from "wouter";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { 
-  RefreshCw, 
-  Layers, 
-  TrendingUp, 
-  Shield, 
-  CheckCircle2,
-  Database,
-  Server,
-  Code,
-  BarChart3,
-  FileSearch,
-  ArrowRight,
-  ArrowLeft
-} from "lucide-react";
-import BainHoverCard from "@/components/BainHoverCard";
+import SolutionHero from "@/components/SolutionHero";
 import { SEO } from "@/components/SEO";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import { Button } from "@/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
-export default function DataModernization() {
-  const [location, setLocation] = useLocation();
+export default function LegacyModernization() {
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  // Related capabilities data
-  const relatedCapabilities = [
+  // ── Methodology phases (SLOT 3) ──────────────────────────────────────────────
+  const phases = [
     {
-      title: "Cloud Infrastructure",
-      description: "Scalable, secure foundations on AWS, Azure, and GCP for your modernized data platform.",
-      link: "/solutions/enterprise-transformation/cloud-infrastructure"
+      name: "Legacy assessment and dependency mapping",
+      description:
+        "We inventory the legacy estate end-to-end — applications, data stores, integration surfaces, batch jobs, scheduled processes, and the human workflows that wrap them. Static analysis, runtime tracing, and stakeholder interviews are stitched into a single dependency graph that finally makes the blast radius of every change visible. The output is the map most modernization programs spend a year discovering the hard way.",
     },
     {
-      title: "API Integration",
-      description: "Connect disparate apps, data, and partners into a seamless ecosystem.",
-      link: "/solutions/enterprise-transformation/api-integration"
+      name: "Modernization strategy and 6Rs decision",
+      description:
+        "Each application gets scored against the 6Rs framework — retain, retire, rehost, replatform, refactor, replace. The decision is anchored to business value, technical debt load, vendor risk, and total cost of ownership over a five-year horizon. We surface the trade-offs explicitly so leadership signs off on a strategy that survives the first quarterly review, not a deck that quietly gets reinterpreted.",
     },
     {
-      title: "DevOps & Security",
-      description: "Ship faster with automated pipelines that have compliance baked in.",
-      link: "/solutions/enterprise-transformation/devops-automation"
-    }
+      name: "Target architecture and roadmap",
+      description:
+        "From the 6Rs decisions we design the target-state architecture — domain boundaries, shared platforms, integration patterns, data ownership, and the security and observability fabric the modern estate needs. The roadmap sequences the work in delivery waves that respect dependencies, free up engineering capacity, and produce business-visible value at the end of every quarter, not the end of the program.",
+    },
+    {
+      name: "Modernization execution with strangler-fig",
+      description:
+        "Big-bang cutovers fail. We execute every replatform and refactor wave with the strangler-fig pattern — new capabilities are built alongside the legacy system, traffic is routed incrementally, and each slice goes through a parallel-run period where both systems answer the same request and the answers are reconciled. The legacy stays operational until the new path has earned the trust to retire it.",
+    },
+    {
+      name: "Ongoing operations and retirement",
+      description:
+        "Modernization is not finished at cutover. We run the post-cutover stabilization, decommission the legacy components on a disciplined sunset schedule, transfer operational ownership to the platform and product teams, and stand up the architecture-review cadence that prevents the next legacy estate from accreting in the same place. The end state is an operating model that keeps modernization continuous instead of episodic.",
+    },
+  ];
+
+  // ── Deliverables (SLOT 4) ────────────────────────────────────────────────────
+  const deliverables = [
+    {
+      name: "Legacy system inventory and dependency map",
+      description:
+        "Complete catalog of in-scope applications, data stores, integrations, and batch surfaces — with the runtime dependency graph that makes the blast radius of every modernization move visible.",
+    },
+    {
+      name: "Modernization strategy and 6Rs decision matrix",
+      description:
+        "Per-application 6Rs decision (retain, retire, rehost, replatform, refactor, replace) with the business case, risk profile, and five-year TCO model behind every recommendation.",
+    },
+    {
+      name: "Target architecture",
+      description:
+        "Target-state architecture covering domain boundaries, shared platforms, integration patterns, data ownership, and the security and observability fabric the modern estate needs to operate.",
+    },
+    {
+      name: "Modernization roadmap and sequencing",
+      description:
+        "Sequenced delivery plan organized into waves — each wave dependency-aware, capacity-aware, and tied to a business-visible outcome at the end of the quarter rather than the end of the program.",
+    },
+    {
+      name: "Execution playbook and cutover plan",
+      description:
+        "Strangler-fig execution playbook including parallel-run discipline, traffic routing patterns, reconciliation harness, rollback procedures, and the cutover runbook for each wave.",
+    },
+    {
+      name: "Retirement and sunset plan",
+      description:
+        "Disciplined decommissioning schedule for legacy components — license retirement, data archival, contract exit, infrastructure release, and the architecture-review cadence that prevents the next legacy estate from accreting.",
+    },
+  ];
+
+  // ── Sibling sub-offerings (SLOT 7) ───────────────────────────────────────────
+  const siblings = [
+    {
+      title: "Cloud Migration Architecture",
+      link: "/solutions/enterprise-transformation/cloud-migration-architecture",
+    },
+    {
+      title: "Infrastructure Modernization",
+      link: "/solutions/enterprise-transformation/infrastructure-modernization",
+    },
+    {
+      title: "Platform Engineering",
+      link: "/solutions/enterprise-transformation/platform-engineering",
+    },
+    {
+      title: "Technology Strategy",
+      link: "/solutions/enterprise-transformation/technology-strategy",
+    },
+    {
+      title: "Cost Optimization",
+      link: "/solutions/enterprise-transformation/cost-optimization",
+    },
+  ];
+
+  // ── Case studies (SLOT 6) ────────────────────────────────────────────────────
+  const cases = [
+    {
+      industry: "Insurance",
+      // TODO: replace with real stat
+      title:
+        "Strangler-fig retires a 22-year mainframe policy-admin platform across 18 quarterly waves",
+      description:
+        "A national property and casualty carrier had a policy-administration mainframe nobody had been brave enough to replace in two decades. We mapped the dependency graph, scored each capability against the 6Rs, and stood up a strangler-fig execution model that routed traffic incrementally to the new platform across eighteen quarterly waves. The mainframe contract was exited with zero policy-data reconciliation incidents.",
+      link: "/cases/insurance-mainframe-modernization",
+    },
+    {
+      industry: "Healthcare Provider Network",
+      // TODO: replace with real stat
+      title:
+        "Application portfolio rationalization retires 47 of 162 applications in eighteen months",
+      description:
+        "A multi-state healthcare provider network had accumulated 162 applications through a decade of acquisitions, with overlapping capability and undocumented integration. The 6Rs assessment retired 47 applications outright, replatformed 31 to managed services, and refactored 18 to a shared product domain. License and run-cost savings funded the next wave without a fresh capital ask.",
+      link: "/cases/healthcare-portfolio-rationalization",
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Data Modernization" 
-        description="Unlock your data's potential. Transform legacy silos into intelligent data platforms that drive real-time insights."
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Legacy Modernization"
+        description="Modernize legacy enterprise systems through replatform, refactor, and replace patterns — strangler-fig execution, parallel-run discipline, and disciplined decommissioning that retires the legacy without breaking the business."
         canonical="/solutions/enterprise-transformation/legacy-modernization"
       />
       <Navigation />
 
-      {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[70vh] flex items-center pt-20 bg-charcoal">
-        <div className="container px-4 md:px-12 grid md:grid-cols-2 gap-8 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Breadcrumbs variant="light" />
-            
-            <h1 className="text-5xl md:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.05] mb-4">
-              Data Modernization
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
-              Unlock your data's potential. Transform legacy silos into intelligent data platforms that drive real-time insights and competitive advantage.
-            </p>
-            
-            <div className="flex flex-wrap gap-4">
-              <Link href="/contact">
-                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out">
-                  Schedule a Consultation
-                </Button>
-              </Link>
-              <Link href="/case-studies">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out bg-transparent">
-                  View Case Studies
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="/images/data-modernization-abstract.jpg" 
-              alt="Data Modernization Visualization" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
-        </div>
-      </section>
+      {/* SLOT 1 — Charcoal hero (downshifted H1, ~25% shorter container per Cat 6 entry) */}
+      <SolutionHero
+        eyebrow="SOLUTION · ENTERPRISE TRANSFORMATION · LEGACY MODERNIZATION"
+        title="Legacy Modernization"
+        subtitle="Legacy systems do not get modernized by ambition. They get modernized by a 6Rs decision that survives the steering committee, a strangler-fig execution model that protects the operating business, and a disciplined sunset plan that actually turns the old estate off."
+        backgroundImage="/enterprise-transformation-hero.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"
+        containerClassName="h-[70vh] min-h-[500px] sm:min-h-[560px] lg:min-h-[640px]"
+      />
 
-      {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-20 bg-white border-b border-border">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-12"
+            className="max-w-[72ch]"
           >
-            <h2 className="text-2xl eb-garamond font-bold text-charcoal">Our Experience & Impact</h2>
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Stop launching modernization programs that run for three years and never retire a single legacy system.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                Most modernization programs fail at the same place — six quarters in, the new platform is live, the legacy is still live, and nobody has the conviction to pull the plug. Without a strangler-fig execution discipline and a written sunset commitment, the modern estate becomes one more layer on top of the old one, and the run-cost goes up, not down.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                We run modernization as a portfolio decision, not an architecture exercise. Every application gets a defensible 6Rs verdict, every wave ships value at the end of the quarter, every cutover earns its trust through parallel run, and every legacy component has a sunset date that the program is held to. That is the difference between modernizing a system and modernizing the business.
+              </p>
+            </div>
           </motion.div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { metric: "10x", label: "Faster query performance achieved" },
-              { metric: "60%", label: "Reduction in data silos" },
-              { metric: "50+", label: "Data platforms delivered" }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="text-5xl md:text-6xl font-bold text-charcoal mb-3">{item.metric}</div>
-                <p className="text-lg text-charcoal/60">{item.label}</p>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
-      {/* Section 3: Thought Leadership Paragraphs (F100) */}
-      <section className="py-20 bg-white">
-        <div className="container px-4 md:px-12">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              In the age of AI, data is your most valuable asset. Yet most organizations are sitting on a goldmine they can't access—trapped in legacy systems, scattered across silos, and plagued by quality issues that undermine every decision.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              We've helped organizations across industries transform their data foundations, turning chaos into clarity and enabling the real-time insights that drive competitive advantage. You can't build AI on bad data—machine learning models are only as good as the data they're trained on.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              Data silos kill agility. When different departments have conflicting numbers, decision-making grinds to a halt. A single source of truth accelerates everything. Real-time is the new standard—your competitors are making decisions with data that's minutes old, not days.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
-      {/* How We Can Help Section - Data Platform Capabilities */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 3 — Light-grey methodology / phased approach (5 numbered phase cards) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-16"
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              How We Can Help
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Deliver
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
-              Our Data Modernization Capabilities
-            </h2>
-            <p className="text-xl text-charcoal/60 max-w-2xl">
-              End-to-end data platform services from assessment to implementation to ongoing optimization.
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              A five-phase approach from legacy assessment to disciplined retirement.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Each phase is timeboxed and produces a tangible artifact. Most engagements run twenty-four to forty-eight weeks for the first wave, with execution continuing across multiple quarters as the portfolio retires.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                title: "Data Lake Architecture",
-                description: "Design and implement modern data lakes on AWS, Azure, or GCP. Centralize structured and unstructured data for analytics and machine learning."
-              },
-              {
-                title: "ETL & Data Pipelines",
-                description: "Build robust data pipelines with tools like Airflow, dbt, and Spark. Automate data ingestion, transformation, and quality checks."
-              },
-              {
-                title: "Data Warehouse Modernization",
-                description: "Migrate from legacy warehouses to Snowflake, BigQuery, or Redshift. Optimize for performance, cost, and scalability."
-              },
-              {
-                title: "Real-Time Analytics",
-                description: "Implement streaming architectures with Kafka, Kinesis, or Pub/Sub. Enable real-time dashboards and event-driven applications."
-              },
-              {
-                title: "Data Governance & Quality",
-                description: "Establish data catalogs, lineage tracking, and quality frameworks. Ensure compliance with GDPR, CCPA, and industry regulations."
-              },
-              {
-                title: "Analytics & BI Platforms",
-                description: "Deploy and optimize Tableau, Power BI, or Looker. Create self-service analytics that empower business users."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-              >
-                <BainHoverCard title={item.title} description={item.description} />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4: Differentiator Section */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-12">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Image with accent block */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="relative"
-            >
-              <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80" 
-                alt="Data analytics dashboard" 
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-              {/* Accent block */}
-              <div className="absolute bottom-6 right-6 w-24 h-24 bg-primary rounded-lg" />
-            </motion.div>
-            
-            {/* Content */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold text-charcoal leading-[1.1] mb-8">
-                We've learned what works—and what doesn't.
-              </h2>
-              
-              <p className="text-xl text-charcoal/70 leading-relaxed mb-6">
-                The difference isn't luck. It's process. We've refined our approach over 50+ data platform implementations, learning what works for companies your size. We know how to migrate data safely, build pipelines that scale, and create governance that doesn't slow you down.
-              </p>
-              
-              <p className="text-xl text-charcoal/70 leading-relaxed">
-                More importantly, we know when to modernize incrementally versus when to rebuild from scratch—saving you from costly mistakes.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 5: Our Approach (3-Column Consulting Format) */}
-      <section className="py-20 bg-base">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">
-              Our Approach
-            </span>
-            <h2 className="text-3xl md:text-5xl eb-garamond font-light text-white">
-              Turn data into your competitive advantage
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-12">
-            {[
-              {
-                title: "Unify your data landscape",
-                description: "We consolidate fragmented data sources into a single source of truth. No more spreadsheet chaos, conflicting reports, or decisions made on gut feel instead of facts."
-              },
-              {
-                title: "Enable self-service analytics",
-                description: "We build platforms where business users can find their own answers. Dashboards, ad-hoc queries, and automated reports—without waiting weeks for IT."
-              },
-              {
-                title: "Govern without slowing down",
-                description: "We implement data governance that protects sensitive information and ensures compliance while keeping data accessible to those who need it."
-              }
-            ].map((pillar, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {phases.map((phase, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <h3 className="text-xl font-bold text-white mb-4">{pillar.title}</h3>
-                <p className="text-muted-foreground/50 leading-relaxed">{pillar.description}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Link href="/contact">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-4 bg-transparent transition-colors duration-200 ease-in-out">
-                Get in touch
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 6: Key Benefits - H100 Hover Cards */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              Why Modernize Data
-            </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
-              Transform your data from liability to competitive advantage.
-            </h2>
-          </motion.div>
-
-          {/* H100 Hover Effect Cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                title: "Unified Truth",
-                description: "Eliminate conflicting reports. We create a single source of truth by consolidating data into a scalable, governed data warehouse."
-              },
-              {
-                title: "AI Readiness",
-                description: "Clean, structure, and catalog your data assets, creating the high-quality foundation required for machine learning."
-              },
-              {
-                title: "Real-Time Access",
-                description: "Move from batch to streaming. Modern pipelines deliver fresh data to dashboards and applications instantly."
-              },
-              {
-                title: "Governance & Compliance",
-                description: "Know where your data lives. Automated governance frameworks ensure GDPR/CCPA compliance without slowing access."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-              >
-                <BainHoverCard title={item.title} description={item.description} />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 7: Tech Stack Section (Preserved Unique Section) */}
-      <section className="py-20 bg-white">
-        <div className="container px-4 md:px-12">
-          <div className="text-center mb-12">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-              Data Platform Stack
-            </span>
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal mb-4">
-              Modern Data Technologies
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We leverage best-in-class tools to build scalable, maintainable data platforms.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { category: "Storage", subtitle: "Data Lakes & Warehouses", tools: ["Snowflake", "Databricks", "BigQuery"] },
-              { category: "Pipelines", subtitle: "ETL/ELT Orchestration", tools: ["dbt", "Airflow", "Fivetran"] },
-              { category: "Visualization", subtitle: "BI & Analytics", tools: ["Tableau", "Power BI", "Looker"] }
-            ].map((stack, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <div className="bg-subtle p-8 rounded-lg border border-border hover:border-primary/30 transition-all h-full">
-                  <div className="text-2xl font-bold text-charcoal mb-2">{stack.category}</div>
-                  <p className="text-sm text-muted-foreground mb-6">{stack.subtitle}</p>
-                  <ul className="space-y-3">
-                    {stack.tools.map((tool, j) => (
-                      <li key={j} className="flex items-center gap-3 text-sm text-charcoal/80">
-                        <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-                        <span>{tool}</span>
-                      </li>
-                    ))}
-                  </ul>
+                <div className="h-full p-8 lg:p-10 flex flex-col">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-5">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25]">
+                    {phase.name}
+                  </h3>
+                  <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                    {phase.description}
+                  </p>
                 </div>
               </motion.div>
             ))}
@@ -432,68 +229,134 @@ export default function DataModernization() {
         </div>
       </section>
 
-      {/* Section 8: Case Studies (F100) */}
-      <section className="py-24 bg-base">
-        <div className="container px-4 md:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+      {/* SLOT 4 — White deliverables / what you get (flat hairline-bordered list) */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              What You Get
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-                Client Results
-              </span>
-              <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-white">
-                See how leading organizations are transforming their data into value.
-              </h2>
-            </motion.div>
-            <Link href="/cases">
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 bg-transparent transition-colors duration-200 ease-in-out">
-                View all case studies
-              </Button>
-            </Link>
-          </div>
+              Six concrete artifacts every engagement leaves behind.
+            </h3>
+          </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                title: "Predicting Demand with 98% Accuracy",
-                category: "Retail",
-                description: "How a major retailer reduced inventory waste by 30% using our ML-powered forecasting engine.",
-                image: "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=2670&auto=format&fit=crop",
-                link: "/cases/retailer-ml-forecasting"
-              },
-              {
-                title: "Unifying Patient Records",
-                category: "Healthcare",
-                description: "Creating a 360-degree patient view by integrating 15+ legacy systems into a secure data lake.",
-                image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2670&auto=format&fit=crop",
-                link: "/cases/healthcare-data-platform"
-              }
-            ].map((study, i) => (
+          <div className="border-t border-charcoal/10">
+            {deliverables.map((item, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="border-b border-charcoal/10 py-8 lg:py-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start"
               >
-                <Link href={study.link} className="group block">
-                  <div className="relative h-[350px] rounded-lg overflow-hidden">
-                    <img 
-                      src={study.image}
-                      alt={study.title} 
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent" />
-                    <div className="absolute bottom-0 left-0 p-8">
-                      <span className="text-xs font-bold text-primary mb-3 uppercase tracking-wider block">{study.category}</span>
-                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
-                        {study.title}
-                      </h3>
-                      <p className="text-white/70 line-clamp-2">{study.description}</p>
-                    </div>
+                <div className="lg:col-span-1">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <div className="lg:col-span-4">
+                  <h4 className="text-xl text-charcoal font-medium leading-[1.25]">
+                    {item.name}
+                  </h4>
+                </div>
+                <div className="lg:col-span-7">
+                  <p className="text-base text-charcoal/75 leading-[1.55]">
+                    {item.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 5 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment, Pattern 2) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            {/* TODO: replace with real stat */}
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Modernization programs run with strangler-fig discipline retire 60 to 80 percent of in-scope legacy footprint within twenty-four months — and unlock 25 to 40 percent annual run-cost reduction once the sunset schedule completes.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              The economics work because the program is held accountable to retirement, not to launch. We do not run an eighteen-month build that leaves the legacy live — we run a disciplined sequence of waves, each one earning the right to turn off what came before it.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — White case studies / proof (1-2 cards, narrower than Cat 5) */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              When the program is held to retirement, the legacy actually goes off.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white p-8 lg:p-10 h-full flex flex-col">
+                    <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {result.industry}
+                    </span>
+                    {/* TODO: replace with real stat */}
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                      {result.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] mb-6 flex-1">
+                      {result.description}
+                    </p>
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read Case
+                    </span>
                   </div>
                 </Link>
               </motion.div>
@@ -502,72 +365,124 @@ export default function DataModernization() {
         </div>
       </section>
 
-      {/* Section 9: Featured Insight Banner (Preserved Unique Section) */}
-      <section className="py-16 bg-primary">
-        <div className="container px-4 md:px-12">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="text-white">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/70 mb-2 block">Featured Insight</span>
-              <h3 className="text-2xl md:text-3xl font-bold mb-2">The CEO's Guide to Data Modernization</h3>
-              <p className="text-white/80">A comprehensive framework for transforming your data foundation.</p>
-            </div>
-            <Link href="/insights/ceo-guide-data-modernization">
-              <Button className="bg-white text-primary hover:bg-white/90 px-8 py-4 font-semibold whitespace-nowrap transition-colors duration-200 ease-in-out">
-                Download the Guide <ArrowRight className="ml-2 w-4 h-4 inline" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 10: Related Capabilities - H100 Hover */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 7 — White intra-cluster sibling sub-offerings (5 links inside Enterprise Transformation) */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-12"
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-              Related Capabilities
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Other Ways We Help in Enterprise Transformation
             </span>
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal">
-              Explore more Technology capabilities
-            </h2>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Sibling offerings inside this cluster.
+            </h3>
           </motion.div>
 
-          <div className="grid md:grid-cols-4 gap-6">
-            {relatedCapabilities.map((cap, i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {siblings.map((offering, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <BainHoverCard title={cap.title} description={cap.description} link={cap.link} />
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 11: CTA Section (F100 - Cyan Background) */}
-      <section className="py-24 bg-primary">
-        <div className="container px-4 md:px-12">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl eb-garamond font-bold text-white mb-6">
-              Ready to unlock your data's potential?
-            </h2>
-            <p className="text-xl text-white/80 mb-10">
-              Let's discuss how our data modernization capabilities can help you build a foundation for AI and analytics.
-            </p>
-            <Link href="/contact">
-              <Button className="bg-white hover:bg-white/90 text-primary px-10 py-6 text-lg font-semibold transition-colors duration-200 ease-in-out">
-                Start a Conversation <ArrowRight className="ml-2 w-5 h-5 inline" />
-              </Button>
-            </Link>
+      {/* SLOT 8 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our modernization team into your next legacy retirement conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders who want their modernization program to retire the legacy, not just stand alongside it. The 6Rs decision is how that conversation starts.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>
