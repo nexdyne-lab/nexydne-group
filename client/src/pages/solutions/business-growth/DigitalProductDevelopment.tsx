@@ -1,178 +1,493 @@
-import React, { useEffect } from "react";
-import { useLocation, Link } from "wouter";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { ArrowRight } from "lucide-react";
+import SolutionHero from "@/components/SolutionHero";
 import { SEO } from "@/components/SEO";
-import { Button } from "@/components/ui/button";
-import Breadcrumbs from "@/components/Breadcrumbs";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function DigitalProductDevelopment() {
-  const [location, setLocation] = useLocation();
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
+  // ── Methodology phases (SLOT 3) ──────────────────────────────────────────────
+  const phases = [
+    {
+      name: "Opportunity discovery",
+      description:
+        "Most digital products fail because nobody pressure-tested the opportunity. We map the customer problem, the current alternatives, the willingness-to-pay, and the unit economics before a single screen is designed. The output is a sized opportunity with named buyers, named jobs-to-be-done, and a written disqualification list — not a pitch deck for the executive committee.",
+    },
+    {
+      name: "Product definition",
+      description:
+        "From the validated opportunity we write the product brief — target user, primary jobs, success metrics, anti-features. The roadmap is sequenced into a thin first slice plus the validated bets that follow. Engineering, design, and commercial leadership sign on the same brief, so the team stops debating scope in week six.",
+    },
+    {
+      name: "MVP build",
+      description:
+        "The first slice ships against the brief — narrow, opinionated, instrumented. We design for measurement from line one: every primary job has an event, every assumption has a metric. The MVP exists to test the product hypothesis under live load, not to look like a finished product.",
+    },
+    {
+      name: "Validation and iteration",
+      description:
+        "We run the validation framework against the live MVP — quantitative usage, qualitative interviews, willingness-to-pay tests, retention curves — and convert the learnings into a written iteration plan. Bets that earn their spot get more investment; the ones that do not get killed in writing, not deferred indefinitely.",
+    },
+    {
+      name: "Scale and commercialization",
+      description:
+        "Once the product hypothesis is validated, we shift the program into commercialization mode: pricing, packaging, distribution, support, and the operating model that owns the product into year two. The handoff is an operating product team, not a consultant team that dissolves on go-live.",
+    },
+  ];
 
-  const page_title = "Digital Product Development";
-  const page_description = "We guide organizations through the full product lifecycle—from ideation and prototyping to MVP launch and scaling, ensuring product-market fit and continuous growth.";
+  // ── Deliverables (SLOT 4) ────────────────────────────────────────────────────
+  const deliverables = [
+    {
+      name: "Opportunity validation",
+      description:
+        "Sized opportunity memo covering customer problem, current alternatives, willingness-to-pay, and unit economics — with the disqualification list and the go / no-go recommendation.",
+    },
+    {
+      name: "Product brief and roadmap",
+      description:
+        "Written product brief — target user, primary jobs, success metrics, anti-features — and the sequenced roadmap from MVP through the next four quarters of validated bets.",
+    },
+    {
+      name: "MVP",
+      description:
+        "Production-grade first slice of the product — narrow, opinionated, instrumented for measurement — shipped to live users under controlled exposure.",
+    },
+    {
+      name: "Validation framework and learnings",
+      description:
+        "Documented validation framework covering quantitative usage, qualitative interviews, and willingness-to-pay tests — with the written learnings memo that drives the next investment cycle.",
+    },
+    {
+      name: "Scaling plan",
+      description:
+        "Commercialization plan covering pricing, packaging, distribution, support, and the metrics review cadence that takes the product from validated MVP to compounding revenue.",
+    },
+    {
+      name: "Product operating model",
+      description:
+        "Org design, RACI, governance cadence, and the engineering-design-commercial integration model that owns the product into year two and beyond.",
+    },
+  ];
+
+  // ── Sibling sub-offerings (SLOT 7) ───────────────────────────────────────────
+  const siblings = [
+    {
+      title: "Native Apps",
+      link: "/solutions/business-growth/native-apps",
+    },
+    {
+      title: "Ecommerce Strategy & Launch",
+      link: "/solutions/business-growth/ecommerce-strategy-launch",
+    },
+    {
+      title: "Conversion Optimization",
+      link: "/solutions/business-growth/conversion-optimization",
+    },
+    {
+      title: "Pricing & Monetization Strategy",
+      link: "/solutions/business-growth/pricing-monetization-strategy",
+    },
+    {
+      title: "Go-to-Market Acceleration",
+      link: "/solutions/business-growth/go-to-market-acceleration",
+    },
+  ];
+
+  // ── Case studies (SLOT 6) ────────────────────────────────────────────────────
+  const cases = [
+    {
+      industry: "B2B SaaS",
+      // TODO: replace with real stat
+      title:
+        "New product line clears 1,200 paying accounts inside three quarters of MVP launch",
+      description:
+        "A vertical SaaS operator wanted to extend into an adjacent workflow but had killed the same idea twice in prior years. We rebuilt the opportunity case, redrew the brief around a narrower job-to-be-done, and shipped an instrumented MVP in fourteen weeks. By the third quarter post-launch the line was carrying 1,200 paying accounts and contributing the largest growth percentage in the portfolio.",
+      link: "/cases/saas-adjacent-product-mvp",
+    },
+    {
+      industry: "Financial Services",
+      // TODO: replace with real stat
+      title:
+        "Digital advisory product validates retention curve in 90 days, kills two of four planned features",
+      description:
+        "A wealth manager was preparing to invest heavily in a digital advisory product. We compressed the discovery into eight weeks and shipped the MVP under controlled exposure. Inside ninety days the validation framework had confirmed the retention curve on the core experience and disqualified two of the four planned features — saving roughly nine months of build time the original plan would have spent on them.",
+      link: "/cases/wealth-digital-advisory-mvp",
+    },
+  ];
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="bg-white"
-    >
+    <div className="min-h-screen bg-white font-sans text-charcoal">
       <SEO
-        title={`NexDyne - ${page_title}`}
-        description={page_description}
+        title="Digital Product Development"
+        description="Build digital products from concept to scale — opportunity validation, product definition, instrumented MVP, validated iteration, and the operating model that owns the product into year two."
+        canonical="/solutions/business-growth/digital-product-development"
       />
       <Navigation />
-      <main>
-        <section className="bg-base text-white">
-          <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center py-24 px-4">
+
+      {/* SLOT 1 — Charcoal hero (downshifted H1, ~25% shorter container per Cat 6 entry) */}
+      <SolutionHero
+        eyebrow="SOLUTION · BUSINESS GROWTH · DIGITAL PRODUCT DEVELOPMENT"
+        title="Digital Product Development"
+        subtitle="Most digital products fail because nobody pressure-tested the opportunity. We size the bet, write the brief, ship an instrumented MVP, and run the validation cycle that turns a hypothesis into a product team that owns it."
+        backgroundImage="/business-growth-hero.57680a35.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"
+        containerClassName="h-[70vh] min-h-[500px] sm:min-h-[560px] lg:min-h-[640px]"
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[72ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Stop building features. Start validating the product hypothesis under live load.
+            </h3>
             <div className="space-y-6">
-              <Breadcrumbs variant="light" />
-              <h1 className="text-5xl font-bold tracking-tight eb-garamond">{page_title}</h1>
-              <p className="text-lg text-muted-foreground/50">{page_description}</p>
-              <div className="flex space-x-4">
-                <Button asChild size="lg" className="bg-primary hover:bg-secondary text-white">
-                  <Link href="/contact">Request a Consultation</Link>
-                </Button>
-                <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-charcoal">
-                  <Link href="/solutions">Explore Our Solutions</Link>
-                </Button>
-              </div>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                We get called in when a digital product has been in market for a year and the team cannot answer the foundational question: is anyone using this for the reason we said they would? Most product programs we recover did not collapse on the build — they collapsed on the brief. The opportunity was sized on optimism, the success metrics were never named, and the MVP shipped without instrumentation, so by month nine nobody could tell whether to invest more or kill the line.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                The leaders we work with run product development as a sequence of validated bets. Opportunity, brief, MVP, validation, iteration, scale — each phase has a written exit criterion, and the program does not progress until the prior phase clears it. This is the difference between a product team that compounds and one that ships features into a void.
+              </p>
             </div>
-            <div>
-              <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/jDxQFaaeQKsGDSZT.jpg" alt={page_title} className="rounded-lg shadow-2xl" />
-            </div>
-          </div>
-        </section>
+          </motion.div>
+        </div>
+      </section>
 
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-3 gap-8 text-center">
-              <div className="p-6 bg-subtle rounded-lg">
-                <p className="text-4xl font-bold text-charcoal">2.5x</p>
-                <p className="mt-2 text-muted-foreground">Faster Time-to-Market for New Products</p>
-              </div>
-              <div className="p-6 bg-subtle rounded-lg">
-                <p className="text-4xl font-bold text-charcoal">45%</p>
-                <p className="mt-2 text-muted-foreground">Increase in User Adoption Rates Post-Launch</p>
-              </div>
-              <div className="p-6 bg-subtle rounded-lg">
-                <p className="text-4xl font-bold text-charcoal">30%</p>
-                <p className="mt-2 text-muted-foreground">Reduction in Development Costs via Agile Methods</p>
-              </div>
-            </div>
-          </div>
-        </section>
+      {/* SLOT 3 — Light-grey methodology / phased approach (5 numbered phase cards) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Deliver
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              A five-phase approach from opportunity to commercialized product.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Each phase is timeboxed and produces a tangible artifact. Most engagements run twenty to thirty weeks from discovery to a validated product running under a permanent operating team.
+            </p>
+          </motion.div>
 
-        <section className="py-20 bg-subtle">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold text-charcoal mb-4">From Concept to Code</h2>
-            <div className="max-w-3xl mx-auto text-left text-muted-foreground space-y-6">
-              <p>In today's competitive landscape, a successful digital product does more than just function—it solves a real-world problem and delivers an exceptional user experience. Many organizations struggle to bridge the gap between a brilliant idea and a market-ready product. This often results from a disconnect between user needs, business goals, and technical execution. Without a structured, user-centric approach, even the most promising concepts can fail to gain traction, leading to wasted resources and missed opportunities.</p>
-              <p>NexDyne provides the strategic and technical expertise to navigate the complexities of the product development lifecycle. We embed with your team to instill a culture of innovation grounded in agile principles and continuous user feedback. By focusing on rapid prototyping, Minimum Viable Product (MVP) development, and data-driven iteration, we help you validate assumptions early, mitigate risk, and build products that users genuinely love and that drive tangible business outcomes.</p>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center text-charcoal mb-12">How We Can Help</h2>
-            <div className="grid md:grid-cols-3 gap-8 group">
-              {[ 
-                { title: "Product Strategy & Roadmapping", description: "Define a clear vision, identify target users, and create a prioritized roadmap that aligns with your business objectives." },
-                { title: "User Research & Validation", description: "Conduct in-depth user interviews, surveys, and usability testing to uncover critical insights and validate product-market fit." },
-                { title: "UI/UX & Prototyping", description: "Design intuitive interfaces and create interactive prototypes to visualize the user journey and gather early feedback." },
-                { title: "Agile Development & MVP Launch", description: "Implement agile methodologies to build, test, and launch a high-quality MVP efficiently, focusing on core functionalities." },
-                { title: "Product Scaling & Optimization", description: "Analyze user data and market trends to iteratively improve features, enhance performance, and scale your product for growth." },
-                { title: "Lifecycle Management", description: "Provide ongoing support and strategic guidance to manage your product's evolution, from feature enhancements to end-of-life planning." }
-              ].map((item, index) => (
-                <div key={index} className="relative p-6 bg-subtle rounded-lg transition-all duration-300 hover:bg-white hover:shadow-xl hover:border-l-4 hover:border-destructive">
-                  <h3 className="text-xl font-bold text-charcoal transition-all duration-300 group-hover:text-lg">{item.title}</h3>
-                  <p className="text-muted-foreground opacity-0 max-h-0 transition-all duration-300 group-hover:opacity-100 group-hover:max-h-40 group-hover:mt-2">{item.description}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {phases.map((phase, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <div className="h-full p-8 lg:p-10 flex flex-col">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-5">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25]">
+                    {phase.name}
+                  </h3>
+                  <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                    {phase.description}
+                  </p>
                 </div>
-              ))}
-            </div>
+              </motion.div>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="py-20 bg-base text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-12">Our Approach to Product Innovation</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="p-8 bg-base rounded-lg">
-                <h3 className="text-2xl font-bold text-secondary mb-4">1. Discover & Define</h3>
-                <p className="text-muted-foreground/50">We begin with a deep-dive discovery phase to understand your vision, business goals, and target audience. Through market research and competitive analysis, we define the core problem and outline a strategic product roadmap.</p>
-              </div>
-              <div className="p-8 bg-base rounded-lg">
-                <h3 className="text-2xl font-bold text-secondary mb-4">2. Design & Develop</h3>
-                <p className="text-muted-foreground/50">Our team translates strategy into tangible designs and functional prototypes. Following agile principles, we develop an MVP, focusing on delivering value quickly and incorporating feedback throughout the development sprints.</p>
-              </div>
-              <div className="p-8 bg-base rounded-lg">
-                <h3 className="text-2xl font-bold text-secondary mb-4">3. Deploy & Iterate</h3>
-                <p className="text-muted-foreground/50">Post-launch, we monitor key performance indicators and user behavior. We use this data to drive continuous improvement, prioritize new features, and ensure your product evolves to meet changing market demands.</p>
-              </div>
-            </div>
+      {/* SLOT 4 — White deliverables / what you get (flat hairline-bordered list) */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              What You Get
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six concrete artifacts every engagement leaves behind.
+            </h3>
+          </motion.div>
+
+          <div className="border-t border-charcoal/10">
+            {deliverables.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="border-b border-charcoal/10 py-8 lg:py-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start"
+              >
+                <div className="lg:col-span-1">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <div className="lg:col-span-4">
+                  <h4 className="text-xl text-charcoal font-medium leading-[1.25]">
+                    {item.name}
+                  </h4>
+                </div>
+                <div className="lg:col-span-7">
+                  <p className="text-base text-charcoal/75 leading-[1.55]">
+                    {item.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="py-20 bg-base text-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-12">Client Success Stories</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="p-8 border border-gray-700 rounded-lg">
-                <p className="text-sm text-secondary font-semibold mb-2">FINTECH SAAS</p>
-                <h3 className="text-2xl font-bold mb-4">Launching a Disruptive Investment Platform</h3>
-                <p className="text-muted-foreground/70">Partnered with a startup to build and launch an AI-powered investment analytics platform from the ground up, achieving 10,000 active users within six months of MVP launch.</p>
-              </div>
-              <div className="p-8 border border-gray-700 rounded-lg">
-                <p className="text-sm text-secondary font-semibold mb-2">HEALTH-TECH</p>
-                <h3 className="text-2xl font-bold mb-4">Modernizing Patient Engagement</h3>
-                <p className="text-muted-foreground/70">Guided a healthcare provider in developing a mobile application for patient management, resulting in a 40% reduction in administrative overhead and improved patient satisfaction scores.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+      {/* SLOT 5 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment, Pattern 2) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            {/* TODO: replace with real stat */}
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Programs that ship instrumented MVPs against written exit criteria reach a validated product hypothesis 50 to 70 percent faster — and kill the wrong bets in writing instead of letting them quietly absorb three more quarters.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              The economics work because every bet has a written exit criterion before it gets investment. We do not extend doomed roadmaps — we structure the program so the data, not the politics, decides which line keeps compounding.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
 
-        <section className="py-20 bg-subtle">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center text-charcoal mb-12">Related Capabilities</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {[ 
-                { title: "Go-to-Market Acceleration", href: "/solutions/business-growth/go-to-market-acceleration" },
-                { title: "E-Commerce Strategy & Launch", href: "/solutions/business-growth/ecommerce-strategy-launch" },
-                { title: "Pricing & Monetization Strategy", href: "/solutions/business-growth/pricing-monetization-strategy" }
-              ].map((item, index) => (
-                <Link key={index} href={item.href}>
-                  <a className="block p-8 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                    <h3 className="text-xl font-bold text-charcoal mb-2">{item.title}</h3>
-                    <div className="flex items-center text-primary font-semibold">
-                      Learn More <ArrowRight className="ml-2 h-5 w-5" />
-                    </div>
-                  </a>
+      {/* SLOT 6 — White case studies / proof (1-2 cards, narrower than Cat 5) */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              When the brief decides the bet, the product team compounds.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white p-8 lg:p-10 h-full flex flex-col">
+                    <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {result.industry}
+                    </span>
+                    {/* TODO: replace with real stat */}
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                      {result.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] mb-6 flex-1">
+                      {result.description}
+                    </p>
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read Case
+                    </span>
+                  </div>
                 </Link>
-              ))}
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 7 — White intra-cluster sibling sub-offerings (5 links inside Business Growth) */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Other Ways We Help in Business Growth
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Sibling offerings inside this cluster.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {siblings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 8 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our digital product team into your next product-bet conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders who want their next product bet validated against the data, not the meeting calendar. Digital product development is how that conversation begins.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="bg-primary text-white">
-          <div className="container mx-auto text-center py-20 px-4">
-            <h2 className="text-4xl font-bold mb-4">Ready to Build Your Next-Gen Product?</h2>
-            <p className="max-w-2xl mx-auto text-lg mb-8">Let's talk about how NexDyne can help you turn your vision into a successful digital product that captivates users and drives growth.</p>
-            <Button asChild size="lg" className="bg-white text-primary hover:bg-muted">
-              <Link href="/contact">Contact Us Today</Link>
-            </Button>
-          </div>
-        </section>
-      </main>
       <Footer />
-    </motion.div>
+    </div>
   );
 }
