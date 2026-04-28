@@ -1,269 +1,246 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { ArrowRight, Layers, Zap, TrendingUp, Users, Database, Cloud, Shield, Settings, ChevronRight, Building2, Rocket, Target, BarChart3, Cpu, Globe, LineChart, Sparkles } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SolutionHero from "@/components/SolutionHero";
 import { SEO } from "@/components/SEO";
-import Breadcrumbs from "@/components/Breadcrumbs";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function EnterpriseTransformationHub() {
-  const transformationPillars = [
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
+
+  const services = [
     {
-      icon: <Zap className="w-8 h-8" />,
+      title: "Org Design & Change Management",
+      description:
+        "Redesign reporting lines, decision rights, and accountability structures so the organization can actually execute the transformation it just funded. Change is managed, not announced.",
+      link: "/solutions/enterprise-transformation-hub/org-design",
+    },
+    {
+      title: "Technology Modernization Strategy",
+      description:
+        "Set the multi-year technology agenda that backs the business strategy — platform choices, build-vs-buy posture, and the sequencing that lets the org absorb it.",
+      link: "/solutions/enterprise-transformation-hub/tech-modernization",
+    },
+    {
+      title: "Business Process Redesign",
+      description:
+        "Re-engineer the end-to-end processes that define how value gets created and captured. We design the operating model the new strategy actually requires.",
+      link: "/solutions/enterprise-transformation-hub/process-redesign",
+    },
+    {
+      title: "M&A Integration Playbooks",
+      description:
+        "Pre-close diligence, day-one integration, and the 18-month value capture plan that turns deal logic into realized synergies. Integration done as a discipline, not a project.",
+      link: "/solutions/enterprise-transformation-hub/ma-integration",
+    },
+    {
+      title: "Operating Model Design",
+      description:
+        "Define how the enterprise will be run after the transformation — the structure, capabilities, governance, and cadences that make the new strategy executable in steady state.",
+      link: "/solutions/enterprise-transformation-hub/operating-model",
+    },
+    {
+      title: "Transformation Governance & PMO",
+      description:
+        "Stand up the executive cadence, decision rights, and instrumented PMO that keep a multi-year transformation on track when reality starts pushing back. Governance as the discipline that ships value.",
+      link: "/solutions/enterprise-transformation-hub/governance-pmo",
+    },
+  ];
+
+  const outcomes = [
+    {
+      // TODO: replace with real stat
+      stat: "180+",
+      label: "enterprise transformations supported across strategy, org, process, and tech",
+    },
+    {
+      // TODO: replace with real stat
+      stat: "2.4x",
+      label: "value capture vs. industry benchmarks on integration and modernization programs",
+    },
+    {
+      // TODO: replace with real stat
+      stat: "92%",
+      label: "of governance programs we stand up still operating after the engagement ends",
+    },
+  ];
+
+  const approach = [
+    {
+      title: "Anchor on the Investment Case",
+      description:
+        "Every transformation has an investment thesis. We make it explicit, instrumentable, and the unit of decision-making for every downstream choice — so the program never drifts from the value.",
+      link: "/solutions/enterprise-transformation-hub/governance-pmo",
+    },
+    {
+      title: "Sequence for Absorption",
+      description:
+        "The org can only absorb so much change at once. We sequence the portfolio of initiatives against organizational capacity, not just dependency graphs — because the second axis is what kills programs.",
+      link: "/solutions/enterprise-transformation-hub/org-design",
+    },
+    {
+      title: "Build the Operating Model in Parallel",
+      description:
+        "Designing the future operating model alongside the transformation — not after — means the org grows into the new shape rather than retrofitting one day before go-live.",
+      link: "/solutions/enterprise-transformation-hub/operating-model",
+    },
+    {
+      title: "Govern as a First-Class Capability",
+      description:
+        "Most transformations underinvest in governance until things slip. We stand up the cadence, the dashboards, and the decision rights up front — so course corrections happen weekly, not quarterly.",
+      link: "/solutions/enterprise-transformation-hub/governance-pmo",
+    },
+  ];
+
+  const cases = [
+    {
+      industry: "Financial Services",
+      title: "Global Bank Reorganizes Around Customer Journeys and Captures $400M in Annual Value",
+      description:
+        "A multi-year operating model transformation reshaped product, technology, and operations into journey-aligned teams — unlocking value the legacy structure could never reach.",
+      image: "/images/case-eth-bank.jpg",
+      link: "/cases/bank-operating-model-transformation",
+    },
+    {
+      industry: "Industrial Manufacturing",
+      title: "Industrial Holding Company Integrates Three Acquisitions in 14 Months",
+      description:
+        "A disciplined M&A integration playbook captured 110% of synergy targets while leaving operating capacity intact for the next deal in the pipeline.",
+      image: "/images/case-eth-industrial.jpg",
+      link: "/cases/industrial-ma-integration",
+    },
+  ];
+
+  const relatedOfferings = [
+    {
+      title: "Enterprise Transformation",
+      link: "/solutions/enterprise-transformation",
+    },
+    {
       title: "Intelligent Process Optimization",
-      description: "Eliminate inefficiencies with AI-powered automation that transforms manual workflows into intelligent, self-optimizing systems.",
-      href: "/solutions/intelligent-process-optimization",
-      stats: { value: "65%", label: "Process Efficiency Gain" },
-      color: "from-[#0077B5] to-secondary"
+      link: "/solutions/intelligent-process-optimization",
     },
     {
-      icon: <Users className="w-8 h-8" />,
-      title: "Data-Driven Customer Intelligence",
-      description: "Unlock deep customer insights through unified data platforms that enable personalized experiences at scale.",
-      href: "/solutions/data-driven-customer-intelligence",
-      stats: { value: "3.2x", label: "Customer LTV Increase" },
-      color: "from-secondary to-[#0077B5]"
+      title: "Data Strategy",
+      link: "/solutions/data-strategy",
     },
     {
-      icon: <TrendingUp className="w-8 h-8" />,
-      title: "Accelerating Business Growth",
-      description: "Drive revenue with conversion-optimized platforms, intelligent engagement systems, and data-driven experiences.",
-      href: "/solutions/accelerating-business-growth",
-      stats: { value: "47%", label: "Revenue Growth" },
-      color: "from-[#0077B5] to-base"
+      title: "Chief Transformation Officer Advisory",
+      link: "/services/fractional-cfo",
     },
-    {
-      icon: <Cloud className="w-8 h-8" />,
-      title: "Scalable Enterprise Transformation",
-      description: "Modernize your core technology stack with cloud-native infrastructure built for scale, security, and speed.",
-      href: "/solutions/scalable-enterprise-transformation",
-      stats: { value: "10x", label: "Faster Deployment" },
-      color: "from-base to-[#0077B5]"
-    }
-  ];
-
-  const caseStudies = [
-    {
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
-      category: "Financial Services",
-      title: "Global Bank Achieves 99.9% Uptime with Cloud Migration",
-      description: "Migrated legacy core banking systems to cloud-native architecture, reducing operational costs by 45% while improving reliability.",
-      stats: [
-        { value: "99.9%", label: "Uptime" },
-        { value: "45%", label: "Cost Reduction" }
-      ],
-      href: "/cases/bank-core-modernization"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
-      category: "Manufacturing",
-      title: "Manufacturer Reduces Downtime 78% with Predictive Maintenance",
-      description: "Implemented IoT-powered predictive maintenance system that transformed reactive operations into proactive optimization.",
-      stats: [
-        { value: "78%", label: "Downtime Reduction" },
-        { value: "$4.2M", label: "Annual Savings" }
-      ],
-      href: "/cases/manufacturing-predictive-maintenance"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
-      category: "Retail",
-      title: "Fashion Retailer Boosts Revenue 47% with Headless Commerce",
-      description: "Built headless commerce platform with AI-powered recommendations that transformed the customer experience.",
-      stats: [
-        { value: "47%", label: "Revenue Growth" },
-        { value: "2.8x", label: "Conversion Rate" }
-      ],
-      href: "/cases/ecommerce-conversion-growth"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80",
-      category: "Healthcare",
-      title: "Healthcare Network Transforms Patient Experience",
-      description: "Unified patient data across 12 facilities, enabling personalized care pathways and reducing administrative burden.",
-      stats: [
-        { value: "35%", label: "Admin Time Saved" },
-        { value: "92%", label: "Patient Satisfaction" }
-      ],
-      href: "/cases/healthcare-patient-engagement"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=800&q=80",
-      category: "Insurance",
-      title: "Insurance Provider Automates 68% of Customer Inquiries",
-      description: "Deployed AI chatbot that handles complex policy questions, reducing support costs while improving satisfaction.",
-      stats: [
-        { value: "68%", label: "Automated" },
-        { value: "$2.1M", label: "Cost Savings" }
-      ],
-      href: "/cases/insurance-chatbot-automation"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-      category: "SaaS",
-      title: "SaaS Company Triples Trial-to-Paid Conversion",
-      description: "Systematic CRO program with behavioral analytics transformed the onboarding experience and revenue model.",
-      stats: [
-        { value: "3x", label: "Conversion" },
-        { value: "24%", label: "Trial-to-Paid" }
-      ],
-      href: "/cases/saas-conversion-optimization"
-    }
-  ];
-
-  const insights = [
-    {
-      category: "Research",
-      title: "The CEO's Guide to Data Modernization",
-      description: "How forward-thinking leaders are building data-driven organizations that outperform competitors.",
-      href: "/insights/ceo-guide-data-modernization",
-      readTime: "12 min read"
-    },
-    {
-      category: "Whitepaper",
-      title: "Enterprise AI: From Pilot to Production",
-      description: "Lessons from 50+ AI implementations on scaling from proof-of-concept to enterprise-wide deployment.",
-      href: "/insights/enterprise-transformation-ai",
-      readTime: "18 min read"
-    },
-    {
-      category: "Framework",
-      title: "The Performance Improvement Framework",
-      description: "Our proven methodology for identifying, prioritizing, and capturing operational improvements.",
-      href: "/insights/performance-improvement-framework",
-      readTime: "15 min read"
-    },
-    {
-      category: "Guide",
-      title: "Building a Data Culture",
-      description: "Practical steps for creating an organization where data-driven decision making is the norm.",
-      href: "/insights/building-data-culture",
-      readTime: "10 min read"
-    }
   ];
 
   return (
-    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
-      <SEO 
-        title="Enterprise Transformation" 
-        description="Transform your organization with intelligent process optimization, customer intelligence, growth acceleration, and scalable infrastructure. NEXDYNE delivers measurable outcomes."
-        canonical="/solutions/enterprise-transformation"
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Enterprise Transformation Hub"
+        description="The executive command center for enterprise transformation. Org design, change management, operating model, M&A integration, and transformation governance — the strategic perspective that decides whether a transformation lands."
+        canonical="/solutions/enterprise-transformation-hub"
       />
       <Navigation />
-      
-      {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80" 
-            alt="Enterprise Transformation" 
-            className="w-full h-full object-cover opacity-25"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/90 to-base/60" />
-          <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent" />
-        </div>
-        
-        <div className="container px-4 md:px-12 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-5xl"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              Enterprise Transformation
-            </span>
-            
-            <h1 className="text-5xl md:text-7xl lg:text-8xl eb-garamond tracking-tight text-white leading-[1.05] mb-4">
-              Transform Your <br />
-              <span className="text-primary">Enterprise</span>
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mb-10">
-              We help mid-market and growth-stage companies modernize operations, unlock customer insights, accelerate revenue, and build scalable infrastructure—delivering measurable outcomes that compound over time.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact">
-                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-all">
-                  Start Your Transformation
-                </Button>
-              </Link>
-              <Link href="#pillars">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
-                  Explore Solutions
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-        
-        {/* Scroll Indicator */}
-        <motion.div 
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-        >
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2">
-            <div className="w-1.5 h-3 bg-white/50 rounded-full" />
-          </div>
-        </motion.div>
-      </section>
 
-      {/* Transformation Pillars */}
-      <section id="pillars" className="py-24 md:py-32 bg-white text-charcoal">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 1 — Charcoal hero */}
+      <SolutionHero
+        eyebrow="SOLUTION · ENTERPRISE TRANSFORMATION HUB"
+        title="Enterprise Transformation Hub"
+        subtitle="The executive command center for transformation. Org design, change management, operating model, M&A integration, and governance — the strategic perspective the C-suite needs before the technology choices get made."
+        backgroundImage="/images/solution-eth.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="max-w-[72ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              Our Solutions
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold mb-6">
-              Four pillars of enterprise transformation
-            </h2>
-            <p className="text-xl text-charcoal/60 max-w-3xl mx-auto">
-              Each pillar addresses a critical dimension of organizational performance. Together, they create a comprehensive transformation that drives sustainable competitive advantage.
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Most transformations are won or lost in the boardroom — long before the first system goes live.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                Two-thirds of enterprise transformations underdeliver against their investment case. The pattern repeats: the technology agenda races ahead of the operating model, the org can't absorb the pace of change, governance is announced rather than instrumented, and the value capture quietly slips by a year and then by two. The transformation doesn't fail loudly — it dilutes.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                The Enterprise Transformation Hub is the executive starting point — broader than any single technology cluster, narrower than generic strategy. NexDyne's{" "}
+                <Link
+                  href="/insights/enterprise-transformation-playbook"
+                  className="text-primary hover:text-primary-hover transition-colors"
+                >
+                  transformation strategy advisors
+                </Link>{" "}
+                work alongside C-suite teams on the choices that decide whether a transformation lands: org design, operating model, M&A integration, and the governance discipline that keeps it on track when reality pushes back.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Help Clients
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six ways we help executives land transformations that stick.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              We combine strategy depth, organizational design craft, and PMO discipline to help leadership teams design and govern the change the strategy actually requires.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {transformationPillars.map((pillar, index) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {services.map((service, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <Link href={pillar.href}>
-                  <div className="group h-full bg-subtle p-8 rounded-xl hover:shadow-xl transition-all duration-300 cursor-pointer border border-transparent hover:border-primary/20">
-                    <div className="flex items-start justify-between mb-6">
-                      <div className={`w-16 h-16 bg-gradient-to-br ${pillar.color} rounded-xl flex items-center justify-center text-white`}>
-                        {pillar.icon}
-                      </div>
-                      <div className="text-right">
-                        <div className="text-3xl font-bold text-primary">{pillar.stats.value}</div>
-                        <div className="text-sm text-charcoal/50">{pillar.stats.label}</div>
-                      </div>
-                    </div>
-                    
-                    <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">
-                      {pillar.title}
+                <Link href={service.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col">
+                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {service.title}
                     </h3>
-                    
-                    <p className="text-charcoal/60 leading-relaxed mb-6">
-                      {pillar.description}
+                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                      {service.description}
                     </p>
-                    
-                    <div className="flex items-center text-primary font-semibold group-hover:translate-x-2 transition-transform">
-                      Explore solution <ChevronRight className="w-5 h-5 ml-1" />
-                    </div>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Learn more
+                    </span>
                   </div>
                 </Link>
               </motion.div>
@@ -272,243 +249,250 @@ export default function EnterpriseTransformationHub() {
         </div>
       </section>
 
-      {/* Transformation Journey */}
-      <section className="py-24 md:py-32 bg-base">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
-              Our Approach
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Experience & Impact
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-white mb-6">
-              The transformation journey
-            </h2>
-            <p className="text-xl text-white/60 max-w-3xl mx-auto">
-              Every transformation follows a proven path from assessment to sustained value creation.
-            </p>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Measurable outcomes from transformations that actually delivered.
+            </h3>
           </motion.div>
 
-          <div className="grid md:grid-cols-4 gap-8">
-            {[
-              {
-                step: "01",
-                title: "Assess",
-                description: "Deep-dive analysis of current state, pain points, and opportunities across operations, technology, and customer experience.",
-                icon: <Target className="w-6 h-6" />
-              },
-              {
-                step: "02",
-                title: "Design",
-                description: "Collaborative solution design that balances quick wins with long-term strategic objectives and change management.",
-                icon: <Layers className="w-6 h-6" />
-              },
-              {
-                step: "03",
-                title: "Build",
-                description: "Agile implementation with continuous feedback loops, ensuring solutions meet real-world requirements as they evolve.",
-                icon: <Settings className="w-6 h-6" />
-              },
-              {
-                step: "04",
-                title: "Scale",
-                description: "Systematic expansion of successful pilots, with knowledge transfer and capability building for sustained impact.",
-                icon: <Rocket className="w-6 h-6" />
-              }
-            ].map((phase, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
+            {outcomes.map((item, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="relative"
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`${
+                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
+                }`}
               >
-                <div className="bg-white/5 p-8 rounded-xl h-full">
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center text-primary">
-                      {phase.icon}
-                    </div>
-                    <span className="text-4xl font-bold text-white/20">{phase.step}</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-4">{phase.title}</h3>
-                  <p className="text-white/60 leading-relaxed text-sm">{phase.description}</p>
+                {/* TODO: replace with real stat */}
+                <div
+                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
+                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                >
+                  {item.stat}
                 </div>
-                {index < 3 && (
-                  <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-white/20 to-transparent" />
-                )}
+                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
+                  {item.label}
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Case Studies Grid */}
-      <section className="py-24 md:py-32 bg-white text-charcoal">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 5 — Light grey Approach / Methodology framework */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col md:flex-row md:items-end md:justify-between mb-16"
+            className="mb-16 max-w-[60ch]"
           >
-            <div>
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-                Case Studies
-              </span>
-              <h2 className="text-4xl md:text-5xl eb-garamond font-bold mb-4">
-                Transformation in action
-              </h2>
-              <p className="text-xl text-charcoal/60 max-w-2xl">
-                Real results from organizations that partnered with NEXDYNE to transform their operations, technology, and customer experience.
-              </p>
-            </div>
-            <Link href="/cases">
-              <Button className="bg-base text-white hover:bg-base/90 px-8 py-4 text-base font-semibold transition-all mt-6 md:mt-0">
-                View All Cases
-              </Button>
-            </Link>
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Think About It
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The Investment-Case Framework
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Four integrated disciplines that move a transformation from boardroom commitment to realized value — and keep it there through the inevitable course corrections.
+            </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {caseStudies.map((study, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {approach.map((step, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <Link href={study.href}>
-                  <div className="group bg-subtle rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer h-full">
-                    <div className="aspect-video overflow-hidden">
-                      <img 
-                        src={study.image}
-                        alt={study.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                <Link href={step.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 flex flex-col">
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
+                      {step.description}
+                    </p>
+                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Explore
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Transformations that land. NexDyne clients have captured value above industry benchmarks on operating-model redesigns, M&A integrations, and multi-year modernizations — because the governance discipline holds.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              We've worked alongside C-suite teams in financial services, industrials, healthcare, and consumer — bringing org design, change management, M&A integration, and instrumented PMO together as one transformation system rather than four parallel workstreams.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 7 — White Case studies / proof */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Transformation, proved in outcomes.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={result.image}
+                        alt={result.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                       />
                     </div>
-                    <div className="p-6">
-                      <span className="text-xs font-bold uppercase tracking-wider text-primary mb-2 block">
-                        {study.category}
+                    <div className="p-8 lg:p-10">
+                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                        {result.industry}
                       </span>
-                      <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors line-clamp-2">
-                        {study.title}
+                      {/* TODO: replace with real stat */}
+                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                        {result.title}
                       </h3>
-                      <p className="text-charcoal/60 text-sm mb-4 line-clamp-2">
-                        {study.description}
+                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
+                        {result.description}
                       </p>
-                      <div className="flex gap-6">
-                        {study.stats.map((stat, statIndex) => (
-                          <div key={statIndex}>
-                            <div className="text-xl font-bold text-primary">{stat.value}</div>
-                            <div className="text-charcoal/40 text-xs">{stat.label}</div>
-                          </div>
-                        ))}
-                      </div>
+                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                        Read Case
+                      </span>
                     </div>
                   </div>
                 </Link>
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* Impact Stats */}
-      <section className="py-24 md:py-32 bg-primary">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-white mb-6">
-              Measurable impact across industries
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            {[
-              { value: "250+", label: "Transformation Projects Delivered" },
-              { value: "$2.8B", label: "Client Value Created" },
-              { value: "94%", label: "Client Satisfaction Score" },
-              { value: "12", label: "Industries Served" }
-            ].map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center"
-              >
-                <div className="text-5xl md:text-6xl font-bold text-white mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-white/80">{stat.label}</div>
-              </motion.div>
-            ))}
+          <div className="mt-14">
+            <Link href="/cases">
+              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                See All Case Studies
+              </span>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Insights Section */}
-      <section className="py-24 md:py-32 bg-subtle text-charcoal">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 8 — White Related capabilities / cross-sell */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col md:flex-row md:items-end md:justify-between mb-16"
+            className="mb-16 max-w-[60ch]"
           >
-            <div>
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-                Insights
-              </span>
-              <h2 className="text-4xl md:text-5xl eb-garamond font-bold mb-4">
-                Transformation intelligence
-              </h2>
-              <p className="text-xl text-charcoal/60 max-w-2xl">
-                Research, frameworks, and practical guides from our transformation practice.
-              </p>
-            </div>
-            <Link href="/insights">
-              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/5 px-8 py-4 text-base font-semibold transition-all mt-6 md:mt-0">
-                View All Insights
-              </Button>
-            </Link>
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Related Offerings
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Adjacent capabilities for a complete transformation agenda.
+            </h3>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {insights.map((insight, index) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {relatedOfferings.map((offering, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <Link href={insight.href}>
-                  <div className="group bg-white p-6 rounded-xl hover:shadow-lg transition-all duration-300 cursor-pointer h-full">
-                    <span className="text-xs font-bold uppercase tracking-wider text-primary mb-3 block">
-                      {insight.category}
-                    </span>
-                    <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">
-                      {insight.title}
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
                     </h3>
-                    <p className="text-charcoal/60 text-sm mb-4 line-clamp-2">
-                      {insight.description}
-                    </p>
-                    <div className="text-charcoal/40 text-sm">{insight.readTime}</div>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
                   </div>
                 </Link>
               </motion.div>
@@ -517,35 +501,75 @@ export default function EnterpriseTransformationHub() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 md:py-32 bg-base">
-        <div className="container px-4 md:px-12">
-          <div className="max-w-4xl mx-auto text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold text-white mb-8">
-                Ready to transform your enterprise?
-              </h2>
-              <p className="text-xl text-white/60 mb-10 max-w-2xl mx-auto">
-                Let's discuss how NEXDYNE can help you modernize operations, unlock customer insights, and accelerate growth.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/contact">
-                  <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-lg font-semibold transition-all">
-                    Schedule a Consultation
-                  </Button>
-                </Link>
-                <Link href="/cases">
-                  <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-10 py-6 text-lg font-semibold transition-all bg-transparent">
-                    Explore Case Studies
-                  </Button>
-                </Link>
-              </div>
-            </motion.div>
+      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our transformation strategy team into your next executive conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="industrials">Industrials & Manufacturing</SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="consumer">Consumer & Retail</SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="private-equity">Private Equity Portfolio</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with C-suite leaders ready to design and govern the transformation the strategy actually requires — and to instrument it so the value capture survives the next two years of reality.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>

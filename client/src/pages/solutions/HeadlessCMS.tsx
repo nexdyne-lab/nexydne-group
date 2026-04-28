@@ -1,331 +1,579 @@
+import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { ArrowRight, Zap, TrendingUp, Layers, ShoppingCart } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { RelatedContent } from "@/components/RelatedContent";
-import { strategyRelatedItems } from "@/data/related-content";
+import SolutionHero from "@/components/SolutionHero";
+import { SEO } from "@/components/SEO";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function HeadlessCMS() {
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
+
+  const services = [
+    {
+      title: "Headless CMS Platform Selection",
+      description:
+        "Pick the right platform — Contentful, Strapi, Sanity, Contentstack — based on your channel mix, developer experience needs, and editorial workflows. We've shipped on all of them.",
+      link: "/solutions/headless-cms/platform-selection",
+    },
+    {
+      title: "Content Modeling & Schema Design",
+      description:
+        "The schema is the product. We design content models that survive the next redesign, the next channel, and the next acquisition — flexible without becoming chaos.",
+      link: "/solutions/headless-cms/content-modeling",
+    },
+    {
+      title: "Headless Migration from Legacy CMS",
+      description:
+        "Lift content out of WordPress, Drupal, AEM, or Sitecore into a modern headless stack — preserving SEO, redirects, and the editorial muscle memory teams rely on.",
+      link: "/solutions/headless-cms/migration",
+    },
+    {
+      title: "Multi-Channel Publishing Architecture",
+      description:
+        "Web, mobile, in-store, voice, partner APIs — one content source, every surface. We design the delivery layer so a single editorial change ships everywhere consistently.",
+      link: "/solutions/headless-cms/multi-channel",
+    },
+    {
+      title: "Headless Commerce Integration",
+      description:
+        "Compose content and commerce — Shopify, commercetools, BigCommerce — into unified shopping experiences without rebuilding either side from scratch.",
+      link: "/solutions/headless-cms/commerce-integration",
+    },
+    {
+      title: "Developer Experience Optimization",
+      description:
+        "Preview environments, type-safe SDKs, local-first workflows, and CI gates that keep editors productive and engineers shipping. DX is the adoption story.",
+      link: "/solutions/headless-cms/developer-experience",
+    },
+  ];
+
+  const outcomes = [
+    {
+      // TODO: replace with real stat
+      stat: "60+",
+      label: "headless CMS implementations across web, mobile, and omnichannel programs",
+    },
+    {
+      // TODO: replace with real stat
+      stat: "4.5x",
+      label: "faster time-to-publish for content teams after migration",
+    },
+    {
+      // TODO: replace with real stat
+      stat: "70%",
+      label: "reduction in front-end build time on Jamstack architectures",
+    },
+  ];
+
+  const approach = [
+    {
+      title: "Audit the Channel Surface",
+      description:
+        "Map every place content needs to live — web, app, kiosk, partner API, voice — before picking a platform. The channel mix decides the architecture, not the other way around.",
+      link: "/solutions/headless-cms/multi-channel",
+    },
+    {
+      title: "Model Content as a Product",
+      description:
+        "Schemas, references, and validation rules are the long-lived asset. We design content models the way product teams design data models — with versioning, ownership, and intent.",
+      link: "/solutions/headless-cms/content-modeling",
+    },
+    {
+      title: "Stage the Migration",
+      description:
+        "Big-bang headless migrations fail. We carve content domains, ship them in slices, and run legacy and headless in parallel until the cutover is boring.",
+      link: "/solutions/headless-cms/migration",
+    },
+    {
+      title: "Engineer the Editor Experience",
+      description:
+        "Headless wins on developer experience and loses on editor experience by default. We invest equally in both — preview, structured authoring, and the comfort of an editorial home.",
+      link: "/solutions/headless-cms/developer-experience",
+    },
+  ];
+
+  const cases = [
+    {
+      industry: "Retail",
+      title: "Omnichannel Retailer Ships Web, App, and In-Store from One Headless Stack",
+      description:
+        "A multi-brand retailer migrated from monolithic CMS to a composable headless platform — collapsing three editorial pipelines into one and cutting publish time by 80%.",
+      image: "/images/case-headless-retail.jpg",
+      link: "/cases/retailer-headless-omnichannel",
+    },
+    {
+      industry: "Media",
+      title: "Publisher Cuts Page Load Time in Half with Jamstack Headless Rebuild",
+      description:
+        "A digital publisher rebuilt on a headless CMS plus static delivery — restoring editorial velocity, improving Core Web Vitals, and unlocking new monetization surfaces.",
+      image: "/images/case-headless-media.jpg",
+      link: "/cases/publisher-headless-jamstack",
+    },
+  ];
+
+  const relatedOfferings = [
+    {
+      title: "Digital Experience Platforms",
+      link: "/solutions/digital-experience-platforms",
+    },
+    {
+      title: "Composable Commerce",
+      link: "/solutions/composable-commerce",
+    },
+    {
+      title: "Web Development",
+      link: "/solutions/web-development",
+    },
+    {
+      title: "Content Service Platform",
+      link: "/solutions/content-service-platform",
+    },
+  ];
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Headless CMS"
+        description="API-first content management for omnichannel experiences. Headless platform selection, content modeling, migration, multi-channel architecture, and headless commerce."
+        canonical="/solutions/headless-cms"
+      />
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-base to-base text-white py-24">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="inline-block px-4 py-1 bg-white/10 rounded-full text-sm mb-6">
-                Digital Engagement / Headless CMS
-              </div>
-              <h1 className="text-5xl font-bold mb-3 eb-garamond">
-                Headless CMS
-              </h1>
-            </div>
-            <div>
-              <p className="text-xl text-white/90 leading-relaxed">
-                Still working with a traditional CMS? Go headless today and enjoy flexible, sustainable growth with content that adapts to any channel.
+      {/* SLOT 1 — Charcoal hero */}
+      <SolutionHero
+        eyebrow="SOLUTION · HEADLESS CMS"
+        title="Headless CMS"
+        subtitle="API-first content management built for omnichannel. Platform selection, content modeling, migration, and the editor and developer experience that decide whether a headless program ships or stalls."
+        backgroundImage="/images/solution-headless-cms.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[72ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Content is no longer a website. It's a service every channel consumes.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                Monolithic CMS platforms — WordPress, Drupal, AEM, Sitecore — assumed the website was the product. That assumption broke years ago. Today's editorial team needs to publish to web, mobile, in-store displays, partner APIs, voice agents, and channels that don't exist yet. Headless CMS treats content as a service: structured, versioned, API-delivered, and decoupled from any single rendering surface.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                NexDyne's{" "}
+                <Link
+                  href="/insights/headless-cms-playbook"
+                  className="text-primary hover:text-primary-hover transition-colors"
+                >
+                  headless CMS consultants
+                </Link>{" "}
+                help teams pick the right platform, design the content model that survives the next redesign, and migrate without losing SEO, editorial velocity, or the trust of the people who write the content.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="py-20 bg-subtle">
-        <div className="container">
-          <div className="grid lg:grid-cols-4 gap-8">
-            {/* Want to know more card */}
-            <Card className="p-8 bg-white">
-              <div className="w-24 h-24 rounded-full bg-blue-100 mb-6 mx-auto"></div>
-              <h3 className="text-xl font-bold mb-4 text-center">Want to know more?</h3>
-              <p className="text-center text-sm text-muted-foreground mb-6">
-                Sarah Chen<br />
-                Content Strategy Director
-              </p>
-              <Button className="w-full bg-primary hover:bg-primary/90 text-white transition-colors duration-200 ease-in-out">Ask Sarah Chen</Button>
-            </Card>
-
-            {/* Benefit cards */}
-            <Card className="p-8 bg-white">
-              <Zap className="w-12 h-12 text-blue-500 mb-4" />
-              <h3 className="text-xl font-bold mb-3">Complete creative freedom</h3>
-              <p className="text-muted-foreground">
-                Shape your platform's look and feel. Headless architecture gives you maximum control over your user experience across every channel.
-              </p>
-            </Card>
-
-            <Card className="p-8 bg-white">
-              <TrendingUp className="w-12 h-12 text-blue-500 mb-4" />
-              <h3 className="text-xl font-bold mb-3">Leap ahead of competition</h3>
-              <p className="text-muted-foreground">
-                Predict market shifts and leave competitors behind. A headless platform gives you ultimate flexibility to test new channels instantly.
-              </p>
-            </Card>
-
-            <Card className="p-8 bg-white">
-              <Layers className="w-12 h-12 text-blue-500 mb-4" />
-              <h3 className="text-xl font-bold mb-3">All-in-one omnichannel</h3>
-              <p className="text-muted-foreground">
-                Control all channels in one place. Enhanced customer experience: let your backend do the heavy lifting for web, mobile, IoT, and voice.
-              </p>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Content Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <img
-                src="/headless-cms-hero.df9bd067.jpg"
-                alt="Headless CMS Architecture"
-                className="rounded-lg shadow-xl w-full"
-              />
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold mb-6">About headless CMS</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Headless architecture decouples your content from presentation, giving you complete freedom to deliver experiences anywhere. The result? A flexible infrastructure that scales with your growth and lets you launch new touchpoints without rebuilding your content foundation.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Driven by APIs, you can seamlessly integrate emerging technologies—AR, voice interfaces, IoT devices—with zero changes to your core architecture. We deliver smooth transitions to headless systems, empowering you to offer exceptional omnichannel experiences that drive real business outcomes.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Traditional CMS platforms lock you into rigid templates and monolithic architectures. Headless CMS liberates your content strategy, enabling your team to publish once and distribute everywhere—from web and mobile to digital signage and wearables—all managed from a single source of truth.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Quote Section */}
-      <section className="py-20 bg-subtle">
-        <div className="container max-w-4xl text-center">
-          <blockquote className="text-3xl font-bold text-base mb-6">
-            "Headless CMS: the architecture that turns content into your competitive advantage."
-          </blockquote>
-          <p className="text-lg text-muted-foreground">
-            — Marcus Rivera, Chief Digital Officer
-          </p>
-        </div>
-      </section>
-
-      {/* Approach Section */}
-      <section className="py-20">
-        <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold mb-12 text-center">Our headless CMS solutions</h2>
-          <div className="space-y-8">
-            <div className="border-l-4 border-blue-500 pl-6">
-              <h3 className="text-2xl font-bold mb-3">API-First Content Infrastructure</h3>
-              <p className="text-lg text-muted-foreground">
-                We architect headless systems with robust GraphQL and REST APIs that deliver content at scale. Your developers get clean, well-documented endpoints that make integration effortless across any frontend framework or platform.
-              </p>
-            </div>
-            <div className="border-l-4 border-blue-500 pl-6">
-              <h3 className="text-2xl font-bold mb-3">Omnichannel Content Orchestration</h3>
-              <p className="text-lg text-muted-foreground">
-                We build content workflows that span web, mobile, IoT, and emerging channels. Your content team publishes once while our orchestration layer handles distribution, localization, and personalization across every touchpoint automatically.
-              </p>
-            </div>
-            <div className="border-l-4 border-blue-500 pl-6">
-              <h3 className="text-2xl font-bold mb-3">Migration & Integration Excellence</h3>
-              <p className="text-lg text-muted-foreground">
-                We execute zero-downtime migrations from legacy CMS platforms to modern headless architectures. Our phased approach preserves your SEO equity, maintains content history, and trains your team on new workflows—all while keeping your site live.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-50 to-blue-100">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl font-bold mb-6">Want to know more?</h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Sarah Chen<br />
-                <span className="text-lg">Content Strategy Director</span>
-              </p>
-              <div className="flex gap-4">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white transition-colors duration-200 ease-in-out">Get in touch</Button>
-                <Button size="lg" variant="outline" className="border-primary text-charcoal hover:bg-primary hover:text-white transition-colors duration-200 ease-in-out">Schedule a meeting</Button>
-              </div>
-            </div>
-            <div className="w-64 h-64 rounded-full bg-blue-200 ml-auto"></div>
-          </div>
-        </div>
-      </section>
-
-      {/* Partners Section */}
-      <section className="py-20">
-        <div className="container">
-          <h2 className="text-3xl font-bold mb-4">Partners</h2>
-          <p className="text-xl text-muted-foreground mb-12">Awesome partners turn dreams into reality</p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <Card className="p-8 flex items-center justify-center">
-              <span className="text-xl font-bold text-base">Contentful</span>
-            </Card>
-            <Card className="p-8 flex items-center justify-center">
-              <span className="text-xl font-bold text-base">Contentstack</span>
-            </Card>
-            <Card className="p-8 flex items-center justify-center">
-              <span className="text-xl font-bold text-base">Storyblok</span>
-            </Card>
-            <Card className="p-8 flex items-center justify-center">
-              <span className="text-xl font-bold text-base">Sanity</span>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Why NEXDYNE Section */}
-      <section className="py-20 bg-subtle">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <img
-                src="/headless-cms-why-nexdyne.4a5e13ca.jpg"
-                alt="Why NEXDYNE"
-                className="rounded-lg shadow-xl w-full"
-              />
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold mb-6">Why NEXDYNE</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Whether you're looking for a strategic partner, a boost for your digital transformation, or the ultimate content experience for your customers, you've come to the right place.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                With our headless CMS expertise, you'll always be one step ahead of the competition. We've delivered content platforms for Fortune 500 enterprises and fast-growing startups—architecting systems that handle millions of requests while keeping content teams productive.
-              </p>
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white transition-colors duration-200 ease-in-out">Get in touch</Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Cases Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-blue-100">
-        <div className="container">
-          <div className="mb-12">
-            <p className="text-sm font-semibold text-muted-foreground mb-2">Cases</p>
-            <h2 className="text-4xl font-bold mb-4">Cases we love talking about</h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              Heard of a business that transforms unique business challenges into exceptional outcomes? That'd be us. Check out these inspiring cases.
+      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Help Clients
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six ways we ship headless without breaking the editor.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              We combine platform expertise, content modeling discipline, and migration craft to ship headless programs that earn editorial trust on the first day live.
             </p>
-            <Button className="bg-primary hover:bg-primary/90 text-white transition-colors duration-200 ease-in-out">All cases</Button>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {services.map((service, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={service.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col">
+                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                      {service.description}
+                    </p>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Learn more
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Experience & Impact
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Measurable outcomes from headless programs in production.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
+            {outcomes.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`${
+                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
+                }`}
+              >
+                {/* TODO: replace with real stat */}
+                <div
+                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
+                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                >
+                  {item.stat}
+                </div>
+                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
+                  {item.label}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 5 — Light grey Approach / Methodology framework */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Think About It
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The Channel-First Framework
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Four integrated phases that move a headless program from architecture decision to omnichannel reality.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {approach.map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={step.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 flex flex-col">
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
+                      {step.description}
+                    </p>
+                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Explore
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Content as a service, finally working. NexDyne clients have collapsed editorial pipelines, accelerated time-to-publish, and shipped omnichannel experiences from a single source of truth.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              We've shipped headless programs across retail, media, financial services, and B2B SaaS — on Contentful, Strapi, Sanity, Contentstack, and a handful of focused challengers — treating content modeling and editor experience with the same seriousness as the developer stack.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 7 — White Case studies / proof */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Headless, proved in outcomes.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={result.image}
+                        alt={result.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="p-8 lg:p-10">
+                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                        {result.industry}
+                      </span>
+                      {/* TODO: replace with real stat */}
+                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                        {result.title}
+                      </h3>
+                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
+                        {result.description}
+                      </p>
+                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                        Read Case
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <Link href="/cases/media-headless-cms">
-              <Card className="overflow-hidden hover:shadow-xl transition-shadow cursor-pointer">
-                <img
-                  src="/headless-cms-case-media.cfc393e5.jpg"
-                  alt="Media Company Headless CMS"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3">Media Company Scales to 50M Monthly Readers</h3>
-                  <p className="text-muted-foreground mb-4">
-                    How a digital media publisher migrated to headless CMS and achieved 73% faster time-to-publish across 12 global markets.
-                  </p>
-                  <div className="flex items-center text-primary font-semibold">
-                    Read case study <ArrowRight className="ml-2 w-4 h-4" />
-                  </div>
-                </div>
-              </Card>
-            </Link>
-
-            <Link href="/cases/ecommerce-headless-cms">
-              <Card className="overflow-hidden hover:shadow-xl transition-shadow cursor-pointer">
-                <img
-                  src="/headless-cms-case-ecommerce.d4135bfb.jpg"
-                  alt="E-commerce Headless CMS"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3">Retailer Launches 6 New Channels in 8 Months</h3>
-                  <p className="text-muted-foreground mb-4">
-                    How an omnichannel retailer used headless CMS to power web, mobile, in-store kiosks, and voice commerce from one content hub.
-                  </p>
-                  <div className="flex items-center text-primary font-semibold">
-                    Read case study <ArrowRight className="ml-2 w-4 h-4" />
-                  </div>
-                </div>
-              </Card>
-            </Link>
-
-            <Link href="/cases/enterprise-headless-cms">
-              <Card className="overflow-hidden hover:shadow-xl transition-shadow cursor-pointer">
-                <img
-                  src="/headless-cms-case-enterprise.0fec56e5.jpg"
-                  alt="Enterprise Headless CMS"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3">Enterprise Reduces Content Ops Cost by 58%</h3>
-                  <p className="text-muted-foreground mb-4">
-                    How a global B2B company consolidated 47 regional sites into one headless platform and cut content management costs in half.
-                  </p>
-                  <div className="flex items-center text-primary font-semibold">
-                    Read case study <ArrowRight className="ml-2 w-4 h-4" />
-                  </div>
-                </div>
-              </Card>
+          <div className="mt-14">
+            <Link href="/cases">
+              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                See All Case Studies
+              </span>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Services Footer */}
-      <section className="py-20 bg-white">
-        <div className="container">
-          <p className="text-sm font-semibold text-muted-foreground mb-4">Digital Engagement</p>
-          <h2 className="text-3xl font-bold mb-12">Services</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Link href="/solutions/conversational-ai">
-              <Card className="p-8 hover:shadow-lg transition-shadow cursor-pointer">
-                <h3 className="text-xl font-bold mb-3 flex items-center justify-between">
-                  Conversational AI
-                  <ArrowRight className="w-5 h-5 text-primary" />
-                </h3>
-                <p className="text-muted-foreground">
-                  Provide 24/7 customer support and smart interactions that understand customer needs.
-                </p>
-              </Card>
-            </Link>
+      {/* SLOT 8 — White Related capabilities / cross-sell */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Related Offerings
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Adjacent capabilities for a complete digital experience stack.
+            </h3>
+          </motion.div>
 
-            <Link href="/solutions/mobile-apps">
-              <Card className="p-8 hover:shadow-lg transition-shadow cursor-pointer">
-                <h3 className="text-xl font-bold mb-3 flex items-center justify-between">
-                  Mobile apps
-                  <ArrowRight className="w-5 h-5 text-primary" />
-                </h3>
-                <p className="text-muted-foreground">
-                  Bring your mobile app idea to life with NEXDYNE's iOS and Android services.
-                </p>
-              </Card>
-            </Link>
-
-            <Card className="p-8 bg-subtle">
-              <h3 className="text-xl font-bold mb-3 flex items-center justify-between">
-                Headless CMS
-                <ArrowRight className="w-5 h-5 text-muted-foreground/70" />
-              </h3>
-              <p className="text-muted-foreground">
-                Go headless today and enjoy flexible, sustainable growth with content that adapts to any channel.
-              </p>
-            </Card>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {relatedOfferings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      <RelatedContent items={strategyRelatedItems} />
+      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our headless CMS team into your next omnichannel conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="retail">Retail & E-commerce</SelectItem>
+                    <SelectItem value="media">Media & Publishing</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="technology">Technology & SaaS</SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="travel">Travel & Hospitality</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders ready to break content out of the website and ship it everywhere it's needed — on a stack designed for the channel mix you actually have.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

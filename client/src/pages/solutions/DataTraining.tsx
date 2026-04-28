@@ -1,439 +1,579 @@
+import { motion } from "framer-motion";
 import { Link } from "wouter";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronRight } from "lucide-react";
-import { RelatedContent } from "@/components/RelatedContent";
-import { dataRelatedItems } from "@/data/related-content";
+import SolutionHero from "@/components/SolutionHero";
+import { SEO } from "@/components/SEO";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function DataTraining() {
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
+
+  const services = [
+    {
+      title: "Executive Data Literacy Programs",
+      description:
+        "Board-ready data fluency for the C-suite. Short-form, business-language curricula that teach leaders to interrogate dashboards, challenge assumptions, and sponsor data investments with confidence.",
+      link: "/solutions/data-training/executive-literacy",
+    },
+    {
+      title: "Business Analyst Training Tracks",
+      description:
+        "Structured analyst pathways covering SQL, modeling, visualization, and storytelling. We meet teams at their current level and graduate them to true analytical partners for the business.",
+      link: "/solutions/data-training/business-analyst",
+    },
+    {
+      title: "Citizen Data Scientist Programs",
+      description:
+        "Empower line-of-business power users to build models, automate analysis, and answer their own questions — within governance guardrails that protect production data.",
+      link: "/solutions/data-training/citizen-data-scientist",
+    },
+    {
+      title: "Data Governance Training",
+      description:
+        "Practical curricula for stewards, owners, and custodians. Policy is only as good as the people enforcing it — we train the humans who make data trustworthy.",
+      link: "/solutions/data-training/governance",
+    },
+    {
+      title: "Technical Data Engineering Training",
+      description:
+        "Hands-on engineering curricula on modern data stacks — pipelines, warehousing, lakehouse patterns, and orchestration — taught by practitioners who ship production systems.",
+      link: "/solutions/data-training/data-engineering",
+    },
+    {
+      title: "Data Strategy Workshops & Immersives",
+      description:
+        "Multi-day strategy immersives that align leadership on the data operating model, prioritize use cases, and produce a 12-month roadmap with executive ownership baked in.",
+      link: "/solutions/data-training/strategy-workshops",
+    },
+  ];
+
+  const outcomes = [
+    {
+      // TODO: replace with real stat
+      stat: "120+",
+      label: "data literacy programs delivered across enterprise and mid-market clients",
+    },
+    {
+      // TODO: replace with real stat
+      stat: "3.6x",
+      label: "increase in self-service analytics adoption within the first year",
+    },
+    {
+      // TODO: replace with real stat
+      stat: "85%",
+      label: "learner completion rate across cohort-based and on-demand tracks",
+    },
+  ];
+
+  const approach = [
+    {
+      title: "Diagnose the Literacy Gap",
+      description:
+        "Survey, interview, and assess to map the real distance between current capability and the data culture leadership wants. The curriculum is shaped by evidence, not assumption.",
+      link: "/solutions/data-training/executive-literacy",
+    },
+    {
+      title: "Design Role-Based Curricula",
+      description:
+        "Executives, analysts, engineers, and stewards learn different things in different formats. We design tracks that respect role, time, and the way adults actually retain.",
+      link: "/solutions/data-training/business-analyst",
+    },
+    {
+      title: "Apply It to Real Work",
+      description:
+        "Training without application decays in weeks. Every program ties to live business problems so participants leave with shipped artifacts, not just certificates.",
+      link: "/solutions/data-training/citizen-data-scientist",
+    },
+    {
+      title: "Measure and Sustain",
+      description:
+        "We instrument adoption, retention, and downstream business outcomes — and run cadence sessions that keep momentum after the initial cohort wraps.",
+      link: "/solutions/data-training/strategy-workshops",
+    },
+  ];
+
+  const cases = [
+    {
+      industry: "Financial Services",
+      title: "Regional Bank Trains 600 Employees and Triples Self-Service Reporting",
+      description:
+        "A tiered literacy program reached executives, analysts, and front-line staff — and reduced ad-hoc report requests to the data team by more than 60%.",
+      image: "/images/case-data-training-bank.jpg",
+      link: "/cases/bank-data-literacy",
+    },
+    {
+      industry: "Healthcare",
+      title: "Health System Builds an Internal Citizen Data Scientist Bench",
+      description:
+        "A 12-week immersive trained 80 clinicians and operations leads to build governed models, freeing the central data team to tackle higher-leverage work.",
+      image: "/images/case-data-training-health.jpg",
+      link: "/cases/health-citizen-data-scientist",
+    },
+  ];
+
+  const relatedOfferings = [
+    {
+      title: "Data Strategy",
+      link: "/solutions/data-strategy",
+    },
+    {
+      title: "Data Governance",
+      link: "/solutions/data-governance",
+    },
+    {
+      title: "Analytics & Business Intelligence",
+      link: "/solutions/analytics-business-intelligence",
+    },
+    {
+      title: "Change Management",
+      link: "/solutions/enterprise-transformation",
+    },
+  ];
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Data Training"
+        description="Data literacy and training programs for organizations transitioning to data-driven cultures. Executive, analyst, citizen data scientist, governance, and engineering tracks."
+        canonical="/solutions/data-training"
+      />
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-purple-900 via-primary to-primary text-white py-20">
-        <div className="container">
-          {/* Breadcrumb */}
-          <nav className="text-sm mb-8 text-purple-200">
-            <Link href="/solutions/intelligent-process-optimization" className="hover:text-white">
-              Services
-            </Link>
-            {" / "}
-            <Link href="/solutions/data-solutions" className="hover:text-white">
-              Data Solutions
-            </Link>
-            {" / "}
-            <span className="text-white">Data Training</span>
-          </nav>
+      {/* SLOT 1 — Charcoal hero */}
+      <SolutionHero
+        eyebrow="SOLUTION · DATA TRAINING"
+        title="Data Training"
+        subtitle="Data literacy programs that turn data-curious organizations into data-driven ones. Role-based curricula for executives, analysts, citizen data scientists, stewards, and engineers — built by practitioners, applied to real work."
+        backgroundImage="/images/solution-data-training.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+      />
 
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-6xl font-bold mb-3 eb-garamond">
-              Data Training
-            </h1>
-            <p className="text-xl text-purple-100">
-              Give your employees the knowledge and skills they need to get data under control, from newbie to boss level. Build self-sufficient teams that extract value without constant external support.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="grid md:grid-cols-3 gap-12">
-            {/* Expert CTA */}
-            <div className="md:col-span-1">
-              <div className="sticky top-8">
-                <div className="w-48 h-48 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <div className="w-40 h-40 bg-slate-200 rounded-full"></div>
-                </div>
-                <h3 className="text-2xl font-bold text-charcoal mb-4 text-center">
-                  Want to know more?
-                </h3>
-                <div className="flex flex-col gap-3">
-                  <Button className="w-full bg-slate-900 hover:bg-slate-800 text-white">
-                    Ask Martijn Voorveld
-                  </Button>
-                </div>
-              </div>
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[72ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The data platform is built. The dashboards exist. The culture hasn't caught up.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                Most organizations have spent the last decade investing in data infrastructure — warehouses, lakehouses, BI tools, governance platforms. The plumbing works. What hasn't kept pace is the human capability to use it. Executives don't trust the dashboards. Analysts run the same five reports. Citizen users build shadow spreadsheets because the official tools feel inaccessible.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                NexDyne's{" "}
+                <Link
+                  href="/insights/data-literacy-playbook"
+                  className="text-primary hover:text-primary-hover transition-colors"
+                >
+                  data training consultants
+                </Link>{" "}
+                design role-based literacy programs that close the gap — meeting executives, analysts, engineers, and stewards where they are and graduating them to the data culture leadership keeps promising the board.
+              </p>
             </div>
+          </motion.div>
+        </div>
+      </section>
 
-            {/* Benefits */}
-            <div className="md:col-span-2 space-y-12">
-              <div>
-                <h2 className="text-4xl font-bold text-charcoal mb-8">The benefits</h2>
-              </div>
+      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Help Clients
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six ways we build data fluency that sticks.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              We design role-based curricula, deliver them in formats adults actually retain, and measure the downstream business outcomes — not just attendance.
+            </p>
+          </motion.div>
 
-              {/* Benefit 1 */}
-              <div className="flex gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 flex items-center justify-center">
-                    <svg className="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {services.map((service, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={service.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col">
+                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                      {service.description}
+                    </p>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Learn more
+                    </span>
                   </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-charcoal mb-3">Useful from day one</h3>
-                  <p className="text-lg text-charcoal/80">
-                    Real-world training that applies directly to day-to-day work. Forget theory—we're talking real use cases. Participants leave with skills they can deploy immediately, not concepts they'll never use.
-                  </p>
-                </div>
-              </div>
-
-              {/* Benefit 2 */}
-              <div className="flex gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 flex items-center justify-center">
-                    <svg className="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-charcoal mb-3">Suitable for all levels</h3>
-                  <p className="text-lg text-charcoal/80">
-                    From data specialists to end users, whether they're just getting started or want to dive into the detail. We tailor content to audience—business users learn self-service analytics, technical teams learn pipeline engineering.
-                  </p>
-                </div>
-              </div>
-
-              {/* Benefit 3 */}
-              <div className="flex gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 flex items-center justify-center">
-                    <svg className="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-charcoal mb-3">Learn from experts</h3>
-                  <p className="text-lg text-charcoal/80">
-                    Data courses delivered by professionals who live and breathe data, keen to share their knowledge. Our trainers build production systems for Fortune 500 companies—they teach what actually works, not textbook theory.
-                  </p>
-                </div>
-              </div>
-
-              {/* Benefit 4 */}
-              <div className="flex gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 flex items-center justify-center">
-                    <svg className="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-charcoal mb-3">Data training made to measure</h3>
-                  <p className="text-lg text-charcoal/80">
-                    Company-specific training or a complete course, specially designed for your teams. We build curricula around your tech stack, your data, and your business problems—not generic examples from other industries.
-                  </p>
-                </div>
-              </div>
-            </div>
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Knowledge Gets You There Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-charcoal mb-6">
-            Knowledge gets you there
-          </h2>
-          <div className="space-y-4 text-lg text-charcoal/80 mb-8">
-            <p>
-              When it comes to data, it's not the technology that's the bottleneck anymore. It's knowing what, how and why. With us, training doesn't mean just taking a course. We actually help your technical teams and your business users with hands-on knowledge of the data world—whether it's Python, SQL, or specific tools like dbt or Looker.
-            </p>
-            <p>
-              Our training courses are available out of the box, but we always tailor them to specific needs. There's one constant, though: we don't do theory, just practical knowledge that can be deployed right away. Participants work with your actual data, solve your actual problems, and leave with runbooks they can reference when they hit roadblocks.
-            </p>
-          </div>
+      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Experience & Impact
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Measurable outcomes from training programs in the wild.
+            </h3>
+          </motion.div>
 
-          {/* Quote */}
-          <div className="bg-white p-8 rounded-lg border-l-4 border-purple-600">
-            <blockquote className="text-2xl font-semibold text-purple-900 mb-4">
-              "We want to empower our customers to innovate themselves, not to permanently depend on us."
-            </blockquote>
-            <p className="text-muted-foreground">
-              Martijn Voorveld, Commercial Lead - NEXDYNE TECHNOLOGIES
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Helping You to Help Yourself Section */}
-      <section className="py-20">
-        <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-charcoal mb-6">
-            Helping you to help yourself
-          </h2>
-          <div className="space-y-4 text-lg text-charcoal/80">
-            <p>
-              We believe in making organizations self-reliant. That's why, as well as traditional training, we also offer training on the job that fits alongside ongoing projects. We teach your teams not only how to use solutions, but more than anything how to manage them.
-            </p>
-            <p>
-              Because one thing is clear: we want you to get ahead without us. No need for constant consultation when we pass on real knowledge that makes your organization stronger. And that approach aligns with our vision: we're not here to stay tied to you, but to set you off on the right track. That's how we shape your data-driven future together.
-            </p>
-            <p>
-              Training delivery ranges from half-day workshops (dashboard design, SQL fundamentals) to multi-week bootcamps (data engineering, ML operations). We work on-site or remote, synchronous or asynchronous—whatever fits your team's schedule and learning style.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Expert CTA Section */}
-      <section className="py-20 bg-blue-50">
-        <div className="container">
-          <div className="max-w-4xl mx-auto bg-white p-12 rounded-lg shadow-lg">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <div className="w-48 h-48 bg-slate-100 rounded-full flex items-center justify-center mx-auto">
-                  <div className="w-40 h-40 bg-slate-200 rounded-full"></div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
+            {outcomes.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`${
+                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
+                }`}
+              >
+                {/* TODO: replace with real stat */}
+                <div
+                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
+                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                >
+                  {item.stat}
                 </div>
-              </div>
-              <div>
-                <h2 className="text-3xl font-bold text-charcoal mb-4">
-                  Want to know more?
+                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
+                  {item.label}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 5 — Light grey Approach / Methodology framework */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Think About It
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The Literacy-to-Outcomes Framework
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Four integrated phases that move data training from check-the-box compliance to compounding capability.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {approach.map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={step.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 flex flex-col">
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
+                      {step.description}
+                    </p>
+                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Explore
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Data fluency, finally compounding. NexDyne clients have tripled self-service adoption, freed central data teams from ad-hoc reporting, and built executive teams who can interrogate the dashboards rather than nod at them.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              We've delivered programs across financial services, healthcare, manufacturing, and the public sector — treating curriculum, application, and measurement as one continuous design problem rather than three separate vendors.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 7 — White Case studies / proof */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Literacy, proved in outcomes.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={result.image}
+                        alt={result.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="p-8 lg:p-10">
+                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                        {result.industry}
+                      </span>
+                      {/* TODO: replace with real stat */}
+                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                        {result.title}
+                      </h3>
+                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
+                        {result.description}
+                      </p>
+                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                        Read Case
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-14">
+            <Link href="/cases">
+              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                See All Case Studies
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 8 — White Related capabilities / cross-sell */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Related Offerings
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Adjacent capabilities for a complete data culture.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {relatedOfferings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our data training team into your next capability conversation.
                 </h2>
-                <p className="text-lg text-charcoal/80 mb-6">
-                  <strong>Martijn Voorveld</strong><br />
-                  Senior Sales Manager
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="bg-slate-900 hover:bg-slate-800 text-white">
-                    Get in touch
-                  </Button>
-                  <Button variant="outline" className="border-slate-300">
-                    Schedule a meeting
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="public-sector">Public Sector</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders ready to invest in their people — turning data infrastructure into data culture, one cohort at a time.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Partners Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container">
-          <div className="mb-12">
-            <span className="text-sm text-muted-foreground uppercase tracking-wide font-semibold">Partners</span>
-            <h2 className="text-4xl font-bold text-charcoal mt-2">Agentic AI</h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Glean */}
-            <div className="bg-white p-8 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-purple-900 mb-3">Glean</h3>
-              <p className="text-charcoal/80">
-                Enterprise search and knowledge discovery platform that connects all your company data sources.
-              </p>
-            </div>
-
-            {/* Weaviate */}
-            <div className="bg-white p-8 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-purple-900 mb-3">Weaviate</h3>
-              <p className="text-charcoal/80">
-                Open-source vector database for AI-native applications and semantic search capabilities.
-              </p>
-            </div>
-
-            {/* LangChain */}
-            <div className="bg-white p-8 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-purple-900 mb-3">LangChain</h3>
-              <p className="text-charcoal/80">
-                Framework for building context-aware reasoning applications powered by language models.
-              </p>
-            </div>
-
-            {/* N8N */}
-            <div className="bg-white p-8 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-purple-900 mb-3">N8N</h3>
-              <p className="text-charcoal/80">
-                Workflow automation platform that connects AI models with business processes and data sources.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why NEXDYNE Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <img
-                src="/office-building.jpg"
-                alt="NEXDYNE Office"
-                className="rounded-lg shadow-lg w-full"
-              />
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold text-charcoal mb-6">
-                Why NEXDYNE
-              </h2>
-              <p className="text-lg text-charcoal/80 mb-6">
-                Whether you're looking for a strategic partner, a boost for your digital transformation, or the ultimate customer experience for your customers, you've come to the right place. With our next-generation digital solutions, you'll always be one step ahead of the competition.
-              </p>
-              <Button className="bg-slate-900 hover:bg-slate-800 text-white">
-                Get in touch
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Cases Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container">
-          <div className="mb-12">
-            <h2 className="text-4xl font-bold text-charcoal mb-4">Cases we love talking about</h2>
-            <p className="text-xl text-charcoal/80">
-              Heard of a business that transforms unique business challenges into exceptional outcomes? That'd be us. Check out these inspiring cases.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Case 1 */}
-            <Link href="/cases/financial-services-sql-bootcamp">
-              <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all group cursor-pointer">
-                <img src="/financial-services-training.55081221.jpg" alt="Financial Services Training" className="h-48 w-full object-cover" />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
-                    Financial Services Firm Upskills 50 Analysts
-                  </h3>
-                  <p className="text-charcoal/80 mb-4">
-                    8-week SQL and Python bootcamp transformed business analysts into self-sufficient data practitioners, reducing IT backlog 60%.
-                  </p>
-                  <Button variant="ghost" className="text-primary hover:text-blue-700 p-0">
-                    Read more
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </div>
-              </div>
-            </Link>
-
-            {/* Case 2 */}
-            <Link href="/cases/retailer-data-academy">
-              <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all group cursor-pointer">
-                <img src="/retail-data-academy.84cb2568.jpg" alt="Retail Data Academy" className="h-48 w-full object-cover" />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
-                    Retailer Builds Internal Data Academy
-                  </h3>
-                  <p className="text-charcoal/80 mb-4">
-                    Custom curriculum covering analytics fundamentals through ML deployment trained 120 employees across 6 departments in 12 months.
-                  </p>
-                  <Button variant="ghost" className="text-primary hover:text-blue-700 p-0">
-                    Read more
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </div>
-              </div>
-            </Link>
-
-            {/* Case 3 */}
-            <Link href="/cases/healthcare-dashboard-training">
-              <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all group cursor-pointer">
-                <img src="/healthcare-dashboard-training.fff5ec24.jpg" alt="Healthcare Dashboard Training" className="h-48 w-full object-cover" />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors">
-                    Healthcare Network Trains Clinical Staff on Dashboards
-                  </h3>
-                  <p className="text-charcoal/80 mb-4">
-                    Half-day workshops taught 200 clinicians to build custom Tableau dashboards, improving patient outcome visibility 45%.
-                  </p>
-                  <Button variant="ghost" className="text-primary hover:text-blue-700 p-0">
-                    Read more
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </div>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Related Services Section */}
-      <section className="py-20">
-        <div className="container">
-          <h2 className="text-4xl font-bold text-charcoal mb-12">Related Services</h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Data Strategy */}
-            <Link href="/solutions/data-strategy">
-              <div className="p-6 rounded-lg border-2 border-dashed border-slate-300 hover:border-blue-500 hover:bg-blue-50 transition-all cursor-pointer">
-                <h3 className="text-xl font-bold text-charcoal mb-2">Data Strategy</h3>
-                <p className="text-charcoal/80">Define what data matters and how to monetize it.</p>
-              </div>
-            </Link>
-
-            {/* Data Platform */}
-            <Link href="/solutions/data-platform">
-              <div className="p-6 rounded-lg border-2 border-dashed border-slate-300 hover:border-blue-500 hover:bg-blue-50 transition-all cursor-pointer">
-                <h3 className="text-xl font-bold text-charcoal mb-2">Data Platform</h3>
-                <p className="text-charcoal/80">Modern data warehouses and lakes built on cloud infrastructure.</p>
-              </div>
-            </Link>
-
-            {/* Data Visualization */}
-            <Link href="/solutions/data-visualization">
-              <div className="p-6 rounded-lg border-2 border-dashed border-slate-300 hover:border-blue-500 hover:bg-blue-50 transition-all cursor-pointer">
-                <h3 className="text-xl font-bold text-charcoal mb-2">Data visualization</h3>
-                <p className="text-charcoal/80">Real-time dashboards and analytics interfaces that surface insights.</p>
-              </div>
-            </Link>
-
-            {/* Data Training - Current Page */}
-            <div className="p-6 rounded-lg border-2 border-blue-500 bg-blue-50 relative">
-              <div className="absolute top-2 right-2">
-                <span className="text-xs font-semibold text-primary bg-blue-100 px-2 py-1 rounded">Current page</span>
-              </div>
-              <h3 className="text-xl font-bold text-charcoal mb-2">Data training</h3>
-              <p className="text-charcoal/80">Give your employees the knowledge and skills they need.</p>
-            </div>
-
-            {/* Data Governance */}
-            <div className="p-6 rounded-lg border-2 border-dashed border-slate-300 hover:border-blue-500 hover:bg-blue-50 transition-all cursor-pointer">
-              <h3 className="text-xl font-bold text-charcoal mb-2">Data governance</h3>
-              <p className="text-charcoal/80">Access controls, compliance frameworks, and data quality monitoring.</p>
-            </div>
-
-            {/* Data Engineering */}
-            <div className="p-6 rounded-lg border-2 border-dashed border-slate-300 hover:border-blue-500 hover:bg-blue-50 transition-all cursor-pointer">
-              <h3 className="text-xl font-bold text-charcoal mb-2">Data Engineering</h3>
-              <p className="text-charcoal/80">Augment your team with certified data engineers and architects.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Final CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-purple-900 via-primary to-primary text-white">
-        <div className="container text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to build a self-sufficient data team?
-          </h2>
-          <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
-            Let's design a training program that turns your team into data practitioners who solve problems without external dependency.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-purple-900 hover:bg-slate-100">
-              Get in touch
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              Schedule a meeting
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      <RelatedContent items={dataRelatedItems} />
       <Footer />
     </div>
   );

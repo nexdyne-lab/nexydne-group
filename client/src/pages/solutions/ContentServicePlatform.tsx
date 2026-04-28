@@ -1,472 +1,581 @@
+import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { RelatedContent } from "@/components/RelatedContent";
-import { dataRelatedItems } from "@/data/related-content";
+import SolutionHero from "@/components/SolutionHero";
+import { SEO } from "@/components/SEO";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function ContentServicePlatform() {
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
+
+  const services = [
+    {
+      title: "Document Management Implementation",
+      description:
+        "Stand up modern document platforms — Box, Microsoft 365, OpenText — with the metadata, taxonomy, and security model that makes content findable on day one.",
+      link: "/solutions/content-service-platform/document-management",
+    },
+    {
+      title: "Content Workflow Automation",
+      description:
+        "Replace email-and-attachment chaos with structured workflows. Approvals, reviews, and routing that turn unstructured content into a managed business process.",
+      link: "/solutions/content-service-platform/workflow-automation",
+    },
+    {
+      title: "Knowledge Management Systems",
+      description:
+        "Capture, curate, and surface institutional knowledge before it walks out the door. Knowledge bases that employees actually use because the answers are actually there.",
+      link: "/solutions/content-service-platform/knowledge-management",
+    },
+    {
+      title: "Records Management & Compliance",
+      description:
+        "Retention schedules, legal holds, and audit trails that satisfy regulators without burying the business in red tape. Compliance designed into the platform, not bolted on later.",
+      link: "/solutions/content-service-platform/records-compliance",
+    },
+    {
+      title: "AI-Powered Content Discovery",
+      description:
+        "Semantic search, auto-classification, and intelligent extraction that turn dark content into a working asset. Find the answer, not just the document.",
+      link: "/solutions/content-service-platform/ai-discovery",
+    },
+    {
+      title: "CSP Migration & Modernization",
+      description:
+        "Lift legacy ECM stacks onto modern content service platforms — preserving permissions, metadata, and history while shedding the technical debt of the last decade.",
+      link: "/solutions/content-service-platform/migration-modernization",
+    },
+  ];
+
+  const outcomes = [
+    {
+      // TODO: replace with real stat
+      stat: "90+",
+      label: "content service platform implementations across regulated and unregulated industries",
+    },
+    {
+      // TODO: replace with real stat
+      stat: "55%",
+      label: "average reduction in time-to-find for business-critical documents",
+    },
+    {
+      // TODO: replace with real stat
+      stat: "2.8x",
+      label: "throughput on content-driven workflows after automation goes live",
+    },
+  ];
+
+  const approach = [
+    {
+      title: "Inventory Before You Migrate",
+      description:
+        "Most ECM migrations fail on undiscovered content. We map repositories, classify the long tail, and decide what moves, what archives, and what dies.",
+      link: "/solutions/content-service-platform/migration-modernization",
+    },
+    {
+      title: "Design the Information Architecture",
+      description:
+        "Taxonomy, metadata, and security models are the platform — the tool is just the rendering engine. Get the IA right and the platform stays useful for a decade.",
+      link: "/solutions/content-service-platform/document-management",
+    },
+    {
+      title: "Automate the Real Workflows",
+      description:
+        "Pick the workflows that actually consume people's days — contract reviews, onboarding packets, audit responses — and automate those first. Adoption follows visible relief.",
+      link: "/solutions/content-service-platform/workflow-automation",
+    },
+    {
+      title: "Layer Intelligence Last",
+      description:
+        "AI search and classification deliver real value, but only on top of clean metadata and a coherent IA. We layer intelligence after the foundation, not before.",
+      link: "/solutions/content-service-platform/ai-discovery",
+    },
+  ];
+
+  const cases = [
+    {
+      industry: "Legal Services",
+      title: "Global Law Firm Migrates 12M Documents to a Modern CSP in 9 Months",
+      description:
+        "A phased migration from legacy ECM to a cloud content service platform — preserving matter security, ethical walls, and 30 years of metadata.",
+      image: "/images/case-csp-legal.jpg",
+      link: "/cases/law-firm-csp-migration",
+    },
+    {
+      industry: "Manufacturing",
+      title: "Manufacturer Cuts Engineering Document Search Time by Two-Thirds",
+      description:
+        "AI-powered classification and semantic search transformed a sprawling engineering archive into a self-service knowledge surface for the design team.",
+      image: "/images/case-csp-manufacturing.jpg",
+      link: "/cases/manufacturer-content-discovery",
+    },
+  ];
+
+  const relatedOfferings = [
+    {
+      title: "Knowledge Management",
+      link: "/solutions/knowledge-management",
+    },
+    {
+      title: "Workflow Automation",
+      link: "/solutions/workflow-automation",
+    },
+    {
+      title: "Data Governance",
+      link: "/solutions/data-governance",
+    },
+    {
+      title: "Digital Workplace",
+      link: "/solutions/digital-workplace",
+    },
+  ];
+
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Content Service Platform"
+        description="Modern content service platforms — document management, workflow automation, AI-powered discovery, and migration from legacy ECM. Box, Microsoft 365, OpenText, and beyond."
+        canonical="/solutions/content-service-platform"
+      />
       <Navigation />
 
-      {/* Breadcrumb */}
-      <nav className="bg-slate-50 py-4">
-        <div className="container">
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <Link href="/">
-              <a className="hover:text-primary">Services</a>
-            </Link>
-            <span>/</span>
-            <Link href="/solutions/data-solutions">
-              <a className="hover:text-primary">Data solutions</a>
-            </Link>
-            <span>/</span>
-            <span className="text-charcoal">Content Service Platform</span>
-          </div>
-        </div>
-      </nav>
+      {/* SLOT 1 — Charcoal hero */}
+      <SolutionHero
+        eyebrow="SOLUTION · CONTENT SERVICE PLATFORM"
+        title="Content Service Platform"
+        subtitle="Modern content platforms that replace yesterday's ECM. Document management, workflow automation, AI-powered discovery, and migration from legacy stacks — built so content becomes a working asset, not a compliance liability."
+        backgroundImage="/images/solution-csp.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+      />
 
-      {/* Hero Section - Maroon background with split layout */}
-      <section className="bg-gradient-to-br from-rose-900 to-rose-800 text-white py-20">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl font-bold mb-3 eb-garamond">
-                Content Service Platform
-              </h1>
-            </div>
-            <div>
-              <p className="text-xl leading-relaxed">
-                Streamline how your organization creates, manages, and distributes digital content. Centralized governance meets federated access—your teams get what they need without sacrificing security or compliance.
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[72ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              ECM is dead. Long live the content service platform.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                Enterprise content management — the monolithic, on-prem, license-by-the-pound platform of the 2000s — has been quietly replaced. The category Gartner now calls the content service platform is API-first, cloud-native, and designed to work with the way distributed teams actually collaborate. Box, Microsoft 365, OpenText, and a handful of focused challengers compete on metadata, automation, and intelligence rather than storage.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                NexDyne's{" "}
+                <Link
+                  href="/insights/content-service-platform-guide"
+                  className="text-primary hover:text-primary-hover transition-colors"
+                >
+                  content service platform consultants
+                </Link>{" "}
+                design and migrate CSP environments that survive the next decade — taxonomy first, automation second, AI third — so the platform becomes infrastructure rather than a perpetual project.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Benefits Section with Contact Person */}
-      <section className="py-20 bg-white">
-        <div className="container">
-          <div className="grid lg:grid-cols-[300px_1fr] gap-12">
-            {/* Left: Contact Person */}
-            <div>
-              <div className="relative mb-6">
-                <div className="absolute inset-0 bg-blue-200 rounded-full transform -rotate-12 w-48 h-48"></div>
-                <div className="relative w-48 h-48 rounded-full overflow-hidden">
-                  <div className="w-full h-full bg-slate-200 flex items-center justify-center">
-                    <div className="w-32 h-32 bg-slate-300 rounded-full"></div>
-                  </div>
-                </div>
-              </div>
-              <p className="text-lg font-semibold text-charcoal mb-4">Want to learn more?</p>
-              <Button variant="outline" className="w-full border-slate-300">
-                Ask Martijn Voorveld
-              </Button>
-            </div>
-
-            {/* Right: Benefits */}
-            <div>
-              <h2 className="text-4xl font-bold text-charcoal mb-12">The benefits</h2>
-              
-              <div className="space-y-12">
-                {/* Benefit 1 */}
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <svg className="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-charcoal mb-3">
-                      Instant knowledge access
-                    </h3>
-                    <p className="text-lg text-charcoal/80">
-                      Employees find the documents, media, and data they need in seconds—no more hunting through shared drives or outdated folders.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Benefit 2 */}
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <svg className="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-charcoal mb-3">
-                      Built-in compliance safeguards
-                    </h3>
-                    <p className="text-lg text-charcoal/80">
-                      Automated audit logging and role-based permissions keep sensitive information protected while meeting GDPR, HIPAA, and SOC 2 requirements.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Benefit 3 */}
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <svg className="w-12 h-12 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-charcoal mb-3">
-                      Single-source-of-truth versioning
-                    </h3>
-                    <p className="text-lg text-charcoal/80">
-                      Everyone works from the latest approved version. No more email attachments labeled "final_v3_FINAL_revised.docx" causing costly mistakes.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Content Explanation Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-charcoal mb-8">
-            Content Service Platform = unified content control
-          </h2>
-          
-          <div className="prose prose-lg max-w-none space-y-6">
-            <p className="text-lg text-charcoal/80">
-              Your organization produces thousands of unstructured files every week: contracts, presentations, videos, design assets, email threads, and more. When this content lives in disconnected silos—local drives, SharePoint sites, Dropbox folders, email inboxes—teams waste hours searching for information and compliance risks multiply.
+      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Help Clients
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six ways we turn content from liability to asset.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              We combine information architecture, platform engineering, and AI to ship CSP environments that scale past the pilot — and survive the next reorg.
             </p>
+          </motion.div>
 
-            <p className="text-lg text-charcoal/80">
-              Unlike legacy document management systems that force you to migrate everything into one monolithic repository, modern Content Service Platforms connect to content wherever it lives. We implement a federated architecture that indexes and governs distributed content without disrupting existing workflows or requiring expensive data migrations.
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {services.map((service, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={service.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col">
+                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                      {service.description}
+                    </p>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Learn more
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Experience & Impact
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Measurable outcomes from CSP programs in production.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
+            {outcomes.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`${
+                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
+                }`}
+              >
+                {/* TODO: replace with real stat */}
+                <div
+                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
+                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                >
+                  {item.stat}
+                </div>
+                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
+                  {item.label}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 5 — Light grey Approach / Methodology framework */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Think About It
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The Foundation-First Framework
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Four integrated phases that take a CSP program from inventory to intelligence without the perpetual-project trap.
             </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {approach.map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={step.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 flex flex-col">
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
+                      {step.description}
+                    </p>
+                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Explore
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Quote Section */}
-      <section className="py-16 bg-white">
-        <div className="container max-w-4xl text-center">
-          <blockquote className="text-3xl font-bold text-rose-900 mb-6">
-            "Deliver the right content, to the right people, at the right moment."
-          </blockquote>
-          <p className="text-lg text-muted-foreground">
-            Martijn Voorveld - Commercial Lead - NEXDYNE TECHNOLOGIES
-          </p>
-        </div>
-      </section>
-
-      {/* Partnership Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-charcoal mb-8">
-            NEXDYNE & Alfresco
-          </h2>
-          
-          <div className="prose prose-lg max-w-none">
-            <p className="text-lg text-charcoal/80 mb-6">
-              As an Alfresco certified implementation partner, NEXDYNE brings deep expertise in enterprise content management to US organizations. Our methodology starts with content discovery workshops—we map your existing repositories, understand approval workflows, and identify compliance gaps. Then we configure Alfresco's intelligent content services layer to sit on top of your current systems, adding AI-powered search, automated classification, and granular access controls without forcing migration. We integrate with Microsoft 365, Google Workspace, Salesforce, and your line-of-business applications so content flows seamlessly across your tech stack. Our US-based team provides white-glove implementation, user training, and ongoing managed services—you get a single point of contact for licensing, hosting, and support instead of juggling multiple vendors.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section with Contact Person */}
-      <section className="py-20" style={{ backgroundColor: 'var(--color-subtle)' }}>
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Contact Person Image */}
-            <div className="relative">
-              <div className="absolute inset-0 bg-blue-300 rounded-full transform rotate-12 w-64 h-64 left-1/4"></div>
-              <div className="relative w-full max-w-md">
-                <div className="w-full h-96 bg-slate-200 flex items-center justify-center">
-                  <div className="w-48 h-48 bg-slate-300 rounded-full"></div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right: CTA Content */}
-            <div>
-              <h2 className="text-4xl font-bold text-charcoal mb-6">
-                Want to learn more?
-              </h2>
-              <p className="text-xl text-charcoal mb-2">Martijn Voorveld</p>
-              <p className="text-lg text-charcoal/80 mb-8">Commercial Lead</p>
-              
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="bg-slate-900 hover:bg-slate-800 text-white">
-                  Get in touch
-                </Button>
-                <Button variant="outline" className="border-slate-900 text-charcoal hover:bg-slate-100">
-                  Schedule a meeting
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Partners Section - Agentic AI */}
-      <section className="py-20 bg-white">
-        <div className="container">
-          <div className="mb-12">
-            <p className="text-sm text-muted-foreground uppercase tracking-wide mb-2">Partners</p>
-            <h2 className="text-4xl font-bold text-charcoal">Agentic AI</h2>
-          </div>
-
-          <div className="mb-8">
-            <Button variant="outline" className="border-slate-300">
-              All partners
-            </Button>
-          </div>
-
-          {/* Partner Logos Carousel */}
-          <div className="relative">
-            <div className="flex items-center justify-between mb-8">
-              <button className="p-2 hover:bg-slate-100 rounded-full">
-                <svg className="w-6 h-6 text-muted-foreground/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-              <button className="p-2 hover:bg-slate-100 rounded-full">
-                <svg className="w-6 h-6 text-muted-foreground/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="border border-slate-200 rounded-lg p-12 flex items-center justify-center bg-white hover:shadow-lg transition-shadow">
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold text-rose-900 mb-2">Glean</h3>
-                </div>
-              </div>
-              <div className="border border-slate-200 rounded-lg p-12 flex items-center justify-center bg-white hover:shadow-lg transition-shadow">
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold text-rose-900 mb-2">Weaviate</h3>
-                </div>
-              </div>
-              <div className="border border-slate-200 rounded-lg p-12 flex items-center justify-center bg-white hover:shadow-lg transition-shadow">
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold text-rose-900 mb-2">LangChain</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why NEXDYNE Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Image */}
-            <div className="relative">
-              <img 
-                src="/content-platform-hero.cce565e4.jpg" 
-                alt="NEXDYNE Office" 
-                className="rounded-lg shadow-xl w-full"
-              />
-            </div>
-
-            {/* Right: Content */}
-            <div>
-              <h2 className="text-4xl font-bold text-charcoal mb-6">
-                Why NEXDYNE
-              </h2>
-              <p className="text-lg text-charcoal/80 mb-8">
-                Need a strategic partner who understands both technology and business transformation? NEXDYNE delivers enterprise-grade digital solutions that keep you ahead of competitors. Our US-based teams combine deep technical expertise with practical implementation experience—we don't just architect systems, we ensure they drive measurable business outcomes.
-              </p>
-              <Button className="bg-slate-900 hover:bg-slate-800 text-white">
-                Get in touch
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Cases Section */}
-      <section className="py-20 bg-blue-50">
-        <div className="container">
-          <div className="mb-12">
-            <p className="text-sm text-muted-foreground uppercase tracking-wide mb-2">Cases</p>
-            <h2 className="text-4xl font-bold text-charcoal mb-4">
-              Cases we love talking about
+      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Content that finally serves the business. NexDyne clients have cut document search times by more than half, retired legacy ECM stacks, and given AI a clean foundation to actually work on.
             </h2>
-            <p className="text-xl text-charcoal/80 max-w-3xl">
-              Real organizations solving real challenges with measurable results. These case studies show how content platforms transform operations and drive ROI.
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              We've delivered CSP programs across legal, financial services, healthcare, and manufacturing — treating taxonomy, workflow, compliance, and intelligence as one integrated platform decision rather than four sequential vendor projects.
             </p>
-          </div>
-
-          <div className="mb-8">
-            <Button className="bg-slate-900 hover:bg-slate-800 text-white">
-              All cases
-            </Button>
-          </div>
-
-          {/* Case Cards Carousel */}
-          <div className="relative">
-            <div className="flex items-center justify-end gap-4 mb-8">
-              <button className="p-2 hover:bg-slate-200 rounded-full">
-                <svg className="w-6 h-6 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-              <button className="p-2 hover:bg-slate-200 rounded-full">
-                <svg className="w-6 h-6 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* Case 1 */}
-              <Link href="/cases/media-company-dam">
-                <div className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all cursor-pointer">
-                  <div className="relative h-48 overflow-hidden">
-                    <img 
-                      src="/media-company-dam.37682232.jpg" 
-                      alt="Media Company DAM" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-500 transition-colors">
-                      Media Company Centralizes 2M Assets with DAM Platform
-                    </h3>
-                    <p className="text-charcoal/80 mb-4">
-                      Unified digital asset library for video, audio, and image content across 12 production teams and 40 distribution channels.
-                    </p>
-                    <div className="flex items-center text-blue-500 font-semibold">
-                      <ArrowRight className="w-5 h-5" />
-                    </div>
-                  </div>
-                </div>
-              </Link>
-
-              {/* Case 2 */}
-              <Link href="/cases/retail-product-content">
-                <div className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all cursor-pointer">
-                  <div className="relative h-48 overflow-hidden">
-                    <img 
-                      src="/retail-product-content.ea3f1144.jpg" 
-                      alt="Retail Product Content" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-500 transition-colors">
-                      Retailer Launches Products 60% Faster with Content Platform
-                    </h3>
-                    <p className="text-charcoal/80 mb-4">
-                      Automated product content workflows across 15,000 SKUs, 8 regional websites, and print catalogs.
-                    </p>
-                    <div className="flex items-center text-blue-500 font-semibold">
-                      <ArrowRight className="w-5 h-5" />
-                    </div>
-                  </div>
-                </div>
-              </Link>
-
-              {/* Case 3 */}
-              <Link href="/cases/healthcare-content-compliance">
-                <div className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all cursor-pointer">
-                  <div className="relative h-48 overflow-hidden">
-                    <img 
-                      src="/healthcare-content-compliance.fa997d8d.jpg" 
-                      alt="Healthcare Content Compliance" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-500 transition-colors">
-                      Healthcare System Ensures Compliance with Content Workflows
-                    </h3>
-                    <p className="text-charcoal/80 mb-4">
-                      Automated approval workflows for patient education materials across 18 languages and 25 facilities.
-                    </p>
-                    <div className="flex items-center text-blue-500 font-semibold">
-                      <ArrowRight className="w-5 h-5" />
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </div>
-          </div>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
+          </motion.div>
         </div>
       </section>
 
-      {/* Services Navigation Footer */}
-      <section className="py-16 bg-white border-t border-slate-200">
-        <div className="container max-w-4xl">
-          <h3 className="text-2xl font-bold text-charcoal mb-8">Services</h3>
-          
-          <div className="space-y-4">
-            <Link href="/solutions/data-strategy">
-              <div className="flex items-center justify-between p-4 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer group">
-                <div>
-                  <h4 className="text-lg font-semibold text-charcoal group-hover:text-blue-500 transition-colors">Data Strategy</h4>
-                  <p className="text-muted-foreground">Define what data matters and how to monetize it. We map your data landscape and build roadmaps that align analytics with business priorities.</p>
-                </div>
-                <ArrowRight className="w-5 h-5 text-muted-foreground/70 group-hover:text-blue-500 group-hover:translate-x-1 transition-all" />
-              </div>
-            </Link>
+      {/* SLOT 7 — White Case studies / proof */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Content platforms, proved in outcomes.
+            </h3>
+          </motion.div>
 
-            <Link href="/solutions/data-platform">
-              <div className="flex items-center justify-between p-4 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer group">
-                <div>
-                  <h4 className="text-lg font-semibold text-charcoal group-hover:text-blue-500 transition-colors">Data Platform</h4>
-                  <p className="text-muted-foreground">Modern data warehouses and lakes built on cloud infrastructure. Scalable architectures that ingest, transform, and serve data at enterprise scale.</p>
-                </div>
-                <ArrowRight className="w-5 h-5 text-muted-foreground/70 group-hover:text-blue-500 group-hover:translate-x-1 transition-all" />
-              </div>
-            </Link>
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={result.image}
+                        alt={result.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="p-8 lg:p-10">
+                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                        {result.industry}
+                      </span>
+                      {/* TODO: replace with real stat */}
+                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                        {result.title}
+                      </h3>
+                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
+                        {result.description}
+                      </p>
+                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                        Read Case
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
 
-            <Link href="/solutions/data-visualization">
-              <div className="flex items-center justify-between p-4 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer group">
-                <div>
-                  <h4 className="text-lg font-semibold text-charcoal group-hover:text-blue-500 transition-colors">Data visualization</h4>
-                  <p className="text-muted-foreground">Real-time dashboards and analytics interfaces that surface insights when decisions get made. Executive scorecards and operational metrics that drive action.</p>
-                </div>
-                <ArrowRight className="w-5 h-5 text-muted-foreground/70 group-hover:text-blue-500 group-hover:translate-x-1 transition-all" />
-              </div>
-            </Link>
-
-            <Link href="/solutions/data-training">
-              <div className="flex items-center justify-between p-4 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer group">
-                <div>
-                  <h4 className="text-lg font-semibold text-charcoal group-hover:text-blue-500 transition-colors">Data Training</h4>
-                  <p className="text-muted-foreground">Give your employees the knowledge and skills they need to get data under control, from newbie to boss level.</p>
-                </div>
-                <ArrowRight className="w-5 h-5 text-muted-foreground/70 group-hover:text-blue-500 group-hover:translate-x-1 transition-all" />
-              </div>
-            </Link>
-
-            <div className="flex items-center justify-between p-4 bg-slate-50 rounded-lg">
-              <div>
-                <h4 className="text-lg font-semibold text-charcoal">Content Service Platform</h4>
-                <p className="text-muted-foreground">Streamline how your organization creates, manages, and distributes digital content. Centralized governance meets federated access.</p>
-              </div>
-              <ArrowRight className="w-5 h-5 text-blue-500" />
-            </div>
-
-            <Link href="/solutions/data-governance">
-              <div className="flex items-center justify-between p-4 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer group">
-                <div>
-                  <h4 className="text-lg font-semibold text-charcoal group-hover:text-blue-500 transition-colors">Data Governance</h4>
-                  <p className="text-muted-foreground">Access controls, compliance frameworks, and data quality monitoring. Ensure teams get the data they need while maintaining security and compliance.</p>
-                </div>
-                <ArrowRight className="w-5 h-5 text-muted-foreground/70 group-hover:text-blue-500 group-hover:translate-x-1 transition-all" />
-              </div>
+          <div className="mt-14">
+            <Link href="/cases">
+              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                See All Case Studies
+              </span>
             </Link>
           </div>
         </div>
       </section>
 
-      <RelatedContent items={dataRelatedItems} />
+      {/* SLOT 8 — White Related capabilities / cross-sell */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Related Offerings
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Adjacent capabilities for a complete content strategy.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {relatedOfferings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our content platform team into your next modernization conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="legal">Legal Services</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="public-sector">Public Sector</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders ready to retire legacy ECM and ship a content platform that serves the business — searchable, automated, governed, and ready for AI.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
