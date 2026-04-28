@@ -13,6 +13,18 @@ export interface SolutionHeroProps {
   backgroundImage: string;
   primaryCta?: SolutionHeroCta;
   secondaryCta?: SolutionHeroCta;
+  /**
+   * Optional override for the hero H1 className.
+   * Cat 5 default: "text-5xl md:text-6xl lg:text-7xl text-white leading-[1.05] mb-6".
+   * Cat 6 sub-offering pages pass the downshifted scale to signal level-3 IA depth.
+   */
+  h1ClassName?: string;
+  /**
+   * Optional override for the hero outer section padding/sizing classes.
+   * Cat 5 default: "h-[85vh] min-h-[600px] sm:min-h-[680px] lg:min-h-[760px]".
+   * Cat 6 sub-offering pages reduce vertical breathing room ~25%.
+   */
+  containerClassName?: string;
 }
 
 export default function SolutionHero({
@@ -22,9 +34,13 @@ export default function SolutionHero({
   backgroundImage,
   primaryCta,
   secondaryCta,
+  h1ClassName = "text-5xl md:text-6xl lg:text-7xl text-white leading-[1.05] mb-6",
+  containerClassName = "h-[85vh] min-h-[600px] sm:min-h-[680px] lg:min-h-[760px]",
 }: SolutionHeroProps) {
   return (
-    <section className="relative w-full h-[85vh] min-h-[600px] sm:min-h-[680px] lg:min-h-[760px] overflow-hidden bg-charcoal -mt-20 pt-20">
+    <section
+      className={`relative w-full ${containerClassName} overflow-hidden bg-charcoal -mt-20 pt-20`}
+    >
       {/* Background image, full-bleed */}
       <img
         src={backgroundImage}
@@ -44,7 +60,7 @@ export default function SolutionHero({
             </span>
           )}
           <h1
-            className="text-5xl md:text-6xl lg:text-7xl text-white leading-[1.05] mb-6"
+            className={h1ClassName}
             style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
           >
             {title}
