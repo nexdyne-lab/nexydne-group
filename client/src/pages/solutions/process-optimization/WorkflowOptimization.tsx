@@ -1,454 +1,488 @@
-import React, { useEffect } from "react";
-import { Link } from "wouter";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SolutionHero from "@/components/SolutionHero";
-import BainHoverCard from "@/components/BainHoverCard";
 import { SEO } from "@/components/SEO";
-import Breadcrumbs from "@/components/Breadcrumbs";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function WorkflowOptimization() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
 
-  const relatedCapabilities = [
+  // ── Methodology phases (SLOT 3) ──────────────────────────────────────────────
+  const phases = [
+    {
+      name: "As-is workflow capture",
+      description:
+        "We document the workflow as it actually executes — not the version in the SOP binder. BPMN modeling sessions with operators, supplemented by system telemetry where it exists, capture every hand-off, queue, approval, and rework loop. The product is a high-fidelity as-is model the team agrees represents reality, not a sanitized version that survives the steering committee.",
+    },
+    {
+      name: "Bottleneck and waste analysis",
+      description:
+        "Using value-stream mapping and lean diagnostics, we quantify cycle time, queue time, defect rates, rework loops, and capacity utilization across each step. The seven wastes are not a poster on the wall — they are line items in a quantified diagnosis, ranked by annualized impact and addressability.",
+    },
+    {
+      name: "Redesign workshops",
+      description:
+        "Workflow redesign is done with the operators, not to them. Structured workshops generate the to-be design — what the workflow looks like when the wastes are removed, the hand-offs simplified, the SLAs designed in rather than retrofitted. Each redesign decision carries a cost, complexity, and benefit estimate so trade-offs are explicit.",
+    },
+    {
+      name: "Redesigned workflow validation",
+      description:
+        "Before deployment, the to-be workflow is validated end-to-end: simulation against historical volumes, table-top walkthroughs against exception scenarios, and a controlled pilot on a contained slice of the work. We do not deploy redesigns that have not been stress-tested against the real pattern of demand.",
+    },
+    {
+      name: "Deployment and measurement",
+      description:
+        "Go-live is the start, not the end. We deploy with the KPI dashboard already wired — cycle time, first-pass yield, capacity utilization, SLA conformance — so the team sees the gain in real time and the business case is defended on data, not anecdote. The dashboard becomes the operating cadence for the workflow's owner.",
+    },
+  ];
+
+  // ── Deliverables (SLOT 4) ────────────────────────────────────────────────────
+  const deliverables = [
+    {
+      name: "As-is process maps in BPMN",
+      description:
+        "High-fidelity BPMN models of the current-state workflow, validated by operators and reflecting how the work actually executes — including every exception path.",
+    },
+    {
+      name: "Value-stream analysis report",
+      description:
+        "End-to-end value-stream map with cycle, queue, and rework time quantified per step — and the seven wastes called out with annualized impact estimates.",
+    },
+    {
+      name: "Bottleneck quantification report",
+      description:
+        "Ranked list of capacity-constrained steps with throughput math, cost-of-delay estimates, and the operating decisions each bottleneck is forcing today.",
+    },
+    {
+      name: "Redesigned workflow specifications",
+      description:
+        "To-be BPMN models, role definitions, decision rules, and integration touch-points — at the fidelity needed to brief IT, training, and operations on day one.",
+    },
+    {
+      name: "Change management plan",
+      description:
+        "Stakeholder-mapped change plan covering communications, training, role transitions, and the reinforcement cadence needed to make the redesign stick.",
+    },
+    {
+      name: "KPI baseline and tracking dashboard",
+      description:
+        "Production-grade dashboard the workflow owner uses for daily and weekly cadence — cycle time, first-pass yield, SLA conformance, capacity utilization.",
+    },
+  ];
+
+  // ── Sibling sub-offerings (SLOT 7) ───────────────────────────────────────────
+  const siblings = [
     {
       title: "Process Discovery & Mining",
-      description:
-        "Uncover hidden inefficiencies and opportunities for optimization in your processes.",
       link: "/solutions/process-optimization/process-discovery-mining",
     },
     {
       title: "Intelligent Automation Design",
-      description:
-        "Design and implement intelligent automation solutions to streamline your operations.",
       link: "/solutions/process-optimization/intelligent-automation-design",
     },
     {
       title: "AI-Powered Decision Support",
-      description:
-        "Leverage AI to make faster, more informed decisions and drive better business outcomes.",
       link: "/solutions/process-optimization/ai-powered-decision-support",
+    },
+    {
+      title: "Change Management & Training",
+      link: "/solutions/process-optimization/change-management-training",
+    },
+    {
+      title: "Continuous Improvement Programs",
+      link: "/solutions/process-optimization/continuous-improvement-programs",
+    },
+  ];
+
+  // ── Case studies (SLOT 6) ────────────────────────────────────────────────────
+  const cases = [
+    {
+      industry: "Specialty Distribution",
+      // TODO: replace with real stat
+      title:
+        "Order-fulfillment redesign cuts average cycle time by 41 percent in 14 weeks",
+      description:
+        "A specialty distributor's order-to-ship workflow had drifted to 9.2-day average cycle time across multiple distribution centers. Value-stream mapping surfaced 11 hand-offs with no SLA, three duplicate approval gates, and a credit-check loop that ran in series with picking. The redesign collapsed the workflow to 5.4 days end-to-end without adding headcount, with a published path to under four days at the second wave.",
+      link: "/cases/distribution-order-fulfillment-redesign",
+    },
+    {
+      industry: "Hospital System",
+      // TODO: replace with real stat
+      title:
+        "Discharge workflow redesign frees 28 percent of bed-day capacity",
+      description:
+        "A regional hospital system's discharge workflow had length-of-stay drift driven by serialized approvals across pharmacy, transport, and case management. The redesigned workflow parallelized clearance steps and front-loaded the pharmacy review the prior afternoon, freeing 28 percent of bed-day capacity on the unit during the pilot — and the redesign was rolled out across the system over the following six months.",
+      link: "/cases/hospital-discharge-workflow-redesign",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
       <SEO
         title="Workflow Optimization"
-        description="Streamline end-to-end workflows to eliminate handoffs, reduce cycle times, and improve quality at every step."
+        description="Optimize existing workflows for cycle time, quality, and capacity using BPMN modeling, value-stream mapping, and lean methods."
         canonical="/solutions/process-optimization/workflow-optimization"
       />
       <Navigation />
 
+      {/* SLOT 1 — Charcoal hero (downshifted H1, ~25% shorter container per Cat 6 entry) */}
       <SolutionHero
-        eyebrow="INTELLIGENT PROCESS OPTIMIZATION · WORKFLOW OPTIMIZATION"
+        eyebrow="SOLUTION · PROCESS OPTIMIZATION · WORKFLOW OPTIMIZATION"
         title="Workflow Optimization"
-        subtitle="Streamline end-to-end workflows to eliminate handoffs, reduce cycle times, and improve quality at every step."
-        backgroundImage="https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/FcEhnCRNKFPnlDCJ.jpg"
-        primaryCta={{ label: "Schedule a Consultation", href: "/contact" }}
-        secondaryCta={{ label: "View Case Studies", href: "/cases" }}
+        subtitle="Most workflows in operation today were designed for a volume, a system landscape, and a labor model that have all changed. We apply BPMN modeling, value-stream mapping, and lean methods to redesign them for the cycle time, quality, and capacity the business actually needs."
+        backgroundImage="/images/solution-process.a945b529.webp"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"
+        containerClassName="h-[70vh] min-h-[500px] sm:min-h-[560px] lg:min-h-[640px]"
       />
 
-      <div className="bg-white border-b border-charcoal/10">
-        <div className="container px-6 sm:px-8 md:px-12 lg:px-16 py-5">
-          <Breadcrumbs variant="dark" />
-        </div>
-      </div>
-
-      {/* Experience & Impact */}
-      <section className="py-20 md:py-24 bg-white border-b border-charcoal/10">
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-12"
+            className="max-w-[72ch]"
           >
-            <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 mb-4 block">
-              Our Experience & Impact
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
             </span>
-            <h2
-              className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-charcoal max-w-[32ch]"
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              Better flow, measured everywhere it counts.
-            </h2>
+              Most workflows are not broken. They were designed for a business that no longer exists.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                When we walk into a workflow optimization engagement, the workflow itself is rarely the problem. The problem is that the workflow was designed for a volume, a regulatory regime, a system landscape, and a labor model that have all moved on — and the operators have absorbed the gap with a layer of workarounds that look like the process but cost the business cycle time, quality, and capacity every day.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                Our redesign work uses BPMN modeling and value-stream mapping not as deliverable formats but as diagnostic instruments. We quantify the waste, run the redesign workshops with the operators who own the work, validate the to-be model against historical demand patterns, and deploy with a KPI dashboard wired in. The output is a workflow that holds — and an owner who can defend it.
+              </p>
+            </div>
           </motion.div>
-
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
-            {[
-              { metric: "50%", label: "Reduction in average cycle times" },
-              { metric: "35%", label: "Improvement in operational throughput" },
-              { metric: "20%", label: "Increase in employee productivity" },
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div
-                  className="text-5xl md:text-6xl text-charcoal mb-3"
-                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
-                >
-                  {item.metric}
-                </div>
-                <p className="text-base text-charcoal/70 leading-[1.65]">
-                  {item.label}
-                </p>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
-      {/* Thought Leadership */}
-      <section className="py-20 md:py-28 bg-white">
-        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
-          <div className="max-w-[72ch]">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-2xl md:text-3xl text-charcoal leading-[1.3] mb-8"
-              style={{ fontWeight: 500, letterSpacing: "-0.015em" }}
-            >
-              In today's competitive landscape, operational efficiency
-              isn't just a goal—it's a prerequisite for
-              survival. Workflow optimization is the systematic approach to
-              eliminating waste, automating repetition, and enhancing
-              collaboration across teams.
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-base md:text-lg text-charcoal/80 leading-[1.65] mb-6"
-            >
-              Effective workflow optimization goes beyond simple process
-              mapping. It requires a deep understanding of how work flows
-              through an organization, the interdependencies between tasks,
-              and the impact of technology on human performance. By taking a
-              holistic view, we uncover opportunities for transformative change.
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-base md:text-lg text-charcoal/80 leading-[1.65]"
-            >
-              The result is a more agile, resilient, and competitive
-              organization. Optimized workflows empower employees to focus on
-              high-value activities, reduce operational friction, and deliver a
-              superior customer experience.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
-      {/* How We Can Help */}
-      <section className="py-20 md:py-28 bg-off-white border-t border-charcoal/10">
+      {/* SLOT 3 — Light-grey methodology / phased approach (5 numbered phase cards) */}
+      <section className="bg-grey py-24 md:py-32">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-14 max-w-[60ch]"
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 mb-4 block">
-              How We Can Help
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Deliver
             </span>
-            <h2
-              className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-charcoal"
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              Our Workflow Optimization Services
-            </h2>
-            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] mt-6">
-              From analysis to implementation, we provide end-to-end support
-              for your workflow optimization initiatives.
+              A five-phase approach from as-is capture to measured deployment.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Each phase is timeboxed and produces a tangible artifact. Most engagements run ten to fourteen weeks end-to-end, with the KPI dashboard live the day the redesigned workflow goes into production.
             </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Workflow Analysis and Mapping",
-                description:
-                  "We analyze and map your existing workflows to identify inefficiencies, bottlenecks, and opportunities for improvement.",
-              },
-              {
-                title: "Bottleneck Identification and Resolution",
-                description:
-                  "We pinpoint the root causes of delays and develop targeted solutions to resolve bottlenecks and improve flow.",
-              },
-              {
-                title: "Cross-Functional Collaboration Improvement",
-                description:
-                  "We facilitate better communication and collaboration between teams to ensure seamless handoffs and reduce friction.",
-              },
-              {
-                title: "Technology and Toolchain Integration",
-                description:
-                  "We help you select and integrate the right technologies to automate tasks, improve data flow, and enhance visibility.",
-              },
-              {
-                title: "Custom Workflow Automation",
-                description:
-                  "We design and build custom automation solutions to handle repetitive tasks and free up your team for more strategic work.",
-              },
-              {
-                title: "Performance Monitoring & Continuous Improvement",
-                description:
-                  "We establish KPIs and implement monitoring systems to track progress and drive continuous improvement.",
-              },
-            ].map((item, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {phases.map((phase, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <BainHoverCard
-                  title={item.title}
-                  description={item.description}
-                />
+                <div className="h-full p-8 lg:p-10 flex flex-col">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-5">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25]">
+                    {phase.name}
+                  </h3>
+                  <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                    {phase.description}
+                  </p>
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Our Approach */}
-      <section className="py-20 md:py-28 bg-charcoal text-white">
+      {/* SLOT 4 — White deliverables / what you get (flat hairline-bordered list) */}
+      <section className="bg-white py-24 md:py-32">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="text-[11px] uppercase tracking-[0.2em] text-white/60 mb-4 block">
-              Our Approach
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              What You Get
             </span>
-            <h2
-              className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-white"
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              A structured approach to workflow transformation.
-            </h2>
+              Six concrete artifacts every engagement leaves behind.
+            </h3>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-10 md:gap-12">
-            {[
-              {
-                step: "01",
-                title: "Diagnostic & Value Stream Mapping",
-                description:
-                  "We begin by conducting a comprehensive diagnostic of your current state, mapping your value streams to identify waste and opportunity.",
-              },
-              {
-                step: "02",
-                title: "Redesign & Implementation",
-                description:
-                  "Based on our findings, we co-design a future-state workflow with your team and develop a detailed implementation roadmap to guide the transformation.",
-              },
-              {
-                step: "03",
-                title: "Sustainment & Optimization",
-                description:
-                  "We help you establish the governance, metrics, and capabilities needed to sustain gains and foster a culture of continuous optimization.",
-              },
-            ].map((pillar, i) => (
+          <div className="border-t border-charcoal/10">
+            {deliverables.map((item, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="border-b border-charcoal/10 py-8 lg:py-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start"
               >
-                <span className="text-[11px] uppercase tracking-[0.2em] text-primary mb-4 block">
-                  {pillar.step}
-                </span>
-                <h3
-                  className="text-xl text-white mb-4 leading-[1.25]"
-                  style={{ fontWeight: 500, letterSpacing: "-0.01em" }}
-                >
-                  {pillar.title}
-                </h3>
-                <p className="text-white/70 leading-[1.65]">
-                  {pillar.description}
-                </p>
+                <div className="lg:col-span-1">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <div className="lg:col-span-4">
+                  <h4 className="text-xl text-charcoal font-medium leading-[1.25]">
+                    {item.name}
+                  </h4>
+                </div>
+                <div className="lg:col-span-7">
+                  <p className="text-base text-charcoal/75 leading-[1.55]">
+                    {item.description}
+                  </p>
+                </div>
               </motion.div>
             ))}
-          </div>
-
-          <div className="mt-14">
-            <Link href="/contact">
-              <span className="inline-block text-[13px] uppercase tracking-[0.1em] font-semibold text-white border-b border-white/40 hover:border-primary hover:text-primary transition-colors cursor-pointer pb-1">
-                Get in Touch
-              </span>
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* Case Studies */}
-      <section className="py-20 md:py-28 bg-charcoal text-white border-t border-white/10">
+      {/* SLOT 5 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment, Pattern 2) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            {/* TODO: replace with real stat */}
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Workflow redesigns delivered through this approach typically take 25 to 45 percent out of cycle time and lift first-pass yield by ten to twenty points within the first quarter of go-live.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              The number is not the point. The point is that the gain is measured on a dashboard the operator owns, the dashboard was wired in before go-live, and the redesign therefore survives the first quarterly business review. That is what makes a workflow optimization stick.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — White case studies / proof (1-2 cards, narrower than Cat 5) */}
+      <section className="bg-white py-24 md:py-32">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-14 max-w-[60ch]"
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-[11px] uppercase tracking-[0.2em] text-white/60 mb-4 block">
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
               Client Results
             </span>
-            <h2
-              className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-white"
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              See how workflow optimization drives results.
-            </h2>
+              When the redesign holds, the gain compounds quarter on quarter.
+            </h3>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                title:
-                  "Streamlining Order-to-Cash for a Manufacturing Firm",
-                category: "Manufacturing",
-                description:
-                  "Redesigned the order-to-cash process, integrating CRM and ERP to reduce manual touchpoints and accelerate revenue recognition.",
-                image:
-                  "https://images.unsplash.com/photo-1616401784845-180882ba9ba8",
-                link: "/cases/order-to-cash-optimization",
-              },
-              {
-                title: "Optimizing Patient Onboarding in Healthcare",
-                category: "Healthcare",
-                description:
-                  "Automated patient data collection and verification, reducing onboarding time by 50% and improving data accuracy for better care.",
-                image:
-                  "https://images.unsplash.com/photo-1576091160550-2173dba999ef",
-                link: "/cases/patient-onboarding-automation",
-              },
-            ].map((study, i) => (
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
               >
-                <Link href={study.link} className="group block">
-                  <div className="relative aspect-[4/3] overflow-hidden border border-white/10">
-                    <img
-                      src={study.image}
-                      alt={study.title}
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                  </div>
-                  <div className="pt-6">
-                    <span className="text-[11px] uppercase tracking-[0.2em] text-white/60 mb-3 block">
-                      {study.category}
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white p-8 lg:p-10 h-full flex flex-col">
+                    <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {result.industry}
                     </span>
-                    <h3
-                      className="text-xl md:text-2xl text-white mb-3 leading-[1.2] group-hover:text-primary transition-colors"
-                      style={{ fontWeight: 500, letterSpacing: "-0.01em" }}
-                    >
-                      {study.title}
+                    {/* TODO: replace with real stat */}
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                      {result.title}
                     </h3>
-                    <p className="text-white/70 text-base leading-[1.65]">
-                      {study.description}
+                    <p className="text-base text-charcoal/75 leading-[1.55] mb-6 flex-1">
+                      {result.description}
                     </p>
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read Case
+                    </span>
                   </div>
                 </Link>
               </motion.div>
             ))}
           </div>
-
-          <div className="mt-12">
-            <Link href="/cases">
-              <span className="inline-block text-[13px] uppercase tracking-[0.1em] font-semibold text-white border-b border-white/40 hover:border-primary hover:text-primary transition-colors cursor-pointer pb-1">
-                View All Case Studies
-              </span>
-            </Link>
-          </div>
         </div>
       </section>
 
-      {/* Related Capabilities */}
-      <section className="py-20 md:py-28 bg-off-white">
+      {/* SLOT 7 — White intra-cluster sibling sub-offerings (5 links inside Process Optimization) */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-14 max-w-[60ch]"
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 mb-4 block">
-              Related Capabilities
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Other Ways We Help in Process Optimization
             </span>
-            <h2
-              className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-charcoal"
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              Explore more Process Optimization capabilities.
-            </h2>
+              Sibling offerings inside this cluster.
+            </h3>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {relatedCapabilities.map((cap, i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {siblings.map((offering, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <BainHoverCard
-                  title={cap.title}
-                  description={cap.description}
-                  link={cap.link}
-                />
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 md:py-28 bg-charcoal text-white">
+      {/* SLOT 8 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
-          <div className="max-w-[60ch]">
-            <h2
-              className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-white mb-8"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
-              Ready to optimize your workflows?
-            </h2>
-            <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-10">
-              Let's discuss how our workflow optimization services can
-              drive efficiency and growth for your business.
-            </p>
-            <Link href="/contact">
-              <span className="inline-block px-6 py-3 bg-primary text-primary-foreground text-[13px] uppercase tracking-[0.1em] font-semibold hover:bg-primary-hover transition-colors cursor-pointer">
-                Start a Conversation
-              </span>
-            </Link>
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our workflow redesign team into your next operating-cadence conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with operating leaders who want their workflow gains measured on a dashboard, not a slide. The conversation starts with the value stream you would change first.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>
