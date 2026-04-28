@@ -1,104 +1,227 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Shield, Lock, Eye, FileCheck, AlertTriangle, Server } from "lucide-react";
-import BainHoverCard from "@/components/BainHoverCard";
 import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SolutionHero from "@/components/SolutionHero";
 import { SEO } from "@/components/SEO";
-import Breadcrumbs from "@/components/Breadcrumbs";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function SecurityCompliance() {
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
+
+  // ── Methodology phases (SLOT 3) ──────────────────────────────────────────────
+  const phases = [
+    {
+      name: "Security posture assessment",
+      description:
+        "We measure the current security posture against the frameworks that matter for your business — SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR — using actual control evidence rather than self-reported maturity. The assessment names the gaps at the control level, sizes the effort to close each one, and surfaces the operational drift the existing audit cycle has been quietly absorbing.",
+    },
+    {
+      name: "Compliance framework selection and roadmap",
+      description:
+        "From the assessment we build the compliance roadmap — which frameworks to certify against, which to align with, and the sequencing that gets the highest-leverage control families in place first. The roadmap is sized in calendar time and audit cost, with the prerequisite engineering work explicitly named so the program does not run aground three quarters in.",
+    },
+    {
+      name: "Security architecture design",
+      description:
+        "We design the target security architecture — identity, access, data protection, network segmentation, secrets management, vulnerability and threat management, incident response — against the control requirements. Each control has an owner, a measurable evidence stream, and an automation path so the audit cycle is a query against the source-of-truth, not a four-week scramble for screenshots.",
+    },
+    {
+      name: "Control implementation and audit readiness",
+      description:
+        "We implement the controls alongside the engineering and security teams — IaC-enforced policy, logging baselines, vulnerability automation, access reviews, evidence collection — and run the audit-readiness rehearsal before the auditor arrives. By the time the audit window opens, every control has named ownership, current evidence, and a rehearsed narrative.",
+    },
+    {
+      name: "Ongoing assurance and monitoring",
+      description:
+        "Compliance is a permanent practice, not a one-time certification. We embed the assurance operating cadence — quarterly control reviews, continuous monitoring dashboards, vendor risk reviews, incident exercises — and stand up the GRC tooling that turns the audit cycle into an always-on stream rather than an annual event.",
+    },
+  ];
+
+  // ── Deliverables (SLOT 4) ────────────────────────────────────────────────────
+  const deliverables = [
+    {
+      name: "Security posture assessment",
+      description:
+        "Control-level assessment against SOC 2, ISO 27001, HIPAA, PCI-DSS, or GDPR — measured against actual evidence with sized remediation effort per gap and the operational drift surfaced.",
+    },
+    {
+      name: "Compliance roadmap",
+      description:
+        "Sequenced multi-framework roadmap with calendar, audit cost, prerequisite engineering work, and the certification cadence that aligns with the business case.",
+    },
+    {
+      name: "Target security architecture",
+      description:
+        "Reference architecture covering identity, access, data protection, segmentation, secrets, vulnerability and threat management, and incident response — with each control mapped to a measurable evidence stream.",
+    },
+    {
+      name: "Control implementation runbook",
+      description:
+        "Implementation plan with IaC-enforced policy, logging baselines, vulnerability automation, access review cadence, and the evidence-collection workflow that survives a personnel change.",
+    },
+    {
+      name: "Audit readiness package",
+      description:
+        "Complete audit-readiness package — control narratives, evidence inventory, rehearsed walk-throughs, and the auditor liaison playbook — delivered before the audit window opens.",
+    },
+    {
+      name: "Ongoing assurance program",
+      description:
+        "Permanent assurance operating model — quarterly control reviews, continuous monitoring dashboards, vendor risk cycle, incident exercise calendar, and the GRC tooling that keeps the audit always-on.",
+    },
+  ];
+
+  // ── Sibling sub-offerings (SLOT 7) ───────────────────────────────────────────
+  const siblings = [
+    {
+      title: "DevOps & CI/CD",
+      link: "/solutions/enterprise-transformation/devops-cicd",
+    },
+    {
+      title: "Infrastructure Modernization",
+      link: "/solutions/enterprise-transformation/infrastructure-modernization",
+    },
+    {
+      title: "Cloud Migration Architecture",
+      link: "/solutions/enterprise-transformation/cloud-migration-architecture",
+    },
+    {
+      title: "Technology Due Diligence",
+      link: "/solutions/enterprise-transformation/technology-due-diligence",
+    },
+    {
+      title: "Technology Strategy",
+      link: "/solutions/enterprise-transformation/technology-strategy",
+    },
+  ];
+
+  // ── Case studies (SLOT 6) ────────────────────────────────────────────────────
+  const cases = [
+    {
+      industry: "B2B SaaS",
+      // TODO: replace with real stat
+      title:
+        "SOC 2 Type II clean opinion landed in 9 months with zero deal-blocking findings",
+      description:
+        "A B2B SaaS scale-up needed SOC 2 Type II to clear a strategic enterprise contract. We rebuilt the control inventory, automated the evidence streams against the engineering systems, and ran the audit-readiness rehearsal before the auditor arrived. The Type II opinion landed clean nine months into the program with zero deal-blocking findings, and the audit cost in year two ran roughly forty percent below the original quote because the evidence was queryable rather than collected.",
+      link: "/cases/saas-soc2-type-ii",
+    },
+    {
+      industry: "Healthcare",
+      // TODO: replace with real stat
+      title:
+        "HIPAA and HITRUST control implementation across 22 clinical applications under a regulated cutover",
+      description:
+        "A healthcare technology platform was migrating twenty-two clinical applications to cloud under HIPAA and HITRUST constraints simultaneously. We co-designed the security architecture with the migration architecture, embedded the controls into the IaC patterns the application teams built against, and ran the assurance program in parallel with the migration waves. Every application landed inside the regulated estate on the first audit pass.",
+      link: "/cases/healthcare-hipaa-hitrust",
+    },
+  ];
+
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Security & Compliance" 
-        description="Build security into your systems from the start. SOC 2, HIPAA, PCI, and industry-specific compliance frameworks implemented with practical, risk-based approaches."
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Security & Compliance"
+        description="Enterprise security architecture and compliance frameworks — SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR — with the control implementation, audit readiness, and ongoing assurance program that turns compliance into an always-on stream."
         canonical="/solutions/enterprise-transformation/security-compliance"
       />
       <Navigation />
-      
-      {/* Hero Section - Dark Background */}
-      <section className="relative min-h-[70vh] flex items-center pt-20 bg-charcoal">
-        <div className="container px-4 md:px-12 grid md:grid-cols-2 gap-8 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Link href="/solutions/enterprise-transformation" className="inline-flex items-center text-white/60 hover:text-white mb-6 text-sm transition-colors">
-              <ArrowRight className="w-4 h-4 mr-2 rotate-180" />
-              Technology
-            </Link>
-            
-            <h1 className="text-5xl md:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.05] mb-4">
-              Security &<br />
-              <span className="text-primary">Compliance</span>
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
-              Build security into your systems from the start, not as an afterthought. SOC 2, HIPAA, PCI—whatever your industry requires, we implement it with practical, risk-based approaches.
-            </p>
-            
-            <div className="flex flex-wrap gap-4">
-              <Link href="/contact">
-                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out">
-                  Assess Your Security
-                </Button>
-              </Link>
-              <Link href="/case-studies">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out bg-transparent">
-                  View Case Studies
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80" 
-              alt="Security & Compliance" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
-        </div>
-      </section>
 
-      {/* Our Experience & Impact - Bain Style with Border-Left Accent */}
-      <section className="py-20 bg-white border-b border-border">
-        <div className="container px-4 md:px-12">
-          <motion.h2
+      {/* SLOT 1 — Charcoal hero (downshifted H1, ~25% shorter container per Cat 6 entry) */}
+      <SolutionHero
+        eyebrow="SOLUTION · ENTERPRISE TRANSFORMATION · SECURITY & COMPLIANCE"
+        title="Security & Compliance"
+        subtitle="Compliance is a control discipline, not an audit event. We assess the posture, sequence the framework roadmap, design the architecture, implement the controls with measurable evidence streams, and embed the assurance program that runs always-on."
+        backgroundImage="/enterprise-transformation-hero.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"
+        containerClassName="h-[70vh] min-h-[500px] sm:min-h-[560px] lg:min-h-[640px]"
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-2xl font-bold text-charcoal mb-12"
+            className="max-w-[72ch]"
           >
-            Our Experience & Impact
-          </motion.h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { metric: "100+", label: "compliance certifications achieved for clients across industries" },
-              { metric: "Zero", label: "breaches in systems we've designed and implemented" },
-              { metric: "50%", label: "average reduction in compliance audit preparation time" }
-            ].map((item, index) => (
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Stop scrambling for evidence in audit week. Start running compliance as an always-on stream.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                The security and compliance programs we get called into all share the same pattern — a binder of control narratives written for an auditor, an annual scramble to collect evidence, and an engineering organization that treats security as a separate calendar from product. By year three the audit cost has compounded, the security team is a bottleneck on every release, and the controls only exist when somebody is checking. That model breaks the moment a real incident or a real customer-security review lands.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                Compliance done well is a control discipline embedded in the engineering systems. Identity is enforced in IaC. Logging is a default of every service. Access reviews query the source-of-truth, not a spreadsheet. Vulnerability remediation has SLAs and dashboards. Each control has an owner, a measurable evidence stream, and an automation path. The audit cycle becomes a query, not a project. That is the difference between a program that earns enterprise customer trust and one that survives the audit.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 3 — Light-grey methodology / phased approach (5 numbered phase cards) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Deliver
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              A five-phase approach from posture assessment to a permanent assurance program.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Each phase is timeboxed and produces a tangible artifact. Most engagements run twenty to forty weeks from assessment to a clean audit opinion under a permanent assurance operating cadence.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {phases.map((phase, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`${index > 0 ? 'border-l border-border pl-8' : ''}`}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <div>
-                  <div className="text-5xl md:text-6xl font-bold text-charcoal mb-4">{item.metric}</div>
-                  <p className="text-lg text-charcoal/60">{item.label}</p>
+                <div className="h-full p-8 lg:p-10 flex flex-col">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-5">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25]">
+                    {phase.name}
+                  </h3>
+                  <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                    {phase.description}
+                  </p>
                 </div>
               </motion.div>
             ))}
@@ -106,318 +229,134 @@ export default function SecurityCompliance() {
         </div>
       </section>
 
-      {/* Thought Leadership - 2-Column Layout */}
-      <section className="py-20 bg-white">
-        <div className="container px-4 md:px-12">
-          <div className="grid md:grid-cols-2 gap-16 items-start">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal leading-tight">
-                Security is a business enabler, not a cost center.
-              </h2>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="space-y-6 text-lg text-charcoal/80 leading-relaxed"
-            >
-              <p>
-                Most companies treat security as a checkbox exercise—something to satisfy auditors and check off compliance requirements. But security done right is a competitive advantage. It builds customer trust, enables new business opportunities, and protects the value you've created.
-              </p>
-              <p>
-                The challenge is balancing security with usability and speed. Overly restrictive controls frustrate users and slow down innovation. Too little security exposes you to breaches that can destroy your reputation overnight.
-              </p>
-              <p>
-                We take a risk-based approach. We identify what matters most, implement controls that address real threats, and build security into your development and operations processes so it doesn't slow you down.
-              </p>
-              <ul className="space-y-3 mt-6">
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-                  <span>Security architecture that enables rather than restricts</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-                  <span>Compliance frameworks implemented efficiently</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-                  <span>DevSecOps practices that build security into CI/CD</span>
-                </li>
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Approach Section - 4-Step Numbered Format */}
-      <section className="py-24 bg-base text-white">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 4 — White deliverables / what you get (flat hairline-bordered list) */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              Our Approach
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              What You Get
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold">
-              Security that protects without slowing you down.
-            </h2>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six concrete artifacts every engagement leaves behind.
+            </h3>
           </motion.div>
-          
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
-            {[
-              { num: "01", title: "Assess", desc: "Evaluate your current security posture, identify gaps, and prioritize based on actual risk—not theoretical threats." },
-              { num: "02", title: "Design", desc: "Architect security controls that protect without impeding. Solutions that fit your technology stack and culture." },
-              { num: "03", title: "Implement", desc: "Deploy identity management, encryption, monitoring, and compliance controls with minimal business disruption." },
-              { num: "04", title: "Operate", desc: "Establish incident response, continuous monitoring, and improvement processes that evolve with threats." }
-            ].map((step, i) => (
+
+          <div className="border-t border-charcoal/10">
+            {deliverables.map((item, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="text-center"
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="border-b border-charcoal/10 py-8 lg:py-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start"
               >
-                <div className="text-7xl text-white/10 mb-4">{step.num}</div>
-                <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
-                <p className="text-white/60 text-sm leading-relaxed">{step.desc}</p>
+                <div className="lg:col-span-1">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <div className="lg:col-span-4">
+                  <h4 className="text-xl text-charcoal font-medium leading-[1.25]">
+                    {item.name}
+                  </h4>
+                </div>
+                <div className="lg:col-span-7">
+                  <p className="text-base text-charcoal/75 leading-[1.55]">
+                    {item.description}
+                  </p>
+                </div>
               </motion.div>
             ))}
-          </div>
-          
-          <div className="text-center">
-            <Link href="/contact">
-              <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out">
-                Start Your Security Assessment
-              </Button>
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* How We Can Help - H100 Capability Cards */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 5 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment, Pattern 2) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              How We Can Help
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
-              Our Security & Compliance Capabilities
+            {/* TODO: replace with real stat */}
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Programs that embed controls into the engineering systems typically cut annual audit effort by 40 to 70 percent — and clear audits with materially fewer findings because the evidence is queryable rather than collected.
             </h2>
-            <p className="text-xl text-charcoal/60 max-w-2xl">
-              Comprehensive security services from assessment to implementation.
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              The economics work because controls live in code, not in a binder. We do not optimize the annual scramble — we engineer it out, so the audit becomes a query against the source-of-truth rather than a four-week project.
             </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
           </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                icon: FileCheck,
-                title: "Compliance Frameworks",
-                description: "SOC 2, HIPAA, PCI-DSS, GDPR, ISO 27001, and industry-specific regulations. We implement the controls and documentation you need to pass audits."
-              },
-              {
-                icon: Shield,
-                title: "Security Architecture",
-                description: "Zero-trust architectures, defense-in-depth strategies, and secure-by-design principles. We build security into your systems from the foundation."
-              },
-              {
-                icon: Lock,
-                title: "Identity & Access Management",
-                description: "Single sign-on, multi-factor authentication, privileged access management, and role-based access controls. Secure access without friction."
-              },
-              {
-                icon: Eye,
-                title: "Security Operations",
-                description: "SIEM implementation, threat detection, incident response, and 24/7 monitoring. We help you detect and respond to threats before they become breaches."
-              },
-              {
-                icon: AlertTriangle,
-                title: "Vulnerability Management",
-                description: "Penetration testing, vulnerability scanning, and remediation prioritization. We find weaknesses before attackers do."
-              },
-              {
-                icon: Server,
-                title: "Cloud Security",
-                description: "AWS, Azure, and GCP security configurations. Cloud-native security tools, infrastructure as code security, and container security."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-              >
-                <BainHoverCard title={item.title} description={item.description} />
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
-      {/* Client Results Section */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 6 — White case studies / proof (1-2 cards, narrower than Cat 5) */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-16"
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
               Client Results
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal">
-              Security that enables business growth
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                category: "HEALTHCARE",
-                title: "Health tech startup achieves HIPAA compliance in 90 days",
-                description: "A digital health company needed HIPAA compliance to sign enterprise customers. We implemented the required controls and documentation, enabling them to close their first hospital system deal.",
-                image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80"
-              },
-              {
-                category: "FINTECH",
-                title: "Payment processor passes PCI-DSS audit on first attempt",
-                description: "A growing fintech company needed PCI-DSS Level 1 certification. We designed their secure architecture from scratch and guided them through a successful audit.",
-                image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80"
-              }
-            ].map((study, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group"
-              >
-                <Link href="/case-studies" className="block">
-                  <div className="relative overflow-hidden rounded-xl aspect-[16/10] mb-6">
-                    <img 
-                      src={study.image} 
-                      alt={study.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute top-4 left-4">
-                      <span className="px-3 py-1 bg-primary text-white text-xs font-bold uppercase tracking-wider rounded">
-                        {study.category}
-                      </span>
-                    </div>
-                  </div>
-                  <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
-                    {study.title}
-                  </h3>
-                  <p className="text-charcoal/60 text-sm leading-relaxed mb-4">
-                    {study.description}
-                  </p>
-                  <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                    Read case study <ArrowRight className="ml-2 w-4 h-4" />
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Latest Insights Section */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 md:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-                Insights
-              </span>
-              <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal">
-                Latest Insights
-              </h2>
-              <p className="text-xl text-charcoal/60 mt-4">
-                Expert perspectives on security and compliance.
-              </p>
-            </motion.div>
-            <Link href="/insights">
-              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/5 bg-transparent transition-all duration-300">
-                View all insights
-              </Button>
-            </Link>
-          </div>
+              When the controls live in code, the audit becomes a query.
+            </h3>
+          </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                category: "Compliance",
-                readTime: "8 min read",
-                title: "SOC 2 Type II: A Practical Guide",
-                description: "What you actually need to know about achieving and maintaining SOC 2 compliance.",
-                link: "/insights/soc2-guide"
-              },
-              {
-                category: "Security",
-                readTime: "6 min read",
-                title: "Zero Trust: Beyond the Buzzword",
-                description: "How to implement zero trust architecture in a way that actually improves security.",
-                link: "/insights/zero-trust-implementation"
-              },
-              {
-                category: "DevSecOps",
-                readTime: "7 min read",
-                title: "Shifting Security Left",
-                description: "Integrating security into your development pipeline without slowing down releases.",
-                link: "/insights/shift-left-security"
-              }
-            ].map((insight, index) => (
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
               >
-                <Link href={insight.link} className="group block h-full">
-                  <div className="h-full p-8 rounded-xl bg-white border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
-                    <div className="flex items-center gap-3 mb-4">
-                      <span className="text-primary text-xs font-bold uppercase tracking-wider">{insight.category}</span>
-                      <span className="text-charcoal/40">•</span>
-                      <span className="text-charcoal/60 text-sm">{insight.readTime}</span>
-                    </div>
-                    <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
-                      {insight.title}
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white p-8 lg:p-10 h-full flex flex-col">
+                    <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {result.industry}
+                    </span>
+                    {/* TODO: replace with real stat */}
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                      {result.title}
                     </h3>
-                    <p className="text-charcoal/60 text-sm leading-relaxed mb-6">
-                      {insight.description}
+                    <p className="text-base text-charcoal/75 leading-[1.55] mb-6 flex-1">
+                      {result.description}
                     </p>
-                    <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                      Read article <ArrowRight className="ml-2 w-4 h-4" />
-                    </div>
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read Case
+                    </span>
                   </div>
                 </Link>
               </motion.div>
@@ -426,77 +365,125 @@ export default function SecurityCompliance() {
         </div>
       </section>
 
-      {/* Related Capabilities Section */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 7 — White intra-cluster sibling sub-offerings (5 links inside Enterprise Transformation) */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-16"
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              Related Capabilities
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Other Ways We Help in Enterprise Transformation
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
-              Explore related capabilities
-            </h2>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Sibling offerings inside this cluster.
+            </h3>
           </motion.div>
-          
-          <div className="grid md:grid-cols-4 gap-6">
-            {[
-              {
-                title: "Cloud Infrastructure",
-                description: "Secure cloud foundations on AWS, Azure, and GCP. Build environments with security baked in from the start.",
-                link: "/solutions/enterprise-transformation/cloud-infrastructure"
-              },
-              {
-                title: "Data Platform Modernization",
-                description: "Modern data platforms with built-in governance, encryption, and access controls.",
-                link: "/solutions/enterprise-transformation/data-platform"
-              },
-              {
-                title: "Application Development",
-                description: "Secure software development practices. Build applications that protect user data by design.",
-                link: "/solutions/enterprise-transformation/app-development"
-              }
-            ].map((capability, index) => (
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {siblings.map((offering, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <BainHoverCard title={capability.title} description={capability.description} link={capability.link} />
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section - Blue Background */}
-      <section className="py-24 bg-primary">
-        <div className="container px-4 md:px-12 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-white mb-6">
-              Ready to strengthen your security posture?
-            </h2>
-            <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">
-              Let's discuss how we can help you build security that protects your business and enables growth.
-            </p>
-            <Link href="/contact">
-              <Button className="bg-white hover:bg-white/90 text-primary px-10 py-6 text-lg font-semibold transition-colors duration-200 ease-in-out">
-                Start Your Security Assessment
-              </Button>
-            </Link>
-          </motion.div>
+      {/* SLOT 8 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our security team into your next compliance conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders who want their next audit to be a query against the source-of-truth rather than a four-week scramble. Security and compliance is how that conversation begins.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 

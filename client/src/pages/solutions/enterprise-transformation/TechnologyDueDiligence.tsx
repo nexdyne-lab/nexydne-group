@@ -1,344 +1,489 @@
-import React, { useEffect } from "react";
-import { useLocation, Link } from "wouter";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { ArrowRight } from "lucide-react";
+import SolutionHero from "@/components/SolutionHero";
 import { SEO } from "@/components/SEO";
-import { Button } from "@/components/ui/button";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import BainHoverCard from "@/components/BainHoverCard";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function TechnologyDueDiligence() {
-  const [location, setLocation] = useLocation();
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  const relatedCapabilities = [
+  // ── Methodology phases (SLOT 3) ──────────────────────────────────────────────
+  const phases = [
     {
-      title: "Cloud Migration & Architecture",
-      description: "Assess and execute seamless cloud transitions, optimizing for performance and cost.",
-      link: "/solutions/enterprise-transformation/cloud-migration-architecture"
+      name: "Scope and access negotiation",
+      description:
+        "We define the diligence scope with the deal team — the technology questions that actually move the deal price, the integration or value-creation hypotheses that need pressure-testing, and the access we need to answer them. Data-room indices, code-repository read access, interview slates with engineering and operations leaders, and the timeline against the deal calendar are written and signed before any deep work begins.",
+    },
+    {
+      name: "Technical assessment",
+      description:
+        "We assess the target across the dimensions that move enterprise value — architecture and scalability, code quality and technical debt, infrastructure and operations, security and compliance posture, engineering team capability, and product velocity. The work is evidence-led: code metrics, repository analysis, infrastructure cost data, incident history, hiring and retention patterns. Findings are graded against deal-specific risk thresholds, not generic maturity models.",
+    },
+    {
+      name: "Integration or value-creation analysis",
+      description:
+        "For M&A acquisitions, we model the integration — system-by-system convergence, data and identity unification, redundancy in tooling and team, and the post-close roadmap that turns combined-entity scope into compounded value. For PE platform investments, we model the value-creation thesis — the technology investments that unlock organic growth, M&A roll-up readiness, or the operational upgrades that re-rate the multiple.",
+    },
+    {
+      name: "Risk and opportunity reporting",
+      description:
+        "Findings are translated into the deal-team language — risk and opportunity matrix, valuation impact, condition-precedent triggers, post-close investment requirements, and the diligence-derived roadmap that the deal team can defend to the IC. The report is written for the partners who price the deal, not for the engineering team that inherits it.",
+    },
+    {
+      name: "Post-deal advisory",
+      description:
+        "The diligence is the start of the value-creation conversation, not the end of the project. We extend into post-close — first-100-days plan, integration program, value-creation milestones, and the technology-portfolio reporting cadence the sponsor uses with the operating partner. The handoff is a defended technology roadmap, not a closing memo.",
+    },
+  ];
+
+  // ── Deliverables (SLOT 4) ────────────────────────────────────────────────────
+  const deliverables = [
+    {
+      name: "Due diligence scope and plan",
+      description:
+        "Written diligence scope covering the deal-relevant technology questions, the integration or value-creation hypotheses, the access plan, and the timeline against the deal calendar.",
+    },
+    {
+      name: "Technical assessment report",
+      description:
+        "Evidence-led assessment across architecture, code quality, technical debt, infrastructure and operations, security posture, engineering team capability, and product velocity — graded against deal-specific risk thresholds.",
+    },
+    {
+      name: "Integration or value-creation analysis",
+      description:
+        "M&A integration model or PE value-creation analysis — system convergence, data and identity unification, redundancy mapping, and the post-close roadmap that turns combined or platform scope into compounded value.",
+    },
+    {
+      name: "Risk and opportunity matrix",
+      description:
+        "Deal-team risk and opportunity matrix — valuation impact, condition-precedent triggers, post-close investment requirements, and the rating logic the IC partners can defend in writing.",
+    },
+    {
+      name: "Executive findings deck",
+      description:
+        "IC-ready findings deck written for the partners who price the deal — headline thesis, valuation implications, the three to five things that move the deal, and the diligence-derived investment roadmap.",
+    },
+    {
+      name: "Post-deal technology roadmap",
+      description:
+        "First-100-days plan, integration or value-creation program, milestones, and the technology-portfolio reporting cadence the sponsor uses with the operating partner.",
+    },
+  ];
+
+  // ── Sibling sub-offerings (SLOT 7) ───────────────────────────────────────────
+  const siblings = [
+    {
+      title: "Technology Strategy",
+      link: "/solutions/enterprise-transformation/technology-strategy",
     },
     {
       title: "Security & Compliance",
-      description: "Evaluate and fortify security posture to meet industry and regulatory standards.",
-      link: "/solutions/enterprise-transformation/security-and-compliance"
+      link: "/solutions/enterprise-transformation/security-compliance",
     },
     {
-      title: "Data Platform Engineering",
-      description: "Build and modernize data platforms to unlock analytics and AI capabilities.",
-      link: "/solutions/enterprise-transformation/data-platform-engineering"
-    }
+      title: "Cost Optimization",
+      link: "/solutions/enterprise-transformation/cost-optimization",
+    },
+    {
+      title: "Legacy Modernization",
+      link: "/solutions/enterprise-transformation/legacy-modernization",
+    },
+    {
+      title: "Cloud Migration Architecture",
+      link: "/solutions/enterprise-transformation/cloud-migration-architecture",
+    },
+  ];
+
+  // ── Case studies (SLOT 6) ────────────────────────────────────────────────────
+  const cases = [
+    {
+      industry: "Private Equity",
+      // TODO: replace with real stat
+      title:
+        "Diligence on a vertical SaaS platform repriced the deal by 18 percent and cleared the IC the same week",
+      description:
+        "A mid-market PE firm was diligencing a vertical SaaS platform with strong revenue but a thin engineering team. Our four-week diligence surfaced material technical debt in the core data layer, a hosting architecture that did not support the scale thesis, and a hiring-velocity issue that capped the value-creation case. The deal team repriced the offer by eighteen percent against the value-creation milestones, the IC cleared the deal the same week, and the post-close roadmap is what the operating partner runs against today.",
+      link: "/cases/pe-saas-diligence",
+    },
+    {
+      industry: "Strategic M&A",
+      // TODO: replace with real stat
+      title:
+        "Acquisition diligence flags 11 integration risks that converted into condition-precedent triggers",
+      description:
+        "A strategic acquirer was buying a complementary product into an existing platform business. We ran the integration diligence in parallel with the financial workstream, surfaced eleven integration-blocking risks that the seller had not disclosed, and converted four of them into condition-precedent triggers in the SPA. Post-close, the integration program ran on the diligence roadmap and landed on schedule against the synergy commitment.",
+      link: "/cases/strategic-acquisition-diligence",
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Technology Due Diligence" 
-        description="Provide comprehensive technology assessments for M&A transactions, evaluating architecture, technical debt, scalability, and team capabilities."
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Technology Due Diligence"
+        description="Technology due diligence for M&A acquisitions and PE portfolio investments — evidence-led technical assessment, integration or value-creation analysis, IC-ready findings, and post-deal advisory."
         canonical="/solutions/enterprise-transformation/technology-due-diligence"
       />
       <Navigation />
 
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
-        <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
+      {/* SLOT 1 — Charcoal hero (downshifted H1, ~25% shorter container per Cat 6 entry) */}
+      <SolutionHero
+        eyebrow="SOLUTION · ENTERPRISE TRANSFORMATION · TECHNOLOGY DUE DILIGENCE"
+        title="Technology Due Diligence"
+        subtitle="Diligence is written for the partners who price the deal, not the team that inherits it. We pressure-test the technology, the integration, and the value-creation thesis with evidence, and translate findings into deal-team language."
+        backgroundImage="/enterprise-transformation-hero.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"
+        containerClassName="h-[70vh] min-h-[500px] sm:min-h-[560px] lg:min-h-[640px]"
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[72ch]"
           >
-            <Breadcrumbs variant="light" />
-            
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.05] mb-3 sm:mb-4">
-              Technology Due Diligence
-            </h1>
-            
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl mb-6 sm:mb-10">
-              Provide comprehensive technology assessments for M&A transactions, evaluating architecture, technical debt, scalability, and team capabilities.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href="/contact">
-                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out">
-                  Schedule a Consultation
-                </Button>
-              </Link>
-              <Link href="/cases">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
-                  View Case Studies
-                </Button>
-              </Link>
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Stop reading diligence reports that read like architecture reviews. Start commissioning the ones that move deal price.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                The diligence reports that disappoint deal teams are the ones written for the engineering organization that inherits the asset, not the partners who have to price it. They open with a maturity model, work through a generic checklist, and end with a list of recommendations the buyer cannot tie to enterprise value. The deal team learns nothing new about the deal — they only learn what the engineering team will need to fix once the wire transfers.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                The diligence that earns its fee answers three questions: what about this technology actually justifies or threatens the price, what does integration or value-creation cost in calendar and capital, and what condition-precedent triggers should the deal lawyers know about. The work is evidence-led — code metrics, repository data, infrastructure cost, incident history, hiring and retention — and the report is written in the deal team's language. That is the difference between a diligence that gets read on the plane and one that sits in the data room.
+              </p>
             </div>
           </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/yOiuQlIfKQjWwDyU.jpg" 
-              alt="Technology Due Diligence" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* SLOT 3 — Light-grey methodology / phased approach (5 numbered phase cards) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-12"
+            className="mb-16 max-w-[60ch]"
           >
-            <h2 className="text-2xl font-bold text-charcoal">The Stakes of M&A Tech</h2>
-          </motion.div>
-          
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-            {[
-              { metric: "60%", label: "of acquisitions fail to meet ROI goals due to tech issues" },
-              { metric: "$1M+", label: "average cost of unidentified technical debt post-acquisition" },
-              { metric: "3-6", label: "months of delay caused by unforeseen integration challenges" }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-charcoal/60">{item.label}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              In the high-stakes world of mergers and acquisitions, technology is a critical, yet often underestimated, factor. A target company's technology stack can be a powerful growth engine or a hidden liability. Without a thorough, expert-led due diligence process, you risk inheriting a brittle architecture, crippling technical debt, and a platform that cannot scale to meet your strategic objectives.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              Our Technology Due Diligence service provides the clarity and foresight needed to make informed investment decisions. We go beyond surface-level code reviews to deliver a holistic assessment of the target's technology landscape, from architectural soundness and scalability to team capabilities and development processes. We identify risks, quantify liabilities, and uncover opportunities, empowering you to negotiate better terms and build a post-acquisition integration plan that maximizes value.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 sm:py-16 lg:py-24 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              How We Can Help
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Deliver
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
-              Our Diligence Capabilities
-            </h2>
-            <p className="text-xl text-charcoal/60 max-w-2xl">
-              We provide a multi-faceted evaluation of the target's technology ecosystem.
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              A five-phase approach from scope through post-deal advisory.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Each phase is timeboxed against the deal calendar. Most diligences run three to six weeks from scope to IC-ready report, with post-deal advisory extending into the first hundred days post-close.
             </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {[
-              {
-                title: "Architecture & Scalability Review",
-                description: "Analyze the system architecture for robustness, scalability, and its ability to support future growth. We identify design flaws and performance bottlenecks."
-              },
-              {
-                title: "Technical Debt Quantification",
-                description: "Conduct a deep dive into the codebase to identify and quantify technical debt, estimating the cost and effort required for remediation."
-              },
-              {
-                title: "Infrastructure & DevOps Audit",
-                description: "Evaluate the target's hosting environment, CI/CD pipelines, and operational practices for efficiency, security, and reliability."
-              },
-              {
-                title: "Security & Compliance Assessment",
-                description: "Assess the application and infrastructure security posture, identifying vulnerabilities and ensuring compliance with relevant regulations (e.g., GDPR, SOC 2)."
-              },
-              {
-                title: "Team & Process Evaluation",
-                description: "Assess the skills, structure, and agility of the engineering team, as well as the effectiveness of their development methodologies and processes."
-              },
-              {
-                title: "IP & Open Source Risk Analysis",
-                description: "Review the use of third-party and open-source software to identify potential licensing conflicts, security risks, and intellectual property issues."
-              }
-            ].map((item, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {phases.map((phase, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <BainHoverCard title={item.title} description={item.description} />
+                <div className="h-full p-8 lg:p-10 flex flex-col">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-5">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25]">
+                    {phase.name}
+                  </h3>
+                  <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                    {phase.description}
+                  </p>
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-base">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* SLOT 4 — White deliverables / what you get (flat hairline-bordered list) */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-16 text-center"
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-white mb-6">
-              Our Diligence Approach
-            </h2>
-            <p className="text-xl text-white/60 max-w-2xl mx-auto">
-              A structured methodology to de-risk your technology investments.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8 sm:gap-12 text-white">
-            {[
-              { 
-                title: "Phase 1: Discovery & Scoping", 
-                description: "We work with you to understand the deal thesis and define the key areas of focus for the technology assessment, tailoring our approach to your specific concerns."
-              },
-              { 
-                title: "Phase 2: Deep-Dive Analysis", 
-                description: "Our experts conduct a comprehensive review of code, architecture, infrastructure, and processes, leveraging a combination of automated tools and hands-on analysis."
-              },
-              { 
-                title: "Phase 3: Reporting & Integration Roadmap", 
-                description: "We deliver a detailed report outlining findings, risks, and a prioritized list of recommendations, along with a strategic roadmap for post-acquisition integration."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center"
-              >
-                <div className="text-5xl font-bold text-primary mb-4">{`0${index + 1}`}</div>
-                <h3 className="text-xl font-bold mb-3">{item.title}</h3>
-                <p className="text-white/70">{item.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 sm:py-16 lg:py-24 bg-base">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-12"
-          >
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-white">Success Stories</h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-charcoal p-8 rounded-lg"
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              What You Get
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/50 mb-4 block">Private Equity</span>
-              <h3 className="text-2xl font-bold text-white mb-4">De-risked a $250M acquisition of a SaaS platform by uncovering critical scalability issues, enabling a 15% purchase price reduction.</h3>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-charcoal p-8 rounded-lg"
-            >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/50 mb-4 block">Corporate M&A</span>
-              <h3 className="text-2xl font-bold text-white mb-4">Provided a clear integration roadmap for a strategic acquisition, reducing integration time by 40% and accelerating time-to-value.</h3>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 sm:py-16 lg:py-24 bg-subtle">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-12"
-          >
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal">Related Capabilities</h2>
+              Six concrete artifacts every engagement leaves behind.
+            </h3>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {relatedCapabilities.map((item, index) => (
+          <div className="border-t border-charcoal/10">
+            {deliverables.map((item, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="border-b border-charcoal/10 py-8 lg:py-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start"
               >
-                <BainHoverCard title={item.title} description={item.description} link={item.link} />
+                <div className="lg:col-span-1">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <div className="lg:col-span-4">
+                  <h4 className="text-xl text-charcoal font-medium leading-[1.25]">
+                    {item.name}
+                  </h4>
+                </div>
+                <div className="lg:col-span-7">
+                  <p className="text-base text-charcoal/75 leading-[1.55]">
+                    {item.description}
+                  </p>
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 lg:py-24 bg-primary">
-        <div className="container px-4 sm:px-6 md:px-12 text-center">
+      {/* SLOT 5 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment, Pattern 2) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl sm:text-4xl eb-garamond font-bold text-white mb-4">
-              Secure Your Investment with Expert Diligence
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            {/* TODO: replace with real stat */}
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Evidence-led technology diligence typically influences final deal terms on more than half the engagements — repricing, condition-precedent triggers, escrow holdbacks, or value-creation milestones the IC actually defends.
             </h2>
-            <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto mb-8">
-              Don't let technology risks derail your M&A strategy. Contact us to ensure your next transaction is built on a solid technical foundation.
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              The economics work because the diligence is written for the deal, not the inheriting team. We do not deliver an architecture review on a deal calendar — we deliver a technology view of the deal that the partners can take to the IC and the operating roadmap they can run after close.
             </p>
-            <Link href="/contact">
-              <Button className="bg-white hover:bg-white/90 text-primary px-10 py-7 text-lg font-semibold transition-colors duration-200 ease-in-out">
-                Contact Us
-              </Button>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
             </Link>
           </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — White case studies / proof (1-2 cards, narrower than Cat 5) */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              When the diligence answers the deal question, the IC partners read it twice.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white p-8 lg:p-10 h-full flex flex-col">
+                    <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {result.industry}
+                    </span>
+                    {/* TODO: replace with real stat */}
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                      {result.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] mb-6 flex-1">
+                      {result.description}
+                    </p>
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read Case
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 7 — White intra-cluster sibling sub-offerings (5 links inside Enterprise Transformation) */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Other Ways We Help in Enterprise Transformation
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Sibling offerings inside this cluster.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {siblings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 8 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our diligence team into your next deal calendar.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with deal teams who want their next technology diligence written for the partners who price the deal rather than the team that inherits it. Technology due diligence is how that conversation begins.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 

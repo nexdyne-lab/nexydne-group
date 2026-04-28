@@ -1,353 +1,489 @@
-import React, { useEffect } from "react";
-import { useLocation, Link } from "wouter";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { ArrowRight } from "lucide-react";
+import SolutionHero from "@/components/SolutionHero";
 import { SEO } from "@/components/SEO";
-import { Button } from "@/components/ui/button";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import BainHoverCard from "@/components/BainHoverCard";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function DataPlatformEngineering() {
-  const [location, setLocation] = useLocation();
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  const relatedCapabilities = [
+  // ── Methodology phases (SLOT 3) ──────────────────────────────────────────────
+  const phases = [
     {
-      title: "Cloud Migration & Architecture",
-      description: "Seamlessly migrate and re-architect your applications for the cloud to enhance scalability and performance.",
-      link: "/solutions/enterprise-transformation/cloud-migration-architecture"
+      name: "Data architecture diagnostic",
+      description:
+        "We map the as-is data estate — sources, pipelines, warehouses, lakes, integrations, BI consumers, the shadow stack the analytics teams stood up when central IT could not deliver. Latency, freshness, lineage, quality, and cost-per-query are measured against the workloads that actually pay for the platform. The output is a diagnostic the data leadership team can defend, not a vendor pitch.",
+    },
+    {
+      name: "Platform selection and design",
+      description:
+        "From the diagnostic we run the platform selection — Databricks, Snowflake, BigQuery, or a hybrid lakehouse — against your workload mix, governance constraints, and team capability. The decision memo is written before the architecture, so the choice is defended against alternatives in writing rather than in a vendor demo. The design covers ingestion, storage tiers, compute pools, semantic layer, and the integration model with the consuming applications.",
+    },
+    {
+      name: "Pipeline implementation",
+      description:
+        "We build the pipelines — ingestion, transformation, semantic models — against engineering standards that survive a personnel change. dbt, Airflow, Spark, Delta, Iceberg — the toolchain is opinionated, version-controlled, and tested. The first wave covers the workloads with the highest revenue or risk concentration, so the platform earns its budget before scope expands.",
+    },
+    {
+      name: "Governance and observability",
+      description:
+        "Data quality, lineage, access control, PII handling, and pipeline observability are built into the platform — not bolted on after a regulatory finding. We deploy data contracts, automated quality tests, lineage tooling (OpenLineage, Atlan, Collibra) and the on-call rotation that owns pipeline health the same way a product team owns service health.",
+    },
+    {
+      name: "Scaling and cost optimization",
+      description:
+        "Once the first wave is operational, we extend the platform across additional domains, tune the compute and storage economics, and stand up the FinOps cadence specific to data workloads — query optimization, warehouse right-sizing, storage tiering, and the chargeback model that makes the platform's economics legible to every data consumer.",
+    },
+  ];
+
+  // ── Deliverables (SLOT 4) ────────────────────────────────────────────────────
+  const deliverables = [
+    {
+      name: "Data architecture map",
+      description:
+        "End-to-end map of the as-is data estate with latency, freshness, lineage, quality, and cost-per-query measured against the workloads the platform actually serves.",
+    },
+    {
+      name: "Platform selection memo",
+      description:
+        "Written platform decision memo — Databricks, Snowflake, BigQuery, or hybrid — with the workload-fit, governance, capability, and total-cost analysis that defends the choice against alternatives.",
+    },
+    {
+      name: "Pipeline architecture",
+      description:
+        "Reference architecture covering ingestion, transformation, semantic layer, and the integration model — built with dbt, Airflow, Spark, and the toolchain that survives a personnel change.",
+    },
+    {
+      name: "Data quality and governance framework",
+      description:
+        "Data contracts, automated quality tests, access control, PII handling, and the lineage tooling deployed and integrated with the pipelines and the consuming applications.",
+    },
+    {
+      name: "Observability dashboards",
+      description:
+        "Production-grade pipeline observability — freshness, quality, cost-per-pipeline, SLA tracking — wired to the on-call rotation that owns platform health day-one.",
+    },
+    {
+      name: "Scaling roadmap",
+      description:
+        "Sequenced expansion plan covering additional domains, performance tuning, compute and storage economics, and the chargeback model that keeps platform economics legible to every consumer.",
+    },
+  ];
+
+  // ── Sibling sub-offerings (SLOT 7) ───────────────────────────────────────────
+  const siblings = [
+    {
+      title: "Cloud Migration Architecture",
+      link: "/solutions/enterprise-transformation/cloud-migration-architecture",
     },
     {
       title: "DevOps & CI/CD",
-      description: "Automate your software delivery pipeline to accelerate innovation and improve release quality.",
-      link: "/solutions/enterprise-transformation/devops-cicd"
+      link: "/solutions/enterprise-transformation/devops-cicd",
     },
     {
-      title: "Security & Compliance",
-      description: "Integrate robust security and compliance frameworks into your cloud-native platforms.",
-      link: "/solutions/enterprise-transformation/security-and-compliance"
-    }
+      title: "Platform Engineering",
+      link: "/solutions/enterprise-transformation/platform-engineering",
+    },
+    {
+      title: "Infrastructure Modernization",
+      link: "/solutions/enterprise-transformation/infrastructure-modernization",
+    },
+    {
+      title: "Technology Strategy",
+      link: "/solutions/enterprise-transformation/technology-strategy",
+    },
+  ];
+
+  // ── Case studies (SLOT 6) ────────────────────────────────────────────────────
+  const cases = [
+    {
+      industry: "Retail",
+      // TODO: replace with real stat
+      title:
+        "Lakehouse migration cuts daily reporting latency from 14 hours to 22 minutes",
+      description:
+        "A multi-banner retailer was running a fragile chain of overnight ETL jobs that left the merchandising team blind for half the trading day. We selected Databricks against the workload mix, rebuilt the ingestion to streaming where it earned its complexity, and stood up the semantic layer the BI team had been asking for. Daily reporting latency dropped from fourteen hours to twenty-two minutes, and pipeline incidents fell by 80 percent quarter-on-quarter.",
+      link: "/cases/retail-lakehouse-migration",
+    },
+    {
+      industry: "B2B SaaS",
+      // TODO: replace with real stat
+      title:
+        "Snowflake platform consolidates 11 shadow analytics stacks into one governed estate",
+      description:
+        "A B2B SaaS scale-up had eleven separate analytics stacks across product, RevOps, finance, and customer success — none of them governed, all of them billed. We consolidated onto Snowflake with a domain-oriented mesh model, retired the shadow stacks, and deployed the data contracts and lineage tooling. Quarterly platform spend fell 41 percent and the data team stopped being the bottleneck on every executive question.",
+      link: "/cases/saas-snowflake-consolidation",
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Data Platform Engineering" 
-        description="Design and build modern data platforms that unify data sources, enable real-time analytics, and power AI/ML workloads at enterprise scale."
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Data Platform Engineering"
+        description="Build the data platform that supports enterprise analytics — pipelines, lakehouse, warehouses, observability, and the engineering discipline that keeps the platform a managed asset rather than a stack of fragile jobs."
         canonical="/solutions/enterprise-transformation/data-platform-engineering"
       />
       <Navigation />
 
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
-        <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
+      {/* SLOT 1 — Charcoal hero (downshifted H1, ~25% shorter container per Cat 6 entry) */}
+      <SolutionHero
+        eyebrow="SOLUTION · ENTERPRISE TRANSFORMATION · DATA PLATFORM ENGINEERING"
+        title="Data Platform Engineering"
+        subtitle="A data platform that survives leadership turnover and quarterly board questions is an engineering asset, not a vendor selection. We diagnose the estate, choose the platform, build the pipelines, and stand up the governance that makes data a managed asset."
+        backgroundImage="/enterprise-transformation-hero.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"
+        containerClassName="h-[70vh] min-h-[500px] sm:min-h-[560px] lg:min-h-[640px]"
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[72ch]"
           >
-            <Breadcrumbs variant="light" />
-            
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.05] mb-3 sm:mb-4">
-              Data Platform Engineering
-            </h1>
-            
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl mb-6 sm:mb-10">
-              Design and build modern data platforms that unify data sources, enable real-time analytics, and power AI/ML workloads at enterprise scale.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href="/contact">
-                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out">
-                  Build Your Data Platform
-                </Button>
-              </Link>
-              <Link href="/cases">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out bg-transparent">
-                  See Our Data Solutions
-                </Button>
-              </Link>
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Stop buying data platforms. Start engineering one that earns its budget every quarter.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                Most data platforms we get asked to fix were never engineered — they were assembled. A Snowflake account was provisioned, a few warehouses were spun up, the BI team built dashboards on top, and the bill grew quietly while the pipelines turned into a bowl of spaghetti only one engineer in the company can read. By the time the executive team starts asking why the analytics roadmap has not moved in nine months, the platform has become a tax, not an asset.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                Data platforms that hold up are engineered like products — versioned, tested, observable, governed, and owned by a team that is on call for the platform's health the same way a payments team is on call for an outage. The platform choice matters, but the engineering discipline behind it matters more. That is what makes a Snowflake estate cheaper than a Databricks one for the same workloads, or vice versa — the choice is downstream of the operating model that owns it.
+              </p>
             </div>
           </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/IrHhqHKxiHuRUSxd.jpg" 
-              alt="Data Platform Engineering Visualization" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* SLOT 3 — Light-grey methodology / phased approach (5 numbered phase cards) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-12"
+            className="mb-16 max-w-[60ch]"
           >
-            <h2 className="text-2xl font-bold text-charcoal">The Impact of Unified Data</h2>
-          </motion.div>
-          
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-            {[
-              { metric: "50%", label: "Faster time-to-insight" },
-              { metric: "3x", label: "Increase in data accessibility" },
-              { metric: "70%", label: "Reduction in data preparation effort" }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-charcoal/60">{item.label}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              In today's digital economy, data is the lifeblood of the enterprise. However, siloed data sources, legacy infrastructure, and inconsistent data quality prevent organizations from realizing the full potential of their data assets. A modern data platform is not just a repository; it's a strategic enabler that unifies disparate data, provides a single source of truth, and empowers teams with self-service analytics and AI capabilities.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              We engineer scalable, cloud-native data platforms that serve as the foundation for your data-driven future. By leveraging modern architectures like data mesh and data fabric, we break down data silos and create a seamless, accessible data ecosystem. Our platforms are designed for performance, reliability, and security, enabling you to run everything from real-time analytics and business intelligence to complex machine learning models at enterprise scale.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 sm:py-16 lg:py-24 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              How We Can Help
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Deliver
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
-              Our Data Platform Capabilities
-            </h2>
-            <p className="text-xl text-charcoal/60 max-w-2xl">
-              We provide end-to-end services to design, build, and manage your modern data platform.
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              A five-phase approach from diagnostic to a platform that scales without re-architecting.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Each phase is timeboxed and produces a tangible artifact. Most engagements run twenty to forty weeks from diagnostic to a platform running production workloads under a permanent operating team.
             </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {[
-              {
-                title: "Data Strategy & Architecture",
-                description: "Define a clear data strategy and design a future-proof architecture (e.g., data mesh, lakehouse) aligned with your business goals."
-              },
-              {
-                title: "Data Ingestion & Integration",
-                description: "Build robust, scalable pipelines to ingest data from any source in real-time or batch, ensuring data quality and reliability."
-              },
-              {
-                title: "Data Governance & Security",
-                description: "Implement comprehensive data governance frameworks to manage data quality, access control, and compliance with regulations like GDPR and CCPA."
-              },
-              {
-                title: "Self-Service Analytics & BI",
-                description: "Empower business users with self-service tools and dashboards for data exploration, visualization, and reporting."
-              },
-              {
-                title: "MLOps & AI Enablement",
-                description: "Operationalize machine learning models with MLOps practices, enabling rapid deployment, monitoring, and retraining of AI applications."
-              },
-              {
-                title: "Cloud Data Platform Modernization",
-                description: "Migrate and modernize your existing data warehouse or data lake to a scalable, cost-effective cloud-native platform on AWS, Azure, or GCP."
-              }
-            ].map((item, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {phases.map((phase, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <BainHoverCard title={item.title} description={item.description} />
+                <div className="h-full p-8 lg:p-10 flex flex-col">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-5">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25]">
+                    {phase.name}
+                  </h3>
+                  <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                    {phase.description}
+                  </p>
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 lg:py-24 bg-base">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* SLOT 4 — White deliverables / what you get (flat hairline-bordered list) */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-16 text-center"
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-white mb-6">
-              Our Approach to Data Platform Engineering
-            </h2>
-            <p className="text-xl text-white/60 max-w-3xl mx-auto">
-              We follow a structured, agile methodology to deliver value quickly and iteratively.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8 text-white">
-            {[
-              {
-                step: "01",
-                title: "Discovery & Roadmap",
-                description: "We start by understanding your business objectives, assessing your current data landscape, and defining a strategic roadmap for your modern data platform."
-              },
-              {
-                step: "02",
-                title: "Foundation & Build",
-                description: "We build the core infrastructure of your data platform, implementing data ingestion pipelines, storage layers, and governance controls in iterative sprints."
-              },
-              {
-                step: "03",
-                title: "Enablement & Scale",
-                description: "We empower your teams to leverage the new platform through training and support, and continuously optimize and scale the platform to meet evolving business needs."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center"
-              >
-                <div className="text-6xl font-bold text-primary mb-4">{item.step}</div>
-                <h3 className="text-2xl font-bold mb-3">{item.title}</h3>
-                <p className="text-white/70">{item.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 sm:py-16 lg:py-24 bg-base border-t border-white/10">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-12"
-          >
-            <h2 className="text-4xl eb-garamond font-bold text-white">Client Success Stories</h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="bg-charcoal/20 p-8 rounded-lg"
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              What You Get
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              <span className="text-sm font-bold uppercase tracking-widest text-secondary mb-4 block">Retail & E-commerce</span>
-              <h3 className="text-2xl font-bold text-white mb-4">Global retailer achieves real-time inventory visibility, reducing stockouts by 30%.</h3>
-              <Link to="/cases/retail-inventory-optimization" className="text-white font-semibold hover:text-secondary transition-colors flex items-center">
-                Read Case Study <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-charcoal/20 p-8 rounded-lg"
-            >
-              <span className="text-sm font-bold uppercase tracking-widest text-secondary mb-4 block">Financial Services</span>
-              <h3 className="text-2xl font-bold text-white mb-4">Investment bank builds a scalable platform for algorithmic trading, increasing trade execution speed by 40%.</h3>
-              <Link to="/cases/algorithmic-trading-platform" className="text-white font-semibold hover:text-secondary transition-colors flex items-center">
-                Read Case Study <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 sm:py-16 lg:py-24 bg-subtle">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-12"
-          >
-            <h2 className="text-4xl eb-garamond font-bold text-charcoal">Related Capabilities</h2>
+              Six concrete artifacts every engagement leaves behind.
+            </h3>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {relatedCapabilities.map((item, index) => (
+          <div className="border-t border-charcoal/10">
+            {deliverables.map((item, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="border-b border-charcoal/10 py-8 lg:py-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start"
               >
-                <BainHoverCard title={item.title} description={item.description} link={item.link} />
+                <div className="lg:col-span-1">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <div className="lg:col-span-4">
+                  <h4 className="text-xl text-charcoal font-medium leading-[1.25]">
+                    {item.name}
+                  </h4>
+                </div>
+                <div className="lg:col-span-7">
+                  <p className="text-base text-charcoal/75 leading-[1.55]">
+                    {item.description}
+                  </p>
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 lg:py-24 bg-primary">
-        <div className="container px-4 sm:px-6 md:px-12 text-center">
+      {/* SLOT 5 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment, Pattern 2) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl sm:text-4xl eb-garamond font-bold text-white mb-4">
-              Ready to Unlock Your Data's Potential?
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            {/* TODO: replace with real stat */}
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Engineered data platforms typically cut pipeline incidents by 60 to 80 percent — and shrink the analytics-request backlog by half because the platform stops being the bottleneck on every executive question.
             </h2>
-            <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto mb-8">
-              Let's discuss how a modern data platform can transform your business. Our experts are ready to help you design and build a solution tailored to your unique needs.
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              The economics work because the platform is engineered like a product, not assembled like a stack. We do not hand the data team a vendor account and a wish list — we leave behind a versioned, tested, observable platform with the operating model that owns it.
             </p>
-            <Link href="/contact">
-              <Button className="bg-white hover:bg-white/90 text-primary px-10 py-7 text-lg font-semibold transition-colors duration-200 ease-in-out">
-                Schedule a Consultation
-              </Button>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
             </Link>
           </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — White case studies / proof (1-2 cards, narrower than Cat 5) */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              When the platform is engineered, the analytics team stops apologizing.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white p-8 lg:p-10 h-full flex flex-col">
+                    <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {result.industry}
+                    </span>
+                    {/* TODO: replace with real stat */}
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                      {result.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] mb-6 flex-1">
+                      {result.description}
+                    </p>
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read Case
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 7 — White intra-cluster sibling sub-offerings (5 links inside Enterprise Transformation) */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Other Ways We Help in Enterprise Transformation
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Sibling offerings inside this cluster.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {siblings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 8 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our data engineering team into your next platform conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders who want their data platform engineered as a managed asset rather than assembled as a tax. Data platform engineering is how that conversation begins.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 

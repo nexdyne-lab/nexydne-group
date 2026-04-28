@@ -1,379 +1,489 @@
-import React, { useEffect } from "react";
-import { useLocation, Link } from "wouter";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { ArrowRight } from "lucide-react";
+import SolutionHero from "@/components/SolutionHero";
 import { SEO } from "@/components/SEO";
-import { Button } from "@/components/ui/button";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import BainHoverCard from "@/components/BainHoverCard";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function CloudCostOptimization() {
-  const [location, setLocation] = useLocation();
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  const relatedCapabilities = [
+  // ── Methodology phases (SLOT 3) ──────────────────────────────────────────────
+  const phases = [
     {
-      title: "Cloud Migration & Architecture",
-      description: "Design and execute seamless, secure, and cost-effective migrations to the cloud.",
-      link: "/solutions/enterprise-transformation/cloud-migration-architecture"
+      name: "Cost baseline and waste identification",
+      description:
+        "We connect to your AWS, Azure, and GCP billing accounts and reconstruct twelve months of true unit economics — by service, environment, team, and product. Idle resources, orphaned volumes, oversized instances, untagged spend, and unused commitments are surfaced with named owners. The output is the first honest spend report most leadership teams have ever seen on their cloud estate.",
+    },
+    {
+      name: "Optimization strategy",
+      description:
+        "From the baseline we build a prioritized optimization portfolio — right-sizing, reserved instance and savings plan coverage, storage tiering, network egress reduction, license consolidation, and architecture-level changes that compound. Each move is sized in dollars, sequenced by risk, and scored against the workload teams that need to sign on before anything changes.",
+    },
+    {
+      name: "Automation and tooling deployment",
+      description:
+        "Manual cost reviews never survive contact with a release calendar. We deploy the FinOps tooling stack — CloudHealth, Apptio Cloudability, native cost dashboards, custom anomaly detection — and wire automated guardrails into the pipelines so wasteful provisioning is caught before it bills, not after.",
+    },
+    {
+      name: "FinOps program operation",
+      description:
+        "FinOps is a discipline, not a project. We stand up the operating cadence — weekly cost reviews, monthly forecasts versus actuals, quarterly commitment reauthorization, executive cost-performance reporting — and embed the FinOps role into the engineering and finance org so accountability has a permanent home.",
+    },
+    {
+      name: "Scaling and governance",
+      description:
+        "Once the operating model is proven on the first business unit, we extend it across the enterprise — central policy, federated execution, tagging governance, chargeback or showback models, and architecture review gates that price-test designs before they ship. Cloud cost stops being a quarterly fire drill and becomes a managed line on the operating P&L.",
+    },
+  ];
+
+  // ── Deliverables (SLOT 4) ────────────────────────────────────────────────────
+  const deliverables = [
+    {
+      name: "Cost baseline and spend report",
+      description:
+        "Twelve-month reconstructed unit economics by service, environment, team, and product — with the data lineage that makes every number defensible to finance.",
+    },
+    {
+      name: "Waste identification analysis",
+      description:
+        "Inventory of idle resources, oversized instances, orphaned storage, untagged spend, and underused commitments — each line tied to a named owner and a remediation owner.",
+    },
+    {
+      name: "Prioritized optimization roadmap",
+      description:
+        "Sequenced portfolio of right-sizing, commitment, architecture, and policy moves — sized in annualized dollars and scored against execution risk and cross-team dependencies.",
+    },
+    {
+      name: "FinOps tooling architecture",
+      description:
+        "Deployed and integrated FinOps stack — cost analytics, anomaly detection, automated guardrails, and dashboards wired to the source-of-truth billing accounts.",
+    },
+    {
+      name: "Governance and accountability framework",
+      description:
+        "Operating cadence, RACI, tagging policy, commitment reauthorization process, and the chargeback or showback model that makes cost a co-owned engineering metric.",
+    },
+    {
+      name: "Executive cost performance dashboard",
+      description:
+        "Production-grade dashboard for the executive team — spend versus forecast, optimization realized, commitment coverage, and the leading indicators that catch drift before it lands on the bill.",
+    },
+  ];
+
+  // ── Sibling sub-offerings (SLOT 7) ───────────────────────────────────────────
+  const siblings = [
+    {
+      title: "Cloud Migration Architecture",
+      link: "/solutions/enterprise-transformation/cloud-migration-architecture",
     },
     {
       title: "Infrastructure Modernization",
-      description: "Modernize your legacy infrastructure to improve agility, performance, and scalability.",
-      link: "/solutions/enterprise-transformation/infrastructure-modernization"
+      link: "/solutions/enterprise-transformation/infrastructure-modernization",
+    },
+    {
+      title: "DevOps & CI/CD",
+      link: "/solutions/enterprise-transformation/devops-cicd",
     },
     {
       title: "Platform Engineering",
-      description: "Build and manage scalable, resilient, and secure platforms to accelerate application delivery.",
-      link: "/solutions/enterprise-transformation/platform-engineering"
-    }
+      link: "/solutions/enterprise-transformation/platform-engineering",
+    },
+    {
+      title: "Cost Optimization",
+      link: "/solutions/enterprise-transformation/cost-optimization",
+    },
+  ];
+
+  // ── Case studies (SLOT 6) ────────────────────────────────────────────────────
+  const cases = [
+    {
+      industry: "SaaS Platform",
+      // TODO: replace with real stat
+      title:
+        "FinOps program retires 32 percent of annual cloud spend without a single workload migration",
+      description:
+        "A growth-stage SaaS platform was watching cloud spend outpace revenue for three quarters running. We rebuilt the cost baseline, surfaced 1,400 idle resources finance had been billed for monthly, restructured commitment coverage across two regions, and wired anomaly detection into every account. Twelve months in the program had retired 32 percent of annual run-rate spend without touching a workload.",
+      link: "/cases/saas-finops-program",
+    },
+    {
+      industry: "Financial Services",
+      // TODO: replace with real stat
+      title:
+        "Multi-cloud governance lands $14M of annualized savings across 47 product teams",
+      description:
+        "A diversified financial services group ran AWS, Azure, and GCP across 47 product teams with no shared cost discipline. We deployed a federated FinOps operating model, established the tagging governance, and ran the first three quarters of optimization waves alongside the engineering teams. Annualized savings cleared $14M and the operating cadence carried into year two without consultant presence.",
+      link: "/cases/finserv-multi-cloud-finops",
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Cloud Cost Optimization" 
-        description="Reduce cloud spend by 30-50% through FinOps practices, right-sizing, reserved capacity planning, and automated cost governance."
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Cloud Cost Optimization"
+        description="FinOps for cloud spend — right-sizing, commitment optimization, waste elimination, and the governance cadence that turns cloud cost from a quarterly fire drill into a managed line on the operating P&L."
         canonical="/solutions/enterprise-transformation/cloud-cost-optimization"
       />
       <Navigation />
 
-      {/* Section 1: Hero Section */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
-        <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
+      {/* SLOT 1 — Charcoal hero (downshifted H1, ~25% shorter container per Cat 6 entry) */}
+      <SolutionHero
+        eyebrow="SOLUTION · ENTERPRISE TRANSFORMATION · CLOUD COST OPTIMIZATION"
+        title="Cloud Cost Optimization"
+        subtitle="Cloud bills do not get smaller because someone reads a cost dashboard. We rebuild the baseline, surface the waste, restructure commitments, deploy the FinOps operating model, and embed the discipline so cost stops being the quarterly surprise it has been."
+        backgroundImage="/enterprise-transformation-hero.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"
+        containerClassName="h-[70vh] min-h-[500px] sm:min-h-[560px] lg:min-h-[640px]"
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[72ch]"
           >
-            <Breadcrumbs variant="light" />
-            
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.05] mb-3 sm:mb-4">
-              Cloud Cost Optimization
-            </h1>
-            
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl mb-6 sm:mb-10">
-              Reduce cloud spend by 30-50% through FinOps practices, right-sizing, reserved capacity planning, and automated cost governance.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href="/contact">
-                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out">
-                  Request a Cost Analysis
-                </Button>
-              </Link>
-              <Link href="/cases">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
-                  See Our Results
-                </Button>
-              </Link>
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Stop chasing cloud bills after the fact. Start running cloud as a managed line on the operating P&L.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                The leadership teams we get called into already know cloud spend is too high. What they cannot answer is the next question — by how much, on what, owned by whom, and what they are willing to give up to take it down. Without that answer, every optimization wave runs on opinion, the engineering teams pick the path of least resistance, and the bill compounds quietly between quarters.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                FinOps done well is a permanent operating discipline, not a one-off audit. We rebuild the cost baseline against a real unit-economic model, deploy the tooling and guardrails that make waste expensive to ship, and stand up the cadence that keeps engineering and finance on the same page every week. The result is a cloud estate where spend tracks workload, forecasts hold, and architectural decisions are priced before they get committed.
+              </p>
             </div>
           </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/CHPfIqjnLJtWCsFF.jpg" 
-              alt="Cloud Cost Optimization Visualization" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
         </div>
       </section>
 
-      {/* Section 2: Stats */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* SLOT 3 — Light-grey methodology / phased approach (5 numbered phase cards) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-12"
+            className="mb-16 max-w-[60ch]"
           >
-            <h2 className="text-2xl font-bold text-charcoal">Our Experience & Impact</h2>
-          </motion.div>
-          
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-            {[
-              { metric: "30-50%", label: "Reduction in cloud spend" },
-              { metric: "80%", label: "Improvement in resource utilization" },
-              { metric: "12 months", label: "Typical timeframe for full ROI" }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-charcoal/60">{item.label}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 3: Thought Leadership */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              The cloud offers unparalleled agility, but its pay-as-you-go model can lead to spiraling costs if not managed with discipline. Many organizations find their cloud spend growing unpredictably, hampered by oversized resources, idle instances, and a lack of financial governance. Effective Cloud Cost Optimization, or FinOps, is not about cutting back on innovation; it's about instilling a culture of financial accountability and maximizing the economic value of every dollar spent in the cloud.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              We approach cloud cost management as a continuous, data-driven cycle. By integrating financial and operational data, we provide clear visibility into where your money is going. This allows us to implement a multi-faceted strategy encompassing right-sizing instances, leveraging reserved capacity and savings plans, automating cost-control policies, and architecting for cost-efficiency from the ground up. The goal is to transform your cloud budget from a reactive operational expense into a predictable, strategic investment.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4: How We Can Help */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              How We Can Help
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Deliver
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
-              Our FinOps Capabilities
-            </h2>
-            <p className="text-xl text-charcoal/60 max-w-2xl">
-              From strategic advice to hands-on implementation, we provide a comprehensive suite of services.
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              A five-phase approach from cost baseline to a permanent FinOps practice.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Each phase is timeboxed and produces a tangible artifact. Most engagements run sixteen to twenty-eight weeks from baseline to a federated operating model running across multiple business units.
             </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {[
-              {
-                title: "FinOps Program Development",
-                description: "Establish a cross-functional FinOps practice to manage cloud value, integrating teams from finance, engineering, and operations."
-              },
-              {
-                title: "Cloud Spend Visibility & Analysis",
-                description: "Implement advanced tooling to provide granular visibility into your cloud consumption and identify key cost drivers."
-              },
-              {
-                title: "Resource Right-Sizing & Modernization",
-                description: "Analyze utilization patterns to safely downsize or terminate idle resources and modernize instance families for better price-performance."
-              },
-              {
-                title: "Commitment & Discount Management",
-                description: "Optimize the use of Reserved Instances (RIs) and Savings Plans to maximize discounts based on predictable usage patterns."
-              },
-              {
-                title: "Automated Cost Governance",
-                description: "Implement automated policies to enforce tagging standards, identify non-compliant resources, and prevent cost overruns in real-time."
-              },
-              {
-                title: "Cost-Aware Architecture",
-                description: "Re-architect applications for cost efficiency using serverless, containers, and auto-scaling to align infrastructure spend with actual demand."
-              }
-            ].map((item, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {phases.map((phase, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <BainHoverCard title={item.title} description={item.description} />
+                <div className="h-full p-8 lg:p-10 flex flex-col">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-5">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25]">
+                    {phase.name}
+                  </h3>
+                  <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                    {phase.description}
+                  </p>
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 5: Our Approach */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
-        <div className="container px-4 sm:px-6 md:px-12">
+      {/* SLOT 4 — White deliverables / what you get (flat hairline-bordered list) */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="mb-16 max-w-[60ch]"
           >
-            <h2 className="text-3xl sm:text-4xl eb-garamond font-bold mb-4">
-              Our Approach to <span className="text-secondary">Cloud Value</span>
-            </h2>
-            <p className="text-lg text-white/60 max-w-3xl mx-auto">
-              We follow a structured methodology to ensure that cloud cost optimization delivers tangible business value, moving from data to insight to action.
-            </p>
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              What You Get
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six concrete artifacts every engagement leaves behind.
+            </h3>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8 sm:gap-12">
-            {[
-              {
-                title: "1. Assess & Analyze",
-                description: "We perform a deep analysis of your cloud environment, identifying key areas of waste, and establish a baseline for measuring improvement."
-              },
-              {
-                title: "2. Optimize & Automate",
-                description: "We implement a combination of right-sizing, commitment optimization, and automated governance policies to capture immediate savings."
-              },
-              {
-                title: "3. Govern & Operate",
-                description: "We help you establish a continuous FinOps practice, providing ongoing visibility, control, and a culture of cost accountability."
-              }
-            ].map((item, index) => (
+          <div className="border-t border-charcoal/10">
+            {deliverables.map((item, i) => (
               <motion.div
-                key={index}
+                key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="border-b border-charcoal/10 py-8 lg:py-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start"
               >
-                <h3 className="text-xl font-bold text-white mb-4">{item.title}</h3>
-                <p className="text-white/60">{item.description}</p>
+                <div className="lg:col-span-1">
+                  <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <div className="lg:col-span-4">
+                  <h4 className="text-xl text-charcoal font-medium leading-[1.25]">
+                    {item.name}
+                  </h4>
+                </div>
+                <div className="lg:col-span-7">
+                  <p className="text-base text-charcoal/75 leading-[1.55]">
+                    {item.description}
+                  </p>
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 6: Case Studies */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-base text-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-4xl font-bold text-center mb-12"
-          >
-            Success Stories in Cloud FinOps
-          </motion.h2>
-          <div className="grid md:grid-cols-2 gap-8 sm:gap-12">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="group relative"
-            >
-              <Link href="/cases/saas-cost-reduction">
-                <div className="relative overflow-hidden rounded-lg">
-                  <img src="https://images.unsplash.com/photo-placeholder" alt="SaaS Platform Cost Reduction" className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                </div>
-                <div className="absolute bottom-0 left-0 p-6 sm:p-8">
-                  <span className="text-xs font-bold uppercase tracking-widest text-white/80">SaaS</span>
-                  <h3 className="text-2xl font-bold text-white mt-2">Reducing Cloud Spend by 45% for a Growth-Stage SaaS Company</h3>
-                </div>
-              </Link>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="group relative"
-            >
-              <Link href="/cases/enterprise-finops-governance">
-                <div className="relative overflow-hidden rounded-lg">
-                  <img src="https://images.unsplash.com/photo-placeholder" alt="Enterprise FinOps Governance" className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                </div>
-                <div className="absolute bottom-0 left-0 p-6 sm:p-8">
-                  <span className="text-xs font-bold uppercase tracking-widest text-white/80">Enterprise</span>
-                  <h3 className="text-2xl font-bold text-white mt-2">Establishing Centralized FinOps Governance for a Fortune 500</h3>
-                </div>
-              </Link>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 7: Related Capabilities */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-subtle">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl font-bold text-center mb-12 text-charcoal"
-          >
-            Continue Your Transformation Journey
-          </motion.h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {relatedCapabilities.map((capability, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <BainHoverCard title={capability.title} description={capability.description} link={capability.link} />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 8: CTA Section */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-primary text-white">
-        <div className="container px-4 sm:px-6 md:px-12 text-center">
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl sm:text-4xl font-bold mb-6"
-          >
-            Ready to Maximize Your Cloud ROI?
-          </motion.h2>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto mb-8"
-          >
-            Let's talk about how our Cloud Cost Optimization services can drive financial accountability and unlock new value from your cloud investment. Schedule a complimentary consultation with our experts today.
-          </motion.p>
+      {/* SLOT 5 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment, Pattern 2) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.6 }}
           >
-            <Link href="/contact">
-              <Button className="bg-white hover:bg-white/90 text-primary px-10 py-7 text-lg font-semibold transition-colors duration-200 ease-in-out">
-                Contact Us
-              </Button>
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            {/* TODO: replace with real stat */}
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Mature FinOps programs typically retire 20 to 35 percent of annualized cloud spend in the first twelve months — and hold the gain because the operating cadence, not a one-time audit, is what produced it.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              The economics work because every optimization move is owned, sized, and tracked against forecast. We do not run a four-week audit and hand over a deck — we build the operating discipline that compounds the savings into year two and beyond.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
             </Link>
           </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — White case studies / proof (1-2 cards, narrower than Cat 5) */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              When the operating model owns the spend, the savings compound.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white p-8 lg:p-10 h-full flex flex-col">
+                    <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {result.industry}
+                    </span>
+                    {/* TODO: replace with real stat */}
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                      {result.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] mb-6 flex-1">
+                      {result.description}
+                    </p>
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read Case
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 7 — White intra-cluster sibling sub-offerings (5 links inside Enterprise Transformation) */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Other Ways We Help in Enterprise Transformation
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Sibling offerings inside this cluster.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {siblings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 8 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our FinOps team into your next cloud cost conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders who want their cloud bill to track workload rather than surprise. FinOps is how that conversation starts.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
