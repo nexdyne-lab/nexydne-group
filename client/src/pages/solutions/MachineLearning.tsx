@@ -25,9 +25,9 @@ export default function MachineLearning() {
       link: "/solutions/machine-learning/model-development",
     },
     {
-      title: "MLOps &amp; Deployment",
+      title: "MLOps & Deployment",
       description:
-        "Versioning, CI/CD for models, monitoring, retraining. We treat ML systems as software systems&mdash;with the operational discipline production demands.",
+        "Versioning, CI/CD for models, monitoring, retraining. We treat ML systems as software systems—with the operational discipline production demands.",
       link: "/solutions/machine-learning/mlops-deployment",
     },
     {
@@ -37,7 +37,7 @@ export default function MachineLearning() {
       link: "/solutions/machine-learning/recommendation-systems",
     },
     {
-      title: "Fraud &amp; Anomaly Detection",
+      title: "Fraud & Anomaly Detection",
       description:
         "Real-time fraud, abuse, and anomaly detection with low false-positive rates. We balance precision, recall, and reviewer workload deliberately.",
       link: "/solutions/machine-learning/fraud-anomaly-detection",
@@ -75,23 +75,23 @@ export default function MachineLearning() {
     {
       title: "Start with the Decision",
       description:
-        "Before the model, the decision. We map the business decision the model must improve&mdash;and the cost of being wrong in either direction.",
+        "Before the model, the decision. We map the business decision the model must improve—and the cost of being wrong in either direction.",
       link: "/solutions/machine-learning/model-development",
     },
     {
       title: "Build the Right Baseline",
       description:
-        "Heuristic, rule, or simple model. The baseline forces honest measurement of whether ML is actually adding value&mdash;or just adding complexity.",
+        "Heuristic, rule, or simple model. The baseline forces honest measurement of whether ML is actually adding value—or just adding complexity.",
       link: "/solutions/machine-learning/fraud-anomaly-detection",
     },
     {
       title: "Engineer for Production",
       description:
-        "Versioning, monitoring, retraining, drift detection. The model that wins the notebook contest rarely wins the production contest&mdash;until it&rsquo;s engineered for it.",
+        "Versioning, monitoring, retraining, drift detection. The model that wins the notebook contest rarely wins the production contest—until it's engineered for it.",
       link: "/solutions/machine-learning/mlops-deployment",
     },
     {
-      title: "Measure Impact in P&amp;L",
+      title: "Measure Impact in P&L",
       description:
         "Lift, AUC, and F1 are inputs. Revenue, margin, and cost are outputs. We close the loop on the metric the business actually buys.",
       link: "/solutions/machine-learning/demand-forecasting",
@@ -149,7 +149,7 @@ export default function MachineLearning() {
       <SolutionHero
         eyebrow="SOLUTION · MACHINE LEARNING"
         title="Machine Learning"
-        subtitle="ML model development, MLOps, and production deployment&mdash;measured in lift over baseline and dollars at the bottom line, not notebook accuracy."
+        subtitle="ML model development, MLOps, and production deployment—measured in lift over baseline and dollars at the bottom line, not notebook accuracy."
         backgroundImage="/images/solution-machine-learning.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
@@ -179,13 +179,13 @@ export default function MachineLearning() {
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
                 The story repeats. The data scientist demos a 0.94 AUC. The
                 executive funds the program. Twelve months later the model
-                isn&rsquo;t in production, the data has drifted, and nobody
+                isn't in production, the data has drifted, and nobody
                 can explain why the rollout stalled. The deficit is rarely in
-                modeling&mdash;it&rsquo;s in the engineering, governance, and
+                modeling—it's in the engineering, governance, and
                 operating model around the model.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                NexDyne&rsquo;s{" "}
+                NexDyne's{" "}
                 <Link
                   href="/insights/ml-production-gap"
                   className="text-primary hover:text-primary-hover transition-colors"
@@ -194,7 +194,7 @@ export default function MachineLearning() {
                 </Link>{" "}
                 start with the decision the model must improve, build the
                 right baseline, engineer for production from day one, and
-                measure impact in P&amp;L&mdash;not just lift.
+                measure impact in P&L—not just lift.
               </p>
             </div>
           </motion.div>
@@ -267,7 +267,7 @@ export default function MachineLearning() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -378,13 +378,13 @@ export default function MachineLearning() {
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
               Models that hold up in the wild. NexDyne clients have lifted
-              target metrics by a median of 53% over baseline&mdash;and kept
+              target metrics by a median of 53% over baseline—and kept
               the lift through retraining, drift, and scale.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve shipped recommendation, fraud, forecasting, and
+              We've shipped recommendation, fraud, forecasting, and
               vision models across retail, financial services, healthcare,
-              and industrial&mdash;each engineered for production from the
+              and industrial—each engineered for production from the
               first commit.
             </p>
             <Link href="/cases">
@@ -546,11 +546,11 @@ export default function MachineLearning() {
                     <SelectItem value="financial-services">
                       Financial Services
                     </SelectItem>
-                    <SelectItem value="retail">Retail &amp; E-commerce</SelectItem>
+                    <SelectItem value="retail">Retail & E-commerce</SelectItem>
                     <SelectItem value="manufacturing">Manufacturing</SelectItem>
                     <SelectItem value="healthcare">Healthcare</SelectItem>
                     <SelectItem value="logistics">
-                      Logistics &amp; Supply Chain
+                      Logistics & Supply Chain
                     </SelectItem>
                     <SelectItem value="technology">Technology</SelectItem>
                     <SelectItem value="other">Other</SelectItem>
@@ -566,8 +566,8 @@ export default function MachineLearning() {
               >
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
                   We work with leaders ready to operationalize machine
-                  learning&mdash;modeled rigorously, engineered for
-                  production, and tied to the P&amp;L the executive committee
+                  learning—modeled rigorously, engineered for
+                  production, and tied to the P&L the executive committee
                   reads.
                 </p>
                 <div className="space-y-5">

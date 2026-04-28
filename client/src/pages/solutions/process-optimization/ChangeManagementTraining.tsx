@@ -69,7 +69,7 @@ export default function ChangeManagementTraining() {
             className="mb-12"
           >
             <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 mb-4 block">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h2
               className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-charcoal max-w-[32ch]"
@@ -443,7 +443,7 @@ export default function ChangeManagementTraining() {
               Ready to ensure your transformation succeeds?
             </h2>
             <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-10">
-              Let&rsquo;s discuss how our change management and training
+              Let's discuss how our change management and training
               expertise can maximize the ROI of your process optimization
               initiatives.
             </p>

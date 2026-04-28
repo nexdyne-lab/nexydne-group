@@ -87,7 +87,7 @@ export default function MobileApps() {
     {
       title: "Ship in Two-Week Increments",
       description:
-        "Real builds in real users&rsquo; hands every two weeks. Feedback loops beat assumptions, every time.",
+        "Real builds in real users' hands every two weeks. Feedback loops beat assumptions, every time.",
       link: "/solutions/mobile-apps/native-ios",
     },
     {
@@ -111,7 +111,7 @@ export default function MobileApps() {
       industry: "Financial Services",
       title: "Regional Bank Cuts Mobile Crash Rate by 71% After Modernization",
       description:
-        "A six-year-old hybrid codebase migrated to native Swift and Kotlin&mdash;restoring stability and unlocking the feature roadmap.",
+        "A six-year-old hybrid codebase migrated to native Swift and Kotlin—restoring stability and unlocking the feature roadmap.",
       image: "/images/case-mobile-bank.jpg",
       link: "/cases/bank-mobile-modernization",
     },
@@ -140,7 +140,7 @@ export default function MobileApps() {
     <div className="min-h-screen bg-white font-sans text-charcoal">
       <SEO
         title="Mobile Apps"
-        description="Native and cross-platform mobile apps engineered to scale globally&mdash;iOS, Android, and hybrid&mdash;built for the second act on day one."
+        description="Native and cross-platform mobile apps engineered to scale globally—iOS, Android, and hybrid—built for the second act on day one."
         canonical="/solutions/mobile-apps"
       />
       <Navigation />
@@ -149,7 +149,7 @@ export default function MobileApps() {
       <SolutionHero
         eyebrow="SOLUTION · MOBILE APPS"
         title="Mobile Apps"
-        subtitle="Native and cross-platform mobile apps engineered to scale globally. iOS, Android, hybrid&mdash;built for the second download, not just the first install."
+        subtitle="Native and cross-platform mobile apps engineered to scale globally. iOS, Android, hybrid—built for the second download, not just the first install."
         backgroundImage="/images/solution-mobile-apps.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
@@ -178,22 +178,22 @@ export default function MobileApps() {
             <div className="space-y-6">
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
                 For most mid-market companies, the mobile app is the highest-stakes
-                surface in the customer experience. It&rsquo;s where churn shows up
+                surface in the customer experience. It's where churn shows up
                 first, where store ratings live forever, and where the gap between
                 a thoughtful product and a hurried one is most visible. The cost of
-                a bad app isn&rsquo;t just rebuild&mdash;it&rsquo;s lost trust.
+                a bad app isn't just rebuild—it's lost trust.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                NexDyne&rsquo;s{" "}
+                NexDyne's{" "}
                 <Link
                   href="/insights/mobile-architecture-debt"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   mobile development consultants
                 </Link>{" "}
-                ship apps that survive scale&mdash;native, React Native, or
-                Flutter&mdash;modular by default, accessible by design, and
-                instrumented for the product decisions you&rsquo;ll need to make
+                ship apps that survive scale—native, React Native, or
+                Flutter—modular by default, accessible by design, and
+                instrumented for the product decisions you'll need to make
                 next quarter.
               </p>
             </div>
@@ -267,7 +267,7 @@ export default function MobileApps() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -382,8 +382,8 @@ export default function MobileApps() {
               quartile of their category.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve shipped consumer, enterprise, and regulated-industry
-              mobile apps from MVP through hyperscale&mdash;treating performance,
+              We've shipped consumer, enterprise, and regulated-industry
+              mobile apps from MVP through hyperscale—treating performance,
               accessibility, and observability as launch features, not later
               phases.
             </p>
@@ -547,7 +547,7 @@ export default function MobileApps() {
                     <SelectItem value="financial-services">
                       Financial Services
                     </SelectItem>
-                    <SelectItem value="retail">Retail &amp; E-commerce</SelectItem>
+                    <SelectItem value="retail">Retail & E-commerce</SelectItem>
                     <SelectItem value="technology">Technology</SelectItem>
                     <SelectItem value="manufacturing">Manufacturing</SelectItem>
                     <SelectItem value="professional-services">
@@ -566,7 +566,7 @@ export default function MobileApps() {
               >
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
                   We work with leaders ready to ship mobile apps that survive
-                  scale&mdash;native, React Native, or Flutter&mdash;and outlast
+                  scale—native, React Native, or Flutter—and outlast
                   the next architectural pivot.
                 </p>
                 <div className="space-y-5">

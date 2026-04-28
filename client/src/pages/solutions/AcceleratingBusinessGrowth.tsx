@@ -187,19 +187,19 @@ export default function AcceleratingBusinessGrowth() {
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              Growth has never been harder&mdash;or more urgent. We help you
+              Growth has never been harder—or more urgent. We help you
               build new revenue engines.
             </h3>
             <div className="space-y-6">
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                The playbooks that built your business won&rsquo;t scale it to
+                The playbooks that built your business won't scale it to
                 the next level. We help mid-market companies break through
                 growth ceilings by launching digital products, channels, and
                 business models that compound over time.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                The companies winning today aren&rsquo;t just optimizing what
-                they have&mdash;they&rsquo;re building entirely new revenue
+                The companies winning today aren't just optimizing what
+                they have—they're building entirely new revenue
                 engines. Our{" "}
                 <Link
                   href="/insights/digital-growth-playbook"
@@ -236,7 +236,7 @@ export default function AcceleratingBusinessGrowth() {
             </h3>
             <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
               We combine strategy, technology, and execution to launch digital
-              growth initiatives that drive measurable revenue&mdash;from
+              growth initiatives that drive measurable revenue—from
               first channel to scaled platform.
             </p>
           </motion.div>
@@ -281,7 +281,7 @@ export default function AcceleratingBusinessGrowth() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -335,11 +335,11 @@ export default function AcceleratingBusinessGrowth() {
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              What&rsquo;s Your Growth Ambition?
+              What's Your Growth Ambition?
             </h3>
             <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
-              We&rsquo;ve helped companies at every stage of the growth
-              journey&mdash;through five integrated lenses for compounding
+              We've helped companies at every stage of the growth
+              journey—through five integrated lenses for compounding
               revenue.
             </p>
           </motion.div>
@@ -397,9 +397,9 @@ export default function AcceleratingBusinessGrowth() {
               year-over-year.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve worked with traditional distributors, professional
+              We've worked with traditional distributors, professional
               services firms, and regional providers to test and scale digital
-              growth&mdash;then move it from pilot to durable revenue stream.
+              growth—then move it from pilot to durable revenue stream.
             </p>
             <Link href="/cases">
               <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
@@ -544,7 +544,7 @@ export default function AcceleratingBusinessGrowth() {
                   className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
                   style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
                 >
-                  Let&rsquo;s build your next growth engine together.
+                  Let's build your next growth engine together.
                 </h2>
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
                   I want to talk to your experts in:
@@ -557,7 +557,7 @@ export default function AcceleratingBusinessGrowth() {
                     <SelectValue placeholder="Select an industry" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="retail">Retail &amp; Consumer</SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
                     <SelectItem value="professional-services">
                       Professional Services
                     </SelectItem>
@@ -580,7 +580,7 @@ export default function AcceleratingBusinessGrowth() {
               >
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
                   We work with mid-market companies ready to break through
-                  growth ceilings. Whether you&rsquo;re launching your first
+                  growth ceilings. Whether you're launching your first
                   digital channel or scaling a platform business model, our
                   team is ready.
                 </p>

@@ -75,7 +75,7 @@ export default function DataPlatform() {
     {
       title: "Define the Data Strategy",
       description:
-        "Decide what kind of analytics you&rsquo;re actually building for: BI, ML, operational, or all three. The strategy drives the architecture.",
+        "Decide what kind of analytics you're actually building for: BI, ML, operational, or all three. The strategy drives the architecture.",
       link: "/solutions/data-platform/lakehouse-architecture",
     },
     {
@@ -127,7 +127,7 @@ export default function DataPlatform() {
       link: "/solutions/cloud-infrastructure",
     },
     {
-      title: "AI &amp; Machine Learning",
+      title: "AI & Machine Learning",
       link: "/solutions/ai-machine-learning",
     },
     {
@@ -140,7 +140,7 @@ export default function DataPlatform() {
     <div className="min-h-screen bg-white font-sans text-charcoal">
       <SEO
         title="Data Platform"
-        description="Modern cloud data platforms&mdash;lake, warehouse, lakehouse&mdash;built for BI, ML, and operational analytics on Databricks and Snowflake."
+        description="Modern cloud data platforms—lake, warehouse, lakehouse—built for BI, ML, and operational analytics on Databricks and Snowflake."
         canonical="/solutions/data-platform"
       />
       <Navigation />
@@ -149,7 +149,7 @@ export default function DataPlatform() {
       <SolutionHero
         eyebrow="SOLUTION · DATA PLATFORM"
         title="Data Platform"
-        subtitle="Modern cloud data platforms&mdash;lake, warehouse, lakehouse, mesh&mdash;engineered for BI, ML, and operational analytics on a single, governable foundation."
+        subtitle="Modern cloud data platforms—lake, warehouse, lakehouse, mesh—engineered for BI, ML, and operational analytics on a single, governable foundation."
         backgroundImage="/images/solution-data-platform.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
@@ -178,13 +178,13 @@ export default function DataPlatform() {
             <div className="space-y-6">
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
                 Every mid-market company has a data platform. Most have several.
-                The problem isn&rsquo;t the technology&mdash;Databricks and
+                The problem isn't the technology—Databricks and
                 Snowflake are excellent. The problem is the operating model:
                 pipelines without owners, dashboards without lineage, costs
                 without controls, and a backlog that grows faster than the team.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                NexDyne&rsquo;s{" "}
+                NexDyne's{" "}
                 <Link
                   href="/insights/lakehouse-vs-mesh"
                   className="text-primary hover:text-primary-hover transition-colors"
@@ -267,7 +267,7 @@ export default function DataPlatform() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -382,9 +382,9 @@ export default function DataPlatform() {
               overnight to real-time.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve modernized warehouses, stood up lakehouses,
+              We've modernized warehouses, stood up lakehouses,
               decentralized into mesh, and rebuilt FinOps from the ground
-              up&mdash;always with engineering discipline that survives the
+              up—always with engineering discipline that survives the
               quarterly review.
             </p>
             <Link href="/cases">
@@ -544,7 +544,7 @@ export default function DataPlatform() {
                     <SelectValue placeholder="Select an industry" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="retail">Retail &amp; Consumer</SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
                     <SelectItem value="financial-services">
                       Financial Services
                     </SelectItem>
@@ -567,7 +567,7 @@ export default function DataPlatform() {
               >
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
                   We work with leaders ready to build data platforms that earn
-                  the trust of the operating committee&mdash;not just the
+                  the trust of the operating committee—not just the
                   analytics team.
                 </p>
                 <div className="space-y-5">

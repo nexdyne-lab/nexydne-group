@@ -70,7 +70,7 @@ export default function ProcessDiscoveryMining() {
             className="mb-12"
           >
             <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 mb-4 block">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h2
               className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-charcoal max-w-[32ch]"
@@ -125,7 +125,7 @@ export default function ProcessDiscoveryMining() {
             >
               Your business processes are the engines of value creation, but
               are they running at peak performance? Many organizations operate
-              with an incomplete understanding of their own workflows&mdash;
+              with an incomplete understanding of their own workflows—
               relying on anecdotal evidence and outdated process maps.
             </motion.p>
 
@@ -151,10 +151,10 @@ export default function ProcessDiscoveryMining() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-base md:text-lg text-charcoal/80 leading-[1.65]"
             >
-              This reveals not just the &ldquo;happy path,&rdquo; but every
-              variation, bottleneck, and compliance deviation. It&rsquo;s the
+              This reveals not just the "happy path," but every
+              variation, bottleneck, and compliance deviation. It's the
               difference between looking at a static blueprint and watching a
-              live MRI of your organization in action&mdash;the essential first
+              live MRI of your organization in action—the essential first
               step toward meaningful, sustainable process improvement.
             </motion.p>
           </div>
@@ -278,7 +278,7 @@ export default function ProcessDiscoveryMining() {
                 step: "03",
                 title: "Action & Value Realization",
                 description:
-                  "We translate insights into a concrete action plan&mdash;automation, workflow redesign, or training&mdash;and help you implement and measure the results.",
+                  "We translate insights into a concrete action plan—automation, workflow redesign, or training—and help you implement and measure the results.",
               },
             ].map((item, index) => (
               <motion.div
@@ -437,7 +437,7 @@ export default function ProcessDiscoveryMining() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-base md:text-lg text-white/80 leading-[1.65] mb-10 max-w-[60ch]"
             >
-              Let&rsquo;s talk about how Process Discovery and Mining can
+              Let's talk about how Process Discovery and Mining can
               illuminate the path to operational excellence for your business.
               Schedule a complimentary consultation with our experts today.
             </motion.p>

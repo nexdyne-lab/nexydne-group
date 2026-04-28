@@ -69,7 +69,7 @@ export default function ContinuousImprovementPrograms() {
             className="mb-12"
           >
             <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 mb-4 block">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h2
               className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-charcoal max-w-[32ch]"
@@ -121,7 +121,7 @@ export default function ContinuousImprovementPrograms() {
             >
               Initial transformation efforts deliver impressive results, but
               the true challenge lies in sustaining momentum. Continuous
-              improvement isn&rsquo;t a project with an end date&mdash;it&rsquo;s
+              improvement isn't a project with an end date—it's
               a cultural shift that embeds excellence into the organizational
               DNA.
             </motion.p>
@@ -202,7 +202,7 @@ export default function ContinuousImprovementPrograms() {
               {
                 title: "Change Adoption & Cultural Integration",
                 description:
-                  "Implement communication strategies, training programs, and incentive systems that foster a culture where continuous improvement is everyone&rsquo;s responsibility.",
+                  "Implement communication strategies, training programs, and incentive systems that foster a culture where continuous improvement is everyone's responsibility.",
               },
               {
                 title: "Technology-Enabled Improvement",
@@ -438,7 +438,7 @@ export default function ContinuousImprovementPrograms() {
               Ready to build a culture of lasting improvement?
             </h2>
             <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-10">
-              Let&rsquo;s discuss how a structured improvement program can
+              Let's discuss how a structured improvement program can
               create lasting value for your organization.
             </p>
             <Link href="/contact">

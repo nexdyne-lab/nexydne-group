@@ -21,7 +21,7 @@ export default function CustomerPortal() {
     {
       title: "Account Self-Service",
       description:
-        "Profile, preferences, subscriptions, and account history. Customers manage themselves&mdash;and your support team handles the work that actually needs a human.",
+        "Profile, preferences, subscriptions, and account history. Customers manage themselves—and your support team handles the work that actually needs a human.",
       link: "/solutions/customer-portal/account-self-service",
     },
     {
@@ -37,21 +37,21 @@ export default function CustomerPortal() {
       link: "/solutions/customer-portal/support-ticketing",
     },
     {
-      title: "Billing &amp; Payments",
+      title: "Billing & Payments",
       description:
-        "Invoices, payment methods, dispute flows, and self-service refunds. Reduce billing-related contact volume by half&mdash;or more.",
+        "Invoices, payment methods, dispute flows, and self-service refunds. Reduce billing-related contact volume by half—or more.",
       link: "/solutions/customer-portal/billing-payments",
     },
     {
-      title: "Partner &amp; Dealer Portals",
+      title: "Partner & Dealer Portals",
       description:
-        "B2B portals for distributors, dealers, brokers, and resellers. Order entry, claims, marketing assets, training&mdash;all in one place.",
+        "B2B portals for distributors, dealers, brokers, and resellers. Order entry, claims, marketing assets, training—all in one place.",
       link: "/solutions/customer-portal/partner-dealer-portals",
     },
     {
       title: "White-Label Portals",
       description:
-        "Multi-tenant, brandable portal platforms for clients who serve clients. Theme, configure, deploy&mdash;without rebuilding the core.",
+        "Multi-tenant, brandable portal platforms for clients who serve clients. Theme, configure, deploy—without rebuilding the core.",
       link: "/solutions/customer-portal/white-label-portals",
     },
   ];
@@ -75,13 +75,13 @@ export default function CustomerPortal() {
     {
       title: "Map the Top Reasons Customers Call",
       description:
-        "We start with the support data, not the wireframes. Top-15 contact reasons drive what the portal must absorb&mdash;and the deflection ROI.",
+        "We start with the support data, not the wireframes. Top-15 contact reasons drive what the portal must absorb—and the deflection ROI.",
       link: "/solutions/customer-portal/support-ticketing",
     },
     {
       title: "Design for Self-Service",
       description:
-        "Information architecture, navigation, and content design that lets customers find answers in seconds&mdash;not search-and-give-up.",
+        "Information architecture, navigation, and content design that lets customers find answers in seconds—not search-and-give-up.",
       link: "/solutions/customer-portal/knowledge-base",
     },
     {
@@ -93,7 +93,7 @@ export default function CustomerPortal() {
     {
       title: "Measure Deflection and CSAT",
       description:
-        "Instrument every flow. We track contact volume, self-service completion, and CSAT impact so the portal&rsquo;s value is provable, not asserted.",
+        "Instrument every flow. We track contact volume, self-service completion, and CSAT impact so the portal's value is provable, not asserted.",
       link: "/solutions/customer-portal/account-self-service",
     },
   ];
@@ -149,7 +149,7 @@ export default function CustomerPortal() {
       <SolutionHero
         eyebrow="SOLUTION · CUSTOMER PORTAL"
         title="Customer Portal"
-        subtitle="Self-service portals that absorb the work customers want to do themselves&mdash;reducing support cost, lifting CSAT, and building stickier relationships."
+        subtitle="Self-service portals that absorb the work customers want to do themselves—reducing support cost, lifting CSAT, and building stickier relationships."
         backgroundImage="/images/solution-customer-portal.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
@@ -181,10 +181,10 @@ export default function CustomerPortal() {
                 inflates, ticket volume compounds, and the easy contacts
                 crowd out the complex ones that actually need a human.
                 Meanwhile, customers reach for the phone the moment the portal
-                fails them&mdash;every time.
+                fails them—every time.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                NexDyne&rsquo;s{" "}
+                NexDyne's{" "}
                 <Link
                   href="/insights/portal-deflection-economics"
                   className="text-primary hover:text-primary-hover transition-colors"
@@ -193,7 +193,7 @@ export default function CustomerPortal() {
                 </Link>{" "}
                 start with the support data, design for the top contact
                 reasons, integrate the systems of record, and measure
-                deflection in dollars&mdash;not page views.
+                deflection in dollars—not page views.
               </p>
             </div>
           </motion.div>
@@ -266,7 +266,7 @@ export default function CustomerPortal() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -381,9 +381,9 @@ export default function CustomerPortal() {
               points within a year of launch.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve shipped customer, partner, and white-label portals
+              We've shipped customer, partner, and white-label portals
               across insurance, financial services, distribution, and
-              healthcare&mdash;each measured on contact deflection, not vanity
+              healthcare—each measured on contact deflection, not vanity
               adoption metrics.
             </p>
             <Link href="/cases">
@@ -549,7 +549,7 @@ export default function CustomerPortal() {
                     </SelectItem>
                     <SelectItem value="healthcare">Healthcare</SelectItem>
                     <SelectItem value="distribution">
-                      Distribution &amp; Wholesale
+                      Distribution & Wholesale
                     </SelectItem>
                     <SelectItem value="utilities">Utilities</SelectItem>
                     <SelectItem value="saas">SaaS</SelectItem>
@@ -566,7 +566,7 @@ export default function CustomerPortal() {
               >
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
                   We work with leaders ready to redesign the support
-                  economic&mdash;portals that deflect, integrate, and pay back
+                  economic—portals that deflect, integrate, and pay back
                   on a board-defensible timeline.
                 </p>
                 <div className="space-y-5">

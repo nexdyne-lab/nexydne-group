@@ -21,11 +21,11 @@ export default function ConversationalAI() {
     {
       title: "Customer Support Bots",
       description:
-        "LLM-powered support agents that resolve&mdash;not just deflect. We build with retrieval, guardrails, and graceful handoff so customers get answers, not loops.",
+        "LLM-powered support agents that resolve—not just deflect. We build with retrieval, guardrails, and graceful handoff so customers get answers, not loops.",
       link: "/solutions/conversational-ai/customer-support-bots",
     },
     {
-      title: "Sales &amp; Lead-Gen Agents",
+      title: "Sales & Lead-Gen Agents",
       description:
         "Conversational agents that qualify leads, book meetings, and surface intent signals. Built to lift pipeline, not annoy prospects.",
       link: "/solutions/conversational-ai/sales-lead-gen-agents",
@@ -45,11 +45,11 @@ export default function ConversationalAI() {
     {
       title: "Multilingual Agents",
       description:
-        "Agents that speak your customers&rsquo; languages&mdash;localized, not just translated. Quality bar holds across markets.",
+        "Agents that speak your customers' languages—localized, not just translated. Quality bar holds across markets.",
       link: "/solutions/conversational-ai/multilingual-agents",
     },
     {
-      title: "Agent Orchestration &amp; Handoff",
+      title: "Agent Orchestration & Handoff",
       description:
         "Multi-agent routing, fallback, and human handoff. We design the orchestration layer that turns isolated bots into a coherent service.",
       link: "/solutions/conversational-ai/agent-orchestration",
@@ -81,19 +81,19 @@ export default function ConversationalAI() {
     {
       title: "Ground the Model in Truth",
       description:
-        "Retrieval-augmented generation, structured knowledge bases, and tight guardrails. The agent answers from your sources&mdash;not its training set.",
+        "Retrieval-augmented generation, structured knowledge bases, and tight guardrails. The agent answers from your sources—not its training set.",
       link: "/solutions/conversational-ai/internal-helpdesk-agents",
     },
     {
       title: "Design Graceful Handoff",
       description:
-        "When the agent doesn&rsquo;t know, it hands off cleanly with full context. Customers don&rsquo;t repeat themselves; agents don&rsquo;t guess.",
+        "When the agent doesn't know, it hands off cleanly with full context. Customers don't repeat themselves; agents don't guess.",
       link: "/solutions/conversational-ai/agent-orchestration",
     },
     {
       title: "Measure, Tune, Expand",
       description:
-        "Track containment, CSAT, and escalation rates. Tune retrieval, prompts, and guardrails on real conversations&mdash;then expand the scope.",
+        "Track containment, CSAT, and escalation rates. Tune retrieval, prompts, and guardrails on real conversations—then expand the scope.",
       link: "/solutions/conversational-ai/voice-ivr",
     },
   ];
@@ -111,7 +111,7 @@ export default function ConversationalAI() {
       industry: "Financial Services",
       title: "Mid-Market Bank Cuts Internal IT Helpdesk Volume by 53%",
       description:
-        "Internal helpdesk agent absorbed password resets, access requests, and onboarding queries&mdash;reclaiming 14,000 specialist hours a year.",
+        "Internal helpdesk agent absorbed password resets, access requests, and onboarding queries—reclaiming 14,000 specialist hours a year.",
       image: "/images/case-cai-bank.jpg",
       link: "/cases/bank-internal-agent",
     },
@@ -140,7 +140,7 @@ export default function ConversationalAI() {
     <div className="min-h-screen bg-white font-sans text-charcoal">
       <SEO
         title="Conversational AI"
-        description="AI assistants, chatbots, and voice agents that automate support, sales, and internal workflows&mdash;measured on containment and CSAT."
+        description="AI assistants, chatbots, and voice agents that automate support, sales, and internal workflows—measured on containment and CSAT."
         canonical="/solutions/conversational-ai"
       />
       <Navigation />
@@ -149,7 +149,7 @@ export default function ConversationalAI() {
       <SolutionHero
         eyebrow="SOLUTION · CONVERSATIONAL AI"
         title="Conversational AI"
-        subtitle="AI assistants, chatbots, and voice agents that automate support, sales, and internal workflows&mdash;measured on containment, CSAT, and cost takeout."
+        subtitle="AI assistants, chatbots, and voice agents that automate support, sales, and internal workflows—measured on containment, CSAT, and cost takeout."
         backgroundImage="/images/solution-conversational-ai.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
@@ -178,13 +178,13 @@ export default function ConversationalAI() {
             <div className="space-y-6">
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
                 The technology has gotten dramatically better. The discipline
-                hasn&rsquo;t kept pace. Bots get deployed against the wrong
+                hasn't kept pace. Bots get deployed against the wrong
                 use cases, grounded against the wrong sources, and measured
-                against the wrong metrics&mdash;then declared a failure when
-                the math doesn&rsquo;t work.
+                against the wrong metrics—then declared a failure when
+                the math doesn't work.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                NexDyne&rsquo;s{" "}
+                NexDyne's{" "}
                 <Link
                   href="/insights/conversational-ai-economics"
                   className="text-primary hover:text-primary-hover transition-colors"
@@ -193,7 +193,7 @@ export default function ConversationalAI() {
                 </Link>{" "}
                 pick the right first use case, ground the model in your
                 actual sources, design graceful human handoff, and measure
-                outcomes the way the CFO does&mdash;containment, CSAT, and
+                outcomes the way the CFO does—containment, CSAT, and
                 cost out the door.
               </p>
             </div>
@@ -267,7 +267,7 @@ export default function ConversationalAI() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -379,12 +379,12 @@ export default function ConversationalAI() {
             >
               Agents that resolve, not just deflect. NexDyne clients have hit
               double-digit containment lifts and delivered eight-figure
-              annualized cost takeout&mdash;without sacrificing CSAT.
+              annualized cost takeout—without sacrificing CSAT.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve built customer, sales, and internal agents across
-              telecom, financial services, healthcare, and retail&mdash;each
-              grounded in the client&rsquo;s sources of truth and held to
+              We've built customer, sales, and internal agents across
+              telecom, financial services, healthcare, and retail—each
+              grounded in the client's sources of truth and held to
               real production SLAs.
             </p>
             <Link href="/cases">
@@ -531,7 +531,7 @@ export default function ConversationalAI() {
                   style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
                 >
                   Stop piloting. Start shipping agents that move the
-                  P&amp;L.
+                  P&L.
                 </h2>
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
                   I want to talk to your experts in:
@@ -551,7 +551,7 @@ export default function ConversationalAI() {
                       Financial Services
                     </SelectItem>
                     <SelectItem value="healthcare">Healthcare</SelectItem>
-                    <SelectItem value="retail">Retail &amp; E-commerce</SelectItem>
+                    <SelectItem value="retail">Retail & E-commerce</SelectItem>
                     <SelectItem value="insurance">Insurance</SelectItem>
                     <SelectItem value="technology">Technology</SelectItem>
                     <SelectItem value="other">Other</SelectItem>
@@ -567,7 +567,7 @@ export default function ConversationalAI() {
               >
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
                   We work with leaders ready to deploy conversational AI as a
-                  measurable operating asset&mdash;grounded, governed, and
+                  measurable operating asset—grounded, governed, and
                   defended on outcomes.
                 </p>
                 <div className="space-y-5">

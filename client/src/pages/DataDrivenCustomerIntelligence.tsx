@@ -28,7 +28,7 @@ export default function DataDrivenCustomerIntelligence() {
     {
       title: "Predictive Analytics & Modeling",
       description:
-        "Build churn prediction, lifetime value forecasting, and next-best-action models that work with your actual data&mdash;not theoretical perfect data.",
+        "Build churn prediction, lifetime value forecasting, and next-best-action models that work with your actual data—not theoretical perfect data.",
       link: "/solutions/customer-intelligence/predictive-analytics-modeling",
     },
     {
@@ -46,7 +46,7 @@ export default function DataDrivenCustomerIntelligence() {
     {
       title: "Personalization Strategy & Execution",
       description:
-        "Design and deploy personalization that scales&mdash;from simple rule-based systems to AI-powered recommendation engines.",
+        "Design and deploy personalization that scales—from simple rule-based systems to AI-powered recommendation engines.",
       link: "/solutions/customer-intelligence/personalization-strategy",
     },
     {
@@ -82,7 +82,7 @@ export default function DataDrivenCustomerIntelligence() {
     {
       title: "Build Predictive Capabilities",
       description:
-        "Move from backward-looking reports to forward-looking predictions. Know which customers will churn, buy, or expand&mdash;before they do.",
+        "Move from backward-looking reports to forward-looking predictions. Know which customers will churn, buy, or expand—before they do.",
       link: "/solutions/customer-intelligence/predictive-analytics-modeling",
     },
     {
@@ -94,7 +94,7 @@ export default function DataDrivenCustomerIntelligence() {
     {
       title: "Measure and Optimize",
       description:
-        "Close the loop with rigorous measurement. Understand what&rsquo;s working, what&rsquo;s not, and continuously improve.",
+        "Close the loop with rigorous measurement. Understand what's working, what's not, and continuously improve.",
       link: "/solutions/customer-intelligence/journey-analytics-optimization",
     },
     {
@@ -115,7 +115,7 @@ export default function DataDrivenCustomerIntelligence() {
       link: "/solutions/data-driven-customer-intelligence/case-studies/bank-cross-sell",
     },
     {
-      industry: "Retail &amp; E-commerce",
+      industry: "Retail & E-commerce",
       title: "E-commerce Retailer Stops the Bleeding",
       description:
         "Identified at-risk customers 45 days before typical churn, reduced monthly churn rate from 8% to 5%, and generated $2.4M in retained revenue.",
@@ -142,7 +142,7 @@ export default function DataDrivenCustomerIntelligence() {
       link: "/capabilities/growth-marketing-sales",
     },
     {
-      title: "AI &amp; Machine Learning",
+      title: "AI & Machine Learning",
       link: "/capabilities/artificial-intelligence",
     },
     {
@@ -196,18 +196,18 @@ export default function DataDrivenCustomerIntelligence() {
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
               Most mid-market companies sit on a goldmine of customer data
-              they can&rsquo;t access. We change that.
+              they can't access. We change that.
             </h3>
             <div className="space-y-6">
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                Information lives in disconnected systems&mdash;CRM here,
+                Information lives in disconnected systems—CRM here,
                 marketing automation there, support tickets somewhere else.
                 Teams make decisions on gut instinct instead of evidence, and
-                customers get generic experiences that don&rsquo;t reflect
+                customers get generic experiences that don't reflect
                 their actual history with your company.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                We&rsquo;ve spent years helping companies like yours transform
+                We've spent years helping companies like yours transform
                 scattered data into strategic advantage. The technology has
                 matured, costs have dropped, and competitive pressure has
                 intensified. Our{" "}
@@ -247,7 +247,7 @@ export default function DataDrivenCustomerIntelligence() {
             <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
               We combine technical expertise with business acumen to deliver
               customer intelligence solutions that actually get
-              used&mdash;and actually drive results.
+              used—and actually drive results.
             </p>
           </motion.div>
 
@@ -291,7 +291,7 @@ export default function DataDrivenCustomerIntelligence() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -406,9 +406,9 @@ export default function DataDrivenCustomerIntelligence() {
               would have churned.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve worked with banks, retailers, and healthcare
+              We've worked with banks, retailers, and healthcare
               networks to deploy AI-powered prediction and
-              personalization&mdash;then move it from pilot to enterprise
+              personalization—then move it from pilot to enterprise
               standard.
             </p>
             <Link href="/cases">
@@ -571,7 +571,7 @@ export default function DataDrivenCustomerIntelligence() {
                       Financial Services
                     </SelectItem>
                     <SelectItem value="healthcare">Healthcare</SelectItem>
-                    <SelectItem value="retail">Retail &amp; E-commerce</SelectItem>
+                    <SelectItem value="retail">Retail & E-commerce</SelectItem>
                     <SelectItem value="manufacturing">Manufacturing</SelectItem>
                     <SelectItem value="professional-services">
                       Professional Services
@@ -590,7 +590,7 @@ export default function DataDrivenCustomerIntelligence() {
               >
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
                   We work with mid-market leaders ready to stop guessing about
-                  their customers and start knowing&mdash;through unified
+                  their customers and start knowing—through unified
                   data, predictive models, and personalization at scale.
                 </p>
                 <div className="space-y-5">

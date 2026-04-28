@@ -21,7 +21,7 @@ export default function CloudInfrastructure() {
     {
       title: "Cloud Migration",
       description:
-        "Lift-and-shift, replatform, or refactor. We pick the right strategy per workload and deliver migrations that actually finish&mdash;on schedule, on budget.",
+        "Lift-and-shift, replatform, or refactor. We pick the right strategy per workload and deliver migrations that actually finish—on schedule, on budget.",
       link: "/solutions/cloud-infrastructure/cloud-migration",
     },
     {
@@ -43,9 +43,9 @@ export default function CloudInfrastructure() {
       link: "/solutions/cloud-infrastructure/finops",
     },
     {
-      title: "Security &amp; Compliance",
+      title: "Security & Compliance",
       description:
-        "Identity, network, data, and workload security baked into the platform. SOC 2, HIPAA, PCI&mdash;evidence-ready, not audit-scrambling.",
+        "Identity, network, data, and workload security baked into the platform. SOC 2, HIPAA, PCI—evidence-ready, not audit-scrambling.",
       link: "/solutions/cloud-infrastructure/security-compliance",
     },
     {
@@ -93,7 +93,7 @@ export default function CloudInfrastructure() {
     {
       title: "Operate as a Product",
       description:
-        "Platform engineering, FinOps, and security run as ongoing products&mdash;with SLAs, roadmaps, and customer-developer feedback loops.",
+        "Platform engineering, FinOps, and security run as ongoing products—with SLAs, roadmaps, and customer-developer feedback loops.",
       link: "/solutions/cloud-infrastructure/platform-engineering",
     },
   ];
@@ -111,7 +111,7 @@ export default function CloudInfrastructure() {
       industry: "Healthcare",
       title: "Health-Tech Vendor Lifts Deploy Frequency 4.2x with Platform Engineering",
       description:
-        "Internal developer platform consolidated CI/CD, environments, and observability&mdash;turning weekly releases into multiple per day across teams.",
+        "Internal developer platform consolidated CI/CD, environments, and observability—turning weekly releases into multiple per day across teams.",
       image: "/images/case-cloud-healthtech.jpg",
       link: "/cases/healthtech-platform-engineering",
     },
@@ -149,7 +149,7 @@ export default function CloudInfrastructure() {
       <SolutionHero
         eyebrow="SOLUTION · CLOUD INFRASTRUCTURE"
         title="Cloud Infrastructure"
-        subtitle="Cloud-native modernization across AWS, Azure, and GCP&mdash;elastic, secure, cost-optimized platforms that compound developer velocity, not cloud bills."
+        subtitle="Cloud-native modernization across AWS, Azure, and GCP—elastic, secure, cost-optimized platforms that compound developer velocity, not cloud bills."
         backgroundImage="/images/solution-cloud-infrastructure.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
@@ -179,13 +179,13 @@ export default function CloudInfrastructure() {
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
                 The first cloud migration retires the data center and
                 introduces a new bill. The second migration tries to optimize
-                that bill. The third&mdash;done well&mdash;turns the cloud
+                that bill. The third—done well—turns the cloud
                 into a developer-velocity platform that compounds. Most
                 programs stop at the first phase and wonder where the value
                 went.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                NexDyne&rsquo;s{" "}
+                NexDyne's{" "}
                 <Link
                   href="/insights/cloud-platform-compounding"
                   className="text-primary hover:text-primary-hover transition-colors"
@@ -268,7 +268,7 @@ export default function CloudInfrastructure() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -380,11 +380,11 @@ export default function CloudInfrastructure() {
             >
               Cloud that compounds. NexDyne clients have cut run-rate spend
               by more than a third while lifting deploy frequency by
-              multiples&mdash;turning cloud into measurable advantage.
+              multiples—turning cloud into measurable advantage.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve led migrations and modernizations across financial
-              services, healthcare, retail, and industrial&mdash;each held
+              We've led migrations and modernizations across financial
+              services, healthcare, retail, and industrial—each held
               accountable to deploy frequency, change-failure rate, and unit
               economics, not just cost takeout.
             </p>
@@ -549,7 +549,7 @@ export default function CloudInfrastructure() {
                       Financial Services
                     </SelectItem>
                     <SelectItem value="healthcare">Healthcare</SelectItem>
-                    <SelectItem value="retail">Retail &amp; E-commerce</SelectItem>
+                    <SelectItem value="retail">Retail & E-commerce</SelectItem>
                     <SelectItem value="manufacturing">Manufacturing</SelectItem>
                     <SelectItem value="technology">Technology</SelectItem>
                     <SelectItem value="public-sector">Public Sector</SelectItem>
@@ -566,7 +566,7 @@ export default function CloudInfrastructure() {
               >
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
                   We work with leaders ready to treat cloud as a platform
-                  product&mdash;assessed, designed, migrated in waves, and
+                  product—assessed, designed, migrated in waves, and
                   operated against unit economics that hold up to the CFO.
                 </p>
                 <div className="space-y-5">

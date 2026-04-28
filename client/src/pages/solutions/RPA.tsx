@@ -33,7 +33,7 @@ export default function RPA() {
     {
       title: "Attended Bots",
       description:
-        "Bots that work alongside humans on the desktop&mdash;triggered by the user, sharing the screen, accelerating the moments that matter.",
+        "Bots that work alongside humans on the desktop—triggered by the user, sharing the screen, accelerating the moments that matter.",
       link: "/solutions/rpa/attended-bots",
     },
     {
@@ -103,7 +103,7 @@ export default function RPA() {
       industry: "Financial Services",
       title: "Insurer Automates Claims Triage and Cuts Handle Time by 68%",
       description:
-        "Forty-two unattended bots process claim intake, classification, and routing&mdash;freeing adjusters for the complex cases that need them.",
+        "Forty-two unattended bots process claim intake, classification, and routing—freeing adjusters for the complex cases that need them.",
       image: "/images/case-rpa-claims.jpg",
       link: "/cases/insurer-claims-rpa",
     },
@@ -149,7 +149,7 @@ export default function RPA() {
       <SolutionHero
         eyebrow="SOLUTION · ROBOTIC PROCESS AUTOMATION"
         title="Robotic Process Automation"
-        subtitle="Bots that handle the repetitive back-office work&mdash;so your people can do the work that actually requires people. Designed, governed, and built to last."
+        subtitle="Bots that handle the repetitive back-office work—so your people can do the work that actually requires people. Designed, governed, and built to last."
         backgroundImage="/images/solution-rpa.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
@@ -172,7 +172,7 @@ export default function RPA() {
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              Most RPA programs stall not because the bots don&rsquo;t work, but
+              Most RPA programs stall not because the bots don't work, but
               because nobody owns them after they ship.
             </h3>
             <div className="space-y-6">
@@ -181,11 +181,11 @@ export default function RPA() {
                 Most RPA programs hit a ceiling around twenty production bots
                 because nobody owns the operating model: who handles broken bots,
                 who approves changes, who measures the savings, who decides when
-                to retire a bot. The ROI is real&mdash;but only if it&rsquo;s
+                to retire a bot. The ROI is real—but only if it's
                 managed.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                NexDyne&rsquo;s{" "}
+                NexDyne's{" "}
                 <Link
                   href="/insights/rpa-coe-playbook"
                   className="text-primary hover:text-primary-hover transition-colors"
@@ -222,7 +222,7 @@ export default function RPA() {
             </h3>
             <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
               We combine deep platform expertise with rigorous program design to
-              deliver RPA that scales past the first wave&mdash;governed,
+              deliver RPA that scales past the first wave—governed,
               measured, and audit-ready.
             </p>
           </motion.div>
@@ -267,7 +267,7 @@ export default function RPA() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -382,8 +382,8 @@ export default function RPA() {
               hours for higher-value work.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve built bot estates from a single attended automation to
-              fleets of two hundred unattended bots&mdash;always governed, always
+              We've built bot estates from a single attended automation to
+              fleets of two hundred unattended bots—always governed, always
               measured, always audit-ready.
             </p>
             <Link href="/cases">
@@ -551,7 +551,7 @@ export default function RPA() {
                     <SelectItem value="professional-services">
                       Professional Services
                     </SelectItem>
-                    <SelectItem value="retail">Retail &amp; Consumer</SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
                     <SelectItem value="other">Other</SelectItem>
                   </SelectContent>
                 </Select>

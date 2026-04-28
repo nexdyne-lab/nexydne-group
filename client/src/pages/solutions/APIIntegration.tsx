@@ -21,7 +21,7 @@ export default function APIIntegration() {
     {
       title: "API Strategy & Design",
       description:
-        "REST, GraphQL, gRPC. We pick the right paradigm for the consumer, the data, and the latency budget&mdash;then design contracts that hold up.",
+        "REST, GraphQL, gRPC. We pick the right paradigm for the consumer, the data, and the latency budget—then design contracts that hold up.",
       link: "/solutions/api-integration/strategy-design",
     },
     {
@@ -67,7 +67,7 @@ export default function APIIntegration() {
     },
     {
       stat: "$5M+",
-      label: "annual revenue unlocked on a single client&rsquo;s API monetization program",
+      label: "annual revenue unlocked on a single client's API monetization program",
     },
   ];
 
@@ -75,7 +75,7 @@ export default function APIIntegration() {
     {
       title: "Strategy Before Endpoints",
       description:
-        "Decide what kind of API estate you&rsquo;re building: internal, partner, public, monetized. The strategy drives every later decision.",
+        "Decide what kind of API estate you're building: internal, partner, public, monetized. The strategy drives every later decision.",
       link: "/solutions/api-integration/strategy-design",
     },
     {
@@ -87,13 +87,13 @@ export default function APIIntegration() {
     {
       title: "Operate Through a Gateway",
       description:
-        "Authentication, rate limits, observability, versioning&mdash;all centralized. The gateway is where API governance becomes real.",
+        "Authentication, rate limits, observability, versioning—all centralized. The gateway is where API governance becomes real.",
       link: "/solutions/api-integration/gateway",
     },
     {
       title: "Document and Evolve",
       description:
-        "OpenAPI, sandbox, SDKs, deprecation policy. Documentation isn&rsquo;t the last step&mdash;it&rsquo;s the product surface.",
+        "OpenAPI, sandbox, SDKs, deprecation policy. Documentation isn't the last step—it's the product surface.",
       link: "/solutions/api-integration/developer-portal",
     },
   ];
@@ -109,7 +109,7 @@ export default function APIIntegration() {
     },
     {
       industry: "Healthcare",
-      title: "Health Insurer Modernizes Legacy Mainframe with API Layer&mdash;No Replatform",
+      title: "Health Insurer Modernizes Legacy Mainframe with API Layer—No Replatform",
       description:
         "Modern REST APIs over a thirty-year-old mainframe unlocked mobile, partner, and analytics use cases the system was never designed for.",
       image: "/images/case-api-insurer.jpg",
@@ -140,7 +140,7 @@ export default function APIIntegration() {
     <div className="min-h-screen bg-white font-sans text-charcoal">
       <SEO
         title="API Integration"
-        description="API-first integration architecture. Connect everything via well-designed REST, GraphQL, and gRPC APIs&mdash;governed, secured, and built to scale."
+        description="API-first integration architecture. Connect everything via well-designed REST, GraphQL, and gRPC APIs—governed, secured, and built to scale."
         canonical="/solutions/api-integration"
       />
       <Navigation />
@@ -149,7 +149,7 @@ export default function APIIntegration() {
       <SolutionHero
         eyebrow="SOLUTION · API INTEGRATION"
         title="API Integration"
-        subtitle="API-first integration architecture. Connect systems, partners, and products via well-designed REST, GraphQL, and gRPC APIs&mdash;governed, secured, and built for the long arc."
+        subtitle="API-first integration architecture. Connect systems, partners, and products via well-designed REST, GraphQL, and gRPC APIs—governed, secured, and built for the long arc."
         backgroundImage="/images/solution-api-integration.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
@@ -172,7 +172,7 @@ export default function APIIntegration() {
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              Every business is now an API business&mdash;whether it knows it
+              Every business is now an API business—whether it knows it
               yet or not. The contracts you ship today define the partnerships
               you can have tomorrow.
             </h3>
@@ -180,13 +180,13 @@ export default function APIIntegration() {
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
                 APIs are the only durable interface between your business and
                 the rest of the digital economy. Mobile apps, partner
-                ecosystems, embedded products, internal microservices&mdash;they
+                ecosystems, embedded products, internal microservices—they
                 all run on APIs. The companies that treat APIs as products, with
                 strategy, design, and lifecycle, ship faster than the ones
                 treating them as plumbing.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                NexDyne&rsquo;s{" "}
+                NexDyne's{" "}
                 <Link
                   href="/insights/api-as-product"
                   className="text-primary hover:text-primary-hover transition-colors"
@@ -195,7 +195,7 @@ export default function APIIntegration() {
                 </Link>{" "}
                 build API estates as products: REST or GraphQL by deliberate
                 choice, gateway-governed by default, OAuth-secured for the
-                partner integrations you haven&rsquo;t signed yet, and
+                partner integrations you haven't signed yet, and
                 documented well enough that the integrations actually happen.
               </p>
             </div>
@@ -269,7 +269,7 @@ export default function APIIntegration() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -384,8 +384,8 @@ export default function APIIntegration() {
               legacy estates without replatforming.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve designed APIs for open banking, embedded healthcare,
-              and B2B SaaS&mdash;always with the gateway hygiene, security
+              We've designed APIs for open banking, embedded healthcare,
+              and B2B SaaS—always with the gateway hygiene, security
               posture, and developer experience that turns integration into a
               repeatable advantage.
             </p>
@@ -550,7 +550,7 @@ export default function APIIntegration() {
                     </SelectItem>
                     <SelectItem value="healthcare">Healthcare</SelectItem>
                     <SelectItem value="technology">Technology</SelectItem>
-                    <SelectItem value="retail">Retail &amp; Consumer</SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
                     <SelectItem value="manufacturing">Manufacturing</SelectItem>
                     <SelectItem value="professional-services">
                       Professional Services
@@ -568,7 +568,7 @@ export default function APIIntegration() {
               >
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
                   We work with leaders ready to treat APIs as durable
-                  products&mdash;not just plumbing&mdash;and unlock the partner
+                  products—not just plumbing—and unlock the partner
                   ecosystems waiting on the other side.
                 </p>
                 <div className="space-y-5">

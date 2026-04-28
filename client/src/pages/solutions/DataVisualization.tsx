@@ -33,19 +33,19 @@ export default function DataVisualization() {
     {
       title: "Embedded Analytics",
       description:
-        "Charts, dashboards, and reports embedded directly inside your product or portal&mdash;native to the user experience, not a separate destination.",
+        "Charts, dashboards, and reports embedded directly inside your product or portal—native to the user experience, not a separate destination.",
       link: "/solutions/data-visualization/embedded-analytics",
     },
     {
       title: "Real-Time Monitoring Dashboards",
       description:
-        "Operational dashboards driven by streaming data&mdash;refreshed in seconds, not hours. Built for control rooms, ops centers, and live decisions.",
+        "Operational dashboards driven by streaming data—refreshed in seconds, not hours. Built for control rooms, ops centers, and live decisions.",
       link: "/solutions/data-visualization/real-time-monitoring",
     },
     {
       title: "Data Storytelling & Narrative",
       description:
-        "The numbers don&rsquo;t speak for themselves. We build the structured narrative that turns a dashboard into an argument leaders can act on.",
+        "The numbers don't speak for themselves. We build the structured narrative that turns a dashboard into an argument leaders can act on.",
       link: "/solutions/data-visualization/data-storytelling",
     },
     {
@@ -75,7 +75,7 @@ export default function DataVisualization() {
     {
       title: "Define the Decision",
       description:
-        "Every dashboard exists for a decision. We start with the decision&mdash;then design backward into the metrics and the visuals.",
+        "Every dashboard exists for a decision. We start with the decision—then design backward into the metrics and the visuals.",
       link: "/solutions/data-visualization/executive-dashboards",
     },
     {
@@ -93,7 +93,7 @@ export default function DataVisualization() {
     {
       title: "Govern and Evolve",
       description:
-        "Semantic layers, version control, deprecation discipline. Dashboards die from neglect&mdash;we build the operating model that keeps them alive.",
+        "Semantic layers, version control, deprecation discipline. Dashboards die from neglect—we build the operating model that keeps them alive.",
       link: "/solutions/data-visualization/design-systems",
     },
   ];
@@ -111,7 +111,7 @@ export default function DataVisualization() {
       industry: "Healthcare",
       title: "Health System Embeds Analytics in Clinician Workflow and Lifts Adoption 4x",
       description:
-        "Real-time embedded charts inside the EHR replaced an unused standalone BI portal&mdash;putting insight where decisions actually happen.",
+        "Real-time embedded charts inside the EHR replaced an unused standalone BI portal—putting insight where decisions actually happen.",
       image: "/images/case-viz-health.jpg",
       link: "/cases/health-embedded-analytics",
     },
@@ -123,7 +123,7 @@ export default function DataVisualization() {
       link: "/solutions/data-platform",
     },
     {
-      title: "AI &amp; Machine Learning",
+      title: "AI & Machine Learning",
       link: "/solutions/ai-machine-learning",
     },
     {
@@ -149,7 +149,7 @@ export default function DataVisualization() {
       <SolutionHero
         eyebrow="SOLUTION · DATA VISUALIZATION"
         title="Data Visualization"
-        subtitle="Executive dashboards, self-service BI, embedded analytics, and real-time monitoring&mdash;designed to make data legible to the leaders who have to act on it."
+        subtitle="Executive dashboards, self-service BI, embedded analytics, and real-time monitoring—designed to make data legible to the leaders who have to act on it."
         backgroundImage="/images/solution-data-visualization.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
@@ -172,7 +172,7 @@ export default function DataVisualization() {
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              The dashboard isn&rsquo;t the deliverable. The decision is. Most
+              The dashboard isn't the deliverable. The decision is. Most
               visualizations forget the difference.
             </h3>
             <div className="space-y-6">
@@ -180,20 +180,20 @@ export default function DataVisualization() {
                 The default failure mode of BI is dashboard sprawl: hundreds of
                 reports, dozens of definitions for the same metric, no shared
                 semantic layer, and an executive team that has stopped opening
-                any of them. Tools aren&rsquo;t the problem&mdash;design and
+                any of them. Tools aren't the problem—design and
                 governance are. The dashboards leaders actually use are the ones
                 that argue, not the ones that decorate.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                NexDyne&rsquo;s{" "}
+                NexDyne's{" "}
                 <Link
                   href="/insights/dashboard-design-principles"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   data visualization consultants
                 </Link>{" "}
-                build dashboards that earn five seconds of attention&mdash;then
-                ten minutes&mdash;by starting from the decision the executive
+                build dashboards that earn five seconds of attention—then
+                ten minutes—by starting from the decision the executive
                 actually has to make and designing backward into the visuals.
               </p>
             </div>
@@ -267,7 +267,7 @@ export default function DataVisualization() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -382,9 +382,9 @@ export default function DataVisualization() {
               the same data foundation.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve built executive dashboards for boards, embedded
+              We've built executive dashboards for boards, embedded
               analytics inside flagship products, and real-time monitoring
-              walls&mdash;always with restraint, narrative, and the design
+              walls—always with restraint, narrative, and the design
               systems that keep them coherent.
             </p>
             <Link href="/cases">
@@ -548,7 +548,7 @@ export default function DataVisualization() {
                       Financial Services
                     </SelectItem>
                     <SelectItem value="healthcare">Healthcare</SelectItem>
-                    <SelectItem value="retail">Retail &amp; Consumer</SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
                     <SelectItem value="technology">Technology</SelectItem>
                     <SelectItem value="professional-services">
                       Professional Services
@@ -566,7 +566,7 @@ export default function DataVisualization() {
               >
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
                   We work with leaders ready to build dashboards their executive
-                  team actually uses&mdash;not just the dashboards their data
+                  team actually uses—not just the dashboards their data
                   team is asked to ship.
                 </p>
                 <div className="space-y-5">

@@ -22,13 +22,13 @@ export default function CustomerIntelligence() {
     {
       title: "Customer Data Platform",
       description:
-        "Implement the right CDP for your scale, budget, and technical capabilities&mdash;turning siloed customer data into a unified, actionable foundation.",
+        "Implement the right CDP for your scale, budget, and technical capabilities—turning siloed customer data into a unified, actionable foundation.",
       link: "/solutions/customer-intelligence/customer-data-platform",
     },
     {
       title: "Predictive Analytics & Modeling",
       description:
-        "Build churn prediction, lifetime value forecasting, and next-best-action models that work with your actual data&mdash;not theoretical perfect data.",
+        "Build churn prediction, lifetime value forecasting, and next-best-action models that work with your actual data—not theoretical perfect data.",
       link: "/solutions/customer-intelligence/predictive-analytics-modeling",
     },
     {
@@ -46,7 +46,7 @@ export default function CustomerIntelligence() {
     {
       title: "Personalization Strategy",
       description:
-        "Design and deploy personalization that scales&mdash;from simple rule-based systems to AI-powered recommendation engines.",
+        "Design and deploy personalization that scales—from simple rule-based systems to AI-powered recommendation engines.",
       link: "/solutions/customer-intelligence/personalization-strategy",
     },
     {
@@ -82,7 +82,7 @@ export default function CustomerIntelligence() {
     {
       title: "Build Predictive Capabilities",
       description:
-        "Move from backward-looking reports to forward-looking predictions. Know which customers will churn, buy, or expand&mdash;before they do.",
+        "Move from backward-looking reports to forward-looking predictions. Know which customers will churn, buy, or expand—before they do.",
       link: "/solutions/customer-intelligence/predictive-analytics-modeling",
     },
     {
@@ -94,20 +94,20 @@ export default function CustomerIntelligence() {
     {
       title: "Measure and Optimize",
       description:
-        "Close the loop with rigorous measurement. Understand what&rsquo;s working and continuously improve your customer intelligence.",
+        "Close the loop with rigorous measurement. Understand what's working and continuously improve your customer intelligence.",
       link: "/solutions/customer-intelligence/journey-analytics-optimization",
     },
     {
       title: "Embed AI Where It Matters",
       description:
-        "Deploy machine learning that suggests the right product, content, or action at the right moment&mdash;driving conversion and engagement.",
+        "Deploy machine learning that suggests the right product, content, or action at the right moment—driving conversion and engagement.",
       link: "/solutions/customer-intelligence/ai-powered-recommendations",
     },
   ];
 
   const cases = [
     {
-      industry: "Retail &amp; E-commerce",
+      industry: "Retail & E-commerce",
       title: "National Retailer Drives 34% Revenue Lift with AI Personalization",
       description:
         "Real-time recommendation engine increases conversion and average order value across digital channels.",
@@ -203,13 +203,13 @@ export default function CustomerIntelligence() {
                 Siloed systems, fragmented analytics, and reactive reporting
                 create blind spots that competitors exploit. Customer
                 intelligence transforms raw data into strategic
-                advantage&mdash;predicting needs, personalizing interactions,
+                advantage—predicting needs, personalizing interactions,
                 and optimizing lifetime value through advanced analytics and
                 machine learning.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
                 NexDyne builds end-to-end customer intelligence platforms
-                that unify data from every touchpoint&mdash;CRM, e-commerce,
+                that unify data from every touchpoint—CRM, e-commerce,
                 support, marketing automation, and behavioral analytics. Our{" "}
                 <Link
                   href="/insights/beyond-segmentation"
@@ -247,7 +247,7 @@ export default function CustomerIntelligence() {
             <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
               We combine technical expertise with business acumen to deliver
               customer intelligence solutions that actually get
-              used&mdash;and actually drive results.
+              used—and actually drive results.
             </p>
           </motion.div>
 
@@ -291,7 +291,7 @@ export default function CustomerIntelligence() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -406,9 +406,9 @@ export default function CustomerIntelligence() {
               intelligence.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve worked with retailers, banks, and telecom providers
+              We've worked with retailers, banks, and telecom providers
               to deploy AI-powered personalization and churn
-              prediction&mdash;then move it from pilot to enterprise standard.
+              prediction—then move it from pilot to enterprise standard.
             </p>
             <Link href="/cases">
               <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
@@ -569,7 +569,7 @@ export default function CustomerIntelligence() {
                     <SelectItem value="financial-services">
                       Financial Services
                     </SelectItem>
-                    <SelectItem value="retail">Retail &amp; E-commerce</SelectItem>
+                    <SelectItem value="retail">Retail & E-commerce</SelectItem>
                     <SelectItem value="healthcare">Healthcare</SelectItem>
                     <SelectItem value="technology">Technology</SelectItem>
                     <SelectItem value="manufacturing">Manufacturing</SelectItem>
@@ -589,7 +589,7 @@ export default function CustomerIntelligence() {
               >
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
                   We work with mid-market leaders ready to turn customer data
-                  into a competitive weapon&mdash;through unified platforms,
+                  into a competitive weapon—through unified platforms,
                   predictive analytics, and personalization at scale.
                 </p>
                 <div className="space-y-5">

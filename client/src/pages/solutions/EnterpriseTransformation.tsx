@@ -46,7 +46,7 @@ export default function EnterpriseTransformation() {
     {
       title: "Security & Compliance",
       description:
-        "SOC 2, HIPAA, PCI&mdash;whatever your industry requires. We build security in from the start, not as an afterthought.",
+        "SOC 2, HIPAA, PCI—whatever your industry requires. We build security in from the start, not as an afterthought.",
       link: "/solutions/enterprise-transformation/security-and-compliance",
     },
     {
@@ -76,13 +76,13 @@ export default function EnterpriseTransformation() {
     {
       title: "Discovery",
       description:
-        "We map your current systems, identify pain points, and quantify the cost of doing nothing. No assumptions&mdash;just data.",
+        "We map your current systems, identify pain points, and quantify the cost of doing nothing. No assumptions—just data.",
       link: "/solutions/enterprise-transformation/technology-due-diligence",
     },
     {
       title: "Architecture",
       description:
-        "We design a solution that fits your business, your budget, and your team&rsquo;s capabilities. No gold-plating.",
+        "We design a solution that fits your business, your budget, and your team's capabilities. No gold-plating.",
       link: "/solutions/enterprise-transformation/platform-engineering",
     },
     {
@@ -94,7 +94,7 @@ export default function EnterpriseTransformation() {
     {
       title: "Launch & Support",
       description:
-        "Go-live isn&rsquo;t the finish line. We stick around to fix issues, train your team, and ensure adoption.",
+        "Go-live isn't the finish line. We stick around to fix issues, train your team, and ensure adoption.",
       link: "/solutions/enterprise-transformation/infrastructure-modernization",
     },
     {
@@ -207,7 +207,7 @@ export default function EnterpriseTransformation() {
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
                 We work with growing companies who have outgrown their
-                starter tech stack but aren&rsquo;t ready for the complexity
+                starter tech stack but aren't ready for the complexity
                 and cost of enterprise solutions. Our{" "}
                 <Link
                   href="/insights/scalable-data-architecture"
@@ -246,7 +246,7 @@ export default function EnterpriseTransformation() {
             <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
               We modernize systems and architecture in phases, align
               technology with where your business is heading, and build
-              foundations that scale&mdash;without enterprise complexity.
+              foundations that scale—without enterprise complexity.
             </p>
           </motion.div>
 
@@ -290,7 +290,7 @@ export default function EnterpriseTransformation() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -405,7 +405,7 @@ export default function EnterpriseTransformation() {
               from quarterly to weekly.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve worked with healthcare networks, fintech firms, and
+              We've worked with healthcare networks, fintech firms, and
               media platforms to migrate to cloud, modernize core systems,
               and build foundations that actually scale.
             </p>
@@ -552,7 +552,7 @@ export default function EnterpriseTransformation() {
                   className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
                   style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
                 >
-                  Let&rsquo;s talk about your modernization roadmap.
+                  Let's talk about your modernization roadmap.
                 </h2>
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
                   I want to talk to your experts in:
@@ -571,7 +571,7 @@ export default function EnterpriseTransformation() {
                     <SelectItem value="healthcare">Healthcare</SelectItem>
                     <SelectItem value="manufacturing">Manufacturing</SelectItem>
                     <SelectItem value="technology">Technology</SelectItem>
-                    <SelectItem value="retail">Retail &amp; Consumer</SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
                     <SelectItem value="professional-services">
                       Professional Services
                     </SelectItem>
@@ -587,8 +587,8 @@ export default function EnterpriseTransformation() {
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
-                  No sales pitch&mdash;just an honest conversation about
-                  what&rsquo;s possible. We work with growing companies ready
+                  No sales pitch—just an honest conversation about
+                  what's possible. We work with growing companies ready
                   to modernize without disruption.
                 </p>
                 <div className="space-y-5">

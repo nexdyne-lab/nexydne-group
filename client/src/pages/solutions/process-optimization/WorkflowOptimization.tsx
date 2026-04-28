@@ -69,7 +69,7 @@ export default function WorkflowOptimization() {
             className="mb-12"
           >
             <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 mb-4 block">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h2
               className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-charcoal max-w-[32ch]"
@@ -119,8 +119,8 @@ export default function WorkflowOptimization() {
               className="text-2xl md:text-3xl text-charcoal leading-[1.3] mb-8"
               style={{ fontWeight: 500, letterSpacing: "-0.015em" }}
             >
-              In today&rsquo;s competitive landscape, operational efficiency
-              isn&rsquo;t just a goal&mdash;it&rsquo;s a prerequisite for
+              In today's competitive landscape, operational efficiency
+              isn't just a goal—it's a prerequisite for
               survival. Workflow optimization is the systematic approach to
               eliminating waste, automating repetition, and enhancing
               collaboration across teams.
@@ -441,7 +441,7 @@ export default function WorkflowOptimization() {
               Ready to optimize your workflows?
             </h2>
             <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-10">
-              Let&rsquo;s discuss how our workflow optimization services can
+              Let's discuss how our workflow optimization services can
               drive efficiency and growth for your business.
             </p>
             <Link href="/contact">

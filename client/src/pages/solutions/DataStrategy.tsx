@@ -19,7 +19,7 @@ export default function DataStrategy() {
 
   const services = [
     {
-      title: "Data Strategy &amp; Roadmap",
+      title: "Data Strategy & Roadmap",
       description:
         "A 12-to-36-month data plan tied directly to corporate strategy. Investments, sequencing, dependencies, and the business case the board will fund.",
       link: "/solutions/data-strategy/strategy-roadmap",
@@ -27,7 +27,7 @@ export default function DataStrategy() {
     {
       title: "Data Governance Frameworks",
       description:
-        "Roles, councils, policies, and decision rights that actually work in your culture&mdash;not the textbook version that stalls in committee.",
+        "Roles, councils, policies, and decision rights that actually work in your culture—not the textbook version that stalls in committee.",
       link: "/solutions/data-strategy/governance-frameworks",
     },
     {
@@ -51,7 +51,7 @@ export default function DataStrategy() {
     {
       title: "Executive Education",
       description:
-        "Workshops and immersions that bring the C-suite and board fluent in data&mdash;enough to ask the right questions and fund the right work.",
+        "Workshops and immersions that bring the C-suite and board fluent in data—enough to ask the right questions and fund the right work.",
       link: "/solutions/data-strategy/executive-education",
     },
   ];
@@ -81,7 +81,7 @@ export default function DataStrategy() {
     {
       title: "Tie Data to Strategy",
       description:
-        "We map data investments to the specific corporate moves they unlock. No data strategy survives if it&rsquo;s parallel to the business strategy.",
+        "We map data investments to the specific corporate moves they unlock. No data strategy survives if it's parallel to the business strategy.",
       link: "/solutions/data-strategy/strategy-roadmap",
     },
     {
@@ -149,7 +149,7 @@ export default function DataStrategy() {
       <SolutionHero
         eyebrow="SOLUTION · DATA STRATEGY"
         title="Data Strategy"
-        subtitle="Data vision, governance, and monetization for the C-suite&mdash;a defensible roadmap to becoming demonstrably data-driven, on a board-credible timeline."
+        subtitle="Data vision, governance, and monetization for the C-suite—a defensible roadmap to becoming demonstrably data-driven, on a board-credible timeline."
         backgroundImage="/images/solution-data-strategy.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
@@ -178,13 +178,13 @@ export default function DataStrategy() {
             <div className="space-y-6">
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
                 Boards approve the line item. Twelve months later the program
-                has spent the budget and produced reports&mdash;not
+                has spent the budget and produced reports—not
                 advantage. The pattern recurs because the data strategy was
                 framed independently of the business strategy. It described
                 the platform, not the moves the platform must enable.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                NexDyne&rsquo;s{" "}
+                NexDyne's{" "}
                 <Link
                   href="/insights/data-strategy-coupling"
                   className="text-primary hover:text-primary-hover transition-colors"
@@ -267,7 +267,7 @@ export default function DataStrategy() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -325,7 +325,7 @@ export default function DataStrategy() {
             </h3>
             <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
               Four integrated phases that lock the data agenda to the
-              corporate agenda&mdash;and keep them in step.
+              corporate agenda—and keep them in step.
             </p>
           </motion.div>
 
@@ -382,8 +382,8 @@ export default function DataStrategy() {
               moved from data committee to data advantage.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve led data strategy resets across healthcare,
-              industrial, financial services, and consumer&mdash;coupling the
+              We've led data strategy resets across healthcare,
+              industrial, financial services, and consumer—coupling the
               data plan to the corporate plan and standing up the governance
               that survives the next reorganization.
             </p>
@@ -549,9 +549,9 @@ export default function DataStrategy() {
                       Financial Services
                     </SelectItem>
                     <SelectItem value="industrial">
-                      Industrial &amp; Manufacturing
+                      Industrial & Manufacturing
                     </SelectItem>
-                    <SelectItem value="retail">Retail &amp; Consumer</SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
                     <SelectItem value="technology">Technology</SelectItem>
                     <SelectItem value="public-sector">Public Sector</SelectItem>
                     <SelectItem value="other">Other</SelectItem>
@@ -567,7 +567,7 @@ export default function DataStrategy() {
               >
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
                   We work with executive teams ready to couple the data plan
-                  to the corporate plan&mdash;funded, governed, and defended
+                  to the corporate plan—funded, governed, and defended
                   on outcomes the board will recognize.
                 </p>
                 <div className="space-y-5">

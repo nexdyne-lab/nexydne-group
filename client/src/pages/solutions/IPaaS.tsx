@@ -75,7 +75,7 @@ export default function IPaaS() {
     {
       title: "Map the Integration Estate",
       description:
-        "Inventory every connector, every interface, every data flow. You can&rsquo;t modernize what you can&rsquo;t see.",
+        "Inventory every connector, every interface, every data flow. You can't modernize what you can't see.",
       link: "/solutions/ipaas/governance",
     },
     {
@@ -93,7 +93,7 @@ export default function IPaaS() {
     {
       title: "Govern from Day One",
       description:
-        "Standards, security, monitoring, deprecation. Integration is a living estate&mdash;we treat it that way.",
+        "Standards, security, monitoring, deprecation. Integration is a living estate—we treat it that way.",
       link: "/solutions/ipaas/governance",
     },
   ];
@@ -140,7 +140,7 @@ export default function IPaaS() {
     <div className="min-h-screen bg-white font-sans text-charcoal">
       <SEO
         title="Integration Platform as a Service"
-        description="Connect SaaS, on-prem, data, and APIs into a coherent enterprise. Mulesoft, Boomi, Informatica&mdash;implemented, governed, and scaled."
+        description="Connect SaaS, on-prem, data, and APIs into a coherent enterprise. Mulesoft, Boomi, Informatica—implemented, governed, and scaled."
         canonical="/solutions/ipaas"
       />
       <Navigation />
@@ -173,28 +173,28 @@ export default function IPaaS() {
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
               Integration is the silent infrastructure of every digital strategy.
-              When it works, no one notices. When it doesn&rsquo;t, nothing else
+              When it works, no one notices. When it doesn't, nothing else
               ships.
             </h3>
             <div className="space-y-6">
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
                 Most mid-market companies have accumulated dozens of point-to-point
-                integrations over the last decade&mdash;each one written by a
+                integrations over the last decade—each one written by a
                 different team, in a different style, with a different failure
                 mode. The cost shows up in two ways: every new system takes longer
                 than the last to connect, and the existing connections break in
                 ways nobody can predict.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                NexDyne&rsquo;s{" "}
+                NexDyne's{" "}
                 <Link
                   href="/insights/ipaas-modernization-playbook"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   integration consultants
                 </Link>{" "}
-                replace that sprawl with a managed platform&mdash;Mulesoft, Boomi,
-                or Informatica&mdash;designed around reusable assets, governed
+                replace that sprawl with a managed platform—Mulesoft, Boomi,
+                or Informatica—designed around reusable assets, governed
                 APIs, and an event backbone that lets the rest of your enterprise
                 actually move.
               </p>
@@ -269,7 +269,7 @@ export default function IPaaS() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -384,7 +384,7 @@ export default function IPaaS() {
               programs in months instead of years.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve replaced point-to-point sprawl with API-led platforms,
+              We've replaced point-to-point sprawl with API-led platforms,
               stood up event backbones for real-time enterprises, and modernized
               B2B exchange without breaking a single trading partner.
             </p>
@@ -549,7 +549,7 @@ export default function IPaaS() {
                     <SelectItem value="financial-services">
                       Financial Services
                     </SelectItem>
-                    <SelectItem value="retail">Retail &amp; Consumer</SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
                     <SelectItem value="technology">Technology</SelectItem>
                     <SelectItem value="professional-services">
                       Professional Services

@@ -81,7 +81,7 @@ export default function AppDevelopment() {
     {
       title: "Architect for Scale",
       description:
-        "Design the data model, API contracts, and platform choices for where you&rsquo;ll be at 10x users&mdash;not just where you are today.",
+        "Design the data model, API contracts, and platform choices for where you'll be at 10x users—not just where you are today.",
       link: "/solutions/app-development/react-native",
     },
     {
@@ -149,7 +149,7 @@ export default function AppDevelopment() {
       <SolutionHero
         eyebrow="SOLUTION · APP DEVELOPMENT"
         title="App Development"
-        subtitle="Native and cross-platform mobile and web apps engineered to scale from prototype to millions of users&mdash;without rewriting at every growth stage."
+        subtitle="Native and cross-platform mobile and web apps engineered to scale from prototype to millions of users—without rewriting at every growth stage."
         backgroundImage="/images/solution-app-development.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
@@ -177,21 +177,21 @@ export default function AppDevelopment() {
             </h3>
             <div className="space-y-6">
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                The expensive lesson in app development isn&rsquo;t writing the
-                first version&mdash;it&rsquo;s rewriting it. Apps stall because
+                The expensive lesson in app development isn't writing the
+                first version—it's rewriting it. Apps stall because
                 early architectural shortcuts become structural debt: brittle
                 state management, ad-hoc APIs, no real telemetry. By the time
                 growth arrives, the team is rebuilding instead of shipping.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                NexDyne&rsquo;s{" "}
+                NexDyne's{" "}
                 <Link
                   href="/insights/app-architecture-debt"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   app development consultants
                 </Link>{" "}
-                build for the second act on day one&mdash;native or
+                build for the second act on day one—native or
                 cross-platform, modular by default, instrumented for product
                 decisions, and architected to absorb 10x growth without a
                 rewrite.
@@ -267,7 +267,7 @@ export default function AppDevelopment() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -382,8 +382,8 @@ export default function AppDevelopment() {
               top quartile of their category.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve shipped consumer, enterprise, and regulated-industry
-              apps from MVP through hyperscale&mdash;treating performance,
+              We've shipped consumer, enterprise, and regulated-industry
+              apps from MVP through hyperscale—treating performance,
               accessibility, and observability as launch features, not later
               phases.
             </p>
@@ -547,7 +547,7 @@ export default function AppDevelopment() {
                     <SelectItem value="financial-services">
                       Financial Services
                     </SelectItem>
-                    <SelectItem value="retail">Retail &amp; E-commerce</SelectItem>
+                    <SelectItem value="retail">Retail & E-commerce</SelectItem>
                     <SelectItem value="technology">Technology</SelectItem>
                     <SelectItem value="manufacturing">Manufacturing</SelectItem>
                     <SelectItem value="professional-services">
@@ -566,7 +566,7 @@ export default function AppDevelopment() {
               >
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
                   We work with leaders ready to ship apps that survive
-                  scale&mdash;native, cross-platform, or web&mdash;and outlast
+                  scale—native, cross-platform, or web—and outlast
                   the next architectural pivot.
                 </p>
                 <div className="space-y-5">

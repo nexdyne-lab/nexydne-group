@@ -69,7 +69,7 @@ export default function AIPoweredDecisionSupport() {
             className="mb-12"
           >
             <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 mb-4 block">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h2
               className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-charcoal max-w-[32ch]"
@@ -119,7 +119,7 @@ export default function AIPoweredDecisionSupport() {
               className="text-2xl md:text-3xl text-charcoal leading-[1.3] mb-8"
               style={{ fontWeight: 500, letterSpacing: "-0.015em" }}
             >
-              In today&rsquo;s complex business environment, making the right
+              In today's complex business environment, making the right
               decision at the right time is paramount. AI-powered decision
               support systems provide the critical insights needed to navigate
               uncertainty and capitalize on opportunities.
@@ -135,7 +135,7 @@ export default function AIPoweredDecisionSupport() {
               These systems go beyond simple analytics. They provide predictive
               and prescriptive recommendations, enabling your teams to
               anticipate market shifts, optimize resource allocation, and
-              mitigate risks before they escalate. It&rsquo;s about augmenting
+              mitigate risks before they escalate. It's about augmenting
               human intelligence, not replacing it.
             </motion.p>
 
@@ -435,7 +435,7 @@ export default function AIPoweredDecisionSupport() {
               Ready to enhance your decision-making with AI?
             </h2>
             <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-10">
-              Let&rsquo;s discuss how our AI-powered decision support solutions
+              Let's discuss how our AI-powered decision support solutions
               can drive growth and efficiency for your business.
             </p>
             <Link href="/contact">

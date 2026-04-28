@@ -192,12 +192,12 @@ export default function IntelligentProcessOptimization() {
                 The operational reality for mid-market companies is stark:
                 growth creates complexity, and complexity creates friction.
                 What worked at $10M in revenue becomes a bottleneck at $50M.
-                We&rsquo;ve spent years helping companies break through these
+                We've spent years helping companies break through these
                 operational ceilings.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
                 The convergence of AI, low-code platforms, and cloud
-                infrastructure has fundamentally changed what&rsquo;s
+                infrastructure has fundamentally changed what's
                 possible. Our{" "}
                 <Link
                   href="/insights/process-mining-guide"
@@ -234,7 +234,7 @@ export default function IntelligentProcessOptimization() {
             </h3>
             <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
               We combine deep operational expertise with cutting-edge
-              technology to transform how you work&mdash;eliminating
+              technology to transform how you work—eliminating
               friction, accelerating execution, and building sustainable
               competitive advantage.
             </p>
@@ -280,7 +280,7 @@ export default function IntelligentProcessOptimization() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -337,8 +337,8 @@ export default function IntelligentProcessOptimization() {
               Full Potential Optimization
             </h3>
             <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
-              Alter your organization&rsquo;s trajectory in pursuit of
-              extraordinary results&mdash;through five integrated lenses.
+              Alter your organization's trajectory in pursuit of
+              extraordinary results—through five integrated lenses.
             </p>
           </motion.div>
 
@@ -395,9 +395,9 @@ export default function IntelligentProcessOptimization() {
               through intelligent process optimization.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve worked with leading retailers, manufacturers, and
+              We've worked with leading retailers, manufacturers, and
               professional services firms to test and scale AI-driven
-              process change&mdash;then move it from pilot to enterprise
+              process change—then move it from pilot to enterprise
               standard.
             </p>
             <Link href="/cases">
@@ -566,7 +566,7 @@ export default function IntelligentProcessOptimization() {
                     <SelectItem value="financial-services">
                       Financial Services
                     </SelectItem>
-                    <SelectItem value="retail">Retail &amp; Consumer</SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
                     <SelectItem value="other">Other</SelectItem>
                   </SelectContent>
                 </Select>

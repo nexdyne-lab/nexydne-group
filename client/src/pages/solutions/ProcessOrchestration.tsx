@@ -21,7 +21,7 @@ export default function ProcessOrchestration() {
     {
       title: "BPMN Modeling & Design",
       description:
-        "Capture how work actually happens in BPMN 2.0&mdash;decision tables, gateways, sub-processes. The model becomes the executable, not just the diagram.",
+        "Capture how work actually happens in BPMN 2.0—decision tables, gateways, sub-processes. The model becomes the executable, not just the diagram.",
       link: "/solutions/process-orchestration/bpmn-design",
     },
     {
@@ -67,7 +67,7 @@ export default function ProcessOrchestration() {
     },
     {
       stat: "$8M+",
-      label: "annual savings unlocked on a single insurer&rsquo;s claims-orchestration program",
+      label: "annual savings unlocked on a single insurer's claims-orchestration program",
     },
   ];
 
@@ -149,7 +149,7 @@ export default function ProcessOrchestration() {
       <SolutionHero
         eyebrow="SOLUTION · PROCESS ORCHESTRATION"
         title="Process Orchestration"
-        subtitle="Long-running business processes that span people, systems, and partners&mdash;modeled in BPMN, executed on a real engine, and governed as a living enterprise capability."
+        subtitle="Long-running business processes that span people, systems, and partners—modeled in BPMN, executed on a real engine, and governed as a living enterprise capability."
         backgroundImage="/images/solution-process-orchestration.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
@@ -172,20 +172,20 @@ export default function ProcessOrchestration() {
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              The work that defines a company isn&rsquo;t in any one
-              system&mdash;it&rsquo;s in the orchestration that connects them.
+              The work that defines a company isn't in any one
+              system—it's in the orchestration that connects them.
             </h3>
             <div className="space-y-6">
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                Most enterprise processes don&rsquo;t live inside a single
+                Most enterprise processes don't live inside a single
                 application. Claims, loan origination, customer onboarding, order
-                fulfillment&mdash;these are long-running flows that cross a dozen
+                fulfillment—these are long-running flows that cross a dozen
                 systems, several human approval points, and at least one external
                 partner. When something goes wrong, no single tool can tell you
                 where the work is stuck.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                NexDyne&rsquo;s{" "}
+                NexDyne's{" "}
                 <Link
                   href="/insights/orchestration-vs-automation"
                   className="text-primary hover:text-primary-hover transition-colors"
@@ -194,7 +194,7 @@ export default function ProcessOrchestration() {
                 </Link>{" "}
                 treat the process itself as the system of record. We model it in
                 BPMN, execute it on Camunda or IBM BPM, and instrument it so
-                process intelligence becomes a permanent capability&mdash;not a
+                process intelligence becomes a permanent capability—not a
                 quarterly consulting study.
               </p>
             </div>
@@ -268,7 +268,7 @@ export default function ProcessOrchestration() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -383,8 +383,8 @@ export default function ProcessOrchestration() {
               operating savings.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve orchestrated claims, loan origination, customer
-              onboarding, and order-to-cash flows&mdash;always with executable
+              We've orchestrated claims, loan origination, customer
+              onboarding, and order-to-cash flows—always with executable
               BPMN, real audit trails, and process KPIs the operating committee
               actually trusts.
             </p>
@@ -551,7 +551,7 @@ export default function ProcessOrchestration() {
                     </SelectItem>
                     <SelectItem value="healthcare">Healthcare</SelectItem>
                     <SelectItem value="manufacturing">Manufacturing</SelectItem>
-                    <SelectItem value="retail">Retail &amp; Consumer</SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
                     <SelectItem value="professional-services">
                       Professional Services
                     </SelectItem>
@@ -568,7 +568,7 @@ export default function ProcessOrchestration() {
               >
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
                   We work with leaders ready to make the process itself the
-                  system of record&mdash;and treat orchestration as a permanent
+                  system of record—and treat orchestration as a permanent
                   operating capability.
                 </p>
                 <div className="space-y-5">

@@ -21,13 +21,13 @@ export default function DataSolutions() {
     {
       title: "Data Warehouse",
       description:
-        "Modern cloud warehouses on Snowflake, BigQuery, or Redshift. We model the business, not the source systems&mdash;so analysts ask questions and get answers.",
+        "Modern cloud warehouses on Snowflake, BigQuery, or Redshift. We model the business, not the source systems—so analysts ask questions and get answers.",
       link: "/solutions/data-solutions/data-warehouse",
     },
     {
       title: "Data Lake",
       description:
-        "Schema-on-read data lakes for raw, semi-structured, and streaming data. Built on open formats so you&rsquo;re never locked into one engine.",
+        "Schema-on-read data lakes for raw, semi-structured, and streaming data. Built on open formats so you're never locked into one engine.",
       link: "/solutions/data-solutions/data-lake",
     },
     {
@@ -45,13 +45,13 @@ export default function DataSolutions() {
     {
       title: "Data Quality",
       description:
-        "Automated quality checks, lineage, and observability. We catch broken data before the executive does&mdash;and before the decision goes wrong.",
+        "Automated quality checks, lineage, and observability. We catch broken data before the executive does—and before the decision goes wrong.",
       link: "/solutions/data-solutions/data-quality",
     },
     {
       title: "Master Data Management",
       description:
-        "One customer, one product, one source of truth. We design MDM that survives org change, M&amp;A, and the inevitable system migration.",
+        "One customer, one product, one source of truth. We design MDM that survives org change, M&A, and the inevitable system migration.",
       link: "/solutions/data-solutions/master-data-management",
     },
   ];
@@ -81,13 +81,13 @@ export default function DataSolutions() {
     {
       title: "Architect for Trust",
       description:
-        "Design the warehouse, governance, and quality layer so every metric has a single defensible definition&mdash;reviewable, testable, owned.",
+        "Design the warehouse, governance, and quality layer so every metric has a single defensible definition—reviewable, testable, owned.",
       link: "/solutions/data-solutions/data-warehouse",
     },
     {
       title: "Deliver in Domains",
       description:
-        "Roll out by business domain rather than big-bang. Finance gets clean data first, then sales, then ops&mdash;value compounds along the way.",
+        "Roll out by business domain rather than big-bang. Finance gets clean data first, then sales, then ops—value compounds along the way.",
       link: "/solutions/data-solutions/bi-dashboards",
     },
     {
@@ -149,7 +149,7 @@ export default function DataSolutions() {
       <SolutionHero
         eyebrow="SOLUTION · DATA SOLUTIONS"
         title="Data Solutions"
-        subtitle="End-to-end data platforms&mdash;ingestion, warehouse, governance, and BI&mdash;that make every metric trustworthy and every decision defensible."
+        subtitle="End-to-end data platforms—ingestion, warehouse, governance, and BI—that make every metric trustworthy and every decision defensible."
         backgroundImage="/images/solution-data-solutions.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
@@ -179,12 +179,12 @@ export default function DataSolutions() {
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
                 Dashboards proliferate, definitions drift, and every meeting
                 opens with a fight about whose number is right. The cost
-                isn&rsquo;t the dashboards&mdash;it&rsquo;s the decisions
+                isn't the dashboards—it's the decisions
                 deferred while the team reconciles the numbers, again, by
                 hand.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                NexDyne&rsquo;s{" "}
+                NexDyne's{" "}
                 <Link
                   href="/insights/data-platform-trust"
                   className="text-primary hover:text-primary-hover transition-colors"
@@ -192,7 +192,7 @@ export default function DataSolutions() {
                   data platform consultants
                 </Link>{" "}
                 build the ingestion, warehouse, governance, and BI layers as
-                one system&mdash;designed for trust, owned as a product, and
+                one system—designed for trust, owned as a product, and
                 delivered domain by domain.
               </p>
             </div>
@@ -266,7 +266,7 @@ export default function DataSolutions() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -324,7 +324,7 @@ export default function DataSolutions() {
             </h3>
             <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
               Four integrated phases that move a data platform from sprawl to
-              trust&mdash;and from cost center to compounding asset.
+              trust—and from cost center to compounding asset.
             </p>
           </motion.div>
 
@@ -381,8 +381,8 @@ export default function DataSolutions() {
               in value from data they already owned.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve modernized data platforms across manufacturing,
-              healthcare, and financial services&mdash;moving teams from
+              We've modernized data platforms across manufacturing,
+              healthcare, and financial services—moving teams from
               defending the numbers to acting on them.
             </p>
             <Link href="/cases">
@@ -546,7 +546,7 @@ export default function DataSolutions() {
                       Financial Services
                     </SelectItem>
                     <SelectItem value="healthcare">Healthcare</SelectItem>
-                    <SelectItem value="retail">Retail &amp; Consumer</SelectItem>
+                    <SelectItem value="retail">Retail & Consumer</SelectItem>
                     <SelectItem value="technology">Technology</SelectItem>
                     <SelectItem value="professional-services">
                       Professional Services
@@ -564,7 +564,7 @@ export default function DataSolutions() {
               >
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
                   We work with mid-market and enterprise leaders ready to
-                  treat data as a product&mdash;trusted, governed, and
+                  treat data as a product—trusted, governed, and
                   measurably tied to business outcomes.
                 </p>
                 <div className="space-y-5">

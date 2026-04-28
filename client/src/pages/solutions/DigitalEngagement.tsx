@@ -39,17 +39,17 @@ export default function DigitalEngagement() {
     {
       title: "Loyalty Programs",
       description:
-        "Design loyalty mechanics that create durable repeat behavior&mdash;not just discount addiction. Earn margin, not erode it.",
+        "Design loyalty mechanics that create durable repeat behavior—not just discount addiction. Earn margin, not erode it.",
       link: "/solutions/digital-engagement/loyalty-programs",
     },
     {
-      title: "Web &amp; Mobile Experience",
+      title: "Web & Mobile Experience",
       description:
-        "Conversion-focused web and mobile experiences. We optimize the moments where intent meets product&mdash;and revenue follows.",
+        "Conversion-focused web and mobile experiences. We optimize the moments where intent meets product—and revenue follows.",
       link: "/solutions/digital-engagement/web-mobile-experience",
     },
     {
-      title: "A/B Testing &amp; Optimization",
+      title: "A/B Testing & Optimization",
       description:
         "Stand up a real experimentation program: governance, statistical rigor, executive reporting. Decisions get faster and the wins compound.",
       link: "/solutions/digital-engagement/ab-testing",
@@ -75,7 +75,7 @@ export default function DigitalEngagement() {
     {
       title: "Map the Customer Lifecycle",
       description:
-        "We chart the actual journey from first impression to repeat purchase&mdash;and find the moments where engagement actually moves revenue.",
+        "We chart the actual journey from first impression to repeat purchase—and find the moments where engagement actually moves revenue.",
       link: "/solutions/digital-engagement/lifecycle-messaging",
     },
     {
@@ -93,14 +93,14 @@ export default function DigitalEngagement() {
     {
       title: "Test, Learn, Compound",
       description:
-        "Stand up a disciplined experimentation cadence so the program improves every quarter&mdash;not every reorg.",
+        "Stand up a disciplined experimentation cadence so the program improves every quarter—not every reorg.",
       link: "/solutions/digital-engagement/ab-testing",
     },
   ];
 
   const cases = [
     {
-      industry: "Retail &amp; E-commerce",
+      industry: "Retail & E-commerce",
       title: "Specialty Retailer Lifts Lifecycle Revenue 38% in Two Quarters",
       description:
         "End-to-end automation rebuild plus personalized lifecycle programs unlocked durable repeat-purchase behavior across email and SMS.",
@@ -149,7 +149,7 @@ export default function DigitalEngagement() {
       <SolutionHero
         eyebrow="SOLUTION · DIGITAL ENGAGEMENT"
         title="Digital Engagement"
-        subtitle="Customer engagement across email, web, mobile, and in-app&mdash;designed to compound retention, conversion, and lifecycle revenue."
+        subtitle="Customer engagement across email, web, mobile, and in-app—designed to compound retention, conversion, and lifecycle revenue."
         backgroundImage="/images/solution-digital-engagement.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
@@ -178,22 +178,22 @@ export default function DigitalEngagement() {
             <div className="space-y-6">
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
                 Open rates climb. Click rates climb. Sends climb. And revenue
-                stays flat&mdash;because the program is optimizing for the
+                stays flat—because the program is optimizing for the
                 wrong outcome. The engagement industry has produced more
                 tooling than discipline, and the cost shows up in CAC and
                 churn.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                NexDyne&rsquo;s{" "}
+                NexDyne's{" "}
                 <Link
                   href="/insights/lifecycle-economics"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   digital engagement consultants
                 </Link>{" "}
-                build programs measured on incremental revenue&mdash;designed
+                build programs measured on incremental revenue—designed
                 across the full lifecycle, instrumented end-to-end, and tied
-                directly to P&amp;L outcomes the CFO will defend.
+                directly to P&L outcomes the CFO will defend.
               </p>
             </div>
           </motion.div>
@@ -266,7 +266,7 @@ export default function DigitalEngagement() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -377,13 +377,13 @@ export default function DigitalEngagement() {
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
               Engagement that earns its keep. NexDyne clients have lifted
-              lifecycle revenue by 41% on median&mdash;measured by incremental
+              lifecycle revenue by 41% on median—measured by incremental
               dollars, not opens or clicks.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve rebuilt engagement programs across retail, SaaS,
-              financial services, and consumer subscription&mdash;tying every
-              touchpoint to P&amp;L the CFO will defend.
+              We've rebuilt engagement programs across retail, SaaS,
+              financial services, and consumer subscription—tying every
+              touchpoint to P&L the CFO will defend.
             </p>
             <Link href="/cases">
               <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
@@ -541,13 +541,13 @@ export default function DigitalEngagement() {
                     <SelectValue placeholder="Select an industry" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="retail">Retail &amp; E-commerce</SelectItem>
-                    <SelectItem value="saas">SaaS &amp; Subscription</SelectItem>
+                    <SelectItem value="retail">Retail & E-commerce</SelectItem>
+                    <SelectItem value="saas">SaaS & Subscription</SelectItem>
                     <SelectItem value="financial-services">
                       Financial Services
                     </SelectItem>
                     <SelectItem value="healthcare">Healthcare</SelectItem>
-                    <SelectItem value="travel">Travel &amp; Hospitality</SelectItem>
+                    <SelectItem value="travel">Travel & Hospitality</SelectItem>
                     <SelectItem value="b2b">B2B</SelectItem>
                     <SelectItem value="other">Other</SelectItem>
                   </SelectContent>
@@ -562,7 +562,7 @@ export default function DigitalEngagement() {
               >
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
                   We work with leaders who want lifecycle programs measured on
-                  the same yardstick as the rest of the business&mdash;
+                  the same yardstick as the rest of the business—
                   incremental margin and durable customer value.
                 </p>
                 <div className="space-y-5">

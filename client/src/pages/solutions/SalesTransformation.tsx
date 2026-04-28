@@ -27,7 +27,7 @@ export default function SalesTransformation() {
     {
       title: "Sales Process Redesign",
       description:
-        "MEDDICC, Challenger, value-based selling. We rebuild the sales motion around how your buyers actually buy&mdash;not how your reps prefer to sell.",
+        "MEDDICC, Challenger, value-based selling. We rebuild the sales motion around how your buyers actually buy—not how your reps prefer to sell.",
       link: "/solutions/sales-transformation/process-redesign",
     },
     {
@@ -75,7 +75,7 @@ export default function SalesTransformation() {
     {
       title: "Diagnose the Real Problem",
       description:
-        "Most sales problems aren&rsquo;t sales problems. We start with deal data, win/loss, and the actual buyer journey&mdash;not opinions.",
+        "Most sales problems aren't sales problems. We start with deal data, win/loss, and the actual buyer journey—not opinions.",
       link: "/solutions/sales-transformation/process-redesign",
     },
     {
@@ -87,7 +87,7 @@ export default function SalesTransformation() {
     {
       title: "Implement the Stack",
       description:
-        "CRM, enablement, conversation intelligence, CPQ. We pick what&rsquo;s right for your team shape&mdash;and integrate it so it actually behaves as one system.",
+        "CRM, enablement, conversation intelligence, CPQ. We pick what's right for your team shape—and integrate it so it actually behaves as one system.",
       link: "/solutions/sales-transformation/revops-stack",
     },
     {
@@ -140,7 +140,7 @@ export default function SalesTransformation() {
     <div className="min-h-screen bg-white font-sans text-charcoal">
       <SEO
         title="Sales Transformation"
-        description="Modernize the sales organization and tech stack. CRM, RevOps, sales enablement, pipeline analytics&mdash;built around how buyers actually buy."
+        description="Modernize the sales organization and tech stack. CRM, RevOps, sales enablement, pipeline analytics—built around how buyers actually buy."
         canonical="/solutions/sales-transformation"
       />
       <Navigation />
@@ -149,7 +149,7 @@ export default function SalesTransformation() {
       <SolutionHero
         eyebrow="SOLUTION · SALES TRANSFORMATION"
         title="Sales Transformation"
-        subtitle="Modernize the sales organization and the tech stack underneath it. CRM, RevOps, enablement, and pipeline analytics&mdash;rebuilt around how your buyers actually buy."
+        subtitle="Modernize the sales organization and the tech stack underneath it. CRM, RevOps, enablement, and pipeline analytics—rebuilt around how your buyers actually buy."
         backgroundImage="/images/solution-sales-transformation.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
@@ -181,19 +181,19 @@ export default function SalesTransformation() {
                 stakeholders, and arrive at vendor conversations already 70%
                 through their decision. The sales motions designed for relationship
                 primacy, single decision-makers, and discovery-led calls
-                don&rsquo;t fit any of that. CRMs become reporting tools instead
+                don't fit any of that. CRMs become reporting tools instead
                 of selling tools. Enablement becomes content libraries nobody
                 opens. Forecasts become hopeful fiction.
               </p>
               <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                NexDyne&rsquo;s{" "}
+                NexDyne's{" "}
                 <Link
                   href="/insights/revops-as-operating-system"
                   className="text-primary hover:text-primary-hover transition-colors"
                 >
                   sales transformation consultants
                 </Link>{" "}
-                rebuild the sales motion around the modern buyer&mdash;then
+                rebuild the sales motion around the modern buyer—then
                 modernize the CRM, RevOps stack, and enablement platforms
                 underneath it. The transformation that sticks is the one where
                 the technology and the motion are designed together.
@@ -225,7 +225,7 @@ export default function SalesTransformation() {
             <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
               We combine sales-effectiveness expertise with deep CRM and RevOps
               tech depth to deliver transformations that move conversion,
-              forecast accuracy, and rep retention&mdash;at the same time.
+              forecast accuracy, and rep retention—at the same time.
             </p>
           </motion.div>
 
@@ -269,7 +269,7 @@ export default function SalesTransformation() {
             className="mb-16 max-w-[60ch]"
           >
             <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h3
               className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
@@ -384,8 +384,8 @@ export default function SalesTransformation() {
               accuracy from sentiment to signal.
             </h2>
             <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We&rsquo;ve modernized B2B SaaS, industrial channel sales, and
-              financial-services advisor networks&mdash;always pairing the new
+              We've modernized B2B SaaS, industrial channel sales, and
+              financial-services advisor networks—always pairing the new
               motion with the CRM, enablement, and RevOps stack that defends it.
             </p>
             <Link href="/cases">
@@ -568,7 +568,7 @@ export default function SalesTransformation() {
               >
                 <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
                   We work with leaders ready to rebuild the sales org around the
-                  modern buyer&mdash;and stand up the CRM, enablement, and
+                  modern buyer—and stand up the CRM, enablement, and
                   RevOps stack that makes the new motion durable.
                 </p>
                 <div className="space-y-5">

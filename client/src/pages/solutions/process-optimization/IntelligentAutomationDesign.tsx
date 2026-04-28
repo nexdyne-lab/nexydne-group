@@ -69,7 +69,7 @@ export default function IntelligentAutomationDesign() {
             className="mb-12"
           >
             <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 mb-4 block">
-              Our Experience &amp; Impact
+              Our Experience & Impact
             </span>
             <h2
               className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-charcoal max-w-[32ch]"
@@ -120,7 +120,7 @@ export default function IntelligentAutomationDesign() {
               style={{ fontWeight: 500, letterSpacing: "-0.015em" }}
             >
               The evolution of automation has moved beyond simple task
-              execution. Intelligent automation marks a pivotal shift&mdash;
+              execution. Intelligent automation marks a pivotal shift—
               integrating AI and machine learning to create systems that not
               only perform tasks but learn, adapt, and decide.
             </motion.p>
@@ -133,8 +133,8 @@ export default function IntelligentAutomationDesign() {
               className="text-base md:text-lg text-charcoal/80 leading-[1.65] mb-6"
             >
               A successful intelligent automation strategy requires a holistic
-              design approach. It&rsquo;s not just about deploying a single
-              technology but orchestrating a symphony of tools&mdash;Robotic
+              design approach. It's not just about deploying a single
+              technology but orchestrating a symphony of tools—Robotic
               Process Automation (RPA) for structured tasks, AI for cognitive
               capabilities, and workflow management to tie everything together.
             </motion.p>
@@ -148,7 +148,7 @@ export default function IntelligentAutomationDesign() {
             >
               At the heart of our design philosophy is a human-centric focus.
               We believe that automation should augment human capabilities, not
-              replace them&mdash;which means designing intuitive interfaces,
+              replace them—which means designing intuitive interfaces,
               establishing clear governance, and implementing robust change
               management programs.
             </motion.p>
@@ -441,7 +441,7 @@ export default function IntelligentAutomationDesign() {
               Ready to unlock the power of intelligent automation?
             </h2>
             <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-10">
-              Let&rsquo;s discuss how our intelligent automation design
+              Let's discuss how our intelligent automation design
               services can transform your business.
             </p>
             <Link href="/contact">
