@@ -1,440 +1,595 @@
+import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Zap, Clock, Shield } from "lucide-react";
-import Footer from "@/components/Footer";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
-import { RelatedContent } from "@/components/RelatedContent";
-import { dataRelatedItems } from "@/data/related-content";
+import Footer from "@/components/Footer";
+import SolutionHero from "@/components/SolutionHero";
+import { SEO } from "@/components/SEO";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function IPaaS() {
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
+
+  const services = [
+    {
+      title: "Integration Platform Implementation",
+      description:
+        "Stand up Mulesoft, Boomi, or Informatica with the right architecture, naming conventions, and reusable patterns. Built to scale, not just to work.",
+      link: "/solutions/ipaas/platform-implementation",
+    },
+    {
+      title: "API Management",
+      description:
+        "Gateways, developer portals, throttling, versioning. We turn ad-hoc endpoints into a managed API estate your partners can actually consume.",
+      link: "/solutions/ipaas/api-management",
+    },
+    {
+      title: "Event-Driven Architecture",
+      description:
+        "Kafka, EventBridge, Pub/Sub. We design event backbones that decouple systems and let your enterprise react in milliseconds, not minutes.",
+      link: "/solutions/ipaas/event-driven",
+    },
+    {
+      title: "B2B / EDI Integration",
+      description:
+        "Trading partner onboarding, EDI mapping, AS2 and SFTP. We modernize legacy B2B exchange while keeping the partner ecosystem unbroken.",
+      link: "/solutions/ipaas/b2b-edi",
+    },
+    {
+      title: "Data Sync & ETL",
+      description:
+        "Bulk and real-time data movement between SaaS, on-prem, and the warehouse. We build pipelines that survive schema drift and partial failure.",
+      link: "/solutions/ipaas/data-sync-etl",
+    },
+    {
+      title: "Integration Governance",
+      description:
+        "Patterns, standards, security review, lifecycle management. The governance model that keeps the integration estate from collapsing under its own weight.",
+      link: "/solutions/ipaas/governance",
+    },
+  ];
+
+  const outcomes = [
+    {
+      stat: "300+",
+      label: "integrations delivered across mid-market and enterprise platforms",
+    },
+    {
+      stat: "55%",
+      label: "average reduction in cost per new integration after platform standardization",
+    },
+    {
+      stat: "4x",
+      label: "typical acceleration in partner-onboarding cycle time",
+    },
+  ];
+
+  const approach = [
+    {
+      title: "Map the Integration Estate",
+      description:
+        "Inventory every connector, every interface, every data flow. You can&rsquo;t modernize what you can&rsquo;t see.",
+      link: "/solutions/ipaas/governance",
+    },
+    {
+      title: "Choose the Right Patterns",
+      description:
+        "Point-to-point, hub-and-spoke, event-driven, API-led. We pick the patterns that fit your data, latency, and team shape.",
+      link: "/solutions/ipaas/event-driven",
+    },
+    {
+      title: "Implement with Reusability",
+      description:
+        "Every interface a building block. We design assets that the next team can compose, not just inherit.",
+      link: "/solutions/ipaas/platform-implementation",
+    },
+    {
+      title: "Govern from Day One",
+      description:
+        "Standards, security, monitoring, deprecation. Integration is a living estate&mdash;we treat it that way.",
+      link: "/solutions/ipaas/governance",
+    },
+  ];
+
+  const cases = [
+    {
+      industry: "Manufacturing",
+      title: "Industrial Manufacturer Replaces 47 Point-to-Point Integrations with Mulesoft",
+      description:
+        "An API-led architecture cut new integration build time from twelve weeks to three and unlocked real-time supply-chain visibility.",
+      image: "/images/case-ipaas-manufacturing.jpg",
+      link: "/cases/manufacturer-mulesoft",
+    },
+    {
+      industry: "Healthcare",
+      title: "Health System Connects Twelve Systems Behind a Unified API Layer",
+      description:
+        "Boomi-based integration platform now powers patient registration, claims, and analytics from a single source of orchestrated truth.",
+      image: "/images/case-ipaas-health.jpg",
+      link: "/cases/health-system-boomi",
+    },
+  ];
+
+  const relatedOfferings = [
+    {
+      title: "API Integration",
+      link: "/solutions/api-integration",
+    },
+    {
+      title: "Process Orchestration",
+      link: "/solutions/process-orchestration",
+    },
+    {
+      title: "Data Platform",
+      link: "/solutions/data-platform",
+    },
+    {
+      title: "Cloud Infrastructure",
+      link: "/solutions/cloud-infrastructure",
+    },
+  ];
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Integration Platform as a Service"
+        description="Connect SaaS, on-prem, data, and APIs into a coherent enterprise. Mulesoft, Boomi, Informatica&mdash;implemented, governed, and scaled."
+        canonical="/solutions/ipaas"
+      />
       <Navigation />
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-700 text-white py-20">
-        <div className="container">
-          {/* Breadcrumb */}
-          <div className="flex items-center gap-2 text-sm mb-8 text-white/80">
-            <Link href="/solutions/process-automation" className="hover:text-white">
-              Services
-            </Link>
-            <span>/</span>
-            <Link href="/solutions/process-automation" className="hover:text-white">
-              Process Automation
-            </Link>
-            <span>/</span>
-            <span className="text-white">iPaaS</span>
-          </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-3 eb-garamond">
-                iPaaS
-              </h1>
-              <p className="text-2xl text-blue-50 leading-relaxed">
-                Connect disparate systems without custom code. Real-time data synchronization across your ERP, CRM, e-commerce, and legacy systems—eliminating manual data transfer and ensuring single-source-of-truth accuracy.
+      {/* SLOT 1 — Charcoal hero */}
+      <SolutionHero
+        eyebrow="SOLUTION · INTEGRATION PLATFORM AS A SERVICE"
+        title="Integration Platform as a Service"
+        subtitle="Connect SaaS, on-prem systems, data warehouses, and APIs into a coherent enterprise. We implement, govern, and scale the integration estate that the rest of your strategy depends on."
+        backgroundImage="/images/solution-ipaas.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[72ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Integration is the silent infrastructure of every digital strategy.
+              When it works, no one notices. When it doesn&rsquo;t, nothing else
+              ships.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                Most mid-market companies have accumulated dozens of point-to-point
+                integrations over the last decade&mdash;each one written by a
+                different team, in a different style, with a different failure
+                mode. The cost shows up in two ways: every new system takes longer
+                than the last to connect, and the existing connections break in
+                ways nobody can predict.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                NexDyne&rsquo;s{" "}
+                <Link
+                  href="/insights/ipaas-modernization-playbook"
+                  className="text-primary hover:text-primary-hover transition-colors"
+                >
+                  integration consultants
+                </Link>{" "}
+                replace that sprawl with a managed platform&mdash;Mulesoft, Boomi,
+                or Informatica&mdash;designed around reusable assets, governed
+                APIs, and an event backbone that lets the rest of your enterprise
+                actually move.
               </p>
             </div>
-            <div className="order-first lg:order-last">
-              <div className="aspect-[4/3] rounded-lg overflow-hidden bg-white/10 backdrop-blur">
-                <img 
-                  src="/ipaas-platform.9bf7f8fd.webp"
-                  alt="iPaaS Integration Platform"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <div className="order-2 lg:order-1">
-              <div className="aspect-[4/3] rounded-lg overflow-hidden bg-slate-100">
-                <img 
-                  src="/ipaas-integration.9921b861.png"
-                  alt="System Integration"
-                  className="w-full h-full object-contain p-8"
-                />
-              </div>
-              <div className="mt-8">
-                <h3 className="text-2xl font-bold mb-4">Do you want to know more?</h3>
-                <Button className="bg-slate-900 hover:bg-slate-800">
-                  Ask our iPaaS specialist
-                </Button>
-              </div>
-            </div>
-            <div className="order-1 lg:order-2">
-              <h2 className="text-4xl font-bold text-charcoal mb-8">
-                Why NEXDYNE iPaaS delivers results
-              </h2>
-              <div className="space-y-6">
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <Zap className="w-6 h-6 text-blue-500" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-charcoal mb-2">Real-time synchronization</h3>
-                    <p className="text-charcoal/80">
-                      Data flows instantly between systems—no batch jobs, no overnight processing, no stale information. Changes propagate in seconds, ensuring every system operates on current data.
+      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Help Clients
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six ways we turn integration sprawl into a platform.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              We combine deep platform expertise with disciplined architecture to
+              deliver integration estates that scale, fail gracefully, and
+              accelerate every project that touches them.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {services.map((service, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={service.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col">
+                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                      {service.description}
                     </p>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Learn more
+                    </span>
                   </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <Clock className="w-6 h-6 text-blue-500" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-charcoal mb-2">Rapid deployment</h3>
-                    <p className="text-charcoal/80">
-                      First integration live in 2-3 weeks. Pre-built connectors for 500+ applications mean no custom API development—we configure, test, and deploy while competitors are still scoping requirements.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <Shield className="w-6 h-6 text-blue-500" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-charcoal mb-2">Enterprise-grade reliability</h3>
-                    <p className="text-charcoal/80">
-                      Built-in error handling, automatic retries, and transaction logging ensure data integrity. When integrations fail, you know immediately—no silent data loss, no mystery errors discovered weeks later.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What is iPaaS Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-charcoal mb-6">What is iPaaS?</h2>
-          <div className="prose prose-lg max-w-none text-charcoal/80 space-y-4">
-            <p>
-              iPaaS (Integration Platform as a Service) connects your business applications in the cloud, enabling automated data flow between systems without custom coding. Instead of building point-to-point integrations that break every time a system updates, iPaaS provides a centralized platform with pre-built connectors, transformation logic, and orchestration capabilities.
-            </p>
-            <p>
-              When your sales team closes a deal in Salesforce, iPaaS automatically creates the customer record in your ERP, provisions their account in your product, sends welcome emails, and updates your analytics dashboard—all without manual intervention. This isn't just about moving data; it's about orchestrating business processes across your entire technology stack.
-            </p>
-            <p>
-              The platform handles the complexity of API authentication, data mapping, error handling, and retry logic. Your team focuses on defining business rules—the iPaaS handles the technical execution. This means integrations deploy faster, maintain themselves better, and scale effortlessly as you add new systems.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Team Quote Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container max-w-4xl">
-          <blockquote className="text-center">
-            <p className="text-2xl md:text-3xl font-medium text-blue-900 mb-6">
-              "With iPaaS, you don't just connect systems—you connect your entire organization. That means faster processes, better decisions, and less manual work. Real-time data flow eliminates the delays that hold businesses back."
-            </p>
-            <footer className="text-muted-foreground text-lg">
-              Floris Weegink - Field CTO - NEXDYNE TECHNOLOGIES
-            </footer>
-          </blockquote>
-        </div>
-      </section>
-
-      {/* The iPaaS Method Works Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-charcoal mb-6">The iPaaS method works</h2>
-          <div className="prose prose-lg max-w-none text-charcoal/80 space-y-4">
-            <p>
-              Most integration projects fail because they try to connect everything at once. We start with your highest-pain integration—typically between your CRM and ERP—and deploy it completely in 2-3 weeks. This delivers immediate ROI by eliminating manual data entry and proves the platform's value before expanding.
-            </p>
-            <p>
-              Our methodology prioritizes quick wins that build momentum. Each successful integration funds the next, creating a self-sustaining integration program that gradually eliminates data silos without massive upfront investment. Within six months, most clients have 10-15 critical integrations running autonomously.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Expert CTA Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
-            <div className="aspect-square rounded-lg overflow-hidden bg-slate-100">
-              <img 
-                src="/ipaas-systems.aeaf229c.jpg"
-                alt="Integration Expert"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold text-charcoal mb-4">Do you want to know more?</h2>
-              <div className="mb-6">
-                <p className="text-lg text-charcoal/80 mb-2">Floris Weegink</p>
-                <p className="text-muted-foreground">Field CTO</p>
-              </div>
-              <div className="flex gap-4">
-                <Link href="/contact">
-                  <Button className="bg-slate-900 hover:bg-slate-800 text-white">
-                    Get in touch
-                  </Button>
                 </Link>
-                <Link href="/contact">
-                  <Button variant="ghost" className="text-charcoal">
-                    Schedule a meeting
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
-                </Link>
-              </div>
-            </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Partners Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container">
-          <div className="max-w-3xl mb-16">
-            <p className="text-sm font-semibold text-blue-500 mb-4 tracking-wide uppercase">Partners</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
-              Enterprise integration through proven platforms
+      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Experience &amp; Impact
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Measurable outcomes from integration platforms in production.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
+            {outcomes.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`${
+                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
+                }`}
+              >
+                <div
+                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
+                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                >
+                  {item.stat}
+                </div>
+                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
+                  {item.label}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 5 — Light grey Approach / Methodology framework */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Think About It
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The Platform Integration Framework
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Four integrated phases that move integration from a tactical cost
+              center to a strategic platform.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {approach.map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={step.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 flex flex-col">
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
+                      {step.description}
+                    </p>
+                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Explore
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Integration that accelerates everything else. NexDyne clients have
+              cut new-integration cost in half and shipped enterprise-wide
+              programs in months instead of years.
             </h2>
-            <p className="text-lg text-muted-foreground">
-              We deploy best-in-class iPaaS technology from Workato, the enterprise standard for intelligent automation and integration. This partnership enables us to deliver real-time data synchronization with enterprise-grade reliability.
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              We&rsquo;ve replaced point-to-point sprawl with API-led platforms,
+              stood up event backbones for real-time enterprises, and modernized
+              B2B exchange without breaking a single trading partner.
             </p>
-          </div>
-
-          <div className="max-w-2xl">
-            <div className="bg-white rounded-lg p-8 hover:shadow-lg transition-shadow">
-              <div className="flex items-center justify-center h-32 mb-4">
-                <div className="text-6xl font-bold text-blue-500">Workato</div>
-              </div>
-              <h3 className="text-xl font-bold text-charcoal mb-3">Workato</h3>
-              <p className="text-muted-foreground">
-                Enterprise integration platform connecting your critical systems. Enables real-time data synchronization across cloud and on-premise applications with 500+ pre-built connectors.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why NEXDYNE Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="aspect-[4/3] rounded-lg overflow-hidden bg-slate-100">
-              <img 
-                src="/ipaas-integration.9921b861.png"
-                alt="Why NEXDYNE"
-                className="w-full h-full object-contain p-8"
-              />
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold text-charcoal mb-6">Why NEXDYNE</h2>
-              <div className="prose prose-lg max-w-none text-charcoal/80 space-y-4">
-                <p>
-                  Most integration vendors sell platform licenses. We deliver synchronized systems. Our iPaaS practice combines deep data architecture expertise with technical execution—we don't just connect APIs, we redesign data flows to eliminate redundancy and ensure consistency.
-                </p>
-                <p>
-                  This approach means faster deployment, higher data quality, and integration architectures that scale sustainably. When you work with NEXDYNE, you're not buying software—you're partnering with a team accountable for measurable business outcomes: reduced manual work, improved data accuracy, and operations that execute in real-time.
-                </p>
-              </div>
-              <div className="mt-8">
-                <Link href="/contact">
-                  <Button className="bg-slate-900 hover:bg-slate-800 text-white">
-                    Get in touch
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Cases Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container">
-          <div className="mb-12">
-            <span className="text-sm text-muted-foreground uppercase tracking-wide font-semibold">Cases</span>
-            <h2 className="text-4xl font-bold text-charcoal mt-2 mb-4">Cases we love talking about</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl">
-              Real implementations. Real results. See how we've deployed iPaaS to eliminate data silos and synchronize operations for companies across industries.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* Case Study 1 */}
-            <Link href="/cases/global-retailer">
-              <div className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
-                <img
-                  src="/case-retail.jpg"
-                  alt="Global Retailer Case Study"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-charcoal mb-2">
-                    Global Retailer
-                  </h3>
-                  <p className="text-muted-foreground mb-4">
-                    Integrated e-commerce platform with ERP and warehouse systems, eliminating manual order processing
-                  </p>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <div className="text-2xl font-bold text-blue-500">45%</div>
-                      <div className="text-sm text-muted-foreground">Faster processing</div>
-                    </div>
-                    <div>
-                      <div className="text-2xl font-bold text-blue-500">60%</div>
-                      <div className="text-sm text-muted-foreground">Fewer errors</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Link>
-
-            {/* Case Study 2 */}
-            <Link href="/cases/financial-institution">
-              <div className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
-                <img
-                  src="/case-finance.jpg"
-                  alt="Financial Institution Case Study"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-charcoal mb-2">
-                    Financial Institution
-                  </h3>
-                  <p className="text-muted-foreground mb-4">
-                    Connected core banking system with CRM and compliance platforms for real-time customer data sync
-                  </p>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <div className="text-2xl font-bold text-blue-500">80%</div>
-                      <div className="text-sm text-muted-foreground">Less manual work</div>
-                    </div>
-                    <div>
-                      <div className="text-2xl font-bold text-blue-500">10K+</div>
-                      <div className="text-sm text-muted-foreground">Records synced daily</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Link>
-
-            {/* Case Study 3 */}
-            <Link href="/cases/healthcare-provider">
-              <div className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
-                <img
-                  src="/case-healthcare.jpg"
-                  alt="Healthcare Provider Case Study"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-charcoal mb-2">
-                    Healthcare Provider
-                  </h3>
-                  <p className="text-muted-foreground mb-4">
-                    Synchronized patient records across EMR, billing, and insurance systems
-                  </p>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <div className="text-2xl font-bold text-blue-500">40%</div>
-                      <div className="text-sm text-muted-foreground">Reduced overhead</div>
-                    </div>
-                    <div>
-                      <div className="text-2xl font-bold text-blue-500">50%</div>
-                      <div className="text-sm text-muted-foreground">Faster claims</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="text-center">
             <Link href="/cases">
-              <Button variant="outline" size="lg">
-                All cases
-              </Button>
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 7 — White Case studies / proof */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Integration platforms, proved in outcomes.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={result.image}
+                        alt={result.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="p-8 lg:p-10">
+                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                        {result.industry}
+                      </span>
+                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                        {result.title}
+                      </h3>
+                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
+                        {result.description}
+                      </p>
+                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                        Read Case
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-14">
+            <Link href="/cases">
+              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                See All Case Studies
+              </span>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Related Services Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="mb-12">
-            <span className="text-sm text-muted-foreground uppercase tracking-wide font-semibold">Process Automation</span>
-            <h2 className="text-4xl font-bold text-charcoal mt-2">Services</h2>
+      {/* SLOT 8 — White Related capabilities / cross-sell */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Related Offerings
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Adjacent capabilities for a complete integration program.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {relatedOfferings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
           </div>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Link href="/solutions/rpa">
-              <div className="border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-all cursor-pointer group">
-                <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-500 transition-colors">
-                  Robotic Process Automation (RPA)
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  Software robots that execute repetitive tasks with perfect consistency. Deploy bots that handle data entry, invoice processing, and system updates—freeing your team for strategic work.
+      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our integration team into your next architecture review.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
                 </p>
-                <div className="text-blue-500 font-medium flex items-center gap-2">
-                  Learn more <ArrowRight className="w-4 h-4" />
-                </div>
-              </div>
-            </Link>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="retail">Retail &amp; Consumer</SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
 
-            <div className="border-2 border-blue-500 rounded-lg p-6 bg-blue-50">
-              <h3 className="text-xl font-bold text-charcoal mb-3">
-                iPaaS
-              </h3>
-              <p className="text-muted-foreground mb-4">
-                Connect disparate systems without custom code. Real-time data synchronization across your ERP, CRM, and legacy systems—eliminating manual data transfer.
-              </p>
-              <div className="text-blue-500 font-medium">
-                Current page
-              </div>
-            </div>
-
-            <Link href="#orchestration">
-              <div className="border border-slate-200 rounded-lg p-6 hover:shadow-lg transition-all cursor-pointer group">
-                <h3 className="text-xl font-bold text-charcoal mb-3 group-hover:text-blue-500 transition-colors">
-                  Process Orchestration
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  Coordinate complex workflows across multiple systems and teams. Orchestration engines manage dependencies, handle exceptions, and ensure seamless end-to-end execution.
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders ready to retire integration sprawl and
+                  invest in a platform that compounds across every project that
+                  follows.
                 </p>
-                <div className="text-blue-500 font-medium flex items-center gap-2">
-                  Learn more <ArrowRight className="w-4 h-4" />
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
                 </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="text-center mt-12">
-            <h3 className="text-2xl font-bold text-charcoal mb-6">Do you want to know more?</h3>
-            <div className="flex gap-4 justify-center">
-              <Link href="/contact">
-                <Button className="bg-slate-900 hover:bg-slate-800 text-white">
-                  Get in touch
-                </Button>
-              </Link>
-              <Link href="/contact">
-                <Button variant="ghost" className="text-charcoal">
-                  Schedule a meeting
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </Link>
+              </motion.div>
             </div>
           </div>
         </div>
       </section>
 
-      <RelatedContent items={dataRelatedItems} />
       <Footer />
     </div>
   );

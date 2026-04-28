@@ -1,438 +1,593 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Bot, Zap, Plug, ChevronRight } from "lucide-react";
-import Footer from "@/components/Footer";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
-import { RelatedContent } from "@/components/RelatedContent";
-import { dataRelatedItems } from "@/data/related-content";
+import Footer from "@/components/Footer";
+import SolutionHero from "@/components/SolutionHero";
+import { SEO } from "@/components/SEO";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function RPA() {
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
+
+  const services = [
+    {
+      title: "Bot Development",
+      description:
+        "Production-grade bots built on UiPath, Blue Prism, and Automation Anywhere. We design, code, test, and harden bots that keep running in the wild.",
+      link: "/solutions/rpa/bot-development",
+    },
+    {
+      title: "RPA Strategy & ROI Assessment",
+      description:
+        "Identify the right processes, quantify the savings, and build a sequenced automation roadmap your CFO can defend.",
+      link: "/solutions/rpa/strategy-roi",
+    },
+    {
+      title: "Attended Bots",
+      description:
+        "Bots that work alongside humans on the desktop&mdash;triggered by the user, sharing the screen, accelerating the moments that matter.",
+      link: "/solutions/rpa/attended-bots",
+    },
+    {
+      title: "Unattended Bots",
+      description:
+        "Headless, scheduled, autonomous. Server-side bots that run overnight, all weekend, every quarter-close, without supervision.",
+      link: "/solutions/rpa/unattended-bots",
+    },
+    {
+      title: "Intelligent Document Processing",
+      description:
+        "Combine OCR, NLP, and ML to extract structured data from invoices, claims, and contracts. The bot reads, classifies, and routes.",
+      link: "/solutions/rpa/intelligent-document-processing",
+    },
+    {
+      title: "RPA Governance & CoE",
+      description:
+        "Stand up a Center of Excellence: standards, security, change control, and the operating model that turns one bot into an enterprise program.",
+      link: "/solutions/rpa/governance-coe",
+    },
+  ];
+
+  const outcomes = [
+    {
+      stat: "400+",
+      label: "production bots delivered across mid-market and enterprise clients",
+    },
+    {
+      stat: "65%",
+      label: "average reduction in cycle time on automated back-office processes",
+    },
+    {
+      stat: "3x",
+      label: "typical first-year ROI on a well-scoped RPA program",
+    },
+  ];
+
+  const approach = [
+    {
+      title: "Discover the Right Processes",
+      description:
+        "Not every process should be automated. We find the ones with high volume, stable rules, and clear ROI.",
+      link: "/solutions/rpa/strategy-roi",
+    },
+    {
+      title: "Design for the Edge Case",
+      description:
+        "Bots break on exceptions. We design exception handling and human handoffs into the workflow from day one.",
+      link: "/solutions/rpa/bot-development",
+    },
+    {
+      title: "Deploy with Governance",
+      description:
+        "Credentials, audit trails, change control. We ship bots that pass IT security review, not just business UAT.",
+      link: "/solutions/rpa/governance-coe",
+    },
+    {
+      title: "Scale to a Program",
+      description:
+        "One bot is a project. Twenty bots is a program. We build the CoE that turns automation into a repeatable capability.",
+      link: "/solutions/rpa/governance-coe",
+    },
+  ];
+
+  const cases = [
+    {
+      industry: "Financial Services",
+      title: "Insurer Automates Claims Triage and Cuts Handle Time by 68%",
+      description:
+        "Forty-two unattended bots process claim intake, classification, and routing&mdash;freeing adjusters for the complex cases that need them.",
+      image: "/images/case-rpa-claims.jpg",
+      link: "/cases/insurer-claims-rpa",
+    },
+    {
+      industry: "Healthcare",
+      title: "Provider Network Reclaims 90,000 Hours a Year on Eligibility Checks",
+      description:
+        "Attended bots and IDP collapsed a multi-step manual eligibility process into a single screen for revenue-cycle staff.",
+      image: "/images/case-rpa-healthcare.jpg",
+      link: "/cases/healthcare-eligibility-rpa",
+    },
+  ];
+
+  const relatedOfferings = [
+    {
+      title: "Intelligent Process Optimization",
+      link: "/solutions/intelligent-process-optimization",
+    },
+    {
+      title: "Process Orchestration",
+      link: "/solutions/process-orchestration",
+    },
+    {
+      title: "IPaaS",
+      link: "/solutions/ipaas",
+    },
+    {
+      title: "Conversational AI",
+      link: "/solutions/conversational-ai",
+    },
+  ];
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Robotic Process Automation"
+        description="Production-grade RPA programs that automate repetitive back-office work and free humans for higher-value decisions."
+        canonical="/solutions/rpa"
+      />
       <Navigation />
 
-      {/* Hero Section - Black Background (matches IntelligentProcessOptimization) */}
-      <section className="relative min-h-[70vh] md:min-h-[80vh] bg-charcoal pt-20">
-        <div className="container px-4 sm:px-6 md:px-12 h-full">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-0 items-center min-h-[60vh] md:min-h-[70vh]">
-            {/* Left Column - Text Content */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="max-w-xl py-12 lg:py-0 lg:pr-12"
+      {/* SLOT 1 — Charcoal hero */}
+      <SolutionHero
+        eyebrow="SOLUTION · ROBOTIC PROCESS AUTOMATION"
+        title="Robotic Process Automation"
+        subtitle="Bots that handle the repetitive back-office work&mdash;so your people can do the work that actually requires people. Designed, governed, and built to last."
+        backgroundImage="/images/solution-rpa.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[72ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
-              {/* Breadcrumb */}
-              <nav className="flex items-center space-x-2 text-sm text-white/50 mb-8">
-                <Link href="/" className="hover:text-white transition-colors">Home</Link>
-                <ChevronRight className="w-3 h-3" />
-                <Link href="/solutions" className="hover:text-white transition-colors">Solutions</Link>
-                <ChevronRight className="w-3 h-3" />
-                <span className="text-white/70">RPA</span>
-              </nav>
-
-              <h1 className="text-4xl sm:text-5xl md:text-6xl eb-garamond tracking-tight text-white leading-[1.1] mb-3">
-                Robotic Process Automation (RPA)
-              </h1>
-
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed italic">
-                Software robots execute repetitive tasks with perfect consistency—24/7, zero errors, no breaks.
-              </p>
-            </motion.div>
-
-            {/* Right Column - Hero Image */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.3 }}
-              className="relative h-[300px] sm:h-[400px] lg:h-full lg:absolute lg:right-0 lg:top-0 lg:w-1/2"
-            >
-              <img
-                src="/rpa-robot.398cb9df.jpg"
-                alt="RPA - Robotic Process Automation"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent lg:block hidden" />
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Value Proposition Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
-            {/* Left: Person Image */}
-            <div>
-              <img
-                src="/rpa-robot.398cb9df.jpg"
-                alt="RPA automation technology"
-                className="rounded-lg w-full"
-              />
-              <div className="mt-8">
-                <h3 className="text-xl font-bold mb-4">Do you want to know more?</h3>
-                <Button size="lg" className="bg-slate-900 hover:bg-slate-800">
-                  Ask our RPA specialist
-                </Button>
-              </div>
-            </div>
-
-            {/* Right: Benefits */}
-            <div>
-              <h2 className="text-4xl font-bold mb-12">
-                Why NEXDYNE RPA delivers results
-              </h2>
-
-              <div className="space-y-8">
-                {/* Digital workers */}
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
-                      <Bot className="w-8 h-8 text-blue-500" />
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold mb-3">Digital workers</h3>
-                    <p className="text-muted-foreground text-lg">
-                      Bots that execute transactions at machine speed with 100% accuracy. No fatigue, no errors, no downtime—operations that scale instantly without adding headcount.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Rapid deployment */}
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
-                      <Zap className="w-8 h-8 text-blue-500" />
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold mb-3">Rapid deployment</h3>
-                    <p className="text-muted-foreground text-lg">
-                      First bot deployed in 4-6 weeks. We identify high-impact processes, build automation, and deliver measurable ROI before your competitors finish planning.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Seamless integration */}
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
-                      <Plug className="w-8 h-8 text-blue-500" />
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold mb-3">Seamless integration</h3>
-                    <p className="text-muted-foreground text-lg">
-                      Bots interact with your existing systems through the user interface—no API required, no system changes, no IT disruption. Works with legacy and modern applications alike.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What is RPA Section */}
-      <section className="py-20 bg-white">
-        <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold mb-8 text-center">What is RPA?</h2>
-          <p className="text-lg text-charcoal/80 leading-relaxed">
-            RPA deploys software robots that mimic human actions within digital systems. These bots log into applications, extract data, perform calculations, complete transactions, and trigger workflows—executing the same repetitive tasks your team handles manually, but at machine speed with perfect accuracy. Unlike traditional automation that requires API integration or system modifications, RPA bots interact through the user interface just like humans do. This means you can automate processes across legacy systems, modern SaaS platforms, and everything in between without expensive IT projects or system changes.
-          </p>
-        </div>
-      </section>
-
-      {/* Team Quote Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container max-w-4xl">
-          <blockquote className="text-center">
-            <p className="text-2xl md:text-3xl font-medium text-red-900 mb-6">
-              "With RPA, you don't just automate tasks—you transform operations. Bots execute with perfect consistency, scale instantly, and free your team to focus on work that requires human judgment. That's the difference between efficiency and transformation."
-            </p>
-            <footer className="text-muted-foreground text-lg">
-              Floris Weegink - Field CTO - NEXDYNE TECHNOLOGIES
-            </footer>
-          </blockquote>
-        </div>
-      </section>
-
-      {/* The RPA Method Works Section */}
-      <section className="py-20">
-        <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold mb-8 text-center">The RPA method works</h2>
-          <p className="text-lg text-charcoal/80 leading-relaxed mb-12">
-            Most RPA projects fail because they start too big. We take the opposite approach: identify one high-volume, error-prone process and automate it completely in 4-6 weeks. This delivers immediate ROI and builds organizational confidence before scaling to additional processes. Our methodology focuses on quick wins that compound—each successful bot deployment funds the next, creating a self-sustaining automation program that transforms operations without massive upfront investment.
-          </p>
-        </div>
-      </section>
-
-      {/* Expert CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-100 to-blue-50">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <img
-                src="/rpa-digital-workers.0cc1b683.jpg"
-                alt="RPA Digital Workers"
-                className="rounded-lg w-full max-w-md mx-auto"
-              />
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold mb-6">Do you want to know more?</h2>
-              <p className="text-xl text-charcoal/80 mb-4">Floris Weegink</p>
-              <p className="text-lg text-muted-foreground mb-8">Field CTO</p>
-              <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-slate-900 hover:bg-slate-800">
-                  Get in touch
-                </Button>
-                <Button size="lg" variant="outline" className="border-slate-900 text-charcoal hover:bg-slate-900 hover:text-white">
-                  Schedule a meeting <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Partners Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="container">
-          <div className="max-w-3xl mb-16">
-            <p className="text-sm font-semibold text-blue-500 mb-4 tracking-wide uppercase">Partners</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
-              Enterprise-grade RPA through proven platforms
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              We deploy industry-leading RPA technology from UiPath, the global standard for enterprise automation. This partnership enables us to deliver bot deployments that handle high-volume transaction processing with enterprise-grade reliability and security.
-            </p>
-          </div>
-
-          <div className="max-w-md">
-            <div className="bg-white rounded-lg p-8 hover:shadow-lg transition-shadow">
-              <div className="flex items-center justify-center h-32 mb-4">
-                <div className="text-6xl font-bold text-blue-500">UiPath</div>
-              </div>
-              <h3 className="text-xl font-bold text-charcoal mb-3">UiPath</h3>
-              <p className="text-muted-foreground">
-                Industry-leading RPA platform powering our bot deployments. Handles high-volume transaction processing with enterprise-grade reliability and security.
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-12">
-            <Button variant="outline" size="lg">
-              All partners
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Why NEXDYNE Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <img
-                src="/rpa-automation.0763e6ae.jpg"
-                alt="Business Process Automation"
-                className="rounded-lg w-full"
-              />
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold mb-6">Why NEXDYNE</h2>
-              <p className="text-lg text-charcoal/80 leading-relaxed">
-                Most automation vendors sell software. We deliver outcomes. Our RPA practice combines deep process expertise with technical execution—we don't just deploy bots, we redesign workflows to maximize automation potential. This approach means faster ROI, higher success rates, and automation programs that scale sustainably. When you work with NEXDYNE, you're not buying technology—you're partnering with a team that's accountable for measurable business results.
-              </p>
-              <div className="mt-8">
-                <Button size="lg" className="bg-slate-900 hover:bg-slate-800">
-                  Get in touch
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Cases Section */}
-      <section className="py-20 bg-blue-50">
-        <div className="container">
-          <div className="text-center mb-12">
-            <p className="text-sm font-semibold text-muted-foreground mb-4 tracking-wide uppercase">Cases</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
-              Cases we love talking about
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Real implementations. Real results. See how we've deployed RPA to eliminate manual work and accelerate operations for companies across industries.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* Case Study 1 */}
-            <Link href="/cases/global-retailer">
-              <div className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
-                <img
-                  src="/case-retail.jpg"
-                  alt="Global Retailer Case Study"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3">Global Retailer</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Implemented headless commerce platform resulting in 45% increase in online revenue and 60% faster page loads.
-                  </p>
-                  <div className="flex gap-4 text-sm">
-                    <div>
-                      <div className="text-2xl font-bold text-blue-500">45%</div>
-                      <div className="text-muted-foreground">Revenue Growth</div>
-                    </div>
-                    <div>
-                      <div className="text-2xl font-bold text-blue-500">60%</div>
-                      <div className="text-muted-foreground">Faster Loads</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Link>
-
-            {/* Case Study 2 */}
-            <Link href="/cases/financial-institution">
-              <div className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
-                <img
-                  src="/case-fintech.jpg"
-                  alt="Fintech Startup Case Study"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3">Financial Institution</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Deployed RPA solution automating 80% of manual processing, saving 10K+ hours annually and 50% cost reduction.
-                  </p>
-                  <div className="flex gap-4 text-sm">
-                    <div>
-                      <div className="text-2xl font-bold text-blue-500">80%</div>
-                      <div className="text-muted-foreground">Process Automated</div>
-                    </div>
-                    <div>
-                      <div className="text-2xl font-bold text-blue-500">10K+</div>
-                      <div className="text-muted-foreground">Hours Saved</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Link>
-
-            {/* Case Study 3 */}
-            <Link href="/cases/healthcare-provider">
-              <div className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
-                <img
-                  src="/case-healthcare.jpg"
-                  alt="Healthcare Provider Case Study"
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3">Healthcare Provider</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Built 60-patient engagement platform with real-time data sync, 40% improvement in patient satisfaction.
-                  </p>
-                  <div className="flex gap-4 text-sm">
-                    <div>
-                      <div className="text-2xl font-bold text-blue-500">40%</div>
-                      <div className="text-muted-foreground">Better Satisfaction</div>
-                    </div>
-                    <div>
-                      <div className="text-2xl font-bold text-blue-500">50%</div>
-                      <div className="text-muted-foreground">Faster Processing</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="text-center">
-            <Link href="/cases">
-              <Button variant="outline" size="lg">
-                All cases
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Related Services Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="mb-12">
-            <p className="text-sm font-semibold text-muted-foreground mb-4 tracking-wide uppercase">Process Automation</p>
-            <h2 className="text-4xl font-bold">Services</h2>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-8">
-            <div className="flex gap-6">
-              <div>
-                <img
-                  src="/team-collaboration.jpg"
-                  alt="Expert"
-                  className="rounded-lg w-32 h-32 object-cover"
-                />
-                <div className="mt-6">
-                  <h3 className="text-xl font-bold mb-4">Do you want to know more?</h3>
-                  <Button className="bg-slate-900 hover:bg-slate-800">
-                    Get in touch
-                  </Button>
-                  <Button variant="link" className="ml-4">
-                    Schedule a meeting <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
-                </div>
-              </div>
-            </div>
-
+              Most RPA programs stall not because the bots don&rsquo;t work, but
+              because nobody owns them after they ship.
+            </h3>
             <div className="space-y-6">
-              {/* RPA - Current page */}
-              <div className="border-l-4 border-blue-500 pl-6 py-4 bg-blue-50">
-                <h3 className="text-xl font-bold mb-2 flex items-center justify-between">
-                  Robotic Process Automation (RPA)
-                  <ArrowRight className="w-5 h-5 text-blue-500" />
-                </h3>
-                <p className="text-muted-foreground">
-                  Software robots that execute repetitive tasks with perfect consistency. Deploy bots that handle data entry, invoice processing, and system updates—freeing your team for strategic work.
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                The first ten bots are easy. The next two hundred are governance.
+                Most RPA programs hit a ceiling around twenty production bots
+                because nobody owns the operating model: who handles broken bots,
+                who approves changes, who measures the savings, who decides when
+                to retire a bot. The ROI is real&mdash;but only if it&rsquo;s
+                managed.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                NexDyne&rsquo;s{" "}
+                <Link
+                  href="/insights/rpa-coe-playbook"
+                  className="text-primary hover:text-primary-hover transition-colors"
+                >
+                  RPA consultants
+                </Link>{" "}
+                ship bots and stand up the Center of Excellence that keeps them
+                running. From process discovery to bot retirement, we treat
+                automation as a program, not a project.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Help Clients
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six ways we turn manual work into managed automation.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              We combine deep platform expertise with rigorous program design to
+              deliver RPA that scales past the first wave&mdash;governed,
+              measured, and audit-ready.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {services.map((service, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={service.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col">
+                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                      {service.description}
+                    </p>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Learn more
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Experience &amp; Impact
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Measurable outcomes from bots in production.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
+            {outcomes.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`${
+                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
+                }`}
+              >
+                <div
+                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
+                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                >
+                  {item.stat}
+                </div>
+                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
+                  {item.label}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 5 — Light grey Approach / Methodology framework */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Think About It
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The Automation Program Framework
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Four integrated phases that move RPA from one-off pilot to
+              enterprise-grade automation program.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {approach.map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={step.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 flex flex-col">
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
+                      {step.description}
+                    </p>
+                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Explore
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Automation that compounds. NexDyne RPA programs return more than
+              three times their first-year cost and free hundreds of thousands of
+              hours for higher-value work.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              We&rsquo;ve built bot estates from a single attended automation to
+              fleets of two hundred unattended bots&mdash;always governed, always
+              measured, always audit-ready.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 7 — White Case studies / proof */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              RPA, proved in outcomes.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={result.image}
+                        alt={result.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="p-8 lg:p-10">
+                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                        {result.industry}
+                      </span>
+                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                        {result.title}
+                      </h3>
+                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
+                        {result.description}
+                      </p>
+                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                        Read Case
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-14">
+            <Link href="/cases">
+              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                See All Case Studies
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 8 — White Related capabilities / cross-sell */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Related Offerings
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Adjacent capabilities for a complete automation program.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {relatedOfferings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our automation team into your next operations review.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
                 </p>
-              </div>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="insurance">Insurance</SelectItem>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="retail">Retail &amp; Consumer</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
 
-              {/* iPaaS */}
-              <Link href="/solutions/ipaas">
-                <div className="border-l-4 border-transparent hover:border-blue-500 pl-6 py-4 hover:bg-blue-50 transition-all cursor-pointer">
-                  <h3 className="text-xl font-bold mb-2 flex items-center justify-between">
-                    iPaaS
-                    <ArrowRight className="w-5 h-5" />
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Connect disparate systems without custom code. Real-time data synchronization across your ERP, CRM, and legacy systems—eliminating manual data transfer.
-                  </p>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders ready to move beyond automation theater
+                  and stand up bot programs that deliver audited, repeatable
+                  savings.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
                 </div>
-              </Link>
-
-              {/* Process Orchestration */}
-              <Link href="/solutions/process-orchestration">
-                <div className="border-l-4 border-transparent hover:border-blue-500 pl-6 py-4 hover:bg-blue-50 transition-all cursor-pointer">
-                  <h3 className="text-xl font-bold mb-2 flex items-center justify-between">
-                    Process Orchestration
-                    <ArrowRight className="w-5 h-5" />
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Coordinate complex workflows across multiple systems and teams. Orchestration engines manage dependencies, handle exceptions, and ensure seamless end-to-end execution.
-                  </p>
-                </div>
-              </Link>
+              </motion.div>
             </div>
           </div>
         </div>
       </section>
 
-      <RelatedContent items={dataRelatedItems} />
       <Footer />
     </div>
   );

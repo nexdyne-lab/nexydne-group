@@ -1,516 +1,255 @@
-import React, { useEffect } from "react";
-import { useLocation, Link } from "wouter";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { 
-  Code, 
-  Globe, 
-  Zap, 
-  Shield, 
-  CheckCircle2,
-  Share2,
-  Layers,
-  Cpu,
-  Network,
-  Workflow,
-  ArrowRight,
-  ArrowLeft
-} from "lucide-react";
-import BainHoverCard from "@/components/BainHoverCard";
+import SolutionHero from "@/components/SolutionHero";
 import { SEO } from "@/components/SEO";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import { Button } from "@/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
-export default function SystemIntegration() {
-  const [location, setLocation] = useLocation();
+export default function APIIntegration() {
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  // Related capabilities data
-  const relatedCapabilities = [
+  const services = [
     {
-      title: "Data Modernization",
-      description: "Transform legacy silos into intelligent data platforms that drive real-time insights.",
-      link: "/solutions/enterprise-transformation/legacy-modernization"
+      title: "API Strategy & Design",
+      description:
+        "REST, GraphQL, gRPC. We pick the right paradigm for the consumer, the data, and the latency budget&mdash;then design contracts that hold up.",
+      link: "/solutions/api-integration/strategy-design",
+    },
+    {
+      title: "API Gateway Implementation",
+      description:
+        "Apigee, Kong, AWS API Gateway, Azure APIM. We stand up gateways with versioning, throttling, observability, and developer-portal hygiene.",
+      link: "/solutions/api-integration/gateway",
+    },
+    {
+      title: "API Security & OAuth",
+      description:
+        "OAuth 2.0, OIDC, JWT, mTLS. We harden APIs against the threats that matter and pass the security review on the first try.",
+      link: "/solutions/api-integration/security-oauth",
+    },
+    {
+      title: "API Monetization",
+      description:
+        "Pricing tiers, metering, contracts, billing integration. We turn an internal API into a revenue-bearing product line.",
+      link: "/solutions/api-integration/monetization",
+    },
+    {
+      title: "API Documentation & Developer Portal",
+      description:
+        "OpenAPI specs, interactive docs, sandboxes, SDKs. The developer portal that turns external integrators into willing customers.",
+      link: "/solutions/api-integration/developer-portal",
+    },
+    {
+      title: "Legacy System API Enablement",
+      description:
+        "Wrap COBOL, AS/400, and aging on-prem systems with modern APIs. We modernize access without the multi-year replatform.",
+      link: "/solutions/api-integration/legacy-enablement",
+    },
+  ];
+
+  const outcomes = [
+    {
+      stat: "250+",
+      label: "production APIs designed, deployed, and governed for mid-market clients",
+    },
+    {
+      stat: "70%",
+      label: "average reduction in partner onboarding time after gateway and portal rollout",
+    },
+    {
+      stat: "$5M+",
+      label: "annual revenue unlocked on a single client&rsquo;s API monetization program",
+    },
+  ];
+
+  const approach = [
+    {
+      title: "Strategy Before Endpoints",
+      description:
+        "Decide what kind of API estate you&rsquo;re building: internal, partner, public, monetized. The strategy drives every later decision.",
+      link: "/solutions/api-integration/strategy-design",
+    },
+    {
+      title: "Design the Contract",
+      description:
+        "REST or GraphQL. Resource-oriented or domain-oriented. Pagination, errors, idempotency. The contract is the product.",
+      link: "/solutions/api-integration/strategy-design",
+    },
+    {
+      title: "Operate Through a Gateway",
+      description:
+        "Authentication, rate limits, observability, versioning&mdash;all centralized. The gateway is where API governance becomes real.",
+      link: "/solutions/api-integration/gateway",
+    },
+    {
+      title: "Document and Evolve",
+      description:
+        "OpenAPI, sandbox, SDKs, deprecation policy. Documentation isn&rsquo;t the last step&mdash;it&rsquo;s the product surface.",
+      link: "/solutions/api-integration/developer-portal",
+    },
+  ];
+
+  const cases = [
+    {
+      industry: "Financial Services",
+      title: "Regional Bank Launches Open-Banking API and Onboards 40 Partners in Six Months",
+      description:
+        "OAuth-secured Apigee gateway plus a developer portal turned a closed core-banking platform into a partner-ready ecosystem.",
+      image: "/images/case-api-bank.jpg",
+      link: "/cases/bank-open-banking-api",
+    },
+    {
+      industry: "Healthcare",
+      title: "Health Insurer Modernizes Legacy Mainframe with API Layer&mdash;No Replatform",
+      description:
+        "Modern REST APIs over a thirty-year-old mainframe unlocked mobile, partner, and analytics use cases the system was never designed for.",
+      image: "/images/case-api-insurer.jpg",
+      link: "/cases/insurer-legacy-api",
+    },
+  ];
+
+  const relatedOfferings = [
+    {
+      title: "IPaaS",
+      link: "/solutions/ipaas",
+    },
+    {
+      title: "App Development",
+      link: "/solutions/app-development",
     },
     {
       title: "Cloud Infrastructure",
-      description: "Scalable, secure foundations on AWS, Azure, and GCP.",
-      link: "/solutions/enterprise-transformation/cloud-infrastructure"
+      link: "/solutions/cloud-infrastructure",
     },
     {
-      title: "DevOps & Security",
-      description: "Ship faster with automated pipelines that have compliance baked in.",
-      link: "/solutions/enterprise-transformation/devops-automation"
-    }
+      title: "Process Orchestration",
+      link: "/solutions/process-orchestration",
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="System Integration" 
-        description="Unify your digital core. We connect disparate apps, data, and partners into a seamless, synchronized ecosystem."
-        canonical="/solutions/enterprise-transformation/api-integration"
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="API Integration"
+        description="API-first integration architecture. Connect everything via well-designed REST, GraphQL, and gRPC APIs&mdash;governed, secured, and built to scale."
+        canonical="/solutions/api-integration"
       />
       <Navigation />
 
-      {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[70vh] flex items-center pt-20 bg-charcoal">
-        <div className="container px-4 md:px-12 grid md:grid-cols-2 gap-8 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Breadcrumbs variant="light" />
-            
-            <h1 className="text-5xl md:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.05] mb-4">
-              Integration &<br />
-              <span className="text-primary">APIs</span>
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
-              Unify your digital core. We connect disparate apps, data, and partners into a seamless, synchronized ecosystem.
-            </p>
-            
-            <div className="flex flex-wrap gap-4">
-              <Link href="/contact">
-                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out">
-                  Schedule a Consultation
-                </Button>
-              </Link>
-              <Link href="/case-studies">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-colors duration-200 ease-in-out bg-transparent">
-                  View Case Studies
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="/images/system-integration-abstract.jpg" 
-              alt="System Integration Visualization" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
-        </div>
-      </section>
+      {/* SLOT 1 — Charcoal hero */}
+      <SolutionHero
+        eyebrow="SOLUTION · API INTEGRATION"
+        title="API Integration"
+        subtitle="API-first integration architecture. Connect systems, partners, and products via well-designed REST, GraphQL, and gRPC APIs&mdash;governed, secured, and built for the long arc."
+        backgroundImage="/images/solution-api-integration.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+      />
 
-      {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-20 bg-white border-b border-border">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-12"
+            className="max-w-[72ch]"
           >
-            <h2 className="text-2xl eb-garamond font-bold text-charcoal">Our Experience & Impact</h2>
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Every business is now an API business&mdash;whether it knows it
+              yet or not. The contracts you ship today define the partnerships
+              you can have tomorrow.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                APIs are the only durable interface between your business and
+                the rest of the digital economy. Mobile apps, partner
+                ecosystems, embedded products, internal microservices&mdash;they
+                all run on APIs. The companies that treat APIs as products, with
+                strategy, design, and lifecycle, ship faster than the ones
+                treating them as plumbing.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                NexDyne&rsquo;s{" "}
+                <Link
+                  href="/insights/api-as-product"
+                  className="text-primary hover:text-primary-hover transition-colors"
+                >
+                  API consultants
+                </Link>{" "}
+                build API estates as products: REST or GraphQL by deliberate
+                choice, gateway-governed by default, OAuth-secured for the
+                partner integrations you haven&rsquo;t signed yet, and
+                documented well enough that the integrations actually happen.
+              </p>
+            </div>
           </motion.div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { metric: "200+", label: "Integrations delivered across industries" },
-              { metric: "85%", label: "Faster time-to-market for new features" },
-              { metric: "99.9%", label: "API uptime across deployments" }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="text-5xl md:text-6xl font-bold text-charcoal mb-3">{item.metric}</div>
-                <p className="text-lg text-charcoal/60">{item.label}</p>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
-      {/* Section 3: Thought Leadership Paragraphs (F100) */}
-      <section className="py-20 bg-white">
-        <div className="container px-4 md:px-12">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              Integration isn't just plumbing; it's the enabler of agility. When your systems talk, your business moves faster. When they don't, every initiative becomes a multi-month IT project.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              We've helped organizations break down data silos, automate cross-system workflows, and build API-first architectures that turn internal capabilities into competitive advantages.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              Silos are strategy killers—when sales can't see inventory and finance can't see real-time revenue, everyone loses. APIs are products with their own roadmaps and developer experience. Event-driven is the future—modern systems react to events in real-time, enabling automation that was previously impossible.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
-      {/* How We Can Help Section - Integration & APIs Capabilities */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-16"
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              How We Can Help
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Help Clients
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
-              Our Integration & API Capabilities
-            </h2>
-            <p className="text-xl text-charcoal/60 max-w-2xl">
-              End-to-end integration services from strategy to implementation to ongoing management.
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six ways we ship APIs as products.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              We combine deep API design discipline with platform expertise and
+              security rigor to deliver API estates that scale across
+              consumers, partners, and product lines.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                title: "API Design & Development",
-                description: "Design RESTful and GraphQL APIs with developer-friendly documentation. Build APIs that are secure, scalable, and easy to consume."
-              },
-              {
-                title: "System Integration",
-                description: "Connect ERP, CRM, and legacy systems into a unified ecosystem. Enable real-time data flow across your entire technology stack."
-              },
-              {
-                title: "iPaaS Implementation",
-                description: "Deploy and configure MuleSoft, Boomi, or Workato. Build reusable connectors and integration patterns for faster delivery."
-              },
-              {
-                title: "Event-Driven Architecture",
-                description: "Implement event streaming with Kafka, RabbitMQ, or cloud-native services. Enable real-time reactions and decoupled systems."
-              },
-              {
-                title: "API Gateway & Management",
-                description: "Deploy Kong, Apigee, or AWS API Gateway. Implement rate limiting, authentication, and analytics for your API portfolio."
-              },
-              {
-                title: "B2B & Partner Integration",
-                description: "Connect with suppliers, customers, and partners via EDI, APIs, or file-based integration. Automate B2B transactions securely."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-              >
-                <BainHoverCard title={item.title} description={item.description} />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4: Differentiator Section */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-12">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Image with accent block */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="relative"
-            >
-              <img 
-                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80" 
-                alt="API integration visualization" 
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-              {/* Accent block */}
-              <div className="absolute bottom-6 right-6 w-24 h-24 bg-primary rounded-lg" />
-            </motion.div>
-            
-            {/* Content */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold text-charcoal leading-[1.1] mb-8">
-                We've learned what works—and what doesn't.
-              </h2>
-              
-              <p className="text-xl text-charcoal/70 leading-relaxed mb-6">
-                The difference isn't luck. It's process. We've refined our approach over 200+ integrations, learning what works for companies your size. We know how to design clean API contracts, build resilient middleware, and avoid the integration debt that plagues most organizations.
-              </p>
-              
-              <p className="text-xl text-charcoal/70 leading-relaxed">
-                More importantly, we know when to use point-to-point versus hub-and-spoke architectures—saving you from unnecessary complexity.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 5: Our Approach (3-Column Consulting Format) */}
-      <section className="py-20 bg-base">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">
-              Our Approach
-            </span>
-            <h2 className="text-3xl md:text-5xl eb-garamond font-light text-white">
-              Connect systems that were never meant to talk
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-12">
-            {[
-              {
-                title: "Design for the ecosystem",
-                description: "We don't just connect two systems—we architect for your entire technology landscape. APIs become strategic assets that enable future integrations, not one-off fixes."
-              },
-              {
-                title: "Build for reliability",
-                description: "We implement patterns that handle failure gracefully. Circuit breakers, retry logic, and graceful degradation ensure one system's problems don't cascade across your business."
-              },
-              {
-                title: "Govern for scale",
-                description: "As your API portfolio grows, so does complexity. We establish versioning, documentation, and monitoring practices that keep your integration layer manageable."
-              }
-            ].map((pillar, i) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {services.map((service, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
               >
-                <h3 className="text-xl font-bold text-white mb-4">{pillar.title}</h3>
-                <p className="text-muted-foreground/50 leading-relaxed">{pillar.description}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Link href="/contact">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-4 bg-transparent transition-colors duration-200 ease-in-out">
-                Get in touch
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 6: Key Benefits - H100 Hover Cards */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              The Power of Unity
-            </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
-              When your systems talk, your business moves faster.
-            </h2>
-          </motion.div>
-
-          {/* H100 Hover Effect Cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                title: "Seamless Orchestration",
-                description: "Bridge ERP, CRM, and legacy mainframes with event-driven architectures that ensure data consistency."
-              },
-              {
-                title: "Real-Time Intelligence",
-                description: "Stop waiting for batch jobs. Deliver data in real-time for up-to-the-second decision making."
-              },
-              {
-                title: "API-First Economy",
-                description: "Turn internal capabilities into external products with secure, developer-friendly APIs."
-              },
-              {
-                title: "Zero-Trust Security",
-                description: "Rigorous OAuth 2.0, JWT, and API Gateway policies ensure every connection is authenticated."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-              >
-                <BainHoverCard title={item.title} description={item.description} />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 7: Tech Stack Section (Preserved Unique Section - Enhanced) */}
-      <section className="py-20 bg-white">
-        <div className="container px-4 md:px-12">
-          <div className="text-center mb-12">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-              Integration Toolkit
-            </span>
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal mb-4">
-              Modern Integration Technologies
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We leverage best-in-class tools to build scalable, maintainable integrations.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { 
-                category: "Protocols", 
-                subtitle: "Modern Standards",
-                icon: "🔗",
-                tools: ["RESTful APIs", "GraphQL", "gRPC & Protobuf"] 
-              },
-              { 
-                category: "Gateways", 
-                subtitle: "Control Plane",
-                icon: "🛡️",
-                tools: ["Kong / Apigee", "AWS API Gateway", "Azure API Management"] 
-              },
-              { 
-                category: "Streaming", 
-                subtitle: "Event Bus",
-                icon: "⚡",
-                tools: ["Apache Kafka", "RabbitMQ", "Amazon SQS/SNS"] 
-              }
-            ].map((stack, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <div className="group bg-subtle p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition-all h-full">
-                  <div className="text-4xl mb-4">{stack.icon}</div>
-                  <div className="text-2xl font-bold text-charcoal mb-2 group-hover:text-primary transition-colors">{stack.category}</div>
-                  <p className="text-sm text-muted-foreground mb-6">{stack.subtitle}</p>
-                  <ul className="space-y-3">
-                    {stack.tools.map((tool, j) => (
-                      <li key={j} className="flex items-center gap-3 text-sm text-charcoal/80">
-                        <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-                        <span>{tool}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 8: Case Studies (F100) */}
-      <section className="py-24 bg-base">
-        <div className="container px-4 md:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-                Client Results
-              </span>
-              <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-white">
-                See how we've connected enterprises to their ecosystems.
-              </h2>
-            </motion.div>
-            <Link href="/cases">
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 bg-transparent transition-colors duration-200 ease-in-out">
-                View all case studies
-              </Button>
-            </Link>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                title: "Unified Commerce Platform",
-                category: "Retail",
-                description: "Connecting 50+ point-of-sale systems, e-commerce platforms, and inventory systems into a single view.",
-                image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop",
-                link: "/cases/unified-commerce"
-              },
-              {
-                title: "Healthcare Interoperability",
-                category: "Healthcare",
-                description: "Building FHIR-compliant APIs that enable seamless patient data exchange across 20+ hospital systems.",
-                image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2670&auto=format&fit=crop",
-                link: "/cases/healthcare-interoperability"
-              }
-            ].map((study, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <Link href={study.link} className="group block">
-                  <div className="relative h-[350px] rounded-lg overflow-hidden">
-                    <img 
-                      src={study.image}
-                      alt={study.title} 
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent" />
-                    <div className="absolute bottom-0 left-0 p-8">
-                      <span className="text-xs font-bold text-primary mb-3 uppercase tracking-wider block">{study.category}</span>
-                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
-                        {study.title}
-                      </h3>
-                      <p className="text-white/70 line-clamp-2">{study.description}</p>
-                    </div>
+                <Link href={service.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col">
+                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                      {service.description}
+                    </p>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Learn more
+                    </span>
                   </div>
                 </Link>
               </motion.div>
@@ -519,72 +258,335 @@ export default function SystemIntegration() {
         </div>
       </section>
 
-      {/* Section 9: Featured Insight Banner (Preserved Unique Section) */}
-      <section className="py-16 bg-primary">
-        <div className="container px-4 md:px-12">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="text-white">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/70 mb-2 block">Featured Insight</span>
-              <h3 className="text-2xl md:text-3xl font-bold mb-2">The API Strategy Playbook</h3>
-              <p className="text-white/80">A comprehensive guide to building API-first architectures.</p>
-            </div>
-            <Link href="/insights/api-strategy-playbook">
-              <Button className="bg-white text-primary hover:bg-white/90 px-8 py-4 font-semibold whitespace-nowrap transition-colors duration-200 ease-in-out">
-                Download the Playbook <ArrowRight className="ml-2 w-4 h-4 inline" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 10: Related Capabilities - H100 Hover */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 md:px-12">
+      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-12"
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-              Related Capabilities
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Experience &amp; Impact
             </span>
-            <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal">
-              Explore more Technology capabilities
-            </h2>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Measurable outcomes from API programs in production.
+            </h3>
           </motion.div>
 
-          <div className="grid md:grid-cols-4 gap-6">
-            {relatedCapabilities.map((cap, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
+            {outcomes.map((item, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`${
+                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
+                }`}
               >
-                <BainHoverCard title={cap.title} description={cap.description} link={cap.link} />
+                <div
+                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
+                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                >
+                  {item.stat}
+                </div>
+                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
+                  {item.label}
+                </div>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Section 11: CTA Section (F100 - Cyan Background) */}
-      <section className="py-24 bg-primary">
-        <div className="container px-4 md:px-12">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl eb-garamond font-bold text-white mb-6">
-              Ready to connect your systems?
-            </h2>
-            <p className="text-xl text-white/80 mb-10">
-              Let's discuss how our integration expertise can help you build a unified digital ecosystem.
+      {/* SLOT 5 — Light grey Approach / Methodology framework */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Think About It
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The API-as-Product Framework
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Four integrated phases that move APIs from internal plumbing to
+              durable, partner-ready products.
             </p>
-            <Link href="/contact">
-              <Button className="bg-white hover:bg-white/90 text-primary px-10 py-6 text-lg font-semibold transition-colors duration-200 ease-in-out">
-                Start a Conversation <ArrowRight className="ml-2 w-5 h-5 inline" />
-              </Button>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {approach.map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={step.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 flex flex-col">
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
+                      {step.description}
+                    </p>
+                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Explore
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              APIs that compound. NexDyne clients have onboarded partners 70%
+              faster, unlocked seven-figure API revenue lines, and modernized
+              legacy estates without replatforming.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              We&rsquo;ve designed APIs for open banking, embedded healthcare,
+              and B2B SaaS&mdash;always with the gateway hygiene, security
+              posture, and developer experience that turns integration into a
+              repeatable advantage.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
             </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 7 — White Case studies / proof */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              API integration, proved in outcomes.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={result.image}
+                        alt={result.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="p-8 lg:p-10">
+                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                        {result.industry}
+                      </span>
+                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                        {result.title}
+                      </h3>
+                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
+                        {result.description}
+                      </p>
+                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                        Read Case
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-14">
+            <Link href="/cases">
+              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                See All Case Studies
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 8 — White Related capabilities / cross-sell */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Related Offerings
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Adjacent capabilities for a complete API program.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {relatedOfferings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our API team into your next architecture review.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="retail">Retail &amp; Consumer</SelectItem>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders ready to treat APIs as durable
+                  products&mdash;not just plumbing&mdash;and unlock the partner
+                  ecosystems waiting on the other side.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>

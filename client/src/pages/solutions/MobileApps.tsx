@@ -1,356 +1,594 @@
+import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Crown, Smartphone, Rocket, Bell } from "lucide-react";
-import { RelatedContent } from "@/components/RelatedContent";
-import { dataRelatedItems } from "@/data/related-content";
+import SolutionHero from "@/components/SolutionHero";
+import { SEO } from "@/components/SEO";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function MobileApps() {
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [email, setEmail] = useState("");
+
+  const services = [
+    {
+      title: "Native iOS Development",
+      description:
+        "Swift and SwiftUI apps engineered for the device, the App Store, and the high bar of iOS users. Built for performance, polish, and platform parity.",
+      link: "/solutions/mobile-apps/native-ios",
+    },
+    {
+      title: "Native Android Development",
+      description:
+        "Kotlin and Jetpack Compose apps that handle real-world device fragmentation while delivering Material-grade design and Play Store reliability.",
+      link: "/solutions/mobile-apps/native-android",
+    },
+    {
+      title: "React Native Cross-Platform",
+      description:
+        "One codebase, two stores, native feel. We use React Native to ship to iOS and Android in lockstep without doubling your engineering spend.",
+      link: "/solutions/mobile-apps/react-native",
+    },
+    {
+      title: "Flutter Cross-Platform",
+      description:
+        "Flutter apps that share rendering across platforms while preserving native gestures and motion. Ideal for design-forward, animation-rich products.",
+      link: "/solutions/mobile-apps/flutter",
+    },
+    {
+      title: "Mobile UX/UI Design",
+      description:
+        "Mobile-first design systems, interaction patterns, and prototyping. We design for thumbs, glance, and the moments users actually have.",
+      link: "/solutions/mobile-apps/mobile-ux-ui",
+    },
+    {
+      title: "Mobile App Modernization",
+      description:
+        "Replatform legacy hybrid or aging native apps onto a modern stack. We refactor architecture, reduce crash rates, and unlock feature velocity.",
+      link: "/solutions/mobile-apps/app-modernization",
+    },
+  ];
+
+  const outcomes = [
+    {
+      stat: "90+",
+      label: "mobile apps shipped to the App Store and Google Play",
+    },
+    {
+      stat: "58%",
+      label: "average reduction in time-to-market on cross-platform builds",
+    },
+    {
+      stat: "2.6x",
+      label: "typical lift in 30-day retention after a UX-led modernization",
+    },
+  ];
+
+  const approach = [
+    {
+      title: "Frame the Mobile Moment",
+      description:
+        "Define the specific situations users will open the app. Mobile lives or dies on context, not feature count.",
+      link: "/solutions/mobile-apps/mobile-ux-ui",
+    },
+    {
+      title: "Choose the Right Stack",
+      description:
+        "Native, React Native, or Flutter. We pick the platform mix that fits your team, your roadmap, and your performance ceiling.",
+      link: "/solutions/mobile-apps/react-native",
+    },
+    {
+      title: "Ship in Two-Week Increments",
+      description:
+        "Real builds in real users&rsquo; hands every two weeks. Feedback loops beat assumptions, every time.",
+      link: "/solutions/mobile-apps/native-ios",
+    },
+    {
+      title: "Instrument and Iterate",
+      description:
+        "Crash analytics, funnel telemetry, A/B infrastructure. The team that measures behavior beats the team that guesses.",
+      link: "/solutions/mobile-apps/app-modernization",
+    },
+  ];
+
+  const cases = [
+    {
+      industry: "Healthcare",
+      title: "Health-Tech Scale-Up Hits 2M Users on a Single React Native Codebase",
+      description:
+        "Modular architecture and feature-flag discipline let one team ship to iOS and Android in lockstep through hypergrowth.",
+      image: "/images/case-mobile-health.jpg",
+      link: "/cases/healthtech-mobile-scale",
+    },
+    {
+      industry: "Financial Services",
+      title: "Regional Bank Cuts Mobile Crash Rate by 71% After Modernization",
+      description:
+        "A six-year-old hybrid codebase migrated to native Swift and Kotlin&mdash;restoring stability and unlocking the feature roadmap.",
+      image: "/images/case-mobile-bank.jpg",
+      link: "/cases/bank-mobile-modernization",
+    },
+  ];
+
+  const relatedOfferings = [
+    {
+      title: "App Development",
+      link: "/solutions/app-development",
+    },
+    {
+      title: "Customer Portal",
+      link: "/solutions/customer-portal",
+    },
+    {
+      title: "Digital Engagement",
+      link: "/solutions/digital-engagement",
+    },
+    {
+      title: "API Integration",
+      link: "/solutions/api-integration",
+    },
+  ];
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Mobile Apps"
+        description="Native and cross-platform mobile apps engineered to scale globally&mdash;iOS, Android, and hybrid&mdash;built for the second act on day one."
+        canonical="/solutions/mobile-apps"
+      />
       <Navigation />
-      
-      {/* Breadcrumb */}
-      <div className="container py-4">
-        <div className="flex items-center gap-2 text-sm text-muted-foreground">
-          <Link href="/">
-            <a className="hover:text-foreground transition-colors">Home</a>
-          </Link>
-          <span>/</span>
-          <Link href="/solutions/customer-intelligence">
-            <a className="hover:text-foreground transition-colors">Data-Driven Customer Intelligence</a>
-          </Link>
-          <span>/</span>
-          <Link href="/solutions/digital-engagement">
-            <a className="hover:text-foreground transition-colors">Digital Engagement</a>
-          </Link>
-          <span>/</span>
-          <span className="text-foreground">Mobile Apps</span>
-        </div>
-      </div>
 
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/90 to-primary">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl font-bold text-white mb-3 eb-garamond">Mobile apps</h1>
-            </div>
-            <div>
-              <p className="text-xl text-white/95 leading-relaxed">
-                Bring your mobile app idea to life with NEXDYNE's iOS and Android services that deliver seamless, engaging experiences customers love. From concept to App Store launch—we build mobile apps that drive real business value.
+      {/* SLOT 1 — Charcoal hero */}
+      <SolutionHero
+        eyebrow="SOLUTION · MOBILE APPS"
+        title="Mobile Apps"
+        subtitle="Native and cross-platform mobile apps engineered to scale globally. iOS, Android, hybrid&mdash;built for the second download, not just the first install."
+        backgroundImage="/images/solution-mobile-apps.jpg"
+        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
+        secondaryCta={{ label: "See Client Results", href: "/cases" }}
+      />
+
+      {/* SLOT 2 — White lead / editorial intro */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-[72ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Perspective
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The phone is the product. Everything else is documentation of how
+              the product works.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                For most mid-market companies, the mobile app is the highest-stakes
+                surface in the customer experience. It&rsquo;s where churn shows up
+                first, where store ratings live forever, and where the gap between
+                a thoughtful product and a hurried one is most visible. The cost of
+                a bad app isn&rsquo;t just rebuild&mdash;it&rsquo;s lost trust.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+                NexDyne&rsquo;s{" "}
+                <Link
+                  href="/insights/mobile-architecture-debt"
+                  className="text-primary hover:text-primary-hover transition-colors"
+                >
+                  mobile development consultants
+                </Link>{" "}
+                ship apps that survive scale&mdash;native, React Native, or
+                Flutter&mdash;modular by default, accessible by design, and
+                instrumented for the product decisions you&rsquo;ll need to make
+                next quarter.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="py-20">
-        <div className="container">
-          <h2 className="text-3xl font-bold mb-12">Benefits of mobile apps</h2>
-          
-          <div className="grid lg:grid-cols-4 gap-8">
-            {/* Contact Card */}
-            <Card className="p-8 bg-blue-50 border-0">
-              <div className="w-32 h-32 rounded-full bg-blue-200 mx-auto mb-6"></div>
-              <h3 className="text-xl font-bold mb-4 text-center">Want to know more?</h3>
-              <Button variant="outline" className="w-full">Ask Sarah Chen</Button>
-            </Card>
-
-            {/* Benefit 1 */}
-            <Card className="p-8 hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 rounded-lg bg-blue-100 flex items-center justify-center mb-6">
-                <Crown className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">High customer loyalty</h3>
-              <p className="text-muted-foreground">
-                A smart, accessible app gives customers exactly what they need and keeps them loyal. Direct access drives habitual engagement.
-              </p>
-            </Card>
-
-            {/* Benefit 2 */}
-            <Card className="p-8 hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 rounded-lg bg-blue-100 flex items-center justify-center mb-6">
-                <Smartphone className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">PWA technology for cost efficiency</h3>
-              <p className="text-muted-foreground">
-                Save on development and maintenance costs and create a seamless experience with Progressive Web Apps (PWA). One codebase, multiple platforms.
-              </p>
-            </Card>
-
-            {/* Benefit 3 */}
-            <Card className="p-8 hover:shadow-xl transition-shadow">
-              <div className="w-16 h-16 rounded-lg bg-blue-100 flex items-center justify-center mb-6">
-                <Rocket className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Higher conversion rates</h3>
-              <p className="text-muted-foreground">
-                Compared to other channels, an app delivers four times more conversions on average. Mobile-first experiences eliminate friction.
-              </p>
-            </Card>
-          </div>
-
-          {/* Benefit 4 - Full Width */}
-          <div className="mt-8">
-            <Card className="p-8 hover:shadow-xl transition-shadow">
-              <div className="flex items-start gap-6">
-                <div className="w-16 h-16 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
-                  <Bell className="w-8 h-8 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-3">Tactical tech</h3>
-                  <p className="text-muted-foreground">
-                    An app offers features like camera access and push notifications, boosting engagement and interaction. Native capabilities unlock competitive advantages.
-                  </p>
-                </div>
-              </div>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Content Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container">
-          <div className="max-w-3xl">
-            <h2 className="text-3xl font-bold mb-6">About mobile apps</h2>
-            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              A mobile app establishes a direct link with customers—ideal for frequently used services. This raises customer loyalty and simplifies recurring tasks. Apps offer more features than websites, such as camera access and location sharing. Different apps for Android and iOS users are a thing of the past. Smart web technologies let us build for any platform without breaking a sweat. This removes complexity, saving you time and costs, and putting you in control. Ready for launch?
+      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Help Clients
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Six ways we ship mobile that scales.
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              We combine native platform depth with cross-platform efficiency to
+              deliver mobile experiences that hold up under real-world device
+              fragmentation, real-world traffic, and real-world product change.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              NEXDYNE combines native mobile expertise with cross-platform efficiency. We leverage React Native, Flutter, and PWA technologies to deliver apps that feel native while maximizing code reuse. Our mobile development process emphasizes user research, iterative prototyping, and continuous deployment—ensuring your app launches fast and evolves with user feedback.
-            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+            {services.map((service, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={service.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col">
+                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
+                      {service.description}
+                    </p>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Learn more
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Quote Section */}
-      <section className="py-20">
-        <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <blockquote className="text-2xl font-semibold text-primary mb-6">
-              "Mobile apps are no longer optional—they're the primary interface for customer engagement. Companies that delay mobile-first strategies risk irrelevance."
-            </blockquote>
-            <p className="text-muted-foreground">— Sarah Chen, Head of Mobile Engineering at NEXDYNE</p>
-          </div>
-        </div>
-      </section>
+      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Our Experience &amp; Impact
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Measurable outcomes from apps in production.
+            </h3>
+          </motion.div>
 
-      {/* Approach Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container">
-          <h2 className="text-3xl font-bold mb-6">Mobile apps: our philosophy</h2>
-          <div className="max-w-4xl">
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              At NEXDYNE, we work together with our customers to develop mobile apps that increase customer retention and simplify tasks. We harness advanced technologies to build platform-independent apps that are faster, bring down your costs and put you in the driver's seat. Features such as camera and location integration provide added value, raising customer loyalty.
-            </p>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              We often start in a basecamp phase to set out your wishes and requirements. Following that, we create a clickable prototype and test it with real users. Once validated, we select the best technologies for the final product. In the post-delivery hypercare phase, we make sure everything goes to plan. You can always call our support and development team for assistance and help with optimizations.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
-            <Card className="p-8">
-              <h3 className="text-xl font-bold mb-4">Discovery & Strategy</h3>
-              <p className="text-muted-foreground mb-4">
-                User research, competitive analysis, and technical architecture planning ensure we build the right app for your business goals.
-              </p>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• User journey mapping</li>
-                <li>• Platform selection (native vs. cross-platform)</li>
-                <li>• Feature prioritization</li>
-                <li>• Technical feasibility assessment</li>
-              </ul>
-            </Card>
-
-            <Card className="p-8">
-              <h3 className="text-xl font-bold mb-4">Design & Prototyping</h3>
-              <p className="text-muted-foreground mb-4">
-                Interactive prototypes validated with real users before writing production code. Design systems ensure consistency across platforms.
-              </p>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• iOS and Android design guidelines</li>
-                <li>• Clickable prototypes</li>
-                <li>• Usability testing</li>
-                <li>• Animation and micro-interactions</li>
-              </ul>
-            </Card>
-
-            <Card className="p-8">
-              <h3 className="text-xl font-bold mb-4">Development & Launch</h3>
-              <p className="text-muted-foreground mb-4">
-                Agile development with continuous integration, automated testing, and App Store optimization for successful launches.
-              </p>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• Cross-platform development</li>
-                <li>• API integration</li>
-                <li>• App Store submission</li>
-                <li>• Post-launch support and optimization</li>
-              </ul>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-100 to-blue-50">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="w-32 h-32 rounded-full bg-blue-200"></div>
-            <div>
-              <h2 className="text-3xl font-bold mb-4">Want to know more?</h2>
-              <p className="text-lg mb-2 font-semibold">Sarah Chen</p>
-              <p className="text-muted-foreground mb-6">Head of Mobile Engineering</p>
-              <div className="flex gap-4">
-                <Button size="lg">Get in touch</Button>
-                <Button size="lg" variant="outline">Schedule a meeting</Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Partners Section */}
-      <section className="py-20">
-        <div className="container">
-          <p className="text-sm text-muted-foreground mb-4">Partners</p>
-          <h2 className="text-3xl font-bold mb-12">Awesome partners turn dreams into reality</h2>
-          
-          <div className="grid grid-cols-3 gap-8 max-w-3xl">
-            <div className="text-center">
-              <div className="text-lg font-semibold text-primary">React Native</div>
-            </div>
-            <div className="text-center">
-              <div className="text-lg font-semibold text-primary">Flutter</div>
-            </div>
-            <div className="text-center">
-              <div className="text-lg font-semibold text-primary">Expo</div>
-            </div>
-          </div>
-
-          <Button variant="outline" className="mt-8">All partners</Button>
-        </div>
-      </section>
-
-      {/* Why NEXDYNE Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="w-full h-96 bg-blue-100 rounded-lg"></div>
-            <div>
-              <h2 className="text-3xl font-bold mb-6">Why NEXDYNE</h2>
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Whether you're seeking a strategic mobile partner, acceleration for your app development, or user experiences that drive competitive advantage, you've found the right team. NEXDYNE combines deep expertise in iOS and Android development with practical implementation methodologies that minimize risk and accelerate time-to-market.
-              </p>
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Our mobile app solutions leverage cutting-edge frameworks, performance optimization, and continuous deployment pipelines—while maintaining the flexibility to evolve as user expectations and mobile capabilities advance. With NEXDYNE, mobile becomes your competitive advantage.
-              </p>
-              <Button size="lg">Get in touch</Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Cases Section */}
-      <section className="py-20 bg-blue-50">
-        <div className="container">
-          <h2 className="text-3xl font-bold mb-4">Cases we love talkin' about</h2>
-          <p className="text-lg text-muted-foreground mb-12">
-            Heard of a business that transforms mobile app ideas into market-leading experiences? That'd be us. Check out these inspiring cases.
-          </p>
-          
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <Link href="/cases/fitness-app-engagement" className="block group">
-              <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-                <img 
-                  src="/mobile-apps-case-fitness.ff78d1c6.jpg" 
-                  alt="Fitness Mobile App Case Study" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Fitness Startup Achieves 4.8★ Rating with Gamified Workout App</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Cross-platform mobile app drives 89% 30-day retention through personalized training plans and social challenges.
-                  </p>
-                  <Button variant="outline">Read case study</Button>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
+            {outcomes.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`${
+                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
+                }`}
+              >
+                <div
+                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
+                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                >
+                  {item.stat}
                 </div>
-              </Card>
-            </Link>
-
-            <Link href="/cases/fintech-mobile-banking" className="block group">
-              <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-                <img 
-                  src="/mobile-apps-case-fintech.fb9a5819.jpg" 
-                  alt="Fintech Mobile Banking Case Study" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Digital Bank Onboards 250K Users in 6 Months with Mobile-First Platform</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Secure iOS and Android banking app achieves 94% mobile transaction rate while maintaining bank-grade security.
-                  </p>
-                  <Button variant="outline">Read case study</Button>
+                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
+                  {item.label}
                 </div>
-              </Card>
-            </Link>
-
-            <Link href="/cases/delivery-app-optimization" className="block group">
-              <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-                <img 
-                  src="/mobile-apps-case-delivery.e1b7b191.jpg" 
-                  alt="Delivery App Case Study" 
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Food Delivery Platform Scales to 50K Daily Orders with Optimized Mobile App</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Real-time tracking and push notifications reduce customer support inquiries by 67% while improving delivery accuracy.
-                  </p>
-                  <Button variant="outline">Read case study</Button>
-                </div>
-              </Card>
-            </Link>
-          </div>
-
-          <div className="flex gap-4">
-            <Button variant="outline">All cases</Button>
-            <Button variant="outline">All cases</Button>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Services Footer Navigation */}
-      <section className="py-12 border-t">
-        <div className="container">
-          <h3 className="text-sm font-semibold mb-6 text-muted-foreground">SERVICES</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            <Link href="/solutions/process-automation">
-              <a className="text-sm hover:text-primary transition-colors">Process Automation</a>
+      {/* SLOT 5 — Light grey Approach / Methodology framework */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              How We Think About It
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              The Mobile-First Framework
+            </h3>
+            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+              Four integrated phases that take a mobile app from concept to scale
+              without architectural rewrites along the way.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {approach.map((step, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={step.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 flex flex-col">
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
+                      {step.description}
+                    </p>
+                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Explore
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              The Outcome
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Apps that earn the second download. NexDyne clients have cut
+              time-to-market by more than half and lifted retention into the top
+              quartile of their category.
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              We&rsquo;ve shipped consumer, enterprise, and regulated-industry
+              mobile apps from MVP through hyperscale&mdash;treating performance,
+              accessibility, and observability as launch features, not later
+              phases.
+            </p>
+            <Link href="/cases">
+              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                See How We Help Leaders Win
+              </span>
             </Link>
-            <Link href="/solutions/app-development">
-              <a className="text-sm hover:text-primary transition-colors">App Development</a>
-            </Link>
-            <Link href="/solutions/data-solutions">
-              <a className="text-sm hover:text-primary transition-colors">Data Solutions</a>
-            </Link>
-            <Link href="/solutions/digital-engagement">
-              <a className="text-sm hover:text-primary transition-colors">Digital Engagement</a>
-            </Link>
-            <Link href="/solutions/ecommerce">
-              <a className="text-sm hover:text-primary transition-colors">E-commerce</a>
-            </Link>
-            <Link href="/solutions/agentic-ai">
-              <a className="text-sm hover:text-primary transition-colors">Agentic AI</a>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 7 — White Case studies / proof */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Client Results
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Mobile apps, proved in outcomes.
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {cases.map((result, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link href={result.link} className="group block cursor-pointer">
+                  <div className="border border-charcoal/10 bg-white">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={result.image}
+                        alt={result.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="p-8 lg:p-10">
+                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
+                        {result.industry}
+                      </span>
+                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                        {result.title}
+                      </h3>
+                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
+                        {result.description}
+                      </p>
+                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                        Read Case
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="mt-14">
+            <Link href="/cases">
+              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                See All Case Studies
+              </span>
             </Link>
           </div>
         </div>
       </section>
 
-      <RelatedContent items={dataRelatedItems} />
+      {/* SLOT 8 — White Related capabilities / cross-sell */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              Related Offerings
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Adjacent capabilities for a complete mobile program.
+            </h3>
+          </motion.div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+            {relatedOfferings.map((offering, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="bg-white"
+              >
+                <Link href={offering.link} className="block h-full group cursor-pointer">
+                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
+                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                      {offering.title}
+                    </h3>
+                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
+                      Read More
+                    </span>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                  Ready to Talk?
+                </span>
+                <h2
+                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
+                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                >
+                  Bring our mobile team into your next product conversation.
+                </h2>
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                  I want to talk to your experts in:
+                </p>
+                <Select
+                  value={selectedIndustry}
+                  onValueChange={setSelectedIndustry}
+                >
+                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
+                    <SelectValue placeholder="Select an industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="healthcare">Healthcare</SelectItem>
+                    <SelectItem value="financial-services">
+                      Financial Services
+                    </SelectItem>
+                    <SelectItem value="retail">Retail &amp; E-commerce</SelectItem>
+                    <SelectItem value="technology">Technology</SelectItem>
+                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                    <SelectItem value="professional-services">
+                      Professional Services
+                    </SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
+                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                  We work with leaders ready to ship mobile apps that survive
+                  scale&mdash;native, React Native, or Flutter&mdash;and outlast
+                  the next architectural pivot.
+                </p>
+                <div className="space-y-5">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
+                  />
+                  <Link href="/contact">
+                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                      Contact us
+                    </span>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
