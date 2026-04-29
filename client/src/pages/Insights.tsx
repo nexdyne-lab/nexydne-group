@@ -1,155 +1,767 @@
-// Insights.tsx — PR 2 rewrite
-import { useState } from "react";
-import { Link } from "wouter";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import InsightsFeaturedHero from "@/components/insights/InsightsFeaturedHero";
 import { SEO } from "@/components/SEO";
 
-type Category = "All" | "Strategy" | "Technology" | "Operations" | "Growth" | "Sustainability";
-
-interface Insight {
-  id: string; title: string; description: string;
-  category: Exclude<Category, "All">;
-  readTime: string; date: string; url: string; image: string;
-  author?: string; authorRole?: string;
-}
-
-const insights: Insight[] = [
-  { id: "featured-1", title: "Why Intelligent Automation Isn\u0027t Optional Anymore", description: "Organizations that delay automation risk falling behind.", category: "Technology", readTime: "5 min read", date: "January 15, 2026", url: "/insights/why-intelligent-automation-isnt-optional-anymore", image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80", author: "Sarah Mitchell", authorRole: "Partner, Technology" },
-  { id: "featured-2", title: "How AI Agents Transform Enterprise Operations", description: "Autonomous AI agents are reshaping workflows and driving unprecedented operational efficiency across industries.", category: "Technology", readTime: "7 min read", date: "January 10, 2026", url: "/insights/how-ai-agents-transform-enterprise-operations", image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80", author: "David Chen", authorRole: "Senior Partner" },
-  { id: "featured-3", title: "The Complete Guide to Process Mining", description: "A comprehensive look at how process mining uncovers hidden inefficiencies.", category: "Operations", readTime: "10 min read", date: "January 5, 2026", url: "/insights/complete-guide-to-process-mining", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80", author: "Marcus Thompson", authorRole: "Partner, Operations" },
-  { id: "4", title: "The Corporate Venture Advantage", description: "Why established assets combined with startup speed create an unfair market advantage.", category: "Strategy", readTime: "6 min read", date: "December 15, 2025", url: "/insights/corporate-venture-advantage", image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80", author: "Jennifer Walsh", authorRole: "Partner, Strategy" },
-  { id: "5", title: "From MVP to Scale: Navigating Growth", description: "Navigating the valley of death and operationalizing your new venture.", category: "Growth", readTime: "10 min read", date: "December 10, 2025", url: "/insights/from-mvp-to-scale", image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80", author: "Michael Roberts", authorRole: "Senior Partner" },
-  { id: "6", title: "Building a Data-Driven Culture", description: "How to attract and retain entrepreneurial talent.", category: "Strategy", readTime: "5 min read", date: "December 5, 2025", url: "/insights/building-data-culture", image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80", author: "Lisa Park", authorRole: "Partner, Digital" },
-  { id: "7", title: "The Green Growth Imperative", description: "How sustainability is becoming a core driver of competitive advantage.", category: "Sustainability", readTime: "8 min read", date: "November 28, 2025", url: "/insights/green-growth-imperative", image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80", author: "Emma Richardson", authorRole: "Partner, Sustainability" },
-  { id: "8", title: "Digital Transformation Readiness Assessment", description: "Key indicators that signal it is time to automate.", category: "Technology", readTime: "6 min read", date: "November 20, 2025", url: "/insights/digital-transformation-readiness", image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80", author: "James Anderson", authorRole: "Partner, Technology" },
-  { id: "9", title: "Supply Chain Resilience in 2026", description: "Building adaptive supply chains that can withstand disruption.", category: "Operations", readTime: "7 min read", date: "November 15, 2025", url: "/insights/generative-supply-chain", image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80", author: "Robert Kim", authorRole: "Partner, Operations" },
-  { id: "10", title: "The CEO Guide to Data Modernization", description: "A strategic framework for transforming data capabilities.", category: "Strategy", readTime: "12 min read", date: "November 10, 2025", url: "/insights/ceo-guide-data-modernization", image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80", author: "Catherine Moore", authorRole: "Senior Partner" },
-  { id: "11", title: "Net Zero Transition: A Practical Roadmap", description: "How companies are successfully navigating the transition to net-zero.", category: "Sustainability", readTime: "9 min read", date: "November 5, 2025", url: "/insights/net-zero-transition", image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=800&q=80", author: "Thomas Green", authorRole: "Partner, Sustainability" },
-  { id: "12", title: "Customer Intelligence: Beyond Segmentation", description: "Moving from traditional customer segments to predictive, personalized engagement.", category: "Growth", readTime: "8 min read", date: "October 28, 2025", url: "/insights/beyond-segmentation", image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80", author: "Amanda Foster", authorRole: "Partner, Marketing & Sales" }
-];
-
-const categories: Category[] = ["All", "Strategy", "Technology", "Operations", "Growth", "Sustainability"];
-
 export default function Insights() {
-  const [selectedCategory, setSelectedCategory] = useState<Category>("All");
-  const filteredInsights = selectedCategory === "All" ? insights : insights.filter(insight => insight.category === selectedCategory);
-  const featuredInsights = filteredInsights.slice(0, 3);
-  const remainingInsights = filteredInsights.slice(3);
+  // ── Filter + UI state ──────────────────────────────────────────────────────
+  const [topicFilter, setTopicFilter] = useState<string>("all");
+  const [industryFilter, setIndustryFilter] = useState<string>("all");
+  const [contentTypeFilter, setContentTypeFilter] = useState<string>("articles");
+  const [tilesShown, setTilesShown] = useState<number>(12);
+  const [email, setEmail] = useState<string>("");
+  const [isSubmittingNewsletter, setIsSubmittingNewsletter] = useState<boolean>(false);
+  const [newsletterStatus, setNewsletterStatus] = useState<"idle" | "success">("idle");
+
+  // ── Featured article (drives Section 1 hero) ───────────────────────────────
+  const featuredArticle = {
+    slug: "the-hig-framework-why-mid-market-needs-more-than-strategy",
+    title: "The HIG Framework: why mid-market transformation needs more than strategy.",
+    dek: "Most consulting models stop at the deck. NexDyne builds, governs, and scales — across every vertical. Here's the doctrine behind it.",
+    heroImage: "/images/insights-featured-hig.jpg",
+    topic: "Strategy",
+    readTime: "8 min read",
+    date: "April 2026",
+  };
+
+  // ── Editor's Pick (drives Section 5 signal section — DIFFERENT article) ────
+  const editorsPick = {
+    slug: "ai-governance-the-quiet-discipline-that-makes-transformation-stick",
+    title: "AI governance: the quiet discipline that makes transformation stick.",
+    dek: "Most AI deployments fail not at launch but at month 18. Governance is what turns a one-time deployment into lasting organizational change.",
+    topic: "Governance",
+    readTime: "12 min read",
+    date: "April 2026",
+  };
+
+  // ── Filter pill option lists ───────────────────────────────────────────────
+  const topicOptions = [
+    { value: "all", label: "All" },
+    { value: "Strategy", label: "Strategy" },
+    { value: "Governance", label: "Governance" },
+    { value: "Customer Intelligence", label: "Customer Intelligence" },
+    { value: "Process Optimization", label: "Process Optimization" },
+    { value: "Enterprise Transformation", label: "Enterprise Transformation" },
+    { value: "Business Growth", label: "Business Growth" },
+  ];
+
+  const industryOptions = [
+    { value: "all", label: "All Industries" },
+    { value: "Education", label: "Education" },
+    { value: "Government & Public Sector", label: "Government & Public Sector" },
+    { value: "Agriculture & AgTech", label: "Agriculture & AgTech" },
+    { value: "Healthcare & Life Sciences", label: "Healthcare & Life Sciences" },
+    { value: "Financial Services", label: "Financial Services" },
+    { value: "Manufacturing", label: "Manufacturing" },
+    { value: "Retail & Consumer Goods", label: "Retail & Consumer Goods" },
+    { value: "Professional Services", label: "Professional Services" },
+  ];
+
+  const contentTypeOptions = [
+    { value: "articles", label: "Articles", disabled: false },
+    { value: "reports", label: "Reports", disabled: true },
+    { value: "podcasts", label: "Podcasts", disabled: true },
+  ];
+
+  // ── Mock article catalog (16 entries — primary grid source) ────────────────
+  const articles = [
+    {
+      slug: "predictive-analytics-the-quiet-edge-in-customer-retention",
+      title: "Predictive analytics: the quiet edge in customer retention.",
+      dek: "Most retention programs react to churn. Predictive models intervene before the customer has decided to leave — and the math behind that gap is where margin lives.",
+      heroImage: "/images/insights-predictive-retention.jpg",
+      topic: "Customer Intelligence",
+      industry: "Financial Services",
+      readTime: "9 min read",
+      date: "April 2026",
+    },
+    {
+      slug: "process-mining-what-the-logs-actually-tell-you",
+      title: "Process mining: what the logs actually tell you.",
+      dek: "Workflow diagrams describe what should happen. Process mining surfaces what does. The gap between the two is the cost center most operators can't see.",
+      heroImage: "/images/insights-process-mining.jpg",
+      topic: "Process Optimization",
+      industry: "Manufacturing",
+      readTime: "11 min read",
+      date: "April 2026",
+    },
+    {
+      slug: "ai-pilots-to-platform-the-month-18-problem",
+      title: "From AI pilots to platform: the month-18 problem.",
+      dek: "Most enterprises can ship a successful AI pilot. Far fewer turn it into a platform. The transition is where transformation actually happens — or quietly stalls.",
+      heroImage: "/images/insights-ai-platform.jpg",
+      topic: "Enterprise Transformation",
+      industry: "Healthcare & Life Sciences",
+      readTime: "13 min read",
+      date: "March 2026",
+    },
+    {
+      slug: "behavioral-segmentation-beyond-the-persona-deck",
+      title: "Behavioral segmentation beyond the persona deck.",
+      dek: "Persona decks describe who the customer was last quarter. Behavioral segmentation reveals what they're about to do. Three case studies on the difference.",
+      heroImage: "/images/insights-behavioral-segmentation.jpg",
+      topic: "Customer Intelligence",
+      industry: "Retail & Consumer Goods",
+      readTime: "7 min read",
+      date: "March 2026",
+    },
+    {
+      slug: "the-governance-gap-why-most-ai-policies-fail-quietly",
+      title: "The governance gap: why most AI policies fail quietly.",
+      dek: "Boards approve AI governance frameworks. Practitioners route around them. What separates the policies that hold from the ones that fold.",
+      heroImage: "/images/insights-governance-gap.jpg",
+      topic: "Governance",
+      industry: "Government & Public Sector",
+      readTime: "10 min read",
+      date: "March 2026",
+    },
+    {
+      slug: "growth-after-product-market-fit-the-second-curve",
+      title: "Growth after product-market fit: the second curve.",
+      dek: "The first curve is finding what customers want. The second is engineering the systems that scale it. Most growth stalls happen between the two.",
+      heroImage: "/images/insights-second-curve.jpg",
+      topic: "Business Growth",
+      industry: "Professional Services",
+      readTime: "8 min read",
+      date: "March 2026",
+    },
+    {
+      slug: "modernizing-legacy-without-the-rip-and-replace-trap",
+      title: "Modernizing legacy without the rip-and-replace trap.",
+      dek: "Wholesale replacement is the most expensive form of risk transfer. There's a quieter path that compounds — and it starts with the parts you don't replace.",
+      heroImage: "/images/insights-legacy-modernization.jpg",
+      topic: "Enterprise Transformation",
+      industry: "Manufacturing",
+      readTime: "12 min read",
+      date: "February 2026",
+    },
+    {
+      slug: "customer-data-platforms-when-they-pay-back",
+      title: "Customer data platforms: when they actually pay back.",
+      dek: "CDPs ship with a payback narrative the vendor wrote. The real economics depend on three operational variables most evaluations skip.",
+      heroImage: "/images/insights-cdp-payback.jpg",
+      topic: "Customer Intelligence",
+      industry: "Retail & Consumer Goods",
+      readTime: "9 min read",
+      date: "February 2026",
+    },
+    {
+      slug: "intelligent-automation-stop-automating-the-wrong-work",
+      title: "Intelligent automation: stop automating the wrong work.",
+      dek: "Automation ROI hinges on what you choose not to automate. A field guide to the diagnostic our process leads run before any RPA brief gets written.",
+      heroImage: "/images/insights-intelligent-automation.jpg",
+      topic: "Process Optimization",
+      industry: "Financial Services",
+      readTime: "10 min read",
+      date: "February 2026",
+    },
+    {
+      slug: "the-board-conversation-about-ai-that-isnt-happening",
+      title: "The board conversation about AI that isn't happening.",
+      dek: "Most boards are asking about AI strategy. Few are asking about AI accountability. The strategic risk lives almost entirely in the second question.",
+      heroImage: "/images/insights-board-ai-conversation.jpg",
+      topic: "Governance",
+      industry: "Financial Services",
+      readTime: "6 min read",
+      date: "February 2026",
+    },
+    {
+      slug: "go-to-market-acceleration-when-speed-helps-and-when-it-burns",
+      title: "Go-to-market acceleration: when speed helps and when it burns.",
+      dek: "Faster GTM works only when the underlying offer is repeatable. A practical test for distinguishing acceleration from premature scaling.",
+      heroImage: "/images/insights-gtm-acceleration.jpg",
+      topic: "Business Growth",
+      industry: "Education",
+      readTime: "7 min read",
+      date: "January 2026",
+    },
+    {
+      slug: "data-platform-engineering-the-foundation-everyone-skips",
+      title: "Data platform engineering: the foundation everyone skips.",
+      dek: "Analytics dashboards get the budget. The platform underneath them gets the postmortem. Why the order needs to flip — and what it takes to flip it.",
+      heroImage: "/images/insights-data-platform.jpg",
+      topic: "Enterprise Transformation",
+      industry: "Healthcare & Life Sciences",
+      readTime: "11 min read",
+      date: "January 2026",
+    },
+    {
+      slug: "voice-of-customer-programs-that-actually-change-the-product",
+      title: "Voice-of-customer programs that actually change the product.",
+      dek: "VoC programs collect signal at industrial scale and convert almost none of it into product change. The conversion mechanism is the program — not the survey.",
+      heroImage: "/images/insights-voc-product.jpg",
+      topic: "Customer Intelligence",
+      industry: "Agriculture & AgTech",
+      readTime: "8 min read",
+      date: "January 2026",
+    },
+    {
+      slug: "workflow-optimization-the-hidden-cost-of-context-switching",
+      title: "Workflow optimization: the hidden cost of context switching.",
+      dek: "The biggest productivity tax in modern operations is the switch between systems. Three patterns that quietly reclaim 15-25% of operator time.",
+      heroImage: "/images/insights-context-switching.jpg",
+      topic: "Process Optimization",
+      industry: "Professional Services",
+      readTime: "5 min read",
+      date: "January 2026",
+    },
+    {
+      slug: "pricing-strategy-the-discipline-most-mid-market-companies-defer",
+      title: "Pricing strategy: the discipline most mid-market companies defer.",
+      dek: "Pricing is the highest-leverage decision a mid-market company makes — and the one most often delegated to spreadsheets. Why the delegation costs more than it saves.",
+      heroImage: "/images/insights-pricing-strategy.jpg",
+      topic: "Business Growth",
+      industry: "Manufacturing",
+      readTime: "9 min read",
+      date: "January 2026",
+    },
+    {
+      slug: "building-a-case-for-change-without-a-burning-platform",
+      title: "Building a case for change without a burning platform.",
+      dek: "Crisis-driven transformation is overpriced. The harder, more durable mandate is one built before the crisis. A field-tested narrative architecture.",
+      heroImage: "/images/insights-case-for-change.jpg",
+      topic: "Strategy",
+      industry: "Education",
+      readTime: "14 min read",
+      date: "January 2026",
+    },
+  ];
+
+  // ── Curated topic rails (3 hand-picked clusters, 3 articles each) ──────────
+  const topicRails = [
+    {
+      eyebrow: "DEEP DIVE",
+      title: "Customer intelligence done right",
+      articles: [
+        articles[0], // predictive analytics
+        articles[3], // behavioral segmentation
+        articles[7], // CDP payback
+      ],
+    },
+    {
+      eyebrow: "NEW POV",
+      title: "Process optimization at scale",
+      articles: [
+        articles[1], // process mining
+        articles[8], // intelligent automation
+        articles[13], // workflow optimization
+      ],
+    },
+    {
+      eyebrow: "FROM THE FIELD",
+      title: "Enterprise transformation playbooks",
+      articles: [
+        articles[2], // ai pilots to platform
+        articles[6], // legacy modernization
+        articles[11], // data platform engineering
+      ],
+    },
+  ];
+
+  // ── Filter + pagination logic ──────────────────────────────────────────────
+  const filteredArticles = articles.filter((article) => {
+    if (topicFilter !== "all" && article.topic !== topicFilter) return false;
+    if (industryFilter !== "all" && article.industry !== industryFilter) return false;
+    // contentTypeFilter is "articles" by default; reports/podcasts are disabled at v1
+    return true;
+  });
+  const visibleArticles = filteredArticles.slice(0, tilesShown);
+  const hasFiltersActive = topicFilter !== "all" || industryFilter !== "all";
+
+  const resetFilters = () => {
+    setTopicFilter("all");
+    setIndustryFilter("all");
+    setTilesShown(12);
+  };
+
+  // ── Newsletter submit handler (stub — backend wiring is a follow-up) ───────
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmittingNewsletter(true);
+
+    // TODO: wire to real backend
+    // Example: await fetch('/api/newsletter', { method: 'POST', body: JSON.stringify({ email }) });
+    await new Promise((resolve) => setTimeout(resolve, 600));
+
+    setIsSubmittingNewsletter(false);
+    setNewsletterStatus("success");
+  };
 
   return (
-    <div className="min-h-screen bg-white text-charcoal">
-      <SEO title="Insights" description="Expert perspectives on strategy, technology, operations, and growth." canonical="/insights" />
+    <div className="min-h-screen bg-white font-sans text-charcoal">
+      <SEO
+        title="Insights"
+        description="Perspectives on intelligence, governance, and execution from the NexDyne practice. Articles, reports, and conversations on mid-market transformation."
+        canonical="/insights"
+      />
       <Navigation />
 
-      <section className="py-20 md:py-24 bg-white border-b border-charcoal/10">
-        <div className="px-6 sm:px-8 md:px-12 lg:px-16">
-          <div className="max-w-4xl">
-            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">Insights</span>
-            <h1 className="text-3xl sm:text-4xl md:text-[2.75rem] lg:text-[3.25rem] text-charcoal leading-[1.1] mb-6" style={{ fontWeight: 500, letterSpacing: "-0.02em" }}>Insights</h1>
-            <p className="text-base sm:text-lg text-charcoal/70 leading-[1.7] max-w-2xl">Expert perspectives on strategy, technology, operations, and growth from our consultants and partners around the world.</p>
+      {/* SLOT 1 — Featured-article hero (charcoal-washed editorial photo) */}
+      <InsightsFeaturedHero featuredArticle={featuredArticle} />
+
+      {/* SLOT 2 — White editorial intro / page voice */}
+      <section className="bg-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-3xl"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              NEXDYNE INSIGHTS
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Perspectives on intelligence, governance, and execution.
+            </h3>
+            <div className="space-y-6">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[68ch]">
+                NexDyne writes for the operators, partners, and boards who are accountable for transformation outcomes — not the slideware that explains them. Our work spans strategy, customer intelligence, process optimization, enterprise transformation, and business growth, with governance threaded through every engagement.
+              </p>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[68ch]">
+                We publish when we have something earned to say — typically two to four substantive pieces a month, plus quarterly long-form reports. Subscribe below to receive each new piece directly, or filter the catalog by topic and industry to find what's relevant to your remit.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 3 — White sticky pill-filter bar */}
+      <section className="bg-white border-b border-charcoal/10 sticky top-20 z-30">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16 py-6">
+          <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between lg:gap-8">
+            <div className="flex flex-col gap-4 flex-1 min-w-0">
+              {/* Topic pills */}
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/50 mr-2">
+                  Topic
+                </span>
+                {topicOptions.map((opt) => {
+                  const isActive = topicFilter === opt.value;
+                  return (
+                    <button
+                      key={opt.value}
+                      type="button"
+                      onClick={() => {
+                        setTopicFilter(opt.value);
+                        setTilesShown(12);
+                      }}
+                      className={
+                        isActive
+                          ? "inline-flex items-center px-4 py-2 text-[13px] uppercase tracking-[0.1em] border border-primary text-primary cursor-pointer transition-colors"
+                          : "inline-flex items-center px-4 py-2 text-[13px] uppercase tracking-[0.1em] border border-charcoal/15 text-charcoal/70 hover:border-primary hover:text-primary transition-colors cursor-pointer"
+                      }
+                    >
+                      {opt.label}
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Industry pills */}
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/50 mr-2">
+                  Industry
+                </span>
+                {industryOptions.map((opt) => {
+                  const isActive = industryFilter === opt.value;
+                  return (
+                    <button
+                      key={opt.value}
+                      type="button"
+                      onClick={() => {
+                        setIndustryFilter(opt.value);
+                        setTilesShown(12);
+                      }}
+                      className={
+                        isActive
+                          ? "inline-flex items-center px-4 py-2 text-[13px] uppercase tracking-[0.1em] border border-primary text-primary cursor-pointer transition-colors"
+                          : "inline-flex items-center px-4 py-2 text-[13px] uppercase tracking-[0.1em] border border-charcoal/15 text-charcoal/70 hover:border-primary hover:text-primary transition-colors cursor-pointer"
+                      }
+                    >
+                      {opt.label}
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Content type pills */}
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/50 mr-2">
+                  Format
+                </span>
+                {contentTypeOptions.map((opt) => {
+                  const isActive = contentTypeFilter === opt.value;
+                  if (opt.disabled) {
+                    return (
+                      <span
+                        key={opt.value}
+                        aria-disabled="true"
+                        className="inline-flex items-center px-4 py-2 text-[13px] uppercase tracking-[0.1em] border border-charcoal/10 text-charcoal/30 cursor-not-allowed"
+                      >
+                        {opt.label}
+                      </span>
+                    );
+                  }
+                  return (
+                    <button
+                      key={opt.value}
+                      type="button"
+                      onClick={() => setContentTypeFilter(opt.value)}
+                      className={
+                        isActive
+                          ? "inline-flex items-center px-4 py-2 text-[13px] uppercase tracking-[0.1em] border border-primary text-primary cursor-pointer transition-colors"
+                          : "inline-flex items-center px-4 py-2 text-[13px] uppercase tracking-[0.1em] border border-charcoal/15 text-charcoal/70 hover:border-primary hover:text-primary transition-colors cursor-pointer"
+                      }
+                    >
+                      {opt.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Reset filters — visible only when filters are active */}
+            {hasFiltersActive && (
+              <div className="flex lg:items-start lg:pt-1 shrink-0">
+                <button
+                  type="button"
+                  onClick={resetFilters}
+                  className="text-[13px] uppercase tracking-[0.1em] text-primary hover:text-primary-hover cursor-pointer transition-colors"
+                >
+                  Reset filters →
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </section>
 
-      <section className="bg-white py-6 border-b border-charcoal/10 sticky top-0 z-40">
-        <div className="px-6 sm:px-8 md:px-12 lg:px-16">
-          <div className="flex flex-wrap gap-2">
-            {categories.map((category) => (
+      {/* SLOT 4 — White primary article grid (3-col desktop, 12 + Load more) */}
+      <section className="bg-white py-16 md:py-24">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          {filteredArticles.length === 0 ? (
+            <div className="max-w-2xl py-12">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] mb-6">
+                No articles match your filters.
+              </p>
               <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={`px-5 py-2 text-[13px] font-semibold uppercase tracking-[0.1em] transition-colors ${
-                  selectedCategory === category
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-white text-charcoal border border-charcoal/15 hover:bg-subtle"
-                }`}
+                type="button"
+                onClick={resetFilters}
+                className="inline-block px-8 py-3 border border-charcoal/15 text-charcoal/80 hover:border-primary hover:text-primary transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer"
               >
-                {category}
+                Reset filters
               </button>
+            </div>
+          ) : (
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+                {visibleArticles.map((article, index) => (
+                  <motion.div
+                    key={article.slug}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: (index % 3) * 0.05 }}
+                  >
+                    <Link href={`/insights/${article.slug}`} className="group block cursor-pointer">
+                      <div className="aspect-[16/9] overflow-hidden">
+                        <img
+                          src={article.heroImage}
+                          alt=""
+                          loading={index >= 6 ? "lazy" : "eager"}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                        />
+                      </div>
+                      <span className="block text-[11px] uppercase tracking-[0.1em] text-charcoal/60 mt-6 mb-3">
+                        {article.topic}
+                      </span>
+                      <h3 className="text-xl md:text-2xl text-charcoal font-medium leading-[1.25] mb-3 group-hover:text-primary transition-colors">
+                        {article.title}
+                      </h3>
+                      <p className="text-base text-charcoal/75 leading-[1.55] line-clamp-2 mb-4">
+                        {article.dek}
+                      </p>
+                      <div className="text-[12px] text-charcoal/50">
+                        {article.readTime} · {article.date}
+                      </div>
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+
+              {tilesShown < filteredArticles.length && (
+                <div className="mt-16 flex justify-center">
+                  <button
+                    type="button"
+                    onClick={() => setTilesShown((prev) => prev + 12)}
+                    className="inline-block px-8 py-3 border border-charcoal/15 text-charcoal/80 hover:border-primary hover:text-primary transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer"
+                  >
+                    Load more articles
+                  </button>
+                </div>
+              )}
+            </>
+          )}
+        </div>
+      </section>
+
+      {/* SLOT 5 — Editor's Pick signal section (THE ONE Orange-Red moment) */}
+      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+              EDITOR'S PICK
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              {editorsPick.title}
+            </h2>
+            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+              {editorsPick.dek}
+            </p>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+              <div className="text-[13px] uppercase tracking-[0.1em] text-white/70">
+                {editorsPick.topic} · {editorsPick.readTime}
+              </div>
+              <Link href={`/insights/${editorsPick.slug}`}>
+                <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                  Read article →
+                </span>
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SLOT 6 — Light-grey curated topic rails (3 hand-picked clusters) */}
+      <section className="bg-grey py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              CURATED COLLECTIONS
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Hand-picked deep dives.
+            </h3>
+          </motion.div>
+
+          <div>
+            {topicRails.map((rail, railIndex) => (
+              <motion.div
+                key={rail.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: railIndex * 0.05 }}
+                className="mb-16 lg:mb-20 last:mb-0"
+              >
+                <span className="block text-[11px] uppercase tracking-[0.1em] text-charcoal/60 mb-3">
+                  {rail.eyebrow}
+                </span>
+                <h4 className="text-2xl md:text-3xl text-charcoal font-medium mb-8 leading-[1.2]">
+                  {rail.title}
+                </h4>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  {rail.articles.map((article) => (
+                    <Link
+                      key={article.slug}
+                      href={`/insights/${article.slug}`}
+                      className="group block cursor-pointer bg-white border border-charcoal/10 p-6 lg:p-7"
+                    >
+                      <span className="block text-[11px] uppercase tracking-[0.1em] text-charcoal/60 mb-3">
+                        {article.topic}
+                      </span>
+                      <h5 className="text-base text-charcoal font-medium group-hover:text-primary transition-colors leading-[1.3] mb-4">
+                        {article.title}
+                      </h5>
+                      <div className="text-[12px] text-charcoal/50">
+                        {article.readTime} · {article.date}
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {featuredInsights.length > 0 && (
-        <section className="py-20 md:py-24 bg-white">
-          <div className="px-6 sm:px-8 md:px-12 lg:px-16">
-            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-14">Featured Insights</span>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-12">
-              {featuredInsights.map((insight, i) => (
-                <motion.div key={insight.id} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.05, margin: "0px 0px 80px 0px" }} transition={{ delay: i * 0.08, duration: 0.5 }} className="group">
-                  <Link href={insight.url} className="block outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2">
-                    <div className="cursor-pointer">
-                      <div className="aspect-[16/10] overflow-hidden bg-subtle">
-                        <img src={insight.image} alt={insight.title} className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" />
-                      </div>
-                      <div className="pt-6 md:pt-7">
-                        <span className="text-[11px] font-semibold uppercase tracking-[0.15em] text-primary">{insight.category}</span>
-                        <h3 className="mt-3 text-xl sm:text-[1.375rem] text-charcoal leading-[1.2] group-hover:text-primary transition-colors" style={{ fontWeight: 500, letterSpacing: "-0.01em" }}>{insight.title}</h3>
-                        <p className="mt-3 text-[14px] text-charcoal/70 leading-[1.65]">{insight.description}</p>
-                        <p className="mt-4 text-[13px] text-charcoal/60">{insight.date} · {insight.readTime}</p>
-                      </div>
-                    </div>
-                  </Link>
-                </motion.div>
-              ))}
+      {/* SLOT 7 — Light-grey newsletter signup (dedicated band) */}
+      <section className="bg-grey py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center max-w-5xl mx-auto"
+          >
+            <div>
+              <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+                STAY INFORMED
+              </span>
+              <h3
+                className="text-3xl md:text-4xl text-charcoal leading-[1.1] mb-6"
+                style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              >
+                Get NexDyne insights in your inbox.
+              </h3>
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[50ch]">
+                Quarterly perspectives on intelligence, governance, and execution. No marketing noise.
+              </p>
             </div>
-          </div>
-        </section>
-      )}
 
-      {remainingInsights.length > 0 && (
-        <section className="py-20 md:py-24 bg-subtle">
-          <div className="px-6 sm:px-8 md:px-12 lg:px-16">
-            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-14">All Insights</span>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-              {remainingInsights.map((insight, i) => (
-                <motion.div key={insight.id} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.05, margin: "0px 0px 80px 0px" }} transition={{ delay: i * 0.06, duration: 0.5 }} className="group">
-                  <Link href={insight.url} className="block outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2">
-                    <div className="cursor-pointer">
-                      <div className="aspect-[16/10] overflow-hidden bg-white">
-                        <img src={insight.image} alt={insight.title} className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" />
-                      </div>
-                      <div className="pt-5">
-                        <span className="text-[11px] font-semibold uppercase tracking-[0.15em] text-primary">{insight.category}</span>
-                        <h3 className="mt-2 text-base sm:text-lg text-charcoal leading-[1.25] group-hover:text-primary transition-colors" style={{ fontWeight: 500, letterSpacing: "-0.01em" }}>{insight.title}</h3>
-                        <p className="mt-2 text-[13px] text-charcoal/70 leading-[1.65]">{insight.description}</p>
-                        <p className="mt-3 text-[12px] text-charcoal/60">{insight.date} · {insight.readTime}</p>
-                      </div>
-                    </div>
-                  </Link>
-                </motion.div>
-              ))}
+            <div>
+              {newsletterStatus === "success" ? (
+                <div className="bg-white border border-charcoal/10 p-8 lg:p-10">
+                  <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+                    SUBSCRIBED
+                  </span>
+                  <p className="text-base md:text-lg text-charcoal/80 leading-[1.65]">
+                    Thanks — you're on the list. Expect our next issue soon.
+                  </p>
+                </div>
+              ) : (
+                <form onSubmit={handleNewsletterSubmit} className="flex flex-col gap-4">
+                  <label htmlFor="newsletter-email" className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 block">
+                    Work email
+                  </label>
+                  <input
+                    id="newsletter-email"
+                    type="email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="you@company.com"
+                    className="w-full bg-white border border-charcoal/20 px-4 py-3 text-base text-charcoal focus:outline-none focus:border-charcoal transition-colors"
+                  />
+                  <div>
+                    <button
+                      type="submit"
+                      disabled={isSubmittingNewsletter}
+                      className="inline-block px-8 py-4 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer disabled:opacity-50"
+                    >
+                      {isSubmittingNewsletter ? "Subscribing…" : "Subscribe"}
+                    </button>
+                  </div>
+                </form>
+              )}
             </div>
-            <div className="text-center mt-14">
-              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold text-[13px] tracking-[0.1em] uppercase hover:bg-primary-hover transition-colors cursor-pointer">Load More</span>
-            </div>
-          </div>
-        </section>
-      )}
+          </motion.div>
+        </div>
+      </section>
 
-      {filteredInsights.length === 0 && (
-        <section className="py-20 md:py-24 bg-white">
-          <div className="px-6 sm:px-8 md:px-12 lg:px-16 text-center">
-            <p className="text-lg text-charcoal/60">No insights found for this category.</p>
-          </div>
-        </section>
-      )}
+      {/* SLOT 8 — White secondary content-type rails (Reports + Podcasts placeholder) */}
+      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 max-w-[60ch]"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              MORE FORMATS
+            </span>
+            <h3
+              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Coming soon.
+            </h3>
+          </motion.div>
 
-      <section className="py-20 md:py-24 bg-white border-t border-charcoal/10">
-        <div className="px-6 sm:px-8 md:px-12 lg:px-16">
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">Stay Informed</span>
-            <h2 className="text-3xl sm:text-4xl md:text-[2.5rem] text-charcoal leading-[1.15] mb-6" style={{ fontWeight: 500, letterSpacing: "-0.02em" }}>Stay Informed</h2>
-            <p className="text-base sm:text-lg text-charcoal/70 leading-[1.7] mb-10 max-w-2xl mx-auto">Subscribe to receive our latest insights and perspectives directly in your inbox.</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
-              <input type="email" placeholder="Enter your email" className="flex-1 px-5 py-3 border-b border-charcoal/30 text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:border-primary transition-colors bg-transparent" />
-              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold text-[13px] tracking-[0.1em] uppercase hover:bg-primary-hover transition-colors cursor-pointer whitespace-nowrap">Subscribe</span>
+          <div className="grid md:grid-cols-2 gap-px bg-charcoal/10 border border-charcoal/10">
+            <div className="bg-white">
+              <div className="h-full p-12 flex flex-col">
+                <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+                  REPORTS · COMING SOON
+                </span>
+                <h3 className="text-2xl md:text-3xl text-charcoal font-medium mb-5 leading-[1.2]">
+                  In-depth research and frameworks.
+                </h3>
+                <p className="text-base text-charcoal/60 leading-[1.6] flex-1">
+                  Long-form research on the doctrines and frameworks behind transformation — multi-quarter studies, primary research with mid-market operators, and the methodology papers that sit behind the engagements. Subscribe above to be the first to receive them when the catalog opens.
+                </p>
+              </div>
             </div>
-            <p className="mt-5 text-[12px] text-charcoal/50">By subscribing, you agree to our privacy policy.</p>
+            <div className="bg-white">
+              <div className="h-full p-12 flex flex-col">
+                <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+                  PODCASTS · COMING SOON
+                </span>
+                <h3 className="text-2xl md:text-3xl text-charcoal font-medium mb-5 leading-[1.2]">
+                  Conversations with practitioners.
+                </h3>
+                <p className="text-base text-charcoal/60 leading-[1.6] flex-1">
+                  Long-form interviews with the operators, partners, and board members actually running transformation programs — recorded after the deck is closed and the engagement is in flight. Subscribe above to be notified when the first episode drops.
+                </p>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
+
+      {/* SLOT 9 — Charcoal closing CTA */}
+      <section className="bg-charcoal text-white py-24 md:py-32">
+        <div className="container px-6 sm:px-8 md:px-12 lg:px-16 max-w-5xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-3xl"
+          >
+            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+              WORK WITH US
+            </span>
+            <h2
+              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-8"
+              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            >
+              Have a problem worth solving?
+            </h2>
+            <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-10 max-w-[60ch]">
+              Tell us what you're working on. We'll route you to the practice lead who can help.
+            </p>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-10">
+              <Link href="/contact">
+                <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                  Talk to a partner →
+                </span>
+              </Link>
+              <Link href="/case-studies">
+                <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-primary hover:text-primary transition-colors cursor-pointer pb-1">
+                  See our case studies →
+                </span>
+              </Link>
+            </div>
+          </motion.div>
         </div>
       </section>
 
