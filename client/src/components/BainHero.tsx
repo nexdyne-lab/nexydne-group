@@ -19,7 +19,7 @@ const featuredSlides: FeaturedSlide[] = [
     title: "How AI Agents Are Reshaping Enterprise Operations",
     ctaText: "READ MORE",
     ctaLink: "/insights/ai-agents-transform-operations",
-    backgroundImage: "https://files.manuscdn.com/user_upload_by_module/session_file/3104196630322124911/BetaSlTnfndlplcK.jpg",
+    backgroundImage: "/images/ai-in-enterprises.jpg",
     tabLabel: "AI in Enterprise"
   },
   {
