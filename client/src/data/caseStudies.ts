@@ -194,18 +194,18 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: "manufacturing-predictive-maintenance",
-    title: "Factory increases uptime with predictive maintenance",
+    title: "Manufacturing plant cuts downtime 35% with predictive maintenance dashboard",
     clientIndustry: "Manufacturing",
-    summary: "An automotive parts manufacturer suffered from frequent unplanned downtime. We connected their CNC machines to an IoT platform that predicted component failures weeks in advance.",
-    challenge: "Critical CNC machines were failing unexpectedly, halting production lines and causing missed delivery deadlines. Preventive maintenance (servicing on a schedule) was inefficient—parts were replaced too early, or failures happened between services.",
-    solution: "We retrofitted legacy machines with vibration and acoustic sensors. We built a machine learning model that learned the 'sound' of a healthy machine versus a degrading one. The system provided a 'Health Score' for each asset and predicted Remaining Useful Life (RUL), allowing maintenance to be scheduled during planned shifts.",
+    summary: "A 24/7 food processing plant moved from reactive to condition-based maintenance. NexDyne built an ML-augmented dashboard that predicted equipment failures 2-4 weeks in advance across 150 critical assets, replacing emergency repairs with scheduled work during planned downtime.",
+    challenge: "A food processing plant operating 24/7 with 150 pieces of critical equipment lost an average of 12 hours per week to unplanned downtime — at $15K per hour in lost production. Maintenance was reactive: a conveyor motor would burn out mid-shift, a refrigeration compressor would fail overnight, a packaging line would jam from worn components. Sensor data existed but no one analyzed it until after failures occurred.",
+    solution: "NexDyne built a predictive maintenance dashboard using IoT sensor data and ML models trained on 18 months of operational history. A real-time equipment health heatmap color-coded all 150 assets by risk score; a failure-prediction timeline forecast component failures 2-4 weeks ahead with confidence intervals; the dashboard auto-generated work orders with mobile notifications, recommended actions, and asset locations for the maintenance team.",
     results: [
-      "50% reduction in unplanned downtime",
-      "20% extension of machine useful life",
-      "15% reduction in maintenance labor costs",
-      "ROI achieved within 6 months"
+      "35% reduction in unplanned downtime across critical equipment",
+      "85% failure prediction accuracy on a 30-day horizon",
+      "$2.4M in annual operational savings",
+      "Maintenance shifted from emergency reactive to scheduled condition-based work"
     ],
-    techStack: ["Siemens MindSphere", "Python", "Scikit-learn", "InfluxDB", "Angular"],
+    techStack: ["Python", "Scikit-learn", "TensorFlow", "Time-series ML", "IoT sensors", "React"],
     capability: "Internet of Things"
   },
 
