@@ -48,12 +48,13 @@ export default function CaseStudyLawFirm() {
               title="Transforming contract review for a leading US law firm"
               industry="Professional Services"
               summary="A 75-attorney boutique law firm partnered with us to automate contract review and analysis, reducing turnaround time by 65% while maintaining 99% accuracy across hundreds of legal documents."
-              challenge="See full case study for detailed challenge description."
-              solution="See full case study for detailed solution description."
+              challenge="A 75-attorney boutique law firm in New York was handling 60-80 commercial contracts monthly across M&A, real estate, and corporate governance practices. Senior partners spent 60-70% of their time on routine contract analysis — reading lengthy documents to identify standard clauses, flag risk provisions, and ensure regulatory compliance. Junior associates were overwhelmed with document preparation under billable hour pressures. Client expectations for faster turnaround were rising while competition from top-tier firms and legal tech startups intensified. Leadership identified contract review automation as a strategic priority — not to replace legal expertise, but to augment it, freeing attorneys to focus on advisory work, complex negotiations, and client relationships rather than routine document analysis."
+              solution="NexDyne ran a six-week diagnostic across the firm's New York and Washington DC offices, analyzing hundreds of historical contracts and interviewing partners across practice groups. We then built a custom AI platform trained on the firm's contract library and US legal frameworks, using NLP to extract key terms, identify clause types, and compare provisions against the firm's preferred language and federal and state regulatory requirements. The platform integrates with the firm's document management system, generates structured summaries within minutes, flags high-risk clauses for attorney review, and suggests alternative language from the firm's precedent library. Deployment was phased: corporate practice first, refined over three months based on attorney feedback, then rolled out to real estate, finance, and other practice areas with customized training per group's specific contract types."
               results={[
-                "Significant business impact achieved",
-                "Measurable improvements delivered",
-                "Client objectives exceeded"
+                "65% reduction in contract review turnaround time (4.5 hours to 1.5 hours)",
+                "850 contracts analyzed in the first six months across all practice groups",
+                "99% accuracy in clause identification and risk flagging",
+                "2.5x increase in contract review capacity without adding headcount"
               ]}
               variant="hero"
             />
