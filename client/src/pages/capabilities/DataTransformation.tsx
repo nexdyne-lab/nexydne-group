@@ -18,6 +18,59 @@ export default function DataTransformation() {
         // TODO: confirm with practice lead before publish
         { number: "12-month", label: "Average engagement length" },
       ]}
+      ambitions={[
+        {
+          title: "Modernize legacy data systems",
+          description:
+            "Replace siloed warehouses and stale dashboards with cloud-native platforms that scale with your business and surface insights in real time.",
+        },
+        {
+          title: "Build a single source of truth",
+          description:
+            "Unify data across systems, departments, and business units so leaders make decisions from the same numbers.",
+        },
+        {
+          title: "Enable real-time analytics",
+          description:
+            "Move from end-of-month reports to live dashboards that catch issues as they happen and turn data into a daily decision input.",
+        },
+        {
+          title: "Activate data products at scale",
+          description:
+            "Turn raw data into reusable products — APIs, models, dashboards — that other teams consume on demand without bottlenecks on a central team.",
+        },
+        {
+          title: "Establish data governance",
+          description:
+            "Set the policies, ownership, and quality standards that keep data trustworthy as the organization grows.",
+        },
+        {
+          title: "Accelerate AI/ML enablement",
+          description:
+            "Build the clean, accessible, governed data foundations that take AI projects from POC to production.",
+        },
+      ]}
+      ambitionsCTAText="Talk to us about your Data Transformation ambition →"
+      howWeCanHelp={[
+        {
+          title: "Value-Focused Execution",
+          description:
+            "We don't just build data systems; we build business value. Our approach prioritizes high-impact opportunities and ties every initiative to measurable returns from day one.",
+          href: "/capabilities/data-transformation/value-focused",
+        },
+        {
+          title: "Accelerated Impact",
+          description:
+            "We leverage proprietary accelerators, pre-built models, and industry playbooks to cut delivery times by up to 50% — getting working data products into your hands in weeks, not quarters.",
+          href: "/capabilities/data-transformation/accelerated-impact",
+        },
+        {
+          title: "Lasting Capabilities",
+          description:
+            "Technology is easy. People are hard. We build the skills, culture, and operating models your team needs to sustain innovation long after we leave.",
+          href: "/capabilities/data-transformation/lasting-capabilities",
+        },
+      ]}
       // TODO: David — populate 2-3 thought-leadership insights for Data Transformation hub
       thoughtLeadership={[]}
       approachPillars={[

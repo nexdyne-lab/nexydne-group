@@ -13,6 +13,9 @@ export interface CapabilityHubTemplateProps {
   heroSubtitle: string;
   heroImage: string;
   experienceStats: { number: string; label: string }[];
+  ambitions?: { title: string; description: string }[];
+  ambitionsCTAText?: string;
+  howWeCanHelp?: { title: string; description: string; href: string }[];
   thoughtLeadership: {
     slug: string;
     title: string;
@@ -41,6 +44,9 @@ export default function CapabilityHubTemplate(
     heroSubtitle,
     heroImage,
     experienceStats,
+    ambitions = [],
+    ambitionsCTAText,
+    howWeCanHelp = [],
     thoughtLeadership,
     approachPillars,
     featuredCases,
@@ -74,6 +80,8 @@ export default function CapabilityHubTemplate(
       : "grid grid-cols-2 gap-4";
 
   const ctaHeading = ctaLeadName || `Talk to our ${hubName} lead`;
+  const ambitionsCTA =
+    ambitionsCTAText || `Talk to us about your ${hubName} ambition →`;
 
   return (
     <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
@@ -151,6 +159,111 @@ export default function CapabilityHubTemplate(
           </div>
         </div>
       </section>
+
+      {/* Ambitions — non-clickable starting-point cards */}
+      {ambitions.length > 0 && (
+        <section className="bg-white">
+          <div className="container px-4 md:px-12 py-24 md:py-32">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="max-w-4xl"
+            >
+              <span className="text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5 block">
+                Where to start
+              </span>
+              <h3 className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] font-medium tracking-[-0.02em] mb-12">
+                What's your {hubName} ambition?
+              </h3>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10 mb-12">
+              {ambitions.map((ambition, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.05 }}
+                  className="bg-white p-8 lg:p-10"
+                >
+                  <h4 className="text-xl text-charcoal font-semibold mb-3 leading-[1.25]">
+                    {ambition.title}
+                  </h4>
+                  <p className="text-base text-charcoal/75 leading-[1.55]">
+                    {ambition.description}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <Link href="/contact">
+                <span className="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold text-[13px] tracking-[0.1em] uppercase hover:bg-primary-hover transition-colors cursor-pointer">
+                  {ambitionsCTA}
+                </span>
+              </Link>
+            </motion.div>
+          </div>
+        </section>
+      )}
+
+      {/* How we can help — clickable service cards */}
+      {howWeCanHelp.length > 0 && (
+        <section className="bg-grey">
+          <div className="container px-4 md:px-12 py-24 md:py-32">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="max-w-4xl"
+            >
+              <span className="text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5 block">
+                How we can help
+              </span>
+              <h3 className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] font-medium tracking-[-0.02em] mb-12">
+                Our {hubName} services
+              </h3>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+              {howWeCanHelp.map((service, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.05 }}
+                  className="bg-white"
+                >
+                  <Link
+                    href={service.href}
+                    className="bg-white p-8 lg:p-10 cursor-pointer h-full group block"
+                  >
+                    <h4 className="text-xl text-charcoal font-semibold mb-3 leading-[1.25] group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h4>
+                    <p className="text-base text-charcoal/75 leading-[1.55] mb-4">
+                      {service.description}
+                    </p>
+                    <span className="text-[13px] uppercase tracking-[0.1em] text-primary font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                      Read more <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Thought Leadership */}
       <section className="bg-white">
