@@ -32,10 +32,10 @@ export default function CaseStudyHealthcareAnalytics() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Case Study · Healthcare
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-medium tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               Reducing hospital readmissions by <span className="text-primary">34%</span> through predictive analytics
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mb-5 sm:mb-6 md:mb-8">
@@ -47,12 +47,13 @@ export default function CaseStudyHealthcareAnalytics() {
               title="Reducing hospital readmissions by 34% through predictive analytics"
               industry="Healthcare"
               summary="A 210-employee accountable care organization deployed advanced analytics to identify high-risk patients, reducing readmissions by 34% and improving quality scores."
-              challenge="See full case study for detailed challenge description."
-              solution="See full case study for detailed solution description."
+              challenge="An integrated health system with 8 hospitals and a Medicare Shared Savings Program ACO was losing money on value-based contracts because it could not see population health risk in time to act on it. Clinical, claims, social-determinants, and operational data lived in eleven separate systems, and analytics teams produced retrospective reports that arrived weeks after the events they described. Care managers were assigning patients to chronic disease programs based on stale risk scores, readmissions in the post-acute window were running 4 percentage points above the system's target, and CMS penalties had crossed seven figures for the second year running. The Chief Medical Officer and Chief Analytics Officer needed a single source of truth for population health that integrated clinical and financial signals, surfaced rising-risk patients before they decompensated, and gave care managers actionable workflows rather than another dashboard nobody opened."
+              solution="NexDyne built a real-time healthcare data analytics platform that unifies the system's clinical, claims, and operational data and embeds predictive risk models into care-management workflows. We started with a data engineering effort to land all eleven source systems into a governed lakehouse, with master patient indexing, terminology normalization, and a clinical data model aligned to USCDI. Predictive models trained on the system's own outcomes identify rising-risk patients across readmission, deterioration, and high-cost-claimant trajectories, with explainable feature contributions so care managers understand why a patient surfaced. The platform pushes patient-level recommendations directly into the EHR's care-management module rather than asking clinicians to log into yet another tool, and a population-health dashboard gives leadership real-time visibility into ACO performance against CMS benchmarks. Implementation followed a service-line-based rollout — heart failure first, then COPD, diabetes, and oncology — with workflow co-design alongside the actual care managers using the tools."
               results={[
-                "Significant business impact achieved",
-                "Measurable improvements delivered",
-                "Client objectives exceeded"
+                "34% reduction in 30-day readmissions across participating service lines",
+                "$3.2M annual savings from avoided CMS penalties and improved value-based contract performance",
+                "92% accuracy in high-risk patient identification, validated against six months of outcomes",
+                "Care-management caseloads grew without adding staff thanks to better patient targeting"
               ]}
               variant="hero"
             />
@@ -77,7 +78,7 @@ export default function CaseStudyHealthcareAnalytics() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-6xl font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-6xl font-medium text-primary mb-2">{stat.metric}</div>
                 <div className="text-lg text-white">{stat.label}</div>
                 <div className="text-sm text-white/60">{stat.sublabel}</div>
               </motion.div>
@@ -112,10 +113,10 @@ export default function CaseStudyHealthcareAnalytics() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Opportunity
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
               Managing population health risk in a value-based care environment
             </h2>
           </motion.div>
@@ -167,10 +168,10 @@ export default function CaseStudyHealthcareAnalytics() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
               Predictive analytics that enables proactive, data-driven care management
             </h2>
           </motion.div>
@@ -202,10 +203,10 @@ export default function CaseStudyHealthcareAnalytics() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
               From financial risk to value-based care success
             </h2>
           </motion.div>
@@ -232,10 +233,10 @@ export default function CaseStudyHealthcareAnalytics() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Get In Touch
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Our experts</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white">Our experts</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl">
@@ -244,7 +245,7 @@ export default function CaseStudyHealthcareAnalytics() {
                 name: "Dr. Robert Martinez",
                 location: "Philadelphia",
                 description: "Leads healthcare analytics practice with focus on population health management, predictive modeling, and value-based care optimization.",
-                image: "/author-female-2.55e29921.jpg"
+                image: "/author-male-1.f0aef13a.jpg"
               },
               {
                 name: "Lisa Thompson",
@@ -259,12 +260,12 @@ export default function CaseStudyHealthcareAnalytics() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white text-charcoal p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl"
+                className="bg-white text-charcoal p-4 sm:p-6 md:p-8 rounded-md"
               >
                 <div className="flex items-start gap-4">
                   <img className="w-20 h-20 rounded-full object-cover flex-shrink-0" src={expert.image} alt={expert.name} />
                   <div>
-                    <h3 className="text-2xl font-bold mb-2">{expert.name}</h3>
+                    <h3 className="text-2xl font-semibold mb-2">{expert.name}</h3>
                     <p className="text-sm text-primary mb-4">{expert.location}</p>
                     <p className="text-base leading-relaxed text-charcoal/70">
                       {expert.description}
@@ -287,10 +288,10 @@ export default function CaseStudyHealthcareAnalytics() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">More success stories</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -328,19 +329,19 @@ export default function CaseStudyHealthcareAnalytics() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={item.link} className="group block h-full">
-                  <div className="aspect-[4/3] overflow-hidden mb-6 rounded-lg sm:rounded-xl relative bg-base/10">
+                  <div className="aspect-[4/3] overflow-hidden mb-6 rounded-md relative bg-base/10">
                     <img
                       src={item.image}
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute top-4 left-4 bg-base/90 px-3 py-1 rounded-full">
-                      <span className="text-xs font-bold text-primary">{item.metric}</span>
+                      <span className="text-xs font-semibold text-primary">{item.metric}</span>
                       <span className="text-xs text-white/70 ml-1">{item.metricLabel}</span>
                     </div>
                   </div>
-                  <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">
+                  <span className="text-xs font-semibold text-primary uppercase tracking-wider">{item.industry}</span>
+                  <h3 className="text-xl font-semibold text-charcoal mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">

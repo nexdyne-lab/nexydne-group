@@ -32,10 +32,10 @@ export default function CaseStudyHospitalWorkflow() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Case Study · Healthcare
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-medium tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               Reducing clinical documentation burden by <span className="text-primary">68%</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mb-5 sm:mb-6 md:mb-8">
@@ -47,12 +47,13 @@ export default function CaseStudyHospitalWorkflow() {
               title="Reducing clinical documentation burden by 68%"
               industry="Healthcare"
               summary="A 350-employee regional hospital deployed intelligent clinical workflow automation, reducing documentation time by 68% while improving physician satisfaction and quality metrics."
-              challenge="See full case study for detailed challenge description."
-              solution="See full case study for detailed solution description."
+              challenge="A 540-bed hospital network operating across three campuses was confronting a physician burnout crisis driven by clinical documentation burden. Physicians were spending an average of two hours on EHR work for every hour of patient contact — completing notes, ordering follow-ups, reconciling medication lists, and processing inboxes — much of it after hours from home. Engagement scores in the medical staff survey had fallen for three consecutive years, and the network had lost 14 physicians in 18 months citing administrative load. Patient throughput in clinic was constrained by documentation backlog, and nursing teams reported repeated rework on schedule changes that cascaded across departments. Hospital leadership knew that without intervention, retention would worsen, recruiting costs would balloon, and patient access would deteriorate — particularly in primary care and oncology where capacity was already stretched."
+              solution="NexDyne deployed an ambient clinical intelligence and workflow automation program targeted at the highest-friction physician workflows. We began with shadowing and time-motion studies across primary care, hospital medicine, and oncology to quantify documentation burden and identify automation candidates. The platform combines an ambient documentation assistant — listening to patient encounters with consent and producing structured note drafts in the physician's voice — with workflow bots that automate scheduling reconciliation, results routing, prior authorization handoffs, and inbox triage. Integration with the network's Epic instance ensures notes flow into the chart in the correct format, and a clinician-facing review interface lets physicians edit and sign in seconds rather than rebuild the note from scratch. We trained ML models on the network's own documentation patterns to match physician style and specialty conventions, and we ran a four-month pilot in primary care before scaling to additional service lines with dedicated change champions."
               results={[
-                "Significant business impact achieved",
-                "Measurable improvements delivered",
-                "Client objectives exceeded"
+                "68% reduction in clinical documentation time across all participating physicians",
+                "42% improvement in physician satisfaction scores in the annual medical staff survey",
+                "$4.8M annual benefit from efficiency gains, retention, and reclaimed clinic capacity",
+                "15 hours saved per physician per week, redirected to patient care and same-day access"
               ]}
               variant="hero"
             />
@@ -77,7 +78,7 @@ export default function CaseStudyHospitalWorkflow() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-6xl font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-6xl font-medium text-primary mb-2">{stat.metric}</div>
                 <div className="text-lg text-white">{stat.label}</div>
                 <div className="text-sm text-white/60">{stat.sublabel}</div>
               </motion.div>
@@ -112,10 +113,10 @@ export default function CaseStudyHospitalWorkflow() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Opportunity
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
               Addressing physician burnout driven by administrative burden and EHR complexity
             </h2>
           </motion.div>
@@ -167,10 +168,10 @@ export default function CaseStudyHospitalWorkflow() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
               AI-powered clinical documentation that works the way physicians think
             </h2>
           </motion.div>
@@ -202,10 +203,10 @@ export default function CaseStudyHospitalWorkflow() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
               From physician burnout to workplace satisfaction and clinical excellence
             </h2>
           </motion.div>
@@ -232,10 +233,10 @@ export default function CaseStudyHospitalWorkflow() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Get In Touch
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Our experts</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white">Our experts</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl">
@@ -250,7 +251,7 @@ export default function CaseStudyHospitalWorkflow() {
                 name: "Michael Rodriguez",
                 location: "Seattle",
                 description: "Specializes in natural language processing for clinical documentation, Epic integration, and HIPAA-compliant AI applications.",
-                image: "/author-female-2.55e29921.jpg"
+                image: "/author-male-1.f0aef13a.jpg"
               }
             ].map((expert, index) => (
               <motion.div
@@ -259,12 +260,12 @@ export default function CaseStudyHospitalWorkflow() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white text-charcoal p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl"
+                className="bg-white text-charcoal p-4 sm:p-6 md:p-8 rounded-md"
               >
                 <div className="flex items-start gap-4">
                   <img className="w-20 h-20 rounded-full object-cover flex-shrink-0" src={expert.image} alt={expert.name} />
                   <div>
-                    <h3 className="text-2xl font-bold mb-2">{expert.name}</h3>
+                    <h3 className="text-2xl font-semibold mb-2">{expert.name}</h3>
                     <p className="text-sm text-primary mb-4">{expert.location}</p>
                     <p className="text-base leading-relaxed text-charcoal/70">
                       {expert.description}
@@ -287,10 +288,10 @@ export default function CaseStudyHospitalWorkflow() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">More success stories</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -328,19 +329,19 @@ export default function CaseStudyHospitalWorkflow() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={item.link} className="group block h-full">
-                  <div className="aspect-[4/3] overflow-hidden mb-6 rounded-lg sm:rounded-xl relative bg-base/10">
+                  <div className="aspect-[4/3] overflow-hidden mb-6 rounded-md relative bg-base/10">
                     <img
                       src={item.image}
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute top-4 left-4 bg-base/90 px-3 py-1 rounded-full">
-                      <span className="text-xs font-bold text-primary">{item.metric}</span>
+                      <span className="text-xs font-semibold text-primary">{item.metric}</span>
                       <span className="text-xs text-white/70 ml-1">{item.metricLabel}</span>
                     </div>
                   </div>
-                  <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">
+                  <span className="text-xs font-semibold text-primary uppercase tracking-wider">{item.industry}</span>
+                  <h3 className="text-xl font-semibold text-charcoal mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">

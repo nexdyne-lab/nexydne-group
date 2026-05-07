@@ -33,10 +33,10 @@ export default function CaseStudyHealthcarePatient() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Case Study · Healthcare
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-medium tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               Building an AI-powered <span className="text-primary">patient engagement</span> platform
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mb-5 sm:mb-6 md:mb-8">
@@ -48,12 +48,13 @@ export default function CaseStudyHealthcarePatient() {
               title="Building an AI-powered patient engagement platform"
               industry="Healthcare"
               summary="A 4-clinic healthcare provider with 120 employees deployed intelligent automation to streamline patient communications, improving satisfaction scores by 38% and reducing wait times by 45%."
-              challenge="See full case study for detailed challenge description."
-              solution="See full case study for detailed solution description."
+              challenge="A regional healthcare provider operating 12 clinics across the Midwest was struggling with patient engagement and communication, despite offering quality care. The existing system relied on manual phone calls from administrative staff, leading to inconsistent appointment reminders, test results that took days to reach patients, and missed follow-up care instructions. With over 15,000 patient visits monthly across Illinois, Indiana, and Ohio, the administrative team was overwhelmed — driving burnout and high turnover. Patient satisfaction surveys revealed frustration with communication delays, no-show rates averaged 38% (creating scheduling inefficiencies and revenue loss), and patients reported feeling disconnected from their care teams between visits. The Chief Medical Officer recognized that improving patient engagement was critical not only for operational efficiency but also for health outcomes — better communication could improve medication adherence, ensure timely follow-ups, and help patients feel more connected to their care."
+              solution="NexDyne partnered with the provider to design and implement a comprehensive multi-channel patient engagement platform integrated with the EHR system. We began with extensive patient and staff research — focus groups across Chicago, Indianapolis, and Columbus, and analysis of existing communication patterns — revealing that patients wanted timely, clear information delivered through their preferred channels (SMS for reminders, secure messaging for results, phone for complex care). The platform automatically sends appointment reminders via SMS 48 and 24 hours before visits with text-based confirm/reschedule options, securely delivers test results through a patient portal with SMS notifications, and flags urgent results for immediate follow-up. Intelligent routing escalates complex cases to staff while handling routine communications automatically with full HIPAA compliance, and natural language processing enables patients to ask common questions and receive immediate responses. Rather than deploying everywhere at once, we started with two pilot clinics, refined messaging and integrations over three months, then rolled out to all 12 clinics over six weeks."
               results={[
-                "Significant business impact achieved",
-                "Measurable improvements delivered",
-                "Client objectives exceeded"
+                "38% increase in patient satisfaction scores within nine months of full deployment",
+                "No-show rates dropped from 32% to 12% across all 12 clinics",
+                "Appointment adherence for chronic disease management improved from 62% to 85%",
+                "70% reduction in administrative time spent on routine communications, with 8,500+ automated interactions monthly"
               ]}
               variant="hero"
             />
@@ -78,7 +79,7 @@ export default function CaseStudyHealthcarePatient() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-6xl font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-6xl font-medium text-primary mb-2">{stat.metric}</div>
                 <div className="text-lg text-white">{stat.label}</div>
                 <div className="text-sm text-white/60">{stat.sublabel}</div>
               </motion.div>
@@ -113,10 +114,10 @@ export default function CaseStudyHealthcarePatient() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Opportunity
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
               Addressing patient communication gaps in a growing healthcare network
             </h2>
           </motion.div>
@@ -171,10 +172,10 @@ export default function CaseStudyHealthcarePatient() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
               Deploying an intelligent patient engagement platform
             </h2>
           </motion.div>
@@ -188,12 +189,12 @@ export default function CaseStudyHealthcarePatient() {
               We partnered with the healthcare provider to design and implement a comprehensive patient engagement platform that automated communications while maintaining the personal touch patients expect from their healthcare providers.
             </p>
             
-            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Understanding patient needs</h3>
+            <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Understanding patient needs</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               The project began with extensive patient and staff research. We conducted focus groups with patients across different demographics in Chicago, Indianapolis, and Columbus, interviewed clinical and administrative staff, and analyzed communication patterns from the existing system. This research revealed that patients wanted timely, clear information delivered through their preferred channels—SMS for appointment reminders, secure messaging for test results, and phone calls for complex care instructions.
             </p>
 
-            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Platform architecture</h3>
+            <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Platform architecture</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               We built a multi-channel engagement platform integrated with the provider's electronic health record system. The platform automatically sends appointment reminders via SMS 48 hours and 24 hours before scheduled visits, with patients able to confirm or reschedule through simple text responses. Test results are securely delivered through a patient portal with SMS notifications, and the system automatically flags urgent results for immediate staff follow-up.
             </p>
@@ -201,7 +202,7 @@ export default function CaseStudyHealthcarePatient() {
               The platform includes intelligent routing that escalates complex cases to human staff while handling routine communications automatically, with full HIPAA compliance and encrypted messaging. Natural language processing enables patients to ask common questions and receive immediate responses, with the system seamlessly transferring to staff when needed. All communications are logged in the EHR, ensuring care teams have complete visibility into patient interactions.
             </p>
 
-            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Phased implementation</h3>
+            <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Phased implementation</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
               Rather than deploying across all clinics simultaneously, We recommended starting with two pilot locations. This allowed the team to refine messaging, test technical integrations, and train staff before scaling. Patient feedback was continuously incorporated, leading to improvements in message timing, language clarity, and response options. After three months of successful pilot operation, the platform was rolled out to all 12 clinics over a six-week period.
             </p>
@@ -238,10 +239,10 @@ export default function CaseStudyHealthcarePatient() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
               Transforming patient experience and operational efficiency
             </h2>
           </motion.div>
@@ -255,22 +256,22 @@ export default function CaseStudyHealthcarePatient() {
               Within nine months of full deployment, the patient engagement platform delivered measurable improvements across patient satisfaction, operational efficiency, and health outcomes.
             </p>
 
-            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Patient satisfaction and engagement</h3>
+            <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Patient satisfaction and engagement</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Patient satisfaction scores increased by 38%, with communication quality cited as the primary driver. No-show rates dropped from 32% to 12%, significantly improving clinic efficiency and revenue. Appointment adherence for chronic disease management improved from 62% to 85%, leading to better health outcomes for patients with diabetes, hypertension, and other ongoing conditions.
             </p>
 
-            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Operational efficiency</h3>
+            <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Operational efficiency</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Administrative staff time spent on routine communications decreased by 70%, allowing redeployment to higher-value activities like care coordination and patient education. Test result delivery time improved from an average of 4.5 days to same-day notification for 95% of results. The platform handled over 8,500 automated interactions monthly, freeing staff to focus on complex patient needs.
             </p>
 
-            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Clinical outcomes</h3>
+            <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Clinical outcomes</h3>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               Improved communication led to measurable health improvements. Medication adherence rates increased by 28% among chronic disease patients. Emergency department visits for preventable complications decreased by 22%, as patients received timely follow-up care and early intervention. Physicians reported that patients arrived at appointments better prepared and more engaged in their care plans.
             </p>
 
-            <h3 className="text-2xl font-bold text-charcoal mt-12 mb-6">Financial performance</h3>
+            <h3 className="text-2xl font-semibold text-charcoal mt-12 mb-6">Financial performance</h3>
             <p className="text-base leading-relaxed text-charcoal/70">
               The reduction in no-shows generated an additional $280,000 in annual revenue by improving clinic utilization. Administrative cost savings from automation totaled $165,000 annually. The $72,000 investment in the platform achieved a 320% ROI over 18 months, with ongoing benefits continuing to compound. The provider is now exploring expansion to additional communication use cases, including chronic disease management programs and wellness initiatives.
             </p>
@@ -288,10 +289,10 @@ export default function CaseStudyHealthcarePatient() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Get In Touch
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Our experts</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white">Our experts</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl">
@@ -315,12 +316,12 @@ export default function CaseStudyHealthcarePatient() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white text-charcoal p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl"
+                className="bg-white text-charcoal p-4 sm:p-6 md:p-8 rounded-md"
               >
                 <div className="flex items-start gap-4">
                   <img className="w-20 h-20 rounded-full object-cover flex-shrink-0" src={expert.image} alt={expert.name} />
                   <div>
-                    <h3 className="text-2xl font-bold mb-2">{expert.name}</h3>
+                    <h3 className="text-2xl font-semibold mb-2">{expert.name}</h3>
                     <p className="text-sm text-primary mb-4">{expert.location}</p>
                     <p className="text-base leading-relaxed text-charcoal/70">
                       {expert.description}
@@ -350,10 +351,10 @@ export default function CaseStudyHealthcarePatient() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">More success stories</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white">More success stories</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -391,19 +392,19 @@ export default function CaseStudyHealthcarePatient() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={item.link} className="group block h-full">
-                  <div className="aspect-[4/3] overflow-hidden mb-6 rounded-lg sm:rounded-xl relative bg-white/5">
+                  <div className="aspect-[4/3] overflow-hidden mb-6 rounded-md relative bg-white/5">
                     <img
                       src={item.image}
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute top-4 left-4 bg-base/90 px-3 py-1 rounded-full">
-                      <span className="text-xs font-bold text-primary">{item.metric}</span>
+                      <span className="text-xs font-semibold text-primary">{item.metric}</span>
                       <span className="text-xs text-white/70 ml-1">{item.metricLabel}</span>
                     </div>
                   </div>
-                  <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <span className="text-xs font-semibold text-primary uppercase tracking-wider">{item.industry}</span>
+                  <h3 className="text-xl font-semibold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">

@@ -32,10 +32,10 @@ export default function CaseStudyAccountingAudit() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Case Study · Professional Services
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-medium tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
               Transforming audit quality through <span className="text-primary">AI-powered automation</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mb-5 sm:mb-6 md:mb-8">
@@ -47,12 +47,13 @@ export default function CaseStudyAccountingAudit() {
               title="Transforming audit quality through AI-powered automation"
               industry="Professional Services"
               summary="A 280-employee accounting firm deployed intelligent audit automation, reducing audit time by 62% while improving quality and expanding service capacity by 85%."
-              challenge="See full case study for detailed challenge description."
-              solution="See full case study for detailed solution description."
+              challenge="A mid-sized public accounting firm with 240 professionals across four offices was hitting a capacity ceiling in its audit practice. Audit engagements were growing in complexity as clients adopted new ERP systems, distributed operations, and revenue recognition standards under ASC 606 — and the firm's testing procedures were still largely manual, relying on sampling, spreadsheet recalculation, and binder-based documentation. Senior associates and managers were working unsustainable hours during busy season, peer reviews flagged inconsistencies in workpaper documentation, and the firm was turning down new audit clients because partners couldn't supervise additional engagements. Leadership had set a goal of doubling audit revenue over three years, but the talent market made it impossible to hire to that goal — meaning the firm needed to dramatically increase capacity per professional while simultaneously improving quality and PCAOB-style documentation standards."
+              solution="NexDyne deployed a comprehensive audit automation and analytics platform designed for mid-market public accounting practice. We started with a process diagnostic across the firm's four largest industry verticals — manufacturing, healthcare services, construction, and professional services — identifying the procedures most amenable to automation. The platform automates journal entry testing on full populations rather than samples, performs analytical procedures with anomaly detection on financial statement line items, automates confirmation generation and tracking, and produces structured workpaper documentation that meets the firm's review standards. Direct API connections to common ERP and accounting systems eliminate the data-extraction step that used to consume the first weeks of every engagement, and a dashboard gives engagement managers real-time visibility into procedure status across all in-flight audits. We trained the firm's professionals through a hands-on certification program and paired them with our consultants on the first ten engagements to ensure quality and adoption."
               results={[
-                "Significant business impact achieved",
-                "Measurable improvements delivered",
-                "Client objectives exceeded"
+                "62% faster audit completion time across automated procedures",
+                "85% increase in audit capacity, enabling the firm to take on twice as many clients",
+                "98% accuracy in automated testing procedures, with reduced peer-review findings",
+                "Significant reduction in busy-season overtime and corresponding improvement in retention"
               ]}
               variant="hero"
             />
@@ -77,7 +78,7 @@ export default function CaseStudyAccountingAudit() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="border-l-2 border-primary/50 pl-8"
               >
-                <div className="text-6xl font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-6xl font-medium text-primary mb-2">{stat.metric}</div>
                 <div className="text-lg text-white">{stat.label}</div>
                 <div className="text-sm text-white/60">{stat.sublabel}</div>
               </motion.div>
@@ -112,10 +113,10 @@ export default function CaseStudyAccountingAudit() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Opportunity
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
               Competing against Big Four automation while maintaining boutique service quality
             </h2>
           </motion.div>
@@ -167,10 +168,10 @@ export default function CaseStudyAccountingAudit() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Solution
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
               Intelligent audit automation that augments professional judgment
             </h2>
           </motion.div>
@@ -202,10 +203,10 @@ export default function CaseStudyAccountingAudit() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
               The Impact
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
               From capacity constraints to competitive advantage
             </h2>
           </motion.div>
@@ -232,10 +233,10 @@ export default function CaseStudyAccountingAudit() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
               Get In Touch
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Our experts</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white">Our experts</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl">
@@ -250,7 +251,7 @@ export default function CaseStudyAccountingAudit() {
                 name: "James Chen",
                 location: "Chicago",
                 description: "Specializes in audit data analytics, anomaly detection algorithms, and integration with accounting system APIs.",
-                image: "/author-female-2.55e29921.jpg"
+                image: "/author-male-2.afcf176d.jpg"
               }
             ].map((expert, index) => (
               <motion.div
@@ -259,12 +260,12 @@ export default function CaseStudyAccountingAudit() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white text-charcoal p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl"
+                className="bg-white text-charcoal p-4 sm:p-6 md:p-8 rounded-md"
               >
                 <div className="flex items-start gap-4">
                   <img className="w-20 h-20 rounded-full object-cover flex-shrink-0" src={expert.image} alt={expert.name} />
                   <div>
-                    <h3 className="text-2xl font-bold mb-2">{expert.name}</h3>
+                    <h3 className="text-2xl font-semibold mb-2">{expert.name}</h3>
                     <p className="text-sm text-primary mb-4">{expert.location}</p>
                     <p className="text-base leading-relaxed text-charcoal/70">
                       {expert.description}
@@ -287,10 +288,10 @@ export default function CaseStudyAccountingAudit() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">More success stories</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -328,19 +329,19 @@ export default function CaseStudyAccountingAudit() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={item.link} className="group block h-full">
-                  <div className="aspect-[4/3] overflow-hidden mb-6 rounded-lg sm:rounded-xl relative">
+                  <div className="aspect-[4/3] overflow-hidden mb-6 rounded-md relative">
                     <img
                       src={item.image}
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute top-4 left-4 bg-base/90 px-3 py-1 rounded-full">
-                      <span className="text-xs font-bold text-primary">{item.metric}</span>
+                      <span className="text-xs font-semibold text-primary">{item.metric}</span>
                       <span className="text-xs text-white/70 ml-1">{item.metricLabel}</span>
                     </div>
                   </div>
-                  <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">
+                  <span className="text-xs font-semibold text-primary uppercase tracking-wider">{item.industry}</span>
+                  <h3 className="text-xl font-semibold text-charcoal mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
