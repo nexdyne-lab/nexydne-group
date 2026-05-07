@@ -71,7 +71,7 @@ export default function IndustryDetailTemplate(props: IndustryDetailTemplateProp
   return (
     <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO
-        title={`${industry} | NexDyne Consulting Group`}
+        title={industry}
         description={heroSubtitle.slice(0, 160)}
         canonical={`/industries/${slug}`}
       />
