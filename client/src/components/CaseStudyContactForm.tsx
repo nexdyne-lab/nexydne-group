@@ -145,7 +145,7 @@ export default function CaseStudyContactForm({ caseStudyTitle }: CaseStudyContac
                     {isSubmitting ? "Sending..." : "Request Consultation"}
                   </Button>
                   <p className="mt-4 text-sm text-muted-foreground">
-                    By submitting this form, you agree to be contacted by NewCo Technologies regarding your automation needs.
+                    By submitting this form, you agree to be contacted by NexDyne Consulting Group regarding your automation needs.
                   </p>
                 </div>
               </form>
