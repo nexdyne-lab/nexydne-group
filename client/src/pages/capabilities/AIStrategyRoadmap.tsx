@@ -1,411 +1,144 @@
-import React, { useEffect } from "react";
-import { useLocation, Link } from "wouter";
-import { motion } from "framer-motion";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import { ArrowRight } from "lucide-react";
-import { SEO } from "@/components/SEO";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import { Button } from "@/components/ui/button";
-import BainHoverCard from "@/components/BainHoverCard";
+// TODO: David — confirm AI Strategy & Roadmap experience & impact numbers with practice lead before publish.
+// TODO: David — populate 2-3 thought-leadership insights for the AI Strategy & Roadmap hub.
+
+import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
 export default function AIStrategyRoadmap() {
-  const [location, setLocation] = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  // Related capabilities data
-  const relatedCapabilities = [
-    {
-      title: "Generative AI",
-      description: "Deploy intelligent agents that handle complex inquiries and draft documentation.",
-      link: "/capabilities/artificial-intelligence/generative-ai"
-    },
-    {
-      title: "Custom Model Development",
-      description: "Build proprietary AI models tailored to your unique business challenges.",
-      link: "/capabilities/artificial-intelligence/custom-model-development"
-    },
-    {
-      title: "Data Transformation",
-      description: "Build the data foundation required for successful AI initiatives.",
-      link: "/capabilities/artificial-intelligence/data-transformation"
-    } 
-  ];
-
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="AI Strategy & Roadmap" 
-        description="Define your AI vision and create a prioritized implementation plan. We help you identify high-value use cases, build business cases, and chart a path from experimentation to enterprise-scale AI."
-        canonical="/capabilities/artificial-intelligence/ai-strategy-roadmap"
-      />
-      <Navigation />
-
-      {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
-        <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Breadcrumbs variant="light" />
-            
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-3 sm:mb-4 eb-garamond">
-              AI Strategy & Roadmap
-            </h1>
-            
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl mb-6 sm:mb-10">
-              Define your AI vision and create a prioritized implementation plan. Chart a path from experimentation to enterprise-scale AI that delivers measurable value.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href="/contact">
-                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
-                  Schedule a Consultation
-                </Button>
-              </Link>
-              <Link href="/cases">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
-                  View Case Studies
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="/images/ai-strategy-abstract.jpg" 
-              alt="AI Strategy Visualization" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-12"
-          >
-            <h2 className="text-2xl font-bold text-charcoal eb-garamond">Our Experience & Impact</h2>
-          </motion.div>
-          
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-            {[
-              { metric: "100+", label: "AI strategies developed" },
-              { metric: "85%", label: "Of roadmaps fully executed" },
-              { metric: "$500M+", label: "Value unlocked through AI initiatives" }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-charcoal/60">{item.label}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 3: Thought Leadership Paragraphs (F100) */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              Most AI initiatives fail not because of technology, but because of strategy. Organizations chase shiny objects, launch disconnected pilots, and struggle to scale promising experiments. Without a clear vision and roadmap, AI becomes a cost center rather than a value driver.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              A good AI strategy answers the hard questions: Where will AI create the most value for our specific business? What capabilities do we need to build versus buy? How do we sequence investments to deliver quick wins while building toward transformational impact?
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              We've helped organizations across industries develop AI strategies that work. Not theoretical frameworks, but practical roadmaps with clear milestones, resource requirements, and success metrics. Strategies that get funded, executed, and deliver results.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
-      {/* How We Can Help Section - AI Strategy Capabilities */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              How We Can Help
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6 eb-garamond">
-              Our AI Strategy Capabilities
-            </h2>
-            <p className="text-xl text-charcoal/60 max-w-2xl">
-              End-to-end services from opportunity assessment to roadmap development and execution planning.
-            </p>
-          </motion.div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {[
-              {
-                title: "AI Opportunity Assessment",
-                description: "Systematic evaluation of AI use cases across your value chain. We identify where AI can drive the most impact based on feasibility, value, and strategic fit."
-              },
-              {
-                title: "Business Case Development",
-                description: "Build compelling investment cases with realistic ROI projections, risk assessments, and resource requirements that get executive buy-in."
-              },
-              {
-                title: "Technology & Vendor Selection",
-                description: "Navigate the complex AI vendor landscape. We help you choose the right platforms, tools, and partners for your specific needs and constraints."
-              },
-              {
-                title: "Operating Model Design",
-                description: "Define how AI will be governed, developed, and deployed across your organization. Build the organizational capabilities needed for AI success."
-              },
-              {
-                title: "Data Readiness Assessment",
-                description: "Evaluate your data assets, quality, and infrastructure. Identify gaps and create a plan to build the data foundation AI requires."
-              },
-              {
-                title: "Change Management Planning",
-                description: "Develop strategies for workforce adoption, skill building, and cultural change. AI success depends on people, not just technology."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="h-full"
-              >
-                <BainHoverCard title={item.title} description={item.description} link="#" />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4: Our Approach (3-Column Consulting Format) */}
-      <section className="py-20 bg-base">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">
-              Our Approach
-            </span>
-            <h2 className="text-3xl md:text-5xl font-light text-white eb-garamond">
-              Build an AI strategy that delivers results
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-12">
-            {[
-              {
-                title: "Start with business outcomes",
-                description: "We don't start with technology—we start with your strategic priorities. What business problems are you trying to solve? What opportunities are you trying to capture? AI is a means, not an end."
-              },
-              {
-                title: "Prioritize ruthlessly",
-                description: "Not every AI use case is worth pursuing. We help you focus on the vital few initiatives that will drive the most value, balancing quick wins with long-term transformation."
-              },
-              {
-                title: "Plan for execution",
-                description: "A strategy is only as good as its execution. We create detailed implementation roadmaps with clear milestones, resource plans, and governance structures that ensure follow-through."
-              }
-            ].map((pillar, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <h3 className="text-xl font-bold text-white mb-4">{pillar.title}</h3>
-                <p className="text-white leading-relaxed">{pillar.description}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Link href="/contact">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-4 bg-transparent">
-                Get in touch
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 5: Case Studies (F100) */}
-      <section className="py-24 bg-base">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-                Client Results
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-white eb-garamond">
-                See how AI strategy drives transformation.
-              </h2>
-            </motion.div>
-            <Link href="/cases">
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 bg-transparent">
-                View all case studies
-              </Button>
-            </Link>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                title: "Enterprise AI Roadmap for Global Manufacturer",
-                category: "Manufacturing",
-                description: "Developing a 3-year AI strategy that identified $200M in value creation opportunities across operations, supply chain, and customer experience.",
-                image: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/oRKyCXsTFkKzbJnh.png",
-                link: "/cases/manufacturer-ai-strategy"
-              },
-              {
-                title: "AI Operating Model for Financial Services",
-                category: "Financial Services",
-                description: "Designing the organizational structure, governance, and capabilities needed to scale AI from pilots to enterprise-wide deployment.",
-                image: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/uxDojeKCqLAVMFYp.png",
-                link: "/cases/finserv-ai-operating-model"
-              }
-            ].map((study, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <Link href={study.link} className="group block">
-                  <div className="relative h-[350px] rounded-lg overflow-hidden">
-                    <img 
-                      src={study.image}
-                      alt={study.title} 
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent" />
-                    <div className="absolute bottom-0 left-0 p-8">
-                      <span className="text-xs font-bold text-primary mb-3 uppercase tracking-wider block">{study.category}</span>
-                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
-                        {study.title}
-                      </h3>
-                      <p className="text-white/70 line-clamp-2">{study.description}</p>
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 6: Related Capabilities - H100 Hover */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-12"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-              Related Capabilities
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal eb-garamond">
-              Explore more AI capabilities
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-4 gap-6">
-            {relatedCapabilities.map((cap, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <BainHoverCard
-                  title={cap.title}
-                  description={cap.description}
-                  link={cap.link}
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 7: CTA Section (F100 - Blue Background) */}
-      <section className="py-24 bg-primary">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 eb-garamond">
-              Ready to define your AI strategy?
-            </h2>
-            <p className="text-xl text-white/80 mb-10">
-              Let's discuss how a clear AI roadmap can help you move from experimentation to enterprise-scale impact.
-            </p>
-            <Link href="/contact">
-              <Button className="bg-white hover:bg-subtle text-primary px-10 py-6 text-lg font-semibold">
-                Start a Conversation <ArrowRight className="ml-2 w-5 h-5 inline" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <Footer />
-    </div>
+    <CapabilityHubTemplate
+      hubName="AI Strategy & Roadmap"
+      slug="ai-strategy-roadmap"
+      heroSubtitle="Define your AI vision and build a prioritized implementation plan. Chart a path from experimentation to enterprise-scale AI — anchored to business outcomes, not headlines."
+      // TODO: confirm hero image asset matches AI Strategy & Roadmap theme
+      heroImage="/hero-consultant.efacd953.jpg"
+      experienceStats={[
+        // TODO: confirm with practice lead before publish
+        { number: "120+", label: "AI strategies developed for enterprise clients" },
+        // TODO: confirm with practice lead before publish
+        { number: "5x", label: "Average ROI on prioritized AI portfolios" },
+        // TODO: confirm with practice lead before publish
+        { number: "90-day", label: "Typical roadmap to first measurable outcome" },
+        // TODO: confirm with practice lead before publish
+        { number: "$300M+", label: "Estimated annual value identified across clients" },
+      ]}
+      ambitions={[
+        {
+          title: "Build a prioritized AI roadmap",
+          description:
+            "Cut through the noise. Identify the few AI initiatives that will move your business — and sequence them so each one funds and de-risks the next.",
+        },
+        {
+          title: "Make the business case to your board",
+          description:
+            "Translate AI ambition into a defensible investment case with realistic ROI, risk assessments, and resource plans your CFO and audit committee can sign off on.",
+        },
+        {
+          title: "Pick the right vendors and platforms",
+          description:
+            "Navigate a crowded landscape of foundation models, ML platforms, and point solutions — and choose stacks that fit your data, security, and economic constraints.",
+        },
+        {
+          title: "Stand up an AI operating model",
+          description:
+            "Decide where AI lives in the org, how it’s funded, and how it’s governed. Build the structure that lets dozens of use cases ship without chaos.",
+        },
+        {
+          title: "Get your data ready for AI",
+          description:
+            "Honestly assess data quality, access, and governance — and put a credible plan in place to close the gaps that would otherwise stall every model you build.",
+        },
+        {
+          title: "Bring your workforce along",
+          description:
+            "Plan the change, training, and incentives that turn AI from a top-down mandate into something your front-line teams actually adopt and improve.",
+        },
+      ]}
+      ambitionsCTAText="Talk to us about your AI Strategy & Roadmap ambition →"
+      howWeCanHelp={[
+        {
+          title: "AI Opportunity Assessment",
+          description:
+            "Systematic evaluation of AI use cases across your value chain. We identify where AI can drive the most impact based on feasibility, value, and strategic fit.",
+          href: "/capabilities/ai-strategy-roadmap/opportunity-assessment",
+        },
+        {
+          title: "Business Case Development",
+          description:
+            "Build compelling investment cases with realistic ROI projections, risk assessments, and resource requirements that get executive buy-in.",
+          href: "/capabilities/ai-strategy-roadmap/business-case",
+        },
+        {
+          title: "Technology & Vendor Selection",
+          description:
+            "Navigate the complex AI vendor landscape. We help you choose the right platforms, tools, and partners for your specific needs and constraints.",
+          href: "/capabilities/ai-strategy-roadmap/vendor-selection",
+        },
+        {
+          title: "Operating Model Design",
+          description:
+            "Define how AI will be governed, developed, and deployed across your organization. Build the organizational capabilities needed for AI success.",
+          href: "/capabilities/ai-strategy-roadmap/operating-model",
+        },
+        {
+          title: "Data Readiness Assessment",
+          description:
+            "Evaluate your data assets, quality, and infrastructure. Identify gaps and create a plan to build the data foundation AI requires.",
+          href: "/capabilities/ai-strategy-roadmap/data-readiness",
+        },
+        {
+          title: "Change Management Planning",
+          description:
+            "Develop strategies for workforce adoption, skill building, and cultural change. AI success depends on people, not just technology.",
+          href: "/capabilities/ai-strategy-roadmap/change-management",
+        },
+      ]}
+      thoughtLeadership={[]}
+      approachPillars={[
+        {
+          step: "01",
+          title: "Start with business outcomes",
+          body: "We don’t start with technology — we start with your strategic priorities. What problems are you trying to solve, what opportunities are you trying to capture? AI is a means, not an end.",
+        },
+        {
+          step: "02",
+          title: "Prioritize ruthlessly",
+          body: "Not every AI use case is worth pursuing. We help you focus on the vital few initiatives that drive the most value, balancing quick wins with long-term transformation bets.",
+        },
+        {
+          step: "03",
+          title: "Plan for execution",
+          body: "A strategy is only as good as its execution. We create implementation roadmaps with clear milestones, resource plans, and governance structures that ensure follow-through.",
+        },
+      ]}
+      featuredCases={[
+        {
+          slug: "consulting-knowledge-management",
+          title: "Transforming knowledge management for a global consulting firm",
+          industry: "Professional Services",
+          metric: "3x",
+          image: "/case-strategy-consulting.dfdd1294.jpg",
+        },
+        {
+          slug: "healthcare-patient-engagement",
+          title: "Building an AI-powered patient engagement platform for better outcomes",
+          industry: "Healthcare",
+          metric: "40%",
+          image: "/case-patient-care.b97e3209.jpeg",
+        },
+        {
+          slug: "wealth-management-automation",
+          title: "Automating wealth management operations for better client experiences",
+          industry: "Financial Services",
+          metric: "45%",
+          image: "/case-advisor-client.eb15e04e.jpg",
+        },
+      ]}
+      relatedCapabilities={[
+        { slug: "generative-ai", name: "Generative AI" },
+        { slug: "data-transformation", name: "Data Transformation" },
+        { slug: "process-automation", name: "Process Automation" },
+      ]}
+      ctaLeadName="Talk to our AI Strategy & Roadmap lead"
+    />
   );
 }

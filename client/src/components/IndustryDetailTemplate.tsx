@@ -27,7 +27,7 @@ export interface IndustryDetailTemplateProps {
   industryLeadCTAText?: string;
 }
 
-export default function IndustryDetailTemplate(props: IndustryDetailTemplateProps): JSX.Element {
+export default function IndustryDetailTemplate(props: IndustryDetailTemplateProps) {
   const {
     industry,
     slug,
