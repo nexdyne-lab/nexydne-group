@@ -26,6 +26,54 @@ import PredictiveAnalytics from "@/pages/capabilities/PredictiveAnalytics";
 import ProcessAutomationAI from "@/pages/capabilities/ProcessAutomation";
 import AIStrategyRoadmap from "@/pages/capabilities/AIStrategyRoadmap";
 import CustomModelDevelopment from "@/pages/capabilities/CustomModelDevelopment";
+import AgenticAiAgentArchitecture from "@/pages/capabilities/agentic-ai/AgentArchitecture";
+import AgenticAiToolApiIntegration from "@/pages/capabilities/agentic-ai/ToolApiIntegration";
+import AgenticAiReasoningPlanning from "@/pages/capabilities/agentic-ai/ReasoningPlanning";
+import AgenticAiGuardrailsSafety from "@/pages/capabilities/agentic-ai/GuardrailsSafety";
+import AgenticAiMemoryContext from "@/pages/capabilities/agentic-ai/MemoryContext";
+import AgenticAiMonitoringObservability from "@/pages/capabilities/agentic-ai/MonitoringObservability";
+import AiStrategyRoadmapOpportunityAssessment from "@/pages/capabilities/ai-strategy-roadmap/OpportunityAssessment";
+import AiStrategyRoadmapBusinessCase from "@/pages/capabilities/ai-strategy-roadmap/BusinessCase";
+import AiStrategyRoadmapVendorSelection from "@/pages/capabilities/ai-strategy-roadmap/VendorSelection";
+import AiStrategyRoadmapOperatingModel from "@/pages/capabilities/ai-strategy-roadmap/OperatingModel";
+import AiStrategyRoadmapDataReadiness from "@/pages/capabilities/ai-strategy-roadmap/DataReadiness";
+import AiStrategyRoadmapChangeManagement from "@/pages/capabilities/ai-strategy-roadmap/ChangeManagement";
+import CustomModelDevelopmentFoundationFineTuning from "@/pages/capabilities/custom-model-development/FoundationFineTuning";
+import CustomModelDevelopmentArchitectureDesign from "@/pages/capabilities/custom-model-development/ArchitectureDesign";
+import CustomModelDevelopmentDataPipelines from "@/pages/capabilities/custom-model-development/DataPipelines";
+import CustomModelDevelopmentModelOptimization from "@/pages/capabilities/custom-model-development/ModelOptimization";
+import CustomModelDevelopmentMlopsDeployment from "@/pages/capabilities/custom-model-development/MlopsDeployment";
+import CustomModelDevelopmentResponsibleGovernance from "@/pages/capabilities/custom-model-development/ResponsibleGovernance";
+import DigitalTwinsStrategy from "@/pages/capabilities/digital-twins/Strategy";
+import DigitalTwinsModelDevelopment from "@/pages/capabilities/digital-twins/ModelDevelopment";
+import DigitalTwinsIotIntegration from "@/pages/capabilities/digital-twins/IotIntegration";
+import DigitalTwinsSimulationAnalysis from "@/pages/capabilities/digital-twins/SimulationAnalysis";
+import DigitalTwinsPredictiveCapabilities from "@/pages/capabilities/digital-twins/PredictiveCapabilities";
+import DigitalTwinsVisualization from "@/pages/capabilities/digital-twins/Visualization";
+import GenerativeAiStrategyRoadmap from "@/pages/capabilities/generative-ai/StrategyRoadmap";
+import GenerativeAiTechnicalArchitecture from "@/pages/capabilities/generative-ai/TechnicalArchitecture";
+import GenerativeAiCustomAgents from "@/pages/capabilities/generative-ai/CustomAgents";
+import GenerativeAiRagKnowledgeSystems from "@/pages/capabilities/generative-ai/RagKnowledgeSystems";
+import GenerativeAiFineTuningOptimization from "@/pages/capabilities/generative-ai/FineTuningOptimization";
+import GenerativeAiGovernanceResponsibleAi from "@/pages/capabilities/generative-ai/GovernanceResponsibleAi";
+import PredictiveAnalyticsDemandForecasting from "@/pages/capabilities/predictive-analytics/DemandForecasting";
+import PredictiveAnalyticsChurnPrediction from "@/pages/capabilities/predictive-analytics/ChurnPrediction";
+import PredictiveAnalyticsRiskScoring from "@/pages/capabilities/predictive-analytics/RiskScoring";
+import PredictiveAnalyticsPredictiveMaintenance from "@/pages/capabilities/predictive-analytics/PredictiveMaintenance";
+import PredictiveAnalyticsPriceOptimization from "@/pages/capabilities/predictive-analytics/PriceOptimization";
+import PredictiveAnalyticsPropensityModeling from "@/pages/capabilities/predictive-analytics/PropensityModeling";
+import ProcessAutomationProcessMining from "@/pages/capabilities/process-automation/ProcessMining";
+import ProcessAutomationRpaImplementation from "@/pages/capabilities/process-automation/RpaImplementation";
+import ProcessAutomationIntelligentDocumentProcessing from "@/pages/capabilities/process-automation/IntelligentDocumentProcessing";
+import ProcessAutomationWorkflowOrchestration from "@/pages/capabilities/process-automation/WorkflowOrchestration";
+import ProcessAutomationAiEnhancedAutomation from "@/pages/capabilities/process-automation/AiEnhancedAutomation";
+import ProcessAutomationCenterOfExcellence from "@/pages/capabilities/process-automation/CenterOfExcellence";
+import RiskResilienceRiskAssessmentStrategy from "@/pages/capabilities/risk-resilience/RiskAssessmentStrategy";
+import RiskResiliencePredictiveRiskAnalytics from "@/pages/capabilities/risk-resilience/PredictiveRiskAnalytics";
+import RiskResilienceCyberRiskManagement from "@/pages/capabilities/risk-resilience/CyberRiskManagement";
+import RiskResilienceSupplyChainResilience from "@/pages/capabilities/risk-resilience/SupplyChainResilience";
+import RiskResilienceBusinessContinuity from "@/pages/capabilities/risk-resilience/BusinessContinuity";
+import RiskResilienceRegulatoryCompliance from "@/pages/capabilities/risk-resilience/RegulatoryCompliance";
 
 // AI Ambition Pages (Bain-style case study pages)
 import AutomateWorkflows from "@/pages/capabilities/ai-ambitions/AutomateWorkflows";
@@ -727,6 +775,55 @@ function Router() {
         <Route path="/capabilities/artificial-intelligence/process-automation" component={ProcessAutomationAI} />
         <Route path="/capabilities/artificial-intelligence/ai-strategy-roadmap" component={AIStrategyRoadmap} />
         <Route path="/capabilities/artificial-intelligence/custom-model-development" component={CustomModelDevelopment} />
+        {/* Phase 2 — AI sub-capability level-3 routes */}
+        <Route path="/capabilities/artificial-intelligence/agentic-ai/agent-architecture" component={AgenticAiAgentArchitecture} />
+        <Route path="/capabilities/artificial-intelligence/agentic-ai/tool-api-integration" component={AgenticAiToolApiIntegration} />
+        <Route path="/capabilities/artificial-intelligence/agentic-ai/reasoning-planning" component={AgenticAiReasoningPlanning} />
+        <Route path="/capabilities/artificial-intelligence/agentic-ai/guardrails-safety" component={AgenticAiGuardrailsSafety} />
+        <Route path="/capabilities/artificial-intelligence/agentic-ai/memory-context" component={AgenticAiMemoryContext} />
+        <Route path="/capabilities/artificial-intelligence/agentic-ai/monitoring-observability" component={AgenticAiMonitoringObservability} />
+        <Route path="/capabilities/artificial-intelligence/ai-strategy-roadmap/opportunity-assessment" component={AiStrategyRoadmapOpportunityAssessment} />
+        <Route path="/capabilities/artificial-intelligence/ai-strategy-roadmap/business-case" component={AiStrategyRoadmapBusinessCase} />
+        <Route path="/capabilities/artificial-intelligence/ai-strategy-roadmap/vendor-selection" component={AiStrategyRoadmapVendorSelection} />
+        <Route path="/capabilities/artificial-intelligence/ai-strategy-roadmap/operating-model" component={AiStrategyRoadmapOperatingModel} />
+        <Route path="/capabilities/artificial-intelligence/ai-strategy-roadmap/data-readiness" component={AiStrategyRoadmapDataReadiness} />
+        <Route path="/capabilities/artificial-intelligence/ai-strategy-roadmap/change-management" component={AiStrategyRoadmapChangeManagement} />
+        <Route path="/capabilities/artificial-intelligence/custom-model-development/foundation-fine-tuning" component={CustomModelDevelopmentFoundationFineTuning} />
+        <Route path="/capabilities/artificial-intelligence/custom-model-development/architecture-design" component={CustomModelDevelopmentArchitectureDesign} />
+        <Route path="/capabilities/artificial-intelligence/custom-model-development/data-pipelines" component={CustomModelDevelopmentDataPipelines} />
+        <Route path="/capabilities/artificial-intelligence/custom-model-development/model-optimization" component={CustomModelDevelopmentModelOptimization} />
+        <Route path="/capabilities/artificial-intelligence/custom-model-development/mlops-deployment" component={CustomModelDevelopmentMlopsDeployment} />
+        <Route path="/capabilities/artificial-intelligence/custom-model-development/responsible-governance" component={CustomModelDevelopmentResponsibleGovernance} />
+        <Route path="/capabilities/artificial-intelligence/digital-twins/strategy" component={DigitalTwinsStrategy} />
+        <Route path="/capabilities/artificial-intelligence/digital-twins/model-development" component={DigitalTwinsModelDevelopment} />
+        <Route path="/capabilities/artificial-intelligence/digital-twins/iot-integration" component={DigitalTwinsIotIntegration} />
+        <Route path="/capabilities/artificial-intelligence/digital-twins/simulation-analysis" component={DigitalTwinsSimulationAnalysis} />
+        <Route path="/capabilities/artificial-intelligence/digital-twins/predictive-capabilities" component={DigitalTwinsPredictiveCapabilities} />
+        <Route path="/capabilities/artificial-intelligence/digital-twins/visualization" component={DigitalTwinsVisualization} />
+        <Route path="/capabilities/artificial-intelligence/generative-ai/strategy-roadmap" component={GenerativeAiStrategyRoadmap} />
+        <Route path="/capabilities/artificial-intelligence/generative-ai/technical-architecture" component={GenerativeAiTechnicalArchitecture} />
+        <Route path="/capabilities/artificial-intelligence/generative-ai/custom-agents" component={GenerativeAiCustomAgents} />
+        <Route path="/capabilities/artificial-intelligence/generative-ai/rag-knowledge-systems" component={GenerativeAiRagKnowledgeSystems} />
+        <Route path="/capabilities/artificial-intelligence/generative-ai/fine-tuning-optimization" component={GenerativeAiFineTuningOptimization} />
+        <Route path="/capabilities/artificial-intelligence/generative-ai/governance-responsible-ai" component={GenerativeAiGovernanceResponsibleAi} />
+        <Route path="/capabilities/artificial-intelligence/predictive-analytics/demand-forecasting" component={PredictiveAnalyticsDemandForecasting} />
+        <Route path="/capabilities/artificial-intelligence/predictive-analytics/churn-prediction" component={PredictiveAnalyticsChurnPrediction} />
+        <Route path="/capabilities/artificial-intelligence/predictive-analytics/risk-scoring" component={PredictiveAnalyticsRiskScoring} />
+        <Route path="/capabilities/artificial-intelligence/predictive-analytics/predictive-maintenance" component={PredictiveAnalyticsPredictiveMaintenance} />
+        <Route path="/capabilities/artificial-intelligence/predictive-analytics/price-optimization" component={PredictiveAnalyticsPriceOptimization} />
+        <Route path="/capabilities/artificial-intelligence/predictive-analytics/propensity-modeling" component={PredictiveAnalyticsPropensityModeling} />
+        <Route path="/capabilities/artificial-intelligence/process-automation/process-mining" component={ProcessAutomationProcessMining} />
+        <Route path="/capabilities/artificial-intelligence/process-automation/rpa-implementation" component={ProcessAutomationRpaImplementation} />
+        <Route path="/capabilities/artificial-intelligence/process-automation/intelligent-document-processing" component={ProcessAutomationIntelligentDocumentProcessing} />
+        <Route path="/capabilities/artificial-intelligence/process-automation/workflow-orchestration" component={ProcessAutomationWorkflowOrchestration} />
+        <Route path="/capabilities/artificial-intelligence/process-automation/ai-enhanced-automation" component={ProcessAutomationAiEnhancedAutomation} />
+        <Route path="/capabilities/artificial-intelligence/process-automation/center-of-excellence" component={ProcessAutomationCenterOfExcellence} />
+        <Route path="/capabilities/artificial-intelligence/risk-resilience/risk-assessment-strategy" component={RiskResilienceRiskAssessmentStrategy} />
+        <Route path="/capabilities/artificial-intelligence/risk-resilience/predictive-risk-analytics" component={RiskResiliencePredictiveRiskAnalytics} />
+        <Route path="/capabilities/artificial-intelligence/risk-resilience/cyber-risk-management" component={RiskResilienceCyberRiskManagement} />
+        <Route path="/capabilities/artificial-intelligence/risk-resilience/supply-chain-resilience" component={RiskResilienceSupplyChainResilience} />
+        <Route path="/capabilities/artificial-intelligence/risk-resilience/business-continuity" component={RiskResilienceBusinessContinuity} />
+        <Route path="/capabilities/artificial-intelligence/risk-resilience/regulatory-compliance" component={RiskResilienceRegulatoryCompliance} />
         
         {/* AI Ambition Pages (What's your AI ambition?) */}
         <Route path="/capabilities/artificial-intelligence/automate-workflows" component={AutomateWorkflows} />
@@ -1277,3 +1374,4 @@ function App() {
 }
 
 export default App;
+

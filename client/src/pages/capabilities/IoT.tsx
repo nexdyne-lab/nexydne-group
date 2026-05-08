@@ -116,11 +116,12 @@ export default function IoT() {
         },
       ]}
       relatedCapabilities={[
-        { slug: "digital-twins", name: "Digital Twins" },
-        { slug: "predictive-analytics", name: "Predictive Analytics" },
-        { slug: "process-automation", name: "Process Automation" },
+        { href: "/capabilities/artificial-intelligence/digital-twins", name: "Digital Twins" },
+        { href: "/capabilities/artificial-intelligence/predictive-analytics", name: "Predictive Analytics" },
+        { href: "/capabilities/artificial-intelligence/process-automation", name: "Process Automation" },
       ]}
       ctaLeadName="Talk to our Internet of Things lead"
     />
   );
 }
+

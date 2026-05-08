@@ -59,37 +59,37 @@ export default function GenerativeAI() {
           title: "GenAI Strategy & Roadmap",
           description:
             "Define a high-impact Generative AI roadmap with specific goals, quantified ROI, and detailed execution plans including feasibility studies and risk assessments.",
-          href: "/capabilities/generative-ai/strategy-roadmap",
+          href: "/capabilities/artificial-intelligence/generative-ai/strategy-roadmap",
         },
         {
           title: "Technical Architecture",
           description:
             "Design the data architecture and infrastructure required to support enterprise-grade LLMs, connecting foundation models with your proprietary data securely.",
-          href: "/capabilities/generative-ai/technical-architecture",
+          href: "/capabilities/artificial-intelligence/generative-ai/technical-architecture",
         },
         {
           title: "Custom Agent Development",
           description:
             "Build intelligent agents tailored to your specific use cases — from customer service bots to internal knowledge assistants and code generation tools.",
-          href: "/capabilities/generative-ai/custom-agents",
+          href: "/capabilities/artificial-intelligence/generative-ai/custom-agents",
         },
         {
           title: "RAG & Knowledge Systems",
           description:
             "Implement retrieval-augmented generation systems that ground AI responses in your proprietary data, reducing hallucinations and improving accuracy.",
-          href: "/capabilities/generative-ai/rag-knowledge-systems",
+          href: "/capabilities/artificial-intelligence/generative-ai/rag-knowledge-systems",
         },
         {
           title: "Fine-Tuning & Optimization",
           description:
             "Customize foundation models for your domain through fine-tuning, prompt engineering, and continuous optimization based on real-world performance.",
-          href: "/capabilities/generative-ai/fine-tuning-optimization",
+          href: "/capabilities/artificial-intelligence/generative-ai/fine-tuning-optimization",
         },
         {
           title: "Governance & Responsible AI",
           description:
             "Establish guardrails, monitoring systems, and governance frameworks to ensure your GenAI deployments are safe, compliant, and aligned with your values.",
-          href: "/capabilities/generative-ai/governance-responsible-ai",
+          href: "/capabilities/artificial-intelligence/generative-ai/governance-responsible-ai",
         },
       ]}
       thoughtLeadership={[]}
@@ -134,11 +134,12 @@ export default function GenerativeAI() {
         },
       ]}
       relatedCapabilities={[
-        { slug: "agentic-ai", name: "Agentic AI" },
-        { slug: "custom-model-development", name: "Custom Model Development" },
-        { slug: "ai-strategy-roadmap", name: "AI Strategy & Roadmap" },
+        { href: "/capabilities/artificial-intelligence/agentic-ai", name: "Agentic AI" },
+        { href: "/capabilities/artificial-intelligence/custom-model-development", name: "Custom Model Development" },
+        { href: "/capabilities/artificial-intelligence/ai-strategy-roadmap", name: "AI Strategy & Roadmap" },
       ]}
       ctaLeadName="Talk to our Generative AI lead"
     />
   );
 }
+

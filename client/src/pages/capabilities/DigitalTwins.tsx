@@ -59,37 +59,37 @@ export default function DigitalTwins() {
           title: "Digital Twin Strategy",
           description:
             "Define your digital twin vision and identify high-value use cases. Assess readiness, select technologies, and create a phased implementation roadmap.",
-          href: "/capabilities/digital-twins/strategy",
+          href: "/capabilities/artificial-intelligence/digital-twins/strategy",
         },
         {
           title: "Model Development",
           description:
             "Build accurate virtual replicas of your physical assets using physics-based modeling, machine learning, and real-time data integration.",
-          href: "/capabilities/digital-twins/model-development",
+          href: "/capabilities/artificial-intelligence/digital-twins/model-development",
         },
         {
           title: "IoT Integration",
           description:
             "Connect sensors and data sources to feed real-time information into your digital twin. Ensure data quality, reliability, and security.",
-          href: "/capabilities/digital-twins/iot-integration",
+          href: "/capabilities/artificial-intelligence/digital-twins/iot-integration",
         },
         {
           title: "Simulation & Analysis",
           description:
             "Run what-if scenarios, stress tests, and optimization algorithms on your digital twin to identify improvements without real-world risk.",
-          href: "/capabilities/digital-twins/simulation-analysis",
+          href: "/capabilities/artificial-intelligence/digital-twins/simulation-analysis",
         },
         {
           title: "Predictive Capabilities",
           description:
             "Apply AI and machine learning to predict equipment failures, quality issues, and performance degradation before they occur.",
-          href: "/capabilities/digital-twins/predictive-capabilities",
+          href: "/capabilities/artificial-intelligence/digital-twins/predictive-capabilities",
         },
         {
           title: "Visualization & Dashboards",
           description:
             "Create intuitive 3D visualizations and dashboards that make digital twin insights accessible to operators, engineers, and executives.",
-          href: "/capabilities/digital-twins/visualization",
+          href: "/capabilities/artificial-intelligence/digital-twins/visualization",
         },
       ]}
       thoughtLeadership={[]}
@@ -134,11 +134,12 @@ export default function DigitalTwins() {
         },
       ]}
       relatedCapabilities={[
-        { slug: "internet-of-things", name: "Internet of Things" },
-        { slug: "predictive-analytics", name: "Predictive Analytics" },
-        { slug: "data-transformation", name: "Data Transformation" },
+        { href: "/capabilities/internet-of-things", name: "Internet of Things" },
+        { href: "/capabilities/artificial-intelligence/predictive-analytics", name: "Predictive Analytics" },
+        { href: "/capabilities/data-transformation", name: "Data Transformation" },
       ]}
       ctaLeadName="Talk to our Digital Twins lead"
     />
   );
 }
+

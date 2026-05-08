@@ -31,7 +31,7 @@ export interface CapabilityHubTemplateProps {
     metric: string;
     image: string;
   }[];
-  relatedCapabilities: { slug: string; name: string }[];
+  relatedCapabilities: { slug?: string; href?: string; name: string }[];
   ctaLeadName?: string;
 }
 
@@ -441,14 +441,14 @@ export default function CapabilityHubTemplate(
             <div className={`${relatedGridCls} mb-16`}>
               {relatedCapabilities.map((cap, index) => (
                 <motion.div
-                  key={cap.slug}
+                  key={cap.href ?? cap.slug ?? index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.05 }}
                 >
                   <Link
-                    href={`/capabilities/${cap.slug}`}
+                    href={cap.href ?? `/capabilities/${cap.slug}`}
                     className="group block bg-charcoal/40 border border-white/10 p-6 hover:border-primary transition cursor-pointer"
                   >
                     <span className="inline-flex items-center justify-between w-full text-base text-white font-semibold tracking-tight group-hover:text-primary transition-colors">
@@ -489,3 +489,4 @@ export default function CapabilityHubTemplate(
     </div>
   );
 }
+

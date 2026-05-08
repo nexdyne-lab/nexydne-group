@@ -59,37 +59,37 @@ export default function AgenticAI() {
           title: "Agent Architecture Design",
           description:
             "Design multi-agent systems with clear roles, communication protocols, and orchestration patterns that scale with your business complexity.",
-          href: "/capabilities/agentic-ai/agent-architecture",
+          href: "/capabilities/artificial-intelligence/agentic-ai/agent-architecture",
         },
         {
           title: "Tool & API Integration",
           description:
             "Connect agents to your existing systems — CRMs, ERPs, databases, and APIs — enabling them to take real action in your business environment.",
-          href: "/capabilities/agentic-ai/tool-api-integration",
+          href: "/capabilities/artificial-intelligence/agentic-ai/tool-api-integration",
         },
         {
           title: "Reasoning & Planning Frameworks",
           description:
             "Implement advanced reasoning capabilities using chain-of-thought, tree-of-thought, and ReAct patterns for complex decision-making.",
-          href: "/capabilities/agentic-ai/reasoning-planning",
+          href: "/capabilities/artificial-intelligence/agentic-ai/reasoning-planning",
         },
         {
           title: "Guardrails & Safety Systems",
           description:
             "Build robust safety mechanisms including input validation, output filtering, and human-in-the-loop checkpoints for high-stakes decisions.",
-          href: "/capabilities/agentic-ai/guardrails-safety",
+          href: "/capabilities/artificial-intelligence/agentic-ai/guardrails-safety",
         },
         {
           title: "Memory & Context Management",
           description:
             "Design persistent memory systems that allow agents to learn from past interactions and maintain context across long-running tasks.",
-          href: "/capabilities/agentic-ai/memory-context",
+          href: "/capabilities/artificial-intelligence/agentic-ai/memory-context",
         },
         {
           title: "Monitoring & Observability",
           description:
             "Implement comprehensive logging, tracing, and analytics to understand agent behavior, identify issues, and continuously improve performance.",
-          href: "/capabilities/agentic-ai/monitoring-observability",
+          href: "/capabilities/artificial-intelligence/agentic-ai/monitoring-observability",
         },
       ]}
       thoughtLeadership={[]}
@@ -134,11 +134,12 @@ export default function AgenticAI() {
         },
       ]}
       relatedCapabilities={[
-        { slug: "generative-ai", name: "Generative AI" },
-        { slug: "custom-model-development", name: "Custom Model Development" },
-        { slug: "process-automation", name: "Process Automation" },
+        { href: "/capabilities/artificial-intelligence/generative-ai", name: "Generative AI" },
+        { href: "/capabilities/artificial-intelligence/custom-model-development", name: "Custom Model Development" },
+        { href: "/capabilities/artificial-intelligence/process-automation", name: "Process Automation" },
       ]}
       ctaLeadName="Talk to our Agentic AI lead"
     />
   );
 }
+

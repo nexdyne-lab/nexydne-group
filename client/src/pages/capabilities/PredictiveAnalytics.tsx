@@ -59,37 +59,37 @@ export default function PredictiveAnalytics() {
           title: "Demand Forecasting",
           description:
             "Predict customer demand with high accuracy using time series analysis, machine learning, and external data signals like weather and economic indicators.",
-          href: "/capabilities/predictive-analytics/demand-forecasting",
+          href: "/capabilities/artificial-intelligence/predictive-analytics/demand-forecasting",
         },
         {
           title: "Churn Prediction",
           description:
             "Identify at-risk customers before they leave. Our models analyze behavioral patterns to flag churn risk and recommend retention interventions.",
-          href: "/capabilities/predictive-analytics/churn-prediction",
+          href: "/capabilities/artificial-intelligence/predictive-analytics/churn-prediction",
         },
         {
           title: "Risk Scoring",
           description:
             "Quantify credit risk, fraud probability, and operational risks. We build models that balance accuracy with regulatory requirements for explainability.",
-          href: "/capabilities/predictive-analytics/risk-scoring",
+          href: "/capabilities/artificial-intelligence/predictive-analytics/risk-scoring",
         },
         {
           title: "Predictive Maintenance",
           description:
             "Anticipate equipment failures before they happen. Sensor data analysis and anomaly detection reduce downtime and maintenance costs.",
-          href: "/capabilities/predictive-analytics/predictive-maintenance",
+          href: "/capabilities/artificial-intelligence/predictive-analytics/predictive-maintenance",
         },
         {
           title: "Price Optimization",
           description:
             "Dynamic pricing models that predict demand elasticity and optimize prices in real-time to maximize revenue and margins.",
-          href: "/capabilities/predictive-analytics/price-optimization",
+          href: "/capabilities/artificial-intelligence/predictive-analytics/price-optimization",
         },
         {
           title: "Propensity Modeling",
           description:
             "Predict which customers are most likely to buy, respond to campaigns, or take specific actions. Prioritize outreach for maximum impact.",
-          href: "/capabilities/predictive-analytics/propensity-modeling",
+          href: "/capabilities/artificial-intelligence/predictive-analytics/propensity-modeling",
         },
       ]}
       thoughtLeadership={[]}
@@ -134,11 +134,12 @@ export default function PredictiveAnalytics() {
         },
       ]}
       relatedCapabilities={[
-        { slug: "data-transformation", name: "Data Transformation" },
-        { slug: "custom-model-development", name: "Custom Model Development" },
-        { slug: "risk-and-resilience", name: "Risk & Resilience" },
+        { href: "/capabilities/data-transformation", name: "Data Transformation" },
+        { href: "/capabilities/artificial-intelligence/custom-model-development", name: "Custom Model Development" },
+        { href: "/capabilities/artificial-intelligence/risk-resilience", name: "Risk & Resilience" },
       ]}
       ctaLeadName="Talk to our Predictive Analytics lead"
     />
   );
 }
+

@@ -59,37 +59,37 @@ export default function CustomModelDevelopment() {
           title: "Foundation Model Fine-Tuning",
           description:
             "Adapt GPT, Claude, Llama, or other foundation models to your domain using your proprietary data. Achieve specialized performance without training from scratch.",
-          href: "/capabilities/custom-model-development/foundation-fine-tuning",
+          href: "/capabilities/artificial-intelligence/custom-model-development/foundation-fine-tuning",
         },
         {
           title: "Custom Architecture Design",
           description:
             "Design and train neural network architectures optimized for your specific use case — whether computer vision, NLP, time series, or multimodal applications.",
-          href: "/capabilities/custom-model-development/architecture-design",
+          href: "/capabilities/artificial-intelligence/custom-model-development/architecture-design",
         },
         {
           title: "Data Pipeline Engineering",
           description:
             "Build robust data pipelines for model training. We handle data collection, cleaning, labeling, augmentation, and version control at scale.",
-          href: "/capabilities/custom-model-development/data-pipelines",
+          href: "/capabilities/artificial-intelligence/custom-model-development/data-pipelines",
         },
         {
           title: "Model Optimization",
           description:
             "Reduce inference costs and latency through quantization, pruning, distillation, and architecture optimization. Deploy efficient models at scale.",
-          href: "/capabilities/custom-model-development/model-optimization",
+          href: "/capabilities/artificial-intelligence/custom-model-development/model-optimization",
         },
         {
           title: "MLOps & Deployment",
           description:
             "Build production-grade ML infrastructure with automated training pipelines, model versioning, A/B testing, and monitoring for drift and degradation.",
-          href: "/capabilities/custom-model-development/mlops-deployment",
+          href: "/capabilities/artificial-intelligence/custom-model-development/mlops-deployment",
         },
         {
           title: "Responsible AI & Governance",
           description:
             "Implement bias detection, explainability frameworks, and compliance controls. Build AI systems that are fair, transparent, and auditable.",
-          href: "/capabilities/custom-model-development/responsible-governance",
+          href: "/capabilities/artificial-intelligence/custom-model-development/responsible-governance",
         },
       ]}
       thoughtLeadership={[]}
@@ -134,11 +134,12 @@ export default function CustomModelDevelopment() {
         },
       ]}
       relatedCapabilities={[
-        { slug: "predictive-analytics", name: "Predictive Analytics" },
-        { slug: "generative-ai", name: "Generative AI" },
-        { slug: "agentic-ai", name: "Agentic AI" },
+        { href: "/capabilities/artificial-intelligence/predictive-analytics", name: "Predictive Analytics" },
+        { href: "/capabilities/artificial-intelligence/generative-ai", name: "Generative AI" },
+        { href: "/capabilities/artificial-intelligence/agentic-ai", name: "Agentic AI" },
       ]}
       ctaLeadName="Talk to our Custom Model Development lead"
     />
   );
 }
+
