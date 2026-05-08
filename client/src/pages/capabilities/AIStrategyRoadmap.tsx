@@ -59,37 +59,37 @@ export default function AIStrategyRoadmap() {
           title: "AI Opportunity Assessment",
           description:
             "Systematic evaluation of AI use cases across your value chain. We identify where AI can drive the most impact based on feasibility, value, and strategic fit.",
-          href: "/capabilities/ai-strategy-roadmap/opportunity-assessment",
+          href: "/capabilities/artificial-intelligence/ai-strategy-roadmap/opportunity-assessment",
         },
         {
           title: "Business Case Development",
           description:
             "Build compelling investment cases with realistic ROI projections, risk assessments, and resource requirements that get executive buy-in.",
-          href: "/capabilities/ai-strategy-roadmap/business-case",
+          href: "/capabilities/artificial-intelligence/ai-strategy-roadmap/business-case",
         },
         {
           title: "Technology & Vendor Selection",
           description:
             "Navigate the complex AI vendor landscape. We help you choose the right platforms, tools, and partners for your specific needs and constraints.",
-          href: "/capabilities/ai-strategy-roadmap/vendor-selection",
+          href: "/capabilities/artificial-intelligence/ai-strategy-roadmap/vendor-selection",
         },
         {
           title: "Operating Model Design",
           description:
             "Define how AI will be governed, developed, and deployed across your organization. Build the organizational capabilities needed for AI success.",
-          href: "/capabilities/ai-strategy-roadmap/operating-model",
+          href: "/capabilities/artificial-intelligence/ai-strategy-roadmap/operating-model",
         },
         {
           title: "Data Readiness Assessment",
           description:
             "Evaluate your data assets, quality, and infrastructure. Identify gaps and create a plan to build the data foundation AI requires.",
-          href: "/capabilities/ai-strategy-roadmap/data-readiness",
+          href: "/capabilities/artificial-intelligence/ai-strategy-roadmap/data-readiness",
         },
         {
           title: "Change Management Planning",
           description:
             "Develop strategies for workforce adoption, skill building, and cultural change. AI success depends on people, not just technology.",
-          href: "/capabilities/ai-strategy-roadmap/change-management",
+          href: "/capabilities/artificial-intelligence/ai-strategy-roadmap/change-management",
         },
       ]}
       thoughtLeadership={[]}
@@ -134,11 +134,12 @@ export default function AIStrategyRoadmap() {
         },
       ]}
       relatedCapabilities={[
-        { slug: "generative-ai", name: "Generative AI" },
-        { slug: "data-transformation", name: "Data Transformation" },
-        { slug: "process-automation", name: "Process Automation" },
+        { href: "/capabilities/artificial-intelligence/generative-ai", name: "Generative AI" },
+        { href: "/capabilities/data-transformation", name: "Data Transformation" },
+        { href: "/capabilities/artificial-intelligence/process-automation", name: "Process Automation" },
       ]}
       ctaLeadName="Talk to our AI Strategy & Roadmap lead"
     />
   );
 }
+

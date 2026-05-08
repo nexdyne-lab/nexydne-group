@@ -7,7 +7,7 @@ export default function RiskResilience() {
   return (
     <CapabilityHubTemplate
       hubName="Risk & Resilience"
-      slug="risk-and-resilience"
+      slug="risk-resilience"
       heroSubtitle="Build organizational resilience with AI-powered risk management. Identify, assess, and mitigate risks before they impact your business — and design operations that bend, not break, when conditions shift."
       // TODO: confirm hero image asset matches Risk & Resilience theme
       heroImage="/case-insurance-office.f039a4a1.jpg"
@@ -59,37 +59,37 @@ export default function RiskResilience() {
           title: "Risk Assessment & Strategy",
           description:
             "Comprehensive evaluation of your risk landscape using AI-powered analysis. Identify vulnerabilities, quantify exposures, and develop prioritized mitigation strategies.",
-          href: "/capabilities/risk-and-resilience/risk-assessment-strategy",
+          href: "/capabilities/artificial-intelligence/risk-resilience/risk-assessment-strategy",
         },
         {
           title: "Predictive Risk Analytics",
           description:
             "Deploy machine learning models that continuously monitor for emerging risks. Detect anomalies, predict potential incidents, and enable proactive intervention.",
-          href: "/capabilities/risk-and-resilience/predictive-risk-analytics",
+          href: "/capabilities/artificial-intelligence/risk-resilience/predictive-risk-analytics",
         },
         {
           title: "Cyber Risk Management",
           description:
             "Protect your digital assets with AI-powered threat detection and response. Implement zero-trust architectures and continuous security monitoring.",
-          href: "/capabilities/risk-and-resilience/cyber-risk-management",
+          href: "/capabilities/artificial-intelligence/risk-resilience/cyber-risk-management",
         },
         {
           title: "Supply Chain Resilience",
           description:
             "Build visibility across your supply network. Identify concentration risks, model disruption scenarios, and develop contingency strategies.",
-          href: "/capabilities/risk-and-resilience/supply-chain-resilience",
+          href: "/capabilities/artificial-intelligence/risk-resilience/supply-chain-resilience",
         },
         {
           title: "Business Continuity Planning",
           description:
             "Design and test recovery plans for critical business functions. Ensure your organization can maintain operations through any disruption.",
-          href: "/capabilities/risk-and-resilience/business-continuity",
+          href: "/capabilities/artificial-intelligence/risk-resilience/business-continuity",
         },
         {
           title: "Regulatory Compliance",
           description:
             "Navigate complex regulatory requirements with AI-assisted compliance monitoring. Automate reporting and ensure continuous adherence to evolving standards.",
-          href: "/capabilities/risk-and-resilience/regulatory-compliance",
+          href: "/capabilities/artificial-intelligence/risk-resilience/regulatory-compliance",
         },
       ]}
       thoughtLeadership={[]}
@@ -134,11 +134,12 @@ export default function RiskResilience() {
         },
       ]}
       relatedCapabilities={[
-        { slug: "predictive-analytics", name: "Predictive Analytics" },
-        { slug: "process-automation", name: "Process Automation" },
-        { slug: "data-transformation", name: "Data Transformation" },
+        { href: "/capabilities/artificial-intelligence/predictive-analytics", name: "Predictive Analytics" },
+        { href: "/capabilities/artificial-intelligence/process-automation", name: "Process Automation" },
+        { href: "/capabilities/data-transformation", name: "Data Transformation" },
       ]}
       ctaLeadName="Talk to our Risk & Resilience lead"
     />
   );
 }
+

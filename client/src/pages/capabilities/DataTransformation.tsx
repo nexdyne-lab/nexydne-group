@@ -114,11 +114,12 @@ export default function DataTransformation() {
         },
       ]}
       relatedCapabilities={[
-        { slug: "artificial-intelligence", name: "Artificial Intelligence" },
-        { slug: "internet-of-things", name: "Internet of Things" },
-        { slug: "risk-and-resilience", name: "Risk & Resilience" },
+        { href: "/capabilities/artificial-intelligence", name: "Artificial Intelligence" },
+        { href: "/capabilities/internet-of-things", name: "Internet of Things" },
+        { href: "/capabilities/artificial-intelligence/risk-resilience", name: "Risk & Resilience" },
       ]}
       ctaLeadName="Talk to our Data Transformation lead"
     />
   );
 }
+

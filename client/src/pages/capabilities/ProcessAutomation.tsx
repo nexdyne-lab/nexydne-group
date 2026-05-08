@@ -59,37 +59,37 @@ export default function ProcessAutomation() {
           title: "Process Mining & Discovery",
           description:
             "Analyze your existing workflows using process mining tools to identify automation opportunities, bottlenecks, and optimization potential.",
-          href: "/capabilities/process-automation/process-mining",
+          href: "/capabilities/artificial-intelligence/process-automation/process-mining",
         },
         {
           title: "RPA Implementation",
           description:
             "Deploy robotic process automation using UiPath, Automation Anywhere, or Power Automate. We build bots that are maintainable, scalable, and resilient.",
-          href: "/capabilities/process-automation/rpa-implementation",
+          href: "/capabilities/artificial-intelligence/process-automation/rpa-implementation",
         },
         {
           title: "Intelligent Document Processing",
           description:
             "Extract data from invoices, contracts, and forms using AI-powered document understanding. Handle unstructured data at scale.",
-          href: "/capabilities/process-automation/intelligent-document-processing",
+          href: "/capabilities/artificial-intelligence/process-automation/intelligent-document-processing",
         },
         {
           title: "Workflow Orchestration",
           description:
             "Design and implement end-to-end workflow automation that coordinates across systems, people, and bots using platforms like Camunda or Temporal.",
-          href: "/capabilities/process-automation/workflow-orchestration",
+          href: "/capabilities/artificial-intelligence/process-automation/workflow-orchestration",
         },
         {
           title: "AI-Enhanced Automation",
           description:
             "Combine RPA with machine learning for intelligent automation that handles exceptions, makes decisions, and improves over time.",
-          href: "/capabilities/process-automation/ai-enhanced-automation",
+          href: "/capabilities/artificial-intelligence/process-automation/ai-enhanced-automation",
         },
         {
           title: "Center of Excellence",
           description:
             "Build internal automation capabilities with governance frameworks, training programs, and reusable component libraries.",
-          href: "/capabilities/process-automation/center-of-excellence",
+          href: "/capabilities/artificial-intelligence/process-automation/center-of-excellence",
         },
       ]}
       thoughtLeadership={[]}
@@ -134,11 +134,12 @@ export default function ProcessAutomation() {
         },
       ]}
       relatedCapabilities={[
-        { slug: "agentic-ai", name: "Agentic AI" },
-        { slug: "generative-ai", name: "Generative AI" },
-        { slug: "data-transformation", name: "Data Transformation" },
+        { href: "/capabilities/artificial-intelligence/agentic-ai", name: "Agentic AI" },
+        { href: "/capabilities/artificial-intelligence/generative-ai", name: "Generative AI" },
+        { href: "/capabilities/data-transformation", name: "Data Transformation" },
       ]}
       ctaLeadName="Talk to our Process Automation lead"
     />
   );
 }
+
