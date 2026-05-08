@@ -37,7 +37,7 @@ export interface CapabilityHubTemplateProps {
 
 export default function CapabilityHubTemplate(
   props: CapabilityHubTemplateProps
-): JSX.Element {
+) {
   const {
     hubName,
     slug,

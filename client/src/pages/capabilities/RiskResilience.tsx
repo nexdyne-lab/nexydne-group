@@ -1,411 +1,144 @@
-import React, { useEffect } from "react";
-import { useLocation, Link } from "wouter";
-import { motion } from "framer-motion";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import { ArrowRight } from "lucide-react";
-import { SEO } from "@/components/SEO";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import { Button } from "@/components/ui/button";
-import BainHoverCard from "@/components/BainHoverCard";
+// TODO: David — confirm Risk & Resilience experience & impact numbers with practice lead before publish.
+// TODO: David — populate 2-3 thought-leadership insights for the Risk & Resilience hub.
+
+import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
 export default function RiskResilience() {
-  const [location, setLocation] = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  // Related capabilities data
-  const relatedCapabilities = [
-    {
-      title: "Predictive Analytics",
-      description: "Transform historical data into forward-looking insights that drive strategic decisions.",
-      link: "/capabilities/artificial-intelligence/predictive-analytics"
-    },
-    {
-      title: "Data Transformation",
-      description: "Unlock the true value of data with modern architectures and governance frameworks.",
-      link: "/capabilities/artificial-intelligence/data-transformation"
-    },
-    {
-      title: "AI Strategy & Roadmap",
-      description: "Define your AI vision and create a prioritized implementation plan.",
-      link: "/capabilities/artificial-intelligence/ai-strategy-roadmap"
-    }
-  ];
-
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Risk & Resilience" 
-        description="Build organizational resilience with AI-powered risk management. Identify, assess, and mitigate risks before they impact your business."
-        canonical="/capabilities/artificial-intelligence/risk-resilience"
-      />
-      <Navigation />
-
-      {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
-        <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Breadcrumbs variant="light" />
-            
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-3 sm:mb-4 eb-garamond">
-              Risk & Resilience
-            </h1>
-            
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl mb-6 sm:mb-10">
-              Build organizational resilience with AI-powered risk management. Identify, assess, and mitigate risks before they impact your business.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href="/contact">
-                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
-                  Schedule a Consultation
-                </Button>
-              </Link>
-              <Link href="/cases">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
-                  View Case Studies
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="/images/risk-abstract.jpg" 
-              alt="Risk & Resilience Visualization" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-12"
-          >
-            <h2 className="text-2xl font-bold text-charcoal eb-garamond">Our Experience & Impact</h2>
-          </motion.div>
-          
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-            {[
-              { metric: "40%", label: "Reduction in risk-related losses" },
-              { metric: "60%", label: "Faster risk identification" },
-              { metric: "3x", label: "Improvement in recovery time" }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-charcoal/60">{item.label}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 3: Thought Leadership Paragraphs (F100) */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              In an era of unprecedented volatility, organizations face risks from every direction—cyber threats, supply chain disruptions, regulatory changes, and market shifts. Traditional risk management approaches, built on historical data and periodic assessments, are no longer sufficient.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              AI transforms risk management from reactive to predictive. By analyzing vast amounts of data in real-time, AI systems can identify emerging risks, model potential impacts, and recommend mitigation strategies before threats materialize. This shift from periodic assessment to continuous monitoring is fundamental.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              True resilience goes beyond risk avoidance—it's about building organizations that can absorb shocks, adapt quickly, and emerge stronger. We help organizations develop both the analytical capabilities to anticipate risks and the operational agility to respond effectively.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
-      {/* How We Can Help Section - Risk & Resilience Capabilities (H100 Hover Cards) */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              How We Can Help
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6 eb-garamond">
-              Our Risk & Resilience Capabilities
-            </h2>
-            <p className="text-xl text-charcoal/60 max-w-2xl">
-              End-to-end services from risk assessment to resilience building and continuous monitoring.
-            </p>
-          </motion.div>
-
-          <div className="grid sm:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6">
-            {[
-              {
-                title: "Risk Assessment & Strategy",
-                description: "Comprehensive evaluation of your risk landscape using AI-powered analysis. Identify vulnerabilities, quantify exposures, and develop prioritized mitigation strategies."
-              },
-              {
-                title: "Predictive Risk Analytics",
-                description: "Deploy machine learning models that continuously monitor for emerging risks. Detect anomalies, predict potential incidents, and enable proactive intervention."
-              },
-              {
-                title: "Cyber Risk Management",
-                description: "Protect your digital assets with AI-powered threat detection and response. Implement zero-trust architectures and continuous security monitoring."
-              },
-              {
-                title: "Supply Chain Resilience",
-                description: "Build visibility across your supply network. Identify concentration risks, model disruption scenarios, and develop contingency strategies."
-              },
-              {
-                title: "Business Continuity Planning",
-                description: "Design and test recovery plans for critical business functions. Ensure your organization can maintain operations through any disruption."
-              },
-              {
-                title: "Regulatory Compliance",
-                description: "Navigate complex regulatory requirements with AI-assisted compliance monitoring. Automate reporting and ensure continuous adherence to evolving standards."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="h-full"
-              >
-                <BainHoverCard title={item.title} description={item.description} link="#" />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4: Our Approach (3-Column Consulting Format) */}
-      <section className="py-20 bg-base">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">
-              Our Approach
-            </span>
-            <h2 className="text-3xl md:text-5xl font-light text-white eb-garamond">
-              From risk awareness to organizational resilience
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-12">
-            {[
-              {
-                title: "Anticipate threats",
-                description: "We deploy AI systems that continuously scan for emerging risks—from market signals to cyber threats to regulatory changes. Early warning enables proactive response."
-              },
-              {
-                title: "Build adaptive capacity",
-                description: "Resilience isn't just about having a plan—it's about building organizational capabilities to respond to the unexpected. We help you develop flexible processes and empowered teams."
-              },
-              {
-                title: "Learn and improve",
-                description: "Every incident is a learning opportunity. We help you build feedback loops that capture lessons learned and continuously strengthen your risk posture."
-              }
-            ].map((pillar, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <h3 className="text-xl font-bold text-white mb-4">{pillar.title}</h3>
-                <p className="text-white leading-relaxed">{pillar.description}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Link href="/contact">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-4 bg-transparent">
-                Get in touch
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 5: Case Studies (F100) */}
-      <section className="py-24 bg-base">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-                Client Results
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-white eb-garamond">
-                See how organizations are building resilience.
-              </h2>
-            </motion.div>
-            <Link href="/cases">
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 bg-transparent">
-                View all case studies
-              </Button>
-            </Link>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                title: "AI-Powered Fraud Detection for Financial Services",
-                category: "Financial Services",
-                description: "Implementing real-time fraud detection that reduced losses by 45% while improving customer experience through fewer false positives.",
-                image: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/EsEAnQKOGibJuSef.png",
-                link: "/cases/fraud-detection-ai"
-              },
-              {
-                title: "Supply Chain Risk Monitoring for Manufacturing",
-                category: "Manufacturing",
-                description: "Building a comprehensive supply chain visibility platform that identified and mitigated 30+ potential disruptions in the first year.",
-                image: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/DJZNhAVuvWMJwhQq.png",
-                link: "/cases/supply-chain-risk"
-              }
-            ].map((study, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <Link href={study.link} className="group block">
-                  <div className="relative h-[350px] rounded-lg overflow-hidden">
-                    <img 
-                      src={study.image}
-                      alt={study.title} 
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent" />
-                    <div className="absolute bottom-0 left-0 p-8">
-                      <span className="text-xs font-bold text-primary mb-3 uppercase tracking-wider block">{study.category}</span>
-                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
-                        {study.title}
-                      </h3>
-                      <p className="text-white/70 line-clamp-2">{study.description}</p>
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 6: Related Capabilities - H100 Hover */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-12"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-              Related Capabilities
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal eb-garamond">
-              Explore more AI capabilities
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-4 gap-6">
-            {relatedCapabilities.map((cap, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <BainHoverCard
-                  title={cap.title}
-                  description={cap.description}
-                  link={cap.link}
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 7: CTA Section (F100 - Blue Background) */}
-      <section className="py-24 bg-primary">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 eb-garamond">
-              Ready to build organizational resilience?
-            </h2>
-            <p className="text-xl text-white/80 mb-10">
-              Let's discuss how AI-powered risk management can help you anticipate threats and respond with agility.
-            </p>
-            <Link href="/contact">
-              <Button className="bg-white hover:bg-subtle text-primary px-10 py-6 text-lg font-semibold">
-                Start a Conversation <ArrowRight className="ml-2 w-5 h-5 inline" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <Footer />
-    </div>
+    <CapabilityHubTemplate
+      hubName="Risk & Resilience"
+      slug="risk-and-resilience"
+      heroSubtitle="Build organizational resilience with AI-powered risk management. Identify, assess, and mitigate risks before they impact your business — and design operations that bend, not break, when conditions shift."
+      // TODO: confirm hero image asset matches Risk & Resilience theme
+      heroImage="/case-insurance-office.f039a4a1.jpg"
+      experienceStats={[
+        // TODO: confirm with practice lead before publish
+        { number: "100+", label: "Risk programs delivered across regulated industries" },
+        // TODO: confirm with practice lead before publish
+        { number: "50%", label: "Average reduction in undetected risk events" },
+        // TODO: confirm with practice lead before publish
+        { number: "30%", label: "Faster regulatory reporting cycle times" },
+        // TODO: confirm with practice lead before publish
+        { number: "$80M+", label: "Estimated client losses avoided per year" },
+      ]}
+      ambitions={[
+        {
+          title: "Detect emerging risks early",
+          description:
+            "See market, cyber, supply, and operational risks while they’re still small and cheap to fix — instead of finding them in a post-incident review.",
+        },
+        {
+          title: "Build resilience into operations",
+          description:
+            "Design processes, supplier networks, and IT estates that can absorb shocks and keep delivering — not collapse the next time a single dependency fails.",
+        },
+        {
+          title: "Strengthen cyber and digital trust",
+          description:
+            "Shift from periodic checks to continuous, AI-assisted monitoring across identities, endpoints, and applications — so threats are caught and contained quickly.",
+        },
+        {
+          title: "Stress-test the supply chain",
+          description:
+            "Map concentration, geographic, and tier-2 risk exposure end-to-end, model disruption scenarios, and have credible alternatives lined up before you need them.",
+        },
+        {
+          title: "Plan for continuity, not just compliance",
+          description:
+            "Make business continuity a living capability — tested, measured, and rehearsed — instead of a binder updated once a year for the auditors.",
+        },
+        {
+          title: "Stay ahead of regulators",
+          description:
+            "Automate evidence, monitoring, and reporting so compliance scales with your business — and new regulations slot in instead of triggering panic projects.",
+        },
+      ]}
+      ambitionsCTAText="Talk to us about your Risk & Resilience ambition →"
+      howWeCanHelp={[
+        {
+          title: "Risk Assessment & Strategy",
+          description:
+            "Comprehensive evaluation of your risk landscape using AI-powered analysis. Identify vulnerabilities, quantify exposures, and develop prioritized mitigation strategies.",
+          href: "/capabilities/risk-and-resilience/risk-assessment-strategy",
+        },
+        {
+          title: "Predictive Risk Analytics",
+          description:
+            "Deploy machine learning models that continuously monitor for emerging risks. Detect anomalies, predict potential incidents, and enable proactive intervention.",
+          href: "/capabilities/risk-and-resilience/predictive-risk-analytics",
+        },
+        {
+          title: "Cyber Risk Management",
+          description:
+            "Protect your digital assets with AI-powered threat detection and response. Implement zero-trust architectures and continuous security monitoring.",
+          href: "/capabilities/risk-and-resilience/cyber-risk-management",
+        },
+        {
+          title: "Supply Chain Resilience",
+          description:
+            "Build visibility across your supply network. Identify concentration risks, model disruption scenarios, and develop contingency strategies.",
+          href: "/capabilities/risk-and-resilience/supply-chain-resilience",
+        },
+        {
+          title: "Business Continuity Planning",
+          description:
+            "Design and test recovery plans for critical business functions. Ensure your organization can maintain operations through any disruption.",
+          href: "/capabilities/risk-and-resilience/business-continuity",
+        },
+        {
+          title: "Regulatory Compliance",
+          description:
+            "Navigate complex regulatory requirements with AI-assisted compliance monitoring. Automate reporting and ensure continuous adherence to evolving standards.",
+          href: "/capabilities/risk-and-resilience/regulatory-compliance",
+        },
+      ]}
+      thoughtLeadership={[]}
+      approachPillars={[
+        {
+          step: "01",
+          title: "Anticipate threats",
+          body: "We deploy AI systems that continuously scan for emerging risks — from market signals to cyber threats to regulatory changes. Early warning is what makes proactive response possible.",
+        },
+        {
+          step: "02",
+          title: "Build adaptive capacity",
+          body: "Resilience isn’t just about having a plan — it’s about building organizational capabilities to respond to the unexpected. We help you develop flexible processes and empowered teams.",
+        },
+        {
+          step: "03",
+          title: "Learn and improve",
+          body: "Every incident is a learning opportunity. We help you build feedback loops that capture lessons learned and continuously strengthen your risk posture, quarter over quarter.",
+        },
+      ]}
+      featuredCases={[
+        {
+          slug: "insurance-claims-processing",
+          title: "Accelerating insurance claims processing with intelligent automation",
+          industry: "Financial Services",
+          metric: "85%",
+          image: "/case-insurance-office.f039a4a1.jpg",
+        },
+        {
+          slug: "bank-process-automation",
+          title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
+          industry: "Financial Services",
+          metric: "10K+",
+          image: "/case-banker-meeting.c53f3999.jpg",
+        },
+        {
+          slug: "accounting-audit-automation",
+          title: "How audit automation helped an accounting firm scale 2x without hiring",
+          industry: "Professional Services",
+          metric: "2x",
+          image: "/case-accountants-audit.1c87a151.jpg",
+        },
+      ]}
+      relatedCapabilities={[
+        { slug: "predictive-analytics", name: "Predictive Analytics" },
+        { slug: "process-automation", name: "Process Automation" },
+        { slug: "data-transformation", name: "Data Transformation" },
+      ]}
+      ctaLeadName="Talk to our Risk & Resilience lead"
+    />
   );
 }

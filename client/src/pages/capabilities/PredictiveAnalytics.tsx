@@ -1,411 +1,144 @@
-import React, { useEffect } from "react";
-import { useLocation, Link } from "wouter";
-import { motion } from "framer-motion";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import { ArrowRight } from "lucide-react";
-import { SEO } from "@/components/SEO";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import { Button } from "@/components/ui/button";
-import BainHoverCard from "@/components/BainHoverCard";
+// TODO: David — confirm Predictive Analytics experience & impact numbers with practice lead before publish.
+// TODO: David — populate 2-3 thought-leadership insights for the Predictive Analytics hub.
+
+import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
 export default function PredictiveAnalytics() {
-  const [location, setLocation] = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  // Related capabilities data
-  const relatedCapabilities = [
-    {
-      title: "Data Transformation",
-      description: "Build the data foundation required for accurate predictive models.",
-      link: "/capabilities/artificial-intelligence/data-transformation"
-    },
-    {
-      title: "Custom Model Development",
-      description: "Build proprietary AI models tailored to your unique business challenges.",
-      link: "/capabilities/artificial-intelligence/custom-model-development"
-    },
-    {
-      title: "AI Strategy & Roadmap",
-      description: "Define your AI vision and create a prioritized implementation plan.",
-      link: "/capabilities/artificial-intelligence/ai-strategy-roadmap"
-    }
-  ];
-
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Predictive Analytics" 
-        description="Transform historical data into forward-looking insights. Our predictive models help you anticipate demand, identify risks, and make proactive decisions."
-        canonical="/capabilities/artificial-intelligence/predictive-analytics"
-      />
-      <Navigation />
-
-      {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
-        <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Breadcrumbs variant="light" />
-            
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-3 sm:mb-4 eb-garamond">
-              Predictive Analytics
-            </h1>
-            
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl mb-6 sm:mb-10">
-              Transform historical data into forward-looking insights. Anticipate demand, identify risks, and make proactive decisions before your competitors react.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href="/contact">
-                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
-                  Schedule a Consultation
-                </Button>
-              </Link>
-              <Link href="/cases">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
-                  View Case Studies
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="/images/predictive-analytics-abstract.jpg" 
-              alt="Predictive Analytics Visualization" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-12"
-          >
-            <h2 className="text-2xl font-bold text-charcoal eb-garamond">Our Experience & Impact</h2>
-          </motion.div>
-          
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-            {[
-              { metric: "92%", label: "Forecast accuracy achieved" },
-              { metric: "35%", label: "Reduction in inventory costs" },
-              { metric: "200+", label: "Predictive models deployed" }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-charcoal/60">{item.label}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 3: Thought Leadership Paragraphs (F100) */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              In a world of increasing volatility, the ability to anticipate change is a competitive advantage. Predictive analytics transforms your historical data into a crystal ball—revealing patterns that humans miss and forecasting outcomes before they happen.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              But prediction alone isn't enough. The real value comes from operationalizing insights—embedding predictions into workflows, decision systems, and automated actions. A demand forecast that sits in a dashboard doesn't reduce stockouts; one that triggers automatic reorders does.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              We've learned that model accuracy is only half the battle. Explainability matters—stakeholders need to understand why a model predicts what it does. Trust comes from transparency, and adoption comes from trust.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
-      {/* How We Can Help Section - Predictive Analytics Capabilities */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              How We Can Help
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6 eb-garamond">
-              Our Predictive Analytics Capabilities
-            </h2>
-            <p className="text-xl text-charcoal/60 max-w-2xl">
-              End-to-end services from data preparation to model deployment and continuous refinement.
-            </p>
-          </motion.div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {[
-              {
-                title: "Demand Forecasting",
-                description: "Predict customer demand with high accuracy using time series analysis, machine learning, and external data signals like weather and economic indicators."
-              },
-              {
-                title: "Churn Prediction",
-                description: "Identify at-risk customers before they leave. Our models analyze behavioral patterns to flag churn risk and recommend retention interventions."
-              },
-              {
-                title: "Risk Scoring",
-                description: "Quantify credit risk, fraud probability, and operational risks. We build models that balance accuracy with regulatory requirements for explainability."
-              },
-              {
-                title: "Predictive Maintenance",
-                description: "Anticipate equipment failures before they happen. Sensor data analysis and anomaly detection reduce downtime and maintenance costs."
-              },
-              {
-                title: "Price Optimization",
-                description: "Dynamic pricing models that predict demand elasticity and optimize prices in real-time to maximize revenue and margins."
-              },
-              {
-                title: "Propensity Modeling",
-                description: "Predict which customers are most likely to buy, respond to campaigns, or take specific actions. Prioritize outreach for maximum impact."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="h-full"
-              >
-                <BainHoverCard title={item.title} description={item.description} link="#" />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4: Our Approach (3-Column Consulting Format) */}
-      <section className="py-20 bg-base">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">
-              Our Approach
-            </span>
-            <h2 className="text-3xl md:text-5xl font-light text-white eb-garamond">
-              Turn predictions into competitive advantage
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-12">
-            {[
-              {
-                title: "Start with the decision",
-                description: "We work backwards from the business decision you need to make. What action will you take if the model predicts X? This ensures every model we build drives real value."
-              },
-              {
-                title: "Build for production",
-                description: "We design models for the real world—handling missing data, concept drift, and edge cases. Our MLOps practices ensure models stay accurate as your business evolves."
-              },
-              {
-                title: "Embed in workflows",
-                description: "Predictions are only valuable when acted upon. We integrate models into your existing systems and processes, making insights actionable at the point of decision."
-              }
-            ].map((pillar, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <h3 className="text-xl font-bold text-white mb-4">{pillar.title}</h3>
-                <p className="text-muted-foreground/50 leading-relaxed">{pillar.description}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Link href="/contact">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-4 bg-transparent">
-                Get in touch
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 5: Case Studies (F100) */}
-      <section className="py-24 bg-base">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-                Client Results
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-white eb-garamond">
-                See how predictive analytics drives business outcomes.
-              </h2>
-            </motion.div>
-            <Link href="/cases">
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 bg-transparent">
-                View all case studies
-              </Button>
-            </Link>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                title: "Demand Forecasting for Global Retailer",
-                category: "Retail",
-                description: "Reducing inventory costs by 35% while improving product availability through ML-powered demand prediction.",
-                image: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/OYqhxfgqDOsQyETY.png",
-                link: "/cases/retail-demand-forecasting"
-              },
-              {
-                title: "Churn Prevention for Telecom Provider",
-                category: "Telecommunications",
-                description: "Identifying at-risk customers 60 days in advance, enabling targeted retention that reduced churn by 25%.",
-                image: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/NHBaCctTgvAKIpQL.png",
-                link: "/cases/telecom-churn-prediction"
-              }
-            ].map((study, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <Link href={study.link} className="group block">
-                  <div className="relative h-[350px] rounded-lg overflow-hidden">
-                    <img 
-                      src={study.image}
-                      alt={study.title} 
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent" />
-                    <div className="absolute bottom-0 left-0 p-8">
-                      <span className="text-xs font-bold text-primary mb-3 uppercase tracking-wider block">{study.category}</span>
-                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
-                        {study.title}
-                      </h3>
-                      <p className="text-white/70 line-clamp-2">{study.description}</p>
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 6: Related Capabilities - H100 Hover */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-12"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-              Related Capabilities
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal eb-garamond">
-              Explore more AI capabilities
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-4 gap-6">
-            {relatedCapabilities.map((cap, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <BainHoverCard
-                  title={cap.title}
-                  description={cap.description}
-                  link={cap.link}
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 7: CTA Section (F100 - Blue Background) */}
-      <section className="py-24 bg-primary">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 eb-garamond">
-              Ready to predict the future of your business?
-            </h2>
-            <p className="text-xl text-white/80 mb-10">
-              Let's discuss how predictive analytics can help you anticipate change and act before your competitors.
-            </p>
-            <Link href="/contact">
-              <Button className="bg-white hover:bg-subtle text-primary px-10 py-6 text-lg font-semibold">
-                Start a Conversation <ArrowRight className="ml-2 w-5 h-5 inline" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <Footer />
-    </div>
+    <CapabilityHubTemplate
+      hubName="Predictive Analytics"
+      slug="predictive-analytics"
+      heroSubtitle="Transform historical data into forward-looking insights. Anticipate demand, identify risks, and make proactive decisions — acting on what is going to happen instead of explaining what already did."
+      // TODO: confirm hero image asset matches Predictive Analytics theme
+      heroImage="/case-data-dashboard.391db27a.jpg"
+      experienceStats={[
+        // TODO: confirm with practice lead before publish
+        { number: "180+", label: "Predictive models in production" },
+        // TODO: confirm with practice lead before publish
+        { number: "30%", label: "Average forecast accuracy improvement" },
+        // TODO: confirm with practice lead before publish
+        { number: "$200M+", label: "Client P&L impact attributed to predictions" },
+        // TODO: confirm with practice lead before publish
+        { number: "8-week", label: "Median pilot-to-production cycle" },
+      ]}
+      ambitions={[
+        {
+          title: "Forecast demand with confidence",
+          description:
+            "Replace gut-feel forecasts with models that blend internal history and external signals — so planning, inventory, and capacity decisions hold up against reality.",
+        },
+        {
+          title: "Spot churn before it happens",
+          description:
+            "See attrition risk early enough to do something about it. Score every customer, surface the at-risk segments, and equip retention teams with the next best action.",
+        },
+        {
+          title: "Score risk consistently and explainably",
+          description:
+            "Apply uniform, defensible risk scoring across credit, fraud, operational, and vendor risk — with the transparency regulators and underwriters expect.",
+        },
+        {
+          title: "Anticipate equipment failures",
+          description:
+            "Move from calendar-based maintenance to condition-based intervention — predicting failures early enough to avoid downtime, scrap, and emergency repairs.",
+        },
+        {
+          title: "Optimize price and promotion in real time",
+          description:
+            "Use elasticity and demand models to set prices that protect margin and capture revenue, instead of leaving money on the table with static rate cards.",
+        },
+        {
+          title: "Prioritize sales and marketing investment",
+          description:
+            "Direct outreach, offers, and incentives to the customers most likely to act — raising conversion without expanding the funnel.",
+        },
+      ]}
+      ambitionsCTAText="Talk to us about your Predictive Analytics ambition →"
+      howWeCanHelp={[
+        {
+          title: "Demand Forecasting",
+          description:
+            "Predict customer demand with high accuracy using time series analysis, machine learning, and external data signals like weather and economic indicators.",
+          href: "/capabilities/predictive-analytics/demand-forecasting",
+        },
+        {
+          title: "Churn Prediction",
+          description:
+            "Identify at-risk customers before they leave. Our models analyze behavioral patterns to flag churn risk and recommend retention interventions.",
+          href: "/capabilities/predictive-analytics/churn-prediction",
+        },
+        {
+          title: "Risk Scoring",
+          description:
+            "Quantify credit risk, fraud probability, and operational risks. We build models that balance accuracy with regulatory requirements for explainability.",
+          href: "/capabilities/predictive-analytics/risk-scoring",
+        },
+        {
+          title: "Predictive Maintenance",
+          description:
+            "Anticipate equipment failures before they happen. Sensor data analysis and anomaly detection reduce downtime and maintenance costs.",
+          href: "/capabilities/predictive-analytics/predictive-maintenance",
+        },
+        {
+          title: "Price Optimization",
+          description:
+            "Dynamic pricing models that predict demand elasticity and optimize prices in real-time to maximize revenue and margins.",
+          href: "/capabilities/predictive-analytics/price-optimization",
+        },
+        {
+          title: "Propensity Modeling",
+          description:
+            "Predict which customers are most likely to buy, respond to campaigns, or take specific actions. Prioritize outreach for maximum impact.",
+          href: "/capabilities/predictive-analytics/propensity-modeling",
+        },
+      ]}
+      thoughtLeadership={[]}
+      approachPillars={[
+        {
+          step: "01",
+          title: "Start with the decision",
+          body: "We work backwards from the business decision you need to make. What action will you take if the model predicts X? That question keeps every model we build tied to real value, not vanity accuracy.",
+        },
+        {
+          step: "02",
+          title: "Build for production",
+          body: "We design models for the real world — handling missing data, concept drift, and edge cases. Our MLOps practices ensure models stay accurate as your business and your data evolve.",
+        },
+        {
+          step: "03",
+          title: "Embed in workflows",
+          body: "Predictions are only valuable when acted upon. We integrate models into the systems and processes your teams already use, making insight actionable at the point of decision.",
+        },
+      ]}
+      featuredCases={[
+        {
+          slug: "healthcare-data-analytics",
+          title: "Unlocking healthcare insights with real-time data analytics",
+          industry: "Healthcare",
+          metric: "25%",
+          image: "/case-healthcare-team.5797392b.jpg",
+        },
+        {
+          slug: "insurance-claims-processing",
+          title: "Accelerating insurance claims processing with intelligent automation",
+          industry: "Financial Services",
+          metric: "85%",
+          image: "/case-insurance-office.f039a4a1.jpg",
+        },
+        {
+          slug: "fintech-payment-automation",
+          title: "Building a scalable payment processing system for a fintech startup",
+          industry: "Financial Services",
+          metric: "100K+",
+          image: "/case-financial-advisor.7bb94f0c.jpg",
+        },
+      ]}
+      relatedCapabilities={[
+        { slug: "data-transformation", name: "Data Transformation" },
+        { slug: "custom-model-development", name: "Custom Model Development" },
+        { slug: "risk-and-resilience", name: "Risk & Resilience" },
+      ]}
+      ctaLeadName="Talk to our Predictive Analytics lead"
+    />
   );
 }

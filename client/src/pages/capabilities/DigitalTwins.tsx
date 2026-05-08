@@ -1,411 +1,144 @@
-import React, { useEffect } from "react";
-import { useLocation, Link } from "wouter";
-import { motion } from "framer-motion";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import { ArrowRight } from "lucide-react";
-import { SEO } from "@/components/SEO";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import { Button } from "@/components/ui/button";
-import BainHoverCard from "@/components/BainHoverCard";
+// TODO: David — confirm Digital Twins experience & impact numbers with practice lead before publish.
+// TODO: David — populate 2-3 thought-leadership insights for the Digital Twins hub.
+
+import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
 export default function DigitalTwins() {
-  const [location, setLocation] = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  // Related capabilities data
-  const relatedCapabilities = [
-    {
-      title: "Internet of Things",
-      description: "Connect, monitor, and optimize your physical assets with intelligent IoT solutions.",
-      link: "/capabilities/artificial-intelligence/iot"
-    },
-    {
-      title: "Predictive Analytics",
-      description: "Transform historical data into forward-looking insights that drive strategic decisions.",
-      link: "/capabilities/artificial-intelligence/predictive-analytics"
-    },
-    {
-      title: "Process Automation",
-      description: "Streamline operations with intelligent automation that learns and adapts.",
-      link: "/capabilities/artificial-intelligence/process-automation"
-    }
-  ];
-
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Digital Twins" 
-        description="Create virtual replicas of physical assets, processes, and systems to simulate, predict, and optimize performance in real-time."
-        canonical="/capabilities/artificial-intelligence/digital-twins"
-      />
-      <Navigation />
-
-      {/* Section 1: Hero Section - Dark Background (F100) */}
-      <section className="relative min-h-[60vh] sm:min-h-[70vh] flex items-center pt-16 sm:pt-20 bg-charcoal">
-        <div className="container px-4 sm:px-6 md:px-12 grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Breadcrumbs variant="light" />
-            
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-3 sm:mb-4 eb-garamond">
-              Digital Twins
-            </h1>
-            
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl mb-6 sm:mb-10">
-              Create virtual replicas of physical assets, processes, and systems to simulate, predict, and optimize performance in real-time.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-              <Link href="/contact">
-                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
-                  Schedule a Consultation
-                </Button>
-              </Link>
-              <Link href="/cases">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
-                  View Case Studies
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="/images/digital-twins-abstract.jpg" 
-              alt="Digital Twins Visualization" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Section 2: Our Experience & Impact (F100) */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white border-b border-border">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-12"
-          >
-            <h2 className="text-2xl font-bold text-charcoal eb-garamond">Our Experience & Impact</h2>
-          </motion.div>
-          
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-            {[
-              { metric: "$48B", label: "Global digital twin market by 2026" },
-              { metric: "25%", label: "Reduction in maintenance costs" },
-              { metric: "10x", label: "Faster scenario testing" }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3">{item.metric}</div>
-                <p className="text-lg text-charcoal/60">{item.label}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 3: Thought Leadership Paragraphs (F100) */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              Digital twins represent the convergence of IoT, AI, and simulation technologies. By creating virtual replicas of physical assets and processes, organizations can test scenarios, predict outcomes, and optimize performance without risking real-world disruption.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              The power of digital twins lies in their ability to bridge the physical and digital worlds. Real-time data from sensors feeds into the virtual model, which uses AI to predict behavior, identify anomalies, and recommend optimizations. Changes can be tested virtually before being applied to the physical asset.
-            </motion.p>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-xl text-charcoal/80 leading-relaxed"
-            >
-              From manufacturing plants to supply chains to entire cities, digital twins are enabling a new level of operational intelligence. Organizations that master this capability gain unprecedented visibility into their operations and the ability to optimize continuously.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
-      {/* How We Can Help Section - Digital Twins Capabilities (H100 Hover Cards) */}
-      <section className="py-12 sm:py-16 lg:py-24 bg-white">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              How We Can Help
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6 eb-garamond">
-              Our Digital Twin Capabilities
-            </h2>
-            <p className="text-xl text-charcoal/60 max-w-2xl">
-              End-to-end services from strategy to deployment and continuous optimization.
-            </p>
-          </motion.div>
-
-          <div className="grid sm:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6">
-            {[
-              {
-                title: "Digital Twin Strategy",
-                description: "Define your digital twin vision and identify high-value use cases. Assess readiness, select technologies, and create a phased implementation roadmap."
-              },
-              {
-                title: "Model Development",
-                description: "Build accurate virtual replicas of your physical assets using physics-based modeling, machine learning, and real-time data integration."
-              },
-              {
-                title: "IoT Integration",
-                description: "Connect sensors and data sources to feed real-time information into your digital twin. Ensure data quality, reliability, and security."
-              },
-              {
-                title: "Simulation & Analysis",
-                description: "Run what-if scenarios, stress tests, and optimization algorithms on your digital twin to identify improvements without real-world risk."
-              },
-              {
-                title: "Predictive Capabilities",
-                description: "Apply AI and machine learning to predict equipment failures, quality issues, and performance degradation before they occur."
-              },
-              {
-                title: "Visualization & Dashboards",
-                description: "Create intuitive 3D visualizations and dashboards that make digital twin insights accessible to operators, engineers, and executives."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="h-full"
-              >
-                <BainHoverCard title={item.title} description={item.description} link="#" />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4: Our Approach (3-Column Consulting Format) */}
-      <section className="py-20 bg-base">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4 block">
-              Our Approach
-            </span>
-            <h2 className="text-3xl md:text-5xl font-light text-white eb-garamond">
-              Bridge the physical and digital worlds
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-12">
-            {[
-              {
-                title: "Start with the asset",
-                description: "We begin by deeply understanding your physical assets—their behavior, failure modes, and optimization opportunities. This domain knowledge is essential for building accurate digital twins."
-              },
-              {
-                title: "Build for fidelity",
-                description: "We create digital twins that accurately represent real-world behavior. Our models combine physics-based simulation with machine learning to capture complex dynamics."
-              },
-              {
-                title: "Enable continuous learning",
-                description: "Digital twins improve over time. We design systems that continuously learn from real-world data, refining predictions and recommendations as conditions change."
-              }
-            ].map((pillar, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <h3 className="text-xl font-bold text-white mb-4">{pillar.title}</h3>
-                <p className="text-white leading-relaxed">{pillar.description}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Link href="/contact">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-4 bg-transparent">
-                Get in touch
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 5: Case Studies (F100) */}
-      <section className="py-24 bg-base">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-                Client Results
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold text-white eb-garamond">
-                See how digital twins are transforming operations.
-              </h2>
-            </motion.div>
-            <Link href="/cases">
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 bg-transparent">
-                View all case studies
-              </Button>
-            </Link>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                title: "Manufacturing Line Digital Twin for Automotive",
-                category: "Manufacturing",
-                description: "Creating a digital twin of an assembly line that enables real-time optimization and predictive maintenance, reducing downtime by 35%.",
-                image: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/alGBppklyaGfucnU.png",
-                link: "/cases/automotive-digital-twin"
-              },
-              {
-                title: "Supply Chain Digital Twin for Retail",
-                category: "Retail",
-                description: "Building a digital twin of the end-to-end supply chain that simulates disruptions and optimizes inventory positioning.",
-                image: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/TPixWdJmiwYVUYmJ.png",
-                link: "/cases/supply-chain-digital-twin"
-              }
-            ].map((study, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <Link href={study.link} className="group block">
-                  <div className="relative h-[350px] rounded-lg overflow-hidden">
-                    <img 
-                      src={study.image}
-                      alt={study.title} 
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent" />
-                    <div className="absolute bottom-0 left-0 p-8">
-                      <span className="text-xs font-bold text-primary mb-3 uppercase tracking-wider block">{study.category}</span>
-                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
-                        {study.title}
-                      </h3>
-                      <p className="text-white/70 line-clamp-2">{study.description}</p>
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 6: Related Capabilities - H100 Hover */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-12"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-              Related Capabilities
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal eb-garamond">
-              Explore more AI capabilities
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-4 gap-6">
-            {relatedCapabilities.map((cap, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-              >
-                <BainHoverCard
-                  title={cap.title}
-                  description={cap.description}
-                  link={cap.link}
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 7: CTA Section (F100 - Blue Background) */}
-      <section className="py-24 bg-primary">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 eb-garamond">
-              Ready to create your digital twin?
-            </h2>
-            <p className="text-xl text-white/80 mb-10">
-              Let's discuss how digital twins can transform your operations and enable predictive, optimized decision-making.
-            </p>
-            <Link href="/contact">
-              <Button className="bg-white hover:bg-subtle text-primary px-10 py-6 text-lg font-semibold">
-                Start a Conversation <ArrowRight className="ml-2 w-5 h-5 inline" />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <Footer />
-    </div>
+    <CapabilityHubTemplate
+      hubName="Digital Twins"
+      slug="digital-twins"
+      heroSubtitle="Create virtual replicas of physical assets, processes, and systems — to simulate, predict, and optimize performance in real time, and test scenarios before you commit them to the real world."
+      // TODO: confirm hero image asset matches Digital Twins theme
+      heroImage="/data-platform-architecture.8ff88a38.png"
+      experienceStats={[
+        // TODO: confirm with practice lead before publish
+        { number: "75+", label: "Digital twin deployments delivered" },
+        // TODO: confirm with practice lead before publish
+        { number: "30%", label: "Average asset utilization improvement" },
+        // TODO: confirm with practice lead before publish
+        { number: "40%", label: "Reduction in physical prototyping cycles" },
+        // TODO: confirm with practice lead before publish
+        { number: "10-month", label: "Typical engagement length to live twin" },
+      ]}
+      ambitions={[
+        {
+          title: "Simulate before you build",
+          description:
+            "Test designs, layouts, and operating decisions in a virtual model before committing capital. Catch the expensive mistakes in software, not on the shop floor.",
+        },
+        {
+          title: "Test scenarios without real-world risk",
+          description:
+            "Stress test what happens when demand spikes, a supplier fails, or a line goes down — and pre-stage the response, instead of figuring it out under pressure.",
+        },
+        {
+          title: "Mirror live operations in real time",
+          description:
+            "Stream sensor and system data into a living model so operators see what is happening, what is about to happen, and where to intervene first.",
+        },
+        {
+          title: "Predict failures and quality drift",
+          description:
+            "Layer machine learning on top of physics-based models to flag the assets, lines, or fleets that are about to underperform — early enough to act.",
+        },
+        {
+          title: "Optimize design and operating choices",
+          description:
+            "Use the twin as a decision sandbox: tune set-points, sequencing, and resource allocation in simulation, then push the winning configuration to production.",
+        },
+        {
+          title: "Make complex systems legible to leaders",
+          description:
+            "Give executives, engineers, and front-line teams a shared visual model of the asset — so trade-offs, root causes, and improvement plans are debated against one source of truth.",
+        },
+      ]}
+      ambitionsCTAText="Talk to us about your Digital Twins ambition →"
+      howWeCanHelp={[
+        {
+          title: "Digital Twin Strategy",
+          description:
+            "Define your digital twin vision and identify high-value use cases. Assess readiness, select technologies, and create a phased implementation roadmap.",
+          href: "/capabilities/digital-twins/strategy",
+        },
+        {
+          title: "Model Development",
+          description:
+            "Build accurate virtual replicas of your physical assets using physics-based modeling, machine learning, and real-time data integration.",
+          href: "/capabilities/digital-twins/model-development",
+        },
+        {
+          title: "IoT Integration",
+          description:
+            "Connect sensors and data sources to feed real-time information into your digital twin. Ensure data quality, reliability, and security.",
+          href: "/capabilities/digital-twins/iot-integration",
+        },
+        {
+          title: "Simulation & Analysis",
+          description:
+            "Run what-if scenarios, stress tests, and optimization algorithms on your digital twin to identify improvements without real-world risk.",
+          href: "/capabilities/digital-twins/simulation-analysis",
+        },
+        {
+          title: "Predictive Capabilities",
+          description:
+            "Apply AI and machine learning to predict equipment failures, quality issues, and performance degradation before they occur.",
+          href: "/capabilities/digital-twins/predictive-capabilities",
+        },
+        {
+          title: "Visualization & Dashboards",
+          description:
+            "Create intuitive 3D visualizations and dashboards that make digital twin insights accessible to operators, engineers, and executives.",
+          href: "/capabilities/digital-twins/visualization",
+        },
+      ]}
+      thoughtLeadership={[]}
+      approachPillars={[
+        {
+          step: "01",
+          title: "Start with the asset",
+          body: "We begin by deeply understanding your physical assets — their behavior, failure modes, and optimization opportunities. That domain knowledge is essential for building digital twins anyone will trust.",
+        },
+        {
+          step: "02",
+          title: "Build for fidelity",
+          body: "We create digital twins that accurately represent real-world behavior. Our models combine physics-based simulation with machine learning to capture complex dynamics, not just averages.",
+        },
+        {
+          step: "03",
+          title: "Enable continuous learning",
+          body: "Digital twins improve over time. We design systems that continuously learn from real-world data, refining predictions and recommendations as conditions and equipment change.",
+        },
+      ]}
+      featuredCases={[
+        {
+          slug: "hospital-clinical-workflow",
+          title: "Optimizing clinical workflows to save 15 hours per physician weekly",
+          industry: "Healthcare",
+          metric: "15hrs",
+          image: "/case-medical-collaboration.9602cc8c.jpg",
+        },
+        {
+          slug: "healthcare-data-analytics",
+          title: "Unlocking healthcare insights with real-time data analytics",
+          industry: "Healthcare",
+          metric: "25%",
+          image: "/case-healthcare-team.5797392b.jpg",
+        },
+        {
+          slug: "telehealth-platform",
+          title: "Scaling telehealth services to reach 50,000+ patients monthly",
+          industry: "Healthcare",
+          metric: "50K+",
+          image: "/case-doctor-consultation.799c1562.jpg",
+        },
+      ]}
+      relatedCapabilities={[
+        { slug: "internet-of-things", name: "Internet of Things" },
+        { slug: "predictive-analytics", name: "Predictive Analytics" },
+        { slug: "data-transformation", name: "Data Transformation" },
+      ]}
+      ctaLeadName="Talk to our Digital Twins lead"
+    />
   );
 }
