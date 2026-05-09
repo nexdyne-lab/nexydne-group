@@ -476,6 +476,70 @@ import GoToMarketScale from "@/pages/capabilities/business-building/GoToMarketSc
 import DigitalTransformationAccelerator from "@/pages/capabilities/business-building/DigitalTransformationAccelerator";
 import RapidInnovationTesting from "@/pages/capabilities/business-building/RapidInnovationTesting";
 import PerformanceIntelligenceBenchmarking from "@/pages/capabilities/business-building/PerformanceIntelligenceBenchmarking";
+
+// Business Building → digital-venture-launch (Phase 2 leaves)
+import DigitalVentureLaunchOpportunityIdentification from "@/pages/capabilities/business-building/digital-venture-launch/OpportunityIdentification";
+import DigitalVentureLaunchConceptValidation from "@/pages/capabilities/business-building/digital-venture-launch/ConceptValidation";
+import DigitalVentureLaunchBusinessModelDesign from "@/pages/capabilities/business-building/digital-venture-launch/BusinessModelDesign";
+import DigitalVentureLaunchMvpDevelopment from "@/pages/capabilities/business-building/digital-venture-launch/MvpDevelopment";
+import DigitalVentureLaunchLaunchExecution from "@/pages/capabilities/business-building/digital-venture-launch/LaunchExecution";
+import DigitalVentureLaunchTeamProcessSetup from "@/pages/capabilities/business-building/digital-venture-launch/TeamProcessSetup";
+// Business Building → product-strategy-design (Phase 2 leaves)
+import ProductStrategyDesignProductVisionRoadmap from "@/pages/capabilities/business-building/product-strategy-design/ProductVisionRoadmap";
+import ProductStrategyDesignUserResearchInsights from "@/pages/capabilities/business-building/product-strategy-design/UserResearchInsights";
+import ProductStrategyDesignUxUiDesign from "@/pages/capabilities/business-building/product-strategy-design/UxUiDesign";
+import ProductStrategyDesignProductMarketFitAnalysis from "@/pages/capabilities/business-building/product-strategy-design/ProductMarketFitAnalysis";
+import ProductStrategyDesignFeaturePrioritization from "@/pages/capabilities/business-building/product-strategy-design/FeaturePrioritization";
+import ProductStrategyDesignDesignSystemDevelopment from "@/pages/capabilities/business-building/product-strategy-design/DesignSystemDevelopment";
+// Business Building → growth-scaling (Phase 2 leaves)
+import GrowthScalingCustomerAcquisition from "@/pages/capabilities/business-building/growth-scaling/CustomerAcquisition";
+import GrowthScalingRetentionEngagement from "@/pages/capabilities/business-building/growth-scaling/RetentionEngagement";
+import GrowthScalingRevenueOptimization from "@/pages/capabilities/business-building/growth-scaling/RevenueOptimization";
+import GrowthScalingOperationalScaling from "@/pages/capabilities/business-building/growth-scaling/OperationalScaling";
+import GrowthScalingInternationalExpansion from "@/pages/capabilities/business-building/growth-scaling/InternationalExpansion";
+import GrowthScalingGrowthAnalytics from "@/pages/capabilities/business-building/growth-scaling/GrowthAnalytics";
+// Business Building → ai-powered-acceleration (Phase 2 leaves)
+import AIPoweredAccelerationAiStrategyRoadmap from "@/pages/capabilities/business-building/ai-powered-acceleration/AiStrategyRoadmap";
+import AIPoweredAccelerationGenerativeAiIntegration from "@/pages/capabilities/business-building/ai-powered-acceleration/GenerativeAiIntegration";
+import AIPoweredAccelerationIntelligentAutomation from "@/pages/capabilities/business-building/ai-powered-acceleration/IntelligentAutomation";
+import AIPoweredAccelerationAiPoweredProducts from "@/pages/capabilities/business-building/ai-powered-acceleration/AiPoweredProducts";
+import AIPoweredAccelerationDataMlInfrastructure from "@/pages/capabilities/business-building/ai-powered-acceleration/DataMlInfrastructure";
+import AIPoweredAccelerationAiChangeManagement from "@/pages/capabilities/business-building/ai-powered-acceleration/AiChangeManagement";
+// Business Building → distinctive-expertise (Phase 2 leaves)
+import DistinctiveExpertisePlaybookSelection from "@/pages/capabilities/business-building/distinctive-expertise/PlaybookSelection";
+import DistinctiveExpertiseFrameworkCustomization from "@/pages/capabilities/business-building/distinctive-expertise/FrameworkCustomization";
+import DistinctiveExpertiseImplementationSupport from "@/pages/capabilities/business-building/distinctive-expertise/ImplementationSupport";
+import DistinctiveExpertiseKnowledgeTransfer from "@/pages/capabilities/business-building/distinctive-expertise/KnowledgeTransfer";
+import DistinctiveExpertiseBenchmarkAnalysis from "@/pages/capabilities/business-building/distinctive-expertise/BenchmarkAnalysis";
+import DistinctiveExpertiseContinuousRefinement from "@/pages/capabilities/business-building/distinctive-expertise/ContinuousRefinement";
+// Business Building → go-to-market-scale (Phase 2 leaves)
+import GoToMarketScalePartnerNetworkAccess from "@/pages/capabilities/business-building/go-to-market-scale/PartnerNetworkAccess";
+import GoToMarketScaleChannelStrategyDesign from "@/pages/capabilities/business-building/go-to-market-scale/ChannelStrategyDesign";
+import GoToMarketScalePartnerEnablement from "@/pages/capabilities/business-building/go-to-market-scale/PartnerEnablement";
+import GoToMarketScaleDemandGeneration from "@/pages/capabilities/business-building/go-to-market-scale/DemandGeneration";
+import GoToMarketScaleSalesProcessOptimization from "@/pages/capabilities/business-building/go-to-market-scale/SalesProcessOptimization";
+import GoToMarketScaleMarketExpansion from "@/pages/capabilities/business-building/go-to-market-scale/MarketExpansion";
+// Business Building → digital-transformation-accelerator (Phase 2 leaves)
+import DigitalTransformationAcceleratorArchitectureAssessment from "@/pages/capabilities/business-building/digital-transformation-accelerator/ArchitectureAssessment";
+import DigitalTransformationAcceleratorFoundationBuild from "@/pages/capabilities/business-building/digital-transformation-accelerator/FoundationBuild";
+import DigitalTransformationAcceleratorCapabilityMigration from "@/pages/capabilities/business-building/digital-transformation-accelerator/CapabilityMigration";
+import DigitalTransformationAcceleratorOptimizationGovernance from "@/pages/capabilities/business-building/digital-transformation-accelerator/OptimizationGovernance";
+import DigitalTransformationAcceleratorLegacyModernization from "@/pages/capabilities/business-building/digital-transformation-accelerator/LegacyModernization";
+import DigitalTransformationAcceleratorDevsecopsEnablement from "@/pages/capabilities/business-building/digital-transformation-accelerator/DevsecopsEnablement";
+// Business Building → rapid-innovation-testing (Phase 2 leaves)
+import RapidInnovationTestingHypothesisDevelopment from "@/pages/capabilities/business-building/rapid-innovation-testing/HypothesisDevelopment";
+import RapidInnovationTestingRapidPrototyping from "@/pages/capabilities/business-building/rapid-innovation-testing/RapidPrototyping";
+import RapidInnovationTestingMarketValidation from "@/pages/capabilities/business-building/rapid-innovation-testing/MarketValidation";
+import RapidInnovationTestingDecisionFramework from "@/pages/capabilities/business-building/rapid-innovation-testing/DecisionFramework";
+import RapidInnovationTestingStageGateGovernance from "@/pages/capabilities/business-building/rapid-innovation-testing/StageGateGovernance";
+import RapidInnovationTestingScaleUpTransition from "@/pages/capabilities/business-building/rapid-innovation-testing/ScaleUpTransition";
+// Business Building → performance-intelligence-benchmarking (Phase 2 leaves)
+import PerformanceIntelligenceBenchmarkingBaselineAssessment from "@/pages/capabilities/business-building/performance-intelligence-benchmarking/BaselineAssessment";
+import PerformanceIntelligenceBenchmarkingFrameworkDevelopment from "@/pages/capabilities/business-building/performance-intelligence-benchmarking/FrameworkDevelopment";
+import PerformanceIntelligenceBenchmarkingDeploymentTraining from "@/pages/capabilities/business-building/performance-intelligence-benchmarking/DeploymentTraining";
+import PerformanceIntelligenceBenchmarkingContinuousImprovement from "@/pages/capabilities/business-building/performance-intelligence-benchmarking/ContinuousImprovement";
+import PerformanceIntelligenceBenchmarkingPredictiveAnalytics from "@/pages/capabilities/business-building/performance-intelligence-benchmarking/PredictiveAnalytics";
+import PerformanceIntelligenceBenchmarkingExecutiveDashboards from "@/pages/capabilities/business-building/performance-intelligence-benchmarking/ExecutiveDashboards";
 import GrowthMarketingSales from "@/pages/capabilities/GrowthMarketingSales";
 import DigitalMarketingCapability from "./pages/capabilities/growth-marketing-sales/DigitalMarketing";
 import PerformanceMarketing from "./pages/capabilities/growth-marketing-sales/digital-marketing/PerformanceMarketing";
@@ -971,6 +1035,70 @@ function Router() {
         <Route path="/capabilities/business-building/digital-transformation-accelerator" component={DigitalTransformationAccelerator} />
         <Route path="/capabilities/business-building/rapid-innovation-testing" component={RapidInnovationTesting} />
         <Route path="/capabilities/business-building/performance-intelligence-benchmarking" component={PerformanceIntelligenceBenchmarking} />
+
+        {/* Business Building → digital-venture-launch (Phase 2 leaves) */}
+        <Route path="/capabilities/business-building/digital-venture-launch/opportunity-identification" component={DigitalVentureLaunchOpportunityIdentification} />
+        <Route path="/capabilities/business-building/digital-venture-launch/concept-validation" component={DigitalVentureLaunchConceptValidation} />
+        <Route path="/capabilities/business-building/digital-venture-launch/business-model-design" component={DigitalVentureLaunchBusinessModelDesign} />
+        <Route path="/capabilities/business-building/digital-venture-launch/mvp-development" component={DigitalVentureLaunchMvpDevelopment} />
+        <Route path="/capabilities/business-building/digital-venture-launch/launch-execution" component={DigitalVentureLaunchLaunchExecution} />
+        <Route path="/capabilities/business-building/digital-venture-launch/team-process-setup" component={DigitalVentureLaunchTeamProcessSetup} />
+        {/* Business Building → product-strategy-design (Phase 2 leaves) */}
+        <Route path="/capabilities/business-building/product-strategy-design/product-vision-roadmap" component={ProductStrategyDesignProductVisionRoadmap} />
+        <Route path="/capabilities/business-building/product-strategy-design/user-research-insights" component={ProductStrategyDesignUserResearchInsights} />
+        <Route path="/capabilities/business-building/product-strategy-design/ux-ui-design" component={ProductStrategyDesignUxUiDesign} />
+        <Route path="/capabilities/business-building/product-strategy-design/product-market-fit-analysis" component={ProductStrategyDesignProductMarketFitAnalysis} />
+        <Route path="/capabilities/business-building/product-strategy-design/feature-prioritization" component={ProductStrategyDesignFeaturePrioritization} />
+        <Route path="/capabilities/business-building/product-strategy-design/design-system-development" component={ProductStrategyDesignDesignSystemDevelopment} />
+        {/* Business Building → growth-scaling (Phase 2 leaves) */}
+        <Route path="/capabilities/business-building/growth-scaling/customer-acquisition" component={GrowthScalingCustomerAcquisition} />
+        <Route path="/capabilities/business-building/growth-scaling/retention-engagement" component={GrowthScalingRetentionEngagement} />
+        <Route path="/capabilities/business-building/growth-scaling/revenue-optimization" component={GrowthScalingRevenueOptimization} />
+        <Route path="/capabilities/business-building/growth-scaling/operational-scaling" component={GrowthScalingOperationalScaling} />
+        <Route path="/capabilities/business-building/growth-scaling/international-expansion" component={GrowthScalingInternationalExpansion} />
+        <Route path="/capabilities/business-building/growth-scaling/growth-analytics" component={GrowthScalingGrowthAnalytics} />
+        {/* Business Building → ai-powered-acceleration (Phase 2 leaves) */}
+        <Route path="/capabilities/business-building/ai-powered-acceleration/ai-strategy-roadmap" component={AIPoweredAccelerationAiStrategyRoadmap} />
+        <Route path="/capabilities/business-building/ai-powered-acceleration/generative-ai-integration" component={AIPoweredAccelerationGenerativeAiIntegration} />
+        <Route path="/capabilities/business-building/ai-powered-acceleration/intelligent-automation" component={AIPoweredAccelerationIntelligentAutomation} />
+        <Route path="/capabilities/business-building/ai-powered-acceleration/ai-powered-products" component={AIPoweredAccelerationAiPoweredProducts} />
+        <Route path="/capabilities/business-building/ai-powered-acceleration/data-ml-infrastructure" component={AIPoweredAccelerationDataMlInfrastructure} />
+        <Route path="/capabilities/business-building/ai-powered-acceleration/ai-change-management" component={AIPoweredAccelerationAiChangeManagement} />
+        {/* Business Building → distinctive-expertise (Phase 2 leaves) */}
+        <Route path="/capabilities/business-building/distinctive-expertise/playbook-selection" component={DistinctiveExpertisePlaybookSelection} />
+        <Route path="/capabilities/business-building/distinctive-expertise/framework-customization" component={DistinctiveExpertiseFrameworkCustomization} />
+        <Route path="/capabilities/business-building/distinctive-expertise/implementation-support" component={DistinctiveExpertiseImplementationSupport} />
+        <Route path="/capabilities/business-building/distinctive-expertise/knowledge-transfer" component={DistinctiveExpertiseKnowledgeTransfer} />
+        <Route path="/capabilities/business-building/distinctive-expertise/benchmark-analysis" component={DistinctiveExpertiseBenchmarkAnalysis} />
+        <Route path="/capabilities/business-building/distinctive-expertise/continuous-refinement" component={DistinctiveExpertiseContinuousRefinement} />
+        {/* Business Building → go-to-market-scale (Phase 2 leaves) */}
+        <Route path="/capabilities/business-building/go-to-market-scale/partner-network-access" component={GoToMarketScalePartnerNetworkAccess} />
+        <Route path="/capabilities/business-building/go-to-market-scale/channel-strategy-design" component={GoToMarketScaleChannelStrategyDesign} />
+        <Route path="/capabilities/business-building/go-to-market-scale/partner-enablement" component={GoToMarketScalePartnerEnablement} />
+        <Route path="/capabilities/business-building/go-to-market-scale/demand-generation" component={GoToMarketScaleDemandGeneration} />
+        <Route path="/capabilities/business-building/go-to-market-scale/sales-process-optimization" component={GoToMarketScaleSalesProcessOptimization} />
+        <Route path="/capabilities/business-building/go-to-market-scale/market-expansion" component={GoToMarketScaleMarketExpansion} />
+        {/* Business Building → digital-transformation-accelerator (Phase 2 leaves) */}
+        <Route path="/capabilities/business-building/digital-transformation-accelerator/architecture-assessment" component={DigitalTransformationAcceleratorArchitectureAssessment} />
+        <Route path="/capabilities/business-building/digital-transformation-accelerator/foundation-build" component={DigitalTransformationAcceleratorFoundationBuild} />
+        <Route path="/capabilities/business-building/digital-transformation-accelerator/capability-migration" component={DigitalTransformationAcceleratorCapabilityMigration} />
+        <Route path="/capabilities/business-building/digital-transformation-accelerator/optimization-governance" component={DigitalTransformationAcceleratorOptimizationGovernance} />
+        <Route path="/capabilities/business-building/digital-transformation-accelerator/legacy-modernization" component={DigitalTransformationAcceleratorLegacyModernization} />
+        <Route path="/capabilities/business-building/digital-transformation-accelerator/devsecops-enablement" component={DigitalTransformationAcceleratorDevsecopsEnablement} />
+        {/* Business Building → rapid-innovation-testing (Phase 2 leaves) */}
+        <Route path="/capabilities/business-building/rapid-innovation-testing/hypothesis-development" component={RapidInnovationTestingHypothesisDevelopment} />
+        <Route path="/capabilities/business-building/rapid-innovation-testing/rapid-prototyping" component={RapidInnovationTestingRapidPrototyping} />
+        <Route path="/capabilities/business-building/rapid-innovation-testing/market-validation" component={RapidInnovationTestingMarketValidation} />
+        <Route path="/capabilities/business-building/rapid-innovation-testing/decision-framework" component={RapidInnovationTestingDecisionFramework} />
+        <Route path="/capabilities/business-building/rapid-innovation-testing/stage-gate-governance" component={RapidInnovationTestingStageGateGovernance} />
+        <Route path="/capabilities/business-building/rapid-innovation-testing/scale-up-transition" component={RapidInnovationTestingScaleUpTransition} />
+        {/* Business Building → performance-intelligence-benchmarking (Phase 2 leaves) */}
+        <Route path="/capabilities/business-building/performance-intelligence-benchmarking/baseline-assessment" component={PerformanceIntelligenceBenchmarkingBaselineAssessment} />
+        <Route path="/capabilities/business-building/performance-intelligence-benchmarking/framework-development" component={PerformanceIntelligenceBenchmarkingFrameworkDevelopment} />
+        <Route path="/capabilities/business-building/performance-intelligence-benchmarking/deployment-training" component={PerformanceIntelligenceBenchmarkingDeploymentTraining} />
+        <Route path="/capabilities/business-building/performance-intelligence-benchmarking/continuous-improvement" component={PerformanceIntelligenceBenchmarkingContinuousImprovement} />
+        <Route path="/capabilities/business-building/performance-intelligence-benchmarking/predictive-analytics" component={PerformanceIntelligenceBenchmarkingPredictiveAnalytics} />
+        <Route path="/capabilities/business-building/performance-intelligence-benchmarking/executive-dashboards" component={PerformanceIntelligenceBenchmarkingExecutiveDashboards} />
         <Route path="/venture-portfolio" component={VenturePortfolio} />
         <Route path="/tools/growth-simulator" component={GrowthSimulator} />
         <Route path="/capabilities/growth-marketing-sales" component={GrowthMarketingSales} />
@@ -1374,4 +1502,5 @@ function App() {
 }
 
 export default App;
+
 
