@@ -1478,8 +1478,6 @@ function Router() {
         <Route path="/offices" component={Offices} />
         <Route path="/careers" component={Careers} />
         <Route path="/contact" component={Contact} />
-        <Route path={"/404"} component={NotFound} />
-        <Route component={NotFound} />
       
             {/* === Cat 2-4c Phase 2: Operations level-3 leaves (54) === */}
             {/* Operations / Supply Chain Optimization sub-services */}
@@ -1545,6 +1543,8 @@ function Router() {
             <Route path="/capabilities/operations/product-development/portfolio-management" component={OperationsProductDevelopmentPortfolioManagement} />
             <Route path="/capabilities/operations/product-development/design-for-manufacturing" component={OperationsProductDevelopmentDesignForManufacturing} />
             <Route path="/capabilities/operations/product-development/innovation-management" component={OperationsProductDevelopmentInnovationManagement} />
+        <Route path={"/404"} component={NotFound} />
+        <Route component={NotFound} />
 </Switch>
   );
 }
