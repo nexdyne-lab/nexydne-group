@@ -1480,11 +1480,142 @@ function Router() {
         <Route path="/contact" component={Contact} />
         <Route path={"/404"} component={NotFound} />
         <Route component={NotFound} />
-      </Switch>
+      
+            {/* === Cat 2-4c Phase 2: Operations level-3 leaves (54) === */}
+            {/* Operations / Supply Chain Optimization sub-services */}
+            <Route path="/capabilities/operations/supply-chain/supply-chain-strategy" component={OperationsSupplyChainSupplyChainStrategy} />
+            <Route path="/capabilities/operations/supply-chain/demand-planning-forecasting" component={OperationsSupplyChainDemandPlanningForecasting} />
+            <Route path="/capabilities/operations/supply-chain/inventory-optimization" component={OperationsSupplyChainInventoryOptimization} />
+            <Route path="/capabilities/operations/supply-chain/procurement-excellence" component={OperationsSupplyChainProcurementExcellence} />
+            <Route path="/capabilities/operations/supply-chain/logistics-distribution" component={OperationsSupplyChainLogisticsDistribution} />
+            <Route path="/capabilities/operations/supply-chain/supply-chain-digitization" component={OperationsSupplyChainSupplyChainDigitization} />
+            {/* Operations / Quality Management sub-services */}
+            <Route path="/capabilities/operations/quality-management/quality-strategy-governance" component={OperationsQualityManagementQualityStrategyGovernance} />
+            <Route path="/capabilities/operations/quality-management/process-quality-improvement" component={OperationsQualityManagementProcessQualityImprovement} />
+            <Route path="/capabilities/operations/quality-management/supplier-quality-management" component={OperationsQualityManagementSupplierQualityManagement} />
+            <Route path="/capabilities/operations/quality-management/quality-culture-development" component={OperationsQualityManagementQualityCultureDevelopment} />
+            <Route path="/capabilities/operations/quality-management/regulatory-compliance" component={OperationsQualityManagementRegulatoryCompliance} />
+            <Route path="/capabilities/operations/quality-management/quality-analytics-technology" component={OperationsQualityManagementQualityAnalyticsTechnology} />
+            {/* Operations / Production Optimization sub-services */}
+            <Route path="/capabilities/operations/production-optimization/oee-improvement" component={OperationsProductionOptimizationOeeImprovement} />
+            <Route path="/capabilities/operations/production-optimization/predictive-maintenance" component={OperationsProductionOptimizationPredictiveMaintenance} />
+            <Route path="/capabilities/operations/production-optimization/production-scheduling" component={OperationsProductionOptimizationProductionScheduling} />
+            <Route path="/capabilities/operations/production-optimization/lean-manufacturing" component={OperationsProductionOptimizationLeanManufacturing} />
+            <Route path="/capabilities/operations/production-optimization/changeover-optimization" component={OperationsProductionOptimizationChangeoverOptimization} />
+            <Route path="/capabilities/operations/production-optimization/asset-lifecycle-management" component={OperationsProductionOptimizationAssetLifecycleManagement} />
+            {/* Operations / Workforce Optimization sub-services */}
+            <Route path="/capabilities/operations/workforce-optimization/workforce-planning" component={OperationsWorkforceOptimizationWorkforcePlanning} />
+            <Route path="/capabilities/operations/workforce-optimization/capability-building" component={OperationsWorkforceOptimizationCapabilityBuilding} />
+            <Route path="/capabilities/operations/workforce-optimization/performance-management" component={OperationsWorkforceOptimizationPerformanceManagement} />
+            <Route path="/capabilities/operations/workforce-optimization/labor-productivity" component={OperationsWorkforceOptimizationLaborProductivity} />
+            <Route path="/capabilities/operations/workforce-optimization/change-management" component={OperationsWorkforceOptimizationChangeManagement} />
+            <Route path="/capabilities/operations/workforce-optimization/organizational-design" component={OperationsWorkforceOptimizationOrganizationalDesign} />
+            {/* Operations / Performance Analytics sub-services */}
+            <Route path="/capabilities/operations/performance-analytics/kpi-framework-design" component={OperationsPerformanceAnalyticsKpiFrameworkDesign} />
+            <Route path="/capabilities/operations/performance-analytics/operational-dashboards" component={OperationsPerformanceAnalyticsOperationalDashboards} />
+            <Route path="/capabilities/operations/performance-analytics/predictive-analytics" component={OperationsPerformanceAnalyticsPredictiveAnalytics} />
+            <Route path="/capabilities/operations/performance-analytics/process-mining" component={OperationsPerformanceAnalyticsProcessMining} />
+            <Route path="/capabilities/operations/performance-analytics/data-integration" component={OperationsPerformanceAnalyticsDataIntegration} />
+            <Route path="/capabilities/operations/performance-analytics/analytics-enablement" component={OperationsPerformanceAnalyticsAnalyticsEnablement} />
+            {/* Operations / Process Automation sub-services */}
+            <Route path="/capabilities/operations/process-automation/process-assessment-prioritization" component={OperationsProcessAutomationProcessAssessmentPrioritization} />
+            <Route path="/capabilities/operations/process-automation/workflow-automation" component={OperationsProcessAutomationWorkflowAutomation} />
+            <Route path="/capabilities/operations/process-automation/robotic-process-automation" component={OperationsProcessAutomationRoboticProcessAutomation} />
+            <Route path="/capabilities/operations/process-automation/intelligent-document-processing" component={OperationsProcessAutomationIntelligentDocumentProcessing} />
+            <Route path="/capabilities/operations/process-automation/integration-apis" component={OperationsProcessAutomationIntegrationApis} />
+            <Route path="/capabilities/operations/process-automation/automation-center-of-excellence" component={OperationsProcessAutomationAutomationCenterOfExcellence} />
+            {/* Operations / Strategic Procurement sub-services */}
+            <Route path="/capabilities/operations/strategic-procurement/strategic-sourcing" component={OperationsStrategicProcurementStrategicSourcing} />
+            <Route path="/capabilities/operations/strategic-procurement/supplier-management" component={OperationsStrategicProcurementSupplierManagement} />
+            <Route path="/capabilities/operations/strategic-procurement/spend-analytics" component={OperationsStrategicProcurementSpendAnalytics} />
+            <Route path="/capabilities/operations/strategic-procurement/contract-management" component={OperationsStrategicProcurementContractManagement} />
+            <Route path="/capabilities/operations/strategic-procurement/risk-management" component={OperationsStrategicProcurementRiskManagement} />
+            <Route path="/capabilities/operations/strategic-procurement/procurement-transformation" component={OperationsStrategicProcurementProcurementTransformation} />
+            {/* Operations / Service Operations sub-services */}
+            <Route path="/capabilities/operations/service-operations/service-delivery-optimization" component={OperationsServiceOperationsServiceDeliveryOptimization} />
+            <Route path="/capabilities/operations/service-operations/customer-experience-design" component={OperationsServiceOperationsCustomerExperienceDesign} />
+            <Route path="/capabilities/operations/service-operations/field-service-excellence" component={OperationsServiceOperationsFieldServiceExcellence} />
+            <Route path="/capabilities/operations/service-operations/contact-center-transformation" component={OperationsServiceOperationsContactCenterTransformation} />
+            <Route path="/capabilities/operations/service-operations/service-quality-management" component={OperationsServiceOperationsServiceQualityManagement} />
+            <Route path="/capabilities/operations/service-operations/capacity-workforce-planning" component={OperationsServiceOperationsCapacityWorkforcePlanning} />
+            {/* Operations / Product Development sub-services */}
+            <Route path="/capabilities/operations/product-development/npd-process-design" component={OperationsProductDevelopmentNpdProcessDesign} />
+            <Route path="/capabilities/operations/product-development/stage-gate-optimization" component={OperationsProductDevelopmentStageGateOptimization} />
+            <Route path="/capabilities/operations/product-development/agile-product-development" component={OperationsProductDevelopmentAgileProductDevelopment} />
+            <Route path="/capabilities/operations/product-development/portfolio-management" component={OperationsProductDevelopmentPortfolioManagement} />
+            <Route path="/capabilities/operations/product-development/design-for-manufacturing" component={OperationsProductDevelopmentDesignForManufacturing} />
+            <Route path="/capabilities/operations/product-development/innovation-management" component={OperationsProductDevelopmentInnovationManagement} />
+</Switch>
   );
 }
 
 import { useAnalytics } from "@/hooks/useAnalytics";
+
+// === Cat 2-4c Phase 2: Operations level-3 leaves (54) ===
+// Operations / Supply Chain Optimization sub-services
+import OperationsSupplyChainSupplyChainStrategy from "@/pages/operations/supply-chain/SupplyChainStrategy";
+import OperationsSupplyChainDemandPlanningForecasting from "@/pages/operations/supply-chain/DemandPlanningForecasting";
+import OperationsSupplyChainInventoryOptimization from "@/pages/operations/supply-chain/InventoryOptimization";
+import OperationsSupplyChainProcurementExcellence from "@/pages/operations/supply-chain/ProcurementExcellence";
+import OperationsSupplyChainLogisticsDistribution from "@/pages/operations/supply-chain/LogisticsDistribution";
+import OperationsSupplyChainSupplyChainDigitization from "@/pages/operations/supply-chain/SupplyChainDigitization";
+// Operations / Quality Management sub-services
+import OperationsQualityManagementQualityStrategyGovernance from "@/pages/operations/quality-management/QualityStrategyGovernance";
+import OperationsQualityManagementProcessQualityImprovement from "@/pages/operations/quality-management/ProcessQualityImprovement";
+import OperationsQualityManagementSupplierQualityManagement from "@/pages/operations/quality-management/SupplierQualityManagement";
+import OperationsQualityManagementQualityCultureDevelopment from "@/pages/operations/quality-management/QualityCultureDevelopment";
+import OperationsQualityManagementRegulatoryCompliance from "@/pages/operations/quality-management/RegulatoryCompliance";
+import OperationsQualityManagementQualityAnalyticsTechnology from "@/pages/operations/quality-management/QualityAnalyticsTechnology";
+// Operations / Production Optimization sub-services
+import OperationsProductionOptimizationOeeImprovement from "@/pages/operations/production-optimization/OeeImprovement";
+import OperationsProductionOptimizationPredictiveMaintenance from "@/pages/operations/production-optimization/PredictiveMaintenance";
+import OperationsProductionOptimizationProductionScheduling from "@/pages/operations/production-optimization/ProductionScheduling";
+import OperationsProductionOptimizationLeanManufacturing from "@/pages/operations/production-optimization/LeanManufacturing";
+import OperationsProductionOptimizationChangeoverOptimization from "@/pages/operations/production-optimization/ChangeoverOptimization";
+import OperationsProductionOptimizationAssetLifecycleManagement from "@/pages/operations/production-optimization/AssetLifecycleManagement";
+// Operations / Workforce Optimization sub-services
+import OperationsWorkforceOptimizationWorkforcePlanning from "@/pages/operations/workforce-optimization/WorkforcePlanning";
+import OperationsWorkforceOptimizationCapabilityBuilding from "@/pages/operations/workforce-optimization/CapabilityBuilding";
+import OperationsWorkforceOptimizationPerformanceManagement from "@/pages/operations/workforce-optimization/PerformanceManagement";
+import OperationsWorkforceOptimizationLaborProductivity from "@/pages/operations/workforce-optimization/LaborProductivity";
+import OperationsWorkforceOptimizationChangeManagement from "@/pages/operations/workforce-optimization/ChangeManagement";
+import OperationsWorkforceOptimizationOrganizationalDesign from "@/pages/operations/workforce-optimization/OrganizationalDesign";
+// Operations / Performance Analytics sub-services
+import OperationsPerformanceAnalyticsKpiFrameworkDesign from "@/pages/operations/performance-analytics/KpiFrameworkDesign";
+import OperationsPerformanceAnalyticsOperationalDashboards from "@/pages/operations/performance-analytics/OperationalDashboards";
+import OperationsPerformanceAnalyticsPredictiveAnalytics from "@/pages/operations/performance-analytics/PredictiveAnalytics";
+import OperationsPerformanceAnalyticsProcessMining from "@/pages/operations/performance-analytics/ProcessMining";
+import OperationsPerformanceAnalyticsDataIntegration from "@/pages/operations/performance-analytics/DataIntegration";
+import OperationsPerformanceAnalyticsAnalyticsEnablement from "@/pages/operations/performance-analytics/AnalyticsEnablement";
+// Operations / Process Automation sub-services
+import OperationsProcessAutomationProcessAssessmentPrioritization from "@/pages/operations/process-automation/ProcessAssessmentPrioritization";
+import OperationsProcessAutomationWorkflowAutomation from "@/pages/operations/process-automation/WorkflowAutomation";
+import OperationsProcessAutomationRoboticProcessAutomation from "@/pages/operations/process-automation/RoboticProcessAutomation";
+import OperationsProcessAutomationIntelligentDocumentProcessing from "@/pages/operations/process-automation/IntelligentDocumentProcessing";
+import OperationsProcessAutomationIntegrationApis from "@/pages/operations/process-automation/IntegrationApis";
+import OperationsProcessAutomationAutomationCenterOfExcellence from "@/pages/operations/process-automation/AutomationCenterOfExcellence";
+// Operations / Strategic Procurement sub-services
+import OperationsStrategicProcurementStrategicSourcing from "@/pages/operations/strategic-procurement/StrategicSourcing";
+import OperationsStrategicProcurementSupplierManagement from "@/pages/operations/strategic-procurement/SupplierManagement";
+import OperationsStrategicProcurementSpendAnalytics from "@/pages/operations/strategic-procurement/SpendAnalytics";
+import OperationsStrategicProcurementContractManagement from "@/pages/operations/strategic-procurement/ContractManagement";
+import OperationsStrategicProcurementRiskManagement from "@/pages/operations/strategic-procurement/RiskManagement";
+import OperationsStrategicProcurementProcurementTransformation from "@/pages/operations/strategic-procurement/ProcurementTransformation";
+// Operations / Service Operations sub-services
+import OperationsServiceOperationsServiceDeliveryOptimization from "@/pages/operations/service-operations/ServiceDeliveryOptimization";
+import OperationsServiceOperationsCustomerExperienceDesign from "@/pages/operations/service-operations/CustomerExperienceDesign";
+import OperationsServiceOperationsFieldServiceExcellence from "@/pages/operations/service-operations/FieldServiceExcellence";
+import OperationsServiceOperationsContactCenterTransformation from "@/pages/operations/service-operations/ContactCenterTransformation";
+import OperationsServiceOperationsServiceQualityManagement from "@/pages/operations/service-operations/ServiceQualityManagement";
+import OperationsServiceOperationsCapacityWorkforcePlanning from "@/pages/operations/service-operations/CapacityWorkforcePlanning";
+// Operations / Product Development sub-services
+import OperationsProductDevelopmentNpdProcessDesign from "@/pages/operations/product-development/NpdProcessDesign";
+import OperationsProductDevelopmentStageGateOptimization from "@/pages/operations/product-development/StageGateOptimization";
+import OperationsProductDevelopmentAgileProductDevelopment from "@/pages/operations/product-development/AgileProductDevelopment";
+import OperationsProductDevelopmentPortfolioManagement from "@/pages/operations/product-development/PortfolioManagement";
+import OperationsProductDevelopmentDesignForManufacturing from "@/pages/operations/product-development/DesignForManufacturing";
+import OperationsProductDevelopmentInnovationManagement from "@/pages/operations/product-development/InnovationManagement";
+
 
 function App() {
   useAnalytics();
@@ -1502,5 +1633,6 @@ function App() {
 }
 
 export default App;
+
 
 
