@@ -39,6 +39,21 @@ export default function BusinessBuilding() {
       title: "Go-to-Market at Scale",
       description: "Launch with confidence using our proven go-to-market frameworks and growth playbooks.",
       link: "/capabilities/business-building/go-to-market-scale"
+    },
+    {
+      title: "Digital Transformation Accelerator",
+      description: "Right-size enterprise architecture, cloud migration, data platforms, and integration frameworks — enterprise capabilities without enterprise overhead.",
+      link: "/capabilities/business-building/digital-transformation-accelerator"
+    },
+    {
+      title: "Rapid Innovation & Testing",
+      description: "Test and validate new growth initiatives with structured prototyping, customer-discovery programs, and pilot frameworks built for evidence-based go/no-go decisions.",
+      link: "/capabilities/business-building/rapid-innovation-testing"
+    },
+    {
+      title: "Performance Intelligence & Benchmarking",
+      description: "Industry benchmarking, maturity assessments, ROI modeling, and KPI frameworks validated against peer companies — the performance-intelligence systems leading enterprises rely on.",
+      link: "/capabilities/business-building/performance-intelligence-benchmarking"
     }
   ];
 
@@ -322,7 +337,7 @@ export default function BusinessBuilding() {
           </motion.div>
 
           {/* BainHoverCard with peach wash */}
-          <div className="grid md:grid-cols-4 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-6">
             {capabilities.map((item, index) => (
               <motion.div
                 key={index}
@@ -664,3 +679,4 @@ export default function BusinessBuilding() {
     </div>
   );
 }
+
