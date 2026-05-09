@@ -320,6 +320,7 @@ import MergersAcquisitions from "@/pages/strategy-corporate-finance/MergersAcqui
 import BusinessStrategy from "@/pages/strategy-corporate-finance/BusinessStrategy";
 import PerformanceImprovement from "@/pages/strategy-corporate-finance/PerformanceImprovement";
 import AIPoweredFinance from "@/pages/strategy-corporate-finance/AIPoweredFinance";
+import MAPartnerships from "@/pages/strategy-corporate-finance/MAPartnerships";
 import FractionalCFOCaseStudies from "@/pages/FractionalCFOCaseStudies";
 import CaseStudyPredictiveRevenue from "@/pages/CaseStudyPredictiveRevenue";
 import CaseStudyVarianceAnalysis from "@/pages/CaseStudyVarianceAnalysis";
@@ -1343,6 +1344,7 @@ function Router() {
       <Route path="/capabilities/strategy-corporate-finance/business-strategy" component={BusinessStrategy} />
       <Route path="/capabilities/strategy-corporate-finance/performance-improvement" component={PerformanceImprovement} />
       <Route path="/capabilities/strategy-corporate-finance/ai-powered-finance" component={AIPoweredFinance} />
+      <Route path="/capabilities/strategy-corporate-finance/ma-partnerships" component={MAPartnerships} />
         <Route path="/case-studies/fractional-cfo" component={FractionalCFOCaseStudies} />
         <Route path="/case-studies/fractional-cfo/predictive-revenue" component={CaseStudyPredictiveRevenue} />
         <Route path="/case-studies/fractional-cfo/variance-analysis" component={CaseStudyVarianceAnalysis} />
@@ -1633,6 +1635,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
