@@ -321,6 +321,63 @@ import BusinessStrategy from "@/pages/strategy-corporate-finance/BusinessStrateg
 import PerformanceImprovement from "@/pages/strategy-corporate-finance/PerformanceImprovement";
 import AIPoweredFinance from "@/pages/strategy-corporate-finance/AIPoweredFinance";
 import MAPartnerships from "@/pages/strategy-corporate-finance/MAPartnerships";
+
+// Strategy & Corporate Finance — business-strategy sub-services (Cat 2-4d Phase 2)
+import StrategyCorporateFinanceBusinessStrategyBusinessModelInnovation from "@/pages/strategy-corporate-finance/business-strategy/BusinessModelInnovation";
+import StrategyCorporateFinanceBusinessStrategyDigitalStrategy from "@/pages/strategy-corporate-finance/business-strategy/DigitalStrategy";
+import StrategyCorporateFinanceBusinessStrategyGrowthStrategy from "@/pages/strategy-corporate-finance/business-strategy/GrowthStrategy";
+import StrategyCorporateFinanceBusinessStrategyOrganizationalTransformation from "@/pages/strategy-corporate-finance/business-strategy/OrganizationalTransformation";
+import StrategyCorporateFinanceBusinessStrategyStrategicPlanning from "@/pages/strategy-corporate-finance/business-strategy/StrategicPlanning";
+import StrategyCorporateFinanceBusinessStrategyTurnaroundRestructuring from "@/pages/strategy-corporate-finance/business-strategy/TurnaroundRestructuring";
+// Strategy & Corporate Finance — cfo-services sub-services (Cat 2-4d Phase 2)
+import StrategyCorporateFinanceCfoServicesBoardInvestorRelations from "@/pages/strategy-corporate-finance/cfo-services/BoardInvestorRelations";
+import StrategyCorporateFinanceCfoServicesCashFlowManagement from "@/pages/strategy-corporate-finance/cfo-services/CashFlowManagement";
+import StrategyCorporateFinanceCfoServicesFinancialReportingKpis from "@/pages/strategy-corporate-finance/cfo-services/FinancialReportingKpis";
+import StrategyCorporateFinanceCfoServicesFinancialSystemsProcesses from "@/pages/strategy-corporate-finance/cfo-services/FinancialSystemsProcesses";
+import StrategyCorporateFinanceCfoServicesFundraisingSupport from "@/pages/strategy-corporate-finance/cfo-services/FundraisingSupport";
+import StrategyCorporateFinanceCfoServicesStrategicFinancialPlanning from "@/pages/strategy-corporate-finance/cfo-services/StrategicFinancialPlanning";
+// Strategy & Corporate Finance — fpa sub-services (Cat 2-4d Phase 2)
+import StrategyCorporateFinanceFpaBudgetingForecasting from "@/pages/strategy-corporate-finance/fpa/BudgetingForecasting";
+import StrategyCorporateFinanceFpaBusinessIntelligence from "@/pages/strategy-corporate-finance/fpa/BusinessIntelligence";
+import StrategyCorporateFinanceFpaFinancialModeling from "@/pages/strategy-corporate-finance/fpa/FinancialModeling";
+import StrategyCorporateFinanceFpaKpiDevelopment from "@/pages/strategy-corporate-finance/fpa/KpiDevelopment";
+import StrategyCorporateFinanceFpaManagementReporting from "@/pages/strategy-corporate-finance/fpa/ManagementReporting";
+import StrategyCorporateFinanceFpaVarianceAnalysis from "@/pages/strategy-corporate-finance/fpa/VarianceAnalysis";
+// Strategy & Corporate Finance — capital-raising sub-services (Cat 2-4d Phase 2)
+import StrategyCorporateFinanceCapitalRaisingDebtFinancing from "@/pages/strategy-corporate-finance/capital-raising/DebtFinancing";
+import StrategyCorporateFinanceCapitalRaisingEquityFinancing from "@/pages/strategy-corporate-finance/capital-raising/EquityFinancing";
+import StrategyCorporateFinanceCapitalRaisingGrantIncentivePrograms from "@/pages/strategy-corporate-finance/capital-raising/GrantIncentivePrograms";
+import StrategyCorporateFinanceCapitalRaisingInvestmentReadiness from "@/pages/strategy-corporate-finance/capital-raising/InvestmentReadiness";
+import StrategyCorporateFinanceCapitalRaisingInvestorRelations from "@/pages/strategy-corporate-finance/capital-raising/InvestorRelations";
+import StrategyCorporateFinanceCapitalRaisingWorkingCapitalOptimization from "@/pages/strategy-corporate-finance/capital-raising/WorkingCapitalOptimization";
+// Strategy & Corporate Finance — mergers-acquisitions sub-services (Cat 2-4d Phase 2)
+import StrategyCorporateFinanceMergersAcquisitionsCommercialDueDiligence from "@/pages/strategy-corporate-finance/mergers-acquisitions/CommercialDueDiligence";
+import StrategyCorporateFinanceMergersAcquisitionsFinancialDueDiligence from "@/pages/strategy-corporate-finance/mergers-acquisitions/FinancialDueDiligence";
+import StrategyCorporateFinanceMergersAcquisitionsMaStrategy from "@/pages/strategy-corporate-finance/mergers-acquisitions/MaStrategy";
+import StrategyCorporateFinanceMergersAcquisitionsPostMergerIntegration from "@/pages/strategy-corporate-finance/mergers-acquisitions/PostMergerIntegration";
+import StrategyCorporateFinanceMergersAcquisitionsTargetIdentification from "@/pages/strategy-corporate-finance/mergers-acquisitions/TargetIdentification";
+import StrategyCorporateFinanceMergersAcquisitionsValuationDealStructuring from "@/pages/strategy-corporate-finance/mergers-acquisitions/ValuationDealStructuring";
+// Strategy & Corporate Finance — performance-improvement sub-services (Cat 2-4d Phase 2)
+import StrategyCorporateFinancePerformanceImprovementCostOptimization from "@/pages/strategy-corporate-finance/performance-improvement/CostOptimization";
+import StrategyCorporateFinancePerformanceImprovementOrganizationalEfficiency from "@/pages/strategy-corporate-finance/performance-improvement/OrganizationalEfficiency";
+import StrategyCorporateFinancePerformanceImprovementPricingOptimization from "@/pages/strategy-corporate-finance/performance-improvement/PricingOptimization";
+import StrategyCorporateFinancePerformanceImprovementProcessEfficiency from "@/pages/strategy-corporate-finance/performance-improvement/ProcessEfficiency";
+import StrategyCorporateFinancePerformanceImprovementProcurementExcellence from "@/pages/strategy-corporate-finance/performance-improvement/ProcurementExcellence";
+import StrategyCorporateFinancePerformanceImprovementWorkingCapitalManagement from "@/pages/strategy-corporate-finance/performance-improvement/WorkingCapitalManagement";
+// Strategy & Corporate Finance — ai-powered-finance sub-services (Cat 2-4d Phase 2)
+import StrategyCorporateFinanceAiPoweredFinanceAiAssistedBudgeting from "@/pages/strategy-corporate-finance/ai-powered-finance/AiAssistedBudgeting";
+import StrategyCorporateFinanceAiPoweredFinanceAutomatedFinancialReporting from "@/pages/strategy-corporate-finance/ai-powered-finance/AutomatedFinancialReporting";
+import StrategyCorporateFinanceAiPoweredFinanceDocumentProcessingExtraction from "@/pages/strategy-corporate-finance/ai-powered-finance/DocumentProcessingExtraction";
+import StrategyCorporateFinanceAiPoweredFinanceFinancialAnomalyDetection from "@/pages/strategy-corporate-finance/ai-powered-finance/FinancialAnomalyDetection";
+import StrategyCorporateFinanceAiPoweredFinanceIntelligentVarianceAnalysis from "@/pages/strategy-corporate-finance/ai-powered-finance/IntelligentVarianceAnalysis";
+import StrategyCorporateFinanceAiPoweredFinancePredictiveCashFlowModeling from "@/pages/strategy-corporate-finance/ai-powered-finance/PredictiveCashFlowModeling";
+// Strategy & Corporate Finance — ma-partnerships sub-services (Cat 2-4d Phase 2)
+import StrategyCorporateFinanceMaPartnershipsDealStructuring from "@/pages/strategy-corporate-finance/ma-partnerships/DealStructuring";
+import StrategyCorporateFinanceMaPartnershipsDueDiligence from "@/pages/strategy-corporate-finance/ma-partnerships/DueDiligence";
+import StrategyCorporateFinanceMaPartnershipsMaStrategy from "@/pages/strategy-corporate-finance/ma-partnerships/MaStrategy";
+import StrategyCorporateFinanceMaPartnershipsPostMergerIntegration from "@/pages/strategy-corporate-finance/ma-partnerships/PostMergerIntegration";
+import StrategyCorporateFinanceMaPartnershipsStrategicPartnerships from "@/pages/strategy-corporate-finance/ma-partnerships/StrategicPartnerships";
+import StrategyCorporateFinanceMaPartnershipsTargetIdentification from "@/pages/strategy-corporate-finance/ma-partnerships/TargetIdentification";
 import FractionalCFOCaseStudies from "@/pages/FractionalCFOCaseStudies";
 import CaseStudyPredictiveRevenue from "@/pages/CaseStudyPredictiveRevenue";
 import CaseStudyVarianceAnalysis from "@/pages/CaseStudyVarianceAnalysis";
@@ -1545,6 +1602,62 @@ function Router() {
             <Route path="/capabilities/operations/product-development/portfolio-management" component={OperationsProductDevelopmentPortfolioManagement} />
             <Route path="/capabilities/operations/product-development/design-for-manufacturing" component={OperationsProductDevelopmentDesignForManufacturing} />
             <Route path="/capabilities/operations/product-development/innovation-management" component={OperationsProductDevelopmentInnovationManagement} />
+            {/* Strategy & Corporate Finance / business-strategy sub-services */}
+            <Route path="/capabilities/strategy-corporate-finance/business-strategy/business-model-innovation" component={StrategyCorporateFinanceBusinessStrategyBusinessModelInnovation} />
+            <Route path="/capabilities/strategy-corporate-finance/business-strategy/digital-strategy" component={StrategyCorporateFinanceBusinessStrategyDigitalStrategy} />
+            <Route path="/capabilities/strategy-corporate-finance/business-strategy/growth-strategy" component={StrategyCorporateFinanceBusinessStrategyGrowthStrategy} />
+            <Route path="/capabilities/strategy-corporate-finance/business-strategy/organizational-transformation" component={StrategyCorporateFinanceBusinessStrategyOrganizationalTransformation} />
+            <Route path="/capabilities/strategy-corporate-finance/business-strategy/strategic-planning" component={StrategyCorporateFinanceBusinessStrategyStrategicPlanning} />
+            <Route path="/capabilities/strategy-corporate-finance/business-strategy/turnaround-restructuring" component={StrategyCorporateFinanceBusinessStrategyTurnaroundRestructuring} />
+            {/* Strategy & Corporate Finance / cfo-services sub-services */}
+            <Route path="/capabilities/strategy-corporate-finance/cfo-services/board-investor-relations" component={StrategyCorporateFinanceCfoServicesBoardInvestorRelations} />
+            <Route path="/capabilities/strategy-corporate-finance/cfo-services/cash-flow-management" component={StrategyCorporateFinanceCfoServicesCashFlowManagement} />
+            <Route path="/capabilities/strategy-corporate-finance/cfo-services/financial-reporting-kpis" component={StrategyCorporateFinanceCfoServicesFinancialReportingKpis} />
+            <Route path="/capabilities/strategy-corporate-finance/cfo-services/financial-systems-processes" component={StrategyCorporateFinanceCfoServicesFinancialSystemsProcesses} />
+            <Route path="/capabilities/strategy-corporate-finance/cfo-services/fundraising-support" component={StrategyCorporateFinanceCfoServicesFundraisingSupport} />
+            <Route path="/capabilities/strategy-corporate-finance/cfo-services/strategic-financial-planning" component={StrategyCorporateFinanceCfoServicesStrategicFinancialPlanning} />
+            {/* Strategy & Corporate Finance / fpa sub-services */}
+            <Route path="/capabilities/strategy-corporate-finance/fpa/budgeting-forecasting" component={StrategyCorporateFinanceFpaBudgetingForecasting} />
+            <Route path="/capabilities/strategy-corporate-finance/fpa/business-intelligence" component={StrategyCorporateFinanceFpaBusinessIntelligence} />
+            <Route path="/capabilities/strategy-corporate-finance/fpa/financial-modeling" component={StrategyCorporateFinanceFpaFinancialModeling} />
+            <Route path="/capabilities/strategy-corporate-finance/fpa/kpi-development" component={StrategyCorporateFinanceFpaKpiDevelopment} />
+            <Route path="/capabilities/strategy-corporate-finance/fpa/management-reporting" component={StrategyCorporateFinanceFpaManagementReporting} />
+            <Route path="/capabilities/strategy-corporate-finance/fpa/variance-analysis" component={StrategyCorporateFinanceFpaVarianceAnalysis} />
+            {/* Strategy & Corporate Finance / capital-raising sub-services */}
+            <Route path="/capabilities/strategy-corporate-finance/capital-raising/debt-financing" component={StrategyCorporateFinanceCapitalRaisingDebtFinancing} />
+            <Route path="/capabilities/strategy-corporate-finance/capital-raising/equity-financing" component={StrategyCorporateFinanceCapitalRaisingEquityFinancing} />
+            <Route path="/capabilities/strategy-corporate-finance/capital-raising/grant-incentive-programs" component={StrategyCorporateFinanceCapitalRaisingGrantIncentivePrograms} />
+            <Route path="/capabilities/strategy-corporate-finance/capital-raising/investment-readiness" component={StrategyCorporateFinanceCapitalRaisingInvestmentReadiness} />
+            <Route path="/capabilities/strategy-corporate-finance/capital-raising/investor-relations" component={StrategyCorporateFinanceCapitalRaisingInvestorRelations} />
+            <Route path="/capabilities/strategy-corporate-finance/capital-raising/working-capital-optimization" component={StrategyCorporateFinanceCapitalRaisingWorkingCapitalOptimization} />
+            {/* Strategy & Corporate Finance / mergers-acquisitions sub-services */}
+            <Route path="/capabilities/strategy-corporate-finance/mergers-acquisitions/commercial-due-diligence" component={StrategyCorporateFinanceMergersAcquisitionsCommercialDueDiligence} />
+            <Route path="/capabilities/strategy-corporate-finance/mergers-acquisitions/financial-due-diligence" component={StrategyCorporateFinanceMergersAcquisitionsFinancialDueDiligence} />
+            <Route path="/capabilities/strategy-corporate-finance/mergers-acquisitions/ma-strategy" component={StrategyCorporateFinanceMergersAcquisitionsMaStrategy} />
+            <Route path="/capabilities/strategy-corporate-finance/mergers-acquisitions/post-merger-integration" component={StrategyCorporateFinanceMergersAcquisitionsPostMergerIntegration} />
+            <Route path="/capabilities/strategy-corporate-finance/mergers-acquisitions/target-identification" component={StrategyCorporateFinanceMergersAcquisitionsTargetIdentification} />
+            <Route path="/capabilities/strategy-corporate-finance/mergers-acquisitions/valuation-deal-structuring" component={StrategyCorporateFinanceMergersAcquisitionsValuationDealStructuring} />
+            {/* Strategy & Corporate Finance / performance-improvement sub-services */}
+            <Route path="/capabilities/strategy-corporate-finance/performance-improvement/cost-optimization" component={StrategyCorporateFinancePerformanceImprovementCostOptimization} />
+            <Route path="/capabilities/strategy-corporate-finance/performance-improvement/organizational-efficiency" component={StrategyCorporateFinancePerformanceImprovementOrganizationalEfficiency} />
+            <Route path="/capabilities/strategy-corporate-finance/performance-improvement/pricing-optimization" component={StrategyCorporateFinancePerformanceImprovementPricingOptimization} />
+            <Route path="/capabilities/strategy-corporate-finance/performance-improvement/process-efficiency" component={StrategyCorporateFinancePerformanceImprovementProcessEfficiency} />
+            <Route path="/capabilities/strategy-corporate-finance/performance-improvement/procurement-excellence" component={StrategyCorporateFinancePerformanceImprovementProcurementExcellence} />
+            <Route path="/capabilities/strategy-corporate-finance/performance-improvement/working-capital-management" component={StrategyCorporateFinancePerformanceImprovementWorkingCapitalManagement} />
+            {/* Strategy & Corporate Finance / ai-powered-finance sub-services */}
+            <Route path="/capabilities/strategy-corporate-finance/ai-powered-finance/ai-assisted-budgeting" component={StrategyCorporateFinanceAiPoweredFinanceAiAssistedBudgeting} />
+            <Route path="/capabilities/strategy-corporate-finance/ai-powered-finance/automated-financial-reporting" component={StrategyCorporateFinanceAiPoweredFinanceAutomatedFinancialReporting} />
+            <Route path="/capabilities/strategy-corporate-finance/ai-powered-finance/document-processing-extraction" component={StrategyCorporateFinanceAiPoweredFinanceDocumentProcessingExtraction} />
+            <Route path="/capabilities/strategy-corporate-finance/ai-powered-finance/financial-anomaly-detection" component={StrategyCorporateFinanceAiPoweredFinanceFinancialAnomalyDetection} />
+            <Route path="/capabilities/strategy-corporate-finance/ai-powered-finance/intelligent-variance-analysis" component={StrategyCorporateFinanceAiPoweredFinanceIntelligentVarianceAnalysis} />
+            <Route path="/capabilities/strategy-corporate-finance/ai-powered-finance/predictive-cash-flow-modeling" component={StrategyCorporateFinanceAiPoweredFinancePredictiveCashFlowModeling} />
+            {/* Strategy & Corporate Finance / ma-partnerships sub-services */}
+            <Route path="/capabilities/strategy-corporate-finance/ma-partnerships/deal-structuring" component={StrategyCorporateFinanceMaPartnershipsDealStructuring} />
+            <Route path="/capabilities/strategy-corporate-finance/ma-partnerships/due-diligence" component={StrategyCorporateFinanceMaPartnershipsDueDiligence} />
+            <Route path="/capabilities/strategy-corporate-finance/ma-partnerships/ma-strategy" component={StrategyCorporateFinanceMaPartnershipsMaStrategy} />
+            <Route path="/capabilities/strategy-corporate-finance/ma-partnerships/post-merger-integration" component={StrategyCorporateFinanceMaPartnershipsPostMergerIntegration} />
+            <Route path="/capabilities/strategy-corporate-finance/ma-partnerships/strategic-partnerships" component={StrategyCorporateFinanceMaPartnershipsStrategicPartnerships} />
+            <Route path="/capabilities/strategy-corporate-finance/ma-partnerships/target-identification" component={StrategyCorporateFinanceMaPartnershipsTargetIdentification} />
         <Route path={"/404"} component={NotFound} />
         <Route component={NotFound} />
 </Switch>
@@ -1635,6 +1748,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
