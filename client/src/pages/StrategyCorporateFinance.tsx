@@ -44,6 +44,11 @@ export default function StrategyCorporateFinance() {
       title: "AI-Powered Finance",
       description: "Harness artificial intelligence to transform your finance function. Automated reporting, predictive cash flow modeling, and AI-assisted budgeting that delivers enterprise-grade insights at midmarket scale.",
       link: "/capabilities/strategy-corporate-finance/ai-powered-finance"
+    },
+    {
+      title: "M&A & Strategic Partnerships",
+      description: "Navigate complex transactions with confidence. From target identification to post-merger integration — and the joint ventures, alliances, and partnerships that unlock growth without a full acquisition.",
+      link: "/capabilities/strategy-corporate-finance/ma-partnerships"
     }
   ];
 
@@ -518,3 +523,4 @@ export default function StrategyCorporateFinance() {
     </div>
   );
 }
+
