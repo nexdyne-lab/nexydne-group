@@ -1,617 +1,399 @@
-import { motion } from "framer-motion";
-import { Link } from "wouter";
-import { useState } from "react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import SolutionHero from "@/components/SolutionHero";
-import { SEO } from "@/components/SEO";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import MarketingMasterTemplate from "@/components/MarketingMasterTemplate";
 
 export default function EnterpriseTransformation() {
-  const [selectedIndustry, setSelectedIndustry] = useState("");
-  const [email, setEmail] = useState("");
-
-  // ── Data arrays preserved verbatim from prior source ─────────────────────────
-  const services = [
-    {
-      title: "Cloud Migration & Architecture",
-      description:
-        "Move off aging servers without the drama. We handle AWS, Azure, and Google Cloud migrations that finish on time and on budget.",
-      link: "/solutions/enterprise-transformation/cloud-migration-architecture",
-    },
-    {
-      title: "Infrastructure Modernization",
-      description:
-        "Replace patchwork systems with unified platforms your team can actually manage. Build foundations that scale with your business.",
-      link: "/solutions/enterprise-transformation/infrastructure-modernization",
-    },
-    {
-      title: "Platform Engineering",
-      description:
-        "Design and build internal developer platforms that accelerate delivery, enforce standards, and reduce cognitive load on engineering teams.",
-      link: "/solutions/enterprise-transformation/platform-engineering",
-    },
-    {
-      title: "DevOps & CI/CD",
-      description:
-        "Implement agile workflows, modern development practices, and automation that let your team ship faster without sacrificing quality.",
-      link: "/solutions/enterprise-transformation/devops-cicd",
-    },
-    {
-      title: "Security & Compliance",
-      description:
-        "SOC 2, HIPAA, PCI—whatever your industry requires. We build security in from the start, not as an afterthought.",
-      link: "/solutions/enterprise-transformation/security-and-compliance",
-    },
-    {
-      title: "Data Platform Engineering",
-      description:
-        "Your data is scattered across spreadsheets, legacy databases, and SaaS tools. We build unified platforms that make data actually useful.",
-      link: "/solutions/enterprise-transformation/data-platform-engineering",
-    },
-  ];
-
-  const outcomes = [
-    {
-      stat: "60+",
-      label: "technology modernization projects completed for mid-market companies",
-    },
-    {
-      stat: "~$15M",
-      label: "in operational savings delivered to clients in the last three years",
-    },
-    {
-      stat: "12+",
-      label: "strategic partnerships across cloud, security, and AI platforms",
-    },
-  ];
-
-  const approach = [
-    {
-      title: "Discovery",
-      description:
-        "We map your current systems, identify pain points, and quantify the cost of doing nothing. No assumptions—just data.",
-      link: "/solutions/enterprise-transformation/technology-due-diligence",
-    },
-    {
-      title: "Architecture",
-      description:
-        "We design a solution that fits your business, your budget, and your team's capabilities. No gold-plating.",
-      link: "/solutions/enterprise-transformation/platform-engineering",
-    },
-    {
-      title: "Build",
-      description:
-        "We build in sprints with regular demos. You see progress every two weeks, not just at the end.",
-      link: "/solutions/enterprise-transformation/devops-cicd",
-    },
-    {
-      title: "Launch & Support",
-      description:
-        "Go-live isn't the finish line. We stick around to fix issues, train your team, and ensure adoption.",
-      link: "/solutions/enterprise-transformation/infrastructure-modernization",
-    },
-    {
-      title: "Optimize",
-      description:
-        "Right-size your tech spending. We identify waste, renegotiate contracts, and help you get more value from existing investments.",
-      link: "/solutions/enterprise-transformation/cloud-cost-optimization",
-    },
-  ];
-
-  const cases = [
-    {
-      industry: "Healthcare",
-      title: "Healthcare Network Migrates to Cloud Without Disruption",
-      description:
-        "A regional healthcare provider modernized core systems on AWS, cutting infrastructure cost by 38% while improving uptime.",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070&auto=format&fit=crop",
-      link: "/cases/healthcare-cloud-migration",
-    },
-    {
-      industry: "Financial Services",
-      title: "Fintech Modernizes Core with Microservices",
-      description:
-        "A growing fintech replatformed its monolith into microservices, accelerating release cycles from quarterly to weekly.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop",
-      link: "/cases/fintech-microservices",
-    },
-    {
-      industry: "Media & Entertainment",
-      title: "Media Streaming Platform Scales to 10M Concurrent Users",
-      description:
-        "Re-architected streaming infrastructure for elastic scaling, reducing peak-hour latency by 62% during major live events.",
-      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1965&auto=format&fit=crop",
-      link: "/cases/media-streaming-scale",
-    },
-  ];
-
-  const relatedOfferings = [
-    {
-      title: "Strategy & Corporate Finance",
-      link: "/strategy-corporate-finance",
-    },
-    {
-      title: "Business Building",
-      link: "/capabilities/business-building",
-    },
-    {
-      title: "Artificial Intelligence",
-      link: "/capabilities/artificial-intelligence",
-    },
-    {
-      title: "Technology Strategy",
-      link: "/solutions/enterprise-transformation/technology-strategy",
-    },
-    {
-      title: "Cloud Cost Optimization",
-      link: "/solutions/enterprise-transformation/cloud-cost-optimization",
-    },
-    {
-      title: "Technology Due Diligence",
-      link: "/solutions/enterprise-transformation/technology-due-diligence",
-    },
-  ];
-
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal">
-      <SEO
-        title="Enterprise Transformation"
-        description="Modernize your legacy systems with cloud-native architectures that ensure security, scalability, and operational resilience."
-        canonical="/solutions/enterprise-transformation"
-      />
-      <Navigation />
-
-      {/* SLOT 1 — Charcoal hero */}
-      <SolutionHero
-        eyebrow="SOLUTION · ENTERPRISE TRANSFORMATION"
-        title="Enterprise Transformation"
-        subtitle="Companies with a strategic focus on technology outperform across industries. Stay ahead with tech foundations that fuel lasting growth."
-        backgroundImage="/images/technology-hero-abstract.jpg"
-        primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
-        secondaryCta={{ label: "See Client Results", href: "/cases" }}
-      />
-
-      {/* SLOT 2 — White lead / editorial intro */}
-      <section className="bg-white py-24 md:py-32">
-        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="max-w-[72ch]"
-          >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Perspective
-            </span>
-            <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
-              Your technology should be a growth engine, not a bottleneck.
-            </h3>
-            <div className="space-y-6">
-              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                For most mid-market companies, the reality is different:
-                aging systems that cannot scale, data trapped in silos, and IT
-                teams stretched thin just keeping things running. Meanwhile,
-                competitors are moving faster, serving customers better, and
-                making decisions with data you cannot access.
-              </p>
-              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                We work with growing companies who have outgrown their
-                starter tech stack but aren't ready for the complexity
-                and cost of enterprise solutions. Our{" "}
-                <Link
-                  href="/insights/scalable-data-architecture"
-                  className="text-primary hover:text-primary-hover transition-colors"
-                >
-                  enterprise transformation consultants
-                </Link>{" "}
-                modernize your systems in phases, align technology strategy
-                with where your business is heading, and build foundations
-                that support AI without a Fortune 500 budget.
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
-      <section className="bg-grey py-24 md:py-32">
-        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16 max-w-[60ch]"
-          >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              How We Help Clients
-            </span>
-            <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
-              Six ways we modernize technology foundations.
-            </h3>
-            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
-              We modernize systems and architecture in phases, align
-              technology with where your business is heading, and build
-              foundations that scale—without enterprise complexity.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
-            {services.map((service, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="bg-white"
-              >
-                <Link href={service.link} className="block h-full group cursor-pointer">
-                  <div className="h-full p-8 lg:p-10 flex flex-col">
-                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
-                      {service.title}
-                    </h3>
-                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
-                      {service.description}
-                    </p>
-                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
-                      Learn more
-                    </span>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
-      <section className="bg-white py-24 md:py-32">
-        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16 max-w-[60ch]"
-          >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience & Impact
-            </span>
-            <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
-              Measurable outcomes from real modernization programs.
-            </h3>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
-            {outcomes.map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className={`${
-                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
-                }`}
-              >
-                <div
-                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
-                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
-                >
-                  {item.stat}
-                </div>
-                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
-                  {item.label}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SLOT 5 — Light grey Approach / Methodology framework */}
-      <section className="bg-grey py-24 md:py-32">
-        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16 max-w-[60ch]"
-          >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              How We Think About It
-            </span>
-            <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
-              How We Work With You
-            </h3>
-            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
-              No surprises. No scope creep. A proven five-stage process that
-              modernizes systems without disrupting operations.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-px bg-charcoal/10 border border-charcoal/10">
-            {approach.map((lens, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="bg-white"
-              >
-                <Link href={lens.link} className="block h-full group cursor-pointer">
-                  <div className="h-full p-8 flex flex-col">
-                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
-                      {lens.title}
-                    </h3>
-                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
-                      {lens.description}
-                    </p>
-                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
-                      Explore
-                    </span>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
-      <section className="bg-primary text-primary-foreground py-24 md:py-32">
-        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
-              The Outcome
-            </span>
-            <h2
-              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
-              Modernization, without the drama. NexDyne clients have delivered
-              ~$15M in operational savings and accelerated release cycles
-              from quarterly to weekly.
-            </h2>
-            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We've worked with healthcare networks, fintech firms, and
-              media platforms to migrate to cloud, modernize core systems,
-              and build foundations that actually scale.
-            </p>
-            <Link href="/cases">
-              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
-                See How We Help Leaders Win
-              </span>
-            </Link>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* SLOT 7 — White Case studies / proof */}
-      <section className="bg-white py-24 md:py-32">
-        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16 max-w-[60ch]"
-          >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Client Results
-            </span>
-            <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
-              Modernization, proved in outcomes.
-            </h3>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {cases.map((result, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-              >
-                <Link href={result.link} className="group block cursor-pointer">
-                  <div className="border border-charcoal/10 bg-white">
-                    <div className="aspect-[4/3] overflow-hidden">
-                      <img
-                        src={result.image}
-                        alt={result.title}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                      />
-                    </div>
-                    <div className="p-8 lg:p-10">
-                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
-                        {result.industry}
-                      </span>
-                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
-                        {result.title}
-                      </h3>
-                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
-                        {result.description}
-                      </p>
-                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
-                        Read Case
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="mt-14">
-            <Link href="/cases">
-              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
-                See All Case Studies
-              </span>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* SLOT 8 — White Related capabilities / cross-sell */}
-      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
-        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16 max-w-[60ch]"
-          >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Related Offerings
-            </span>
-            <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
-              Adjacent capabilities for a complete transformation.
-            </h3>
-          </motion.div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
-            {relatedOfferings.map((offering, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="bg-white"
-              >
-                <Link href={offering.link} className="block h-full group cursor-pointer">
-                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
-                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
-                      {offering.title}
-                    </h3>
-                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
-                      Read More
-                    </span>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
-      <section className="bg-charcoal text-white py-24 md:py-32">
-        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
-          <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-              >
-                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
-                  Ready to Talk?
-                </span>
-                <h2
-                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
-                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-                >
-                  Let's talk about your modernization roadmap.
-                </h2>
-                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
-                  I want to talk to your experts in:
-                </p>
-                <Select
-                  value={selectedIndustry}
-                  onValueChange={setSelectedIndustry}
-                >
-                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-white/40 rounded-none text-base text-white py-6 focus:ring-0 focus:border-white">
-                    <SelectValue placeholder="Select an industry" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="financial-services">
-                      Financial Services
-                    </SelectItem>
-                    <SelectItem value="healthcare">Healthcare</SelectItem>
-                    <SelectItem value="manufacturing">Manufacturing</SelectItem>
-                    <SelectItem value="technology">Technology</SelectItem>
-                    <SelectItem value="retail">Retail & Consumer</SelectItem>
-                    <SelectItem value="professional-services">
-                      Professional Services
-                    </SelectItem>
-                    <SelectItem value="other">Other</SelectItem>
-                  </SelectContent>
-                </Select>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-              >
-                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
-                  No sales pitch—just an honest conversation about
-                  what's possible. We work with growing companies ready
-                  to modernize without disruption.
-                </p>
-                <div className="space-y-5">
-                  <input
-                    type="email"
-                    placeholder="Your email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
-                  />
-                  <Link href="/contact">
-                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
-                      Contact us
-                    </span>
-                  </Link>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <Footer />
-    </div>
+    <MarketingMasterTemplate
+      capabilityName="Technology"
+      capabilitySlug="technology"
+      // PRESERVED VERBATIM from source hero subtitle
+      heroSubtitle="Companies with a strategic focus on technology outperform across industries. Stay ahead with tech foundations that fuel lasting growth."
+      heroImage="/images/technology-hero-abstract.jpg"
+      // PRESERVED CTA labels from source (Talk to an Expert + See Client Results) — repointed to canonical /capabilities/technology paths
+      heroPrimaryCTA={{
+        label: "Talk to an Expert",
+        href: "/contact",
+      }}
+      heroSecondaryCTA={{
+        label: "See Client Results",
+        href: "/cases?capability=technology",
+      }}
+      // PRESERVED 3 source stats verbatim (60+ / ~$15M / 12+); 4th is AUTHORED with TODO marker to make grid 4-up like sister masters
+      experienceStats={[
+        {
+          number: "60+",
+          label:
+            "technology modernization projects completed for mid-market companies",
+        },
+        {
+          number: "~$15M",
+          label:
+            "in operational savings delivered to clients in the last three years",
+        },
+        {
+          number: "12+",
+          label:
+            "strategic partnerships across cloud, security, and AI platforms",
+        },
+        // TODO: confirm with practice lead before publish
+        {
+          number: "38%",
+          label:
+            "average infrastructure cost reduction across cloud migration engagements",
+        },
+      ]}
+      // AUTHORED — source has no thought-leadership block, so featured + 2 secondary use insight slugs that already render under /capabilities/technology/insights
+      // TODO: confirm with practice lead before publish (titles, summary, image paths, final href slugs)
+      thoughtLeadership={{
+        featured: {
+          tag: "Technology Strategy",
+          title:
+            "From cost center to growth engine: rebuilding the technology operating model",
+          summary:
+            // TODO: confirm with practice lead before publish
+            "Technology has shifted from a back-office function to the engine that decides whether a company can grow at all. We outline how mid-market leaders are rebuilding the technology operating model around platform thinking, paved-path engineering, and FinOps discipline so technology compounds rather than drags on the P&L.",
+          image: "/images/insight-technology-operating-model.jpg",
+          href: "/insights/technology-operating-model",
+        },
+        secondary: [
+          {
+            tag: "Cloud",
+            title:
+              "The 6Rs decision that decides whether your cloud migration ships",
+            href: "/insights/scalable-data-architecture",
+          },
+          {
+            tag: "Platform Engineering",
+            title:
+              "Why your internal developer platform is a product, not a project",
+            href: "/insights/platform-engineering-as-product",
+          },
+        ],
+      }}
+      // PRESERVED 3 approach pillars distilled from source 5-stage process (Discovery / Architecture / Build+Launch+Optimize collapsed into a 3-pillar shape)
+      // TODO: confirm with practice lead before publish (3-pillar collapse of source 5-stage process)
+      approachPillars={[
+        {
+          step: "01",
+          title: "Diagnose the estate",
+          body: "We map your current systems, quantify the cost of doing nothing, and pressure-test the technology, integration, and value-creation thesis with evidence. No assumptions — just a defensible inventory and a 6Rs decision per workload that survives the steering committee.",
+        },
+        {
+          step: "02",
+          title: "Architect and build in waves",
+          body: "We design a target architecture that fits your business, your budget, and your team. Then we build in agile sprints with regular demos, so progress is visible every two weeks rather than at the end of a multi-year program.",
+        },
+        {
+          step: "03",
+          title: "Operate and optimize",
+          body: "Go-live is not the finish line. We embed the platform-team operating model, run the FinOps cadence, train your team, and optimize the estate continuously so cost, reliability, and developer velocity all move together.",
+        },
+      ]}
+      // 6 ambitions mapped to 6 of the 15 sub-pages per spec.
+      // Titles use the spec-suggested phrasing; descriptions DISTILLED from each sub-page's heroSubtitle.
+      // TODO: confirm with practice lead before publish (ambition descriptions)
+      ambitions={[
+        {
+          title: "Modernize legacy systems and infrastructure",
+          description:
+            "Retire the old estate without breaking the business. A 6Rs decision per workload, a strangler-fig execution model that protects operations, and a sunset plan that actually turns the legacy off.",
+          href: "/capabilities/technology/legacy-modernization",
+        },
+        {
+          title: "Migrate to cloud at enterprise scale",
+          description:
+            "Most cloud migrations fail at the strategy step, not the execution step. We rebuild the workload inventory, run a defensible 6Rs decision, design the target architecture, and sequence the migration so cutover risk is named before the change window opens.",
+          href: "/capabilities/technology/cloud-migration-architecture",
+        },
+        {
+          title: "Build platform engineering excellence",
+          description:
+            "Platforms compound only when they are operated as products. We design the IDP, build the paved paths, run the adoption, and embed the platform-team operating model that turns infrastructure into a managed developer experience.",
+          href: "/capabilities/technology/platform-engineering",
+        },
+        {
+          title: "Accelerate delivery with DevOps and CI/CD",
+          description:
+            "Engineering productivity is not a culture conversation. We measure where the pipeline is actually slow, rebuild the architecture, engineer the test framework, and stand up the deployment automation that lifts DORA metrics quarter-over-quarter.",
+          href: "/capabilities/technology/devops-cicd",
+        },
+        {
+          title: "Secure your tech estate end-to-end",
+          description:
+            "Compliance is a control discipline, not an audit event. We assess the posture, sequence the framework roadmap, design the architecture, implement the controls with measurable evidence, and embed the assurance program that runs always-on.",
+          href: "/capabilities/technology/security-and-compliance",
+        },
+        {
+          title: "Set the right tech strategy",
+          description:
+            "A technology strategy is only as real as the decisions it produces. We build the vision, the principles sharp enough to decide trade-offs, the target architecture that hangs together, and the governance operating model that turns strategy into executed work.",
+          href: "/capabilities/technology/technology-strategy",
+        },
+      ]}
+      // PRESERVED in-practice intro distilled from source SLOT 2 editorial block (3 paragraphs collapsed into 1)
+      // realOutcomes mined from source SLOT 4 outcomes + SLOT 7 cases verbatim metrics
+      // howWeHelp mined from source SLOT 5 approach pillars verbatim
+      // TODO: confirm with practice lead before publish (image path)
+      inPractice={{
+        image:
+          "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80",
+        intro:
+          "For most mid-market companies, technology is the bottleneck rather than the growth engine — aging systems that cannot scale, data trapped in silos, and IT teams stretched thin just keeping the lights on. We work with growing companies who have outgrown their starter tech stack but are not ready for the complexity and cost of enterprise solutions. We modernize systems in phases, align technology strategy with where the business is heading, and build foundations that support AI without a Fortune 500 budget.",
+        realOutcomes: [
+          "Healthcare network migrated to AWS without disruption — infrastructure cost cut by 38% with improved uptime",
+          "Fintech replatformed monolith into microservices — release cycles accelerated from quarterly to weekly",
+          "Media streaming platform re-architected for elastic scale — peak-hour latency reduced 62% during major live events",
+          "~$15M in operational savings delivered to mid-market clients across the past three years",
+        ],
+        howWeHelp: [
+          "Map current systems, identify pain points, and quantify the cost of doing nothing — no assumptions, just data",
+          "Design a target architecture that fits the business, the budget, and the team's capabilities — no gold-plating",
+          "Build in two-week sprints with regular demos so progress is visible every cycle, not only at go-live",
+          "Stick around after launch to fix issues, train teams, and ensure adoption — and right-size tech spending continuously",
+        ],
+      }}
+      // ALL 15 sub-pages with canonical /capabilities/technology/<slug> hrefs. Descriptions DISTILLED from each sub-page heroSubtitle (Basic 7 + SET-prefixed 8).
+      // Slug overlap: Basic "security-compliance" + SET "security-and-compliance" are distinct real sub-pages — distinguished in titles.
+      howWeCanHelp={[
+        {
+          title: "Legacy System Modernization",
+          description:
+            "Modernize legacy enterprise systems through replatform, refactor, and replace patterns. Strangler-fig execution, parallel-run discipline, and disciplined decommissioning that retires the legacy without breaking the business.",
+          href: "/capabilities/technology/legacy-modernization",
+        },
+        {
+          title: "Cloud Infrastructure",
+          description:
+            "Cloud-native modernization across AWS, Azure, and GCP. Build elastic, secure, cost-optimized platforms that compound developer velocity, not cloud bills.",
+          href: "/capabilities/technology/cloud-infrastructure",
+        },
+        {
+          title: "API Integration",
+          description:
+            "API-first integration architecture. Connect systems, partners, and products via well-designed REST, GraphQL, and gRPC APIs — governed, secured, and built for the long arc.",
+          href: "/capabilities/technology/api-integration",
+        },
+        {
+          title: "DevOps Automation",
+          description:
+            "CI/CD pipelines, infrastructure as code, deployment automation, and observability — engineered to take engineering velocity from quarterly windows to multiple safe deploys a day.",
+          href: "/capabilities/technology/devops-automation",
+        },
+        {
+          title: "Technology Strategy",
+          description:
+            "Enterprise technology strategy for CIO and CTO leadership — vision, principles, target architecture, and the governance operating model that turns strategy into a body of decisions, not a deck on the shelf.",
+          href: "/capabilities/technology/technology-strategy",
+        },
+        {
+          title: "Cost Optimization",
+          description:
+            "Enterprise IT cost optimization across application rationalization, vendor and license consolidation, contract renegotiation, and the operating model that keeps the savings holding into year two.",
+          href: "/capabilities/technology/cost-optimization",
+        },
+        {
+          title: "Security & Compliance",
+          description:
+            "Enterprise security architecture and compliance frameworks — SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR — with control implementation, audit readiness, and an always-on assurance program.",
+          href: "/capabilities/technology/security-compliance",
+        },
+        {
+          title: "Cloud Migration Architecture",
+          description:
+            "Cloud migration strategy and target architecture — 6Rs decisions per workload, defensible target state, sequenced execution, and the operating model that runs the post-migration estate.",
+          href: "/capabilities/technology/cloud-migration-architecture",
+        },
+        {
+          title: "Infrastructure Modernization",
+          description:
+            "Modernize legacy infrastructure to cloud-native and infrastructure-as-code — assessment, sequenced roadmap, target architecture, and the operating model that runs the modernized estate as a managed product.",
+          href: "/capabilities/technology/infrastructure-modernization",
+        },
+        {
+          title: "Platform Engineering",
+          description:
+            "Internal developer platforms (IDPs) — self-service infrastructure and golden paths that let engineering teams ship faster, operated as a product with a backlog, a roadmap, and a developer-satisfaction score.",
+          href: "/capabilities/technology/platform-engineering",
+        },
+        {
+          title: "DevOps & CI/CD",
+          description:
+            "CI/CD pipeline implementation, automated testing infrastructure, deployment automation, and the DevOps operating model that lifts deployment frequency and shrinks lead time without sacrificing reliability.",
+          href: "/capabilities/technology/devops-cicd",
+        },
+        {
+          title: "Security & Compliance (Enterprise)",
+          description:
+            "Embed security into every layer of your technology stack with zero-trust architectures, compliance automation, and proactive threat management for enterprise-scale estates.",
+          href: "/capabilities/technology/security-and-compliance",
+        },
+        {
+          title: "Data Platform Engineering",
+          description:
+            "Build the data platform that supports enterprise analytics — pipelines, lakehouse, warehouses, observability, and the engineering discipline that keeps the platform a managed asset rather than a stack of fragile jobs.",
+          href: "/capabilities/technology/data-platform-engineering",
+        },
+        {
+          title: "Cloud Cost Optimization",
+          description:
+            "FinOps for cloud spend — right-sizing, commitment optimization, waste elimination, and the governance cadence that turns cloud cost from a quarterly fire drill into a managed line on the operating P&L.",
+          href: "/capabilities/technology/cloud-cost-optimization",
+        },
+        {
+          title: "Technology Due Diligence",
+          description:
+            "Technology due diligence for M&A acquisitions and PE portfolio investments — evidence-led technical assessment, integration or value-creation analysis, IC-ready findings, and post-deal advisory.",
+          href: "/capabilities/technology/technology-due-diligence",
+        },
+      ]}
+      // AUTHORED case-tab metrics distilled from Cat 11a 12-case pool, grouped into 3 industry tabs.
+      // Same pattern as AI / BB / Ops / SCF / GMS master refactors. All 12 case slugs verified live in App.tsx under /cases/<slug>.
+      // TODO: confirm with practice lead before publish (per-card metric blurbs + image paths)
+      clientResults={[
+        {
+          industry: "Financial Services",
+          cases: [
+            {
+              slug: "fintech-payment-automation",
+              title:
+                "Fintech replatforms monolith into microservices and cuts release cycle to weekly",
+              metric: "Release cycle: quarterly to weekly",
+              image: "/images/case-fintech-payment-automation.jpg",
+            },
+            {
+              slug: "bank-process-automation",
+              title:
+                "Bank rebuilds core platform on cloud-native architecture and reduces infra cost",
+              metric: "30% infra cost reduction",
+              image: "/images/case-bank-process-automation.jpg",
+            },
+            {
+              slug: "wealth-management-automation",
+              title:
+                "Wealth manager modernizes legacy advisor platform on a unified API layer",
+              metric: "Advisor productivity up 35%",
+              image: "/images/case-wealth-management-automation.jpg",
+            },
+            {
+              slug: "insurance-claims-processing",
+              title:
+                "Insurer rebuilds claims platform on event-driven architecture",
+              metric: "Claims latency cut 60%",
+              image: "/images/case-insurance-claims-processing.jpg",
+            },
+          ],
+        },
+        {
+          industry: "Healthcare",
+          cases: [
+            {
+              slug: "healthcare-data-analytics",
+              title:
+                "Healthcare network migrates core systems to AWS without disruption",
+              metric: "Infra cost cut 38%, uptime improved",
+              image: "/images/case-healthcare-data-analytics.jpg",
+            },
+            {
+              slug: "hospital-clinical-workflow",
+              title:
+                "Hospital network rebuilds clinical workflow on a unified data platform",
+              metric: "Clinician time saved across 20 facilities",
+              image: "/images/case-hospital-clinical-workflow.jpg",
+            },
+            {
+              slug: "telehealth-platform",
+              title:
+                "Telehealth platform re-architects for elastic scale to millions of patients",
+              metric: "10x scale, latency held flat",
+              image: "/images/case-telehealth-platform.jpg",
+            },
+            {
+              slug: "healthcare-patient-engagement",
+              title:
+                "Health system stands up an internal developer platform for clinical apps",
+              metric: "Lead time cut 70%",
+              image: "/images/case-healthcare-patient-engagement.jpg",
+            },
+          ],
+        },
+        {
+          industry: "Professional Services",
+          cases: [
+            {
+              slug: "law-firm-contract-automation",
+              title:
+                "Law firm replaces aging matter-management estate on a modern API layer",
+              metric: "Matter cycle time down 40%",
+              image: "/images/case-law-firm-contract-automation.jpg",
+            },
+            {
+              slug: "consulting-knowledge-management",
+              title:
+                "Consultancy unifies 20 years of project knowledge on a single data platform",
+              metric: "Search time cut 80%",
+              image: "/images/case-consulting-knowledge-management.jpg",
+            },
+            {
+              slug: "legal-document-intelligence",
+              title:
+                "Legal services group rebuilds document intelligence on cloud-native pipeline",
+              metric: "Review throughput 5x",
+              image: "/images/case-legal-document-intelligence.jpg",
+            },
+            {
+              slug: "accounting-audit-automation",
+              title:
+                "Accounting firm modernizes audit platform with CI/CD and observability",
+              metric: "Audit cycle compressed 45%",
+              image: "/images/case-accounting-audit-automation.jpg",
+            },
+          ],
+        },
+      ]}
+      // SOURCE has no partner / ecosystem section — pass empty array (template hides section)
+      ecosystemLogos={[]}
+      // SOURCE has no named NexDyne practice leaders for Technology.
+      // Per content authoring rule, do not invent staff identities. Pass empty array; section renders conditionally.
+      // TODO: confirm with practice lead before publish (replace with real practice leadership headshots + LinkedIn URLs)
+      leaders={[]}
+      // AUTHORED — 3 insight cards. Slug "scalable-data-architecture" matches the only insight link in source SLOT 2.
+      // The other two slugs are AUTHORED to align with /capabilities/technology/insights routes registered in PR #25.
+      // TODO: confirm with practice lead before publish (image paths + final href slugs)
+      insights={[
+        {
+          tag: "Technology Strategy",
+          title:
+            "From cost center to growth engine: rebuilding the technology operating model",
+          readTime: "8 min read",
+          image: "/images/insight-technology-operating-model.jpg",
+          href: "/insights/technology-operating-model",
+        },
+        {
+          tag: "Cloud",
+          title:
+            "The 6Rs decision that decides whether your cloud migration ships",
+          readTime: "6 min read",
+          image: "/images/insight-cloud-6rs.jpg",
+          href: "/insights/scalable-data-architecture",
+        },
+        {
+          tag: "Platform Engineering",
+          title:
+            "Why your internal developer platform is a product, not a project",
+          readTime: "5 min read",
+          image: "/images/insight-platform-engineering-product.jpg",
+          href: "/insights/platform-engineering-as-product",
+        },
+      ]}
+      // AUTHORED — source closing CTA was a generic two-column form ("Let's talk about your modernization roadmap") with no named lead
+      // TODO: confirm with practice lead before publish (real lead name + photo + email + LinkedIn)
+      closingCTA={{
+        leadName: "Our Technology Practice Lead",
+        leadTitle: "Head of Technology, NexDyne Consulting Group",
+        leadPhoto:
+          "https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/BIZXaFVVaVqquVZA.png",
+        leadEmail: "technology@nexdyne.tech",
+        leadLinkedinUrl: "https://www.linkedin.com/company/nexdyne",
+      }}
+    />
   );
 }
