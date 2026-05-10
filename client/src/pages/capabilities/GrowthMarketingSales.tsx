@@ -357,6 +357,21 @@ export default function GrowthMarketingSales() {
                 title: "Portfolio Optimization",
                 description: "Product portfolio strategy, SKU rationalization, and assortment planning.",
                 link: "/capabilities/growth-marketing-sales/portfolio-optimization"
+              },
+              {
+                title: "Brand & Storytelling",
+                description: "Translating complex innovation into clear market authority. Brand architecture, narrative engineering, and digital experience for digital-first leaders.",
+                link: "/capabilities/growth-marketing-sales/brand-storytelling"
+              },
+              {
+                title: "Commercial Architecture",
+                description: "Designing the blueprints for scalable revenue generation. Aligned data, process, and incentive layers across sales, marketing, and customer success.",
+                link: "/capabilities/growth-marketing-sales/commercial-architecture"
+              },
+              {
+                title: "Service Design",
+                description: "Orchestrate the invisible. Align people, infrastructure, and technology to deliver consistent, high-trust service experiences across every touchpoint.",
+                link: "/capabilities/growth-marketing-sales/service-design"
               }
             ].map((item, index) => (
               <motion.div
@@ -742,3 +757,4 @@ export default function GrowthMarketingSales() {
     </div>
   );
 }
+
