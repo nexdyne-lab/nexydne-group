@@ -1797,6 +1797,28 @@ function Router() {
             <Route path="/capabilities/growth-marketing-sales/service-design/service-blueprinting" component={GmsServiceDesignServiceBlueprinting} />
             <Route path="/capabilities/growth-marketing-sales/service-design/service-prototyping-and-piloting" component={GmsServiceDesignServicePrototypingAndPiloting} />
 
+            {/* === Cat 2-4f Phase 0: Technology URL aliases === */}
+            <Route path="/capabilities/technology" component={EnterpriseTransformation} />
+
+            {/* Technology — Basic 7 sub-pages */}
+            <Route path="/capabilities/technology/legacy-modernization" component={LegacyModernization} />
+            <Route path="/capabilities/technology/cloud-infrastructure" component={CloudInfrastructure} />
+            <Route path="/capabilities/technology/api-integration" component={APIIntegration} />
+            <Route path="/capabilities/technology/devops-automation" component={DevOpsAutomation} />
+            <Route path="/capabilities/technology/technology-strategy" component={TechnologyStrategy} />
+            <Route path="/capabilities/technology/cost-optimization" component={CostOptimization} />
+            <Route path="/capabilities/technology/security-compliance" component={SecurityCompliance} />
+
+            {/* Technology — SET-prefixed 8 sub-pages */}
+            <Route path="/capabilities/technology/cloud-migration-architecture" component={SETCloudMigrationArchitecture} />
+            <Route path="/capabilities/technology/infrastructure-modernization" component={SETInfrastructureModernization} />
+            <Route path="/capabilities/technology/platform-engineering" component={SETPlatformEngineering} />
+            <Route path="/capabilities/technology/devops-cicd" component={SETDevOpsCICD} />
+            <Route path="/capabilities/technology/security-and-compliance" component={SETSecurityCompliance} />
+            <Route path="/capabilities/technology/data-platform-engineering" component={SETDataPlatformEngineering} />
+            <Route path="/capabilities/technology/cloud-cost-optimization" component={SETCloudCostOptimization} />
+            <Route path="/capabilities/technology/technology-due-diligence" component={SETTechnologyDueDiligence} />
+
         <Route path={"/404"} component={NotFound} />
         <Route component={NotFound} />
 </Switch>
@@ -1991,6 +2013,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
