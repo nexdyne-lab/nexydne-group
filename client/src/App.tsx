@@ -127,6 +127,14 @@ import SETDataPlatformEngineering from "./pages/solutions/enterprise-transformat
 import SETCloudCostOptimization from "./pages/solutions/enterprise-transformation/CloudCostOptimization";
 import SETTechnologyDueDiligence from "./pages/solutions/enterprise-transformation/TechnologyDueDiligence";
 
+// === Cat 2-4f Phase 1: 6 Technology level-2 hubs ===
+import CloudInfrastructureHub from "./pages/solutions/enterprise-transformation/CloudInfrastructureHub";
+import PlatformEngineeringHub from "./pages/solutions/enterprise-transformation/PlatformEngineeringHub";
+import DevOpsAutomationHub from "./pages/solutions/enterprise-transformation/DevOpsAutomationHub";
+import SecurityComplianceHub from "./pages/solutions/enterprise-transformation/SecurityComplianceHub";
+import StrategyAdvisoryHub from "./pages/solutions/enterprise-transformation/StrategyAdvisoryHub";
+import ModernizationHub from "./pages/solutions/enterprise-transformation/ModernizationHub";
+
 // Enterprise Transformation Case Studies
 import HealthcareCloudMigration from "./pages/cases/HealthcareCloudMigration";
 import FintechMicroservices from "./pages/cases/FintechMicroservices";
@@ -1819,6 +1827,15 @@ function Router() {
             <Route path="/capabilities/technology/cloud-cost-optimization" component={SETCloudCostOptimization} />
             <Route path="/capabilities/technology/technology-due-diligence" component={SETTechnologyDueDiligence} />
 
+
+            {/* Cat 2-4f Phase 1: 6 Technology level-2 hubs */}
+            <Route path="/capabilities/technology/cloud-infrastructure-hub" component={CloudInfrastructureHub} />
+            <Route path="/capabilities/technology/platform-engineering-hub" component={PlatformEngineeringHub} />
+            <Route path="/capabilities/technology/devops-automation-hub" component={DevOpsAutomationHub} />
+            <Route path="/capabilities/technology/security-compliance-hub" component={SecurityComplianceHub} />
+            <Route path="/capabilities/technology/strategy-advisory-hub" component={StrategyAdvisoryHub} />
+            <Route path="/capabilities/technology/modernization-hub" component={ModernizationHub} />
+
         <Route path={"/404"} component={NotFound} />
         <Route component={NotFound} />
 </Switch>
@@ -2013,6 +2030,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
