@@ -1658,6 +1658,145 @@ function Router() {
             <Route path="/capabilities/strategy-corporate-finance/ma-partnerships/post-merger-integration" component={StrategyCorporateFinanceMaPartnershipsPostMergerIntegration} />
             <Route path="/capabilities/strategy-corporate-finance/ma-partnerships/strategic-partnerships" component={StrategyCorporateFinanceMaPartnershipsStrategicPartnerships} />
             <Route path="/capabilities/strategy-corporate-finance/ma-partnerships/target-identification" component={StrategyCorporateFinanceMaPartnershipsTargetIdentification} />
+            {/* GMS leaves: brand-storytelling */}
+            <Route path="/capabilities/growth-marketing-sales/brand-storytelling/brand-scalability-systems" component={GmsBrandStorytellingBrandScalabilitySystems} />
+            <Route path="/capabilities/growth-marketing-sales/brand-storytelling/data-driven-brand-performance" component={GmsBrandStorytellingDataDrivenBrandPerformance} />
+            <Route path="/capabilities/growth-marketing-sales/brand-storytelling/digital-experience-design" component={GmsBrandStorytellingDigitalExperienceDesign} />
+            <Route path="/capabilities/growth-marketing-sales/brand-storytelling/humanizing-complex-architectures" component={GmsBrandStorytellingHumanizingComplexArchitectures} />
+            <Route path="/capabilities/growth-marketing-sales/brand-storytelling/narrative-engineering" component={GmsBrandStorytellingNarrativeEngineering} />
+            <Route path="/capabilities/growth-marketing-sales/brand-storytelling/positioning-for-the-api-economy" component={GmsBrandStorytellingPositioningForTheApiEconomy} />
+
+            {/* GMS leaves: brand-strategy */}
+            <Route path="/capabilities/growth-marketing-sales/brand-strategy/brand-activation" component={GmsBrandStrategyBrandActivation} />
+            <Route path="/capabilities/growth-marketing-sales/brand-strategy/brand-architecture" component={GmsBrandStrategyBrandArchitecture} />
+            <Route path="/capabilities/growth-marketing-sales/brand-strategy/brand-positioning" component={GmsBrandStrategyBrandPositioning} />
+            <Route path="/capabilities/growth-marketing-sales/brand-strategy/customer-research" component={GmsBrandStrategyCustomerResearch} />
+            <Route path="/capabilities/growth-marketing-sales/brand-strategy/messaging-and-voice" component={GmsBrandStrategyMessagingAndVoice} />
+            <Route path="/capabilities/growth-marketing-sales/brand-strategy/visual-identity" component={GmsBrandStrategyVisualIdentity} />
+
+            {/* GMS leaves: commercial-architecture */}
+            <Route path="/capabilities/growth-marketing-sales/commercial-architecture/commercial-architecture-diagnostic" component={GmsCommercialArchitectureCommercialArchitectureDiagnostic} />
+            <Route path="/capabilities/growth-marketing-sales/commercial-architecture/commercial-architecture-operating-model-design" component={GmsCommercialArchitectureCommercialArchitectureOperatingModelDesign} />
+            <Route path="/capabilities/growth-marketing-sales/commercial-architecture/commercial-architecture-performance-acceleration" component={GmsCommercialArchitectureCommercialArchitecturePerformanceAcceleration} />
+            <Route path="/capabilities/growth-marketing-sales/commercial-architecture/data-layer-the-single-source-of-truth" component={GmsCommercialArchitectureDataLayerTheSingleSourceOfTruth} />
+            <Route path="/capabilities/growth-marketing-sales/commercial-architecture/incentive-layer-aligned-motivations" component={GmsCommercialArchitectureIncentiveLayerAlignedMotivations} />
+            <Route path="/capabilities/growth-marketing-sales/commercial-architecture/process-layer-frictionless-workflows" component={GmsCommercialArchitectureProcessLayerFrictionlessWorkflows} />
+
+            {/* GMS leaves: consumer-shopper-insights */}
+            <Route path="/capabilities/growth-marketing-sales/consumer-shopper-insights/behavioral-analytics" component={GmsConsumerShopperInsightsBehavioralAnalytics} />
+            <Route path="/capabilities/growth-marketing-sales/consumer-shopper-insights/customer-segmentation" component={GmsConsumerShopperInsightsCustomerSegmentation} />
+            <Route path="/capabilities/growth-marketing-sales/consumer-shopper-insights/insights-activation" component={GmsConsumerShopperInsightsInsightsActivation} />
+            <Route path="/capabilities/growth-marketing-sales/consumer-shopper-insights/journey-mapping" component={GmsConsumerShopperInsightsJourneyMapping} />
+            <Route path="/capabilities/growth-marketing-sales/consumer-shopper-insights/qualitative-research" component={GmsConsumerShopperInsightsQualitativeResearch} />
+            <Route path="/capabilities/growth-marketing-sales/consumer-shopper-insights/quantitative-research" component={GmsConsumerShopperInsightsQuantitativeResearch} />
+
+            {/* GMS leaves: customer-experience */}
+            <Route path="/capabilities/growth-marketing-sales/customer-experience/cx-culture" component={GmsCustomerExperienceCxCulture} />
+            <Route path="/capabilities/growth-marketing-sales/customer-experience/cx-measurement" component={GmsCustomerExperienceCxMeasurement} />
+            <Route path="/capabilities/growth-marketing-sales/customer-experience/cx-strategy" component={GmsCustomerExperienceCxStrategy} />
+            <Route path="/capabilities/growth-marketing-sales/customer-experience/journey-design" component={GmsCustomerExperienceJourneyDesign} />
+            <Route path="/capabilities/growth-marketing-sales/customer-experience/service-design" component={GmsCustomerExperienceServiceDesign} />
+            <Route path="/capabilities/growth-marketing-sales/customer-experience/voice-of-customer" component={GmsCustomerExperienceVoiceOfCustomer} />
+
+            {/* GMS leaves: digital-marketing */}
+            <Route path="/capabilities/growth-marketing-sales/digital-marketing/brand-strategy-and-positioning" component={GmsDigitalMarketingBrandStrategyAndPositioning} />
+            <Route path="/capabilities/growth-marketing-sales/digital-marketing/consumer-marketing-analytics" component={GmsDigitalMarketingConsumerMarketingAnalytics} />
+            <Route path="/capabilities/growth-marketing-sales/digital-marketing/digital-transformation" component={GmsDigitalMarketingDigitalTransformation} />
+            <Route path="/capabilities/growth-marketing-sales/digital-marketing/marketing-analytics-and-attribution" component={GmsDigitalMarketingMarketingAnalyticsAndAttribution} />
+            <Route path="/capabilities/growth-marketing-sales/digital-marketing/marketing-technology" component={GmsDigitalMarketingMarketingTechnology} />
+
+            {/* GMS leaves: ecommerce */}
+            <Route path="/capabilities/growth-marketing-sales/ecommerce/commerce-analytics" component={GmsEcommerceCommerceAnalytics} />
+            <Route path="/capabilities/growth-marketing-sales/ecommerce/conversion-optimization" component={GmsEcommerceConversionOptimization} />
+            <Route path="/capabilities/growth-marketing-sales/ecommerce/headless-commerce" component={GmsEcommerceHeadlessCommerce} />
+            <Route path="/capabilities/growth-marketing-sales/ecommerce/performance-engineering" component={GmsEcommercePerformanceEngineering} />
+
+            {/* GMS leaves: green-growth */}
+            <Route path="/capabilities/growth-marketing-sales/green-growth/circular-economy-models" component={GmsGreenGrowthCircularEconomyModels} />
+            <Route path="/capabilities/growth-marketing-sales/green-growth/esg-brand-positioning" component={GmsGreenGrowthEsgBrandPositioning} />
+            <Route path="/capabilities/growth-marketing-sales/green-growth/green-marketing" component={GmsGreenGrowthGreenMarketing} />
+            <Route path="/capabilities/growth-marketing-sales/green-growth/green-product-innovation" component={GmsGreenGrowthGreenProductInnovation} />
+            <Route path="/capabilities/growth-marketing-sales/green-growth/sustainability-measurement" component={GmsGreenGrowthSustainabilityMeasurement} />
+            <Route path="/capabilities/growth-marketing-sales/green-growth/sustainable-growth-strategy" component={GmsGreenGrowthSustainableGrowthStrategy} />
+
+            {/* GMS leaves: growth-strategy */}
+            <Route path="/capabilities/growth-marketing-sales/growth-strategy/go-to-market-strategy" component={GmsGrowthStrategyGoToMarketStrategy} />
+            <Route path="/capabilities/growth-marketing-sales/growth-strategy/growth-analytics" component={GmsGrowthStrategyGrowthAnalytics} />
+            <Route path="/capabilities/growth-marketing-sales/growth-strategy/manda-growth-strategy" component={GmsGrowthStrategyMandaGrowthStrategy} />
+            <Route path="/capabilities/growth-marketing-sales/growth-strategy/market-entry-strategy" component={GmsGrowthStrategyMarketEntryStrategy} />
+            <Route path="/capabilities/growth-marketing-sales/growth-strategy/organic-growth" component={GmsGrowthStrategyOrganicGrowth} />
+            <Route path="/capabilities/growth-marketing-sales/growth-strategy/portfolio-optimization" component={GmsGrowthStrategyPortfolioOptimization} />
+
+            {/* GMS leaves: insights-analytics */}
+            <Route path="/capabilities/growth-marketing-sales/insights-analytics/attribution-modeling" component={GmsInsightsAnalyticsAttributionModeling} />
+            <Route path="/capabilities/growth-marketing-sales/insights-analytics/customer-analytics" component={GmsInsightsAnalyticsCustomerAnalytics} />
+            <Route path="/capabilities/growth-marketing-sales/insights-analytics/data-infrastructure" component={GmsInsightsAnalyticsDataInfrastructure} />
+            <Route path="/capabilities/growth-marketing-sales/insights-analytics/marketing-measurement" component={GmsInsightsAnalyticsMarketingMeasurement} />
+            <Route path="/capabilities/growth-marketing-sales/insights-analytics/marketing-mix-modeling" component={GmsInsightsAnalyticsMarketingMixModeling} />
+            <Route path="/capabilities/growth-marketing-sales/insights-analytics/predictive-analytics" component={GmsInsightsAnalyticsPredictiveAnalytics} />
+
+            {/* GMS leaves: marketing-operations */}
+            <Route path="/capabilities/growth-marketing-sales/marketing-operations/data-management" component={GmsMarketingOperationsDataManagement} />
+            <Route path="/capabilities/growth-marketing-sales/marketing-operations/martech-strategy" component={GmsMarketingOperationsMartechStrategy} />
+            <Route path="/capabilities/growth-marketing-sales/marketing-operations/performance-analytics" component={GmsMarketingOperationsPerformanceAnalytics} />
+            <Route path="/capabilities/growth-marketing-sales/marketing-operations/process-optimization" component={GmsMarketingOperationsProcessOptimization} />
+            <Route path="/capabilities/growth-marketing-sales/marketing-operations/team-and-governance" component={GmsMarketingOperationsTeamAndGovernance} />
+
+            {/* GMS leaves: martech-stack */}
+            <Route path="/capabilities/growth-marketing-sales/martech-stack/ai-and-personalization" component={GmsMartechStackAiAndPersonalization} />
+            <Route path="/capabilities/growth-marketing-sales/martech-stack/analytics-and-attribution" component={GmsMartechStackAnalyticsAndAttribution} />
+            <Route path="/capabilities/growth-marketing-sales/martech-stack/customer-data-platforms" component={GmsMartechStackCustomerDataPlatforms} />
+            <Route path="/capabilities/growth-marketing-sales/martech-stack/integration-and-data-flow" component={GmsMartechStackIntegrationAndDataFlow} />
+            <Route path="/capabilities/growth-marketing-sales/martech-stack/marketing-automation" component={GmsMartechStackMarketingAutomation} />
+            <Route path="/capabilities/growth-marketing-sales/martech-stack/martech-strategy" component={GmsMartechStackMartechStrategy} />
+
+            {/* GMS leaves: personalization-at-scale */}
+            <Route path="/capabilities/growth-marketing-sales/personalization-at-scale/ai-powered-recommendations" component={GmsPersonalizationAtScaleAiPoweredRecommendations} />
+            <Route path="/capabilities/growth-marketing-sales/personalization-at-scale/customer-data-activation" component={GmsPersonalizationAtScaleCustomerDataActivation} />
+            <Route path="/capabilities/growth-marketing-sales/personalization-at-scale/dynamic-content" component={GmsPersonalizationAtScaleDynamicContent} />
+            <Route path="/capabilities/growth-marketing-sales/personalization-at-scale/personalization-strategy" component={GmsPersonalizationAtScalePersonalizationStrategy} />
+            <Route path="/capabilities/growth-marketing-sales/personalization-at-scale/real-time-personalization" component={GmsPersonalizationAtScaleRealTimePersonalization} />
+            <Route path="/capabilities/growth-marketing-sales/personalization-at-scale/testing-and-optimization" component={GmsPersonalizationAtScaleTestingAndOptimization} />
+
+            {/* GMS leaves: portfolio-optimization */}
+            <Route path="/capabilities/growth-marketing-sales/portfolio-optimization/assortment-optimization" component={GmsPortfolioOptimizationAssortmentOptimization} />
+            <Route path="/capabilities/growth-marketing-sales/portfolio-optimization/category-management" component={GmsPortfolioOptimizationCategoryManagement} />
+            <Route path="/capabilities/growth-marketing-sales/portfolio-optimization/innovation-pipeline" component={GmsPortfolioOptimizationInnovationPipeline} />
+            <Route path="/capabilities/growth-marketing-sales/portfolio-optimization/portfolio-analytics" component={GmsPortfolioOptimizationPortfolioAnalytics} />
+            <Route path="/capabilities/growth-marketing-sales/portfolio-optimization/portfolio-strategy" component={GmsPortfolioOptimizationPortfolioStrategy} />
+            <Route path="/capabilities/growth-marketing-sales/portfolio-optimization/sku-rationalization" component={GmsPortfolioOptimizationSkuRationalization} />
+
+            {/* GMS leaves: pricing-monetization */}
+            <Route path="/capabilities/growth-marketing-sales/pricing-monetization/monetization-models" component={GmsPricingMonetizationMonetizationModels} />
+            <Route path="/capabilities/growth-marketing-sales/pricing-monetization/pricing-analytics" component={GmsPricingMonetizationPricingAnalytics} />
+            <Route path="/capabilities/growth-marketing-sales/pricing-monetization/pricing-operations" component={GmsPricingMonetizationPricingOperations} />
+            <Route path="/capabilities/growth-marketing-sales/pricing-monetization/pricing-strategy" component={GmsPricingMonetizationPricingStrategy} />
+            <Route path="/capabilities/growth-marketing-sales/pricing-monetization/value-based-pricing" component={GmsPricingMonetizationValueBasedPricing} />
+
+            {/* GMS leaves: retention-loyalty */}
+            <Route path="/capabilities/growth-marketing-sales/retention-loyalty/churn-prevention" component={GmsRetentionLoyaltyChurnPrevention} />
+            <Route path="/capabilities/growth-marketing-sales/retention-loyalty/customer-lifecycle-marketing" component={GmsRetentionLoyaltyCustomerLifecycleMarketing} />
+            <Route path="/capabilities/growth-marketing-sales/retention-loyalty/loyalty-program-design" component={GmsRetentionLoyaltyLoyaltyProgramDesign} />
+            <Route path="/capabilities/growth-marketing-sales/retention-loyalty/re-engagement-campaigns" component={GmsRetentionLoyaltyReEngagementCampaigns} />
+            <Route path="/capabilities/growth-marketing-sales/retention-loyalty/retention-analytics" component={GmsRetentionLoyaltyRetentionAnalytics} />
+            <Route path="/capabilities/growth-marketing-sales/retention-loyalty/rewards-and-benefits" component={GmsRetentionLoyaltyRewardsAndBenefits} />
+
+            {/* GMS leaves: sales-excellence */}
+            <Route path="/capabilities/growth-marketing-sales/sales-excellence/incentive-design" component={GmsSalesExcellenceIncentiveDesign} />
+            <Route path="/capabilities/growth-marketing-sales/sales-excellence/sales-analytics" component={GmsSalesExcellenceSalesAnalytics} />
+            <Route path="/capabilities/growth-marketing-sales/sales-excellence/sales-capability" component={GmsSalesExcellenceSalesCapability} />
+            <Route path="/capabilities/growth-marketing-sales/sales-excellence/sales-organization" component={GmsSalesExcellenceSalesOrganization} />
+            <Route path="/capabilities/growth-marketing-sales/sales-excellence/sales-process" component={GmsSalesExcellenceSalesProcess} />
+            <Route path="/capabilities/growth-marketing-sales/sales-excellence/sales-strategy" component={GmsSalesExcellenceSalesStrategy} />
+
+            {/* GMS leaves: service-design */}
+            <Route path="/capabilities/growth-marketing-sales/service-design/customer-experience" component={GmsServiceDesignCustomerExperience} />
+            <Route path="/capabilities/growth-marketing-sales/service-design/employee-experience-ex-design" component={GmsServiceDesignEmployeeExperienceExDesign} />
+            <Route path="/capabilities/growth-marketing-sales/service-design/personalization-at-scale" component={GmsServiceDesignPersonalizationAtScale} />
+            <Route path="/capabilities/growth-marketing-sales/service-design/physical-digital-integration" component={GmsServiceDesignPhysicalDigitalIntegration} />
+            <Route path="/capabilities/growth-marketing-sales/service-design/service-blueprinting" component={GmsServiceDesignServiceBlueprinting} />
+            <Route path="/capabilities/growth-marketing-sales/service-design/service-prototyping-and-piloting" component={GmsServiceDesignServicePrototypingAndPiloting} />
+
         <Route path={"/404"} component={NotFound} />
         <Route component={NotFound} />
 </Switch>
@@ -1731,6 +1870,110 @@ import OperationsProductDevelopmentPortfolioManagement from "@/pages/operations/
 import OperationsProductDevelopmentDesignForManufacturing from "@/pages/operations/product-development/DesignForManufacturing";
 import OperationsProductDevelopmentInnovationManagement from "@/pages/operations/product-development/InnovationManagement";
 
+import GmsBrandStorytellingBrandScalabilitySystems from "@/pages/capabilities/growth-marketing-sales/brand-storytelling/BrandScalabilitySystems";
+import GmsBrandStorytellingDataDrivenBrandPerformance from "@/pages/capabilities/growth-marketing-sales/brand-storytelling/DataDrivenBrandPerformance";
+import GmsBrandStorytellingDigitalExperienceDesign from "@/pages/capabilities/growth-marketing-sales/brand-storytelling/DigitalExperienceDesign";
+import GmsBrandStorytellingHumanizingComplexArchitectures from "@/pages/capabilities/growth-marketing-sales/brand-storytelling/HumanizingComplexArchitectures";
+import GmsBrandStorytellingNarrativeEngineering from "@/pages/capabilities/growth-marketing-sales/brand-storytelling/NarrativeEngineering";
+import GmsBrandStorytellingPositioningForTheApiEconomy from "@/pages/capabilities/growth-marketing-sales/brand-storytelling/PositioningForTheApiEconomy";
+import GmsBrandStrategyBrandActivation from "@/pages/capabilities/growth-marketing-sales/brand-strategy/BrandActivation";
+import GmsBrandStrategyBrandArchitecture from "@/pages/capabilities/growth-marketing-sales/brand-strategy/BrandArchitecture";
+import GmsBrandStrategyBrandPositioning from "@/pages/capabilities/growth-marketing-sales/brand-strategy/BrandPositioning";
+import GmsBrandStrategyCustomerResearch from "@/pages/capabilities/growth-marketing-sales/brand-strategy/CustomerResearch";
+import GmsBrandStrategyMessagingAndVoice from "@/pages/capabilities/growth-marketing-sales/brand-strategy/MessagingAndVoice";
+import GmsBrandStrategyVisualIdentity from "@/pages/capabilities/growth-marketing-sales/brand-strategy/VisualIdentity";
+import GmsCommercialArchitectureCommercialArchitectureDiagnostic from "@/pages/capabilities/growth-marketing-sales/commercial-architecture/CommercialArchitectureDiagnostic";
+import GmsCommercialArchitectureCommercialArchitectureOperatingModelDesign from "@/pages/capabilities/growth-marketing-sales/commercial-architecture/CommercialArchitectureOperatingModelDesign";
+import GmsCommercialArchitectureCommercialArchitecturePerformanceAcceleration from "@/pages/capabilities/growth-marketing-sales/commercial-architecture/CommercialArchitecturePerformanceAcceleration";
+import GmsCommercialArchitectureDataLayerTheSingleSourceOfTruth from "@/pages/capabilities/growth-marketing-sales/commercial-architecture/DataLayerTheSingleSourceOfTruth";
+import GmsCommercialArchitectureIncentiveLayerAlignedMotivations from "@/pages/capabilities/growth-marketing-sales/commercial-architecture/IncentiveLayerAlignedMotivations";
+import GmsCommercialArchitectureProcessLayerFrictionlessWorkflows from "@/pages/capabilities/growth-marketing-sales/commercial-architecture/ProcessLayerFrictionlessWorkflows";
+import GmsConsumerShopperInsightsBehavioralAnalytics from "@/pages/capabilities/growth-marketing-sales/consumer-shopper-insights/BehavioralAnalytics";
+import GmsConsumerShopperInsightsCustomerSegmentation from "@/pages/capabilities/growth-marketing-sales/consumer-shopper-insights/CustomerSegmentation";
+import GmsConsumerShopperInsightsInsightsActivation from "@/pages/capabilities/growth-marketing-sales/consumer-shopper-insights/InsightsActivation";
+import GmsConsumerShopperInsightsJourneyMapping from "@/pages/capabilities/growth-marketing-sales/consumer-shopper-insights/JourneyMapping";
+import GmsConsumerShopperInsightsQualitativeResearch from "@/pages/capabilities/growth-marketing-sales/consumer-shopper-insights/QualitativeResearch";
+import GmsConsumerShopperInsightsQuantitativeResearch from "@/pages/capabilities/growth-marketing-sales/consumer-shopper-insights/QuantitativeResearch";
+import GmsCustomerExperienceCxCulture from "@/pages/capabilities/growth-marketing-sales/customer-experience/CxCulture";
+import GmsCustomerExperienceCxMeasurement from "@/pages/capabilities/growth-marketing-sales/customer-experience/CxMeasurement";
+import GmsCustomerExperienceCxStrategy from "@/pages/capabilities/growth-marketing-sales/customer-experience/CxStrategy";
+import GmsCustomerExperienceJourneyDesign from "@/pages/capabilities/growth-marketing-sales/customer-experience/JourneyDesign";
+import GmsCustomerExperienceServiceDesign from "@/pages/capabilities/growth-marketing-sales/customer-experience/ServiceDesign";
+import GmsCustomerExperienceVoiceOfCustomer from "@/pages/capabilities/growth-marketing-sales/customer-experience/VoiceOfCustomer";
+import GmsDigitalMarketingBrandStrategyAndPositioning from "@/pages/capabilities/growth-marketing-sales/digital-marketing/BrandStrategyAndPositioning";
+import GmsDigitalMarketingConsumerMarketingAnalytics from "@/pages/capabilities/growth-marketing-sales/digital-marketing/ConsumerMarketingAnalytics";
+import GmsDigitalMarketingDigitalTransformation from "@/pages/capabilities/growth-marketing-sales/digital-marketing/DigitalTransformation";
+import GmsDigitalMarketingMarketingAnalyticsAndAttribution from "@/pages/capabilities/growth-marketing-sales/digital-marketing/MarketingAnalyticsAndAttribution";
+import GmsDigitalMarketingMarketingTechnology from "@/pages/capabilities/growth-marketing-sales/digital-marketing/MarketingTechnology";
+import GmsEcommerceCommerceAnalytics from "@/pages/capabilities/growth-marketing-sales/ecommerce/CommerceAnalytics";
+import GmsEcommerceConversionOptimization from "@/pages/capabilities/growth-marketing-sales/ecommerce/ConversionOptimization";
+import GmsEcommerceHeadlessCommerce from "@/pages/capabilities/growth-marketing-sales/ecommerce/HeadlessCommerce";
+import GmsEcommercePerformanceEngineering from "@/pages/capabilities/growth-marketing-sales/ecommerce/PerformanceEngineering";
+import GmsGreenGrowthCircularEconomyModels from "@/pages/capabilities/growth-marketing-sales/green-growth/CircularEconomyModels";
+import GmsGreenGrowthEsgBrandPositioning from "@/pages/capabilities/growth-marketing-sales/green-growth/EsgBrandPositioning";
+import GmsGreenGrowthGreenMarketing from "@/pages/capabilities/growth-marketing-sales/green-growth/GreenMarketing";
+import GmsGreenGrowthGreenProductInnovation from "@/pages/capabilities/growth-marketing-sales/green-growth/GreenProductInnovation";
+import GmsGreenGrowthSustainabilityMeasurement from "@/pages/capabilities/growth-marketing-sales/green-growth/SustainabilityMeasurement";
+import GmsGreenGrowthSustainableGrowthStrategy from "@/pages/capabilities/growth-marketing-sales/green-growth/SustainableGrowthStrategy";
+import GmsGrowthStrategyGoToMarketStrategy from "@/pages/capabilities/growth-marketing-sales/growth-strategy/GoToMarketStrategy";
+import GmsGrowthStrategyGrowthAnalytics from "@/pages/capabilities/growth-marketing-sales/growth-strategy/GrowthAnalytics";
+import GmsGrowthStrategyMandaGrowthStrategy from "@/pages/capabilities/growth-marketing-sales/growth-strategy/MandaGrowthStrategy";
+import GmsGrowthStrategyMarketEntryStrategy from "@/pages/capabilities/growth-marketing-sales/growth-strategy/MarketEntryStrategy";
+import GmsGrowthStrategyOrganicGrowth from "@/pages/capabilities/growth-marketing-sales/growth-strategy/OrganicGrowth";
+import GmsGrowthStrategyPortfolioOptimization from "@/pages/capabilities/growth-marketing-sales/growth-strategy/PortfolioOptimization";
+import GmsInsightsAnalyticsAttributionModeling from "@/pages/capabilities/growth-marketing-sales/insights-analytics/AttributionModeling";
+import GmsInsightsAnalyticsCustomerAnalytics from "@/pages/capabilities/growth-marketing-sales/insights-analytics/CustomerAnalytics";
+import GmsInsightsAnalyticsDataInfrastructure from "@/pages/capabilities/growth-marketing-sales/insights-analytics/DataInfrastructure";
+import GmsInsightsAnalyticsMarketingMeasurement from "@/pages/capabilities/growth-marketing-sales/insights-analytics/MarketingMeasurement";
+import GmsInsightsAnalyticsMarketingMixModeling from "@/pages/capabilities/growth-marketing-sales/insights-analytics/MarketingMixModeling";
+import GmsInsightsAnalyticsPredictiveAnalytics from "@/pages/capabilities/growth-marketing-sales/insights-analytics/PredictiveAnalytics";
+import GmsMarketingOperationsDataManagement from "@/pages/capabilities/growth-marketing-sales/marketing-operations/DataManagement";
+import GmsMarketingOperationsMartechStrategy from "@/pages/capabilities/growth-marketing-sales/marketing-operations/MartechStrategy";
+import GmsMarketingOperationsPerformanceAnalytics from "@/pages/capabilities/growth-marketing-sales/marketing-operations/PerformanceAnalytics";
+import GmsMarketingOperationsProcessOptimization from "@/pages/capabilities/growth-marketing-sales/marketing-operations/ProcessOptimization";
+import GmsMarketingOperationsTeamAndGovernance from "@/pages/capabilities/growth-marketing-sales/marketing-operations/TeamAndGovernance";
+import GmsMartechStackAiAndPersonalization from "@/pages/capabilities/growth-marketing-sales/martech-stack/AiAndPersonalization";
+import GmsMartechStackAnalyticsAndAttribution from "@/pages/capabilities/growth-marketing-sales/martech-stack/AnalyticsAndAttribution";
+import GmsMartechStackCustomerDataPlatforms from "@/pages/capabilities/growth-marketing-sales/martech-stack/CustomerDataPlatforms";
+import GmsMartechStackIntegrationAndDataFlow from "@/pages/capabilities/growth-marketing-sales/martech-stack/IntegrationAndDataFlow";
+import GmsMartechStackMarketingAutomation from "@/pages/capabilities/growth-marketing-sales/martech-stack/MarketingAutomation";
+import GmsMartechStackMartechStrategy from "@/pages/capabilities/growth-marketing-sales/martech-stack/MartechStrategy";
+import GmsPersonalizationAtScaleAiPoweredRecommendations from "@/pages/capabilities/growth-marketing-sales/personalization-at-scale/AiPoweredRecommendations";
+import GmsPersonalizationAtScaleCustomerDataActivation from "@/pages/capabilities/growth-marketing-sales/personalization-at-scale/CustomerDataActivation";
+import GmsPersonalizationAtScaleDynamicContent from "@/pages/capabilities/growth-marketing-sales/personalization-at-scale/DynamicContent";
+import GmsPersonalizationAtScalePersonalizationStrategy from "@/pages/capabilities/growth-marketing-sales/personalization-at-scale/PersonalizationStrategy";
+import GmsPersonalizationAtScaleRealTimePersonalization from "@/pages/capabilities/growth-marketing-sales/personalization-at-scale/RealTimePersonalization";
+import GmsPersonalizationAtScaleTestingAndOptimization from "@/pages/capabilities/growth-marketing-sales/personalization-at-scale/TestingAndOptimization";
+import GmsPortfolioOptimizationAssortmentOptimization from "@/pages/capabilities/growth-marketing-sales/portfolio-optimization/AssortmentOptimization";
+import GmsPortfolioOptimizationCategoryManagement from "@/pages/capabilities/growth-marketing-sales/portfolio-optimization/CategoryManagement";
+import GmsPortfolioOptimizationInnovationPipeline from "@/pages/capabilities/growth-marketing-sales/portfolio-optimization/InnovationPipeline";
+import GmsPortfolioOptimizationPortfolioAnalytics from "@/pages/capabilities/growth-marketing-sales/portfolio-optimization/PortfolioAnalytics";
+import GmsPortfolioOptimizationPortfolioStrategy from "@/pages/capabilities/growth-marketing-sales/portfolio-optimization/PortfolioStrategy";
+import GmsPortfolioOptimizationSkuRationalization from "@/pages/capabilities/growth-marketing-sales/portfolio-optimization/SkuRationalization";
+import GmsPricingMonetizationMonetizationModels from "@/pages/capabilities/growth-marketing-sales/pricing-monetization/MonetizationModels";
+import GmsPricingMonetizationPricingAnalytics from "@/pages/capabilities/growth-marketing-sales/pricing-monetization/PricingAnalytics";
+import GmsPricingMonetizationPricingOperations from "@/pages/capabilities/growth-marketing-sales/pricing-monetization/PricingOperations";
+import GmsPricingMonetizationPricingStrategy from "@/pages/capabilities/growth-marketing-sales/pricing-monetization/PricingStrategy";
+import GmsPricingMonetizationValueBasedPricing from "@/pages/capabilities/growth-marketing-sales/pricing-monetization/ValueBasedPricing";
+import GmsRetentionLoyaltyChurnPrevention from "@/pages/capabilities/growth-marketing-sales/retention-loyalty/ChurnPrevention";
+import GmsRetentionLoyaltyCustomerLifecycleMarketing from "@/pages/capabilities/growth-marketing-sales/retention-loyalty/CustomerLifecycleMarketing";
+import GmsRetentionLoyaltyLoyaltyProgramDesign from "@/pages/capabilities/growth-marketing-sales/retention-loyalty/LoyaltyProgramDesign";
+import GmsRetentionLoyaltyReEngagementCampaigns from "@/pages/capabilities/growth-marketing-sales/retention-loyalty/ReEngagementCampaigns";
+import GmsRetentionLoyaltyRetentionAnalytics from "@/pages/capabilities/growth-marketing-sales/retention-loyalty/RetentionAnalytics";
+import GmsRetentionLoyaltyRewardsAndBenefits from "@/pages/capabilities/growth-marketing-sales/retention-loyalty/RewardsAndBenefits";
+import GmsSalesExcellenceIncentiveDesign from "@/pages/capabilities/growth-marketing-sales/sales-excellence/IncentiveDesign";
+import GmsSalesExcellenceSalesAnalytics from "@/pages/capabilities/growth-marketing-sales/sales-excellence/SalesAnalytics";
+import GmsSalesExcellenceSalesCapability from "@/pages/capabilities/growth-marketing-sales/sales-excellence/SalesCapability";
+import GmsSalesExcellenceSalesOrganization from "@/pages/capabilities/growth-marketing-sales/sales-excellence/SalesOrganization";
+import GmsSalesExcellenceSalesProcess from "@/pages/capabilities/growth-marketing-sales/sales-excellence/SalesProcess";
+import GmsSalesExcellenceSalesStrategy from "@/pages/capabilities/growth-marketing-sales/sales-excellence/SalesStrategy";
+import GmsServiceDesignCustomerExperience from "@/pages/capabilities/growth-marketing-sales/service-design/CustomerExperience";
+import GmsServiceDesignEmployeeExperienceExDesign from "@/pages/capabilities/growth-marketing-sales/service-design/EmployeeExperienceExDesign";
+import GmsServiceDesignPersonalizationAtScale from "@/pages/capabilities/growth-marketing-sales/service-design/PersonalizationAtScale";
+import GmsServiceDesignPhysicalDigitalIntegration from "@/pages/capabilities/growth-marketing-sales/service-design/PhysicalDigitalIntegration";
+import GmsServiceDesignServiceBlueprinting from "@/pages/capabilities/growth-marketing-sales/service-design/ServiceBlueprinting";
+import GmsServiceDesignServicePrototypingAndPiloting from "@/pages/capabilities/growth-marketing-sales/service-design/ServicePrototypingAndPiloting";
+
 
 function App() {
   useAnalytics();
@@ -1748,6 +1991,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
