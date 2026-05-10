@@ -24,7 +24,7 @@ const capabilities = [
     id: "03",
     title: "Technology",
     description: "Modernize your legacy systems with cloud-native architectures that ensure security, scalability, and operational resilience.",
-    link: "/solutions/enterprise-transformation",
+    link: "/capabilities/technology",
     image: "/images/capability-technology.jpg"
   },
   {
@@ -319,3 +319,4 @@ export default function Capabilities() {
     </div>
   );
 }
+

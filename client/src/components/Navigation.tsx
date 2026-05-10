@@ -27,7 +27,7 @@ const industries = [
 const capabilities = [
   { name: "Artificial Intelligence", slug: "artificial-intelligence" },
   { name: "Business Building", slug: "business-building" },
-  // { name: "Technology", slug: "technology" },
+  { name: "Technology", slug: "technology" },
   { name: "Strategy & Corporate Finance", slug: "strategy-corporate-finance" },
   { name: "Operations", slug: "operations" },
   { name: "Growth, Marketing & Sales", slug: "growth-marketing-sales" },
@@ -702,3 +702,4 @@ export default function Navigation() {
     </>
   );
 }
+
