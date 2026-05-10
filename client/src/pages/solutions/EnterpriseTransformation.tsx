@@ -151,98 +151,51 @@ export default function EnterpriseTransformation() {
           "Stick around after launch to fix issues, train teams, and ensure adoption — and right-size tech spending continuously",
         ],
       }}
-      // ALL 15 sub-pages with canonical /capabilities/technology/<slug> hrefs. Descriptions DISTILLED from each sub-page heroSubtitle (Basic 7 + SET-prefixed 8).
-      // Slug overlap: Basic "security-compliance" + SET "security-and-compliance" are distinct real sub-pages — distinguished in titles.
+      // CHANGED FROM 15 FLAT SERVICES TO 6 LEVEL-2 HUBS — Cat 2-4f Phase 1.
+      // Each card links to the new CapabilityHubTemplate hub at /capabilities/technology/<hub-slug>-hub.
+      // The 15 underlying flat services are preserved and now live under each hub via howWeCanHelp inside the hub pages.
       howWeCanHelp={[
         {
-          title: "Legacy System Modernization",
+          title: "Cloud & Infrastructure",
+          // TODO: confirm hub description with practice lead before publish
           description:
-            "Modernize legacy enterprise systems through replatform, refactor, and replace patterns. Strangler-fig execution, parallel-run discipline, and disciplined decommissioning that retires the legacy without breaking the business.",
-          href: "/capabilities/technology/legacy-modernization",
-        },
-        {
-          title: "Cloud Infrastructure",
-          description:
-            "Cloud-native modernization across AWS, Azure, and GCP. Build elastic, secure, cost-optimized platforms that compound developer velocity, not cloud bills.",
-          href: "/capabilities/technology/cloud-infrastructure",
-        },
-        {
-          title: "API Integration",
-          description:
-            "API-first integration architecture. Connect systems, partners, and products via well-designed REST, GraphQL, and gRPC APIs — governed, secured, and built for the long arc.",
-          href: "/capabilities/technology/api-integration",
-        },
-        {
-          title: "DevOps Automation",
-          description:
-            "CI/CD pipelines, infrastructure as code, deployment automation, and observability — engineered to take engineering velocity from quarterly windows to multiple safe deploys a day.",
-          href: "/capabilities/technology/devops-automation",
-        },
-        {
-          title: "Technology Strategy",
-          description:
-            "Enterprise technology strategy for CIO and CTO leadership — vision, principles, target architecture, and the governance operating model that turns strategy into a body of decisions, not a deck on the shelf.",
-          href: "/capabilities/technology/technology-strategy",
-        },
-        {
-          title: "Cost Optimization",
-          description:
-            "Enterprise IT cost optimization across application rationalization, vendor and license consolidation, contract renegotiation, and the operating model that keeps the savings holding into year two.",
-          href: "/capabilities/technology/cost-optimization",
-        },
-        {
-          title: "Security & Compliance",
-          description:
-            "Enterprise security architecture and compliance frameworks — SOC 2, ISO 27001, HIPAA, PCI-DSS, GDPR — with control implementation, audit readiness, and an always-on assurance program.",
-          href: "/capabilities/technology/security-compliance",
-        },
-        {
-          title: "Cloud Migration Architecture",
-          description:
-            "Cloud migration strategy and target architecture — 6Rs decisions per workload, defensible target state, sequenced execution, and the operating model that runs the post-migration estate.",
-          href: "/capabilities/technology/cloud-migration-architecture",
-        },
-        {
-          title: "Infrastructure Modernization",
-          description:
-            "Modernize legacy infrastructure to cloud-native and infrastructure-as-code — assessment, sequenced roadmap, target architecture, and the operating model that runs the modernized estate as a managed product.",
-          href: "/capabilities/technology/infrastructure-modernization",
+            "Migrate, modernize, and optimize your cloud estate end-to-end. Landing zones, FinOps, and the operating model that compounds developer velocity rather than dragging on the P&L.",
+          href: "/capabilities/technology/cloud-infrastructure-hub",
         },
         {
           title: "Platform Engineering",
+          // TODO: confirm hub description with practice lead before publish
           description:
-            "Internal developer platforms (IDPs) — self-service infrastructure and golden paths that let engineering teams ship faster, operated as a product with a backlog, a roadmap, and a developer-satisfaction score.",
-          href: "/capabilities/technology/platform-engineering",
+            "Build internal developer platforms and data platforms that compound velocity. Golden paths, paved paths, and the platform-as-a-product operating model that turns infrastructure into a managed product.",
+          href: "/capabilities/technology/platform-engineering-hub",
         },
         {
-          title: "DevOps & CI/CD",
+          title: "DevOps & Automation",
+          // TODO: confirm hub description with practice lead before publish
           description:
-            "CI/CD pipeline implementation, automated testing infrastructure, deployment automation, and the DevOps operating model that lifts deployment frequency and shrinks lead time without sacrificing reliability.",
-          href: "/capabilities/technology/devops-cicd",
+            "CI/CD, infrastructure as code, and the operating model that ships safely and often. DORA-aligned engineering that lifts deployment frequency without sacrificing reliability.",
+          href: "/capabilities/technology/devops-automation-hub",
         },
         {
-          title: "Security & Compliance (Enterprise)",
+          title: "Security & Compliance",
+          // TODO: confirm hub description with practice lead before publish
           description:
-            "Embed security into every layer of your technology stack with zero-trust architectures, compliance automation, and proactive threat management for enterprise-scale estates.",
-          href: "/capabilities/technology/security-and-compliance",
+            "Embed security and compliance into every layer. Zero-trust architecture, automated evidence, and an always-on assurance program rather than annual audit fire drills.",
+          href: "/capabilities/technology/security-compliance-hub",
         },
         {
-          title: "Data Platform Engineering",
+          title: "Strategy & Advisory",
+          // TODO: confirm hub description with practice lead before publish
           description:
-            "Build the data platform that supports enterprise analytics — pipelines, lakehouse, warehouses, observability, and the engineering discipline that keeps the platform a managed asset rather than a stack of fragile jobs.",
-          href: "/capabilities/technology/data-platform-engineering",
+            "Tech strategy, target architecture, due diligence, and cost optimization. The technology agenda turned into a body of decisions leadership can execute against.",
+          href: "/capabilities/technology/strategy-advisory-hub",
         },
         {
-          title: "Cloud Cost Optimization",
+          title: "Modernization",
+          // TODO: confirm hub description with practice lead before publish
           description:
-            "FinOps for cloud spend — right-sizing, commitment optimization, waste elimination, and the governance cadence that turns cloud cost from a quarterly fire drill into a managed line on the operating P&L.",
-          href: "/capabilities/technology/cloud-cost-optimization",
-        },
-        {
-          title: "Technology Due Diligence",
-          description:
-            "Technology due diligence for M&A acquisitions and PE portfolio investments — evidence-led technical assessment, integration or value-creation analysis, IC-ready findings, and post-deal advisory.",
-          href: "/capabilities/technology/technology-due-diligence",
+            "Replatform, refactor, and replace patterns for legacy systems — connected by a modern API layer. Strangler-fig execution that retires the legacy without breaking the business.",
+          href: "/capabilities/technology/modernization-hub",
         },
       ]}
       // AUTHORED case-tab metrics distilled from Cat 11a 12-case pool, grouped into 3 industry tabs.
@@ -397,3 +350,4 @@ export default function EnterpriseTransformation() {
     />
   );
 }
+
