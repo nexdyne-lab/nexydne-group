@@ -1,524 +1,141 @@
-import { motion } from "framer-motion";
-import { ArrowRight, User, Sparkles, Target, Database, Zap, BarChart3 } from "lucide-react";
-import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
-import BainHoverCard from "@/components/BainHoverCard";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import { SEO } from "@/components/SEO";
+// TODO: David — confirm Personalization at Scale experience & impact numbers with practice lead before publish.
+// TODO: David — populate 2-3 thought-leadership insights for the Personalization at Scale hub.
+// TODO: confirm ambition copy with practice lead before publish
+
+import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
 export default function PersonalizationAtScale() {
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Personalization at Scale" 
-        description="AI-powered personalization, dynamic content, and 1:1 customer experiences. We help you deliver the right message to the right person at the right time—at scale."
-        canonical="/capabilities/growth-marketing-sales/personalization-at-scale"
-      />
-      <Navigation />
-      
-      {/* Hero Section - Dark Background */}
-      <section className="relative min-h-[70vh] flex items-center pt-20 bg-charcoal">
-        <div className="container px-4 md:px-12 grid md:grid-cols-2 gap-8 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Link href="/capabilities/growth-marketing-sales" className="inline-flex items-center text-white/60 hover:text-white mb-6 text-sm transition-colors">
-              <ArrowRight className="w-4 h-4 mr-2 rotate-180" />
-              Growth, Marketing & Sales
-            </Link>
-            
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-4 eb-garamond">
-              Personalization at Scale
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
-              AI-powered personalization, dynamic content, and 1:1 customer experiences. We help you deliver the right message to the right person at the right time—at scale.
-            </p>
-            
-            <div className="flex flex-wrap gap-4">
-              <Link href="/contact">
-                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
-                  Personalize Your Marketing
-                </Button>
-              </Link>
-              <Link href="/cases">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
-                  View Case Studies
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80" 
-              alt="Personalization Technology" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Our Experience & Impact - Bain Style with Border-Left Accent */}
-      <section className="py-20 bg-white border-b border-border">
-        <div className="container px-4 md:px-12">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-2xl font-bold text-charcoal mb-12 eb-garamond"
-          >
-            Our Experience & Impact
-          </motion.h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { metric: "200+", label: "personalization programs implemented across industries" },
-              { metric: "40%", label: "average increase in conversion rates from personalization" },
-              { metric: "3x", label: "improvement in email engagement through dynamic content" }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`${index > 0 ? 'border-l border-border pl-8' : ''}`}
-              >
-                <div>
-                  <div className="text-5xl md:text-6xl font-bold text-charcoal mb-4">{item.metric}</div>
-                  <p className="text-lg text-charcoal/60">{item.label}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Thought Leadership - 2-Column Layout */}
-      <section className="py-20 bg-white">
-        <div className="container px-4 md:px-12">
-          <div className="grid md:grid-cols-2 gap-16 items-start">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <h2 className="text-4xl md:text-5xl font-bold text-charcoal leading-tight eb-garamond">
-                Customers expect personalization. Most companies deliver generic experiences.
-              </h2>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="space-y-6 text-lg text-charcoal/80 leading-relaxed"
-            >
-              <p>
-                80% of consumers are more likely to purchase from brands that provide personalized experiences. Yet most companies struggle to move beyond basic segmentation. They have the data but lack the technology, content, and processes to activate it.
-              </p>
-              <p>
-                The leaders in personalization have built integrated capabilities that span data, technology, content, and measurement. They're delivering millions of personalized experiences daily—each one tailored to individual preferences, behaviors, and context.
-              </p>
-              <p>
-                We help companies build personalization capabilities that drive measurable business impact—from strategy through implementation.
-              </p>
-              <ul className="space-y-3 mt-6">
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-                  <span>Personalization strategy and roadmap development</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-                  <span>AI/ML model development for recommendations and targeting</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-                  <span>Dynamic content creation and management</span>
-                </li>
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Approach Section - 3 Column Layout */}
-      <section className="py-24 bg-base text-white">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-              Our Approach
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold eb-garamond">
-              Building personalization that performs
-            </h2>
-          </motion.div>
-          
-          <div className="grid md:grid-cols-3 gap-12">
-            {[
-              {
-                title: "Define strategy",
-                description: "We assess your personalization maturity and define a roadmap aligned with business objectives. We identify high-impact use cases and prioritize investments based on value and feasibility."
-              },
-              {
-                title: "Build capabilities",
-                description: "We implement the technology, data infrastructure, and content systems needed for personalization at scale. We develop AI models that predict preferences and optimize experiences."
-              },
-              {
-                title: "Activate and optimize",
-                description: "We launch personalization programs across channels and continuously test and optimize. We build measurement frameworks that track impact and inform iteration."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <h3 className="text-xl font-bold mb-4">{item.title}</h3>
-                <p className="text-white/70 leading-relaxed">{item.description}</p>
-              </motion.div>
-            ))}
-          </div>
-          
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-center mt-12"
-          >
-            <Link href="/contact">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-4 bg-transparent">
-                Get in touch
-              </Button>
-            </Link>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* How We Can Help - H100 Capability Cards */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              How We Can Help
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6 eb-garamond">
-              Our Personalization Capabilities
-            </h2>
-            <p className="text-xl text-charcoal/60 max-w-2xl">
-              End-to-end personalization services from strategy to activation.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                icon: User,
-                title: "Personalization Strategy",
-                description: "Develop personalization strategies aligned with customer journeys and business goals. Define use cases, prioritize investments, and build roadmaps."
-              },
-              {
-                icon: Sparkles,
-                title: "AI-Powered Recommendations",
-                description: "Build recommendation engines that predict customer preferences. Implement product, content, and next-best-action recommendations."
-              },
-              {
-                icon: Target,
-                title: "Dynamic Content",
-                description: "Create content systems that enable personalization at scale. Develop modular content, dynamic templates, and automated assembly."
-              },
-              {
-                icon: Database,
-                title: "Customer Data Activation",
-                description: "Activate customer data for real-time personalization. Build unified profiles and enable cross-channel targeting."
-              },
-              {
-                icon: Zap,
-                title: "Real-Time Personalization",
-                description: "Implement real-time personalization across web, email, and mobile. Deliver contextual experiences based on behavior and intent."
-              },
-              {
-                icon: BarChart3,
-                title: "Testing & Optimization",
-                description: "Build experimentation frameworks that optimize personalization. Implement A/B testing, multivariate testing, and continuous optimization."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-              >
-                <BainHoverCard
-                  title={item.title}
-                  description={item.description}
-                  link="#"
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Client Results Section */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              Client Results
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal eb-garamond">
-              Delivering personalization at scale
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                category: "E-COMMERCE",
-                title: "AI-powered recommendations drive 25% increase in average order value",
-                description: "An e-commerce retailer was leaving money on the table with generic product recommendations. We implemented an AI recommendation engine that personalized product suggestions based on browsing behavior, purchase history, and real-time context. Average order value increased 25% within 90 days.",
-                image: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80"
-              },
-              {
-                category: "FINANCIAL SERVICES",
-                title: "Dynamic email personalization increases engagement by 60%",
-                description: "A bank's email marketing was underperforming with generic campaigns. We implemented dynamic content personalization that tailored messages based on customer segment, product holdings, and behavioral triggers. Email engagement increased 60% and conversion rates doubled.",
-                image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
-              }
-            ].map((study, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group"
-              >
-                <Link href="/cases" className="block">
-                  <div className="relative overflow-hidden rounded-xl aspect-[16/10] mb-6">
-                    <img 
-                      src={study.image} 
-                      alt={study.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute top-4 left-4">
-                      <span className="px-3 py-1 bg-primary text-white text-xs font-bold uppercase tracking-wider rounded">
-                        {study.category}
-                      </span>
-                    </div>
-                  </div>
-                  <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
-                    {study.title}
-                  </h3>
-                  <p className="text-charcoal/60 text-sm leading-relaxed mb-4">
-                    {study.description}
-                  </p>
-                  <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                    Read case study <ArrowRight className="ml-2 w-4 h-4" />
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Latest Insights Section */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 md:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-                Insights
-              </span>
-              <h2 className="text-4xl md:text-5xl font-bold text-charcoal eb-garamond">
-                Latest Insights
-              </h2>
-              <p className="text-xl text-charcoal/60 mt-4">
-                Expert perspectives on personalization strategy and technology.
-              </p>
-            </motion.div>
-            <Link href="/insights">
-              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/5 bg-transparent transition-all duration-300">
-                View all insights
-              </Button>
-            </Link>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                category: "AI",
-                readTime: "6 min read",
-                title: "The Next Frontier: Generative AI for Personalization",
-                description: "How generative AI is transforming personalization from segment-based to truly individual experiences.",
-                link: "/insights/genai-personalization"
-              },
-              {
-                category: "Strategy",
-                readTime: "5 min read",
-                title: "Personalization Maturity: Where Do You Stand?",
-                description: "A framework for assessing your personalization capabilities and identifying the path forward.",
-                link: "/insights/personalization-maturity"
-              },
-              {
-                category: "Privacy",
-                readTime: "7 min read",
-                title: "Personalization in a Privacy-First World",
-                description: "How to deliver personalized experiences while respecting customer privacy and regulatory requirements.",
-                link: "/insights/privacy-personalization"
-              }
-            ].map((insight, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <Link href={insight.link} className="group block h-full">
-                  <div className="h-full p-8 rounded-xl bg-white border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
-                    <div className="flex items-center gap-3 mb-4">
-                      <span className="text-primary text-xs font-bold uppercase tracking-wider">{insight.category}</span>
-                      <span className="text-charcoal/40">•</span>
-                      <span className="text-charcoal/60 text-sm">{insight.readTime}</span>
-                    </div>
-                    <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
-                      {insight.title}
-                    </h3>
-                    <p className="text-charcoal/60 text-sm leading-relaxed mb-6">
-                      {insight.description}
-                    </p>
-                    <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                      Read article <ArrowRight className="ml-2 w-4 h-4" />
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Related Capabilities Section */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              Related Capabilities
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6 eb-garamond">
-              Explore related capabilities
-            </h2>
-          </motion.div>
-          
-          <div className="grid md:grid-cols-4 gap-6">
-            {[
-              {
-                title: "MarTech Stack",
-                description: "Build the technology infrastructure that enables personalization at scale across channels.",
-                link: "/capabilities/growth-marketing-sales/martech-stack"
-              },
-              {
-                title: "Customer Experience",
-                description: "Design and deliver personalized experiences across the entire customer journey.",
-                link: "/capabilities/growth-marketing-sales/customer-experience"
-              },
-              {
-                title: "Insights & Analytics",
-                description: "Turn customer data into actionable insights that power personalization strategies.",
-                link: "/capabilities/growth-marketing-sales/insights-analytics"
-              }
-            ].map((capability, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <BainHoverCard
-                  title={capability.title}
-                  description={capability.description}
-                  link={capability.link}
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section - Blue Background */}
-      <section className="py-24 bg-primary">
-        <div className="container px-4 md:px-12 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 eb-garamond">
-              Ready to personalize at scale?
-            </h2>
-            <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">
-              Let's discuss how personalization can transform your customer experience and drive measurable business results.
-            </p>
-            <Link href="/contact">
-              <Button className="bg-white hover:bg-subtle text-charcoal px-10 py-6 text-lg font-semibold transition-all">
-                Start Your Personalization Journey
-              </Button>
-            </Link>
-          </motion.div>
-        </div>
-      </section>
-
-      <Footer />
-    </div>
+    <CapabilityHubTemplate
+      hubName="Personalization at Scale"
+      slug="personalization-at-scale"
+      heroSubtitle="AI-powered personalization, dynamic content, and 1:1 customer experiences. We help you deliver the right message to the right person at the right time—at scale."
+      heroImage="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80"
+      experienceStats={[
+        { number: "200+", label: "personalization programs implemented across industries" },
+        { number: "40%", label: "average increase in conversion rates from personalization" },
+        { number: "3x", label: "improvement in email engagement through dynamic content" },
+        { number: "Senior-led", label: "Every engagement led by a partner with deep practitioner experience" },
+      ]}
+      // TODO: confirm ambition copy with practice lead before publish
+      ambitions={[
+        {
+          title: "Sharpen the personalization at scale thesis",
+          description:
+            "Make clear, evidence-based choices about where personalization at scale can move the needle for the business — and where it cannot. Stop spreading effort across too many fronts.",
+        },
+        {
+          title: "Translate intent into a measurable system",
+          description:
+            "Move beyond a deck. Build the operating model, KPIs, and cadence that turn personalization at scale ambitions into quarterly outcomes you can actually defend.",
+        },
+        {
+          title: "Reach the customer with one voice",
+          description:
+            "Align brand, product, and commercial teams around a single view of the customer so every personalization at scale touchpoint reinforces the same value promise.",
+        },
+        {
+          title: "Compound the data advantage",
+          description:
+            "Instrument personalization at scale so each campaign, account, and decision feeds the next one — building a proprietary asset that competitors cannot copy from a vendor.",
+        },
+        {
+          title: "Modernise the personalization at scale tech and talent stack",
+          description:
+            "Invest in the platforms, partners, and people that match the next stage of the business — not the one you grew up in.",
+        },
+        {
+          title: "Prove the ROI conversation in the boardroom",
+          description:
+            "Connect personalization at scale investment to revenue, margin, and customer-equity outcomes the CEO and CFO will fund in the next planning cycle.",
+        },
+      ]}
+      howWeCanHelp={[
+        {
+          title: "Personalization Strategy",
+          description:
+            "Develop personalization strategies aligned with customer journeys and business goals. Define use cases, prioritize investments, and build roadmaps.",
+          href: "/capabilities/growth-marketing-sales/personalization-at-scale/personalization-strategy",
+        },
+        {
+          title: "AI-Powered Recommendations",
+          description:
+            "Build recommendation engines that predict customer preferences. Implement product, content, and next-best-action recommendations.",
+          href: "/capabilities/growth-marketing-sales/personalization-at-scale/ai-powered-recommendations",
+        },
+        {
+          title: "Dynamic Content",
+          description:
+            "Create content systems that enable personalization at scale. Develop modular content, dynamic templates, and automated assembly.",
+          href: "/capabilities/growth-marketing-sales/personalization-at-scale/dynamic-content",
+        },
+        {
+          title: "Customer Data Activation",
+          description:
+            "Activate customer data for real-time personalization. Build unified profiles and enable cross-channel targeting.",
+          href: "/capabilities/growth-marketing-sales/personalization-at-scale/customer-data-activation",
+        },
+        {
+          title: "Real-Time Personalization",
+          description:
+            "Implement real-time personalization across web, email, and mobile. Deliver contextual experiences based on behavior and intent.",
+          href: "/capabilities/growth-marketing-sales/personalization-at-scale/real-time-personalization",
+        },
+        {
+          title: "Testing & Optimization",
+          description:
+            "Build experimentation frameworks that optimize personalization. Implement A/B testing, multivariate testing, and continuous optimization.",
+          href: "/capabilities/growth-marketing-sales/personalization-at-scale/testing-and-optimization",
+        },
+      ]}
+      ambitionsCTAText="Talk to us about your Personalization at Scale ambition →"
+      thoughtLeadership={[]}
+      approachPillars={[
+        {
+          step: "01",
+          title: "Define strategy",
+          body: "We assess your personalization maturity and define a roadmap aligned with business objectives. We identify high-impact use cases and prioritize investments based on value and feasibility.",
+        },
+        {
+          step: "02",
+          title: "Build capabilities",
+          body: "We implement the technology, data infrastructure, and content systems needed for personalization at scale. We develop AI models that predict preferences and optimize experiences.",
+        },
+        {
+          step: "03",
+          title: "Activate and optimize",
+          body: "We launch personalization programs across channels and continuously test and optimize. We build measurement frameworks that track impact and inform iteration.",
+        },
+      ]}
+      featuredCases={[
+        {
+          slug: "healthcare-patient-engagement",
+          title: "Health Network Lifts Patient Engagement Score By 38 Points",
+          industry: "Healthcare · Engagement",
+          metric: "38pt",
+          image: "https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=1600&q=80",
+        },
+        {
+          slug: "wealth-management-automation",
+          title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
+          industry: "Financial Services · Wealth",
+          metric: "3x",
+          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80",
+        },
+        {
+          slug: "healthcare-data-analytics",
+          title: "Health System Builds Unified Analytics Platform Across 18 Hospitals",
+          industry: "Healthcare · Analytics",
+          metric: "18",
+          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+        },
+      ]}
+      relatedCapabilities={[
+        { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },
+        { href: "/capabilities/business-building", name: "Business Building" },
+        { href: "/capabilities/operations", name: "Operations" },
+      ]}
+      ctaLeadName="Talk to our Personalization at Scale lead"
+    />
   );
 }

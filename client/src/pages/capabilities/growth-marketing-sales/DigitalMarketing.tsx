@@ -1,524 +1,141 @@
-import { motion } from "framer-motion";
-import { ArrowRight, Target, BarChart3, Megaphone, LineChart, Layers, Globe } from "lucide-react";
-import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
-import BainHoverCard from "@/components/BainHoverCard";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import { SEO } from "@/components/SEO";
+// TODO: David — confirm Digital Marketing experience & impact numbers with practice lead before publish.
+// TODO: David — populate 2-3 thought-leadership insights for the Digital Marketing hub.
+// TODO: confirm ambition copy with practice lead before publish
+
+import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
 export default function DigitalMarketing() {
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
-      <SEO 
-        title="Digital Marketing" 
-        description="Performance marketing, brand strategy, and analytics attribution. We maximize ROI with precision marketing, data analytics, and AI-driven optimization."
-        canonical="/capabilities/growth-marketing-sales/digital-marketing"
-      />
-      <Navigation />
-      
-      {/* Hero Section - Dark Background */}
-      <section className="relative min-h-[70vh] flex items-center pt-20 bg-charcoal">
-        <div className="container px-4 md:px-12 grid md:grid-cols-2 gap-8 items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Link href="/capabilities/growth-marketing-sales" className="inline-flex items-center text-white/60 hover:text-white mb-6 text-sm transition-colors">
-              <ArrowRight className="w-4 h-4 mr-2 rotate-180" />
-              Growth, Marketing & Sales
-            </Link>
-            
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-4 eb-garamond">
-              Digital Marketing
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
-              Performance marketing, brand strategy, and analytics attribution for measurable growth. We leverage data analytics and AI to optimize spend, personalize messaging, and drive conversion.
-            </p>
-            
-            <div className="flex flex-wrap gap-4">
-              <Link href="/contact">
-                <Button className="bg-white hover:bg-muted text-charcoal px-8 py-6 text-base font-semibold transition-all">
-                  Start Your Transformation
-                </Button>
-              </Link>
-              <Link href="/cases">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
-                  View Case Studies
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hidden md:block"
-          >
-            <img 
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80" 
-              alt="Digital Marketing Analytics" 
-              className="w-full h-auto rounded-lg"
-            />
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Our Experience & Impact - Bain Style with Border-Left Accent */}
-      <section className="py-20 bg-white border-b border-border">
-        <div className="container px-4 md:px-12">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-2xl font-bold text-charcoal mb-12 eb-garamond"
-          >
-            Our Experience & Impact
-          </motion.h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { metric: "300+", label: "digital marketing transformations delivered across industries" },
-              { metric: "45%", label: "average improvement in marketing ROI within 6 months" },
-              { metric: "3.2x", label: "typical increase in qualified lead generation" }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`${index > 0 ? 'border-l border-border pl-8' : ''}`}
-              >
-                <div>
-                  <div className="text-5xl md:text-6xl font-bold text-charcoal mb-4">{item.metric}</div>
-                  <p className="text-lg text-charcoal/60">{item.label}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Thought Leadership - 2-Column Layout */}
-      <section className="py-20 bg-white">
-        <div className="container px-4 md:px-12">
-          <div className="grid md:grid-cols-2 gap-16 items-start">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <h2 className="text-4xl md:text-5xl font-bold text-charcoal leading-tight eb-garamond">
-                Digital is no longer a channel—it's the foundation of modern marketing.
-              </h2>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="space-y-6 text-lg text-charcoal/80 leading-relaxed"
-            >
-              <p>
-                Digital marketing is no longer about merely adding online channels to the media mix. It's about integrating digital into all facets of marketing strategy and operations. Companies that treat digital as an add-on are being outpaced by competitors who've made it central to how they acquire, engage, and retain customers.
-              </p>
-              <p>
-                The most successful companies use digital to create a flywheel effect: better data leads to better targeting, which leads to better results, which generates more data. They've built the capabilities to continuously learn and optimize, turning marketing from a cost center into a growth engine.
-              </p>
-              <p>
-                We help companies make this transformation—not just optimizing campaigns, but building the capabilities, processes, and culture that sustain digital marketing excellence over time.
-              </p>
-              <ul className="space-y-3 mt-6">
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-                  <span>Data-driven targeting and personalization at scale</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-                  <span>Marketing technology stack optimization and integration</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0"></span>
-                  <span>Attribution modeling and marketing mix optimization</span>
-                </li>
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Approach Section - 3 Column Layout */}
-      <section className="py-24 bg-base text-white">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">
-              Our Approach
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold eb-garamond">
-              Building digital marketing excellence
-            </h2>
-          </motion.div>
-          
-          <div className="grid md:grid-cols-3 gap-12">
-            {[
-              {
-                title: "Diagnose and prioritize",
-                description: "We start by assessing your current digital marketing capabilities, identifying gaps, and benchmarking against best-in-class. We prioritize initiatives based on impact and feasibility to build a clear roadmap."
-              },
-              {
-                title: "Design and build",
-                description: "We design the target operating model—processes, technology, organization, and governance. We build the capabilities needed to execute, from analytics infrastructure to creative operations."
-              },
-              {
-                title: "Execute and optimize",
-                description: "We help you launch and scale digital marketing programs, establishing measurement frameworks and optimization processes that drive continuous improvement."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <h3 className="text-xl font-bold mb-4">{item.title}</h3>
-                <p className="text-white/70 leading-relaxed">{item.description}</p>
-              </motion.div>
-            ))}
-          </div>
-          
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-center mt-12"
-          >
-            <Link href="/contact">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-4 bg-transparent">
-                Get in touch
-              </Button>
-            </Link>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* How We Can Help - H100 Capability Cards */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              How We Can Help
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6 eb-garamond">
-              Our Digital Marketing Capabilities
-            </h2>
-            <p className="text-xl text-charcoal/60 max-w-2xl">
-              Comprehensive digital marketing services from strategy to execution.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                icon: Target,
-                title: "Performance Marketing",
-                description: "Drive higher sales productivity through optimized paid media, search, and programmatic advertising. Build multichannel strategies that maximize ROI and scale efficiently."
-              },
-              {
-                icon: BarChart3,
-                title: "Marketing Analytics & Attribution",
-                description: "Integrate customer data across channels to build a complete view of the customer journey. Develop attribution models that accurately measure marketing impact."
-              },
-              {
-                icon: Megaphone,
-                title: "Brand Strategy & Positioning",
-                description: "Build distinctive brand positioning that resonates in digital channels. Create content strategies and creative frameworks that drive engagement and conversion."
-              },
-              {
-                icon: LineChart,
-                title: "Consumer Marketing Analytics",
-                description: "Leverage advanced analytics to understand customer behavior, predict intent, and personalize experiences. Build segmentation and targeting capabilities."
-              },
-              {
-                icon: Layers,
-                title: "Marketing Technology",
-                description: "Design and implement marketing technology stacks that enable automation, personalization, and measurement. Integrate tools for seamless data flow."
-              },
-              {
-                icon: Globe,
-                title: "Digital Transformation",
-                description: "Transform marketing operations for the digital age. Build agile processes, upskill teams, and establish governance for sustainable excellence."
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-              >
-                <BainHoverCard
-                  title={item.title}
-                  description={item.description}
-                  link="#"
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Client Results Section */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              Client Results
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal eb-garamond">
-              Driving digital marketing transformation
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                category: "B2B TECHNOLOGY",
-                title: "Digital marketing transformation drives 3x increase in qualified leads for SaaS company",
-                description: "A mid-market SaaS company was struggling with inefficient marketing spend and poor lead quality. We redesigned their digital marketing strategy, implemented marketing automation, and built attribution capabilities. Within 8 months, qualified leads tripled while cost per acquisition dropped 40%.",
-                image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80"
-              },
-              {
-                category: "FINANCIAL SERVICES",
-                title: "Performance marketing optimization delivers 60% improvement in customer acquisition cost",
-                description: "A regional financial services firm was overspending on digital advertising with poor targeting. We rebuilt their performance marketing program with advanced audience segmentation, creative optimization, and real-time bidding strategies. Customer acquisition costs dropped 60% while volume increased.",
-                image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80"
-              }
-            ].map((study, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group"
-              >
-                <Link href="/cases" className="block">
-                  <div className="relative overflow-hidden rounded-xl aspect-[16/10] mb-6">
-                    <img 
-                      src={study.image} 
-                      alt={study.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute top-4 left-4">
-                      <span className="px-3 py-1 bg-primary text-white text-xs font-bold uppercase tracking-wider rounded">
-                        {study.category}
-                      </span>
-                    </div>
-                  </div>
-                  <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
-                    {study.title}
-                  </h3>
-                  <p className="text-charcoal/60 text-sm leading-relaxed mb-4">
-                    {study.description}
-                  </p>
-                  <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                    Read case study <ArrowRight className="ml-2 w-4 h-4" />
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Latest Insights Section */}
-      <section className="py-24 bg-subtle">
-        <div className="container px-4 md:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-                Insights
-              </span>
-              <h2 className="text-4xl md:text-5xl font-bold text-charcoal eb-garamond">
-                Latest Insights
-              </h2>
-              <p className="text-xl text-charcoal/60 mt-4">
-                Expert perspectives on digital marketing strategy and execution.
-              </p>
-            </motion.div>
-            <Link href="/insights">
-              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/5 bg-transparent transition-all duration-300">
-                View all insights
-              </Button>
-            </Link>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                category: "Digital Marketing",
-                readTime: "6 min read",
-                title: "The Death of Third-Party Cookies: What It Means for Your Marketing",
-                description: "How to prepare your digital marketing strategy for a cookieless future and build first-party data capabilities.",
-                link: "/insights/cookieless-marketing"
-              },
-              {
-                category: "Marketing Analytics",
-                readTime: "5 min read",
-                title: "Attribution in a Multi-Touch World",
-                description: "Moving beyond last-click attribution to understand the true impact of your marketing investments.",
-                link: "/insights/multi-touch-attribution"
-              },
-              {
-                category: "Performance Marketing",
-                readTime: "7 min read",
-                title: "AI in Performance Marketing: Beyond the Hype",
-                description: "Practical applications of AI and machine learning that are actually driving results in digital advertising.",
-                link: "/insights/ai-performance-marketing"
-              }
-            ].map((insight, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <Link href={insight.link} className="group block h-full">
-                  <div className="h-full p-8 rounded-xl bg-white border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
-                    <div className="flex items-center gap-3 mb-4">
-                      <span className="text-primary text-xs font-bold uppercase tracking-wider">{insight.category}</span>
-                      <span className="text-charcoal/40">•</span>
-                      <span className="text-charcoal/60 text-sm">{insight.readTime}</span>
-                    </div>
-                    <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
-                      {insight.title}
-                    </h3>
-                    <p className="text-charcoal/60 text-sm leading-relaxed mb-6">
-                      {insight.description}
-                    </p>
-                    <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                      Read article <ArrowRight className="ml-2 w-4 h-4" />
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Related Capabilities Section */}
-      <section className="py-24 bg-white">
-        <div className="container px-4 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16"
-          >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
-              Related Capabilities
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6 eb-garamond">
-              Explore related capabilities
-            </h2>
-          </motion.div>
-          
-          <div className="grid md:grid-cols-4 gap-6">
-            {[
-              {
-                title: "Marketing Operations",
-                description: "Build a scalable marketing engine that maximizes ROI. Streamline workflows, establish data governance, and optimize your technology stack.",
-                link: "/capabilities/growth-marketing-sales/marketing-operations"
-              },
-              {
-                title: "Customer Experience",
-                description: "Design and deliver experiences that drive loyalty and advocacy. Map customer journeys and optimize every touchpoint.",
-                link: "/capabilities/growth-marketing-sales/customer-experience"
-              },
-              {
-                title: "Brand Strategy",
-                description: "Build distinctive brand positioning that resonates with your target market. Define messaging and visual identity that differentiates.",
-                link: "/capabilities/growth-marketing-sales/brand-strategy"
-              }
-            ].map((capability, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <BainHoverCard
-                  title={capability.title}
-                  description={capability.description}
-                  link={capability.link}
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section - Blue Background */}
-      <section className="py-24 bg-primary">
-        <div className="container px-4 md:px-12 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 eb-garamond">
-              Ready to transform your digital marketing?
-            </h2>
-            <p className="text-xl text-white/80 max-w-2xl mx-auto mb-10">
-              Let's discuss how data-driven digital marketing can accelerate your growth and maximize your marketing ROI.
-            </p>
-            <Link href="/contact">
-              <Button className="bg-white hover:bg-subtle text-charcoal px-10 py-6 text-lg font-semibold transition-all">
-                Start Your Digital Transformation
-              </Button>
-            </Link>
-          </motion.div>
-        </div>
-      </section>
-
-      <Footer />
-    </div>
+    <CapabilityHubTemplate
+      hubName="Digital Marketing"
+      slug="digital-marketing"
+      heroSubtitle="Performance marketing, brand strategy, and analytics attribution for measurable growth. We leverage data analytics and AI to optimize spend, personalize messaging, and drive conversion."
+      heroImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+      experienceStats={[
+        { number: "300+", label: "digital marketing transformations delivered across industries" },
+        { number: "45%", label: "average improvement in marketing ROI within 6 months" },
+        { number: "3.2x", label: "typical increase in qualified lead generation" },
+        { number: "Senior-led", label: "Every engagement led by a partner with deep practitioner experience" },
+      ]}
+      // TODO: confirm ambition copy with practice lead before publish
+      ambitions={[
+        {
+          title: "Sharpen the digital marketing thesis",
+          description:
+            "Make clear, evidence-based choices about where digital marketing can move the needle for the business — and where it cannot. Stop spreading effort across too many fronts.",
+        },
+        {
+          title: "Translate intent into a measurable system",
+          description:
+            "Move beyond a deck. Build the operating model, KPIs, and cadence that turn digital marketing ambitions into quarterly outcomes you can actually defend.",
+        },
+        {
+          title: "Reach the customer with one voice",
+          description:
+            "Align brand, product, and commercial teams around a single view of the customer so every digital marketing touchpoint reinforces the same value promise.",
+        },
+        {
+          title: "Compound the data advantage",
+          description:
+            "Instrument digital marketing so each campaign, account, and decision feeds the next one — building a proprietary asset that competitors cannot copy from a vendor.",
+        },
+        {
+          title: "Modernise the digital marketing tech and talent stack",
+          description:
+            "Invest in the platforms, partners, and people that match the next stage of the business — not the one you grew up in.",
+        },
+        {
+          title: "Prove the ROI conversation in the boardroom",
+          description:
+            "Connect digital marketing investment to revenue, margin, and customer-equity outcomes the CEO and CFO will fund in the next planning cycle.",
+        },
+      ]}
+      howWeCanHelp={[
+        {
+          title: "Performance Marketing",
+          description:
+            "Drive higher sales productivity through optimized paid media, search, and programmatic advertising. Build multichannel strategies that maximize ROI and scale efficiently.",
+          href: "/capabilities/growth-marketing-sales/digital-marketing/performance-marketing",
+        },
+        {
+          title: "Marketing Analytics & Attribution",
+          description:
+            "Integrate customer data across channels to build a complete view of the customer journey. Develop attribution models that accurately measure marketing impact.",
+          href: "/capabilities/growth-marketing-sales/digital-marketing/marketing-analytics-and-attribution",
+        },
+        {
+          title: "Brand Strategy & Positioning",
+          description:
+            "Build distinctive brand positioning that resonates in digital channels. Create content strategies and creative frameworks that drive engagement and conversion.",
+          href: "/capabilities/growth-marketing-sales/digital-marketing/brand-strategy-and-positioning",
+        },
+        {
+          title: "Consumer Marketing Analytics",
+          description:
+            "Leverage advanced analytics to understand customer behavior, predict intent, and personalize experiences. Build segmentation and targeting capabilities.",
+          href: "/capabilities/growth-marketing-sales/digital-marketing/consumer-marketing-analytics",
+        },
+        {
+          title: "Marketing Technology",
+          description:
+            "Design and implement marketing technology stacks that enable automation, personalization, and measurement. Integrate tools for seamless data flow.",
+          href: "/capabilities/growth-marketing-sales/digital-marketing/marketing-technology",
+        },
+        {
+          title: "Digital Transformation",
+          description:
+            "Transform marketing operations for the digital age. Build agile processes, upskill teams, and establish governance for sustainable excellence.",
+          href: "/capabilities/growth-marketing-sales/digital-marketing/digital-transformation",
+        },
+      ]}
+      ambitionsCTAText="Talk to us about your Digital Marketing ambition →"
+      thoughtLeadership={[]}
+      approachPillars={[
+        {
+          step: "01",
+          title: "Diagnose and prioritize",
+          body: "We start by assessing your current digital marketing capabilities, identifying gaps, and benchmarking against best-in-class. We prioritize initiatives based on impact and feasibility to build a clear roadmap.",
+        },
+        {
+          step: "02",
+          title: "Design and build",
+          body: "We design the target operating model—processes, technology, organization, and governance. We build the capabilities needed to execute, from analytics infrastructure to creative operations.",
+        },
+        {
+          step: "03",
+          title: "Execute and optimize",
+          body: "We help you launch and scale digital marketing programs, establishing measurement frameworks and optimization processes that drive continuous improvement.",
+        },
+      ]}
+      featuredCases={[
+        {
+          slug: "telehealth-platform",
+          title: "Telehealth Platform Scales To Two Million Monthly Visits",
+          industry: "Healthcare · Telehealth",
+          metric: "2M",
+          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+        },
+        {
+          slug: "bank-process-automation",
+          title: "Regional Bank Automates Loan Origination End-to-End",
+          industry: "Financial Services · Automation",
+          metric: "70%",
+          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+        },
+        {
+          slug: "fintech-payment-automation",
+          title: "Fintech Cuts Payment Reconciliation Cost By Two Thirds",
+          industry: "Financial Services · Payments",
+          metric: "67%",
+          image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&q=80",
+        },
+      ]}
+      relatedCapabilities={[
+        { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },
+        { href: "/capabilities/business-building", name: "Business Building" },
+        { href: "/capabilities/operations", name: "Operations" },
+      ]}
+      ctaLeadName="Talk to our Digital Marketing lead"
+    />
   );
 }
