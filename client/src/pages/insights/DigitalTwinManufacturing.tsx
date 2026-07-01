@@ -12,9 +12,9 @@ export default function DigitalTwinManufacturing() {
       <ReadingProgress />
       <Navigation />
       {/* Hero Section */}
-      <section className="bg-slate-900 text-white py-16 md:py-24">
+      <section className="bg-charcoal text-white py-16 md:py-24">
         <div className="container max-w-4xl">
-          <Link href="/insights" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 mb-8 transition-colors">
+          <Link href="/insights" className="inline-flex items-center gap-2 text-primary hover:text-primary mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Insights
           </Link>
@@ -77,7 +77,7 @@ export default function DigitalTwinManufacturing() {
               We worked with a Tier 1 automotive supplier struggling with a new assembly line for EV components. The line was plagued by micro-stoppages and quality rejection rates that were double the target.
             </p>
 
-            <div className="bg-slate-50 border-l-4 border-blue-500 p-6 my-8">
+            <div className="bg-off-white border-l-4 border-primary p-6 my-8">
               <h3 className="text-xl font-bold text-charcoal mb-4">The Implementation</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Data Integration:</strong> We connected PLCs, vision systems, and environmental sensors to a unified data platform.</li>
@@ -118,22 +118,22 @@ export default function DigitalTwinManufacturing() {
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 bg-slate-900 rounded-lg text-white">
+          <div className="mt-16 p-8 bg-charcoal rounded-lg text-white">
             <h3 className="text-2xl font-bold mb-4">Optimize your production</h3>
             <p className="text-muted-foreground/50 mb-6">
               Ready to build your first digital twin? NexDyne's industrial IoT experts can help you connect your assets and unlock hidden value.
             </p>
             <Link href="/contact">
-              <button className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-colors">
+              <button className="px-6 py-3 bg-primary hover:bg-primary-hover text-white rounded-lg font-semibold transition-colors">
                 Talk to an Expert
               </button>
             </Link>
           </div>
 
           {/* Author Info */}
-          <div className="mt-12 pt-8 border-t border-slate-200">
+          <div className="mt-12 pt-8 border-t border-border">
             <div className="flex items-start gap-4">
-              <div className="w-16 h-16 bg-slate-900 rounded-full flex items-center justify-center text-white font-bold text-xl">
+              <div className="w-16 h-16 bg-charcoal rounded-full flex items-center justify-center text-white font-bold text-xl">
                 N
               </div>
               <div>
@@ -156,7 +156,7 @@ export default function DigitalTwinManufacturing() {
             <div className="grid md:grid-cols-2 gap-8">
               <Link href="/insights/iot-resilient-supply-chain">
                 <div className="group cursor-pointer">
-                  <div className="aspect-video bg-slate-200 rounded-lg mb-4 overflow-hidden">
+                  <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
                       src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2670&auto=format&fit=crop" 
                       alt="IoT Supply Chain" 
@@ -173,7 +173,7 @@ export default function DigitalTwinManufacturing() {
               </Link>
               <Link href="/insights/process-mining-guide">
                 <div className="group cursor-pointer">
-                  <div className="aspect-video bg-slate-200 rounded-lg mb-4 overflow-hidden">
+                  <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
                       src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop" 
                       alt="Process Mining" 

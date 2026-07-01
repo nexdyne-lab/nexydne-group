@@ -15,7 +15,7 @@ export default function BusinessCase() {
       serviceName="Business Case Development"
       serviceSlug="business-case"
       heroSubtitle="Build compelling investment cases with realistic ROI projections, risk assessments, and resource requirements that get executive buy-in. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-ai-strategy.6d63f5ec.jpg"
+      heroImage="/blog-strategy-meeting.2402f79c.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Business Case Development engagements delivered" },
@@ -68,7 +68,7 @@ export default function BusinessCase() {
           title: "Scaling a fintech payment platform with AI-driven automation",
           industry: "Financial Services",
           metric: "5x",
-          image: "/case-fintech-payments.7ab8e23c.jpg",
+          image: "/case-fintech-app.5835303a.png",
         },
       ]}
       relatedServices={[

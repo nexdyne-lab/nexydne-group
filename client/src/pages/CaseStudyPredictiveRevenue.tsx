@@ -457,14 +457,14 @@ export default function CaseStudyPredictiveRevenue() {
                 title: "Automating variance analysis workflows",
                 industry: "Logistics",
                 description: "How we reduced close-to-report time from 15 days to 5 days",
-                image: "/case-variance-analysis.4c7d8e92.jpg",
+                image: "/case-data-dashboard.391db27a.jpg",
                 link: "/cases/variance-analysis"
               },
               {
                 title: "Designing executive dashboards for clarity",
                 industry: "Professional Services",
                 description: "How we improved board meeting efficiency by 60%",
-                image: "/case-dashboards.8b2c4d91.jpg",
+                image: "/case-data-dashboard.391db27a.jpg",
                 link: "/cases/executive-dashboards"
               }
             ].map((item, index) => (

@@ -20,7 +20,7 @@ export default function FractionalCFOCaseStudies() {
         { label: 'Investment Channels Prioritized', value: '5' }
       ],
       image: '/images/case-studies/medical-device.jpg',
-      gradient: 'from-blue-500 to-indigo-600'
+      gradient: 'from-primary to-primary'
     },
     {
       id: 'retail-market-expansion',
@@ -36,7 +36,7 @@ export default function FractionalCFOCaseStudies() {
         { label: 'Time to Achievement', value: '24 months' }
       ],
       image: '/images/case-studies/retail-expansion.jpg',
-      gradient: 'from-emerald-500 to-teal-600'
+      gradient: 'from-emerald-500 to-primary'
     },
     {
       id: 'saas-category-leadership',
@@ -62,10 +62,10 @@ export default function FractionalCFOCaseStudies() {
       
       <main>
         {/* Hero Section */}
-        <div className="bg-slate-900 text-white py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-24">
+        <div className="bg-charcoal text-white py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-24">
           <div className="container">
             <div className="max-w-4xl">
-              <div className="text-sm font-semibold text-blue-400 mb-4 uppercase tracking-wider">
+              <div className="text-sm font-semibold text-primary mb-4 uppercase tracking-wider">
                 Case Studies
               </div>
               <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3">
@@ -90,7 +90,7 @@ export default function FractionalCFOCaseStudies() {
                       <div className="grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
                         {/* Image - Alternating sides */}
                         <div className={`${index % 2 === 1 ? 'md:order-2' : ''}`}>
-                          <div className="aspect-[4/3] bg-slate-100 overflow-hidden rounded-xl sm:rounded-2xl">
+                          <div className="aspect-[4/3] bg-subtle overflow-hidden rounded-xl sm:rounded-2xl">
                             <div className={`w-full h-full bg-gradient-to-br ${study.gradient} opacity-20`} />
                           </div>
                         </div>
@@ -153,7 +153,7 @@ export default function FractionalCFOCaseStudies() {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-slate-50 py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-24">
+        <div className="bg-off-white py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-24">
           <div className="container">
             <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-6 sm:p-8 md:p-12 text-center shadow-lg">
               <h2 className="text-3xl font-bold text-charcoal mb-6">
@@ -163,7 +163,7 @@ export default function FractionalCFOCaseStudies() {
                 Don't let financial opacity hold back your growth. Our Fractional CFO services provide the leadership you need, when you need it.
               </p>
               <Link href="/contact">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg rounded-full">
+                <Button className="bg-primary hover:bg-primary-hover text-white px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg rounded-full">
                   Schedule a Consultation
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
                 </Button>

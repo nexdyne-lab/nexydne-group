@@ -41,7 +41,7 @@ export default function CyberResilience() {
       </section>
 
       {/* Key Metrics */}
-      <section className="py-16 bg-slate-50 border-b border-slate-200">
+      <section className="py-16 bg-off-white border-b border-border">
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
@@ -98,7 +98,7 @@ export default function CyberResilience() {
       </section>
 
       {/* Our Approach Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-off-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-emerald-600 text-sm font-medium tracking-widest uppercase mb-4">
@@ -259,7 +259,7 @@ export default function CyberResilience() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-off-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-6">
@@ -273,7 +273,7 @@ export default function CyberResilience() {
                 Schedule a Security Assessment
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
-              <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center justify-center px-8 py-4 border border-slate-300 text-charcoal/80 font-semibold rounded-full hover:bg-slate-100 transition-colors">
+              <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center justify-center px-8 py-4 border border-border text-charcoal/80 font-semibold rounded-full hover:bg-subtle transition-colors">
                 Explore AI & Technology
               </Link>
             </div>

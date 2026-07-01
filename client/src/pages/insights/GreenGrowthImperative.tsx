@@ -71,7 +71,7 @@ export default function GreenGrowthImperative() {
       </section>
 
       {/* What We Do - Floating Cards / Split Layout */}
-      <section className="py-24 bg-slate-50 overflow-hidden">
+      <section className="py-24 bg-off-white overflow-hidden">
         <div className="container mb-20">
           <h2 className="text-4xl md:text-6xl text-center text-charcoal mb-4">What we do</h2>
           <p className="text-xl text-muted-foreground text-center max-w-2xl mx-auto font-light">
@@ -219,7 +219,7 @@ export default function GreenGrowthImperative() {
       </section>
 
       {/* Impact Section - Dark Mode with Metrics */}
-      <section className="py-24 bg-slate-900 text-white relative overflow-hidden">
+      <section className="py-24 bg-charcoal text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
            <img 
             src="/images/green-impact-bg.jpg" 
@@ -275,7 +275,7 @@ export default function GreenGrowthImperative() {
       </section>
 
       {/* Featured Insights - The Library */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-off-white">
         <div className="container">
           <div className="flex justify-between items-end mb-12">
             <div>

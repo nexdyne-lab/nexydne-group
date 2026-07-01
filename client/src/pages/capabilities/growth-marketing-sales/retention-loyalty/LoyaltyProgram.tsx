@@ -84,12 +84,12 @@ export default function LoyaltyProgram() {
                 </ul>
               </div>
             </div>
-            <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-slate-100">
+            <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-border">
               <h3 className="text-xl font-bold text-charcoal mb-6">
                 The Loyalty Loop
               </h3>
               <div className="space-y-6">
-                <div className="flex items-center gap-4 p-4 bg-white rounded-lg sm:rounded-xl border border-slate-100 shadow-sm">
+                <div className="flex items-center gap-4 p-4 bg-white rounded-lg sm:rounded-xl border border-border shadow-sm">
                   <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold">1</div>
                   <div>
                     <h4 className="font-bold text-charcoal">Trigger</h4>
@@ -99,7 +99,7 @@ export default function LoyaltyProgram() {
                 <div className="flex justify-center">
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground/50 rotate-90" />
                 </div>
-                <div className="flex items-center gap-4 p-4 bg-white rounded-lg sm:rounded-xl border border-slate-100 shadow-sm">
+                <div className="flex items-center gap-4 p-4 bg-white rounded-lg sm:rounded-xl border border-border shadow-sm">
                   <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold">2</div>
                   <div>
                     <h4 className="font-bold text-charcoal">Reward</h4>
@@ -109,7 +109,7 @@ export default function LoyaltyProgram() {
                 <div className="flex justify-center">
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground/50 rotate-90" />
                 </div>
-                <div className="flex items-center gap-4 p-4 bg-white rounded-lg sm:rounded-xl border border-slate-100 shadow-sm">
+                <div className="flex items-center gap-4 p-4 bg-white rounded-lg sm:rounded-xl border border-border shadow-sm">
                   <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold">3</div>
                   <div>
                     <h4 className="font-bold text-charcoal">Investment</h4>
@@ -119,7 +119,7 @@ export default function LoyaltyProgram() {
                 <div className="flex justify-center">
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground/50 rotate-90" />
                 </div>
-                <div className="flex items-center gap-4 p-4 bg-white rounded-lg sm:rounded-xl border border-slate-100 shadow-sm">
+                <div className="flex items-center gap-4 p-4 bg-white rounded-lg sm:rounded-xl border border-border shadow-sm">
                   <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold">4</div>
                   <div>
                     <h4 className="font-bold text-charcoal">Advocacy</h4>

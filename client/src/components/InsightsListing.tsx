@@ -33,44 +33,44 @@ export default function InsightsListing({
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-charcoal text-white">
+      <section className="pt-32 pb-16 md:pb-20 bg-charcoal text-white">
         <div className="container max-w-5xl mx-auto px-4">
           <Link href={parentHref}>
-            <span className="text-sm font-medium text-secondary uppercase tracking-wider hover:underline">
+            <span className="nx-eyebrow text-amber hover:text-white transition-colors">
               {parentTitle}
             </span>
           </Link>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 mb-6 leading-tight">
+          <h1 className="nx-h1 mt-4 mb-6">
             {title}
           </h1>
-          <p className="text-xl text-muted-foreground/50 leading-relaxed max-w-3xl">
+          <p className="nx-lead text-white/70 max-w-3xl">
             {subtitle}
           </p>
         </div>
       </section>
 
       {/* Insights Grid */}
-      <section className="py-16 bg-subtle">
+      <section className="nx-section bg-subtle">
         <div className="container max-w-6xl mx-auto px-4">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-7">
             {insights.map((insight, index) => (
               <Link key={index} href={insight.href}>
-                <article className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow cursor-pointer h-full flex flex-col">
+                <article className="group bg-card border border-border overflow-hidden cursor-pointer h-full flex flex-col transition duration-300 hover:border-primary/40 hover:shadow-[0_22px_44px_-24px_rgba(224,76,44,0.4)] hover:-translate-y-1">
                   <div className="p-6 flex-1 flex flex-col">
                     <div className="flex items-center gap-2 mb-3">
-                      <span className="text-xs font-medium text-primary uppercase tracking-wider">
+                      <span className="nx-eyebrow text-primary">
                         {insight.category}
                       </span>
                     </div>
-                    <h2 className="text-xl font-bold text-charcoal mb-3 hover:text-primary transition-colors">
+                    <h2 className="nx-h3 text-charcoal mb-3 group-hover:text-primary transition-colors">
                       {insight.title}
                     </h2>
-                    <p className="text-muted-foreground mb-4 flex-1">
+                    <p className="text-charcoal/75 leading-[1.55] mb-5 flex-1">
                       {insight.excerpt}
                     </p>
-                    <div className="flex items-center gap-3 text-sm text-muted-foreground">
+                    <div className="flex items-center gap-3 text-sm text-muted-foreground pt-4 border-t border-border">
                       <span>{insight.date}</span>
-                      <span className="w-1 h-1 bg-gray-400 rounded-full" />
+                      <span className="w-1 h-1 bg-charcoal/25 rounded-full" />
                       <span>{insight.readTime}</span>
                     </div>
                   </div>
@@ -82,19 +82,19 @@ export default function InsightsListing({
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="nx-section bg-white">
         <div className="container max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-charcoal mb-4">
+          <h2 className="nx-h2 text-charcoal mb-4">
             Want to Discuss These Topics?
           </h2>
-          <p className="text-xl text-muted-foreground mb-8">
+          <p className="nx-lead text-muted-foreground mb-8 mx-auto">
             Our experts are ready to help you apply these insights to your
             business.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-4 bg-charcoal text-white font-bold rounded-full hover:bg-gray-800 transition-colors">
+            <span className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground text-[13px] font-semibold uppercase tracking-[0.1em] hover:bg-primary-hover transition-colors cursor-pointer">
               Contact Our Team
-            </button>
+            </span>
           </Link>
         </div>
       </section>

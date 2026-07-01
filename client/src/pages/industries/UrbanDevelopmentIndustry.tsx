@@ -20,41 +20,41 @@ export default function UrbanDevelopmentIndustry() {
       challenges={[
         {
           title: "Smart-city platforms vs. point solutions",
-          body: "Most cities have a portfolio of well-intended pilots that never connect. A platform approach to mobility, environmental, and citizen-service data is how leaders escape pilot-and-vendor lock-in."
+          body: "Most cities have well-intended pilots that never connect — a platform approach to city data escapes pilot-and-vendor lock-in."
         },
         {
           title: "Mobility and the curb",
-          body: "Ride-share, delivery, micro-mobility, and EVs have made the curb the most contested asset in the city. Data-driven curb management, dynamic pricing, and modern permit systems are now decisive."
+          body: "Ride-share, delivery, and EVs have made the curb the city's most contested asset; data-driven curb management is now decisive."
         },
         {
           title: "Sustainability and resilience",
-          body: "Climate adaptation and net-zero commitments require operating data, not just plans. Auditable emissions, asset-resilience analytics, and credible scenario planning are how cities close the say-do gap."
+          body: "Climate and net-zero commitments require operating data, not plans — auditable emissions and resilience analytics close the say-do gap."
         },
         {
           title: "Affordability and citizen trust",
-          body: "Cost of living, housing supply, and trust in institutions are eroding in many urban markets at the same time. Transparent service delivery and modern citizen-engagement tools are how leaders rebuild the social contract."
+          body: "Cost of living, housing supply, and eroding trust demand transparent service delivery and modern citizen engagement."
         }
       ]}
       capabilities={[
         {
           name: "Strategy & Growth",
           href: "/capabilities/strategy-growth",
-          blurb: "Develop the long-horizon urban strategies — economic, mobility, housing — that align infrastructure investment with community outcomes."
+          blurb: "The long-horizon urban strategies — economic, mobility, housing — that align investment with community outcomes."
         },
         {
           name: "Data Transformation",
           href: "/capabilities/data-transformation",
-          blurb: "Unify city, developer, and infrastructure data into a governed platform that powers modern AI use cases across the urban operating model."
+          blurb: "Unify city, developer, and infrastructure data into a governed platform for modern AI across the urban model."
         },
         {
           name: "Operations Excellence",
           href: "/capabilities/operations-excellence",
-          blurb: "Modernize permitting, asset management, and constituent services with intelligent automation tuned to the realities of public-sector procurement."
+          blurb: "Modernize permitting, asset management, and constituent services with automation tuned to public-sector procurement."
         },
         {
           name: "Risk & Resilience",
           href: "/capabilities/risk-resilience",
-          blurb: "Stand up the cyber, climate-resilience, and operational-continuity programs cities and infrastructure operators increasingly need."
+          blurb: "The cyber, climate-resilience, and operational-continuity programs cities and infrastructure operators need."
         }
       ]}
       experienceStats={[

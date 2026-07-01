@@ -1,251 +1,201 @@
+import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { SEO } from "@/components/SEO";
+
+const fadeUp = {
+  initial: { opacity: 0, y: 24 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, amount: 0.2 },
+  transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
+};
 
 export default function PurposeMissionValues() {
+  const missionPillars = [
+    { title: "Predictive Insights", body: "Intelligence that surfaces the hidden patterns inside business operations." },
+    { title: "Adaptive Systems", body: "Solutions that evolve with our clients' growth trajectories, not against them." },
+    { title: "Knowledge Transfer", body: "Capabilities that outlast the engagement and compound in our clients' hands." },
+    { title: "Excellence Culture", body: "An environment where curiosity, rigour, and collaboration drive the work." },
+  ];
+
+  const values = [
+    { no: "01", title: "Intelligence with Purpose", lead: "We don't pursue technology for its own sake. Every model we build and every system we deploy must create measurable business value—we ask not just \"Can we?\" but \"Should we?\"", sub: "AI should augment human judgement, never replace it." },
+    { no: "02", title: "Clarity Through Complexity", lead: "The most valuable insights hide inside the most tangled data. We bring structure to chaos and translate technical possibility into business language.", sub: "Clients don't need the mathematics—they need to know what to decide on Monday morning." },
+    { no: "03", title: "Partnership Over Transactions", lead: "We measure success by clients transformed, not projects closed. We invest deeply in each organisation's context, constraints, and ambitions.", sub: "Long after an engagement ends, the capabilities we build keep compounding value." },
+    { no: "04", title: "Relentless Curiosity", lead: "The frontier of strategy and AI moves daily. We stay ahead through disciplined study and rigorous experimentation—not trend-chasing.", sub: "We learn from every engagement and approach each new challenge with a beginner's mind." },
+    { no: "05", title: "Integrity in Every Interaction", lead: "We tell clients what they need to hear, acknowledge the limits of our expertise, and protect confidentiality as a sacred trust.", sub: "Our reputation is built one honest conversation at a time." },
+    { no: "06", title: "Excellence Through Diversity", lead: "The best solutions emerge when diverse perspectives collide. We seek different backgrounds and make space for productive, idea-sharpening friction.", sub: "Diversity isn't only ethical—it's how we see blind spots others miss." },
+  ];
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-subtle text-charcoal">
+      <SEO
+        title="Purpose, Mission & Values | NexDyne Consulting Group"
+        description="The purpose, mission, and values that guide NexDyne—and the doctrine of Human Intelligence Governance (HIG™) that governs how we deploy AI and agentic systems."
+        canonical="/about/values"
+      />
       <Navigation />
-      
-      {/* Hero Section - Clean white background like Bain */}
-      <section className="pt-32 pb-16 bg-white border-b border-slate-200">
-        <div className="container">
+
+      {/* Hero — full-width editorial */}
+      <section className="bg-subtle">
+        <div className="container px-4 sm:px-6 md:px-12 pt-24 md:pt-28 lg:pt-32 pb-14 md:pb-16">
+          <motion.div {...fadeUp} className="max-w-4xl">
+            <span className="nx-eyebrow text-charcoal/55">Purpose, Mission &amp; Values</span>
+            <h1 className="nx-h1 text-charcoal mt-5 mb-6">The principles that govern our work.</h1>
+            <p className="nx-lead text-muted-foreground max-w-2xl">
+              What drives us, the mission we hold ourselves to, and the values that shape every
+              engagement—governed by a single discipline: we design the human system before we
+              deploy the machine.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Purpose */}
+      <section className="nx-section bg-white border-t border-border">
+        <div className="container px-4 sm:px-6 md:px-12">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+            <motion.div {...fadeUp} className="lg:col-span-4">
+              <span className="nx-eyebrow text-charcoal/55">Our purpose</span>
+              <h2 className="nx-h2 text-charcoal mt-4 lg:sticky lg:top-28">Complexity into clarity.</h2>
+            </motion.div>
+            <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.15 }} className="lg:col-span-8">
+              <p className="text-[1.5rem] md:text-[1.9rem] leading-[1.35] tracking-[-0.01em] text-charcoal font-medium mb-8">
+                To transform complexity into clarity—enabling mid-market leaders and the enterprises
+                they partner with to make decisions with confidence.
+              </p>
+              <p className="text-[15px] text-muted-foreground leading-relaxed mb-5 max-w-2xl">
+                In an era where data overwhelms and technology accelerates faster than strategy can
+                keep pace, we exist to bridge the gap between what businesses know and what they need
+                to do. Every ambitious organisation deserves the caliber of strategic intelligence
+                once reserved for the Fortune 500.
+              </p>
+              <p className="text-[15px] text-muted-foreground leading-relaxed max-w-2xl">
+                Our purpose is to democratise that capability—bringing the rigour of top-tier advisory,
+                and the discipline to govern it, to the organisations building the future of their
+                industries.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission */}
+      <section className="nx-section bg-subtle border-t border-border">
+        <div className="container px-4 sm:px-6 md:px-12">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+            <motion.div {...fadeUp} className="lg:col-span-4">
+              <span className="nx-eyebrow text-charcoal/55">Our mission</span>
+              <h2 className="nx-h2 text-charcoal mt-4 lg:sticky lg:top-28">Turn challenge into advantage.</h2>
+            </motion.div>
+            <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.15 }} className="lg:col-span-8">
+              <p className="nx-lead text-charcoal mb-10">
+                To empower growth-stage and mid-market companies with AI and agentic systems that turn
+                operational challenges into competitive advantage—while building a firm where
+                exceptional talent thrives through continuous learning and meaningful impact.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-px bg-border border border-border">
+                {missionPillars.map((p, i) => (
+                  <div key={i} className="group bg-white p-6 lg:p-7 hover:bg-subtle transition-colors">
+                    <div className="h-[3px] w-8 bg-primary mb-4 transition-all duration-300 group-hover:w-12" />
+                    <h3 className="nx-h3 text-charcoal mb-2">{p.title}</h3>
+                    <p className="text-[14px] text-muted-foreground leading-relaxed">{p.body}</p>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* HIG doctrine — the differentiator (purple framework accent) */}
+      <section className="nx-section bg-charcoal text-white">
+        <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl">
-            <h1 className="text-5xl md:text-6xl font-normal text-charcoal mb-3 leading-tight eb-garamond">
-              Purpose, Mission & Values
-            </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              The guiding principles that inform our strategy and how we serve businesses globally.
+            <motion.div {...fadeUp}>
+              <span className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/50 mb-6">
+                <span className="h-2 w-2" style={{ background: "var(--color-purple)" }} />
+                Our doctrine — Human Intelligence Governance
+              </span>
+              <h2 className="nx-h2 text-white mb-6">
+                We implement technology only after we design the human system it operates within.
+              </h2>
+              <p className="nx-lead text-white/70 mb-6 max-w-3xl">
+                HIG™ is the framework that governs everything we do. Before a model ships or an agent
+                is switched on, we define the people, decisions, and accountability it serves—then we
+                deploy, govern, and scale inside that structure.
+              </p>
+              <p className="text-[15px] text-white/55 leading-relaxed max-w-3xl">
+                It is why our transformations stay controlled, auditable, and durable as they grow—and
+                why clients trust us to put AI and agentic systems to work across the enterprise, not
+                just in a proof of concept.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section className="nx-section bg-white border-t border-border">
+        <div className="container px-4 sm:px-6 md:px-12">
+          <motion.div {...fadeUp} className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-start mb-14">
+            <div className="lg:col-span-4">
+              <span className="nx-eyebrow text-charcoal/55">Our values</span>
+              <h2 className="nx-h2 text-charcoal mt-4">How we show up</h2>
+            </div>
+            <div className="lg:col-span-8">
+              <p className="nx-lead text-muted-foreground">
+                Six principles guide every decision we make and every partnership we build. They define
+                who we are and how we work.
+              </p>
+            </div>
+          </motion.div>
+
+          <div className="border-t border-border">
+            {values.map((v, i) => (
+              <motion.div
+                key={i}
+                {...fadeUp}
+                transition={{ ...fadeUp.transition, delay: (i % 2) * 0.08 }}
+                className="group grid lg:grid-cols-12 gap-6 lg:gap-16 py-10 lg:py-12 border-b border-border"
+              >
+                <div className="lg:col-span-4">
+                  <span className="text-[13px] font-semibold text-primary tracking-[0.1em]">{v.no}</span>
+                  <h3 className="text-xl md:text-2xl font-medium text-charcoal mt-2 group-hover:text-primary transition-colors">{v.title}</h3>
+                </div>
+                <div className="lg:col-span-8">
+                  <p className="text-[15px] text-charcoal/80 leading-relaxed mb-4">{v.lead}</p>
+                  <p className="text-[15px] text-muted-foreground leading-relaxed">{v.sub}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="nx-section bg-subtle border-t border-border">
+        <div className="container px-4 sm:px-6 md:px-12">
+          <motion.div {...fadeUp} className="max-w-3xl">
+            <h2 className="nx-h2 text-charcoal mb-5">Work with a team that shares your standards.</h2>
+            <p className="nx-lead text-muted-foreground mb-10 max-w-2xl">
+              Let's discuss how we can transform your organisation with intelligence, discipline, and
+              integrity.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Purpose Section - Two column layout */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-12 gap-12 items-start">
-              <div className="lg:col-span-4">
-                <h2 className="text-3xl md:text-4xl font-normal text-charcoal sticky top-32">
-                  Our Purpose
-                </h2>
-              </div>
-              <div className="lg:col-span-8">
-                <p className="text-2xl font-medium text-charcoal mb-8 leading-relaxed">
-                  To transform complexity into clarity, enabling mid-market leaders to make decisions with confidence.
-                </p>
-                <div className="prose prose-lg prose-slate max-w-none">
-                  <p className="text-muted-foreground leading-relaxed">
-                    In an era where data overwhelms and technology accelerates faster than strategy can keep pace, we exist to bridge the gap between what businesses know and what they need to do. We believe that every mid-market organization deserves access to the same caliber of strategic intelligence that has historically been reserved for the Fortune 500.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Our purpose drives us to democratize access to world-class consulting capabilities, bringing the rigor and insight of top-tier advisory to organizations that are building the future of their industries.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="container">
-        <div className="max-w-6xl mx-auto">
-          <hr className="border-slate-200" />
-        </div>
-      </div>
-
-      {/* Mission Section - Two column layout */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-12 gap-12 items-start">
-              <div className="lg:col-span-4">
-                <h2 className="text-3xl md:text-4xl font-normal text-charcoal sticky top-32">
-                  Our Mission
-                </h2>
-              </div>
-              <div className="lg:col-span-8">
-                <p className="text-xl font-medium text-charcoal mb-8 leading-relaxed">
-                  To empower growth-stage and mid-market companies with AI-driven intelligence that turns operational challenges into competitive advantages, while building a firm where exceptional talent thrives through continuous learning and meaningful impact.
-                </p>
-                
-                {/* Mission Pillars */}
-                <div className="grid sm:grid-cols-2 gap-6 mt-12">
-                  <div className="border-l-2 border-primary pl-6">
-                    <h3 className="font-semibold text-charcoal mb-2">Predictive Insights</h3>
-                    <p className="text-muted-foreground">Delivering intelligence that illuminates hidden patterns in business operations</p>
-                  </div>
-                  <div className="border-l-2 border-primary pl-6">
-                    <h3 className="font-semibold text-charcoal mb-2">Adaptive Systems</h3>
-                    <p className="text-muted-foreground">Building solutions that evolve with our clients' growth trajectories</p>
-                  </div>
-                  <div className="border-l-2 border-primary pl-6">
-                    <h3 className="font-semibold text-charcoal mb-2">Knowledge Transfer</h3>
-                    <p className="text-muted-foreground">Transferring capabilities that outlast our engagements</p>
-                  </div>
-                  <div className="border-l-2 border-primary pl-6">
-                    <h3 className="font-semibold text-charcoal mb-2">Excellence Culture</h3>
-                    <p className="text-muted-foreground">Cultivating an environment where curiosity, rigor, and collaboration drive success</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="container">
-        <div className="max-w-6xl mx-auto">
-          <hr className="border-slate-200" />
-        </div>
-      </div>
-
-      {/* Values Section */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-12 gap-12 items-start mb-16">
-              <div className="lg:col-span-4">
-                <h2 className="text-3xl md:text-4xl font-normal text-charcoal sticky top-32">
-                  Our Values
-                </h2>
-              </div>
-              <div className="lg:col-span-8">
-                <p className="text-xl text-muted-foreground leading-relaxed">
-                  These principles guide every decision we make and every partnership we build. They define who we are and how we work.
-                </p>
-              </div>
-            </div>
-
-            {/* Values Grid */}
-            <div className="space-y-0">
-              {/* Value 1 */}
-              <div className="grid lg:grid-cols-12 gap-8 py-12 border-t border-slate-200">
-                <div className="lg:col-span-4">
-                  <span className="text-sm font-semibold text-primary uppercase tracking-wider">01</span>
-                  <h3 className="text-2xl font-semibold text-charcoal mt-2">Intelligence with Purpose</h3>
-                </div>
-                <div className="lg:col-span-8">
-                  <p className="text-charcoal/80 leading-relaxed mb-4">
-                    We don't pursue technology for its own sake. Every model we build, every system we deploy, and every insight we deliver must create measurable business value. We challenge ourselves to ask not just "Can we?" but "Should we?" and "What impact will this have?"
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Our work is grounded in the belief that artificial intelligence should augment human judgment, not replace it.
-                  </p>
-                </div>
-              </div>
-
-              {/* Value 2 */}
-              <div className="grid lg:grid-cols-12 gap-8 py-12 border-t border-slate-200">
-                <div className="lg:col-span-4">
-                  <span className="text-sm font-semibold text-primary uppercase tracking-wider">02</span>
-                  <h3 className="text-2xl font-semibold text-charcoal mt-2">Clarity Through Complexity</h3>
-                </div>
-                <div className="lg:col-span-8">
-                  <p className="text-charcoal/80 leading-relaxed mb-4">
-                    The world's most valuable insights often hide within the most tangled data. We embrace complexity not as an obstacle but as an opportunity. We bring structure to chaos, translate technical possibilities into business language, and make the sophisticated accessible.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Our clients don't need to understand the mathematics behind our models—they need to understand what decisions to make on Monday morning.
-                  </p>
-                </div>
-              </div>
-
-              {/* Value 3 */}
-              <div className="grid lg:grid-cols-12 gap-8 py-12 border-t border-slate-200">
-                <div className="lg:col-span-4">
-                  <span className="text-sm font-semibold text-primary uppercase tracking-wider">03</span>
-                  <h3 className="text-2xl font-semibold text-charcoal mt-2">Partnership Over Transactions</h3>
-                </div>
-                <div className="lg:col-span-8">
-                  <p className="text-charcoal/80 leading-relaxed mb-4">
-                    We measure success not by projects completed but by clients transformed. We invest deeply in understanding each organization's unique context, constraints, and aspirations. We challenge assumptions respectfully, share knowledge generously, and celebrate our clients' victories as our own.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Long after our engagement ends, the capabilities we've built and the mindsets we've shifted continue to compound value.
-                  </p>
-                </div>
-              </div>
-
-              {/* Value 4 */}
-              <div className="grid lg:grid-cols-12 gap-8 py-12 border-t border-slate-200">
-                <div className="lg:col-span-4">
-                  <span className="text-sm font-semibold text-primary uppercase tracking-wider">04</span>
-                  <h3 className="text-2xl font-semibold text-charcoal mt-2">Relentless Curiosity</h3>
-                </div>
-                <div className="lg:col-span-8">
-                  <p className="text-charcoal/80 leading-relaxed mb-4">
-                    The intersection of business strategy and artificial intelligence evolves daily. We commit to staying at the frontier—not through superficial trend-chasing, but through disciplined study, rigorous experimentation, and honest reflection on what works and what doesn't.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    We learn from every engagement, share insights across our team, and approach each new challenge with beginner's mind.
-                  </p>
-                </div>
-              </div>
-
-              {/* Value 5 */}
-              <div className="grid lg:grid-cols-12 gap-8 py-12 border-t border-slate-200">
-                <div className="lg:col-span-4">
-                  <span className="text-sm font-semibold text-primary uppercase tracking-wider">05</span>
-                  <h3 className="text-2xl font-semibold text-charcoal mt-2">Integrity in Every Interaction</h3>
-                </div>
-                <div className="lg:col-span-8">
-                  <p className="text-charcoal/80 leading-relaxed mb-4">
-                    We tell clients what they need to hear, not what they want to hear. We acknowledge the limits of our expertise and the boundaries of what technology can solve. We protect client confidentiality as sacred trust.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    We take accountability when our recommendations fall short and work tirelessly to make things right. Our reputation is built one honest conversation at a time.
-                  </p>
-                </div>
-              </div>
-
-              {/* Value 6 */}
-              <div className="grid lg:grid-cols-12 gap-8 py-12 border-t border-slate-200">
-                <div className="lg:col-span-4">
-                  <span className="text-sm font-semibold text-primary uppercase tracking-wider">06</span>
-                  <h3 className="text-2xl font-semibold text-charcoal mt-2">Excellence Through Diversity</h3>
-                </div>
-                <div className="lg:col-span-8">
-                  <p className="text-charcoal/80 leading-relaxed mb-4">
-                    The most innovative solutions emerge when diverse perspectives collide. We actively seek team members and partners who bring different backgrounds, experiences, and ways of thinking. We create space for dissent, debate, and the productive friction that sharpens ideas.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Our commitment to diversity isn't just ethical—it's strategic. Different viewpoints help us see blind spots, challenge assumptions, and build solutions that work for a broader range of contexts.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-slate-900 text-white">
-        <div className="container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-normal mb-6">
-              Ready to work with a team that shares your values?
-            </h2>
-            <p className="text-xl text-muted-foreground/50 mb-10 max-w-2xl mx-auto">
-              Let's discuss how we can help transform your organization with intelligence and integrity.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-5">
               <Link href="/contact">
-                <button className="px-8 py-4 bg-primary text-white font-semibold rounded hover:bg-primary transition-colors inline-flex items-center gap-2">
-                  Start a Conversation <ArrowRight className="w-5 h-5" />
-                </button>
+                <span className="inline-block px-8 py-4 bg-primary text-white text-[13px] font-semibold uppercase tracking-[0.12em] hover:bg-primary-hover transition-colors cursor-pointer">
+                  Start a conversation
+                </span>
               </Link>
               <Link href="/about">
-                <button className="px-8 py-4 border border-white/30 text-white font-semibold rounded hover:bg-white/10 transition-colors">
-                  Learn More About Us
-                </button>
+                <span className="inline-block px-8 py-4 border border-border text-charcoal text-[13px] font-semibold uppercase tracking-[0.12em] hover:border-charcoal hover:bg-white transition-colors cursor-pointer">
+                  More about us
+                </span>
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 

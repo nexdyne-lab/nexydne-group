@@ -12,7 +12,7 @@ export default function DevOpsCICD() {
       serviceName="DevOps & CI/CD"
       serviceSlug="devops-cicd"
       heroSubtitle="Engineering productivity is not a culture conversation. We measure where the pipeline is actually slow, rebuild the architecture, engineer the test framework, and stand up the deployment automation that lifts DORA metrics quarter-over-quarter."
-      heroImage="/enterprise-transformation-hero.jpg"
+      heroImage="/solution-enterprise-transformation.0a0f2624.webp"
       experienceStats={[
         { number: "10-50x", label: "Lift in deployment frequency for organizations moving into the elite DORA quartile" },
         { number: "Lower CFR", label: "Change-failure rate drops as pipelines catch regressions early" },

@@ -150,6 +150,87 @@
   letter-spacing: -0.015em;
 }
 
+/* ============================================================================
+   NexDyne standardized section type scale — SINGLE SOURCE OF TRUTH.
+   Apply these classes section-by-section across every page instead of
+   hand-tuning font-size utilities. Tuned so a 13" MacBook (~1280px CSS width)
+   lands in the `lg` band at a comfortable size; the `xl`/`2xl` steps restore
+   larger sizes for wide external monitors. Color stays inline per section
+   (charcoal on light, white on dark) — these classes only own size, weight,
+   line-height, and tracking.
+
+     .nx-eyebrow   — small uppercase kicker above a heading
+     .nx-h2        — primary section heading (the big statement line)
+     .nx-h2-split  — heading inside a split/two-column panel (one notch smaller)
+     .nx-h3        — card / sub-section heading
+     .nx-lead      — intro / lead paragraph under a heading
+   ========================================================================== */
+@layer components {
+  .nx-eyebrow {
+    font-size: 0.6875rem;              /* 11px */
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .nx-h1 {
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+    font-size: 2.25rem;                /* 36 · mobile */
+  }
+  @media (min-width: 768px)  { .nx-h1 { font-size: 2.75rem; } }  /* 44 · md */
+  @media (min-width: 1024px) { .nx-h1 { font-size: 3.25rem; } }  /* 52 · lg (13" MacBook) */
+  @media (min-width: 1280px) { .nx-h1 { font-size: 3.75rem; } }  /* 60 · xl+ */
+
+  .nx-h2 {
+    font-weight: 700;
+    line-height: 1.06;
+    letter-spacing: -0.03em;
+    font-size: 2rem;                   /* 32 · mobile */
+  }
+  @media (min-width: 768px)  { .nx-h2 { font-size: 2.375rem; } }  /* 38 · md  */
+  @media (min-width: 1024px) { .nx-h2 { font-size: 2.75rem;  } }  /* 44 · lg (13" MacBook) */
+  @media (min-width: 1280px) { .nx-h2 { font-size: 3.25rem;  } }  /* 52 · xl+ wide monitors */
+
+  .nx-h2-split {
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    font-size: 1.75rem;                /* 28 · mobile */
+  }
+  @media (min-width: 768px)  { .nx-h2-split { font-size: 2.125rem; } }  /* 34 · md */
+  @media (min-width: 1024px) { .nx-h2-split { font-size: 2.25rem;  } }  /* 36 · lg (13" MacBook) */
+  @media (min-width: 1280px) { .nx-h2-split { font-size: 2.5rem;   } }  /* 40 · xl+ */
+
+  .nx-h3 {
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    font-size: 1.125rem;               /* 18 · mobile */
+  }
+  @media (min-width: 1024px) { .nx-h3 { font-size: 1.25rem; } }  /* 20 · lg */
+
+  .nx-lead {
+    font-size: 1rem;                   /* 16 · mobile */
+    line-height: 1.7;
+    letter-spacing: 0;
+  }
+  @media (min-width: 768px) { .nx-lead { font-size: 1.125rem; } }  /* 18 · md+ */
+
+  /* Standard vertical rhythm for full-width stacked sections. Replaces the old
+     `py-20 lg:py-28` (which doubled to ~224px of dead space at every seam).
+     Two stacked .nx-section blocks now meet at ~144px — clear separation,
+     no dead zone. Use on symmetric content sections across all pages. */
+  .nx-section {
+    padding-top: 3rem;                 /* 48 · mobile */
+    padding-bottom: 3rem;
+  }
+  @media (min-width: 768px)  { .nx-section { padding-top: 4rem;   padding-bottom: 4rem;   } }  /* 64 · md */
+  @media (min-width: 1024px) { .nx-section { padding-top: 4.5rem; padding-bottom: 4.5rem; } }  /* 72 · lg+ */
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -464,4 +545,58 @@
 .mesh-blob { will-change: transform; }
 @media (prefers-reduced-motion: reduce) {
   .mesh-blob { animation: none !important; }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Insight / long-form article typography — reliable spacing overrides.
+   Plain (non-layered) CSS so it reliably wins over the @tailwindcss/typography
+   `prose` defaults. Applied via the `.nx-article` class in InsightArticle.tsx.
+   ───────────────────────────────────────────────────────────────────────── */
+.nx-article p {
+  font-size: 1.0625rem;      /* 17px */
+  line-height: 1.8;
+  margin-top: 0;
+  margin-bottom: 2rem;        /* 32px — clear separation between paragraphs */
+  color: rgba(36, 36, 36, 0.82);
+}
+.nx-article h2 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin-top: 4rem;           /* generous room before a new section */
+  margin-bottom: 1.5rem;
+}
+.nx-article h3 {
+  font-size: 1.3125rem;
+  line-height: 1.3;
+  margin-top: 2.75rem;
+  margin-bottom: 1rem;
+}
+.nx-article ul,
+.nx-article ol {
+  margin: 2rem 0;
+  padding-left: 1.35rem;
+}
+.nx-article li {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  margin: 0.6rem 0;
+  padding-left: 0.35rem;
+  color: rgba(36, 36, 36, 0.82);
+}
+.nx-article blockquote {
+  margin: 2.75rem 0;
+  padding: 1.35rem 1.75rem;
+  border-left: 3px solid rgba(224, 76, 44, 0.7);
+  background: var(--color-off-white);
+  color: var(--color-charcoal);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+.nx-article blockquote p { margin: 0; color: inherit; font-size: inherit; line-height: inherit; }
+@media (min-width: 768px) {
+  .nx-article h2 { font-size: 2rem; margin-top: 4.5rem; }
+  .nx-article h3 { font-size: 1.5rem; }
 }

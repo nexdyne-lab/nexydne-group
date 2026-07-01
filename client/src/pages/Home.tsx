@@ -126,10 +126,7 @@ export default function Home() {
               <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-6">
                 Our Perspective
               </span>
-              <h2
-                className="text-4xl md:text-5xl lg:text-[3.75rem] text-charcoal leading-[1.04] font-bold"
-                style={{ letterSpacing: "-0.03em" }}
-              >
+              <h2 className="nx-h2 text-charcoal">
                 Governing intelligence. Scaling judgment. Leading in the age of{" "}
                 <span
                   className="bg-clip-text text-transparent"
@@ -148,7 +145,7 @@ export default function Home() {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="lg:col-span-7"
             >
-              <p className="text-lg md:text-xl text-charcoal/80 leading-[1.65] max-w-[58ch]">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.7] max-w-[58ch]">
                 The organizations that will define the next decade will be the ones that govern intelligence as deliberately as they deploy it. NexDyne combines deep industry expertise with structured intelligence governance to help ambitious leaders harness AI, data, and operational power — while strengthening the human judgment, accountability, and trust that no machine can provide. From modernizing legacy systems to designing AI-enabled operating models, we build transformations that perform, endure, and scale. NexDyne is where governance meets growth.
               </p>
             </motion.div>
@@ -198,13 +195,10 @@ export default function Home() {
             <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 font-semibold mb-6 block">
               AI & Technology
             </span>
-            <h2
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.08] mb-7 font-bold"
-              style={{ letterSpacing: "-0.03em" }}
-            >
+            <h2 className="nx-h2-split text-charcoal mb-6">
               AI and Technology Consulting
             </h2>
-            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] mb-10 max-w-[58ch]">
+            <p className="text-base md:text-[1.05rem] text-charcoal/80 leading-[1.7] mb-9 max-w-[58ch]">
               Learn how our AI and Technology consulting is helping clients to outcompete and deliver value at scale through the latest trends in tech. From intelligent automation and machine learning to cloud-native architecture and data strategy, we partner with organizations to build resilient, future-ready technology foundations.
             </p>
             <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">
@@ -222,7 +216,7 @@ export default function Home() {
       </section>
 
       {/* 4. Our Solutions — expertise tabs, subtle brand wash */}
-      <section className="relative bg-white py-20 lg:py-28 border-t border-charcoal/10 overflow-hidden">
+      <section className="relative bg-white nx-section border-t border-charcoal/10 overflow-hidden">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0"
@@ -239,13 +233,10 @@ export default function Home() {
               <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-6">
                 How Can We Assist You Today?
               </span>
-              <h2
-                className="text-4xl md:text-5xl lg:text-[3.5rem] text-charcoal leading-[1.04] mb-6 font-bold"
-                style={{ letterSpacing: "-0.03em" }}
-              >
+              <h2 className="nx-h2 text-charcoal mb-6">
                 Explore our core areas of expertise.
               </h2>
-              <p className="text-base md:text-lg text-charcoal/75 leading-[1.65] max-w-[48ch]">
+              <p className="text-base md:text-lg text-charcoal/75 leading-[1.7] max-w-[48ch]">
                 Learn more about our capabilities across industries and disciplines by selecting your topic of interest.
               </p>
             </div>
@@ -304,20 +295,17 @@ export default function Home() {
       <OperationalExcellence />
 
       {/* 6. Latest Insights — flat cards with hairline borders */}
-      <section className="py-20 lg:py-28 bg-subtle">
+      <section className="nx-section bg-subtle">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16">
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-14 md:mb-16">
             <div className="max-w-3xl">
               <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
                 Insights
               </span>
-              <h2
-                className="text-4xl md:text-5xl lg:text-[3.5rem] text-charcoal leading-[1.04] font-bold"
-                style={{ letterSpacing: "-0.03em" }}
-              >
+              <h2 className="nx-h2 text-charcoal">
                 Latest Insights
               </h2>
-              <p className="text-base md:text-lg text-charcoal/75 mt-5 max-w-[58ch] leading-[1.65]">
+              <p className="text-base md:text-lg text-charcoal/75 mt-5 max-w-[58ch] leading-[1.7]">
                 Practical perspectives for mid-market leaders navigating growth and transformation.
               </p>
             </div>
@@ -426,13 +414,10 @@ export default function Home() {
             <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 font-semibold mb-6 block">
               NexDyne Careers
             </span>
-            <h2
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-7"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
+            <h2 className="nx-h2-split text-charcoal mb-6">
               Where Human Intelligence Leads
             </h2>
-            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] mb-10 max-w-[58ch]">
+            <p className="text-base md:text-[1.05rem] text-charcoal/80 leading-[1.7] mb-9 max-w-[58ch]">
               We help organizations govern intelligence and lead with judgment in the age of AI. If you bring ambition, clarity, and the will to shape what comes next — this is where you belong.
             </p>
             <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">

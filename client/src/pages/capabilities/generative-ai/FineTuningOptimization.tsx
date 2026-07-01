@@ -15,7 +15,7 @@ export default function FineTuningOptimization() {
       serviceName="Fine-Tuning & Optimization"
       serviceSlug="fine-tuning-optimization"
       heroSubtitle="Customize foundation models for your domain through fine-tuning, prompt engineering, and continuous optimization based on real-world performance. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-generative-ai.7ab8e23c.jpg"
+      heroImage="/blog-ai-agents.eba3d75f.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Fine-Tuning & Optimization engagements delivered" },

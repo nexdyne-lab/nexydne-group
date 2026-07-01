@@ -15,7 +15,7 @@ export default function CyberRiskManagement() {
       serviceName="Cyber Risk Management"
       serviceSlug="cyber-risk-management"
       heroSubtitle="Protect your digital assets with AI-powered threat detection and response. Implement zero-trust architectures and continuous security monitoring. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-risk-resilience.5d8e23c1.jpg"
+      heroImage="/blog-diverse-team.5dcdbf56.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Cyber Risk Management engagements delivered" },
@@ -68,7 +68,7 @@ export default function CyberRiskManagement() {
           title: "Scaling a fintech payment platform with AI-driven automation",
           industry: "Financial Services",
           metric: "5x",
-          image: "/case-fintech-payments.7ab8e23c.jpg",
+          image: "/case-fintech-app.5835303a.png",
         },
       ]}
       relatedServices={[

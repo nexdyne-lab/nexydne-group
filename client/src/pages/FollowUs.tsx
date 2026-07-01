@@ -193,10 +193,10 @@ export default function FollowUs() {
                   For press inquiries, interview requests, or media-related questions, please contact our communications team.
                 </p>
                 <a 
-                  href="mailto:media@nexdyne.com" 
+                  href="mailto:contact@nexdynegroup.com" 
                   className="text-primary hover:underline font-medium"
                 >
-                  media@nexdyne.com
+                  contact@nexdynegroup.com
                 </a>
               </div>
 
@@ -209,10 +209,10 @@ export default function FollowUs() {
                   Interested in having a NexDyne expert speak at your event? Reach out to discuss availability and topics.
                 </p>
                 <a 
-                  href="mailto:events@nexdyne.com" 
+                  href="mailto:contact@nexdynegroup.com" 
                   className="text-primary hover:underline font-medium"
                 >
-                  events@nexdyne.com
+                  contact@nexdynegroup.com
                 </a>
               </div>
             </div>

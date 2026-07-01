@@ -15,7 +15,7 @@ export default function RegulatoryCompliance() {
       serviceName="Regulatory Compliance"
       serviceSlug="regulatory-compliance"
       heroSubtitle="Navigate complex regulatory requirements with AI-assisted compliance monitoring. Automate reporting and ensure continuous adherence to evolving standards. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-risk-resilience.5d8e23c1.jpg"
+      heroImage="/blog-diverse-team.5dcdbf56.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Regulatory Compliance engagements delivered" },
@@ -68,14 +68,14 @@ export default function RegulatoryCompliance() {
           title: "AI-powered audit automation at a Big Four accounting firm",
           industry: "Professional Services",
           metric: "45%",
-          image: "/case-accounting-audit.5d8e23c1.jpg",
+          image: "/case-accountants-audit.1c87a151.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Automating client onboarding for a global wealth management firm",
           industry: "Financial Services",
           metric: "60%",
-          image: "/case-wealth-management.91d3a49b.jpg",
+          image: "/case-advisor-client.eb15e04e.jpg",
         },
       ]}
       relatedServices={[

@@ -189,7 +189,7 @@ export default function ProcessOptimizationInsights() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Process Optimization Insights
             </span>
-            <h1 className="text-5xl md:text-7xl eb-garamond font-bold tracking-tight leading-[1.05] mb-4">
+            <h1 className="text-[2.25rem] md:text-[3.25rem] font-bold tracking-tight leading-[1.05] mb-4">
               Expert perspectives on <br />
               <span className="text-primary">intelligent automation</span>
             </h1>
@@ -261,7 +261,7 @@ export default function ProcessOptimizationInsights() {
 
       {/* DZ10 Featured Insight */}
       {selectedType === "All" && !selectedTag && (
-        <section className="py-16 md:py-20 bg-background">
+        <section className="nx-section bg-background">
           <div className="container px-4 md:px-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -288,7 +288,7 @@ export default function ProcessOptimizationInsights() {
                         {insightPosts[0].type}
                       </span>
                     </div>
-                    <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
+                    <h2 className="text-3xl md:text-[2rem] font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
                       {insightPosts[0].title}
                     </h2>
                     <p className="text-muted-foreground text-lg leading-relaxed mb-6">
@@ -313,7 +313,7 @@ export default function ProcessOptimizationInsights() {
       )}
 
       {/* DZ10 Insights Grid */}
-      <section className="py-24 md:py-32 bg-white text-charcoal">
+      <section className="nx-section bg-white text-charcoal">
         <div className="container px-4 md:px-12">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredPosts.slice(selectedType === "All" && !selectedTag ? 1 : 0).map((post, index) => (
@@ -395,7 +395,7 @@ export default function ProcessOptimizationInsights() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-20 md:py-24 bg-charcoal/5">
+      <section className="nx-section bg-charcoal/5">
         <div className="container px-4 md:px-12">
           <div className="max-w-2xl mx-auto">
             <NewsletterSubscribe />
@@ -404,7 +404,7 @@ export default function ProcessOptimizationInsights() {
       </section>
 
       {/* DZ10 CTA Section */}
-      <section className="py-24 md:py-32 bg-background">
+      <section className="nx-section bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -413,7 +413,7 @@ export default function ProcessOptimizationInsights() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
+            <h2 className="text-[2rem] md:text-[2.5rem] font-bold text-charcoal mb-6">
               Ready to optimize your processes?
             </h2>
             <p className="text-xl text-muted-foreground mb-10">

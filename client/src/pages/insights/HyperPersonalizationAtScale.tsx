@@ -11,9 +11,9 @@ export default function HyperPersonalizationAtScale() {
       <ReadingProgress />
       <Navigation />
       {/* Hero Section */}
-      <section className="bg-slate-900 text-white py-16 md:py-24">
+      <section className="bg-charcoal text-white py-16 md:py-24">
         <div className="container max-w-4xl">
-          <Link href="/solutions/digital-marketing" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 mb-8 transition-colors">
+          <Link href="/solutions/digital-marketing" className="inline-flex items-center gap-2 text-primary hover:text-primary mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Digital Marketing
           </Link>
@@ -81,7 +81,7 @@ export default function HyperPersonalizationAtScale() {
               The customer doesn't see "channels." They see one brand. If they tell a chatbot they have a problem, the call center agent they speak to five minutes later should know about it. Hyper-personalization requires a unified customer profile (CDP) that updates in real-time across all touchpoints.
             </p>
 
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
+            <div className="bg-primary/5 border-l-4 border-primary p-6 my-8">
               <p className="text-lg text-charcoal font-semibold">
                 "Personalization is a hygiene factor. Hyper-personalization is a competitive moat."
               </p>
@@ -119,12 +119,12 @@ export default function HyperPersonalizationAtScale() {
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 bg-slate-900 rounded-lg text-white">
+          <div className="mt-16 p-8 bg-charcoal rounded-lg text-white">
             <h3 className="text-2xl font-bold mb-4">Create experiences that convert</h3>
             <p className="text-muted-foreground/50 mb-6">
               Learn how our Marketing Analytics & Attribution services can help you build a 360-degree view of your customer.
             </p>
-            <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-charcoal bg-white rounded-lg hover:bg-slate-100 transition-colors">
+            <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-charcoal bg-white rounded-lg hover:bg-subtle transition-colors">
               Speak with an expert
             </Link>
           </div>

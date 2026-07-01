@@ -22,7 +22,7 @@ const carouselData: CarouselCard[] = [
     date: "December 2025",
     title: "How AI Agents Transform Enterprise Operations",
     description: "AI agents are revolutionizing how businesses operate. Learn how autonomous systems can handle complex workflows, make decisions, and drive efficiency at scale.",
-    image: "/images/insights/ai-agents-network.png",
+    image: "/images/ai-neural-network.jpg",
     link: "/insights/ai-agents-transform-operations"
   },
   {
@@ -32,7 +32,7 @@ const carouselData: CarouselCard[] = [
     date: "November 2025",
     title: "Scaling Operations with Intelligent Automation",
     description: "A mid-market logistics company achieved 40% efficiency gains by implementing our intelligent process optimization framework across their supply chain.",
-    image: "/images/case-studies/logistics-automation.png",
+    image: "/images/adoption-abstract.jpg",
     link: "/case-studies"
   },
   {
@@ -62,7 +62,7 @@ const carouselData: CarouselCard[] = [
     date: "August 2025",
     title: "Cloud-Native Architecture for Scale",
     description: "Modern enterprises need infrastructure that scales with ambition. Explore the principles of building resilient, scalable cloud-native systems.",
-    image: "/cloud-native-architecture.png",
+    image: "/hero-architecture-new.8c87389d.png",
     link: "/insights/cloud-native-architecture"
   }
 ];

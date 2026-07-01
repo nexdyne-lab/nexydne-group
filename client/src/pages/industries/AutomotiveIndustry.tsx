@@ -20,41 +20,41 @@ export default function AutomotiveIndustry() {
       challenges={[
         {
           title: "Software-defined vehicle build-out",
-          body: "Vehicles are becoming software platforms — and most OEMs are not yet organized to ship software at the cadence customers and competitors expect. New release engineering, OTA infrastructure, and developer tooling are now core to the product."
+          body: "Vehicles are becoming software platforms, and most OEMs aren't yet organized to ship software at the cadence customers expect."
         },
         {
           title: "EV program economics",
-          body: "Battery cost, charging infrastructure, and uncertain demand are stressing EV program P&Ls. Engineering decisions, supplier strategy, and pricing must be tightened to make platforms viable across the next cycle."
+          body: "Battery cost, charging, and uncertain demand are stressing EV P&Ls — engineering, supplier, and pricing decisions must tighten."
         },
         {
           title: "Tiered supply-chain risk",
-          body: "Semiconductor, battery-material, and rare-earth dependencies are exposing programs to single-point-of-failure risk. Multi-tier visibility and supplier qualification are no longer optional."
+          body: "Semiconductor, battery-material, and rare-earth dependencies expose programs to single-point-of-failure risk."
         },
         {
           title: "Plant and product-launch readiness",
-          body: "Launch curves are unforgiving in automotive. Smart factories, predictive quality, and digital launch management are how leading OEMs are protecting ramp-up productivity and warranty cost."
+          body: "Launch curves are unforgiving; smart factories, predictive quality, and digital launch management protect ramp productivity."
         }
       ]}
       capabilities={[
         {
           name: "Operations Excellence",
           href: "/capabilities/operations-excellence",
-          blurb: "Modernize plant operations, launch management, and supplier-quality programs with predictive analytics and connected-worker tools."
+          blurb: "Modernize plant operations, launch management, and supplier quality with predictive analytics and connected-worker tools."
         },
         {
           name: "Data Transformation",
           href: "/capabilities/data-transformation",
-          blurb: "Unify vehicle, manufacturing, and connected-services data into a single platform that supports software-defined product, predictive quality, and AI-driven engineering."
+          blurb: "Unify vehicle, manufacturing, and connected-services data into one platform for software-defined product and AI engineering."
         },
         {
           name: "Strategy & Growth",
           href: "/capabilities/strategy-growth",
-          blurb: "Identify and validate the connected-services, EV, and mobility plays that will define the next product cycle and the commercial model behind it."
+          blurb: "Validate the connected-services, EV, and mobility plays that will define the next product cycle and its commercial model."
         },
         {
           name: "Risk & Resilience",
           href: "/capabilities/risk-resilience",
-          blurb: "Engineer multi-tier supply-chain visibility, cyber posture for connected vehicles, and the regulatory readiness automotive programs increasingly require."
+          blurb: "Multi-tier supply-chain visibility, connected-vehicle cyber posture, and the regulatory readiness programs increasingly require."
         }
       ]}
       experienceStats={[

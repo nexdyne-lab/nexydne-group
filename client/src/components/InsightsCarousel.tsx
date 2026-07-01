@@ -316,7 +316,7 @@ export function InsightsCarousel() {
             {/* Pause/Play Button */}
             <button
               onClick={() => setIsPaused(!isPaused)}
-              className="w-9 h-9 flex items-center justify-center border border-border hover:border-gray-500 transition-colors rounded-sm"
+              className="w-9 h-9 flex items-center justify-center border border-border hover:border-border transition-colors rounded-sm"
               aria-label={isPaused ? "Play carousel" : "Pause carousel"}
             >
               {isPaused ? (
@@ -329,7 +329,7 @@ export function InsightsCarousel() {
             {/* Previous Button */}
             <button
               onClick={goToPrev}
-              className="w-9 h-9 flex items-center justify-center border border-border hover:border-gray-500 text-muted-foreground transition-colors rounded-sm"
+              className="w-9 h-9 flex items-center justify-center border border-border hover:border-border text-muted-foreground transition-colors rounded-sm"
               aria-label="Previous"
             >
               <ChevronLeft className="w-4 h-4" />
@@ -338,7 +338,7 @@ export function InsightsCarousel() {
             {/* Next Button */}
             <button
               onClick={goToNext}
-              className="w-9 h-9 flex items-center justify-center border border-border hover:border-gray-500 text-muted-foreground transition-colors rounded-sm"
+              className="w-9 h-9 flex items-center justify-center border border-border hover:border-border text-muted-foreground transition-colors rounded-sm"
               aria-label="Next"
             >
               <ChevronRight className="w-4 h-4" />

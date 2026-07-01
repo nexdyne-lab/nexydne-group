@@ -6,7 +6,6 @@ import Navbar from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import RelatedInsights from "@/components/RelatedInsights";
 import { RelatedContent } from "@/components/RelatedContent";
 import { dataRelatedItems } from "@/data/related-content";
 
@@ -16,7 +15,7 @@ export default function AcceleratedImpact() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+      <section className="relative pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
         
@@ -24,16 +23,16 @@ export default function AcceleratedImpact() {
           <Breadcrumbs />
           <div className="max-w-4xl">
             
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight mb-2 sm:mb-3 md:mb-4 eb-garamond">
+            <h1 className="nx-h1 mb-4">
               Rapid Delivery <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/70">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber">
                 Engine.
               </span>
             </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground/50 font-light leading-relaxed max-w-2xl mb-10">
+            <p className="nx-lead text-charcoal/70 max-w-2xl mb-10">
               We leverage proprietary accelerators, pre-built models, and industry playbooks to cut delivery times by up to 50%.
             </p>
-            <Button className="bg-white text-base hover:bg-slate-100 rounded-full px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg font-medium transition-all duration-300">
+            <Button className="bg-primary text-primary-foreground hover:bg-primary-hover px-8 py-4 text-[13px] font-semibold uppercase tracking-[0.1em] transition-colors">
               See our accelerators
             </Button>
           </div>
@@ -41,11 +40,11 @@ export default function AcceleratedImpact() {
       </section>
 
       {/* Strategic Context Section */}
-      <section className="py-24 border-t border-border bg-background">
+      <section className="nx-section border-t border-border bg-background">
         <div className="container px-6 md:px-12">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight eb-garamond">
+              <h2 className="nx-h2 mb-6">
                 Don't start from scratch. <br />
                 <span className="text-muted-foreground/70">Start from experience.</span>
               </h2>
@@ -61,7 +60,7 @@ export default function AcceleratedImpact() {
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-secondary shrink-0" />
-                    <span className="text-muted-foreground/50">{item}</span>
+                    <span className="text-charcoal/70">{item}</span>
                   </div>
                 ))}
               </div>
@@ -100,10 +99,10 @@ export default function AcceleratedImpact() {
       </section>
 
       {/* Methodology / Journey Section */}
-      <section className="py-24 bg-background">
+      <section className="nx-section bg-background">
         <div className="container px-6 md:px-12">
           <div className="mb-8 sm:mb-12 md:mb-16 max-w-2xl">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 eb-garamond">The Acceleration Engine</h2>
+            <h2 className="nx-h2 mb-6">The Acceleration Engine</h2>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground/70 font-light">
               How we deliver faster without compromising quality.
             </p>
@@ -128,10 +127,10 @@ export default function AcceleratedImpact() {
                 <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl sm:rounded-2xl" />
                 <Card className="h-full bg-background border-border group-hover:bg-white transition-all duration-300 relative overflow-hidden">
                   <CardContent className="p-4 sm:p-6 md:p-8 h-full flex flex-col">
-                    <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 group-hover:bg-slate-100 transition-colors duration-300">
+                    <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 group-hover:bg-subtle transition-colors duration-300">
                       <Gauge className="w-6 h-6 text-secondary group-hover:text-primary transition-colors duration-300" />
                     </div>
-                    <h3 className="text-2xl font-bold text-charcoal group-hover:text-charcoal mb-4 transition-colors duration-300">
+                    <h3 className="nx-h3 text-charcoal mb-4 transition-colors duration-300">
                       {card.title}
                     </h3>
                     <p className="text-muted-foreground/70 group-hover:text-muted-foreground leading-relaxed transition-colors duration-300">
@@ -145,19 +144,17 @@ export default function AcceleratedImpact() {
         </div>
       </section>
 
-      {/* Related Insights Section */}
-      <RelatedInsights />
 
       {/* Impact / CTA Section */}
-      <section className="py-32 bg-background">
+      <section className="nx-section bg-background">
         <div className="container px-6 md:px-12 text-center">
-          <h2 className="text-4xl md:text-6xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 tracking-tight eb-garamond">
+          <h2 className="nx-h2 text-charcoal mb-8">
             Accelerate your journey.
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 sm:mb-8 md:mb-12 font-light">
             Download our "Speed to Value" playbook and see how fast you can move.
           </p>
-          <Button className="bg-white text-primary hover:bg-slate-100 rounded-full px-10 py-8 text-xl font-bold transition-all duration-300 shadow-xl hover:shadow-xl sm:shadow-2xl hover:-translate-y-1">
+          <Button className="bg-primary text-primary-foreground hover:bg-primary-hover px-8 py-4 text-[13px] font-semibold uppercase tracking-[0.1em] transition-colors">
             Get the playbook
           </Button>
         </div>

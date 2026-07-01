@@ -10,19 +10,19 @@ import Footer from '@/components/Footer';
 
 export default function CarbonMarkets() {
   return (
-    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-blue-100">
+    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-primary/10">
       <Navigation />
 
       {/* Hero Section */}
-      <header className="pt-20 pb-16 border-b border-slate-100">
+      <header className="pt-20 pb-16 border-b border-border">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <div className="text-sm font-medium text-muted-foreground mb-6 uppercase tracking-wider">
-              <Link href="/insights" className="hover:text-blue-900 transition-colors">
+              <Link href="/insights" className="hover:text-primary transition-colors">
                 Insights
               </Link>
               <span className="mx-2">/</span>
-              <span className="text-blue-900">Article</span>
+              <span className="text-charcoal">Article</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-4 leading-[1.1]">
               Carbon Markets 2025: From Voluntary to Compliance
@@ -56,7 +56,7 @@ export default function CarbonMarkets() {
                 Governments are stepping in. Article 6 of the Paris Agreement is creating a framework for international carbon trading, and jurisdictions like the EU and California are exploring ways to integrate high-quality voluntary credits into their compliance schemes. This convergence will likely drive up prices and liquidity.
               </p>
               
-              <blockquote className="border-l-4 border-blue-900 pl-6 italic text-xl text-charcoal my-12">
+              <blockquote className="border-l-4 border-primary pl-6 italic text-xl text-charcoal my-12">
                 "The future of carbon markets lies in high-integrity, transparent, and regulated trading systems that can unlock the trillions needed for climate action."
               </blockquote>
 
@@ -78,9 +78,9 @@ export default function CarbonMarkets() {
 
           {/* Sidebar */}
           <div className="lg:col-span-4 space-y-8">
-            <div className="bg-slate-50 p-8 rounded-sm border border-slate-100 sticky top-24">
+            <div className="bg-off-white p-8 rounded-sm border border-border sticky top-24">
               <div className="flex flex-col gap-4 mb-8">
-                <Button variant="outline" className="w-full border-slate-300 text-charcoal/80 hover:bg-slate-50 flex items-center justify-center gap-2">
+                <Button variant="outline" className="w-full border-border text-charcoal/80 hover:bg-off-white flex items-center justify-center gap-2">
                   <Share2 className="w-4 h-4" /> Share Article
                 </Button>
               </div>
@@ -88,7 +88,7 @@ export default function CarbonMarkets() {
               <h3 className="text-lg font-bold text-charcoal mb-4">Authors</h3>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-slate-200 rounded-full"></div>
+                  <div className="w-10 h-10 bg-grey rounded-full"></div>
                   <div>
                     <div className="font-medium text-charcoal">Elena Rodriguez</div>
                     <div className="text-xs text-muted-foreground">Associate Partner, New York</div>
@@ -96,11 +96,11 @@ export default function CarbonMarkets() {
                 </li>
               </ul>
 
-              <div className="pt-8 border-t border-slate-200">
+              <div className="pt-8 border-t border-border">
                 <h4 className="font-bold text-charcoal mb-4 text-sm uppercase tracking-wide">Related Capabilities</h4>
                 <ul className="space-y-3">
                   <li>
-                    <Link href="/capabilities/growth-marketing-sales/green-growth" className="text-muted-foreground hover:text-blue-700 transition-colors text-sm block">
+                    <Link href="/capabilities/growth-marketing-sales/green-growth" className="text-muted-foreground hover:text-primary transition-colors text-sm block">
                       Green Growth
                     </Link>
                   </li>

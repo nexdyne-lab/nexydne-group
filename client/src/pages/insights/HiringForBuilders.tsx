@@ -44,7 +44,7 @@ export default function HiringForBuilders() {
       heroImageAlt="Hiring for Builders"
       authorName="Marcus Rivera"
       authorRole="Chief People Officer, NexDyne"
-      authorImage="/team/marcus-rivera.jpg"
+      authorImage="https://placehold.co/160x160/242424/F7F9FC?text=MR"
       relatedInsights={relatedInsights}
     >
       <p>

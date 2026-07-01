@@ -250,7 +250,7 @@ export default function ManufacturingPredictiveMaintenance() {
       </section>
 
       {/* SLOT 6 — Outcomes signal section (bg-primary stat band) */}
-      <section className="bg-background text-primary-foreground py-20 md:py-28">
+      <section className="bg-primary text-primary-foreground nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16 max-w-[1200px] mx-auto">
           <motion.span
             initial={{ opacity: 0, y: 20 }}

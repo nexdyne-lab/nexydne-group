@@ -247,7 +247,7 @@ export default function CaseStudyB2BDigitalOrdering() {
                 icon: <Clock className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Quick Reorder",
                 description: "One-click reordering from purchase history, saved order templates, and scheduled recurring orders for consumables.",
-                color: "from-emerald-500 to-teal-600"
+                color: "from-emerald-500 to-primary"
               },
               {
                 icon: <Truck className="w-5 h-5 sm:w-6 sm:h-6" />,

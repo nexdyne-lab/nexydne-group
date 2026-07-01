@@ -36,7 +36,7 @@ export default function NewsletterSubscribe() {
   }
 
   return (
-    <div className="bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200 rounded-lg p-4 sm:p-6 md:p-4 sm:p-6 md:p-8">
+    <div className="bg-gradient-to-br from-off-white to-off-white border border-border rounded-lg p-4 sm:p-6 md:p-4 sm:p-6 md:p-8">
       <div className="max-w-2xl mx-auto text-center">
         <div className="flex items-center justify-center gap-2 mb-4">
           <Mail className="w-6 h-6 text-orange-500" />

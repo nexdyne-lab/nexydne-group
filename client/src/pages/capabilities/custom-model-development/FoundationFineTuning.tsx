@@ -15,7 +15,7 @@ export default function FoundationFineTuning() {
       serviceName="Foundation Model Fine-Tuning"
       serviceSlug="foundation-fine-tuning"
       heroSubtitle="Adapt GPT, Claude, Llama, or other foundation models to your domain using your proprietary data. Achieve specialized performance without training from scratch. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-custom-models.a78b22fb.jpg"
+      heroImage="/blog-data-workstation.e374b2a9.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Foundation Model Fine-Tuning engagements delivered" },

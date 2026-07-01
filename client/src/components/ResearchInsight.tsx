@@ -33,7 +33,7 @@ export function ResearchInsight({
         {/* Header */}
         <div className="text-center mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
           <div className="inline-block mb-4">
-            <span className="text-sm font-semibold text-cyan-600 uppercase tracking-wider bg-cyan-50 px-4 py-2 rounded-full">
+            <span className="text-sm font-semibold text-primary uppercase tracking-wider bg-primary/5 px-4 py-2 rounded-full">
               Our Research Shows
             </span>
           </div>
@@ -48,9 +48,9 @@ export function ResearchInsight({
             return (
               <div
                 key={index}
-                className="bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 hover:shadow-lg transition-all duration-300 hover:border-cyan-300"
+                className="bg-gradient-to-br from-off-white to-white border border-border rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 hover:shadow-lg transition-all duration-300 hover:border-primary"
               >
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-primary flex items-center justify-center mb-4">
                   <Icon className="w-6 h-6 text-white" />
                 </div>
                 <div className="text-4xl font-bold text-charcoal mb-2">
@@ -71,7 +71,7 @@ export function ResearchInsight({
 
         {/* Citation */}
         {citation && (
-          <div className="bg-slate-50 border-l-4 border-cyan-500 p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 rounded-r-lg">
+          <div className="bg-off-white border-l-4 border-primary p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 rounded-r-lg">
             <p className="text-sm text-muted-foreground italic">
               <span className="font-semibold text-charcoal">Research Methodology:</span> {citation}
             </p>

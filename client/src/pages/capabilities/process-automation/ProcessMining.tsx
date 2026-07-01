@@ -15,7 +15,7 @@ export default function ProcessMining() {
       serviceName="Process Mining & Discovery"
       serviceSlug="process-mining"
       heroSubtitle="Analyze your existing workflows using process mining tools to identify automation opportunities, bottlenecks, and optimization potential. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-process-automation.b1f9c248.jpg"
+      heroImage="/blog-process-mining.50313a07.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Process Mining & Discovery engagements delivered" },
@@ -68,14 +68,14 @@ export default function ProcessMining() {
           title: "How a regional bank cut loan processing time by 80% with intelligent automation",
           industry: "Financial Services",
           metric: "80%",
-          image: "/case-bank-automation.2f1e7c12.jpg",
+          image: "/case-banker-meeting.c53f3999.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Automating client onboarding for a global wealth management firm",
           industry: "Financial Services",
           metric: "60%",
-          image: "/case-wealth-management.91d3a49b.jpg",
+          image: "/case-advisor-client.eb15e04e.jpg",
         },
       ]}
       relatedServices={[

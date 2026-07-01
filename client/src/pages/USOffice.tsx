@@ -1,307 +1,108 @@
-import Navigation from '../components/Navigation';
+import { motion } from "framer-motion";
+import { Link } from "wouter";
+import Navigation from "../components/Navigation";
 import Footer from "@/components/Footer";
-import { MapPin, Phone, Mail, Clock, ArrowRight } from 'lucide-react';
-import { Link } from 'wouter';
 import { SEO } from "@/components/SEO";
-import Breadcrumbs from "@/components/Breadcrumbs";
 
-interface Office {
-  id: string;
-  city: string;
-  country: string;
-  region: string;
-  address: string[];
-  phone: string;
-  email: string;
-  hours: string;
-  isHeadquarters?: boolean;
-  image: string;
-}
+const fadeUp = {
+  initial: { opacity: 0, y: 24 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, amount: 0.2 },
+  transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
+};
 
-const offices: Office[] = [
-  {
-    id: 'new-york',
-    city: 'New York',
-    country: 'United States',
-    region: 'Americas',
-    address: ['350 Fifth Avenue', 'Suite 7820', 'New York, NY 10118'],
-    phone: '+1 (212) 555-0100',
-    email: 'newyork@nexdyne.com',
-    hours: 'Mon-Fri: 8:00 AM - 6:00 PM EST',
-    isHeadquarters: true,
-    image: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800&q=80'
-  },
-  {
-    id: 'san-francisco',
-    city: 'San Francisco',
-    country: 'United States',
-    region: 'Americas',
-    address: ['One Market Street', 'Spear Tower, Suite 3600', 'San Francisco, CA 94105'],
-    phone: '+1 (415) 555-0200',
-    email: 'sanfrancisco@nexdyne.com',
-    hours: 'Mon-Fri: 8:00 AM - 6:00 PM PST',
-    image: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&q=80'
-  },
-  {
-    id: 'chicago',
-    city: 'Chicago',
-    country: 'United States',
-    region: 'Americas',
-    address: ['233 South Wacker Drive', 'Willis Tower, Suite 8400', 'Chicago, IL 60606'],
-    phone: '+1 (312) 555-0300',
-    email: 'chicago@nexdyne.com',
-    hours: 'Mon-Fri: 8:00 AM - 6:00 PM CST',
-    image: 'https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=800&q=80'
-  },
-  {
-    id: 'london',
-    city: 'London',
-    country: 'United Kingdom',
-    region: 'Europe',
-    address: ['30 St Mary Axe', 'The Gherkin, Level 28', 'London EC3A 8BF'],
-    phone: '+44 20 7555 0400',
-    email: 'london@nexdyne.com',
-    hours: 'Mon-Fri: 9:00 AM - 6:00 PM GMT',
-    image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&q=80'
-  },
-  {
-    id: 'singapore',
-    city: 'Singapore',
-    country: 'Singapore',
-    region: 'Asia Pacific',
-    address: ['1 Raffles Place', '#44-01 One Raffles Place', 'Singapore 048616'],
-    phone: '+65 6555 0500',
-    email: 'singapore@nexdyne.com',
-    hours: 'Mon-Fri: 9:00 AM - 6:00 PM SGT',
-    image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=800&q=80'
-  },
-  {
-    id: 'dubai',
-    city: 'Dubai',
-    country: 'United Arab Emirates',
-    region: 'Middle East',
-    address: ['Burj Khalifa', 'Level 124', 'Dubai, UAE'],
-    phone: '+971 4 555 0600',
-    email: 'dubai@nexdyne.com',
-    hours: 'Sun-Thu: 9:00 AM - 6:00 PM GST',
-    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80'
-  }
-];
-
-const regions = ['All Regions', 'Americas', 'Europe', 'Asia Pacific', 'Middle East'];
+const office = {
+  city: "Grand Rapids",
+  country: "United States",
+  address: ["4595 Broadmoor Ave SE, Suite 115", "Grand Rapids, MI 49512", "USA"],
+  email: "contact@nexdynegroup.com",
+  website: "nexdynegroup.com",
+  image: "/images/office-grand-rapids.jpg",
+};
 
 export default function USOffice() {
   return (
-    <div className="min-h-screen bg-white">
-      <SEO 
-        title="Our Offices" 
-        description="Find NexDyne offices around the world. Connect with our global team of consultants and experts."
-      />
+    <div className="min-h-screen bg-subtle text-charcoal">
+      <SEO title="US Office | NexDyne Consulting Group" description="Visit or reach NexDyne's US office. Local presence, global standards—serving clients across the Americas." canonical="/about/us-office" />
       <Navigation />
-      
-      {/* Hero Section */}
-      <section className="bg-white pt-32 pb-16 border-b border-border">
-        <div className="container">
-          <div className="max-w-4xl">
-            <h1 className="text-5xl md:text-6xl font-normal text-charcoal mb-3">
-              Our Offices
-            </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              With offices across the globe, we bring local expertise and global perspective to every engagement. Find the office nearest you.
+
+      {/* Hero */}
+      <section className="bg-subtle">
+        <div className="container px-4 sm:px-6 md:px-12 pt-24 md:pt-28 lg:pt-32 pb-14 md:pb-16">
+          <motion.div {...fadeUp} className="max-w-4xl">
+            <span className="nx-eyebrow text-charcoal/55">Head office</span>
+            <h1 className="nx-h1 text-charcoal mt-5 mb-6">Our head office</h1>
+            <p className="nx-lead text-muted-foreground max-w-2xl">
+              You'll find NexDyne at our head office in Grand Rapids, Michigan.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Global Presence Stats */}
-      <section className="bg-subtle py-12 border-b border-border">
-        <div className="container">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <p className="text-4xl font-bold text-charcoal mb-2">6</p>
-              <p className="text-muted-foreground">Global Offices</p>
-            </div>
-            <div className="text-center">
-              <p className="text-4xl font-bold text-charcoal mb-2">4</p>
-              <p className="text-muted-foreground">Continents</p>
-            </div>
-            <div className="text-center">
-              <p className="text-4xl font-bold text-charcoal mb-2">500+</p>
-              <p className="text-muted-foreground">Consultants</p>
-            </div>
-            <div className="text-center">
-              <p className="text-4xl font-bold text-charcoal mb-2">24/7</p>
-              <p className="text-muted-foreground">Global Coverage</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Region Filter */}
-      <section className="bg-white py-6 border-b border-border sticky top-0 z-40">
-        <div className="container">
-          <div className="flex flex-wrap gap-2">
-            {regions.map((region) => (
-              <button
-                key={region}
-                className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${
-                  region === 'All Regions'
-                    ? 'bg-primary text-white'
-                    : 'bg-white text-charcoal/80 hover:bg-subtle border border-border'
-                }`}
-              >
-                {region}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Offices Grid */}
-      <section className="py-10 sm:py-12 lg:py-16 bg-white">
-        <div className="container">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-            {offices.map((office) => (
-              <div 
-                key={office.id}
-                className="bg-white border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
-              >
-                {/* Office Image */}
-                <div className="aspect-[16/9] overflow-hidden">
-                  <img 
-                    src={office.image} 
-                    alt={`${office.city} office`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                
-                {/* Office Details */}
-                <div className="p-6">
-                  {/* City & Country */}
-                  <div className="flex items-start justify-between mb-4">
-                    <div>
-                      <h3 className="text-2xl font-bold text-charcoal">
-                        {office.city}
-                        {office.isHeadquarters && (
-                          <span className="ml-2 text-xs font-medium text-primary uppercase tracking-wide">
-                            HQ
-                          </span>
-                        )}
-                      </h3>
-                      <p className="text-muted-foreground">{office.country}</p>
-                    </div>
-                    <span className="text-xs font-medium text-muted-foreground uppercase tracking-wide bg-subtle px-2 py-1 rounded">
-                      {office.region}
-                    </span>
-                  </div>
-                  
-                  {/* Address */}
-                  <div className="flex items-start gap-3 mb-4">
-                    <MapPin className="w-5 h-5 text-muted-foreground/70 mt-0.5 flex-shrink-0" />
-                    <div className="text-muted-foreground text-sm">
-                      {office.address.map((line, i) => (
-                        <p key={i}>{line}</p>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  {/* Phone */}
-                  <div className="flex items-center gap-3 mb-3">
-                    <Phone className="w-5 h-5 text-muted-foreground/70 flex-shrink-0" />
-                    <a 
-                      href={`tel:${office.phone}`}
-                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                    >
-                      {office.phone}
-                    </a>
-                  </div>
-                  
-                  {/* Email */}
-                  <div className="flex items-center gap-3 mb-3">
-                    <Mail className="w-5 h-5 text-muted-foreground/70 flex-shrink-0" />
-                    <a 
-                      href={`mailto:${office.email}`}
-                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
-                    >
-                      {office.email}
-                    </a>
-                  </div>
-                  
-                  {/* Hours */}
-                  <div className="flex items-center gap-3 mb-4">
-                    <Clock className="w-5 h-5 text-muted-foreground/70 flex-shrink-0" />
-                    <p className="text-muted-foreground text-sm">{office.hours}</p>
-                  </div>
-                  
-                  {/* Get Directions Link */}
-                  <a 
-                    href={`https://maps.google.com/?q=${encodeURIComponent(office.address.join(', '))}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-primary font-medium text-sm hover:gap-3 transition-all"
-                  >
-                    Get Directions <ArrowRight className="w-4 h-4" />
-                  </a>
-                </div>
+      {/* Office detail */}
+      <section className="nx-section bg-white border-t border-border">
+        <div className="container px-4 sm:px-6 md:px-12">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+            <motion.div {...fadeUp} className="overflow-hidden border border-border">
+              <div className="aspect-[16/10] overflow-hidden bg-charcoal">
+                <img
+                  src={office.image}
+                  alt={`NexDyne office — ${office.city}`}
+                  className="w-full h-full object-cover"
+                  onError={(e) => { e.currentTarget.style.display = "none"; }}
+                />
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Map Section Placeholder */}
-      <section className="py-10 sm:py-12 lg:py-16 bg-subtle">
-        <div className="container">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-normal text-charcoal mb-4">
-              Global Presence
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Our network spans across major business centers, ensuring we're always close to our clients.
-            </p>
-          </div>
-          
-          {/* World Map Placeholder */}
-          <div className="bg-white rounded-lg shadow-sm p-8 aspect-[2/1] flex items-center justify-center">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin className="w-8 h-8 text-muted-foreground/70" />
-              </div>
-              <p className="text-muted-foreground">Interactive map coming soon</p>
-              <p className="text-sm text-muted-foreground/70 mt-2">View our offices on Google Maps</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-gray-900 text-white">
-        <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-normal mb-6">
-              Ready to connect?
-            </h2>
-            <p className="text-xl text-muted-foreground/50 mb-8">
-              Reach out to your nearest office or contact us directly to start a conversation.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                href="/contact"
-                className="px-8 py-4 bg-primary hover:bg-charcoal text-white font-semibold rounded transition-colors inline-flex items-center justify-center gap-2"
+            </motion.div>
+            <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.15 }}>
+              <span className="nx-eyebrow text-charcoal/55">{office.country}</span>
+              <h2 className="nx-h2 text-charcoal mt-3 mb-8">{office.city}</h2>
+              <dl className="divide-y divide-border border-y border-border">
+                <div className="grid grid-cols-3 gap-4 py-4">
+                  <dt className="text-[12px] font-semibold uppercase tracking-[0.1em] text-muted-foreground">Address</dt>
+                  <dd className="col-span-2 text-[15px] text-charcoal/85 leading-relaxed">{office.address.map((l, i) => <div key={i}>{l}</div>)}</dd>
+                </div>
+                <div className="grid grid-cols-3 gap-4 py-4">
+                  <dt className="text-[12px] font-semibold uppercase tracking-[0.1em] text-muted-foreground">Email</dt>
+                  <dd className="col-span-2 text-[15px]"><a href={`mailto:${office.email}`} className="text-charcoal/85 hover:text-primary transition-colors">{office.email}</a></dd>
+                </div>
+                <div className="grid grid-cols-3 gap-4 py-4">
+                  <dt className="text-[12px] font-semibold uppercase tracking-[0.1em] text-muted-foreground">Web</dt>
+                  <dd className="col-span-2 text-[15px]"><a href={`https://${office.website}`} target="_blank" rel="noopener noreferrer" className="text-charcoal/85 hover:text-primary transition-colors">{office.website}</a></dd>
+                </div>
+              </dl>
+              <a
+                href={`https://maps.google.com/?q=${encodeURIComponent(office.address.join(", "))}`}
+                target="_blank" rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 text-[14px] font-semibold text-charcoal mt-8"
               >
-                Contact Us <ArrowRight className="w-4 h-4" />
+                <span className="border-b border-charcoal/30 group-hover:border-primary group-hover:text-primary transition-colors pb-0.5">Get directions</span>
+                <span className="text-primary transition-transform duration-300 group-hover:translate-x-1">→</span>
+              </a>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="nx-section bg-charcoal text-white">
+        <div className="container px-4 sm:px-6 md:px-12">
+          <motion.div {...fadeUp} className="max-w-3xl">
+            <h2 className="nx-h2 text-white mb-5">Let's talk.</h2>
+            <p className="nx-lead text-white/70 mb-10 max-w-2xl">
+              Reach out to the team directly, or see where else we work.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-5">
+              <Link href="/contact">
+                <span className="inline-block px-8 py-4 bg-primary text-white text-[13px] font-semibold uppercase tracking-[0.12em] hover:bg-primary-hover transition-colors cursor-pointer">Contact us</span>
               </Link>
-              <Link 
-                href="/careers"
-                className="px-8 py-4 bg-transparent hover:bg-white/10 text-white font-semibold rounded border border-white/30 transition-colors inline-block"
-              >
-                Join Our Team
+              <Link href="/offices">
+                <span className="inline-block px-8 py-4 border border-white/25 text-white text-[13px] font-semibold uppercase tracking-[0.12em] hover:bg-white/10 transition-colors cursor-pointer">All offices</span>
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
-      
+
       <Footer />
     </div>
   );

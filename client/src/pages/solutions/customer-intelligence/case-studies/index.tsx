@@ -121,7 +121,7 @@ export default function CustomerIntelligenceCaseStudies() {
               Case Studies
             </span>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl eb-garamond font-bold tracking-tight text-charcoal leading-[1.1] mb-4 max-w-4xl">
+            <h1 className="text-[2.25rem] md:text-[2.75rem] lg:text-[3.25rem] font-bold tracking-tight text-charcoal leading-[1.1] mb-4 max-w-4xl">
               Customer intelligence driving real results
             </h1>
             
@@ -142,7 +142,7 @@ export default function CustomerIntelligenceCaseStudies() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl eb-garamond font-bold text-charcoal">Featured Case Studies</h2>
+            <h2 className="text-2xl font-bold text-charcoal">Featured Case Studies</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-10">
@@ -198,7 +198,7 @@ export default function CustomerIntelligenceCaseStudies() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl eb-garamond font-bold">More Success Stories</h2>
+            <h2 className="text-2xl font-bold">More Success Stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-10">
@@ -254,7 +254,7 @@ export default function CustomerIntelligenceCaseStudies() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
+              <h2 className="text-[2rem] md:text-[2.5rem] font-bold text-charcoal mb-6">
                 Ready to write your success story?
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed mb-10">

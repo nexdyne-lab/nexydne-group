@@ -35,7 +35,7 @@ export function MobileCommerceOptimization() {
             <Breadcrumbs className="mb-8" />
             <div className="flex items-center gap-4 text-sm text-secondary font-semibold mb-6">
               <span className="uppercase tracking-wider">Mobile Strategy</span>
-              <span className="w-1 h-1 rounded-full bg-slate-500" />
+              <span className="w-1 h-1 rounded-full bg-charcoal" />
               <span>6 min read</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-charcoal mb-4 leading-tight">
@@ -68,7 +68,7 @@ export function MobileCommerceOptimization() {
             <div className="md:col-span-3 hidden md:block">
               <div className="sticky top-32">
                 <h4 className="font-bold text-charcoal mb-4">Table of Contents</h4>
-                <ul className="space-y-3 text-sm text-muted-foreground border-l border-slate-200 pl-4">
+                <ul className="space-y-3 text-sm text-muted-foreground border-l border-border pl-4">
                   <li className="hover:text-primary cursor-pointer">The Mobile Gap</li>
                   <li className="hover:text-primary cursor-pointer">Speed is Feature #1</li>
                   <li className="hover:text-primary cursor-pointer">Thumb-Friendly UX</li>
@@ -107,7 +107,7 @@ export function MobileCommerceOptimization() {
                 <p>
                   The "Thumb Zone" is the area of the screen a user can easily reach with one hand.
                 </p>
-                <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 my-6">
+                <div className="bg-off-white p-6 rounded-xl border border-border my-6">
                   <div className="flex gap-4">
                     <MousePointerClick className="w-8 h-8 text-primary flex-shrink-0" />
                     <div>
@@ -137,13 +137,13 @@ export function MobileCommerceOptimization() {
                   Do you need an app? Maybe not. Progressive Web Apps (PWAs) offer an app-like experience (offline mode, push notifications, home screen icon) directly in the browser, without the friction of an app store download. For many retailers, a high-performance PWA yields better ROI than a native app.
                 </p>
 
-                <div className="bg-blue-50 p-8 rounded-2xl mt-12">
+                <div className="bg-primary/5 p-8 rounded-2xl mt-12">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Audit Your Mobile Experience</h3>
                   <p className="text-muted-foreground mb-6">
                     We can perform a comprehensive mobile audit, identifying performance bottlenecks and UX friction points that are costing you sales.
                   </p>
                   <Link href="/contact">
-                    <button className="px-6 py-3 bg-blue-600 text-charcoal font-bold rounded-full hover:bg-blue-700 transition-colors">
+                    <button className="px-6 py-3 bg-primary text-charcoal font-bold rounded-full hover:bg-primary-hover transition-colors">
                       Request Mobile Audit
                     </button>
                   </Link>

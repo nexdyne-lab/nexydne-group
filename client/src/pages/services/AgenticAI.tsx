@@ -41,7 +41,7 @@ export default function AgenticAI() {
       </section>
 
       {/* Key Metrics */}
-      <section className="py-16 bg-slate-50 border-b border-slate-200">
+      <section className="py-16 bg-off-white border-b border-border">
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
@@ -98,7 +98,7 @@ export default function AgenticAI() {
       </section>
 
       {/* Our Approach Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-off-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-primary text-sm font-medium tracking-widest uppercase mb-4">
@@ -109,7 +109,7 @@ export default function AgenticAI() {
             </h2>
             
             <div className="space-y-12">
-              <div className="border-l-4 border-blue-600 pl-8">
+              <div className="border-l-4 border-primary pl-8">
                 <h3 className="text-xl font-bold text-charcoal mb-4">Use Case Discovery</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Not every process benefits equally from AI. We work with your teams to identify 
@@ -119,7 +119,7 @@ export default function AgenticAI() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-blue-600 pl-8">
+              <div className="border-l-4 border-primary pl-8">
                 <h3 className="text-xl font-bold text-charcoal mb-4">Solution Architecture</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   We design AI solutions that fit your technical environment and business constraints. 
@@ -129,7 +129,7 @@ export default function AgenticAI() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-blue-600 pl-8">
+              <div className="border-l-4 border-primary pl-8">
                 <h3 className="text-xl font-bold text-charcoal mb-4">Rapid Prototyping</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   We believe in proving value before scaling investment. Our rapid prototyping 
@@ -139,7 +139,7 @@ export default function AgenticAI() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-blue-600 pl-8">
+              <div className="border-l-4 border-primary pl-8">
                 <h3 className="text-xl font-bold text-charcoal mb-4">Production Deployment</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Moving from prototype to production requires attention to reliability, security, 
@@ -190,10 +190,10 @@ export default function AgenticAI() {
       </section>
 
       {/* Use Cases Section */}
-      <section className="py-20 bg-slate-900 text-white">
+      <section className="py-20 bg-charcoal text-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-blue-400 text-sm font-medium tracking-widest uppercase mb-4">
+            <p className="text-primary text-sm font-medium tracking-widest uppercase mb-4">
               Use Cases
             </p>
             <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold mb-12">
@@ -201,7 +201,7 @@ export default function AgenticAI() {
             </h2>
             
             <div className="space-y-8">
-              <div className="border-l-4 border-blue-400 pl-8">
+              <div className="border-l-4 border-primary pl-8">
                 <h3 className="text-xl font-bold mb-3">Professional Services</h3>
                 <p className="text-muted-foreground/50 leading-relaxed">
                   AI agents that automate document review, extract key terms from contracts, 
@@ -211,7 +211,7 @@ export default function AgenticAI() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-blue-400 pl-8">
+              <div className="border-l-4 border-primary pl-8">
                 <h3 className="text-xl font-bold mb-3">Financial Services</h3>
                 <p className="text-muted-foreground/50 leading-relaxed">
                   Intelligent systems for loan document processing, customer service automation, 
@@ -220,7 +220,7 @@ export default function AgenticAI() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-blue-400 pl-8">
+              <div className="border-l-4 border-primary pl-8">
                 <h3 className="text-xl font-bold mb-3">Healthcare</h3>
                 <p className="text-muted-foreground/50 leading-relaxed">
                   AI applications for clinical documentation, patient communication, appointment 
@@ -229,7 +229,7 @@ export default function AgenticAI() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-blue-400 pl-8">
+              <div className="border-l-4 border-primary pl-8">
                 <h3 className="text-xl font-bold mb-3">Manufacturing & Distribution</h3>
                 <p className="text-muted-foreground/50 leading-relaxed">
                   Predictive maintenance systems, demand forecasting, quality inspection automation, 
@@ -265,7 +265,7 @@ export default function AgenticAI() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-off-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-6">
@@ -279,7 +279,7 @@ export default function AgenticAI() {
                 Schedule an AI Discovery Session
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
-              <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center justify-center px-8 py-4 border border-slate-300 text-charcoal/80 font-semibold rounded-full hover:bg-slate-100 transition-colors">
+              <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center justify-center px-8 py-4 border border-border text-charcoal/80 font-semibold rounded-full hover:bg-subtle transition-colors">
                 Explore AI & Technology
               </Link>
             </div>

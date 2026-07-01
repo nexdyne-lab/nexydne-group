@@ -14,9 +14,9 @@ export default function AlgorithmicTerritoryPlanning() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-slate-900 text-white py-16 md:py-24">
+      <section className="bg-charcoal text-white py-16 md:py-24">
         <div className="container max-w-4xl mx-auto px-4">
-          <Link href="/capabilities/growth-marketing-sales/sales-excellence" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 mb-8 transition-colors">
+          <Link href="/capabilities/growth-marketing-sales/sales-excellence" className="inline-flex items-center gap-2 text-primary hover:text-primary mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Sales Excellence
           </Link>
@@ -50,7 +50,7 @@ export default function AlgorithmicTerritoryPlanning() {
       <article className="py-16">
         <div className="container max-w-3xl mx-auto px-4">
           {/* Featured Image */}
-          <div className="aspect-video bg-slate-100 rounded-lg mb-12 overflow-hidden">
+          <div className="aspect-video bg-subtle rounded-lg mb-12 overflow-hidden">
             <img 
               src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop" 
               alt="Geospatial Data Visualization" 
@@ -75,7 +75,7 @@ export default function AlgorithmicTerritoryPlanning() {
               We approach territory design by building a "TAM Graph." This is a comprehensive map of every potential buyer in your market, enriched with signals that indicate purchase intent.
             </p>
 
-            <div className="bg-slate-50 border-l-4 border-blue-500 p-6 my-8">
+            <div className="bg-off-white border-l-4 border-primary p-6 my-8">
               <h3 className="text-xl font-bold text-charcoal mb-4">Enrichment Signals</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Technographics:</strong> Do they use a competitor's product? Is that contract expiring soon?</li>
@@ -113,22 +113,22 @@ export default function AlgorithmicTerritoryPlanning() {
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 bg-slate-900 rounded-lg text-white">
+          <div className="mt-16 p-8 bg-charcoal rounded-lg text-white">
             <h3 className="text-2xl font-bold mb-4">Optimize your sales coverage</h3>
             <p className="text-muted-foreground/50 mb-6">
               NexDyne helps sales organizations build balanced, high-performance territories using advanced geospatial analytics.
             </p>
             <Link href="/contact">
-              <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors">
+              <button className="px-6 py-3 bg-primary hover:bg-primary-hover text-white rounded-lg font-semibold transition-colors">
                 Start Planning
               </button>
             </Link>
           </div>
 
           {/* Author Info */}
-          <div className="mt-12 pt-8 border-t border-slate-200">
+          <div className="mt-12 pt-8 border-t border-border">
             <div className="flex items-start gap-4">
-              <div className="w-16 h-16 bg-slate-200 rounded-full flex-shrink-0 overflow-hidden">
+              <div className="w-16 h-16 bg-grey rounded-full flex-shrink-0 overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" 
                   alt="Marcus Thorne" 
@@ -156,7 +156,7 @@ export default function AlgorithmicTerritoryPlanning() {
             <div className="grid md:grid-cols-2 gap-8">
               <Link href="/insights/ai-sales-forecasting">
                 <div className="group cursor-pointer">
-                  <div className="aspect-video bg-slate-200 rounded-lg mb-4 overflow-hidden">
+                  <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
                       src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop" 
                       alt="AI Sales Forecasting" 
@@ -176,7 +176,7 @@ export default function AlgorithmicTerritoryPlanning() {
               </Link>
               <Link href="/insights/modern-sales-stack">
                 <div className="group cursor-pointer">
-                  <div className="aspect-video bg-slate-200 rounded-lg mb-4 overflow-hidden">
+                  <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
                       src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop" 
                       alt="Modern Sales Stack" 

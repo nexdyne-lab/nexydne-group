@@ -48,7 +48,7 @@ export default function ChurnPredictionPlaybook() {
               </span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
+            <h1 className="text-[2rem] md:text-[2.5rem] lg:text-[2.75rem] font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
               The Churn Prediction Playbook for Mid-Market SaaS
             </h1>
             
@@ -95,7 +95,7 @@ export default function ChurnPredictionPlaybook() {
                 This playbook walks through the practical steps to build and deploy a churn prediction system that actually drives retention outcomes.
               </p>
 
-              <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">Step 1: Define Your Churn Events</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">Step 1: Define Your Churn Events</h2>
 
               <p>
                 Before building any models, you need a clear definition of what constitutes "churn" for your business. This sounds obvious, but it's where many projects go wrong.
@@ -116,7 +116,7 @@ export default function ChurnPredictionPlaybook() {
                 For most SaaS companies, we recommend starting with explicit cancellation as your primary churn event. It's unambiguous and gives you a clear target to predict. You can add nuance (downgrades, inactivity) later.
               </p>
 
-              <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">Step 2: Assemble Your Feature Set</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">Step 2: Assemble Your Feature Set</h2>
 
               <p>
                 The features you use to predict churn are more important than the algorithm you choose. Based on our experience across 50+ SaaS churn projects, here are the feature categories that consistently drive predictive power:
@@ -215,7 +215,7 @@ export default function ChurnPredictionPlaybook() {
                 </ul>
               </div>
 
-              <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">Step 3: Choose Your Prediction Horizon</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">Step 3: Choose Your Prediction Horizon</h2>
 
               <p>
                 How far in advance do you want to predict churn? This decision involves a trade-off:
@@ -230,7 +230,7 @@ export default function ChurnPredictionPlaybook() {
                 For most mid-market SaaS companies, we recommend a <strong>60-day prediction horizon</strong>. This provides enough lead time for meaningful intervention while maintaining reasonable accuracy.
               </p>
 
-              <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">Step 4: Build and Validate Your Model</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">Step 4: Build and Validate Your Model</h2>
 
               <p>
                 With your features assembled and horizon defined, it's time to build the model. A few practical recommendations:
@@ -261,7 +261,7 @@ export default function ChurnPredictionPlaybook() {
                 Use time-based cross-validation to simulate real-world deployment. Train on historical data, validate on future data. This prevents data leakage and gives you realistic performance estimates.
               </p>
 
-              <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">Step 5: Make It Actionable</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">Step 5: Make It Actionable</h2>
 
               <p>
                 A churn prediction model is worthless if it doesn't drive action. The final step is connecting predictions to interventions.
@@ -305,7 +305,7 @@ export default function ChurnPredictionPlaybook() {
                 Develop specific playbooks for each risk tier and churn driver. If the model identifies "declining usage" as the primary risk factor, the intervention should address that specifically—perhaps a training session or feature walkthrough—rather than a generic discount offer.
               </p>
 
-              <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">Measuring Success</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">Measuring Success</h2>
 
               <p>
                 Track these metrics to evaluate your churn prediction program:
@@ -318,7 +318,7 @@ export default function ChurnPredictionPlaybook() {
                 <li><strong>Efficiency:</strong> CSM time spent on high-risk vs. low-risk accounts</li>
               </ul>
 
-              <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">The Bottom Line</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">The Bottom Line</h2>
 
               <p>
                 Churn prediction isn't magic—it's applied data science. The companies that succeed are those that invest in the fundamentals: clean data, thoughtful feature engineering, and tight integration between predictions and actions.

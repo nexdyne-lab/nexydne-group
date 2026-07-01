@@ -97,7 +97,7 @@ export default function CustomerIntelligenceInsights() {
               Insights
             </span>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl eb-garamond font-bold tracking-tight text-charcoal leading-[1.1] mb-4 max-w-4xl">
+            <h1 className="text-[2.25rem] md:text-[2.75rem] lg:text-[3.25rem] font-bold tracking-tight text-charcoal leading-[1.1] mb-4 max-w-4xl">
               Customer Intelligence Insights
             </h1>
             
@@ -118,7 +118,7 @@ export default function CustomerIntelligenceInsights() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl eb-garamond font-bold text-charcoal">Featured Insights</h2>
+            <h2 className="text-2xl font-bold text-charcoal">Featured Insights</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-10">
@@ -172,7 +172,7 @@ export default function CustomerIntelligenceInsights() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl eb-garamond font-bold">More Insights</h2>
+            <h2 className="text-2xl font-bold">More Insights</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-10">
@@ -226,7 +226,7 @@ export default function CustomerIntelligenceInsights() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl eb-garamond font-bold mb-6">
+              <h2 className="text-3xl md:text-[2rem] font-bold mb-6">
                 Stay ahead of the curve
               </h2>
               <p className="text-lg text-charcoal/60 leading-relaxed mb-8">
@@ -253,7 +253,7 @@ export default function CustomerIntelligenceInsights() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
+              <h2 className="text-[2rem] md:text-[2.5rem] font-bold text-charcoal mb-6">
                 Ready to put these insights into action?
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed mb-10">

@@ -114,13 +114,13 @@ export function TestimonialCard({
   initials,
   variant = "light"
 }: Testimonial & { variant?: "light" | "dark" }) {
-  const bgColor = variant === "light" ? "bg-slate-50" : "bg-slate-800";
+  const bgColor = variant === "light" ? "bg-off-white" : "bg-charcoal";
   const textColor = variant === "light" ? "text-charcoal/80" : "text-white/90";
   const authorColor = variant === "light" ? "text-charcoal" : "text-white";
   const subtitleColor = variant === "light" ? "text-muted-foreground" : "text-white/70";
-  const borderColor = variant === "light" ? "border-slate-200" : "border-white/10";
-  const quoteColor = variant === "light" ? "text-primary" : "text-blue-400";
-  const avatarBg = variant === "light" ? "bg-slate-300" : "bg-slate-600";
+  const borderColor = variant === "light" ? "border-border" : "border-white/10";
+  const quoteColor = variant === "light" ? "text-primary" : "text-primary";
+  const avatarBg = variant === "light" ? "bg-grey" : "bg-charcoal";
   const avatarText = variant === "light" ? "text-muted-foreground" : "text-white";
 
   return (

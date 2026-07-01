@@ -77,16 +77,16 @@ export default function MarketingROI() {
       </section>
 
       {/* Our Approach Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-off-white">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             <div className="order-2 md:order-1">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl sm:rounded-2xl transform -rotate-3 opacity-20"></div>
-                <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-xl relative z-10 border border-slate-100">
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-primary rounded-xl sm:rounded-2xl transform -rotate-3 opacity-20"></div>
+                <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-xl relative z-10 border border-border">
                   <div className="space-y-6">
-                    <div className="flex items-center gap-4 p-4 bg-slate-50 rounded-lg border border-slate-100">
-                      <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="flex items-center gap-4 p-4 bg-off-white rounded-lg border border-border">
+                      <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
                         <PieChart className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                       </div>
                       <div>
@@ -94,7 +94,7 @@ export default function MarketingROI() {
                         <p className="text-xs text-muted-foreground">Linear, Time Decay, U-Shaped Models</p>
                       </div>
                     </div>
-                    <div className="flex items-center gap-4 p-4 bg-slate-50 rounded-lg border border-slate-100">
+                    <div className="flex items-center gap-4 p-4 bg-off-white rounded-lg border border-border">
                       <div className="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center flex-shrink-0">
                         <Calculator className="w-4 h-4 sm:w-5 sm:h-5 text-secondary" />
                       </div>
@@ -103,7 +103,7 @@ export default function MarketingROI() {
                         <p className="text-xs text-muted-foreground">Statistical analysis for offline & online impact</p>
                       </div>
                     </div>
-                    <div className="flex items-center gap-4 p-4 bg-slate-50 rounded-lg border border-slate-100">
+                    <div className="flex items-center gap-4 p-4 bg-off-white rounded-lg border border-border">
                       <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
                         <BarChart3 className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600" />
                       </div>
@@ -152,7 +152,7 @@ export default function MarketingROI() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-white border-t border-slate-100">
+      <section className="py-20 bg-white border-t border-border">
         <div className="container mx-auto max-w-4xl px-4 text-center">
           <h2 className="text-3xl font-bold text-base mb-6 eb-garamond">
             Maximize Your Marketing Impact

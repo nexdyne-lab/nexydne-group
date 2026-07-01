@@ -15,7 +15,7 @@ export default function TechnicalArchitecture() {
       serviceName="Technical Architecture"
       serviceSlug="technical-architecture"
       heroSubtitle="Design the data architecture and infrastructure required to support enterprise-grade LLMs, connecting foundation models with your proprietary data securely. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-generative-ai.7ab8e23c.jpg"
+      heroImage="/blog-ai-agents.eba3d75f.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Technical Architecture engagements delivered" },

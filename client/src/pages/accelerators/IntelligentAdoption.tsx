@@ -205,7 +205,7 @@ export default function IntelligentAdoption() {
               <motion.div 
                 key={i}
                 variants={fadeInUp}
-                className="group bg-slate-50 rounded-2xl p-8 hover:bg-slate-100 transition-colors"
+                className="group bg-off-white rounded-2xl p-8 hover:bg-subtle transition-colors"
               >
                 <div className="w-14 h-14 bg-emerald-900 rounded-xl flex items-center justify-center mb-6">
                   <capability.icon className="w-7 h-7 text-white" />
@@ -227,7 +227,7 @@ export default function IntelligentAdoption() {
       </section>
 
       {/* Adoption Framework Section */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-off-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div 
             initial="hidden"
@@ -258,7 +258,7 @@ export default function IntelligentAdoption() {
               <motion.div 
                 key={i}
                 variants={fadeInUp}
-                className="bg-white rounded-2xl p-8 border border-slate-200 hover:border-emerald-300 hover:shadow-lg transition-all"
+                className="bg-white rounded-2xl p-8 border border-border hover:border-emerald-300 hover:shadow-lg transition-all"
               >
                 <div className="text-xs font-bold tracking-[0.2em] text-emerald-600 uppercase mb-2">
                   Phase {i + 1}
@@ -266,7 +266,7 @@ export default function IntelligentAdoption() {
                 <h3 className="text-xl font-bold text-charcoal mb-2">{phase.phase}</h3>
                 <p className="text-sm text-muted-foreground mb-4">{phase.title}</p>
                 <p className="text-muted-foreground text-sm mb-6 leading-relaxed">{phase.description}</p>
-                <div className="pt-4 border-t border-slate-100">
+                <div className="pt-4 border-t border-border">
                   <span className="text-xs font-medium tracking-wider text-muted-foreground uppercase mb-2 block">Key Activities</span>
                   <ul className="space-y-1">
                     {phase.activities.map((activity, j) => (
@@ -316,7 +316,7 @@ export default function IntelligentAdoption() {
                 <motion.div 
                   key={i}
                   variants={fadeInUp}
-                  className="bg-slate-50 rounded-xl p-6"
+                  className="bg-off-white rounded-xl p-6"
                 >
                   <h3 className="text-lg font-bold text-charcoal mb-2">{factor.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{factor.description}</p>
@@ -328,7 +328,7 @@ export default function IntelligentAdoption() {
       </section>
 
       {/* Use Cases Section */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-off-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div 
             initial="hidden"
@@ -367,7 +367,7 @@ export default function IntelligentAdoption() {
                 <h3 className="text-xl font-bold mb-4">{useCase.title}</h3>
                 <p className="text-white/70 mb-6 leading-relaxed">{useCase.description}</p>
                 <div className="pt-4 border-t border-white/10">
-                  <div className="text-2xl font-bold text-teal-400">{useCase.results}</div>
+                  <div className="text-2xl font-bold text-primary">{useCase.results}</div>
                 </div>
               </motion.div>
             ))}

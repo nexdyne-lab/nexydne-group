@@ -12,7 +12,7 @@ export default function CloudMigrationArchitecture() {
       serviceName="Cloud Migration Architecture"
       serviceSlug="cloud-migration-architecture"
       heroSubtitle="Most cloud migrations fail at the strategy step, not the execution step. We rebuild the workload inventory, run every application through a defensible 6Rs decision, design the target architecture, and sequence the migration so cutover risk is named before the change window opens."
-      heroImage="/enterprise-transformation-hero.jpg"
+      heroImage="/solution-enterprise-transformation.0a0f2624.webp"
       experienceStats={[
         { number: "40-60%", label: "Fewer cutover incidents on programs that earn the 6Rs decision first" },
         { number: "10-20%", label: "Of portfolio retired entirely instead of paying to lift it" },

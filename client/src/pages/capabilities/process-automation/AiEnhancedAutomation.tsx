@@ -15,7 +15,7 @@ export default function AiEnhancedAutomation() {
       serviceName="AI-Enhanced Automation"
       serviceSlug="ai-enhanced-automation"
       heroSubtitle="Combine RPA with machine learning for intelligent automation that handles exceptions, makes decisions, and improves over time. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-process-automation.b1f9c248.jpg"
+      heroImage="/blog-process-mining.50313a07.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "AI-Enhanced Automation engagements delivered" },
@@ -68,14 +68,14 @@ export default function AiEnhancedAutomation() {
           title: "AI-powered audit automation at a Big Four accounting firm",
           industry: "Professional Services",
           metric: "45%",
-          image: "/case-accounting-audit.5d8e23c1.jpg",
+          image: "/case-accountants-audit.1c87a151.jpg",
         },
         {
           slug: "insurance-claims-processing",
           title: "Reinventing claims processing for a top-five insurer",
           industry: "Financial Services",
           metric: "55%",
-          image: "/case-insurance-claims.b1f9c248.jpg",
+          image: "/case-insurance-claims.399e5d4b.jpg",
         },
       ]}
       relatedServices={[

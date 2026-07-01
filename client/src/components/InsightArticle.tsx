@@ -28,6 +28,8 @@ interface InsightArticleProps {
   relatedInsights?: RelatedInsight[];
   relatedContent?: { title: string; href: string; category: string }[];
   authors?: { name: string; role: string }[];
+  keyTakeaways?: string[];
+  references?: { label: string; url: string }[];
 }
 
 export default function InsightArticle({
@@ -42,7 +44,9 @@ export default function InsightArticle({
   children,
   relatedInsights = [],
   relatedContent = [],
-  authors = []
+  authors = [],
+  keyTakeaways = [],
+  references = []
 }: InsightArticleProps) {
   // Support both old and new date prop names
   const displayDate = publishDate || date || "";
@@ -63,7 +67,7 @@ export default function InsightArticle({
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-20 md:py-24 bg-subtle">
+      <section className="nx-section bg-subtle">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16">
 
           {/* Back Link — text-only, no icon */}
@@ -84,7 +88,7 @@ export default function InsightArticle({
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1, duration: 0.4 }}
-              className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-5 cursor-pointer"
+              className="block nx-eyebrow text-primary mb-5 cursor-pointer"
             >
               {category}
             </motion.span>
@@ -106,7 +110,7 @@ export default function InsightArticle({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="text-lg sm:text-xl text-charcoal/70 max-w-3xl mb-8 leading-[1.7]"
+            className="nx-lead text-charcoal/70 max-w-3xl mb-8"
           >
             {subtitle}
           </motion.p>
@@ -142,44 +146,76 @@ export default function InsightArticle({
       )}
 
       {/* Article Body */}
-      <article className="py-20 md:py-24">
+      <article className="nx-section">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16">
           <div className="max-w-3xl mx-auto">
+            {/* Key takeaways */}
+            {keyTakeaways.length > 0 && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.55, duration: 0.5 }}
+                className="mb-12 border border-border bg-subtle p-7 md:p-8"
+              >
+                <span className="block nx-eyebrow text-charcoal/60 mb-4">Key takeaways</span>
+                <ul className="space-y-3">
+                  {keyTakeaways.map((t, i) => (
+                    <li key={i} className="flex gap-3 text-[15px] text-charcoal/85 leading-relaxed">
+                      <span className="text-primary font-semibold shrink-0">—</span>
+                      <span>{t}</span>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            )}
+
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.5 }}
-              className="prose prose-lg max-w-none
+              className="nx-article prose prose-lg max-w-none
                 prose-headings:font-normal prose-headings:text-charcoal
-                prose-h2:text-2xl prose-h2:sm:text-3xl prose-h2:mt-12 prose-h2:mb-6
-                prose-h3:text-xl prose-h3:sm:text-2xl prose-h3:mt-8 prose-h3:mb-4
-                prose-p:text-charcoal/80 prose-p:leading-relaxed prose-p:mb-6
-                prose-li:text-charcoal/80
                 prose-strong:text-charcoal prose-strong:font-semibold
-                prose-a:text-primary prose-a:no-underline hover:prose-a:underline
-                prose-blockquote:border-l-4 prose-blockquote:border-charcoal/20
-                prose-blockquote:bg-subtle prose-blockquote:py-4 prose-blockquote:px-6
-                prose-blockquote:not-italic prose-blockquote:text-charcoal/80"
+                prose-a:text-primary prose-a:no-underline hover:prose-a:underline"
             >
               {children}
             </motion.div>
+
+            {/* Sources & references */}
+            {references.length > 0 && (
+              <div id="references" className="mt-16 pt-10 border-t border-border">
+                <span className="block nx-eyebrow text-charcoal/60 mb-6">Sources &amp; references</span>
+                <ol className="space-y-3">
+                  {references.map((r, i) => (
+                    <li key={i} id={`ref-${i + 1}`} className="flex gap-3 text-[13px] leading-relaxed scroll-mt-28">
+                      <span className="text-charcoal/45 font-medium shrink-0 tabular-nums">{i + 1}.</span>
+                      <a
+                        href={r.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-charcoal/70 hover:text-primary transition-colors break-words underline decoration-charcoal/20 underline-offset-2 hover:decoration-primary"
+                      >
+                        {r.label}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            )}
           </div>
         </div>
       </article>
 
       {/* CTA Section — light background, no dark bg-base */}
-      <section className="py-20 md:py-24 bg-subtle border-t border-charcoal/10">
+      <section className="nx-section bg-subtle border-t border-charcoal/10">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16 text-center">
-          <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+          <span className="block nx-eyebrow text-charcoal/60 mb-5">
             Take the Next Step
           </span>
-          <h2
-            className="text-3xl sm:text-4xl md:text-[2.5rem] text-charcoal leading-[1.15] mb-6"
-            style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-          >
+          <h2 className="nx-h2 text-charcoal mb-6">
             Ready to Apply These Insights?
           </h2>
-          <p className="text-base sm:text-lg text-charcoal/80 mb-10 max-w-2xl mx-auto leading-[1.7]">
+          <p className="nx-lead text-charcoal/80 mb-10 max-w-2xl mx-auto">
             Our experts can help you implement these strategies for your business.
           </p>
           <Link href="/contact">
@@ -192,15 +228,12 @@ export default function InsightArticle({
 
       {/* Related Insights — flat cards, no rounded, no shadow */}
       {allRelatedInsights.length > 0 && (
-        <section className="py-20 md:py-24 bg-white">
+        <section className="nx-section bg-white">
           <div className="px-6 sm:px-8 md:px-12 lg:px-16">
-            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Continue Reading
             </span>
-            <h2
-              className="text-3xl sm:text-4xl md:text-[2.5rem] text-charcoal leading-[1.15] mb-14"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
+            <h2 className="nx-h2 text-charcoal mb-14">
               Related Insights
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
@@ -216,13 +249,10 @@ export default function InsightArticle({
                       />
                     </div>
                     <div className="pt-6">
-                      <span className="text-[11px] font-semibold uppercase tracking-[0.15em] text-primary">
+                      <span className="nx-eyebrow text-primary">
                         {insight.category}
                       </span>
-                      <h3
-                        className="mt-2 text-lg text-charcoal leading-tight group-hover:text-primary transition-colors"
-                        style={{ fontWeight: 500, letterSpacing: "-0.01em" }}
-                      >
+                      <h3 className="mt-2 nx-h3 text-charcoal group-hover:text-primary transition-colors">
                         {insight.title}
                       </h3>
                     </div>

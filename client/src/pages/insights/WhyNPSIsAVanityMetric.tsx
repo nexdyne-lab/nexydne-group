@@ -25,7 +25,7 @@ export default function WhyNPSIsAVanityMetric() {
           </div>
           
           <div className="flex flex-wrap gap-4 mb-6">
-            <span className="inline-flex items-center gap-2 text-sm text-blue-300 font-medium px-3 py-1 rounded-full bg-blue-900/30 border border-blue-800">
+            <span className="inline-flex items-center gap-2 text-sm text-primary font-medium px-3 py-1 rounded-full bg-charcoal/30 border border-primary">
               <Tag className="w-4 h-4" />
               Data Science
             </span>
@@ -92,7 +92,7 @@ export default function WhyNPSIsAVanityMetric() {
               NPS is a lagging indicator. It measures sentiment <em>after</em> an interaction has occurred. By the time a customer tells you they are unhappy (a Detractor score), they have likely already made the decision to leave. Relying on NPS to prevent churn is like driving a car by looking exclusively in the rearview mirror.
             </p>
 
-            <div className="bg-blue-50 border-l-4 border-secondary p-6 my-8 rounded-r-lg">
+            <div className="bg-primary/5 border-l-4 border-secondary p-6 my-8 rounded-r-lg">
               <h3 className="text-lg font-bold text-base mt-0 mb-2">The "Silent Churn" Phenomenon</h3>
               <p className="mb-0 text-charcoal/80">
                 Our research shows that 65% of customers who churn never respond to a survey. They simply stop logging in, stop using key features, and then cancel. NPS completely misses this "silent majority."

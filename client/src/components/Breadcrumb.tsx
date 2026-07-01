@@ -52,21 +52,21 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
         {items.map((item, index) => (
           <li key={index} className="flex items-center">
             {item.href ? (
-              <Link 
-                href={item.href} 
-                className="hover:text-cyan-600 transition-all duration-300 ease-out relative group px-1 py-0.5 rounded"
+              <Link
+                href={item.href}
+                className="hover:text-primary transition-colors duration-300 ease-out relative group px-1 py-0.5 rounded"
               >
                 <span className="relative z-10">{item.label}</span>
                 {/* Underline animation */}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-600 transition-all duration-300 ease-out group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-[width] duration-300 ease-out group-hover:w-full"></span>
                 {/* Subtle background glow on hover */}
-                <span className="absolute inset-0 bg-cyan-50 opacity-0 rounded transition-opacity duration-300 ease-out group-hover:opacity-100 -z-10"></span>
+                <span className="absolute inset-0 bg-primary/5 opacity-0 rounded transition-opacity duration-300 ease-out group-hover:opacity-100 -z-10"></span>
               </Link>
             ) : (
               <span className="text-charcoal font-medium px-1 py-0.5">{item.label}</span>
             )}
             {index < items.length - 1 && (
-              <span className="mx-1.5 text-muted-foreground/70 transition-colors duration-300 group-hover:text-cyan-400">/</span>
+              <span className="mx-1.5 text-muted-foreground/70 transition-colors duration-300 group-hover:text-primary/60">/</span>
             )}
           </li>
         ))}

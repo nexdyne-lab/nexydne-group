@@ -44,7 +44,7 @@ export default function DataLakeToValueStream() {
       heroImageAlt="Data Lake to Value Stream"
       authorName="Dr. Amara Okonkwo"
       authorRole="Chief Technology Officer, NexDyne"
-      authorImage="/team/amara-okonkwo.jpg"
+      authorImage="https://placehold.co/160x160/242424/F7F9FC?text=AO"
       relatedInsights={relatedInsights}
     >
       <p>

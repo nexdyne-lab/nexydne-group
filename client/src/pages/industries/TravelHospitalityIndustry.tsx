@@ -20,41 +20,41 @@ export default function TravelHospitalityIndustry() {
       challenges={[
         {
           title: "Revenue management precision",
-          body: "Volatile demand, channel fragmentation, and competitive transparency mean static pricing leaves significant revenue on the table. Modern revenue management, dynamic pricing, and integrated channel strategy are now baseline."
+          body: "Volatile demand and price transparency mean static pricing leaves revenue on the table — modern revenue management is now baseline."
         },
         {
           title: "Guest experience expectations",
-          body: "Travelers expect end-to-end digital journeys, personalized service, and friction-free recovery when things go wrong. Modern guest-data platforms and journey-level orchestration are how leaders are converting expectation into loyalty."
+          body: "Travelers expect end-to-end digital journeys and friction-free recovery; guest-data platforms convert expectation into loyalty."
         },
         {
           title: "Labor and operating productivity",
-          body: "Frontline labor scarcity and rising cost are squeezing service operations. AI-assisted scheduling, intelligent automation of back-office work, and connected-worker tools are how leaders are protecting both service and margin."
+          body: "Frontline labor scarcity is squeezing service operations; AI scheduling and back-office automation protect both service and margin."
         },
         {
           title: "Loyalty and direct relationships",
-          body: "OTAs and aggregators capture the customer relationship by default. Modern loyalty programs and direct-channel investment are how brands rebuild ownership of the guest journey and the data behind it."
+          body: "OTAs capture the customer by default — loyalty programs and direct-channel investment rebuild ownership of the guest journey."
         }
       ]}
       capabilities={[
         {
           name: "Pricing & Revenue Management",
           href: "/capabilities/pricing-revenue",
-          blurb: "Engineer the pricing, distribution, and channel decisions that protect RevPAR, RASM, and unit economics in a high-volatility environment."
+          blurb: "The pricing, distribution, and channel decisions that protect RevPAR and unit economics in a volatile market."
         },
         {
           name: "Customer Intelligence",
           href: "/capabilities/customer-intelligence",
-          blurb: "Build the guest-data foundation, journey analytics, and personalization that translate travel intent into loyalty and lifetime value."
+          blurb: "The guest-data foundation, journey analytics, and personalization that turn travel intent into loyalty and lifetime value."
         },
         {
           name: "Operations Excellence",
           href: "/capabilities/operations-excellence",
-          blurb: "Modernize property, network, and back-office operations with AI-powered automation that protects margin while improving the guest experience."
+          blurb: "Modernize property, network, and back-office operations with AI automation that protects margin and improves the guest experience."
         },
         {
           name: "Data Transformation",
           href: "/capabilities/data-transformation",
-          blurb: "Unify reservation, loyalty, and operations data into a single fabric that powers modern AI use cases across the customer and operating model."
+          blurb: "Unify reservation, loyalty, and operations data into one fabric for modern AI across the customer and operating model."
         }
       ]}
       experienceStats={[

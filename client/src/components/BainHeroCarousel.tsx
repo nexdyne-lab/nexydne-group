@@ -302,7 +302,7 @@ export function BainHeroCarousel() {
               <p className="mb-6 text-[1rem] md:text-[1.15rem] font-semibold tracking-[-0.01em] text-white/90 drop-shadow-sm">
                 {slide.eyebrow}
               </p>
-              <h1 className="whitespace-pre-line font-bold tracking-[-0.035em] leading-[0.97] text-[clamp(2.6rem,6.6vw,5.5rem)] drop-shadow-[0_2px_20px_rgba(0,0,0,0.25)]">
+              <h1 className="whitespace-pre-line font-bold tracking-[-0.035em] leading-[0.99] text-[clamp(2.4rem,5.4vw,5rem)] drop-shadow-[0_2px_20px_rgba(0,0,0,0.25)]">
                 {slide.headline}
               </h1>
               <Link href={slide.cta.href}>

@@ -12,7 +12,7 @@ export default function SecurityCompliance() {
       serviceName="Security & Compliance"
       serviceSlug="security-and-compliance"
       heroSubtitle="Embed security into every layer of your technology stack with zero-trust architectures, compliance automation, and proactive threat management — security as an engineered discipline, not an annual scramble."
-      heroImage="/enterprise-transformation-hero.jpg"
+      heroImage="/solution-enterprise-transformation.0a0f2624.webp"
       experienceStats={[
         { number: "99.9%", label: "Reduction in critical vulnerabilities" },
         { number: "50%", label: "Decrease in compliance reporting time" },

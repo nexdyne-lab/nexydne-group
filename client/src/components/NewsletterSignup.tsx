@@ -57,19 +57,19 @@ export default function NewsletterSignup() {
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email address"
             disabled={status === "submitting" || status === "success"}
-            className="flex-1 px-4 py-3 rounded-md text-charcoal placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-cyan-400 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="flex-1 px-4 py-3 rounded-md text-charcoal placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
           />
           <button
             type="submit"
             disabled={status === "submitting" || status === "success"}
-            className="px-8 py-3 bg-cyan-400 text-charcoal font-semibold rounded-md hover:bg-cyan-300 transition-colors disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
+            className="px-8 py-3 bg-primary text-charcoal font-semibold rounded-md hover:bg-primary transition-colors disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap"
           >
             {status === "submitting" ? "Subscribing..." : status === "success" ? "Subscribed!" : "Subscribe"}
           </button>
         </form>
         
         {message && (
-          <p className={`mt-4 text-sm ${status === "error" ? "text-primary" : "text-cyan-200"}`}>
+          <p className={`mt-4 text-sm ${status === "error" ? "text-primary" : "text-primary"}`}>
             {message}
           </p>
         )}

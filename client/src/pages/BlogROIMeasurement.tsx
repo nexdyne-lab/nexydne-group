@@ -33,17 +33,17 @@ export default function BlogROIMeasurement() {
           
           {/* Stats Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:p-5 md:p-6 mb-6 sm:mb-8 md:mb-12">
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-4 sm:p-5 md:p-6 rounded-lg border border-blue-100">
+            <div className="bg-gradient-to-br from-primary to-primary p-4 sm:p-5 md:p-6 rounded-lg border border-primary">
               <div className="text-4xl font-bold text-primary mb-2">280%</div>
               <div className="text-sm font-semibold text-charcoal mb-1">Average ROI</div>
               <div className="text-xs text-muted-foreground">Tier 1 projects over 18 months</div>
             </div>
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-4 sm:p-5 md:p-6 rounded-lg border border-blue-100">
+            <div className="bg-gradient-to-br from-primary to-primary p-4 sm:p-5 md:p-6 rounded-lg border border-primary">
               <div className="text-4xl font-bold text-primary mb-2">4.2x</div>
               <div className="text-sm font-semibold text-charcoal mb-1">Payback Multiple</div>
               <div className="text-xs text-muted-foreground">By month 24 for successful deployments</div>
             </div>
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-4 sm:p-5 md:p-6 rounded-lg border border-blue-100">
+            <div className="bg-gradient-to-br from-primary to-primary p-4 sm:p-5 md:p-6 rounded-lg border border-primary">
               <div className="text-4xl font-bold text-primary mb-2">9-14</div>
               <div className="text-sm font-semibold text-charcoal mb-1">Months to Breakeven</div>
               <div className="text-xs text-muted-foreground">Typical for $45K-$85K investments</div>
@@ -79,22 +79,22 @@ export default function BlogROIMeasurement() {
             {/* Tier 1 */}
             <div className="mb-6 sm:mb-8 md:mb-12">
               <div className="flex items-center gap-4 mb-6">
-                <div className="bg-gradient-to-br from-slate-700 to-slate-600 text-white px-4 py-2 rounded-md font-semibold">
+                <div className="bg-gradient-to-br from-charcoal to-charcoal text-white px-4 py-2 rounded-md font-semibold">
                   TIER 1: $45K-$85K
                 </div>
                 <span className="text-muted-foreground">Single process automation</span>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
-                <div className="bg-blue-50 p-4 rounded-lg">
+                <div className="bg-primary/5 p-4 rounded-lg">
                   <div className="text-2xl font-bold text-charcoal mb-1">Month 6</div>
                   <div className="text-sm text-muted-foreground">35-45% of projected benefits realized</div>
                 </div>
-                <div className="bg-blue-50 p-4 rounded-lg">
+                <div className="bg-primary/5 p-4 rounded-lg">
                   <div className="text-2xl font-bold text-charcoal mb-1">Month 12</div>
                   <div className="text-sm text-muted-foreground">70-85% of projected benefits realized</div>
                 </div>
-                <div className="bg-blue-50 p-4 rounded-lg">
+                <div className="bg-primary/5 p-4 rounded-lg">
                   <div className="text-2xl font-bold text-charcoal mb-1">Month 18</div>
                   <div className="text-sm text-muted-foreground">Full benefits + improvement gains</div>
                 </div>
@@ -112,22 +112,22 @@ export default function BlogROIMeasurement() {
             {/* Tier 2 */}
             <div className="mb-6 sm:mb-8 md:mb-12">
               <div className="flex items-center gap-4 mb-6">
-                <div className="bg-gradient-to-br from-slate-700 to-slate-600 text-white px-4 py-2 rounded-md font-semibold">
+                <div className="bg-gradient-to-br from-charcoal to-charcoal text-white px-4 py-2 rounded-md font-semibold">
                   TIER 2: $90K-$150K
                 </div>
                 <span className="text-muted-foreground">Multi-system integration</span>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
-                <div className="bg-blue-50 p-4 rounded-lg">
+                <div className="bg-primary/5 p-4 rounded-lg">
                   <div className="text-2xl font-bold text-charcoal mb-1">Month 6</div>
                   <div className="text-sm text-muted-foreground">25-35% of projected benefits realized</div>
                 </div>
-                <div className="bg-blue-50 p-4 rounded-lg">
+                <div className="bg-primary/5 p-4 rounded-lg">
                   <div className="text-2xl font-bold text-charcoal mb-1">Month 12</div>
                   <div className="text-sm text-muted-foreground">55-70% of projected benefits realized</div>
                 </div>
-                <div className="bg-blue-50 p-4 rounded-lg">
+                <div className="bg-primary/5 p-4 rounded-lg">
                   <div className="text-2xl font-bold text-charcoal mb-1">Month 24</div>
                   <div className="text-sm text-muted-foreground">Full benefits + process improvements</div>
                 </div>
@@ -145,22 +145,22 @@ export default function BlogROIMeasurement() {
             {/* Tier 3 */}
             <div>
               <div className="flex items-center gap-4 mb-6">
-                <div className="bg-gradient-to-br from-slate-700 to-slate-600 text-white px-4 py-2 rounded-md font-semibold">
+                <div className="bg-gradient-to-br from-charcoal to-charcoal text-white px-4 py-2 rounded-md font-semibold">
                   TIER 3: $160K-$250K
                 </div>
                 <span className="text-muted-foreground">Enterprise-wide transformation</span>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
-                <div className="bg-blue-50 p-4 rounded-lg">
+                <div className="bg-primary/5 p-4 rounded-lg">
                   <div className="text-2xl font-bold text-charcoal mb-1">Month 6</div>
                   <div className="text-sm text-muted-foreground">15-25% of projected benefits realized</div>
                 </div>
-                <div className="bg-blue-50 p-4 rounded-lg">
+                <div className="bg-primary/5 p-4 rounded-lg">
                   <div className="text-2xl font-bold text-charcoal mb-1">Month 12</div>
                   <div className="text-sm text-muted-foreground">45-60% of projected benefits realized</div>
                 </div>
-                <div className="bg-blue-50 p-4 rounded-lg">
+                <div className="bg-primary/5 p-4 rounded-lg">
                   <div className="text-2xl font-bold text-charcoal mb-1">Month 30</div>
                   <div className="text-sm text-muted-foreground">Full benefits + strategic advantages</div>
                 </div>
@@ -193,7 +193,7 @@ export default function BlogROIMeasurement() {
                 </p>
               </div>
 
-              <div className="border-l-4 border-cyan-400 pl-6">
+              <div className="border-l-4 border-primary pl-6">
                 <h3 className="text-xl font-semibold text-charcoal mb-2">Capacity increase (30-40% of total benefits)</h3>
                 <p className="text-charcoal/80 leading-relaxed mb-3">
                   Ability to serve more clients or process more transactions without adding staff. This often shows up as revenue growth rather than cost reduction.
@@ -203,7 +203,7 @@ export default function BlogROIMeasurement() {
                 </p>
               </div>
 
-              <div className="border-l-4 border-blue-400 pl-6">
+              <div className="border-l-4 border-primary pl-6">
                 <h3 className="text-xl font-semibold text-charcoal mb-2">Error reduction (15-20% of total benefits)</h3>
                 <p className="text-charcoal/80 leading-relaxed mb-3">
                   Fewer mistakes means less rework, fewer compliance issues, and better client satisfaction. Often underestimated in initial projections.
@@ -213,7 +213,7 @@ export default function BlogROIMeasurement() {
                 </p>
               </div>
 
-              <div className="border-l-4 border-indigo-400 pl-6">
+              <div className="border-l-4 border-primary pl-6">
                 <h3 className="text-xl font-semibold text-charcoal mb-2">Faster turnaround (5-10% of total benefits)</h3>
                 <p className="text-charcoal/80 leading-relaxed mb-3">
                   Completing work faster improves client satisfaction and can create competitive advantage in time-sensitive situations.
@@ -225,7 +225,7 @@ export default function BlogROIMeasurement() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-blue-50 to-blue-50 border-l-4 border-blue-500 p-4 sm:p-6 md:p-8 rounded-lg mb-5 sm:mb-6 md:mb-8">
+          <div className="bg-gradient-to-br from-primary to-primary border-l-4 border-primary p-4 sm:p-6 md:p-8 rounded-lg mb-5 sm:mb-6 md:mb-8">
             <h3 className="text-2xl font-bold text-charcoal mb-4">The hidden costs that reduce ROI</h3>
             <p className="text-charcoal/80 leading-relaxed mb-4">
               Honest ROI calculation includes ongoing costs that many vendors don't mention upfront:
@@ -298,7 +298,7 @@ export default function BlogROIMeasurement() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-slate-900 to-gray-800 text-white p-6 sm:p-6 sm:p-8 md:p-12 rounded-lg mt-12">
+          <div className="bg-gradient-to-br from-charcoal to-charcoal text-white p-6 sm:p-6 sm:p-8 md:p-12 rounded-lg mt-12">
             <h2 className="text-3xl font-bold mb-6">The bottom line on automation ROI</h2>
             <p className="text-lg leading-relaxed mb-6">
               Realistic automation projects for mid-sized businesses deliver 200-340% ROI over 18-30 months, with breakeven typically occurring at 9-16 months depending on project complexity. These returns are strong enough to justify investment without needing to promise unrealistic "400% in year one" results.
@@ -307,7 +307,7 @@ export default function BlogROIMeasurement() {
               The key to achieving these results is setting realistic expectations, measuring accurately from day one, and treating automation as a process improvement journey rather than a one-time technology deployment.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <a href="/contact" className="inline-block bg-cyan-400 text-charcoal px-8 py-3 rounded-md font-semibold hover:bg-cyan-300 transition-colors text-center">
+              <a href="/contact" className="inline-block bg-primary text-charcoal px-8 py-3 rounded-md font-semibold hover:bg-primary transition-colors text-center">
                 Discuss Your ROI Potential
               </a>
               <a href="/cases" className="inline-block bg-transparent border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white/10 transition-colors text-center">

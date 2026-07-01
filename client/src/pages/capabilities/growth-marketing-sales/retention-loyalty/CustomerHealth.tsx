@@ -84,12 +84,12 @@ export default function CustomerHealth() {
                 </ul>
               </div>
             </div>
-            <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-slate-100">
+            <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-border">
               <h3 className="text-xl font-bold text-charcoal mb-6">
                 Actionable Intelligence
               </h3>
               <div className="space-y-4">
-                <div className="p-4 bg-white rounded-lg sm:rounded-xl border border-slate-100 shadow-sm border-l-4 border-l-red-500">
+                <div className="p-4 bg-white rounded-lg sm:rounded-xl border border-border shadow-sm border-l-4 border-l-red-500">
                   <div className="flex justify-between items-start mb-2">
                     <h4 className="font-bold text-charcoal">Score: 0-40 (Critical)</h4>
                     <span className="text-xs font-bold text-primary bg-primary/5 px-2 py-1 rounded-full">CHURN RISK</span>
@@ -102,7 +102,7 @@ export default function CustomerHealth() {
                   </p>
                 </div>
 
-                <div className="p-4 bg-white rounded-lg sm:rounded-xl border border-slate-100 shadow-sm border-l-4 border-l-yellow-500">
+                <div className="p-4 bg-white rounded-lg sm:rounded-xl border border-border shadow-sm border-l-4 border-l-yellow-500">
                   <div className="flex justify-between items-start mb-2">
                     <h4 className="font-bold text-charcoal">Score: 41-70 (Neutral)</h4>
                     <span className="text-xs font-bold text-yellow-600 bg-yellow-50 px-2 py-1 rounded-full">STAGNANT</span>
@@ -115,7 +115,7 @@ export default function CustomerHealth() {
                   </p>
                 </div>
 
-                <div className="p-4 bg-white rounded-lg sm:rounded-xl border border-slate-100 shadow-sm border-l-4 border-l-green-500">
+                <div className="p-4 bg-white rounded-lg sm:rounded-xl border border-border shadow-sm border-l-4 border-l-green-500">
                   <div className="flex justify-between items-start mb-2">
                     <h4 className="font-bold text-charcoal">Score: 71-100 (Healthy)</h4>
                     <span className="text-xs font-bold text-secondary bg-secondary/10 px-2 py-1 rounded-full">EXPANSION READY</span>

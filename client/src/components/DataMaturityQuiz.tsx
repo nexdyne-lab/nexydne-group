@@ -82,7 +82,7 @@ export default function DataMaturityQuiz() {
       return {
         level: "Data Proficient",
         description: "You have a solid foundation. Now is the time to automate pipelines and enable self-service analytics.",
-        color: "text-blue-400"
+        color: "text-primary"
       };
     } else {
       return {

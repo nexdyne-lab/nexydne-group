@@ -375,7 +375,7 @@ export default function CaseStudyTelehealthScaling() {
                 industry: "Healthcare",
                 metric: "40%",
                 metricLabel: "Higher satisfaction",
-                image: "/case-patient-engagement.7a9b3c82.jpg",
+                image: "/case-doctor-consultation.799c1562.jpg",
                 link: "/cases/healthcare-patient-engagement"
               },
               {
@@ -383,7 +383,7 @@ export default function CaseStudyTelehealthScaling() {
                 industry: "Healthcare",
                 metric: "68%",
                 metricLabel: "Less documentation time",
-                image: "/case-hospital-workflow.8b2c4d91.jpg",
+                image: "/case-clinical-workflow.ca226f80.jpg",
                 link: "/cases/hospital-workflow-automation"
               },
               {
@@ -391,7 +391,7 @@ export default function CaseStudyTelehealthScaling() {
                 industry: "Healthcare",
                 metric: "34%",
                 metricLabel: "Fewer readmissions",
-                image: "/case-healthcare-analytics.5d4e2f73.jpg",
+                image: "/case-healthcare-analytics.0ceb030c.jpg",
                 link: "/cases/healthcare-analytics"
               }
             ].map((item, index) => (

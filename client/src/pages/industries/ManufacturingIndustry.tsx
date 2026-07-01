@@ -20,41 +20,41 @@ export default function ManufacturingIndustry() {
       challenges={[
         {
           title: "Supply-chain fragility",
-          body: "Concentrated suppliers, opaque tier-N visibility, and volatile demand are exposing risk that legacy planning systems cannot see. Multi-tier visibility and AI-powered S&OP are the new minimum bar."
+          body: "Concentrated suppliers, opaque tier-N visibility, and volatile demand are exposing risk that legacy planning can't see."
         },
         {
           title: "Asset uptime and yield",
-          body: "Aging equipment and reactive maintenance regimes are leaving capacity and margin on the table. Predictive-maintenance and digital-twin programs that pay back in months — not years — are now table stakes."
+          body: "Aging equipment and reactive maintenance leave capacity and margin on the table; predictive maintenance and digital twins now pay back in months."
         },
         {
           title: "Labor and skills gap",
-          body: "Frontline and engineering talent are scarce and expensive. Augmenting workers with AI copilots, codified tribal knowledge, and connected-worker tools is how leaders are protecting throughput today."
+          body: "Frontline and engineering talent are scarce — AI copilots and connected-worker tools are how leaders protect throughput today."
         },
         {
           title: "Sustainability and reporting",
-          body: "Scope 1, 2, and 3 disclosure obligations are tightening — and customers, lenders, and regulators are watching. Manufacturers need auditable energy, emissions, and circularity data wired into operating decisions, not bolt-on reports."
+          body: "Scope 1–3 disclosure is tightening, and manufacturers need auditable emissions data wired into operating decisions, not bolt-on reports."
         }
       ]}
       capabilities={[
         {
           name: "Operations Excellence",
           href: "/capabilities/operations-excellence",
-          blurb: "Smart-factory transformation, predictive maintenance, and digital-twin programs that lift uptime and yield while compressing payback periods."
+          blurb: "Smart-factory transformation, predictive maintenance, and digital twins that lift uptime and yield with faster payback."
         },
         {
           name: "Data Transformation",
           href: "/capabilities/data-transformation",
-          blurb: "Connect OT and IT data into a single industrial data fabric that powers AI-driven planning, quality, and asset performance at scale."
+          blurb: "Connect OT and IT into one industrial data fabric that powers AI-driven planning, quality, and asset performance."
         },
         {
           name: "Strategy & Growth",
           href: "/capabilities/strategy-growth",
-          blurb: "Identify and validate connected-product and outcome-based commercial models that turn installed bases into recurring-revenue businesses."
+          blurb: "Connected-product and outcome-based models that turn installed bases into recurring-revenue businesses."
         },
         {
           name: "Risk & Resilience",
           href: "/capabilities/risk-resilience",
-          blurb: "Engineer multi-tier supply-chain visibility, OT cyber-resilience, and the audit-grade sustainability data your customers and regulators now expect."
+          blurb: "Multi-tier supply-chain visibility, OT cyber-resilience, and audit-grade sustainability data your customers and regulators expect."
         }
       ]}
       experienceStats={[

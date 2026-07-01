@@ -20,41 +20,41 @@ export default function PublicSectorIndustry() {
       challenges={[
         {
           title: "Citizen experience expectations",
-          body: "Citizens expect government services to feel like consumer apps. Modern digital service design, identity, and content infrastructure are now baseline expectations — not aspirational."
+          body: "Citizens expect government services to feel like consumer apps — modern service design, identity, and content are now baseline."
         },
         {
           title: "Workforce and institutional knowledge",
-          body: "Retirements, hiring constraints, and competing demand for technical talent are eroding capacity. AI copilots, codified knowledge, and modern delivery practices are how leading agencies are protecting throughput."
+          body: "Retirements and hiring constraints are eroding capacity; AI copilots and modern delivery are how agencies protect throughput."
         },
         {
           title: "Legacy systems and modernization risk",
-          body: "Decades-old systems are expensive to operate and risky to replace. Strangler-pattern modernization, modular procurement, and well-instrumented pilots are the credible paths through that risk."
+          body: "Decades-old systems are costly and risky to replace — strangler-pattern modernization and modular procurement are the credible path."
         },
         {
           title: "Data, AI, and accountability",
-          body: "Citizens, courts, and oversight bodies demand explainable decisions. AI deployment in the public sector requires governance, transparency, and bias mitigation built in from day one — not retrofitted."
+          body: "Citizens and oversight bodies demand explainable decisions; public-sector AI needs governance and transparency built in from day one."
         }
       ]}
       capabilities={[
         {
           name: "Operations Excellence",
           href: "/capabilities/operations-excellence",
-          blurb: "Automate back-office operations, modernize service delivery, and build the program-management muscle agencies need to execute at scale."
+          blurb: "Automate back-office work, modernize service delivery, and build the program-management muscle to execute at scale."
         },
         {
           name: "Customer Intelligence",
           href: "/capabilities/customer-intelligence",
-          blurb: "Engineer citizen and constituent experiences using human-centered design, journey analytics, and accessibility built into the product, not bolted on."
+          blurb: "Engineer citizen experiences with human-centered design, journey analytics, and accessibility built in, not bolted on."
         },
         {
           name: "Data Transformation",
           href: "/capabilities/data-transformation",
-          blurb: "Unify agency data assets into a governed platform that supports modern decision-making, AI use cases, and credible reporting to the public."
+          blurb: "Unify agency data into a governed platform for modern decisions, AI use cases, and credible public reporting."
         },
         {
           name: "Risk & Resilience",
           href: "/capabilities/risk-resilience",
-          blurb: "Stand up the cyber, FedRAMP, and operational-resilience posture today's threats and oversight environment require."
+          blurb: "The cyber, FedRAMP, and operational-resilience posture today's threats and oversight environment require."
         }
       ]}
       experienceStats={[

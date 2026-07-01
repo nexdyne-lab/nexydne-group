@@ -7,7 +7,7 @@ export default function DataTransformation() {
       slug="data-transformation"
       heroSubtitle="Unlock the true value of data. We build performance by making lasting improvements in technology, processes, and capabilities — turning siloed systems and unreliable pipelines into trusted foundations that move at the speed of the business."
       // TODO: confirm hero image asset matches Data Transformation theme
-      heroImage="/case-data-platform.jpg"
+      heroImage="/case-data-dashboard.391db27a.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "200+", label: "Data platforms shipped" },

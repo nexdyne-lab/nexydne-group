@@ -10,15 +10,15 @@ import { strategyRelatedItems } from "@/data/related-content";
 
 export default function DiscountOptimization() {
   return (
-    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-blue-100">
+    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-primary/10">
       <Navigation />
 
       {/* Hero Section */}
-      <header className="pt-16 sm:pt-20 pb-16 border-b border-slate-100">
+      <header className="pt-16 sm:pt-20 pb-16 border-b border-border">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <div className="text-sm font-medium text-muted-foreground mb-6 uppercase tracking-wider">
-              <Link href="/capabilities/growth-marketing-sales/pricing-monetization" className="hover:text-blue-900 transition-colors">
+              <Link href="/capabilities/growth-marketing-sales/pricing-monetization" className="hover:text-primary transition-colors">
                 Pricing & Monetization
               </Link>
               <span className="mx-2">/</span>
@@ -50,31 +50,31 @@ export default function DiscountOptimization() {
               </p>
             </section>
 
-            <Separator className="bg-slate-200" />
+            <Separator className="bg-grey" />
 
             {/* Key Strategies */}
             <section>
               <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">Plugging the Leaks</h2>
               <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8">
-                <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+                <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Discount Governance</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Establish clear approval workflows and "give-get" frameworks where every discount must be exchanged for something of value (e.g., longer contract, case study).
                   </p>
                 </div>
-                <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+                <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Promotion ROI Analysis</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Measure the true incremental lift of marketing promotions, separating baseline sales from promo-driven volume to calculate actual ROI.
                   </p>
                 </div>
-                <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+                <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Sales Rep Analytics</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Identify outliers in your sales team—reps who consistently discount more than their peers—and provide targeted coaching and guardrails.
                   </p>
                 </div>
-                <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+                <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Lifecycle Pricing</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Optimize pricing across the customer lifecycle, ensuring that renewal and expansion pricing reflects the value delivered, not just the initial acquisition price.
@@ -83,14 +83,14 @@ export default function DiscountOptimization() {
               </div>
             </section>
 
-            <Separator className="bg-slate-200" />
+            <Separator className="bg-grey" />
 
             {/* Methodology */}
             <section>
               <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">Our Methodology</h2>
               <div className="space-y-8">
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">1</div>
+                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">1</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Transaction Waterfall Analysis</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -99,7 +99,7 @@ export default function DiscountOptimization() {
                   </div>
                 </div>
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">2</div>
+                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">2</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Elasticity Modeling</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -108,7 +108,7 @@ export default function DiscountOptimization() {
                   </div>
                 </div>
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">3</div>
+                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">3</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Framework Design</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -117,7 +117,7 @@ export default function DiscountOptimization() {
                   </div>
                 </div>
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">4</div>
+                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">4</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Change Management</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -128,18 +128,18 @@ export default function DiscountOptimization() {
               </div>
             </section>
 
-            <Separator className="bg-slate-200" />
+            <Separator className="bg-grey" />
 
             {/* Case Study */}
-            <section className="bg-slate-900 text-white p-10 rounded-sm">
+            <section className="bg-charcoal text-white p-10 rounded-sm">
               <div className="flex flex-col md:flex-row gap-4 sm:p-6 md:p-8 items-start">
                 <div className="flex-1">
-                  <div className="text-blue-400 font-bold tracking-wider text-xs uppercase mb-4">Case Study</div>
+                  <div className="text-primary font-bold tracking-wider text-xs uppercase mb-4">Case Study</div>
                   <h3 className="text-2xl font-bold mb-4">Retailer Recovers Lost Margin</h3>
                   <p className="text-muted-foreground/50 leading-relaxed mb-6">
                     A fashion retailer was running sitewide 20% off sales almost every month. We shifted them to targeted, personalized offers based on customer loyalty tiers and purchase history.
                   </p>
-                  <div className="grid grid-cols-2 gap-4 sm:p-5 md:p-6 border-t border-slate-800 pt-6">
+                  <div className="grid grid-cols-2 gap-4 sm:p-5 md:p-6 border-t border-white/10 pt-6">
                     <div>
                       <div className="text-3xl font-bold text-white mb-1">8%</div>
                       <div className="text-sm text-muted-foreground/70">Margin Expansion</div>
@@ -166,29 +166,29 @@ export default function DiscountOptimization() {
           <div className="lg:col-span-4 space-y-12">
             
             {/* Contact Card */}
-            <div className="bg-blue-50 p-4 sm:p-6 md:p-8 border border-blue-100">
-              <h3 className="text-lg font-bold text-blue-900 mb-4">Stop the leakage?</h3>
-              <p className="text-blue-800 mb-6 leading-relaxed">
+            <div className="bg-primary/5 p-4 sm:p-6 md:p-8 border border-primary">
+              <h3 className="text-lg font-bold text-charcoal mb-4">Stop the leakage?</h3>
+              <p className="text-charcoal mb-6 leading-relaxed">
                 Our discount audit can identify exactly how much margin you're giving away unnecessarily.
               </p>
-              <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+              <Button className="w-full bg-primary hover:bg-primary-hover text-white">
                 Contact Us
               </Button>
             </div>
 
             {/* Related Services */}
-            <div className="bg-white border border-slate-200 p-4 sm:p-6 md:p-8">
+            <div className="bg-white border border-border p-4 sm:p-6 md:p-8">
               <h3 className="text-sm font-bold text-charcoal uppercase tracking-wider mb-6">Related Services</h3>
               <ul className="space-y-4">
                 <li>
-                  <Link href="/capabilities/growth-marketing-sales/pricing-monetization/dynamic-pricing" className="text-muted-foreground hover:text-blue-700 transition-colors flex items-center gap-2">
-                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-blue-500" />
+                  <Link href="/capabilities/growth-marketing-sales/pricing-monetization/dynamic-pricing" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                     Dynamic Pricing
                   </Link>
                 </li>
                 <li>
-                  <Link href="/capabilities/growth-marketing-sales/pricing-monetization/packaging-bundling" className="text-muted-foreground hover:text-blue-700 transition-colors flex items-center gap-2">
-                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-blue-500" />
+                  <Link href="/capabilities/growth-marketing-sales/pricing-monetization/packaging-bundling" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                     Packaging & Bundling
                   </Link>
                 </li>
@@ -201,7 +201,7 @@ export default function DiscountOptimization() {
               <div className="space-y-6">
                 <Link href="/insights/psychology-of-value">
                   <div className="group cursor-pointer">
-                    <h4 className="text-lg font-bold text-charcoal mb-2 group-hover:text-blue-700 transition-colors">
+                    <h4 className="text-lg font-bold text-charcoal mb-2 group-hover:text-primary transition-colors">
                       The Psychology of Value
                     </h4>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-2">
@@ -212,10 +212,10 @@ export default function DiscountOptimization() {
                     </div>
                   </div>
                 </Link>
-                <Separator className="bg-slate-100" />
+                <Separator className="bg-subtle" />
                 <Link href="/insights/algorithmic-pricing-smes">
                   <div className="group cursor-pointer">
-                    <h4 className="text-lg font-bold text-charcoal mb-2 group-hover:text-blue-700 transition-colors">
+                    <h4 className="text-lg font-bold text-charcoal mb-2 group-hover:text-primary transition-colors">
                       Algorithmic Pricing for SMEs
                     </h4>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-2">

@@ -183,9 +183,9 @@ export default function ProcessFlowAI() {
               <motion.div 
                 key={i}
                 variants={fadeInUp}
-                className="group bg-slate-50 rounded-2xl p-8 hover:bg-slate-100 transition-colors"
+                className="group bg-off-white rounded-2xl p-8 hover:bg-subtle transition-colors"
               >
-                <div className="w-14 h-14 bg-slate-900 rounded-xl flex items-center justify-center mb-6">
+                <div className="w-14 h-14 bg-charcoal rounded-xl flex items-center justify-center mb-6">
                   <capability.icon className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-charcoal mb-3">{capability.title}</h3>
@@ -205,7 +205,7 @@ export default function ProcessFlowAI() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-off-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div 
             initial="hidden"
@@ -238,7 +238,7 @@ export default function ProcessFlowAI() {
                 variants={fadeInUp}
                 className="relative"
               >
-                <div className="text-6xl font-bold text-slate-200 mb-4">{step.step}</div>
+                <div className="text-6xl font-bold text-muted-foreground mb-4">{step.step}</div>
                 <h3 className="text-xl font-bold text-charcoal mb-3">{step.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{step.description}</p>
                 {i < processSteps.length - 1 && (
@@ -284,7 +284,7 @@ export default function ProcessFlowAI() {
               <motion.div 
                 key={i}
                 variants={fadeInUp}
-                className="bg-slate-900 rounded-2xl p-8 text-white"
+                className="bg-charcoal rounded-2xl p-8 text-white"
               >
                 <span className="text-xs font-medium tracking-[0.15em] text-white/60 uppercase mb-4 block">
                   {useCase.industry}
@@ -301,7 +301,7 @@ export default function ProcessFlowAI() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-slate-900">
+      <section className="py-24 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto text-center">
             <motion.h2 

@@ -197,7 +197,7 @@ export default function ProcessOptimizationCaseStudies() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Process Optimization Case Studies
             </span>
-            <h1 className="text-5xl md:text-7xl eb-garamond font-bold tracking-tight leading-[1.05] mb-4">
+            <h1 className="text-[2.25rem] md:text-[3.25rem] font-bold tracking-tight leading-[1.05] mb-4">
               Real results from <br />
               <span className="text-primary">intelligent automation</span>
             </h1>
@@ -231,7 +231,7 @@ export default function ProcessOptimizationCaseStudies() {
 
       {/* DZ10 Featured Case Study */}
       {selectedIndustry === "All" && featuredCase && (
-        <section className="py-16 md:py-20 bg-background">
+        <section className="nx-section bg-background">
           <div className="container px-4 md:px-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -257,7 +257,7 @@ export default function ProcessOptimizationCaseStudies() {
                         {featuredCase.industry}
                       </span>
                     </div>
-                    <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
+                    <h2 className="text-3xl md:text-[2rem] font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
                       {featuredCase.title}
                     </h2>
                     <p className="text-muted-foreground text-lg leading-relaxed mb-6">
@@ -286,7 +286,7 @@ export default function ProcessOptimizationCaseStudies() {
       )}
 
       {/* DZ10 Case Studies Grid */}
-      <section className="py-24 md:py-32 bg-white text-charcoal">
+      <section className="nx-section bg-white text-charcoal">
         <div className="container px-4 md:px-12">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredCases.filter(c => selectedIndustry !== "All" || !c.featured).map((study, index) => (
@@ -359,7 +359,7 @@ export default function ProcessOptimizationCaseStudies() {
       </section>
 
       {/* DZ10 Stats Section */}
-      <section className="py-20 md:py-24 bg-background">
+      <section className="nx-section bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -371,7 +371,7 @@ export default function ProcessOptimizationCaseStudies() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Aggregate Impact
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal">
+            <h2 className="text-[2rem] md:text-[2.5rem] font-bold text-charcoal">
               Results across all engagements
             </h2>
           </motion.div>
@@ -391,7 +391,7 @@ export default function ProcessOptimizationCaseStudies() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="text-center"
               >
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">{stat.metric}</div>
+                <div className="text-[2rem] md:text-[2.5rem] font-bold text-primary mb-2">{stat.metric}</div>
                 <div className="text-muted-foreground text-sm">{stat.label}</div>
               </motion.div>
             ))}
@@ -400,7 +400,7 @@ export default function ProcessOptimizationCaseStudies() {
       </section>
 
       {/* DZ10 CTA Section */}
-      <section className="py-24 md:py-32 bg-background">
+      <section className="nx-section bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -409,7 +409,7 @@ export default function ProcessOptimizationCaseStudies() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
+            <h2 className="text-[2rem] md:text-[2.5rem] font-bold text-charcoal mb-6">
               Ready to achieve similar results?
             </h2>
             <p className="text-xl text-muted-foreground mb-10">

@@ -302,7 +302,7 @@ export default function CaseStudyHealthcareAnalytics() {
                 industry: "Healthcare",
                 metric: "45%",
                 metricLabel: "Efficiency gain",
-                image: "/case-hospital-workflow.8b2c4d91.jpg",
+                image: "/case-clinical-workflow.ca226f80.jpg",
                 link: "/cases/hospital-workflow-automation"
               },
               {
@@ -310,7 +310,7 @@ export default function CaseStudyHealthcareAnalytics() {
                 industry: "Healthcare",
                 metric: "60%",
                 metricLabel: "Better engagement",
-                image: "/case-patient-engagement.7a9b3c82.jpg",
+                image: "/case-doctor-consultation.799c1562.jpg",
                 link: "/cases/healthcare-patient-engagement"
               },
               {
@@ -318,7 +318,7 @@ export default function CaseStudyHealthcareAnalytics() {
                 industry: "Healthcare",
                 metric: "10x",
                 metricLabel: "Volume increase",
-                image: "/case-telehealth.5d4e2f73.jpg",
+                image: "/case-healthcare-tech.920660f4.jpg",
                 link: "/cases/telehealth-scaling"
               }
             ].map((item, index) => (

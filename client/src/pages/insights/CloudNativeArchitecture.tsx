@@ -85,7 +85,7 @@ export default function CloudNativeArchitecture() {
           <div className="container px-4 md:px-8 lg:px-12">
             <div className="aspect-[21/9] overflow-hidden rounded-lg">
               <img
-                src="/cloud-native-architecture.png"
+                src="/hero-architecture-new.8c87389d.png"
                 alt="Cloud-Native Architecture for Scale"
                 className="w-full h-full object-cover"
               />

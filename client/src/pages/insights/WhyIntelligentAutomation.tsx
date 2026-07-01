@@ -12,9 +12,9 @@ export default function WhyIntelligentAutomation() {
       <ReadingProgress />
       <Navigation />
       {/* Hero Section */}
-      <section className="bg-slate-900 text-white py-16 md:py-24">
+      <section className="bg-charcoal text-white py-16 md:py-24">
         <div className="container max-w-4xl">
-          <Link href="/insights" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 mb-8 transition-colors">
+          <Link href="/insights" className="inline-flex items-center gap-2 text-primary hover:text-primary mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Insights
           </Link>
@@ -77,7 +77,7 @@ export default function WhyIntelligentAutomation() {
               Recent industry data reveals that 67% of mid-market companies have already implemented some form of intelligent automation, with adoption accelerating quarter over quarter. More telling: companies that deployed automation solutions two years ago are now on their second or third generation of implementations, compounding their operational advantages while late adopters struggle to get started.
             </p>
 
-            <div className="bg-slate-50 border-l-4 border-blue-500 p-6 my-8">
+            <div className="bg-off-white border-l-4 border-primary p-6 my-8">
               <h3 className="text-xl font-bold text-charcoal mb-4">The performance delta is stark. Automated competitors can:</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Respond to customer inquiries in minutes</strong> while you're still routing tickets through multiple departments</li>
@@ -149,22 +149,22 @@ export default function WhyIntelligentAutomation() {
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 bg-slate-900 rounded-lg text-white">
+          <div className="mt-16 p-8 bg-charcoal rounded-lg text-white">
             <h3 className="text-2xl font-bold mb-4">Ready to start your automation journey?</h3>
             <p className="text-muted-foreground/50 mb-6">
               NEXDYNE TECHNOLOGIES helps mid-market companies deploy intelligent automation solutions that deliver measurable results in weeks, not months.
             </p>
             <Link href="/contact">
-              <button className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-colors">
+              <button className="px-6 py-3 bg-primary hover:bg-primary-hover text-white rounded-lg font-semibold transition-colors">
                 Schedule a Consultation
               </button>
             </Link>
           </div>
 
           {/* Author Info */}
-          <div className="mt-12 pt-8 border-t border-slate-200">
+          <div className="mt-12 pt-8 border-t border-border">
             <div className="flex items-start gap-4">
-              <div className="w-16 h-16 bg-slate-900 rounded-full flex items-center justify-center text-white font-bold text-xl">
+              <div className="w-16 h-16 bg-charcoal rounded-full flex items-center justify-center text-white font-bold text-xl">
                 N
               </div>
               <div>
@@ -187,9 +187,9 @@ export default function WhyIntelligentAutomation() {
             <div className="grid md:grid-cols-2 gap-8">
               <Link href="/insights/ai-agents-transform-operations">
                 <div className="group cursor-pointer">
-                  <div className="bg-slate-100 rounded-lg p-6 hover:shadow-lg transition-shadow">
-                    <span className="text-sm text-blue-500 font-semibold uppercase tracking-wide">AI & Machine Learning</span>
-                    <h4 className="text-xl font-bold text-charcoal mt-3 mb-2 group-hover:text-blue-500 transition-colors">
+                  <div className="bg-subtle rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <span className="text-sm text-primary font-semibold uppercase tracking-wide">AI & Machine Learning</span>
+                    <h4 className="text-xl font-bold text-charcoal mt-3 mb-2 group-hover:text-primary transition-colors">
                       How AI Agents Transform Enterprise Operations
                     </h4>
                     <p className="text-muted-foreground mb-4">
@@ -202,9 +202,9 @@ export default function WhyIntelligentAutomation() {
 
               <Link href="/insights/process-mining-guide">
                 <div className="group cursor-pointer">
-                  <div className="bg-slate-100 rounded-lg p-6 hover:shadow-lg transition-shadow">
-                    <span className="text-sm text-blue-500 font-semibold uppercase tracking-wide">Process Optimization</span>
-                    <h4 className="text-xl font-bold text-charcoal mt-3 mb-2 group-hover:text-blue-500 transition-colors">
+                  <div className="bg-subtle rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <span className="text-sm text-primary font-semibold uppercase tracking-wide">Process Optimization</span>
+                    <h4 className="text-xl font-bold text-charcoal mt-3 mb-2 group-hover:text-primary transition-colors">
                       The Complete Guide to Process Mining and Optimization
                     </h4>
                     <p className="text-muted-foreground mb-4">

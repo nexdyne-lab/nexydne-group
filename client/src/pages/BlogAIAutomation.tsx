@@ -30,7 +30,7 @@ export default function BlogAIAutomation() {
         </div>
         <div className="relative container h-full flex items-end pb-16">
           <div className="max-w-4xl text-white">
-            <p className="text-sm font-semibold tracking-wider uppercase mb-4 text-cyan-400">NEXDYNE INSIGHTS</p>
+            <p className="text-sm font-semibold tracking-wider uppercase mb-4 text-amber">NEXDYNE INSIGHTS</p>
             <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 leading-tight">
               How AI and automation are reshaping business operations
             </h1>
@@ -66,7 +66,7 @@ export default function BlogAIAutomation() {
                   Traditional automation focused on simple, rule-based tasks. Today's intelligent automation combines robotic process automation (RPA) with machine learning to handle complex workflows that previously required human decision-making. A 75-attorney law firm we worked with reduced contract review time by 65% not by eliminating attorney oversight, but by automating the initial analysis and flagging items requiring professional judgment.
                 </p>
 
-                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 border-l-4 border-primary p-4 sm:p-6 md:p-8 my-8">
+                <div className="bg-gradient-to-br from-primary to-primary border-l-4 border-primary p-4 sm:p-6 md:p-8 my-8">
                   <p className="text-xl font-semibold text-charcoal mb-4">
                     "The firms that thrive in the next decade won't be those that resist automation—they'll be those that use it to deliver better service at better economics."
                   </p>
@@ -130,7 +130,7 @@ export default function BlogAIAutomation() {
                 </p>
               </div>
 
-              <div className="bg-gradient-to-br from-slate-700 to-slate-600 p-4 sm:p-5 md:p-6 rounded-lg text-white">
+              <div className="bg-gradient-to-br from-charcoal to-charcoal p-4 sm:p-5 md:p-6 rounded-lg text-white">
                 <h3 className="text-lg font-semibold mb-4">Related Insights</h3>
                 <div className="space-y-4">
                   <a href="#" className="block group">
@@ -146,7 +146,7 @@ export default function BlogAIAutomation() {
                 </div>
               </div>
 
-              <div className="border-l-4 border-cyan-400 pl-6">
+              <div className="border-l-4 border-primary pl-6">
                 <h3 className="text-lg font-semibold text-charcoal mb-4">Key Takeaways</h3>
                 <ul className="space-y-3 text-sm text-charcoal/80">
                   <li>• Document intelligence now delivers ROI on $75K investments</li>

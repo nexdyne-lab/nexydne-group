@@ -207,7 +207,7 @@ export function CapabilitiesExplorer() {
                         <button
                           key={capability.id}
                           onClick={() => handleCapabilitySelect(capability)}
-                          className="w-full text-left px-5 py-3 text-sm sm:text-base text-charcoal hover:bg-subtle transition-colors border-b border-gray-50 last:border-b-0"
+                          className="w-full text-left px-5 py-3 text-sm sm:text-base text-charcoal hover:bg-subtle transition-colors border-b border-border last:border-b-0"
                         >
                           {capability.title}
                         </button>
@@ -249,7 +249,7 @@ export function CapabilitiesExplorer() {
                         <button
                           key={industry.id}
                           onClick={() => handleIndustrySelect(industry)}
-                          className="w-full text-left px-5 py-3 text-sm sm:text-base text-charcoal hover:bg-subtle transition-colors border-b border-gray-50 last:border-b-0"
+                          className="w-full text-left px-5 py-3 text-sm sm:text-base text-charcoal hover:bg-subtle transition-colors border-b border-border last:border-b-0"
                         >
                           {industry.title}
                         </button>

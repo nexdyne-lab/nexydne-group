@@ -15,7 +15,7 @@ export default function Visualization() {
       serviceName="Visualization & Dashboards"
       serviceSlug="visualization"
       heroSubtitle="Create intuitive 3D visualizations and dashboards that make digital twin insights accessible to operators, engineers, and executives. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-digital-twins.2f1e7c12.jpg"
+      heroImage="/blog-digital-transformation.a3f57989.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Visualization & Dashboards engagements delivered" },
@@ -68,7 +68,7 @@ export default function Visualization() {
           title: "Unlocking enterprise data for a national healthcare network",
           industry: "Healthcare",
           metric: "10x",
-          image: "/case-healthcare-data.6d63f5ec.jpg",
+          image: "/case-healthcare-analytics.0ceb030c.jpg",
         },
       ]}
       relatedServices={[

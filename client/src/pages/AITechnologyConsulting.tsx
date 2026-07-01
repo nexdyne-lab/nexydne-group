@@ -356,7 +356,7 @@ export default function AITechnologyConsulting() {
       </section>
 
       {/* NexDyne Accelerators Section */}
-      <section id="accelerators" className="py-20 md:py-32 bg-slate-50">
+      <section id="accelerators" className="py-20 md:py-32 bg-off-white">
         <div className="container px-4 sm:px-6 md:px-12">
           {/* Section Header */}
           <motion.div 
@@ -524,7 +524,7 @@ export default function AITechnologyConsulting() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 md:py-32 bg-slate-50">
+      <section id="services" className="py-20 md:py-32 bg-off-white">
         <div className="container px-4 sm:px-6 md:px-12">
           {/* Section Header */}
           <motion.div 
@@ -561,7 +561,7 @@ export default function AITechnologyConsulting() {
               >
                 <Link href={service.link}>
                   <div className="bg-white rounded-xl p-8 h-full border border-border/50 hover:shadow-lg hover:border-border transition-all cursor-pointer">
-                    <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
+                    <div className="w-12 h-12 bg-subtle rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
                       <service.icon className="w-6 h-6 text-charcoal group-hover:text-white transition-colors" />
                     </div>
                     <h3 className="text-xl font-bold mb-3 text-charcoal">

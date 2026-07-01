@@ -20,14 +20,14 @@ export default function MarketingAutomation() {
         
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="mb-5 sm:mb-6 md:mb-8">
-            <Link href="/capabilities/growth-marketing-sales/marketing-operations" className="inline-flex items-center text-blue-300 hover:text-white transition-colors mb-6">
+            <Link href="/capabilities/growth-marketing-sales/marketing-operations" className="inline-flex items-center text-primary hover:text-white transition-colors mb-6">
               <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
               Back to Marketing Operations
             </Link>
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 leading-tight eb-garamond">
               Intelligent Marketing Automation
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl font-light leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-primary max-w-3xl font-light leading-relaxed">
               Scale your engagement with precision. We engineer sophisticated automation architectures that deliver the right message at the exact moment of impact, driving revenue around the clock.
             </p>
           </div>
@@ -99,7 +99,7 @@ export default function MarketingAutomation() {
       </section>
 
       {/* Platforms We Support */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-off-white">
         <div className="container mx-auto max-w-6xl px-4 text-center">
           <h2 className="text-3xl font-bold text-base mb-6 sm:mb-8 md:mb-12 eb-garamond">
             Enterprise-Grade Platform Expertise
@@ -115,7 +115,7 @@ export default function MarketingAutomation() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-white border-t border-slate-100">
+      <section className="py-20 bg-white border-t border-border">
         <div className="container mx-auto max-w-4xl px-4 text-center">
           <h2 className="text-3xl font-bold text-base mb-6 eb-garamond">
             Accelerate Your Revenue Engine

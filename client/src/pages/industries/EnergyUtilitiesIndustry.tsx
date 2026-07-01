@@ -20,41 +20,41 @@ export default function EnergyUtilitiesIndustry() {
       challenges={[
         {
           title: "Aging asset base",
-          body: "Most utilities are operating on infrastructure built decades ago — and capital plans cannot replace it all. AI-powered asset performance management, predictive maintenance, and risk-based capital allocation are how leading operators stretch each capital dollar further."
+          body: "Most utilities run on decades-old infrastructure capital plans can't fully replace — AI asset performance and risk-based allocation stretch each dollar."
         },
         {
           title: "DER and grid orchestration",
-          body: "Rooftop solar, batteries, EV charging, and demand response are making the distribution edge an active system. Grid orchestration, ADMS, and DERMS investments are now non-negotiable for credible transition planning."
+          body: "Solar, batteries, EV charging, and demand response are making the grid edge active; ADMS and DERMS are now non-negotiable."
         },
         {
           title: "Cyber and OT resilience",
-          body: "Ransomware and nation-state threats against energy infrastructure are escalating. NERC-CIP, IEC 62443, and a converged IT/OT cyber program are baseline expectations from regulators and boards."
+          body: "Ransomware and nation-state threats are escalating — NERC-CIP and a converged IT/OT cyber program are baseline expectations."
         },
         {
           title: "Customer expectations and rate cases",
-          body: "Customers expect digital-first experiences from their utility. Regulators expect demonstrable outcomes from rate-case investments. Modern customer platforms and credible data are now the bridge between the two."
+          body: "Customers expect digital-first experiences and regulators expect provable rate-case outcomes; modern platforms bridge the two."
         }
       ]}
       capabilities={[
         {
           name: "Operations Excellence",
           href: "/capabilities/operations-excellence",
-          blurb: "Modernize asset performance, work management, and field operations with AI-powered analytics and connected-worker tools tuned for utility realities."
+          blurb: "Modernize asset performance, work management, and field operations with AI analytics and connected-worker tools."
         },
         {
           name: "Data Transformation",
           href: "/capabilities/data-transformation",
-          blurb: "Unify OT, asset, and customer data into a single platform that supports DERMS, predictive maintenance, and AI-driven planning across the network."
+          blurb: "Unify OT, asset, and customer data into one platform for DERMS, predictive maintenance, and AI-driven planning."
         },
         {
           name: "Risk & Resilience",
           href: "/capabilities/risk-resilience",
-          blurb: "Stand up the cyber, NERC-CIP, and operational-resilience posture regulators and customers increasingly demand of critical-infrastructure operators."
+          blurb: "The cyber, NERC-CIP, and operational-resilience posture regulators and customers demand of critical infrastructure."
         },
         {
           name: "Customer Intelligence",
           href: "/capabilities/customer-intelligence",
-          blurb: "Engineer the customer experience — from billing to outage to programs — with the personalization and digital tools modern utility customers expect."
+          blurb: "Engineer the customer experience — billing, outage, programs — with the personalization utility customers now expect."
         }
       ]}
       experienceStats={[

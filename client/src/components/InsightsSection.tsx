@@ -31,7 +31,7 @@ export function InsightsSection({ insights }: InsightsSectionProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:p-5 md:p-4 sm:p-5 md:p-6 mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
           {insights.map((insight, index) => (
             <Link key={index} href={insight.link}>
-              <a className="group block bg-slate-900/50 rounded-lg overflow-hidden border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:transform hover:scale-[1.02]">
+              <a className="group block bg-charcoal/50 rounded-lg overflow-hidden border border-white/10 hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-[1.02]">
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={insight.image}
@@ -40,10 +40,10 @@ export function InsightsSection({ insights }: InsightsSectionProps) {
                   />
                 </div>
                 <div className="p-4 sm:p-5 md:p-4 sm:p-5 md:p-6">
-                  <div className="text-xs font-semibold text-cyan-400 uppercase tracking-wider mb-2">
+                  <div className="text-xs font-semibold text-amber uppercase tracking-wider mb-2">
                     {insight.type}
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors flex items-start justify-between gap-2">
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-amber transition-colors flex items-start justify-between gap-2">
                     <span>{insight.title}</span>
                     <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 mt-1 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </h3>
@@ -61,7 +61,7 @@ export function InsightsSection({ insights }: InsightsSectionProps) {
 
         <div className="text-center">
           <Link href="/insights">
-            <a className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border-2 border-cyan-400 text-cyan-400 rounded-full font-semibold hover:bg-cyan-400 hover:text-charcoal transition-all duration-300 group">
+            <a className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border-2 border-primary text-amber rounded-full font-semibold hover:bg-primary hover:text-charcoal transition-all duration-300 group">
               Read our insights
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
             </a>

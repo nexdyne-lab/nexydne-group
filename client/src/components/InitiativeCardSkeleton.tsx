@@ -9,7 +9,7 @@ export function InitiativeCardSkeleton() {
   return (
     <div className="relative rounded-lg overflow-hidden bg-white shadow-lg h-full flex flex-col">
       {/* Image Section Skeleton - Top - Reduced height like BCG */}
-      <div className="relative h-[200px] md:h-[220px] lg:h-[240px] bg-slate-200 overflow-hidden">
+      <div className="relative h-[200px] md:h-[220px] lg:h-[240px] bg-grey overflow-hidden">
         {/* Shimmer sweep effect for image area */}
         <motion.div
           className="absolute inset-0 w-[200%]"

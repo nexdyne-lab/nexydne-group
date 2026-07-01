@@ -375,7 +375,7 @@ export default function IntelligentProcessOptimization() {
       </section>
 
       {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
-      <section className="bg-background text-primary-foreground py-24 md:py-32">
+      <section className="bg-primary text-primary-foreground nx-section">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

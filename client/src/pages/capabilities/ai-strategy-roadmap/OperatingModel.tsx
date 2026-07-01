@@ -15,7 +15,7 @@ export default function OperatingModel() {
       serviceName="Operating Model Design"
       serviceSlug="operating-model"
       heroSubtitle="Define how AI will be governed, developed, and deployed across your organization. Build the organizational capabilities needed for AI success. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-ai-strategy.6d63f5ec.jpg"
+      heroImage="/blog-strategy-meeting.2402f79c.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Operating Model Design engagements delivered" },
@@ -68,14 +68,14 @@ export default function OperatingModel() {
           title: "Building a national telehealth platform from the ground up",
           industry: "Healthcare",
           metric: "12x",
-          image: "/case-telehealth-platform.dfdd1294.jpg",
+          image: "/case-doctor-consultation.799c1562.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Transforming clinical workflow at a leading academic medical center",
           industry: "Healthcare",
           metric: "40%",
-          image: "/case-hospital-clinical.401c96db.jpg",
+          image: "/case-clinical-workflow.ca226f80.jpg",
         },
       ]}
       relatedServices={[

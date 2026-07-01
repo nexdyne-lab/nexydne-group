@@ -15,7 +15,7 @@ export default function DemandForecasting() {
       serviceName="Demand Forecasting"
       serviceSlug="demand-forecasting"
       heroSubtitle="Predict customer demand with high accuracy using time series analysis, machine learning, and external data signals like weather and economic indicators. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-predictive-analytics.91d3a49b.jpg"
+      heroImage="/blog-data-analytics.01de594d.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Demand Forecasting engagements delivered" },
@@ -68,7 +68,7 @@ export default function DemandForecasting() {
           title: "Scaling a fintech payment platform with AI-driven automation",
           industry: "Financial Services",
           metric: "5x",
-          image: "/case-fintech-payments.7ab8e23c.jpg",
+          image: "/case-fintech-app.5835303a.png",
         },
       ]}
       relatedServices={[

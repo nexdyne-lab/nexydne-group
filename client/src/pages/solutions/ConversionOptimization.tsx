@@ -28,7 +28,7 @@ export default function ConversionOptimization() {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-5xl lg:text-6xl font-bold mb-3 eb-garamond">
+              <h1 className="text-5xl lg:text-[2.75rem] font-bold mb-3">
                 Conversion rate optimization
               </h1>
             </div>
@@ -42,7 +42,7 @@ export default function ConversionOptimization() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-off-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -60,11 +60,11 @@ export default function ConversionOptimization() {
             </div>
 
             <div>
-              <h2 className="text-4xl font-bold mb-12">The benefits of Conversion Rate Optimization</h2>
+              <h2 className="text-[2rem] font-bold mb-12">The benefits of Conversion Rate Optimization</h2>
               <div className="space-y-8">
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                       <Target className="w-6 h-6 text-primary" />
                     </div>
                   </div>
@@ -78,7 +78,7 @@ export default function ConversionOptimization() {
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                       <TrendingUp className="w-6 h-6 text-primary" />
                     </div>
                   </div>
@@ -92,7 +92,7 @@ export default function ConversionOptimization() {
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                       <Users className="w-6 h-6 text-primary" />
                     </div>
                   </div>
@@ -106,7 +106,7 @@ export default function ConversionOptimization() {
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                       <BarChart3 className="w-6 h-6 text-primary" />
                     </div>
                   </div>
@@ -126,7 +126,7 @@ export default function ConversionOptimization() {
       {/* About CRO Section */}
       <section className="py-20 bg-white">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold mb-8">About conversion rate optimization</h2>
+          <h2 className="text-[2rem] font-bold mb-8">About conversion rate optimization</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
             <p>
               Conversion rate optimization: your key to increasing sales from existing visitors. Many companies focus on generating more traffic. But the secret to generating serious profit is right under your nose: optimizing for your current visitors.
@@ -146,10 +146,10 @@ export default function ConversionOptimization() {
       </section>
 
       {/* Methodology Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-off-white">
         <div className="container">
           <div className="max-w-3xl mb-16">
-            <h2 className="text-4xl font-bold mb-6">Our approach to conversion rate optimization</h2>
+            <h2 className="text-[2rem] font-bold mb-6">Our approach to conversion rate optimization</h2>
             <p className="text-xl text-muted-foreground">
               We combine our experience and expertise to enhance the performance of marketing teams. Our consultants know exactly what drives smooth sales funnels. They share that knowledge and their unique Incentronaut flair directly with your team. No filters here.
             </p>
@@ -162,7 +162,7 @@ export default function ConversionOptimization() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-600 hover:shadow-lg transition-all duration-300">
+            <div className="bg-white p-8 rounded-xl border border-border hover:border-primary hover:shadow-lg transition-all duration-300">
               <div className="text-sm font-bold text-primary mb-3">STEP 1</div>
               <h3 className="text-xl font-bold mb-4">Audit & Analysis</h3>
               <p className="text-muted-foreground">
@@ -170,7 +170,7 @@ export default function ConversionOptimization() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-600 hover:shadow-lg transition-all duration-300">
+            <div className="bg-white p-8 rounded-xl border border-border hover:border-primary hover:shadow-lg transition-all duration-300">
               <div className="text-sm font-bold text-primary mb-3">STEP 2</div>
               <h3 className="text-xl font-bold mb-4">Hypothesis & Testing</h3>
               <p className="text-muted-foreground">
@@ -178,7 +178,7 @@ export default function ConversionOptimization() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-600 hover:shadow-lg transition-all duration-300">
+            <div className="bg-white p-8 rounded-xl border border-border hover:border-primary hover:shadow-lg transition-all duration-300">
               <div className="text-sm font-bold text-primary mb-3">STEP 3</div>
               <h3 className="text-xl font-bold mb-4">Implementation</h3>
               <p className="text-muted-foreground">
@@ -186,7 +186,7 @@ export default function ConversionOptimization() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl border border-slate-200 hover:border-blue-600 hover:shadow-lg transition-all duration-300">
+            <div className="bg-white p-8 rounded-xl border border-border hover:border-primary hover:shadow-lg transition-all duration-300">
               <div className="text-sm font-bold text-primary mb-3">STEP 4</div>
               <h3 className="text-xl font-bold mb-4">Monitor & Iterate</h3>
               <p className="text-muted-foreground">
@@ -209,13 +209,13 @@ export default function ConversionOptimization() {
               />
             </div>
             <div>
-              <h2 className="text-4xl font-bold mb-6">Do you want to know more?</h2>
+              <h2 className="text-[2rem] font-bold mb-6">Do you want to know more?</h2>
               <div className="mb-8">
                 <p className="text-lg font-semibold mb-2">Robert Martinez</p>
                 <p className="text-muted-foreground">CRO Director</p>
               </div>
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-slate-900 hover:bg-slate-800">
+                <Button size="lg" className="bg-charcoal hover:bg-charcoal">
                   Get in touch
                 </Button>
                 <Button size="lg" variant="outline">
@@ -239,11 +239,11 @@ export default function ConversionOptimization() {
               />
             </div>
             <div>
-              <h2 className="text-4xl font-bold mb-6">Why NEXDYNE</h2>
+              <h2 className="text-[2rem] font-bold mb-6">Why NEXDYNE</h2>
               <p className="text-xl text-muted-foreground mb-8">
                 Whether you're looking for a strategic partner, a boost for your digital transformation, or the ultimate customer experience for your customers, you've come to the right place. With our next-generation digital solutions, you'll always be one step ahead of the competition.
               </p>
-              <Button size="lg" className="bg-slate-900 hover:bg-slate-800">
+              <Button size="lg" className="bg-charcoal hover:bg-charcoal">
                 Get in touch
               </Button>
             </div>
@@ -252,33 +252,33 @@ export default function ConversionOptimization() {
       </section>
 
       {/* Partners Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-off-white">
         <div className="container">
           <div className="max-w-2xl mb-16">
             <p className="text-sm font-bold text-primary uppercase tracking-wider mb-4">Partners</p>
-            <h2 className="text-4xl font-bold mb-6">Awesome partners turn dreams into reality</h2>
+            <h2 className="text-[2rem] font-bold mb-6">Awesome partners turn dreams into reality</h2>
             <p className="text-xl text-muted-foreground">
               With these partners we realize outstanding CRO solutions
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-12 rounded-xl border border-slate-200 hover:shadow-lg transition-all duration-300 flex items-center justify-center">
+            <div className="bg-white p-12 rounded-xl border border-border hover:shadow-lg transition-all duration-300 flex items-center justify-center">
               <h3 className="text-2xl font-bold text-charcoal">Bloomreach</h3>
             </div>
-            <div className="bg-white p-12 rounded-xl border border-slate-200 hover:shadow-lg transition-all duration-300 flex items-center justify-center">
+            <div className="bg-white p-12 rounded-xl border border-border hover:shadow-lg transition-all duration-300 flex items-center justify-center">
               <h3 className="text-2xl font-bold text-charcoal">Commercetools</h3>
             </div>
-            <div className="bg-white p-12 rounded-xl border border-slate-200 hover:shadow-lg transition-all duration-300 flex items-center justify-center">
+            <div className="bg-white p-12 rounded-xl border border-border hover:shadow-lg transition-all duration-300 flex items-center justify-center">
               <h3 className="text-2xl font-bold text-charcoal">Tweakwise</h3>
             </div>
-            <div className="bg-white p-12 rounded-xl border border-slate-200 hover:shadow-lg transition-all duration-300 flex items-center justify-center">
+            <div className="bg-white p-12 rounded-xl border border-border hover:shadow-lg transition-all duration-300 flex items-center justify-center">
               <h3 className="text-2xl font-bold text-charcoal">Sitecore</h3>
             </div>
-            <div className="bg-white p-12 rounded-xl border border-slate-200 hover:shadow-lg transition-all duration-300 flex items-center justify-center">
+            <div className="bg-white p-12 rounded-xl border border-border hover:shadow-lg transition-all duration-300 flex items-center justify-center">
               <h3 className="text-2xl font-bold text-charcoal">Optimizely</h3>
             </div>
-            <div className="bg-white p-12 rounded-xl border border-slate-200 hover:shadow-lg transition-all duration-300 flex items-center justify-center">
+            <div className="bg-white p-12 rounded-xl border border-border hover:shadow-lg transition-all duration-300 flex items-center justify-center">
               <h3 className="text-2xl font-bold text-charcoal">VWO</h3>
             </div>
           </div>
@@ -289,7 +289,7 @@ export default function ConversionOptimization() {
       <section className="py-20 bg-white">
         <div className="container">
           <div className="max-w-2xl mb-16">
-            <h2 className="text-4xl font-bold mb-6">Success stories</h2>
+            <h2 className="text-[2rem] font-bold mb-6">Success stories</h2>
             <p className="text-xl text-muted-foreground">
               See how we've optimized conversion rates and transformed digital experiences for leading brands.
             </p>
@@ -366,85 +366,85 @@ export default function ConversionOptimization() {
       </section>
 
       {/* CRO Capabilities Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-off-white">
         <div className="container">
           <div className="max-w-2xl mb-16">
-            <h2 className="text-4xl font-bold mb-6">CRO capabilities & services</h2>
+            <h2 className="text-[2rem] font-bold mb-6">CRO capabilities & services</h2>
             <p className="text-xl text-muted-foreground">
               Our conversion optimization expertise spans analytics, testing, and experimentation best practices.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-xl border border-slate-200">
+            <div className="bg-white p-8 rounded-xl border border-border">
               <h3 className="text-xl font-bold mb-4">Analytics & Research</h3>
               <p className="text-muted-foreground mb-6">
                 Deep-dive analytics with heatmaps, session recordings, and user surveys to understand behavior and identify opportunities.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Google Analytics</span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Hotjar</span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Mixpanel</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Google Analytics</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Hotjar</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Mixpanel</span>
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-xl border border-slate-200">
+            <div className="bg-white p-8 rounded-xl border border-border">
               <h3 className="text-xl font-bold mb-4">A/B Testing</h3>
               <p className="text-muted-foreground mb-6">
                 Design and execute statistically significant A/B tests on landing pages, CTAs, forms, and checkout flows.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Optimizely</span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">VWO</span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Google Optimize</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Optimizely</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">VWO</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Google Optimize</span>
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-xl border border-slate-200">
+            <div className="bg-white p-8 rounded-xl border border-border">
               <h3 className="text-xl font-bold mb-4">Landing Page Optimization</h3>
               <p className="text-muted-foreground mb-6">
                 Optimize landing pages with compelling copy, clear value propositions, and friction-reducing design patterns.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Unbounce</span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Instapage</span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Webflow</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Unbounce</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Instapage</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Webflow</span>
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-xl border border-slate-200">
+            <div className="bg-white p-8 rounded-xl border border-border">
               <h3 className="text-xl font-bold mb-4">Personalization</h3>
               <p className="text-muted-foreground mb-6">
                 Deliver personalized experiences based on user behavior, demographics, and traffic source to increase relevance.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Dynamic Yield</span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Bloomreach</span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Segment</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Dynamic Yield</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Bloomreach</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Segment</span>
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-xl border border-slate-200">
+            <div className="bg-white p-8 rounded-xl border border-border">
               <h3 className="text-xl font-bold mb-4">Form Optimization</h3>
               <p className="text-muted-foreground mb-6">
                 Reduce form abandonment with progressive profiling, smart defaults, and inline validation that guides users.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Typeform</span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Formstack</span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Jotform</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Typeform</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Formstack</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Jotform</span>
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-xl border border-slate-200">
+            <div className="bg-white p-8 rounded-xl border border-border">
               <h3 className="text-xl font-bold mb-4">Mobile Optimization</h3>
               <p className="text-muted-foreground mb-6">
                 Optimize for mobile-first experiences with responsive design, fast loading, and thumb-friendly interactions.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">PageSpeed</span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">AMP</span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">PWA</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">PageSpeed</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">AMP</span>
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">PWA</span>
               </div>
             </div>
           </div>
@@ -452,7 +452,7 @@ export default function ConversionOptimization() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-32 bg-gradient-to-br from-primary via-blue-500 to-rose-600 text-white overflow-hidden">
+      <section className="relative py-32 bg-gradient-to-br from-primary via-primary to-rose-600 text-white overflow-hidden">
         {/* Curved Divider Top */}
         <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
           <svg className="relative block w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -462,11 +462,11 @@ export default function ConversionOptimization() {
 
         <div className="container relative z-10 text-center">
           <h2 className="text-5xl font-bold mb-6">Ready to optimize conversions?</h2>
-          <p className="text-2xl mb-12 text-blue-50 max-w-3xl mx-auto">
+          <p className="text-2xl mb-12 text-primary max-w-3xl mx-auto">
             Let's turn your website into a profit-making machine with data-driven CRO strategies. Our experts are ready to maximize your conversion rates.
           </p>
           <div className="flex flex-wrap gap-6 justify-center">
-            <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-slate-50">
+            <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-off-white">
               Schedule a consultation
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">

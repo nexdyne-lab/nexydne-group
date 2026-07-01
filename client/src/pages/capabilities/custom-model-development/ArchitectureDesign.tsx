@@ -15,7 +15,7 @@ export default function ArchitectureDesign() {
       serviceName="Custom Architecture Design"
       serviceSlug="architecture-design"
       heroSubtitle="Design and train neural network architectures optimized for your specific use case — whether computer vision, NLP, time series, or multimodal applications. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-custom-models.a78b22fb.jpg"
+      heroImage="/blog-data-workstation.e374b2a9.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Custom Architecture Design engagements delivered" },
@@ -68,7 +68,7 @@ export default function ArchitectureDesign() {
           title: "Unlocking enterprise data for a national healthcare network",
           industry: "Healthcare",
           metric: "10x",
-          image: "/case-healthcare-data.6d63f5ec.jpg",
+          image: "/case-healthcare-analytics.0ceb030c.jpg",
         },
       ]}
       relatedServices={[

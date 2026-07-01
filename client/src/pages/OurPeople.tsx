@@ -1,282 +1,127 @@
-import { useState, useMemo } from 'react';
-import { motion } from 'framer-motion';
-import { Link } from 'wouter';
-import { Mail, ArrowRight, Users } from 'lucide-react';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import { Button } from '@/components/ui/button';
-import { SEO } from '@/components/SEO';
+import { motion } from "framer-motion";
+import { Link } from "wouter";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 
-interface TeamMember {
-  id: string;
-  name: string;
-  role: string;
-  region: string;
-  practiceArea: string;
-  location: string;
-  bio: string;
-  image: string;
-  email?: string;
-}
+const fadeUp = {
+  initial: { opacity: 0, y: 24 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, amount: 0.2 },
+  transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const },
+};
 
-// Sample team data - replace with real data
-const teamMembers: TeamMember[] = [
-  {
-    id: '1',
-    name: 'Sarah Mitchell',
-    role: 'Managing Partner',
-    region: 'United States',
-    practiceArea: 'Digital Transformation',
-    location: 'New York',
-    bio: 'Leads digital transformation initiatives for Fortune 500 companies and high-growth SMEs across the Northeast',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop',
-    email: 'sarah.mitchell@newco.com'
-  },
-  {
-    id: '2',
-    name: 'James Chen',
-    role: 'Senior Partner',
-    region: 'United States',
-    practiceArea: 'Cloud & Infrastructure',
-    location: 'San Francisco',
-    bio: 'Specializes in cloud migration strategies and infrastructure optimization for mid-market technology companies',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop',
-    email: 'james.chen@newco.com'
-  },
-  {
-    id: '3',
-    name: 'Amara Okafor',
-    role: 'Managing Partner',
-    region: 'Africa',
-    practiceArea: 'Enterprise Applications',
-    location: 'Lagos',
-    bio: 'Drives enterprise digital solutions for leading African businesses and multinational corporations',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop',
-    email: 'amara.okafor@newco.com'
-  },
-  {
-    id: '4',
-    name: 'Michael Rodriguez',
-    role: 'Partner',
-    region: 'United States',
-    practiceArea: 'Data & AI',
-    location: 'Austin',
-    bio: 'Advises SMEs on data strategy, analytics implementation, and AI-driven business transformation',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop',
-    email: 'michael.rodriguez@newco.com'
-  },
-  {
-    id: '5',
-    name: 'Fatima Hassan',
-    role: 'Senior Partner',
-    region: 'Africa',
-    practiceArea: 'Cybersecurity',
-    location: 'Nairobi',
-    bio: 'Leads cybersecurity practice across East Africa, helping organizations build resilient security frameworks',
-    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&h=400&fit=crop',
-    email: 'fatima.hassan@newco.com'
-  },
-  {
-    id: '6',
-    name: 'David Thompson',
-    role: 'Principal',
-    region: 'United States',
-    practiceArea: 'Industry Solutions',
-    location: 'Chicago',
-    bio: 'Develops industry-specific solutions for manufacturing and logistics companies in the Midwest',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop',
-    email: 'david.thompson@newco.com'
-  },
-  {
-    id: '7',
-    name: 'Thandiwe Moyo',
-    role: 'Partner',
-    region: 'Africa',
-    practiceArea: 'Digital Transformation',
-    location: 'Johannesburg',
-    bio: 'Supports Southern African enterprises in their digital transformation and innovation journeys',
-    image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop',
-    email: 'thandiwe.moyo@newco.com'
-  },
-  {
-    id: '8',
-    name: 'Robert Kim',
-    role: 'Senior Consultant',
-    region: 'United States',
-    practiceArea: 'Cloud & Infrastructure',
-    location: 'Seattle',
-    bio: 'Implements cloud infrastructure solutions for Pacific Northwest technology and retail companies',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
-    email: 'robert.kim@newco.com'
-  },
+const founders = [
+  { name: "David Seyaker", role: "Co-Founder & Chief Executive", focus: "Leads strategy, vision, and the firm's governing doctrine, HIG™." },
+  { name: "Raphaelyn CN Bomosy-Forkpa", role: "Co-Founder & Managing Partner", focus: "Leads client delivery and the standards behind every engagement." },
 ];
+
+const promises = [
+  { title: "Senior by default", body: "The people you meet are the people who do the work. No hand-off to a junior team after the pitch." },
+  { title: "Deep, not broad", body: "We take on fewer engagements so each one gets the attention—and the accountability—it deserves." },
+  { title: "Capability that stays", body: "We build skills into your team as we go, so the value compounds long after we've gone." },
+];
+
+function initials(name: string) {
+  const parts = name.replace(/[^A-Za-z\s-]/g, "").trim().split(/[\s-]+/).filter(Boolean);
+  return ((parts[0]?.[0] ?? "") + (parts.length > 1 ? parts[parts.length - 1][0] : "")).toUpperCase();
+}
 
 export default function OurPeople() {
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal">
-      <SEO 
-        title="Our People | NexDyne Technologies" 
-        description="Meet the leaders and experts who drive transformation for our clients. Our diverse team brings deep expertise across digital transformation, AI, and business strategy."
+    <div className="min-h-screen bg-subtle text-charcoal">
+      <SEO
+        title="Our People | NexDyne Consulting Group"
+        description="A senior, hands-on team. At NexDyne the people who win your trust are the people who do the work—led by founders with 62+ projects of combined experience."
         canonical="/team"
       />
       <Navigation />
-      
-      {/* Hero Section - Neutral-first */}
-      <section className="relative w-full bg-background overflow-hidden">
-        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(70% 60% at 82% 14%, rgba(224,76,44,0.05) 0%, transparent 55%), radial-gradient(55% 55% at 6% 95%, rgba(111,68,163,0.045) 0%, transparent 55%)" }} />
-        <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-          <div className="flex flex-col justify-center min-h-[52vh] py-24 lg:py-28">
-            <div className="max-w-[920px]">
-              <div className="flex items-center gap-3 mb-6"><span className="block h-[3px] w-9 bg-primary" /><span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">OUR TEAM</span></div>
-              <h1 className="text-charcoal font-bold tracking-[-0.035em] leading-[1.0] text-[clamp(2.4rem,5.4vw,4.2rem)]">Our People</h1>
-              <p className="mt-7 text-[1.1rem] md:text-[1.2rem] leading-[1.55] text-muted-foreground max-w-[60ch]">Meet the leaders and experts who drive transformation for our clients.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Philosophy Section */}
-      <section className="py-20 md:py-28 bg-white border-b border-border/50">
-        <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-              >
-                <h2 className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-tight mb-6">
-                  Built on trust.<br />
-                  Driven by results.
-                </h2>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="space-y-6"
-              >
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Our philosophy is simple: deliver cutting-edge technologies with customer-centric solutions, and back every 
-                  partnership with hands-on expertise. We don't oversell or overcomplicate—we build systems that work from day one.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Earning your trust through proven results and transparent communication is our top priority. Every engagement 
-                  is an opportunity to demonstrate the transformative power of intelligent automation.
-                </p>
-                <Link href="/case-studies">
-                  <a className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
-                    See Our Work <ArrowRight className="w-4 h-4" />
-                  </a>
-                </Link>
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Team Grid Section */}
-      <section className="py-20 md:py-28 bg-subtle">
-        <div className="container px-4 md:px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl text-charcoal mb-6">
-              Meet our team
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Our team combines deep technical expertise with practical business experience to deliver 
-              solutions that create measurable value.
+      {/* Hero */}
+      <section className="bg-subtle">
+        <div className="container px-4 sm:px-6 md:px-12 pt-24 md:pt-28 lg:pt-32 pb-14 md:pb-16">
+          <motion.div {...fadeUp} className="max-w-4xl">
+            <span className="nx-eyebrow text-charcoal/55">Our people</span>
+            <h1 className="nx-h1 text-charcoal mt-5 mb-6">Small team. Senior attention.</h1>
+            <p className="nx-lead text-muted-foreground max-w-2xl">
+              We're a founder-led firm by design. The people who earn your trust are the people who do
+              the work—bringing 62+ projects of combined experience to every engagement.
             </p>
           </motion.div>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {teamMembers.map((member, index) => {
-              const profileSlug = member.name.toLowerCase().replace(/\s+/g, '-');
-              const hasProfile = ['sarah-mitchell', 'james-chen', 'amara-okafor'].includes(profileSlug);
-              
-              return (
-                <motion.div
-                  key={member.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                >
-                  <Link href={hasProfile ? `/team/${profileSlug}` : '#'}>
-                    <a className="block group bg-white h-full overflow-hidden hover:shadow-xl transition-all duration-300">
-                      {/* Image */}
-                      <div className="aspect-[3/4] overflow-hidden">
-                        <img 
-                          src={member.image} 
-                          alt={member.name}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                      </div>
-                      
-                      {/* Content */}
-                      <div className="p-6">
-                        <span className="inline-block text-xs font-bold uppercase tracking-wider text-primary mb-2">
-                          {member.role}
-                        </span>
-                        <h3 className="text-xl font-bold text-charcoal mb-1 group-hover:text-primary-hover transition-colors">
-                          {member.name}
-                        </h3>
-                        <p className="text-sm text-muted-foreground mb-2">
-                          {member.location}
-                        </p>
-                        <p className="text-sm font-medium text-muted-foreground">
-                          {member.practiceArea}
-                        </p>
-                      </div>
-                    </a>
-                  </Link>
-                </motion.div>
-              );
-            })}
+      {/* The promise */}
+      <section className="nx-section bg-white border-y border-border">
+        <div className="container px-4 sm:px-6 md:px-12">
+          <motion.div {...fadeUp} className="max-w-3xl mb-14">
+            <span className="nx-eyebrow text-charcoal/55">Why it matters</span>
+            <h2 className="nx-h2 text-charcoal mt-4">The advantage of a focused team</h2>
+          </motion.div>
+          <div className="grid md:grid-cols-3 gap-px bg-border border border-border">
+            {promises.map((p, i) => (
+              <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.08 }} className="group bg-white p-8 lg:p-10 hover:bg-subtle transition-colors">
+                <div className="text-primary text-sm font-semibold tracking-[0.1em] mb-5">0{i + 1}</div>
+                <h3 className="nx-h3 text-charcoal mb-3">{p.title}</h3>
+                <p className="text-[15px] text-muted-foreground leading-relaxed">{p.body}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 md:py-28 bg-charcoal text-white border-t-2 border-primary">
+      {/* Founders */}
+      <section className="nx-section bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
-          <div className="max-w-4xl mx-auto text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <span className="text-xs font-bold uppercase tracking-widest text-amber mb-4 block">
-                Join Us
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6">
-                Build your career with us
-              </h2>
-              <p className="text-xl text-white/70 mb-10 max-w-2xl mx-auto">
-                We're always looking for exceptional talent to join our team. Explore opportunities to make an impact at NexDyne.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/careers">
-                  <a className="inline-flex items-center justify-center px-8 py-4 bg-white text-base font-semibold rounded hover:bg-subtle transition-colors">
-                    View Open Positions <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
-                </Link>
-                <Link href="/contact">
-                  <a className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white font-semibold rounded hover:bg-white/10 transition-colors">
-                    Contact Us
-                  </a>
-                </Link>
-              </div>
-            </motion.div>
+          <motion.div {...fadeUp} className="mb-12">
+            <span className="nx-eyebrow text-charcoal/55">The founders</span>
+            <h2 className="nx-h2 text-charcoal mt-4">Who you'll work with</h2>
+          </motion.div>
+          <div className="grid sm:grid-cols-2 gap-6 lg:gap-8 max-w-5xl">
+            {founders.map((f, i) => (
+              <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.1 }} className="group bg-white border border-border overflow-hidden transition-shadow duration-300 hover:shadow-[0_18px_40px_-20px_rgba(36,36,36,0.28)]">
+                <div className="relative aspect-[3/2] bg-charcoal overflow-hidden flex items-center justify-center">
+                  <span className="text-[3.5rem] font-medium text-white/85 tracking-[-0.02em]">{initials(f.name)}</span>
+                  <span className="absolute bottom-0 left-0 h-[3px] w-full bg-primary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-400" />
+                </div>
+                <div className="p-7 lg:p-8">
+                  <h3 className="text-xl font-medium text-charcoal group-hover:text-primary transition-colors">{f.name}</h3>
+                  <p className="text-[13px] font-semibold text-primary tracking-[0.02em] mt-1 mb-4">{f.role}</p>
+                  <p className="text-[15px] text-muted-foreground leading-relaxed">{f.focus}</p>
+                </div>
+              </motion.div>
+            ))}
           </div>
+          <motion.div {...fadeUp} className="mt-10">
+            <Link href="/about/team">
+              <span className="group inline-flex items-center gap-2 text-[15px] font-medium text-charcoal cursor-pointer">
+                <span className="border-b border-charcoal/30 group-hover:border-primary group-hover:text-primary transition-colors pb-0.5">More about our leadership</span>
+                <span className="text-primary transition-transform duration-300 group-hover:translate-x-1">→</span>
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Careers CTA */}
+      <section className="nx-section bg-charcoal text-white">
+        <div className="container px-4 sm:px-6 md:px-12">
+          <motion.div {...fadeUp} className="max-w-3xl">
+            <span className="nx-eyebrow text-white/45">Join us</span>
+            <h2 className="nx-h2 text-white mt-4 mb-5">We're growing—carefully.</h2>
+            <p className="nx-lead text-white/70 mb-10 max-w-2xl">
+              As we grow, we're looking for exceptional people who want senior-level ownership from day
+              one and care as much about how the work is governed as what it delivers.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-5">
+              <Link href="/careers">
+                <span className="inline-block px-8 py-4 bg-primary text-white text-[13px] font-semibold uppercase tracking-[0.12em] hover:bg-primary-hover transition-colors cursor-pointer">Explore careers</span>
+              </Link>
+              <Link href="/contact">
+                <span className="inline-block px-8 py-4 border border-white/25 text-white text-[13px] font-semibold uppercase tracking-[0.12em] hover:bg-white/10 transition-colors cursor-pointer">Get in touch</span>
+              </Link>
+            </div>
+          </motion.div>
         </div>
       </section>
 

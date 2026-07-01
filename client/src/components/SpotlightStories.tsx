@@ -61,7 +61,7 @@ export function SpotlightStories() {
               NexDyne Spotlight
             </span>
           </div>
-          <h2 className="text-charcoal font-bold tracking-[-0.035em] leading-[1.0] text-[clamp(2.2rem,4.4vw,3.5rem)]">
+          <h2 className="nx-h2 text-charcoal">
             Beyond the hype.{" "}
             <span
               className="bg-clip-text text-transparent"

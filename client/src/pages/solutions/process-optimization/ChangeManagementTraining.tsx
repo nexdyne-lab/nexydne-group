@@ -148,7 +148,7 @@ export default function ChangeManagementTraining() {
       />
 
       {/* SLOT 2 — White lead / editorial intro */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -157,20 +157,19 @@ export default function ChangeManagementTraining() {
             transition={{ duration: 0.6 }}
             className="max-w-[72ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Our Perspective
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal mb-10"
             >
               The transformations that hold are the ones where adoption was a workstream, not an afterthought.
             </h3>
             <div className="space-y-6">
-              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+              <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 Every transformation we have audited eighteen months in tells the same story: the technology landed, the process was redesigned, and the value case eroded because the operators reverted to the workarounds they knew. Change management ran as a stream of all-hands meetings and computer-based training modules, not as an instrumented program with stakeholder map, communication plan, curriculum, and adoption KPIs the steering committee actually reviewed.
               </p>
-              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+              <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 Our change programs treat adoption as a measured outcome. The stakeholder map drives engagement strategy. The communication plan is sequenced against the program. The curriculum is role-based and proficiency-measured. The champion network is activated ahead of rollout, not after. And the adoption dashboard runs on the same cadence as cost and quality, because that is when leadership notices and intervenes.
               </p>
             </div>
@@ -179,7 +178,7 @@ export default function ChangeManagementTraining() {
       </section>
 
       {/* SLOT 3 — Light-grey methodology / phased approach (5 numbered phase cards) */}
-      <section className="bg-grey py-24 md:py-32">
+      <section className="bg-grey nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -188,16 +187,15 @@ export default function ChangeManagementTraining() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               How We Deliver
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               A five-phase approach from stakeholder map to sustained adoption.
             </h3>
-            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+            <p className="nx-lead text-charcoal/80 max-w-[60ch] mt-6">
               Each phase is timeboxed and produces a tangible artifact. Most engagements run alongside the parent transformation for nine to eighteen months, with adoption measurement extending through the first sustained-performance review.
             </p>
           </motion.div>
@@ -216,7 +214,7 @@ export default function ChangeManagementTraining() {
                   <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-5">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25]">
+                  <h3 className="nx-h3 text-charcoal mb-4 leading-[1.25]">
                     {phase.name}
                   </h3>
                   <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
@@ -230,7 +228,7 @@ export default function ChangeManagementTraining() {
       </section>
 
       {/* SLOT 4 — White deliverables / what you get (flat hairline-bordered list) */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -239,12 +237,11 @@ export default function ChangeManagementTraining() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               What You Get
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               Six concrete artifacts every engagement leaves behind.
             </h3>
@@ -266,7 +263,7 @@ export default function ChangeManagementTraining() {
                   </span>
                 </div>
                 <div className="lg:col-span-4">
-                  <h4 className="text-xl text-charcoal font-medium leading-[1.25]">
+                  <h4 className="nx-h3 text-charcoal leading-[1.25]">
                     {item.name}
                   </h4>
                 </div>
@@ -282,7 +279,7 @@ export default function ChangeManagementTraining() {
       </section>
 
       {/* SLOT 5 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment, Pattern 2) */}
-      <section className="bg-background text-primary-foreground py-24 md:py-32">
+      <section className="bg-primary text-primary-foreground nx-section">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -290,17 +287,16 @@ export default function ChangeManagementTraining() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+            <span className="block nx-eyebrow text-white/70 mb-6">
               The Outcome
             </span>
             {/* TODO: replace with real stat */}
             <h2
-              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-white mb-8"
             >
               Programs that instrument adoption from day one typically retain 80 to 90 percent of the value case at the twelve-month mark — versus the 40 to 60 percent industry baseline.
             </h2>
-            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+            <p className="nx-lead text-white/85 max-w-[60ch] mb-8">
               The number that matters is not the go-live spike. It is the residual at month twelve, when the visible scaffolding of the project has come down. Adoption has to be designed to survive that moment, and the design starts before the first piece of training is delivered.
             </p>
             <Link href="/cases">
@@ -313,7 +309,7 @@ export default function ChangeManagementTraining() {
       </section>
 
       {/* SLOT 6 — White case studies / proof (1-2 cards, narrower than Cat 5) */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -322,12 +318,11 @@ export default function ChangeManagementTraining() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Client Results
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               When adoption is measured, the value case holds.
             </h3>
@@ -348,7 +343,7 @@ export default function ChangeManagementTraining() {
                       {result.industry}
                     </span>
                     {/* TODO: replace with real stat */}
-                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                    <h3 className="nx-h3 text-charcoal leading-[1.25] mb-4 group-hover:text-primary transition-colors">
                       {result.title}
                     </h3>
                     <p className="text-base text-charcoal/75 leading-[1.55] mb-6 flex-1">
@@ -366,7 +361,7 @@ export default function ChangeManagementTraining() {
       </section>
 
       {/* SLOT 7 — White intra-cluster sibling sub-offerings (5 links inside Process Optimization) */}
-      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+      <section className="bg-white nx-section border-t border-charcoal/10">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -375,12 +370,11 @@ export default function ChangeManagementTraining() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Other Ways We Help in Process Optimization
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               Sibling offerings inside this cluster.
             </h3>
@@ -398,7 +392,7 @@ export default function ChangeManagementTraining() {
               >
                 <Link href={offering.link} className="block h-full group cursor-pointer">
                   <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
-                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                    <h3 className="nx-h3 text-charcoal leading-[1.25] group-hover:text-primary transition-colors">
                       {offering.title}
                     </h3>
                     <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
@@ -413,7 +407,7 @@ export default function ChangeManagementTraining() {
       </section>
 
       {/* SLOT 8 — Charcoal closing CTA "Ready to Talk?" */}
-      <section className="bg-charcoal text-white py-24 md:py-32">
+      <section className="bg-charcoal text-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
@@ -423,16 +417,15 @@ export default function ChangeManagementTraining() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                <span className="block nx-eyebrow text-white/70 mb-5">
                   Ready to Talk?
                 </span>
                 <h2
-                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
-                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                  className="nx-h2 text-white mb-10"
                 >
                   Bring our change management team into your next transformation conversation.
                 </h2>
-                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                <p className="nx-lead text-white/80 mb-6 max-w-[52ch]">
                   I want to talk to your experts in:
                 </p>
                 <Select
@@ -464,7 +457,7 @@ export default function ChangeManagementTraining() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
-                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                <p className="nx-lead text-white/80 mb-8 max-w-[52ch]">
                   We work with leaders who want their transformation value case intact at month twelve, not just at go-live. The conversation starts with the adoption risk you cannot afford to absorb.
                 </p>
                 <div className="space-y-5">

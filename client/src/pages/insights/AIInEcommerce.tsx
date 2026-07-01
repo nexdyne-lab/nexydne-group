@@ -35,7 +35,7 @@ export function AIInEcommerce() {
             <Breadcrumbs className="mb-8" />
             <div className="flex items-center gap-4 text-sm text-secondary font-semibold mb-6">
               <span className="uppercase tracking-wider">Artificial Intelligence</span>
-              <span className="w-1 h-1 rounded-full bg-slate-500" />
+              <span className="w-1 h-1 rounded-full bg-charcoal" />
               <span>8 min read</span>
             </div>
             <h1 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-4 leading-tight">
@@ -68,7 +68,7 @@ export function AIInEcommerce() {
             <div className="md:col-span-3 hidden md:block">
               <div className="sticky top-32">
                 <h4 className="font-bold text-charcoal mb-4">Table of Contents</h4>
-                <ul className="space-y-3 text-sm text-muted-foreground border-l border-slate-200 pl-4">
+                <ul className="space-y-3 text-sm text-muted-foreground border-l border-border pl-4">
                   <li className="hover:text-primary cursor-pointer">The New Standard</li>
                   <li className="hover:text-primary cursor-pointer">Intelligent Search</li>
                   <li className="hover:text-primary cursor-pointer">Dynamic Pricing</li>
@@ -97,7 +97,7 @@ export function AIInEcommerce() {
                 <p>
                   Traditional keyword search fails when users don't know the exact product name. AI-powered vector search understands semantic meaning.
                 </p>
-                <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 my-6">
+                <div className="bg-off-white p-6 rounded-xl border border-border my-6">
                   <div className="flex gap-4">
                     <Search className="w-8 h-8 text-primary flex-shrink-0" />
                     <div>
@@ -133,13 +133,13 @@ export function AIInEcommerce() {
                   Creating unique product descriptions for thousands of SKUs is tedious. LLMs can generate SEO-optimized, on-brand descriptions, meta tags, and even alt text for images at scale.
                 </p>
 
-                <div className="bg-blue-50 p-8 rounded-2xl mt-12">
+                <div className="bg-primary/5 p-8 rounded-2xl mt-12">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Start Your AI Journey</h3>
                   <p className="text-muted-foreground mb-6">
                     Implementing AI doesn't mean replacing your team. It means giving them superpowers. We help you identify high-impact use cases and integrate the right models into your stack.
                   </p>
                   <Link href="/contact">
-                    <button className="px-6 py-3 bg-blue-600 text-charcoal font-bold rounded-full hover:bg-blue-700 transition-colors">
+                    <button className="px-6 py-3 bg-primary text-charcoal font-bold rounded-full hover:bg-primary-hover transition-colors">
                       Explore AI Solutions
                     </button>
                   </Link>

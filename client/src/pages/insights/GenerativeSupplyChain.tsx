@@ -12,9 +12,9 @@ export default function GenerativeSupplyChain() {
       <ReadingProgress />
       <Navigation />
       {/* Hero Section */}
-      <section className="bg-slate-900 text-white py-16 md:py-24">
+      <section className="bg-charcoal text-white py-16 md:py-24">
         <div className="container max-w-4xl">
-          <Link href="/insights" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 mb-8 transition-colors">
+          <Link href="/insights" className="inline-flex items-center gap-2 text-primary hover:text-primary mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Insights
           </Link>
@@ -69,7 +69,7 @@ export default function GenerativeSupplyChain() {
               We partnered with a global fashion retailer facing a common problem: they operated in 20+ markets with diverse cultural nuances, weather patterns, and style preferences. Their central creative team couldn't keep up with the demand for localized content.
             </p>
 
-            <div className="bg-slate-50 border-l-4 border-blue-500 p-6 my-8">
+            <div className="bg-off-white border-l-4 border-primary p-6 my-8">
               <h3 className="text-xl font-bold text-charcoal mb-4">The Challenge</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Volume:</strong> Needed 5,000+ unique assets per month across email, social, and web.</li>
@@ -127,22 +127,22 @@ export default function GenerativeSupplyChain() {
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 bg-slate-900 rounded-lg text-white">
+          <div className="mt-16 p-8 bg-charcoal rounded-lg text-white">
             <h3 className="text-2xl font-bold mb-4">Scale your content production</h3>
             <p className="text-muted-foreground/50 mb-6">
               NexDyne helps brands build custom Generative AI pipelines that amplify creative output and drive personalization.
             </p>
             <Link href="/contact">
-              <button className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-colors">
+              <button className="px-6 py-3 bg-primary hover:bg-primary-hover text-white rounded-lg font-semibold transition-colors">
                 Schedule a Consultation
               </button>
             </Link>
           </div>
 
           {/* Author Info */}
-          <div className="mt-12 pt-8 border-t border-slate-200">
+          <div className="mt-12 pt-8 border-t border-border">
             <div className="flex items-start gap-4">
-              <div className="w-16 h-16 bg-slate-900 rounded-full flex items-center justify-center text-white font-bold text-xl">
+              <div className="w-16 h-16 bg-charcoal rounded-full flex items-center justify-center text-white font-bold text-xl">
                 N
               </div>
               <div>
@@ -165,7 +165,7 @@ export default function GenerativeSupplyChain() {
             <div className="grid md:grid-cols-2 gap-8">
               <Link href="/insights/beyond-segmentation">
                 <div className="group cursor-pointer">
-                  <div className="aspect-video bg-slate-200 rounded-lg mb-4 overflow-hidden">
+                  <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
                       src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2670&auto=format&fit=crop" 
                       alt="Beyond Segmentation" 
@@ -182,7 +182,7 @@ export default function GenerativeSupplyChain() {
               </Link>
               <Link href="/insights/why-intelligent-automation">
                 <div className="group cursor-pointer">
-                  <div className="aspect-video bg-slate-200 rounded-lg mb-4 overflow-hidden">
+                  <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
                       src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?q=80&w=2574&auto=format&fit=crop" 
                       alt="Intelligent Automation" 

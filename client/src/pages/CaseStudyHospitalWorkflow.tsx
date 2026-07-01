@@ -304,7 +304,7 @@ export default function CaseStudyHospitalWorkflow() {
                 industry: "Healthcare",
                 metric: "38%",
                 metricLabel: "Higher satisfaction",
-                image: "/case-patient-engagement.7a9b3c82.jpg",
+                image: "/case-doctor-consultation.799c1562.jpg",
                 link: "/cases/healthcare-patient-engagement"
               },
               {

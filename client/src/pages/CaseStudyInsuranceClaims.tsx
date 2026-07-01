@@ -371,7 +371,7 @@ export default function CaseStudyInsuranceClaims() {
                 industry: "Financial Services",
                 metric: "75%",
                 metricLabel: "Less manual work",
-                image: "/case-bank-compliance.5d4e2f73.jpg",
+                image: "/case-bank.c53f3999.jpg",
                 link: "/cases/bank-process-automation"
               },
               {
@@ -379,7 +379,7 @@ export default function CaseStudyInsuranceClaims() {
                 industry: "Financial Services",
                 metric: "80%",
                 metricLabel: "Faster onboarding",
-                image: "/case-wealth-onboarding.8b2c4d91.jpg",
+                image: "/case-advisor-client.eb15e04e.jpg",
                 link: "/cases/wealth-management-onboarding"
               },
               {
@@ -387,7 +387,7 @@ export default function CaseStudyInsuranceClaims() {
                 industry: "Financial Services",
                 metric: "10x",
                 metricLabel: "Volume growth",
-                image: "/case-fintech-payment.7a9b3c82.jpg",
+                image: "/case-fintech-app.5835303a.png",
                 link: "/cases/fintech-payment-automation"
               }
             ].map((item, index) => (

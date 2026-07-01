@@ -10,19 +10,19 @@ import { dataRelatedItems } from "@/data/related-content";
 
 export default function AdvancedManufacturing() {
   return (
-    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-blue-100">
+    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-primary/10">
       <Navigation />
 
       {/* Hero Section */}
-      <header className="pt-16 sm:pt-20 pb-16 border-b border-slate-100">
+      <header className="pt-16 sm:pt-20 pb-16 border-b border-border">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <div className="text-sm font-medium text-muted-foreground mb-6 uppercase tracking-wider">
-              <Link href="/capabilities/growth-marketing-sales/green-growth" className="hover:text-blue-900 transition-colors">
+              <Link href="/capabilities/growth-marketing-sales/green-growth" className="hover:text-primary transition-colors">
                 Green Growth
               </Link>
               <span className="mx-2">/</span>
-              <span className="text-blue-900">Advanced Manufacturing</span>
+              <span className="text-charcoal">Advanced Manufacturing</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1] eb-garamond">
               The Factory of the Future is Green
@@ -50,14 +50,14 @@ export default function AdvancedManufacturing() {
               </p>
             </section>
 
-            <Separator className="bg-slate-200" />
+            <Separator className="bg-grey" />
 
             {/* Key Challenges & Solutions */}
             <section>
               <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">Strategic Priorities</h2>
               
               <div className="space-y-10">
-                <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+                <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Energy Efficiency & Optimization</h3>
                   <p className="text-muted-foreground mb-6">
                     Energy is a major cost driver and a significant source of emissions. We use IoT sensors and AI analytics to monitor and optimize energy consumption in real-time.
@@ -74,7 +74,7 @@ export default function AdvancedManufacturing() {
                   </ul>
                 </div>
 
-                <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+                <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Waste Reduction & Circularity</h3>
                   <p className="text-muted-foreground mb-6">
                     Minimizing waste is key to both sustainability and profitability. We implement closed-loop systems and process optimization to reduce scrap and rework.
@@ -91,7 +91,7 @@ export default function AdvancedManufacturing() {
                   </ul>
                 </div>
 
-                <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+                <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Resilient Supply Chains</h3>
                   <p className="text-muted-foreground mb-6">
                     Disruptions are the new normal. We help build agile, resilient supply chains that can adapt to changing market conditions and mitigate risks.
@@ -110,12 +110,12 @@ export default function AdvancedManufacturing() {
               </div>
             </section>
 
-            <Separator className="bg-slate-200" />
+            <Separator className="bg-grey" />
 
             {/* Case Study */}
             <section>
               <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">Impact in Action</h2>
-              <div className="bg-slate-900 text-white p-8 md:p-12 rounded-sm relative overflow-hidden group">
+              <div className="bg-charcoal text-white p-8 md:p-12 rounded-sm relative overflow-hidden group">
                 <div className="absolute top-0 right-0 p-4 sm:p-6 md:p-8 opacity-10">
                   <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
                     <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -123,7 +123,7 @@ export default function AdvancedManufacturing() {
                 </div>
                 
                 <div className="relative z-10">
-                  <div className="text-blue-400 font-bold tracking-wider uppercase text-sm mb-4">Case Study</div>
+                  <div className="text-primary font-bold tracking-wider uppercase text-sm mb-4">Case Study</div>
                   <h3 className="text-2xl md:text-3xl font-bold mb-6">
                     Digital Transformation of an Automotive Plant
                   </h3>
@@ -142,7 +142,7 @@ export default function AdvancedManufacturing() {
                     </div>
                   </div>
 
-                  <Button className="bg-white text-charcoal hover:bg-blue-50 border-none">
+                  <Button className="bg-white text-charcoal hover:bg-primary/5 border-none">
                     Read full case study <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 ml-2" />
                   </Button>
                 </div>
@@ -153,21 +153,21 @@ export default function AdvancedManufacturing() {
 
           {/* Sidebar */}
           <div className="lg:col-span-4 space-y-8">
-            <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100 sticky top-24">
+            <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border sticky top-24">
               <h3 className="text-xl font-bold text-charcoal mb-4">Get in Touch</h3>
               <p className="text-muted-foreground mb-6 text-sm">
                 Transform your manufacturing operations with NexDyne.
               </p>
-              <Button className="w-full bg-blue-900 hover:bg-blue-800 text-white">
+              <Button className="w-full bg-charcoal hover:bg-primary-hover text-white">
                 Contact our experts
               </Button>
 
-              <div className="mt-8 pt-8 border-t border-slate-200">
+              <div className="mt-8 pt-8 border-t border-border">
                 <h4 className="font-bold text-charcoal mb-4 text-sm uppercase tracking-wide">Related Insights</h4>
                 <ul className="space-y-4">
                   <li>
                     <Link href="/insights/net-zero-transition" className="group block">
-                      <h5 className="text-charcoal font-medium group-hover:text-blue-700 transition-colors mb-1">
+                      <h5 className="text-charcoal font-medium group-hover:text-primary transition-colors mb-1">
                         The Net Zero Transition
                       </h5>
                       <span className="text-xs text-muted-foreground flex items-center">

@@ -171,7 +171,7 @@ const MENU: Record<Exclude<NavItem, null>, MenuConfig> = {
       eyebrow: "Featured insight",
       title: "The AI Adoption Outlook 2026",
       desc: "Why the winners will be the organisations that govern first.",
-      href: "/insights",
+      href: "/insights/ai-adoption-outlook-2026",
       cta: "Read more",
     },
   },

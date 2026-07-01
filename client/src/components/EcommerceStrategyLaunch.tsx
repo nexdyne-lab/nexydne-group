@@ -140,7 +140,7 @@ export default function EcommerceStrategyLaunch() {
         eyebrow="SOLUTION · BUSINESS GROWTH · ECOMMERCE STRATEGY & LAUNCH"
         title="Ecommerce Strategy & Launch"
         subtitle="Most ecommerce launches fail in the brief, not the build. We size the opportunity, pick the commercial model, choose the stack against a written requirements memo, and stand up the operating team that gets the program from greenfield to compounding revenue."
-        backgroundImage="/business-growth-hero.57680a35.jpg"
+        backgroundImage="/solution-business-growth.2515cc64.webp"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
         h1ClassName="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"

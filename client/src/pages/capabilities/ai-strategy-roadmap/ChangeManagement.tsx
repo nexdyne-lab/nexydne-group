@@ -15,7 +15,7 @@ export default function ChangeManagement() {
       serviceName="Change Management Planning"
       serviceSlug="change-management"
       heroSubtitle="Develop strategies for workforce adoption, skill building, and cultural change. AI success depends on people, not just technology. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-ai-strategy.6d63f5ec.jpg"
+      heroImage="/blog-strategy-meeting.2402f79c.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Change Management Planning engagements delivered" },

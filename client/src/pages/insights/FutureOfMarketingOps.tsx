@@ -11,9 +11,9 @@ export default function FutureOfMarketingOps() {
       <ReadingProgress />
       <Navigation />
       {/* Hero Section */}
-      <section className="bg-slate-900 text-white py-16 md:py-24">
+      <section className="bg-charcoal text-white py-16 md:py-24">
         <div className="container max-w-4xl">
-          <Link href="/solutions/marketing-operations" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 mb-8 transition-colors">
+          <Link href="/solutions/marketing-operations" className="inline-flex items-center gap-2 text-primary hover:text-primary mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Marketing Operations
           </Link>
@@ -86,7 +86,7 @@ export default function FutureOfMarketingOps() {
               The modern MOPs professional needs a hybrid skillset: part strategist, part data analyst, part developer. Low-code/no-code platforms are empowering MOPs teams to build custom integrations and apps without relying on IT, increasing agility and speed-to-market.
             </p>
 
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
+            <div className="bg-primary/5 border-l-4 border-primary p-6 my-8">
               <p className="text-lg text-charcoal font-semibold">
                 "Marketing Operations is the art of removing friction from the revenue process."
               </p>
@@ -106,12 +106,12 @@ export default function FutureOfMarketingOps() {
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 bg-slate-900 rounded-lg text-white">
+          <div className="mt-16 p-8 bg-charcoal rounded-lg text-white">
             <h3 className="text-2xl font-bold mb-4">Scale your marketing engine</h3>
             <p className="text-muted-foreground/50 mb-6">
               Our Marketing Operations practice helps you build the infrastructure, processes, and governance needed for sustainable growth.
             </p>
-            <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-charcoal bg-white rounded-lg hover:bg-slate-100 transition-colors">
+            <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-charcoal bg-white rounded-lg hover:bg-subtle transition-colors">
               Contact our team
             </Link>
           </div>

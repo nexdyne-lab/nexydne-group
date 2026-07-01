@@ -15,7 +15,7 @@ export default function DataReadiness() {
       serviceName="Data Readiness Assessment"
       serviceSlug="data-readiness"
       heroSubtitle="Evaluate your data assets, quality, and infrastructure. Identify gaps and create a plan to build the data foundation AI requires. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-ai-strategy.6d63f5ec.jpg"
+      heroImage="/blog-strategy-meeting.2402f79c.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Data Readiness Assessment engagements delivered" },
@@ -68,14 +68,14 @@ export default function DataReadiness() {
           title: "Unlocking enterprise data for a national healthcare network",
           industry: "Healthcare",
           metric: "10x",
-          image: "/case-healthcare-data.6d63f5ec.jpg",
+          image: "/case-healthcare-analytics.0ceb030c.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Transforming clinical workflow at a leading academic medical center",
           industry: "Healthcare",
           metric: "40%",
-          image: "/case-hospital-clinical.401c96db.jpg",
+          image: "/case-clinical-workflow.ca226f80.jpg",
         },
       ]}
       relatedServices={[

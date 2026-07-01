@@ -30,7 +30,7 @@ export function FeaturedInitiatives() {
           {/* Large Hero Image */}
           <div className="relative h-[500px] rounded-3xl overflow-hidden mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12 shadow-xl sm:shadow-xl sm:shadow-2xl">
             <img 
-              src="/initiatives-hero-entrepreneurship.8cc91785.png" 
+              src="/ceo-digital-growth.webp" 
               alt="The next generation of entrepreneurialism - Business leaders collaborating on digital transformation" 
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -54,7 +54,7 @@ export function FeaturedInitiatives() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl leading-relaxed"
+                className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl leading-relaxed"
               >
                 The next generation of operational excellence is being built today. Through strategic research, open collaboration, and hands-on learning, we're equipping mid-market companies with the intelligence and tools they need to compete at enterprise scale.
               </motion.p>

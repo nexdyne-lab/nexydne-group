@@ -94,7 +94,7 @@ export default function ReadinessAssessment({
                       onClick={() => handleOptionSelect(questions[currentStep].id, option.value)}
                       className="w-full text-left p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-secondary/50 transition-all group flex items-center justify-between"
                     >
-                      <span className="text-slate-200 group-hover:text-white font-medium">{option.label}</span>
+                      <span className="text-muted-foreground group-hover:text-white font-medium">{option.label}</span>
                       <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-white/20 group-hover:text-secondary transition-colors" />
                     </button>
                   ))}

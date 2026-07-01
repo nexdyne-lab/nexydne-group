@@ -15,7 +15,7 @@ export default function VendorSelection() {
       serviceName="Technology & Vendor Selection"
       serviceSlug="vendor-selection"
       heroSubtitle="Navigate the complex AI vendor landscape. We help you choose the right platforms, tools, and partners for your specific needs and constraints. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-ai-strategy.6d63f5ec.jpg"
+      heroImage="/blog-strategy-meeting.2402f79c.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Technology & Vendor Selection engagements delivered" },
@@ -68,7 +68,7 @@ export default function VendorSelection() {
           title: "AI-powered audit automation at a Big Four accounting firm",
           industry: "Professional Services",
           metric: "45%",
-          image: "/case-accounting-audit.5d8e23c1.jpg",
+          image: "/case-accountants-audit.1c87a151.jpg",
         },
       ]}
       relatedServices={[

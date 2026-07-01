@@ -36,7 +36,7 @@ export default function GrowthStrategy() {
               <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Strategic Advisory</span>
             </div>
 
-            <h1 className="text-charcoal tracking-[-0.035em] leading-[1.0] text-[clamp(2.4rem,5.4vw,4.2rem)] mb-7 eb-garamond">
+            <h1 className="text-charcoal tracking-[-0.035em] leading-[1.0] text-[clamp(2.4rem,5.4vw,4.2rem)] mb-7">
               Growth Strategy
             </h1>
             <p className="text-[1.1rem] md:text-[1.2rem] text-muted-foreground max-w-2xl leading-[1.55]">
@@ -51,7 +51,7 @@ export default function GrowthStrategy() {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-6">
+              <h2 className="text-3xl md:text-[2rem] font-bold text-charcoal mb-6">
                 Where to Play, How to Win
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
@@ -105,7 +105,7 @@ export default function GrowthStrategy() {
       <section className="py-24 bg-white border-y border-border">
         <div className="container mx-auto px-6">
           <div className="mb-16 text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-6">Our Strategic Framework</h2>
+            <h2 className="text-3xl md:text-[2rem] font-bold text-charcoal mb-6">Our Strategic Framework</h2>
             <p className="text-muted-foreground text-lg">
               We don't just deliver reports; we deliver results. Our approach is grounded in data, tested in the real world, and designed for execution.
             </p>
@@ -113,7 +113,7 @@ export default function GrowthStrategy() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="p-8 bg-background border border-border rounded-2xl hover:border-primary/50 transition-colors">
-              <div className="text-6xl font-bold text-charcoal/10 mb-6">01</div>
+              <div className="text-[2.75rem] font-bold text-charcoal/10 mb-6">01</div>
               <h3 className="text-2xl font-bold text-charcoal mb-4">Diagnose & Discover</h3>
               <p className="text-muted-foreground mb-6">
                 We start by understanding your core strengths and the external environment. We use advanced analytics to uncover hidden opportunities and threats.
@@ -129,7 +129,7 @@ export default function GrowthStrategy() {
             </div>
 
             <div className="p-8 bg-background border border-border rounded-2xl hover:border-primary/50 transition-colors">
-              <div className="text-6xl font-bold text-charcoal/10 mb-6">02</div>
+              <div className="text-[2.75rem] font-bold text-charcoal/10 mb-6">02</div>
               <h3 className="text-2xl font-bold text-charcoal mb-4">Design & Define</h3>
               <p className="text-muted-foreground mb-6">
                 We co-create the strategy with your leadership team. We define the "North Star" and the specific initiatives required to get there.
@@ -145,7 +145,7 @@ export default function GrowthStrategy() {
             </div>
 
             <div className="p-8 bg-background border border-border rounded-2xl hover:border-primary/50 transition-colors">
-              <div className="text-6xl font-bold text-charcoal/10 mb-6">03</div>
+              <div className="text-[2.75rem] font-bold text-charcoal/10 mb-6">03</div>
               <h3 className="text-2xl font-bold text-charcoal mb-4">Deliver & Drive</h3>
               <p className="text-muted-foreground mb-6">
                 Strategy is nothing without execution. We stay with you to pilot, refine, and scale the initiatives, ensuring value realization.
@@ -169,7 +169,7 @@ export default function GrowthStrategy() {
           <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-amber mb-6 block">
             Strategic Advisory
           </span>
-          <h2 className="text-4xl md:text-6xl font-bold mb-8">
+          <h2 className="text-[2rem] md:text-[2.75rem] font-bold mb-8">
             Define your future.
           </h2>
           <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto">

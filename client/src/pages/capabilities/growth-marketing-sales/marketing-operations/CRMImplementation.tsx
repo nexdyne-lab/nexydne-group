@@ -14,20 +14,20 @@ export default function CRMImplementation() {
       {/* Hero Section */}
       <section className="bg-background text-charcoal pt-32 pb-20 px-4 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-20">
-          <div className="absolute top-20 right-20 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
-          <div className="absolute bottom-20 left-20 w-96 h-96 bg-indigo-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+          <div className="absolute top-20 right-20 w-96 h-96 bg-primary rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+          <div className="absolute bottom-20 left-20 w-96 h-96 bg-primary rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
         </div>
         
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="mb-5 sm:mb-6 md:mb-8">
-            <Link href="/capabilities/growth-marketing-sales/marketing-operations" className="inline-flex items-center text-blue-300 hover:text-white transition-colors mb-6">
+            <Link href="/capabilities/growth-marketing-sales/marketing-operations" className="inline-flex items-center text-primary hover:text-white transition-colors mb-6">
               <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
               Back to Marketing Operations
             </Link>
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 leading-tight eb-garamond">
               CRM Architecture & Revenue Engineering
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl font-light leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-primary max-w-3xl font-light leading-relaxed">
               We architect CRM ecosystems that serve as the central nervous system of your revenue operations, driving velocity, precision, and scalable growth.
             </p>
           </div>
@@ -50,7 +50,7 @@ export default function CRMImplementation() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 mt-12">
-            <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-slate-100">
+            <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-border">
               <h3 className="text-xl font-bold text-base mb-4 flex items-center">
                 <Users className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-primary" />
                 Adoption by Design
@@ -59,7 +59,7 @@ export default function CRMImplementation() {
                 We build interfaces that sales professionals love. By prioritizing user experience and reducing administrative friction, we ensure high adoption rates and consistent data entry.
               </p>
             </div>
-            <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-slate-100">
+            <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-border">
               <h3 className="text-xl font-bold text-base mb-4 flex items-center">
                 <Database className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-primary" />
                 Data Excellence
@@ -68,7 +68,7 @@ export default function CRMImplementation() {
                 Reliable data is the foundation of good decision-making. We implement robust validation, enrichment, and governance protocols to ensure your CRM remains a pristine source of truth.
               </p>
             </div>
-            <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-slate-100">
+            <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-border">
               <h3 className="text-xl font-bold text-base mb-4 flex items-center">
                 <Zap className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-primary" />
                 Intelligent Automation
@@ -77,7 +77,7 @@ export default function CRMImplementation() {
                 We automate routine workflows—from lead routing to contract generation—allowing your team to focus entirely on high-value interactions and closing deals.
               </p>
             </div>
-            <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-slate-100">
+            <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-border">
               <h3 className="text-xl font-bold text-base mb-4 flex items-center">
                 <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-primary" />
                 Enterprise Governance
@@ -91,7 +91,7 @@ export default function CRMImplementation() {
       </section>
 
       {/* Our Process */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-off-white">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <h2 className="text-3xl font-bold text-base mb-4 eb-garamond">
@@ -125,8 +125,8 @@ export default function CRMImplementation() {
                 desc: "We provide comprehensive training and ongoing optimization to ensure long-term success."
               }
             ].map((item, index) => (
-              <div key={index} className="bg-white p-4 sm:p-5 md:p-6 rounded-lg shadow-sm border border-slate-100 relative overflow-hidden">
-                <div className="text-6xl font-bold text-slate-100 absolute -top-4 -right-4 select-none">
+              <div key={index} className="bg-white p-4 sm:p-5 md:p-6 rounded-lg shadow-sm border border-border relative overflow-hidden">
+                <div className="text-6xl font-bold text-muted-foreground absolute -top-4 -right-4 select-none">
                   {item.step}
                 </div>
                 <h3 className="text-xl font-bold text-base mb-3 relative z-10">{item.title}</h3>
@@ -138,7 +138,7 @@ export default function CRMImplementation() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-white border-t border-slate-100">
+      <section className="py-20 bg-white border-t border-border">
         <div className="container mx-auto max-w-4xl px-4 text-center">
           <h2 className="text-3xl font-bold text-base mb-6 eb-garamond">
             Architect Your Growth Engine
@@ -147,7 +147,7 @@ export default function CRMImplementation() {
             Partner with us to build a CRM foundation that scales with your ambition.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-4 bg-blue-600 text-charcoal rounded-lg font-bold text-lg hover:bg-blue-700 transition-colors shadow-lg">
+            <button className="px-8 py-4 bg-primary text-charcoal rounded-lg font-bold text-lg hover:bg-primary-hover transition-colors shadow-lg">
               Start Your Implementation
             </button>
           </Link>

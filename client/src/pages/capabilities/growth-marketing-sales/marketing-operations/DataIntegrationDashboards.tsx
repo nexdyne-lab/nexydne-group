@@ -77,24 +77,24 @@ export default function DataIntegrationDashboards() {
       </section>
 
       {/* The Tech Stack Integration */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-off-white">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             <div className="order-2 md:order-1">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-xl sm:rounded-2xl transform rotate-3 opacity-20"></div>
-                <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-xl relative z-10 border border-slate-100">
+                <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-primary rounded-xl sm:rounded-2xl transform rotate-3 opacity-20"></div>
+                <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-xl relative z-10 border border-border">
                   <div className="space-y-6">
-                    <div className="flex items-center justify-between p-4 bg-slate-50 rounded-lg">
+                    <div className="flex items-center justify-between p-4 bg-off-white rounded-lg">
                       <div className="flex items-center gap-3">
                         <div className="w-3 h-3 rounded-full bg-secondary/100"></div>
                         <span className="font-medium text-charcoal/80">Google Ads</span>
                       </div>
                       <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 text-muted-foreground/70 rotate-180" />
                     </div>
-                    <div className="flex items-center justify-between p-4 bg-slate-50 rounded-lg">
+                    <div className="flex items-center justify-between p-4 bg-off-white rounded-lg">
                       <div className="flex items-center gap-3">
-                        <div className="w-3 h-3 rounded-full bg-blue-500"></div>
+                        <div className="w-3 h-3 rounded-full bg-primary"></div>
                         <span className="font-medium text-charcoal/80">LinkedIn Ads</span>
                       </div>
                       <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 text-muted-foreground/70 rotate-180" />
@@ -104,7 +104,7 @@ export default function DataIntegrationDashboards() {
                     </div>
                     <div className="p-4 sm:p-5 md:p-6 bg-background rounded-lg text-charcoal text-center">
                       <h4 className="font-bold text-lg mb-1">Unified Data Warehouse</h4>
-                      <p className="text-xs text-blue-200">Snowflake / BigQuery / Redshift</p>
+                      <p className="text-xs text-primary">Snowflake / BigQuery / Redshift</p>
                     </div>
                     <div className="flex items-center justify-center py-2">
                       <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 text-muted-foreground/70 -rotate-90" />
@@ -153,7 +153,7 @@ export default function DataIntegrationDashboards() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-white border-t border-slate-100">
+      <section className="py-20 bg-white border-t border-border">
         <div className="container mx-auto max-w-4xl px-4 text-center">
           <h2 className="text-3xl font-bold text-base mb-6 eb-garamond">
             Unlock Your Data's Potential

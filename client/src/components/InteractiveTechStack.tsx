@@ -40,7 +40,7 @@ export default function InteractiveTechStack({
                       {item.icon || <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5" />}
                     </div>
                     <div>
-                      <div className="text-slate-200 font-medium text-sm">{item.name}</div>
+                      <div className="text-muted-foreground font-medium text-sm">{item.name}</div>
                       {item.category && <div className="text-muted-foreground text-xs">{item.category}</div>}
                     </div>
                   </div>

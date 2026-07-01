@@ -10,19 +10,19 @@ import { dataRelatedItems } from "@/data/related-content";
 
 export default function ConsumerGoods() {
   return (
-    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-blue-100">
+    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-primary/10">
       <Navigation />
 
       {/* Hero Section */}
-      <header className="pt-16 sm:pt-20 pb-16 border-b border-slate-100">
+      <header className="pt-16 sm:pt-20 pb-16 border-b border-border">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <div className="text-sm font-medium text-muted-foreground mb-6 uppercase tracking-wider">
-              <Link href="/capabilities/growth-marketing-sales/green-growth" className="hover:text-blue-900 transition-colors">
+              <Link href="/capabilities/growth-marketing-sales/green-growth" className="hover:text-primary transition-colors">
                 Green Growth
               </Link>
               <span className="mx-2">/</span>
-              <span className="text-blue-900">Consumer Goods</span>
+              <span className="text-charcoal">Consumer Goods</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1] eb-garamond">
               The Sustainable Consumer
@@ -50,14 +50,14 @@ export default function ConsumerGoods() {
               </p>
             </section>
 
-            <Separator className="bg-slate-200" />
+            <Separator className="bg-grey" />
 
             {/* Key Challenges & Solutions */}
             <section>
               <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">Strategic Priorities</h2>
               
               <div className="space-y-10">
-                <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+                <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Sustainable Packaging</h3>
                   <p className="text-muted-foreground mb-6">
                     Reducing plastic waste is a top priority. We help optimize packaging design for recyclability and reduced material usage without compromising product integrity.
@@ -74,7 +74,7 @@ export default function ConsumerGoods() {
                   </ul>
                 </div>
 
-                <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+                <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Supply Chain Transparency</h3>
                   <p className="text-muted-foreground mb-6">
                     You can't manage what you can't see. We build data platforms that provide end-to-end visibility into your upstream supply chain emissions and labor practices.
@@ -91,7 +91,7 @@ export default function ConsumerGoods() {
                   </ul>
                 </div>
 
-                <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+                <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Green Product Design</h3>
                   <p className="text-muted-foreground mb-6">
                     Sustainability starts at the drawing board. We help R&D teams use generative design to create products with lower carbon footprints and higher durability.
@@ -110,12 +110,12 @@ export default function ConsumerGoods() {
               </div>
             </section>
 
-            <Separator className="bg-slate-200" />
+            <Separator className="bg-grey" />
 
             {/* Case Study */}
             <section>
               <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">Impact in Action</h2>
-              <div className="bg-slate-900 text-white p-8 md:p-12 rounded-sm relative overflow-hidden group">
+              <div className="bg-charcoal text-white p-8 md:p-12 rounded-sm relative overflow-hidden group">
                 <div className="absolute top-0 right-0 p-4 sm:p-6 md:p-8 opacity-10">
                   <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
                     <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
@@ -123,7 +123,7 @@ export default function ConsumerGoods() {
                 </div>
                 
                 <div className="relative z-10">
-                  <div className="text-blue-400 font-bold tracking-wider uppercase text-sm mb-4">Case Study</div>
+                  <div className="text-primary font-bold tracking-wider uppercase text-sm mb-4">Case Study</div>
                   <h3 className="text-2xl md:text-3xl font-bold mb-6">
                     Reinventing Packaging for a Global FMCG Giant
                   </h3>
@@ -142,7 +142,7 @@ export default function ConsumerGoods() {
                     </div>
                   </div>
 
-                  <Button className="bg-white text-charcoal hover:bg-blue-50 border-none">
+                  <Button className="bg-white text-charcoal hover:bg-primary/5 border-none">
                     Read full case study <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 ml-2" />
                   </Button>
                 </div>
@@ -153,21 +153,21 @@ export default function ConsumerGoods() {
 
           {/* Sidebar */}
           <div className="lg:col-span-4 space-y-8">
-            <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100 sticky top-24">
+            <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border sticky top-24">
               <h3 className="text-xl font-bold text-charcoal mb-4">Get in Touch</h3>
               <p className="text-muted-foreground mb-6 text-sm">
                 Ready to build a sustainable brand? Connect with our Consumer Goods experts.
               </p>
-              <Button className="w-full bg-blue-900 hover:bg-blue-800 text-white">
+              <Button className="w-full bg-charcoal hover:bg-primary-hover text-white">
                 Contact our experts
               </Button>
 
-              <div className="mt-8 pt-8 border-t border-slate-200">
+              <div className="mt-8 pt-8 border-t border-border">
                 <h4 className="font-bold text-charcoal mb-4 text-sm uppercase tracking-wide">Related Insights</h4>
                 <ul className="space-y-4">
                   <li>
                     <Link href="/insights/green-materials" className="group block">
-                      <h5 className="text-charcoal font-medium group-hover:text-blue-700 transition-colors mb-1">
+                      <h5 className="text-charcoal font-medium group-hover:text-primary transition-colors mb-1">
                         The Green Materials Revolution
                       </h5>
                       <span className="text-xs text-muted-foreground flex items-center">

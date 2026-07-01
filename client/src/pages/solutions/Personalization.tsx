@@ -140,7 +140,7 @@ export default function Personalization() {
         eyebrow="SOLUTION · CUSTOMER INTELLIGENCE · PERSONALIZATION"
         title="Personalization"
         subtitle="Personalization strategy is the easy part. The execution is where most programs die — variants stuck in queue, integrations half-wired, A/B framework that nobody trusts. We build the execution layer: the variant library, the integrations, the experimentation surface, and the operating model that ships personalization at compounding scale."
-        backgroundImage="/customer-intelligence-hero.57680a35.jpg"
+        backgroundImage="/hero-consultant.efacd953.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
         h1ClassName="text-4xl md:text-5xl lg:text-6xl text-charcoal leading-[1.05] mb-6"
@@ -148,7 +148,7 @@ export default function Personalization() {
       />
 
       {/* SLOT 2 — White lead / editorial intro */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -157,20 +157,19 @@ export default function Personalization() {
             transition={{ duration: 0.6 }}
             className="max-w-[72ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Our Perspective
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal mb-10"
             >
               Personalization is not a content problem. It is a pipeline problem.
             </h3>
             <div className="space-y-6">
-              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+              <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 Most personalization programs we are brought to fix have plenty of strategy and not nearly enough pipeline. The marketing team has a deck of audiences and a decision-tree of experiences, and the engineering team has a backlog of integrations none of which clear faster than a quarter. The variant ship rate runs at one a quarter when the program needs ten a quarter to compound. The lift never compounds because the volume never reaches the threshold where the experimentation surface starts paying for itself.
               </p>
-              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+              <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 We build the execution layer. The variant library treated as a reusable asset, not a campaign throwaway. The integration architecture across CDP, CMS, ESP, marketing automation, and app engineered once. The A/B framework with the holdout discipline and guardrail metrics that let the team call a winner without arguing the math. The governance that keeps brand integrity and audience suppression in lockstep with the variant volume. Personalization at compounding scale is what the execution layer makes possible.
               </p>
             </div>
@@ -179,7 +178,7 @@ export default function Personalization() {
       </section>
 
       {/* SLOT 3 — Light-grey methodology / phased approach (5 numbered phase cards) */}
-      <section className="bg-grey py-24 md:py-32">
+      <section className="bg-grey nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -188,16 +187,15 @@ export default function Personalization() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               How We Deliver
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               A five-phase approach from experience design to scaled program.
             </h3>
-            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+            <p className="nx-lead text-charcoal/80 max-w-[60ch] mt-6">
               Each phase is timeboxed and produces a tangible artifact. Most engagements run fourteen to twenty-two weeks from experience design to a live program shipping variants on a weekly cadence.
             </p>
           </motion.div>
@@ -216,7 +214,7 @@ export default function Personalization() {
                   <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-5">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25]">
+                  <h3 className="nx-h3 text-charcoal mb-4 leading-[1.25]">
                     {phase.name}
                   </h3>
                   <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
@@ -230,7 +228,7 @@ export default function Personalization() {
       </section>
 
       {/* SLOT 4 — White deliverables / what you get (flat hairline-bordered list) */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -239,12 +237,11 @@ export default function Personalization() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               What You Get
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               Six concrete artifacts every engagement leaves behind.
             </h3>
@@ -266,7 +263,7 @@ export default function Personalization() {
                   </span>
                 </div>
                 <div className="lg:col-span-4">
-                  <h4 className="text-xl text-charcoal font-medium leading-[1.25]">
+                  <h4 className="nx-h3 text-charcoal leading-[1.25]">
                     {item.name}
                   </h4>
                 </div>
@@ -282,7 +279,7 @@ export default function Personalization() {
       </section>
 
       {/* SLOT 5 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment, Pattern 2) */}
-      <section className="bg-background text-primary-foreground py-24 md:py-32">
+      <section className="bg-primary text-primary-foreground nx-section">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -290,17 +287,16 @@ export default function Personalization() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+            <span className="block nx-eyebrow text-white/70 mb-6">
               The Outcome
             </span>
             {/* TODO: replace with real stat */}
             <h2
-              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-white mb-8"
             >
               Programs that ship the execution layer alongside the strategy typically lift contribution per customer by 12 to 20 percent within twelve months — and the variant ship rate is the leading indicator of whether the lift will compound.
             </h2>
-            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+            <p className="nx-lead text-white/85 max-w-[60ch] mb-8">
               The economics work because the pipeline clears. We do not ship another personalization strategy deck and walk away. We engineer the variant library, the integrations, the A/B framework, and the operating model that turns strategy into compounded contribution per customer.
             </p>
             <Link href="/cases">
@@ -313,7 +309,7 @@ export default function Personalization() {
       </section>
 
       {/* SLOT 6 — White case studies / proof (1-2 cards, narrower than Cat 5) */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -322,12 +318,11 @@ export default function Personalization() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Client Results
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               When the pipeline clears, the lift compounds.
             </h3>
@@ -348,7 +343,7 @@ export default function Personalization() {
                       {result.industry}
                     </span>
                     {/* TODO: replace with real stat */}
-                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                    <h3 className="nx-h3 text-charcoal leading-[1.25] mb-4 group-hover:text-primary transition-colors">
                       {result.title}
                     </h3>
                     <p className="text-base text-charcoal/75 leading-[1.55] mb-6 flex-1">
@@ -366,7 +361,7 @@ export default function Personalization() {
       </section>
 
       {/* SLOT 7 — White intra-cluster sibling sub-offerings (5 links inside Customer Intelligence) */}
-      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+      <section className="bg-white nx-section border-t border-charcoal/10">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -375,12 +370,11 @@ export default function Personalization() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Other Ways We Help in Customer Intelligence
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               Sibling offerings inside this cluster.
             </h3>
@@ -398,7 +392,7 @@ export default function Personalization() {
               >
                 <Link href={offering.link} className="block h-full group cursor-pointer">
                   <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
-                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                    <h3 className="nx-h3 text-charcoal leading-[1.25] group-hover:text-primary transition-colors">
                       {offering.title}
                     </h3>
                     <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
@@ -413,7 +407,7 @@ export default function Personalization() {
       </section>
 
       {/* SLOT 8 — Charcoal closing CTA "Ready to Talk?" */}
-      <section className="bg-charcoal text-white py-24 md:py-32">
+      <section className="bg-charcoal text-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
@@ -423,16 +417,15 @@ export default function Personalization() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                <span className="block nx-eyebrow text-white/70 mb-5">
                   Ready to Talk?
                 </span>
                 <h2
-                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
-                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                  className="nx-h2 text-white mb-10"
                 >
                   Bring our personalization-execution team into your next variant-ship-rate conversation.
                 </h2>
-                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                <p className="nx-lead text-white/80 mb-6 max-w-[52ch]">
                   I want to talk to your experts in:
                 </p>
                 <Select
@@ -464,7 +457,7 @@ export default function Personalization() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
-                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                <p className="nx-lead text-white/80 mb-8 max-w-[52ch]">
                   We work with leaders who want their personalization program graded on contribution, not on activity. Personalization execution is how that conversation begins.
                 </p>
                 <div className="space-y-5">

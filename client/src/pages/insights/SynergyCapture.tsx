@@ -12,9 +12,9 @@ export default function SynergyCapture() {
       <ReadingProgress />
       <Navigation />
       {/* Hero Section */}
-      <section className="bg-slate-900 text-white py-16 md:py-24">
+      <section className="bg-charcoal text-white py-16 md:py-24">
         <div className="container max-w-4xl">
-          <Link href="/insights" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 mb-8 transition-colors">
+          <Link href="/insights" className="inline-flex items-center gap-2 text-primary hover:text-primary mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Insights
           </Link>
@@ -45,9 +45,9 @@ export default function SynergyCapture() {
       </section>
 
       {/* Featured Image */}
-      <div className="w-full h-96 bg-slate-100 overflow-hidden">
+      <div className="w-full h-96 bg-subtle overflow-hidden">
         <img 
-          src="/images/insights/synergy-capture.jpg" 
+          src="/images/ai-acceleration-abstract.jpg" 
           alt="Synergy Capture" 
           className="w-full h-full object-cover"
         />
@@ -74,7 +74,7 @@ export default function SynergyCapture() {
               The timing and risk profile of these synergies varies dramatically. Cost synergies can often be captured within 12-18 months through systematic execution. Revenue synergies typically take 18-36 months and carry higher execution risk. Understanding this timing is critical for realistic planning and investor communication.
             </p>
 
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
+            <div className="bg-primary/5 border-l-4 border-primary p-6 my-8">
               <h3 className="text-xl font-bold text-charcoal mb-4">Synergy Categories and Characteristics</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Cost synergies:</strong> Predictable, controllable, faster to capture, lower risk</li>
@@ -95,7 +95,7 @@ export default function SynergyCapture() {
               Start with the easiest wins: duplicate vendor contracts, redundant software subscriptions, and overlapping marketing spend. These can often be captured quickly with minimal disruption. Then move to more complex initiatives like organizational restructuring, facility consolidation, and process harmonization. These require careful planning to avoid disrupting operations or losing key talent.
             </p>
 
-            <div className="bg-slate-50 border-l-4 border-slate-500 p-6 my-8">
+            <div className="bg-off-white border-l-4 border-border p-6 my-8">
               <h3 className="text-xl font-bold text-charcoal mb-4">Cost Synergy Opportunities</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Quick wins (0-6 months):</strong> Vendor consolidation, duplicate subscriptions, redundant marketing</li>
@@ -128,7 +128,7 @@ export default function SynergyCapture() {
               Establish a synergy tracking office that reports directly to the CEO or integration leader. Create detailed initiative plans with specific owners, timelines, and success metrics. Implement monthly tracking and reporting to the executive team and board. Hold leaders accountable for delivery through compensation and performance management.
             </p>
 
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
+            <div className="bg-primary/5 border-l-4 border-primary p-6 my-8">
               <h3 className="text-xl font-bold text-charcoal mb-4">Synergy Capture Best Practices</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Specific initiatives:</strong> Detailed plans, not percentage targets</li>
@@ -199,7 +199,7 @@ export default function SynergyCapture() {
               Report synergy progress monthly with variance analysis explaining gaps between targets and actuals. Distinguish between synergies achieved, in progress, and at risk. Update forecasts based on actual experience rather than maintaining original projections when evidence suggests they're unachievable.
             </p>
 
-            <div className="bg-slate-50 border-l-4 border-slate-500 p-6 my-8">
+            <div className="bg-off-white border-l-4 border-border p-6 my-8">
               <h3 className="text-xl font-bold text-charcoal mb-4">Key Synergy Metrics</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Synergy capture rate:</strong> Actual vs. projected synergies by category</li>
@@ -239,7 +239,7 @@ export default function SynergyCapture() {
       </article>
 
       {/* Newsletter Subscribe */}
-      <div className="bg-slate-50 py-16">
+      <div className="bg-off-white py-16">
         <div className="container max-w-3xl">
           <NewsletterSubscribe />
         </div>

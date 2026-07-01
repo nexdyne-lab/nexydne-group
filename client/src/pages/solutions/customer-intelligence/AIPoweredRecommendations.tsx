@@ -140,7 +140,7 @@ export default function AIPoweredRecommendations() {
         eyebrow="SOLUTION · CUSTOMER INTELLIGENCE · AI-POWERED RECOMMENDATIONS"
         title="AI-Powered Recommendations"
         subtitle="Recommendations are the highest-leverage personalization surface in your business — and the easiest one to ship a mediocre version of. We build the production-grade recommender systems, the deployment architecture, and the optimization discipline that turn product, content, and next-best-offer recs into compounding revenue."
-        backgroundImage="/customer-intelligence-hero.57680a35.jpg"
+        backgroundImage="/hero-consultant.efacd953.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
         h1ClassName="text-4xl md:text-5xl lg:text-6xl text-charcoal leading-[1.05] mb-6"
@@ -148,7 +148,7 @@ export default function AIPoweredRecommendations() {
       />
 
       {/* SLOT 2 — White lead / editorial intro */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -157,20 +157,19 @@ export default function AIPoweredRecommendations() {
             transition={{ duration: 0.6 }}
             className="max-w-[72ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Our Perspective
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal mb-10"
             >
               The recommender is not the model. It is the system around the model.
             </h3>
             <div className="space-y-6">
-              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+              <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 Recommendation is the most-attempted and most-disappointing AI use case in the enterprise. A team picks an algorithm, ships a carousel, watches click-through rise on a popular item, and declares victory — meanwhile the long tail of the catalog goes dark, cold-start users see noise, and the lift evaporates inside a quarter. The win is rarely about the algorithm. It is about the surface, the latency, the fallback, the experimentation discipline, and the governance that says when to retire a model.
               </p>
-              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+              <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 We build recommender programs that compound. Collaborative filtering, content-based, two-tower retrieval, contextual bandits, hybrid stacks — chosen deliberately per surface and benchmarked on the metrics that protect the catalog, not just the click. The serving architecture, the A/B framework, the cold-start strategy, and the merchandising override layer are designed in from the start, because the difference between a recommender that earns a quarter and one that earns a decade is the system around the score.
               </p>
             </div>
@@ -179,7 +178,7 @@ export default function AIPoweredRecommendations() {
       </section>
 
       {/* SLOT 3 — Light-grey methodology / phased approach (5 numbered phase cards) */}
-      <section className="bg-grey py-24 md:py-32">
+      <section className="bg-grey nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -188,16 +187,15 @@ export default function AIPoweredRecommendations() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               How We Deliver
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               A five-phase approach from use-case to live recommender.
             </h3>
-            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+            <p className="nx-lead text-charcoal/80 max-w-[60ch] mt-6">
               Each phase is timeboxed and produces a tangible artifact. Most engagements run twelve to twenty weeks from prioritization to a live recommender with monitoring and an A/B framework in place.
             </p>
           </motion.div>
@@ -216,7 +214,7 @@ export default function AIPoweredRecommendations() {
                   <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-5">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25]">
+                  <h3 className="nx-h3 text-charcoal mb-4 leading-[1.25]">
                     {phase.name}
                   </h3>
                   <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
@@ -230,7 +228,7 @@ export default function AIPoweredRecommendations() {
       </section>
 
       {/* SLOT 4 — White deliverables / what you get (flat hairline-bordered list) */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -239,12 +237,11 @@ export default function AIPoweredRecommendations() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               What You Get
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               Six concrete artifacts every engagement leaves behind.
             </h3>
@@ -266,7 +263,7 @@ export default function AIPoweredRecommendations() {
                   </span>
                 </div>
                 <div className="lg:col-span-4">
-                  <h4 className="text-xl text-charcoal font-medium leading-[1.25]">
+                  <h4 className="nx-h3 text-charcoal leading-[1.25]">
                     {item.name}
                   </h4>
                 </div>
@@ -282,7 +279,7 @@ export default function AIPoweredRecommendations() {
       </section>
 
       {/* SLOT 5 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment, Pattern 2) */}
-      <section className="bg-background text-primary-foreground py-24 md:py-32">
+      <section className="bg-primary text-primary-foreground nx-section">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -290,17 +287,16 @@ export default function AIPoweredRecommendations() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+            <span className="block nx-eyebrow text-white/70 mb-6">
               The Outcome
             </span>
             {/* TODO: replace with real stat */}
             <h2
-              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-white mb-8"
             >
               Programs that move from rule-based to ML-based recommendations on the highest-leverage surfaces typically lift attributable revenue by 10 to 25 percent within twelve months — and the A/B framework is what compounds the gain.
             </h2>
-            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+            <p className="nx-lead text-white/85 max-w-[60ch] mb-8">
               The economics work because the recommender reaches the surface where the decision happens — at the right latency, with the right fallback, inside the right experiment. We do not ship a notebook and walk away. We engineer the system around the model that turns predictions into compounding revenue.
             </p>
             <Link href="/cases">
@@ -313,7 +309,7 @@ export default function AIPoweredRecommendations() {
       </section>
 
       {/* SLOT 6 — White case studies / proof (1-2 cards, narrower than Cat 5) */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -322,12 +318,11 @@ export default function AIPoweredRecommendations() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Client Results
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               When the system around the model is engineered, the lift compounds.
             </h3>
@@ -348,7 +343,7 @@ export default function AIPoweredRecommendations() {
                       {result.industry}
                     </span>
                     {/* TODO: replace with real stat */}
-                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                    <h3 className="nx-h3 text-charcoal leading-[1.25] mb-4 group-hover:text-primary transition-colors">
                       {result.title}
                     </h3>
                     <p className="text-base text-charcoal/75 leading-[1.55] mb-6 flex-1">
@@ -366,7 +361,7 @@ export default function AIPoweredRecommendations() {
       </section>
 
       {/* SLOT 7 — White intra-cluster sibling sub-offerings (5 links inside Customer Intelligence) */}
-      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+      <section className="bg-white nx-section border-t border-charcoal/10">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -375,12 +370,11 @@ export default function AIPoweredRecommendations() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Other Ways We Help in Customer Intelligence
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               Sibling offerings inside this cluster.
             </h3>
@@ -398,7 +392,7 @@ export default function AIPoweredRecommendations() {
               >
                 <Link href={offering.link} className="block h-full group cursor-pointer">
                   <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
-                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                    <h3 className="nx-h3 text-charcoal leading-[1.25] group-hover:text-primary transition-colors">
                       {offering.title}
                     </h3>
                     <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
@@ -413,7 +407,7 @@ export default function AIPoweredRecommendations() {
       </section>
 
       {/* SLOT 8 — Charcoal closing CTA "Ready to Talk?" */}
-      <section className="bg-charcoal text-white py-24 md:py-32">
+      <section className="bg-charcoal text-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
@@ -423,16 +417,15 @@ export default function AIPoweredRecommendations() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                <span className="block nx-eyebrow text-white/70 mb-5">
                   Ready to Talk?
                 </span>
                 <h2
-                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
-                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                  className="nx-h2 text-white mb-10"
                 >
                   Bring our recommender team into your next revenue-surface conversation.
                 </h2>
-                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                <p className="nx-lead text-white/80 mb-6 max-w-[52ch]">
                   I want to talk to your experts in:
                 </p>
                 <Select
@@ -464,7 +457,7 @@ export default function AIPoweredRecommendations() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
-                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                <p className="nx-lead text-white/80 mb-8 max-w-[52ch]">
                   We work with leaders who want their highest-leverage personalization surfaces engineered to compound. Recommendations are how that conversation begins.
                 </p>
                 <div className="space-y-5">

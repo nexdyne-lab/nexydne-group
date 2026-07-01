@@ -25,7 +25,7 @@ export default function EconomicsOfLoyalty() {
           </div>
           
           <div className="flex flex-wrap gap-4 mb-6">
-            <span className="inline-flex items-center gap-2 text-sm text-blue-300 font-medium px-3 py-1 rounded-full bg-blue-900/30 border border-blue-800">
+            <span className="inline-flex items-center gap-2 text-sm text-primary font-medium px-3 py-1 rounded-full bg-charcoal/30 border border-primary">
               <TrendingUp className="w-4 h-4" />
               Unit Economics
             </span>

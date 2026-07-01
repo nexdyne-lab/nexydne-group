@@ -40,7 +40,7 @@ export default function CaseStudyContactForm({ caseStudyTitle }: CaseStudyContac
   };
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-slate-50 to-gray-100">
+    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-off-white to-off-white">
       <div className="container">
         <div className="max-w-3xl mx-auto">
           <div className="bg-white rounded-xl sm:rounded-xl sm:rounded-2xl shadow-xl p-8 md:p-12">

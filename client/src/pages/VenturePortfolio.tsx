@@ -18,8 +18,8 @@ export default function VenturePortfolio() {
       outcomeLabel: "First Year Run Rate",
       image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80",
       icon: Truck,
-      color: "text-blue-400",
-      bgColor: "bg-blue-900/30"
+      color: "text-primary",
+      bgColor: "bg-charcoal/30"
     },
     {
       industry: "Retail & IoT",
@@ -85,8 +85,8 @@ export default function VenturePortfolio() {
       outcomeLabel: "Sq. Ft. Managed",
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80",
       icon: Building2,
-      color: "text-cyan-400",
-      bgColor: "bg-cyan-900/30"
+      color: "text-amber",
+      bgColor: "bg-charcoal/30"
     }
   ];
 

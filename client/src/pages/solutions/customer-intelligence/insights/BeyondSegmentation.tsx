@@ -48,7 +48,7 @@ export default function BeyondSegmentation() {
               </span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
+            <h1 className="text-[2rem] md:text-[2.5rem] lg:text-[2.75rem] font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
               Beyond Segmentation: The Future of Customer Intelligence
             </h1>
             
@@ -91,31 +91,31 @@ export default function BeyondSegmentation() {
                 But in an era of abundant behavioral data and sophisticated AI, traditional segmentation is showing its age. The fundamental assumption—that customers within a segment behave similarly—is increasingly false. Two customers in the same demographic segment can have radically different needs, preferences, and propensities. Treating them the same leaves value on the table.
               </p>
 
-              <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">The Limits of Traditional Segmentation</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">The Limits of Traditional Segmentation</h2>
 
               <p>
                 Traditional segmentation suffers from three fundamental limitations:
               </p>
 
-              <h3 className="text-2xl eb-garamond font-bold mt-8 mb-4">1. Static Categories in a Dynamic World</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">1. Static Categories in a Dynamic World</h3>
 
               <p>
                 Segments are typically defined once and updated quarterly or annually. But customer behavior changes constantly—influenced by life events, market conditions, competitive actions, and countless other factors. A customer who was "price-sensitive" last month might be "convenience-focused" today after a promotion at work. Static segments can't capture this dynamism.
               </p>
 
-              <h3 className="text-2xl eb-garamond font-bold mt-8 mb-4">2. Averages Obscure Individuals</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">2. Averages Obscure Individuals</h3>
 
               <p>
                 Segment-level insights describe the "average" customer in each group—but no actual customer is average. When you target the "high-value segment" with a single message, you're optimizing for a statistical abstraction, not for the real humans in that group. The result is campaigns that resonate with some customers and alienate others.
               </p>
 
-              <h3 className="text-2xl eb-garamond font-bold mt-8 mb-4">3. Backward-Looking by Design</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">3. Backward-Looking by Design</h3>
 
               <p>
                 Segments are built from historical data: what customers did in the past. But marketing effectiveness depends on predicting what customers will do in the future. A customer's past purchases tell you something about their preferences, but they don't tell you when they'll buy next, what they'll respond to, or whether they're about to churn.
               </p>
 
-              <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">The Shift to Behavioral Intelligence</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">The Shift to Behavioral Intelligence</h2>
 
               <p>
                 Leading companies are moving beyond segmentation to what we call "behavioral intelligence"—a fundamentally different approach to understanding customers. Instead of grouping customers into static categories, behavioral intelligence treats each customer as an individual with a unique profile that evolves in real-time.
@@ -150,33 +150,33 @@ export default function BeyondSegmentation() {
                 </div>
               </div>
 
-              <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">Building Blocks of Behavioral Intelligence</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">Building Blocks of Behavioral Intelligence</h2>
 
-              <h3 className="text-2xl eb-garamond font-bold mt-8 mb-4">Unified Customer Data</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Unified Customer Data</h3>
 
               <p>
                 Behavioral intelligence requires a complete picture of each customer's interactions across every touchpoint. This means unifying data from CRM, e-commerce, support, product usage, marketing, and third-party sources into a single customer profile. Without this foundation, you're working with fragments.
               </p>
 
-              <h3 className="text-2xl eb-garamond font-bold mt-8 mb-4">Real-Time Event Processing</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Real-Time Event Processing</h3>
 
               <p>
                 Customer behavior happens in real-time, and your intelligence needs to keep pace. Modern customer data platforms can ingest and process behavioral events—page views, purchases, support tickets, app usage—within seconds, updating customer profiles and triggering actions immediately.
               </p>
 
-              <h3 className="text-2xl eb-garamond font-bold mt-8 mb-4">Predictive Models</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Predictive Models</h3>
 
               <p>
                 The real power of behavioral intelligence comes from prediction. Machine learning models can forecast individual customer behavior: likelihood to purchase, churn risk, optimal engagement timing, product preferences, and more. These predictions enable proactive, personalized engagement.
               </p>
 
-              <h3 className="text-2xl eb-garamond font-bold mt-8 mb-4">Activation Infrastructure</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Activation Infrastructure</h3>
 
               <p>
                 Intelligence without action is worthless. Behavioral intelligence systems must connect to activation channels—email, advertising, website personalization, sales CRM, customer success tools—to turn insights into personalized experiences at scale.
               </p>
 
-              <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">The Business Impact</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">The Business Impact</h2>
 
               <p>
                 Companies that have made the shift from segmentation to behavioral intelligence report significant improvements across key metrics:
@@ -184,15 +184,15 @@ export default function BeyondSegmentation() {
 
               <div className="grid md:grid-cols-3 gap-6 my-8">
                 <div className="bg-primary/10 p-6 rounded-xl text-center">
-                  <div className="text-4xl eb-garamond font-bold text-primary mb-2">2-3x</div>
+                  <div className="text-[2rem] font-bold text-primary mb-2">2-3x</div>
                   <div className="text-sm text-charcoal/70">Campaign conversion rates</div>
                 </div>
                 <div className="bg-primary/10 p-6 rounded-xl text-center">
-                  <div className="text-4xl eb-garamond font-bold text-primary mb-2">25-40%</div>
+                  <div className="text-[2rem] font-bold text-primary mb-2">25-40%</div>
                   <div className="text-sm text-charcoal/70">Retention improvement</div>
                 </div>
                 <div className="bg-primary/10 p-6 rounded-xl text-center">
-                  <div className="text-4xl eb-garamond font-bold text-primary mb-2">30%+</div>
+                  <div className="text-[2rem] font-bold text-primary mb-2">30%+</div>
                   <div className="text-sm text-charcoal/70">Customer lifetime value</div>
                 </div>
               </div>
@@ -201,7 +201,7 @@ export default function BeyondSegmentation() {
                 These gains come from treating customers as individuals rather than members of statistical groups. When every interaction is informed by a complete understanding of each customer's history, preferences, and predicted behavior, engagement becomes more relevant and effective.
               </p>
 
-              <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">Getting Started</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">Getting Started</h2>
 
               <p>
                 The transition from segmentation to behavioral intelligence doesn't happen overnight. Most companies follow a maturity path:
@@ -214,7 +214,7 @@ export default function BeyondSegmentation() {
                 <li><strong>Activate at scale:</strong> Connect your intelligence to activation channels. Automate personalized engagement across the customer journey.</li>
               </ol>
 
-              <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">The Bottom Line</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">The Bottom Line</h2>
 
               <p>
                 Traditional segmentation served us well in an era of limited data and expensive personalization. But the world has changed. Customers expect to be understood as individuals, and the technology to deliver on that expectation is now accessible to mid-market companies.

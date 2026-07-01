@@ -17,15 +17,15 @@ export default function IntelligentProcessOptimizationNew() {
       ]} />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-charcoal via-charcoal to-charcoal text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 right-20 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 right-20 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-20 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
         </div>
         
         <div className="container relative py-16 sm:py-20 md:py-24 lg:py-16 sm:py-20 md:py-24 lg:py-32">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-6 text-cyan-400">Solutions</p>
+            <p className="text-sm font-semibold tracking-widest uppercase mb-6 text-amber">Solutions</p>
             <h1 className="text-6xl md:text-7xl font-bold mb-5 sm:mb-3 md:mb-4 leading-tight">
               Intelligent Process Optimization
             </h1>
@@ -74,8 +74,8 @@ export default function IntelligentProcessOptimizationNew() {
             {/* AI Capability */}
             <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg shadow-sm border border-border">
               <div className="flex items-start gap-4 mb-4">
-                <div className="bg-cyan-100 p-3 rounded-lg flex-shrink-0">
-                  <Cpu className="h-6 w-6 text-cyan-600" />
+                <div className="bg-primary/10 p-3 rounded-lg flex-shrink-0">
+                  <Cpu className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Artificial Intelligence</h3>
@@ -89,7 +89,7 @@ export default function IntelligentProcessOptimizationNew() {
             {/* Technology Capability */}
             <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg shadow-sm border border-border">
               <div className="flex items-start gap-4 mb-4">
-                <div className="bg-blue-100 p-3 rounded-lg flex-shrink-0">
+                <div className="bg-primary/10 p-3 rounded-lg flex-shrink-0">
                   <Workflow className="h-6 w-6 text-primary" />
                 </div>
                 <div>
@@ -146,8 +146,8 @@ export default function IntelligentProcessOptimizationNew() {
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 max-w-7xl mx-auto">
             <div className="text-center">
-              <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Zap className="w-8 h-8 text-cyan-600" />
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Zap className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-bold mb-4">60-80% faster</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -156,7 +156,7 @@ export default function IntelligentProcessOptimizationNew() {
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <TrendingUp className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-2xl font-bold mb-4">40-60% cost reduction</h3>
@@ -179,11 +179,11 @@ export default function IntelligentProcessOptimizationNew() {
       </section>
 
       {/* Case Study Highlight */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-off-white to-primary">
         <div className="container">
           <div className="max-w-4xl mx-auto bg-white rounded-xl sm:rounded-2xl shadow-xl overflow-hidden">
             <div className="p-6 sm:p-6 sm:p-8 md:p-12">
-              <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-cyan-600">Case Study</p>
+              <p className="text-sm font-semibold tracking-widest uppercase mb-4 text-primary">Case Study</p>
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-charcoal">
                 Regional logistics company cuts shipment processing time by 75%
               </h2>
@@ -192,15 +192,15 @@ export default function IntelligentProcessOptimizationNew() {
               </p>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 mb-5 sm:mb-6 md:mb-8">
                 <div>
-                  <p className="text-4xl font-bold text-cyan-600 mb-2">75%</p>
+                  <p className="text-4xl font-bold text-primary mb-2">75%</p>
                   <p className="text-muted-foreground">Faster processing</p>
                 </div>
                 <div>
-                  <p className="text-4xl font-bold text-cyan-600 mb-2">$420K</p>
+                  <p className="text-4xl font-bold text-primary mb-2">$420K</p>
                   <p className="text-muted-foreground">Annual savings</p>
                 </div>
                 <div>
-                  <p className="text-4xl font-bold text-cyan-600 mb-2">95%</p>
+                  <p className="text-4xl font-bold text-primary mb-2">95%</p>
                   <p className="text-muted-foreground">Error reduction</p>
                 </div>
               </div>
@@ -214,7 +214,7 @@ export default function IntelligentProcessOptimizationNew() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-24 bg-slate-900 text-white">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-24 bg-charcoal text-white">
         <div className="container text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             Ready to eliminate operational bottlenecks?
@@ -222,7 +222,7 @@ export default function IntelligentProcessOptimizationNew() {
           <p className="text-xl opacity-90 mb-10 max-w-2xl mx-auto">
             Let's discuss how intelligent automation can transform your operations and unlock growth capacity.
           </p>
-          <Button size="lg" className="bg-cyan-500 hover:bg-cyan-600 text-charcoal font-bold">
+          <Button size="lg" className="bg-primary hover:bg-primary-hover text-charcoal font-bold">
             Schedule a consultation
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>

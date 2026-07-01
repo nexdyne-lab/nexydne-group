@@ -367,7 +367,7 @@ export default function CaseStudyLegalDocIntel() {
                 industry: "Professional Services",
                 metric: "65%",
                 metricLabel: "Faster review",
-                image: "/case-law-firm.8b2c4d91.jpg",
+                image: "/case-law-firm-meeting.401c96db.jpg",
                 link: "/cases/law-firm-contract-automation"
               },
               {
@@ -375,7 +375,7 @@ export default function CaseStudyLegalDocIntel() {
                 industry: "Professional Services",
                 metric: "58%",
                 metricLabel: "Faster proposals",
-                image: "/case-consulting-knowledge.7a9b3c82.jpg",
+                image: "/case-consulting-team.81cdc8ed.jpeg",
                 link: "/cases/consulting-knowledge-management"
               },
               {
@@ -383,7 +383,7 @@ export default function CaseStudyLegalDocIntel() {
                 industry: "Professional Services",
                 metric: "62%",
                 metricLabel: "Time saved",
-                image: "/case-accounting-audit.5d4e2f73.jpg",
+                image: "/case-accountants-audit.1c87a151.jpg",
                 link: "/cases/accounting-audit-automation"
               }
             ].map((item, index) => (

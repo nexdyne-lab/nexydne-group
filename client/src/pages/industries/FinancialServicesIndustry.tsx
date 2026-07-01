@@ -21,47 +21,47 @@ export default function FinancialServicesIndustry() {
       challenges={[
         {
           title: "Pressure on the core",
-          body: "Legacy core systems were not built for real-time payments, embedded finance, or cloud-scale resilience. Leaders need a clear ROI framework for modernization that funds itself, rather than a multi-year rip-and-replace."
+          body: "Legacy cores weren't built for real-time payments or cloud-scale resilience — leaders need modernization that funds itself, not a multi-year rip-and-replace."
         },
         {
           title: "Rising customer expectations",
-          body: "Retail and commercial customers expect digital-first journeys, personalized advice, and instant resolution. Meeting that bar at scale requires unified customer data, AI-assisted decisioning, and tighter feedback loops between product, marketing, and operations."
+          body: "Customers expect digital-first journeys and instant resolution; meeting that bar at scale needs unified data and AI-assisted decisioning."
         },
         {
           title: "Regulatory and risk complexity",
-          body: "Capital, conduct, AML, and AI-governance requirements are tightening simultaneously. Institutions need automated controls, model-risk management, and the data lineage to prove compliance without slowing the business down."
+          body: "Capital, conduct, AML, and AI-governance rules are tightening at once — automated controls and model-risk management are now essential."
         },
         {
           title: "Competing for talent and tech",
-          body: "Banks and insurers are competing for the same engineers, data scientists, and product talent as fintechs and big tech. Winning requires modern delivery models, partner ecosystems, and a clear story about the work itself."
+          body: "Banks and insurers compete with fintechs for the same talent; winning needs modern delivery and a clear story about the work itself."
         }
       ]}
       capabilities={[
         {
           name: "Customer & Growth Strategy",
           href: "/capabilities/strategy-growth",
-          blurb: "From retail banking to wealth management, we map what is driving customer choice in each category so you can build advantaged positions — Demand-Centric Growth, segment redesign, and product investment guidance."
+          blurb: "Map what drives customer choice in each category so you can build advantaged, demand-centric growth positions."
         },
         {
           name: "Digital & Data Transformation",
           href: "/capabilities/data-transformation",
-          blurb: "We help banks and insurers integrate digital tools, collaborate with fintech partners, and blend new talent with current staff to drive measurable results across channels — including AI-powered personalization at scale."
+          blurb: "Integrate digital tools, fintech partners, and new talent to drive measurable results — including AI personalization at scale."
         },
         {
           name: "Risk, Compliance & Resilience",
           href: "/capabilities/risk-resilience",
-          blurb: "We rewire risk and compliance with automated controls, model-risk frameworks, and resilient operating models — so the business can move faster without expanding regulatory exposure."
+          blurb: "Rewire risk and compliance with automated controls and model-risk frameworks so the business can move faster."
         },
         {
           name: "Pricing & Revenue Management",
           href: "/capabilities/pricing-revenue",
-          blurb: "Pricing optimizations drive significant impact for financial institutions. We help fund margin improvement through product portfolio pricing, fee-structure management, and dynamic pricing tuned to customer demand and competitive pressure."
+          blurb: "Fund margin improvement through portfolio, fee-structure, and dynamic pricing tuned to demand and competition."
         }
       ]}
       experienceStats={[
         // TODO: David — replace with verified Financial Services-specific numbers before publish.
         { number: "12 mo", label: "Average engagement length with FS clients" },
-        { number: "$XX B", label: "In client transaction value processed" },
+        { number: "2B+", label: "Annual transactions processed on platforms we've built" },
         { number: "8 of 10", label: "Top US banks served on at least one engagement" },
         { number: "40+", label: "FS digital-transformation programs delivered" }
       ]}

@@ -49,7 +49,7 @@ export default function SupplyChainResilience() {
           <div className="flex flex-wrap items-center justify-between gap-6">
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-gray-900 flex items-center justify-center text-white font-semibold">
+                <div className="w-12 h-12 rounded-full bg-charcoal flex items-center justify-center text-white font-semibold">
                   MW
                 </div>
                 <div>
@@ -58,7 +58,7 @@ export default function SupplyChainResilience() {
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-white font-semibold">
+                <div className="w-12 h-12 rounded-full bg-charcoal flex items-center justify-center text-white font-semibold">
                   EP
                 </div>
                 <div>

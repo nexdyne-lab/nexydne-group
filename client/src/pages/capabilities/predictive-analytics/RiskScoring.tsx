@@ -15,7 +15,7 @@ export default function RiskScoring() {
       serviceName="Risk Scoring"
       serviceSlug="risk-scoring"
       heroSubtitle="Quantify credit risk, fraud probability, and operational risks. We build models that balance accuracy with regulatory requirements for explainability. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-predictive-analytics.91d3a49b.jpg"
+      heroImage="/blog-data-analytics.01de594d.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Risk Scoring engagements delivered" },
@@ -68,14 +68,14 @@ export default function RiskScoring() {
           title: "Reinventing claims processing for a top-five insurer",
           industry: "Financial Services",
           metric: "55%",
-          image: "/case-insurance-claims.b1f9c248.jpg",
+          image: "/case-insurance-claims.399e5d4b.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Automating client onboarding for a global wealth management firm",
           industry: "Financial Services",
           metric: "60%",
-          image: "/case-wealth-management.91d3a49b.jpg",
+          image: "/case-advisor-client.eb15e04e.jpg",
         },
       ]}
       relatedServices={[

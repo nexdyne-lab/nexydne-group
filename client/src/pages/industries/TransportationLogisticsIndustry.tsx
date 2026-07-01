@@ -20,41 +20,41 @@ export default function TransportationLogisticsIndustry() {
       challenges={[
         {
           title: "Visibility and exception management",
-          body: "Most shippers still cannot see across modes and tiers in real time. AI-powered visibility, exception orchestration, and predictive ETAs are now baseline customer expectations — not differentiators."
+          body: "Most shippers still can't see across modes and tiers in real time — AI visibility and predictive ETAs are now baseline expectations."
         },
         {
           title: "Driver and asset productivity",
-          body: "Driver shortages and equipment cost are squeezing operating ratios. Smart dispatching, route optimization, and connected-asset programs are how leading carriers are protecting productivity."
+          body: "Driver shortages and equipment cost are squeezing operating ratios; smart dispatching and route optimization protect productivity."
         },
         {
           title: "Last-mile economics",
-          body: "E-commerce has shifted volume to the most expensive part of the network. Density routing, dynamic delivery windows, and modern depot operations are now decisive on unit-economics, not just service."
+          body: "E-commerce shifted volume to the most expensive part of the network — density routing and modern depots now decide unit economics."
         },
         {
           title: "Sustainability and fleet transition",
-          body: "Customer scope-3 obligations and fleet-electrification timelines are forcing planning that legacy systems were not built for. Auditable emissions data and credible transition plans are increasingly part of how cargo is awarded."
+          body: "Customer scope-3 obligations and electrification timelines demand auditable emissions data and credible transition plans."
         }
       ]}
       capabilities={[
         {
           name: "Operations Excellence",
           href: "/capabilities/operations-excellence",
-          blurb: "Modernize network, dispatch, and warehouse operations with AI-powered optimization and connected-worker tools tuned for transportation realities."
+          blurb: "Modernize network, dispatch, and warehouse operations with AI optimization and connected-worker tools."
         },
         {
           name: "Data Transformation",
           href: "/capabilities/data-transformation",
-          blurb: "Unify TMS, WMS, and partner data into a real-time visibility platform that supports modern AI use cases across the network."
+          blurb: "Unify TMS, WMS, and partner data into a real-time visibility platform for modern AI across the network."
         },
         {
           name: "Customer Intelligence",
           href: "/capabilities/customer-intelligence",
-          blurb: "Engineer shipper, broker, and end-customer experiences with the digital tools and self-service capabilities the next generation of buyers expect."
+          blurb: "Engineer shipper, broker, and end-customer experiences with the digital, self-service tools buyers now expect."
         },
         {
           name: "Strategy & Growth",
           href: "/capabilities/strategy-growth",
-          blurb: "Develop the value-added services, platform, and pricing strategies that translate operational excellence into durable commercial advantage."
+          blurb: "The value-added services, platform, and pricing strategies that turn operational excellence into commercial advantage."
         }
       ]}
       experienceStats={[

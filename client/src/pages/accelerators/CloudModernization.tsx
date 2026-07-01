@@ -187,9 +187,9 @@ export default function CloudModernization() {
               <motion.div 
                 key={i}
                 variants={fadeInUp}
-                className="group bg-slate-50 rounded-2xl p-8 hover:bg-slate-100 transition-colors"
+                className="group bg-off-white rounded-2xl p-8 hover:bg-subtle transition-colors"
               >
-                <div className="w-14 h-14 bg-blue-900 rounded-xl flex items-center justify-center mb-6">
+                <div className="w-14 h-14 bg-charcoal rounded-xl flex items-center justify-center mb-6">
                   <capability.icon className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-charcoal mb-3">{capability.title}</h3>
@@ -209,7 +209,7 @@ export default function CloudModernization() {
       </section>
 
       {/* Migration Pathways Section */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-off-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div 
             initial="hidden"
@@ -240,14 +240,14 @@ export default function CloudModernization() {
               <motion.div 
                 key={i}
                 variants={fadeInUp}
-                className="bg-white rounded-2xl p-8 border border-slate-200 hover:border-blue-300 hover:shadow-lg transition-all"
+                className="bg-white rounded-2xl p-8 border border-border hover:border-primary hover:shadow-lg transition-all"
               >
                 <h3 className="text-2xl font-bold text-charcoal mb-4">{pathway.title}</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{pathway.description}</p>
-                <div className="space-y-4 pt-4 border-t border-slate-100">
+                <div className="space-y-4 pt-4 border-t border-border">
                   <div>
                     <span className="text-xs font-medium tracking-wider text-muted-foreground uppercase">Timeline</span>
-                    <div className="text-lg font-semibold text-blue-900">{pathway.timeline}</div>
+                    <div className="text-lg font-semibold text-charcoal">{pathway.timeline}</div>
                   </div>
                   <div>
                     <span className="text-xs font-medium tracking-wider text-muted-foreground uppercase">Best For</span>
@@ -292,7 +292,7 @@ export default function CloudModernization() {
               <motion.div 
                 key={i}
                 variants={fadeInUp}
-                className="bg-blue-900 rounded-2xl p-8 text-white"
+                className="bg-charcoal rounded-2xl p-8 text-white"
               >
                 <span className="text-xs font-medium tracking-[0.15em] text-white/60 uppercase mb-4 block">
                   {useCase.industry}
@@ -300,7 +300,7 @@ export default function CloudModernization() {
                 <h3 className="text-xl font-bold mb-4">{useCase.title}</h3>
                 <p className="text-white/70 mb-6 leading-relaxed">{useCase.description}</p>
                 <div className="pt-4 border-t border-white/10">
-                  <div className="text-2xl font-bold text-cyan-400">{useCase.results}</div>
+                  <div className="text-2xl font-bold text-amber">{useCase.results}</div>
                 </div>
               </motion.div>
             ))}
@@ -309,7 +309,7 @@ export default function CloudModernization() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-blue-900">
+      <section className="py-24 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto text-center">
             <motion.h2 
@@ -339,7 +339,7 @@ export default function CloudModernization() {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Link href="/contact">
-                <span className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-900 font-semibold rounded-full hover:bg-subtle transition-all cursor-pointer group">
+                <span className="inline-flex items-center justify-center px-8 py-4 bg-white text-charcoal font-semibold rounded-full hover:bg-subtle transition-all cursor-pointer group">
                   Get Cloud Assessment
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>

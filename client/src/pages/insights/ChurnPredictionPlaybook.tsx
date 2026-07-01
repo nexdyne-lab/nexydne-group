@@ -25,7 +25,7 @@ export default function ChurnPredictionPlaybook() {
           </div>
           
           <div className="flex flex-wrap gap-4 mb-6">
-            <span className="inline-flex items-center gap-2 text-sm text-blue-300 font-medium px-3 py-1 rounded-full bg-blue-900/30 border border-blue-800">
+            <span className="inline-flex items-center gap-2 text-sm text-primary font-medium px-3 py-1 rounded-full bg-charcoal/30 border border-primary">
               <Code className="w-4 h-4" />
               Technical Guide
             </span>
@@ -78,7 +78,7 @@ export default function ChurnPredictionPlaybook() {
             <SocialShare title="The Churn Prediction Playbook" />
           </div>
 
-          <div className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-base prose-a:text-secondary prose-img:rounded-xl prose-pre:bg-base prose-pre:text-gray-100">
+          <div className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-base prose-a:text-secondary prose-img:rounded-xl prose-pre:bg-base prose-pre:text-muted-foreground">
             <p className="lead text-xl text-muted-foreground mb-8">
               Most churn prediction models fail not because the math is wrong, but because the engineering is disconnected from the business process. A model that lives in a Jupyter notebook is useless. A model that pushes probability scores into Salesforce is a revenue engine.
             </p>
@@ -162,7 +162,7 @@ importances = rf.feature_importances_`}
             <p>
               The final step is automation. We set up triggers in the CRM:
             </p>
-            <div className="bg-blue-50 border-l-4 border-secondary p-6 my-8 rounded-r-lg">
+            <div className="bg-primary/5 border-l-4 border-secondary p-6 my-8 rounded-r-lg">
               <ul className="mb-0 text-charcoal/80 list-none pl-0 space-y-2">
                 <li><strong>Score &gt; 70%:</strong> Alert CSM Manager, create "At Risk" opportunity.</li>
                 <li><strong>Score 50-70%:</strong> Trigger automated email sequence from CSM.</li>

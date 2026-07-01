@@ -12,7 +12,7 @@ export default function CloudCostOptimization() {
       serviceName="Cloud Cost Optimization"
       serviceSlug="cloud-cost-optimization"
       heroSubtitle="Cloud bills do not get smaller because someone reads a cost dashboard. We rebuild the baseline, surface the waste, restructure commitments, deploy the FinOps operating model, and embed the discipline so cost stops being the quarterly surprise it has been."
-      heroImage="/enterprise-transformation-hero.jpg"
+      heroImage="/solution-enterprise-transformation.0a0f2624.webp"
       experienceStats={[
         { number: "20-35%", label: "Of annualized cloud spend retired in the first twelve months" },
         { number: "Year 2", label: "Gain holds because the operating cadence — not a one-time audit — produced it" },

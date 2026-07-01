@@ -48,7 +48,7 @@ export default function HyperPersonalization() {
               </span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
+            <h1 className="text-[2rem] md:text-[2.5rem] lg:text-[2.75rem] font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
               Hyper-Personalization at Scale: A Practical Guide
             </h1>
             
@@ -95,7 +95,7 @@ export default function HyperPersonalization() {
                 The answer is hyper-personalization: using AI and real-time data to deliver individualized experiences at scale. This guide walks through the practical steps to get there.
               </p>
 
-              <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">The Personalization Maturity Ladder</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">The Personalization Maturity Ladder</h2>
 
               <p>
                 Most companies progress through four stages of personalization maturity:
@@ -138,9 +138,9 @@ export default function HyperPersonalization() {
                 Most mid-market companies are somewhere between stages 2 and 3. The jump to stage 4 requires different technology, different processes, and different thinking.
               </p>
 
-              <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">The Building Blocks of Hyper-Personalization</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">The Building Blocks of Hyper-Personalization</h2>
 
-              <h3 className="text-2xl eb-garamond font-bold mt-8 mb-4">1. Unified Customer Profiles</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">1. Unified Customer Profiles</h3>
 
               <p>
                 You can't personalize for someone you don't understand. Hyper-personalization requires a complete, real-time view of each customer:
@@ -158,7 +158,7 @@ export default function HyperPersonalization() {
                 This is where Customer Data Platforms (CDPs) come in. A CDP unifies data from all your sources—CRM, e-commerce, support, product, marketing—into a single customer profile that updates in real-time.
               </p>
 
-              <h3 className="text-2xl eb-garamond font-bold mt-8 mb-4">2. Decision Intelligence</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">2. Decision Intelligence</h3>
 
               <p>
                 With unified profiles in place, you need AI models to make personalization decisions:
@@ -189,7 +189,7 @@ export default function HyperPersonalization() {
                 </ul>
               </div>
 
-              <h3 className="text-2xl eb-garamond font-bold mt-8 mb-4">3. Content Flexibility</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">3. Content Flexibility</h3>
 
               <p>
                 Hyper-personalization requires content that can be assembled dynamically. This doesn't mean creating infinite variations—it means creating modular content components that can be combined in different ways:
@@ -201,7 +201,7 @@ export default function HyperPersonalization() {
                 <li><strong>AI-generated variations:</strong> Using generative AI to create personalized copy at scale</li>
               </ul>
 
-              <h3 className="text-2xl eb-garamond font-bold mt-8 mb-4">4. Real-Time Activation</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">4. Real-Time Activation</h3>
 
               <p>
                 The final piece is the ability to act on personalization decisions in real-time across all channels:
@@ -214,13 +214,13 @@ export default function HyperPersonalization() {
                 <li><strong>Sales/service:</strong> Personalized talking points and recommendations</li>
               </ul>
 
-              <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">Getting Started: A Practical Roadmap</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">Getting Started: A Practical Roadmap</h2>
 
               <p>
                 You don't need to boil the ocean. Here's a practical path to hyper-personalization:
               </p>
 
-              <h3 className="text-2xl eb-garamond font-bold mt-8 mb-4">Phase 1: Foundation (Months 1-3)</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Phase 1: Foundation (Months 1-3)</h3>
 
               <ul>
                 <li>Implement a CDP or unified customer profile system</li>
@@ -228,7 +228,7 @@ export default function HyperPersonalization() {
                 <li>Build identity resolution to connect customers across channels</li>
               </ul>
 
-              <h3 className="text-2xl eb-garamond font-bold mt-8 mb-4">Phase 2: First Use Case (Months 3-6)</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Phase 2: First Use Case (Months 3-6)</h3>
 
               <ul>
                 <li>Choose one high-impact personalization use case (e.g., product recommendations)</li>
@@ -237,7 +237,7 @@ export default function HyperPersonalization() {
                 <li>Measure and optimize</li>
               </ul>
 
-              <h3 className="text-2xl eb-garamond font-bold mt-8 mb-4">Phase 3: Expansion (Months 6-12)</h3>
+              <h3 className="text-2xl font-bold mt-8 mb-4">Phase 3: Expansion (Months 6-12)</h3>
 
               <ul>
                 <li>Add additional use cases (next-best-action, timing optimization)</li>
@@ -246,7 +246,7 @@ export default function HyperPersonalization() {
                 <li>Implement continuous testing and optimization</li>
               </ul>
 
-              <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">Common Pitfalls to Avoid</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">Common Pitfalls to Avoid</h2>
 
               <div className="bg-subtle border-l-4 border-primary p-6 my-8">
                 <h4 className="font-bold text-primary mb-2">Pitfall #1: Creepy Personalization</h4>
@@ -269,7 +269,7 @@ export default function HyperPersonalization() {
                 </p>
               </div>
 
-              <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">The Bottom Line</h2>
+              <h2 className="text-3xl font-bold mt-12 mb-6">The Bottom Line</h2>
 
               <p>
                 Hyper-personalization isn't about technology—it's about treating customers as individuals rather than segments. The technology enables this at scale, but the mindset shift is what matters.

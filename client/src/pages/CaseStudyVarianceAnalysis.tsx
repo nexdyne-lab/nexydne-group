@@ -433,14 +433,14 @@ export default function CaseStudyVarianceAnalysis() {
                 title: "Building predictive revenue models",
                 industry: "B2B SaaS",
                 description: "How we improved forecast accuracy by 35% through driver-based modeling",
-                image: "/case-predictive-revenue.5d4e2f73.jpg",
+                image: "/case-analytics-dashboard.2080e92b.png",
                 link: "/cases/predictive-revenue"
               },
               {
                 title: "Designing executive dashboards for clarity",
                 industry: "Professional Services",
                 description: "How we improved board meeting efficiency by 60%",
-                image: "/case-dashboards.8b2c4d91.jpg",
+                image: "/case-data-dashboard.391db27a.jpg",
                 link: "/cases/executive-dashboards"
               }
             ].map((item, index) => (

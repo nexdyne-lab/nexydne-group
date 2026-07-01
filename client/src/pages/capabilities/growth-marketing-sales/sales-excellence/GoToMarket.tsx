@@ -10,14 +10,14 @@ import { strategyRelatedItems } from "@/data/related-content";
 
 export default function GoToMarket() {
   return (
-    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-blue-100">
+    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-primary/10">
       <Navigation />
 
-      <header className="pt-16 sm:pt-20 pb-16 border-b border-slate-100">
+      <header className="pt-16 sm:pt-20 pb-16 border-b border-border">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <div className="text-sm font-medium text-muted-foreground mb-6 uppercase tracking-wider">
-              <Link href="/capabilities/growth-marketing-sales/sales-excellence" className="hover:text-blue-900 transition-colors">
+              <Link href="/capabilities/growth-marketing-sales/sales-excellence" className="hover:text-primary transition-colors">
                 Sales Excellence
               </Link>
             </div>
@@ -41,7 +41,7 @@ export default function GoToMarket() {
             </section>
 
             <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8">
-              <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+              <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                 <h3 className="text-xl font-bold text-charcoal mb-4">High-Resolution Market Mapping</h3>
                 <p className="text-muted-foreground mb-6">
                   Finding "granular growth." We move beyond broad demographics to identify micro-segments by geography, industry, and behavior that offer the highest yield.
@@ -62,7 +62,7 @@ export default function GoToMarket() {
                 </ul>
               </div>
 
-              <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+              <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                 <h3 className="text-xl font-bold text-charcoal mb-4">Product-Led Growth (PLG)</h3>
                 <p className="text-muted-foreground mb-6">
                   Architecting the "try-before-you-buy" motion. We help you define PQL (Product Qualified Lead) logic and automate the handoff to sales.
@@ -93,12 +93,12 @@ export default function GoToMarket() {
           </div>
 
           <div className="lg:col-span-4 space-y-8">
-            <div className="bg-slate-900 text-white p-4 sm:p-6 md:p-8 rounded-sm">
+            <div className="bg-charcoal text-white p-4 sm:p-6 md:p-8 rounded-sm">
               <h3 className="text-xl font-bold mb-4">GTM Readiness Check</h3>
               <p className="text-muted-foreground/50 mb-6">
                 Are you ready to launch? Validate your value prop, pricing model, and sales readiness before you press "deploy."
               </p>
-              <Button className="w-full bg-white text-charcoal hover:bg-slate-100">
+              <Button className="w-full bg-white text-charcoal hover:bg-subtle">
                 Download Checklist
               </Button>
             </div>

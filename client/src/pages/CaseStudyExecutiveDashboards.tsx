@@ -475,14 +475,14 @@ export default function CaseStudyExecutiveDashboards() {
                 title: "Building predictive revenue models",
                 industry: "B2B SaaS",
                 description: "How we improved forecast accuracy by 35% through driver-based modeling",
-                image: "/case-predictive-revenue.5d4e2f73.jpg",
+                image: "/case-analytics-dashboard.2080e92b.png",
                 link: "/cases/predictive-revenue"
               },
               {
                 title: "Automating variance analysis workflows",
                 industry: "Logistics",
                 description: "How we reduced close-to-report time from 15 days to 5 days",
-                image: "/case-variance-analysis.4c7d8e92.jpg",
+                image: "/case-data-dashboard.391db27a.jpg",
                 link: "/cases/variance-analysis"
               }
             ].map((item, index) => (

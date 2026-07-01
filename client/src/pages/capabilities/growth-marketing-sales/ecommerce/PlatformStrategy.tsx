@@ -71,11 +71,11 @@ export function PlatformStrategy() {
                 ))}
               </div>
             </div>
-            <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-slate-100">
+            <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-border">
               <h3 className="text-xl font-bold text-charcoal mb-6">Our Architecture Principles</h3>
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <div className="p-3 bg-blue-100 rounded-lg h-fit">
+                  <div className="p-3 bg-primary/10 rounded-lg h-fit">
                     <Server className="w-6 h-6 text-primary" />
                   </div>
                   <div>
@@ -84,7 +84,7 @@ export function PlatformStrategy() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="p-3 bg-blue-100 rounded-lg h-fit">
+                  <div className="p-3 bg-primary/10 rounded-lg h-fit">
                     <Code2 className="w-6 h-6 text-primary" />
                   </div>
                   <div>
@@ -93,7 +93,7 @@ export function PlatformStrategy() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="p-3 bg-blue-100 rounded-lg h-fit">
+                  <div className="p-3 bg-primary/10 rounded-lg h-fit">
                     <Database className="w-6 h-6 text-primary" />
                   </div>
                   <div>
@@ -133,7 +133,7 @@ export function PlatformStrategy() {
                   desc: "Controlled rollout with A/B testing, monitoring, and performance tuning."
                 }
               ].map((step, index) => (
-                <div key={index} className="bg-slate-50 p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl border border-slate-100 hover:shadow-md transition-shadow">
+                <div key={index} className="bg-off-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl border border-border hover:shadow-md transition-shadow">
                   <div className="mb-4 p-3 bg-white rounded-lg w-fit shadow-sm">
                     {step.icon}
                   </div>
@@ -147,7 +147,7 @@ export function PlatformStrategy() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-slate-900 text-charcoal">
+      <section className="py-24 bg-charcoal text-charcoal">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 eb-garamond">
             Is Your Platform Holding You Back?

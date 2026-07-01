@@ -108,7 +108,7 @@ export default function GrowthSimulator() {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-3">
               Visualize your <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-blue-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">
                 venture potential.
               </span>
             </h1>

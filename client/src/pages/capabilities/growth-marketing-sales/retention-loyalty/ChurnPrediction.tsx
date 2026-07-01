@@ -55,7 +55,7 @@ export default function ChurnPrediction() {
                 <h3 className="text-xl font-bold text-charcoal mt-8 mb-4">Our Methodology</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
-                    <div className="mt-1 bg-blue-50 p-1 rounded">
+                    <div className="mt-1 bg-primary/5 p-1 rounded">
                       <Activity className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                     </div>
                     <div>
@@ -64,7 +64,7 @@ export default function ChurnPrediction() {
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
-                    <div className="mt-1 bg-blue-50 p-1 rounded">
+                    <div className="mt-1 bg-primary/5 p-1 rounded">
                       <ShieldCheck className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                     </div>
                     <div>
@@ -73,7 +73,7 @@ export default function ChurnPrediction() {
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
-                    <div className="mt-1 bg-blue-50 p-1 rounded">
+                    <div className="mt-1 bg-primary/5 p-1 rounded">
                       <Users className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                     </div>
                     <div>
@@ -84,33 +84,33 @@ export default function ChurnPrediction() {
                 </ul>
               </div>
             </div>
-            <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-slate-100">
+            <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-border">
               <h3 className="text-xl font-bold text-charcoal mb-6">
                 The Prevention Workflow
               </h3>
               <div className="space-y-6">
-                <div className="relative pl-8 border-l-2 border-slate-200 pb-6 last:pb-0">
-                  <div className="absolute -left-[9px] top-0 w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm"></div>
+                <div className="relative pl-8 border-l-2 border-border pb-6 last:pb-0">
+                  <div className="absolute -left-[9px] top-0 w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-primary border-4 border-white shadow-sm"></div>
                   <h4 className="font-bold text-charcoal mb-2">1. Signal Detection</h4>
                   <p className="text-sm text-muted-foreground">
                     Model detects a 40% drop in "Core Feature Usage" for Account Acme Corp.
                   </p>
                 </div>
-                <div className="relative pl-8 border-l-2 border-slate-200 pb-6 last:pb-0">
-                  <div className="absolute -left-[9px] top-0 w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm"></div>
+                <div className="relative pl-8 border-l-2 border-border pb-6 last:pb-0">
+                  <div className="absolute -left-[9px] top-0 w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-primary border-4 border-white shadow-sm"></div>
                   <h4 className="font-bold text-charcoal mb-2">2. Risk Scoring</h4>
                   <p className="text-sm text-muted-foreground">
                     Churn Probability Score jumps from 12% to 78%. Account flagged as "High Risk".
                   </p>
                 </div>
-                <div className="relative pl-8 border-l-2 border-slate-200 pb-6 last:pb-0">
-                  <div className="absolute -left-[9px] top-0 w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm"></div>
+                <div className="relative pl-8 border-l-2 border-border pb-6 last:pb-0">
+                  <div className="absolute -left-[9px] top-0 w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-primary border-4 border-white shadow-sm"></div>
                   <h4 className="font-bold text-charcoal mb-2">3. Automated Action</h4>
                   <p className="text-sm text-muted-foreground">
                     System triggers "Re-engagement Sequence B" (educational content + offer) and alerts the dedicated CSM via Slack.
                   </p>
                 </div>
-                <div className="relative pl-8 border-l-2 border-slate-200 pb-6 last:pb-0">
+                <div className="relative pl-8 border-l-2 border-border pb-6 last:pb-0">
                   <div className="absolute -left-[9px] top-0 w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-secondary/100 border-4 border-white shadow-sm"></div>
                   <h4 className="font-bold text-charcoal mb-2">4. Resolution</h4>
                   <p className="text-sm text-muted-foreground">
