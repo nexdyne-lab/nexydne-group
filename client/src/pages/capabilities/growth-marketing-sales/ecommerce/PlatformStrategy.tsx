@@ -22,16 +22,16 @@ export function PlatformStrategy() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 overflow-hidden bg-base">
+      <section className="relative pt-32 pb-24 overflow-hidden bg-background">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center" />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base/90 via-base/80 to-base" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/80 to-background" />
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl">
             <Breadcrumbs className="mb-5 sm:mb-6 md:mb-8" />
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-2 sm:mb-3 md:mb-4 leading-tight eb-garamond">
+            <h1 className="text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3 md:mb-4 leading-tight eb-garamond">
               Platform Strategy & <br/>
               <span className="text-secondary">Migration Engineering</span>
             </h1>
@@ -147,7 +147,7 @@ export function PlatformStrategy() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-slate-900 text-white">
+      <section className="py-24 bg-slate-900 text-charcoal">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 eb-garamond">
             Is Your Platform Holding You Back?

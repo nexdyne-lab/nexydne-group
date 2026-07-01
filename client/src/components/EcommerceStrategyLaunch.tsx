@@ -202,7 +202,7 @@ export default function EcommerceStrategyLaunch() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {phases.map((phase, i) => (
               <motion.div
                 key={i}
@@ -386,7 +386,7 @@ export default function EcommerceStrategyLaunch() {
             </h3>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {siblings.map((offering, i) => (
               <motion.div
                 key={i}

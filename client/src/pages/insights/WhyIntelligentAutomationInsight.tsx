@@ -165,7 +165,7 @@ export default function WhyIntelligentAutomationInsight() {
               {/* Author Box */}
               <div className="border-t border-border pt-8 mt-12 not-prose">
                 <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 bg-base rounded-full flex items-center justify-center text-white font-bold text-xl">
+                  <div className="w-16 h-16 bg-background rounded-full flex items-center justify-center text-charcoal font-bold text-xl">
                     NS
                   </div>
                   <div>
@@ -187,10 +187,10 @@ export default function WhyIntelligentAutomationInsight() {
                   Share this article
                 </h4>
                 <div className="flex gap-3">
-                  <button className="w-10 h-10 bg-primary text-white rounded flex items-center justify-center hover:bg-base transition-colors">
+                  <button className="w-10 h-10 bg-primary text-charcoal rounded flex items-center justify-center hover:bg-charcoal transition-colors">
                     <Linkedin className="w-5 h-5" />
                   </button>
-                  <button className="w-10 h-10 bg-[#1DA1F2] text-white rounded flex items-center justify-center hover:bg-base transition-colors">
+                  <button className="w-10 h-10 bg-[#1DA1F2] text-charcoal rounded flex items-center justify-center hover:bg-charcoal transition-colors">
                     <Twitter className="w-5 h-5" />
                   </button>
                 </div>
@@ -225,13 +225,13 @@ export default function WhyIntelligentAutomationInsight() {
               </div>
 
               {/* CTA */}
-              <div className="bg-base p-6 rounded-lg text-white">
+              <div className="bg-background p-6 rounded-lg text-charcoal">
                 <h4 className="font-bold mb-3">Ready to start your automation journey?</h4>
-                <p className="text-sm text-white/70 mb-4">
+                <p className="text-sm text-muted-foreground mb-4">
                   Let's discuss how intelligent automation can transform your operations.
                 </p>
                 <Link href="/contact">
-                  <button className="w-full py-3 bg-secondary text-white rounded font-semibold text-sm hover:bg-primary transition-colors">
+                  <button className="w-full py-3 bg-secondary text-charcoal rounded font-semibold text-sm hover:bg-primary transition-colors">
                     Contact Us
                   </button>
                 </Link>

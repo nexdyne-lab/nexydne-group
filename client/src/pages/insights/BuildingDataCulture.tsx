@@ -62,14 +62,14 @@ export default function BuildingDataCulture() {
       <Navigation />
 
       {/* Hero Section - DZ10 Design: Deep Navy background with large image */}
-      <section className="relative min-h-[70vh] flex items-end pt-20 overflow-hidden bg-base">
+      <section className="relative min-h-[70vh] flex items-end pt-20 overflow-hidden bg-background">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
             alt="Building a Data-First Culture" 
             className="w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-base via-base/80 to-base/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/40" />
         </div>
 
         <div className="container px-4 md:px-8 lg:px-12 relative z-10 pb-16 md:pb-24">
@@ -80,33 +80,33 @@ export default function BuildingDataCulture() {
             className="max-w-4xl"
           >
             {/* Breadcrumb */}
-            <div className="flex items-center gap-2 text-sm text-white/60 mb-6">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
               <Link href="/insights" className="hover:text-white transition-colors">Insights</Link>
               <span>/</span>
-              <span className="text-white/80">Building a Data-First Culture</span>
+              <span className="text-muted-foreground">Building a Data-First Culture</span>
             </div>
 
             {/* Category Badge */}
             <div className="flex items-center gap-4 mb-6">
-              <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs font-bold uppercase tracking-wider rounded-full">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm border border-border text-charcoal text-xs font-bold uppercase tracking-wider rounded-full">
                 <span>🎬</span>
                 Culture
               </span>
-              <div className="flex items-center gap-2 text-white/60 text-sm">
+              <div className="flex items-center gap-2 text-muted-foreground text-sm">
                 <Clock className="w-4 h-4" />
                 <span>12 min watch</span>
               </div>
-              <div className="flex items-center gap-2 text-white/60 text-sm">
+              <div className="flex items-center gap-2 text-muted-foreground text-sm">
                 <Calendar className="w-4 h-4" />
                 <span>November 05, 2025</span>
               </div>
             </div>
             
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.15] mb-3 text-white">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.15] mb-3 text-charcoal">
               Building a Data-First Culture
             </h1>
             
-            <p className="text-lg md:text-xl text-white/70 max-w-3xl leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed">
               NexDyne's Chief Data Officer discusses the human side of digital change and why culture eats strategy for breakfast.
             </p>
           </motion.div>
@@ -126,10 +126,10 @@ export default function BuildingDataCulture() {
               className="lg:col-span-8"
             >
               {/* Video Placeholder */}
-              <div className="relative aspect-video bg-base rounded-lg overflow-hidden shadow-xl mb-12 group cursor-pointer">
+              <div className="relative aspect-video bg-background rounded-lg overflow-hidden shadow-xl mb-12 group cursor-pointer">
                 <div className="absolute inset-0 flex items-center justify-center z-20">
                   <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center pl-1 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    <Play className="w-8 h-8 text-white fill-white" />
+                    <Play className="w-8 h-8 text-charcoal fill-white" />
                   </div>
                 </div>
                 <img 
@@ -138,7 +138,7 @@ export default function BuildingDataCulture() {
                   className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-300"
                 />
                 <div className="absolute bottom-4 left-4 z-20">
-                  <span className="px-3 py-1 rounded bg-charcoal/60 text-white text-sm font-medium">
+                  <span className="px-3 py-1 rounded bg-charcoal/60 text-charcoal text-sm font-medium">
                     12:45
                   </span>
                 </div>
@@ -249,18 +249,18 @@ export default function BuildingDataCulture() {
                 </div>
 
                 {/* Newsletter CTA */}
-                <div className="bg-base rounded-lg p-6 text-white">
+                <div className="bg-background rounded-lg p-6 text-charcoal">
                   <h3 className="text-lg font-bold mb-2">Stay ahead of the curve</h3>
-                  <p className="text-white/60 text-sm mb-6">
+                  <p className="text-muted-foreground text-sm mb-6">
                     Get the latest strategic insights delivered directly to your inbox.
                   </p>
                   <div className="space-y-3">
                     <input 
                       type="email" 
                       placeholder="Enter your work email" 
-                      className="w-full px-4 py-3 rounded bg-white/10 border border-white/20 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5]/50 text-sm"
+                      className="w-full px-4 py-3 rounded bg-white/10 border border-border text-charcoal placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#0077B5]/50 text-sm"
                     />
-                    <button className="w-full px-4 py-3 bg-primary hover:bg-primary/90 text-white font-semibold rounded transition-colors text-sm">
+                    <button className="w-full px-4 py-3 bg-primary hover:bg-primary/90 text-charcoal font-semibold rounded transition-colors text-sm">
                       Subscribe
                     </button>
                   </div>

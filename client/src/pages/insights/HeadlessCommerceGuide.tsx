@@ -24,11 +24,11 @@ export function HeadlessCommerceGuide() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 overflow-hidden bg-base">
+      <section className="relative pt-32 pb-24 overflow-hidden bg-background">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center" />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base/90 via-base/80 to-base" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/80 to-background" />
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl">
@@ -38,7 +38,7 @@ export function HeadlessCommerceGuide() {
               <span className="w-1 h-1 rounded-full bg-slate-500" />
               <span>10 min read</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-charcoal mb-4 leading-tight">
               The Engineering Case for <br/>
               <span className="text-secondary">Headless Commerce</span>
             </h1>
@@ -166,7 +166,7 @@ export function HeadlessCommerceGuide() {
                     Migrating to headless is a significant engineering undertaking. Our team specializes in these complex transitions, ensuring zero downtime and data integrity.
                   </p>
                   <Link href="/contact">
-                    <button className="px-6 py-3 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition-colors">
+                    <button className="px-6 py-3 bg-blue-600 text-charcoal font-bold rounded-full hover:bg-blue-700 transition-colors">
                       Schedule a Consultation
                     </button>
                   </Link>

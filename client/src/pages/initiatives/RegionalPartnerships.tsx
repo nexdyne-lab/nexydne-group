@@ -63,7 +63,7 @@ function RegionalPartnershipsFAQ() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
-              className="border border-base/10 rounded-lg overflow-hidden bg-white"
+              className="border border-border rounded-lg overflow-hidden bg-white"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -95,7 +95,7 @@ function RegionalPartnershipsFAQ() {
 
 export default function RegionalPartnerships() {
   return (
-    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Regional Business Intelligence Partnerships | NexDyne Initiatives" 
         description="Partnering with local chambers to build data-driven growth ecosystems. NexDyne collaborates with chambers of commerce and economic development organizations."
@@ -113,12 +113,12 @@ export default function RegionalPartnerships() {
             className="absolute inset-0 w-full h-full object-cover"
           />
           {/* Dark overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/90 to-base/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/60" />
           {/* Subtle geometric pattern */}
           <div className="absolute inset-0 opacity-5">
-            <div className="absolute top-24 right-24 w-72 h-72 border border-white/20 rounded-full" />
-            <div className="absolute bottom-24 left-32 w-56 h-56 border border-white/20 rounded-full" />
-            <div className="absolute top-1/3 left-1/4 w-40 h-40 border border-white/20 rounded-full" />
+            <div className="absolute top-24 right-24 w-72 h-72 border border-border rounded-full" />
+            <div className="absolute bottom-24 left-32 w-56 h-56 border border-border rounded-full" />
+            <div className="absolute top-1/3 left-1/4 w-40 h-40 border border-border rounded-full" />
           </div>
         </div>
         
@@ -130,7 +130,7 @@ export default function RegionalPartnerships() {
             className="max-w-4xl"
           >
             <Link href="/#initiatives">
-              <span className="inline-flex items-center text-sm text-white/50 hover:text-white/80 transition-colors mb-8 cursor-pointer">
+              <span className="inline-flex items-center text-sm text-muted-foreground hover:text-muted-foreground transition-colors mb-8 cursor-pointer">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 NexDyne Initiatives
               </span>
@@ -140,11 +140,11 @@ export default function RegionalPartnerships() {
               Regional Business Intelligence Partnerships
             </span>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
               Partnering with local chambers to build data-driven growth ecosystems
             </h1>
             
-            <p className="text-lg md:text-xl text-white/70 leading-relaxed max-w-3xl">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl">
               NexDyne collaborates with chambers of commerce, economic development organizations, and industry associations to deliver structured intelligence, analytics, and operational playbooks for businesses at every growth stage.
             </p>
           </motion.div>
@@ -262,7 +262,7 @@ export default function RegionalPartnerships() {
       </section>
 
       {/* Why It Matters to Chambers - With Full Width Image */}
-      <section className="py-20 md:py-28 bg-base">
+      <section className="py-20 md:py-28 bg-background">
         <div className="container px-4 md:px-12">
           {/* Full width image banner */}
           <motion.div
@@ -288,14 +288,14 @@ export default function RegionalPartnerships() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl"
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/50 mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Why It Matters to Chambers
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-8">
               Moving beyond networking to strategic growth enablement
             </h2>
             
-            <div className="prose prose-lg max-w-none text-white/70 mb-12">
+            <div className="prose prose-lg max-w-none text-muted-foreground mb-12">
               <p className="text-lg leading-relaxed mb-6">
                 Traditional chamber value propositions—networking events, advocacy, and member directories—remain important but are no longer sufficient. Businesses increasingly expect data-driven insights, actionable intelligence, and strategic guidance from their professional associations.
               </p>
@@ -333,8 +333,8 @@ export default function RegionalPartnerships() {
                   <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center mb-4">
                     <item.icon className="w-5 h-5 text-primary" />
                   </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
-                  <p className="text-sm text-white/60 leading-relaxed">{item.description}</p>
+                  <h3 className="text-lg font-semibold text-charcoal mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -466,7 +466,7 @@ export default function RegionalPartnerships() {
       </section>
 
       {/* Partnership Process */}
-      <section className="py-20 md:py-28 bg-base">
+      <section className="py-20 md:py-28 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -475,13 +475,13 @@ export default function RegionalPartnerships() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mb-12"
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/50 mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Partnership Process
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal leading-tight mb-6">
               How partnerships work
             </h2>
-            <p className="text-lg text-white/70 leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed">
               A structured process to ensure successful partnership launch and ongoing value delivery.
             </p>
           </motion.div>
@@ -526,12 +526,12 @@ export default function RegionalPartnerships() {
                     <item.icon className="w-6 h-6 text-primary" />
                   </div>
                   <span className="text-primary text-sm font-bold mb-2 block">{item.step}</span>
-                  <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
-                  <p className="text-sm text-white/60 leading-relaxed">{item.description}</p>
+                  <h3 className="text-lg font-semibold text-charcoal mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
                 </div>
                 {index < 3 && (
                   <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                    <ArrowRight className="w-4 h-4 text-white/30" />
+                    <ArrowRight className="w-4 h-4 text-muted-foreground" />
                   </div>
                 )}
               </motion.div>

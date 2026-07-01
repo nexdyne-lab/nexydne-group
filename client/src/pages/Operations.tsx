@@ -7,7 +7,7 @@ export default function Operations() {
       capabilitySlug="operations"
       // PRESERVED VERBATIM from source hero subtitle
       heroSubtitle="Transform your operational infrastructure to reduce waste, improve quality, and deliver results faster. Build efficient, scalable operations that drive competitive advantage."
-      heroImage="https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/CACWfSXoulDIJAgw.jpg"
+      heroImage="/images/hero-team.jpg"
       // PRESERVED CTA labels from source (Start Your Transformation + View Case Studies)
       heroPrimaryCTA={{
         label: "Start Your Transformation",
@@ -342,7 +342,7 @@ export default function Operations() {
         leadName: "Our Operations Practice Lead",
         leadTitle: "Head of Operations, NexDyne Consulting Group",
         leadPhoto:
-          "https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/BIZXaFVVaVqquVZA.png",
+          "/images/digital-transformation-abstract.jpg",
         leadEmail: "operations@nexdyne.tech",
         leadLinkedinUrl: "https://www.linkedin.com/company/nexdyne",
       }}

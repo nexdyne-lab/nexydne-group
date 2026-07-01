@@ -261,7 +261,7 @@ export default function DigitalVenturePlaybook() {
             Our experts can help you implement these strategies for your business.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-4 bg-primary text-white font-semibold hover:bg-base transition-colors">
+            <button className="px-8 py-4 bg-primary text-white font-semibold hover:bg-charcoal transition-colors">
               Schedule a Consultation
             </button>
           </Link>

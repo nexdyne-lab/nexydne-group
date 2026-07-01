@@ -12,39 +12,42 @@ import { SEO } from "@/components/SEO";
 
 export default function CaseStudyHealthcarePatient() {
   return (
-    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
-      <SEO 
-        title="Healthcare Patient Engagement | Case Study | NexDyne Technologies" 
+    <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
+      <SEO
+        title="Healthcare Patient Engagement | Case Study | NexDyne Technologies"
         description="How an AI-powered patient engagement platform improved satisfaction scores by 38% and reduced wait times by 45%."
         canonical="/cases/healthcare-patient-engagement"
       />
       <Navigation />
       
-      {/* DZ10 Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/case-patient-engagement.7a9b3c82.jpg')] bg-cover bg-center opacity-30"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
-        
-        <div className="container relative z-10 px-4 md:px-12">
-          <Breadcrumbs />
+      {/* Hero Section */}
+      <section className="relative w-full bg-background overflow-hidden">
+        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(70% 60% at 82% 14%, rgba(224,76,44,0.05) 0%, transparent 55%), radial-gradient(55% 55% at 6% 95%, rgba(111,68,163,0.045) 0%, transparent 55%)" }} />
+        <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div className="pt-28 md:pt-32">
+            <Breadcrumbs />
+          </div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-4xl"
+            className="flex flex-col justify-center min-h-[50vh] py-20 lg:py-24"
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
-              Case Study · Healthcare
-            </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-medium tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
-              Building an AI-powered <span className="text-primary">patient engagement</span> platform
-            </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mb-5 sm:mb-6 md:mb-8">
-              A 4-clinic healthcare provider with 120 employees deployed intelligent automation to streamline patient communications, improving satisfaction scores by 38% and reducing wait times by 45%.
-            </p>
-            
-            {/* PDF Download Button */}
-            <CaseStudyPDFButton
+            <div className="max-w-[920px]">
+              <div className="flex items-center gap-3 mb-6">
+                <span className="block h-[3px] w-9 bg-primary" />
+                <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Case Study · Healthcare</span>
+              </div>
+              <h1 className="text-charcoal font-bold tracking-[-0.035em] leading-[1.05] text-[clamp(2.2rem,4.8vw,3.8rem)]">
+                Building an AI-powered patient engagement platform
+              </h1>
+              <p className="mt-7 text-[1.1rem] md:text-[1.2rem] leading-[1.55] text-muted-foreground max-w-[62ch]">
+                A 4-clinic healthcare provider with 120 employees deployed intelligent automation to streamline patient communications, improving satisfaction scores by 38% and reducing wait times by 45%.
+              </p>
+
+              <div className="mt-8">
+                {/* PDF Download Button */}
+                <CaseStudyPDFButton
               title="Building an AI-powered patient engagement platform"
               industry="Healthcare"
               summary="A 4-clinic healthcare provider with 120 employees deployed intelligent automation to streamline patient communications, improving satisfaction scores by 38% and reducing wait times by 45%."
@@ -57,13 +60,15 @@ export default function CaseStudyHealthcarePatient() {
                 "70% reduction in administrative time spent on routine communications, with 8,500+ automated interactions monthly"
               ]}
               variant="hero"
-            />
+                />
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
 
       {/* DZ10 Stats Section */}
-      <section className="py-10 sm:py-12 lg:py-16 bg-base border-t border-white/10">
+      <section className="py-12 sm:py-16 lg:py-20 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
             {[
@@ -77,11 +82,11 @@ export default function CaseStudyHealthcarePatient() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="border-l-2 border-primary/50 pl-8"
+                className="border-l-2 border-primary pl-8"
               >
-                <div className="text-6xl font-medium text-primary mb-2">{stat.metric}</div>
+                <div className="text-6xl font-bold text-white mb-2">{stat.metric}</div>
                 <div className="text-lg text-white">{stat.label}</div>
-                <div className="text-sm text-white/60">{stat.sublabel}</div>
+                <div className="text-sm text-white/70">{stat.sublabel}</div>
               </motion.div>
             ))}
           </div>
@@ -89,16 +94,16 @@ export default function CaseStudyHealthcarePatient() {
       </section>
 
       {/* DZ10 Sticky Navigation */}
-      <nav className="sticky top-20 bg-base text-white z-40 border-y border-white/10">
+      <nav className="sticky top-20 bg-background text-charcoal z-40 border-y border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex items-center gap-1">
-            <a href="#opportunity" className="px-4 sm:px-5 md:px-6 py-3 sm:py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">
+            <a href="#opportunity" className="px-4 sm:px-5 md:px-6 py-3 sm:py-4 text-sm font-medium hover:bg-charcoal/5 transition-colors hover:text-primary">
               THE OPPORTUNITY
             </a>
-            <a href="#solution" className="px-4 sm:px-5 md:px-6 py-3 sm:py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">
+            <a href="#solution" className="px-4 sm:px-5 md:px-6 py-3 sm:py-4 text-sm font-medium hover:bg-charcoal/5 transition-colors hover:text-primary">
               THE SOLUTION
             </a>
-            <a href="#impact" className="px-4 sm:px-5 md:px-6 py-3 sm:py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">
+            <a href="#impact" className="px-4 sm:px-5 md:px-6 py-3 sm:py-4 text-sm font-medium hover:bg-charcoal/5 transition-colors hover:text-primary">
               THE IMPACT
             </a>
           </div>
@@ -106,7 +111,7 @@ export default function CaseStudyHealthcarePatient() {
       </nav>
 
       {/* DZ10 Opportunity Section */}
-      <section id="opportunity" className="py-12 sm:py-16 md:py-24 lg:py-32 bg-primary">
+      <section id="opportunity" className="py-12 sm:py-16 md:py-24 lg:py-32 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -114,7 +119,7 @@ export default function CaseStudyHealthcarePatient() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Opportunity
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
@@ -144,7 +149,7 @@ export default function CaseStudyHealthcarePatient() {
       </section>
 
       {/* DZ10 Quote Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-background border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -152,19 +157,19 @@ export default function CaseStudyHealthcarePatient() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-charcoal leading-tight mb-5 sm:mb-6 md:mb-8">
               "Our patients deserve better. They shouldn't have to wait days for test results or wonder if their appointment is still scheduled. Modern healthcare requires modern communication."
             </blockquote>
-            <div className="text-base text-white">
+            <div className="text-base text-charcoal">
               <div className="font-semibold">— Dr. Emily Rodriguez</div>
-              <div className="text-white/60">Chief Medical Officer</div>
+              <div className="text-muted-foreground">Chief Medical Officer</div>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* DZ10 Solution Section */}
-      <section id="solution" className="py-12 sm:py-16 md:py-24 lg:py-32 bg-primary">
+      <section id="solution" className="py-12 sm:py-16 md:py-24 lg:py-32 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -172,7 +177,7 @@ export default function CaseStudyHealthcarePatient() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Solution
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
@@ -211,7 +216,7 @@ export default function CaseStudyHealthcarePatient() {
       </section>
 
       {/* DZ10 Quote Section 2 */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-background border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -219,19 +224,19 @@ export default function CaseStudyHealthcarePatient() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-charcoal leading-tight mb-5 sm:mb-6 md:mb-8">
               "The platform doesn't replace our staff—it empowers them to focus on what matters most: providing compassionate, high-quality care to our patients."
             </blockquote>
-            <div className="text-base text-white">
+            <div className="text-base text-charcoal">
               <div className="font-semibold">— Maria Chen</div>
-              <div className="text-white/60">Director of Patient Services</div>
+              <div className="text-muted-foreground">Director of Patient Services</div>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* DZ10 Impact Section */}
-      <section id="impact" className="py-12 sm:py-16 md:py-24 lg:py-32 bg-primary">
+      <section id="impact" className="py-12 sm:py-16 md:py-24 lg:py-32 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -239,7 +244,7 @@ export default function CaseStudyHealthcarePatient() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Impact
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
@@ -280,7 +285,7 @@ export default function CaseStudyHealthcarePatient() {
       </section>
 
       {/* DZ10 Contact Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-background border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -289,10 +294,10 @@ export default function CaseStudyHealthcarePatient() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
               Get In Touch
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white">Our experts</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-charcoal">Our experts</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl">
@@ -342,7 +347,7 @@ export default function CaseStudyHealthcarePatient() {
       </section>
 
       {/* DZ10 Related Cases Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-background border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -351,10 +356,10 @@ export default function CaseStudyHealthcarePatient() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white">More success stories</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -392,19 +397,19 @@ export default function CaseStudyHealthcarePatient() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={item.link} className="group block h-full">
-                  <div className="aspect-[4/3] overflow-hidden mb-6 rounded-md relative bg-white/5">
+                  <div className="aspect-[4/3] overflow-hidden mb-6 rounded-md relative bg-charcoal/5">
                     <img
                       src={item.image}
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute top-4 left-4 bg-base/90 px-3 py-1 rounded-full">
+                    <div className="absolute top-4 left-4 bg-charcoal/90 px-3 py-1 rounded-full">
                       <span className="text-xs font-semibold text-primary">{item.metric}</span>
                       <span className="text-xs text-white/70 ml-1">{item.metricLabel}</span>
                     </div>
                   </div>
                   <span className="text-xs font-semibold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-semibold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-semibold text-charcoal mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
@@ -417,7 +422,7 @@ export default function CaseStudyHealthcarePatient() {
 
           <div className="text-center mt-16">
             <Link href="/cases">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all bg-transparent">
+              <Button variant="outline" className="border-border text-charcoal hover:bg-charcoal/5 hover:border-primary px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-colors bg-transparent">
                 <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
                 Back to all case studies
               </Button>

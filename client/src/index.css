@@ -52,7 +52,7 @@
 
   /* Signal (Tier 2): Orange-Red — emphasis only, never the canvas */
   --color-signal:        #E04C2C;
-  --color-signal-hover:  #B83B1F;
+  --color-signal-hover:  #C33D1F;
 
   /* Supporting (Tier 3): contextual, for HIG™ visuals + data storytelling */
   --color-purple: #6F44A3;
@@ -437,4 +437,31 @@
   
   .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
   .scrollbar-hide::-webkit-scrollbar { display: none; }
+}
+
+/* ── Living brand gradient mesh — slow, organic drift (BCG-style) ── */
+@keyframes meshDrift1 {
+  0%   { transform: translate(-4%, -3%) scale(1); }
+  33%  { transform: translate(7%, 4%) scale(1.18); }
+  66%  { transform: translate(-3%, 7%) scale(1.06); }
+  100% { transform: translate(-4%, -3%) scale(1); }
+}
+@keyframes meshDrift2 {
+  0%   { transform: translate(4%, 3%) scale(1.12) rotate(0deg); }
+  50%  { transform: translate(-7%, -6%) scale(1) rotate(8deg); }
+  100% { transform: translate(4%, 3%) scale(1.12) rotate(0deg); }
+}
+@keyframes meshDrift3 {
+  0%   { transform: translate(0%, 0%) scale(1); }
+  50%  { transform: translate(6%, -7%) scale(1.24); }
+  100% { transform: translate(0%, 0%) scale(1); }
+}
+@keyframes meshDrift4 {
+  0%   { transform: translate(0%, 0%) scale(1.05); }
+  50%  { transform: translate(-6%, 5%) scale(0.92); }
+  100% { transform: translate(0%, 0%) scale(1.05); }
+}
+.mesh-blob { will-change: transform; }
+@media (prefers-reduced-motion: reduce) {
+  .mesh-blob { animation: none !important; }
 }

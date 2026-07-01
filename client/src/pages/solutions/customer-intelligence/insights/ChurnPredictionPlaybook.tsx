@@ -9,7 +9,7 @@ import { RelatedContent } from "@/components/RelatedContent";
 
 export default function ChurnPredictionPlaybook() {
   return (
-    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="The Churn Prediction Playbook for Mid-Market SaaS" 
         description="A practical guide to building and deploying churn prediction models that actually drive retention—from feature engineering to intervention automation."
@@ -25,7 +25,7 @@ export default function ChurnPredictionPlaybook() {
             alt="SaaS Analytics" 
             className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-base via-base/95 to-base" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
         </div>
         
         <div className="container px-4 md:px-12 relative z-10">
@@ -35,35 +35,35 @@ export default function ChurnPredictionPlaybook() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <Link href="/solutions/data-driven-customer-intelligence/insights" className="inline-flex items-center text-white/60 hover:text-primary mb-8 transition-colors">
+            <Link href="/solutions/data-driven-customer-intelligence/insights" className="inline-flex items-center text-muted-foreground hover:text-primary mb-8 transition-colors">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Insights
             </Link>
             
             <div className="flex items-center gap-4 mb-6">
               <span className="text-primary text-xs font-bold uppercase tracking-[0.2em]">Technology</span>
-              <span className="flex items-center text-white/40 text-sm">
+              <span className="flex items-center text-muted-foreground text-sm">
                 <Clock className="w-4 h-4 mr-1" />
                 15 min read
               </span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold tracking-tight text-white leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
               The Churn Prediction Playbook for Mid-Market SaaS
             </h1>
             
-            <p className="text-xl text-white/70 leading-relaxed mb-8">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
               A practical guide to building and deploying churn prediction models that actually drive retention—from feature engineering to intervention automation.
             </p>
 
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-charcoal font-bold">
                   NX
                 </div>
                 <div>
-                  <div className="font-semibold text-white">NEXDYNE Research</div>
-                  <div className="text-white/50 text-sm">November 2024</div>
+                  <div className="font-semibold text-charcoal">NEXDYNE Research</div>
+                  <div className="text-muted-foreground text-sm">November 2024</div>
                 </div>
               </div>
             </div>
@@ -276,7 +276,7 @@ export default function ChurnPredictionPlaybook() {
               <div className="bg-subtle p-6 rounded-xl my-6">
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
-                    <div className="w-4 h-4 bg-red-500 rounded-full"></div>
+                    <div className="w-4 h-4 bg-primary/50 rounded-full"></div>
                     <div>
                       <span className="font-bold">High Risk (70%+):</span>
                       <span className="text-charcoal/70 ml-2">Immediate CSM outreach, executive escalation</span>
@@ -342,13 +342,13 @@ export default function ChurnPredictionPlaybook() {
                 <div className="bg-subtle p-6 rounded-xl">
                   <h3 className="font-bold mb-4">Share this article</h3>
                   <div className="flex gap-3">
-                    <button className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-primary/90 transition-colors">
+                    <button className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-charcoal hover:bg-primary/90 transition-colors">
                       <Linkedin className="w-5 h-5" />
                     </button>
-                    <button className="w-10 h-10 bg-[#1DA1F2] rounded-full flex items-center justify-center text-white hover:bg-secondary transition-colors">
+                    <button className="w-10 h-10 bg-[#1DA1F2] rounded-full flex items-center justify-center text-charcoal hover:bg-secondary transition-colors">
                       <Twitter className="w-5 h-5" />
                     </button>
-                    <button className="w-10 h-10 bg-base rounded-full flex items-center justify-center text-white hover:bg-base/80 transition-colors">
+                    <button className="w-10 h-10 bg-background rounded-full flex items-center justify-center text-charcoal hover:bg-charcoal/80 transition-colors">
                       <Share2 className="w-5 h-5" />
                     </button>
                   </div>
@@ -378,9 +378,9 @@ export default function ChurnPredictionPlaybook() {
                 </div>
 
                 {/* CTA */}
-                <div className="bg-primary p-6 rounded-xl text-white">
+                <div className="bg-primary p-6 rounded-xl text-charcoal">
                   <h3 className="font-bold mb-3">Need help building your churn prediction system?</h3>
-                  <p className="text-white/80 text-sm mb-4">
+                  <p className="text-muted-foreground text-sm mb-4">
                     We've helped 50+ SaaS companies reduce churn with predictive analytics.
                   </p>
                   <Link href="/contact">

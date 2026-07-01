@@ -12,7 +12,7 @@ export default function MarketingROI() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-base text-white pt-32 pb-20 px-4 relative overflow-hidden">
+      <section className="bg-background text-charcoal pt-32 pb-20 px-4 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-20">
           <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-purple-900 to-transparent"></div>
           <div className="absolute top-20 left-1/4 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
@@ -161,7 +161,7 @@ export default function MarketingROI() {
             Gain the clarity to invest with confidence and drive measurable growth.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-4 bg-purple-600 text-white rounded-lg font-bold text-lg hover:bg-purple-700 transition-colors shadow-lg">
+            <button className="px-8 py-4 bg-purple-600 text-charcoal rounded-lg font-bold text-lg hover:bg-purple-700 transition-colors shadow-lg">
               Start Measuring ROI
             </button>
           </Link>

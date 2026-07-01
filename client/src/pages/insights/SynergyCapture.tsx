@@ -164,7 +164,7 @@ export default function SynergyCapture() {
               Assign dedicated customer success resources to high-value accounts during integration. Monitor customer satisfaction metrics weekly and intervene immediately when issues emerge. Remember that losing a major customer can wipe out years of synergy value in a single quarter.
             </p>
 
-            <div className="bg-red-50 border-l-4 border-red-500 p-6 my-8">
+            <div className="bg-primary/5 border-l-4 border-primary p-6 my-8">
               <h3 className="text-xl font-bold text-charcoal mb-4">Warning Signs of Value Destruction</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Customer churn acceleration:</strong> Attrition rates increasing above historical levels</li>

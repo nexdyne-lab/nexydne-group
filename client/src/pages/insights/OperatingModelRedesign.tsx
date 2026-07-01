@@ -10,7 +10,7 @@ import { SEO } from "@/components/SEO";
 
 export default function OperatingModelRedesign() {
   return (
-    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Operating Model Redesign: Aligning Structure with Strategy | NexDyne Technologies" 
         description="Learn how to redesign your operating model to enable strategy execution. A framework for aligning structure, processes, and capabilities."
@@ -21,7 +21,7 @@ export default function OperatingModelRedesign() {
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/70 to-base"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/70 to-background"></div>
         
         <div className="container relative z-10 px-4 md:px-12">
           <Breadcrumbs />
@@ -30,10 +30,10 @@ export default function OperatingModelRedesign() {
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-4">
               <span className="text-primary">Operating Model</span> Redesign
             </h1>
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl">
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl">
               How to redesign your operating model to enable strategy execution. Aligning structure, processes, and capabilities with strategic intent.
             </p>
-            <div className="flex items-center gap-6 mt-8 text-sm text-white/60">
+            <div className="flex items-center gap-6 mt-8 text-sm text-muted-foreground">
               <span className="flex items-center gap-2"><Clock className="w-4 h-4" />10 min read</span>
               <span>December 2024</span>
             </div>
@@ -56,7 +56,7 @@ export default function OperatingModelRedesign() {
 
             <h2 className="text-3xl font-bold text-charcoal mb-6">The Operating Model Canvas</h2>
             
-            <div className="p-8 bg-base/5 rounded-xl mb-12">
+            <div className="p-8 bg-charcoal/5 rounded-xl mb-12">
               <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Layers className="w-6 h-6 text-primary" />Six Dimensions of Operating Model</h3>
               <div className="grid md:grid-cols-2 gap-4 text-charcoal/70">
                 <div><strong className="text-charcoal">Structure:</strong> How the organization is organized and how work is divided</div>
@@ -72,21 +72,21 @@ export default function OperatingModelRedesign() {
             
             <div className="space-y-8 mb-12">
               <div className="flex gap-6">
-                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center"><Target className="w-6 h-6" /></div></div>
+                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center"><Target className="w-6 h-6" /></div></div>
                 <div>
                   <h3 className="text-xl font-bold text-charcoal mb-2">Centralized Model</h3>
                   <p className="text-charcoal/70 leading-relaxed">Decision-making concentrated at the center. Best for organizations requiring tight control, consistency, and efficiency. Trade-off: slower response to local conditions.</p>
                 </div>
               </div>
               <div className="flex gap-6">
-                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center"><Users className="w-6 h-6" /></div></div>
+                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center"><Users className="w-6 h-6" /></div></div>
                 <div>
                   <h3 className="text-xl font-bold text-charcoal mb-2">Decentralized Model</h3>
                   <p className="text-charcoal/70 leading-relaxed">Decision-making pushed to business units or regions. Best for diverse businesses requiring local responsiveness. Trade-off: potential duplication and inconsistency.</p>
                 </div>
               </div>
               <div className="flex gap-6">
-                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center"><Cog className="w-6 h-6" /></div></div>
+                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center"><Cog className="w-6 h-6" /></div></div>
                 <div>
                   <h3 className="text-xl font-bold text-charcoal mb-2">Federated Model</h3>
                   <p className="text-charcoal/70 leading-relaxed">Hybrid approach with some functions centralized and others decentralized. Best for balancing efficiency with responsiveness. Trade-off: complexity in defining boundaries.</p>
@@ -104,27 +104,27 @@ export default function OperatingModelRedesign() {
 
             <h2 className="text-3xl font-bold text-charcoal mb-6">Implementation Approach</h2>
             <div className="space-y-6 mb-12">
-              <div className="p-6 bg-base/5 rounded-xl">
+              <div className="p-6 bg-charcoal/5 rounded-xl">
                 <h4 className="text-lg font-bold text-charcoal mb-2">Phase 1: Design</h4>
                 <p className="text-charcoal/70">Define the target operating model based on strategic requirements. Engage stakeholders to build buy-in and identify implementation challenges.</p>
               </div>
-              <div className="p-6 bg-base/5 rounded-xl">
+              <div className="p-6 bg-charcoal/5 rounded-xl">
                 <h4 className="text-lg font-bold text-charcoal mb-2">Phase 2: Pilot</h4>
                 <p className="text-charcoal/70">Test the new model in a limited scope to identify issues and refine the design before full rollout.</p>
               </div>
-              <div className="p-6 bg-base/5 rounded-xl">
+              <div className="p-6 bg-charcoal/5 rounded-xl">
                 <h4 className="text-lg font-bold text-charcoal mb-2">Phase 3: Rollout</h4>
                 <p className="text-charcoal/70">Implement the new model across the organization with clear communication, training, and change management support.</p>
               </div>
-              <div className="p-6 bg-base/5 rounded-xl">
+              <div className="p-6 bg-charcoal/5 rounded-xl">
                 <h4 className="text-lg font-bold text-charcoal mb-2">Phase 4: Stabilize</h4>
                 <p className="text-charcoal/70">Monitor performance, address issues, and make adjustments. Operating model changes take time to embed—plan for a 12-18 month stabilization period.</p>
               </div>
             </div>
 
-            <div className="p-8 bg-primary text-white rounded-xl mb-12">
+            <div className="p-8 bg-primary text-charcoal rounded-xl mb-12">
               <h3 className="text-xl font-bold mb-4">The Bottom Line</h3>
-              <p className="text-white/90 leading-relaxed">
+              <p className="text-charcoal/90 leading-relaxed">
                 Operating model redesign is one of the most powerful levers for improving organizational performance. By aligning structure, processes, and capabilities with strategic intent, organizations can unlock significant value. The key is to approach it holistically—changing structure without changing processes and governance rarely delivers lasting results.
               </p>
             </div>
@@ -134,11 +134,11 @@ export default function OperatingModelRedesign() {
       </article>
 
       {/* Related Insights */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-16">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">Related Insights</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white">Continue reading</h2>
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">Related Insights</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">Continue reading</h2>
           </motion.div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
             {[
@@ -148,15 +148,15 @@ export default function OperatingModelRedesign() {
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.category}</span>
-                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
-                  <p className="text-white/60 mt-2">{item.description}</p>
+                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
+                  <p className="text-muted-foreground mt-2">{item.description}</p>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">Read insight <ArrowRight className="w-3 h-3" /></span>
                 </Link>
               </motion.div>
             ))}
           </div>
           <div className="text-center mt-16">
-            <Link href="/insights"><Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent"><ArrowLeft className="w-4 h-4 mr-2" />Back to all insights</Button></Link>
+            <Link href="/insights"><Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent"><ArrowLeft className="w-4 h-4 mr-2" />Back to all insights</Button></Link>
           </div>
         </div>
       </section>

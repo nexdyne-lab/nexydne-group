@@ -183,7 +183,7 @@ export default function Offices() {
                       <h3 className="text-2xl font-bold text-charcoal">
                         {office.city}
                         {office.isHeadquarters && (
-                          <span className="ml-2 text-xs font-medium text-destructive uppercase tracking-wide">
+                          <span className="ml-2 text-xs font-medium text-primary uppercase tracking-wide">
                             HQ
                           </span>
                         )}
@@ -210,7 +210,7 @@ export default function Offices() {
                     <Phone className="w-5 h-5 text-muted-foreground/70 flex-shrink-0" />
                     <a 
                       href={`tel:${office.phone}`}
-                      className="text-muted-foreground text-sm hover:text-destructive transition-colors"
+                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
                     >
                       {office.phone}
                     </a>
@@ -221,7 +221,7 @@ export default function Offices() {
                     <Mail className="w-5 h-5 text-muted-foreground/70 flex-shrink-0" />
                     <a 
                       href={`mailto:${office.email}`}
-                      className="text-muted-foreground text-sm hover:text-destructive transition-colors"
+                      className="text-muted-foreground text-sm hover:text-primary transition-colors"
                     >
                       {office.email}
                     </a>
@@ -238,7 +238,7 @@ export default function Offices() {
                     href={`https://maps.google.com/?q=${encodeURIComponent(office.address.join(', '))}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-destructive font-medium text-sm hover:gap-3 transition-all"
+                    className="inline-flex items-center gap-2 text-primary font-medium text-sm hover:gap-3 transition-all"
                   >
                     Get Directions <ArrowRight className="w-4 h-4" />
                   </a>
@@ -287,7 +287,7 @@ export default function Offices() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 href="/contact"
-                className="px-8 py-4 bg-primary hover:bg-red-700 text-white font-semibold rounded transition-colors inline-flex items-center justify-center gap-2"
+                className="px-8 py-4 bg-primary hover:bg-charcoal text-white font-semibold rounded transition-colors inline-flex items-center justify-center gap-2"
               >
                 Contact Us <ArrowRight className="w-4 h-4" />
               </Link>

@@ -14,10 +14,10 @@ export default function ChurnPrediction() {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="relative bg-base pt-32 pb-24 overflow-hidden">
+      <div className="relative bg-background pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center mix-blend-overlay"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-base via-transparent to-base"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
         </div>
         
         <div className="container mx-auto px-6 relative z-10">
@@ -27,7 +27,7 @@ export default function ChurnPrediction() {
               <BarChart3 className="w-3 h-3 sm:w-4 sm:h-4" />
               <span>Predictive Analytics</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-3 leading-tight eb-garamond">
+            <h1 className="text-5xl md:text-6xl font-bold text-charcoal mb-3 leading-tight eb-garamond">
               Churn Prediction & <span className="text-secondary">Prevention</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground/50 max-w-2xl leading-relaxed">

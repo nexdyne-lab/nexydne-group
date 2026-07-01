@@ -514,7 +514,7 @@ export default function Insights() {
       </section>
 
       {/* SLOT 5 — Editor's Pick signal section (THE ONE Orange-Red moment) */}
-      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+      <section className="bg-background text-primary-foreground py-24 md:py-32">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -696,7 +696,7 @@ export default function Insights() {
             </h3>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid md:grid-cols-2 gap-5">
             <div className="bg-white">
               <div className="h-full p-12 flex flex-col">
                 <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">

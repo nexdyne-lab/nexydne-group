@@ -9,7 +9,7 @@ import { SEO } from "@/components/SEO";
 
 export default function CaseStudyTrainingSubscription() {
   return (
-    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Case Study: Training Company Subscription Platform" 
         description="How a professional services training company launched a subscription platform and grew to 2,400 active members with $1.8M annual recurring revenue."
@@ -17,61 +17,53 @@ export default function CaseStudyTrainingSubscription() {
       />
       <Navigation />
       
-      {/* DZ10 Hero Section */}
-      <section className="relative min-h-[55vh] sm:min-h-[65vh] md:min-h-[55vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center pt-16 sm:pt-20 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=2000&q=80" 
-            alt="Professional Training Session" 
-            className="w-full h-full object-cover opacity-30"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/85 to-base/50" />
-          <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent" />
-        </div>
-        
-        <div className="container px-4 sm:px-6 md:px-12 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl"
-          >
-            <Link href="/solutions/accelerating-business-growth">
-              <span className="inline-flex items-center text-sm text-white/60 hover:text-primary transition-colors mb-6 cursor-pointer">
-                <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
-                Back to Accelerating Business Growth
-              </span>
-            </Link>
-            
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-violet-400 mb-4 sm:mb-6 block">
-              Professional Services • Subscription
-            </span>
-            
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1] mb-5 sm:mb-3 md:mb-4">
-              Training company launches subscription platform with 2,400 members
-            </h1>
-            
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
-              Professional services training company transformed from one-time workshops to recurring revenue with an online learning platform.
-            </p>
-            
-            <div className="flex flex-wrap gap-4 mb-10">
-              <div>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-violet-400">2,400</p>
-                <p className="text-white/60 text-sm">Active Members</p>
-              </div>
-              <div>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-violet-400">$1.8M</p>
-                <p className="text-white/60 text-sm">Annual MRR</p>
-              </div>
-              <div>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-violet-400">92%</p>
-                <p className="text-white/60 text-sm">Retention Rate</p>
-              </div>
-            </div>
-            
-            {/* PDF Download Button */}
-            <CaseStudyPDFButton
+      {/* Hero Section */}
+      <section className="relative w-full bg-background overflow-hidden">
+        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(70% 60% at 82% 14%, rgba(224,76,44,0.05) 0%, transparent 55%), radial-gradient(55% 55% at 6% 95%, rgba(111,68,163,0.045) 0%, transparent 55%)" }} />
+        <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div className="flex flex-col justify-center min-h-[50vh] py-24 lg:py-28">
+            <div className="max-w-[920px]">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+              >
+                <Link href="/solutions/accelerating-business-growth">
+                  <span className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors mb-6 cursor-pointer">
+                    <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
+                    Back to Accelerating Business Growth
+                  </span>
+                </Link>
+
+                <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
+                  Professional Services • Subscription
+                </span>
+
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-charcoal leading-[1.1] mb-5 sm:mb-3 md:mb-4">
+                  Training company launches subscription platform with 2,400 members
+                </h1>
+
+                <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-2xl mb-10">
+                  Professional services training company transformed from one-time workshops to recurring revenue with an online learning platform.
+                </p>
+
+                <div className="flex flex-wrap gap-4 mb-10">
+                  <div>
+                    <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary">2,400</p>
+                    <p className="text-muted-foreground text-sm">Active Members</p>
+                  </div>
+                  <div>
+                    <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary">$1.8M</p>
+                    <p className="text-muted-foreground text-sm">Annual MRR</p>
+                  </div>
+                  <div>
+                    <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary">92%</p>
+                    <p className="text-muted-foreground text-sm">Retention Rate</p>
+                  </div>
+                </div>
+
+                {/* PDF Download Button */}
+                <CaseStudyPDFButton
               title="Training company launches subscription platform with 2,400 members"
               industry="Professional Services"
               capability="Subscription Platform"
@@ -88,9 +80,11 @@ export default function CaseStudyTrainingSubscription() {
                 { value: "$1.8M", label: "Annual MRR" },
                 { value: "92%", label: "Retention Rate" }
               ]}
-              variant="hero"
-            />
-          </motion.div>
+                  variant="hero"
+                />
+              </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -130,19 +124,19 @@ export default function CaseStudyTrainingSubscription() {
             >
               <h3 className="text-xl font-bold mb-6">Company Profile</h3>
               <div className="space-y-4">
-                <div className="flex justify-between py-3 border-b border-base/10">
+                <div className="flex justify-between py-3 border-b border-border">
                   <span className="text-charcoal/60">Industry</span>
                   <span className="font-semibold">Professional Training</span>
                 </div>
-                <div className="flex justify-between py-3 border-b border-base/10">
+                <div className="flex justify-between py-3 border-b border-border">
                   <span className="text-charcoal/60">Employees</span>
                   <span className="font-semibold">45</span>
                 </div>
-                <div className="flex justify-between py-3 border-b border-base/10">
+                <div className="flex justify-between py-3 border-b border-border">
                   <span className="text-charcoal/60">Annual Revenue</span>
                   <span className="font-semibold">$6M (pre-project)</span>
                 </div>
-                <div className="flex justify-between py-3 border-b border-base/10">
+                <div className="flex justify-between py-3 border-b border-border">
                   <span className="text-charcoal/60">Business Model</span>
                   <span className="font-semibold">In-person workshops</span>
                 </div>
@@ -157,7 +151,7 @@ export default function CaseStudyTrainingSubscription() {
       </section>
 
       {/* The Challenge */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-background">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -166,14 +160,14 @@ export default function CaseStudyTrainingSubscription() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 sm:mb-6 md:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">
               Breaking free from the workshop treadmill
             </h2>
-            
-            <div className="space-y-6 text-lg text-white/70 leading-relaxed mb-6 sm:mb-8 md:mb-12">
+
+            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed mb-6 sm:mb-8 md:mb-12">
               <p>
                 The CEO described their situation as a "workshop treadmill"—constantly selling the next engagement to maintain revenue. Growth required proportionally more trainers, more travel, and more sales effort. Margins were thin, and there was no leverage in the model.
               </p>
@@ -197,10 +191,10 @@ export default function CaseStudyTrainingSubscription() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="flex items-start gap-3 bg-white/5 p-4 rounded-lg"
+                  className="flex items-start gap-3 bg-white border border-border p-4 rounded-lg"
                 >
-                  <div className="w-2 h-2 bg-violet-400 rounded-full mt-2 flex-shrink-0" />
-                  <span className="text-white/80">{challenge}</span>
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
+                  <span className="text-charcoal/80">{challenge}</span>
                 </motion.div>
               ))}
             </div>
@@ -265,7 +259,7 @@ export default function CaseStudyTrainingSubscription() {
                 icon: <RefreshCw className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Retention Automation",
                 description: "Engagement scoring, at-risk member identification, and automated re-engagement campaigns to maximize retention.",
-                color: "from-base to-[#0077B5]"
+                color: "from-charcoal to-[#0077B5]"
               }
             ].map((item, index) => (
               <motion.div
@@ -359,7 +353,7 @@ export default function CaseStudyTrainingSubscription() {
       </section>
 
       {/* Results */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -368,13 +362,13 @@ export default function CaseStudyTrainingSubscription() {
             transition={{ duration: 0.6 }}
             className="text-center mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               Results
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
               From workshops to recurring revenue
             </h2>
-            <p className="text-xl text-white/60 max-w-3xl mx-auto">
+            <p className="text-xl text-white/70 max-w-3xl mx-auto">
               Within 12 months, the subscription platform became the company's primary growth engine and transformed their business model.
             </p>
           </motion.div>
@@ -394,11 +388,11 @@ export default function CaseStudyTrainingSubscription() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-violet-400 mb-2">
+                <div className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-2">
                   {item.stat}
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">{item.label}</h3>
-                <p className="text-white/60 text-sm">{item.description}</p>
+                <p className="text-white/70 text-sm">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -410,7 +404,7 @@ export default function CaseStudyTrainingSubscription() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto bg-white/5 p-6 sm:p-8 md:p-12 rounded-lg sm:rounded-xl"
           >
-            <div className="text-violet-400 mb-6">
+            <div className="text-amber mb-6">
               <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
               </svg>
@@ -501,7 +495,7 @@ export default function CaseStudyTrainingSubscription() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-background">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -510,10 +504,10 @@ export default function CaseStudyTrainingSubscription() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               Ready to build recurring revenue?
             </h2>
-            <p className="text-xl text-white/70 leading-relaxed mb-10">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-10">
               Let's discuss how we can help you transform your business model with subscription-based offerings.
             </p>
             <Link href="/contact">

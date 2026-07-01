@@ -1,254 +1,118 @@
-import { useState, useEffect, useRef } from "react";
 import { Link } from "wouter";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
+import { Warp } from "@paper-design/shaders-react";
 
-interface FeaturedSlide {
-  id: number;
-  category: string;
-  title: string;
-  ctaText: string;
-  ctaLink: string;
-  backgroundImage: string;
-  tabLabel: string;
-}
+/**
+ * NexDyne homepage hero — BCG-style statement hero (Brand v2, neutral-first) with a
+ * warm brand-colour gradient field. Off-white base + a soft orange-red→amber mesh and
+ * grain for depth. Giant Instrument Sans statement; one brand word in a warm gradient.
+ */
 
-const featuredSlides: FeaturedSlide[] = [
-  {
-    id: 1,
-    category: "AI in Enterprise",
-    title: "How AI Agents Are Reshaping Enterprise Operations",
-    ctaText: "READ MORE",
-    ctaLink: "/insights/ai-agents-transform-operations",
-    backgroundImage: "/images/ai-in-enterprises.jpg",
-    tabLabel: "AI in Enterprise"
-  },
-  {
-    id: 2,
-    category: "Economic Impact",
-    title: "The $15 Trillion Question:\nHow AI Will Reshape\nthe Global Economy",
-    ctaText: "READ MORE",
-    ctaLink: "/insights/ai-economic-impact",
-    backgroundImage: "https://files.manuscdn.com/user_upload_by_module/session_file/3104196630322124911/UJuexqwGOjkcvBUe.jpeg",
-    tabLabel: "AI & Economy"
-  },
-  {
-    id: 3,
-    category: "Technology Strategy",
-    title: "The Complete Guide to Process Mining",
-    ctaText: "READ MORE",
-    ctaLink: "/insights/process-mining-guide",
-    backgroundImage: "https://files.manuscdn.com/user_upload_by_module/session_file/3104196630322124911/LWQfelZCPKRPZScm.jpg",
-    tabLabel: "Process Mining"
-  },
-  {
-    id: 4,
-    category: "AI Executive Guide",
-    title: "The Pragmatic CEO's Guide to AI",
-    ctaText: "READ MORE",
-    ctaLink: "/insights/ceo-guide-data-modernization",
-    backgroundImage: "https://files.manuscdn.com/user_upload_by_module/session_file/3104196630322124911/QzzzaEnNaVKCPJJd.jpg",
-    tabLabel: "AI Executive Guide"
-  }
-];
+const ease = [0.22, 1, 0.36, 1] as const;
 
-const SLIDE_DURATION = 8000; // 8 seconds per slide
+const container = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.1, delayChildren: 0.06 } },
+};
+const rise = {
+  hidden: { opacity: 0, y: 24 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.8, ease } },
+};
+
+// subtle fractal-noise grain (data URI) for depth on the gradient field
+const GRAIN =
+  "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")";
 
 export function BainHero() {
-  const [activeSlide, setActiveSlide] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const [progress, setProgress] = useState(0);
-  const progressRef = useRef<number>(0);
-  const animationRef = useRef<number | null>(null);
-  const lastTimeRef = useRef<number>(0);
-
-  // Animate progress bar
-  useEffect(() => {
-    if (!isAutoPlaying) {
-      setProgress(0);
-      progressRef.current = 0;
-      return;
-    }
-
-    const animate = (timestamp: number) => {
-      if (!lastTimeRef.current) {
-        lastTimeRef.current = timestamp;
-      }
-
-      const elapsed = timestamp - lastTimeRef.current;
-      progressRef.current += (elapsed / SLIDE_DURATION) * 100;
-
-      if (progressRef.current >= 100) {
-        setActiveSlide((prev) => (prev + 1) % featuredSlides.length);
-        progressRef.current = 0;
-        lastTimeRef.current = timestamp;
-      }
-
-      setProgress(progressRef.current);
-      lastTimeRef.current = timestamp;
-      animationRef.current = requestAnimationFrame(animate);
-    };
-
-    animationRef.current = requestAnimationFrame(animate);
-
-    return () => {
-      if (animationRef.current) {
-        cancelAnimationFrame(animationRef.current);
-      }
-    };
-  }, [isAutoPlaying, activeSlide]);
-
-  useEffect(() => {
-    progressRef.current = 0;
-    lastTimeRef.current = 0;
-    setProgress(0);
-  }, [activeSlide]);
-
-  const handleTabClick = (index: number) => {
-    setActiveSlide(index);
-    setIsAutoPlaying(false);
-    progressRef.current = 0;
-    setProgress(0);
-    setTimeout(() => setIsAutoPlaying(true), 30000);
-  };
-
-  const currentSlide = featuredSlides[activeSlide];
-
   return (
-    <section className="relative w-full h-[85vh] min-h-[600px] sm:min-h-[680px] lg:min-h-[760px] overflow-hidden bg-base -mt-20 pt-20">
-      {/* Background Images with Crossfade (no gradient overlay — solid tint for readability) */}
-      <AnimatePresence mode="sync">
-        {featuredSlides.map((slide, index) => (
+    <section className="relative w-full overflow-hidden bg-background">
+      {/* Animated Warp shader — brand-colour field (orange-red / amber / purple) */}
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <Warp
+          style={{ width: "100%", height: "100%" }}
+          proportion={0.45}
+          softness={1}
+          distortion={0.25}
+          swirl={0.85}
+          swirlIterations={10}
+          shape="checks"
+          shapeScale={0.1}
+          scale={1}
+          rotation={0}
+          speed={0.7}
+          colors={["#E04C2C", "#FF7A2F", "#FFB41D", "#6F44A3"]}
+        />
+      </div>
+      {/* mute saturation so it reads as a refined brand field, not neon */}
+      <div aria-hidden className="pointer-events-none absolute inset-0 bg-background/25" />
+      {/* keep the headline side readable */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(90deg, #F7F9FC 0%, rgba(247,249,252,0.90) 34%, rgba(247,249,252,0.45) 58%, rgba(247,249,252,0.12) 80%, transparent 100%)",
+        }}
+      />
+      {/* fine grain for depth */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 opacity-[0.05] mix-blend-multiply"
+        style={{ backgroundImage: GRAIN }}
+      />
+
+      <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+        <div className="flex items-center min-h-[92vh] py-28">
           <motion.div
-            key={slide.id}
-            className="absolute inset-0"
-            initial={{ opacity: 0 }}
-            animate={{
-              opacity: index === activeSlide ? 1 : 0,
-              scale: index === activeSlide ? 1 : 1.05
-            }}
-            transition={{
-              opacity: { duration: 1.2, ease: "easeInOut" },
-              scale: { duration: 10, ease: "easeOut" }
-            }}
+            variants={container}
+            initial="hidden"
+            animate="show"
+            className="max-w-[1040px]"
           >
-            <div
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-              style={{ backgroundImage: `url(${slide.backgroundImage})` }}
-            />
-            {/* Solid dark tint for text readability — no gradient */}
-            <div className="absolute inset-0 bg-charcoal/55" />
-          </motion.div>
-        ))}
-      </AnimatePresence>
-
-      {/* Content Container */}
-      <div className="relative z-10 h-full flex flex-col justify-between">
-        {/* Main Content Area */}
-        <div className="flex-1 flex items-center px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 pt-8 sm:pt-12 md:pt-16">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activeSlide}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.6 }}
-              className="max-w-[60ch]"
-            >
-              {/* Eyebrow */}
-              <span className="inline-block text-[11px] uppercase tracking-[0.2em] text-white/70 font-semibold mb-5">
-                {currentSlide.category}
+            <motion.div variants={rise} className="flex items-center gap-3 mb-8">
+              <span className="block h-[3px] w-12 bg-primary" />
+              <span className="text-[12px] font-semibold uppercase tracking-[0.2em] text-charcoal/70">
+                Welcome to NexDyne Consulting Group
               </span>
+            </motion.div>
 
-              {/* Main Title */}
-              <h1
-                className="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.08] mb-7 whitespace-pre-line"
-                style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+            <motion.h1
+              variants={rise}
+              className="text-charcoal font-bold tracking-[-0.04em] leading-[0.93] text-[clamp(3rem,7.8vw,6.5rem)]"
+            >
+              Human intelligence.
+              <br />
+              Governed.{" "}
+              <span
+                className="bg-clip-text text-transparent"
+                style={{ backgroundImage: "linear-gradient(100deg, #E04C2C 0%, #FF7A2F 45%, #FFB41D 100%)" }}
               >
-                {currentSlide.title}
-              </h1>
+                Scaled.
+              </span>
+            </motion.h1>
 
-              {/* CTA Link */}
-              <Link href={currentSlide.ctaLink}>
-                <span className="inline-block text-white text-[13px] font-semibold tracking-[0.15em] uppercase border-b border-white/60 pb-1 hover:border-white transition-colors cursor-pointer">
-                  {currentSlide.ctaText}
+            <motion.p
+              variants={rise}
+              className="mt-9 text-[1.25rem] md:text-[1.45rem] leading-[1.5] text-charcoal/70 max-w-[58ch]"
+            >
+              We design the human systems — judgment, accountability, and trust —
+              that let intelligent machines scale without losing control.
+            </motion.p>
+
+            <motion.div variants={rise} className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4">
+              <Link href="/about">
+                <span className="group inline-flex items-center gap-2.5 bg-primary text-primary-foreground text-[13px] font-semibold uppercase tracking-[0.1em] px-8 py-4 hover:bg-primary-hover transition-colors cursor-pointer shadow-[0_14px_30px_-12px_rgba(224,76,44,0.6)]">
+                  See how we work
+                  <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                </span>
+              </Link>
+              <Link href="/capabilities/artificial-intelligence">
+                <span className="inline-flex items-center text-[13px] font-semibold uppercase tracking-[0.1em] text-charcoal border-b-2 border-charcoal/25 pb-1 hover:border-primary transition-colors cursor-pointer">
+                  Explore the HIG™ doctrine
                 </span>
               </Link>
             </motion.div>
-          </AnimatePresence>
-        </div>
-
-        {/* Bottom Navigation — flat circle dots per spec */}
-        <div className="relative z-20 px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-24 pb-6 sm:pb-8 md:pb-10">
-          <div className="flex items-end justify-between gap-4 border-t border-white/20 pt-5 sm:pt-6">
-            {/* Tab Items */}
-            <div className="flex-1 flex flex-col gap-4">
-              {/* Flat nav dots */}
-              <div className="flex items-center gap-3">
-                {featuredSlides.map((slide, index) => (
-                  <button
-                    key={`dot-${slide.id}`}
-                    onClick={() => handleTabClick(index)}
-                    aria-label={`Go to slide ${index + 1}`}
-                    className="group relative p-1"
-                  >
-                    <span
-                      className={`block h-2 w-2 transition-colors duration-300 ${
-                        index === activeSlide ? "bg-primary" : "bg-white/30 group-hover:bg-white/60"
-                      }`}
-                      style={{ borderRadius: "9999px" }}
-                    />
-                  </button>
-                ))}
-              </div>
-
-              {/* Tab labels — preserved but styled flat */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6">
-                {featuredSlides.map((slide, index) => (
-                  <button
-                    key={slide.id}
-                    onClick={() => handleTabClick(index)}
-                    className="relative text-left group"
-                  >
-                    {/* Progress indicator - thin hairline above label */}
-                    <div className="h-px w-full bg-white/15 overflow-hidden mb-3">
-                      <div
-                        className="h-full bg-primary"
-                        style={{
-                          width:
-                            index === activeSlide
-                              ? `${isAutoPlaying ? progress : 100}%`
-                              : index < activeSlide
-                              ? "100%"
-                              : "0%",
-                          transition:
-                            index === activeSlide && isAutoPlaying ? "none" : "width 0.3s ease"
-                        }}
-                      />
-                    </div>
-
-                    <span
-                      className={`block text-[11px] sm:text-xs uppercase tracking-[0.15em] font-semibold transition-colors duration-300 line-clamp-1 ${
-                        index === activeSlide
-                          ? "text-white"
-                          : "text-white/50 group-hover:text-white/80"
-                      }`}
-                    >
-                      {slide.tabLabel}
-                    </span>
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Scroll Indicator */}
-            <button
-              className="flex-shrink-0 text-[11px] font-semibold tracking-[0.2em] uppercase text-white/60 hover:text-white transition-colors pb-1 border-b border-white/30 hover:border-white/80"
-              onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })}
-              aria-label="Scroll down"
-            >
-              Scroll
-            </button>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

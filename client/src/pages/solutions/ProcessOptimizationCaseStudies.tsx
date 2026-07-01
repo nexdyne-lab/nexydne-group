@@ -162,7 +162,7 @@ export default function ProcessOptimizationCaseStudies() {
   const featuredCase = caseStudies.find(c => c.featured);
 
   return (
-    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Process Optimization Case Studies | NexDyne Technologies" 
         description="Real results from intelligent automation implementations. See how mid-market companies have transformed their operations with NexDyne."
@@ -180,7 +180,7 @@ export default function ProcessOptimizationCaseStudies() {
       {/* DZ10 Hero Section */}
       <section className="relative pt-8 pb-20 md:pt-12 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-15"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/80 to-base"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background"></div>
         
         <div className="container relative z-10 px-4 md:px-12">
           <Link href="/solutions/intelligent-process-optimization" className="inline-flex items-center gap-2 text-primary hover:text-primary/80 mb-8 transition-colors font-medium">
@@ -201,7 +201,7 @@ export default function ProcessOptimizationCaseStudies() {
               Real results from <br />
               <span className="text-primary">intelligent automation</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl">
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl">
               See how mid-market companies have transformed manual operations into autonomous systems, achieving measurable improvements in speed, accuracy, and cost efficiency.
             </p>
           </motion.div>
@@ -209,7 +209,7 @@ export default function ProcessOptimizationCaseStudies() {
       </section>
 
       {/* DZ10 Filter Section */}
-      <section className="py-8 bg-base border-b border-white/10">
+      <section className="py-8 bg-background border-b border-border">
         <div className="container px-4 md:px-12">
           <div className="flex flex-wrap justify-center gap-4">
             {industries.map((industry) => (
@@ -218,8 +218,8 @@ export default function ProcessOptimizationCaseStudies() {
                 onClick={() => setSelectedIndustry(industry)}
                 className={`px-4 py-2 rounded-lg font-medium transition-all ${
                   selectedIndustry === industry
-                    ? "bg-primary text-white"
-                    : "bg-white/5 text-white/70 hover:bg-white/10 hover:text-white border border-white/10"
+                    ? "bg-primary text-charcoal"
+                    : "bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-white border border-border"
                 }`}
               >
                 {industry}
@@ -231,7 +231,7 @@ export default function ProcessOptimizationCaseStudies() {
 
       {/* DZ10 Featured Case Study */}
       {selectedIndustry === "All" && featuredCase && (
-        <section className="py-16 md:py-20 bg-base">
+        <section className="py-16 md:py-20 bg-background">
           <div className="container px-4 md:px-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -250,17 +250,17 @@ export default function ProcessOptimizationCaseStudies() {
                   </div>
                   <div className="p-8 md:p-0 md:pr-12">
                     <div className="flex items-center gap-3 mb-4">
-                      <span className="bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
+                      <span className="bg-primary text-charcoal px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
                         Featured
                       </span>
-                      <span className="text-white/60 text-sm">
+                      <span className="text-muted-foreground text-sm">
                         {featuredCase.industry}
                       </span>
                     </div>
-                    <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-white mb-4 group-hover:text-primary transition-colors">
+                    <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
                       {featuredCase.title}
                     </h2>
-                    <p className="text-white/60 text-lg leading-relaxed mb-6">
+                    <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                       {featuredCase.challenge}
                     </p>
                     
@@ -269,7 +269,7 @@ export default function ProcessOptimizationCaseStudies() {
                       {featuredCase.results.map((result, i) => (
                         <div key={i} className="text-center">
                           <div className="text-2xl md:text-3xl font-bold text-primary">{result.metric}</div>
-                          <div className="text-xs text-white/50 mt-1">{result.label}</div>
+                          <div className="text-xs text-muted-foreground mt-1">{result.label}</div>
                         </div>
                       ))}
                     </div>
@@ -299,9 +299,9 @@ export default function ProcessOptimizationCaseStudies() {
               >
                 <Link href={study.url}>
                   <div className="group cursor-pointer h-full">
-                    <div className="bg-white border border-base/10 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col hover:border-primary/30">
+                    <div className="bg-white border border-border rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col hover:border-primary/30">
                       {/* Image */}
-                      <div className="relative aspect-[16/10] overflow-hidden bg-base/5">
+                      <div className="relative aspect-[16/10] overflow-hidden bg-charcoal/5">
                         <img 
                           src={study.image} 
                           alt={study.title}
@@ -331,7 +331,7 @@ export default function ProcessOptimizationCaseStudies() {
                         </p>
                         
                         {/* Results */}
-                        <div className="grid grid-cols-3 gap-3 pt-4 border-t border-base/10">
+                        <div className="grid grid-cols-3 gap-3 pt-4 border-t border-border">
                           {study.results.map((result, i) => (
                             <div key={i} className="text-center">
                               <div className="text-lg font-bold text-primary">{result.metric}</div>
@@ -359,7 +359,7 @@ export default function ProcessOptimizationCaseStudies() {
       </section>
 
       {/* DZ10 Stats Section */}
-      <section className="py-20 md:py-24 bg-base">
+      <section className="py-20 md:py-24 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -371,7 +371,7 @@ export default function ProcessOptimizationCaseStudies() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Aggregate Impact
             </span>
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-white">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal">
               Results across all engagements
             </h2>
           </motion.div>
@@ -392,7 +392,7 @@ export default function ProcessOptimizationCaseStudies() {
                 className="text-center"
               >
                 <div className="text-4xl md:text-5xl font-bold text-primary mb-2">{stat.metric}</div>
-                <div className="text-white/60 text-sm">{stat.label}</div>
+                <div className="text-muted-foreground text-sm">{stat.label}</div>
               </motion.div>
             ))}
           </div>
@@ -400,7 +400,7 @@ export default function ProcessOptimizationCaseStudies() {
       </section>
 
       {/* DZ10 CTA Section */}
-      <section className="py-24 md:py-32 bg-primary">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -409,10 +409,10 @@ export default function ProcessOptimizationCaseStudies() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-6">
               Ready to achieve similar results?
             </h2>
-            <p className="text-xl text-white/80 mb-10">
+            <p className="text-xl text-muted-foreground mb-10">
               Let's discuss how intelligent automation can transform your operations and deliver measurable ROI.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -422,7 +422,7 @@ export default function ProcessOptimizationCaseStudies() {
                 </Button>
               </Link>
               <Link href="/solutions/intelligent-process-optimization/insights">
-                <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
+                <Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
                   Read Our Insights
                 </Button>
               </Link>

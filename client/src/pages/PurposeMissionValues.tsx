@@ -74,19 +74,19 @@ export default function PurposeMissionValues() {
                 
                 {/* Mission Pillars */}
                 <div className="grid sm:grid-cols-2 gap-6 mt-12">
-                  <div className="border-l-2 border-primary-hover pl-6">
+                  <div className="border-l-2 border-primary pl-6">
                     <h3 className="font-semibold text-charcoal mb-2">Predictive Insights</h3>
                     <p className="text-muted-foreground">Delivering intelligence that illuminates hidden patterns in business operations</p>
                   </div>
-                  <div className="border-l-2 border-primary-hover pl-6">
+                  <div className="border-l-2 border-primary pl-6">
                     <h3 className="font-semibold text-charcoal mb-2">Adaptive Systems</h3>
                     <p className="text-muted-foreground">Building solutions that evolve with our clients' growth trajectories</p>
                   </div>
-                  <div className="border-l-2 border-primary-hover pl-6">
+                  <div className="border-l-2 border-primary pl-6">
                     <h3 className="font-semibold text-charcoal mb-2">Knowledge Transfer</h3>
                     <p className="text-muted-foreground">Transferring capabilities that outlast our engagements</p>
                   </div>
-                  <div className="border-l-2 border-primary-hover pl-6">
+                  <div className="border-l-2 border-primary pl-6">
                     <h3 className="font-semibold text-charcoal mb-2">Excellence Culture</h3>
                     <p className="text-muted-foreground">Cultivating an environment where curiosity, rigor, and collaboration drive success</p>
                   </div>
@@ -126,7 +126,7 @@ export default function PurposeMissionValues() {
               {/* Value 1 */}
               <div className="grid lg:grid-cols-12 gap-8 py-12 border-t border-slate-200">
                 <div className="lg:col-span-4">
-                  <span className="text-sm font-semibold text-primary-hover uppercase tracking-wider">01</span>
+                  <span className="text-sm font-semibold text-primary uppercase tracking-wider">01</span>
                   <h3 className="text-2xl font-semibold text-charcoal mt-2">Intelligence with Purpose</h3>
                 </div>
                 <div className="lg:col-span-8">
@@ -142,7 +142,7 @@ export default function PurposeMissionValues() {
               {/* Value 2 */}
               <div className="grid lg:grid-cols-12 gap-8 py-12 border-t border-slate-200">
                 <div className="lg:col-span-4">
-                  <span className="text-sm font-semibold text-primary-hover uppercase tracking-wider">02</span>
+                  <span className="text-sm font-semibold text-primary uppercase tracking-wider">02</span>
                   <h3 className="text-2xl font-semibold text-charcoal mt-2">Clarity Through Complexity</h3>
                 </div>
                 <div className="lg:col-span-8">
@@ -158,7 +158,7 @@ export default function PurposeMissionValues() {
               {/* Value 3 */}
               <div className="grid lg:grid-cols-12 gap-8 py-12 border-t border-slate-200">
                 <div className="lg:col-span-4">
-                  <span className="text-sm font-semibold text-primary-hover uppercase tracking-wider">03</span>
+                  <span className="text-sm font-semibold text-primary uppercase tracking-wider">03</span>
                   <h3 className="text-2xl font-semibold text-charcoal mt-2">Partnership Over Transactions</h3>
                 </div>
                 <div className="lg:col-span-8">
@@ -174,7 +174,7 @@ export default function PurposeMissionValues() {
               {/* Value 4 */}
               <div className="grid lg:grid-cols-12 gap-8 py-12 border-t border-slate-200">
                 <div className="lg:col-span-4">
-                  <span className="text-sm font-semibold text-primary-hover uppercase tracking-wider">04</span>
+                  <span className="text-sm font-semibold text-primary uppercase tracking-wider">04</span>
                   <h3 className="text-2xl font-semibold text-charcoal mt-2">Relentless Curiosity</h3>
                 </div>
                 <div className="lg:col-span-8">
@@ -190,7 +190,7 @@ export default function PurposeMissionValues() {
               {/* Value 5 */}
               <div className="grid lg:grid-cols-12 gap-8 py-12 border-t border-slate-200">
                 <div className="lg:col-span-4">
-                  <span className="text-sm font-semibold text-primary-hover uppercase tracking-wider">05</span>
+                  <span className="text-sm font-semibold text-primary uppercase tracking-wider">05</span>
                   <h3 className="text-2xl font-semibold text-charcoal mt-2">Integrity in Every Interaction</h3>
                 </div>
                 <div className="lg:col-span-8">
@@ -206,7 +206,7 @@ export default function PurposeMissionValues() {
               {/* Value 6 */}
               <div className="grid lg:grid-cols-12 gap-8 py-12 border-t border-slate-200">
                 <div className="lg:col-span-4">
-                  <span className="text-sm font-semibold text-primary-hover uppercase tracking-wider">06</span>
+                  <span className="text-sm font-semibold text-primary uppercase tracking-wider">06</span>
                   <h3 className="text-2xl font-semibold text-charcoal mt-2">Excellence Through Diversity</h3>
                 </div>
                 <div className="lg:col-span-8">
@@ -235,7 +235,7 @@ export default function PurposeMissionValues() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
-                <button className="px-8 py-4 bg-primary-hover text-white font-semibold rounded hover:bg-primary transition-colors inline-flex items-center gap-2">
+                <button className="px-8 py-4 bg-primary text-white font-semibold rounded hover:bg-primary transition-colors inline-flex items-center gap-2">
                   Start a Conversation <ArrowRight className="w-5 h-5" />
                 </button>
               </Link>

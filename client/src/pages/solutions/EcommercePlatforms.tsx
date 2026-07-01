@@ -136,8 +136,8 @@ export default function EcommercePlatforms() {
             </p>
           </div>
           
-          <div className="mt-12 p-8 bg-gradient-to-r from-red-50 to-blue-50 rounded-lg border-l-4 border-red-900">
-            <p className="text-2xl font-bold text-red-900 italic">
+          <div className="mt-12 p-8 bg-gradient-to-r from-red-50 to-blue-50 rounded-lg border-l-4 border-primary">
+            <p className="text-2xl font-bold text-primary italic">
               "We make sure your platform isn't just built to perform, but to lead the way."
             </p>
           </div>
@@ -553,7 +553,7 @@ export default function EcommercePlatforms() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-20 md:py-28 bg-primary text-white overflow-hidden">
+      <section className="relative py-20 md:py-28 bg-background text-white overflow-hidden">
         {/* Curved Top Divider */}
         <div className="absolute top-0 left-0 right-0 -mt-1">
           <svg className="w-full h-16 text-white" viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">

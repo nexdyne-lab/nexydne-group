@@ -240,7 +240,7 @@ export default function IntelligentProcessOptimization() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {services.map((service, i) => (
               <motion.div
                 key={i}
@@ -342,7 +342,7 @@ export default function IntelligentProcessOptimization() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
             {approach.map((lens, i) => (
               <motion.div
                 key={i}
@@ -375,7 +375,7 @@ export default function IntelligentProcessOptimization() {
       </section>
 
       {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
-      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+      <section className="bg-background text-primary-foreground py-24 md:py-32">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -499,7 +499,7 @@ export default function IntelligentProcessOptimization() {
             </h3>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {relatedOfferings.map((offering, i) => (
               <motion.div
                 key={i}

@@ -116,7 +116,7 @@ export default function Contact() {
         title="Talk to a NexDyne partner."
         subtitle="Tell us what you're working on. We'll route you to the practice lead who can help — typically within one business day."
         backgroundImage="/images/contact-hero.jpg"
-        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"
+        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-charcoal leading-[1.05] mb-6"
         containerClassName="h-[60vh] min-h-[440px] sm:min-h-[480px] lg:min-h-[540px]"
       />
 
@@ -295,7 +295,7 @@ export default function Contact() {
             </h3>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid md:grid-cols-3 gap-5">
             {nextSteps.map((step, i) => (
               <motion.div
                 key={i}
@@ -343,7 +343,7 @@ export default function Contact() {
             </h3>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid md:grid-cols-3 gap-5">
             {contactPaths.map((path, i) => (
               <motion.div
                 key={i}

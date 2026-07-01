@@ -12,7 +12,7 @@ import { SEO } from "@/components/SEO";
 
 export default function PostMergerIntegration() {
   return (
-    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Post-Merger Integration Success | Case Study | NexDyne Technologies" 
         description="How we helped a professional services firm successfully integrate an acquisition, capturing 120% of projected synergies within 18 months."
@@ -23,7 +23,7 @@ export default function PostMergerIntegration() {
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-30"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background"></div>
         
         <div className="container relative z-10 px-4 md:px-12">
           <Breadcrumbs />
@@ -32,7 +32,7 @@ export default function PostMergerIntegration() {
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-4">
               <span className="text-primary">120%</span> synergy capture through disciplined integration
             </h1>
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mb-8">
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mb-8">
               How we helped a professional services firm successfully integrate a transformational acquisition, exceeding synergy targets while retaining key talent and maintaining client relationships.
             </p>
             
@@ -55,7 +55,7 @@ export default function PostMergerIntegration() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-base border-t border-white/10">
+      <section className="py-16 bg-background border-t border-border">
         <div className="container px-4 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             {[
@@ -66,7 +66,7 @@ export default function PostMergerIntegration() {
             ].map((stat, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }} className="border-l-2 border-primary/50 pl-8">
                 <div className="text-5xl font-bold text-primary mb-2">{stat.metric}</div>
-                <div className="text-base text-white/70">{stat.label}</div>
+                <div className="text-base text-muted-foreground">{stat.label}</div>
               </motion.div>
             ))}
           </div>
@@ -74,7 +74,7 @@ export default function PostMergerIntegration() {
       </section>
 
       {/* Sticky Navigation */}
-      <nav className="sticky top-20 bg-base text-white z-40 border-y border-white/10">
+      <nav className="sticky top-20 bg-background text-charcoal z-40 border-y border-border">
         <div className="container px-4 md:px-12">
           <div className="flex items-center gap-1">
             <a href="#challenge" className="px-6 py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">THE CHALLENGE</a>
@@ -97,7 +97,7 @@ export default function PostMergerIntegration() {
                 The acquisition thesis was compelling, but the real work was just beginning. The two firms had different cultures, systems, and ways of working. Without careful integration, the expected synergies would never materialize and key talent would depart.
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-base/5 rounded-xl">
+            <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-charcoal/5 rounded-xl">
               <div><div className="text-sm font-semibold text-primary mb-2">Industry</div><div className="text-charcoal font-medium">Professional Services</div></div>
               <div><div className="text-sm font-semibold text-primary mb-2">Combined Employees</div><div className="text-charcoal font-medium">630</div></div>
               <div><div className="text-sm font-semibold text-primary mb-2">Combined Revenue</div><div className="text-charcoal font-medium">$165M</div></div>
@@ -107,11 +107,11 @@ export default function PostMergerIntegration() {
       </section>
 
       {/* Challenge Section */}
-      <section id="challenge" className="py-24 md:py-32 bg-primary">
+      <section id="challenge" className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">The Challenge</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">Integrating two distinct cultures and operating models</h2>
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">The Challenge</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">Integrating two distinct cultures and operating models</h2>
           </motion.div>
         </div>
       </section>
@@ -136,23 +136,23 @@ export default function PostMergerIntegration() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12 max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "We knew the acquisition made strategic sense, but we also knew that most integrations fail. We needed experienced help to ensure we captured the value we paid for without destroying what made both firms successful."
             </blockquote>
-            <div className="text-base text-white"><div className="font-semibold">— Patricia Williams</div><div className="text-white/60">CEO, Client Company</div></div>
+            <div className="text-base text-charcoal"><div className="font-semibold">— Patricia Williams</div><div className="text-muted-foreground">CEO, Client Company</div></div>
           </motion.div>
         </div>
       </section>
 
       {/* Solution Section */}
-      <section id="solution" className="py-24 md:py-32 bg-primary">
+      <section id="solution" className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">The Solution</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">Structured integration with cultural sensitivity</h2>
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">The Solution</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">Structured integration with cultural sensitivity</h2>
           </motion.div>
         </div>
       </section>
@@ -162,7 +162,7 @@ export default function PostMergerIntegration() {
           <p className="text-xl text-charcoal/80 leading-relaxed mb-12">We established an integration management office and led a comprehensive integration program that balanced speed with cultural sensitivity.</p>
           <div className="space-y-12">
             <div className="flex gap-8">
-              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">1</div></div>
+              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center font-bold text-lg">1</div></div>
               <div>
                 <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Puzzle className="w-6 h-6 text-primary" />Integration management office</h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">We established a dedicated IMO with full-time leadership and clear governance to coordinate all integration activities across functional workstreams.</p>
@@ -174,7 +174,7 @@ export default function PostMergerIntegration() {
               </div>
             </div>
             <div className="flex gap-8">
-              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">2</div></div>
+              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center font-bold text-lg">2</div></div>
               <div>
                 <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Users className="w-6 h-6 text-primary" />Cultural integration program</h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">We conducted cultural assessments and designed integration activities that preserved the best of both cultures while creating a unified identity.</p>
@@ -186,7 +186,7 @@ export default function PostMergerIntegration() {
               </div>
             </div>
             <div className="flex gap-8">
-              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">3</div></div>
+              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center font-bold text-lg">3</div></div>
               <div>
                 <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Target className="w-6 h-6 text-primary" />Synergy tracking and accountability</h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">We implemented rigorous synergy tracking with clear ownership and accountability to ensure projected value was actually captured.</p>
@@ -202,11 +202,11 @@ export default function PostMergerIntegration() {
       </section>
 
       {/* Impact Section */}
-      <section id="impact" className="py-24 md:py-32 bg-primary">
+      <section id="impact" className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">The Impact</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">Results & Impact</h2>
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">The Impact</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">Results & Impact</h2>
           </motion.div>
         </div>
       </section>
@@ -218,32 +218,32 @@ export default function PostMergerIntegration() {
               <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><TrendingUp className="w-6 h-6 text-primary" />Synergies exceeded expectations</h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">The integration captured 120% of projected synergies within 18 months, driven by both cost savings and revenue synergies from cross-selling and combined capabilities.</p>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">120%</div><div className="text-sm text-charcoal/60">Synergy target achieved</div></div>
-                <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$12M</div><div className="text-sm text-charcoal/60">Annual run-rate synergies</div></div>
+                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">120%</div><div className="text-sm text-charcoal/60">Synergy target achieved</div></div>
+                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$12M</div><div className="text-sm text-charcoal/60">Annual run-rate synergies</div></div>
               </div>
             </div>
             <div>
               <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Users className="w-6 h-6 text-primary" />Exceptional talent retention</h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">95% of identified key talent was retained through the integration period, significantly above industry benchmarks for professional services M&A.</p>
-              <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">95%</div><div className="text-sm text-charcoal/60">Key talent retention rate</div></div>
+              <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">95%</div><div className="text-sm text-charcoal/60">Key talent retention rate</div></div>
             </div>
             <div>
               <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Clock className="w-6 h-6 text-primary" />Client relationships preserved</h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">98% of clients were retained through the integration, with several expanding relationships as a result of the combined firm's enhanced capabilities.</p>
-              <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">98%</div><div className="text-sm text-charcoal/60">Client retention rate</div></div>
+              <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">98%</div><div className="text-sm text-charcoal/60">Client retention rate</div></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Quote Section 2 */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12 max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "The integration exceeded our expectations in every dimension. We captured more value than projected, retained our best people, and kept our clients happy. NexDyne's disciplined approach made all the difference."
             </blockquote>
-            <div className="text-base text-white"><div className="font-semibold">— Patricia Williams</div><div className="text-white/60">CEO, Client Company</div></div>
+            <div className="text-base text-charcoal"><div className="font-semibold">— Patricia Williams</div><div className="text-muted-foreground">CEO, Client Company</div></div>
           </motion.div>
         </div>
       </section>
@@ -256,11 +256,11 @@ export default function PostMergerIntegration() {
       </section>
 
       {/* Related Cases */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-16">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">Related Case Studies</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white">More success stories</h2>
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">Related Case Studies</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">More success stories</h2>
           </motion.div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
             {[
@@ -270,15 +270,15 @@ export default function PostMergerIntegration() {
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
-                  <p className="text-white/60 mt-2">{item.description}</p>
+                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
+                  <p className="text-muted-foreground mt-2">{item.description}</p>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">Read case study <ArrowRight className="w-3 h-3" /></span>
                 </Link>
               </motion.div>
             ))}
           </div>
           <div className="text-center mt-16">
-            <Link href="/case-studies"><Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent"><ArrowLeft className="w-4 h-4 mr-2" />Back to all case studies</Button></Link>
+            <Link href="/case-studies"><Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent"><ArrowLeft className="w-4 h-4 mr-2" />Back to all case studies</Button></Link>
           </div>
         </div>
       </section>

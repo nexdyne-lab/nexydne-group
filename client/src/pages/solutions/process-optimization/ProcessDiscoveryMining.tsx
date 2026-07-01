@@ -47,7 +47,7 @@ export default function ProcessDiscoveryMining() {
         eyebrow="INTELLIGENT PROCESS OPTIMIZATION · PROCESS DISCOVERY & MINING"
         title="Process Discovery & Mining"
         subtitle="Uncover hidden inefficiencies and bottlenecks through advanced process mining, creating a data-driven foundation for transformation."
-        backgroundImage="https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/ahRLBXyxjnIStHiI.jpg"
+        backgroundImage="/images/ai-abstract-visualization.jpg"
         primaryCta={{ label: "Request a Process Analysis", href: "/contact" }}
         secondaryCta={{ label: "Explore Our Impact", href: "/cases" }}
       />

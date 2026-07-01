@@ -202,7 +202,7 @@ export default function Accessibility() {
                   <p className="text-charcoal/80 leading-relaxed mb-4">
                     If you need assistance accessing any content or functionality on our website, we are happy to help. We can provide information in alternative formats upon request.
                   </p>
-                  <div className="bg-base/5 border border-base/10 rounded-lg p-4 sm:p-5 md:p-6 mt-6">
+                  <div className="bg-charcoal/5 border border-border rounded-lg p-4 sm:p-5 md:p-6 mt-6">
                     <h3 className="text-lg font-semibold text-charcoal mb-3">
                       When Contacting Us, Please Include:
                     </h3>

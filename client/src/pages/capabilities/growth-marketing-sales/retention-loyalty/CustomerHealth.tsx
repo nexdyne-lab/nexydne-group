@@ -14,10 +14,10 @@ export default function CustomerHealth() {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="relative bg-base pt-32 pb-24 overflow-hidden">
+      <div className="relative bg-background pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center mix-blend-overlay"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-base via-transparent to-base"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
         </div>
         
         <div className="container mx-auto px-6 relative z-10">
@@ -27,7 +27,7 @@ export default function CustomerHealth() {
               <Activity className="w-3 h-3 sm:w-4 sm:h-4" />
               <span>Customer Success Operations</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-3 leading-tight eb-garamond">
+            <h1 className="text-5xl md:text-6xl font-bold text-charcoal mb-3 leading-tight eb-garamond">
               Customer Health <span className="text-secondary">Scoring</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground/50 max-w-2xl leading-relaxed">
@@ -92,7 +92,7 @@ export default function CustomerHealth() {
                 <div className="p-4 bg-white rounded-lg sm:rounded-xl border border-slate-100 shadow-sm border-l-4 border-l-red-500">
                   <div className="flex justify-between items-start mb-2">
                     <h4 className="font-bold text-charcoal">Score: 0-40 (Critical)</h4>
-                    <span className="text-xs font-bold text-destructive bg-red-50 px-2 py-1 rounded-full">CHURN RISK</span>
+                    <span className="text-xs font-bold text-primary bg-primary/5 px-2 py-1 rounded-full">CHURN RISK</span>
                   </div>
                   <p className="text-sm text-muted-foreground mb-2">
                     <strong>Signals:</strong> Low login rate, unresolved high-priority tickets.

@@ -14,10 +14,10 @@ export default function Chatbots() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-base via-base to-base text-white py-24">
+      <section className="relative bg-gradient-to-br from-background via-background to-background text-charcoal py-24">
         <div className="container">
           <div className="mb-8">
-            <div className="flex items-center gap-2 text-sm text-white/70">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Link href="/services/ecommerce" className="hover:text-white transition-colors">
                 Services
               </Link>
@@ -26,7 +26,7 @@ export default function Chatbots() {
                 E-commerce
               </Link>
               <span>/</span>
-              <span className="text-white">Chatbots</span>
+              <span className="text-charcoal">Chatbots</span>
             </div>
           </div>
           
@@ -119,18 +119,18 @@ export default function Chatbots() {
       </AnimatedSection>
 
       {/* About chatbots Section */}
-      <AnimatedSection delay={0.1} className="py-20 bg-gradient-to-br from-base via-base to-base text-white">
+      <AnimatedSection delay={0.1} className="py-20 bg-gradient-to-br from-background via-background to-background text-charcoal">
         <div className="container max-w-4xl">
           <h2 className="text-4xl font-bold mb-8 text-center">About chatbots</h2>
-          <p className="text-lg leading-relaxed mb-12 text-white/90">
+          <p className="text-lg leading-relaxed mb-12 text-charcoal/90">
             Intelligent chatbots serve as the foundation of contemporary digital support, resolving common inquiries and routine requests instantly. This approach minimizes response delays, cuts operational expenses, and enables your staff to address sophisticated challenges. Beyond answering questions, chatbots collect behavioral insights and preference patterns—a critical resource for informed business strategy. Serving as your initial touchpoint, chatbots elevate the customer journey through reliable, intelligent engagement across all platforms.
           </p>
 
-          <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-8">
+          <div className="bg-white/10 backdrop-blur-sm border border-border rounded-lg p-8">
             <blockquote className="text-2xl font-medium text-secondary mb-4">
               "Artificial intelligence is revolutionizing chatbots—making them faster, more intuitive, and remarkably customer-centric."
             </blockquote>
-            <p className="text-white/70">NEXDYNE Conversational AI Expert</p>
+            <p className="text-muted-foreground">NEXDYNE Conversational AI Expert</p>
           </div>
         </div>
       </AnimatedSection>
@@ -143,7 +143,7 @@ export default function Chatbots() {
             NEXDYNE engineers bespoke chatbot platforms that integrate flawlessly with your operational ecosystem and business objectives. Powered by advanced AI, our solutions employ sophisticated dialogue patterns and evolve through continuous data analysis. Built-in intelligence and adaptive learning capabilities enhance real-time customer interactions while generating strategic insights that optimize your go-to-market approach.
           </p>
 
-          <Card className="p-12 bg-gradient-to-br from-secondary/10 via-primary/10 to-base/10 border-secondary/20">
+          <Card className="p-12 bg-gradient-to-br from-secondary/10 via-primary/10 to-background/10 border-secondary/20">
             <div className="flex flex-col md:flex-row gap-8 items-center">
               <div className="flex-shrink-0">
                 <div className="w-48 h-48 rounded-full overflow-hidden bg-gradient-to-br from-secondary/20 to-primary/20 flex items-center justify-center">
@@ -159,7 +159,7 @@ export default function Chatbots() {
                 <p className="text-muted-foreground mb-2">NEXDYNE Conversational AI Expert</p>
                 <p className="text-muted-foreground mb-6">Director of Digital Solutions</p>
                 <div className="flex flex-wrap gap-4">
-                  <Button className="bg-secondary hover:bg-secondary text-white">
+                  <Button className="bg-secondary hover:bg-secondary text-charcoal">
                     Start a conversation
                   </Button>
                   <Button variant="outline" className="border-secondary text-base hover:bg-secondary/10">
@@ -189,7 +189,7 @@ export default function Chatbots() {
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 Seeking a trusted technology partner, an accelerator for your digital evolution, or exceptional experiences that wow your customers? You're in the right place. Our cutting-edge solutions position you ahead of market trends and competitive pressures.
               </p>
-              <Button className="bg-secondary hover:bg-secondary text-white">
+              <Button className="bg-secondary hover:bg-secondary text-charcoal">
                 Start a conversation
               </Button>
             </div>
@@ -228,21 +228,21 @@ export default function Chatbots() {
       </AnimatedSection>
 
       {/* CTA Section */}
-      <section className="relative bg-gradient-to-br from-base via-base to-base text-white py-20">
+      <section className="relative bg-gradient-to-br from-background via-background to-background text-charcoal py-20">
         <div className="container max-w-4xl text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to revolutionize customer service?</h2>
-          <p className="text-xl text-white/90 mb-8 leading-relaxed">
+          <p className="text-xl text-charcoal/90 mb-8 leading-relaxed">
             Let's explore how intelligent chatbot technology can elevate customer satisfaction, streamline operations, and unlock new growth opportunities.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-8">
-            <Button className="bg-secondary hover:bg-secondary text-white text-lg px-8 py-6">
+            <Button className="bg-secondary hover:bg-secondary text-charcoal text-lg px-8 py-6">
               Start a conversation
             </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 py-6">
+            <Button variant="outline" className="border-white text-charcoal hover:bg-white/10 text-lg px-8 py-6">
               Book a consultation
             </Button>
           </div>
-          <p className="text-white/70">
+          <p className="text-muted-foreground">
             Or reach us directly: <a href="tel:+15551234567" className="text-secondary hover:underline">+1 (555) 123-4567</a>
           </p>
         </div>

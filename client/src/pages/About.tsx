@@ -13,25 +13,25 @@ export default function About() {
       icon: null,
       title: "Our People",
       description: "We are defined by our people and are deeply committed to creating a diverse and inclusive culture where talent thrives.",
-      image: "https://files.manuscdn.com/user_upload_by_module/session_file/3104196630322124991/MbxrEclukchkLvUS.jpg",
+      image: "/images/ai-team-collaboration.jpg",
     },
     {
       icon: null,
       title: "Client Impact",
       description: "We measure our success by the lasting capabilities we build and the meaningful change we create for our clients.",
-      image: "https://files.manuscdn.com/user_upload_by_module/session_file/3104196630322124991/wYdRBkMEsCQRoPVq.jpg",
+      image: "/images/hero-team.jpg",
     },
     {
       icon: null,
       title: "Innovation",
       description: "We continuously push boundaries, combining cutting-edge technology with strategic thinking to solve complex challenges.",
-      image: "https://files.manuscdn.com/user_upload_by_module/session_file/3104196630322124991/BIQnDrWsBdvixBFG.jpg",
+      image: "/images/ai-abstract-visualization.jpg",
     },
     {
       icon: null,
       title: "Global Perspective",
       description: "We bring diverse viewpoints and deep local expertise to help organizations navigate an interconnected world.",
-      image: "https://files.manuscdn.com/user_upload_by_module/session_file/3104196630322124991/GYKPIYnDUKpuKnlv.webp",
+      image: "/images/hero-team-2.webp",
     },
   ];
 
@@ -133,7 +133,7 @@ export default function About() {
                   lasting competitive advantage.
                 </p>
               </div>
-              <div className="lg:col-span-2 bg-primary-hover p-8 text-white">
+              <div className="lg:col-span-2 bg-charcoal p-8 text-white border-t-2 border-primary">
                 <p className="text-xl md:text-2xl leading-relaxed">
                   Together we're accelerating toward a more intelligent future.
                 </p>
@@ -158,7 +158,7 @@ export default function About() {
               >
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1552664730-d307ca8849788?auto=format&fit=crop&w=1200&q=80"
+                    src="/images/ai-team-consulting.jpg"
                     alt="Team working together"
                     className="w-full h-full object-cover"
                   />
@@ -177,7 +177,7 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                <div className="inline-flex items-center gap-2 bg-primary-hover/10 text-primary-hover px-4 py-2 text-sm font-medium mb-6">
+                <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 text-sm font-medium mb-6">
                   Who We Are
                 </div>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl text-charcoal mb-6 leading-tight">
@@ -190,7 +190,7 @@ export default function About() {
                   clients create meaningful and lasting change.
                 </p>
                 <Link href="/about/team">
-                  <Button className="bg-primary-hover hover:bg-base text-white px-6 py-4 text-base font-medium rounded-none">
+                  <Button className="bg-primary hover:bg-charcoal text-white px-6 py-4 text-base font-medium rounded-none">
                     Meet Our Team
                   </Button>
                 </Link>
@@ -210,7 +210,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <div className="inline-flex items-center gap-2 bg-primary-hover/10 text-primary-hover px-4 py-2 text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 text-sm font-medium mb-6">
               Our Values
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl text-charcoal mb-6">
@@ -242,7 +242,7 @@ export default function About() {
                   </div>
                   {/* Content */}
                   <div className="p-6">
-                    <div className="text-destructive text-xs uppercase tracking-wider mb-3">
+                    <div className="text-primary text-xs uppercase tracking-wider mb-3">
                       Core Value
                     </div>
                     <h3 className="text-xl text-charcoal mb-3 group-hover:text-primary-hover transition-colors">
@@ -260,7 +260,7 @@ export default function About() {
       </section>
 
       {/* By the Numbers Section */}
-      <section className="py-20 md:py-28 text-white">
+      <section className="py-20 md:py-28 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-6xl mx-auto">
             <motion.div
@@ -286,7 +286,7 @@ export default function About() {
                 transition={{ duration: 0.5 }}
                 className="text-center"
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl text-secondary mb-2">150+</div>
+                <div className="text-4xl sm:text-5xl md:text-6xl text-white font-bold mb-2">150+</div>
                 <p className="text-white/60">Clients served</p>
               </motion.div>
 
@@ -297,7 +297,7 @@ export default function About() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-center"
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl text-secondary mb-2">12</div>
+                <div className="text-4xl sm:text-5xl md:text-6xl text-white font-bold mb-2">12</div>
                 <p className="text-white/60">Countries</p>
               </motion.div>
 
@@ -308,7 +308,7 @@ export default function About() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-center"
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl text-secondary mb-2">85%</div>
+                <div className="text-4xl sm:text-5xl md:text-6xl text-white font-bold mb-2">85%</div>
                 <p className="text-white/60">Efficiency improvement</p>
               </motion.div>
 
@@ -319,7 +319,7 @@ export default function About() {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="text-center"
               >
-                <div className="text-4xl sm:text-5xl md:text-6xl text-secondary mb-2">94%</div>
+                <div className="text-4xl sm:text-5xl md:text-6xl text-white font-bold mb-2">94%</div>
                 <p className="text-white/60">Client satisfaction</p>
               </motion.div>
             </div>
@@ -337,7 +337,7 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <div className="inline-flex items-center gap-2 bg-primary-hover/10 text-primary-hover px-4 py-2 text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 text-sm font-medium mb-6">
                 Our Story
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl text-charcoal mb-8 leading-tight">
@@ -384,7 +384,7 @@ export default function About() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact">
-                  <Button className="bg-primary-hover hover:bg-base text-white px-8 py-4 text-base font-medium rounded-none">
+                  <Button className="bg-primary hover:bg-charcoal text-white px-8 py-4 text-base font-medium rounded-none">
                     Contact Us
                   </Button>
                 </Link>

@@ -12,7 +12,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function SeriesAFundraisingGuide() {
   return (
-    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="The Complete Guide to Series A Fundraising Preparation | NexDyne Technologies" 
         description="Series A fundraising represents a critical inflection point for growth-stage companies. Learn how to prepare for successful institutional capital raising."
@@ -24,7 +24,7 @@ export default function SeriesAFundraisingGuide() {
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background"></div>
         
         <div className="container relative z-10 px-4 md:px-12 max-w-4xl">
           <Link href="/insights" className="inline-flex items-center gap-2 text-primary hover:text-primary/80 mb-8 transition-colors">
@@ -38,15 +38,15 @@ export default function SeriesAFundraisingGuide() {
             transition={{ duration: 0.8 }}
           >
             <div className="flex flex-wrap gap-4 mb-6">
-              <span className="inline-flex items-center gap-2 text-sm text-white/60">
+              <span className="inline-flex items-center gap-2 text-sm text-muted-foreground">
                 <Tag className="w-4 h-4 text-primary" />
                 Capital Raising
               </span>
-              <span className="inline-flex items-center gap-2 text-sm text-white/60">
+              <span className="inline-flex items-center gap-2 text-sm text-muted-foreground">
                 <Calendar className="w-4 h-4 text-primary" />
                 December 20, 2025
               </span>
-              <span className="inline-flex items-center gap-2 text-sm text-white/60">
+              <span className="inline-flex items-center gap-2 text-sm text-muted-foreground">
                 <Clock className="w-4 h-4 text-primary" />
                 12 min read
               </span>
@@ -56,7 +56,7 @@ export default function SeriesAFundraisingGuide() {
               The Complete Guide to <span className="text-primary">Series A Fundraising</span> Preparation
             </h1>
             
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed">
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
               Series A fundraising represents a critical inflection point for growth-stage companies. The gap between seed funding and institutional capital is wider than most founders anticipate, and preparation determines outcomes more than any other factor.
             </p>
           </motion.div>
@@ -64,7 +64,7 @@ export default function SeriesAFundraisingGuide() {
       </section>
 
       {/* Featured Image */}
-      <div className="w-full h-96 bg-base overflow-hidden">
+      <div className="w-full h-96 bg-background overflow-hidden">
         <img 
           src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80" 
           alt="Series A Fundraising Preparation" 
@@ -129,7 +129,7 @@ export default function SeriesAFundraisingGuide() {
               Avoid the common mistake of focusing solely on product features. Investors care about outcomes, not capabilities. Frame your story around customer results, market dynamics, and competitive positioning. Use specific customer examples to bring your value proposition to life. Quantify the business impact you're delivering—revenue growth, cost savings, efficiency gains—with real numbers from real customers.
             </p>
 
-            <div className="bg-base/5 border-l-4 border-base/30 p-6 my-8 rounded-r-xl">
+            <div className="bg-charcoal/5 border-l-4 border-border p-6 my-8 rounded-r-xl">
               <h3 className="text-xl font-bold text-charcoal mb-4">Narrative Structure That Resonates</h3>
               <p className="text-charcoal/70 mb-4">Structure your pitch around these five core elements:</p>
               <ul className="space-y-3 text-charcoal/80">
@@ -216,14 +216,14 @@ export default function SeriesAFundraisingGuide() {
       </article>
 
       {/* Newsletter Subscribe */}
-      <div className="bg-base py-16 border-t border-white/10">
+      <div className="bg-background py-16 border-t border-border">
         <div className="container max-w-3xl px-4 md:px-12">
           <NewsletterSubscribe />
         </div>
       </div>
 
       {/* Related Insights */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -232,10 +232,10 @@ export default function SeriesAFundraisingGuide() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Related Insights
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white">Continue reading</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">Continue reading</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -262,10 +262,10 @@ export default function SeriesAFundraisingGuide() {
               >
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.category}</span>
-                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-white/60 mt-2">{item.description}</p>
+                  <p className="text-muted-foreground mt-2">{item.description}</p>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
                     Read article <ArrowRight className="w-3 h-3" />
                   </span>

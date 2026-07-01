@@ -351,7 +351,7 @@ export default function ArtificialIntelligence() {
         leadName: "Our AI Practice Lead",
         leadTitle: "Head of Artificial Intelligence, NexDyne Consulting Group",
         leadPhoto:
-          "https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/BIZXaFVVaVqquVZA.png",
+          "/images/ai-team-consulting.jpg",
         leadEmail: "ai@nexdyne.tech",
         leadLinkedinUrl: "https://www.linkedin.com/company/nexdyne",
       }}

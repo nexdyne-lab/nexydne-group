@@ -20,15 +20,15 @@ export default function DigitalGrowthPlaybook() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center pt-20 overflow-hidden bg-base">
+      <section className="relative min-h-[60vh] flex items-center pt-20 overflow-hidden bg-background">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=2000&q=80" 
             alt="Digital Growth Analytics" 
             className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/90 to-base/70" />
-          <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
         </div>
         
         <div className="container px-4 md:px-12 relative z-10">
@@ -39,7 +39,7 @@ export default function DigitalGrowthPlaybook() {
             className="max-w-4xl"
           >
             <Link href="/solutions/accelerating-business-growth">
-              <span className="inline-flex items-center text-sm text-white/60 hover:text-primary transition-colors mb-6 cursor-pointer">
+              <span className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors mb-6 cursor-pointer">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Accelerating Business Growth
               </span>
@@ -48,18 +48,18 @@ export default function DigitalGrowthPlaybook() {
             <div className="flex items-center gap-4 text-sm text-primary font-semibold mb-6">
               <span className="uppercase tracking-wider">Article</span>
               <span className="w-1 h-1 rounded-full bg-white/40" />
-              <span className="text-white/60">8 min read</span>
+              <span className="text-muted-foreground">8 min read</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
               The digital growth playbook for mid-market companies
             </h1>
             
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl mb-10">
               How leading mid-market companies are building digital channels that compete with well-funded startups and enterprise incumbents.
             </p>
             
-            <div className="flex items-center gap-6 text-white/60 text-sm">
+            <div className="flex items-center gap-6 text-muted-foreground text-sm">
               <div className="flex items-center gap-2">
                 <User className="w-4 h-4" />
                 <span>By Growth Strategy Team</span>
@@ -81,7 +81,7 @@ export default function DigitalGrowthPlaybook() {
             <div className="md:col-span-3 hidden md:block">
               <div className="sticky top-32">
                 <h4 className="font-bold text-charcoal mb-4">Table of Contents</h4>
-                <ul className="space-y-3 text-sm text-charcoal/60 border-l border-base/10 pl-4">
+                <ul className="space-y-3 text-sm text-charcoal/60 border-l border-border pl-4">
                   <li className="hover:text-primary cursor-pointer">The Mid-Market Advantage</li>
                   <li className="hover:text-primary cursor-pointer">Digital Channel Strategy</li>
                   <li className="hover:text-primary cursor-pointer">The Growth Framework</li>
@@ -115,7 +115,7 @@ export default function DigitalGrowthPlaybook() {
                   The most successful mid-market digital transformations leverage this position by combining startup-like speed with enterprise-grade execution. They don't try to out-spend larger competitors—they out-maneuver them.
                 </p>
 
-                <div className="bg-subtle p-8 rounded-xl border border-base/10 my-10">
+                <div className="bg-subtle p-8 rounded-xl border border-border my-10">
                   <h4 className="font-bold text-charcoal mb-4 flex items-center gap-2">
                     <TrendingUp className="w-5 h-5 text-primary" />
                     Mid-Market Digital Growth Statistics
@@ -175,7 +175,7 @@ export default function DigitalGrowthPlaybook() {
                   Successful digital growth follows a predictable pattern. We've codified this into a framework that guides investment decisions and resource allocation:
                 </p>
 
-                <div className="bg-base p-8 rounded-xl my-10 text-white">
+                <div className="bg-background p-8 rounded-xl my-10 text-charcoal">
                   <h4 className="font-bold mb-6 flex items-center gap-2">
                     <Layers className="w-5 h-5 text-primary" />
                     The SCALE Framework
@@ -193,8 +193,8 @@ export default function DigitalGrowthPlaybook() {
                           {step.letter}
                         </div>
                         <div>
-                          <h5 className="font-bold text-white">{step.title}</h5>
-                          <p className="text-white/60 text-sm">{step.description}</p>
+                          <h5 className="font-bold text-charcoal">{step.title}</h5>
+                          <p className="text-muted-foreground text-sm">{step.description}</p>
                         </div>
                       </div>
                     ))}
@@ -240,24 +240,24 @@ export default function DigitalGrowthPlaybook() {
                 <div className="overflow-x-auto my-8">
                   <table className="w-full text-sm">
                     <thead>
-                      <tr className="border-b border-base/10">
+                      <tr className="border-b border-border">
                         <th className="text-left py-3 font-bold text-charcoal">Metric Category</th>
                         <th className="text-left py-3 font-bold text-charcoal">Leading Indicators</th>
                         <th className="text-left py-3 font-bold text-charcoal">Lagging Indicators</th>
                       </tr>
                     </thead>
                     <tbody className="text-charcoal/70">
-                      <tr className="border-b border-base/10">
+                      <tr className="border-b border-border">
                         <td className="py-3">Acquisition</td>
                         <td className="py-3">Traffic, CAC, Conversion Rate</td>
                         <td className="py-3">New Customer Revenue</td>
                       </tr>
-                      <tr className="border-b border-base/10">
+                      <tr className="border-b border-border">
                         <td className="py-3">Engagement</td>
                         <td className="py-3">Session Duration, Pages/Visit</td>
                         <td className="py-3">Repeat Purchase Rate</td>
                       </tr>
-                      <tr className="border-b border-base/10">
+                      <tr className="border-b border-border">
                         <td className="py-3">Retention</td>
                         <td className="py-3">NPS, Support Tickets</td>
                         <td className="py-3">Customer Lifetime Value</td>
@@ -277,7 +277,7 @@ export default function DigitalGrowthPlaybook() {
                 </p>
 
                 <div className="space-y-6 my-8">
-                  <div className="p-6 border border-base/10 rounded-xl">
+                  <div className="p-6 border border-border rounded-xl">
                     <div className="flex items-center gap-2 text-primary text-sm font-semibold mb-2">
                       <Target className="w-4 h-4" />
                       SPECIALTY RETAIL
@@ -287,7 +287,7 @@ export default function DigitalGrowthPlaybook() {
                       A 135-employee retailer launched e-commerce in 10 weeks, growing from $0 to $3.2M in digital revenue within 18 months. Key success factors: omnichannel inventory, personalized recommendations, and buy-online-pickup-in-store.
                     </p>
                   </div>
-                  <div className="p-6 border border-base/10 rounded-xl">
+                  <div className="p-6 border border-border rounded-xl">
                     <div className="flex items-center gap-2 text-primary text-sm font-semibold mb-2">
                       <Target className="w-4 h-4" />
                       B2B DISTRIBUTION
@@ -297,7 +297,7 @@ export default function DigitalGrowthPlaybook() {
                       A 220-employee distributor built a B2B ordering platform with customer-specific pricing and real-time inventory. 58% of orders now come through self-service, freeing sales reps to focus on new business.
                     </p>
                   </div>
-                  <div className="p-6 border border-base/10 rounded-xl">
+                  <div className="p-6 border border-border rounded-xl">
                     <div className="flex items-center gap-2 text-primary text-sm font-semibold mb-2">
                       <Target className="w-4 h-4" />
                       PROFESSIONAL SERVICES
@@ -327,7 +327,7 @@ export default function DigitalGrowthPlaybook() {
                     NEXDYNE helps mid-market companies build digital channels that drive measurable revenue growth. Let's discuss your specific situation.
                   </p>
                   <Link href="/contact">
-                    <Button className="bg-primary hover:bg-primary/90 text-white">
+                    <Button className="bg-primary hover:bg-primary/90 text-charcoal">
                       Schedule a Consultation
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
@@ -397,7 +397,7 @@ export default function DigitalGrowthPlaybook() {
       />
 
       {/* CTA Section */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -406,14 +406,14 @@ export default function DigitalGrowthPlaybook() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
               Ready to accelerate your growth?
             </h2>
-            <p className="text-xl text-white/70 leading-relaxed mb-10">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-10">
               Let's build a digital growth strategy that creates new revenue streams and competitive advantages.
             </p>
             <Link href="/contact">
-              <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-lg font-semibold transition-all">
+              <Button className="bg-primary hover:bg-primary/90 text-charcoal px-10 py-6 text-lg font-semibold transition-all">
                 Schedule a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>

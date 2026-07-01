@@ -269,7 +269,7 @@ export default function CloudMigrationRoadmap() {
             Our experts can help you develop and execute a cloud strategy tailored to your business.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-4 bg-primary text-white font-semibold hover:bg-base transition-colors">
+            <button className="px-8 py-4 bg-primary text-white font-semibold hover:bg-charcoal transition-colors">
               Schedule a Consultation
             </button>
           </Link>

@@ -12,9 +12,9 @@ const StackOrchestration = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-base">
+      <section className="relative pt-32 pb-20 overflow-hidden bg-background">
         <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-base via-base to-base"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-background"></div>
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl">
@@ -22,7 +22,7 @@ const StackOrchestration = () => {
               <Layers className="w-3 h-3 sm:w-4 sm:h-4" />
               <span>MarTech & Stack Architecture</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-3 leading-tight eb-garamond">
+            <h1 className="text-4xl md:text-6xl font-bold text-charcoal mb-3 leading-tight eb-garamond">
               Stack Orchestration & <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">
                 Ecosystem Design
@@ -277,10 +277,10 @@ const StackOrchestration = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-base relative overflow-hidden">
+      <section className="py-24 bg-background relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
         <div className="container mx-auto px-6 relative z-10 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-5 sm:mb-6 md:mb-8 eb-garamond">
+          <h2 className="text-3xl md:text-5xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">
             Ready to orchestrate your growth engine?
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-blue-200 mb-10 max-w-2xl mx-auto">

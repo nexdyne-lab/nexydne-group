@@ -174,7 +174,7 @@ export default function CompleteGuideProcessMiningInsight() {
                     }
                   ].map((item, i) => (
                     <div key={i} className="flex gap-4 bg-subtle p-5 rounded-lg">
-                      <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                      <div className="w-10 h-10 bg-primary text-charcoal rounded-full flex items-center justify-center font-bold flex-shrink-0">
                         {item.step}
                       </div>
                       <div>
@@ -216,7 +216,7 @@ export default function CompleteGuideProcessMiningInsight() {
               </p>
 
               {/* Benefits Box */}
-              <div className="bg-base text-white p-8 rounded-lg my-10 not-prose">
+              <div className="bg-background text-charcoal p-8 rounded-lg my-10 not-prose">
                 <h4 className="text-xl font-bold mb-6">Typical Process Mining Benefits</h4>
                 <div className="grid grid-cols-2 gap-6">
                   {[
@@ -227,7 +227,7 @@ export default function CompleteGuideProcessMiningInsight() {
                   ].map((item, i) => (
                     <div key={i}>
                       <div className="text-3xl font-bold text-secondary">{item.stat}</div>
-                      <div className="text-sm text-white/70 mt-1">{item.desc}</div>
+                      <div className="text-sm text-muted-foreground mt-1">{item.desc}</div>
                     </div>
                   ))}
                 </div>
@@ -296,7 +296,7 @@ export default function CompleteGuideProcessMiningInsight() {
               {/* Author Box */}
               <div className="border-t border-border pt-8 mt-12 not-prose">
                 <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 bg-base rounded-full flex items-center justify-center text-white font-bold text-xl">
+                  <div className="w-16 h-16 bg-background rounded-full flex items-center justify-center text-charcoal font-bold text-xl">
                     NO
                   </div>
                   <div>
@@ -318,10 +318,10 @@ export default function CompleteGuideProcessMiningInsight() {
                   Share this guide
                 </h4>
                 <div className="flex gap-3">
-                  <button className="w-10 h-10 bg-primary text-white rounded flex items-center justify-center hover:bg-base transition-colors">
+                  <button className="w-10 h-10 bg-primary text-charcoal rounded flex items-center justify-center hover:bg-charcoal transition-colors">
                     <Linkedin className="w-5 h-5" />
                   </button>
-                  <button className="w-10 h-10 bg-[#1DA1F2] text-white rounded flex items-center justify-center hover:bg-base transition-colors">
+                  <button className="w-10 h-10 bg-[#1DA1F2] text-charcoal rounded flex items-center justify-center hover:bg-charcoal transition-colors">
                     <Twitter className="w-5 h-5" />
                   </button>
                 </div>
@@ -378,13 +378,13 @@ export default function CompleteGuideProcessMiningInsight() {
               </div>
 
               {/* CTA */}
-              <div className="bg-base p-6 rounded-lg text-white">
+              <div className="bg-background p-6 rounded-lg text-charcoal">
                 <h4 className="font-bold mb-3">Ready to mine your processes?</h4>
-                <p className="text-sm text-white/70 mb-4">
+                <p className="text-sm text-muted-foreground mb-4">
                   Let's discuss how process mining can optimize your operations.
                 </p>
                 <Link href="/contact">
-                  <button className="w-full py-3 bg-secondary text-white rounded font-semibold text-sm hover:bg-primary transition-colors">
+                  <button className="w-full py-3 bg-secondary text-charcoal rounded font-semibold text-sm hover:bg-primary transition-colors">
                     Contact Us
                   </button>
                 </Link>

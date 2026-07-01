@@ -12,7 +12,7 @@ export default function CRMImplementation() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-base text-white pt-32 pb-20 px-4 relative overflow-hidden">
+      <section className="bg-background text-charcoal pt-32 pb-20 px-4 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-20">
           <div className="absolute top-20 right-20 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
           <div className="absolute bottom-20 left-20 w-96 h-96 bg-indigo-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
@@ -147,7 +147,7 @@ export default function CRMImplementation() {
             Partner with us to build a CRM foundation that scales with your ambition.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-4 bg-blue-600 text-white rounded-lg font-bold text-lg hover:bg-blue-700 transition-colors shadow-lg">
+            <button className="px-8 py-4 bg-blue-600 text-charcoal rounded-lg font-bold text-lg hover:bg-blue-700 transition-colors shadow-lg">
               Start Your Implementation
             </button>
           </Link>

@@ -160,10 +160,10 @@ export default function LeadCaptureForm({
               placeholder="First name *"
               value={formData.firstName}
               onChange={(e) => handleChange("firstName", e.target.value)}
-              className={errors.firstName ? "border-red-500" : ""}
+              className={errors.firstName ? "border-primary" : ""}
             />
             {errors.firstName && (
-              <p className="text-destructive text-xs mt-1">{errors.firstName}</p>
+              <p className="text-primary text-xs mt-1">{errors.firstName}</p>
             )}
           </div>
           <div>
@@ -171,10 +171,10 @@ export default function LeadCaptureForm({
               placeholder="Last name *"
               value={formData.lastName}
               onChange={(e) => handleChange("lastName", e.target.value)}
-              className={errors.lastName ? "border-red-500" : ""}
+              className={errors.lastName ? "border-primary" : ""}
             />
             {errors.lastName && (
-              <p className="text-destructive text-xs mt-1">{errors.lastName}</p>
+              <p className="text-primary text-xs mt-1">{errors.lastName}</p>
             )}
           </div>
         </div>
@@ -184,10 +184,10 @@ export default function LeadCaptureForm({
             placeholder="Work email *"
             value={formData.email}
             onChange={(e) => handleChange("email", e.target.value)}
-            className={errors.email ? "border-red-500" : ""}
+            className={errors.email ? "border-primary" : ""}
           />
           {errors.email && (
-            <p className="text-destructive text-xs mt-1">{errors.email}</p>
+            <p className="text-primary text-xs mt-1">{errors.email}</p>
           )}
         </div>
         <div>
@@ -195,16 +195,16 @@ export default function LeadCaptureForm({
             placeholder="Company *"
             value={formData.company}
             onChange={(e) => handleChange("company", e.target.value)}
-            className={errors.company ? "border-red-500" : ""}
+            className={errors.company ? "border-primary" : ""}
           />
           {errors.company && (
-            <p className="text-destructive text-xs mt-1">{errors.company}</p>
+            <p className="text-primary text-xs mt-1">{errors.company}</p>
           )}
         </div>
         <div className="grid grid-cols-2 gap-4">
           <div>
             <Select value={formData.role} onValueChange={(v) => handleChange("role", v)}>
-              <SelectTrigger className={errors.role ? "border-red-500" : ""}>
+              <SelectTrigger className={errors.role ? "border-primary" : ""}>
                 <SelectValue placeholder="Role *" />
               </SelectTrigger>
               <SelectContent>
@@ -216,12 +216,12 @@ export default function LeadCaptureForm({
               </SelectContent>
             </Select>
             {errors.role && (
-              <p className="text-destructive text-xs mt-1">{errors.role}</p>
+              <p className="text-primary text-xs mt-1">{errors.role}</p>
             )}
           </div>
           <div>
             <Select value={formData.industry} onValueChange={(v) => handleChange("industry", v)}>
-              <SelectTrigger className={errors.industry ? "border-red-500" : ""}>
+              <SelectTrigger className={errors.industry ? "border-primary" : ""}>
                 <SelectValue placeholder="Industry *" />
               </SelectTrigger>
               <SelectContent>
@@ -233,7 +233,7 @@ export default function LeadCaptureForm({
               </SelectContent>
             </Select>
             {errors.industry && (
-              <p className="text-destructive text-xs mt-1">{errors.industry}</p>
+              <p className="text-primary text-xs mt-1">{errors.industry}</p>
             )}
           </div>
         </div>
@@ -272,71 +272,71 @@ export default function LeadCaptureForm({
         <div className="grid grid-cols-2 gap-4">
           <div>
             <Label htmlFor="firstName" className="text-charcoal/80 font-medium">
-              First name <span className="text-destructive">*</span>
+              First name <span className="text-primary">*</span>
             </Label>
             <Input
               id="firstName"
               value={formData.firstName}
               onChange={(e) => handleChange("firstName", e.target.value)}
-              className={`mt-1 ${errors.firstName ? "border-red-500" : ""}`}
+              className={`mt-1 ${errors.firstName ? "border-primary" : ""}`}
             />
             {errors.firstName && (
-              <p className="text-destructive text-xs mt-1">{errors.firstName}</p>
+              <p className="text-primary text-xs mt-1">{errors.firstName}</p>
             )}
           </div>
           <div>
             <Label htmlFor="lastName" className="text-charcoal/80 font-medium">
-              Last name <span className="text-destructive">*</span>
+              Last name <span className="text-primary">*</span>
             </Label>
             <Input
               id="lastName"
               value={formData.lastName}
               onChange={(e) => handleChange("lastName", e.target.value)}
-              className={`mt-1 ${errors.lastName ? "border-red-500" : ""}`}
+              className={`mt-1 ${errors.lastName ? "border-primary" : ""}`}
             />
             {errors.lastName && (
-              <p className="text-destructive text-xs mt-1">{errors.lastName}</p>
+              <p className="text-primary text-xs mt-1">{errors.lastName}</p>
             )}
           </div>
         </div>
 
         <div>
           <Label htmlFor="email" className="text-charcoal/80 font-medium">
-            Work email <span className="text-destructive">*</span>
+            Work email <span className="text-primary">*</span>
           </Label>
           <Input
             id="email"
             type="email"
             value={formData.email}
             onChange={(e) => handleChange("email", e.target.value)}
-            className={`mt-1 ${errors.email ? "border-red-500" : ""}`}
+            className={`mt-1 ${errors.email ? "border-primary" : ""}`}
           />
           {errors.email && (
-            <p className="text-destructive text-xs mt-1">{errors.email}</p>
+            <p className="text-primary text-xs mt-1">{errors.email}</p>
           )}
         </div>
 
         <div>
           <Label htmlFor="company" className="text-charcoal/80 font-medium">
-            Company <span className="text-destructive">*</span>
+            Company <span className="text-primary">*</span>
           </Label>
           <Input
             id="company"
             value={formData.company}
             onChange={(e) => handleChange("company", e.target.value)}
-            className={`mt-1 ${errors.company ? "border-red-500" : ""}`}
+            className={`mt-1 ${errors.company ? "border-primary" : ""}`}
           />
           {errors.company && (
-            <p className="text-destructive text-xs mt-1">{errors.company}</p>
+            <p className="text-primary text-xs mt-1">{errors.company}</p>
           )}
         </div>
 
         <div>
           <Label htmlFor="role" className="text-charcoal/80 font-medium">
-            Role <span className="text-destructive">*</span>
+            Role <span className="text-primary">*</span>
           </Label>
           <Select value={formData.role} onValueChange={(v) => handleChange("role", v)}>
-            <SelectTrigger className={`mt-1 ${errors.role ? "border-red-500" : ""}`}>
+            <SelectTrigger className={`mt-1 ${errors.role ? "border-primary" : ""}`}>
               <SelectValue placeholder="Select your role" />
             </SelectTrigger>
             <SelectContent>
@@ -348,16 +348,16 @@ export default function LeadCaptureForm({
             </SelectContent>
           </Select>
           {errors.role && (
-            <p className="text-destructive text-xs mt-1">{errors.role}</p>
+            <p className="text-primary text-xs mt-1">{errors.role}</p>
           )}
         </div>
 
         <div>
           <Label htmlFor="industry" className="text-charcoal/80 font-medium">
-            Industry <span className="text-destructive">*</span>
+            Industry <span className="text-primary">*</span>
           </Label>
           <Select value={formData.industry} onValueChange={(v) => handleChange("industry", v)}>
-            <SelectTrigger className={`mt-1 ${errors.industry ? "border-red-500" : ""}`}>
+            <SelectTrigger className={`mt-1 ${errors.industry ? "border-primary" : ""}`}>
               <SelectValue placeholder="Select your industry" />
             </SelectTrigger>
             <SelectContent>
@@ -369,7 +369,7 @@ export default function LeadCaptureForm({
             </SelectContent>
           </Select>
           {errors.industry && (
-            <p className="text-destructive text-xs mt-1">{errors.industry}</p>
+            <p className="text-primary text-xs mt-1">{errors.industry}</p>
           )}
         </div>
 

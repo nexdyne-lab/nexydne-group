@@ -33,7 +33,7 @@ export default function CloudNativeArchitecture() {
         <header className="container px-4 md:px-8 lg:px-12 mb-12">
           <div className="max-w-4xl">
             {/* Category */}
-            <span className="inline-block px-3 py-1.5 bg-subtle text-primary-hover text-xs font-semibold rounded-full tracking-wide mb-6">
+            <span className="inline-block px-3 py-1.5 bg-subtle text-primary text-xs font-semibold rounded-full tracking-wide mb-6">
               TECHNOLOGY
             </span>
 
@@ -72,7 +72,7 @@ export default function CloudNativeArchitecture() {
                   <Twitter className="w-4 h-4" />
                 </button>
               </div>
-              <button className="inline-flex items-center gap-2 px-4 py-2 bg-primary-hover text-white rounded font-semibold text-sm hover:bg-primary transition-colors">
+              <button className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-charcoal rounded font-semibold text-sm hover:bg-primary transition-colors">
                 <Download className="w-4 h-4" />
                 Download PDF
               </button>
@@ -134,8 +134,8 @@ export default function CloudNativeArchitecture() {
               </section>
 
               {/* Pull Quote */}
-              <blockquote className="border-l-4 border-primary-hover pl-6 py-4 my-12 bg-subtle">
-                <p className="text-xl md:text-2xl text-primary-hover leading-relaxed mb-4">
+              <blockquote className="border-l-4 border-primary pl-6 py-4 my-12 bg-subtle">
+                <p className="text-xl md:text-2xl text-primary leading-relaxed mb-4">
                   "Cloud-native is not a destination but a journey. The goal is not to adopt every new technology, but to build systems that can evolve as business needs and technology capabilities change."
                 </p>
                 <cite className="text-sm text-charcoal/60 not-italic">
@@ -157,7 +157,7 @@ export default function CloudNativeArchitecture() {
               <div className="space-y-6 my-12">
                 <div className="bg-text-light border border-border rounded-lg p-6">
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-hover text-white flex items-center justify-center font-bold text-lg">01</div>
+                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary text-charcoal flex items-center justify-center font-bold text-lg">01</div>
                     <div>
                       <h3 className="text-lg font-bold text-charcoal mb-2">Containerization</h3>
                       <p className="text-charcoal/70 leading-relaxed">
@@ -169,7 +169,7 @@ export default function CloudNativeArchitecture() {
 
                 <div className="bg-text-light border border-border rounded-lg p-6">
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-hover text-white flex items-center justify-center font-bold text-lg">02</div>
+                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary text-charcoal flex items-center justify-center font-bold text-lg">02</div>
                     <div>
                       <h3 className="text-lg font-bold text-charcoal mb-2">Microservices Architecture</h3>
                       <p className="text-charcoal/70 leading-relaxed">
@@ -181,7 +181,7 @@ export default function CloudNativeArchitecture() {
 
                 <div className="bg-text-light border border-border rounded-lg p-6">
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-hover text-white flex items-center justify-center font-bold text-lg">03</div>
+                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary text-charcoal flex items-center justify-center font-bold text-lg">03</div>
                     <div>
                       <h3 className="text-lg font-bold text-charcoal mb-2">Continuous Integration and Delivery</h3>
                       <p className="text-charcoal/70 leading-relaxed">
@@ -193,7 +193,7 @@ export default function CloudNativeArchitecture() {
 
                 <div className="bg-text-light border border-border rounded-lg p-6">
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-hover text-white flex items-center justify-center font-bold text-lg">04</div>
+                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary text-charcoal flex items-center justify-center font-bold text-lg">04</div>
                     <div>
                       <h3 className="text-lg font-bold text-charcoal mb-2">Infrastructure as Code</h3>
                       <p className="text-charcoal/70 leading-relaxed">
@@ -205,7 +205,7 @@ export default function CloudNativeArchitecture() {
 
                 <div className="bg-text-light border border-border rounded-lg p-6">
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-hover text-white flex items-center justify-center font-bold text-lg">05</div>
+                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary text-charcoal flex items-center justify-center font-bold text-lg">05</div>
                     <div>
                       <h3 className="text-lg font-bold text-charcoal mb-2">Observability</h3>
                       <p className="text-charcoal/70 leading-relaxed">
@@ -219,19 +219,19 @@ export default function CloudNativeArchitecture() {
               {/* Statistics Box */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 my-12 py-8 border-y border-border">
                 <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-primary-hover mb-2">40%</div>
+                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">40%</div>
                   <div className="text-sm text-charcoal/60">Faster time-to-market</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-primary-hover mb-2">60%</div>
+                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">60%</div>
                   <div className="text-sm text-charcoal/60">Infrastructure cost reduction</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-primary-hover mb-2">90%</div>
+                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">90%</div>
                   <div className="text-sm text-charcoal/60">Availability improvement</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-primary-hover mb-2">5x</div>
+                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">5x</div>
                   <div className="text-sm text-charcoal/60">Deployment frequency</div>
                 </div>
               </div>
@@ -295,9 +295,9 @@ export default function CloudNativeArchitecture() {
               </section>
 
               {/* Author/Contact Section */}
-              <div className="bg-base text-white rounded-lg p-8 mt-12">
+              <div className="bg-background text-charcoal rounded-lg p-8 mt-12">
                 <h3 className="text-xl font-bold mb-4">Ready to modernize your technology infrastructure?</h3>
-                <p className="text-white/80 mb-6">
+                <p className="text-muted-foreground mb-6">
                   Our Technology Practice helps organizations design and implement cloud-native architectures that enable speed, scale, and resilience.
                 </p>
                 <div className="flex flex-wrap gap-4">
@@ -307,7 +307,7 @@ export default function CloudNativeArchitecture() {
                       <ArrowRight className="w-4 h-4" />
                     </button>
                   </Link>
-                  <button className="inline-flex items-center gap-2 px-6 py-3 border border-white/30 text-white rounded font-semibold text-sm hover:bg-white/10 transition-colors">
+                  <button className="inline-flex items-center gap-2 px-6 py-3 border border-border text-charcoal rounded font-semibold text-sm hover:bg-white/10 transition-colors">
                     <Download className="w-4 h-4" />
                     Download Full Whitepaper
                   </button>
@@ -318,12 +318,12 @@ export default function CloudNativeArchitecture() {
             {/* Sidebar */}
             <aside className="lg:sticky lg:top-24 lg:self-start space-y-8">
               {/* Download CTA */}
-              <div className="bg-primary-hover text-white rounded-lg p-6">
+              <div className="bg-primary text-charcoal rounded-lg p-6">
                 <h3 className="font-bold mb-2">Download the full whitepaper</h3>
-                <p className="text-white/80 text-sm mb-4">
+                <p className="text-muted-foreground text-sm mb-4">
                   Get the complete guide with implementation checklists, architecture diagrams, and case studies.
                 </p>
-                <button className="w-full inline-flex items-center justify-center gap-2 px-4 py-2 bg-white text-primary-hover rounded font-semibold text-sm hover:bg-subtle transition-colors">
+                <button className="w-full inline-flex items-center justify-center gap-2 px-4 py-2 bg-white text-primary rounded font-semibold text-sm hover:bg-subtle transition-colors">
                   <Download className="w-4 h-4" />
                   Download PDF
                 </button>
@@ -371,9 +371,9 @@ export default function CloudNativeArchitecture() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full px-4 py-2 border border-border rounded mb-3 text-sm focus:outline-none focus:border-primary-hover"
+                  className="w-full px-4 py-2 border border-border rounded mb-3 text-sm focus:outline-none focus:border-primary"
                 />
-                <button className="w-full px-4 py-2 bg-base text-white rounded font-semibold text-sm hover:bg-primary-hover transition-colors">
+                <button className="w-full px-4 py-2 bg-background text-charcoal rounded font-semibold text-sm hover:bg-primary-hover transition-colors">
                   Subscribe
                 </button>
               </div>

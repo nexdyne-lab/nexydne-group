@@ -58,7 +58,7 @@ export default function BusinessTransformationStrategy() {
           Business transformation represents a fundamental shift in how an organization creates and delivers value. Unlike incremental improvement initiatives, transformation involves reimagining core business models, operating processes, and organizational capabilities to achieve step-change performance improvements.
         </p>
 
-        <div className="bg-base/5 border-l-4 border-primary p-6 my-8 rounded-r-lg">
+        <div className="bg-charcoal/5 border-l-4 border-primary p-6 my-8 rounded-r-lg">
           <h3 className="text-xl font-semibold text-charcoal mb-3">Key Transformation Drivers</h3>
           <ul className="space-y-3 text-charcoal/70">
             <li><strong className="text-charcoal">Digital Disruption:</strong> Emerging technologies fundamentally alter competitive dynamics and customer expectations</li>
@@ -127,7 +127,7 @@ export default function BusinessTransformationStrategy() {
           Beyond the strategic framework, several implementation principles significantly increase the probability of transformation success:
         </p>
 
-        <div className="bg-gradient-to-br from-[#0077B5]/5 to-base/5 rounded-xl p-8 my-8">
+        <div className="bg-gradient-to-br from-[#0077B5]/5 to-background/5 rounded-xl p-8 my-8">
           <div className="space-y-6">
             <div>
               <h4 className="text-lg font-semibold text-charcoal mb-2">Start with Quick Wins</h4>
@@ -179,14 +179,14 @@ export default function BusinessTransformationStrategy() {
           This shift requires investment in several foundational elements: governance structures that enable rapid decision-making, talent models that attract and retain change leaders, and cultural norms that embrace experimentation and learning. Organizations that make these investments position themselves to not only survive disruption but to shape it—turning transformation capability into sustainable competitive advantage.
         </p>
 
-        <div className="bg-base text-white p-8 rounded-xl my-8">
+        <div className="bg-background text-charcoal p-8 rounded-xl my-8">
           <h3 className="text-xl font-bold mb-4">Ready to Transform Your Organization?</h3>
-          <p className="text-white/80 mb-6">
+          <p className="text-muted-foreground mb-6">
             Our Strategy & Corporate Finance team helps organizations navigate complex transformations with clarity and confidence. From strategic planning to execution support, we partner with you to deliver sustainable change.
           </p>
           <a 
             href="/contact" 
-            className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+            className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-charcoal px-6 py-3 rounded-lg font-semibold transition-colors"
           >
             Schedule a Consultation
           </a>

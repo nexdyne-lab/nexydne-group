@@ -80,36 +80,17 @@ export default function Team() {
       />
       <Navigation />
       
-      {/* Hero Section - Clean McKinsey Style */}
-      <section className="relative min-h-[50vh] flex items-center pt-16 overflow-hidden bg-base">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80" 
-            alt="Team collaboration" 
-            className="w-full h-full object-cover opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/90 to-base/70" />
-        </div>
-        
-        {/* Hero Content */}
-        <div className="container px-4 sm:px-6 md:px-12 relative z-10 py-16 md:py-24">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-3xl"
-          >
-            <p className="text-primary-hover text-sm font-bold uppercase tracking-widest mb-4">
-              Our Team
-            </p>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-3">
-              Our <span className="text-primary-hover">People</span>
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-white/80 leading-relaxed max-w-2xl">
-              Meet the leaders and experts who drive transformation for our clients
-            </p>
-          </motion.div>
+      {/* Hero Section - Neutral-first */}
+      <section className="relative w-full bg-background overflow-hidden">
+        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(70% 60% at 82% 14%, rgba(224,76,44,0.05) 0%, transparent 55%), radial-gradient(55% 55% at 6% 95%, rgba(111,68,163,0.045) 0%, transparent 55%)" }} />
+        <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div className="flex flex-col justify-center min-h-[52vh] py-24 lg:py-28">
+            <div className="max-w-[920px]">
+              <div className="flex items-center gap-3 mb-6"><span className="block h-[3px] w-9 bg-primary" /><span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">OUR TEAM</span></div>
+              <h1 className="text-charcoal font-bold tracking-[-0.035em] leading-[1.0] text-[clamp(2.4rem,5.4vw,4.2rem)]">Our People</h1>
+              <p className="mt-7 text-[1.1rem] md:text-[1.2rem] leading-[1.55] text-muted-foreground max-w-[60ch]">Meet the leaders and experts who drive transformation for our clients.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -145,7 +126,7 @@ export default function Team() {
                   is an opportunity to demonstrate the transformative power of intelligent automation.
                 </p>
                 <Link href="/case-studies">
-                  <a className="inline-flex items-center gap-2 text-primary-hover font-semibold hover:gap-3 transition-all">
+                  <a className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
                     See Our Work <ArrowRight className="w-4 h-4" />
                   </a>
                 </Link>
@@ -199,7 +180,7 @@ export default function Team() {
                       <h3 className="text-xl font-bold text-charcoal mb-1 group-hover:text-primary-hover transition-colors">
                         {consultant.name}
                       </h3>
-                      <p className="text-sm font-semibold text-primary-hover mb-2">
+                      <p className="text-sm font-semibold text-primary mb-2">
                         {consultant.title}
                       </p>
                       <p className="text-sm text-muted-foreground mb-4">
@@ -217,7 +198,7 @@ export default function Team() {
                           </span>
                         ))}
                         {consultant.expertise.length > 2 && (
-                          <span className="px-3 py-1 text-xs font-medium bg-primary-hover/10 text-primary-hover rounded">
+                          <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded">
                             +{consultant.expertise.length - 2} more
                           </span>
                         )}
@@ -232,7 +213,7 @@ export default function Team() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-28 bg-base text-white">
+      <section className="py-20 md:py-28 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div

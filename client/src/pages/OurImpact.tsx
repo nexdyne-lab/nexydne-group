@@ -39,34 +39,17 @@ export default function OurImpact() {
       />
       <Navigation />
       
-      {/* Hero Section - Clean McKinsey Style */}
-      <section className="relative min-h-[60vh] flex items-center pt-16 overflow-hidden bg-base">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80" 
-            alt="Diverse team collaborating" 
-            className="w-full h-full object-cover opacity-30"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/90 to-base/70" />
-        </div>
-        
-        {/* Hero Content */}
-        <div className="container px-4 sm:px-6 md:px-12 relative z-10 py-16 md:py-24">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-3xl"
-          >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-[1.1] mb-3">
-              Our Impact
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-white/80 leading-relaxed max-w-2xl">
-              We measure success not just by business outcomes, but by the lasting capabilities we build, 
-              the communities we strengthen, and the positive change we create.
-            </p>
-          </motion.div>
+      {/* Hero Section - Neutral-first */}
+      <section className="relative w-full bg-background overflow-hidden">
+        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(70% 60% at 82% 14%, rgba(224,76,44,0.05) 0%, transparent 55%), radial-gradient(55% 55% at 6% 95%, rgba(111,68,163,0.045) 0%, transparent 55%)" }} />
+        <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div className="flex flex-col justify-center min-h-[52vh] py-24 lg:py-28">
+            <div className="max-w-[920px]">
+              <div className="flex items-center gap-3 mb-6"><span className="block h-[3px] w-9 bg-primary" /><span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">OUR IMPACT</span></div>
+              <h1 className="text-charcoal font-bold tracking-[-0.035em] leading-[1.0] text-[clamp(2.4rem,5.4vw,4.2rem)]">Our Impact</h1>
+              <p className="mt-7 text-[1.1rem] md:text-[1.2rem] leading-[1.55] text-muted-foreground max-w-[60ch]">We measure success not just by business outcomes, but by the lasting capabilities we build, the communities we strengthen, and the positive change we create.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -84,7 +67,7 @@ export default function OurImpact() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group flex flex-col items-center text-center p-6 hover:bg-subtle transition-colors rounded-lg cursor-pointer"
               >
-                <area.icon className="w-8 h-8 text-primary-hover mb-3 group-hover:scale-110 transition-transform" />
+                <area.icon className="w-8 h-8 text-primary mb-3 group-hover:scale-110 transition-transform" />
                 <h3 className="font-semibold text-charcoal mb-1">{area.title}</h3>
                 <p className="text-sm text-muted-foreground">{area.description}</p>
               </motion.a>
@@ -105,7 +88,7 @@ export default function OurImpact() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <div className="inline-flex items-center gap-2 bg-primary-hover/10 text-primary-hover px-4 py-2 rounded-full text-sm font-medium mb-6">
+                <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
                   <Users className="w-4 h-4" />
                   People & Talent
                 </div>
@@ -120,12 +103,12 @@ export default function OurImpact() {
                 
                 {/* Key Stats */}
                 <div className="grid grid-cols-2 gap-6">
-                  <div className="border-l-4 border-primary-hover pl-4">
-                    <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-hover">2,400+</div>
+                  <div className="border-l-4 border-primary pl-4">
+                    <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">2,400+</div>
                     <p className="text-muted-foreground mt-1">Professionals trained across client organizations</p>
                   </div>
-                  <div className="border-l-4 border-primary-hover pl-4">
-                    <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-hover">91%</div>
+                  <div className="border-l-4 border-primary pl-4">
+                    <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">91%</div>
                     <p className="text-muted-foreground mt-1">Employee retention reflecting our commitment</p>
                   </div>
                 </div>
@@ -139,13 +122,13 @@ export default function OurImpact() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="bg-subtle p-8 md:p-10"
               >
-                <GraduationCap className="w-10 h-10 text-primary-hover mb-6" />
+                <GraduationCap className="w-10 h-10 text-primary mb-6" />
                 <blockquote className="text-lg sm:text-xl md:text-2xl text-gray-800 leading-relaxed mb-6 ">
                   "Before working with NexDyne, our finance team was intimidated by predictive modeling. 
                   Now they're building their own forecasts and challenging assumptions we'd held for years."
                 </blockquote>
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary-hover rounded-full flex items-center justify-center text-white font-bold">
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
                     JM
                   </div>
                   <div>
@@ -170,7 +153,7 @@ export default function OurImpact() {
               transition={{ duration: 0.6 }}
               className="text-center mb-16"
             >
-              <div className="inline-flex items-center gap-2 bg-primary-hover/10 text-primary-hover px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Globe className="w-4 h-4" />
                 Community Impact
               </div>
@@ -193,8 +176,8 @@ export default function OurImpact() {
                 transition={{ duration: 0.5 }}
                 className="bg-white p-8 shadow-sm"
               >
-                <div className="w-14 h-14 bg-primary-hover/10 rounded-lg flex items-center justify-center mb-6">
-                  <Building2 className="w-7 h-7 text-primary-hover" />
+                <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                  <Building2 className="w-7 h-7 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Leveling the Playing Field</h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -209,8 +192,8 @@ export default function OurImpact() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="bg-white p-8 shadow-sm"
               >
-                <div className="w-14 h-14 bg-primary-hover/10 rounded-lg flex items-center justify-center mb-6">
-                  <Users className="w-7 h-7 text-primary-hover" />
+                <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                  <Users className="w-7 h-7 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Job Creation</h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -225,8 +208,8 @@ export default function OurImpact() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="bg-white p-8 shadow-sm"
               >
-                <div className="w-14 h-14 bg-primary-hover/10 rounded-lg flex items-center justify-center mb-6">
-                  <Globe className="w-7 h-7 text-primary-hover" />
+                <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                  <Globe className="w-7 h-7 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Market Expansion</h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -260,7 +243,7 @@ export default function OurImpact() {
                 </div>
                 {/* Floating Stat Card */}
                 <div className="absolute -bottom-6 -right-6 bg-white shadow-lg p-6 max-w-[200px]">
-                  <div className="text-4xl font-bold text-primary-hover mb-2">43%</div>
+                  <div className="text-4xl font-bold text-primary mb-2">43%</div>
                   <p className="text-sm text-muted-foreground">Reduction in carbon footprint of our deployed models</p>
                 </div>
               </motion.div>
@@ -287,15 +270,15 @@ export default function OurImpact() {
                 {/* Sustainability Practices */}
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
-                    <div className="w-2 h-2 bg-primary-hover rounded-full mt-2 flex-shrink-0" />
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
                     <p className="text-charcoal/80">Supply chain optimization reducing transportation emissions</p>
                   </div>
                   <div className="flex items-start gap-4">
-                    <div className="w-2 h-2 bg-primary-hover rounded-full mt-2 flex-shrink-0" />
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
                     <p className="text-charcoal/80">Demand forecasting minimizing overproduction and waste</p>
                   </div>
                   <div className="flex items-start gap-4">
-                    <div className="w-2 h-2 bg-primary-hover rounded-full mt-2 flex-shrink-0" />
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
                     <p className="text-charcoal/80">Energy consumption modeling identifying efficiency opportunities</p>
                   </div>
                 </div>
@@ -306,7 +289,7 @@ export default function OurImpact() {
       </section>
 
       {/* Social Good Impact */}
-      <section id="social-good" className="py-20 md:py-28 bg-base text-white">
+      <section id="social-good" className="py-20 md:py-28 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-6xl mx-auto">
             <motion.div
@@ -336,7 +319,7 @@ export default function OurImpact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="bg-white/5 backdrop-blur-sm border border-white/10 p-8"
+                className="bg-white/5 backdrop-blur-sm border border-border p-8"
               >
                 <Lightbulb className="w-10 h-10 text-secondary mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Ethical AI Development</h3>
@@ -355,7 +338,7 @@ export default function OurImpact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="bg-white/5 backdrop-blur-sm border border-white/10 p-8"
+                className="bg-white/5 backdrop-blur-sm border border-border p-8"
               >
                 <Heart className="w-10 h-10 text-secondary mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Pro Bono Consulting</h3>
@@ -376,7 +359,7 @@ export default function OurImpact() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 md:p-10"
+              className="bg-white/5 backdrop-blur-sm border border-border p-8 md:p-10"
             >
               <h3 className="text-xl font-semibold mb-6">Recent Pro Bono Impact</h3>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
@@ -428,7 +411,7 @@ export default function OurImpact() {
                 to expand access to advanced analytics, deepen capabilities we transfer to client teams, 
                 increase transparency in AI systems, and amplify voices of underrepresented practitioners.
               </p>
-              <Button className="bg-primary-hover hover:bg-base text-white px-8 py-4 text-base font-medium rounded-none">
+              <Button className="bg-primary hover:bg-charcoal text-white px-8 py-4 text-base font-medium rounded-none">
                 Learn About Our Values <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </motion.div>

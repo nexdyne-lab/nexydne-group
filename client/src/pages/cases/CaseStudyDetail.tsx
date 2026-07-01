@@ -70,7 +70,7 @@ export default function CaseStudyDetail() {
 
   if (!study) {
     return (
-      <div className="min-h-screen bg-base text-white flex items-center justify-center">
+      <div className="min-h-screen bg-background text-charcoal flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Case Study Not Found</h1>
           <Link href="/venture-portfolio">
@@ -84,7 +84,7 @@ export default function CaseStudyDetail() {
   }
 
   return (
-    <div className="min-h-screen bg-base text-white font-sans selection:bg-secondary selection:text-base">
+    <div className="min-h-screen bg-background text-charcoal font-sans selection:bg-primary selection:text-white">
       <Navigation />
 
       {/* Hero Section */}
@@ -95,7 +95,7 @@ export default function CaseStudyDetail() {
             alt={study.title} 
             className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-base via-base/90 to-base" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
         </div>
 
         <div className="container px-4 md:px-12 relative z-10">
@@ -119,11 +119,11 @@ export default function CaseStudyDetail() {
           <div className="flex flex-wrap gap-6 text-sm text-muted-foreground/70 mb-8">
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4 text-secondary" />
-              <span>Timeline: <span className="text-white font-bold">{study.timeline}</span></span>
+              <span>Timeline: <span className="text-charcoal font-bold">{study.timeline}</span></span>
             </div>
             <div className="flex items-center gap-2">
               <TrendingUp className="w-4 h-4 text-secondary" />
-              <span>Outcome: <span className="text-white font-bold">Market Leader</span></span>
+              <span>Outcome: <span className="text-charcoal font-bold">Market Leader</span></span>
             </div>
           </div>
           
@@ -147,7 +147,7 @@ export default function CaseStudyDetail() {
       </section>
 
       {/* Content Section */}
-      <section className="py-20 bg-base">
+      <section className="py-20 bg-background">
         <div className="container px-4 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             
@@ -190,7 +190,7 @@ export default function CaseStudyDetail() {
 
             {/* Sidebar / Impact */}
             <div className="lg:col-span-5">
-              <div className="bg-base border border-white/10 rounded-2xl p-8 sticky top-32">
+              <div className="bg-background border border-border rounded-2xl p-8 sticky top-32">
                 <h3 className="text-2xl font-bold mb-8">Impact Delivered</h3>
                 
                 <div className="space-y-8 mb-12">
@@ -202,12 +202,12 @@ export default function CaseStudyDetail() {
                   ))}
                 </div>
 
-                <div className="relative p-6 bg-white/5 rounded-xl border border-white/5">
+                <div className="relative p-6 bg-white/5 rounded-xl border border-border">
                   <Quote className="w-8 h-8 text-secondary/30 absolute top-4 left-4" />
                   <p className="text-muted-foreground/50 italic relative z-10 mb-4 pl-4">
                     "{study.quote}"
                   </p>
-                  <div className="text-sm font-bold text-white pl-4">— {study.author}</div>
+                  <div className="text-sm font-bold text-charcoal pl-4">— {study.author}</div>
                 </div>
               </div>
             </div>
@@ -217,7 +217,7 @@ export default function CaseStudyDetail() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-base border-t border-white/5">
+      <section className="py-24 bg-background border-t border-border">
         <div className="container px-4 md:px-12 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Ready to write your success story?</h2>
           <Link href="/contact">

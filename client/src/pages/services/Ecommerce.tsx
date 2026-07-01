@@ -13,26 +13,26 @@ export default function Ecommerce() {
       <Navigation />
 
       {/* Hero Section - Clean Gradient */}
-      <section className="relative py-16 md:py-24 lg:py-32 bg-gradient-to-br from-base via-base to-base overflow-hidden">
+      <section className="relative py-16 md:py-24 lg:py-32 bg-gradient-to-br from-background via-background to-background overflow-hidden">
         <div className="container relative z-10 px-4">
           <div className="max-w-4xl">
             <nav className="flex items-center gap-2 text-xs md:text-sm mb-6 md:mb-8">
-              <Link href="/" className="text-white/60 hover:text-white transition-colors">Services</Link>
-              <span className="text-white/40">/</span>
-              <span className="text-white">E-commerce</span>
+              <Link href="/" className="text-muted-foreground hover:text-white transition-colors">Services</Link>
+              <span className="text-muted-foreground">/</span>
+              <span className="text-charcoal">E-commerce</span>
             </nav>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-['EB Garamond',serif] font-bold mb-3 text-white">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-['EB Garamond',serif] font-bold mb-3 text-charcoal">
               E-commerce Solutions
             </h1>
-            <p className="text-base md:text-lg lg:text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">
+            <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
               Build a future-proof online store with our advanced e-commerce solutions: from platforms to chatbots and native apps. Everything you need, all in one place.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-secondary text-base hover:bg-secondary rounded-full px-8 shadow-lg shadow-secondary/30 font-semibold w-full sm:w-auto">
                 Get Started
               </Button>
-              <Button size="lg" variant="outline" className="rounded-full border-2 border-white text-white hover:bg-white hover:text-base px-8 w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="rounded-full border-2 border-white text-charcoal hover:bg-white hover:text-base px-8 w-full sm:w-auto">
                 View Our Work
               </Button>
             </div>
@@ -66,12 +66,12 @@ export default function Ecommerce() {
       </AnimatedSection>
 
       {/* Services Section - Deep Blue Background */}
-      <AnimatedSection animation="fade-up" delay={100} className="py-12 md:py-16 lg:py-20 bg-gradient-to-b from-base to-base">
+      <AnimatedSection animation="fade-up" delay={100} className="py-12 md:py-16 lg:py-20 bg-gradient-to-b from-background to-background">
         <div className="container px-4">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
             {/* Left: Contact Person */}
             <div>
-              <h2 className="text-2xl md:text-3xl font-['EB Garamond',serif] font-bold mb-6 md:mb-8 text-white">Services</h2>
+              <h2 className="text-2xl md:text-3xl font-['EB Garamond',serif] font-bold mb-6 md:mb-8 text-charcoal">Services</h2>
               <Card className="p-6 md:p-8 bg-white/10 backdrop-blur-sm border-secondary/30 shadow-xl hover:shadow-2xl hover:shadow-secondary/20 transition-all">
                 <div className="flex flex-col sm:flex-row items-start gap-6">
                   <div className="relative flex-shrink-0">
@@ -83,7 +83,7 @@ export default function Ecommerce() {
                     />
                   </div>
                   <div className="flex-1 w-full">
-                    <p className="text-base md:text-lg font-semibold mb-4 text-white">Want to know more?</p>
+                    <p className="text-base md:text-lg font-semibold mb-4 text-charcoal">Want to know more?</p>
                     <Button className="bg-secondary text-base hover:bg-secondary rounded-full px-8 shadow-lg shadow-secondary/30 font-semibold mb-3 w-full sm:w-auto">
                       Get in touch
                     </Button>
@@ -150,14 +150,14 @@ export default function Ecommerce() {
       </AnimatedSection>
 
       {/* Cases Section - Blue Background */}
-      <AnimatedSection animation="fade-up" delay={300} className="py-12 md:py-16 lg:py-20 bg-gradient-to-b from-base to-base">
+      <AnimatedSection animation="fade-up" delay={300} className="py-12 md:py-16 lg:py-20 bg-gradient-to-b from-background to-background">
         <div className="container px-4">
           <div className="mb-8 md:mb-12">
             <p className="text-xs md:text-sm font-semibold text-secondary uppercase tracking-wider mb-4">Cases</p>
             <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-6 md:mb-8 gap-4">
-              <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-white">Cases we love talking about</h2>
+              <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal">Cases we love talking about</h2>
             </div>
-            <p className="text-base md:text-lg text-white/70 mb-6 md:mb-8 max-w-3xl">
+            <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8 max-w-3xl">
               Heard of a business that transforms unique business challenges into exceptional outcomes? That'd be us. Check out these inspiring cases.
             </p>
             <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-base transition-all w-full sm:w-auto">
@@ -174,12 +174,12 @@ export default function Ecommerce() {
                   alt="RAI Amsterdam" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
                 <div className="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/10 transition-colors"></div>
               </div>
               <div className="p-5 md:p-6 bg-white/10 backdrop-blur-sm flex flex-col">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-white group-hover:text-secondary transition-colors">Stand Management Optimisation at RAI Amsterdam</h3>
-                <p className="text-sm text-white/70 mb-4 flex-grow">
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-charcoal group-hover:text-secondary transition-colors">Stand Management Optimisation at RAI Amsterdam</h3>
+                <p className="text-sm text-muted-foreground mb-4 flex-grow">
                   RAI Amsterdam optimises stand management and enhances the experience of its exhibitors with a digital solution developed by NEXDYNE
                 </p>
                 <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-base transition-all w-fit" size="sm">
@@ -197,12 +197,12 @@ export default function Ecommerce() {
                   alt="Webstore" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
                 <div className="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/10 transition-colors"></div>
               </div>
               <div className="p-5 md:p-6 bg-white/10 backdrop-blur-sm flex flex-col">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-white group-hover:text-secondary transition-colors">A webstore that makes your mouth water</h3>
-                <p className="text-sm text-white/70 mb-4 flex-grow">
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-charcoal group-hover:text-secondary transition-colors">A webstore that makes your mouth water</h3>
+                <p className="text-sm text-muted-foreground mb-4 flex-grow">
                   As a strategic digital partner to Nieuwkoop-Europe BV, a leader in the indoor landscaping market, we helped build a new e-commerce platform for B2B...
                 </p>
                 <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-base transition-all w-fit" size="sm">
@@ -220,12 +220,12 @@ export default function Ecommerce() {
                   alt="B2B Development" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-base via-base/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
                 <div className="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/10 transition-colors"></div>
               </div>
               <div className="p-5 md:p-6 bg-white/10 backdrop-blur-sm flex flex-col">
-                <h3 className="text-lg md:text-xl font-bold mb-3 text-white group-hover:text-secondary transition-colors">Development of a webshop with B2B and B2C in the Benelux region</h3>
-                <p className="text-sm text-white/70 mb-4 flex-grow">
+                <h3 className="text-lg md:text-xl font-bold mb-3 text-charcoal group-hover:text-secondary transition-colors">Development of a webshop with B2B and B2C in the Benelux region</h3>
+                <p className="text-sm text-muted-foreground mb-4 flex-grow">
                   Discover how we developed a seamless e-commerce solution for Kluwer products in accounting and tax
                 </p>
                 <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-base transition-all w-fit" size="sm">
@@ -271,22 +271,22 @@ export default function Ecommerce() {
       </AnimatedSection>
 
       {/* CTA Section - Blue Gradient */}
-      <AnimatedSection animation="fade-up" delay={500} className="py-16 md:py-20 bg-gradient-to-br from-base via-base to-base">
+      <AnimatedSection animation="fade-up" delay={500} className="py-16 md:py-20 bg-gradient-to-br from-background via-background to-background">
         <div className="container px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold mb-6 text-white">Ready to transform your e-commerce?</h2>
-            <p className="text-base md:text-lg lg:text-xl text-white/80 mb-8">
+            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold mb-6 text-charcoal">Ready to transform your e-commerce?</h2>
+            <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8">
               Let's discuss how we can help you build a future-proof online store that drives growth and delights customers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
               <Button size="lg" className="bg-secondary text-base hover:bg-secondary rounded-full px-8 shadow-lg shadow-secondary/30 font-semibold w-full sm:w-auto">
                 Contact Us
               </Button>
-              <Button size="lg" variant="outline" className="rounded-full border-2 border-white text-white hover:bg-white hover:text-base px-8 w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="rounded-full border-2 border-white text-charcoal hover:bg-white hover:text-base px-8 w-full sm:w-auto">
                 Schedule a Call
               </Button>
             </div>
-            <p className="text-sm md:text-base text-white/60">
+            <p className="text-sm md:text-base text-muted-foreground">
               Or call us directly: <a href="tel:+15551234567" className="text-secondary hover:text-secondary transition-colors font-medium">+1 (555) 123-4567</a>
             </p>
           </div>

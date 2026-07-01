@@ -12,7 +12,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function ValuationMistakes() {
   return (
-    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Five Valuation Mistakes That Cost Founders Millions | NexDyne Technologies" 
         description="Valuation errors compound over time, creating long-term consequences that extend far beyond a single financing round. Learn how to avoid costly mistakes."
@@ -24,7 +24,7 @@ export default function ValuationMistakes() {
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background"></div>
         
         <div className="container relative z-10 px-4 md:px-12 max-w-4xl">
           <Link href="/insights" className="inline-flex items-center gap-2 text-primary hover:text-primary/80 mb-8 transition-colors">
@@ -38,15 +38,15 @@ export default function ValuationMistakes() {
             transition={{ duration: 0.8 }}
           >
             <div className="flex flex-wrap gap-4 mb-6">
-              <span className="inline-flex items-center gap-2 text-sm text-white/60">
+              <span className="inline-flex items-center gap-2 text-sm text-muted-foreground">
                 <Tag className="w-4 h-4 text-primary" />
                 Capital Raising
               </span>
-              <span className="inline-flex items-center gap-2 text-sm text-white/60">
+              <span className="inline-flex items-center gap-2 text-sm text-muted-foreground">
                 <Calendar className="w-4 h-4 text-primary" />
                 December 18, 2025
               </span>
-              <span className="inline-flex items-center gap-2 text-sm text-white/60">
+              <span className="inline-flex items-center gap-2 text-sm text-muted-foreground">
                 <Clock className="w-4 h-4 text-primary" />
                 10 min read
               </span>
@@ -56,7 +56,7 @@ export default function ValuationMistakes() {
               Five Valuation Mistakes That <span className="text-primary">Cost Founders Millions</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed">
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
               Valuation errors compound over time, creating long-term consequences that extend far beyond a single financing round. Understanding these common mistakes can save founders from dilution disasters and misaligned cap tables.
             </p>
           </motion.div>
@@ -64,7 +64,7 @@ export default function ValuationMistakes() {
       </section>
 
       {/* Featured Image */}
-      <div className="w-full h-96 bg-base overflow-hidden">
+      <div className="w-full h-96 bg-background overflow-hidden">
         <img 
           src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80" 
           alt="Valuation Mistakes" 
@@ -93,9 +93,9 @@ export default function ValuationMistakes() {
               Consider a real scenario: Company A raises at a $60M post-money valuation with a 2x participating liquidation preference. Company B raises at $45M with standard 1x non-participating preference. If both companies exit at $150M, Company A founders receive approximately $45M while Company B founders receive $75M. The "lower" valuation delivered 67% more founder proceeds because the terms were cleaner.
             </p>
 
-            <div className="bg-red-50 border-l-4 border-red-500 p-6 my-8 rounded-r-xl">
+            <div className="bg-primary/5 border-l-4 border-primary p-6 my-8 rounded-r-xl">
               <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-2">
-                <AlertTriangle className="w-5 h-5 text-destructive" />
+                <AlertTriangle className="w-5 h-5 text-primary" />
                 Warning Signs of Problematic Terms
               </h3>
               <ul className="space-y-3 text-charcoal/80">
@@ -166,7 +166,7 @@ export default function ValuationMistakes() {
               Run the math on three scenarios: a disappointing exit at 2x your last round valuation, a solid exit at 5x, and a home run at 10x. If your proceeds in the disappointing scenario are close to zero due to liquidation preferences, you've taken on too much structural risk. The goal is to structure your cap table so that even modest success delivers meaningful founder outcomes.
             </p>
 
-            <div className="bg-base/5 border-l-4 border-base/30 p-6 my-8 rounded-r-xl">
+            <div className="bg-charcoal/5 border-l-4 border-border p-6 my-8 rounded-r-xl">
               <h3 className="text-xl font-bold text-charcoal mb-4">Exit Scenario Modeling Example</h3>
               <p className="text-charcoal/70 mb-4">Company raises $30M total across three rounds with 1.5x average liquidation preference:</p>
               <ul className="space-y-3 text-charcoal/80">
@@ -205,14 +205,14 @@ export default function ValuationMistakes() {
       </article>
 
       {/* Newsletter Subscribe */}
-      <div className="bg-base py-16 border-t border-white/10">
+      <div className="bg-background py-16 border-t border-border">
         <div className="container max-w-3xl px-4 md:px-12">
           <NewsletterSubscribe />
         </div>
       </div>
 
       {/* Related Insights */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -221,10 +221,10 @@ export default function ValuationMistakes() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Related Insights
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white">Continue reading</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">Continue reading</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -251,10 +251,10 @@ export default function ValuationMistakes() {
               >
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.category}</span>
-                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-white/60 mt-2">{item.description}</p>
+                  <p className="text-muted-foreground mt-2">{item.description}</p>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
                     Read article <ArrowRight className="w-3 h-3" />
                   </span>

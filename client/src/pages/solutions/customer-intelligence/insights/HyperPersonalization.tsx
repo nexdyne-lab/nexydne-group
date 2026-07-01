@@ -9,7 +9,7 @@ import { RelatedContent } from "@/components/RelatedContent";
 
 export default function HyperPersonalization() {
   return (
-    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Hyper-Personalization at Scale: A Practical Guide" 
         description="How to move from basic segmentation to true 1:1 personalization without drowning in complexity or burning through your marketing budget."
@@ -25,7 +25,7 @@ export default function HyperPersonalization() {
             alt="Personalization" 
             className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-base via-base/95 to-base" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
         </div>
         
         <div className="container px-4 md:px-12 relative z-10">
@@ -35,35 +35,35 @@ export default function HyperPersonalization() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <Link href="/solutions/data-driven-customer-intelligence/insights" className="inline-flex items-center text-white/60 hover:text-primary mb-8 transition-colors">
+            <Link href="/solutions/data-driven-customer-intelligence/insights" className="inline-flex items-center text-muted-foreground hover:text-primary mb-8 transition-colors">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Insights
             </Link>
             
             <div className="flex items-center gap-4 mb-6">
               <span className="text-primary text-xs font-bold uppercase tracking-[0.2em]">Marketing</span>
-              <span className="flex items-center text-white/40 text-sm">
+              <span className="flex items-center text-muted-foreground text-sm">
                 <Clock className="w-4 h-4 mr-1" />
                 10 min read
               </span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold tracking-tight text-white leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl eb-garamond font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
               Hyper-Personalization at Scale: A Practical Guide
             </h1>
             
-            <p className="text-xl text-white/70 leading-relaxed mb-8">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
               How to move from basic segmentation to true 1:1 personalization without drowning in complexity or burning through your marketing budget.
             </p>
 
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-charcoal font-bold">
                   NX
                 </div>
                 <div>
-                  <div className="font-semibold text-white">NEXDYNE Research</div>
-                  <div className="text-white/50 text-sm">October 2024</div>
+                  <div className="font-semibold text-charcoal">NEXDYNE Research</div>
+                  <div className="text-muted-foreground text-sm">October 2024</div>
                 </div>
               </div>
             </div>
@@ -125,7 +125,7 @@ export default function HyperPersonalization() {
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">4</div>
+                    <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-charcoal font-bold flex-shrink-0">4</div>
                     <div>
                       <h4 className="font-bold text-lg mb-1">Hyper-Personalization</h4>
                       <p className="text-charcoal/70 text-sm">AI-driven, real-time, 1:1 experiences. "Based on everything we know about you, here's your optimal experience."</p>
@@ -248,22 +248,22 @@ export default function HyperPersonalization() {
 
               <h2 className="text-3xl eb-garamond font-bold mt-12 mb-6">Common Pitfalls to Avoid</h2>
 
-              <div className="bg-subtle border-l-4 border-red-500 p-6 my-8">
-                <h4 className="font-bold text-red-700 mb-2">Pitfall #1: Creepy Personalization</h4>
+              <div className="bg-subtle border-l-4 border-primary p-6 my-8">
+                <h4 className="font-bold text-primary mb-2">Pitfall #1: Creepy Personalization</h4>
                 <p className="text-charcoal/70 text-sm">
                   Just because you can personalize doesn't mean you should. Showing customers you know too much about them backfires. Focus on personalization that feels helpful, not surveillance.
                 </p>
               </div>
 
-              <div className="bg-subtle border-l-4 border-red-500 p-6 my-8">
-                <h4 className="font-bold text-red-700 mb-2">Pitfall #2: Personalization Without Value</h4>
+              <div className="bg-subtle border-l-4 border-primary p-6 my-8">
+                <h4 className="font-bold text-primary mb-2">Pitfall #2: Personalization Without Value</h4>
                 <p className="text-charcoal/70 text-sm">
                   Personalization should make experiences better for customers, not just more targeted for you. If your personalization doesn't create customer value, it won't create business value either.
                 </p>
               </div>
 
-              <div className="bg-subtle border-l-4 border-red-500 p-6 my-8">
-                <h4 className="font-bold text-red-700 mb-2">Pitfall #3: Perfect Data Paralysis</h4>
+              <div className="bg-subtle border-l-4 border-primary p-6 my-8">
+                <h4 className="font-bold text-primary mb-2">Pitfall #3: Perfect Data Paralysis</h4>
                 <p className="text-charcoal/70 text-sm">
                   Don't wait for perfect data to start personalizing. Start with what you have, measure results, and improve over time. Imperfect personalization beats no personalization.
                 </p>
@@ -293,13 +293,13 @@ export default function HyperPersonalization() {
                 <div className="bg-subtle p-6 rounded-xl">
                   <h3 className="font-bold mb-4">Share this article</h3>
                   <div className="flex gap-3">
-                    <button className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white hover:bg-primary/90 transition-colors">
+                    <button className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-charcoal hover:bg-primary/90 transition-colors">
                       <Linkedin className="w-5 h-5" />
                     </button>
-                    <button className="w-10 h-10 bg-[#1DA1F2] rounded-full flex items-center justify-center text-white hover:bg-secondary transition-colors">
+                    <button className="w-10 h-10 bg-[#1DA1F2] rounded-full flex items-center justify-center text-charcoal hover:bg-secondary transition-colors">
                       <Twitter className="w-5 h-5" />
                     </button>
-                    <button className="w-10 h-10 bg-base rounded-full flex items-center justify-center text-white hover:bg-base/80 transition-colors">
+                    <button className="w-10 h-10 bg-background rounded-full flex items-center justify-center text-charcoal hover:bg-charcoal/80 transition-colors">
                       <Share2 className="w-5 h-5" />
                     </button>
                   </div>
@@ -329,9 +329,9 @@ export default function HyperPersonalization() {
                 </div>
 
                 {/* CTA */}
-                <div className="bg-primary p-6 rounded-xl text-white">
+                <div className="bg-primary p-6 rounded-xl text-charcoal">
                   <h3 className="font-bold mb-3">Ready to personalize at scale?</h3>
-                  <p className="text-white/80 text-sm mb-4">
+                  <p className="text-muted-foreground text-sm mb-4">
                     Let's discuss how to build your hyper-personalization capabilities.
                   </p>
                   <Link href="/contact">

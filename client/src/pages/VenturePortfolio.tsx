@@ -72,8 +72,8 @@ export default function VenturePortfolio() {
       outcomeLabel: "Patient Satisfaction",
       image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80",
       icon: Activity,
-      color: "text-red-400",
-      bgColor: "bg-red-900/30"
+      color: "text-primary",
+      bgColor: "bg-charcoal/30"
     },
     {
       industry: "Real Estate",
@@ -91,7 +91,7 @@ export default function VenturePortfolio() {
   ];
 
   return (
-    <div className="min-h-screen bg-base text-white font-sans selection:bg-secondary selection:text-base">
+    <div className="min-h-screen bg-background text-charcoal font-sans selection:bg-primary selection:text-white">
       <Navigation />
       
       {/* Breadcrumb */}
@@ -102,40 +102,22 @@ export default function VenturePortfolio() {
         { label: 'Venture & Portfolio Management' }
       ]} />
 
-      {/* Hero Section */}
-      <section className="relative py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-base via-base/95 to-base" />
-        </div>
-
-        <div className="container px-4 sm:px-6 md:px-12 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-4xl mx-auto text-center"
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-5 sm:mb-6 md:mb-8">
-
-              <span className="text-sm font-medium text-secondary uppercase tracking-wider">Venture Portfolio</span>
+      {/* Hero Section - Neutral-first */}
+      <section className="relative w-full bg-background overflow-hidden">
+        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(70% 60% at 82% 14%, rgba(224,76,44,0.05) 0%, transparent 55%), radial-gradient(55% 55% at 6% 95%, rgba(111,68,163,0.045) 0%, transparent 55%)" }} />
+        <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div className="flex flex-col justify-center min-h-[52vh] py-24 lg:py-28">
+            <div className="max-w-[920px]">
+              <div className="flex items-center gap-3 mb-6"><span className="block h-[3px] w-9 bg-primary" /><span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">VENTURE PORTFOLIO</span></div>
+              <h1 className="text-charcoal font-bold tracking-[-0.035em] leading-[1.0] text-[clamp(2.4rem,5.4vw,4.2rem)]">We don't just advise. We build and launch.</h1>
+              <p className="mt-7 text-[1.1rem] md:text-[1.2rem] leading-[1.55] text-muted-foreground max-w-[60ch]">Explore our track record of turning strategic concepts into fully operational, revenue-generating businesses across industries.</p>
             </div>
-            
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-3">
-              We don't just advise. <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-blue-400">
-                We build and launch.
-              </span>
-            </h1>
-            
-            <p className="text-xl text-muted-foreground/50 mb-10 max-w-2xl mx-auto leading-relaxed">
-              Explore our track record of turning strategic concepts into fully operational, revenue-generating businesses across industries.
-            </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Portfolio Grid */}
-      <section className="pb-32 bg-base">
+      <section className="pb-32 bg-background">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8">
             {ventures.map((venture, index) => (
@@ -145,20 +127,19 @@ export default function VenturePortfolio() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group relative bg-base border border-white/10 rounded-xl sm:rounded-2xl overflow-hidden hover:border-secondary/50 transition-all duration-500 flex flex-col"
+                className="group relative bg-white border border-border rounded-xl sm:rounded-2xl overflow-hidden hover:border-primary/50 hover:shadow-xl transition-all duration-500 flex flex-col"
               >
                 {/* Image Header */}
                 <div className="h-48 overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-base to-transparent z-10" />
-                  <img 
-                    src={venture.image} 
-                    alt={venture.title} 
+                  <img
+                    src={venture.image}
+                    alt={venture.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute top-4 left-4 z-20">
-                    <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full ${venture.bgColor} backdrop-blur-md border border-white/10`}>
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-charcoal/80 backdrop-blur-md">
 
-                      <span className={`text-xs font-bold uppercase tracking-wider ${venture.color}`}>
+                      <span className="text-xs font-bold uppercase tracking-wider text-amber">
                         {venture.industry}
                       </span>
                     </div>
@@ -168,22 +149,22 @@ export default function VenturePortfolio() {
                 {/* Content */}
                 <div className="p-4 sm:p-6 md:p-8 flex-1 flex flex-col">
                   <Link href={venture.slug ? `/cases/${venture.slug}` : "#"}>
-                    <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-secondary transition-colors cursor-pointer">
+                    <h3 className="text-2xl font-bold text-charcoal mb-3 group-hover:text-primary transition-colors cursor-pointer">
                       {venture.title}
                     </h3>
                   </Link>
-                  <p className="text-muted-foreground/70 mb-5 sm:mb-6 md:mb-8 leading-relaxed flex-1">
+                  <p className="text-muted-foreground mb-5 sm:mb-6 md:mb-8 leading-relaxed flex-1">
                     {venture.description}
                   </p>
 
                   {/* Metrics Grid */}
-                  <div className="grid grid-cols-2 gap-4 pt-6 border-t border-white/10">
+                  <div className="grid grid-cols-2 gap-4 pt-6 border-t border-border">
                     <div>
                       <div className="flex items-center gap-2 mb-1 text-muted-foreground text-xs uppercase tracking-wider">
 
                         {venture.timelineLabel}
                       </div>
-                      <div className="text-xl font-bold text-white">
+                      <div className="text-xl font-bold text-charcoal">
                         {venture.timeline}
                       </div>
                     </div>
@@ -192,7 +173,7 @@ export default function VenturePortfolio() {
 
                         {venture.outcomeLabel}
                       </div>
-                      <div className={`text-xl font-bold ${venture.color}`}>
+                      <div className="text-xl font-bold text-primary">
                         {venture.outcome}
                       </div>
                     </div>
@@ -205,16 +186,16 @@ export default function VenturePortfolio() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-base border-t border-white/5">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12 text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Have a concept ready to scale?
           </h2>
-          <p className="text-xl text-muted-foreground/70 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-white/70 mb-10 max-w-2xl mx-auto">
             Let's validate your idea and build your growth engine.
           </p>
           <Link href="/contact">
-            <button className="px-10 py-4 bg-secondary text-base font-bold rounded-full hover:bg-white transition-all shadow-lg hover:shadow-secondary/20">
+            <button className="px-10 py-4 bg-primary text-primary-foreground font-bold rounded-full hover:bg-primary-hover transition-colors shadow-lg">
               Start Building With Us
             </button>
           </Link>

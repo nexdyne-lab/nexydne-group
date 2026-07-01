@@ -132,7 +132,7 @@ export default function LeadsDashboard() {
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center p-4">
         <Card className="max-w-md w-full">
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl text-destructive">Access Denied</CardTitle>
+            <CardTitle className="text-2xl text-primary">Access Denied</CardTitle>
             <CardDescription>
               You need admin privileges to access this dashboard.
             </CardDescription>

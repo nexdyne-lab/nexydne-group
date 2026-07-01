@@ -12,7 +12,7 @@ import { SEO } from "@/components/SEO";
 
 export default function StrategicRepositioningTechnology() {
   return (
-    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Strategic Pivot in Enterprise Software | Case Study | NexDyne Technologies" 
         description="How an established enterprise software company successfully repositioned from declining on-premise products to high-growth cloud-native solutions, achieving 3x revenue growth in 24 months."
@@ -23,7 +23,7 @@ export default function StrategicRepositioningTechnology() {
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-30"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background"></div>
         
         <div className="container relative z-10 px-4 md:px-12">
           <Breadcrumbs />
@@ -39,7 +39,7 @@ export default function StrategicRepositioningTechnology() {
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-4">
               Strategic Pivot in <span className="text-primary">Enterprise Software</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mb-8">
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mb-8">
               How an established enterprise software company successfully repositioned from declining on-premise products to high-growth cloud-native solutions, achieving 3x revenue growth in 24 months.
             </p>
             
@@ -62,7 +62,7 @@ export default function StrategicRepositioningTechnology() {
       </section>
 
       {/* DZ10 Stats Section */}
-      <section className="py-16 bg-base border-t border-white/10">
+      <section className="py-16 bg-background border-t border-border">
         <div className="container px-4 md:px-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
             {[
@@ -80,7 +80,7 @@ export default function StrategicRepositioningTechnology() {
                 className="border-l-2 border-primary/50 pl-8"
               >
                 <div className="text-4xl md:text-5xl font-bold text-primary mb-2">{stat.metric}</div>
-                <div className="text-base text-white/70">{stat.label}</div>
+                <div className="text-base text-muted-foreground">{stat.label}</div>
               </motion.div>
             ))}
           </div>
@@ -88,7 +88,7 @@ export default function StrategicRepositioningTechnology() {
       </section>
 
       {/* DZ10 Sticky Navigation */}
-      <nav className="sticky top-20 bg-base text-white z-40 border-y border-white/10">
+      <nav className="sticky top-20 bg-background text-charcoal z-40 border-y border-border">
         <div className="container px-4 md:px-12">
           <div className="flex items-center gap-1">
             <a href="#challenge" className="px-6 py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">
@@ -123,7 +123,7 @@ export default function StrategicRepositioningTechnology() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-base/5 rounded-xl">
+            <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-charcoal/5 rounded-xl">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                   <Building2 className="w-6 h-6 text-primary" />
@@ -157,7 +157,7 @@ export default function StrategicRepositioningTechnology() {
       </section>
 
       {/* DZ10 Challenge Section */}
-      <section id="challenge" className="py-24 md:py-32 bg-primary">
+      <section id="challenge" className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -165,10 +165,10 @@ export default function StrategicRepositioningTechnology() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
               Navigating the Innovator's Dilemma
             </h2>
           </motion.div>
@@ -217,7 +217,7 @@ export default function StrategicRepositioningTechnology() {
       </section>
 
       {/* DZ10 Quote Section */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -228,16 +228,16 @@ export default function StrategicRepositioningTechnology() {
             <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "We knew we had to transform, but the path forward was unclear. Our existing business was still profitable, but we could see the cliff approaching. We needed a partner who could help us navigate this transition without destroying what we had built."
             </blockquote>
-            <div className="text-base text-white">
+            <div className="text-base text-charcoal">
               <div className="font-semibold">— Chief Executive Officer</div>
-              <div className="text-white/60">Enterprise Software Company</div>
+              <div className="text-muted-foreground">Enterprise Software Company</div>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* DZ10 Solution Section */}
-      <section id="solution" className="py-24 md:py-32 bg-primary">
+      <section id="solution" className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -245,10 +245,10 @@ export default function StrategicRepositioningTechnology() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Solution
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
               Comprehensive Strategic Repositioning
             </h2>
           </motion.div>
@@ -265,7 +265,7 @@ export default function StrategicRepositioningTechnology() {
             {/* Phase 1 */}
             <div className="flex gap-8">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center font-bold text-lg">
                   1
                 </div>
               </div>
@@ -295,7 +295,7 @@ export default function StrategicRepositioningTechnology() {
             {/* Phase 2 */}
             <div className="flex gap-8">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center font-bold text-lg">
                   2
                 </div>
               </div>
@@ -325,7 +325,7 @@ export default function StrategicRepositioningTechnology() {
             {/* Phase 3 */}
             <div className="flex gap-8">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center font-bold text-lg">
                   3
                 </div>
               </div>
@@ -355,7 +355,7 @@ export default function StrategicRepositioningTechnology() {
             {/* Phase 4 */}
             <div className="flex gap-8">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center font-bold text-lg">
                   4
                 </div>
               </div>
@@ -386,7 +386,7 @@ export default function StrategicRepositioningTechnology() {
       </section>
 
       {/* DZ10 Impact Section */}
-      <section id="impact" className="py-24 md:py-32 bg-primary">
+      <section id="impact" className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -394,10 +394,10 @@ export default function StrategicRepositioningTechnology() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Impact
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
               From Decline to High-Growth Leadership
             </h2>
           </motion.div>
@@ -413,15 +413,15 @@ export default function StrategicRepositioningTechnology() {
                 Revenue Growth
               </h3>
               <div className="space-y-4">
-                <div className="p-4 bg-base/5 rounded-xl">
+                <div className="p-4 bg-charcoal/5 rounded-xl">
                   <div className="text-2xl font-bold text-charcoal mb-1">$28M ARR</div>
                   <div className="text-sm text-charcoal/60">Up from $9M at transformation start</div>
                 </div>
-                <div className="p-4 bg-base/5 rounded-xl">
+                <div className="p-4 bg-charcoal/5 rounded-xl">
                   <div className="text-2xl font-bold text-charcoal mb-1">3x</div>
                   <div className="text-sm text-charcoal/60">Revenue growth in 24 months</div>
                 </div>
-                <div className="p-4 bg-base/5 rounded-xl">
+                <div className="p-4 bg-charcoal/5 rounded-xl">
                   <div className="text-2xl font-bold text-charcoal mb-1">85%</div>
                   <div className="text-sm text-charcoal/60">Revenue from subscriptions</div>
                 </div>
@@ -434,15 +434,15 @@ export default function StrategicRepositioningTechnology() {
                 Customer Success
               </h3>
               <div className="space-y-4">
-                <div className="p-4 bg-base/5 rounded-xl">
+                <div className="p-4 bg-charcoal/5 rounded-xl">
                   <div className="text-2xl font-bold text-charcoal mb-1">420</div>
                   <div className="text-sm text-charcoal/60">Total customers (up from 300)</div>
                 </div>
-                <div className="p-4 bg-base/5 rounded-xl">
+                <div className="p-4 bg-charcoal/5 rounded-xl">
                   <div className="text-2xl font-bold text-charcoal mb-1">92%</div>
                   <div className="text-sm text-charcoal/60">Net revenue retention</div>
                 </div>
-                <div className="p-4 bg-base/5 rounded-xl">
+                <div className="p-4 bg-charcoal/5 rounded-xl">
                   <div className="text-2xl font-bold text-charcoal mb-1">65%</div>
                   <div className="text-sm text-charcoal/60">Existing customers migrated</div>
                 </div>
@@ -455,15 +455,15 @@ export default function StrategicRepositioningTechnology() {
                 Market Position
               </h3>
               <div className="space-y-4">
-                <div className="p-4 bg-base/5 rounded-xl">
+                <div className="p-4 bg-charcoal/5 rounded-xl">
                   <div className="text-2xl font-bold text-charcoal mb-1">#2</div>
                   <div className="text-sm text-charcoal/60">Market position in cloud ERP</div>
                 </div>
-                <div className="p-4 bg-base/5 rounded-xl">
+                <div className="p-4 bg-charcoal/5 rounded-xl">
                   <div className="text-2xl font-bold text-charcoal mb-1">4.7/5</div>
                   <div className="text-sm text-charcoal/60">Customer satisfaction rating</div>
                 </div>
-                <div className="p-4 bg-base/5 rounded-xl">
+                <div className="p-4 bg-charcoal/5 rounded-xl">
                   <div className="text-2xl font-bold text-charcoal mb-1">3</div>
                   <div className="text-sm text-charcoal/60">Industry awards for innovation</div>
                 </div>
@@ -476,15 +476,15 @@ export default function StrategicRepositioningTechnology() {
                 Organizational Growth
               </h3>
               <div className="space-y-4">
-                <div className="p-4 bg-base/5 rounded-xl">
+                <div className="p-4 bg-charcoal/5 rounded-xl">
                   <div className="text-2xl font-bold text-charcoal mb-1">320</div>
                   <div className="text-sm text-charcoal/60">Employees (up from 220)</div>
                 </div>
-                <div className="p-4 bg-base/5 rounded-xl">
+                <div className="p-4 bg-charcoal/5 rounded-xl">
                   <div className="text-2xl font-bold text-charcoal mb-1">88%</div>
                   <div className="text-sm text-charcoal/60">Employee engagement score</div>
                 </div>
-                <div className="p-4 bg-base/5 rounded-xl">
+                <div className="p-4 bg-charcoal/5 rounded-xl">
                   <div className="text-2xl font-bold text-charcoal mb-1">$15M</div>
                   <div className="text-sm text-charcoal/60">Growth capital raised</div>
                 </div>
@@ -495,7 +495,7 @@ export default function StrategicRepositioningTechnology() {
       </section>
 
       {/* DZ10 Quote Section 2 */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -506,9 +506,9 @@ export default function StrategicRepositioningTechnology() {
             <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "This transformation saved our company. We went from watching our market share erode to becoming a growth leader in our space. The NexDyne team helped us navigate incredibly complex strategic, technical, and organizational challenges."
             </blockquote>
-            <div className="text-base text-white">
+            <div className="text-base text-charcoal">
               <div className="font-semibold">— Chief Executive Officer</div>
-              <div className="text-white/60">Enterprise Software Company</div>
+              <div className="text-muted-foreground">Enterprise Software Company</div>
             </div>
           </motion.div>
         </div>
@@ -559,7 +559,7 @@ export default function StrategicRepositioningTechnology() {
       </section>
 
       {/* DZ10 Related Cases Section */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -568,10 +568,10 @@ export default function StrategicRepositioningTechnology() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white">More success stories</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -607,10 +607,10 @@ export default function StrategicRepositioningTechnology() {
                     />
                   </div>
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-white/60 mt-2">{item.description}</p>
+                  <p className="text-muted-foreground mt-2">{item.description}</p>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
                     Read case study <ArrowRight className="w-3 h-3" />
                   </span>
@@ -621,7 +621,7 @@ export default function StrategicRepositioningTechnology() {
 
           <div className="text-center mt-16">
             <Link href="/cases">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
+              <Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to all case studies
               </Button>

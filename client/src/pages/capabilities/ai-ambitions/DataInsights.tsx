@@ -86,7 +86,7 @@ export default function DataInsights() {
       {/* Hero Banner - Bain Style Red Gradient */}
       <section className="relative w-full pt-20">
         <div className="relative h-[350px] md:h-[400px] overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-destructive via-destructive to-base">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary to-background">
             <div className="absolute inset-0 opacity-30">
               <svg className="w-full h-full" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice">
                 <defs>
@@ -103,7 +103,7 @@ export default function DataInsights() {
 
           <div className="relative z-10 container h-full flex flex-col justify-center px-6 md:px-12">
             <Link href="/capabilities/artificial-intelligence">
-              <span className="inline-flex items-center text-white/80 hover:text-white text-sm mb-6 cursor-pointer transition-colors">
+              <span className="inline-flex items-center text-muted-foreground hover:text-white text-sm mb-6 cursor-pointer transition-colors">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Artificial Intelligence
               </span>
@@ -112,7 +112,7 @@ export default function DataInsights() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white max-w-4xl leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal max-w-4xl leading-tight"
             >
               Unlock insights from your data
             </motion.h1>
@@ -120,7 +120,7 @@ export default function DataInsights() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-xl text-white/90 mt-4 max-w-2xl"
+              className="text-xl text-charcoal/90 mt-4 max-w-2xl"
             >
               See how leading companies are turning data into competitive advantage.
             </motion.p>
@@ -149,13 +149,13 @@ export default function DataInsights() {
                   />
                   {study.hasVideo && (
                     <div className="absolute top-4 left-4 w-12 h-12 bg-white/90 rounded-full flex items-center justify-center">
-                      <Play className="w-5 h-5 text-destructive fill-current ml-1" />
+                      <Play className="w-5 h-5 text-primary fill-current ml-1" />
                     </div>
                   )}
                 </div>
                 <div>
-                  <span className="text-destructive text-sm font-medium">{study.industry}</span>
-                  <h3 className="text-xl md:text-2xl font-bold text-charcoal mt-2 mb-3 leading-tight group-hover:text-destructive transition-colors">
+                  <span className="text-primary text-sm font-medium">{study.industry}</span>
+                  <h3 className="text-xl md:text-2xl font-bold text-charcoal mt-2 mb-3 leading-tight group-hover:text-primary transition-colors">
                     {study.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed mb-4">{study.description}</p>
@@ -169,7 +169,7 @@ export default function DataInsights() {
 
       {/* Our AI Consulting Services Banner */}
       <section className="relative py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-base via-base to-base">
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background to-background">
           <div className="absolute inset-0 opacity-20">
             <svg className="w-full h-full" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid slice">
               <path d="M0,150 Q300,50 600,150 T1200,150" fill="none" stroke="rgba(255,255,255,0.2)" strokeWidth="2"/>
@@ -178,7 +178,7 @@ export default function DataInsights() {
         </div>
         <div className="relative z-10 container px-6 md:px-12">
           <Link href="/capabilities/artificial-intelligence">
-            <span className="inline-flex items-center text-white text-xl md:text-2xl font-medium cursor-pointer group">
+            <span className="inline-flex items-center text-charcoal text-xl md:text-2xl font-medium cursor-pointer group">
               Our AI Consulting Services
               <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform" />
             </span>
@@ -210,8 +210,8 @@ export default function DataInsights() {
                 <div className="relative aspect-[4/3] overflow-hidden mb-4">
                   <img src={insight.image} alt={insight.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
-                <span className="text-destructive text-sm font-medium">{insight.category}</span>
-                <h3 className="text-lg font-bold text-charcoal mt-2 mb-2 leading-tight group-hover:text-destructive transition-colors">
+                <span className="text-primary text-sm font-medium">{insight.category}</span>
+                <h3 className="text-lg font-bold text-charcoal mt-2 mb-2 leading-tight group-hover:text-primary transition-colors">
                   {insight.title}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{insight.description}</p>
@@ -231,7 +231,7 @@ export default function DataInsights() {
             Let's discuss how advanced analytics and AI can help you make better decisions faster.
           </p>
           <Link href="/contact">
-            <span className="inline-flex items-center px-8 py-4 bg-destructive text-white font-semibold rounded hover:bg-destructive transition-colors cursor-pointer">
+            <span className="inline-flex items-center px-8 py-4 bg-primary text-charcoal font-semibold rounded hover:bg-primary transition-colors cursor-pointer">
               Contact Us
               <ArrowRight className="w-5 h-5 ml-2" />
             </span>

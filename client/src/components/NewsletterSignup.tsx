@@ -69,7 +69,7 @@ export default function NewsletterSignup() {
         </form>
         
         {message && (
-          <p className={`mt-4 text-sm ${status === "error" ? "text-red-200" : "text-cyan-200"}`}>
+          <p className={`mt-4 text-sm ${status === "error" ? "text-primary" : "text-cyan-200"}`}>
             {message}
           </p>
         )}

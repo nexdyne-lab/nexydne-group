@@ -143,7 +143,7 @@ export default function CustomerInsights() {
         backgroundImage="/customer-intelligence-hero.57680a35.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
-        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"
+        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-charcoal leading-[1.05] mb-6"
         containerClassName="h-[70vh] min-h-[500px] sm:min-h-[560px] lg:min-h-[640px]"
       />
 
@@ -202,7 +202,7 @@ export default function CustomerInsights() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {phases.map((phase, i) => (
               <motion.div
                 key={i}
@@ -282,7 +282,7 @@ export default function CustomerInsights() {
       </section>
 
       {/* SLOT 5 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment, Pattern 2) */}
-      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+      <section className="bg-background text-primary-foreground py-24 md:py-32">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -386,7 +386,7 @@ export default function CustomerInsights() {
             </h3>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {siblings.map((offering, i) => (
               <motion.div
                 key={i}

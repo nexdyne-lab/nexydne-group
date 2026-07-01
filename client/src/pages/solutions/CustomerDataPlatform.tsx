@@ -139,7 +139,7 @@ export default function CustomerDataPlatform() {
       {/* Quote Section */}
       <section className="py-20 md:py-28 bg-white">
         <div className="container max-w-4xl">
-          <blockquote className="text-3xl md:text-4xl font-bold text-red-900 leading-relaxed mb-8">
+          <blockquote className="text-3xl md:text-4xl font-bold text-primary leading-relaxed mb-8">
             "Our data linking expertise delivers personalized, real-time interactions that enhance the customer experience and unlock growth opportunities."
           </blockquote>
           <p className="text-lg text-muted-foreground">

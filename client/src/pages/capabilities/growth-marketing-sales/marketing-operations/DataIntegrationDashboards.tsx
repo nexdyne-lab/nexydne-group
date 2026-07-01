@@ -12,7 +12,7 @@ export default function DataIntegrationDashboards() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-base text-white pt-32 pb-20 px-4 relative overflow-hidden">
+      <section className="bg-background text-charcoal pt-32 pb-20 px-4 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-20">
           <div className="absolute bottom-0 right-0 w-full h-1/2 bg-gradient-to-t from-emerald-900 to-transparent"></div>
           <div className="absolute top-20 right-1/4 w-64 h-64 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
@@ -102,14 +102,14 @@ export default function DataIntegrationDashboards() {
                     <div className="flex items-center justify-center py-2">
                       <Layers className="w-6 h-6 text-muted-foreground/70" />
                     </div>
-                    <div className="p-4 sm:p-5 md:p-6 bg-base rounded-lg text-white text-center">
+                    <div className="p-4 sm:p-5 md:p-6 bg-background rounded-lg text-charcoal text-center">
                       <h4 className="font-bold text-lg mb-1">Unified Data Warehouse</h4>
                       <p className="text-xs text-blue-200">Snowflake / BigQuery / Redshift</p>
                     </div>
                     <div className="flex items-center justify-center py-2">
                       <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 text-muted-foreground/70 -rotate-90" />
                     </div>
-                    <div className="p-4 bg-emerald-600 rounded-lg text-white text-center shadow-lg">
+                    <div className="p-4 bg-emerald-600 rounded-lg text-charcoal text-center shadow-lg">
                       <h4 className="font-bold">Executive Dashboard</h4>
                       <p className="text-xs opacity-90">Real-time ROI Visualization</p>
                     </div>
@@ -162,7 +162,7 @@ export default function DataIntegrationDashboards() {
             Transform your marketing data into a strategic asset for growth.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-4 bg-emerald-600 text-white rounded-lg font-bold text-lg hover:bg-emerald-700 transition-colors shadow-lg">
+            <button className="px-8 py-4 bg-emerald-600 text-charcoal rounded-lg font-bold text-lg hover:bg-emerald-700 transition-colors shadow-lg">
               Build Your Intelligence Platform
             </button>
           </Link>

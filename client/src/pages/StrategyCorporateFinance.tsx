@@ -346,7 +346,7 @@ export default function StrategyCorporateFinance() {
         leadTitle:
           "Head of Strategy & Corporate Finance, NexDyne Consulting Group",
         leadPhoto:
-          "https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/BIZXaFVVaVqquVZA.png",
+          "/images/ai-team-collaboration.jpg",
         leadEmail: "strategy@nexdyne.tech",
         leadLinkedinUrl: "https://www.linkedin.com/company/nexdyne",
       }}

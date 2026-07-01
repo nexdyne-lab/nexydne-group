@@ -12,7 +12,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function DueDiligenceChecklist() {
   return (
-    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="The Investor Due Diligence Checklist: What to Prepare | NexDyne Technologies" 
         description="Due diligence can make or break fundraising momentum. Learn what to prepare for comprehensive investor evaluation."
@@ -24,7 +24,7 @@ export default function DueDiligenceChecklist() {
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background"></div>
         
         <div className="container relative z-10 px-4 md:px-12 max-w-4xl">
           <Link href="/insights" className="inline-flex items-center gap-2 text-primary hover:text-primary/80 mb-8 transition-colors">
@@ -38,15 +38,15 @@ export default function DueDiligenceChecklist() {
             transition={{ duration: 0.8 }}
           >
             <div className="flex flex-wrap gap-4 mb-6">
-              <span className="inline-flex items-center gap-2 text-sm text-white/60">
+              <span className="inline-flex items-center gap-2 text-sm text-muted-foreground">
                 <Tag className="w-4 h-4 text-primary" />
                 Capital Raising
               </span>
-              <span className="inline-flex items-center gap-2 text-sm text-white/60">
+              <span className="inline-flex items-center gap-2 text-sm text-muted-foreground">
                 <Calendar className="w-4 h-4 text-primary" />
                 December 14, 2025
               </span>
-              <span className="inline-flex items-center gap-2 text-sm text-white/60">
+              <span className="inline-flex items-center gap-2 text-sm text-muted-foreground">
                 <Clock className="w-4 h-4 text-primary" />
                 13 min read
               </span>
@@ -56,7 +56,7 @@ export default function DueDiligenceChecklist() {
               The Investor <span className="text-primary">Due Diligence</span> Checklist
             </h1>
             
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed">
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
               Due diligence can make or break fundraising momentum. Companies that prepare comprehensive documentation before starting conversations close rounds faster and maintain better negotiating positions throughout the process.
             </p>
           </motion.div>
@@ -64,7 +64,7 @@ export default function DueDiligenceChecklist() {
       </section>
 
       {/* Featured Image */}
-      <div className="w-full h-96 bg-base overflow-hidden">
+      <div className="w-full h-96 bg-background overflow-hidden">
         <img 
           src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80" 
           alt="Due Diligence Preparation" 
@@ -132,7 +132,7 @@ export default function DueDiligenceChecklist() {
               Organize all formation documents, including articles of incorporation, bylaws, and board resolutions. Compile all financing documents from previous rounds with associated rights and preferences. Gather employment agreements for all team members, with particular attention to IP assignment clauses. Document any outstanding litigation, regulatory inquiries, or compliance issues.
             </p>
 
-            <div className="bg-base/5 border-l-4 border-base/30 p-6 my-8 rounded-r-xl">
+            <div className="bg-charcoal/5 border-l-4 border-border p-6 my-8 rounded-r-xl">
               <h3 className="text-xl font-bold text-charcoal mb-4">Legal Documents to Prepare</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Corporate formation:</strong> Certificate of incorporation, bylaws, board minutes</li>
@@ -208,7 +208,7 @@ export default function DueDiligenceChecklist() {
               Set up your data room using a professional virtual data room provider like DocSend, Carta, or Datasite. These platforms provide access controls, tracking analytics, and professional presentation. Avoid using Dropbox or Google Drive for sensitive diligence materials—they lack the security and professionalism investors expect.
             </p>
 
-            <div className="bg-base/5 border-l-4 border-base/30 p-6 my-8 rounded-r-xl">
+            <div className="bg-charcoal/5 border-l-4 border-border p-6 my-8 rounded-r-xl">
               <h3 className="text-xl font-bold text-charcoal mb-4">Data Room Organization Structure</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>1. Company Overview:</strong> Pitch deck, executive summary, company history</li>
@@ -261,14 +261,14 @@ export default function DueDiligenceChecklist() {
       </article>
 
       {/* Newsletter Subscribe */}
-      <div className="bg-base py-16 border-t border-white/10">
+      <div className="bg-background py-16 border-t border-border">
         <div className="container max-w-3xl px-4 md:px-12">
           <NewsletterSubscribe />
         </div>
       </div>
 
       {/* Related Insights */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -277,10 +277,10 @@ export default function DueDiligenceChecklist() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Related Insights
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white">Continue reading</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">Continue reading</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -307,10 +307,10 @@ export default function DueDiligenceChecklist() {
               >
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.category}</span>
-                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-white/60 mt-2">{item.description}</p>
+                  <p className="text-muted-foreground mt-2">{item.description}</p>
                   <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
                     Read article <ArrowRight className="w-3 h-3" />
                   </span>
