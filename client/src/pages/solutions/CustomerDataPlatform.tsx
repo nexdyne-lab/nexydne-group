@@ -10,13 +10,13 @@ export default function CustomerDataPlatform() {
       <Navigation />
       
       {/* Hero Section - Maroon Background */}
-      <section className="relative bg-gradient-to-br from-primary via-primary to-primary text-white nx-section">
+      <section className="relative bg-charcoal text-white nx-section">
         <div className="container">
           <div className="mb-8">
             <div className="flex items-center gap-2 text-sm opacity-90">
-              <Link href="/"><a className="hover:underline">Services</a></Link>
+              <Link href="/"><span className="hover:underline cursor-pointer">Services</span></Link>
               <span>/</span>
-              <Link href="/solutions/personalization"><a className="hover:underline">Personalization</a></Link>
+              <Link href="/solutions/personalization"><span className="hover:underline cursor-pointer">Personalization</span></Link>
               <span>/</span>
               <span>Customer data platform (CDP)</span>
             </div>
@@ -52,7 +52,7 @@ export default function CustomerDataPlatform() {
                 />
               </div>
               <h3 className="text-xl font-bold text-charcoal mb-2">Do you want to know more?</h3>
-              <button className="border-2 border-white/10 text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-charcoal hover:text-white transition-colors">
+              <button className="border-2 border-charcoal/20 text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-charcoal hover:text-white transition-colors">
                 Ask Marcus Rivera
               </button>
             </div>
@@ -162,7 +162,7 @@ export default function CustomerDataPlatform() {
       </section>
 
       {/* CTA Section with Profile Photo */}
-      <section className="nx-section bg-gradient-to-br from-primary via-primary to-primary/5">
+      <section className="nx-section bg-off-white">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
@@ -183,7 +183,7 @@ export default function CustomerDataPlatform() {
                 <button className="bg-charcoal text-white px-8 py-3 rounded-full font-semibold hover:bg-charcoal transition-colors">
                   Get in touch
                 </button>
-                <button className="border-2 border-white/10 text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-charcoal hover:text-white transition-colors flex items-center gap-2">
+                <button className="border-2 border-charcoal/20 text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-charcoal hover:text-white transition-colors flex items-center gap-2">
                   Schedule a meeting
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -236,7 +236,7 @@ export default function CustomerDataPlatform() {
             <p className="text-lg text-muted-foreground mb-8">
               With these partners we realize our personalization solutions
             </p>
-            <button className="border-2 border-white/10 text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-charcoal hover:text-white transition-colors">
+            <button className="border-2 border-charcoal/20 text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-charcoal hover:text-white transition-colors">
               All partners
             </button>
           </div>

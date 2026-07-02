@@ -8,7 +8,7 @@ export default function PerformanceImprovementFramework() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary via-primary to-primary text-white py-20">
+      <section className="relative bg-charcoal text-white py-20">
         <div className="container max-w-4xl">
           <Link href="/services/strategy-corporate-finance">
             <Button variant="ghost" className="text-white hover:text-white/80 mb-8 -ml-4">

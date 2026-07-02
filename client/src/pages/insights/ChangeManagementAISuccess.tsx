@@ -21,9 +21,9 @@ export default function ChangeManagementAISuccess() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-primary via-primary to-primary">
+      <section className="pt-32 pb-16 bg-charcoal">
         <div className="container px-4 md:px-6">
-          <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center text-primary hover:text-white mb-8 transition-colors">
+          <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center text-white/70 hover:text-white mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to AI & Technology Consulting
           </Link>
@@ -33,11 +33,11 @@ export default function ChangeManagementAISuccess() {
               <span className="px-3 py-1 bg-primary text-white text-xs font-semibold uppercase tracking-wider rounded">
                 Article
               </span>
-              <div className="flex items-center text-primary text-sm">
+              <div className="flex items-center text-white/60 text-sm">
                 <Clock className="w-4 h-4 mr-1" />
                 10 min read
               </div>
-              <div className="flex items-center text-primary text-sm">
+              <div className="flex items-center text-white/60 text-sm">
                 <Calendar className="w-4 h-4 mr-1" />
                 January 2026
               </div>
@@ -56,7 +56,7 @@ export default function ChangeManagementAISuccess() {
               initial="hidden"
               animate="visible"
               variants={fadeInUp}
-              className="text-xl text-primary leading-relaxed"
+              className="text-xl text-white/80 leading-relaxed"
             >
               Technology is the easy part. The human element—adoption, behavior change, cultural alignment—determines whether AI investments deliver returns or become expensive shelfware.
             </motion.p>
@@ -65,10 +65,10 @@ export default function ChangeManagementAISuccess() {
       </section>
 
       {/* Key Statistic */}
-      <section className="py-12 bg-primary/5">
+      <section className="py-12 bg-off-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="text-6xl font-bold text-charcoal mb-4">70%</div>
+            <div className="text-6xl font-bold text-primary mb-4">70%</div>
             <p className="text-xl text-charcoal/80">
               of AI and automation projects fail to deliver expected value—not because of technology limitations, but because of inadequate change management.
             </p>

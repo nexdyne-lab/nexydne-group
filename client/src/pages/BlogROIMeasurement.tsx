@@ -33,17 +33,17 @@ export default function BlogROIMeasurement() {
           
           {/* Stats Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:p-5 md:p-6 mb-6 sm:mb-8 md:mb-12">
-            <div className="bg-gradient-to-br from-primary to-primary p-4 sm:p-5 md:p-6 rounded-lg border border-primary">
+            <div className="bg-off-white p-4 sm:p-5 md:p-6 rounded-lg border border-charcoal/10">
               <div className="text-4xl font-bold text-primary mb-2">280%</div>
               <div className="text-sm font-semibold text-charcoal mb-1">Average ROI</div>
               <div className="text-xs text-muted-foreground">Tier 1 projects over 18 months</div>
             </div>
-            <div className="bg-gradient-to-br from-primary to-primary p-4 sm:p-5 md:p-6 rounded-lg border border-primary">
+            <div className="bg-off-white p-4 sm:p-5 md:p-6 rounded-lg border border-charcoal/10">
               <div className="text-4xl font-bold text-primary mb-2">4.2x</div>
               <div className="text-sm font-semibold text-charcoal mb-1">Payback Multiple</div>
               <div className="text-xs text-muted-foreground">By month 24 for successful deployments</div>
             </div>
-            <div className="bg-gradient-to-br from-primary to-primary p-4 sm:p-5 md:p-6 rounded-lg border border-primary">
+            <div className="bg-off-white p-4 sm:p-5 md:p-6 rounded-lg border border-charcoal/10">
               <div className="text-4xl font-bold text-primary mb-2">9-14</div>
               <div className="text-sm font-semibold text-charcoal mb-1">Months to Breakeven</div>
               <div className="text-xs text-muted-foreground">Typical for $45K-$85K investments</div>
@@ -225,7 +225,7 @@ export default function BlogROIMeasurement() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-primary to-primary border-l-4 border-primary p-4 sm:p-6 md:p-8 rounded-lg mb-5 sm:mb-6 md:mb-8">
+          <div className="bg-off-white border-l-4 border-primary p-4 sm:p-6 md:p-8 rounded-lg mb-5 sm:mb-6 md:mb-8">
             <h3 className="text-2xl font-bold text-charcoal mb-4">The hidden costs that reduce ROI</h3>
             <p className="text-charcoal/80 leading-relaxed mb-4">
               Honest ROI calculation includes ongoing costs that many vendors don't mention upfront:

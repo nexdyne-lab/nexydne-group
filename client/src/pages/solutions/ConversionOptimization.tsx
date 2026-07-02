@@ -11,7 +11,7 @@ export default function ConversionOptimization() {
     <div className="min-h-screen bg-white">
       <Navigation />
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary via-primary to-primary text-white py-20">
+      <section className="bg-charcoal text-white py-20">
         <div className="container">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm mb-8 text-white/80">
@@ -452,7 +452,7 @@ export default function ConversionOptimization() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-32 bg-gradient-to-br from-primary via-primary to-primary text-white overflow-hidden">
+      <section className="relative py-32 bg-charcoal text-white overflow-hidden">
         {/* Curved Divider Top */}
         <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
           <svg className="relative block w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">

@@ -10,13 +10,13 @@ export default function EcommercePlatforms() {
       <Navigation />
       
       {/* Hero Section - Maroon Background */}
-      <section className="relative bg-gradient-to-br from-primary via-primary to-primary text-white nx-section">
+      <section className="relative bg-charcoal text-white nx-section">
         <div className="container">
           <div className="mb-8">
             <div className="flex items-center gap-2 text-sm opacity-90">
-              <Link href="/"><a className="hover:underline">Services</a></Link>
+              <Link href="/"><span className="hover:underline cursor-pointer">Services</span></Link>
               <span>/</span>
-              <Link href="/solutions/business-growth"><a className="hover:underline">Accelerating Business Growth</a></Link>
+              <Link href="/solutions/business-growth"><span className="hover:underline cursor-pointer">Accelerating Business Growth</span></Link>
               <span>/</span>
               <span>E-commerce platforms</span>
             </div>
@@ -52,7 +52,7 @@ export default function EcommercePlatforms() {
                 />
               </div>
               <h3 className="text-xl font-bold text-charcoal mb-2">Want to know more?</h3>
-              <button className="border-2 border-white/10 text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-charcoal hover:text-white transition-colors">
+              <button className="border-2 border-charcoal/20 text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-charcoal hover:text-white transition-colors">
                 Ask James Wilson
               </button>
             </div>

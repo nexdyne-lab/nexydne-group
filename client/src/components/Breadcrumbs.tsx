@@ -287,9 +287,9 @@ export default function Breadcrumbs({ className, variant = "light" }: Breadcrumb
   return (
     <nav className={cn("flex items-center text-sm mb-6 overflow-x-auto whitespace-nowrap pb-2", className)}>
       <Link href="/">
-        <a className={cn("transition-colors flex items-center", homeIconColor)}>
+        <span className={cn("transition-colors flex items-center cursor-pointer", homeIconColor)}>
           <Home className="w-3 h-3 sm:w-4 sm:h-4" />
-        </a>
+        </span>
       </Link>
       
       {breadcrumbs.map((item, index) => (
@@ -299,9 +299,9 @@ export default function Breadcrumbs({ className, variant = "light" }: Breadcrumb
             <span className={cn("font-medium", activeColor)}>{item.name}</span>
           ) : (
             <Link href={item.path}>
-              <a className={cn("transition-colors", textColor)}>
+              <span className={cn("transition-colors cursor-pointer", textColor)}>
                 {item.name}
-              </a>
+              </span>
             </Link>
           )}
         </div>
