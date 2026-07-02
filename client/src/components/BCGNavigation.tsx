@@ -334,7 +334,7 @@ export default function BCGNavigation() {
                   placeholder="Type to search"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="flex-1 text-lg bg-transparent border-none outline-none placeholder-gray-400"
+                  className="flex-1 text-lg bg-transparent border-none outline-none focus:ring-2 focus:ring-primary/40 rounded placeholder-charcoal/40"
                 />
               </div>
             </div>

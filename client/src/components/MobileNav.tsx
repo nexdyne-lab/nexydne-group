@@ -40,7 +40,7 @@ function HamburgerButton({ isOpen, onClick, isScrolled }: HamburgerButtonProps) 
   return (
     <button
       onClick={onClick}
-      className="relative w-12 h-12 min-w-[48px] min-h-[48px] flex items-center justify-center focus:outline-none group touch-manipulation"
+      className="relative w-12 h-12 min-w-[48px] min-h-[48px] flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded-lg group touch-manipulation"
       aria-label={isOpen ? "Close menu" : "Open menu"}
       aria-expanded={isOpen}
     >
