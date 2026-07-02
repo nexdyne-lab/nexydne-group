@@ -15,7 +15,8 @@ export default function SustainabilityMeasurement() {
       serviceName="Sustainability Measurement"
       serviceSlug="sustainability-measurement"
       heroSubtitle="Build measurement frameworks that track environmental and business impact. Report progress credibly to stakeholders and regulators."
-      heroImage="https://images.unsplash.com/photo-1473773508845-188df298d2d1?w=1600&q=80"
+      heroImage="/images/industries/energy-wind.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Sustainability Measurement engagements delivered" },
@@ -70,14 +71,14 @@ export default function SustainabilityMeasurement() {
           title: "Consultancy unlocks 30 years of IP with AI knowledge graph",
           industry: "Professional Services · Green Growth",
           metric: "4x",
-          image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=80",
+          image: "/images/industries/energy-renewable-team.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "Law firm slashes contract review with secure GenAI",
           industry: "Legal Services · Green Growth",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1600&q=80",
+          image: "/images/industries/energy-powerplant.jpg",
         },
       ]}
       relatedServices={[

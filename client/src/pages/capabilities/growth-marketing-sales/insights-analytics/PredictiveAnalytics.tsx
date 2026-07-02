@@ -15,7 +15,8 @@ export default function PredictiveAnalytics() {
       serviceName="Predictive Analytics"
       serviceSlug="predictive-analytics"
       heroSubtitle="Build predictive models that forecast customer behavior. Implement propensity models, churn prediction, and demand forecasting."
-      heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&q=80"
+      heroImage="/images/capabilities/cap-hands-data.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Predictive Analytics engagements delivered" },
@@ -70,14 +71,14 @@ export default function PredictiveAnalytics() {
           title: "Health system unifies patient data for population analytics",
           industry: "Healthcare · Insights & Analytics",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
         {
           slug: "consulting-knowledge-management",
           title: "Consultancy unlocks 30 years of IP with AI knowledge graph",
           industry: "Professional Services · Insights & Analytics",
           metric: "4x",
-          image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=80",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

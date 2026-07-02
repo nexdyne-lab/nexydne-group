@@ -53,14 +53,14 @@ export default function CloudInfrastructure() {
           title: "Mid-Market Bank Migrates Core Workloads and Cuts Cloud Spend 41%",
           industry: "Financial Services",
           metric: "-41%",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "healthcare-data-analytics",
           title: "Health-Tech Vendor Lifts Deploy Frequency 4.2x with Platform Engineering",
           industry: "Healthcare",
           metric: "4.2x",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-circuit-green.jpg",
         },
       ]}
       relatedServices={[

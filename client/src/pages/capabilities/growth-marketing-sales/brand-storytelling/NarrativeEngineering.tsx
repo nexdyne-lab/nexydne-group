@@ -15,7 +15,8 @@ export default function NarrativeEngineering() {
       serviceName="Narrative Engineering"
       serviceSlug="narrative-engineering"
       heroSubtitle="A structured methodology for extracting the core technical truth of a product and reconstructing it as a compelling market narrative. We align product truth with market need to create defensible positioning."
-      heroImage="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1600&q=80"
+      heroImage="/images/capabilities/cap-woman-motion.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Narrative Engineering engagements delivered" },
@@ -70,14 +71,14 @@ export default function NarrativeEngineering() {
           title: "Provider boosts patient engagement with omnichannel touch",
           industry: "Healthcare · Brand & Storytelling",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "Telehealth provider scales virtual care platform",
           industry: "Healthcare · Brand & Storytelling",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-peacock.jpg",
         },
       ]}
       relatedServices={[

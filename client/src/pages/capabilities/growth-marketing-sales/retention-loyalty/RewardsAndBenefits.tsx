@@ -15,7 +15,8 @@ export default function RewardsAndBenefits() {
       serviceName="Rewards & Benefits"
       serviceSlug="rewards-and-benefits"
       heroSubtitle="Design reward structures that motivate behavior. Create partnerships, experiences, and benefits that differentiate your program."
-      heroImage="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80"
+      heroImage="/images/capabilities/cap-office-women.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Rewards & Benefits engagements delivered" },
@@ -70,14 +71,14 @@ export default function RewardsAndBenefits() {
           title: "Provider boosts patient engagement with omnichannel touch",
           industry: "Healthcare · Retention & Loyalty",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&q=80",
+          image: "/images/capabilities/cap-peacock.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth manager personalizes onboarding for HNW clients",
           industry: "Wealth Management · Retention & Loyalty",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-diverse-team.jpg",
         },
       ]}
       relatedServices={[

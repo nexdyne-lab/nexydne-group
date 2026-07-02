@@ -7,7 +7,7 @@ export function ManufacturingAcquisition() {
       industry="Manufacturing · Strategy & Finance"
       title="Strategic Acquisition Doubles Market Presence"
       subtitle="How a manufacturing company identified, acquired, and integrated a competitor to achieve market leadership."
-      heroImage="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1600&q=80"
+      heroImage="/images/industries/mfg-robot-arm-team.jpg"
       challenge={`The company had grown organically for 25 years but was losing market share to larger competitors with broader capabilities. The founder wanted to accelerate growth through acquisition but had no M&A experience.
 
 A 180-employee precision manufacturing company serving the aerospace and defense industry with $45M in annual revenue and a strong quality reputation needed expanded capabilities in CNC machining, geographic presence on the West Coast to reduce shipping costs for key customers, and capacity to handle larger orders that were currently being declined. The strategic rationale was clear; the execution pathway was not.`}

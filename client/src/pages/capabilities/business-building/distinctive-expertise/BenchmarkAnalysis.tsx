@@ -15,7 +15,8 @@ export default function BenchmarkAnalysis() {
       serviceName="Benchmark Analysis"
       serviceSlug="benchmark-analysis"
       heroSubtitle="We compare your performance against our database of similar transformations, identifying gaps and opportunities."
-      heroImage="/images/distinctive-expertise-abstract.jpg"
+      heroImage="/images/capabilities/cap-colleagues.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Benchmark Analysis engagements delivered" },
@@ -70,14 +71,14 @@ export default function BenchmarkAnalysis() {
           title: "Financial Services Firm Enters Adjacent Market",
           industry: "Financial Services · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues.jpg",
         },
         {
           slug: "distributor-marketplace",
           title: "Regional Distributor Launches Digital Marketplace",
           industry: "Distribution · Business Building",
           metric: "$50M+",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-women-meeting.jpg",
         },
       ]}
       relatedServices={[

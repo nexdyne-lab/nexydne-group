@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceMergersAcquisitionsTargetIdentif
       serviceName="Target Identification"
       serviceSlug="target-identification"
       heroSubtitle="Systematic screening and evaluation of potential targets. Market mapping, competitor analysis, and opportunity assessment."
-      heroImage="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/deal-handshake.jpg"
       experienceStats={[
         { number: "100+", label: "Mergers & Acquisitions engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,21 +52,21 @@ export default function StrategyCorporateFinanceMergersAcquisitionsTargetIdentif
           title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
           industry: "Professional Services · Strategy",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80",
+          image: "/images/industries/fin-handshake-city.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Scales Cross-Border Payments With Intelligent Automation",
           industry: "Financial Services · Strategy",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?w=1600&q=80",
+          image: "/images/industries/meeting-topview.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
           industry: "Professional Services · Strategy",
           metric: "85%",
-          image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&q=80",
+          image: "/images/capabilities/cap-aerial-grid.jpg",
         },
       ]}
       relatedServices={[

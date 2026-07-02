@@ -7,7 +7,7 @@ export function SoftwareCodingAssistant() {
       industry="Technology · AI & Machine Learning"
       title="Tech Giant Boosts Developer Productivity 40% with GenAI"
       subtitle="Custom-trained coding assistants automated boilerplate code and unit testing, allowing engineers to focus on complex architecture."
-      heroImage="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1600&q=80"
+      heroImage="/images/industries/energy-wind.jpg"
       challenge={`A leading enterprise software company was facing a slowdown in feature delivery. Their codebase was massive and complex, requiring significant time for new engineers to onboard. Senior developers spent up to 30% of their time writing repetitive boilerplate code and unit tests, distracting them from high-value architectural work.
 
 They wanted to leverage Generative AI to accelerate development but needed a solution that understood their proprietary frameworks and coding standards, which off-the-shelf tools couldn't provide.`}

@@ -15,7 +15,8 @@ export default function ConsumerMarketingAnalytics() {
       serviceName="Consumer Marketing Analytics"
       serviceSlug="consumer-marketing-analytics"
       heroSubtitle="Leverage advanced analytics to understand customer behavior, predict intent, and personalize experiences. Build segmentation and targeting capabilities."
-      heroImage="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1600&q=80"
+      heroImage="/images/capabilities/cap-woman-motion.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Consumer Marketing Analytics engagements delivered" },
@@ -70,14 +71,14 @@ export default function ConsumerMarketingAnalytics() {
           title: "Fintech scales payment ops with intelligent automation",
           industry: "Fintech · Digital Marketing",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "Telehealth provider scales virtual care platform",
           industry: "Healthcare · Digital Marketing",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-hologram.jpg",
         },
       ]}
       relatedServices={[

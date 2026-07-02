@@ -15,7 +15,8 @@ export default function InternationalExpansion() {
       serviceName="International Expansion"
       serviceSlug="international-expansion"
       heroSubtitle="Take your business global. Market entry strategy, localization, regulatory navigation, and local team building."
-      heroImage="/images/growth-scaling-abstract.jpg"
+      heroImage="/images/capabilities/cap-lightbulb-idea.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "International Expansion engagements delivered" },
@@ -70,14 +71,14 @@ export default function InternationalExpansion() {
           title: "Regional Distributor Launches Digital Marketplace",
           industry: "Distribution · Business Building",
           metric: "$50M+",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
         {
           slug: "manufacturer-dtc",
           title: "Manufacturer Creates Direct-to-Consumer Channel",
           industry: "Manufacturing · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=80",
+          image: "/images/capabilities/cap-woman-motion.jpg",
         },
       ]}
       relatedServices={[

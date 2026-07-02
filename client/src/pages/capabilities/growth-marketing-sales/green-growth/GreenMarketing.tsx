@@ -15,7 +15,8 @@ export default function GreenMarketing() {
       serviceName="Green Marketing"
       serviceSlug="green-marketing"
       heroSubtitle="Develop marketing strategies that communicate sustainability authentically. Avoid greenwashing while building brand equity through ESG leadership."
-      heroImage="https://images.unsplash.com/photo-1473773508845-188df298d2d1?w=1600&q=80"
+      heroImage="/images/capabilities/cap-wave.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Green Marketing engagements delivered" },
@@ -70,14 +71,14 @@ export default function GreenMarketing() {
           title: "Consultancy unlocks 30 years of IP with AI knowledge graph",
           industry: "Professional Services · Green Growth",
           metric: "4x",
-          image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=80",
+          image: "/images/industries/energy-solar.jpg",
         },
         {
           slug: "legal-document-intelligence",
           title: "In-house legal team builds doc intelligence platform",
           industry: "Legal Services · Green Growth",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/industries/energy-wind.jpg",
         },
       ]}
       relatedServices={[

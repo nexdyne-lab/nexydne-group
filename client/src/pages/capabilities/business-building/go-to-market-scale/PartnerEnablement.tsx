@@ -15,7 +15,8 @@ export default function PartnerEnablement() {
       serviceName="Partner Enablement"
       serviceSlug="partner-enablement"
       heroSubtitle="We build comprehensive partner programs including training, co-marketing resources, and deal-registration systems."
-      heroImage="/images/go-to-market-abstract.jpg"
+      heroImage="/images/industries/colleagues-walking.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Partner Enablement engagements delivered" },
@@ -70,7 +71,7 @@ export default function PartnerEnablement() {
           title: "Regional Distributor Launches Digital Marketplace",
           industry: "Distribution · Business Building",
           metric: "$50M+",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/industries/deal-handshake.jpg",
         },
       ]}
       relatedServices={[

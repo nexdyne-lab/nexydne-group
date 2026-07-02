@@ -7,7 +7,7 @@ export function FintechDataPipeline() {
       industry="Fintech · Data Engineering"
       title="Fintech Scales Real-Time Transaction Processing"
       subtitle="Payment processor builds Kafka streaming pipeline handling 50,000 transactions per second with 99.99% uptime and sub-100ms latency."
-      heroImage="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       challenge={`A rapidly growing payment processing company serving 2,500 merchants across the United States faced a critical infrastructure bottleneck. Their legacy batch-based transaction processing system could only handle 5,000 transactions per second during peak hours. As merchant volume grew 300% year-over-year, the system began experiencing frequent outages, delayed settlements, and data inconsistencies that threatened customer trust and regulatory compliance.
 
 The internal engineering team of 8 people lacked specialized expertise in distributed streaming architectures and real-time data processing. They needed to rebuild their entire transaction pipeline to handle 10x current volume while maintaining PCI-DSS compliance, implementing fraud detection in real-time, and providing merchants with instant transaction visibility.`}

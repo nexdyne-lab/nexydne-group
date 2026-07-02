@@ -11,7 +11,8 @@ export default function PublicSectorIndustry() {
       industry="Public Sector"
       slug="public-sector"
       heroSubtitle="We help federal, state, and local government leaders deliver more capability with the resources they have — using digital service design, back-office automation, and data and AI capabilities tuned to the realities of public-sector procurement and accountability."
-      heroImage="/case-study-government.03f0e049.png"
+      heroImage="/images/industries/people-commute.jpg"
+      heroFocal="58% 45%"
       povParagraphs={[
         "Government faces unprecedented pressure. Aging infrastructure, workforce constraints, and rising citizen expectations are forcing agencies to do more with less. At the same time, technology is creating real opportunity — to redesign service delivery, lift operational efficiency, and ground decision-making in better data.",
         "We partner with agencies at every level — federal, state, county, and city — to build the digital capabilities transformation requires. From citizen-facing digital services to back-office automation, our work helps agencies improve service while protecting the procurement, accessibility, and accountability obligations the public sector runs on.",
@@ -76,21 +77,21 @@ export default function PublicSectorIndustry() {
           title: "Transforming knowledge management for a global consulting firm",
           industry: "Professional Services",
           metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg"
+          image: "/images/industries/transport-traffic.jpg"
         },
         {
           slug: "bank-process-automation",
           title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
           industry: "Financial Services",
           metric: "10K+ hrs",
-          image: "/case-banker-meeting.c53f3999.jpg"
+          image: "/images/industries/colleagues-walking.jpg"
         },
         {
           slug: "healthcare-data-analytics",
           title: "Unlocking healthcare insights with real-time data analytics",
           industry: "Healthcare",
           metric: "25%",
-          image: "/case-healthcare-team.5797392b.jpg"
+          image: "/images/industries/biz-team-bright.jpg"
         }
       ]}
     />

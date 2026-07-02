@@ -15,7 +15,8 @@ export default function OrganicGrowth() {
       serviceName="Organic Growth"
       serviceSlug="organic-growth"
       heroSubtitle="Accelerate organic growth through customer acquisition, retention, and expansion. Build sustainable growth engines that compound over time."
-      heroImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80"
+      heroImage="/images/industries/team-strategy-board.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Organic Growth engagements delivered" },
@@ -70,14 +71,14 @@ export default function OrganicGrowth() {
           title: "Fintech scales payment ops with intelligent automation",
           industry: "Fintech · Growth Strategy",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/capabilities/cap-chess.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "Telehealth provider scales virtual care platform",
           industry: "Healthcare · Growth Strategy",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
         },
       ]}
       relatedServices={[

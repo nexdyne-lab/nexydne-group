@@ -7,7 +7,7 @@ export function EnergyGridSecurity() {
       industry="Energy · Grid Resilience"
       title="Energy Grid Prevents Blackouts with Predictive Maintenance"
       subtitle="AI-driven monitoring system identified 95% of potential ignition sources before they caused fires, protecting communities and infrastructure."
-      heroImage="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1600&q=80"
+      heroImage="/images/industries/energy-wind.jpg"
       challenge={`A major energy utility faced increasing challenges from aging infrastructure and extreme weather events. Wildfires caused by equipment failure were a massive liability and safety risk. Traditional inspection methods—manual patrols and helicopter surveys—were slow, expensive, and often missed subtle signs of degradation until it was too late.
 
 The utility needed a way to monitor thousands of miles of transmission lines in real-time, identifying potential failure points like vegetation encroachment, conductor damage, and insulator flashovers before they led to catastrophic events.`}

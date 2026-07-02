@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceAiPoweredFinanceIntelligentVaria
       serviceName="Intelligent Variance Analysis"
       serviceSlug="intelligent-variance-analysis"
       heroSubtitle="Stop chasing data and start finding insights. AI automatically identifies significant variances, surfaces root causes, and suggests corrective actions."
-      heroImage="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-chess.jpg"
       experienceStats={[
         { number: "100+", label: "AI-Powered Finance engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },

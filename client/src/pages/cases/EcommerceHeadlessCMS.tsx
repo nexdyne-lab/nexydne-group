@@ -7,7 +7,7 @@ export function EcommerceHeadlessCMS() {
       industry="Retail · Content Management"
       title="Omnichannel Retailer Launches 6 New Channels in 8 Months"
       subtitle="How a national retailer used headless CMS to power web, mobile app, in-store kiosks, voice commerce, and digital signage from one content hub—increasing revenue per customer by 47%."
-      heroImage="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`A national home goods retailer with 340 stores was losing market share to digital-native competitors. Their e-commerce platform, in-store systems, and mobile app all ran on separate content management systems, creating inconsistent product information and forcing merchandising teams to update content in three different places.
 
 The fragmented architecture made omnichannel initiatives nearly impossible. When the company wanted to launch in-store kiosks for endless aisle shopping, they discovered it would require building yet another content system. Voice commerce through Alexa and Google Assistant wasn't even on the roadmap because the technical complexity seemed insurmountable.

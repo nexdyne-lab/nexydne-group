@@ -56,14 +56,14 @@ export default function LegacyModernization() {
           title: "Strangler-fig retires a 22-year mainframe policy-admin platform across 18 quarterly waves",
           industry: "Insurance",
           metric: "18 waves",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "healthcare-data-analytics",
           title: "Application portfolio rationalization retires 47 of 162 applications in eighteen months",
           industry: "Healthcare Provider Network",
           metric: "47 retired",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-circuit-green.jpg",
         },
       ]}
       relatedServices={[

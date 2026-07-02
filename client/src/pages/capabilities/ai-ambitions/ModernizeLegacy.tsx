@@ -22,7 +22,7 @@ const caseStudies: CaseStudy[] = [
     company: "Regional Bank",
     title: "AI-Powered Migration Modernizes 30-Year-Old Core Banking System",
     description: "A regional bank used AI to analyze and migrate millions of lines of legacy COBOL code, reducing modernization time by 60% while maintaining business continuity.",
-    image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&h=600&fit=crop"
+    image: "/images/industries/tech-glasses.jpg"
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const caseStudies: CaseStudy[] = [
     company: "Industrial Manufacturer",
     title: "Intelligent Integration Connects Legacy ERP to Modern Analytics",
     description: "A manufacturer deployed AI-powered middleware to extract insights from legacy systems without costly replacements, enabling real-time visibility across operations.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
+    image: "/images/capabilities/cap-ai-search.jpg",
     hasVideo: true
   },
   {
@@ -39,7 +39,7 @@ const caseStudies: CaseStudy[] = [
     company: "Hospital Network",
     title: "Legacy EMR Enhancement Improves Clinical Workflows",
     description: "A hospital network layered AI capabilities on top of their existing EMR system, adding intelligent search and clinical decision support without system replacement.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop"
+    image: "/images/capabilities/cap-hologram.jpg"
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const caseStudies: CaseStudy[] = [
     company: "Insurance Company",
     title: "Automated Documentation Accelerates Legacy System Understanding",
     description: "An insurance company used AI to reverse-engineer undocumented legacy systems, creating comprehensive documentation that enabled faster modernization decisions.",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop",
+    image: "/images/capabilities/cap-circuit-green.jpg",
     hasVideo: true
   }
 ];
@@ -57,19 +57,19 @@ const insights = [
     category: "Technology",
     title: "The CIO's Playbook for Legacy Modernization",
     description: "Strategic approaches to modernizing legacy systems without disrupting business operations.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop"
+    image: "/images/industries/tech-datacenter.jpg"
   },
   {
     category: "AI, Insights, and Solutions",
     title: "How AI Is Transforming Legacy Code Migration",
     description: "New tools and techniques that make modernization faster, safer, and more cost-effective.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop"
+    image: "/images/capabilities/cap-coder.jpg"
   },
   {
     category: "Digital",
     title: "Wrap, Extend, or Replace: Choosing Your Modernization Path",
     description: "A framework for deciding the right approach for each legacy system in your portfolio.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
+    image: "/images/capabilities/cap-conference-data.jpg"
   }
 ];
 

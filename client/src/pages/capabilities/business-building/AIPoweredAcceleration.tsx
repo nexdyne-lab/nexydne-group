@@ -10,6 +10,7 @@ export default function AIPoweredAcceleration() {
       slug="ai-powered-acceleration"
       heroSubtitle="Leverage enterprise-grade AI for strategic planning, predictive market intelligence, automated financial modeling, and customer intelligence — capabilities typically reserved for Fortune 500 companies."
       heroImage="/images/ai-acceleration-abstract.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "60+", label: "AI implementations across finance, ops, and customer experience" },
@@ -113,21 +114,21 @@ export default function AIPoweredAcceleration() {
           title: "Professional Services Firm Builds SaaS Product",
           industry: "Professional Services · Business Building",
           metric: "45%",
-          image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80",
+          image: "/images/capabilities/cap-venturing.jpg",
         },
         {
           slug: "logistics-tech-spinoff",
           title: "Logistics Company Builds Technology Spin-Off",
           industry: "Logistics · Business Building",
           metric: "60+",
-          image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1600&q=80",
+          image: "/images/capabilities/cap-lightbulb-idea.jpg",
         },
         {
           slug: "healthcare-telehealth",
           title: "Healthcare Provider Launches Telehealth Venture",
           industry: "Healthcare · Business Building",
           metric: "8 Mo",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
       ]}
       relatedCapabilities={[

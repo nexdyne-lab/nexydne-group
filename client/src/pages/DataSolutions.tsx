@@ -20,14 +20,14 @@ export default function DataSolutions() {
       title: "Healthcare Analytics Platform",
       category: "Healthcare",
       description: "Predictive analytics for patient outcomes and resource allocation.",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2670&auto=format&fit=crop",
+      image: "/images/capabilities/cap-data-bars.jpg",
       link: "/cases/healthcare-analytics"
     },
     {
       title: "Insurance Fraud Detection",
       category: "Insurance",
       description: "AI-driven fraud detection saving millions in potential losses.",
-      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2670&auto=format&fit=crop",
+      image: "/images/capabilities/cap-data-presentation.jpg",
       link: "/cases/insurance-claims-processing"
     },
     {

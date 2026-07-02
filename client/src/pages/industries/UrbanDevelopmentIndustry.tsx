@@ -11,7 +11,8 @@ export default function UrbanDevelopmentIndustry() {
       industry="Urban Development"
       slug="urban-development"
       heroSubtitle="We help cities, developers, and infrastructure providers build more livable communities — pairing smart-city platforms, sustainable design, and modern citizen engagement with the operating discipline urban transformation actually requires."
-      heroImage="/cityscape-hero.2b50986e.png"
+      heroImage="/images/industries/eng-designers.jpg"
+      heroFocal="55% 45%"
       povParagraphs={[
         "By 2050, nearly 70% of the world's population will live in cities. That urban transformation creates both challenges and opportunity. Cities that harness technology, data, and innovative governance will create thriving communities. Those that cannot will struggle with congestion, affordability, and resilience — and the gap is going to compound.",
         "We partner with cities, developers, and infrastructure providers to build the capabilities urban transformation requires. From smart-city platforms and digital infrastructure to sustainable development and citizen engagement, our solutions help create communities where people want to live, work, and invest over the long term.",
@@ -76,21 +77,21 @@ export default function UrbanDevelopmentIndustry() {
           title: "Transforming knowledge management for a global consulting firm",
           industry: "Professional Services",
           metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg"
+          image: "/images/industries/skyscraper.jpg"
         },
         {
           slug: "healthcare-data-analytics",
           title: "Unlocking healthcare insights with real-time data analytics",
           industry: "Healthcare",
           metric: "25%",
-          image: "/case-healthcare-team.5797392b.jpg"
+          image: "/images/industries/arch-glass-sphere.jpg"
         },
         {
           slug: "bank-process-automation",
           title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
           industry: "Financial Services",
           metric: "10K+ hrs",
-          image: "/case-banker-meeting.c53f3999.jpg"
+          image: "/images/industries/city-digital.jpg"
         }
       ]}
     />

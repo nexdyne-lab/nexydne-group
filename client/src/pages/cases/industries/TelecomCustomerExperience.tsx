@@ -11,7 +11,7 @@ export default function TelecomCustomerExperience() {
       industryLink="/industries/technology-media-telecom"
       title="Telecom Operator Reduces Churn 40% Through CX Transformation"
       subtitle="How AI-powered customer experience management and proactive service optimization transformed subscriber retention and satisfaction."
-      heroImage="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=1920&q=80"
+      heroImage="/images/industries/tech-datacenter.jpg"
       metrics={[
         { value: "40%", label: "Churn Reduction" },
         { value: "35pts", label: "NPS Improvement" },
@@ -111,14 +111,14 @@ export default function TelecomCustomerExperience() {
           metric: "8M",
           label: "subscribers in year one",
           link: "/cases/media-streaming-launch",
-          image: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=600&q=80"
+          image: "/images/industries/ops-monitors-dark.jpg"
         },
         {
           title: "Engineering Transformation for Tech Company",
           metric: "3x",
           label: "faster release velocity",
           link: "/cases/tech-engineering-transformation",
-          image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80"
+          image: "/images/capabilities/cap-iot-network.jpg"
         }
       ]}
       ctaTitle="Ready to Transform Customer Experience?"

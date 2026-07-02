@@ -15,7 +15,8 @@ export default function PartnerNetworkAccess() {
       serviceName="Partner Network Access"
       serviceSlug="partner-network-access"
       heroSubtitle="Leverage our curated network of 500+ distribution partners, technology integrators, and channel resellers across key industries."
-      heroImage="/images/go-to-market-abstract.jpg"
+      heroImage="/images/capabilities/cap-presenting-graphs.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Partner Network Access engagements delivered" },
@@ -70,14 +71,14 @@ export default function PartnerNetworkAccess() {
           title: "Regional Distributor Launches Digital Marketplace",
           industry: "Distribution · Business Building",
           metric: "$50M+",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/industries/deal-handshake.jpg",
         },
         {
           slug: "ecommerce-platform-launch",
           title: "Industrial Distributor Launches B2B E-commerce Platform",
           industry: "Industrial Distribution · Business Building",
           metric: "35%",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/industries/fin-handshake-city.jpg",
         },
       ]}
       relatedServices={[

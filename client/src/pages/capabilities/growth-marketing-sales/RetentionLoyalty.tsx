@@ -10,7 +10,8 @@ export default function RetentionLoyalty() {
       hubName="Retention & Loyalty"
       slug="retention-loyalty"
       heroSubtitle="Customer retention strategy, loyalty program design, and lifecycle marketing. We help you build lasting customer relationships that drive sustainable growth."
-      heroImage="https://images.unsplash.com/photo-1556742049-0cfed4f7a45d?auto=format&fit=crop&q=80"
+      heroImage="/images/industries/deal-handshake.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         { number: "150+", label: "retention and loyalty programs designed and implemented" },
         { number: "25%", label: "average increase in customer lifetime value" },
@@ -113,21 +114,21 @@ export default function RetentionLoyalty() {
           title: "Health Network Lifts Patient Engagement Score By 38 Points",
           industry: "Healthcare · Engagement",
           metric: "38pt",
-          image: "https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=1600&q=80",
+          image: "/images/capabilities/cap-woman-motion.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
           industry: "Financial Services · Wealth",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
         {
           slug: "insurance-claims-processing",
           title: "Insurer Cuts Claims Cycle Time From Weeks To Hours With AI Triage",
           industry: "Financial Services · Insurance",
           metric: "85%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-peacock.jpg",
         },
       ]}
       relatedCapabilities={[

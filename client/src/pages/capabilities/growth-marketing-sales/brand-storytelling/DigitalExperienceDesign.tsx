@@ -15,7 +15,8 @@ export default function DigitalExperienceDesign() {
       serviceName="Digital Experience Design"
       serviceSlug="digital-experience-design"
       heroSubtitle="We design digital interfaces that embody the brand promise. From intuitive dashboards to immersive marketing sites, we ensure every pixel reinforces your strategic position."
-      heroImage="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1600&q=80"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Digital Experience Design engagements delivered" },
@@ -70,14 +71,14 @@ export default function DigitalExperienceDesign() {
           title: "Provider boosts patient engagement with omnichannel touch",
           industry: "Healthcare · Brand & Storytelling",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "Telehealth provider scales virtual care platform",
           industry: "Healthcare · Brand & Storytelling",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-woman-motion.jpg",
         },
       ]}
       relatedServices={[

@@ -7,7 +7,8 @@ export default function GrowthMarketingSales() {
       capabilitySlug="growth-marketing-sales"
       // PRESERVED VERBATIM from source hero subtitle
       heroSubtitle="Drive sustainable revenue growth by aligning strategy, customer experience, and commercial execution with data-driven precision. We help mid-market organizations outperform their competitors."
-      heroImage="/images/abstract-growth.jpg"
+      heroImage="/images/capabilities/cap-mobile-woman.jpg"
+      heroFocal="50% 50%"
       // PRESERVED CTA labels from source (Accelerate Growth + View Case Studies)
       heroPrimaryCTA={{
         label: "Accelerate Growth",
@@ -130,7 +131,7 @@ export default function GrowthMarketingSales() {
       // TODO: confirm with practice lead before publish (rewritten intro)
       inPractice={{
         image:
-          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
+          "/images/capabilities/cap-peacock.jpg",
         intro:
           "Growth in today's market requires more than good products and aggressive targets. It demands a clear understanding of where your customers are, what drives their decisions, and how to reach them efficiently across an increasingly fragmented landscape. We connect customer insights, marketing operations, and sales execution into a unified growth system—one that delivers predictable revenue without burning through budget on tactics that don't work.",
         realOutcomes: [
@@ -376,7 +377,7 @@ export default function GrowthMarketingSales() {
           title: "The AI advantage in sales: Moving from pilots to scale",
           readTime: "8 min read",
           image:
-            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80",
+            "/images/capabilities/cap-data-bars.jpg",
           href: "/insights/ai-in-sales",
         },
         {
@@ -385,7 +386,7 @@ export default function GrowthMarketingSales() {
             "Personalization that pays: A practical guide for growing companies",
           readTime: "7 min read",
           image:
-            "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80",
+            "/images/capabilities/cap-celebrate.jpg",
           href: "/insights/personalization-guide",
         },
         {
@@ -394,7 +395,7 @@ export default function GrowthMarketingSales() {
             "Pricing for growth: Capturing value without losing customers",
           readTime: "9 min read",
           image:
-            "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+            "/images/capabilities/cap-retail-apparel.jpg",
           href: "/insights/pricing-strategy",
         },
       ]}

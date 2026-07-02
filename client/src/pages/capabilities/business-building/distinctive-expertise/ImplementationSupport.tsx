@@ -15,7 +15,8 @@ export default function ImplementationSupport() {
       serviceName="Implementation Support"
       serviceSlug="implementation-support"
       heroSubtitle="Our experts guide your team through playbook execution, providing coaching and troubleshooting at each phase."
-      heroImage="/images/distinctive-expertise-abstract.jpg"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Implementation Support engagements delivered" },
@@ -70,7 +71,7 @@ export default function ImplementationSupport() {
           title: "Healthcare Provider Launches Telehealth Venture",
           industry: "Healthcare · Business Building",
           metric: "5 Mo",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues.jpg",
         },
       ]}
       relatedServices={[

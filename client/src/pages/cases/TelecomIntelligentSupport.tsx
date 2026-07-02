@@ -7,7 +7,7 @@ export function TelecomIntelligentSupport() {
       industry="Telecommunications · Conversational AI"
       title="Telecom Provider Improves CSAT by 38 Points Through Intelligent Support"
       subtitle="AI-powered virtual assistant resolves technical issues 4x faster while maintaining context across multiple interaction channels, transforming customer experience in a highly competitive market."
-      heroImage="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1600&q=80"
+      heroImage="/images/industries/tech-datacenter.jpg"
       challenge={`A regional telecommunications provider serving 4.2 million subscribers faced a customer experience crisis. NPS lagged competitors by 28 points, and churn rates exceeded industry averages by 34%. Post-interaction surveys revealed that technical support frustration—long wait times, repetitive troubleshooting, and inconsistent service quality—drove 62% of customer defections.
 
 Customers contacted support through multiple channels (phone, web chat, mobile app, social media) but experienced fragmented, inconsistent service. A customer who started troubleshooting via web chat had to repeat their entire issue when escalating to phone support. Technical support agents lacked unified visibility into customer interaction histories, network diagnostics, and account details—forcing customers through redundant authentication and information gathering.

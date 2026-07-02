@@ -11,7 +11,8 @@ export default function TravelHospitalityIndustry() {
       industry="Travel & Hospitality"
       slug="travel-hospitality"
       heroSubtitle="We help airlines, hotels, cruise lines, and OTAs run leaner, more personalized operations — using AI-powered revenue management, modern guest data, and digital service design that protects unit economics while lifting the experience travelers actually remember."
-      heroImage="/hero-cityscape.b7c4f9e2.png"
+      heroImage="/images/industries/travel-city-twilight.jpg"
+      heroFocal="55% 50%"
       povParagraphs={[
         "The travel industry has emerged from unprecedented disruption with a renewed focus on resilience, efficiency, and customer experience. Travelers expect seamless digital journeys, personalized service, and flexible options. Companies that deliver on those expectations while protecting margin will own the next cycle of growth.",
         "We partner with travel and hospitality companies to build the digital capabilities the new environment requires. From AI-powered revenue management to contactless guest experiences, our work helps companies improve performance while creating the kind of memorable experiences that drive repeat demand.",
@@ -76,21 +77,21 @@ export default function TravelHospitalityIndustry() {
           title: "Transforming knowledge management for a global consulting firm",
           industry: "Professional Services",
           metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg"
+          image: "/images/industries/city-night.jpg"
         },
         {
           slug: "bank-process-automation",
           title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
           industry: "Financial Services",
           metric: "10K+ hrs",
-          image: "/case-banker-meeting.c53f3999.jpg"
+          image: "/images/industries/transport-bridge.jpg"
         },
         {
           slug: "fintech-payment-automation",
           title: "Building a scalable payment processing system for a fintech startup",
           industry: "Financial Services",
           metric: "100K+",
-          image: "/case-financial-advisor.7bb94f0c.jpg"
+          image: "/images/industries/arch-glass-sphere.jpg"
         }
       ]}
     />

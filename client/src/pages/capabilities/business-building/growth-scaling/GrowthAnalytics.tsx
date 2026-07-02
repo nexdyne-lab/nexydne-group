@@ -15,7 +15,8 @@ export default function GrowthAnalytics() {
       serviceName="Growth Analytics"
       serviceSlug="growth-analytics"
       heroSubtitle="Make data-driven growth decisions. We build analytics infrastructure and dashboards that reveal what's actually driving growth."
-      heroImage="/images/growth-scaling-abstract.jpg"
+      heroImage="/images/capabilities/cap-woman-motion.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Growth Analytics engagements delivered" },
@@ -70,7 +71,7 @@ export default function GrowthAnalytics() {
           title: "Professional Services Firm Builds SaaS Product",
           industry: "Professional Services · Business Building",
           metric: "$3.2M",
-          image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
       ]}
       relatedServices={[

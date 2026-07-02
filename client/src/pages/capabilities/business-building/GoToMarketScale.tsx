@@ -10,6 +10,7 @@ export default function GoToMarketScale() {
       slug="go-to-market-scale"
       heroSubtitle="Accelerate market entry and expansion with curated partnership ecosystems, distribution-channel optimization, and systematic go-to-market frameworks built for mid-market scale."
       heroImage="/images/go-to-market-abstract.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "85+", label: "GTM programs across tech, healthcare, and professional services" },
@@ -113,21 +114,21 @@ export default function GoToMarketScale() {
           title: "Manufacturer Creates Direct-to-Consumer Channel",
           industry: "Manufacturing · Business Building",
           metric: "55%",
-          image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=80",
+          image: "/images/capabilities/cap-venturing.jpg",
         },
         {
           slug: "distributor-marketplace",
           title: "Regional Distributor Launches Digital Marketplace",
           industry: "Distribution · Business Building",
           metric: "85+",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-lightbulb-idea.jpg",
         },
         {
           slug: "ecommerce-platform-launch",
           title: "Industrial Distributor Launches B2B E-commerce Platform",
           industry: "Industrial Distribution · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
       ]}
       relatedCapabilities={[

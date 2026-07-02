@@ -11,7 +11,7 @@ export default function IndustrialConnectedProducts() {
       industryLink="/industries/manufacturing"
       title="Industrial Equipment Maker Launches $45M Connected Services Business"
       subtitle="How IoT-enabled products and predictive maintenance services transformed a traditional equipment manufacturer into a digital services leader."
-      heroImage="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&q=80"
+      heroImage="/images/industries/mfg-robotics.jpg"
       metrics={[
         { value: "$45M", label: "New Service Revenue" },
         { value: "85%", label: "Customer Retention" },
@@ -111,14 +111,14 @@ export default function IndustrialConnectedProducts() {
           metric: "40%",
           label: "OEE improvement",
           link: "/cases/automotive-smart-factory",
-          image: "https://images.unsplash.com/photo-1565043666747-69f6646db940?w=600&q=80"
+          image: "/images/industries/mfg-robot-arm.jpg"
         },
         {
           title: "AI Quality Prediction for Semiconductor Fab",
           metric: "92%",
           label: "defect prediction accuracy",
           link: "/cases/semiconductor-quality-prediction",
-          image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80"
+          image: "/images/capabilities/cap-battery-factory.jpg"
         }
       ]}
       ctaTitle="Ready to Launch Connected Services?"

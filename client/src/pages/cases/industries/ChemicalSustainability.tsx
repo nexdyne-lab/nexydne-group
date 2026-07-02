@@ -11,7 +11,7 @@ export default function ChemicalSustainability() {
       industryLink="/industries/chemicals"
       title="Chemical Company Reduces Emissions 25% Through Sustainability Transformation"
       subtitle="How process optimization, renewable energy, and circular economy initiatives achieved environmental goals while improving economics."
-      heroImage="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1920&q=80"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
       metrics={[
         { value: "25%", label: "Emissions Reduction" },
         { value: "30%", label: "Energy Savings" },
@@ -111,14 +111,14 @@ export default function ChemicalSustainability() {
           metric: "12%",
           label: "yield improvement",
           link: "/cases/chemical-plant-optimization",
-          image: "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?w=600&q=80"
+          image: "/images/industries/meeting-topview.jpg"
         },
         {
           title: "Supply Chain Resilience",
           metric: "30%",
           label: "reduction in disruptions",
           link: "/cases/chemical-supply-chain",
-          image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80"
+          image: "/images/capabilities/cap-data-bars.jpg"
         }
       ]}
       ctaTitle="Ready for Sustainability Transformation?"

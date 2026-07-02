@@ -15,7 +15,8 @@ export default function CommercialArchitectureDiagnostic() {
       serviceName="Commercial Architecture Diagnostic"
       serviceSlug="commercial-architecture-diagnostic"
       heroSubtitle="A focused two-week diagnostic that surfaces the highest-leverage opportunities in your commercial architecture system and builds the case for action."
-      heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80"
+      heroImage="/images/capabilities/cap-aerial-grid.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Commercial Architecture Diagnostic engagements delivered" },
@@ -70,14 +71,14 @@ export default function CommercialArchitectureDiagnostic() {
           title: "Accounting firm modernizes audit workflows",
           industry: "Professional Services · Commercial Architecture",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-dome-blue.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech scales payment ops with intelligent automation",
           industry: "Fintech · Commercial Architecture",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
       ]}
       relatedServices={[

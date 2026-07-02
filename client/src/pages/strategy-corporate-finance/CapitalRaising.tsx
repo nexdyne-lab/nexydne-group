@@ -10,7 +10,7 @@ export default function CapitalRaising() {
       hubName="Capital Raising & Investment"
       slug="capital-raising"
       heroSubtitle="Secure the funding you need to grow. We help you access debt, equity, and alternative financing sources on optimal terms — and prepare your business to win the conversation."
-      heroImage="https://images.unsplash.com/photo-1638913662380-9799def8ffb1?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/deal-handshake.jpg"
       experienceStats={[
         { number: "$500M+", label: "Capital raised for clients across equity, debt, and alternative financing structures" },
         { number: "75+", label: "Successful fundraising transactions completed for mid-market companies" },
@@ -114,21 +114,21 @@ export default function CapitalRaising() {
           title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
           industry: "Financial Services · Capital",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Capital",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/industries/fin-trader.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Scales Payment Operations Without Headcount Growth",
           industry: "Financial Services · Capital",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&q=80",
+          image: "/images/industries/fin-handshake-city.jpg",
         },
       ]}
       relatedCapabilities={[

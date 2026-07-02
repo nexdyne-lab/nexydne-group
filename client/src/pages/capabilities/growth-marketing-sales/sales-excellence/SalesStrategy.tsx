@@ -15,7 +15,8 @@ export default function SalesStrategy() {
       serviceName="Sales Strategy"
       serviceSlug="sales-strategy"
       heroSubtitle="Develop go-to-market strategies that drive growth. Define target segments, value propositions, and channel strategies."
-      heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80"
+      heroImage="/images/capabilities/cap-presenting-graphs.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Sales Strategy engagements delivered" },
@@ -70,14 +71,14 @@ export default function SalesStrategy() {
           title: "Accounting firm modernizes audit workflows",
           industry: "Professional Services · Sales Excellence",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/industries/meeting-topview.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Hospital system rebuilds clinical workflows with low-code",
           industry: "Healthcare · Sales Excellence",
           metric: "45%",
-          image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues.jpg",
         },
       ]}
       relatedServices={[

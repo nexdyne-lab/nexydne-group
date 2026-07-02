@@ -10,7 +10,7 @@ export default function DevOpsAutomationHub() {
       hubName="DevOps & Automation"
       slug="technology/devops-automation-hub"
       heroSubtitle="CI/CD, infrastructure as code, and the operating model that ships safely and often. We measure where the pipeline is actually slow, rebuild the architecture, engineer the test framework, and lift DORA metrics quarter-over-quarter."
-      heroImage="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-robot-factory.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "DevOps and CI/CD engagements delivered for mid-market and enterprise clients" },

@@ -22,7 +22,7 @@ export default function RetailMarketExpansion() {
       
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-30"></div>
+        <div className="absolute inset-0 bg-[url('/images/capabilities/cap-retail-apparel.jpg')] bg-cover bg-center opacity-30"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background"></div>
         
         <div className="container relative z-10 px-4 md:px-12">
@@ -506,14 +506,14 @@ export default function RetailMarketExpansion() {
                 title: "Identifying and Capturing Growth Opportunities",
                 industry: "Healthcare Manufacturing",
                 description: "How a medical device manufacturer identified strategic growth themes",
-                image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&q=80",
+                image: "/images/capabilities/cap-retail-data.jpg",
                 link: "/case-studies/medical-device-growth"
               },
               {
                 title: "Shifting Mindsets to Drive Performance",
                 industry: "B2B SaaS",
                 description: "How a B2B SaaS platform transitioned from follower to leader",
-                image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80",
+                image: "/images/industries/retail-shelves.jpg",
                 link: "/case-studies/saas-category-leadership"
               }
             ].map((item, index) => (

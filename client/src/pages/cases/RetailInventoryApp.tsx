@@ -7,7 +7,7 @@ export function RetailInventoryApp() {
       industry="Retail · App Development"
       title="Retailer Builds Custom Inventory App Cutting Stockouts 40%"
       subtitle="Multi-location retailer deploys mobile inventory management app with real-time sync, barcode scanning, and automated reorder triggers across 85 stores."
-      heroImage="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`A specialty outdoor gear retailer operating 85 stores across the Western United States struggled with chronic inventory accuracy issues. Their legacy inventory management system required manual data entry via desktop computers in back offices, leading to delayed updates and frequent discrepancies between system records and actual shelf stock. Store associates spent 3-4 hours per day on manual inventory counts, taking them away from customer service. Stockouts occurred on 22% of popular items during peak seasons, resulting in lost sales and customer frustration.
 
 The retailer needed a mobile-first inventory solution that would enable real-time stock updates from the sales floor, streamline receiving and cycle counting processes, and automatically trigger reorders when inventory fell below safety stock levels. The solution had to integrate with their existing NetSuite ERP system, support offline functionality for stores with unreliable connectivity, and provide intuitive barcode scanning for fast data entry. With peak season approaching in 4 months, the retailer needed rapid development and deployment across all locations.`}

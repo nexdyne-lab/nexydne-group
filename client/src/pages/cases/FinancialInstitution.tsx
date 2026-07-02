@@ -7,7 +7,7 @@ export function FinancialInstitution() {
       industry="Banking · Compliance Automation"
       title="Financial Institution: Compliance Automation"
       subtitle="Deployed RPA to automate KYC document processing and regulatory reporting, reducing manual compliance work by 80% while improving accuracy to 99.9%."
-      heroImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       challenge={`A regional bank processing 10,000+ KYC (Know Your Customer) applications monthly was struggling with compliance bottlenecks. Their compliance team manually reviewed identity documents, verified information across multiple databases, and generated regulatory reports—a process consuming 200+ hours weekly and creating 5-7 day application approval delays.
 
 Manual document review introduced inconsistencies that triggered regulatory audit findings. The bank faced potential fines and reputational risk from compliance gaps. Additionally, the slow KYC process was costing them new customer acquisitions—30% of applicants abandoned the process before completion due to lengthy wait times.`}

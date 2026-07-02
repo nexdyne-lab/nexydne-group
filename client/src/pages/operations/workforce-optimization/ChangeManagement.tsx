@@ -11,7 +11,7 @@ export default function OperationsWorkforceOptimizationChangeManagement() {
       serviceName="Change Management"
       serviceSlug="change-management"
       heroSubtitle="Enable successful transformation. Communication, engagement, and adoption strategies that ensure operational changes stick."
-      heroImage="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-diverse-team.jpg"
       experienceStats={[
         { number: "100+", label: "Workforce Optimization engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsWorkforceOptimizationChangeManagement() {
           title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
           industry: "Professional Services · Operations",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Academic Medical Center Streamlines Clinical Workflows",
           industry: "Healthcare · Operations",
           metric: "30%",
-          image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1600&q=80",
+          image: "/images/industries/biz-team-bright.jpg",
         },
       ]}
       relatedServices={[

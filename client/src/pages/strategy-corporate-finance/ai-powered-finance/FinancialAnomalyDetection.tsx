@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceAiPoweredFinanceFinancialAnomaly
       serviceName="Financial Anomaly Detection"
       serviceSlug="financial-anomaly-detection"
       heroSubtitle="Catch issues before they become problems. AI monitors transactions and patterns to flag unusual activity, potential fraud, or data quality issues in real-time."
-      heroImage="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-chess.jpg"
       experienceStats={[
         { number: "100+", label: "AI-Powered Finance engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },

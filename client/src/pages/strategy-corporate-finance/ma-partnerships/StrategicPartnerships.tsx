@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceMaPartnershipsStrategicPartnersh
       serviceName="Strategic Partnerships"
       serviceSlug="strategic-partnerships"
       heroSubtitle="Build alliances that accelerate growth. Joint ventures, licensing agreements, and strategic partnerships structured for mutual success."
-      heroImage="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/deal-handshake.jpg"
       experienceStats={[
         { number: "100+", label: "M&A & Strategic Partnerships engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },

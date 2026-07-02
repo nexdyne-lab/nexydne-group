@@ -15,7 +15,8 @@ export default function CxCulture() {
       serviceName="CX Culture"
       serviceSlug="cx-culture"
       heroSubtitle="Build a customer-centric culture that sustains improvement. Develop employee engagement and empowerment programs."
-      heroImage="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=1600&q=80"
+      heroImage="/images/capabilities/cap-colleagues-smile.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "CX Culture engagements delivered" },
@@ -70,14 +71,14 @@ export default function CxCulture() {
           title: "Provider boosts patient engagement with omnichannel touch",
           industry: "Healthcare · Customer Experience",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&q=80",
+          image: "/images/capabilities/cap-office-women.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Hospital system rebuilds clinical workflows with low-code",
           industry: "Healthcare · Customer Experience",
           metric: "45%",
-          image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
       ]}
       relatedServices={[

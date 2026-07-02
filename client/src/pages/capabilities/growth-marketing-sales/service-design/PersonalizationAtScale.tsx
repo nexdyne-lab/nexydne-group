@@ -15,7 +15,8 @@ export default function PersonalizationAtScale() {
       serviceName="Personalization at Scale"
       serviceSlug="personalization-at-scale"
       heroSubtitle="Leveraging data and AI to deliver relevant content and offers to millions of users individually, in real-time, without compromising privacy or performance."
-      heroImage="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=1600&q=80"
+      heroImage="/images/capabilities/cap-hands-data.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Personalization at Scale engagements delivered" },
@@ -70,14 +71,14 @@ export default function PersonalizationAtScale() {
           title: "Insurer cuts claims handling time with NLP and OCR",
           industry: "Insurance · Service Design",
           metric: "65%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Hospital system rebuilds clinical workflows with low-code",
           industry: "Healthcare · Service Design",
           metric: "45%",
-          image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80",
+          image: "/images/capabilities/cap-diverse-team.jpg",
         },
       ]}
       relatedServices={[

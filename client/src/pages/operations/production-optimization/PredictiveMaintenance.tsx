@@ -11,7 +11,7 @@ export default function OperationsProductionOptimizationPredictiveMaintenance() 
       serviceName="Predictive Maintenance"
       serviceSlug="predictive-maintenance"
       heroSubtitle="Move from reactive to predictive maintenance. Deploy sensors, analytics, and AI to anticipate failures before they occur and optimize maintenance schedules."
-      heroImage="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/mfg-robotics.jpg"
       experienceStats={[
         { number: "100+", label: "Production Optimization engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,7 +52,7 @@ export default function OperationsProductionOptimizationPredictiveMaintenance() 
           title: "Health System Builds Population Health Analytics Platform",
           industry: "Healthcare · Operations",
           metric: "$18M",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-battery-factory.jpg",
         },
       ]}
       relatedServices={[

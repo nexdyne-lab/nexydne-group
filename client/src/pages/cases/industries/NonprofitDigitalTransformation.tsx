@@ -11,7 +11,7 @@ export default function NonprofitDigitalTransformation() {
       industryLink="/industries/social-impact"
       title="Global Nonprofit Increases Donor Engagement 60% Through Digital"
       subtitle="How personalized digital experiences and data-driven outreach transformed fundraising and deepened donor relationships."
-      heroImage="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1920&q=80"
+      heroImage="/images/industries/people-commute.jpg"
       metrics={[
         { value: "60%", label: "Higher Engagement" },
         { value: "45%", label: "More Donations" },
@@ -111,14 +111,14 @@ export default function NonprofitDigitalTransformation() {
           metric: "10x",
           label: "better outcome tracking",
           link: "/cases/nonprofit-impact-measurement",
-          image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&q=80"
+          image: "/images/industries/colleagues-walking.jpg"
         },
         {
           title: "Program Delivery Optimization",
           metric: "40%",
           label: "more beneficiaries served",
           link: "/cases/nonprofit-program-optimization",
-          image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80"
+          image: "/images/industries/biz-team-bright.jpg"
         }
       ]}
       ctaTitle="Ready to Transform Donor Engagement?"

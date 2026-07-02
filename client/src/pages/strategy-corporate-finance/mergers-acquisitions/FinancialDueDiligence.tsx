@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceMergersAcquisitionsFinancialDueD
       serviceName="Financial Due Diligence"
       serviceSlug="financial-due-diligence"
       heroSubtitle="Rigorous examination of financial statements, quality of earnings, and working capital. Identify risks and opportunities."
-      heroImage="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/deal-handshake.jpg"
       experienceStats={[
         { number: "100+", label: "Mergers & Acquisitions engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,14 +52,14 @@ export default function StrategyCorporateFinanceMergersAcquisitionsFinancialDueD
           title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
           industry: "Financial Services · Strategy",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/industries/fin-handshake-city.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
           industry: "Professional Services · Strategy",
           metric: "85%",
-          image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&q=80",
+          image: "/images/industries/meeting-topview.jpg",
         },
       ]}
       relatedServices={[

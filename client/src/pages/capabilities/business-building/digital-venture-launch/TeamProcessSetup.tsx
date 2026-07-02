@@ -15,7 +15,8 @@ export default function TeamProcessSetup() {
       serviceName="Team & Process Setup"
       serviceSlug="team-process-setup"
       heroSubtitle="We help you build the team and establish the processes needed to run and scale the venture independently."
-      heroImage="/images/digital-venture-abstract.jpg"
+      heroImage="/images/industries/team-strategy-board.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Team & Process Setup engagements delivered" },
@@ -70,7 +71,7 @@ export default function TeamProcessSetup() {
           title: "Logistics Company Builds Technology Spin-Off",
           industry: "Logistics · Business Building",
           metric: "$28M",
-          image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1600&q=80",
+          image: "/images/capabilities/cap-venturing.jpg",
         },
       ]}
       relatedServices={[

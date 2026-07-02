@@ -15,7 +15,8 @@ export default function DecisionFramework() {
       serviceName="Decision Framework"
       serviceSlug="decision-framework"
       heroSubtitle="We synthesize learning into clear recommendations about whether to proceed, pivot, or terminate. This includes financial modeling, risk assessment, and roadmap development for validated opportunities."
-      heroImage="/images/rapid-innovation-abstract.jpg"
+      heroImage="/images/capabilities/cap-lightbulb-idea.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Decision Framework engagements delivered" },
@@ -70,7 +71,7 @@ export default function DecisionFramework() {
           title: "Financial Services Firm Enters Adjacent Market",
           industry: "Financial Services · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1600&q=80",
+          image: "/images/capabilities/cap-lightbulb-idea.jpg",
         },
       ]}
       relatedServices={[

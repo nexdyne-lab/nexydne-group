@@ -11,7 +11,8 @@ export default function ServiceDesign() {
       hubName="Service Design"
       slug="service-design"
       heroSubtitle="Orchestrate the invisible. We align people, infrastructure, and technology to deliver services that are seamless, scalable, and human-centered."
-      heroImage="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop"
+      heroImage="/images/capabilities/cap-mobile-woman.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         { number: "End-to-end", label: "Service Design engagements from diagnostic through execution" },
         { number: "Mid-market", label: "Sized for ambitious mid-market companies — not Fortune 500 only" },
@@ -114,21 +115,21 @@ export default function ServiceDesign() {
           title: "Health Network Lifts Patient Engagement Score By 38 Points",
           industry: "Healthcare · Engagement",
           metric: "38pt",
-          image: "https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=1600&q=80",
+          image: "/images/capabilities/cap-peacock.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
           industry: "Financial Services · Wealth",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Hospital Network Cuts Documentation Time Per Shift By Two Hours",
           industry: "Healthcare · Workflow",
           metric: "2hr",
-          image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
       ]}
       relatedCapabilities={[

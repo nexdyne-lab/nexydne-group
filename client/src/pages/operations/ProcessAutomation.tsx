@@ -113,21 +113,21 @@ export default function ProcessAutomation() {
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Operations",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-robot-factory.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "Law Firm Automates Contract Lifecycle Across Practice Groups",
           industry: "Professional Services · Operations",
           metric: "65%",
-          image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1600&q=80",
+          image: "/images/capabilities/cap-warehouse-robot.jpg",
         },
         {
           slug: "insurance-claims-processing",
           title: "Insurer Cuts Claims Cycle Time and Improves Decision Accuracy",
           industry: "Insurance · Operations",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/industries/ops-gears.jpg",
         },
       ]}
       relatedCapabilities={[

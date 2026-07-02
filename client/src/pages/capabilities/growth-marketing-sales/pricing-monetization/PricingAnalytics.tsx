@@ -15,7 +15,8 @@ export default function PricingAnalytics() {
       serviceName="Pricing Analytics"
       serviceSlug="pricing-analytics"
       heroSubtitle="Build analytics capabilities that drive pricing decisions. Develop price elasticity models and optimization algorithms."
-      heroImage="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80"
+      heroImage="/images/capabilities/cap-presenting-graphs.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Pricing Analytics engagements delivered" },
@@ -70,14 +71,14 @@ export default function PricingAnalytics() {
           title: "Fintech scales payment ops with intelligent automation",
           industry: "Fintech · Pricing & Monetization",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/capabilities/cap-hands-data.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional bank automates KYC and onboarding",
           industry: "Financial Services · Pricing & Monetization",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-chess.jpg",
         },
       ]}
       relatedServices={[

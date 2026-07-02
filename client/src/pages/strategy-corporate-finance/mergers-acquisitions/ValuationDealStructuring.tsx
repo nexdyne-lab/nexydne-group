@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceMergersAcquisitionsValuationDeal
       serviceName="Valuation & Deal Structuring"
       serviceSlug="valuation-deal-structuring"
       heroSubtitle="Determine fair value and optimal deal structure. Model synergies and negotiate terms that protect your interests."
-      heroImage="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/deal-handshake.jpg"
       experienceStats={[
         { number: "100+", label: "Mergers & Acquisitions engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,7 +52,7 @@ export default function StrategyCorporateFinanceMergersAcquisitionsValuationDeal
           title: "Fintech Scales Cross-Border Payments With Intelligent Automation",
           industry: "Financial Services · Strategy",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?w=1600&q=80",
+          image: "/images/industries/fin-handshake-city.jpg",
         },
       ]}
       relatedServices={[

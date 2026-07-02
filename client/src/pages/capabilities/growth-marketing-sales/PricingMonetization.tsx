@@ -10,7 +10,8 @@ export default function PricingMonetization() {
       hubName="Pricing & Monetization"
       slug="pricing-monetization"
       heroSubtitle="Unlock hidden value through strategic pricing. We help you optimize pricing strategies, improve monetization, and capture the full value of your products and services."
-      heroImage="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80"
+      heroImage="/images/capabilities/cap-telescope.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         { number: "200+", label: "pricing transformations delivered globally" },
         { number: "15%", label: "average improvement in gross margin" },
@@ -113,21 +114,21 @@ export default function PricingMonetization() {
           title: "Fintech Cuts Payment Reconciliation Cost By Two Thirds",
           industry: "Financial Services · Payments",
           metric: "67%",
-          image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&q=80",
+          image: "/images/industries/deal-handshake.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Automation",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-woman-motion.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "Telehealth Platform Scales To Two Million Monthly Visits",
           industry: "Healthcare · Telehealth",
           metric: "2M",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
       ]}
       relatedCapabilities={[

@@ -54,14 +54,14 @@ export default function PlatformEngineering() {
           title: "Internal developer platform onboards 84 application teams in 11 months with 92 percent satisfaction",
           industry: "Technology",
           metric: "84 teams",
-          image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80",
+          image: "/images/capabilities/cap-aerial-grid.jpg",
         },
         {
           slug: "legal-document-intelligence",
           title: "Platform team replaces 14 separate provisioning ticket queues with one self-service portal",
           industry: "Financial Services",
           metric: "14 → 1",
-          image: "https://images.unsplash.com/photo-1589216532372-1c2a367900d9?w=1600&q=80",
+          image: "/images/capabilities/cap-dome-blue.jpg",
         },
       ]}
       relatedServices={[

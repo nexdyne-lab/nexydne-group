@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceFpaFinancialModeling() {
       serviceName="Financial Modeling"
       serviceSlug="financial-modeling"
       heroSubtitle="Build sophisticated models for business cases, valuations, and strategic scenarios. Excel and BI-based solutions tailored to your needs."
-      heroImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
       experienceStats={[
         { number: "100+", label: "Financial Planning & Analysis engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,21 +52,21 @@ export default function StrategyCorporateFinanceFpaFinancialModeling() {
           title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
           industry: "Financial Services · Strategy",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80",
+          image: "/images/capabilities/cap-presenting-graphs.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Scales Cross-Border Payments With Intelligent Automation",
           industry: "Financial Services · Strategy",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?w=1600&q=80",
+          image: "/images/industries/fin-monitors.jpg",
         },
         {
           slug: "accounting-audit-automation",
           title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
           industry: "Financial Services · Strategy",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
       ]}
       relatedServices={[

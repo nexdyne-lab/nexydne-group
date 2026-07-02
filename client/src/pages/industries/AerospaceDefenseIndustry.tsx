@@ -11,7 +11,8 @@ export default function AerospaceDefenseIndustry() {
       industry="Aerospace & Defense"
       slug="aerospace-defense"
       heroSubtitle="We help A&D primes, suppliers, and government programs deliver more capability, faster — using digital engineering, AI-powered operations, and resilient supply chains to compress cycle times without compromising security or compliance."
-      heroImage="/hero-bg-aerial.1d9ee9e9.jpg"
+      heroImage="/images/industries/aero-rocket.jpg"
+      heroFocal="55% 40%"
       povParagraphs={[
         "Aerospace and defense organizations are under sustained pressure to deliver more capability, faster, and at lower cost. Programs that historically took decades are being compressed into years. New technologies — AI, autonomous systems, advanced manufacturing — are simultaneously creating opportunity and raising the bar on engineering, security, and supplier readiness.",
         "We partner with A&D companies to build the digital capabilities that make this pace sustainable. From digital engineering and model-based systems engineering to AI-powered operations and multi-tier supply-chain resilience, our work helps primes and suppliers innovate faster while protecting the security, traceability, and compliance posture the mission demands.",
@@ -76,21 +77,21 @@ export default function AerospaceDefenseIndustry() {
           title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
           industry: "Financial Services",
           metric: "10K+ hrs",
-          image: "/case-banker-meeting.c53f3999.jpg"
+          image: "/images/industries/aero-astronaut.jpg"
         },
         {
           slug: "consulting-knowledge-management",
           title: "Transforming knowledge management for a global consulting firm",
           industry: "Professional Services",
           metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg"
+          image: "/images/industries/eng-designers.jpg"
         },
         {
           slug: "accounting-audit-automation",
           title: "How audit automation helped an accounting firm scale 2x without hiring",
           industry: "Professional Services",
           metric: "2x",
-          image: "/case-accountants-audit.1c87a151.jpg"
+          image: "/images/industries/ops-monitors-dark.jpg"
         }
       ]}
     />

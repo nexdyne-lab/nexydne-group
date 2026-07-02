@@ -15,7 +15,8 @@ export default function SalesOrganization() {
       serviceName="Sales Organization"
       serviceSlug="sales-organization"
       heroSubtitle="Design sales organizations that maximize coverage and effectiveness. Define roles, territories, and team structures."
-      heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80"
+      heroImage="/images/industries/deal-handshake.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Sales Organization engagements delivered" },
@@ -70,14 +71,14 @@ export default function SalesOrganization() {
           title: "Hospital system rebuilds clinical workflows with low-code",
           industry: "Healthcare · Sales Excellence",
           metric: "45%",
-          image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80",
+          image: "/images/industries/fin-handshake-city.jpg",
         },
         {
           slug: "legal-document-intelligence",
           title: "In-house legal team builds doc intelligence platform",
           industry: "Legal Services · Sales Excellence",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-presenting-graphs.jpg",
         },
       ]}
       relatedServices={[

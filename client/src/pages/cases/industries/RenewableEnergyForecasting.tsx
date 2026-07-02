@@ -11,7 +11,7 @@ export default function RenewableEnergyForecasting() {
       industryLink="/industries/energy-utilities"
       title="Renewable Energy Company Achieves 25% Better Forecasting"
       subtitle="How machine learning models predict solar and wind generation with unprecedented accuracy, reducing imbalance costs and enabling grid integration."
-      heroImage="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=80"
+      heroImage="/images/industries/energy-wind.jpg"
       metrics={[
         { value: "25%", label: "Forecast Improvement" },
         { value: "$18M", label: "Annual Savings" },
@@ -111,14 +111,14 @@ export default function RenewableEnergyForecasting() {
           metric: "45%",
           label: "reduction in outage duration",
           link: "/cases/utility-grid-modernization",
-          image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80"
+          image: "/images/industries/energy-powerplant.jpg"
         },
         {
           title: "Digital Transformation for Oil & Gas",
           metric: "$150M",
           label: "operational savings",
           link: "/cases/oil-gas-digital-transformation",
-          image: "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=600&q=80"
+          image: "/images/industries/energy-solar.jpg"
         }
       ]}
       ctaTitle="Ready to Improve Your Forecasting?"

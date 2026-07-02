@@ -7,7 +7,7 @@ export function DistributorMarketplace() {
       industry="Distribution · Business Building"
       title="Regional Distributor Launches Digital Marketplace"
       subtitle="How an industrial supplies distributor created a new revenue stream by building a B2B marketplace connecting buyers with specialized vendors."
-      heroImage="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80"
+      heroImage="/images/industries/retail-warehouse.jpg"
       challenge={`Traditional distribution margins were declining as customers gained price transparency. The company's product catalog couldn't match larger competitors. Customer acquisition costs were rising. The leadership team needed a differentiated strategy that leveraged existing relationships while creating new value.
 
 A 150-employee industrial supplies distributor with $45M annual revenue serves manufacturing and construction customers across the Midwest. Analysis revealed that customers frequently needed specialized products outside the existing catalog and were spending significant time finding and vetting new suppliers. The distributor had relationships with hundreds of specialty vendors who struggled to reach mid-size buyers—a two-sided market inefficiency that created the foundation for a curated marketplace opportunity.`}

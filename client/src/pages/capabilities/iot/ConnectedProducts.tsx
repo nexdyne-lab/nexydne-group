@@ -15,7 +15,8 @@ export default function ConnectedProducts() {
       serviceName="Connected Products"
       serviceSlug="connected-products"
       heroSubtitle="Transform standalone devices into intelligent, connected ecosystems. We help you design, build, and launch smart products that deliver continuous value and deepen customer relationships."
-      heroImage="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop"
+      heroImage="/images/capabilities/cap-iot-network.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         { number: "30%", label: "Increase in customer lifetime value" },
         { number: "2x", label: "Faster product iteration cycles" },

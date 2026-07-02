@@ -15,7 +15,8 @@ export default function CustomerDataPlatforms() {
       serviceName="Customer Data Platforms"
       serviceSlug="customer-data-platforms"
       heroSubtitle="Implement CDP solutions that unify customer data across touchpoints. Enable real-time personalization and audience activation."
-      heroImage="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=80"
+      heroImage="/images/industries/tech-datacenter.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Customer Data Platforms engagements delivered" },
@@ -70,14 +71,14 @@ export default function CustomerDataPlatforms() {
           title: "Accounting firm modernizes audit workflows",
           industry: "Professional Services · MarTech Stack",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-3d-printing.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "Telehealth provider scales virtual care platform",
           industry: "Healthcare · MarTech Stack",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-coder.jpg",
         },
       ]}
       relatedServices={[

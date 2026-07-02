@@ -114,7 +114,7 @@ export default function QualityManagement() {
               </div>
               <div className="col-span-2 relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80"
+                  src="/images/industries/mfg-robotics.jpg"
                   alt="Quality Excellence"
                   className="w-full h-48 object-cover"
                 />
@@ -253,7 +253,7 @@ export default function QualityManagement() {
             >
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80" 
+                  src="/images/capabilities/cap-battery-factory.jpg" 
                   alt="Quality Methodology" 
                   className="w-full h-auto"
                 />
@@ -293,17 +293,17 @@ export default function QualityManagement() {
               {
                 title: "Manufacturer achieves ISO 9001 certification in 6 months",
                 category: "Certification",
-                image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80"
+                image: "/images/industries/mfg-robot-arm.jpg"
               },
               {
                 title: "Six Sigma program reduces defects by 75%",
                 category: "Process Improvement",
-                image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80"
+                image: "/images/capabilities/cap-robot-factory.jpg"
               },
               {
                 title: "Healthcare provider improves patient satisfaction by 35%",
                 category: "Service Quality",
-                image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&q=80"
+                image: "/images/industries/mfg-robotics.jpg"
               }
             ].map((study, i) => (
               <motion.div 
@@ -382,19 +382,19 @@ export default function QualityManagement() {
             title: "The Complete Guide to Process Mining",
             category: "Operations",
             link: "/insights/complete-guide-process-mining",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-battery-factory.jpg"
           },
           {
             title: "Building a Culture of Continuous Improvement",
             category: "Quality",
             link: "/insights/continuous-improvement-culture",
-            image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80"
+            image: "/images/industries/mfg-robot-arm.jpg"
           },
           {
             title: "ISO Certification: A Strategic Advantage",
             category: "Compliance",
             link: "/insights/iso-certification-advantage",
-            image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-robot-factory.jpg"
           }
         ]}
       />

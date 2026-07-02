@@ -15,7 +15,8 @@ export default function ContinuousImprovement() {
       serviceName="Continuous Improvement"
       serviceSlug="continuous-improvement"
       heroSubtitle="We establish quarterly benchmark updates, annual maturity reassessments, and continuous KPI refinement processes that ensure performance intelligence evolves with your business."
-      heroImage="/images/performance-intelligence-abstract.jpg"
+      heroImage="/images/capabilities/cap-data-presentation.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Continuous Improvement engagements delivered" },
@@ -70,14 +71,14 @@ export default function ContinuousImprovement() {
           title: "Professional Services Firm Builds SaaS Product",
           industry: "Professional Services · Business Building",
           metric: "$3.2M",
-          image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
         {
           slug: "manufacturer-dtc",
           title: "Manufacturer Creates Direct-to-Consumer Channel",
           industry: "Manufacturing · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=80",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

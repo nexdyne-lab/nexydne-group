@@ -86,7 +86,7 @@ export default function EnterpriseIntegrationPlaybook() {
           >
             <div className="relative rounded-2xl overflow-hidden aspect-[21/9]">
               <img 
-                src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=2000&q=80" 
+                src="/images/capabilities/cap-data-bars.jpg" 
                 alt="Enterprise Integration" 
                 className="w-full h-full object-cover"
               />
@@ -321,21 +321,21 @@ export default function EnterpriseIntegrationPlaybook() {
             type: "Article",
             title: "Enterprise transformation in the AI era",
             description: "How leading enterprises are reimagining their operating models to harness AI.",
-            image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+            image: "/images/capabilities/cap-data-presentation.jpg",
             link: "/insights/enterprise-transformation-ai"
           },
           {
             type: "Article",
             title: "Building scalable data architectures",
             description: "The architectural patterns that enable enterprises to scale data operations.",
-            image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+            image: "/images/industries/fin-monitors.jpg",
             link: "/insights/scalable-data-architecture"
           },
           {
             type: "Case Study",
             title: "Health tech platform achieves 99.99% uptime",
             description: "How cloud migration transformed healthcare SaaS reliability.",
-            image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
+            image: "/images/capabilities/cap-hands-data.jpg",
             link: "/cases/healthcare-cloud-migration"
           }
         ]}

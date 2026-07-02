@@ -8,7 +8,7 @@ export default function BusinessTransformationStrategy() {
       subtitle="A comprehensive guide to planning and executing successful business transformation initiatives that deliver lasting value."
       readTime="8 min read"
       publishDate="December 20, 2024"
-      heroImage="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
+      heroImage="/images/capabilities/cap-chess.jpg"
       heroImageAlt="Business transformation strategy session"
       authorName="NexDyne Strategy Team"
       authorRole="Strategy & Corporate Finance Practice"
@@ -18,7 +18,7 @@ export default function BusinessTransformationStrategy() {
           title: "The Performance Improvement Framework",
           description: "Systematic approaches to unlock operational value and drive sustainable margin improvement.",
           readTime: "7 min read",
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
           link: "/insights/performance-improvement-framework"
         },
         {
@@ -26,7 +26,7 @@ export default function BusinessTransformationStrategy() {
           title: "Synergy Capture: From Promise to Reality",
           description: "How to identify, plan, and capture merger synergies that deliver real value.",
           readTime: "6 min read",
-          image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80",
+          image: "/images/industries/team-strategy-board.jpg",
           link: "/insights/synergy-capture"
         },
         {
@@ -34,7 +34,7 @@ export default function BusinessTransformationStrategy() {
           title: "The Series A Fundraising Guide",
           description: "Essential strategies for preparing and executing a successful Series A funding round.",
           readTime: "10 min read",
-          image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&q=80",
+          image: "/images/capabilities/cap-aerial-grid.jpg",
           link: "/insights/series-a-fundraising-guide"
         }
       ]}

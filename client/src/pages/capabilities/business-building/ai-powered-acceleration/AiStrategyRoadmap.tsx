@@ -15,7 +15,8 @@ export default function AiStrategyRoadmap() {
       serviceName="AI Strategy & Roadmap"
       serviceSlug="ai-strategy-roadmap"
       heroSubtitle="Define where AI can create the most value in your business. We identify high-impact use cases and build practical implementation roadmaps."
-      heroImage="/images/ai-acceleration-abstract.jpg"
+      heroImage="/images/capabilities/cap-hologram.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "AI Strategy & Roadmap engagements delivered" },
@@ -70,14 +71,14 @@ export default function AiStrategyRoadmap() {
           title: "Professional Services Firm Builds SaaS Product",
           industry: "Professional Services · Business Building",
           metric: "$3.2M",
-          image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80",
+          image: "/images/capabilities/cap-circuit-green.jpg",
         },
         {
           slug: "logistics-tech-spinoff",
           title: "Logistics Company Builds Technology Spin-Off",
           industry: "Logistics · Business Building",
           metric: "$28M",
-          image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1600&q=80",
+          image: "/images/capabilities/cap-ai-search.jpg",
         },
       ]}
       relatedServices={[

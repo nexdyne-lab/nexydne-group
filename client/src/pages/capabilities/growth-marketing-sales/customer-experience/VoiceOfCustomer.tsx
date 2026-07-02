@@ -15,7 +15,8 @@ export default function VoiceOfCustomer() {
       serviceName="Voice of Customer"
       serviceSlug="voice-of-customer"
       heroSubtitle="Capture and act on customer feedback at scale. Build VoC programs that surface insights and drive improvement."
-      heroImage="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=1600&q=80"
+      heroImage="/images/industries/advisor-charts.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Voice of Customer engagements delivered" },
@@ -70,14 +71,14 @@ export default function VoiceOfCustomer() {
           title: "Provider boosts patient engagement with omnichannel touch",
           industry: "Healthcare · Customer Experience",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues-smile.jpg",
         },
         {
           slug: "insurance-claims-processing",
           title: "Insurer cuts claims handling time with NLP and OCR",
           industry: "Insurance · Customer Experience",
           metric: "65%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-office-women.jpg",
         },
       ]}
       relatedServices={[

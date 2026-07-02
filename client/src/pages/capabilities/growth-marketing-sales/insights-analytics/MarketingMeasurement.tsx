@@ -15,7 +15,8 @@ export default function MarketingMeasurement() {
       serviceName="Marketing Measurement"
       serviceSlug="marketing-measurement"
       heroSubtitle="Build measurement frameworks that track marketing performance across channels. Implement dashboards and reporting that drive accountability."
-      heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&q=80"
+      heroImage="/images/capabilities/cap-presenting-graphs.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Marketing Measurement engagements delivered" },
@@ -70,14 +71,14 @@ export default function MarketingMeasurement() {
           title: "Health system unifies patient data for population analytics",
           industry: "Healthcare · Insights & Analytics",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
         {
           slug: "consulting-knowledge-management",
           title: "Consultancy unlocks 30 years of IP with AI knowledge graph",
           industry: "Professional Services · Insights & Analytics",
           metric: "4x",
-          image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=80",
+          image: "/images/capabilities/cap-hands-data.jpg",
         },
       ]}
       relatedServices={[

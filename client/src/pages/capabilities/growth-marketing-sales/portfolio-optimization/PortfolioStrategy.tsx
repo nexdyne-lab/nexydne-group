@@ -15,7 +15,8 @@ export default function PortfolioStrategy() {
       serviceName="Portfolio Strategy"
       serviceSlug="portfolio-strategy"
       heroSubtitle="Develop portfolio strategies that align with market opportunities and business objectives. Define architecture, roles, and investment priorities."
-      heroImage="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&q=80"
+      heroImage="/images/capabilities/cap-aerial-grid.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Portfolio Strategy engagements delivered" },
@@ -70,14 +71,14 @@ export default function PortfolioStrategy() {
           title: "Consultancy unlocks 30 years of IP with AI knowledge graph",
           industry: "Professional Services · Portfolio Optimization",
           metric: "4x",
-          image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=80",
+          image: "/images/capabilities/cap-presenting-graphs.jpg",
         },
         {
           slug: "accounting-audit-automation",
           title: "Accounting firm modernizes audit workflows",
           industry: "Professional Services · Portfolio Optimization",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-retail-apparel.jpg",
         },
       ]}
       relatedServices={[

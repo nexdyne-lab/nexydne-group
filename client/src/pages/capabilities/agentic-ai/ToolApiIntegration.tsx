@@ -15,7 +15,8 @@ export default function ToolApiIntegration() {
       serviceName="Tool & API Integration"
       serviceSlug="tool-api-integration"
       heroSubtitle="Connect agents to your existing systems — CRMs, ERPs, databases, and APIs — enabling them to take real action in your business environment. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-ai-agents.eba3d75f.jpg"
+      heroImage="/images/capabilities/cap-iot-network.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Tool & API Integration engagements delivered" },
@@ -68,14 +69,14 @@ export default function ToolApiIntegration() {
           title: "How a regional bank cut loan processing time by 80% with intelligent automation",
           industry: "Financial Services",
           metric: "80%",
-          image: "/case-banker-meeting.c53f3999.jpg",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "consulting-knowledge-management",
           title: "Transforming knowledge management for a global consulting firm",
           industry: "Professional Services",
           metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

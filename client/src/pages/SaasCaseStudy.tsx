@@ -7,7 +7,7 @@ export function SaasCaseStudy() {
       industry="Software & Technology · Operations"
       title="78% Faster Customer Onboarding"
       subtitle="Fast-growing B2B SaaS platform automates onboarding and provisioning, reducing setup time from 5 days to 26 hours while scaling to 400+ new customers quarterly."
-      heroImage="https://images.unsplash.com/photo-1553484771-371a605b060b?w=1600&q=80"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
       challenge={`Customer success managers manually created accounts, configured permissions, and set up integrations through a series of admin panels. Each new customer required 8-12 hours of setup work spread across 5 days, creating a 3-week backlog during peak quarters. With 12 different customer success managers handling onboarding, configuration quality varied significantly—some customers received comprehensive training while others got minimal setup, leading to wildly different adoption rates and satisfaction scores.
 
 A rapidly scaling B2B SaaS company providing project management and collaboration software for mid-market professional services firms with 85-110 employees and 2,400+ active customers accelerated new customer acquisition from 80 to 400+ customers quarterly after Series B funding expanded the sales team from 8 to 35 reps. Manual onboarding processes designed for slower growth became a critical bottleneck. Data migrations from competing platforms took 15-20 hours per customer and frequently required rework. Revenue couldn't be recognized until customers were fully onboarded, meaning Q1 sales often weren't recognized until Q2.`}

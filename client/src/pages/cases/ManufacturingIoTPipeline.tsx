@@ -7,7 +7,7 @@ export function ManufacturingIoTPipeline() {
       industry="Manufacturing · Data Engineering"
       title="Manufacturer Builds IoT Sensor Data Platform"
       subtitle="Industrial equipment company ingests 2 million sensor events per hour, enabling predictive maintenance and 30% downtime reduction."
-      heroImage="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=1600&q=80"
+      heroImage="/images/industries/mfg-robotics.jpg"
       challenge={`A mid-sized industrial equipment manufacturer operating 8 production facilities across the United States faced mounting maintenance costs and unplanned equipment downtime. Their 450 CNC machines, robotic arms, and conveyor systems generated sensor data (temperature, vibration, pressure, runtime metrics) that was logged locally but never analyzed. Maintenance teams relied on reactive repairs and fixed schedules, leading to unexpected failures that cost $85K per hour in lost production and emergency service calls averaging $15K per incident.
 
 The company's IT team of 6 people had no experience building IoT data pipelines or implementing machine learning for predictive maintenance. They needed to centralize sensor data from 1,200+ connected devices, build real-time monitoring dashboards for plant managers, and develop predictive models to forecast equipment failures 48-72 hours in advance. Leadership wanted to build an in-house solution using cloud infrastructure, but lacked the specialized engineering talent to execute.`}

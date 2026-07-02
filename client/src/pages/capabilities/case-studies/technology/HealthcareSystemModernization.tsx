@@ -7,7 +7,7 @@ export function HealthcareSystemModernization() {
       industry="Healthcare · Technology"
       title="Regional Healthcare System Modernizes Core Technology"
       subtitle="How a 12-hospital healthcare system modernized legacy infrastructure while maintaining 24/7 operations."
-      heroImage="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80"
+      heroImage="/case-healthcare-analytics.0ceb030c.jpg"
       challenge={`A regional healthcare system operating 12 hospitals and 85 outpatient facilities faced a technology crisis. Their core clinical and administrative systems ran on aging infrastructure that was increasingly difficult and expensive to maintain. System outages were becoming more frequent, threatening patient care and regulatory compliance.
 
 The organization needed to modernize their technology foundation while maintaining 24/7 operations across all facilities. Any significant downtime could impact patient care, violate HIPAA requirements, and damage the organization's reputation in a competitive market. Previous modernization attempts had stalled due to the complexity of healthcare IT environments, resistance from clinical staff, and concerns about disrupting patient care. Leadership needed a new approach that could deliver results without unacceptable risk.`}

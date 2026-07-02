@@ -15,7 +15,8 @@ export default function MarketExpansion() {
       serviceName="Market Expansion"
       serviceSlug="market-expansion"
       heroSubtitle="We help you enter new geographic markets and customer segments with localized GTM strategies and partner networks."
-      heroImage="/images/go-to-market-abstract.jpg"
+      heroImage="/images/capabilities/cap-mobile-woman.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Market Expansion engagements delivered" },
@@ -70,7 +71,7 @@ export default function MarketExpansion() {
           title: "Regional Distributor Launches Digital Marketplace",
           industry: "Distribution · Business Building",
           metric: "$50M+",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/industries/deal-handshake.jpg",
         },
       ]}
       relatedServices={[

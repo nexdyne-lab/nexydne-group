@@ -7,7 +7,7 @@ export function MediaCompanyDAM() {
       industry="Media · Content Management"
       title="Media Company Centralizes 2M Assets with DAM Platform"
       subtitle="Unified digital asset library for video, audio, and image content across 12 production teams and 40 distribution channels, reducing asset search time from 45 minutes to 30 seconds."
-      heroImage="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1600&q=80"
+      heroImage="/images/industries/tech-datacenter.jpg"
       challenge={`A regional broadcast media company with 12 production teams and 40 distribution channels (linear TV, streaming platforms, social media, syndication partners) struggled with content chaos. Their 2 million digital assets—raw footage, edited segments, B-roll, graphics, audio clips, and promotional materials—were scattered across local workstations, network drives, and cloud storage accounts with inconsistent naming conventions and zero metadata.
 
 Producers spent 45 minutes on average searching for specific clips, often giving up and re-shooting footage they knew existed somewhere. Duplicate assets proliferated—the same interview clip existed in 8 different folders with names like "final_v3.mp4" and "approved_FINAL_FINAL.mp4." Rights management was nonexistent, leading to 3 copyright violations in the past year when expired stock footage aired on live broadcasts.

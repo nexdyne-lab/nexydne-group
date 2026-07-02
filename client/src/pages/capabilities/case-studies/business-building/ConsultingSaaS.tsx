@@ -7,7 +7,7 @@ export function ConsultingSaaS() {
       industry="Professional Services · Business Building"
       title="Professional Services Firm Builds SaaS Product"
       subtitle="How a consulting firm transformed their proprietary methodology into a subscription software product, creating recurring revenue and expanding market reach."
-      heroImage="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80"
+      heroImage="/images/capabilities/cap-team-screens.jpg"
       challenge={`Project-based revenue created feast-or-famine cycles. The firm's methodology was valuable but delivery required expensive senior consultants. Smaller companies couldn't afford full engagements. The leadership sought recurring revenue and broader market access while protecting their intellectual property.
 
 A 120-employee management consulting firm specializing in operational excellence had developed a proprietary assessment and improvement methodology over 15 years, with revenue entirely project-based and subject to significant seasonality. The challenge was translating a methodology that depended on experienced human judgment into software that could deliver meaningful value self-service, without cannibalizing the core consulting business or creating a product so watered-down it damaged the firm's reputation.`}

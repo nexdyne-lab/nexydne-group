@@ -15,7 +15,8 @@ export default function PropensityModeling() {
       serviceName="Propensity Modeling"
       serviceSlug="propensity-modeling"
       heroSubtitle="Predict which customers are most likely to buy, respond to campaigns, or take specific actions. Prioritize outreach for maximum impact. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-data-analytics.01de594d.jpg"
+      heroImage="/images/capabilities/cap-circuit-green.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Propensity Modeling engagements delivered" },
@@ -68,14 +69,14 @@ export default function PropensityModeling() {
           title: "AI-driven patient engagement for a major hospital system",
           industry: "Healthcare",
           metric: "35%",
-          image: "/case-medical-collaboration.9602cc8c.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Automating client onboarding for a global wealth management firm",
           industry: "Financial Services",
           metric: "60%",
-          image: "/case-advisor-client.eb15e04e.jpg",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
       ]}
       relatedServices={[

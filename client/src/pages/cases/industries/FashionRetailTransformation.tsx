@@ -11,7 +11,7 @@ export default function FashionRetailTransformation() {
       industryLink="/industries/retail"
       title="Fashion Retailer Achieves 85% E-Commerce Growth Through Digital Transformation"
       subtitle="How a unified commerce platform, AI-powered personalization, and omnichannel fulfillment transformed a traditional retailer into a digital leader."
-      heroImage="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1920&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       metrics={[
         { value: "85%", label: "E-Commerce Growth" },
         { value: "32%", label: "Higher Conversion" },
@@ -111,14 +111,14 @@ export default function FashionRetailTransformation() {
           metric: "35%",
           label: "reduction in waste",
           link: "/cases/grocery-demand-forecasting",
-          image: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&q=80"
+          image: "/images/capabilities/cap-retail-data.jpg"
         },
         {
           title: "Loyalty Program Transformation",
           metric: "45%",
           label: "increase in member spend",
           link: "/cases/retail-loyalty-transformation",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80"
+          image: "/images/industries/retail-shelves.jpg"
         }
       ]}
       ctaTitle="Ready to Transform Your Retail Business?"

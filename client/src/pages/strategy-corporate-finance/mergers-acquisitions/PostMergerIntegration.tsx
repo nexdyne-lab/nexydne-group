@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceMergersAcquisitionsPostMergerInt
       serviceName="Post-Merger Integration"
       serviceSlug="post-merger-integration"
       heroSubtitle="Plan and execute integration to capture synergies. Manage cultural integration and operational alignment."
-      heroImage="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/deal-handshake.jpg"
       experienceStats={[
         { number: "100+", label: "Mergers & Acquisitions engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,14 +52,14 @@ export default function StrategyCorporateFinanceMergersAcquisitionsPostMergerInt
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Strategy",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/industries/fin-handshake-city.jpg",
         },
         {
           slug: "insurance-claims-processing",
           title: "Insurer Slashes Claims Processing Time With Intelligent Workflow",
           industry: "Financial Services · Strategy",
           metric: "65%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/industries/meeting-topview.jpg",
         },
       ]}
       relatedServices={[

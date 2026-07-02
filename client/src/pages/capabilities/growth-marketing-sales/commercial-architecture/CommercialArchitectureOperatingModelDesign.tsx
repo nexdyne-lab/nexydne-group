@@ -15,7 +15,8 @@ export default function CommercialArchitectureOperatingModelDesign() {
       serviceName="Commercial Architecture Operating Model Design"
       serviceSlug="commercial-architecture-operating-model-design"
       heroSubtitle="Translate commercial architecture ambition into the team structure, governance cadence, and KPIs that make execution repeatable rather than heroic."
-      heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80"
+      heroImage="/images/capabilities/cap-dome-blue.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Commercial Architecture Operating Model Design engagements delivered" },
@@ -70,14 +71,14 @@ export default function CommercialArchitectureOperatingModelDesign() {
           title: "Accounting firm modernizes audit workflows",
           industry: "Professional Services · Commercial Architecture",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "Law firm slashes contract review with secure GenAI",
           industry: "Legal Services · Commercial Architecture",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1600&q=80",
+          image: "/images/capabilities/cap-3d-printing.jpg",
         },
       ]}
       relatedServices={[

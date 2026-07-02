@@ -9,7 +9,7 @@ export default function HiringForBuilders() {
       title: "The Corporate Venture Advantage",
       description: "Why established assets combined with startup speed create an unfair market advantage.",
       readTime: "6 min read",
-      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80",
+      image: "/images/capabilities/cap-lightbulb-idea.jpg",
       link: "/insights/corporate-venture-advantage"
     },
     {
@@ -18,7 +18,7 @@ export default function HiringForBuilders() {
       title: "From MVP to Scale",
       description: "Navigating the 'valley of death' and operationalizing your new venture for growth.",
       readTime: "10 min read",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80",
+      image: "/images/capabilities/cap-venturing.jpg",
       link: "/insights/from-mvp-to-scale"
     },
     {
@@ -27,7 +27,7 @@ export default function HiringForBuilders() {
       title: "Building a Data-First Culture",
       description: "NexDyne's Chief Data Officer discusses the human side of digital change.",
       readTime: "12 min watch",
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80",
+      image: "/images/capabilities/cap-telescope.jpg",
       link: "/insights/building-data-culture"
     }
   ];
@@ -40,7 +40,7 @@ export default function HiringForBuilders() {
       subtitle="The type of person who thrives in a structured corporate hierarchy is rarely the same person who can build a business from zero to one. Here is how to find, hire, and retain the 'builders.'"
       readTime="5 min read"
       publishDate="October 15, 2024"
-      heroImage="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
+      heroImage="/images/industries/team-strategy-board.jpg"
       heroImageAlt="Hiring for Builders"
       authorName="Marcus Rivera"
       authorRole="Chief People Officer, NexDyne"

@@ -10,7 +10,8 @@ export default function AIStrategyRoadmap() {
       slug="ai-strategy-roadmap"
       heroSubtitle="Define your AI vision and build a prioritized implementation plan. Chart a path from experimentation to enterprise-scale AI — anchored to business outcomes, not headlines."
       // TODO: confirm hero image asset matches AI Strategy & Roadmap theme
-      heroImage="/hero-consultant.efacd953.jpg"
+      heroImage="/images/industries/team-strategy-board.jpg"
+      heroFocal="60% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "120+", label: "AI strategies developed for enterprise clients" },
@@ -116,21 +117,21 @@ export default function AIStrategyRoadmap() {
           title: "Transforming knowledge management for a global consulting firm",
           industry: "Professional Services",
           metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
         {
           slug: "healthcare-patient-engagement",
           title: "Building an AI-powered patient engagement platform for better outcomes",
           industry: "Healthcare",
           metric: "40%",
-          image: "/case-patient-care.b97e3209.jpeg",
+          image: "/images/capabilities/cap-presenting-graphs.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Automating wealth management operations for better client experiences",
           industry: "Financial Services",
           metric: "45%",
-          image: "/case-advisor-client.eb15e04e.jpg",
+          image: "/images/industries/advisor-charts.jpg",
         },
       ]}
       relatedCapabilities={[

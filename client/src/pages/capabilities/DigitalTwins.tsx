@@ -10,7 +10,8 @@ export default function DigitalTwins() {
       slug="digital-twins"
       heroSubtitle="Create virtual replicas of physical assets, processes, and systems — to simulate, predict, and optimize performance in real time, and test scenarios before you commit them to the real world."
       // TODO: confirm hero image asset matches Digital Twins theme
-      heroImage="/data-platform-architecture.8ff88a38.png"
+      heroImage="/images/capabilities/cap-dome-blue.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "75+", label: "Digital twin deployments delivered" },
@@ -116,21 +117,21 @@ export default function DigitalTwins() {
           title: "Optimizing clinical workflows to save 15 hours per physician weekly",
           industry: "Healthcare",
           metric: "15hrs",
-          image: "/case-medical-collaboration.9602cc8c.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
         {
           slug: "healthcare-data-analytics",
           title: "Unlocking healthcare insights with real-time data analytics",
           industry: "Healthcare",
           metric: "25%",
-          image: "/case-healthcare-team.5797392b.jpg",
+          image: "/images/industries/tech-datacenter.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "Scaling telehealth services to reach 50,000+ patients monthly",
           industry: "Healthcare",
           metric: "50K+",
-          image: "/case-doctor-consultation.799c1562.jpg",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
       ]}
       relatedCapabilities={[

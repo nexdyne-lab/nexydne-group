@@ -10,7 +10,8 @@ export default function IoT() {
       slug="internet-of-things"
       heroSubtitle="Connect, monitor, and optimize your physical assets with intelligent IoT solutions — driving operational excellence, unlocking new business models, and turning sensor data into a daily decision input across the enterprise."
       // TODO: confirm hero image asset matches Internet of Things theme
-      heroImage="/case-study-manufacturing.8d72bf05.jpg"
+      heroImage="/images/capabilities/cap-iot-network.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "150+", label: "IoT deployments delivered" },

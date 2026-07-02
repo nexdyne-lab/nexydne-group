@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceBusinessStrategyDigitalStrategy(
       serviceName="Digital Strategy"
       serviceSlug="digital-strategy"
       heroSubtitle="Leverage technology for competitive advantage. Define your digital roadmap and prioritize investments that drive business value."
-      heroImage="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-chess.jpg"
       experienceStats={[
         { number: "100+", label: "Business Strategy & Transformation engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,21 +52,21 @@ export default function StrategyCorporateFinanceBusinessStrategyDigitalStrategy(
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Strategy",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Scales Cross-Border Payments With Intelligent Automation",
           industry: "Financial Services · Strategy",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?w=1600&q=80",
+          image: "/images/industries/team-strategy-board.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
           industry: "Financial Services · Strategy",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80",
+          image: "/images/capabilities/cap-strategy-spheres.jpg",
         },
       ]}
       relatedServices={[

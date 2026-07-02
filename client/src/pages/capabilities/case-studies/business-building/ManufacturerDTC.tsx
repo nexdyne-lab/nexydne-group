@@ -7,7 +7,7 @@ export function ManufacturerDTC() {
       industry="Manufacturing · Business Building"
       title="Manufacturer Creates Direct-to-Consumer Channel"
       subtitle="How a specialty manufacturer built a successful D2C business alongside their B2B channel, capturing higher margins and building brand equity."
-      heroImage="https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=80"
+      heroImage="/images/industries/mfg-robot-arm.jpg"
       challenge={`Retail partners controlled pricing and customer experience. Margin pressure from retailers was intensifying. The company had no direct customer data or relationships. Competitors were successfully launching D2C channels. The leadership needed to build D2C without alienating existing retail partners.
 
 A 200-employee specialty manufacturer producing premium outdoor equipment sold exclusively through retailers and distributors had strong brand recognition among enthusiasts but limited direct customer relationships. Retail consolidation was reducing leverage and squeezing margins while larger competitors used D2C channel data to make faster product decisions. Without direct consumer relationships, the company was flying blind on true end-user preferences and needs.`}

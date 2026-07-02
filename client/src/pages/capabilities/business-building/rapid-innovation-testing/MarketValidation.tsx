@@ -15,7 +15,8 @@ export default function MarketValidation() {
       serviceName="Market Validation"
       serviceSlug="market-validation"
       heroSubtitle="We execute structured customer-discovery and pilot programs that test prototypes with real users in real contexts. This phase generates quantitative and qualitative evidence about demand, usability, and willingness to pay."
-      heroImage="/images/rapid-innovation-abstract.jpg"
+      heroImage="/images/capabilities/cap-tablet-work.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Market Validation engagements delivered" },
@@ -70,14 +71,14 @@ export default function MarketValidation() {
           title: "Healthcare Provider Launches Telehealth Venture",
           industry: "Healthcare · Business Building",
           metric: "5 Mo",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-lightbulb-idea.jpg",
         },
         {
           slug: "wealth-adjacent",
           title: "Financial Services Firm Enters Adjacent Market",
           industry: "Financial Services · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1600&q=80",
+          image: "/images/capabilities/cap-3d-printing.jpg",
         },
       ]}
       relatedServices={[

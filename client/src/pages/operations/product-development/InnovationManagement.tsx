@@ -11,7 +11,7 @@ export default function OperationsProductDevelopmentInnovationManagement() {
       serviceName="Innovation Management"
       serviceSlug="innovation-management"
       heroSubtitle="Develop innovation processes and culture that generate a steady stream of new product ideas aligned with market opportunities."
-      heroImage="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-3d-printing.jpg"
       experienceStats={[
         { number: "100+", label: "Product Development engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsProductDevelopmentInnovationManagement() {
           title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
           industry: "Professional Services · Operations",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
           industry: "Professional Services · Operations",
           metric: "85%",
-          image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&q=80",
+          image: "/images/capabilities/cap-tablet-woman.jpg",
         },
       ]}
       relatedServices={[

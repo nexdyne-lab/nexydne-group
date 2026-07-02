@@ -15,7 +15,8 @@ export default function TechnicalArchitecture() {
       serviceName="Technical Architecture"
       serviceSlug="technical-architecture"
       heroSubtitle="Design the data architecture and infrastructure required to support enterprise-grade LLMs, connecting foundation models with your proprietary data securely. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-ai-agents.eba3d75f.jpg"
+      heroImage="/images/industries/tech-circuit.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Technical Architecture engagements delivered" },
@@ -68,7 +69,7 @@ export default function TechnicalArchitecture() {
           title: "Transforming legal research with AI-powered document intelligence",
           industry: "Professional Services",
           metric: "70%",
-          image: "/case-legal-team.2f84fc95.jpg",
+          image: "/images/capabilities/cap-coder.jpg",
         },
       ]}
       relatedServices={[

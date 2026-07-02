@@ -15,7 +15,8 @@ export default function FeaturePrioritization() {
       serviceName="Feature Prioritization"
       serviceSlug="feature-prioritization"
       heroSubtitle="Build the right things in the right order. Our prioritization frameworks balance customer value, business impact, and development effort."
-      heroImage="/images/product-strategy-abstract.jpg"
+      heroImage="/images/capabilities/cap-tablet-woman.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Feature Prioritization engagements delivered" },
@@ -70,7 +71,7 @@ export default function FeaturePrioritization() {
           title: "Professional Services Firm Builds SaaS Product",
           industry: "Professional Services · Business Building",
           metric: "$3.2M",
-          image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80",
+          image: "/images/capabilities/cap-3d-printing.jpg",
         },
       ]}
       relatedServices={[

@@ -11,7 +11,7 @@ export default function StrategyCorporateFinancePerformanceImprovementOrganizati
       serviceName="Organizational Efficiency"
       serviceSlug="organizational-efficiency"
       heroSubtitle="Right-size the organization and eliminate redundancy. Improve spans of control and decision-making speed."
-      heroImage="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
       experienceStats={[
         { number: "100+", label: "Performance Improvement engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,7 +52,7 @@ export default function StrategyCorporateFinancePerformanceImprovementOrganizati
           title: "Health System Unlocks Population Health Insights With Unified Data Platform",
           industry: "Healthcare · Strategy",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

@@ -7,7 +7,7 @@ export function MedicalPracticeCaseStudy() {
       industry="Healthcare · Operations"
       title="35% Reduction in Patient Wait Times"
       subtitle="A network of 12 primary care and specialty clinics with 180 staff members implements AI-powered scheduling optimization, reducing patient wait times by 35% while increasing appointment utilization across the network."
-      heroImage="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80"
+      heroImage="/case-medical-collaboration.9602cc8c.jpg"
       challenge={`This physician-owned practice network had grown through acquisition over 15 years, bringing together primary care, internal medicine, and specialty clinics under unified management. But each clinic had retained its own scheduling practices, creating inconsistent patient experiences and operational inefficiencies.
 
 Patients complained about long wait times, while providers felt rushed or underutilized depending on the day. No-show rates averaged 18% across the network, with some clinics experiencing rates as high as 25%. Front desk staff spent hours each day making reminder calls and managing schedule changes.

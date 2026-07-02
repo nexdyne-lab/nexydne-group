@@ -11,7 +11,7 @@ export default function OperationsProcessAutomationProcessAssessmentPrioritizati
       serviceName="Process Assessment & Prioritization"
       serviceSlug="process-assessment-prioritization"
       heroSubtitle="Identify automation opportunities across your operations. Prioritize by impact, feasibility, and strategic value to build a compelling business case."
-      heroImage="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-robot-factory.jpg"
       experienceStats={[
         { number: "100+", label: "Process Automation engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsProcessAutomationProcessAssessmentPrioritizati
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Operations",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-warehouse-robot.jpg",
         },
         {
           slug: "insurance-claims-processing",
           title: "P&C Insurer Cuts Claims Cycle Time with Intelligent Automation",
           industry: "Financial Services · Operations",
           metric: "55%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/industries/ops-gears.jpg",
         },
       ]}
       relatedServices={[

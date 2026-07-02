@@ -11,7 +11,7 @@ export default function UniversityStudentSuccess() {
       industryLink="/industries/education"
       title="University Improves Graduation Rates 18% with Student Success Platform"
       subtitle="How AI-powered early warning systems identify at-risk students and trigger personalized interventions that keep them on track to graduation."
-      heroImage="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&q=80"
+      heroImage="/images/industries/edu-whiteboard.jpg"
       metrics={[
         { value: "18%", label: "Higher Graduation Rate" },
         { value: "85%", label: "Prediction Accuracy" },
@@ -111,14 +111,14 @@ export default function UniversityStudentSuccess() {
           metric: "25%",
           label: "improvement in learning outcomes",
           link: "/cases/k12-adaptive-learning",
-          image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80"
+          image: "/images/industries/team-strategy-board.jpg"
         },
         {
           title: "Online Programs Transformation",
           metric: "3x",
           label: "enrollment growth",
           link: "/cases/university-online-programs",
-          image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&q=80"
+          image: "/images/industries/women-laptops.jpg"
         }
       ]}
       ctaTitle="Ready to Improve Student Success?"

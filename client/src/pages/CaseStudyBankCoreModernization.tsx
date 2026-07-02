@@ -243,7 +243,7 @@ export default function CaseStudyBankCoreModernization() {
             </blockquote>
             <div className="flex items-center justify-center space-x-4">
               <div className="w-14 h-14 bg-charcoal/10 rounded-full overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" alt="CTO" className="w-full h-full object-cover" />
+                <img src="/images/industries/fin-monitors.jpg" alt="CTO" className="w-full h-full object-cover" />
               </div>
               <div className="text-left">
                 <div className="text-charcoal font-bold">Robert Chen</div>
@@ -288,21 +288,21 @@ export default function CaseStudyBankCoreModernization() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4 sm:p-6 md:p-8 lg:gap-5 sm:p-7 md:p-5 sm:p-7 md:p-10">
             {[
               {
-                image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2670&auto=format&fit=crop",
+                image: "/images/industries/fin-trader.jpg",
                 category: "Healthcare",
                 title: "Interoperable EHR Platform",
                 description: "Unifying patient data across 12 locations for real-time access.",
                 link: "/cases/healthcare-ehr-modernization"
               },
               {
-                image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&q=80",
+                image: "/images/industries/fin-handshake-city.jpg",
                 category: "Fintech",
                 title: "Payment Processing Automation",
                 description: "Scaling transaction volume by 10x with automated reconciliation.",
                 link: "/cases/fintech-payment-automation"
               },
               {
-                image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2670&auto=format&fit=crop",
+                image: "/images/industries/advisor-charts.jpg",
                 category: "Insurance",
                 title: "Claims Processing AI",
                 description: "Reducing claims processing time by 85% with intelligent automation.",

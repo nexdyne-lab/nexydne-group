@@ -10,6 +10,7 @@ export default function ProductStrategyDesign() {
       slug="product-strategy-design"
       heroSubtitle="Build products users love. We combine strategic thinking with human-centered design to create experiences that win in the market — from vision to pixel-perfect interface."
       heroImage="/images/product-strategy-abstract.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "85+", label: "Products designed and launched across B2B, B2C, and marketplace models" },
@@ -113,21 +114,21 @@ export default function ProductStrategyDesign() {
           title: "Professional Services Firm Builds SaaS Product",
           industry: "Professional Services · Business Building",
           metric: "$3.2M",
-          image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80",
+          image: "/images/capabilities/cap-venturing.jpg",
         },
         {
           slug: "manufacturer-dtc",
           title: "Manufacturer Creates Direct-to-Consumer Channel",
           industry: "Manufacturing · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=80",
+          image: "/images/capabilities/cap-lightbulb-idea.jpg",
         },
         {
           slug: "ecommerce-platform-launch",
           title: "Industrial Distributor Launches B2B E-commerce Platform",
           industry: "Industrial Distribution · Business Building",
           metric: "47%",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
       ]}
       relatedCapabilities={[

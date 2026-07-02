@@ -10,7 +10,7 @@ export default function ModernizationHub() {
       hubName="Modernization"
       slug="technology/modernization-hub"
       heroSubtitle="Replatform, refactor, and replace patterns for legacy systems — connected by a modern API layer. We retire the old estate without breaking the business and unlock the integration patterns that make the modernization actually compound."
-      heroImage="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-aerial-grid.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "45+", label: "Modernization and integration engagements delivered for mid-market and enterprise clients" },

@@ -7,7 +7,7 @@ export function RetailDemandForecasting() {
       industry="Retail · Machine Learning"
       title="Retailer Reduces Stockouts 35% with Demand Forecasting"
       subtitle="Multi-location forecasting model predicts SKU-level demand 8 weeks ahead, optimizing inventory across 200 stores and cutting overstock 28%."
-      heroImage="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`A mid-sized specialty retailer with 200 locations faced chronic inventory problems. Popular items sold out before replenishment arrived, while slow-moving SKUs accumulated in back rooms. Store managers ordered based on gut feel, corporate buyers relied on last year's sales, and nobody could predict seasonal spikes accurately.
 
 The financial impact was severe: $12M in lost sales from stockouts, $6M in markdowns to clear excess inventory, and deteriorating customer satisfaction as shoppers learned not to rely on product availability. Their existing inventory system used simple moving averages that couldn't handle regional demand variation, promotional effects, or weather-driven purchasing patterns.

@@ -11,7 +11,7 @@ export default function OperationsQualityManagementSupplierQualityManagement() {
       serviceName="Supplier Quality Management"
       serviceSlug="supplier-quality-management"
       heroSubtitle="Extend quality standards to your supply base. Develop supplier qualification, monitoring, and development programs."
-      heroImage="https://images.unsplash.com/photo-1581092446327-9b52bd1570c2?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/mfg-robotics.jpg"
       experienceStats={[
         { number: "100+", label: "Quality Management engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsQualityManagementSupplierQualityManagement() {
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Operations",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-battery-factory.jpg",
         },
         {
           slug: "accounting-audit-automation",
           title: "Big Four Firm Modernizes Audit with End-to-End Automation",
           industry: "Professional Services · Operations",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1600&q=80",
+          image: "/images/industries/mfg-robot-arm.jpg",
         },
       ]}
       relatedServices={[

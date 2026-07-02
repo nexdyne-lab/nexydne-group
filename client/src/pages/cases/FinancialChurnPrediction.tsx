@@ -7,7 +7,7 @@ export function FinancialChurnPrediction() {
       industry="Financial Services · Predictive Analytics"
       title="Financial Services Firm Reduces Churn by 28% with Predictive Analytics"
       subtitle="Machine learning models identify at-risk customers 90 days before defection and trigger automated retention campaigns that save $47M in annual revenue."
-      heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       challenge={`A regional financial services firm managing $12 billion in assets faced escalating customer attrition that threatened long-term profitability. Annual churn rates had climbed to 14.2%—significantly above industry benchmarks—costing the firm approximately $168 million in lost revenue and requiring aggressive customer acquisition spending to maintain growth targets. The core problem: reactive retention strategies that only engaged customers after they'd already decided to leave.
 
 The firm's existing approach relied on lagging indicators like account closure requests and complaint escalations—signals that appeared only after customers had researched alternatives and made switching decisions. Relationship managers lacked visibility into early warning signs of dissatisfaction, and retention offers were generic rather than tailored to individual customer needs and value profiles.`}

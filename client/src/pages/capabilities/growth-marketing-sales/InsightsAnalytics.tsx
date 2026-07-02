@@ -10,7 +10,8 @@ export default function InsightsAnalytics() {
       hubName="Insights & Analytics"
       slug="insights-analytics"
       heroSubtitle="Marketing analytics, customer insights, and data-driven decision making. We help you turn data into actionable insights that drive marketing performance."
-      heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80"
+      heroImage="/images/capabilities/cap-peacock.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         { number: "250+", label: "analytics transformations delivered across industries" },
         { number: "30%", label: "average improvement in marketing ROI through better measurement" },
@@ -113,21 +114,21 @@ export default function InsightsAnalytics() {
           title: "Health System Builds Unified Analytics Platform Across 18 Hospitals",
           industry: "Healthcare · Analytics",
           metric: "18",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
         {
           slug: "consulting-knowledge-management",
           title: "Consulting Firm Builds AI Knowledge Engine Across 40,000 Engagements",
           industry: "Professional Services · Knowledge",
           metric: "40k+",
-          image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "Global Law Firm Cuts Contract Review Time By 60% With AI Automation",
           industry: "Professional Services · Automation",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=1600&q=80",
+          image: "/images/capabilities/cap-retail-apparel.jpg",
         },
       ]}
       relatedCapabilities={[

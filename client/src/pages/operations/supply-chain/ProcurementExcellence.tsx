@@ -11,7 +11,7 @@ export default function OperationsSupplyChainProcurementExcellence() {
       serviceName="Procurement Excellence"
       serviceSlug="procurement-excellence"
       heroSubtitle="Transform procurement from cost center to value creator. Strategic sourcing, supplier development, and contract optimization."
-      heroImage="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/retail-warehouse.jpg"
       experienceStats={[
         { number: "100+", label: "Supply Chain Optimization engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsSupplyChainProcurementExcellence() {
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Operations",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/industries/transport-bridge.jpg",
         },
         {
           slug: "accounting-audit-automation",
           title: "Big Four Firm Modernizes Audit with End-to-End Automation",
           industry: "Professional Services · Operations",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1600&q=80",
+          image: "/images/industries/transport-traffic.jpg",
         },
       ]}
       relatedServices={[

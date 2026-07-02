@@ -246,7 +246,7 @@ export default function CaseStudyHealthcareEHRModernization() {
             </blockquote>
             <div className="flex items-center justify-center space-x-4">
               <div className="w-14 h-14 bg-charcoal/10 rounded-full overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=200&auto=format&fit=crop" alt="CMO" className="w-full h-full object-cover" />
+                <img src="/case-medical-collaboration.9602cc8c.jpg" alt="CMO" className="w-full h-full object-cover" />
               </div>
               <div className="text-left">
                 <div className="text-charcoal font-bold">Dr. Sarah Jenkins</div>
@@ -291,21 +291,21 @@ export default function CaseStudyHealthcareEHRModernization() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4 sm:p-6 md:p-8 lg:gap-5 sm:p-7 md:p-5 sm:p-7 md:p-10">
             {[
               {
-                image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2670&auto=format&fit=crop",
+                image: "/case-doctor-consultation.799c1562.jpg",
                 category: "Banking",
                 title: "Legacy Core Migration",
                 description: "Migrating 2M+ customers to cloud microservices with zero downtime.",
                 link: "/cases/bank-core-modernization"
               },
               {
-                image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&q=80",
+                image: "/case-healthcare-analytics.0ceb030c.jpg",
                 category: "Fintech",
                 title: "Payment Processing Automation",
                 description: "Scaling transaction volume by 10x with automated reconciliation.",
                 link: "/cases/fintech-payment-automation"
               },
               {
-                image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2670&auto=format&fit=crop",
+                image: "/case-medical-collaboration.9602cc8c.jpg",
                 category: "Insurance",
                 title: "Claims Processing AI",
                 description: "Reducing claims processing time by 85% with intelligent automation.",

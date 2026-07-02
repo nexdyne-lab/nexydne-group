@@ -11,7 +11,7 @@ export default function OperationsSupplyChainInventoryOptimization() {
       serviceName="Inventory Optimization"
       serviceSlug="inventory-optimization"
       heroSubtitle="Right-size inventory across the network. Balance service levels with working capital through scientific inventory management."
-      heroImage="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/retail-warehouse.jpg"
       experienceStats={[
         { number: "100+", label: "Supply Chain Optimization engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsSupplyChainInventoryOptimization() {
           title: "Health System Builds Population Health Analytics Platform",
           industry: "Healthcare · Operations",
           metric: "$18M",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/industries/transport-bridge.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth Manager Automates Client Onboarding and Portfolio Reporting",
           industry: "Financial Services · Operations",
           metric: "75%",
-          image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1600&q=80",
+          image: "/images/industries/transport-traffic.jpg",
         },
       ]}
       relatedServices={[

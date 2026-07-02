@@ -11,7 +11,7 @@ export default function OperationsProductionOptimizationAssetLifecycleManagement
       serviceName="Asset Lifecycle Management"
       serviceSlug="asset-lifecycle-management"
       heroSubtitle="Optimize asset performance across the lifecycle. Capital planning, reliability engineering, and end-of-life decisions that maximize ROI."
-      heroImage="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/mfg-robotics.jpg"
       experienceStats={[
         { number: "100+", label: "Production Optimization engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,7 +52,7 @@ export default function OperationsProductionOptimizationAssetLifecycleManagement
           title: "Wealth Manager Automates Client Onboarding and Portfolio Reporting",
           industry: "Financial Services · Operations",
           metric: "75%",
-          image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1600&q=80",
+          image: "/images/capabilities/cap-battery-factory.jpg",
         },
       ]}
       relatedServices={[

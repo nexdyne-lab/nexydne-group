@@ -7,7 +7,7 @@ export function MunicipalPermitSystem() {
       industry="Public Sector · Low-Code Development"
       title="City Government Modernizes Permit System Serving 250K Residents"
       subtitle="Municipal government replaces 30-year-old legacy system with Microsoft Power Platform solution—reducing permit approval time from 45 days to 7 days and improving citizen satisfaction by 58 points."
-      heroImage="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1600&q=80"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
       challenge={`A mid-sized city government serving 250,000 residents struggled with a 30-year-old permit management system that required citizens to submit paper applications in person and wait weeks for approval. The system handled building permits, business licenses, special event permits, and zoning variances across 12 different departments, each with their own manual review processes. Citizens complained about long wait times, lack of status visibility, and the inconvenience of taking time off work to visit city hall during business hours.
 
 The city's IT department had attempted to modernize the system twice over the past decade, but both projects failed due to budget constraints, vendor lock-in concerns, and resistance from department staff accustomed to paper-based workflows. Average permit approval time had increased to 45 days, well above the state average of 21 days, causing frustration among residents and local businesses. With a new mayor committed to digital government and a federal grant available for technology modernization, the city set a 12-week timeline to launch a digital permit system that could serve all departments while maintaining compliance with state regulations.`}

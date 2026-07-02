@@ -15,7 +15,8 @@ export default function AiPoweredProducts() {
       serviceName="AI-Powered Products"
       serviceSlug="ai-powered-products"
       heroSubtitle="Build AI into your product offering. From recommendation engines to conversational interfaces, we help you create AI-native experiences."
-      heroImage="/images/ai-acceleration-abstract.jpg"
+      heroImage="/images/capabilities/cap-ai-search.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "AI-Powered Products engagements delivered" },
@@ -70,14 +71,14 @@ export default function AiPoweredProducts() {
           title: "Healthcare Provider Launches Telehealth Venture",
           industry: "Healthcare · Business Building",
           metric: "5 Mo",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-circuit-green.jpg",
         },
         {
           slug: "logistics-tech-spinoff",
           title: "Logistics Company Builds Technology Spin-Off",
           industry: "Logistics · Business Building",
           metric: "$28M",
-          image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1600&q=80",
+          image: "/images/capabilities/cap-ai-search.jpg",
         },
       ]}
       relatedServices={[

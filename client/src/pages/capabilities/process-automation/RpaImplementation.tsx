@@ -15,7 +15,8 @@ export default function RpaImplementation() {
       serviceName="RPA Implementation"
       serviceSlug="rpa-implementation"
       heroSubtitle="Deploy robotic process automation using UiPath, Automation Anywhere, or Power Automate. We build bots that are maintainable, scalable, and resilient. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-process-mining.50313a07.jpg"
+      heroImage="/images/capabilities/cap-robot-factory.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "RPA Implementation engagements delivered" },

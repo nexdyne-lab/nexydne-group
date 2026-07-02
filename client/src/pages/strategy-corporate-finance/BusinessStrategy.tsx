@@ -10,7 +10,7 @@ export default function BusinessStrategy() {
       hubName="Business Strategy & Transformation"
       slug="business-strategy"
       heroSubtitle="Define your path to victory. We help you clarify your vision, identify growth engines, and build the organizational capabilities needed to win in your market."
-      heroImage="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-chess.jpg"
       experienceStats={[
         { number: "150+", label: "Strategic transformations led for mid-market companies across diverse industries" },
         { number: "2.5x", label: "Average revenue growth achieved by clients within 3 years of strategy implementation" },
@@ -114,21 +114,21 @@ export default function BusinessStrategy() {
           title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
           industry: "Financial Services · Strategy",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Strategy",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/industries/team-strategy-board.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
           industry: "Financial Services · Strategy",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80",
+          image: "/images/capabilities/cap-strategy-spheres.jpg",
         },
       ]}
       relatedCapabilities={[

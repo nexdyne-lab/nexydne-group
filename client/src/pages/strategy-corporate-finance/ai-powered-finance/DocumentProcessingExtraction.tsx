@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceAiPoweredFinanceDocumentProcessi
       serviceName="Document Processing & Extraction"
       serviceSlug="document-processing-extraction"
       heroSubtitle="Transform unstructured financial documents into structured data. Invoices, contracts, and statements processed automatically with high accuracy."
-      heroImage="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-robot-factory.jpg"
       experienceStats={[
         { number: "100+", label: "AI-Powered Finance engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },

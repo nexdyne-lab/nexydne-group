@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceCfoServicesFundraisingSupport() 
       serviceName="Fundraising Support"
       serviceSlug="fundraising-support"
       heroSubtitle="Prepare for funding rounds with financial models, due diligence packages, and investor pitch support."
-      heroImage="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/advisor-charts.jpg"
       experienceStats={[
         { number: "100+", label: "Fractional CFO Services engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,21 +52,21 @@ export default function StrategyCorporateFinanceCfoServicesFundraisingSupport() 
           title: "Fintech Scales Cross-Border Payments With Intelligent Automation",
           industry: "Financial Services · Strategy",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?w=1600&q=80",
+          image: "/images/capabilities/cap-presenting-graphs.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
           industry: "Financial Services · Strategy",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80",
+          image: "/images/industries/meeting-topview.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
           industry: "Professional Services · Strategy",
           metric: "85%",
-          image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&q=80",
+          image: "/images/industries/fin-monitors.jpg",
         },
       ]}
       relatedServices={[

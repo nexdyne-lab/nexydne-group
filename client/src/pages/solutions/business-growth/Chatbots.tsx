@@ -53,7 +53,7 @@ export default function Chatbots() {
                 <div className="mb-6">
                   <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden bg-gradient-to-br from-secondary/20 to-primary/20 flex items-center justify-center">
                     <img 
-                      src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop" 
+                      src="/images/capabilities/cap-celebrate.jpg" 
                       alt="Contact person"
                       className="w-full h-full object-cover"
                     />
@@ -148,7 +148,7 @@ export default function Chatbots() {
               <div className="flex-shrink-0">
                 <div className="w-48 h-48 rounded-full overflow-hidden bg-gradient-to-br from-secondary/20 to-primary/20 flex items-center justify-center">
                   <img 
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop" 
+                    src="/images/capabilities/cap-lightbulb-idea.jpg" 
                     alt="NEXDYNE Expert"
                     className="w-full h-full object-cover"
                   />
@@ -179,7 +179,7 @@ export default function Chatbots() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop" 
+                src="/images/capabilities/cap-retail-apparel.jpg" 
                 alt="NEXDYNE office building"
                 className="rounded-lg shadow-2xl"
               />

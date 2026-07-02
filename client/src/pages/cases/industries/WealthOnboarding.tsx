@@ -11,7 +11,7 @@ export default function WealthOnboarding() {
       industryLink="/industries/financial-services"
       title="Wealth Manager Transforms Client Onboarding Experience"
       subtitle="How intelligent document processing and automated compliance workflows reduced onboarding time from 3 weeks to 5 days while improving accuracy."
-      heroImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       metrics={[
         { value: "60%", label: "Faster Onboarding" },
         { value: "95%", label: "Document Accuracy" },
@@ -111,14 +111,14 @@ export default function WealthOnboarding() {
           metric: "73%",
           label: "reduction in fraud losses",
           link: "/cases/financial-fraud-detection",
-          image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80"
+          image: "/images/industries/fin-trader.jpg"
         },
         {
           title: "Multinational Bank Cross-Sell Transformation",
           metric: "$200M",
           label: "increase in cross-sell revenue",
           link: "/cases/bank-cross-sell",
-          image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
+          image: "/images/industries/fin-handshake-city.jpg"
         }
       ]}
       ctaTitle="Ready to Transform Your Client Experience?"

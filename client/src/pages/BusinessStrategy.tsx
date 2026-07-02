@@ -105,7 +105,7 @@ export default function BusinessStrategy() {
             >
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80" 
+                  src="/images/capabilities/cap-chess.jpg" 
                   alt="Strategic Planning" 
                   className="w-full h-auto"
                 />
@@ -287,19 +287,19 @@ export default function BusinessStrategy() {
               {
                 title: "Professional services firm achieves 45% revenue growth",
                 category: "Growth Strategy",
-                image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+                image: "/images/capabilities/cap-telescope.jpg",
                 link: "/case-studies/professional-services-growth"
               },
               {
                 title: "Distribution company reduces operating costs by 22%",
                 category: "Restructuring",
-                image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80",
+                image: "/images/industries/team-strategy-board.jpg",
                 link: "/case-studies/distribution-restructuring"
               },
               {
                 title: "Healthcare company delivers digital transformation in 18 months",
                 category: "Transformation",
-                image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80",
+                image: "/images/capabilities/cap-aerial-grid.jpg",
                 link: "/case-studies/healthcare-transformation"
               }
             ].map((study, i) => (
@@ -405,19 +405,19 @@ export default function BusinessStrategy() {
             title: "Why Strategic Plans Fail and How to Ensure Yours Succeeds",
             category: "Strategy",
             link: "/insights/strategic-plans-success",
-            image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-chess.jpg"
           },
           {
             title: "The Operating Model Redesign Playbook",
             category: "Transformation",
             link: "/insights/operating-model-redesign",
-            image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-telescope.jpg"
           },
           {
             title: "Portfolio Management for Strategic Initiatives",
             category: "Execution",
             link: "/insights/portfolio-management",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+            image: "/images/industries/team-strategy-board.jpg"
           }
         ]}
       />

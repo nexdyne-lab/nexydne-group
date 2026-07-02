@@ -7,7 +7,7 @@ export function MarketingConversionBoost() {
       industry="Technology · Growth Marketing & Sales"
       title="Predictive Lead Scoring & Conversion Optimization"
       subtitle="How a leading B2B SaaS platform leveraged machine learning to identify high-intent prospects, boosting conversion rates by 20% and reducing acquisition costs."
-      heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
       challenge={`A rapidly growing B2B SaaS company was struggling with lead quality despite increasing traffic. Their sales team was overwhelmed with low-quality leads, wasting valuable time on prospects who were unlikely to convert.
 
 Their marketing approach was broad and generic, treating all visitors with the same messaging. They lacked the data infrastructure to segment their audience effectively or predict which leads had the highest propensity to buy.

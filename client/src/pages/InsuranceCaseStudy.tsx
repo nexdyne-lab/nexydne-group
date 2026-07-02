@@ -7,7 +7,7 @@ export function InsuranceCaseStudy() {
       industry="Insurance & Financial Services · Operations"
       title="73% Faster Claims Processing Cycle"
       subtitle="Regional property & casualty insurer automates claims intake and adjudication, reducing average processing time from 14 days to 3.8 days while improving accuracy and customer satisfaction."
-      heroImage="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80"
+      heroImage="/case-insurance-office.f039a4a1.jpg"
       challenge={`Claims arrived through multiple channels—email, fax, mail, and agent portals—requiring staff to manually extract data from PDFs, images, and handwritten forms. Each claim required 45-60 minutes of data entry before adjudication could begin. With 18 adjusters handling claims across different lines, decision-making varied significantly—similar claims received different outcomes depending on which adjuster reviewed them, creating compliance risks and customer fairness concerns.
 
 A regional property and casualty insurance company serving homeowners, small businesses, and commercial clients across six Southeastern states with 280 employees and $340M in annual premiums processed approximately 45,000 claims annually. As the company expanded into new markets, claims volume grew 60% over three years while staffing increased only 15%, creating backlogs and extending processing times. Fraud detection rates were below 40% despite an estimated 3-4% of claims involving some level of fraud, resulting in significant leakage.`}

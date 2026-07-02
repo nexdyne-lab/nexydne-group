@@ -11,7 +11,7 @@ export default function OperationsStrategicProcurementSupplierManagement() {
       serviceName="Supplier Management"
       serviceSlug="supplier-management"
       heroSubtitle="Build strategic supplier relationships through performance management, development programs, and collaborative improvement initiatives."
-      heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/retail-warehouse.jpg"
       experienceStats={[
         { number: "100+", label: "Strategic Procurement engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsStrategicProcurementSupplierManagement() {
           title: "Big Four Firm Modernizes Audit with End-to-End Automation",
           industry: "Professional Services · Operations",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1600&q=80",
+          image: "/images/industries/meeting-topview.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth Manager Automates Client Onboarding and Portfolio Reporting",
           industry: "Financial Services · Operations",
           metric: "75%",
-          image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1600&q=80",
+          image: "/images/industries/advisor-charts.jpg",
         },
       ]}
       relatedServices={[

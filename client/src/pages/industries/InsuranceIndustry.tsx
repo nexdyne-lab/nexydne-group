@@ -11,7 +11,8 @@ export default function InsuranceIndustry() {
       industry="Insurance"
       slug="insurance"
       heroSubtitle="We help carriers, brokers, and reinsurers build the digital capabilities the next decade demands — AI-powered underwriting, automated claims, embedded distribution, and the data infrastructure to make all of it auditable and explainable."
-      heroImage="/case-insurance-office.f039a4a1.jpg"
+      heroImage="/images/industries/fin-handshake-city.jpg"
+      heroFocal="55% 50%"
       povParagraphs={[
         "Insurance has always been about managing risk — but the risks themselves are changing. Climate is reshaping property and casualty exposures. Cyber is creating new categories of loss. And customers expect the same seamless digital experiences they get from their tech-company peers. The carriers that thrive will be those that turn that pressure into opportunity.",
         "We partner with insurers to build the digital capabilities that enable transformation. From AI-powered underwriting that improves risk selection to claims automation that compresses cost and cycle time, our solutions help carriers improve combined ratios while delivering the experiences customers and brokers now expect.",
@@ -83,14 +84,14 @@ export default function InsuranceIndustry() {
           title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
           industry: "Financial Services",
           metric: "10K+ hrs",
-          image: "/case-banker-meeting.c53f3999.jpg"
+          image: "/images/industries/advisor-charts.jpg"
         },
         {
           slug: "fintech-payment-automation",
           title: "Building a scalable payment processing system for a fintech startup",
           industry: "Financial Services",
           metric: "100K+",
-          image: "/case-financial-advisor.7bb94f0c.jpg"
+          image: "/images/industries/biz-team-bright.jpg"
         }
       ]}
     />

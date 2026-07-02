@@ -11,7 +11,8 @@ export default function EducationIndustry() {
       industry="Education"
       slug="education"
       heroSubtitle="We help K-12 systems, universities, and learning platforms build digital and operating capabilities that improve learning outcomes — using AI-powered personalization, modern student-success infrastructure, and operating discipline that respects the mission."
-      heroImage="/blog-team-collaboration.913d82ea.jpg"
+      heroImage="/images/industries/team-strategy-board.jpg"
+      heroFocal="60% 45%"
       povParagraphs={[
         "Education is in a moment of profound change. Students expect personalized, flexible learning experiences. Institutions are being asked to demonstrate outcomes and value. Technology is enabling entirely new models of teaching, learning, and credentialing — and the institutions that lean into that shift are pulling ahead on enrollment, completion, and reputation.",
         "We partner with K-12 systems, research universities, community colleges, corporate-learning organizations, and EdTech platforms to build the digital capabilities the next decade rewards. Our approach combines a deep respect for pedagogy with practical expertise in technology, data, and change — so the work compounds inside the institution rather than living on a vendor invoice.",
@@ -76,21 +77,21 @@ export default function EducationIndustry() {
           title: "Transforming knowledge management for a global consulting firm",
           industry: "Professional Services",
           metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg"
+          image: "/images/industries/edu-whiteboard.jpg"
         },
         {
           slug: "healthcare-data-analytics",
           title: "Unlocking healthcare insights with real-time data analytics",
           industry: "Healthcare",
           metric: "25%",
-          image: "/case-healthcare-team.5797392b.jpg"
+          image: "/images/industries/women-laptops.jpg"
         },
         {
           slug: "accounting-audit-automation",
           title: "How audit automation helped an accounting firm scale 2x without hiring",
           industry: "Professional Services",
           metric: "2x",
-          image: "/case-accountants-audit.1c87a151.jpg"
+          image: "/images/industries/people-commute.jpg"
         }
       ]}
     />

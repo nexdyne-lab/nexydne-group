@@ -11,7 +11,7 @@ export default function WarehouseAutomation() {
       industryLink="/industries/transportation-logistics"
       title="Retailer Improves Warehouse Productivity 45% with Automation"
       subtitle="How robotics, AI-powered slotting, and intelligent automation transformed fulfillment operations to meet e-commerce demand."
-      heroImage="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1920&q=80"
+      heroImage="/images/industries/retail-warehouse.jpg"
       metrics={[
         { value: "45%", label: "Productivity Gain" },
         { value: "99.8%", label: "Order Accuracy" },
@@ -111,14 +111,14 @@ export default function WarehouseAutomation() {
           metric: "18%",
           label: "cost reduction",
           link: "/cases/freight-optimization",
-          image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80"
+          image: "/images/capabilities/cap-warehouse-robot.jpg"
         },
         {
           title: "Last-Mile Delivery Optimization",
           metric: "30%",
           label: "cost reduction",
           link: "/cases/last-mile-optimization",
-          image: "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=600&q=80"
+          image: "/images/industries/transport-bridge.jpg"
         }
       ]}
       ctaTitle="Ready to Automate Your Warehouse?"

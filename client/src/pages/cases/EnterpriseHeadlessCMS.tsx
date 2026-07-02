@@ -7,7 +7,7 @@ export function EnterpriseHeadlessCMS() {
       industry="Manufacturing · Content Operations"
       title="Global Enterprise Reduces Content Ops Cost by 58%"
       subtitle="How a Fortune 500 B2B company consolidated 47 regional websites into one headless platform, cut content management costs in half, and accelerated time-to-market for new digital experiences."
-      heroImage="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80"
+      heroImage="/images/industries/tech-datacenter.jpg"
       challenge={`A global industrial equipment manufacturer operated 47 regional websites across 23 countries, each running on different CMS platforms with separate hosting infrastructure. Content teams in each region worked in isolation, creating inconsistent brand experiences and duplicating effort across markets.
 
 The fragmented architecture created massive operational inefficiencies. Product launches required coordinating content updates across 47 separate systems, often taking 6-8 weeks to achieve global consistency. Regional IT teams spent 60% of their time on CMS maintenance instead of innovation. Annual hosting and licensing costs exceeded $4.2M for infrastructure that delivered mediocre performance.

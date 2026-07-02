@@ -15,7 +15,8 @@ export default function StageGateGovernance() {
       serviceName="Innovation Stage-Gate Governance"
       serviceSlug="stage-gate-governance"
       heroSubtitle="Design the portfolio review cadence, evidence standards, and funding gates that let your leadership team kill, hold, or scale experiments with confidence and consistency."
-      heroImage="/images/rapid-innovation-abstract.jpg"
+      heroImage="/images/capabilities/cap-telescope.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Innovation Stage-Gate Governance engagements delivered" },

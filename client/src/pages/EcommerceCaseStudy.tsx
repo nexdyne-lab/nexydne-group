@@ -7,7 +7,7 @@ export function EcommerceCaseStudy() {
       industry="E-commerce & Retail · Operations"
       title="83% Reduction in Order Fulfillment Errors"
       subtitle="Fast-growing multi-channel retailer with 8 warehouses automates order processing across 4 sales platforms, handling 12,000+ daily orders with near-perfect accuracy."
-      heroImage="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`Orders from 4 different sales channels arrived in separate systems with inconsistent data formats. Warehouse staff manually consolidated orders into a master spreadsheet, creating a 6-8 hour daily bottleneck and frequent transcription errors that sent wrong products to customers. Inventory levels updated to sales channels only once daily at midnight, causing products to continue selling on one platform after selling out on another—resulting in 200+ monthly cancellations and damaged seller ratings.
 
 A rapidly growing multi-channel retailer selling home goods and lifestyle products across their own e-commerce site, Amazon, Walmart Marketplace, and eBay processed over 12,000 orders daily during peak seasons from 8 fulfillment warehouses. After expanding from 2 to 8 warehouses in 18 months to support 300% revenue growth, manual order processing workflows collapsed under volume. Fulfillment errors spiked to 6.8%, creating a cascade of customer complaints, returns, and negative reviews that threatened to derail the growth trajectory.`}

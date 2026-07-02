@@ -11,7 +11,7 @@ export default function HotelGuestExperience() {
       industryLink="/industries/travel-hospitality"
       title="Luxury Hotel Brand Improves NPS 25 Points Through Personalization"
       subtitle="How AI-powered guest profiles and digital innovation created memorable, personalized experiences that drive loyalty and advocacy."
-      heroImage="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1920&q=80"
+      heroImage="/images/industries/travel-city-twilight.jpg"
       metrics={[
         { value: "+25pts", label: "NPS Improvement" },
         { value: "40%", label: "Higher Loyalty" },
@@ -111,14 +111,14 @@ export default function HotelGuestExperience() {
           metric: "18%",
           label: "RevPAR increase",
           link: "/cases/hotel-revenue-management",
-          image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80"
+          image: "/images/industries/city-night.jpg"
         },
         {
           title: "Airline Loyalty Program Redesign",
           metric: "40%",
           label: "increase in engagement",
           link: "/cases/airline-loyalty-redesign",
-          image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80"
+          image: "/images/industries/transport-bridge.jpg"
         }
       ]}
       ctaTitle="Ready to Personalize Guest Experience?"

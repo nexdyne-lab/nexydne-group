@@ -11,7 +11,7 @@ export default function UniversityOnlinePrograms() {
       industryLink="/industries/education"
       title="University Achieves 3x Growth in Online Programs"
       subtitle="How digital transformation, enhanced student experience, and strategic marketing scaled online enrollment from 5,000 to 15,000 students."
-      heroImage="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=1920&q=80"
+      heroImage="/images/industries/edu-whiteboard.jpg"
       metrics={[
         { value: "3x", label: "Enrollment Growth" },
         { value: "88%", label: "Completion Rate" },
@@ -111,14 +111,14 @@ export default function UniversityOnlinePrograms() {
           metric: "18%",
           label: "higher graduation rate",
           link: "/cases/university-student-success",
-          image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80"
+          image: "/images/industries/team-strategy-board.jpg"
         },
         {
           title: "Adaptive Learning for K-12 District",
           metric: "25%",
           label: "improvement in learning outcomes",
           link: "/cases/k12-adaptive-learning",
-          image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80"
+          image: "/images/industries/women-laptops.jpg"
         }
       ]}
       ctaTitle="Ready to Transform Online Education?"

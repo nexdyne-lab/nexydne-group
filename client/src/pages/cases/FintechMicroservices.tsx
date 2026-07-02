@@ -7,7 +7,7 @@ export function FintechMicroservices() {
       industry="Fintech · Platform Engineering"
       title="Payment Processor Scales to 50M Transactions Per Day"
       subtitle="A 190-employee fintech startup rebuilt their core platform with microservices architecture and event-driven processing to handle exponential growth."
-      heroImage="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       challenge={`PayStream, a rapidly growing payment processing platform, was experiencing the classic symptoms of monolithic architecture strain. Their single Ruby on Rails application, which had served them well during early growth, was now struggling to handle 6 million daily transactions—and their business was growing 40% year-over-year.
 
 Peak processing times were causing latency spikes that triggered timeouts in merchant integrations. Database locks during high-volume periods created cascading failures. Every deployment required a maintenance window, limiting their ability to ship features and fixes quickly.

@@ -7,7 +7,7 @@ export function AirlineMaintenance() {
       industry="Aviation · Predictive Maintenance"
       title="Global Airline Improves Maintenance Planning with Digital Twins"
       subtitle="Unified data platform and digital twin simulation optimized spare parts allocation and maintenance intervals, increasing fleet availability."
-      heroImage="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1600&q=80"
+      heroImage="/images/industries/aero-rocket.jpg"
       challenge={`A global airline struggled with optimizing its aircraft maintenance schedules. Balancing safety requirements, flight schedules, and hangar availability was a complex logistical puzzle. Often, aircraft were grounded longer than necessary due to unavailable spare parts or inefficient labor allocation.
 
 The airline needed a way to predict maintenance needs more accurately and simulate the impact of different scheduling strategies on fleet availability and operational costs.`}

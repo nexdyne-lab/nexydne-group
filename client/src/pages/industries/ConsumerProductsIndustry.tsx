@@ -11,7 +11,8 @@ export default function ConsumerProductsIndustry() {
       industry="Consumer Products"
       slug="consumer-products"
       heroSubtitle="We help CPG and consumer-products leaders prove how data, AI, and a more direct customer relationship create value — before they are scaled across brand, channel, and supply chain — so growth and margin move in the same direction."
-      heroImage="/case-strategy-consulting.dfdd1294.jpg"
+      heroImage="/images/industries/biz-team-bright.jpg"
+      heroFocal="65% 45%"
       povParagraphs={[
         "We begin our consumer-products engagements by partnering with you to define, test, and prove how data, AI, digital supply chain, and a more direct customer relationship will create value — before embedding those capabilities across the operating model. The point is to compound proof, not pilots.",
         "The consumer-products landscape is being reshaped by shifting consumer behaviors, the rise of direct-to-consumer channels, and the explosion of data from connected products and digital touchpoints. Companies that harness these forces will build lasting advantage; the rest will see margin and share drift to nimbler challengers.",
@@ -76,21 +77,21 @@ export default function ConsumerProductsIndustry() {
           title: "Transforming knowledge management for a global consulting firm",
           industry: "Professional Services",
           metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg"
+          image: "/images/industries/team-workshop.jpg"
         },
         {
           slug: "bank-process-automation",
           title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
           industry: "Financial Services",
           metric: "10K+ hrs",
-          image: "/case-banker-meeting.c53f3999.jpg"
+          image: "/images/industries/women-laptops.jpg"
         },
         {
           slug: "accounting-audit-automation",
           title: "How audit automation helped an accounting firm scale 2x without hiring",
           industry: "Professional Services",
           metric: "2x",
-          image: "/case-accountants-audit.1c87a151.jpg"
+          image: "/images/industries/biz-meeting.jpg"
         }
       ]}
     />

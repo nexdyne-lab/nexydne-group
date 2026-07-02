@@ -15,7 +15,8 @@ export default function BehavioralAnalytics() {
       serviceName="Behavioral Analytics"
       serviceSlug="behavioral-analytics"
       heroSubtitle="Analyze customer behavior data to understand decision patterns. Build predictive models that anticipate customer needs."
-      heroImage="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Behavioral Analytics engagements delivered" },
@@ -70,14 +71,14 @@ export default function BehavioralAnalytics() {
           title: "Health system unifies patient data for population analytics",
           industry: "Healthcare · Consumer & Shopper Insights",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-retail-data.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Hospital system rebuilds clinical workflows with low-code",
           industry: "Healthcare · Consumer & Shopper Insights",
           metric: "45%",
-          image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
       ]}
       relatedServices={[

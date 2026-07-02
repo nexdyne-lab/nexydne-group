@@ -10,7 +10,8 @@ export default function PersonalizationAtScale() {
       hubName="Personalization at Scale"
       slug="personalization-at-scale"
       heroSubtitle="AI-powered personalization, dynamic content, and 1:1 customer experiences. We help you deliver the right message to the right person at the right time—at scale."
-      heroImage="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         { number: "200+", label: "personalization programs implemented across industries" },
         { number: "40%", label: "average increase in conversion rates from personalization" },
@@ -113,21 +114,21 @@ export default function PersonalizationAtScale() {
           title: "Health Network Lifts Patient Engagement Score By 38 Points",
           industry: "Healthcare · Engagement",
           metric: "38pt",
-          image: "https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
           industry: "Financial Services · Wealth",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
         },
         {
           slug: "healthcare-data-analytics",
           title: "Health System Builds Unified Analytics Platform Across 18 Hospitals",
           industry: "Healthcare · Analytics",
           metric: "18",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/industries/deal-handshake.jpg",
         },
       ]}
       relatedCapabilities={[

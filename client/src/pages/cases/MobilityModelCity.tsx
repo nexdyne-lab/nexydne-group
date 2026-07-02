@@ -7,7 +7,7 @@ export function MobilityModelCity() {
       industry="Public Sector · Digital Twins"
       title="European City Optimizes Traffic with Digital Twin"
       subtitle="Real-time traffic simulation informed urban planning decisions, reducing congestion and emissions."
-      heroImage="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1600&q=80"
+      heroImage="/images/industries/auto-robotics-team.jpg"
       challenge={`A rapidly growing European capital faced severe traffic congestion, leading to poor air quality and frustrated citizens. Traditional traffic management systems were reactive, adjusting signal timings only after jams had formed. The city planners wanted to implement ambitious sustainability goals—more bike lanes, pedestrian zones, and low-emission zones—but feared gridlock if they disrupted existing traffic flows without proper planning.
 
 They needed a way to model the complex interactions of cars, public transit, cyclists, and pedestrians to make data-driven infrastructure decisions.`}

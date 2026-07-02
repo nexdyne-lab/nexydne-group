@@ -11,7 +11,7 @@ export default function OperationsPerformanceAnalyticsAnalyticsEnablement() {
       serviceName="Analytics Enablement"
       serviceSlug="analytics-enablement"
       heroSubtitle="Build internal analytics capabilities. Training, governance, and operating models for sustainable, self-service analytics."
-      heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
       experienceStats={[
         { number: "100+", label: "Performance Analytics engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsPerformanceAnalyticsAnalyticsEnablement() {
           title: "Provider Network Lifts Patient Engagement with Digital Operations",
           industry: "Healthcare · Operations",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=1600&q=80",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
         {
           slug: "consulting-knowledge-management",
           title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
           industry: "Professional Services · Operations",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80",
+          image: "/images/industries/fin-monitors.jpg",
         },
       ]}
       relatedServices={[

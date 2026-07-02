@@ -7,7 +7,7 @@ export function EcommerceRepeatPurchase() {
       industry="E-commerce & Retail · Growth Marketing & Sales"
       title="42% Increase in Repeat Purchase Rate"
       subtitle="A 150-employee specialty online retailer with $45M in revenue deploys predictive analytics and personalized recommendations, increasing repeat purchase rate from 18% to 25.6% and generating $1.2M in annual revenue lift."
-      heroImage="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80"
+      heroImage="/images/capabilities/cap-celebrate.jpg"
       challenge={`A specialty e-commerce retailer with 150 employees and $45M in annual revenue was struggling to turn their customer data into growth. Despite collecting extensive transaction histories, browsing behavior, and customer feedback, their marketing team relied on generic batch-and-blast campaigns that treated all customers the same.
 
 The company's repeat purchase rate had stagnated at 18%—well below the industry benchmark of 27%. Customer acquisition costs were rising, but lifetime value wasn't keeping pace. The marketing team knew they were sitting on valuable data but lacked the tools and expertise to activate it.

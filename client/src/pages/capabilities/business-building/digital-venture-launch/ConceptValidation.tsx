@@ -15,7 +15,8 @@ export default function ConceptValidation() {
       serviceName="Concept Validation"
       serviceSlug="concept-validation"
       heroSubtitle="Before building anything, we test your idea with real customers. Rapid prototyping, customer interviews, and market experiments that prove demand before you invest."
-      heroImage="/images/digital-venture-abstract.jpg"
+      heroImage="/images/capabilities/cap-lightbulb-idea.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Concept Validation engagements delivered" },
@@ -70,14 +71,14 @@ export default function ConceptValidation() {
           title: "Healthcare Provider Launches Telehealth Venture",
           industry: "Healthcare · Business Building",
           metric: "5 Mo",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-venturing.jpg",
         },
         {
           slug: "manufacturer-dtc",
           title: "Manufacturer Creates Direct-to-Consumer Channel",
           industry: "Manufacturing · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=80",
+          image: "/images/capabilities/cap-lightbulb-idea.jpg",
         },
       ]}
       relatedServices={[

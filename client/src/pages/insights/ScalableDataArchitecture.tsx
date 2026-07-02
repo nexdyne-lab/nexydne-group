@@ -86,7 +86,7 @@ export default function ScalableDataArchitecture() {
           >
             <div className="relative rounded-2xl overflow-hidden aspect-[21/9]">
               <img 
-                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2000&q=80" 
+                src="/images/capabilities/cap-data-bars.jpg" 
                 alt="Data Center Infrastructure" 
                 className="w-full h-full object-cover"
               />
@@ -272,21 +272,21 @@ export default function ScalableDataArchitecture() {
             type: "Article",
             title: "Enterprise transformation in the AI era",
             description: "How leading enterprises are reimagining their operating models to harness AI.",
-            image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+            image: "/images/capabilities/cap-data-presentation.jpg",
             link: "/insights/enterprise-transformation-ai"
           },
           {
             type: "Whitepaper",
             title: "The modern enterprise integration playbook",
             description: "A comprehensive guide to connecting legacy systems with modern cloud platforms.",
-            image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
+            image: "/images/industries/fin-monitors.jpg",
             link: "/insights/enterprise-integration-playbook"
           },
           {
             type: "Case Study",
             title: "Payment processor scales to 50M transactions/day",
             description: "How microservices architecture enabled exponential growth.",
-            image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
+            image: "/images/capabilities/cap-hands-data.jpg",
             link: "/cases/fintech-microservices"
           }
         ]}

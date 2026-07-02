@@ -7,7 +7,7 @@ export function RetailOmnichannel() {
       industry="Retail · Digital Engagement"
       title="Retailer Increases Customer Engagement by 156% with Omnichannel Platform"
       subtitle="Mobile-first engagement strategy drives 43% increase in app usage and 31% boost in customer lifetime value through personalized experiences across all touchpoints."
-      heroImage="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`A national specialty retailer with 380 stores and $1.9 billion in annual revenue faced a critical customer engagement problem. Despite having a mobile app, email marketing platform, and loyalty program, these channels operated in silos—creating disjointed experiences that frustrated customers and limited marketing effectiveness. App engagement rates lagged industry benchmarks by 45%, email open rates had declined 22% year-over-year, and loyalty program participation stagnated at just 28% of the customer base.
 
 The core issue: customers received generic, untargeted communications that ignored their preferences, purchase history, and real-time context. A customer browsing winter coats online would receive an email promoting summer dresses the next day. In-store shoppers had no way to access their loyalty points or personalized offers via mobile. The fragmented experience drove customers to competitors who delivered seamless, personalized engagement across every touchpoint.

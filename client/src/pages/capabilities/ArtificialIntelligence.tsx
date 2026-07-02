@@ -7,7 +7,8 @@ export default function ArtificialIntelligence() {
       capabilitySlug="artificial-intelligence"
       // PRESERVED VERBATIM from source hero subtitle
       heroSubtitle="Practical AI solutions for mid-market companies. We help organizations harness AI to automate operations, unlock insights, and compete with larger rivals."
-      heroImage="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80"
+      heroImage="/images/industries/tech-glasses.jpg"
+      heroFocal="55% 45%"
       // PRESERVED CTA labels from source (Start Your AI Journey + View Case Studies)
       heroPrimaryCTA={{
         label: "Start Your AI Journey",

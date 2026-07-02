@@ -15,7 +15,8 @@ export default function JourneyMapping() {
       serviceName="Journey Mapping"
       serviceSlug="journey-mapping"
       heroSubtitle="Map customer journeys across touchpoints and channels. Identify pain points and opportunities to improve the customer experience."
-      heroImage="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80"
+      heroImage="/images/capabilities/cap-office-women.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Journey Mapping engagements delivered" },
@@ -70,14 +71,14 @@ export default function JourneyMapping() {
           title: "Health system unifies patient data for population analytics",
           industry: "Healthcare · Consumer & Shopper Insights",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
         {
           slug: "insurance-claims-processing",
           title: "Insurer cuts claims handling time with NLP and OCR",
           industry: "Insurance · Consumer & Shopper Insights",
           metric: "65%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues.jpg",
         },
       ]}
       relatedServices={[

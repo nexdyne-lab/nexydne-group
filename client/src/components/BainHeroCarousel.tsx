@@ -37,41 +37,68 @@ interface Slide {
   cta: { text: string; href: string };
   /** rgba glow colour + focal position for this slide's controlled accent */
   glow: { color: string; at: string };
+  /** full-bleed background photo (public path) */
+  image: string;
+  /** transform-origin for the zoom — anchored left so the subject sits clear
+   *  of the headline (e.g. "22% 40%") */
+  focal?: string;
+  /** zoom scale for the photo (default 1.16); larger crops harder toward the
+   *  focal side, pushing a central subject further right */
+  zoom?: number;
 }
 
 /* ------------------------------------------------------------------ */
 /*  Charcoal Dark-Authority canvas — one controlled accent glow.        */
 /* ------------------------------------------------------------------ */
 
-function CharcoalCanvas({ color, at }: { color: string; at: string }) {
+function CharcoalCanvas({
+  image,
+  focal,
+  zoom,
+  color,
+  at,
+}: {
+  image: string;
+  focal?: string;
+  zoom?: number;
+  color: string;
+  at: string;
+}) {
   return (
     <div className="absolute inset-0" style={{ backgroundColor: CHARCOAL }}>
-      {/* subtle vertical depth so the flat charcoal isn't dead-flat */}
+      {/* full-bleed photo — slightly desaturated + darkened to hold the
+          charcoal "dark authority" tone and keep the headline legible.
+          A gentle zoom anchored toward the left (`focal` = transform-origin)
+          pushes each subject clear to the right, away from the headline. */}
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `url(${image})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          transform: `scale(${zoom ?? 1.16})`,
+          transformOrigin: focal ?? "50% 50%",
+          filter: "saturate(0.82) brightness(0.82) contrast(1.02)",
+        }}
+      />
+      {/* single low-opacity accent glow — controlled depth on the image side */}
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `radial-gradient(48% 62% at ${at}, ${color} 0%, transparent 62%)`,
+        }}
+      />
+      {/* charcoal scrim, heaviest on the left — keeps the headline column clean */}
       <div
         className="absolute inset-0"
         style={{
           backgroundImage:
-            "linear-gradient(180deg, #2a2a2a 0%, #242424 46%, #1d1d1d 100%)",
-        }}
-      />
-      {/* single low-opacity accent glow — controlled depth, not a colour fill */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage: `radial-gradient(48% 62% at ${at}, ${color} 0%, transparent 60%)`,
-        }}
-      />
-      {/* keep the left column clean for headline legibility */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage:
-            "linear-gradient(96deg, #202020 0%, rgba(32,32,32,0.85) 22%, rgba(32,32,32,0.35) 46%, transparent 66%)",
+            "linear-gradient(96deg, rgba(20,20,20,0.97) 0%, rgba(24,24,24,0.9) 22%, rgba(28,28,28,0.6) 46%, rgba(30,30,30,0.28) 70%, rgba(30,30,30,0.08) 100%)",
         }}
       />
       {/* faint structural striations for texture */}
       <div
-        className="absolute inset-0 opacity-[0.05] mix-blend-soft-light"
+        className="absolute inset-0 opacity-[0.04] mix-blend-soft-light"
         style={{
           backgroundImage:
             "repeating-linear-gradient(118deg, rgba(255,255,255,0.8) 0px, rgba(255,255,255,0) 3px 26px)",
@@ -89,6 +116,8 @@ const slides: Slide[] = [
     accent: "Governed. Scaled.",
     cta: { text: "Read More", href: "/about" },
     glow: { color: "rgba(224,76,44,0.18)", at: "82% 72%" },
+    image: "/images/hero/hero-hig.jpg",
+    focal: "22% 40%",
   },
   {
     label: "AI Adoption 2026",
@@ -97,6 +126,9 @@ const slides: Slide[] = [
     accent: "A Winner's Paradox",
     cta: { text: "Read More", href: "/capabilities/artificial-intelligence" },
     glow: { color: "rgba(255,180,29,0.16)", at: "86% 30%" },
+    image: "/images/hero/hero-ai.jpg",
+    focal: "8% 50%",
+    zoom: 1.2,
   },
   {
     label: "Operational Excellence",
@@ -105,6 +137,9 @@ const slides: Slide[] = [
     accent: "governed, scalable execution",
     cta: { text: "Read More", href: "/solutions/intelligent-process-optimization" },
     glow: { color: "rgba(224,76,44,0.16)", at: "80% 78%" },
+    image: "/images/hero/hero-ops.jpg",
+    focal: "2% 46%",
+    zoom: 1.28,
   },
   {
     label: "NexDyne x Cloud",
@@ -113,6 +148,8 @@ const slides: Slide[] = [
     accent: "AI solutions",
     cta: { text: "Learn about our partnerships", href: "/capabilities/technology" },
     glow: { color: "rgba(111,68,163,0.20)", at: "84% 40%" },
+    image: "/images/hero/hero-cloud.jpg",
+    focal: "22% 48%",
   },
 ];
 
@@ -155,7 +192,13 @@ export function BainHeroCarousel() {
           style={{ opacity: i === active ? 1 : 0 }}
           aria-hidden={i !== active}
         >
-          <CharcoalCanvas color={s.glow.color} at={s.glow.at} />
+          <CharcoalCanvas
+            image={s.image}
+            focal={s.focal}
+            zoom={s.zoom}
+            color={s.glow.color}
+            at={s.glow.at}
+          />
         </div>
       ))}
 

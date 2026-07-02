@@ -11,7 +11,7 @@ export default function SemiconductorQualityPrediction() {
       industryLink="/industries/manufacturing"
       title="Semiconductor Fab Achieves 92% Defect Prediction Accuracy"
       subtitle="How machine learning models analyze process data to predict wafer defects before they occur, reducing scrap costs by $25M annually."
-      heroImage="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&q=80"
+      heroImage="/images/industries/mfg-robotics.jpg"
       metrics={[
         { value: "92%", label: "Prediction Accuracy" },
         { value: "$25M", label: "Annual Scrap Reduction" },
@@ -111,14 +111,14 @@ export default function SemiconductorQualityPrediction() {
           metric: "40%",
           label: "OEE improvement",
           link: "/cases/automotive-smart-factory",
-          image: "https://images.unsplash.com/photo-1565043666747-69f6646db940?w=600&q=80"
+          image: "/images/industries/mfg-robot-arm.jpg"
         },
         {
           title: "Connected Products for Industrial Equipment",
           metric: "$45M",
           label: "new service revenue",
           link: "/cases/industrial-connected-products",
-          image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80"
+          image: "/images/capabilities/cap-battery-factory.jpg"
         }
       ]}
       ctaTitle="Ready to Transform Your Yield Management?"

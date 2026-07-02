@@ -7,7 +7,7 @@ export function TelecomCustomerPortal() {
       industry="Telecommunications · Customer Portal"
       title="Telecom Provider Launches Self-Service Portal for 2M Customers"
       subtitle="Salesforce Experience Cloud portal reduces support calls by 58% while driving $4.2M in annual self-service upgrades."
-      heroImage="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1600&q=80"
+      heroImage="/images/industries/tech-datacenter.jpg"
       challenge={`A regional telecommunications provider serving 2 million residential and business customers faced mounting pressure from escalating call center costs and declining customer satisfaction scores. Their legacy customer portal—built in 2012—offered only basic account viewing functionality, forcing customers to call for routine tasks like plan changes, device upgrades, and billing inquiries.
 
 The company's call center handled over 180,000 monthly contacts, with 62% classified as "low-complexity" transactions that could theoretically be automated. Average handle time for these routine calls was 8.5 minutes, costing the company approximately $12 per interaction. Customer satisfaction (CSAT) scores hovered at 68%—well below industry benchmarks—with long wait times and repetitive authentication processes cited as primary pain points.

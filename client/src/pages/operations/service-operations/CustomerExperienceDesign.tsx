@@ -11,7 +11,7 @@ export default function OperationsServiceOperationsCustomerExperienceDesign() {
       serviceName="Customer Experience Design"
       serviceSlug="customer-experience-design"
       heroSubtitle="Map customer journeys and design service experiences that exceed expectations, building loyalty and driving referrals."
-      heroImage="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-office-women.jpg"
       experienceStats={[
         { number: "100+", label: "Service Operations engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,21 +52,21 @@ export default function OperationsServiceOperationsCustomerExperienceDesign() {
           title: "Provider Network Lifts Patient Engagement with Digital Operations",
           industry: "Healthcare · Operations",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues-smile.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "National Telehealth Provider Scales Operations 10x",
           industry: "Healthcare · Operations",
           metric: "10x",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth Manager Automates Client Onboarding and Portfolio Reporting",
           industry: "Financial Services · Operations",
           metric: "75%",
-          image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
       ]}
       relatedServices={[

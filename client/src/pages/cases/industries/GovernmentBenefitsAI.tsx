@@ -11,7 +11,7 @@ export default function GovernmentBenefitsAI() {
       industryLink="/industries/public-sector"
       title="State Agency Accelerates Benefits Processing 50% with AI"
       subtitle="How intelligent document processing and AI-powered eligibility determination transformed benefits administration, serving more citizens faster."
-      heroImage="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1920&q=80"
+      heroImage="/images/industries/people-commute.jpg"
       metrics={[
         { value: "50%", label: "Faster Processing" },
         { value: "95%", label: "Accuracy Rate" },
@@ -111,14 +111,14 @@ export default function GovernmentBenefitsAI() {
           metric: "40%",
           label: "higher citizen satisfaction",
           link: "/cases/government-digital-services",
-          image: "https://images.unsplash.com/photo-1569025690938-a00729c9e1f9?w=600&q=80"
+          image: "/images/industries/colleagues-walking.jpg"
         },
         {
           title: "Smart City Infrastructure",
           metric: "30%",
           label: "reduction in traffic congestion",
           link: "/cases/smart-city-infrastructure",
-          image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=600&q=80"
+          image: "/images/industries/biz-team-bright.jpg"
         }
       ]}
       ctaTitle="Ready to Modernize Benefits Administration?"

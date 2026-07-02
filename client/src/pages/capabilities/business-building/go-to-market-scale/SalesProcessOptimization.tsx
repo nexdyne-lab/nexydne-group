@@ -15,7 +15,8 @@ export default function SalesProcessOptimization() {
       serviceName="Sales Process Optimization"
       serviceSlug="sales-process-optimization"
       heroSubtitle="We deploy proven methodologies that compress sales cycles and improve win rates through systematic process improvement."
-      heroImage="/images/go-to-market-abstract.jpg"
+      heroImage="/images/capabilities/cap-celebrate.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Sales Process Optimization engagements delivered" },
@@ -70,7 +71,7 @@ export default function SalesProcessOptimization() {
           title: "Financial Services Firm Enters Adjacent Market",
           industry: "Financial Services · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1600&q=80",
+          image: "/images/industries/deal-handshake.jpg",
         },
       ]}
       relatedServices={[

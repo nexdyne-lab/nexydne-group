@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceCapitalRaisingDebtFinancing() {
       serviceName="Debt Financing"
       serviceSlug="debt-financing"
       heroSubtitle="Access bank loans, asset-based lending, and alternative debt structures. We negotiate terms that preserve flexibility and minimize cost of capital."
-      heroImage="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/deal-handshake.jpg"
       experienceStats={[
         { number: "100+", label: "Capital Raising engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,21 +52,21 @@ export default function StrategyCorporateFinanceCapitalRaisingDebtFinancing() {
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Strategy",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
         {
           slug: "insurance-claims-processing",
           title: "Insurer Slashes Claims Processing Time With Intelligent Workflow",
           industry: "Financial Services · Strategy",
           metric: "65%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/industries/fin-trader.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Scales Cross-Border Payments With Intelligent Automation",
           industry: "Financial Services · Strategy",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?w=1600&q=80",
+          image: "/images/industries/fin-handshake-city.jpg",
         },
       ]}
       relatedServices={[

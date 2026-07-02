@@ -7,7 +7,7 @@ export function CustomerProfitability() {
       industry="Banking · Customer Analytics"
       title="AI Customer Lifetime Value Modeling"
       subtitle="How a regional bank used deep learning to segment customers and tailor product offerings, increasing profitability by 30% while improving retention."
-      heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
       challenge={`A regional bank was facing declining margins in its retail banking division. While they had a large customer base, many were on legacy fee-free checking accounts that were costly to maintain. The bank wanted to migrate customers to value-added accounts but feared a mass exodus if they simply imposed new charges.
 
 They lacked deep insight into which customers were truly profitable and what features they valued. Without this understanding, their product design was based on assumptions, and their sales teams struggled to articulate the value of premium accounts to the right people.

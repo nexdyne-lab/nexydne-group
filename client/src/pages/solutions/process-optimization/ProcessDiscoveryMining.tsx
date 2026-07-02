@@ -327,13 +327,13 @@ export default function ProcessDiscoveryMining() {
               {
                 category: "Manufacturing",
                 title: "Reducing Production Cycle Time by 22%",
-                image: "https://images.unsplash.com/photo-placeholder",
+                image: "/images/capabilities/cap-robot-factory.jpg",
                 link: "/cases/manufacturing-optimization",
               },
               {
                 category: "Financial Services",
                 title: "Eliminating 98% of Compliance Deviations",
-                image: "https://images.unsplash.com/photo-placeholder",
+                image: "/images/capabilities/cap-warehouse-robot.jpg",
                 link: "/cases/financial-services-compliance",
               },
             ].map((cs, i) => (

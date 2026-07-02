@@ -15,7 +15,8 @@ export default function CxMeasurement() {
       serviceName="CX Measurement"
       serviceSlug="cx-measurement"
       heroSubtitle="Build measurement systems that drive action. Implement NPS, CSAT, and other metrics with closed-loop feedback processes."
-      heroImage="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=1600&q=80"
+      heroImage="/images/capabilities/cap-office-women.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "CX Measurement engagements delivered" },
@@ -70,14 +71,14 @@ export default function CxMeasurement() {
           title: "Provider boosts patient engagement with omnichannel touch",
           industry: "Healthcare · Customer Experience",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth manager personalizes onboarding for HNW clients",
           industry: "Wealth Management · Customer Experience",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
       ]}
       relatedServices={[

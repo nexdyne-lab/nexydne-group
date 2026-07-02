@@ -7,7 +7,7 @@ export function GlobalRetailer() {
       industry="Retail · Supply Chain Automation"
       title="Global Retailer: Supply Chain Automation"
       subtitle="Deployed RPA bots to automate order processing and inventory management across 200+ retail locations, eliminating manual data entry and reducing processing time by 45%."
-      heroImage="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`A multinational retail chain with 200+ locations was drowning in manual order processing. Their procurement team spent 40+ hours weekly transferring data between their legacy ERP system, supplier portals, and inventory management platform. Each order required manual entry across three systems, creating bottlenecks that delayed restocking and frustrated store managers.
 
 The manual process introduced errors that cascaded through the supply chain—incorrect quantities, wrong SKUs, duplicate orders. These mistakes cost the company $2M+ annually in expedited shipping fees, stockouts, and excess inventory. Traditional integration wasn't viable because their ERP system was scheduled for replacement within 18 months, making API development economically unjustifiable.`}

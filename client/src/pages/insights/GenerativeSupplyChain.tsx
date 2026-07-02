@@ -167,7 +167,7 @@ export default function GenerativeSupplyChain() {
                 <div className="group cursor-pointer">
                   <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2670&auto=format&fit=crop" 
+                      src="/images/industries/retail-warehouse.jpg" 
                       alt="Beyond Segmentation" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -184,7 +184,7 @@ export default function GenerativeSupplyChain() {
                 <div className="group cursor-pointer">
                   <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?q=80&w=2574&auto=format&fit=crop" 
+                      src="/images/capabilities/cap-warehouse-robot.jpg" 
                       alt="Intelligent Automation" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />

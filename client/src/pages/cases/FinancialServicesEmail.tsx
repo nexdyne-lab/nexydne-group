@@ -8,7 +8,7 @@ export function FinancialServicesEmail() {
       industry="Financial Services"
       title="From Mass Blast to 1:1 Conversation"
       subtitle="Generating unique email content for 5 million customers to double click-through rates."
-      heroImage="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1470&auto=format&fit=crop"
+      heroImage="/images/industries/fin-monitors.jpg"
       challenge={`Email marketing was a primary channel for this financial giant, but engagement was plummeting. They were sending generic "newsletter" style emails to their entire base of 5 million customers.
       
       A 25-year-old saving for a first home was receiving the same retirement planning advice as a 60-year-old retiree. The lack of relevance was leading to high unsubscribe rates and brand fatigue. The marketing team wanted to personalize, but manually creating thousands of variations was impossible.`}

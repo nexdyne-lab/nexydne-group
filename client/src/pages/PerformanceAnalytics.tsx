@@ -114,7 +114,7 @@ export default function PerformanceAnalytics() {
               </div>
               <div className="col-span-2 relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+                  src="/images/capabilities/cap-data-bars.jpg"
                   alt="Analytics Excellence"
                   className="w-full h-48 object-cover"
                 />
@@ -253,7 +253,7 @@ export default function PerformanceAnalytics() {
             >
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80"
+                  src="/images/capabilities/cap-data-presentation.jpg"
                   alt="Analytics Methodology"
                   className="w-full h-auto"
                 />
@@ -293,17 +293,17 @@ export default function PerformanceAnalytics() {
               {
                 title: "Manufacturer builds real-time OEE dashboard across 12 plants",
                 category: "Manufacturing Analytics",
-                image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80"
+                image: "/images/industries/fin-monitors.jpg"
               },
               {
                 title: "Retailer deploys predictive inventory analytics, cuts stockouts 40%",
                 category: "Predictive Analytics",
-                image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+                image: "/images/capabilities/cap-hands-data.jpg"
               },
               {
                 title: "Logistics company achieves 100% delivery visibility with IoT analytics",
                 category: "Real-Time Analytics",
-                image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&q=80"
+                image: "/images/capabilities/cap-circuit-green.jpg"
               }
             ].map((study, i) => (
               <motion.div 
@@ -382,19 +382,19 @@ export default function PerformanceAnalytics() {
             title: "The Complete Guide to Process Mining",
             category: "Operations",
             link: "/insights/complete-guide-process-mining",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-data-bars.jpg"
           },
           {
             title: "Building a Data-Driven Culture",
             category: "Analytics",
             link: "/insights/data-driven-culture",
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-data-presentation.jpg"
           },
           {
             title: "KPI Frameworks That Drive Results",
             category: "Performance",
             link: "/insights/kpi-frameworks",
-            image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80"
+            image: "/images/industries/fin-monitors.jpg"
           }
         ]}
       />

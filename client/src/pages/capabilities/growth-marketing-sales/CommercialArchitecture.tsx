@@ -12,7 +12,8 @@ export default function CommercialArchitecture() {
       hubName="Commercial Architecture"
       slug="commercial-architecture"
       heroSubtitle='Designing the blueprints for scalable revenue generation. We align your sales, marketing, and product teams around a unified "commercial stack" that maximizes throughput and minimizes friction.'
-      heroImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop"
+      heroImage="/images/capabilities/cap-celebrate.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         { number: "End-to-end", label: "Commercial Architecture engagements from diagnostic through execution" },
         { number: "Mid-market", label: "Sized for ambitious mid-market companies — not Fortune 500 only" },
@@ -115,21 +116,21 @@ export default function CommercialArchitecture() {
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Automation",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-retail-apparel.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Cuts Payment Reconciliation Cost By Two Thirds",
           industry: "Financial Services · Payments",
           metric: "67%",
-          image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "Telehealth Platform Scales To Two Million Monthly Visits",
           industry: "Healthcare · Telehealth",
           metric: "2M",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
         },
       ]}
       relatedCapabilities={[

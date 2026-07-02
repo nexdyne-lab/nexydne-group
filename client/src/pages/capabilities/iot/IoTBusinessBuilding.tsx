@@ -15,7 +15,8 @@ export default function IoTBusinessBuilding() {
       serviceName="IoT Business Building"
       serviceSlug="iot-business-building"
       heroSubtitle="Leverage IoT to launch entirely new businesses. We help you identify market gaps, validate concepts, and scale new ventures that disrupt industries and drive sustainable growth."
-      heroImage="https://images.unsplash.com/photo-1488229297570-58520851e868?q=80&w=2669&auto=format&fit=crop"
+      heroImage="/images/capabilities/cap-iot-network.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "12+", label: "IoT ventures launched alongside enterprise clients" },

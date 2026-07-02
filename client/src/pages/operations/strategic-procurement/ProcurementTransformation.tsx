@@ -11,7 +11,7 @@ export default function OperationsStrategicProcurementProcurementTransformation(
       serviceName="Procurement Transformation"
       serviceSlug="procurement-transformation"
       heroSubtitle="Design and implement end-to-end procurement operating models including organization, processes, and technology enablement."
-      heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/retail-warehouse.jpg"
       experienceStats={[
         { number: "100+", label: "Strategic Procurement engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsStrategicProcurementProcurementTransformation(
           title: "Big Four Firm Modernizes Audit with End-to-End Automation",
           industry: "Professional Services · Operations",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1600&q=80",
+          image: "/images/industries/meeting-topview.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Scales Payment Operations Without Headcount Growth",
           industry: "Financial Services · Operations",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/industries/advisor-charts.jpg",
         },
       ]}
       relatedServices={[

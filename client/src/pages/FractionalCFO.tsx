@@ -105,7 +105,7 @@ export default function FractionalCFO() {
             >
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80" 
+                  src="/images/capabilities/cap-presenting-graphs.jpg" 
                   alt="Executive Leadership" 
                   className="w-full h-auto"
                 />
@@ -290,19 +290,19 @@ export default function FractionalCFO() {
               {
                 title: "Identifying and capturing growth opportunities for medical device manufacturer",
                 category: "Healthcare",
-                image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80",
+                image: "/images/industries/fin-monitors.jpg",
                 link: "/case-studies/medical-device-growth"
               },
               {
                 title: "Regional retailer doubles market share through financial strategy",
                 category: "Retail",
-                image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80",
+                image: "/images/industries/advisor-charts.jpg",
                 link: "/case-studies/retail-market-expansion"
               },
               {
                 title: "B2B SaaS platform transitions from follower to category leader",
                 category: "Technology",
-                image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80",
+                image: "/images/capabilities/cap-data-bars.jpg",
                 link: "/case-studies/saas-category-leadership"
               }
             ].map((study, i) => (
@@ -408,19 +408,19 @@ export default function FractionalCFO() {
             title: "How Top Performers Use Financial Discipline to Grow",
             category: "Strategy",
             link: "/insights/financial-discipline-growth",
-            image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-celebrate.jpg"
           },
           {
             title: "The CFO's Guide to Cash Flow Management",
             category: "Cash Flow",
             link: "/insights/cfo-cash-flow-guide",
-            image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-presenting-graphs.jpg"
           },
           {
             title: "Building Investor-Ready Board Decks",
             category: "Governance",
             link: "/insights/investor-ready-board-decks",
-            image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
+            image: "/images/industries/fin-monitors.jpg"
           }
         ]}
       />

@@ -15,7 +15,8 @@ export default function CustomerAnalytics() {
       serviceName="Customer Analytics"
       serviceSlug="customer-analytics"
       heroSubtitle="Analyze customer behavior, preferences, and value. Build segmentation models and customer lifetime value frameworks."
-      heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&q=80"
+      heroImage="/images/capabilities/cap-data-presentation.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Customer Analytics engagements delivered" },
@@ -70,14 +71,14 @@ export default function CustomerAnalytics() {
           title: "Health system unifies patient data for population analytics",
           industry: "Healthcare · Insights & Analytics",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/industries/fin-monitors.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional bank automates KYC and onboarding",
           industry: "Financial Services · Insights & Analytics",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-presenting-graphs.jpg",
         },
       ]}
       relatedServices={[

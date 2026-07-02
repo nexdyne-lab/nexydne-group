@@ -8,7 +8,7 @@ export function RetailLoyaltyProgram() {
       industry="Retail & E-commerce"
       title="Loyalty 3.0: Beyond Points and Tiers"
       subtitle="Reinventing loyalty to focus on experiential rewards and community access."
-      heroImage="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2670&auto=format&fit=crop"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`This global fashion brand had a traditional "spend-and-get" loyalty program that was losing steam. Customers were sitting on millions of unredeemed points, and the program was doing little to drive emotional connection or advocacy.
       
       Competitors were offering deeper discounts, leading to a "race to the bottom." The brand needed a way to differentiate itself and build genuine loyalty that wasn't purely transactional.`}

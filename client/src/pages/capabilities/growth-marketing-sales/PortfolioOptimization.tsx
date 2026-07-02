@@ -10,7 +10,8 @@ export default function PortfolioOptimization() {
       hubName="Portfolio Optimization"
       slug="portfolio-optimization"
       heroSubtitle="Product portfolio strategy, SKU rationalization, and assortment optimization. We help you build portfolios that maximize growth and profitability."
-      heroImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         { number: "120+", label: "portfolio optimization projects delivered across industries" },
         { number: "25%", label: "average margin improvement through SKU rationalization" },
@@ -113,21 +114,21 @@ export default function PortfolioOptimization() {
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Automation",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Cuts Payment Reconciliation Cost By Two Thirds",
           industry: "Financial Services · Payments",
           metric: "67%",
-          image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&q=80",
+          image: "/images/industries/deal-handshake.jpg",
         },
         {
           slug: "legal-document-intelligence",
           title: "Legal Tech Vendor Launches Document Intelligence Platform For Mid-Market Firms",
           industry: "Professional Services · Document AI",
           metric: "10x",
-          image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&q=80",
+          image: "/images/capabilities/cap-woman-motion.jpg",
         },
       ]}
       relatedCapabilities={[

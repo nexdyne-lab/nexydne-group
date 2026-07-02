@@ -11,7 +11,8 @@ export default function EnergyUtilitiesIndustry() {
       industry="Energy & Utilities"
       slug="energy-utilities"
       heroSubtitle="We help utilities, oil-and-gas operators, and renewables developers run the energy transition as a transformation program — using AI-powered asset performance, smart grid technologies, and operating discipline tuned to the realities of a regulated capital-heavy industry."
-      heroImage="/hero-cityscape.b7c4f9e2.png"
+      heroImage="/images/industries/energy-wind.jpg"
+      heroFocal="55% 50%"
       povParagraphs={[
         "The energy transition is accelerating. Renewables economics have improved sharply, electric vehicles are driving load growth, and customers are demanding cleaner, more reliable power. At the same time, aging infrastructure, regulatory pressure, and cyber threats are creating execution risk that legacy operating models were not designed to absorb.",
         "We partner with energy companies and utilities to build the digital capabilities the transition requires. From smart grid technology that orchestrates distributed energy resources to AI-powered asset management that extends equipment life, our work helps organizations modernize while respecting the safety, reliability, and regulatory obligations the business runs on.",
@@ -76,21 +77,21 @@ export default function EnergyUtilitiesIndustry() {
           title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
           industry: "Financial Services",
           metric: "10K+ hrs",
-          image: "/case-banker-meeting.c53f3999.jpg"
+          image: "/images/industries/energy-powerplant.jpg"
         },
         {
           slug: "consulting-knowledge-management",
           title: "Transforming knowledge management for a global consulting firm",
           industry: "Professional Services",
           metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg"
+          image: "/images/industries/energy-solar.jpg"
         },
         {
           slug: "accounting-audit-automation",
           title: "How audit automation helped an accounting firm scale 2x without hiring",
           industry: "Professional Services",
           metric: "2x",
-          image: "/case-accountants-audit.1c87a151.jpg"
+          image: "/images/industries/energy-renewable-team.jpg"
         }
       ]}
     />

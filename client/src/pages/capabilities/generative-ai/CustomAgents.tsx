@@ -15,7 +15,8 @@ export default function CustomAgents() {
       serviceName="Custom Agent Development"
       serviceSlug="custom-agents"
       heroSubtitle="Build intelligent agents tailored to your specific use cases — from customer service bots to internal knowledge assistants and code generation tools. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-ai-agents.eba3d75f.jpg"
+      heroImage="/images/capabilities/cap-hologram.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Custom Agent Development engagements delivered" },
@@ -68,14 +69,14 @@ export default function CustomAgents() {
           title: "How contract automation transformed a leading law firm’s operations",
           industry: "Professional Services",
           metric: "65%",
-          image: "/case-law-firm-meeting.401c96db.jpg",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "healthcare-patient-engagement",
           title: "AI-driven patient engagement for a major hospital system",
           industry: "Healthcare",
           metric: "35%",
-          image: "/case-medical-collaboration.9602cc8c.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

@@ -7,7 +7,7 @@ export function RetailShrinkage() {
       industry="Retail · Risk & Resilience"
       title="National Retailer Reduces Shrinkage by 25% with AI"
       subtitle="Computer vision and POS anomaly detection combined to identify theft and operational errors in real-time."
-      heroImage="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`A national retail chain was losing millions annually to shrinkage—a combination of shoplifting, employee theft, and administrative errors. Traditional security measures like EAS tags and security guards were expensive and often ineffective against sophisticated theft or internal collusion.
 
 The retailer needed a scalable, automated solution to detect suspicious behavior at self-checkout kiosks and throughout the store without adding friction to the customer experience.`}

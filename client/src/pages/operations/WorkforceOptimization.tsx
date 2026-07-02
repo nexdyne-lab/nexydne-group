@@ -10,7 +10,7 @@ export default function WorkforceOptimization() {
       hubName="Workforce Optimization"
       slug="operations/workforce-optimization"
       heroSubtitle="Empower your team with the right skills and tools. Design workforce strategies, training programs, and performance management systems that drive operational excellence."
-      heroImage="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-diverse-team.jpg"
       experienceStats={[
         { number: "60+", label: "Workforce transformation programs across industries" },
         { number: "20-35%", label: "Typical improvement in labor productivity" },
@@ -114,21 +114,21 @@ export default function WorkforceOptimization() {
           title: "Consulting Firm Builds AI-Powered Knowledge Platform",
           industry: "Professional Services · Operations",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues.jpg",
         },
         {
           slug: "healthcare-patient-engagement",
           title: "Healthcare Network Boosts Patient Engagement Through Digital Tools",
           industry: "Healthcare · Operations",
           metric: "48%",
-          image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=1600&q=80",
+          image: "/images/industries/biz-team-bright.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth Manager Automates Onboarding and Client Servicing",
           industry: "Financial Services · Operations",
           metric: "55%",
-          image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1600&q=80",
+          image: "/images/capabilities/cap-women-meeting.jpg",
         },
       ]}
       relatedCapabilities={[

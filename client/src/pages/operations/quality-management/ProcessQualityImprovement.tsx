@@ -11,7 +11,7 @@ export default function OperationsQualityManagementProcessQualityImprovement() {
       serviceName="Process Quality Improvement"
       serviceSlug="process-quality-improvement"
       heroSubtitle="Apply Six Sigma and lean methodologies to reduce variation and eliminate defects. Build statistical process control capabilities."
-      heroImage="https://images.unsplash.com/photo-1581092446327-9b52bd1570c2?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/mfg-robotics.jpg"
       experienceStats={[
         { number: "100+", label: "Quality Management engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsQualityManagementProcessQualityImprovement() {
           title: "P&C Insurer Cuts Claims Cycle Time with Intelligent Automation",
           industry: "Financial Services · Operations",
           metric: "55%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-battery-factory.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Academic Medical Center Streamlines Clinical Workflows",
           industry: "Healthcare · Operations",
           metric: "30%",
-          image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1600&q=80",
+          image: "/images/industries/mfg-robot-arm.jpg",
         },
       ]}
       relatedServices={[

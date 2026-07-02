@@ -15,7 +15,8 @@ export default function PhysicalDigitalIntegration() {
       serviceName="Physical-Digital Integration"
       serviceSlug="physical-digital-integration"
       heroSubtitle="The boundary between online and offline is dissolving. We design hybrid experiences where digital intelligence enhances physical interactions. From smart retail spaces to connected field services, we ensure continuity and context across the physical-digital divide."
-      heroImage="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=1600&q=80"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Physical-Digital Integration engagements delivered" },
@@ -70,14 +71,14 @@ export default function PhysicalDigitalIntegration() {
           title: "Telehealth provider scales virtual care platform",
           industry: "Healthcare · Service Design",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-diverse-team.jpg",
         },
         {
           slug: "healthcare-patient-engagement",
           title: "Provider boosts patient engagement with omnichannel touch",
           industry: "Healthcare · Service Design",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
       ]}
       relatedServices={[

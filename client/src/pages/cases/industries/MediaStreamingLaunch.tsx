@@ -11,7 +11,7 @@ export default function MediaStreamingLaunch() {
       industryLink="/industries/technology-media-telecom"
       title="Media Company Launches Streaming Platform, Acquires 8M Subscribers"
       subtitle="How a traditional media company built and launched a competitive streaming service that captured market share from established players."
-      heroImage="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=1920&q=80"
+      heroImage="/images/industries/tech-datacenter.jpg"
       metrics={[
         { value: "8M", label: "Subscribers in Year 1" },
         { value: "4.2hrs", label: "Weekly Engagement" },
@@ -111,14 +111,14 @@ export default function MediaStreamingLaunch() {
           metric: "3x",
           label: "faster release velocity",
           link: "/cases/tech-engineering-transformation",
-          image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80"
+          image: "/images/industries/ops-monitors-dark.jpg"
         },
         {
           title: "Customer Experience Transformation for Telecom",
           metric: "40%",
           label: "reduction in churn",
           link: "/cases/telecom-customer-experience",
-          image: "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=600&q=80"
+          image: "/images/capabilities/cap-iot-network.jpg"
         }
       ]}
       ctaTitle="Ready to Launch Your Digital Platform?"

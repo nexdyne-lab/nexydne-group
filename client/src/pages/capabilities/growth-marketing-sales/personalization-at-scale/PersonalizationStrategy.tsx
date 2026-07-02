@@ -15,7 +15,8 @@ export default function PersonalizationStrategy() {
       serviceName="Personalization Strategy"
       serviceSlug="personalization-strategy"
       heroSubtitle="Develop personalization strategies aligned with customer journeys and business goals. Define use cases, prioritize investments, and build roadmaps."
-      heroImage="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1600&q=80"
+      heroImage="/images/capabilities/cap-circuit-green.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Personalization Strategy engagements delivered" },
@@ -70,14 +71,14 @@ export default function PersonalizationStrategy() {
           title: "Provider boosts patient engagement with omnichannel touch",
           industry: "Healthcare · Personalization at Scale",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&q=80",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth manager personalizes onboarding for HNW clients",
           industry: "Wealth Management · Personalization at Scale",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-tablet-woman.jpg",
         },
       ]}
       relatedServices={[

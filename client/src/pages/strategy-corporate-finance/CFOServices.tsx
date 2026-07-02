@@ -10,7 +10,7 @@ export default function FractionalCFO() {
       hubName="Fractional CFO Services"
       slug="cfo-services"
       heroSubtitle="Access high-level financial leadership without the full-time cost. Strategic financial planning, cash flow management, and board-level reporting for growing SMEs."
-      heroImage="https://images.unsplash.com/photo-1554224155-1696413565d3?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/advisor-charts.jpg"
       experienceStats={[
         { number: "60%", label: "Cost savings vs full-time CFO while maintaining executive-level expertise" },
         { number: "100+", label: "SMEs supported with fractional CFO services across diverse industries" },
@@ -114,21 +114,21 @@ export default function FractionalCFO() {
           title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
           industry: "Financial Services · CFO",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-presenting-graphs.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · CFO",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/industries/meeting-topview.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Scales Payment Operations Without Headcount Growth",
           industry: "Financial Services · CFO",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&q=80",
+          image: "/images/industries/fin-monitors.jpg",
         },
       ]}
       relatedCapabilities={[

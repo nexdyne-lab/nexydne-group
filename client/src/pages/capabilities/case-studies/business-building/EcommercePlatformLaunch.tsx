@@ -7,7 +7,7 @@ export function EcommercePlatformLaunch() {
       industry="Industrial Distribution · Business Building"
       title="Industrial Distributor Launches B2B E-commerce Platform"
       subtitle="How a $200M industrial distributor built and scaled a digital commerce platform that now drives 35% of revenue."
-      heroImage="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`A regional industrial distributor with $200M in annual revenue faced an existential threat. Amazon Business and other digital-first competitors were capturing market share, particularly among younger procurement professionals who expected consumer-grade digital experiences.
 
 The company's existing digital presence was limited to a basic product catalog with no e-commerce capability. Orders came through phone calls, faxes, and emails—processes that were slow, error-prone, and increasingly out of step with customer expectations. Leadership recognized the need to build a digital commerce capability but faced significant constraints: no internal digital expertise, limited IT infrastructure, and an inability to undertake the multi-year, multi-million-dollar implementations typical of enterprise e-commerce projects.`}

@@ -158,7 +158,7 @@ export default function DigitalTwinManufacturing() {
                 <div className="group cursor-pointer">
                   <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2670&auto=format&fit=crop" 
+                      src="/images/industries/mfg-robotics.jpg" 
                       alt="IoT Supply Chain" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -175,7 +175,7 @@ export default function DigitalTwinManufacturing() {
                 <div className="group cursor-pointer">
                   <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop" 
+                      src="/images/capabilities/cap-battery-factory.jpg" 
                       alt="Process Mining" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />

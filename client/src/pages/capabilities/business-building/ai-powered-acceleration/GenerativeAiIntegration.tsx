@@ -15,7 +15,8 @@ export default function GenerativeAiIntegration() {
       serviceName="Generative AI Integration"
       serviceSlug="generative-ai-integration"
       heroSubtitle="Harness the power of GPT, Claude, and other foundation models. We build custom AI applications that automate workflows and augment your team."
-      heroImage="/images/ai-acceleration-abstract.jpg"
+      heroImage="/images/capabilities/cap-coder.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Generative AI Integration engagements delivered" },
@@ -70,7 +71,7 @@ export default function GenerativeAiIntegration() {
           title: "Professional Services Firm Builds SaaS Product",
           industry: "Professional Services · Business Building",
           metric: "$3.2M",
-          image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80",
+          image: "/images/capabilities/cap-circuit-green.jpg",
         },
       ]}
       relatedServices={[

@@ -10,7 +10,7 @@ export default function QualityManagement() {
       hubName="Quality Management Systems"
       slug="operations/quality-management"
       heroSubtitle="Build a culture of quality that exceeds customer expectations. Implement systematic quality controls and continuous improvement methodologies."
-      heroImage="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/mfg-robotics.jpg"
       experienceStats={[
         { number: "75+", label: "Quality transformation programs across manufacturing and services" },
         { number: "50-85%", label: "Typical reduction in defect rates and quality costs" },
@@ -114,21 +114,21 @@ export default function QualityManagement() {
           title: "Insurer Cuts Claims Cycle Time and Improves Decision Accuracy",
           industry: "Insurance · Operations",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-battery-factory.jpg",
         },
         {
           slug: "accounting-audit-automation",
           title: "Accounting Firm Automates Audit Workpapers Across Engagements",
           industry: "Professional Services · Operations",
           metric: "45%",
-          image: "https://images.unsplash.com/photo-1554224155-1696413565d3?w=1600&q=80",
+          image: "/images/industries/mfg-robot-arm.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Hospital Standardizes Clinical Workflows Across Service Lines",
           industry: "Healthcare · Operations",
           metric: "32%",
-          image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1600&q=80",
+          image: "/images/capabilities/cap-robot-factory.jpg",
         },
       ]}
       relatedCapabilities={[

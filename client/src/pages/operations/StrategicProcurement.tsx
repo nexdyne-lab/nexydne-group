@@ -10,7 +10,7 @@ export default function StrategicProcurement() {
       hubName="Strategic Procurement"
       slug="operations/strategic-procurement"
       heroSubtitle="Transform procurement from a cost center to a strategic advantage. Optimize supplier relationships, reduce costs, and build resilient supply bases."
-      heroImage="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/retail-warehouse.jpg"
       experienceStats={[
         { number: "120+", label: "Procurement transformation engagements for midmarket companies" },
         { number: "15-25%", label: "Typical reduction in total procurement spend" },
@@ -114,21 +114,21 @@ export default function StrategicProcurement() {
           title: "Fintech Scales Payment Operations Without Headcount Growth",
           industry: "Financial Services · Operations",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/industries/meeting-topview.jpg",
         },
         {
           slug: "accounting-audit-automation",
           title: "Accounting Firm Automates Audit Workpapers Across Engagements",
           industry: "Professional Services · Operations",
           metric: "45%",
-          image: "https://images.unsplash.com/photo-1554224155-1696413565d3?w=1600&q=80",
+          image: "/images/industries/advisor-charts.jpg",
         },
         {
           slug: "legal-document-intelligence",
           title: "Legal Team Deploys Document Intelligence Across Matter Lifecycle",
           industry: "Professional Services · Operations",
           metric: "75%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/industries/deal-handshake.jpg",
         },
       ]}
       relatedCapabilities={[

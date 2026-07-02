@@ -24,7 +24,7 @@ export function MarketplaceManagement() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 overflow-hidden bg-background">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1586880244406-556ebe35f282?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center" />
+          <div className="absolute top-0 left-0 w-full h-full bg-[url('/images/capabilities/cap-hands-data.jpg')] bg-cover bg-center" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/80 to-background" />
         

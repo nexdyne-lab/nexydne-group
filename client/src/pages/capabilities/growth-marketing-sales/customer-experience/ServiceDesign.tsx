@@ -15,7 +15,8 @@ export default function ServiceDesign() {
       serviceName="Service Design"
       serviceSlug="service-design"
       heroSubtitle="Design service experiences that delight customers. Create service blueprints that align front-stage and back-stage operations."
-      heroImage="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=1600&q=80"
+      heroImage="/images/capabilities/cap-diverse-team.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Service Design engagements delivered" },
@@ -70,14 +71,14 @@ export default function ServiceDesign() {
           title: "Provider boosts patient engagement with omnichannel touch",
           industry: "Healthcare · Customer Experience",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&q=80",
+          image: "/images/industries/advisor-charts.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Hospital system rebuilds clinical workflows with low-code",
           industry: "Healthcare · Customer Experience",
           metric: "45%",
-          image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues-smile.jpg",
         },
       ]}
       relatedServices={[

@@ -11,7 +11,7 @@ export default function UtilityGridModernization() {
       industryLink="/industries/energy-utilities"
       title="Electric Utility Modernizes Grid, Reduces Outages 45%"
       subtitle="How smart grid technology, advanced sensors, and AI-powered analytics transformed grid reliability and enabled renewable integration."
-      heroImage="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1920&q=80"
+      heroImage="/images/industries/energy-wind.jpg"
       metrics={[
         { value: "45%", label: "Shorter Outages" },
         { value: "99.98%", label: "Grid Reliability" },
@@ -111,14 +111,14 @@ export default function UtilityGridModernization() {
           metric: "25%",
           label: "improvement in forecast accuracy",
           link: "/cases/renewable-energy-forecasting",
-          image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80"
+          image: "/images/industries/energy-powerplant.jpg"
         },
         {
           title: "Digital Transformation for Oil & Gas",
           metric: "$150M",
           label: "operational savings",
           link: "/cases/oil-gas-digital-transformation",
-          image: "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=600&q=80"
+          image: "/images/industries/energy-solar.jpg"
         }
       ]}
       ctaTitle="Ready to Modernize Your Grid?"

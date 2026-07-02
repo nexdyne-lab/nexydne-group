@@ -15,7 +15,8 @@ export default function CommercialArchitecturePerformanceAcceleration() {
       serviceName="Commercial Architecture Performance Acceleration"
       serviceSlug="commercial-architecture-performance-acceleration"
       heroSubtitle="A 90-day sprint that retunes your existing commercial architecture engine on the metrics that matter most — without a rip-and-replace."
-      heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Commercial Architecture Performance Acceleration engagements delivered" },
@@ -70,14 +71,14 @@ export default function CommercialArchitecturePerformanceAcceleration() {
           title: "Accounting firm modernizes audit workflows",
           industry: "Professional Services · Commercial Architecture",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-3d-printing.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech scales payment ops with intelligent automation",
           industry: "Fintech · Commercial Architecture",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/industries/meeting-topview.jpg",
         },
       ]}
       relatedServices={[

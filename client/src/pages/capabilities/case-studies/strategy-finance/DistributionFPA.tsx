@@ -7,7 +7,7 @@ export function DistributionFPA() {
       industry="Distribution · Strategy & Finance"
       title="FP&A Transformation Enables Data-Driven Decisions"
       subtitle="How a distribution company modernized its finance function to gain real-time visibility and accelerate decision-making."
-      heroImage="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1600&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       challenge={`The company was growing rapidly but flying blind. Monthly financials took 20+ days to close, making it impossible to respond to market changes. Leadership made decisions based on intuition rather than data, and the finance team spent all their time on transaction processing rather than analysis.
 
 A 200-employee industrial distribution company with $75M in revenue operates 8 warehouses across the Midwest serving manufacturing customers. The diagnostic revealed a finance function overwhelmed by manual processes: 80% of team time spent on data entry and reconciliation, multiple disconnected systems requiring manual data transfer, no standardized chart of accounts across locations, inventory valuation updated only monthly, and customer profitability unknown at the account level.`}

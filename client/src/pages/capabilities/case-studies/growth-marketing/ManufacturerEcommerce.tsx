@@ -7,7 +7,7 @@ export function ManufacturerEcommerce() {
       industry="Manufacturing · Growth Marketing"
       title="E-commerce Launch Drives $5M New Revenue"
       subtitle="How a manufacturer successfully launched a direct-to-consumer channel to diversify revenue and capture higher margins."
-      heroImage="https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`Retail consolidation was squeezing margins and limiting growth. The company had no direct consumer data or relationships. Competitors were launching DTC channels and building brand loyalty. The company needed to establish e-commerce without alienating existing channel partners.
 
 A 200-employee manufacturer with $95M in annual revenue produces specialty outdoor equipment sold through distributors and retailers. The company had strong brand recognition but no direct relationship with end consumers—meaning product feedback arrived weeks late through retailer sell-through data, marketing was filtered through third-party brand representations, and margin was perpetually squeezed by retail intermediaries whose consolidation gave them increasing leverage.`}

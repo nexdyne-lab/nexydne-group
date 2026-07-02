@@ -7,7 +7,7 @@ export function FitnessAppEngagement() {
       industry="Health & Fitness · Mobile App"
       title="Fitness Startup Achieves 4.8★ Rating with Gamified Workout App"
       subtitle="AI-powered personalized training plans and social challenges deliver 89% 30-day retention—far exceeding the industry benchmark of 25-40%."
-      heroImage="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1600&q=80"
+      heroImage="/images/capabilities/cap-office-women.jpg"
       challenge={`A venture-backed fitness startup needed to launch a mobile app that could compete with established players like Peloton and Nike Training Club. Their differentiation strategy relied on AI-powered personalized training plans and social challenges that kept users motivated. However, they lacked mobile development expertise and needed to launch on both iOS and Android simultaneously within six months.
 
 The app required complex features including video streaming, offline workout downloads, real-time progress tracking, social feeds, and integration with wearable devices. Performance was critical—users wouldn't tolerate laggy video playback or slow load times during workouts.`}

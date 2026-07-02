@@ -15,7 +15,8 @@ export default function HypothesisDevelopment() {
       serviceName="Hypothesis Development"
       serviceSlug="hypothesis-development"
       heroSubtitle="We work with your team to articulate clear hypotheses about customer needs, solution viability, and business model sustainability. This phase identifies the riskiest assumptions that must be tested first."
-      heroImage="/images/rapid-innovation-abstract.jpg"
+      heroImage="/images/capabilities/cap-3d-printing.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Hypothesis Development engagements delivered" },
@@ -70,7 +71,7 @@ export default function HypothesisDevelopment() {
           title: "Healthcare Provider Launches Telehealth Venture",
           industry: "Healthcare · Business Building",
           metric: "5 Mo",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-lightbulb-idea.jpg",
         },
       ]}
       relatedServices={[

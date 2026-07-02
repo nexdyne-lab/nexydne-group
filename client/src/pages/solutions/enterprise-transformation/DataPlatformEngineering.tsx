@@ -54,14 +54,14 @@ export default function DataPlatformEngineering() {
           title: "Lakehouse migration cuts daily reporting latency from 14 hours to 22 minutes",
           industry: "Retail",
           metric: "14h → 22m",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
         {
           slug: "consulting-knowledge-management",
           title: "Snowflake platform consolidates 11 shadow analytics stacks into one governed estate",
           industry: "B2B SaaS",
           metric: "11 → 1",
-          image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

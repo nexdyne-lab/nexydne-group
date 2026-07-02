@@ -11,7 +11,8 @@ export default function PrivateEquityIndustry() {
       industry="Private Equity"
       slug="private-equity"
       heroSubtitle="We help private equity firms create operational value — across diligence, hold, and exit — with rigorous tech and data diligence, value-creation playbooks, and the digital execution muscle today's hold periods demand."
-      heroImage="/case-strategy-consulting.dfdd1294.jpg"
+      heroImage="/images/industries/deal-handshake.jpg"
+      heroFocal="55% 50%"
       povParagraphs={[
         "The private-equity playbook is evolving. Financial engineering alone no longer delivers the returns LPs expect. Today's top-performing funds are the ones that can identify operational improvement during diligence and execute transformational change in the hold — and prove it with data at exit.",
         "We partner with PE firms across the investment lifecycle. During diligence, we help identify value-creation opportunities and assess execution risk on tech, data, and operating models. Post-acquisition, we work alongside management teams to implement the digital, commercial, and operational programs that drive EBITDA and multiple expansion.",
@@ -76,21 +77,21 @@ export default function PrivateEquityIndustry() {
           title: "Transforming knowledge management for a global consulting firm",
           industry: "Professional Services",
           metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg"
+          image: "/images/industries/biz-meeting.jpg"
         },
         {
           slug: "bank-process-automation",
           title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
           industry: "Financial Services",
           metric: "10K+ hrs",
-          image: "/case-banker-meeting.c53f3999.jpg"
+          image: "/images/industries/meeting-topview.jpg"
         },
         {
           slug: "wealth-management-automation",
           title: "Automating wealth management operations for better client experiences",
           industry: "Financial Services",
           metric: "45%",
-          image: "/case-advisor-client.eb15e04e.jpg"
+          image: "/images/industries/fin-handshake-city.jpg"
         }
       ]}
     />

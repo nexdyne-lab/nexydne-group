@@ -15,7 +15,8 @@ export default function ServicePrototypingAndPiloting() {
       serviceName="Service Prototyping & Piloting"
       serviceSlug="service-prototyping-and-piloting"
       heroSubtitle="We de-risk innovation through rigorous testing. Before full-scale rollout, we simulate service scenarios, build low-fidelity environments, and run live pilots. This iterative approach allows us to validate assumptions, refine mechanics, and ensure operational readiness."
-      heroImage="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=1600&q=80"
+      heroImage="/images/capabilities/cap-mobile-woman.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Service Prototyping & Piloting engagements delivered" },
@@ -70,14 +71,14 @@ export default function ServicePrototypingAndPiloting() {
           title: "Insurer cuts claims handling time with NLP and OCR",
           industry: "Insurance · Service Design",
           metric: "65%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues-smile.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Hospital system rebuilds clinical workflows with low-code",
           industry: "Healthcare · Service Design",
           metric: "45%",
-          image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80",
+          image: "/images/capabilities/cap-office-women.jpg",
         },
       ]}
       relatedServices={[

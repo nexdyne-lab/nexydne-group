@@ -7,7 +7,7 @@ export function FPACaseStudy() {
       industry="Technology · Strategy & Finance"
       title="How Scenario Planning Helped a SaaS Company Navigate Market Uncertainty"
       subtitle="A growth-stage B2B SaaS company transformed their financial planning from reactive budgeting to proactive scenario modeling, enabling confident decision-making during unprecedented market volatility."
-      heroImage="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1600&q=80"
+      heroImage="/images/capabilities/cap-presenting-graphs.jpg"
       challenge={`The company had built a successful product and achieved strong early traction, but their financial planning infrastructure hadn't evolved with their growth. Static annual budgets built in Excel were disconnected from real-time business drivers and became obsolete within weeks of approval.
 
 A growth-stage B2B SaaS company providing marketing automation software with 85-110 employees and $12M ARR was scaling from product-market fit to market leadership post-Series B. Revenue forecasts lived in the CRM, expense budgets in Excel, and actuals in the accounting system—consolidating data for variance analysis took 5-7 days monthly, leaving little time for strategic analysis. The leadership team couldn't answer critical questions: What happens if churn increases by 2%? How does a 20% sales hiring acceleration impact cash runway? Board meetings focused on explaining historical variances from outdated budgets rather than discussing strategic options.`}

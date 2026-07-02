@@ -11,7 +11,7 @@ export default function SmartCityInfrastructure() {
       industryLink="/industries/public-sector"
       title="City Reduces Traffic Congestion 30% with Smart Infrastructure"
       subtitle="How IoT sensors, AI-powered traffic management, and connected infrastructure transformed urban mobility and quality of life."
-      heroImage="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1920&q=80"
+      heroImage="/images/industries/eng-designers.jpg"
       metrics={[
         { value: "30%", label: "Less Congestion" },
         { value: "25%", label: "Emissions Reduction" },
@@ -111,14 +111,14 @@ export default function SmartCityInfrastructure() {
           metric: "40%",
           label: "higher citizen satisfaction",
           link: "/cases/government-digital-services",
-          image: "https://images.unsplash.com/photo-1569025690938-a00729c9e1f9?w=600&q=80"
+          image: "/images/industries/skyscraper.jpg"
         },
         {
           title: "AI for Benefits Administration",
           metric: "50%",
           label: "faster eligibility determination",
           link: "/cases/government-benefits-ai",
-          image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&q=80"
+          image: "/images/industries/arch-glass-sphere.jpg"
         }
       ]}
       ctaTitle="Ready to Build a Smarter City?"

@@ -15,7 +15,8 @@ export default function ServiceBlueprinting() {
       serviceName="Service Blueprinting"
       serviceSlug="service-blueprinting"
       heroSubtitle="We visualize the entire service ecosystem, mapping front-end customer actions against back-end support processes. This 'X-ray view' of your organization reveals bottlenecks, redundancies, and opportunities for automation, ensuring that every touchpoint is supported by robust infrastructure."
-      heroImage="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=1600&q=80"
+      heroImage="/images/capabilities/cap-diverse-team.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Service Blueprinting engagements delivered" },
@@ -70,14 +71,14 @@ export default function ServiceBlueprinting() {
           title: "Insurer cuts claims handling time with NLP and OCR",
           industry: "Insurance · Service Design",
           metric: "65%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Hospital system rebuilds clinical workflows with low-code",
           industry: "Healthcare · Service Design",
           metric: "45%",
-          image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues-smile.jpg",
         },
       ]}
       relatedServices={[

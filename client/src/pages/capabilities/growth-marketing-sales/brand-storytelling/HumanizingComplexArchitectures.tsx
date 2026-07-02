@@ -15,7 +15,8 @@ export default function HumanizingComplexArchitectures() {
       serviceName="Humanizing Complex Architectures"
       serviceSlug="humanizing-complex-architectures"
       heroSubtitle="B2B buyers are still people. We translate dense technical documentation into intuitive narratives and visual systems that reduce cognitive load, accelerating the sales cycle for enterprise software and complex SaaS solutions."
-      heroImage="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1600&q=80"
+      heroImage="/images/capabilities/cap-colleagues.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Humanizing Complex Architectures engagements delivered" },
@@ -70,14 +71,14 @@ export default function HumanizingComplexArchitectures() {
           title: "Provider boosts patient engagement with omnichannel touch",
           industry: "Healthcare · Brand & Storytelling",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&q=80",
+          image: "/images/capabilities/cap-woman-motion.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "Telehealth provider scales virtual care platform",
           industry: "Healthcare · Brand & Storytelling",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
         },
       ]}
       relatedServices={[

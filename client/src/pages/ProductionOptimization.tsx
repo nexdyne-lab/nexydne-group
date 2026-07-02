@@ -112,7 +112,7 @@ export default function ProductionOptimization() {
               </div>
               <div className="col-span-2 relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" 
+                  src="/images/industries/mfg-robotics.jpg" 
                   alt="Production Excellence" 
                   className="w-full h-48 object-cover"
                 />
@@ -251,7 +251,7 @@ export default function ProductionOptimization() {
             >
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&q=80" 
+                  src="/images/capabilities/cap-battery-factory.jpg" 
                   alt="Production Methodology" 
                   className="w-full h-auto"
                 />
@@ -291,17 +291,17 @@ export default function ProductionOptimization() {
               {
                 title: "Predictive maintenance increases uptime by 40%",
                 category: "Asset Management",
-                image: "https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&q=80"
+                image: "/images/industries/mfg-robot-arm.jpg"
               },
               {
                 title: "Lean transformation unlocks 25% capacity increase",
                 category: "Lean Manufacturing",
-                image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80"
+                image: "/images/capabilities/cap-robot-factory.jpg"
               },
               {
                 title: "Digital twin reduces changeover time by 50%",
                 category: "Digital Manufacturing",
-                image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80"
+                image: "/images/industries/mfg-robotics.jpg"
               }
             ].map((study, i) => (
               <motion.div 
@@ -380,19 +380,19 @@ export default function ProductionOptimization() {
             title: "The Complete Guide to Process Mining",
             category: "Operations",
             link: "/insights/complete-guide-process-mining",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-battery-factory.jpg"
           },
           {
             title: "IoT for Predictive Maintenance",
             category: "Technology",
             link: "/insights/iot-predictive-maintenance",
-            image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80"
+            image: "/images/industries/mfg-robot-arm.jpg"
           },
           {
             title: "Digital Twins in Manufacturing",
             category: "Innovation",
             link: "/insights/digital-twins-manufacturing",
-            image: "https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-robot-factory.jpg"
           }
         ]}
       />

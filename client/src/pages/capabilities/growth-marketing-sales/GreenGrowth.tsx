@@ -10,7 +10,8 @@ export default function GreenGrowth() {
       hubName="Green Growth"
       slug="green-growth"
       heroSubtitle="Sustainable growth strategy, ESG marketing, and green brand positioning. We help you build brands and businesses that thrive while protecting the planet."
-      heroImage="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80"
+      heroImage="/images/capabilities/cap-woman-motion.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         { number: "100+", label: "sustainable growth strategies developed for clients" },
         { number: "30%", label: "average revenue growth from green product lines" },
@@ -113,21 +114,21 @@ export default function GreenGrowth() {
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Automation",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Cuts Payment Reconciliation Cost By Two Thirds",
           industry: "Financial Services · Payments",
           metric: "67%",
-          image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&q=80",
+          image: "/images/capabilities/cap-peacock.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Hospital Network Cuts Documentation Time Per Shift By Two Hours",
           industry: "Healthcare · Workflow",
           metric: "2hr",
-          image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
       ]}
       relatedCapabilities={[

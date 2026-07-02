@@ -54,14 +54,14 @@ export default function InfrastructureModernization() {
           title: "1,800-server estate consolidated to 240 IaC-managed services with 99.98 percent availability",
           industry: "Logistics",
           metric: "99.98%",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "accounting-audit-automation",
           title: "IaC adoption across 47 plant sites cuts provisioning time from 3 weeks to 45 minutes",
           industry: "Manufacturing",
           metric: "3w → 45m",
-          image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1600&q=80",
+          image: "/images/capabilities/cap-circuit-green.jpg",
         },
       ]}
       relatedServices={[

@@ -7,7 +7,7 @@ export function InsuranceAnalyticsBacklog() {
       industry="Insurance · Data Strategy"
       title="Insurance Carrier Prioritizes $12M Analytics Backlog in 6 Weeks"
       subtitle="Data strategy sprint identified high-ROI use cases, eliminated projects that wouldn't move the needle, and created executable roadmap that aligned analytics team with business priorities."
-      heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80"
+      heroImage="/case-insurance-office.f039a4a1.jpg"
       challenge={`A regional property & casualty insurance carrier with $800M in annual premiums had accumulated a $12M analytics project backlog over 3 years. Business units submitted 47 requests—fraud detection models, claims cost prediction, underwriting automation, customer churn prevention, pricing optimization, agent performance dashboards. The analytics team of 8 people couldn't execute everything.
 
 The Chief Data Officer faced impossible choices. Every business unit claimed their project was "critical." No objective framework existed to prioritize requests. The team worked on whichever project had the loudest executive sponsor, not the highest business value. Projects took 9 months on average to deliver because scope kept expanding. Stakeholders complained about slow delivery while the analytics team burned out from context-switching.

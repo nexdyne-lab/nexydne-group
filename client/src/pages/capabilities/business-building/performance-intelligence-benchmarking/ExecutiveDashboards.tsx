@@ -15,7 +15,8 @@ export default function ExecutiveDashboards() {
       serviceName="Executive Dashboard Design"
       serviceSlug="executive-dashboards"
       heroSubtitle="Design role-specific executive dashboards — board, CEO, functional leaders — that surface the right ten metrics for each audience and make exception-based management the default."
-      heroImage="/images/performance-intelligence-abstract.jpg"
+      heroImage="/images/capabilities/cap-presenting-graphs.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Executive Dashboard Design engagements delivered" },
@@ -70,7 +71,7 @@ export default function ExecutiveDashboards() {
           title: "Professional Services Firm Builds SaaS Product",
           industry: "Professional Services · Business Building",
           metric: "$3.2M",
-          image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
       ]}
       relatedServices={[

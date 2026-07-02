@@ -39,7 +39,7 @@ const caseStudies: CaseStudy[] = [
       { metric: "$420K", label: "Annual savings", icon: <DollarSign className="w-5 h-5" /> },
       { metric: "99.2%", label: "Accuracy rate", icon: <TrendingUp className="w-5 h-5" /> },
     ],
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
+    image: "/images/capabilities/cap-robot-factory.jpg",
     url: "/cases/logistics-tracking-app",
     featured: true,
   },
@@ -55,7 +55,7 @@ const caseStudies: CaseStudy[] = [
       { metric: "$285K", label: "Cost savings", icon: <DollarSign className="w-5 h-5" /> },
       { metric: "0.3%", label: "Error rate", icon: <TrendingUp className="w-5 h-5" /> },
     ],
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
+    image: "/images/capabilities/cap-warehouse-robot.jpg",
     url: "/cases/manufacturing-predictive-maintenance",
   },
   {
@@ -70,7 +70,7 @@ const caseStudies: CaseStudy[] = [
       { metric: "68%", label: "Faster onboarding", icon: <Zap className="w-5 h-5" /> },
       { metric: "100%", label: "Compliance rate", icon: <TrendingUp className="w-5 h-5" /> },
     ],
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=800",
+    image: "/images/industries/ops-gears.jpg",
     url: "/cases/consulting-knowledge-management",
   },
   {
@@ -85,7 +85,7 @@ const caseStudies: CaseStudy[] = [
       { metric: "45%", label: "Fewer denials", icon: <TrendingUp className="w-5 h-5" /> },
       { metric: "$1.2M", label: "Revenue recovered", icon: <DollarSign className="w-5 h-5" /> },
     ],
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
+    image: "/images/capabilities/cap-circuit-green.jpg",
     url: "/cases/healthcare-patient-portal",
   },
   {
@@ -100,7 +100,7 @@ const caseStudies: CaseStudy[] = [
       { metric: "4hrs→20min", label: "Processing time", icon: <Clock className="w-5 h-5" /> },
       { metric: "99.9%", label: "Compliance accuracy", icon: <TrendingUp className="w-5 h-5" /> },
     ],
-    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800",
+    image: "/images/industries/mfg-robotics.jpg",
     url: "/cases/financial-institution",
   },
   {
@@ -115,7 +115,7 @@ const caseStudies: CaseStudy[] = [
       { metric: "25%", label: "Inventory reduction", icon: <DollarSign className="w-5 h-5" /> },
       { metric: "15%", label: "Sales increase", icon: <Zap className="w-5 h-5" /> },
     ],
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800",
+    image: "/images/industries/ops-monitors-dark.jpg",
     url: "/cases/retail-inventory-app",
   },
   {
@@ -130,7 +130,7 @@ const caseStudies: CaseStudy[] = [
       { metric: "40%", label: "More applications", icon: <Users className="w-5 h-5" /> },
       { metric: "30%", label: "Better loss ratios", icon: <TrendingUp className="w-5 h-5" /> },
     ],
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800",
+    image: "/images/capabilities/cap-robot-factory.jpg",
     url: "/cases/insurance-claims-portal",
   },
   {
@@ -145,7 +145,7 @@ const caseStudies: CaseStudy[] = [
       { metric: "95%", label: "Employee satisfaction", icon: <Users className="w-5 h-5" /> },
       { metric: "2 FTEs", label: "Capacity freed", icon: <Building2 className="w-5 h-5" /> },
     ],
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800",
+    image: "/images/capabilities/cap-warehouse-robot.jpg",
     url: "/cases/saas-product-analytics",
   },
 ];
@@ -179,7 +179,7 @@ export default function ProcessOptimizationCaseStudies() {
 
       {/* DZ10 Hero Section */}
       <section className="relative pt-8 pb-20 md:pt-12 md:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-15"></div>
+        <div className="absolute inset-0 bg-[url('/images/industries/ops-gears.jpg')] bg-cover bg-center opacity-15"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background"></div>
         
         <div className="container relative z-10 px-4 md:px-12">

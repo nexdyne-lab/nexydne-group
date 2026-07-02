@@ -15,7 +15,8 @@ export default function DataPipelines() {
       serviceName="Data Pipeline Engineering"
       serviceSlug="data-pipelines"
       heroSubtitle="Build robust data pipelines for model training. We handle data collection, cleaning, labeling, augmentation, and version control at scale. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-data-workstation.e374b2a9.jpg"
+      heroImage="/images/capabilities/cap-hands-data.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Data Pipeline Engineering engagements delivered" },
@@ -68,14 +69,14 @@ export default function DataPipelines() {
           title: "Unlocking enterprise data for a national healthcare network",
           industry: "Healthcare",
           metric: "10x",
-          image: "/case-healthcare-analytics.0ceb030c.jpg",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "Building a national telehealth platform from the ground up",
           industry: "Healthcare",
           metric: "12x",
-          image: "/case-doctor-consultation.799c1562.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

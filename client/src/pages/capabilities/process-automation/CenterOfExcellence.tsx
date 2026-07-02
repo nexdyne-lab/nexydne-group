@@ -15,7 +15,8 @@ export default function CenterOfExcellence() {
       serviceName="Center of Excellence"
       serviceSlug="center-of-excellence"
       heroSubtitle="Build internal automation capabilities with governance frameworks, training programs, and reusable component libraries. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-process-mining.50313a07.jpg"
+      heroImage="/images/industries/biz-team-bright.jpg"
+      heroFocal="60% 40%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Center of Excellence engagements delivered" },

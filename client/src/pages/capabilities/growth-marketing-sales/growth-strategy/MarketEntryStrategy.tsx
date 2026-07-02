@@ -15,7 +15,8 @@ export default function MarketEntryStrategy() {
       serviceName="Market Entry Strategy"
       serviceSlug="market-entry-strategy"
       heroSubtitle="Evaluate new market opportunities and develop entry strategies. Assess market attractiveness, competitive dynamics, and required capabilities for successful expansion."
-      heroImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Market Entry Strategy engagements delivered" },
@@ -70,14 +71,14 @@ export default function MarketEntryStrategy() {
           title: "Consultancy unlocks 30 years of IP with AI knowledge graph",
           industry: "Professional Services · Growth Strategy",
           metric: "4x",
-          image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=80",
+          image: "/images/industries/team-strategy-board.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech scales payment ops with intelligent automation",
           industry: "Fintech · Growth Strategy",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/capabilities/cap-chess.jpg",
         },
       ]}
       relatedServices={[

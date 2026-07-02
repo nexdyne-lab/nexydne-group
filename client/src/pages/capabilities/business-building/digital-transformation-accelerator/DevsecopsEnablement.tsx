@@ -15,7 +15,8 @@ export default function DevsecopsEnablement() {
       serviceName="DevSecOps Enablement"
       serviceSlug="devsecops-enablement"
       heroSubtitle="Stand up CI/CD pipelines, infrastructure-as-code, and security automation that turn architecture decisions into safely repeatable deployments at mid-market scale."
-      heroImage="/images/digital-transformation-abstract.jpg"
+      heroImage="/images/industries/tech-circuit.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "DevSecOps Enablement engagements delivered" },

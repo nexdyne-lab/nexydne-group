@@ -11,7 +11,7 @@ export default function OperationsServiceOperationsCapacityWorkforcePlanning() {
       serviceName="Capacity & Workforce Planning"
       serviceSlug="capacity-workforce-planning"
       heroSubtitle="Develop demand forecasting and workforce planning capabilities that ensure you have the right resources at the right time."
-      heroImage="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-office-women.jpg"
       experienceStats={[
         { number: "100+", label: "Service Operations engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsServiceOperationsCapacityWorkforcePlanning() {
           title: "National Telehealth Provider Scales Operations 10x",
           industry: "Healthcare · Operations",
           metric: "10x",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues-smile.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Academic Medical Center Streamlines Clinical Workflows",
           industry: "Healthcare · Operations",
           metric: "30%",
-          image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
       ]}
       relatedServices={[

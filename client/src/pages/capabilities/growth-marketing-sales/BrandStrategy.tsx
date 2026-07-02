@@ -10,7 +10,8 @@ export default function BrandStrategy() {
       hubName="Brand Strategy"
       slug="brand-strategy"
       heroSubtitle="Build brands that drive business results. We help companies develop distinctive brand positioning, identity systems, and go-to-market strategies that create lasting competitive advantage."
-      heroImage="https://images.unsplash.com/photo-1493612276216-ee3925520721?auto=format&fit=crop&q=80"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         { number: "200+", label: "brand strategy engagements across B2B and B2C sectors" },
         { number: "35%", label: "average increase in brand awareness within 12 months" },
@@ -113,21 +114,21 @@ export default function BrandStrategy() {
           title: "Telehealth Platform Scales To Two Million Monthly Visits",
           industry: "Healthcare · Telehealth",
           metric: "2M",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Automation",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-retail-apparel.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Cuts Payment Reconciliation Cost By Two Thirds",
           industry: "Financial Services · Payments",
           metric: "67%",
-          image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
       ]}
       relatedCapabilities={[

@@ -7,7 +7,7 @@ export function HealthcareEhrModernization() {
       industry="Healthcare · EHR Modernization"
       title="Healthcare Provider Replaces 15-Year-Old EHR System"
       subtitle="Modern electronic health records platform improves clinician satisfaction by 41% and enables real-time patient data access across 28 facilities."
-      heroImage="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80"
+      heroImage="/case-medical-collaboration.9602cc8c.jpg"
       challenge={`A regional healthcare system operating 28 facilities—including four hospitals, 18 outpatient clinics, and six urgent care centers—faced mounting pressure from its outdated electronic health records (EHR) system. The platform, originally implemented in 2008, had become a significant barrier to quality patient care and operational efficiency. Clinicians spent an average of 4.2 hours per day navigating the system's clunky interface, with 68% reporting that EHR documentation time detracted from patient interaction.
 
 The legacy system lacked interoperability with modern healthcare technologies. Integration with lab systems, imaging platforms, and pharmacy networks required manual data entry and reconciliation, creating dangerous opportunities for medication errors and duplicate testing. When patients moved between facilities, their records didn't follow seamlessly—forcing clinicians to piece together medical histories from incomplete data, phone calls, and faxed documents.

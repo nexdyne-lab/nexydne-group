@@ -11,7 +11,7 @@ export default function AirlineLoyaltyRedesign() {
       industryLink="/industries/travel-hospitality"
       title="Airline Transforms Loyalty Program, Increases Engagement 40%"
       subtitle="How personalized rewards, gamified earning, and emotional benefits turned a stagnant mileage program into a competitive advantage."
-      heroImage="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       metrics={[
         { value: "40%", label: "Higher Engagement" },
         { value: "25%", label: "More Redemptions" },
@@ -111,14 +111,14 @@ export default function AirlineLoyaltyRedesign() {
           metric: "18%",
           label: "RevPAR increase",
           link: "/cases/hotel-revenue-management",
-          image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80"
+          image: "/images/capabilities/cap-retail-data.jpg"
         },
         {
           title: "Guest Experience Transformation",
           metric: "25pts",
           label: "NPS improvement",
           link: "/cases/hotel-guest-experience",
-          image: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=80"
+          image: "/images/industries/retail-shelves.jpg"
         }
       ]}
       ctaTitle="Ready to Transform Your Loyalty Program?"

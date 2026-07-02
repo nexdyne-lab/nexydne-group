@@ -191,7 +191,7 @@ export default function RegionalPartnerships() {
             >
               <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
                 <img 
-                  src="/images/initiatives/networking-event.png" 
+                  src="/images/initiatives/networking-event.jpg" 
                   alt="Business networking event"
                   className="w-full h-full object-cover"
                 />
@@ -454,7 +454,7 @@ export default function RegionalPartnerships() {
             >
               <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl bg-white p-4">
                 <img 
-                  src="/images/initiatives/us-economic-map.png" 
+                  src="/images/initiatives/us-economic-map.jpg" 
                   alt="US economic growth by region"
                   className="w-full h-full object-contain"
                 />

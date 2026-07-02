@@ -7,7 +7,7 @@ export function HealthcareWorkforce() {
       industry="Healthcare · Operations"
       title="Workforce Optimization Improves Productivity by 28%"
       subtitle="How a healthcare services company optimized staffing to improve productivity while reducing overtime costs."
-      heroImage="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80"
+      heroImage="/case-medical-collaboration.9602cc8c.jpg"
       challenge={`Labor costs were consuming 72% of revenue, well above industry benchmarks. Overtime had become chronic, with some staff working 50+ hours weekly. Scheduling was manual and reactive, leading to inefficient routing and missed visits. Staff turnover was 35% annually, driven partly by unpredictable schedules.
 
 A 190-employee healthcare services company with $48M in annual revenue provides home health, hospice, and personal care services across a three-state region, employing 150 field clinicians and caregivers. The workforce diagnostic revealed multiple sources of productivity loss: schedulers assigning visits manually without considering geographic proximity, clinicians spending 35% of their time driving between visits, paper-based documentation entered into systems at the end of the day, and no-shows and cancellations leaving gaps in schedules rather than being systematically backfilled.`}

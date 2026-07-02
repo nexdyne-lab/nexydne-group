@@ -11,7 +11,7 @@ export default function RetailAssortmentOptimization() {
       industryLink="/industries/consumer-products"
       title="Retailer Achieves 12% Sales Lift Through Assortment Optimization"
       subtitle="How AI-powered localization tailored product assortments to customer preferences at each store, increasing sales while reducing inventory."
-      heroImage="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       metrics={[
         { value: "12%", label: "Sales Lift" },
         { value: "15%", label: "Less Inventory" },
@@ -111,14 +111,14 @@ export default function RetailAssortmentOptimization() {
           metric: "30%",
           label: "forecast improvement",
           link: "/cases/food-beverage-demand-forecasting",
-          image: "https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=600&q=80"
+          image: "/images/capabilities/cap-retail-data.jpg"
         },
         {
           title: "Demand Optimization for Consumer Electronics",
           metric: "40%",
           label: "inventory reduction",
           link: "/cases/consumer-electronics-demand-optimization",
-          image: "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=600&q=80"
+          image: "/images/industries/retail-shelves.jpg"
         }
       ]}
       ctaTitle="Ready to Localize Your Assortments?"

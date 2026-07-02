@@ -11,7 +11,7 @@ export default function DefenseSupplyChain() {
       industryLink="/industries/aerospace-defense"
       title="Defense Contractor Improves Parts Availability 35%"
       subtitle="How AI-powered supply chain optimization and predictive logistics transformed mission readiness while reducing inventory costs."
-      heroImage="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80"
+      heroImage="/images/industries/retail-warehouse.jpg"
       metrics={[
         { value: "35%", label: "Better Availability" },
         { value: "25%", label: "Less Inventory" },
@@ -111,14 +111,14 @@ export default function DefenseSupplyChain() {
           metric: "40%",
           label: "faster development cycles",
           link: "/cases/aerospace-digital-engineering",
-          image: "https://images.unsplash.com/photo-1517976487492-5750f3195933?w=600&q=80"
+          image: "/images/capabilities/cap-warehouse-robot.jpg"
         },
         {
           title: "Predictive Maintenance for Aviation",
           metric: "50%",
           label: "reduction in unscheduled maintenance",
           link: "/cases/aviation-predictive-maintenance",
-          image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80"
+          image: "/images/industries/transport-bridge.jpg"
         }
       ]}
       ctaTitle="Ready to Optimize Your Supply Chain?"

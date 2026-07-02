@@ -15,7 +15,8 @@ export default function CustomerAcquisition() {
       serviceName="Customer Acquisition"
       serviceSlug="customer-acquisition"
       heroSubtitle="Build scalable acquisition engines across paid, organic, and partnership channels. We optimize CAC while maintaining quality at scale."
-      heroImage="/images/growth-scaling-abstract.jpg"
+      heroImage="/images/capabilities/cap-celebrate.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Customer Acquisition engagements delivered" },
@@ -70,14 +71,14 @@ export default function CustomerAcquisition() {
           title: "Manufacturer Creates Direct-to-Consumer Channel",
           industry: "Manufacturing · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
         {
           slug: "ecommerce-platform-launch",
           title: "Industrial Distributor Launches B2B E-commerce Platform",
           industry: "Industrial Distribution · Business Building",
           metric: "35%",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-woman-motion.jpg",
         },
       ]}
       relatedServices={[

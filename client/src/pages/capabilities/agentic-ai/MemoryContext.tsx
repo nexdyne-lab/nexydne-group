@@ -15,7 +15,8 @@ export default function MemoryContext() {
       serviceName="Memory & Context Management"
       serviceSlug="memory-context"
       heroSubtitle="Design persistent memory systems that allow agents to learn from past interactions and maintain context across long-running tasks. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-ai-agents.eba3d75f.jpg"
+      heroImage="/images/capabilities/cap-circuit-green.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Memory & Context Management engagements delivered" },
@@ -68,14 +69,14 @@ export default function MemoryContext() {
           title: "AI-driven patient engagement for a major hospital system",
           industry: "Healthcare",
           metric: "35%",
-          image: "/case-medical-collaboration.9602cc8c.jpg",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "consulting-knowledge-management",
           title: "Transforming knowledge management for a global consulting firm",
           industry: "Professional Services",
           metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

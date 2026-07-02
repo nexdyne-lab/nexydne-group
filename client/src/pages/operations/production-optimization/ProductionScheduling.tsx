@@ -11,7 +11,7 @@ export default function OperationsProductionOptimizationProductionScheduling() {
       serviceName="Production Scheduling"
       serviceSlug="production-scheduling"
       heroSubtitle="Optimize production planning and scheduling. Balance demand, capacity, and constraints for maximum efficiency and customer service."
-      heroImage="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/mfg-robotics.jpg"
       experienceStats={[
         { number: "100+", label: "Production Optimization engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsProductionOptimizationProductionScheduling() {
           title: "Academic Medical Center Streamlines Clinical Workflows",
           industry: "Healthcare · Operations",
           metric: "30%",
-          image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1600&q=80",
+          image: "/images/capabilities/cap-battery-factory.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "National Telehealth Provider Scales Operations 10x",
           industry: "Healthcare · Operations",
           metric: "10x",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/industries/mfg-robot-arm.jpg",
         },
       ]}
       relatedServices={[

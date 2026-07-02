@@ -11,7 +11,7 @@ export default function OperationsWorkforceOptimizationLaborProductivity() {
       serviceName="Labor Productivity"
       serviceSlug="labor-productivity"
       heroSubtitle="Optimize labor utilization and efficiency. Work measurement, scheduling optimization, and productivity improvement programs that maximize output."
-      heroImage="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-3d-printing.jpg"
       experienceStats={[
         { number: "100+", label: "Workforce Optimization engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,21 +52,21 @@ export default function OperationsWorkforceOptimizationLaborProductivity() {
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Operations",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "insurance-claims-processing",
           title: "P&C Insurer Cuts Claims Cycle Time with Intelligent Automation",
           industry: "Financial Services · Operations",
           metric: "55%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-tablet-woman.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Academic Medical Center Streamlines Clinical Workflows",
           industry: "Healthcare · Operations",
           metric: "30%",
-          image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1600&q=80",
+          image: "/images/capabilities/cap-dome-blue.jpg",
         },
       ]}
       relatedServices={[

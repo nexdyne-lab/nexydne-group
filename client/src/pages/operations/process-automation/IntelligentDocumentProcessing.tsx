@@ -11,7 +11,7 @@ export default function OperationsProcessAutomationIntelligentDocumentProcessing
       serviceName="Intelligent Document Processing"
       serviceSlug="intelligent-document-processing"
       heroSubtitle="Extract and process information from documents using AI. Invoices, contracts, forms, and correspondence — automated end-to-end."
-      heroImage="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-robot-factory.jpg"
       experienceStats={[
         { number: "100+", label: "Process Automation engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,21 +52,21 @@ export default function OperationsProcessAutomationIntelligentDocumentProcessing
           title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
           industry: "Professional Services · Operations",
           metric: "85%",
-          image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&q=80",
+          image: "/images/capabilities/cap-warehouse-robot.jpg",
         },
         {
           slug: "legal-document-intelligence",
           title: "Global Legal Operations Team Deploys Document Intelligence at Scale",
           industry: "Professional Services · Operations",
           metric: "10x",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/industries/ops-gears.jpg",
         },
         {
           slug: "insurance-claims-processing",
           title: "P&C Insurer Cuts Claims Cycle Time with Intelligent Automation",
           industry: "Financial Services · Operations",
           metric: "55%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-circuit-green.jpg",
         },
       ]}
       relatedServices={[

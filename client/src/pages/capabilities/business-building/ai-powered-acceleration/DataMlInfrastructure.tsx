@@ -15,7 +15,8 @@ export default function DataMlInfrastructure() {
       serviceName="Data & ML Infrastructure"
       serviceSlug="data-ml-infrastructure"
       heroSubtitle="Build the foundation for AI success. Data pipelines, model training infrastructure, and MLOps practices that scale with your ambition."
-      heroImage="/images/ai-acceleration-abstract.jpg"
+      heroImage="/images/industries/tech-datacenter.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Data & ML Infrastructure engagements delivered" },
@@ -70,14 +71,14 @@ export default function DataMlInfrastructure() {
           title: "Logistics Company Builds Technology Spin-Off",
           industry: "Logistics · Business Building",
           metric: "$28M",
-          image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1600&q=80",
+          image: "/images/capabilities/cap-circuit-green.jpg",
         },
         {
           slug: "ecommerce-platform-launch",
           title: "Industrial Distributor Launches B2B E-commerce Platform",
           industry: "Industrial Distribution · Business Building",
           metric: "35%",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-ai-search.jpg",
         },
       ]}
       relatedServices={[

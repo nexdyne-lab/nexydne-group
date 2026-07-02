@@ -11,7 +11,7 @@ export default function PEDueDiligence() {
       industryLink="/industries/private-equity"
       title="PE Firm Accelerates Due Diligence 50% with AI-Powered Analysis"
       subtitle="How systematic commercial due diligence and AI-powered analysis enabled faster, more confident deal decisions."
-      heroImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
       metrics={[
         { value: "50%", label: "Faster Evaluation" },
         { value: "3x", label: "More Deals Reviewed" },
@@ -111,14 +111,14 @@ export default function PEDueDiligence() {
           metric: "3.2x",
           label: "average returns",
           link: "/cases/pe-portfolio-operations",
-          image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80"
+          image: "/images/industries/meeting-topview.jpg"
         },
         {
           title: "Carve-Out Execution",
           metric: "6 Months",
           label: "to standalone operations",
           link: "/cases/pe-carveout-execution",
-          image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
+          image: "/images/capabilities/cap-data-bars.jpg"
         }
       ]}
       ctaTitle="Ready to Accelerate Due Diligence?"

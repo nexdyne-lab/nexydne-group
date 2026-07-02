@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceFpaVarianceAnalysis() {
       serviceName="Variance Analysis"
       serviceSlug="variance-analysis"
       heroSubtitle="Understand the drivers behind performance gaps. Actionable insights that connect financial results to operational decisions."
-      heroImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
       experienceStats={[
         { number: "100+", label: "Financial Planning & Analysis engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,21 +52,21 @@ export default function StrategyCorporateFinanceFpaVarianceAnalysis() {
           title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
           industry: "Financial Services · Strategy",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-presenting-graphs.jpg",
         },
         {
           slug: "insurance-claims-processing",
           title: "Insurer Slashes Claims Processing Time With Intelligent Workflow",
           industry: "Financial Services · Strategy",
           metric: "65%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/industries/fin-monitors.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
           industry: "Professional Services · Strategy",
           metric: "85%",
-          image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
       ]}
       relatedServices={[

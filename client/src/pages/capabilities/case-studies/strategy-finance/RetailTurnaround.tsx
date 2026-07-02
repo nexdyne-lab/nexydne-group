@@ -7,7 +7,7 @@ export function RetailTurnaround() {
       industry="Retail · Strategy & Finance"
       title="Turnaround Strategy Restores Profitability"
       subtitle="How a retail company recovered from market disruption through strategic cost reduction and operational restructuring."
-      heroImage="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600&q=80"
+      heroImage="/images/industries/retail-shelves.jpg"
       challenge={`The company had lost 25% of revenue over two years as a new competitor opened nearby locations. EBITDA had turned negative, cash was running low, and the bank was threatening to call the loan. The founding family needed to act quickly to save the business.
 
 A 175-employee specialty retail company with 12 locations across the Southeast faced a crisis: a major competitor entering the market had triggered rapid revenue decline, and the cost structure had not been adjusted as revenue fell. Analysis revealed that not all locations were equally affected—some remained profitable while others were deeply underwater. Inventory was bloated with slow-moving SKUs tying up cash, and pricing had not been reviewed in years despite rising costs.`}

@@ -11,7 +11,7 @@ export default function PowerGenerationPredictiveMaintenance() {
       industryLink="/industries/energy-utilities"
       title="Power Generator Reduces Unplanned Outages 60% with Predictive AI"
       subtitle="How machine learning models predict equipment failures weeks in advance, enabling proactive maintenance and maximizing generation availability."
-      heroImage="https://images.unsplash.com/photo-1548337138-e87d889cc369?w=1920&q=80"
+      heroImage="/images/industries/energy-wind.jpg"
       metrics={[
         { value: "60%", label: "Fewer Unplanned Outages" },
         { value: "95%", label: "Availability Rate" },
@@ -111,14 +111,14 @@ export default function PowerGenerationPredictiveMaintenance() {
           metric: "45%",
           label: "reduction in outage duration",
           link: "/cases/utility-grid-modernization",
-          image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80"
+          image: "/images/industries/energy-powerplant.jpg"
         },
         {
           title: "AI Forecasting for Renewable Energy",
           metric: "25%",
           label: "improvement in forecast accuracy",
           link: "/cases/renewable-energy-forecasting",
-          image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80"
+          image: "/images/industries/energy-solar.jpg"
         }
       ]}
       ctaTitle="Ready to Predict Equipment Failures?"

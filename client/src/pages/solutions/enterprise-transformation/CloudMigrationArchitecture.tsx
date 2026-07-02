@@ -54,14 +54,14 @@ export default function CloudMigrationArchitecture() {
           title: "320-application portfolio migrated in 18 months with zero customer-facing outages",
           industry: "Insurance",
           metric: "0 outages",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Replatform of 47 clinical applications cuts run-rate infrastructure cost by 38 percent",
           industry: "Healthcare",
           metric: "-38%",
-          image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80",
+          image: "/images/capabilities/cap-circuit-green.jpg",
         },
       ]}
       relatedServices={[

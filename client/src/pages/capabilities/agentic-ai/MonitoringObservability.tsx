@@ -15,7 +15,8 @@ export default function MonitoringObservability() {
       serviceName="Monitoring & Observability"
       serviceSlug="monitoring-observability"
       heroSubtitle="Implement comprehensive logging, tracing, and analytics to understand agent behavior, identify issues, and continuously improve performance. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-ai-agents.eba3d75f.jpg"
+      heroImage="/images/industries/fin-monitors.jpg"
+      heroFocal="60% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Monitoring & Observability engagements delivered" },
@@ -68,14 +69,14 @@ export default function MonitoringObservability() {
           title: "Scaling a fintech payment platform with AI-driven automation",
           industry: "Financial Services",
           metric: "5x",
-          image: "/case-fintech-app.5835303a.png",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "accounting-audit-automation",
           title: "AI-powered audit automation at a Big Four accounting firm",
           industry: "Professional Services",
           metric: "45%",
-          image: "/case-accountants-audit.1c87a151.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

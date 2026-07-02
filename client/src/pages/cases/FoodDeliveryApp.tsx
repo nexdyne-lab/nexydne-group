@@ -7,7 +7,7 @@ export function FoodDeliveryApp() {
       industry="Food & Beverage · Mobile App"
       title="Regional Food Delivery Service Scales to 500K Orders/Month with Real-Time Tracking"
       subtitle="Cross-platform mobile app with live driver tracking, route optimization, and POS integrations achieves 4.6★ rating and cuts average delivery time from 32 to 18 minutes."
-      heroImage="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1600&q=80"
+      heroImage="/images/capabilities/cap-food.jpg"
       challenge={`A regional food delivery service operating in 15 cities needed to rebuild their mobile app to compete with national players like DoorDash and Uber Eats. Their existing app suffered from slow performance, unreliable GPS tracking, and frequent crashes during peak hours. Customer complaints centered on inaccurate delivery estimates, inability to track drivers in real-time, and a clunky ordering interface that made menu browsing frustrating.
 
 The company needed a scalable platform that could handle 500,000+ orders per month while providing real-time driver tracking, accurate ETAs, and seamless payment processing. The app had to support three user types (customers, drivers, and restaurant partners) with different interfaces and workflows. Integration with existing restaurant POS systems and payment gateways was critical, as was offline functionality for drivers in areas with poor connectivity.`}

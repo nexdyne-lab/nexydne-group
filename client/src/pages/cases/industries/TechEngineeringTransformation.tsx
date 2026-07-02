@@ -11,7 +11,7 @@ export default function TechEngineeringTransformation() {
       industryLink="/industries/technology-media-telecom"
       title="Tech Company Achieves 3x Faster Release Velocity"
       subtitle="How platform engineering, DevOps transformation, and developer experience optimization accelerated innovation and reduced time-to-market."
-      heroImage="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1920&q=80"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
       metrics={[
         { value: "3x", label: "Faster Releases" },
         { value: "75%", label: "Less Deploy Time" },
@@ -111,14 +111,14 @@ export default function TechEngineeringTransformation() {
           metric: "8M",
           label: "subscribers in year one",
           link: "/cases/media-streaming-launch",
-          image: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=600&q=80"
+          image: "/images/industries/meeting-topview.jpg"
         },
         {
           title: "Customer Experience Transformation for Telecom",
           metric: "40%",
           label: "reduction in churn",
           link: "/cases/telecom-customer-experience",
-          image: "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=600&q=80"
+          image: "/images/capabilities/cap-data-bars.jpg"
         }
       ]}
       ctaTitle="Ready to Accelerate Your Engineering?"

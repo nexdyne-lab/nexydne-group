@@ -11,7 +11,7 @@ export default function PEPortfolioOperations() {
       industryLink="/industries/private-equity"
       title="PE Firm Achieves 3.2x Returns Through Portfolio Operations Excellence"
       subtitle="How systematic operational improvement, shared services, and digital transformation created value across a $5B portfolio."
-      heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=80"
+      heroImage="/images/industries/transport-traffic.jpg"
       metrics={[
         { value: "3.2x", label: "Average Returns" },
         { value: "$1.2B", label: "Value Created" },
@@ -111,14 +111,14 @@ export default function PEPortfolioOperations() {
           metric: "50%",
           label: "faster deal evaluation",
           link: "/cases/pe-due-diligence",
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+          image: "/images/industries/transport-bridge.jpg"
         },
         {
           title: "Carve-Out Execution",
           metric: "6 Months",
           label: "to standalone operations",
           link: "/cases/pe-carveout-execution",
-          image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
+          image: "/images/industries/retail-warehouse.jpg"
         }
       ]}
       ctaTitle="Ready to Build Operational Capability?"

@@ -7,7 +7,7 @@ export function BankCrossSell() {
       industry="Financial Services · Growth Marketing & Sales"
       title="2.1x Cross-Sell Conversion Rate"
       subtitle="A 120-employee community bank with $1.2B in assets implements next-best-action models to personalize product recommendations, doubling cross-sell conversion and generating $640K in new revenue."
-      heroImage="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1600&q=80"
+      heroImage="/images/capabilities/cap-mobile-woman.jpg"
       challenge={`A regional community bank with 120 employees and $1.2B in assets was struggling to deepen relationships with existing customers. Despite having a loyal customer base with an average tenure of 8+ years, the bank's cross-sell ratio of 2.1 products per customer lagged significantly behind the industry benchmark of 3.5.
 
 The bank's approach to cross-selling was fundamentally broken. Branch staff made generic product recommendations based on intuition rather than data. Marketing campaigns promoted the same products to everyone, regardless of individual needs or financial situations. Customers felt marketed to rather than understood.

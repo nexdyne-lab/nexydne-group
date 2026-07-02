@@ -7,7 +7,7 @@ export function CaseStudyFoodBeverageDemandForecasting() {
       industry="Food & Beverage · Supply Chain"
       title="Transforming Demand Planning with Machine Learning"
       subtitle="A regional food and beverage company reduced planning time by 50% and improved forecast accuracy using a machine-learning demand sensing engine."
-      heroImage="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&q=80"
+      heroImage="/images/capabilities/cap-food.jpg"
       challenge={`The company's demand planning process relied heavily on spreadsheet-based forecasting and the institutional knowledge of experienced planners. Demand planners spent 60% of their time gathering and reconciling data from multiple sources, leaving little time for strategic analysis. Forecast accuracy varied significantly by product category and region, ranging from 65% to 85% depending on the planner's experience.
 
 The manual process made it nearly impossible to run multiple demand scenarios or quickly respond to market changes. SKU proliferation and new product launches were outpacing the planning team's capacity to maintain accurate forecasts, creating mounting pressure across the organization.`}

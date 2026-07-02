@@ -52,7 +52,7 @@ export default function ManufacturingPredictiveMaintenance() {
         "A graph-ML scoring layer plus a streaming feature store rebuilt the bank's fraud workflow without a model retraining lag.",
       link: "/cases/FinancialFraudDetection",
       image:
-        "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1200&q=80",
+        "/images/industries/mfg-robotics.jpg",
     },
     {
       industry: "Media & Entertainment",
@@ -62,7 +62,7 @@ export default function ManufacturingPredictiveMaintenance() {
         "A multi-model orchestration layer for copy, image, and video assets routed through editorial review queues with auditable provenance.",
       link: "/cases/MediaContentGenAI",
       image:
-        "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&q=80",
+        "/images/industries/mfg-robot-arm.jpg",
     },
     {
       // TODO: confirm this slug exists once the related supply-chain case is migrated
@@ -73,7 +73,7 @@ export default function ManufacturingPredictiveMaintenance() {
         "A network-flow model layered on real demand signal exposed the safety-stock and lane choices that were quietly trapping cash on the balance sheet.",
       link: "/cases/SupplyChainOptimization",
       image:
-        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80",
+        "/images/capabilities/cap-battery-factory.jpg",
     },
   ];
 
@@ -107,7 +107,7 @@ export default function ManufacturingPredictiveMaintenance() {
         eyebrow="CASE STUDY · ANONYMOUS · MANUFACTURING"
         title="Manufacturing Plant Cuts Downtime 35% with Predictive Maintenance Dashboard"
         subtitle="Equipment health dashboard predicted failures 2 weeks in advance, enabling scheduled maintenance instead of emergency repairs."
-        backgroundImage="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=1600&q=80"
+        backgroundImage="/images/industries/mfg-robot-arm-team.jpg"
         h1ClassName="text-4xl md:text-5xl lg:text-6xl text-charcoal leading-[1.05] mb-6"
         containerClassName="h-[60vh] min-h-[440px] sm:min-h-[480px] lg:min-h-[540px]"
       />

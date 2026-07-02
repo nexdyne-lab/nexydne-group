@@ -54,14 +54,14 @@ export default function CostOptimization() {
           title: "Application portfolio rationalization unlocks $47M of annualized run-cost across three regions",
           industry: "Global Manufacturing",
           metric: "$47M/yr",
-          image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1600&q=80",
+          image: "/images/capabilities/cap-aerial-grid.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "Vendor consolidation and contract renegotiation retire 23 percent of IT third-party spend",
           industry: "Retail & Consumer",
           metric: "-23%",
-          image: "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=1600&q=80",
+          image: "/images/capabilities/cap-dome-blue.jpg",
         },
       ]}
       relatedServices={[

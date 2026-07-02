@@ -11,7 +11,7 @@ export default function K12AdaptiveLearning() {
       industryLink="/industries/education"
       title="School District Improves Learning Outcomes 25% with Adaptive Learning"
       subtitle="How AI-powered personalized learning paths meet each student where they are, accelerating growth and closing achievement gaps."
-      heroImage="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1920&q=80"
+      heroImage="/images/industries/edu-whiteboard.jpg"
       metrics={[
         { value: "25%", label: "Better Outcomes" },
         { value: "40%", label: "Gap Reduction" },
@@ -111,14 +111,14 @@ export default function K12AdaptiveLearning() {
           metric: "18%",
           label: "higher graduation rate",
           link: "/cases/university-student-success",
-          image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80"
+          image: "/images/industries/team-strategy-board.jpg"
         },
         {
           title: "Online Programs Transformation",
           metric: "3x",
           label: "enrollment growth",
           link: "/cases/university-online-programs",
-          image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&q=80"
+          image: "/images/industries/women-laptops.jpg"
         }
       ]}
       ctaTitle="Ready to Personalize Learning?"

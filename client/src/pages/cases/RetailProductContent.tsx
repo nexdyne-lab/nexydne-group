@@ -7,7 +7,7 @@ export function RetailProductContent() {
       industry="Retail · Content Management"
       title="Retailer Launches Products 60% Faster with Content Platform"
       subtitle="Automated product content workflows across 15,000 SKUs, 8 regional websites, and print catalogs, reducing time-to-market from 6 weeks to 2.5 weeks."
-      heroImage="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`A mid-sized home goods retailer with 15,000 SKUs across 8 regional websites and quarterly print catalogs struggled with product content chaos. Product information lived in spreadsheets maintained by merchandising teams, images were scattered across shared drives, and marketing copy existed in email threads. When launching a new product, the process took 6 weeks: merchandising created the spreadsheet entry, photography shot product images, copywriters drafted descriptions, designers laid out catalog pages, and web teams manually entered everything into each regional site.
 
 Content inconsistencies plagued customer experience. The same product had different descriptions on different regional sites, images didn't match across web and print, and pricing errors occurred when updates didn't propagate everywhere. Customer service fielded 200+ inquiries per month about conflicting product information, and returns spiked when products didn't match their online descriptions.

@@ -113,21 +113,21 @@ export default function PerformanceAnalytics() {
           title: "Health System Builds Population Health Analytics Platform",
           industry: "Healthcare · Operations",
           metric: "$18M",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
         {
           slug: "accounting-audit-automation",
           title: "Accounting Firm Automates Audit Workpapers Across Engagements",
           industry: "Professional Services · Operations",
           metric: "45%",
-          image: "https://images.unsplash.com/photo-1554224155-1696413565d3?w=1600&q=80",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth Manager Automates Onboarding and Client Servicing",
           industry: "Financial Services · Operations",
           metric: "55%",
-          image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1600&q=80",
+          image: "/images/industries/fin-monitors.jpg",
         },
       ]}
       relatedCapabilities={[

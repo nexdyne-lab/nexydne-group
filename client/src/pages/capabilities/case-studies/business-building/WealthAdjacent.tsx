@@ -7,7 +7,7 @@ export function WealthAdjacent() {
       industry="Financial Services · Business Building"
       title="Financial Services Firm Enters Adjacent Market"
       subtitle="How a wealth management firm expanded into business financial services, leveraging existing relationships and expertise to capture new revenue."
-      heroImage="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1600&q=80"
+      heroImage="/images/industries/deal-handshake.jpg"
       challenge={`Revenue growth was limited by the addressable market for personal wealth management. Business owner clients were using separate advisors for business finances. Competitors were offering integrated personal and business services. The firm needed to expand services without diluting core expertise.
 
 A 140-employee wealth management firm serving high-net-worth individuals had many clients who were business owners with both personal and business financial needs—yet the firm focused exclusively on personal wealth. Deep analysis revealed that key clients regularly made consequential business financial decisions (exit planning, cash flow management, business succession) without the benefit of integrated advice, creating risk to both the clients and the firm's relationship assets.`}

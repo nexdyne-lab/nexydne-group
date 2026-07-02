@@ -11,7 +11,7 @@ export default function OperationsPerformanceAnalyticsKpiFrameworkDesign() {
       serviceName="KPI Framework Design"
       serviceSlug="kpi-framework-design"
       heroSubtitle="Define the metrics that matter. Develop balanced scorecards, operational KPIs, and performance management frameworks that drive accountability."
-      heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
       experienceStats={[
         { number: "100+", label: "Performance Analytics engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsPerformanceAnalyticsKpiFrameworkDesign() {
           title: "Provider Network Lifts Patient Engagement with Digital Operations",
           industry: "Healthcare · Operations",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=1600&q=80",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth Manager Automates Client Onboarding and Portfolio Reporting",
           industry: "Financial Services · Operations",
           metric: "75%",
-          image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1600&q=80",
+          image: "/images/industries/fin-monitors.jpg",
         },
       ]}
       relatedServices={[

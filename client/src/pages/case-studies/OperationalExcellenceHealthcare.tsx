@@ -22,7 +22,7 @@ export default function OperationalExcellenceHealthcare() {
       
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-30"></div>
+        <div className="absolute inset-0 bg-[url('/case-medical-collaboration.9602cc8c.jpg')] bg-cover bg-center opacity-30"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background"></div>
         
         <div className="container relative z-10 px-4 md:px-12">
@@ -580,14 +580,14 @@ export default function OperationalExcellenceHealthcare() {
                 title: "Digital Transformation in Manufacturing",
                 industry: "Manufacturing",
                 description: "How a precision manufacturer achieved 35% efficiency gains",
-                image: "https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&q=80",
+                image: "/case-doctor-consultation.799c1562.jpg",
                 link: "/case-studies/digital-transformation-manufacturing"
               },
               {
                 title: "Strategic Repositioning in Technology",
                 industry: "Technology",
                 description: "How a technology company repositioned for market leadership",
-                image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80",
+                image: "/case-healthcare-team.5797392b.jpg",
                 link: "/case-studies/strategic-repositioning-technology"
               }
             ].map((item, index) => (

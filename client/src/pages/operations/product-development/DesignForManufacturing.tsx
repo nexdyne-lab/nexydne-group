@@ -11,7 +11,7 @@ export default function OperationsProductDevelopmentDesignForManufacturing() {
       serviceName="Design for Manufacturing"
       serviceSlug="design-for-manufacturing"
       heroSubtitle="Integrate manufacturing considerations early in development to reduce costs, improve quality, and accelerate production ramp-up."
-      heroImage="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/mfg-robotics.jpg"
       experienceStats={[
         { number: "100+", label: "Product Development engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },

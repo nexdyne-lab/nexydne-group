@@ -6,7 +6,7 @@ export const dataRelatedItems: RelatedItem[] = [
     title: "The CEO's Guide to Data Modernization",
     description: "Why 70% of transformations fail and how to be in the 30% that succeed.",
     readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop",
+    image: "/images/capabilities/cap-data-bars.jpg",
     link: "/insights/ceo-guide-data-modernization",
     category: "Strategy"
   },
@@ -15,7 +15,7 @@ export const dataRelatedItems: RelatedItem[] = [
     title: "Building a Data-First Culture",
     description: "NewCo's Chief Data Officer discusses the human side of digital change.",
     readTime: "12 min watch",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2670&auto=format&fit=crop",
+    image: "/images/capabilities/cap-conference-data.jpg",
     link: "/insights/building-data-culture",
     category: "Culture"
   },
@@ -24,7 +24,7 @@ export const dataRelatedItems: RelatedItem[] = [
     title: "From Data Lake to Value Stream",
     description: "A technical deep dive into modern data mesh architectures.",
     readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
+    image: "/images/capabilities/cap-coder.jpg",
     link: "/insights/data-lake-to-value-stream",
     category: "Technology"
   }
@@ -36,7 +36,7 @@ export const aiRelatedItems: RelatedItem[] = [
     title: "Generative AI: Beyond the Hype",
     description: "Practical applications of LLMs in enterprise workflows.",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop",
+    image: "/images/capabilities/cap-data-presentation.jpg",
     link: "/insights/generative-ai-enterprise",
     category: "Innovation"
   },
@@ -45,7 +45,7 @@ export const aiRelatedItems: RelatedItem[] = [
     title: "Automating Customer Support with AI",
     description: "How a fintech unicorn reduced ticket volume by 40% using conversational AI.",
     readTime: "4 min read",
-    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=2506&auto=format&fit=crop",
+    image: "/images/industries/tech-datacenter.jpg",
     link: "/case-studies/fintech-ai-support",
     category: "Case Study"
   },
@@ -54,7 +54,7 @@ export const aiRelatedItems: RelatedItem[] = [
     title: "The Ethics of AI in Decision Making",
     description: "Frameworks for responsible AI deployment in regulated industries.",
     readTime: "15 min read",
-    image: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?q=80&w=2670&auto=format&fit=crop",
+    image: "/images/capabilities/cap-mobile-woman.jpg",
     link: "/insights/ai-ethics-framework",
     category: "Governance"
   }
@@ -66,7 +66,7 @@ export const digitalRelatedItems: RelatedItem[] = [
     title: "The Future of Digital Experience",
     description: "Why seamless, omnichannel experiences are the new battleground for loyalty.",
     readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
+    image: "/images/capabilities/cap-presenting-graphs.jpg",
     link: "/insights/future-digital-experience",
     category: "CX"
   },
@@ -75,7 +75,7 @@ export const digitalRelatedItems: RelatedItem[] = [
     title: "Mobile-First Design Principles",
     description: "Creating intuitive interfaces for the next billion users.",
     readTime: "10 min watch",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2670&auto=format&fit=crop",
+    image: "/images/industries/meeting-topview.jpg",
     link: "/insights/mobile-first-design",
     category: "Design"
   },
@@ -84,7 +84,7 @@ export const digitalRelatedItems: RelatedItem[] = [
     title: "Revamping E-commerce for Scale",
     description: "Scaling a retail platform to handle Black Friday traffic spikes.",
     readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1556742031-c6961e8560b0?q=80&w=2670&auto=format&fit=crop",
+    image: "/images/capabilities/cap-circuit-green.jpg",
     link: "/case-studies/ecommerce-scale",
     category: "Case Study"
   }
@@ -96,7 +96,7 @@ export const strategyRelatedItems: RelatedItem[] = [
     title: "Navigating Digital Disruption",
     description: "Strategies for incumbents to compete with digital-native challengers.",
     readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2670&auto=format&fit=crop",
+    image: "/images/capabilities/cap-celebrate.jpg",
     link: "/insights/navigating-disruption",
     category: "Strategy"
   },
@@ -105,7 +105,7 @@ export const strategyRelatedItems: RelatedItem[] = [
     title: "The Agile Enterprise",
     description: "Moving from waterfall to agile at an organizational level.",
     readTime: "12 min read",
-    image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2670&auto=format&fit=crop",
+    image: "/images/industries/advisor-charts.jpg",
     link: "/insights/agile-enterprise",
     category: "Transformation"
   },
@@ -114,7 +114,7 @@ export const strategyRelatedItems: RelatedItem[] = [
     title: "Measuring Innovation ROI",
     description: "How to track and validate returns on innovation investments.",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop",
+    image: "/images/capabilities/cap-hands-data.jpg",
     link: "/insights/innovation-roi",
     category: "Finance"
   }

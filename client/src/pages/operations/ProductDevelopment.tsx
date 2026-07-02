@@ -113,21 +113,21 @@ export default function ProductDevelopment() {
           title: "Consulting Firm Builds AI-Powered Knowledge Platform",
           industry: "Professional Services · Operations",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80",
+          image: "/images/capabilities/cap-3d-printing.jpg",
         },
         {
           slug: "legal-document-intelligence",
           title: "Legal Team Deploys Document Intelligence Across Matter Lifecycle",
           industry: "Professional Services · Operations",
           metric: "75%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "Health System Launches Telehealth Platform at Scale",
           industry: "Healthcare · Operations",
           metric: "10x",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-tablet-woman.jpg",
         },
       ]}
       relatedCapabilities={[

@@ -10,6 +10,7 @@ export default function GrowthScaling() {
       slug="growth-scaling"
       heroSubtitle="Cross the chasm from early traction to market leadership. We help mid-market companies scale revenue, operations, and teams without losing what made them successful."
       heroImage="/images/growth-scaling-abstract.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "4.2x", label: "Average revenue growth over 24-month engagements" },
@@ -113,21 +114,21 @@ export default function GrowthScaling() {
           title: "Manufacturer Creates Direct-to-Consumer Channel",
           industry: "Manufacturing · Business Building",
           metric: "4.2x",
-          image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=80",
+          image: "/images/capabilities/cap-venturing.jpg",
         },
         {
           slug: "distributor-marketplace",
           title: "Regional Distributor Launches Digital Marketplace",
           industry: "Distribution · Business Building",
           metric: "$50M+",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-lightbulb-idea.jpg",
         },
         {
           slug: "wealth-adjacent",
           title: "Financial Services Firm Enters Adjacent Market",
           industry: "Financial Services · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
       ]}
       relatedCapabilities={[

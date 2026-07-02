@@ -11,7 +11,8 @@ export default function AutomotiveIndustry() {
       industry="Automotive"
       slug="automotive"
       heroSubtitle="We help OEMs, suppliers, and mobility platforms move with the CASE shift — software-defined vehicles, EV programs, smart factories, and new mobility services — without losing the operational discipline that defines the industry."
-      heroImage="/case-study-manufacturing.8d72bf05.jpg"
+      heroImage="/images/industries/auto-robotics-team.jpg"
+      heroFocal="60% 45%"
       povParagraphs={[
         "Automotive is being reshaped by four converging forces — electrification, autonomy, connectivity, and shared mobility. The CASE trends are rewriting competitive dynamics, demanding new capabilities, and creating real openings for the OEMs and suppliers willing to invest ahead of the curve.",
         "We partner with automotive companies to build the digital capabilities the next decade rewards. From software-defined vehicle platforms and EV programs to smart factories and new mobility services, our work helps OEMs and suppliers innovate faster while protecting the operating discipline the industry runs on.",
@@ -76,21 +77,21 @@ export default function AutomotiveIndustry() {
           title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
           industry: "Financial Services",
           metric: "10K+ hrs",
-          image: "/case-banker-meeting.c53f3999.jpg"
+          image: "/images/industries/mfg-robot-arm-team.jpg"
         },
         {
           slug: "consulting-knowledge-management",
           title: "Transforming knowledge management for a global consulting firm",
           industry: "Professional Services",
           metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg"
+          image: "/images/industries/mfg-robot-arm.jpg"
         },
         {
           slug: "fintech-payment-automation",
           title: "Building a scalable payment processing system for a fintech startup",
           industry: "Financial Services",
           metric: "100K+",
-          image: "/case-financial-advisor.7bb94f0c.jpg"
+          image: "/images/industries/ops-gears.jpg"
         }
       ]}
     />

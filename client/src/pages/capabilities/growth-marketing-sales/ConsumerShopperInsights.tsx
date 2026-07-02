@@ -10,7 +10,8 @@ export default function ConsumerShopperInsights() {
       hubName="Consumer & Shopper Insights"
       slug="consumer-shopper-insights"
       heroSubtitle="Understand what drives customer decisions. We help you build insights capabilities that inform strategy, drive innovation, and create competitive advantage."
-      heroImage="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         { number: "300+", label: "consumer insights projects across industries" },
         { number: "45%", label: "average improvement in customer understanding" },
@@ -113,21 +114,21 @@ export default function ConsumerShopperInsights() {
           title: "Health System Builds Unified Analytics Platform Across 18 Hospitals",
           industry: "Healthcare · Analytics",
           metric: "18",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
         {
           slug: "consulting-knowledge-management",
           title: "Consulting Firm Builds AI Knowledge Engine Across 40,000 Engagements",
           industry: "Professional Services · Knowledge",
           metric: "40k+",
-          image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
         },
         {
           slug: "healthcare-patient-engagement",
           title: "Health Network Lifts Patient Engagement Score By 38 Points",
           industry: "Healthcare · Engagement",
           metric: "38pt",
-          image: "https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=1600&q=80",
+          image: "/images/industries/deal-handshake.jpg",
         },
       ]}
       relatedCapabilities={[

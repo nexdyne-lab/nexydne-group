@@ -33,7 +33,7 @@ export default function BuildingDataCulture() {
       title: "The CEO's Guide to Data Modernization",
       description: "Why 70% of transformations fail and how to be in the 30% that succeed.",
       readTime: "5 min read",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80",
+      image: "/images/capabilities/cap-data-bars.jpg",
       link: "/insights/ceo-guide-data-modernization"
     },
     {
@@ -42,7 +42,7 @@ export default function BuildingDataCulture() {
       title: "From Data Lake to Value Stream",
       description: "A technical deep dive into modern data mesh architectures.",
       readTime: "8 min read",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80",
+      image: "/images/capabilities/cap-data-presentation.jpg",
       link: "/insights/data-lake-to-value-stream"
     },
     {
@@ -51,7 +51,7 @@ export default function BuildingDataCulture() {
       title: "The Corporate Venture Advantage",
       description: "Why established assets combined with startup speed create an unfair market advantage.",
       readTime: "6 min read",
-      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80",
+      image: "/images/industries/fin-monitors.jpg",
       link: "/insights/corporate-venture-advantage"
     }
   ];
@@ -65,7 +65,7 @@ export default function BuildingDataCulture() {
       <section className="relative min-h-[70vh] flex items-end pt-20 overflow-hidden bg-background">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
+            src="/images/capabilities/cap-hands-data.jpg"
             alt="Building a Data-First Culture" 
             className="w-full h-full object-cover opacity-40"
           />
@@ -133,7 +133,7 @@ export default function BuildingDataCulture() {
                   </div>
                 </div>
                 <img 
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80" 
+                  src="/images/capabilities/cap-circuit-green.jpg" 
                   alt="Video Thumbnail" 
                   className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-300"
                 />
@@ -180,7 +180,7 @@ export default function BuildingDataCulture() {
               <div className="border-t border-charcoal/10 mt-16 pt-12">
                 <div className="flex items-center gap-6">
                   <div className="w-16 h-16 rounded-full overflow-hidden bg-subtle flex-shrink-0">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80" alt="Sarah Jenkins" className="w-full h-full object-cover" />
+                    <img src="/images/capabilities/cap-data-bars.jpg" alt="Sarah Jenkins" className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-charcoal">Sarah Jenkins</h3>

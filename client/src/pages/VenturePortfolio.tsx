@@ -16,7 +16,7 @@ export default function VenturePortfolio() {
       timelineLabel: "Concept to Launch",
       outcome: "$12M GMV",
       outcomeLabel: "First Year Run Rate",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80",
+      image: "/images/capabilities/cap-lightbulb-idea.jpg",
       icon: Truck,
       color: "text-primary",
       bgColor: "bg-charcoal/30"
@@ -30,7 +30,7 @@ export default function VenturePortfolio() {
       timelineLabel: "Prototype to Rollout",
       outcome: "35%",
       outcomeLabel: "Reduction in Waste",
-      image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80",
+      image: "/images/capabilities/cap-venturing.jpg",
       icon: ShoppingBag,
       color: "text-purple",
       bgColor: "bg-purple/30"
@@ -44,7 +44,7 @@ export default function VenturePortfolio() {
       timelineLabel: "Design to Scale",
       outcome: "50k+",
       outcomeLabel: "Loans Processed",
-      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80",
+      image: "/images/capabilities/cap-telescope.jpg",
       icon: Smartphone,
       color: "text-amber",
       bgColor: "bg-charcoal/30"
@@ -57,7 +57,7 @@ export default function VenturePortfolio() {
       timelineLabel: "MVP Delivery",
       outcome: "15%",
       outcomeLabel: "Avg. Energy Savings",
-      image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80",
+      image: "/images/industries/team-strategy-board.jpg",
       icon: Zap,
       color: "text-amber",
       bgColor: "bg-amber/30"
@@ -70,7 +70,7 @@ export default function VenturePortfolio() {
       timelineLabel: "Rapid Deployment",
       outcome: "98%",
       outcomeLabel: "Patient Satisfaction",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80",
+      image: "/images/capabilities/cap-lightbulb-idea.jpg",
       icon: Activity,
       color: "text-primary",
       bgColor: "bg-charcoal/30"
@@ -83,7 +83,7 @@ export default function VenturePortfolio() {
       timelineLabel: "Beta Launch",
       outcome: "2.5M",
       outcomeLabel: "Sq. Ft. Managed",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80",
+      image: "/images/capabilities/cap-venturing.jpg",
       icon: Building2,
       color: "text-amber",
       bgColor: "bg-charcoal/30"

@@ -54,14 +54,14 @@ export default function CloudCostOptimization() {
           title: "FinOps program retires 32 percent of annual cloud spend without a single workload migration",
           industry: "SaaS Platform",
           metric: "-32%",
-          image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Multi-cloud governance lands $14M of annualized savings across 47 product teams",
           industry: "Financial Services",
           metric: "$14M/yr",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-circuit-green.jpg",
         },
       ]}
       relatedServices={[

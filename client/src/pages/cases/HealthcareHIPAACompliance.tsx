@@ -7,7 +7,7 @@ export function HealthcareHIPAACompliance() {
       industry="Healthcare · Data Governance"
       title="Hospital Achieves HIPAA Compliance with Automated Audit Trails"
       subtitle="Automated access controls and comprehensive audit logging for 12,000 employees accessing patient records across 8 facilities, reducing compliance violations 92%."
-      heroImage="https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=1600&q=80"
+      heroImage="/case-medical-collaboration.9602cc8c.jpg"
       challenge={`A regional hospital system with 8 facilities and 12,000 employees faced mounting HIPAA compliance risks. Their legacy EHR system granted broad access permissions—nurses could view records for patients they'd never treated, billing staff saw clinical notes they didn't need, and IT administrators had unrestricted access to everything. Audit logs existed but were scattered across systems, making compliance investigations take weeks.
 
 The Office for Civil Rights had cited them for insufficient access controls after a breach investigation revealed that a terminated employee's credentials remained active for 6 weeks, allowing unauthorized access to 2,400 patient records. The potential fine was $1.5M, and the reputational damage was worse—local media covered the breach extensively, and patient trust eroded.

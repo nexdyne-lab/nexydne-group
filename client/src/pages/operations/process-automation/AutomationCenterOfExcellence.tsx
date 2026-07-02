@@ -11,7 +11,7 @@ export default function OperationsProcessAutomationAutomationCenterOfExcellence(
       serviceName="Automation Center of Excellence"
       serviceSlug="automation-center-of-excellence"
       heroSubtitle="Build sustainable automation capabilities. Governance frameworks, training programs, and operating models that scale."
-      heroImage="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-robot-factory.jpg"
       experienceStats={[
         { number: "100+", label: "Process Automation engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsProcessAutomationAutomationCenterOfExcellence(
           title: "Big Four Firm Modernizes Audit with End-to-End Automation",
           industry: "Professional Services · Operations",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1600&q=80",
+          image: "/images/capabilities/cap-warehouse-robot.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
           industry: "Professional Services · Operations",
           metric: "85%",
-          image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&q=80",
+          image: "/images/industries/ops-gears.jpg",
         },
       ]}
       relatedServices={[

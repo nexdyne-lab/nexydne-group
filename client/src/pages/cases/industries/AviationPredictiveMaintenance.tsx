@@ -11,7 +11,7 @@ export default function AviationPredictiveMaintenance() {
       industryLink="/industries/aerospace-defense"
       title="Airline Reduces Unscheduled Maintenance 50% with Predictive AI"
       subtitle="How real-time aircraft health monitoring and machine learning predict failures before they ground aircraft, maximizing fleet availability."
-      heroImage="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=80"
+      heroImage="/images/industries/aero-rocket.jpg"
       metrics={[
         { value: "50%", label: "Less Unscheduled Mx" },
         { value: "99.2%", label: "Dispatch Reliability" },
@@ -111,14 +111,14 @@ export default function AviationPredictiveMaintenance() {
           metric: "35%",
           label: "better parts availability",
           link: "/cases/defense-supply-chain",
-          image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80"
+          image: "/images/industries/aero-astronaut.jpg"
         },
         {
           title: "Digital Engineering for Aerospace",
           metric: "40%",
           label: "faster development cycles",
           link: "/cases/aerospace-digital-engineering",
-          image: "https://images.unsplash.com/photo-1517976487492-5750f3195933?w=600&q=80"
+          image: "/images/industries/eng-designers.jpg"
         }
       ]}
       ctaTitle="Ready to Predict Aircraft Failures?"

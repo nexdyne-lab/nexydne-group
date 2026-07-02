@@ -11,7 +11,7 @@ export default function ChemicalSupplyChain() {
       industryLink="/industries/chemicals"
       title="Chemical Company Reduces Supply Disruptions 30% with Resilience Program"
       subtitle="How end-to-end visibility, predictive risk management, and strategic sourcing transformed supply chain resilience."
-      heroImage="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&q=80"
+      heroImage="/images/industries/retail-warehouse.jpg"
       metrics={[
         { value: "30%", label: "Fewer Disruptions" },
         { value: "99%", label: "Customer OTIF" },
@@ -111,14 +111,14 @@ export default function ChemicalSupplyChain() {
           metric: "12%",
           label: "yield improvement",
           link: "/cases/chemical-plant-optimization",
-          image: "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?w=600&q=80"
+          image: "/images/capabilities/cap-warehouse-robot.jpg"
         },
         {
           title: "Sustainability Transformation",
           metric: "25%",
           label: "emissions reduction",
           link: "/cases/chemical-sustainability",
-          image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80"
+          image: "/images/industries/transport-bridge.jpg"
         }
       ]}
       ctaTitle="Ready to Build Resilience?"

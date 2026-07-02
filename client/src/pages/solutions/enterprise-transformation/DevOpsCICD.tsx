@@ -54,14 +54,14 @@ export default function DevOpsCICD() {
           title: "Deployment frequency rises from monthly to 47 per day across a regulated platform",
           industry: "Financial Services",
           metric: "monthly → 47/d",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Lead time for changes drops from 9 days to 4 hours across 23 engineering teams",
           industry: "B2B SaaS",
           metric: "9d → 4h",
-          image: "https://images.unsplash.com/photo-1556742031-c6961e8560b0?w=1600&q=80",
+          image: "/images/capabilities/cap-circuit-green.jpg",
         },
       ]}
       relatedServices={[

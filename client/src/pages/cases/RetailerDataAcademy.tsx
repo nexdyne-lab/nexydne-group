@@ -7,7 +7,7 @@ export function RetailerDataAcademy() {
       industry="Retail · Data Strategy"
       title="Retailer Builds Internal Data Academy to Train 120 Employees"
       subtitle="Custom curriculum covering analytics fundamentals through ML deployment trained employees across 6 departments in 12 months, creating a data-literate organization."
-      heroImage="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`A regional retail chain with 85 stores and $450M annual revenue recognized that data literacy was becoming a competitive differentiator. While they had invested in a modern data warehouse and BI tools, adoption remained low—only 15% of employees used data to inform decisions.
 
 The problem wasn't technology—it was capability. Store managers didn't know how to interpret sales dashboards. Merchandising teams couldn't build custom reports. Marketing relied on external agencies for campaign analysis because internal teams lacked analytics skills.

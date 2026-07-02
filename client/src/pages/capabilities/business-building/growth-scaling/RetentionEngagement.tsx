@@ -15,7 +15,8 @@ export default function RetentionEngagement() {
       serviceName="Retention & Engagement"
       serviceSlug="retention-engagement"
       heroSubtitle="Keep customers coming back. We design retention programs, engagement loops, and loyalty systems that maximize lifetime value."
-      heroImage="/images/growth-scaling-abstract.jpg"
+      heroImage="/images/industries/biz-team-bright.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Retention & Engagement engagements delivered" },
@@ -70,14 +71,14 @@ export default function RetentionEngagement() {
           title: "Professional Services Firm Builds SaaS Product",
           industry: "Professional Services · Business Building",
           metric: "$3.2M",
-          image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
         {
           slug: "wealth-adjacent",
           title: "Financial Services Firm Enters Adjacent Market",
           industry: "Financial Services · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1600&q=80",
+          image: "/images/capabilities/cap-woman-motion.jpg",
         },
       ]}
       relatedServices={[

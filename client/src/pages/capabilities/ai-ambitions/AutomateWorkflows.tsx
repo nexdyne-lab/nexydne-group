@@ -22,7 +22,7 @@ const caseStudies: CaseStudy[] = [
     company: "Regional Credit Union",
     title: "Automating Loan Processing to Cut Approval Time by 70%",
     description: "A mid-sized credit union transformed their manual loan approval process with intelligent document processing and automated decisioning, reducing approval times from days to hours.",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop"
+    image: "/images/industries/tech-glasses.jpg"
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const caseStudies: CaseStudy[] = [
     company: "Regional Health Network",
     title: "Streamlining Patient Intake with AI-Powered Forms",
     description: "A healthcare network automated their patient intake process, reducing administrative burden by 60% while improving data accuracy and patient satisfaction.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop",
+    image: "/images/capabilities/cap-ai-search.jpg",
     hasVideo: true
   },
   {
@@ -39,7 +39,7 @@ const caseStudies: CaseStudy[] = [
     company: "Precision Parts Co.",
     title: "Intelligent Quality Control Reduces Defects by 45%",
     description: "A precision manufacturing company implemented AI-driven visual inspection, automating quality checks that previously required manual review of every component.",
-    image: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&h=600&fit=crop"
+    image: "/images/capabilities/cap-hologram.jpg"
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const caseStudies: CaseStudy[] = [
     company: "Legal Associates LLP",
     title: "Document Review Automation Saves 2,000+ Hours Annually",
     description: "A law firm deployed intelligent document analysis to automate contract review, freeing attorneys to focus on high-value advisory work.",
-    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop",
+    image: "/images/capabilities/cap-circuit-green.jpg",
     hasVideo: true
   }
 ];
@@ -57,19 +57,19 @@ const insights = [
     category: "AI, Insights, and Solutions",
     title: "Five Ways to Identify Automation Opportunities in Your Business",
     description: "A practical framework for finding high-impact processes ripe for intelligent automation.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop"
+    image: "/images/industries/tech-datacenter.jpg"
   },
   {
     category: "Digital",
     title: "The ROI of Workflow Automation: What Leaders Need to Know",
     description: "Understanding the true cost savings and productivity gains from process automation initiatives.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
+    image: "/images/capabilities/cap-coder.jpg"
   },
   {
     category: "AI, Insights, and Solutions",
     title: "Beyond RPA: The Next Generation of Intelligent Automation",
     description: "How AI is transforming traditional robotic process automation into truly intelligent systems.",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=300&fit=crop"
+    image: "/images/capabilities/cap-conference-data.jpg"
   }
 ];
 

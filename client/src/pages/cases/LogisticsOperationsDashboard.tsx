@@ -7,7 +7,7 @@ export function LogisticsOperationsDashboard() {
       industry="Logistics · Data Visualization"
       title="Logistics Company Reduces Delivery Delays 40% with Real-Time Operations Dashboard"
       subtitle="Custom dashboard surfaced capacity bottlenecks and route inefficiencies, enabling proactive intervention before delays occurred—improving on-time delivery from 78% to 92%."
-      heroImage="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600&q=80"
+      heroImage="/images/industries/retail-warehouse.jpg"
       challenge={`A regional logistics company managing 200 trucks and 50 distribution centers struggled with delivery delays that damaged customer relationships and increased operational costs. On-time delivery rate hovered at 78%—below the industry standard of 90%+. Delays cascaded through the network: a late pickup at one location caused missed delivery windows at three downstream stops.
 
 The operations team lacked visibility into real-time performance. Dispatchers discovered delays only when customers called to complain. By then, the opportunity to reroute shipments or reallocate capacity had passed. Post-mortem analysis happened days later through Excel reports—too late to prevent recurring issues.

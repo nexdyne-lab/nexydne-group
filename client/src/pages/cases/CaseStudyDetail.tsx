@@ -20,7 +20,7 @@ const CASE_STUDIES = {
       { value: "40%", label: "Reduction in Empty Miles" },
       { value: "2hrs", label: "Avg. Quote Time (down from 2 days)" }
     ],
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80",
+    image: "/images/capabilities/cap-conference-data.jpg",
     quote: "This wasn't just an app build; it was a complete business model reconstruction. We are now operating at the speed of a tech startup.",
     author: "COO, Regional Logistics Leader",
     timeline: "4 Months"
@@ -36,7 +36,7 @@ const CASE_STUDIES = {
       { value: "99.8%", label: "Inventory Accuracy" },
       { value: "15%", label: "Increase in Sales" }
     ],
-    image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80",
+    image: "/images/industries/meeting-topview.jpg",
     quote: "The visibility we now have is unprecedented. We know exactly what's on every shelf in every store, in real-time.",
     author: "VP of Operations, Retail Chain",
     timeline: "5 Months"
@@ -52,7 +52,7 @@ const CASE_STUDIES = {
       { value: "<10m", label: "Approval Time" },
       { value: "0.5%", label: "Default Rate (vs 2.0% avg)" }
     ],
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80",
+    image: "/images/capabilities/cap-data-bars.jpg",
     quote: "Speed has become our competitive advantage. We can now serve thousands of customers who were previously invisible to the banking system.",
     author: "Founder, Challenger Bank",
     timeline: "6 Months"

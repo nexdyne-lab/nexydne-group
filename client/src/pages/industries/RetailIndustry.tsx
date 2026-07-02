@@ -11,7 +11,8 @@ export default function RetailIndustry() {
       industry="Retail"
       slug="retail"
       heroSubtitle="We help retailers win the unified-commerce era — using AI-powered personalization, intelligent supply chains, and modernized merchandising to protect margin, lift conversion, and meet customers wherever they choose to shop."
-      heroImage="/case-study-retail.webp"
+      heroImage="/images/industries/retail-warehouse.jpg"
+      heroFocal="58% 50%"
       povParagraphs={[
         "Retail is in the middle of its most consequential transformation in decades. The pandemic compressed years of digital adoption into months, fundamentally changing how consumers discover, evaluate, and purchase. Retailers that can meet customers wherever they are — with personalized, frictionless experiences — will win disproportionate share of wallet and loyalty.",
         "We partner with retailers to build the capabilities the next era requires: unified commerce platforms that erase the line between digital and store, AI-powered personalization that lifts conversion and lifetime value, and intelligent supply chains that deliver speed without sacrificing margin.",
@@ -76,21 +77,21 @@ export default function RetailIndustry() {
           title: "Transforming knowledge management for a global consulting firm",
           industry: "Professional Services",
           metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg"
+          image: "/images/industries/retail-shelves.jpg"
         },
         {
           slug: "bank-process-automation",
           title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
           industry: "Financial Services",
           metric: "10K+ hrs",
-          image: "/case-banker-meeting.c53f3999.jpg"
+          image: "/images/industries/team-workshop.jpg"
         },
         {
           slug: "accounting-audit-automation",
           title: "How audit automation helped an accounting firm scale 2x without hiring",
           industry: "Professional Services",
           metric: "2x",
-          image: "/case-accountants-audit.1c87a151.jpg"
+          image: "/images/industries/women-laptops.jpg"
         }
       ]}
     />

@@ -15,7 +15,8 @@ export default function MarketingAutomation() {
       serviceName="Marketing Automation"
       serviceSlug="marketing-automation"
       heroSubtitle="Select and implement marketing automation platforms. Design workflows that scale personalized engagement across channels."
-      heroImage="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=80"
+      heroImage="/images/capabilities/cap-coder.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Marketing Automation engagements delivered" },
@@ -70,14 +71,14 @@ export default function MarketingAutomation() {
           title: "Accounting firm modernizes audit workflows",
           industry: "Professional Services · MarTech Stack",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "Law firm slashes contract review with secure GenAI",
           industry: "Legal Services · MarTech Stack",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1600&q=80",
+          image: "/images/capabilities/cap-circuit-green.jpg",
         },
       ]}
       relatedServices={[

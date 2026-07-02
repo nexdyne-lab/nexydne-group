@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceMergersAcquisitionsCommercialDue
       serviceName="Commercial Due Diligence"
       serviceSlug="commercial-due-diligence"
       heroSubtitle="Deep-dive analysis of target's market position, customers, and growth potential. Validate the investment thesis."
-      heroImage="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/deal-handshake.jpg"
       experienceStats={[
         { number: "100+", label: "Mergers & Acquisitions engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,7 +52,7 @@ export default function StrategyCorporateFinanceMergersAcquisitionsCommercialDue
           title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
           industry: "Professional Services · Strategy",
           metric: "85%",
-          image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&q=80",
+          image: "/images/industries/fin-handshake-city.jpg",
         },
       ]}
       relatedServices={[

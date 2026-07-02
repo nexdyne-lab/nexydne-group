@@ -11,7 +11,8 @@ export default function TechnologyMediaTelecomIndustry() {
       industry="Technology, Media & Telecommunications"
       slug="technology-media-telecom"
       heroSubtitle="We help technology, media, and telecom leaders win the convergence — accelerating product velocity, modernizing networks, and building the data and AI capabilities needed to compete at the pace the next cycle is going to demand."
-      heroImage="/hero-ai-brain.738a6c59.png"
+      heroImage="/images/industries/tech-datacenter.jpg"
+      heroFocal="62% 45%"
       povParagraphs={[
         "Technology, media, and telecom are converging in ways that create both opportunity and threat. Streaming has reshaped entertainment. 5G is enabling new use cases. AI is rewriting product economics across every category. Companies that harness these forces will define the next decade; those that do not will see margin and relevance compress.",
         "We partner with TMT companies to build the capabilities required to win in this environment. For tech companies, we help accelerate product velocity, scale go-to-market, and build operational excellence at growth-stage pace. For media companies, we help navigate the shift to digital, build direct audience relationships, and operate at the unit economics streaming actually allows.",
@@ -76,21 +77,21 @@ export default function TechnologyMediaTelecomIndustry() {
           title: "Transforming knowledge management for a global consulting firm",
           industry: "Professional Services",
           metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg"
+          image: "/images/industries/tech-circuit.jpg"
         },
         {
           slug: "fintech-payment-automation",
           title: "Building a scalable payment processing system for a fintech startup",
           industry: "Financial Services",
           metric: "100K+",
-          image: "/case-financial-advisor.7bb94f0c.jpg"
+          image: "/images/industries/tech-glasses.jpg"
         },
         {
           slug: "legal-document-intelligence",
           title: "Transforming legal research with AI-powered document intelligence",
           industry: "Professional Services",
           metric: "70%",
-          image: "/case-legal-team.2f84fc95.jpg"
+          image: "/images/industries/ops-monitors-dark.jpg"
         }
       ]}
     />

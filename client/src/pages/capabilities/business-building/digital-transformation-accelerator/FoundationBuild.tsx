@@ -15,7 +15,8 @@ export default function FoundationBuild() {
       serviceName="Foundation Build"
       serviceSlug="foundation-build"
       heroSubtitle="We establish core architecture components including cloud infrastructure, data platforms, and integration frameworks. This phase focuses on building stable foundations that support subsequent business migrations."
-      heroImage="/images/digital-transformation-abstract.jpg"
+      heroImage="/images/capabilities/cap-3d-printing.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Foundation Build engagements delivered" },
@@ -70,14 +71,14 @@ export default function FoundationBuild() {
           title: "Logistics Company Builds Technology Spin-Off",
           industry: "Logistics · Business Building",
           metric: "$28M",
-          image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1600&q=80",
+          image: "/images/capabilities/cap-aerial-grid.jpg",
         },
         {
           slug: "ecommerce-platform-launch",
           title: "Industrial Distributor Launches B2B E-commerce Platform",
           industry: "Industrial Distribution · Business Building",
           metric: "35%",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-dome-blue.jpg",
         },
       ]}
       relatedServices={[

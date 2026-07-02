@@ -10,7 +10,8 @@ export default function DigitalMarketing() {
       hubName="Digital Marketing"
       slug="digital-marketing"
       heroSubtitle="Performance marketing, brand strategy, and analytics attribution for measurable growth. We leverage data analytics and AI to optimize spend, personalize messaging, and drive conversion."
-      heroImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+      heroImage="/images/capabilities/cap-telescope.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         { number: "300+", label: "digital marketing transformations delivered across industries" },
         { number: "45%", label: "average improvement in marketing ROI within 6 months" },
@@ -113,21 +114,21 @@ export default function DigitalMarketing() {
           title: "Telehealth Platform Scales To Two Million Monthly Visits",
           industry: "Healthcare · Telehealth",
           metric: "2M",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/industries/deal-handshake.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Automation",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-woman-motion.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Cuts Payment Reconciliation Cost By Two Thirds",
           industry: "Financial Services · Payments",
           metric: "67%",
-          image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
       ]}
       relatedCapabilities={[

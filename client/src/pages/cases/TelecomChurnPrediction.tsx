@@ -7,7 +7,7 @@ export function TelecomChurnPrediction() {
       industry="Telecommunications · Machine Learning"
       title="Telecom Provider Cuts Churn 22% with Predictive Model"
       subtitle="Real-time churn scoring identifies at-risk customers 60 days before cancellation, enabling targeted retention campaigns that save $12M annually."
-      heroImage="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1600&q=80"
+      heroImage="/images/industries/tech-datacenter.jpg"
       challenge={`A regional telecom provider with 2.8M subscribers faced escalating churn rates in a competitive market. By the time customer service noticed warning signs—support tickets, billing disputes, plan downgrades—it was often too late to prevent cancellation. Retention offers went to customers who weren't actually at risk, wasting budget on unnecessary discounts.
 
 Their existing approach relied on manual rules: "if customer calls support 3+ times in a month, flag for retention." These rules generated too many false positives (frustrated but loyal customers) and missed subtle patterns that predicted churn (gradual usage decline, competitor price shopping, life events like relocation).

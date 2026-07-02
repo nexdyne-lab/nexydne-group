@@ -15,7 +15,8 @@ export default function MvpDevelopment() {
       serviceName="MVP Development"
       serviceSlug="mvp-development"
       heroSubtitle="Our engineering team builds your minimum viable product — not a demo, but a real product that customers can use and pay for."
-      heroImage="/images/digital-venture-abstract.jpg"
+      heroImage="/images/capabilities/cap-celebrate.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "MVP Development engagements delivered" },
@@ -70,14 +71,14 @@ export default function MvpDevelopment() {
           title: "Healthcare Provider Launches Telehealth Venture",
           industry: "Healthcare · Business Building",
           metric: "5 Mo",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-venturing.jpg",
         },
         {
           slug: "ecommerce-platform-launch",
           title: "Industrial Distributor Launches B2B E-commerce Platform",
           industry: "Industrial Distribution · Business Building",
           metric: "35%",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-lightbulb-idea.jpg",
         },
       ]}
       relatedServices={[

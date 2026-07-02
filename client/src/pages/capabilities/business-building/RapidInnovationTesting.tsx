@@ -10,6 +10,7 @@ export default function RapidInnovationTesting() {
       slug="rapid-innovation-testing"
       heroSubtitle="Test and validate new growth initiatives with minimal risk using structured rapid prototyping, customer-discovery programs, and pilot frameworks designed for evidence-based go/no-go decisions."
       heroImage="/images/rapid-innovation-abstract.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "80%", label: "Reduction in wasted investment by killing bad ideas early" },
@@ -115,21 +116,21 @@ export default function RapidInnovationTesting() {
           title: "Healthcare Provider Launches Telehealth Venture",
           industry: "Healthcare · Business Building",
           metric: "10-12 wk",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-venturing.jpg",
         },
         {
           slug: "wealth-adjacent",
           title: "Financial Services Firm Enters Adjacent Market",
           industry: "Financial Services · Business Building",
           metric: "3-5x",
-          image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1600&q=80",
+          image: "/images/capabilities/cap-lightbulb-idea.jpg",
         },
         {
           slug: "manufacturer-dtc",
           title: "Manufacturer Creates Direct-to-Consumer Channel",
           industry: "Manufacturing · Business Building",
           metric: "80%",
-          image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
       ]}
       relatedCapabilities={[

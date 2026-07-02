@@ -7,7 +7,7 @@ export function RetailCaseStudy() {
       industry="Retail & Consumer Goods · Operations"
       title="47% Reduction in Inventory Carrying Costs"
       subtitle="Multi-location specialty retailer with 28 stores implements AI-driven inventory optimization, reducing stockouts by 68% while cutting excess inventory by $2.1M annually."
-      heroImage="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`Each store operated with semi-independent inventory systems that didn't communicate in real-time. Corporate buyers made purchasing decisions based on weekly aggregated reports, missing critical demand signals and creating a 5-7 day lag between actual sales and replenishment decisions. With 40% of revenue concentrated in seasonal products, the company consistently over-ordered for some seasons while under-ordering for others—end-of-season markdowns averaged 28% of seasonal inventory.
 
 A specialty home goods retailer operating 28 stores across the Midwest and Eastern United States with 320 employees and over 15,000 SKUs struggled with simultaneous inventory problems: excess inventory in some locations while experiencing stockouts in others. Rapid expansion from 12 to 28 stores over four years created inventory management challenges legacy systems couldn't handle. Online orders drew from a separate warehouse inventory, causing 12% of online orders to be canceled or delayed when products showed "in stock" online but were actually allocated to stores.`}

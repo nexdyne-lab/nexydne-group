@@ -7,7 +7,7 @@ export function EcommerceAIChatbot() {
       industry="E-Commerce · Conversational AI"
       title="E-commerce Leader Reduces Support Costs by 64% with AI Chatbot"
       subtitle="Conversational AI handles 78% of customer inquiries autonomously, delivering instant resolutions while improving customer satisfaction and freeing human agents for complex issues."
-      heroImage="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`A leading online retailer with $2.8 billion in annual revenue and 12 million active customers faced escalating customer support costs that threatened profitability. The company operated a 450-person contact center handling 85,000 monthly inquiries. Average handle time exceeded 8 minutes, and customer satisfaction scores lagged industry benchmarks by 18 points as wait times stretched beyond acceptable limits during peak periods.
 
 The core issue: 70% of support inquiries involved routine, repetitive questions that didn't require human judgment—"Where's my order?" "How do I return this?" "What's your shipping policy?" Yet every inquiry consumed agent time and drove up operational costs. The company had deployed a basic chatbot two years prior, but its rigid decision-tree logic frustrated customers with irrelevant responses and frequent dead-ends.

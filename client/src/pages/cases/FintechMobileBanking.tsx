@@ -7,7 +7,7 @@ export function FintechMobileBanking() {
       industry="Financial Services · Mobile Banking"
       title="Credit Union Launches Mobile Banking App with 4.8 Star Rating"
       subtitle="Regional credit union builds iOS and Android mobile banking app with biometric authentication, mobile check deposit, and P2P payments—achieving 78% adoption in 6 months."
-      heroImage="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       challenge={`A community credit union serving 125,000 members across the Pacific Northwest faced increasing pressure from larger banks offering sophisticated mobile banking experiences. Their existing mobile app suffered from poor user experience, frequent crashes, and limited functionality. Member satisfaction scores for digital banking lagged 28 percentage points behind the industry average. Younger members (ages 25-40) were closing accounts at alarming rates, citing the lack of modern mobile features as their primary reason for leaving.
 
 The credit union needed a complete mobile banking overhaul that would match or exceed the capabilities of major national banks while maintaining the personalized service that defined their brand. The new app had to support biometric authentication, mobile check deposit with instant funds availability, peer-to-peer payments, bill pay, account alerts, and cardless ATM access. Security and regulatory compliance were paramount, requiring SOC 2 Type II certification and adherence to FFIEC mobile banking guidelines.`}
