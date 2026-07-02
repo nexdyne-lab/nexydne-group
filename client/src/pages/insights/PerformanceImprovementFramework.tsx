@@ -370,7 +370,7 @@ export default function PerformanceImprovementFramework() {
 
             <Link href="/insights/fpa-scenario-planning">
               <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer">
-                <div className="h-48 bg-gradient-to-br from-emerald-500 to-primary"></div>
+                <div className="h-48 bg-gradient-to-br from-amber to-primary"></div>
                 <div className="p-6">
                   <div className="text-sm text-primary font-medium mb-2">Financial Planning</div>
                   <h3 className="text-xl font-semibold text-charcoal mb-2">

@@ -207,7 +207,7 @@ export default function IntelligentAdoption() {
                 variants={fadeInUp}
                 className="group bg-off-white rounded-2xl p-8 hover:bg-subtle transition-colors"
               >
-                <div className="w-14 h-14 bg-emerald-900 rounded-xl flex items-center justify-center mb-6">
+                <div className="w-14 h-14 bg-charcoal rounded-xl flex items-center justify-center mb-6">
                   <capability.icon className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-charcoal mb-3">{capability.title}</h3>
@@ -215,7 +215,7 @@ export default function IntelligentAdoption() {
                 <ul className="space-y-2">
                   {capability.benefits.map((benefit, j) => (
                     <li key={j} className="flex items-center text-sm text-charcoal/80">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-amber mr-2 flex-shrink-0" />
                       {benefit}
                     </li>
                   ))}
@@ -258,9 +258,9 @@ export default function IntelligentAdoption() {
               <motion.div 
                 key={i}
                 variants={fadeInUp}
-                className="bg-white rounded-2xl p-8 border border-border hover:border-emerald-300 hover:shadow-lg transition"
+                className="bg-white rounded-2xl p-8 border border-border hover:border-amber/25 hover:shadow-lg transition"
               >
-                <div className="text-xs font-bold tracking-[0.2em] text-emerald-600 uppercase mb-2">
+                <div className="text-xs font-bold tracking-[0.2em] text-amber uppercase mb-2">
                   Phase {i + 1}
                 </div>
                 <h3 className="text-xl font-bold text-charcoal mb-2">{phase.phase}</h3>
@@ -271,7 +271,7 @@ export default function IntelligentAdoption() {
                   <ul className="space-y-1">
                     {phase.activities.map((activity, j) => (
                       <li key={j} className="text-sm text-muted-foreground flex items-center">
-                        <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-2" />
+                        <span className="w-1.5 h-1.5 bg-amber rounded-full mr-2" />
                         {activity}
                       </li>
                     ))}
@@ -359,7 +359,7 @@ export default function IntelligentAdoption() {
               <motion.div 
                 key={i}
                 variants={fadeInUp}
-                className="bg-emerald-900 rounded-2xl p-8 text-white"
+                className="bg-charcoal rounded-2xl p-8 text-white"
               >
                 <span className="text-xs font-medium tracking-[0.15em] text-white/60 uppercase mb-4 block">
                   {useCase.industry}
@@ -376,7 +376,7 @@ export default function IntelligentAdoption() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-emerald-900">
+      <section className="py-24 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto text-center">
             <motion.h2 
@@ -406,7 +406,7 @@ export default function IntelligentAdoption() {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Link href="/contact">
-                <span className="inline-flex items-center justify-center px-8 py-4 bg-white text-emerald-900 font-semibold rounded-full hover:bg-subtle transition cursor-pointer group">
+                <span className="inline-flex items-center justify-center px-8 py-4 bg-white text-amber font-semibold rounded-full hover:bg-subtle transition cursor-pointer group">
                   Get Change Assessment
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>

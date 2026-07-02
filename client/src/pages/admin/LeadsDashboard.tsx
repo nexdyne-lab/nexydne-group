@@ -108,7 +108,7 @@ export default function LeadsDashboard() {
 
   const getScoreBadge = (score: number | null) => {
     const s = score || 0;
-    if (s >= 70) return <Badge className="bg-secondary/100 hover:bg-green-600">High Intent ({s})</Badge>;
+    if (s >= 70) return <Badge className="bg-secondary/100 hover:bg-amber">High Intent ({s})</Badge>;
     if (s >= 40) return <Badge className="bg-amber hover:bg-amber">Medium ({s})</Badge>;
     return <Badge variant="secondary">Standard ({s})</Badge>;
   };

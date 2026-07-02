@@ -247,7 +247,7 @@ export default function CaseStudyTrainingSubscription() {
                 icon: <Award className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Certification Programs",
                 description: "Structured learning paths with assessments and credentials that professionals can add to their LinkedIn profiles.",
-                color: "from-emerald-500 to-primary"
+                color: "from-amber to-primary"
               },
               {
                 icon: <CreditCard className="w-5 h-5 sm:w-6 sm:h-6" />,

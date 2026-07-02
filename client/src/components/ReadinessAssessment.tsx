@@ -50,7 +50,7 @@ export default function ReadinessAssessment({
   const getMaturityLevel = (percentage: number) => {
     if (percentage < 40) return { label: "Emerging", color: "text-amber", description: "You're just starting your journey. Focus on foundational capabilities." };
     if (percentage < 75) return { label: "Developing", color: "text-secondary", description: "You have good basics in place. Now it's time to scale and optimize." };
-    return { label: "Advanced", color: "text-green-400", description: "You're a leader in this space. Focus on innovation and continuous improvement." };
+    return { label: "Advanced", color: "text-amber", description: "You're a leader in this space. Focus on innovation and continuous improvement." };
   };
 
   const resetAssessment = () => {

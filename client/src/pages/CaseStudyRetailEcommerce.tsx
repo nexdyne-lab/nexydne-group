@@ -254,7 +254,7 @@ export default function CaseStudyRetailEcommerce() {
                 icon: <BarChart3 className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Analytics & Attribution",
                 description: "Customer journey tracking, conversion optimization, and marketing attribution to measure ROI across channels.",
-                color: "from-emerald-500 to-primary"
+                color: "from-amber to-primary"
               },
               {
                 icon: <Globe className="w-5 h-5 sm:w-6 sm:h-6" />,

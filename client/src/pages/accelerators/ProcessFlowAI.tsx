@@ -193,7 +193,7 @@ export default function ProcessFlowAI() {
                 <ul className="space-y-2">
                   {capability.benefits.map((benefit, j) => (
                     <li key={j} className="flex items-center text-sm text-charcoal/80">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-amber mr-2 flex-shrink-0" />
                       {benefit}
                     </li>
                   ))}
@@ -292,7 +292,7 @@ export default function ProcessFlowAI() {
                 <h3 className="text-xl font-bold mb-4">{useCase.title}</h3>
                 <p className="text-white/70 mb-6 leading-relaxed">{useCase.description}</p>
                 <div className="pt-4 border-t border-white/10">
-                  <div className="text-2xl font-bold text-emerald-400">{useCase.results}</div>
+                  <div className="text-2xl font-bold text-amber">{useCase.results}</div>
                 </div>
               </motion.div>
             ))}

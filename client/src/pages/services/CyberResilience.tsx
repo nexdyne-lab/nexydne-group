@@ -68,7 +68,7 @@ export default function CyberResilience() {
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-emerald-600 text-sm font-medium tracking-widest uppercase mb-4">
+            <p className="text-amber text-sm font-medium tracking-widest uppercase mb-4">
               The Challenge
             </p>
             <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-8">
@@ -101,7 +101,7 @@ export default function CyberResilience() {
       <section className="py-20 bg-off-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-emerald-600 text-sm font-medium tracking-widest uppercase mb-4">
+            <p className="text-amber text-sm font-medium tracking-widest uppercase mb-4">
               Our Approach
             </p>
             <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-12">
@@ -109,7 +109,7 @@ export default function CyberResilience() {
             </h2>
             
             <div className="space-y-12">
-              <div className="border-l-4 border-emerald-600 pl-8">
+              <div className="border-l-4 border-amber pl-8">
                 <h3 className="text-xl font-bold text-charcoal mb-4">Risk Assessment & Strategy</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   We begin with a comprehensive assessment of your security posture, identifying vulnerabilities, 
@@ -119,7 +119,7 @@ export default function CyberResilience() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-emerald-600 pl-8">
+              <div className="border-l-4 border-amber pl-8">
                 <h3 className="text-xl font-bold text-charcoal mb-4">Security Architecture Design</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   We design security architectures that protect without impeding. Zero-trust principles, 
@@ -129,7 +129,7 @@ export default function CyberResilience() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-emerald-600 pl-8">
+              <div className="border-l-4 border-amber pl-8">
                 <h3 className="text-xl font-bold text-charcoal mb-4">Compliance Framework Implementation</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   We implement compliance frameworks that satisfy regulatory requirements while minimizing 
@@ -138,7 +138,7 @@ export default function CyberResilience() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-emerald-600 pl-8">
+              <div className="border-l-4 border-amber pl-8">
                 <h3 className="text-xl font-bold text-charcoal mb-4">Continuous Monitoring & Response</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Security isn't a one-time project—it's an ongoing discipline. We establish monitoring 
@@ -156,7 +156,7 @@ export default function CyberResilience() {
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-emerald-600 text-sm font-medium tracking-widest uppercase mb-4">
+            <p className="text-amber text-sm font-medium tracking-widest uppercase mb-4">
               Capabilities
             </p>
             <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-12">
@@ -190,10 +190,10 @@ export default function CyberResilience() {
       </section>
 
       {/* Industry Focus Section */}
-      <section className="py-20 bg-emerald-900 text-white">
+      <section className="py-20 bg-charcoal text-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-emerald-300 text-sm font-medium tracking-widest uppercase mb-4">
+            <p className="text-white/80 text-sm font-medium tracking-widest uppercase mb-4">
               Industry Expertise
             </p>
             <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold mb-12">
@@ -203,12 +203,12 @@ export default function CyberResilience() {
             <div className="grid md:grid-cols-2 gap-12">
               <div>
                 <h3 className="text-xl font-bold mb-4">Financial Services</h3>
-                <p className="text-emerald-100 leading-relaxed mb-4">
+                <p className="text-white/80 leading-relaxed mb-4">
                   We understand the unique security challenges facing credit unions, regional banks, 
                   and financial advisors. Our solutions address PCI-DSS requirements, protect against 
                   fraud, and secure the sensitive financial data your clients entrust to you.
                 </p>
-                <ul className="space-y-2 text-emerald-200">
+                <ul className="space-y-2 text-white/80">
                   <li>• PCI-DSS compliance and certification</li>
                   <li>• Fraud detection and prevention</li>
                   <li>• Secure payment processing</li>
@@ -218,13 +218,13 @@ export default function CyberResilience() {
               
               <div>
                 <h3 className="text-xl font-bold mb-4">Healthcare</h3>
-                <p className="text-emerald-100 leading-relaxed mb-4">
+                <p className="text-white/80 leading-relaxed mb-4">
                   Healthcare organizations face some of the most stringent regulatory requirements 
                   and highest-value targets for cybercriminals. We help medical practices, clinics, 
                   and healthcare networks protect patient data while enabling the digital tools that 
                   improve care delivery.
                 </p>
-                <ul className="space-y-2 text-emerald-200">
+                <ul className="space-y-2 text-white/80">
                   <li>• HIPAA compliance and security</li>
                   <li>• Electronic health record protection</li>
                   <li>• Medical device security</li>

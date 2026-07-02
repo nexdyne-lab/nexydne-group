@@ -88,7 +88,7 @@ export default function DataMaturityQuiz() {
       return {
         level: "Data Driven",
         description: "You are leading the pack. Focus on advanced AI/ML use cases and real-time decision making.",
-        color: "text-green-400"
+        color: "text-amber"
       };
     }
   };

@@ -115,7 +115,7 @@ export default function CustomerHealth() {
                   </p>
                 </div>
 
-                <div className="p-4 bg-white rounded-lg sm:rounded-xl border border-border shadow-sm border-l-4 border-l-green-500">
+                <div className="p-4 bg-white rounded-lg sm:rounded-xl border border-border shadow-sm border-l-4 border-l-amber">
                   <div className="flex justify-between items-start mb-2">
                     <h4 className="font-bold text-charcoal">Score: 71-100 (Healthy)</h4>
                     <span className="text-xs font-bold text-secondary bg-secondary/10 px-2 py-1 rounded-full">EXPANSION READY</span>

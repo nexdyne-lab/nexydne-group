@@ -24,7 +24,7 @@ export function PartnerEcosystem({
     cloud: "from-primary to-amber",
     data: "from-purple to-primary",
     automation: "from-primary to-primary",
-    analytics: "from-green-500 to-emerald-500",
+    analytics: "from-amber to-amber",
     integration: "from-primary to-primary",
   };
 

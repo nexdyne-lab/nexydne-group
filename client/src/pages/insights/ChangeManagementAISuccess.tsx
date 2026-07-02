@@ -287,7 +287,7 @@ export default function ChangeManagementAISuccess() {
               
               <Link href="/insights/efficiency-improvement-reality" className="group">
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                  <div className="aspect-[16/10] bg-gradient-to-br from-emerald-700 to-emerald-900"></div>
+                  <div className="aspect-[16/10] bg-gradient-to-br from-charcoal to-charcoal"></div>
                   <div className="p-6">
                     <span className="text-xs font-semibold text-primary uppercase tracking-wider">Article</span>
                     <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-primary transition-colors">

@@ -30,7 +30,7 @@ export default function EfficiencyImprovement() {
           
           <div className="max-w-4xl">
             <div className="flex items-center gap-4 mb-6">
-              <span className="px-3 py-1 bg-emerald-600 text-white text-xs font-semibold uppercase tracking-wider rounded">
+              <span className="px-3 py-1 bg-amber text-charcoal text-xs font-semibold uppercase tracking-wider rounded">
                 Article
               </span>
               <div className="flex items-center text-muted-foreground/70 text-sm">
@@ -65,7 +65,7 @@ export default function EfficiencyImprovement() {
       </section>
 
       {/* Pull Quote */}
-      <section className="py-12 bg-emerald-50">
+      <section className="py-12 bg-amber/5">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <blockquote className="text-2xl md:text-3xl font-medium text-charcoal italic">

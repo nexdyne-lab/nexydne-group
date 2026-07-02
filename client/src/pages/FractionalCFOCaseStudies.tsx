@@ -36,7 +36,7 @@ export default function FractionalCFOCaseStudies() {
         { label: 'Time to Achievement', value: '24 months' }
       ],
       image: '/images/case-studies/retail-expansion.jpg',
-      gradient: 'from-emerald-500 to-primary'
+      gradient: 'from-amber to-primary'
     },
     {
       id: 'saas-category-leadership',

@@ -105,8 +105,8 @@ export default function EconomicsOfLoyalty() {
                   <li>• Erodes margin</li>
                 </ul>
               </div>
-              <div className="bg-secondary/10 p-6 rounded-xl border border-green-100">
-                <h4 className="font-bold text-green-800 mb-2">Emotional/Structural Loyalty</h4>
+              <div className="bg-secondary/10 p-6 rounded-xl border border-amber/10">
+                <h4 className="font-bold text-amber mb-2">Emotional/Structural Loyalty</h4>
                 <ul className="text-sm text-secondary space-y-2">
                   <li>• Based on experience/utility</li>
                   <li>• Hard to replicate</li>

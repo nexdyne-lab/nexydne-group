@@ -54,7 +54,7 @@ export default function CaseStudyContactForm({ caseStudyTitle }: CaseStudyContac
             </div>
 
             {isSubmitted ? (
-              <div className="bg-secondary/10 border border-green-200 rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 text-center">
+              <div className="bg-secondary/10 border border-amber/15 rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 text-center">
                 <div className="text-secondary text-5xl mb-4">✓</div>
                 <h3 className="text-xl font-semibold text-charcoal mb-2">Thank you for your interest!</h3>
                 <p className="text-secondary">

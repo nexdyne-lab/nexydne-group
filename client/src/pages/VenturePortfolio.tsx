@@ -46,8 +46,8 @@ export default function VenturePortfolio() {
       outcomeLabel: "Loans Processed",
       image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80",
       icon: Smartphone,
-      color: "text-green-400",
-      bgColor: "bg-green-900/30"
+      color: "text-amber",
+      bgColor: "bg-charcoal/30"
     },
     {
       industry: "Energy",

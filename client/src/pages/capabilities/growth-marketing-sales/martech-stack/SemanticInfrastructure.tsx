@@ -118,15 +118,15 @@ const SemanticInfrastructure = () => {
                   </div>
 
                   <div className="space-y-4">
-                    <div className="flex items-center justify-between text-sm p-3 bg-secondary/10 rounded-lg border border-green-100">
+                    <div className="flex items-center justify-between text-sm p-3 bg-secondary/10 rounded-lg border border-amber/10">
                       <span className="font-medium text-charcoal">Event: user_signup</span>
                       <span className="text-secondary">Valid</span>
                     </div>
-                    <div className="flex items-center justify-between text-sm p-3 bg-secondary/10 rounded-lg border border-green-100">
+                    <div className="flex items-center justify-between text-sm p-3 bg-secondary/10 rounded-lg border border-amber/10">
                       <span className="font-medium text-charcoal">Prop: plan_tier</span>
                       <span className="text-secondary">Valid</span>
                     </div>
-                    <div className="flex items-center justify-between text-sm p-3 bg-secondary/10 rounded-lg border border-green-100">
+                    <div className="flex items-center justify-between text-sm p-3 bg-secondary/10 rounded-lg border border-amber/10">
                       <span className="font-medium text-charcoal">Prop: revenue_amt</span>
                       <span className="text-secondary">Valid</span>
                     </div>

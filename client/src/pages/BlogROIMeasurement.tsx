@@ -98,7 +98,7 @@ export default function BlogROIMeasurement() {
                   <div className="text-2xl font-bold text-charcoal mb-1">Month 18</div>
                   <div className="text-sm text-muted-foreground">Full benefits + improvement gains</div>
                 </div>
-                <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-4 rounded-lg border border-green-200">
+                <div className="bg-gradient-to-br from-amber/5 to-amber/5 p-4 rounded-lg border border-amber/15">
                   <div className="text-2xl font-bold text-secondary mb-1">280-340%</div>
                   <div className="text-sm text-charcoal/80 font-semibold">18-month ROI</div>
                 </div>
@@ -131,7 +131,7 @@ export default function BlogROIMeasurement() {
                   <div className="text-2xl font-bold text-charcoal mb-1">Month 24</div>
                   <div className="text-sm text-muted-foreground">Full benefits + process improvements</div>
                 </div>
-                <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-4 rounded-lg border border-green-200">
+                <div className="bg-gradient-to-br from-amber/5 to-amber/5 p-4 rounded-lg border border-amber/15">
                   <div className="text-2xl font-bold text-secondary mb-1">240-300%</div>
                   <div className="text-sm text-charcoal/80 font-semibold">24-month ROI</div>
                 </div>
@@ -164,7 +164,7 @@ export default function BlogROIMeasurement() {
                   <div className="text-2xl font-bold text-charcoal mb-1">Month 30</div>
                   <div className="text-sm text-muted-foreground">Full benefits + strategic advantages</div>
                 </div>
-                <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-4 rounded-lg border border-green-200">
+                <div className="bg-gradient-to-br from-amber/5 to-amber/5 p-4 rounded-lg border border-amber/15">
                   <div className="text-2xl font-bold text-secondary mb-1">200-280%</div>
                   <div className="text-sm text-charcoal/80 font-semibold">30-month ROI</div>
                 </div>

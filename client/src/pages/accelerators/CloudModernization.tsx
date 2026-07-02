@@ -197,7 +197,7 @@ export default function CloudModernization() {
                 <ul className="space-y-2">
                   {capability.benefits.map((benefit, j) => (
                     <li key={j} className="flex items-center text-sm text-charcoal/80">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-amber mr-2 flex-shrink-0" />
                       {benefit}
                     </li>
                   ))}
