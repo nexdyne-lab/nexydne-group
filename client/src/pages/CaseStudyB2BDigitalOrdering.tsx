@@ -9,7 +9,7 @@ import { SEO } from "@/components/SEO";
 
 export default function CaseStudyB2BDigitalOrdering() {
   return (
-    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Case Study: Industrial Supplier B2B Digital Ordering" 
         description="How a 220-employee industrial supplier added $4.5M in revenue through a digital ordering platform with 58% self-service adoption."
@@ -17,59 +17,52 @@ export default function CaseStudyB2BDigitalOrdering() {
       />
       <Navigation />
       
-      {/* DZ10 Hero Section */}
-      <section className="relative min-h-[55vh] sm:min-h-[65vh] md:min-h-[55vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center pt-16 sm:pt-20 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=2000&q=80" 
-            alt="Industrial Warehouse" 
-            className="w-full h-full object-cover opacity-30"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/85 to-base/50" />
-          <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent" />
-        </div>
-        
-        <div className="container px-4 sm:px-6 md:px-12 relative z-10">
+      {/* Neutral Hero Section */}
+      <section className="relative w-full bg-background overflow-hidden">
+        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(70% 60% at 82% 14%, rgba(224,76,44,0.05) 0%, transparent 55%), radial-gradient(55% 55% at 6% 95%, rgba(111,68,163,0.045) 0%, transparent 55%)" }} />
+        <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-4xl"
+            className="flex flex-col justify-center min-h-[50vh] py-24 lg:py-28"
           >
+            <div className="max-w-[920px]">
             <Link href="/solutions/accelerating-business-growth">
-              <span className="inline-flex items-center text-sm text-white/60 hover:text-primary transition-colors mb-6 cursor-pointer">
+              <span className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors mb-6 cursor-pointer">
                 <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
                 Back to Accelerating Business Growth
               </span>
             </Link>
-            
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-secondary mb-4 sm:mb-6 block">
-              B2B Manufacturing • Digital Commerce
-            </span>
-            
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1] mb-5 sm:mb-3 md:mb-4">
+
+            <div className="flex items-center gap-3 mb-6">
+              <span className="block h-[3px] w-9 bg-primary" />
+              <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">B2B Manufacturing • Digital Commerce</span>
+            </div>
+
+            <h1 className="text-charcoal font-bold tracking-[-0.035em] leading-[1.05] text-[clamp(2.2rem,4.8vw,3.8rem)]">
               Industrial supplier adds $4.5M revenue through digital ordering
             </h1>
-            
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
+
+            <p className="mt-7 text-[1.1rem] md:text-[1.2rem] leading-[1.55] text-muted-foreground max-w-[62ch]">
               220-employee industrial supplier launched B2B e-commerce platform with customer-specific pricing, inventory visibility, and self-service reordering.
             </p>
-            
-            <div className="flex flex-wrap gap-4 mb-10">
+
+            <div className="flex flex-wrap gap-8 mt-8 mb-10">
               <div>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-secondary">$4.5M</p>
-                <p className="text-white/60 text-sm">New Revenue</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary">$4.5M</p>
+                <p className="text-muted-foreground text-sm">New Revenue</p>
               </div>
               <div>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-secondary">58%</p>
-                <p className="text-white/60 text-sm">Self-Service Orders</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary">58%</p>
+                <p className="text-muted-foreground text-sm">Self-Service Orders</p>
               </div>
               <div>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-secondary">35%</p>
-                <p className="text-white/60 text-sm">Order Processing Cost Reduction</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary">35%</p>
+                <p className="text-muted-foreground text-sm">Order Processing Cost Reduction</p>
               </div>
             </div>
-            
+
             {/* PDF Download Button */}
             <CaseStudyPDFButton
               title="Industrial supplier adds $4.5M revenue through digital ordering"
@@ -90,6 +83,7 @@ export default function CaseStudyB2BDigitalOrdering() {
               ]}
               variant="hero"
             />
+            </div>
           </motion.div>
         </div>
       </section>
@@ -130,19 +124,19 @@ export default function CaseStudyB2BDigitalOrdering() {
             >
               <h3 className="text-xl font-bold mb-6">Company Profile</h3>
               <div className="space-y-4">
-                <div className="flex justify-between py-3 border-b border-base/10">
+                <div className="flex justify-between py-3 border-b border-border">
                   <span className="text-charcoal/60">Industry</span>
                   <span className="font-semibold">Industrial Distribution</span>
                 </div>
-                <div className="flex justify-between py-3 border-b border-base/10">
+                <div className="flex justify-between py-3 border-b border-border">
                   <span className="text-charcoal/60">Employees</span>
                   <span className="font-semibold">220</span>
                 </div>
-                <div className="flex justify-between py-3 border-b border-base/10">
+                <div className="flex justify-between py-3 border-b border-border">
                   <span className="text-charcoal/60">Annual Revenue</span>
                   <span className="font-semibold">$85M (pre-project)</span>
                 </div>
-                <div className="flex justify-between py-3 border-b border-base/10">
+                <div className="flex justify-between py-3 border-b border-border">
                   <span className="text-charcoal/60">Distribution Centers</span>
                   <span className="font-semibold">3 locations</span>
                 </div>
@@ -157,7 +151,7 @@ export default function CaseStudyB2BDigitalOrdering() {
       </section>
 
       {/* The Challenge */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-background">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -166,14 +160,14 @@ export default function CaseStudyB2BDigitalOrdering() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 sm:mb-6 md:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">
               Manual processes limiting growth and efficiency
             </h2>
-            
-            <div className="space-y-6 text-lg text-white/70 leading-relaxed mb-6 sm:mb-8 md:mb-12">
+
+            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed mb-6 sm:mb-8 md:mb-12">
               <p>
                 The VP of Sales estimated that 40% of their inside sales team's time was spent on order entry and status inquiries—tasks that added no value and frustrated both employees and customers. Meanwhile, competitors were offering 24/7 online ordering with real-time inventory and pricing.
               </p>
@@ -197,10 +191,10 @@ export default function CaseStudyB2BDigitalOrdering() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
-                  className="flex items-start gap-3 bg-white/5 p-4 rounded-lg"
+                  className="flex items-start gap-3 bg-white border border-border p-4 rounded-lg"
                 >
-                  <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0" />
-                  <span className="text-white/80">{challenge}</span>
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
+                  <span className="text-charcoal/80">{challenge}</span>
                 </motion.div>
               ))}
             </div>
@@ -241,31 +235,31 @@ export default function CaseStudyB2BDigitalOrdering() {
                 icon: <Settings className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Complex Pricing Engine",
                 description: "Customer-specific pricing, volume discounts, contract pricing, and promotional rules integrated with ERP master data.",
-                color: "from-amber-500 to-orange-600"
+                color: "from-amber to-primary"
               },
               {
                 icon: <BarChart3 className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Real-Time Inventory",
                 description: "Live inventory visibility across all 3 distribution centers with ATP (available-to-promise) calculations and backorder handling.",
-                color: "from-violet-500 to-purple-600"
+                color: "from-purple to-purple"
               },
               {
                 icon: <Clock className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Quick Reorder",
                 description: "One-click reordering from purchase history, saved order templates, and scheduled recurring orders for consumables.",
-                color: "from-emerald-500 to-teal-600"
+                color: "from-amber to-primary"
               },
               {
                 icon: <Truck className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Order Tracking",
                 description: "Real-time shipment tracking, delivery notifications, and proof-of-delivery documentation accessible in the portal.",
-                color: "from-rose-500 to-pink-600"
+                color: "from-primary to-primary"
               },
               {
                 icon: <Building2 className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "ERP Integration",
                 description: "Bi-directional integration with Epicor ERP for orders, inventory, pricing, and customer data synchronization.",
-                color: "from-base to-[#0077B5]"
+                color: "from-charcoal to-[#0077B5]"
               }
             ].map((item, index) => (
               <motion.div
@@ -276,7 +270,7 @@ export default function CaseStudyB2BDigitalOrdering() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group"
               >
-                <div className="h-full bg-subtle p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl hover:shadow-xl transition-all duration-300">
+                <div className="h-full bg-subtle p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl hover:shadow-xl transition duration-300">
                   <div className={`w-12 h-12 bg-gradient-to-br ${item.color} rounded-lg flex items-center justify-center mb-6 text-white`}>
                     {item.icon}
                   </div>
@@ -359,7 +353,7 @@ export default function CaseStudyB2BDigitalOrdering() {
       </section>
 
       {/* Results */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -368,13 +362,13 @@ export default function CaseStudyB2BDigitalOrdering() {
             transition={{ duration: 0.6 }}
             className="text-center mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               Results
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
               Digital transformation delivering measurable ROI
             </h2>
-            <p className="text-xl text-white/60 max-w-3xl mx-auto">
+            <p className="text-xl text-white/70 max-w-3xl mx-auto">
               Within 14 months, the B2B platform became a competitive advantage and significantly improved operational efficiency.
             </p>
           </motion.div>
@@ -394,11 +388,11 @@ export default function CaseStudyB2BDigitalOrdering() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-secondary mb-2">
+                <div className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-2">
                   {item.stat}
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">{item.label}</h3>
-                <p className="text-white/60 text-sm">{item.description}</p>
+                <p className="text-white/70 text-sm">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -410,7 +404,7 @@ export default function CaseStudyB2BDigitalOrdering() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto bg-white/5 p-6 sm:p-8 md:p-12 rounded-lg sm:rounded-xl"
           >
-            <div className="text-secondary mb-6">
+            <div className="text-amber mb-6">
               <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
               </svg>
@@ -450,14 +444,14 @@ export default function CaseStudyB2BDigitalOrdering() {
                 category: "Specialty Retail",
                 title: "Outdoor gear retailer grows online revenue 180% in 18 months",
                 stats: [{ value: "180%", label: "Revenue growth" }, { value: "$3.2M", label: "New revenue" }],
-                color: "from-amber-500 to-orange-600",
+                color: "from-amber to-primary",
                 link: "/cases/retail-ecommerce-growth"
               },
               {
                 category: "Professional Services",
                 title: "Training company launches subscription platform with 2,400 members",
                 stats: [{ value: "2,400", label: "Active members" }, { value: "$1.8M", label: "Annual MRR" }],
-                color: "from-violet-500 to-purple-600",
+                color: "from-purple to-purple",
                 link: "/cases/training-subscription-platform"
               }
             ].map((caseStudy, index) => (
@@ -470,7 +464,7 @@ export default function CaseStudyB2BDigitalOrdering() {
                 className="group"
               >
                 <Link href={caseStudy.link}>
-                  <div className="bg-white rounded-lg sm:rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer h-full flex flex-col">
+                  <div className="bg-white rounded-lg sm:rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 cursor-pointer h-full flex flex-col">
                     <div className={`h-40 bg-gradient-to-br ${caseStudy.color}`} />
                     <div className="p-4 sm:p-5 md:p-6 flex-grow flex flex-col">
                       <span className="text-xs font-bold uppercase tracking-wider text-primary mb-2">
@@ -487,7 +481,7 @@ export default function CaseStudyB2BDigitalOrdering() {
                           </div>
                         ))}
                       </div>
-                      <div className="flex items-center text-primary font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
+                      <div className="flex items-center text-primary font-semibold text-sm group-hover:gap-3 gap-2 transition-[gap]">
                         Read case study
                         <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
                       </div>
@@ -501,7 +495,7 @@ export default function CaseStudyB2BDigitalOrdering() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-background">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -510,14 +504,14 @@ export default function CaseStudyB2BDigitalOrdering() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               Ready to digitize your B2B sales channel?
             </h2>
-            <p className="text-xl text-white/70 leading-relaxed mb-10">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-10">
               Let's discuss how we can help you build a digital ordering platform that drives efficiency and growth.
             </p>
             <Link href="/contact">
-              <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-lg font-semibold transition-all">
+              <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-lg font-semibold transition">
                 Schedule a Consultation
                 <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </Button>

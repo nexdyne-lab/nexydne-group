@@ -27,7 +27,7 @@ export default function CloudMigrationRoadmap() {
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 leading-tight eb-garamond">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 leading-tight">
             The Cloud Migration Roadmap for Mid-Size Companies
           </h1>
           
@@ -49,7 +49,7 @@ export default function CloudMigrationRoadmap() {
           <div className="flex flex-wrap items-center justify-between gap-6">
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-gray-900 flex items-center justify-center text-white font-semibold">
+                <div className="w-12 h-12 rounded-full bg-charcoal flex items-center justify-center text-white font-semibold">
                   RK
                 </div>
                 <div>
@@ -58,7 +58,7 @@ export default function CloudMigrationRoadmap() {
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-white font-semibold">
+                <div className="w-12 h-12 rounded-full bg-charcoal flex items-center justify-center text-white font-semibold">
                   AT
                 </div>
                 <div>
@@ -89,11 +89,11 @@ export default function CloudMigrationRoadmap() {
       <article className="py-16">
         <div className="container max-w-3xl">
           <div className="prose prose-lg max-w-none">
-            <p className="text-xl text-charcoal/80 leading-relaxed mb-8 ">
+            <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
               Cloud migration is no longer optional for mid-size companies. The question is not whether to migrate, but how to do it efficiently without the massive budgets and specialized teams that large enterprises deploy. This guide provides a practical roadmap based on our experience with 80+ mid-market cloud migrations.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 eb-garamond">The Mid-Market Cloud Reality</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">The Mid-Market Cloud Reality</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Mid-size companies face unique challenges in cloud migration. They typically have legacy systems that have grown organically over years, limited IT staff who must maintain operations while executing migration, and budgets that don't allow for the "lift and shift everything" approaches that enterprises use.
@@ -103,7 +103,7 @@ export default function CloudMigrationRoadmap() {
               Yet they also have advantages. Smaller application portfolios mean faster assessment and planning. Fewer stakeholders enable quicker decision-making. And the business impact of successful migration—improved agility, reduced costs, better security—is proportionally larger.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 eb-garamond">The Five-Phase Migration Framework</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">The Five-Phase Migration Framework</h2>
             
             <h3 className="text-2xl font-bold text-charcoal mt-10 mb-4">Phase 1: Assessment and Strategy (4-6 Weeks)</h3>
             
@@ -151,7 +151,7 @@ export default function CloudMigrationRoadmap() {
               Migration is not the end—it's the beginning of cloud optimization. Once applications are running in the cloud, focus on: right-sizing resources based on actual usage, implementing auto-scaling for variable workloads, optimizing data storage and transfer costs, and modernizing applications to leverage cloud-native services.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 eb-garamond">Cost Management Strategies</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Cost Management Strategies</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Cloud costs can spiral quickly without proper governance. Implement these strategies from day one:
@@ -173,7 +173,7 @@ export default function CloudMigrationRoadmap() {
               <strong>Storage Tiering:</strong> Move infrequently accessed data to lower-cost storage tiers automatically.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 eb-garamond">Security Considerations</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Security Considerations</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Cloud migration changes your security model fundamentally. Key considerations include:
@@ -195,7 +195,7 @@ export default function CloudMigrationRoadmap() {
               <strong>Compliance:</strong> Ensure your cloud configuration meets relevant compliance requirements (HIPAA, PCI, SOC 2, etc.). Use cloud-native compliance tools to automate verification.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 eb-garamond">Common Pitfalls to Avoid</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Common Pitfalls to Avoid</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
               <strong>Lift and Shift Everything:</strong> Simply moving applications to the cloud without optimization often increases costs without improving capabilities. Be selective about what to rehost versus refactor.
@@ -219,7 +219,7 @@ export default function CloudMigrationRoadmap() {
       {/* Related Insights */}
       <section className="py-16 bg-subtle">
         <div className="container max-w-6xl">
-          <h2 className="text-2xl font-bold text-charcoal mb-8 eb-garamond">Related Insights</h2>
+          <h2 className="text-2xl font-bold text-charcoal mb-8">Related Insights</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             <Link href="/insights/cloud-native-architecture" className="group">
@@ -264,12 +264,12 @@ export default function CloudMigrationRoadmap() {
       {/* CTA Section */}
       <section className="py-16 bg-white">
         <div className="container max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-charcoal mb-4 eb-garamond">Ready to Plan Your Cloud Migration?</h2>
+          <h2 className="text-3xl font-bold text-charcoal mb-4">Ready to Plan Your Cloud Migration?</h2>
           <p className="text-lg text-muted-foreground mb-8">
             Our experts can help you develop and execute a cloud strategy tailored to your business.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-4 bg-primary text-white font-semibold hover:bg-base transition-colors">
+            <button className="px-8 py-4 bg-primary text-white font-semibold hover:bg-charcoal transition-colors">
               Schedule a Consultation
             </button>
           </Link>

@@ -12,7 +12,7 @@ export default function InfrastructureModernization() {
       serviceName="Infrastructure Modernization"
       serviceSlug="infrastructure-modernization"
       heroSubtitle="Modernizing infrastructure is a multi-year program that lands quarterly value, not a big-bang cutover three years from now. We rebuild the inventory, design the target estate, and run the waves so productivity, cost, and reliability all move together."
-      heroImage="/enterprise-transformation-hero.jpg"
+      heroImage="/solution-enterprise-transformation.0a0f2624.webp"
       experienceStats={[
         { number: "60-80%", label: "Of legacy infrastructure retired inside three years" },
         { number: "10x", label: "Lift in platform productivity — IaC and observability arrive with the new estate" },

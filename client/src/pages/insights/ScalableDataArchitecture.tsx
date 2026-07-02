@@ -52,7 +52,7 @@ export default function ScalableDataArchitecture() {
               The architectural patterns and technology choices that enable enterprises to scale data operations from millions to billions of events.
             </p>
             
-            <div className="flex items-center justify-between border-t border-b border-base/10 py-6">
+            <div className="flex items-center justify-between border-t border-b border-border py-6">
               <div className="flex items-center gap-6">
                 <div>
                   <p className="font-bold">NEXDYNE Engineering</p>
@@ -63,10 +63,10 @@ export default function ScalableDataArchitecture() {
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <button className="p-2 hover:bg-base/5 rounded-full transition-colors">
+                <button className="p-2 hover:bg-charcoal/5 rounded-full transition-colors">
                   <Share2 className="w-5 h-5 text-charcoal/60" />
                 </button>
-                <button className="p-2 hover:bg-base/5 rounded-full transition-colors">
+                <button className="p-2 hover:bg-charcoal/5 rounded-full transition-colors">
                   <Bookmark className="w-5 h-5 text-charcoal/60" />
                 </button>
               </div>
@@ -90,7 +90,7 @@ export default function ScalableDataArchitecture() {
                 alt="Data Center Infrastructure" 
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-base/60 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             </div>
           </motion.div>
         </div>
@@ -173,12 +173,12 @@ export default function ScalableDataArchitecture() {
                   description: "Distribute data ownership to domain teams while maintaining federated governance."
                 }
               ].map((pattern, index) => (
-                <div key={index} className="bg-base p-6 rounded-xl text-white">
+                <div key={index} className="bg-background p-6 rounded-xl text-charcoal">
                   <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4 text-primary">
                     {pattern.icon}
                   </div>
                   <h3 className="text-lg font-bold mb-2">{pattern.title}</h3>
-                  <p className="text-white/60 text-sm leading-relaxed">{pattern.description}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{pattern.description}</p>
                 </div>
               ))}
             </motion.div>
@@ -293,7 +293,7 @@ export default function ScalableDataArchitecture() {
       />
 
       {/* CTA Section */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -302,14 +302,14 @@ export default function ScalableDataArchitecture() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-6">
               Ready to modernize your data architecture?
             </h2>
-            <p className="text-xl text-white/70 leading-relaxed mb-10">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-10">
               Let's discuss how to build a scalable data platform for your organization.
             </p>
             <Link href="/contact">
-              <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-lg font-semibold transition-all">
+              <Button className="bg-primary hover:bg-primary/90 text-charcoal px-10 py-6 text-lg font-semibold transition">
                 Schedule a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>

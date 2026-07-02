@@ -13,7 +13,7 @@ export default function NotFound() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-base flex flex-col">
+    <div className="min-h-screen w-full bg-background flex flex-col">
       <Navigation />
       
       <div className="flex-grow flex items-center justify-center py-20 px-4">
@@ -21,12 +21,12 @@ export default function NotFound() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
             {/* Left Column: Error Message */}
             <div className="text-left space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-secondary text-sm font-medium">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-border text-secondary text-sm font-medium">
                 <AlertCircle className="w-3 h-3 sm:w-4 sm:h-4" />
                 <span>Error 404</span>
               </div>
               
-              <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white tracking-tight">
+              <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-charcoal tracking-tight">
                 Page not <span className="text-secondary">found</span>
               </h1>
               
@@ -37,7 +37,7 @@ export default function NotFound() {
               <div className="flex flex-wrap gap-4 pt-2">
                 <Button
                   onClick={handleGoHome}
-                  className="bg-secondary hover:bg-secondary text-base font-bold rounded-full px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg shadow-[0_0_15px_rgba(0,212,255,0.3)] hover:shadow-[0_0_25px_rgba(0,212,255,0.5)] transition-all"
+                  className="bg-secondary hover:bg-secondary text-base font-bold rounded-full px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg shadow-[0_0_15px_rgba(0,212,255,0.3)] hover:shadow-[0_0_25px_rgba(0,212,255,0.5)] transition"
                 >
                   <Home className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                   Back to Home
@@ -46,7 +46,7 @@ export default function NotFound() {
                 <Button
                   variant="outline"
                   onClick={() => setLocation("/contact")}
-                  className="border-white/20 text-white hover:bg-white/10 hover:text-white rounded-full px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg"
+                  className="border-border text-charcoal hover:bg-white/10 hover:text-white rounded-full px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg"
                 >
                   Contact Support
                 </Button>
@@ -54,48 +54,48 @@ export default function NotFound() {
             </div>
             
             {/* Right Column: Helpful Links */}
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8">
-              <h3 className="text-xl font-semibold text-white mb-6">
+            <div className="bg-white/5 backdrop-blur-sm border border-border rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8">
+              <h3 className="text-xl font-semibold text-charcoal mb-6">
                 You might be looking for:
               </h3>
               
               <div className="space-y-4">
                 <Link href="/solutions/intelligent-process-optimization">
-                  <div className="group flex items-center gap-4 p-4 rounded-lg sm:rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 hover:border-secondary/30 transition-all cursor-pointer">
+                  <div className="group flex items-center gap-4 p-4 rounded-lg sm:rounded-xl bg-white/5 hover:bg-white/10 border border-border hover:border-secondary/30 transition cursor-pointer">
                     <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                       <Briefcase className="w-4 h-4 sm:w-5 sm:h-5" />
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-white font-medium group-hover:text-secondary transition-colors">Our Solutions</h4>
+                      <h4 className="text-charcoal font-medium group-hover:text-secondary transition-colors">Our Solutions</h4>
                       <p className="text-sm text-muted-foreground/70">Explore our enterprise capabilities</p>
                     </div>
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground group-hover:text-secondary group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground group-hover:text-secondary group-hover:translate-x-1 transition" />
                   </div>
                 </Link>
                 
                 <Link href="/insights">
-                  <div className="group flex items-center gap-4 p-4 rounded-lg sm:rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 hover:border-secondary/30 transition-all cursor-pointer">
+                  <div className="group flex items-center gap-4 p-4 rounded-lg sm:rounded-xl bg-white/5 hover:bg-white/10 border border-border hover:border-secondary/30 transition cursor-pointer">
                     <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                       <FileText className="w-4 h-4 sm:w-5 sm:h-5" />
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-white font-medium group-hover:text-secondary transition-colors">Latest Insights</h4>
+                      <h4 className="text-charcoal font-medium group-hover:text-secondary transition-colors">Latest Insights</h4>
                       <p className="text-sm text-muted-foreground/70">Read our thought leadership articles</p>
                     </div>
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground group-hover:text-secondary group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground group-hover:text-secondary group-hover:translate-x-1 transition" />
                   </div>
                 </Link>
                 
                 <Link href="/cases">
-                  <div className="group flex items-center gap-4 p-4 rounded-lg sm:rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 hover:border-secondary/30 transition-all cursor-pointer">
+                  <div className="group flex items-center gap-4 p-4 rounded-lg sm:rounded-xl bg-white/5 hover:bg-white/10 border border-border hover:border-secondary/30 transition cursor-pointer">
                     <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                       <Search className="w-4 h-4 sm:w-5 sm:h-5" />
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-white font-medium group-hover:text-secondary transition-colors">Case Studies</h4>
+                      <h4 className="text-charcoal font-medium group-hover:text-secondary transition-colors">Case Studies</h4>
                       <p className="text-sm text-muted-foreground/70">See our impact across industries</p>
                     </div>
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground group-hover:text-secondary group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground group-hover:text-secondary group-hover:translate-x-1 transition" />
                   </div>
                 </Link>
               </div>

@@ -92,10 +92,10 @@ export default function InlineTableOfContents({ contentSelector = "article" }: I
   }
 
   return (
-    <div className="mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8 border border-slate-200 rounded-lg overflow-hidden bg-slate-50">
+    <div className="mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8 border border-border rounded-lg overflow-hidden bg-off-white">
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className="flex items-center justify-between w-full px-4 py-3 text-left hover:bg-slate-100 transition-colors"
+        className="flex items-center justify-between w-full px-4 py-3 text-left hover:bg-subtle transition-colors"
       >
         <div className="flex items-center gap-2 text-sm font-semibold text-charcoal/80">
           <List className="w-3 h-3 sm:w-4 sm:h-4" />
@@ -110,18 +110,18 @@ export default function InlineTableOfContents({ contentSelector = "article" }: I
       </button>
 
       {isExpanded && (
-        <div className="px-4 pb-4 border-t border-slate-200">
+        <div className="px-4 pb-4 border-t border-border">
           <ul className="mt-3 space-y-1">
             {headings.map((heading) => (
               <li key={heading.id}>
                 <button
                   onClick={() => scrollToHeading(heading.id)}
                   className={`
-                    block w-full text-left text-sm py-1.5 px-3 rounded transition-all duration-200
+                    block w-full text-left text-sm py-1.5 px-3 rounded transition duration-200
                     ${heading.level === 3 ? "pl-6 text-xs" : ""}
                     ${
                       activeId === heading.id
-                        ? "bg-blue-100 text-blue-700 font-medium"
+                        ? "bg-primary/10 text-primary font-medium"
                         : "text-muted-foreground hover:text-charcoal hover:bg-white"
                     }
                   `}

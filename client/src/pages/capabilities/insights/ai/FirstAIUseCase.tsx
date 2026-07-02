@@ -38,7 +38,7 @@ export default function FirstAIUseCase() {
         and you may set back your AI ambitions by years.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
         The First Use Case Paradox
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -53,7 +53,7 @@ export default function FirstAIUseCase() {
         and execute their initial projects.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Phase 1: Use Case Identification (Weeks 1-3)
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -101,7 +101,7 @@ export default function FirstAIUseCase() {
         <li><strong>Measurement capability:</strong> Can you clearly measure success?</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Phase 2: Use Case Validation (Weeks 4-6)
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -135,7 +135,7 @@ export default function FirstAIUseCase() {
         <li><strong>Guardrails:</strong> Thresholds that must not be crossed (e.g., minimum accuracy levels)</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Phase 3: Implementation (Weeks 7-16)
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -182,7 +182,7 @@ export default function FirstAIUseCase() {
         <li>Develop rollback procedures for issues</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Phase 4: Launch and Learning (Weeks 17-20)
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -215,7 +215,7 @@ export default function FirstAIUseCase() {
         <li>Quarterly assessments of expansion opportunities</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Common First Use Case Patterns
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -246,7 +246,7 @@ export default function FirstAIUseCase() {
         </ul>
       </div>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Setting Up for Scale
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">

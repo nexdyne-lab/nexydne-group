@@ -10,24 +10,24 @@ import { dataRelatedItems } from "@/data/related-content";
 
 export default function EnergyMaterials() {
   return (
-    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-blue-100">
+    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-primary/10">
       <Navigation />
 
       {/* Hero Section */}
-      <header className="pt-16 sm:pt-20 pb-16 border-b border-slate-100">
+      <header className="pt-16 sm:pt-20 pb-16 border-b border-border">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <div className="text-sm font-medium text-muted-foreground mb-6 uppercase tracking-wider">
-              <Link href="/capabilities/growth-marketing-sales/green-growth" className="hover:text-blue-900 transition-colors">
+              <Link href="/capabilities/growth-marketing-sales/green-growth" className="hover:text-primary transition-colors">
                 Green Growth
               </Link>
               <span className="mx-2">/</span>
-              <span className="text-blue-900">Energy & Materials</span>
+              <span className="text-charcoal">Energy & Materials</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1] eb-garamond">
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1]">
               Decarbonizing the Industrial Core
             </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-charcoal leading-relaxed max-w-3xl font-light ">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-charcoal leading-relaxed max-w-3xl font-light">
               For energy and materials companies, the net-zero transition is not just an environmental imperative—it is a fundamental re-engineering of the business model.
             </p>
           </div>
@@ -50,14 +50,14 @@ export default function EnergyMaterials() {
               </p>
             </section>
 
-            <Separator className="bg-slate-200" />
+            <Separator className="bg-grey" />
 
             {/* Key Challenges & Solutions */}
             <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">Strategic Priorities</h2>
+              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">Strategic Priorities</h2>
               
               <div className="space-y-10">
-                <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+                <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Asset Decarbonization</h3>
                   <p className="text-muted-foreground mb-6">
                     Existing assets must operate cleaner and longer. We implement AI-driven process control to minimize energy intensity and fugitive emissions in real-time.
@@ -74,7 +74,7 @@ export default function EnergyMaterials() {
                   </ul>
                 </div>
 
-                <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+                <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Green Hydrogen & Renewables Integration</h3>
                   <p className="text-muted-foreground mb-6">
                     Scaling new energy vectors requires complex systems integration. We help design the digital backbone for hydrogen hubs and renewable power integration.
@@ -91,7 +91,7 @@ export default function EnergyMaterials() {
                   </ul>
                 </div>
 
-                <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+                <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Circular Value Chains</h3>
                   <p className="text-muted-foreground mb-6">
                     Closing the loop on materials is essential for scope 3 reduction. We build the data infrastructure to track materials from extraction to recovery.
@@ -110,12 +110,12 @@ export default function EnergyMaterials() {
               </div>
             </section>
 
-            <Separator className="bg-slate-200" />
+            <Separator className="bg-grey" />
 
             {/* Case Study */}
             <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">Impact in Action</h2>
-              <div className="bg-slate-900 text-white p-8 md:p-12 rounded-sm relative overflow-hidden group">
+              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">Impact in Action</h2>
+              <div className="bg-charcoal text-white p-8 md:p-12 rounded-sm relative overflow-hidden group">
                 <div className="absolute top-0 right-0 p-4 sm:p-6 md:p-8 opacity-10">
                   <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
                     <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
@@ -123,7 +123,7 @@ export default function EnergyMaterials() {
                 </div>
                 
                 <div className="relative z-10">
-                  <div className="text-blue-400 font-bold tracking-wider uppercase text-sm mb-4">Case Study</div>
+                  <div className="text-primary font-bold tracking-wider uppercase text-sm mb-4">Case Study</div>
                   <h3 className="text-2xl md:text-3xl font-bold mb-6">
                     Optimizing a Global Refinery Network
                   </h3>
@@ -142,7 +142,7 @@ export default function EnergyMaterials() {
                     </div>
                   </div>
 
-                  <Button className="bg-white text-charcoal hover:bg-blue-50 border-none">
+                  <Button className="bg-white text-charcoal hover:bg-primary/5 border-none">
                     Read full case study <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 ml-2" />
                   </Button>
                 </div>
@@ -153,21 +153,21 @@ export default function EnergyMaterials() {
 
           {/* Sidebar */}
           <div className="lg:col-span-4 space-y-8">
-            <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100 sticky top-24">
+            <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border sticky top-24">
               <h3 className="text-xl font-bold text-charcoal mb-4">Get in Touch</h3>
               <p className="text-muted-foreground mb-6 text-sm">
                 Discuss your decarbonization strategy with our Energy & Materials practice leaders.
               </p>
-              <Button className="w-full bg-blue-900 hover:bg-blue-800 text-white">
+              <Button className="w-full bg-charcoal hover:bg-primary-hover text-white">
                 Contact our experts
               </Button>
 
-              <div className="mt-8 pt-8 border-t border-slate-200">
+              <div className="mt-8 pt-8 border-t border-border">
                 <h4 className="font-bold text-charcoal mb-4 text-sm uppercase tracking-wide">Related Insights</h4>
                 <ul className="space-y-4">
                   <li>
                     <Link href="/insights/net-zero-transition" className="group block">
-                      <h5 className="text-charcoal font-medium group-hover:text-blue-700 transition-colors mb-1">
+                      <h5 className="text-charcoal font-medium group-hover:text-primary transition-colors mb-1">
                         The Net Zero Transition
                       </h5>
                       <span className="text-xs text-muted-foreground flex items-center">
@@ -177,7 +177,7 @@ export default function EnergyMaterials() {
                   </li>
                   <li>
                     <Link href="/insights/carbon-markets" className="group block">
-                      <h5 className="text-charcoal font-medium group-hover:text-blue-700 transition-colors mb-1">
+                      <h5 className="text-charcoal font-medium group-hover:text-primary transition-colors mb-1">
                         Carbon Markets 2025
                       </h5>
                       <span className="text-xs text-muted-foreground flex items-center">

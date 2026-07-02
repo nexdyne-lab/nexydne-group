@@ -12,19 +12,19 @@ const MiddlewareStrategy = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-base">
+      <section className="relative pt-32 pb-20 overflow-hidden bg-background">
         <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-base via-base to-base"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-background"></div>
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-900/50 border border-blue-700/50 text-blue-300 text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-charcoal/50 border border-primary/50 text-primary text-sm font-medium mb-6">
               <Network className="w-3 h-3 sm:w-4 sm:h-4" />
               <span>MarTech & Stack Architecture</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-3 leading-tight eb-garamond">
+            <h1 className="text-4xl md:text-6xl font-bold text-charcoal mb-3 leading-tight">
               Middleware Strategy & <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">
+              <span className="text-charcoal">
                 Integration Patterns
               </span>
             </h1>
@@ -36,7 +36,7 @@ const MiddlewareStrategy = () => {
             
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
-                <a className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
+                <a className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition duration-300 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
                   Architect Your Integration
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
@@ -51,7 +51,7 @@ const MiddlewareStrategy = () => {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6 eb-garamond">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6">
                 Decoupling for <span className="text-primary">Resilience</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
@@ -68,7 +68,7 @@ const MiddlewareStrategy = () => {
               
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <div className="p-2 rounded-lg bg-blue-50 text-primary mt-1">
+                  <div className="p-2 rounded-lg bg-primary/5 text-primary mt-1">
                     <Server className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div>
@@ -77,7 +77,7 @@ const MiddlewareStrategy = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="p-2 rounded-lg bg-blue-50 text-primary mt-1">
+                  <div className="p-2 rounded-lg bg-primary/5 text-primary mt-1">
                     <Zap className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div>
@@ -86,7 +86,7 @@ const MiddlewareStrategy = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="p-2 rounded-lg bg-blue-50 text-primary mt-1">
+                  <div className="p-2 rounded-lg bg-primary/5 text-primary mt-1">
                     <RefreshCw className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div>
@@ -98,16 +98,16 @@ const MiddlewareStrategy = () => {
             </div>
             
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-slate-50 rounded-3xl transform rotate-3"></div>
-              <div className="relative bg-white p-4 sm:p-6 md:p-8 rounded-3xl shadow-xl border border-slate-100">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary to-off-white rounded-3xl transform rotate-3"></div>
+              <div className="relative bg-white p-4 sm:p-6 md:p-8 rounded-3xl shadow-xl border border-border">
                 <div className="space-y-8">
-                  <div className="flex items-center justify-between pb-6 border-b border-slate-100">
+                  <div className="flex items-center justify-between pb-6 border-b border-border">
                     <h3 className="font-bold text-charcoal">Integration Health</h3>
                     <span className="px-3 py-1 rounded-full bg-secondary/10 text-secondary text-xs font-bold">HEALTHY</span>
                   </div>
                   
                   <div className="space-y-4">
-                    <div className="p-4 bg-slate-50 rounded-lg sm:rounded-xl border border-slate-100 flex justify-between items-center">
+                    <div className="p-4 bg-off-white rounded-lg sm:rounded-xl border border-border flex justify-between items-center">
                       <div>
                         <div className="text-sm font-bold text-charcoal">API Uptime</div>
                         <div className="text-xs text-muted-foreground">Last 30 days</div>
@@ -115,7 +115,7 @@ const MiddlewareStrategy = () => {
                       <div className="text-xl font-bold text-secondary">99.99%</div>
                     </div>
                     
-                    <div className="p-4 bg-slate-50 rounded-lg sm:rounded-xl border border-slate-100 flex justify-between items-center">
+                    <div className="p-4 bg-off-white rounded-lg sm:rounded-xl border border-border flex justify-between items-center">
                       <div>
                         <div className="text-sm font-bold text-charcoal">Sync Latency</div>
                         <div className="text-xs text-muted-foreground">Average</div>
@@ -123,7 +123,7 @@ const MiddlewareStrategy = () => {
                       <div className="text-xl font-bold text-primary">120ms</div>
                     </div>
                     
-                    <div className="p-4 bg-slate-50 rounded-lg sm:rounded-xl border border-slate-100 flex justify-between items-center">
+                    <div className="p-4 bg-off-white rounded-lg sm:rounded-xl border border-border flex justify-between items-center">
                       <div>
                         <div className="text-sm font-bold text-charcoal">Error Rate</div>
                         <div className="text-xs text-muted-foreground">Failed requests</div>
@@ -157,11 +157,11 @@ const MiddlewareStrategy = () => {
       </section>
 
       {/* Impact Stories */}
-      <section className="py-24 bg-white border-t border-slate-100">
+      <section className="py-24 bg-white border-t border-border">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 sm:mb-8 md:mb-12 gap-4 sm:p-5 md:p-6">
             <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-4 eb-garamond">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-4">
                 Impact Stories
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl">
@@ -169,7 +169,7 @@ const MiddlewareStrategy = () => {
               </p>
             </div>
             <Link href="/cases">
-              <a className="inline-flex items-center font-bold text-primary hover:text-blue-700 transition-colors">
+              <a className="inline-flex items-center font-bold text-primary hover:text-primary transition-colors">
                 View all cases <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </a>
             </Link>
@@ -203,7 +203,7 @@ const MiddlewareStrategy = () => {
               }
             ].map((story, index) => (
               <Link key={index} href={story.link}>
-                <a className="group block h-full bg-slate-50 rounded-xl sm:rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 border border-slate-100">
+                <a className="group block h-full bg-off-white rounded-xl sm:rounded-2xl overflow-hidden hover:shadow-lg transition duration-300 border border-border">
                   <div className="p-4 sm:p-6 md:p-8 h-full flex flex-col">
                     <div className="text-xs font-bold text-primary uppercase tracking-wider mb-4">
                       {story.category}
@@ -214,7 +214,7 @@ const MiddlewareStrategy = () => {
                     <p className="text-muted-foreground mb-5 sm:mb-6 md:mb-8 flex-grow">
                       {story.desc}
                     </p>
-                    <div className="pt-6 border-t border-slate-200">
+                    <div className="pt-6 border-t border-border">
                       <div className="text-3xl font-bold text-charcoal mb-1">
                         {story.stat}
                       </div>
@@ -231,10 +231,10 @@ const MiddlewareStrategy = () => {
       </section>
 
       {/* Methodology */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-off-white">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center mb-8 sm:mb-12 md:mb-16">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6 eb-garamond">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6">
               Integration Patterns We Deploy
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -257,8 +257,8 @@ const MiddlewareStrategy = () => {
                 desc: "For synchronous operations where immediate confirmation is required, such as user authentication."
               }
             ].map((item, index) => (
-              <div key={index} className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all">
-                <div className="w-12 h-12 bg-blue-50 rounded-lg sm:rounded-xl flex items-center justify-center text-primary mb-6 font-bold text-base sm:text-lg md:text-xl">
+              <div key={index} className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-sm border border-border hover:shadow-md transition">
+                <div className="w-12 h-12 bg-primary/5 rounded-lg sm:rounded-xl flex items-center justify-center text-primary mb-6 font-bold text-base sm:text-lg md:text-xl">
                   {index + 1}
                 </div>
                 <h3 className="text-xl font-bold text-charcoal mb-3">{item.title}</h3>
@@ -270,18 +270,18 @@ const MiddlewareStrategy = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-base relative overflow-hidden">
+      <section className="py-24 bg-background relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
         <div className="container mx-auto px-6 relative z-10 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-5 sm:mb-6 md:mb-8 eb-garamond">
+          <h2 className="text-3xl md:text-5xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">
             Build a resilient data backbone.
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-blue-200 mb-10 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-primary mb-10 max-w-2xl mx-auto">
             Connect your tools with engineering rigor. Ensure data flows reliably, securely, and instantly.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/contact">
-              <a className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition-all duration-300">
+              <a className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition duration-300">
                 Discuss Your Integration Strategy
                 <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </a>

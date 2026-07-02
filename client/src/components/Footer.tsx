@@ -2,6 +2,35 @@ import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 
+// Social icons (inline brand glyphs — lucide dropped brand icons)
+const socials = [
+  {
+    name: "LinkedIn",
+    href: "https://linkedin.com",
+    path: "M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z",
+  },
+  {
+    name: "X",
+    href: "https://twitter.com",
+    path: "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z",
+  },
+  {
+    name: "Facebook",
+    href: "https://facebook.com",
+    path: "M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z",
+  },
+  {
+    name: "YouTube",
+    href: "https://youtube.com",
+    path: "M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z",
+  },
+  {
+    name: "Instagram",
+    href: "https://instagram.com",
+    path: "M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z",
+  },
+];
+
 export default function Footer() {
   const [email, setEmail] = useState("");
   const [privacyChecked, setPrivacyChecked] = useState(false);
@@ -18,12 +47,20 @@ export default function Footer() {
 
   return (
     <footer className="bg-base text-text-light">
-      {/* Newsletter Subscription Section */}
-      <div className="border-b border-white/10">
-        <div className="container px-4 sm:px-6 py-8 sm:py-10 md:py-12 lg:py-16">
+      {/* Newsletter Subscription — charcoal authority band (Brand v2: neutral canvas, Orange-Red signal on the button only) */}
+      <div className="relative overflow-hidden border-b border-white/10">
+        {/* controlled depth: a single low-opacity signal glow, not a colour fill */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0"
+          style={{ backgroundImage: "radial-gradient(55% 120% at 100% 0%, rgba(224,76,44,0.10) 0%, transparent 55%)" }}
+        />
+        <div className="relative container px-4 sm:px-6 py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
             {/* Left: Subscription Text */}
             <div>
+              {/* signal accent marker (emphasis border — approved Orange-Red use) */}
+              <span aria-hidden className="mb-5 block h-[3px] w-12 bg-primary" />
               <p className="text-xl sm:text-2xl md:text-3xl text-text-light leading-[1.4]">
               The next era belongs to leaders who prepare for it. Subscribe to NexDyne Consulting Group Insights — principled perspectives on governance, strategy, and the future of human intelligence.
               </p>
@@ -37,12 +74,12 @@ export default function Footer() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Your email address"
-                  className="flex-1 px-4 py-3 sm:py-4 bg-white/10 border-0 text-white placeholder:text-white focus:outline-none focus:ring-2 focus:ring-secondary text-sm "
+                  className="flex-1 px-4 py-3 sm:py-4 bg-white border-0 text-charcoal placeholder:text-charcoal/45 focus:outline-none focus:ring-2 focus:ring-charcoal/40 text-sm"
                   required
                 />
                 <button
                   type="submit"
-                  className="px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white font-bold uppercase tracking-wider hover:bg-primary-hover transition-all duration-200 ease-in-out text-sm "
+                  className="px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white font-bold uppercase tracking-wider hover:bg-[#c33d1f] transition-colors duration-200 ease-in-out text-sm"
                 >
                   Subscribe
                 </button>
@@ -69,128 +106,99 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Main Footer Content */}
-      <div className="container px-4 sm:px-6 py-10 sm:py-12 md:py-16 lg:py-12 sm:py-16 lg:py-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-8 sm:gap-10 md:gap-12">
-          {/* Left Column: Tagline */}
-          <div className="sm:col-span-2 md:col-span-4">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl text-text-light leading-tight">
-              Unlocking the<br />
-              Potential of Those<br />
-              Who Advance the<br />
-              World
+      {/* Main Footer Content — clean, institutional (McKinsey/Bain register) */}
+      <div className="container px-4 sm:px-6 py-14 sm:py-16 lg:py-20">
+        {/* Top: wordmark + tagline (left) · assist CTA (right) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+          <div className="lg:col-span-7">
+            {/* Official brand logo (icon + wordmark) */}
+            <Link href="/" className="inline-block">
+              <img
+                src="/brand/logo-white.svg"
+                alt="NexDyne Consulting Group"
+                className="h-12 sm:h-14 w-auto"
+              />
+            </Link>
+            <h2 className="mt-8 max-w-[16ch] text-2xl sm:text-3xl md:text-[2.4rem] leading-[1.1] tracking-[-0.02em] text-white">
+              Unlocking the Potential of Those Who Advance the World
             </h2>
           </div>
 
-          {/* Middle Column: Navigation Links */}
-          <div className="sm:col-span-1 md:col-span-3">
-            <nav className="grid grid-cols-2 sm:grid-cols-1 gap-3 sm:space-y-4">
-              <Link
-                href="/careers"
-                className="block text-text-light/80 hover:text-secondary transition-colors text-lg"
-              >
-                Careers
-              </Link>
-              <Link
-                href="/insights"
-                className="block text-text-light/80 hover:text-secondary transition-colors text-lg"
-              >
-                Subscribe
-              </Link>
-              <Link
-                href="/alumni"
-                className="block text-text-light/80 hover:text-secondary transition-colors text-lg"
-              >
-                Alumni
-              </Link>
-              <Link
-                href="/about"
-                className="block text-text-light/80 hover:text-secondary transition-colors text-lg"
-              >
-                About
-              </Link>
-              <Link
-                href="/about/us-office"
-                className="block text-text-light/80 hover:text-secondary transition-colors text-lg"
-              >
-                Offices
-              </Link>
-            </nav>
-          </div>
-
-          {/* Right Column: Contact CTA */}
-          <div className="sm:col-span-2 md:col-span-5">
-            <h3 className="text-xl sm:text-2xl md:text-3xl text-text-light mb-3 sm:mb-4">
+          <div className="lg:col-span-5 lg:border-l lg:border-white/10 lg:pl-12">
+            <h3 className="text-xl sm:text-2xl text-white tracking-[-0.01em]">
               How can we assist you?
             </h3>
-            <p className="text-white mb-4 sm:mb-6 leading-relaxed text-sm ">
-              We value the opportunity to connect with you. Please submit your inquiries and feedback, and our experienced professionals are ready to assist you.
+            <p className="mt-3 max-w-[46ch] text-sm leading-relaxed text-white/70">
+              We value the opportunity to connect with you. Please submit your inquiries and
+              feedback, and our experienced professionals are ready to assist you.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-white font-bold uppercase tracking-wider hover:bg-primary hover:border-primary transition-all duration-200 ease-in-out group text-sm "
+              className="group mt-6 inline-flex items-center gap-2 border border-white px-7 py-3.5 text-[13px] font-semibold uppercase tracking-[0.1em] text-white transition-colors hover:border-primary hover:bg-primary"
             >
               Contact Us
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
         </div>
-      </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-white/10">
-        <div className="container px-4 sm:px-6 py-4 sm:py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 sm:gap-6">
-            {/* Left: Logo and Legal Links */}
-            <div className="flex flex-col md:flex-row items-center gap-4 sm:gap-6">
-              {/* Logo */}
-              <div className="flex items-center gap-3">
-                <img
-                  src="/nexdyne-logo-darkmode.png"
-                  alt="NexDyne Consulting Group"
-                  className="h-20 sm:h-24 md:h-28 w-auto object-contain"
-                />
-              </div>
+        {/* Divider → primary nav (left) + social icons (right) */}
+        <div className="mt-14 border-t border-white/10 pt-10">
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+            <nav className="flex flex-wrap gap-x-8 gap-y-3">
+              {[
+                { label: "Careers", href: "/careers" },
+                { label: "Subscribe", href: "/insights" },
+                { label: "Alumni", href: "/alumni" },
+                { label: "About", href: "/about" },
+                { label: "Offices", href: "/about/us-office" },
+              ].map((l) => (
+                <Link
+                  key={l.label}
+                  href={l.href}
+                  className="text-[15px] text-white/80 transition-colors hover:text-amber"
+                >
+                  {l.label}
+                </Link>
+              ))}
+            </nav>
 
-              {/* Legal Links */}
-              <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-white">
-                <Link href="/privacy-policy" className="text-white hover:text-secondary transition-colors uppercase tracking-wider">
-                  Privacy Policy
-                </Link>
-                <Link href="/terms" className="text-white hover:text-secondary transition-colors uppercase tracking-wider">
-                  Terms of Use
-                </Link>
-                <Link href="/sitemap" className="text-white hover:text-secondary transition-colors uppercase tracking-wider">
-                  Sitemap
-                </Link>
-                <Link href="/accessibility" className="text-white hover:text-secondary transition-colors uppercase tracking-wider">
-                  Responsible Disclosure
-                </Link>
-                <Link href="/cookies" className="text-white hover:text-secondary transition-colors uppercase tracking-wider">
-                  Cookie Preferences
-                </Link>
-              </div>
-            </div>
-
-            {/* Right: Social Links */}
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-[13px] font-semibold uppercase tracking-[0.1em] text-text-light/70 hover:text-text-light transition-colors pb-1 border-b border-transparent hover:border-text-light/60">LinkedIn</a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-[13px] font-semibold uppercase tracking-[0.1em] text-text-light/70 hover:text-text-light transition-colors pb-1 border-b border-transparent hover:border-text-light/60">Twitter</a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-[13px] font-semibold uppercase tracking-[0.1em] text-text-light/70 hover:text-text-light transition-colors pb-1 border-b border-transparent hover:border-text-light/60">Facebook</a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-[13px] font-semibold uppercase tracking-[0.1em] text-text-light/70 hover:text-text-light transition-colors pb-1 border-b border-transparent hover:border-text-light/60">YouTube</a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[13px] font-semibold uppercase tracking-[0.1em] text-text-light/70 hover:text-text-light transition-colors pb-1 border-b border-transparent hover:border-text-light/60">Instagram</a>
+            <div className="flex items-center gap-3">
+              {socials.map((s) => (
+                <a
+                  key={s.name}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.name}
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white/70 transition-colors hover:border-white/50 hover:text-white"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor" className="h-[17px] w-[17px]">
+                    <path d={s.path} />
+                  </svg>
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Copyright and Equal Opportunity Statement */}
-          <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-white/5">
-            <p className="text-[10px] sm:text-xs text-white leading-relaxed mb-3 sm:mb-4">
-              NexDyne Consulting Group is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, age, religion, sex, sexual orientation, gender identity / expression, national origin, protected veteran status, or any other characteristic protected under federal, state or local law, where applicable, and those with criminal histories will be considered in a manner consistent with applicable state and local laws.
-            </p>
-            <p className="text-xs text-white">
-              © {new Date().getFullYear()} NexDyne Consulting Group
-            </p>
+          {/* Legal links row */}
+          <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-[12px] uppercase tracking-[0.12em]">
+            <Link href="/privacy-policy" className="text-white/60 transition-colors hover:text-white">Privacy Policy</Link>
+            <Link href="/terms" className="text-white/60 transition-colors hover:text-white">Terms of Use</Link>
+            <Link href="/sitemap" className="text-white/60 transition-colors hover:text-white">Sitemap</Link>
+            <Link href="/accessibility" className="text-white/60 transition-colors hover:text-white">Responsible Disclosure</Link>
+            <Link href="/cookies" className="text-white/60 transition-colors hover:text-white">Cookie Preferences</Link>
           </div>
+        </div>
+
+        {/* Fine print */}
+        <div className="mt-10 border-t border-white/10 pt-8">
+          <p className="max-w-[120ch] text-[11px] leading-relaxed text-white/45">
+            NexDyne Consulting Group is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, age, religion, sex, sexual orientation, gender identity / expression, national origin, protected veteran status, or any other characteristic protected under federal, state or local law, where applicable, and those with criminal histories will be considered in a manner consistent with applicable state and local laws.
+          </p>
+          <p className="mt-4 text-xs text-white/60">
+            © {new Date().getFullYear()} NexDyne Consulting Group
+          </p>
         </div>
       </div>
     </footer>

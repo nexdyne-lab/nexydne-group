@@ -12,9 +12,9 @@ export default function RealTimeDecisionArchitectures() {
       <ReadingProgress />
       <Navigation />
       {/* Hero Section */}
-      <section className="bg-slate-900 text-white py-16 md:py-24">
+      <section className="bg-charcoal text-white py-16 md:py-24">
         <div className="container max-w-4xl">
-          <Link href="/insights" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 mb-8 transition-colors">
+          <Link href="/insights" className="inline-flex items-center gap-2 text-primary hover:text-primary mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Insights
           </Link>
@@ -89,14 +89,14 @@ export default function RealTimeDecisionArchitectures() {
               The Latency Budget: Where do the 50ms go?
             </h2>
             
-            <div className="bg-slate-50 border-l-4 border-blue-500 p-6 my-8">
+            <div className="bg-off-white border-l-4 border-primary p-6 my-8">
               <ul className="space-y-3 text-charcoal/80 font-mono text-sm">
                 <li className="flex justify-between"><span>Network Round Trip (Edge to Core):</span> <span>15ms</span></li>
                 <li className="flex justify-between"><span>Feature Retrieval (Redis):</span> <span>5ms</span></li>
                 <li className="flex justify-between"><span>Model Inference (Triton):</span> <span>20ms</span></li>
                 <li className="flex justify-between"><span>Business Logic & Filtering:</span> <span>5ms</span></li>
                 <li className="flex justify-between"><span>Response Serialization:</span> <span>5ms</span></li>
-                <li className="flex justify-between border-t border-slate-300 pt-2 font-bold"><span>TOTAL:</span> <span>50ms</span></li>
+                <li className="flex justify-between border-t border-border pt-2 font-bold"><span>TOTAL:</span> <span>50ms</span></li>
               </ul>
             </div>
 
@@ -122,22 +122,22 @@ export default function RealTimeDecisionArchitectures() {
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 bg-slate-900 rounded-lg text-white">
+          <div className="mt-16 p-8 bg-charcoal rounded-lg text-white">
             <h3 className="text-2xl font-bold mb-4">Architect for speed</h3>
             <p className="text-muted-foreground/50 mb-6">
               NexDyne engineers high-performance data stacks that power the next generation of real-time applications.
             </p>
             <Link href="/contact">
-              <button className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-colors">
+              <button className="px-6 py-3 bg-primary hover:bg-primary-hover text-white rounded-lg font-semibold transition-colors">
                 Schedule a Consultation
               </button>
             </Link>
           </div>
 
           {/* Author Info */}
-          <div className="mt-12 pt-8 border-t border-slate-200">
+          <div className="mt-12 pt-8 border-t border-border">
             <div className="flex items-start gap-4">
-              <div className="w-16 h-16 bg-slate-900 rounded-full flex items-center justify-center text-white font-bold text-xl">
+              <div className="w-16 h-16 bg-charcoal rounded-full flex items-center justify-center text-white font-bold text-xl">
                 N
               </div>
               <div>
@@ -160,7 +160,7 @@ export default function RealTimeDecisionArchitectures() {
             <div className="grid md:grid-cols-2 gap-8">
               <Link href="/insights/data-lake-to-value-stream">
                 <div className="group cursor-pointer">
-                  <div className="aspect-video bg-slate-200 rounded-lg mb-4 overflow-hidden">
+                  <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
                       src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop" 
                       alt="Data Lake" 
@@ -177,7 +177,7 @@ export default function RealTimeDecisionArchitectures() {
               </Link>
               <Link href="/insights/generative-supply-chain">
                 <div className="group cursor-pointer">
-                  <div className="aspect-video bg-slate-200 rounded-lg mb-4 overflow-hidden">
+                  <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
                       src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2670&auto=format&fit=crop" 
                       alt="Generative Supply Chain" 

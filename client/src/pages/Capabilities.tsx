@@ -61,7 +61,7 @@ function CapabilityCard({ capability, index }: { capability: typeof capabilities
       className="group"
     >
       <Link href={capability.link}>
-        <div className="cursor-pointer bg-white border border-border overflow-hidden transition-all duration-500 h-full">
+        <div className="cursor-pointer bg-white border border-border overflow-hidden transition duration-500 h-full">
           {/* Card content container with fixed height */}
           <div className="relative aspect-[4/3] overflow-hidden">
             {/* Image - visible by default, hidden on hover */}
@@ -86,7 +86,7 @@ function CapabilityCard({ capability, index }: { capability: typeof capabilities
 
               {/* Learn More button */}
               <div className="mt-4">
-                <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground text-sm font-medium hover:bg-[var(--color-primary-hover)] transition-all duration-200 ease-in-out focus-visible:outline focus-visible:ring-2 focus-visible:ring-secondary">
+                <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground text-sm font-medium hover:bg-[var(--color-primary-hover)] transition duration-200 ease-in-out focus-visible:outline focus-visible:ring-2 focus-visible:ring-secondary">
                   LEARN MORE
                 </span>
               </div>
@@ -123,7 +123,7 @@ export default function Capabilities() {
       />
 
       {/* Capabilities Grid with solutions-style cards */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-white">
+      <section className="nx-section bg-white">
         <div className="container px-4 sm:px-6 md:px-12">
           {/* Section header */}
           <motion.div
@@ -131,15 +131,15 @@ export default function Capabilities() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-12 md:mb-16 max-w-3xl"
+            className="mb-10 md:mb-14 max-w-3xl"
           >
-            <span className="text-xs md:text-sm tracking-[0.2em] text-primary uppercase">
+            <span className="nx-eyebrow text-primary">
               Our Expertise
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl text-charcoal mt-4 leading-tight">
+            <h2 className="nx-h2 text-charcoal mt-4">
               Six pillars of transformation that drive measurable business outcomes
             </h2>
-            <p className="text-base md:text-lg text-charcoal/70 mt-6 leading-relaxed">
+            <p className="nx-lead text-charcoal/70 mt-6">
               We combine deep expertise across six core disciplines to deliver measurable business outcomes. From intelligent automation to strategic growth, our integrated approach ensures every capability works in concert.
             </p>
           </motion.div>
@@ -154,7 +154,7 @@ export default function Capabilities() {
       </section>
 
       {/* Featured Capability Section */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-subtle overflow-hidden">
+      <section className="nx-section bg-subtle overflow-hidden">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
             {/* Image with layered depth */}
@@ -200,24 +200,24 @@ export default function Capabilities() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             >
-              <span className="text-xs md:text-sm tracking-[0.2em] text-primary uppercase mb-4 block">
+              <span className="nx-eyebrow text-primary mb-4 block">
                 Capabilities Overview
               </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6 text-charcoal leading-tight">
+              <h2 className="nx-h2 mb-6 text-charcoal">
                 AI and Technology{" "}
                 <span className="relative">
                   <span className="relative z-10 text-primary">Consulting</span>
                   <span className="absolute bottom-2 left-0 right-0 h-3 bg-primary/10 -z-0" />
                 </span>
               </h2>
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
+              <p className="nx-lead text-muted-foreground mb-8">
                 Learn how our AI and Technology consulting is helping clients to outcompete and deliver value at scale through the latest trends in tech.
               </p>
 
               {/* Enhanced CTA button */}
               <Link href="/capabilities/ai-technology-consulting">
                 <motion.span
-                  className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground text-base cursor-pointer group overflow-hidden relative transition-all duration-200 ease-in-out hover:bg-[var(--color-primary-hover)] focus-visible:outline focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2"
+                  className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground text-base cursor-pointer group overflow-hidden relative transition duration-200 ease-in-out hover:bg-[var(--color-primary-hover)] focus-visible:outline focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -230,7 +230,7 @@ export default function Capabilities() {
       </section>
 
       {/* Keep Exploring Section */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 text-on-dark relative overflow-hidden">
+      <section className="nx-section bg-charcoal text-on-dark relative overflow-hidden">
         {/* Background pattern */}
         <div className="absolute inset-0 opacity-10">
           <div
@@ -247,7 +247,7 @@ export default function Capabilities() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl lg:text-5xl mb-12"
+            className="nx-h2 mb-12"
           >
             Keep exploring
           </motion.h2>
@@ -276,7 +276,7 @@ export default function Capabilities() {
       </section>
 
       {/* Connect Section */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-24 bg-subtle">
+      <section className="nx-section bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -285,12 +285,12 @@ export default function Capabilities() {
             className="flex flex-col md:flex-row items-center justify-between gap-6"
           >
             <div className="text-center md:text-left">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl text-charcoal mb-4">Connect</h2>
-              <p className="text-muted-foreground text-base md:text-lg">Ready to transform your business?</p>
+              <h2 className="nx-h2 text-charcoal mb-4">Connect</h2>
+              <p className="nx-lead text-muted-foreground">Ready to transform your business?</p>
             </div>
             <Link href="/contact">
               <motion.button
-                className="px-10 py-4 bg-primary text-primary-foreground text-base hover:bg-[var(--color-primary-hover)] transition-all duration-200 ease-in-out w-full md:w-auto focus-visible:outline focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2"
+                className="px-10 py-4 bg-primary text-primary-foreground text-base hover:bg-[var(--color-primary-hover)] transition duration-200 ease-in-out w-full md:w-auto focus-visible:outline focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >

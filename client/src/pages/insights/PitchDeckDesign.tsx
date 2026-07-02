@@ -12,9 +12,9 @@ export default function PitchDeckDesign() {
       <ReadingProgress />
       <Navigation />
       {/* Hero Section */}
-      <section className="bg-slate-900 text-white py-16 md:py-24">
+      <section className="bg-charcoal text-white py-16 md:py-24">
         <div className="container max-w-4xl">
-          <Link href="/insights" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 mb-8 transition-colors">
+          <Link href="/insights" className="inline-flex items-center gap-2 text-primary hover:text-primary mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Insights
           </Link>
@@ -45,9 +45,9 @@ export default function PitchDeckDesign() {
       </section>
 
       {/* Featured Image */}
-      <div className="w-full h-96 bg-slate-100 overflow-hidden">
+      <div className="w-full h-96 bg-subtle overflow-hidden">
         <img 
-          src="/images/insights/pitch-deck-design.jpg" 
+          src="/images/abstract-growth.jpg" 
           alt="Pitch Deck Design" 
           className="w-full h-full object-cover"
         />
@@ -74,7 +74,7 @@ export default function PitchDeckDesign() {
               The narrative should flow naturally: Problem → Solution → Market Opportunity → Product → Traction → Business Model → Competition → Team → Financials → Ask. Each slide should build on the previous one, creating momentum toward your funding request. Avoid the common mistake of jumping between topics or presenting information in random order.
             </p>
 
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
+            <div className="bg-primary/5 border-l-4 border-primary p-6 my-8">
               <h3 className="text-xl font-bold text-charcoal mb-4">The Essential Slide Sequence</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Slide 1 - Cover:</strong> Company name, tagline, contact info</li>
@@ -127,7 +127,7 @@ export default function PitchDeckDesign() {
               Include recognizable customer logos if you have them, but only if they're truly impressive. Ten unknown companies don't build credibility. Three well-known brands do. Add a brief customer quote that captures the value you deliver. Quantify the impact: "Reduced processing time by 73%" or "Generated $1.2M in additional revenue."
             </p>
 
-            <div className="bg-slate-50 border-l-4 border-slate-500 p-6 my-8">
+            <div className="bg-off-white border-l-4 border-border p-6 my-8">
               <h3 className="text-xl font-bold text-charcoal mb-4">Traction Metrics That Matter</h3>
               <p className="text-charcoal/80 mb-4">Choose metrics that demonstrate sustainable growth:</p>
               <ul className="space-y-3 text-charcoal/80">
@@ -187,7 +187,7 @@ export default function PitchDeckDesign() {
               Focus on the metrics investors care about: revenue growth rate, gross margins, sales efficiency (CAC payback), and burn rate. Show that you understand your unit economics and have a plan to reach profitability or the next major milestone. Conservative projections build more credibility than hockey stick forecasts.
             </p>
 
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
+            <div className="bg-primary/5 border-l-4 border-primary p-6 my-8">
               <h3 className="text-xl font-bold text-charcoal mb-4">Financial Slide Best Practices</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Show historical performance:</strong> Build credibility with actual results</li>
@@ -238,7 +238,7 @@ export default function PitchDeckDesign() {
       </article>
 
       {/* Newsletter Subscribe */}
-      <div className="bg-slate-50 py-16">
+      <div className="bg-off-white py-16">
         <div className="container max-w-3xl">
           <NewsletterSubscribe />
         </div>

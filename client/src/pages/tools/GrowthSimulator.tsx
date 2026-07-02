@@ -12,8 +12,8 @@ const INDUSTRIES = [
   { id: "fintech", name: "FinTech & Financial Services", multiplier: 0.25, color: 'var(--color-secondary)' },
   { id: "retail", name: "Retail & E-commerce", multiplier: 0.18, color: 'var(--color-primary)' },
   { id: "logistics", name: "Logistics & Supply Chain", multiplier: 0.15, color: 'var(--color-primary)' },
-  { id: "healthcare", name: "Healthcare & Life Sciences", multiplier: 0.22, color: 'var(--color-destructive)' },
-  { id: "energy", name: "Energy & Sustainability", multiplier: 0.20, color: "#eab308" },
+  { id: "healthcare", name: "Healthcare & Life Sciences", multiplier: 0.22, color: 'var(--color-primary)' },
+  { id: "energy", name: "Energy & Sustainability", multiplier: 0.20, color: 'var(--color-amber)' },
   { id: "manufacturing", name: "Manufacturing & IoT", multiplier: 0.16, color: 'var(--color-secondary)' },
 ];
 
@@ -94,21 +94,21 @@ export default function GrowthSimulator() {
   const percentGrowth = Math.round((totalGrowth / revenue) * 100);
 
   return (
-    <div className="min-h-screen bg-base text-white font-sans selection:bg-secondary selection:text-base">
+    <div className="min-h-screen bg-background text-charcoal font-sans selection:bg-primary selection:text-white">
       <Navigation />
 
       <section className="pt-32 pb-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-base via-base to-base" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-background" />
         
         <div className="container px-4 md:px-12 relative z-10">
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-border mb-8">
               <BarChart3 className="w-4 h-4 text-secondary" />
               <span className="text-sm font-medium text-secondary uppercase tracking-wider">Growth Simulator</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-3">
               Visualize your <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-blue-400">
+              <span className="text-charcoal">
                 venture potential.
               </span>
             </h1>
@@ -119,7 +119,7 @@ export default function GrowthSimulator() {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             {/* Controls */}
-            <div className="lg:col-span-4 bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
+            <div className="lg:col-span-4 bg-white/5 border border-border rounded-2xl p-8 backdrop-blur-sm">
               <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
                 <RefreshCw className="w-5 h-5 text-secondary" />
                 Input Parameters
@@ -136,7 +136,7 @@ export default function GrowthSimulator() {
                       type="number" 
                       value={revenue}
                       onChange={(e) => setRevenue(Number(e.target.value))}
-                      className="w-full bg-base border border-white/20 rounded-xl py-4 pl-12 pr-4 text-white font-bold text-lg focus:outline-none focus:border-secondary transition-colors"
+                      className="w-full bg-background border border-border rounded-xl py-4 pl-12 pr-4 text-charcoal font-bold text-lg focus:outline-none focus:border-secondary transition-colors"
                     />
                   </div>
                   <input 
@@ -159,10 +159,10 @@ export default function GrowthSimulator() {
                       <button
                         key={ind.id}
                         onClick={() => setIndustry(ind)}
-                        className={`px-4 py-3 rounded-xl text-left text-sm font-medium transition-all border ${
+                        className={`px-4 py-3 rounded-xl text-left text-sm font-medium transition border ${
                           industry.id === ind.id 
                             ? "bg-secondary/10 border-secondary text-secondary" 
-                            : "bg-base border-white/10 text-muted-foreground/70 hover:border-white/30"
+                            : "bg-background border-border text-muted-foreground/70 hover:border-border"
                         }`}
                       >
                         {ind.name}
@@ -174,7 +174,7 @@ export default function GrowthSimulator() {
                 <button 
                   onClick={handleSimulate}
                   disabled={isSimulating}
-                  className="w-full py-4 bg-secondary text-base font-bold rounded-xl hover:bg-white transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full py-4 bg-secondary text-base font-bold rounded-xl hover:bg-white transition flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSimulating ? (
                     <>
@@ -197,9 +197,9 @@ export default function GrowthSimulator() {
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  className="bg-base border border-white/10 rounded-2xl p-8 h-full relative"
+                  className="bg-background border border-border rounded-2xl p-8 h-full relative"
                 >
-                  <div ref={resultsRef} className="bg-base p-4 rounded-xl">
+                  <div ref={resultsRef} className="bg-background p-4 rounded-xl">
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-6">
                       <div>
                         <h3 className="text-2xl font-bold mb-1">5-Year Growth Projection</h3>
@@ -208,7 +208,7 @@ export default function GrowthSimulator() {
                       <div className="flex gap-6">
                         <div className="text-right">
                           <div className="text-sm text-muted-foreground/70 uppercase tracking-wider mb-1">Total Revenue</div>
-                          <div className="text-3xl font-bold text-white">${finalYear.total}M</div>
+                          <div className="text-3xl font-bold text-charcoal">${finalYear.total}M</div>
                         </div>
                         <div className="text-right">
                           <div className="text-sm text-muted-foreground/70 uppercase tracking-wider mb-1">Net Growth</div>
@@ -247,7 +247,7 @@ export default function GrowthSimulator() {
                       </ResponsiveContainer>
                     </div>
 
-                    <div className="mt-8 p-6 bg-white/5 rounded-xl border border-white/10">
+                    <div className="mt-8 p-6 bg-white/5 rounded-xl border border-border">
                       <h4 className="font-bold text-lg mb-2 flex items-center gap-2">
                         <TrendingUp className="w-5 h-5 text-secondary" />
                         Analysis
@@ -261,7 +261,7 @@ export default function GrowthSimulator() {
                   <div className="mt-6 flex justify-end">
                     <button 
                       onClick={handleDownloadPDF}
-                      className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-medium rounded-lg transition-colors"
+                      className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-charcoal font-medium rounded-lg transition-colors"
                     >
                       <Download className="w-4 h-4" />
                       Download Report
@@ -269,7 +269,7 @@ export default function GrowthSimulator() {
                   </div>
                 </motion.div>
               ) : (
-                <div className="h-full min-h-[500px] bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center p-8 text-center border-dashed">
+                <div className="h-full min-h-[500px] bg-white/5 border border-border rounded-2xl flex flex-col items-center justify-center p-8 text-center border-dashed">
                   <div className="w-20 h-20 bg-white/5 rounded-full flex items-center justify-center mb-6">
                     <PieChart className="w-10 h-10 text-muted-foreground" />
                   </div>

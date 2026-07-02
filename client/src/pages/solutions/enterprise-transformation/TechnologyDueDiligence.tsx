@@ -12,7 +12,7 @@ export default function TechnologyDueDiligence() {
       serviceName="Technology Due Diligence"
       serviceSlug="technology-due-diligence"
       heroSubtitle="Diligence is written for the partners who price the deal, not the team that inherits it. We pressure-test the technology, the integration, and the value-creation thesis with evidence, and translate findings into deal-team language."
-      heroImage="/enterprise-transformation-hero.jpg"
+      heroImage="/solution-enterprise-transformation.0a0f2624.webp"
       experienceStats={[
         { number: "1/2+", label: "Of engagements influence final deal terms" },
         { number: "IC-defended", label: "Repricing, condition-precedent triggers, escrow, value-creation milestones" },

@@ -94,7 +94,7 @@ export function ResponsiveImage({
     >
       {/* Blur placeholder */}
       <div
-        className={`absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300 transition-opacity duration-500 ${
+        className={`absolute inset-0 bg-gradient-to-br from-off-white to-off-white transition-opacity duration-500 ${
           isLoaded ? "opacity-0" : "opacity-100"
         }`}
         aria-hidden="true"
@@ -185,7 +185,7 @@ export function Picture({
     <div className={`relative overflow-hidden ${className}`}>
       {/* Blur placeholder */}
       <div
-        className={`absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300 transition-opacity duration-500 ${
+        className={`absolute inset-0 bg-gradient-to-br from-off-white to-off-white transition-opacity duration-500 ${
           isLoaded ? "opacity-0" : "opacity-100"
         }`}
         aria-hidden="true"

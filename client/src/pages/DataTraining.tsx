@@ -19,15 +19,15 @@ export default function DataTraining() {
       <Breadcrumb items={breadcrumbItems} />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-charcoal via-charcoal to-charcoal text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 right-20 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 right-20 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-20 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
         </div>
         
         <div className="container relative py-16 sm:py-20 md:py-24 lg:py-16 sm:py-20 md:py-24 lg:py-32">
           <div className="max-w-4xl">
-            <h1 className="text-6xl md:text-7xl font-bold mb-5 sm:mb-3 md:mb-4 leading-tight eb-garamond">
+            <h1 className="text-6xl md:text-7xl font-bold mb-5 sm:mb-3 md:mb-4 leading-tight">
               Data Training
             </h1>
             <p className="text-2xl leading-relaxed opacity-90">
@@ -48,7 +48,7 @@ export default function DataTraining() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 sm:p-6 md:p-8">
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-6">
                 <Target className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-charcoal">Practical from day one</h3>
@@ -58,7 +58,7 @@ export default function DataTraining() {
             </div>
 
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-6">
                 <Users className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-charcoal">All skill levels</h3>
@@ -68,7 +68,7 @@ export default function DataTraining() {
             </div>
 
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-6">
                 <GraduationCap className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-charcoal">Expert instructors</h3>
@@ -78,7 +78,7 @@ export default function DataTraining() {
             </div>
 
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-6">
                 <BookOpen className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-charcoal">Customized content</h3>
@@ -248,7 +248,7 @@ export default function DataTraining() {
           
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 max-w-4xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/data-solutions/data-analytics" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 bg-white h-full">
                 <h3 className="text-xl font-bold mb-4 text-charcoal group-hover:text-primary transition-colors">
                   Data Analytics
                 </h3>
@@ -263,7 +263,7 @@ export default function DataTraining() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/data-solutions/data-consultancy" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 bg-white h-full">
                 <h3 className="text-xl font-bold mb-4 text-charcoal group-hover:text-primary transition-colors">
                   Data Consultancy
                 </h3>
@@ -281,7 +281,7 @@ export default function DataTraining() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-slate-900 text-white">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-charcoal text-white">
         <div className="container max-w-4xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8">
             Ready to build data skills?

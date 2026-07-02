@@ -10,24 +10,24 @@ import { dataRelatedItems } from "@/data/related-content";
 
 export default function DynamicPricing() {
   return (
-    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-blue-100">
+    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-primary/10">
       <Navigation />
 
       {/* Hero Section */}
-      <header className="pt-16 sm:pt-20 pb-16 border-b border-slate-100">
+      <header className="pt-16 sm:pt-20 pb-16 border-b border-border">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <div className="text-sm font-medium text-muted-foreground mb-6 uppercase tracking-wider">
-              <Link href="/capabilities/growth-marketing-sales/pricing-monetization" className="hover:text-blue-900 transition-colors">
+              <Link href="/capabilities/growth-marketing-sales/pricing-monetization" className="hover:text-primary transition-colors">
                 Pricing & Monetization
               </Link>
               <span className="mx-2">/</span>
               <span className="text-primary">Dynamic Pricing Models</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1] eb-garamond">
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1]">
               Dynamic Pricing Models
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light ">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light">
               Move beyond static price lists. We implement algorithmic pricing engines that adapt to market conditions in real-time, maximizing yield for every transaction.
             </p>
           </div>
@@ -50,31 +50,31 @@ export default function DynamicPricing() {
               </p>
             </section>
 
-            <Separator className="bg-slate-200" />
+            <Separator className="bg-grey" />
 
             {/* Key Benefits */}
             <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">The Value of Agility</h2>
+              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">The Value of Agility</h2>
               <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8">
-                <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+                <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Maximize Yield</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Capture the surplus value during high-demand periods by automatically adjusting prices upward when willingness-to-pay is highest.
                   </p>
                 </div>
-                <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+                <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Inventory Management</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Use price as a lever to clear excess stock or ration scarce inventory, optimizing your working capital and storage costs.
                   </p>
                 </div>
-                <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+                <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Competitive Response</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Automatically react to competitor price moves within defined guardrails, ensuring you never lose a sale due to a minor price difference.
                   </p>
                 </div>
-                <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-sm border border-slate-100">
+                <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Operational Efficiency</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Eliminate the manual effort of updating price lists. Our systems integrate directly with your ERP and e-commerce platforms for seamless execution.
@@ -83,14 +83,14 @@ export default function DynamicPricing() {
               </div>
             </section>
 
-            <Separator className="bg-slate-200" />
+            <Separator className="bg-grey" />
 
             {/* Methodology */}
             <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">Our Approach</h2>
+              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">Our Approach</h2>
               <div className="space-y-8">
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">1</div>
+                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl">1</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Data Ingestion & Analysis</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -99,7 +99,7 @@ export default function DynamicPricing() {
                   </div>
                 </div>
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">2</div>
+                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl">2</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Algorithm Design & Guardrails</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -108,7 +108,7 @@ export default function DynamicPricing() {
                   </div>
                 </div>
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">3</div>
+                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl">3</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Pilot & A/B Testing</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -117,7 +117,7 @@ export default function DynamicPricing() {
                   </div>
                 </div>
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-blue-50 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">4</div>
+                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl">4</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Full Integration & Monitoring</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -128,18 +128,18 @@ export default function DynamicPricing() {
               </div>
             </section>
 
-            <Separator className="bg-slate-200" />
+            <Separator className="bg-grey" />
 
             {/* Case Study */}
-            <section className="bg-slate-900 text-white p-10 rounded-sm">
+            <section className="bg-charcoal text-white p-10 rounded-sm">
               <div className="flex flex-col md:flex-row gap-4 sm:p-6 md:p-8 items-start">
                 <div className="flex-1">
-                  <div className="text-blue-400 font-bold tracking-wider text-xs uppercase mb-4">Case Study</div>
+                  <div className="text-primary font-bold tracking-wider text-xs uppercase mb-4">Case Study</div>
                   <h3 className="text-2xl font-bold mb-4">Logistics Provider Optimizes Margins</h3>
                   <p className="text-muted-foreground/50 leading-relaxed mb-6">
                     A regional freight carrier was struggling with volatile fuel costs and inconsistent demand. We implemented a dynamic surcharge model that updated pricing daily based on fuel indices and route capacity.
                   </p>
-                  <div className="grid grid-cols-2 gap-4 sm:p-5 md:p-6 border-t border-slate-800 pt-6">
+                  <div className="grid grid-cols-2 gap-4 sm:p-5 md:p-6 border-t border-white/10 pt-6">
                     <div>
                       <div className="text-3xl font-bold text-white mb-1">12%</div>
                       <div className="text-sm text-muted-foreground/70">Margin Improvement</div>
@@ -154,7 +154,7 @@ export default function DynamicPricing() {
                   <img 
                     src="/images/case-study-logistics.jpg" 
                     alt="Logistics Case Study" 
-                    className="w-full h-auto rounded-sm grayscale hover:grayscale-0 transition-all duration-500"
+                    className="w-full h-auto rounded-sm grayscale hover:grayscale-0 transition duration-500"
                   />
                 </div>
               </div>
@@ -166,29 +166,29 @@ export default function DynamicPricing() {
           <div className="lg:col-span-4 space-y-12">
             
             {/* Contact Card */}
-            <div className="bg-blue-50 p-4 sm:p-6 md:p-8 border border-blue-100">
-              <h3 className="text-lg font-bold text-blue-900 mb-4">Ready to optimize your pricing?</h3>
-              <p className="text-blue-800 mb-6 leading-relaxed">
+            <div className="bg-primary/5 p-4 sm:p-6 md:p-8 border border-primary">
+              <h3 className="text-lg font-bold text-charcoal mb-4">Ready to optimize your pricing?</h3>
+              <p className="text-charcoal mb-6 leading-relaxed">
                 Schedule a consultation with our pricing strategy team to discuss your specific challenges.
               </p>
-              <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+              <Button className="w-full bg-primary hover:bg-primary-hover text-white">
                 Contact Us
               </Button>
             </div>
 
             {/* Related Services */}
-            <div className="bg-white border border-slate-200 p-4 sm:p-6 md:p-8">
+            <div className="bg-white border border-border p-4 sm:p-6 md:p-8">
               <h3 className="text-sm font-bold text-charcoal uppercase tracking-wider mb-6">Related Services</h3>
               <ul className="space-y-4">
                 <li>
-                  <Link href="/capabilities/growth-marketing-sales/pricing-monetization/packaging-bundling" className="text-muted-foreground hover:text-blue-700 transition-colors flex items-center gap-2">
-                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-blue-500" />
+                  <Link href="/capabilities/growth-marketing-sales/pricing-monetization/packaging-bundling" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                     Packaging & Bundling
                   </Link>
                 </li>
                 <li>
-                  <Link href="/capabilities/growth-marketing-sales/pricing-monetization/discount-optimization" className="text-muted-foreground hover:text-blue-700 transition-colors flex items-center gap-2">
-                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-blue-500" />
+                  <Link href="/capabilities/growth-marketing-sales/pricing-monetization/discount-optimization" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                    <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                     Discount Optimization
                   </Link>
                 </li>
@@ -201,7 +201,7 @@ export default function DynamicPricing() {
               <div className="space-y-6">
                 <Link href="/insights/algorithmic-pricing-smes">
                   <div className="group cursor-pointer">
-                    <h4 className="text-lg font-bold text-charcoal mb-2 group-hover:text-blue-700 transition-colors">
+                    <h4 className="text-lg font-bold text-charcoal mb-2 group-hover:text-primary transition-colors">
                       Algorithmic Pricing for SMEs
                     </h4>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-2">
@@ -212,10 +212,10 @@ export default function DynamicPricing() {
                     </div>
                   </div>
                 </Link>
-                <Separator className="bg-slate-100" />
+                <Separator className="bg-subtle" />
                 <Link href="/insights/psychology-of-value">
                   <div className="group cursor-pointer">
-                    <h4 className="text-lg font-bold text-charcoal mb-2 group-hover:text-blue-700 transition-colors">
+                    <h4 className="text-lg font-bold text-charcoal mb-2 group-hover:text-primary transition-colors">
                       The Psychology of Value
                     </h4>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-2">

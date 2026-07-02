@@ -12,9 +12,9 @@ export default function ValuePropositionDesign() {
       <ReadingProgress />
       <Navigation />
       {/* Hero Section */}
-      <section className="bg-slate-900 text-white py-16 md:py-24">
+      <section className="bg-charcoal text-white py-16 md:py-24">
         <div className="container max-w-4xl">
-          <Link href="/capabilities/growth-marketing-sales/growth-strategy" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 mb-8 transition-colors">
+          <Link href="/capabilities/growth-marketing-sales/growth-strategy" className="inline-flex items-center gap-2 text-primary hover:text-primary mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Growth Strategy
           </Link>
@@ -82,7 +82,7 @@ export default function ValuePropositionDesign() {
               We use a rigorous process to design value propositions that compile:
             </p>
 
-            <div className="bg-slate-50 border-l-4 border-blue-500 p-6 my-8">
+            <div className="bg-off-white border-l-4 border-primary p-6 my-8">
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>1. Customer Profiling (The Request):</strong> What is the customer trying to achieve? What are their jobs-to-be-done? What are the error codes (pains) they are currently hitting?</li>
                 <li><strong>2. Value Mapping (The Response):</strong> How exactly does our product resolve those errors? Which specific features map to which specific pains?</li>
@@ -100,22 +100,22 @@ export default function ValuePropositionDesign() {
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 bg-slate-900 rounded-lg text-white">
+          <div className="mt-16 p-8 bg-charcoal rounded-lg text-white">
             <h3 className="text-2xl font-bold mb-4">Refine your interface</h3>
             <p className="text-muted-foreground/50 mb-6">
               NexDyne helps product leaders define, test, and scale value propositions that resonate with the market.
             </p>
             <Link href="/contact">
-              <button className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-colors">
+              <button className="px-6 py-3 bg-primary hover:bg-primary-hover text-white rounded-lg font-semibold transition-colors">
                 Schedule a Consultation
               </button>
             </Link>
           </div>
 
           {/* Author Info */}
-          <div className="mt-12 pt-8 border-t border-slate-200">
+          <div className="mt-12 pt-8 border-t border-border">
             <div className="flex items-start gap-4">
-              <div className="w-16 h-16 bg-slate-900 rounded-full flex items-center justify-center text-white font-bold text-xl">
+              <div className="w-16 h-16 bg-charcoal rounded-full flex items-center justify-center text-white font-bold text-xl">
                 N
               </div>
               <div>

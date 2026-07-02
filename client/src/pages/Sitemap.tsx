@@ -204,13 +204,13 @@ export default function Sitemap() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-slate-900 text-white py-16 md:py-12 sm:py-16 lg:py-20">
+      <section className="bg-charcoal text-white py-16 md:py-12 sm:py-16 lg:py-20">
         <div className="container">
           <div className="max-w-3xl">
-            <span className="text-cyan-400 font-semibold uppercase tracking-wide text-sm">
+            <span className="text-amber font-semibold uppercase tracking-wide text-sm">
               SITE MAP
             </span>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-3">
+            <h1 className="nx-h2 font-bold mt-4 mb-3">
               Explore NexDyne Technologies
             </h1>
             <p className="text-xl text-muted-foreground/50">
@@ -227,7 +227,7 @@ export default function Sitemap() {
             {sitemapData.map((section, index) => (
               <div key={index} className="space-y-6">
                 {/* Section Header */}
-                <div className="flex items-center gap-3 pb-4 border-b-2 border-slate-200">
+                <div className="flex items-center gap-3 pb-4 border-b-2 border-border">
                   <div className="text-primary">
                     {section.icon}
                   </div>
@@ -240,7 +240,7 @@ export default function Sitemap() {
                 <div className="space-y-4">
                   {section.links.map((link, linkIndex) => (
                     <Link key={linkIndex} href={link.href}>
-                      <div className="group cursor-pointer p-4 rounded-lg hover:bg-slate-50 transition-colors border border-transparent hover:border-slate-200">
+                      <div className="group cursor-pointer p-4 rounded-lg hover:bg-off-white transition-colors border border-transparent hover:border-border">
                         <h3 className="font-semibold text-charcoal group-hover:text-primary transition-colors mb-1">
                           {link.label}
                         </h3>
@@ -258,7 +258,7 @@ export default function Sitemap() {
           </div>
 
           {/* Search CTA */}
-          <div className="mt-16 p-4 sm:p-6 md:p-8 bg-slate-50 rounded-lg sm:rounded-xl border border-slate-200 text-center">
+          <div className="mt-16 p-4 sm:p-6 md:p-8 bg-off-white rounded-lg sm:rounded-xl border border-border text-center">
             <h3 className="text-2xl font-bold text-charcoal mb-3">
               Can't find what you're looking for?
             </h3>
@@ -272,14 +272,14 @@ export default function Sitemap() {
                 </button>
               </Link>
               <Link href="/insights">
-                <button className="px-6 py-3 bg-white text-charcoal rounded-lg font-semibold border border-slate-300 hover:bg-slate-50 transition-colors">
+                <button className="px-6 py-3 bg-white text-charcoal rounded-lg font-semibold border border-border hover:bg-off-white transition-colors">
                   Browse Insights
                 </button>
               </Link>
             </div>
             <p className="text-sm text-muted-foreground mt-4">
-              Press <kbd className="px-2 py-1 bg-white border border-slate-300 rounded text-xs font-mono">⌘K</kbd> or{' '}
-              <kbd className="px-2 py-1 bg-white border border-slate-300 rounded text-xs font-mono">Ctrl+K</kbd> to open search from anywhere
+              Press <kbd className="px-2 py-1 bg-white border border-border rounded text-xs font-mono">⌘K</kbd> or{' '}
+              <kbd className="px-2 py-1 bg-white border border-border rounded text-xs font-mono">Ctrl+K</kbd> to open search from anywhere
             </p>
           </div>
         </div>

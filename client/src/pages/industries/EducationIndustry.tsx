@@ -20,41 +20,41 @@ export default function EducationIndustry() {
       challenges={[
         {
           title: "Enrollment and student success",
-          body: "Demographic headwinds and shifting student expectations are compressing enrollment and completion at the same time. Modern student-success platforms, AI-driven advising, and journey analytics are now baseline capabilities."
+          body: "Demographic headwinds and shifting expectations are compressing enrollment and completion — student-success platforms are now baseline."
         },
         {
           title: "Operating-model financial pressure",
-          body: "Tuition discounting, state-funding volatility, and rising operating cost are stressing institutional P&Ls. Back-office automation and shared-services models can fund the next phase of investment."
+          body: "Tuition discounting and funding volatility are stressing P&Ls; back-office automation and shared services fund the next phase."
         },
         {
           title: "Learning at scale, learning that works",
-          body: "Hybrid and online learning is permanent — and quality is uneven. Personalized learning, evidence-based course design, and instructor enablement are how institutions are converting modality into outcomes."
+          body: "Hybrid and online learning is permanent but uneven — personalized design and instructor enablement convert modality into outcomes."
         },
         {
           title: "Data, AI, and academic integrity",
-          body: "Generative AI is rewriting both how students learn and how institutions assess. Clear policy, modern assessment design, and AI-aware academic-integrity tooling are now essential."
+          body: "Generative AI is rewriting how students learn and how institutions assess; clear policy and modern assessment are now essential."
         }
       ]}
       capabilities={[
         {
           name: "Customer Intelligence",
           href: "/capabilities/customer-intelligence",
-          blurb: "Engineer the prospective-, current-, and lifetime-learner experience using journey analytics and personalization tuned to mission and market."
+          blurb: "Engineer the prospective-, current-, and lifetime-learner experience with journey analytics and personalization."
         },
         {
           name: "Operations Excellence",
           href: "/capabilities/operations-excellence",
-          blurb: "Automate financial aid, registration, and back-office operations to free capacity for the academic and student-success work that drives outcomes."
+          blurb: "Automate financial aid, registration, and back-office work to free capacity for student-success outcomes."
         },
         {
           name: "Data Transformation",
           href: "/capabilities/data-transformation",
-          blurb: "Unify SIS, LMS, and CRM data into a single learner record that supports modern advising, success interventions, and AI-driven personalization."
+          blurb: "Unify SIS, LMS, and CRM into one learner record that powers modern advising and AI-driven personalization."
         },
         {
           name: "Strategy & Growth",
           href: "/capabilities/strategy-growth",
-          blurb: "Develop the program portfolio, market expansion, and credential strategy that will define enrollment and revenue across the next planning horizon."
+          blurb: "The program-portfolio, market-expansion, and credential strategy that define enrollment across the next horizon."
         }
       ]}
       experienceStats={[

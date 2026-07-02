@@ -105,3 +105,6 @@ temp/
 *.db
 *.sqlite
 *.sqlite3
+
+# Curated source-image dump (~1.4GB) — kept locally, not committed
+client/public/images/NexDyne Images/

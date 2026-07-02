@@ -48,9 +48,9 @@ export default function ReadinessAssessment({
   };
 
   const getMaturityLevel = (percentage: number) => {
-    if (percentage < 40) return { label: "Emerging", color: "text-yellow-400", description: "You're just starting your journey. Focus on foundational capabilities." };
+    if (percentage < 40) return { label: "Emerging", color: "text-amber", description: "You're just starting your journey. Focus on foundational capabilities." };
     if (percentage < 75) return { label: "Developing", color: "text-secondary", description: "You have good basics in place. Now it's time to scale and optimize." };
-    return { label: "Advanced", color: "text-green-400", description: "You're a leader in this space. Focus on innovation and continuous improvement." };
+    return { label: "Advanced", color: "text-amber", description: "You're a leader in this space. Focus on innovation and continuous improvement." };
   };
 
   const resetAssessment = () => {
@@ -74,7 +74,7 @@ export default function ReadinessAssessment({
             {!isComplete && (
               <div className="absolute top-0 left-0 w-full h-1 bg-white/10">
                 <div 
-                  className="h-full bg-secondary transition-all duration-500 ease-out"
+                  className="h-full bg-secondary transition duration-500 ease-out"
                   style={{ width: `${((currentStep + 1) / questions.length) * 100}%` }}
                 />
               </div>
@@ -92,9 +92,9 @@ export default function ReadinessAssessment({
                     <button
                       key={idx}
                       onClick={() => handleOptionSelect(questions[currentStep].id, option.value)}
-                      className="w-full text-left p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-secondary/50 transition-all group flex items-center justify-between"
+                      className="w-full text-left p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-secondary/50 transition group flex items-center justify-between"
                     >
-                      <span className="text-slate-200 group-hover:text-white font-medium">{option.label}</span>
+                      <span className="text-muted-foreground group-hover:text-white font-medium">{option.label}</span>
                       <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-white/20 group-hover:text-secondary transition-colors" />
                     </button>
                   ))}

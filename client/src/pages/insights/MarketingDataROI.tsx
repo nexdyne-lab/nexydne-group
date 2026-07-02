@@ -11,9 +11,9 @@ export default function MarketingDataROI() {
       <ReadingProgress />
       <Navigation />
       {/* Hero Section */}
-      <section className="bg-slate-900 text-white py-16 md:py-24">
+      <section className="bg-charcoal text-white py-16 md:py-24">
         <div className="container max-w-4xl">
-          <Link href="/solutions/marketing-operations" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 mb-8 transition-colors">
+          <Link href="/solutions/marketing-operations" className="inline-flex items-center gap-2 text-primary hover:text-primary mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Marketing Operations
           </Link>
@@ -99,7 +99,7 @@ export default function MarketingDataROI() {
               <li><strong>Monitor:</strong> Set up dashboards to track data health metrics over time.</li>
             </ol>
 
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
+            <div className="bg-primary/5 border-l-4 border-primary p-6 my-8">
               <p className="text-lg text-charcoal font-semibold">
                 "Data is an asset. Treat it like one. You wouldn't let your factory equipment rust; don't let your customer data decay."
               </p>
@@ -111,12 +111,12 @@ export default function MarketingDataROI() {
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 bg-slate-900 rounded-lg text-white">
+          <div className="mt-16 p-8 bg-charcoal rounded-lg text-white">
             <h3 className="text-2xl font-bold mb-4">Audit your data health</h3>
             <p className="text-muted-foreground/50 mb-6">
               Our Data Solutions team can perform a comprehensive audit of your marketing database and implement a sustainable quality framework.
             </p>
-            <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-charcoal bg-white rounded-lg hover:bg-slate-100 transition-colors">
+            <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-charcoal bg-white rounded-lg hover:bg-subtle transition-colors">
               Contact our team
             </Link>
           </div>

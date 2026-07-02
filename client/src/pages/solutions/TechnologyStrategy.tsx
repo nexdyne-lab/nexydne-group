@@ -12,7 +12,7 @@ export default function TechnologyStrategy() {
       serviceName="Technology Strategy"
       serviceSlug="technology-strategy"
       heroSubtitle="A technology strategy is only as real as the decisions it produces. We build the vision, the principles sharp enough to decide trade-offs, the target architecture that hangs together, and the governance operating model that turns the strategy into a body of executed work — not a deck that ages on the shared drive."
-      heroImage="/enterprise-transformation-hero.jpg"
+      heroImage="/solution-enterprise-transformation.0a0f2624.webp"
       experienceStats={[
         { number: "60-80%", label: "Compression in architectural review cycles" },
         { number: "3 yrs", label: "Strategy still being invoked after we leave" },

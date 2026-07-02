@@ -143,12 +143,12 @@ export default function IntelligentAutomationDesign() {
         backgroundImage="/images/solution-process.a945b529.webp"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
-        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"
+        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-charcoal leading-[1.05] mb-6"
         containerClassName="h-[70vh] min-h-[500px] sm:min-h-[560px] lg:min-h-[640px]"
       />
 
       {/* SLOT 2 — White lead / editorial intro */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -157,20 +157,19 @@ export default function IntelligentAutomationDesign() {
             transition={{ duration: 0.6 }}
             className="max-w-[72ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Our Perspective
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal mb-10"
             >
               Automation is an architecture problem. Treat it like one and the program scales.
             </h3>
             <div className="space-y-6">
-              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+              <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 The automation conversations that hit a wall almost always share the same pattern: a tool was selected before the problem was sized, and the program is now bending real workflows to fit the tool's strengths. Pure-RPA shops hit a ceiling when the work turns judgmental. Pure-ML programs stall when the rules are stable but the integration is brittle. The leaders who get past the ceiling treat automation as an architecture decision — multi-pattern, governed, observable.
               </p>
-              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+              <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 We design the architecture and the operating model that makes it stick. RPA, BPM, ML, and human-in-the-loop are not competing categories on a Gartner quadrant — they are components in a system, and the design decision is which combination earns its keep on each opportunity. The governance, the controls, the CoE charter, and the benefits discipline come with it, because at scale the program is only as good as the controls behind it.
               </p>
             </div>
@@ -179,7 +178,7 @@ export default function IntelligentAutomationDesign() {
       </section>
 
       {/* SLOT 3 — Light-grey methodology / phased approach (5 numbered phase cards) */}
-      <section className="bg-grey py-24 md:py-32">
+      <section className="bg-grey nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -188,21 +187,20 @@ export default function IntelligentAutomationDesign() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               How We Deliver
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               A five-phase approach from opportunity to scaled operating model.
             </h3>
-            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+            <p className="nx-lead text-charcoal/80 max-w-[60ch] mt-6">
               Each phase is timeboxed and produces a tangible artifact. Strategy and design typically run ten to sixteen weeks; the rollout phase extends through the first two waves of production automations.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {phases.map((phase, i) => (
               <motion.div
                 key={i}
@@ -216,7 +214,7 @@ export default function IntelligentAutomationDesign() {
                   <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-5">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25]">
+                  <h3 className="nx-h3 text-charcoal mb-4 leading-[1.25]">
                     {phase.name}
                   </h3>
                   <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
@@ -230,7 +228,7 @@ export default function IntelligentAutomationDesign() {
       </section>
 
       {/* SLOT 4 — White deliverables / what you get (flat hairline-bordered list) */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -239,12 +237,11 @@ export default function IntelligentAutomationDesign() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               What You Get
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               Six concrete artifacts every engagement leaves behind.
             </h3>
@@ -266,7 +263,7 @@ export default function IntelligentAutomationDesign() {
                   </span>
                 </div>
                 <div className="lg:col-span-4">
-                  <h4 className="text-xl text-charcoal font-medium leading-[1.25]">
+                  <h4 className="nx-h3 text-charcoal leading-[1.25]">
                     {item.name}
                   </h4>
                 </div>
@@ -282,7 +279,7 @@ export default function IntelligentAutomationDesign() {
       </section>
 
       {/* SLOT 5 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment, Pattern 2) */}
-      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+      <section className="bg-charcoal text-white nx-section">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -290,21 +287,20 @@ export default function IntelligentAutomationDesign() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+            <span className="block nx-eyebrow text-white/70 mb-6">
               The Outcome
             </span>
             {/* TODO: replace with real stat */}
             <h2
-              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-white mb-8"
             >
               Programs that move from single-tool RPA to a hybrid architecture typically see automation throughput triple within twelve months — and a CoE charter is what keeps the gain.
             </h2>
-            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+            <p className="nx-lead text-white/85 max-w-[60ch] mb-8">
               The leaders who scale automation past the pilot do not buy a different platform — they redesign the program around the architecture, the governance, and the operating cadence the work actually requires. That is the difference between an automation pilot and an automation capability.
             </p>
             <Link href="/cases">
-              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+              <span className="inline-flex items-center gap-2 bg-primary text-white text-[13px] font-semibold uppercase tracking-[0.1em] px-7 py-4 hover:bg-primary-hover transition-colors cursor-pointer">
                 See How We Help Leaders Win
               </span>
             </Link>
@@ -313,7 +309,7 @@ export default function IntelligentAutomationDesign() {
       </section>
 
       {/* SLOT 6 — White case studies / proof (1-2 cards, narrower than Cat 5) */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -322,12 +318,11 @@ export default function IntelligentAutomationDesign() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Client Results
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               When the architecture is right, the program compounds.
             </h3>
@@ -348,7 +343,7 @@ export default function IntelligentAutomationDesign() {
                       {result.industry}
                     </span>
                     {/* TODO: replace with real stat */}
-                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                    <h3 className="nx-h3 text-charcoal leading-[1.25] mb-4 group-hover:text-primary transition-colors">
                       {result.title}
                     </h3>
                     <p className="text-base text-charcoal/75 leading-[1.55] mb-6 flex-1">
@@ -366,7 +361,7 @@ export default function IntelligentAutomationDesign() {
       </section>
 
       {/* SLOT 7 — White intra-cluster sibling sub-offerings (5 links inside Process Optimization) */}
-      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+      <section className="bg-white nx-section border-t border-charcoal/10">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -375,18 +370,17 @@ export default function IntelligentAutomationDesign() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Other Ways We Help in Process Optimization
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               Sibling offerings inside this cluster.
             </h3>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {siblings.map((offering, i) => (
               <motion.div
                 key={i}
@@ -398,7 +392,7 @@ export default function IntelligentAutomationDesign() {
               >
                 <Link href={offering.link} className="block h-full group cursor-pointer">
                   <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
-                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                    <h3 className="nx-h3 text-charcoal leading-[1.25] group-hover:text-primary transition-colors">
                       {offering.title}
                     </h3>
                     <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
@@ -413,7 +407,7 @@ export default function IntelligentAutomationDesign() {
       </section>
 
       {/* SLOT 8 — Charcoal closing CTA "Ready to Talk?" */}
-      <section className="bg-charcoal text-white py-24 md:py-32">
+      <section className="bg-charcoal text-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
@@ -423,16 +417,15 @@ export default function IntelligentAutomationDesign() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                <span className="block nx-eyebrow text-white/70 mb-5">
                   Ready to Talk?
                 </span>
                 <h2
-                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
-                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                  className="nx-h2 text-white mb-10"
                 >
                   Bring our automation architects into your next operating-model conversation.
                 </h2>
-                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                <p className="nx-lead text-white/80 mb-6 max-w-[52ch]">
                   I want to talk to your experts in:
                 </p>
                 <Select
@@ -464,7 +457,7 @@ export default function IntelligentAutomationDesign() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
-                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                <p className="nx-lead text-white/80 mb-8 max-w-[52ch]">
                   We work with leaders who want their automation program to compound, not pile up. The conversation starts with the architecture, not the tool.
                 </p>
                 <div className="space-y-5">

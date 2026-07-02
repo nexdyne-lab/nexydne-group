@@ -11,12 +11,12 @@ import SocialShare from '@/components/SocialShare';
 
 export default function ChurnPredictionPlaybook() {
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-secondary selection:text-base">
+    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary selection:text-white">
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-base text-white py-16 md:py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-base/50 z-10" />
+      <section className="bg-background text-charcoal py-16 md:py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/50 z-10" />
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2670&auto=format&fit=crop')] opacity-10 bg-cover bg-center" />
         
         <div className="container max-w-4xl mx-auto px-4 relative z-20">
@@ -25,7 +25,7 @@ export default function ChurnPredictionPlaybook() {
           </div>
           
           <div className="flex flex-wrap gap-4 mb-6">
-            <span className="inline-flex items-center gap-2 text-sm text-blue-300 font-medium px-3 py-1 rounded-full bg-blue-900/30 border border-blue-800">
+            <span className="inline-flex items-center gap-2 text-sm text-primary font-medium px-3 py-1 rounded-full bg-charcoal/30 border border-primary">
               <Code className="w-4 h-4" />
               Technical Guide
             </span>
@@ -78,7 +78,7 @@ export default function ChurnPredictionPlaybook() {
             <SocialShare title="The Churn Prediction Playbook" />
           </div>
 
-          <div className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-base prose-a:text-secondary prose-img:rounded-xl prose-pre:bg-base prose-pre:text-gray-100">
+          <div className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-base prose-a:text-secondary prose-img:rounded-xl prose-pre:bg-base prose-pre:text-muted-foreground">
             <p className="lead text-xl text-muted-foreground mb-8">
               Most churn prediction models fail not because the math is wrong, but because the engineering is disconnected from the business process. A model that lives in a Jupyter notebook is useless. A model that pushes probability scores into Salesforce is a revenue engine.
             </p>
@@ -162,7 +162,7 @@ importances = rf.feature_importances_`}
             <p>
               The final step is automation. We set up triggers in the CRM:
             </p>
-            <div className="bg-blue-50 border-l-4 border-secondary p-6 my-8 rounded-r-lg">
+            <div className="bg-primary/5 border-l-4 border-secondary p-6 my-8 rounded-r-lg">
               <ul className="mb-0 text-charcoal/80 list-none pl-0 space-y-2">
                 <li><strong>Score &gt; 70%:</strong> Alert CSM Manager, create "At Risk" opportunity.</li>
                 <li><strong>Score 50-70%:</strong> Trigger automated email sequence from CSM.</li>
@@ -177,7 +177,7 @@ importances = rf.feature_importances_`}
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 md:p-12 bg-base rounded-2xl text-white relative overflow-hidden">
+          <div className="mt-16 p-8 md:p-12 bg-background rounded-2xl text-charcoal relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -mr-32 -mt-32" />
             <div className="relative z-10">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">Don't build this from scratch.</h3>
@@ -185,7 +185,7 @@ importances = rf.feature_importances_`}
                 NexDyne's Data Engineering team can deploy a production-ready churn prediction pipeline in your infrastructure in under 4 weeks.
               </p>
               <Link href="/contact">
-                <button className="px-8 py-4 bg-secondary hover:bg-secondary text-base rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
+                <button className="px-8 py-4 bg-secondary hover:bg-secondary text-base rounded-full font-bold transition transform hover:scale-105 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
                   Get the Technical Specs
                 </button>
               </Link>

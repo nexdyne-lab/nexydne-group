@@ -124,7 +124,7 @@ export default function ProcessFlowAI() {
             >
               <Breadcrumbs variant="light" />
               
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-4 eb-garamond">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-4">
                 ProcessFlow AI
               </h1>
               
@@ -164,7 +164,7 @@ export default function ProcessFlowAI() {
             <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Core Capabilities
             </motion.span>
-            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
+            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               What ProcessFlow AI delivers
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
@@ -183,9 +183,9 @@ export default function ProcessFlowAI() {
               <motion.div 
                 key={i}
                 variants={fadeInUp}
-                className="group bg-slate-50 rounded-2xl p-8 hover:bg-slate-100 transition-colors"
+                className="group bg-off-white rounded-2xl p-8 hover:bg-subtle transition-colors"
               >
-                <div className="w-14 h-14 bg-slate-900 rounded-xl flex items-center justify-center mb-6">
+                <div className="w-14 h-14 bg-charcoal rounded-xl flex items-center justify-center mb-6">
                   <capability.icon className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-charcoal mb-3">{capability.title}</h3>
@@ -193,7 +193,7 @@ export default function ProcessFlowAI() {
                 <ul className="space-y-2">
                   {capability.benefits.map((benefit, j) => (
                     <li key={j} className="flex items-center text-sm text-charcoal/80">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-amber mr-2 flex-shrink-0" />
                       {benefit}
                     </li>
                   ))}
@@ -205,7 +205,7 @@ export default function ProcessFlowAI() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-off-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div 
             initial="hidden"
@@ -217,7 +217,7 @@ export default function ProcessFlowAI() {
             <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               The Process
             </motion.span>
-            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
+            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               How ProcessFlow AI works
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
@@ -238,7 +238,7 @@ export default function ProcessFlowAI() {
                 variants={fadeInUp}
                 className="relative"
               >
-                <div className="text-6xl font-bold text-slate-200 mb-4">{step.step}</div>
+                <div className="text-6xl font-bold text-muted-foreground mb-4">{step.step}</div>
                 <h3 className="text-xl font-bold text-charcoal mb-3">{step.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{step.description}</p>
                 {i < processSteps.length - 1 && (
@@ -265,7 +265,7 @@ export default function ProcessFlowAI() {
             <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Industry Applications
             </motion.span>
-            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
+            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               ProcessFlow AI in action
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
@@ -284,7 +284,7 @@ export default function ProcessFlowAI() {
               <motion.div 
                 key={i}
                 variants={fadeInUp}
-                className="bg-slate-900 rounded-2xl p-8 text-white"
+                className="bg-charcoal rounded-2xl p-8 text-white"
               >
                 <span className="text-xs font-medium tracking-[0.15em] text-white/60 uppercase mb-4 block">
                   {useCase.industry}
@@ -292,7 +292,7 @@ export default function ProcessFlowAI() {
                 <h3 className="text-xl font-bold mb-4">{useCase.title}</h3>
                 <p className="text-white/70 mb-6 leading-relaxed">{useCase.description}</p>
                 <div className="pt-4 border-t border-white/10">
-                  <div className="text-2xl font-bold text-emerald-400">{useCase.results}</div>
+                  <div className="text-2xl font-bold text-amber">{useCase.results}</div>
                 </div>
               </motion.div>
             ))}
@@ -301,7 +301,7 @@ export default function ProcessFlowAI() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-slate-900">
+      <section className="py-24 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto text-center">
             <motion.h2 
@@ -309,7 +309,7 @@ export default function ProcessFlowAI() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 eb-garamond"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6"
             >
               Ready to optimize your operations?
             </motion.h2>
@@ -331,13 +331,13 @@ export default function ProcessFlowAI() {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Link href="/contact">
-                <span className="inline-flex items-center justify-center px-8 py-4 bg-white text-charcoal font-semibold rounded-full hover:bg-subtle transition-all cursor-pointer group">
+                <span className="inline-flex items-center justify-center px-8 py-4 bg-white text-charcoal font-semibold rounded-full hover:bg-subtle transition cursor-pointer group">
                   Schedule a Demo
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Link>
               <Link href="/capabilities/ai-technology-consulting">
-                <span className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all cursor-pointer">
+                <span className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition cursor-pointer">
                   Explore All Accelerators
                 </span>
               </Link>

@@ -1,5 +1,5 @@
 // CaseStudyTemplate.tsx — PR 2 rewrite
-// Changes: removed lucide-react, shadcn Button, font-serif, gradient overlays,
+// Changes: removed lucide-react, shadcn Button,, gradient overlays,
 // bg-blue-* colors, rounded pills/cards. Light editorial layout with
 // split-grid hero (image left, text right) matching Home.tsx Careers section.
 // Metric grid replaces icon+text layout. Pullquote is typography-only.
@@ -72,7 +72,7 @@ export default function CaseStudyTemplate({
           {/* Right — text column */}
           <div className="bg-white flex flex-col justify-center px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24 py-20 md:py-24">
             {/* Industry + client eyebrow */}
-            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               {industry} · {client}
             </span>
             <h1
@@ -81,7 +81,7 @@ export default function CaseStudyTemplate({
             >
               {title}
             </h1>
-            <p className="text-base sm:text-lg text-charcoal/80 leading-[1.7] mb-10 max-w-xl">
+            <p className="nx-lead text-charcoal/80 mb-10 max-w-xl">
               {subtitle}
             </p>
 
@@ -103,9 +103,9 @@ export default function CaseStudyTemplate({
       </section>
 
       {/* Key Metrics — typography grid, no icons, no dark card */}
-      <section className="py-20 md:py-24 bg-subtle">
+      <section className="nx-section bg-subtle">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16">
-          <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+          <span className="block nx-eyebrow text-charcoal/60 mb-5">
             Key Results
           </span>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 md:gap-12">
@@ -127,7 +127,7 @@ export default function CaseStudyTemplate({
       </section>
 
       {/* Narrative — two-column layout */}
-      <section className="py-20 md:py-24 bg-white">
+      <section className="nx-section bg-white">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
 
@@ -135,7 +135,7 @@ export default function CaseStudyTemplate({
             <div className="lg:col-span-4 order-2 lg:order-1 space-y-12">
               {/* Capabilities tags — square pills */}
               <div>
-                <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+                <span className="block nx-eyebrow text-charcoal/60 mb-5">
                   Capabilities
                 </span>
                 <div className="flex flex-wrap gap-2">
@@ -152,7 +152,7 @@ export default function CaseStudyTemplate({
 
               {/* Related capability CTA */}
               <div className="border-t border-charcoal/10 pt-8">
-                <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-4">
+                <span className="block nx-eyebrow text-charcoal/60 mb-4">
                   Ready for Similar Results?
                 </span>
                 <p className="text-[14px] text-charcoal/70 leading-[1.65] mb-6">
@@ -171,7 +171,7 @@ export default function CaseStudyTemplate({
 
               {/* The Challenge */}
               <div>
-                <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+                <span className="block nx-eyebrow text-charcoal/60 mb-5">
                   The Challenge
                 </span>
                 <div className="space-y-4 text-base text-charcoal/80 leading-[1.7]">
@@ -183,7 +183,7 @@ export default function CaseStudyTemplate({
 
               {/* The Solution */}
               <div>
-                <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+                <span className="block nx-eyebrow text-charcoal/60 mb-5">
                   The Solution
                 </span>
                 <div className="space-y-4 text-base text-charcoal/80 leading-[1.7]">
@@ -215,7 +215,7 @@ export default function CaseStudyTemplate({
 
               {/* The Impact */}
               <div>
-                <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+                <span className="block nx-eyebrow text-charcoal/60 mb-5">
                   The Impact
                 </span>
                 <div className="space-y-4 text-base text-charcoal/80 leading-[1.7]">

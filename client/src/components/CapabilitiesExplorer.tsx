@@ -163,7 +163,7 @@ export function CapabilitiesExplorer() {
           >
             {/* Headline */}
             <h2 
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] text-charcoal leading-[1.1] mb-4 sm:mb-6 eb-garamond"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] text-charcoal leading-[1.1] mb-4 sm:mb-6"
             >
               How can we assist you today?
             </h2>
@@ -179,7 +179,7 @@ export function CapabilitiesExplorer() {
               <div className="relative flex-1">
                 <button
                   onClick={() => toggleDropdown('capabilities')}
-                  className={`w-full flex items-center justify-between px-5 py-4 rounded-lg border-2 transition-all duration-300 ${
+                  className={`w-full flex items-center justify-between px-5 py-4 rounded-lg border-2 transition duration-300 ${
                     activeDropdown === 'capabilities' || selectedCapability
                       ? 'bg-base text-white border-base'
                       : 'bg-white text-charcoal border-border hover:border-base'
@@ -207,7 +207,7 @@ export function CapabilitiesExplorer() {
                         <button
                           key={capability.id}
                           onClick={() => handleCapabilitySelect(capability)}
-                          className="w-full text-left px-5 py-3 text-sm sm:text-base text-charcoal hover:bg-subtle transition-colors border-b border-gray-50 last:border-b-0"
+                          className="w-full text-left px-5 py-3 text-sm sm:text-base text-charcoal hover:bg-subtle transition-colors border-b border-border last:border-b-0"
                         >
                           {capability.title}
                         </button>
@@ -221,7 +221,7 @@ export function CapabilitiesExplorer() {
               <div className="relative flex-1">
                 <button
                   onClick={() => toggleDropdown('industries')}
-                  className={`w-full flex items-center justify-between px-5 py-4 rounded-lg border-2 transition-all duration-300 ${
+                  className={`w-full flex items-center justify-between px-5 py-4 rounded-lg border-2 transition duration-300 ${
                     activeDropdown === 'industries' || selectedIndustry
                       ? 'bg-base text-white border-base'
                       : 'bg-white text-charcoal border-border hover:border-base'
@@ -249,7 +249,7 @@ export function CapabilitiesExplorer() {
                         <button
                           key={industry.id}
                           onClick={() => handleIndustrySelect(industry)}
-                          className="w-full text-left px-5 py-3 text-sm sm:text-base text-charcoal hover:bg-subtle transition-colors border-b border-gray-50 last:border-b-0"
+                          className="w-full text-left px-5 py-3 text-sm sm:text-base text-charcoal hover:bg-subtle transition-colors border-b border-border last:border-b-0"
                         >
                           {industry.title}
                         </button>

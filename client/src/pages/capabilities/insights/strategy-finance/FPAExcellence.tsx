@@ -29,21 +29,21 @@ export default function FPAExcellence() {
         Financial Planning & Analysis has evolved from a back-office function to a strategic capability. World-class FP&A teams drive better decisions, improve forecast accuracy, and enable agile responses to market changes.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         The FP&A Maturity Model
       </h2>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
         FP&A functions typically evolve through four stages: reactive reporting, proactive analysis, strategic partnership, and predictive intelligence. Most mid-market companies operate at stages one or two, with significant opportunity to advance.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         Essential FP&A Capabilities
       </h2>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
         World-class FP&A requires excellence in forecasting, variance analysis, scenario planning, and business partnership. These capabilities must be supported by appropriate tools and processes.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         Key Takeaways
       </h2>
       <ul className="list-disc pl-6 text-charcoal/80 space-y-3 mb-8">

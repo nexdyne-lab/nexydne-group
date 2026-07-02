@@ -22,16 +22,16 @@ export function CRO() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 overflow-hidden bg-base">
+      <section className="relative pt-32 pb-24 overflow-hidden bg-background">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center" />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base/90 via-base/80 to-base" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/80 to-background" />
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl">
             <Breadcrumbs className="mb-5 sm:mb-6 md:mb-8" />
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-2 sm:mb-3 md:mb-4 leading-tight eb-garamond">
+            <h1 className="text-5xl md:text-6xl font-bold text-charcoal mb-2 sm:mb-3 md:mb-4 leading-tight">
               Conversion Rate <br/>
               <span className="text-secondary">Optimization (CRO)</span>
             </h1>
@@ -47,7 +47,7 @@ export function CRO() {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center mb-24">
             <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6 eb-garamond">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6">
                 The Science of Selling Online
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
@@ -71,11 +71,11 @@ export function CRO() {
                 ))}
               </div>
             </div>
-            <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-slate-100">
+            <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-border">
               <h3 className="text-xl font-bold text-charcoal mb-6">Optimization Levers</h3>
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <div className="p-3 bg-blue-100 rounded-lg h-fit">
+                  <div className="p-3 bg-primary/10 rounded-lg h-fit">
                     <Zap className="w-6 h-6 text-primary" />
                   </div>
                   <div>
@@ -84,7 +84,7 @@ export function CRO() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="p-3 bg-blue-100 rounded-lg h-fit">
+                  <div className="p-3 bg-primary/10 rounded-lg h-fit">
                     <MousePointerClick className="w-6 h-6 text-primary" />
                   </div>
                   <div>
@@ -93,7 +93,7 @@ export function CRO() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="p-3 bg-blue-100 rounded-lg h-fit">
+                  <div className="p-3 bg-primary/10 rounded-lg h-fit">
                     <Users className="w-6 h-6 text-primary" />
                   </div>
                   <div>
@@ -107,7 +107,7 @@ export function CRO() {
 
           {/* Methodology */}
           <div className="mb-24">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6 sm:mb-8 md:mb-12 text-center eb-garamond">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6 sm:mb-8 md:mb-12 text-center">
               Our Optimization Cycle
             </h2>
             <div className="grid md:grid-cols-4 gap-4 sm:p-6 md:p-8">
@@ -133,7 +133,7 @@ export function CRO() {
                   desc: "Implement winners, learn from losers, and restart the cycle."
                 }
               ].map((step, index) => (
-                <div key={index} className="bg-slate-50 p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl border border-slate-100 hover:shadow-md transition-shadow">
+                <div key={index} className="bg-off-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl border border-border hover:shadow-md transition-shadow">
                   <div className="mb-4 p-3 bg-white rounded-lg w-fit shadow-sm">
                     {step.icon}
                   </div>
@@ -147,16 +147,16 @@ export function CRO() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 bg-slate-900 text-white">
+      <section className="py-24 bg-charcoal text-charcoal">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 eb-garamond">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
             Stop Leaving Money on the Table
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground/50 mb-10 max-w-2xl mx-auto">
             Get a complimentary CRO audit of your key conversion paths.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-4 bg-secondary text-base font-bold rounded-full hover:bg-white transition-all duration-300">
+            <button className="px-8 py-4 bg-secondary text-base font-bold rounded-full hover:bg-white transition duration-300">
               Request CRO Audit
             </button>
           </Link>

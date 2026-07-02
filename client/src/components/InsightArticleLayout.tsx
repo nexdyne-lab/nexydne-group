@@ -133,17 +133,7 @@ export default function InsightArticleLayout({
               transition={{ duration: 0.6, delay: 0.2 }}
               className="lg:col-span-8"
             >
-              <div className="prose prose-lg max-w-none 
- prose-headings: prose-headings:text-charcoal prose-headings:font-bold
- prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-12 prose-h2:mb-6
- prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-8 prose-h3:mb-4
- prose-p:text-charcoal/70 prose-p:leading-relaxed prose-p:mb-6
- prose-li:text-charcoal/70 prose-li:leading-relaxed
- prose-strong:text-charcoal prose-strong:font-semibold
- prose-em:text-charcoal/80
- prose-ul:my-6 prose-ol:my-6
- prose-a:text-primary prose-a:no-underline hover:prose-a:underline
- ">
+              <div className="prose prose-lg max-w-none prose-headings: prose-headings:text-charcoal prose-headings:font-bold prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-charcoal/70 prose-p:leading-relaxed prose-p:mb-6 prose-li:text-charcoal/70 prose-li:leading-relaxed prose-strong:text-charcoal prose-strong:font-semibold prose-em:text-charcoal/80 prose-ul:my-6 prose-ol:my-6 prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
                 {children}
               </div>
 
@@ -184,25 +174,25 @@ export default function InsightArticleLayout({
                   <div className="flex gap-3">
                     <button 
                       onClick={() => handleShare('linkedin')}
-                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal/60 hover:text-primary hover:bg-primary/10 transition-all"
+                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal/60 hover:text-primary hover:bg-primary/10 transition"
                     >
                       <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                     </button>
                     <button 
                       onClick={() => handleShare('twitter')}
-                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal/60 hover:text-[#1DA1F2] hover:bg-[#1DA1F2]/10 transition-all"
+                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal/60 hover:text-[#1DA1F2] hover:bg-[#1DA1F2]/10 transition"
                     >
                       <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
                     </button>
                     <button 
                       onClick={() => handleShare('facebook')}
-                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal/60 hover:text-[#4267B2] hover:bg-[#4267B2]/10 transition-all"
+                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal/60 hover:text-[#4267B2] hover:bg-[#4267B2]/10 transition"
                     >
                       <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
                     </button>
                     <button 
                       onClick={() => handleShare('copy')}
-                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal/60 hover:text-primary hover:bg-primary/10 transition-all"
+                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal/60 hover:text-primary hover:bg-primary/10 transition"
                     >
                       <Link2 className="w-4 h-4 sm:w-5 sm:h-5" />
                     </button>
@@ -301,7 +291,7 @@ export default function InsightArticleLayout({
                     <div className="flex items-center gap-2 text-sm text-charcoal/50">
                       <span>{article.readTime}</span>
                       <span>•</span>
-                      <span className="text-primary font-semibold inline-flex items-center group-hover:gap-1 transition-all">Read now <ArrowRight className="w-3.5 h-3.5 ml-1" /></span>
+                      <span className="text-primary font-semibold inline-flex items-center group-hover:gap-1 transition-[gap]">Read now <ArrowRight className="w-3.5 h-3.5 ml-1" /></span>
                     </div>
                   </Link>
                 </motion.div>

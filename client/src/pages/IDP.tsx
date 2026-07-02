@@ -21,10 +21,10 @@ export default function IDP() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-charcoal via-charcoal to-charcoal text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 right-20 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 right-20 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-20 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
         </div>
         
         <div className="container relative py-16 sm:py-20 md:py-24 lg:py-16 sm:py-20 md:py-24 lg:py-32">
@@ -100,7 +100,7 @@ export default function IDP() {
 
           {/* Quote */}
           <div className="mt-12 border-l-4 border-primary pl-8 py-6 bg-white">
-            <p className="text-xl italic text-gray-800 mb-4">
+            <p className="text-xl italic text-charcoal mb-4">
               "We were drowning in invoice processing—our team spent 40 hours per week on manual data entry. IDP reduced that to 2 hours of exception handling. The ROI was immediate and transformative."
             </p>
             <p className="text-lg font-semibold text-charcoal">Finance Director, Distribution Company</p>
@@ -109,11 +109,11 @@ export default function IDP() {
       </section>
 
       {/* Our Approach Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-slate-900 text-white">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-charcoal text-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-6 sm:p-6 sm:p-8 md:p-12 lg:gap-8 sm:gap-6 sm:p-8 md:p-12 lg:gap-16 items-start max-w-7xl mx-auto">
             <div>
-              <p className="text-sm font-semibold tracking-widest uppercase mb-6 text-cyan-400">Our Methodology</p>
+              <p className="text-sm font-semibold tracking-widest uppercase mb-6 text-amber">Our Methodology</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8">
                 From manual chaos to automated precision
               </h2>
@@ -129,9 +129,9 @@ export default function IDP() {
             </div>
             
             <div className="space-y-8">
-              <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
+              <div className="bg-charcoal p-4 sm:p-6 md:p-8 rounded-lg border border-white/10">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
                     <span className="text-2xl font-bold text-charcoal">1</span>
                   </div>
                   <div>
@@ -143,9 +143,9 @@ export default function IDP() {
                 </div>
               </div>
 
-              <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
+              <div className="bg-charcoal p-4 sm:p-6 md:p-8 rounded-lg border border-white/10">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
                     <span className="text-2xl font-bold text-charcoal">2</span>
                   </div>
                   <div>
@@ -157,9 +157,9 @@ export default function IDP() {
                 </div>
               </div>
 
-              <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
+              <div className="bg-charcoal p-4 sm:p-6 md:p-8 rounded-lg border border-white/10">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
                     <span className="text-2xl font-bold text-charcoal">3</span>
                   </div>
                   <div>
@@ -186,7 +186,7 @@ export default function IDP() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-7xl mx-auto">
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <FileText className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Invoices & Bills</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -194,7 +194,7 @@ export default function IDP() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <FileText className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Purchase Orders</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -202,7 +202,7 @@ export default function IDP() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <FileText className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Contracts & Agreements</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -210,7 +210,7 @@ export default function IDP() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <FileText className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Forms & Applications</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -218,7 +218,7 @@ export default function IDP() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <FileText className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Receipts & Expense Reports</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -226,7 +226,7 @@ export default function IDP() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <FileText className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Shipping & Logistics</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -295,7 +295,7 @@ export default function IDP() {
           
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 max-w-5xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/process-automation/rpa" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 h-full bg-white">
                 <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   Robotic Process Automation (RPA)
                 </h3>
@@ -310,7 +310,7 @@ export default function IDP() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/process-automation/ipaas" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 h-full bg-white">
                 <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   iPaaS (Integration Platform)
                 </h3>
@@ -328,7 +328,7 @@ export default function IDP() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-slate-900 text-white">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-charcoal text-white">
         <div className="container max-w-4xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8">
             Ready to automate document processing?

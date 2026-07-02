@@ -10,24 +10,24 @@ import Footer from '@/components/Footer';
 
 export default function NetZeroTransition() {
   return (
-    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-blue-100">
+    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-primary/10">
       <Navigation />
 
       {/* Hero Section */}
-      <header className="pt-20 pb-16 border-b border-slate-100">
+      <header className="pt-20 pb-16 border-b border-border">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <div className="text-sm font-medium text-muted-foreground mb-6 uppercase tracking-wider">
-              <Link href="/insights" className="hover:text-blue-900 transition-colors">
+              <Link href="/insights" className="hover:text-primary transition-colors">
                 Insights
               </Link>
               <span className="mx-2">/</span>
-              <span className="text-blue-900">Report</span>
+              <span className="text-charcoal">Report</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-4 leading-[1.1]">
               The Net Zero Transition: What it would cost, what it could bring
             </h1>
-            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light ">
+            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light">
               A comprehensive analysis of the economic transformation required to achieve net-zero emissions by 2050.
             </p>
           </div>
@@ -67,8 +67,8 @@ export default function NetZeroTransition() {
                 While the costs are significant, the cost of inaction is far higher. Physical risks from climate change are already manifesting and will intensify. Moreover, the transition offers a unique opportunity to modernize the global capital stock, improve energy efficiency, and drive innovation.
               </p>
               
-              <figure className="my-12 bg-slate-50 p-8 rounded-sm border border-slate-100">
-                <div className="aspect-video bg-slate-200 rounded-sm flex items-center justify-center text-muted-foreground/70 mb-4">
+              <figure className="my-12 bg-off-white p-8 rounded-sm border border-border">
+                <div className="aspect-video bg-grey rounded-sm flex items-center justify-center text-muted-foreground/70 mb-4">
                   [Chart: Global Capital Spending on Physical Assets for Energy and Land-Use Systems]
                 </div>
                 <figcaption className="text-sm text-muted-foreground text-center">
@@ -92,12 +92,12 @@ export default function NetZeroTransition() {
 
           {/* Sidebar */}
           <div className="lg:col-span-4 space-y-8">
-            <div className="bg-slate-50 p-8 rounded-sm border border-slate-100 sticky top-24">
+            <div className="bg-off-white p-8 rounded-sm border border-border sticky top-24">
               <div className="flex flex-col gap-4 mb-8">
-                <Button className="w-full bg-blue-900 hover:bg-blue-800 text-white flex items-center justify-center gap-2">
+                <Button className="w-full bg-charcoal hover:bg-primary-hover text-white flex items-center justify-center gap-2">
                   <Download className="w-4 h-4" /> Download Full Report
                 </Button>
-                <Button variant="outline" className="w-full border-slate-300 text-charcoal/80 hover:bg-slate-50 flex items-center justify-center gap-2">
+                <Button variant="outline" className="w-full border-border text-charcoal/80 hover:bg-off-white flex items-center justify-center gap-2">
                   <Share2 className="w-4 h-4" /> Share
                 </Button>
               </div>
@@ -105,14 +105,14 @@ export default function NetZeroTransition() {
               <h3 className="text-lg font-bold text-charcoal mb-4">Authors</h3>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-slate-200 rounded-full"></div>
+                  <div className="w-10 h-10 bg-grey rounded-full"></div>
                   <div>
                     <div className="font-medium text-charcoal">Sarah Jenkins</div>
                     <div className="text-xs text-muted-foreground">Partner, London</div>
                   </div>
                 </li>
                 <li className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-slate-200 rounded-full"></div>
+                  <div className="w-10 h-10 bg-grey rounded-full"></div>
                   <div>
                     <div className="font-medium text-charcoal">Michael Chen</div>
                     <div className="text-xs text-muted-foreground">Senior Partner, Singapore</div>
@@ -120,16 +120,16 @@ export default function NetZeroTransition() {
                 </li>
               </ul>
 
-              <div className="pt-8 border-t border-slate-200">
+              <div className="pt-8 border-t border-border">
                 <h4 className="font-bold text-charcoal mb-4 text-sm uppercase tracking-wide">Related Capabilities</h4>
                 <ul className="space-y-3">
                   <li>
-                    <Link href="/capabilities/growth-marketing-sales/green-growth" className="text-muted-foreground hover:text-blue-700 transition-colors text-sm block">
+                    <Link href="/capabilities/growth-marketing-sales/green-growth" className="text-muted-foreground hover:text-primary transition-colors text-sm block">
                       Green Growth
                     </Link>
                   </li>
                   <li>
-                    <Link href="/capabilities/growth-marketing-sales/green-growth/energy-materials" className="text-muted-foreground hover:text-blue-700 transition-colors text-sm block">
+                    <Link href="/capabilities/growth-marketing-sales/green-growth/energy-materials" className="text-muted-foreground hover:text-primary transition-colors text-sm block">
                       Energy & Materials
                     </Link>
                   </li>

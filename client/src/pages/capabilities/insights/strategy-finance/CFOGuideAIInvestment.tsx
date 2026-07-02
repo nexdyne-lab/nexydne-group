@@ -27,7 +27,7 @@ export default function CFOGuideAIInvestment() {
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 leading-tight eb-garamond">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 leading-tight">
             The CFO's Guide to AI Investment Decisions
           </h1>
           
@@ -49,7 +49,7 @@ export default function CFOGuideAIInvestment() {
           <div className="flex flex-wrap items-center justify-between gap-6">
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-gray-900 flex items-center justify-center text-white font-semibold">
+                <div className="w-12 h-12 rounded-full bg-charcoal flex items-center justify-center text-white font-semibold">
                   JM
                 </div>
                 <div>
@@ -58,7 +58,7 @@ export default function CFOGuideAIInvestment() {
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-white font-semibold">
+                <div className="w-12 h-12 rounded-full bg-charcoal flex items-center justify-center text-white font-semibold">
                   LC
                 </div>
                 <div>
@@ -83,11 +83,11 @@ export default function CFOGuideAIInvestment() {
       <article className="py-16">
         <div className="container max-w-3xl">
           <div className="prose prose-lg max-w-none">
-            <p className="text-xl text-charcoal/80 leading-relaxed mb-8 ">
+            <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
               AI investments present unique challenges for CFOs. Unlike traditional technology investments with predictable costs and benefits, AI projects often have uncertain outcomes, evolving requirements, and benefits that are difficult to quantify. This guide provides a practical framework for making sound AI investment decisions.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 eb-garamond">The AI Investment Paradox</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">The AI Investment Paradox</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
               CFOs face a fundamental tension with AI investments. On one hand, the potential returns are significant—our research shows successful AI implementations delivering 15-25% improvements in targeted processes. On the other hand, failure rates remain high, with many projects failing to deliver expected value.
@@ -97,7 +97,7 @@ export default function CFOGuideAIInvestment() {
               The solution is not to avoid AI investment, but to approach it with appropriate rigor. This means treating AI as a portfolio of experiments rather than a series of traditional capital projects, with governance structures that balance innovation with financial discipline.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 eb-garamond">A Framework for AI Investment Evaluation</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">A Framework for AI Investment Evaluation</h2>
             
             <h3 className="text-2xl font-bold text-charcoal mt-10 mb-4">Step 1: Categorize the Investment</h3>
             
@@ -161,7 +161,7 @@ export default function CFOGuideAIInvestment() {
               <strong>Change Management:</strong> Training, process redesign, organizational adaptation. Often underestimated but critical for value realization.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 eb-garamond">Portfolio Approach to AI Investment</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Portfolio Approach to AI Investment</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Rather than evaluating AI projects individually, consider them as a portfolio. A balanced AI portfolio includes:
@@ -179,7 +179,7 @@ export default function CFOGuideAIInvestment() {
               <strong>Exploratory Investments (10% of budget):</strong> Small experiments to test emerging technologies and use cases. Think of these as R&D rather than capital projects.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 eb-garamond">Measuring AI Investment Performance</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Measuring AI Investment Performance</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Traditional project metrics don't capture the full picture of AI investment performance. Implement a multi-dimensional measurement framework:
@@ -201,7 +201,7 @@ export default function CFOGuideAIInvestment() {
               <strong>Strategic Metrics:</strong> Competitive position, customer satisfaction, innovation pipeline. Capture value that doesn't appear immediately in financials.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 eb-garamond">Governance Recommendations</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Governance Recommendations</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Effective AI investment governance balances control with agility. Key recommendations:
@@ -229,7 +229,7 @@ export default function CFOGuideAIInvestment() {
       {/* Related Insights */}
       <section className="py-16 bg-subtle">
         <div className="container max-w-6xl">
-          <h2 className="text-2xl font-bold text-charcoal mb-8 eb-garamond">Related Insights</h2>
+          <h2 className="text-2xl font-bold text-charcoal mb-8">Related Insights</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             <Link href="/capabilities/artificial-intelligence/insights/ai-roi-framework" className="group">
@@ -274,12 +274,12 @@ export default function CFOGuideAIInvestment() {
       {/* CTA Section */}
       <section className="py-16 bg-white">
         <div className="container max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-charcoal mb-4 eb-garamond">Ready to Optimize Your AI Investments?</h2>
+          <h2 className="text-3xl font-bold text-charcoal mb-4">Ready to Optimize Your AI Investments?</h2>
           <p className="text-lg text-muted-foreground mb-8">
             Our experts can help you build an AI investment framework tailored to your organization.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-4 bg-primary text-white font-semibold hover:bg-base transition-colors">
+            <button className="px-8 py-4 bg-primary text-white font-semibold hover:bg-charcoal transition-colors">
               Schedule a Consultation
             </button>
           </Link>

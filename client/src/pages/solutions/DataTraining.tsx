@@ -159,7 +159,7 @@ export default function DataTraining() {
       />
 
       {/* SLOT 2 — White lead / editorial intro */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -168,20 +168,19 @@ export default function DataTraining() {
             transition={{ duration: 0.6 }}
             className="max-w-[72ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Our Perspective
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal mb-10"
             >
               The data platform is built. The dashboards exist. The culture hasn't caught up.
             </h3>
             <div className="space-y-6">
-              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+              <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 Most organizations have spent the last decade investing in data infrastructure — warehouses, lakehouses, BI tools, governance platforms. The plumbing works. What hasn't kept pace is the human capability to use it. Executives don't trust the dashboards. Analysts run the same five reports. Citizen users build shadow spreadsheets because the official tools feel inaccessible.
               </p>
-              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+              <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
                   href="/insights/data-literacy-playbook"
@@ -197,7 +196,7 @@ export default function DataTraining() {
       </section>
 
       {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
-      <section className="bg-grey py-24 md:py-32">
+      <section className="bg-grey nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -206,21 +205,20 @@ export default function DataTraining() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               How We Help Clients
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               Six ways we build data fluency that sticks.
             </h3>
-            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+            <p className="nx-lead text-charcoal/80 max-w-[60ch] mt-6">
               We design role-based curricula, deliver them in formats adults actually retain, and measure the downstream business outcomes — not just attendance.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {services.map((service, i) => (
               <motion.div
                 key={i}
@@ -232,7 +230,7 @@ export default function DataTraining() {
               >
                 <Link href={service.link} className="block h-full group cursor-pointer">
                   <div className="h-full p-8 lg:p-10 flex flex-col">
-                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                    <h3 className="nx-h3 text-charcoal mb-4 leading-[1.25] group-hover:text-primary transition-colors">
                       {service.title}
                     </h3>
                     <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
@@ -250,7 +248,7 @@ export default function DataTraining() {
       </section>
 
       {/* SLOT 4 — White Outcome / Real Results stat cluster */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -259,12 +257,11 @@ export default function DataTraining() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Our Experience & Impact
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               Measurable outcomes from training programs in the wild.
             </h3>
@@ -284,8 +281,7 @@ export default function DataTraining() {
               >
                 {/* TODO: replace with real stat */}
                 <div
-                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
-                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                  className="text-[2.75rem] md:text-[3.5rem] text-charcoal font-bold tracking-[-0.02em] mb-5"
                 >
                   {item.stat}
                 </div>
@@ -299,7 +295,7 @@ export default function DataTraining() {
       </section>
 
       {/* SLOT 5 — Light grey Approach / Methodology framework */}
-      <section className="bg-grey py-24 md:py-32">
+      <section className="bg-grey nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -308,21 +304,20 @@ export default function DataTraining() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               How We Think About It
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               The Literacy-to-Outcomes Framework
             </h3>
-            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+            <p className="nx-lead text-charcoal/80 max-w-[60ch] mt-6">
               Four integrated phases that move data training from check-the-box compliance to compounding capability.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {approach.map((step, i) => (
               <motion.div
                 key={i}
@@ -355,7 +350,7 @@ export default function DataTraining() {
       </section>
 
       {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
-      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+      <section className="bg-charcoal text-white nx-section">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -363,20 +358,19 @@ export default function DataTraining() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+            <span className="block nx-eyebrow text-white/70 mb-6">
               The Outcome
             </span>
             <h2
-              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-white mb-8"
             >
               Data fluency, finally compounding. NexDyne clients have tripled self-service adoption, freed central data teams from ad-hoc reporting, and built executive teams who can interrogate the dashboards rather than nod at them.
             </h2>
-            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+            <p className="nx-lead text-white/85 max-w-[60ch] mb-8">
               We've delivered programs across financial services, healthcare, manufacturing, and the public sector — treating curriculum, application, and measurement as one continuous design problem rather than three separate vendors.
             </p>
             <Link href="/cases">
-              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+              <span className="inline-flex items-center gap-2 bg-primary text-white text-[13px] font-semibold uppercase tracking-[0.1em] px-7 py-4 hover:bg-primary-hover transition-colors cursor-pointer">
                 See How We Help Leaders Win
               </span>
             </Link>
@@ -385,7 +379,7 @@ export default function DataTraining() {
       </section>
 
       {/* SLOT 7 — White Case studies / proof */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -394,12 +388,11 @@ export default function DataTraining() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Client Results
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               Literacy, proved in outcomes.
             </h3>
@@ -428,7 +421,7 @@ export default function DataTraining() {
                         {result.industry}
                       </span>
                       {/* TODO: replace with real stat */}
-                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                      <h3 className="nx-h3 text-charcoal leading-[1.25] mb-4 group-hover:text-primary transition-colors">
                         {result.title}
                       </h3>
                       <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
@@ -455,7 +448,7 @@ export default function DataTraining() {
       </section>
 
       {/* SLOT 8 — White Related capabilities / cross-sell */}
-      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+      <section className="bg-white nx-section border-t border-charcoal/10">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -464,18 +457,17 @@ export default function DataTraining() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Related Offerings
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               Adjacent capabilities for a complete data culture.
             </h3>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {relatedOfferings.map((offering, i) => (
               <motion.div
                 key={i}
@@ -487,7 +479,7 @@ export default function DataTraining() {
               >
                 <Link href={offering.link} className="block h-full group cursor-pointer">
                   <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
-                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                    <h3 className="nx-h3 text-charcoal leading-[1.25] group-hover:text-primary transition-colors">
                       {offering.title}
                     </h3>
                     <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
@@ -502,7 +494,7 @@ export default function DataTraining() {
       </section>
 
       {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
-      <section className="bg-charcoal text-white py-24 md:py-32">
+      <section className="bg-charcoal text-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
@@ -512,16 +504,15 @@ export default function DataTraining() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                <span className="block nx-eyebrow text-white/70 mb-5">
                   Ready to Talk?
                 </span>
                 <h2
-                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
-                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                  className="nx-h2 text-white mb-10"
                 >
                   Bring our data training team into your next capability conversation.
                 </h2>
-                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                <p className="nx-lead text-white/80 mb-6 max-w-[52ch]">
                   I want to talk to your experts in:
                 </p>
                 <Select
@@ -551,7 +542,7 @@ export default function DataTraining() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
-                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                <p className="nx-lead text-white/80 mb-8 max-w-[52ch]">
                   We work with leaders ready to invest in their people — turning data infrastructure into data culture, one cohort at a time.
                 </p>
                 <div className="space-y-5">

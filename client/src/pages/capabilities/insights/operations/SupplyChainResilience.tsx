@@ -27,7 +27,7 @@ export default function SupplyChainResilience() {
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 leading-tight eb-garamond">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 leading-tight">
             Building Supply Chain Resilience Without Breaking the Bank
           </h1>
           
@@ -49,7 +49,7 @@ export default function SupplyChainResilience() {
           <div className="flex flex-wrap items-center justify-between gap-6">
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-gray-900 flex items-center justify-center text-white font-semibold">
+                <div className="w-12 h-12 rounded-full bg-charcoal flex items-center justify-center text-white font-semibold">
                   MW
                 </div>
                 <div>
@@ -58,7 +58,7 @@ export default function SupplyChainResilience() {
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-white font-semibold">
+                <div className="w-12 h-12 rounded-full bg-charcoal flex items-center justify-center text-white font-semibold">
                   EP
                 </div>
                 <div>
@@ -83,11 +83,11 @@ export default function SupplyChainResilience() {
       <article className="py-16">
         <div className="container max-w-3xl">
           <div className="prose prose-lg max-w-none">
-            <p className="text-xl text-charcoal/80 leading-relaxed mb-8 ">
+            <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
               The past few years have taught every company the importance of supply chain resilience. But for mid-size companies, building resilience often seems like a luxury—something that requires the deep pockets and sophisticated systems of larger enterprises. This doesn't have to be the case.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 eb-garamond">The Resilience Imperative</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">The Resilience Imperative</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Supply chain disruptions are no longer rare events. Our analysis shows that mid-size companies experience an average of 4-6 significant supply disruptions per year, each costing 2-5% of annual revenue in lost sales, expedited shipping, and customer penalties.
@@ -97,7 +97,7 @@ export default function SupplyChainResilience() {
               The companies that weather these disruptions best aren't necessarily those with the most inventory or the most suppliers. They're the ones with the best visibility, the fastest response capabilities, and the strongest relationships across their supply network.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 eb-garamond">Five Pillars of Cost-Effective Resilience</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Five Pillars of Cost-Effective Resilience</h2>
             
             <h3 className="text-2xl font-bold text-charcoal mt-10 mb-4">1. Visibility Before Inventory</h3>
             
@@ -173,7 +173,7 @@ export default function SupplyChainResilience() {
               Practice these playbooks through tabletop exercises. The learning from simulation is invaluable when real disruptions occur.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 eb-garamond">Technology Enablers</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Technology Enablers</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Several technologies can accelerate resilience building without massive investment:
@@ -191,7 +191,7 @@ export default function SupplyChainResilience() {
               <strong>Digital supplier networks:</strong> Platforms that connect buyers and suppliers enable faster identification of alternative sources when disruptions occur.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 eb-garamond">Getting Started</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Getting Started</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Building resilience is a journey, not a project. Start with these immediate actions:
@@ -223,7 +223,7 @@ export default function SupplyChainResilience() {
       {/* Related Insights */}
       <section className="py-16 bg-subtle">
         <div className="container max-w-6xl">
-          <h2 className="text-2xl font-bold text-charcoal mb-8 eb-garamond">Related Insights</h2>
+          <h2 className="text-2xl font-bold text-charcoal mb-8">Related Insights</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             <Link href="/insights/generative-supply-chain" className="group">
@@ -268,12 +268,12 @@ export default function SupplyChainResilience() {
       {/* CTA Section */}
       <section className="py-16 bg-white">
         <div className="container max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-charcoal mb-4 eb-garamond">Ready to Strengthen Your Supply Chain?</h2>
+          <h2 className="text-3xl font-bold text-charcoal mb-4">Ready to Strengthen Your Supply Chain?</h2>
           <p className="text-lg text-muted-foreground mb-8">
             Our experts can help you build resilience tailored to your specific supply chain challenges.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-4 bg-primary text-white font-semibold hover:bg-base transition-colors">
+            <button className="px-8 py-4 bg-primary text-white font-semibold hover:bg-charcoal transition-colors">
               Schedule a Consultation
             </button>
           </Link>

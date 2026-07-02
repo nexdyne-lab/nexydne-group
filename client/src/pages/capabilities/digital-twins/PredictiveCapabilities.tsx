@@ -15,7 +15,7 @@ export default function PredictiveCapabilities() {
       serviceName="Predictive Capabilities"
       serviceSlug="predictive-capabilities"
       heroSubtitle="Apply AI and machine learning to predict equipment failures, quality issues, and performance degradation before they occur. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-digital-twins.2f1e7c12.jpg"
+      heroImage="/blog-digital-transformation.a3f57989.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Predictive Capabilities engagements delivered" },
@@ -68,7 +68,7 @@ export default function PredictiveCapabilities() {
           title: "Transforming clinical workflow at a leading academic medical center",
           industry: "Healthcare",
           metric: "40%",
-          image: "/case-hospital-clinical.401c96db.jpg",
+          image: "/case-clinical-workflow.ca226f80.jpg",
         },
       ]}
       relatedServices={[

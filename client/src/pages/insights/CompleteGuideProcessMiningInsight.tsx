@@ -35,7 +35,7 @@ export default function CompleteGuideProcessMiningInsight() {
               <span className="text-primary text-sm font-semibold tracking-wider uppercase mb-4 block">
                 Operations
               </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-3 text-charcoal ">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-3 text-charcoal">
                 The Complete Guide to Process Mining
               </h1>
               <p className="text-xl text-charcoal/70 leading-relaxed mb-8">
@@ -100,7 +100,7 @@ export default function CompleteGuideProcessMiningInsight() {
                 Every organization has processes—sequences of activities that transform inputs into outputs. But few organizations truly understand how their processes actually execute. Process mining changes that by using data to reveal the reality of process execution.
               </p>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">What is Process Mining?</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">What is Process Mining?</h2>
               
               <p className="text-charcoal/80 leading-relaxed mb-6">
                 Process mining is a family of techniques that extract knowledge from event logs recorded by information systems. By analyzing these digital footprints, process mining can automatically discover process models, check conformance to expected behavior, and identify opportunities for improvement.
@@ -137,7 +137,7 @@ export default function CompleteGuideProcessMiningInsight() {
                 ))}
               </div>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">How Process Mining Works</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">How Process Mining Works</h2>
 
               <p className="text-charcoal/80 leading-relaxed mb-6">
                 Process mining relies on event logs—records of activities that occur within information systems. Every time someone creates an order, approves a request, or completes a task, the system records an event with a timestamp, activity name, and case identifier.
@@ -174,7 +174,7 @@ export default function CompleteGuideProcessMiningInsight() {
                     }
                   ].map((item, i) => (
                     <div key={i} className="flex gap-4 bg-subtle p-5 rounded-lg">
-                      <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">
+                      <div className="w-10 h-10 bg-primary text-charcoal rounded-full flex items-center justify-center font-bold flex-shrink-0">
                         {item.step}
                       </div>
                       <div>
@@ -193,7 +193,7 @@ export default function CompleteGuideProcessMiningInsight() {
                 </p>
               </blockquote>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">Key Use Cases</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Key Use Cases</h2>
 
               <h3 className="text-xl font-bold text-charcoal mt-8 mb-4">Order-to-Cash Optimization</h3>
               <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -216,7 +216,7 @@ export default function CompleteGuideProcessMiningInsight() {
               </p>
 
               {/* Benefits Box */}
-              <div className="bg-base text-white p-8 rounded-lg my-10 not-prose">
+              <div className="bg-background text-charcoal p-8 rounded-lg my-10 not-prose">
                 <h4 className="text-xl font-bold mb-6">Typical Process Mining Benefits</h4>
                 <div className="grid grid-cols-2 gap-6">
                   {[
@@ -227,13 +227,13 @@ export default function CompleteGuideProcessMiningInsight() {
                   ].map((item, i) => (
                     <div key={i}>
                       <div className="text-3xl font-bold text-secondary">{item.stat}</div>
-                      <div className="text-sm text-white/70 mt-1">{item.desc}</div>
+                      <div className="text-sm text-muted-foreground mt-1">{item.desc}</div>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">Implementation Guide</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Implementation Guide</h2>
 
               <p className="text-charcoal/80 leading-relaxed mb-6">
                 Successfully implementing process mining requires attention to both technical and organizational factors. Here's a structured approach:
@@ -264,7 +264,7 @@ export default function CompleteGuideProcessMiningInsight() {
                 Translate insights into action. This might include process redesign, automation opportunities, policy changes, or training needs. Prioritize improvements based on impact and feasibility. Measure results and iterate.
               </p>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">Best Practices</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Best Practices</h2>
 
               <div className="space-y-4 my-8 not-prose">
                 {[
@@ -283,7 +283,7 @@ export default function CompleteGuideProcessMiningInsight() {
                 ))}
               </div>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">Getting Started</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Getting Started</h2>
 
               <p className="text-charcoal/80 leading-relaxed mb-6">
                 Process mining has matured from an academic concept to a proven enterprise capability. Leading organizations across industries are using it to drive operational excellence, improve customer experience, and accelerate digital transformation.
@@ -296,7 +296,7 @@ export default function CompleteGuideProcessMiningInsight() {
               {/* Author Box */}
               <div className="border-t border-border pt-8 mt-12 not-prose">
                 <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 bg-base rounded-full flex items-center justify-center text-white font-bold text-xl">
+                  <div className="w-16 h-16 bg-background rounded-full flex items-center justify-center text-charcoal font-bold text-xl">
                     NO
                   </div>
                   <div>
@@ -318,10 +318,10 @@ export default function CompleteGuideProcessMiningInsight() {
                   Share this guide
                 </h4>
                 <div className="flex gap-3">
-                  <button className="w-10 h-10 bg-primary text-white rounded flex items-center justify-center hover:bg-base transition-colors">
+                  <button className="w-10 h-10 bg-primary text-charcoal rounded flex items-center justify-center hover:bg-charcoal transition-colors">
                     <Linkedin className="w-5 h-5" />
                   </button>
-                  <button className="w-10 h-10 bg-[#1DA1F2] text-white rounded flex items-center justify-center hover:bg-base transition-colors">
+                  <button className="w-10 h-10 bg-[#1DA1F2] text-charcoal rounded flex items-center justify-center hover:bg-charcoal transition-colors">
                     <Twitter className="w-5 h-5" />
                   </button>
                 </div>
@@ -378,13 +378,13 @@ export default function CompleteGuideProcessMiningInsight() {
               </div>
 
               {/* CTA */}
-              <div className="bg-base p-6 rounded-lg text-white">
+              <div className="bg-background p-6 rounded-lg text-charcoal">
                 <h4 className="font-bold mb-3">Ready to mine your processes?</h4>
-                <p className="text-sm text-white/70 mb-4">
+                <p className="text-sm text-muted-foreground mb-4">
                   Let's discuss how process mining can optimize your operations.
                 </p>
                 <Link href="/contact">
-                  <button className="w-full py-3 bg-secondary text-white rounded font-semibold text-sm hover:bg-primary transition-colors">
+                  <button className="w-full py-3 bg-secondary text-charcoal rounded font-semibold text-sm hover:bg-primary transition-colors">
                     Contact Us
                   </button>
                 </Link>
@@ -398,7 +398,7 @@ export default function CompleteGuideProcessMiningInsight() {
       <section className="py-16 md:py-20 bg-subtle">
         <div className="container px-4 md:px-8 lg:px-12">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-8 ">More Insights</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-8">More Insights</h2>
             
             <div className="grid md:grid-cols-3 gap-8">
               {[

@@ -20,41 +20,41 @@ export default function HealthcareIndustry() {
       challenges={[
         {
           title: "Volume to value pressure",
-          body: "Reimbursement is shifting toward outcomes-based contracts faster than most operating models can absorb. Leaders need predictive risk stratification, care-coordination workflows, and the data lineage to prove quality — without slowing the front line."
+          body: "Reimbursement is shifting to outcomes faster than most operating models can absorb — leaders need predictive risk stratification and provable quality."
         },
         {
           title: "Clinician burnout and capacity",
-          body: "Staff shortages, documentation burden, and prior-auth volume are eroding clinical capacity. AI-assisted documentation, intelligent scheduling, and workflow redesign can return hours to clinicians and protect the care experience."
+          body: "Staff shortages and documentation burden are eroding capacity; AI-assisted documentation and workflow redesign return hours to clinicians."
         },
         {
           title: "Fragmented patient data",
-          body: "Most health systems still struggle to unify EHR, claims, social-determinants, and operational data into a single view. That gap blocks personalization, population health, and credible AI deployment at scale."
+          body: "Most systems still can't unify EHR, claims, and operational data — and that gap blocks personalization and credible AI at scale."
         },
         {
           title: "Margin compression",
-          body: "Labor inflation, payer pressure, and capital constraints are squeezing operating margins. Revenue-cycle automation, denials management, and supply-cost optimization are the fastest paths to durable improvement."
+          body: "Labor inflation and payer pressure are squeezing margins; revenue-cycle automation and denials management are the fastest durable fixes."
         }
       ]}
       capabilities={[
         {
           name: "Operations Excellence",
           href: "/capabilities/operations-excellence",
-          blurb: "Redesign clinical and back-office operations with AI-assisted documentation, intelligent scheduling, and revenue-cycle automation that frees capacity for care."
+          blurb: "AI-assisted documentation, intelligent scheduling, and revenue-cycle automation that free capacity for care."
         },
         {
           name: "Data Transformation",
           href: "/capabilities/data-transformation",
-          blurb: "Unify EHR, claims, and operational data into a single longitudinal record that powers population-health, personalization, and credible clinical AI."
+          blurb: "Unify EHR, claims, and operational data into one longitudinal record that powers population health and clinical AI."
         },
         {
           name: "Customer Intelligence",
           href: "/capabilities/customer-intelligence",
-          blurb: "Engineer the patient and member experience — from digital front door to post-visit engagement — using behavioral data and journey-level personalization."
+          blurb: "Engineer the patient and member experience — digital front door to post-visit — with journey-level personalization."
         },
         {
           name: "Risk & Resilience",
           href: "/capabilities/risk-resilience",
-          blurb: "Stand up the model-risk, clinical-AI governance, and cyber-resilience controls regulators and accreditors increasingly expect at scale."
+          blurb: "The model-risk, clinical-AI governance, and cyber-resilience controls regulators and accreditors increasingly expect."
         }
       ]}
       experienceStats={[

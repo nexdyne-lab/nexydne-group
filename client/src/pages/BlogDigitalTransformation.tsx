@@ -17,7 +17,7 @@ export default function BlogDigitalTransformation() {
       ]} />
       
       {/* Hero Section - Split layout */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-off-white to-primary">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
             <div>
@@ -57,7 +57,7 @@ export default function BlogDigitalTransformation() {
           {/* Sign 1 */}
           <div className="mb-8 sm:mb-12 md:mb-16">
             <div className="flex items-start gap-4 sm:p-5 md:p-6 mb-6">
-              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-slate-700 to-slate-600 flex items-center justify-center text-white text-2xl font-bold">
+              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-charcoal to-charcoal flex items-center justify-center text-white text-2xl font-bold">
                 1
               </div>
               <div>
@@ -69,7 +69,7 @@ export default function BlogDigitalTransformation() {
                 </p>
               </div>
             </div>
-            <div className="ml-22 bg-blue-50 border-l-4 border-primary p-4 sm:p-5 md:p-6">
+            <div className="ml-22 bg-primary/5 border-l-4 border-primary p-4 sm:p-5 md:p-6">
               <p className="font-semibold text-charcoal mb-2">What to look for:</p>
               <ul className="space-y-2 text-charcoal/80">
                 <li>• Staff working evenings or weekends to keep up with routine tasks</li>
@@ -83,7 +83,7 @@ export default function BlogDigitalTransformation() {
           {/* Sign 2 */}
           <div className="mb-8 sm:mb-12 md:mb-16">
             <div className="flex items-start gap-4 sm:p-5 md:p-6 mb-6">
-              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-slate-700 to-slate-600 flex items-center justify-center text-white text-2xl font-bold">
+              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-charcoal to-charcoal flex items-center justify-center text-white text-2xl font-bold">
                 2
               </div>
               <div>
@@ -95,7 +95,7 @@ export default function BlogDigitalTransformation() {
                 </p>
               </div>
             </div>
-            <div className="ml-22 bg-blue-50 border-l-4 border-primary p-4 sm:p-5 md:p-6">
+            <div className="ml-22 bg-primary/5 border-l-4 border-primary p-4 sm:p-5 md:p-6">
               <p className="font-semibold text-charcoal mb-2">What to look for:</p>
               <ul className="space-y-2 text-charcoal/80">
                 <li>• Revenue growth limited by staff capacity, not market demand</li>
@@ -109,7 +109,7 @@ export default function BlogDigitalTransformation() {
           {/* Sign 3 */}
           <div className="mb-8 sm:mb-12 md:mb-16">
             <div className="flex items-start gap-4 sm:p-5 md:p-6 mb-6">
-              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-slate-700 to-slate-600 flex items-center justify-center text-white text-2xl font-bold">
+              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-charcoal to-charcoal flex items-center justify-center text-white text-2xl font-bold">
                 3
               </div>
               <div>
@@ -121,7 +121,7 @@ export default function BlogDigitalTransformation() {
                 </p>
               </div>
             </div>
-            <div className="ml-22 bg-blue-50 border-l-4 border-primary p-4 sm:p-5 md:p-6">
+            <div className="ml-22 bg-primary/5 border-l-4 border-primary p-4 sm:p-5 md:p-6">
               <p className="font-semibold text-charcoal mb-2">What to look for:</p>
               <ul className="space-y-2 text-charcoal/80">
                 <li>• Significant time spent on quality control and rework</li>
@@ -135,7 +135,7 @@ export default function BlogDigitalTransformation() {
           {/* Sign 4 */}
           <div className="mb-8 sm:mb-12 md:mb-16">
             <div className="flex items-start gap-4 sm:p-5 md:p-6 mb-6">
-              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-slate-700 to-slate-600 flex items-center justify-center text-white text-2xl font-bold">
+              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-charcoal to-charcoal flex items-center justify-center text-white text-2xl font-bold">
                 4
               </div>
               <div>
@@ -147,7 +147,7 @@ export default function BlogDigitalTransformation() {
                 </p>
               </div>
             </div>
-            <div className="ml-22 bg-blue-50 border-l-4 border-primary p-4 sm:p-5 md:p-6">
+            <div className="ml-22 bg-primary/5 border-l-4 border-primary p-4 sm:p-5 md:p-6">
               <p className="font-semibold text-charcoal mb-2">What to look for:</p>
               <ul className="space-y-2 text-charcoal/80">
                 <li>• Monthly reporting takes days to produce</li>
@@ -161,7 +161,7 @@ export default function BlogDigitalTransformation() {
           {/* Sign 5 */}
           <div className="mb-8 sm:mb-12 md:mb-16">
             <div className="flex items-start gap-4 sm:p-5 md:p-6 mb-6">
-              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-slate-700 to-slate-600 flex items-center justify-center text-white text-2xl font-bold">
+              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-charcoal to-charcoal flex items-center justify-center text-white text-2xl font-bold">
                 5
               </div>
               <div>
@@ -173,7 +173,7 @@ export default function BlogDigitalTransformation() {
                 </p>
               </div>
             </div>
-            <div className="ml-22 bg-blue-50 border-l-4 border-primary p-4 sm:p-5 md:p-6">
+            <div className="ml-22 bg-primary/5 border-l-4 border-primary p-4 sm:p-5 md:p-6">
               <p className="font-semibold text-charcoal mb-2">What to look for:</p>
               <ul className="space-y-2 text-charcoal/80">
                 <li>• Losing competitive bids on price or timeline</li>
@@ -185,7 +185,7 @@ export default function BlogDigitalTransformation() {
           </div>
 
           {/* Conclusion */}
-          <div className="bg-gradient-to-br from-gray-900 to-slate-800 text-white p-6 sm:p-6 sm:p-8 md:p-12 rounded-lg mt-16">
+          <div className="bg-gradient-to-br from-charcoal to-charcoal text-white p-6 sm:p-6 sm:p-8 md:p-12 rounded-lg mt-16">
             <h2 className="text-3xl font-bold mb-6">What if you checked multiple boxes?</h2>
             <p className="text-lg leading-relaxed mb-6">
               If you identified with three or more of these indicators, your business is likely ready for automation. The good news is that you don't need to transform everything at once. The most successful implementations start with a focused pilot project that delivers measurable results in 90-120 days, then expand based on proven value.
@@ -193,7 +193,7 @@ export default function BlogDigitalTransformation() {
             <p className="text-lg leading-relaxed mb-5 sm:mb-6 md:mb-8">
               We recommend starting with a complimentary automation readiness assessment. Our team will analyze your current processes, identify high-impact opportunities, and provide a realistic roadmap with expected ROI for each phase.
             </p>
-            <a href="/contact" className="inline-block bg-cyan-400 text-charcoal px-8 py-3 rounded-md font-semibold hover:bg-cyan-300 transition-colors">
+            <a href="/contact" className="inline-block bg-primary text-charcoal px-8 py-3 rounded-md font-semibold hover:bg-primary transition-colors">
               Schedule Your Assessment
             </a>
           </div>
@@ -230,7 +230,7 @@ export default function BlogDigitalTransformation() {
               <div className="bg-white border border-border rounded-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
-                    src="/case-healthcare.jpg"
+                    src="/case-healthcare-facility.9a066252.jpg"
                     alt="Healthcare case study"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />

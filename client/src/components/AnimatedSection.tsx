@@ -41,7 +41,7 @@ export function AnimatedSection({
     <section
       ref={ref as any}
       className={cn(
-        "transition-all ease-out",
+        "transition ease-out",
         animationClasses[animation],
         isVisible && visibleClasses[animation],
         className

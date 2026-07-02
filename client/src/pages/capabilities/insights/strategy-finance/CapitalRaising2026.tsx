@@ -29,28 +29,28 @@ export default function CapitalRaising2026() {
         The capital markets have shifted significantly over the past two years. For mid-size companies seeking growth capital, understanding these changes is essential for successful fundraising.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         The Current Landscape
       </h2>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
         After a period of abundant capital and elevated valuations, the market has normalized. Investors are more selective, due diligence is more rigorous, and valuations more closely reflect fundamental performance. For quality companies, however, capital remains available.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         What Investors Want in 2026
       </h2>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
         Today's investors prioritize profitability, capital efficiency, and sustainable growth over growth at any cost. Companies that can demonstrate strong unit economics, clear paths to profitability, and defensible market positions are attracting premium valuations.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         Preparing for a Successful Raise
       </h2>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
         Successful fundraising requires preparation that begins 12-18 months before going to market. This includes cleaning up financials, building a compelling narrative, and establishing relationships with potential investors.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         Key Takeaways
       </h2>
       <ul className="list-disc pl-6 text-charcoal/80 space-y-3 mb-8">

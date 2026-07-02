@@ -24,21 +24,21 @@ export function HeadlessCommerceGuide() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 overflow-hidden bg-base">
+      <section className="relative pt-32 pb-24 overflow-hidden bg-background">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center" />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base/90 via-base/80 to-base" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/80 to-background" />
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl">
             <Breadcrumbs className="mb-8" />
             <div className="flex items-center gap-4 text-sm text-secondary font-semibold mb-6">
               <span className="uppercase tracking-wider">Architecture</span>
-              <span className="w-1 h-1 rounded-full bg-slate-500" />
+              <span className="w-1 h-1 rounded-full bg-charcoal" />
               <span>10 min read</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-charcoal mb-4 leading-tight">
               The Engineering Case for <br/>
               <span className="text-secondary">Headless Commerce</span>
             </h1>
@@ -68,7 +68,7 @@ export function HeadlessCommerceGuide() {
             <div className="md:col-span-3 hidden md:block">
               <div className="sticky top-32">
                 <h4 className="font-bold text-charcoal mb-4">Table of Contents</h4>
-                <ul className="space-y-3 text-sm text-muted-foreground border-l border-slate-200 pl-4">
+                <ul className="space-y-3 text-sm text-muted-foreground border-l border-border pl-4">
                   <li className="hover:text-primary cursor-pointer">The Monolith Problem</li>
                   <li className="hover:text-primary cursor-pointer">What is Headless?</li>
                   <li className="hover:text-primary cursor-pointer">Key Benefits</li>
@@ -108,7 +108,7 @@ export function HeadlessCommerceGuide() {
                 <p>
                   Headless commerce separates the frontend presentation layer from the backend commerce functionality. The two communicate via APIs. This decoupling allows you to:
                 </p>
-                <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 my-8">
+                <div className="bg-off-white p-6 rounded-xl border border-border my-8">
                   <h4 className="font-bold text-charcoal mb-4 flex items-center gap-2">
                     <Layers className="w-5 h-5 text-primary" />
                     The Headless Architecture
@@ -120,7 +120,7 @@ export function HeadlessCommerceGuide() {
                     </div>
                     <div className="flex items-center justify-center">
                       <ArrowRight className="w-6 h-6 text-muted-foreground/70" />
-                      <span className="mx-2 font-mono text-xs bg-slate-200 px-2 py-1 rounded">API</span>
+                      <span className="mx-2 font-mono text-xs bg-grey px-2 py-1 rounded">API</span>
                       <ArrowRight className="w-6 h-6 text-muted-foreground/70" />
                     </div>
                     <div className="p-4 bg-white rounded-lg shadow-sm">
@@ -160,13 +160,13 @@ export function HeadlessCommerceGuide() {
                   <li>Your design team feels limited by your current platform's templates.</li>
                 </ul>
 
-                <div className="bg-blue-50 p-8 rounded-2xl mt-12">
+                <div className="bg-primary/5 p-8 rounded-2xl mt-12">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Ready to Decouple?</h3>
                   <p className="text-muted-foreground mb-6">
                     Migrating to headless is a significant engineering undertaking. Our team specializes in these complex transitions, ensuring zero downtime and data integrity.
                   </p>
                   <Link href="/contact">
-                    <button className="px-6 py-3 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transition-colors">
+                    <button className="px-6 py-3 bg-primary text-charcoal font-bold rounded-full hover:bg-primary-hover transition-colors">
                       Schedule a Consultation
                     </button>
                   </Link>

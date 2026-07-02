@@ -12,7 +12,7 @@ export default function DevOpsAutomation() {
       serviceName="DevOps Automation"
       serviceSlug="devops-automation"
       heroSubtitle="CI/CD, infrastructure as code, deployment automation, and observability — engineered to move engineering velocity from quarterly windows to multiple safe deploys a day."
-      heroImage="/enterprise-transformation-hero.jpg"
+      heroImage="/solution-enterprise-transformation.0a0f2624.webp"
       experienceStats={[
         { number: "120+", label: "CI/CD pipelines designed and deployed across enterprise engineering teams" },
         { number: "6.8x", label: "Increase in deployment frequency after a typical DevOps engagement" },

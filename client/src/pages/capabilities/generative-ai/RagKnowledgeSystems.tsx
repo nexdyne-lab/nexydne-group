@@ -15,7 +15,7 @@ export default function RagKnowledgeSystems() {
       serviceName="RAG & Knowledge Systems"
       serviceSlug="rag-knowledge-systems"
       heroSubtitle="Implement retrieval-augmented generation systems that ground AI responses in your proprietary data, reducing hallucinations and improving accuracy. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-generative-ai.7ab8e23c.jpg"
+      heroImage="/blog-ai-agents.eba3d75f.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "RAG & Knowledge Systems engagements delivered" },

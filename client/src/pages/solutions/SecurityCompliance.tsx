@@ -12,7 +12,7 @@ export default function SecurityCompliance() {
       serviceName="Security & Compliance"
       serviceSlug="security-compliance"
       heroSubtitle="Compliance is a control discipline, not an audit event. We assess the posture, sequence the framework roadmap, design the architecture, implement the controls with measurable evidence streams, and embed the assurance program that runs always-on."
-      heroImage="/enterprise-transformation-hero.jpg"
+      heroImage="/solution-enterprise-transformation.0a0f2624.webp"
       experienceStats={[
         { number: "40-70%", label: "Annual audit effort cut by embedding controls in engineering systems" },
         { number: "Always-on", label: "Evidence is queryable rather than collected" },

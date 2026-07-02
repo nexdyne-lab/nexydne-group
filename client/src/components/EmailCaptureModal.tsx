@@ -177,7 +177,7 @@ export function EmailCaptureModal({
                     {/* Email - Required */}
                     <div>
                       <label className="block text-sm font-medium text-charcoal mb-1.5">
-                        Work Email <span className="text-destructive">*</span>
+                        Work Email <span className="text-primary">*</span>
                       </label>
                       <div className="relative">
                         <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-charcoal/40" />
@@ -187,13 +187,13 @@ export function EmailCaptureModal({
                           value={formData.email}
                           onChange={handleInputChange}
                           placeholder="you@company.com"
-                          className={`w-full pl-10 pr-4 py-3 border rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all ${
-                            errors.email ? 'border-red-500' : 'border-base/20'
+                          className={`w-full pl-10 pr-4 py-3 border rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition ${
+                            errors.email ? 'border-primary' : 'border-base/20'
                           }`}
                         />
                       </div>
                       {errors.email && (
-                        <p className="text-destructive text-sm mt-1">{errors.email}</p>
+                        <p className="text-primary text-sm mt-1">{errors.email}</p>
                       )}
                     </div>
 
@@ -211,7 +211,7 @@ export function EmailCaptureModal({
                             value={formData.firstName}
                             onChange={handleInputChange}
                             placeholder="John"
-                            className="w-full pl-10 pr-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all"
+                            className="w-full pl-10 pr-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition"
                           />
                         </div>
                       </div>
@@ -225,7 +225,7 @@ export function EmailCaptureModal({
                           value={formData.lastName}
                           onChange={handleInputChange}
                           placeholder="Smith"
-                          className="w-full px-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all"
+                          className="w-full px-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition"
                         />
                       </div>
                     </div>
@@ -243,7 +243,7 @@ export function EmailCaptureModal({
                           value={formData.company}
                           onChange={handleInputChange}
                           placeholder="Acme Inc."
-                          className="w-full pl-10 pr-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all"
+                          className="w-full pl-10 pr-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition"
                         />
                       </div>
                     </div>
@@ -261,7 +261,7 @@ export function EmailCaptureModal({
                           value={formData.jobTitle}
                           onChange={handleInputChange}
                           placeholder="VP of Operations"
-                          className="w-full pl-10 pr-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all"
+                          className="w-full pl-10 pr-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition"
                         />
                       </div>
                     </div>

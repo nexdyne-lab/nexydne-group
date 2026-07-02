@@ -20,41 +20,41 @@ export default function PrivateEquityIndustry() {
       challenges={[
         {
           title: "Tech and data diligence",
-          body: "Most diligence still under-weights the cost and risk of legacy tech, data debt, and AI-readiness. A rigorous tech-and-data diligence lens can change valuation, structure, and the first 100-day plan."
+          body: "Most diligence under-weights legacy tech, data debt, and AI-readiness — a rigorous tech lens can change valuation and the 100-day plan."
         },
         {
           title: "100-day execution",
-          body: "Hold periods are compressing and value-creation plans need to start landing in the first quarter. Pre-baked operating-model, commercial, and digital playbooks are how leading funds make that real."
+          body: "Hold periods are compressing; pre-baked operating-model, commercial, and digital playbooks make value creation land in the first quarter."
         },
         {
           title: "Digital value creation",
-          body: "Cloud migration, ERP modernization, and data platforms keep showing up on PE value-creation plans — and most management teams have never run a program at that scale or pace. Operating partners need delivery muscle, not just oversight."
+          body: "Cloud, ERP, and data programs dominate value-creation plans — operating partners need delivery muscle, not just oversight."
         },
         {
           title: "Exit storytelling and proof",
-          body: "Strategic and sponsor buyers increasingly diligence digital and data maturity. Funds need to instrument the portfolio company so that the operational lift is provable, not narrated."
+          body: "Buyers increasingly diligence digital maturity; funds must instrument portfolio companies so the lift is provable, not narrated."
         }
       ]}
       capabilities={[
         {
           name: "Strategy & Growth",
           href: "/capabilities/strategy-growth",
-          blurb: "Develop and execute commercial value-creation plans across pricing, segmentation, and go-to-market that lift growth in the hold."
+          blurb: "Commercial value-creation plans across pricing, segmentation, and go-to-market that lift growth in the hold."
         },
         {
           name: "Operations Excellence",
           href: "/capabilities/operations-excellence",
-          blurb: "Drive cost, working-capital, and operating-model improvements across the portfolio with delivery rigor tuned to hold-period economics."
+          blurb: "Cost, working-capital, and operating-model improvement with delivery rigor tuned to hold-period economics."
         },
         {
           name: "Data Transformation",
           href: "/capabilities/data-transformation",
-          blurb: "Stand up the data foundations and AI use cases that lift EBITDA in the hold and survive diligence at exit."
+          blurb: "The data foundations and AI use cases that lift EBITDA in the hold and survive diligence at exit."
         },
         {
           name: "Risk & Resilience",
           href: "/capabilities/risk-resilience",
-          blurb: "Diligence and remediate cyber, regulatory, and operational risk so deals close cleanly and exit value is not eroded by surprise."
+          blurb: "Diligence and remediate cyber, regulatory, and operational risk so deals close cleanly and exit value holds."
         }
       ]}
       experienceStats={[

@@ -14,7 +14,7 @@ export default function LegacyModernization() {
       serviceName="Legacy Modernization"
       serviceSlug="legacy-modernization"
       heroSubtitle="Legacy systems do not get modernized by ambition. They get modernized by a 6Rs decision that survives the steering committee, a strangler-fig execution model that protects the operating business, and a disciplined sunset plan that actually turns the old estate off."
-      heroImage="/enterprise-transformation-hero.jpg"
+      heroImage="/solution-enterprise-transformation.0a0f2624.webp"
       experienceStats={[
         { number: "60-80%", label: "Of in-scope legacy footprint retired within 24 months" },
         { number: "25-40%", label: "Annual run-cost reduction once sunset schedule completes" },

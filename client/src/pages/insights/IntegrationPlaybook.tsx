@@ -12,7 +12,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export default function IntegrationPlaybook() {
   return (
-    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="The 100-Day Integration Playbook for Successful M&A | NexDyne Technologies" 
         description="The first 100 days after acquisition close determine whether you'll capture the value you paid for. A structured playbook ensures nothing critical falls through the cracks."
@@ -24,7 +24,7 @@ export default function IntegrationPlaybook() {
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background"></div>
         
         <div className="container relative z-10 px-4 md:px-12 max-w-4xl">
           <Link href="/insights" className="inline-flex items-center gap-2 text-primary hover:text-primary/80 mb-8 transition-colors">
@@ -38,15 +38,15 @@ export default function IntegrationPlaybook() {
             transition={{ duration: 0.8 }}
           >
             <div className="flex flex-wrap gap-4 mb-6">
-              <span className="inline-flex items-center gap-2 text-sm text-white/60">
+              <span className="inline-flex items-center gap-2 text-sm text-muted-foreground">
                 <Tag className="w-4 h-4 text-primary" />
                 M&A Strategy
               </span>
-              <span className="inline-flex items-center gap-2 text-sm text-white/60">
+              <span className="inline-flex items-center gap-2 text-sm text-muted-foreground">
                 <Calendar className="w-4 h-4 text-primary" />
                 December 10, 2025
               </span>
-              <span className="inline-flex items-center gap-2 text-sm text-white/60">
+              <span className="inline-flex items-center gap-2 text-sm text-muted-foreground">
                 <Clock className="w-4 h-4 text-primary" />
                 15 min read
               </span>
@@ -56,7 +56,7 @@ export default function IntegrationPlaybook() {
               The <span className="text-primary">100-Day</span> Integration Playbook for Successful M&A
             </h1>
             
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed">
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
               The first 100 days after acquisition close determine whether you'll capture the value you paid for or watch it evaporate through poor execution. A structured playbook ensures nothing critical falls through the cracks.
             </p>
           </motion.div>
@@ -64,7 +64,7 @@ export default function IntegrationPlaybook() {
       </section>
 
       {/* Featured Image */}
-      <div className="w-full h-96 bg-base overflow-hidden">
+      <div className="w-full h-96 bg-background overflow-hidden">
         <img 
           src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80" 
           alt="Integration Playbook" 
@@ -129,7 +129,7 @@ export default function IntegrationPlaybook() {
               Hold one-on-one meetings with all key leaders in the acquired company. Understand their perspectives on what's working, what's broken, and what opportunities exist. Visit customer sites to understand their experience and concerns. Review all major contracts, commitments, and obligations. Map current processes and systems to identify integration complexity and quick-win opportunities.
             </p>
 
-            <div className="bg-base/5 border-l-4 border-base/30 p-6 my-8 rounded-r-xl">
+            <div className="bg-charcoal/5 border-l-4 border-border p-6 my-8 rounded-r-xl">
               <h3 className="text-xl font-bold text-charcoal mb-4">30-Day Milestone Checklist</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Operational stability:</strong> No major service disruptions or customer issues</li>
@@ -218,7 +218,7 @@ export default function IntegrationPlaybook() {
               Focus first on cost synergies since they're more predictable and controllable than revenue synergies. Eliminate duplicate overhead, consolidate vendor contracts, optimize facility footprint, and streamline processes. Revenue synergies typically take longer to materialize and require more careful execution to avoid disrupting existing customer relationships.
             </p>
 
-            <div className="bg-base/5 border-l-4 border-base/30 p-6 my-8 rounded-r-xl">
+            <div className="bg-charcoal/5 border-l-4 border-border p-6 my-8 rounded-r-xl">
               <h3 className="text-xl font-bold text-charcoal mb-4">Synergy Categories and Timing</h3>
               <ul className="space-y-3 text-charcoal/80">
                 <li><strong>Quick wins (0-3 months):</strong> Vendor consolidation, duplicate elimination</li>
@@ -279,14 +279,14 @@ export default function IntegrationPlaybook() {
       </article>
 
       {/* Newsletter Subscribe */}
-      <div className="bg-base py-16 border-t border-white/10">
+      <div className="bg-background py-16 border-t border-border">
         <div className="container max-w-3xl px-4 md:px-12">
           <NewsletterSubscribe />
         </div>
       </div>
 
       {/* Related Insights */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -295,10 +295,10 @@ export default function IntegrationPlaybook() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Related Insights
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white">Continue reading</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">Continue reading</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -325,11 +325,11 @@ export default function IntegrationPlaybook() {
               >
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.category}</span>
-                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-white/60 mt-2">{item.description}</p>
-                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
+                  <p className="text-muted-foreground mt-2">{item.description}</p>
+                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-[gap]">
                     Read article <ArrowRight className="w-3 h-3" />
                   </span>
                 </Link>

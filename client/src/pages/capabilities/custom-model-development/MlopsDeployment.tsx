@@ -15,7 +15,7 @@ export default function MlopsDeployment() {
       serviceName="MLOps & Deployment"
       serviceSlug="mlops-deployment"
       heroSubtitle="Build production-grade ML infrastructure with automated training pipelines, model versioning, A/B testing, and monitoring for drift and degradation. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-custom-models.a78b22fb.jpg"
+      heroImage="/blog-data-workstation.e374b2a9.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "MLOps & Deployment engagements delivered" },
@@ -68,14 +68,14 @@ export default function MlopsDeployment() {
           title: "Scaling a fintech payment platform with AI-driven automation",
           industry: "Financial Services",
           metric: "5x",
-          image: "/case-fintech-payments.7ab8e23c.jpg",
+          image: "/case-fintech-app.5835303a.png",
         },
         {
           slug: "telehealth-platform",
           title: "Building a national telehealth platform from the ground up",
           industry: "Healthcare",
           metric: "12x",
-          image: "/case-telehealth-platform.dfdd1294.jpg",
+          image: "/case-doctor-consultation.799c1562.jpg",
         },
       ]}
       relatedServices={[

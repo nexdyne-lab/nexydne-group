@@ -14,9 +14,9 @@ export default function PsychologyOfValue() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-slate-900 text-white py-16 md:py-24">
+      <section className="bg-charcoal text-white py-16 md:py-24">
         <div className="container max-w-4xl mx-auto px-4">
-          <Link href="/capabilities/growth-marketing-sales/pricing-monetization" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 mb-8 transition-colors">
+          <Link href="/capabilities/growth-marketing-sales/pricing-monetization" className="inline-flex items-center gap-2 text-primary hover:text-primary mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Pricing & Monetization
           </Link>
@@ -50,7 +50,7 @@ export default function PsychologyOfValue() {
       <article className="py-16">
         <div className="container max-w-3xl mx-auto px-4">
           {/* Featured Image */}
-          <div className="aspect-video bg-slate-100 rounded-lg mb-12 overflow-hidden">
+          <div className="aspect-video bg-subtle rounded-lg mb-12 overflow-hidden">
             <img 
               src="/images/insight-pricing-psychology.jpg" 
               alt="Psychology of Value" 
@@ -115,22 +115,22 @@ export default function PsychologyOfValue() {
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 bg-slate-900 rounded-lg text-white">
+          <div className="mt-16 p-8 bg-charcoal rounded-lg text-white">
             <h3 className="text-2xl font-bold mb-4">Ready to rethink your pricing?</h3>
             <p className="text-muted-foreground/50 mb-6">
               Our pricing strategy experts can help you conduct a willingness-to-pay analysis and design a value-based pricing model.
             </p>
             <Link href="/contact">
-              <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors">
+              <button className="px-6 py-3 bg-primary hover:bg-primary-hover text-white rounded-lg font-semibold transition-colors">
                 Schedule a Consultation
               </button>
             </Link>
           </div>
 
           {/* Author Info */}
-          <div className="mt-12 pt-8 border-t border-slate-200">
+          <div className="mt-12 pt-8 border-t border-border">
             <div className="flex items-start gap-4">
-              <div className="w-16 h-16 bg-slate-200 rounded-full flex-shrink-0 overflow-hidden">
+              <div className="w-16 h-16 bg-grey rounded-full flex-shrink-0 overflow-hidden">
                 <img 
                   src="/images/portrait_pricing_expert.jpg" 
                   alt="Elena Rossi" 
@@ -158,7 +158,7 @@ export default function PsychologyOfValue() {
             <div className="grid md:grid-cols-2 gap-8">
               <Link href="/insights/algorithmic-pricing-smes">
                 <div className="group cursor-pointer">
-                  <div className="aspect-video bg-slate-200 rounded-lg mb-4 overflow-hidden">
+                  <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
                       src="/images/insight-algo-pricing.jpg" 
                       alt="Algorithmic Pricing" 
@@ -178,7 +178,7 @@ export default function PsychologyOfValue() {
               </Link>
               <Link href="/insights/subscription-pricing-models">
                 <div className="group cursor-pointer">
-                  <div className="aspect-video bg-slate-200 rounded-lg mb-4 overflow-hidden">
+                  <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
                       src="/images/insight-subscription-models.jpg" 
                       alt="Subscription Models" 

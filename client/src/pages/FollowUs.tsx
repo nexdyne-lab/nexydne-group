@@ -84,11 +84,11 @@ export default function FollowUs() {
                   rel="noopener noreferrer"
                   className="block group"
                 >
-                  <div className="border border-border rounded-lg p-4 sm:p-6 md:p-8 hover:border-primary hover:shadow-lg transition-all duration-300">
+                  <div className="border border-border rounded-lg p-4 sm:p-6 md:p-8 hover:border-primary hover:shadow-lg transition duration-300">
                     <div className="flex flex-col md:flex-row md:items-start gap-4 sm:p-5 md:p-6">
                       {/* Icon */}
                       <div className="flex-shrink-0">
-                        <div className="w-16 h-16 bg-base rounded-lg flex items-center justify-center group-hover:bg-primary transition-colors">
+                        <div className="w-16 h-16 bg-charcoal rounded-lg flex items-center justify-center group-hover:bg-primary transition-colors">
                           <channel.icon className="w-8 h-8 text-white" />
                         </div>
                       </div>
@@ -118,7 +118,7 @@ export default function FollowUs() {
 
                       {/* Arrow */}
                       <div className="flex-shrink-0 hidden md:block">
-                        <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-muted-foreground/50 group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                        <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-muted-foreground/50 group-hover:text-primary group-hover:translate-x-1 transition" />
                       </div>
                     </div>
                   </div>
@@ -133,7 +133,7 @@ export default function FollowUs() {
       <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="w-16 h-16 bg-base rounded-lg flex items-center justify-center mx-auto mb-6">
+            <div className="w-16 h-16 bg-charcoal rounded-lg flex items-center justify-center mx-auto mb-6">
               <Mail className="w-8 h-8 text-white" />
             </div>
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-4">
@@ -167,7 +167,7 @@ export default function FollowUs() {
                   placeholder="Company"
                   className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0077B5] focus:border-transparent"
                 />
-                <button className="w-full bg-base text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary transition-colors">
+                <button className="w-full bg-charcoal text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary transition-colors">
                   Subscribe
                 </button>
               </div>
@@ -193,10 +193,10 @@ export default function FollowUs() {
                   For press inquiries, interview requests, or media-related questions, please contact our communications team.
                 </p>
                 <a 
-                  href="mailto:media@nexdyne.com" 
+                  href="mailto:contact@nexdynegroup.com" 
                   className="text-primary hover:underline font-medium"
                 >
-                  media@nexdyne.com
+                  contact@nexdynegroup.com
                 </a>
               </div>
 
@@ -209,10 +209,10 @@ export default function FollowUs() {
                   Interested in having a NexDyne expert speak at your event? Reach out to discuss availability and topics.
                 </p>
                 <a 
-                  href="mailto:events@nexdyne.com" 
+                  href="mailto:contact@nexdynegroup.com" 
                   className="text-primary hover:underline font-medium"
                 >
-                  events@nexdyne.com
+                  contact@nexdynegroup.com
                 </a>
               </div>
             </div>
@@ -221,7 +221,7 @@ export default function FollowUs() {
       </section>
 
       {/* Content Guidelines */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-base text-white">
+      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6">

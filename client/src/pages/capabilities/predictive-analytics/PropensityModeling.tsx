@@ -15,7 +15,7 @@ export default function PropensityModeling() {
       serviceName="Propensity Modeling"
       serviceSlug="propensity-modeling"
       heroSubtitle="Predict which customers are most likely to buy, respond to campaigns, or take specific actions. Prioritize outreach for maximum impact. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-predictive-analytics.91d3a49b.jpg"
+      heroImage="/blog-data-analytics.01de594d.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Propensity Modeling engagements delivered" },
@@ -75,7 +75,7 @@ export default function PropensityModeling() {
           title: "Automating client onboarding for a global wealth management firm",
           industry: "Financial Services",
           metric: "60%",
-          image: "/case-wealth-management.91d3a49b.jpg",
+          image: "/case-advisor-client.eb15e04e.jpg",
         },
       ]}
       relatedServices={[

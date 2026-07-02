@@ -12,7 +12,7 @@ import { SEO } from "@/components/SEO";
 
 export default function StrategicAcquisition() {
   return (
-    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Strategic Acquisition Success | Case Study | NexDyne Technologies" 
         description="How we helped a technology company identify and execute a strategic acquisition that expanded capabilities and accelerated market entry."
@@ -23,7 +23,7 @@ export default function StrategicAcquisition() {
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-30"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background"></div>
         
         <div className="container relative z-10 px-4 md:px-12">
           <Breadcrumbs />
@@ -32,7 +32,7 @@ export default function StrategicAcquisition() {
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-4">
               Strategic acquisition <span className="text-primary">accelerates market entry by 3 years</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mb-8">
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mb-8">
               How we helped a technology company identify, evaluate, and execute a strategic acquisition that expanded capabilities and accelerated entry into a high-growth market segment.
             </p>
             
@@ -55,7 +55,7 @@ export default function StrategicAcquisition() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-base border-t border-white/10">
+      <section className="py-16 bg-background border-t border-border">
         <div className="container px-4 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             {[
@@ -66,7 +66,7 @@ export default function StrategicAcquisition() {
             ].map((stat, index) => (
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }} className="border-l-2 border-primary/50 pl-8">
                 <div className="text-5xl font-bold text-primary mb-2">{stat.metric}</div>
-                <div className="text-base text-white/70">{stat.label}</div>
+                <div className="text-base text-muted-foreground">{stat.label}</div>
               </motion.div>
             ))}
           </div>
@@ -74,7 +74,7 @@ export default function StrategicAcquisition() {
       </section>
 
       {/* Sticky Navigation */}
-      <nav className="sticky top-20 bg-base text-white z-40 border-y border-white/10">
+      <nav className="sticky top-20 bg-background text-charcoal z-40 border-y border-border">
         <div className="container px-4 md:px-12">
           <div className="flex items-center gap-1">
             <a href="#challenge" className="px-6 py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">THE CHALLENGE</a>
@@ -97,7 +97,7 @@ export default function StrategicAcquisition() {
                 The leadership team had identified the insurance technology sector as a strategic priority but lacked the domain expertise and customer relationships to enter organically. They engaged us to help evaluate build vs. buy options and, if appropriate, identify and execute an acquisition.
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-base/5 rounded-xl">
+            <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-charcoal/5 rounded-xl">
               <div><div className="text-sm font-semibold text-primary mb-2">Industry</div><div className="text-charcoal font-medium">Enterprise Software</div></div>
               <div><div className="text-sm font-semibold text-primary mb-2">Employees</div><div className="text-charcoal font-medium">650</div></div>
               <div><div className="text-sm font-semibold text-primary mb-2">Annual Revenue</div><div className="text-charcoal font-medium">$150M</div></div>
@@ -107,11 +107,11 @@ export default function StrategicAcquisition() {
       </section>
 
       {/* Challenge Section */}
-      <section id="challenge" className="py-24 md:py-32 bg-primary">
+      <section id="challenge" className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">The Challenge</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">Entering a new market without domain expertise</h2>
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">The Challenge</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">Entering a new market without domain expertise</h2>
           </motion.div>
         </div>
       </section>
@@ -136,23 +136,23 @@ export default function StrategicAcquisition() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12 max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "We knew insurance tech was a huge opportunity, but we didn't know the players or have relationships in the space. We needed a partner who could help us navigate an unfamiliar market and find the right acquisition target."
             </blockquote>
-            <div className="text-base text-white"><div className="font-semibold">— David Chen</div><div className="text-white/60">CEO, Client Company</div></div>
+            <div className="text-base text-charcoal"><div className="font-semibold">— David Chen</div><div className="text-muted-foreground">CEO, Client Company</div></div>
           </motion.div>
         </div>
       </section>
 
       {/* Solution Section */}
-      <section id="solution" className="py-24 md:py-32 bg-primary">
+      <section id="solution" className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">The Solution</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">Comprehensive acquisition search and execution</h2>
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">The Solution</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">Comprehensive acquisition search and execution</h2>
           </motion.div>
         </div>
       </section>
@@ -162,7 +162,7 @@ export default function StrategicAcquisition() {
           <p className="text-xl text-charcoal/80 leading-relaxed mb-12">We led a comprehensive acquisition process from market mapping through transaction close and integration planning.</p>
           <div className="space-y-12">
             <div className="flex gap-8">
-              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">1</div></div>
+              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center font-bold text-lg">1</div></div>
               <div>
                 <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Search className="w-6 h-6 text-primary" />Market mapping and target identification</h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">We conducted comprehensive market research to understand the insurance technology landscape and identify potential acquisition targets that aligned with strategic priorities.</p>
@@ -174,7 +174,7 @@ export default function StrategicAcquisition() {
               </div>
             </div>
             <div className="flex gap-8">
-              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">2</div></div>
+              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center font-bold text-lg">2</div></div>
               <div>
                 <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Handshake className="w-6 h-6 text-primary" />Target outreach and relationship building</h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">We conducted confidential outreach to priority targets, building relationships and assessing interest in a potential transaction.</p>
@@ -186,7 +186,7 @@ export default function StrategicAcquisition() {
               </div>
             </div>
             <div className="flex gap-8">
-              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">3</div></div>
+              <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center font-bold text-lg">3</div></div>
               <div>
                 <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><FileText className="w-6 h-6 text-primary" />Due diligence and transaction execution</h3>
                 <p className="text-charcoal/70 leading-relaxed mb-4">We led comprehensive due diligence and supported negotiation and transaction execution through close.</p>
@@ -202,11 +202,11 @@ export default function StrategicAcquisition() {
       </section>
 
       {/* Impact Section */}
-      <section id="impact" className="py-24 md:py-32 bg-primary">
+      <section id="impact" className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">The Impact</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">Results & Impact</h2>
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">The Impact</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">Results & Impact</h2>
           </motion.div>
         </div>
       </section>
@@ -218,32 +218,32 @@ export default function StrategicAcquisition() {
               <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><Target className="w-6 h-6 text-primary" />Successful acquisition completed</h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">The company completed an $85M acquisition of a leading insurance technology provider with strong customer relationships and complementary capabilities.</p>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$85M</div><div className="text-sm text-charcoal/60">Transaction value</div></div>
-                <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$35M</div><div className="text-sm text-charcoal/60">Target ARR</div></div>
+                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$85M</div><div className="text-sm text-charcoal/60">Transaction value</div></div>
+                <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">$35M</div><div className="text-sm text-charcoal/60">Target ARR</div></div>
               </div>
             </div>
             <div>
               <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><TrendingUp className="w-6 h-6 text-primary" />Accelerated market entry</h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">The acquisition provided immediate access to the insurance market with established customer relationships and domain expertise, accelerating market entry by an estimated 3 years.</p>
-              <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">3 years</div><div className="text-sm text-charcoal/60">Market entry acceleration vs. organic build</div></div>
+              <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">3 years</div><div className="text-sm text-charcoal/60">Market entry acceleration vs. organic build</div></div>
             </div>
             <div>
               <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><TrendingUp className="w-6 h-6 text-primary" />Strong post-acquisition performance</h3>
               <p className="text-charcoal/70 leading-relaxed mb-4">The combined company grew revenue 65% in the first year post-acquisition, driven by cross-selling to existing customers and new wins from enhanced capabilities.</p>
-              <div className="p-6 bg-base/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">65%</div><div className="text-sm text-charcoal/60">Revenue growth in Year 1</div></div>
+              <div className="p-6 bg-charcoal/5 rounded-xl"><div className="text-3xl font-bold text-charcoal mb-2">65%</div><div className="text-sm text-charcoal/60">Revenue growth in Year 1</div></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Quote Section 2 */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12 max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
             <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "NexDyne helped us navigate an unfamiliar market and find exactly the right target. The acquisition transformed our business and positioned us for the next phase of growth. We couldn't have done it without their expertise."
             </blockquote>
-            <div className="text-base text-white"><div className="font-semibold">— David Chen</div><div className="text-white/60">CEO, Client Company</div></div>
+            <div className="text-base text-charcoal"><div className="font-semibold">— David Chen</div><div className="text-muted-foreground">CEO, Client Company</div></div>
           </motion.div>
         </div>
       </section>
@@ -256,11 +256,11 @@ export default function StrategicAcquisition() {
       </section>
 
       {/* Related Cases */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-16">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">Related Case Studies</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white">More success stories</h2>
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">Related Case Studies</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">More success stories</h2>
           </motion.div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
             {[
@@ -270,15 +270,15 @@ export default function StrategicAcquisition() {
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
-                  <p className="text-white/60 mt-2">{item.description}</p>
-                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">Read case study <ArrowRight className="w-3 h-3" /></span>
+                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
+                  <p className="text-muted-foreground mt-2">{item.description}</p>
+                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-[gap]">Read case study <ArrowRight className="w-3 h-3" /></span>
                 </Link>
               </motion.div>
             ))}
           </div>
           <div className="text-center mt-16">
-            <Link href="/case-studies"><Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent"><ArrowLeft className="w-4 h-4 mr-2" />Back to all case studies</Button></Link>
+            <Link href="/case-studies"><Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-8 py-6 text-base font-semibold transition bg-transparent"><ArrowLeft className="w-4 h-4 mr-2" />Back to all case studies</Button></Link>
           </div>
         </div>
       </section>

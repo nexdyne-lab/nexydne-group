@@ -19,7 +19,7 @@ export default function CaseStudyHealthcareEHRModernization() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-base text-white font-sans selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background text-charcoal font-sans selection:bg-primary selection:text-white">
       <SEO 
         title="Healthcare EHR Modernization Case Study" 
         description="How we unified patient data across 12 hospital locations with a FHIR-based interoperability layer, achieving 100% data accuracy and 30% admin time savings."
@@ -34,57 +34,52 @@ export default function CaseStudyHealthcareEHRModernization() {
         { label: 'EHR Modernization' }
       ]} />
 
-      {/* DZ10 Hero Section */}
-      <section className="relative min-h-[55vh] sm:min-h-[65vh] md:min-h-[55vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center pt-16 sm:pt-20 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2670&auto=format&fit=crop" 
-            alt="Healthcare EHR System" 
-            className="w-full h-full object-cover opacity-40"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/80 to-base/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent" />
-        </div>
-
-        <div className="container px-4 sm:px-6 md:px-12 relative z-10">
+      {/* Neutral Hero Section */}
+      <section className="relative w-full bg-background overflow-hidden">
+        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(70% 60% at 82% 14%, rgba(224,76,44,0.05) 0%, transparent 55%), radial-gradient(55% 55% at 6% 95%, rgba(111,68,163,0.045) 0%, transparent 55%)" }} />
+        <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-4xl"
+            className="flex flex-col justify-center min-h-[50vh] py-24 lg:py-28"
           >
-            <Link href="/cases" className="inline-flex items-center text-primary hover:text-white transition-colors mb-5 sm:mb-6 md:mb-8 group text-sm font-semibold">
+            <div className="max-w-[920px]">
+            <Link href="/cases" className="inline-flex items-center text-primary hover:text-primary-hover transition-colors mb-5 sm:mb-6 md:mb-8 group text-sm font-semibold">
               <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
               Back to Case Studies
             </Link>
-            
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
-              Healthcare • Data Integration
-            </span>
-            
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-5 sm:mb-3 md:mb-4">
-              Unifying Patient Data Across <span className="text-primary">12 Hospital Locations</span>
+
+            <div className="flex items-center gap-3 mb-6">
+              <span className="block h-[3px] w-9 bg-primary" />
+              <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                Healthcare • Data Integration
+              </span>
+            </div>
+
+            <h1 className="text-charcoal font-bold tracking-[-0.035em] leading-[1.05] text-[clamp(2.2rem,4.8vw,3.8rem)]">
+              Unifying Patient Data Across 12 Hospital Locations
             </h1>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:p-6 md:p-8 border-t border-white/10 pt-8 mt-8">
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:p-6 md:p-8 border-t border-border pt-8 mt-8">
               <div>
                 <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1">100%</div>
-                <div className="text-sm text-white/60 uppercase tracking-wider">Data Accuracy</div>
+                <div className="text-sm text-muted-foreground uppercase tracking-wider">Data Accuracy</div>
               </div>
               <div>
                 <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1">30%</div>
-                <div className="text-sm text-white/60 uppercase tracking-wider">Admin Time Saved</div>
+                <div className="text-sm text-muted-foreground uppercase tracking-wider">Admin Time Saved</div>
               </div>
               <div>
                 <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1">Real-time</div>
-                <div className="text-sm text-white/60 uppercase tracking-wider">Patient Insights</div>
+                <div className="text-sm text-muted-foreground uppercase tracking-wider">Patient Insights</div>
               </div>
               <div>
                 <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-1">HIPAA</div>
-                <div className="text-sm text-white/60 uppercase tracking-wider">Compliant</div>
+                <div className="text-sm text-muted-foreground uppercase tracking-wider">Compliant</div>
               </div>
             </div>
-            
+
             {/* PDF Download Button */}
             <div className="mt-10">
               <CaseStudyPDFButton
@@ -108,6 +103,7 @@ export default function CaseStudyHealthcareEHRModernization() {
                 ]}
                 variant="hero"
               />
+            </div>
             </div>
           </motion.div>
         </div>
@@ -175,7 +171,7 @@ export default function CaseStudyHealthcareEHRModernization() {
       </section>
 
       {/* DZ10 Impact Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -184,7 +180,7 @@ export default function CaseStudyHealthcareEHRModernization() {
             transition={{ duration: 0.6 }}
             className="text-center mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               Results
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
@@ -219,7 +215,7 @@ export default function CaseStudyHealthcareEHRModernization() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300"
+                className="p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition duration-300"
               >
                 <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary">
                   {item.icon}
@@ -249,7 +245,7 @@ export default function CaseStudyHealthcareEHRModernization() {
               "The ability to see a patient's full story at a glance has been a game-changer for our medical teams. It's not just about data; it's about better care."
             </blockquote>
             <div className="flex items-center justify-center space-x-4">
-              <div className="w-14 h-14 bg-base/10 rounded-full overflow-hidden">
+              <div className="w-14 h-14 bg-charcoal/10 rounded-full overflow-hidden">
                 <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=200&auto=format&fit=crop" alt="CMO" className="w-full h-full object-cover" />
               </div>
               <div className="text-left">
@@ -262,7 +258,7 @@ export default function CaseStudyHealthcareEHRModernization() {
       </section>
 
       {/* DZ10 Contact Form */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white">
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <CaseStudyContactForm caseStudyTitle="Healthcare EHR Modernization" />
         </div>
@@ -286,7 +282,7 @@ export default function CaseStudyHealthcareEHRModernization() {
               </h2>
             </motion.div>
             <Link href="/cases">
-              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/5 transition-all duration-300">
+              <Button variant="outline" className="border-charcoal/25 text-charcoal hover:border-primary hover:bg-charcoal/5 transition duration-300">
                 View all case studies
               </Button>
             </Link>
@@ -348,7 +344,7 @@ export default function CaseStudyHealthcareEHRModernization() {
       </section>
 
       {/* Related Capabilities Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-background">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -357,13 +353,13 @@ export default function CaseStudyHealthcareEHRModernization() {
             transition={{ duration: 0.6 }}
             className="text-center mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
               Explore Further
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               Related Capabilities
             </h2>
-            <p className="text-xl text-white/60 max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Discover how our integrated capabilities can drive similar transformations for your organization.
             </p>
           </motion.div>
@@ -397,12 +393,12 @@ export default function CaseStudyHealthcareEHRModernization() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={capability.link} className="group block h-full">
-                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300 hover:bg-white/10">
+                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white border border-border hover:border-primary/50 transition duration-300 hover:shadow-lg">
                     <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-2">{capability.title}</div>
-                    <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
+                    <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
                       {capability.subtitle}
                     </h3>
-                    <p className="text-white/60 leading-relaxed text-sm mb-6">
+                    <p className="text-muted-foreground leading-relaxed text-sm mb-6">
                       {capability.description}
                     </p>
                     <div className="flex items-center text-primary text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">

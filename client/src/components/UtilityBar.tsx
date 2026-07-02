@@ -33,7 +33,7 @@ export default function UtilityBar({ isScrolled, isNavbarLight }: UtilityBarProp
   // Hide utility bar when scrolled (it slides up)
   return (
     <div
-      className={`hidden lg:block w-full transition-all duration-300 ${
+      className={`hidden lg:block w-full transition duration-300 ${
         isScrolled
           ? "h-0 opacity-0 overflow-hidden"
           : "h-9 opacity-100"

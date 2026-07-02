@@ -68,7 +68,7 @@ export default function ToolApiIntegration() {
           title: "How a regional bank cut loan processing time by 80% with intelligent automation",
           industry: "Financial Services",
           metric: "80%",
-          image: "/case-bank-automation.2f1e7c12.jpg",
+          image: "/case-banker-meeting.c53f3999.jpg",
         },
         {
           slug: "consulting-knowledge-management",

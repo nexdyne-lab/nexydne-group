@@ -18,16 +18,16 @@ export default function AppDevelopment() {
       <Breadcrumb items={breadcrumbItems} />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-charcoal via-charcoal to-charcoal text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 right-20 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 right-20 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-20 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
         </div>
         
         <div className="container relative py-16 sm:py-20 md:py-24 lg:py-16 sm:py-20 md:py-24 lg:py-32">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-6 text-cyan-400">Services</p>
-            <h1 className="text-6xl md:text-7xl font-bold mb-5 sm:mb-3 md:mb-4 leading-tight eb-garamond">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-6 text-amber">Services</p>
+            <h1 className="text-6xl md:text-7xl font-bold mb-5 sm:mb-3 md:mb-4 leading-tight">
               App Development
             </h1>
             <p className="text-2xl leading-relaxed opacity-90 max-w-3xl mx-auto">
@@ -73,7 +73,7 @@ export default function AppDevelopment() {
           
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 max-w-6xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/app-development/low-code" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
                   <Zap className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
                   <h3 className="text-xl font-bold text-charcoal group-hover:text-primary transition-colors">
@@ -91,7 +91,7 @@ export default function AppDevelopment() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/custom-software" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
                   <Code className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
                   <h3 className="text-xl font-bold text-charcoal group-hover:text-primary transition-colors">
@@ -109,7 +109,7 @@ export default function AppDevelopment() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/service-portals" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
                   <Globe className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
                   <h3 className="text-xl font-bold text-charcoal group-hover:text-primary transition-colors">
@@ -127,7 +127,7 @@ export default function AppDevelopment() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/it-modernization" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
                   <Smartphone className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
                   <h3 className="text-xl font-bold text-charcoal group-hover:text-primary transition-colors">
@@ -159,8 +159,8 @@ export default function AppDevelopment() {
           
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 max-w-6xl mx-auto">
             <Link href="/cases/tkb-modernization" className="group">
-              <div className="bg-white border-2 border-border hover:border-primary transition-all duration-300 overflow-hidden h-full">
-                <div className="aspect-video bg-gradient-to-br from-blue-100 to-indigo-100"></div>
+              <div className="bg-white border-2 border-border hover:border-primary transition duration-300 overflow-hidden h-full">
+                <div className="aspect-video bg-gradient-to-br from-primary to-primary"></div>
                 <div className="p-4 sm:p-6 md:p-8">
                   <p className="text-sm font-semibold text-primary mb-3">CASE STUDY</p>
                   <h3 className="text-2xl font-bold mb-4 text-charcoal group-hover:text-primary transition-colors">
@@ -178,8 +178,8 @@ export default function AppDevelopment() {
             </Link>
 
             <Link href="/cases/payter-platform" className="group">
-              <div className="bg-white border-2 border-border hover:border-primary transition-all duration-300 overflow-hidden h-full">
-                <div className="aspect-video bg-gradient-to-br from-cyan-100 to-blue-100"></div>
+              <div className="bg-white border-2 border-border hover:border-primary transition duration-300 overflow-hidden h-full">
+                <div className="aspect-video bg-gradient-to-br from-primary to-primary"></div>
                 <div className="p-4 sm:p-6 md:p-8">
                   <p className="text-sm font-semibold text-primary mb-3">CASE STUDY</p>
                   <h3 className="text-2xl font-bold mb-4 text-charcoal group-hover:text-primary transition-colors">
@@ -197,8 +197,8 @@ export default function AppDevelopment() {
             </Link>
 
             <Link href="/cases/sanquin-digital" className="group">
-              <div className="bg-white border-2 border-border hover:border-primary transition-all duration-300 overflow-hidden h-full">
-                <div className="aspect-video bg-gradient-to-br from-red-100 to-pink-100"></div>
+              <div className="bg-white border-2 border-border hover:border-primary transition duration-300 overflow-hidden h-full">
+                <div className="aspect-video bg-gradient-to-br from-primary/10 to-primary/10"></div>
                 <div className="p-4 sm:p-6 md:p-8">
                   <p className="text-sm font-semibold text-primary mb-3">CASE STUDY</p>
                   <h3 className="text-2xl font-bold mb-4 text-charcoal group-hover:text-primary transition-colors">
@@ -216,8 +216,8 @@ export default function AppDevelopment() {
             </Link>
 
             <Link href="/cases/rai-amsterdam" className="group">
-              <div className="bg-white border-2 border-border hover:border-primary transition-all duration-300 overflow-hidden h-full">
-                <div className="aspect-video bg-gradient-to-br from-purple-100 to-violet-100"></div>
+              <div className="bg-white border-2 border-border hover:border-primary transition duration-300 overflow-hidden h-full">
+                <div className="aspect-video bg-gradient-to-br from-purple/10 to-purple/10"></div>
                 <div className="p-4 sm:p-6 md:p-8">
                   <p className="text-sm font-semibold text-primary mb-3">CASE STUDY</p>
                   <h3 className="text-2xl font-bold mb-4 text-charcoal group-hover:text-primary transition-colors">
@@ -238,7 +238,7 @@ export default function AppDevelopment() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-slate-900 text-white">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-charcoal text-white">
         <div className="container max-w-4xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8">
             Ready to build your application?

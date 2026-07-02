@@ -11,12 +11,12 @@ import SocialShare from '@/components/SocialShare';
 
 export default function EconomicsOfLoyalty() {
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-secondary selection:text-base">
+    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary selection:text-white">
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-base text-white py-16 md:py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-base/50 z-10" />
+      <section className="bg-background text-charcoal py-16 md:py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/50 z-10" />
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2672&auto=format&fit=crop')] opacity-10 bg-cover bg-center" />
         
         <div className="container max-w-4xl mx-auto px-4 relative z-20">
@@ -25,7 +25,7 @@ export default function EconomicsOfLoyalty() {
           </div>
           
           <div className="flex flex-wrap gap-4 mb-6">
-            <span className="inline-flex items-center gap-2 text-sm text-blue-300 font-medium px-3 py-1 rounded-full bg-blue-900/30 border border-blue-800">
+            <span className="inline-flex items-center gap-2 text-sm text-primary font-medium px-3 py-1 rounded-full bg-charcoal/30 border border-primary">
               <TrendingUp className="w-4 h-4" />
               Unit Economics
             </span>
@@ -96,17 +96,17 @@ export default function EconomicsOfLoyalty() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 my-8 not-prose">
-              <div className="bg-red-50 p-6 rounded-xl border border-red-100">
-                <h4 className="font-bold text-red-800 mb-2">Transactional Loyalty</h4>
-                <ul className="text-sm text-red-700 space-y-2">
+              <div className="bg-primary/5 p-6 rounded-xl border border-primary">
+                <h4 className="font-bold text-primary mb-2">Transactional Loyalty</h4>
+                <ul className="text-sm text-primary space-y-2">
                   <li>• Based on discounts</li>
                   <li>• Easy to copy by competitors</li>
                   <li>• Attracts price-sensitive customers</li>
                   <li>• Erodes margin</li>
                 </ul>
               </div>
-              <div className="bg-secondary/10 p-6 rounded-xl border border-green-100">
-                <h4 className="font-bold text-green-800 mb-2">Emotional/Structural Loyalty</h4>
+              <div className="bg-secondary/10 p-6 rounded-xl border border-amber/10">
+                <h4 className="font-bold text-amber mb-2">Emotional/Structural Loyalty</h4>
                 <ul className="text-sm text-secondary space-y-2">
                   <li>• Based on experience/utility</li>
                   <li>• Hard to replicate</li>
@@ -149,7 +149,7 @@ export default function EconomicsOfLoyalty() {
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 md:p-12 bg-base rounded-2xl text-white relative overflow-hidden">
+          <div className="mt-16 p-8 md:p-12 bg-background rounded-2xl text-charcoal relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -mr-32 -mt-32" />
             <div className="relative z-10">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">Stop eroding your margins.</h3>
@@ -157,7 +157,7 @@ export default function EconomicsOfLoyalty() {
                 NexDyne helps companies restructure loyalty programs to drive true LTV without sacrificing profitability.
               </p>
               <Link href="/contact">
-                <button className="px-8 py-4 bg-secondary hover:bg-secondary text-base rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
+                <button className="px-8 py-4 bg-secondary hover:bg-secondary text-base rounded-full font-bold transition transform hover:scale-105 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
                   Analyze Your Unit Economics
                 </button>
               </Link>

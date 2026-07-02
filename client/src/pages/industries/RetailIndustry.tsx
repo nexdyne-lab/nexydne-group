@@ -20,41 +20,41 @@ export default function RetailIndustry() {
       challenges={[
         {
           title: "Margin under siege",
-          body: "Promotional pressure, freight inflation, and labor cost are compressing margins faster than most retailers can re-price. Pricing optimization, markdown intelligence, and assortment rationalization are now core capabilities, not seasonal projects."
+          body: "Promotional pressure, freight, and labor cost are compressing margins — pricing, markdown, and assortment are now core capabilities."
         },
         {
           title: "Unified commerce gaps",
-          body: "Customers expect inventory, pricing, and service to feel consistent across digital and store. Most retailers still run those journeys on disconnected systems — and the gap is now visible to shoppers in basket abandonment and return rates."
+          body: "Customers expect consistency across digital and store, but most retailers still run those journeys on disconnected systems."
         },
         {
           title: "Personalization at scale",
-          body: "First-party data is more valuable than ever, yet most retailers under-monetize the signal they already collect. Modern customer-data platforms and AI-powered targeting can lift conversion without adding ad spend."
+          body: "First-party data is more valuable than ever, yet most retailers under-monetize the signal they already collect."
         },
         {
           title: "Supply-chain agility",
-          body: "Long lead times, single-source dependencies, and reactive replenishment are leaving sales on the floor and capital in inventory. Real-time visibility and AI-driven allocation are the fastest paths to working-capital and service improvement."
+          body: "Long lead times and reactive replenishment leave sales on the floor; real-time visibility and AI allocation fix it fastest."
         }
       ]}
       capabilities={[
         {
           name: "Customer Intelligence",
           href: "/capabilities/customer-intelligence",
-          blurb: "Stand up the customer-data foundation, journey-level analytics, and AI-powered personalization that turn first-party data into measurable lift."
+          blurb: "The customer-data foundation, journey analytics, and AI personalization that turn first-party data into measurable lift."
         },
         {
           name: "Pricing & Revenue Management",
           href: "/capabilities/pricing-revenue",
-          blurb: "Engineer pricing, promotion, and markdown decisions with the data and decision tooling needed to protect margin in a high-volatility environment."
+          blurb: "Pricing, promotion, and markdown decisions with the tooling needed to protect margin in a volatile market."
         },
         {
           name: "Operations Excellence",
           href: "/capabilities/operations-excellence",
-          blurb: "Transform store, fulfillment, and supply-chain operations with intelligent allocation, labor optimization, and last-mile redesign."
+          blurb: "Transform store, fulfillment, and supply-chain operations with intelligent allocation and last-mile redesign."
         },
         {
           name: "Data Transformation",
           href: "/capabilities/data-transformation",
-          blurb: "Unify commerce, marketing, and supply-chain data into a single platform that supports the next generation of AI use cases across the business."
+          blurb: "Unify commerce, marketing, and supply-chain data into one platform for the next generation of AI use cases."
         }
       ]}
       experienceStats={[

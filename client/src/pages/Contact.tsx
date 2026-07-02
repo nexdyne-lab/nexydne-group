@@ -73,17 +73,17 @@ export default function Contact() {
   const contactPaths = [
     {
       label: "General Inquiries",
-      email: "hello@nexdynegroup.com",
+      email: "contact@nexdynegroup.com",
       description: "For new business and partnership inquiries.",
     },
     {
       label: "Careers",
-      email: "careers@nexdynegroup.com",
+      email: "contact@nexdynegroup.com",
       description: "For roles, applications, and talent network.",
     },
     {
       label: "Press & Media",
-      email: "press@nexdynegroup.com",
+      email: "contact@nexdynegroup.com",
       description: "For interviews, comment requests, and press kits.",
     },
   ];
@@ -116,12 +116,12 @@ export default function Contact() {
         title="Talk to a NexDyne partner."
         subtitle="Tell us what you're working on. We'll route you to the practice lead who can help — typically within one business day."
         backgroundImage="/images/contact-hero.jpg"
-        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"
+        h1ClassName="nx-h2 text-charcoal leading-[1.05] mb-6"
         containerClassName="h-[60vh] min-h-[440px] sm:min-h-[480px] lg:min-h-[540px]"
       />
 
       {/* SLOT 2 — White contact form (the centerpiece) */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -132,11 +132,11 @@ export default function Contact() {
           >
             {submitStatus === "success" ? (
               <div className="border border-charcoal/10 bg-white p-10 lg:p-14">
-                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+                <span className="block nx-eyebrow text-charcoal/60 mb-5">
                   MESSAGE SENT
                 </span>
                 <h3
-                  className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-8"
+                  className="nx-h2 text-charcoal leading-[1.1] mb-8"
                   style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
                 >
                   Thanks — we've got it.
@@ -148,11 +148,11 @@ export default function Contact() {
             ) : (
               <>
                 <div className="mb-12 max-w-[60ch]">
-                  <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+                  <span className="block nx-eyebrow text-charcoal/60 mb-5">
                     START THE CONVERSATION
                   </span>
                   <h3
-                    className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+                    className="nx-h2 text-charcoal leading-[1.1]"
                     style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
                   >
                     Send us a message.
@@ -275,7 +275,7 @@ export default function Contact() {
       </section>
 
       {/* SLOT 3 — Light-grey "What happens next" reassurance band */}
-      <section className="bg-grey py-24 md:py-32">
+      <section className="bg-grey nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -284,18 +284,18 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               WHAT HAPPENS NEXT
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              className="nx-h2 text-charcoal leading-[1.1]"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
               What to expect after you hit send.
             </h3>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid md:grid-cols-3 gap-5">
             {nextSteps.map((step, i) => (
               <motion.div
                 key={i}
@@ -323,7 +323,7 @@ export default function Contact() {
       </section>
 
       {/* SLOT 4 — White direct contact paths (BCG-style escape hatches) */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -332,18 +332,18 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               DIRECT CONTACT PATHS
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
+              className="nx-h2 text-charcoal leading-[1.1]"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
               Or reach us directly.
             </h3>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid md:grid-cols-3 gap-5">
             {contactPaths.map((path, i) => (
               <motion.div
                 key={i}
@@ -374,7 +374,7 @@ export default function Contact() {
       </section>
 
       {/* SLOT 5 — Light-grey "Where we work" — single Grand Rapids HQ */}
-      <section className="bg-grey py-24 md:py-32">
+      <section className="bg-grey nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -383,11 +383,11 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               OUR HEADQUARTERS
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-6"
+              className="nx-h2 text-charcoal leading-[1.1] mb-6"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
               Where we work.
@@ -420,7 +420,7 @@ export default function Contact() {
       </section>
 
       {/* SLOT 6 — Charcoal closing CTA */}
-      <section className="bg-charcoal text-white py-24 md:py-32">
+      <section className="bg-charcoal text-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -429,7 +429,7 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+            <span className="block nx-eyebrow text-white/70 mb-5">
               PREFER A DIFFERENT CHANNEL?
             </span>
             <h2

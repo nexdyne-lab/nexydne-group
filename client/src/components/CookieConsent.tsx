@@ -117,13 +117,13 @@ export default function CookieConsent() {
                   <div className="flex flex-col sm:flex-row gap-3 lg:flex-shrink-0">
                     <button
                       onClick={handleAcceptAll}
-                      className="px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-hover transition-all duration-200 text-sm md:text-base whitespace-nowrap shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                      className="px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-hover transition duration-200 text-sm md:text-base whitespace-nowrap shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                     >
                       Accept Cookies
                     </button>
                     <button
                       onClick={() => setShowPreferences(true)}
-                      className="px-6 py-3 bg-white text-charcoal font-semibold rounded-lg border-2 border-border hover:border-gray-400 hover:bg-subtle transition-all duration-200 text-sm md:text-base whitespace-nowrap flex items-center justify-center gap-2"
+                      className="px-6 py-3 bg-white text-charcoal font-semibold rounded-lg border-2 border-border hover:border-border hover:bg-subtle transition duration-200 text-sm md:text-base whitespace-nowrap flex items-center justify-center gap-2"
                     >
                       <Settings className="w-4 h-4" />
                       Manage preferences
@@ -185,11 +185,11 @@ export default function CookieConsent() {
                         className={`w-12 h-6 rounded-full relative transition-colors duration-200 ${
                           preferences.analytics
                             ? "bg-secondary"
-                            : "bg-gray-300"
+                            : "bg-grey"
                         }`}
                       >
                         <div
-                          className={`absolute top-1 w-4 h-4 bg-white rounded-full shadow transition-all duration-200 ${
+                          className={`absolute top-1 w-4 h-4 bg-white rounded-full shadow transition duration-200 ${
                             preferences.analytics ? "right-1" : "left-1"
                           }`}
                         />
@@ -213,11 +213,11 @@ export default function CookieConsent() {
                         className={`w-12 h-6 rounded-full relative transition-colors duration-200 ${
                           preferences.marketing
                             ? "bg-secondary"
-                            : "bg-gray-300"
+                            : "bg-grey"
                         }`}
                       >
                         <div
-                          className={`absolute top-1 w-4 h-4 bg-white rounded-full shadow transition-all duration-200 ${
+                          className={`absolute top-1 w-4 h-4 bg-white rounded-full shadow transition duration-200 ${
                             preferences.marketing ? "right-1" : "left-1"
                           }`}
                         />
@@ -241,11 +241,11 @@ export default function CookieConsent() {
                         className={`w-12 h-6 rounded-full relative transition-colors duration-200 ${
                           preferences.personalization
                             ? "bg-secondary"
-                            : "bg-gray-300"
+                            : "bg-grey"
                         }`}
                       >
                         <div
-                          className={`absolute top-1 w-4 h-4 bg-white rounded-full shadow transition-all duration-200 ${
+                          className={`absolute top-1 w-4 h-4 bg-white rounded-full shadow transition duration-200 ${
                             preferences.personalization ? "right-1" : "left-1"
                           }`}
                         />
@@ -258,14 +258,14 @@ export default function CookieConsent() {
                 <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-border">
                   <button
                     onClick={handleRejectNonEssential}
-                    className="px-6 py-3 text-muted-foreground font-semibold rounded-lg hover:bg-subtle transition-all duration-200 text-sm md:text-base"
+                    className="px-6 py-3 text-muted-foreground font-semibold rounded-lg hover:bg-subtle transition duration-200 text-sm md:text-base"
                   >
                     Reject non-essential
                   </button>
                   <div className="flex-1" />
                   <button
                     onClick={handleSavePreferences}
-                    className="px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-hover transition-all duration-200 text-sm md:text-base shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                    className="px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-hover transition duration-200 text-sm md:text-base shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                   >
                     Save preferences
                   </button>

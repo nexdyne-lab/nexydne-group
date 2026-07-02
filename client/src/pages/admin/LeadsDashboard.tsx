@@ -108,8 +108,8 @@ export default function LeadsDashboard() {
 
   const getScoreBadge = (score: number | null) => {
     const s = score || 0;
-    if (s >= 70) return <Badge className="bg-secondary/100 hover:bg-green-600">High Intent ({s})</Badge>;
-    if (s >= 40) return <Badge className="bg-yellow-500 hover:bg-yellow-600">Medium ({s})</Badge>;
+    if (s >= 70) return <Badge className="bg-secondary/100 hover:bg-amber">High Intent ({s})</Badge>;
+    if (s >= 40) return <Badge className="bg-amber hover:bg-amber">Medium ({s})</Badge>;
     return <Badge variant="secondary">Standard ({s})</Badge>;
   };
 
@@ -129,10 +129,10 @@ export default function LeadsDashboard() {
   // Check for auth error
   if (leadsError?.message?.includes("Unauthorized") || leadsError?.message?.includes("FORBIDDEN")) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-gradient-to-br from-off-white to-off-white flex items-center justify-center p-4">
         <Card className="max-w-md w-full">
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl text-destructive">Access Denied</CardTitle>
+            <CardTitle className="text-2xl text-primary">Access Denied</CardTitle>
             <CardDescription>
               You need admin privileges to access this dashboard.
             </CardDescription>
@@ -151,9 +151,9 @@ export default function LeadsDashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+    <div className="min-h-screen bg-gradient-to-br from-off-white to-off-white">
       {/* Header */}
-      <header className="bg-white border-b border-slate-200 sticky top-0 z-50">
+      <header className="bg-white border-b border-border sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
@@ -226,7 +226,7 @@ export default function LeadsDashboard() {
               <Star className="w-4 h-4 text-muted-foreground/70" />
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-amber-600">
+              <div className="text-3xl font-bold text-amber">
                 {statsLoading ? "..." : stats?.avgLeadScore || 0}
               </div>
               <p className="text-xs text-muted-foreground mt-1">Out of 100</p>
@@ -247,9 +247,9 @@ export default function LeadsDashboard() {
             <CardContent>
               <div className="space-y-3">
                 {stats.topCaseStudies.map((cs, index) => (
-                  <div key={index} className="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
+                  <div key={index} className="flex items-center justify-between p-3 bg-off-white rounded-lg">
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-primary font-semibold text-sm">
+                      <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold text-sm">
                         {index + 1}
                       </div>
                       <span className="font-medium text-charcoal/80 truncate max-w-md">{cs.title}</span>
@@ -321,7 +321,7 @@ export default function LeadsDashboard() {
           <CardContent>
             {leadsLoading ? (
               <div className="text-center py-12">
-                <div className="animate-spin w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full mx-auto mb-4"></div>
+                <div className="animate-spin w-8 h-8 border-4 border-primary border-t-transparent rounded-full mx-auto mb-4"></div>
                 <p className="text-muted-foreground">Loading leads...</p>
               </div>
             ) : leadsData?.leads.length === 0 ? (

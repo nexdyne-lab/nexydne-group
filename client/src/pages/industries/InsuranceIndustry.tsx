@@ -20,41 +20,41 @@ export default function InsuranceIndustry() {
       challenges={[
         {
           title: "Underwriting precision",
-          body: "Volatile loss patterns and richer data sources are rewriting the underwriting playbook. AI-powered risk selection, third-party data integration, and modern actuarial tooling are now table stakes."
+          body: "Volatile loss patterns and richer data are rewriting underwriting; AI risk selection and modern actuarial tooling are now table stakes."
         },
         {
           title: "Claims cost and experience",
-          body: "Customers want claims paid faster; carriers need to manage loss-adjustment expense and leakage. Intelligent claims automation, fraud analytics, and digital first-notice-of-loss are how leaders are doing both."
+          body: "Customers want claims paid faster while carriers manage leakage — intelligent claims automation and fraud analytics do both."
         },
         {
           title: "Distribution shifts",
-          body: "Embedded insurance, broker consolidation, and direct channels are reshaping where premium gets written. Carriers need a clear strategy for which channels to own, which to partner with, and how to instrument both."
+          body: "Embedded insurance and direct channels are reshaping where premium is written; carriers need a clear channel strategy."
         },
         {
           title: "Model and data governance",
-          body: "Increasing regulatory scrutiny on AI-driven decisions means model risk management, data lineage, and explainability cannot be retrofitted. They have to be built into the underwriting and claims platforms from the start."
+          body: "Regulatory scrutiny on AI decisions means model-risk management and explainability must be built in, not retrofitted."
         }
       ]}
       capabilities={[
         {
           name: "Risk & Resilience",
           href: "/capabilities/risk-resilience",
-          blurb: "Stand up the model-risk, regulatory, and operational-resilience programs that regulators and reinsurers now expect of credible carriers."
+          blurb: "The model-risk, regulatory, and operational-resilience programs regulators and reinsurers expect of credible carriers."
         },
         {
           name: "Data Transformation",
           href: "/capabilities/data-transformation",
-          blurb: "Unify policy, claims, and third-party data into a single fabric that powers AI-driven underwriting, claims, and pricing at scale."
+          blurb: "Unify policy, claims, and third-party data into one fabric for AI-driven underwriting, claims, and pricing."
         },
         {
           name: "Operations Excellence",
           href: "/capabilities/operations-excellence",
-          blurb: "Automate underwriting, claims, and policy operations to lower expense ratio while improving the broker and customer experience."
+          blurb: "Automate underwriting, claims, and policy operations to lower expense ratio and improve the broker experience."
         },
         {
           name: "Customer Intelligence",
           href: "/capabilities/customer-intelligence",
-          blurb: "Engineer broker, distribution, and customer experiences with the personalization and digital tools modern insurance buyers expect."
+          blurb: "Engineer broker, distribution, and customer experiences with the digital tools modern insurance buyers expect."
         }
       ]}
       experienceStats={[

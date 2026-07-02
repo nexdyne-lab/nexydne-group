@@ -16,56 +16,41 @@ export default function InsightEcommerceLaunchGuide() {
       />
       <Navigation />
       
-      {/* DZ10 Hero Section */}
-      <section className="relative pt-32 pb-20 bg-base overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-base via-base to-base" />
-          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-amber-500/10 to-transparent" />
-        </div>
-        
-        <div className="container px-4 sm:px-6 md:px-12 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl"
-          >
-            <Link href="/solutions/accelerating-business-growth">
-              <span className="inline-flex items-center text-sm text-white/60 hover:text-primary transition-colors mb-6 cursor-pointer">
-                <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
-                Back to Accelerating Business Growth
-              </span>
-            </Link>
-            
-            <div className="flex flex-wrap gap-3 mb-6">
-              <span className="px-3 py-1 bg-amber-500/20 text-amber-300 text-xs font-bold uppercase tracking-wider rounded-full">
-                E-Commerce
-              </span>
-              <span className="px-3 py-1 bg-white/10 text-white/70 text-xs font-bold uppercase tracking-wider rounded-full">
-                Implementation
-              </span>
-            </div>
-            
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-tight text-white leading-[1.1] mb-5 sm:mb-3 md:mb-4 eb-garamond">
-              E-commerce launch guide: From zero to revenue in 90 days
-            </h1>
-            
-            <div className="flex flex-wrap items-center gap-4 sm:p-5 md:p-6 text-white/60 text-sm mb-5 sm:mb-6 md:mb-8">
-              <div className="flex items-center gap-2">
-                <Clock className="w-3 h-3 sm:w-4 sm:h-4" />
-                <span>10 min read</span>
+      {/* Neutral-first editorial hero */}
+      <section className="relative w-full bg-background overflow-hidden">
+        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(70% 60% at 82% 14%, rgba(224,76,44,0.05) 0%, transparent 55%), radial-gradient(55% 55% at 6% 95%, rgba(111,68,163,0.045) 0%, transparent 55%)" }} />
+        <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div className="flex flex-col justify-center min-h-[48vh] py-24 lg:py-28">
+            <div className="max-w-[900px]">
+              <Link href="/solutions/accelerating-business-growth">
+                <span className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors mb-6 cursor-pointer">
+                  <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
+                  Back to Accelerating Business Growth
+                </span>
+              </Link>
+              <div className="flex items-center gap-3 mb-6">
+                <span className="block h-[3px] w-9 bg-primary" />
+                <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">E-Commerce · Implementation</span>
               </div>
-              <div className="flex items-center gap-2">
-                <User className="w-3 h-3 sm:w-4 sm:h-4" />
-                <span>NEXDYNE Growth Practice</span>
+              <h1 className="text-charcoal font-bold tracking-[-0.03em] leading-[1.06] text-[clamp(2.1rem,4.6vw,3.6rem)]">
+                E-commerce launch guide: From zero to revenue in 90 days
+              </h1>
+              <p className="mt-7 text-[1.1rem] md:text-[1.2rem] leading-[1.55] text-muted-foreground max-w-[62ch]">
+                A practical, week-by-week guide for launching e-commerce capabilities quickly and effectively. Learn how to go from zero to generating revenue in just 90 days.
+              </p>
+              <div className="mt-7 flex flex-wrap items-center gap-4 text-muted-foreground text-sm">
+                <div className="flex items-center gap-2">
+                  <Clock className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <span>10 min read</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <User className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <span>NEXDYNE Growth Practice</span>
+                </div>
+                <span>January 2026</span>
               </div>
-              <span>January 2026</span>
             </div>
-            
-            <p className="text-xl text-white/70 leading-relaxed max-w-3xl">
-              A practical, week-by-week guide for launching e-commerce capabilities quickly and effectively. Learn how to go from zero to generating revenue in just 90 days.
-            </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -121,7 +106,7 @@ export default function InsightEcommerceLaunchGuide() {
                     <li><strong>What are your success metrics?</strong> Revenue target, conversion rate, average order value?</li>
                   </ul>
 
-                  <div className="bg-amber-50 border-l-4 border-amber-500 p-4 sm:p-5 md:p-6 my-8">
+                  <div className="bg-amber/5 border-l-4 border-amber p-4 sm:p-5 md:p-6 my-8">
                     <h4 className="font-bold text-charcoal mb-2">Pro Tip</h4>
                     <p className="text-charcoal/70 mb-0 text-sm">
                       Don't try to replicate your entire product catalog online. Start with your top 20% of products that drive 80% of revenue. You can expand the catalog after launch based on customer demand.
@@ -139,7 +124,7 @@ export default function InsightEcommerceLaunchGuide() {
                   <div className="overflow-x-auto my-8">
                     <table className="w-full border-collapse">
                       <thead>
-                        <tr className="bg-base text-white">
+                        <tr className="bg-charcoal text-white">
                           <th className="p-4 text-left font-semibold">Platform</th>
                           <th className="p-4 text-left font-semibold">Best For</th>
                           <th className="p-4 text-left font-semibold">Timeline</th>
@@ -227,26 +212,27 @@ export default function InsightEcommerceLaunchGuide() {
                     <li>Add trust signals (reviews, security badges, guarantees)</li>
                   </ul>
 
-                  <div className="bg-base text-white p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
+                  <div className="bg-charcoal text-white border-t-2 border-primary p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
+                    <span className="block text-[12px] font-semibold uppercase tracking-[0.18em] text-amber mb-3">Conversion</span>
                     <h3 className="text-xl font-bold mb-4">Content That Converts</h3>
                     <p className="text-white/80 mb-4">
                       Product pages are your sales team online. Invest in:
                     </p>
                     <ul className="space-y-2 text-white/80">
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-amber flex-shrink-0 mt-0.5" />
                         High-quality images from multiple angles
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-amber flex-shrink-0 mt-0.5" />
                         Detailed, benefit-focused descriptions
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-amber flex-shrink-0 mt-0.5" />
                         Clear pricing and availability
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-amber flex-shrink-0 mt-0.5" />
                         Customer reviews and ratings
                       </li>
                     </ul>
@@ -321,7 +307,7 @@ export default function InsightEcommerceLaunchGuide() {
                       { icon: <ShoppingCart className="w-5 h-5 sm:w-6 sm:h-6" />, title: "Reduce Abandonment", desc: "Implement abandoned cart emails and exit-intent offers" }
                     ].map((item, index) => (
                       <div key={index} className="bg-subtle p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl">
-                        <div className="w-10 h-10 bg-amber-500/10 text-amber-600 rounded-lg flex items-center justify-center mb-4">
+                        <div className="w-10 h-10 bg-amber/10 text-amber rounded-lg flex items-center justify-center mb-4">
                           {item.icon}
                         </div>
                         <h4 className="font-bold text-charcoal mb-2">{item.title}</h4>
@@ -367,7 +353,7 @@ export default function InsightEcommerceLaunchGuide() {
               >
                 <h3 className="text-lg font-bold mb-4">About the Author</h3>
                 <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                  <div className="w-16 h-16 bg-amber rounded-full flex items-center justify-center text-charcoal font-bold text-xl">
                     NG
                   </div>
                   <div>
@@ -396,7 +382,7 @@ export default function InsightEcommerceLaunchGuide() {
                     <button className="w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center hover:bg-primary/90 transition-colors">
                       <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                     </button>
-                    <button className="w-10 h-10 bg-[#1DA1F2] text-white rounded-lg flex items-center justify-center hover:bg-base transition-colors">
+                    <button className="w-10 h-10 bg-[#1DA1F2] text-white rounded-lg flex items-center justify-center hover:bg-charcoal transition-colors">
                       <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
                     </button>
                     <button className="w-10 h-10 bg-[#4267B2] text-white rounded-lg flex items-center justify-center hover:bg-[#4267B2] transition-colors">
@@ -410,9 +396,9 @@ export default function InsightEcommerceLaunchGuide() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
-                  className="bg-base text-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
+                  className="bg-charcoal text-white border-t-2 border-primary p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
                 >
-                  <h3 className="text-sm font-bold uppercase tracking-wider text-white/60 mb-4">90-Day Timeline</h3>
+                  <h3 className="text-sm font-bold uppercase tracking-wider text-amber mb-4">90-Day Timeline</h3>
                   <ul className="space-y-3">
                     {[
                       "Weeks 1-4: Foundation",
@@ -421,7 +407,7 @@ export default function InsightEcommerceLaunchGuide() {
                       "Week 12: Public Launch"
                     ].map((item, index) => (
                       <li key={index} className="flex items-start gap-2 text-sm text-white/80">
-                        <div className="w-1.5 h-1.5 bg-amber-400 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-1.5 h-1.5 bg-amber rounded-full mt-2 flex-shrink-0" />
                         {item}
                       </li>
                     ))}
@@ -461,14 +447,14 @@ export default function InsightEcommerceLaunchGuide() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.6 }}
-                  className="bg-gradient-to-br from-amber-500 to-orange-600 text-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
+                  className="bg-gradient-to-br from-amber to-primary text-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
                 >
                   <h3 className="font-bold text-lg mb-3">Ready to launch your e-commerce?</h3>
                   <p className="text-white/90 text-sm mb-4">
                     Let's discuss how we can help you go from zero to revenue in 90 days.
                   </p>
                   <Link href="/contact">
-                    <Button className="w-full bg-white text-amber-600 hover:bg-white/90 font-semibold">
+                    <Button className="w-full bg-white text-amber hover:bg-white/90 font-semibold">
                       Get Started
                       <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4" />
                     </Button>

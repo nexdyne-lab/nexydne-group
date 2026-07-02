@@ -12,7 +12,7 @@ export default function CloudInfrastructure() {
       serviceName="Cloud Infrastructure"
       serviceSlug="cloud-infrastructure"
       heroSubtitle="Cloud-native modernization across AWS, Azure, and GCP — elastic, secure, cost-optimized platforms that compound developer velocity, not cloud bills."
-      heroImage="/enterprise-transformation-hero.jpg"
+      heroImage="/solution-enterprise-transformation.0a0f2624.webp"
       experienceStats={[
         { number: "140+", label: "Cloud migration and modernization programs delivered to production" },
         { number: "37%", label: "Median reduction in run-rate cloud spend after FinOps engagement" },

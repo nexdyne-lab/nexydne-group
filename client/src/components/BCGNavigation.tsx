@@ -236,7 +236,7 @@ export default function BCGNavigation() {
     <>
       {/* Main Navigation Bar */}
       <nav 
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition duration-300 ${
           menuOpen 
             ? 'bg-white' 
             : isScrolled 
@@ -276,7 +276,7 @@ export default function BCGNavigation() {
               <img 
                 src="/nexdyne-logo-full.png" 
                 alt="NexDyne Intelligence & Consulting" 
-                className={`h-16 w-auto object-contain transition-all ${
+                className={`h-16 w-auto object-contain transition ${
                   menuOpen || isScrolled ? '' : 'brightness-0'
                 }`}
               />
@@ -334,7 +334,7 @@ export default function BCGNavigation() {
                   placeholder="Type to search"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="flex-1 text-lg bg-transparent border-none outline-none placeholder-gray-400"
+                  className="flex-1 text-lg bg-transparent border-none outline-none focus:ring-2 focus:ring-primary/40 rounded placeholder-charcoal/40"
                 />
               </div>
             </div>
@@ -359,7 +359,7 @@ export default function BCGNavigation() {
                   </button>
                   
                   {/* Subcategories */}
-                  <div className={`overflow-hidden transition-all duration-300 ${
+                  <div className={`overflow-hidden transition duration-300 ${
                     activeSection === 'services' ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                   }`}>
                     <div className="pl-4 pb-4 space-y-1">
@@ -395,7 +395,7 @@ export default function BCGNavigation() {
                   </button>
                   
                   {/* Subcategories */}
-                  <div className={`overflow-hidden transition-all duration-300 ${
+                  <div className={`overflow-hidden transition duration-300 ${
                     activeSection === 'insights' ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                   }`}>
                     <div className="pl-4 pb-4 space-y-1">
@@ -431,7 +431,7 @@ export default function BCGNavigation() {
                   </button>
                   
                   {/* Subcategories */}
-                  <div className={`overflow-hidden transition-all duration-300 ${
+                  <div className={`overflow-hidden transition duration-300 ${
                     activeSection === 'company' ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                   }`}>
                     <div className="pl-4 pb-4 space-y-1">

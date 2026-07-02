@@ -63,7 +63,7 @@ function FAQSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
-              className="border border-base/10 rounded-lg overflow-hidden"
+              className="border border-border rounded-lg overflow-hidden"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -77,7 +77,7 @@ function FAQSection() {
                 />
               </button>
               <div 
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                className={`overflow-hidden transition duration-300 ease-in-out ${
                   openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
@@ -95,7 +95,7 @@ function FAQSection() {
 
 export default function MidMarketAIAccess() {
   return (
-    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Mid-Market AI Access Program | NexDyne Initiatives" 
         description="Expanding access to enterprise-grade AI for America's mid-market companies. A national effort to make advanced AI, analytics, and automation accessible."
@@ -113,11 +113,11 @@ export default function MidMarketAIAccess() {
             className="absolute inset-0 w-full h-full object-cover"
           />
           {/* Dark overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/90 to-base/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/60" />
           {/* Subtle geometric pattern */}
           <div className="absolute inset-0 opacity-5">
-            <div className="absolute top-20 right-20 w-96 h-96 border border-white/20 rounded-full" />
-            <div className="absolute bottom-20 left-20 w-64 h-64 border border-white/20 rounded-full" />
+            <div className="absolute top-20 right-20 w-96 h-96 border border-border rounded-full" />
+            <div className="absolute bottom-20 left-20 w-64 h-64 border border-border rounded-full" />
           </div>
         </div>
         
@@ -129,7 +129,7 @@ export default function MidMarketAIAccess() {
             className="max-w-4xl"
           >
             <Link href="/#initiatives">
-              <span className="inline-flex items-center text-sm text-white/50 hover:text-white/80 transition-colors mb-8 cursor-pointer">
+              <span className="inline-flex items-center text-sm text-muted-foreground hover:text-muted-foreground transition-colors mb-8 cursor-pointer">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 NexDyne Initiatives
               </span>
@@ -139,11 +139,11 @@ export default function MidMarketAIAccess() {
               Mid-Market AI Access Program
             </span>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
               Expanding access to enterprise-grade AI for America's mid-market
             </h1>
             
-            <p className="text-lg md:text-xl text-white/70 leading-relaxed max-w-3xl">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl">
               NexDyne is leading a national effort to make advanced AI, analytics, and automation accessible to mid-market companies traditionally excluded from enterprise technology.
             </p>
           </motion.div>
@@ -273,7 +273,7 @@ export default function MidMarketAIAccess() {
       </section>
 
       {/* Why It Matters - With Full Width Image */}
-      <section className="py-20 md:py-28 bg-base">
+      <section className="py-20 md:py-28 bg-background">
         <div className="container px-4 md:px-12">
           {/* Full width image banner */}
           <motion.div
@@ -299,14 +299,14 @@ export default function MidMarketAIAccess() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl"
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/50 mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Why It Matters
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-8">
               Strengthening local economies through AI adoption
             </h2>
             
-            <div className="prose prose-lg max-w-none text-white/70 mb-12">
+            <div className="prose prose-lg max-w-none text-muted-foreground mb-12">
               <p className="text-lg leading-relaxed mb-6">
                 Mid-market companies employ millions of Americans but are underserved by modern AI infrastructure. The cost structures, implementation complexity, and talent requirements of enterprise AI have created a two-tier economy: Fortune 500 companies with AI-powered operations, and everyone else struggling to compete with legacy systems.
               </p>
@@ -333,7 +333,7 @@ export default function MidMarketAIAccess() {
                   className="flex items-start gap-3"
                 >
                   <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2.5 flex-shrink-0" />
-                  <span className="text-white/80">{impact}</span>
+                  <span className="text-muted-foreground">{impact}</span>
                 </motion.div>
               ))}
             </div>

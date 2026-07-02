@@ -86,7 +86,7 @@ export default function ModernizeLegacy() {
       {/* Hero Banner */}
       <section className="relative w-full pt-20">
         <div className="relative h-[350px] md:h-[400px] overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-destructive via-destructive to-base">
+          <div className="absolute inset-0 bg-background">
             <div className="absolute inset-0 opacity-30">
               <svg className="w-full h-full" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice">
                 <defs>
@@ -102,7 +102,7 @@ export default function ModernizeLegacy() {
 
           <div className="relative z-10 container h-full flex flex-col justify-center px-6 md:px-12">
             <Link href="/capabilities/artificial-intelligence">
-              <span className="inline-flex items-center text-white/80 hover:text-white text-sm mb-6 cursor-pointer transition-colors">
+              <span className="inline-flex items-center text-muted-foreground hover:text-primary text-sm mb-6 cursor-pointer transition-colors">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Artificial Intelligence
               </span>
@@ -111,7 +111,7 @@ export default function ModernizeLegacy() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white max-w-4xl leading-tight"
+              className="nx-h1 text-charcoal max-w-4xl"
             >
               Modernize legacy systems with AI
             </motion.h1>
@@ -119,7 +119,7 @@ export default function ModernizeLegacy() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-xl text-white/90 mt-4 max-w-2xl"
+              className="nx-lead text-charcoal/80 mt-4 max-w-2xl"
             >
               See how leading companies are transforming technical debt into competitive advantage.
             </motion.p>
@@ -128,7 +128,7 @@ export default function ModernizeLegacy() {
       </section>
 
       {/* Case Studies Grid */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="nx-section bg-white">
         <div className="container px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {caseStudies.map((study, index) => (
@@ -144,13 +144,13 @@ export default function ModernizeLegacy() {
                   <img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   {study.hasVideo && (
                     <div className="absolute top-4 left-4 w-12 h-12 bg-white/90 rounded-full flex items-center justify-center">
-                      <Play className="w-5 h-5 text-destructive fill-current ml-1" />
+                      <Play className="w-5 h-5 text-primary fill-current ml-1" />
                     </div>
                   )}
                 </div>
                 <div>
-                  <span className="text-destructive text-sm font-medium">{study.industry}</span>
-                  <h3 className="text-xl md:text-2xl font-bold text-charcoal mt-2 mb-3 leading-tight group-hover:text-destructive transition-colors">
+                  <span className="text-primary text-sm font-medium">{study.industry}</span>
+                  <h3 className="nx-h3 text-charcoal mt-2 mb-3 group-hover:text-primary transition-colors">
                     {study.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed mb-4">{study.description}</p>
@@ -163,8 +163,8 @@ export default function ModernizeLegacy() {
       </section>
 
       {/* Our AI Consulting Services Banner */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-base via-base to-base">
+      <section className="relative nx-section overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background to-background">
           <div className="absolute inset-0 opacity-20">
             <svg className="w-full h-full" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid slice">
               <path d="M0,150 Q300,50 600,150 T1200,150" fill="none" stroke="rgba(255,255,255,0.2)" strokeWidth="2"/>
@@ -173,7 +173,7 @@ export default function ModernizeLegacy() {
         </div>
         <div className="relative z-10 container px-6 md:px-12">
           <Link href="/capabilities/artificial-intelligence">
-            <span className="inline-flex items-center text-white text-xl md:text-2xl font-medium cursor-pointer group">
+            <span className="inline-flex items-center text-charcoal text-xl md:text-2xl font-medium cursor-pointer group">
               Our AI Consulting Services
               <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform" />
             </span>
@@ -182,11 +182,11 @@ export default function ModernizeLegacy() {
       </section>
 
       {/* Our Latest AI Insights */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="nx-section bg-white">
         <div className="container px-6 md:px-12">
           <div className="flex items-center justify-center mb-12">
             <div className="flex-1 h-px bg-muted"></div>
-            <h2 className="px-8 text-2xl md:text-3xl font-bold text-charcoal">
+            <h2 className="px-8 nx-h2 text-charcoal">
               Our Latest AI Insights
             </h2>
             <div className="flex-1 h-px bg-muted"></div>
@@ -198,8 +198,8 @@ export default function ModernizeLegacy() {
                 <div className="relative aspect-[4/3] overflow-hidden mb-4">
                   <img src={insight.image} alt={insight.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
-                <span className="text-destructive text-sm font-medium">{insight.category}</span>
-                <h3 className="text-lg font-bold text-charcoal mt-2 mb-2 leading-tight group-hover:text-destructive transition-colors">{insight.title}</h3>
+                <span className="text-primary text-sm font-medium">{insight.category}</span>
+                <h3 className="nx-h3 text-charcoal mt-2 mb-2 group-hover:text-primary transition-colors">{insight.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{insight.description}</p>
               </motion.article>
             ))}
@@ -208,16 +208,16 @@ export default function ModernizeLegacy() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-20 bg-subtle">
+      <section className="nx-section bg-subtle">
         <div className="container px-6 md:px-12 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-4">
+          <h2 className="nx-h2 text-charcoal mb-4">
             Ready to modernize your legacy systems?
           </h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
             Let's discuss how AI can help you unlock value from existing systems while preparing for the future.
           </p>
           <Link href="/contact">
-            <span className="inline-flex items-center px-8 py-4 bg-destructive text-white font-semibold rounded hover:bg-destructive transition-colors cursor-pointer">
+            <span className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-semibold rounded hover:bg-primary-hover transition-colors cursor-pointer">
               Contact Us
               <ArrowRight className="w-5 h-5 ml-2" />
             </span>

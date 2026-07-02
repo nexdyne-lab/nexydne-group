@@ -15,7 +15,7 @@ export default function CenterOfExcellence() {
       serviceName="Center of Excellence"
       serviceSlug="center-of-excellence"
       heroSubtitle="Build internal automation capabilities with governance frameworks, training programs, and reusable component libraries. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-process-automation.b1f9c248.jpg"
+      heroImage="/blog-process-mining.50313a07.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Center of Excellence engagements delivered" },
@@ -68,7 +68,7 @@ export default function CenterOfExcellence() {
           title: "How a regional bank cut loan processing time by 80% with intelligent automation",
           industry: "Financial Services",
           metric: "80%",
-          image: "/case-bank-automation.2f1e7c12.jpg",
+          image: "/case-banker-meeting.c53f3999.jpg",
         },
       ]}
       relatedServices={[

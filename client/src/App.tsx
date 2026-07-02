@@ -220,6 +220,10 @@ import HealthcareProviderAI from "./pages/cases/HealthcareProviderAI";
 import WhyIntelligentAutomationInsight from "./pages/insights/WhyIntelligentAutomationInsight";
 import HowAIAgentsTransformInsight from "./pages/insights/HowAIAgentsTransformInsight";
 import CompleteGuideProcessMiningInsight from "./pages/insights/CompleteGuideProcessMiningInsight";
+import StrategyFinanceInsight from "./pages/insights/StrategyFinanceInsight";
+import OperationsInsight from "./pages/insights/OperationsInsight";
+import GrowthMarketingInsight from "./pages/insights/GrowthMarketingInsight";
+import AIAdoptionOutlook2026 from "./pages/insights/AIAdoptionOutlook2026";
 import AIAgentsTransformOperations from "./pages/insights/AIAgentsTransformOperations";
 import ProcessMiningGuide from "./pages/insights/ProcessMiningGuide";
 import Insights from "./pages/Insights";
@@ -296,6 +300,7 @@ import About from "./pages/About";
 import USOffice from "./pages/USOffice";
 import PurposeMissionValues from "./pages/PurposeMissionValues";
 import OurImpact from "./pages/OurImpact";
+import LeadershipTeam from "./pages/LeadershipTeam";
 import TeamMemberProfile from "@/pages/TeamMemberProfile";
 import OurPeople from "@/pages/OurPeople";
 import Careers from "@/pages/Careers";
@@ -1316,6 +1321,10 @@ function Router() {
         <Route path="/insights/why-intelligent-automation-isnt-optional-anymore" component={WhyIntelligentAutomationInsight} />
         <Route path="/insights/how-ai-agents-transform-enterprise-operations" component={HowAIAgentsTransformInsight} />
         <Route path="/insights/complete-guide-process-mining" component={CompleteGuideProcessMiningInsight} />
+        <Route path="/insights/strategy-finance" component={StrategyFinanceInsight} />
+        <Route path="/insights/operations" component={OperationsInsight} />
+        <Route path="/insights/growth-marketing" component={GrowthMarketingInsight} />
+        <Route path="/insights/ai-adoption-outlook-2026" component={AIAdoptionOutlook2026} />
         <Route path="/insights/ceo-guide-data-modernization" component={CeoGuideDataModernization} />
         <Route path="/insights/building-data-culture" component={BuildingDataCulture} />
         <Route path="/insights/cloud-native-architecture" component={CloudNativeArchitecture} />
@@ -1541,6 +1550,7 @@ function Router() {
         <Route path="/about" component={About} />
         <Route path="/about/values" component={PurposeMissionValues} />
         <Route path="/about/impact" component={OurImpact} />
+        <Route path="/about/team" component={LeadershipTeam} />
         <Route path="/about/us-office" component={USOffice} />
         <Route path="/offices" component={Offices} />
         <Route path="/careers" component={Careers} />

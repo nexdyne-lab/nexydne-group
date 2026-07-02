@@ -41,7 +41,7 @@ export default function BainHoverCard({
 
       {/* Red top border on hover */}
       <div 
-        className={`absolute top-0 left-0 right-0 h-1 bg-destructive transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+        className={`absolute top-0 left-0 right-0 h-1 bg-primary transition duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
           isHovered ? 'opacity-100' : 'opacity-0'
         }`}
         style={{ zIndex: 1 }}
@@ -49,7 +49,7 @@ export default function BainHoverCard({
       
       {/* Title - shrinks on hover */}
       <h3 
-        className={`font-bold text-charcoal leading-tight transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+        className={`font-bold text-charcoal leading-tight transition duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
           isHovered ? 'text-lg mb-4' : 'text-2xl mb-auto'
         }`}
         style={{ position: 'relative', zIndex: 1 }}
@@ -59,7 +59,7 @@ export default function BainHoverCard({
       
       {/* Description - appears on hover */}
       <div 
-        className={`transition-all duration-600 ease-[cubic-bezier(0.4,0,0.2,1)] overflow-hidden ${
+        className={`transition duration-600 ease-[cubic-bezier(0.4,0,0.2,1)] overflow-hidden ${
           isHovered ? 'opacity-100 max-h-40 mb-6' : 'opacity-0 max-h-0'
         }`}
         style={{ position: 'relative', zIndex: 1 }}
@@ -71,7 +71,7 @@ export default function BainHoverCard({
       
       {/* Read More link - always at bottom */}
       <Link href={link} className="mt-auto" style={{ position: 'relative', zIndex: 1 }}>
-        <span className="inline-flex items-center text-destructive text-sm font-semibold hover:underline">
+        <span className="inline-flex items-center text-primary text-sm font-semibold hover:underline">
           Read More
           <ArrowRight
             className="ml-2 w-4 h-4"

@@ -9,7 +9,7 @@ import { RelatedContent } from "@/components/RelatedContent";
 
 export default function QualityManagement() {
   return (
-    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Quality Management Systems" 
         description="Build a culture of quality that exceeds customer expectations. Implement systematic quality controls and continuous improvement methodologies."
@@ -17,49 +17,42 @@ export default function QualityManagement() {
       />
       <Navbar />
       
-      {/* DZ10 Hero Section */}
-      <section className="relative min-h-[440px] md:min-h-[560px] flex items-center pt-16 sm:pt-20 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80"
-            alt="Quality Management Systems" 
-            className="w-full h-full object-cover opacity-40"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/80 to-base/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent" />
-        </div>
-        
-        <div className="container px-4 sm:px-6 md:px-12 relative z-10">
+      {/* Hero Section */}
+      <section className="relative w-full bg-background overflow-hidden pt-16 sm:pt-20">
+        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(70% 60% at 82% 14%, rgba(224,76,44,0.05) 0%, transparent 55%), radial-gradient(55% 55% at 6% 95%, rgba(111,68,163,0.045) 0%, transparent 55%)" }} />
+        <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-4xl"
+            className="flex flex-col justify-center min-h-[56vh] py-24 lg:py-28"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
-              Operations / Quality
-            </span>
-            
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight text-white leading-[1.05] mb-5 sm:mb-3 md:mb-4">
-              Quality Management <br />
-              <span className="text-primary">Systems</span>
-            </h1>
-            
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
-              Build a culture of quality that exceeds customer expectations. We implement systematic quality controls, compliance frameworks, and continuous improvement methodologies.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <Link href="/contact">
-                <Button className="bg-primary hover:bg-primary/90 text-white px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-primary/20">
-                  Discuss Quality Excellence
-                </Button>
-              </Link>
-              <Link href="/cases">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all duration-300 bg-transparent hover:scale-[1.02]">
-                  View Case Studies
-                </Button>
-              </Link>
+            <div className="max-w-[920px]">
+              <div className="flex items-center gap-3 mb-6">
+                <span className="block h-[3px] w-9 bg-primary" />
+                <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Operations / Quality</span>
+              </div>
+
+              <h1 className="text-charcoal font-bold tracking-[-0.035em] leading-[1.0] text-[clamp(2.4rem,5.4vw,4.2rem)]">
+                Quality Management Systems
+              </h1>
+
+              <p className="mt-7 text-[1.1rem] md:text-[1.2rem] leading-[1.55] text-muted-foreground max-w-[60ch]">
+                Build a culture of quality that exceeds customer expectations. We implement systematic quality controls, compliance frameworks, and continuous improvement methodologies.
+              </p>
+
+              <div className="mt-9 flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-7">
+                <Link href="/contact">
+                  <span className="inline-block bg-primary text-primary-foreground px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.1em] hover:bg-primary-hover transition-colors">
+                    Discuss Quality Excellence
+                  </span>
+                </Link>
+                <Link href="/cases">
+                  <span className="inline-block text-charcoal text-[13px] font-semibold uppercase tracking-[0.1em] border-b-2 border-charcoal/25 hover:border-primary pb-1 transition-colors">
+                    View Case Studies
+                  </span>
+                </Link>
+              </div>
             </div>
           </motion.div>
         </div>
@@ -93,11 +86,11 @@ export default function QualityManagement() {
               </div>
 
               <div className="pt-8 grid grid-cols-2 gap-4 sm:p-5 md:p-6">
-                <div className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl">
+                <div className="p-4 sm:p-5 md:p-6 bg-charcoal/5 rounded-lg sm:rounded-xl">
                   <div className="text-4xl font-bold text-primary mb-2">25-40%</div>
                   <p className="text-sm text-charcoal/60 uppercase tracking-wider">Customer Satisfaction Improvement</p>
                 </div>
-                <div className="p-4 sm:p-5 md:p-6 bg-base/5 rounded-lg sm:rounded-xl">
+                <div className="p-4 sm:p-5 md:p-6 bg-charcoal/5 rounded-lg sm:rounded-xl">
                   <div className="text-4xl font-bold text-primary mb-2">30-50%</div>
                   <p className="text-sm text-charcoal/60 uppercase tracking-wider">Quality Cost Reduction</p>
                 </div>
@@ -111,21 +104,21 @@ export default function QualityManagement() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="grid grid-cols-2 gap-4"
             >
-              <div className="p-4 sm:p-6 md:p-8 bg-base/5 rounded-lg sm:rounded-xl">
+              <div className="p-4 sm:p-6 md:p-8 bg-charcoal/5 rounded-lg sm:rounded-xl">
                 <div className="text-4xl font-bold text-primary mb-2">60-80%</div>
                 <div className="text-sm text-charcoal/60">Defect reduction</div>
               </div>
-              <div className="p-4 sm:p-6 md:p-8 bg-base/5 rounded-lg sm:rounded-xl">
+              <div className="p-4 sm:p-6 md:p-8 bg-charcoal/5 rounded-lg sm:rounded-xl">
                 <div className="text-4xl font-bold text-primary mb-2">100%</div>
                 <div className="text-sm text-charcoal/60">Compliance achievement</div>
               </div>
               <div className="col-span-2 relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80" 
-                  alt="Quality Excellence" 
+                <img
+                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80"
+                  alt="Quality Excellence"
                   className="w-full h-48 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent opacity-60" />
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent opacity-80" />
               </div>
             </motion.div>
           </div>
@@ -133,7 +126,7 @@ export default function QualityManagement() {
       </section>
 
       {/* DZ10 Offerings Grid */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-background">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -142,13 +135,13 @@ export default function QualityManagement() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Our Capabilities
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               Comprehensive quality solutions
             </h2>
-            <p className="text-xl text-white/60 max-w-2xl">
+            <p className="text-xl text-muted-foreground max-w-2xl">
               End-to-end quality management capabilities to embed excellence across your organization.
             </p>
           </motion.div>
@@ -195,15 +188,15 @@ export default function QualityManagement() {
                 className="group"
               >
                 <div className="h-full flex flex-col">
-                  <div className="mb-6 p-3 bg-white/5 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                  <div className="mb-6 p-3 bg-charcoal/5 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition duration-300">
                     {item.icon}
                   </div>
-                  
-                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
+
+                  <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
-                  
-                  <p className="text-white/60 leading-relaxed text-sm flex-grow">
+
+                  <p className="text-muted-foreground leading-relaxed text-sm flex-grow">
                     {item.description}
                   </p>
                 </div>
@@ -264,7 +257,7 @@ export default function QualityManagement() {
                   alt="Quality Methodology" 
                   className="w-full h-auto"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent opacity-60" />
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent opacity-80" />
               </div>
             </motion.div>
           </div>
@@ -272,7 +265,7 @@ export default function QualityManagement() {
       </section>
 
       {/* DZ10 Case Studies Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 sm:mb-12 md:mb-16 gap-4 sm:p-5 md:p-6">
             <motion.div
@@ -281,15 +274,15 @@ export default function QualityManagement() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
+              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Our Impact
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
                 Quality transformations
               </h2>
             </motion.div>
             <Link href="/cases">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 bg-transparent transition-all duration-300 hover:scale-[1.02]">
+              <Button variant="outline" className="border-border text-charcoal hover:bg-charcoal/5 bg-transparent transition duration-300 hover:scale-[1.02]">
                 View all case studies
               </Button>
             </Link>
@@ -330,10 +323,10 @@ export default function QualityManagement() {
                   <div className="absolute inset-0 bg-charcoal/20 group-hover:bg-transparent transition-colors duration-500" />
                 </div>
                 <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
-                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">
+                <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                   {study.title}
                 </h3>
-                <div className="flex items-center text-white text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                <div className="flex items-center text-charcoal text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                   Read case study <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4" />
                 </div>
               </motion.div>
@@ -373,7 +366,7 @@ export default function QualityManagement() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center p-4 sm:p-6 md:p-8 bg-base/5 rounded-lg sm:rounded-xl"
+                className="text-center p-4 sm:p-6 md:p-8 bg-charcoal/5 rounded-lg sm:rounded-xl"
               >
                 <div className="text-5xl font-bold text-primary mb-2">{item.metric}</div>
                 <p className="text-sm text-charcoal/60 uppercase tracking-wider">{item.label}</p>

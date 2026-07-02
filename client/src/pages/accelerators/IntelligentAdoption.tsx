@@ -148,7 +148,7 @@ export default function IntelligentAdoption() {
             >
               <Breadcrumbs variant="light" />
               
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-4 eb-garamond">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-4">
                 Intelligent Adoption
               </h1>
               
@@ -186,7 +186,7 @@ export default function IntelligentAdoption() {
             <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Core Capabilities
             </motion.span>
-            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
+            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               People-centered transformation
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
@@ -205,9 +205,9 @@ export default function IntelligentAdoption() {
               <motion.div 
                 key={i}
                 variants={fadeInUp}
-                className="group bg-slate-50 rounded-2xl p-8 hover:bg-slate-100 transition-colors"
+                className="group bg-off-white rounded-2xl p-8 hover:bg-subtle transition-colors"
               >
-                <div className="w-14 h-14 bg-emerald-900 rounded-xl flex items-center justify-center mb-6">
+                <div className="w-14 h-14 bg-charcoal rounded-xl flex items-center justify-center mb-6">
                   <capability.icon className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-charcoal mb-3">{capability.title}</h3>
@@ -215,7 +215,7 @@ export default function IntelligentAdoption() {
                 <ul className="space-y-2">
                   {capability.benefits.map((benefit, j) => (
                     <li key={j} className="flex items-center text-sm text-charcoal/80">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-amber mr-2 flex-shrink-0" />
                       {benefit}
                     </li>
                   ))}
@@ -227,7 +227,7 @@ export default function IntelligentAdoption() {
       </section>
 
       {/* Adoption Framework Section */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-off-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div 
             initial="hidden"
@@ -239,7 +239,7 @@ export default function IntelligentAdoption() {
             <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Our Framework
             </motion.span>
-            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
+            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               The NexDyne Adoption Framework
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
@@ -258,20 +258,20 @@ export default function IntelligentAdoption() {
               <motion.div 
                 key={i}
                 variants={fadeInUp}
-                className="bg-white rounded-2xl p-8 border border-slate-200 hover:border-emerald-300 hover:shadow-lg transition-all"
+                className="bg-white rounded-2xl p-8 border border-border hover:border-amber/25 hover:shadow-lg transition"
               >
-                <div className="text-xs font-bold tracking-[0.2em] text-emerald-600 uppercase mb-2">
+                <div className="text-xs font-bold tracking-[0.2em] text-amber uppercase mb-2">
                   Phase {i + 1}
                 </div>
                 <h3 className="text-xl font-bold text-charcoal mb-2">{phase.phase}</h3>
                 <p className="text-sm text-muted-foreground mb-4">{phase.title}</p>
                 <p className="text-muted-foreground text-sm mb-6 leading-relaxed">{phase.description}</p>
-                <div className="pt-4 border-t border-slate-100">
+                <div className="pt-4 border-t border-border">
                   <span className="text-xs font-medium tracking-wider text-muted-foreground uppercase mb-2 block">Key Activities</span>
                   <ul className="space-y-1">
                     {phase.activities.map((activity, j) => (
                       <li key={j} className="text-sm text-muted-foreground flex items-center">
-                        <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-2" />
+                        <span className="w-1.5 h-1.5 bg-amber rounded-full mr-2" />
                         {activity}
                       </li>
                     ))}
@@ -296,7 +296,7 @@ export default function IntelligentAdoption() {
               <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
                 What Drives Success
               </motion.span>
-              <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
+              <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
                 The four pillars of successful adoption
               </motion.h2>
               <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed mb-8">
@@ -316,7 +316,7 @@ export default function IntelligentAdoption() {
                 <motion.div 
                   key={i}
                   variants={fadeInUp}
-                  className="bg-slate-50 rounded-xl p-6"
+                  className="bg-off-white rounded-xl p-6"
                 >
                   <h3 className="text-lg font-bold text-charcoal mb-2">{factor.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{factor.description}</p>
@@ -328,7 +328,7 @@ export default function IntelligentAdoption() {
       </section>
 
       {/* Use Cases Section */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-off-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div 
             initial="hidden"
@@ -340,7 +340,7 @@ export default function IntelligentAdoption() {
             <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Industry Applications
             </motion.span>
-            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
+            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               Adoption excellence in action
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
@@ -359,7 +359,7 @@ export default function IntelligentAdoption() {
               <motion.div 
                 key={i}
                 variants={fadeInUp}
-                className="bg-emerald-900 rounded-2xl p-8 text-white"
+                className="bg-charcoal rounded-2xl p-8 text-white"
               >
                 <span className="text-xs font-medium tracking-[0.15em] text-white/60 uppercase mb-4 block">
                   {useCase.industry}
@@ -367,7 +367,7 @@ export default function IntelligentAdoption() {
                 <h3 className="text-xl font-bold mb-4">{useCase.title}</h3>
                 <p className="text-white/70 mb-6 leading-relaxed">{useCase.description}</p>
                 <div className="pt-4 border-t border-white/10">
-                  <div className="text-2xl font-bold text-teal-400">{useCase.results}</div>
+                  <div className="text-2xl font-bold text-primary">{useCase.results}</div>
                 </div>
               </motion.div>
             ))}
@@ -376,7 +376,7 @@ export default function IntelligentAdoption() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-emerald-900">
+      <section className="py-24 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto text-center">
             <motion.h2 
@@ -384,7 +384,7 @@ export default function IntelligentAdoption() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 eb-garamond"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6"
             >
               Ready to ensure your transformation succeeds?
             </motion.h2>
@@ -406,13 +406,13 @@ export default function IntelligentAdoption() {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Link href="/contact">
-                <span className="inline-flex items-center justify-center px-8 py-4 bg-white text-emerald-900 font-semibold rounded-full hover:bg-subtle transition-all cursor-pointer group">
+                <span className="inline-flex items-center justify-center px-8 py-4 bg-white text-amber font-semibold rounded-full hover:bg-subtle transition cursor-pointer group">
                   Get Change Assessment
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Link>
               <Link href="/capabilities/ai-technology-consulting">
-                <span className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all cursor-pointer">
+                <span className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition cursor-pointer">
                   Explore All Accelerators
                 </span>
               </Link>

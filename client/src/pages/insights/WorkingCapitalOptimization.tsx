@@ -10,7 +10,7 @@ import { SEO } from "@/components/SEO";
 
 export default function WorkingCapitalOptimization() {
   return (
-    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Working Capital Optimization | NexDyne Technologies" 
         description="Learn how to unlock cash trapped in your balance sheet through strategic working capital management."
@@ -21,7 +21,7 @@ export default function WorkingCapitalOptimization() {
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/70 to-base"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/70 to-background"></div>
         
         <div className="container relative z-10 px-4 md:px-12">
           <Breadcrumbs />
@@ -30,10 +30,10 @@ export default function WorkingCapitalOptimization() {
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-4">
               <span className="text-primary">Working Capital</span> Optimization
             </h1>
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl">
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl">
               How to unlock cash trapped in your balance sheet through strategic working capital management and process improvement.
             </p>
-            <div className="flex items-center gap-6 mt-8 text-sm text-white/60">
+            <div className="flex items-center gap-6 mt-8 text-sm text-muted-foreground">
               <span className="flex items-center gap-2"><Clock className="w-4 h-4" />9 min read</span>
               <span>December 2024</span>
             </div>
@@ -58,21 +58,21 @@ export default function WorkingCapitalOptimization() {
             
             <div className="space-y-8 mb-12">
               <div className="flex gap-6">
-                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center"><Package className="w-6 h-6" /></div></div>
+                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center"><Package className="w-6 h-6" /></div></div>
                 <div>
                   <h3 className="text-xl font-bold text-charcoal mb-2">Inventory (Days Inventory Outstanding)</h3>
                   <p className="text-charcoal/70 leading-relaxed">Inventory is often the largest working capital component and the one with the most opportunity. Excess inventory ties up cash, increases carrying costs, and creates obsolescence risk.</p>
                 </div>
               </div>
               <div className="flex gap-6">
-                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center"><DollarSign className="w-6 h-6" /></div></div>
+                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center"><DollarSign className="w-6 h-6" /></div></div>
                 <div>
                   <h3 className="text-xl font-bold text-charcoal mb-2">Receivables (Days Sales Outstanding)</h3>
                   <p className="text-charcoal/70 leading-relaxed">Every day of DSO represents cash that could be in your bank account. Improving collections and credit management accelerates cash flow without impacting customer relationships.</p>
                 </div>
               </div>
               <div className="flex gap-6">
-                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center"><Clock className="w-6 h-6" /></div></div>
+                <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center"><Clock className="w-6 h-6" /></div></div>
                 <div>
                   <h3 className="text-xl font-bold text-charcoal mb-2">Payables (Days Payables Outstanding)</h3>
                   <p className="text-charcoal/70 leading-relaxed">Optimizing payment timing—not stretching suppliers unfairly—can improve cash position. The goal is to pay on time, not early, and to capture early payment discounts when economically attractive.</p>
@@ -80,7 +80,7 @@ export default function WorkingCapitalOptimization() {
               </div>
             </div>
 
-            <div className="p-8 bg-base/5 rounded-xl mb-12">
+            <div className="p-8 bg-charcoal/5 rounded-xl mb-12">
               <h3 className="text-xl font-bold text-charcoal mb-4 flex items-center gap-3"><TrendingUp className="w-6 h-6 text-primary" />The Cash Conversion Cycle</h3>
               <p className="text-charcoal/70 mb-4">The Cash Conversion Cycle (CCC) measures how long cash is tied up in working capital:</p>
               <div className="p-4 bg-white rounded-lg text-center font-mono text-charcoal">
@@ -107,23 +107,23 @@ export default function WorkingCapitalOptimization() {
 
             <h2 className="text-3xl font-bold text-charcoal mb-6">Implementation Considerations</h2>
             <div className="space-y-6 mb-12">
-              <div className="p-6 bg-base/5 rounded-xl">
+              <div className="p-6 bg-charcoal/5 rounded-xl">
                 <h4 className="text-lg font-bold text-charcoal mb-2">Baseline and Target Setting</h4>
                 <p className="text-charcoal/70">Establish clear baselines and targets for each working capital component. Benchmark against industry peers to identify opportunity.</p>
               </div>
-              <div className="p-6 bg-base/5 rounded-xl">
+              <div className="p-6 bg-charcoal/5 rounded-xl">
                 <h4 className="text-lg font-bold text-charcoal mb-2">Cross-Functional Alignment</h4>
                 <p className="text-charcoal/70">Working capital spans finance, operations, sales, and procurement. Success requires alignment across functions with shared metrics and incentives.</p>
               </div>
-              <div className="p-6 bg-base/5 rounded-xl">
+              <div className="p-6 bg-charcoal/5 rounded-xl">
                 <h4 className="text-lg font-bold text-charcoal mb-2">Sustainability</h4>
                 <p className="text-charcoal/70">One-time improvements are easy; sustaining them is hard. Build working capital management into ongoing processes and performance management.</p>
               </div>
             </div>
 
-            <div className="p-8 bg-primary text-white rounded-xl mb-12">
+            <div className="p-8 bg-primary text-charcoal rounded-xl mb-12">
               <h3 className="text-xl font-bold mb-4">The Bottom Line</h3>
-              <p className="text-white/90 leading-relaxed">
+              <p className="text-charcoal/90 leading-relaxed">
                 Working capital optimization is one of the highest-ROI initiatives available to most organizations. It releases cash without requiring revenue growth or cost cutting, and the improvements are often sustainable with proper process and governance. For organizations looking to fund growth, reduce debt, or improve returns, working capital should be a priority.
               </p>
             </div>
@@ -133,11 +133,11 @@ export default function WorkingCapitalOptimization() {
       </article>
 
       {/* Related Insights */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mb-16">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">Related Insights</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white">Continue reading</h2>
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">Related Insights</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">Continue reading</h2>
           </motion.div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
             {[
@@ -147,15 +147,15 @@ export default function WorkingCapitalOptimization() {
               <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.1 }}>
                 <Link href={item.link} className="group block h-full p-8 bg-white/5 rounded-xl hover:bg-white/10 transition-colors">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.category}</span>
-                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
-                  <p className="text-white/60 mt-2">{item.description}</p>
-                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">Read insight <ArrowRight className="w-3 h-3" /></span>
+                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">{item.title}</h3>
+                  <p className="text-muted-foreground mt-2">{item.description}</p>
+                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-[gap]">Read insight <ArrowRight className="w-3 h-3" /></span>
                 </Link>
               </motion.div>
             ))}
           </div>
           <div className="text-center mt-16">
-            <Link href="/insights"><Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent"><ArrowLeft className="w-4 h-4 mr-2" />Back to all insights</Button></Link>
+            <Link href="/insights"><Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-8 py-6 text-base font-semibold transition bg-transparent"><ArrowLeft className="w-4 h-4 mr-2" />Back to all insights</Button></Link>
           </div>
         </div>
       </section>

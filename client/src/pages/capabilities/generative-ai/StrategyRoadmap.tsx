@@ -15,7 +15,7 @@ export default function StrategyRoadmap() {
       serviceName="GenAI Strategy & Roadmap"
       serviceSlug="strategy-roadmap"
       heroSubtitle="Define a high-impact Generative AI roadmap with specific goals, quantified ROI, and detailed execution plans including feasibility studies and risk assessments. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-generative-ai.7ab8e23c.jpg"
+      heroImage="/blog-ai-agents.eba3d75f.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "GenAI Strategy & Roadmap engagements delivered" },

@@ -11,12 +11,12 @@ import SocialShare from '@/components/SocialShare';
 
 export default function WhyNPSIsAVanityMetric() {
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-secondary selection:text-base">
+    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary selection:text-white">
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-base text-white py-16 md:py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-base/50 z-10" />
+      <section className="bg-background text-charcoal py-16 md:py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/50 z-10" />
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop')] opacity-10 bg-cover bg-center" />
         
         <div className="container max-w-4xl mx-auto px-4 relative z-20">
@@ -25,7 +25,7 @@ export default function WhyNPSIsAVanityMetric() {
           </div>
           
           <div className="flex flex-wrap gap-4 mb-6">
-            <span className="inline-flex items-center gap-2 text-sm text-blue-300 font-medium px-3 py-1 rounded-full bg-blue-900/30 border border-blue-800">
+            <span className="inline-flex items-center gap-2 text-sm text-primary font-medium px-3 py-1 rounded-full bg-charcoal/30 border border-primary">
               <Tag className="w-4 h-4" />
               Data Science
             </span>
@@ -92,7 +92,7 @@ export default function WhyNPSIsAVanityMetric() {
               NPS is a lagging indicator. It measures sentiment <em>after</em> an interaction has occurred. By the time a customer tells you they are unhappy (a Detractor score), they have likely already made the decision to leave. Relying on NPS to prevent churn is like driving a car by looking exclusively in the rearview mirror.
             </p>
 
-            <div className="bg-blue-50 border-l-4 border-secondary p-6 my-8 rounded-r-lg">
+            <div className="bg-primary/5 border-l-4 border-secondary p-6 my-8 rounded-r-lg">
               <h3 className="text-lg font-bold text-base mt-0 mb-2">The "Silent Churn" Phenomenon</h3>
               <p className="mb-0 text-charcoal/80">
                 Our research shows that 65% of customers who churn never respond to a survey. They simply stop logging in, stop using key features, and then cancel. NPS completely misses this "silent majority."
@@ -125,7 +125,7 @@ export default function WhyNPSIsAVanityMetric() {
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 md:p-12 bg-base rounded-2xl text-white relative overflow-hidden">
+          <div className="mt-16 p-8 md:p-12 bg-background rounded-2xl text-charcoal relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -mr-32 -mt-32" />
             <div className="relative z-10">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">Stop guessing who will churn.</h3>
@@ -133,7 +133,7 @@ export default function WhyNPSIsAVanityMetric() {
                 NexDyne builds predictive health scoring models that identify at-risk customers 60 days before they cancel.
               </p>
               <Link href="/contact">
-                <button className="px-8 py-4 bg-secondary hover:bg-secondary text-base rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
+                <button className="px-8 py-4 bg-secondary hover:bg-secondary text-base rounded-full font-bold transition transform hover:scale-105 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
                   Audit Your Retention Metrics
                 </button>
               </Link>

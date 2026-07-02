@@ -1,123 +1,108 @@
 import { Link } from "wouter";
+import { ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
 
+// The 16 industries we serve — titles, slugs, and images mirror the detail
+// pages (client/src/pages/industries/*) so links and imagery stay in sync.
 const industries = [
   {
-    title: "Retail & E-commerce",
-    description: "Transform your retail operations with intelligent automation, personalized customer experiences, and data-driven inventory management. From point-of-sale optimization to omnichannel fulfillment, we help retailers compete in the digital age.",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80",
-    href: "/industries/retail",
-    solutions: [
-      "Inventory optimization & demand forecasting",
-      "Customer behavior analytics & personalization",
-      "Omnichannel order fulfillment automation",
-      "Dynamic pricing & promotion optimization"
-    ]
+    title: "Aerospace & Defense",
+    description: "Digital engineering, AI-powered operations, and resilient supply chains that compress cycle times without compromising security or compliance.",
+    image: "/hero-bg-aerial.1d9ee9e9.jpg",
+    href: "/industries/aerospace-defense",
   },
   {
-    title: "Healthcare",
-    description: "Enhance patient care and operational efficiency with AI-powered solutions that streamline administrative workflows, improve diagnostic accuracy, and enable predictive health analytics while maintaining strict compliance standards.",
-    image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&q=80",
-    href: "/industries/healthcare",
-    solutions: [
-      "Patient data management & EHR integration",
-      "Appointment scheduling & resource optimization",
-      "Claims processing automation",
-      "Predictive analytics for patient outcomes"
-    ]
+    title: "Automotive",
+    description: "Navigating the CASE shift — software-defined vehicles, EV programs, and smart factories — without losing operational discipline.",
+    image: "/case-study-manufacturing.8d72bf05.jpg",
+    href: "/industries/automotive",
   },
   {
-    title: "Financial Services",
-    description: "Navigate complex regulatory environments while delivering superior customer experiences. Our solutions enable real-time risk assessment, fraud detection, and intelligent process automation for banks, insurers, and fintech companies.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-    href: "/industries/financial-services",
-    solutions: [
-      "Fraud detection & risk management",
-      "Regulatory compliance automation",
-      "Customer onboarding & KYC optimization",
-      "Portfolio analytics & investment insights"
-    ]
-  },
-  {
-    title: "Manufacturing",
-    description: "Optimize production efficiency and supply chain resilience with IoT-enabled monitoring, predictive maintenance, and intelligent quality control. We help manufacturers reduce downtime, minimize waste, and accelerate time-to-market.",
-    image: "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=800&q=80",
-    href: "/industries/manufacturing",
-    solutions: [
-      "Predictive maintenance & asset optimization",
-      "Supply chain visibility & demand planning",
-      "Quality control automation",
-      "Production scheduling optimization"
-    ]
-  },
-  {
-    title: "Agriculture",
-    description: "Modernize agricultural operations with precision farming technologies, crop yield prediction, and supply chain optimization. Our solutions help agribusinesses increase productivity while promoting sustainable practices.",
-    image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80",
-    solutions: [
-      "Crop yield prediction & optimization",
-      "IoT-enabled farm monitoring",
-      "Supply chain & distribution optimization",
-      "Weather analytics & risk management"
-    ]
+    title: "Consumer Products",
+    description: "Turning data, AI, and a more direct customer relationship into growth and margin that move in the same direction.",
+    image: "/case-strategy-consulting.dfdd1294.jpg",
+    href: "/industries/consumer-products",
   },
   {
     title: "Education",
-    description: "Empower educational institutions with personalized learning platforms, administrative automation, and data-driven insights that improve student outcomes. From K-12 to higher education, we help educators focus on what matters most.",
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
-    solutions: [
-      "Learning management system optimization",
-      "Student performance analytics",
-      "Administrative workflow automation",
-      "Personalized learning pathways"
-    ]
+    description: "AI-powered personalization and modern student-success infrastructure that improve learning outcomes while respecting the mission.",
+    image: "/blog-team-collaboration.913d82ea.jpg",
+    href: "/industries/education",
   },
   {
-    title: "Professional Services & Consulting",
-    description: "Elevate your professional services firm with intelligent knowledge management, client engagement analytics, and automated workflows. From consulting firms to law practices and accounting services, we help you deliver exceptional client value while optimizing operations.",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
-    solutions: [
-      "Knowledge management & document intelligence",
-      "Client engagement analytics",
-      "Project resource optimization",
-      "Billing & time tracking automation"
-    ]
+    title: "Energy & Utilities",
+    description: "Running the energy transition as a transformation program — AI-powered asset performance and smart-grid technologies.",
+    image: "/hero-cityscape.b7c4f9e2.png",
+    href: "/industries/energy-utilities",
   },
   {
-    title: "Logistics & Transportation",
-    description: "Optimize your supply chain operations with IoT-enabled tracking, predictive analytics, and intelligent route optimization. We help logistics companies, freight forwarders, and transportation networks reduce costs, improve delivery times, and enhance operational visibility.",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
-    solutions: [
-      "Route optimization & fleet management",
-      "Real-time shipment tracking",
-      "Warehouse automation & inventory control",
-      "Predictive maintenance for vehicles"
-    ]
+    title: "Financial Services",
+    description: "Proving how data, AI, and digital channels create value before scaling them across the operating model.",
+    image: "/case-banker-meeting.c53f3999.jpg",
+    href: "/industries/financial-services",
+  },
+  {
+    title: "Healthcare",
+    description: "Pairing clinical insight with AI-powered operations to improve outcomes and lift the care experience.",
+    image: "/case-medical-collaboration.9602cc8c.jpg",
+    href: "/industries/healthcare",
   },
   {
     title: "Insurance",
-    description: "Transform insurance operations with AI-powered claims processing, risk assessment, and fraud detection. Our solutions help insurers accelerate claims adjudication, improve underwriting accuracy, and deliver superior customer experiences while reducing operational costs.",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
-    solutions: [
-      "Automated claims processing & adjudication",
-      "Risk modeling & underwriting optimization",
-      "Fraud detection & prevention",
-      "Policy administration automation"
-    ]
+    description: "AI-powered underwriting, automated claims, and embedded distribution — all auditable and explainable.",
+    image: "/case-insurance-office.f039a4a1.jpg",
+    href: "/industries/insurance",
   },
   {
-    title: "Telecommunications",
-    description: "Modernize telecom operations with network optimization, customer intelligence, and service automation. We help telecommunications providers improve network performance, reduce customer churn, and accelerate service delivery through intelligent automation and data-driven insights.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80",
-    solutions: [
-      "Network performance optimization",
-      "Customer churn prediction & retention",
-      "Billing system modernization",
-      "Service provisioning automation"
-    ]
-  }
+    title: "Manufacturing",
+    description: "Digital twins, predictive maintenance, and AI-powered planning that turn factories into a source of advantage.",
+    image: "/case-study-manufacturing.8d72bf05.jpg",
+    href: "/industries/manufacturing",
+  },
+  {
+    title: "Private Equity",
+    description: "Operational value across diligence, hold, and exit — rigorous tech diligence and value-creation playbooks.",
+    image: "/case-strategy-consulting.dfdd1294.jpg",
+    href: "/industries/private-equity",
+  },
+  {
+    title: "Public Sector",
+    description: "Digital service design, back-office automation, and AI tuned to the realities of public-sector accountability.",
+    image: "/case-study-government.03f0e049.png",
+    href: "/industries/public-sector",
+  },
+  {
+    title: "Retail",
+    description: "AI-powered personalization, intelligent supply chains, and modern merchandising that protect margin and lift conversion.",
+    image: "/case-study-retail.webp",
+    href: "/industries/retail",
+  },
+  {
+    title: "Technology, Media & Telecommunications",
+    description: "Accelerating product velocity, modernizing networks, and building the data and AI capabilities the next cycle demands.",
+    image: "/hero-ai-brain.738a6c59.png",
+    href: "/industries/technology-media-telecom",
+  },
+  {
+    title: "Transportation & Logistics",
+    description: "AI-powered visibility, route optimization, and modern operating models that deliver both service and margin.",
+    image: "/process-orchestration-workflow.a6bc5b2e.jpg",
+    href: "/industries/transportation-logistics",
+  },
+  {
+    title: "Travel & Hospitality",
+    description: "AI-powered revenue management and modern guest data that protect unit economics while lifting the experience.",
+    image: "/hero-cityscape.b7c4f9e2.png",
+    href: "/industries/travel-hospitality",
+  },
+  {
+    title: "Urban Development",
+    description: "Smart-city platforms, sustainable design, and modern citizen engagement with real operating discipline.",
+    image: "/cityscape-hero.2b50986e.png",
+    href: "/industries/urban-development",
+  },
 ];
 
 export default function Industries() {
@@ -132,12 +117,12 @@ export default function Industries() {
         heroImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80"
       />
 
-      {/* Overview Section */}
-      <section className="py-10 sm:py-12 lg:py-16 bg-white">
+      {/* Overview */}
+      <section className="nx-section bg-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl mb-6">Cross-Industry Excellence</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <h2 className="nx-h2 text-charcoal mb-6">Cross-Industry Excellence</h2>
+            <p className="nx-lead text-muted-foreground">
               Our team brings decades of combined experience across diverse industries, enabling us to apply best practices and innovative approaches regardless of sector. We understand that while each industry has unique requirements, the fundamentals of intelligent automation, data-driven decision making, and operational excellence remain universal.
             </p>
           </div>
@@ -145,74 +130,62 @@ export default function Industries() {
       </section>
 
       {/* Industries Grid */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-slate-50">
+      <section className="nx-section bg-subtle border-t border-border">
         <div className="container">
-          <div className="grid gap-6 sm:gap-8 lg:gap-12">
-            {industries.map((industry, index) => {
-              const isEven = index % 2 === 0;
-
-              return (
-                <div
-                  key={industry.title}
-                  className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-4 sm:p-6 md:p-8 items-center bg-white overflow-hidden transition-shadow`}
-                >
-                  {/* Image */}
-                  <div className="w-full lg:w-1/2 h-80 lg:h-96 overflow-hidden">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-7">
+            {industries.map((industry) => (
+              <Link key={industry.title} href={industry.href}>
+                <article className="group relative h-full flex flex-col bg-card border border-border overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-[0_24px_50px_-28px_rgba(224,76,44,0.4)]">
+                  {/* brand-gradient accent bar — grows on hover */}
+                  <div
+                    className="absolute top-0 left-0 right-0 h-[3px] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 z-10"
+                    style={{ backgroundImage: "linear-gradient(90deg, #E04C2C 0%, #FFB41D 100%)" }}
+                  />
+                  <div className="relative aspect-[16/10] overflow-hidden">
                     <img
                       src={industry.image}
                       alt={industry.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.05]"
+                    />
+                    <div
+                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mix-blend-multiply"
+                      style={{ backgroundImage: "linear-gradient(to top, rgba(224,76,44,0.55) 0%, transparent 60%)" }}
                     />
                   </div>
-
-                  {/* Content */}
-                  <div className="w-full lg:w-1/2 p-4 sm:p-6 md:p-8 lg:p-6 sm:p-6 sm:p-8 md:p-12">
-                    <div className="flex items-center gap-4 mb-6">
-                      <h3 className="text-3xl">{industry.title}</h3>
-                    </div>
-
-                    <p className="text-lg text-muted-foreground mb-5 sm:mb-6 md:mb-8 leading-relaxed">
+                  <div className="flex flex-col flex-1 p-6">
+                    <h3 className="nx-h3 text-charcoal group-hover:text-primary transition-colors">
+                      {industry.title}
+                    </h3>
+                    <p className="mt-3 text-[0.95rem] leading-[1.55] text-muted-foreground">
                       {industry.description}
                     </p>
-
-                    <div className="space-y-3 mb-5 sm:mb-6 md:mb-8">
-                      <h4 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground">Key Solutions</h4>
-                      <ul className="space-y-2">
-                        {industry.solutions.map((solution) => (
-                          <li key={solution} className="flex items-start gap-2">
-                            <span className="text-charcoal/80">{solution}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    {industry.href && (
-                      <Link href={industry.href} className="inline-flex items-center gap-2 bg-white text-white px-6 py-3 font-semibold hover:bg-primary transition-colors">
-                        Explore {industry.title}
-                      </Link>
-                    )}
+                    <span className="mt-5 pt-4 border-t border-border inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.1em] text-charcoal">
+                      Explore
+                      <ArrowRight className="w-3.5 h-3.5 text-primary transition-transform duration-300 group-hover:translate-x-1" />
+                    </span>
                   </div>
-                </div>
-              );
-            })}
+                </article>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-12 sm:py-16 lg:py-20 text-white">
+      {/* CTA */}
+      <section className="nx-section bg-charcoal text-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl mb-6">
+            <h2 className="nx-h2 text-white mb-6">
               Ready to Transform Your Industry?
             </h2>
-            <p className="text-xl text-blue-100 mb-5 sm:mb-6 md:mb-8 leading-relaxed">
+            <p className="nx-lead text-white/80 mb-8 mx-auto">
               Let's discuss how our industry-specific expertise can help you achieve your business objectives.
             </p>
             <Link href="/contact">
-              <a className="inline-flex items-center gap-2 bg-white text-primary px-8 py-4 font-semibold hover:bg-blue-50 transition-colors">
+              <span className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 text-[13px] font-semibold uppercase tracking-[0.1em] hover:bg-primary-hover transition-colors cursor-pointer">
                 Schedule a Consultation
-              </a>
+                <ArrowRight className="w-4 h-4" />
+              </span>
             </Link>
           </div>
         </div>

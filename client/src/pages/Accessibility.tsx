@@ -27,7 +27,7 @@ export default function Accessibility() {
       <section className="bg-white pt-32 pb-16 border-b border-border/50">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl">
-            <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-charcoal tracking-tight mb-3 eb-garamond">
+            <h1 className="nx-h1 text-charcoal tracking-tight mb-3">
               Accessibility Statement
             </h1>
             <p className="text-lg text-muted-foreground italic">
@@ -202,7 +202,7 @@ export default function Accessibility() {
                   <p className="text-charcoal/80 leading-relaxed mb-4">
                     If you need assistance accessing any content or functionality on our website, we are happy to help. We can provide information in alternative formats upon request.
                   </p>
-                  <div className="bg-base/5 border border-base/10 rounded-lg p-4 sm:p-5 md:p-6 mt-6">
+                  <div className="bg-charcoal/5 border border-border rounded-lg p-4 sm:p-5 md:p-6 mt-6">
                     <h3 className="text-lg font-semibold text-charcoal mb-3">
                       When Contacting Us, Please Include:
                     </h3>
@@ -231,7 +231,7 @@ export default function Accessibility() {
                       Accessibility Team
                     </p>
                     <p className="text-charcoal/80 mb-2">
-                      Email: <a href="mailto:accessibility@nexdyne.com" className="text-primary hover:underline">accessibility@nexdyne.com</a>
+                      Email: <a href="mailto:contact@nexdynegroup.com" className="text-primary hover:underline">contact@nexdynegroup.com</a>
                     </p>
                     <p className="text-charcoal/80">
                       You may also use our <Link href="/contact" className="text-primary hover:underline">Contact Form</Link> to reach us.

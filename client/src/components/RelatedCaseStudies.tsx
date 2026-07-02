@@ -36,7 +36,7 @@ export default function RelatedCaseStudies({
         
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-4 sm:p-6 md:p-8">
           {cases.map((study, index) => (
-            <Link key={index} href={study.link} className="group block bg-base border border-white/10 rounded-xl sm:rounded-xl sm:rounded-2xl overflow-hidden hover:border-secondary/50 transition-all">
+            <Link key={index} href={study.link} className="group block bg-base border border-white/10 rounded-xl sm:rounded-xl sm:rounded-2xl overflow-hidden hover:border-secondary/50 transition">
               <div className="h-48 overflow-hidden">
                 <img 
                   src={study.image} 

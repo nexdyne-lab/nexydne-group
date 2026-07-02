@@ -15,7 +15,7 @@ export default function SimulationAnalysis() {
       serviceName="Simulation & Analysis"
       serviceSlug="simulation-analysis"
       heroSubtitle="Run what-if scenarios, stress tests, and optimization algorithms on your digital twin to identify improvements without real-world risk. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-digital-twins.2f1e7c12.jpg"
+      heroImage="/blog-digital-transformation.a3f57989.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Simulation & Analysis engagements delivered" },

@@ -10,13 +10,13 @@ export default function CustomerDataPlatform() {
       <Navigation />
       
       {/* Hero Section - Maroon Background */}
-      <section className="relative bg-gradient-to-br from-red-900 via-primary to-primary text-white py-20 md:py-28">
+      <section className="relative bg-charcoal text-white nx-section">
         <div className="container">
           <div className="mb-8">
             <div className="flex items-center gap-2 text-sm opacity-90">
-              <Link href="/"><a className="hover:underline">Services</a></Link>
+              <Link href="/"><span className="hover:underline cursor-pointer">Services</span></Link>
               <span>/</span>
-              <Link href="/solutions/personalization"><a className="hover:underline">Personalization</a></Link>
+              <Link href="/solutions/personalization"><span className="hover:underline cursor-pointer">Personalization</span></Link>
               <span>/</span>
               <span>Customer data platform (CDP)</span>
             </div>
@@ -24,7 +24,7 @@ export default function CustomerDataPlatform() {
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-4 eb-garamond">
+              <h1 className="text-[2.25rem] md:text-[2.75rem] font-bold mb-4">
                 Customer data platform (CDP)
               </h1>
             </div>
@@ -39,12 +39,12 @@ export default function CustomerDataPlatform() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="nx-section bg-white">
         <div className="container">
           <div className="grid md:grid-cols-[300px_1fr] gap-12 items-start">
             {/* Profile Photo and CTA */}
             <div className="flex flex-col items-center text-center">
-              <div className="w-64 h-64 rounded-full overflow-hidden bg-gradient-to-br from-blue-400 to-blue-300 mb-6">
+              <div className="w-64 h-64 rounded-full overflow-hidden bg-gradient-to-br from-primary to-primary mb-6">
                 <img 
                   src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800" 
                   alt="Marcus Rivera"
@@ -52,18 +52,18 @@ export default function CustomerDataPlatform() {
                 />
               </div>
               <h3 className="text-xl font-bold text-charcoal mb-2">Do you want to know more?</h3>
-              <button className="border-2 border-slate-900 text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-slate-900 hover:text-white transition-colors">
+              <button className="border-2 border-charcoal/20 text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-charcoal hover:text-white transition-colors">
                 Ask Marcus Rivera
               </button>
             </div>
             
             {/* Benefits Grid */}
             <div>
-              <h2 className="text-4xl font-bold text-charcoal mb-12">The benefits</h2>
+              <h2 className="text-[2rem] font-bold text-charcoal mb-12">The benefits</h2>
               
               <div className="space-y-8">
                 <div className="flex gap-6">
-                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                     <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
@@ -77,7 +77,7 @@ export default function CustomerDataPlatform() {
                 </div>
                 
                 <div className="flex gap-6">
-                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                     <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
@@ -91,7 +91,7 @@ export default function CustomerDataPlatform() {
                 </div>
                 
                 <div className="flex gap-6">
-                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                     <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                     </svg>
@@ -105,7 +105,7 @@ export default function CustomerDataPlatform() {
                 </div>
                 
                 <div className="flex gap-6">
-                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                     <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                     </svg>
@@ -124,9 +124,9 @@ export default function CustomerDataPlatform() {
       </section>
 
       {/* About CDP Section */}
-      <section className="py-20 md:py-28 bg-slate-50">
+      <section className="nx-section bg-off-white">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-charcoal mb-8">About Customer Data Platforms (CDP)</h2>
+          <h2 className="text-[2rem] font-bold text-charcoal mb-8">About Customer Data Platforms (CDP)</h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
             A Customer Data Platform (CDP) gathers customer data from multiple sources to create a central, comprehensive profile. This lets you segment customers accurately and make data-driven decisions on solid ground, enabling personalized interactions. A CDP also guarantees secure, compliant data processing, which is non-negotiable in an environment reliant on customer trust.
           </p>
@@ -137,9 +137,9 @@ export default function CustomerDataPlatform() {
       </section>
 
       {/* Quote Section */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="nx-section bg-white">
         <div className="container max-w-4xl">
-          <blockquote className="text-3xl md:text-4xl font-bold text-red-900 leading-relaxed mb-8">
+          <blockquote className="text-3xl md:text-[2rem] font-bold text-primary leading-relaxed mb-8">
             "Our data linking expertise delivers personalized, real-time interactions that enhance the customer experience and unlock growth opportunities."
           </blockquote>
           <p className="text-lg text-muted-foreground">
@@ -149,9 +149,9 @@ export default function CustomerDataPlatform() {
       </section>
 
       {/* Our CDP Solution Section */}
-      <section className="py-20 md:py-28 bg-slate-50">
+      <section className="nx-section bg-off-white">
         <div className="container max-w-4xl">
-          <h2 className="text-4xl font-bold text-charcoal mb-8">Our CDP solution</h2>
+          <h2 className="text-[2rem] font-bold text-charcoal mb-8">Our CDP solution</h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
             At NEXDYNE, we leverage CDPs as part of a broader data strategy, integrating various data sources to create a complete customer profile. Our data integration and analysis expertise seamlessly link CDP solutions to your systems, ensuring fast and secure availability of customer data from every channel. This integration helps you create personalized interactions and make smart, data-driven decisions that bring your brand closer to your customers.
           </p>
@@ -162,11 +162,11 @@ export default function CustomerDataPlatform() {
       </section>
 
       {/* CTA Section with Profile Photo */}
-      <section className="py-20 md:py-28 bg-gradient-to-br from-blue-100 via-blue-50 to-pink-50">
+      <section className="nx-section bg-off-white">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
-              <div className="w-80 h-80 rounded-full overflow-hidden bg-gradient-to-br from-blue-400 to-blue-300 shadow-2xl">
+              <div className="w-80 h-80 rounded-full overflow-hidden bg-gradient-to-br from-primary to-primary shadow-2xl">
                 <img 
                   src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800" 
                   alt="Marcus Rivera"
@@ -176,14 +176,14 @@ export default function CustomerDataPlatform() {
             </div>
             
             <div>
-              <h2 className="text-4xl font-bold text-charcoal mb-6">Do you want to know more?</h2>
+              <h2 className="text-[2rem] font-bold text-charcoal mb-6">Do you want to know more?</h2>
               <p className="text-xl text-charcoal/80 mb-4">Marcus Rivera</p>
               <p className="text-lg text-muted-foreground mb-8">Director of Customer Intelligence</p>
               <div className="flex flex-wrap gap-4">
-                <button className="bg-slate-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-slate-800 transition-colors">
+                <button className="bg-charcoal text-white px-8 py-3 rounded-full font-semibold hover:bg-charcoal transition-colors">
                   Get in touch
                 </button>
-                <button className="border-2 border-slate-900 text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-slate-900 hover:text-white transition-colors flex items-center gap-2">
+                <button className="border-2 border-charcoal/20 text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-charcoal hover:text-white transition-colors flex items-center gap-2">
                   Schedule a meeting
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -196,7 +196,7 @@ export default function CustomerDataPlatform() {
       </section>
 
       {/* Why NEXDYNE Section */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="nx-section bg-white">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="rounded-lg overflow-hidden shadow-xl">
@@ -208,14 +208,14 @@ export default function CustomerDataPlatform() {
             </div>
             
             <div>
-              <h2 className="text-4xl font-bold text-charcoal mb-6">Why NEXDYNE</h2>
+              <h2 className="text-[2rem] font-bold text-charcoal mb-6">Why NEXDYNE</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Whether you're looking for a strategic partner, a boost for your digital transformation, or the ultimate customer experience for your customers, you've come to the right place. With our next-generation digital solutions, you'll always be one step ahead of the competition.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 Our CDP implementations combine technical excellence with business pragmatism—we focus on use cases that deliver immediate value while building the foundation for long-term customer intelligence capabilities. From identity resolution to predictive modeling, we ensure your CDP investment drives measurable business outcomes.
               </p>
-              <button className="bg-slate-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-slate-800 transition-colors">
+              <button className="bg-charcoal text-white px-8 py-3 rounded-full font-semibold hover:bg-charcoal transition-colors">
                 Get in touch
               </button>
             </div>
@@ -224,48 +224,48 @@ export default function CustomerDataPlatform() {
       </section>
 
       {/* Partners Section */}
-      <section className="py-20 md:py-28 bg-slate-50">
+      <section className="nx-section bg-off-white">
         <div className="container">
           <div className="mb-12">
             <p className="text-sm uppercase tracking-wider text-muted-foreground font-semibold mb-2">
               Partners
             </p>
-            <h2 className="text-4xl font-bold text-charcoal mb-4">
+            <h2 className="text-[2rem] font-bold text-charcoal mb-4">
               Awesome partners turn dreams into reality
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
               With these partners we realize our personalization solutions
             </p>
-            <button className="border-2 border-slate-900 text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-slate-900 hover:text-white transition-colors">
+            <button className="border-2 border-charcoal/20 text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-charcoal hover:text-white transition-colors">
               All partners
             </button>
           </div>
           
           {/* Partner Cards Grid */}
           <div className="grid md:grid-cols-4 gap-8">
-            <div className="bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
-              <h3 className="text-2xl font-bold text-blue-900 mb-4">Bloomreach</h3>
+            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition">
+              <h3 className="text-2xl font-bold text-charcoal mb-4">Bloomreach</h3>
               <p className="text-muted-foreground">
                 Commerce experience cloud combining CDP, search, merchandising, and content in one platform—powering personalized digital experiences that drive revenue.
               </p>
             </div>
             
-            <div className="bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
-              <h3 className="text-2xl font-bold text-blue-900 mb-4">Commercetools</h3>
+            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition">
+              <h3 className="text-2xl font-bold text-charcoal mb-4">Commercetools</h3>
               <p className="text-muted-foreground">
                 Headless commerce platform enabling brands to create unique, personalized shopping experiences across every touchpoint with API-first architecture.
               </p>
             </div>
             
-            <div className="bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
-              <h3 className="text-2xl font-bold text-blue-900 mb-4">Tweakwise</h3>
+            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition">
+              <h3 className="text-2xl font-bold text-charcoal mb-4">Tweakwise</h3>
               <p className="text-muted-foreground">
                 Search, merchandising, and personalization platform that optimizes product discovery and increases conversion through intelligent recommendations.
               </p>
             </div>
             
-            <div className="bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-500 hover:shadow-lg transition-all">
-              <h3 className="text-2xl font-bold text-blue-900 mb-4">Sitecore</h3>
+            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition">
+              <h3 className="text-2xl font-bold text-charcoal mb-4">Sitecore</h3>
               <p className="text-muted-foreground">
                 Digital experience platform combining content management, personalization, and marketing automation to deliver individualized customer journeys at scale.
               </p>

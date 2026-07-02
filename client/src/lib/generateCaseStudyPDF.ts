@@ -36,8 +36,8 @@ export function generateCaseStudyPDF(data: CaseStudyPDFData): void {
   let yPos = margin;
 
   // Brand colors
-  const primaryColor = '#005CFF';
-  const darkColor = '#000080';
+  const primaryColor = '#E04C2C';
+  const darkColor = '#242424';
   const grayColor = '#666666';
 
   // Helper function to add text with word wrap
@@ -60,7 +60,7 @@ export function generateCaseStudyPDF(data: CaseStudyPDFData): void {
   // === COVER PAGE ===
   
   // Dark header band
-  doc.setFillColor(0, 0, 128); // #000080 base
+  doc.setFillColor(36, 36, 36); // charcoal base
   doc.rect(0, 0, pageWidth, 80, 'F');
 
   // Company branding
@@ -76,7 +76,7 @@ export function generateCaseStudyPDF(data: CaseStudyPDFData): void {
 
   // Case Study label
   doc.setFontSize(10);
-  doc.setTextColor(0, 92, 255); // #005CFF primary
+  doc.setTextColor(224, 76, 44); // signal orange
   doc.setFont('helvetica', 'bold');
   doc.text('CASE STUDY', margin, 50);
 
@@ -131,7 +131,7 @@ export function generateCaseStudyPDF(data: CaseStudyPDFData): void {
   if (data.clientInfo && (data.clientInfo.industry || data.clientInfo.companySize || data.clientInfo.revenue)) {
     checkNewPage(50);
     
-    doc.setFillColor(0, 0, 128);
+    doc.setFillColor(36, 36, 36);
     doc.rect(margin, yPos, contentWidth, 30, 'F');
     
     const infoItems = [
@@ -145,7 +145,7 @@ export function generateCaseStudyPDF(data: CaseStudyPDFData): void {
       const infoX = margin + (index * infoWidth) + 10;
       
       doc.setFontSize(8);
-      doc.setTextColor(0, 92, 255);
+      doc.setTextColor(224, 76, 44);
       doc.setFont('helvetica', 'bold');
       doc.text(item.label.toUpperCase(), infoX, yPos + 10);
       
@@ -162,7 +162,7 @@ export function generateCaseStudyPDF(data: CaseStudyPDFData): void {
   yPos = margin;
 
   // Section header
-  doc.setFillColor(0, 92, 255);
+  doc.setFillColor(224, 76, 44);
   doc.rect(0, 0, pageWidth, 50, 'F');
   
   doc.setFontSize(10);
@@ -181,7 +181,7 @@ export function generateCaseStudyPDF(data: CaseStudyPDFData): void {
   checkNewPage(80);
   
   // Section header
-  doc.setFillColor(0, 92, 255);
+  doc.setFillColor(224, 76, 44);
   doc.rect(margin, yPos - 5, contentWidth, 40, 'F');
   
   doc.setFontSize(10);
@@ -221,11 +221,11 @@ export function generateCaseStudyPDF(data: CaseStudyPDFData): void {
   checkNewPage(80);
   
   // Section header
-  doc.setFillColor(0, 0, 128);
+  doc.setFillColor(36, 36, 36);
   doc.rect(margin, yPos - 5, contentWidth, 40, 'F');
   
   doc.setFontSize(10);
-  doc.setTextColor(0, 92, 255);
+  doc.setTextColor(224, 76, 44);
   doc.setFont('helvetica', 'bold');
   doc.text('THE RESULTS', margin + 10, yPos + 10);
   
@@ -240,7 +240,7 @@ export function generateCaseStudyPDF(data: CaseStudyPDFData): void {
     checkNewPage(20);
     
     // Checkmark bullet
-    doc.setFillColor(0, 92, 255);
+    doc.setFillColor(224, 76, 44);
     doc.circle(margin + 5, yPos - 2, 3, 'F');
     doc.setTextColor(255, 255, 255);
     doc.setFontSize(8);
@@ -260,11 +260,11 @@ export function generateCaseStudyPDF(data: CaseStudyPDFData): void {
     checkNewPage(60);
     yPos += 10;
     
-    doc.setFillColor(0, 0, 128);
+    doc.setFillColor(36, 36, 36);
     doc.rect(margin, yPos - 5, contentWidth, 50, 'F');
     
     doc.setFontSize(11);
-    doc.setTextColor(0, 92, 255);
+    doc.setTextColor(224, 76, 44);
     doc.setFont('helvetica', 'italic');
     const quoteLines = doc.splitTextToSize(`"${data.testimonial.quote}"`, contentWidth - 20);
     doc.text(quoteLines, margin + 10, yPos + 10);
@@ -282,7 +282,7 @@ export function generateCaseStudyPDF(data: CaseStudyPDFData): void {
   }
 
   // === FOOTER ON LAST PAGE ===
-  doc.setFillColor(0, 0, 128);
+  doc.setFillColor(36, 36, 36);
   doc.rect(0, pageHeight - 25, pageWidth, 25, 'F');
   
   doc.setFontSize(9);

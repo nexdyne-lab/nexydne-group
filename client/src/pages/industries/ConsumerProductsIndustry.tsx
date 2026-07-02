@@ -20,41 +20,41 @@ export default function ConsumerProductsIndustry() {
       challenges={[
         {
           title: "Margin and revenue management",
-          body: "Input-cost inflation and retailer pressure are squeezing list-to-net economics. Modern revenue-growth management, dynamic pricing, and trade-spend analytics now sit on the critical path to protecting margin."
+          body: "Input-cost inflation and retailer pressure are squeezing list-to-net; revenue-growth management and trade-spend analytics are now critical."
         },
         {
           title: "Omnichannel and DTC tension",
-          body: "Direct relationships are valuable — but they have to be built without breaking the retailer relationships that still drive most volume. Channel strategy and unified consumer data are how leading brands manage that tension."
+          body: "Direct relationships are valuable but must be built without breaking the retailer relationships that still drive most volume."
         },
         {
           title: "Supply-chain volatility",
-          body: "Demand whiplash, freight cost, and SKU proliferation are stressing planning systems built for a more stable era. AI-powered S&OP and integrated business planning are how leaders are restoring forecast confidence."
+          body: "Demand whiplash and SKU proliferation are stressing legacy planning; AI-powered S&OP restores forecast confidence."
         },
         {
           title: "Sustainability expectations",
-          body: "Consumers, retailers, and regulators are all asking harder questions about sourcing, packaging, and emissions. Brands need auditable data wired into operating decisions — not just commitments on the website."
+          body: "Consumers and regulators want harder answers on sourcing and emissions — brands need auditable data, not website commitments."
         }
       ]}
       capabilities={[
         {
           name: "Customer Intelligence",
           href: "/capabilities/customer-intelligence",
-          blurb: "Build the consumer-data foundation, journey analytics, and AI-powered personalization that translate audience attention into measurable revenue."
+          blurb: "The consumer-data foundation, journey analytics, and AI personalization that turn attention into measurable revenue."
         },
         {
           name: "Pricing & Revenue Management",
           href: "/capabilities/pricing-revenue",
-          blurb: "Engineer pricing, promotion, and trade-spend decisions with the data and tooling needed to protect list-to-net in a high-volatility environment."
+          blurb: "Pricing, promotion, and trade-spend decisions with the tooling to protect list-to-net in a volatile market."
         },
         {
           name: "Operations Excellence",
           href: "/capabilities/operations-excellence",
-          blurb: "Modernize planning, manufacturing, and logistics with AI-driven S&OP, connected-worker tools, and the supply-chain visibility today's volatility demands."
+          blurb: "Modernize planning, manufacturing, and logistics with AI-driven S&OP and the supply-chain visibility volatility demands."
         },
         {
           name: "Data Transformation",
           href: "/capabilities/data-transformation",
-          blurb: "Unify consumer, commerce, and supply-chain data into a single fabric that supports the next generation of CPG AI use cases at scale."
+          blurb: "Unify consumer, commerce, and supply-chain data into one fabric for CPG AI use cases at scale."
         }
       ]}
       experienceStats={[

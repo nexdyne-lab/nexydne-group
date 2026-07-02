@@ -44,7 +44,7 @@ export default function FromMVPToScale() {
       heroImageAlt="From MVP to Scale"
       authorName="Sarah Chen"
       authorRole="Head of Venture Building, NexDyne"
-      authorImage="/team/sarah-chen.jpg"
+      authorImage="https://placehold.co/160x160/242424/F7F9FC?text=SC"
       relatedInsights={relatedInsights}
     >
       <p>

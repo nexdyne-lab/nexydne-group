@@ -514,7 +514,7 @@ export default function Insights() {
       </section>
 
       {/* SLOT 5 — Editor's Pick signal section (THE ONE Orange-Red moment) */}
-      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+      <section className="bg-charcoal text-white nx-section">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -539,7 +539,7 @@ export default function Insights() {
                 {editorsPick.topic} · {editorsPick.readTime}
               </div>
               <Link href={`/insights/${editorsPick.slug}`}>
-                <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+                <span className="inline-flex items-center gap-2 bg-primary text-white text-[13px] font-semibold uppercase tracking-[0.1em] px-7 py-4 hover:bg-primary-hover transition-colors cursor-pointer">
                   Read article →
                 </span>
               </Link>
@@ -696,7 +696,7 @@ export default function Insights() {
             </h3>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid md:grid-cols-2 gap-5">
             <div className="bg-white">
               <div className="h-full p-12 flex flex-col">
                 <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">

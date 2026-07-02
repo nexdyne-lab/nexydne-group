@@ -1,0 +1,233 @@
+import { motion } from "framer-motion";
+import { Link } from "wouter";
+import { ArrowRight, Check, Linkedin, Mail } from "lucide-react";
+import { BrandMesh } from "@/components/BrandMesh";
+import { useState } from "react";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import { BackToTop } from "@/components/BackToTop";
+import { SEO } from "@/components/SEO";
+
+export interface MarketingMasterTemplateProps {
+  capabilityName: string;
+  capabilitySlug: string;
+  heroSubtitle: string;
+  heroImage: string;
+  heroPrimaryCTA?: { label: string; href: string };
+  heroSecondaryCTA?: { label: string; href: string };
+  experienceStats: { number: string; label: string }[];
+  thoughtLeadership: {
+    featured: {
+      tag: string;
+      title: string;
+      summary: string;
+      image: string;
+      href: string;
+    };
+    secondary: { tag: string; title: string; href: string }[];
+  };
+  approachPillars: { step: string; title: string; body: string }[];
+  ambitions: { title: string; description: string; href: string }[];
+  inPractice: {
+    image: string;
+    intro: string;
+    realOutcomes: string[];
+    howWeHelp: string[];
+  };
+  howWeCanHelp: { title: string; description: string; href: string }[];
+  clientResults: {
+    industry: string;
+    cases: { slug: string; title: string; metric: string; image: string }[];
+  }[];
+  ecosystemLogos?: { name: string; logo: string }[];
+  leaders?: {
+    name: string;
+    role: string;
+    photo: string;
+    linkedinUrl?: string;
+  }[];
+  insights: {
+    tag: string;
+    title: string;
+    readTime: string;
+    image: string;
+    href: string;
+  }[];
+  closingCTA: {
+    leadName: string;
+    leadTitle: string;
+    leadPhoto: string;
+    leadEmail?: string;
+    leadLinkedinUrl?: string;
+  };
+}
+
+export default function MarketingMasterTemplate(
+  props: MarketingMasterTemplateProps
+) {
+  const {
+    capabilityName,
+    capabilitySlug,
+    heroSubtitle,
+    heroImage,
+    heroPrimaryCTA,
+    heroSecondaryCTA,
+    experienceStats,
+    thoughtLeadership,
+    approachPillars,
+    ambitions,
+    inPractice,
+    howWeCanHelp,
+    clientResults,
+    ecosystemLogos = [],
+    leaders = [],
+    insights,
+    closingCTA,
+  } = props;
+
+  const [activeIndustryTab, setActiveIndustryTab] = useState(0);
+
+  // Stat grid: 3 or 4 columns based on item count (spec: exactly 4)
+  const statColCount = Math.min(Math.max(experienceStats.length, 1), 4);
+  const statGridCls =
+    statColCount >= 4
+      ? "grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-8"
+      : statColCount === 3
+      ? "grid grid-cols-1 md:grid-cols-3 gap-y-12 gap-x-8"
+      : "grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-8";
+
+  const primaryCTA = heroPrimaryCTA ?? {
+    label: `Talk to our ${capabilityName} lead`,
+    href: "/contact",
+  };
+  const secondaryCTA = heroSecondaryCTA ?? {
+    label: "Explore our services",
+    href: `/capabilities/${capabilitySlug}#how-we-can-help`,
+  };
+
+  const activeIndustry = clientResults[activeIndustryTab];
+
+  return (
+    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
+      <SEO
+        title={capabilityName}
+        description={heroSubtitle.slice(0, 160)}
+        canonical={`/capabilities/${capabilitySlug}`}
+      />
+      <Navigation />
+
+      {/* 1. Hero — plain neutral statement (Brand v2) */}
+      <section className="relative bg-background overflow-hidden min-h-[62vh] flex items-center pt-32 pb-20 md:pt-40 md:pb-24">
+        <BrandMesh variant="light" />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(90deg, #F7F9FC 0%, rgba(247,249,252,0.6) 30%, rgba(247,249,252,0.05) 55%, transparent 70%)",
+          }}
+        />
+        <div className="container relative z-10 px-4 md:px-12">
+          <Breadcrumbs />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-4xl mt-6"
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <span className="block h-[3px] w-9 bg-primary" />
+              <span className="nx-eyebrow text-muted-foreground">
+                Capabilities
+              </span>
+            </div>
+            <h1 className="nx-h1 text-charcoal mb-6">
+              {capabilityName}
+            </h1>
+            <p className="nx-lead text-muted-foreground max-w-[60ch] mb-10">
+              {heroSubtitle}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href={primaryCTA.href}>
+                <span className="group inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.1em] transition-colors hover:bg-primary-hover cursor-pointer">
+                  {primaryCTA.label}
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </Link>
+              <Link href={secondaryCTA.href}>
+                <span className="inline-flex items-center justify-center text-charcoal px-2 py-4 text-[13px] font-semibold uppercase tracking-[0.1em] border-b-2 border-charcoal/25 hover:border-primary transition-colors cursor-pointer">
+                  {secondaryCTA.label}
+                </span>
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* 2. Experience and Impact — charcoal dark-authority band (orange signal accent) */}
+      <section className="bg-charcoal text-white border-t-2 border-primary">
+        <div className="container px-4 md:px-12 nx-section">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="nx-eyebrow text-amber mb-12 text-center"
+          >
+            Experience and Impact
+          </motion.p>
+
+          <div className={statGridCls}>
+            {experienceStats.map((stat, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.05 }}
+                className="text-center"
+              >
+                <div className="text-[2.75rem] md:text-[3.5rem] text-white font-bold tracking-[-0.02em] leading-[1]">
+                  {stat.number}
+                </div>
+                <div className="text-[13px] uppercase tracking-[0.1em] text-white/70 mt-3 leading-[1.4]">
+                  {stat.label}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Thought Leadership featured + 2 secondary */}
+      <section className="bg-white">
+        <div className="container px-4 md:px-12 nx-section">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-12 md:mb-16 max-w-4xl"
+          >
+            <p className="nx-eyebrow text-charcoal/60 mb-5">
+              Our Thinking
+            </p>
+            <h2 className="nx-h2 text-charcoal">
+              Latest perspectives on {capabilityName}
+            </h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+            {/* Featured perspective (left) */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <Link
+                href={thoughtLeadership.featured.href}
+                className="group block cursor-pointer"
+              >
+       

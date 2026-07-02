@@ -16,56 +16,41 @@ export default function InsightDigitalChannelsGrowth() {
       />
       <Navigation />
       
-      {/* DZ10 Hero Section */}
-      <section className="relative pt-32 pb-20 bg-base overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-base via-base to-base" />
-          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#0077B5]/10 to-transparent" />
-        </div>
-        
-        <div className="container px-4 sm:px-6 md:px-12 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl"
-          >
-            <Link href="/solutions/accelerating-business-growth">
-              <span className="inline-flex items-center text-sm text-white/60 hover:text-primary transition-colors mb-6 cursor-pointer">
-                <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
-                Back to Accelerating Business Growth
-              </span>
-            </Link>
-            
-            <div className="flex flex-wrap gap-3 mb-6">
-              <span className="px-3 py-1 bg-primary/20 text-secondary text-xs font-bold uppercase tracking-wider rounded-full">
-                Digital Growth
-              </span>
-              <span className="px-3 py-1 bg-white/10 text-white/70 text-xs font-bold uppercase tracking-wider rounded-full">
-                Strategy
-              </span>
-            </div>
-            
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-5 sm:mb-3 md:mb-4 eb-garamond">
-              Digital channels driving revenue growth: A playbook for mid-market companies
-            </h1>
-            
-            <div className="flex flex-wrap items-center gap-4 sm:p-5 md:p-6 text-white/60 text-sm mb-5 sm:mb-6 md:mb-8">
-              <div className="flex items-center gap-2">
-                <Clock className="w-3 h-3 sm:w-4 sm:h-4" />
-                <span>12 min read</span>
+      {/* Neutral-first editorial hero */}
+      <section className="relative w-full bg-background overflow-hidden">
+        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(70% 60% at 82% 14%, rgba(224,76,44,0.05) 0%, transparent 55%), radial-gradient(55% 55% at 6% 95%, rgba(111,68,163,0.045) 0%, transparent 55%)" }} />
+        <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div className="flex flex-col justify-center min-h-[48vh] py-24 lg:py-28">
+            <div className="max-w-[900px]">
+              <Link href="/solutions/accelerating-business-growth">
+                <span className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors mb-6 cursor-pointer">
+                  <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
+                  Back to Accelerating Business Growth
+                </span>
+              </Link>
+              <div className="flex items-center gap-3 mb-6">
+                <span className="block h-[3px] w-9 bg-primary" />
+                <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Digital Growth · Strategy</span>
               </div>
-              <div className="flex items-center gap-2">
-                <User className="w-3 h-3 sm:w-4 sm:h-4" />
-                <span>NEXDYNE Growth Practice</span>
+              <h1 className="text-charcoal font-bold tracking-[-0.03em] leading-[1.06] text-[clamp(2.1rem,4.6vw,3.6rem)]">
+                Digital channels driving revenue growth: A playbook for mid-market companies
+              </h1>
+              <p className="mt-7 text-[1.1rem] md:text-[1.2rem] leading-[1.55] text-muted-foreground max-w-[62ch]">
+                Mid-market companies are discovering that digital channels aren't just a nice-to-have—they're essential for sustainable growth. Here's how leading companies are achieving 2-5x revenue growth through strategic digital initiatives.
+              </p>
+              <div className="mt-7 flex flex-wrap items-center gap-4 text-muted-foreground text-sm">
+                <div className="flex items-center gap-2">
+                  <Clock className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <span>12 min read</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <User className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <span>NEXDYNE Growth Practice</span>
+                </div>
+                <span>January 2026</span>
               </div>
-              <span>January 2026</span>
             </div>
-            
-            <p className="text-xl text-white/70 leading-relaxed max-w-3xl">
-              Mid-market companies are discovering that digital channels aren't just a nice-to-have—they're essential for sustainable growth. Here's how leading companies are achieving 2-5x revenue growth through strategic digital initiatives.
-            </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -162,7 +147,8 @@ export default function InsightDigitalChannelsGrowth() {
                     <li><strong>Switching costs:</strong> Once integrated into workflows, platforms become difficult to replace</li>
                   </ul>
 
-                  <div className="bg-base text-white p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
+                  <div className="bg-charcoal text-white border-t-2 border-primary p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
+                    <span className="block text-[12px] font-semibold uppercase tracking-[0.18em] text-amber mb-3">Platform Economics</span>
                     <h3 className="text-xl font-bold mb-4">The Platform Opportunity</h3>
                     <p className="text-white/80 mb-0">
                       Companies that successfully build platform businesses often achieve valuations 5-10x higher than traditional businesses in the same industry, due to the scalability and defensibility of network effects.
@@ -313,7 +299,7 @@ export default function InsightDigitalChannelsGrowth() {
                     <button className="w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center hover:bg-primary/90 transition-colors">
                       <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                     </button>
-                    <button className="w-10 h-10 bg-[#1DA1F2] text-white rounded-lg flex items-center justify-center hover:bg-base transition-colors">
+                    <button className="w-10 h-10 bg-[#1DA1F2] text-white rounded-lg flex items-center justify-center hover:bg-charcoal transition-colors">
                       <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
                     </button>
                     <button className="w-10 h-10 bg-[#4267B2] text-white rounded-lg flex items-center justify-center hover:bg-[#4267B2] transition-colors">
@@ -327,9 +313,9 @@ export default function InsightDigitalChannelsGrowth() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
-                  className="bg-base text-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
+                  className="bg-charcoal text-white border-t-2 border-primary p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
                 >
-                  <h3 className="text-sm font-bold uppercase tracking-wider text-white/60 mb-4">Key Takeaways</h3>
+                  <h3 className="text-sm font-bold uppercase tracking-wider text-amber mb-4">Key Takeaways</h3>
                   <ul className="space-y-3">
                     {[
                       "Digital channels drive 3.2x faster revenue growth",
@@ -378,7 +364,7 @@ export default function InsightDigitalChannelsGrowth() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.6 }}
-                  className="bg-gradient-to-br from-[#0077B5] to-base text-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
+                  className="bg-gradient-to-br from-[#0077B5] to-charcoal text-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
                 >
                   <h3 className="font-bold text-lg mb-3">Ready to accelerate your digital growth?</h3>
                   <p className="text-white/80 text-sm mb-4">

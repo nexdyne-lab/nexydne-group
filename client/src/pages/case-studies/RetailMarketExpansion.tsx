@@ -12,7 +12,7 @@ import { SEO } from "@/components/SEO";
 
 export default function RetailMarketExpansion() {
   return (
-    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Market Analysis and Strategic Expansion | Case Study | NexDyne Technologies" 
         description="How detailed data analysis and geographic forecasting helped a regional consumer electronics retailer double market share and move from fifth to second in the market."
@@ -23,7 +23,7 @@ export default function RetailMarketExpansion() {
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-30"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background"></div>
         
         <div className="container relative z-10 px-4 md:px-12">
           <Breadcrumbs />
@@ -39,7 +39,7 @@ export default function RetailMarketExpansion() {
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-4">
               Market Analysis and <span className="text-primary">Strategic Expansion</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mb-8">
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mb-8">
               How detailed data analysis and geographic forecasting helped a regional consumer electronics retailer double market share and move from fifth to second in the market.
             </p>
             
@@ -62,7 +62,7 @@ export default function RetailMarketExpansion() {
       </section>
 
       {/* DZ10 Stats Section */}
-      <section className="py-16 bg-base border-t border-white/10">
+      <section className="py-16 bg-background border-t border-border">
         <div className="container px-4 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
@@ -79,7 +79,7 @@ export default function RetailMarketExpansion() {
                 className="border-l-2 border-primary/50 pl-8"
               >
                 <div className="text-5xl font-bold text-primary mb-2">{stat.metric}</div>
-                <div className="text-base text-white/70">{stat.label}</div>
+                <div className="text-base text-muted-foreground">{stat.label}</div>
               </motion.div>
             ))}
           </div>
@@ -87,7 +87,7 @@ export default function RetailMarketExpansion() {
       </section>
 
       {/* DZ10 Sticky Navigation */}
-      <nav className="sticky top-20 bg-base text-white z-40 border-y border-white/10">
+      <nav className="sticky top-20 bg-background text-charcoal z-40 border-y border-border">
         <div className="container px-4 md:px-12">
           <div className="flex items-center gap-1">
             <a href="#challenge" className="px-6 py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">
@@ -122,7 +122,7 @@ export default function RetailMarketExpansion() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-base/5 rounded-xl">
+            <div className="grid md:grid-cols-3 gap-6 mt-12 p-8 bg-charcoal/5 rounded-xl">
               <div>
                 <div className="text-sm font-semibold text-primary mb-2">Industry</div>
                 <div className="text-charcoal font-medium">Consumer Electronics Retail</div>
@@ -141,7 +141,7 @@ export default function RetailMarketExpansion() {
       </section>
 
       {/* DZ10 Challenge Section */}
-      <section id="challenge" className="py-24 md:py-32 bg-primary">
+      <section id="challenge" className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -149,10 +149,10 @@ export default function RetailMarketExpansion() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Challenge
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
               Unfocused Expansion Strategy
             </h2>
           </motion.div>
@@ -194,7 +194,7 @@ export default function RetailMarketExpansion() {
       </section>
 
       {/* DZ10 Quote Section */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -205,16 +205,16 @@ export default function RetailMarketExpansion() {
             <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "We were opening stores wherever we could find good real estate, but we had no strategic framework for deciding where to invest. Our competitors were eating our lunch in the best markets."
             </blockquote>
-            <div className="text-base text-white">
+            <div className="text-base text-charcoal">
               <div className="font-semibold">— Chief Operating Officer</div>
-              <div className="text-white/60">Regional Consumer Electronics Retailer</div>
+              <div className="text-muted-foreground">Regional Consumer Electronics Retailer</div>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* DZ10 Solution Section */}
-      <section id="solution" className="py-24 md:py-32 bg-primary">
+      <section id="solution" className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -222,10 +222,10 @@ export default function RetailMarketExpansion() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Solution
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
               Data-Driven Geographic Clustering
             </h2>
           </motion.div>
@@ -242,7 +242,7 @@ export default function RetailMarketExpansion() {
             {/* Phase 1 */}
             <div className="flex gap-8">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center font-bold text-lg">
                   1
                 </div>
               </div>
@@ -274,7 +274,7 @@ export default function RetailMarketExpansion() {
             {/* Phase 2 */}
             <div className="flex gap-8">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center font-bold text-lg">
                   2
                 </div>
               </div>
@@ -306,7 +306,7 @@ export default function RetailMarketExpansion() {
             {/* Phase 3 */}
             <div className="flex gap-8">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center font-bold text-lg">
                   3
                 </div>
               </div>
@@ -338,7 +338,7 @@ export default function RetailMarketExpansion() {
             {/* Phase 4 */}
             <div className="flex gap-8">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg">
+                <div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center font-bold text-lg">
                   4
                 </div>
               </div>
@@ -371,7 +371,7 @@ export default function RetailMarketExpansion() {
       </section>
 
       {/* DZ10 Impact Section */}
-      <section id="impact" className="py-24 md:py-32 bg-primary">
+      <section id="impact" className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -379,10 +379,10 @@ export default function RetailMarketExpansion() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/80 mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               The Impact
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white max-w-4xl leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal max-w-4xl leading-tight">
               Market Leadership Achieved
             </h2>
           </motion.div>
@@ -401,11 +401,11 @@ export default function RetailMarketExpansion() {
                 The company doubled its regional market share from 8% to 16%, moving from fifth place to second place in the competitive landscape.
               </p>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="p-6 bg-base/5 rounded-xl">
+                <div className="p-6 bg-charcoal/5 rounded-xl">
                   <div className="text-3xl font-bold text-charcoal mb-2">8% → 16%</div>
                   <div className="text-sm text-charcoal/60">Regional market share growth</div>
                 </div>
-                <div className="p-6 bg-base/5 rounded-xl">
+                <div className="p-6 bg-charcoal/5 rounded-xl">
                   <div className="text-3xl font-bold text-charcoal mb-2">5th → 2nd</div>
                   <div className="text-sm text-charcoal/60">Market position improvement</div>
                 </div>
@@ -420,7 +420,7 @@ export default function RetailMarketExpansion() {
               <p className="text-charcoal/70 leading-relaxed mb-4">
                 Expanded from 35 to 52 stores, with new locations concentrated in high-potential clusters where the company achieved market leadership.
               </p>
-              <div className="p-6 bg-base/5 rounded-xl">
+              <div className="p-6 bg-charcoal/5 rounded-xl">
                 <div className="text-3xl font-bold text-charcoal mb-2">35 → 52</div>
                 <div className="text-sm text-charcoal/60">Store count growth in strategic clusters</div>
               </div>
@@ -434,7 +434,7 @@ export default function RetailMarketExpansion() {
               <p className="text-charcoal/70 leading-relaxed mb-4">
                 Average store-level EBITDA margins improved by 4.2 percentage points through better site selection and market positioning.
               </p>
-              <div className="p-6 bg-base/5 rounded-xl">
+              <div className="p-6 bg-charcoal/5 rounded-xl">
                 <div className="text-3xl font-bold text-charcoal mb-2">+4.2%</div>
                 <div className="text-sm text-charcoal/60">Store-level EBITDA margin improvement</div>
               </div>
@@ -448,7 +448,7 @@ export default function RetailMarketExpansion() {
               <p className="text-charcoal/70 leading-relaxed mb-4">
                 Return on invested capital (ROIC) for new stores exceeded company average by 35%, demonstrating superior site selection.
               </p>
-              <div className="p-6 bg-base/5 rounded-xl">
+              <div className="p-6 bg-charcoal/5 rounded-xl">
                 <div className="text-3xl font-bold text-charcoal mb-2">+35%</div>
                 <div className="text-sm text-charcoal/60">ROIC improvement for new stores vs. company average</div>
               </div>
@@ -458,7 +458,7 @@ export default function RetailMarketExpansion() {
       </section>
 
       {/* DZ10 Quote Section 2 */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -469,9 +469,9 @@ export default function RetailMarketExpansion() {
             <blockquote className="text-3xl md:text-4xl text-primary leading-tight mb-8">
               "NexDyne's geographic clustering approach completely changed our expansion strategy. Instead of spreading ourselves thin, we focused on dominating specific markets. The results speak for themselves—we went from fifth to second in the market in just two years."
             </blockquote>
-            <div className="text-base text-white">
+            <div className="text-base text-charcoal">
               <div className="font-semibold">— Chief Operating Officer</div>
-              <div className="text-white/60">Regional Consumer Electronics Retailer</div>
+              <div className="text-muted-foreground">Regional Consumer Electronics Retailer</div>
             </div>
           </motion.div>
         </div>
@@ -485,7 +485,7 @@ export default function RetailMarketExpansion() {
       </section>
 
       {/* DZ10 Related Cases Section */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -494,10 +494,10 @@ export default function RetailMarketExpansion() {
             transition={{ duration: 0.6 }}
             className="mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Related Case Studies
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white">More success stories</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal">More success stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
@@ -533,11 +533,11 @@ export default function RetailMarketExpansion() {
                     />
                   </div>
                   <span className="text-xs font-bold text-primary uppercase tracking-wider">{item.industry}</span>
-                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-bold text-charcoal mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-white/60 mt-2">{item.description}</p>
-                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
+                  <p className="text-muted-foreground mt-2">{item.description}</p>
+                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-[gap]">
                     Read case study <ArrowRight className="w-3 h-3" />
                   </span>
                 </Link>
@@ -547,7 +547,7 @@ export default function RetailMarketExpansion() {
 
           <div className="text-center mt-16">
             <Link href="/cases">
-              <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
+              <Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-8 py-6 text-base font-semibold transition bg-transparent">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to all case studies
               </Button>

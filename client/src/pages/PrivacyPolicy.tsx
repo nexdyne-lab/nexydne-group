@@ -32,7 +32,7 @@ export default function PrivacyPolicy() {
       <section className="bg-white pt-32 pb-16 border-b border-border/50">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl">
-            <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-charcoal tracking-tight mb-3">
+            <h1 className="nx-h1 font-bold text-charcoal tracking-tight mb-3">
               Privacy Policy
             </h1>
             <p className="text-lg text-muted-foreground italic">
@@ -272,7 +272,7 @@ export default function PrivacyPolicy() {
                       Data Protection Officer
                     </p>
                     <p className="text-charcoal/80 mb-2">
-                      Email: <a href="mailto:privacy@nexdyne.com" className="text-primary hover:underline">privacy@nexdyne.com</a>
+                      Email: <a href="mailto:contact@nexdynegroup.com" className="text-primary hover:underline">contact@nexdynegroup.com</a>
                     </p>
                     <p className="text-charcoal/80">
                       You may also use our <Link href="/contact" className="text-primary hover:underline">Contact Form</Link> to reach us.

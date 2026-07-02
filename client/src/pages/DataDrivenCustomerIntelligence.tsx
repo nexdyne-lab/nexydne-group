@@ -111,7 +111,7 @@ export default function DataDrivenCustomerIntelligence() {
       title: "Regional Bank Unlocks Cross-Sell Potential",
       description:
         "Unified 15+ data sources into a single customer view, achieved 4x conversion rate on targeted offers, and grew active product holdings per customer by 23%.",
-      image: "/images/case-studies/bank-cross-sell.jpg",
+      image: "/images/ai-powered-finance-abstract.jpg",
       link: "/solutions/data-driven-customer-intelligence/case-studies/bank-cross-sell",
     },
     {
@@ -119,7 +119,7 @@ export default function DataDrivenCustomerIntelligence() {
       title: "E-commerce Retailer Stops the Bleeding",
       description:
         "Identified at-risk customers 45 days before typical churn, reduced monthly churn rate from 8% to 5%, and generated $2.4M in retained revenue.",
-      image: "/images/case-studies/ecommerce-churn.jpg",
+      image: "/images/abstract-growth.jpg",
       link: "/solutions/data-driven-customer-intelligence/case-studies/ecommerce-repeat-purchase",
     },
     {
@@ -127,7 +127,7 @@ export default function DataDrivenCustomerIntelligence() {
       title: "Healthcare Network Personalizes Patient Outreach",
       description:
         "Created 8 distinct patient segments based on behavior, reduced no-show rates from 22% to 14%, and saved $1.8M annually in lost appointment revenue.",
-      image: "/images/case-studies/healthcare-engagement.jpg",
+      image: "/images/ai-team-collaboration.jpg",
       link: "/solutions/data-driven-customer-intelligence/case-studies/saas-churn-reduction",
     },
   ];
@@ -173,7 +173,7 @@ export default function DataDrivenCustomerIntelligence() {
         eyebrow="SOLUTION · DATA-DRIVEN CUSTOMER INTELLIGENCE"
         title="Data-Driven Customer Intelligence"
         subtitle="Know your customers. Predict their needs. Drive loyalty at scale through unified data, predictive models, and personalized experiences."
-        backgroundImage="/customer-intelligence-hero.57680a35.jpg"
+        backgroundImage="/hero-consultant.efacd953.jpg"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
       />
@@ -251,7 +251,7 @@ export default function DataDrivenCustomerIntelligence() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {services.map((service, i) => (
               <motion.div
                 key={i}
@@ -353,7 +353,7 @@ export default function DataDrivenCustomerIntelligence() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
             {approach.map((lens, i) => (
               <motion.div
                 key={i}
@@ -386,7 +386,7 @@ export default function DataDrivenCustomerIntelligence() {
       </section>
 
       {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
-      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+      <section className="bg-charcoal text-white nx-section">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -412,7 +412,7 @@ export default function DataDrivenCustomerIntelligence() {
               standard.
             </p>
             <Link href="/cases">
-              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+              <span className="inline-flex items-center gap-2 bg-primary text-white text-[13px] font-semibold uppercase tracking-[0.1em] px-7 py-4 hover:bg-primary-hover transition-colors cursor-pointer">
                 See How We Help Leaders Win
               </span>
             </Link>
@@ -510,7 +510,7 @@ export default function DataDrivenCustomerIntelligence() {
             </h3>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {relatedOfferings.map((offering, i) => (
               <motion.div
                 key={i}

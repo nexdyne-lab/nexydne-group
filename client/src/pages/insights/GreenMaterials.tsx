@@ -10,24 +10,24 @@ import Footer from '@/components/Footer';
 
 export default function GreenMaterials() {
   return (
-    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-blue-100">
+    <div className="min-h-screen bg-white text-charcoal font-sans selection:bg-primary/10">
       <Navigation />
 
       {/* Hero Section */}
-      <header className="pt-20 pb-16 border-b border-slate-100">
+      <header className="pt-20 pb-16 border-b border-border">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <div className="text-sm font-medium text-muted-foreground mb-6 uppercase tracking-wider">
-              <Link href="/insights" className="hover:text-blue-900 transition-colors">
+              <Link href="/insights" className="hover:text-primary transition-colors">
                 Insights
               </Link>
               <span className="mx-2">/</span>
-              <span className="text-blue-900">Perspective</span>
+              <span className="text-charcoal">Perspective</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-4 leading-[1.1]">
               The Green Materials Revolution
             </h1>
-            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light ">
+            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light">
               From green steel to bio-based plastics, a wave of material innovation is reshaping industrial supply chains.
             </p>
           </div>
@@ -78,9 +78,9 @@ export default function GreenMaterials() {
 
           {/* Sidebar */}
           <div className="lg:col-span-4 space-y-8">
-            <div className="bg-slate-50 p-8 rounded-sm border border-slate-100 sticky top-24">
+            <div className="bg-off-white p-8 rounded-sm border border-border sticky top-24">
               <div className="flex flex-col gap-4 mb-8">
-                <Button variant="outline" className="w-full border-slate-300 text-charcoal/80 hover:bg-slate-50 flex items-center justify-center gap-2">
+                <Button variant="outline" className="w-full border-border text-charcoal/80 hover:bg-off-white flex items-center justify-center gap-2">
                   <Share2 className="w-4 h-4" /> Share Perspective
                 </Button>
               </div>
@@ -88,14 +88,14 @@ export default function GreenMaterials() {
               <h3 className="text-lg font-bold text-charcoal mb-4">Authors</h3>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-slate-200 rounded-full"></div>
+                  <div className="w-10 h-10 bg-grey rounded-full"></div>
                   <div>
                     <div className="font-medium text-charcoal">David Kim</div>
                     <div className="text-xs text-muted-foreground">Partner, Seoul</div>
                   </div>
                 </li>
                 <li className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-slate-200 rounded-full"></div>
+                  <div className="w-10 h-10 bg-grey rounded-full"></div>
                   <div>
                     <div className="font-medium text-charcoal">Dr. Anna Weber</div>
                     <div className="text-xs text-muted-foreground">Expert Associate Partner, Munich</div>
@@ -103,16 +103,16 @@ export default function GreenMaterials() {
                 </li>
               </ul>
 
-              <div className="pt-8 border-t border-slate-200">
+              <div className="pt-8 border-t border-border">
                 <h4 className="font-bold text-charcoal mb-4 text-sm uppercase tracking-wide">Related Capabilities</h4>
                 <ul className="space-y-3">
                   <li>
-                    <Link href="/capabilities/growth-marketing-sales/green-growth" className="text-muted-foreground hover:text-blue-700 transition-colors text-sm block">
+                    <Link href="/capabilities/growth-marketing-sales/green-growth" className="text-muted-foreground hover:text-primary transition-colors text-sm block">
                       Green Growth
                     </Link>
                   </li>
                   <li>
-                    <Link href="/capabilities/growth-marketing-sales/green-growth/consumer-goods" className="text-muted-foreground hover:text-blue-700 transition-colors text-sm block">
+                    <Link href="/capabilities/growth-marketing-sales/green-growth/consumer-goods" className="text-muted-foreground hover:text-primary transition-colors text-sm block">
                       Consumer Goods
                     </Link>
                   </li>

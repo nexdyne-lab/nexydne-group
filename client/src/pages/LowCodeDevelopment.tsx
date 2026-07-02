@@ -19,10 +19,10 @@ export default function LowCodeDevelopment() {
       <Breadcrumb items={breadcrumbItems} />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-charcoal via-charcoal to-charcoal text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 right-20 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 right-20 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-20 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
         </div>
         
         <div className="container relative py-16 sm:py-20 md:py-24 lg:py-16 sm:py-20 md:py-24 lg:py-32">
@@ -108,7 +108,7 @@ export default function LowCodeDevelopment() {
 
           {/* Quote */}
           <div className="mt-12 border-l-4 border-primary pl-8 py-6 bg-white">
-            <p className="text-xl italic text-gray-800 mb-4">
+            <p className="text-xl italic text-charcoal mb-4">
               "We needed a custom CRM that integrated with our existing systems, but quotes for traditional development came in at $300K and 9 months. Low-code let us build exactly what we needed for under $50K in 6 weeks. The ROI was immediate."
             </p>
             <p className="text-lg font-semibold text-charcoal">VP of Operations, Manufacturing Company</p>
@@ -117,11 +117,11 @@ export default function LowCodeDevelopment() {
       </section>
 
       {/* Our Approach Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-slate-900 text-white">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-charcoal text-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-6 sm:p-6 sm:p-8 md:p-12 lg:gap-8 sm:gap-6 sm:p-8 md:p-12 lg:gap-16 items-start max-w-7xl mx-auto">
             <div>
-              <p className="text-sm font-semibold tracking-widest uppercase mb-6 text-cyan-400">Our Methodology</p>
+              <p className="text-sm font-semibold tracking-widest uppercase mb-6 text-amber">Our Methodology</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8">
                 From concept to production in weeks
               </h2>
@@ -137,9 +137,9 @@ export default function LowCodeDevelopment() {
             </div>
             
             <div className="space-y-8">
-              <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
+              <div className="bg-charcoal p-4 sm:p-6 md:p-8 rounded-lg border border-white/10">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
                     <span className="text-2xl font-bold text-charcoal">1</span>
                   </div>
                   <div>
@@ -151,9 +151,9 @@ export default function LowCodeDevelopment() {
                 </div>
               </div>
 
-              <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
+              <div className="bg-charcoal p-4 sm:p-6 md:p-8 rounded-lg border border-white/10">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
                     <span className="text-2xl font-bold text-charcoal">2</span>
                   </div>
                   <div>
@@ -165,9 +165,9 @@ export default function LowCodeDevelopment() {
                 </div>
               </div>
 
-              <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
+              <div className="bg-charcoal p-4 sm:p-6 md:p-8 rounded-lg border border-white/10">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
                     <span className="text-2xl font-bold text-charcoal">3</span>
                   </div>
                   <div>
@@ -194,7 +194,7 @@ export default function LowCodeDevelopment() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-7xl mx-auto">
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Code2 className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Custom CRM Systems</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -202,7 +202,7 @@ export default function LowCodeDevelopment() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Users className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Employee Portals</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -210,7 +210,7 @@ export default function LowCodeDevelopment() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Blocks className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Workflow Automation</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -218,7 +218,7 @@ export default function LowCodeDevelopment() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <DollarSign className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Field Service Apps</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -226,7 +226,7 @@ export default function LowCodeDevelopment() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <RefreshCw className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Partner Portals</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -234,7 +234,7 @@ export default function LowCodeDevelopment() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Zap className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Operational Dashboards</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -257,7 +257,7 @@ export default function LowCodeDevelopment() {
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-6xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/app-development/custom-software" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 h-full bg-white">
                 <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   Custom Software
                 </h3>
@@ -272,7 +272,7 @@ export default function LowCodeDevelopment() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/service-portals" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 h-full bg-white">
                 <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   Service Portals
                 </h3>
@@ -287,7 +287,7 @@ export default function LowCodeDevelopment() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/it-modernization" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 h-full bg-white">
                 <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   IT Modernization
                 </h3>
@@ -305,7 +305,7 @@ export default function LowCodeDevelopment() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-slate-900 text-white">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-charcoal text-white">
         <div className="container max-w-4xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8">
             Ready to accelerate application delivery?

@@ -21,15 +21,15 @@ export default function ProcessOrchestration() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-charcoal via-charcoal to-charcoal text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 right-20 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 right-20 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-20 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
         </div>
         
         <div className="container relative py-16 sm:py-20 md:py-24 lg:py-16 sm:py-20 md:py-24 lg:py-32">
           <div className="max-w-5xl">
-            <h1 className="text-6xl md:text-7xl font-bold mb-5 sm:mb-3 md:mb-4 leading-tight eb-garamond">
+            <h1 className="text-6xl md:text-7xl font-bold mb-5 sm:mb-3 md:mb-4 leading-tight">
               Process Orchestration
             </h1>
             <p className="text-2xl leading-relaxed opacity-90 max-w-3xl">
@@ -110,7 +110,7 @@ export default function ProcessOrchestration() {
 
           {/* Quote */}
           <div className="mt-12 border-l-4 border-primary pl-8 py-6 bg-white">
-            <p className="text-xl italic text-gray-800 mb-4">
+            <p className="text-xl italic text-charcoal mb-4">
               "Our customer onboarding process involved seven departments and took weeks. Process orchestration reduced it to days while improving accuracy and customer satisfaction. We can now handle 3x the volume with the same team."
             </p>
             <p className="text-lg font-semibold text-charcoal">VP of Operations, SaaS Company</p>
@@ -119,11 +119,11 @@ export default function ProcessOrchestration() {
       </section>
 
       {/* Our Approach Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-slate-900 text-white">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-charcoal text-white">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-6 sm:p-6 sm:p-8 md:p-12 lg:gap-8 sm:gap-6 sm:p-8 md:p-12 lg:gap-16 items-start max-w-7xl mx-auto">
             <div>
-              <p className="text-sm font-semibold tracking-widest uppercase mb-6 text-cyan-400">Our Methodology</p>
+              <p className="text-sm font-semibold tracking-widest uppercase mb-6 text-amber">Our Methodology</p>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8">
                 From chaos to choreography
               </h2>
@@ -139,9 +139,9 @@ export default function ProcessOrchestration() {
             </div>
             
             <div className="space-y-8">
-              <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
+              <div className="bg-charcoal p-4 sm:p-6 md:p-8 rounded-lg border border-white/10">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
                     <span className="text-2xl font-bold text-charcoal">1</span>
                   </div>
                   <div>
@@ -153,9 +153,9 @@ export default function ProcessOrchestration() {
                 </div>
               </div>
 
-              <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
+              <div className="bg-charcoal p-4 sm:p-6 md:p-8 rounded-lg border border-white/10">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
                     <span className="text-2xl font-bold text-charcoal">2</span>
                   </div>
                   <div>
@@ -167,9 +167,9 @@ export default function ProcessOrchestration() {
                 </div>
               </div>
 
-              <div className="bg-slate-800 p-4 sm:p-6 md:p-8 rounded-lg border border-slate-700">
+              <div className="bg-charcoal p-4 sm:p-6 md:p-8 rounded-lg border border-white/10">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 bg-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
                     <span className="text-2xl font-bold text-charcoal">3</span>
                   </div>
                   <div>
@@ -196,7 +196,7 @@ export default function ProcessOrchestration() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-7xl mx-auto">
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Workflow className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Customer Onboarding</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -204,7 +204,7 @@ export default function ProcessOrchestration() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <GitMerge className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Order-to-Cash</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -212,7 +212,7 @@ export default function ProcessOrchestration() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Users className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Employee Lifecycle</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -220,7 +220,7 @@ export default function ProcessOrchestration() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <TrendingUp className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Procure-to-Pay</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -228,7 +228,7 @@ export default function ProcessOrchestration() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Target className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Incident Management</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -236,7 +236,7 @@ export default function ProcessOrchestration() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Eye className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Compliance Workflows</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -259,7 +259,7 @@ export default function ProcessOrchestration() {
           
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 max-w-5xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/process-automation/rpa" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 h-full bg-white">
                 <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   RPA (Robotic Process Automation)
                 </h3>
@@ -274,7 +274,7 @@ export default function ProcessOrchestration() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/process-automation/ipaas" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 h-full bg-white">
                 <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   iPaaS (Integration Platform)
                 </h3>
@@ -292,7 +292,7 @@ export default function ProcessOrchestration() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-slate-900 text-white">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-charcoal text-white">
         <div className="container max-w-4xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8">
             Ready to orchestrate seamless operations?

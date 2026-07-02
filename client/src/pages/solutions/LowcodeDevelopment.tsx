@@ -159,7 +159,7 @@ export default function LowcodeDevelopment() {
       />
 
       {/* SLOT 2 — White lead / editorial intro */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -168,17 +168,16 @@ export default function LowcodeDevelopment() {
             transition={{ duration: 0.6 }}
             className="max-w-[72ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Our Perspective
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal mb-10"
             >
               Lowcode isn't a shortcut. It's a different stack — for a specific kind of work.
             </h3>
             <div className="space-y-6">
-              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+              <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 The lowcode market has matured past the early hype. Platforms like
                 OutSystems, Mendix, and PowerApps now ship enterprise-grade workflow,
                 portal, and operational apps at five-times-plus the velocity of
@@ -186,7 +185,7 @@ export default function LowcodeDevelopment() {
                 isn't tooling — it's governance, platform selection, and the
                 operating model around the build.
               </p>
-              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
+              <p className="nx-lead text-charcoal/80 max-w-[60ch]">
                 NexDyne's{" "}
                 <Link
                   href="/insights/lowcode-platform-selection"
@@ -204,7 +203,7 @@ export default function LowcodeDevelopment() {
       </section>
 
       {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
-      <section className="bg-grey py-24 md:py-32">
+      <section className="bg-grey nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -213,23 +212,22 @@ export default function LowcodeDevelopment() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               How We Help Clients
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-            style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               Six ways we make lowcode an enterprise capability.
             </h3>
-            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+            <p className="nx-lead text-charcoal/80 max-w-[60ch] mt-6">
               We combine deep platform fluency in OutSystems, Mendix, and PowerApps
               with the governance discipline of teams that have lived through the
               shadow-IT clean-up — building lowcode programs that scale.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {services.map((service, i) => (
               <motion.div
                 key={i}
@@ -241,7 +239,7 @@ export default function LowcodeDevelopment() {
               >
                 <Link href={service.link} className="block h-full group cursor-pointer">
                   <div className="h-full p-8 lg:p-10 flex flex-col">
-                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
+                    <h3 className="nx-h3 text-charcoal mb-4 leading-[1.25] group-hover:text-primary transition-colors">
                       {service.title}
                     </h3>
                     <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
@@ -259,7 +257,7 @@ export default function LowcodeDevelopment() {
       </section>
 
       {/* SLOT 4 — White Outcome / Real Results stat cluster */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -268,12 +266,11 @@ export default function LowcodeDevelopment() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Our Experience & Impact
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               Measurable outcomes from lowcode programs in production.
             </h3>
@@ -293,8 +290,7 @@ export default function LowcodeDevelopment() {
               >
                 {/* TODO: replace with real stat */}
                 <div
-                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
-                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
+                  className="text-[2.75rem] md:text-[3.5rem] text-charcoal font-bold tracking-[-0.02em] mb-5"
                 >
                   {item.stat}
                 </div>
@@ -308,7 +304,7 @@ export default function LowcodeDevelopment() {
       </section>
 
       {/* SLOT 5 — Light grey Approach / Methodology framework */}
-      <section className="bg-grey py-24 md:py-32">
+      <section className="bg-grey nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -317,22 +313,21 @@ export default function LowcodeDevelopment() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               How We Think About It
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               The Lowcode-at-Scale Framework
             </h3>
-            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+            <p className="nx-lead text-charcoal/80 max-w-[60ch] mt-6">
               Four integrated phases that turn lowcode from a one-off pilot into the
               sustained delivery capability your business can keep scaling.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {approach.map((step, i) => (
               <motion.div
                 key={i}
@@ -365,7 +360,7 @@ export default function LowcodeDevelopment() {
       </section>
 
       {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
-      <section className="bg-primary text-primary-foreground py-24 md:py-32">
+      <section className="bg-charcoal text-white nx-section">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -373,25 +368,24 @@ export default function LowcodeDevelopment() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
+            <span className="block nx-eyebrow text-white/70 mb-6">
               The Outcome
             </span>
             <h2
-              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-white mb-8"
             >
               Lowcode that lasts. NexDyne clients have cleared multi-year IT
               backlogs, stood up Centers of Excellence, and turned platform pilots
               into the most productive part of the engineering portfolio.
             </h2>
-            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
+            <p className="nx-lead text-white/85 max-w-[60ch] mb-8">
               We've built lowcode programs across manufacturing, insurance,
               healthcare, and the public sector — treating governance, integration,
               and the operating model as the inputs that decide whether lowcode
               scales or shrinks.
             </p>
             <Link href="/cases">
-              <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-white pb-1 cursor-pointer">
+              <span className="inline-flex items-center gap-2 bg-primary text-white text-[13px] font-semibold uppercase tracking-[0.1em] px-7 py-4 hover:bg-primary-hover transition-colors cursor-pointer">
                 See How We Help Leaders Win
               </span>
             </Link>
@@ -400,7 +394,7 @@ export default function LowcodeDevelopment() {
       </section>
 
       {/* SLOT 7 — White Case studies / proof */}
-      <section className="bg-white py-24 md:py-32">
+      <section className="bg-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -409,12 +403,11 @@ export default function LowcodeDevelopment() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Client Results
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               Lowcode, proved in outcomes.
             </h3>
@@ -443,7 +436,7 @@ export default function LowcodeDevelopment() {
                         {result.industry}
                       </span>
                       {/* TODO: replace with real stat */}
-                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
+                      <h3 className="nx-h3 text-charcoal leading-[1.25] mb-4 group-hover:text-primary transition-colors">
                         {result.title}
                       </h3>
                       <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
@@ -470,7 +463,7 @@ export default function LowcodeDevelopment() {
       </section>
 
       {/* SLOT 8 — White Related capabilities / cross-sell */}
-      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
+      <section className="bg-white nx-section border-t border-charcoal/10">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -479,18 +472,17 @@ export default function LowcodeDevelopment() {
             transition={{ duration: 0.6 }}
             className="mb-16 max-w-[60ch]"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+            <span className="block nx-eyebrow text-charcoal/60 mb-5">
               Related Offerings
             </span>
             <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+              className="nx-h2 text-charcoal"
             >
               Adjacent capabilities for a complete delivery portfolio.
             </h3>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {relatedOfferings.map((offering, i) => (
               <motion.div
                 key={i}
@@ -502,7 +494,7 @@ export default function LowcodeDevelopment() {
               >
                 <Link href={offering.link} className="block h-full group cursor-pointer">
                   <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
-                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
+                    <h3 className="nx-h3 text-charcoal leading-[1.25] group-hover:text-primary transition-colors">
                       {offering.title}
                     </h3>
                     <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
@@ -517,7 +509,7 @@ export default function LowcodeDevelopment() {
       </section>
 
       {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
-      <section className="bg-charcoal text-white py-24 md:py-32">
+      <section className="bg-charcoal text-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
@@ -527,16 +519,15 @@ export default function LowcodeDevelopment() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                <span className="block nx-eyebrow text-white/70 mb-5">
                   Ready to Talk?
                 </span>
                 <h2
-                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
-                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+                  className="nx-h2 text-white mb-10"
                 >
                   Bring our lowcode team into your next platform conversation.
                 </h2>
-                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                <p className="nx-lead text-white/80 mb-6 max-w-[52ch]">
                   I want to talk to your experts in:
                 </p>
                 <Select
@@ -568,7 +559,7 @@ export default function LowcodeDevelopment() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
-                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                <p className="nx-lead text-white/80 mb-8 max-w-[52ch]">
                   We work with leaders ready to treat lowcode as the enterprise
                   capability it is — with the platform, the governance, and the
                   Center of Excellence to back it.

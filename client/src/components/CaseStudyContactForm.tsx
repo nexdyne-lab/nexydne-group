@@ -40,7 +40,7 @@ export default function CaseStudyContactForm({ caseStudyTitle }: CaseStudyContac
   };
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-slate-50 to-gray-100">
+    <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-off-white to-off-white">
       <div className="container">
         <div className="max-w-3xl mx-auto">
           <div className="bg-white rounded-xl sm:rounded-xl sm:rounded-2xl shadow-xl p-8 md:p-12">
@@ -54,7 +54,7 @@ export default function CaseStudyContactForm({ caseStudyTitle }: CaseStudyContac
             </div>
 
             {isSubmitted ? (
-              <div className="bg-secondary/10 border border-green-200 rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 text-center">
+              <div className="bg-secondary/10 border border-amber/15 rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 text-center">
                 <div className="text-secondary text-5xl mb-4">✓</div>
                 <h3 className="text-xl font-semibold text-charcoal mb-2">Thank you for your interest!</h3>
                 <p className="text-secondary">
@@ -140,7 +140,7 @@ export default function CaseStudyContactForm({ caseStudyTitle }: CaseStudyContac
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full md:w-auto px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg bg-gradient-to-r from-primary to-primary hover:from-primary hover:to-primary text-white font-semibold rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full md:w-auto px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg bg-gradient-to-r from-primary to-primary hover:from-primary hover:to-primary text-white font-semibold rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? "Sending..." : "Request Consultation"}
                   </Button>

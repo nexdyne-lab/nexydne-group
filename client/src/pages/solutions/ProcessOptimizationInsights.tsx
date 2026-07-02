@@ -154,7 +154,7 @@ export default function ProcessOptimizationInsights() {
   const types: InsightType[] = ["All", "Article", "Guide", "Whitepaper"];
 
   return (
-    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Process Optimization Insights | NexDyne Technologies" 
         description="Expert perspectives on intelligent automation, process mining, and operational excellence. Practical strategies for transforming manual operations."
@@ -172,7 +172,7 @@ export default function ProcessOptimizationInsights() {
       {/* DZ10 Hero Section */}
       <section className="relative pt-8 pb-20 md:pt-12 md:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-15"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/80 to-base"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background"></div>
         
         <div className="container relative z-10 px-4 md:px-12">
           <Link href="/solutions/intelligent-process-optimization" className="inline-flex items-center gap-2 text-primary hover:text-primary/80 mb-8 transition-colors font-medium">
@@ -189,11 +189,11 @@ export default function ProcessOptimizationInsights() {
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">
               Process Optimization Insights
             </span>
-            <h1 className="text-5xl md:text-7xl eb-garamond font-bold tracking-tight leading-[1.05] mb-4">
+            <h1 className="text-[2.25rem] md:text-[3.25rem] font-bold tracking-tight leading-[1.05] mb-4">
               Expert perspectives on <br />
               <span className="text-primary">intelligent automation</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl">
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl">
               Practical strategies, technical guides, and thought leadership on transforming manual operations into autonomous systems.
             </p>
           </motion.div>
@@ -201,20 +201,20 @@ export default function ProcessOptimizationInsights() {
       </section>
 
       {/* DZ10 Filters Section */}
-      <section className="py-8 bg-base border-b border-white/10">
+      <section className="py-8 bg-background border-b border-border">
         <div className="container px-4 md:px-12 space-y-6">
           {/* Type Filters */}
           <div>
-            <h3 className="text-sm font-semibold text-white/60 mb-4">Filter by Type</h3>
+            <h3 className="text-sm font-semibold text-muted-foreground mb-4">Filter by Type</h3>
             <div className="flex flex-wrap gap-3">
               {types.map((type) => (
                 <button
                   key={type}
                   onClick={() => setSelectedType(type)}
-                  className={`px-4 py-2 rounded-lg font-medium transition-all flex items-center gap-2 ${
+                  className={`px-4 py-2 rounded-lg font-medium transition flex items-center gap-2 ${
                     selectedType === type
-                      ? "bg-primary text-white"
-                      : "bg-white/5 text-white/70 hover:bg-white/10 hover:text-white border border-white/10"
+                      ? "bg-primary text-charcoal"
+                      : "bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-white border border-border"
                   }`}
                 >
                   {type !== "All" && getTypeIcon(type as InsightPost["type"])}
@@ -226,17 +226,17 @@ export default function ProcessOptimizationInsights() {
 
           {/* Tag Filters */}
           <div>
-            <h3 className="text-sm font-semibold text-white/60 mb-4 flex items-center gap-2">
+            <h3 className="text-sm font-semibold text-muted-foreground mb-4 flex items-center gap-2">
               <Tag className="w-4 h-4" />
               Filter by Topic
             </h3>
             <div className="flex flex-wrap gap-2">
               <button
                 onClick={() => setSelectedTag(null)}
-                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                className={`px-3 py-1.5 rounded-full text-sm font-medium transition ${
                   selectedTag === null
                     ? "bg-white text-charcoal"
-                    : "bg-white/5 text-white/60 hover:bg-white/10 hover:text-white border border-white/10"
+                    : "bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-white border border-border"
                 }`}
               >
                 All Topics
@@ -245,10 +245,10 @@ export default function ProcessOptimizationInsights() {
                 <button
                   key={tag}
                   onClick={() => setSelectedTag(tag)}
-                  className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                  className={`px-3 py-1.5 rounded-full text-sm font-medium transition ${
                     selectedTag === tag
                       ? "bg-white text-charcoal"
-                      : "bg-white/5 text-white/60 hover:bg-white/10 hover:text-white border border-white/10"
+                      : "bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-white border border-border"
                   }`}
                 >
                   {tag}
@@ -261,7 +261,7 @@ export default function ProcessOptimizationInsights() {
 
       {/* DZ10 Featured Insight */}
       {selectedType === "All" && !selectedTag && (
-        <section className="py-16 md:py-20 bg-base">
+        <section className="nx-section bg-background">
           <div className="container px-4 md:px-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -270,7 +270,7 @@ export default function ProcessOptimizationInsights() {
               transition={{ duration: 0.6 }}
             >
               <Link href={insightPosts[0].url}>
-                <div className="group grid md:grid-cols-2 gap-8 lg:gap-16 items-center bg-white/5 rounded-2xl overflow-hidden hover:bg-white/[0.07] transition-all duration-300">
+                <div className="group grid md:grid-cols-2 gap-8 lg:gap-16 items-center bg-white/5 rounded-2xl overflow-hidden hover:bg-white/[0.07] transition duration-300">
                   <div className="aspect-[16/10] overflow-hidden">
                     <img 
                       src={insightPosts[0].image} 
@@ -280,28 +280,28 @@ export default function ProcessOptimizationInsights() {
                   </div>
                   <div className="p-8 md:p-0 md:pr-12">
                     <div className="flex items-center gap-3 mb-4">
-                      <span className="bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
+                      <span className="bg-primary text-charcoal px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
                         Featured
                       </span>
-                      <span className="text-white/60 text-sm flex items-center gap-1">
+                      <span className="text-muted-foreground text-sm flex items-center gap-1">
                         {getTypeIcon(insightPosts[0].type)}
                         {insightPosts[0].type}
                       </span>
                     </div>
-                    <h2 className="text-3xl md:text-4xl eb-garamond font-bold text-white mb-4 group-hover:text-primary transition-colors">
+                    <h2 className="text-3xl md:text-[2rem] font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
                       {insightPosts[0].title}
                     </h2>
-                    <p className="text-white/60 text-lg leading-relaxed mb-6">
+                    <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                       {insightPosts[0].description}
                     </p>
-                    <div className="flex items-center gap-4 text-white/50 text-sm mb-6">
+                    <div className="flex items-center gap-4 text-muted-foreground text-sm mb-6">
                       <span>{insightPosts[0].date}</span>
                       <span className="flex items-center gap-1">
                         <Clock className="w-4 h-4" />
                         {insightPosts[0].readTime}
                       </span>
                     </div>
-                    <span className="text-primary font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
+                    <span className="text-primary font-semibold flex items-center gap-2 group-hover:gap-3 transition-[gap]">
                       Read article <ArrowRight className="w-4 h-4" />
                     </span>
                   </div>
@@ -313,7 +313,7 @@ export default function ProcessOptimizationInsights() {
       )}
 
       {/* DZ10 Insights Grid */}
-      <section className="py-24 md:py-32 bg-white text-charcoal">
+      <section className="nx-section bg-white text-charcoal">
         <div className="container px-4 md:px-12">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredPosts.slice(selectedType === "All" && !selectedTag ? 1 : 0).map((post, index) => (
@@ -326,9 +326,9 @@ export default function ProcessOptimizationInsights() {
               >
                 <Link href={post.url}>
                   <div className="group cursor-pointer h-full">
-                    <div className="bg-white border border-base/10 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col hover:border-primary/30">
+                    <div className="bg-white border border-border rounded-xl overflow-hidden hover:shadow-xl transition duration-300 h-full flex flex-col hover:border-primary/30">
                       {/* Image */}
-                      <div className="relative aspect-video overflow-hidden bg-base/5">
+                      <div className="relative aspect-video overflow-hidden bg-charcoal/5">
                         <img 
                           src={post.image} 
                           alt={post.title}
@@ -350,7 +350,7 @@ export default function ProcessOptimizationInsights() {
                           {post.tags.slice(0, 2).map((tag) => (
                             <span 
                               key={tag}
-                              className="text-xs bg-base/5 text-charcoal/60 px-2 py-1 rounded-md font-medium"
+                              className="text-xs bg-charcoal/5 text-charcoal/60 px-2 py-1 rounded-md font-medium"
                             >
                               {tag}
                             </span>
@@ -368,7 +368,7 @@ export default function ProcessOptimizationInsights() {
                         </p>
                         
                         {/* Meta Info */}
-                        <div className="flex items-center justify-between text-sm text-charcoal/50 pt-4 border-t border-base/10">
+                        <div className="flex items-center justify-between text-sm text-charcoal/50 pt-4 border-t border-border">
                           <span>{post.date}</span>
                           <span className="flex items-center gap-1">
                             <Clock className="w-4 h-4" />
@@ -395,7 +395,7 @@ export default function ProcessOptimizationInsights() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-20 md:py-24 bg-base/5">
+      <section className="nx-section bg-charcoal/5">
         <div className="container px-4 md:px-12">
           <div className="max-w-2xl mx-auto">
             <NewsletterSubscribe />
@@ -404,7 +404,7 @@ export default function ProcessOptimizationInsights() {
       </section>
 
       {/* DZ10 CTA Section */}
-      <section className="py-24 md:py-32 bg-primary">
+      <section className="nx-section bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -413,20 +413,20 @@ export default function ProcessOptimizationInsights() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-white mb-6">
+            <h2 className="text-[2rem] md:text-[2.5rem] font-bold text-charcoal mb-6">
               Ready to optimize your processes?
             </h2>
-            <p className="text-xl text-white/80 mb-10">
+            <p className="text-xl text-muted-foreground mb-10">
               Let's discuss how intelligent automation can transform your operations and eliminate bottlenecks.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
-                <Button className="bg-white text-primary hover:bg-white/90 px-8 py-6 text-base font-semibold transition-all hover:scale-[1.02] hover:shadow-lg">
+                <Button className="bg-white text-primary hover:bg-white/90 px-8 py-6 text-base font-semibold transition hover:scale-[1.02] hover:shadow-lg">
                   Schedule a Consultation
                 </Button>
               </Link>
               <Link href="/solutions/intelligent-process-optimization/case-studies">
-                <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
+                <Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-8 py-6 text-base font-semibold transition bg-transparent">
                   View Case Studies
                 </Button>
               </Link>

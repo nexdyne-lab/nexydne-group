@@ -47,7 +47,7 @@ export default function ProcessDiscoveryMining() {
         eyebrow="INTELLIGENT PROCESS OPTIMIZATION · PROCESS DISCOVERY & MINING"
         title="Process Discovery & Mining"
         subtitle="Uncover hidden inefficiencies and bottlenecks through advanced process mining, creating a data-driven foundation for transformation."
-        backgroundImage="https://files.manuscdn.com/user_upload_by_module/session_file/310419663032212491/ahRLBXyxjnIStHiI.jpg"
+        backgroundImage="/images/ai-abstract-visualization.jpg"
         primaryCta={{ label: "Request a Process Analysis", href: "/contact" }}
         secondaryCta={{ label: "Explore Our Impact", href: "/cases" }}
       />
@@ -74,7 +74,6 @@ export default function ProcessDiscoveryMining() {
             </span>
             <h2
               className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-charcoal max-w-[32ch]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
               The numbers behind our process mining work.
             </h2>
@@ -98,7 +97,6 @@ export default function ProcessDiscoveryMining() {
               >
                 <div
                   className="text-5xl md:text-6xl text-charcoal mb-3"
-                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
                 >
                   {item.metric}
                 </div>
@@ -134,7 +132,7 @@ export default function ProcessDiscoveryMining() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-base md:text-lg text-charcoal/80 leading-[1.65] mb-6"
+              className="nx-lead text-charcoal/80 mb-6"
             >
               Process discovery and mining offers a data-driven alternative,
               transforming digital footprints from your existing IT systems
@@ -149,7 +147,7 @@ export default function ProcessDiscoveryMining() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-base md:text-lg text-charcoal/80 leading-[1.65]"
+              className="nx-lead text-charcoal/80"
             >
               This reveals not just the "happy path," but every
               variation, bottleneck, and compliance deviation. It's the
@@ -175,11 +173,10 @@ export default function ProcessDiscoveryMining() {
             </span>
             <h2
               className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-charcoal"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
               Our Process Mining Capabilities
             </h2>
-            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] mt-6">
+            <p className="nx-lead text-charcoal/80 mt-6">
               From data extraction to actionable insights, we provide a
               comprehensive suite of services.
             </p>
@@ -250,7 +247,6 @@ export default function ProcessDiscoveryMining() {
             </span>
             <h2
               className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-white"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
               From data, to insight, to action.
             </h2>
@@ -321,7 +317,6 @@ export default function ProcessDiscoveryMining() {
             </span>
             <h2
               className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-white"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
               Success stories in process mining.
             </h2>
@@ -390,7 +385,6 @@ export default function ProcessDiscoveryMining() {
             </span>
             <h2
               className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-charcoal"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
               Continue your transformation journey.
             </h2>
@@ -426,7 +420,6 @@ export default function ProcessDiscoveryMining() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
               className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] text-white mb-8"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
             >
               Ready to uncover your hidden factory?
             </motion.h2>
@@ -435,7 +428,7 @@ export default function ProcessDiscoveryMining() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-base md:text-lg text-white/80 leading-[1.65] mb-10 max-w-[60ch]"
+              className="nx-lead text-white/80 mb-10 max-w-[60ch]"
             >
               Let's talk about how Process Discovery and Mining can
               illuminate the path to operational excellence for your business.

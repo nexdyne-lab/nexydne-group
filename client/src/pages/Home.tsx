@@ -4,7 +4,9 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { SEO } from "@/components/SEO";
-import { BainHero } from "@/components/BainHero";
+import { BainHeroCarousel } from "@/components/BainHeroCarousel";
+import { SpotlightStories } from "@/components/SpotlightStories";
+import { OperationalExcellence } from "@/components/OperationalExcellence";
 
 // Our Perspective category nav — preserved verbatim
 const perspectiveCategories = [
@@ -36,30 +38,6 @@ const industries = [
   { id: "financial-institutions", title: "Financial Institutions", link: "/industries/financial-services" },
   { id: "healthcare", title: "Healthcare", link: "/industries/healthcare" },
   { id: "technology", title: "Technology, Media & Telecommunications", link: "/industries/technology" },
-];
-
-// Operational excellence services — preserved verbatim
-const operationalServices = [
-  {
-    title: "Intelligent Process Optimization",
-    description: "We help organizations transform manual operations into autonomous systems, eliminating bottlenecks and accelerating execution.",
-    link: "/solutions/intelligent-process-optimization",
-  },
-  {
-    title: "Data-Driven Customer Intelligence",
-    description: "We help organizations unlock deep customer insights through advanced analytics, predicting behavior and driving loyalty at scale.",
-    link: "/solutions/data-driven-customer-intelligence",
-  },
-  {
-    title: "Scalable Enterprise Transformation",
-    description: "We help organizations modernize their core technology stack, building cloud-native infrastructure that scales with ambition.",
-    link: "/solutions/scalable-enterprise-transformation",
-  },
-  {
-    title: "Accelerating Business Growth",
-    description: "We help organizations launch new digital products and channels, driving revenue through e-commerce and digital innovation.",
-    link: "/solutions/accelerating-business-growth",
-  },
 ];
 
 // Latest insights — preserved verbatim
@@ -118,13 +96,25 @@ export default function Home() {
 
       <Navigation />
 
-      {/* 1. Homepage Hero (full-screen editorial carousel — now 85vh) */}
-      <BainHero />
+      {/* 1. Homepage Hero — full-bleed rotating carousel (Bain-style) */}
+      <BainHeroCarousel />
 
-      {/* 2. Our Perspective — asymmetric 5/7 grid on off-white */}
-      <section className="bg-off-white py-24 md:py-32">
-        <div className="px-6 sm:px-8 md:px-12 lg:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+      {/* 1b. NexDyne Spotlight — featured perspectives (BCG stories pattern) */}
+      <SpotlightStories />
+
+      {/* 2. Our Perspective — asymmetric 5/7 grid, warm brand wash */}
+      <section className="relative bg-off-white pt-6 pb-10 lg:pt-8 lg:pb-12 overflow-hidden">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(48% 62% at 100% 0%, rgba(255,180,29,0.13) 0%, transparent 56%)," +
+              "radial-gradient(44% 56% at 0% 100%, rgba(224,76,44,0.09) 0%, transparent 56%)",
+          }}
+        />
+        <div className="relative px-6 sm:px-8 md:px-12 lg:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20 items-center">
             {/* Left (5/12) — eyebrow + headline */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -136,12 +126,14 @@ export default function Home() {
               <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-6">
                 Our Perspective
               </span>
-              <h2
-                className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-                style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-              >
-                Governing Intelligence. Scaling Judgment. Leading in the Age of{" "}
-                <span className="text-primary">Intelligent Machines.</span>
+              <h2 className="nx-h2 text-charcoal">
+                Governing intelligence. Scaling judgment. Leading in the age of{" "}
+                <span
+                  className="text-charcoal"
+                  
+                >
+                  intelligent machines.
+                </span>
               </h2>
             </motion.div>
 
@@ -153,23 +145,19 @@ export default function Home() {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="lg:col-span-7"
             >
-              <p className="text-lg md:text-xl text-charcoal/80 leading-[1.65] max-w-[58ch]">
+              <p className="text-base md:text-lg text-charcoal/80 leading-[1.7] max-w-[58ch]">
                 The organizations that will define the next decade will be the ones that govern intelligence as deliberately as they deploy it. NexDyne combines deep industry expertise with structured intelligence governance to help ambitious leaders harness AI, data, and operational power — while strengthening the human judgment, accountability, and trust that no machine can provide. From modernizing legacy systems to designing AI-enabled operating models, we build transformations that perform, endure, and scale. NexDyne is where governance meets growth.
               </p>
             </motion.div>
           </div>
 
-          {/* Editorial category strip — centered, medium-small, hairline top */}
-          <div className="mt-16 md:mt-20 pt-8 border-t border-charcoal/15">
-            <div className="flex flex-wrap justify-center items-baseline gap-x-10 gap-y-4 md:gap-x-14">
+          {/* Editorial category strip — spread across, box-highlight on hover/active */}
+          <div className="mt-10 lg:mt-12 pt-6 border-t border-charcoal/15">
+            <div className="flex flex-wrap justify-center lg:justify-between items-center gap-x-4 gap-y-3">
               {perspectiveCategories.map((cat) => (
                 <Link key={cat.label} href={cat.href}>
                   <span
-                    className={`text-[13px] font-semibold uppercase tracking-[0.2em] pb-2 transition-colors cursor-pointer ${
-                      cat.active
-                        ? "text-charcoal border-b-2 border-primary"
-                        : "text-charcoal/60 hover:text-charcoal"
-                    }`}
+                    className="inline-block px-3 py-2 text-[14px] md:text-[15px] font-semibold uppercase tracking-[0.18em] text-charcoal/65 hover:text-amber transition-colors duration-200 cursor-pointer"
                   >
                     {cat.label}
                   </span>
@@ -182,7 +170,7 @@ export default function Home() {
 
       {/* 3. AI and Technology Consulting — split, polished typography */}
       <section className="w-full bg-white">
-        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[440px] md:min-h-[560px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[360px] lg:min-h-[400px]">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -191,7 +179,7 @@ export default function Home() {
             className="relative min-h-[350px] lg:min-h-0 overflow-hidden"
           >
             <img
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/3104196630322124911/URgwZkCckpcISJKD.jpg"
+              src="/images/ai-abstract-visualization.jpg"
               alt="AI and Technology Consulting"
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -202,18 +190,15 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="bg-white flex flex-col justify-center px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24 py-20 md:py-24"
+            className="bg-white flex flex-col justify-center px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24 py-14 md:py-16"
           >
             <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 font-semibold mb-6 block">
               AI & Technology
             </span>
-            <h2
-              className="text-2xl md:text-3xl lg:text-4xl text-charcoal leading-[1.15] mb-7"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
+            <h2 className="nx-h2-split text-charcoal mb-6">
               AI and Technology Consulting
             </h2>
-            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] mb-10 max-w-[58ch]">
+            <p className="text-base md:text-[1.05rem] text-charcoal/80 leading-[1.7] mb-9 max-w-[58ch]">
               Learn how our AI and Technology consulting is helping clients to outcompete and deliver value at scale through the latest trends in tech. From intelligent automation and machine learning to cloud-native architecture and data strategy, we partner with organizations to build resilient, future-ready technology foundations.
             </p>
             <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">
@@ -230,22 +215,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. Our Solutions — "How can we assist you today?" — flat tabs, no giant photo */}
-      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
-        <div className="px-6 sm:px-8 md:px-12 lg:px-16">
+      {/* 4. Our Solutions — expertise tabs, subtle brand wash */}
+      <section className="relative bg-white nx-section border-t border-charcoal/10 overflow-hidden">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(40% 55% at 0% 0%, rgba(224,76,44,0.07) 0%, transparent 55%)," +
+              "radial-gradient(38% 50% at 100% 100%, rgba(255,180,29,0.09) 0%, transparent 55%)",
+          }}
+        />
+        <div className="relative px-6 sm:px-8 md:px-12 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
             {/* Left — 40% */}
             <div className="lg:col-span-5">
               <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-6">
                 How Can We Assist You Today?
               </span>
-              <h2
-                className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-6"
-                style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-              >
+              <h2 className="nx-h2 text-charcoal mb-6">
                 Explore our core areas of expertise.
               </h2>
-              <p className="text-base md:text-lg text-charcoal/75 leading-[1.65] max-w-[48ch]">
+              <p className="text-base md:text-lg text-charcoal/75 leading-[1.7] max-w-[48ch]">
                 Learn more about our capabilities across industries and disciplines by selecting your topic of interest.
               </p>
             </div>
@@ -300,79 +291,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. Operational Excellence — hairline-divider grid on off-white */}
-      <section className="bg-off-white py-24 md:py-32">
-        <div className="px-6 sm:px-8 md:px-12 lg:px-16">
-          {/* Section header — eyebrow + H2 left, intro right */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20 items-end mb-14 md:mb-16">
-            <div className="lg:col-span-7">
-              <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-6">
-                Our Solutions
-              </span>
-              <h2
-                className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-                style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-              >
-                Our Operational Excellence Services and Tools
-              </h2>
-            </div>
-            <div className="lg:col-span-5">
-              <p className="text-base md:text-lg text-charcoal/75 leading-[1.65] max-w-[50ch]">
-                The following services and tools provide a glimpse into the level of sophistication and rigor our operational excellence consulting experts bring to every client engagement.
-              </p>
-            </div>
-          </div>
-
-          {/* Hairline-divider grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal/10">
-            {operationalServices.map((solution, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.05, margin: "0px 0px 80px 0px" }}
-                transition={{ delay: i * 0.06, duration: 0.5 }}
-                className="bg-off-white"
-              >
-                <Link href={solution.link}>
-                  <div className="p-8 lg:p-10 flex flex-col justify-between min-h-[280px] group cursor-pointer h-full">
-                    <div>
-                      <h3
-                        className="text-lg md:text-xl text-charcoal leading-[1.3] group-hover:text-primary transition-colors"
-                        style={{ fontWeight: 500, letterSpacing: "-0.015em" }}
-                      >
-                        {solution.title}
-                      </h3>
-                      <p className="mt-5 text-base text-charcoal/75 leading-[1.55]">
-                        {solution.description}
-                      </p>
-                    </div>
-                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] font-semibold text-primary group-hover:text-primary-hover transition-colors">
-                      Explore →
-                    </span>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* 5. Operational Excellence — BCG-style feature card grid */}
+      <OperationalExcellence />
 
       {/* 6. Latest Insights — flat cards with hairline borders */}
-      <section className="py-24 md:py-32 bg-subtle">
+      <section className="nx-section bg-subtle">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16">
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-14 md:mb-16">
             <div className="max-w-3xl">
               <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
                 Insights
               </span>
-              <h2
-                className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-                style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-              >
+              <h2 className="nx-h2 text-charcoal">
                 Latest Insights
               </h2>
-              <p className="text-base md:text-lg text-charcoal/75 mt-5 max-w-[58ch] leading-[1.65]">
+              <p className="text-base md:text-lg text-charcoal/75 mt-5 max-w-[58ch] leading-[1.7]">
                 Practical perspectives for mid-market leaders navigating growth and transformation.
               </p>
             </div>
@@ -468,35 +401,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 7. Start the Conversation — dark editorial closing, centered */}
-      <section className="bg-charcoal text-white py-24 md:py-32">
-        <div className="px-6 sm:px-8 md:px-12 lg:px-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.7 }}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/60 mb-6">
-              Contact
-            </span>
-            <h2
-              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-8"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
-              Start the Conversation.
-            </h2>
-            <p className="text-lg md:text-xl text-white/75 leading-[1.65] max-w-[58ch] mx-auto mb-10">
-              We work with leaders who believe governance comes before automation — and that the organizations built to last will be the ones where human judgment scales with the technology around it.
-            </p>
-            <Link href="/contact">
-              <PrimaryButton>Contact Us</PrimaryButton>
-            </Link>
-          </motion.div>
-        </div>
-      </section>
-
       {/* 8. Careers — preserved split-grid, polished */}
       <section className="w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[440px] md:min-h-[520px]">
@@ -510,13 +414,10 @@ export default function Home() {
             <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 font-semibold mb-6 block">
               NexDyne Careers
             </span>
-            <h2
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-7"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
+            <h2 className="nx-h2-split text-charcoal mb-6">
               Where Human Intelligence Leads
             </h2>
-            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] mb-10 max-w-[58ch]">
+            <p className="text-base md:text-[1.05rem] text-charcoal/80 leading-[1.7] mb-9 max-w-[58ch]">
               We help organizations govern intelligence and lead with judgment in the age of AI. If you bring ambition, clarity, and the will to shape what comes next — this is where you belong.
             </p>
             <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">

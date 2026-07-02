@@ -108,7 +108,7 @@ export default function ManufacturingPredictiveMaintenance() {
         title="Manufacturing Plant Cuts Downtime 35% with Predictive Maintenance Dashboard"
         subtitle="Equipment health dashboard predicted failures 2 weeks in advance, enabling scheduled maintenance instead of emergency repairs."
         backgroundImage="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=1600&q=80"
-        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"
+        h1ClassName="text-4xl md:text-5xl lg:text-6xl text-charcoal leading-[1.05] mb-6"
         containerClassName="h-[60vh] min-h-[440px] sm:min-h-[480px] lg:min-h-[540px]"
       />
 
@@ -127,7 +127,7 @@ export default function ManufacturingPredictiveMaintenance() {
             </span>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
             {facts.map((fact, i) => (
               <motion.div
                 key={i}
@@ -250,7 +250,7 @@ export default function ManufacturingPredictiveMaintenance() {
       </section>
 
       {/* SLOT 6 — Outcomes signal section (bg-primary stat band) */}
-      <section className="bg-primary text-primary-foreground py-20 md:py-28">
+      <section className="bg-charcoal text-white nx-section">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16 max-w-[1200px] mx-auto">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
@@ -332,7 +332,7 @@ export default function ManufacturingPredictiveMaintenance() {
             </h3>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-charcoal/10 border border-charcoal/10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {relatedCases.map((c, i) => (
               <motion.div
                 key={i}

@@ -140,7 +140,7 @@ export default function Cases() {
   );
 
   return (
-    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Case Studies | NexDyne Technologies" 
         description="Explore how NexDyne helps organizations achieve enduring change through technology-led transformation."
@@ -148,33 +148,23 @@ export default function Cases() {
       />
       <Navigation />
       
-      {/* DZ10 Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
-        
-        <div className="container relative z-10 px-4 md:px-12">
-          <Breadcrumbs />
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl mx-auto text-center"
-          >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
-              Case <span className="text-primary">Studies</span>
-            </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mx-auto">
-              Our clients are achieving enduring change in their capabilities and performance. 
-              Leading with technology, we partner with them to eliminate manual work, accelerate execution, 
-              and build capabilities across their entire organization.
-            </p>
-          </motion.div>
+      {/* Hero Section - Neutral-first */}
+      <section className="relative w-full bg-background overflow-hidden">
+        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(70% 60% at 82% 14%, rgba(224,76,44,0.05) 0%, transparent 55%), radial-gradient(55% 55% at 6% 95%, rgba(111,68,163,0.045) 0%, transparent 55%)" }} />
+        <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div className="pt-8"><Breadcrumbs /></div>
+          <div className="flex flex-col justify-center min-h-[46vh] py-20 lg:py-24">
+            <div className="max-w-[920px]">
+              <div className="flex items-center gap-3 mb-6"><span className="block h-[3px] w-9 bg-primary" /><span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">CASE STUDIES</span></div>
+              <h1 className="text-charcoal font-bold tracking-[-0.035em] leading-[1.0] text-[clamp(2.4rem,5.4vw,4.2rem)]">Case Studies</h1>
+              <p className="mt-7 text-[1.1rem] md:text-[1.2rem] leading-[1.55] text-muted-foreground max-w-[60ch]">Our clients are achieving enduring change in their capabilities and performance. Leading with technology, we partner with them to eliminate manual work, accelerate execution, and build capabilities across their entire organization.</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* DZ10 Filter Section */}
-      <section className="py-8 bg-base border-b border-white/10">
+      {/* Filter Section */}
+      <section className="py-8 bg-background border-b border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex justify-center">
             <div className="inline-flex gap-4 sm:p-6 md:p-8">
@@ -182,10 +172,10 @@ export default function Cases() {
                 <button
                   key={industry}
                   onClick={() => setSelectedIndustry(industry)}
-                  className={`pb-3 font-medium transition-all border-b-2 ${
+                  className={`pb-3 font-medium transition border-b-2 ${
                     selectedIndustry === industry
                       ? "border-primary text-primary"
-                      : "border-transparent text-white/60 hover:text-white hover:border-white/30"
+                      : "border-transparent text-muted-foreground hover:text-charcoal hover:border-border"
                   }`}
                 >
                   {industry}
@@ -217,7 +207,7 @@ export default function Cases() {
                         alt={study.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       />
-                      <div className="absolute top-4 left-4 bg-base/90 px-3 py-1 rounded-full">
+                      <div className="absolute top-4 left-4 bg-charcoal/90 px-3 py-1 rounded-full">
                         <span className="text-xs font-bold text-primary">{study.metric}</span>
                         <span className="text-xs text-white/70 ml-1">{study.metricLabel}</span>
                       </div>
@@ -233,7 +223,7 @@ export default function Cases() {
                       <p className="text-sm text-charcoal/70 leading-relaxed">
                         {study.description}
                       </p>
-                      <span className="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                      <span className="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-[gap]">
                         Read case study <ArrowRight className="w-3 h-3" />
                       </span>
                     </div>
@@ -245,8 +235,8 @@ export default function Cases() {
         </div>
       </section>
 
-      {/* DZ10 Insights Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      {/* Insights Section */}
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -255,7 +245,7 @@ export default function Cases() {
             transition={{ duration: 0.6 }}
             className="mb-8 sm:mb-12 md:mb-16"
           >
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/60 mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               NexDyne Insights
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Latest thinking</h2>
@@ -310,7 +300,7 @@ export default function Cases() {
                   <p className="text-white/60 leading-relaxed mb-4">
                     {post.description}
                   </p>
-                  <span className="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                  <span className="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-[gap]">
                     Read more <ArrowRight className="w-3 h-3" />
                   </span>
                 </Link>

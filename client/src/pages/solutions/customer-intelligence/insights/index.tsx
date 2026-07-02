@@ -68,7 +68,7 @@ export default function CustomerIntelligenceInsights() {
   const otherInsights = insights.filter(i => !i.featured);
 
   return (
-    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Customer Intelligence Insights" 
         description="Expert perspectives on customer data, predictive analytics, and personalization strategies for mid-market companies."
@@ -79,7 +79,7 @@ export default function CustomerIntelligenceInsights() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-base via-base/95 to-base" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
         </div>
         
         <div className="container px-4 md:px-12 relative z-10">
@@ -88,7 +88,7 @@ export default function CustomerIntelligenceInsights() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <Link href="/solutions/data-driven-customer-intelligence" className="inline-flex items-center text-white/60 hover:text-primary mb-8 transition-colors">
+            <Link href="/solutions/data-driven-customer-intelligence" className="inline-flex items-center text-muted-foreground hover:text-primary mb-8 transition-colors">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Customer Intelligence
             </Link>
@@ -97,11 +97,11 @@ export default function CustomerIntelligenceInsights() {
               Insights
             </span>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.1] mb-4 max-w-4xl">
+            <h1 className="text-[2.25rem] md:text-[2.75rem] lg:text-[3.25rem] font-bold tracking-tight text-charcoal leading-[1.1] mb-4 max-w-4xl">
               Customer Intelligence Insights
             </h1>
             
-            <p className="text-xl text-white/60 leading-relaxed max-w-2xl">
+            <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
               Expert perspectives on customer data, predictive analytics, and personalization strategies for mid-market companies.
             </p>
           </motion.div>
@@ -109,7 +109,7 @@ export default function CustomerIntelligenceInsights() {
       </section>
 
       {/* Featured Insights */}
-      <section className="py-16 bg-base">
+      <section className="py-16 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -118,7 +118,7 @@ export default function CustomerIntelligenceInsights() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl eb-garamond font-bold text-white">Featured Insights</h2>
+            <h2 className="text-2xl font-bold text-charcoal">Featured Insights</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-10">
@@ -141,18 +141,18 @@ export default function CustomerIntelligenceInsights() {
                   </div>
                   <div className="flex items-center gap-4 mb-3">
                     <span className="text-primary text-xs font-bold uppercase tracking-[0.15em]">{insight.category}</span>
-                    <span className="flex items-center text-white/40 text-xs">
+                    <span className="flex items-center text-muted-foreground text-xs">
                       <Clock className="w-3 h-3 mr-1" />
                       {insight.readTime}
                     </span>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">
+                  <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                     {insight.title}
                   </h3>
-                  <p className="text-white/60 text-sm mb-6 leading-relaxed">
+                  <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
                     {insight.description}
                   </p>
-                  <div className="flex items-center text-white text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                  <div className="flex items-center text-charcoal text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                     Read article <ArrowRight className="ml-2 w-4 h-4" />
                   </div>
                 </Link>
@@ -172,7 +172,7 @@ export default function CustomerIntelligenceInsights() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl eb-garamond font-bold">More Insights</h2>
+            <h2 className="text-2xl font-bold">More Insights</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-10">
@@ -226,14 +226,14 @@ export default function CustomerIntelligenceInsights() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-4xl eb-garamond font-bold mb-6">
+              <h2 className="text-3xl md:text-[2rem] font-bold mb-6">
                 Stay ahead of the curve
               </h2>
               <p className="text-lg text-charcoal/60 leading-relaxed mb-8">
                 Get our latest insights on customer intelligence, predictive analytics, and personalization delivered to your inbox.
               </p>
               <Link href="/contact">
-                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-base font-semibold">
+                <Button className="bg-primary hover:bg-primary/90 text-charcoal px-8 py-6 text-base font-semibold">
                   Subscribe to Insights
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
@@ -244,7 +244,7 @@ export default function CustomerIntelligenceInsights() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-primary">
+      <section className="py-24 bg-background">
         <div className="container px-4 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
             <motion.div
@@ -253,10 +253,10 @@ export default function CustomerIntelligenceInsights() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-white mb-6">
+              <h2 className="text-[2rem] md:text-[2.5rem] font-bold text-charcoal mb-6">
                 Ready to put these insights into action?
               </h2>
-              <p className="text-xl text-white/80 leading-relaxed mb-10">
+              <p className="text-xl text-muted-foreground leading-relaxed mb-10">
                 Let's discuss how we can help you build customer intelligence capabilities.
               </p>
               <Link href="/contact">

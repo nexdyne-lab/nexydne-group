@@ -12,7 +12,7 @@ export default function DataPlatformEngineering() {
       serviceName="Data Platform Engineering"
       serviceSlug="data-platform-engineering"
       heroSubtitle="A data platform that survives leadership turnover and quarterly board questions is an engineering asset, not a vendor selection. We diagnose the estate, choose the platform, build the pipelines, and stand up the governance that makes data a managed asset."
-      heroImage="/enterprise-transformation-hero.jpg"
+      heroImage="/solution-enterprise-transformation.0a0f2624.webp"
       experienceStats={[
         { number: "60-80%", label: "Cut in pipeline incidents on engineered data platforms" },
         { number: "1/2", label: "Analytics-request backlog shrinks because the platform stops being the bottleneck" },

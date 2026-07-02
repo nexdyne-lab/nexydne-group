@@ -435,7 +435,7 @@ export default function TeamMemberProfile() {
             <h1 className="text-4xl font-bold text-charcoal mb-4">Team Member Not Found</h1>
             <p className="text-lg text-muted-foreground mb-5 sm:mb-6 md:mb-8">The team member you're looking for doesn't exist.</p>
             <Link href="/team">
-              <a className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white font-semibold rounded-lg hover:bg-slate-800 transition-colors">
+              <a className="inline-flex items-center gap-2 px-6 py-3 bg-charcoal text-white font-semibold rounded-lg hover:bg-charcoal transition-colors">
                 <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4" />
                 Back to Team
               </a>
@@ -452,7 +452,7 @@ export default function TeamMemberProfile() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50/20 pt-32 pb-16">
+      <section className="relative bg-gradient-to-br from-off-white via-white to-primary/20 pt-32 pb-16">
         <div className="container">
           <Link href="/team">
             <a className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground hover:text-charcoal transition-colors mb-5 sm:mb-6 md:mb-8">
@@ -464,7 +464,7 @@ export default function TeamMemberProfile() {
           <div className="grid lg:grid-cols-[300px_1fr] gap-6 sm:gap-8 lg:gap-12 items-start max-w-6xl">
             {/* Profile Image */}
             <div className="relative">
-              <div className="aspect-[3/4] rounded-xl sm:rounded-2xl overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 shadow-xl sm:shadow-xl sm:shadow-2xl">
+              <div className="aspect-[3/4] rounded-xl sm:rounded-2xl overflow-hidden bg-gradient-to-br from-off-white to-off-white shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img 
                   src={member.image} 
                   alt={member.name}
@@ -475,14 +475,14 @@ export default function TeamMemberProfile() {
               {/* Contact Buttons */}
               <div className="flex gap-3 mt-6">
                 <button 
-                  className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-slate-900 text-white font-semibold rounded-lg hover:bg-slate-800 transition-colors"
+                  className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-charcoal text-white font-semibold rounded-lg hover:bg-charcoal transition-colors"
                   onClick={() => alert('Feature coming soon')}
                 >
                   <Mail className="w-3 h-3 sm:w-4 sm:h-4" />
                   Email
                 </button>
                 <button 
-                  className="flex items-center justify-center px-4 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+                  className="flex items-center justify-center px-4 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-hover transition-colors"
                   onClick={() => alert('Feature coming soon')}
                 >
                   <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -499,7 +499,7 @@ export default function TeamMemberProfile() {
                 {member.title}
               </p>
               <p className="text-lg text-muted-foreground mb-5 sm:mb-6 md:mb-8 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-slate-400" />
+                <span className="w-2 h-2 rounded-full bg-grey" />
                 {member.location}
               </p>
 
@@ -510,7 +510,7 @@ export default function TeamMemberProfile() {
                   {member.expertise.map((skill, index) => (
                     <span 
                       key={index}
-                      className="px-4 py-2 text-sm font-semibold bg-slate-100 text-charcoal/80 rounded-lg border border-slate-200"
+                      className="px-4 py-2 text-sm font-semibold bg-subtle text-charcoal/80 rounded-lg border border-border"
                     >
                       {skill}
                     </span>
@@ -525,7 +525,7 @@ export default function TeamMemberProfile() {
                   {member.industries.map((industry, index) => (
                     <span 
                       key={index}
-                      className="px-4 py-2 text-sm font-semibold bg-blue-50 text-blue-700 rounded-lg border border-blue-100"
+                      className="px-4 py-2 text-sm font-semibold bg-primary/5 text-primary rounded-lg border border-primary"
                     >
                       {industry}
                     </span>
@@ -538,7 +538,7 @@ export default function TeamMemberProfile() {
       </section>
 
       {/* Full Bio Section */}
-      <section className="py-10 sm:py-12 lg:py-16 bg-white border-b border-slate-100">
+      <section className="py-10 sm:py-12 lg:py-16 bg-white border-b border-border">
         <div className="container">
           <div className="max-w-4xl">
             <h2 className="text-3xl font-bold text-charcoal mb-6">Background</h2>
@@ -552,7 +552,7 @@ export default function TeamMemberProfile() {
       </section>
 
       {/* Publications Section */}
-      <section className="py-10 sm:py-12 lg:py-16 bg-slate-50 border-b border-slate-100">
+      <section className="py-10 sm:py-12 lg:py-16 bg-off-white border-b border-border">
         <div className="container">
           <div className="max-w-4xl">
             <div className="flex items-center gap-3 mb-5 sm:mb-6 md:mb-8">
@@ -564,7 +564,7 @@ export default function TeamMemberProfile() {
               {member.publications.map((pub, index) => (
                 <div 
                   key={index}
-                  className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-6 border border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all"
+                  className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-6 border border-border hover:border-border hover:shadow-lg transition"
                 >
                   <div className="flex items-start justify-between gap-4 mb-3">
                     <h3 className="text-xl font-bold text-charcoal leading-tight">
@@ -600,7 +600,7 @@ export default function TeamMemberProfile() {
               {member.clientWork.map((work, index) => (
                 <div 
                   key={index}
-                  className="bg-gradient-to-br from-slate-50 to-white rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 border border-slate-200 hover:border-slate-300 hover:shadow-xl transition-all"
+                  className="bg-gradient-to-br from-off-white to-white rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 border border-border hover:border-border hover:shadow-xl transition"
                 >
                   <div className="flex items-start justify-between gap-4 mb-4">
                     <div>
@@ -628,7 +628,7 @@ export default function TeamMemberProfile() {
                       </p>
                     </div>
 
-                    <div className="bg-blue-50 rounded-lg p-4 border border-blue-100">
+                    <div className="bg-primary/5 rounded-lg p-4 border border-primary">
                       <p className="text-xs font-bold text-primary uppercase tracking-wider mb-2">Result</p>
                       <p className="text-charcoal font-semibold leading-relaxed">
                         {work.result}
@@ -643,9 +643,9 @@ export default function TeamMemberProfile() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[600px] h-[300px] sm:h-[400px] md:h-[280px] sm:h-[350px] md:h-[450px] lg:h-[280px] sm:h-[350px] md:h-[450px] lg:h-[500px] lg:h-[300px] sm:h-[400px] md:h-[280px] sm:h-[350px] md:h-[450px] lg:h-[500px] lg:h-[600px] bg-blue-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-[600px] h-[300px] sm:h-[400px] md:h-[280px] sm:h-[350px] md:h-[450px] lg:h-[280px] sm:h-[350px] md:h-[450px] lg:h-[500px] lg:h-[300px] sm:h-[400px] md:h-[280px] sm:h-[350px] md:h-[450px] lg:h-[500px] lg:h-[600px] bg-cyan-500/10 rounded-full blur-3xl" />
+      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-charcoal via-charcoal to-charcoal relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[600px] h-[300px] sm:h-[400px] md:h-[280px] sm:h-[350px] md:h-[450px] lg:h-[280px] sm:h-[350px] md:h-[450px] lg:h-[500px] lg:h-[300px] sm:h-[400px] md:h-[280px] sm:h-[350px] md:h-[450px] lg:h-[500px] lg:h-[600px] bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[300px] sm:h-[400px] md:h-[280px] sm:h-[350px] md:h-[450px] lg:h-[280px] sm:h-[350px] md:h-[450px] lg:h-[500px] lg:h-[300px] sm:h-[400px] md:h-[280px] sm:h-[350px] md:h-[450px] lg:h-[500px] lg:h-[600px] bg-primary/10 rounded-full blur-3xl" />
         
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
@@ -659,12 +659,12 @@ export default function TeamMemberProfile() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <a 
                 href="/contact" 
-                className="inline-flex items-center justify-center px-8 py-4 bg-white text-charcoal font-semibold rounded-lg sm:rounded-xl hover:bg-slate-100 transition-all hover:shadow-xl sm:shadow-xl sm:shadow-2xl hover:shadow-white/20 hover:-translate-y-1"
+                className="inline-flex items-center justify-center px-8 py-4 bg-white text-charcoal font-semibold rounded-lg sm:rounded-xl hover:bg-subtle transition hover:shadow-xl sm:shadow-xl sm:shadow-2xl hover:shadow-white/20 hover:-translate-y-1"
               >
                 Schedule Consultation
               </a>
               <Link href="/team">
-                <a className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white/30 text-white font-semibold rounded-lg sm:rounded-xl hover:bg-white/10 hover:border-white/50 transition-all backdrop-blur-sm">
+                <a className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white/30 text-white font-semibold rounded-lg sm:rounded-xl hover:bg-white/10 hover:border-white/50 transition backdrop-blur-sm">
                   View All Team Members
                 </a>
               </Link>

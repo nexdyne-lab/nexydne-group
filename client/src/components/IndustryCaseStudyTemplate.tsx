@@ -155,19 +155,19 @@ export default function IndustryCaseStudyTemplate({
               {industry}
             </span>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-6">
+            <h1 className="nx-h1 text-white mb-6">
               {title}
             </h1>
             
-            <p className="text-xl text-white/70 leading-relaxed max-w-3xl">
+            <p className="nx-lead text-white/70 max-w-3xl">
               {subtitle}
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Key Metrics Bar */}
-      <section className="bg-primary py-8">
+      {/* Key Metrics Bar — charcoal band, amber metric values (data-highlight role) */}
+      <section className="bg-charcoal py-8">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:p-6 md:p-4 sm:p-6 md:p-8">
             {metrics.map((metric, index) => (
@@ -178,7 +178,7 @@ export default function IndustryCaseStudyTemplate({
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-1">{metric.value}</div>
+                <div className="nx-h2 text-amber mb-1">{metric.value}</div>
                 <div className="text-sm text-white/80">{metric.label}</div>
               </motion.div>
             ))}
@@ -204,7 +204,7 @@ export default function IndustryCaseStudyTemplate({
       </section>
 
       {/* Client Context */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-white">
+      <section className="nx-section bg-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid lg:grid-cols-3 gap-12">
             <motion.div
@@ -214,17 +214,17 @@ export default function IndustryCaseStudyTemplate({
               transition={{ duration: 0.6 }}
               className="lg:col-span-2"
             >
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 block">
+              <span className="nx-eyebrow text-primary mb-4 block">
                 Client Context
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6">
+              <h2 className="nx-h2 text-charcoal mb-6">
                 {clientContextTitle}
               </h2>
               <div className="prose prose-lg max-w-none">
-                <p className="text-lg text-charcoal/70 leading-relaxed mb-6">
+                <p className="nx-lead text-charcoal/70 mb-6">
                   {clientContextIntro}
                 </p>
-                <p className="text-lg text-charcoal/70 leading-relaxed">
+                <p className="nx-lead text-charcoal/70">
                   {clientContextBody}
                 </p>
               </div>
@@ -276,7 +276,7 @@ export default function IndustryCaseStudyTemplate({
       </section>
 
       {/* The Challenge */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-subtle">
+      <section className="nx-section bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto">
             <motion.div
@@ -285,10 +285,10 @@ export default function IndustryCaseStudyTemplate({
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 block">
+              <span className="nx-eyebrow text-primary mb-4 block">
                 The Challenge
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">
+              <h2 className="nx-h2 text-charcoal mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">
                 {challengeTitle}
               </h2>
               
@@ -314,7 +314,7 @@ export default function IndustryCaseStudyTemplate({
       </section>
 
       {/* Our Approach */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-white">
+      <section className="nx-section bg-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto">
             <motion.div
@@ -323,14 +323,14 @@ export default function IndustryCaseStudyTemplate({
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 block">
+              <span className="nx-eyebrow text-primary mb-4 block">
                 Our Approach
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">
+              <h2 className="nx-h2 text-charcoal mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">
                 {approachTitle}
               </h2>
               
-              <p className="text-lg text-charcoal/70 leading-relaxed mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
+              <p className="nx-lead text-charcoal/70 mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
                 {approachIntro}
               </p>
 
@@ -348,7 +348,7 @@ export default function IndustryCaseStudyTemplate({
                       {step.step}
                     </div>
                     <div className="pt-2">
-                      <h3 className="text-xl font-bold text-charcoal mb-2">{step.title}</h3>
+                      <h3 className="nx-h3 text-charcoal mb-2">{step.title}</h3>
                       <p className="text-charcoal/70 leading-relaxed">{step.description}</p>
                     </div>
                   </motion.div>
@@ -360,7 +360,7 @@ export default function IndustryCaseStudyTemplate({
       </section>
 
       {/* Results */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-base text-white">
+      <section className="nx-section bg-base text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto">
             <motion.div
@@ -369,10 +369,10 @@ export default function IndustryCaseStudyTemplate({
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 block">
+              <span className="nx-eyebrow text-primary mb-4 block">
                 The Results
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
+              <h2 className="nx-h2 text-white mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
                 {resultsTitle}
               </h2>
 
@@ -399,7 +399,7 @@ export default function IndustryCaseStudyTemplate({
       </section>
 
       {/* Client Quote */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-white">
+      <section className="nx-section bg-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto">
             <motion.div
@@ -425,7 +425,7 @@ export default function IndustryCaseStudyTemplate({
       </section>
 
       {/* Related Case Studies */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-subtle">
+      <section className="nx-section bg-subtle">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -434,7 +434,7 @@ export default function IndustryCaseStudyTemplate({
             transition={{ duration: 0.6 }}
             className="mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12"
           >
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal">
+            <h2 className="nx-h2 text-charcoal">
               Related Case Studies
             </h2>
           </motion.div>
@@ -458,7 +458,7 @@ export default function IndustryCaseStudyTemplate({
                   </div>
                   <div className="text-3xl font-bold text-primary mb-1">{study.metric}</div>
                   <div className="text-sm text-charcoal/60 mb-2">{study.label}</div>
-                  <h3 className="text-xl font-bold text-charcoal group-hover:text-primary transition-colors">
+                  <h3 className="nx-h3 text-charcoal group-hover:text-primary transition-colors">
                     {study.title}
                   </h3>
                 </Link>
@@ -469,7 +469,7 @@ export default function IndustryCaseStudyTemplate({
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-12 sm:py-16 lg:py-20 bg-base">
+      <section className="nx-section bg-base">
         <div className="container px-4 sm:px-6 md:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -477,7 +477,7 @@ export default function IndustryCaseStudyTemplate({
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
+            <h2 className="nx-h2 text-white mb-6">
               {ctaTitle}
             </h2>
             <p className="text-xl text-white/70 mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8 max-w-2xl mx-auto">

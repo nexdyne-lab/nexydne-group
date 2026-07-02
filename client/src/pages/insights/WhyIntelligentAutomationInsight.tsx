@@ -35,7 +35,7 @@ export default function WhyIntelligentAutomationInsight() {
               <span className="text-primary text-sm font-semibold tracking-wider uppercase mb-4 block">
                 Strategy
               </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-3 text-charcoal ">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-3 text-charcoal">
                 Why Intelligent Automation Isn't Optional Anymore
               </h1>
               <p className="text-xl text-charcoal/70 leading-relaxed mb-8">
@@ -78,7 +78,7 @@ export default function WhyIntelligentAutomationInsight() {
                 Five years ago, intelligent automation was a competitive advantage. Today, it's table stakes. The organizations that recognized this shift early are now operating at a fundamentally different level of efficiency and agility than their peers.
               </p>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">The New Competitive Reality</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">The New Competitive Reality</h2>
               
               <p className="text-charcoal/80 leading-relaxed mb-6">
                 The data is unambiguous. According to recent research from McKinsey, organizations that have successfully scaled automation are seeing 20-30% improvements in operational efficiency. More importantly, they're using these gains not just to cut costs, but to reinvest in growth, innovation, and customer experience.
@@ -95,7 +95,7 @@ export default function WhyIntelligentAutomationInsight() {
                 </p>
               </blockquote>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">Three Forces Driving the Imperative</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Three Forces Driving the Imperative</h2>
 
               <h3 className="text-xl font-bold text-charcoal mt-8 mb-4">1. Labor Market Dynamics</h3>
               <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -130,7 +130,7 @@ export default function WhyIntelligentAutomationInsight() {
                 </div>
               </div>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">What Separates Leaders from Laggards</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">What Separates Leaders from Laggards</h2>
 
               <p className="text-charcoal/80 leading-relaxed mb-6">
                 Our research into automation success patterns reveals clear differentiators between organizations that achieve transformational results and those that struggle to scale beyond pilots.
@@ -148,7 +148,7 @@ export default function WhyIntelligentAutomationInsight() {
                 <strong>Leaders think in platforms, not projects.</strong> Rather than implementing automation one process at a time, leaders build reusable platforms and capabilities that accelerate subsequent automation initiatives.
               </p>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">The Path Forward</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">The Path Forward</h2>
 
               <p className="text-charcoal/80 leading-relaxed mb-6">
                 For organizations that haven't yet begun their automation journey, the time to start is now. The good news is that the technology has matured significantly, implementation approaches have been refined, and the path to value is clearer than ever.
@@ -165,7 +165,7 @@ export default function WhyIntelligentAutomationInsight() {
               {/* Author Box */}
               <div className="border-t border-border pt-8 mt-12 not-prose">
                 <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 bg-base rounded-full flex items-center justify-center text-white font-bold text-xl">
+                  <div className="w-16 h-16 bg-background rounded-full flex items-center justify-center text-charcoal font-bold text-xl">
                     NS
                   </div>
                   <div>
@@ -187,10 +187,10 @@ export default function WhyIntelligentAutomationInsight() {
                   Share this article
                 </h4>
                 <div className="flex gap-3">
-                  <button className="w-10 h-10 bg-primary text-white rounded flex items-center justify-center hover:bg-base transition-colors">
+                  <button className="w-10 h-10 bg-primary text-charcoal rounded flex items-center justify-center hover:bg-charcoal transition-colors">
                     <Linkedin className="w-5 h-5" />
                   </button>
-                  <button className="w-10 h-10 bg-[#1DA1F2] text-white rounded flex items-center justify-center hover:bg-base transition-colors">
+                  <button className="w-10 h-10 bg-[#1DA1F2] text-charcoal rounded flex items-center justify-center hover:bg-charcoal transition-colors">
                     <Twitter className="w-5 h-5" />
                   </button>
                 </div>
@@ -225,13 +225,13 @@ export default function WhyIntelligentAutomationInsight() {
               </div>
 
               {/* CTA */}
-              <div className="bg-base p-6 rounded-lg text-white">
+              <div className="bg-background p-6 rounded-lg text-charcoal">
                 <h4 className="font-bold mb-3">Ready to start your automation journey?</h4>
-                <p className="text-sm text-white/70 mb-4">
+                <p className="text-sm text-muted-foreground mb-4">
                   Let's discuss how intelligent automation can transform your operations.
                 </p>
                 <Link href="/contact">
-                  <button className="w-full py-3 bg-secondary text-white rounded font-semibold text-sm hover:bg-primary transition-colors">
+                  <button className="w-full py-3 bg-secondary text-charcoal rounded font-semibold text-sm hover:bg-primary transition-colors">
                     Contact Us
                   </button>
                 </Link>
@@ -245,7 +245,7 @@ export default function WhyIntelligentAutomationInsight() {
       <section className="py-16 md:py-20 bg-subtle">
         <div className="container px-4 md:px-8 lg:px-12">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-8 ">More Insights</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-8">More Insights</h2>
             
             <div className="grid md:grid-cols-3 gap-8">
               {[

@@ -101,7 +101,7 @@ export default function TableOfContents({ contentSelector = "article" }: TableOf
                 <button
                   onClick={() => scrollToHeading(heading.id)}
                   className={`
-                    block w-full text-left text-sm py-2 px-3 rounded transition-all duration-200
+                    block w-full text-left text-sm py-2 px-3 rounded transition duration-200
                     ${heading.level === 3 ? "pl-5" : ""}
                     ${
                       activeId === heading.id

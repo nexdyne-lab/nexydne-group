@@ -10,8 +10,8 @@ interface TestimonialProps {
 
 export function Testimonial({ quote, name, title, company, image }: TestimonialProps) {
   return (
-    <div className="bg-white border border-slate-200 rounded-lg p-4 sm:p-6 md:p-4 sm:p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow">
-      <Quote className="w-10 h-10 text-cyan-500 mb-4" />
+    <div className="bg-white border border-border rounded-lg p-4 sm:p-6 md:p-4 sm:p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow">
+      <Quote className="w-10 h-10 text-primary mb-4" />
       <p className="text-charcoal/80 text-lg mb-6 leading-relaxed italic">
         "{quote}"
       </p>
@@ -23,7 +23,7 @@ export function Testimonial({ quote, name, title, company, image }: TestimonialP
             className="w-14 h-14 rounded-full object-cover"
           />
         ) : (
-          <div className="w-14 h-14 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white font-semibold text-xl">
+          <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primary flex items-center justify-center text-white font-semibold text-xl">
             {name.split(' ').map(n => n[0]).join('')}
           </div>
         )}
@@ -45,7 +45,7 @@ interface TestimonialSectionProps {
 
 export function TestimonialSection({ testimonials, title = "What Our Clients Say", subtitle }: TestimonialSectionProps) {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-slate-50">
+    <section className="py-12 sm:py-16 lg:py-20 bg-off-white">
       <div className="container">
         <div className="text-center mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
           <h2 className="text-4xl font-bold text-charcoal mb-4">{title}</h2>

@@ -92,7 +92,7 @@ export default function CustomerIntelligenceCaseStudies() {
   const otherStudies = caseStudies.filter(s => !s.featured);
 
   return (
-    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Customer Intelligence Case Studies" 
         description="Real-world examples of how companies transformed customer understanding with data-driven intelligence."
@@ -103,7 +103,7 @@ export default function CustomerIntelligenceCaseStudies() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-base via-base/95 to-base" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
         </div>
         
         <div className="container px-4 md:px-12 relative z-10">
@@ -112,7 +112,7 @@ export default function CustomerIntelligenceCaseStudies() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <Link href="/solutions/data-driven-customer-intelligence" className="inline-flex items-center text-white/60 hover:text-primary mb-8 transition-colors">
+            <Link href="/solutions/data-driven-customer-intelligence" className="inline-flex items-center text-muted-foreground hover:text-primary mb-8 transition-colors">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Customer Intelligence
             </Link>
@@ -121,11 +121,11 @@ export default function CustomerIntelligenceCaseStudies() {
               Case Studies
             </span>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl eb-garamond font-bold tracking-tight text-white leading-[1.1] mb-4 max-w-4xl">
+            <h1 className="text-[2.25rem] md:text-[2.75rem] lg:text-[3.25rem] font-bold tracking-tight text-charcoal leading-[1.1] mb-4 max-w-4xl">
               Customer intelligence driving real results
             </h1>
             
-            <p className="text-xl text-white/60 leading-relaxed max-w-2xl">
+            <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
               Explore how mid-market companies have transformed customer understanding into measurable business outcomes with NEXDYNE's data-driven approach.
             </p>
           </motion.div>
@@ -133,7 +133,7 @@ export default function CustomerIntelligenceCaseStudies() {
       </section>
 
       {/* Featured Case Studies */}
-      <section className="py-16 bg-base">
+      <section className="py-16 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -142,7 +142,7 @@ export default function CustomerIntelligenceCaseStudies() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl eb-garamond font-bold text-white">Featured Case Studies</h2>
+            <h2 className="text-2xl font-bold text-charcoal">Featured Case Studies</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-10">
@@ -164,21 +164,21 @@ export default function CustomerIntelligenceCaseStudies() {
                     <div className="absolute inset-0 bg-charcoal/20 group-hover:bg-transparent transition-colors duration-500" />
                   </div>
                   <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-3">{study.category}</div>
-                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">
+                  <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors leading-tight">
                     {study.title}
                   </h3>
-                  <p className="text-white/60 text-sm mb-6 leading-relaxed">
+                  <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
                     {study.description}
                   </p>
                   <div className="flex gap-6 mb-6">
                     {study.stats.slice(0, 2).map((stat, i) => (
                       <div key={i}>
                         <div className="text-2xl font-bold text-primary">{stat.value}</div>
-                        <div className="text-white/40 text-xs">{stat.label}</div>
+                        <div className="text-muted-foreground text-xs">{stat.label}</div>
                       </div>
                     ))}
                   </div>
-                  <div className="flex items-center text-white text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                  <div className="flex items-center text-charcoal text-sm font-semibold group-hover:translate-x-2 transition-transform duration-300">
                     Read case study <ArrowRight className="ml-2 w-4 h-4" />
                   </div>
                 </Link>
@@ -198,7 +198,7 @@ export default function CustomerIntelligenceCaseStudies() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-2xl eb-garamond font-bold">More Success Stories</h2>
+            <h2 className="text-2xl font-bold">More Success Stories</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-10">
@@ -245,7 +245,7 @@ export default function CustomerIntelligenceCaseStudies() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-primary">
+      <section className="py-24 bg-background">
         <div className="container px-4 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
             <motion.div
@@ -254,10 +254,10 @@ export default function CustomerIntelligenceCaseStudies() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-4xl md:text-5xl eb-garamond font-bold text-white mb-6">
+              <h2 className="text-[2rem] md:text-[2.5rem] font-bold text-charcoal mb-6">
                 Ready to write your success story?
               </h2>
-              <p className="text-xl text-white/80 leading-relaxed mb-10">
+              <p className="text-xl text-muted-foreground leading-relaxed mb-10">
                 Let's discuss how customer intelligence can transform your business outcomes.
               </p>
               <Link href="/contact">

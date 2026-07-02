@@ -11,9 +11,9 @@ export default function AIDrivenBrandStrategy() {
       <ReadingProgress />
       <Navigation />
       {/* Hero Section */}
-      <section className="bg-slate-900 text-white py-16 md:py-24">
+      <section className="bg-charcoal text-white py-16 md:py-24">
         <div className="container max-w-4xl">
-          <Link href="/solutions/digital-marketing" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 mb-8 transition-colors">
+          <Link href="/solutions/digital-marketing" className="inline-flex items-center gap-2 text-primary hover:text-primary mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Digital Marketing
           </Link>
@@ -76,7 +76,7 @@ export default function AIDrivenBrandStrategy() {
               Before AI, testing brand creative was expensive. You produced a few versions, ran focus groups, and picked a winner. Now, "synthetic users"—AI agents programmed with the personas, biases, and preferences of your target segments—can evaluate hundreds of creative concepts in minutes.
             </p>
 
-            <div className="bg-slate-50 rounded-lg p-6 my-8">
+            <div className="bg-off-white rounded-lg p-6 my-8">
               <h4 className="font-bold text-charcoal mb-2">Case Study: Financial Services Rebrand</h4>
               <p className="text-charcoal/80">
                 A fintech challenger used synthetic testing to evaluate 50 different value propositions. The AI predicted that a message focused on "control" would outperform "speed" for their target demographic. Live market tests confirmed the AI's prediction with 94% accuracy, saving the company weeks of media spend on suboptimal messaging.
@@ -111,12 +111,12 @@ export default function AIDrivenBrandStrategy() {
           </div>
 
           {/* CTA Section */}
-          <div className="mt-16 p-8 bg-slate-900 rounded-lg text-white">
+          <div className="mt-16 p-8 bg-charcoal rounded-lg text-white">
             <h3 className="text-2xl font-bold mb-4">Elevate your brand with data</h3>
             <p className="text-muted-foreground/50 mb-6">
               Discover how our Brand Strategy & Positioning services combine creative excellence with analytical rigor.
             </p>
-            <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-charcoal bg-white rounded-lg hover:bg-slate-100 transition-colors">
+            <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-charcoal bg-white rounded-lg hover:bg-subtle transition-colors">
               Get in touch
             </Link>
           </div>

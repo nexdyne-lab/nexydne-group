@@ -12,7 +12,7 @@ import { SEO } from "@/components/SEO";
 
 export default function CaseStudyFintechPayment() {
   return (
-    <div className="min-h-screen bg-base text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Fintech Payment Automation | Case Study | NexDyne Consulting Group" 
         description="How a fast-growing B2B fintech scaled payment operations 10x without headcount growth, achieving 85% auto-resolution and 99.9% accuracy."
@@ -21,49 +21,44 @@ export default function CaseStudyFintechPayment() {
       <Navigation />
       
       {/* DZ10 Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/case-financial-advisor.7bb94f0c.jpg')] bg-cover bg-center opacity-30"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base via-base/60 to-base"></div>
-        
-        <div className="container relative z-10 px-4 md:px-12">
-          <Breadcrumbs />
+      <section className="relative w-full bg-background overflow-hidden">
+        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(70% 60% at 82% 14%, rgba(224,76,44,0.05) 0%, transparent 55%), radial-gradient(55% 55% at 6% 95%, rgba(111,68,163,0.045) 0%, transparent 55%)" }} />
+        <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div className="pt-28"><Breadcrumbs /></div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-4xl"
+            className="flex flex-col justify-center min-h-[50vh] py-16 lg:py-20"
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
-              Case Study · Financial Services
-            </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-medium tracking-tight leading-[1.05] mb-5 sm:mb-3 md:mb-4">
-              Scaling payment operations <span className="text-primary">10x without headcount growth</span>
-            </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/70 leading-relaxed max-w-3xl mb-5 sm:mb-6 md:mb-8">
-              A fast-growing B2B fintech platform partnered with NexDyne to automate exception handling, fraud detection, and reconciliation — processing 100,000+ daily transactions with 99.9% accuracy and 85% auto-resolution.
-            </p>
-            
-            {/* PDF Download Button */}
-            <CaseStudyPDFButton
-              title="Scaling payment operations 10x without headcount growth"
-              industry="Financial Services"
-              summary="A fast-growing B2B fintech platform partnered with NexDyne to automate exception handling, fraud detection, and reconciliation — processing 100,000+ daily transactions with 99.9% accuracy and 85% auto-resolution."
-              challenge="A fast-growing B2B fintech platform was buckling under its own success. Daily transaction volume had grown from 8,000 to over 100,000 in eighteen months, and the operations team was still manually handling exceptions, fraud alerts, and reconciliation breaks across the platform's payment rails. Operators were spending evenings and weekends working through queues that never emptied, and the median resolution time on a payment exception had crept past four hours — long enough that customer-success was fielding angry calls before operations could even triage. Hiring more operators was not a sustainable answer: training a new operator to the platform's compliance standard took six months, and salary inflation in the New York fintech market was outrunning the company's unit economics. Leadership saw clearly that the next growth curve required a fundamentally different operating model — one in which platform intelligence absorbed routine exceptions and human operators worked only the genuinely complex cases that required judgment."
-              solution="NexDyne built an AI-driven payment operations platform that automates exception handling, fraud triage, and reconciliation end-to-end. We started with a six-week diagnostic across the operations floor, mapping the full taxonomy of exception types, the resolution playbook for each, and the points where a human's judgment was actually required versus where the operator was simply executing rules. We then built an intelligent rules engine that classifies every incoming exception against the platform's policy, executes the appropriate resolution workflow automatically, and only escalates the genuine edge cases to human operators with full context attached. A real-time fraud detection layer scores every transaction against the platform's historical fraud patterns, blocks the highest-risk activity inline, and surfaces ambiguous cases to a fraud-analyst review queue. Reconciliation runs continuously rather than as a batch end-of-day job, and a unified operator dashboard gives the team a single pane to manage the cases that do reach them — with full audit trails for compliance review. Rollout was phased by exception type, starting with the highest-volume, lowest-risk categories and expanding outward as confidence built."
-              results={[
-                "10x volume capacity — 100,000+ daily transactions processed with the same operations headcount",
-                "85% auto-resolution rate on payment exceptions, with the rest escalated to human operators",
-                "99.9% accuracy across automated reconciliation and payment processing",
-                "Median exception resolution time reduced from over four hours to 18 minutes"
-              ]}
-              variant="hero"
-            />
+            <div className="max-w-[920px]">
+              <div className="flex items-center gap-3 mb-6"><span className="block h-[3px] w-9 bg-primary" /><span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Case Study · Financial Services</span></div>
+              <h1 className="text-charcoal font-bold tracking-[-0.035em] leading-[1.05] text-[clamp(2.2rem,4.8vw,3.8rem)]">Scaling payment operations 10x without headcount growth</h1>
+              <p className="mt-7 text-[1.1rem] md:text-[1.2rem] leading-[1.55] text-muted-foreground max-w-[62ch]">A fast-growing B2B fintech platform partnered with NexDyne to automate exception handling, fraud detection, and reconciliation — processing 100,000+ daily transactions with 99.9% accuracy and 85% auto-resolution.</p>
+              <div className="mt-8">
+                {/* PDF Download Button */}
+                <CaseStudyPDFButton
+                  title="Scaling payment operations 10x without headcount growth"
+                  industry="Financial Services"
+                  summary="A fast-growing B2B fintech platform partnered with NexDyne to automate exception handling, fraud detection, and reconciliation — processing 100,000+ daily transactions with 99.9% accuracy and 85% auto-resolution."
+                  challenge="A fast-growing B2B fintech platform was buckling under its own success. Daily transaction volume had grown from 8,000 to over 100,000 in eighteen months, and the operations team was still manually handling exceptions, fraud alerts, and reconciliation breaks across the platform's payment rails. Operators were spending evenings and weekends working through queues that never emptied, and the median resolution time on a payment exception had crept past four hours — long enough that customer-success was fielding angry calls before operations could even triage. Hiring more operators was not a sustainable answer: training a new operator to the platform's compliance standard took six months, and salary inflation in the New York fintech market was outrunning the company's unit economics. Leadership saw clearly that the next growth curve required a fundamentally different operating model — one in which platform intelligence absorbed routine exceptions and human operators worked only the genuinely complex cases that required judgment."
+                  solution="NexDyne built an AI-driven payment operations platform that automates exception handling, fraud triage, and reconciliation end-to-end. We started with a six-week diagnostic across the operations floor, mapping the full taxonomy of exception types, the resolution playbook for each, and the points where a human's judgment was actually required versus where the operator was simply executing rules. We then built an intelligent rules engine that classifies every incoming exception against the platform's policy, executes the appropriate resolution workflow automatically, and only escalates the genuine edge cases to human operators with full context attached. A real-time fraud detection layer scores every transaction against the platform's historical fraud patterns, blocks the highest-risk activity inline, and surfaces ambiguous cases to a fraud-analyst review queue. Reconciliation runs continuously rather than as a batch end-of-day job, and a unified operator dashboard gives the team a single pane to manage the cases that do reach them — with full audit trails for compliance review. Rollout was phased by exception type, starting with the highest-volume, lowest-risk categories and expanding outward as confidence built."
+                  results={[
+                    "10x volume capacity — 100,000+ daily transactions processed with the same operations headcount",
+                    "85% auto-resolution rate on payment exceptions, with the rest escalated to human operators",
+                    "99.9% accuracy across automated reconciliation and payment processing",
+                    "Median exception resolution time reduced from over four hours to 18 minutes"
+                  ]}
+                  variant="hero"
+                />
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
 
       {/* DZ10 Stats Section */}
-      <section className="py-10 sm:py-12 lg:py-16 bg-base border-t border-white/10">
+      <section className="py-12 sm:py-16 lg:py-20 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
             {[
@@ -77,11 +72,11 @@ export default function CaseStudyFintechPayment() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="border-l-2 border-primary/50 pl-8"
+                className="border-l-2 border-primary pl-8"
               >
-                <div className="text-6xl font-medium text-primary mb-2">{stat.metric}</div>
+                <div className="text-6xl font-bold text-white mb-2">{stat.metric}</div>
                 <div className="text-lg text-white">{stat.label}</div>
-                <div className="text-sm text-white/60">{stat.sublabel}</div>
+                <div className="text-sm text-white/70">{stat.sublabel}</div>
               </motion.div>
             ))}
           </div>
@@ -89,16 +84,16 @@ export default function CaseStudyFintechPayment() {
       </section>
 
       {/* DZ10 Sticky Navigation */}
-      <nav className="sticky top-20 bg-base text-white z-40 border-y border-white/10">
+      <nav className="sticky top-20 bg-background text-charcoal z-40 border-y border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex items-center gap-1">
-            <a href="#opportunity" className="px-4 sm:px-5 md:px-6 py-3 sm:py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">
+            <a href="#opportunity" className="px-4 sm:px-5 md:px-6 py-3 sm:py-4 text-sm font-medium hover:bg-charcoal/5 transition-colors hover:text-primary">
               THE OPPORTUNITY
             </a>
-            <a href="#solution" className="px-4 sm:px-5 md:px-6 py-3 sm:py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">
+            <a href="#solution" className="px-4 sm:px-5 md:px-6 py-3 sm:py-4 text-sm font-medium hover:bg-charcoal/5 transition-colors hover:text-primary">
               THE SOLUTION
             </a>
-            <a href="#impact" className="px-4 sm:px-5 md:px-6 py-3 sm:py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">
+            <a href="#impact" className="px-4 sm:px-5 md:px-6 py-3 sm:py-4 text-sm font-medium hover:bg-charcoal/5 transition-colors hover:text-primary">
               THE IMPACT
             </a>
           </div>
@@ -106,7 +101,7 @@ export default function CaseStudyFintechPayment() {
       </nav>
 
       {/* DZ10 Opportunity Section */}
-      <section id="opportunity" className="py-12 sm:py-16 md:py-24 lg:py-32 bg-primary">
+      <section id="opportunity" className="py-12 sm:py-16 md:py-24 lg:py-32 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -114,7 +109,7 @@ export default function CaseStudyFintechPayment() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Opportunity
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
@@ -144,7 +139,7 @@ export default function CaseStudyFintechPayment() {
       </section>
 
       {/* DZ10 Quote Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-background border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -152,19 +147,19 @@ export default function CaseStudyFintechPayment() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-charcoal leading-tight mb-5 sm:mb-6 md:mb-8">
               "We've moved from firefighting mode to strategic growth. The automation platform has given us the confidence to scale aggressively without scaling operational risk."
             </blockquote>
-            <div className="text-base text-white">
+            <div className="text-base text-charcoal">
               <div className="font-semibold">— Rachel Chen</div>
-              <div className="text-white/60">VP of Operations</div>
+              <div className="text-muted-foreground">VP of Operations</div>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* DZ10 Solution Section */}
-      <section id="solution" className="py-12 sm:py-16 md:py-24 lg:py-32 bg-primary">
+      <section id="solution" className="py-12 sm:py-16 md:py-24 lg:py-32 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -172,7 +167,7 @@ export default function CaseStudyFintechPayment() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Solution
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
@@ -208,7 +203,7 @@ export default function CaseStudyFintechPayment() {
       </section>
 
       {/* DZ10 Quote Section 2 */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-background border-t border-border">
         <div className="container px-4 sm:px-6 md:px-12 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -216,19 +211,19 @@ export default function CaseStudyFintechPayment() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-primary leading-tight mb-5 sm:mb-6 md:mb-8">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-charcoal leading-tight mb-5 sm:mb-6 md:mb-8">
               "The platform doesn't just automate — it gives our operators a much better job. They spend their time on the cases that need a human, with all the context they need to act."
             </blockquote>
-            <div className="text-base text-white">
+            <div className="text-base text-charcoal">
               <div className="font-semibold">— Daniel Park</div>
-              <div className="text-white/60">Director of Payment Operations</div>
+              <div className="text-muted-foreground">Director of Payment Operations</div>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* DZ10 Impact Section */}
-      <section id="impact" className="py-12 sm:py-16 md:py-24 lg:py-32 bg-primary">
+      <section id="impact" className="py-12 sm:py-16 md:py-24 lg:py-32 bg-charcoal text-white border-t-2 border-primary">
         <div className="container px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -236,7 +231,7 @@ export default function CaseStudyFintechPayment() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-white/80 mb-4 sm:mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               The Impact
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-white max-w-4xl leading-tight">
@@ -277,7 +272,7 @@ export default function CaseStudyFintechPayment() {
       </section>
 
       {/* DZ10 Contact Form Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-base">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <CaseStudyContactForm caseStudyTitle="Fintech Payment Automation" />
         </div>
@@ -340,16 +335,16 @@ export default function CaseStudyFintechPayment() {
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute top-4 left-4 bg-base/90 px-3 py-1 rounded-full">
+                    <div className="absolute top-4 left-4 bg-charcoal/90 px-3 py-1 rounded-full">
                       <span className="text-xs font-semibold text-primary">{item.metric}</span>
-                      <span className="text-xs text-white/70 ml-1">{item.metricLabel}</span>
+                      <span className="text-xs text-white/80 ml-1">{item.metricLabel}</span>
                     </div>
                   </div>
                   <span className="text-xs font-semibold text-primary uppercase tracking-wider">{item.industry}</span>
                   <h3 className="text-xl font-semibold text-charcoal mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
-                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
+                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-[gap]">
                     Read case study <ArrowRight className="w-3 h-3" />
                   </span>
                 </Link>
@@ -359,7 +354,7 @@ export default function CaseStudyFintechPayment() {
 
           <div className="text-center mt-16">
             <Link href="/cases">
-              <Button variant="outline" className="border-base/20 text-charcoal hover:bg-base/10 px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all">
+              <Button variant="outline" className="border-charcoal/25 text-charcoal hover:border-primary hover:bg-charcoal/5 px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition">
                 <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
                 Back to all case studies
               </Button>

@@ -44,7 +44,7 @@ export default function CorporateVentureAdvantage() {
       heroImageAlt="Corporate Venture Advantage"
       authorName="David D. Seyaker"
       authorRole="Founder & CEO, NexDyne Technologies"
-      authorImage="/team/david-seyaker.jpg"
+      authorImage="https://placehold.co/160x160/242424/F7F9FC?text=DS"
       relatedInsights={relatedInsights}
     >
       <p>

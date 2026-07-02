@@ -20,41 +20,41 @@ export default function AerospaceDefenseIndustry() {
       challenges={[
         {
           title: "Program cycle compression",
-          body: "Customers want capability in years, not decades. Digital engineering, model-based systems engineering, and continuous integration of mission software are the only credible paths to that pace at A&D scale."
+          body: "Customers want capability in years, not decades — and digital engineering and MBSE are the only credible way there at scale."
         },
         {
           title: "Supply-chain and supplier risk",
-          body: "Concentrated suppliers, single-source components, and limited tier-N visibility leave programs exposed to schedule and cost shocks. Multi-tier visibility and supplier-quality programs now sit on the critical path."
+          body: "Concentrated, single-source suppliers and thin tier-N visibility leave programs exposed to schedule and cost shocks."
         },
         {
           title: "Cyber and compliance posture",
-          body: "CMMC, ITAR, and program-protection requirements are tightening — and primes are passing those obligations to the supplier base. The cost of failing an audit is no longer recoverable on the next contract."
+          body: "CMMC, ITAR, and program-protection rules are tightening — and primes are pushing them down to the supplier base."
         },
         {
           title: "Talent and engineering capacity",
-          body: "Engineering talent is scarce, and competing demand from commercial tech is real. Augmenting engineers with AI copilots, codified design knowledge, and modern delivery practices is how programs are protecting throughput today."
+          body: "Engineering talent is scarce; AI copilots and codified design knowledge are how programs protect throughput today."
         }
       ]}
       capabilities={[
         {
           name: "Operations Excellence",
           href: "/capabilities/operations-excellence",
-          blurb: "Stand up the digital engineering, MBSE, and program-management muscle that compress cycle times without sacrificing mission assurance."
+          blurb: "Digital engineering, MBSE, and program-management muscle that compress cycle times without sacrificing mission assurance."
         },
         {
           name: "Risk & Resilience",
           href: "/capabilities/risk-resilience",
-          blurb: "Engineer the cyber, CMMC, and supply-chain visibility posture primes and government customers now require across the supplier base."
+          blurb: "The cyber, CMMC, and supply-chain visibility posture primes and government now require across the base."
         },
         {
           name: "Data Transformation",
           href: "/capabilities/data-transformation",
-          blurb: "Connect engineering, manufacturing, and sustainment data into a single thread that supports AI use cases across the program lifecycle."
+          blurb: "One data thread across engineering, manufacturing, and sustainment that powers AI through the program lifecycle."
         },
         {
           name: "Strategy & Growth",
           href: "/capabilities/strategy-growth",
-          blurb: "Identify, qualify, and stand up the new-program and adjacent-market plays the next budget cycle is going to reward."
+          blurb: "The new-program and adjacent-market plays the next budget cycle will reward."
         }
       ]}
       experienceStats={[

@@ -15,7 +15,7 @@ export default function RiskAssessmentStrategy() {
       serviceName="Risk Assessment & Strategy"
       serviceSlug="risk-assessment-strategy"
       heroSubtitle="Comprehensive evaluation of your risk landscape using AI-powered analysis. Identify vulnerabilities, quantify exposures, and develop prioritized mitigation strategies. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-risk-resilience.5d8e23c1.jpg"
+      heroImage="/blog-diverse-team.5dcdbf56.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Risk Assessment & Strategy engagements delivered" },
@@ -68,7 +68,7 @@ export default function RiskAssessmentStrategy() {
           title: "Automating client onboarding for a global wealth management firm",
           industry: "Financial Services",
           metric: "60%",
-          image: "/case-wealth-management.91d3a49b.jpg",
+          image: "/case-advisor-client.eb15e04e.jpg",
         },
       ]}
       relatedServices={[

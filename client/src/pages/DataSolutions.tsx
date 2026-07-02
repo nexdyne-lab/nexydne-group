@@ -117,16 +117,16 @@ export default function DataSolutions() {
       <Breadcrumb items={breadcrumbItems} />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden">
+      <section className="relative bg-gradient-to-br from-charcoal via-charcoal to-charcoal text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 right-20 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 right-20 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-20 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
         </div>
         
         <div className="container relative py-16 sm:py-20 md:py-24 lg:py-16 sm:py-20 md:py-24 lg:py-32">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-sm font-semibold tracking-widest uppercase mb-6 text-cyan-400">Services</p>
-            <h1 className="text-6xl md:text-7xl font-bold mb-5 sm:mb-3 md:mb-4 leading-tight eb-garamond">
+            <p className="text-sm font-semibold tracking-widest uppercase mb-6 text-amber">Services</p>
+            <h1 className="text-6xl md:text-7xl font-bold mb-5 sm:mb-3 md:mb-4 leading-tight">
               Data Solutions
             </h1>
             <p className="text-2xl leading-relaxed opacity-90 max-w-3xl mx-auto">
@@ -178,7 +178,7 @@ export default function DataSolutions() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-7xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/data-solutions/data-strategy" className="block">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
                   <TrendingUp className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
                   <h3 className="text-xl font-bold text-charcoal">
@@ -192,7 +192,7 @@ export default function DataSolutions() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/data-solutions/data-platform" className="block">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
                   <Database className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
                   <h3 className="text-xl font-bold text-charcoal">
@@ -206,7 +206,7 @@ export default function DataSolutions() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/data-solutions/data-analytics" className="block">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
                   <BarChart3 className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
                   <h3 className="text-xl font-bold text-charcoal">
@@ -220,7 +220,7 @@ export default function DataSolutions() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/data-solutions/data-training" className="block">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
                   <GraduationCap className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
                   <h3 className="text-xl font-bold text-charcoal">
@@ -234,7 +234,7 @@ export default function DataSolutions() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/data-solutions/data-governance" className="block">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
                   <Shield className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
                   <h3 className="text-xl font-bold text-charcoal">
@@ -248,7 +248,7 @@ export default function DataSolutions() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/data-solutions/data-consultancy" className="block">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
                   <Users className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
                   <h3 className="text-xl font-bold text-charcoal">
@@ -280,7 +280,7 @@ export default function DataSolutions() {
       />
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-primary text-white">
+      <section className="nx-section bg-charcoal text-white">
         <div className="container text-center max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6 md:mb-8">
             Ready to unlock your data's potential?
@@ -289,7 +289,7 @@ export default function DataSolutions() {
             From strategy to implementation, we help you turn raw data into business value.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:p-5 md:p-6">
-            <Button className="bg-white text-primary hover:bg-subtle text-lg px-10 py-6 rounded-full font-bold shadow-lg transition-all hover:scale-105">
+            <Button className="bg-white text-primary hover:bg-subtle text-lg px-10 py-6 rounded-full font-bold shadow-lg transition hover:scale-105">
               Start Your Data Journey
             </Button>
             <Button variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-10 py-6 rounded-full font-bold">

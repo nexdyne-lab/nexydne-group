@@ -12,7 +12,7 @@ export default function CostOptimization() {
       serviceName="Cost Optimization"
       serviceSlug="cost-optimization"
       heroSubtitle="IT cost optimization that holds is not a one-time campaign. We rebuild the baseline, size the opportunity portfolio, run the execution alongside your teams, and embed the operating cadence so the savings still book in year two — not just in the announcement."
-      heroImage="/enterprise-transformation-hero.jpg"
+      heroImage="/solution-enterprise-transformation.0a0f2624.webp"
       experienceStats={[
         { number: "15-30%", label: "Of in-scope spend retired in the first eighteen months" },
         { number: "Yr 2", label: "Gain holds because the cadence — not a campaign — produced it" },

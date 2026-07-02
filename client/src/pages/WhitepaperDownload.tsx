@@ -132,22 +132,22 @@ export default function WhitepaperDownload() {
   const whitepaper = whitepapers[whitepaperSlug] || whitepapers["intelligent-automation-guide"];
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-off-white">
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-base via-base to-base text-white py-16">
+      <section className="bg-gradient-to-br from-background via-background to-background text-charcoal py-16">
         <div className="container">
-          <Link href="/insights" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 mb-5 sm:mb-6 md:mb-8 transition-colors">
+          <Link href="/insights" className="inline-flex items-center gap-2 text-primary hover:text-primary mb-5 sm:mb-6 md:mb-8 transition-colors">
             <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4" />
             Back to Insights
           </Link>
-          <div className="flex items-center gap-2 text-blue-400 mb-4">
+          <div className="flex items-center gap-2 text-primary mb-4">
             <FileText className="w-4 h-4 sm:w-5 sm:h-5" />
             <span className="text-sm font-semibold uppercase tracking-wider">Whitepaper</span>
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">{whitepaper.title}</h1>
-          <p className="text-xl text-white/80">{whitepaper.subtitle}</p>
+          <p className="text-xl text-muted-foreground">{whitepaper.subtitle}</p>
         </div>
       </section>
 
@@ -165,7 +165,7 @@ export default function WhitepaperDownload() {
                   className="w-full h-[400px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6 flex items-center gap-4 sm:p-5 md:p-6 text-white">
+                <div className="absolute bottom-6 left-6 right-6 flex items-center gap-4 sm:p-5 md:p-6 text-charcoal">
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4 sm:w-5 sm:h-5" />
                     <span>{whitepaper.readTime} read</span>
@@ -187,7 +187,7 @@ export default function WhitepaperDownload() {
                   {whitepaper.topics.map((topic) => (
                     <span
                       key={topic}
-                      className="px-3 py-1 bg-slate-100 text-charcoal/80 rounded-full text-sm"
+                      className="px-3 py-1 bg-subtle text-charcoal/80 rounded-full text-sm"
                     >
                       {topic}
                     </span>
@@ -212,7 +212,7 @@ export default function WhitepaperDownload() {
                 <div className="grid md:grid-cols-2 gap-4">
                   <Link
                     href="/insights/why-intelligent-automation"
-                    className="group p-4 border border-slate-200 rounded-lg hover:border-primary transition-colors"
+                    className="group p-4 border border-border rounded-lg hover:border-primary transition-colors"
                   >
                     <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Article</p>
                     <h4 className="font-semibold text-charcoal group-hover:text-primary transition-colors">
@@ -221,7 +221,7 @@ export default function WhitepaperDownload() {
                   </Link>
                   <Link
                     href="/insights/process-mining-guide"
-                    className="group p-4 border border-slate-200 rounded-lg hover:border-primary transition-colors"
+                    className="group p-4 border border-border rounded-lg hover:border-primary transition-colors"
                   >
                     <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Guide</p>
                     <h4 className="font-semibold text-charcoal group-hover:text-primary transition-colors">
@@ -230,7 +230,7 @@ export default function WhitepaperDownload() {
                   </Link>
                   <Link
                     href="/case-studies"
-                    className="group p-4 border border-slate-200 rounded-lg hover:border-primary transition-colors"
+                    className="group p-4 border border-border rounded-lg hover:border-primary transition-colors"
                   >
                     <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Case Studies</p>
                     <h4 className="font-semibold text-charcoal group-hover:text-primary transition-colors">
@@ -239,7 +239,7 @@ export default function WhitepaperDownload() {
                   </Link>
                   <Link
                     href="/contact"
-                    className="group p-4 border border-slate-200 rounded-lg hover:border-primary transition-colors"
+                    className="group p-4 border border-border rounded-lg hover:border-primary transition-colors"
                   >
                     <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Contact</p>
                     <h4 className="font-semibold text-charcoal group-hover:text-primary transition-colors">
@@ -284,7 +284,7 @@ export default function WhitepaperDownload() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     <div className="absolute bottom-4 left-4 right-4">
-                      <span className="text-xs text-white/80 uppercase tracking-wider">
+                      <span className="text-xs text-muted-foreground uppercase tracking-wider">
                         Whitepaper
                       </span>
                     </div>

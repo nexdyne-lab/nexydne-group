@@ -6,34 +6,33 @@ import Navbar from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import RelatedInsights from "@/components/RelatedInsights";
 import { RelatedContent } from "@/components/RelatedContent";
 import { dataRelatedItems } from "@/data/related-content";
 
 export default function ValueFocused() {
   return (
-    <div className="min-h-screen bg-base text-white selection:bg-secondary selection:text-base">
+    <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+      <section className="relative pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-base via-transparent to-base"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
         
         <div className="container relative z-10 px-6 md:px-12">
           <Breadcrumbs />
           <div className="max-w-4xl">
             
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight mb-2 sm:mb-3 md:mb-4 eb-garamond">
+            <h1 className="nx-h1 mb-4">
               Strategic Value <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/70">
+              <span className="text-charcoal">
                 Creation.
               </span>
             </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground/50 font-light leading-relaxed max-w-2xl mb-10">
+            <p className="nx-lead text-charcoal/70 max-w-2xl mb-10">
               We don't just build data systems; we build business value. Our approach prioritizes high-impact opportunities to deliver measurable returns from day one.
             </p>
-            <Button className="bg-white text-base hover:bg-slate-100 rounded-full px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg font-medium transition-all duration-300">
+            <Button className="bg-primary text-primary-foreground hover:bg-primary-hover px-8 py-4 text-[13px] font-semibold uppercase tracking-[0.1em] transition-colors">
               Identify your opportunities
             </Button>
           </div>
@@ -41,11 +40,11 @@ export default function ValueFocused() {
       </section>
 
       {/* Strategic Context Section */}
-      <section className="py-24 border-t border-white/5 bg-base">
+      <section className="nx-section border-t border-border bg-background">
         <div className="container px-6 md:px-12">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             <div>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight eb-garamond">
+              <h2 className="nx-h2 mb-6">
                 Stop building data lakes. <br />
                 <span className="text-muted-foreground/70">Start building value streams.</span>
               </h2>
@@ -61,33 +60,33 @@ export default function ValueFocused() {
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-secondary shrink-0" />
-                    <span className="text-muted-foreground/50">{item}</span>
+                    <span className="text-charcoal/70">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-secondary/20 to-green-500/20 rounded-xl sm:rounded-2xl blur-2xl opacity-50"></div>
-              <div className="relative bg-white/5 border border-white/10 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 backdrop-blur-sm">
+              <div className="absolute -inset-4 bg-gradient-to-r from-secondary/20 to-primary/20 rounded-xl sm:rounded-2xl blur-2xl opacity-50"></div>
+              <div className="relative bg-white/5 border border-border rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 backdrop-blur-sm">
                 <div className="space-y-8">
-                  <div className="flex items-center justify-between border-b border-white/10 pb-4">
+                  <div className="flex items-center justify-between border-b border-border pb-4">
                     <div>
                       <div className="text-sm text-muted-foreground/70 mb-1">Typical ROI Timeline</div>
-                      <div className="text-2xl font-bold text-white">3-6 Months</div>
+                      <div className="text-2xl font-bold text-charcoal">3-6 Months</div>
                     </div>
                     <TrendingUp className="w-8 h-8 text-secondary" />
                   </div>
-                  <div className="flex items-center justify-between border-b border-white/10 pb-4">
+                  <div className="flex items-center justify-between border-b border-border pb-4">
                     <div>
                       <div className="text-sm text-muted-foreground/70 mb-1">Cost Reduction</div>
-                      <div className="text-2xl font-bold text-white">15-25%</div>
+                      <div className="text-2xl font-bold text-charcoal">15-25%</div>
                     </div>
                     <DollarSign className="w-8 h-8 text-secondary" />
                   </div>
                   <div className="flex items-center justify-between">
                     <div>
                       <div className="text-sm text-muted-foreground/70 mb-1">Revenue Uplift</div>
-                      <div className="text-2xl font-bold text-white">10-30%</div>
+                      <div className="text-2xl font-bold text-charcoal">10-30%</div>
                     </div>
                     <PieChart className="w-8 h-8 text-secondary" />
                   </div>
@@ -99,10 +98,10 @@ export default function ValueFocused() {
       </section>
 
       {/* Methodology / Journey Section */}
-      <section className="py-24 bg-base">
+      <section className="nx-section bg-background">
         <div className="container px-6 md:px-12">
           <div className="mb-8 sm:mb-12 md:mb-16 max-w-2xl">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 eb-garamond">The Value Framework</h2>
+            <h2 className="nx-h2 mb-6">The Value Framework</h2>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground/70 font-light">
               Our proven methodology ensures that every dollar spent on data transformation yields a tangible return for your business.
             </p>
@@ -125,12 +124,12 @@ export default function ValueFocused() {
             ].map((card, i) => (
               <div key={i} className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl sm:rounded-2xl" />
-                <Card className="h-full bg-base border-white/10 group-hover:bg-white transition-all duration-300 relative overflow-hidden">
+                <Card className="h-full bg-background border-border group-hover:bg-white transition duration-300 relative overflow-hidden">
                   <CardContent className="p-4 sm:p-6 md:p-8 h-full flex flex-col">
-                    <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 group-hover:bg-slate-100 transition-colors duration-300">
+                    <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 group-hover:bg-subtle transition-colors duration-300">
                       <CheckCircle2 className="w-6 h-6 text-secondary group-hover:text-primary transition-colors duration-300" />
                     </div>
-                    <h3 className="text-2xl font-bold text-white group-hover:text-charcoal mb-4 transition-colors duration-300">
+                    <h3 className="nx-h3 text-charcoal mb-4 transition-colors duration-300">
                       {card.title}
                     </h3>
                     <p className="text-muted-foreground/70 group-hover:text-muted-foreground leading-relaxed transition-colors duration-300">
@@ -144,19 +143,17 @@ export default function ValueFocused() {
         </div>
       </section>
 
-      {/* Related Insights Section */}
-      <RelatedInsights />
 
       {/* Impact / CTA Section */}
-      <section className="py-32 bg-primary">
+      <section className="nx-section bg-background">
         <div className="container px-6 md:px-12 text-center">
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-5 sm:mb-6 md:mb-8 tracking-tight eb-garamond">
+          <h2 className="nx-h2 text-charcoal mb-8">
             Ready to unlock value?
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-6 sm:mb-8 md:mb-12 font-light">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 sm:mb-8 md:mb-12 font-light">
             Let's identify your highest-ROI data opportunities together.
           </p>
-          <Button className="bg-white text-primary hover:bg-slate-100 rounded-full px-10 py-8 text-xl font-bold transition-all duration-300 shadow-xl hover:shadow-xl sm:shadow-2xl hover:-translate-y-1">
+          <Button className="bg-primary text-primary-foreground hover:bg-primary-hover px-8 py-4 text-[13px] font-semibold uppercase tracking-[0.1em] transition-colors">
             Start the assessment
           </Button>
         </div>

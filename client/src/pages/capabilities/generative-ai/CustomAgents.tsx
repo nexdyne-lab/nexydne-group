@@ -15,7 +15,7 @@ export default function CustomAgents() {
       serviceName="Custom Agent Development"
       serviceSlug="custom-agents"
       heroSubtitle="Build intelligent agents tailored to your specific use cases — from customer service bots to internal knowledge assistants and code generation tools. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-generative-ai.7ab8e23c.jpg"
+      heroImage="/blog-ai-agents.eba3d75f.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Custom Agent Development engagements delivered" },

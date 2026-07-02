@@ -54,7 +54,7 @@ export default function CookiePreferences() {
       <section className="bg-white pt-32 pb-16 border-b border-border/50">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl">
-            <h1 className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-charcoal tracking-tight mb-3">
+            <h1 className="nx-h1 font-bold text-charcoal tracking-tight mb-3">
               Cookie Preferences
             </h1>
             <p className="text-lg text-muted-foreground italic">
@@ -197,8 +197,8 @@ export default function CookiePreferences() {
                     <li><a href="https://www.youronlinechoices.eu/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">European Interactive Digital Advertising Alliance (EDAA)</a></li>
                   </ul>
 
-                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mt-6">
-                    <p className="text-amber-800 text-sm">
+                  <div className="bg-amber/5 border border-amber/15 rounded-lg p-4 mt-6">
+                    <p className="text-amber text-sm">
                       <strong>Note:</strong> Disabling certain cookies may affect the functionality of our website and limit your ability to use some features.
                     </p>
                   </div>
@@ -249,7 +249,7 @@ export default function CookiePreferences() {
                       Privacy Team
                     </p>
                     <p className="text-charcoal/80 mb-2">
-                      Email: <a href="mailto:privacy@nexdyne.com" className="text-primary hover:underline">privacy@nexdyne.com</a>
+                      Email: <a href="mailto:contact@nexdynegroup.com" className="text-primary hover:underline">contact@nexdynegroup.com</a>
                     </p>
                     <p className="text-charcoal/80">
                       For more information about how we handle your personal data, please see our <Link href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</Link>.

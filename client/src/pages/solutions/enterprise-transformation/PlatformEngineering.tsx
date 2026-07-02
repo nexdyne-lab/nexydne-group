@@ -12,7 +12,7 @@ export default function PlatformEngineering() {
       serviceName="Platform Engineering"
       serviceSlug="platform-engineering"
       heroSubtitle="Platforms compound only when they are operated as products. We define the vision, design the IDP, build the paved paths, run the adoption, and embed the platform-team operating model that turns infrastructure into a managed developer experience."
-      heroImage="/enterprise-transformation-hero.jpg"
+      heroImage="/solution-enterprise-transformation.0a0f2624.webp"
       experienceStats={[
         { number: "60-80%", label: "Cut in time-to-first-deploy after IDP rollout" },
         { number: "1 eng / 6", label: "Application-team capacity lift per six teams adopted" },

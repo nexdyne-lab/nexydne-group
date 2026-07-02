@@ -63,7 +63,7 @@ function IntelligenceCommonsFAQ() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
-              className="border border-base/10 rounded-lg overflow-hidden"
+              className="border border-border rounded-lg overflow-hidden"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -77,7 +77,7 @@ function IntelligenceCommonsFAQ() {
                 />
               </button>
               <div 
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                className={`overflow-hidden transition duration-300 ease-in-out ${
                   openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
@@ -95,7 +95,7 @@ function IntelligenceCommonsFAQ() {
 
 export default function IntelligenceCommons() {
   return (
-    <div className="min-h-screen bg-base font-sans text-white selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="NexDyne Intelligence Commons | Democratizing Business Intelligence" 
         description="A free-to-start AI-powered intelligence platform designed to give mid-market leaders access to market signals, competitive benchmarking, and growth scenario modeling."
@@ -113,12 +113,12 @@ export default function IntelligenceCommons() {
             className="absolute inset-0 w-full h-full object-cover"
           />
           {/* Dark overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/90 to-base/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/60" />
           {/* Subtle geometric pattern */}
           <div className="absolute inset-0 opacity-5">
-            <div className="absolute top-32 right-32 w-80 h-80 border border-white/20 rounded-full" />
-            <div className="absolute bottom-16 left-16 w-48 h-48 border border-white/20 rounded-full" />
-            <div className="absolute top-1/2 left-1/3 w-64 h-64 border border-white/20 rounded-full" />
+            <div className="absolute top-32 right-32 w-80 h-80 border border-border rounded-full" />
+            <div className="absolute bottom-16 left-16 w-48 h-48 border border-border rounded-full" />
+            <div className="absolute top-1/2 left-1/3 w-64 h-64 border border-border rounded-full" />
           </div>
         </div>
         
@@ -130,7 +130,7 @@ export default function IntelligenceCommons() {
             className="max-w-4xl"
           >
             <Link href="/#initiatives">
-              <span className="inline-flex items-center text-sm text-white/50 hover:text-white/80 transition-colors mb-8 cursor-pointer">
+              <span className="inline-flex items-center text-sm text-muted-foreground hover:text-muted-foreground transition-colors mb-8 cursor-pointer">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 NexDyne Initiatives
               </span>
@@ -140,11 +140,11 @@ export default function IntelligenceCommons() {
               NexDyne Intelligence Commons
             </span>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
               Democratizing business intelligence for growing companies
             </h1>
             
-            <p className="text-lg md:text-xl text-white/70 leading-relaxed max-w-3xl">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl">
               A free-to-start AI-powered intelligence platform designed to give mid-market leaders access to market signals, competitive benchmarking, and growth scenario modeling.
             </p>
           </motion.div>
@@ -277,7 +277,7 @@ export default function IntelligenceCommons() {
       </section>
 
       {/* Why This Is Different - With Full Width Image */}
-      <section className="py-20 md:py-28 bg-base">
+      <section className="py-20 md:py-28 bg-background">
         <div className="container px-4 md:px-12">
           {/* Full width image banner */}
           <motion.div
@@ -303,14 +303,14 @@ export default function IntelligenceCommons() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl"
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/50 mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Why This Is Different
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-8">
               Opening Fortune 500 capabilities to growing businesses
             </h2>
             
-            <div className="prose prose-lg max-w-none text-white/70 mb-12">
+            <div className="prose prose-lg max-w-none text-muted-foreground mb-12">
               <p className="text-lg leading-relaxed mb-6">
                 Fortune 500 companies have entire departments dedicated to competitive intelligence, market research, and strategic planning. They subscribe to expensive data services, retain consulting firms, and employ analysts to synthesize insights.
               </p>
@@ -320,7 +320,7 @@ export default function IntelligenceCommons() {
             </div>
 
             <div className="bg-white/5 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-white mb-6">The intelligence gap</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-6">The intelligence gap</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   "Competitive analysis typically costs $50-100K per engagement",
@@ -332,7 +332,7 @@ export default function IntelligenceCommons() {
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2.5 flex-shrink-0" />
-                    <span className="text-white/80 text-sm">{item}</span>
+                    <span className="text-muted-foreground text-sm">{item}</span>
                   </div>
                 ))}
               </div>
@@ -394,7 +394,7 @@ export default function IntelligenceCommons() {
       </section>
 
       {/* Pricing Tiers */}
-      <section className="py-20 md:py-28 bg-base">
+      <section className="py-20 md:py-28 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -403,13 +403,13 @@ export default function IntelligenceCommons() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mb-12"
           >
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/50 mb-6 block">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-6 block">
               Platform Access
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal leading-tight mb-6">
               Intelligence for every growth stage
             </h2>
-            <p className="text-lg text-white/70 leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed">
               Start free and scale as your intelligence needs grow. No enterprise contracts required.
             </p>
           </motion.div>
@@ -469,12 +469,12 @@ export default function IntelligenceCommons() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className={`rounded-lg p-8 ${tier.highlighted ? 'bg-primary ring-2 ring-[#0077B5]' : 'bg-white/5'}`}
               >
-                <h3 className="text-xl font-semibold text-white mb-2">{tier.name}</h3>
-                <p className="text-3xl font-bold text-white mb-2">{tier.price}</p>
-                <p className="text-sm text-white/60 mb-6">{tier.description}</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">{tier.name}</h3>
+                <p className="text-3xl font-bold text-charcoal mb-2">{tier.price}</p>
+                <p className="text-sm text-muted-foreground mb-6">{tier.description}</p>
                 <ul className="space-y-3 mb-8">
                   {tier.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-sm text-white/80">
+                    <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
                       <Check className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                       {feature}
                     </li>
@@ -483,7 +483,7 @@ export default function IntelligenceCommons() {
                 <button className={`w-full py-3 rounded font-semibold text-sm transition-colors ${
                   tier.highlighted 
                     ? 'bg-white text-primary hover:bg-white/90' 
-                    : 'bg-primary text-white hover:bg-primary/90'
+                    : 'bg-primary text-charcoal hover:bg-primary/90'
                 }`}>
                   {tier.cta}
                 </button>

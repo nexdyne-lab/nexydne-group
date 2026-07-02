@@ -21,23 +21,23 @@ export default function ChangeManagementAISuccess() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-teal-900 via-teal-800 to-teal-900">
+      <section className="pt-32 pb-16 bg-charcoal">
         <div className="container px-4 md:px-6">
-          <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center text-teal-300 hover:text-white mb-8 transition-colors">
+          <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center text-white/70 hover:text-white mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to AI & Technology Consulting
           </Link>
           
           <div className="max-w-4xl">
             <div className="flex items-center gap-4 mb-6">
-              <span className="px-3 py-1 bg-teal-600 text-white text-xs font-semibold uppercase tracking-wider rounded">
+              <span className="px-3 py-1 bg-primary text-white text-xs font-semibold uppercase tracking-wider rounded">
                 Article
               </span>
-              <div className="flex items-center text-teal-300 text-sm">
+              <div className="flex items-center text-white/60 text-sm">
                 <Clock className="w-4 h-4 mr-1" />
                 10 min read
               </div>
-              <div className="flex items-center text-teal-300 text-sm">
+              <div className="flex items-center text-white/60 text-sm">
                 <Calendar className="w-4 h-4 mr-1" />
                 January 2026
               </div>
@@ -56,7 +56,7 @@ export default function ChangeManagementAISuccess() {
               initial="hidden"
               animate="visible"
               variants={fadeInUp}
-              className="text-xl text-teal-200 leading-relaxed"
+              className="text-xl text-white/80 leading-relaxed"
             >
               Technology is the easy part. The human element—adoption, behavior change, cultural alignment—determines whether AI investments deliver returns or become expensive shelfware.
             </motion.p>
@@ -65,10 +65,10 @@ export default function ChangeManagementAISuccess() {
       </section>
 
       {/* Key Statistic */}
-      <section className="py-12 bg-teal-50">
+      <section className="py-12 bg-off-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="text-6xl font-bold text-teal-900 mb-4">70%</div>
+            <div className="text-6xl font-bold text-primary mb-4">70%</div>
             <p className="text-xl text-charcoal/80">
               of AI and automation projects fail to deliver expected value—not because of technology limitations, but because of inadequate change management.
             </p>
@@ -267,7 +267,7 @@ export default function ChangeManagementAISuccess() {
       </article>
 
       {/* Related Insights */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-off-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl font-bold text-charcoal mb-8">Related Insights</h2>
@@ -275,7 +275,7 @@ export default function ChangeManagementAISuccess() {
             <div className="grid md:grid-cols-3 gap-8">
               <Link href="/insights/mid-market-ai-access" className="group">
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                  <div className="aspect-[16/10] bg-gradient-to-br from-slate-700 to-slate-900"></div>
+                  <div className="aspect-[16/10] bg-gradient-to-br from-charcoal to-charcoal"></div>
                   <div className="p-6">
                     <span className="text-xs font-semibold text-primary uppercase tracking-wider">Report</span>
                     <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-primary transition-colors">
@@ -287,7 +287,7 @@ export default function ChangeManagementAISuccess() {
               
               <Link href="/insights/efficiency-improvement-reality" className="group">
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                  <div className="aspect-[16/10] bg-gradient-to-br from-emerald-700 to-emerald-900"></div>
+                  <div className="aspect-[16/10] bg-gradient-to-br from-charcoal to-charcoal"></div>
                   <div className="p-6">
                     <span className="text-xs font-semibold text-primary uppercase tracking-wider">Article</span>
                     <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-primary transition-colors">
@@ -299,7 +299,7 @@ export default function ChangeManagementAISuccess() {
               
               <Link href="/insights/process-mining-guide" className="group">
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                  <div className="aspect-[16/10] bg-gradient-to-br from-blue-700 to-blue-900"></div>
+                  <div className="aspect-[16/10] bg-gradient-to-br from-primary to-primary"></div>
                   <div className="p-6">
                     <span className="text-xs font-semibold text-primary uppercase tracking-wider">Whitepaper</span>
                     <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-primary transition-colors">
@@ -314,17 +314,17 @@ export default function ChangeManagementAISuccess() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-teal-900">
+      <section className="py-20 bg-charcoal">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Ready to ensure your AI investment succeeds?
             </h2>
-            <p className="text-xl text-teal-200 mb-8">
+            <p className="text-xl text-primary mb-8">
               Let's discuss how integrated change management can maximize your AI adoption and ROI.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-white text-teal-900 font-semibold rounded-full hover:bg-teal-50 transition-colors">
+              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-white text-charcoal font-semibold rounded-full hover:bg-primary/5 transition-colors">
                 Schedule a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>

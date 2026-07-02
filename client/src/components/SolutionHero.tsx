@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "wouter";
+import { BrandMesh } from "@/components/BrandMesh";
+import { motion } from "framer-motion";
 
 export interface SolutionHeroCta {
   label: string;
@@ -10,84 +12,85 @@ export interface SolutionHeroProps {
   eyebrow?: string;
   title: string;
   subtitle?: string;
-  backgroundImage: string;
+  /** Retained for API compatibility; the plain hero no longer renders a full-bleed image. */
+  backgroundImage?: string;
   primaryCta?: SolutionHeroCta;
   secondaryCta?: SolutionHeroCta;
-  /**
-   * Optional override for the hero H1 className.
-   * Cat 5 default: "text-5xl md:text-6xl lg:text-7xl text-white leading-[1.05] mb-6".
-   * Cat 6 sub-offering pages pass the downshifted scale to signal level-3 IA depth.
-   */
+  /** Optional override for the hero H1 className. Default is the neutral statement scale. */
   h1ClassName?: string;
-  /**
-   * Optional override for the hero outer section padding/sizing classes.
-   * Cat 5 default: "h-[85vh] min-h-[600px] sm:min-h-[680px] lg:min-h-[760px]".
-   * Cat 6 sub-offering pages reduce vertical breathing room ~25%.
-   */
+  /** Optional override for the hero outer sizing (min-height). */
   containerClassName?: string;
 }
 
+const ease = [0.22, 1, 0.36, 1] as const;
+const container = { hidden: {}, show: { transition: { staggerChildren: 0.09, delayChildren: 0.05 } } };
+const rise = { hidden: { opacity: 0, y: 22 }, show: { opacity: 1, y: 0, transition: { duration: 0.7, ease } } };
+
+/**
+ * NexDyne interior hero — plain BCG-style statement (Brand v2, neutral-first).
+ * Off-white canvas, charcoal type, one orange-red signal CTA. No full-bleed image,
+ * no dark overlay — typography carries it, matching the homepage hero.
+ */
 export default function SolutionHero({
   eyebrow,
   title,
   subtitle,
-  backgroundImage,
   primaryCta,
   secondaryCta,
-  h1ClassName = "text-5xl md:text-6xl lg:text-7xl text-white leading-[1.05] mb-6",
-  containerClassName = "h-[85vh] min-h-[600px] sm:min-h-[680px] lg:min-h-[760px]",
+  h1ClassName = "text-charcoal font-bold tracking-[-0.035em] leading-[1.0] text-[clamp(2.4rem,5.4vw,4.2rem)]",
+  containerClassName = "min-h-[56vh]",
 }: SolutionHeroProps) {
   return (
-    <section
-      className={`relative w-full ${containerClassName} overflow-hidden bg-charcoal -mt-20 pt-20`}
-    >
-      {/* Background image, full-bleed */}
-      <img
-        src={backgroundImage}
-        alt=""
-        aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      {/* Solid charcoal overlay for legibility — no gradient */}
-      <div className="absolute inset-0 bg-charcoal/55" />
+    <section className="relative w-full bg-background overflow-hidden">
+      {/* Soft neutral atmosphere — a whisper of the signal warmth */}
+      <BrandMesh variant="light" />
+        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(90deg, #F7F9FC 0%, rgba(247,249,252,0.6) 30%, rgba(247,249,252,0.05) 55%, transparent 70%)" }} />
 
-      {/* Content — left-aligned, centered vertically */}
-      <div className="relative z-10 h-full flex flex-col justify-center px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24">
-        <div className="max-w-[1000px]">
-          {eyebrow && (
-            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
-              {eyebrow}
-            </span>
-          )}
-          <h1
-            className={h1ClassName}
-            style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-          >
-            {title}
-          </h1>
-          {subtitle && (
-            <p className="text-base md:text-lg text-white/80 leading-[1.65] max-w-[60ch] mb-10">
-              {subtitle}
-            </p>
-          )}
-          {(primaryCta || secondaryCta) && (
-            <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">
-              {primaryCta && (
-                <Link href={primaryCta.href}>
-                  <span className="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold text-[13px] tracking-[0.1em] uppercase hover:bg-primary-hover transition-colors cursor-pointer">
-                    {primaryCta.label}
-                  </span>
-                </Link>
-              )}
-              {secondaryCta && (
-                <Link href={secondaryCta.href}>
-                  <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-primary hover:text-primary transition-colors cursor-pointer pb-1">
-                    {secondaryCta.label}
-                  </span>
-                </Link>
-              )}
-            </div>
-          )}
+      <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+        <div className={`flex flex-col justify-center ${containerClassName} py-24 lg:py-28`}>
+          <motion.div variants={container} initial="hidden" animate="show" className="max-w-[920px]">
+            {eyebrow && (
+              <motion.div variants={rise} className="flex items-center gap-3 mb-7">
+                <span className="block h-[3px] w-9 bg-primary" />
+                <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                  {eyebrow}
+                </span>
+              </motion.div>
+            )}
+
+            <motion.h1 variants={rise} className={h1ClassName}>
+              {title}
+            </motion.h1>
+
+            {subtitle && (
+              <motion.p
+                variants={rise}
+                className="mt-7 text-[1.1rem] md:text-[1.2rem] leading-[1.55] text-muted-foreground max-w-[60ch]"
+              >
+                {subtitle}
+              </motion.p>
+            )}
+
+            {(primaryCta || secondaryCta) && (
+              <motion.div variants={rise} className="mt-10 flex flex-wrap items-center gap-x-7 gap-y-4">
+                {primaryCta && (
+                  <Link href={primaryCta.href}>
+                    <span className="group inline-flex items-center gap-2.5 bg-primary text-primary-foreground text-[13px] font-semibold uppercase tracking-[0.1em] px-7 py-4 hover:bg-primary-hover transition-colors cursor-pointer">
+                      {primaryCta.label}
+                      <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                    </span>
+                  </Link>
+                )}
+                {secondaryCta && (
+                  <Link href={secondaryCta.href}>
+                    <span className="inline-flex items-center text-[13px] font-semibold uppercase tracking-[0.1em] text-charcoal border-b-2 border-charcoal/25 pb-1 hover:border-primary transition-colors cursor-pointer">
+                      {secondaryCta.label}
+                    </span>
+                  </Link>
+                )}
+              </motion.div>
+            )}
+          </motion.div>
         </div>
       </div>
     </section>

@@ -21,11 +21,11 @@ export function PartnerEcosystem({
   certifications = []
 }: PartnerEcosystemProps) {
   const categoryColors = {
-    cloud: "from-blue-500 to-cyan-500",
-    data: "from-purple-500 to-pink-500",
-    automation: "from-orange-500 to-red-500",
-    analytics: "from-green-500 to-emerald-500",
-    integration: "from-indigo-500 to-blue-500",
+    cloud: "from-primary to-amber",
+    data: "from-purple to-primary",
+    automation: "from-primary to-primary",
+    analytics: "from-amber to-amber",
+    integration: "from-primary to-primary",
   };
 
   const categoryLabels = {
@@ -46,12 +46,12 @@ export function PartnerEcosystem({
   }, {} as Record<string, Partner[]>);
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-slate-50">
+    <section className="py-12 sm:py-16 lg:py-20 bg-off-white">
       <div className="container">
         {/* Header */}
         <div className="text-center mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
           <div className="inline-block mb-4">
-            <span className="text-sm font-semibold text-cyan-600 uppercase tracking-wider bg-white px-4 py-2 rounded-full shadow-sm">
+            <span className="text-sm font-semibold text-primary uppercase tracking-wider bg-white px-4 py-2 rounded-full shadow-sm">
               Trusted Partners
             </span>
           </div>
@@ -73,13 +73,13 @@ export function PartnerEcosystem({
                 {categoryPartners.map((partner, index) => (
                   <div
                     key={index}
-                    className="bg-white border border-slate-200 rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 flex flex-col items-center justify-center hover:shadow-lg transition-all duration-300 hover:border-cyan-300 group"
+                    className="bg-white border border-border rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 flex flex-col items-center justify-center hover:shadow-lg transition duration-300 hover:border-primary group"
                   >
                     {partner.logo ? (
                       <img
                         src={partner.logo}
                         alt={partner.name}
-                        className="h-12 object-contain mb-3 grayscale group-hover:grayscale-0 transition-all"
+                        className="h-12 object-contain mb-3 grayscale group-hover:grayscale-0 transition"
                       />
                     ) : (
                       <div className={`h-12 w-full rounded bg-gradient-to-r ${categoryColors[partner.category]} opacity-20 mb-3`} />
@@ -88,7 +88,7 @@ export function PartnerEcosystem({
                       {partner.name}
                     </p>
                     {partner.badge && (
-                      <span className="text-xs text-cyan-600 bg-cyan-50 px-2 py-1 rounded-full mt-2">
+                      <span className="text-xs text-primary bg-primary/5 px-2 py-1 rounded-full mt-2">
                         {partner.badge}
                       </span>
                     )}
@@ -101,15 +101,15 @@ export function PartnerEcosystem({
 
         {/* Certifications */}
         {certifications.length > 0 && (
-          <div className="bg-white border border-slate-200 rounded-lg p-4 sm:p-6 md:p-4 sm:p-6 md:p-8">
+          <div className="bg-white border border-border rounded-lg p-4 sm:p-6 md:p-4 sm:p-6 md:p-8">
             <div className="flex items-center gap-3 mb-6">
-              <Award className="w-6 h-6 text-cyan-600" />
+              <Award className="w-6 h-6 text-primary" />
               <h3 className="text-2xl font-bold text-charcoal">Certifications & Accreditations</h3>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {certifications.map((cert, index) => (
-                <div key={index} className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">
-                  <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-600 flex-shrink-0" />
+                <div key={index} className="flex items-center gap-3 p-4 bg-off-white rounded-lg">
+                  <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
                   <span className="text-charcoal/80 font-medium">{cert}</span>
                 </div>
               ))}
@@ -119,8 +119,8 @@ export function PartnerEcosystem({
 
         {/* Value Proposition */}
         <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 rounded-full px-6 py-3">
-            <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-600" />
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-primary border border-primary rounded-full px-6 py-3">
+            <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
             <p className="text-charcoal/80 font-medium">
               Leveraging best-of-breed technologies to accelerate your digital transformation
             </p>

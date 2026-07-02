@@ -15,7 +15,7 @@ export default function ChurnPrediction() {
       serviceName="Churn Prediction"
       serviceSlug="churn-prediction"
       heroSubtitle="Identify at-risk customers before they leave. Our models analyze behavioral patterns to flag churn risk and recommend retention interventions. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-predictive-analytics.91d3a49b.jpg"
+      heroImage="/blog-data-analytics.01de594d.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Churn Prediction engagements delivered" },

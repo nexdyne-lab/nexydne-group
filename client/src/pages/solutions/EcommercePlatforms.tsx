@@ -10,13 +10,13 @@ export default function EcommercePlatforms() {
       <Navigation />
       
       {/* Hero Section - Maroon Background */}
-      <section className="relative bg-gradient-to-br from-red-900 via-primary to-primary text-white py-20 md:py-28">
+      <section className="relative bg-charcoal text-white nx-section">
         <div className="container">
           <div className="mb-8">
             <div className="flex items-center gap-2 text-sm opacity-90">
-              <Link href="/"><a className="hover:underline">Services</a></Link>
+              <Link href="/"><span className="hover:underline cursor-pointer">Services</span></Link>
               <span>/</span>
-              <Link href="/solutions/business-growth"><a className="hover:underline">Accelerating Business Growth</a></Link>
+              <Link href="/solutions/business-growth"><span className="hover:underline cursor-pointer">Accelerating Business Growth</span></Link>
               <span>/</span>
               <span>E-commerce platforms</span>
             </div>
@@ -24,7 +24,7 @@ export default function EcommercePlatforms() {
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-4 eb-garamond">
+              <h1 className="text-[2.25rem] md:text-[2.75rem] font-bold mb-4">
                 E-commerce platforms
               </h1>
             </div>
@@ -39,12 +39,12 @@ export default function EcommercePlatforms() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="nx-section bg-white">
         <div className="container">
           <div className="grid md:grid-cols-[300px_1fr] gap-12 items-start">
             {/* Profile Photo and CTA */}
             <div className="flex flex-col items-center text-center">
-              <div className="w-64 h-64 rounded-full overflow-hidden bg-gradient-to-br from-blue-400 to-blue-300 mb-6">
+              <div className="w-64 h-64 rounded-full overflow-hidden bg-gradient-to-br from-primary to-primary mb-6">
                 <img 
                   src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=800" 
                   alt="James Wilson"
@@ -52,18 +52,18 @@ export default function EcommercePlatforms() {
                 />
               </div>
               <h3 className="text-xl font-bold text-charcoal mb-2">Want to know more?</h3>
-              <button className="border-2 border-slate-900 text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-slate-900 hover:text-white transition-colors">
+              <button className="border-2 border-charcoal/20 text-charcoal px-8 py-3 rounded-full font-semibold hover:bg-charcoal hover:text-white transition-colors">
                 Ask James Wilson
               </button>
             </div>
             
             {/* Benefits Grid */}
             <div>
-              <h2 className="text-4xl font-bold text-charcoal mb-12">The benefits of e-commerce platforms</h2>
+              <h2 className="text-[2rem] font-bold text-charcoal mb-12">The benefits of e-commerce platforms</h2>
               
               <div className="space-y-8">
                 <div className="flex gap-6">
-                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                     <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
@@ -77,7 +77,7 @@ export default function EcommercePlatforms() {
                 </div>
                 
                 <div className="flex gap-6">
-                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                     <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                     </svg>
@@ -91,7 +91,7 @@ export default function EcommercePlatforms() {
                 </div>
                 
                 <div className="flex gap-6">
-                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                     <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                     </svg>
@@ -105,7 +105,7 @@ export default function EcommercePlatforms() {
                 </div>
 
                 <div className="flex gap-6">
-                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                     <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
@@ -124,9 +124,9 @@ export default function EcommercePlatforms() {
       </section>
 
       {/* About Section */}
-      <section className="py-20 md:py-28 bg-slate-50">
+      <section className="nx-section bg-off-white">
         <div className="container">
-          <h2 className="text-4xl font-bold text-charcoal mb-6">About e-commerce platforms</h2>
+          <h2 className="text-[2rem] font-bold text-charcoal mb-6">About e-commerce platforms</h2>
           <div className="max-w-4xl">
             <p className="text-xl text-muted-foreground leading-relaxed mb-6">
               A new e-commerce platform is your secret ingredient for growth. For clicks and bricks retailers, it means ultimate flexibility, the ability to launch new channels and seamless integration with your stores. In a fiercely competitive market, you need to lead the pack. No prizes for second best.
@@ -136,8 +136,8 @@ export default function EcommercePlatforms() {
             </p>
           </div>
           
-          <div className="mt-12 p-8 bg-gradient-to-r from-red-50 to-blue-50 rounded-lg border-l-4 border-red-900">
-            <p className="text-2xl font-bold text-red-900 italic">
+          <div className="mt-12 p-8 bg-gradient-to-r from-primary/5 to-primary rounded-lg border-l-4 border-primary">
+            <p className="text-2xl font-bold text-primary italic">
               "We make sure your platform isn't just built to perform, but to lead the way."
             </p>
           </div>
@@ -145,16 +145,16 @@ export default function EcommercePlatforms() {
       </section>
 
       {/* How We Work Section */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="nx-section bg-white">
         <div className="container">
-          <h2 className="text-4xl font-bold text-charcoal mb-4">How we build e-commerce platforms</h2>
+          <h2 className="text-[2rem] font-bold text-charcoal mb-4">How we build e-commerce platforms</h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
             Our proven methodology combines MACH principles with composable commerce to deliver flexible, scalable platforms that grow with your business.
           </p>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Step 1 */}
-            <div className="bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-600 hover:shadow-lg transition-all duration-300">
+            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition duration-300">
               <div className="text-primary font-bold text-sm mb-2">STEP 1</div>
               <h3 className="text-xl font-bold text-charcoal mb-3">Discovery & Strategy</h3>
               <p className="text-muted-foreground">
@@ -163,7 +163,7 @@ export default function EcommercePlatforms() {
             </div>
 
             {/* Step 2 */}
-            <div className="bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-600 hover:shadow-lg transition-all duration-300">
+            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition duration-300">
               <div className="text-primary font-bold text-sm mb-2">STEP 2</div>
               <h3 className="text-xl font-bold text-charcoal mb-3">Platform Design</h3>
               <p className="text-muted-foreground">
@@ -172,7 +172,7 @@ export default function EcommercePlatforms() {
             </div>
 
             {/* Step 3 */}
-            <div className="bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-600 hover:shadow-lg transition-all duration-300">
+            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition duration-300">
               <div className="text-primary font-bold text-sm mb-2">STEP 3</div>
               <h3 className="text-xl font-bold text-charcoal mb-3">Build & Integrate</h3>
               <p className="text-muted-foreground">
@@ -181,7 +181,7 @@ export default function EcommercePlatforms() {
             </div>
 
             {/* Step 4 */}
-            <div className="bg-white p-8 rounded-lg border border-slate-200 hover:border-blue-600 hover:shadow-lg transition-all duration-300">
+            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition duration-300">
               <div className="text-primary font-bold text-sm mb-2">STEP 4</div>
               <h3 className="text-xl font-bold text-charcoal mb-3">Launch & Optimize</h3>
               <p className="text-muted-foreground">
@@ -193,9 +193,9 @@ export default function EcommercePlatforms() {
       </section>
 
       {/* Platform Partners Section */}
-      <section className="py-20 md:py-28 bg-slate-50">
+      <section className="nx-section bg-off-white">
         <div className="container">
-          <h2 className="text-4xl font-bold text-charcoal mb-4">E-commerce platform expertise</h2>
+          <h2 className="text-[2rem] font-bold text-charcoal mb-4">E-commerce platform expertise</h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
             We partner with leading e-commerce platforms to deliver best-in-class solutions tailored to your business needs.
           </p>
@@ -204,7 +204,7 @@ export default function EcommercePlatforms() {
             {/* Commercetools */}
             <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center">
+                <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                   </svg>
@@ -239,7 +239,7 @@ export default function EcommercePlatforms() {
             {/* Shopware */}
             <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-purple-600 rounded-lg flex items-center justify-center">
+                <div className="w-16 h-16 bg-purple rounded-lg flex items-center justify-center">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
@@ -274,7 +274,7 @@ export default function EcommercePlatforms() {
             {/* Intershop */}
             <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-green-600 rounded-lg flex items-center justify-center">
+                <div className="w-16 h-16 bg-amber rounded-lg flex items-center justify-center">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
@@ -310,9 +310,9 @@ export default function EcommercePlatforms() {
       </section>
 
       {/* Case Studies Section */}
-      <section className="py-20 md:py-28 bg-blue-50">
+      <section className="nx-section bg-primary/5">
         <div className="container">
-          <h2 className="text-4xl font-bold text-charcoal mb-4">Success stories</h2>
+          <h2 className="text-[2rem] font-bold text-charcoal mb-4">Success stories</h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
             See how we've built cutting-edge e-commerce platforms that drive growth and exceed expectations.
           </p>
@@ -320,7 +320,7 @@ export default function EcommercePlatforms() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Case Study 1 */}
             <Link href="/cases/fashion-retailer-headless-commerce">
-              <a className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all">
+              <a className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                 <div className="aspect-video overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=600" 
@@ -356,7 +356,7 @@ export default function EcommercePlatforms() {
 
             {/* Case Study 2 */}
             <Link href="/cases/optics-retailer-webshop-platform">
-              <a className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all">
+              <a className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                 <div className="aspect-video overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1574169208507-84376144848b?auto=format&fit=crop&q=80&w=600" 
@@ -392,7 +392,7 @@ export default function EcommercePlatforms() {
 
             {/* Case Study 3 */}
             <Link href="/cases/b2b-manufacturer-commerce-platform">
-              <a className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all">
+              <a className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                 <div className="aspect-video overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=600" 
@@ -430,83 +430,83 @@ export default function EcommercePlatforms() {
       </section>
 
       {/* E-commerce Capabilities Section */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="nx-section bg-white">
         <div className="container">
-          <h2 className="text-4xl font-bold text-charcoal mb-4">E-commerce capabilities & services</h2>
+          <h2 className="text-[2rem] font-bold text-charcoal mb-4">E-commerce capabilities & services</h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
             Our e-commerce expertise spans modern platforms and best practices.
           </p>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="border-l-4 border-blue-600 pl-6">
+            <div className="border-l-4 border-primary pl-6">
               <h3 className="text-xl font-bold text-charcoal mb-3">Headless Commerce</h3>
               <p className="text-muted-foreground mb-3">
                 Decouple frontend from backend with headless architecture. Enable omnichannel experiences, faster innovation, and ultimate flexibility.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">React</span>
-                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Next.js</span>
-                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Vue.js</span>
+                <span className="px-3 py-1 bg-subtle text-charcoal/80 text-sm rounded-full">React</span>
+                <span className="px-3 py-1 bg-subtle text-charcoal/80 text-sm rounded-full">Next.js</span>
+                <span className="px-3 py-1 bg-subtle text-charcoal/80 text-sm rounded-full">Vue.js</span>
               </div>
             </div>
 
-            <div className="border-l-4 border-blue-600 pl-6">
+            <div className="border-l-4 border-primary pl-6">
               <h3 className="text-xl font-bold text-charcoal mb-3">Payment Integration</h3>
               <p className="text-muted-foreground mb-3">
                 Integrate multiple payment gateways with Stripe, Adyen, or PayPal. Support local payment methods, subscriptions, and fraud prevention.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Stripe</span>
-                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Adyen</span>
-                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">PayPal</span>
+                <span className="px-3 py-1 bg-subtle text-charcoal/80 text-sm rounded-full">Stripe</span>
+                <span className="px-3 py-1 bg-subtle text-charcoal/80 text-sm rounded-full">Adyen</span>
+                <span className="px-3 py-1 bg-subtle text-charcoal/80 text-sm rounded-full">PayPal</span>
               </div>
             </div>
 
-            <div className="border-l-4 border-blue-600 pl-6">
+            <div className="border-l-4 border-primary pl-6">
               <h3 className="text-xl font-bold text-charcoal mb-3">Search & Merchandising</h3>
               <p className="text-muted-foreground mb-3">
                 Implement AI-powered search with Algolia or Elasticsearch. Enable faceted navigation, personalized recommendations, and visual search.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Algolia</span>
-                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Elasticsearch</span>
-                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Bloomreach</span>
+                <span className="px-3 py-1 bg-subtle text-charcoal/80 text-sm rounded-full">Algolia</span>
+                <span className="px-3 py-1 bg-subtle text-charcoal/80 text-sm rounded-full">Elasticsearch</span>
+                <span className="px-3 py-1 bg-subtle text-charcoal/80 text-sm rounded-full">Bloomreach</span>
               </div>
             </div>
 
-            <div className="border-l-4 border-blue-600 pl-6">
+            <div className="border-l-4 border-primary pl-6">
               <h3 className="text-xl font-bold text-charcoal mb-3">Order Management</h3>
               <p className="text-muted-foreground mb-3">
                 Centralize order processing across channels with OMS. Manage inventory, fulfillment, returns, and customer service from single platform.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Fluent Commerce</span>
-                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Manhattan</span>
-                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Brightpearl</span>
+                <span className="px-3 py-1 bg-subtle text-charcoal/80 text-sm rounded-full">Fluent Commerce</span>
+                <span className="px-3 py-1 bg-subtle text-charcoal/80 text-sm rounded-full">Manhattan</span>
+                <span className="px-3 py-1 bg-subtle text-charcoal/80 text-sm rounded-full">Brightpearl</span>
               </div>
             </div>
 
-            <div className="border-l-4 border-blue-600 pl-6">
+            <div className="border-l-4 border-primary pl-6">
               <h3 className="text-xl font-bold text-charcoal mb-3">Marketing Automation</h3>
               <p className="text-muted-foreground mb-3">
                 Integrate marketing tools for email campaigns, abandoned cart recovery, and customer segmentation. Automate personalized communications.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Klaviyo</span>
-                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Braze</span>
-                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Mailchimp</span>
+                <span className="px-3 py-1 bg-subtle text-charcoal/80 text-sm rounded-full">Klaviyo</span>
+                <span className="px-3 py-1 bg-subtle text-charcoal/80 text-sm rounded-full">Braze</span>
+                <span className="px-3 py-1 bg-subtle text-charcoal/80 text-sm rounded-full">Mailchimp</span>
               </div>
             </div>
 
-            <div className="border-l-4 border-blue-600 pl-6">
+            <div className="border-l-4 border-primary pl-6">
               <h3 className="text-xl font-bold text-charcoal mb-3">Analytics & Optimization</h3>
               <p className="text-muted-foreground mb-3">
                 Track customer behavior, conversion funnels, and revenue metrics. Implement A/B testing and continuous optimization programs.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Google Analytics</span>
-                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Optimizely</span>
-                <span className="px-3 py-1 bg-slate-100 text-charcoal/80 text-sm rounded-full">Hotjar</span>
+                <span className="px-3 py-1 bg-subtle text-charcoal/80 text-sm rounded-full">Google Analytics</span>
+                <span className="px-3 py-1 bg-subtle text-charcoal/80 text-sm rounded-full">Optimizely</span>
+                <span className="px-3 py-1 bg-subtle text-charcoal/80 text-sm rounded-full">Hotjar</span>
               </div>
             </div>
           </div>
@@ -514,15 +514,15 @@ export default function EcommercePlatforms() {
       </section>
 
       {/* Our Solutions Section */}
-      <section className="py-20 md:py-28 bg-slate-50">
+      <section className="nx-section bg-off-white">
         <div className="container">
-          <h2 className="text-4xl font-bold text-charcoal mb-4">Our e-commerce solutions</h2>
+          <h2 className="text-[2rem] font-bold text-charcoal mb-4">Our e-commerce solutions</h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
             NEXDYNE has all the tools to take your e-commerce platform to new heights. Want a top-notch user experience design, solid backend, smart APIs? No sweat. Whether you're a pure player or omnichannel pro, we prime your platform for success from the first design to the last integration. Ready for more? Our experts are ready to help you take the next big step.
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl">
-            <div className="bg-gradient-to-br from-blue-50 to-red-50 p-8 rounded-lg">
+            <div className="bg-gradient-to-br from-primary to-primary/5 p-8 rounded-lg">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                   <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -542,7 +542,7 @@ export default function EcommercePlatforms() {
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-lg border-2 border-slate-200">
+            <div className="bg-white p-8 rounded-lg border-2 border-border">
               <h3 className="text-xl font-bold text-charcoal mb-4">Why Incentro</h3>
               <p className="text-muted-foreground">
                 Whether you're looking for a strategic partner, a boost for your digital transformation, or the ultimate customer experience for your customers, you've come to the right place. With our next-generation digital solutions, you'll always be one step ahead of the competition.
@@ -553,7 +553,7 @@ export default function EcommercePlatforms() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-20 md:py-28 bg-primary text-white overflow-hidden">
+      <section className="relative nx-section bg-charcoal text-white overflow-hidden">
         {/* Curved Top Divider */}
         <div className="absolute top-0 left-0 right-0 -mt-1">
           <svg className="w-full h-16 text-white" viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -563,7 +563,7 @@ export default function EcommercePlatforms() {
 
         <div className="container relative">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to build your platform?</h2>
+            <h2 className="text-[2rem] md:text-[2.5rem] font-bold mb-6">Ready to build your platform?</h2>
             <p className="text-xl mb-8 opacity-90">
               Let's create an e-commerce platform that's flexible, scalable, and always one step ahead. Our experts are ready to bring your vision to life.
             </p>

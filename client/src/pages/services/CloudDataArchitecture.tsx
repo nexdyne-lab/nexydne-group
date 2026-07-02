@@ -20,7 +20,7 @@ export default function CloudDataArchitecture() {
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-['EB Garamond',serif] font-bold tracking-tight text-white leading-[1.05] mb-4">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-4">
                 Cloud & Data Architecture
               </h1>
               
@@ -41,7 +41,7 @@ export default function CloudDataArchitecture() {
       </section>
 
       {/* Key Metrics */}
-      <section className="py-16 bg-slate-50 border-b border-slate-200">
+      <section className="py-16 bg-off-white border-b border-border">
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
@@ -71,7 +71,7 @@ export default function CloudDataArchitecture() {
             <p className="text-primary text-sm font-medium tracking-widest uppercase mb-4">
               The Challenge
             </p>
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-8">
               Legacy systems holding back your AI ambitions
             </h2>
             <div className="prose prose-lg prose-slate max-w-none">
@@ -97,18 +97,18 @@ export default function CloudDataArchitecture() {
       </section>
 
       {/* Our Approach Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-off-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
             <p className="text-primary text-sm font-medium tracking-widest uppercase mb-4">
               Our Approach
             </p>
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-12">
               Architecture designed for intelligence
             </h2>
             
             <div className="space-y-12">
-              <div className="border-l-4 border-blue-600 pl-8">
+              <div className="border-l-4 border-primary pl-8">
                 <h3 className="text-xl font-bold text-charcoal mb-4">Assessment & Strategy</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   We begin with a comprehensive assessment of your current infrastructure, data flows, and 
@@ -118,7 +118,7 @@ export default function CloudDataArchitecture() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-blue-600 pl-8">
+              <div className="border-l-4 border-primary pl-8">
                 <h3 className="text-xl font-bold text-charcoal mb-4">Cloud-Native Design</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Leveraging our AWS and Google Cloud partnerships, we design architectures that maximize 
@@ -128,7 +128,7 @@ export default function CloudDataArchitecture() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-blue-600 pl-8">
+              <div className="border-l-4 border-primary pl-8">
                 <h3 className="text-xl font-bold text-charcoal mb-4">Data Architecture</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   AI systems are only as good as the data that feeds them. We establish unified data 
@@ -138,7 +138,7 @@ export default function CloudDataArchitecture() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-blue-600 pl-8">
+              <div className="border-l-4 border-primary pl-8">
                 <h3 className="text-xl font-bold text-charcoal mb-4">Migration & Implementation</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   We execute migrations with minimal business disruption using proven methodologies and 
@@ -159,7 +159,7 @@ export default function CloudDataArchitecture() {
             <p className="text-primary text-sm font-medium tracking-widest uppercase mb-4">
               Capabilities
             </p>
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-12">
               What we deliver
             </h2>
             
@@ -190,18 +190,18 @@ export default function CloudDataArchitecture() {
       </section>
 
       {/* Results Section */}
-      <section className="py-20 bg-slate-900 text-white">
+      <section className="py-20 bg-charcoal text-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-blue-400 text-sm font-medium tracking-widest uppercase mb-4">
+            <p className="text-primary text-sm font-medium tracking-widest uppercase mb-4">
               Results
             </p>
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12">
               What our clients achieve
             </h2>
             
             <div className="space-y-8">
-              <div className="border-l-4 border-blue-400 pl-8">
+              <div className="border-l-4 border-primary pl-8">
                 <p className="text-muted-foreground/50 leading-relaxed">
                   <span className="text-white font-semibold">A regional healthcare network</span> migrated 
                   15 years of patient data to a modern cloud architecture, reducing query times from minutes 
@@ -209,7 +209,7 @@ export default function CloudDataArchitecture() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-blue-400 pl-8">
+              <div className="border-l-4 border-primary pl-8">
                 <p className="text-muted-foreground/50 leading-relaxed">
                   <span className="text-white font-semibold">A financial services firm</span> consolidated 
                   seven disparate data systems into a unified data platform, cutting reporting time by 80% 
@@ -217,7 +217,7 @@ export default function CloudDataArchitecture() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-blue-400 pl-8">
+              <div className="border-l-4 border-primary pl-8">
                 <p className="text-muted-foreground/50 leading-relaxed">
                   <span className="text-white font-semibold">A manufacturing company</span> modernized their 
                   ERP integration layer, enabling real-time inventory visibility across 12 facilities and 
@@ -233,7 +233,7 @@ export default function CloudDataArchitecture() {
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-['EB Garamond',serif] font-bold text-charcoal mb-8">Related Services</h2>
+            <h2 className="text-2xl font-bold text-charcoal mb-8">Related Services</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
               <BainHoverCard
@@ -252,10 +252,10 @@ export default function CloudDataArchitecture() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-off-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-6">
               Ready to modernize your infrastructure?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
@@ -266,7 +266,7 @@ export default function CloudDataArchitecture() {
                 Schedule a Consultation
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
-              <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center justify-center px-8 py-4 border border-slate-300 text-charcoal/80 font-semibold rounded-full hover:bg-slate-100 transition-colors">
+              <Link href="/capabilities/ai-technology-consulting" className="inline-flex items-center justify-center px-8 py-4 border border-border text-charcoal/80 font-semibold rounded-full hover:bg-subtle transition-colors">
                 Explore AI & Technology
               </Link>
             </div>

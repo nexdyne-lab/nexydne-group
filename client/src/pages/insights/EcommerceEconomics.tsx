@@ -20,15 +20,15 @@ export default function EcommerceEconomics() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center pt-20 overflow-hidden bg-base">
+      <section className="relative min-h-[60vh] flex items-center pt-20 overflow-hidden bg-background">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=2000&q=80" 
             alt="E-commerce Shopping" 
             className="w-full h-full object-cover opacity-20"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-base via-base/90 to-base/70" />
-          <div className="absolute inset-0 bg-gradient-to-t from-base via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
         </div>
         
         <div className="container px-4 md:px-12 relative z-10">
@@ -39,7 +39,7 @@ export default function EcommerceEconomics() {
             className="max-w-4xl"
           >
             <Link href="/solutions/accelerating-business-growth">
-              <span className="inline-flex items-center text-sm text-white/60 hover:text-primary transition-colors mb-6 cursor-pointer">
+              <span className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors mb-6 cursor-pointer">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Accelerating Business Growth
               </span>
@@ -48,18 +48,18 @@ export default function EcommerceEconomics() {
             <div className="flex items-center gap-4 text-sm text-primary font-semibold mb-6">
               <span className="uppercase tracking-wider">Article</span>
               <span className="w-1 h-1 rounded-full bg-white/40" />
-              <span className="text-white/60">10 min read</span>
+              <span className="text-muted-foreground">10 min read</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
               E-commerce economics: Building profitable D2C channels
             </h1>
             
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl mb-10">
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl mb-10">
               The unit economics, technology choices, and operational considerations that determine D2C success.
             </p>
             
-            <div className="flex items-center gap-6 text-white/60 text-sm">
+            <div className="flex items-center gap-6 text-muted-foreground text-sm">
               <div className="flex items-center gap-2">
                 <User className="w-4 h-4" />
                 <span>By Commerce Strategy Team</span>
@@ -81,7 +81,7 @@ export default function EcommerceEconomics() {
             <div className="md:col-span-3 hidden md:block">
               <div className="sticky top-32">
                 <h4 className="font-bold text-charcoal mb-4">Table of Contents</h4>
-                <ul className="space-y-3 text-sm text-charcoal/60 border-l border-base/10 pl-4">
+                <ul className="space-y-3 text-sm text-charcoal/60 border-l border-border pl-4">
                   <li className="hover:text-primary cursor-pointer">The D2C Opportunity</li>
                   <li className="hover:text-primary cursor-pointer">Unit Economics Fundamentals</li>
                   <li className="hover:text-primary cursor-pointer">Customer Acquisition</li>
@@ -115,7 +115,7 @@ export default function EcommerceEconomics() {
                   The companies that succeed in D2C share common characteristics: strong brand identity, products with natural replenishment cycles, and the operational discipline to manage complex logistics. Those that fail typically underestimate customer acquisition costs or overestimate their ability to compete with established players.
                 </p>
 
-                <div className="bg-subtle p-8 rounded-xl border border-base/10 my-10">
+                <div className="bg-subtle p-8 rounded-xl border border-border my-10">
                   <h4 className="font-bold text-charcoal mb-4 flex items-center gap-2">
                     <DollarSign className="w-5 h-5 text-primary" />
                     D2C vs. Traditional Retail Margin Comparison
@@ -123,21 +123,21 @@ export default function EcommerceEconomics() {
                   <div className="space-y-4">
                     <div className="flex items-center gap-4">
                       <span className="w-32 text-sm text-charcoal/60">Traditional Retail</span>
-                      <div className="flex-1 bg-base/10 rounded-full h-6 overflow-hidden">
-                        <div className="bg-base/40 h-full rounded-full" style={{ width: '35%' }}></div>
+                      <div className="flex-1 bg-charcoal/10 rounded-full h-6 overflow-hidden">
+                        <div className="bg-charcoal/40 h-full rounded-full" style={{ width: '35%' }}></div>
                       </div>
                       <span className="w-16 text-sm font-semibold text-charcoal">35%</span>
                     </div>
                     <div className="flex items-center gap-4">
                       <span className="w-32 text-sm text-charcoal/60">Marketplace</span>
-                      <div className="flex-1 bg-base/10 rounded-full h-6 overflow-hidden">
+                      <div className="flex-1 bg-charcoal/10 rounded-full h-6 overflow-hidden">
                         <div className="bg-primary/60 h-full rounded-full" style={{ width: '50%' }}></div>
                       </div>
                       <span className="w-16 text-sm font-semibold text-charcoal">50%</span>
                     </div>
                     <div className="flex items-center gap-4">
                       <span className="w-32 text-sm text-charcoal/60">D2C E-commerce</span>
-                      <div className="flex-1 bg-base/10 rounded-full h-6 overflow-hidden">
+                      <div className="flex-1 bg-charcoal/10 rounded-full h-6 overflow-hidden">
                         <div className="bg-primary h-full rounded-full" style={{ width: '70%' }}></div>
                       </div>
                       <span className="w-16 text-sm font-semibold text-primary">70%</span>
@@ -182,30 +182,30 @@ export default function EcommerceEconomics() {
                   ))}
                 </div>
 
-                <div className="bg-base p-8 rounded-xl my-10 text-white">
+                <div className="bg-background p-8 rounded-xl my-10 text-charcoal">
                   <h4 className="font-bold mb-4 flex items-center gap-2">
                     <BarChart3 className="w-5 h-5 text-primary" />
                     Sample Unit Economics Model
                   </h4>
                   <div className="space-y-3 text-sm">
-                    <div className="flex justify-between py-2 border-b border-white/10">
-                      <span className="text-white/70">Average Order Value</span>
+                    <div className="flex justify-between py-2 border-b border-border">
+                      <span className="text-muted-foreground">Average Order Value</span>
                       <span className="font-semibold">$85.00</span>
                     </div>
-                    <div className="flex justify-between py-2 border-b border-white/10">
-                      <span className="text-white/70">Cost of Goods Sold (35%)</span>
+                    <div className="flex justify-between py-2 border-b border-border">
+                      <span className="text-muted-foreground">Cost of Goods Sold (35%)</span>
                       <span className="font-semibold">-$29.75</span>
                     </div>
-                    <div className="flex justify-between py-2 border-b border-white/10">
-                      <span className="text-white/70">Shipping & Fulfillment</span>
+                    <div className="flex justify-between py-2 border-b border-border">
+                      <span className="text-muted-foreground">Shipping & Fulfillment</span>
                       <span className="font-semibold">-$8.50</span>
                     </div>
-                    <div className="flex justify-between py-2 border-b border-white/10">
-                      <span className="text-white/70">Payment Processing (3%)</span>
+                    <div className="flex justify-between py-2 border-b border-border">
+                      <span className="text-muted-foreground">Payment Processing (3%)</span>
                       <span className="font-semibold">-$2.55</span>
                     </div>
-                    <div className="flex justify-between py-2 border-b border-white/10">
-                      <span className="text-white/70">Returns & Refunds (8%)</span>
+                    <div className="flex justify-between py-2 border-b border-border">
+                      <span className="text-muted-foreground">Returns & Refunds (8%)</span>
                       <span className="font-semibold">-$6.80</span>
                     </div>
                     <div className="flex justify-between py-2 text-primary">
@@ -253,7 +253,7 @@ export default function EcommerceEconomics() {
                       cac: "$15-25"
                     }
                   ].map((channel, index) => (
-                    <div key={index} className="p-4 border border-base/10 rounded-lg">
+                    <div key={index} className="p-4 border border-border rounded-lg">
                       <div className="flex justify-between items-start mb-2">
                         <h4 className="font-bold text-charcoal">{channel.title}</h4>
                         <span className="text-sm font-semibold text-primary">CAC: {channel.cac}</span>
@@ -264,7 +264,7 @@ export default function EcommerceEconomics() {
                           <span className="text-charcoal/60 ml-2">{channel.pros}</span>
                         </div>
                         <div>
-                          <span className="text-destructive font-semibold">-</span>
+                          <span className="text-primary font-semibold">-</span>
                           <span className="text-charcoal/60 ml-2">{channel.cons}</span>
                         </div>
                       </div>
@@ -280,7 +280,7 @@ export default function EcommerceEconomics() {
                 <div className="overflow-x-auto my-8">
                   <table className="w-full text-sm">
                     <thead>
-                      <tr className="border-b border-base/10">
+                      <tr className="border-b border-border">
                         <th className="text-left py-3 font-bold text-charcoal">Model</th>
                         <th className="text-left py-3 font-bold text-charcoal">Best For</th>
                         <th className="text-left py-3 font-bold text-charcoal">Cost/Order</th>
@@ -288,19 +288,19 @@ export default function EcommerceEconomics() {
                       </tr>
                     </thead>
                     <tbody className="text-charcoal/70">
-                      <tr className="border-b border-base/10">
+                      <tr className="border-b border-border">
                         <td className="py-3 font-semibold">In-house</td>
                         <td className="py-3">High volume, custom packaging</td>
                         <td className="py-3">$3-6</td>
                         <td className="py-3">High</td>
                       </tr>
-                      <tr className="border-b border-base/10">
+                      <tr className="border-b border-border">
                         <td className="py-3 font-semibold">3PL</td>
                         <td className="py-3">Scaling businesses, variable demand</td>
                         <td className="py-3">$5-10</td>
                         <td className="py-3">Medium</td>
                       </tr>
-                      <tr className="border-b border-base/10">
+                      <tr className="border-b border-border">
                         <td className="py-3 font-semibold">FBA</td>
                         <td className="py-3">Amazon-centric, Prime eligibility</td>
                         <td className="py-3">$8-15</td>
@@ -322,26 +322,26 @@ export default function EcommerceEconomics() {
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6 my-8">
-                  <div className="p-6 border border-base/10 rounded-xl">
+                  <div className="p-6 border border-border rounded-xl">
                     <h4 className="font-bold text-charcoal mb-4">All-in-One Platforms</h4>
                     <p className="text-sm text-charcoal/60 mb-4">Shopify, BigCommerce, Squarespace</p>
                     <ul className="space-y-2 text-sm text-charcoal/70">
                       <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-secondary flex-shrink-0" /> Fast time to market</li>
                       <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-secondary flex-shrink-0" /> Lower upfront cost</li>
                       <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-secondary flex-shrink-0" /> Built-in best practices</li>
-                      <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-destructive flex-shrink-0" /> Limited customization</li>
-                      <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-destructive flex-shrink-0" /> Transaction fees add up</li>
+                      <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" /> Limited customization</li>
+                      <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" /> Transaction fees add up</li>
                     </ul>
                   </div>
-                  <div className="p-6 border border-base/10 rounded-xl">
+                  <div className="p-6 border border-border rounded-xl">
                     <h4 className="font-bold text-charcoal mb-4">Composable Commerce</h4>
                     <p className="text-sm text-charcoal/60 mb-4">Headless + best-of-breed components</p>
                     <ul className="space-y-2 text-sm text-charcoal/70">
                       <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-secondary flex-shrink-0" /> Maximum flexibility</li>
                       <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-secondary flex-shrink-0" /> Better performance</li>
                       <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-secondary flex-shrink-0" /> No vendor lock-in</li>
-                      <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-destructive flex-shrink-0" /> Higher complexity</li>
-                      <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-destructive flex-shrink-0" /> Requires technical team</li>
+                      <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" /> Higher complexity</li>
+                      <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" /> Requires technical team</li>
                     </ul>
                   </div>
                 </div>
@@ -375,7 +375,7 @@ export default function EcommerceEconomics() {
                     }
                   ].map((lever, index) => (
                     <div key={index} className="flex gap-4 p-4 bg-subtle rounded-lg">
-                      <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+                      <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-charcoal font-bold text-sm flex-shrink-0">
                         {index + 1}
                       </div>
                       <div>
@@ -392,7 +392,7 @@ export default function EcommerceEconomics() {
                     NEXDYNE helps companies launch and scale e-commerce operations with sustainable unit economics. Let's model your opportunity.
                   </p>
                   <Link href="/contact">
-                    <Button className="bg-primary hover:bg-primary/90 text-white">
+                    <Button className="bg-primary hover:bg-primary/90 text-charcoal">
                       Schedule a Consultation
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
@@ -462,7 +462,7 @@ export default function EcommerceEconomics() {
       />
 
       {/* CTA Section */}
-      <section className="py-24 md:py-32 bg-base">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container px-4 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -471,14 +471,14 @@ export default function EcommerceEconomics() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-6">
               Ready to launch your D2C channel?
             </h2>
-            <p className="text-xl text-white/70 leading-relaxed mb-10">
+            <p className="text-xl text-muted-foreground leading-relaxed mb-10">
               Let's build an e-commerce operation with sustainable unit economics and a clear path to profitability.
             </p>
             <Link href="/contact">
-              <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-lg font-semibold transition-all">
+              <Button className="bg-primary hover:bg-primary/90 text-charcoal px-10 py-6 text-lg font-semibold transition">
                 Schedule a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>

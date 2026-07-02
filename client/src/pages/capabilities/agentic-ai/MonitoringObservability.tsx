@@ -68,14 +68,14 @@ export default function MonitoringObservability() {
           title: "Scaling a fintech payment platform with AI-driven automation",
           industry: "Financial Services",
           metric: "5x",
-          image: "/case-fintech-payments.7ab8e23c.jpg",
+          image: "/case-fintech-app.5835303a.png",
         },
         {
           slug: "accounting-audit-automation",
           title: "AI-powered audit automation at a Big Four accounting firm",
           industry: "Professional Services",
           metric: "45%",
-          image: "/case-accounting-audit.5d8e23c1.jpg",
+          image: "/case-accountants-audit.1c87a151.jpg",
         },
       ]}
       relatedServices={[
