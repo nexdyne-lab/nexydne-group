@@ -44,7 +44,7 @@ export function ProprietaryFramework({
         {/* Framework Phases */}
         <div className="relative">
           {/* Connection Line */}
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-primary via-primary to-purple-500 transform -translate-y-1/2 z-0" />
+          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-primary via-primary to-purple transform -translate-y-1/2 z-0" />
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 sm:p-6 md:p-4 sm:p-6 md:p-8 relative z-10">
             {phases.map((phase, index) => (

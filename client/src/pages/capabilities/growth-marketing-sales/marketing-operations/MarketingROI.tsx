@@ -15,7 +15,7 @@ export default function MarketingROI() {
       <section className="bg-background text-charcoal pt-32 pb-20 px-4 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-20">
           <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-purple-900 to-transparent"></div>
-          <div className="absolute top-20 left-1/4 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+          <div className="absolute top-20 left-1/4 w-64 h-64 bg-purple rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
         </div>
         
         <div className="container mx-auto max-w-6xl relative z-10">
@@ -82,7 +82,7 @@ export default function MarketingROI() {
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             <div className="order-2 md:order-1">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-primary rounded-xl sm:rounded-2xl transform -rotate-3 opacity-20"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-purple to-primary rounded-xl sm:rounded-2xl transform -rotate-3 opacity-20"></div>
                 <div className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-xl relative z-10 border border-border">
                   <div className="space-y-6">
                     <div className="flex items-center gap-4 p-4 bg-off-white rounded-lg border border-border">

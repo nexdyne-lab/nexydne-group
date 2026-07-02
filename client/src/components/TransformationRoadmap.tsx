@@ -45,7 +45,7 @@ export function TransformationRoadmap({
         {/* Roadmap Phases */}
         <div className="relative">
           {/* Timeline Line */}
-          <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-primary to-purple-500 transform -translate-x-1/2" />
+          <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-primary to-purple transform -translate-x-1/2" />
 
           <div className="space-y-12">
             {phases.map((phase, index) => {
