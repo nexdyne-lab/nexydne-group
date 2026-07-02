@@ -104,7 +104,7 @@ export default function DataMaturityQuiz() {
     const margin = 20;
 
     // --- Header Background ---
-    doc.setFillColor(10, 14, 61); // #0a0e3d (Dark Blue)
+    doc.setFillColor(36, 36, 36); // charcoal
     doc.rect(0, 0, pageWidth, 40, "F");
 
     // --- Logo / Brand Name ---
@@ -114,7 +114,7 @@ export default function DataMaturityQuiz() {
     doc.text("NexDyne Consulting Group", margin, 25);
 
     // --- Report Title ---
-    doc.setTextColor(0, 212, 255); // #00d4ff (Cyan)
+    doc.setTextColor(224, 76, 44); // signal orange
     doc.setFontSize(14);
     doc.setFont("helvetica", "normal");
     doc.text("Data Maturity Assessment Report", pageWidth - margin, 25, { align: "right" });
@@ -123,7 +123,7 @@ export default function DataMaturityQuiz() {
     let yPos = 60;
 
     // Assessment Result Title
-    doc.setTextColor(10, 14, 61); // Dark Blue
+    doc.setTextColor(36, 36, 36); // charcoal
     doc.setFontSize(18);
     doc.setFont("helvetica", "bold");
     doc.text("Assessment Result", margin, yPos);
@@ -131,12 +131,12 @@ export default function DataMaturityQuiz() {
     yPos += 15;
 
     // Result Level Box
-    doc.setFillColor(240, 248, 255); // Light Blue Background
-    doc.setDrawColor(0, 212, 255); // Cyan Border
+    doc.setFillColor(247, 249, 252); // off-white background
+    doc.setDrawColor(224, 76, 44); // signal border
     doc.roundedRect(margin, yPos, pageWidth - (margin * 2), 40, 3, 3, "FD");
 
     // Result Level Text
-    doc.setTextColor(0, 86, 179); // Darker Blue
+    doc.setTextColor(224, 76, 44); // signal orange
     doc.setFontSize(24);
     doc.setFont("helvetica", "bold");
     doc.text(result.level, pageWidth / 2, yPos + 18, { align: "center" });
@@ -151,7 +151,7 @@ export default function DataMaturityQuiz() {
     yPos += 60;
 
     // --- Recommendations Section ---
-    doc.setTextColor(10, 14, 61);
+    doc.setTextColor(36, 36, 36);
     doc.setFontSize(16);
     doc.setFont("helvetica", "bold");
     doc.text("Strategic Recommendations", margin, yPos);

@@ -13,7 +13,7 @@ const INDUSTRIES = [
   { id: "retail", name: "Retail & E-commerce", multiplier: 0.18, color: 'var(--color-primary)' },
   { id: "logistics", name: "Logistics & Supply Chain", multiplier: 0.15, color: 'var(--color-primary)' },
   { id: "healthcare", name: "Healthcare & Life Sciences", multiplier: 0.22, color: 'var(--color-primary)' },
-  { id: "energy", name: "Energy & Sustainability", multiplier: 0.20, color: "#eab308" },
+  { id: "energy", name: "Energy & Sustainability", multiplier: 0.20, color: 'var(--color-amber)' },
   { id: "manufacturing", name: "Manufacturing & IoT", multiplier: 0.16, color: 'var(--color-secondary)' },
 ];
 
