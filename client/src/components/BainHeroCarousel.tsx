@@ -4,192 +4,77 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
 /**
- * NexDyne homepage hero — BOLD variant (Site B).
+ * NexDyne homepage hero — CHARCOAL "Dark Authority" (Brand v2, Site A).
  *
- * A full-bleed rotating slide hero modelled on the Bain & Company homepage:
- * giant statement headline + eyebrow + READ MORE over full-screen flowing colour,
- * a slide-label row with a filling progress bar along the bottom, and a Scroll cue.
+ * Adopted hero for the neutral site. Neutrals build the system; colour
+ * communicates meaning. The canvas is charcoal
+ * (#242424) — a controlled, institutional dark surface (the "governance mode").
+ * Colour appears only as a signal: Orange-Red on the eyebrow tick, one accented
+ * payoff phrase per slide, and the CTA arrow. Amber is reserved for the progress
+ * bar (a progress indicator — its defined role). No full-bleed colour fills.
  *
- * Full-bleed colour is intentional here — Site B is the colour-forward variant.
- * (Site A keeps the neutral, Brand v2 statement hero.)
+ * Each slide carries a single low-opacity accent glow so the carousel keeps
+ * identity while the charcoal foundation stays dominant (70–80% neutral).
  */
 
 const SLIDE_MS = 6500;
 const ease = [0.22, 1, 0.36, 1] as const;
+
+const CHARCOAL = "#242424";
+const SIGNAL = "#E04C2C"; // Orange-Red — the signal colour
+const AMBER = "#FFB41D";
+const PURPLE = "#6F44A3";
 
 interface Slide {
   /** short label shown in the bottom navigator row */
   label: string;
   /** small bold line above the headline */
   eyebrow: string;
-  /** headline, with manual line breaks via \n */
+  /** headline lines rendered in white (manual breaks via \n) */
   headline: string;
+  /** payoff phrase rendered in the signal colour beneath the headline */
+  accent?: string;
   cta: { text: string; href: string };
-  /** full-bleed background layers */
-  background: React.ReactNode;
+  /** rgba glow colour + focal position for this slide's controlled accent */
+  glow: { color: string; at: string };
 }
 
 /* ------------------------------------------------------------------ */
-/*  Flowing full-bleed background fields (layered gradients + SVG)      */
+/*  Charcoal Dark-Authority canvas — one controlled accent glow.        */
 /* ------------------------------------------------------------------ */
 
-/** Warm silk field — orange-red flowing into light on the right. */
-function WarmFlow() {
+function CharcoalCanvas({ color, at }: { color: string; at: string }) {
   return (
-    <div className="absolute inset-0">
+    <div className="absolute inset-0" style={{ backgroundColor: CHARCOAL }}>
+      {/* subtle vertical depth so the flat charcoal isn't dead-flat */}
       <div
         className="absolute inset-0"
         style={{
           backgroundImage:
-            "radial-gradient(140% 130% at 8% 20%, #E04C2C 0%, #cf3f22 38%, #b8351b 62%, #f0eef0 100%)",
+            "linear-gradient(180deg, #2a2a2a 0%, #242424 46%, #1d1d1d 100%)",
         }}
       />
-      {/* silk sweep */}
-      <svg
-        className="absolute inset-0 h-full w-full"
-        viewBox="0 0 1440 900"
-        preserveAspectRatio="xMidYMid slice"
-        aria-hidden
-      >
-        <defs>
-          <filter id="warmBlur" x="-20%" y="-20%" width="140%" height="140%">
-            <feGaussianBlur stdDeviation="42" />
-          </filter>
-          <linearGradient id="warmSweep" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#ffb094" stopOpacity="0.85" />
-            <stop offset="55%" stopColor="#7a2412" stopOpacity="0.9" />
-            <stop offset="100%" stopColor="#3a0f07" stopOpacity="0.95" />
-          </linearGradient>
-        </defs>
-        <path
-          d="M-100,760 C420,600 760,540 1040,300 C1240,130 1360,60 1560,-40 L1600,340 C1360,470 1180,520 980,660 C740,830 520,900 -100,980 Z"
-          fill="url(#warmSweep)"
-          filter="url(#warmBlur)"
-          opacity="0.9"
-        />
-        <path
-          d="M760,900 C980,760 1120,700 1440,560 L1560,900 Z"
-          fill="#ffd9c7"
-          filter="url(#warmBlur)"
-          opacity="0.5"
-        />
-      </svg>
+      {/* single low-opacity accent glow — controlled depth, not a colour fill */}
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `radial-gradient(48% 62% at ${at}, ${color} 0%, transparent 60%)`,
+        }}
+      />
+      {/* keep the left column clean for headline legibility */}
       <div
         className="absolute inset-0"
         style={{
           backgroundImage:
-            "radial-gradient(50% 60% at 80% 78%, rgba(255,180,29,0.28) 0%, transparent 60%)",
+            "linear-gradient(96deg, #202020 0%, rgba(32,32,32,0.85) 22%, rgba(32,32,32,0.35) 46%, transparent 66%)",
         }}
       />
-    </div>
-  );
-}
-
-/** Amber/ember aurora on near-black — colour fills the right two-thirds. */
-function AmberFlow() {
-  return (
-    <div className="absolute inset-0 bg-[#140f0d]">
-      {/* stacked soft glows build a flowing aurora */}
+      {/* faint structural striations for texture */}
       <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage: [
-            "radial-gradient(46% 64% at 90% 28%, rgba(255,150,46,0.75) 0%, transparent 62%)",
-            "radial-gradient(58% 78% at 74% 46%, rgba(255,180,29,0.9) 0%, transparent 60%)",
-            "radial-gradient(52% 72% at 58% 66%, rgba(224,76,44,0.92) 0%, transparent 60%)",
-            "radial-gradient(40% 58% at 88% 74%, rgba(176,58,143,0.55) 0%, transparent 60%)",
-          ].join(","),
-        }}
-      />
-      {/* silk striations for depth */}
-      <div
-        className="absolute inset-0 opacity-[0.10] mix-blend-soft-light"
+        className="absolute inset-0 opacity-[0.05] mix-blend-soft-light"
         style={{
           backgroundImage:
-            "repeating-linear-gradient(118deg, rgba(255,255,255,0.9) 0px, rgba(255,255,255,0) 3px 22px)",
-        }}
-      />
-      {/* keep the left column dark for headline legibility */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage:
-            "linear-gradient(96deg, #140f0d 0%, rgba(20,15,13,0.85) 20%, rgba(20,15,13,0.35) 42%, transparent 60%)",
-        }}
-      />
-    </div>
-  );
-}
-
-/** Bright amber-red gradient field for the operations slide. */
-function EmberFlow() {
-  return (
-    <div className="absolute inset-0">
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage:
-            "linear-gradient(115deg, #b8351b 0%, #E04C2C 34%, #f0813c 70%, #FFB41D 100%)",
-        }}
-      />
-      <svg
-        className="absolute inset-0 h-full w-full"
-        viewBox="0 0 1440 900"
-        preserveAspectRatio="xMidYMid slice"
-        aria-hidden
-      >
-        <defs>
-          <filter id="emberBlur" x="-20%" y="-20%" width="140%" height="140%">
-            <feGaussianBlur stdDeviation="48" />
-          </filter>
-        </defs>
-        <path
-          d="M-100,300 C360,420 620,180 980,300 C1220,380 1360,300 1620,360 L1620,-80 L-100,-80 Z"
-          fill="#7a2412"
-          filter="url(#emberBlur)"
-          opacity="0.55"
-        />
-        <path
-          d="M-100,980 C420,840 700,900 1040,760 C1300,650 1420,720 1620,660"
-          fill="none"
-          stroke="#5a1a0c"
-          strokeWidth="180"
-          filter="url(#emberBlur)"
-          opacity="0.4"
-        />
-      </svg>
-    </div>
-  );
-}
-
-/** Purple/magenta/orange aurora on near-black — partnership slide (Bain x Cloud vibe). */
-function AuroraFlow() {
-  return (
-    <div className="absolute inset-0 bg-[#100b17]">
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage: [
-            "radial-gradient(50% 66% at 86% 24%, rgba(255,138,61,0.66) 0%, transparent 62%)",
-            "radial-gradient(56% 74% at 72% 44%, rgba(199,58,140,0.9) 0%, transparent 60%)",
-            "radial-gradient(60% 80% at 54% 60%, rgba(111,68,163,0.92) 0%, transparent 62%)",
-            "radial-gradient(44% 60% at 90% 72%, rgba(224,76,44,0.6) 0%, transparent 60%)",
-            "radial-gradient(40% 56% at 40% 88%, rgba(138,91,208,0.5) 0%, transparent 60%)",
-          ].join(","),
-        }}
-      />
-      <div
-        className="absolute inset-0 opacity-[0.10] mix-blend-soft-light"
-        style={{
-          backgroundImage:
-            "repeating-linear-gradient(122deg, rgba(255,255,255,0.9) 0px, rgba(255,255,255,0) 3px 24px)",
-        }}
-      />
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage:
-            "linear-gradient(96deg, #100b17 0%, rgba(16,11,23,0.85) 20%, rgba(16,11,23,0.32) 44%, transparent 62%)",
+            "repeating-linear-gradient(118deg, rgba(255,255,255,0.8) 0px, rgba(255,255,255,0) 3px 26px)",
         }}
       />
     </div>
@@ -200,30 +85,34 @@ const slides: Slide[] = [
   {
     label: "Win with HIG™",
     eyebrow: "Human Intelligence Governance",
-    headline: "Human intelligence.\nGoverned. Scaled.",
+    headline: "Human intelligence.",
+    accent: "Governed. Scaled.",
     cta: { text: "Read More", href: "/about" },
-    background: <WarmFlow />,
+    glow: { color: "rgba(224,76,44,0.18)", at: "82% 72%" },
   },
   {
     label: "AI Adoption 2026",
     eyebrow: "AI Adoption Outlook",
-    headline: "AI Adoption Outlook\n2026: A Winner's\nParadox",
+    headline: "AI Adoption Outlook\n2026:",
+    accent: "A Winner's Paradox",
     cta: { text: "Read More", href: "/capabilities/artificial-intelligence" },
-    background: <AmberFlow />,
+    glow: { color: "rgba(255,180,29,0.16)", at: "86% 30%" },
   },
   {
     label: "Operational Excellence",
     eyebrow: "Operations",
-    headline: "Turn operational chaos\ninto governed, scalable\nexecution",
+    headline: "Turn operational chaos into",
+    accent: "governed, scalable execution",
     cta: { text: "Read More", href: "/solutions/intelligent-process-optimization" },
-    background: <EmberFlow />,
+    glow: { color: "rgba(224,76,44,0.16)", at: "80% 78%" },
   },
   {
     label: "NexDyne x Cloud",
     eyebrow: "NexDyne x Cloud",
-    headline: "Helping clients\naccelerate the\nadoption of AI solutions",
+    headline: "Helping clients accelerate\nthe adoption of",
+    accent: "AI solutions",
     cta: { text: "Learn about our partnerships", href: "/capabilities/technology" },
-    background: <AuroraFlow />,
+    glow: { color: "rgba(111,68,163,0.20)", at: "84% 40%" },
   },
 ];
 
@@ -254,7 +143,7 @@ export function BainHeroCarousel() {
   return (
     <section
       className="relative w-full overflow-hidden text-white"
-      style={{ height: "100vh", minHeight: 640 }}
+      style={{ height: "100vh", minHeight: 640, backgroundColor: CHARCOAL }}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
@@ -266,21 +155,21 @@ export function BainHeroCarousel() {
           style={{ opacity: i === active ? 1 : 0 }}
           aria-hidden={i !== active}
         >
-          {s.background}
+          <CharcoalCanvas color={s.glow.color} at={s.glow.at} />
         </div>
       ))}
 
-      {/* readability scrims: darken top-left (nav + headline) and bottom (navigator) */}
+      {/* subtle top/bottom vignette for nav + navigator legibility */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg, rgba(0,0,0,0.34) 0%, rgba(0,0,0,0.06) 26%, transparent 48%, rgba(0,0,0,0.08) 78%, rgba(0,0,0,0.42) 100%)",
+            "linear-gradient(180deg, rgba(0,0,0,0.32) 0%, transparent 30%, transparent 74%, rgba(0,0,0,0.30) 100%)",
         }}
       />
       {/* grain */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.06] mix-blend-overlay"
+        className="pointer-events-none absolute inset-0 opacity-[0.05] mix-blend-overlay"
         style={{
           backgroundImage:
             "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
@@ -299,17 +188,35 @@ export function BainHeroCarousel() {
               transition={{ duration: 0.65, ease }}
               className="max-w-[1040px]"
             >
-              <p className="mb-6 text-[1rem] md:text-[1.15rem] font-semibold tracking-[-0.01em] text-white/90 drop-shadow-sm">
+              {/* eyebrow with signal tick */}
+              <p className="mb-6 flex items-center gap-3 text-[1rem] md:text-[1.15rem] font-semibold tracking-[-0.01em] text-white/85">
+                <span
+                  className="inline-block h-[10px] w-[10px] shrink-0"
+                  style={{ backgroundColor: SIGNAL }}
+                  aria-hidden
+                />
                 {slide.eyebrow}
               </p>
-              <h1 className="whitespace-pre-line font-bold tracking-[-0.035em] leading-[0.99] text-[clamp(2.4rem,5.4vw,5rem)] drop-shadow-[0_2px_20px_rgba(0,0,0,0.25)]">
+              <h1 className="whitespace-pre-line font-bold tracking-[-0.035em] leading-[0.99] text-[clamp(2.4rem,5.4vw,5rem)] text-white drop-shadow-[0_2px_20px_rgba(0,0,0,0.35)]">
                 {slide.headline}
+                {slide.accent && (
+                  <>
+                    {"\n"}
+                    <span style={{ color: SIGNAL }}>{slide.accent}</span>
+                  </>
+                )}
               </h1>
               <Link href={slide.cta.href}>
                 <span className="group mt-11 inline-flex items-center gap-4 text-[13px] font-bold uppercase tracking-[0.16em] text-white cursor-pointer">
                   {slide.cta.text}
-                  <span className="relative block h-[2px] w-14 bg-white transition-all duration-300 group-hover:w-20">
-                    <span className="absolute -right-[1px] -top-[4px] h-[10px] w-[10px] rotate-45 border-r-2 border-t-2 border-white" />
+                  <span
+                    className="relative block h-[2px] w-14 transition-all duration-300 group-hover:w-20"
+                    style={{ backgroundColor: SIGNAL }}
+                  >
+                    <span
+                      className="absolute -right-[1px] -top-[4px] h-[10px] w-[10px] rotate-45 border-r-2 border-t-2"
+                      style={{ borderColor: SIGNAL }}
+                    />
                   </span>
                 </span>
               </Link>
@@ -333,8 +240,9 @@ export function BainHeroCarousel() {
                     {i === active && (
                       <span
                         key={active}
-                        className="block h-full bg-[#FFB41D]"
+                        className="block h-full"
                         style={{
+                          backgroundColor: AMBER,
                           animation: paused
                             ? "none"
                             : `heroFill ${SLIDE_MS}ms linear forwards`,
@@ -342,7 +250,7 @@ export function BainHeroCarousel() {
                         }}
                       />
                     )}
-                    {i < active && <span className="block h-full w-full bg-white/50" />}
+                    {i < active && <span className="block h-full w-full bg-white/45" />}
                   </span>
                   <span
                     className={`block text-[13px] md:text-[15px] font-semibold tracking-[-0.01em] transition-colors ${
@@ -365,7 +273,7 @@ export function BainHeroCarousel() {
               <span className="text-[12px] font-semibold uppercase tracking-[0.16em]">
                 Scroll
               </span>
-              <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/45">
+              <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/40">
                 <motion.span
                   animate={{ y: [0, 4, 0] }}
                   transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}

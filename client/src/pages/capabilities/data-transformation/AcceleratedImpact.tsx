@@ -25,7 +25,7 @@ export default function AcceleratedImpact() {
             
             <h1 className="nx-h1 mb-4">
               Rapid Delivery <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber">
+              <span className="text-charcoal">
                 Engine.
               </span>
             </h1>

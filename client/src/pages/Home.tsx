@@ -129,8 +129,8 @@ export default function Home() {
               <h2 className="nx-h2 text-charcoal">
                 Governing intelligence. Scaling judgment. Leading in the age of{" "}
                 <span
-                  className="bg-clip-text text-transparent"
-                  style={{ backgroundImage: "linear-gradient(100deg, #E04C2C 0%, #FF7A2F 50%, #FFB41D 100%)" }}
+                  className="text-charcoal"
+                  
                 >
                   intelligent machines.
                 </span>

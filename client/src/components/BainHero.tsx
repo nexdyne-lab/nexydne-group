@@ -84,8 +84,8 @@ export function BainHero() {
               <br />
               Governed.{" "}
               <span
-                className="bg-clip-text text-transparent"
-                style={{ backgroundImage: "linear-gradient(100deg, #E04C2C 0%, #FF7A2F 45%, #FFB41D 100%)" }}
+                className="text-charcoal"
+                
               >
                 Scaled.
               </span>

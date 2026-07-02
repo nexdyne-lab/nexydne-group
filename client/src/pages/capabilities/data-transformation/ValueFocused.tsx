@@ -25,7 +25,7 @@ export default function ValueFocused() {
             
             <h1 className="nx-h1 mb-4">
               Strategic Value <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber">
+              <span className="text-charcoal">
                 Creation.
               </span>
             </h1>

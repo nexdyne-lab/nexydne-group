@@ -47,27 +47,20 @@ export default function Footer() {
 
   return (
     <footer className="bg-base text-text-light">
-      {/* Newsletter Subscription Section — orange-red signal band (Brand v2 accent) */}
-      <div className="relative overflow-hidden">
-        <div
-          aria-hidden
-          className="absolute inset-0"
-          style={{ backgroundImage: "linear-gradient(118deg, #E04C2C 0%, #d5431f 55%, #c33d1f 100%)" }}
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 opacity-[0.06]"
-          style={{ backgroundImage: "url('/brand/pattern-orange.svg')", backgroundSize: "260px", backgroundRepeat: "repeat" }}
-        />
+      {/* Newsletter Subscription — charcoal authority band (Brand v2: neutral canvas, Orange-Red signal on the button only) */}
+      <div className="relative overflow-hidden border-b border-white/10">
+        {/* controlled depth: a single low-opacity signal glow, not a colour fill */}
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0"
-          style={{ backgroundImage: "radial-gradient(60% 130% at 100% 0%, rgba(255,180,29,0.16) 0%, transparent 55%)" }}
+          style={{ backgroundImage: "radial-gradient(55% 120% at 100% 0%, rgba(224,76,44,0.10) 0%, transparent 55%)" }}
         />
         <div className="relative container px-4 sm:px-6 py-8 sm:py-10 md:py-12 lg:py-16">
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
             {/* Left: Subscription Text */}
             <div>
+              {/* signal accent marker (emphasis border — approved Orange-Red use) */}
+              <span aria-hidden className="mb-5 block h-[3px] w-12 bg-primary" />
               <p className="text-xl sm:text-2xl md:text-3xl text-text-light leading-[1.4]">
               The next era belongs to leaders who prepare for it. Subscribe to NexDyne Consulting Group Insights — principled perspectives on governance, strategy, and the future of human intelligence.
               </p>
@@ -86,7 +79,7 @@ export default function Footer() {
                 />
                 <button
                   type="submit"
-                  className="px-6 sm:px-8 py-3 sm:py-4 bg-charcoal text-white font-bold uppercase tracking-wider hover:bg-[#1a1a1a] transition-all duration-200 ease-in-out text-sm "
+                  className="px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white font-bold uppercase tracking-wider hover:bg-[#c33d1f] transition-colors duration-200 ease-in-out text-sm "
                 >
                   Subscribe
                 </button>

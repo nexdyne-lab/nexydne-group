@@ -166,8 +166,8 @@ export default function IndustryCaseStudyTemplate({
         </div>
       </section>
 
-      {/* Key Metrics Bar */}
-      <section className="bg-primary py-8">
+      {/* Key Metrics Bar — charcoal band, amber metric values (data-highlight role) */}
+      <section className="bg-charcoal py-8">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:p-6 md:p-4 sm:p-6 md:p-8">
             {metrics.map((metric, index) => (
@@ -178,7 +178,7 @@ export default function IndustryCaseStudyTemplate({
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="nx-h2 text-white mb-1">{metric.value}</div>
+                <div className="nx-h2 text-amber mb-1">{metric.value}</div>
                 <div className="text-sm text-white/80">{metric.label}</div>
               </motion.div>
             ))}

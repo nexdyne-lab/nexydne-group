@@ -24,7 +24,7 @@ const StackOrchestration = () => {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-charcoal mb-3 leading-tight eb-garamond">
               Stack Orchestration & <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">
+              <span className="text-charcoal">
                 Ecosystem Design
               </span>
             </h1>

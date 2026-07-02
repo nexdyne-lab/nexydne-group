@@ -68,8 +68,8 @@ export function OperationalExcellence() {
             <h2 className="nx-h2 text-charcoal">
               Operational excellence,{" "}
               <span
-                className="bg-clip-text text-transparent"
-                style={{ backgroundImage: "linear-gradient(100deg, #E04C2C 0%, #FF7A2F 50%, #FFB41D 100%)" }}
+                className="text-charcoal"
+                
               >
                 engineered for scale.
               </span>

@@ -24,7 +24,7 @@ export default function LastingCapabilities() {
             
             <h1 className="nx-h1 mb-4">
               Sustainable <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber">
+              <span className="text-charcoal">
                 Enablement.
               </span>
             </h1>

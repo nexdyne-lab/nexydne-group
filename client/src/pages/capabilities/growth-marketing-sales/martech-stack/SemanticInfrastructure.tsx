@@ -24,7 +24,7 @@ const SemanticInfrastructure = () => {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-charcoal mb-3 leading-tight eb-garamond">
               Semantic Infrastructure & <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">
+              <span className="text-charcoal">
                 Data Governance
               </span>
             </h1>
