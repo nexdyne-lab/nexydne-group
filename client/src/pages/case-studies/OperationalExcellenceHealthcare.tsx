@@ -206,7 +206,7 @@ export default function OperationalExcellenceHealthcare() {
               </p>
             </div>
 
-            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 mt-8 rounded-r-xl">
+            <div className="bg-amber/5 border-l-4 border-amber p-6 mt-8 rounded-r-xl">
               <p className="text-charcoal font-semibold mb-2">Strategic Imperative</p>
               <p className="text-charcoal/70">
                 Without significant operational improvement, the organization faced difficult choices: reduce services, close underperforming facilities, or seek acquisition by a larger health system. Leadership was committed to maintaining independence but recognized that achieving this goal required transforming operations to deliver sustainable margins while maintaining quality of care.

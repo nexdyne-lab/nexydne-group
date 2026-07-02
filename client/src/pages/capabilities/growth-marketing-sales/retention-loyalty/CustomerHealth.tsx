@@ -105,7 +105,7 @@ export default function CustomerHealth() {
                 <div className="p-4 bg-white rounded-lg sm:rounded-xl border border-border shadow-sm border-l-4 border-l-yellow-500">
                   <div className="flex justify-between items-start mb-2">
                     <h4 className="font-bold text-charcoal">Score: 41-70 (Neutral)</h4>
-                    <span className="text-xs font-bold text-yellow-600 bg-yellow-50 px-2 py-1 rounded-full">STAGNANT</span>
+                    <span className="text-xs font-bold text-amber bg-amber/5 px-2 py-1 rounded-full">STAGNANT</span>
                   </div>
                   <p className="text-sm text-muted-foreground mb-2">
                     <strong>Signals:</strong> Steady but shallow usage, no new feature adoption.

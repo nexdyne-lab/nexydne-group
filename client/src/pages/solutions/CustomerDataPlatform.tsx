@@ -10,7 +10,7 @@ export default function CustomerDataPlatform() {
       <Navigation />
       
       {/* Hero Section - Maroon Background */}
-      <section className="relative bg-gradient-to-br from-red-900 via-primary to-primary text-white nx-section">
+      <section className="relative bg-gradient-to-br from-primary via-primary to-primary text-white nx-section">
         <div className="container">
           <div className="mb-8">
             <div className="flex items-center gap-2 text-sm opacity-90">
@@ -162,7 +162,7 @@ export default function CustomerDataPlatform() {
       </section>
 
       {/* CTA Section with Profile Photo */}
-      <section className="nx-section bg-gradient-to-br from-primary via-primary to-pink-50">
+      <section className="nx-section bg-gradient-to-br from-primary via-primary to-primary/5">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">

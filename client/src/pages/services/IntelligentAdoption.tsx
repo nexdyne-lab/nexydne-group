@@ -68,7 +68,7 @@ export default function IntelligentAdoption() {
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-violet-600 text-sm font-medium tracking-widest uppercase mb-4">
+            <p className="text-purple text-sm font-medium tracking-widest uppercase mb-4">
               The Challenge
             </p>
             <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-8">
@@ -101,7 +101,7 @@ export default function IntelligentAdoption() {
       <section className="py-20 bg-off-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-violet-600 text-sm font-medium tracking-widest uppercase mb-4">
+            <p className="text-purple text-sm font-medium tracking-widest uppercase mb-4">
               Our Approach
             </p>
             <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-12">
@@ -109,7 +109,7 @@ export default function IntelligentAdoption() {
             </h2>
             
             <div className="space-y-12">
-              <div className="border-l-4 border-violet-600 pl-8">
+              <div className="border-l-4 border-purple pl-8">
                 <h3 className="text-xl font-bold text-charcoal mb-4">Readiness Assessment</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Before any technology deployment, we assess your organization's readiness for change. 
@@ -119,7 +119,7 @@ export default function IntelligentAdoption() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-violet-600 pl-8">
+              <div className="border-l-4 border-purple pl-8">
                 <h3 className="text-xl font-bold text-charcoal mb-4">Leadership Alignment</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Successful change starts at the top. We work with your leadership team to build a 
@@ -129,7 +129,7 @@ export default function IntelligentAdoption() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-violet-600 pl-8">
+              <div className="border-l-4 border-purple pl-8">
                 <h3 className="text-xl font-bold text-charcoal mb-4">Workforce Enablement</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   We design and deliver training programs that go beyond button-clicking tutorials. 
@@ -139,7 +139,7 @@ export default function IntelligentAdoption() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-violet-600 pl-8">
+              <div className="border-l-4 border-purple pl-8">
                 <h3 className="text-xl font-bold text-charcoal mb-4">Adoption Monitoring</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Change doesn't end at go-live. We implement adoption analytics that track how 
@@ -157,7 +157,7 @@ export default function IntelligentAdoption() {
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-violet-600 text-sm font-medium tracking-widest uppercase mb-4">
+            <p className="text-purple text-sm font-medium tracking-widest uppercase mb-4">
               Capabilities
             </p>
             <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-12">
@@ -191,10 +191,10 @@ export default function IntelligentAdoption() {
       </section>
 
       {/* The Difference Section */}
-      <section className="py-20 bg-violet-900 text-white">
+      <section className="py-20 bg-purple text-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <p className="text-violet-300 text-sm font-medium tracking-widest uppercase mb-4">
+            <p className="text-white/80 text-sm font-medium tracking-widest uppercase mb-4">
               The Difference
             </p>
             <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold mb-12">
@@ -202,9 +202,9 @@ export default function IntelligentAdoption() {
             </h2>
             
             <div className="space-y-8">
-              <div className="border-l-4 border-violet-400 pl-8">
+              <div className="border-l-4 border-purple pl-8">
                 <h3 className="text-xl font-bold mb-4">AI creates unique adoption challenges</h3>
-                <p className="text-violet-100 leading-relaxed">
+                <p className="text-white/80 leading-relaxed">
                   Unlike traditional software implementations, AI systems often change how work is 
                   fundamentally done—not just the tools used to do it. Employees may fear job 
                   displacement, struggle to trust AI recommendations, or resist ceding decision-making 
@@ -212,9 +212,9 @@ export default function IntelligentAdoption() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-violet-400 pl-8">
+              <div className="border-l-4 border-purple pl-8">
                 <h3 className="text-xl font-bold mb-4">Adoption determines ROI</h3>
-                <p className="text-violet-100 leading-relaxed">
+                <p className="text-white/80 leading-relaxed">
                   An AI system used at 50% of its potential delivers 50% of its value. The difference 
                   between mediocre and exceptional transformation outcomes often comes down to adoption 
                   rates. Our clients consistently achieve adoption rates above 90%, ensuring they 
@@ -222,9 +222,9 @@ export default function IntelligentAdoption() {
                 </p>
               </div>
               
-              <div className="border-l-4 border-violet-400 pl-8">
+              <div className="border-l-4 border-purple pl-8">
                 <h3 className="text-xl font-bold mb-4">Change capability compounds</h3>
-                <p className="text-violet-100 leading-relaxed">
+                <p className="text-white/80 leading-relaxed">
                   Organizations that develop strong change management capabilities don't just succeed 
                   at one transformation—they become better at all future transformations. We help you 
                   build internal change leadership that will serve your organization for years to come.

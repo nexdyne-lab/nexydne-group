@@ -22,8 +22,8 @@ export function PartnerEcosystem({
 }: PartnerEcosystemProps) {
   const categoryColors = {
     cloud: "from-primary to-amber",
-    data: "from-purple-500 to-pink-500",
-    automation: "from-orange-500 to-red-500",
+    data: "from-purple to-primary",
+    automation: "from-primary to-primary",
     analytics: "from-green-500 to-emerald-500",
     integration: "from-primary to-primary",
   };

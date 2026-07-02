@@ -45,7 +45,7 @@ export default function MarketplacePlaybook() {
               </span>
             </Link>
             
-            <div className="flex items-center gap-4 text-sm text-violet-400 font-semibold mb-6">
+            <div className="flex items-center gap-4 text-sm text-purple font-semibold mb-6">
               <span className="uppercase tracking-wider">Whitepaper</span>
               <span className="w-1 h-1 rounded-full bg-white/40" />
               <span className="text-muted-foreground">15 min read</span>
@@ -119,20 +119,20 @@ export default function MarketplacePlaybook() {
 
                 <div className="bg-subtle p-8 rounded-xl border border-border my-10">
                   <h4 className="font-bold text-charcoal mb-4 flex items-center gap-2">
-                    <Network className="w-5 h-5 text-violet-500" />
+                    <Network className="w-5 h-5 text-purple" />
                     Marketplace Value Creation
                   </h4>
                   <div className="grid md:grid-cols-3 gap-6 text-center">
                     <div>
-                      <div className="text-3xl font-bold text-violet-500">$4.5T</div>
+                      <div className="text-3xl font-bold text-purple">$4.5T</div>
                       <div className="text-sm text-charcoal/60">Combined market cap of top 10 marketplaces</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-bold text-violet-500">70%</div>
+                      <div className="text-3xl font-bold text-purple">70%</div>
                       <div className="text-sm text-charcoal/60">of unicorns are platform businesses</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-bold text-violet-500">2.5x</div>
+                      <div className="text-3xl font-bold text-purple">2.5x</div>
                       <div className="text-sm text-charcoal/60">higher valuation multiples vs. linear businesses</div>
                     </div>
                   </div>
@@ -145,7 +145,7 @@ export default function MarketplacePlaybook() {
 
                 <div className="bg-background p-8 rounded-xl my-10 text-charcoal">
                   <h4 className="font-bold mb-6 flex items-center gap-2">
-                    <Layers className="w-5 h-5 text-violet-400" />
+                    <Layers className="w-5 h-5 text-purple" />
                     Cold Start Strategies
                   </h4>
                   <div className="space-y-6">
@@ -172,7 +172,7 @@ export default function MarketplacePlaybook() {
                       }
                     ].map((strategy, index) => (
                       <div key={index} className="flex gap-4 items-start">
-                        <div className="w-8 h-8 bg-violet-500 rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0">
+                        <div className="w-8 h-8 bg-purple rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0">
                           {index + 1}
                         </div>
                         <div>
@@ -192,22 +192,22 @@ export default function MarketplacePlaybook() {
                 <div className="grid md:grid-cols-2 gap-6 my-8">
                   {[
                     {
-                      icon: <Users className="w-6 h-6 text-violet-500" />,
+                      icon: <Users className="w-6 h-6 text-purple" />,
                       title: "Direct Network Effects",
                       description: "Value increases with users on the same side. Social networks, communication tools."
                     },
                     {
-                      icon: <Network className="w-6 h-6 text-violet-500" />,
+                      icon: <Network className="w-6 h-6 text-purple" />,
                       title: "Cross-Side Network Effects",
                       description: "Value increases with users on the opposite side. Marketplaces, platforms."
                     },
                     {
-                      icon: <TrendingUp className="w-6 h-6 text-violet-500" />,
+                      icon: <TrendingUp className="w-6 h-6 text-purple" />,
                       title: "Data Network Effects",
                       description: "More usage generates better data, improving the product. Search, recommendations."
                     },
                     {
-                      icon: <Layers className="w-6 h-6 text-violet-500" />,
+                      icon: <Layers className="w-6 h-6 text-purple" />,
                       title: "Platform Network Effects",
                       description: "Third-party developers create additional value. App stores, APIs."
                     }
@@ -277,7 +277,7 @@ export default function MarketplacePlaybook() {
 
                 <div className="space-y-6 my-8">
                   <div className="p-6 border border-border rounded-xl">
-                    <div className="flex items-center gap-2 text-violet-500 text-sm font-semibold mb-2">
+                    <div className="flex items-center gap-2 text-purple text-sm font-semibold mb-2">
                       <Target className="w-4 h-4" />
                       HIGH FRAGMENTATION
                     </div>
@@ -290,7 +290,7 @@ export default function MarketplacePlaybook() {
                     </div>
                   </div>
                   <div className="p-6 border border-border rounded-xl">
-                    <div className="flex items-center gap-2 text-violet-500 text-sm font-semibold mb-2">
+                    <div className="flex items-center gap-2 text-purple text-sm font-semibold mb-2">
                       <Target className="w-4 h-4" />
                       HIGH VALUE TRANSACTIONS
                     </div>
@@ -303,7 +303,7 @@ export default function MarketplacePlaybook() {
                     </div>
                   </div>
                   <div className="p-6 border border-border rounded-xl">
-                    <div className="flex items-center gap-2 text-violet-500 text-sm font-semibold mb-2">
+                    <div className="flex items-center gap-2 text-purple text-sm font-semibold mb-2">
                       <Target className="w-4 h-4" />
                       LOCAL/GEOGRAPHIC
                     </div>
@@ -346,7 +346,7 @@ export default function MarketplacePlaybook() {
                     }
                   ].map((challenge, index) => (
                     <div key={index} className="flex gap-4 p-4 bg-subtle rounded-lg">
-                      <CheckCircle2 className="w-6 h-6 text-violet-500 flex-shrink-0 mt-1" />
+                      <CheckCircle2 className="w-6 h-6 text-purple flex-shrink-0 mt-1" />
                       <div>
                         <h4 className="font-bold text-charcoal mb-1">{challenge.title}</h4>
                         <p className="text-charcoal/60 text-sm">{challenge.description}</p>
@@ -362,12 +362,12 @@ export default function MarketplacePlaybook() {
 
                 <div className="bg-background p-8 rounded-xl my-10 text-charcoal">
                   <h4 className="font-bold mb-6 flex items-center gap-2">
-                    <Shield className="w-5 h-5 text-violet-400" />
+                    <Shield className="w-5 h-5 text-purple" />
                     Trust Architecture
                   </h4>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h5 className="font-semibold text-violet-400 mb-3">Pre-Transaction Trust</h5>
+                      <h5 className="font-semibold text-purple mb-3">Pre-Transaction Trust</h5>
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li>• Identity verification</li>
                         <li>• Background checks</li>
@@ -376,7 +376,7 @@ export default function MarketplacePlaybook() {
                       </ul>
                     </div>
                     <div>
-                      <h5 className="font-semibold text-violet-400 mb-3">Post-Transaction Trust</h5>
+                      <h5 className="font-semibold text-purple mb-3">Post-Transaction Trust</h5>
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li>• Escrow/payment protection</li>
                         <li>• Dispute resolution</li>
@@ -428,7 +428,7 @@ export default function MarketplacePlaybook() {
                     <div key={index} className="p-4 border border-border rounded-lg">
                       <h4 className="font-bold text-charcoal mb-1">{item.metric}</h4>
                       <p className="text-charcoal/60 text-sm mb-2">{item.description}</p>
-                      <p className="text-xs text-violet-500 font-semibold">{item.benchmark}</p>
+                      <p className="text-xs text-purple font-semibold">{item.benchmark}</p>
                     </div>
                   ))}
                 </div>
@@ -461,13 +461,13 @@ export default function MarketplacePlaybook() {
                   </div>
                 </div>
 
-                <div className="bg-violet-500/10 p-8 rounded-xl my-10">
+                <div className="bg-purple/10 p-8 rounded-xl my-10">
                   <h4 className="font-bold text-charcoal mb-4">Ready to build your marketplace?</h4>
                   <p className="text-charcoal/70 mb-6">
                     NEXDYNE helps companies design, build, and scale marketplace platforms. From strategy to technology to growth, we've helped launch marketplaces across industries.
                   </p>
                   <Link href="/contact">
-                    <Button className="bg-violet-500 hover:bg-violet-600 text-charcoal">
+                    <Button className="bg-purple hover:bg-purple text-charcoal">
                       Schedule a Consultation
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
@@ -553,7 +553,7 @@ export default function MarketplacePlaybook() {
               Let's design a platform strategy that creates network effects and sustainable competitive advantages.
             </p>
             <Link href="/contact">
-              <Button className="bg-violet-500 hover:bg-violet-600 text-charcoal px-10 py-6 text-lg font-semibold transition">
+              <Button className="bg-purple hover:bg-purple text-charcoal px-10 py-6 text-lg font-semibold transition">
                 Schedule a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>

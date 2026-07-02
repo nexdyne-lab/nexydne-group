@@ -66,7 +66,7 @@ export default function AcceleratedImpact() {
               </div>
             </div>
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-secondary/20 to-orange-500/20 rounded-xl sm:rounded-2xl blur-2xl opacity-50"></div>
+              <div className="absolute -inset-4 bg-gradient-to-r from-secondary/20 to-primary/20 rounded-xl sm:rounded-2xl blur-2xl opacity-50"></div>
               <div className="relative bg-white/5 border border-border rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 backdrop-blur-sm">
                 <div className="space-y-8">
                   <div className="flex items-center justify-between border-b border-border pb-4">

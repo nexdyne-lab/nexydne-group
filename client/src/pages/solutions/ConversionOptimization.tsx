@@ -11,10 +11,10 @@ export default function ConversionOptimization() {
     <div className="min-h-screen bg-white">
       <Navigation />
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-rose-900 via-rose-800 to-rose-700 text-white py-20">
+      <section className="bg-gradient-to-br from-primary via-primary to-primary text-white py-20">
         <div className="container">
           {/* Breadcrumb */}
-          <nav className="flex items-center gap-2 text-sm mb-8 text-rose-100">
+          <nav className="flex items-center gap-2 text-sm mb-8 text-white/80">
             <Link href="/solutions" className="hover:text-white transition-colors">
               Services
             </Link>
@@ -33,7 +33,7 @@ export default function ConversionOptimization() {
               </h1>
             </div>
             <div>
-              <p className="text-xl text-rose-50">
+              <p className="text-xl text-white/80">
                 Want to convert visitors into customers? Turn your website into a profit-making machine with a proven CRO strategy for maximum impact.
               </p>
             </div>
@@ -136,8 +136,8 @@ export default function ConversionOptimization() {
             </p>
           </div>
 
-          <div className="mt-12 p-8 bg-rose-50 rounded-2xl border-l-4 border-rose-600">
-            <blockquote className="text-2xl font-medium text-rose-900 italic">
+          <div className="mt-12 p-8 bg-primary/5 rounded-2xl border-l-4 border-primary">
+            <blockquote className="text-2xl font-medium text-primary italic">
               "Want to find out more about these core principles, our way of working and how you can level up your lead generation?"
             </blockquote>
             <p className="mt-4 text-charcoal/80 font-semibold">— Robert Martinez</p>
@@ -198,7 +198,7 @@ export default function ConversionOptimization() {
       </section>
 
       {/* CRO Solutions Section */}
-      <section className="py-20 bg-rose-50">
+      <section className="py-20 bg-primary/5">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -452,7 +452,7 @@ export default function ConversionOptimization() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-32 bg-gradient-to-br from-primary via-primary to-rose-600 text-white overflow-hidden">
+      <section className="relative py-32 bg-gradient-to-br from-primary via-primary to-primary text-white overflow-hidden">
         {/* Curved Divider Top */}
         <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
           <svg className="relative block w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">

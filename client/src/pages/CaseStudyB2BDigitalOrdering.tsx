@@ -235,13 +235,13 @@ export default function CaseStudyB2BDigitalOrdering() {
                 icon: <Settings className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Complex Pricing Engine",
                 description: "Customer-specific pricing, volume discounts, contract pricing, and promotional rules integrated with ERP master data.",
-                color: "from-amber-500 to-orange-600"
+                color: "from-amber to-primary"
               },
               {
                 icon: <BarChart3 className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Real-Time Inventory",
                 description: "Live inventory visibility across all 3 distribution centers with ATP (available-to-promise) calculations and backorder handling.",
-                color: "from-violet-500 to-purple-600"
+                color: "from-purple to-purple"
               },
               {
                 icon: <Clock className="w-5 h-5 sm:w-6 sm:h-6" />,
@@ -253,7 +253,7 @@ export default function CaseStudyB2BDigitalOrdering() {
                 icon: <Truck className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Order Tracking",
                 description: "Real-time shipment tracking, delivery notifications, and proof-of-delivery documentation accessible in the portal.",
-                color: "from-rose-500 to-pink-600"
+                color: "from-primary to-primary"
               },
               {
                 icon: <Building2 className="w-5 h-5 sm:w-6 sm:h-6" />,
@@ -444,14 +444,14 @@ export default function CaseStudyB2BDigitalOrdering() {
                 category: "Specialty Retail",
                 title: "Outdoor gear retailer grows online revenue 180% in 18 months",
                 stats: [{ value: "180%", label: "Revenue growth" }, { value: "$3.2M", label: "New revenue" }],
-                color: "from-amber-500 to-orange-600",
+                color: "from-amber to-primary",
                 link: "/cases/retail-ecommerce-growth"
               },
               {
                 category: "Professional Services",
                 title: "Training company launches subscription platform with 2,400 members",
                 stats: [{ value: "2,400", label: "Active members" }, { value: "$1.8M", label: "Annual MRR" }],
-                color: "from-violet-500 to-purple-600",
+                color: "from-purple to-purple",
                 link: "/cases/training-subscription-platform"
               }
             ].map((caseStudy, index) => (

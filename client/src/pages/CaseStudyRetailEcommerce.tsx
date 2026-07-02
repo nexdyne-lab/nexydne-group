@@ -44,7 +44,7 @@ export default function CaseStudyRetailEcommerce() {
               </span>
             </Link>
             
-            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber-400 mb-4 sm:mb-6 block">
+            <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-amber mb-4 sm:mb-6 block">
               Specialty Retail • E-Commerce
             </span>
             
@@ -58,15 +58,15 @@ export default function CaseStudyRetailEcommerce() {
             
             <div className="flex flex-wrap gap-4 mb-10">
               <div>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-amber-400">180%</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-amber">180%</p>
                 <p className="text-muted-foreground text-sm">Revenue Growth</p>
               </div>
               <div>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-amber-400">$3.2M</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-amber">$3.2M</p>
                 <p className="text-muted-foreground text-sm">New Digital Revenue</p>
               </div>
               <div>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-amber-400">10 Weeks</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-amber">10 Weeks</p>
                 <p className="text-muted-foreground text-sm">Time to Launch</p>
               </div>
             </div>
@@ -200,7 +200,7 @@ export default function CaseStudyRetailEcommerce() {
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="flex items-start gap-3 bg-white/5 p-4 rounded-lg"
                 >
-                  <div className="w-2 h-2 bg-amber-400 rounded-full mt-2 flex-shrink-0" />
+                  <div className="w-2 h-2 bg-amber rounded-full mt-2 flex-shrink-0" />
                   <span className="text-muted-foreground">{challenge}</span>
                 </motion.div>
               ))}
@@ -236,7 +236,7 @@ export default function CaseStudyRetailEcommerce() {
                 icon: <ShoppingCart className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Shopify Plus Platform",
                 description: "Enterprise e-commerce platform with custom theme, product configurators, and seamless checkout experience optimized for outdoor gear shoppers.",
-                color: "from-amber-500 to-orange-600"
+                color: "from-amber to-primary"
               },
               {
                 icon: <Package className="w-5 h-5 sm:w-6 sm:h-6" />,
@@ -248,7 +248,7 @@ export default function CaseStudyRetailEcommerce() {
                 icon: <Users className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Personalization Engine",
                 description: "AI-powered product recommendations based on browsing behavior, purchase history, and activity preferences.",
-                color: "from-violet-500 to-purple-600"
+                color: "from-purple to-purple"
               },
               {
                 icon: <BarChart3 className="w-5 h-5 sm:w-6 sm:h-6" />,
@@ -260,7 +260,7 @@ export default function CaseStudyRetailEcommerce() {
                 icon: <Globe className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Performance Marketing",
                 description: "Google Ads, Meta campaigns, and SEO strategy to drive qualified traffic and acquire customers cost-effectively.",
-                color: "from-rose-500 to-pink-600"
+                color: "from-primary to-primary"
               },
               {
                 icon: <Zap className="w-5 h-5 sm:w-6 sm:h-6" />,
@@ -395,7 +395,7 @@ export default function CaseStudyRetailEcommerce() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-amber-400 mb-2">
+                <div className="text-3xl sm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-amber mb-2">
                   {item.stat}
                 </div>
                 <h3 className="text-lg font-semibold text-charcoal mb-2">{item.label}</h3>
@@ -411,7 +411,7 @@ export default function CaseStudyRetailEcommerce() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto bg-white/5 p-6 sm:p-8 md:p-12 rounded-lg sm:rounded-xl"
           >
-            <div className="text-amber-400 mb-6">
+            <div className="text-amber mb-6">
               <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
               </svg>
@@ -451,7 +451,7 @@ export default function CaseStudyRetailEcommerce() {
                 category: "Professional Services",
                 title: "Training company launches subscription platform with 2,400 members",
                 stats: [{ value: "2,400", label: "Active members" }, { value: "$1.8M", label: "Annual MRR" }],
-                color: "from-violet-500 to-purple-600",
+                color: "from-purple to-purple",
                 link: "/cases/training-subscription-platform"
               },
               {

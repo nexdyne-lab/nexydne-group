@@ -197,8 +197,8 @@ export default function CookiePreferences() {
                     <li><a href="https://www.youronlinechoices.eu/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">European Interactive Digital Advertising Alliance (EDAA)</a></li>
                   </ul>
 
-                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mt-6">
-                    <p className="text-amber-800 text-sm">
+                  <div className="bg-amber/5 border border-amber/15 rounded-lg p-4 mt-6">
+                    <p className="text-amber text-sm">
                       <strong>Note:</strong> Disabling certain cookies may affect the functionality of our website and limit your ability to use some features.
                     </p>
                   </div>

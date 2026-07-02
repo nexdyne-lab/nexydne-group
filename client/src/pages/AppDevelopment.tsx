@@ -198,7 +198,7 @@ export default function AppDevelopment() {
 
             <Link href="/cases/sanquin-digital" className="group">
               <div className="bg-white border-2 border-border hover:border-primary transition duration-300 overflow-hidden h-full">
-                <div className="aspect-video bg-gradient-to-br from-red-100 to-pink-100"></div>
+                <div className="aspect-video bg-gradient-to-br from-primary/10 to-primary/10"></div>
                 <div className="p-4 sm:p-6 md:p-8">
                   <p className="text-sm font-semibold text-primary mb-3">CASE STUDY</p>
                   <h3 className="text-2xl font-bold mb-4 text-charcoal group-hover:text-primary transition-colors">
@@ -217,7 +217,7 @@ export default function AppDevelopment() {
 
             <Link href="/cases/rai-amsterdam" className="group">
               <div className="bg-white border-2 border-border hover:border-primary transition duration-300 overflow-hidden h-full">
-                <div className="aspect-video bg-gradient-to-br from-purple-100 to-violet-100"></div>
+                <div className="aspect-video bg-gradient-to-br from-purple/10 to-purple/10"></div>
                 <div className="p-4 sm:p-6 md:p-8">
                   <p className="text-sm font-semibold text-primary mb-3">CASE STUDY</p>
                   <h3 className="text-2xl font-bold mb-4 text-charcoal group-hover:text-primary transition-colors">

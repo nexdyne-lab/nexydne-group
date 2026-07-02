@@ -32,8 +32,8 @@ export default function VenturePortfolio() {
       outcomeLabel: "Reduction in Waste",
       image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80",
       icon: ShoppingBag,
-      color: "text-purple-400",
-      bgColor: "bg-purple-900/30"
+      color: "text-purple",
+      bgColor: "bg-purple/30"
     },
     {
       industry: "FinTech",
@@ -59,8 +59,8 @@ export default function VenturePortfolio() {
       outcomeLabel: "Avg. Energy Savings",
       image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80",
       icon: Zap,
-      color: "text-yellow-400",
-      bgColor: "bg-yellow-900/30"
+      color: "text-amber",
+      bgColor: "bg-amber/30"
     },
     {
       industry: "Healthcare",

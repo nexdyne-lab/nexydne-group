@@ -206,7 +206,7 @@ export default function DigitalTransformationManufacturing() {
               </p>
             </div>
 
-            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 mt-8 rounded-r-xl">
+            <div className="bg-amber/5 border-l-4 border-amber p-6 mt-8 rounded-r-xl">
               <p className="text-charcoal font-semibold mb-2">Critical Business Impact</p>
               <p className="text-charcoal/70">
                 These challenges were affecting the bottom line: on-time delivery performance had declined to 82%, customer complaints about lead times were increasing, and operating costs were 15-20% higher than industry benchmarks. Without transformation, the company risked losing key accounts to more responsive competitors.

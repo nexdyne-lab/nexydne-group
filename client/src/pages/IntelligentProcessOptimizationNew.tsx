@@ -104,8 +104,8 @@ export default function IntelligentProcessOptimizationNew() {
             {/* Operations Capability */}
             <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg shadow-sm border border-border">
               <div className="flex items-start gap-4 mb-4">
-                <div className="bg-purple-100 p-3 rounded-lg flex-shrink-0">
-                  <BarChart3 className="h-6 w-6 text-purple-600" />
+                <div className="bg-purple/10 p-3 rounded-lg flex-shrink-0">
+                  <BarChart3 className="h-6 w-6 text-purple" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Operations</h3>
@@ -119,8 +119,8 @@ export default function IntelligentProcessOptimizationNew() {
             {/* Strategy Capability */}
             <div className="bg-white p-4 sm:p-6 md:p-8 rounded-lg shadow-sm border border-border">
               <div className="flex items-start gap-4 mb-4">
-                <div className="bg-orange-100 p-3 rounded-lg flex-shrink-0">
-                  <Target className="h-6 w-6 text-orange-600" />
+                <div className="bg-primary/10 p-3 rounded-lg flex-shrink-0">
+                  <Target className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Strategy & Corporate Finance</h3>
@@ -166,8 +166,8 @@ export default function IntelligentProcessOptimizationNew() {
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <BarChart3 className="w-8 h-8 text-purple-600" />
+              <div className="w-16 h-16 bg-purple/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <BarChart3 className="w-8 h-8 text-purple" />
               </div>
               <h3 className="text-2xl font-bold mb-4">99.5% accuracy</h3>
               <p className="text-charcoal/80 leading-relaxed">

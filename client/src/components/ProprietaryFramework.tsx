@@ -93,7 +93,7 @@ export function ProprietaryFramework({
           <p className="text-white/60 mb-6">
             Our proven methodology has delivered measurable results for leading organizations worldwide.
           </p>
-          <button className="px-8 py-3 bg-gradient-to-r from-primary to-primary text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-500/50 transition">
+          <button className="px-8 py-3 bg-gradient-to-r from-primary to-primary text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple/50 transition">
             Learn More About Our Approach
           </button>
         </div>

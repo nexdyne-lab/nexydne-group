@@ -87,7 +87,7 @@ export default function InsightSubscriptionPlaybook() {
                       { icon: <CreditCard className="w-5 h-5 sm:w-6 sm:h-6" />, title: "Higher Valuations", desc: "Investors value recurring revenue at 2-3x higher multiples than transactional businesses" }
                     ].map((item, index) => (
                       <div key={index} className="bg-subtle p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl">
-                        <div className="w-10 h-10 bg-violet-500/10 text-violet-600 rounded-lg flex items-center justify-center mb-4">
+                        <div className="w-10 h-10 bg-purple/10 text-purple rounded-lg flex items-center justify-center mb-4">
                           {item.icon}
                         </div>
                         <h4 className="font-bold text-charcoal mb-2">{item.title}</h4>
@@ -226,7 +226,7 @@ export default function InsightSubscriptionPlaybook() {
                         "Offer flexible options (pause, downgrade) before cancellation"
                       ].map((item, index) => (
                         <li key={index} className="flex items-start gap-3 text-charcoal/70">
-                          <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-violet-600 flex-shrink-0 mt-0.5" />
+                          <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-purple flex-shrink-0 mt-0.5" />
                           {item}
                         </li>
                       ))}
@@ -260,28 +260,28 @@ export default function InsightSubscriptionPlaybook() {
                   <div className="bg-subtle p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
                     <div className="space-y-6">
                       <div className="flex gap-4">
-                        <div className="w-8 h-8 bg-violet-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
+                        <div className="w-8 h-8 bg-purple text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
                         <div>
                           <h4 className="font-bold text-charcoal mb-1">Phase 1: Add subscription option (Month 1-3)</h4>
                           <p className="text-charcoal/70 text-sm mb-0">Launch subscription alongside existing offerings. Test pricing, value proposition, and operations with early adopters.</p>
                         </div>
                       </div>
                       <div className="flex gap-4">
-                        <div className="w-8 h-8 bg-violet-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
+                        <div className="w-8 h-8 bg-purple text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
                         <div>
                           <h4 className="font-bold text-charcoal mb-1">Phase 2: Optimize and expand (Month 4-8)</h4>
                           <p className="text-charcoal/70 text-sm mb-0">Iterate based on feedback, improve retention, and expand marketing to grow subscriber base.</p>
                         </div>
                       </div>
                       <div className="flex gap-4">
-                        <div className="w-8 h-8 bg-violet-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
+                        <div className="w-8 h-8 bg-purple text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
                         <div>
                           <h4 className="font-bold text-charcoal mb-1">Phase 3: Shift emphasis (Month 9-12)</h4>
                           <p className="text-charcoal/70 text-sm mb-0">Make subscription the primary offering, convert existing customers, and optimize unit economics.</p>
                         </div>
                       </div>
                       <div className="flex gap-4">
-                        <div className="w-8 h-8 bg-violet-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">4</div>
+                        <div className="w-8 h-8 bg-purple text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">4</div>
                         <div>
                           <h4 className="font-bold text-charcoal mb-1">Phase 4: Scale (Year 2+)</h4>
                           <p className="text-charcoal/70 text-sm mb-0">Expand subscription tiers, add enterprise options, and build recurring revenue to majority of business.</p>
@@ -314,7 +314,7 @@ export default function InsightSubscriptionPlaybook() {
               >
                 <h3 className="text-lg font-bold mb-4">About the Author</h3>
                 <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 bg-violet-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                  <div className="w-16 h-16 bg-purple rounded-full flex items-center justify-center text-white font-bold text-xl">
                     NG
                   </div>
                   <div>
@@ -368,7 +368,7 @@ export default function InsightSubscriptionPlaybook() {
                       "Phase transition over 12+ months"
                     ].map((item, index) => (
                       <li key={index} className="flex items-start gap-2 text-sm text-white/80">
-                        <div className="w-1.5 h-1.5 bg-violet-400 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-1.5 h-1.5 bg-purple rounded-full mt-2 flex-shrink-0" />
                         {item}
                       </li>
                     ))}
@@ -408,14 +408,14 @@ export default function InsightSubscriptionPlaybook() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.6 }}
-                  className="bg-gradient-to-br from-violet-600 to-purple-700 text-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
+                  className="bg-gradient-to-br from-purple to-purple text-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
                 >
                   <h3 className="font-bold text-lg mb-3">Ready to build recurring revenue?</h3>
                   <p className="text-white/80 text-sm mb-4">
                     Let's discuss how subscription models could transform your business.
                   </p>
                   <Link href="/contact">
-                    <Button className="w-full bg-white text-violet-600 hover:bg-white/90 font-semibold">
+                    <Button className="w-full bg-white text-purple hover:bg-white/90 font-semibold">
                       Get Started
                       <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4" />
                     </Button>

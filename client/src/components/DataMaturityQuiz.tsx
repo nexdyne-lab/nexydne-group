@@ -76,7 +76,7 @@ export default function DataMaturityQuiz() {
       return {
         level: "Data Aware",
         description: "You are at the beginning of your journey. Focus on centralizing data and establishing basic quality standards.",
-        color: "text-orange-400"
+        color: "text-primary"
       };
     } else if (percentage < 70) {
       return {

@@ -135,7 +135,7 @@ export function TransformationRoadmap({
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
               Our structured approach ensures predictable outcomes, minimized risk, and accelerated time-to-value.
             </p>
-            <button className="px-8 py-3 bg-gradient-to-r from-primary to-primary text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-500/50 transition">
+            <button className="px-8 py-3 bg-gradient-to-r from-primary to-primary text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple/50 transition">
               Schedule a Roadmap Workshop
             </button>
           </div>

@@ -229,7 +229,7 @@ export default function CaseStudyTrainingSubscription() {
                 icon: <Video className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "On-Demand Learning Library",
                 description: "200+ hours of professionally produced video courses with quizzes, certificates, and progress tracking for CPE credits.",
-                color: "from-violet-500 to-purple-600"
+                color: "from-purple to-purple"
               },
               {
                 icon: <Calendar className="w-5 h-5 sm:w-6 sm:h-6" />,
@@ -241,7 +241,7 @@ export default function CaseStudyTrainingSubscription() {
                 icon: <Users className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Professional Community",
                 description: "Discussion forums, peer networking, and study groups that create stickiness and reduce churn through social connections.",
-                color: "from-amber-500 to-orange-600"
+                color: "from-amber to-primary"
               },
               {
                 icon: <Award className="w-5 h-5 sm:w-6 sm:h-6" />,
@@ -253,7 +253,7 @@ export default function CaseStudyTrainingSubscription() {
                 icon: <CreditCard className="w-5 h-5 sm:w-6 sm:h-6" />,
                 title: "Subscription Management",
                 description: "Stripe-powered billing with monthly and annual plans, team accounts, and enterprise licensing options.",
-                color: "from-rose-500 to-pink-600"
+                color: "from-primary to-primary"
               },
               {
                 icon: <RefreshCw className="w-5 h-5 sm:w-6 sm:h-6" />,
@@ -444,7 +444,7 @@ export default function CaseStudyTrainingSubscription() {
                 category: "Specialty Retail",
                 title: "Outdoor gear retailer grows online revenue 180% in 18 months",
                 stats: [{ value: "180%", label: "Revenue growth" }, { value: "$3.2M", label: "New revenue" }],
-                color: "from-amber-500 to-orange-600",
+                color: "from-amber to-primary",
                 link: "/cases/retail-ecommerce-growth"
               },
               {

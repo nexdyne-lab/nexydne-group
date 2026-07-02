@@ -55,8 +55,8 @@ export default function LoyaltyProgram() {
                 <h3 className="text-xl font-bold text-charcoal mt-8 mb-4">Strategic Pillars</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
-                    <div className="mt-1 bg-purple-50 p-1 rounded">
-                      <Coins className="w-3 h-3 sm:w-4 sm:h-4 text-purple-600" />
+                    <div className="mt-1 bg-purple/5 p-1 rounded">
+                      <Coins className="w-3 h-3 sm:w-4 sm:h-4 text-purple" />
                     </div>
                     <div>
                       <strong className="text-charcoal">Economic Modeling</strong>
@@ -64,8 +64,8 @@ export default function LoyaltyProgram() {
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
-                    <div className="mt-1 bg-purple-50 p-1 rounded">
-                      <Award className="w-3 h-3 sm:w-4 sm:h-4 text-purple-600" />
+                    <div className="mt-1 bg-purple/5 p-1 rounded">
+                      <Award className="w-3 h-3 sm:w-4 sm:h-4 text-purple" />
                     </div>
                     <div>
                       <strong className="text-charcoal">Tiered Architecture</strong>
@@ -73,8 +73,8 @@ export default function LoyaltyProgram() {
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
-                    <div className="mt-1 bg-purple-50 p-1 rounded">
-                      <Gift className="w-3 h-3 sm:w-4 sm:h-4 text-purple-600" />
+                    <div className="mt-1 bg-purple/5 p-1 rounded">
+                      <Gift className="w-3 h-3 sm:w-4 sm:h-4 text-purple" />
                     </div>
                     <div>
                       <strong className="text-charcoal">Experiential Rewards</strong>
@@ -90,7 +90,7 @@ export default function LoyaltyProgram() {
               </h3>
               <div className="space-y-6">
                 <div className="flex items-center gap-4 p-4 bg-white rounded-lg sm:rounded-xl border border-border shadow-sm">
-                  <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold">1</div>
+                  <div className="w-10 h-10 rounded-full bg-purple/10 flex items-center justify-center text-purple font-bold">1</div>
                   <div>
                     <h4 className="font-bold text-charcoal">Trigger</h4>
                     <p className="text-sm text-muted-foreground">User completes a high-value action (e.g., completes a profile).</p>
@@ -100,7 +100,7 @@ export default function LoyaltyProgram() {
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground/50 rotate-90" />
                 </div>
                 <div className="flex items-center gap-4 p-4 bg-white rounded-lg sm:rounded-xl border border-border shadow-sm">
-                  <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold">2</div>
+                  <div className="w-10 h-10 rounded-full bg-purple/10 flex items-center justify-center text-purple font-bold">2</div>
                   <div>
                     <h4 className="font-bold text-charcoal">Reward</h4>
                     <p className="text-sm text-muted-foreground">Immediate gratification (points, badge, or unlock).</p>
@@ -110,7 +110,7 @@ export default function LoyaltyProgram() {
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground/50 rotate-90" />
                 </div>
                 <div className="flex items-center gap-4 p-4 bg-white rounded-lg sm:rounded-xl border border-border shadow-sm">
-                  <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold">3</div>
+                  <div className="w-10 h-10 rounded-full bg-purple/10 flex items-center justify-center text-purple font-bold">3</div>
                   <div>
                     <h4 className="font-bold text-charcoal">Investment</h4>
                     <p className="text-sm text-muted-foreground">User "spends" points or status, deepening their commitment.</p>
@@ -120,7 +120,7 @@ export default function LoyaltyProgram() {
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground/50 rotate-90" />
                 </div>
                 <div className="flex items-center gap-4 p-4 bg-white rounded-lg sm:rounded-xl border border-border shadow-sm">
-                  <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold">4</div>
+                  <div className="w-10 h-10 rounded-full bg-purple/10 flex items-center justify-center text-purple font-bold">4</div>
                   <div>
                     <h4 className="font-bold text-charcoal">Advocacy</h4>
                     <p className="text-sm text-muted-foreground">User invites others to join the ecosystem.</p>

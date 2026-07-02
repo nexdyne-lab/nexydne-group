@@ -52,7 +52,7 @@ export default function FractionalCFOCaseStudies() {
         { label: 'Strategic Shift', value: 'Follower → Leader' }
       ],
       image: '/images/case-studies/saas-leadership.jpg',
-      gradient: 'from-violet-500 to-purple-600'
+      gradient: 'from-purple to-purple'
     }
   ];
 

@@ -106,7 +106,7 @@ export default function InsightEcommerceLaunchGuide() {
                     <li><strong>What are your success metrics?</strong> Revenue target, conversion rate, average order value?</li>
                   </ul>
 
-                  <div className="bg-amber-50 border-l-4 border-amber-500 p-4 sm:p-5 md:p-6 my-8">
+                  <div className="bg-amber/5 border-l-4 border-amber p-4 sm:p-5 md:p-6 my-8">
                     <h4 className="font-bold text-charcoal mb-2">Pro Tip</h4>
                     <p className="text-charcoal/70 mb-0 text-sm">
                       Don't try to replicate your entire product catalog online. Start with your top 20% of products that drive 80% of revenue. You can expand the catalog after launch based on customer demand.
@@ -220,19 +220,19 @@ export default function InsightEcommerceLaunchGuide() {
                     </p>
                     <ul className="space-y-2 text-white/80">
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-amber flex-shrink-0 mt-0.5" />
                         High-quality images from multiple angles
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-amber flex-shrink-0 mt-0.5" />
                         Detailed, benefit-focused descriptions
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-amber flex-shrink-0 mt-0.5" />
                         Clear pricing and availability
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-amber flex-shrink-0 mt-0.5" />
                         Customer reviews and ratings
                       </li>
                     </ul>
@@ -307,7 +307,7 @@ export default function InsightEcommerceLaunchGuide() {
                       { icon: <ShoppingCart className="w-5 h-5 sm:w-6 sm:h-6" />, title: "Reduce Abandonment", desc: "Implement abandoned cart emails and exit-intent offers" }
                     ].map((item, index) => (
                       <div key={index} className="bg-subtle p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl">
-                        <div className="w-10 h-10 bg-amber-500/10 text-amber-600 rounded-lg flex items-center justify-center mb-4">
+                        <div className="w-10 h-10 bg-amber/10 text-amber rounded-lg flex items-center justify-center mb-4">
                           {item.icon}
                         </div>
                         <h4 className="font-bold text-charcoal mb-2">{item.title}</h4>
@@ -353,7 +353,7 @@ export default function InsightEcommerceLaunchGuide() {
               >
                 <h3 className="text-lg font-bold mb-4">About the Author</h3>
                 <div className="flex items-start gap-4">
-                  <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                  <div className="w-16 h-16 bg-amber rounded-full flex items-center justify-center text-charcoal font-bold text-xl">
                     NG
                   </div>
                   <div>
@@ -407,7 +407,7 @@ export default function InsightEcommerceLaunchGuide() {
                       "Week 12: Public Launch"
                     ].map((item, index) => (
                       <li key={index} className="flex items-start gap-2 text-sm text-white/80">
-                        <div className="w-1.5 h-1.5 bg-amber-400 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-1.5 h-1.5 bg-amber rounded-full mt-2 flex-shrink-0" />
                         {item}
                       </li>
                     ))}
@@ -447,14 +447,14 @@ export default function InsightEcommerceLaunchGuide() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.6 }}
-                  className="bg-gradient-to-br from-amber-500 to-orange-600 text-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
+                  className="bg-gradient-to-br from-amber to-primary text-white p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl"
                 >
                   <h3 className="font-bold text-lg mb-3">Ready to launch your e-commerce?</h3>
                   <p className="text-white/90 text-sm mb-4">
                     Let's discuss how we can help you go from zero to revenue in 90 days.
                   </p>
                   <Link href="/contact">
-                    <Button className="w-full bg-white text-amber-600 hover:bg-white/90 font-semibold">
+                    <Button className="w-full bg-white text-amber hover:bg-white/90 font-semibold">
                       Get Started
                       <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4" />
                     </Button>

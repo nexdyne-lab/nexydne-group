@@ -283,7 +283,7 @@ export default function ChurnPredictionPlaybook() {
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
-                    <div className="w-4 h-4 bg-yellow-500 rounded-full"></div>
+                    <div className="w-4 h-4 bg-amber rounded-full"></div>
                     <div>
                       <span className="font-bold">Medium Risk (40-70%):</span>
                       <span className="text-charcoal/70 ml-2">Proactive check-in, value reinforcement</span>

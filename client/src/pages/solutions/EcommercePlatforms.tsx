@@ -10,7 +10,7 @@ export default function EcommercePlatforms() {
       <Navigation />
       
       {/* Hero Section - Maroon Background */}
-      <section className="relative bg-gradient-to-br from-red-900 via-primary to-primary text-white nx-section">
+      <section className="relative bg-gradient-to-br from-primary via-primary to-primary text-white nx-section">
         <div className="container">
           <div className="mb-8">
             <div className="flex items-center gap-2 text-sm opacity-90">
@@ -136,7 +136,7 @@ export default function EcommercePlatforms() {
             </p>
           </div>
           
-          <div className="mt-12 p-8 bg-gradient-to-r from-red-50 to-primary rounded-lg border-l-4 border-primary">
+          <div className="mt-12 p-8 bg-gradient-to-r from-primary/5 to-primary rounded-lg border-l-4 border-primary">
             <p className="text-2xl font-bold text-primary italic">
               "We make sure your platform isn't just built to perform, but to lead the way."
             </p>
@@ -239,7 +239,7 @@ export default function EcommercePlatforms() {
             {/* Shopware */}
             <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 bg-purple-600 rounded-lg flex items-center justify-center">
+                <div className="w-16 h-16 bg-purple rounded-lg flex items-center justify-center">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
@@ -522,7 +522,7 @@ export default function EcommercePlatforms() {
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl">
-            <div className="bg-gradient-to-br from-primary to-red-50 p-8 rounded-lg">
+            <div className="bg-gradient-to-br from-primary to-primary/5 p-8 rounded-lg">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                   <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -109,7 +109,7 @@ export default function LeadsDashboard() {
   const getScoreBadge = (score: number | null) => {
     const s = score || 0;
     if (s >= 70) return <Badge className="bg-secondary/100 hover:bg-green-600">High Intent ({s})</Badge>;
-    if (s >= 40) return <Badge className="bg-yellow-500 hover:bg-yellow-600">Medium ({s})</Badge>;
+    if (s >= 40) return <Badge className="bg-amber hover:bg-amber">Medium ({s})</Badge>;
     return <Badge variant="secondary">Standard ({s})</Badge>;
   };
 
@@ -226,7 +226,7 @@ export default function LeadsDashboard() {
               <Star className="w-4 h-4 text-muted-foreground/70" />
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-amber-600">
+              <div className="text-3xl font-bold text-amber">
                 {statsLoading ? "..." : stats?.avgLeadScore || 0}
               </div>
               <p className="text-xs text-muted-foreground mt-1">Out of 100</p>

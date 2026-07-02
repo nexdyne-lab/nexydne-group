@@ -24,8 +24,8 @@ export default function NewsletterSubscribe() {
 
   if (isSubmitted) {
     return (
-      <div className="bg-gradient-to-br from-orange-50 to-orange-100 border border-orange-200 rounded-lg p-4 sm:p-6 md:p-4 sm:p-6 md:p-8">
-        <div className="flex items-center justify-center gap-3 text-orange-700">
+      <div className="bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/15 rounded-lg p-4 sm:p-6 md:p-4 sm:p-6 md:p-8">
+        <div className="flex items-center justify-center gap-3 text-primary">
           <CheckCircle className="w-6 h-6" />
           <p className="text-lg font-semibold">
             Thanks for subscribing! Check your inbox to confirm your subscription.
@@ -39,7 +39,7 @@ export default function NewsletterSubscribe() {
     <div className="bg-gradient-to-br from-off-white to-off-white border border-border rounded-lg p-4 sm:p-6 md:p-4 sm:p-6 md:p-8">
       <div className="max-w-2xl mx-auto text-center">
         <div className="flex items-center justify-center gap-2 mb-4">
-          <Mail className="w-6 h-6 text-orange-500" />
+          <Mail className="w-6 h-6 text-primary" />
           <h3 className="text-2xl font-bold text-charcoal">
             Subscribe to Insights
           </h3>
@@ -59,7 +59,7 @@ export default function NewsletterSubscribe() {
           <Button 
             type="submit" 
             disabled={isLoading}
-            className="bg-orange-500 hover:bg-orange-600 whitespace-nowrap"
+            className="bg-primary hover:bg-primary whitespace-nowrap"
           >
             {isLoading ? "Subscribing..." : "Subscribe"}
           </Button>

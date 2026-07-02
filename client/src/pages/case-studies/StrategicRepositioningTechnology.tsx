@@ -206,7 +206,7 @@ export default function StrategicRepositioningTechnology() {
               </p>
             </div>
 
-            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 mt-8 rounded-r-xl">
+            <div className="bg-amber/5 border-l-4 border-amber p-6 mt-8 rounded-r-xl">
               <p className="text-charcoal font-semibold mb-2">Strategic Imperative</p>
               <p className="text-charcoal/70">
                 The company faced a classic innovator's dilemma: the existing business remained profitable but was clearly in decline, while the path to future growth required significant investment and risk. Leadership needed a clear strategy for managing the transition while maintaining financial stability and customer relationships.

@@ -14,8 +14,8 @@ export default function MarketingAutomation() {
       {/* Hero Section */}
       <section className="bg-background text-charcoal pt-32 pb-20 px-4 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-20">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-600 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
         </div>
         
         <div className="container mx-auto max-w-6xl relative z-10">
@@ -51,8 +51,8 @@ export default function MarketingAutomation() {
 
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 mt-12">
             <div className="flex gap-4">
-              <div className="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                <GitBranch className="w-6 h-6 text-purple-600" />
+              <div className="w-12 h-12 bg-purple/5 rounded-lg flex items-center justify-center flex-shrink-0">
+                <GitBranch className="w-6 h-6 text-purple" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-base mb-2">Adaptive Nurture Streams</h3>
@@ -62,8 +62,8 @@ export default function MarketingAutomation() {
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Target className="w-6 h-6 text-purple-600" />
+              <div className="w-12 h-12 bg-purple/5 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Target className="w-6 h-6 text-purple" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-base mb-2">Predictive Lead Scoring</h3>
@@ -73,8 +73,8 @@ export default function MarketingAutomation() {
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                <MessageSquare className="w-6 h-6 text-purple-600" />
+              <div className="w-12 h-12 bg-purple/5 rounded-lg flex items-center justify-center flex-shrink-0">
+                <MessageSquare className="w-6 h-6 text-purple" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-base mb-2">Conversational Intelligence</h3>
@@ -84,8 +84,8 @@ export default function MarketingAutomation() {
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Mail className="w-6 h-6 text-purple-600" />
+              <div className="w-12 h-12 bg-purple/5 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Mail className="w-6 h-6 text-purple" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-base mb-2">Account-Based Orchestration</h3>
@@ -124,7 +124,7 @@ export default function MarketingAutomation() {
             Let's build an automated system that drives consistent, scalable growth.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-4 bg-purple-600 text-charcoal rounded-lg font-bold text-lg hover:bg-purple-700 transition-colors shadow-lg">
+            <button className="px-8 py-4 bg-purple text-charcoal rounded-lg font-bold text-lg hover:bg-purple transition-colors shadow-lg">
               Start Automating
             </button>
           </Link>
