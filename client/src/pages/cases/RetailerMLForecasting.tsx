@@ -7,7 +7,7 @@ export function RetailerMLForecasting() {
       industry="Retail · AI & Machine Learning"
       title="Predicting Demand with 98% Accuracy"
       subtitle="How a major retailer reduced inventory waste by 30% using an ML-powered forecasting engine."
-      heroImage="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1600&auto=format&fit=crop"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`The client was relying on legacy spreadsheet-based forecasting methods that couldn't account for complex variables like weather, local events, and social media trends. This led to excess inventory in some regions causing markdowns, stockouts in high-demand stores resulting in lost revenue, and manual planning processes taking 2+ weeks per cycle.
 
 The legacy approach could not operate at SKU-store-week granularity or adapt to the dynamic, multi-variable nature of modern retail demand.`}

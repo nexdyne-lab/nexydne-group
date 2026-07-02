@@ -10,7 +10,7 @@ export default function ServiceOperations() {
       hubName="Service Operations"
       slug="operations/service-operations"
       heroSubtitle="Optimize service delivery and customer experience. Transform your service operations to drive efficiency, quality, and lasting customer relationships."
-      heroImage="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
       experienceStats={[
         { number: "100+", label: "Service operations transformations across industries" },
         { number: "25-40%", label: "Typical improvement in service delivery efficiency" },
@@ -114,21 +114,21 @@ export default function ServiceOperations() {
           title: "Health System Launches Telehealth Platform at Scale",
           industry: "Healthcare · Operations",
           metric: "10x",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
         {
           slug: "healthcare-patient-engagement",
           title: "Healthcare Network Boosts Patient Engagement Through Digital Tools",
           industry: "Healthcare · Operations",
           metric: "48%",
-          image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=1600&q=80",
+          image: "/images/industries/meeting-topview.jpg",
         },
         {
           slug: "insurance-claims-processing",
           title: "Insurer Cuts Claims Cycle Time and Improves Decision Accuracy",
           industry: "Insurance · Operations",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-presenting-graphs.jpg",
         },
       ]}
       relatedCapabilities={[

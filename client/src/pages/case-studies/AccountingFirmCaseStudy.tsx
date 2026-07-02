@@ -7,7 +7,7 @@ export function AccountingFirmCaseStudy() {
       industry="Professional Services · Operations"
       title="70% Reduction in Manual Document Processing"
       subtitle="A 120-employee accounting firm serving mid-market clients deploys ProcessFlow AI to streamline tax document processing and client onboarding workflows, achieving dramatic efficiency gains ahead of their busiest season."
-      heroImage="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
       challenge={`For two decades, this regional accounting firm had built a reputation for personalized service and deep client relationships. But as their client base grew to over 800 businesses and high-net-worth individuals, their manual processes couldn't keep pace.
 
 Each tax season brought the same challenges: mountains of documents arriving via email, mail, and client drop-offs. Staff spent hours scanning, naming, and organizing files. Partners lost visibility into workload distribution. Clients waited days for confirmation that their materials had been received and processed.

@@ -16,6 +16,7 @@ export interface ServiceDetailTemplateProps {
   serviceSlug: string;
   heroSubtitle: string;
   heroImage: string;
+  heroFocal?: string;
   experienceStats: { number: string; label: string }[];
   challenge: string;
   opportunity: string;
@@ -43,6 +44,7 @@ export default function ServiceDetailTemplate(
     serviceSlug,
     heroSubtitle,
     heroImage,
+    heroFocal,
     experienceStats,
     challenge,
     opportunity,
@@ -82,8 +84,18 @@ export default function ServiceDetailTemplate(
 
       {/* Hero — plain neutral statement (Brand v2) */}
       <section className="relative bg-background overflow-hidden min-h-[56vh] flex items-center pt-32 pb-20 md:pt-40 md:pb-24">
-        <BrandMesh variant="light" />
-        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(90deg, #F7F9FC 0%, rgba(247,249,252,0.6) 30%, rgba(247,249,252,0.05) 55%, transparent 70%)" }} />
+        {heroImage ? (
+          <>
+            <div aria-hidden className="pointer-events-none absolute inset-0" style={{ backgroundImage: `url(${heroImage})`, backgroundSize: "cover", backgroundPosition: heroFocal ?? "72% 50%", filter: "saturate(0.95) contrast(1.02)" }} />
+            <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(90deg, #F7F9FC 0%, rgba(247,249,252,0.95) 26%, rgba(247,249,252,0.74) 50%, rgba(247,249,252,0.52) 76%, rgba(247,249,252,0.44) 100%)" }} />
+            <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-24" style={{ background: "linear-gradient(180deg, transparent 0%, #FFFFFF 100%)" }} />
+          </>
+        ) : (
+          <>
+            <BrandMesh variant="light" />
+            <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(90deg, #F7F9FC 0%, rgba(247,249,252,0.6) 30%, rgba(247,249,252,0.05) 55%, transparent 70%)" }} />
+          </>
+        )}
         <div className="container relative z-10 px-4 md:px-12">
           <Breadcrumbs />
           <motion.div

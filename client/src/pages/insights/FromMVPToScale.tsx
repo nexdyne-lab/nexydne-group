@@ -9,7 +9,7 @@ export default function FromMVPToScale() {
       title: "The Corporate Venture Advantage",
       description: "Why established assets combined with startup speed create an unfair market advantage.",
       readTime: "6 min read",
-      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80",
+      image: "/images/capabilities/cap-lightbulb-idea.jpg",
       link: "/insights/corporate-venture-advantage"
     },
     {
@@ -18,7 +18,7 @@ export default function FromMVPToScale() {
       title: "Hiring for Builders",
       description: "How to attract and retain entrepreneurial talent within a corporate structure.",
       readTime: "5 min read",
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80",
+      image: "/images/capabilities/cap-venturing.jpg",
       link: "/insights/hiring-for-builders"
     },
     {
@@ -27,7 +27,7 @@ export default function FromMVPToScale() {
       title: "The CEO's Guide to Data Modernization",
       description: "Why 70% of transformations fail and how to be in the 30% that succeed.",
       readTime: "5 min read",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80",
+      image: "/images/capabilities/cap-telescope.jpg",
       link: "/insights/ceo-guide-data-modernization"
     }
   ];
@@ -40,7 +40,7 @@ export default function FromMVPToScale() {
       subtitle="Building a Minimum Viable Product is easy. Turning it into a scalable, revenue-generating business is where 90% of corporate ventures fail. Here is the operational playbook for crossing the chasm."
       readTime="10 min read"
       publishDate="November 28, 2024"
-      heroImage="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80"
+      heroImage="/images/industries/team-strategy-board.jpg"
       heroImageAlt="From MVP to Scale"
       authorName="Sarah Chen"
       authorRole="Head of Venture Building, NexDyne"

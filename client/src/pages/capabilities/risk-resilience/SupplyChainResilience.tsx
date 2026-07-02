@@ -15,7 +15,8 @@ export default function SupplyChainResilience() {
       serviceName="Supply Chain Resilience"
       serviceSlug="supply-chain-resilience"
       heroSubtitle="Build visibility across your supply network. Identify concentration risks, model disruption scenarios, and develop contingency strategies. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-diverse-team.5dcdbf56.jpg"
+      heroImage="/images/industries/retail-warehouse.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Supply Chain Resilience engagements delivered" },

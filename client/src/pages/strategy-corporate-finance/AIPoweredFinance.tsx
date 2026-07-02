@@ -10,7 +10,7 @@ export default function AIPoweredFinance() {
       hubName="AI-Powered Finance"
       slug="ai-powered-finance"
       heroSubtitle="Harness artificial intelligence to transform your finance function. Automated reporting, predictive cash flow modeling, and AI-assisted budgeting that free your team to focus on the work that actually moves the business."
-      heroImage="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-chess.jpg"
       experienceStats={[
         { number: "70%", label: "Reduction in manual reporting time for clients implementing AI-powered automation" },
         { number: "3x", label: "Improvement in forecast accuracy using machine learning models vs. traditional methods" },
@@ -114,21 +114,21 @@ export default function AIPoweredFinance() {
           title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
           industry: "Financial Services · AI Finance",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · AI Finance",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/industries/team-strategy-board.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Scales Payment Operations Without Headcount Growth",
           industry: "Financial Services · AI Finance",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&q=80",
+          image: "/images/capabilities/cap-strategy-spheres.jpg",
         },
       ]}
       relatedCapabilities={[

@@ -11,7 +11,7 @@ export default function AutomotiveSmartFactory() {
       industryLink="/industries/manufacturing"
       title="Automotive OEM Transforms Assembly Plant into Smart Factory"
       subtitle="How IoT sensors, real-time analytics, and predictive maintenance improved overall equipment effectiveness by 40% while reducing unplanned downtime."
-      heroImage="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=1920&q=80"
+      heroImage="/images/industries/mfg-robotics.jpg"
       metrics={[
         { value: "40%", label: "OEE Improvement" },
         { value: "65%", label: "Less Unplanned Downtime" },
@@ -111,14 +111,14 @@ export default function AutomotiveSmartFactory() {
           metric: "92%",
           label: "defect prediction accuracy",
           link: "/cases/semiconductor-quality-prediction",
-          image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80"
+          image: "/images/industries/mfg-robot-arm.jpg"
         },
         {
           title: "Connected Products for Industrial Equipment",
           metric: "$45M",
           label: "new service revenue",
           link: "/cases/industrial-connected-products",
-          image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80"
+          image: "/images/capabilities/cap-battery-factory.jpg"
         }
       ]}
       ctaTitle="Ready to Transform Your Factory?"

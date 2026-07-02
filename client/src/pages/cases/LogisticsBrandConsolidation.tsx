@@ -7,7 +7,7 @@ export function LogisticsBrandConsolidation() {
       industry="Logistics · Brand Strategy & AI"
       title="AI-Driven Supply Chain Branding & Optimization"
       subtitle="Global logistics giant leverages predictive analytics to unify 30+ regional brands and optimize route efficiency, achieving Top 50 global brand ranking and $55M in operational savings."
-      heroImage="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600&q=80"
+      heroImage="/images/industries/retail-warehouse.jpg"
       challenge={`A global logistics provider had grown rapidly through aggressive acquisitions, resulting in a fragmented portfolio of over 30 regional brands. While the company had significant global reach, its brand equity was diluted across these disparate entities.
 
 Customers were confused by varying service levels and brand identities, and the company struggled to cross-sell services between regions. Furthermore, operational data was siloed, preventing the optimization of global routes and leading to inefficiencies that eroded margins.

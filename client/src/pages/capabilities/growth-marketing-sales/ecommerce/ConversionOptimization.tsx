@@ -15,7 +15,8 @@ export default function ConversionOptimization() {
       serviceName="Conversion Optimization"
       serviceSlug="conversion-optimization"
       heroSubtitle="Increase conversion rates through systematic testing and optimization. Improve checkout flows, product pages, and user experience to maximize revenue."
-      heroImage="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80"
+      heroImage="/images/capabilities/cap-tablet-woman.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Conversion Optimization engagements delivered" },
@@ -70,14 +71,14 @@ export default function ConversionOptimization() {
           title: "Telehealth provider scales virtual care platform",
           industry: "Healthcare · E-commerce",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech scales payment ops with intelligent automation",
           industry: "Fintech · E-commerce",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
       ]}
       relatedServices={[

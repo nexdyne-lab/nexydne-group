@@ -15,7 +15,8 @@ export default function PortfolioAnalytics() {
       serviceName="Portfolio Analytics"
       serviceSlug="portfolio-analytics"
       heroSubtitle="Build analytics capabilities that track portfolio performance. Measure true profitability and identify optimization opportunities."
-      heroImage="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&q=80"
+      heroImage="/images/capabilities/cap-strategy-spheres.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Portfolio Analytics engagements delivered" },
@@ -70,14 +71,14 @@ export default function PortfolioAnalytics() {
           title: "Accounting firm modernizes audit workflows",
           industry: "Professional Services · Portfolio Optimization",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-aerial-grid.jpg",
         },
         {
           slug: "healthcare-data-analytics",
           title: "Health system unifies patient data for population analytics",
           industry: "Healthcare · Portfolio Optimization",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-presenting-graphs.jpg",
         },
       ]}
       relatedServices={[

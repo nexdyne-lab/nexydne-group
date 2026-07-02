@@ -15,7 +15,8 @@ export default function OpportunityAssessment() {
       serviceName="AI Opportunity Assessment"
       serviceSlug="opportunity-assessment"
       heroSubtitle="Systematic evaluation of AI use cases across your value chain. We identify where AI can drive the most impact based on feasibility, value, and strategic fit. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-strategy-meeting.2402f79c.jpg"
+      heroImage="/images/capabilities/cap-telescope.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "AI Opportunity Assessment engagements delivered" },
@@ -68,14 +69,14 @@ export default function OpportunityAssessment() {
           title: "Unlocking enterprise data for a national healthcare network",
           industry: "Healthcare",
           metric: "10x",
-          image: "/case-healthcare-analytics.0ceb030c.jpg",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "Building a national telehealth platform from the ground up",
           industry: "Healthcare",
           metric: "12x",
-          image: "/case-doctor-consultation.799c1562.jpg",
+          image: "/images/capabilities/cap-presenting-graphs.jpg",
         },
       ]}
       relatedServices={[

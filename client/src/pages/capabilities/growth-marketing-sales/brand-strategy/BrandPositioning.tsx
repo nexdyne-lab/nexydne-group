@@ -15,7 +15,8 @@ export default function BrandPositioning() {
       serviceName="Brand Positioning"
       serviceSlug="brand-positioning"
       heroSubtitle="Define a distinctive market position that resonates with customers and differentiates from competitors. Build positioning platforms that guide all brand decisions."
-      heroImage="https://images.unsplash.com/photo-1493612276216-ee3925520721?w=1600&q=80"
+      heroImage="/images/capabilities/cap-presenting-graphs.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Brand Positioning engagements delivered" },
@@ -70,14 +71,14 @@ export default function BrandPositioning() {
           title: "Consultancy unlocks 30 years of IP with AI knowledge graph",
           industry: "Professional Services · Brand Strategy",
           metric: "4x",
-          image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=80",
+          image: "/images/capabilities/cap-diverse-team.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional bank automates KYC and onboarding",
           industry: "Financial Services · Brand Strategy",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
       ]}
       relatedServices={[

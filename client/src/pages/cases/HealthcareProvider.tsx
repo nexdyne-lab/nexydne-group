@@ -7,7 +7,7 @@ export function HealthcareProvider() {
       industry="Healthcare · Process Automation"
       title="Healthcare Provider: Patient Data Management"
       subtitle="Deployed intelligent automation to streamline patient record management and insurance claims processing, reducing administrative overhead by 40% while improving data accuracy to 95%."
-      heroImage="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&q=80"
+      heroImage="/case-medical-collaboration.9602cc8c.jpg"
       challenge={`A multi-location healthcare network serving 50,000+ patients annually was overwhelmed by administrative burden. Their staff spent 300+ hours weekly manually transferring patient data between their EHR system, insurance portals, and billing platform. Each patient visit required data entry across four different systems, creating bottlenecks that delayed care and frustrated both staff and patients.
 
 Manual data entry introduced errors that cascaded through the revenue cycle—incorrect insurance information, missing authorizations, duplicate claims. These mistakes cost the network $3M+ annually in claim denials, delayed reimbursements, and administrative appeals. Staff burnout from repetitive data entry was driving turnover rates above 40%, creating additional recruitment and training costs.`}

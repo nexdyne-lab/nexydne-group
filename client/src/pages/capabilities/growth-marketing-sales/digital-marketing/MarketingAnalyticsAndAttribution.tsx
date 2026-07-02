@@ -15,7 +15,8 @@ export default function MarketingAnalyticsAndAttribution() {
       serviceName="Marketing Analytics & Attribution"
       serviceSlug="marketing-analytics-and-attribution"
       heroSubtitle="Integrate customer data across channels to build a complete view of the customer journey. Develop attribution models that accurately measure marketing impact."
-      heroImage="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1600&q=80"
+      heroImage="/images/capabilities/cap-hologram.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Marketing Analytics & Attribution engagements delivered" },
@@ -70,14 +71,14 @@ export default function MarketingAnalyticsAndAttribution() {
           title: "Fintech scales payment ops with intelligent automation",
           industry: "Fintech · Digital Marketing",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "Telehealth provider scales virtual care platform",
           industry: "Healthcare · Digital Marketing",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
       ]}
       relatedServices={[

@@ -7,7 +7,7 @@ export function ConsumerGoodsSupplyChain() {
       industry="Manufacturing · Operations"
       title="Supply Chain Optimization Reduces Costs by 25%"
       subtitle="How a consumer goods manufacturer transformed their supply chain to achieve significant cost savings and improved lead times."
-      heroImage="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600&q=80"
+      heroImage="/images/industries/retail-warehouse.jpg"
       challenge={`The company faced escalating supply chain costs that were eroding margins in an increasingly competitive market. Raw material costs had increased 15% over two years, while customer demands for faster delivery were intensifying. The existing supply chain was fragmented, with limited visibility into inventory levels across facilities and no systematic approach to demand planning.
 
 A 200-employee consumer goods manufacturer with $85M in annual revenue operates three production facilities across the Midwest, producing household cleaning products sold through major retailers and regional distributors. The supply chain diagnostic revealed interconnected issues: inventory distributed unevenly across facilities (some locations holding 90+ days of stock, others facing frequent stockouts), over 150 suppliers with no formal management program, transportation costs 18% above industry benchmarks due to inefficient routing and carrier selection, and demand forecasting relying on spreadsheets and sales team intuition.`}

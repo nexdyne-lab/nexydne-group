@@ -22,7 +22,7 @@ const caseStudies: CaseStudy[] = [
     company: "Multi-Location Retailer",
     title: "Unified Data Platform Reveals $2M in Hidden Revenue Opportunities",
     description: "A regional retailer consolidated fragmented data sources to uncover customer behavior patterns that led to targeted promotions and significant revenue growth.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+    image: "/images/industries/tech-glasses.jpg"
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const caseStudies: CaseStudy[] = [
     company: "Industrial Equipment Co.",
     title: "Predictive Maintenance Analytics Cuts Downtime by 40%",
     description: "A manufacturing company implemented sensor data analytics to predict equipment failures before they happen, dramatically reducing unplanned downtime and maintenance costs.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
+    image: "/images/capabilities/cap-ai-search.jpg",
     hasVideo: true
   },
   {
@@ -39,7 +39,7 @@ const caseStudies: CaseStudy[] = [
     company: "Regional Hospital System",
     title: "Clinical Analytics Improves Patient Outcomes by 25%",
     description: "A hospital system leveraged AI-powered analytics to identify at-risk patients earlier, enabling proactive interventions that significantly improved outcomes.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop"
+    image: "/images/capabilities/cap-hologram.jpg"
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const caseStudies: CaseStudy[] = [
     company: "Investment Advisory Firm",
     title: "Real-Time Market Intelligence Transforms Investment Decisions",
     description: "An investment firm deployed advanced analytics to process market data in real-time, giving advisors actionable insights that improved portfolio performance.",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=600&fit=crop",
+    image: "/images/capabilities/cap-circuit-green.jpg",
     hasVideo: true
   }
 ];
@@ -57,19 +57,19 @@ const insights = [
     category: "Data & Analytics",
     title: "Building a Data-Driven Culture: Lessons from Leading Organizations",
     description: "How successful companies embed data into every decision, from the boardroom to the front line.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
+    image: "/images/industries/tech-datacenter.jpg"
   },
   {
     category: "AI, Insights, and Solutions",
     title: "From Data Lakes to Data Products: The Evolution of Enterprise Analytics",
     description: "Moving beyond data storage to create actionable, self-service analytics capabilities.",
-    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=300&fit=crop"
+    image: "/images/capabilities/cap-coder.jpg"
   },
   {
     category: "Digital",
     title: "The Hidden Value in Your Data: A Framework for Discovery",
     description: "A practical approach to identifying and extracting value from underutilized data assets.",
-    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=300&fit=crop"
+    image: "/images/capabilities/cap-conference-data.jpg"
   }
 ];
 

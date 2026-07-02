@@ -10,7 +10,8 @@ export default function MarketingOperations() {
       hubName="Marketing Operations"
       slug="marketing-operations"
       heroSubtitle="Transform your marketing operations into a competitive advantage. We help you build scalable processes, optimize technology, and drive efficiency across your marketing organization."
-      heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80"
+      heroImage="/images/capabilities/cap-celebrate.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         { number: "150+", label: "marketing operations transformations delivered" },
         { number: "30%", label: "average reduction in marketing operational costs" },
@@ -113,21 +114,21 @@ export default function MarketingOperations() {
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Automation",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-retail-apparel.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Hospital Network Cuts Documentation Time Per Shift By Two Hours",
           industry: "Healthcare · Workflow",
           metric: "2hr",
-          image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
         {
           slug: "accounting-audit-automation",
           title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
           industry: "Financial Services · Audit",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
         },
       ]}
       relatedCapabilities={[

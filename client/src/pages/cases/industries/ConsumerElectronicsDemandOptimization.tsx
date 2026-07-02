@@ -11,7 +11,7 @@ export default function ConsumerElectronicsDemandOptimization() {
       industryLink="/industries/consumer-products"
       title="Consumer Electronics Company Cuts Inventory 40% with AI Optimization"
       subtitle="How machine learning models optimize inventory across short product lifecycles, reducing excess stock while maintaining availability."
-      heroImage="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=1920&q=80"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
       metrics={[
         { value: "40%", label: "Inventory Reduction" },
         { value: "97%", label: "In-Stock Rate" },
@@ -111,14 +111,14 @@ export default function ConsumerElectronicsDemandOptimization() {
           metric: "30%",
           label: "forecast improvement",
           link: "/cases/food-beverage-demand-forecasting",
-          image: "https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=600&q=80"
+          image: "/images/industries/meeting-topview.jpg"
         },
         {
           title: "Assortment Optimization for Retailer",
           metric: "12%",
           label: "sales lift",
           link: "/cases/retail-assortment-optimization",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80"
+          image: "/images/capabilities/cap-data-bars.jpg"
         }
       ]}
       ctaTitle="Ready to Optimize Your Inventory?"

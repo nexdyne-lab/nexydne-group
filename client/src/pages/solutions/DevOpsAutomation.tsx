@@ -53,14 +53,14 @@ export default function DevOpsAutomation() {
           title: "B2B SaaS Cuts Lead Time from Six Days to Four Hours",
           industry: "SaaS & Technology",
           metric: "6 days → 4 hrs",
-          image: "https://images.unsplash.com/photo-1556742031-c6961e8560b0?w=1600&q=80",
+          image: "/images/capabilities/cap-robot-factory.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional Bank Achieves Zero-Downtime Deploys with Canary Pipeline",
           industry: "Financial Services",
           metric: "0 downtime",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/capabilities/cap-warehouse-robot.jpg",
         },
       ]}
       relatedServices={[

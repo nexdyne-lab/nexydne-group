@@ -10,7 +10,8 @@ export default function GrowthStrategy() {
       hubName="Growth Strategy"
       slug="growth-strategy"
       heroSubtitle="Identify and capture new opportunities. We help you define where to play and how to win, from market entry to portfolio optimization."
-      heroImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80"
+      heroImage="/images/capabilities/cap-mobile-woman.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         { number: "120+", label: "growth strategy engagements over the past decade" },
         { number: "15-25%", label: "typical revenue growth acceleration" },
@@ -113,21 +114,21 @@ export default function GrowthStrategy() {
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Automation",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-peacock.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Cuts Payment Reconciliation Cost By Two Thirds",
           industry: "Financial Services · Payments",
           metric: "67%",
-          image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
         {
           slug: "legal-document-intelligence",
           title: "Legal Tech Vendor Launches Document Intelligence Platform For Mid-Market Firms",
           industry: "Professional Services · Document AI",
           metric: "10x",
-          image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
       ]}
       relatedCapabilities={[

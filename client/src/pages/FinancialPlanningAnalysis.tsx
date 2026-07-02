@@ -107,7 +107,7 @@ export default function FinancialPlanningAnalysis() {
             >
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80" 
+                  src="/images/industries/fin-monitors.jpg" 
                   alt="Financial Analytics Dashboard" 
                   className="w-full h-auto"
                 />
@@ -289,19 +289,19 @@ export default function FinancialPlanningAnalysis() {
               {
                 title: "FP&A transformation reduces close cycle by 60%",
                 category: "Professional Services",
-                image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80",
+                image: "/images/industries/fin-trader.jpg",
                 link: "/case-studies/fpa-transformation"
               },
               {
                 title: "Predictive revenue model improves forecast accuracy by 35%",
                 category: "B2B SaaS",
-                image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80",
+                image: "/images/industries/fin-handshake-city.jpg",
                 link: "/case-studies/predictive-revenue"
               },
               {
                 title: "Automated variance analysis cuts reporting time in half",
                 category: "Logistics",
-                image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80",
+                image: "/images/industries/advisor-charts.jpg",
                 link: "/case-studies/variance-analysis"
               }
             ].map((study, i) => (
@@ -407,19 +407,19 @@ export default function FinancialPlanningAnalysis() {
             title: "Why Rolling Forecasts Outperform Annual Budgets",
             category: "FP&A",
             link: "/insights/rolling-forecasts",
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80"
+            image: "/images/industries/fin-monitors.jpg"
           },
           {
             title: "Building KPI Dashboards That Drive Action",
             category: "Analytics",
             link: "/insights/kpi-dashboards",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+            image: "/images/industries/fin-trader.jpg"
           },
           {
             title: "The CFO's Guide to Data Integration",
             category: "Technology",
             link: "/insights/cfo-data-integration",
-            image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80"
+            image: "/images/industries/fin-handshake-city.jpg"
           }
         ]}
       />

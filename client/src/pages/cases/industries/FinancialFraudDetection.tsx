@@ -11,7 +11,7 @@ export default function FinancialFraudDetection() {
       industryLink="/industries/financial-services"
       title="Regional Bank Transforms Fraud Detection with Real-Time AI"
       subtitle="How a $15B regional bank deployed machine learning to detect fraud in milliseconds, reducing losses by 73% while improving customer experience."
-      heroImage="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1920&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       metrics={[
         { value: "73%", label: "Reduction in Fraud Losses" },
         { value: "85%", label: "Fewer False Positives" },
@@ -111,14 +111,14 @@ export default function FinancialFraudDetection() {
           metric: "$200M",
           label: "increase in cross-sell revenue",
           link: "/cases/bank-cross-sell",
-          image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
+          image: "/images/industries/fin-trader.jpg"
         },
         {
           title: "Wealth Management Digital Onboarding",
           metric: "60%",
           label: "reduction in onboarding time",
           link: "/cases/wealth-onboarding",
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+          image: "/images/industries/fin-handshake-city.jpg"
         }
       ]}
       ctaTitle="Ready to Transform Your Fraud Detection?"

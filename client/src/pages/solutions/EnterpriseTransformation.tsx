@@ -135,7 +135,7 @@ export default function EnterpriseTransformation() {
       // TODO: confirm with practice lead before publish (image path)
       inPractice={{
         image:
-          "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80",
+          "/images/capabilities/cap-aerial-grid.jpg",
         intro:
           "For most mid-market companies, technology is the bottleneck rather than the growth engine — aging systems that cannot scale, data trapped in silos, and IT teams stretched thin just keeping the lights on. We work with growing companies who have outgrown their starter tech stack but are not ready for the complexity and cost of enterprise solutions. We modernize systems in phases, align technology strategy with where the business is heading, and build foundations that support AI without a Fortune 500 budget.",
         realOutcomes: [

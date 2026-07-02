@@ -11,7 +11,7 @@ export default function OperationsQualityManagementQualityStrategyGovernance() {
       serviceName="Quality Strategy & Governance"
       serviceSlug="quality-strategy-governance"
       heroSubtitle="Define your quality vision and management system. Establish governance structures, metrics, and accountability frameworks that drive results."
-      heroImage="https://images.unsplash.com/photo-1581092446327-9b52bd1570c2?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/mfg-robotics.jpg"
       experienceStats={[
         { number: "100+", label: "Quality Management engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsQualityManagementQualityStrategyGovernance() {
           title: "Big Four Firm Modernizes Audit with End-to-End Automation",
           industry: "Professional Services · Operations",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1600&q=80",
+          image: "/images/capabilities/cap-battery-factory.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Academic Medical Center Streamlines Clinical Workflows",
           industry: "Healthcare · Operations",
           metric: "30%",
-          image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1600&q=80",
+          image: "/images/industries/mfg-robot-arm.jpg",
         },
       ]}
       relatedServices={[

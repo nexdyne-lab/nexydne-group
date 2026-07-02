@@ -15,7 +15,8 @@ export default function Strategy() {
       serviceName="Digital Twin Strategy"
       serviceSlug="strategy"
       heroSubtitle="Define your digital twin vision and identify high-value use cases. Assess readiness, select technologies, and create a phased implementation roadmap. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-digital-transformation.a3f57989.jpg"
+      heroImage="/images/capabilities/cap-telescope.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Digital Twin Strategy engagements delivered" },
@@ -68,7 +69,7 @@ export default function Strategy() {
           title: "Transforming clinical workflow at a leading academic medical center",
           industry: "Healthcare",
           metric: "40%",
-          image: "/case-clinical-workflow.ca226f80.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

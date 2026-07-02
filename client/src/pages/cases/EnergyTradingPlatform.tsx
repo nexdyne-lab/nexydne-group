@@ -7,7 +7,7 @@ export function EnergyTradingPlatform() {
       industry="Energy · Custom Software"
       title="Energy Firm Builds Real-Time Trading Platform for $50M Daily Volume"
       subtitle="Custom React/Node.js platform processes 50,000 trades daily with sub-second latency, replacing legacy system that couldn't scale."
-      heroImage="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1600&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       challenge={`A mid-sized energy trading firm in Houston was processing $50 million in daily transactions through a 15-year-old proprietary system built on outdated technology. The platform struggled to handle peak trading volumes, frequently experienced latency spikes during market volatility, and lacked the real-time analytics traders needed to make split-second decisions.
 
 The legacy system's limitations were costing the firm money in three ways: missed trading opportunities due to slow execution, manual workarounds that increased operational risk, and expensive maintenance contracts for obsolete infrastructure. Off-the-shelf trading platforms couldn't accommodate their unique risk models and regulatory reporting requirements.

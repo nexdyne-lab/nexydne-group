@@ -15,7 +15,8 @@ export default function ChannelStrategyDesign() {
       serviceName="Channel Strategy Design"
       serviceSlug="channel-strategy-design"
       heroSubtitle="We design multi-channel go-to-market strategies optimized for your product, customer profile, and competitive landscape."
-      heroImage="/images/go-to-market-abstract.jpg"
+      heroImage="/images/industries/deal-handshake.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Channel Strategy Design engagements delivered" },
@@ -70,14 +71,14 @@ export default function ChannelStrategyDesign() {
           title: "Manufacturer Creates Direct-to-Consumer Channel",
           industry: "Manufacturing · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=80",
+          image: "/images/industries/deal-handshake.jpg",
         },
         {
           slug: "distributor-marketplace",
           title: "Regional Distributor Launches Digital Marketplace",
           industry: "Distribution · Business Building",
           metric: "$50M+",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/industries/fin-handshake-city.jpg",
         },
       ]}
       relatedServices={[

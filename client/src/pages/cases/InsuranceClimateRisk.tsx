@@ -7,7 +7,7 @@ export function InsuranceClimateRisk() {
       industry="Insurance · Risk Analytics"
       title="Insurer Models Climate Risk to Protect Portfolios"
       subtitle="Advanced geospatial analytics and climate modeling enabled more accurate underwriting and portfolio diversification, improving loss ratio by 15% and reducing capital requirements by 20%."
-      heroImage="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1600&q=80"
+      heroImage="/case-insurance-office.f039a4a1.jpg"
       challenge={`A global property and casualty insurer faced mounting losses from increasingly frequent and severe weather events. Historical loss data was no longer a reliable predictor of future risk due to climate change. The insurer's existing models failed to account for granular, localized risks like flash flooding or urban heat islands.
 
 To remain solvent and competitive, they needed a forward-looking risk model that could quantify the impact of climate change on their property portfolio over 5, 10, and 20-year horizons. Without this capability, underwriting decisions were based on outdated assumptions, and portfolio concentration risks went undetected until catastrophic loss events materialized.`}

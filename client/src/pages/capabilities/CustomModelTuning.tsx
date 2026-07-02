@@ -43,7 +43,7 @@ export default function CustomModelTuning() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background z-10" />
           <img 
-            src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2670&auto=format&fit=crop" 
+            src="/images/industries/tech-glasses.jpg" 
             alt="AI Model Tuning" 
             className="w-full h-full object-cover opacity-50"
           />
@@ -231,7 +231,7 @@ export default function CustomModelTuning() {
               className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl"
             >
               <img 
-                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2670&auto=format&fit=crop" 
+                src="/images/capabilities/cap-ai-search.jpg" 
                 alt="Neural Network Tuning" 
                 className="w-full h-full object-cover"
               />
@@ -442,7 +442,7 @@ export default function CustomModelTuning() {
               className="relative h-full min-h-[600px] rounded-xl sm:rounded-2xl overflow-hidden"
             >
               <img 
-                src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2670&auto=format&fit=crop" 
+                src="/images/capabilities/cap-hologram.jpg" 
                 alt="Code Interface" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -469,7 +469,7 @@ export default function CustomModelTuning() {
 
       {/* DZ10 CTA Section */}
       <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-background relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+        <div className="absolute inset-0 bg-[url('/images/capabilities/cap-circuit-green.jpg')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
         <div className="container mx-auto px-4 md:px-12 relative z-10 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -112,7 +112,7 @@ export default function SupplyChainOptimization() {
               </div>
               <div className="col-span-2 relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&q=80" 
+                  src="/images/industries/retail-warehouse.jpg" 
                   alt="Supply Chain Excellence" 
                   className="w-full h-48 object-cover"
                 />
@@ -251,7 +251,7 @@ export default function SupplyChainOptimization() {
             >
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80" 
+                  src="/images/capabilities/cap-warehouse-robot.jpg" 
                   alt="Supply Chain Methodology" 
                   className="w-full h-auto"
                 />
@@ -291,17 +291,17 @@ export default function SupplyChainOptimization() {
               {
                 title: "Regional distributor reduces inventory costs by 35%",
                 category: "Inventory Optimization",
-                image: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80"
+                image: "/images/industries/transport-bridge.jpg"
               },
               {
                 title: "Manufacturer builds resilient multi-source supplier network",
                 category: "Supplier Management",
-                image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80"
+                image: "/images/industries/transport-traffic.jpg"
               },
               {
                 title: "E-commerce company cuts fulfillment time by 40%",
                 category: "Logistics",
-                image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&q=80"
+                image: "/images/industries/retail-warehouse.jpg"
               }
             ].map((study, i) => (
               <motion.div 
@@ -380,19 +380,19 @@ export default function SupplyChainOptimization() {
             title: "Generative AI in Supply Chain",
             category: "Technology",
             link: "/insights/generative-supply-chain",
-            image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-warehouse-robot.jpg"
           },
           {
             title: "IoT for Resilient Supply Chains",
             category: "Innovation",
             link: "/insights/iot-resilient-supply-chain",
-            image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80"
+            image: "/images/industries/transport-bridge.jpg"
           },
           {
             title: "The Complete Guide to Process Mining",
             category: "Operations",
             link: "/insights/complete-guide-process-mining",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+            image: "/images/industries/transport-traffic.jpg"
           }
         ]}
       />

@@ -15,7 +15,8 @@ export default function CapabilityMigration() {
       serviceName="Capability Migration"
       serviceSlug="capability-migration"
       heroSubtitle="We execute phased migrations of business capabilities to the new architecture. Each migration follows proven patterns that minimize disruption while delivering immediate value through improved performance."
-      heroImage="/images/digital-transformation-abstract.jpg"
+      heroImage="/images/capabilities/cap-dome-blue.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Capability Migration engagements delivered" },
@@ -70,7 +71,7 @@ export default function CapabilityMigration() {
           title: "Industrial Distributor Launches B2B E-commerce Platform",
           industry: "Industrial Distribution · Business Building",
           metric: "35%",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-aerial-grid.jpg",
         },
       ]}
       relatedServices={[

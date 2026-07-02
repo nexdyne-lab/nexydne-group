@@ -23,7 +23,7 @@ export default function EcommerceEconomics() {
       <section className="relative min-h-[60vh] flex items-center pt-20 overflow-hidden bg-background">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=2000&q=80" 
+            src="/images/capabilities/cap-retail-apparel.jpg" 
             alt="E-commerce Shopping" 
             className="w-full h-full object-cover opacity-20"
           />
@@ -441,21 +441,21 @@ export default function EcommerceEconomics() {
             type: "Article",
             title: "The digital growth playbook for mid-market companies",
             description: "How leading mid-market companies are building digital channels that compete with well-funded startups.",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+            image: "/images/capabilities/cap-retail-data.jpg",
             link: "/insights/digital-growth-playbook"
           },
           {
             type: "Whitepaper",
             title: "The marketplace playbook: Building network effects",
             description: "A comprehensive guide to launching and scaling two-sided marketplaces.",
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+            image: "/images/capabilities/cap-mobile-woman.jpg",
             link: "/insights/marketplace-playbook"
           },
           {
             type: "Article",
             title: "Headless commerce: The engineering case",
             description: "Why decoupling your frontend from your backend is the key to agility and speed.",
-            image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+            image: "/images/industries/retail-shelves.jpg",
             link: "/insights/headless-commerce-guide"
           }
         ]}

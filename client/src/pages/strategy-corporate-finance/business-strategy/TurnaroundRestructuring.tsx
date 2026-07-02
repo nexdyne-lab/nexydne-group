@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceBusinessStrategyTurnaroundRestru
       serviceName="Turnaround & Restructuring"
       serviceSlug="turnaround-restructuring"
       heroSubtitle="Navigate challenging situations with confidence. Stabilize operations, restructure finances, and position for recovery and growth."
-      heroImage="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-chess.jpg"
       experienceStats={[
         { number: "100+", label: "Business Strategy & Transformation engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,21 +52,21 @@ export default function StrategyCorporateFinanceBusinessStrategyTurnaroundRestru
           title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
           industry: "Financial Services · Strategy",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Strategy",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/industries/team-strategy-board.jpg",
         },
         {
           slug: "insurance-claims-processing",
           title: "Insurer Slashes Claims Processing Time With Intelligent Workflow",
           industry: "Financial Services · Strategy",
           metric: "65%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-strategy-spheres.jpg",
         },
       ]}
       relatedServices={[

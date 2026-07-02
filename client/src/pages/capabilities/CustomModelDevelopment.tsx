@@ -10,7 +10,8 @@ export default function CustomModelDevelopment() {
       slug="custom-model-development"
       heroSubtitle="Build proprietary AI models tailored to your unique business challenges. From fine-tuning foundation models to training custom architectures, we deliver AI that fits your data, your domain, and your economics."
       // TODO: confirm hero image asset matches Custom Model Development theme
-      heroImage="/hero-ai-brain.738a6c59.png"
+      heroImage="/images/capabilities/cap-coder.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "90+", label: "Custom models trained and deployed" },
@@ -116,21 +117,21 @@ export default function CustomModelDevelopment() {
           title: "Transforming legal research with AI-powered document intelligence",
           industry: "Professional Services",
           metric: "70%",
-          image: "/case-legal-team.2f84fc95.jpg",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "healthcare-data-analytics",
           title: "Unlocking healthcare insights with real-time data analytics",
           industry: "Healthcare",
           metric: "25%",
-          image: "/case-healthcare-team.5797392b.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Building a scalable payment processing system for a fintech startup",
           industry: "Financial Services",
           metric: "100K+",
-          image: "/case-financial-advisor.7bb94f0c.jpg",
+          image: "/images/industries/tech-datacenter.jpg",
         },
       ]}
       relatedCapabilities={[

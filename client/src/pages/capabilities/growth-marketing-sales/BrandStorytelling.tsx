@@ -11,7 +11,8 @@ export default function BrandStorytelling() {
       hubName="Brand & Storytelling"
       slug="brand-storytelling"
       heroSubtitle="Translating complex innovation into clear market authority. We help digital leaders build brands that scale as fast as their technology."
-      heroImage="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2670&auto=format&fit=crop"
+      heroImage="/images/capabilities/cap-peacock.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         { number: "End-to-end", label: "Brand & Storytelling engagements from diagnostic through execution" },
         { number: "Mid-market", label: "Sized for ambitious mid-market companies — not Fortune 500 only" },
@@ -114,21 +115,21 @@ export default function BrandStorytelling() {
           title: "Legal Tech Vendor Launches Document Intelligence Platform For Mid-Market Firms",
           industry: "Professional Services · Document AI",
           metric: "10x",
-          image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "Telehealth Platform Scales To Two Million Monthly Visits",
           industry: "Healthcare · Telehealth",
           metric: "2M",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
         {
           slug: "accounting-audit-automation",
           title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
           industry: "Financial Services · Audit",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-retail-apparel.jpg",
         },
       ]}
       relatedCapabilities={[

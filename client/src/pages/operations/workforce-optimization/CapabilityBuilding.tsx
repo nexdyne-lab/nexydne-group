@@ -11,7 +11,7 @@ export default function OperationsWorkforceOptimizationCapabilityBuilding() {
       serviceName="Capability Building"
       serviceSlug="capability-building"
       heroSubtitle="Develop the skills your operations need. Training program design, competency frameworks, and learning pathways that accelerate skill development."
-      heroImage="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-diverse-team.jpg"
       experienceStats={[
         { number: "100+", label: "Workforce Optimization engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsWorkforceOptimizationCapabilityBuilding() {
           title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
           industry: "Professional Services · Operations",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
           industry: "Professional Services · Operations",
           metric: "85%",
-          image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&q=80",
+          image: "/images/industries/biz-team-bright.jpg",
         },
       ]}
       relatedServices={[

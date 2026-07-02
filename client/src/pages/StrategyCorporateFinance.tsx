@@ -7,7 +7,7 @@ export default function StrategyCorporateFinance() {
       capabilitySlug="strategy-corporate-finance"
       // PRESERVED VERBATIM from source hero subtitle
       heroSubtitle="Align financial resources with strategic vision to unlock sustainable growth. We provide the financial leadership that ambitious SMEs need to compete and win."
-      heroImage="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       // PRESERVED CTA labels from source (Schedule a Consultation + View Case Studies)
       heroPrimaryCTA={{
         label: "Schedule a Consultation",
@@ -133,7 +133,7 @@ export default function StrategyCorporateFinance() {
       // TODO: confirm with practice lead before publish (image path + realOutcomes / howWeHelp framing)
       inPractice={{
         image:
-          "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&q=80",
+          "/images/industries/fin-trader.jpg",
         intro:
           "In today's complex business environment, financial leadership is not just about managing numbers — it is about aligning resources with strategic vision to unlock sustainable growth. The most successful organizations have moved beyond reactive financial management to build proactive strategic finance functions that operate with the precision of a well-tuned engine, combining real-time visibility, predictive decision-making, and capital optimization. We don't just implement tools; we refactor the entire financial operating model — from capital structure to performance management — so finance becomes a competitive weapon, not a cost center.",
         realOutcomes: [

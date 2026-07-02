@@ -46,7 +46,7 @@ export default function EcommercePlatforms() {
             <div className="flex flex-col items-center text-center">
               <div className="w-64 h-64 rounded-full overflow-hidden bg-gradient-to-br from-primary to-primary mb-6">
                 <img 
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=800" 
+                  src="/images/capabilities/cap-celebrate.jpg" 
                   alt="James Wilson"
                   className="w-full h-full object-cover"
                 />
@@ -323,7 +323,7 @@ export default function EcommercePlatforms() {
               <a className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                 <div className="aspect-video overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=600" 
+                    src="/images/capabilities/cap-lightbulb-idea.jpg" 
                     alt="Fashion Retailer Headless Commerce"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -359,7 +359,7 @@ export default function EcommercePlatforms() {
               <a className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                 <div className="aspect-video overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1574169208507-84376144848b?auto=format&fit=crop&q=80&w=600" 
+                    src="/images/capabilities/cap-retail-apparel.jpg" 
                     alt="Optics Retailer Webshop Platform"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -395,7 +395,7 @@ export default function EcommercePlatforms() {
               <a className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                 <div className="aspect-video overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=600" 
+                    src="/images/capabilities/cap-mobile-woman.jpg" 
                     alt="B2B Manufacturer Commerce Platform"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />

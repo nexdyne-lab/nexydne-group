@@ -12,6 +12,7 @@ export default function HealthcareIndustry() {
       slug="healthcare"
       heroSubtitle="We help health systems, payers, and life-sciences leaders move beyond fee-for-service — pairing clinical insight with AI-powered operations to improve outcomes, lift the care experience, and build the data foundations the next decade of healthcare will demand."
       heroImage="/case-medical-collaboration.9602cc8c.jpg"
+      heroFocal="60% 40%"
       povParagraphs={[
         "We begin our healthcare engagements by understanding the unique pressures your organization faces — whether you are a health system navigating value-based care, a payer trying to lift member outcomes, or a life-sciences company compressing time-to-market. Our approach blends clinical insight with technology expertise to deliver solutions that work in the real world of care delivery.",
         "Healthcare is in the middle of a fundamental shift — from volume to value, from episodic care to longitudinal engagement, from siloed records to unified clinical and operational data. Organizations that harness these forces will compound advantage. Those that cannot will struggle to keep up with consumer expectations, payer pressure, and the cost of care itself.",

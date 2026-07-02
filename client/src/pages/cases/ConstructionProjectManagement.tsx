@@ -7,7 +7,7 @@ export function ConstructionProjectManagement() {
       industry="Construction · Project Management"
       title="Construction Firm Replaces 5 Tools with Unified Project Management Platform"
       subtitle="Custom web and mobile app consolidated scheduling, resource allocation, and financial tracking—saving $180K annually in software costs."
-      heroImage="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80"
+      heroImage="/images/industries/eng-designers.jpg"
       challenge={`A regional construction firm managing $120 million in annual projects was juggling five separate software platforms: one for scheduling, another for resource allocation, a third for financial tracking, a fourth for document management, and a fifth for field reporting. Project managers spent hours each week manually reconciling data between systems, leading to errors, delays, and frustrated teams.
 
 The fragmented toolset created visibility gaps. Executives couldn't get real-time project status without requesting custom reports from multiple systems. Field crews used paper forms because the mobile apps were clunky and required internet connectivity. Budget overruns weren't discovered until monthly financial reviews—too late to course-correct.

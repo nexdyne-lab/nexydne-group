@@ -15,7 +15,8 @@ export default function ChangeManagement() {
       serviceName="Change Management Planning"
       serviceSlug="change-management"
       heroSubtitle="Develop strategies for workforce adoption, skill building, and cultural change. AI success depends on people, not just technology. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-strategy-meeting.2402f79c.jpg"
+      heroImage="/images/industries/biz-team-bright.jpg"
+      heroFocal="60% 40%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Change Management Planning engagements delivered" },
@@ -68,7 +69,7 @@ export default function ChangeManagement() {
           title: "AI-driven patient engagement for a major hospital system",
           industry: "Healthcare",
           metric: "35%",
-          image: "/case-medical-collaboration.9602cc8c.jpg",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
       ]}
       relatedServices={[

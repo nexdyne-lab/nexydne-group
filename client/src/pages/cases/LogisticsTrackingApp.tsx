@@ -7,7 +7,7 @@ export function LogisticsTrackingApp() {
       industry="Logistics · Low-Code Development"
       title="Logistics Firm Builds Real-Time Tracking App for 500 Drivers"
       subtitle="3PL provider deploys OutSystems mobile app for package tracking and route optimization—improving on-time delivery from 82% to 96% and reducing fuel costs by $850K annually."
-      heroImage="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1600&q=80"
+      heroImage="/images/industries/retail-warehouse.jpg"
       challenge={`A third-party logistics (3PL) provider operating 500 delivery vehicles across the Southeast faced mounting pressure from e-commerce clients demanding Amazon-level delivery visibility. Their drivers relied on paper manifests and manual check-ins via phone calls, making real-time package tracking impossible. Dispatchers spent 40% of their time answering "Where is my package?" calls from customers, while drivers wasted hours on inefficient routes due to lack of dynamic routing capabilities.
 
 On-time delivery performance had declined to 82%, well below the industry standard of 95%, leading to SLA penalties and client churn. The company's legacy transportation management system (TMS) lacked mobile capabilities and couldn't provide real-time GPS tracking or proof-of-delivery capture. With major e-commerce clients threatening to switch providers, the 3PL needed a mobile-first solution that could launch quickly, integrate with their TMS, and provide real-time visibility without disrupting daily operations.`}

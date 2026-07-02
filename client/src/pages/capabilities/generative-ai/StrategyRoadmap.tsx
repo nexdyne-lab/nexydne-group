@@ -15,7 +15,8 @@ export default function StrategyRoadmap() {
       serviceName="GenAI Strategy & Roadmap"
       serviceSlug="strategy-roadmap"
       heroSubtitle="Define a high-impact Generative AI roadmap with specific goals, quantified ROI, and detailed execution plans including feasibility studies and risk assessments. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-ai-agents.eba3d75f.jpg"
+      heroImage="/images/capabilities/cap-telescope.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "GenAI Strategy & Roadmap engagements delivered" },
@@ -68,14 +69,14 @@ export default function StrategyRoadmap() {
           title: "Transforming knowledge management for a global consulting firm",
           industry: "Professional Services",
           metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "How contract automation transformed a leading law firm’s operations",
           industry: "Professional Services",
           metric: "65%",
-          image: "/case-law-firm-meeting.401c96db.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

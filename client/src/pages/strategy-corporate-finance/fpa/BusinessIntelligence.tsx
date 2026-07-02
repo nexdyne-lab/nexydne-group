@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceFpaBusinessIntelligence() {
       serviceName="Business Intelligence"
       serviceSlug="business-intelligence"
       heroSubtitle="Deploy dashboards and analytics tools that provide real-time visibility into performance across the organization."
-      heroImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
       experienceStats={[
         { number: "100+", label: "Financial Planning & Analysis engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,14 +52,14 @@ export default function StrategyCorporateFinanceFpaBusinessIntelligence() {
           title: "Health System Unlocks Population Health Insights With Unified Data Platform",
           industry: "Healthcare · Strategy",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-presenting-graphs.jpg",
         },
         {
           slug: "consulting-knowledge-management",
           title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
           industry: "Professional Services · Strategy",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80",
+          image: "/images/industries/fin-monitors.jpg",
         },
       ]}
       relatedServices={[

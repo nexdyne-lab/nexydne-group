@@ -119,7 +119,7 @@ export default function Capabilities() {
         eyebrow="CAPABILITIES"
         title="Capabilities"
         subtitle="Transformative solutions that bridge strategy and execution, powered by cutting-edge technology and deep industry expertise."
-        heroImage="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1600&q=80"
+        heroImage="/images/industries/tech-datacenter.jpg"
       />
 
       {/* Capabilities Grid with solutions-style cards */}

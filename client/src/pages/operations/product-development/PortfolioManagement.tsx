@@ -11,7 +11,7 @@ export default function OperationsProductDevelopmentPortfolioManagement() {
       serviceName="Portfolio Management"
       serviceSlug="portfolio-management"
       heroSubtitle="Build portfolio management capabilities that optimize resource allocation and ensure strategic alignment across your product pipeline."
-      heroImage="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-3d-printing.jpg"
       experienceStats={[
         { number: "100+", label: "Product Development engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsProductDevelopmentPortfolioManagement() {
           title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
           industry: "Professional Services · Operations",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth Manager Automates Client Onboarding and Portfolio Reporting",
           industry: "Financial Services · Operations",
           metric: "75%",
-          image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=1600&q=80",
+          image: "/images/capabilities/cap-tablet-woman.jpg",
         },
       ]}
       relatedServices={[

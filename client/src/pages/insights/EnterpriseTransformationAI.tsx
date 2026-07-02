@@ -86,7 +86,7 @@ export default function EnterpriseTransformationAI() {
           >
             <div className="relative rounded-2xl overflow-hidden aspect-[21/9]">
               <img 
-                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2000&q=80" 
+                src="/images/industries/tech-datacenter.jpg" 
                 alt="Enterprise AI Transformation" 
                 className="w-full h-full object-cover"
               />
@@ -246,21 +246,21 @@ export default function EnterpriseTransformationAI() {
             type: "Article",
             title: "Building scalable data architectures",
             description: "The architectural patterns and technology choices that enable enterprises to scale data operations.",
-            image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+            image: "/images/capabilities/cap-circuit-green.jpg",
             link: "/insights/scalable-data-architecture"
           },
           {
             type: "Whitepaper",
             title: "The modern enterprise integration playbook",
             description: "A comprehensive guide to connecting legacy systems with modern cloud platforms.",
-            image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
+            image: "/images/capabilities/cap-ai-search.jpg",
             link: "/insights/enterprise-integration-playbook"
           },
           {
             type: "Case Study",
             title: "How a logistics company scaled 10x in 18 months",
             description: "The technology decisions and organizational changes that enabled rapid growth.",
-            image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
+            image: "/images/capabilities/cap-coder.jpg",
             link: "/cases/logistics-scale"
           }
         ]}

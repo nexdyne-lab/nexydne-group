@@ -10,7 +10,8 @@ export default function GenerativeAI() {
       slug="generative-ai"
       heroSubtitle="Deploy intelligent assistants and content systems that handle complex inquiries, draft documentation, and accelerate every knowledge worker — freeing your workforce for higher-value strategic impact."
       // TODO: confirm hero image asset matches Generative AI theme
-      heroImage="/hero-ai-brain-full.3c521bda.png"
+      heroImage="/images/capabilities/cap-ai-search.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "100+", label: "GenAI use cases shipped to production" },
@@ -116,21 +117,21 @@ export default function GenerativeAI() {
           title: "Transforming knowledge management for a global consulting firm",
           industry: "Professional Services",
           metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "legal-document-intelligence",
           title: "Transforming legal research with AI-powered document intelligence",
           industry: "Professional Services",
           metric: "70%",
-          image: "/case-legal-team.2f84fc95.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "How contract automation transformed a leading law firm’s operations",
           industry: "Professional Services",
           metric: "65%",
-          image: "/case-law-firm-meeting.401c96db.jpg",
+          image: "/images/industries/meeting-topview.jpg",
         },
       ]}
       relatedCapabilities={[

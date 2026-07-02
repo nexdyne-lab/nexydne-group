@@ -7,7 +7,7 @@ export function EcommerceFulfillment() {
       industry="E-commerce · Operations"
       title="Process Automation Transforms Order Fulfillment"
       subtitle="How an e-commerce company automated their fulfillment operations to triple capacity while reducing labor costs."
-      heroImage="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=1600&q=80"
+      heroImage="/images/industries/retail-warehouse.jpg"
       challenge={`Rapid growth had pushed the fulfillment operation to its limits. Order volume had doubled in 18 months, but the largely manual processes couldn't scale. Peak season required hiring 50+ temporary workers, training was inconsistent, and error rates spiked during high-volume periods. The company needed to triple capacity without proportionally increasing headcount.
 
 A 175-employee e-commerce company with $65M in annual revenue specializing in home goods and décor operates a single 200,000 square foot fulfillment center. The diagnostic revealed a fulfillment operation held together by heroic effort rather than systematic processes: picking via paper lists with workers walking an average of 8 miles per shift, packing stations with no standardization (each worker using their own approach), inconsistent visual quality checks, and a warehouse management system 12 years old and incapable of supporting modern automation.`}

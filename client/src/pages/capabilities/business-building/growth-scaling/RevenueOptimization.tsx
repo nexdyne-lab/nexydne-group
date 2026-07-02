@@ -15,7 +15,8 @@ export default function RevenueOptimization() {
       serviceName="Revenue Optimization"
       serviceSlug="revenue-optimization"
       heroSubtitle="Unlock hidden revenue in your existing customer base. Pricing strategy, upsell/cross-sell programs, and monetization optimization."
-      heroImage="/images/growth-scaling-abstract.jpg"
+      heroImage="/images/capabilities/cap-colleagues-smile.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Revenue Optimization engagements delivered" },
@@ -70,14 +71,14 @@ export default function RevenueOptimization() {
           title: "Financial Services Firm Enters Adjacent Market",
           industry: "Financial Services · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
         {
           slug: "manufacturer-dtc",
           title: "Manufacturer Creates Direct-to-Consumer Channel",
           industry: "Manufacturing · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=80",
+          image: "/images/capabilities/cap-woman-motion.jpg",
         },
       ]}
       relatedServices={[

@@ -15,7 +15,8 @@ export default function CustomerDataActivation() {
       serviceName="Customer Data Activation"
       serviceSlug="customer-data-activation"
       heroSubtitle="Activate customer data for real-time personalization. Build unified profiles and enable cross-channel targeting."
-      heroImage="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1600&q=80"
+      heroImage="/images/capabilities/cap-ai-search.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Customer Data Activation engagements delivered" },
@@ -70,14 +71,14 @@ export default function CustomerDataActivation() {
           title: "Provider boosts patient engagement with omnichannel touch",
           industry: "Healthcare · Personalization at Scale",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth manager personalizes onboarding for HNW clients",
           industry: "Wealth Management · Personalization at Scale",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-circuit-green.jpg",
         },
       ]}
       relatedServices={[

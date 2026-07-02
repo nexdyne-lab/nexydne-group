@@ -10,7 +10,7 @@ export default function SupplyChainOptimization() {
       hubName="Supply Chain Optimization"
       slug="operations/supply-chain"
       heroSubtitle="Build resilient, cost-effective supply chains that adapt to disruption. Optimize inventory management, supplier relationships, and logistics networks."
-      heroImage="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
       experienceStats={[
         { number: "150+", label: "Supply chain transformation engagements across industries" },
         { number: "20-35%", label: "Typical reduction in total supply chain costs" },
@@ -114,21 +114,21 @@ export default function SupplyChainOptimization() {
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Operations",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Scales Payment Operations Without Headcount Growth",
           industry: "Financial Services · Operations",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/industries/meeting-topview.jpg",
         },
         {
           slug: "healthcare-data-analytics",
           title: "Health System Builds Population Health Analytics Platform",
           industry: "Healthcare · Operations",
           metric: "$18M",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-presenting-graphs.jpg",
         },
       ]}
       relatedCapabilities={[

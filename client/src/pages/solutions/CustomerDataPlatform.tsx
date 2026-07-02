@@ -46,7 +46,7 @@ export default function CustomerDataPlatform() {
             <div className="flex flex-col items-center text-center">
               <div className="w-64 h-64 rounded-full overflow-hidden bg-gradient-to-br from-primary to-primary mb-6">
                 <img 
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800" 
+                  src="/images/capabilities/cap-data-bars.jpg" 
                   alt="Marcus Rivera"
                   className="w-full h-full object-cover"
                 />
@@ -168,7 +168,7 @@ export default function CustomerDataPlatform() {
             <div className="flex justify-center">
               <div className="w-80 h-80 rounded-full overflow-hidden bg-gradient-to-br from-primary to-primary shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800" 
+                  src="/images/capabilities/cap-data-presentation.jpg" 
                   alt="Marcus Rivera"
                   className="w-full h-full object-cover"
                 />
@@ -201,7 +201,7 @@ export default function CustomerDataPlatform() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" 
+                src="/images/capabilities/cap-hands-data.jpg" 
                 alt="NEXDYNE Office"
                 className="w-full h-full object-cover"
               />

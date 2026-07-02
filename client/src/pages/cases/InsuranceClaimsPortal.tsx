@@ -7,7 +7,7 @@ export function InsuranceClaimsPortal() {
       industry="Insurance · Low-Code Development"
       title="Insurance Company Launches Digital Claims Portal in 8 Weeks"
       subtitle="Regional insurer replaces paper-based claims processing with Mendix low-code portal—reducing processing time from 14 days to 2 hours and improving customer satisfaction scores by 42 points."
-      heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80"
+      heroImage="/case-insurance-office.f039a4a1.jpg"
       challenge={`A 75-year-old regional property and casualty insurer serving 8 states faced mounting pressure from digital-native competitors offering instant claims processing. Their legacy claims system, built in the 1990s, required policyholders to submit paper forms via mail or fax, with claims taking an average of 14 days to process. Customer satisfaction scores had declined 28 points over three years, and the company was losing 12% of policyholders annually to competitors with mobile-first experiences.
 
 The insurer's IT team had attempted to modernize the system twice over the past decade, but both projects stalled due to complexity, cost overruns, and integration challenges with their core policy administration system. The business needed a solution that could launch quickly, integrate with existing systems, and provide a modern user experience without requiring a complete technology overhaul. With regulatory pressure to improve claims transparency and customer expectations rising, the company set an aggressive 8-week timeline to launch a digital claims portal.`}

@@ -107,7 +107,7 @@ export default function MergersAcquisitions() {
             >
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80" 
+                  src="/images/industries/deal-handshake.jpg" 
                   alt="Strategic Partnership" 
                   className="w-full h-auto"
                 />
@@ -290,19 +290,19 @@ export default function MergersAcquisitions() {
               {
                 title: "Post-merger integration delivers $12M in synergies",
                 category: "Manufacturing",
-                image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80",
+                image: "/images/industries/fin-handshake-city.jpg",
                 link: "/case-studies/post-merger-integration"
               },
               {
                 title: "Strategic acquisition accelerates market entry by 2 years",
                 category: "Technology",
-                image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80",
+                image: "/images/industries/meeting-topview.jpg",
                 link: "/case-studies/strategic-acquisition"
               },
               {
                 title: "Carve-out transaction unlocks $50M in shareholder value",
                 category: "Healthcare",
-                image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80",
+                image: "/images/industries/biz-meeting.jpg",
                 link: "/case-studies/carve-out-transaction"
               }
             ].map((study, i) => (
@@ -408,19 +408,19 @@ export default function MergersAcquisitions() {
             title: "M&A Commercial Due Diligence Best Practices",
             category: "M&A",
             link: "/insights/ma-commercial-due-diligence",
-            image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80"
+            image: "/images/industries/deal-handshake.jpg"
           },
           {
             title: "Why Most M&A Deals Fail to Deliver Value",
             category: "Strategy",
             link: "/insights/ma-failure-analysis",
-            image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
+            image: "/images/industries/fin-handshake-city.jpg"
           },
           {
             title: "The Integration Playbook: 100-Day Plan",
             category: "Integration",
             link: "/insights/integration-playbook",
-            image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80"
+            image: "/images/industries/meeting-topview.jpg"
           }
         ]}
       />

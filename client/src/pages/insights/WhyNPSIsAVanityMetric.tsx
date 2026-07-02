@@ -17,7 +17,7 @@ export default function WhyNPSIsAVanityMetric() {
       {/* Hero Section */}
       <section className="bg-background text-charcoal py-16 md:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/50 z-10" />
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop')] opacity-10 bg-cover bg-center" />
+        <div className="absolute inset-0 bg-[url('/images/capabilities/cap-retail-apparel.jpg')] opacity-10 bg-cover bg-center" />
         
         <div className="container max-w-4xl mx-auto px-4 relative z-20">
           <div className="mb-8">
@@ -55,7 +55,7 @@ export default function WhyNPSIsAVanityMetric() {
           {/* Featured Image */}
           <div className="aspect-video bg-subtle rounded-2xl mb-12 overflow-hidden shadow-xl">
             <img 
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop" 
+              src="/images/capabilities/cap-retail-data.jpg" 
               alt="Data dashboard showing metrics" 
               className="w-full h-full object-cover"
             />
@@ -65,7 +65,7 @@ export default function WhyNPSIsAVanityMetric() {
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 bg-muted rounded-full overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" 
+                  src="/images/capabilities/cap-mobile-woman.jpg" 
                   alt="Dr. Alex Chen" 
                   className="w-full h-full object-cover"
                 />
@@ -153,7 +153,7 @@ export default function WhyNPSIsAVanityMetric() {
                 <div className="group cursor-pointer">
                   <div className="aspect-video bg-subtle rounded-xl mb-4 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2670&auto=format&fit=crop" 
+                      src="/images/industries/retail-shelves.jpg" 
                       alt="Code on screen" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -173,7 +173,7 @@ export default function WhyNPSIsAVanityMetric() {
                 <div className="group cursor-pointer">
                   <div className="aspect-video bg-subtle rounded-xl mb-4 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2672&auto=format&fit=crop" 
+                      src="/images/capabilities/cap-colleagues-smile.jpg" 
                       alt="Financial chart" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />

@@ -7,7 +7,7 @@ export function HealthcareProviderAI() {
       industry="Healthcare & Life Sciences · Predictive Analytics"
       title="Reducing Patient Wait Times by 35% with Predictive Analytics"
       subtitle="A regional healthcare system transformed their patient flow management through AI-powered scheduling and predictive analytics, dramatically improving patient satisfaction while optimizing resource utilization."
-      heroImage="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80"
+      heroImage="/case-medical-collaboration.9602cc8c.jpg"
       challenge={`The healthcare system served over 2 million patients annually across their network. Despite significant investments in facilities and staff, patient satisfaction scores had declined for three consecutive years, with wait times cited as the primary concern. Average emergency department wait times exceeded 4 hours during peak periods, and outpatient appointment no-show rates had climbed to 22%.
 
 The underlying issues were systemic. Room and equipment utilization hovered at just 65%, indicating significant inefficiency in resource allocation. Staff scheduling was based on historical averages rather than predicted demand, resulting in chronic understaffing during peaks and overstaffing during valleys. Data remained siloed across departments, preventing the kind of system-wide optimization that modern healthcare demands.

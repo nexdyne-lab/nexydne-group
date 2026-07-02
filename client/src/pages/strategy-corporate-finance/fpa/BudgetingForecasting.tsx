@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceFpaBudgetingForecasting() {
       serviceName="Budgeting & Forecasting"
       serviceSlug="budgeting-forecasting"
       heroSubtitle="Build robust annual budgets and rolling forecasts that adapt to changing conditions. Scenario modeling for strategic decision-making."
-      heroImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
       experienceStats={[
         { number: "100+", label: "Financial Planning & Analysis engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,21 +52,21 @@ export default function StrategyCorporateFinanceFpaBudgetingForecasting() {
           title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
           industry: "Financial Services · Strategy",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-presenting-graphs.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
           industry: "Financial Services · Strategy",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80",
+          image: "/images/industries/fin-monitors.jpg",
         },
         {
           slug: "healthcare-data-analytics",
           title: "Health System Unlocks Population Health Insights With Unified Data Platform",
           industry: "Healthcare · Strategy",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
       ]}
       relatedServices={[

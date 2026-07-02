@@ -15,7 +15,8 @@ export default function OperationalScaling() {
       serviceName="Operational Scaling"
       serviceSlug="operational-scaling"
       heroSubtitle="Build the infrastructure to support 10x growth. Processes, systems, and team structures that scale without breaking."
-      heroImage="/images/growth-scaling-abstract.jpg"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Operational Scaling engagements delivered" },
@@ -70,14 +71,14 @@ export default function OperationalScaling() {
           title: "Regional Distributor Launches Digital Marketplace",
           industry: "Distribution · Business Building",
           metric: "$50M+",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
         {
           slug: "logistics-tech-spinoff",
           title: "Logistics Company Builds Technology Spin-Off",
           industry: "Logistics · Business Building",
           metric: "$28M",
-          image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1600&q=80",
+          image: "/images/capabilities/cap-woman-motion.jpg",
         },
       ]}
       relatedServices={[

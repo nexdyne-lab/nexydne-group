@@ -15,7 +15,8 @@ export default function AiEnhancedAutomation() {
       serviceName="AI-Enhanced Automation"
       serviceSlug="ai-enhanced-automation"
       heroSubtitle="Combine RPA with machine learning for intelligent automation that handles exceptions, makes decisions, and improves over time. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-process-mining.50313a07.jpg"
+      heroImage="/images/capabilities/cap-circuit-green.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "AI-Enhanced Automation engagements delivered" },

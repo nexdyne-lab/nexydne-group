@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceBusinessStrategyOrganizationalTr
       serviceName="Organizational Transformation"
       serviceSlug="organizational-transformation"
       heroSubtitle="Restructure for agility and performance. Design organizations that can execute strategy and adapt to changing market conditions."
-      heroImage="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-chess.jpg"
       experienceStats={[
         { number: "100+", label: "Business Strategy & Transformation engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,21 +52,21 @@ export default function StrategyCorporateFinanceBusinessStrategyOrganizationalTr
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Strategy",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
         },
         {
           slug: "consulting-knowledge-management",
           title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
           industry: "Professional Services · Strategy",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80",
+          image: "/images/industries/team-strategy-board.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
           industry: "Professional Services · Strategy",
           metric: "85%",
-          image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&q=80",
+          image: "/images/capabilities/cap-strategy-spheres.jpg",
         },
       ]}
       relatedServices={[

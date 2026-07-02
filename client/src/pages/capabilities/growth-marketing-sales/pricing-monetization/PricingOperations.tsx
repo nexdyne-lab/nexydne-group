@@ -15,7 +15,8 @@ export default function PricingOperations() {
       serviceName="Pricing Operations"
       serviceSlug="pricing-operations"
       heroSubtitle="Build pricing operations that ensure consistent execution. Implement pricing tools, governance, and performance management."
-      heroImage="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80"
+      heroImage="/images/capabilities/cap-hands-data.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Pricing Operations engagements delivered" },
@@ -70,14 +71,14 @@ export default function PricingOperations() {
           title: "Fintech scales payment ops with intelligent automation",
           industry: "Fintech · Pricing & Monetization",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/capabilities/cap-chess.jpg",
         },
         {
           slug: "accounting-audit-automation",
           title: "Accounting firm modernizes audit workflows",
           industry: "Professional Services · Pricing & Monetization",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
       ]}
       relatedServices={[

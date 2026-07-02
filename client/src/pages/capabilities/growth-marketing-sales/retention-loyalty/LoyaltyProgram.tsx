@@ -16,7 +16,7 @@ export default function LoyaltyProgram() {
       {/* Hero Section */}
       <div className="relative bg-background pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center mix-blend-overlay"></div>
+          <div className="absolute inset-0 bg-[url('/images/capabilities/cap-conference-data.jpg')] bg-cover bg-center mix-blend-overlay"></div>
           <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
         </div>
         

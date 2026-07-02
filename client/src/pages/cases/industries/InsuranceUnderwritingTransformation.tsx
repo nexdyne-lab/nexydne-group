@@ -11,7 +11,7 @@ export default function InsuranceUnderwritingTransformation() {
       industryLink="/industries/insurance"
       title="Insurer Achieves 40% Faster Quotes Through Underwriting Transformation"
       subtitle="How AI-powered risk assessment and automated workflows transformed underwriting from bottleneck to competitive advantage."
-      heroImage="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1920&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       metrics={[
         { value: "40%", label: "Faster Quotes" },
         { value: "70%", label: "Auto-Decisioned" },
@@ -111,14 +111,14 @@ export default function InsuranceUnderwritingTransformation() {
           metric: "60%",
           label: "faster processing",
           link: "/cases/insurance-claims-automation",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80"
+          image: "/images/industries/fin-trader.jpg"
         },
         {
           title: "Customer Experience Modernization",
           metric: "50%",
           label: "digital adoption",
           link: "/cases/insurance-customer-experience",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80"
+          image: "/images/industries/fin-handshake-city.jpg"
         }
       ]}
       ctaTitle="Ready to Transform Underwriting?"

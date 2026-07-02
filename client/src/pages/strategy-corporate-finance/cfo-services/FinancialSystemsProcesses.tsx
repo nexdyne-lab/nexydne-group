@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceCfoServicesFinancialSystemsProce
       serviceName="Financial Systems & Processes"
       serviceSlug="financial-systems-processes"
       heroSubtitle="Build scalable financial infrastructure. Implement controls, policies, and systems that grow with you."
-      heroImage="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-robot-factory.jpg"
       experienceStats={[
         { number: "100+", label: "Fractional CFO Services engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,21 +52,21 @@ export default function StrategyCorporateFinanceCfoServicesFinancialSystemsProce
           title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
           industry: "Financial Services · Strategy",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-warehouse-robot.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Strategy",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/industries/ops-gears.jpg",
         },
         {
           slug: "insurance-claims-processing",
           title: "Insurer Slashes Claims Processing Time With Intelligent Workflow",
           industry: "Financial Services · Strategy",
           metric: "65%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-circuit-green.jpg",
         },
       ]}
       relatedServices={[

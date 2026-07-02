@@ -21,7 +21,7 @@ export default function BeyondSegmentation() {
       <section className="relative pt-32 pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2000&q=80" 
+            src="/images/capabilities/cap-mobile-woman.jpg" 
             alt="Data Analytics" 
             className="w-full h-full object-cover opacity-20"
           />
@@ -302,19 +302,19 @@ export default function BeyondSegmentation() {
             title: "The Churn Prediction Playbook for Mid-Market SaaS",
             category: "Technology",
             link: "/solutions/data-driven-customer-intelligence/insights/churn-prediction-playbook",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+            image: "/images/capabilities/cap-office-women.jpg"
           },
           {
             title: "Hyper-Personalization at Scale: A Practical Guide",
             category: "Marketing",
             link: "/solutions/data-driven-customer-intelligence/insights/hyper-personalization",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
+            image: "/images/capabilities/cap-hologram.jpg"
           },
           {
             title: "Specialty retailer increases repeat purchase rate by 42%",
             category: "Case Study",
             link: "/solutions/data-driven-customer-intelligence/case-studies/ecommerce-repeat-purchase",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
+            image: "/images/capabilities/cap-colleagues-smile.jpg"
           }
         ]}
       />

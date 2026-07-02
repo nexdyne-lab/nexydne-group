@@ -112,7 +112,7 @@ export default function WorkforceOptimization() {
               </div>
               <div className="col-span-2 relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80" 
+                  src="/images/capabilities/cap-team-screens.jpg" 
                   alt="Workforce Excellence" 
                   className="w-full h-48 object-cover"
                 />
@@ -251,7 +251,7 @@ export default function WorkforceOptimization() {
             >
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80" 
+                  src="/images/industries/ops-gears.jpg" 
                   alt="Workforce Methodology" 
                   className="w-full h-auto"
                 />
@@ -291,17 +291,17 @@ export default function WorkforceOptimization() {
               {
                 title: "Retail chain reduces turnover by 40% with engagement program",
                 category: "Employee Engagement",
-                image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
+                image: "/images/capabilities/cap-data-bars.jpg"
               },
               {
                 title: "Manufacturer builds skills academy for digital transformation",
                 category: "Learning & Development",
-                image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
+                image: "/images/capabilities/cap-diverse-team.jpg"
               },
               {
                 title: "Healthcare provider optimizes scheduling to reduce overtime 30%",
                 category: "Workforce Planning",
-                image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&q=80"
+                image: "/images/industries/meeting-topview.jpg"
               }
             ].map((study, i) => (
               <motion.div 
@@ -380,19 +380,19 @@ export default function WorkforceOptimization() {
             title: "Building a High-Performance Culture",
             category: "Leadership",
             link: "/insights/high-performance-culture",
-            image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-team-screens.jpg"
           },
           {
             title: "The Future of Work: Trends and Strategies",
             category: "Workforce",
             link: "/insights/future-of-work",
-            image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
+            image: "/images/industries/ops-gears.jpg"
           },
           {
             title: "Employee Engagement Best Practices",
             category: "HR",
             link: "/insights/employee-engagement-best-practices",
-            image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-data-bars.jpg"
           }
         ]}
       />

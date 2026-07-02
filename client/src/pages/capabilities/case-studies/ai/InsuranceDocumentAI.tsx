@@ -7,7 +7,7 @@ export function InsuranceDocumentAI() {
       industry="Insurance · Artificial Intelligence"
       title="AI-Powered Document Processing Transforms Regional Insurance Firm"
       subtitle="How a 200-employee insurance company reduced claims processing time by 73% and saved $1.2M annually through intelligent document automation."
-      heroImage="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80"
+      heroImage="/case-insurance-office.f039a4a1.jpg"
       challenge={`Manual claims processing was creating bottlenecks, with adjusters spending 60% of their time on document review rather than customer service and complex claim decisions. A regional property and casualty insurance company with 200 employees processing over 50,000 claims annually had built a strong regional presence known for personalized service and fair claims handling—but as the company grew, paper-based processes were becoming a liability.
 
 Average claims processing time had stretched to 12 days, and customer satisfaction scores were declining. The company had explored traditional automation solutions but found them too rigid for the variety of documents they received—everything from handwritten repair estimates to complex medical records. They needed a solution that could handle ambiguity and learn from experienced adjusters.`}

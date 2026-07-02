@@ -11,7 +11,7 @@ export default function OperationsWorkforceOptimizationOrganizationalDesign() {
       serviceName="Organizational Design"
       serviceSlug="organizational-design"
       heroSubtitle="Structure your organization for operational excellence. Roles, responsibilities, and reporting relationships that enable effective execution."
-      heroImage="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-diverse-team.jpg"
       experienceStats={[
         { number: "100+", label: "Workforce Optimization engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsWorkforceOptimizationOrganizationalDesign() {
           title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
           industry: "Professional Services · Operations",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "National Telehealth Provider Scales Operations 10x",
           industry: "Healthcare · Operations",
           metric: "10x",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/industries/biz-team-bright.jpg",
         },
       ]}
       relatedServices={[

@@ -10,7 +10,8 @@ export default function SalesExcellence() {
       hubName="Sales Excellence"
       slug="sales-excellence"
       heroSubtitle="Build high-performing sales organizations. We help you optimize sales processes, develop capabilities, and create incentive structures that drive sustainable revenue growth."
-      heroImage="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
+      heroImage="/images/capabilities/cap-woman-motion.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         { number: "300+", label: "sales transformations delivered globally" },
         { number: "25%", label: "average improvement in sales productivity" },
@@ -113,21 +114,21 @@ export default function SalesExcellence() {
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Automation",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
           industry: "Financial Services · Wealth",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80",
+          image: "/images/capabilities/cap-peacock.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Cuts Payment Reconciliation Cost By Two Thirds",
           industry: "Financial Services · Payments",
           metric: "67%",
-          image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
       ]}
       relatedCapabilities={[

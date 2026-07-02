@@ -16,7 +16,7 @@ const insights: (Insight & { href: string })[] = [
     title: "The CEO's Guide to Data Modernization",
     description: "Why 70% of transformations fail and how to be in the 30% that succeed.",
     readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop",
+    image: "/images/capabilities/cap-data-bars.jpg",
     href: "/insights/ceo-guide-data-modernization"
   },
   {
@@ -24,7 +24,7 @@ const insights: (Insight & { href: string })[] = [
     title: "Building a Data-First Culture",
     description: "NewCo's Chief Data Officer discusses the human side of digital change.",
     readTime: "12 min watch",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2670&auto=format&fit=crop",
+    image: "/images/capabilities/cap-conference-data.jpg",
     href: "/insights/building-data-culture"
   },
   {
@@ -32,7 +32,7 @@ const insights: (Insight & { href: string })[] = [
     title: "From Data Lake to Value Stream",
     description: "A technical deep dive into modern data mesh architectures.",
     readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
+    image: "/images/capabilities/cap-coder.jpg",
     href: "/insights/data-lake-to-value-stream"
   }
 ];

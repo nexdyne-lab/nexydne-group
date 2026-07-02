@@ -7,7 +7,7 @@ export function UtilityBillingPortal() {
       industry="Utilities · Customer Portal"
       title="Utility Company Modernizes Billing Portal for 500K Households"
       subtitle="Liferay DXP portal delivers 24/7 account access, reducing call center volume by 42% and improving payment timeliness by 28%."
-      heroImage="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1600&q=80"
+      heroImage="/images/industries/energy-wind.jpg"
       challenge={`A municipal electric and water utility serving 500,000 households across three counties struggled with an outdated billing portal that frustrated customers and burdened staff. The legacy system—built in 2009—required customers to create separate logins for electric and water accounts, offered no mobile optimization, and provided only basic bill viewing functionality.
 
 Customer service representatives fielded over 45,000 monthly calls, with 68% related to routine inquiries: bill amounts, payment due dates, usage history, and service start/stop requests. The utility's call center operated from 8 AM to 6 PM weekdays, leaving customers without support during evenings and weekends when many needed assistance.

@@ -11,7 +11,7 @@ export default function AerospaceDigitalEngineering() {
       industryLink="/industries/aerospace-defense"
       title="Aerospace Company Accelerates Development 40% with Digital Engineering"
       subtitle="How model-based systems engineering, digital twins, and integrated digital threads transformed aircraft development from years to months."
-      heroImage="https://images.unsplash.com/photo-1517976487492-5750f3195933?w=1920&q=80"
+      heroImage="/images/industries/aero-rocket.jpg"
       metrics={[
         { value: "40%", label: "Faster Development" },
         { value: "60%", label: "Fewer Design Changes" },
@@ -111,14 +111,14 @@ export default function AerospaceDigitalEngineering() {
           metric: "35%",
           label: "better parts availability",
           link: "/cases/defense-supply-chain",
-          image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80"
+          image: "/images/industries/aero-astronaut.jpg"
         },
         {
           title: "Predictive Maintenance for Aviation",
           metric: "50%",
           label: "reduction in unscheduled maintenance",
           link: "/cases/aviation-predictive-maintenance",
-          image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80"
+          image: "/images/industries/eng-designers.jpg"
         }
       ]}
       ctaTitle="Ready to Transform Engineering?"

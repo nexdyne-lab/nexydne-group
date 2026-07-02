@@ -9,7 +9,7 @@ export default function DataLakeToValueStream() {
       title: "The CEO's Guide to Data Modernization",
       description: "Why 70% of transformations fail and how to be in the 30% that succeed.",
       readTime: "5 min read",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80",
+      image: "/images/capabilities/cap-data-bars.jpg",
       link: "/insights/ceo-guide-data-modernization"
     },
     {
@@ -18,7 +18,7 @@ export default function DataLakeToValueStream() {
       title: "Building a Data-First Culture",
       description: "NexDyne's Chief Data Officer discusses the human side of digital change.",
       readTime: "12 min watch",
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80",
+      image: "/images/capabilities/cap-data-presentation.jpg",
       link: "/insights/building-data-culture"
     },
     {
@@ -27,7 +27,7 @@ export default function DataLakeToValueStream() {
       title: "The Corporate Venture Advantage",
       description: "Why established assets combined with startup speed create an unfair market advantage.",
       readTime: "6 min read",
-      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80",
+      image: "/images/industries/fin-monitors.jpg",
       link: "/insights/corporate-venture-advantage"
     }
   ];
@@ -40,7 +40,7 @@ export default function DataLakeToValueStream() {
       subtitle="Your data lake is full. Now what? A technical exploration of modern data mesh architectures and how to turn raw data into actionable business value."
       readTime="8 min read"
       publishDate="September 20, 2024"
-      heroImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+      heroImage="/images/capabilities/cap-hands-data.jpg"
       heroImageAlt="Data Lake to Value Stream"
       authorName="Dr. Amara Okonkwo"
       authorRole="Chief Technology Officer, NexDyne"

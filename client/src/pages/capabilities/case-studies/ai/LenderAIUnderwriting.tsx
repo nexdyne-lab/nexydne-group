@@ -7,7 +7,7 @@ export function LenderAIUnderwriting() {
       industry="Financial Services · Artificial Intelligence"
       title="AI-Driven Underwriting Accelerates Growth for Specialty Lender"
       subtitle="How a specialty lending firm implemented AI to process 5x more applications while reducing default rates."
-      heroImage="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1600&q=80"
+      heroImage="/images/industries/fin-handshake-city.jpg"
       challenge={`Manual underwriting limited the company to processing 200 applications per month. Underwriter capacity was the bottleneck to growth. Inconsistent decision-making led to higher-than-expected default rates. The company needed to scale while maintaining or improving credit quality.
 
 A specialty lending firm with 100 employees provides working capital loans from $25,000 to $500,000 to small businesses with 2–10 years of operating history. Analysis of five years of loan performance data revealed patterns that human underwriters couldn't consistently identify—certain combinations of financial metrics predicted default better than traditional credit scores, industry-specific factors significantly influenced repayment probability, and cash flow patterns were more predictive than balance sheet metrics for small businesses.`}

@@ -7,7 +7,7 @@ export function SaaSSeriesB() {
       industry="Technology · Strategy & Finance"
       title="Series B Fundraise Supports Technology Expansion"
       subtitle="How a B2B software company prepared for and executed a successful growth capital raise at an 8x revenue multiple."
-      heroImage="https://images.unsplash.com/photo-1553484771-371a605b060b?w=1600&q=80"
+      heroImage="/images/capabilities/cap-celebrate.jpg"
       challenge={`The company had achieved product-market fit and was ready to accelerate growth, but the founders had never raised institutional capital. They needed to prepare the company for investor scrutiny, develop compelling materials, and navigate the fundraising process.
 
 A 120-employee B2B SaaS company providing workflow automation software to mid-size professional services firms had $15M ARR and strong unit economics. The readiness assessment revealed several areas requiring attention before approaching investors: financial reporting that didn't clearly show SaaS metrics, incomplete customer cohort data, a sales pipeline not systematically tracked, and legal housekeeping including option grants and IP assignments.`}

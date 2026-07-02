@@ -7,7 +7,7 @@ export function HealthcareDashboardTraining() {
       industry="Healthcare · Data Training"
       title="Healthcare Network Trains 200 Clinicians to Build Custom Dashboards"
       subtitle="Half-day workshops taught clinical staff to create Tableau dashboards for patient outcomes, improving visibility 45% and reducing manual reporting 30 hours/week."
-      heroImage="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600&q=80"
+      heroImage="/case-medical-collaboration.9602cc8c.jpg"
       challenge={`A regional healthcare network with 12 hospitals and 45 outpatient clinics struggled with patient outcome visibility. Clinicians wanted to track readmission rates, infection rates, length of stay, and other quality metrics—but relied on IT to generate reports that arrived weeks after the data was collected.
 
 The IT team maintained a Tableau server with pre-built dashboards, but they were generic and didn't answer specific clinical questions. Physicians wanted to drill down by department, diagnosis, or physician—capabilities that existed in the tool but required technical knowledge to configure.

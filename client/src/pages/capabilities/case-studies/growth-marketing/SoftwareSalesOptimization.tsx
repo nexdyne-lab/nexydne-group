@@ -7,7 +7,7 @@ export function SoftwareSalesOptimization() {
       industry="Technology · Growth Marketing"
       title="Sales Process Optimization Increases Win Rate"
       subtitle="How a software company transformed their sales process to improve win rates and shorten sales cycles."
-      heroImage="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80"
+      heroImage="/images/industries/meeting-topview.jpg"
       challenge={`Sales performance was inconsistent across the team. Top performers closed at 35% while others struggled at 15%. Sales cycles had lengthened from 60 to 90 days as deals stalled in evaluation. The CRM was poorly adopted, making pipeline visibility unreliable. New hire ramp time had stretched to 9 months.
 
 A 180-employee software company with $52M in annual revenue sells enterprise software to mid-size businesses. The company had grown rapidly but sales productivity was declining as the team scaled. Analysis of top performer behavior revealed they followed a fundamentally different approach than the rest of the team: more time on discovery and qualification, earlier engagement of multiple stakeholders, effective use of customer success stories and ROI models, and disciplined follow-up cadences.`}

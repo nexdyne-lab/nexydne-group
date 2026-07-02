@@ -376,21 +376,21 @@ export default function ITModernization() {
                 title: "Legacy Core Banking Migration",
                 category: "Banking",
                 description: "Migrating 2M+ customers to cloud microservices with zero downtime.",
-                image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2670&auto=format&fit=crop",
+                image: "/images/capabilities/cap-conference-data.jpg",
                 link: "/cases/bank-core-modernization"
               },
               {
                 title: "Interoperable EHR Platform",
                 category: "Healthcare",
                 description: "Unifying patient data across 12 locations for real-time access.",
-                image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2670&auto=format&fit=crop",
+                image: "/images/industries/meeting-topview.jpg",
                 link: "/cases/healthcare-ehr-modernization"
               },
               {
                 title: "Payment Processing Automation",
                 category: "Fintech",
                 description: "Scaling transaction volume by 10x with automated reconciliation.",
-                image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&q=80",
+                image: "/images/capabilities/cap-data-bars.jpg",
                 link: "/cases/fintech-payment-automation"
               }
             ].map((study, i) => (
@@ -554,19 +554,19 @@ export default function ITModernization() {
             title: "CEO Guide to Data Modernization",
             category: "Technology",
             link: "/insights/ceo-guide-data-modernization",
-            image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-presenting-graphs.jpg"
           },
           {
             title: "Composable Architecture Guide",
             category: "Architecture",
             link: "/insights/composable-architecture",
-            image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80"
+            image: "/images/industries/advisor-charts.jpg"
           },
           {
             title: "Integration Playbook",
             category: "Integration",
             link: "/insights/integration-playbook",
-            image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-celebrate.jpg"
           }
         ]}
       />

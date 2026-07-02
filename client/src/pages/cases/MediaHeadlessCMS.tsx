@@ -7,7 +7,7 @@ export function MediaHeadlessCMS() {
       industry="Media · Technology"
       title="Media Company Scales to 50M Monthly Readers with Headless CMS"
       subtitle="How a digital media publisher migrated to headless CMS and achieved 73% faster time-to-publish across 12 global markets while maintaining SEO rankings and reducing infrastructure costs."
-      heroImage="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1600&q=80"
+      heroImage="/images/industries/tech-datacenter.jpg"
       challenge={`A rapidly growing digital media company was struggling with their monolithic WordPress multisite installation serving 50 million monthly readers across 12 regional markets. Their editorial teams spent hours waiting for content to publish, developers couldn't ship new features without breaking existing functionality, and the infrastructure costs were spiraling as traffic grew.
 
 The legacy CMS architecture created bottlenecks at every level. Editors in different time zones competed for database resources, causing publish delays during peak news cycles. The mobile app team couldn't access content efficiently, forcing them to scrape the website instead of using proper APIs. Regional teams demanded localized experiences but the monolithic system made customization nearly impossible.

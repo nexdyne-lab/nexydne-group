@@ -162,7 +162,7 @@ export default function RealTimeDecisionArchitectures() {
                 <div className="group cursor-pointer">
                   <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop" 
+                      src="/images/capabilities/cap-data-bars.jpg" 
                       alt="Data Lake" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -179,7 +179,7 @@ export default function RealTimeDecisionArchitectures() {
                 <div className="group cursor-pointer">
                   <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2670&auto=format&fit=crop" 
+                      src="/images/capabilities/cap-data-presentation.jpg" 
                       alt="Generative Supply Chain" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />

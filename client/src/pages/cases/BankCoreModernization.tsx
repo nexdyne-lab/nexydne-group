@@ -7,7 +7,7 @@ export function BankCoreModernization() {
       industry="Banking · Core Modernization"
       title="Regional Bank Modernizes Core Banking Platform"
       subtitle="Legacy mainframe migration to cloud-native architecture reduces processing time by 67% and cuts infrastructure costs by $3.8M annually."
-      heroImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       challenge={`A regional bank serving 850,000 customers across seven states faced a critical inflection point. Their core banking platform—originally deployed in 1998 on IBM mainframe infrastructure—had become a strategic liability. The system processed 2.4 million transactions daily but required 18 hours of overnight batch processing to reconcile accounts and update balances. Customers couldn't see real-time account activity, and the bank couldn't launch new products without months of COBOL development work.
 
 The technology debt had accumulated to crisis levels. The bank employed only three developers who understood the legacy COBOL codebase, with two approaching retirement. Annual mainframe licensing and maintenance costs exceeded $5.2 million, while competitors with modern cloud platforms operated at a fraction of that cost. Customer satisfaction scores had declined for three consecutive years, with mobile banking functionality lagging industry standards by at least five years.

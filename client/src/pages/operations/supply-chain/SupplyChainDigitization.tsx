@@ -11,7 +11,7 @@ export default function OperationsSupplyChainSupplyChainDigitization() {
       serviceName="Supply Chain Digitization"
       serviceSlug="supply-chain-digitization"
       heroSubtitle="Deploy technology to enable visibility and agility. Control towers, analytics platforms, and automation solutions."
-      heroImage="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/retail-warehouse.jpg"
       experienceStats={[
         { number: "100+", label: "Supply Chain Optimization engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,21 +52,21 @@ export default function OperationsSupplyChainSupplyChainDigitization() {
           title: "Health System Builds Population Health Analytics Platform",
           industry: "Healthcare · Operations",
           metric: "$18M",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/industries/transport-bridge.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Scales Payment Operations Without Headcount Growth",
           industry: "Financial Services · Operations",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/industries/transport-traffic.jpg",
         },
         {
           slug: "consulting-knowledge-management",
           title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
           industry: "Professional Services · Operations",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80",
+          image: "/images/capabilities/cap-warehouse-robot.jpg",
         },
       ]}
       relatedServices={[

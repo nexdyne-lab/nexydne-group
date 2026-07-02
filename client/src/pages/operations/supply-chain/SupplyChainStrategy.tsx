@@ -11,7 +11,7 @@ export default function OperationsSupplyChainSupplyChainStrategy() {
       serviceName="Supply Chain Strategy"
       serviceSlug="supply-chain-strategy"
       heroSubtitle="Define your supply chain vision and operating model. Align network design, sourcing strategy, and capabilities with business objectives."
-      heroImage="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/retail-warehouse.jpg"
       experienceStats={[
         { number: "100+", label: "Supply Chain Optimization engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsSupplyChainSupplyChainStrategy() {
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Operations",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/industries/transport-bridge.jpg",
         },
         {
           slug: "healthcare-data-analytics",
           title: "Health System Builds Population Health Analytics Platform",
           industry: "Healthcare · Operations",
           metric: "$18M",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/industries/transport-traffic.jpg",
         },
       ]}
       relatedServices={[

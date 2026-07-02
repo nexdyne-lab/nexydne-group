@@ -10,7 +10,8 @@ export default function MarTechStack() {
       hubName="MarTech Stack"
       slug="martech-stack"
       heroSubtitle="Marketing technology strategy, platform selection, and integration. We help you build and optimize the technology infrastructure that powers modern marketing."
-      heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         { number: "180+", label: "MarTech transformations delivered across industries" },
         { number: "35%", label: "average reduction in MarTech spend through rationalization" },
@@ -113,21 +114,21 @@ export default function MarTechStack() {
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Automation",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
         {
           slug: "legal-document-intelligence",
           title: "Legal Tech Vendor Launches Document Intelligence Platform For Mid-Market Firms",
           industry: "Professional Services · Document AI",
           metric: "10x",
-          image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&q=80",
+          image: "/images/capabilities/cap-retail-apparel.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "Telehealth Platform Scales To Two Million Monthly Visits",
           industry: "Healthcare · Telehealth",
           metric: "2M",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
       ]}
       relatedCapabilities={[

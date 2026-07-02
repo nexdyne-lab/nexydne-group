@@ -22,7 +22,7 @@ const caseStudies: CaseStudy[] = [
     company: "Regional Bank",
     title: "Building Trust with Explainable AI in Credit Decisions",
     description: "A regional bank implemented transparent AI models for lending decisions, enabling loan officers to explain outcomes to customers while maintaining regulatory compliance.",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop"
+    image: "/images/industries/tech-glasses.jpg"
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const caseStudies: CaseStudy[] = [
     company: "Health System",
     title: "Ethical AI Framework Guides Clinical Decision Support",
     description: "A healthcare system developed governance protocols ensuring their AI tools augment physician judgment without introducing bias or compromising patient privacy.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop",
+    image: "/images/capabilities/cap-ai-search.jpg",
     hasVideo: true
   },
   {
@@ -39,7 +39,7 @@ const caseStudies: CaseStudy[] = [
     company: "Insurance Provider",
     title: "Fair Pricing Models Eliminate Algorithmic Bias",
     description: "An insurance company redesigned their pricing algorithms to ensure fairness across demographic groups while maintaining actuarial accuracy.",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop"
+    image: "/images/capabilities/cap-hologram.jpg"
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const caseStudies: CaseStudy[] = [
     company: "Enterprise Software Co.",
     title: "Responsible Generative AI Deployment in Enterprise",
     description: "A software company established guardrails and monitoring systems for generative AI, enabling innovation while protecting against misuse and hallucinations.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
+    image: "/images/capabilities/cap-circuit-green.jpg",
     hasVideo: true
   }
 ];
@@ -57,19 +57,19 @@ const insights = [
     category: "AI Ethics",
     title: "The Board's Guide to AI Governance",
     description: "Essential questions directors should ask about AI risk, ethics, and oversight.",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
+    image: "/images/industries/tech-datacenter.jpg"
   },
   {
     category: "AI, Insights, and Solutions",
     title: "Building Explainable AI: A Technical and Business Imperative",
     description: "Why interpretable models matter for trust, compliance, and better outcomes.",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=300&fit=crop"
+    image: "/images/capabilities/cap-coder.jpg"
   },
   {
     category: "Risk & Compliance",
     title: "Navigating AI Regulation: What Leaders Need to Know",
     description: "A practical guide to emerging AI regulations and how to prepare your organization.",
-    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=300&fit=crop"
+    image: "/images/capabilities/cap-conference-data.jpg"
   }
 ];
 

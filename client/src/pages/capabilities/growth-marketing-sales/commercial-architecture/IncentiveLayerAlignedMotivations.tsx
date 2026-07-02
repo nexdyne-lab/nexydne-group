@@ -15,7 +15,8 @@ export default function IncentiveLayerAlignedMotivations() {
       serviceName="Incentive Layer: Aligned Motivations"
       serviceSlug="incentive-layer-aligned-motivations"
       heroSubtitle="In a distributed system, individual nodes must optimize for the system's health. We help you design compensation and incentive structures that align individual behaviors with organizational goals."
-      heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80"
+      heroImage="/images/industries/meeting-topview.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Incentive Layer: Aligned Motivations engagements delivered" },
@@ -70,14 +71,14 @@ export default function IncentiveLayerAlignedMotivations() {
           title: "Accounting firm modernizes audit workflows",
           industry: "Professional Services · Commercial Architecture",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-hands-data.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "Law firm slashes contract review with secure GenAI",
           industry: "Legal Services · Commercial Architecture",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1600&q=80",
+          image: "/images/capabilities/cap-aerial-grid.jpg",
         },
       ]}
       relatedServices={[

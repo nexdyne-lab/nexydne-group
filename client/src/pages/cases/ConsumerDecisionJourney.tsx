@@ -7,7 +7,7 @@ export function ConsumerDecisionJourney() {
       industry="Consumer Electronics · Growth Marketing"
       title="AI-Powered Journey Orchestration"
       subtitle="How a consumer electronics giant used granular data and AI to map the decision journey, optimizing media spend and selling out inventory in record time."
-      heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop"
+      heroImage="/images/capabilities/cap-office-women.jpg"
       challenge={`A global consumer electronics manufacturer was preparing to launch a flagship smart home device. In previous launches, they had spread their marketing budget thinly across TV, print, and broad digital display, resulting in mediocre sales and low brand recall.
 
 They knew the consumer path to purchase had evolved into a complex, non-linear journey, but their marketing mix hadn't kept pace. They lacked visibility into which touchpoints actually influenced decisions and were wasting budget on channels that didn't drive conversion.

@@ -15,7 +15,8 @@ export default function UxUiDesign() {
       serviceName="UX/UI Design"
       serviceSlug="ux-ui-design"
       heroSubtitle="Design experiences that users love and that drive business results. From wireframes to high-fidelity prototypes, we create interfaces that convert."
-      heroImage="/images/product-strategy-abstract.jpg"
+      heroImage="/images/capabilities/cap-hologram.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "UX/UI Design engagements delivered" },
@@ -70,14 +71,14 @@ export default function UxUiDesign() {
           title: "Industrial Distributor Launches B2B E-commerce Platform",
           industry: "Industrial Distribution · Business Building",
           metric: "35%",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-3d-printing.jpg",
         },
         {
           slug: "consulting-saas",
           title: "Professional Services Firm Builds SaaS Product",
           industry: "Professional Services · Business Building",
           metric: "$3.2M",
-          image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80",
+          image: "/images/capabilities/cap-tablet-woman.jpg",
         },
       ]}
       relatedServices={[

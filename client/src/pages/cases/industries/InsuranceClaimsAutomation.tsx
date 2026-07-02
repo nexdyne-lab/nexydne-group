@@ -11,7 +11,7 @@ export default function InsuranceClaimsAutomation() {
       industryLink="/industries/insurance"
       title="Insurer Reduces Claims Processing Time 60% with AI Automation"
       subtitle="How intelligent document processing and automated decisioning transformed claims operations, improving speed, accuracy, and customer experience."
-      heroImage="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&q=80"
+      heroImage="/case-insurance-office.f039a4a1.jpg"
       metrics={[
         { value: "60%", label: "Faster Processing" },
         { value: "85%", label: "Straight-Through Rate" },
@@ -111,14 +111,14 @@ export default function InsuranceClaimsAutomation() {
           metric: "40%",
           label: "faster quote turnaround",
           link: "/cases/insurance-underwriting-transformation",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80"
+          image: "/images/industries/advisor-charts.jpg"
         },
         {
           title: "Customer Experience Modernization",
           metric: "50%",
           label: "digital adoption",
           link: "/cases/insurance-customer-experience",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80"
+          image: "/images/industries/fin-handshake-city.jpg"
         }
       ]}
       ctaTitle="Ready to Transform Claims?"

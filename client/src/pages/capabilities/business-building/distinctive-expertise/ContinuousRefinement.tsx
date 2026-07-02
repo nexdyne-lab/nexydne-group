@@ -15,7 +15,8 @@ export default function ContinuousRefinement() {
       serviceName="Continuous Refinement"
       serviceSlug="continuous-refinement"
       heroSubtitle="We update your playbooks based on implementation learnings, ensuring methodologies evolve with your business."
-      heroImage="/images/distinctive-expertise-abstract.jpg"
+      heroImage="/images/capabilities/cap-women-meeting.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Continuous Refinement engagements delivered" },

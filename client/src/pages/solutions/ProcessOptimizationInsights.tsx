@@ -33,7 +33,7 @@ const insightPosts: InsightPost[] = [
     readTime: "5 min read",
     date: "November 30, 2025",
     url: "/insights/why-intelligent-automation",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800",
+    image: "/images/capabilities/cap-robot-factory.jpg",
     tags: ["Automation", "Strategy", "Digital Transformation"],
   },
   {
@@ -44,7 +44,7 @@ const insightPosts: InsightPost[] = [
     readTime: "8 min read",
     date: "November 25, 2025",
     url: "/insights/ai-agents-transform-operations",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800",
+    image: "/images/capabilities/cap-warehouse-robot.jpg",
     tags: ["AI Agents", "Enterprise", "Workflow Automation"],
   },
   {
@@ -55,7 +55,7 @@ const insightPosts: InsightPost[] = [
     readTime: "15 min read",
     date: "November 20, 2025",
     url: "/insights/process-mining-guide",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+    image: "/images/industries/ops-gears.jpg",
     tags: ["Process Mining", "Analytics", "Operations"],
   },
   {
@@ -66,7 +66,7 @@ const insightPosts: InsightPost[] = [
     readTime: "6 min read",
     date: "November 15, 2025",
     url: "/insights/ai-automation-reshaping-business",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800",
+    image: "/images/capabilities/cap-circuit-green.jpg",
     tags: ["RPA", "Intelligent Automation", "Technology"],
   },
   {
@@ -77,7 +77,7 @@ const insightPosts: InsightPost[] = [
     readTime: "20 min read",
     date: "November 10, 2025",
     url: "/insights/measuring-automation-roi",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
+    image: "/images/industries/mfg-robotics.jpg",
     tags: ["ROI", "Business Case", "Strategy"],
   },
   {
@@ -88,7 +88,7 @@ const insightPosts: InsightPost[] = [
     readTime: "7 min read",
     date: "November 5, 2025",
     url: "/insights/digital-transformation-readiness",
-    image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=800",
+    image: "/images/industries/ops-monitors-dark.jpg",
     tags: ["IDP", "Document Processing", "AI"],
   },
   {
@@ -99,7 +99,7 @@ const insightPosts: InsightPost[] = [
     readTime: "6 min read",
     date: "October 30, 2025",
     url: "/insights/business-transformation-strategy",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800",
+    image: "/images/capabilities/cap-robot-factory.jpg",
     tags: ["Change Management", "Culture", "People"],
   },
   {
@@ -110,7 +110,7 @@ const insightPosts: InsightPost[] = [
     readTime: "12 min read",
     date: "October 25, 2025",
     url: "/insights/composable-architecture",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800",
+    image: "/images/capabilities/cap-warehouse-robot.jpg",
     tags: ["iPaaS", "Integration", "Architecture"],
   },
   {
@@ -121,7 +121,7 @@ const insightPosts: InsightPost[] = [
     readTime: "8 min read",
     date: "October 20, 2025",
     url: "/insights/performance-improvement-framework",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+    image: "/images/industries/ops-gears.jpg",
     tags: ["Metrics", "KPIs", "Value Measurement"],
   },
 ];
@@ -171,7 +171,7 @@ export default function ProcessOptimizationInsights() {
 
       {/* DZ10 Hero Section */}
       <section className="relative pt-8 pb-20 md:pt-12 md:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-15"></div>
+        <div className="absolute inset-0 bg-[url('/images/capabilities/cap-circuit-green.jpg')] bg-cover bg-center opacity-15"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background"></div>
         
         <div className="container relative z-10 px-4 md:px-12">

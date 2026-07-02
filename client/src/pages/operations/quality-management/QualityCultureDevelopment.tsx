@@ -11,7 +11,7 @@ export default function OperationsQualityManagementQualityCultureDevelopment() {
       serviceName="Quality Culture Development"
       serviceSlug="quality-culture-development"
       heroSubtitle="Build a culture where quality is everyone's responsibility. Training, recognition, and engagement programs that drive behavior change."
-      heroImage="https://images.unsplash.com/photo-1581092446327-9b52bd1570c2?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/mfg-robotics.jpg"
       experienceStats={[
         { number: "100+", label: "Quality Management engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsQualityManagementQualityCultureDevelopment() {
           title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
           industry: "Professional Services · Operations",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80",
+          image: "/images/capabilities/cap-battery-factory.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Academic Medical Center Streamlines Clinical Workflows",
           industry: "Healthcare · Operations",
           metric: "30%",
-          image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1600&q=80",
+          image: "/images/industries/mfg-robot-arm.jpg",
         },
       ]}
       relatedServices={[

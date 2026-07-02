@@ -11,7 +11,7 @@ export default function StrategyCorporateFinancePerformanceImprovementPricingOpt
       serviceName="Pricing Optimization"
       serviceSlug="pricing-optimization"
       heroSubtitle="Review pricing strategy and execution. Capture value through better price realization and mix management."
-      heroImage="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
       experienceStats={[
         { number: "100+", label: "Performance Improvement engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,7 +52,7 @@ export default function StrategyCorporateFinancePerformanceImprovementPricingOpt
           title: "Fintech Scales Cross-Border Payments With Intelligent Automation",
           industry: "Financial Services · Strategy",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?w=1600&q=80",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

@@ -15,7 +15,8 @@ export default function LoyaltyProgramDesign() {
       serviceName="Loyalty Program Design"
       serviceSlug="loyalty-program-design"
       heroSubtitle="Design loyalty programs that drive engagement and value. Create reward structures, tiers, and experiences that resonate with your customers."
-      heroImage="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Loyalty Program Design engagements delivered" },
@@ -70,14 +71,14 @@ export default function LoyaltyProgramDesign() {
           title: "Provider boosts patient engagement with omnichannel touch",
           industry: "Healthcare · Retention & Loyalty",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues-smile.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth manager personalizes onboarding for HNW clients",
           industry: "Wealth Management · Retention & Loyalty",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
       ]}
       relatedServices={[

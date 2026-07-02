@@ -7,7 +7,7 @@ export function LogisticsTechSpinoff() {
       industry="Logistics · Business Building"
       title="Logistics Company Builds Technology Spin-Off"
       subtitle="How a logistics firm commercialized their internal route optimization technology into a standalone software company serving the broader market."
-      heroImage="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1600&q=80"
+      heroImage="/images/industries/transport-bridge.jpg"
       challenge={`The internal technology was tightly coupled with company operations. Significant investment would be needed to create a commercial product. The company lacked software sales and support capabilities. Potential customers were also competitors. The leadership needed to balance spin-off investment with core business focus.
 
 A 160-employee logistics firm specializing in last-mile delivery had built proprietary route optimization software over 10 years. The technology provided significant competitive advantage, and leadership recognized its potential value in serving the broader market. The core tension: the very qualities that made the software powerful for internal use—deep integration with proprietary operations data and workflows—made it difficult to package for external sale, and monetizing the technology meant in some cases selling to direct competitors.`}

@@ -15,7 +15,8 @@ export default function GrowthAnalytics() {
       serviceName="Growth Analytics"
       serviceSlug="growth-analytics"
       heroSubtitle="Build analytics capabilities that identify growth opportunities and track performance. Use data to optimize resource allocation and investment decisions."
-      heroImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80"
+      heroImage="/images/capabilities/cap-lightbulb-idea.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Growth Analytics engagements delivered" },
@@ -70,14 +71,14 @@ export default function GrowthAnalytics() {
           title: "Fintech scales payment ops with intelligent automation",
           industry: "Fintech · Growth Strategy",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
         {
           slug: "telehealth-platform",
           title: "Telehealth provider scales virtual care platform",
           industry: "Healthcare · Growth Strategy",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
       ]}
       relatedServices={[

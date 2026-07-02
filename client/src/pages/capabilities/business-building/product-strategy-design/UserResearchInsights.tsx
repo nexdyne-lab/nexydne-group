@@ -15,7 +15,8 @@ export default function UserResearchInsights() {
       serviceName="User Research & Insights"
       serviceSlug="user-research-insights"
       heroSubtitle="Understand what your customers actually need — not what they say they want. Deep qualitative and quantitative research that reveals unmet needs and opportunities."
-      heroImage="/images/product-strategy-abstract.jpg"
+      heroImage="/images/capabilities/cap-dome-blue.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "User Research & Insights engagements delivered" },
@@ -70,7 +71,7 @@ export default function UserResearchInsights() {
           title: "Healthcare Provider Launches Telehealth Venture",
           industry: "Healthcare · Business Building",
           metric: "5 Mo",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-3d-printing.jpg",
         },
       ]}
       relatedServices={[

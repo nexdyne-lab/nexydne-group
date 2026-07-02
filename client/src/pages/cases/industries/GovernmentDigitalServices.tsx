@@ -11,7 +11,7 @@ export default function GovernmentDigitalServices() {
       industryLink="/industries/public-sector"
       title="State Government Transforms Digital Services, Improves Satisfaction 40%"
       subtitle="How user-centered design and modern technology transformed citizen interactions from frustrating bureaucracy to seamless digital experiences."
-      heroImage="https://images.unsplash.com/photo-1569025690938-a00729c9e1f9?w=1920&q=80"
+      heroImage="/images/industries/people-commute.jpg"
       metrics={[
         { value: "40%", label: "Higher Satisfaction" },
         { value: "70%", label: "Digital Adoption" },
@@ -111,14 +111,14 @@ export default function GovernmentDigitalServices() {
           metric: "50%",
           label: "faster eligibility determination",
           link: "/cases/government-benefits-ai",
-          image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&q=80"
+          image: "/images/industries/colleagues-walking.jpg"
         },
         {
           title: "Smart City Infrastructure",
           metric: "30%",
           label: "reduction in traffic congestion",
           link: "/cases/smart-city-infrastructure",
-          image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=600&q=80"
+          image: "/images/industries/biz-team-bright.jpg"
         }
       ]}
       ctaTitle="Ready to Transform Government Services?"

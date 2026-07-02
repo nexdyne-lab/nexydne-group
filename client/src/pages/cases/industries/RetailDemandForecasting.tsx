@@ -11,7 +11,7 @@ export default function RetailDemandForecasting() {
       industryLink="/industries/consumer-products"
       title="CPG Company Transforms Retail Demand Forecasting"
       subtitle="How collaborative planning with retailers and AI-powered demand sensing improved forecast accuracy by 35% and reduced out-of-stocks."
-      heroImage="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=1920&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       metrics={[
         { value: "35%", label: "Forecast Improvement" },
         { value: "50%", label: "Fewer Out-of-Stocks" },
@@ -111,14 +111,14 @@ export default function RetailDemandForecasting() {
           metric: "30%",
           label: "forecast improvement",
           link: "/cases/food-beverage-demand-forecasting",
-          image: "https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=600&q=80"
+          image: "/images/capabilities/cap-retail-data.jpg"
         },
         {
           title: "Demand Optimization for Consumer Electronics",
           metric: "40%",
           label: "inventory reduction",
           link: "/cases/consumer-electronics-demand-optimization",
-          image: "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=600&q=80"
+          image: "/images/industries/retail-shelves.jpg"
         }
       ]}
       ctaTitle="Ready to See Through to the Shelf?"

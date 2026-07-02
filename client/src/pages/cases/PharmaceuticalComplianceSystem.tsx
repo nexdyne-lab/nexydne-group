@@ -7,7 +7,7 @@ export function PharmaceuticalComplianceSystem() {
       industry="Life Sciences · Custom Software"
       title="Pharma Manufacturer Automates FDA Compliance Tracking Across 12 Facilities"
       subtitle="Custom compliance management system reduced audit prep time by 78% and eliminated manual spreadsheet tracking for 200+ users."
-      heroImage="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80"
+      heroImage="/case-medical-collaboration.9602cc8c.jpg"
       challenge={`A pharmaceutical manufacturer with 12 production facilities across the US was managing FDA compliance documentation through a patchwork of Excel spreadsheets, shared drives, and email chains. Quality assurance teams spent weeks preparing for audits, manually compiling records from disparate sources and verifying data accuracy.
 
 The decentralized approach created significant risk. Version control was non-existent—teams couldn't tell which documents were current. Audit trails were incomplete, making it difficult to demonstrate compliance during FDA inspections. Critical deadlines were missed because no centralized system tracked upcoming renewals, certifications, or training requirements.

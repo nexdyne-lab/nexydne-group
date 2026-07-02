@@ -10,7 +10,7 @@ export default function FinancialPlanningAnalysis() {
       hubName="Financial Planning & Analysis"
       slug="fpa"
       heroSubtitle="Turn data into decisions. Robust budgeting, forecasting, and variance analysis processes that give you clear visibility into performance and confidence in your numbers."
-      heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-chess.jpg"
       experienceStats={[
         { number: "85%", label: "Improvement in forecast accuracy for clients implementing our FP&A frameworks" },
         { number: "50%", label: "Reduction in month-end close time through streamlined reporting processes" },
@@ -114,21 +114,21 @@ export default function FinancialPlanningAnalysis() {
           title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
           industry: "Financial Services · FP&A",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · FP&A",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/industries/team-strategy-board.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
           industry: "Financial Services · FP&A",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80",
+          image: "/images/capabilities/cap-strategy-spheres.jpg",
         },
       ]}
       relatedCapabilities={[

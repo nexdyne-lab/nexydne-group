@@ -12,7 +12,8 @@ export default function FinancialServicesIndustry() {
       industry="Financial Services"
       slug="financial-services"
       heroSubtitle="We help banks, insurers, and fintech leaders prove how data, AI, and digital channels create value before they are scaled across the operating model — automating what is transactional and rewiring teams to meet customers' changing demands."
-      heroImage="/case-banker-meeting.c53f3999.jpg"
+      heroImage="/images/industries/fin-trader.jpg"
+      heroFocal="62% 45%"
       povParagraphs={[
         "We begin our financial services consulting by partnering with you to define, test, and prove how advanced data collection and analysis, AI, digital channels, and other enhancements will create value — before expanding or embedding these capabilities in your operating model. We automate what is transactional and create cross-functional teams to harness the ingenuity and innovation needed to meet customers' changing demands.",
         "The financial services landscape is undergoing unprecedented transformation. Traditional institutions face pressure from fintech disruptors, evolving customer expectations, and an increasingly complex regulatory environment. Success requires not just adopting new technologies, but fundamentally rethinking how value is created and delivered.",
@@ -77,21 +78,21 @@ export default function FinancialServicesIndustry() {
           title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
           industry: "Financial Services",
           metric: "10K+ hrs",
-          image: "/case-banker-meeting.c53f3999.jpg"
+          image: "/images/industries/fin-monitors.jpg"
         },
         {
           slug: "wealth-management-automation",
           title: "Automating wealth management operations for better client experiences",
           industry: "Financial Services",
           metric: "45%",
-          image: "/case-advisor-client.eb15e04e.jpg"
+          image: "/images/industries/fin-handshake-city.jpg"
         },
         {
           slug: "fintech-payment-automation",
           title: "Building a scalable payment processing system for a fintech startup",
           industry: "Financial Services",
           metric: "100K+",
-          image: "/case-financial-advisor.7bb94f0c.jpg"
+          image: "/images/industries/advisor-charts.jpg"
         }
       ]}
     />

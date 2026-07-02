@@ -15,7 +15,8 @@ export default function FrameworkDevelopment() {
       serviceName="Framework Development"
       serviceSlug="framework-development"
       heroSubtitle="We design comprehensive KPI frameworks, develop ROI models for prioritized initiatives, and establish performance dashboards. This phase creates the measurement infrastructure that will guide ongoing decisions."
-      heroImage="/images/performance-intelligence-abstract.jpg"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Framework Development engagements delivered" },

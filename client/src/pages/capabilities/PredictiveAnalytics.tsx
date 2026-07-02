@@ -11,6 +11,7 @@ export default function PredictiveAnalytics() {
       heroSubtitle="Transform historical data into forward-looking insights. Anticipate demand, identify risks, and make proactive decisions — acting on what is going to happen instead of explaining what already did."
       // TODO: confirm hero image asset matches Predictive Analytics theme
       heroImage="/case-data-dashboard.391db27a.jpg"
+      heroFocal="60% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "180+", label: "Predictive models in production" },
@@ -116,21 +117,21 @@ export default function PredictiveAnalytics() {
           title: "Unlocking healthcare insights with real-time data analytics",
           industry: "Healthcare",
           metric: "25%",
-          image: "/case-healthcare-team.5797392b.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
         {
           slug: "insurance-claims-processing",
           title: "Accelerating insurance claims processing with intelligent automation",
           industry: "Financial Services",
           metric: "85%",
-          image: "/case-insurance-office.f039a4a1.jpg",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Building a scalable payment processing system for a fintech startup",
           industry: "Financial Services",
           metric: "100K+",
-          image: "/case-financial-advisor.7bb94f0c.jpg",
+          image: "/images/industries/advisor-charts.jpg",
         },
       ]}
       relatedCapabilities={[

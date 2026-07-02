@@ -11,7 +11,7 @@ export default function NonprofitProgramOptimization() {
       industryLink="/industries/social-impact"
       title="Nonprofit Serves 40% More Beneficiaries Through Optimization"
       subtitle="How operational excellence, data-driven decisions, and process improvement expanded reach without expanding budget."
-      heroImage="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1920&q=80"
+      heroImage="/images/industries/people-commute.jpg"
       metrics={[
         { value: "40%", label: "More Served" },
         { value: "35%", label: "Lower Cost/Person" },
@@ -111,14 +111,14 @@ export default function NonprofitProgramOptimization() {
           metric: "60%",
           label: "higher donor engagement",
           link: "/cases/nonprofit-digital-transformation",
-          image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=80"
+          image: "/images/industries/colleagues-walking.jpg"
         },
         {
           title: "Impact Measurement Platform",
           metric: "10x",
           label: "better outcome tracking",
           link: "/cases/nonprofit-impact-measurement",
-          image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&q=80"
+          image: "/images/industries/biz-team-bright.jpg"
         }
       ]}
       ctaTitle="Ready to Optimize Programs?"

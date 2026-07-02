@@ -7,7 +7,7 @@ export function InsurancePolicyholderPortal() {
       industry="Insurance · Customer Portal"
       title="Insurance Carrier Launches Digital Policyholder Portal for 1.2M Members"
       subtitle="Guidewire Digital Portal enables self-service policy management, reducing agent workload by 52% and improving retention by 18% among policyholders aged 25-40."
-      heroImage="https://images.unsplash.com/photo-1560472355-536de3962603?w=1600&q=80"
+      heroImage="/case-insurance-office.f039a4a1.jpg"
       challenge={`A regional property and casualty insurance carrier with 1.2 million policyholders faced mounting pressure to modernize its customer experience. Policyholders relied heavily on agents and call centers for routine tasks like viewing policy documents, requesting ID cards, updating contact information, and making payments—creating operational inefficiencies and frustrating customers accustomed to digital self-service in other industries.
 
 The carrier's agent network handled over 95,000 monthly service requests, with 58% classified as "low-value" transactions that consumed agent time without generating new business. Younger policyholders (ages 25-40) expressed particular dissatisfaction with the lack of digital options, contributing to a 22% annual retention gap between this demographic and older policyholders.

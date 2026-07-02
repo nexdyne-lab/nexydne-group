@@ -22,7 +22,7 @@ const caseStudies: CaseStudy[] = [
     company: "Regional Retailer",
     title: "AI-Powered Personalization Drives 35% Increase in Customer Lifetime Value",
     description: "A regional retail chain implemented intelligent recommendation engines and personalized marketing, transforming one-time buyers into loyal repeat customers.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop"
+    image: "/images/industries/tech-glasses.jpg"
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const caseStudies: CaseStudy[] = [
     company: "Community Bank",
     title: "Conversational AI Transforms Customer Service Experience",
     description: "A community bank deployed intelligent virtual assistants that handle 60% of customer inquiries, improving response times while maintaining the personal touch customers expect.",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop",
+    image: "/images/capabilities/cap-ai-search.jpg",
     hasVideo: true
   },
   {
@@ -39,7 +39,7 @@ const caseStudies: CaseStudy[] = [
     company: "Patient Care Network",
     title: "Predictive Outreach Improves Patient Engagement by 50%",
     description: "A healthcare network uses AI to identify patients at risk of disengagement and proactively reaches out with personalized care reminders and support.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop"
+    image: "/images/capabilities/cap-hologram.jpg"
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const caseStudies: CaseStudy[] = [
     company: "Regional Insurance Group",
     title: "Smart Claims Processing Delivers 24-Hour Resolution",
     description: "An insurance company reimagined their claims experience with AI-powered assessment and automated processing, turning a pain point into a competitive advantage.",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop",
+    image: "/images/capabilities/cap-circuit-green.jpg",
     hasVideo: true
   }
 ];
@@ -57,19 +57,19 @@ const insights = [
     category: "Customer Strategy",
     title: "The New Rules of Customer Experience in the AI Era",
     description: "How intelligent systems are redefining what customers expect from every interaction.",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
+    image: "/images/industries/tech-datacenter.jpg"
   },
   {
     category: "Digital",
     title: "Building Trust Through AI-Powered Personalization",
     description: "Balancing personalization with privacy to create experiences customers love.",
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop"
+    image: "/images/capabilities/cap-coder.jpg"
   },
   {
     category: "AI, Insights, and Solutions",
     title: "From Chatbots to Intelligent Assistants: The Evolution of Customer Service AI",
     description: "Moving beyond scripted responses to truly intelligent customer interactions.",
-    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=400&h=300&fit=crop"
+    image: "/images/capabilities/cap-conference-data.jpg"
   }
 ];
 

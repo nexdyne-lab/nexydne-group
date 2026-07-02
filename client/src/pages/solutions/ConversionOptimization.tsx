@@ -47,7 +47,7 @@ export default function ConversionOptimization() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600&h=600&fit=crop"
+                src="/images/capabilities/cap-celebrate.jpg"
                 alt="Robert Martinez - CRO Director"
                 className="rounded-full w-64 h-64 object-cover mx-auto lg:mx-0"
               />
@@ -203,7 +203,7 @@ export default function ConversionOptimization() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+                src="/images/capabilities/cap-lightbulb-idea.jpg"
                 alt="CRO Analytics Dashboard"
                 className="rounded-2xl shadow-2xl"
               />
@@ -233,7 +233,7 @@ export default function ConversionOptimization() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800&h=600&fit=crop"
+                src="/images/capabilities/cap-retail-apparel.jpg"
                 alt="NEXDYNE Office"
                 className="rounded-2xl shadow-xl"
               />
@@ -300,7 +300,7 @@ export default function ConversionOptimization() {
             <div className="group cursor-pointer">
               <div className="relative overflow-hidden rounded-xl mb-6">
                 <img
-                  src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop"
+                  src="/images/capabilities/cap-mobile-woman.jpg"
                   alt="SaaS Platform CRO"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -322,7 +322,7 @@ export default function ConversionOptimization() {
             <div className="group cursor-pointer">
               <div className="relative overflow-hidden rounded-xl mb-6">
                 <img
-                  src="https://images.unsplash.com/photo-1556742111-a301076d9d18?w=600&h=400&fit=crop"
+                  src="/images/industries/deal-handshake.jpg"
                   alt="E-commerce Checkout Optimization"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -344,7 +344,7 @@ export default function ConversionOptimization() {
             <div className="group cursor-pointer">
               <div className="relative overflow-hidden rounded-xl mb-6">
                 <img
-                  src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?w=600&h=400&fit=crop"
+                  src="/images/capabilities/cap-telescope.jpg"
                   alt="Lead Generation Optimization"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />

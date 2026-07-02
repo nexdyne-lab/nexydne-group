@@ -7,7 +7,7 @@ export function BankingMobileEngagement() {
       industry="Banking · Digital Engagement"
       title="Bank Transforms Digital Experience with AI-Powered Mobile App"
       subtitle="Conversational AI and proactive notifications reduce call center volume by 38% while improving customer satisfaction scores by 27 points."
-      heroImage="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       challenge={`A regional bank with $12 billion in assets and 850,000 customers faced mounting pressure from digital-first competitors offering superior mobile banking experiences. Despite investing in a mobile app, customer adoption remained low—only 32% of customers had downloaded the app, and active usage rates lagged at just 18%. Customer satisfaction scores for digital channels trailed industry benchmarks by 31 points, while call center volume continued growing 12% annually.
 
 The root problem: the existing mobile app functioned as a passive transaction tool rather than an intelligent engagement platform. Customers received no proactive guidance about account issues, spending patterns, or financial opportunities. The app lacked conversational AI for support, forcing customers to navigate complex IVR systems or wait on hold for simple questions.

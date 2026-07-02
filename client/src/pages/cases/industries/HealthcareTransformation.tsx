@@ -11,7 +11,7 @@ export default function HealthcareTransformation() {
       industryLink="/industries/healthcare"
       title="Regional Health System Achieves Clinical Excellence Through Digital Transformation"
       subtitle="How an integrated digital health platform and AI-powered clinical decision support improved patient outcomes by 35% while reducing care costs."
-      heroImage="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1920&q=80"
+      heroImage="/case-medical-collaboration.9602cc8c.jpg"
       metrics={[
         { value: "35%", label: "Improved Patient Outcomes" },
         { value: "28%", label: "Reduction in Readmissions" },
@@ -111,14 +111,14 @@ export default function HealthcareTransformation() {
           metric: "42%",
           label: "reduction in preventable readmissions",
           link: "/cases/healthcare-readmission",
-          image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80"
+          image: "/case-doctor-consultation.799c1562.jpg"
         },
         {
           title: "Revenue Cycle Optimization",
           metric: "$32M",
           label: "recovered annual revenue",
           link: "/cases/healthcare-revenue-cycle",
-          image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80"
+          image: "/case-healthcare-team.5797392b.jpg"
         }
       ]}
       ctaTitle="Ready to Transform Your Health System?"

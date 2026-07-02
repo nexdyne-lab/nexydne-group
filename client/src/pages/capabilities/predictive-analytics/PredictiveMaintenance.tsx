@@ -15,7 +15,8 @@ export default function PredictiveMaintenance() {
       serviceName="Predictive Maintenance"
       serviceSlug="predictive-maintenance"
       heroSubtitle="Anticipate equipment failures before they happen. Sensor data analysis and anomaly detection reduce downtime and maintenance costs. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-data-analytics.01de594d.jpg"
+      heroImage="/images/industries/mfg-robotics.jpg"
+      heroFocal="60% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Predictive Maintenance engagements delivered" },

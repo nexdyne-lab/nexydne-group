@@ -11,7 +11,7 @@ export default function BankCrossSell() {
       industryLink="/industries/financial-services"
       title="Multinational Bank Unlocks $200M in Cross-Sell Revenue"
       subtitle="How a unified customer data platform and AI-powered recommendation engine transformed product attachment rates across 12 million retail banking customers."
-      heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1920&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       metrics={[
         { value: "$200M", label: "Revenue Increase" },
         { value: "40%", label: "Higher Attachment Rate" },
@@ -111,14 +111,14 @@ export default function BankCrossSell() {
           metric: "73%",
           label: "reduction in fraud losses",
           link: "/cases/financial-fraud-detection",
-          image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80"
+          image: "/images/industries/fin-trader.jpg"
         },
         {
           title: "Wealth Management Digital Onboarding",
           metric: "60%",
           label: "reduction in onboarding time",
           link: "/cases/wealth-onboarding",
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+          image: "/images/industries/fin-handshake-city.jpg"
         }
       ]}
       ctaTitle="Ready to Unlock Your Customer Intelligence?"

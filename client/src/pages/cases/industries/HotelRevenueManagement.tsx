@@ -11,7 +11,7 @@ export default function HotelRevenueManagement() {
       industryLink="/industries/travel-hospitality"
       title="Hotel Chain Increases RevPAR 18% with AI Revenue Management"
       subtitle="How machine learning models optimize pricing in real-time, maximizing revenue across 500 properties and 100,000 rooms."
-      heroImage="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80"
+      heroImage="/images/industries/travel-city-twilight.jpg"
       metrics={[
         { value: "18%", label: "RevPAR Increase" },
         { value: "$120M", label: "Revenue Gain" },
@@ -111,14 +111,14 @@ export default function HotelRevenueManagement() {
           metric: "25pts",
           label: "NPS improvement",
           link: "/cases/hotel-guest-experience",
-          image: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=80"
+          image: "/images/industries/city-night.jpg"
         },
         {
           title: "Airline Loyalty Program Redesign",
           metric: "40%",
           label: "increase in engagement",
           link: "/cases/airline-loyalty-redesign",
-          image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80"
+          image: "/images/industries/transport-bridge.jpg"
         }
       ]}
       ctaTitle="Ready to Optimize Revenue?"

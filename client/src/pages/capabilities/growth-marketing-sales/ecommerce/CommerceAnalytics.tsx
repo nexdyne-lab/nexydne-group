@@ -15,7 +15,8 @@ export default function CommerceAnalytics() {
       serviceName="Commerce Analytics"
       serviceSlug="commerce-analytics"
       heroSubtitle="Build analytics capabilities that drive decision-making. Track customer journeys, measure attribution, and optimize marketing spend."
-      heroImage="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-data.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Commerce Analytics engagements delivered" },
@@ -70,14 +71,14 @@ export default function CommerceAnalytics() {
           title: "Telehealth provider scales virtual care platform",
           industry: "Healthcare · E-commerce",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-tablet-woman.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech scales payment ops with intelligent automation",
           industry: "Fintech · E-commerce",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
       ]}
       relatedServices={[

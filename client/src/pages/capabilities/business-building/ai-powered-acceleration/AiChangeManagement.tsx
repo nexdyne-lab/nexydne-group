@@ -15,7 +15,8 @@ export default function AiChangeManagement() {
       serviceName="AI Change Management"
       serviceSlug="ai-change-management"
       heroSubtitle="Ensure your team adopts AI effectively. Training, governance frameworks, and organizational change programs for AI transformation."
-      heroImage="/images/ai-acceleration-abstract.jpg"
+      heroImage="/images/capabilities/cap-circuit-green.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "AI Change Management engagements delivered" },
@@ -70,14 +71,14 @@ export default function AiChangeManagement() {
           title: "Financial Services Firm Enters Adjacent Market",
           industry: "Financial Services · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1600&q=80",
+          image: "/images/capabilities/cap-circuit-green.jpg",
         },
         {
           slug: "manufacturer-dtc",
           title: "Manufacturer Creates Direct-to-Consumer Channel",
           industry: "Manufacturing · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=80",
+          image: "/images/capabilities/cap-ai-search.jpg",
         },
       ]}
       relatedServices={[

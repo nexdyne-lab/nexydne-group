@@ -11,7 +11,7 @@ export default function RetailLoyaltyTransformation() {
       industryLink="/industries/retail"
       title="Retailer Transforms Loyalty Program, Increases Member Spend 45%"
       subtitle="How AI-powered personalization and gamified engagement turned a stagnant points program into a competitive advantage."
-      heroImage="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       metrics={[
         { value: "45%", label: "Higher Member Spend" },
         { value: "3.2x", label: "Engagement Rate" },
@@ -111,14 +111,14 @@ export default function RetailLoyaltyTransformation() {
           metric: "85%",
           label: "e-commerce growth",
           link: "/cases/fashion-retail-digital-transformation",
-          image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80"
+          image: "/images/capabilities/cap-retail-data.jpg"
         },
         {
           title: "AI Demand Forecasting for Grocery Chain",
           metric: "35%",
           label: "reduction in waste",
           link: "/cases/grocery-demand-forecasting",
-          image: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&q=80"
+          image: "/images/industries/retail-shelves.jpg"
         }
       ]}
       ctaTitle="Ready to Transform Your Loyalty Program?"

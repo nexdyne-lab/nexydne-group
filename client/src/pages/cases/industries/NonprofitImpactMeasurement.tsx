@@ -11,7 +11,7 @@ export default function NonprofitImpactMeasurement() {
       industryLink="/industries/social-impact"
       title="Foundation Achieves 10x Better Outcome Tracking with Impact Platform"
       subtitle="How unified data, standardized metrics, and real-time dashboards transformed how a foundation measures and maximizes social impact."
-      heroImage="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1920&q=80"
+      heroImage="/images/industries/people-commute.jpg"
       metrics={[
         { value: "10x", label: "Better Tracking" },
         { value: "200+", label: "Grantees Connected" },
@@ -111,14 +111,14 @@ export default function NonprofitImpactMeasurement() {
           metric: "60%",
           label: "higher donor engagement",
           link: "/cases/nonprofit-digital-transformation",
-          image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=80"
+          image: "/images/industries/colleagues-walking.jpg"
         },
         {
           title: "Program Delivery Optimization",
           metric: "40%",
           label: "more beneficiaries served",
           link: "/cases/nonprofit-program-optimization",
-          image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80"
+          image: "/images/industries/biz-team-bright.jpg"
         }
       ]}
       ctaTitle="Ready to Measure Impact?"

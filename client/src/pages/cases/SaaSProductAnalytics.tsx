@@ -7,7 +7,7 @@ export function SaaSProductAnalytics() {
       industry="Technology · Data Visualization"
       title="SaaS Company Increases Trial-to-Paid Conversion 28% with Product Analytics Dashboard"
       subtitle="Usage analytics identified friction points in onboarding flow, driving targeted improvements that boosted conversion rates."
-      heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop"
+      heroImage="/images/industries/tech-datacenter.jpg"
       challenge={`A B2B SaaS company offering project management software struggled with low trial-to-paid conversion rates. Only 18% of trial users converted to paying customers—well below the SaaS industry benchmark of 25-30%. The product team lacked visibility into user behavior during the trial period. They didn't know which features drove conversion, where users got stuck, or why most trials ended without purchase.
 
 The VP of Product relied on anecdotal feedback from sales calls and support tickets. Quantitative analysis happened quarterly through manual SQL queries that took days to run. By the time insights emerged, the product roadmap had already been set. The team needed real-time visibility into user behavior to identify friction points and validate product improvements.`}

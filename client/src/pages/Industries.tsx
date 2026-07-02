@@ -82,7 +82,7 @@ const industries = [
   {
     title: "Technology, Media & Telecommunications",
     description: "Accelerating product velocity, modernizing networks, and building the data and AI capabilities the next cycle demands.",
-    image: "/hero-ai-brain.738a6c59.png",
+    image: "/hero-ai-brain.738a6c59.jpg",
     href: "/industries/technology-media-telecom",
   },
   {
@@ -114,7 +114,7 @@ export default function Industries() {
         eyebrow="INDUSTRIES"
         title="Industries We Serve"
         subtitle="Deep expertise across sectors, delivering tailored solutions that address your industry's unique challenges and opportunities."
-        heroImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80"
+        heroImage="/images/industries/mfg-robotics.jpg"
       />
 
       {/* Overview */}

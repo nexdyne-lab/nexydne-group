@@ -15,7 +15,8 @@ export default function ChurnPrediction() {
       serviceName="Churn Prediction"
       serviceSlug="churn-prediction"
       heroSubtitle="Identify at-risk customers before they leave. Our models analyze behavioral patterns to flag churn risk and recommend retention interventions. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-data-analytics.01de594d.jpg"
+      heroImage="/images/industries/fin-monitors.jpg"
+      heroFocal="60% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Churn Prediction engagements delivered" },
@@ -68,7 +69,7 @@ export default function ChurnPrediction() {
           title: "AI-driven patient engagement for a major hospital system",
           industry: "Healthcare",
           metric: "35%",
-          image: "/case-medical-collaboration.9602cc8c.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

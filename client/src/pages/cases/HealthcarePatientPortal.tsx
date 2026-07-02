@@ -7,7 +7,7 @@ export function HealthcarePatientPortal() {
       industry="Healthcare · Digital Health"
       title="Hospital Launches Patient Portal Reducing Administrative Calls 65%"
       subtitle="Regional hospital system builds mobile-first patient portal for appointment scheduling, test results, and prescription refills—cutting phone volume and improving satisfaction scores."
-      heroImage="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80"
+      heroImage="/case-medical-collaboration.9602cc8c.jpg"
       challenge={`A 450-bed regional hospital system serving 12 counties in the Midwest faced overwhelming administrative burden from patient phone calls. Their call center received 8,500 calls per week, with 65% related to appointment scheduling, test result inquiries, and prescription refill requests. Average hold times exceeded 12 minutes during peak hours, leading to patient frustration and staff burnout. The hospital's legacy patient portal, built on outdated technology, had only 18% adoption among patients and lacked mobile optimization.
 
 The hospital needed a modern, mobile-first patient portal that would empower patients to manage their healthcare independently while reducing administrative workload. The solution had to integrate with their Epic EHR system, support biometric authentication for security, and provide intuitive navigation for patients of all ages and technical abilities. With patient satisfaction scores declining and staff turnover increasing due to call center stress, the hospital set an aggressive 6-month timeline to design, develop, and launch the new portal.`}

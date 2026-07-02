@@ -15,7 +15,8 @@ export default function ArchitectureAssessment() {
       serviceName="Architecture Assessment"
       serviceSlug="architecture-assessment"
       heroSubtitle="We conduct comprehensive architecture assessments to understand current state, identify gaps, and define target architecture. This phase establishes the transformation roadmap and prioritizes initiatives."
-      heroImage="/images/digital-transformation-abstract.jpg"
+      heroImage="/images/capabilities/cap-aerial-grid.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Architecture Assessment engagements delivered" },
@@ -70,7 +71,7 @@ export default function ArchitectureAssessment() {
           title: "Logistics Company Builds Technology Spin-Off",
           industry: "Logistics · Business Building",
           metric: "$28M",
-          image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1600&q=80",
+          image: "/images/capabilities/cap-aerial-grid.jpg",
         },
       ]}
       relatedServices={[

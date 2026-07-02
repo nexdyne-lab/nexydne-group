@@ -15,7 +15,8 @@ export default function CustomerSegmentation() {
       serviceName="Customer Segmentation"
       serviceSlug="customer-segmentation"
       heroSubtitle="Develop actionable customer segments based on needs, behaviors, and value. Build targeting strategies that improve marketing effectiveness."
-      heroImage="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-data.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Customer Segmentation engagements delivered" },
@@ -70,14 +71,14 @@ export default function CustomerSegmentation() {
           title: "Health system unifies patient data for population analytics",
           industry: "Healthcare · Consumer & Shopper Insights",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth manager personalizes onboarding for HNW clients",
           industry: "Wealth Management · Consumer & Shopper Insights",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-office-women.jpg",
         },
       ]}
       relatedServices={[

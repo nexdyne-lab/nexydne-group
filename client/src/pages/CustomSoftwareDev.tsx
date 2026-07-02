@@ -27,7 +27,7 @@ export default function CustomSoftwareDev() {
       title: "Claims Processing AI",
       category: "Insurance",
       description: "Reducing claims processing time by 85% with intelligent automation.",
-      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2670&auto=format&fit=crop",
+      image: "/images/industries/tech-datacenter.jpg",
       link: "/cases/insurance-claims-processing"
     },
     {

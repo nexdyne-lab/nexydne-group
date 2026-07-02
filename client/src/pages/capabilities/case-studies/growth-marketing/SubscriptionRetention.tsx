@@ -7,7 +7,7 @@ export function SubscriptionRetention() {
       industry="Media & Entertainment · Growth Marketing"
       title="Customer Retention Program Reduces Churn by 40%"
       subtitle="How a subscription business transformed their retention approach to dramatically reduce churn and increase customer lifetime value."
-      heroImage="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80"
+      heroImage="/images/capabilities/cap-colleagues-smile.jpg"
       challenge={`Monthly churn had crept up to 4.5%, threatening the company's growth trajectory. Customer success was reactive, only engaging when customers complained or cancelled. There was no systematic approach to identifying at-risk customers. Onboarding was inconsistent, and many customers never fully adopted the product.
 
 A 120-employee subscription business with $38M in annual recurring revenue provides digital content and tools to creative professionals. The company had grown rapidly through acquisition but retention was becoming a critical issue. Analysis of exit surveys and behavioral data revealed that most churned customers had disengaged weeks before cancelling—and that low product usage was the strongest predictor of churn. Customers who didn't complete onboarding churned at 3x the rate of those who did, while price was rarely the primary reason for cancellation.`}

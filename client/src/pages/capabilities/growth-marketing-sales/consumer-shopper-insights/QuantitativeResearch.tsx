@@ -15,7 +15,8 @@ export default function QuantitativeResearch() {
       serviceName="Quantitative Research"
       serviceSlug="quantitative-research"
       heroSubtitle="Design and execute surveys, conjoint analysis, and other quantitative methods. Measure customer attitudes and preferences at scale."
-      heroImage="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80"
+      heroImage="/images/capabilities/cap-colleagues.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Quantitative Research engagements delivered" },
@@ -70,14 +71,14 @@ export default function QuantitativeResearch() {
           title: "Health system unifies patient data for population analytics",
           industry: "Healthcare · Consumer & Shopper Insights",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-retail-apparel.jpg",
         },
         {
           slug: "consulting-knowledge-management",
           title: "Consultancy unlocks 30 years of IP with AI knowledge graph",
           industry: "Professional Services · Consumer & Shopper Insights",
           metric: "4x",
-          image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=80",
+          image: "/images/capabilities/cap-retail-data.jpg",
         },
       ]}
       relatedServices={[

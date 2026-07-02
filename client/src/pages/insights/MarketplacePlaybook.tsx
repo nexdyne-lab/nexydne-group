@@ -23,7 +23,7 @@ export default function MarketplacePlaybook() {
       <section className="relative min-h-[60vh] flex items-center pt-20 overflow-hidden bg-background">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2000&q=80" 
+            src="/images/capabilities/cap-retail-apparel.jpg" 
             alt="Marketplace Analytics Dashboard" 
             className="w-full h-full object-cover opacity-20"
           />
@@ -516,21 +516,21 @@ export default function MarketplacePlaybook() {
             type: "Article",
             title: "The digital growth playbook for mid-market companies",
             description: "How leading mid-market companies are building digital channels that compete with well-funded startups.",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+            image: "/images/capabilities/cap-retail-data.jpg",
             link: "/insights/digital-growth-playbook"
           },
           {
             type: "Article",
             title: "E-commerce economics: Building profitable D2C channels",
             description: "The unit economics, technology choices, and operational considerations that determine D2C success.",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
+            image: "/images/capabilities/cap-mobile-woman.jpg",
             link: "/insights/ecommerce-economics"
           },
           {
             type: "Article",
             title: "From MVP to scale: The startup growth journey",
             description: "How to navigate the critical transitions from product-market fit to sustainable growth.",
-            image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=800&q=80",
+            image: "/images/industries/retail-shelves.jpg",
             link: "/insights/from-mvp-to-scale"
           }
         ]}

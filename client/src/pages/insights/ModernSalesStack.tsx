@@ -52,7 +52,7 @@ export default function ModernSalesStack() {
           {/* Featured Image */}
           <div className="aspect-video bg-subtle rounded-lg mb-12 overflow-hidden">
             <img 
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop" 
+              src="/images/industries/deal-handshake.jpg" 
               alt="Modern Sales Stack Architecture" 
               className="w-full h-full object-cover"
             />
@@ -136,7 +136,7 @@ export default function ModernSalesStack() {
             <div className="flex items-start gap-4">
               <div className="w-16 h-16 bg-grey rounded-full flex-shrink-0 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop" 
+                  src="/images/capabilities/cap-presenting-graphs.jpg" 
                   alt="Elena Rodriguez" 
                   className="w-full h-full object-cover"
                 />
@@ -164,7 +164,7 @@ export default function ModernSalesStack() {
                 <div className="group cursor-pointer">
                   <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop" 
+                      src="/images/capabilities/cap-mobile-woman.jpg" 
                       alt="AI Sales Forecasting" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -184,7 +184,7 @@ export default function ModernSalesStack() {
                 <div className="group cursor-pointer">
                   <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop" 
+                      src="/images/capabilities/cap-celebrate.jpg" 
                       alt="Algorithmic Territory Planning" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />

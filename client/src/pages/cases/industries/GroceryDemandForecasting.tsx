@@ -11,7 +11,7 @@ export default function GroceryDemandForecasting() {
       industryLink="/industries/retail"
       title="Grocery Chain Reduces Waste 35% with AI Demand Forecasting"
       subtitle="How machine learning models predict demand at the store-SKU-day level, optimizing inventory and reducing food waste across 500 stores."
-      heroImage="https://images.unsplash.com/photo-1542838132-92c53300491e?w=1920&q=80"
+      heroImage="/images/capabilities/cap-food.jpg"
       metrics={[
         { value: "35%", label: "Waste Reduction" },
         { value: "96%", label: "On-Shelf Availability" },
@@ -111,14 +111,14 @@ export default function GroceryDemandForecasting() {
           metric: "85%",
           label: "e-commerce growth",
           link: "/cases/fashion-retail-digital-transformation",
-          image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80"
+          image: "/images/capabilities/cap-agriculture.jpg"
         },
         {
           title: "Loyalty Program Transformation",
           metric: "45%",
           label: "increase in member spend",
           link: "/cases/retail-loyalty-transformation",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80"
+          image: "/images/capabilities/cap-retail-data.jpg"
         }
       ]}
       ctaTitle="Ready to Optimize Your Inventory?"

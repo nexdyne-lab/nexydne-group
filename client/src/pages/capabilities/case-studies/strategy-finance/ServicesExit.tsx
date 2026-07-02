@@ -7,7 +7,7 @@ export function ServicesExit() {
       industry="Professional Services · Strategy & Finance"
       title="Exit Preparation Maximizes Founder Value"
       subtitle="How a professional services firm prepared for sale and achieved a 40% valuation premium through strategic positioning."
-      heroImage="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80"
+      heroImage="/images/industries/meeting-topview.jpg"
       challenge={`The founder wanted to exit within 2-3 years but the company wasn't ready for sale. Revenue was concentrated in a few large clients, key relationships were tied to the founder personally, and financial reporting didn't present the business in the best light.
 
 A 140-employee professional services firm specializing in environmental consulting with $20M in revenue had a founder approaching retirement age. The sale readiness assessment identified issues that would reduce value or complicate a sale: top 3 clients representing 60% of revenue, the founder personally involved in most client relationships, EBITDA understated due to above-market owner compensation, and no clear succession plan for leadership.`}

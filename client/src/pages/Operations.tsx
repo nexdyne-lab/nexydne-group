@@ -127,7 +127,7 @@ export default function Operations() {
       // TODO: confirm with practice lead before publish (image path + realOutcomes / howWeHelp framing)
       inPractice={{
         image:
-          "https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&q=80",
+          "/images/capabilities/cap-team-screens.jpg",
         intro:
           "In the era of algorithmic supply chains and intelligent automation, operational excellence is no longer about incremental improvement — it is about building adaptive systems that learn, optimize, and evolve. The most successful operations organizations have moved beyond siloed optimization to integrated systems where data flows seamlessly from demand signal to delivery, with real-time visibility, predictive decision-making, and autonomous execution. We don't just implement tools; we refactor the entire operational stack — from production scheduling algorithms to resilient supply networks — so your operations engine runs with the precision of a well-tuned system.",
         realOutcomes: [

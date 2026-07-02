@@ -15,7 +15,8 @@ export default function NextGenOperations() {
       serviceName="Next-Gen Operations"
       serviceSlug="next-gen-operations"
       heroSubtitle="Digitize your operations to achieve step-change improvements in quality, productivity, and safety. We help you build intelligent supply chains and manufacturing systems that adapt in real-time."
-      heroImage="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2670&auto=format&fit=crop"
+      heroImage="/images/capabilities/cap-iot-network.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "30%", label: "Reduction in unplanned downtime" },

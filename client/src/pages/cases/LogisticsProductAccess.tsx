@@ -7,7 +7,7 @@ export function LogisticsProductAccess() {
       industry="Logistics & Distribution · E-commerce Personalization"
       title="Logistics Company Enables 3.2x Faster Product Access with Personalized Search and Merchandising"
       subtitle="Industrial supply distributor implemented Tweakwise search and personalization to help B2B customers find the right products faster—driving 68% higher conversion and $12M in incremental revenue."
-      heroImage="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80"
+      heroImage="/images/industries/retail-warehouse.jpg"
       challenge={`A national industrial supply distributor with 180,000+ SKUs serving construction, manufacturing, and facilities management customers faced a critical e-commerce challenge: their vast product catalog overwhelmed customers and made it difficult to find the right products quickly. Generic keyword search returned hundreds of irrelevant results, forcing customers to manually filter through pages of products or call sales representatives for guidance.
 
 The company's B2B customers—procurement managers, maintenance supervisors, and contractors—needed to find specific products fast during time-sensitive projects. Poor search relevance and lack of personalized recommendations meant customers either abandoned searches in frustration or spent excessive time navigating the catalog, reducing productivity and increasing the likelihood they'd purchase from competitors. 42% of orders required sales representative assistance because customers couldn't find products through self-service.`}

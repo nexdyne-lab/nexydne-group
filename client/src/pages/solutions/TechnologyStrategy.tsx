@@ -54,14 +54,14 @@ export default function TechnologyStrategy() {
           title: "CIO advisory rebuilds a five-year technology strategy that survives a CEO transition",
           industry: "Industrial Distribution",
           metric: "CEO-proof",
-          image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
         {
           slug: "insurance-claims-processing",
           title: "Decision-rights redesign cuts architectural review backlog from 14 weeks to 9 days",
           industry: "Specialty Insurance",
           metric: "14w → 9d",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
       ]}
       relatedServices={[

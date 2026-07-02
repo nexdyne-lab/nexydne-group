@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceAiPoweredFinanceAutomatedFinanci
       serviceName="Automated Financial Reporting"
       serviceSlug="automated-financial-reporting"
       heroSubtitle="Eliminate manual report generation with AI-powered automation. Real-time dashboards and scheduled reports that update themselves, freeing your team for higher-value analysis."
-      heroImage="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-chess.jpg"
       experienceStats={[
         { number: "100+", label: "AI-Powered Finance engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,7 +52,7 @@ export default function StrategyCorporateFinanceAiPoweredFinanceAutomatedFinanci
           title: "Fintech Scales Cross-Border Payments With Intelligent Automation",
           industry: "Financial Services · Strategy",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?w=1600&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
         },
       ]}
       relatedServices={[

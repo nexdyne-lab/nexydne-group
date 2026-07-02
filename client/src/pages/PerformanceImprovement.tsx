@@ -107,7 +107,7 @@ export default function PerformanceImprovement() {
             >
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80" 
+                  src="/images/capabilities/cap-team-screens.jpg" 
                   alt="Performance Analytics" 
                   className="w-full h-auto"
                 />
@@ -289,19 +289,19 @@ export default function PerformanceImprovement() {
               {
                 title: "Manufacturer reduces operating costs by $3.2M annually",
                 category: "Cost Optimization",
-                image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80",
+                image: "/images/industries/ops-gears.jpg",
                 link: "/case-studies/manufacturing-cost-reduction"
               },
               {
                 title: "Distributor releases $6.5M in working capital",
                 category: "Working Capital",
-                image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80",
+                image: "/images/capabilities/cap-data-bars.jpg",
                 link: "/case-studies/distribution-working-capital"
               },
               {
                 title: "E-commerce company scales operations 2x with 15% headcount increase",
                 category: "Process Excellence",
-                image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80",
+                image: "/images/capabilities/cap-diverse-team.jpg",
                 link: "/case-studies/ecommerce-operations"
               }
             ].map((study, i) => (
@@ -407,19 +407,19 @@ export default function PerformanceImprovement() {
             title: "The Smart Cost Reduction Playbook",
             category: "Cost Management",
             link: "/insights/smart-cost-reduction",
-            image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80"
+            image: "/images/industries/meeting-topview.jpg"
           },
           {
             title: "Unlocking Cash: Working Capital Optimization",
             category: "Cash Flow",
             link: "/insights/working-capital-optimization",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-team-screens.jpg"
           },
           {
             title: "Building Lean Operations That Scale",
             category: "Process Excellence",
             link: "/insights/lean-operations-scale",
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80"
+            image: "/images/industries/ops-gears.jpg"
           }
         ]}
       />

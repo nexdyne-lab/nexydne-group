@@ -23,7 +23,7 @@ export default function MAFailureAnalysis() {
       
       {/* DZ10 Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('/images/industries/tech-datacenter.jpg')] bg-cover bg-center opacity-20"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background"></div>
         
         <div className="container relative z-10 px-4 md:px-12 max-w-4xl">
@@ -66,7 +66,7 @@ export default function MAFailureAnalysis() {
       {/* Featured Image */}
       <div className="w-full h-96 bg-background overflow-hidden">
         <img 
-          src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80" 
+          src="/images/capabilities/cap-circuit-green.jpg" 
           alt="M&A Success and Failure" 
           className="w-full h-full object-cover opacity-60"
         />

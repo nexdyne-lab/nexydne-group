@@ -10,6 +10,7 @@ export default function DistinctiveExpertise() {
       slug="distinctive-expertise"
       heroSubtitle="Access industry-specific playbooks, growth strategy templates, and best-practice repositories refined across hundreds of mid-market transformations — institutional knowledge without the Fortune 500 overhead."
       heroImage="/images/distinctive-expertise-abstract.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "200+", label: "Transformation playbooks across 12 core industries" },
@@ -113,21 +114,21 @@ export default function DistinctiveExpertise() {
           title: "Financial Services Firm Enters Adjacent Market",
           industry: "Financial Services · Business Building",
           metric: "65%",
-          image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1600&q=80",
+          image: "/images/capabilities/cap-venturing.jpg",
         },
         {
           slug: "consulting-saas",
           title: "Professional Services Firm Builds SaaS Product",
           industry: "Professional Services · Business Building",
           metric: "200+",
-          image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80",
+          image: "/images/capabilities/cap-lightbulb-idea.jpg",
         },
         {
           slug: "distributor-marketplace",
           title: "Regional Distributor Launches Digital Marketplace",
           industry: "Distribution · Business Building",
           metric: "12",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-celebrate.jpg",
         },
       ]}
       relatedCapabilities={[

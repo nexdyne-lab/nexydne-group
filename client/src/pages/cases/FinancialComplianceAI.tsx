@@ -7,7 +7,7 @@ export function FinancialComplianceAI() {
       industry="Banking · Regulatory Compliance"
       title="Global Bank Automates Regulatory Compliance with Fine-Tuned LLMs"
       subtitle="Custom language models analyzed millions of transactions and communications, reducing false positives by 60% and ensuring adherence to evolving regulations."
-      heroImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       challenge={`A multinational bank was struggling to keep up with the volume of regulatory requirements across different jurisdictions. Their existing rule-based monitoring systems generated thousands of false positive alerts daily, overwhelming their compliance teams. Furthermore, monitoring employee communications for insider trading and misconduct was a manual, sampling-based process that left significant gaps in coverage.
 
 They needed a more intelligent, scalable solution that could understand the nuance of financial regulations and human communication to identify genuine risks without drowning analysts in noise.`}

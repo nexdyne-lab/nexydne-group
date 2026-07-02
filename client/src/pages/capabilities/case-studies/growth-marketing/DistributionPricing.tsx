@@ -7,7 +7,7 @@ export function DistributionPricing() {
       industry="Distribution · Growth Marketing"
       title="Pricing Optimization Improves Margins by 8 Points"
       subtitle="How a distribution company transformed their pricing approach to capture value while maintaining customer relationships."
-      heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80"
+      heroImage="/images/capabilities/cap-chess.jpg"
       challenge={`Gross margins had eroded from 28% to 22% over five years as sales reps discounted to win deals. Pricing was ad hoc, with no systematic approach to setting or managing prices. Customer profitability varied wildly, with some accounts actually losing money. Competitors were using data-driven pricing while the company relied on gut feel.
 
 A 160-employee distribution company with $125M in annual revenue serves industrial customers with MRO supplies and equipment. The company had grown through acquisition but pricing was inconsistent across the combined customer base. Analysis revealed significant value leakage across multiple dimensions: list prices hadn't been updated in years, discounting was inconsistent with similar customers receiving vastly different prices, freight and handling charges were regularly waived without justification, and rebates and allowances had accumulated without systematic review.`}

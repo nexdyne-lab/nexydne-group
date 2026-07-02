@@ -7,7 +7,7 @@ export function TechnologyCaseStudy() {
       industry="Technology & Software · Operations"
       title="82% Reduction in Deployment Time"
       subtitle="Fast-growing B2B software company transforms DevOps practices, reducing deployment cycles from 2 weeks to 2.5 days while achieving 99.95% uptime and 40% infrastructure cost savings."
-      heroImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&q=80"
+      heroImage="/images/industries/tech-datacenter.jpg"
       challenge={`Each production deployment required 3-4 days of manual configuration, testing, and coordination across teams. Only 2 senior engineers were authorized to deploy, creating a critical bottleneck that limited releases to twice monthly. Development, staging, and production environments had drifted significantly over time, causing features that worked in development to frequently fail in production—requiring emergency fixes and rollbacks that consumed 30% of engineering time.
 
 A B2B SaaS company providing workflow automation tools to mid-market enterprises with 145 employees, $28M ARR, and over 400 enterprise customers had grown 3x in two years but its technology infrastructure wasn't keeping pace. An engineering team of 45 developers spent more time on infrastructure maintenance than feature development. The team learned about outages from customer complaints rather than monitoring systems, with average incident detection time of 23 minutes and monthly downtime averaging 4.2 hours. Cloud costs grew 180% year-over-year despite only 60% customer growth due to unused resources, over-provisioned instances, and lack of auto-scaling.`}

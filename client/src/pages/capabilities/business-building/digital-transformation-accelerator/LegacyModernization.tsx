@@ -15,7 +15,8 @@ export default function LegacyModernization() {
       serviceName="Legacy Modernization"
       serviceSlug="legacy-modernization"
       heroSubtitle="Decompose monolithic legacy systems into modular services using strangler-fig and event-driven patterns — retiring technical debt incrementally without halting feature delivery."
-      heroImage="/images/digital-transformation-abstract.jpg"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Legacy Modernization engagements delivered" },
@@ -70,14 +71,14 @@ export default function LegacyModernization() {
           title: "Industrial Distributor Launches B2B E-commerce Platform",
           industry: "Industrial Distribution · Business Building",
           metric: "35%",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-aerial-grid.jpg",
         },
         {
           slug: "logistics-tech-spinoff",
           title: "Logistics Company Builds Technology Spin-Off",
           industry: "Logistics · Business Building",
           metric: "$28M",
-          image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1600&q=80",
+          image: "/images/capabilities/cap-dome-blue.jpg",
         },
       ]}
       relatedServices={[

@@ -16,7 +16,7 @@ export default function AcceleratedImpact() {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+        <div className="absolute inset-0 bg-[url('/images/capabilities/cap-data-bars.jpg')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
         
         <div className="container relative z-10 px-6 md:px-12">

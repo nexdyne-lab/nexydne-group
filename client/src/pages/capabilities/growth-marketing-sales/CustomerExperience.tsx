@@ -10,7 +10,8 @@ export default function CustomerExperience() {
       hubName="Customer Experience"
       slug="customer-experience"
       heroSubtitle="Design and deliver exceptional customer experiences. We help you build CX capabilities that drive loyalty, reduce churn, and create sustainable competitive advantage."
-      heroImage="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         { number: "250+", label: "customer experience transformations delivered" },
         { number: "40%", label: "average improvement in customer satisfaction" },
@@ -113,21 +114,21 @@ export default function CustomerExperience() {
           title: "Health Network Lifts Patient Engagement Score By 38 Points",
           industry: "Healthcare · Engagement",
           metric: "38pt",
-          image: "https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=1600&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
           industry: "Financial Services · Wealth",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80",
+          image: "/images/industries/deal-handshake.jpg",
         },
         {
           slug: "insurance-claims-processing",
           title: "Insurer Cuts Claims Cycle Time From Weeks To Hours With AI Triage",
           industry: "Financial Services · Insurance",
           metric: "85%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-woman-motion.jpg",
         },
       ]}
       relatedCapabilities={[

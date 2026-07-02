@@ -10,7 +10,7 @@ export default function MAPartnerships() {
       hubName="M&A & Strategic Partnerships"
       slug="ma-partnerships"
       heroSubtitle="Navigate complex transactions with confidence. From target identification to post-merger integration — and the joint ventures, alliances, and partnerships that unlock growth without a full acquisition."
-      heroImage="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/deal-handshake.jpg"
       experienceStats={[
         { number: "50+", label: "M&A transactions completed for mid-market companies across diverse industries" },
         { number: "$750M+", label: "Total transaction value advised on buy-side and sell-side engagements" },
@@ -114,21 +114,21 @@ export default function MAPartnerships() {
           title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
           industry: "Financial Services · Partnerships",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/industries/fin-handshake-city.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Scales Payment Operations Without Headcount Growth",
           industry: "Financial Services · Partnerships",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&q=80",
+          image: "/images/industries/meeting-topview.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
           industry: "Financial Services · Partnerships",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80",
+          image: "/images/capabilities/cap-aerial-grid.jpg",
         },
       ]}
       relatedCapabilities={[

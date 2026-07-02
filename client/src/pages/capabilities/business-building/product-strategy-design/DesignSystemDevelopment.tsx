@@ -15,7 +15,8 @@ export default function DesignSystemDevelopment() {
       serviceName="Design System Development"
       serviceSlug="design-system-development"
       heroSubtitle="Create consistent, scalable design foundations. Component libraries and design tokens that accelerate development and ensure brand consistency."
-      heroImage="/images/product-strategy-abstract.jpg"
+      heroImage="/images/capabilities/cap-3d-printing.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Design System Development engagements delivered" },
@@ -70,7 +71,7 @@ export default function DesignSystemDevelopment() {
           title: "Industrial Distributor Launches B2B E-commerce Platform",
           industry: "Industrial Distribution · Business Building",
           metric: "35%",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-3d-printing.jpg",
         },
       ]}
       relatedServices={[

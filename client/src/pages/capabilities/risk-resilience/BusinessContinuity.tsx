@@ -15,7 +15,8 @@ export default function BusinessContinuity() {
       serviceName="Business Continuity Planning"
       serviceSlug="business-continuity"
       heroSubtitle="Design and test recovery plans for critical business functions. Ensure your organization can maintain operations through any disruption. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-diverse-team.5dcdbf56.jpg"
+      heroImage="/images/capabilities/cap-wave.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Business Continuity Planning engagements delivered" },
@@ -68,7 +69,7 @@ export default function BusinessContinuity() {
           title: "Transforming clinical workflow at a leading academic medical center",
           industry: "Healthcare",
           metric: "40%",
-          image: "/case-clinical-workflow.ca226f80.jpg",
+          image: "/images/industries/advisor-charts.jpg",
         },
       ]}
       relatedServices={[

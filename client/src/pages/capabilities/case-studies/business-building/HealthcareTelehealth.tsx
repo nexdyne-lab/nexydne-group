@@ -7,7 +7,7 @@ export function HealthcareTelehealth() {
       industry="Healthcare · Business Building"
       title="Healthcare Provider Launches Telehealth Venture"
       subtitle="How a regional healthcare network built a telehealth platform that expanded patient reach while improving care access and operational efficiency."
-      heroImage="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80"
+      heroImage="/case-doctor-consultation.799c1562.jpg"
       challenge={`Rural patients faced long travel times for routine care. Clinic capacity was maxed during peak hours while underutilized at other times. Younger patients expected digital healthcare options. Competition from national telehealth providers was increasing. The network needed to build telehealth capabilities quickly.
 
 A regional healthcare network with 180 employees operating 5 clinics served a mix of urban and rural communities. Patient access was limited by geography and clinic capacity, and the organization sought to expand reach without proportional facility investment. The rise of national telehealth competitors threatened the network's patient relationships, particularly with younger demographics who increasingly expected digital-first healthcare options.`}

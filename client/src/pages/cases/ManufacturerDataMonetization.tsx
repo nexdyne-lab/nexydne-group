@@ -7,7 +7,7 @@ export function ManufacturerDataMonetization() {
       industry="Manufacturing · Data Strategy"
       title="Manufacturer Identifies $4M Revenue Opportunity Through Data Monetization"
       subtitle="Data strategy engagement mapped equipment telemetry landscape and built roadmap to launch predictive maintenance subscription service generating recurring revenue."
-      heroImage="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=1600&q=80"
+      heroImage="/images/industries/mfg-robotics.jpg"
       challenge={`A mid-market industrial equipment manufacturer with $200M annual revenue collected massive amounts of telemetry data from 8,000 machines deployed at customer sites—vibration sensors, temperature readings, operating hours, fault codes. The data sat in AWS S3 buckets, used only for warranty claim investigations when equipment failed.
 
 The CEO saw competitors launching "equipment-as-a-service" offerings with predictive maintenance capabilities. Customers asked if the manufacturer could predict failures before they happened. The product team proposed building a predictive maintenance platform but had no data strategy—no clarity on what data existed, what condition it was in, or which use cases would generate the most value.

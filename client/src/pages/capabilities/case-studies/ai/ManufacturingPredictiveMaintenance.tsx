@@ -7,7 +7,7 @@ export function ManufacturingPredictiveMaintenance() {
       industry="Manufacturing · Artificial Intelligence"
       title="Predictive Maintenance Reduces Downtime for Manufacturing SMB"
       subtitle="How a mid-size manufacturing company with 150 employees achieved 45% reduction in unplanned downtime and 28% savings in maintenance costs through AI-powered predictive maintenance."
-      heroImage="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1600&q=80"
+      heroImage="/images/industries/mfg-robotics.jpg"
       challenge={`Unplanned equipment failures were causing production delays, quality issues, and costly emergency repairs. The company was spending 40% of maintenance budget on reactive repairs.
 
 A precision metal fabrication company with 150 employees and 3 production facilities serves automotive and aerospace customers with tight quality and delivery requirements. With 45 major pieces of equipment across three facilities, the company experienced an average of 8 unplanned breakdowns per month. Each breakdown meant production delays, expedited shipping costs, and occasionally quality issues from rushed restarts. The maintenance team was stuck in reactive mode, spending most of their time on emergency repairs rather than preventive work.

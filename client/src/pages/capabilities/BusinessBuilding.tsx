@@ -7,7 +7,8 @@ export default function BusinessBuilding() {
       capabilitySlug="business-building"
       // PRESERVED VERBATIM from source hero subtitle
       heroSubtitle="Your core business runs well. Now you need new revenue streams. We help mid-market companies design, build, and launch new digital products and services that actually make money."
-      heroImage="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80"
+      heroImage="/images/capabilities/cap-venturing.jpg"
+      heroFocal="55% 50%"
       // PRESERVED CTA labels from source (Schedule a Consultation + View Case Studies)
       heroPrimaryCTA={{
         label: "Schedule a Consultation",
@@ -127,7 +128,7 @@ export default function BusinessBuilding() {
       // realOutcomes / howWeHelp bullets PRESERVED verbatim from source where present; remainder DISTILLED
       // TODO: confirm with practice lead before publish (image path)
       inPractice={{
-        image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80",
+        image: "/images/capabilities/cap-lightbulb-idea.jpg",
         intro:
           "We are helping mid-market companies move quickly from experimentation to scale and generate real value from new ventures. Working closely with leadership teams, we identify where to accelerate venture development, build a clear roadmap for impact across product, customer experience, and operational efficiency, and treat AI as a business accelerator rather than a technology deployment — so you ship AI-native products that create sustainable competitive advantage.",
         realOutcomes: [

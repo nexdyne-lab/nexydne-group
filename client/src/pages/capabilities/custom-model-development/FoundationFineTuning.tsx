@@ -15,7 +15,8 @@ export default function FoundationFineTuning() {
       serviceName="Foundation Model Fine-Tuning"
       serviceSlug="foundation-fine-tuning"
       heroSubtitle="Adapt GPT, Claude, Llama, or other foundation models to your domain using your proprietary data. Achieve specialized performance without training from scratch. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-data-workstation.e374b2a9.jpg"
+      heroImage="/images/capabilities/cap-circuit-green.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Foundation Model Fine-Tuning engagements delivered" },
@@ -68,14 +69,14 @@ export default function FoundationFineTuning() {
           title: "Transforming legal research with AI-powered document intelligence",
           industry: "Professional Services",
           metric: "70%",
-          image: "/case-legal-team.2f84fc95.jpg",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "How contract automation transformed a leading law firm’s operations",
           industry: "Professional Services",
           metric: "65%",
-          image: "/case-law-firm-meeting.401c96db.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

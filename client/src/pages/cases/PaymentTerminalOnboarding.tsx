@@ -7,7 +7,7 @@ export function PaymentTerminalOnboarding() {
       industry="Fintech · Personalization"
       title="Fintech Speeds Up Terminal Onboarding 52% with Personalized Merchant Workflows"
       subtitle="How a payment processor implemented Sitecore DXP and journey mapping to deliver personalized merchant onboarding experiences—reducing time-to-activation and increasing satisfaction scores."
-      heroImage="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       challenge={`A rapidly growing payment processor serving 45,000+ merchants across retail, restaurants, and professional services faced a critical challenge: their terminal onboarding process created friction that delayed merchant activation and drove support costs. New merchants received generic setup instructions regardless of business type, technical sophistication, or hardware configuration—resulting in confusion, errors, and abandoned onboarding.
 
 Merchants took an average of 14 days from terminal delivery to first transaction. Generic setup guides forced merchants to wade through irrelevant instructions. 78% of new merchants contacted support during onboarding, overwhelming the support team with repetitive questions. Merchant satisfaction scores during onboarding averaged 2.9/5. 12% of merchants who received terminals never completed activation, representing lost revenue and wasted hardware investment. The company had no visibility into where merchants got stuck or why they abandoned the process.`}

@@ -15,7 +15,8 @@ export default function LaunchExecution() {
       serviceName="Launch Execution"
       serviceSlug="launch-execution"
       heroSubtitle="From marketing campaigns to sales enablement, we execute your go-to-market strategy to acquire your first paying customers."
-      heroImage="/images/digital-venture-abstract.jpg"
+      heroImage="/images/capabilities/cap-telescope.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Launch Execution engagements delivered" },
@@ -70,14 +71,14 @@ export default function LaunchExecution() {
           title: "Industrial Distributor Launches B2B E-commerce Platform",
           industry: "Industrial Distribution · Business Building",
           metric: "35%",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-venturing.jpg",
         },
         {
           slug: "manufacturer-dtc",
           title: "Manufacturer Creates Direct-to-Consumer Channel",
           industry: "Manufacturing · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=80",
+          image: "/images/capabilities/cap-lightbulb-idea.jpg",
         },
       ]}
       relatedServices={[

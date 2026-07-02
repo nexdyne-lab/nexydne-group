@@ -13,6 +13,7 @@ export interface IndustryDetailTemplateProps {
   slug: string;
   heroSubtitle: string;
   heroImage: string;
+  heroFocal?: string;
   povParagraphs: string[];
   challenges: { title: string; body: string }[];
   capabilities: { name: string; href: string; blurb: string }[];
@@ -34,6 +35,7 @@ export default function IndustryDetailTemplate(props: IndustryDetailTemplateProp
     slug,
     heroSubtitle,
     heroImage,
+    heroFocal,
     povParagraphs,
     challenges,
     capabilities,
@@ -80,8 +82,30 @@ export default function IndustryDetailTemplate(props: IndustryDetailTemplateProp
 
       {/* Hero — plain neutral statement (Brand v2) */}
       <section className="relative bg-background overflow-hidden min-h-[58vh] flex items-center pt-32 pb-20 md:pt-40 md:pb-24">
-        <BrandMesh variant="light" />
-        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(90deg, #F7F9FC 0%, rgba(247,249,252,0.6) 30%, rgba(247,249,252,0.05) 55%, transparent 70%)" }} />
+        {heroImage ? (
+          <>
+            {/* Photographic backdrop — subject biased right, clear of the left-aligned headline */}
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-0"
+              style={{
+                backgroundImage: `url(${heroImage})`,
+                backgroundSize: "cover",
+                backgroundPosition: heroFocal ?? "72% 50%",
+                filter: "saturate(0.95) contrast(1.02)",
+              }}
+            />
+            {/* Off-white veil — solid left for text legibility, softly washed right (Brand v2 light) */}
+            <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(90deg, #F7F9FC 0%, rgba(247,249,252,0.95) 26%, rgba(247,249,252,0.74) 50%, rgba(247,249,252,0.52) 76%, rgba(247,249,252,0.44) 100%)" }} />
+            {/* Blend into the white section below */}
+            <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-24" style={{ background: "linear-gradient(180deg, transparent 0%, #FFFFFF 100%)" }} />
+          </>
+        ) : (
+          <>
+            <BrandMesh variant="light" />
+            <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(90deg, #F7F9FC 0%, rgba(247,249,252,0.6) 30%, rgba(247,249,252,0.05) 55%, transparent 70%)" }} />
+          </>
+        )}
         <div className="container relative z-10 px-4 md:px-12">
           <Breadcrumbs />
           <motion.div

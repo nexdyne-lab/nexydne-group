@@ -15,7 +15,8 @@ export default function RapidPrototyping() {
       serviceName="Rapid Prototyping"
       serviceSlug="rapid-prototyping"
       heroSubtitle="We build and deploy minimum viable products designed to test specific hypotheses. Prototypes range from landing pages and mockups to functional applications, depending on what's required to generate valid evidence."
-      heroImage="/images/rapid-innovation-abstract.jpg"
+      heroImage="/images/capabilities/cap-coder.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Rapid Prototyping engagements delivered" },
@@ -70,7 +71,7 @@ export default function RapidPrototyping() {
           title: "Healthcare Provider Launches Telehealth Venture",
           industry: "Healthcare · Business Building",
           metric: "5 Mo",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-lightbulb-idea.jpg",
         },
       ]}
       relatedServices={[

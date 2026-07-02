@@ -7,7 +7,7 @@ export function GlobalRetailerEcommerce() {
       industry="Retail & E-commerce · AI Personalization"
       title="Scaling E-Commerce Revenue by 40% with AI Personalization"
       subtitle="A Fortune 500 retailer transformed their digital commerce strategy through intelligent personalization, achieving unprecedented growth in online revenue and customer engagement within 12 months."
-      heroImage="https://images.unsplash.com/photo-1557821552-17105176677c?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`The client, a global retailer with annual revenues exceeding $15 billion, was experiencing a fundamental shift in consumer behavior. While their physical stores remained profitable, e-commerce growth had plateaued at 12% year-over-year—significantly below industry benchmarks of 25-30%.
 
 Generic product recommendations were failing to engage customers, resulting in cart abandonment rates averaging 78%. The leadership team identified limited visibility into customer journey touchpoints and siloed data across marketing, sales, and operations as critical barriers to growth. With millions of SKUs across their catalog, the inability to personalize at scale had become an existential threat as digital-native competitors continued to capture market share.

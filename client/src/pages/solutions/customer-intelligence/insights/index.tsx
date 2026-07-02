@@ -13,7 +13,7 @@ const insights = [
     category: "Strategy",
     description: "Why traditional customer segmentation is failing and how AI-powered behavioral intelligence is reshaping how companies understand and engage customers.",
     readTime: "12 min read",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    image: "/images/capabilities/cap-mobile-woman.jpg",
     featured: true
   },
   {
@@ -22,7 +22,7 @@ const insights = [
     category: "Technology",
     description: "A practical guide to building and deploying churn prediction models that actually drive retention—from feature engineering to intervention automation.",
     readTime: "15 min read",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    image: "/images/capabilities/cap-office-women.jpg",
     featured: true
   },
   {
@@ -31,7 +31,7 @@ const insights = [
     category: "Marketing",
     description: "How to move from basic segmentation to true 1:1 personalization without drowning in complexity or burning through your marketing budget.",
     readTime: "10 min read",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
+    image: "/images/capabilities/cap-hologram.jpg",
     featured: true
   },
   {
@@ -40,7 +40,7 @@ const insights = [
     category: "Technology",
     description: "Cutting through the CDP hype: what these platforms actually do, when you need one, and how to evaluate vendors for your specific use cases.",
     readTime: "14 min read",
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80",
+    image: "/images/capabilities/cap-colleagues-smile.jpg",
     featured: false
   },
   {
@@ -49,7 +49,7 @@ const insights = [
     category: "Analytics",
     description: "A comprehensive guide to building LTV models that inform acquisition strategy, customer success prioritization, and marketing investment decisions.",
     readTime: "18 min read",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=800&q=80",
+    image: "/images/capabilities/cap-ai-search.jpg",
     featured: false
   },
   {
@@ -58,7 +58,7 @@ const insights = [
     category: "Marketing",
     description: "How leading companies are moving from campaign-centric to journey-centric engagement—and the technology and organizational changes required.",
     readTime: "11 min read",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80",
+    image: "/images/capabilities/cap-conference-data.jpg",
     featured: false
   }
 ];

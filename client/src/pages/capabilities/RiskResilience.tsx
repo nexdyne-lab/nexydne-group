@@ -10,7 +10,8 @@ export default function RiskResilience() {
       slug="risk-resilience"
       heroSubtitle="Build organizational resilience with AI-powered risk management. Identify, assess, and mitigate risks before they impact your business — and design operations that bend, not break, when conditions shift."
       // TODO: confirm hero image asset matches Risk & Resilience theme
-      heroImage="/case-insurance-office.f039a4a1.jpg"
+      heroImage="/images/capabilities/cap-strategy-spheres.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "100+", label: "Risk programs delivered across regulated industries" },
@@ -116,21 +117,21 @@ export default function RiskResilience() {
           title: "Accelerating insurance claims processing with intelligent automation",
           industry: "Financial Services",
           metric: "85%",
-          image: "/case-insurance-office.f039a4a1.jpg",
+          image: "/images/industries/advisor-charts.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
           industry: "Financial Services",
           metric: "10K+",
-          image: "/case-banker-meeting.c53f3999.jpg",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
         {
           slug: "accounting-audit-automation",
           title: "How audit automation helped an accounting firm scale 2x without hiring",
           industry: "Professional Services",
           metric: "2x",
-          image: "/case-accountants-audit.1c87a151.jpg",
+          image: "/images/industries/fin-monitors.jpg",
         },
       ]}
       relatedCapabilities={[

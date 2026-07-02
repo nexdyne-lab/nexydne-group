@@ -23,7 +23,7 @@ export default function DigitalGrowthPlaybook() {
       <section className="relative min-h-[60vh] flex items-center pt-20 overflow-hidden bg-background">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=2000&q=80" 
+            src="/images/industries/deal-handshake.jpg" 
             alt="Digital Growth Analytics" 
             className="w-full h-full object-cover opacity-20"
           />
@@ -376,21 +376,21 @@ export default function DigitalGrowthPlaybook() {
             type: "Article",
             title: "E-commerce economics: Building profitable D2C channels",
             description: "The unit economics, technology choices, and operational considerations that determine D2C success.",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
+            image: "/images/capabilities/cap-presenting-graphs.jpg",
             link: "/insights/ecommerce-economics"
           },
           {
             type: "Whitepaper",
             title: "The marketplace playbook: Building network effects",
             description: "A comprehensive guide to launching and scaling two-sided marketplaces.",
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+            image: "/images/capabilities/cap-mobile-woman.jpg",
             link: "/insights/marketplace-playbook"
           },
           {
             type: "Article",
             title: "From MVP to scale: The startup growth journey",
             description: "How to navigate the critical transitions from product-market fit to sustainable growth.",
-            image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=800&q=80",
+            image: "/images/capabilities/cap-celebrate.jpg",
             link: "/insights/from-mvp-to-scale"
           }
         ]}

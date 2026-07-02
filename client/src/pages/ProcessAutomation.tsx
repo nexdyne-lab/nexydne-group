@@ -112,7 +112,7 @@ export default function ProcessAutomation() {
               </div>
               <div className="col-span-2 relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80" 
+                  src="/images/industries/tech-datacenter.jpg" 
                   alt="Automation Excellence" 
                   className="w-full h-48 object-cover"
                 />
@@ -251,7 +251,7 @@ export default function ProcessAutomation() {
             >
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80" 
+                  src="/images/capabilities/cap-circuit-green.jpg" 
                   alt="Automation Methodology" 
                   className="w-full h-auto"
                 />
@@ -291,17 +291,17 @@ export default function ProcessAutomation() {
               {
                 title: "Distributor automates order processing, saves $500K annually",
                 category: "Order Processing",
-                image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80"
+                image: "/images/capabilities/cap-ai-search.jpg"
               },
               {
                 title: "Financial services firm eliminates 90% of manual data entry",
                 category: "Document Processing",
-                image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80"
+                image: "/images/capabilities/cap-coder.jpg"
               },
               {
                 title: "Healthcare provider reduces claims processing time by 70%",
                 category: "Workflow Automation",
-                image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&q=80"
+                image: "/images/capabilities/cap-hologram.jpg"
               }
             ].map((study, i) => (
               <motion.div 
@@ -380,19 +380,19 @@ export default function ProcessAutomation() {
             title: "The Complete Guide to Process Mining",
             category: "Operations",
             link: "/insights/complete-guide-process-mining",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+            image: "/images/industries/tech-datacenter.jpg"
           },
           {
             title: "RPA vs Intelligent Automation: What's Right for You?",
             category: "Technology",
             link: "/insights/rpa-vs-intelligent-automation",
-            image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-circuit-green.jpg"
           },
           {
             title: "Building an Automation Center of Excellence",
             category: "Strategy",
             link: "/insights/automation-center-of-excellence",
-            image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-ai-search.jpg"
           }
         ]}
       />

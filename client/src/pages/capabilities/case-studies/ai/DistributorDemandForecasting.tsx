@@ -7,7 +7,7 @@ export function DistributorDemandForecasting() {
       industry="Distribution · Artificial Intelligence"
       title="Demand Forecasting AI Optimizes Inventory for Regional Distributor"
       subtitle="How a wholesale distributor implemented AI-powered demand forecasting to reduce inventory costs while improving service levels."
-      heroImage="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600&q=80"
+      heroImage="/images/industries/retail-warehouse.jpg"
       challenge={`Inventory carrying costs were consuming 18% of gross margin. Stockouts were occurring on 8% of orders, causing customer dissatisfaction. Manual forecasting couldn't keep up with 15,000+ SKUs across multiple locations. Seasonal patterns and customer-specific demand were difficult to predict.
 
 A wholesale distribution company with 180 employees and $75M annual revenue distributes industrial supplies to 3,000+ customers across the Midwest from 5 distribution centers. The complexity of customer ordering behavior across industry segments, combined with supplier lead time variability and geographic seasonal patterns, made traditional forecasting approaches inadequate at scale.`}

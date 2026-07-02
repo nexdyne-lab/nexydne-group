@@ -11,7 +11,7 @@ export default function StrategyCorporateFinancePerformanceImprovementProcuremen
       serviceName="Procurement Excellence"
       serviceSlug="procurement-excellence"
       heroSubtitle="Strategic sourcing, supplier consolidation, and contract renegotiation. Reduce spend while maintaining quality."
-      heroImage="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/retail-warehouse.jpg"
       experienceStats={[
         { number: "100+", label: "Performance Improvement engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,7 +52,7 @@ export default function StrategyCorporateFinancePerformanceImprovementProcuremen
           title: "Insurer Slashes Claims Processing Time With Intelligent Workflow",
           industry: "Financial Services · Strategy",
           metric: "65%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/industries/meeting-topview.jpg",
         },
       ]}
       relatedServices={[

@@ -11,7 +11,7 @@ export default function OperationsQualityManagementQualityAnalyticsTechnology() 
       serviceName="Quality Analytics & Technology"
       serviceSlug="quality-analytics-technology"
       heroSubtitle="Deploy technology to enable quality excellence. Quality management systems, analytics platforms, and automation solutions."
-      heroImage="https://images.unsplash.com/photo-1581092446327-9b52bd1570c2?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/mfg-robotics.jpg"
       experienceStats={[
         { number: "100+", label: "Quality Management engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsQualityManagementQualityAnalyticsTechnology() 
           title: "Health System Builds Population Health Analytics Platform",
           industry: "Healthcare · Operations",
           metric: "$18M",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-battery-factory.jpg",
         },
         {
           slug: "insurance-claims-processing",
           title: "P&C Insurer Cuts Claims Cycle Time with Intelligent Automation",
           industry: "Financial Services · Operations",
           metric: "55%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/industries/mfg-robot-arm.jpg",
         },
       ]}
       relatedServices={[

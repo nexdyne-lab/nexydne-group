@@ -11,7 +11,7 @@ export default function InsuranceCustomerExperience() {
       industryLink="/industries/insurance"
       title="Insurer Achieves 50% Digital Adoption Through CX Transformation"
       subtitle="How omnichannel service, self-service capabilities, and personalized engagement transformed customer experience and reduced service costs."
-      heroImage="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920&q=80"
+      heroImage="/case-insurance-office.f039a4a1.jpg"
       metrics={[
         { value: "50%", label: "Digital Adoption" },
         { value: "+28pts", label: "NPS Improvement" },
@@ -111,14 +111,14 @@ export default function InsuranceCustomerExperience() {
           metric: "60%",
           label: "faster processing",
           link: "/cases/insurance-claims-automation",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80"
+          image: "/images/industries/advisor-charts.jpg"
         },
         {
           title: "Underwriting Transformation",
           metric: "40%",
           label: "faster quote turnaround",
           link: "/cases/insurance-underwriting-transformation",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80"
+          image: "/images/industries/fin-handshake-city.jpg"
         }
       ]}
       ctaTitle="Ready to Transform Customer Experience?"

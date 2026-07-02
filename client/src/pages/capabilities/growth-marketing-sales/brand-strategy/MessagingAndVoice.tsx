@@ -15,7 +15,8 @@ export default function MessagingAndVoice() {
       serviceName="Messaging & Voice"
       serviceSlug="messaging-and-voice"
       heroSubtitle="Develop messaging frameworks and brand voice guidelines that ensure consistency across every touchpoint and communication channel."
-      heroImage="https://images.unsplash.com/photo-1493612276216-ee3925520721?w=1600&q=80"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Messaging & Voice engagements delivered" },
@@ -70,14 +71,14 @@ export default function MessagingAndVoice() {
           title: "Consultancy unlocks 30 years of IP with AI knowledge graph",
           industry: "Professional Services · Brand Strategy",
           metric: "4x",
-          image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional bank automates KYC and onboarding",
           industry: "Financial Services · Brand Strategy",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-peacock.jpg",
         },
       ]}
       relatedServices={[

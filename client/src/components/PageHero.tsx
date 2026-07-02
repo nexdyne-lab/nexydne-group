@@ -9,7 +9,7 @@
 //     eyebrow="CAPABILITY"
 //     title="Technology"
 //     subtitle="Modernize your stack without ripping out what works."
-//     heroImage="https://images.unsplash.com/photo-xxxx?w=1600&q=80"
+//     heroImage="/images/capabilities/cap-data-bars.jpg"
 //     primaryCta={{ label: "Explore capabilities", href: "/capabilities" }}
 //     secondaryCta={{ label: "Contact us", href: "/contact" }}
 //   />

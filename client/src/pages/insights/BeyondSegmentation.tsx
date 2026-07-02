@@ -164,7 +164,7 @@ export default function BeyondSegmentation() {
                 <div className="group cursor-pointer">
                   <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2670&auto=format&fit=crop" 
+                      src="/images/capabilities/cap-retail-apparel.jpg" 
                       alt="Privacy by Design" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -181,7 +181,7 @@ export default function BeyondSegmentation() {
                 <div className="group cursor-pointer">
                   <div className="aspect-video bg-grey rounded-lg mb-4 overflow-hidden">
                     <img 
-                      src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop" 
+                      src="/images/capabilities/cap-retail-data.jpg" 
                       alt="Real-time Decisioning" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />

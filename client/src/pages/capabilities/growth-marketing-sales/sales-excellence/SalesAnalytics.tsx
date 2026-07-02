@@ -15,7 +15,8 @@ export default function SalesAnalytics() {
       serviceName="Sales Analytics"
       serviceSlug="sales-analytics"
       heroSubtitle="Build analytics capabilities that drive sales performance. Implement forecasting, pipeline management, and performance dashboards."
-      heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80"
+      heroImage="/images/industries/meeting-topview.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Sales Analytics engagements delivered" },
@@ -70,14 +71,14 @@ export default function SalesAnalytics() {
           title: "Health system unifies patient data for population analytics",
           industry: "Healthcare · Sales Excellence",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Hospital system rebuilds clinical workflows with low-code",
           industry: "Healthcare · Sales Excellence",
           metric: "45%",
-          image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80",
+          image: "/images/capabilities/cap-woman-motion.jpg",
         },
       ]}
       relatedServices={[

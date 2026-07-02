@@ -7,7 +7,7 @@ export function RetailModernizationPersonalization() {
       industry="Retail · Personalization"
       title="National Retailer Modernizes Legacy Systems and Unlocks 34% Revenue Growth with AI-Powered Personalization"
       subtitle="How a home goods retailer deployed Bloomreach CDP to deliver individualized product recommendations and personalized email campaigns—driving $18M in incremental annual revenue."
-      heroImage="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`A national home goods retailer with 150+ stores and a growing e-commerce presence faced mounting pressure from digital-native competitors offering personalized shopping experiences. Their legacy technology stack—built on monolithic systems and batch processing—prevented them from delivering real-time personalization across channels.
 
 Customer data lived in siloed systems (e-commerce platform, POS, email service provider, loyalty program), making it impossible to build unified customer profiles or orchestrate personalized experiences. Generic product recommendations and one-size-fits-all email campaigns resulted in declining conversion rates and stagnant customer lifetime value. Legacy systems processed customer data overnight, making real-time personalization impossible—product recommendations reflected yesterday's behavior, not current intent signals.`}

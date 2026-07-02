@@ -10,7 +10,8 @@ export function Ecommerce() {
       hubName="E-commerce"
       slug="ecommerce"
       heroSubtitle="Platform strategy, conversion optimization, and marketplace management. We architect high-performance digital commerce ecosystems that turn traffic into revenue and customers into advocates."
-      heroImage="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80"
+      heroImage="/images/industries/deal-handshake.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         { number: "250+", label: "e-commerce transformations delivered across B2B and B2C" },
         { number: "40%", label: "average increase in conversion rates within 6 months" },
@@ -113,21 +114,21 @@ export function Ecommerce() {
           title: "Telehealth Platform Scales To Two Million Monthly Visits",
           industry: "Healthcare · Telehealth",
           metric: "2M",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-woman-motion.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Automation",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Cuts Payment Reconciliation Cost By Two Thirds",
           industry: "Financial Services · Payments",
           metric: "67%",
-          image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&q=80",
+          image: "/images/capabilities/cap-peacock.jpg",
         },
       ]}
       relatedCapabilities={[

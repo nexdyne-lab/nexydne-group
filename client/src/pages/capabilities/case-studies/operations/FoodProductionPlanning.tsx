@@ -7,7 +7,7 @@ export function FoodProductionPlanning() {
       industry="Food & Beverage · Operations"
       title="Production Planning Reduces Inventory by 35%"
       subtitle="How a food manufacturer transformed their planning processes to reduce inventory while improving customer service."
-      heroImage="https://images.unsplash.com/photo-1566467021492-99e0d5f4bd04?w=1600&q=80"
+      heroImage="/images/capabilities/cap-agriculture.jpg"
       challenge={`The company was caught in a vicious cycle: high inventory tied up working capital, but stockouts still occurred regularly. Production planning was reactive, driven by urgent customer requests rather than systematic forecasting. Changeover times were long, forcing large batch sizes that contributed to excess inventory.
 
 A 160-employee food manufacturer with $72M in annual revenue produces specialty sauces and condiments for foodservice and retail channels across two production facilities with 200+ SKUs. The planning process created its own problems: demand forecasts updated quarterly that quickly became obsolete, production schedules changing daily based on the loudest customer complaint, changeover times of 4+ hours making small batches uneconomical, and safety stock levels set arbitrarily and unreviewed for years.`}

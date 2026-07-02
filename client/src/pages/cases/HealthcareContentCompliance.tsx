@@ -7,7 +7,7 @@ export function HealthcareContentCompliance() {
       industry="Healthcare · Content Management"
       title="Healthcare System Ensures Compliance with Content Workflows"
       subtitle="Automated approval workflows for patient education materials across 18 languages and 25 facilities, reducing compliance review time from 3 weeks to 4 days while maintaining 100% regulatory adherence."
-      heroImage="https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=1600&q=80"
+      heroImage="/case-medical-collaboration.9602cc8c.jpg"
       challenge={`A large healthcare system with 25 facilities serving diverse patient populations struggled with patient education content management. They produced materials in 18 languages covering hundreds of conditions, procedures, and wellness topics. Content lived in Word documents scattered across departmental shared drives, and version control was nonexistent—clinicians printed outdated materials regularly because they couldn't find the latest approved versions.
 
 Regulatory compliance was a constant concern. Patient education materials must meet HIPAA requirements, ADA accessibility standards, and health literacy guidelines (6th-grade reading level). Medical claims require legal review, translations need clinical validation to ensure accuracy, and all content must be reviewed annually for medical accuracy. The manual review process took 3 weeks per document, involving 5 stakeholders (clinical SME, legal, compliance, accessibility specialist, translation validator) with no visibility into approval status.

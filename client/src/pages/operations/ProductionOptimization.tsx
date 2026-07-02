@@ -10,7 +10,7 @@ export default function ProductionOptimization() {
       hubName="Production & Asset Optimization"
       slug="operations/production-optimization"
       heroSubtitle="Maximize throughput and equipment effectiveness. Deploy predictive maintenance, production scheduling, and lean manufacturing principles."
-      heroImage="https://images.unsplash.com/photo-1565008576549-57569a49371d?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/mfg-robotics.jpg"
       experienceStats={[
         { number: "80+", label: "Production optimization programs across manufacturing sectors" },
         { number: "15-30%", label: "Typical improvement in Overall Equipment Effectiveness (OEE)" },
@@ -114,21 +114,21 @@ export default function ProductionOptimization() {
           title: "Regional Bank Automates Loan Origination End-to-End",
           industry: "Financial Services · Operations",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-battery-factory.jpg",
         },
         {
           slug: "healthcare-data-analytics",
           title: "Health System Builds Population Health Analytics Platform",
           industry: "Healthcare · Operations",
           metric: "$18M",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/industries/mfg-robot-arm.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "Hospital Standardizes Clinical Workflows Across Service Lines",
           industry: "Healthcare · Operations",
           metric: "32%",
-          image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1600&q=80",
+          image: "/images/capabilities/cap-robot-factory.jpg",
         },
       ]}
       relatedCapabilities={[

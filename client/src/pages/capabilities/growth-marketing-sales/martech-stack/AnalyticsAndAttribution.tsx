@@ -15,7 +15,8 @@ export default function AnalyticsAndAttribution() {
       serviceName="Analytics & Attribution"
       serviceSlug="analytics-and-attribution"
       heroSubtitle="Build measurement infrastructure that tracks marketing performance. Implement attribution models that inform investment decisions."
-      heroImage="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=80"
+      heroImage="/images/capabilities/cap-iot-network.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Analytics & Attribution engagements delivered" },
@@ -70,14 +71,14 @@ export default function AnalyticsAndAttribution() {
           title: "Accounting firm modernizes audit workflows",
           industry: "Professional Services · MarTech Stack",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/industries/tech-datacenter.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "Law firm slashes contract review with secure GenAI",
           industry: "Legal Services · MarTech Stack",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1600&q=80",
+          image: "/images/capabilities/cap-3d-printing.jpg",
         },
       ]}
       relatedServices={[

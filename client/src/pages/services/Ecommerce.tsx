@@ -77,7 +77,7 @@ export default function Ecommerce() {
                   <div className="relative flex-shrink-0">
                     <div className="absolute -inset-1 bg-secondary rounded-full blur-md opacity-50"></div>
                     <img 
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200" 
+                      src="/images/capabilities/cap-retail-apparel.jpg" 
                       alt="Contact person" 
                       className="relative w-20 h-20 md:w-24 md:h-24 rounded-full object-cover ring-2 ring-secondary"
                     />
@@ -128,7 +128,7 @@ export default function Ecommerce() {
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
             <div className="relative group order-2 lg:order-1">
               <img 
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800" 
+                src="/images/capabilities/cap-retail-data.jpg" 
                 alt="NEXDYNE office" 
                 className="rounded-2xl shadow-xl w-full h-64 md:h-80 lg:h-[500px] object-cover"
               />
@@ -170,7 +170,7 @@ export default function Ecommerce() {
             <Card className="overflow-hidden hover:shadow-2xl hover:shadow-secondary/20 transition group bg-white/10 backdrop-blur-sm border-secondary/20 hover:-translate-y-1 rounded-xl">
               <div className="relative overflow-hidden h-48 md:h-56 -m-[1px]">
                 <img 
-                  src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600" 
+                  src="/images/capabilities/cap-mobile-woman.jpg" 
                   alt="RAI Amsterdam" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -193,7 +193,7 @@ export default function Ecommerce() {
             <Card className="overflow-hidden hover:shadow-2xl hover:shadow-secondary/20 transition group bg-white/10 backdrop-blur-sm border-secondary/20 hover:-translate-y-1 rounded-xl">
               <div className="relative overflow-hidden h-48 md:h-56 -m-[1px]">
                 <img 
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" 
+                  src="/images/industries/retail-shelves.jpg" 
                   alt="Webstore" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -216,7 +216,7 @@ export default function Ecommerce() {
             <Card className="overflow-hidden hover:shadow-2xl hover:shadow-secondary/20 transition group bg-white/10 backdrop-blur-sm border-secondary/20 hover:-translate-y-1 rounded-xl">
               <div className="relative overflow-hidden h-48 md:h-56 -m-[1px]">
                 <img 
-                  src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600" 
+                  src="/images/capabilities/cap-colleagues-smile.jpg" 
                   alt="B2B Development" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />

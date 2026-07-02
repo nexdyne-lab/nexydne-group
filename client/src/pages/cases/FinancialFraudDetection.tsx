@@ -7,7 +7,7 @@ export function FinancialFraudDetection() {
       industry="Fintech · Fraud Detection"
       title="Financial Services Firm Detects Fraud in Real-Time"
       subtitle="Real-time streaming platform processes 50K transactions/second with sub-100ms fraud detection latency, blocking $12M in fraudulent transactions annually."
-      heroImage="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1600&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       challenge={`A regional payment processor handling credit and debit card transactions for 5,000 merchants struggled with fraud detection. Their batch-based system analyzed transactions overnight, identifying fraudulent patterns 12-24 hours after transactions cleared. By the time fraud was detected, money had already moved and chargebacks were inevitable.
 
 The fraud team reviewed rule-based alerts manually—80% false positives that consumed analyst time while sophisticated fraud slipped through. Merchants complained about legitimate transactions being declined (false positives) while fraudsters exploited gaps in rule coverage. The company absorbed $15M in fraud losses annually plus operational costs of investigating thousands of false alerts.

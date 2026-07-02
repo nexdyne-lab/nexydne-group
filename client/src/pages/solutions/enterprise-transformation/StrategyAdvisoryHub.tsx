@@ -10,7 +10,7 @@ export default function StrategyAdvisoryHub() {
       hubName="Strategy & Advisory"
       slug="technology/strategy-advisory-hub"
       heroSubtitle="Tech strategy, target architecture, due diligence, and cost optimization. We turn the technology agenda into a body of decisions leadership can execute against, not a slide deck that sits on the shelf."
-      heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-aerial-grid.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "50+", label: "Technology strategy and advisory engagements delivered for CIO and CTO leadership" },

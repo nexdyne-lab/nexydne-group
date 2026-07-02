@@ -7,7 +7,7 @@ export function HealthcareDataPlatform() {
       industry="Healthcare · Data Platform"
       title="Unifying Patient Records for Better Care Outcomes"
       subtitle="Creating a 360-degree patient view by integrating 15+ legacy systems into a secure, HIPAA-compliant data lake for a regional hospital network—driving a 20% reduction in readmissions."
-      heroImage="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80"
+      heroImage="/case-medical-collaboration.9602cc8c.jpg"
       challenge={`The hospital network had grown through acquisitions, resulting in fragmented patient data across incompatible EMR systems. Clinicians had to log into multiple portals to get a complete history, leading to incomplete patient history at the point of care, high administrative burden for data reconciliation, and an inability to perform population health analytics.
 
 Each acquired facility ran its own EHR, lab system, and billing platform with no interoperability. Critical clinical decisions were being made without complete patient information, and the organization could not identify high-risk patients across the network for proactive intervention.`}

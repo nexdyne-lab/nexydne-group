@@ -8,7 +8,7 @@ export function StreamingRecommendationEngine() {
       industry="Media & Entertainment"
       title="Real-Time Relevance at Scale"
       subtitle="Building a recommendation engine that processes 50,000 events per second to keep viewers watching."
-      heroImage="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=2669&auto=format&fit=crop"
+      heroImage="/images/industries/tech-datacenter.jpg"
       challenge={`In the streaming wars, content is king, but discovery is queen. Our client had a massive library of premium content, but users were spending more time scrolling than watching.
       
       Their existing recommendation system was batch-processed nightly, meaning it couldn't react to what a user was watching *right now*. If a user finished a gritty crime drama, the system might still recommend a romantic comedy based on their viewing history from last week. This latency was causing "decision fatigue" and high abandonment rates.`}

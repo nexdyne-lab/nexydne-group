@@ -15,7 +15,8 @@ export default function PerformanceAnalytics() {
       serviceName="Performance Analytics"
       serviceSlug="performance-analytics"
       heroSubtitle="Build analytics capabilities that drive optimization. Create dashboards, attribution models, and reporting frameworks."
-      heroImage="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1600&q=80"
+      heroImage="/images/capabilities/cap-coder.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Performance Analytics engagements delivered" },
@@ -70,14 +71,14 @@ export default function PerformanceAnalytics() {
           title: "Accounting firm modernizes audit workflows",
           industry: "Professional Services · Marketing Operations",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "Law firm slashes contract review with secure GenAI",
           industry: "Legal Services · Marketing Operations",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1600&q=80",
+          image: "/images/industries/meeting-topview.jpg",
         },
       ]}
       relatedServices={[

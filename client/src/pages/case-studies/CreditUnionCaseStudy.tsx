@@ -7,7 +7,7 @@ export function CreditUnionCaseStudy() {
       industry="Financial Services · Operations"
       title="45% Improvement in Member Satisfaction"
       subtitle="An 85-employee community credit union with 45,000 members implements NexDyne's Customer Intelligence Platform to personalize member experiences and predict service needs, achieving a 45% improvement in member satisfaction scores."
-      heroImage="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       challenge={`This community credit union had served its members for over 60 years, building deep roots in the local community. But as national banks invested heavily in digital experiences and personalization, the credit union's leadership worried they were falling behind.
 
 Member data was scattered across multiple systems—core banking, loan origination, digital banking, and call center logs. Relationship managers relied on memory and manual lookups to understand member needs. When a member called, staff often couldn't see the full picture of their relationship with the credit union.

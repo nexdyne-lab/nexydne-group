@@ -15,7 +15,8 @@ export default function DemandGeneration() {
       serviceName="Demand Generation"
       serviceSlug="demand-generation"
       heroSubtitle="Integrated campaigns combining content marketing, digital advertising, ABM, and events to generate qualified pipeline at scale."
-      heroImage="/images/go-to-market-abstract.jpg"
+      heroImage="/images/industries/fin-handshake-city.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Demand Generation engagements delivered" },
@@ -70,7 +71,7 @@ export default function DemandGeneration() {
           title: "Manufacturer Creates Direct-to-Consumer Channel",
           industry: "Manufacturing · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=80",
+          image: "/images/industries/deal-handshake.jpg",
         },
       ]}
       relatedServices={[

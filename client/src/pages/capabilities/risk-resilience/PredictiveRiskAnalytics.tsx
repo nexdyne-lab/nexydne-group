@@ -15,7 +15,8 @@ export default function PredictiveRiskAnalytics() {
       serviceName="Predictive Risk Analytics"
       serviceSlug="predictive-risk-analytics"
       heroSubtitle="Deploy machine learning models that continuously monitor for emerging risks. Detect anomalies, predict potential incidents, and enable proactive intervention. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-diverse-team.5dcdbf56.jpg"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Predictive Risk Analytics engagements delivered" },
@@ -68,14 +69,14 @@ export default function PredictiveRiskAnalytics() {
           title: "Reinventing claims processing for a top-five insurer",
           industry: "Financial Services",
           metric: "55%",
-          image: "/case-insurance-claims.399e5d4b.jpg",
+          image: "/images/industries/advisor-charts.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Automating client onboarding for a global wealth management firm",
           industry: "Financial Services",
           metric: "60%",
-          image: "/case-advisor-client.eb15e04e.jpg",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
       ]}
       relatedServices={[

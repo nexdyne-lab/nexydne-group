@@ -7,7 +7,7 @@ export function AerospaceQuality() {
       industry="Aerospace · Operations"
       title="Quality System Implementation Achieves ISO Certification"
       subtitle="How an aerospace supplier built a world-class quality management system to meet customer requirements and reduce defects."
-      heroImage="https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=1600&q=80"
+      heroImage="/images/industries/aero-rocket.jpg"
       challenge={`A major customer audit revealed significant gaps in the quality management system, putting $15M in annual contracts at risk. The company had 90 days to demonstrate substantial progress toward ISO 9001 and AS9100 certification or face disqualification from the approved supplier list.
 
 A 150-employee aerospace supplier with $55M in annual revenue manufactures precision-machined components for commercial and defense aircraft, serving Tier 1 suppliers to major OEMs. The rapid assessment revealed a quality system that existed on paper but wasn't consistently followed in practice: outdated documentation not reflecting actual processes, incomplete inspection records making traceability impossible, corrective action requests piling up without systematic resolution, and training records unable to demonstrate competency for critical operations.`}

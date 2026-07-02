@@ -54,14 +54,14 @@ export default function SecurityCompliance() {
           title: "SOC 2 Type II clean opinion landed in 9 months with zero deal-blocking findings",
           industry: "B2B SaaS",
           metric: "0 findings",
-          image: "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
         {
           slug: "hospital-clinical-workflow",
           title: "HIPAA and HITRUST control implementation across 22 clinical applications under a regulated cutover",
           industry: "Healthcare",
           metric: "22 apps",
-          image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
       ]}
       relatedServices={[

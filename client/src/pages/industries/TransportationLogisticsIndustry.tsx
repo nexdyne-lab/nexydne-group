@@ -11,7 +11,8 @@ export default function TransportationLogisticsIndustry() {
       industry="Transportation & Logistics"
       slug="transportation-logistics"
       heroSubtitle="We help carriers, 3PLs, and shippers turn supply-chain volatility into advantage — using AI-powered visibility, route optimization, and modern operating models that deliver both service and margin in an industry historically forced to choose."
-      heroImage="/process-orchestration-workflow.a6bc5b2e.jpg"
+      heroImage="/images/industries/transport-traffic.jpg"
+      heroFocal="55% 45%"
       povParagraphs={[
         "Global supply chains have never been more complex — or more vulnerable. The pandemic exposed fragilities that had been compounding for decades, and e-commerce has fundamentally rewritten customer expectations. Today's shippers demand real-time visibility, flexible delivery, and the data to plan around disruption rather than react to it.",
         "We partner with transportation and logistics companies to build the digital capabilities that environment requires. From AI-powered route optimization to real-time supply-chain visibility platforms, our work helps companies reduce cost, improve service, and build the resilience the next cycle of shocks is going to test.",
@@ -76,21 +77,21 @@ export default function TransportationLogisticsIndustry() {
           title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
           industry: "Financial Services",
           metric: "10K+ hrs",
-          image: "/case-banker-meeting.c53f3999.jpg"
+          image: "/images/industries/transport-bridge.jpg"
         },
         {
           slug: "consulting-knowledge-management",
           title: "Transforming knowledge management for a global consulting firm",
           industry: "Professional Services",
           metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg"
+          image: "/images/industries/retail-warehouse.jpg"
         },
         {
           slug: "fintech-payment-automation",
           title: "Building a scalable payment processing system for a fintech startup",
           industry: "Financial Services",
           metric: "100K+",
-          image: "/case-financial-advisor.7bb94f0c.jpg"
+          image: "/images/industries/colleagues-walking.jpg"
         }
       ]}
     />

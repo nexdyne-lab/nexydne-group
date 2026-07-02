@@ -7,7 +7,7 @@ export function DistributionWarehouse() {
       industry="Distribution · Operations"
       title="Warehouse Optimization Doubles Throughput"
       subtitle="How a distribution company transformed their warehouse operations to double capacity without expanding footprint."
-      heroImage="https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80"
+      heroImage="/images/capabilities/cap-warehouse-robot.jpg"
       challenge={`Growing demand had pushed the warehouse to apparent capacity limits. Management was planning a $12M facility expansion, but lead times and capital constraints made this problematic. The company needed to find capacity within the existing footprint while improving service levels.
 
 A 180-employee distribution company with $95M in annual revenue operates a 350,000 square foot distribution center handling 15,000 SKUs serving industrial customers across the Southeast. Analysis revealed the warehouse wasn't actually at physical capacity—it was at the limit of current processes. Vertical space was underutilized at only 60% of available racking height. Slotting hadn't been optimized in years, so fast-moving items were scattered throughout the facility. Pick paths were inefficient, with workers frequently backtracking. Receiving and shipping competed for the same dock doors during peak periods.`}

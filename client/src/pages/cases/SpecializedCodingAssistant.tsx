@@ -7,7 +7,7 @@ export function SpecializedCodingAssistant() {
       industry="Automotive · AI & Machine Learning"
       title="Automotive Manufacturer Accelerates Embedded Software Dev with Custom AI"
       subtitle="Fine-tuned model understood proprietary hardware constraints and safety standards, speeding up ECU code generation by 35%."
-      heroImage="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=80"
+      heroImage="/images/industries/energy-wind.jpg"
       challenge={`A major automotive OEM was developing next-generation electric vehicle (EV) platforms. The software running on Electronic Control Units (ECUs) had to meet rigorous safety standards (ISO 26262) and operate within strict memory and processing constraints. General-purpose coding assistants failed to understand these specific requirements, often suggesting inefficient or non-compliant code.
 
 The engineering team needed a specialized tool that "spoke the language" of embedded systems and their proprietary vehicle architecture.`}

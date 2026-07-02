@@ -7,7 +7,7 @@ export function HospitalityGuestExperience() {
       industry="Hospitality · Digital Engagement"
       title="Hotel Chain Elevates Guest Experience Through Digital Engagement"
       subtitle="Personalized mobile concierge service increases guest satisfaction by 34% and drives 52% growth in ancillary revenue per stay through intelligent, context-aware engagement."
-      heroImage="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&q=80"
+      heroImage="/case-medical-collaboration.9602cc8c.jpg"
       challenge={`A boutique hotel chain with 42 properties across major US cities faced a critical guest experience challenge. Despite premium positioning and high room rates, guest satisfaction scores had declined 18 points over three years as travelers increasingly expected seamless digital experiences comparable to leading hospitality brands. The chain's mobile app functioned primarily as a booking tool, offering minimal value during guest stays. Concierge services remained phone-based and reactive, creating friction for guests seeking recommendations, reservations, or assistance.
 
 The core problem: disconnected guest touchpoints created inconsistent experiences that failed to leverage guest preferences, stay history, or real-time context. A returning guest who previously requested late checkout had to repeat the request each visit. Guests interested in spa services received no proactive recommendations or special offers. The hotel lacked visibility into guest needs until problems escalated to front desk complaints.

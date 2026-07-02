@@ -7,7 +7,7 @@ export function FinancialDataQuality() {
       industry="Banking · Data Governance"
       title="Bank Reduces Data Quality Issues 78% with Automated Validation"
       subtitle="Real-time data quality monitoring across 200+ source systems feeding regulatory reports, eliminating manual reconciliation and reducing reporting errors."
-      heroImage="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       challenge={`A regional bank with $45B in assets struggled with data quality problems that cascaded through their regulatory reporting process. They submitted monthly Call Reports (FFIEC 031) to the FDIC, quarterly stress test data to the Fed, and annual CCAR submissions—all requiring data from 200+ source systems spanning core banking, loan origination, treasury, and risk management platforms.
 
 Quality issues surfaced late in the reporting cycle: mismatched totals between systems, missing required fields, invalid date formats, duplicate records, and referential integrity violations. The data governance team spent 3 weeks each quarter manually reconciling discrepancies, often discovering errors hours before submission deadlines. They'd resubmitted 4 regulatory reports in the past year due to data errors, drawing scrutiny from examiners.

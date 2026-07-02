@@ -15,7 +15,8 @@ export default function AssortmentOptimization() {
       serviceName="Assortment Optimization"
       serviceSlug="assortment-optimization"
       heroSubtitle="Optimize product assortments by channel and customer segment. Balance breadth and depth to maximize sales and margin."
-      heroImage="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Assortment Optimization engagements delivered" },
@@ -70,14 +71,14 @@ export default function AssortmentOptimization() {
           title: "Accounting firm modernizes audit workflows",
           industry: "Professional Services · Portfolio Optimization",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-chess.jpg",
         },
         {
           slug: "legal-document-intelligence",
           title: "In-house legal team builds doc intelligence platform",
           industry: "Legal Services · Portfolio Optimization",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
       ]}
       relatedServices={[

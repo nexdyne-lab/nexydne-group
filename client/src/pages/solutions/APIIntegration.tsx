@@ -53,14 +53,14 @@ export default function APIIntegration() {
           title: "Regional Bank Launches Open-Banking API and Onboards 40 Partners in Six Months",
           industry: "Financial Services",
           metric: "40 partners",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "healthcare-patient-engagement",
           title: "Health Insurer Modernizes Legacy Mainframe with API Layer — No Replatform",
           industry: "Healthcare",
           metric: "0 replatform",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-circuit-green.jpg",
         },
       ]}
       relatedServices={[

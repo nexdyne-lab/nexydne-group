@@ -10,7 +10,7 @@ export default function CloudInfrastructureHub() {
       hubName="Cloud & Infrastructure"
       slug="technology/cloud-infrastructure-hub"
       heroSubtitle="Migrate, modernize, and optimize your cloud estate end-to-end. We design target architectures, sequence migration waves, and operate the platform with FinOps discipline so the cloud compounds developer velocity instead of dragging on the P&L."
-      heroImage="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-coder.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "60+", label: "Cloud and infrastructure engagements delivered for mid-market and enterprise clients" },

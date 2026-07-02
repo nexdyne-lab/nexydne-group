@@ -15,7 +15,8 @@ export default function GuardrailsSafety() {
       serviceName="Guardrails & Safety Systems"
       serviceSlug="guardrails-safety"
       heroSubtitle="Build robust safety mechanisms including input validation, output filtering, and human-in-the-loop checkpoints for high-stakes decisions. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-ai-agents.eba3d75f.jpg"
+      heroImage="/images/capabilities/cap-colonnade.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Guardrails & Safety Systems engagements delivered" },
@@ -68,14 +69,14 @@ export default function GuardrailsSafety() {
           title: "Reinventing claims processing for a top-five insurer",
           industry: "Financial Services",
           metric: "55%",
-          image: "/case-insurance-claims.399e5d4b.jpg",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Automating client onboarding for a global wealth management firm",
           industry: "Financial Services",
           metric: "60%",
-          image: "/case-advisor-client.eb15e04e.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

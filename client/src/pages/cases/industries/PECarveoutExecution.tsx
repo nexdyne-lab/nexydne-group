@@ -11,7 +11,7 @@ export default function PECarveoutExecution() {
       industryLink="/industries/private-equity"
       title="PE Firm Executes $2B Carve-Out in 6 Months"
       subtitle="How systematic separation planning and execution achieved standalone operations faster than industry benchmarks, avoiding costly TSA extensions."
-      heroImage="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80"
+      heroImage="/images/industries/deal-handshake.jpg"
       metrics={[
         { value: "6 Months", label: "To Standalone" },
         { value: "$45M", label: "TSA Costs Avoided" },
@@ -111,14 +111,14 @@ export default function PECarveoutExecution() {
           metric: "3.2x",
           label: "average returns",
           link: "/cases/pe-portfolio-operations",
-          image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80"
+          image: "/images/industries/fin-handshake-city.jpg"
         },
         {
           title: "Due Diligence Acceleration",
           metric: "50%",
           label: "faster deal evaluation",
           link: "/cases/pe-due-diligence",
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+          image: "/images/industries/meeting-topview.jpg"
         }
       ]}
       ctaTitle="Ready to Execute a Carve-Out?"

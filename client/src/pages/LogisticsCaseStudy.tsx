@@ -7,7 +7,7 @@ export function LogisticsCaseStudy() {
       industry="Logistics & Supply Chain · Operations"
       title="92% Reduction in Shipment Processing Errors"
       subtitle="Regional logistics provider with 15 distribution centers automates freight coordination, processing 5,000+ monthly shipments with 120 staff hours saved weekly."
-      heroImage="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1600&q=80"
+      heroImage="/images/industries/retail-warehouse.jpg"
       challenge={`Staff manually entered shipment data from 12+ carrier systems into the company's internal tracking platform. Each shipment required 15-20 minutes of data entry, creating a backlog during peak periods and frequent transcription errors that caused delivery delays. Matching carrier invoices to completed shipments consumed 120+ staff hours weekly, with discrepancies leading to payment delays and strained vendor relationships.
 
 A regional logistics company managing freight across 15 distribution centers throughout the Southeast United States with 180-220 employees processed over 5,000 shipments monthly for mid-market manufacturing and retail clients. As the company expanded from 8 to 15 distribution centers over three years, manual processes that worked at smaller scale became critical bottlenecks. Customer service teams manually checked carrier websites for tracking updates, responding to inquiries hours after delivery issues occurred—increasing support ticket volume 40% year-over-year. The company had no early warning system for potential delivery delays; problems were discovered only when customers called to complain.`}

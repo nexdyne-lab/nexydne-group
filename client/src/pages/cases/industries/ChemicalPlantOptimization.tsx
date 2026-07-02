@@ -11,7 +11,7 @@ export default function ChemicalPlantOptimization() {
       industryLink="/industries/chemicals"
       title="Chemical Manufacturer Improves Yield 12% with AI Optimization"
       subtitle="How machine learning models optimize process parameters in real-time, maximizing yield while maintaining quality and safety."
-      heroImage="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?w=1920&q=80"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
       metrics={[
         { value: "12%", label: "Yield Improvement" },
         { value: "$95M", label: "Annual Savings" },
@@ -111,14 +111,14 @@ export default function ChemicalPlantOptimization() {
           metric: "30%",
           label: "reduction in disruptions",
           link: "/cases/chemical-supply-chain",
-          image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80"
+          image: "/images/industries/meeting-topview.jpg"
         },
         {
           title: "Sustainability Transformation",
           metric: "25%",
           label: "emissions reduction",
           link: "/cases/chemical-sustainability",
-          image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80"
+          image: "/images/capabilities/cap-data-bars.jpg"
         }
       ]}
       ctaTitle="Ready to Optimize Your Plant?"

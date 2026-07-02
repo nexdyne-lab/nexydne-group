@@ -11,7 +11,7 @@ export default function OperationsProductDevelopmentNpdProcessDesign() {
       serviceName="NPD Process Design"
       serviceSlug="npd-process-design"
       heroSubtitle="Design and implement new product development processes that balance speed with rigor, from ideation through launch."
-      heroImage="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-3d-printing.jpg"
       experienceStats={[
         { number: "100+", label: "Product Development engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,7 +52,7 @@ export default function OperationsProductDevelopmentNpdProcessDesign() {
           title: "Global Legal Operations Team Deploys Document Intelligence at Scale",
           industry: "Professional Services · Operations",
           metric: "10x",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/capabilities/cap-coder.jpg",
         },
       ]}
       relatedServices={[

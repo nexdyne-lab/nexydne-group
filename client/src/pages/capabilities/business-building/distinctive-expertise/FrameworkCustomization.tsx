@@ -15,7 +15,8 @@ export default function FrameworkCustomization() {
       serviceName="Framework Customization"
       serviceSlug="framework-customization"
       heroSubtitle="We adapt our standard methodologies to your specific context, competitive landscape, and organizational capabilities."
-      heroImage="/images/distinctive-expertise-abstract.jpg"
+      heroImage="/images/industries/advisor-charts.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Framework Customization engagements delivered" },
@@ -70,14 +71,14 @@ export default function FrameworkCustomization() {
           title: "Regional Distributor Launches Digital Marketplace",
           industry: "Distribution · Business Building",
           metric: "$50M+",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues.jpg",
         },
         {
           slug: "manufacturer-dtc",
           title: "Manufacturer Creates Direct-to-Consumer Channel",
           industry: "Manufacturing · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1600&q=80",
+          image: "/images/capabilities/cap-women-meeting.jpg",
         },
       ]}
       relatedServices={[

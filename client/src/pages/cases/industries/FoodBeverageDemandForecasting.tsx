@@ -11,7 +11,7 @@ export default function FoodBeverageDemandForecasting() {
       industryLink="/industries/consumer-products"
       title="Food & Beverage Company Achieves 30% Better Demand Forecasting"
       subtitle="How machine learning models predict demand across 50,000 SKUs, reducing waste, improving service levels, and optimizing production planning."
-      heroImage="https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=1920&q=80"
+      heroImage="/images/capabilities/cap-food.jpg"
       metrics={[
         { value: "30%", label: "Forecast Improvement" },
         { value: "98.5%", label: "Service Level" },
@@ -111,14 +111,14 @@ export default function FoodBeverageDemandForecasting() {
           metric: "40%",
           label: "inventory reduction",
           link: "/cases/consumer-electronics-demand-optimization",
-          image: "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=600&q=80"
+          image: "/images/capabilities/cap-agriculture.jpg"
         },
         {
           title: "Assortment Optimization for Retailer",
           metric: "12%",
           label: "sales lift",
           link: "/cases/retail-assortment-optimization",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80"
+          image: "/images/capabilities/cap-retail-data.jpg"
         }
       ]}
       ctaTitle="Ready to Transform Your Demand Planning?"

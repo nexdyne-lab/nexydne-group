@@ -15,7 +15,8 @@ export default function ModelDevelopment() {
       serviceName="Model Development"
       serviceSlug="model-development"
       heroSubtitle="Build accurate virtual replicas of your physical assets using physics-based modeling, machine learning, and real-time data integration. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-digital-transformation.a3f57989.jpg"
+      heroImage="/images/capabilities/cap-3d-printing.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Model Development engagements delivered" },
@@ -68,7 +69,7 @@ export default function ModelDevelopment() {
           title: "Transforming clinical workflow at a leading academic medical center",
           industry: "Healthcare",
           metric: "40%",
-          image: "/case-clinical-workflow.ca226f80.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

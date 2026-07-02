@@ -15,7 +15,8 @@ export default function PlaybookSelection() {
       serviceName="Playbook Selection"
       serviceSlug="playbook-selection"
       heroSubtitle="We match your business challenge to our library of 200+ proven playbooks, selecting the frameworks most relevant to your industry and growth stage."
-      heroImage="/images/distinctive-expertise-abstract.jpg"
+      heroImage="/images/capabilities/cap-diverse-team.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Playbook Selection engagements delivered" },
@@ -70,14 +71,14 @@ export default function PlaybookSelection() {
           title: "Financial Services Firm Enters Adjacent Market",
           industry: "Financial Services · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1600&q=80",
+          image: "/images/capabilities/cap-colleagues.jpg",
         },
         {
           slug: "distributor-marketplace",
           title: "Regional Distributor Launches Digital Marketplace",
           industry: "Distribution · Business Building",
           metric: "$50M+",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-women-meeting.jpg",
         },
       ]}
       relatedServices={[

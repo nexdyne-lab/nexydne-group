@@ -7,7 +7,7 @@ export function FinancialFraudDetectionML() {
       industry="Banking · Fraud Detection"
       title="Bank Detects Fraud 40% Faster with ML Anomaly Detection"
       subtitle="Graph neural network identifies suspicious transaction patterns in real-time, reducing false positives 65% while catching fraud earlier."
-      heroImage="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1600&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       challenge={`A regional bank processing 15M transactions monthly struggled with fraud detection that generated too many false alarms while missing sophisticated fraud rings. Their rule-based system flagged 8% of transactions for manual review, overwhelming fraud analysts with false positives and creating customer friction when legitimate purchases got blocked.
 
 Traditional fraud patterns—large purchases in foreign countries, rapid-fire transactions—were easy to catch but represented only 30% of actual fraud. Organized crime networks used subtle techniques: small test transactions to validate stolen cards, gradual spending increases to avoid velocity rules, and coordinated activity across multiple compromised accounts that looked normal in isolation.

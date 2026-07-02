@@ -7,7 +7,7 @@ export function TelecomCustomerExperience() {
       industry="Telecommunications · Customer Intelligence"
       title="Telecom Provider Improves NPS by 23 Points Through Customer Intelligence"
       subtitle="Unified customer data platform enables proactive service interventions and personalized engagement, reducing support costs by $32M while increasing customer satisfaction."
-      heroImage="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1600&q=80"
+      heroImage="/images/industries/tech-datacenter.jpg"
       challenge={`A national telecommunications provider serving 8.4 million subscribers faced a customer experience crisis that threatened market position. Net Promoter Score had declined for three consecutive years, reaching -12—well below industry averages—while customer service costs consumed 18% of revenue due to high contact volumes and inefficient issue resolution. The root cause: fragmented customer data across 14 legacy systems that prevented holistic visibility into customer needs and service quality.
 
 Service representatives lacked unified customer profiles, forcing customers to repeat information across multiple interactions. Network operations teams couldn't correlate service degradation with customer impact, leading to reactive problem-solving that allowed issues to escalate before intervention. Marketing campaigns operated without behavioral insights, resulting in irrelevant offers that damaged rather than strengthened customer relationships.

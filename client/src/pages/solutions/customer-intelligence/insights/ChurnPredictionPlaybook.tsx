@@ -21,7 +21,7 @@ export default function ChurnPredictionPlaybook() {
       <section className="relative pt-32 pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=2000&q=80" 
+            src="/images/capabilities/cap-mobile-woman.jpg" 
             alt="SaaS Analytics" 
             className="w-full h-full object-cover opacity-20"
           />
@@ -402,19 +402,19 @@ export default function ChurnPredictionPlaybook() {
             title: "B2B software company reduces churn by 38%",
             category: "Case Study",
             link: "/solutions/data-driven-customer-intelligence/case-studies/saas-churn-reduction",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+            image: "/images/capabilities/cap-office-women.jpg"
           },
           {
             title: "Beyond Segmentation: The Future of Customer Intelligence",
             category: "Strategy",
             link: "/solutions/data-driven-customer-intelligence/insights/beyond-segmentation",
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+            image: "/images/capabilities/cap-hologram.jpg"
           },
           {
             title: "Hyper-Personalization at Scale: A Practical Guide",
             category: "Marketing",
             link: "/solutions/data-driven-customer-intelligence/insights/hyper-personalization",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
+            image: "/images/capabilities/cap-colleagues-smile.jpg"
           }
         ]}
       />

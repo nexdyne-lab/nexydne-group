@@ -10,7 +10,7 @@ export default function PlatformEngineeringHub() {
       hubName="Platform Engineering"
       slug="technology/platform-engineering-hub"
       heroSubtitle="Build internal developer platforms and data platforms that compound velocity. We design the IDP, build the paved paths, run the adoption, and embed the platform-team operating model that turns infrastructure into a managed product."
-      heroImage="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-aerial-grid.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "30+", label: "Platform engineering programs delivered for mid-market and enterprise clients" },

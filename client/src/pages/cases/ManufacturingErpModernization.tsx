@@ -7,7 +7,7 @@ export function ManufacturingErpModernization() {
       industry="Manufacturing · ERP Modernization"
       title="Manufacturer Transforms Legacy ERP to Cloud Platform"
       subtitle="Cloud ERP migration delivers 52% faster order processing and real-time supply chain visibility across 14 global manufacturing sites."
-      heroImage="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=1600&q=80"
+      heroImage="/images/industries/mfg-robotics.jpg"
       challenge={`A global manufacturer of industrial equipment operating 14 production facilities across North America, Europe, and Asia struggled with a fragmented ERP landscape that had evolved through decades of acquisitions and organic growth. Each facility ran a different version of legacy ERP software—some on-premises installations dating back to the early 2000s, others on heavily customized platforms that required specialized consultants to maintain.
 
 Supply chain visibility was virtually nonexistent. When a customer placed an order, production planners couldn't see real-time inventory levels across facilities, leading to frequent stockouts of critical components while other locations held excess inventory. Order fulfillment averaged 18 days from placement to shipment, with 32% of orders experiencing delays due to material shortages that could have been avoided with better visibility.

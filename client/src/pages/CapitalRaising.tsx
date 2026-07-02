@@ -105,7 +105,7 @@ export default function CapitalRaising() {
             >
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-xl sm:shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80" 
+                  src="/images/capabilities/cap-presenting-graphs.jpg" 
                   alt="Investment Analysis" 
                   className="w-full h-auto"
                 />
@@ -290,19 +290,19 @@ export default function CapitalRaising() {
               {
                 title: "Series B funding secured with 40% above target valuation",
                 category: "B2B SaaS",
-                image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&q=80",
+                image: "/images/industries/fin-monitors.jpg",
                 link: "/case-studies/series-b-funding"
               },
               {
                 title: "Healthcare tech startup closes $25M growth round in 6 weeks",
                 category: "Healthcare Technology",
-                image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80",
+                image: "/images/industries/advisor-charts.jpg",
                 link: "/case-studies/healthcare-funding"
               },
               {
                 title: "Manufacturing company secures growth equity for expansion",
                 category: "Manufacturing",
-                image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80",
+                image: "/images/capabilities/cap-data-bars.jpg",
                 link: "/case-studies/manufacturing-growth-equity"
               }
             ].map((study, i) => (
@@ -408,19 +408,19 @@ export default function CapitalRaising() {
             title: "Series A Fundraising Guide",
             category: "Capital Raising",
             link: "/insights/series-a-fundraising-guide",
-            image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-celebrate.jpg"
           },
           {
             title: "Five Valuation Mistakes That Cost Founders Millions",
             category: "Valuation",
             link: "/insights/valuation-mistakes",
-            image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-presenting-graphs.jpg"
           },
           {
             title: "The Investor Due Diligence Checklist",
             category: "Due Diligence",
             link: "/insights/due-diligence-checklist",
-            image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80"
+            image: "/images/industries/fin-monitors.jpg"
           }
         ]}
       />

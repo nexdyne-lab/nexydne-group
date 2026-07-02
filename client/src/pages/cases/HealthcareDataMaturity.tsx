@@ -7,7 +7,7 @@ export function HealthcareDataMaturity() {
       industry="Healthcare · Data Strategy"
       title="Healthcare System Achieves Level 3 Data Maturity in 18 Months"
       subtitle="Maturity assessment and phased roadmap transformed ad-hoc reporting culture into self-service analytics organization where clinical teams answer their own questions without IT bottlenecks."
-      heroImage="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80"
+      heroImage="/case-medical-collaboration.9602cc8c.jpg"
       challenge={`A 12-hospital healthcare system with 3,000 physicians struggled with data-driven decision-making. Clinical quality teams, population health managers, and operational leaders needed data to improve outcomes and reduce costs, but every analysis required IT support. Analysts spent 80% of their time extracting data from disparate systems and only 20% analyzing it.
 
 The Chief Medical Information Officer commissioned a data maturity assessment that revealed Level 1 maturity (ad-hoc reporting). No centralized data platform existed. Each department built their own Excel-based reports pulling data manually from EHRs, billing systems, and lab databases. Data definitions were inconsistent—"readmission rate" calculated differently across departments. No data governance, no self-service capabilities, no predictive analytics.

@@ -7,7 +7,7 @@ export function CaseStudyConsumerElectronicsDemandOptimization() {
       industry="Retail · Demand Forecasting"
       title="Localized Demand Forecasting Drives $2.4M Sales Increase"
       subtitle="A consumer electronics and furniture retailer partnered with NexDyne to create a localized demand forecaster that optimized assortment across more than 120 stores."
-      heroImage="https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=1600&q=80"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
       challenge={`The retailer's traditional approach to assortment planning treated all stores similarly, with minor adjustments based on store size and format. This approach was creating significant inefficiencies: urban stores were overstocked on entry-level products while suburban locations couldn't keep premium items in stock.
 
 High markdown rates eroded margins—products that didn't sell in certain locations required deep discounts to clear, with markdown rates varying by 15-25% across stores with similar footprints. Store managers had intuitions about local preferences but lacked data to support their recommendations, and e-commerce competitors were using sophisticated personalization while the retailer's stores offered the same experience everywhere.`}

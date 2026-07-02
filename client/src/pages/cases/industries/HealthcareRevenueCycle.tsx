@@ -11,7 +11,7 @@ export default function HealthcareRevenueCycle() {
       industryLink="/industries/healthcare"
       title="Health System Recovers $32M Through Revenue Cycle Transformation"
       subtitle="How AI-powered coding optimization, denial prevention, and automated claims management transformed financial performance."
-      heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=80"
+      heroImage="/case-medical-collaboration.9602cc8c.jpg"
       metrics={[
         { value: "$32M", label: "Recovered Revenue" },
         { value: "45%", label: "Denial Rate Reduction" },
@@ -111,14 +111,14 @@ export default function HealthcareRevenueCycle() {
           metric: "35%",
           label: "improved patient outcomes",
           link: "/cases/healthcare-transformation",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80"
+          image: "/case-doctor-consultation.799c1562.jpg"
         },
         {
           title: "AI-Powered Readmission Prediction",
           metric: "42%",
           label: "reduction in preventable readmissions",
           link: "/cases/healthcare-readmission",
-          image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80"
+          image: "/case-healthcare-team.5797392b.jpg"
         }
       ]}
       ctaTitle="Ready to Optimize Your Revenue Cycle?"

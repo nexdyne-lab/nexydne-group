@@ -10,7 +10,8 @@ export default function AgenticAI() {
       slug="agentic-ai"
       heroSubtitle="Deploy autonomous AI agents that reason, plan, and execute complex multi-step tasks — transforming how your organization operates, scales, and serves customers without adding headcount."
       // TODO: confirm hero image asset matches Agentic AI theme
-      heroImage="/blog-ai-agents.eba3d75f.jpg"
+      heroImage="/images/industries/tech-glasses.jpg"
+      heroFocal="62% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "60+", label: "Production agent systems shipped" },
@@ -116,21 +117,21 @@ export default function AgenticAI() {
           title: "How contract automation transformed a leading law firm’s operations",
           industry: "Professional Services",
           metric: "65%",
-          image: "/case-law-firm-meeting.401c96db.jpg",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "consulting-knowledge-management",
           title: "Transforming knowledge management for a global consulting firm",
           industry: "Professional Services",
           metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
         {
           slug: "legal-document-intelligence",
           title: "Transforming legal research with AI-powered document intelligence",
           industry: "Professional Services",
           metric: "70%",
-          image: "/case-legal-team.2f84fc95.jpg",
+          image: "/images/industries/meeting-topview.jpg",
         },
       ]}
       relatedCapabilities={[

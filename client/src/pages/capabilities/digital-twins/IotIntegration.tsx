@@ -15,7 +15,8 @@ export default function IotIntegration() {
       serviceName="IoT Integration"
       serviceSlug="iot-integration"
       heroSubtitle="Connect sensors and data sources to feed real-time information into your digital twin. Ensure data quality, reliability, and security. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-digital-transformation.a3f57989.jpg"
+      heroImage="/images/capabilities/cap-iot-network.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "IoT Integration engagements delivered" },
@@ -68,7 +69,7 @@ export default function IotIntegration() {
           title: "Building a national telehealth platform from the ground up",
           industry: "Healthcare",
           metric: "12x",
-          image: "/case-doctor-consultation.799c1562.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

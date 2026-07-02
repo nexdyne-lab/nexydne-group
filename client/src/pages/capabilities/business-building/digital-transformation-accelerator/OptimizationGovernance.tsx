@@ -15,7 +15,8 @@ export default function OptimizationGovernance() {
       serviceName="Optimization & Governance"
       serviceSlug="optimization-governance"
       heroSubtitle="We establish continuous improvement processes and governance frameworks that maintain architectural integrity as your business evolves. This includes architecture review boards, technology standards, and ongoing optimization."
-      heroImage="/images/digital-transformation-abstract.jpg"
+      heroImage="/images/industries/ops-monitors-dark.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Optimization & Governance engagements delivered" },
@@ -70,7 +71,7 @@ export default function OptimizationGovernance() {
           title: "Professional Services Firm Builds SaaS Product",
           industry: "Professional Services · Business Building",
           metric: "$3.2M",
-          image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80",
+          image: "/images/capabilities/cap-aerial-grid.jpg",
         },
       ]}
       relatedServices={[

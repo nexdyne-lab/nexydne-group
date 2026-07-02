@@ -7,7 +7,7 @@ export function FoodQualityAI() {
       industry="Food & Beverage · Artificial Intelligence"
       title="Quality Inspection AI Improves Yield for Food Processor"
       subtitle="How a regional food processor implemented computer vision AI to improve quality detection and increase production yield."
-      heroImage="https://images.unsplash.com/photo-1566467021492-99e0d5f4bd04?w=1600&q=80"
+      heroImage="/images/capabilities/cap-food.jpg"
       challenge={`Manual quality inspection was inconsistent and couldn't keep pace with production speeds. Defect detection rates varied by shift and inspector. Product waste from quality issues was running at 12% of production. Customer complaints about quality were increasing, threatening key accounts.
 
 A regional food processing company with 200 employees processes fresh produce for retail and foodservice customers, with quality as a critical differentiator. Visual defects like bruising, discoloration, and size variations were difficult to detect consistently at production speeds, and grading accuracy varied significantly between inspectors. The speed of production lines made thorough manual inspection impossible at the volume required to serve major retail accounts.`}

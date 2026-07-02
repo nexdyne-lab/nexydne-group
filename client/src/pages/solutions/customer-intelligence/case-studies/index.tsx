@@ -17,7 +17,7 @@ const caseStudies = [
       { value: "$1.2M", label: "Annual revenue lift" },
       { value: "3.2x", label: "Campaign ROI improvement" }
     ],
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
+    image: "/images/capabilities/cap-mobile-woman.jpg",
     featured: true
   },
   {
@@ -30,7 +30,7 @@ const caseStudies = [
       { value: "$890K", label: "Retained ARR" },
       { value: "60 days", label: "Early warning lead time" }
     ],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    image: "/images/capabilities/cap-office-women.jpg",
     featured: true
   },
   {
@@ -43,7 +43,7 @@ const caseStudies = [
       { value: "$640K", label: "New revenue generated" },
       { value: "45%", label: "Customer engagement increase" }
     ],
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80",
+    image: "/images/capabilities/cap-hologram.jpg",
     featured: true
   },
   {
@@ -56,7 +56,7 @@ const caseStudies = [
       { value: "35%", label: "Appointment adherence" },
       { value: "$2.1M", label: "Revenue protected" }
     ],
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=800&q=80",
+    image: "/images/capabilities/cap-colleagues-smile.jpg",
     featured: false
   },
   {
@@ -69,7 +69,7 @@ const caseStudies = [
       { value: "22%", label: "Acquisition cost reduction" },
       { value: "2.8x", label: "Content engagement" }
     ],
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80",
+    image: "/images/capabilities/cap-ai-search.jpg",
     featured: false
   },
   {
@@ -82,7 +82,7 @@ const caseStudies = [
       { value: "40%", label: "Sales cycle reduction" },
       { value: "$3.4M", label: "Pipeline generated" }
     ],
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
+    image: "/images/capabilities/cap-conference-data.jpg",
     featured: false
   }
 ];

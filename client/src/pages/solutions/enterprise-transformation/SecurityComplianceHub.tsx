@@ -10,7 +10,7 @@ export default function SecurityComplianceHub() {
       hubName="Security & Compliance"
       slug="technology/security-compliance-hub"
       heroSubtitle="Embed security and compliance into every layer of your technology stack — from zero-trust architectures to SOC 2 and HIPAA control implementation. We move security from an audit event to an always-on assurance program."
-      heroImage="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-aerial-grid.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "35+", label: "Security and compliance programs delivered for mid-market and enterprise clients" },

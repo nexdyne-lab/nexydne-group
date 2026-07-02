@@ -7,7 +7,7 @@ export function EcommerceDataWarehouse() {
       industry="E-Commerce · Data Engineering"
       title="E-Commerce Retailer Migrates to Snowflake"
       subtitle="Multi-brand retailer modernizes legacy data warehouse, reducing query times by 85% and cutting infrastructure costs 40%."
-      heroImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`A multi-brand e-commerce retailer operating 6 online storefronts with $450M in annual revenue struggled with a legacy on-premise data warehouse built on Oracle Exadata. The system required 3 full-time DBAs to maintain, cost $180K annually in licensing and hardware maintenance, and took 4-6 hours to run nightly ETL jobs. Business analysts waited 15-30 seconds for basic product performance queries, and the marketing team couldn't access customer behavior data for same-day campaign optimization.
 
 The company's data team of 5 engineers lacked cloud data warehouse expertise and modern ELT tooling experience. Previous attempts to modernize using internal resources stalled after 8 months due to the complexity of migrating 15 years of historical data, rewriting 200+ legacy ETL jobs, and ensuring zero downtime for critical business reporting.`}

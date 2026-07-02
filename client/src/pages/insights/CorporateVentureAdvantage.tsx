@@ -9,7 +9,7 @@ export default function CorporateVentureAdvantage() {
       title: "From MVP to Scale",
       description: "Navigating the 'valley of death' and operationalizing your new venture for growth.",
       readTime: "10 min read",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80",
+      image: "/images/capabilities/cap-lightbulb-idea.jpg",
       link: "/insights/from-mvp-to-scale"
     },
     {
@@ -18,7 +18,7 @@ export default function CorporateVentureAdvantage() {
       title: "Hiring for Builders",
       description: "How to attract and retain entrepreneurial talent within a corporate structure.",
       readTime: "5 min read",
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80",
+      image: "/images/capabilities/cap-venturing.jpg",
       link: "/insights/hiring-for-builders"
     },
     {
@@ -27,7 +27,7 @@ export default function CorporateVentureAdvantage() {
       title: "The CEO's Guide to Data Modernization",
       description: "Why 70% of transformations fail and how to be in the 30% that succeed.",
       readTime: "5 min read",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80",
+      image: "/images/capabilities/cap-telescope.jpg",
       link: "/insights/ceo-guide-data-modernization"
     }
   ];
@@ -40,7 +40,7 @@ export default function CorporateVentureAdvantage() {
       subtitle="In the race for digital dominance, incumbents often fear they're too slow. But when they learn to leverage their unfair advantages—data, distribution, and domain expertise—they don't just compete with startups; they crush them."
       readTime="6 min read"
       publishDate="December 12, 2024"
-      heroImage="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80"
+      heroImage="/images/industries/team-strategy-board.jpg"
       heroImageAlt="Corporate Venture Advantage"
       authorName="David D. Seyaker"
       authorRole="Founder & CEO, NexDyne Technologies"

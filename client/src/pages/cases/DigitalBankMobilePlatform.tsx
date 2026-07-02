@@ -7,7 +7,7 @@ export function DigitalBankMobilePlatform() {
       industry="Fintech · Mobile Banking"
       title="Digital Bank Onboards 250K Users in 6 Months with Mobile-First Platform"
       subtitle="Native iOS and Android apps with AI-powered identity verification delivered a 2.8-minute account opening experience and 94% mobile transaction rate."
-      heroImage="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1600&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       challenge={`A digital-first bank launching in the US market needed a mobile banking app that could compete with established neobanks like Chime and Current. Their business model relied on mobile-only operations—no physical branches—so the app had to handle everything from account opening to loan applications. Security and regulatory compliance were paramount, requiring bank-grade encryption and adherence to FDIC guidelines.
 
 The app needed to support complex financial features including instant payments, check deposits via camera, budgeting tools, and savings goals. User onboarding had to be frictionless (under 5 minutes) while meeting Know Your Customer (KYC) requirements. The bank also needed to integrate with legacy core banking systems and third-party services like Plaid for account linking.`}

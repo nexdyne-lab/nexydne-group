@@ -7,7 +7,7 @@ export function MediaStreamingScale() {
       industry="Media & Entertainment · Technology"
       title="Streaming Platform Handles 10x Traffic Spike During Launch"
       subtitle="A 160-employee media company implemented elastic infrastructure and CDN optimization for content delivery at scale—with zero downtime during their biggest launch event."
-      heroImage="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=1600&q=80"
+      heroImage="/images/industries/tech-datacenter.jpg"
       challenge={`StreamVault, a premium streaming platform, was preparing to launch an exclusive documentary series that had generated massive pre-launch buzz. Their marketing team projected 500,000 concurrent viewers at launch—but acknowledged the number could be significantly higher based on social media engagement.
 
 Their existing infrastructure, designed for steady-state traffic of 50,000 concurrent users, had never been tested at this scale. Previous high-traffic events had caused buffering issues and service degradation. A failed launch would damage their brand and give competitors an opening.

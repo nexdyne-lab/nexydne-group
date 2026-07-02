@@ -15,7 +15,8 @@ export default function SustainableGrowthStrategy() {
       serviceName="Sustainable Growth Strategy"
       serviceSlug="sustainable-growth-strategy"
       heroSubtitle="Develop growth strategies that integrate sustainability into your core business. Identify green market opportunities and build sustainable competitive advantage."
-      heroImage="https://images.unsplash.com/photo-1473773508845-188df298d2d1?w=1600&q=80"
+      heroImage="/images/industries/energy-renewable-team.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Sustainable Growth Strategy engagements delivered" },
@@ -70,14 +71,14 @@ export default function SustainableGrowthStrategy() {
           title: "Consultancy unlocks 30 years of IP with AI knowledge graph",
           industry: "Professional Services · Green Growth",
           metric: "4x",
-          image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=80",
+          image: "/images/industries/energy-powerplant.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech scales payment ops with intelligent automation",
           industry: "Fintech · Green Growth",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/capabilities/cap-lightbulb-idea.jpg",
         },
       ]}
       relatedServices={[

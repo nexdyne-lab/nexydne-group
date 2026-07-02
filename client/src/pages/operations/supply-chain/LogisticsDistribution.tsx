@@ -11,7 +11,7 @@ export default function OperationsSupplyChainLogisticsDistribution() {
       serviceName="Logistics & Distribution"
       serviceSlug="logistics-distribution"
       heroSubtitle="Optimize transportation and distribution networks. Reduce costs while improving delivery performance and flexibility."
-      heroImage="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/industries/retail-warehouse.jpg"
       experienceStats={[
         { number: "100+", label: "Supply Chain Optimization engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsSupplyChainLogisticsDistribution() {
           title: "National Telehealth Provider Scales Operations 10x",
           industry: "Healthcare · Operations",
           metric: "10x",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/industries/transport-bridge.jpg",
         },
         {
           slug: "fintech-payment-automation",
           title: "Fintech Scales Payment Operations Without Headcount Growth",
           industry: "Financial Services · Operations",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/industries/transport-traffic.jpg",
         },
       ]}
       relatedServices={[

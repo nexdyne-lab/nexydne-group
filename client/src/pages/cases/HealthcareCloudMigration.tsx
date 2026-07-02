@@ -7,7 +7,7 @@ export function HealthcareCloudMigration() {
       industry="Healthcare Tech · Cloud Migration"
       title="Health Tech Platform Achieves 99.99% Uptime After Cloud Migration"
       subtitle="A 240-employee healthcare SaaS company transformed their legacy infrastructure to AWS, achieving enterprise-grade reliability and 65% cost reduction in 9 months."
-      heroImage="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80"
+      heroImage="/case-medical-collaboration.9602cc8c.jpg"
       challenge={`MedFlow, a healthcare SaaS platform serving 500+ medical practices, was running on aging on-premise infrastructure that had become a critical business risk. Their monolithic application, built over a decade, struggled with increasing load as their customer base grew.
 
 Downtime incidents were becoming more frequent—averaging 4 hours per month—directly impacting patient scheduling, billing, and clinical workflows. Each minute of downtime meant medical practices couldn't access patient records, schedule appointments, or process insurance claims.

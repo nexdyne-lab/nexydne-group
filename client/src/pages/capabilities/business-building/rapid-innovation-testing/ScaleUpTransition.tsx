@@ -15,7 +15,8 @@ export default function ScaleUpTransition() {
       serviceName="Scale-Up Transition Planning"
       serviceSlug="scale-up-transition"
       heroSubtitle="Bridge validated pilots into production — operating model, hiring plan, and integration with the core P&L — so winning experiments don't stall in the gap between proof and scale."
-      heroImage="/images/rapid-innovation-abstract.jpg"
+      heroImage="/images/capabilities/cap-battery-factory.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Scale-Up Transition Planning engagements delivered" },
@@ -70,7 +71,7 @@ export default function ScaleUpTransition() {
           title: "Healthcare Provider Launches Telehealth Venture",
           industry: "Healthcare · Business Building",
           metric: "5 Mo",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-lightbulb-idea.jpg",
         },
       ]}
       relatedServices={[

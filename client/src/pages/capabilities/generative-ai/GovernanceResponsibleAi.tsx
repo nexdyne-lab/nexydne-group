@@ -15,7 +15,8 @@ export default function GovernanceResponsibleAi() {
       serviceName="Governance & Responsible AI"
       serviceSlug="governance-responsible-ai"
       heroSubtitle="Establish guardrails, monitoring systems, and governance frameworks to ensure your GenAI deployments are safe, compliant, and aligned with your values. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-ai-agents.eba3d75f.jpg"
+      heroImage="/images/capabilities/cap-colonnade.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Governance & Responsible AI engagements delivered" },
@@ -68,14 +69,14 @@ export default function GovernanceResponsibleAi() {
           title: "Reinventing claims processing for a top-five insurer",
           industry: "Financial Services",
           metric: "55%",
-          image: "/case-insurance-claims.399e5d4b.jpg",
+          image: "/images/capabilities/cap-coder.jpg",
         },
         {
           slug: "accounting-audit-automation",
           title: "AI-powered audit automation at a Big Four accounting firm",
           industry: "Professional Services",
           metric: "45%",
-          image: "/case-accountants-audit.1c87a151.jpg",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

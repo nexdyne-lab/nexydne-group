@@ -11,7 +11,7 @@ export default function OperationsProcessAutomationIntegrationApis() {
       serviceName="Integration & APIs"
       serviceSlug="integration-apis"
       heroSubtitle="Connect systems to enable seamless data flow. Eliminate manual data transfer between applications and create unified processes."
-      heroImage="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-robot-factory.jpg"
       experienceStats={[
         { number: "100+", label: "Process Automation engagements delivered globally" },
         { number: "20-40%", label: "Typical performance improvement captured" },
@@ -52,14 +52,14 @@ export default function OperationsProcessAutomationIntegrationApis() {
           title: "Fintech Scales Payment Operations Without Headcount Growth",
           industry: "Financial Services · Operations",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-warehouse-robot.jpg",
         },
         {
           slug: "healthcare-patient-engagement",
           title: "Provider Network Lifts Patient Engagement with Digital Operations",
           industry: "Healthcare · Operations",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=1600&q=80",
+          image: "/images/industries/ops-gears.jpg",
         },
       ]}
       relatedServices={[

@@ -15,7 +15,8 @@ export default function ValueBasedPricing() {
       serviceName="Value-Based Pricing"
       serviceSlug="value-based-pricing"
       heroSubtitle="Price based on customer value rather than cost-plus. Quantify value drivers and develop pricing that reflects differentiated value."
-      heroImage="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
+      heroFocal="55% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Value-Based Pricing engagements delivered" },
@@ -70,14 +71,14 @@ export default function ValueBasedPricing() {
           title: "Fintech scales payment ops with intelligent automation",
           industry: "Fintech · Pricing & Monetization",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/industries/fin-monitors.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional bank automates KYC and onboarding",
           industry: "Financial Services · Pricing & Monetization",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-strategy-spheres.jpg",
         },
       ]}
       relatedServices={[

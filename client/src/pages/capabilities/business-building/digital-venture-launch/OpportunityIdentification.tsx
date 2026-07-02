@@ -15,7 +15,8 @@ export default function OpportunityIdentification() {
       serviceName="Opportunity Identification"
       serviceSlug="opportunity-identification"
       heroSubtitle="We analyze your market position, customer insights, and competitive landscape to identify high-potential venture opportunities aligned with your strategic assets."
-      heroImage="/images/digital-venture-abstract.jpg"
+      heroImage="/images/industries/biz-team-bright.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Opportunity Identification engagements delivered" },
@@ -70,14 +71,14 @@ export default function OpportunityIdentification() {
           title: "Healthcare Provider Launches Telehealth Venture",
           industry: "Healthcare · Business Building",
           metric: "5 Mo",
-          image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80",
+          image: "/images/capabilities/cap-venturing.jpg",
         },
         {
           slug: "wealth-adjacent",
           title: "Financial Services Firm Enters Adjacent Market",
           industry: "Financial Services · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1600&q=80",
+          image: "/images/capabilities/cap-lightbulb-idea.jpg",
         },
       ]}
       relatedServices={[

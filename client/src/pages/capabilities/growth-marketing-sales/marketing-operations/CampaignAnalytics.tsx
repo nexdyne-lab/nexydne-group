@@ -20,7 +20,7 @@ export default function CampaignAnalytics() {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-30"></div>
+        <div className="absolute inset-0 bg-[url('/images/capabilities/cap-coder.jpg')] bg-cover bg-center opacity-30"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-background"></div>
         
         <div className="container relative z-10 px-4 md:px-12">
@@ -343,25 +343,25 @@ export default function CampaignAnalytics() {
               {
                 title: "Beyond Last-Click: Modern Attribution Models",
                 description: "Why single-touch attribution fails and how multi-touch models reveal the true drivers of conversion.",
-                image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop",
+                image: "/images/capabilities/cap-conference-data.jpg",
                 link: "/insights/modern-attribution"
               },
               {
                 title: "The Metrics That Matter",
                 description: "Cutting through vanity metrics to identify the KPIs that actually predict business outcomes.",
-                image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2670&auto=format&fit=crop",
+                image: "/images/industries/meeting-topview.jpg",
                 link: "/insights/metrics-that-matter"
               },
               {
                 title: "Building a Data-Driven Marketing Culture",
                 description: "How to move from gut-feel decision making to evidence-based optimization.",
-                image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=2670&auto=format&fit=crop",
+                image: "/images/capabilities/cap-hands-data.jpg",
                 link: "/insights/data-driven-culture"
               },
               {
                 title: "Privacy-First Analytics in 2026",
                 description: "Adapting your measurement strategy for a cookieless world without losing insight.",
-                image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?q=80&w=2670&auto=format&fit=crop",
+                image: "/images/capabilities/cap-team-screens.jpg",
                 link: "/insights/privacy-first-analytics"
               }
             ].map((item, index) => (
@@ -428,19 +428,19 @@ export default function CampaignAnalytics() {
             title: "Marketing Operations",
             category: "Capability",
             link: "/capabilities/growth-marketing-sales/marketing-operations",
-            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-data-presentation.jpg"
           },
           {
             title: "Marketing ROI",
             category: "Capability",
             link: "/capabilities/growth-marketing-sales/marketing-operations/marketing-roi",
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-coder.jpg"
           },
           {
             title: "Data Integration & Dashboards",
             category: "Capability",
             link: "/capabilities/growth-marketing-sales/marketing-operations/data-integration-dashboards",
-            image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80"
+            image: "/images/capabilities/cap-conference-data.jpg"
           }
         ]}
       />

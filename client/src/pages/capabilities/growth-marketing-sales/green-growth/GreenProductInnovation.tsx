@@ -15,7 +15,8 @@ export default function GreenProductInnovation() {
       serviceName="Green Product Innovation"
       serviceSlug="green-product-innovation"
       heroSubtitle="Design sustainable products and services that meet customer needs. Develop go-to-market strategies for green offerings."
-      heroImage="https://images.unsplash.com/photo-1473773508845-188df298d2d1?w=1600&q=80"
+      heroImage="/images/industries/energy-solar.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Green Product Innovation engagements delivered" },
@@ -70,14 +71,14 @@ export default function GreenProductInnovation() {
           title: "Consultancy unlocks 30 years of IP with AI knowledge graph",
           industry: "Professional Services · Green Growth",
           metric: "4x",
-          image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=80",
+          image: "/images/industries/energy-wind.jpg",
         },
         {
           slug: "legal-document-intelligence",
           title: "In-house legal team builds doc intelligence platform",
           industry: "Legal Services · Green Growth",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80",
+          image: "/images/industries/energy-renewable-team.jpg",
         },
       ]}
       relatedServices={[

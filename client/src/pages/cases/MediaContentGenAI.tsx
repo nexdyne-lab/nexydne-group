@@ -7,7 +7,7 @@ export function MediaContentGenAI() {
       industry="Media · AI & Machine Learning"
       title="Media Network Automates Content Creation with GenAI"
       subtitle="Automated generation of summaries, social clips, and localized subtitles reduced post-production time by 70%."
-      heroImage="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=1600&q=80"
+      heroImage="/images/industries/tech-datacenter.jpg"
       challenge={`A global media network produced thousands of hours of video content weekly but struggled to repurpose it effectively for different platforms and regions. Manually creating social media clips, writing summaries, and translating subtitles was a slow, labor-intensive process that created bottlenecks and delayed content distribution.
 
 They needed a way to scale their content operations without linearly scaling headcount, ensuring that every piece of content reached its maximum potential audience immediately after broadcast.`}

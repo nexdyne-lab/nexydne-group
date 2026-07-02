@@ -54,14 +54,14 @@ export default function TechnologyDueDiligence() {
           title: "Diligence on a vertical SaaS platform repriced the deal by 18 percent and cleared the IC the same week",
           industry: "Private Equity",
           metric: "-18% reprice",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-aerial-grid.jpg",
         },
         {
           slug: "accounting-audit-automation",
           title: "Acquisition diligence flags 11 integration risks that converted into condition-precedent triggers",
           industry: "Strategic M&A",
           metric: "11 triggers",
-          image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1600&q=80",
+          image: "/images/capabilities/cap-dome-blue.jpg",
         },
       ]}
       relatedServices={[

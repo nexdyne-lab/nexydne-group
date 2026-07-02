@@ -15,7 +15,8 @@ export default function ProductMarketFitAnalysis() {
       serviceName="Product-Market Fit Analysis"
       serviceSlug="product-market-fit-analysis"
       heroSubtitle="Know whether your product truly fits the market before scaling. We assess fit across value proposition, target segment, and competitive positioning."
-      heroImage="/images/product-strategy-abstract.jpg"
+      heroImage="/images/capabilities/cap-hands-data.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Product-Market Fit Analysis engagements delivered" },
@@ -70,14 +71,14 @@ export default function ProductMarketFitAnalysis() {
           title: "Professional Services Firm Builds SaaS Product",
           industry: "Professional Services · Business Building",
           metric: "$3.2M",
-          image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1600&q=80",
+          image: "/images/capabilities/cap-3d-printing.jpg",
         },
         {
           slug: "wealth-adjacent",
           title: "Financial Services Firm Enters Adjacent Market",
           industry: "Financial Services · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1600&q=80",
+          image: "/images/capabilities/cap-tablet-woman.jpg",
         },
       ]}
       relatedServices={[

@@ -15,7 +15,8 @@ export default function PredictiveAnalytics() {
       serviceName="Predictive Analytics & Forecasting"
       serviceSlug="predictive-analytics"
       heroSubtitle="Layer machine-learning forecasts and scenario models on top of your KPI framework so leadership debates next-quarter trade-offs with probabilistic ranges, not best-guess point estimates."
-      heroImage="/images/performance-intelligence-abstract.jpg"
+      heroImage="/images/industries/ops-monitors-dark.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Predictive Analytics & Forecasting engagements delivered" },
@@ -70,7 +71,7 @@ export default function PredictiveAnalytics() {
           title: "Logistics Company Builds Technology Spin-Off",
           industry: "Logistics · Business Building",
           metric: "$28M",
-          image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
       ]}
       relatedServices={[

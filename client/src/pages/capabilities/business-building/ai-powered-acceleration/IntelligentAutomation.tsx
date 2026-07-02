@@ -15,7 +15,8 @@ export default function IntelligentAutomation() {
       serviceName="Intelligent Automation"
       serviceSlug="intelligent-automation"
       heroSubtitle="Automate complex processes that were previously impossible. Document processing, decision support, and workflow automation powered by AI."
-      heroImage="/images/ai-acceleration-abstract.jpg"
+      heroImage="/images/capabilities/cap-data-presentation.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Intelligent Automation engagements delivered" },
@@ -70,7 +71,7 @@ export default function IntelligentAutomation() {
           title: "Logistics Company Builds Technology Spin-Off",
           industry: "Logistics · Business Building",
           metric: "$28M",
-          image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1600&q=80",
+          image: "/images/capabilities/cap-circuit-green.jpg",
         },
       ]}
       relatedServices={[

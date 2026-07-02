@@ -11,7 +11,7 @@ export default function StrategyCorporateFinanceAiPoweredFinanceAiAssistedBudget
       serviceName="AI-Assisted Budgeting"
       serviceSlug="ai-assisted-budgeting"
       heroSubtitle="Build smarter budgets faster. AI analyzes historical patterns, market trends, and operational drivers to generate baseline forecasts that your team can refine and validate."
-      heroImage="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=2400"
+      heroImage="/images/capabilities/cap-chess.jpg"
       experienceStats={[
         { number: "100+", label: "AI-Powered Finance engagements delivered for mid-market and growth companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
@@ -52,7 +52,7 @@ export default function StrategyCorporateFinanceAiPoweredFinanceAiAssistedBudget
           title: "Health System Unlocks Population Health Insights With Unified Data Platform",
           industry: "Healthcare · Strategy",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
         },
       ]}
       relatedServices={[

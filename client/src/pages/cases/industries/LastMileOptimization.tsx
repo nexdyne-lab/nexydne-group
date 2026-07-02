@@ -11,7 +11,7 @@ export default function LastMileOptimization() {
       industryLink="/industries/transportation-logistics"
       title="Delivery Company Reduces Last-Mile Costs 30% with AI"
       subtitle="How machine learning models optimize routes, schedules, and capacity in real-time, transforming the economics of last-mile delivery."
-      heroImage="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=1920&q=80"
+      heroImage="/images/capabilities/cap-conference-data.jpg"
       metrics={[
         { value: "30%", label: "Cost Reduction" },
         { value: "98%", label: "On-Time Delivery" },
@@ -111,14 +111,14 @@ export default function LastMileOptimization() {
           metric: "18%",
           label: "cost reduction",
           link: "/cases/freight-optimization",
-          image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80"
+          image: "/images/industries/meeting-topview.jpg"
         },
         {
           title: "Warehouse Automation",
           metric: "45%",
           label: "productivity improvement",
           link: "/cases/warehouse-automation",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&q=80"
+          image: "/images/capabilities/cap-data-bars.jpg"
         }
       ]}
       ctaTitle="Ready to Optimize Last-Mile?"

@@ -11,7 +11,7 @@ export default function FreightOptimization() {
       industryLink="/industries/transportation-logistics"
       title="Logistics Company Reduces Freight Costs 18% with AI Optimization"
       subtitle="How machine learning models optimize routing, consolidation, and mode selection across a complex freight network."
-      heroImage="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&q=80"
+      heroImage="/images/industries/retail-warehouse.jpg"
       metrics={[
         { value: "18%", label: "Cost Reduction" },
         { value: "95%", label: "On-Time Delivery" },
@@ -111,14 +111,14 @@ export default function FreightOptimization() {
           metric: "45%",
           label: "productivity improvement",
           link: "/cases/warehouse-automation",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&q=80"
+          image: "/images/capabilities/cap-warehouse-robot.jpg"
         },
         {
           title: "Last-Mile Delivery Optimization",
           metric: "30%",
           label: "cost reduction",
           link: "/cases/last-mile-optimization",
-          image: "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=600&q=80"
+          image: "/images/industries/transport-bridge.jpg"
         }
       ]}
       ctaTitle="Ready to Optimize Your Network?"

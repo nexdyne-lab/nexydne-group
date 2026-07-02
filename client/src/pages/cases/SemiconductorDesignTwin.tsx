@@ -7,7 +7,7 @@ export function SemiconductorDesignTwin() {
       industry="Semiconductor · Digital Twins"
       title="Chipmaker Accelerates Design Cycles with Digital Twins"
       subtitle="Virtual simulation of manufacturing processes improved yield and reduced time-to-market for next-gen processors."
-      heroImage="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=80"
+      heroImage="/images/industries/mfg-robotics.jpg"
       challenge={`A leading semiconductor manufacturer faced diminishing returns in Moore's Law. Developing new 3nm process nodes was becoming exponentially expensive and time-consuming. Physical prototyping cycles took months, and minor design flaws discovered late in the process cost millions in re-tooling and lost market opportunity.
 
 They needed a way to simulate the entire fabrication process virtually, allowing engineers to test and optimize designs before committing to silicon.`}

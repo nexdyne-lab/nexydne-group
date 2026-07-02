@@ -7,7 +7,7 @@ export function LogisticsColdChain() {
       industry="Logistics · IoT"
       title="Pharma Logistics Firm Ensures Product Safety with IoT Cold Chain"
       subtitle="Real-time temperature monitoring and predictive alerts reduced spoilage by 90% for sensitive vaccine shipments, saving $5M annually in insurance costs."
-      heroImage="https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=1600&q=80"
+      heroImage="/images/industries/retail-warehouse.jpg"
       challenge={`A global logistics provider specializing in pharmaceuticals faced strict regulatory requirements for transporting temperature-sensitive vaccines and biologics. Even minor temperature excursions could ruin an entire shipment, costing millions and endangering public health. Their existing data loggers only provided retrospective data—telling them a shipment was spoiled only after it arrived.
 
 They needed a real-time monitoring solution that could alert drivers and dispatchers to temperature deviations immediately, allowing for corrective action before spoilage occurred.`}

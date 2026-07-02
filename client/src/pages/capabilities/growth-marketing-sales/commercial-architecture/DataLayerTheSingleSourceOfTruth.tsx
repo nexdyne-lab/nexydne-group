@@ -15,7 +15,8 @@ export default function DataLayerTheSingleSourceOfTruth() {
       serviceName="Data Layer: The Single Source of Truth"
       serviceSlug="data-layer-the-single-source-of-truth"
       heroSubtitle="Just as a software application relies on a consistent database, your commercial organization needs a unified data model."
-      heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80"
+      heroImage="/images/capabilities/cap-3d-printing.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Data Layer: The Single Source of Truth engagements delivered" },
@@ -70,14 +71,14 @@ export default function DataLayerTheSingleSourceOfTruth() {
           title: "Accounting firm modernizes audit workflows",
           industry: "Professional Services · Commercial Architecture",
           metric: "40%",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/industries/meeting-topview.jpg",
         },
         {
           slug: "law-firm-contract-automation",
           title: "Law firm slashes contract review with secure GenAI",
           industry: "Legal Services · Commercial Architecture",
           metric: "50%",
-          image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=1600&q=80",
+          image: "/images/capabilities/cap-hands-data.jpg",
         },
       ]}
       relatedServices={[

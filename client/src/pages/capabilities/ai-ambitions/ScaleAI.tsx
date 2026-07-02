@@ -22,7 +22,7 @@ const caseStudies: CaseStudy[] = [
     company: "Global Bank",
     title: "Enterprise AI Platform Enables 200+ Use Cases Across Business Units",
     description: "A global bank built a centralized AI platform that democratized access to machine learning, enabling business units to deploy models independently while maintaining governance.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+    image: "/images/industries/tech-glasses.jpg"
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const caseStudies: CaseStudy[] = [
     company: "National Retailer",
     title: "AI Center of Excellence Drives $500M in Annual Value",
     description: "A national retailer established an AI CoE that standardized tools, training, and deployment processes, enabling rapid scaling of AI initiatives across merchandising, supply chain, and customer experience.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
+    image: "/images/capabilities/cap-ai-search.jpg",
     hasVideo: true
   },
   {
@@ -39,7 +39,7 @@ const caseStudies: CaseStudy[] = [
     company: "Health System",
     title: "Federated Learning Scales AI Across 50 Hospital Network",
     description: "A health system deployed federated learning to train AI models across their network while keeping patient data local, achieving scale without compromising privacy.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop"
+    image: "/images/capabilities/cap-hologram.jpg"
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const caseStudies: CaseStudy[] = [
     company: "Industrial Conglomerate",
     title: "MLOps Platform Reduces Model Deployment Time from Months to Days",
     description: "A manufacturing conglomerate implemented enterprise MLOps, standardizing the path from data science experiments to production deployments across 40 factories.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
+    image: "/images/capabilities/cap-circuit-green.jpg",
     hasVideo: true
   }
 ];
@@ -57,19 +57,19 @@ const insights = [
     category: "AI, Insights, and Solutions",
     title: "From Pilot to Production: The AI Scaling Playbook",
     description: "Why most AI pilots fail to scale and what successful organizations do differently.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
+    image: "/images/industries/tech-datacenter.jpg"
   },
   {
     category: "Technology",
     title: "Building the AI-Ready Organization",
     description: "The operating model changes required to scale AI across the enterprise.",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
+    image: "/images/capabilities/cap-coder.jpg"
   },
   {
     category: "Digital",
     title: "The Economics of Enterprise AI: Making the Business Case",
     description: "How to measure and communicate the value of AI investments at scale.",
-    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=300&fit=crop"
+    image: "/images/capabilities/cap-conference-data.jpg"
   }
 ];
 

@@ -15,7 +15,8 @@ export default function IntelligentDocumentProcessing() {
       serviceName="Intelligent Document Processing"
       serviceSlug="intelligent-document-processing"
       heroSubtitle="Extract data from invoices, contracts, and forms using AI-powered document understanding. Handle unstructured data at scale. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-process-mining.50313a07.jpg"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Intelligent Document Processing engagements delivered" },

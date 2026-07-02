@@ -15,7 +15,8 @@ export default function BaselineAssessment() {
       serviceName="Baseline Assessment"
       serviceSlug="baseline-assessment"
       heroSubtitle="We establish current state performance across key business dimensions and compare against industry benchmarks. This phase identifies performance gaps, quantifies improvement opportunities, and establishes the diagnostic foundation."
-      heroImage="/images/performance-intelligence-abstract.jpg"
+      heroImage="/images/capabilities/cap-data-bars.jpg"
+      heroFocal="50% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Baseline Assessment engagements delivered" },
@@ -70,7 +71,7 @@ export default function BaselineAssessment() {
           title: "Financial Services Firm Enters Adjacent Market",
           industry: "Financial Services · Business Building",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
       ]}
       relatedServices={[

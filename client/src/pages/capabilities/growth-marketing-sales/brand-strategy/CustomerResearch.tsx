@@ -15,7 +15,8 @@ export default function CustomerResearch() {
       serviceName="Customer Research"
       serviceSlug="customer-research"
       heroSubtitle="Understand what drives customer decisions through qualitative and quantitative research. Build segmentation and persona frameworks."
-      heroImage="https://images.unsplash.com/photo-1493612276216-ee3925520721?w=1600&q=80"
+      heroImage="/images/capabilities/cap-diverse-team.jpg"
+      heroFocal="50% 45%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Customer Research engagements delivered" },
@@ -70,14 +71,14 @@ export default function CustomerResearch() {
           title: "Consultancy unlocks 30 years of IP with AI knowledge graph",
           industry: "Professional Services · Brand Strategy",
           metric: "4x",
-          image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=80",
+          image: "/images/capabilities/cap-conference-data.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional bank automates KYC and onboarding",
           industry: "Financial Services · Brand Strategy",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-mobile-woman.jpg",
         },
       ]}
       relatedServices={[

@@ -15,7 +15,8 @@ export default function DynamicContent() {
       serviceName="Dynamic Content"
       serviceSlug="dynamic-content"
       heroSubtitle="Create content systems that enable personalization at scale. Develop modular content, dynamic templates, and automated assembly."
-      heroImage="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1600&q=80"
+      heroImage="/images/capabilities/cap-mobile-woman.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Dynamic Content engagements delivered" },
@@ -70,14 +71,14 @@ export default function DynamicContent() {
           title: "Provider boosts patient engagement with omnichannel touch",
           industry: "Healthcare · Personalization at Scale",
           metric: "60%",
-          image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1600&q=80",
+          image: "/images/capabilities/cap-circuit-green.jpg",
         },
         {
           slug: "wealth-management-automation",
           title: "Wealth manager personalizes onboarding for HNW clients",
           industry: "Wealth Management · Personalization at Scale",
           metric: "3x",
-          image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80",
+          image: "/images/capabilities/cap-data-presentation.jpg",
         },
       ]}
       relatedServices={[

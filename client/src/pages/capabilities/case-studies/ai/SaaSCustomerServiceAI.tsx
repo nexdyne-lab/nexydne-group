@@ -7,7 +7,7 @@ export function SaaSCustomerServiceAI() {
       industry="Technology · Artificial Intelligence"
       title="Customer Service AI Scales Support for Growing SaaS Company"
       subtitle="How a B2B SaaS company implemented AI to handle 60% of support tickets automatically while improving customer satisfaction."
-      heroImage="https://images.unsplash.com/photo-1553484771-371a605b060b?w=1600&q=80"
+      heroImage="/images/capabilities/cap-office-women.jpg"
       challenge={`Support ticket volume had tripled in 18 months while the team only grew by 50%. Average response time had increased from 2 hours to 8 hours. Customer satisfaction scores were declining. The company needed to scale support without proportionally scaling headcount.
 
 A B2B SaaS company with 120 employees serves 2,000+ business customers with project management software and was experiencing rapid growth that strained their support team. Analysis of 50,000 historical tickets revealed that 70% of inquiries fell into predictable categories: password resets and account access issues (25%), feature usage questions (30%), billing inquiries (15%), and complex technical issues or escalations requiring human judgment (30%).`}

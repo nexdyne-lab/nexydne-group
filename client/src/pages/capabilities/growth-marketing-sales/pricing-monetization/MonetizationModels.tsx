@@ -15,7 +15,8 @@ export default function MonetizationModels() {
       serviceName="Monetization Models"
       serviceSlug="monetization-models"
       heroSubtitle="Design monetization strategies for new business models. Develop subscription, usage-based, and hybrid pricing approaches."
-      heroImage="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Monetization Models engagements delivered" },
@@ -70,14 +71,14 @@ export default function MonetizationModels() {
           title: "Fintech scales payment ops with intelligent automation",
           industry: "Fintech · Pricing & Monetization",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/capabilities/cap-strategy-spheres.jpg",
         },
         {
           slug: "bank-process-automation",
           title: "Regional bank automates KYC and onboarding",
           industry: "Financial Services · Pricing & Monetization",
           metric: "70%",
-          image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&q=80",
+          image: "/images/capabilities/cap-presenting-graphs.jpg",
         },
       ]}
       relatedServices={[

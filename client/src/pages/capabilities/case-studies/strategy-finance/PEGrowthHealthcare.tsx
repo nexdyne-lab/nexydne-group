@@ -7,7 +7,7 @@ export function PEGrowthHealthcare() {
       industry="Healthcare · Strategy & Finance"
       title="Private Equity-Backed Growth: From $40M to $120M Revenue"
       subtitle="How a healthcare services company executed a comprehensive post-acquisition growth strategy to triple revenue in 18 months."
-      heroImage="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80"
+      heroImage="/case-healthcare-team.5797392b.jpg"
       challenge={`Following acquisition by a PE sponsor, the company faced pressure to execute an aggressive growth plan. The existing management team had deep clinical expertise but limited experience with rapid scaling.
 
 A 150-employee healthcare services company backed by a mid-market private equity firm operates across three states with a focus on home health and hospice services. The comprehensive diagnostic revealed interconnected barriers: financial close processes taking 15+ days making it impossible to respond quickly to performance issues, no standardized KPIs across locations preventing meaningful performance comparison, sales relying on the founder's personal network with no documented processes or CRM, and an understaffed billing and collections function leaving significant revenue uncollected.`}

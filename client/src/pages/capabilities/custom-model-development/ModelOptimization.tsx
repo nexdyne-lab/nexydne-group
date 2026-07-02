@@ -15,7 +15,8 @@ export default function ModelOptimization() {
       serviceName="Model Optimization"
       serviceSlug="model-optimization"
       heroSubtitle="Reduce inference costs and latency through quantization, pruning, distillation, and architecture optimization. Deploy efficient models at scale. Our team brings engineering depth, design sensibility, and operating-model rigor to make this capability durable, measurable, and trusted across your business."
-      heroImage="/blog-data-workstation.e374b2a9.jpg"
+      heroImage="/images/capabilities/cap-battery-factory.jpg"
+      heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Model Optimization engagements delivered" },
@@ -68,7 +69,7 @@ export default function ModelOptimization() {
           title: "Scaling a fintech payment platform with AI-driven automation",
           industry: "Financial Services",
           metric: "5x",
-          image: "/case-fintech-app.5835303a.png",
+          image: "/images/capabilities/cap-coder.jpg",
         },
       ]}
       relatedServices={[

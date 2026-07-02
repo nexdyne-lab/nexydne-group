@@ -7,7 +7,7 @@ export function TechABM() {
       industry="Technology · Growth Marketing"
       title="Account-Based Marketing Lands Enterprise Clients"
       subtitle="How a technology company implemented ABM to successfully move upmarket and win enterprise deals."
-      heroImage="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1600&q=80"
+      heroImage="/images/industries/tech-datacenter.jpg"
       challenge={`The company's inbound marketing approach wasn't reaching enterprise decision-makers. Larger companies had longer, more complex buying cycles. Multiple stakeholders needed to be engaged and aligned. The sales team lacked the relationships and credibility to access C-suite executives.
 
 A 140-employee technology company with $42M in annual revenue sells workflow automation software to mid-size businesses and wanted to expand into enterprise accounts. The company's inbound-heavy go-to-market worked well for mid-market buyers who self-educated and requested demos, but enterprise buying processes were fundamentally different: longer timelines, committee decisions, and an expectation of proactive outreach rather than passive content consumption.`}

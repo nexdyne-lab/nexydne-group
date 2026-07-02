@@ -15,7 +15,8 @@ export default function PortfolioOptimization() {
       serviceName="Portfolio Optimization"
       serviceSlug="portfolio-optimization"
       heroSubtitle="Optimize your product and service portfolio for growth and profitability. Identify opportunities to expand, rationalize, or reposition offerings."
-      heroImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=80"
+      heroImage="/images/capabilities/cap-chess.jpg"
+      heroFocal="45% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Portfolio Optimization engagements delivered" },
@@ -70,14 +71,14 @@ export default function PortfolioOptimization() {
           title: "Fintech scales payment ops with intelligent automation",
           industry: "Fintech · Growth Strategy",
           metric: "5x",
-          image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1600&q=80",
+          image: "/images/capabilities/cap-telescope.jpg",
         },
         {
           slug: "consulting-knowledge-management",
           title: "Consultancy unlocks 30 years of IP with AI knowledge graph",
           industry: "Professional Services · Growth Strategy",
           metric: "4x",
-          image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=80",
+          image: "/images/capabilities/cap-lightbulb-idea.jpg",
         },
       ]}
       relatedServices={[

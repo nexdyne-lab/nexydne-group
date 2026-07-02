@@ -7,7 +7,7 @@ export function FinancialInstitutionAutomation() {
       industry="Banking & Financial Services · Intelligent Automation"
       title="Automating 90% of Loan Processing Workflows"
       subtitle="A leading regional bank transformed their lending operations through intelligent document processing and workflow automation, dramatically reducing processing time while improving accuracy and compliance."
-      heroImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80"
+      heroImage="/images/industries/fin-monitors.jpg"
       challenge={`A regional bank with $45 billion in assets was struggling with manual loan processing that took an average of 5-7 business days. With over 50,000 loan applications processed annually across consumer, commercial, and mortgage products, the manual review process was consuming substantial resources while creating customer dissatisfaction. Average processing time of 5-7 business days put the bank at a competitive disadvantage against digital-first lenders offering same-day decisions.
 
 The existing process required loan officers to manually review dozens of documents per application, cross-reference information across multiple systems, and navigate complex compliance requirements. This manual approach resulted in inconsistent decisions, with error rates approaching 15% and significant variation in processing times depending on individual workloads. More than 200 full-time employees were dedicated solely to document processing tasks.

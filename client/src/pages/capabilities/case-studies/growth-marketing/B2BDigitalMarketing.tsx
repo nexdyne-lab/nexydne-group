@@ -7,7 +7,7 @@ export function B2BDigitalMarketing() {
       industry="Professional Services · Growth Marketing"
       title="Digital Marketing Transformation Doubles Lead Generation"
       subtitle="How a B2B services company modernized their marketing to double lead volume while reducing customer acquisition costs."
-      heroImage="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1600&q=80"
+      heroImage="/images/capabilities/cap-mobile-woman.jpg"
       challenge={`The company's traditional marketing approach was no longer sufficient to support growth targets. Referrals were declining as key contacts retired or changed roles. Event-based marketing was expensive and unpredictable. The marketing team lacked digital capabilities, and the website generated fewer than 50 leads per month.
 
 A 150-employee B2B professional services company with $45M in annual revenue had relied primarily on referrals and events for lead generation. The diagnostic revealed a marketing function that had underinvested in digital capabilities for years: an outdated website not optimized for search engines, content limited to service descriptions with no thought leadership, sporadic email marketing not integrated with the CRM, and minimal social media presence.`}

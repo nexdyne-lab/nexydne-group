@@ -7,7 +7,7 @@ export function RetailPersonalization() {
       industry="Retail · AI Personalization"
       title="National Retailer Drives 34% Revenue Lift with AI Personalization"
       subtitle="Real-time recommendation engine increases conversion rates by 42% and average order value by 27% across digital channels through machine learning-powered product suggestions."
-      heroImage="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1600&q=80"
+      heroImage="/images/capabilities/cap-retail-apparel.jpg"
       challenge={`A national specialty retailer with 450 stores and $2.8 billion in annual revenue faced a critical digital commerce challenge. Despite investing heavily in e-commerce infrastructure, their online conversion rate lagged industry benchmarks by 35%, and average order value remained stubbornly flat year-over-year. The core problem: a one-size-fits-all digital experience that failed to recognize individual customer preferences, purchase history, or browsing behavior.
 
 The retailer's existing recommendation system relied on basic collaborative filtering—showing customers "products others bought" without considering individual context, seasonality, or real-time signals. This generic approach produced irrelevant suggestions that customers ignored, leading to abandoned carts and missed cross-sell opportunities. Meanwhile, competitors with sophisticated personalization engines were capturing market share by delivering tailored experiences that drove engagement and revenue.

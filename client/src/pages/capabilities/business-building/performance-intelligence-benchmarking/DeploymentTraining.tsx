@@ -15,7 +15,8 @@ export default function DeploymentTraining() {
       serviceName="Deployment & Training"
       serviceSlug="deployment-training"
       heroSubtitle="We deploy performance-intelligence systems, train teams on interpretation and usage, and establish governance processes for ongoing measurement and reporting."
-      heroImage="/images/performance-intelligence-abstract.jpg"
+      heroImage="/images/industries/fin-monitors.jpg"
+      heroFocal="60% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
         { number: "40+", label: "Deployment & Training engagements delivered" },
@@ -70,7 +71,7 @@ export default function DeploymentTraining() {
           title: "Regional Distributor Launches Digital Marketplace",
           industry: "Distribution · Business Building",
           metric: "$50M+",
-          image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600&q=80",
+          image: "/images/capabilities/cap-data-bars.jpg",
         },
       ]}
       relatedServices={[
