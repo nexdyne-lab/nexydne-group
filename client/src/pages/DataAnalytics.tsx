@@ -248,7 +248,7 @@ export default function DataAnalytics() {
           
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 max-w-4xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/data-solutions/data-platform" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 bg-white h-full">
                 <h3 className="text-xl font-bold mb-4 text-charcoal group-hover:text-primary transition-colors">
                   Data Platform
                 </h3>
@@ -263,7 +263,7 @@ export default function DataAnalytics() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/data-solutions/data-training" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 bg-white h-full">
                 <h3 className="text-xl font-bold mb-4 text-charcoal group-hover:text-primary transition-colors">
                   Data Training
                 </h3>

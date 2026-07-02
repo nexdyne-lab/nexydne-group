@@ -410,7 +410,7 @@ export default function CaseStudyLegalDocIntel() {
                   <h3 className="text-xl font-semibold text-white mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
-                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
+                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-[gap]">
                     Read case study <ArrowRight className="w-3 h-3" />
                   </span>
                 </Link>
@@ -420,7 +420,7 @@ export default function CaseStudyLegalDocIntel() {
 
           <div className="text-center mt-16">
             <Link href="/cases">
-              <Button variant="outline" className="border-border text-white hover:bg-white/10 px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all bg-transparent">
+              <Button variant="outline" className="border-border text-white hover:bg-white/10 px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition bg-transparent">
                 <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
                 Back to all case studies
               </Button>

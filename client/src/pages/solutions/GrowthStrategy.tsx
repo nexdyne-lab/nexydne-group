@@ -176,7 +176,7 @@ export default function GrowthStrategy() {
             The market waits for no one. Let's build a growth strategy that positions you for long-term success.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
-            <Button className="bg-primary text-primary-foreground hover:bg-primary-hover rounded-full px-10 py-6 text-lg font-bold shadow-xl transition-all duration-200 ease-in-out hover:scale-105">
+            <Button className="bg-primary text-primary-foreground hover:bg-primary-hover rounded-full px-10 py-6 text-lg font-bold shadow-xl transition duration-200 ease-in-out hover:scale-105">
               Schedule a Strategy Session
             </Button>
           </div>

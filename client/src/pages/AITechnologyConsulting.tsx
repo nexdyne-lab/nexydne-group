@@ -252,7 +252,7 @@ export default function AITechnologyConsulting() {
       {/* On-page Navigation */}
       {/* <div 
         ref={navRef}
-        className={`bg-white border-b border-border transition-all duration-300 ${
+        className={`bg-white border-b border-border transition duration-300 ${
           isNavSticky ? "sticky top-[72px] z-40 shadow-sm" : ""
         }`}
       >
@@ -560,7 +560,7 @@ export default function AITechnologyConsulting() {
                 className="group"
               >
                 <Link href={service.link}>
-                  <div className="bg-white rounded-xl p-8 h-full border border-border/50 hover:shadow-lg hover:border-border transition-all cursor-pointer">
+                  <div className="bg-white rounded-xl p-8 h-full border border-border/50 hover:shadow-lg hover:border-border transition cursor-pointer">
                     <div className="w-12 h-12 bg-subtle rounded-lg flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
                       <service.icon className="w-6 h-6 text-charcoal group-hover:text-white transition-colors" />
                     </div>

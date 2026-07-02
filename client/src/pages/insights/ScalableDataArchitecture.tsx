@@ -309,7 +309,7 @@ export default function ScalableDataArchitecture() {
               Let's discuss how to build a scalable data platform for your organization.
             </p>
             <Link href="/contact">
-              <Button className="bg-primary hover:bg-primary/90 text-charcoal px-10 py-6 text-lg font-semibold transition-all">
+              <Button className="bg-primary hover:bg-primary/90 text-charcoal px-10 py-6 text-lg font-semibold transition">
                 Schedule a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>

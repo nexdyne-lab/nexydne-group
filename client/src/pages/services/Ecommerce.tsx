@@ -72,7 +72,7 @@ export default function Ecommerce() {
             {/* Left: Contact Person */}
             <div>
               <h2 className="text-2xl md:text-3xl font-['EB Garamond',serif] font-bold mb-6 md:mb-8 text-charcoal">Services</h2>
-              <Card className="p-6 md:p-8 bg-white/10 backdrop-blur-sm border-secondary/30 shadow-xl hover:shadow-2xl hover:shadow-secondary/20 transition-all">
+              <Card className="p-6 md:p-8 bg-white/10 backdrop-blur-sm border-secondary/30 shadow-xl hover:shadow-2xl hover:shadow-secondary/20 transition">
                 <div className="flex flex-col sm:flex-row items-start gap-6">
                   <div className="relative flex-shrink-0">
                     <div className="absolute -inset-1 bg-secondary rounded-full blur-md opacity-50"></div>
@@ -160,14 +160,14 @@ export default function Ecommerce() {
             <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8 max-w-3xl">
               Heard of a business that transforms unique business challenges into exceptional outcomes? That'd be us. Check out these inspiring cases.
             </p>
-            <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-base transition-all w-full sm:w-auto">
+            <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-base transition w-full sm:w-auto">
               All cases
             </Button>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {/* Case 1 */}
-            <Card className="overflow-hidden hover:shadow-2xl hover:shadow-secondary/20 transition-all group bg-white/10 backdrop-blur-sm border-secondary/20 hover:-translate-y-1 rounded-xl">
+            <Card className="overflow-hidden hover:shadow-2xl hover:shadow-secondary/20 transition group bg-white/10 backdrop-blur-sm border-secondary/20 hover:-translate-y-1 rounded-xl">
               <div className="relative overflow-hidden h-48 md:h-56 -m-[1px]">
                 <img 
                   src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600" 
@@ -182,7 +182,7 @@ export default function Ecommerce() {
                 <p className="text-sm text-muted-foreground mb-4 flex-grow">
                   RAI Amsterdam optimises stand management and enhances the experience of its exhibitors with a digital solution developed by NEXDYNE
                 </p>
-                <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-base transition-all w-fit" size="sm">
+                <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-base transition w-fit" size="sm">
                   Learn more
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -190,7 +190,7 @@ export default function Ecommerce() {
             </Card>
 
             {/* Case 2 */}
-            <Card className="overflow-hidden hover:shadow-2xl hover:shadow-secondary/20 transition-all group bg-white/10 backdrop-blur-sm border-secondary/20 hover:-translate-y-1 rounded-xl">
+            <Card className="overflow-hidden hover:shadow-2xl hover:shadow-secondary/20 transition group bg-white/10 backdrop-blur-sm border-secondary/20 hover:-translate-y-1 rounded-xl">
               <div className="relative overflow-hidden h-48 md:h-56 -m-[1px]">
                 <img 
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" 
@@ -205,7 +205,7 @@ export default function Ecommerce() {
                 <p className="text-sm text-muted-foreground mb-4 flex-grow">
                   As a strategic digital partner to Nieuwkoop-Europe BV, a leader in the indoor landscaping market, we helped build a new e-commerce platform for B2B...
                 </p>
-                <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-base transition-all w-fit" size="sm">
+                <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-base transition w-fit" size="sm">
                   Learn more
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -213,7 +213,7 @@ export default function Ecommerce() {
             </Card>
 
             {/* Case 3 */}
-            <Card className="overflow-hidden hover:shadow-2xl hover:shadow-secondary/20 transition-all group bg-white/10 backdrop-blur-sm border-secondary/20 hover:-translate-y-1 rounded-xl">
+            <Card className="overflow-hidden hover:shadow-2xl hover:shadow-secondary/20 transition group bg-white/10 backdrop-blur-sm border-secondary/20 hover:-translate-y-1 rounded-xl">
               <div className="relative overflow-hidden h-48 md:h-56 -m-[1px]">
                 <img 
                   src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600" 
@@ -228,7 +228,7 @@ export default function Ecommerce() {
                 <p className="text-sm text-muted-foreground mb-4 flex-grow">
                   Discover how we developed a seamless e-commerce solution for Kluwer products in accounting and tax
                 </p>
-                <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-base transition-all w-fit" size="sm">
+                <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-base transition w-fit" size="sm">
                   Learn more
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -247,7 +247,7 @@ export default function Ecommerce() {
             <p className="text-base md:text-lg text-charcoal/80 mb-6 md:mb-8">
               With these partners we realize outstanding ecommerce solutions.
             </p>
-            <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all w-full sm:w-auto">
+            <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition w-full sm:w-auto">
               All partners
             </Button>
           </div>
@@ -259,9 +259,9 @@ export default function Ecommerce() {
               "Intershop",
               "Shopware"
             ].map((partner) => (
-              <Card key={partner} className="p-6 md:p-8 flex flex-col items-center justify-center hover:shadow-xl transition-all border-border hover:border-secondary/30 group cursor-pointer bg-white relative overflow-hidden h-32 md:h-40">
-                <div className="absolute inset-0 bg-gradient-to-br from-secondary/0 to-secondary/0 group-hover:from-secondary/5 group-hover:to-secondary/10 transition-all duration-300" />
-                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-base group-hover:text-secondary transition-all duration-300 relative z-10 text-center">
+              <Card key={partner} className="p-6 md:p-8 flex flex-col items-center justify-center hover:shadow-xl transition border-border hover:border-secondary/30 group cursor-pointer bg-white relative overflow-hidden h-32 md:h-40">
+                <div className="absolute inset-0 bg-gradient-to-br from-secondary/0 to-secondary/0 group-hover:from-secondary/5 group-hover:to-secondary/10 transition duration-300" />
+                <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-base group-hover:text-secondary transition duration-300 relative z-10 text-center">
                   {partner}
                 </h3>
               </Card>

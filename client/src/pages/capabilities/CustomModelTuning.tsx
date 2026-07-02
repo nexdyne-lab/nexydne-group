@@ -69,11 +69,11 @@ export default function CustomModelTuning() {
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <Link href="/contact">
-                <Button className="bg-primary hover:bg-primary/90 text-charcoal px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all">
+                <Button className="bg-primary hover:bg-primary/90 text-charcoal px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition">
                   Start Tuning
                 </Button>
               </Link>
-              <Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all bg-transparent">
+              <Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition bg-transparent">
                 See Benchmarks
               </Button>
             </div>
@@ -294,7 +294,7 @@ export default function CustomModelTuning() {
                 <Link href={item.link} className="block">
                   <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors flex items-center gap-2">
                     {item.title}
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 opacity-0 group-hover:opacity-100 transition -translate-x-2 group-hover:translate-x-0" />
                   </h3>
                 </Link>
                 <p className="text-muted-foreground leading-relaxed mb-4">
@@ -369,7 +369,7 @@ export default function CustomModelTuning() {
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                 className="group flex flex-col h-full"
               >
-                <div className="mb-6 p-4 bg-charcoal/5 w-fit rounded-lg sm:rounded-xl text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                <div className="mb-6 p-4 bg-charcoal/5 w-fit rounded-lg sm:rounded-xl text-primary group-hover:bg-primary group-hover:text-white transition duration-300">
                   {item.icon}
                 </div>
                 <h4 className="text-2xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">{item.title}</h4>
@@ -422,7 +422,7 @@ export default function CustomModelTuning() {
                   }
                 ].map((step, i) => (
                   <div key={i} className="flex gap-4 sm:p-5 md:p-6 group">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary font-bold group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center text-primary font-bold group-hover:bg-primary group-hover:text-white transition duration-300">
                       {i + 1}
                     </div>
                     <div>
@@ -484,7 +484,7 @@ export default function CustomModelTuning() {
               Stop renting intelligence from big tech. Start building your own asset today.
             </p>
             <Link href="/contact">
-              <Button className="bg-white text-primary hover:bg-white/90 px-10 py-6 text-lg font-bold transition-all">
+              <Button className="bg-white text-primary hover:bg-white/90 px-10 py-6 text-lg font-bold transition">
                 Consult an ML Engineer
               </Button>
             </Link>

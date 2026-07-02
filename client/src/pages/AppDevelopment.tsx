@@ -73,7 +73,7 @@ export default function AppDevelopment() {
           
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 max-w-6xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/app-development/low-code" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
                   <Zap className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
                   <h3 className="text-xl font-bold text-charcoal group-hover:text-primary transition-colors">
@@ -91,7 +91,7 @@ export default function AppDevelopment() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/custom-software" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
                   <Code className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
                   <h3 className="text-xl font-bold text-charcoal group-hover:text-primary transition-colors">
@@ -109,7 +109,7 @@ export default function AppDevelopment() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/service-portals" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
                   <Globe className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
                   <h3 className="text-xl font-bold text-charcoal group-hover:text-primary transition-colors">
@@ -127,7 +127,7 @@ export default function AppDevelopment() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/it-modernization" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 bg-white h-full">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 bg-white h-full">
                 <div className="flex items-start mb-4">
                   <Smartphone className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
                   <h3 className="text-xl font-bold text-charcoal group-hover:text-primary transition-colors">
@@ -159,7 +159,7 @@ export default function AppDevelopment() {
           
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 max-w-6xl mx-auto">
             <Link href="/cases/tkb-modernization" className="group">
-              <div className="bg-white border-2 border-border hover:border-primary transition-all duration-300 overflow-hidden h-full">
+              <div className="bg-white border-2 border-border hover:border-primary transition duration-300 overflow-hidden h-full">
                 <div className="aspect-video bg-gradient-to-br from-primary to-primary"></div>
                 <div className="p-4 sm:p-6 md:p-8">
                   <p className="text-sm font-semibold text-primary mb-3">CASE STUDY</p>
@@ -178,7 +178,7 @@ export default function AppDevelopment() {
             </Link>
 
             <Link href="/cases/payter-platform" className="group">
-              <div className="bg-white border-2 border-border hover:border-primary transition-all duration-300 overflow-hidden h-full">
+              <div className="bg-white border-2 border-border hover:border-primary transition duration-300 overflow-hidden h-full">
                 <div className="aspect-video bg-gradient-to-br from-primary to-primary"></div>
                 <div className="p-4 sm:p-6 md:p-8">
                   <p className="text-sm font-semibold text-primary mb-3">CASE STUDY</p>
@@ -197,7 +197,7 @@ export default function AppDevelopment() {
             </Link>
 
             <Link href="/cases/sanquin-digital" className="group">
-              <div className="bg-white border-2 border-border hover:border-primary transition-all duration-300 overflow-hidden h-full">
+              <div className="bg-white border-2 border-border hover:border-primary transition duration-300 overflow-hidden h-full">
                 <div className="aspect-video bg-gradient-to-br from-red-100 to-pink-100"></div>
                 <div className="p-4 sm:p-6 md:p-8">
                   <p className="text-sm font-semibold text-primary mb-3">CASE STUDY</p>
@@ -216,7 +216,7 @@ export default function AppDevelopment() {
             </Link>
 
             <Link href="/cases/rai-amsterdam" className="group">
-              <div className="bg-white border-2 border-border hover:border-primary transition-all duration-300 overflow-hidden h-full">
+              <div className="bg-white border-2 border-border hover:border-primary transition duration-300 overflow-hidden h-full">
                 <div className="aspect-video bg-gradient-to-br from-purple-100 to-violet-100"></div>
                 <div className="p-4 sm:p-6 md:p-8">
                   <p className="text-sm font-semibold text-primary mb-3">CASE STUDY</p>

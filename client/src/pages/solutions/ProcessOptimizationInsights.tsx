@@ -211,7 +211,7 @@ export default function ProcessOptimizationInsights() {
                 <button
                   key={type}
                   onClick={() => setSelectedType(type)}
-                  className={`px-4 py-2 rounded-lg font-medium transition-all flex items-center gap-2 ${
+                  className={`px-4 py-2 rounded-lg font-medium transition flex items-center gap-2 ${
                     selectedType === type
                       ? "bg-primary text-charcoal"
                       : "bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-white border border-border"
@@ -233,7 +233,7 @@ export default function ProcessOptimizationInsights() {
             <div className="flex flex-wrap gap-2">
               <button
                 onClick={() => setSelectedTag(null)}
-                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                className={`px-3 py-1.5 rounded-full text-sm font-medium transition ${
                   selectedTag === null
                     ? "bg-white text-charcoal"
                     : "bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-white border border-border"
@@ -245,7 +245,7 @@ export default function ProcessOptimizationInsights() {
                 <button
                   key={tag}
                   onClick={() => setSelectedTag(tag)}
-                  className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                  className={`px-3 py-1.5 rounded-full text-sm font-medium transition ${
                     selectedTag === tag
                       ? "bg-white text-charcoal"
                       : "bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-white border border-border"
@@ -270,7 +270,7 @@ export default function ProcessOptimizationInsights() {
               transition={{ duration: 0.6 }}
             >
               <Link href={insightPosts[0].url}>
-                <div className="group grid md:grid-cols-2 gap-8 lg:gap-16 items-center bg-white/5 rounded-2xl overflow-hidden hover:bg-white/[0.07] transition-all duration-300">
+                <div className="group grid md:grid-cols-2 gap-8 lg:gap-16 items-center bg-white/5 rounded-2xl overflow-hidden hover:bg-white/[0.07] transition duration-300">
                   <div className="aspect-[16/10] overflow-hidden">
                     <img 
                       src={insightPosts[0].image} 
@@ -301,7 +301,7 @@ export default function ProcessOptimizationInsights() {
                         {insightPosts[0].readTime}
                       </span>
                     </div>
-                    <span className="text-primary font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">
+                    <span className="text-primary font-semibold flex items-center gap-2 group-hover:gap-3 transition-[gap]">
                       Read article <ArrowRight className="w-4 h-4" />
                     </span>
                   </div>
@@ -326,7 +326,7 @@ export default function ProcessOptimizationInsights() {
               >
                 <Link href={post.url}>
                   <div className="group cursor-pointer h-full">
-                    <div className="bg-white border border-border rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col hover:border-primary/30">
+                    <div className="bg-white border border-border rounded-xl overflow-hidden hover:shadow-xl transition duration-300 h-full flex flex-col hover:border-primary/30">
                       {/* Image */}
                       <div className="relative aspect-video overflow-hidden bg-charcoal/5">
                         <img 
@@ -421,12 +421,12 @@ export default function ProcessOptimizationInsights() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
-                <Button className="bg-white text-primary hover:bg-white/90 px-8 py-6 text-base font-semibold transition-all hover:scale-[1.02] hover:shadow-lg">
+                <Button className="bg-white text-primary hover:bg-white/90 px-8 py-6 text-base font-semibold transition hover:scale-[1.02] hover:shadow-lg">
                   Schedule a Consultation
                 </Button>
               </Link>
               <Link href="/solutions/intelligent-process-optimization/case-studies">
-                <Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
+                <Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-8 py-6 text-base font-semibold transition bg-transparent">
                   View Case Studies
                 </Button>
               </Link>

@@ -331,13 +331,13 @@ export default function ProcessFlowAI() {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Link href="/contact">
-                <span className="inline-flex items-center justify-center px-8 py-4 bg-white text-charcoal font-semibold rounded-full hover:bg-subtle transition-all cursor-pointer group">
+                <span className="inline-flex items-center justify-center px-8 py-4 bg-white text-charcoal font-semibold rounded-full hover:bg-subtle transition cursor-pointer group">
                   Schedule a Demo
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Link>
               <Link href="/capabilities/ai-technology-consulting">
-                <span className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all cursor-pointer">
+                <span className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition cursor-pointer">
                   Explore All Accelerators
                 </span>
               </Link>

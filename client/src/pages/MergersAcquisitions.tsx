@@ -176,8 +176,8 @@ export default function MergersAcquisitions() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group"
               >
-                <div className="h-full flex flex-col p-4 sm:p-6 md:p-8 bg-white rounded-lg sm:rounded-xl border border-border hover:border-primary/50 transition-all duration-300">
-                  <div className="mb-6 p-3 bg-charcoal/5 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                <div className="h-full flex flex-col p-4 sm:p-6 md:p-8 bg-white rounded-lg sm:rounded-xl border border-border hover:border-primary/50 transition duration-300">
+                  <div className="mb-6 p-3 bg-charcoal/5 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition duration-300">
                     {item.icon}
                   </div>
 
@@ -279,7 +279,7 @@ export default function MergersAcquisitions() {
               </h2>
             </motion.div>
             <Link href="/cases">
-              <Button variant="outline" className="border-border text-charcoal hover:bg-charcoal/5 bg-transparent transition-all duration-300 hover:scale-[1.02]">
+              <Button variant="outline" className="border-border text-charcoal hover:bg-charcoal/5 bg-transparent transition duration-300 hover:scale-[1.02]">
                 View all case studies
               </Button>
             </Link>
@@ -384,14 +384,14 @@ export default function MergersAcquisitions() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={service.link} className="group block h-full">
-                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-background border border-border hover:bg-charcoal transition-all duration-500 hover:scale-[1.02] hover:shadow-xl">
+                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-background border border-border hover:bg-charcoal transition duration-500 hover:scale-[1.02] hover:shadow-xl">
                     <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-white transition-colors">
                       {service.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed text-sm mb-6 group-hover:text-white/70 transition-colors">
                       {service.description}
                     </p>
-                    <div className="flex items-center text-primary text-sm font-semibold group-hover:text-white group-hover:translate-x-2 transition-all duration-300">
+                    <div className="flex items-center text-primary text-sm font-semibold group-hover:text-white group-hover:translate-x-2 transition duration-300">
                       Learn more <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4" />
                     </div>
                   </div>

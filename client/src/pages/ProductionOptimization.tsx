@@ -186,7 +186,7 @@ export default function ProductionOptimization() {
                 className="group"
               >
                 <div className="h-full flex flex-col bg-white border border-border p-6 rounded-lg sm:rounded-xl">
-                  <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                  <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition duration-300">
                     {item.icon}
                   </div>
 
@@ -280,7 +280,7 @@ export default function ProductionOptimization() {
               </h2>
             </motion.div>
             <Link href="/cases">
-              <Button variant="outline" className="border-border text-charcoal hover:bg-background bg-transparent transition-all duration-300 hover:scale-[1.02]">
+              <Button variant="outline" className="border-border text-charcoal hover:bg-background bg-transparent transition duration-300 hover:scale-[1.02]">
                 View all case studies
               </Button>
             </Link>

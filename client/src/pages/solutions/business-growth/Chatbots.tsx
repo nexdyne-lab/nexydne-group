@@ -98,9 +98,9 @@ export default function Chatbots() {
                 ].map((benefit, index) => (
                   <Card 
                     key={index}
-                    className="p-8 hover:shadow-xl transition-all border-border hover:border-secondary/30 group cursor-pointer bg-white relative overflow-hidden"
+                    className="p-8 hover:shadow-xl transition border-border hover:border-secondary/30 group cursor-pointer bg-white relative overflow-hidden"
                   >
-                    <div className="absolute inset-0 bg-gradient-to-br from-secondary/0 to-secondary/0 group-hover:from-secondary/5 group-hover:to-secondary/10 transition-all duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-secondary/0 to-secondary/0 group-hover:from-secondary/5 group-hover:to-secondary/10 transition duration-300" />
                     <div className="flex gap-6 relative z-10">
                       <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                         {benefit.icon}
@@ -216,9 +216,9 @@ export default function Chatbots() {
               "Intershop",
               "Shopware"
             ].map((partner) => (
-              <Card key={partner} className="p-8 flex flex-col items-center justify-center hover:shadow-xl transition-all border-border hover:border-secondary/30 group cursor-pointer bg-white relative overflow-hidden h-40">
-                <div className="absolute inset-0 bg-gradient-to-br from-secondary/0 to-secondary/0 group-hover:from-secondary/5 group-hover:to-secondary/10 transition-all duration-300" />
-                <h3 className="text-2xl font-bold text-base group-hover:text-secondary transition-all duration-300 relative z-10">
+              <Card key={partner} className="p-8 flex flex-col items-center justify-center hover:shadow-xl transition border-border hover:border-secondary/30 group cursor-pointer bg-white relative overflow-hidden h-40">
+                <div className="absolute inset-0 bg-gradient-to-br from-secondary/0 to-secondary/0 group-hover:from-secondary/5 group-hover:to-secondary/10 transition duration-300" />
+                <h3 className="text-2xl font-bold text-base group-hover:text-secondary transition duration-300 relative z-10">
                   {partner}
                 </h3>
               </Card>

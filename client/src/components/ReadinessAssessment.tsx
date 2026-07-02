@@ -74,7 +74,7 @@ export default function ReadinessAssessment({
             {!isComplete && (
               <div className="absolute top-0 left-0 w-full h-1 bg-white/10">
                 <div 
-                  className="h-full bg-secondary transition-all duration-500 ease-out"
+                  className="h-full bg-secondary transition duration-500 ease-out"
                   style={{ width: `${((currentStep + 1) / questions.length) * 100}%` }}
                 />
               </div>
@@ -92,7 +92,7 @@ export default function ReadinessAssessment({
                     <button
                       key={idx}
                       onClick={() => handleOptionSelect(questions[currentStep].id, option.value)}
-                      className="w-full text-left p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-secondary/50 transition-all group flex items-center justify-between"
+                      className="w-full text-left p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-secondary/50 transition group flex items-center justify-between"
                     >
                       <span className="text-muted-foreground group-hover:text-white font-medium">{option.label}</span>
                       <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-white/20 group-hover:text-secondary transition-colors" />

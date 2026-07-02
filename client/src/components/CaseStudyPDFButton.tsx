@@ -105,7 +105,7 @@ export function CaseStudyPDFButton({
         <button
           onClick={handleDownloadClick}
           disabled={isGenerating}
-          className={`group inline-flex items-center gap-3 px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed ${className}`}
+          className={`group inline-flex items-center gap-3 px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg text-white transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed ${className}`}
         >
           {isGenerating ? (
             <Loader2 className="w-4 h-4 sm:w-5 sm:h-5 animate-spin" />

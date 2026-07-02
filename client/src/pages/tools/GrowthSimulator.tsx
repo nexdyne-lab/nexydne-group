@@ -159,7 +159,7 @@ export default function GrowthSimulator() {
                       <button
                         key={ind.id}
                         onClick={() => setIndustry(ind)}
-                        className={`px-4 py-3 rounded-xl text-left text-sm font-medium transition-all border ${
+                        className={`px-4 py-3 rounded-xl text-left text-sm font-medium transition border ${
                           industry.id === ind.id 
                             ? "bg-secondary/10 border-secondary text-secondary" 
                             : "bg-background border-border text-muted-foreground/70 hover:border-border"
@@ -174,7 +174,7 @@ export default function GrowthSimulator() {
                 <button 
                   onClick={handleSimulate}
                   disabled={isSimulating}
-                  className="w-full py-4 bg-secondary text-base font-bold rounded-xl hover:bg-white transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full py-4 bg-secondary text-base font-bold rounded-xl hover:bg-white transition flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSimulating ? (
                     <>

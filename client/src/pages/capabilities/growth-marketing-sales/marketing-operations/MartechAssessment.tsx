@@ -46,12 +46,12 @@ export default function MartechAssessment() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
-                <Button className="bg-primary hover:bg-primary/90 text-charcoal px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all">
+                <Button className="bg-primary hover:bg-primary/90 text-charcoal px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition">
                   Request a Stack Audit
                 </Button>
               </Link>
               <Link href="/cases">
-                <Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition-all bg-transparent">
+                <Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-base font-semibold transition bg-transparent">
                   View Case Studies
                 </Button>
               </Link>
@@ -166,8 +166,8 @@ export default function MartechAssessment() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group"
               >
-                <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-border hover:border-primary/50 transition-all duration-300 hover:bg-white/10">
-                  <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-border hover:border-primary/50 transition duration-300 hover:bg-white/10">
+                  <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition duration-300">
                     {item.icon}
                   </div>
                   <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
@@ -228,7 +228,7 @@ export default function MartechAssessment() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group"
               >
-                <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-charcoal/5 hover:bg-charcoal transition-all duration-500 hover:scale-[1.02]">
+                <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-charcoal/5 hover:bg-charcoal transition duration-500 hover:scale-[1.02]">
                   <div className="text-4xl font-bold text-primary mb-2 group-hover:text-white transition-colors">
                     {item.metric}
                   </div>
@@ -293,8 +293,8 @@ export default function MartechAssessment() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={item.link} className="group block h-full">
-                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-border hover:border-primary/50 transition-all duration-300 hover:bg-white/10">
-                    <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-border hover:border-primary/50 transition duration-300 hover:bg-white/10">
+                    <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition duration-300">
                       {item.icon}
                     </div>
                     <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
@@ -332,7 +332,7 @@ export default function MartechAssessment() {
               </h2>
             </motion.div>
             <Link href="/insights">
-              <Button variant="outline" className="border-border text-charcoal hover:bg-charcoal/10 transition-all duration-300 hover:scale-[1.02]">
+              <Button variant="outline" className="border-border text-charcoal hover:bg-charcoal/10 transition duration-300 hover:scale-[1.02]">
                 View all insights
               </Button>
             </Link>
@@ -387,7 +387,7 @@ export default function MartechAssessment() {
                   <p className="text-charcoal/60 text-sm leading-relaxed mb-4">
                     {item.description}
                   </p>
-                  <span className="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                  <span className="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-[gap]">
                     Read more <ArrowRight className="w-3 h-3" />
                   </span>
                 </Link>
@@ -414,7 +414,7 @@ export default function MartechAssessment() {
               Let's audit your current technology ecosystem and build a roadmap for a unified, high-performing marketing stack.
             </p>
             <Link href="/contact">
-              <Button className="bg-primary hover:bg-primary/90 text-charcoal px-10 py-6 text-lg font-semibold transition-all hover:scale-[1.02] hover:shadow-lg hover:shadow-primary/20">
+              <Button className="bg-primary hover:bg-primary/90 text-charcoal px-10 py-6 text-lg font-semibold transition hover:scale-[1.02] hover:shadow-lg hover:shadow-primary/20">
                 Request a Stack Audit
               </Button>
             </Link>

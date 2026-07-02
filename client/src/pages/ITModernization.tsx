@@ -179,8 +179,8 @@ export default function ITModernization() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group"
               >
-                <div className="p-4 sm:p-6 md:p-8 bg-charcoal/5 rounded-lg sm:rounded-xl hover:bg-charcoal transition-all duration-500 hover:scale-[1.02] hover:shadow-xl h-full">
-                  <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                <div className="p-4 sm:p-6 md:p-8 bg-charcoal/5 rounded-lg sm:rounded-xl hover:bg-charcoal transition duration-500 hover:scale-[1.02] hover:shadow-xl h-full">
+                  <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition duration-300">
                     {item.icon}
                   </div>
                   
@@ -322,8 +322,8 @@ export default function ITModernization() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={item.link} className="group block h-full">
-                  <div className="h-full flex flex-col p-4 sm:p-6 md:p-8 bg-charcoal/5 rounded-lg sm:rounded-xl hover:bg-charcoal transition-all duration-500 hover:scale-[1.02] hover:shadow-xl">
-                    <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                  <div className="h-full flex flex-col p-4 sm:p-6 md:p-8 bg-charcoal/5 rounded-lg sm:rounded-xl hover:bg-charcoal transition duration-500 hover:scale-[1.02] hover:shadow-xl">
+                    <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition duration-300">
                       {item.icon}
                     </div>
                     
@@ -335,7 +335,7 @@ export default function ITModernization() {
                       {item.description}
                     </p>
                     
-                    <div className="mt-6 flex items-center text-primary text-sm font-semibold opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                    <div className="mt-6 flex items-center text-primary text-sm font-semibold opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition duration-300">
                       Learn more <ArrowRight className="ml-2 w-3 h-3 sm:w-4 sm:h-4" />
                     </div>
                   </div>
@@ -364,7 +364,7 @@ export default function ITModernization() {
               </h2>
             </motion.div>
             <Link href="/cases">
-              <Button variant="outline" className="border-border text-charcoal hover:bg-background bg-transparent transition-all duration-300 hover:scale-[1.02]">
+              <Button variant="outline" className="border-border text-charcoal hover:bg-background bg-transparent transition duration-300 hover:scale-[1.02]">
                 View all case studies
               </Button>
             </Link>
@@ -529,7 +529,7 @@ export default function ITModernization() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={capability.link} className="group block h-full">
-                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300 hover:bg-background">
+                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-background border border-border hover:border-primary/50 transition duration-300 hover:bg-background">
                     <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-2">{capability.title}</div>
                     <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
                       {capability.subtitle}

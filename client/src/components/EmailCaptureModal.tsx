@@ -187,7 +187,7 @@ export function EmailCaptureModal({
                           value={formData.email}
                           onChange={handleInputChange}
                           placeholder="you@company.com"
-                          className={`w-full pl-10 pr-4 py-3 border rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all ${
+                          className={`w-full pl-10 pr-4 py-3 border rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition ${
                             errors.email ? 'border-primary' : 'border-base/20'
                           }`}
                         />
@@ -211,7 +211,7 @@ export function EmailCaptureModal({
                             value={formData.firstName}
                             onChange={handleInputChange}
                             placeholder="John"
-                            className="w-full pl-10 pr-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all"
+                            className="w-full pl-10 pr-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition"
                           />
                         </div>
                       </div>
@@ -225,7 +225,7 @@ export function EmailCaptureModal({
                           value={formData.lastName}
                           onChange={handleInputChange}
                           placeholder="Smith"
-                          className="w-full px-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all"
+                          className="w-full px-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition"
                         />
                       </div>
                     </div>
@@ -243,7 +243,7 @@ export function EmailCaptureModal({
                           value={formData.company}
                           onChange={handleInputChange}
                           placeholder="Acme Inc."
-                          className="w-full pl-10 pr-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all"
+                          className="w-full pl-10 pr-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition"
                         />
                       </div>
                     </div>
@@ -261,7 +261,7 @@ export function EmailCaptureModal({
                           value={formData.jobTitle}
                           onChange={handleInputChange}
                           placeholder="VP of Operations"
-                          className="w-full pl-10 pr-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition-all"
+                          className="w-full pl-10 pr-4 py-3 border border-base/20 rounded-lg text-charcoal placeholder:text-charcoal/40 focus:outline-none focus:ring-2 focus:ring-[#0077B5] transition"
                         />
                       </div>
                     </div>

@@ -266,7 +266,7 @@ export default function SeriesAFundraisingGuide() {
                     {item.title}
                   </h3>
                   <p className="text-muted-foreground mt-2">{item.description}</p>
-                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
+                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-[gap]">
                     Read article <ArrowRight className="w-3 h-3" />
                   </span>
                 </Link>

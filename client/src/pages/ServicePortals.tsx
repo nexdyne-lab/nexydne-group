@@ -184,7 +184,7 @@ export default function ServicePortals() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-7xl mx-auto">
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Users className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Customer Self-Service</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -192,7 +192,7 @@ export default function ServicePortals() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Globe className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Partner Portals</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -200,7 +200,7 @@ export default function ServicePortals() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Shield className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Employee Portals</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -208,7 +208,7 @@ export default function ServicePortals() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <BarChart3 className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Vendor Management</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -216,7 +216,7 @@ export default function ServicePortals() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <TrendingUp className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Support Ticketing</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -224,7 +224,7 @@ export default function ServicePortals() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Clock className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Subscription Management</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -247,7 +247,7 @@ export default function ServicePortals() {
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-6xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/app-development/low-code" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 h-full bg-white">
                 <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   Low-Code Development
                 </h3>
@@ -262,7 +262,7 @@ export default function ServicePortals() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/custom-software" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 h-full bg-white">
                 <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   Custom Software
                 </h3>
@@ -277,7 +277,7 @@ export default function ServicePortals() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/it-modernization" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 h-full bg-white">
                 <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   IT Modernization
                 </h3>

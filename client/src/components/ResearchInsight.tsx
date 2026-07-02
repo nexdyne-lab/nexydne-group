@@ -48,7 +48,7 @@ export function ResearchInsight({
             return (
               <div
                 key={index}
-                className="bg-gradient-to-br from-off-white to-white border border-border rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 hover:shadow-lg transition-all duration-300 hover:border-primary"
+                className="bg-gradient-to-br from-off-white to-white border border-border rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 hover:shadow-lg transition duration-300 hover:border-primary"
               >
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-primary flex items-center justify-center mb-4">
                   <Icon className="w-6 h-6 text-white" />

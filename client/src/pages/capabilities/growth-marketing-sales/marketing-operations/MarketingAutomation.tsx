@@ -104,7 +104,7 @@ export default function MarketingAutomation() {
           <h2 className="text-3xl font-bold text-base mb-6 sm:mb-8 md:mb-12 eb-garamond">
             Enterprise-Grade Platform Expertise
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:p-6 md:p-8 items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:p-6 md:p-8 items-center opacity-70 grayscale hover:grayscale-0 transition duration-500">
             {/* Placeholder for logos - using text for now */}
             <div className="text-2xl font-bold text-muted-foreground/70 hover:text-primary">HubSpot</div>
             <div className="text-2xl font-bold text-muted-foreground/70 hover:text-secondary">Marketo</div>

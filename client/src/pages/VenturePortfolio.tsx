@@ -127,7 +127,7 @@ export default function VenturePortfolio() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group relative bg-white border border-border rounded-xl sm:rounded-2xl overflow-hidden hover:border-primary/50 hover:shadow-xl transition-all duration-500 flex flex-col"
+                className="group relative bg-white border border-border rounded-xl sm:rounded-2xl overflow-hidden hover:border-primary/50 hover:shadow-xl transition duration-500 flex flex-col"
               >
                 {/* Image Header */}
                 <div className="h-48 overflow-hidden relative">

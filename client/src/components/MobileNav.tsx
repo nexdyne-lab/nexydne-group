@@ -47,7 +47,7 @@ function HamburgerButton({ isOpen, onClick, isScrolled }: HamburgerButtonProps) 
       <div className="relative w-6 h-5 flex flex-col justify-between">
         {/* Top line */}
         <span
-          className={`block h-0.5 w-6 rounded-full transform transition-all duration-300 ease-out ${
+          className={`block h-0.5 w-6 rounded-full transform transition duration-300 ease-out ${
             isScrolled ? 'bg-white' : 'bg-charcoal'
           } ${
             isOpen 
@@ -57,7 +57,7 @@ function HamburgerButton({ isOpen, onClick, isScrolled }: HamburgerButtonProps) 
         />
         {/* Middle line */}
         <span
-          className={`block h-0.5 w-6 rounded-full transform transition-all duration-200 ease-out ${
+          className={`block h-0.5 w-6 rounded-full transform transition duration-200 ease-out ${
             isScrolled ? 'bg-white' : 'bg-charcoal'
           } ${
             isOpen 
@@ -67,7 +67,7 @@ function HamburgerButton({ isOpen, onClick, isScrolled }: HamburgerButtonProps) 
         />
         {/* Bottom line */}
         <span
-          className={`block h-0.5 w-6 rounded-full transform transition-all duration-300 ease-out ${
+          className={`block h-0.5 w-6 rounded-full transform transition duration-300 ease-out ${
             isScrolled ? 'bg-white' : 'bg-charcoal'
           } ${
             isOpen 
@@ -173,7 +173,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
                 {/* Expertise Accordion */}
                 <AccordionItem 
                   value="expertise" 
-                  className={`border-white/10 transform transition-all duration-300 ${
+                  className={`border-white/10 transform transition duration-300 ${
                     isAnimating ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
                   }`}
                   style={{ transitionDelay: '50ms' }}
@@ -224,7 +224,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
                 {/* Industries Accordion */}
                 <AccordionItem 
                   value="industries" 
-                  className={`border-white/10 transform transition-all duration-300 ${
+                  className={`border-white/10 transform transition duration-300 ${
                     isAnimating ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
                   }`}
                   style={{ transitionDelay: '100ms' }}
@@ -251,7 +251,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
                 {/* Organization Accordion */}
                 <AccordionItem 
                   value="organization" 
-                  className={`border-white/10 transform transition-all duration-300 ${
+                  className={`border-white/10 transform transition duration-300 ${
                     isAnimating ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
                   }`}
                   style={{ transitionDelay: '150ms' }}
@@ -281,7 +281,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
               {/* Direct links with staggered animation */}
               <Link 
                 href="/capabilities" 
-                className={`block text-lg font-medium text-white hover:text-primary active:text-primary py-4 min-h-[52px] border-b border-white/10 transition-all duration-300 touch-manipulation ${
+                className={`block text-lg font-medium text-white hover:text-primary active:text-primary py-4 min-h-[52px] border-b border-white/10 transition duration-300 touch-manipulation ${
                   isAnimating ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
                 }`}
                 style={{ transitionDelay: '200ms' }}
@@ -292,7 +292,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
 
               <Link 
                 href="/cases" 
-                className={`block text-lg font-medium text-white hover:text-primary active:text-primary py-4 min-h-[52px] border-b border-white/10 transition-all duration-300 touch-manipulation ${
+                className={`block text-lg font-medium text-white hover:text-primary active:text-primary py-4 min-h-[52px] border-b border-white/10 transition duration-300 touch-manipulation ${
                   isAnimating ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
                 }`}
                 style={{ transitionDelay: '250ms' }}
@@ -306,7 +306,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
                   scrollToInitiatives(e);
                   onClose();
                 }}
-                className={`block w-full text-left text-lg font-medium text-white hover:text-primary active:text-primary py-4 min-h-[52px] border-b border-white/10 transition-all duration-300 touch-manipulation ${
+                className={`block w-full text-left text-lg font-medium text-white hover:text-primary active:text-primary py-4 min-h-[52px] border-b border-white/10 transition duration-300 touch-manipulation ${
                   isAnimating ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
                 }`}
                 style={{ transitionDelay: '300ms' }}
@@ -317,7 +317,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
 
             {/* CTA Button with animation */}
             <div 
-              className={`mt-6 transition-all duration-300 ${
+              className={`mt-6 transition duration-300 ${
                 isAnimating ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
               }`}
               style={{ transitionDelay: '350ms' }}
@@ -331,7 +331,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
 
             {/* Language selector with animation */}
             <div 
-              className={`flex items-center justify-center gap-2 text-sm font-medium text-white/70 mt-6 pt-6 border-t border-white/10 transition-all duration-300 ${
+              className={`flex items-center justify-center gap-2 text-sm font-medium text-white/70 mt-6 pt-6 border-t border-white/10 transition duration-300 ${
                 isAnimating ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
               }`}
               style={{ transitionDelay: '400ms' }}

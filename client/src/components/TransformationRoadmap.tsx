@@ -58,7 +58,7 @@ export function TransformationRoadmap({
                   <div className={`lg:grid lg:grid-cols-2 lg:gap-12 ${isEven ? '' : 'lg:flex-row-reverse'}`}>
                     {/* Content */}
                     <div className={`${isEven ? 'lg:text-right' : 'lg:col-start-2'} mb-8 lg:mb-0`}>
-                      <div className="bg-white border border-border rounded-lg p-4 sm:p-6 md:p-4 sm:p-6 md:p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                      <div className="bg-white border border-border rounded-lg p-4 sm:p-6 md:p-4 sm:p-6 md:p-8 shadow-sm hover:shadow-md transition duration-300">
                         {/* Phase Header */}
                         <div className="mb-4">
                           <div className="inline-block bg-gradient-to-r from-primary to-primary text-white text-sm font-bold px-4 py-1 rounded-full mb-3">
@@ -135,7 +135,7 @@ export function TransformationRoadmap({
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
               Our structured approach ensures predictable outcomes, minimized risk, and accelerated time-to-value.
             </p>
-            <button className="px-8 py-3 bg-gradient-to-r from-primary to-primary text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-500/50 transition-all">
+            <button className="px-8 py-3 bg-gradient-to-r from-primary to-primary text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-500/50 transition">
               Schedule a Roadmap Workshop
             </button>
           </div>

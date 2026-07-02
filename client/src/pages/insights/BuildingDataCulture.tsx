@@ -204,25 +204,25 @@ export default function BuildingDataCulture() {
                   <div className="flex gap-3">
                     <button 
                       onClick={() => handleShare('linkedin')}
-                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal/60 hover:text-primary hover:bg-primary/10 transition-all"
+                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal/60 hover:text-primary hover:bg-primary/10 transition"
                     >
                       <Linkedin className="w-5 h-5" />
                     </button>
                     <button 
                       onClick={() => handleShare('twitter')}
-                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal/60 hover:text-[#1DA1F2] hover:bg-[#1DA1F2]/10 transition-all"
+                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal/60 hover:text-[#1DA1F2] hover:bg-[#1DA1F2]/10 transition"
                     >
                       <Twitter className="w-5 h-5" />
                     </button>
                     <button 
                       onClick={() => handleShare('facebook')}
-                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal/60 hover:text-[#4267B2] hover:bg-[#4267B2]/10 transition-all"
+                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal/60 hover:text-[#4267B2] hover:bg-[#4267B2]/10 transition"
                     >
                       <Facebook className="w-5 h-5" />
                     </button>
                     <button 
                       onClick={() => handleShare('copy')}
-                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal/60 hover:text-primary hover:bg-primary/10 transition-all"
+                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-charcoal/60 hover:text-primary hover:bg-primary/10 transition"
                     >
                       <Link2 className="w-5 h-5" />
                     </button>
@@ -320,7 +320,7 @@ export default function BuildingDataCulture() {
                   <div className="flex items-center gap-2 text-sm text-charcoal/50">
                     <span>{article.readTime}</span>
                     <span>•</span>
-                    <span className="text-primary font-semibold inline-flex items-center group-hover:gap-1 transition-all">Read now <ArrowRight className="w-3.5 h-3.5 ml-1" /></span>
+                    <span className="text-primary font-semibold inline-flex items-center group-hover:gap-1 transition-[gap]">Read now <ArrowRight className="w-3.5 h-3.5 ml-1" /></span>
                   </div>
                 </Link>
               </motion.div>

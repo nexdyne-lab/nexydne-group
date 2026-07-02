@@ -154,7 +154,7 @@ export default function PackagingBundling() {
                   <img 
                     src="/images/case-study-saas.jpg" 
                     alt="SaaS Case Study" 
-                    className="w-full h-auto rounded-sm grayscale hover:grayscale-0 transition-all duration-500"
+                    className="w-full h-auto rounded-sm grayscale hover:grayscale-0 transition duration-500"
                   />
                 </div>
               </div>

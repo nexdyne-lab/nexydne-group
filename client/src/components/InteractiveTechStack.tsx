@@ -29,7 +29,7 @@ export default function InteractiveTechStack({
         
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-4 sm:p-6 md:p-8">
           {categories.map((category, index) => (
-            <div key={index} className="p-4 sm:p-6 md:p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 text-center hover:border-secondary/50 transition-all group">
+            <div key={index} className="p-4 sm:p-6 md:p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-xl sm:rounded-2xl bg-white/5 border border-white/10 text-center hover:border-secondary/50 transition group">
               <div className="text-2xl font-bold text-white mb-2 group-hover:text-secondary transition-colors">{category.title}</div>
               <p className="text-muted-foreground/70 text-sm mb-6">{category.description}</p>
               

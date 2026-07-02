@@ -154,7 +154,7 @@ export default function DynamicPricing() {
                   <img 
                     src="/images/case-study-logistics.jpg" 
                     alt="Logistics Case Study" 
-                    className="w-full h-auto rounded-sm grayscale hover:grayscale-0 transition-all duration-500"
+                    className="w-full h-auto rounded-sm grayscale hover:grayscale-0 transition duration-500"
                   />
                 </div>
               </div>

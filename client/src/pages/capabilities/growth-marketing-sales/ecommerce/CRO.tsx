@@ -156,7 +156,7 @@ export function CRO() {
             Get a complimentary CRO audit of your key conversion paths.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-4 bg-secondary text-base font-bold rounded-full hover:bg-white transition-all duration-300">
+            <button className="px-8 py-4 bg-secondary text-base font-bold rounded-full hover:bg-white transition duration-300">
               Request CRO Audit
             </button>
           </Link>

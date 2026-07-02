@@ -186,7 +186,7 @@ export default function IDP() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-7xl mx-auto">
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <FileText className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Invoices & Bills</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -194,7 +194,7 @@ export default function IDP() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <FileText className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Purchase Orders</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -202,7 +202,7 @@ export default function IDP() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <FileText className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Contracts & Agreements</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -210,7 +210,7 @@ export default function IDP() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <FileText className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Forms & Applications</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -218,7 +218,7 @@ export default function IDP() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <FileText className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Receipts & Expense Reports</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -226,7 +226,7 @@ export default function IDP() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <FileText className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Shipping & Logistics</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -295,7 +295,7 @@ export default function IDP() {
           
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 max-w-5xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/process-automation/rpa" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 h-full bg-white">
                 <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   Robotic Process Automation (RPA)
                 </h3>
@@ -310,7 +310,7 @@ export default function IDP() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/process-automation/ipaas" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 h-full bg-white">
                 <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   iPaaS (Integration Platform)
                 </h3>

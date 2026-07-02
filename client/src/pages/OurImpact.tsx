@@ -104,7 +104,7 @@ export default function OurImpact() {
               { t: "Market expansion", b: "Organisations enter new markets with data-backed confidence and strategic clarity." },
             ].map((c, i) => (
               <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: i * 0.08 }} className="group bg-white p-8 lg:p-10 hover:bg-subtle transition-colors">
-                <div className="h-[3px] w-8 bg-primary mb-5 transition-all duration-300 group-hover:w-12" />
+                <div className="h-[3px] w-8 bg-primary mb-5 transition-[width] duration-300 group-hover:w-12" />
                 <h3 className="nx-h3 text-charcoal mb-3">{c.t}</h3>
                 <p className="text-[15px] text-muted-foreground leading-relaxed">{c.b}</p>
               </motion.div>

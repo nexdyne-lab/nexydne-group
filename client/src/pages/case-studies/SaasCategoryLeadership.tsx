@@ -529,7 +529,7 @@ export default function SaasCategoryLeadership() {
                     {item.title}
                   </h3>
                   <p className="text-muted-foreground mt-2">{item.description}</p>
-                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
+                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-[gap]">
                     Read case study <ArrowRight className="w-3 h-3" />
                   </span>
                 </Link>
@@ -539,7 +539,7 @@ export default function SaasCategoryLeadership() {
 
           <div className="text-center mt-16">
             <Link href="/cases">
-              <Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-8 py-6 text-base font-semibold transition-all bg-transparent">
+              <Button variant="outline" className="border-border text-charcoal hover:bg-white/10 px-8 py-6 text-base font-semibold transition bg-transparent">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to all case studies
               </Button>

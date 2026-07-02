@@ -98,7 +98,7 @@ export default function PurposeMissionValues() {
               <div className="grid sm:grid-cols-2 gap-px bg-border border border-border">
                 {missionPillars.map((p, i) => (
                   <div key={i} className="group bg-white p-6 lg:p-7 hover:bg-subtle transition-colors">
-                    <div className="h-[3px] w-8 bg-primary mb-4 transition-all duration-300 group-hover:w-12" />
+                    <div className="h-[3px] w-8 bg-primary mb-4 transition-[width] duration-300 group-hover:w-12" />
                     <h3 className="nx-h3 text-charcoal mb-2">{p.title}</h3>
                     <p className="text-[14px] text-muted-foreground leading-relaxed">{p.body}</p>
                   </div>

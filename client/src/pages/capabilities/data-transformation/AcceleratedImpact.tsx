@@ -125,7 +125,7 @@ export default function AcceleratedImpact() {
             ].map((card, i) => (
               <div key={i} className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl sm:rounded-2xl" />
-                <Card className="h-full bg-background border-border group-hover:bg-white transition-all duration-300 relative overflow-hidden">
+                <Card className="h-full bg-background border-border group-hover:bg-white transition duration-300 relative overflow-hidden">
                   <CardContent className="p-4 sm:p-6 md:p-8 h-full flex flex-col">
                     <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-6 group-hover:bg-subtle transition-colors duration-300">
                       <Gauge className="w-6 h-6 text-secondary group-hover:text-primary transition-colors duration-300" />

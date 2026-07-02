@@ -210,7 +210,7 @@ export function BainHeroCarousel() {
                 <span className="group mt-11 inline-flex items-center gap-4 text-[13px] font-bold uppercase tracking-[0.16em] text-white cursor-pointer">
                   {slide.cta.text}
                   <span
-                    className="relative block h-[2px] w-14 transition-all duration-300 group-hover:w-20"
+                    className="relative block h-[2px] w-14 transition-[width] duration-300 group-hover:w-20"
                     style={{ backgroundColor: SIGNAL }}
                   >
                     <span

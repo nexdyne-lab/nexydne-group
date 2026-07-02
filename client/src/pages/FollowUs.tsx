@@ -84,7 +84,7 @@ export default function FollowUs() {
                   rel="noopener noreferrer"
                   className="block group"
                 >
-                  <div className="border border-border rounded-lg p-4 sm:p-6 md:p-8 hover:border-primary hover:shadow-lg transition-all duration-300">
+                  <div className="border border-border rounded-lg p-4 sm:p-6 md:p-8 hover:border-primary hover:shadow-lg transition duration-300">
                     <div className="flex flex-col md:flex-row md:items-start gap-4 sm:p-5 md:p-6">
                       {/* Icon */}
                       <div className="flex-shrink-0">
@@ -118,7 +118,7 @@ export default function FollowUs() {
 
                       {/* Arrow */}
                       <div className="flex-shrink-0 hidden md:block">
-                        <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-muted-foreground/50 group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                        <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-muted-foreground/50 group-hover:text-primary group-hover:translate-x-1 transition" />
                       </div>
                     </div>
                   </div>

@@ -140,7 +140,7 @@ export default function CaseStudyContactForm({ caseStudyTitle }: CaseStudyContac
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full md:w-auto px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg bg-gradient-to-r from-primary to-primary hover:from-primary hover:to-primary text-white font-semibold rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full md:w-auto px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg bg-gradient-to-r from-primary to-primary hover:from-primary hover:to-primary text-white font-semibold rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? "Sending..." : "Request Consultation"}
                   </Button>

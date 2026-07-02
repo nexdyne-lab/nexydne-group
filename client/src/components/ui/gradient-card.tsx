@@ -20,7 +20,7 @@ const GradientCard = React.forwardRef<HTMLDivElement, GradientCardProps>(
       <Card
         ref={ref}
         className={cn(
-          "relative overflow-hidden transition-all duration-300",
+          "relative overflow-hidden transition duration-300",
           "border-2 border-secondary/20 hover:border-secondary",
           "hover:shadow-2xl hover:shadow-secondary/30",
           hoverScale && "hover:scale-[1.02]",

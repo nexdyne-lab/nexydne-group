@@ -154,7 +154,7 @@ export default function DiscountOptimization() {
                   <img 
                     src="/images/case-study-retail.8af31c13.jpg" 
                     alt="Retail Case Study" 
-                    className="w-full h-auto rounded-sm grayscale hover:grayscale-0 transition-all duration-500"
+                    className="w-full h-auto rounded-sm grayscale hover:grayscale-0 transition duration-500"
                   />
                 </div>
               </div>

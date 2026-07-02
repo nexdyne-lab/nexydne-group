@@ -50,7 +50,7 @@ export function ProprietaryFramework({
             {phases.map((phase, index) => (
               <div key={index} className="relative">
                 {/* Phase Card */}
-                <div className="bg-charcoal border border-white/10 rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 hover:border-primary transition-all duration-300 h-full">
+                <div className="bg-charcoal border border-white/10 rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 hover:border-primary transition duration-300 h-full">
                   {/* Phase Number */}
                   <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-primary flex items-center justify-center mb-4 mx-auto">
                     <span className="text-2xl font-bold text-white">{phase.number}</span>
@@ -93,7 +93,7 @@ export function ProprietaryFramework({
           <p className="text-white/60 mb-6">
             Our proven methodology has delivered measurable results for leading organizations worldwide.
           </p>
-          <button className="px-8 py-3 bg-gradient-to-r from-primary to-primary text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-500/50 transition-all">
+          <button className="px-8 py-3 bg-gradient-to-r from-primary to-primary text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-cyan-500/50 transition">
             Learn More About Our Approach
           </button>
         </div>

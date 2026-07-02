@@ -194,7 +194,7 @@ export default function LowCodeDevelopment() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-7xl mx-auto">
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Code2 className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Custom CRM Systems</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -202,7 +202,7 @@ export default function LowCodeDevelopment() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Users className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Employee Portals</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -210,7 +210,7 @@ export default function LowCodeDevelopment() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Blocks className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Workflow Automation</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -218,7 +218,7 @@ export default function LowCodeDevelopment() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <DollarSign className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Field Service Apps</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -226,7 +226,7 @@ export default function LowCodeDevelopment() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <RefreshCw className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Partner Portals</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -234,7 +234,7 @@ export default function LowCodeDevelopment() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Zap className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Operational Dashboards</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -257,7 +257,7 @@ export default function LowCodeDevelopment() {
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-6xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/app-development/custom-software" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 h-full bg-white">
                 <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   Custom Software
                 </h3>
@@ -272,7 +272,7 @@ export default function LowCodeDevelopment() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/service-portals" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 h-full bg-white">
                 <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   Service Portals
                 </h3>
@@ -287,7 +287,7 @@ export default function LowCodeDevelopment() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/app-development/it-modernization" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 h-full bg-white">
                 <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   IT Modernization
                 </h3>

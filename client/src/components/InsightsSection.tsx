@@ -31,7 +31,7 @@ export function InsightsSection({ insights }: InsightsSectionProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:p-5 md:p-4 sm:p-5 md:p-6 mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
           {insights.map((insight, index) => (
             <Link key={index} href={insight.link}>
-              <a className="group block bg-charcoal/50 rounded-lg overflow-hidden border border-white/10 hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-[1.02]">
+              <a className="group block bg-charcoal/50 rounded-lg overflow-hidden border border-white/10 hover:border-primary/50 transition duration-300 hover:transform hover:scale-[1.02]">
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={insight.image}
@@ -61,7 +61,7 @@ export function InsightsSection({ insights }: InsightsSectionProps) {
 
         <div className="text-center">
           <Link href="/insights">
-            <a className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border-2 border-primary text-amber rounded-full font-semibold hover:bg-primary hover:text-charcoal transition-all duration-300 group">
+            <a className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border-2 border-primary text-amber rounded-full font-semibold hover:bg-primary hover:text-charcoal transition duration-300 group">
               Read our insights
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
             </a>

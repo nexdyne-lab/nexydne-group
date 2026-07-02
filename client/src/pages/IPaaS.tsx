@@ -186,7 +186,7 @@ export default function IPaaS() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8 max-w-7xl mx-auto">
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Cloud className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Pre-built Connectors</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -194,7 +194,7 @@ export default function IPaaS() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <GitBranch className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Visual Workflow Designer</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -202,7 +202,7 @@ export default function IPaaS() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <BarChart3 className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Real-time Monitoring</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -210,7 +210,7 @@ export default function IPaaS() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Lock className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Security & Compliance</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -218,7 +218,7 @@ export default function IPaaS() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Zap className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">Data Transformation</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -226,7 +226,7 @@ export default function IPaaS() {
               </p>
             </div>
 
-            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300">
+            <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300">
               <Network className="w-12 h-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-3 text-charcoal">API Management</h3>
               <p className="text-charcoal/80 leading-relaxed">
@@ -249,7 +249,7 @@ export default function IPaaS() {
           
           <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8 max-w-5xl mx-auto">
             <Link href="/solutions/intelligent-process-optimization/process-automation/rpa" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 h-full bg-white">
                 <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   RPA (Robotic Process Automation)
                 </h3>
@@ -264,7 +264,7 @@ export default function IPaaS() {
             </Link>
 
             <Link href="/solutions/intelligent-process-optimization/process-automation/process-orchestration" className="group">
-              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition-all duration-300 h-full bg-white">
+              <div className="p-4 sm:p-6 md:p-8 border-2 border-border hover:border-primary transition duration-300 h-full bg-white">
                 <h3 className="text-xl font-bold mb-3 text-charcoal group-hover:text-primary transition-colors">
                   Process Orchestration
                 </h3>

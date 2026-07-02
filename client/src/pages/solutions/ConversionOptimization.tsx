@@ -162,7 +162,7 @@ export default function ConversionOptimization() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white p-8 rounded-xl border border-border hover:border-primary hover:shadow-lg transition-all duration-300">
+            <div className="bg-white p-8 rounded-xl border border-border hover:border-primary hover:shadow-lg transition duration-300">
               <div className="text-sm font-bold text-primary mb-3">STEP 1</div>
               <h3 className="text-xl font-bold mb-4">Audit & Analysis</h3>
               <p className="text-muted-foreground">
@@ -170,7 +170,7 @@ export default function ConversionOptimization() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl border border-border hover:border-primary hover:shadow-lg transition-all duration-300">
+            <div className="bg-white p-8 rounded-xl border border-border hover:border-primary hover:shadow-lg transition duration-300">
               <div className="text-sm font-bold text-primary mb-3">STEP 2</div>
               <h3 className="text-xl font-bold mb-4">Hypothesis & Testing</h3>
               <p className="text-muted-foreground">
@@ -178,7 +178,7 @@ export default function ConversionOptimization() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl border border-border hover:border-primary hover:shadow-lg transition-all duration-300">
+            <div className="bg-white p-8 rounded-xl border border-border hover:border-primary hover:shadow-lg transition duration-300">
               <div className="text-sm font-bold text-primary mb-3">STEP 3</div>
               <h3 className="text-xl font-bold mb-4">Implementation</h3>
               <p className="text-muted-foreground">
@@ -186,7 +186,7 @@ export default function ConversionOptimization() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl border border-border hover:border-primary hover:shadow-lg transition-all duration-300">
+            <div className="bg-white p-8 rounded-xl border border-border hover:border-primary hover:shadow-lg transition duration-300">
               <div className="text-sm font-bold text-primary mb-3">STEP 4</div>
               <h3 className="text-xl font-bold mb-4">Monitor & Iterate</h3>
               <p className="text-muted-foreground">
@@ -263,22 +263,22 @@ export default function ConversionOptimization() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-12 rounded-xl border border-border hover:shadow-lg transition-all duration-300 flex items-center justify-center">
+            <div className="bg-white p-12 rounded-xl border border-border hover:shadow-lg transition duration-300 flex items-center justify-center">
               <h3 className="text-2xl font-bold text-charcoal">Bloomreach</h3>
             </div>
-            <div className="bg-white p-12 rounded-xl border border-border hover:shadow-lg transition-all duration-300 flex items-center justify-center">
+            <div className="bg-white p-12 rounded-xl border border-border hover:shadow-lg transition duration-300 flex items-center justify-center">
               <h3 className="text-2xl font-bold text-charcoal">Commercetools</h3>
             </div>
-            <div className="bg-white p-12 rounded-xl border border-border hover:shadow-lg transition-all duration-300 flex items-center justify-center">
+            <div className="bg-white p-12 rounded-xl border border-border hover:shadow-lg transition duration-300 flex items-center justify-center">
               <h3 className="text-2xl font-bold text-charcoal">Tweakwise</h3>
             </div>
-            <div className="bg-white p-12 rounded-xl border border-border hover:shadow-lg transition-all duration-300 flex items-center justify-center">
+            <div className="bg-white p-12 rounded-xl border border-border hover:shadow-lg transition duration-300 flex items-center justify-center">
               <h3 className="text-2xl font-bold text-charcoal">Sitecore</h3>
             </div>
-            <div className="bg-white p-12 rounded-xl border border-border hover:shadow-lg transition-all duration-300 flex items-center justify-center">
+            <div className="bg-white p-12 rounded-xl border border-border hover:shadow-lg transition duration-300 flex items-center justify-center">
               <h3 className="text-2xl font-bold text-charcoal">Optimizely</h3>
             </div>
-            <div className="bg-white p-12 rounded-xl border border-border hover:shadow-lg transition-all duration-300 flex items-center justify-center">
+            <div className="bg-white p-12 rounded-xl border border-border hover:shadow-lg transition duration-300 flex items-center justify-center">
               <h3 className="text-2xl font-bold text-charcoal">VWO</h3>
             </div>
           </div>

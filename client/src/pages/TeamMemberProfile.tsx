@@ -564,7 +564,7 @@ export default function TeamMemberProfile() {
               {member.publications.map((pub, index) => (
                 <div 
                   key={index}
-                  className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-6 border border-border hover:border-border hover:shadow-lg transition-all"
+                  className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-6 border border-border hover:border-border hover:shadow-lg transition"
                 >
                   <div className="flex items-start justify-between gap-4 mb-3">
                     <h3 className="text-xl font-bold text-charcoal leading-tight">
@@ -600,7 +600,7 @@ export default function TeamMemberProfile() {
               {member.clientWork.map((work, index) => (
                 <div 
                   key={index}
-                  className="bg-gradient-to-br from-off-white to-white rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 border border-border hover:border-border hover:shadow-xl transition-all"
+                  className="bg-gradient-to-br from-off-white to-white rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 border border-border hover:border-border hover:shadow-xl transition"
                 >
                   <div className="flex items-start justify-between gap-4 mb-4">
                     <div>
@@ -659,12 +659,12 @@ export default function TeamMemberProfile() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <a 
                 href="/contact" 
-                className="inline-flex items-center justify-center px-8 py-4 bg-white text-charcoal font-semibold rounded-lg sm:rounded-xl hover:bg-subtle transition-all hover:shadow-xl sm:shadow-xl sm:shadow-2xl hover:shadow-white/20 hover:-translate-y-1"
+                className="inline-flex items-center justify-center px-8 py-4 bg-white text-charcoal font-semibold rounded-lg sm:rounded-xl hover:bg-subtle transition hover:shadow-xl sm:shadow-xl sm:shadow-2xl hover:shadow-white/20 hover:-translate-y-1"
               >
                 Schedule Consultation
               </a>
               <Link href="/team">
-                <a className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white/30 text-white font-semibold rounded-lg sm:rounded-xl hover:bg-white/10 hover:border-white/50 transition-all backdrop-blur-sm">
+                <a className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white/30 text-white font-semibold rounded-lg sm:rounded-xl hover:bg-white/10 hover:border-white/50 transition backdrop-blur-sm">
                   View All Team Members
                 </a>
               </Link>

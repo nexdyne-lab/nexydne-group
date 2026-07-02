@@ -212,7 +212,7 @@ export default function CaseStudyBankCoreModernization() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all duration-300"
+                className="p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 transition duration-300"
               >
                 <div className="mb-6 p-3 bg-primary/10 w-fit rounded-lg text-primary">
                   {item.icon}
@@ -390,7 +390,7 @@ export default function CaseStudyBankCoreModernization() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={capability.link} className="group block h-full">
-                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white border border-border hover:border-primary/50 transition-all duration-300">
+                  <div className="h-full p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl bg-white border border-border hover:border-primary/50 transition duration-300">
                     <div className="text-primary text-xs font-bold uppercase tracking-[0.15em] mb-2">{capability.title}</div>
                     <h3 className="text-xl font-bold text-charcoal mb-4 group-hover:text-primary transition-colors">
                       {capability.subtitle}

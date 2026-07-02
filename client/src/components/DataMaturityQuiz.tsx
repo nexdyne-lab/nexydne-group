@@ -203,7 +203,7 @@ export default function DataMaturityQuiz() {
             </div>
             <div className="w-full bg-white/10 h-1 rounded-full overflow-hidden">
               <div 
-                className="bg-secondary h-full transition-all duration-500 ease-out"
+                className="bg-secondary h-full transition duration-500 ease-out"
                 style={{ width: `${((currentQuestion) / questions.length) * 100}%` }}
               />
             </div>
@@ -218,12 +218,12 @@ export default function DataMaturityQuiz() {
               <button
                 key={index}
                 onClick={() => handleAnswer(option.score)}
-                className="w-full text-left p-4 rounded-lg sm:rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:bg-secondary/10 hover:border-secondary transition-all duration-200 group flex items-center justify-between"
+                className="w-full text-left p-4 rounded-lg sm:rounded-lg sm:rounded-xl bg-white/5 border border-white/10 hover:bg-secondary/10 hover:border-secondary transition duration-200 group flex items-center justify-between"
               >
                 <span className="text-muted-foreground/50 group-hover:text-white font-medium">
                   {option.text}
                 </span>
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-white/0 group-hover:text-secondary transition-all transform translate-x-[-10px] group-hover:translate-x-0" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-white/0 group-hover:text-secondary transition transform translate-x-[-10px] group-hover:translate-x-0" />
               </button>
             ))}
           </div>

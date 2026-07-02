@@ -73,13 +73,13 @@ export function PartnerEcosystem({
                 {categoryPartners.map((partner, index) => (
                   <div
                     key={index}
-                    className="bg-white border border-border rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 flex flex-col items-center justify-center hover:shadow-lg transition-all duration-300 hover:border-primary group"
+                    className="bg-white border border-border rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 flex flex-col items-center justify-center hover:shadow-lg transition duration-300 hover:border-primary group"
                   >
                     {partner.logo ? (
                       <img
                         src={partner.logo}
                         alt={partner.name}
-                        className="h-12 object-contain mb-3 grayscale group-hover:grayscale-0 transition-all"
+                        className="h-12 object-contain mb-3 grayscale group-hover:grayscale-0 transition"
                       />
                     ) : (
                       <div className={`h-12 w-full rounded bg-gradient-to-r ${categoryColors[partner.category]} opacity-20 mb-3`} />

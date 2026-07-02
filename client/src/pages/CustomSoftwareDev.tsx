@@ -313,7 +313,7 @@ export default function CustomSoftwareDev() {
             Stop struggling with off-the-shelf limitations. Let's build a solution designed for your success.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:p-5 md:p-6">
-            <Button className="bg-white text-primary hover:bg-subtle text-lg px-10 py-6 rounded-full font-bold shadow-lg transition-all hover:scale-105">
+            <Button className="bg-white text-primary hover:bg-subtle text-lg px-10 py-6 rounded-full font-bold shadow-lg transition hover:scale-105">
               Start Your Project
             </Button>
             <Button variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-10 py-6 rounded-full font-bold">

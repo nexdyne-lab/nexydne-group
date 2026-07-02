@@ -96,7 +96,7 @@ export default function DigitalMarketing() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="group p-8 bg-background border border-border rounded-2xl hover:bg-charcoal transition-all duration-300">
+            <div className="group p-8 bg-background border border-border rounded-2xl hover:bg-charcoal transition duration-300">
               <h3 className="text-2xl font-bold text-charcoal group-hover:text-white mb-4 transition-colors">
                 Performance Marketing
               </h3>
@@ -113,7 +113,7 @@ export default function DigitalMarketing() {
               </ul>
             </div>
 
-            <div className="group p-8 bg-background border border-border rounded-2xl hover:bg-charcoal transition-all duration-300">
+            <div className="group p-8 bg-background border border-border rounded-2xl hover:bg-charcoal transition duration-300">
               <h3 className="text-2xl font-bold text-charcoal group-hover:text-white mb-4 transition-colors">
                 Marketing Technology (MarTech)
               </h3>
@@ -130,7 +130,7 @@ export default function DigitalMarketing() {
               </ul>
             </div>
 
-            <div className="group p-8 bg-background border border-border rounded-2xl hover:bg-charcoal transition-all duration-300">
+            <div className="group p-8 bg-background border border-border rounded-2xl hover:bg-charcoal transition duration-300">
               <h3 className="text-2xl font-bold text-charcoal group-hover:text-white mb-4 transition-colors">
                 Content & Brand Strategy
               </h3>
@@ -163,7 +163,7 @@ export default function DigitalMarketing() {
             Ready to take your digital presence to the next level? Let's build a marketing engine that drives real growth.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
-            <Button className="bg-primary text-primary-foreground hover:bg-primary-hover rounded-full px-10 py-6 text-lg font-bold shadow-xl transition-all hover:scale-105">
+            <Button className="bg-primary text-primary-foreground hover:bg-primary-hover rounded-full px-10 py-6 text-lg font-bold shadow-xl transition hover:scale-105">
               Get a Marketing Audit
             </Button>
           </div>

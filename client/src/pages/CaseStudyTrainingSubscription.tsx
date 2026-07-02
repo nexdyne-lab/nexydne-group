@@ -270,7 +270,7 @@ export default function CaseStudyTrainingSubscription() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group"
               >
-                <div className="h-full bg-subtle p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl hover:shadow-xl transition-all duration-300">
+                <div className="h-full bg-subtle p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl hover:shadow-xl transition duration-300">
                   <div className={`w-12 h-12 bg-gradient-to-br ${item.color} rounded-lg flex items-center justify-center mb-6 text-white`}>
                     {item.icon}
                   </div>
@@ -464,7 +464,7 @@ export default function CaseStudyTrainingSubscription() {
                 className="group"
               >
                 <Link href={caseStudy.link}>
-                  <div className="bg-white rounded-lg sm:rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer h-full flex flex-col">
+                  <div className="bg-white rounded-lg sm:rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 cursor-pointer h-full flex flex-col">
                     <div className={`h-40 bg-gradient-to-br ${caseStudy.color}`} />
                     <div className="p-4 sm:p-5 md:p-6 flex-grow flex flex-col">
                       <span className="text-xs font-bold uppercase tracking-wider text-primary mb-2">
@@ -481,7 +481,7 @@ export default function CaseStudyTrainingSubscription() {
                           </div>
                         ))}
                       </div>
-                      <div className="flex items-center text-primary font-semibold text-sm group-hover:gap-3 gap-2 transition-all">
+                      <div className="flex items-center text-primary font-semibold text-sm group-hover:gap-3 gap-2 transition-[gap]">
                         Read case study
                         <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
                       </div>
@@ -511,7 +511,7 @@ export default function CaseStudyTrainingSubscription() {
               Let's discuss how we can help you transform your business model with subscription-based offerings.
             </p>
             <Link href="/contact">
-              <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-lg font-semibold transition-all">
+              <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-6 text-lg font-semibold transition">
                 Schedule a Consultation
                 <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </Button>

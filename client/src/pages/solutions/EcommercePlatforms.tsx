@@ -154,7 +154,7 @@ export default function EcommercePlatforms() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Step 1 */}
-            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition-all duration-300">
+            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition duration-300">
               <div className="text-primary font-bold text-sm mb-2">STEP 1</div>
               <h3 className="text-xl font-bold text-charcoal mb-3">Discovery & Strategy</h3>
               <p className="text-muted-foreground">
@@ -163,7 +163,7 @@ export default function EcommercePlatforms() {
             </div>
 
             {/* Step 2 */}
-            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition-all duration-300">
+            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition duration-300">
               <div className="text-primary font-bold text-sm mb-2">STEP 2</div>
               <h3 className="text-xl font-bold text-charcoal mb-3">Platform Design</h3>
               <p className="text-muted-foreground">
@@ -172,7 +172,7 @@ export default function EcommercePlatforms() {
             </div>
 
             {/* Step 3 */}
-            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition-all duration-300">
+            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition duration-300">
               <div className="text-primary font-bold text-sm mb-2">STEP 3</div>
               <h3 className="text-xl font-bold text-charcoal mb-3">Build & Integrate</h3>
               <p className="text-muted-foreground">
@@ -181,7 +181,7 @@ export default function EcommercePlatforms() {
             </div>
 
             {/* Step 4 */}
-            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition-all duration-300">
+            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition duration-300">
               <div className="text-primary font-bold text-sm mb-2">STEP 4</div>
               <h3 className="text-xl font-bold text-charcoal mb-3">Launch & Optimize</h3>
               <p className="text-muted-foreground">
@@ -320,7 +320,7 @@ export default function EcommercePlatforms() {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Case Study 1 */}
             <Link href="/cases/fashion-retailer-headless-commerce">
-              <a className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all">
+              <a className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                 <div className="aspect-video overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=600" 
@@ -356,7 +356,7 @@ export default function EcommercePlatforms() {
 
             {/* Case Study 2 */}
             <Link href="/cases/optics-retailer-webshop-platform">
-              <a className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all">
+              <a className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                 <div className="aspect-video overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1574169208507-84376144848b?auto=format&fit=crop&q=80&w=600" 
@@ -392,7 +392,7 @@ export default function EcommercePlatforms() {
 
             {/* Case Study 3 */}
             <Link href="/cases/b2b-manufacturer-commerce-platform">
-              <a className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all">
+              <a className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
                 <div className="aspect-video overflow-hidden">
                   <img 
                     src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=600" 

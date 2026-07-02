@@ -156,7 +156,7 @@ export function PlatformStrategy() {
             Don't let technical debt slow down your growth. Let's design a migration path that unlocks agility.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-4 bg-secondary text-base font-bold rounded-full hover:bg-white transition-all duration-300">
+            <button className="px-8 py-4 bg-secondary text-base font-bold rounded-full hover:bg-white transition duration-300">
               Start Your Migration
             </button>
           </Link>

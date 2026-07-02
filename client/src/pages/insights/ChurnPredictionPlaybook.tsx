@@ -185,7 +185,7 @@ importances = rf.feature_importances_`}
                 NexDyne's Data Engineering team can deploy a production-ready churn prediction pipeline in your infrastructure in under 4 weeks.
               </p>
               <Link href="/contact">
-                <button className="px-8 py-4 bg-secondary hover:bg-secondary text-base rounded-full font-bold transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
+                <button className="px-8 py-4 bg-secondary hover:bg-secondary text-base rounded-full font-bold transition transform hover:scale-105 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
                   Get the Technical Specs
                 </button>
               </Link>

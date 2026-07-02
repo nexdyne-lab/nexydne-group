@@ -126,7 +126,7 @@ export default function Team() {
                   is an opportunity to demonstrate the transformative power of intelligent automation.
                 </p>
                 <Link href="/case-studies">
-                  <a className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
+                  <a className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-[gap]">
                     See Our Work <ArrowRight className="w-4 h-4" />
                   </a>
                 </Link>
@@ -165,7 +165,7 @@ export default function Team() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={`/team/${consultant.id}`}>
-                  <a className="block group bg-white h-full overflow-hidden hover:shadow-xl transition-all duration-300">
+                  <a className="block group bg-white h-full overflow-hidden hover:shadow-xl transition duration-300">
                     {/* Image */}
                     <div className="aspect-[4/5] overflow-hidden">
                       <img 

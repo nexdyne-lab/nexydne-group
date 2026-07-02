@@ -414,7 +414,7 @@ export default function CaseStudyInsuranceClaims() {
                   <h3 className="text-xl font-semibold text-charcoal mt-2 group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
-                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-all">
+                  <span className="text-primary text-sm font-semibold flex items-center gap-1 mt-4 group-hover:gap-2 transition-[gap]">
                     Read case study <ArrowRight className="w-3 h-3" />
                   </span>
                 </Link>

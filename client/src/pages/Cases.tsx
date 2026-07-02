@@ -172,7 +172,7 @@ export default function Cases() {
                 <button
                   key={industry}
                   onClick={() => setSelectedIndustry(industry)}
-                  className={`pb-3 font-medium transition-all border-b-2 ${
+                  className={`pb-3 font-medium transition border-b-2 ${
                     selectedIndustry === industry
                       ? "border-primary text-primary"
                       : "border-transparent text-muted-foreground hover:text-charcoal hover:border-border"
@@ -223,7 +223,7 @@ export default function Cases() {
                       <p className="text-sm text-charcoal/70 leading-relaxed">
                         {study.description}
                       </p>
-                      <span className="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                      <span className="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-[gap]">
                         Read case study <ArrowRight className="w-3 h-3" />
                       </span>
                     </div>
@@ -300,7 +300,7 @@ export default function Cases() {
                   <p className="text-white/60 leading-relaxed mb-4">
                     {post.description}
                   </p>
-                  <span className="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                  <span className="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-[gap]">
                     Read more <ArrowRight className="w-3 h-3" />
                   </span>
                 </Link>

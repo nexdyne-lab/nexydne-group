@@ -221,7 +221,7 @@ export default function CaseStudyDetail() {
         <div className="container px-4 md:px-12 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Ready to write your success story?</h2>
           <Link href="/contact">
-            <button className="px-10 py-4 bg-secondary text-base font-bold rounded-full hover:bg-white transition-all">
+            <button className="px-10 py-4 bg-secondary text-base font-bold rounded-full hover:bg-white transition">
               Start a Conversation
             </button>
           </Link>

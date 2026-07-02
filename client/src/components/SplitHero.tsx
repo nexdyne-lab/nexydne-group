@@ -88,14 +88,14 @@ export function SplitHero() {
               <div className="flex flex-col sm:flex-row gap-4">
                 {/* First Button: White with black border */}
                 <Link href="/capabilities">
-                  <button className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-charcoal border-2 border-charcoal rounded-full font-semibold text-sm uppercase tracking-wider hover:bg-secondary hover:border-secondary transition-all duration-300">
+                  <button className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-charcoal border-2 border-charcoal rounded-full font-semibold text-sm uppercase tracking-wider hover:bg-secondary hover:border-secondary transition duration-300">
                     Explore Capabilities
                     <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </button>
                 </Link>
                 {/* Second Button: Green background */}
                 <Link href="/case-studies">
-                  <button className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-secondary text-charcoal border-2 border-secondary rounded-full font-semibold text-sm uppercase tracking-wider hover:bg-white hover:border-charcoal transition-all duration-300">
+                  <button className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-secondary text-charcoal border-2 border-secondary rounded-full font-semibold text-sm uppercase tracking-wider hover:bg-white hover:border-charcoal transition duration-300">
                     View Case Studies
                     <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </button>
@@ -145,7 +145,7 @@ export function SplitHero() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <Link href={insight.link}>
-                    <div className="group bg-white p-4 h-full border border-border hover:border-secondary hover:shadow-md transition-all duration-300 cursor-pointer">
+                    <div className="group bg-white p-4 h-full border border-border hover:border-secondary hover:shadow-md transition duration-300 cursor-pointer">
                       {/* Category & Date */}
                       <div className="flex items-center gap-2 mb-3">
                         <span className="text-[10px] font-bold tracking-wider text-secondary uppercase">

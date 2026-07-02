@@ -192,7 +192,7 @@ export function HeroCarousel() {
           <button
             key={index}
             onClick={() => setActiveIndex(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 touch-manipulation ${
+            className={`w-2 h-2 rounded-full transition duration-300 touch-manipulation ${
               index === activeIndex 
                 ? 'bg-base w-4' 
                 : 'bg-charcoal/20'
@@ -303,7 +303,7 @@ function CarouselCardComponent({ card, isCenter, position, isDragging }: CardPro
           </div>
 
           {/* Title */}
-          <h3 className={`font-bold text-white leading-tight transition-all duration-300 ${
+          <h3 className={`font-bold text-white leading-tight transition duration-300 ${
             isCenter ? "text-lg sm:text-xl md:text-2xl" : "text-xs sm:text-sm md:text-base"
           }`}>
             {card.title}

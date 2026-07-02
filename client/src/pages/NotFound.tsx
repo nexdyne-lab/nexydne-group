@@ -37,7 +37,7 @@ export default function NotFound() {
               <div className="flex flex-wrap gap-4 pt-2">
                 <Button
                   onClick={handleGoHome}
-                  className="bg-secondary hover:bg-secondary text-base font-bold rounded-full px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg shadow-[0_0_15px_rgba(0,212,255,0.3)] hover:shadow-[0_0_25px_rgba(0,212,255,0.5)] transition-all"
+                  className="bg-secondary hover:bg-secondary text-base font-bold rounded-full px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg shadow-[0_0_15px_rgba(0,212,255,0.3)] hover:shadow-[0_0_25px_rgba(0,212,255,0.5)] transition"
                 >
                   <Home className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                   Back to Home
@@ -61,7 +61,7 @@ export default function NotFound() {
               
               <div className="space-y-4">
                 <Link href="/solutions/intelligent-process-optimization">
-                  <div className="group flex items-center gap-4 p-4 rounded-lg sm:rounded-xl bg-white/5 hover:bg-white/10 border border-border hover:border-secondary/30 transition-all cursor-pointer">
+                  <div className="group flex items-center gap-4 p-4 rounded-lg sm:rounded-xl bg-white/5 hover:bg-white/10 border border-border hover:border-secondary/30 transition cursor-pointer">
                     <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                       <Briefcase className="w-4 h-4 sm:w-5 sm:h-5" />
                     </div>
@@ -69,12 +69,12 @@ export default function NotFound() {
                       <h4 className="text-charcoal font-medium group-hover:text-secondary transition-colors">Our Solutions</h4>
                       <p className="text-sm text-muted-foreground/70">Explore our enterprise capabilities</p>
                     </div>
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground group-hover:text-secondary group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground group-hover:text-secondary group-hover:translate-x-1 transition" />
                   </div>
                 </Link>
                 
                 <Link href="/insights">
-                  <div className="group flex items-center gap-4 p-4 rounded-lg sm:rounded-xl bg-white/5 hover:bg-white/10 border border-border hover:border-secondary/30 transition-all cursor-pointer">
+                  <div className="group flex items-center gap-4 p-4 rounded-lg sm:rounded-xl bg-white/5 hover:bg-white/10 border border-border hover:border-secondary/30 transition cursor-pointer">
                     <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                       <FileText className="w-4 h-4 sm:w-5 sm:h-5" />
                     </div>
@@ -82,12 +82,12 @@ export default function NotFound() {
                       <h4 className="text-charcoal font-medium group-hover:text-secondary transition-colors">Latest Insights</h4>
                       <p className="text-sm text-muted-foreground/70">Read our thought leadership articles</p>
                     </div>
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground group-hover:text-secondary group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground group-hover:text-secondary group-hover:translate-x-1 transition" />
                   </div>
                 </Link>
                 
                 <Link href="/cases">
-                  <div className="group flex items-center gap-4 p-4 rounded-lg sm:rounded-xl bg-white/5 hover:bg-white/10 border border-border hover:border-secondary/30 transition-all cursor-pointer">
+                  <div className="group flex items-center gap-4 p-4 rounded-lg sm:rounded-xl bg-white/5 hover:bg-white/10 border border-border hover:border-secondary/30 transition cursor-pointer">
                     <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
                       <Search className="w-4 h-4 sm:w-5 sm:h-5" />
                     </div>
@@ -95,7 +95,7 @@ export default function NotFound() {
                       <h4 className="text-charcoal font-medium group-hover:text-secondary transition-colors">Case Studies</h4>
                       <p className="text-sm text-muted-foreground/70">See our impact across industries</p>
                     </div>
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground group-hover:text-secondary group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-muted-foreground group-hover:text-secondary group-hover:translate-x-1 transition" />
                   </div>
                 </Link>
               </div>

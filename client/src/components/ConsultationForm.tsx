@@ -88,7 +88,7 @@ export default function ConsultationForm() {
               value={formData.firstName}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+              className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition outline-none"
               placeholder="John"
             />
           </div>
@@ -104,7 +104,7 @@ export default function ConsultationForm() {
               value={formData.lastName}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+              className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition outline-none"
               placeholder="Smith"
             />
           </div>
@@ -121,7 +121,7 @@ export default function ConsultationForm() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+            className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition outline-none"
             placeholder="john.smith@company.com"
           />
         </div>
@@ -138,7 +138,7 @@ export default function ConsultationForm() {
               value={formData.company}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+              className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition outline-none"
               placeholder="Company Name"
             />
           </div>
@@ -153,7 +153,7 @@ export default function ConsultationForm() {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+              className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition outline-none"
               placeholder="+1 (555) 123-4567"
             />
           </div>
@@ -169,7 +169,7 @@ export default function ConsultationForm() {
             value={formData.interest}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none bg-white"
+            className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition outline-none bg-white"
           >
             <option value="">Select an option</option>
             <option value="ai-acceleration">AI-Powered Acceleration</option>
@@ -192,7 +192,7 @@ export default function ConsultationForm() {
             value={formData.message}
             onChange={handleChange}
             rows={4}
-            className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none resize-none"
+            className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition outline-none resize-none"
             placeholder="Describe your growth objectives, market opportunities, or specific challenges you'd like to discuss..."
           />
         </div>
@@ -202,7 +202,7 @@ export default function ConsultationForm() {
             type="submit"
             disabled={isSubmitting}
             size="lg"
-            className="w-full bg-primary hover:bg-primary-hover text-white font-bold py-4 rounded-lg transition-all flex items-center justify-center gap-2 group"
+            className="w-full bg-primary hover:bg-primary-hover text-white font-bold py-4 rounded-lg transition flex items-center justify-center gap-2 group"
           >
             {isSubmitting ? (
               <>

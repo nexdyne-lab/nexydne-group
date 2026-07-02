@@ -243,28 +243,28 @@ export default function CustomerDataPlatform() {
           
           {/* Partner Cards Grid */}
           <div className="grid md:grid-cols-4 gap-8">
-            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition-all">
+            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition">
               <h3 className="text-2xl font-bold text-charcoal mb-4">Bloomreach</h3>
               <p className="text-muted-foreground">
                 Commerce experience cloud combining CDP, search, merchandising, and content in one platform—powering personalized digital experiences that drive revenue.
               </p>
             </div>
             
-            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition-all">
+            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition">
               <h3 className="text-2xl font-bold text-charcoal mb-4">Commercetools</h3>
               <p className="text-muted-foreground">
                 Headless commerce platform enabling brands to create unique, personalized shopping experiences across every touchpoint with API-first architecture.
               </p>
             </div>
             
-            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition-all">
+            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition">
               <h3 className="text-2xl font-bold text-charcoal mb-4">Tweakwise</h3>
               <p className="text-muted-foreground">
                 Search, merchandising, and personalization platform that optimizes product discovery and increases conversion through intelligent recommendations.
               </p>
             </div>
             
-            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition-all">
+            <div className="bg-white p-8 rounded-lg border border-border hover:border-primary hover:shadow-lg transition">
               <h3 className="text-2xl font-bold text-charcoal mb-4">Sitecore</h3>
               <p className="text-muted-foreground">
                 Digital experience platform combining content management, personalization, and marketing automation to deliver individualized customer journeys at scale.

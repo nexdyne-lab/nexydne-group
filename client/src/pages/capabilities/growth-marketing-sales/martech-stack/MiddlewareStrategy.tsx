@@ -36,7 +36,7 @@ const MiddlewareStrategy = () => {
             
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
-                <a className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
+                <a className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition duration-300 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
                   Architect Your Integration
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
@@ -203,7 +203,7 @@ const MiddlewareStrategy = () => {
               }
             ].map((story, index) => (
               <Link key={index} href={story.link}>
-                <a className="group block h-full bg-off-white rounded-xl sm:rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 border border-border">
+                <a className="group block h-full bg-off-white rounded-xl sm:rounded-2xl overflow-hidden hover:shadow-lg transition duration-300 border border-border">
                   <div className="p-4 sm:p-6 md:p-8 h-full flex flex-col">
                     <div className="text-xs font-bold text-primary uppercase tracking-wider mb-4">
                       {story.category}
@@ -257,7 +257,7 @@ const MiddlewareStrategy = () => {
                 desc: "For synchronous operations where immediate confirmation is required, such as user authentication."
               }
             ].map((item, index) => (
-              <div key={index} className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-sm border border-border hover:shadow-md transition-all">
+              <div key={index} className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-sm border border-border hover:shadow-md transition">
                 <div className="w-12 h-12 bg-primary/5 rounded-lg sm:rounded-xl flex items-center justify-center text-primary mb-6 font-bold text-base sm:text-lg md:text-xl">
                   {index + 1}
                 </div>
@@ -281,7 +281,7 @@ const MiddlewareStrategy = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/contact">
-              <a className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition-all duration-300">
+              <a className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition duration-300">
                 Discuss Your Integration Strategy
                 <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </a>

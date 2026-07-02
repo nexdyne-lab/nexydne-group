@@ -413,7 +413,7 @@ export default function DigitalGrowthPlaybook() {
               Let's build a digital growth strategy that creates new revenue streams and competitive advantages.
             </p>
             <Link href="/contact">
-              <Button className="bg-primary hover:bg-primary/90 text-charcoal px-10 py-6 text-lg font-semibold transition-all">
+              <Button className="bg-primary hover:bg-primary/90 text-charcoal px-10 py-6 text-lg font-semibold transition">
                 Schedule a Consultation
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>

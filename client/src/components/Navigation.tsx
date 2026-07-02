@@ -197,7 +197,7 @@ function MegaLink({ href, children, onNavigate }: { href: string; children: Reac
       className="group flex items-center justify-between gap-3 border-b border-border/40 py-2.5 text-[15px] font-medium text-charcoal/90 transition-colors hover:text-primary"
     >
       <span>{children}</span>
-      <ArrowUpRight className="h-4 w-4 -translate-x-1 text-primary opacity-0 transition-all duration-200 group-hover:translate-x-0 group-hover:opacity-100" />
+      <ArrowUpRight className="h-4 w-4 -translate-x-1 text-primary opacity-0 transition duration-200 group-hover:translate-x-0 group-hover:opacity-100" />
     </Link>
   );
 }
@@ -375,7 +375,7 @@ export default function Navigation() {
       {/* Fixed Navigation Container */}
       <nav 
         ref={navRef}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition duration-300 ${
           isNavbarLight 
             ? 'bg-white shadow-sm' 
             : 'bg-transparent'

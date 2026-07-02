@@ -59,7 +59,7 @@ export default function GreenGrowthImperative() {
               
               <div className="pt-8">
                 <Link href="/contact">
-                  <button className="group inline-flex items-center gap-3 px-8 py-4 bg-emerald-700 text-white rounded-full hover:bg-emerald-800 transition-all duration-300 text-lg font-medium">
+                  <button className="group inline-flex items-center gap-3 px-8 py-4 bg-emerald-700 text-white rounded-full hover:bg-emerald-800 transition duration-300 text-lg font-medium">
                     Start Your Transformation
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </button>
@@ -177,7 +177,7 @@ export default function GreenGrowthImperative() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 p-8">
                 <h3 className="text-2xl text-white mb-2">Energy & Materials</h3>
-                <p className="text-white/80 font-light transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                <p className="text-white/80 font-light transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500">
                   Decarbonizing heavy industry while maintaining competitiveness.
                 </p>
               </div>
@@ -193,7 +193,7 @@ export default function GreenGrowthImperative() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 p-8">
                 <h3 className="text-2xl text-white mb-2">Consumer Goods</h3>
-                <p className="text-white/80 font-light transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                <p className="text-white/80 font-light transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500">
                   Meeting the rising demand for sustainable products and packaging.
                 </p>
               </div>
@@ -209,7 +209,7 @@ export default function GreenGrowthImperative() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 p-8">
                 <h3 className="text-2xl text-white mb-2">Advanced Manufacturing</h3>
-                <p className="text-white/80 font-light transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                <p className="text-white/80 font-light transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500">
                   Building circular supply chains and efficient production systems.
                 </p>
               </div>
@@ -283,7 +283,7 @@ export default function GreenGrowthImperative() {
               <p className="text-xl text-muted-foreground font-light">Our latest thinking on sustainability and growth.</p>
             </div>
             <Link href="/insights">
-              <button className="hidden md:flex items-center gap-2 text-emerald-700 font-medium hover:gap-3 transition-all">
+              <button className="hidden md:flex items-center gap-2 text-emerald-700 font-medium hover:gap-3 transition-[gap]">
                 View all insights <ArrowRight className="w-4 h-4" />
               </button>
             </Link>
@@ -370,7 +370,7 @@ export default function GreenGrowthImperative() {
             Let's discuss how NewCo can help you identify value pools, optimize pricing, and build the capabilities needed for a green future.
           </p>
           <Link href="/contact">
-            <button className="px-10 py-5 bg-white text-emerald-900 rounded-full hover:bg-emerald-50 transition-colors text-lg font-bold tracking-wide shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all">
+            <button className="px-10 py-5 bg-white text-emerald-900 rounded-full hover:bg-emerald-50 transition-colors text-lg font-bold tracking-wide shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition">
               Contact our Green Growth Team
             </button>
           </Link>

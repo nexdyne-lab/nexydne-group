@@ -36,7 +36,7 @@ const StackOrchestration = () => {
             
             <div className="flex flex-wrap gap-4">
               <Link href="/contact">
-                <a className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
+                <a className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition duration-300 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
                   Request Stack Audit
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
@@ -204,7 +204,7 @@ const StackOrchestration = () => {
               }
             ].map((story, index) => (
               <Link key={index} href={story.link}>
-                <a className="group block h-full bg-off-white rounded-xl sm:rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 border border-border">
+                <a className="group block h-full bg-off-white rounded-xl sm:rounded-2xl overflow-hidden hover:shadow-lg transition duration-300 border border-border">
                   <div className="p-4 sm:p-6 md:p-8 h-full flex flex-col">
                     <div className="text-xs font-bold text-primary uppercase tracking-wider mb-4">
                       {story.category}
@@ -266,7 +266,7 @@ const StackOrchestration = () => {
                 desc: "We deploy robust middleware and event-driven workflows to ensure seamless data fluidity."
               }
             ].map((item, index) => (
-              <div key={index} className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-sm border border-border hover:shadow-md transition-all">
+              <div key={index} className="bg-white p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-sm border border-border hover:shadow-md transition">
                 <div className="text-4xl font-bold text-primary mb-4">{item.step}</div>
                 <h3 className="text-xl font-bold text-charcoal mb-3">{item.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
@@ -288,7 +288,7 @@ const StackOrchestration = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/contact">
-              <a className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition-all duration-300">
+              <a className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition duration-300">
                 Start Your Audit
                 <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </a>
