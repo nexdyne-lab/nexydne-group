@@ -20,7 +20,7 @@ export default function CyberResilience() {
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-['EB Garamond',serif] font-bold tracking-tight text-white leading-[1.05] mb-4">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-4">
                 Cyber Resilience & Data Privacy
               </h1>
               
@@ -71,7 +71,7 @@ export default function CyberResilience() {
             <p className="text-amber text-sm font-medium tracking-widest uppercase mb-4">
               The Challenge
             </p>
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-8">
               Security as an enabler, not a barrier
             </h2>
             <div className="prose prose-lg prose-slate max-w-none">
@@ -104,7 +104,7 @@ export default function CyberResilience() {
             <p className="text-amber text-sm font-medium tracking-widest uppercase mb-4">
               Our Approach
             </p>
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-12">
               Security that enables transformation
             </h2>
             
@@ -159,7 +159,7 @@ export default function CyberResilience() {
             <p className="text-amber text-sm font-medium tracking-widest uppercase mb-4">
               Capabilities
             </p>
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-12">
               What we deliver
             </h2>
             
@@ -196,7 +196,7 @@ export default function CyberResilience() {
             <p className="text-white/80 text-sm font-medium tracking-widest uppercase mb-4">
               Industry Expertise
             </p>
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12">
               Deep expertise where it matters most
             </h2>
             
@@ -240,7 +240,7 @@ export default function CyberResilience() {
       <section className="py-20 bg-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-['EB Garamond',serif] font-bold text-charcoal mb-8">Related Services</h2>
+            <h2 className="text-2xl font-bold text-charcoal mb-8">Related Services</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
               <BainHoverCard
@@ -262,7 +262,7 @@ export default function CyberResilience() {
       <section className="py-20 bg-off-white">
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-['EB Garamond',serif] font-bold text-charcoal mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-6">
               Ready to strengthen your security posture?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">

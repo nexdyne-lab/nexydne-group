@@ -21,10 +21,10 @@ export default function SalesOperations() {
                 Sales Excellence
               </Link>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1] eb-garamond">
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1]">
               Sales Operations & Enablement
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light ">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light">
               Optimizing the technical backbone of your sales organization. We streamline CRM workflows, automate reporting, and ensure data hygiene.
             </p>
           </div>
@@ -85,7 +85,7 @@ export default function SalesOperations() {
             </div>
 
             <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-6 eb-garamond">The "Clean Core" Approach</h2>
+              <h2 className="text-3xl font-bold text-charcoal mb-6">The "Clean Core" Approach</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Just as modern ERPs strive for a "clean core," we advocate for a lean, standardized sales stack. We help you audit your current tool inventory, identifying redundancies and integration gaps. We then architect a streamlined stack where data flows seamlessly from lead capture to revenue recognition, providing a single source of truth for forecasting.
               </p>

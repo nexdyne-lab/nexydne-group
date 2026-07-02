@@ -27,7 +27,7 @@ export default function DigitalVenturePlaybook() {
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 leading-tight eb-garamond">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3 leading-tight">
             The Digital Venture Playbook for Mid-Size Companies
           </h1>
           
@@ -89,11 +89,11 @@ export default function DigitalVenturePlaybook() {
       <article className="py-16">
         <div className="container max-w-3xl">
           <div className="prose prose-lg max-w-none">
-            <p className="text-xl text-charcoal/80 leading-relaxed mb-8 ">
+            <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
               Mid-size companies are uniquely positioned to launch digital ventures. They have the resources and market knowledge of established businesses, combined with the agility that larger enterprises often lack. Yet most mid-market digital ventures fail—not because of bad ideas, but because of flawed execution approaches.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 eb-garamond">The Mid-Market Venture Advantage</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">The Mid-Market Venture Advantage</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Our research across 120+ mid-market digital ventures reveals that successful companies leverage three distinct advantages that larger and smaller competitors cannot easily replicate:
@@ -111,7 +111,7 @@ export default function DigitalVenturePlaybook() {
               <strong>Resource Flexibility:</strong> Unlike large corporations bound by complex approval processes, mid-size companies can allocate resources quickly when opportunities emerge. Unlike startups, they have resources to allocate.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 eb-garamond">The Four-Phase Venture Framework</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">The Four-Phase Venture Framework</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Successful mid-market digital ventures follow a structured approach that balances speed with rigor. Our framework consists of four phases, each with specific objectives and decision gates.
@@ -157,7 +157,7 @@ export default function DigitalVenturePlaybook() {
               Scaling ventures need dedicated teams, increased investment, and integration with core business operations. Pivoting ventures need time and space to experiment with new approaches. Shutting down ventures requires honest assessment and graceful wind-down.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 eb-garamond">Common Failure Patterns</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Common Failure Patterns</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Understanding why ventures fail is as important as knowing how they succeed. Our analysis identifies five common failure patterns in mid-market digital ventures:
@@ -183,7 +183,7 @@ export default function DigitalVenturePlaybook() {
               <strong>The Metric Confusion:</strong> Measuring venture success with traditional business metrics (revenue, profit) rather than venture-appropriate metrics (engagement, retention, growth rate).
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6 eb-garamond">Building Venture Capability</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Building Venture Capability</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
               The most successful mid-market companies don't just launch individual ventures—they build organizational capability for continuous venture creation. This requires investment in three areas:
@@ -211,7 +211,7 @@ export default function DigitalVenturePlaybook() {
       {/* Related Insights */}
       <section className="py-16 bg-subtle">
         <div className="container max-w-6xl">
-          <h2 className="text-2xl font-bold text-charcoal mb-8 eb-garamond">Related Insights</h2>
+          <h2 className="text-2xl font-bold text-charcoal mb-8">Related Insights</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             <Link href="/insights/from-mvp-to-scale" className="group">
@@ -256,7 +256,7 @@ export default function DigitalVenturePlaybook() {
       {/* CTA Section */}
       <section className="py-16 bg-white">
         <div className="container max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-charcoal mb-4 eb-garamond">Ready to Apply These Insights?</h2>
+          <h2 className="text-3xl font-bold text-charcoal mb-4">Ready to Apply These Insights?</h2>
           <p className="text-lg text-muted-foreground mb-8">
             Our experts can help you implement these strategies for your business.
           </p>

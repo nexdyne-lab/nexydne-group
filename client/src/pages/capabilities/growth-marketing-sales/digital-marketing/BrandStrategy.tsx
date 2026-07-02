@@ -28,10 +28,10 @@ export default function BrandStrategy() {
               <span className="mx-2">/</span>
               <span className="text-charcoal">Brand Strategy & Positioning</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-charcoal mb-3 leading-[1.1] eb-garamond">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-charcoal mb-3 leading-[1.1]">
               Brand Strategy & Positioning
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light ">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light">
               Build a brand that resonates. We help you define your purpose, differentiate your offering, and create lasting emotional connections with your audience.
             </p>
           </div>
@@ -55,7 +55,7 @@ export default function BrandStrategy() {
 
             {/* Key Focus Areas */}
             <section>
-              <h2 className="text-2xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">Building Iconic Brands</h2>
+              <h2 className="text-2xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">Building Iconic Brands</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:p-6 md:p-8">
                 <div className="bg-white p-4 sm:p-5 md:p-6 rounded-sm border border-border shadow-sm hover:shadow-md transition-shadow">
                   <Compass className="w-8 h-8 text-charcoal mb-4" />
@@ -92,7 +92,7 @@ export default function BrandStrategy() {
 
             {/* Impact Section */}
             <section>
-              <h2 className="text-2xl font-bold text-charcoal mb-6 eb-garamond">Why Brand Matters</h2>
+              <h2 className="text-2xl font-bold text-charcoal mb-6">Why Brand Matters</h2>
               <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:p-6 md:p-8 text-center">
                   <div>

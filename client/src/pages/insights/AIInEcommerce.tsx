@@ -38,7 +38,7 @@ export function AIInEcommerce() {
               <span className="w-1 h-1 rounded-full bg-charcoal" />
               <span>8 min read</span>
             </div>
-            <h1 className="text-4xl md:text-5xl eb-garamond font-bold text-charcoal mb-4 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-charcoal mb-4 leading-tight">
               AI-Driven Merchandising: <br/>
               <span className="text-secondary">Beyond Recommendations</span>
             </h1>

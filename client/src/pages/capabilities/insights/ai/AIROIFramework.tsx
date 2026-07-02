@@ -39,7 +39,7 @@ export default function AIROIFramework() {
         and maximizing AI ROI.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Why Traditional ROI Models Fall Short for AI
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -57,7 +57,7 @@ export default function AIROIFramework() {
         improved customer experience, and competitive differentiation.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
         The Three Horizons of AI Value
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -120,7 +120,7 @@ export default function AIROIFramework() {
         <li>Building proprietary data assets that create competitive moats</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Benchmarks from the Field
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -174,7 +174,7 @@ export default function AIROIFramework() {
         see 30-50% lower returns.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Five Principles for Maximizing AI ROI
       </h2>
 
@@ -228,7 +228,7 @@ export default function AIROIFramework() {
         investment.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Getting Started
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">

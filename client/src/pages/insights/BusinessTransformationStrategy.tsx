@@ -41,7 +41,7 @@ export default function BusinessTransformationStrategy() {
     >
       {/* Introduction */}
       <div className="space-y-6 mb-12">
-        <p className="text-xl text-charcoal/80 leading-relaxed ">
+        <p className="text-xl text-charcoal/80 leading-relaxed">
           Business transformation has evolved from a strategic option to a competitive necessity. Organizations across industries face mounting pressure to adapt to technological disruption, changing customer expectations, and volatile market conditions. Yet despite significant investments, research indicates that approximately 70% of transformation initiatives fail to achieve their intended outcomes.
         </p>
 

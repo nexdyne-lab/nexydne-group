@@ -27,7 +27,7 @@ export default function FinancialDisciplineGrowth() {
           <Breadcrumbs />
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-4xl">
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6 block">Insight · Fractional CFO Services</span>
-            <h1 className="text-4xl md:text-6xl eb-garamond font-bold tracking-tight leading-[1.1] mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-4">
               Financial Discipline as a <span className="text-primary">Growth Enabler</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl">

@@ -24,10 +24,10 @@ export default function DiscountOptimization() {
               <span className="mx-2">/</span>
               <span className="text-primary">Discount & Promo Optimization</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1] eb-garamond">
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1]">
               Discount & Promo Optimization
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light ">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light">
               Stop giving away margin. We use advanced analytics to identify unnecessary discounts and design promotion strategies that drive incremental volume without eroding value.
             </p>
           </div>
@@ -54,7 +54,7 @@ export default function DiscountOptimization() {
 
             {/* Key Strategies */}
             <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">Plugging the Leaks</h2>
+              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">Plugging the Leaks</h2>
               <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8">
                 <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Discount Governance</h3>
@@ -87,10 +87,10 @@ export default function DiscountOptimization() {
 
             {/* Methodology */}
             <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">Our Methodology</h2>
+              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">Our Methodology</h2>
               <div className="space-y-8">
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">1</div>
+                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl">1</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Transaction Waterfall Analysis</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -99,7 +99,7 @@ export default function DiscountOptimization() {
                   </div>
                 </div>
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">2</div>
+                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl">2</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Elasticity Modeling</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -108,7 +108,7 @@ export default function DiscountOptimization() {
                   </div>
                 </div>
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">3</div>
+                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl">3</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Framework Design</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -117,7 +117,7 @@ export default function DiscountOptimization() {
                   </div>
                 </div>
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">4</div>
+                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl">4</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Change Management</h3>
                     <p className="text-muted-foreground leading-relaxed">

@@ -130,7 +130,7 @@ export default function CloudModernization() {
             >
               <Breadcrumbs variant="light" />
               
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-4 eb-garamond">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-4">
                 Cloud Modernization
               </h1>
               
@@ -168,7 +168,7 @@ export default function CloudModernization() {
             <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Core Capabilities
             </motion.span>
-            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
+            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               Enterprise-grade cloud expertise
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
@@ -221,7 +221,7 @@ export default function CloudModernization() {
             <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Migration Options
             </motion.span>
-            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
+            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               Choose your pathway
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
@@ -273,7 +273,7 @@ export default function CloudModernization() {
             <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Industry Applications
             </motion.span>
-            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
+            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               Cloud modernization in action
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
@@ -317,7 +317,7 @@ export default function CloudModernization() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 eb-garamond"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6"
             >
               Ready to modernize your infrastructure?
             </motion.h2>

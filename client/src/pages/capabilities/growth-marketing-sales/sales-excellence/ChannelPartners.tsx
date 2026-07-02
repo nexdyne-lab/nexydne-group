@@ -21,10 +21,10 @@ export default function ChannelPartners() {
                 Sales Excellence
               </Link>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1] eb-garamond">
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1]">
               Channel Partner Management
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light ">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light">
               Scaling through ecosystems. We build the infrastructure for partner success, from portals to programmatic incentives.
             </p>
           </div>
@@ -85,7 +85,7 @@ export default function ChannelPartners() {
             </div>
 
             <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-6 eb-garamond">Programmatic Incentives</h2>
+              <h2 className="text-3xl font-bold text-charcoal mb-6">Programmatic Incentives</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Partners respond to incentives, but manual rebate processing is slow and error-prone. We help you implement "smart contracts" for partner incentives—automating payouts based on verified performance data. This builds trust and accelerates the feedback loop, encouraging partners to invest more in your solution.
               </p>

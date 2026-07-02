@@ -29,14 +29,14 @@ export default function AutomationROI() {
         Automation investments can deliver significant returns, but choosing where to start is challenging. This framework helps mid-size companies prioritize automation opportunities based on impact, feasibility, and strategic alignment.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         The Automation Opportunity
       </h2>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
         Advances in technology have made automation accessible to mid-size companies. From robotic process automation to intelligent document processing, the options are expanding rapidly.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         Key Takeaways
       </h2>
       <ul className="list-disc pl-6 text-charcoal/80 space-y-3 mb-8">

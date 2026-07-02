@@ -53,7 +53,7 @@ export default function Initiatives() {
             <span className="text-xs sm:text-sm font-semibold tracking-[0.2em] text-secondary uppercase mb-4 block">
               NEXDYNE INITIATIVES
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-charcoal leading-tight mb-3 eb-garamond">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-charcoal leading-tight mb-3">
               Building intelligent, competitive, and resilient mid-market businesses across the United States
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-3xl">

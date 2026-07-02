@@ -38,7 +38,7 @@ export default function FinancialPlanningAnalysis() {
                 <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Financial Intelligence</span>
               </div>
 
-              <h1 className="text-charcoal tracking-[-0.035em] leading-[1.0] text-[clamp(2.4rem,5.4vw,4.2rem)] eb-garamond">
+              <h1 className="text-charcoal tracking-[-0.035em] leading-[1.0] text-[clamp(2.4rem,5.4vw,4.2rem)]">
                 Financial Planning & Analysis
               </h1>
 

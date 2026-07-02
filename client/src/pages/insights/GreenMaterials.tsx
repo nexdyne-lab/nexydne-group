@@ -27,7 +27,7 @@ export default function GreenMaterials() {
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-4 leading-[1.1]">
               The Green Materials Revolution
             </h1>
-            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light ">
+            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light">
               From green steel to bio-based plastics, a wave of material innovation is reshaping industrial supply chains.
             </p>
           </div>

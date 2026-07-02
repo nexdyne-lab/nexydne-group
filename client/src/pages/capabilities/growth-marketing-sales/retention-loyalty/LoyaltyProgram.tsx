@@ -27,7 +27,7 @@ export default function LoyaltyProgram() {
               <Heart className="w-3 h-3 sm:w-4 sm:h-4" />
               <span>Behavioral Economics</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-charcoal mb-3 leading-tight eb-garamond">
+            <h1 className="text-5xl md:text-6xl font-bold text-charcoal mb-3 leading-tight">
               Loyalty Program <span className="text-secondary">Design</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground/50 max-w-2xl leading-relaxed">
@@ -42,7 +42,7 @@ export default function LoyaltyProgram() {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
             <div>
-              <h2 className="text-3xl font-bold text-charcoal mb-6 eb-garamond">
+              <h2 className="text-3xl font-bold text-charcoal mb-6">
                 Beyond "Points for Purchases"
               </h2>
               <div className="prose prose-lg text-muted-foreground">

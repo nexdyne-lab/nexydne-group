@@ -163,7 +163,7 @@ export function CapabilitiesExplorer() {
           >
             {/* Headline */}
             <h2 
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] text-charcoal leading-[1.1] mb-4 sm:mb-6 eb-garamond"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] text-charcoal leading-[1.1] mb-4 sm:mb-6"
             >
               How can we assist you today?
             </h2>

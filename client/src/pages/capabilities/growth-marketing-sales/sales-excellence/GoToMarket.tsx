@@ -21,10 +21,10 @@ export default function GoToMarket() {
                 Sales Excellence
               </Link>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1] eb-garamond">
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1]">
               Go-to-Market Strategy
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light ">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light">
               Defining the "deployment plan" for your products. We align product, marketing, and sales to execute a coordinated market attack.
             </p>
           </div>
@@ -85,7 +85,7 @@ export default function GoToMarket() {
             </div>
 
             <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-6 eb-garamond">The "Full-Stack" GTM Team</h2>
+              <h2 className="text-3xl font-bold text-charcoal mb-6">The "Full-Stack" GTM Team</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Silos kill velocity. We help you organize cross-functional "pods" that include product, marketing, and sales representation. These pods operate like agile squads, iterating on messaging, pricing, and feature sets in real-time based on market feedback. This "DevOps for Sales" approach ensures that your GTM strategy is always in sync with market reality.
               </p>

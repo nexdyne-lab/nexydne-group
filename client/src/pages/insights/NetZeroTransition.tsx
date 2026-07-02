@@ -27,7 +27,7 @@ export default function NetZeroTransition() {
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-4 leading-[1.1]">
               The Net Zero Transition: What it would cost, what it could bring
             </h1>
-            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light ">
+            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light">
               A comprehensive analysis of the economic transformation required to achieve net-zero emissions by 2050.
             </p>
           </div>

@@ -60,7 +60,7 @@ export default function CustomModelTuning() {
               Custom Model Tuning
             </span>
             
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.05] eb-garamond">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.05]">
               Custom Model <br />
               <span className="text-primary">Tuning</span>
             </h1>
@@ -94,7 +94,7 @@ export default function CustomModelTuning() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               What We Do
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 eb-garamond">What we do</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">What we do</h2>
             <p className="text-base sm:text-lg md:text-xl text-charcoal/70 leading-relaxed">
               We specialize in adapting state-of-the-art open-source models to your specific business domain, creating highly specialized tools that outperform generic alternatives.
             </p>
@@ -148,7 +148,7 @@ export default function CustomModelTuning() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
               The Value
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">Why tune your own models?</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">Why tune your own models?</h2>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">
               Custom model tuning offers a strategic advantage by combining the power of large language models with the specificity of your unique data and requirements.
             </p>
@@ -199,7 +199,7 @@ export default function CustomModelTuning() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 eb-garamond">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
                 Your Data, <br/>
                 <span className="text-primary">Your Intelligence</span>
               </h2>
@@ -253,7 +253,7 @@ export default function CustomModelTuning() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
               Case Studies
             </span>
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6 eb-garamond">How Custom Model Tuning is changing industries</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6">How Custom Model Tuning is changing industries</h2>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -322,7 +322,7 @@ export default function CustomModelTuning() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Capabilities
             </span>
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 eb-garamond">Precision Engineering for AI</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6">Precision Engineering for AI</h2>
             <p className="text-charcoal/70 text-lg">
               We leverage state-of-the-art techniques to adapt powerful foundation models to your specific needs.
             </p>
@@ -395,7 +395,7 @@ export default function CustomModelTuning() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
                 Our Methodology
               </span>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">
                 The Tuning Process
               </h2>
               <p className="text-muted-foreground text-lg mb-6 sm:mb-8 md:mb-12">
@@ -477,7 +477,7 @@ export default function CustomModelTuning() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-5xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">
+            <h2 className="text-3xl md:text-5xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">
               Own your intelligence
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-charcoal/90 max-w-2xl mx-auto mb-10">

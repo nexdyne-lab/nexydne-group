@@ -27,7 +27,7 @@ export default function CustomerHealth() {
               <Activity className="w-3 h-3 sm:w-4 sm:h-4" />
               <span>Customer Success Operations</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-charcoal mb-3 leading-tight eb-garamond">
+            <h1 className="text-5xl md:text-6xl font-bold text-charcoal mb-3 leading-tight">
               Customer Health <span className="text-secondary">Scoring</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground/50 max-w-2xl leading-relaxed">
@@ -42,7 +42,7 @@ export default function CustomerHealth() {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
             <div>
-              <h2 className="text-3xl font-bold text-charcoal mb-6 eb-garamond">
+              <h2 className="text-3xl font-bold text-charcoal mb-6">
                 The Pulse of Your Customer Base
               </h2>
               <div className="prose prose-lg text-muted-foreground">

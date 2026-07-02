@@ -30,28 +30,28 @@ export default function MAPlaybook() {
         Acquisitions can accelerate growth, expand capabilities, and create competitive advantage. But for mid-market companies without dedicated M&A teams, the process can be daunting. This playbook provides a practical framework for successful acquisitions.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         Why Mid-Market Companies Acquire
       </h2>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
         The most successful mid-market acquirers pursue deals for clear strategic reasons: geographic expansion, capability addition, customer access, or talent acquisition. Opportunistic deals without strategic rationale rarely deliver expected value.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         Building Your M&A Capability
       </h2>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
         Even without a dedicated team, mid-market companies can build effective M&A capabilities through clear strategy, systematic processes, and selective use of external advisors.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         The Integration Imperative
       </h2>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
         Integration is where most acquisitions succeed or fail. Planning should begin before the deal closes and address people, processes, systems, and culture.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         Key Takeaways
       </h2>
       <ul className="list-disc pl-6 text-charcoal/80 space-y-3 mb-8">

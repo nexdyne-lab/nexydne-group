@@ -27,7 +27,7 @@ export default function CarbonMarkets() {
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-4 leading-[1.1]">
               Carbon Markets 2025: From Voluntary to Compliance
             </h1>
-            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light ">
+            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light">
               As regulatory frameworks tighten, the distinction between voluntary and compliance carbon markets is blurring. Here is what business leaders need to know.
             </p>
           </div>

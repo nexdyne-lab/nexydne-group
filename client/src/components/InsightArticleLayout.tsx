@@ -133,17 +133,7 @@ export default function InsightArticleLayout({
               transition={{ duration: 0.6, delay: 0.2 }}
               className="lg:col-span-8"
             >
-              <div className="prose prose-lg max-w-none 
- prose-headings: prose-headings:text-charcoal prose-headings:font-bold
- prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-12 prose-h2:mb-6
- prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-8 prose-h3:mb-4
- prose-p:text-charcoal/70 prose-p:leading-relaxed prose-p:mb-6
- prose-li:text-charcoal/70 prose-li:leading-relaxed
- prose-strong:text-charcoal prose-strong:font-semibold
- prose-em:text-charcoal/80
- prose-ul:my-6 prose-ol:my-6
- prose-a:text-primary prose-a:no-underline hover:prose-a:underline
- ">
+              <div className="prose prose-lg max-w-none prose-headings: prose-headings:text-charcoal prose-headings:font-bold prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-p:text-charcoal/70 prose-p:leading-relaxed prose-p:mb-6 prose-li:text-charcoal/70 prose-li:leading-relaxed prose-strong:text-charcoal prose-strong:font-semibold prose-em:text-charcoal/80 prose-ul:my-6 prose-ol:my-6 prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
                 {children}
               </div>
 

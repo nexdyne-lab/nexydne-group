@@ -38,7 +38,7 @@ export default function AIGovernance() {
         slowing innovation.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Why AI Governance Matters Now
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -53,7 +53,7 @@ export default function AIGovernance() {
         to stakeholder concerns. Good governance accelerates AI, it doesn't slow it down.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
         The Four Pillars of AI Governance
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -117,7 +117,7 @@ export default function AIGovernance() {
         <li><strong>Security measures:</strong> Protecting AI systems from attacks and misuse</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Building Your Governance Framework
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -164,7 +164,7 @@ export default function AIGovernance() {
         <li>Develop incident response procedures for AI failures</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Risk-Based Classification
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -201,7 +201,7 @@ export default function AIGovernance() {
         </table>
       </div>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Practical Governance Tools
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -215,7 +215,7 @@ export default function AIGovernance() {
         <li><strong>Review meeting agenda:</strong> Guides regular governance discussions</li>
       </ul>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-4">
         Common Governance Pitfalls
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">

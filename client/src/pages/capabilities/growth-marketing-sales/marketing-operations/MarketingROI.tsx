@@ -24,7 +24,7 @@ export default function MarketingROI() {
               <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
               Back to Marketing Operations
             </Link>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 leading-tight eb-garamond">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 leading-tight">
               Marketing Return on Investment (MROI)
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-charcoal/70 max-w-3xl font-light leading-relaxed">
@@ -38,7 +38,7 @@ export default function MarketingROI() {
       <section className="py-20 bg-white">
         <div className="container mx-auto max-w-4xl px-4">
           <div className="prose prose-lg max-w-none text-muted-foreground">
-            <h2 className="text-3xl font-bold text-base mb-6 eb-garamond">
+            <h2 className="text-3xl font-bold text-base mb-6">
               Precision in Performance Measurement
             </h2>
             <p className="mb-6 text-xl font-light text-charcoal">
@@ -117,7 +117,7 @@ export default function MarketingROI() {
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <h2 className="text-3xl font-bold text-base mb-6 eb-garamond">
+              <h2 className="text-3xl font-bold text-base mb-6">
                 Strategic Financial Frameworks
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
@@ -154,7 +154,7 @@ export default function MarketingROI() {
       {/* CTA */}
       <section className="py-20 bg-white border-t border-border">
         <div className="container mx-auto max-w-4xl px-4 text-center">
-          <h2 className="text-3xl font-bold text-base mb-6 eb-garamond">
+          <h2 className="text-3xl font-bold text-base mb-6">
             Maximize Your Marketing Impact
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-5 sm:mb-6 md:mb-8">

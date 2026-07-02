@@ -35,7 +35,7 @@ export default function StrategicFinanceGuide() {
         The role of the CFO has evolved dramatically over the past decade. Today's mid-market CFOs are expected to be strategic partners to the CEO, not just financial stewards. This guide outlines how finance leaders at growing companies can make this transition while maintaining operational excellence.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         The Evolution of the CFO Role
       </h2>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
@@ -45,7 +45,7 @@ export default function StrategicFinanceGuide() {
         For mid-market companies—typically those with $50M to $500M in revenue—this evolution presents both challenges and opportunities. Unlike their counterparts at large enterprises, mid-market CFOs often lack large teams and sophisticated systems. Yet they face similar strategic demands from boards, investors, and management teams.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         Five Pillars of Strategic Finance
       </h2>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
@@ -87,7 +87,7 @@ export default function StrategicFinanceGuide() {
         Building a strategic finance function requires strategic finance talent. The best CFOs invest heavily in developing their teams, hiring for analytical capability and business acumen rather than just technical accounting skills.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         Making the Transition
       </h2>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
@@ -121,7 +121,7 @@ export default function StrategicFinanceGuide() {
         </ul>
       </div>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         Measuring Success
       </h2>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
@@ -162,7 +162,7 @@ export default function StrategicFinanceGuide() {
         </table>
       </div>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         Key Takeaways
       </h2>
       <ul className="list-disc pl-6 text-charcoal/80 space-y-3 mb-8">

@@ -29,7 +29,7 @@ export default function ProcessOrchestration() {
         
         <div className="container relative py-16 sm:py-20 md:py-24 lg:py-16 sm:py-20 md:py-24 lg:py-32">
           <div className="max-w-5xl">
-            <h1 className="text-6xl md:text-7xl font-bold mb-5 sm:mb-3 md:mb-4 leading-tight eb-garamond">
+            <h1 className="text-6xl md:text-7xl font-bold mb-5 sm:mb-3 md:mb-4 leading-tight">
               Process Orchestration
             </h1>
             <p className="text-2xl leading-relaxed opacity-90 max-w-3xl">

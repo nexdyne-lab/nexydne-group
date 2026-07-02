@@ -24,7 +24,7 @@ export default function MarketingAutomation() {
               <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
               Back to Marketing Operations
             </Link>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 leading-tight eb-garamond">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 leading-tight">
               Intelligent Marketing Automation
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-primary max-w-3xl font-light leading-relaxed">
@@ -38,7 +38,7 @@ export default function MarketingAutomation() {
       <section className="py-20 bg-white">
         <div className="container mx-auto max-w-4xl px-4">
           <div className="prose prose-lg max-w-none text-muted-foreground">
-            <h2 className="text-3xl font-bold text-base mb-6 eb-garamond">
+            <h2 className="text-3xl font-bold text-base mb-6">
               Orchestrating the Perfect Customer Journey
             </h2>
             <p className="mb-6">
@@ -101,7 +101,7 @@ export default function MarketingAutomation() {
       {/* Platforms We Support */}
       <section className="py-20 bg-off-white">
         <div className="container mx-auto max-w-6xl px-4 text-center">
-          <h2 className="text-3xl font-bold text-base mb-6 sm:mb-8 md:mb-12 eb-garamond">
+          <h2 className="text-3xl font-bold text-base mb-6 sm:mb-8 md:mb-12">
             Enterprise-Grade Platform Expertise
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:p-6 md:p-8 items-center opacity-70 grayscale hover:grayscale-0 transition duration-500">
@@ -117,7 +117,7 @@ export default function MarketingAutomation() {
       {/* CTA */}
       <section className="py-20 bg-white border-t border-border">
         <div className="container mx-auto max-w-4xl px-4 text-center">
-          <h2 className="text-3xl font-bold text-base mb-6 eb-garamond">
+          <h2 className="text-3xl font-bold text-base mb-6">
             Accelerate Your Revenue Engine
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-5 sm:mb-6 md:mb-8">

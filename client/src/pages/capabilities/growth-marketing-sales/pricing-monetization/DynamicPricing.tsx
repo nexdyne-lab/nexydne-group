@@ -24,10 +24,10 @@ export default function DynamicPricing() {
               <span className="mx-2">/</span>
               <span className="text-primary">Dynamic Pricing Models</span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1] eb-garamond">
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-charcoal mb-2 sm:mb-3 md:mb-4 leading-[1.1]">
               Dynamic Pricing Models
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light ">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal leading-relaxed max-w-3xl font-light">
               Move beyond static price lists. We implement algorithmic pricing engines that adapt to market conditions in real-time, maximizing yield for every transaction.
             </p>
           </div>
@@ -54,7 +54,7 @@ export default function DynamicPricing() {
 
             {/* Key Benefits */}
             <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">The Value of Agility</h2>
+              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">The Value of Agility</h2>
               <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-8">
                 <div className="bg-off-white p-4 sm:p-6 md:p-8 rounded-sm border border-border">
                   <h3 className="text-xl font-bold text-charcoal mb-4">Maximize Yield</h3>
@@ -87,10 +87,10 @@ export default function DynamicPricing() {
 
             {/* Methodology */}
             <section>
-              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8 eb-garamond">Our Approach</h2>
+              <h2 className="text-3xl font-bold text-charcoal mb-5 sm:mb-6 md:mb-8">Our Approach</h2>
               <div className="space-y-8">
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">1</div>
+                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl">1</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Data Ingestion & Analysis</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -99,7 +99,7 @@ export default function DynamicPricing() {
                   </div>
                 </div>
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">2</div>
+                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl">2</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Algorithm Design & Guardrails</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -108,7 +108,7 @@ export default function DynamicPricing() {
                   </div>
                 </div>
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">3</div>
+                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl">3</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Pilot & A/B Testing</h3>
                     <p className="text-muted-foreground leading-relaxed">
@@ -117,7 +117,7 @@ export default function DynamicPricing() {
                   </div>
                 </div>
                 <div className="flex gap-4 sm:p-5 md:p-6">
-                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl ">4</div>
+                  <div className="w-12 h-12 bg-primary/5 flex items-center justify-center rounded-full flex-shrink-0 text-primary font-bold text-xl">4</div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Full Integration & Monitoring</h3>
                     <p className="text-muted-foreground leading-relaxed">

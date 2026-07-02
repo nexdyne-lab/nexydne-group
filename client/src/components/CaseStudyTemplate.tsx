@@ -1,5 +1,5 @@
 // CaseStudyTemplate.tsx — PR 2 rewrite
-// Changes: removed lucide-react, shadcn Button, font-serif, gradient overlays,
+// Changes: removed lucide-react, shadcn Button,, gradient overlays,
 // bg-blue-* colors, rounded pills/cards. Light editorial layout with
 // split-grid hero (image left, text right) matching Home.tsx Careers section.
 // Metric grid replaces icon+text layout. Pullquote is typography-only.

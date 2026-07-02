@@ -35,7 +35,7 @@ export default function HowAIAgentsTransformInsight() {
               <span className="text-primary text-sm font-semibold tracking-wider uppercase mb-4 block">
                 Technology
               </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-3 text-charcoal ">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-3 text-charcoal">
                 How AI Agents Transform Enterprise Operations
               </h1>
               <p className="text-xl text-charcoal/70 leading-relaxed mb-8">
@@ -78,7 +78,7 @@ export default function HowAIAgentsTransformInsight() {
                 The enterprise automation landscape is undergoing a fundamental transformation. Traditional automation—characterized by rigid, rule-based workflows—is giving way to a new paradigm: AI agents that can perceive, reason, and act with increasing autonomy.
               </p>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">Understanding AI Agents</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Understanding AI Agents</h2>
               
               <p className="text-charcoal/80 leading-relaxed mb-6">
                 An AI agent is a software entity that can perceive its environment, make decisions, and take actions to achieve specific goals. Unlike traditional automation that follows predetermined scripts, AI agents can adapt to new situations, learn from experience, and handle exceptions without human intervention.
@@ -104,7 +104,7 @@ export default function HowAIAgentsTransformInsight() {
                 ))}
               </div>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">The Evolution from RPA to AI Agents</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">The Evolution from RPA to AI Agents</h2>
 
               <p className="text-charcoal/80 leading-relaxed mb-6">
                 Robotic Process Automation (RPA) revolutionized enterprise operations by automating repetitive, rule-based tasks. However, RPA has inherent limitations: it struggles with unstructured data, cannot handle exceptions gracefully, and requires significant maintenance as underlying systems change.
@@ -121,7 +121,7 @@ export default function HowAIAgentsTransformInsight() {
                 </p>
               </blockquote>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">Enterprise Use Cases</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Enterprise Use Cases</h2>
 
               <h3 className="text-xl font-bold text-charcoal mt-8 mb-4">Customer Service Transformation</h3>
               <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -172,7 +172,7 @@ export default function HowAIAgentsTransformInsight() {
                 </table>
               </div>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">Implementation Considerations</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Implementation Considerations</h2>
 
               <p className="text-charcoal/80 leading-relaxed mb-6">
                 Successfully deploying AI agents requires careful attention to several factors:
@@ -194,7 +194,7 @@ export default function HowAIAgentsTransformInsight() {
                 <strong>Change Management:</strong> Introducing AI agents changes how work gets done. Organizations must invest in training, communication, and cultural change to realize the full potential of agent-based automation.
               </p>
 
-              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 ">The Road Ahead</h2>
+              <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">The Road Ahead</h2>
 
               <p className="text-charcoal/80 leading-relaxed mb-6">
                 AI agents are still in the early stages of enterprise adoption, but the trajectory is clear. As the technology matures and organizations build experience, we expect to see AI agents taking on increasingly complex, high-value work.
@@ -287,7 +287,7 @@ export default function HowAIAgentsTransformInsight() {
       <section className="py-16 md:py-20 bg-subtle">
         <div className="container px-4 md:px-8 lg:px-12">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-8 ">More Insights</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-8">More Insights</h2>
             
             <div className="grid md:grid-cols-3 gap-8">
               {[

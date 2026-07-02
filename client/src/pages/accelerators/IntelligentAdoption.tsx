@@ -148,7 +148,7 @@ export default function IntelligentAdoption() {
             >
               <Breadcrumbs variant="light" />
               
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-4 eb-garamond">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-4">
                 Intelligent Adoption
               </h1>
               
@@ -186,7 +186,7 @@ export default function IntelligentAdoption() {
             <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Core Capabilities
             </motion.span>
-            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
+            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               People-centered transformation
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
@@ -239,7 +239,7 @@ export default function IntelligentAdoption() {
             <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Our Framework
             </motion.span>
-            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
+            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               The NexDyne Adoption Framework
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
@@ -296,7 +296,7 @@ export default function IntelligentAdoption() {
               <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
                 What Drives Success
               </motion.span>
-              <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
+              <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
                 The four pillars of successful adoption
               </motion.h2>
               <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed mb-8">
@@ -340,7 +340,7 @@ export default function IntelligentAdoption() {
             <motion.span variants={fadeInUp} className="text-xs font-medium tracking-[0.2em] text-muted-foreground uppercase mb-4 block">
               Industry Applications
             </motion.span>
-            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
+            <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               Adoption excellence in action
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-lg text-muted-foreground leading-relaxed">
@@ -384,7 +384,7 @@ export default function IntelligentAdoption() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 eb-garamond"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6"
             >
               Ready to ensure your transformation succeeds?
             </motion.h2>

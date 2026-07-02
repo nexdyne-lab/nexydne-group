@@ -37,7 +37,7 @@ export default function CampaignAnalytics() {
               </span>
             </Link>
             
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-2 sm:mb-3 md:mb-4 eb-garamond">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-2 sm:mb-3 md:mb-4">
               Campaign Performance <br />
               <span className="text-primary">Analytics</span>
             </h1>
@@ -69,7 +69,7 @@ export default function CampaignAnalytics() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-xl sm:text-2xl font-bold mb-8 sm:mb-12 eb-garamond">Our Experience</h2>
+            <h2 className="text-xl sm:text-2xl font-bold mb-8 sm:mb-12">Our Experience</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
               <div className="border-l-2 border-primary pl-6">
                 <div className="text-4xl sm:text-5xl font-bold text-charcoal mb-2">85+</div>
@@ -98,7 +98,7 @@ export default function CampaignAnalytics() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
-            <div className="space-y-8 text-lg sm:text-xl text-charcoal/80 leading-relaxed ">
+            <div className="space-y-8 text-lg sm:text-xl text-charcoal/80 leading-relaxed">
               <p>
                 Marketing teams drown in data but starve for insight. Dashboards overflow with metrics—impressions, clicks, opens, downloads—yet the fundamental question remains unanswered: which activities actually drive revenue? The gap between campaign execution and business outcomes is where most analytics programs fail.
               </p>
@@ -129,7 +129,7 @@ export default function CampaignAnalytics() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
               What We Do
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">Our analytics capabilities</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">Our analytics capabilities</h2>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">
               We build analytics systems that turn marketing data into actionable intelligence:
             </p>
@@ -196,7 +196,7 @@ export default function CampaignAnalytics() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
               Examples of Our Work
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">Examples of our work</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">Examples of our work</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4 sm:p-6 md:p-8 lg:gap-10">
@@ -261,7 +261,7 @@ export default function CampaignAnalytics() {
             <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-muted-foreground mb-4 sm:mb-6 block">
               Featured Capabilities
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">Related capabilities</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">Related capabilities</h2>
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4 sm:p-6 md:p-8 lg:gap-10">
@@ -327,7 +327,7 @@ export default function CampaignAnalytics() {
               <span className="text-xs font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] text-primary mb-4 sm:mb-6 block">
                 Insights
               </span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal eb-garamond">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal">
                 The Latest on Marketing Analytics
               </h2>
             </motion.div>
@@ -407,7 +407,7 @@ export default function CampaignAnalytics() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6 eb-garamond">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal mb-6">
               Ready to measure what matters?
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-10">

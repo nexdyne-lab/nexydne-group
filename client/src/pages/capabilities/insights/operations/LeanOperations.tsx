@@ -29,21 +29,21 @@ export default function LeanOperations() {
         Lean principles have transformed manufacturing and service operations worldwide. But most lean methodologies were developed for large enterprises with dedicated continuous improvement teams. This guide adapts lean techniques for mid-size companies with limited resources.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         Lean Principles for Mid-Size Companies
       </h2>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
         The core principles of lean—eliminating waste, continuous improvement, and respect for people—apply regardless of company size. However, the implementation approach must be adapted for organizations without dedicated lean teams.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         High-Impact Lean Tools
       </h2>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
         Not all lean tools deliver equal value for mid-size companies. We recommend starting with value stream mapping, 5S, and visual management before advancing to more complex techniques.
       </p>
 
-      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6 eb-garamond">
+      <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         Key Takeaways
       </h2>
       <ul className="list-disc pl-6 text-charcoal/80 space-y-3 mb-8">
