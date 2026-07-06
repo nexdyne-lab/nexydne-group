@@ -242,7 +242,9 @@ export function BainHeroCarousel() {
       />
 
       {/* --- Foreground content --- */}
-      <div className="relative z-10 mx-auto flex h-full max-w-[1500px] flex-col px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+      {/* container geometry mirrors Navigation's bar (max-w + px) so the
+          headline's left edge aligns with the nav logo block, Bain-style */}
+      <div className="relative z-10 mx-auto flex h-full max-w-[1500px] flex-col px-3 md:px-6 lg:px-12">
         <div className="flex flex-1 items-center pt-32">
           <AnimatePresence mode="wait">
             <motion.div

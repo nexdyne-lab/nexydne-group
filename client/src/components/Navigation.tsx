@@ -417,7 +417,7 @@ export default function Navigation() {
               <img
                 src={isNavbarLight ? "/brand/logo-mixed.svg" : "/brand/logo-white.svg"}
                 alt="NexDyne Consulting Group"
-                className="h-6 md:h-9 w-auto"
+                className="h-6 md:h-8 w-auto"
               />
             </Link>
 
