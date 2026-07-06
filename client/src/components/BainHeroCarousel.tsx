@@ -105,14 +105,9 @@ function CharcoalCanvas({
           backgroundImage: `radial-gradient(48% 62% at ${at}, ${color} 0%, transparent 62%)`,
         }}
       />
-      {/* charcoal scrim, heaviest on the left — keeps the headline column clean */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage:
-            "linear-gradient(96deg, rgba(20,20,20,0.97) 0%, rgba(24,24,24,0.9) 22%, rgba(28,28,28,0.6) 46%, rgba(30,30,30,0.28) 70%, rgba(30,30,30,0.08) 100%)",
-        }}
-      />
+      {/* warm image treatment — flat veil + amber wash, no gradient (user call) */}
+      <div className="absolute inset-0 nx-img-warm" />
+      <div className="absolute inset-0 nx-img-veil" />
       {/* faint structural striations for texture */}
       <div
         className="absolute inset-0 opacity-[0.04] mix-blend-soft-light"
@@ -224,14 +219,6 @@ export function BainHeroCarousel() {
         </div>
       ))}
 
-      {/* subtle top/bottom vignette for nav + navigator legibility */}
-      <div
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(0,0,0,0.32) 0%, transparent 30%, transparent 74%, rgba(0,0,0,0.30) 100%)",
-        }}
-      />
       {/* grain */}
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.05] mix-blend-overlay"

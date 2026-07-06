@@ -102,9 +102,9 @@ export function OperationalExcellence() {
                     aria-hidden
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-[1.06]"
                   />
-                  {/* Warm image treatment — shared amber wash + espresso scrim */}
+                  {/* Warm image treatment — amber wash + flat veil, no gradient */}
                   <div aria-hidden className="absolute inset-0 nx-img-warm" />
-                  <div aria-hidden className="absolute inset-0 nx-img-scrim" />
+                  <div aria-hidden className="absolute inset-0 nx-img-veil" />
                   {/* Slight deepen on hover, opacity-only per animation rules */}
                   <div
                     aria-hidden
