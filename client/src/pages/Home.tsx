@@ -367,8 +367,8 @@ export default function Home() {
                   className="group"
                 >
                   <Link href={article.link}>
-                    <div className="flex gap-5 sm:gap-6 cursor-pointer border border-charcoal/10 bg-white p-5 sm:p-6">
-                      <div className="w-1/3 sm:w-2/5 shrink-0 aspect-[4/3] overflow-hidden bg-off-white">
+                    <div className="flex flex-col sm:flex-row gap-5 sm:gap-6 cursor-pointer border border-charcoal/10 bg-white p-5 sm:p-6">
+                      <div className="w-full aspect-[16/9] sm:w-2/5 sm:aspect-[4/3] shrink-0 overflow-hidden bg-off-white">
                         <img
                           src={article.image}
                           alt={article.title}
