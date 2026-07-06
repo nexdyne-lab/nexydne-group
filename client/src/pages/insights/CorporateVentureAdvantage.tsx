@@ -42,9 +42,8 @@ export default function CorporateVentureAdvantage() {
       publishDate="December 12, 2024"
       heroImage="/images/industries/team-strategy-board.jpg"
       heroImageAlt="Corporate Venture Advantage"
-      authorName="David D. Seyaker"
-      authorRole="Founder & CEO, NexDyne Technologies"
-      authorImage="https://placehold.co/160x160/242424/F7F9FC?text=DS"
+      authorName="David Seyaker"
+      authorRole="Co-Founder & Chief Executive, NexDyne Consulting Group"
       relatedInsights={relatedInsights}
     >
       <p>

@@ -434,12 +434,10 @@ export default function TeamMemberProfile() {
           <div className="max-w-2xl mx-auto text-center">
             <h1 className="text-4xl font-bold text-charcoal mb-4">Team Member Not Found</h1>
             <p className="text-lg text-muted-foreground mb-5 sm:mb-6 md:mb-8">The team member you're looking for doesn't exist.</p>
-            <Link href="/team">
-              <a className="inline-flex items-center gap-2 px-6 py-3 bg-charcoal text-white font-semibold rounded-lg hover:bg-charcoal transition-colors">
+            <Link href="/team" className="inline-flex items-center gap-2 px-6 py-3 bg-charcoal text-white font-semibold rounded-lg hover:bg-charcoal transition-colors">
                 <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4" />
                 Back to Team
-              </a>
-            </Link>
+              </Link>
           </div>
         </div>
         <Footer />
@@ -454,12 +452,10 @@ export default function TeamMemberProfile() {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-off-white via-white to-primary/20 pt-32 pb-16">
         <div className="container">
-          <Link href="/team">
-            <a className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground hover:text-charcoal transition-colors mb-5 sm:mb-6 md:mb-8">
+          <Link href="/team" className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground hover:text-charcoal transition-colors mb-5 sm:mb-6 md:mb-8">
               <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4" />
               Back to Team
-            </a>
-          </Link>
+            </Link>
 
           <div className="grid lg:grid-cols-[300px_1fr] gap-6 sm:gap-8 lg:gap-12 items-start max-w-6xl">
             {/* Profile Image */}
@@ -663,11 +659,9 @@ export default function TeamMemberProfile() {
               >
                 Schedule Consultation
               </a>
-              <Link href="/team">
-                <a className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white/30 text-white font-semibold rounded-lg sm:rounded-xl hover:bg-white/10 hover:border-white/50 transition backdrop-blur-sm">
+              <Link href="/team" className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white/30 text-white font-semibold rounded-lg sm:rounded-xl hover:bg-white/10 hover:border-white/50 transition backdrop-blur-sm">
                   View All Team Members
-                </a>
-              </Link>
+                </Link>
             </div>
           </div>
         </div>

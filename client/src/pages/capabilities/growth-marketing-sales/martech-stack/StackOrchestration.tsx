@@ -35,12 +35,10 @@ const StackOrchestration = () => {
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact">
-                <a className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition duration-300 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
+              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition duration-300 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
                   Request Stack Audit
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
-                </a>
-              </Link>
+                </Link>
             </div>
           </div>
         </div>
@@ -169,11 +167,9 @@ const StackOrchestration = () => {
                 See how we've helped organizations transform their MarTech stacks into scalable growth engines.
               </p>
             </div>
-            <Link href="/cases">
-              <a className="inline-flex items-center font-bold text-primary hover:text-primary transition-colors">
+            <Link href="/cases" className="inline-flex items-center font-bold text-primary hover:text-primary transition-colors">
                 View all cases <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
-              </a>
-            </Link>
+              </Link>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8">
@@ -203,8 +199,7 @@ const StackOrchestration = () => {
                 link: "/cases/saas-product-analytics"
               }
             ].map((story, index) => (
-              <Link key={index} href={story.link}>
-                <a className="group block h-full bg-off-white rounded-xl sm:rounded-2xl overflow-hidden hover:shadow-lg transition duration-300 border border-border">
+              <Link key={index} href={story.link} className="group block h-full bg-off-white rounded-xl sm:rounded-2xl overflow-hidden hover:shadow-lg transition duration-300 border border-border">
                   <div className="p-4 sm:p-6 md:p-8 h-full flex flex-col">
                     <div className="text-xs font-bold text-primary uppercase tracking-wider mb-4">
                       {story.category}
@@ -224,8 +219,7 @@ const StackOrchestration = () => {
                       </div>
                     </div>
                   </div>
-                </a>
-              </Link>
+                </Link>
             ))}
           </div>
         </div>
@@ -287,12 +281,10 @@ const StackOrchestration = () => {
             Stop paying for shelfware and broken integrations. Let's build a stack that actually works.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link href="/contact">
-              <a className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition duration-300">
+            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition duration-300">
                 Start Your Audit
                 <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
-              </a>
-            </Link>
+              </Link>
           </div>
         </div>
       </section>

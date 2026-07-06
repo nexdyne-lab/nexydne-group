@@ -42,9 +42,8 @@ export default function DataLakeToValueStream() {
       publishDate="September 20, 2024"
       heroImage="/images/capabilities/cap-hands-data.jpg"
       heroImageAlt="Data Lake to Value Stream"
-      authorName="Dr. Amara Okonkwo"
-      authorRole="Chief Technology Officer, NexDyne"
-      authorImage="https://placehold.co/160x160/242424/F7F9FC?text=AO"
+      authorName="David Seyaker"
+      authorRole="Co-Founder & Chief Executive, NexDyne Consulting Group"
       relatedInsights={relatedInsights}
     >
       <p>

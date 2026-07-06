@@ -34,12 +34,10 @@ const SemanticInfrastructure = () => {
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact">
-                <a className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition duration-300 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
+              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition duration-300 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
                   Standardize Your Data
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
-                </a>
-              </Link>
+                </Link>
             </div>
           </div>
         </div>
@@ -150,11 +148,9 @@ const SemanticInfrastructure = () => {
                 See how we've helped organizations transform their data quality through rigorous semantic governance.
               </p>
             </div>
-            <Link href="/cases">
-              <a className="inline-flex items-center font-bold text-primary hover:text-primary transition-colors">
+            <Link href="/cases" className="inline-flex items-center font-bold text-primary hover:text-primary transition-colors">
                 View all cases <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
-              </a>
-            </Link>
+              </Link>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-8">
@@ -184,8 +180,7 @@ const SemanticInfrastructure = () => {
                 link: "/cases/financial-data-quality"
               }
             ].map((story, index) => (
-              <Link key={index} href={story.link}>
-                <a className="group block h-full bg-off-white rounded-xl sm:rounded-2xl overflow-hidden hover:shadow-lg transition duration-300 border border-border">
+              <Link key={index} href={story.link} className="group block h-full bg-off-white rounded-xl sm:rounded-2xl overflow-hidden hover:shadow-lg transition duration-300 border border-border">
                   <div className="p-4 sm:p-6 md:p-8 h-full flex flex-col">
                     <div className="text-xs font-bold text-primary uppercase tracking-wider mb-4">
                       {story.category}
@@ -205,8 +200,7 @@ const SemanticInfrastructure = () => {
                       </div>
                     </div>
                   </div>
-                </a>
-              </Link>
+                </Link>
             ))}
           </div>
         </div>
@@ -262,12 +256,10 @@ const SemanticInfrastructure = () => {
             Build a semantic foundation that makes your data trustworthy, actionable, and clear.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link href="/contact">
-              <a className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition duration-300">
+            <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition duration-300">
                 Design Your Schema
                 <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
-              </a>
-            </Link>
+              </Link>
           </div>
         </div>
       </section>

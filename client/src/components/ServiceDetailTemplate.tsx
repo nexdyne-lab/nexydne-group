@@ -156,8 +156,14 @@ export default function ServiceDetailTemplate(
                 transition={{ duration: 0.5, delay: index * 0.05 }}
                 className="text-center"
               >
-                <div className="text-[2.75rem] md:text-[3.5rem] text-white font-bold tracking-[-0.02em] leading-[1]">
-                  {stat.number}
+                <div
+                  className={`${
+                    Math.max(...stat.number.split(/\s+/).map((t) => t.length)) > 7
+                      ? "text-[1.75rem] md:text-[1.9rem] lg:text-[2.5rem] [overflow-wrap:anywhere]"
+                      : "text-[2.75rem] md:text-[3.5rem]"
+                  } text-white font-bold tracking-[-0.02em] leading-[1.05]`}
+                >
+                  {stat.number.replace(/-/g, "\u2011")}
                 </div>
                 <div className="text-[13px] uppercase tracking-[0.1em] text-white/85 mt-3 leading-[1.4]">
                   {stat.label}

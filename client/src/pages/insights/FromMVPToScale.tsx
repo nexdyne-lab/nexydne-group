@@ -42,9 +42,8 @@ export default function FromMVPToScale() {
       publishDate="November 28, 2024"
       heroImage="/images/industries/team-strategy-board.jpg"
       heroImageAlt="From MVP to Scale"
-      authorName="Sarah Chen"
-      authorRole="Head of Venture Building, NexDyne"
-      authorImage="https://placehold.co/160x160/242424/F7F9FC?text=SC"
+      authorName="Raphaelyn CN Bomosy-Forkpa"
+      authorRole="Co-Founder & Managing Partner, NexDyne Consulting Group"
       relatedInsights={relatedInsights}
     >
       <p>
