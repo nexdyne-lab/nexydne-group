@@ -102,8 +102,14 @@ export function OperationalExcellence() {
                     aria-hidden
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-[1.06]"
                   />
-                  {/* Charcoal authority overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/92 via-charcoal/65 to-charcoal/30 transition-opacity duration-500 group-hover:from-charcoal/95" />
+                  {/* Warm image treatment — shared amber wash + espresso scrim */}
+                  <div aria-hidden className="absolute inset-0 nx-img-warm" />
+                  <div aria-hidden className="absolute inset-0 nx-img-scrim" />
+                  {/* Slight deepen on hover, opacity-only per animation rules */}
+                  <div
+                    aria-hidden
+                    className="absolute inset-0 bg-charcoal/15 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  />
 
                   {/* Content */}
                   <div className="relative z-10 mt-auto p-8 lg:p-9 w-full">

@@ -246,6 +246,31 @@
   }
   @media (min-width: 768px)  { .nx-band { padding-left: 76px;  padding-right: 76px;  } }
   @media (min-width: 1024px) { .nx-band { padding-left: 100px; padding-right: 100px; } }
+
+  /* Warm image treatment — the ONE approved pair of overlays for photo tiles.
+     Both are absolutely-positioned layers over an <img> (parent: relative).
+
+       .nx-img-warm  — amber multiply wash that pulls any photo (even cool
+                       blue stock) toward the brand's warm palette. Subtle by
+                       design; raise the alpha only with a design review.
+       .nx-img-scrim — legibility gradient for white text sitting on the
+                       image. Warm espresso (not neutral black): dark enough
+                       at the baseline for text, opens up by mid-image so the
+                       photo stays visible. Replaces the old charcoal/92-65-30
+                       stack, which was judged too deep. */
+  .nx-img-warm {
+    background: rgba(224, 140, 60, 0.2);
+    mix-blend-mode: multiply;
+  }
+  .nx-img-scrim {
+    background: linear-gradient(
+      to top,
+      rgba(38, 26, 16, 0.9) 0%,
+      rgba(38, 26, 16, 0.7) 32%,
+      rgba(38, 26, 16, 0.34) 60%,
+      rgba(38, 26, 16, 0.05) 100%
+    );
+  }
 }
 
 @layer base {

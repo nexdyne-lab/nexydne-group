@@ -179,10 +179,11 @@ export default function Home() {
             className="relative min-h-[350px] lg:min-h-0 overflow-hidden"
           >
             <img
-              src="/images/ai-abstract-visualization.jpg"
+              src="/images/ai-technology-consulting.jpg"
               alt="AI and Technology Consulting"
               className="absolute inset-0 w-full h-full object-cover"
             />
+            <div aria-hidden className="absolute inset-0 nx-img-warm" />
           </motion.div>
 
           <motion.div
