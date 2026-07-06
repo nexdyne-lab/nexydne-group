@@ -42,7 +42,9 @@ export function getSessionCookieOptions(
   return {
     httpOnly: true,
     path: "/",
-    sameSite: "none",
+    // "lax" still allows the cookie on the top-level OAuth callback redirect
+    // while blocking cross-site request forgery on API mutations.
+    sameSite: "lax",
     secure: isSecureRequest(req),
   };
 }

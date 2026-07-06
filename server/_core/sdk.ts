@@ -156,6 +156,12 @@ class SDKServer {
 
   private getSessionSecret() {
     const secret = ENV.cookieSecret;
+    // Fail closed: an empty secret would make every session token forgeable.
+    if (!secret) {
+      throw new Error(
+        "JWT_SECRET is not set — refusing to sign or verify session tokens"
+      );
+    }
     return new TextEncoder().encode(secret);
   }
 
