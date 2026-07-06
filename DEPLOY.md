@@ -9,13 +9,13 @@ It fits Railway's persistent-server model — **stay on Railway; don't move to V
 is left unconfigured — the public site renders fine; auth/admin features stay dormant
 until those vars are set later.
 
-Replace `yourdomain.com` throughout with your real domain.
+
 
 ---
 
 ## 0. Prerequisites
 - Use **one company email** for Railway, Cloudflare, and Resend (ideally a domain
-  address like `admin@yourdomain.com`, not a personal Gmail).
+  address like `admin@nexdynegroup.com`, not a personal Gmail).
 - The repo is on GitHub (`nexdyne-lab/nexydne-group`), branch **`main`** has the
   brand-v2 work merged.
 
@@ -41,8 +41,8 @@ Replace `yourdomain.com` throughout with your real domain.
 ---
 
 ## 2. Cloudflare — DNS hub
-1. **dash.cloudflare.com → Add a site →** `yourdomain.com` (Free plan is fine).
-2. At your **domain registrar**, change the nameservers to the two Cloudflare gives you.
+1. **dash.cloudflare.com → Add a site →** `nexdynegroup.com` (Free plan is fine).
+2. At **GoDaddy** (the registrar), change the nameservers to the two Cloudflare gives you.
    Wait for Cloudflare to show the domain **Active** (minutes–hours).
 3. **SSL/TLS → Overview → set encryption mode to `Full (strict)`** (avoids cert
    loops with Railway's managed certificate).
@@ -51,25 +51,25 @@ Replace `yourdomain.com` throughout with your real domain.
 
 ## 3. Point the domain at Railway
 1. Railway → your service → **Settings → Networking → Custom Domain** → add
-   `www.yourdomain.com` (and/or `yourdomain.com`). Railway shows a **CNAME target**
+   `www.nexdynegroup.com` (and/or `nexdynegroup.com`). Railway shows a **CNAME target**
    like `xxxx.up.railway.app`.
 2. Cloudflare → **DNS → Records → Add record**:
    - Type `CNAME`, Name `www`, Target `<railway target>`, Proxy **On** (orange cloud).
-   - For the root/apex `yourdomain.com`, add a `CNAME` (Cloudflare flattens apex CNAMEs)
+   - For the root/apex `nexdynegroup.com`, add a `CNAME` (Cloudflare flattens apex CNAMEs)
      to the same target, or redirect apex → www via a Cloudflare Redirect Rule.
 3. Wait for Railway to show the domain **verified / certificate issued**, then load
-   `https://www.yourdomain.com`.
+   `https://www.nexdynegroup.com`.
 
 ---
 
 ## 4. Resend — transactional email
 1. **resend.com** → sign up with the company email → **Domains → Add Domain** →
-   `yourdomain.com`.
+   `nexdynegroup.com`.
 2. Resend gives **DKIM + SPF (and optionally DMARC)** records. In Cloudflare → DNS,
    add each exactly as shown (usually `TXT`/`CNAME`; set proxy **Off / DNS only** for
    these). Back in Resend, click **Verify**.
 3. Create an **API key** → set it in Railway: `RESEND_API_KEY=...` and
-   `EMAIL_FROM=noreply@yourdomain.com`.
+   `EMAIL_FROM=noreply@nexdynegroup.com`.
 4. Wiring Resend into the site (e.g. the contact/subscribe forms, which currently just
    log) is a follow-up code step — do it after the domain verifies.
 
