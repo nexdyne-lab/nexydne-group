@@ -113,7 +113,7 @@ export default function Home() {
               "radial-gradient(44% 56% at 0% 100%, rgba(224,76,44,0.09) 0%, transparent 56%)",
           }}
         />
-        <div className="relative px-6 sm:px-8 md:px-12 lg:px-16">
+        <div className="nx-band relative">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20 items-center">
             {/* Left (5/12) — eyebrow + headline */}
             <motion.div
@@ -226,7 +226,7 @@ export default function Home() {
               "radial-gradient(38% 50% at 100% 100%, rgba(255,180,29,0.09) 0%, transparent 55%)",
           }}
         />
-        <div className="relative px-6 sm:px-8 md:px-12 lg:px-16">
+        <div className="nx-band relative">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
             {/* Left — 40% */}
             <div className="lg:col-span-5">
@@ -296,7 +296,7 @@ export default function Home() {
 
       {/* 6. Latest Insights — flat cards with hairline borders */}
       <section className="nx-section bg-subtle">
-        <div className="px-6 sm:px-8 md:px-12 lg:px-16">
+        <div className="nx-band">
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-14 md:mb-16">
             <div className="max-w-3xl">
               <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
@@ -409,7 +409,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.05, margin: "0px 0px 80px 0px" }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="bg-off-white flex flex-col justify-center px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24 py-20 md:py-24"
+            className="bg-off-white flex flex-col justify-center px-4 sm:px-8 md:pl-[76px] md:pr-16 lg:pl-[100px] lg:pr-20 py-20 md:py-24"
           >
             <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 font-semibold mb-6 block">
               NexDyne Careers

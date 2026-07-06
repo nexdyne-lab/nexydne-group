@@ -55,7 +55,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 export function OperationalExcellence() {
   return (
     <section className="bg-background border-t border-border">
-      <div className="mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 nx-section">
+      <div className="nx-band nx-section">
         {/* Header — eyebrow + H2 left, intro right */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-20 items-end mb-12 lg:mb-16">
           <div className="lg:col-span-7">

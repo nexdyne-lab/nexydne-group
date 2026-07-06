@@ -386,7 +386,7 @@ export default function Navigation() {
 
         <div className="flex h-14 md:h-20 items-center justify-between w-full px-3 md:px-6 lg:px-12">
           {/* Left: Hamburger + Logo */}
-          <div className="flex items-center gap-1.5 md:gap-6">
+          <div className="flex items-center gap-1.5 md:gap-3">
             {/* Hamburger Button */}
             <button
               onClick={() => {

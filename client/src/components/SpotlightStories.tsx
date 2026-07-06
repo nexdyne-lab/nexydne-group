@@ -52,7 +52,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 export function SpotlightStories() {
   return (
     <section className="w-full bg-background border-t border-border">
-      <div className="mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 pt-20 pb-12 lg:pt-28 lg:pb-14">
+      <div className="nx-band pt-20 pb-12 lg:pt-28 lg:pb-14">
         {/* Section header */}
         <div className="max-w-[640px]">
           <div className="flex items-center gap-3 mb-5">
