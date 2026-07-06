@@ -35,7 +35,7 @@ export default function SocialShare({ title, url, className = "" }: SocialShareP
     }
     
     if (shareLink) {
-      window.open(shareLink, '_blank', 'width=600,height=400');
+      window.open(shareLink, '_blank', 'width=600,height=400,noopener,noreferrer');
     }
   };
 

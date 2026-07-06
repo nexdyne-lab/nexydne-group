@@ -50,14 +50,14 @@
     "@trpc/client": "^11.6.0",
     "@trpc/react-query": "^11.6.0",
     "@trpc/server": "^11.6.0",
-    "axios": "^1.12.0",
+    "axios": "^1.18.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
     "cookie": "^1.0.2",
     "date-fns": "^4.1.0",
     "dotenv": "^17.2.3",
-    "drizzle-orm": "^0.44.5",
+    "drizzle-orm": "^0.45.2",
     "embla-carousel-react": "^8.6.0",
     "express": "^4.21.2",
     "express-rate-limit": "^8.5.2",
@@ -65,7 +65,7 @@
     "html2canvas": "^1.4.1",
     "input-otp": "^1.4.2",
     "jose": "6.1.0",
-    "jspdf": "^3.0.4",
+    "jspdf": "^4.2.1",
     "lucide-react": "^0.453.0",
     "mysql2": "^3.15.0",
     "nanoid": "^5.1.5",
@@ -116,7 +116,13 @@
       "wouter@3.7.1": "patches/wouter@3.7.1.patch"
     },
     "overrides": {
-      "tailwindcss>nanoid": "3.3.7"
+      "tailwindcss>nanoid": "3.3.7",
+      "fast-xml-parser@<5.3.5": ">=5.3.5",
+      "path-to-regexp@<0.1.13": ">=0.1.13",
+      "lodash@<4.18.0": ">=4.18.0",
+      "lodash-es@<4.18.0": ">=4.18.0",
+      "form-data@<4.0.6": ">=4.0.6",
+      "dompurify@<3.4.9": ">=3.4.9"
     }
   }
 }

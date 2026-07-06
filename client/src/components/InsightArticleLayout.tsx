@@ -61,7 +61,7 @@ export default function InsightArticleLayout({
       return;
     }
     
-    window.open(shareUrls[platform], '_blank', 'width=600,height=400');
+    window.open(shareUrls[platform], '_blank', 'width=600,height=400,noopener,noreferrer');
   };
 
   return (

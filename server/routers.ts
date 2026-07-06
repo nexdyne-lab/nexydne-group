@@ -57,7 +57,15 @@ export const appRouter = router({
         });
         
         if (!result.success) {
-          throw new Error(result.error || "Failed to capture lead");
+          // Never block the visitor's download on storage problems (e.g. the
+          // marketing launch runs without DATABASE_URL). Log the lead so it
+          // is recoverable from server logs instead of silently lost.
+          console.error(
+            "[Leads] Capture failed, lead not persisted:",
+            result.error,
+            JSON.stringify({ email: input.email, caseStudyTitle: input.caseStudyTitle })
+          );
+          return { success: true, id: undefined, leadScore: 0 };
         }
 
         // Send notification to owner about new lead

@@ -42,10 +42,9 @@ export function useAuth(options?: UseAuthOptions) {
   }, [logoutMutation, utils]);
 
   const state = useMemo(() => {
-    localStorage.setItem(
-      "auth-user-info",
-      JSON.stringify(meQuery.data)
-    );
+    // User info stays in the React Query cache only — mirroring it to
+    // localStorage exposes PII to any script and goes stale after logout.
+    localStorage.removeItem("auth-user-info");
     return {
       user: meQuery.data ?? null,
       loading: meQuery.isLoading || logoutMutation.isPending,

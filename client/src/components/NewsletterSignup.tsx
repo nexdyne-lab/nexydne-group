@@ -19,12 +19,7 @@ export default function NewsletterSignup() {
     // Simulate API call - in production, this would connect to your email service
     try {
       await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      // Store email in localStorage for demo purposes
-      const subscribers = JSON.parse(localStorage.getItem("newsletter_subscribers") || "[]");
-      subscribers.push({ email, timestamp: new Date().toISOString() });
-      localStorage.setItem("newsletter_subscribers", JSON.stringify(subscribers));
-      
+
       setStatus("success");
       setMessage("Thanks for subscribing! Check your inbox for our latest insights.");
       setEmail("");
