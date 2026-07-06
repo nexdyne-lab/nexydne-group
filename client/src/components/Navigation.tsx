@@ -384,9 +384,9 @@ export default function Navigation() {
         {/* Upper Utility Bar */}
         <UtilityBar isScrolled={isScrolled} isNavbarLight={isNavbarLight} />
 
-        <div className="flex h-20 items-center justify-between w-full px-6 lg:px-12">
+        <div className="flex h-14 md:h-20 items-center justify-between w-full px-3 md:px-6 lg:px-12">
           {/* Left: Hamburger + Logo */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-1.5 md:gap-6">
             {/* Hamburger Button */}
             <button
               onClick={() => {
@@ -417,7 +417,7 @@ export default function Navigation() {
               <img
                 src={isNavbarLight ? "/brand/logo-mixed.svg" : "/brand/logo-white.svg"}
                 alt="NexDyne Consulting Group"
-                className="h-8 md:h-9 w-auto"
+                className="h-6 md:h-9 w-auto"
               />
             </Link>
 
@@ -581,7 +581,7 @@ export default function Navigation() {
 
       {/* Full-Screen Menu Overlay (Mobile + Search) */}
       {menuOpen && (
-        <div className="fixed inset-0 z-40 bg-white pt-20">
+        <div className="fixed inset-0 z-40 bg-white pt-14 md:pt-20">
           <div className="h-full overflow-y-auto">
             {/* Search Bar */}
             <div className="border-b border-border">

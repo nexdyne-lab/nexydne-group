@@ -334,7 +334,7 @@ export default function Insights() {
       </section>
 
       {/* SLOT 3 — White sticky pill-filter bar */}
-      <section className="bg-white border-b border-charcoal/10 sticky top-20 z-30">
+      <section className="bg-white border-b border-charcoal/10 sticky top-14 md:top-20 z-30">
         <div className="container px-6 sm:px-8 md:px-12 lg:px-16 py-6">
           <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between lg:gap-8">
             <div className="flex flex-col gap-4 flex-1 min-w-0">

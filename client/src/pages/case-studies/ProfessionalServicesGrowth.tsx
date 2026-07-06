@@ -74,7 +74,7 @@ export default function ProfessionalServicesGrowth() {
       </section>
 
       {/* Sticky Navigation */}
-      <nav className="sticky top-20 bg-background text-charcoal z-40 border-y border-border">
+      <nav className="sticky top-14 md:top-20 bg-background text-charcoal z-40 border-y border-border">
         <div className="container px-4 md:px-12">
           <div className="flex items-center gap-1">
             <a href="#challenge" className="px-6 py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">THE CHALLENGE</a>

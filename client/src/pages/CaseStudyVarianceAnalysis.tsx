@@ -91,7 +91,7 @@ export default function CaseStudyVarianceAnalysis() {
       </section>
 
       {/* DZ10 Sticky Navigation */}
-      <nav className="sticky top-20 bg-charcoal text-white z-40 border-y border-border">
+      <nav className="sticky top-14 md:top-20 bg-charcoal text-white z-40 border-y border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex items-center gap-1">
             <a href="#challenge" className="px-4 sm:px-5 md:px-6 py-3 sm:py-4 text-sm font-medium hover:bg-white/5 transition-colors hover:text-primary">

@@ -96,7 +96,7 @@ export default function CaseStudyTelehealthScaling() {
       </section>
 
       {/* DZ10 Sticky Navigation */}
-      <nav className="sticky top-20 bg-background text-charcoal z-40 border-y border-border">
+      <nav className="sticky top-14 md:top-20 bg-background text-charcoal z-40 border-y border-border">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="flex items-center gap-1">
             <a href="#opportunity" className="px-4 sm:px-5 md:px-6 py-3 sm:py-4 text-sm font-medium hover:bg-charcoal/5 transition-colors hover:text-primary">
