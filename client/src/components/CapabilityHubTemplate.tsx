@@ -110,7 +110,7 @@ export default function CapabilityHubTemplate(
           </>
         )}
         <div className="container relative z-10 px-4 md:px-12">
-          <Breadcrumbs />
+          <Breadcrumbs variant="dark" />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -156,7 +156,7 @@ export default function CapabilityHubTemplate(
                 transition={{ duration: 0.5, delay: index * 0.05 }}
                 className="text-center"
               >
-                <div className="text-[2.75rem] md:text-[3.5rem] text-white font-bold tracking-[-0.02em] leading-[1]">
+                <div className="whitespace-nowrap text-[2.5rem] md:text-[3.5rem] text-white font-bold tracking-[-0.02em] leading-[1]">
                   {stat.number}
                 </div>
                 <div className="text-[13px] uppercase tracking-[0.1em] text-white/85 mt-3 leading-[1.4]">

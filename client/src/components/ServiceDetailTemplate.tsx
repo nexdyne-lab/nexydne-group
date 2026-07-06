@@ -97,7 +97,7 @@ export default function ServiceDetailTemplate(
           </>
         )}
         <div className="container relative z-10 px-4 md:px-12">
-          <Breadcrumbs />
+          <Breadcrumbs variant="dark" />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

@@ -107,14 +107,12 @@ export default function About() {
         <div className="container px-4 sm:px-6 md:px-12 py-6">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 divide-y md:divide-y-0 md:divide-x divide-border">
             {aboutLinks.map((link, i) => (
-              <Link key={i} href={link.href}>
-                <a className="group relative block px-5 py-5 h-full transition-colors hover:bg-subtle">
-                  <span className="absolute left-0 top-0 h-full w-[3px] bg-primary scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-300" />
-                  <h3 className="text-[13px] font-semibold text-charcoal mb-1 group-hover:text-primary transition-colors leading-snug">
-                    {link.title}
-                  </h3>
-                  <p className="text-[11px] text-muted-foreground leading-relaxed">{link.description}</p>
-                </a>
+              <Link key={i} href={link.href} className="group relative block px-5 py-5 h-full transition-colors hover:bg-subtle">
+                <span className="absolute left-0 top-0 h-full w-[3px] bg-primary scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-300" />
+                <h3 className="text-[13px] font-semibold text-charcoal mb-1 group-hover:text-primary transition-colors leading-snug">
+                  {link.title}
+                </h3>
+                <p className="text-[11px] text-muted-foreground leading-relaxed">{link.description}</p>
               </Link>
             ))}
           </div>

@@ -285,7 +285,7 @@ export default function Breadcrumbs({ className, variant = "light" }: Breadcrumb
   const homeIconColor = variant === "light" ? "text-white/70 hover:text-white" : "text-muted-foreground/70 hover:text-primary";
 
   return (
-    <nav className={cn("flex items-center text-sm mb-6 overflow-x-auto whitespace-nowrap pb-2", className)}>
+    <nav className={cn("flex flex-wrap items-center gap-y-1 text-sm mb-6 pb-2", className)}>
       <Link href="/">
         <span className={cn("transition-colors flex items-center cursor-pointer", homeIconColor)}>
           <Home className="w-3 h-3 sm:w-4 sm:h-4" />

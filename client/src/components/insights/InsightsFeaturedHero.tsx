@@ -17,7 +17,7 @@ export default function InsightsFeaturedHero({
   featuredArticle,
 }: InsightsFeaturedHeroProps) {
   return (
-    <section className="relative w-full h-[70vh] min-h-[520px] md:min-h-[600px] lg:min-h-[680px] overflow-hidden bg-charcoal -mt-20 pt-20">
+    <section className="relative w-full md:h-[70vh] min-h-[520px] md:min-h-[600px] lg:min-h-[680px] overflow-hidden bg-charcoal -mt-20 pt-32 pb-16 md:pt-20 md:pb-0">
       {/* Full-bleed editorial photo */}
       <img
         src={featuredArticle.heroImage}
