@@ -58,7 +58,7 @@ export default function ServiceDetailTemplate(
   const statColCount = Math.min(Math.max(experienceStats.length, 1), 4);
   const statGridCls =
     statColCount >= 4
-      ? "grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-8"
+      ? "grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-8"
       : statColCount === 3
       ? "grid grid-cols-1 md:grid-cols-3 gap-y-12 gap-x-8"
       : "grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-8";
@@ -159,7 +159,7 @@ export default function ServiceDetailTemplate(
                 <div
                   className={`${
                     Math.max(...stat.number.split(/\s+/).map((t) => t.length)) > 7
-                      ? "text-[1.75rem] md:text-[1.9rem] lg:text-[2.5rem] [overflow-wrap:anywhere]"
+                      ? "text-[1.75rem] md:text-[2.25rem] [overflow-wrap:anywhere]"
                       : "text-[2.75rem] md:text-[3.5rem]"
                   } text-white font-bold tracking-[-0.02em] leading-[1.05]`}
                 >
