@@ -45,6 +45,9 @@ interface Slide {
   /** zoom scale for the photo (default 1.16); larger crops harder toward the
    *  focal side, pushing a central subject further right */
   zoom?: number;
+  /** background-position for phones — portrait cover shows only a ~30%-wide
+   *  strip of these landscape photos, so aim it at the subject */
+  mobileFocal?: string;
 }
 
 /* ------------------------------------------------------------------ */
@@ -55,12 +58,14 @@ function CharcoalCanvas({
   image,
   focal,
   zoom,
+  mobileFocal,
   color,
   at,
 }: {
   image: string;
   focal?: string;
   zoom?: number;
+  mobileFocal?: string;
   color: string;
   at: string;
 }) {
@@ -68,10 +73,22 @@ function CharcoalCanvas({
     <div className="absolute inset-0" style={{ backgroundColor: CHARCOAL }}>
       {/* full-bleed photo — slightly desaturated + darkened to hold the
           charcoal "dark authority" tone and keep the headline legible.
-          A gentle zoom anchored toward the left (`focal` = transform-origin)
-          pushes each subject clear to the right, away from the headline. */}
+          Desktop: a gentle zoom anchored toward the left (`focal` =
+          transform-origin) pushes each subject clear to the right, away from
+          the headline. Phones: portrait cover shows only a narrow strip of
+          these landscape photos, so skip the zoom and aim the strip at the
+          subject via `mobileFocal` instead. */}
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 md:hidden"
+        style={{
+          backgroundImage: `url(${image})`,
+          backgroundSize: "cover",
+          backgroundPosition: mobileFocal ?? "50% 50%",
+          filter: "saturate(0.82) brightness(0.82) contrast(1.02)",
+        }}
+      />
+      <div
+        className="absolute inset-0 hidden md:block"
         style={{
           backgroundImage: `url(${image})`,
           backgroundSize: "cover",
@@ -118,6 +135,7 @@ const slides: Slide[] = [
     glow: { color: "rgba(224,76,44,0.18)", at: "82% 72%" },
     image: "/images/hero/hero-hig.jpg",
     focal: "22% 40%",
+    mobileFocal: "62% 50%",
   },
   {
     label: "AI Adoption 2026",
@@ -129,6 +147,7 @@ const slides: Slide[] = [
     image: "/images/hero/hero-ai.jpg",
     focal: "8% 50%",
     zoom: 1.2,
+    mobileFocal: "44% 50%",
   },
   {
     label: "Operational Excellence",
@@ -140,6 +159,7 @@ const slides: Slide[] = [
     image: "/images/hero/hero-ops.jpg",
     focal: "2% 46%",
     zoom: 1.28,
+    mobileFocal: "38% 50%",
   },
   {
     label: "NexDyne x Cloud",
@@ -150,6 +170,7 @@ const slides: Slide[] = [
     glow: { color: "rgba(111,68,163,0.20)", at: "84% 40%" },
     image: "/images/hero/hero-cloud.jpg",
     focal: "22% 48%",
+    mobileFocal: "58% 50%",
   },
 ];
 
@@ -196,6 +217,7 @@ export function BainHeroCarousel() {
             image={s.image}
             focal={s.focal}
             zoom={s.zoom}
+            mobileFocal={s.mobileFocal}
             color={s.glow.color}
             at={s.glow.at}
           />
