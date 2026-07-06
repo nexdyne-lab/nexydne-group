@@ -107,7 +107,7 @@ export default function Footer() {
       </div>
 
       {/* Main Footer Content — clean, institutional (McKinsey/Bain register) */}
-      <div className="container px-4 sm:px-6 py-14 sm:py-16 lg:py-20">
+      <div className="container px-4 sm:px-6 py-10 sm:py-16 lg:py-20">
         {/* Top: wordmark + tagline (left) · assist CTA (right) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
           <div className="lg:col-span-7">
@@ -116,16 +116,16 @@ export default function Footer() {
               <img
                 src="/brand/logo-white.svg"
                 alt="NexDyne Consulting Group"
-                className="h-12 sm:h-14 w-auto"
+                className="h-7 sm:h-9 w-auto"
               />
             </Link>
-            <h2 className="mt-8 max-w-[16ch] text-2xl sm:text-3xl md:text-[2.4rem] leading-[1.1] tracking-[-0.02em] text-white">
+            <h2 className="mt-6 sm:mt-8 max-w-[16ch] text-xl sm:text-3xl md:text-[2.4rem] leading-[1.15] tracking-[-0.02em] text-white/90">
               Unlocking the Potential of Those Who Advance the World
             </h2>
           </div>
 
           <div className="lg:col-span-5 lg:border-l lg:border-white/10 lg:pl-12">
-            <h3 className="text-xl sm:text-2xl text-white tracking-[-0.01em]">
+            <h3 className="text-lg sm:text-2xl text-white tracking-[-0.01em]">
               How can we assist you?
             </h3>
             <p className="mt-3 max-w-[46ch] text-sm leading-relaxed text-white/70">
@@ -145,7 +145,7 @@ export default function Footer() {
         {/* Divider → primary nav (left) + social icons (right) */}
         <div className="mt-14 border-t border-white/10 pt-10">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
-            <nav className="flex flex-wrap gap-x-8 gap-y-3">
+            <nav className="flex flex-col gap-y-4 sm:flex-row sm:flex-wrap sm:gap-x-8 sm:gap-y-3">
               {[
                 { label: "Careers", href: "/careers" },
                 { label: "Subscribe", href: "/insights" },
@@ -163,7 +163,7 @@ export default function Footer() {
               ))}
             </nav>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-5 sm:gap-4">
               {socials.map((s) => (
                 <a
                   key={s.name}
@@ -171,9 +171,9 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.name}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white/70 transition-colors hover:border-white/50 hover:text-white"
+                  className="flex h-9 w-9 items-center justify-center text-white/70 transition-colors hover:text-white"
                 >
-                  <svg viewBox="0 0 24 24" fill="currentColor" className="h-[17px] w-[17px]">
+                  <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
                     <path d={s.path} />
                   </svg>
                 </a>
@@ -182,7 +182,7 @@ export default function Footer() {
           </div>
 
           {/* Legal links row */}
-          <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-[12px] uppercase tracking-[0.12em]">
+          <div className="mt-10 flex flex-col gap-y-3 border-t border-white/10 pt-8 text-[13px] sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-x-6 sm:gap-y-2 sm:border-0 sm:pt-0 sm:text-[12px] sm:uppercase sm:tracking-[0.12em]">
             <Link href="/privacy-policy" className="text-white/60 transition-colors hover:text-white">Privacy Policy</Link>
             <Link href="/terms" className="text-white/60 transition-colors hover:text-white">Terms of Use</Link>
             <Link href="/sitemap" className="text-white/60 transition-colors hover:text-white">Sitemap</Link>
