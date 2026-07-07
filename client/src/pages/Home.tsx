@@ -203,50 +203,90 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3. AI and Technology Consulting — split, polished typography */}
-      <section className="w-full bg-white">
-        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[360px] lg:min-h-[400px]">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.8 }}
-            className="relative min-h-[350px] lg:min-h-0 overflow-hidden"
-          >
-            <img
-              src="/images/ai-technology-consulting.jpg"
-              alt="AI and Technology Consulting"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="bg-white flex flex-col justify-center px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24 py-14 md:py-16"
-          >
-            <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 font-semibold mb-6 block">
-              AI & Technology
-            </span>
-            <h2 className="nx-h2-split text-charcoal mb-6">
-              AI and Technology Consulting
-            </h2>
-            <p className="text-base md:text-[1.05rem] text-charcoal/80 leading-[1.7] mb-9 max-w-[58ch]">
-              Learn how our AI and Technology consulting is helping clients to outcompete and deliver value at scale through the latest trends in tech. From intelligent automation and machine learning to cloud-native architecture and data strategy, we partner with organizations to build resilient, future-ready technology foundations.
-            </p>
-            <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">
-              <Link href="/capabilities/ai-technology-consulting">
-                <PrimaryButton>Explore Our AI Solutions</PrimaryButton>
-              </Link>
-              <Link href="/capabilities">
-                <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-charcoal border-b border-charcoal/40 hover:border-primary hover:text-primary transition-colors cursor-pointer pb-1">
-                  Our Capabilities
+      {/* 3. AI and Technology Consulting — human-led editorial split:
+          real people deciding, floating charcoal statement card for depth,
+          scannable capability list. */}
+      <section className="w-full nx-surface-white">
+        <div className="nx-band nx-section">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-0 items-center">
+            {/* Photo + floating statement card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+              className="lg:col-span-6 relative"
+            >
+              <div className="overflow-hidden ring-1 ring-charcoal/10">
+                <img
+                  src="/images/adoption-suite.jpg"
+                  alt="Consultants working through a technology decision together"
+                  className="w-full aspect-[4/3] object-cover"
+                />
+              </div>
+              {/* Floating card — the brand voice, layered above the photo */}
+              <div className="relative -mt-12 mx-5 lg:absolute lg:-right-10 lg:bottom-10 lg:mx-0 lg:mt-0 lg:max-w-[300px] bg-charcoal p-6 lg:p-7 shadow-[0_28px_64px_-28px_rgba(36,36,36,0.55)]">
+                <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-amber">
+                  HIG&trade;
                 </span>
-              </Link>
-            </div>
-          </motion.div>
+                <p className="mt-2 text-[1.08rem] leading-[1.45] font-semibold text-white tracking-[-0.01em]">
+                  Technology performs.
+                  <br />
+                  Humans govern.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Copy */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+              className="lg:col-span-6 lg:pl-24"
+            >
+              <div className="flex items-center gap-3 mb-5">
+                <span className="block h-[3px] w-9 bg-primary" />
+                <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                  AI &amp; Technology
+                </span>
+              </div>
+              <h2 className="nx-h2-split text-charcoal mb-5">
+                AI and Technology Consulting
+              </h2>
+              <p className="text-base md:text-[1.05rem] text-charcoal/75 leading-[1.7] mb-8 max-w-[52ch]">
+                We help clients outcompete with technology that is governed as
+                well as it is engineered — resilient foundations, run with
+                human judgment.
+              </p>
+
+              {/* Capability list — scannable, amber markers */}
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 mb-10">
+                {[
+                  "Intelligent automation & ML",
+                  "Cloud-native architecture",
+                  "Data strategy & platforms",
+                  "AI governance & controls",
+                ].map((c) => (
+                  <li key={c} className="flex items-start gap-3">
+                    <span className="mt-[7px] block h-2 w-2 shrink-0 bg-amber" />
+                    <span className="text-[0.98rem] leading-[1.5] text-charcoal">{c}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">
+                <Link href="/capabilities/ai-technology-consulting">
+                  <PrimaryButton>Explore Our AI Solutions</PrimaryButton>
+                </Link>
+                <Link href="/capabilities">
+                  <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-charcoal border-b border-charcoal/40 hover:border-primary hover:text-primary transition-colors cursor-pointer pb-1">
+                    Our Capabilities
+                  </span>
+                </Link>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
