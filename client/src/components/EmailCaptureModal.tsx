@@ -3,6 +3,7 @@ import { X, Download, Loader2, CheckCircle, Mail, User, Building2, Briefcase } f
 import { motion, AnimatePresence } from 'framer-motion';
 import { trpc } from '@/lib/trpc';
 import { toast } from 'sonner';
+import { TurnstileWidget } from './TurnstileWidget';
 
 interface EmailCaptureModalProps {
   isOpen: boolean;
@@ -30,6 +31,7 @@ export function EmailCaptureModal({
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
 
   const captureLead = trpc.leads.capture.useMutation();
 
@@ -56,8 +58,15 @@ export function EmailCaptureModal({
     
     if (!validateForm()) return;
 
+    // If Turnstile is configured, require a token before submitting.
+    const sitekey = import.meta.env.VITE_TURNSTILE_SITEKEY as string | undefined;
+    if (sitekey && !turnstileToken) {
+      toast.error('Please complete the human verification.');
+      return;
+    }
+
     setIsSubmitting(true);
-    
+
     try {
       await captureLead.mutateAsync({
         email: formData.email,
@@ -67,7 +76,8 @@ export function EmailCaptureModal({
         jobTitle: formData.jobTitle || undefined,
         caseStudyTitle,
         caseStudyIndustry,
-        marketingConsent: formData.marketingConsent
+        marketingConsent: formData.marketingConsent,
+        turnstileToken: turnstileToken ?? undefined
       });
       
       setIsSuccess(true);
@@ -281,6 +291,12 @@ export function EmailCaptureModal({
                         You can unsubscribe at any time.
                       </label>
                     </div>
+
+                    {/* Human verification */}
+                    <TurnstileWidget
+                      onVerify={setTurnstileToken}
+                      onExpire={() => setTurnstileToken(null)}
+                    />
 
                     {/* Submit Button */}
                     <button

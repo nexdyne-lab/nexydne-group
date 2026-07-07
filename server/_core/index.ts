@@ -58,6 +58,25 @@ async function startServer() {
   app.set("trust proxy", 1);
 
   app.use(securityHeaders());
+
+  // Platform healthcheck — must answer before the edge seal (Railway hits this
+  // on the raw host with no edge secret). Kept trivial and unauthenticated.
+  app.get("/healthz", (_req, res) => {
+    res.status(200).json({ ok: true });
+  });
+
+  // Edge seal: in production, only accept traffic that came through the
+  // Cloudflare Worker (which stamps x-edge-secret). Direct hits to the raw
+  // *.up.railway.app host — the Cloudflare bypass — are redirected to the real
+  // domain, so bots can't dodge Bot Fight Mode / challenges by targeting it.
+  const edgeSecret = process.env.EDGE_SECRET;
+  if (isProduction && edgeSecret) {
+    app.use((req, res, next) => {
+      if (req.headers["x-edge-secret"] === edgeSecret) return next();
+      return res.redirect(308, `https://www.nexdynegroup.com${req.originalUrl}`);
+    });
+  }
+
   app.use(express.json({ limit: "1mb" }));
   app.use(express.urlencoded({ limit: "1mb", extended: true }));
 

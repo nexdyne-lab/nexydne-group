@@ -12,6 +12,7 @@ import {
   upsertNotificationSettings
 } from "./db";
 import { notifyOwner } from "./_core/notification";
+import { verifyTurnstile } from "./_core/turnstile";
 import { z } from "zod";
 
 export const appRouter = router({
@@ -41,9 +42,20 @@ export const appRouter = router({
           caseStudyTitle: z.string(),
           caseStudyIndustry: z.string().optional(),
           marketingConsent: z.boolean().optional(),
+          turnstileToken: z.string().optional(),
         })
       )
-      .mutation(async ({ input }) => {
+      .mutation(async ({ input, ctx }) => {
+        // Human-verification gate: block scripted submissions before they
+        // ever touch the database or fire an owner notification.
+        const clientIp =
+          (ctx.req.headers["cf-connecting-ip"] as string | undefined) ??
+          ctx.req.ip;
+        const human = await verifyTurnstile(input.turnstileToken, clientIp);
+        if (!human) {
+          throw new Error("Human verification failed. Please try again.");
+        }
+
         const result = await insertLead({
           email: input.email,
           firstName: input.firstName || null,
