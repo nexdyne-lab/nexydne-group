@@ -8,15 +8,6 @@ import { BainHeroCarousel } from "@/components/BainHeroCarousel";
 import { SpotlightStories } from "@/components/SpotlightStories";
 import { OperationalExcellence } from "@/components/OperationalExcellence";
 
-// Our Perspective category nav — preserved verbatim
-const perspectiveCategories = [
-  { label: "NexDyne Spotlight", href: "/insights", active: true },
-  { label: "Artificial Intelligence", href: "/capabilities/artificial-intelligence", active: false },
-  { label: "Technology", href: "/capabilities/technology", active: false },
-  { label: "Growth & Marketing", href: "/capabilities/growth-marketing-sales", active: false },
-  { label: "CEO Agenda", href: "/insights/ceo-guide-data-modernization", active: false },
-];
-
 // Capabilities + Industries (preserved verbatim from CapabilitiesExplorer)
 const capabilities = [
   { id: "artificial-intelligence", title: "Artificial Intelligence", link: "/capabilities/artificial-intelligence" },
@@ -102,108 +93,7 @@ export default function Home() {
       {/* 1b. NexDyne Spotlight — featured perspectives (BCG stories pattern) */}
       <SpotlightStories />
 
-      {/* 2. Our Perspective — asymmetric 5/7 grid, warm brand wash */}
-      <section className="relative nx-surface-charcoal pt-16 pb-14 lg:pt-24 lg:pb-20 overflow-hidden">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(48% 62% at 100% 0%, rgba(255,180,29,0.08) 0%, transparent 56%)," +
-              "radial-gradient(44% 56% at 0% 100%, rgba(224,76,44,0.07) 0%, transparent 56%)",
-          }}
-        />
-        <div className="nx-band relative">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
-            {/* Left (5/12) — statement + CTA: where the journey starts */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.7 }}
-              className="lg:col-span-5"
-            >
-              <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-amber mb-6">
-                Our Perspective
-              </span>
-              <h2 className="text-[2.4rem] md:text-[3.1rem] lg:text-[3.7rem] font-bold tracking-[-0.03em] leading-[1.06] text-white">
-                Governing intelligence.
-                <br />
-                Scaling judgment.
-              </h2>
-              <p className="mt-6 text-[1.1rem] md:text-[1.18rem] leading-[1.6] text-white/70 max-w-[42ch]">
-                The next decade belongs to organizations that govern intelligence
-                as deliberately as they deploy it.
-              </p>
-              <div className="mt-8">
-                <Link href="/insights/ai-adoption-outlook-2026">
-                  <PrimaryButton>Read our perspective</PrimaryButton>
-                </Link>
-              </div>
-            </motion.div>
-
-            {/* Right (7/12) — three pillars: the wall of text, made scannable */}
-            <div className="lg:col-span-7">
-              {[
-                {
-                  n: "01",
-                  title: "Govern",
-                  copy: "Structured intelligence governance — HIG™ — keeps human judgment, accountability, and trust at the center of every AI decision.",
-                },
-                {
-                  n: "02",
-                  title: "Scale",
-                  copy: "From modernizing legacy systems to AI-enabled operating models, we build transformations that perform, endure, and scale.",
-                },
-                {
-                  n: "03",
-                  title: "Lead",
-                  copy: "Deep industry expertise for ambitious leaders who intend to define the decade — not react to it.",
-                },
-              ].map((p, i) => (
-                <motion.div
-                  key={p.n}
-                  initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  transition={{ duration: 0.55, delay: i * 0.1 }}
-                  className={`flex gap-6 md:gap-10 py-7 md:py-9 ${i > 0 ? "border-t border-white/12" : "lg:pt-2"}`}
-                >
-                  <span className="text-[1.7rem] md:text-[2.1rem] font-bold text-amber leading-none pt-1 shrink-0 w-12 md:w-16">
-                    {p.n}
-                  </span>
-                  <div>
-                    <h3 className="text-[1.4rem] md:text-[1.6rem] font-semibold text-white tracking-[-0.015em]">
-                      {p.title}
-                    </h3>
-                    <p className="mt-3 text-[1.02rem] md:text-[1.08rem] leading-[1.65] text-white/70 max-w-[60ch]">
-                      {p.copy}
-                    </p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-
-          {/* Explore-by-topic chips — a visible next step, not orphaned labels */}
-          <div className="mt-10 lg:mt-12 pt-8 border-t border-white/12">
-            <div className="flex flex-wrap items-center gap-3">
-              <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/45 mr-2">
-                Explore by topic
-              </span>
-              {perspectiveCategories.map((cat) => (
-                <Link key={cat.label} href={cat.href}>
-                  <span className="inline-flex items-center gap-2 rounded-full border border-white/25 px-4 py-2 text-[12.5px] font-medium text-white/80 hover:border-amber hover:text-amber focus-visible:border-amber transition-colors duration-200 cursor-pointer">
-                    {cat.label}
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. AI and Technology Consulting — human-led editorial split:
+      {/* 2. AI and Technology Consulting — human-led editorial split:
           real people deciding, floating charcoal statement card for depth,
           scannable capability list. */}
       <section className="w-full nx-surface-white">
@@ -290,11 +180,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. Operational Excellence — the offer: BCG-style solution cards
+      {/* 3. Operational Excellence — the offer: BCG-style solution cards
           come BEFORE the directory (show the product, then the catalog) */}
       <OperationalExcellence />
 
-      {/* 5. Explore our expertise — wayfinding directory + talk-to-expert,
+      {/* 4. Explore our expertise — wayfinding directory + talk-to-expert,
           placed after the offer so it serves visitors ready to self-direct */}
       <section className="relative nx-surface-ember nx-section overflow-hidden">
         <div
@@ -381,7 +271,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. Latest Insights — flat cards with hairline borders */}
+      {/* 5. Latest Insights — flat cards with hairline borders */}
       <section className="nx-section nx-surface-charcoal">
         <div className="nx-band">
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-10 md:mb-12">
@@ -489,7 +379,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 8. Careers — preserved split-grid, polished */}
+      {/* 6. Careers — preserved split-grid, polished */}
       <section className="w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[440px] md:min-h-[520px]">
           <motion.div

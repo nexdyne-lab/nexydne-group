@@ -15,6 +15,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
  *   active label only — no full-width progress tracks.
  * - Edge chevron arrows for manual control (desktop).
  * - Whole slide content links to the slide's destination; no fat CTA.
+ * - Photography: cinematic night-operations set (already dark) — NO scrims,
+ *   glows, or gradient overlays of any kind; the images carry their own
+ *   contrast.
  */
 
 const SLIDE_MS = 6500;
@@ -32,8 +35,6 @@ interface Slide {
   /** one-sentence sub-line beside the orange signal bar */
   sub: string;
   href: string;
-  /** rgba glow colour + focal position for this slide's controlled accent */
-  glow: { color: string; at: string };
   /** full-bleed background photo (public path) */
   image: string;
   /** transform-origin for the zoom — anchored left so the subject sits clear
@@ -56,32 +57,26 @@ function CharcoalCanvas({
   focal,
   zoom,
   mobileFocal,
-  color,
-  at,
 }: {
   image: string;
   focal?: string;
   zoom?: number;
   mobileFocal?: string;
-  color: string;
-  at: string;
 }) {
   return (
     <div className="absolute inset-0" style={{ backgroundColor: CHARCOAL }}>
-      {/* full-bleed photo — slightly desaturated + darkened to hold the
-          charcoal "dark authority" tone and keep the headline legible.
-          Desktop: a gentle zoom anchored toward the left (`focal` =
-          transform-origin) pushes each subject clear to the right, away from
-          the headline. Phones: portrait cover shows only a narrow strip of
-          these landscape photos, so skip the zoom and aim the strip at the
-          subject via `mobileFocal` instead. */}
+      {/* full-bleed photo, shown true — the night-operations set is already
+          dark enough to hold white type without any overlay.
+          Desktop: a gentle zoom anchored via `focal` (transform-origin) frames
+          the subject clear of the headline. Phones: portrait cover shows only
+          a narrow strip of these landscape photos, so skip the zoom and aim
+          the strip at the subject via `mobileFocal` instead. */}
       <div
         className="absolute inset-0 md:hidden"
         style={{
           backgroundImage: `url(${image})`,
           backgroundSize: "cover",
           backgroundPosition: mobileFocal ?? "50% 50%",
-          filter: "saturate(1.02) brightness(0.97) contrast(1.03)",
         }}
       />
       <div
@@ -90,69 +85,63 @@ function CharcoalCanvas({
           backgroundImage: `url(${image})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          transform: `scale(${zoom ?? 1.16})`,
+          transform: `scale(${zoom ?? 1})`,
           transformOrigin: focal ?? "50% 50%",
-          filter: "saturate(1.02) brightness(0.97) contrast(1.03)",
         }}
       />
-      {/* single low-opacity accent glow — controlled depth on the image side */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage: `radial-gradient(48% 62% at ${at}, ${color} 0%, transparent 62%)`,
-        }}
-      />
-      {/* directional scrim — ink on the headline side, photo released right */}
-      <div className="absolute inset-0 nx-scrim-text" />
-      {/* bottom settle — content and tabs sit low in the frame, EY-style */}
-      <div className="absolute inset-x-0 bottom-0 h-[44%] bg-gradient-to-t from-black/55 to-transparent" />
     </div>
   );
 }
 
 const slides: Slide[] = [
   {
+    // Shuttle clearing the smoke — controlled power under governance; the
+    // starfield left half is the headline's natural stage.
     label: "Win with HIG™",
     headline: "Human intelligence.\nGoverned. Scaled.",
     sub: "HIG™ — the operating discipline for leaders who scale judgment, not just software.",
     href: "/about",
-    glow: { color: "rgba(224,76,44,0.18)", at: "82% 72%" },
-    image: "/images/hero/hero-hig.jpg",
-    focal: "22% 40%",
-    mobileFocal: "62% 50%",
+    image: "/images/hero/hero-shuttle.jpg",
+    focal: "100% 45%",
+    zoom: 1.04,
+    mobileFocal: "76% 42%",
   },
   {
+    // Highway light trails — the market in motion; orange streaks echo the
+    // brand signal.
     label: "AI Adoption 2026",
     headline: "AI Adoption Outlook 2026",
     sub: "A winner's paradox — the firms moving fastest are the ones governing hardest.",
     href: "/capabilities/artificial-intelligence",
-    glow: { color: "rgba(255,180,29,0.16)", at: "86% 30%" },
-    image: "/images/hero/hero-ai.jpg",
-    focal: "62% 42%",
-    zoom: 1.06,
-    mobileFocal: "48% 40%",
+    image: "/images/hero/hero-highway.jpg",
+    focal: "50% 50%",
+    zoom: 1.0,
+    mobileFocal: "52% 50%",
   },
   {
+    // Tanker docked at a lit terminal, from above — a precision night
+    // operation: governed execution, literally.
     label: "Operational Excellence",
     headline: "From chaos to governed execution",
     sub: "Operational excellence that scales with ambition — bottlenecks out, oversight in.",
     href: "/solutions/intelligent-process-optimization",
-    glow: { color: "rgba(224,76,44,0.16)", at: "80% 78%" },
-    image: "/images/hero/hero-ops.jpg",
-    focal: "2% 46%",
-    zoom: 1.28,
-    mobileFocal: "38% 50%",
+    image: "/images/hero/hero-terminal.jpg",
+    focal: "100% 25%",
+    zoom: 1.22,
+    mobileFocal: "58% 40%",
   },
   {
+    // Satellite in orbit — infrastructure above the clouds; the near-black
+    // lower half is the headline's stage. (The runway/airplane shot stays on
+    // the bench: its white fuselage crosses the text zone at every crop.)
     label: "NexDyne x Cloud",
     headline: "Accelerating AI in the cloud",
     sub: "Partnerships that move adoption from pilot to production — safely, and at speed.",
     href: "/capabilities/technology",
-    glow: { color: "rgba(255,180,29,0.14)", at: "84% 40%" },
-    image: "/images/hero/hero-cloud.jpg",
-    focal: "55% 35%",
-    zoom: 1.02,
-    mobileFocal: "46% 40%",
+    image: "/images/hero/hero-satellite.jpg",
+    focal: "50% 0%",
+    zoom: 1.06,
+    mobileFocal: "42% 26%",
   },
 ];
 
@@ -180,7 +169,7 @@ export function BainHeroCarousel() {
   return (
     <section
       className="relative w-full overflow-hidden text-white"
-      style={{ height: "100vh", minHeight: 640, backgroundColor: CHARCOAL }}
+      style={{ height: "86vh", minHeight: 560, backgroundColor: CHARCOAL }}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
@@ -197,8 +186,6 @@ export function BainHeroCarousel() {
             focal={s.focal}
             zoom={s.zoom}
             mobileFocal={s.mobileFocal}
-            color={s.glow.color}
-            at={s.glow.at}
           />
         </div>
       ))}
@@ -246,7 +233,7 @@ export function BainHeroCarousel() {
                 <h1 className="whitespace-pre-line font-bold tracking-[-0.035em] leading-[1.02] text-[clamp(2.3rem,4.8vw,4.4rem)] text-white drop-shadow-[0_2px_20px_rgba(0,0,0,0.35)]">
                   {slide.headline}
                 </h1>
-                <p className="mt-6 flex max-w-[62ch] items-stretch gap-4 text-[1.05rem] md:text-[1.25rem] leading-[1.5] font-medium text-white/90">
+                <p className="mt-6 flex max-w-[62ch] items-stretch gap-4 text-[1.05rem] md:text-[1.25rem] leading-[1.5] font-medium text-white/90 [text-shadow:0_1px_14px_rgba(0,0,0,0.6)]">
                   <span
                     className="w-[3px] shrink-0 self-stretch"
                     style={{ backgroundColor: SIGNAL }}
@@ -295,7 +282,7 @@ export function BainHeroCarousel() {
                   )}
                 </span>
                 <span
-                  className={`block text-[13px] md:text-[15px] font-semibold tracking-[-0.01em] transition-colors ${
+                  className={`block text-[13px] md:text-[15px] font-semibold tracking-[-0.01em] transition-colors [text-shadow:0_1px_14px_rgba(0,0,0,0.7)] ${
                     i === active
                       ? "text-white"
                       : "text-white/55 group-hover:text-white/85"

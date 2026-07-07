@@ -24,7 +24,7 @@ alternate bands so sections read as deliberate.
 | `nx-surface-ember` | `#C93E20` (brand orange deepened for ≥5:1 white text) | ONE high-energy band per page max (expertise/link-list sections) |
 
 Homepage rhythm (copy this cadence, not necessarily the exact order):
-dark hero → mist → **charcoal** → white → **ember** → white → **charcoal** → light → charcoal CTA.
+dark hero → mist → white → mist → **ember** → **charcoal** → light → charcoal CTA.
 Rule of thumb: never two dark bands adjacent; white/mist breathers between.
 
 ## 2. Type on each surface
@@ -101,10 +101,16 @@ subscribe band, footer.
   laptop decision, whiteboarding) — this IS the "human intelligence" brand.
   Avoid: VR-cube surrealism, posed arms-crossed-at-camera groups, code-screen
   close-ups.
-- **Hero rule:** the human must be the subject of the frame — in command,
-  deciding, leading; technology ambient. No finger-on-screen / hologram /
-  gadget-worship stock. Hero headlines are ALL WHITE (no orange accent line);
-  orange appears only on the eyebrow tick + CTA arrow.
+- **Hero rule (updated 2026-07-07):** the homepage hero now runs the
+  user-supplied cinematic "night operations" set (shuttle launch, highway
+  light trails, tanker terminal aerial, satellite in orbit — sourced from
+  `../Brand Assets/New images/`, processed into `client/public/images/hero/`).
+  These images are dark enough to hold white type with NO scrim, glow, or
+  gradient overlay — none is used; small hero text carries a subtle
+  text-shadow instead. Hero headlines are ALL WHITE (no orange accent line);
+  orange appears only on the sub-line signal bar + arrow. The
+  human-in-command rule still applies to photos of people elsewhere
+  (splits, cards): people deciding, machines ambient.
 - Statement bands (e.g. Our Perspective) are deliberately image-free — pure
   typography at display scale is their authority.
 - NEVER pull from `../downloaded-images/curated images/` for shipped assets —
@@ -131,13 +137,17 @@ subscribe band, footer.
 ## 8. Customer-journey section order (ratified on homepage)
 
 Sequence sections to answer the client's questions in order:
-**Who are you** (hero) → **what's current** (news briefing) → **why believe
-you** (statement band) → **what do you do** (flagship split, then solution
-cards) → **where's my topic** (directory/index band with talk-to-expert) →
-**prove you're smart** (insights) → **join us** (careers) → **act** (ember
-subscribe). Key principle: show the product before the catalog — wayfinding/
-index sections come AFTER the offer sections, never between them. Directory
-CTAs ("Talk to an expert") sit late, near decision time.
+**Who are you** (hero) → **what's current** (news briefing) → **what do you
+do** (flagship split, then solution cards) → **where's my topic**
+(directory/index band with talk-to-expert) → **prove you're smart**
+(insights) → **join us** (careers) → **act** (ember subscribe). Key
+principle: show the product before the catalog — wayfinding/index sections
+come AFTER the offer sections, never between them. Directory CTAs ("Talk to
+an expert") sit late, near decision time.
+Note (2026-07-07): the homepage's charcoal "Our Perspective" statement band
+was REMOVED — hero slide 1 already carries the HIG™ click, so it read as
+noise. The journey statement pattern (§4.1) stays in the kit for interior
+pages (capability hubs, about) where no hero slide covers it.
 
 ## 9. Rollout plan (agreed with user)
 
