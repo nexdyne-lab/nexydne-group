@@ -66,8 +66,48 @@ export default function Insights() {
     { value: "podcasts", label: "Podcasts", disabled: true },
   ];
 
-  // ── Mock article catalog (16 entries — primary grid source) ────────────────
+  // ── Article catalog (primary grid source; spotlight stories first) ─────────
   const articles = [
+    {
+      slug: "agentic-ai-budget-line",
+      title: "Agentic AI just got a budget line. Most of it will be wasted.",
+      dek: "Agents moved from demo to P&L in one planning cycle. What separates the funded-and-working deployments from the quietly cancelled ones is governance set before the spend.",
+      heroImage: "/images/ai-acceleration-abstract.jpg",
+      topic: "Enterprise Transformation",
+      industry: "Professional Services",
+      readTime: "10 min read",
+      date: "July 2026",
+    },
+    {
+      slug: "eu-ai-act-mid-market-playbook",
+      title: "The EU AI Act is enforcing in stages — August 2026 is the big one.",
+      dek: "You don't have to build AI to be covered; deploying it is enough. A 90-day compliance posture for mid-market firms that use AI in hiring, credit, or customer decisions.",
+      heroImage: "/images/business-strategy-abstract.jpg",
+      topic: "Governance",
+      industry: "Financial Services",
+      readTime: "12 min read",
+      date: "July 2026",
+    },
+    {
+      slug: "shadow-ai-inside-your-firm",
+      title: "Shadow AI is the new shadow IT — except this time it makes decisions.",
+      dek: "Unapproved tools are already drafting your proposals and answering your customers. Bans fail quietly; paved-road governance is what actually works.",
+      heroImage: "/images/cyber-abstract.jpg",
+      topic: "Governance",
+      industry: "Professional Services",
+      readTime: "9 min read",
+      date: "July 2026",
+    },
+    {
+      slug: "ai-answers-first-customer-channels",
+      title: "The channel flip: AI now answers first. Customers are deciding if they mind.",
+      dek: "AI has become the first responder in customer channels. Resolution beats deflection — and the human tier is becoming the premium product your best customers pay for.",
+      heroImage: "/images/ai-team-collaboration.jpg",
+      topic: "Customer Intelligence",
+      industry: "Retail & Consumer Goods",
+      readTime: "10 min read",
+      date: "July 2026",
+    },
     {
       slug: "predictive-analytics-the-quiet-edge-in-customer-retention",
       title: "Predictive analytics: the quiet edge in customer retention.",
@@ -236,27 +276,27 @@ export default function Insights() {
       eyebrow: "DEEP DIVE",
       title: "Customer intelligence done right",
       articles: [
-        articles[0], // predictive analytics
-        articles[3], // behavioral segmentation
-        articles[7], // CDP payback
+        articles[4], // predictive analytics
+        articles[7], // behavioral segmentation
+        articles[11], // CDP payback
       ],
     },
     {
       eyebrow: "NEW POV",
       title: "Process optimization at scale",
       articles: [
-        articles[1], // process mining
-        articles[8], // intelligent automation
-        articles[13], // workflow optimization
+        articles[5], // process mining
+        articles[12], // intelligent automation
+        articles[17], // workflow optimization
       ],
     },
     {
       eyebrow: "FROM THE FIELD",
       title: "Enterprise transformation playbooks",
       articles: [
-        articles[2], // ai pilots to platform
-        articles[6], // legacy modernization
-        articles[11], // data platform engineering
+        articles[6], // ai pilots to platform
+        articles[10], // legacy modernization
+        articles[15], // data platform engineering
       ],
     },
   ];

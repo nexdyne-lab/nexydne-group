@@ -1,48 +1,58 @@
+import { useState } from "react";
 import { Link } from "wouter";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 /**
- * NexDyne Spotlight — what's moving in AI right now.
- * Compact editorial news row: one-line header with inline "view all" link,
- * then a 2x2 grid of wide horizontal cards (thumb left, copy right) so the
- * section reads like a live briefing, not a gallery. Orange-red only on the
- * category label + arrows.
+ * NexDyne Spotlight — EY-style tabbed insights showcase.
+ * One short header, a quiet horizontal tab row (active = charcoal underline),
+ * then a split per topic: summary + outlined CTA left, large clean photo
+ * right. Four featured topics max — everything else lives on /insights.
  */
 
 interface Story {
-  category: string;
+  /** short topic phrase for the tab row */
+  tab: string;
   title: string;
-  blurb: string;
+  summary: string;
+  cta: string;
   href: string;
   image: string;
 }
 
 const stories: Story[] = [
   {
-    category: "The AI Agenda",
+    tab: "The agentic AI budget line",
     title: "Agentic AI just got a budget line. Most of it will be wasted.",
-    blurb: "Agents moved from demo to P&L in one planning cycle — what separates funded-and-working from cancelled.",
+    summary:
+      "Agents moved from demo to P&L in one planning cycle. What separates the funded-and-working deployments from the quietly cancelled ones is governance set before the spend — not after.",
+    cta: "More on agentic AI",
     href: "/insights/agentic-ai-budget-line",
     image: "/images/ai-acceleration-abstract.jpg",
   },
   {
-    category: "Regulation & Governance",
+    tab: "EU AI Act enforcement",
     title: "The EU AI Act is enforcing in stages — August 2026 is the big one",
-    blurb: "You don't have to build AI to be covered. A 90-day posture for mid-market deployers.",
+    summary:
+      "You don't have to build AI to be covered; deploying it is enough. A 90-day compliance posture for mid-market firms that use AI in hiring, credit, or customer decisions.",
+    cta: "More on AI regulation",
     href: "/insights/eu-ai-act-mid-market-playbook",
     image: "/images/business-strategy-abstract.jpg",
   },
   {
-    category: "Security & Risk",
+    tab: "Shadow AI & security",
     title: "Shadow AI is the new shadow IT — except this time it makes decisions",
-    blurb: "Unapproved tools are already drafting your proposals. Bans fail; paved-road governance works.",
+    summary:
+      "Unapproved tools are already drafting your proposals and answering your customers. Bans fail quietly; paved-road governance — sanctioned tools with guardrails — is what actually works.",
+    cta: "More on AI risk",
     href: "/insights/shadow-ai-inside-your-firm",
     image: "/images/cyber-abstract.jpg",
   },
   {
-    category: "Customer Channels",
+    tab: "AI-first customer channels",
     title: "The channel flip: AI now answers first. Customers are deciding if they mind.",
-    blurb: "Resolution beats deflection — and the human tier becomes your premium product.",
+    summary:
+      "AI has become the first responder in customer channels. Resolution beats deflection — and the human tier is becoming the premium product your best customers pay for.",
+    cta: "More on customer channels",
     href: "/insights/ai-answers-first-customer-channels",
     image: "/images/ai-team-collaboration.jpg",
   },
@@ -51,10 +61,13 @@ const stories: Story[] = [
 const ease = [0.22, 1, 0.36, 1] as const;
 
 export function SpotlightStories() {
+  const [active, setActive] = useState(0);
+  const story = stories[active];
+
   return (
     <section className="w-full nx-surface-mist">
-      <div className="nx-band pt-14 pb-14 lg:pt-16 lg:pb-16">
-        {/* Compact header row — single line, view-all inline */}
+      <div className="nx-band pt-14 pb-14 lg:pt-16 lg:pb-20">
+        {/* Header row — short title, view-all inline */}
         <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-3 mb-8 lg:mb-10">
           <div>
             <div className="flex items-center gap-3 mb-3">
@@ -64,7 +77,7 @@ export function SpotlightStories() {
               </span>
             </div>
             <h2 className="text-[1.6rem] md:text-[1.9rem] lg:text-[2.1rem] font-bold tracking-[-0.02em] leading-[1.15] text-charcoal">
-              What&apos;s moving in AI — and what it means for your business.
+              What&apos;s moving in AI right now.
             </h2>
           </div>
           <Link href="/insights">
@@ -75,43 +88,70 @@ export function SpotlightStories() {
           </Link>
         </div>
 
-        {/* Wide horizontal cards — 2x2, news-briefing register */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6">
+        {/* Tab row — quiet text tabs, active gets a charcoal underline */}
+        <div
+          role="tablist"
+          aria-label="Featured insights"
+          className="flex gap-x-8 lg:gap-x-12 gap-y-2 overflow-x-auto border-b border-charcoal/12 mb-10 lg:mb-12 -mx-1 px-1"
+        >
           {stories.map((s, i) => (
-            <motion.div
+            <button
               key={s.href}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.55, ease, delay: (i % 2) * 0.08 }}
+              role="tab"
+              aria-selected={i === active}
+              onClick={() => setActive(i)}
+              className={`relative shrink-0 pb-4 text-[13.5px] md:text-[15px] font-semibold tracking-[-0.01em] transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-primary ${
+                i === active
+                  ? "text-charcoal"
+                  : "text-charcoal/50 hover:text-charcoal/85"
+              }`}
             >
-              <Link href={s.href}>
-                <article className="group h-full flex bg-card border border-border overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-[0_20px_44px_-26px_rgba(36,36,36,0.45)]">
-                  {/* Thumb — fixed column, never squashes */}
-                  <div className="relative w-[124px] sm:w-[190px] shrink-0 overflow-hidden">
-                    <img
-                      src={s.image}
-                      alt=""
-                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.05]"
-                    />
-                  </div>
-                  <div className="flex flex-col justify-center p-5 sm:p-6 min-h-[136px]">
-                    <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-primary">
-                      {s.category}
-                    </span>
-                    <h3 className="mt-2 text-[1.02rem] sm:text-[1.12rem] font-semibold leading-[1.3] tracking-[-0.01em] text-charcoal group-hover:text-primary transition-colors">
-                      {s.title}
-                    </h3>
-                    <p className="mt-2 text-[0.88rem] leading-[1.5] text-muted-foreground hidden sm:block">
-                      {s.blurb}
-                      <span className="ml-2 inline-block text-primary transition-transform duration-300 group-hover:translate-x-1">→</span>
-                    </p>
-                  </div>
-                </article>
-              </Link>
-            </motion.div>
+              {s.tab}
+              {i === active && (
+                <span className="absolute left-0 right-0 -bottom-px h-[3px] bg-charcoal" />
+              )}
+            </button>
           ))}
         </div>
+
+        {/* Active story — summary left, large visual right */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={active}
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.45, ease }}
+            className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center"
+          >
+            <div className="lg:col-span-5 order-2 lg:order-1">
+              <h3 className="text-[1.5rem] md:text-[1.75rem] font-semibold leading-[1.22] tracking-[-0.02em] text-charcoal">
+                {story.title}
+              </h3>
+              <p className="mt-5 text-[1rem] md:text-[1.05rem] leading-[1.7] text-muted-foreground max-w-[52ch]">
+                {story.summary}
+              </p>
+              <div className="mt-8">
+                <Link href={story.href}>
+                  <span className="inline-block border border-charcoal/35 px-6 py-3 text-[13px] font-semibold uppercase tracking-[0.1em] text-charcoal transition-colors hover:border-charcoal hover:bg-charcoal hover:text-white focus-visible:outline-2 focus-visible:outline-primary active:bg-[#171717] cursor-pointer">
+                    {story.cta}
+                  </span>
+                </Link>
+              </div>
+            </div>
+            <div className="lg:col-span-7 order-1 lg:order-2">
+              <Link href={story.href}>
+                <div className="group overflow-hidden ring-1 ring-charcoal/10 cursor-pointer">
+                  <img
+                    src={story.image}
+                    alt=""
+                    className="w-full aspect-[16/9] object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-[1.03]"
+                  />
+                </div>
+              </Link>
+            </div>
+          </motion.div>
+        </AnimatePresence>
       </div>
     </section>
   );
