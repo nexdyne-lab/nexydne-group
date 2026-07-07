@@ -290,7 +290,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. Our Solutions — expertise tabs, subtle brand wash */}
+      {/* 4. Operational Excellence — the offer: BCG-style solution cards
+          come BEFORE the directory (show the product, then the catalog) */}
+      <OperationalExcellence />
+
+      {/* 5. Explore our expertise — wayfinding directory + talk-to-expert,
+          placed after the offer so it serves visitors ready to self-direct */}
       <section className="relative nx-surface-ember nx-section overflow-hidden">
         <div
           aria-hidden
@@ -375,9 +380,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* 5. Operational Excellence — BCG-style feature card grid */}
-      <OperationalExcellence />
 
       {/* 6. Latest Insights — flat cards with hairline borders */}
       <section className="nx-section nx-surface-charcoal">

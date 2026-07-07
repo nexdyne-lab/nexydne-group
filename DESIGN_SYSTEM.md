@@ -101,6 +101,15 @@ subscribe band, footer.
   laptop decision, whiteboarding) — this IS the "human intelligence" brand.
   Avoid: VR-cube surrealism, posed arms-crossed-at-camera groups, code-screen
   close-ups.
+- **Hero rule:** the human must be the subject of the frame — in command,
+  deciding, leading; technology ambient. No finger-on-screen / hologram /
+  gadget-worship stock. Hero headlines are ALL WHITE (no orange accent line);
+  orange appears only on the eyebrow tick + CTA arrow.
+- Statement bands (e.g. Our Perspective) are deliberately image-free — pure
+  typography at display scale is their authority.
+- NEVER pull from `../downloaded-images/curated images/` for shipped assets —
+  those carry competitor CDN filenames (rights risk). Use the vetted
+  `client/public/images/` pool.
 - Pool: `client/public/images/` (+ curated originals in
   `../downloaded-images/curated images/`). Don't reuse an image twice on the
   same page (check careers + spotlight before assigning).
@@ -119,7 +128,18 @@ subscribe band, footer.
 - Deploy checks: probe `https://www.nexdynegroup.com` (raw Railway host
   308-redirects to it).
 
-## 8. Rollout plan (agreed with user)
+## 8. Customer-journey section order (ratified on homepage)
+
+Sequence sections to answer the client's questions in order:
+**Who are you** (hero) → **what's current** (news briefing) → **why believe
+you** (statement band) → **what do you do** (flagship split, then solution
+cards) → **where's my topic** (directory/index band with talk-to-expert) →
+**prove you're smart** (insights) → **join us** (careers) → **act** (ember
+subscribe). Key principle: show the product before the catalog — wayfinding/
+index sections come AFTER the offer sections, never between them. Directory
+CTAs ("Talk to an expert") sit late, near decision time.
+
+## 9. Rollout plan (agreed with user)
 
 Homepage = done (v3, live). Next: pick ONE capability page → apply the kit →
 propagate template-wide; then industry page → propagate; then remaining
