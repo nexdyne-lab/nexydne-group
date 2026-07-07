@@ -103,7 +103,7 @@ export default function Home() {
       <SpotlightStories />
 
       {/* 2. Our Perspective — asymmetric 5/7 grid, warm brand wash */}
-      <section className="relative nx-surface-charcoal pt-16 pb-14 lg:pt-20 lg:pb-16 overflow-hidden">
+      <section className="relative nx-surface-charcoal pt-16 pb-14 lg:pt-24 lg:pb-20 overflow-hidden">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0"
@@ -126,12 +126,12 @@ export default function Home() {
               <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-amber mb-6">
                 Our Perspective
               </span>
-              <h2 className="text-[1.9rem] md:text-[2.3rem] lg:text-[2.6rem] font-bold tracking-[-0.02em] leading-[1.12] text-white">
+              <h2 className="text-[2.4rem] md:text-[3.1rem] lg:text-[3.7rem] font-bold tracking-[-0.03em] leading-[1.06] text-white">
                 Governing intelligence.
                 <br />
                 Scaling judgment.
               </h2>
-              <p className="mt-5 text-[1.02rem] md:text-[1.08rem] leading-[1.65] text-white/70 max-w-[42ch]">
+              <p className="mt-6 text-[1.1rem] md:text-[1.18rem] leading-[1.6] text-white/70 max-w-[42ch]">
                 The next decade belongs to organizations that govern intelligence
                 as deliberately as they deploy it.
               </p>
@@ -167,16 +167,16 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.3 }}
                   transition={{ duration: 0.55, delay: i * 0.1 }}
-                  className={`flex gap-6 md:gap-8 py-6 md:py-7 ${i > 0 ? "border-t border-white/12" : "lg:pt-2"}`}
+                  className={`flex gap-6 md:gap-10 py-7 md:py-9 ${i > 0 ? "border-t border-white/12" : "lg:pt-2"}`}
                 >
-                  <span className="text-[13px] font-semibold text-amber tracking-[0.08em] pt-1 shrink-0 w-7">
+                  <span className="text-[1.7rem] md:text-[2.1rem] font-bold text-amber leading-none pt-1 shrink-0 w-12 md:w-16">
                     {p.n}
                   </span>
                   <div>
-                    <h3 className="text-[1.15rem] md:text-[1.25rem] font-semibold text-white tracking-[-0.01em]">
+                    <h3 className="text-[1.4rem] md:text-[1.6rem] font-semibold text-white tracking-[-0.015em]">
                       {p.title}
                     </h3>
-                    <p className="mt-2 text-[0.98rem] leading-[1.6] text-white/65 max-w-[58ch]">
+                    <p className="mt-3 text-[1.02rem] md:text-[1.08rem] leading-[1.65] text-white/70 max-w-[60ch]">
                       {p.copy}
                     </p>
                   </div>
@@ -497,15 +497,30 @@ export default function Home() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
             className="bg-off-white flex flex-col justify-center px-4 sm:px-8 md:pl-[76px] md:pr-16 lg:pl-[100px] lg:pr-20 py-20 md:py-24"
           >
-            <span className="text-[11px] uppercase tracking-[0.2em] text-charcoal/60 font-semibold mb-6 block">
-              NexDyne Careers
-            </span>
+            <div className="flex items-center gap-3 mb-5">
+              <span className="block h-[3px] w-9 bg-primary" />
+              <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                NexDyne Careers
+              </span>
+            </div>
             <h2 className="nx-h2-split text-charcoal mb-6">
               Where Human Intelligence Leads
             </h2>
-            <p className="text-base md:text-[1.05rem] text-charcoal/80 leading-[1.7] mb-9 max-w-[58ch]">
+            <p className="text-base md:text-[1.05rem] text-charcoal/80 leading-[1.7] mb-7 max-w-[58ch]">
               We help organizations govern intelligence and lead with judgment in the age of AI. If you bring ambition, clarity, and the will to shape what comes next — this is where you belong.
             </p>
+            <ul className="mb-9 space-y-3">
+              {[
+                "Real client ownership from your first engagement",
+                "Work at the AI frontier — with judgment as the craft",
+                "Mid-market impact you can see, measure, and name",
+              ].map((v) => (
+                <li key={v} className="flex items-start gap-3">
+                  <span className="mt-[7px] block h-2 w-2 shrink-0 bg-amber" />
+                  <span className="text-[0.98rem] leading-[1.5] text-charcoal/85">{v}</span>
+                </li>
+              ))}
+            </ul>
             <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">
               <Link href="/careers">
                 <PrimaryButton>Explore NexDyne Careers</PrimaryButton>

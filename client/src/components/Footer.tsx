@@ -47,22 +47,30 @@ export default function Footer() {
 
   return (
     <footer className="bg-charcoal text-text-light">
-      {/* Newsletter Subscription — charcoal authority band (Brand v2: neutral canvas, Orange-Red signal on the button only) */}
-      <div className="relative overflow-hidden border-b border-white/10">
-        {/* controlled depth: a single low-opacity signal glow, not a colour fill */}
+      {/* Newsletter Subscription — ember conversion band: the one high-energy
+          moment before the quiet charcoal footer. White rule + heads, cream
+          support, charcoal button (orange would vanish on this ground). */}
+      <div className="relative overflow-hidden nx-surface-ember">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0"
-          style={{ backgroundImage: "radial-gradient(55% 120% at 100% 0%, rgba(224,76,44,0.10) 0%, transparent 55%)" }}
+          style={{
+            backgroundImage:
+              "radial-gradient(46% 60% at 100% 0%, rgba(255,255,255,0.07) 0%, transparent 55%)," +
+              "radial-gradient(44% 58% at 0% 100%, rgba(58,16,6,0.22) 0%, transparent 58%)",
+          }}
         />
-        <div className="relative container px-4 sm:px-6 py-8 sm:py-10 md:py-12 lg:py-16">
-          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center">
+        <div className="relative container px-4 sm:px-6 py-10 sm:py-12 md:py-14 lg:py-16">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-10 items-center">
             {/* Left: Subscription Text */}
             <div>
-              {/* signal accent marker (emphasis border — approved Orange-Red use) */}
-              <span aria-hidden className="mb-5 block h-[3px] w-12 bg-primary" />
-              <p className="text-xl sm:text-2xl md:text-3xl text-text-light leading-[1.4]">
-              The next era belongs to leaders who prepare for it. Subscribe to NexDyne Consulting Group Insights — principled perspectives on governance, strategy, and the future of human intelligence.
+              <span aria-hidden className="mb-5 block h-[3px] w-12 bg-white" />
+              <p className="text-xl sm:text-2xl md:text-[1.9rem] font-semibold tracking-[-0.015em] text-white leading-[1.25]">
+                The next era belongs to leaders who prepare for it.
+              </p>
+              <p className="mt-3 text-[1rem] sm:text-[1.05rem] leading-[1.6] text-[#FFE3D8] max-w-[52ch]">
+                Principled perspectives on governance, strategy, and the future
+                of human intelligence — in your inbox.
               </p>
             </div>
 
@@ -74,12 +82,12 @@ export default function Footer() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Your email address"
-                  className="flex-1 px-4 py-3 sm:py-4 bg-white border-0 text-charcoal placeholder:text-charcoal/45 focus:outline-none focus:ring-2 focus:ring-charcoal/40 text-sm"
+                  className="flex-1 px-4 py-3 sm:py-4 bg-white border-0 text-charcoal placeholder:text-charcoal/45 focus:outline-none focus:ring-2 focus:ring-white/70 text-sm"
                   required
                 />
                 <button
                   type="submit"
-                  className="px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white font-bold uppercase tracking-wider hover:bg-[#c33d1f] transition-colors duration-200 ease-in-out text-sm"
+                  className="px-6 sm:px-8 py-3 sm:py-4 bg-charcoal text-white font-bold uppercase tracking-wider hover:bg-[#171717] transition-colors duration-200 ease-in-out text-sm"
                 >
                   Subscribe
                 </button>
@@ -91,11 +99,11 @@ export default function Footer() {
                   type="checkbox"
                   checked={privacyChecked}
                   onChange={(e) => setPrivacyChecked(e.target.checked)}
-                  className="mt-1 w-4 h-4 border-2 border-white/30 rounded-none accent-secondary"
+                  className="mt-1 w-4 h-4 border-2 border-white/40 rounded-none accent-[#242424]"
                 />
-                <span className="text-sm text-text-light/70">
+                <span className="text-sm text-white/80">
                   *I have read and understand{" "}
-                  <Link href="/privacy-policy" className="text-text-light underline hover:text-secondary transition-colors">
+                  <Link href="/privacy-policy" className="text-white underline hover:text-[#FFE3D8] transition-colors">
                     NexDyne Consulting Group's Privacy Notice
                   </Link>
                   .

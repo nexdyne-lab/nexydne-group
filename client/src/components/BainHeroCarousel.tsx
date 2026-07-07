@@ -139,9 +139,9 @@ const slides: Slide[] = [
     cta: { text: "Read More", href: "/capabilities/artificial-intelligence" },
     glow: { color: "rgba(255,180,29,0.16)", at: "86% 30%" },
     image: "/images/hero/hero-ai.jpg",
-    focal: "8% 50%",
-    zoom: 1.2,
-    mobileFocal: "44% 50%",
+    focal: "62% 42%",
+    zoom: 1.06,
+    mobileFocal: "48% 40%",
   },
   {
     label: "Operational Excellence",
@@ -161,10 +161,11 @@ const slides: Slide[] = [
     headline: "Helping clients accelerate\nthe adoption of",
     accent: "AI solutions",
     cta: { text: "Learn about our partnerships", href: "/capabilities/technology" },
-    glow: { color: "rgba(111,68,163,0.20)", at: "84% 40%" },
+    glow: { color: "rgba(255,180,29,0.14)", at: "84% 40%" },
     image: "/images/hero/hero-cloud.jpg",
-    focal: "22% 48%",
-    mobileFocal: "58% 50%",
+    focal: "55% 35%",
+    zoom: 1.02,
+    mobileFocal: "46% 40%",
   },
 ];
 
@@ -255,7 +256,7 @@ export function BainHeroCarousel() {
                 {slide.accent && (
                   <>
                     {"\n"}
-                    <span style={{ color: SIGNAL }}>{slide.accent}</span>
+                    <span>{slide.accent}</span>
                   </>
                 )}
               </h1>
