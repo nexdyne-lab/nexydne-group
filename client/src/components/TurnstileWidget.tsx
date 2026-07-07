@@ -41,9 +41,19 @@ function loadScript(): Promise<void> {
 interface TurnstileWidgetProps {
   onVerify: (token: string) => void;
   onExpire?: () => void;
+  /**
+   * "always" (default) keeps the widget visible so the user sees it resolve —
+   * right for a standalone gate. "interaction-only" hides it unless a challenge
+   * is required — right when it sits inside a larger form.
+   */
+  appearance?: "always" | "interaction-only";
 }
 
-export function TurnstileWidget({ onVerify, onExpire }: TurnstileWidgetProps) {
+export function TurnstileWidget({
+  onVerify,
+  onExpire,
+  appearance = "always",
+}: TurnstileWidgetProps) {
   const ref = useRef<HTMLDivElement>(null);
   const widgetId = useRef<string | null>(null);
   const [failed, setFailed] = useState(false);
@@ -66,7 +76,7 @@ export function TurnstileWidget({ onVerify, onExpire }: TurnstileWidgetProps) {
           "expired-callback": () => onExpire?.(),
           "error-callback": () => setFailed(true),
           theme: "light",
-          appearance: "interaction-only",
+          appearance,
         });
       })
       .catch(() => setFailed(true));

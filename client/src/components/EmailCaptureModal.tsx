@@ -144,7 +144,7 @@ export function EmailCaptureModal({
           >
             <div className="bg-white rounded-xl sm:rounded-xl sm:rounded-2xl shadow-xl sm:shadow-xl sm:shadow-2xl w-full max-w-lg overflow-hidden">
               {/* Header */}
-              <div className="bg-gradient-to-r from-base to-base p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 relative">
+              <div className="bg-gradient-to-r from-charcoal to-charcoal p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 relative">
                 <button
                   onClick={onClose}
                   className="absolute top-4 right-4 text-white/60 hover:text-white transition-colors"
@@ -294,6 +294,7 @@ export function EmailCaptureModal({
 
                     {/* Human verification */}
                     <TurnstileWidget
+                      appearance="interaction-only"
                       onVerify={setTurnstileToken}
                       onExpire={() => setTurnstileToken(null)}
                     />
