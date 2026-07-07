@@ -2,10 +2,11 @@ import { Link } from "wouter";
 import { motion } from "framer-motion";
 
 /**
- * NexDyne Spotlight — featured perspectives.
- * BCG "Beyond Strategy. Real Impact." section pattern, neutral-first:
- * white cards on off-white, structural-grey borders, orange-red only on the
- * category label + read-more arrow. Re-homes the 4 former hero-carousel insights.
+ * NexDyne Spotlight — what's moving in AI right now.
+ * Compact editorial news row: one-line header with inline "view all" link,
+ * then a 2x2 grid of wide horizontal cards (thumb left, copy right) so the
+ * section reads like a live briefing, not a gallery. Orange-red only on the
+ * category label + arrows.
  */
 
 interface Story {
@@ -18,32 +19,32 @@ interface Story {
 
 const stories: Story[] = [
   {
-    category: "AI in Enterprise",
-    title: "How AI Agents Are Reshaping Enterprise Operations",
-    blurb: "Where autonomous agents create leverage — and where human judgment must stay in the loop.",
-    href: "/insights/ai-agents-transform-operations",
-    image: "/images/ai-in-enterprises.jpg",
+    category: "The AI Agenda",
+    title: "Agentic AI just got a budget line. Most of it will be wasted.",
+    blurb: "Agents moved from demo to P&L in one planning cycle — what separates funded-and-working from cancelled.",
+    href: "/insights/agentic-ai-budget-line",
+    image: "/images/ai-acceleration-abstract.jpg",
   },
   {
-    category: "Economic Impact",
-    title: "The $15 Trillion Question: How AI Will Reshape the Global Economy",
-    blurb: "The macro shift underway, and what it means for leaders allocating capital today.",
-    href: "/insights/ai-economic-impact",
-    image: "/images/hero-ai-2.jpg",
+    category: "Regulation & Governance",
+    title: "The EU AI Act is enforcing in stages — August 2026 is the big one",
+    blurb: "You don't have to build AI to be covered. A 90-day posture for mid-market deployers.",
+    href: "/insights/eu-ai-act-mid-market-playbook",
+    image: "/images/business-strategy-abstract.jpg",
   },
   {
-    category: "Technology Strategy",
-    title: "The Complete Guide to Process Mining",
-    blurb: "Turning operational data into a governed map of how work actually flows.",
-    href: "/insights/process-mining-guide",
-    image: "/images/ai-tech-hero.jpg",
+    category: "Security & Risk",
+    title: "Shadow AI is the new shadow IT — except this time it makes decisions",
+    blurb: "Unapproved tools are already drafting your proposals. Bans fail; paved-road governance works.",
+    href: "/insights/shadow-ai-inside-your-firm",
+    image: "/images/cyber-abstract.jpg",
   },
   {
-    category: "AI Executive Guide",
-    title: "The Pragmatic CEO's Guide to AI",
-    blurb: "A governance-first playbook for adopting AI without outsourcing accountability.",
-    href: "/insights/ceo-guide-data-modernization",
-    image: "/images/ai-team-consulting.jpg",
+    category: "Customer Channels",
+    title: "The channel flip: AI now answers first. Customers are deciding if they mind.",
+    blurb: "Resolution beats deflection — and the human tier becomes your premium product.",
+    href: "/insights/ai-answers-first-customer-channels",
+    image: "/images/ai-team-collaboration.jpg",
   },
 ];
 
@@ -52,87 +53,64 @@ const ease = [0.22, 1, 0.36, 1] as const;
 export function SpotlightStories() {
   return (
     <section className="w-full nx-surface-mist">
-      <div className="nx-band pt-20 pb-12 lg:pt-28 lg:pb-14">
-        {/* Section header */}
-        <div className="max-w-[640px]">
-          <div className="flex items-center gap-3 mb-5">
-            <span className="block h-[3px] w-9 bg-primary" />
-            <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-              NexDyne Spotlight
-            </span>
+      <div className="nx-band pt-14 pb-14 lg:pt-16 lg:pb-16">
+        {/* Compact header row — single line, view-all inline */}
+        <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-3 mb-8 lg:mb-10">
+          <div>
+            <div className="flex items-center gap-3 mb-3">
+              <span className="block h-[3px] w-9 bg-primary" />
+              <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+                NexDyne Spotlight
+              </span>
+            </div>
+            <h2 className="text-[1.6rem] md:text-[1.9rem] lg:text-[2.1rem] font-bold tracking-[-0.02em] leading-[1.15] text-charcoal">
+              What&apos;s moving in AI — and what it means for your business.
+            </h2>
           </div>
-          <h2 className="nx-h2 text-charcoal">
-            Beyond the hype.{" "}
-            <span
-              className="text-charcoal"
-              
-            >
-              Real perspective.
+          <Link href="/insights">
+            <span className="inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.1em] text-charcoal border-b border-charcoal/40 hover:border-primary hover:text-primary transition-colors cursor-pointer pb-1 group whitespace-nowrap">
+              See all insights
+              <span className="text-primary transition-transform duration-300 group-hover:translate-x-1">→</span>
             </span>
-          </h2>
-          <p className="mt-5 text-[1.05rem] leading-[1.6] text-muted-foreground max-w-[52ch]">
-            Practical intelligence for leaders governing the shift to AI-enabled
-            operating models — judgment first, then scale.
-          </p>
+          </Link>
         </div>
 
-        {/* Cards */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7">
+        {/* Wide horizontal cards — 2x2, news-briefing register */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-6">
           {stories.map((s, i) => (
             <motion.div
               key={s.href}
-              initial={{ opacity: 0, y: 26 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.6, ease, delay: i * 0.08 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.55, ease, delay: (i % 2) * 0.08 }}
             >
               <Link href={s.href}>
-                <article className="group relative h-full flex flex-col bg-card border border-border overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-[0_24px_50px_-28px_rgba(224,76,44,0.4)]">
-                  {/* brand-gradient accent bar — grows on hover */}
-                  <div
-                    className="absolute top-0 left-0 right-0 h-[3px] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 z-10"
-                    style={{ backgroundImage: "linear-gradient(90deg, #E04C2C 0%, #FFB41D 100%)" }}
-                  />
-                  <div className="relative aspect-[16/11] overflow-hidden">
+                <article className="group h-full flex bg-card border border-border overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-[0_20px_44px_-26px_rgba(36,36,36,0.45)]">
+                  {/* Thumb — fixed column, never squashes */}
+                  <div className="relative w-[124px] sm:w-[190px] shrink-0 overflow-hidden">
                     <img
                       src={s.image}
                       alt=""
                       className="absolute inset-0 h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.05]"
                     />
-                    <div
-                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mix-blend-multiply"
-                      style={{ backgroundImage: "linear-gradient(to top, rgba(224,76,44,0.55) 0%, transparent 60%)" }}
-                    />
                   </div>
-                  <div className="flex flex-col flex-1 p-6">
+                  <div className="flex flex-col justify-center p-5 sm:p-6 min-h-[136px]">
                     <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-primary">
                       {s.category}
                     </span>
-                    <h3 className="mt-3 text-[1.15rem] font-semibold leading-[1.28] tracking-[-0.01em] text-charcoal">
+                    <h3 className="mt-2 text-[1.02rem] sm:text-[1.12rem] font-semibold leading-[1.3] tracking-[-0.01em] text-charcoal group-hover:text-primary transition-colors">
                       {s.title}
                     </h3>
-                    <p className="mt-3 text-[0.92rem] leading-[1.55] text-muted-foreground">
+                    <p className="mt-2 text-[0.88rem] leading-[1.5] text-muted-foreground hidden sm:block">
                       {s.blurb}
+                      <span className="ml-2 inline-block text-primary transition-transform duration-300 group-hover:translate-x-1">→</span>
                     </p>
-                    <span className="mt-5 pt-4 border-t border-border inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.1em] text-charcoal">
-                      Read more
-                      <span className="text-primary transition-transform duration-300 group-hover:translate-x-1">→</span>
-                    </span>
                   </div>
                 </article>
               </Link>
             </motion.div>
           ))}
-        </div>
-
-        {/* See all */}
-        <div className="mt-12">
-          <Link href="/insights">
-            <span className="inline-flex items-center gap-2.5 bg-primary text-primary-foreground text-[13px] font-semibold uppercase tracking-[0.1em] px-7 py-4 hover:bg-primary-hover transition-colors cursor-pointer group">
-              See all insights
-              <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-            </span>
-          </Link>
         </div>
       </div>
     </section>

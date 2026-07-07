@@ -224,6 +224,10 @@ import StrategyFinanceInsight from "./pages/insights/StrategyFinanceInsight";
 import OperationsInsight from "./pages/insights/OperationsInsight";
 import GrowthMarketingInsight from "./pages/insights/GrowthMarketingInsight";
 import AIAdoptionOutlook2026 from "./pages/insights/AIAdoptionOutlook2026";
+import AgenticAIBudgetLine from "./pages/insights/AgenticAIBudgetLine";
+import EUAIActMidMarket from "./pages/insights/EUAIActMidMarket";
+import ShadowAIInsideYourFirm from "./pages/insights/ShadowAIInsideYourFirm";
+import AIAnswersFirst from "./pages/insights/AIAnswersFirst";
 import AIAgentsTransformOperations from "./pages/insights/AIAgentsTransformOperations";
 import ProcessMiningGuide from "./pages/insights/ProcessMiningGuide";
 import Insights from "./pages/Insights";
@@ -1325,6 +1329,10 @@ function Router() {
         <Route path="/insights/operations" component={OperationsInsight} />
         <Route path="/insights/growth-marketing" component={GrowthMarketingInsight} />
         <Route path="/insights/ai-adoption-outlook-2026" component={AIAdoptionOutlook2026} />
+        <Route path="/insights/agentic-ai-budget-line" component={AgenticAIBudgetLine} />
+        <Route path="/insights/eu-ai-act-mid-market-playbook" component={EUAIActMidMarket} />
+        <Route path="/insights/shadow-ai-inside-your-firm" component={ShadowAIInsideYourFirm} />
+        <Route path="/insights/ai-answers-first-customer-channels" component={AIAnswersFirst} />
         <Route path="/insights/ceo-guide-data-modernization" component={CeoGuideDataModernization} />
         <Route path="/insights/building-data-culture" component={BuildingDataCulture} />
         <Route path="/insights/cloud-native-architecture" component={CloudNativeArchitecture} />

@@ -94,39 +94,48 @@ export function OperationalExcellence() {
               transition={{ duration: 0.6, ease, delay: (i % 2) * 0.08 }}
             >
               <Link href={s.link}>
-                <article className="group relative overflow-hidden rounded-xl min-h-[340px] lg:min-h-[380px] flex cursor-pointer ring-1 ring-charcoal/10">
-                  {/* Image */}
-                  <img
-                    src={s.image}
-                    alt=""
-                    aria-hidden
-                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-[1.06]"
-                  />
-                  {/* bottom-anchored scrim — copy zone dark, photo true-colour above */}
-                  <div aria-hidden className="absolute inset-0 nx-scrim-card" />
-                  {/* Slight deepen on hover, opacity-only per animation rules */}
-                  <div
-                    aria-hidden
-                    className="absolute inset-0 bg-charcoal/15 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                  />
+                {/* BCG-style card: clear photo + solid title footer; description
+                    reveals on hover/focus as a solid panel — no gradient on the image */}
+                <article className="group relative overflow-hidden rounded-xl flex flex-col cursor-pointer ring-1 ring-charcoal/10 bg-white focus-within:ring-2 focus-within:ring-primary">
+                  {/* Image — true colour, untouched */}
+                  <div className="aspect-[16/10] overflow-hidden">
+                    <img
+                      src={s.image}
+                      alt=""
+                      aria-hidden
+                      className="h-full w-full object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-[1.04]"
+                    />
+                  </div>
 
-                  {/* Content */}
-                  <div className="relative z-10 mt-auto p-8 lg:p-9 w-full">
-                    <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-amber [text-shadow:0_1px_10px_rgba(17,18,22,0.55)]">
+                  {/* Title footer band */}
+                  <div className="px-6 py-6 lg:px-7 lg:py-7 bg-white">
+                    <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-primary">
                       {s.category}
                     </span>
-                    <h3 className="mt-3 text-white font-semibold leading-[1.18] tracking-[-0.015em] text-[1.45rem] lg:text-[1.6rem] [text-shadow:0_1px_14px_rgba(17,18,22,0.4)]">
+                    <h3 className="mt-2 text-charcoal font-semibold leading-[1.2] tracking-[-0.015em] text-[1.3rem] lg:text-[1.45rem]">
                       {s.title}
                     </h3>
-                    <p className="mt-3 text-[0.95rem] leading-[1.55] text-white/75 max-w-[44ch]">
-                      {s.description}
-                    </p>
-                    <span className="mt-6 inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.1em] text-white">
-                      Explore
-                      <span className="text-primary transition-transform duration-300 group-hover:translate-x-1">
-                        →
+                  </div>
+
+                  {/* Hover/focus reveal — solid charcoal panel, opacity-only */}
+                  <div className="absolute inset-0 bg-charcoal opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-within:opacity-100 flex">
+                    <div className="m-auto w-full p-8 lg:p-10">
+                      <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-amber">
+                        {s.category}
                       </span>
-                    </span>
+                      <h3 className="mt-3 text-white font-semibold leading-[1.18] tracking-[-0.015em] text-[1.45rem] lg:text-[1.6rem]">
+                        {s.title}
+                      </h3>
+                      <p className="mt-4 text-[0.95rem] leading-[1.6] text-white/80 max-w-[46ch]">
+                        {s.description}
+                      </p>
+                      <span className="mt-7 inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.1em] text-white">
+                        Explore
+                        <span className="text-primary transition-transform duration-300 group-hover:translate-x-1">
+                          →
+                        </span>
+                      </span>
+                    </div>
                   </div>
                 </article>
               </Link>
