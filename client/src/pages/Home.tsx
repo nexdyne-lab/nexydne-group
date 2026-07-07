@@ -103,7 +103,7 @@ export default function Home() {
       <SpotlightStories />
 
       {/* 2. Our Perspective — asymmetric 5/7 grid, warm brand wash */}
-      <section className="relative nx-surface-charcoal pt-10 pb-12 lg:pt-14 lg:pb-14 overflow-hidden">
+      <section className="relative nx-surface-charcoal pt-16 pb-14 lg:pt-20 lg:pb-16 overflow-hidden">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0"
@@ -114,8 +114,8 @@ export default function Home() {
           }}
         />
         <div className="nx-band relative">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20 items-center">
-            {/* Left (5/12) — eyebrow + headline */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+            {/* Left (5/12) — statement + CTA: where the journey starts */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -126,39 +126,74 @@ export default function Home() {
               <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-amber mb-6">
                 Our Perspective
               </span>
-              <h2 className="nx-h2 text-white">
-                Governing intelligence. Scaling judgment. Leading in the age of{" "}
-                <span
-                  className="text-white"
-
-                >
-                  intelligent machines.
-                </span>
+              <h2 className="text-[1.9rem] md:text-[2.3rem] lg:text-[2.6rem] font-bold tracking-[-0.02em] leading-[1.12] text-white">
+                Governing intelligence.
+                <br />
+                Scaling judgment.
               </h2>
+              <p className="mt-5 text-[1.02rem] md:text-[1.08rem] leading-[1.65] text-white/70 max-w-[42ch]">
+                The next decade belongs to organizations that govern intelligence
+                as deliberately as they deploy it.
+              </p>
+              <div className="mt-8">
+                <Link href="/insights/ai-adoption-outlook-2026">
+                  <PrimaryButton>Read our perspective</PrimaryButton>
+                </Link>
+              </div>
             </motion.div>
 
-            {/* Right (7/12) — body */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.7, delay: 0.1 }}
-              className="lg:col-span-7"
-            >
-              <p className="text-base md:text-lg text-white/80 leading-[1.7] max-w-[58ch]">
-                The organizations that will define the next decade will be the ones that govern intelligence as deliberately as they deploy it. NexDyne combines deep industry expertise with structured intelligence governance to help ambitious leaders harness AI, data, and operational power — while strengthening the human judgment, accountability, and trust that no machine can provide. From modernizing legacy systems to designing AI-enabled operating models, we build transformations that perform, endure, and scale. NexDyne is where governance meets growth.
-              </p>
-            </motion.div>
+            {/* Right (7/12) — three pillars: the wall of text, made scannable */}
+            <div className="lg:col-span-7">
+              {[
+                {
+                  n: "01",
+                  title: "Govern",
+                  copy: "Structured intelligence governance — HIG™ — keeps human judgment, accountability, and trust at the center of every AI decision.",
+                },
+                {
+                  n: "02",
+                  title: "Scale",
+                  copy: "From modernizing legacy systems to AI-enabled operating models, we build transformations that perform, endure, and scale.",
+                },
+                {
+                  n: "03",
+                  title: "Lead",
+                  copy: "Deep industry expertise for ambitious leaders who intend to define the decade — not react to it.",
+                },
+              ].map((p, i) => (
+                <motion.div
+                  key={p.n}
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.55, delay: i * 0.1 }}
+                  className={`flex gap-6 md:gap-8 py-6 md:py-7 ${i > 0 ? "border-t border-white/12" : "lg:pt-2"}`}
+                >
+                  <span className="text-[13px] font-semibold text-amber tracking-[0.08em] pt-1 shrink-0 w-7">
+                    {p.n}
+                  </span>
+                  <div>
+                    <h3 className="text-[1.15rem] md:text-[1.25rem] font-semibold text-white tracking-[-0.01em]">
+                      {p.title}
+                    </h3>
+                    <p className="mt-2 text-[0.98rem] leading-[1.6] text-white/65 max-w-[58ch]">
+                      {p.copy}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </div>
 
-          {/* Editorial category strip — spread across, box-highlight on hover/active */}
-          <div className="mt-10 lg:mt-12 pt-6 border-t border-white/15">
-            <div className="flex flex-wrap justify-center lg:justify-between items-center gap-x-4 gap-y-3">
+          {/* Explore-by-topic chips — a visible next step, not orphaned labels */}
+          <div className="mt-10 lg:mt-12 pt-8 border-t border-white/12">
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/45 mr-2">
+                Explore by topic
+              </span>
               {perspectiveCategories.map((cat) => (
                 <Link key={cat.label} href={cat.href}>
-                  <span
-                    className="inline-block px-3 py-2 text-[14px] md:text-[15px] font-semibold uppercase tracking-[0.18em] text-white/65 hover:text-amber transition-colors duration-200 cursor-pointer"
-                  >
+                  <span className="inline-flex items-center gap-2 rounded-full border border-white/25 px-4 py-2 text-[12.5px] font-medium text-white/80 hover:border-amber hover:text-amber focus-visible:border-amber transition-colors duration-200 cursor-pointer">
                     {cat.label}
                   </span>
                 </Link>
