@@ -107,14 +107,22 @@ export function OperationalExcellence() {
                     />
                   </div>
 
-                  {/* Title footer band */}
-                  <div className="px-6 py-6 lg:px-7 lg:py-7 bg-white">
-                    <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-primary">
-                      {s.category}
+                  {/* Title footer band — arrow signals clickability before hover */}
+                  <div className="px-6 py-6 lg:px-7 lg:py-7 bg-white flex items-end justify-between gap-4">
+                    <div>
+                      <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-primary">
+                        {s.category}
+                      </span>
+                      <h3 className="mt-2 text-charcoal font-semibold leading-[1.2] tracking-[-0.015em] text-[1.3rem] lg:text-[1.45rem]">
+                        {s.title}
+                      </h3>
+                    </div>
+                    <span
+                      aria-hidden
+                      className="mb-1 shrink-0 text-primary text-xl leading-none transition-transform duration-300 group-hover:translate-x-1"
+                    >
+                      →
                     </span>
-                    <h3 className="mt-2 text-charcoal font-semibold leading-[1.2] tracking-[-0.015em] text-[1.3rem] lg:text-[1.45rem]">
-                      {s.title}
-                    </h3>
                   </div>
 
                   {/* Hover/focus reveal — solid charcoal panel, opacity-only */}

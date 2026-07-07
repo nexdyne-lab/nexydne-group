@@ -303,7 +303,7 @@ export default function Home() {
         />
         <div className="nx-band relative">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
-            {/* Left — 40% */}
+            {/* Left — 40%: statement + tab-aware CTA (the journey endpoint) */}
             <div className="lg:col-span-5">
               <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-[#FFE3D8] mb-6">
                 How Can We Assist You Today?
@@ -312,34 +312,44 @@ export default function Home() {
                 Explore our core areas of expertise.
               </h2>
               <p className="text-base md:text-lg text-[#FFE3D8] leading-[1.7] max-w-[48ch]">
-                Learn more about our capabilities across industries and disciplines by selecting your topic of interest.
+                Pick a topic on the right — or start from the full picture.
               </p>
+              <div className="mt-9 flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8">
+                <Link href={solutionsTab === "capabilities" ? "/capabilities" : "/industries"}>
+                  <span className="inline-block px-6 py-3 bg-white text-[#C93E20] text-[13px] uppercase tracking-[0.1em] font-semibold hover:bg-[#FFE3D8] transition-colors cursor-pointer">
+                    {solutionsTab === "capabilities" ? "All capabilities" : "All industries"}
+                  </span>
+                </Link>
+                <Link href="/contact">
+                  <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/50 hover:border-white pb-1 transition-colors cursor-pointer">
+                    Talk to an expert
+                  </span>
+                </Link>
+              </div>
             </div>
 
             {/* Right — 60% */}
             <div className="lg:col-span-7">
-              {/* Flat underline tab bar */}
-              <div className="flex items-end gap-8 border-b border-white/25 mb-10">
-                <button
-                  onClick={() => setSolutionsTab("capabilities")}
-                  className={`pb-4 text-[13px] font-semibold uppercase tracking-[0.1em] transition-colors ${
-                    solutionsTab === "capabilities"
-                      ? "text-white border-b-2 border-white -mb-px"
-                      : "text-white/60 hover:text-white"
-                  }`}
-                >
-                  Capabilities
-                </button>
-                <button
-                  onClick={() => setSolutionsTab("industries")}
-                  className={`pb-4 text-[13px] font-semibold uppercase tracking-[0.1em] transition-colors ${
-                    solutionsTab === "industries"
-                      ? "text-white border-b-2 border-white -mb-px"
-                      : "text-white/60 hover:text-white"
-                  }`}
-                >
-                  Industries
-                </button>
+              {/* Flat underline tab bar — bigger targets, unmissable active state */}
+              <div role="tablist" className="flex items-end gap-9 border-b border-white/25 mb-10">
+                {(["capabilities", "industries"] as const).map((tab) => (
+                  <button
+                    key={tab}
+                    role="tab"
+                    aria-selected={solutionsTab === tab}
+                    onClick={() => setSolutionsTab(tab)}
+                    className={`relative pb-4 text-[14px] font-semibold uppercase tracking-[0.1em] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-white ${
+                      solutionsTab === tab
+                        ? "text-white"
+                        : "text-[#FFE3D8]/75 hover:text-white"
+                    }`}
+                  >
+                    {tab === "capabilities" ? "Capabilities" : "Industries"}
+                    {solutionsTab === tab && (
+                      <span className="absolute left-0 right-0 -bottom-px h-[3px] bg-white" />
+                    )}
+                  </button>
+                ))}
               </div>
 
               {/* Dense 2-col list */}
