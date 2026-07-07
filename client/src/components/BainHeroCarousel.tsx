@@ -1,20 +1,20 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Link } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 /**
- * NexDyne homepage hero — CHARCOAL "Dark Authority" (Brand v2, Site A).
+ * NexDyne homepage hero — EY-style "sleek control" composition on the
+ * charcoal Dark-Authority canvas (Brand v3).
  *
- * Adopted hero for the neutral site. Neutrals build the system; colour
- * communicates meaning. The canvas is charcoal
- * (#242424) — a controlled, institutional dark surface (the "governance mode").
- * Colour appears only as a signal: Orange-Red on the eyebrow tick, one accented
- * payoff phrase per slide, and the CTA arrow. Amber is reserved for the progress
- * bar (a progress indicator — its defined role). No full-bleed colour fills.
- *
- * Each slide carries a single low-opacity accent glow so the carousel keeps
- * identity while the charcoal foundation stays dominant (70–80% neutral).
+ * Composition rules (adapted from EY's hero, mapped to our brand):
+ * - ONE short all-white headline, low in the frame (no eyebrow, no accent
+ *   colour in the headline — hero rule).
+ * - One-sentence sub-line with a vertical orange signal bar at its left.
+ * - Quiet inline slide tabs bottom-left: short amber progress tick above the
+ *   active label only — no full-width progress tracks.
+ * - Edge chevron arrows for manual control (desktop).
+ * - Whole slide content links to the slide's destination; no fat CTA.
  */
 
 const SLIDE_MS = 6500;
@@ -23,18 +23,15 @@ const ease = [0.22, 1, 0.36, 1] as const;
 const CHARCOAL = "#242424";
 const SIGNAL = "#E04C2C"; // Orange-Red — the signal colour
 const AMBER = "#FFB41D";
-const PURPLE = "#6F44A3";
 
 interface Slide {
   /** short label shown in the bottom navigator row */
   label: string;
-  /** small bold line above the headline */
-  eyebrow: string;
-  /** headline lines rendered in white (manual breaks via \n) */
+  /** short all-white headline (manual breaks via \n) */
   headline: string;
-  /** payoff phrase rendered in the signal colour beneath the headline */
-  accent?: string;
-  cta: { text: string; href: string };
+  /** one-sentence sub-line beside the orange signal bar */
+  sub: string;
+  href: string;
   /** rgba glow colour + focal position for this slide's controlled accent */
   glow: { color: string; at: string };
   /** full-bleed background photo (public path) */
@@ -107,14 +104,8 @@ function CharcoalCanvas({
       />
       {/* directional scrim — ink on the headline side, photo released right */}
       <div className="absolute inset-0 nx-scrim-text" />
-      {/* faint structural striations for texture */}
-      <div
-        className="absolute inset-0 opacity-[0.04] mix-blend-soft-light"
-        style={{
-          backgroundImage:
-            "repeating-linear-gradient(118deg, rgba(255,255,255,0.8) 0px, rgba(255,255,255,0) 3px 26px)",
-        }}
-      />
+      {/* bottom settle — content and tabs sit low in the frame, EY-style */}
+      <div className="absolute inset-x-0 bottom-0 h-[44%] bg-gradient-to-t from-black/55 to-transparent" />
     </div>
   );
 }
@@ -122,10 +113,9 @@ function CharcoalCanvas({
 const slides: Slide[] = [
   {
     label: "Win with HIG™",
-    eyebrow: "Human Intelligence Governance",
-    headline: "Human intelligence.",
-    accent: "Governed. Scaled.",
-    cta: { text: "Read More", href: "/about" },
+    headline: "Human intelligence.\nGoverned. Scaled.",
+    sub: "HIG™ — the operating discipline for leaders who scale judgment, not just software.",
+    href: "/about",
     glow: { color: "rgba(224,76,44,0.18)", at: "82% 72%" },
     image: "/images/hero/hero-hig.jpg",
     focal: "22% 40%",
@@ -133,10 +123,9 @@ const slides: Slide[] = [
   },
   {
     label: "AI Adoption 2026",
-    eyebrow: "AI Adoption Outlook",
-    headline: "AI Adoption Outlook\n2026:",
-    accent: "A Winner's Paradox",
-    cta: { text: "Read More", href: "/capabilities/artificial-intelligence" },
+    headline: "AI Adoption Outlook 2026",
+    sub: "A winner's paradox — the firms moving fastest are the ones governing hardest.",
+    href: "/capabilities/artificial-intelligence",
     glow: { color: "rgba(255,180,29,0.16)", at: "86% 30%" },
     image: "/images/hero/hero-ai.jpg",
     focal: "62% 42%",
@@ -145,10 +134,9 @@ const slides: Slide[] = [
   },
   {
     label: "Operational Excellence",
-    eyebrow: "Operations",
-    headline: "Turn operational chaos into",
-    accent: "governed, scalable execution",
-    cta: { text: "Read More", href: "/solutions/intelligent-process-optimization" },
+    headline: "From chaos to governed execution",
+    sub: "Operational excellence that scales with ambition — bottlenecks out, oversight in.",
+    href: "/solutions/intelligent-process-optimization",
     glow: { color: "rgba(224,76,44,0.16)", at: "80% 78%" },
     image: "/images/hero/hero-ops.jpg",
     focal: "2% 46%",
@@ -157,10 +145,9 @@ const slides: Slide[] = [
   },
   {
     label: "NexDyne x Cloud",
-    eyebrow: "NexDyne x Cloud",
-    headline: "Helping clients accelerate\nthe adoption of",
-    accent: "AI solutions",
-    cta: { text: "Learn about our partnerships", href: "/capabilities/technology" },
+    headline: "Accelerating AI in the cloud",
+    sub: "Partnerships that move adoption from pilot to production — safely, and at speed.",
+    href: "/capabilities/technology",
     glow: { color: "rgba(255,180,29,0.14)", at: "84% 40%" },
     image: "/images/hero/hero-cloud.jpg",
     focal: "55% 35%",
@@ -189,9 +176,6 @@ export function BainHeroCarousel() {
   }, [active, paused, goTo]);
 
   const slide = slides[active];
-
-  const scrollDown = () =>
-    window.scrollBy({ top: window.innerHeight - 80, behavior: "smooth" });
 
   return (
     <section
@@ -228,114 +212,99 @@ export function BainHeroCarousel() {
         }}
       />
 
-      {/* --- Foreground content --- */}
+      {/* --- Edge arrows (desktop) --- */}
+      <button
+        onClick={() => goTo(active - 1)}
+        aria-label="Previous slide"
+        className="absolute left-0 top-1/2 z-20 hidden h-14 w-12 -translate-y-1/2 items-center justify-center bg-black/35 text-white transition-colors hover:bg-black/60 focus-visible:outline-2 focus-visible:outline-white md:flex"
+      >
+        <ChevronLeft className="h-6 w-6" />
+      </button>
+      <button
+        onClick={() => goTo(active + 1)}
+        aria-label="Next slide"
+        className="absolute right-0 top-1/2 z-20 hidden h-14 w-12 -translate-y-1/2 items-center justify-center bg-black/35 text-white transition-colors hover:bg-black/60 focus-visible:outline-2 focus-visible:outline-white md:flex"
+      >
+        <ChevronRight className="h-6 w-6" />
+      </button>
+
+      {/* --- Foreground content — sits LOW in the frame, EY-style --- */}
       {/* container geometry mirrors Navigation's bar (max-w + px) so the
-          headline's left edge aligns with the nav logo block, Bain-style */}
-      <div className="nx-band relative z-10 flex h-full flex-col">
-        <div className="flex flex-1 items-center pt-32">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={active}
-              initial={{ opacity: 0, y: 22 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -14 }}
-              transition={{ duration: 0.65, ease }}
-              className="max-w-[1040px]"
-            >
-              {/* eyebrow with signal tick */}
-              <p className="mb-6 flex items-center gap-3 text-[1rem] md:text-[1.15rem] font-semibold tracking-[-0.01em] text-white/85">
-                <span
-                  className="inline-block h-[10px] w-[10px] shrink-0"
-                  style={{ backgroundColor: SIGNAL }}
-                  aria-hidden
-                />
-                {slide.eyebrow}
-              </p>
-              <h1 className="whitespace-pre-line font-bold tracking-[-0.035em] leading-[0.99] text-[clamp(2.4rem,5.4vw,5rem)] text-white drop-shadow-[0_2px_20px_rgba(0,0,0,0.35)]">
-                {slide.headline}
-                {slide.accent && (
-                  <>
-                    {"\n"}
-                    <span>{slide.accent}</span>
-                  </>
-                )}
-              </h1>
-              <Link href={slide.cta.href}>
-                <span className="group mt-11 inline-flex items-center gap-4 text-[13px] font-bold uppercase tracking-[0.16em] text-white cursor-pointer">
-                  {slide.cta.text}
+          headline's left edge aligns with the nav logo block */}
+      <div className="nx-band relative z-10 flex h-full flex-col justify-end">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={active}
+            initial={{ opacity: 0, y: 22 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -14 }}
+            transition={{ duration: 0.65, ease }}
+            className="max-w-[1040px]"
+          >
+            <Link href={slide.href}>
+              <span className="group block cursor-pointer" aria-label={`${slide.headline} — read more`}>
+                <h1 className="whitespace-pre-line font-bold tracking-[-0.035em] leading-[1.02] text-[clamp(2.3rem,4.8vw,4.4rem)] text-white drop-shadow-[0_2px_20px_rgba(0,0,0,0.35)]">
+                  {slide.headline}
+                </h1>
+                <p className="mt-6 flex max-w-[62ch] items-stretch gap-4 text-[1.05rem] md:text-[1.25rem] leading-[1.5] font-medium text-white/90">
                   <span
-                    className="relative block h-[2px] w-14 transition-[width] duration-300 group-hover:w-20"
+                    className="w-[3px] shrink-0 self-stretch"
                     style={{ backgroundColor: SIGNAL }}
-                  >
+                    aria-hidden
+                  />
+                  <span>
+                    {slide.sub}
                     <span
-                      className="absolute -right-[1px] -top-[4px] h-[10px] w-[10px] rotate-45 border-r-2 border-t-2"
-                      style={{ borderColor: SIGNAL }}
+                      aria-hidden
+                      className="ml-3 inline-block transition-transform duration-300 group-hover:translate-x-1"
+                      style={{ color: SIGNAL }}
+                    >
+                      →
+                    </span>
+                  </span>
+                </p>
+              </span>
+            </Link>
+          </motion.div>
+        </AnimatePresence>
+
+        {/* --- Bottom slide navigator — quiet inline tabs, EY-style --- */}
+        <div className="relative z-10 mt-12 pb-8 md:mt-16 md:pb-10">
+          <div className="grid grid-cols-2 gap-x-8 gap-y-4 sm:flex sm:items-start sm:gap-12 lg:gap-16">
+            {slides.map((s, i) => (
+              <button
+                key={i}
+                onClick={() => goTo(i)}
+                className="group relative pt-3 text-left"
+                aria-current={i === active}
+              >
+                {/* short progress tick — active tab only */}
+                <span className="absolute left-0 top-0 h-[3px] w-12 overflow-hidden">
+                  {i === active && (
+                    <span
+                      key={active}
+                      className="block h-full"
+                      style={{
+                        backgroundColor: AMBER,
+                        animation: paused
+                          ? "none"
+                          : `heroFill ${SLIDE_MS}ms linear forwards`,
+                        width: paused ? "35%" : undefined,
+                      }}
                     />
-                  </span>
+                  )}
                 </span>
-              </Link>
-            </motion.div>
-          </AnimatePresence>
-        </div>
-
-        {/* --- Bottom slide navigator + scroll cue --- */}
-        <div className="relative z-10 pb-8 md:pb-10">
-          <div className="flex items-end justify-between gap-6">
-            <div className="grid flex-1 grid-cols-2 gap-x-6 gap-y-3 sm:flex sm:items-start sm:gap-0">
-              {slides.map((s, i) => (
-                <button
-                  key={i}
-                  onClick={() => goTo(i)}
-                  className="group relative flex-1 pt-3 text-left"
-                  aria-current={i === active}
+                <span
+                  className={`block text-[13px] md:text-[15px] font-semibold tracking-[-0.01em] transition-colors ${
+                    i === active
+                      ? "text-white"
+                      : "text-white/55 group-hover:text-white/85"
+                  }`}
                 >
-                  {/* progress track */}
-                  <span className="absolute left-0 right-0 top-0 h-[3px] bg-white/25 sm:right-5">
-                    {i === active && (
-                      <span
-                        key={active}
-                        className="block h-full"
-                        style={{
-                          backgroundColor: AMBER,
-                          animation: paused
-                            ? "none"
-                            : `heroFill ${SLIDE_MS}ms linear forwards`,
-                          width: paused ? "35%" : undefined,
-                        }}
-                      />
-                    )}
-                    {i < active && <span className="block h-full w-full bg-white/45" />}
-                  </span>
-                  <span
-                    className={`block text-[13px] md:text-[15px] font-semibold tracking-[-0.01em] transition-colors ${
-                      i === active
-                        ? "text-white"
-                        : "text-white/55 group-hover:text-white/80"
-                    }`}
-                  >
-                    {s.label}
-                  </span>
-                </button>
-              ))}
-            </div>
-
-            <button
-              onClick={scrollDown}
-              className="hidden shrink-0 items-center gap-3 text-white/85 transition-colors hover:text-white md:flex"
-              aria-label="Scroll to content"
-            >
-              <span className="text-[12px] font-semibold uppercase tracking-[0.16em]">
-                Scroll
-              </span>
-              <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/40">
-                <motion.span
-                  animate={{ y: [0, 4, 0] }}
-                  transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
-                >
-                  <ChevronDown className="h-5 w-5" />
-                </motion.span>
-              </span>
-            </button>
+                  {s.label}
+                </span>
+              </button>
+            ))}
           </div>
         </div>
       </div>
