@@ -382,7 +382,7 @@ export default function Home() {
       {/* 6. Latest Insights — flat cards with hairline borders */}
       <section className="nx-section nx-surface-charcoal">
         <div className="nx-band">
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-14 md:mb-16">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-10 md:mb-12">
             <div className="max-w-3xl">
               <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-amber mb-5">
                 Insights
@@ -412,7 +412,7 @@ export default function Home() {
             >
               <Link href={featuredInsight.link}>
                 <div className="cursor-pointer border border-charcoal/10 bg-white h-full flex flex-col">
-                  <div className="aspect-[16/10] overflow-hidden bg-white">
+                  <div className="aspect-[16/9] overflow-hidden bg-white">
                     <img
                       src={featuredInsight.image}
                       alt={featuredInsight.title}
@@ -441,7 +441,8 @@ export default function Home() {
             </motion.div>
 
             {/* Article stack */}
-            <div className="flex flex-col gap-6 md:gap-7">
+            {/* Stack stretches to match the featured column — no dead band below */}
+            <div className="flex flex-col gap-6 md:gap-7 lg:h-full lg:justify-between">
               {insightArticles.map((article, i) => (
                 <motion.div
                   key={i}
