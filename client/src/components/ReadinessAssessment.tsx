@@ -61,7 +61,7 @@ export default function ReadinessAssessment({
   };
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-base border-y border-white/5">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-charcoal border-y border-white/5">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
@@ -69,12 +69,12 @@ export default function ReadinessAssessment({
             <p className="text-muted-foreground/70 max-w-2xl mx-auto">{description}</p>
           </div>
 
-          <div className="bg-base border border-white/10 rounded-xl sm:rounded-xl sm:rounded-2xl p-8 md:p-12 shadow-xl sm:shadow-xl sm:shadow-2xl relative overflow-hidden">
+          <div className="bg-charcoal border border-white/10 rounded-xl sm:rounded-xl sm:rounded-2xl p-8 md:p-12 shadow-xl sm:shadow-xl sm:shadow-2xl relative overflow-hidden">
             {/* Progress Bar */}
             {!isComplete && (
               <div className="absolute top-0 left-0 w-full h-1 bg-white/10">
                 <div 
-                  className="h-full bg-secondary transition duration-500 ease-out"
+                  className="h-full bg-amber transition duration-500 ease-out"
                   style={{ width: `${((currentStep + 1) / questions.length) * 100}%` }}
                 />
               </div>
@@ -116,7 +116,7 @@ export default function ReadinessAssessment({
                 </p>
 
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
-                  <Button className="bg-secondary hover:bg-secondary text-base font-bold px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 rounded-full">
+                  <Button className="bg-primary hover:bg-primary-hover text-white font-bold px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 rounded-full">
                     {ctaText}
                   </Button>
                   <Button 

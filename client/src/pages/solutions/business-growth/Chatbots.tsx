@@ -159,7 +159,7 @@ export default function Chatbots() {
                 <p className="text-muted-foreground mb-2">NEXDYNE Conversational AI Expert</p>
                 <p className="text-muted-foreground mb-6">Director of Digital Solutions</p>
                 <div className="flex flex-wrap gap-4">
-                  <Button className="bg-secondary hover:bg-secondary text-charcoal">
+                  <Button className="bg-primary hover:bg-primary-hover text-white">
                     Start a conversation
                   </Button>
                   <Button variant="outline" className="border-secondary text-base hover:bg-secondary/10">
@@ -189,7 +189,7 @@ export default function Chatbots() {
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 Seeking a trusted technology partner, an accelerator for your digital evolution, or exceptional experiences that wow your customers? You're in the right place. Our cutting-edge solutions position you ahead of market trends and competitive pressures.
               </p>
-              <Button className="bg-secondary hover:bg-secondary text-charcoal">
+              <Button className="bg-primary hover:bg-primary-hover text-white">
                 Start a conversation
               </Button>
             </div>
@@ -235,7 +235,7 @@ export default function Chatbots() {
             Let's explore how intelligent chatbot technology can elevate customer satisfaction, streamline operations, and unlock new growth opportunities.
           </p>
           <div className="flex flex-wrap gap-4 justify-center mb-8">
-            <Button className="bg-secondary hover:bg-secondary text-charcoal text-lg px-8 py-6">
+            <Button className="bg-primary hover:bg-primary-hover text-white text-lg px-8 py-6">
               Start a conversation
             </Button>
             <Button variant="outline" className="border-white text-charcoal hover:bg-white/10 text-lg px-8 py-6">

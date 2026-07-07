@@ -345,7 +345,7 @@ export default function ChurnPredictionPlaybook() {
                     <button className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-charcoal hover:bg-primary/90 transition-colors">
                       <Linkedin className="w-5 h-5" />
                     </button>
-                    <button className="w-10 h-10 bg-[#1DA1F2] rounded-full flex items-center justify-center text-charcoal hover:bg-secondary transition-colors">
+                    <button className="w-10 h-10 bg-[#1DA1F2] rounded-full flex items-center justify-center text-white hover:opacity-80 transition-opacity">
                       <Twitter className="w-5 h-5" />
                     </button>
                     <button className="w-10 h-10 bg-background rounded-full flex items-center justify-center text-charcoal hover:bg-charcoal/80 transition-colors">

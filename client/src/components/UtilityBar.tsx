@@ -39,7 +39,7 @@ export default function UtilityBar({ isScrolled, isNavbarLight }: UtilityBarProp
           : "h-9 opacity-100"
       } ${
         isNavbarLight
-          ? "bg-base text-on-dark/90"
+          ? "bg-charcoal text-on-dark/90"
           : "bg-charcoal/30 backdrop-blur-sm text-white/80 border-b border-white/10"
       }`}
     >
@@ -110,7 +110,7 @@ export default function UtilityBar({ isScrolled, isNavbarLight }: UtilityBarProp
               const toast = document.createElement("div");
               toast.textContent = "Saved Items — Feature coming soon";
               toast.className =
-                "fixed top-16 right-6 bg-base text-text-light text-sm px-4 py-2 rounded shadow-lg z-[100] animate-in fade-in slide-in-from-top-2";
+                "fixed top-16 right-6 bg-charcoal text-text-light text-sm px-4 py-2 rounded shadow-lg z-[100] animate-in fade-in slide-in-from-top-2";
               document.body.appendChild(toast);
               setTimeout(() => toast.remove(), 2500);
             }}

@@ -128,7 +128,7 @@ export default function Initiatives() {
                 Partner with NexDyne to bring enterprise-grade intelligence and technology to your organization or community.
               </p>
               <Link href="/contact">
-                <button className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-secondary text-charcoal font-semibold rounded-full hover:bg-secondary transition-colors">
+                <button className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary-hover transition-colors">
                   Get in Touch
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
                 </button>

@@ -23,7 +23,7 @@ export default function InteractiveTechStack({
   categories 
 }: InteractiveTechStackProps) {
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-base">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-charcoal">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-white mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12 text-center">{title}</h2>
         

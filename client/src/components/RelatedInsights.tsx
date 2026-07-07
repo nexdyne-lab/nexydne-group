@@ -39,7 +39,7 @@ const insights: (Insight & { href: string })[] = [
 
 export default function RelatedInsights() {
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-base border-t border-white/5">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-charcoal border-t border-white/5">
       <div className="container px-6 md:px-12">
         <div className="flex items-end justify-between mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
           <div>

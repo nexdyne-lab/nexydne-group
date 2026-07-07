@@ -70,14 +70,14 @@ export default function InsightArticleLayout({
       <Navigation />
 
       {/* Hero Section - DZ10 Design: Deep Navy background with large image */}
-      <section className="relative min-h-[70vh] flex items-end pt-20 overflow-hidden bg-base">
+      <section className="relative min-h-[70vh] flex items-end pt-20 overflow-hidden bg-charcoal">
         <div className="absolute inset-0 z-0">
           <img 
             src={heroImage}
             alt={heroImageAlt} 
             className="w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-base via-base/80 to-base/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/80 to-charcoal/40" />
         </div>
 
         <div className="container px-4 md:px-8 lg:px-12 relative z-10 pb-16 md:pb-24">
@@ -200,7 +200,7 @@ export default function InsightArticleLayout({
                 </div>
 
                 {/* Newsletter CTA */}
-                <div className="bg-base rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 text-white">
+                <div className="bg-charcoal rounded-lg p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 text-white">
                   <h3 className="text-lg font-bold mb-2">Stay ahead of the curve</h3>
                   <p className="text-white/60 text-sm mb-6">
                     Get the latest strategic insights delivered directly to your inbox.

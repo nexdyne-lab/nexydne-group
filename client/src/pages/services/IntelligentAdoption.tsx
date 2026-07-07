@@ -268,7 +268,7 @@ export default function IntelligentAdoption() {
               Let's discuss how change management can accelerate your technology adoption and maximize ROI.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-secondary text-charcoal font-semibold rounded-full hover:bg-secondary transition-colors">
+              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary-hover transition-colors">
                 Schedule a Consultation
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>

@@ -370,7 +370,7 @@ export default function BCGNavigation() {
                           onMouseEnter={() => handleCategoryHover(cat.name)}
                           className={`block w-full text-left py-2 text-base transition-colors ${
                             activeCategory === cat.name 
-                              ? 'text-base font-medium bg-base/5 px-3 -mx-3 rounded' 
+                              ? 'text-base font-medium bg-charcoal/5 px-3 -mx-3 rounded' 
                               : 'text-muted-foreground hover:text-base'
                           }`}
                         >
@@ -406,7 +406,7 @@ export default function BCGNavigation() {
                           onMouseEnter={() => handleCategoryHover(cat.name)}
                           className={`block w-full text-left py-2 text-base transition-colors ${
                             activeCategory === cat.name 
-                              ? 'text-base font-medium bg-base/5 px-3 -mx-3 rounded' 
+                              ? 'text-base font-medium bg-charcoal/5 px-3 -mx-3 rounded' 
                               : 'text-muted-foreground hover:text-base'
                           }`}
                         >
@@ -442,7 +442,7 @@ export default function BCGNavigation() {
                           onMouseEnter={() => handleCategoryHover(cat.name)}
                           className={`block w-full text-left py-2 text-base transition-colors ${
                             activeCategory === cat.name 
-                              ? 'text-base font-medium bg-base/5 px-3 -mx-3 rounded' 
+                              ? 'text-base font-medium bg-charcoal/5 px-3 -mx-3 rounded' 
                               : 'text-muted-foreground hover:text-base'
                           }`}
                         >

@@ -139,7 +139,7 @@ export default function LeadCaptureForm({
           href={downloadUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-base text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary transition-colors"
+          className="inline-flex items-center gap-2 bg-charcoal text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary transition-colors"
         >
           <Download className="w-4 h-4 sm:w-5 sm:h-5" />
           Download Whitepaper
@@ -240,7 +240,7 @@ export default function LeadCaptureForm({
         <Button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-base hover:bg-primary"
+          className="w-full bg-charcoal hover:bg-primary"
         >
           {isSubmitting ? (
             <>
@@ -261,7 +261,7 @@ export default function LeadCaptureForm({
   return (
     <div className={`bg-white rounded-lg sm:rounded-lg sm:rounded-xl shadow-lg overflow-hidden ${className}`}>
       {whitepaperTitle && (
-        <div className="bg-gradient-to-r from-base to-base p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 text-white">
+        <div className="bg-gradient-to-r from-charcoal to-charcoal p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 text-white">
           <h3 className="text-xl font-bold mb-2">{whitepaperTitle}</h3>
           {whitepaperDescription && (
             <p className="text-white/80 text-sm">{whitepaperDescription}</p>
@@ -376,7 +376,7 @@ export default function LeadCaptureForm({
         <Button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-base hover:bg-primary py-3"
+          className="w-full bg-charcoal hover:bg-primary py-3"
         >
           {isSubmitting ? (
             <>

@@ -231,7 +231,7 @@ export default function WhyIntelligentAutomationInsight() {
                   Let's discuss how intelligent automation can transform your operations.
                 </p>
                 <Link href="/contact">
-                  <button className="w-full py-3 bg-secondary text-charcoal rounded font-semibold text-sm hover:bg-primary transition-colors">
+                  <button className="w-full py-3 bg-primary text-white rounded font-semibold text-sm hover:bg-primary-hover transition-colors">
                     Contact Us
                   </button>
                 </Link>

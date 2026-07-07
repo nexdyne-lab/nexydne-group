@@ -181,7 +181,7 @@ export function CapabilitiesExplorer() {
                   onClick={() => toggleDropdown('capabilities')}
                   className={`w-full flex items-center justify-between px-5 py-4 rounded-lg border-2 transition duration-300 ${
                     activeDropdown === 'capabilities' || selectedCapability
-                      ? 'bg-base text-white border-base'
+                      ? 'bg-charcoal text-white border-base'
                       : 'bg-white text-charcoal border-border hover:border-base'
                   }`}
                 >
@@ -223,7 +223,7 @@ export function CapabilitiesExplorer() {
                   onClick={() => toggleDropdown('industries')}
                   className={`w-full flex items-center justify-between px-5 py-4 rounded-lg border-2 transition duration-300 ${
                     activeDropdown === 'industries' || selectedIndustry
-                      ? 'bg-base text-white border-base'
+                      ? 'bg-charcoal text-white border-base'
                       : 'bg-white text-charcoal border-border hover:border-base'
                   }`}
                 >

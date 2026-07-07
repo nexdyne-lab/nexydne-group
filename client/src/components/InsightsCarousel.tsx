@@ -272,7 +272,7 @@ export function InsightsCarousel() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2 }}
                           >
-                            <span className="inline-block px-3 py-1.5 bg-base/90 text-white text-[9px] sm:text-[10px] font-semibold tracking-wider uppercase rounded-sm">
+                            <span className="inline-block px-3 py-1.5 bg-charcoal/90 text-white text-[9px] sm:text-[10px] font-semibold tracking-wider uppercase rounded-sm">
                               {item.category}
                             </span>
                           </motion.div>

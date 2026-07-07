@@ -275,7 +275,7 @@ export default function AgenticAI() {
               Let's discuss how agentic and generative AI can transform your operations and create competitive advantage.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-secondary text-charcoal font-semibold rounded-full hover:bg-secondary transition-colors">
+              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary-hover transition-colors">
                 Schedule an AI Discovery Session
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>

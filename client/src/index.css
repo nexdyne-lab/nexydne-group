@@ -59,7 +59,6 @@
   --color-amber:  #FFB41D;
 
   /* ── Legacy token aliases (do not remove — many components reference these) ── */
-  --color-base:            var(--color-charcoal);
   --color-primary:         var(--color-signal);
   --color-primary-hover:   var(--color-signal-hover);
   --color-secondary:       var(--color-purple);
@@ -258,12 +257,77 @@
                       uniform across the whole image: enough for white text
                       to read, light enough that the photo stays visible.
                       Replaced the gradient scrims, which read too deep. */
-  .nx-img-warm {
-    background: rgba(224, 140, 60, 0.2);
-    mix-blend-mode: multiply;
+  /* Directional text-side scrim for full-bleed heroes: ink anchors the
+     headline column, then releases the photo — fully transparent by ~72%
+     so the image reads true-colour on the right (Bain/McKinsey pattern).
+     On phones the text spans the full width, so the scrim softens into a
+     gentle top-to-bottom wash instead. */
+  .nx-scrim-text {
+    background: linear-gradient(
+      180deg,
+      rgba(16, 17, 20, 0.62) 0%,
+      rgba(16, 17, 20, 0.34) 38%,
+      rgba(16, 17, 20, 0.5) 74%,
+      rgba(16, 17, 20, 0.66) 100%
+    );
   }
-  .nx-img-veil {
-    background: rgba(38, 26, 16, 0.42);
+  @media (min-width: 768px) {
+    .nx-scrim-text {
+      background: linear-gradient(
+        93deg,
+        rgba(16, 17, 20, 0.9) 0%,
+        rgba(16, 17, 20, 0.78) 26%,
+        rgba(17, 18, 22, 0.46) 46%,
+        rgba(18, 19, 23, 0.16) 62%,
+        rgba(18, 19, 23, 0) 74%
+      );
+    }
+  }
+  /* Bottom-anchored scrim for image cards whose copy sits at the base:
+     the top two-thirds of the photo stays true-colour. */
+  .nx-scrim-card {
+    /* Mobile: copy starts higher in the card, so the ramp starts higher too */
+    background: linear-gradient(
+      180deg,
+      rgba(17, 18, 22, 0) 0%,
+      rgba(17, 18, 22, 0.14) 18%,
+      rgba(17, 18, 22, 0.56) 38%,
+      rgba(17, 18, 22, 0.84) 70%,
+      rgba(17, 18, 22, 0.94) 100%
+    );
+  }
+  @media (min-width: 768px) {
+    .nx-scrim-card {
+      background: linear-gradient(
+        180deg,
+        rgba(17, 18, 22, 0) 0%,
+        rgba(17, 18, 22, 0.06) 26%,
+        rgba(17, 18, 22, 0.52) 48%,
+        rgba(17, 18, 22, 0.82) 74%,
+        rgba(17, 18, 22, 0.94) 100%
+      );
+    }
+  }
+
+  /* ── Surface system ─────────────────────────────────────────────────
+     Consulting-grade layered neutrals so sections read as deliberate
+     bands, not one endless off-white. Alternate white <-> mist; use
+     stone for editorial statement moments; charcoal stays the authority
+     band. Orange-Red keeps >= 4.5:1 on all three light surfaces. */
+  .nx-surface-white { background-color: #ffffff; }
+  /* Dark bands for the rotation: charcoal authority + ember (brand
+     Orange-Red deepened to #C93E20 so white body copy holds ~5:1). */
+  .nx-surface-charcoal { background-color: #242424; }
+  .nx-surface-ember { background-color: #c93e20; }
+  .nx-surface-mist  {
+    background-color: #edf1f6;                 /* one clear step below off-white */
+    border-top: 1px solid rgba(36, 36, 36, 0.08);
+    border-bottom: 1px solid rgba(36, 36, 36, 0.08);
+  }
+  .nx-surface-stone {
+    background-color: #f4f1ea;                 /* warm paper — editorial accent */
+    border-top: 1px solid rgba(36, 36, 36, 0.07);
+    border-bottom: 1px solid rgba(36, 36, 36, 0.07);
   }
 }
 
@@ -469,7 +533,7 @@
 
   .dz-bg-white { background-color: var(--color-text-light); }
   .dz-bg-subtle { background-color: var(--color-subtle); }
-  .dz-bg-navy { background-color: var(--color-base); }
+  .dz-bg-navy { background-color: var(--color-charcoal); }
   
   .dz-section { padding-top: 5rem; padding-bottom: 5rem; }
   @media (min-width: 768px) { .dz-section { padding-top: 6rem; padding-bottom: 6rem; } }

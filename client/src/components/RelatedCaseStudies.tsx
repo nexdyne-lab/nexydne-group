@@ -22,7 +22,7 @@ export default function RelatedCaseStudies({
   subtitle = "Explore how we help other organizations transform." 
 }: RelatedCaseStudiesProps) {
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-base border-t border-white/5">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 md:py-20 lg:py-12 sm:py-16 lg:py-24 bg-charcoal border-t border-white/5">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12 gap-4">
           <div>
@@ -36,7 +36,7 @@ export default function RelatedCaseStudies({
         
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:p-6 md:p-4 sm:p-6 md:p-8">
           {cases.map((study, index) => (
-            <Link key={index} href={study.link} className="group block bg-base border border-white/10 rounded-xl sm:rounded-xl sm:rounded-2xl overflow-hidden hover:border-secondary/50 transition">
+            <Link key={index} href={study.link} className="group block bg-charcoal border border-white/10 rounded-xl sm:rounded-xl sm:rounded-2xl overflow-hidden hover:border-secondary/50 transition">
               <div className="h-48 overflow-hidden">
                 <img 
                   src={study.image} 

@@ -51,7 +51,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 export function SpotlightStories() {
   return (
-    <section className="w-full bg-background border-t border-border">
+    <section className="w-full nx-surface-mist">
       <div className="nx-band pt-20 pb-12 lg:pt-28 lg:pb-14">
         {/* Section header */}
         <div className="max-w-[640px]">

@@ -157,7 +157,7 @@ export default function EconomicsOfLoyalty() {
                 NexDyne helps companies restructure loyalty programs to drive true LTV without sacrificing profitability.
               </p>
               <Link href="/contact">
-                <button className="px-8 py-4 bg-secondary hover:bg-secondary text-base rounded-full font-bold transition transform hover:scale-105 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
+                <button className="px-8 py-4 bg-primary hover:bg-primary-hover text-white rounded-full font-bold transition transform hover:scale-105 shadow-[0_10px_30px_-10px_rgba(224,76,44,0.45)]">
                   Analyze Your Unit Economics
                 </button>
               </Link>

@@ -346,7 +346,7 @@ export default function AITechnologyConsulting() {
             className="text-center mt-16"
           >
             <Link href="/contact">
-              <span className="inline-flex items-center gap-2 px-8 py-4 border-2 border-charcoal text-charcoal font-bold rounded-full cursor-pointer hover:bg-secondary hover:border-secondary hover:text-white transition-colors group">
+              <span className="inline-flex items-center gap-2 px-8 py-4 border-2 border-charcoal text-charcoal font-bold rounded-full cursor-pointer hover:bg-charcoal hover:border-charcoal hover:text-white transition-colors group">
                 Discuss your transformation
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -514,7 +514,7 @@ export default function AITechnologyConsulting() {
             className="text-center mt-12"
           >
             <Link href="/case-studies">
-              <span className="inline-flex items-center gap-2 px-8 py-4 border-2 border-charcoal text-charcoal font-bold rounded-full cursor-pointer hover:bg-secondary hover:border-secondary hover:text-white transition-colors group">
+              <span className="inline-flex items-center gap-2 px-8 py-4 border-2 border-charcoal text-charcoal font-bold rounded-full cursor-pointer hover:bg-charcoal hover:border-charcoal hover:text-white transition-colors group">
                 View all case studies
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -643,7 +643,7 @@ export default function AITechnologyConsulting() {
             className="text-center mt-12"
           >
             <Link href="/insights">
-              <span className="inline-flex items-center gap-2 px-8 py-4 border-2 border-charcoal text-charcoal font-bold rounded-full cursor-pointer hover:bg-secondary hover:border-secondary hover:text-white transition-colors group">
+              <span className="inline-flex items-center gap-2 px-8 py-4 border-2 border-charcoal text-charcoal font-bold rounded-full cursor-pointer hover:bg-charcoal hover:border-charcoal hover:text-white transition-colors group">
                 See all insights
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -670,7 +670,7 @@ export default function AITechnologyConsulting() {
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4">
               <Link href="/contact">
-                <span className="inline-flex items-center gap-2 px-8 py-4 bg-white text-charcoal font-bold rounded-full cursor-pointer hover:bg-secondary hover:text-white transition-colors group">
+                <span className="inline-flex items-center gap-2 px-8 py-4 bg-white text-charcoal font-bold rounded-full cursor-pointer hover:bg-primary hover:text-white transition-colors group">
                   Start a conversation
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>

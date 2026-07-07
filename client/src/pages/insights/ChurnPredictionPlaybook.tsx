@@ -78,7 +78,7 @@ export default function ChurnPredictionPlaybook() {
             <SocialShare title="The Churn Prediction Playbook" />
           </div>
 
-          <div className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-base prose-a:text-secondary prose-img:rounded-xl prose-pre:bg-base prose-pre:text-muted-foreground">
+          <div className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-base prose-a:text-secondary prose-img:rounded-xl prose-pre:bg-charcoal prose-pre:text-muted-foreground">
             <p className="lead text-xl text-muted-foreground mb-8">
               Most churn prediction models fail not because the math is wrong, but because the engineering is disconnected from the business process. A model that lives in a Jupyter notebook is useless. A model that pushes probability scores into Salesforce is a revenue engine.
             </p>
@@ -185,7 +185,7 @@ importances = rf.feature_importances_`}
                 NexDyne's Data Engineering team can deploy a production-ready churn prediction pipeline in your infrastructure in under 4 weeks.
               </p>
               <Link href="/contact">
-                <button className="px-8 py-4 bg-secondary hover:bg-secondary text-base rounded-full font-bold transition transform hover:scale-105 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
+                <button className="px-8 py-4 bg-primary hover:bg-primary-hover text-white rounded-full font-bold transition transform hover:scale-105 shadow-[0_10px_30px_-10px_rgba(224,76,44,0.45)]">
                   Get the Technical Specs
                 </button>
               </Link>

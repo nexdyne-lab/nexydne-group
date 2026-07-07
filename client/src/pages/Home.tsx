@@ -103,14 +103,14 @@ export default function Home() {
       <SpotlightStories />
 
       {/* 2. Our Perspective — asymmetric 5/7 grid, warm brand wash */}
-      <section className="relative bg-off-white pt-6 pb-10 lg:pt-8 lg:pb-12 overflow-hidden">
+      <section className="relative nx-surface-charcoal pt-10 pb-12 lg:pt-14 lg:pb-14 overflow-hidden">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "radial-gradient(48% 62% at 100% 0%, rgba(255,180,29,0.13) 0%, transparent 56%)," +
-              "radial-gradient(44% 56% at 0% 100%, rgba(224,76,44,0.09) 0%, transparent 56%)",
+              "radial-gradient(48% 62% at 100% 0%, rgba(255,180,29,0.08) 0%, transparent 56%)," +
+              "radial-gradient(44% 56% at 0% 100%, rgba(224,76,44,0.07) 0%, transparent 56%)",
           }}
         />
         <div className="nx-band relative">
@@ -123,14 +123,14 @@ export default function Home() {
               transition={{ duration: 0.7 }}
               className="lg:col-span-5"
             >
-              <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-6">
+              <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-amber mb-6">
                 Our Perspective
               </span>
-              <h2 className="nx-h2 text-charcoal">
+              <h2 className="nx-h2 text-white">
                 Governing intelligence. Scaling judgment. Leading in the age of{" "}
                 <span
-                  className="text-charcoal"
-                  
+                  className="text-white"
+
                 >
                   intelligent machines.
                 </span>
@@ -145,19 +145,19 @@ export default function Home() {
               transition={{ duration: 0.7, delay: 0.1 }}
               className="lg:col-span-7"
             >
-              <p className="text-base md:text-lg text-charcoal/80 leading-[1.7] max-w-[58ch]">
+              <p className="text-base md:text-lg text-white/80 leading-[1.7] max-w-[58ch]">
                 The organizations that will define the next decade will be the ones that govern intelligence as deliberately as they deploy it. NexDyne combines deep industry expertise with structured intelligence governance to help ambitious leaders harness AI, data, and operational power — while strengthening the human judgment, accountability, and trust that no machine can provide. From modernizing legacy systems to designing AI-enabled operating models, we build transformations that perform, endure, and scale. NexDyne is where governance meets growth.
               </p>
             </motion.div>
           </div>
 
           {/* Editorial category strip — spread across, box-highlight on hover/active */}
-          <div className="mt-10 lg:mt-12 pt-6 border-t border-charcoal/15">
+          <div className="mt-10 lg:mt-12 pt-6 border-t border-white/15">
             <div className="flex flex-wrap justify-center lg:justify-between items-center gap-x-4 gap-y-3">
               {perspectiveCategories.map((cat) => (
                 <Link key={cat.label} href={cat.href}>
                   <span
-                    className="inline-block px-3 py-2 text-[14px] md:text-[15px] font-semibold uppercase tracking-[0.18em] text-charcoal/65 hover:text-amber transition-colors duration-200 cursor-pointer"
+                    className="inline-block px-3 py-2 text-[14px] md:text-[15px] font-semibold uppercase tracking-[0.18em] text-white/65 hover:text-amber transition-colors duration-200 cursor-pointer"
                   >
                     {cat.label}
                   </span>
@@ -183,7 +183,6 @@ export default function Home() {
               alt="AI and Technology Consulting"
               className="absolute inset-0 w-full h-full object-cover"
             />
-            <div aria-hidden className="absolute inset-0 nx-img-warm" />
           </motion.div>
 
           <motion.div
@@ -217,27 +216,27 @@ export default function Home() {
       </section>
 
       {/* 4. Our Solutions — expertise tabs, subtle brand wash */}
-      <section className="relative bg-white nx-section border-t border-charcoal/10 overflow-hidden">
+      <section className="relative nx-surface-ember nx-section overflow-hidden">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "radial-gradient(40% 55% at 0% 0%, rgba(224,76,44,0.07) 0%, transparent 55%)," +
-              "radial-gradient(38% 50% at 100% 100%, rgba(255,180,29,0.09) 0%, transparent 55%)",
+              "radial-gradient(46% 60% at 100% 0%, rgba(255,255,255,0.07) 0%, transparent 55%)," +
+              "radial-gradient(44% 58% at 0% 100%, rgba(58,16,6,0.22) 0%, transparent 58%)",
           }}
         />
         <div className="nx-band relative">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
             {/* Left — 40% */}
             <div className="lg:col-span-5">
-              <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-6">
+              <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-[#FFE3D8] mb-6">
                 How Can We Assist You Today?
               </span>
-              <h2 className="nx-h2 text-charcoal mb-6">
+              <h2 className="nx-h2 text-white mb-6">
                 Explore our core areas of expertise.
               </h2>
-              <p className="text-base md:text-lg text-charcoal/75 leading-[1.7] max-w-[48ch]">
+              <p className="text-base md:text-lg text-[#FFE3D8] leading-[1.7] max-w-[48ch]">
                 Learn more about our capabilities across industries and disciplines by selecting your topic of interest.
               </p>
             </div>
@@ -245,13 +244,13 @@ export default function Home() {
             {/* Right — 60% */}
             <div className="lg:col-span-7">
               {/* Flat underline tab bar */}
-              <div className="flex items-end gap-8 border-b border-charcoal/15 mb-10">
+              <div className="flex items-end gap-8 border-b border-white/25 mb-10">
                 <button
                   onClick={() => setSolutionsTab("capabilities")}
                   className={`pb-4 text-[13px] font-semibold uppercase tracking-[0.1em] transition-colors ${
                     solutionsTab === "capabilities"
-                      ? "text-charcoal border-b-2 border-primary -mb-px"
-                      : "text-charcoal/60 hover:text-charcoal"
+                      ? "text-white border-b-2 border-white -mb-px"
+                      : "text-white/60 hover:text-white"
                   }`}
                 >
                   Capabilities
@@ -260,8 +259,8 @@ export default function Home() {
                   onClick={() => setSolutionsTab("industries")}
                   className={`pb-4 text-[13px] font-semibold uppercase tracking-[0.1em] transition-colors ${
                     solutionsTab === "industries"
-                      ? "text-charcoal border-b-2 border-primary -mb-px"
-                      : "text-charcoal/60 hover:text-charcoal"
+                      ? "text-white border-b-2 border-white -mb-px"
+                      : "text-white/60 hover:text-white"
                   }`}
                 >
                   Industries
@@ -278,9 +277,9 @@ export default function Home() {
               >
                 {(solutionsTab === "capabilities" ? capabilities : industries).map((item) => (
                   <Link key={item.id} href={item.link}>
-                    <span className="flex items-center justify-between text-base text-charcoal hover:text-primary border-b border-charcoal/10 py-4 transition-colors cursor-pointer group">
-                      <span>{item.title}</span>
-                      <span className="text-charcoal/30 group-hover:text-primary transition-colors text-sm">
+                    <span className="flex items-center justify-between text-base text-white border-b border-white/20 py-4 cursor-pointer group">
+                      <span className="group-hover:underline underline-offset-4">{item.title}</span>
+                      <span className="text-white/50 group-hover:text-white group-hover:translate-x-1 transition-transform duration-300 text-sm">
                         →
                       </span>
                     </span>
@@ -296,22 +295,22 @@ export default function Home() {
       <OperationalExcellence />
 
       {/* 6. Latest Insights — flat cards with hairline borders */}
-      <section className="nx-section bg-subtle">
+      <section className="nx-section nx-surface-charcoal">
         <div className="nx-band">
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-14 md:mb-16">
             <div className="max-w-3xl">
-              <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
+              <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-amber mb-5">
                 Insights
               </span>
-              <h2 className="nx-h2 text-charcoal">
+              <h2 className="nx-h2 text-white">
                 Latest Insights
               </h2>
-              <p className="text-base md:text-lg text-charcoal/75 mt-5 max-w-[58ch] leading-[1.7]">
+              <p className="text-base md:text-lg text-white/75 mt-5 max-w-[58ch] leading-[1.7]">
                 Practical perspectives for mid-market leaders navigating growth and transformation.
               </p>
             </div>
             <Link href="/insights">
-              <span className="inline-block text-[13px] font-semibold uppercase tracking-[0.1em] text-charcoal border-b border-charcoal/40 hover:border-primary hover:text-primary transition-colors cursor-pointer pb-1">
+              <span className="inline-block text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-amber hover:text-amber transition-colors cursor-pointer pb-1">
                 View All Insights
               </span>
             </Link>

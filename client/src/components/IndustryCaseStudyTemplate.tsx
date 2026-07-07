@@ -132,7 +132,7 @@ export default function IndustryCaseStudyTemplate({
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 bg-base">
+      <section className="relative pt-32 pb-16 bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12">
           <Link href={industryLink}>
             <motion.button 
@@ -344,7 +344,7 @@ export default function IndustryCaseStudyTemplate({
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     className="flex gap-4 sm:p-5 md:p-4 sm:p-5 md:p-6"
                   >
-                    <div className="flex-shrink-0 w-16 h-16 bg-base text-white flex items-center justify-center font-bold text-xl">
+                    <div className="flex-shrink-0 w-16 h-16 bg-charcoal text-white flex items-center justify-center font-bold text-xl">
                       {step.step}
                     </div>
                     <div className="pt-2">
@@ -360,7 +360,7 @@ export default function IndustryCaseStudyTemplate({
       </section>
 
       {/* Results */}
-      <section className="nx-section bg-base text-white">
+      <section className="nx-section bg-charcoal text-white">
         <div className="container px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto">
             <motion.div
@@ -469,7 +469,7 @@ export default function IndustryCaseStudyTemplate({
       </section>
 
       {/* CTA Section */}
-      <section className="nx-section bg-base">
+      <section className="nx-section bg-charcoal">
         <div className="container px-4 sm:px-6 md:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -130,7 +130,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
 
       {/* Menu Panel */}
       <div
-        className={`fixed top-0 right-0 h-full w-full max-w-sm bg-base z-50 lg:hidden shadow-2xl transform transition-transform duration-300 ease-out ${
+        className={`fixed top-0 right-0 h-full w-full max-w-sm bg-charcoal z-50 lg:hidden shadow-2xl transform transition-transform duration-300 ease-out ${
           isAnimating ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -323,7 +323,7 @@ export function MobileNavOverlay({ isOpen, onClose, scrollToInitiatives }: Mobil
               style={{ transitionDelay: '350ms' }}
             >
               <Link href="/contact" onClick={onClose}>
-                <Button className="bg-primary hover:bg-primary/90 active:bg-secondary text-white font-semibold w-full py-6 min-h-[56px] text-lg rounded-lg transition-colors touch-manipulation">
+                <Button className="bg-primary hover:bg-primary/90 active:bg-primary-hover text-white font-semibold w-full py-6 min-h-[56px] text-lg rounded-lg transition-colors touch-manipulation">
                   Contact us
                 </Button>
               </Link>

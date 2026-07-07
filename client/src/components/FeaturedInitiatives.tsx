@@ -34,7 +34,7 @@ export function FeaturedInitiatives() {
               alt="The next generation of entrepreneurialism - Business leaders collaborating on digital transformation" 
               className="absolute inset-0 w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-base/95 via-base/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal/95 via-charcoal/60 to-transparent" />
             
             {/* Hero Text Overlay */}
             <div className="absolute bottom-0 left-0 right-0 p-12 md:p-16">

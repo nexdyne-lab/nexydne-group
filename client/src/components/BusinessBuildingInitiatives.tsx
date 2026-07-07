@@ -118,7 +118,7 @@ export function BusinessBuildingInitiatives() {
                   </div>
                   
                   {/* Text Section - Bottom with Deep McKinsey Blue Background */}
-                  <div className="bg-base p-4 sm:p-5 md:p-6 flex-1 flex flex-col">
+                  <div className="bg-charcoal p-4 sm:p-5 md:p-6 flex-1 flex flex-col">
                     <span className="text-secondary text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.1em] sm:tracking-[0.15em] mb-1.5 sm:mb-2 block">
                       {initiative.headline}
                     </span>
@@ -151,7 +151,7 @@ export function BusinessBuildingInitiatives() {
           className="text-center"
         >
           <Link href="/initiatives">
-            <button className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-base text-white rounded font-semibold text-sm sm:text-base hover:bg-base transition-colors">
+            <button className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-charcoal text-white rounded font-semibold text-sm sm:text-base hover:bg-charcoal transition-colors">
               Explore All Initiatives
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>

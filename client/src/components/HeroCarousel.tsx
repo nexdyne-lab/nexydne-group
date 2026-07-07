@@ -194,7 +194,7 @@ export function HeroCarousel() {
             onClick={() => setActiveIndex(index)}
             className={`w-2 h-2 rounded-full transition duration-300 touch-manipulation ${
               index === activeIndex 
-                ? 'bg-base w-4' 
+                ? 'bg-charcoal w-4' 
                 : 'bg-charcoal/20'
             }`}
             aria-label={`Go to slide ${index + 1}`}

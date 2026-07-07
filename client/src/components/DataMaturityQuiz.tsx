@@ -203,7 +203,7 @@ export default function DataMaturityQuiz() {
             </div>
             <div className="w-full bg-white/10 h-1 rounded-full overflow-hidden">
               <div 
-                className="bg-secondary h-full transition duration-500 ease-out"
+                className="bg-amber h-full transition duration-500 ease-out"
                 style={{ width: `${((currentQuestion) / questions.length) * 100}%` }}
               />
             </div>
@@ -257,7 +257,7 @@ export default function DataMaturityQuiz() {
             </Button>
             <Button 
               onClick={generatePDF}
-              className="bg-secondary hover:bg-secondary text-base font-bold gap-2"
+              className="bg-primary hover:bg-primary-hover text-white font-bold gap-2"
             >
               <Download className="w-3 h-3 sm:w-4 sm:h-4" />
               Get Full Report

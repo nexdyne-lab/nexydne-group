@@ -203,7 +203,7 @@ export default function InsightArticle({
         </div>
       </article>
 
-      {/* CTA Section — light background, no dark bg-base */}
+      {/* CTA Section — light background, no dark bg-charcoal */}
       <section className="nx-section bg-subtle border-t border-charcoal/10">
         <div className="px-6 sm:px-8 md:px-12 lg:px-16 text-center">
           <span className="block nx-eyebrow text-charcoal/60 mb-5">

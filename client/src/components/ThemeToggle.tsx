@@ -44,7 +44,7 @@ export function ThemeToggle() {
             <span className="sr-only">Toggle engineering mode</span>
           </Button>
         </TooltipTrigger>
-        <TooltipContent side="bottom" className="bg-base border-white/10 text-white">
+        <TooltipContent side="bottom" className="bg-charcoal border-white/10 text-white">
           <p>{theme === "light" ? "Enable Engineering Mode" : "Disable Engineering Mode"}</p>
         </TooltipContent>
       </Tooltip>

@@ -59,7 +59,7 @@ export default function NewsletterSubscribe() {
           <Button 
             type="submit" 
             disabled={isLoading}
-            className="bg-primary hover:bg-primary whitespace-nowrap"
+            className="bg-primary hover:bg-primary-hover whitespace-nowrap"
           >
             {isLoading ? "Subscribing..." : "Subscribe"}
           </Button>

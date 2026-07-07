@@ -88,14 +88,14 @@ export function SplitHero() {
               <div className="flex flex-col sm:flex-row gap-4">
                 {/* First Button: White with black border */}
                 <Link href="/capabilities">
-                  <button className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-charcoal border-2 border-charcoal rounded-full font-semibold text-sm uppercase tracking-wider hover:bg-secondary hover:border-secondary transition duration-300">
+                  <button className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-charcoal border-2 border-charcoal rounded-full font-semibold text-sm uppercase tracking-wider hover:bg-charcoal hover:border-charcoal hover:text-white transition duration-300">
                     Explore Capabilities
                     <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </button>
                 </Link>
                 {/* Second Button: Green background */}
                 <Link href="/case-studies">
-                  <button className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-secondary text-charcoal border-2 border-secondary rounded-full font-semibold text-sm uppercase tracking-wider hover:bg-white hover:border-charcoal transition duration-300">
+                  <button className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white border-2 border-primary rounded-full font-semibold text-sm uppercase tracking-wider hover:bg-primary-hover hover:border-primary-hover transition duration-300">
                     View Case Studies
                     <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </button>

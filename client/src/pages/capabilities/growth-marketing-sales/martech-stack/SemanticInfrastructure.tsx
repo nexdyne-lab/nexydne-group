@@ -34,7 +34,7 @@ const SemanticInfrastructure = () => {
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-secondary text-base font-bold text-lg hover:bg-primary hover:text-white transition duration-300 shadow-[0_0_20px_rgba(0,212,255,0.3)]">
+              <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-primary text-white font-bold text-lg hover:bg-primary-hover transition duration-300 shadow-[0_10px_30px_-10px_rgba(224,76,44,0.45)]">
                   Standardize Your Data
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
                 </Link>

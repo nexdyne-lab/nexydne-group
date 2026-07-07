@@ -54,7 +54,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 export function OperationalExcellence() {
   return (
-    <section className="bg-background border-t border-border">
+    <section className="nx-surface-white">
       <div className="nx-band nx-section">
         {/* Header — eyebrow + H2 left, intro right */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-20 items-end mb-12 lg:mb-16">
@@ -102,9 +102,8 @@ export function OperationalExcellence() {
                     aria-hidden
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-[1.06]"
                   />
-                  {/* Warm image treatment — amber wash + flat veil, no gradient */}
-                  <div aria-hidden className="absolute inset-0 nx-img-warm" />
-                  <div aria-hidden className="absolute inset-0 nx-img-veil" />
+                  {/* bottom-anchored scrim — copy zone dark, photo true-colour above */}
+                  <div aria-hidden className="absolute inset-0 nx-scrim-card" />
                   {/* Slight deepen on hover, opacity-only per animation rules */}
                   <div
                     aria-hidden
@@ -113,10 +112,10 @@ export function OperationalExcellence() {
 
                   {/* Content */}
                   <div className="relative z-10 mt-auto p-8 lg:p-9 w-full">
-                    <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-amber">
+                    <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-amber [text-shadow:0_1px_10px_rgba(17,18,22,0.55)]">
                       {s.category}
                     </span>
-                    <h3 className="mt-3 text-white font-semibold leading-[1.18] tracking-[-0.015em] text-[1.45rem] lg:text-[1.6rem]">
+                    <h3 className="mt-3 text-white font-semibold leading-[1.18] tracking-[-0.015em] text-[1.45rem] lg:text-[1.6rem] [text-shadow:0_1px_14px_rgba(17,18,22,0.4)]">
                       {s.title}
                     </h3>
                     <p className="mt-3 text-[0.95rem] leading-[1.55] text-white/75 max-w-[44ch]">

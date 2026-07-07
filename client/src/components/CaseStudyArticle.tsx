@@ -176,7 +176,7 @@ export default function CaseStudyArticle({
             Let's discuss how we can help transform your business.
           </p>
           <Link href="/contact">
-            <button className="px-8 py-4 bg-secondary text-charcoal font-bold rounded-full hover:bg-secondary transition-colors">
+            <button className="px-8 py-4 bg-primary text-white font-bold rounded-full hover:bg-primary-hover transition-colors">
               Start the Conversation
             </button>
           </Link>

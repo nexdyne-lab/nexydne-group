@@ -29,7 +29,7 @@ export default function Ecommerce() {
               Build a future-proof online store with our advanced e-commerce solutions: from platforms to chatbots and native apps. Everything you need, all in one place.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-secondary text-base hover:bg-secondary rounded-full px-8 shadow-lg shadow-secondary/30 font-semibold w-full sm:w-auto">
+              <Button size="lg" className="bg-primary text-white hover:bg-primary-hover rounded-full px-8 shadow-lg shadow-primary/30 font-semibold w-full sm:w-auto">
                 Get Started
               </Button>
               <Button size="lg" variant="outline" className="rounded-full border-2 border-white text-charcoal hover:bg-white hover:text-base px-8 w-full sm:w-auto">
@@ -84,7 +84,7 @@ export default function Ecommerce() {
                   </div>
                   <div className="flex-1 w-full">
                     <p className="text-base md:text-lg font-semibold mb-4 text-charcoal">Want to know more?</p>
-                    <Button className="bg-secondary text-base hover:bg-secondary rounded-full px-8 shadow-lg shadow-secondary/30 font-semibold mb-3 w-full sm:w-auto">
+                    <Button className="bg-primary text-white hover:bg-primary-hover rounded-full px-8 shadow-lg shadow-primary/30 font-semibold mb-3 w-full sm:w-auto">
                       Get in touch
                     </Button>
                     <button className="block text-sm text-secondary hover:text-secondary transition-colors font-medium">
@@ -141,7 +141,7 @@ export default function Ecommerce() {
               <p className="text-base md:text-lg text-charcoal/80 leading-relaxed mb-8">
                 With our next-generation digital solutions, you'll always be one step ahead of the competition.
               </p>
-              <Button size="lg" className="bg-secondary text-base hover:bg-secondary rounded-full px-8 shadow-lg shadow-secondary/30 font-semibold w-full sm:w-auto">
+              <Button size="lg" className="bg-primary text-white hover:bg-primary-hover rounded-full px-8 shadow-lg shadow-primary/30 font-semibold w-full sm:w-auto">
                 Get in touch
               </Button>
             </div>
@@ -160,7 +160,7 @@ export default function Ecommerce() {
             <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8 max-w-3xl">
               Heard of a business that transforms unique business challenges into exceptional outcomes? That'd be us. Check out these inspiring cases.
             </p>
-            <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-base transition w-full sm:w-auto">
+            <Button variant="outline" className="rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white transition w-full sm:w-auto">
               All cases
             </Button>
           </div>
@@ -182,7 +182,7 @@ export default function Ecommerce() {
                 <p className="text-sm text-muted-foreground mb-4 flex-grow">
                   RAI Amsterdam optimises stand management and enhances the experience of its exhibitors with a digital solution developed by NEXDYNE
                 </p>
-                <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-base transition w-fit" size="sm">
+                <Button variant="outline" className="rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white transition w-fit" size="sm">
                   Learn more
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -205,7 +205,7 @@ export default function Ecommerce() {
                 <p className="text-sm text-muted-foreground mb-4 flex-grow">
                   As a strategic digital partner to Nieuwkoop-Europe BV, a leader in the indoor landscaping market, we helped build a new e-commerce platform for B2B...
                 </p>
-                <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-base transition w-fit" size="sm">
+                <Button variant="outline" className="rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white transition w-fit" size="sm">
                   Learn more
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -228,7 +228,7 @@ export default function Ecommerce() {
                 <p className="text-sm text-muted-foreground mb-4 flex-grow">
                   Discover how we developed a seamless e-commerce solution for Kluwer products in accounting and tax
                 </p>
-                <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-base transition w-fit" size="sm">
+                <Button variant="outline" className="rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white transition w-fit" size="sm">
                   Learn more
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
@@ -247,7 +247,7 @@ export default function Ecommerce() {
             <p className="text-base md:text-lg text-charcoal/80 mb-6 md:mb-8">
               With these partners we realize outstanding ecommerce solutions.
             </p>
-            <Button variant="outline" className="rounded-full border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition w-full sm:w-auto">
+            <Button variant="outline" className="rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white transition w-full sm:w-auto">
               All partners
             </Button>
           </div>
@@ -279,7 +279,7 @@ export default function Ecommerce() {
               Let's discuss how we can help you build a future-proof online store that drives growth and delights customers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <Button size="lg" className="bg-secondary text-base hover:bg-secondary rounded-full px-8 shadow-lg shadow-secondary/30 font-semibold w-full sm:w-auto">
+              <Button size="lg" className="bg-primary text-white hover:bg-primary-hover rounded-full px-8 shadow-lg shadow-primary/30 font-semibold w-full sm:w-auto">
                 Contact Us
               </Button>
               <Button size="lg" variant="outline" className="rounded-full border-2 border-white text-charcoal hover:bg-white hover:text-base px-8 w-full sm:w-auto">

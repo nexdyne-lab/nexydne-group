@@ -174,7 +174,7 @@ export default function GrowthSimulator() {
                 <button 
                   onClick={handleSimulate}
                   disabled={isSimulating}
-                  className="w-full py-4 bg-secondary text-base font-bold rounded-xl hover:bg-white transition flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-hover transition flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSimulating ? (
                     <>
@@ -241,7 +241,7 @@ export default function GrowthSimulator() {
                             cursor={{ fill: 'rgba(255,255,255,0.05)' }}
                           />
                           <Legend wrapperStyle={{ paddingTop: '20px' }} />
-                          <Bar dataKey="Core Business" stackId="a" fill="#1e293b" radius={[0, 0, 4, 4]} />
+                          <Bar dataKey="Core Business" stackId="a" fill="#242424" radius={[0, 0, 4, 4]} />
                           <Bar dataKey="New Venture" stackId="a" fill={industry.color} radius={[4, 4, 0, 0]} />
                         </BarChart>
                       </ResponsiveContainer>

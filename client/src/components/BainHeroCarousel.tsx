@@ -84,7 +84,7 @@ function CharcoalCanvas({
           backgroundImage: `url(${image})`,
           backgroundSize: "cover",
           backgroundPosition: mobileFocal ?? "50% 50%",
-          filter: "saturate(0.82) brightness(0.82) contrast(1.02)",
+          filter: "saturate(1.02) brightness(0.97) contrast(1.03)",
         }}
       />
       <div
@@ -95,7 +95,7 @@ function CharcoalCanvas({
           backgroundPosition: "center",
           transform: `scale(${zoom ?? 1.16})`,
           transformOrigin: focal ?? "50% 50%",
-          filter: "saturate(0.82) brightness(0.82) contrast(1.02)",
+          filter: "saturate(1.02) brightness(0.97) contrast(1.03)",
         }}
       />
       {/* single low-opacity accent glow — controlled depth on the image side */}
@@ -105,9 +105,8 @@ function CharcoalCanvas({
           backgroundImage: `radial-gradient(48% 62% at ${at}, ${color} 0%, transparent 62%)`,
         }}
       />
-      {/* warm image treatment — flat veil + amber wash, no gradient (user call) */}
-      <div className="absolute inset-0 nx-img-warm" />
-      <div className="absolute inset-0 nx-img-veil" />
+      {/* directional scrim — ink on the headline side, photo released right */}
+      <div className="absolute inset-0 nx-scrim-text" />
       {/* faint structural striations for texture */}
       <div
         className="absolute inset-0 opacity-[0.04] mix-blend-soft-light"

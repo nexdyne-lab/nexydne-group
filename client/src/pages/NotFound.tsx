@@ -37,7 +37,7 @@ export default function NotFound() {
               <div className="flex flex-wrap gap-4 pt-2">
                 <Button
                   onClick={handleGoHome}
-                  className="bg-secondary hover:bg-secondary text-base font-bold rounded-full px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg shadow-[0_0_15px_rgba(0,212,255,0.3)] hover:shadow-[0_0_25px_rgba(0,212,255,0.5)] transition"
+                  className="bg-primary hover:bg-primary-hover text-white font-bold rounded-full px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-lg shadow-[0_10px_25px_-8px_rgba(224,76,44,0.4)] hover:shadow-[0_14px_30px_-8px_rgba(224,76,44,0.55)] transition"
                 >
                   <Home className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                   Back to Home

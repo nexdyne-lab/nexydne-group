@@ -224,7 +224,7 @@ export function Search() {
             <SearchIcon className="w-4 h-4 sm:w-5 sm:h-5" />
           </Button>
         </DialogTrigger>
-        <DialogContent className="p-0 bg-base border-white/10 text-white w-full h-[100dvh] max-w-full rounded-none sm:rounded-lg sm:h-auto sm:max-h-[85vh] gap-0">
+        <DialogContent className="p-0 bg-charcoal border-white/10 text-white w-full h-[100dvh] max-w-full rounded-none sm:rounded-lg sm:h-auto sm:max-h-[85vh] gap-0">
           <SearchContent />
         </DialogContent>
       </Dialog>
@@ -246,7 +246,7 @@ export function Search() {
           </span>
         </Button>
       ) : (
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[450px] bg-base border border-white/10 rounded-lg shadow-xl sm:shadow-xl sm:shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200 z-50 max-h-[80vh] flex flex-col">
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[450px] bg-charcoal border border-white/10 rounded-lg shadow-xl sm:shadow-xl sm:shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200 z-50 max-h-[80vh] flex flex-col">
           <SearchContent />
         </div>
       )}

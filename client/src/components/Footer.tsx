@@ -46,7 +46,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-base text-text-light">
+    <footer className="bg-charcoal text-text-light">
       {/* Newsletter Subscription — charcoal authority band (Brand v2: neutral canvas, Orange-Red signal on the button only) */}
       <div className="relative overflow-hidden border-b border-white/10">
         {/* controlled depth: a single low-opacity signal glow, not a colour fill */}

@@ -40,7 +40,7 @@ export default function SocialShare({ title, url, className = "" }: SocialShareP
   };
 
   return (
-    <div className={`bg-base border border-white/10 rounded-xl sm:rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 ${className}`}>
+    <div className={`bg-charcoal border border-white/10 rounded-xl sm:rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 ${className}`}>
       <h3 className="text-lg font-bold text-white mb-4">Share this insight</h3>
       <div className="grid grid-cols-2 gap-2">
         <Button 
