@@ -20,8 +20,8 @@ alternate bands so sections read as deliberate.
 | `nx-surface-white` | `#ffffff` | Photo-card grids, breathers between dark bands |
 | `nx-surface-mist` | `#edf1f6` (cool blue-gray) | Listing/carding sections; white cards pop on it |
 | `nx-surface-stone` | `#f4f1ea` (warm paper) | Editorial statement moments (currently unused on Home — available) |
-| `nx-surface-charcoal` | `#242424` | Authority bands: perspective statements, insights headers, CTA bands |
-| `nx-surface-ember` | `#C93E20` (brand orange deepened for ≥5:1 white text) | ONE high-energy band per page max (expertise/link-list sections) |
+| `nx-surface-charcoal` | `#000000` | Authority bands: perspective statements, insights headers, CTA bands |
+| `nx-surface-ember` | `#CC2A1E` (brand orange deepened for ≥5:1 white text) | ONE high-energy band per page max (expertise/link-list sections) |
 
 Homepage rhythm (copy this cadence, not necessarily the exact order):
 dark hero → mist → white → mist → **ember** → **charcoal** → light → charcoal CTA.
@@ -149,7 +149,89 @@ was REMOVED — hero slide 1 already carries the HIG™ click, so it read as
 noise. The journey statement pattern (§4.1) stays in the kit for interior
 pages (capability hubs, about) where no hero slide covers it.
 
-## 9. Rollout plan (agreed with user)
+## 9. Capability-page blueprint (EY Technology architecture, ratified on /capabilities/artificial-intelligence)
+
+Implemented in `client/src/components/MarketingMasterTemplate.tsx` (serves the
+major capability pages: AI, Business Building, Growth Marketing & Sales,
+Strategy & Corporate Finance, Operations, + Enterprise Transformation).
+Reference: ey.com/en_gl/services/technology + the service-leader inset from
+ey.com/en_gl/services/consulting. **Design only — never touch page data files;
+all cards/links/subpages are preserved.**
+
+Section order + treatments:
+1. **Typographic intro (pure black `#000000` — the ONLY dark band on the
+   page).** White H1, two-column editorial intro: positioning statement w/
+   orange signal bar left, supporting narrative right (`inPractice.intro`
+   moved up here), orange PrimaryButton + white underline secondary.
+   Breadcrumbs variant="light".
+2. **Featured thinking full-bleed** — heroImage as a CLEAN editorial photo
+   moment: **NO scrim, NO gradient, NO filter** (user removed them — "treat
+   it like EY"). Content block is bottom-RIGHT, right-aligned
+   (`items-end justify-end text-right`), placed over the photo's natural
+   dark zone; amber "Featured thinking · {tag}" eyebrow, white title +
+   summary + Read more, all with `drop-shadow-[0_2px_20px_rgba(0,0,0,0.5)]`-
+   class shadows. Whole section links to the featured article. Section bg
+   is `bg-black`.
+3. **Bain-style editorial interlude** (replaces boxed secondary cards):
+   split 7/5 — LEFT: `font-serif` prose paragraph (~1.25–1.4rem,
+   leading-[1.75], black/90, max-w-[62ch] — template-authored,
+   parameterized by capabilityName), then the secondary articles as UNBOXED
+   hairline rows (`border-t`, orange tag, semibold title hover→primary,
+   orange ArrowRight). RIGHT: photo (`inPractice.image` slot) with text
+   DIRECTLY on the photo — **no panel, no scrim**: amber "Our perspective"
+   tag + white 2-line statement with drop-shadows, positioned over the
+   photo's darkest zone (top-left on the AI page's dusk-boardroom image).
+   **The image must be dark/warm enough to carry white text** — that's the
+   EY method: legibility comes from image CHOICE + placement, not overlays
+   (AI page swapped `ai-team-collaboration.jpg` → `/images/hero/hero-ai.jpg`
+   for exactly this reason). Serif is allowed here ONLY as body prose —
+   headings stay Instrument Sans.
+4. **Ambition = EY topic blocks on light**: borderless black subheads +
+   outlined black EXPLORE buttons (fill black on hover).
+5. Editorial mega-stats (hairline top rules, big black numerals,
+   sentence-case labels). **Exactly THREE metrics per page, and they must be
+   OUTCOMES** ("3.2x average ROI within 18 months"), never volume claims
+   ("120+ implementations delivered") — user rule; grid is 3-across,
+   center-aligned.
+6. Services grid (single-column header, no leader inset — user removed the
+   Practice Leader block entirely; `closingCTA` lead fields are now unused,
+   the placeholder people never ship).
+7. Client results: quiet tabs (black underline) + **EY open cards** —
+   flush 16/9 image, semibold title directly on the canvas (hover →
+   text-primary), muted meta line ("{industry} · {metric}"). NO boxes/rings,
+   no hover-reveal panels (BCG hover cards stay a HOMEPAGE pattern only).
+8. Leaders grid; Insights rail uses the same EY open card
+   (meta line: "{tag} · {readTime}").
+9. Closing CTA (light, single column: orange eyebrow, black headline,
+   copy, orange Get-in-touch — NO lead photo/name/email block; the practice
+   lead appears only as the §6 services inset).
+
+Color rule (user-mandated, 2026-07-11): **capability pages use pure
+`#000000`, not charcoal** — every former charcoal token in the template was
+swept to black (`nx-surface-charcoal` → `bg-black`, `text-charcoal` →
+`text-black`, `ring-charcoal/10` → `ring-black/10`, `border-charcoal/40` →
+`border-black/40`, etc.). Charcoal remains a HOMEPAGE token only.
+Image rule (user-mandated, 2026-07-11): **never put a gradient, scrim, or
+solid panel over a photo** on capability pages. White text sits directly on
+the image with drop-shadows; legibility is engineered by (a) choosing photos
+with natural dark zones and (b) placing the text block over those zones —
+the EY approach.
+Canvas rule (user-mandated): **#FEFEFE background for the ENTIRE page except
+the black intro** — no mist/stone alternation on capability pages; cards
+separate via `ring-1 ring-black/10`.
+Container rule (user-mandated): capability pages do NOT use `.nx-band` — every
+section sits on the EY-width container
+`mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14` (slim margins, bigger
+cards; consistent left edge page-wide).
+Spacing rule (user-mandated): capability pages do NOT use `.nx-section` —
+sections use the tighter `py-10 md:py-12 lg:py-14` (56px @lg vs 72px).
+REMOVED (do not re-add): the "Our Approach / How we deliver X" numbered-pillars
+section (`approachPillars` unused in props), the "X in practice" split
+(Real Outcomes / How We Help lists — redundant with the case-studies section;
+`inPractice.intro` still feeds the §1 intro's right column, rest unused), AND
+the "Our Ecosystem" partner-logo chip row (`ecosystemLogos` unused in props).
+
+## 10. Rollout plan (agreed with user)
 
 Homepage = done (v3, live). Next: pick ONE capability page → apply the kit →
 propagate template-wide; then industry page → propagate; then remaining

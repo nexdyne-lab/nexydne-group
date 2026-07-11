@@ -23,8 +23,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const SLIDE_MS = 6500;
 const ease = [0.22, 1, 0.36, 1] as const;
 
-const CHARCOAL = "#242424";
-const SIGNAL = "#E04C2C"; // Orange-Red — the signal colour
+const CHARCOAL = "#000000";
+const SIGNAL = "#DE2F23"; // Orange-Red — the signal colour
 const AMBER = "#FFB41D";
 
 interface Slide {

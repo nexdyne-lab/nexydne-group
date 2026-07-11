@@ -18,12 +18,9 @@ export default function ArtificialIntelligence() {
         label: "View Case Studies",
         href: "/cases?capability=artificial-intelligence",
       }}
-      // PRESERVED 3 source stats; 4th is AUTHORED with TODO marker
+      // 3 OUTCOME metrics (user direction: results like "3.2x ROI", not
+      // volume claims like "120+ implementations")
       experienceStats={[
-        {
-          number: "120+",
-          label: "AI implementations delivered for mid-market companies",
-        },
         {
           number: "3.2x",
           label: "average ROI on AI investments within 18 months",
@@ -124,7 +121,8 @@ export default function ArtificialIntelligence() {
       ]}
       // PRESERVED in-practice intro + bullets verbatim from source
       inPractice={{
-        image: "/images/ai-team-collaboration.jpg",
+        // dusk boardroom — dark/warm zones hold the overlaid text without a scrim
+        image: "/images/hero/hero-ai.jpg",
         intro:
           "The hype around generative AI is real—but so is the confusion. Most mid-market companies are stuck between \"we should do something\" and \"we don't know where to start.\" We cut through the noise with a practical approach: identify high-impact use cases, start with quick wins, and build toward enterprise-scale deployment. No science projects. No endless pilots. Just AI that works.",
         realOutcomes: [

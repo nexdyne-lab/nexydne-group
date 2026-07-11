@@ -47,12 +47,12 @@
   /* Foundation (Tier 1): neutrals that form the default environment */
   --color-off-white: #F7F9FC;
   --color-white:     #FFFFFF;
-  --color-charcoal:  #242424;
+  --color-charcoal:  #000000;
   --color-grey:      #E5E7EB;
 
-  /* Signal (Tier 2): Orange-Red — emphasis only, never the canvas */
-  --color-signal:        #E04C2C;
-  --color-signal-hover:  #C33D1F;
+  /* Signal (Tier 2): Red — emphasis only, never the canvas */
+  --color-signal:        #DE2F23;
+  --color-signal-hover:  #BD281E;
 
   /* Supporting (Tier 3): contextual, for HIG™ visuals + data storytelling */
   --color-purple: #6F44A3;
@@ -316,9 +316,9 @@
      band. Orange-Red keeps >= 4.5:1 on all three light surfaces. */
   .nx-surface-white { background-color: #ffffff; }
   /* Dark bands for the rotation: charcoal authority + ember (brand
-     Orange-Red deepened to #C93E20 so white body copy holds ~5:1). */
-  .nx-surface-charcoal { background-color: #242424; }
-  .nx-surface-ember { background-color: #c93e20; }
+     Signal red #DE2F23 deepened to #CC2A1E so white body copy holds ~5:1). */
+  .nx-surface-charcoal { background-color: #000000; }
+  .nx-surface-ember { background-color: #CC2A1E; }
   .nx-surface-mist  {
     background-color: #edf1f6;                 /* one clear step below off-white */
     border-top: 1px solid rgba(36, 36, 36, 0.08);

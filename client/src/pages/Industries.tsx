@@ -139,7 +139,7 @@ export default function Industries() {
                   {/* brand-gradient accent bar — grows on hover */}
                   <div
                     className="absolute top-0 left-0 right-0 h-[3px] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 z-10"
-                    style={{ backgroundImage: "linear-gradient(90deg, #E04C2C 0%, #FFB41D 100%)" }}
+                    style={{ backgroundImage: "linear-gradient(90deg, #DE2F23 0%, #FFB41D 100%)" }}
                   />
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <img

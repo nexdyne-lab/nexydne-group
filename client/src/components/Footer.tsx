@@ -99,7 +99,7 @@ export default function Footer() {
                   type="checkbox"
                   checked={privacyChecked}
                   onChange={(e) => setPrivacyChecked(e.target.checked)}
-                  className="mt-1 w-4 h-4 border-2 border-white/40 rounded-none accent-[#242424]"
+                  className="mt-1 w-4 h-4 border-2 border-white/40 rounded-none accent-[#000000]"
                 />
                 <span className="text-sm text-white/80">
                   *I have read and understand{" "}

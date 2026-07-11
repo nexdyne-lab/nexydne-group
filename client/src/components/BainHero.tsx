@@ -40,7 +40,7 @@ export function BainHero() {
           scale={1}
           rotation={0}
           speed={0.7}
-          colors={["#E04C2C", "#FF7A2F", "#FFB41D", "#6F44A3"]}
+          colors={["#DE2F23", "#FF7A2F", "#FFB41D", "#6F44A3"]}
         />
       </div>
       {/* mute saturation so it reads as a refined brand field, not neon */}

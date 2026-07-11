@@ -5,7 +5,7 @@ app: a Vite + React client, an Express/tRPC server, and Drizzle ORM against
 MySQL. Deployed to Netlify.
 
 Brand: **Governed Radiance** — a charcoal-and-off-white system with a single
-signal accent (orange-red `#E04C2C`) for CTAs and a supporting HIG palette
+signal accent (orange-red `#DE2F23`) for CTAs and a supporting HIG palette
 (purple + amber) for the Human · Intelligence · Governance framework.
 Typography is Instrument Sans throughout.
 

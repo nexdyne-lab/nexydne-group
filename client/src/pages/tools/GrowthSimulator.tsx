@@ -241,7 +241,7 @@ export default function GrowthSimulator() {
                             cursor={{ fill: 'rgba(255,255,255,0.05)' }}
                           />
                           <Legend wrapperStyle={{ paddingTop: '20px' }} />
-                          <Bar dataKey="Core Business" stackId="a" fill="#242424" radius={[0, 0, 4, 4]} />
+                          <Bar dataKey="Core Business" stackId="a" fill="#000000" radius={[0, 0, 4, 4]} />
                           <Bar dataKey="New Venture" stackId="a" fill={industry.color} radius={[4, 4, 0, 0]} />
                         </BarChart>
                       </ResponsiveContainer>

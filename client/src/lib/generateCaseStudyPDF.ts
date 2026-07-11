@@ -36,8 +36,8 @@ export function generateCaseStudyPDF(data: CaseStudyPDFData): void {
   let yPos = margin;
 
   // Brand colors
-  const primaryColor = '#E04C2C';
-  const darkColor = '#242424';
+  const primaryColor = '#DE2F23';
+  const darkColor = '#000000';
   const grayColor = '#666666';
 
   // Helper function to add text with word wrap
