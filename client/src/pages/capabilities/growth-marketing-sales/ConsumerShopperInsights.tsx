@@ -9,6 +9,7 @@ export default function ConsumerShopperInsights() {
     <CapabilityHubTemplate
       hubName="Consumer & Shopper Insights"
       slug="consumer-shopper-insights"
+      insightsTopic="growth"
       heroSubtitle="Understand what drives customer decisions. We help you build insights capabilities that inform strategy, drive innovation, and create competitive advantage."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
       heroFocal="55% 50%"

@@ -8,6 +8,7 @@ export default function RapidInnovationTesting() {
     <CapabilityHubTemplate
       hubName="Rapid Innovation & Testing"
       slug="rapid-innovation-testing"
+      insightsTopic="business"
       heroSubtitle="Test and validate new growth initiatives with minimal risk using structured rapid prototyping, customer-discovery programs, and pilot frameworks designed for evidence-based go/no-go decisions."
       heroImage="/images/rapid-innovation-abstract.jpg"
       heroFocal="55% 50%"

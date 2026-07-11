@@ -8,6 +8,7 @@ export default function ProductStrategyDesign() {
     <CapabilityHubTemplate
       hubName="Product Strategy & Design"
       slug="product-strategy-design"
+      insightsTopic="business"
       heroSubtitle="Build products users love. We combine strategic thinking with human-centered design to create experiences that win in the market — from vision to pixel-perfect interface."
       heroImage="/images/product-strategy-abstract.jpg"
       heroFocal="55% 50%"

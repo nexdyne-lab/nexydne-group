@@ -9,6 +9,7 @@ export default function MarketingOperations() {
     <CapabilityHubTemplate
       hubName="Marketing Operations"
       slug="marketing-operations"
+      insightsTopic="growth"
       heroSubtitle="Transform your marketing operations into a competitive advantage. We help you build scalable processes, optimize technology, and drive efficiency across your marketing organization."
       heroImage="/images/capabilities/cap-celebrate.jpg"
       heroFocal="50% 50%"

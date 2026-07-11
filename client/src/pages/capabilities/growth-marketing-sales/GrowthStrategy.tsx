@@ -9,6 +9,7 @@ export default function GrowthStrategy() {
     <CapabilityHubTemplate
       hubName="Growth Strategy"
       slug="growth-strategy"
+      insightsTopic="growth"
       heroSubtitle="Identify and capture new opportunities. We help you define where to play and how to win, from market entry to portfolio optimization."
       heroImage="/images/capabilities/cap-mobile-woman.jpg"
       heroFocal="50% 45%"

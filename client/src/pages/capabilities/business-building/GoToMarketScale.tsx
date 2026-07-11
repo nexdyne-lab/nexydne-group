@@ -8,6 +8,7 @@ export default function GoToMarketScale() {
     <CapabilityHubTemplate
       hubName="Go-To-Market at Scale"
       slug="go-to-market-scale"
+      insightsTopic="business"
       heroSubtitle="Accelerate market entry and expansion with curated partnership ecosystems, distribution-channel optimization, and systematic go-to-market frameworks built for mid-market scale."
       heroImage="/images/go-to-market-abstract.jpg"
       heroFocal="55% 50%"

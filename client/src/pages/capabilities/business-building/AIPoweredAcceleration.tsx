@@ -8,6 +8,7 @@ export default function AIPoweredAcceleration() {
     <CapabilityHubTemplate
       hubName="AI-Powered Acceleration"
       slug="ai-powered-acceleration"
+      insightsTopic="business"
       heroSubtitle="Leverage enterprise-grade AI for strategic planning, predictive market intelligence, automated financial modeling, and customer intelligence — capabilities typically reserved for Fortune 500 companies."
       heroImage="/images/ai-acceleration-abstract.jpg"
       heroFocal="55% 50%"

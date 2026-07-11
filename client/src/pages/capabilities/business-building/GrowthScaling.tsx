@@ -8,6 +8,7 @@ export default function GrowthScaling() {
     <CapabilityHubTemplate
       hubName="Growth & Scaling"
       slug="growth-scaling"
+      insightsTopic="business"
       heroSubtitle="Cross the chasm from early traction to market leadership. We help mid-market companies scale revenue, operations, and teams without losing what made them successful."
       heroImage="/images/growth-scaling-abstract.jpg"
       heroFocal="55% 50%"

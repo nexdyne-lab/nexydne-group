@@ -9,6 +9,7 @@ export function Ecommerce() {
     <CapabilityHubTemplate
       hubName="E-commerce"
       slug="ecommerce"
+      insightsTopic="growth"
       heroSubtitle="Platform strategy, conversion optimization, and marketplace management. We architect high-performance digital commerce ecosystems that turn traffic into revenue and customers into advocates."
       heroImage="/images/industries/deal-handshake.jpg"
       heroFocal="55% 45%"

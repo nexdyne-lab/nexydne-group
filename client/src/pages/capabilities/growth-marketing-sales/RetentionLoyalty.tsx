@@ -9,6 +9,7 @@ export default function RetentionLoyalty() {
     <CapabilityHubTemplate
       hubName="Retention & Loyalty"
       slug="retention-loyalty"
+      insightsTopic="growth"
       heroSubtitle="Customer retention strategy, loyalty program design, and lifecycle marketing. We help you build lasting customer relationships that drive sustainable growth."
       heroImage="/images/industries/deal-handshake.jpg"
       heroFocal="55% 50%"

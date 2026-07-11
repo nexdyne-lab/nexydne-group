@@ -8,6 +8,7 @@ export default function DistinctiveExpertise() {
     <CapabilityHubTemplate
       hubName="Distinctive Expertise & Proven Methodologies"
       slug="distinctive-expertise"
+      insightsTopic="business"
       heroSubtitle="Access industry-specific playbooks, growth strategy templates, and best-practice repositories refined across hundreds of mid-market transformations — institutional knowledge without the Fortune 500 overhead."
       heroImage="/images/distinctive-expertise-abstract.jpg"
       heroFocal="55% 50%"

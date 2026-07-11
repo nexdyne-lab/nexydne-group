@@ -9,6 +9,7 @@ export default function DigitalMarketing() {
     <CapabilityHubTemplate
       hubName="Digital Marketing"
       slug="digital-marketing"
+      insightsTopic="growth"
       heroSubtitle="Performance marketing, brand strategy, and analytics attribution for measurable growth. We leverage data analytics and AI to optimize spend, personalize messaging, and drive conversion."
       heroImage="/images/capabilities/cap-telescope.jpg"
       heroFocal="50% 50%"

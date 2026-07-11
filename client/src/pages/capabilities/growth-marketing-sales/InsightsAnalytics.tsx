@@ -9,6 +9,7 @@ export default function InsightsAnalytics() {
     <CapabilityHubTemplate
       hubName="Insights & Analytics"
       slug="insights-analytics"
+      insightsTopic="growth"
       heroSubtitle="Marketing analytics, customer insights, and data-driven decision making. We help you turn data into actionable insights that drive marketing performance."
       heroImage="/images/capabilities/cap-peacock.jpg"
       heroFocal="55% 50%"

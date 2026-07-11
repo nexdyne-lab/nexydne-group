@@ -11,6 +11,7 @@ export default function CommercialArchitecture() {
     <CapabilityHubTemplate
       hubName="Commercial Architecture"
       slug="commercial-architecture"
+      insightsTopic="growth"
       heroSubtitle='Designing the blueprints for scalable revenue generation. We align your sales, marketing, and product teams around a unified "commercial stack" that maximizes throughput and minimizes friction.'
       heroImage="/images/capabilities/cap-celebrate.jpg"
       heroFocal="50% 45%"

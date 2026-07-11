@@ -9,6 +9,7 @@ export default function CustomerExperience() {
     <CapabilityHubTemplate
       hubName="Customer Experience"
       slug="customer-experience"
+      insightsTopic="growth"
       heroSubtitle="Design and deliver exceptional customer experiences. We help you build CX capabilities that drive loyalty, reduce churn, and create sustainable competitive advantage."
       heroImage="/images/capabilities/cap-conference-data.jpg"
       heroFocal="45% 50%"

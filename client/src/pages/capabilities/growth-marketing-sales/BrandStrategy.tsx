@@ -9,6 +9,7 @@ export default function BrandStrategy() {
     <CapabilityHubTemplate
       hubName="Brand Strategy"
       slug="brand-strategy"
+      insightsTopic="growth"
       heroSubtitle="Build brands that drive business results. We help companies develop distinctive brand positioning, identity systems, and go-to-market strategies that create lasting competitive advantage."
       heroImage="/images/capabilities/cap-data-bars.jpg"
       heroFocal="60% 50%"

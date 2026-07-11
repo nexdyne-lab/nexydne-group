@@ -10,6 +10,7 @@ export default function BrandStorytelling() {
     <CapabilityHubTemplate
       hubName="Brand & Storytelling"
       slug="brand-storytelling"
+      insightsTopic="growth"
       heroSubtitle="Translating complex innovation into clear market authority. We help digital leaders build brands that scale as fast as their technology."
       heroImage="/images/capabilities/cap-peacock.jpg"
       heroFocal="55% 45%"

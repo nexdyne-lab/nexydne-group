@@ -9,6 +9,7 @@ export default function MarTechStack() {
     <CapabilityHubTemplate
       hubName="MarTech Stack"
       slug="martech-stack"
+      insightsTopic="growth"
       heroSubtitle="Marketing technology strategy, platform selection, and integration. We help you build and optimize the technology infrastructure that powers modern marketing."
       heroImage="/images/capabilities/cap-data-bars.jpg"
       heroFocal="45% 50%"

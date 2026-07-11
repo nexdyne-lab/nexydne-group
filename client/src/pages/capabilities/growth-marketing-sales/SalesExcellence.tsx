@@ -9,6 +9,7 @@ export default function SalesExcellence() {
     <CapabilityHubTemplate
       hubName="Sales Excellence"
       slug="sales-excellence"
+      insightsTopic="growth"
       heroSubtitle="Build high-performing sales organizations. We help you optimize sales processes, develop capabilities, and create incentive structures that drive sustainable revenue growth."
       heroImage="/images/capabilities/cap-woman-motion.jpg"
       heroFocal="45% 50%"

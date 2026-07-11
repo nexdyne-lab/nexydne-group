@@ -8,6 +8,7 @@ export default function DigitalVentureLaunch() {
     <CapabilityHubTemplate
       hubName="Digital Venture Launch"
       slug="digital-venture-launch"
+      insightsTopic="business"
       heroSubtitle="We turn ambitious ideas into market-ready digital businesses. From concept to revenue in months, not years — with validated unit economics, a working MVP, and the team to keep it growing."
       heroImage="/images/digital-venture-abstract.jpg"
       heroFocal="55% 50%"

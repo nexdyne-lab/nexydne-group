@@ -9,6 +9,7 @@ export default function PricingMonetization() {
     <CapabilityHubTemplate
       hubName="Pricing & Monetization"
       slug="pricing-monetization"
+      insightsTopic="growth"
       heroSubtitle="Unlock hidden value through strategic pricing. We help you optimize pricing strategies, improve monetization, and capture the full value of your products and services."
       heroImage="/images/capabilities/cap-telescope.jpg"
       heroFocal="50% 45%"

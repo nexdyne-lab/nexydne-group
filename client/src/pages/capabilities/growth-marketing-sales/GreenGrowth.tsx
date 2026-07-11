@@ -9,6 +9,7 @@ export default function GreenGrowth() {
     <CapabilityHubTemplate
       hubName="Green Growth"
       slug="green-growth"
+      insightsTopic="growth"
       heroSubtitle="Sustainable growth strategy, ESG marketing, and green brand positioning. We help you build brands and businesses that thrive while protecting the planet."
       heroImage="/images/capabilities/cap-woman-motion.jpg"
       heroFocal="60% 50%"

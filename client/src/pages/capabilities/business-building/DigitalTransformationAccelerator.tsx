@@ -8,6 +8,7 @@ export default function DigitalTransformationAccelerator() {
     <CapabilityHubTemplate
       hubName="Digital Transformation Accelerator"
       slug="digital-transformation-accelerator"
+      insightsTopic="business"
       heroSubtitle="Transform your technology foundation with right-sized enterprise architecture, cloud migration strategies, data platforms, and API integration frameworks — enterprise capabilities without enterprise overhead."
       heroImage="/images/digital-transformation-abstract.jpg"
       heroFocal="55% 50%"

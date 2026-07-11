@@ -8,6 +8,7 @@ export default function PerformanceIntelligenceBenchmarking() {
     <CapabilityHubTemplate
       hubName="Performance Intelligence & Benchmarking"
       slug="performance-intelligence-benchmarking"
+      insightsTopic="business"
       heroSubtitle="Make informed decisions with industry benchmarking, maturity assessments, ROI modeling, and KPI frameworks validated against peer companies — the performance-intelligence systems that guide strategic decisions at leading enterprises."
       heroImage="/images/performance-intelligence-abstract.jpg"
       heroFocal="55% 50%"

@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { BrandMesh } from "@/components/BrandMesh";
 import { ArrowRight, ArrowLeft, Check } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -33,18 +32,39 @@ export interface ServiceDetailTemplateProps {
   ctaLeadName?: string;
 }
 
+const ease = [0.22, 1, 0.36, 1] as const;
+
+/** Red-rule eyebrow for light surfaces */
+function Eyebrow({
+  children,
+  tone = "muted",
+}: {
+  children: React.ReactNode;
+  tone?: "muted" | "primary";
+}) {
+  return (
+    <div className="flex items-center gap-3 mb-5">
+      <span className="block h-[3px] w-9 bg-primary" />
+      <span
+        className={`text-[12px] font-semibold uppercase tracking-[0.18em] ${
+          tone === "primary" ? "text-primary" : "text-muted-foreground"
+        }`}
+      >
+        {children}
+      </span>
+    </div>
+  );
+}
+
 export default function ServiceDetailTemplate(
   props: ServiceDetailTemplateProps
 ) {
   const {
     hubName,
-    hubSlug,
     hubHref,
     serviceName,
     serviceSlug,
     heroSubtitle,
-    heroImage,
-    heroFocal,
     experienceStats,
     challenge,
     opportunity,
@@ -54,14 +74,6 @@ export default function ServiceDetailTemplate(
     relatedServices,
     ctaLeadName,
   } = props;
-
-  const statColCount = Math.min(Math.max(experienceStats.length, 1), 4);
-  const statGridCls =
-    statColCount >= 4
-      ? "grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-8"
-      : statColCount === 3
-      ? "grid grid-cols-1 md:grid-cols-3 gap-y-12 gap-x-8"
-      : "grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-8";
 
   const caseColCount = Math.min(Math.max(featuredCases.length, 1), 3);
   const caseGridCls =
@@ -74,7 +86,7 @@ export default function ServiceDetailTemplate(
   const ctaHeading = ctaLeadName || `Talk to our ${hubName} lead`;
 
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
+    <div className="min-h-screen bg-[#FEFEFE] font-sans text-black selection:bg-primary selection:text-white">
       <SEO
         title={serviceName}
         description={heroSubtitle.slice(0, 160)}
@@ -82,49 +94,34 @@ export default function ServiceDetailTemplate(
       />
       <Navigation />
 
-      {/* Hero — plain neutral statement (Brand v2) */}
-      <section className="relative bg-background overflow-hidden min-h-[56vh] flex items-center pt-32 pb-20 md:pt-40 md:pb-24">
-        {heroImage ? (
-          <>
-            <div aria-hidden className="pointer-events-none absolute inset-0" style={{ backgroundImage: `url(${heroImage})`, backgroundSize: "cover", backgroundPosition: heroFocal ?? "72% 50%", filter: "saturate(0.95) contrast(1.02)" }} />
-            <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(90deg, #F7F9FC 0%, rgba(247,249,252,0.95) 26%, rgba(247,249,252,0.74) 50%, rgba(247,249,252,0.52) 76%, rgba(247,249,252,0.44) 100%)" }} />
-            <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-24" style={{ background: "linear-gradient(180deg, transparent 0%, #FFFFFF 100%)" }} />
-          </>
-        ) : (
-          <>
-            <BrandMesh variant="light" />
-            <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(90deg, #F7F9FC 0%, rgba(247,249,252,0.6) 30%, rgba(247,249,252,0.05) 55%, transparent 70%)" }} />
-          </>
-        )}
-        <div className="container relative z-10 px-4 md:px-12">
-          <Breadcrumbs variant="dark" />
+      {/* 1. Typographic intro — EY-style black statement band (no photo) */}
+      <section className="bg-black text-white pt-32 md:pt-40 pb-14 md:pb-20">
+        <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14">
+          <Breadcrumbs variant="light" />
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-4xl mt-6"
+            transition={{ duration: 0.65, ease }}
           >
-            <div className="flex items-center gap-3 mb-6">
-              <span className="block h-[3px] w-9 bg-primary" />
-              <span className="nx-eyebrow text-muted-foreground">
-                {hubName}
-              </span>
-            </div>
-            <h1 className="nx-h1 text-charcoal mb-6">
+            <h1 className="mt-8 font-bold tracking-[-0.035em] leading-[1.02] text-[clamp(2.3rem,4.6vw,3.8rem)] text-white">
               {serviceName}
             </h1>
-            <p className="nx-lead text-muted-foreground max-w-[60ch] mb-10">
-              {heroSubtitle}
+            <p className="mt-10 flex items-stretch gap-4 max-w-[68ch] text-[1.15rem] md:text-[1.3rem] leading-[1.5] font-medium text-white/95">
+              <span
+                className="w-[3px] shrink-0 self-stretch bg-primary"
+                aria-hidden
+              />
+              <span>{heroSubtitle}</span>
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="mt-11 flex flex-col sm:flex-row sm:items-center gap-5">
               <Link href="/contact">
-                <span className="group inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.1em] transition-colors hover:bg-primary-hover cursor-pointer">
+                <span className="group inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.1em] transition-colors hover:bg-primary-hover focus-visible:outline-2 focus-visible:outline-white cursor-pointer">
                   Talk to our lead
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </span>
               </Link>
               <Link href={hubHref}>
-                <span className="inline-flex items-center justify-center text-charcoal px-2 py-4 text-[13px] font-semibold uppercase tracking-[0.1em] border-b-2 border-charcoal/25 hover:border-primary transition-colors cursor-pointer">
+                <span className="inline-flex items-center justify-center text-white px-1 py-2 text-[13px] font-semibold uppercase tracking-[0.1em] border-b-2 border-white/40 hover:border-white transition-colors cursor-pointer">
                   Explore {hubName}
                 </span>
               </Link>
@@ -133,39 +130,35 @@ export default function ServiceDetailTemplate(
         </div>
       </section>
 
-      {/* Experience & Impact — charcoal dark-authority band (orange signal accent) */}
-      <section className="bg-charcoal text-white border-t-2 border-primary">
-        <div className="container px-4 md:px-12 nx-section">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
+      {/* 2. Experience & Impact — editorial mega-stats on light */}
+      <section className="bg-[#FEFEFE]">
+        <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14 py-12 lg:py-16">
+          <motion.div
+            initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="nx-eyebrow text-amber mb-12 text-center"
+            transition={{ duration: 0.6, ease }}
           >
-            Experience & Impact
-          </motion.p>
-
-          <div className={statGridCls}>
+            <Eyebrow>Experience and Impact</Eyebrow>
+          </motion.div>
+          <div
+            className={`mt-10 grid grid-cols-1 sm:grid-cols-3 gap-x-8 gap-y-12 ${
+              experienceStats.length > 3 ? "lg:grid-cols-4" : ""
+            }`}
+          >
             {experienceStats.map((stat, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 18 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="text-center"
+                transition={{ duration: 0.55, ease, delay: index * 0.06 }}
+                className="border-t border-black/15 pt-7 text-center"
               >
-                <div
-                  className={`${
-                    Math.max(...stat.number.split(/\s+/).map((t) => t.length)) > 7
-                      ? "text-[1.75rem] md:text-[2.25rem] [overflow-wrap:anywhere]"
-                      : "text-[2.75rem] md:text-[3.5rem]"
-                  } text-white font-bold tracking-[-0.02em] leading-[1.05]`}
-                >
-                  {stat.number.replace(/-/g, "\u2011")}
+                <div className="text-[2.4rem] md:text-[3.4rem] text-black font-bold tracking-[-0.025em] leading-[1] [overflow-wrap:anywhere]">
+                  {stat.number.replace(/-/g, "‑")}
                 </div>
-                <div className="text-[13px] uppercase tracking-[0.1em] text-white/85 mt-3 leading-[1.4]">
+                <div className="text-[0.95rem] text-black/65 mt-4 leading-[1.5] max-w-[30ch] mx-auto">
                   {stat.label}
                 </div>
               </motion.div>
@@ -174,34 +167,30 @@ export default function ServiceDetailTemplate(
         </div>
       </section>
 
-      {/* Challenge & Opportunity — two-column white */}
-      <section className="bg-white">
-        <div className="container px-4 md:px-12 nx-section">
+      {/* 3. Challenge & Opportunity — two-column on light */}
+      <section className="bg-[#FEFEFE]">
+        <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14 py-10 md:py-12 lg:py-14">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 lg:gap-24">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.6, ease }}
             >
-              <span className="nx-eyebrow text-charcoal/60 mb-5 block">
-                The Challenge
-              </span>
-              <p className="text-lg md:text-xl text-charcoal leading-[1.55]">
+              <Eyebrow>The Challenge</Eyebrow>
+              <p className="text-lg md:text-xl text-black leading-[1.6]">
                 {challenge}
               </p>
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
+              transition={{ duration: 0.6, ease, delay: 0.1 }}
             >
-              <span className="nx-eyebrow text-primary mb-5 block">
-                The Opportunity
-              </span>
-              <p className="text-lg md:text-xl text-charcoal leading-[1.55]">
+              <Eyebrow tone="primary">The Opportunity</Eyebrow>
+              <p className="text-lg md:text-xl text-black leading-[1.6]">
                 {opportunity}
               </p>
             </motion.div>
@@ -209,41 +198,34 @@ export default function ServiceDetailTemplate(
         </div>
       </section>
 
-      {/* Our Approach — 3 pillars */}
-      <section className="bg-grey">
-        <div className="container px-4 md:px-12 nx-section">
+      {/* 4. Our Approach — borderless pillars on light */}
+      <section className="bg-[#FEFEFE]">
+        <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14 py-10 md:py-12 lg:py-14">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-12 md:mb-16 max-w-4xl"
+            transition={{ duration: 0.6, ease }}
+            className="mb-12 md:mb-14 max-w-4xl"
           >
-            <p className="nx-eyebrow text-charcoal/60 mb-5">
-              Our Approach
-            </p>
-            <h2 className="nx-h2 text-charcoal">
-              How we deliver {serviceName}
-            </h2>
+            <Eyebrow>Our Approach</Eyebrow>
+            <h2 className="nx-h2 text-black">How we deliver {serviceName}</h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 lg:gap-x-16 gap-y-12">
             {approachPillars.map((pillar, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 18 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="bg-white p-8"
+                transition={{ duration: 0.5, ease, delay: index * 0.06 }}
+                className="border-t-2 border-black pt-7"
               >
-                <p className="text-xs text-primary font-semibold mb-3">
-                  {pillar.step}
-                </p>
-                <h3 className="nx-h3 text-charcoal mb-3 leading-[1.25]">
+                <h3 className="text-[1.35rem] font-semibold text-black mb-4 leading-[1.25] tracking-[-0.015em]">
                   {pillar.title}
                 </h3>
-                <p className="text-base text-charcoal/75 leading-[1.55]">
+                <p className="text-base text-black/70 leading-[1.65]">
                   {pillar.body}
                 </p>
               </motion.div>
@@ -252,36 +234,32 @@ export default function ServiceDetailTemplate(
         </div>
       </section>
 
-      {/* Outcomes — bullet list */}
-      <section className="bg-white">
-        <div className="container px-4 md:px-12 nx-section max-w-5xl">
+      {/* 5. Outcomes — bullet list */}
+      <section className="bg-[#FEFEFE]">
+        <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14 py-10 md:py-12 lg:py-14">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-12 md:mb-16 max-w-4xl"
+            transition={{ duration: 0.6, ease }}
+            className="mb-12 md:mb-14 max-w-4xl"
           >
-            <p className="nx-eyebrow text-charcoal/60 mb-5">
-              Outcomes
-            </p>
-            <h2 className="nx-h2 text-charcoal">
-              What clients can expect
-            </h2>
+            <Eyebrow>Outcomes</Eyebrow>
+            <h2 className="nx-h2 text-black">What clients can expect</h2>
           </motion.div>
 
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-6 max-w-5xl">
             {outcomes.map((item, index) => (
               <motion.li
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 18 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
+                transition={{ duration: 0.5, ease, delay: index * 0.05 }}
                 className="flex items-start gap-3"
               >
                 <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                <span className="text-base md:text-lg text-charcoal leading-[1.55]">
+                <span className="text-base md:text-lg text-black leading-[1.6]">
                   {item}
                 </span>
               </motion.li>
@@ -290,21 +268,19 @@ export default function ServiceDetailTemplate(
         </div>
       </section>
 
-      {/* Featured Case Studies (conditional) */}
+      {/* 6. Featured Case Studies (conditional) — EY open cards */}
       {featuredCases.length > 0 && (
-        <section className="bg-grey">
-          <div className="container px-4 md:px-12 nx-section">
+        <section className="bg-[#FEFEFE]">
+          <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14 py-10 md:py-12 lg:py-14">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="mb-12 md:mb-16 max-w-4xl"
+              transition={{ duration: 0.6, ease }}
+              className="mb-12 md:mb-14 max-w-4xl"
             >
-              <p className="nx-eyebrow text-charcoal/60 mb-5">
-                Featured Cases
-              </p>
-              <h2 className="nx-h2 text-charcoal">
+              <Eyebrow>Featured Cases</Eyebrow>
+              <h2 className="nx-h2 text-black">
                 How clients deploy {serviceName}
               </h2>
             </motion.div>
@@ -313,32 +289,32 @@ export default function ServiceDetailTemplate(
               {featuredCases.map((c, index) => (
                 <motion.div
                   key={c.slug}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 18 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                  className="bg-white"
+                  transition={{ duration: 0.5, ease, delay: index * 0.06 }}
                 >
+                  {/* EY open card — flush image, text directly on the canvas */}
                   <Link
                     href={`/cases/${c.slug}`}
-                    className="group block bg-white p-8 lg:p-10 border border-border transition duration-300 hover:border-primary/40 hover:shadow-[0_22px_44px_-24px_rgba(224,76,44,0.4)] hover:-translate-y-1 cursor-pointer h-full"
+                    className="group block cursor-pointer"
                   >
-                    <div className="aspect-[16/9] overflow-hidden mb-6 rounded-md">
+                    <div className="aspect-[16/9] overflow-hidden mb-6">
                       <img
                         src={c.image}
                         alt={c.title}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                        className="w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.03]"
                       />
                     </div>
-                    <p className="text-[11px] uppercase tracking-[0.1em] text-charcoal/60 mb-3">
+                    <p className="text-[11px] uppercase tracking-[0.1em] text-black/60 mb-3">
                       {c.industry} · {c.metric}
                     </p>
-                    <h3 className="nx-h3 text-charcoal leading-[1.25] mb-3 group-hover:text-primary transition-colors">
+                    <h3 className="text-[1.2rem] font-semibold text-black tracking-[-0.01em] leading-[1.35] mb-3 group-hover:text-primary transition-colors">
                       {c.title}
                     </h3>
-                    <span className="inline-flex items-center text-[13px] font-semibold uppercase tracking-[0.1em] text-charcoal group-hover:text-primary transition-colors">
+                    <span className="inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.1em] text-black">
                       Read the case
-                      <ArrowRight className="w-3 h-3 ml-1" />
+                      <ArrowRight className="w-3.5 h-3.5 text-primary transition-transform duration-300 group-hover:translate-x-1" />
                     </span>
                   </Link>
                 </motion.div>
@@ -348,43 +324,39 @@ export default function ServiceDetailTemplate(
         </section>
       )}
 
-      {/* Related Services — 3 sibling services */}
-      <section className="bg-white">
-        <div className="container px-4 md:px-12 nx-section">
+      {/* 7. Related Services — flat hairline cards */}
+      <section className="bg-[#FEFEFE]">
+        <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14 py-10 md:py-12 lg:py-14">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-12 md:mb-16 max-w-4xl"
+            transition={{ duration: 0.6, ease }}
+            className="mb-12 md:mb-14 max-w-4xl"
           >
-            <p className="nx-eyebrow text-charcoal/60 mb-5">
-              Related Services
-            </p>
-            <h2 className="nx-h2 text-charcoal">
-              Other {hubName} services
-            </h2>
+            <Eyebrow>Related Services</Eyebrow>
+            <h2 className="nx-h2 text-black">Other {hubName} services</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {relatedServices.map((svc, index) => (
               <motion.div
                 key={svc.slug}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 18 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="bg-white"
+                transition={{ duration: 0.5, ease, delay: (index % 3) * 0.06 }}
               >
                 <Link
                   href={svc.href}
-                  className="group block bg-white p-8 lg:p-10 border border-border transition duration-300 hover:border-primary/40 hover:shadow-[0_22px_44px_-24px_rgba(224,76,44,0.4)] hover:-translate-y-1 cursor-pointer h-full"
+                  className="group block bg-white p-8 lg:p-9 ring-1 ring-black/10 hover:ring-black/30 transition-shadow cursor-pointer h-full"
                 >
-                  <h3 className="nx-h3 text-charcoal mb-3 leading-[1.25] group-hover:text-primary transition-colors">
+                  <h3 className="nx-h3 text-black mb-6 leading-[1.25] group-hover:text-primary transition-colors">
                     {svc.name}
                   </h3>
-                  <span className="text-[13px] uppercase tracking-[0.1em] text-primary font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition">
-                    Read more <ArrowRight className="w-3 h-3" />
+                  <span className="inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.1em] text-black">
+                    Learn more
+                    <ArrowRight className="w-3.5 h-3.5 text-primary transition-transform duration-300 group-hover:translate-x-1" />
                   </span>
                 </Link>
               </motion.div>
@@ -393,34 +365,35 @@ export default function ServiceDetailTemplate(
         </div>
       </section>
 
-      {/* Closing CTA — bg-charcoal */}
-      <section className="bg-charcoal text-white">
-        <div className="container px-4 md:px-12 nx-section max-w-5xl">
+      {/* 8. Closing CTA — light canvas */}
+      <section className="bg-[#FEFEFE]">
+        <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14 py-10 md:py-12 lg:py-14">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.6, ease }}
+            className="max-w-3xl"
           >
-            <p className="nx-eyebrow text-white/70 mb-6">
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-6">
               Get in touch
-            </p>
-            <h2 className="nx-h2 text-white mb-8">
-              {ctaHeading}
-            </h2>
-            <p className="nx-lead text-white/80 max-w-[60ch] mb-10">
-              Tell us what you are trying to build, where you are stuck, or what you want to learn. Our {hubName} practice will read your note and respond within two business days with a concrete next step.
+            </span>
+            <h2 className="nx-h2 text-black mb-8">{ctaHeading}</h2>
+            <p className="text-[1.05rem] md:text-[1.12rem] leading-[1.7] text-black/75 max-w-[58ch] mb-10">
+              Tell us what you are trying to build, where you are stuck, or what
+              you want to learn. Our {hubName} practice will read your note and
+              respond within two business days with a concrete next step.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact">
-                <span className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 text-base font-semibold tracking-tight transition-colors hover:bg-primary/90 cursor-pointer">
+                <span className="group inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.1em] transition-colors hover:bg-primary-hover focus-visible:outline-2 focus-visible:outline-black cursor-pointer">
                   Start a conversation
-                  <ArrowRight className="w-4 h-4 ml-2" />
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </span>
               </Link>
               <Link href={hubHref}>
-                <span className="inline-flex items-center justify-center text-white/85 px-8 py-4 text-base font-semibold tracking-tight transition-colors hover:text-white cursor-pointer border border-white/20">
-                  <ArrowLeft className="w-4 h-4 mr-2" />
+                <span className="group inline-flex items-center justify-center gap-2 border border-black/40 px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.1em] text-black transition-colors hover:border-black hover:bg-black hover:text-white cursor-pointer">
+                  <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
                   Back to {hubName}
                 </span>
               </Link>

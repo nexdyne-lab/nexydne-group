@@ -10,6 +10,7 @@ export default function ServiceDesign() {
     <CapabilityHubTemplate
       hubName="Service Design"
       slug="service-design"
+      insightsTopic="growth"
       heroSubtitle="Orchestrate the invisible. We align people, infrastructure, and technology to deliver services that are seamless, scalable, and human-centered."
       heroImage="/images/capabilities/cap-mobile-woman.jpg"
       heroFocal="50% 50%"

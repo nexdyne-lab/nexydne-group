@@ -9,6 +9,7 @@ export default function PersonalizationAtScale() {
     <CapabilityHubTemplate
       hubName="Personalization at Scale"
       slug="personalization-at-scale"
+      insightsTopic="growth"
       heroSubtitle="AI-powered personalization, dynamic content, and 1:1 customer experiences. We help you deliver the right message to the right person at the right time—at scale."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
       heroFocal="55% 45%"

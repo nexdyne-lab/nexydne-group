@@ -231,6 +231,54 @@ section (`approachPillars` unused in props), the "X in practice" split
 `inPractice.intro` still feeds the §1 intro's right column, rest unused), AND
 the "Our Ecosystem" partner-logo chip row (`ecosystemLogos` unused in props).
 
+### 9b. Subpage templates now share this blueprint (2026-07-11)
+
+The two capability-subpage templates were rewritten to the §9 EY format
+(user: "apply the same format to all the subpages… keep all our subpages
+links… not creating new cards or links"). **Design-only — every prop,
+section, card, and link preserved; interfaces unchanged.**
+
+- **`CapabilityHubTemplate.tsx`** (37 level-2 pages, e.g.
+  `/capabilities/artificial-intelligence/generative-ai`): black typographic
+  intro (photo hero dropped — `heroImage`/`heroFocal` now unused props);
+  light editorial mega-stats (was a charcoal band); borderless EY ambition
+  blocks + single red CTA (hub ambitions have no per-card href, so no
+  per-card Explore button); flat `ring-1 ring-black/10` service cards
+  ("Learn more"); EY open cards for thought-leadership + featured cases;
+  borderless approach pillars (hairline top rule, red step numerals);
+  related-caps as hairline `ring-1` tiles; light closing CTA (red primary +
+  outlined-black secondary).
+- **`ServiceDetailTemplate.tsx`** (208 leaf pages, e.g.
+  `/capabilities/artificial-intelligence/agentic-ai/agent-architecture`):
+  same intro/stats/approach/CTA treatment; Challenge/Opportunity two-column
+  keeps its structure (red-rule eyebrows, The Opportunity eyebrow in
+  primary); Outcomes bullets keep the red Check icons; featured cases → EY
+  open cards; related services → `ring-1` hairline cards.
+- Both add the local `ease` const + `Eyebrow` helper (copied from MMT).
+- These templates serve ALL capability subpages site-wide, so the restyle is
+  global across capability subpages (consistency), not just the 6 hubs.
+- **"Latest perspectives" now always shows 3 large EY cards** (2026-07-11):
+  all 37 hub pages shipped `thoughtLeadership={[]}` → the bare "Insights
+  coming soon." is replaced by a curated fallback. Source:
+  `client/src/data/capabilityPerspectives.ts` — 3 topic sets (`ai` / `growth`
+  / `business`), each 3 cards with **verified** `/insights/*` links + real
+  images (the site's own insights catalog over-lists articles whose detail
+  routes 404, so links were validated against App.tsx routes, NOT taken from
+  Insights.tsx or related-content.ts). Template picks the set via new optional
+  `insightsTopic` prop (default `ai`); bulk-set `="growth"` on the 18
+  growth-marketing-sales pages and `="business"` on the 9 business-building
+  pages; the 10 AI-family root pages default to `ai`. Card = flush 3:2 image,
+  red category, 1.35rem title, dek, read-time. If a page ever passes real
+  `thoughtLeadership`, it is normalized and used instead of the fallback.
+- **Approach pillars: numbers removed** (2026-07-11, user "remove the numbers
+  and redesign for professional look"): dropped the red `01/02/03` step
+  numerals in BOTH hub + service-detail templates; each pillar now sits under
+  a `border-t-2 border-black` rule with a 1.35rem semibold title + body
+  (`pillar.step` now unused but kept in the interface).
+- Puppeteer QC landmine reconfirmed: `fullPage:true` renders off-screen
+  `whileInView` blocks at opacity 0 (huge blank gaps). Capture viewport
+  chunks after a stepped pre-scroll instead.
+
 ## 10. Rollout plan (agreed with user)
 
 Homepage = done (v3, live). Next: pick ONE capability page → apply the kit →

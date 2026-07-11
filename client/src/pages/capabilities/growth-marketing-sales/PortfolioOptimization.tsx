@@ -9,6 +9,7 @@ export default function PortfolioOptimization() {
     <CapabilityHubTemplate
       hubName="Portfolio Optimization"
       slug="portfolio-optimization"
+      insightsTopic="growth"
       heroSubtitle="Product portfolio strategy, SKU rationalization, and assortment optimization. We help you build portfolios that maximize growth and profitability."
       heroImage="/images/capabilities/cap-conference-data.jpg"
       heroFocal="60% 50%"
