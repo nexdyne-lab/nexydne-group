@@ -173,7 +173,7 @@ export default function Home() {
               </p>
               <div className="mt-9 flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8">
                 <Link href={solutionsTab === "capabilities" ? "/capabilities" : "/industries"}>
-                  <span className="inline-block px-6 py-3 bg-white text-charcoal text-[13px] uppercase tracking-[0.1em] font-semibold hover:bg-white/90 transition-colors cursor-pointer">
+                  <span className="inline-block px-6 py-3 bg-primary text-primary-foreground text-[13px] uppercase tracking-[0.1em] font-semibold hover:bg-primary-hover transition-colors cursor-pointer">
                     {solutionsTab === "capabilities" ? "All capabilities" : "All industries"}
                   </span>
                 </Link>

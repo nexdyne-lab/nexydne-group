@@ -41,22 +41,22 @@ export default function ManufacturingIndustry() {
       capabilities={[
         {
           name: "Operations Excellence",
-          href: "/capabilities/operations-excellence",
+          href: "/industries/manufacturing/operations-excellence",
           blurb: "Smart-factory transformation, predictive maintenance, and digital twins that lift uptime and yield with faster payback."
         },
         {
           name: "Data Transformation",
-          href: "/capabilities/data-transformation",
+          href: "/industries/manufacturing/data-transformation",
           blurb: "Connect OT and IT into one industrial data fabric that powers AI-driven planning, quality, and asset performance."
         },
         {
           name: "Strategy & Growth",
-          href: "/capabilities/strategy-growth",
+          href: "/industries/manufacturing/strategy-growth",
           blurb: "Connected-product and outcome-based models that turn installed bases into recurring-revenue businesses."
         },
         {
           name: "Risk & Resilience",
-          href: "/capabilities/risk-resilience",
+          href: "/industries/manufacturing/risk-resilience",
           blurb: "Multi-tier supply-chain visibility, OT cyber-resilience, and audit-grade sustainability data your customers and regulators expect."
         }
       ]}

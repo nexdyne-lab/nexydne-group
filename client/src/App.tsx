@@ -782,6 +782,10 @@ import AITechChangeManagement from "./pages/insights/ChangeManagementAISuccess";
 
 // Industry Landing Pages
 import ManufacturingIndustry from "./pages/industries/ManufacturingIndustry";
+import ManufacturingOperationsExcellence from "./pages/industries/manufacturing/OperationsExcellence";
+import ManufacturingDataTransformation from "./pages/industries/manufacturing/DataTransformation";
+import ManufacturingStrategyGrowth from "./pages/industries/manufacturing/StrategyGrowth";
+import ManufacturingRiskResilience from "./pages/industries/manufacturing/RiskResilience";
 import HealthcareIndustry from "./pages/industries/HealthcareIndustry";
 import FinancialServicesIndustry from "./pages/industries/FinancialServicesIndustry";
 import FinancialServicesCustomerGrowthStrategy from "./pages/industries/financial-services/CustomerGrowthStrategy";
@@ -1494,6 +1498,10 @@ function Router() {
         <Route path="/insights/customer-intelligence" component={CustomerIntelligenceInsight} />
         <Route path="/insights" component={Insights} />
         <Route path="/industries" component={Industries} />
+        <Route path="/industries/manufacturing/operations-excellence" component={ManufacturingOperationsExcellence} />
+        <Route path="/industries/manufacturing/data-transformation" component={ManufacturingDataTransformation} />
+        <Route path="/industries/manufacturing/strategy-growth" component={ManufacturingStrategyGrowth} />
+        <Route path="/industries/manufacturing/risk-resilience" component={ManufacturingRiskResilience} />
         <Route path="/industries/manufacturing" component={ManufacturingIndustry} />
         <Route path="/industries/healthcare" component={HealthcareIndustry} />
         <Route path="/industries/financial-services/customer-growth-strategy" component={FinancialServicesCustomerGrowthStrategy} />
