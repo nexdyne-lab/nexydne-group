@@ -70,7 +70,7 @@ export default function Solutions() {
       {/* Full-bleed centered hero */}
       <section className="relative w-full overflow-hidden" style={{ height: "76vh", minHeight: 540 }}>
         <img
-          src="/images/hero/hero-terminal.jpg"
+          src="/images/solutions-hero.jpg"
           alt=""
           aria-hidden
           className="absolute inset-0 h-full w-full object-cover"
