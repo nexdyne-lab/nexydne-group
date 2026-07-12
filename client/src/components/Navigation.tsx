@@ -294,6 +294,17 @@ function MegaMenu({
 // Order of drillable sections in the drawer master list.
 const drawerSections: Exclude<NavItem, null>[] = ["industries", "capabilities", "solutions", "insights", "about"];
 
+// Per-section brand accent (red / amber / purple / charcoal) — colours the
+// drawer dots, chevrons, and drilled-panel accents so the menu feels branded.
+const drawerAccent: Record<string, string> = {
+  industries: "#242424", // charcoal
+  capabilities: "#DE2F23", // signal red
+  solutions: "#FFB41D", // amber
+  insights: "#6F44A3", // purple
+  about: "#242424", // charcoal
+  careers: "#DE2F23", // signal red
+};
+
 // Utility links mirrored from the top UtilityBar (which is hidden on mobile),
 // shown below the divider in the drawer master list.
 const drawerUtilityLinks: { label: string; href: string }[] = [
@@ -305,37 +316,31 @@ const drawerUtilityLinks: { label: string; href: string }[] = [
 
 function DrawerChildPanel({
   section,
-  onBack,
   onNavigate,
 }: {
   section: Exclude<NavItem, null>;
-  onBack: () => void;
   onNavigate: () => void;
 }) {
   const cfg = MENU[section];
+  const accent = drawerAccent[section] ?? "#DE2F23";
   const items: MenuLink[] = cfg.links ?? (cfg.groups ? cfg.groups.flatMap((g) => g.links) : []);
   return (
-    <div className="flex h-full flex-col">
-      <button
-        onClick={onBack}
-        className="flex items-center gap-2 px-5 py-4 text-[12px] font-semibold uppercase tracking-[0.14em] text-primary transition-colors hover:text-primary/70"
-      >
-        <ChevronLeft className="h-4 w-4" />
-        Main menu
-      </button>
-      <div className="flex-1 overflow-y-auto px-5 pb-10">
-        <h3 className="text-[1.35rem] font-bold tracking-[-0.02em] text-charcoal">{cfg.eyebrow}</h3>
-        <p className="mb-4 mt-1 text-[13.5px] leading-[1.5] text-charcoal/50">{cfg.description}</p>
+    <div className="flex h-full flex-col" style={{ ["--accent" as string]: accent } as React.CSSProperties}>
+      <div className="flex-1 overflow-y-auto px-6 pb-10 pt-7">
+        {/* Branded accent + title */}
+        <span aria-hidden className="mb-4 block h-[3px] w-10 rounded-full" style={{ backgroundColor: accent }} />
+        <h3 className="text-[1.5rem] font-bold tracking-[-0.02em] text-charcoal">{cfg.eyebrow}</h3>
+        <p className="mb-5 mt-1.5 text-[13.5px] leading-[1.55] text-charcoal/50">{cfg.description}</p>
         <div className="flex flex-col">
           {items.map((l) => (
             <Link
               key={l.href}
               href={l.href}
               onClick={onNavigate}
-              className="group flex items-center justify-between gap-3 border-b border-border/40 py-3.5 text-[15px] font-medium text-charcoal/90 transition-colors hover:text-primary"
+              className="group flex items-center justify-between gap-3 border-b border-border/40 py-3.5 text-[15px] font-medium text-charcoal/90 transition-colors hover:text-[color:var(--accent)]"
             >
               <span>{l.label}</span>
-              <ArrowUpRight className="h-4 w-4 shrink-0 -translate-x-1 text-primary opacity-0 transition duration-200 group-hover:translate-x-0 group-hover:opacity-100" />
+              <ArrowUpRight className="h-4 w-4 shrink-0 -translate-x-1 text-[color:var(--accent)] opacity-0 transition duration-200 group-hover:translate-x-0 group-hover:opacity-100" />
             </Link>
           ))}
         </div>
@@ -343,7 +348,7 @@ function DrawerChildPanel({
           <Link
             href={cfg.viewAll.href}
             onClick={onNavigate}
-            className="mt-6 inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.1em] text-charcoal transition-colors hover:text-primary"
+            className="mt-7 inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.12em] text-charcoal transition-colors hover:text-[color:var(--accent)]"
           >
             {cfg.viewAll.label}
             <ArrowUpRight className="h-4 w-4" />
@@ -654,11 +659,37 @@ export default function Navigation() {
             aria-hidden
           />
           {/* Left-anchored drawer panel */}
-          <div className="fixed bottom-0 left-0 top-14 z-40 w-full max-w-[420px] overflow-hidden bg-white shadow-[0_30px_80px_-20px_rgba(36,36,36,0.5)] md:top-20">
-            <div
-              className="flex h-full w-[200%] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
-              style={{ transform: drawerSection ? "translateX(-50%)" : "translateX(0)" }}
-            >
+          <div className="fixed bottom-0 left-0 top-14 z-40 flex w-full max-w-[430px] flex-col overflow-hidden bg-white shadow-[0_30px_80px_-20px_rgba(36,36,36,0.5)] md:top-20">
+            {/* Sticky header — always-clear Back + Close */}
+            <div className="flex h-14 shrink-0 items-center justify-between border-b border-border pl-3 pr-4">
+              {drawerSection ? (
+                <button
+                  onClick={() => setDrawerSection(null)}
+                  className="group flex items-center gap-1.5 rounded-md py-2 pl-2 pr-3 text-[13px] font-semibold uppercase tracking-[0.12em] text-charcoal transition-colors hover:text-primary"
+                >
+                  <ChevronLeft className="h-5 w-5 transition-transform group-hover:-translate-x-0.5" />
+                  Main menu
+                </button>
+              ) : (
+                <span className="pl-2 text-[13px] font-semibold uppercase tracking-[0.18em] text-charcoal/45">
+                  Menu
+                </span>
+              )}
+              <button
+                onClick={handleNavigation}
+                aria-label="Close menu"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-charcoal transition-colors hover:border-charcoal hover:bg-charcoal hover:text-white focus-visible:outline-2 focus-visible:outline-primary"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+
+            {/* Sliding track */}
+            <div className="relative flex-1 overflow-hidden">
+              <div
+                className="flex h-full w-[200%] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
+                style={{ transform: drawerSection ? "translateX(-50%)" : "translateX(0)" }}
+              >
               {/* --- Master panel --- */}
               <div className="flex h-full w-1/2 flex-col">
                 {/* Search */}
@@ -685,19 +716,23 @@ export default function Navigation() {
                     <button
                       key={s}
                       onClick={() => setDrawerSection(s)}
-                      className="group flex w-full items-center justify-between rounded-md px-3 py-3.5 text-left text-[17px] font-medium text-charcoal transition-colors hover:bg-subtle hover:text-primary"
+                      style={{ ["--accent" as string]: drawerAccent[s] } as React.CSSProperties}
+                      className="group flex w-full items-center gap-3 rounded-lg px-3 py-3.5 text-left text-[17px] font-medium text-charcoal transition-colors hover:bg-subtle"
                     >
-                      {MENU[s].eyebrow}
-                      <ChevronRight className="h-5 w-5 text-charcoal/35 transition-colors group-hover:text-primary" />
+                      <span aria-hidden className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ backgroundColor: drawerAccent[s] }} />
+                      <span className="flex-1">{MENU[s].eyebrow}</span>
+                      <ChevronRight className="h-5 w-5 text-charcoal/30 transition-all group-hover:translate-x-0.5 group-hover:text-[color:var(--accent)]" />
                     </button>
                   ))}
                   {/* Careers — direct link, no sub-panel */}
                   <Link
                     href="/careers"
                     onClick={handleNavigation}
-                    className="flex w-full items-center rounded-md px-3 py-3.5 text-[17px] font-medium text-charcoal transition-colors hover:bg-subtle hover:text-primary"
+                    style={{ ["--accent" as string]: drawerAccent.careers } as React.CSSProperties}
+                    className="group flex w-full items-center gap-3 rounded-lg px-3 py-3.5 text-[17px] font-medium text-charcoal transition-colors hover:bg-subtle"
                   >
-                    Careers
+                    <span aria-hidden className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ backgroundColor: drawerAccent.careers }} />
+                    <span className="flex-1">Careers</span>
                   </Link>
                   {/* Utility links — mirrored from the top UtilityBar */}
                   <div className="mt-3 border-t border-border pt-3">
@@ -739,12 +774,9 @@ export default function Navigation() {
               {/* --- Child panel --- */}
               <div className="h-full w-1/2">
                 {drawerChildSection && (
-                  <DrawerChildPanel
-                    section={drawerChildSection}
-                    onBack={() => setDrawerSection(null)}
-                    onNavigate={handleNavigation}
-                  />
+                  <DrawerChildPanel section={drawerChildSection} onNavigate={handleNavigation} />
                 )}
+              </div>
               </div>
             </div>
           </div>
