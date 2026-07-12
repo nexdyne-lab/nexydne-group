@@ -22,7 +22,7 @@ const services: Service[] = [
     description:
       "We turn manual operations into governed, autonomous systems — removing bottlenecks and accelerating execution without losing oversight.",
     link: "/solutions/intelligent-process-optimization",
-    image: "/images/processflow-abstract.jpg",
+    image: "/images/intelligent-process.jpg",
   },
   {
     category: "Intelligence",
@@ -38,7 +38,7 @@ const services: Service[] = [
     description:
       "We modernize the core — cloud-native infrastructure and operating models built to scale with ambition.",
     link: "/solutions/scalable-enterprise-transformation",
-    image: "/images/digital-transformation-abstract.jpg",
+    image: "/images/enterprise-architecture.jpg",
   },
   {
     category: "Growth",
