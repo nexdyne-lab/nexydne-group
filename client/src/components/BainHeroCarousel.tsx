@@ -113,7 +113,7 @@ const slides: Slide[] = [
     headline: "AI Adoption Outlook 2026",
     sub: "A winner's paradox — the firms moving fastest are the ones governing hardest.",
     href: "/capabilities/artificial-intelligence",
-    image: "/images/hero/hero-highway.jpg",
+    image: "/images/hero/hero-city.jpg",
     focal: "50% 50%",
     zoom: 1.0,
     mobileFocal: "52% 50%",
@@ -216,9 +216,9 @@ export function BainHeroCarousel() {
       </button>
 
       {/* --- Foreground content — sits LOW in the frame, EY-style --- */}
-      {/* container geometry mirrors Navigation's bar (max-w + px) so the
-          headline's left edge aligns with the nav logo block */}
-      <div className="nx-band relative z-10 flex h-full flex-col justify-end">
+      {/* full-width with logo-aligned padding (no max-w centering) so the
+          headline's left edge lines up with the nav logo at every width */}
+      <div className="w-full px-3 md:px-[76px] lg:px-[100px] relative z-10 flex h-full flex-col justify-end">
         <AnimatePresence mode="wait">
           <motion.div
             key={active}

@@ -45,7 +45,7 @@ const capabilityLinks = [
 const agendaFeatured = {
   tag: "Featured insight",
   title: "How AI agents are reshaping enterprise operations",
-  image: "/images/industries/tech-datacenter.jpg",
+  image: "/images/capabilities-featured.jpg",
   href: "/insights/ai-agents-transform-operations",
 };
 
