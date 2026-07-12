@@ -32,15 +32,14 @@ const industries = [
   { id: "technology", title: "Technology, Media & Telecommunications", link: "/industries/technology" },
 ];
 
-// Executive agendas — EY-style wayfinding by leader role (real capability routes)
-const executiveAgendas = [
-  { label: "Technology leaders' agenda", href: "/capabilities/artificial-intelligence" },
-  { label: "Operations leaders' agenda", href: "/capabilities/operations" },
-  { label: "Marketing leaders' agenda", href: "/capabilities/growth-marketing-sales" },
-  { label: "Risk & resilience leaders' agenda", href: "/capabilities/risk-and-resilience" },
-  { label: "Finance leaders' agenda", href: "/capabilities/strategy-corporate-finance" },
-  { label: "Growth & venture agenda", href: "/capabilities/business-building" },
-  { label: "Chief executives' agenda", href: "/capabilities" },
+// The six major capabilities — links to their hub pages
+const capabilityLinks = [
+  { label: "Artificial Intelligence", href: "/capabilities/artificial-intelligence" },
+  { label: "Business Building", href: "/capabilities/business-building" },
+  { label: "Technology", href: "/capabilities/technology" },
+  { label: "Growth, Marketing & Sales", href: "/capabilities/growth-marketing-sales" },
+  { label: "Strategy & Corporate Finance", href: "/capabilities/strategy-corporate-finance" },
+  { label: "Operations", href: "/capabilities/operations" },
 ];
 
 const agendaFeatured = {
@@ -84,7 +83,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="px-6 sm:px-10 lg:pl-14 lg:pr-16 py-16 lg:py-24"
+            className="px-6 sm:px-10 lg:pl-14 lg:pr-16 py-12 lg:py-16"
           >
             <div className="flex items-center gap-3 mb-7">
               <span className="block h-[3px] w-9 bg-primary" />
@@ -93,14 +92,14 @@ export default function Home() {
               </span>
             </div>
             <h2 className="font-bold tracking-[-0.02em] leading-[1.08] text-white text-[clamp(2rem,3.2vw,3rem)] max-w-[15ch]">
-              Discover c-suite executive agendas
+              Discover our capabilities.
             </h2>
 
-            <ul className="mt-10 lg:mt-14 border-b border-white/15">
-              {executiveAgendas.map((a) => (
+            <ul className="mt-8 lg:mt-10 border-b border-white/15">
+              {capabilityLinks.map((a) => (
                 <li key={a.href}>
                   <Link href={a.href}>
-                    <span className="group flex items-center justify-between gap-6 border-t border-white/15 py-[1.15rem] cursor-pointer">
+                    <span className="group flex items-center justify-between gap-6 border-t border-white/15 py-[0.95rem] cursor-pointer">
                       <span className="text-[1.02rem] md:text-[1.08rem] font-semibold text-white/90 group-hover:text-white transition-colors">
                         {a.label}
                       </span>
@@ -114,7 +113,7 @@ export default function Home() {
 
           {/* Right — featured story, full-bleed image */}
           <Link href={agendaFeatured.href}>
-            <div className="group relative min-h-[440px] lg:min-h-full overflow-hidden cursor-pointer">
+            <div className="group relative min-h-[360px] lg:min-h-full overflow-hidden cursor-pointer">
               <img
                 src={agendaFeatured.image}
                 alt={agendaFeatured.title}
@@ -238,13 +237,13 @@ export default function Home() {
 
       {/* 5. Careers — preserved split-grid, polished */}
       <section className="w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[440px] md:min-h-[520px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[300px] md:min-h-[360px]">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.05, margin: "0px 0px 80px 0px" }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="bg-off-white flex flex-col justify-center px-4 sm:px-8 md:pl-[76px] md:pr-16 lg:pl-[100px] lg:pr-20 py-20 md:py-24"
+            className="bg-off-white flex flex-col justify-center px-4 sm:px-8 md:pl-[76px] md:pr-16 lg:pl-[100px] lg:pr-20 py-12 md:py-16"
           >
             <div className="flex items-center gap-3 mb-5">
               <span className="block h-[3px] w-9 bg-primary" />
@@ -255,21 +254,9 @@ export default function Home() {
             <h2 className="nx-h2-split text-charcoal mb-6">
               Where Human Intelligence Leads
             </h2>
-            <p className="text-base md:text-[1.05rem] text-charcoal/80 leading-[1.7] mb-7 max-w-[58ch]">
+            <p className="text-base md:text-[1.05rem] text-charcoal/80 leading-[1.7] mb-9 max-w-[58ch]">
               We help organizations govern intelligence and lead with judgment in the age of AI. If you bring ambition, clarity, and the will to shape what comes next — this is where you belong.
             </p>
-            <ul className="mb-9 space-y-3">
-              {[
-                "Real client ownership from your first engagement",
-                "Work at the AI frontier — with judgment as the craft",
-                "Mid-market impact you can see, measure, and name",
-              ].map((v) => (
-                <li key={v} className="flex items-start gap-3">
-                  <span className="mt-[7px] block h-2 w-2 shrink-0 bg-amber" />
-                  <span className="text-[0.98rem] leading-[1.5] text-charcoal/85">{v}</span>
-                </li>
-              ))}
-            </ul>
             <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">
               <Link href="/careers">
                 <PrimaryButton>Explore NexDyne Careers</PrimaryButton>
@@ -287,11 +274,11 @@ export default function Home() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.05, margin: "0px 0px 80px 0px" }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="relative min-h-[320px] lg:min-h-0"
+            className="relative min-h-[260px] lg:min-h-0"
           >
             <img
-              src="/images/hero-team.jpg"
-              alt="NexDyne team collaborating"
+              src="/images/careers-hero.jpg"
+              alt="Careers at NexDyne"
               className="absolute inset-0 w-full h-full object-cover"
             />
           </motion.div>
