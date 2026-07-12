@@ -331,6 +331,30 @@ Every data array, link, and section preserved.
 of card images, or you get 3 identical cards. Solution SUBPAGES already run on
 the EY-redesigned ServiceDetail/CapabilityHub templates.
 
+## 9d. Solution SUBPAGES — 2026-07-11 (in progress)
+
+The solution service subpages (e.g. `/solutions/process-optimization/*`) are
+bespoke ~486-line pages that VARY in structure — no single template fits all.
+Two variants found under Process Optimization:
+- **Rich variant** (ProcessDiscoveryMining): hero + perspective + 3 metrics +
+  6 hover-card services + 3-step approach + 2 image cases + related. Redesigned
+  IN PLACE to the EY system (real hero, perspective split, centered metrics,
+  ring-1 cards, numberless approach, EY open cases, dark CTA).
+- **Cat-6 variant** (the other 5: IntelligentAutomationDesign, Workflow-
+  Optimization, AIPoweredDecisionSupport, ChangeManagementTraining, Continuous-
+  ImprovementPrograms) — all identical: hero + perspective + 5-phase
+  methodology + deliverables list + dark Outcome band + 2 TEXT-only cases +
+  sibling links + CTA form. These now render through a shared
+  **`SolutionCat6Template.tsx`** (props: hero, perspective{heading,paragraphs,
+  image}, phases[], deliverables[], outcome, cases[], siblings[], cta). Each
+  page is now a ~148-line thin data file. Treatments: #FEFEFE canvas, real
+  hero, perspective split (image height-matched), phases → ring-1 cards
+  (numbers dropped), deliverables → clean 2-col hairline list (numbers
+  dropped), The Outcome = the one dark band, text cases → ring-1 cards,
+  siblings → hairline tiles, dark full-width CTA. Content preserved VERBATIM
+  (4 conversions done by subagents with a strict "byte-for-byte" spec).
+Still TODO: subpages for DDCI, ABG, and the Enterprise/Technology solution.
+
 ## 10. Rollout plan (agreed with user)
 
 Homepage = done (v3, live). Next: pick ONE capability page → apply the kit →
