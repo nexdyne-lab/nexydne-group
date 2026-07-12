@@ -353,7 +353,23 @@ Two variants found under Process Optimization:
   dropped), The Outcome = the one dark band, text cases → ring-1 cards,
   siblings → hairline tiles, dark full-width CTA. Content preserved VERBATIM
   (4 conversions done by subagents with a strict "byte-for-byte" spec).
-Still TODO: subpages for DDCI, ABG, and the Enterprise/Technology solution.
+**2026-07-12 continuation:** the other solution subpage sets, same treatment:
+- **Customer Intelligence** — 7 Cat-6 pages (CustomerDataPlatform,
+  PredictiveAnalyticsModeling, BehavioralSegmentation, JourneyAnalytics-
+  Optimization, PersonalizationStrategy, VoiceOfCustomer, AIPowered-
+  Recommendations) → converted to `SolutionCat6Template` thin data files.
+- **Business Growth** — 8 Cat-6 pages (ECommerceStrategyLaunch,
+  DigitalProductDevelopment, GrowthMarketingAcquisition, PricingMonetization-
+  Strategy, GoToMarketAcceleration, RevenueOperationsAnalytics,
+  ConversionOptimization, EcommercePlatforms) → converted the same way.
+- **Enterprise/Technology** — subpages already run on ServiceDetailTemplate /
+  CapabilityHubTemplate (EY-redesigned); nothing to convert.
+- Conversions done by subagents under a strict byte-for-byte spec; each page
+  gets a topic-fitting heroImage + perspective.image.
+- OUTLIERS not in this batch (different structure, standalone routes, not the
+  Cat-6 layout): `business-growth/Chatbots.tsx` (Card/Button/AnimatedSection,
+  255L) and `business-growth/NativeApps.tsx` (588L). Flagged for a separate
+  follow-up.
 
 ## 10. Rollout plan (agreed with user)
 
