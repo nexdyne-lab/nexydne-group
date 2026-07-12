@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Link, useLocation } from "wouter";
-import { Search, X, ChevronDown, Menu, ArrowUpRight } from "lucide-react";
+import { Search, X, ChevronDown, ChevronRight, ChevronLeft, Menu, ArrowUpRight, Globe, Bookmark } from "lucide-react";
 import UtilityBar from "./UtilityBar";
 
 // Industries data for mega menu
@@ -21,34 +21,6 @@ const industries = [
   { name: "Transportation & Logistics", slug: "transportation-logistics" },
   { name: "Travel & Hospitality", slug: "travel-hospitality" },
   { name: "Urban Development", slug: "urban-development" },
-];
-
-// Capabilities data
-const capabilities = [
-  { name: "Artificial Intelligence", slug: "artificial-intelligence" },
-  { name: "Business Building", slug: "business-building" },
-  { name: "Technology", slug: "technology" },
-  { name: "Strategy & Corporate Finance", slug: "strategy-corporate-finance" },
-  { name: "Operations", slug: "operations" },
-  { name: "Growth, Marketing & Sales", slug: "growth-marketing-sales" },
-  { name: "Data Transformation", slug: "data-transformation" },
-  { name: "Digital Twins", slug: "digital-twins" },
-  { name: "Internet of Things", slug: "internet-of-things" },
-  { name: "Risk & Resilience", slug: "risk-and-resilience" },
-];
-
-// Solutions data
-const solutions = [
-  { name: "Intelligent Process Optimization", slug: "intelligent-process-optimization" },
-  { name: "Data-Driven Customer Intelligence", slug: "data-driven-customer-intelligence" },
-  { name: "Scalable Enterprise Transformation", slug: "scalable-enterprise-transformation" },
-  { name: "Accelerating Business Growth", slug: "accelerating-business-growth" },
-  { name: "Process Automation", slug: "rpa" },
-  { name: "App Development", slug: "app-development" },
-  { name: "Data Solutions", slug: "data-solutions" },
-  { name: "Customer Intelligence", slug: "customer-intelligence" },
-  { name: "Digital Engagement", slug: "digital-engagement" },
-  { name: "Enterprise Transformation", slug: "enterprise-transformation" },
 ];
 
 // Insights categories
@@ -168,7 +140,7 @@ const MENU: Record<Exclude<NavItem, null>, MenuConfig> = {
   solutions: {
     eyebrow: "Solutions",
     description: "Productised programs that move from strategy to measurable outcomes.",
-    viewAll: { label: "View all solutions", href: "/solutions" },
+    // No Solutions overview page exists yet, so no "View all" link (avoids a 404).
     links: solutionMajorLinks,
     feature: {
       eyebrow: "Featured solution",
@@ -315,14 +287,87 @@ function MegaMenu({
   );
 }
 
+/* ------------------------------------------------------------------ */
+/*  Hamburger drawer — Bain-style two-level slide (master → section)    */
+/* ------------------------------------------------------------------ */
+
+// Order of drillable sections in the drawer master list.
+const drawerSections: Exclude<NavItem, null>[] = ["industries", "capabilities", "solutions", "insights", "about"];
+
+// Utility links mirrored from the top UtilityBar (which is hidden on mobile),
+// shown below the divider in the drawer master list.
+const drawerUtilityLinks: { label: string; href: string }[] = [
+  { label: "Offices", href: "/offices" },
+  { label: "Alumni", href: "/follow-us" },
+  { label: "Media Center", href: "/insights" },
+  { label: "Contact", href: "/contact" },
+];
+
+function DrawerChildPanel({
+  section,
+  onBack,
+  onNavigate,
+}: {
+  section: Exclude<NavItem, null>;
+  onBack: () => void;
+  onNavigate: () => void;
+}) {
+  const cfg = MENU[section];
+  const items: MenuLink[] = cfg.links ?? (cfg.groups ? cfg.groups.flatMap((g) => g.links) : []);
+  return (
+    <div className="flex h-full flex-col">
+      <button
+        onClick={onBack}
+        className="flex items-center gap-2 px-5 py-4 text-[12px] font-semibold uppercase tracking-[0.14em] text-primary transition-colors hover:text-primary/70"
+      >
+        <ChevronLeft className="h-4 w-4" />
+        Main menu
+      </button>
+      <div className="flex-1 overflow-y-auto px-5 pb-10">
+        <h3 className="text-[1.35rem] font-bold tracking-[-0.02em] text-charcoal">{cfg.eyebrow}</h3>
+        <p className="mb-4 mt-1 text-[13.5px] leading-[1.5] text-charcoal/50">{cfg.description}</p>
+        <div className="flex flex-col">
+          {items.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              onClick={onNavigate}
+              className="group flex items-center justify-between gap-3 border-b border-border/40 py-3.5 text-[15px] font-medium text-charcoal/90 transition-colors hover:text-primary"
+            >
+              <span>{l.label}</span>
+              <ArrowUpRight className="h-4 w-4 shrink-0 -translate-x-1 text-primary opacity-0 transition duration-200 group-hover:translate-x-0 group-hover:opacity-100" />
+            </Link>
+          ))}
+        </div>
+        {cfg.viewAll && (
+          <Link
+            href={cfg.viewAll.href}
+            onClick={onNavigate}
+            className="mt-6 inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.1em] text-charcoal transition-colors hover:text-primary"
+          >
+            {cfg.viewAll.label}
+            <ArrowUpRight className="h-4 w-4" />
+          </Link>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<NavItem>(null);
+  // Which section is drilled-into inside the hamburger drawer (null = master list)
+  const [drawerSection, setDrawerSection] = useState<Exclude<NavItem, null> | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [location] = useLocation();
   const dropdownTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const navRef = useRef<HTMLElement>(null);
+  // Retains the last drilled section so its panel stays rendered while sliding back
+  const lastDrawerSectionRef = useRef<Exclude<NavItem, null> | null>(null);
+  if (drawerSection) lastDrawerSectionRef.current = drawerSection;
+  const drawerChildSection = drawerSection ?? lastDrawerSectionRef.current;
 
   // Handle scroll for navbar background
   useEffect(() => {
@@ -360,7 +405,13 @@ export default function Navigation() {
   const handleNavigation = useCallback(() => {
     setMenuOpen(false);
     setActiveDropdown(null);
+    setDrawerSection(null);
   }, []);
+
+  // Reset the drawer to its master list whenever it closes
+  useEffect(() => {
+    if (!menuOpen) setDrawerSection(null);
+  }, [menuOpen]);
 
   // Handle dropdown hover
   const handleDropdownEnter = (item: NavItem) => {
@@ -593,150 +644,111 @@ export default function Navigation() {
         )}
       </nav>
 
-      {/* Full-Screen Menu Overlay (Mobile + Search) */}
+      {/* Hamburger drawer — Bain-style two-level slide (master → section) */}
       {menuOpen && (
-        <div className="fixed inset-0 z-40 bg-white pt-14 md:pt-20">
-          <div className="h-full overflow-y-auto">
-            {/* Search Bar */}
-            <div className="border-b border-border">
-              <div className="container px-4 sm:px-6 py-3 sm:py-4">
-                <div className="flex items-center gap-2 sm:gap-3 max-w-2xl">
-                  <Search className="w-5 h-5 text-muted-foreground/70" />
-                  <input
-                    type="text"
-                    placeholder="Type to search"
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    className="flex-1 text-lg bg-transparent border-none outline-none focus:ring-2 focus:ring-primary/40 rounded placeholder-charcoal/40"
-                  />
-                  {searchQuery && (
-                    <button onClick={() => setSearchQuery("")}>
-                      <X className="w-5 h-5 text-muted-foreground/70" />
+        <>
+          {/* Scrim — dims the page; click to close */}
+          <div
+            className="fixed inset-0 top-14 z-40 bg-charcoal/40 backdrop-blur-[2px] md:top-20"
+            onClick={handleNavigation}
+            aria-hidden
+          />
+          {/* Left-anchored drawer panel */}
+          <div className="fixed bottom-0 left-0 top-14 z-40 w-full max-w-[420px] overflow-hidden bg-white shadow-[0_30px_80px_-20px_rgba(36,36,36,0.5)] md:top-20">
+            <div
+              className="flex h-full w-[200%] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]"
+              style={{ transform: drawerSection ? "translateX(-50%)" : "translateX(0)" }}
+            >
+              {/* --- Master panel --- */}
+              <div className="flex h-full w-1/2 flex-col">
+                {/* Search */}
+                <div className="border-b border-border px-5 py-3.5">
+                  <div className="flex items-center gap-3">
+                    <Search className="h-5 w-5 shrink-0 text-muted-foreground/70" />
+                    <input
+                      type="text"
+                      placeholder="Type to search"
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      className="flex-1 bg-transparent text-[15px] outline-none placeholder-charcoal/40"
+                    />
+                    {searchQuery && (
+                      <button onClick={() => setSearchQuery("")} aria-label="Clear search">
+                        <X className="h-4 w-4 text-muted-foreground/70" />
+                      </button>
+                    )}
+                  </div>
+                </div>
+                {/* Master list */}
+                <nav className="flex-1 overflow-y-auto px-2 py-3">
+                  {drawerSections.map((s) => (
+                    <button
+                      key={s}
+                      onClick={() => setDrawerSection(s)}
+                      className="group flex w-full items-center justify-between rounded-md px-3 py-3.5 text-left text-[17px] font-medium text-charcoal transition-colors hover:bg-subtle hover:text-primary"
+                    >
+                      {MENU[s].eyebrow}
+                      <ChevronRight className="h-5 w-5 text-charcoal/35 transition-colors group-hover:text-primary" />
                     </button>
-                  )}
-                </div>
-              </div>
-            </div>
-
-            {/* Mobile Menu Content */}
-            <div className="container px-4 sm:px-6 py-6 sm:py-8">
-              <div className="space-y-5 sm:space-y-6">
-                {/* Industries */}
-                <div>
-                  <Link
-                    href="/industries"
-                    className="block text-xl sm:text-2xl font-semibold text-charcoal hover:text-primary transition-colors mb-3 sm:mb-4"
-                    onClick={handleNavigation}
-                  >
-                    Industries
-                  </Link>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-2 pl-3 sm:pl-4">
-                    {industries.slice(0, 8).map((industry) => (
-                      <Link
-                        key={industry.slug}
-                        href={`/industries/${industry.slug}`}
-                        className="py-1 text-muted-foreground hover:text-primary transition-colors"
-                        onClick={handleNavigation}
-                      >
-                        {industry.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Capabilities */}
-                <div>
-                  <Link
-                    href="/capabilities"
-                    className="block text-xl sm:text-2xl font-semibold text-charcoal hover:text-primary transition-colors mb-3 sm:mb-4"
-                    onClick={handleNavigation}
-                  >
-                    Capabilities
-                  </Link>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-2 pl-3 sm:pl-4">
-                    {capabilities.slice(0, 6).map((capability) => (
-                      <Link
-                        key={capability.slug}
-                        href={`/capabilities/${capability.slug}`}
-                        className="py-1 text-muted-foreground hover:text-primary transition-colors"
-                        onClick={handleNavigation}
-                      >
-                        {capability.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Solutions */}
-                <div>
-                  <Link
-                    href="/solutions"
-                    className="block text-xl sm:text-2xl font-semibold text-charcoal hover:text-primary transition-colors mb-3 sm:mb-4"
-                    onClick={handleNavigation}
-                  >
-                    Solutions
-                  </Link>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 sm:gap-2 pl-3 sm:pl-4">
-                    {solutions.slice(0, 4).map((solution) => (
-                      <Link
-                        key={solution.slug}
-                        href={`/solutions/${solution.slug}`}
-                        className="py-1 text-muted-foreground hover:text-primary transition-colors"
-                        onClick={handleNavigation}
-                      >
-                        {solution.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Insights */}
-                <div>
-                  <Link
-                    href="/insights"
-                    className="block text-xl sm:text-2xl font-semibold text-charcoal hover:text-primary transition-colors"
-                    onClick={handleNavigation}
-                  >
-                    Insights
-                  </Link>
-                </div>
-
-                {/* About */}
-                <div>
-                  <Link
-                    href="/about"
-                    className="block text-xl sm:text-2xl font-semibold text-charcoal hover:text-primary transition-colors"
-                    onClick={handleNavigation}
-                  >
-                    About
-                  </Link>
-                </div>
-
-                {/* Careers */}
-                <div>
+                  ))}
+                  {/* Careers — direct link, no sub-panel */}
                   <Link
                     href="/careers"
-                    className="block text-xl sm:text-2xl font-semibold text-charcoal hover:text-primary transition-colors"
                     onClick={handleNavigation}
+                    className="flex w-full items-center rounded-md px-3 py-3.5 text-[17px] font-medium text-charcoal transition-colors hover:bg-subtle hover:text-primary"
                   >
                     Careers
                   </Link>
-                </div>
+                  {/* Utility links — mirrored from the top UtilityBar */}
+                  <div className="mt-3 border-t border-border pt-3">
+                    {drawerUtilityLinks.map((l) => (
+                      <Link
+                        key={l.href}
+                        href={l.href}
+                        onClick={handleNavigation}
+                        className="flex items-center rounded-md px-3 py-2 text-[12px] font-semibold uppercase tracking-[0.1em] text-charcoal/70 transition-colors hover:bg-subtle hover:text-primary"
+                      >
+                        {l.label}
+                      </Link>
+                    ))}
+                    {/* Global | English */}
+                    <div className="flex items-center gap-2 px-3 py-2 text-[12px] font-semibold uppercase tracking-[0.1em] text-charcoal/70">
+                      <Globe className="h-3.5 w-3.5" />
+                      Global | English
+                    </div>
+                    {/* Saved Items — coming soon (mirrors the top UtilityBar toast) */}
+                    <button
+                      onClick={() => {
+                        const toast = document.createElement("div");
+                        toast.textContent = "Saved Items — Feature coming soon";
+                        toast.className =
+                          "fixed top-16 right-6 bg-charcoal text-white text-sm px-4 py-2 rounded shadow-lg z-[100]";
+                        document.body.appendChild(toast);
+                        setTimeout(() => toast.remove(), 2500);
+                        handleNavigation();
+                      }}
+                      className="flex w-full items-center gap-2 rounded-md px-3 py-2 text-left text-[12px] font-semibold uppercase tracking-[0.1em] text-charcoal/70 transition-colors hover:bg-subtle hover:text-primary"
+                    >
+                      <Bookmark className="h-3.5 w-3.5" />
+                      Saved Items
+                    </button>
+                  </div>
+                </nav>
+              </div>
 
-                {/* Contact */}
-                <div className="pt-5 sm:pt-6 border-t border-border">
-                  <Link
-                    href="/contact"
-                    className="block text-xl sm:text-2xl font-semibold text-primary hover:text-primary/90 transition-colors"
-                    onClick={handleNavigation}
-                  >
-                    Contact Us
-                  </Link>
-                </div>
+              {/* --- Child panel --- */}
+              <div className="h-full w-1/2">
+                {drawerChildSection && (
+                  <DrawerChildPanel
+                    section={drawerChildSection}
+                    onBack={() => setDrawerSection(null)}
+                    onNavigate={handleNavigation}
+                  />
+                )}
               </div>
             </div>
           </div>
-        </div>
+        </>
       )}
     </>
   );
