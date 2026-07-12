@@ -270,6 +270,12 @@ section, card, and link preserved; interfaces unchanged.**
   pages; the 10 AI-family root pages default to `ai`. Card = flush 3:2 image,
   red category, 1.35rem title, dek, read-time. If a page ever passes real
   `thoughtLeadership`, it is normalized and used instead of the fallback.
+- **Outcomes = the one dark band** on service-detail pages (2026-07-11, user
+  picked "dark payoff band"): the `ServiceDetailTemplate` Outcomes section
+  moved from #FEFEFE to a `bg-black text-white` band — red-rule eyebrow, white
+  H2, 2-col list of `border-t border-white/15` ruled rows with red `Check`
+  markers + white/90 text. It's the page's single contrasting moment (the
+  black intro + this = the only two dark bands); everything else stays light.
 - **Approach pillars: numbers removed** (2026-07-11, user "remove the numbers
   and redesign for professional look"): dropped the red `01/02/03` step
   numerals in BOTH hub + service-detail templates; each pillar now sits under

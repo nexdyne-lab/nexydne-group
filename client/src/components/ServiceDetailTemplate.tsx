@@ -234,32 +234,37 @@ export default function ServiceDetailTemplate(
         </div>
       </section>
 
-      {/* 5. Outcomes — bullet list */}
-      <section className="bg-[#FEFEFE]">
-        <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14 py-10 md:py-12 lg:py-14">
+      {/* 5. Outcomes — dark payoff band (the page's one contrasting moment) */}
+      <section className="bg-black text-white">
+        <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14 py-16 md:py-20 lg:py-24">
           <motion.div
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease }}
-            className="mb-12 md:mb-14 max-w-4xl"
+            className="mb-12 md:mb-16 max-w-4xl"
           >
-            <Eyebrow>Outcomes</Eyebrow>
-            <h2 className="nx-h2 text-black">What clients can expect</h2>
+            <div className="flex items-center gap-3 mb-5">
+              <span className="block h-[3px] w-9 bg-primary" />
+              <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-white/60">
+                Outcomes
+              </span>
+            </div>
+            <h2 className="nx-h2 text-white">What clients can expect</h2>
           </motion.div>
 
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-6 max-w-5xl">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-0">
             {outcomes.map((item, index) => (
               <motion.li
                 key={index}
                 initial={{ opacity: 0, y: 18 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, ease, delay: index * 0.05 }}
-                className="flex items-start gap-3"
+                transition={{ duration: 0.5, ease, delay: (index % 2) * 0.08 }}
+                className="flex items-start gap-4 border-t border-white/15 py-6"
               >
                 <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                <span className="text-base md:text-lg text-black leading-[1.6]">
+                <span className="text-[1.05rem] md:text-[1.15rem] text-white/90 leading-[1.6]">
                   {item}
                 </span>
               </motion.li>

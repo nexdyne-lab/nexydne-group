@@ -22,7 +22,7 @@ export const capabilityPerspectives: Record<PerspectiveTopic, PerspectiveCard[]>
         "Autonomous agents moved from demo to P&L in a single planning cycle. The firms that see a return fund workflows, not pilots — and govern agents like employees, not software.",
       category: "The AI Agenda",
       readTime: "8 min read",
-      image: "/images/ai-acceleration-abstract.jpg",
+      image: "/images/insight-agentic-budget-line.jpg",
       link: "/insights/agentic-ai-budget-line",
     },
     {
@@ -35,13 +35,13 @@ export const capabilityPerspectives: Record<PerspectiveTopic, PerspectiveCard[]>
       link: "/insights/mid-market-ai-guide",
     },
     {
-      title: "How AI agents transform enterprise operations",
+      title: "The EU AI Act is enforcing in stages — August 2026 is the big one.",
       description:
-        "Where autonomous agents create real operating leverage — and the guardrails, oversight, and integration work that separate durable deployments from science projects.",
-      category: "Operations",
-      readTime: "9 min read",
-      image: "/images/insight-ai-powered-operations.jpg",
-      link: "/insights/how-ai-agents-transform-enterprise-operations",
+        "You don't have to build AI to be covered; deploying it is enough. A 90-day compliance posture for mid-market firms that use AI in hiring, credit, or customer decisions.",
+      category: "Governance",
+      readTime: "12 min read",
+      image: "/images/insight-eu-ai-act.jpg",
+      link: "/insights/eu-ai-act-mid-market-playbook",
     },
   ],
   growth: [
