@@ -89,7 +89,7 @@ type NavItem = "industries" | "capabilities" | "solutions" | "insights" | "about
 /*  Intro column · structured link grid · branded feature card         */
 /* ------------------------------------------------------------------ */
 
-interface MenuLink { label: string; href: string }
+interface MenuLink { label: string; href: string; desc?: string }
 interface MenuFeature {
   eyebrow: string;
   title: string;
@@ -107,8 +107,24 @@ interface MenuConfig {
 }
 
 const industryLinks: MenuLink[] = industries.map((i) => ({ label: i.name, href: `/industries/${i.slug}` }));
-const capabilityLinks: MenuLink[] = capabilities.map((c) => ({ label: c.name, href: `/capabilities/${c.slug}` }));
-const solutionLinks: MenuLink[] = solutions.map((s) => ({ label: s.name, href: `/solutions/${s.slug}` }));
+// The six core disciplines shown in the Capabilities mega-menu (matches the
+// homepage "Discover our capabilities" set). Each carries a one-line descriptor.
+const capabilityMajorLinks: MenuLink[] = [
+  { label: "Artificial Intelligence", href: "/capabilities/artificial-intelligence", desc: "Governed AI that scales judgment — not just automation." },
+  { label: "Business Building", href: "/capabilities/business-building", desc: "Launch new ventures and revenue engines from inside the core." },
+  { label: "Technology", href: "/capabilities/technology", desc: "Modern, cloud-native platforms built to scale with ambition." },
+  { label: "Strategy & Corporate Finance", href: "/capabilities/strategy-corporate-finance", desc: "Sharper strategy and capital decisions that compound value." },
+  { label: "Operations", href: "/capabilities/operations", desc: "Turn manual operations into governed, autonomous execution." },
+  { label: "Growth, Marketing & Sales", href: "/capabilities/growth-marketing-sales", desc: "Convert capability into demand, pipeline, and revenue." },
+];
+// The four core solutions shown in the Solutions mega-menu (matches the homepage
+// "Operational excellence" set). Each carries a one-line descriptor.
+const solutionMajorLinks: MenuLink[] = [
+  { label: "Intelligent Process Optimization", href: "/solutions/intelligent-process-optimization", desc: "Manual operations become governed, autonomous execution." },
+  { label: "Data-Driven Customer Intelligence", href: "/solutions/data-driven-customer-intelligence", desc: "Turn data into governed customer insight at scale." },
+  { label: "Scalable Enterprise Transformation", href: "/solutions/scalable-enterprise-transformation", desc: "Modernize the core to scale with ambition." },
+  { label: "Accelerating Business Growth", href: "/solutions/accelerating-business-growth", desc: "Products and channels that turn capability into revenue." },
+];
 const aboutLinks: MenuLink[] = [
   ...aboutItems.map((a) => ({
     label: a.name,
@@ -140,7 +156,7 @@ const MENU: Record<Exclude<NavItem, null>, MenuConfig> = {
     eyebrow: "Capabilities",
     description: "The disciplines we bring to every engagement — strategy, technology, and governed AI.",
     viewAll: { label: "View all capabilities", href: "/capabilities" },
-    links: capabilityLinks,
+    links: capabilityMajorLinks,
     feature: {
       eyebrow: "Flagship doctrine",
       title: "HIG™ — Human Intelligence Governance",
@@ -153,7 +169,7 @@ const MENU: Record<Exclude<NavItem, null>, MenuConfig> = {
     eyebrow: "Solutions",
     description: "Productised programs that move from strategy to measurable outcomes.",
     viewAll: { label: "View all solutions", href: "/solutions" },
-    links: solutionLinks,
+    links: solutionMajorLinks,
     feature: {
       eyebrow: "Featured solution",
       title: "Intelligent Process Optimization",
@@ -189,15 +205,20 @@ const MENU: Record<Exclude<NavItem, null>, MenuConfig> = {
   },
 };
 
-function MegaLink({ href, children, onNavigate }: { href: string; children: React.ReactNode; onNavigate: () => void }) {
+function MegaLink({ href, children, desc, onNavigate }: { href: string; children: React.ReactNode; desc?: string; onNavigate: () => void }) {
   return (
     <Link
       href={href}
       onClick={onNavigate}
-      className="group flex items-center justify-between gap-3 border-b border-border/40 py-2.5 text-[15px] font-medium text-charcoal/90 transition-colors hover:text-primary"
+      className={`group flex justify-between gap-3 border-b border-border/40 ${desc ? "items-start py-3" : "items-center py-2.5"}`}
     >
-      <span>{children}</span>
-      <ArrowUpRight className="h-4 w-4 -translate-x-1 text-primary opacity-0 transition duration-200 group-hover:translate-x-0 group-hover:opacity-100" />
+      <span className="min-w-0">
+        <span className="block text-[15px] font-medium text-charcoal/90 transition-colors group-hover:text-primary">{children}</span>
+        {desc && (
+          <span className="mt-1 block text-[13px] leading-[1.5] text-charcoal/50">{desc}</span>
+        )}
+      </span>
+      <ArrowUpRight className={`${desc ? "mt-0.5" : ""} h-4 w-4 shrink-0 -translate-x-1 text-primary opacity-0 transition duration-200 group-hover:translate-x-0 group-hover:opacity-100`} />
     </Link>
   );
 }
@@ -285,7 +306,7 @@ function MegaMenu({
             ) : (
               <div className="grid grid-cols-1 gap-x-12 sm:grid-cols-2">
                 {(config.links ?? []).map((l) => (
-                  <MegaLink key={l.href} href={l.href} onNavigate={onNavigate}>{l.label}</MegaLink>
+                  <MegaLink key={l.href} href={l.href} desc={l.desc} onNavigate={onNavigate}>{l.label}</MegaLink>
                 ))}
               </div>
             )}
