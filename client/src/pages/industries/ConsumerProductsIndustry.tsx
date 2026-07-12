@@ -46,17 +46,17 @@ export default function ConsumerProductsIndustry() {
         },
         {
           name: "Pricing & Revenue Management",
-          href: "/capabilities/pricing-revenue",
+          href: "/industries/consumer-products/pricing-revenue-management",
           blurb: "Pricing, promotion, and trade-spend decisions with the tooling to protect list-to-net in a volatile market."
         },
         {
           name: "Operations Excellence",
-          href: "/capabilities/operations-excellence",
+          href: "/industries/consumer-products/operations-excellence",
           blurb: "Modernize planning, manufacturing, and logistics with AI-driven S&OP and the supply-chain visibility volatility demands."
         },
         {
           name: "Data Transformation",
-          href: "/capabilities/data-transformation",
+          href: "/industries/consumer-products/data-transformation",
           blurb: "Unify consumer, commerce, and supply-chain data into one fabric for CPG AI use cases at scale."
         }
       ]}

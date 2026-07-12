@@ -789,6 +789,9 @@ import AerospaceDefenseIndustry from "./pages/industries/AerospaceDefenseIndustr
 import AutomotiveIndustry from "./pages/industries/AutomotiveIndustry";
 import ConsumerProductsIndustry from "./pages/industries/ConsumerProductsIndustry";
 import ConsumerProductsCustomerIntelligence from "./pages/industries/consumer-products/CustomerIntelligence";
+import ConsumerProductsPricingRevenueManagement from "./pages/industries/consumer-products/PricingRevenueManagement";
+import ConsumerProductsOperationsExcellence from "./pages/industries/consumer-products/OperationsExcellence";
+import ConsumerProductsDataTransformation from "./pages/industries/consumer-products/DataTransformation";
 import EducationIndustry from "./pages/industries/EducationIndustry";
 import EnergyUtilitiesIndustry from "./pages/industries/EnergyUtilitiesIndustry";
 import InsuranceIndustry from "./pages/industries/InsuranceIndustry";
@@ -1490,6 +1493,9 @@ function Router() {
         <Route path="/industries/aerospace-defense" component={AerospaceDefenseIndustry} />
         <Route path="/industries/automotive" component={AutomotiveIndustry} />
         <Route path="/industries/consumer-products/customer-intelligence" component={ConsumerProductsCustomerIntelligence} />
+        <Route path="/industries/consumer-products/pricing-revenue-management" component={ConsumerProductsPricingRevenueManagement} />
+        <Route path="/industries/consumer-products/operations-excellence" component={ConsumerProductsOperationsExcellence} />
+        <Route path="/industries/consumer-products/data-transformation" component={ConsumerProductsDataTransformation} />
         <Route path="/industries/consumer-products" component={ConsumerProductsIndustry} />
         <Route path="/industries/education" component={EducationIndustry} />
         <Route path="/industries/energy-utilities" component={EnergyUtilitiesIndustry} />
