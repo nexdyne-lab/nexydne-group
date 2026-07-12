@@ -12,6 +12,8 @@ export default function RetailIndustry() {
       slug="retail"
       heroSubtitle="We help retailers win the unified-commerce era — using AI-powered personalization, intelligent supply chains, and modernized merchandising to protect margin, lift conversion, and meet customers wherever they choose to shop."
       heroImage="/images/industries/retail-warehouse.jpg"
+      perspectiveImage="/images/industries/retail-shelves.jpg"
+      quoteImage="/images/industries/women-laptops.jpg"
       heroFocal="58% 50%"
       povParagraphs={[
         "Retail is in the middle of its most consequential transformation in decades. The pandemic compressed years of digital adoption into months, fundamentally changing how consumers discover, evaluate, and purchase. Retailers that can meet customers wherever they are — with personalized, frictionless experiences — will win disproportionate share of wallet and loyalty.",

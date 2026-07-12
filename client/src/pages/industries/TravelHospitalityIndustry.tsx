@@ -12,6 +12,8 @@ export default function TravelHospitalityIndustry() {
       slug="travel-hospitality"
       heroSubtitle="We help airlines, hotels, cruise lines, and OTAs run leaner, more personalized operations — using AI-powered revenue management, modern guest data, and digital service design that protects unit economics while lifting the experience travelers actually remember."
       heroImage="/images/industries/travel-city-twilight.jpg"
+      perspectiveImage="/images/industries/city-night.jpg"
+      quoteImage="/images/industries/colleagues-walking.jpg"
       heroFocal="55% 50%"
       povParagraphs={[
         "The travel industry has emerged from unprecedented disruption with a renewed focus on resilience, efficiency, and customer experience. Travelers expect seamless digital journeys, personalized service, and flexible options. Companies that deliver on those expectations while protecting margin will own the next cycle of growth.",

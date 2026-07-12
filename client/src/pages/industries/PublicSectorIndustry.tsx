@@ -12,6 +12,8 @@ export default function PublicSectorIndustry() {
       slug="public-sector"
       heroSubtitle="We help federal, state, and local government leaders deliver more capability with the resources they have — using digital service design, back-office automation, and data and AI capabilities tuned to the realities of public-sector procurement and accountability."
       heroImage="/images/industries/people-commute.jpg"
+      perspectiveImage="/images/industries/city-digital.jpg"
+      quoteImage="/images/industries/skyscraper.jpg"
       heroFocal="58% 45%"
       povParagraphs={[
         "Government faces unprecedented pressure. Aging infrastructure, workforce constraints, and rising citizen expectations are forcing agencies to do more with less. At the same time, technology is creating real opportunity — to redesign service delivery, lift operational efficiency, and ground decision-making in better data.",

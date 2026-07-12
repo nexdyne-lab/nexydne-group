@@ -12,6 +12,8 @@ export default function EducationIndustry() {
       slug="education"
       heroSubtitle="We help K-12 systems, universities, and learning platforms build digital and operating capabilities that improve learning outcomes — using AI-powered personalization, modern student-success infrastructure, and operating discipline that respects the mission."
       heroImage="/images/industries/team-strategy-board.jpg"
+      perspectiveImage="/images/industries/edu-whiteboard.jpg"
+      quoteImage="/images/industries/women-laptops.jpg"
       heroFocal="60% 45%"
       povParagraphs={[
         "Education is in a moment of profound change. Students expect personalized, flexible learning experiences. Institutions are being asked to demonstrate outcomes and value. Technology is enabling entirely new models of teaching, learning, and credentialing — and the institutions that lean into that shift are pulling ahead on enrollment, completion, and reputation.",

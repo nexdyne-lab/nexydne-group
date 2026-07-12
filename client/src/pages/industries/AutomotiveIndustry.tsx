@@ -12,6 +12,8 @@ export default function AutomotiveIndustry() {
       slug="automotive"
       heroSubtitle="We help OEMs, suppliers, and mobility platforms move with the CASE shift — software-defined vehicles, EV programs, smart factories, and new mobility services — without losing the operational discipline that defines the industry."
       heroImage="/images/industries/auto-robotics-team.jpg"
+      perspectiveImage="/images/industries/mfg-robotics-tablet.jpg"
+      quoteImage="/images/industries/mfg-robot-arm.jpg"
       heroFocal="60% 45%"
       povParagraphs={[
         "Automotive is being reshaped by four converging forces — electrification, autonomy, connectivity, and shared mobility. The CASE trends are rewriting competitive dynamics, demanding new capabilities, and creating real openings for the OEMs and suppliers willing to invest ahead of the curve.",

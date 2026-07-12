@@ -12,6 +12,8 @@ export default function UrbanDevelopmentIndustry() {
       slug="urban-development"
       heroSubtitle="We help cities, developers, and infrastructure providers build more livable communities — pairing smart-city platforms, sustainable design, and modern citizen engagement with the operating discipline urban transformation actually requires."
       heroImage="/images/industries/eng-designers.jpg"
+      perspectiveImage="/images/industries/skyscraper.jpg"
+      quoteImage="/images/industries/city-digital.jpg"
       heroFocal="55% 45%"
       povParagraphs={[
         "By 2050, nearly 70% of the world's population will live in cities. That urban transformation creates both challenges and opportunity. Cities that harness technology, data, and innovative governance will create thriving communities. Those that cannot will struggle with congestion, affordability, and resilience — and the gap is going to compound.",

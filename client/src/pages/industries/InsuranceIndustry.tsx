@@ -12,6 +12,8 @@ export default function InsuranceIndustry() {
       slug="insurance"
       heroSubtitle="We help carriers, brokers, and reinsurers build the digital capabilities the next decade demands — AI-powered underwriting, automated claims, embedded distribution, and the data infrastructure to make all of it auditable and explainable."
       heroImage="/images/industries/fin-handshake-city.jpg"
+      perspectiveImage="/images/industries/advisor-charts.jpg"
+      quoteImage="/images/industries/fin-monitors.jpg"
       heroFocal="55% 50%"
       povParagraphs={[
         "Insurance has always been about managing risk — but the risks themselves are changing. Climate is reshaping property and casualty exposures. Cyber is creating new categories of loss. And customers expect the same seamless digital experiences they get from their tech-company peers. The carriers that thrive will be those that turn that pressure into opportunity.",

@@ -12,6 +12,8 @@ export default function ManufacturingIndustry() {
       slug="manufacturing"
       heroSubtitle="We help manufacturers build the smart, resilient operations the next cycle demands — using digital twins, predictive maintenance, and AI-powered planning to lift uptime, compress lead times, and turn factories into a source of advantage rather than a cost line."
       heroImage="/images/industries/mfg-robotics.jpg"
+      perspectiveImage="/images/industries/mfg-robot-arm-team.jpg"
+      quoteImage="/images/industries/ops-gears.jpg"
       heroFocal="60% 45%"
       povParagraphs={[
         "Manufacturing sits at a pivotal moment. Supply-chain shocks, labor scarcity, and sustainability mandates are forcing companies to rethink how they design, produce, and deliver. At the same time, advances in automation, AI, and digital twins are creating real opportunities to lift productivity and resilience at the same time.",

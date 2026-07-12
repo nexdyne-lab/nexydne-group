@@ -13,6 +13,8 @@ export default function FinancialServicesIndustry() {
       slug="financial-services"
       heroSubtitle="We help banks, insurers, and fintech leaders prove how data, AI, and digital channels create value before they are scaled across the operating model — automating what is transactional and rewiring teams to meet customers' changing demands."
       heroImage="/images/industries/fin-trader.jpg"
+      perspectiveImage="/images/industries/fin-monitors.jpg"
+      quoteImage="/images/industries/advisor-charts.jpg"
       heroFocal="62% 45%"
       povParagraphs={[
         "We begin our financial services consulting by partnering with you to define, test, and prove how advanced data collection and analysis, AI, digital channels, and other enhancements will create value — before expanding or embedding these capabilities in your operating model. We automate what is transactional and create cross-functional teams to harness the ingenuity and innovation needed to meet customers' changing demands.",

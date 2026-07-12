@@ -12,6 +12,8 @@ export default function TechnologyMediaTelecomIndustry() {
       slug="technology-media-telecom"
       heroSubtitle="We help technology, media, and telecom leaders win the convergence — accelerating product velocity, modernizing networks, and building the data and AI capabilities needed to compete at the pace the next cycle is going to demand."
       heroImage="/images/industries/tech-datacenter.jpg"
+      perspectiveImage="/images/industries/tech-circuit.jpg"
+      quoteImage="/images/industries/tech-glasses.jpg"
       heroFocal="62% 45%"
       povParagraphs={[
         "Technology, media, and telecom are converging in ways that create both opportunity and threat. Streaming has reshaped entertainment. 5G is enabling new use cases. AI is rewriting product economics across every category. Companies that harness these forces will define the next decade; those that do not will see margin and relevance compress.",

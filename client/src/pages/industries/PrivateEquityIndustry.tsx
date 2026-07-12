@@ -12,6 +12,8 @@ export default function PrivateEquityIndustry() {
       slug="private-equity"
       heroSubtitle="We help private equity firms create operational value — across diligence, hold, and exit — with rigorous tech and data diligence, value-creation playbooks, and the digital execution muscle today's hold periods demand."
       heroImage="/images/industries/deal-handshake.jpg"
+      perspectiveImage="/images/industries/advisor-charts.jpg"
+      quoteImage="/images/industries/biz-meeting.jpg"
       heroFocal="55% 50%"
       povParagraphs={[
         "The private-equity playbook is evolving. Financial engineering alone no longer delivers the returns LPs expect. Today's top-performing funds are the ones that can identify operational improvement during diligence and execute transformational change in the hold — and prove it with data at exit.",
