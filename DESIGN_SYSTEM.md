@@ -285,6 +285,52 @@ section, card, and link preserved; interfaces unchanged.**
   `whileInView` blocks at opacity 0 (huge blank gaps). Capture viewport
   chunks after a stepped pre-scroll instead.
 
+## 9c. Top-level Solution pages (bespoke, not a shared template) — 2026-07-11
+
+The 4 flagship solution pages are hand-built pages (NOT a shared template),
+each ~600 lines with a 9-slot structure driven by the `SolutionHero`
+component + inline sections. Redesigned to the EY system (pilot approved by
+user on Intelligent Process Optimization, then propagated). **Solutions keep a
+REAL photo hero — unlike capability pages which use the black typographic
+intro.** Files:
+- `pages/IntelligentProcessOptimization.tsx` (pilot)
+- `pages/DataDrivenCustomerIntelligence.tsx`
+- `pages/solutions/AcceleratingBusinessGrowth.tsx`
+- `pages/solutions/EnterpriseTransformation.tsx` = the "Scalable Enterprise
+  Transformation" main — this one is DIFFERENT: it renders through
+  `MarketingMasterTemplate` (capability design), so it already got the EY
+  redesign + has a black typographic intro, NOT a photo hero. Left as-is.
+
+Section treatments (per user, mapped from their 7 reference screenshots):
+1. **Hero** — real image via `SolutionHero heroImage=... heroFocal=...`.
+   `SolutionHero` got opt-in image support: full-bleed photo + a left→right
+   light scrim that STOPS at the copy (`#FEFEFE 0%→40%, 0.7 @50%, 0 @62%`) so
+   the right half of the photo shows true. Top padding `pt-36 lg:pt-44` so the
+   eyebrow clears the fixed nav. Container widened to `max-w-[1800px]`.
+2. **Our Perspective** — editorial split: tightened copy left (kept the in-text
+   link), real photo right. `items-stretch` + image wrapper
+   `h-64 sm:h-80 lg:h-full min-h-[340px]` so the image matches the text-column
+   height (never runs long as a tall portrait).
+3. **How We Help** — EY flat `ring-1 ring-black/10` service cards.
+4. **Experience & Impact** — 3 centered metrics, hairline top rules, NO big
+   heading (just the eyebrow) — same as capability §4.
+5. **How We Think About It** — the 5 lenses are now EY image cards in ONE row
+   (`lg:grid-cols-5`): flush 4:3 image + title + one-line summary, numbers
+   removed. Added an `image` field to each `approach` item.
+6. **The Outcome** — kept as the dark `bg-black` signal band.
+7. **Client Results** — EY open cards (flush 16/9 image, industry meta, title,
+   "Read the case"); placeholder gradient case images swapped for real photos.
+8/9. Related Offerings (`ring-1` tiles) + dark closing CTA — the CTA lost its
+   `max-w-5xl` box so the two columns span the full width evenly.
+All pages: `bg-[#FEFEFE] text-black`, wide 1800px container, consistent
+`py-12 md:py-16 lg:py-20` (dark bands `py-16/20/24`), local `ease` + `Eyebrow`.
+Every data array, link, and section preserved.
+**Image gotcha:** many `/images/*-abstract.jpg` files are byte-identical dupes
+(`go-to-market`/`digital-venture`/`business-strategy` = same md5;
+`abstract-growth` = `growth-scaling`). ALWAYS md5-check before assigning a set
+of card images, or you get 3 identical cards. Solution SUBPAGES already run on
+the EY-redesigned ServiceDetail/CapabilityHub templates.
+
 ## 10. Rollout plan (agreed with user)
 
 Homepage = done (v3, live). Next: pick ONE capability page → apply the kit →

@@ -14,6 +14,10 @@ export interface SolutionHeroProps {
   subtitle?: string;
   /** Retained for API compatibility; the plain hero no longer renders a full-bleed image. */
   backgroundImage?: string;
+  /** Real photo rendered full-bleed with a left-directional light scrim (opt-in). */
+  heroImage?: string;
+  /** CSS background-position for heroImage (e.g. "70% 50%"). */
+  heroFocal?: string;
   primaryCta?: SolutionHeroCta;
   secondaryCta?: SolutionHeroCta;
   /** Optional override for the hero H1 className. Default is the neutral statement scale. */
@@ -35,6 +39,8 @@ export default function SolutionHero({
   eyebrow,
   title,
   subtitle,
+  heroImage,
+  heroFocal,
   primaryCta,
   secondaryCta,
   h1ClassName = "text-charcoal font-bold tracking-[-0.035em] leading-[1.0] text-[clamp(2.4rem,5.4vw,4.2rem)]",
@@ -42,12 +48,33 @@ export default function SolutionHero({
 }: SolutionHeroProps) {
   return (
     <section className="relative w-full bg-background overflow-hidden">
-      {/* Soft neutral atmosphere — a whisper of the signal warmth */}
-      <BrandMesh variant="light" />
-        <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(90deg, #F7F9FC 0%, rgba(247,249,252,0.6) 30%, rgba(247,249,252,0.05) 55%, transparent 70%)" }} />
+      {heroImage ? (
+        <>
+          {/* Real photo, full-bleed, with a left-directional light scrim so the
+              charcoal statement stays legible on the left column (EY style). */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0"
+            style={{
+              backgroundImage: `url(${heroImage})`,
+              backgroundSize: "cover",
+              backgroundPosition: heroFocal ?? "70% 50%",
+            }}
+          />
+          {/* Solid behind the text, then a clean fall-off so the right half of
+              the photo shows true — the scrim stops at the copy. */}
+          <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(90deg, #FEFEFE 0%, #FEFEFE 40%, rgba(254,254,254,0.7) 50%, rgba(254,254,254,0) 62%)" }} />
+        </>
+      ) : (
+        <>
+          {/* Soft neutral atmosphere — a whisper of the signal warmth */}
+          <BrandMesh variant="light" />
+          <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(90deg, #F7F9FC 0%, rgba(247,249,252,0.6) 30%, rgba(247,249,252,0.05) 55%, transparent 70%)" }} />
+        </>
+      )}
 
-      <div className="relative mx-auto max-w-[1400px] px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20">
-        <div className={`flex flex-col justify-center ${containerClassName} py-24 lg:py-28`}>
+      <div className="relative mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14">
+        <div className={`flex flex-col justify-center ${containerClassName} pt-36 pb-24 lg:pt-44 lg:pb-28`}>
           <motion.div variants={container} initial="hidden" animate="show" className="max-w-[920px]">
             {eyebrow && (
               <motion.div variants={rise} className="flex items-center gap-3 mb-7">

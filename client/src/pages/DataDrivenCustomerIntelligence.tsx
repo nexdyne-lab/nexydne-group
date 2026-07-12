@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { useState } from "react";
+import { ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SolutionHero from "@/components/SolutionHero";
@@ -12,6 +13,19 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+
+const ease = [0.22, 1, 0.36, 1] as const;
+
+function Eyebrow({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="flex items-center gap-3 mb-5">
+      <span className="block h-[3px] w-9 bg-primary" />
+      <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+        {children}
+      </span>
+    </div>
+  );
+}
 
 export default function DataDrivenCustomerIntelligence() {
   const [selectedIndustry, setSelectedIndustry] = useState("");
@@ -76,31 +90,36 @@ export default function DataDrivenCustomerIntelligence() {
     {
       title: "Unify Your Data Foundation",
       description:
-        "Break down silos between CRM, marketing, support, and sales. Create a single source of truth every team can access and trust.",
+        "Break down silos between CRM, marketing, support, and sales — one source of truth every team can trust.",
+      image: "/images/cloud-data-abstract.jpg",
       link: "/solutions/customer-intelligence/customer-data-platform",
     },
     {
       title: "Build Predictive Capabilities",
       description:
-        "Move from backward-looking reports to forward-looking predictions. Know which customers will churn, buy, or expand—before they do.",
+        "Move from backward-looking reports to forward-looking predictions — who will churn, buy, or expand.",
+      image: "/images/ai-neural-network.jpg",
       link: "/solutions/customer-intelligence/predictive-analytics-modeling",
     },
     {
       title: "Activate Across Channels",
       description:
-        "Turn insights into action. Deploy personalized experiences across email, web, mobile, and in-person touchpoints automatically.",
+        "Turn insight into action with personalized experiences across email, web, mobile, and in-person.",
+      image: "/images/ai-team-collaboration.jpg",
       link: "/solutions/customer-intelligence/personalization-strategy",
     },
     {
       title: "Measure and Optimize",
       description:
-        "Close the loop with rigorous measurement. Understand what's working, what's not, and continuously improve.",
+        "Close the loop with rigorous measurement — understand what works, and continuously improve.",
+      image: "/images/business-strategy-abstract.jpg",
       link: "/solutions/customer-intelligence/journey-analytics-optimization",
     },
     {
       title: "Embed Customer-Centric Operations",
       description:
-        "Align team incentives with customer outcome metrics. Build dashboards that surface insights, not just data.",
+        "Align team incentives with customer-outcome metrics and dashboards that surface insight, not noise.",
+      image: "/images/data-driven-culture.png",
       link: "/solutions/customer-intelligence/voice-of-customer",
     },
   ];
@@ -160,7 +179,7 @@ export default function DataDrivenCustomerIntelligence() {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans text-charcoal">
+    <div className="min-h-screen bg-[#FEFEFE] font-sans text-black selection:bg-primary selection:text-white">
       <SEO
         title="Data-Driven Customer Intelligence"
         description="Unlock deep customer insights through advanced analytics. Predict behavior and drive loyalty at scale."
@@ -168,111 +187,121 @@ export default function DataDrivenCustomerIntelligence() {
       />
       <Navigation />
 
-      {/* SLOT 1 — Charcoal hero */}
+      {/* SLOT 1 — Hero with real image */}
       <SolutionHero
         eyebrow="SOLUTION · DATA-DRIVEN CUSTOMER INTELLIGENCE"
         title="Data-Driven Customer Intelligence"
         subtitle="Know your customers. Predict their needs. Drive loyalty at scale through unified data, predictive models, and personalized experiences."
-        backgroundImage="/hero-consultant.efacd953.jpg"
+        heroImage="/images/ai-team-consulting.jpg"
+        heroFocal="70% 40%"
+        containerClassName="min-h-[64vh]"
         primaryCta={{ label: "Talk to an Expert", href: "/contact" }}
         secondaryCta={{ label: "See Client Results", href: "/cases" }}
       />
 
-      {/* SLOT 2 — White lead / editorial intro */}
-      <section className="bg-white py-24 md:py-32">
-        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="max-w-[72ch]"
-          >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Perspective
-            </span>
-            <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1] mb-10"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
+      {/* SLOT 2 — Our Perspective: editorial intro + image right */}
+      <section className="bg-[#FEFEFE]">
+        <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14 py-12 md:py-16 lg:py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-stretch">
+            <motion.div
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease }}
+              className="lg:col-span-7"
             >
-              Most mid-market companies sit on a goldmine of customer data
-              they can't access. We change that.
-            </h3>
-            <div className="space-y-6">
-              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                Information lives in disconnected systems—CRM here,
-                marketing automation there, support tickets somewhere else.
-                Teams make decisions on gut instinct instead of evidence, and
-                customers get generic experiences that don't reflect
-                their actual history with your company.
-              </p>
-              <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch]">
-                We've spent years helping companies like yours transform
-                scattered data into strategic advantage. The technology has
-                matured, costs have dropped, and competitive pressure has
-                intensified. Our{" "}
-                <Link
-                  href="/solutions/data-driven-customer-intelligence/insights/beyond-segmentation"
-                  className="text-primary hover:text-primary-hover transition-colors"
-                >
-                  customer intelligence consultants
-                </Link>{" "}
-                team with you to ship intelligence platforms that
-                continuously improve and deliver measurable ROI.
-              </p>
-            </div>
-          </motion.div>
+              <Eyebrow>Our Perspective</Eyebrow>
+              <h2 className="nx-h2 text-black mb-8 max-w-[22ch]">
+                Most mid-market companies sit on a goldmine of customer data they
+                can't access. We change that.
+              </h2>
+              <div className="space-y-6 max-w-[60ch]">
+                <p className="text-[1.05rem] md:text-[1.15rem] text-black/80 leading-[1.7]">
+                  The value is already yours — it's just scattered. CRM in one
+                  system, marketing automation in another, support tickets
+                  somewhere else. Teams decide on instinct instead of evidence,
+                  and customers get generic experiences that ignore everything
+                  you already know about them.
+                </p>
+                <p className="text-[1.05rem] md:text-[1.15rem] text-black/80 leading-[1.7]">
+                  We've spent years turning that scattered data into strategic
+                  advantage. The technology has matured, the costs have dropped,
+                  and the competitive pressure has not. Our{" "}
+                  <Link
+                    href="/solutions/data-driven-customer-intelligence/insights/beyond-segmentation"
+                    className="text-primary hover:text-primary-hover underline underline-offset-4 transition-colors"
+                  >
+                    customer intelligence consultants
+                  </Link>{" "}
+                  build platforms that keep learning — and deliver measurable
+                  ROI, not another dashboard nobody opens.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease, delay: 0.1 }}
+              className="lg:col-span-5"
+            >
+              <div className="h-64 sm:h-80 lg:h-full min-h-[340px] overflow-hidden ring-1 ring-black/10">
+                <img
+                  src="/images/insight-data-culture.jpg"
+                  alt="A team reviewing customer data together"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
-      {/* SLOT 3 — Light grey service grid (six sub-offerings) */}
-      <section className="bg-grey py-24 md:py-32">
-        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+      {/* SLOT 3 — How We Help: EY flat hairline cards */}
+      <section className="bg-[#FEFEFE]">
+        <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14 py-12 md:py-16 lg:py-20">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16 max-w-[60ch]"
+            transition={{ duration: 0.6, ease }}
+            className="mb-12 md:mb-14 max-w-4xl"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              How We Help Clients
-            </span>
-            <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
+            <Eyebrow>How We Help Clients</Eyebrow>
+            <h2 className="nx-h2 text-black mb-6">
               Six ways we turn data into customer outcomes.
-            </h3>
-            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+            </h2>
+            <p className="text-[1.05rem] md:text-[1.1rem] leading-[1.7] text-black/75 max-w-[62ch]">
               We combine technical expertise with business acumen to deliver
-              customer intelligence solutions that actually get
-              used—and actually drive results.
+              customer intelligence solutions that actually get used — and
+              actually drive results.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {services.map((service, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 18 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="bg-white"
+                transition={{ duration: 0.5, ease, delay: (i % 3) * 0.06 }}
               >
-                <Link href={service.link} className="block h-full group cursor-pointer">
-                  <div className="h-full p-8 lg:p-10 flex flex-col">
-                    <h3 className="text-xl text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
-                      {service.title}
-                    </h3>
-                    <p className="text-base text-charcoal/75 leading-[1.55] flex-1">
-                      {service.description}
-                    </p>
-                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
-                      Learn more
-                    </span>
-                  </div>
+                <Link
+                  href={service.link}
+                  className="group block bg-white p-8 lg:p-9 ring-1 ring-black/10 hover:ring-black/30 transition-shadow cursor-pointer h-full"
+                >
+                  <h3 className="nx-h3 text-black mb-3 leading-[1.25]">
+                    {service.title}
+                  </h3>
+                  <p className="text-base text-black/75 leading-[1.6] mb-6">
+                    {service.description}
+                  </p>
+                  <span className="inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.1em] text-black">
+                    Learn more
+                    <ArrowRight className="w-3.5 h-3.5 text-primary transition-transform duration-300 group-hover:translate-x-1" />
+                  </span>
                 </Link>
               </motion.div>
             ))}
@@ -280,46 +309,31 @@ export default function DataDrivenCustomerIntelligence() {
         </div>
       </section>
 
-      {/* SLOT 4 — White Outcome / Real Results stat cluster */}
-      <section className="bg-white py-24 md:py-32">
-        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+      {/* SLOT 4 — Experience & Impact: 3 centered metrics */}
+      <section className="bg-[#FEFEFE]">
+        <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14 py-12 md:py-16 lg:py-20">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16 max-w-[60ch]"
+            transition={{ duration: 0.6, ease }}
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Our Experience & Impact
-            </span>
-            <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
-              Measurable lift from real customer programs.
-            </h3>
+            <Eyebrow>Our Experience &amp; Impact</Eyebrow>
           </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0">
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-x-8 gap-y-12">
             {outcomes.map((item, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 18 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className={`${
-                  i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
-                }`}
+                transition={{ duration: 0.55, ease, delay: i * 0.06 }}
+                className="border-t border-black/15 pt-7 text-center"
               >
-                <div
-                  className="text-5xl md:text-6xl lg:text-7xl text-charcoal mb-5"
-                  style={{ fontWeight: 500, letterSpacing: "-0.03em" }}
-                >
+                <div className="text-[2.7rem] md:text-[3.6rem] text-black font-bold tracking-[-0.025em] leading-[1]">
                   {item.stat}
                 </div>
-                <div className="text-base text-charcoal/75 leading-[1.55] max-w-[30ch]">
+                <div className="text-[0.95rem] text-black/65 mt-4 leading-[1.5] max-w-[30ch] mx-auto">
                   {item.label}
                 </div>
               </motion.div>
@@ -328,56 +342,50 @@ export default function DataDrivenCustomerIntelligence() {
         </div>
       </section>
 
-      {/* SLOT 5 — Light grey Approach / Methodology framework */}
-      <section className="bg-grey py-24 md:py-32">
-        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+      {/* SLOT 5 — Framework: image cards, one row */}
+      <section className="bg-[#FEFEFE]">
+        <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14 py-12 md:py-16 lg:py-20">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16 max-w-[60ch]"
+            transition={{ duration: 0.6, ease }}
+            className="mb-12 md:mb-14 max-w-4xl"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              How We Think About It
-            </span>
-            <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
+            <Eyebrow>How We Think About It</Eyebrow>
+            <h2 className="nx-h2 text-black mb-6">
               The NexDyne Customer Intelligence Framework
-            </h3>
-            <p className="text-base md:text-lg text-charcoal/80 leading-[1.65] max-w-[60ch] mt-6">
+            </h2>
+            <p className="text-[1.05rem] md:text-[1.1rem] leading-[1.7] text-black/75 max-w-[62ch]">
               Five integrated pillars that transform scattered data into
               competitive advantage.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-10">
             {approach.map((lens, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 18 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="bg-white"
+                transition={{ duration: 0.5, ease, delay: i * 0.06 }}
               >
-                <Link href={lens.link} className="block h-full group cursor-pointer">
-                  <div className="h-full p-8 flex flex-col">
-                    <span className="text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <h3 className="text-base text-charcoal font-medium mb-4 leading-[1.25] group-hover:text-primary transition-colors">
-                      {lens.title}
-                    </h3>
-                    <p className="text-sm text-charcoal/75 leading-[1.55] flex-1">
-                      {lens.description}
-                    </p>
-                    <span className="mt-6 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
-                      Explore
-                    </span>
+                <Link href={lens.link} className="group block cursor-pointer">
+                  <div className="aspect-[4/3] overflow-hidden mb-5">
+                    <img
+                      src={lens.image}
+                      alt=""
+                      aria-hidden
+                      className="w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.04]"
+                    />
                   </div>
+                  <h3 className="text-[1.05rem] font-semibold text-black leading-[1.3] tracking-[-0.01em] mb-2 group-hover:text-primary transition-colors">
+                    {lens.title}
+                  </h3>
+                  <p className="text-[0.9rem] text-black/65 leading-[1.55]">
+                    {lens.description}
+                  </p>
                 </Link>
               </motion.div>
             ))}
@@ -385,95 +393,85 @@ export default function DataDrivenCustomerIntelligence() {
         </div>
       </section>
 
-      {/* SLOT 6 — ORANGE-RED SIGNAL SECTION (the single bg-primary moment) */}
-      <section className="bg-charcoal text-white nx-section">
-        <div className="px-6 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
+      {/* SLOT 6 — The Outcome (dark signal band) */}
+      <section className="bg-black text-white">
+        <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14 py-16 md:py-20 lg:py-24">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.6, ease }}
+            className="max-w-4xl"
           >
             <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
               The Outcome
             </span>
-            <h2
-              className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
-              Real loyalty, faster. NexDyne clients have lifted lifetime value
-              by 47% and identified at-risk customers 45 days before they
-              would have churned.
+            <h2 className="nx-h2 text-white mb-8 leading-[1.15]">
+              Real loyalty, faster. NexDyne clients have lifted lifetime value by
+              47% and identified at-risk customers 45 days before they would have
+              churned.
             </h2>
-            <p className="text-base md:text-lg text-white/85 leading-[1.65] max-w-[60ch] mb-8">
-              We've worked with banks, retailers, and healthcare
-              networks to deploy AI-powered prediction and
-              personalization—then move it from pilot to enterprise
-              standard.
+            <p className="text-[1.05rem] md:text-[1.12rem] text-white/85 leading-[1.7] max-w-[62ch] mb-9">
+              We've worked with banks, retailers, and healthcare networks to
+              deploy AI-powered prediction and personalization — then move it
+              from pilot to enterprise standard.
             </p>
             <Link href="/cases">
-              <span className="inline-flex items-center gap-2 bg-primary text-white text-[13px] font-semibold uppercase tracking-[0.1em] px-7 py-4 hover:bg-primary-hover transition-colors cursor-pointer">
+              <span className="group inline-flex items-center gap-2 bg-primary text-primary-foreground text-[13px] font-semibold uppercase tracking-[0.1em] px-7 py-4 hover:bg-primary-hover transition-colors cursor-pointer">
                 See How We Help Leaders Win
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </span>
             </Link>
           </motion.div>
         </div>
       </section>
 
-      {/* SLOT 7 — White Case studies / proof */}
-      <section className="bg-white py-24 md:py-32">
-        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+      {/* SLOT 7 — Client Results: EY open cards */}
+      <section className="bg-[#FEFEFE]">
+        <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14 py-12 md:py-16 lg:py-20">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16 max-w-[60ch]"
+            transition={{ duration: 0.6, ease }}
+            className="mb-12 md:mb-14 max-w-4xl"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Client Results
-            </span>
-            <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
+            <Eyebrow>Client Results</Eyebrow>
+            <h2 className="nx-h2 text-black">
               Customer intelligence, proved in outcomes.
-            </h3>
+            </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
             {cases.map((result, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 18 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
+                transition={{ duration: 0.5, ease, delay: (i % 3) * 0.06 }}
               >
                 <Link href={result.link} className="group block cursor-pointer">
-                  <div className="border border-charcoal/10 bg-white">
-                    <div className="aspect-[4/3] overflow-hidden">
-                      <img
-                        src={result.image}
-                        alt={result.title}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                      />
-                    </div>
-                    <div className="p-8 lg:p-10">
-                      <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
-                        {result.industry}
-                      </span>
-                      <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
-                        {result.title}
-                      </h3>
-                      <p className="text-base text-charcoal/75 leading-[1.55] mb-6">
-                        {result.description}
-                      </p>
-                      <span className="text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
-                        Read Case
-                      </span>
-                    </div>
+                  <div className="aspect-[16/9] overflow-hidden mb-6">
+                    <img
+                      src={result.image}
+                      alt={result.title}
+                      className="w-full h-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.03]"
+                    />
                   </div>
+                  <p className="text-[11px] uppercase tracking-[0.1em] text-black/60 mb-3">
+                    {result.industry}
+                  </p>
+                  <h3 className="text-[1.35rem] font-semibold text-black tracking-[-0.015em] leading-[1.3] mb-3 group-hover:text-primary transition-colors">
+                    {result.title}
+                  </h3>
+                  <p className="text-[0.98rem] text-black/70 leading-[1.6] mb-4 max-w-[52ch]">
+                    {result.description}
+                  </p>
+                  <span className="inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.1em] text-black">
+                    Read the case
+                    <ArrowRight className="w-3.5 h-3.5 text-primary transition-transform duration-300 group-hover:translate-x-1" />
+                  </span>
                 </Link>
               </motion.div>
             ))}
@@ -481,54 +479,48 @@ export default function DataDrivenCustomerIntelligence() {
 
           <div className="mt-14">
             <Link href="/solutions/data-driven-customer-intelligence/case-studies">
-              <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+              <span className="group inline-flex items-center gap-2 border border-black/40 px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.1em] text-black transition-colors hover:border-black hover:bg-black hover:text-white cursor-pointer">
                 See All Case Studies
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </span>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* SLOT 8 — White Related capabilities / cross-sell */}
-      <section className="bg-white py-24 md:py-32 border-t border-charcoal/10">
-        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
+      {/* SLOT 8 — Related Offerings: hairline cards */}
+      <section className="bg-[#FEFEFE]">
+        <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14 py-12 md:py-16 lg:py-20 border-t border-black/10">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-16 max-w-[60ch]"
+            transition={{ duration: 0.6, ease }}
+            className="mb-12 md:mb-14 max-w-4xl"
           >
-            <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-charcoal/60 mb-5">
-              Related Offerings
-            </span>
-            <h3
-              className="text-3xl md:text-4xl lg:text-5xl text-charcoal leading-[1.1]"
-              style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-            >
+            <Eyebrow>Related Offerings</Eyebrow>
+            <h2 className="nx-h2 text-black">
               Adjacent capabilities for a complete customer program.
-            </h3>
+            </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {relatedOfferings.map((offering, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 18 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="bg-white"
+                transition={{ duration: 0.5, ease, delay: (i % 3) * 0.06 }}
               >
-                <Link href={offering.link} className="block h-full group cursor-pointer">
-                  <div className="h-full p-8 lg:p-10 flex flex-col justify-between min-h-[200px]">
-                    <h3 className="text-xl text-charcoal font-medium leading-[1.25] group-hover:text-primary transition-colors">
-                      {offering.title}
-                    </h3>
-                    <span className="mt-8 text-[13px] uppercase tracking-[0.1em] text-primary group-hover:text-primary-hover transition-colors">
-                      Read More
-                    </span>
-                  </div>
+                <Link
+                  href={offering.link}
+                  className="group flex items-center justify-between gap-3 ring-1 ring-black/10 hover:ring-black/40 px-6 py-6 min-h-[104px] transition-shadow cursor-pointer h-full"
+                >
+                  <span className="text-[1.05rem] font-semibold text-black leading-[1.3] tracking-[-0.01em] group-hover:text-primary transition-colors">
+                    {offering.title}
+                  </span>
+                  <ArrowRight className="w-4 h-4 text-primary shrink-0 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
               </motion.div>
             ))}
@@ -536,27 +528,24 @@ export default function DataDrivenCustomerIntelligence() {
         </div>
       </section>
 
-      {/* SLOT 9 — Charcoal closing CTA "Ready to Talk?" */}
-      <section className="bg-charcoal text-white py-24 md:py-32">
-        <div className="container px-6 sm:px-8 md:px-12 lg:px-16">
-          <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+      {/* SLOT 9 — Closing CTA (dark) */}
+      <section className="bg-black text-white">
+        <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-10 lg:px-14 py-16 md:py-20 lg:py-24">
+          <div className="w-full">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 18 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.6, ease }}
               >
-                <span className="block text-[14px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-5">
+                <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-6">
                   Ready to Talk?
                 </span>
-                <h2
-                  className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-10"
-                  style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
-                >
+                <h2 className="nx-h2 text-white mb-10 leading-[1.12]">
                   Stop guessing about your customers. Start knowing.
                 </h2>
-                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-6 max-w-[52ch]">
+                <p className="text-[1.05rem] md:text-[1.12rem] text-white/80 leading-[1.7] mb-6 max-w-[52ch]">
                   I want to talk to your experts in:
                 </p>
                 <Select
@@ -571,7 +560,7 @@ export default function DataDrivenCustomerIntelligence() {
                       Financial Services
                     </SelectItem>
                     <SelectItem value="healthcare">Healthcare</SelectItem>
-                    <SelectItem value="retail">Retail & E-commerce</SelectItem>
+                    <SelectItem value="retail">Retail &amp; E-commerce</SelectItem>
                     <SelectItem value="manufacturing">Manufacturing</SelectItem>
                     <SelectItem value="professional-services">
                       Professional Services
@@ -583,15 +572,15 @@ export default function DataDrivenCustomerIntelligence() {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 18 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.1 }}
+                transition={{ duration: 0.6, ease, delay: 0.1 }}
               >
-                <p className="text-base md:text-lg text-white/80 leading-[1.65] mb-8 max-w-[52ch]">
+                <p className="text-[1.05rem] md:text-[1.12rem] text-white/80 leading-[1.7] mb-8 max-w-[52ch]">
                   We work with mid-market leaders ready to stop guessing about
-                  their customers and start knowing—through unified
-                  data, predictive models, and personalization at scale.
+                  their customers and start knowing — through unified data,
+                  predictive models, and personalization at scale.
                 </p>
                 <div className="space-y-5">
                   <input
@@ -602,8 +591,9 @@ export default function DataDrivenCustomerIntelligence() {
                     className="w-full bg-transparent border border-white/30 px-4 py-4 text-base text-white placeholder:text-white/50 focus:outline-none focus:border-white transition-colors"
                   />
                   <Link href="/contact">
-                    <span className="inline-block px-8 py-3 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold cursor-pointer">
+                    <span className="group inline-flex items-center gap-2 bg-primary text-primary-foreground hover:bg-primary-hover transition-colors text-[13px] uppercase tracking-[0.1em] font-semibold px-7 py-4 cursor-pointer">
                       Contact us
+                      <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                     </span>
                   </Link>
                 </div>
