@@ -294,17 +294,6 @@ function MegaMenu({
 // Order of drillable sections in the drawer master list.
 const drawerSections: Exclude<NavItem, null>[] = ["industries", "capabilities", "solutions", "insights", "about"];
 
-// Per-section brand accent (red / amber / purple / charcoal) — colours the
-// drawer dots, chevrons, and drilled-panel accents so the menu feels branded.
-const drawerAccent: Record<string, string> = {
-  industries: "#242424", // charcoal
-  capabilities: "#DE2F23", // signal red
-  solutions: "#FFB41D", // amber
-  insights: "#6F44A3", // purple
-  about: "#242424", // charcoal
-  careers: "#DE2F23", // signal red
-};
-
 // Utility links mirrored from the top UtilityBar (which is hidden on mobile),
 // shown below the divider in the drawer master list.
 const drawerUtilityLinks: { label: string; href: string }[] = [
@@ -322,13 +311,12 @@ function DrawerChildPanel({
   onNavigate: () => void;
 }) {
   const cfg = MENU[section];
-  const accent = drawerAccent[section] ?? "#DE2F23";
   const items: MenuLink[] = cfg.links ?? (cfg.groups ? cfg.groups.flatMap((g) => g.links) : []);
   return (
-    <div className="flex h-full flex-col" style={{ ["--accent" as string]: accent } as React.CSSProperties}>
+    <div className="flex h-full flex-col">
       <div className="flex-1 overflow-y-auto px-6 pb-10 pt-7">
-        {/* Branded accent + title */}
-        <span aria-hidden className="mb-4 block h-[3px] w-10 rounded-full" style={{ backgroundColor: accent }} />
+        {/* Single red signal accent + title */}
+        <span aria-hidden className="mb-4 block h-[3px] w-10 rounded-full bg-primary" />
         <h3 className="text-[1.5rem] font-bold tracking-[-0.02em] text-charcoal">{cfg.eyebrow}</h3>
         <p className="mb-5 mt-1.5 text-[13.5px] leading-[1.55] text-charcoal/50">{cfg.description}</p>
         <div className="flex flex-col">
@@ -337,10 +325,10 @@ function DrawerChildPanel({
               key={l.href}
               href={l.href}
               onClick={onNavigate}
-              className="group flex items-center justify-between gap-3 border-b border-border/40 py-3.5 text-[15px] font-medium text-charcoal/90 transition-colors hover:text-[color:var(--accent)]"
+              className="group flex items-center justify-between gap-3 border-b border-border/40 py-3.5 text-[15px] font-medium text-charcoal/90 transition-colors hover:text-primary"
             >
               <span>{l.label}</span>
-              <ArrowUpRight className="h-4 w-4 shrink-0 -translate-x-1 text-[color:var(--accent)] opacity-0 transition duration-200 group-hover:translate-x-0 group-hover:opacity-100" />
+              <ArrowUpRight className="h-4 w-4 shrink-0 -translate-x-1 text-primary opacity-0 transition duration-200 group-hover:translate-x-0 group-hover:opacity-100" />
             </Link>
           ))}
         </div>
@@ -348,7 +336,7 @@ function DrawerChildPanel({
           <Link
             href={cfg.viewAll.href}
             onClick={onNavigate}
-            className="mt-7 inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.12em] text-charcoal transition-colors hover:text-[color:var(--accent)]"
+            className="mt-7 inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.12em] text-charcoal transition-colors hover:text-primary"
           >
             {cfg.viewAll.label}
             <ArrowUpRight className="h-4 w-4" />
@@ -716,23 +704,19 @@ export default function Navigation() {
                     <button
                       key={s}
                       onClick={() => setDrawerSection(s)}
-                      style={{ ["--accent" as string]: drawerAccent[s] } as React.CSSProperties}
-                      className="group flex w-full items-center gap-3 rounded-lg px-3 py-3.5 text-left text-[17px] font-medium text-charcoal transition-colors hover:bg-subtle"
+                      className="group flex w-full items-center justify-between rounded-lg px-3 py-3.5 text-left text-[17px] font-medium text-charcoal transition-colors hover:bg-subtle hover:text-primary"
                     >
-                      <span aria-hidden className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ backgroundColor: drawerAccent[s] }} />
-                      <span className="flex-1">{MENU[s].eyebrow}</span>
-                      <ChevronRight className="h-5 w-5 text-charcoal/30 transition-all group-hover:translate-x-0.5 group-hover:text-[color:var(--accent)]" />
+                      {MENU[s].eyebrow}
+                      <ChevronRight className="h-5 w-5 text-charcoal/30 transition-all group-hover:translate-x-0.5 group-hover:text-primary" />
                     </button>
                   ))}
                   {/* Careers — direct link, no sub-panel */}
                   <Link
                     href="/careers"
                     onClick={handleNavigation}
-                    style={{ ["--accent" as string]: drawerAccent.careers } as React.CSSProperties}
-                    className="group flex w-full items-center gap-3 rounded-lg px-3 py-3.5 text-[17px] font-medium text-charcoal transition-colors hover:bg-subtle"
+                    className="flex w-full items-center rounded-lg px-3 py-3.5 text-[17px] font-medium text-charcoal transition-colors hover:bg-subtle hover:text-primary"
                   >
-                    <span aria-hidden className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ backgroundColor: drawerAccent.careers }} />
-                    <span className="flex-1">Careers</span>
+                    Careers
                   </Link>
                   {/* Utility links — mirrored from the top UtilityBar */}
                   <div className="mt-3 border-t border-border pt-3">
