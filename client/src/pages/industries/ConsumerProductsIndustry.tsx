@@ -41,7 +41,7 @@ export default function ConsumerProductsIndustry() {
       capabilities={[
         {
           name: "Customer Intelligence",
-          href: "/capabilities/customer-intelligence",
+          href: "/industries/consumer-products/customer-intelligence",
           blurb: "The consumer-data foundation, journey analytics, and AI personalization that turn attention into measurable revenue."
         },
         {

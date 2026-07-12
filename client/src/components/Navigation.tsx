@@ -140,7 +140,7 @@ const MENU: Record<Exclude<NavItem, null>, MenuConfig> = {
   solutions: {
     eyebrow: "Solutions",
     description: "Productised programs that move from strategy to measurable outcomes.",
-    // No Solutions overview page exists yet, so no "View all" link (avoids a 404).
+    viewAll: { label: "View all solutions", href: "/solutions" },
     links: solutionMajorLinks,
     feature: {
       eyebrow: "Featured solution",

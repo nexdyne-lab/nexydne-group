@@ -8,6 +8,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import NotFound from "@/pages/NotFound";
 import Home from "./pages/Home";
 import Capabilities from "@/pages/Capabilities";
+import Solutions from "@/pages/Solutions";
 import ArtificialIntelligence from "@/pages/capabilities/ArtificialIntelligence";
 import InternetOfThings from "@/pages/capabilities/IoT";
 import DigitalTwins from "@/pages/capabilities/DigitalTwins";
@@ -787,6 +788,7 @@ import RetailIndustry from "./pages/industries/RetailIndustry";
 import AerospaceDefenseIndustry from "./pages/industries/AerospaceDefenseIndustry";
 import AutomotiveIndustry from "./pages/industries/AutomotiveIndustry";
 import ConsumerProductsIndustry from "./pages/industries/ConsumerProductsIndustry";
+import ConsumerProductsCustomerIntelligence from "./pages/industries/consumer-products/CustomerIntelligence";
 import EducationIndustry from "./pages/industries/EducationIndustry";
 import EnergyUtilitiesIndustry from "./pages/industries/EnergyUtilitiesIndustry";
 import InsuranceIndustry from "./pages/industries/InsuranceIndustry";
@@ -971,6 +973,7 @@ function Router() {
         <Route path="/capabilities/artificial-intelligence/responsible-ai" component={ResponsibleAI} />
         <Route path="/capabilities/artificial-intelligence/modernize-legacy" component={ModernizeLegacy} />
         <Route path="/capabilities/artificial-intelligence/scale-ai" component={ScaleAI} />
+        <Route path="/solutions" component={Solutions} />
         <Route path={"/solutions/intelligent-process-optimization"} component={IntelligentProcessOptimization} />
         <Route path={"/solutions/intelligent-process-optimization/insights"} component={ProcessOptimizationInsights} />
         <Route path={"/solutions/intelligent-process-optimization/case-studies"} component={ProcessOptimizationCaseStudies} />
@@ -1486,6 +1489,7 @@ function Router() {
         <Route path="/industries/retail" component={RetailIndustry} />
         <Route path="/industries/aerospace-defense" component={AerospaceDefenseIndustry} />
         <Route path="/industries/automotive" component={AutomotiveIndustry} />
+        <Route path="/industries/consumer-products/customer-intelligence" component={ConsumerProductsCustomerIntelligence} />
         <Route path="/industries/consumer-products" component={ConsumerProductsIndustry} />
         <Route path="/industries/education" component={EducationIndustry} />
         <Route path="/industries/energy-utilities" component={EnergyUtilitiesIndustry} />
