@@ -784,6 +784,10 @@ import AITechChangeManagement from "./pages/insights/ChangeManagementAISuccess";
 import ManufacturingIndustry from "./pages/industries/ManufacturingIndustry";
 import HealthcareIndustry from "./pages/industries/HealthcareIndustry";
 import FinancialServicesIndustry from "./pages/industries/FinancialServicesIndustry";
+import FinancialServicesCustomerGrowthStrategy from "./pages/industries/financial-services/CustomerGrowthStrategy";
+import FinancialServicesDigitalDataTransformation from "./pages/industries/financial-services/DigitalDataTransformation";
+import FinancialServicesRiskComplianceResilience from "./pages/industries/financial-services/RiskComplianceResilience";
+import FinancialServicesPricingRevenueManagement from "./pages/industries/financial-services/PricingRevenueManagement";
 import RetailIndustry from "./pages/industries/RetailIndustry";
 import AerospaceDefenseIndustry from "./pages/industries/AerospaceDefenseIndustry";
 import AutomotiveIndustry from "./pages/industries/AutomotiveIndustry";
@@ -1488,6 +1492,10 @@ function Router() {
         <Route path="/industries" component={Industries} />
         <Route path="/industries/manufacturing" component={ManufacturingIndustry} />
         <Route path="/industries/healthcare" component={HealthcareIndustry} />
+        <Route path="/industries/financial-services/customer-growth-strategy" component={FinancialServicesCustomerGrowthStrategy} />
+        <Route path="/industries/financial-services/digital-data-transformation" component={FinancialServicesDigitalDataTransformation} />
+        <Route path="/industries/financial-services/risk-compliance-resilience" component={FinancialServicesRiskComplianceResilience} />
+        <Route path="/industries/financial-services/pricing-revenue-management" component={FinancialServicesPricingRevenueManagement} />
         <Route path="/industries/financial-services" component={FinancialServicesIndustry} />
         <Route path="/industries/retail" component={RetailIndustry} />
         <Route path="/industries/aerospace-defense" component={AerospaceDefenseIndustry} />

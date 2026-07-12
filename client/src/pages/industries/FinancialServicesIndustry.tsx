@@ -42,22 +42,22 @@ export default function FinancialServicesIndustry() {
       capabilities={[
         {
           name: "Customer & Growth Strategy",
-          href: "/capabilities/strategy-growth",
+          href: "/industries/financial-services/customer-growth-strategy",
           blurb: "Map what drives customer choice in each category so you can build advantaged, demand-centric growth positions."
         },
         {
           name: "Digital & Data Transformation",
-          href: "/capabilities/data-transformation",
+          href: "/industries/financial-services/digital-data-transformation",
           blurb: "Integrate digital tools, fintech partners, and new talent to drive measurable results — including AI personalization at scale."
         },
         {
           name: "Risk, Compliance & Resilience",
-          href: "/capabilities/risk-resilience",
+          href: "/industries/financial-services/risk-compliance-resilience",
           blurb: "Rewire risk and compliance with automated controls and model-risk frameworks so the business can move faster."
         },
         {
           name: "Pricing & Revenue Management",
-          href: "/capabilities/pricing-revenue",
+          href: "/industries/financial-services/pricing-revenue-management",
           blurb: "Fund margin improvement through portfolio, fee-structure, and dynamic pricing tuned to demand and competition."
         }
       ]}
