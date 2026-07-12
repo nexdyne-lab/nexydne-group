@@ -76,7 +76,7 @@ export function SpotlightStories() {
           </h2>
         </div>
 
-        {/* Four-card row — EY "Our team" pattern: photo + overlapping dark caption box */}
+        {/* Four-card row — clean image + title/description below (no overlay) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
           {stories.map((s, i) => (
             <motion.div
@@ -87,24 +87,22 @@ export function SpotlightStories() {
               transition={{ duration: 0.6, ease, delay: (i % 4) * 0.07 }}
             >
               <Link href={s.href}>
-                <article className="group cursor-pointer focus-within:outline-2 focus-within:outline-primary">
-                  {/* Photo — placeholder for now (images finalised later) */}
-                  <div className="overflow-hidden">
+                <article className="group cursor-pointer">
+                  <div className="overflow-hidden rounded-xl">
                     <img
                       src={s.image}
                       alt=""
                       aria-hidden
-                      className="w-full aspect-[4/3] object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-[1.04]"
+                      className="w-full aspect-[5/4] object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-[1.04]"
                     />
                   </div>
-                  {/* Caption box — overlaps the photo bottom, extends below */}
-                  <div className="relative -mt-16 bg-[#242424] px-6 py-6 lg:px-7 lg:py-7">
-                    <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-amber">
-                      {s.tab}
-                    </span>
-                    <h3 className="mt-3 text-white font-semibold leading-[1.24] tracking-[-0.015em] text-[1.15rem] lg:text-[1.25rem] line-clamp-3">
+                  <div className="pt-5">
+                    <h3 className="text-charcoal font-semibold leading-[1.25] tracking-[-0.015em] text-[1.2rem] lg:text-[1.35rem] line-clamp-2">
                       {s.title}
                     </h3>
+                    <p className="mt-3 text-[0.95rem] leading-[1.6] text-muted-foreground line-clamp-2">
+                      {s.summary}
+                    </p>
                   </div>
                 </article>
               </Link>
