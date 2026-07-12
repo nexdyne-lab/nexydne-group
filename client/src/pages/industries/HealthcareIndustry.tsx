@@ -41,22 +41,22 @@ export default function HealthcareIndustry() {
       capabilities={[
         {
           name: "Operations Excellence",
-          href: "/capabilities/operations-excellence",
+          href: "/industries/healthcare/operations-excellence",
           blurb: "AI-assisted documentation, intelligent scheduling, and revenue-cycle automation that free capacity for care."
         },
         {
           name: "Data Transformation",
-          href: "/capabilities/data-transformation",
+          href: "/industries/healthcare/data-transformation",
           blurb: "Unify EHR, claims, and operational data into one longitudinal record that powers population health and clinical AI."
         },
         {
           name: "Customer Intelligence",
-          href: "/capabilities/customer-intelligence",
+          href: "/industries/healthcare/customer-intelligence",
           blurb: "Engineer the patient and member experience — digital front door to post-visit — with journey-level personalization."
         },
         {
           name: "Risk & Resilience",
-          href: "/capabilities/risk-resilience",
+          href: "/industries/healthcare/risk-resilience",
           blurb: "The model-risk, clinical-AI governance, and cyber-resilience controls regulators and accreditors increasingly expect."
         }
       ]}

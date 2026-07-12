@@ -787,6 +787,10 @@ import ManufacturingDataTransformation from "./pages/industries/manufacturing/Da
 import ManufacturingStrategyGrowth from "./pages/industries/manufacturing/StrategyGrowth";
 import ManufacturingRiskResilience from "./pages/industries/manufacturing/RiskResilience";
 import HealthcareIndustry from "./pages/industries/HealthcareIndustry";
+import HealthcareCustomerIntelligence from "./pages/industries/healthcare/CustomerIntelligence";
+import HealthcareOperationsExcellence from "./pages/industries/healthcare/OperationsExcellence";
+import HealthcareDataTransformation from "./pages/industries/healthcare/DataTransformation";
+import HealthcareRiskResilience from "./pages/industries/healthcare/RiskResilience";
 import FinancialServicesIndustry from "./pages/industries/FinancialServicesIndustry";
 import FinancialServicesCustomerGrowthStrategy from "./pages/industries/financial-services/CustomerGrowthStrategy";
 import FinancialServicesDigitalDataTransformation from "./pages/industries/financial-services/DigitalDataTransformation";
@@ -1503,6 +1507,10 @@ function Router() {
         <Route path="/industries/manufacturing/strategy-growth" component={ManufacturingStrategyGrowth} />
         <Route path="/industries/manufacturing/risk-resilience" component={ManufacturingRiskResilience} />
         <Route path="/industries/manufacturing" component={ManufacturingIndustry} />
+        <Route path="/industries/healthcare/customer-intelligence" component={HealthcareCustomerIntelligence} />
+        <Route path="/industries/healthcare/operations-excellence" component={HealthcareOperationsExcellence} />
+        <Route path="/industries/healthcare/data-transformation" component={HealthcareDataTransformation} />
+        <Route path="/industries/healthcare/risk-resilience" component={HealthcareRiskResilience} />
         <Route path="/industries/healthcare" component={HealthcareIndustry} />
         <Route path="/industries/financial-services/customer-growth-strategy" component={FinancialServicesCustomerGrowthStrategy} />
         <Route path="/industries/financial-services/digital-data-transformation" component={FinancialServicesDigitalDataTransformation} />
