@@ -41,22 +41,22 @@ export default function RetailIndustry() {
       capabilities={[
         {
           name: "Customer Intelligence",
-          href: "/capabilities/customer-intelligence",
+          href: "/industries/retail/customer-intelligence",
           blurb: "The customer-data foundation, journey analytics, and AI personalization that turn first-party data into measurable lift."
         },
         {
           name: "Pricing & Revenue Management",
-          href: "/capabilities/pricing-revenue",
+          href: "/industries/retail/pricing-revenue-management",
           blurb: "Pricing, promotion, and markdown decisions with the tooling needed to protect margin in a volatile market."
         },
         {
           name: "Operations Excellence",
-          href: "/capabilities/operations-excellence",
+          href: "/industries/retail/operations-excellence",
           blurb: "Transform store, fulfillment, and supply-chain operations with intelligent allocation and last-mile redesign."
         },
         {
           name: "Data Transformation",
-          href: "/capabilities/data-transformation",
+          href: "/industries/retail/data-transformation",
           blurb: "Unify commerce, marketing, and supply-chain data into one platform for the next generation of AI use cases."
         }
       ]}

@@ -789,6 +789,10 @@ import FinancialServicesDigitalDataTransformation from "./pages/industries/finan
 import FinancialServicesRiskComplianceResilience from "./pages/industries/financial-services/RiskComplianceResilience";
 import FinancialServicesPricingRevenueManagement from "./pages/industries/financial-services/PricingRevenueManagement";
 import RetailIndustry from "./pages/industries/RetailIndustry";
+import RetailCustomerIntelligence from "./pages/industries/retail/CustomerIntelligence";
+import RetailPricingRevenueManagement from "./pages/industries/retail/PricingRevenueManagement";
+import RetailOperationsExcellence from "./pages/industries/retail/OperationsExcellence";
+import RetailDataTransformation from "./pages/industries/retail/DataTransformation";
 import AerospaceDefenseIndustry from "./pages/industries/AerospaceDefenseIndustry";
 import AutomotiveIndustry from "./pages/industries/AutomotiveIndustry";
 import ConsumerProductsIndustry from "./pages/industries/ConsumerProductsIndustry";
@@ -1497,6 +1501,10 @@ function Router() {
         <Route path="/industries/financial-services/risk-compliance-resilience" component={FinancialServicesRiskComplianceResilience} />
         <Route path="/industries/financial-services/pricing-revenue-management" component={FinancialServicesPricingRevenueManagement} />
         <Route path="/industries/financial-services" component={FinancialServicesIndustry} />
+        <Route path="/industries/retail/customer-intelligence" component={RetailCustomerIntelligence} />
+        <Route path="/industries/retail/pricing-revenue-management" component={RetailPricingRevenueManagement} />
+        <Route path="/industries/retail/operations-excellence" component={RetailOperationsExcellence} />
+        <Route path="/industries/retail/data-transformation" component={RetailDataTransformation} />
         <Route path="/industries/retail" component={RetailIndustry} />
         <Route path="/industries/aerospace-defense" component={AerospaceDefenseIndustry} />
         <Route path="/industries/automotive" component={AutomotiveIndustry} />

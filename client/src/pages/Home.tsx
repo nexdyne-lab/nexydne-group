@@ -147,37 +147,38 @@ export default function Home() {
 
       {/* 4. Explore our expertise — wayfinding directory + talk-to-expert,
           placed after the offer so it serves visitors ready to self-direct */}
-      <section className="relative nx-surface-ember nx-section overflow-hidden">
+      <section className="relative bg-black text-white nx-section overflow-hidden">
+        {/* Subtle warmth — a faint amber glow top-right, quiet white bottom-left */}
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "radial-gradient(46% 60% at 100% 0%, rgba(255,255,255,0.07) 0%, transparent 55%)," +
-              "radial-gradient(44% 58% at 0% 100%, rgba(58,16,6,0.22) 0%, transparent 58%)",
+              "radial-gradient(46% 60% at 100% 0%, rgba(255,180,29,0.08) 0%, transparent 55%)," +
+              "radial-gradient(44% 58% at 0% 100%, rgba(255,255,255,0.03) 0%, transparent 58%)",
           }}
         />
         <div className="nx-band relative">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
             {/* Left — 40%: statement + tab-aware CTA (the journey endpoint) */}
             <div className="lg:col-span-5">
-              <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-[#FFE3D8] mb-6">
+              <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-[#FFB41D] mb-6">
                 How Can We Assist You Today?
               </span>
               <h2 className="nx-h2 text-white mb-6">
                 Explore our core areas of expertise.
               </h2>
-              <p className="text-base md:text-lg text-[#FFE3D8] leading-[1.7] max-w-[48ch]">
+              <p className="text-base md:text-lg text-white/70 leading-[1.7] max-w-[48ch]">
                 Pick a topic on the right — or start from the full picture.
               </p>
               <div className="mt-9 flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8">
                 <Link href={solutionsTab === "capabilities" ? "/capabilities" : "/industries"}>
-                  <span className="inline-block px-6 py-3 bg-white text-[#CC2A1E] text-[13px] uppercase tracking-[0.1em] font-semibold hover:bg-[#FFE3D8] transition-colors cursor-pointer">
+                  <span className="inline-block px-6 py-3 bg-white text-charcoal text-[13px] uppercase tracking-[0.1em] font-semibold hover:bg-white/90 transition-colors cursor-pointer">
                     {solutionsTab === "capabilities" ? "All capabilities" : "All industries"}
                   </span>
                 </Link>
                 <Link href="/contact">
-                  <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/50 hover:border-white pb-1 transition-colors cursor-pointer">
+                  <span className="text-[13px] font-semibold uppercase tracking-[0.1em] text-white border-b border-white/40 hover:border-[#FFB41D] hover:text-[#FFB41D] pb-1 transition-colors cursor-pointer">
                     Talk to an expert
                   </span>
                 </Link>
@@ -186,23 +187,23 @@ export default function Home() {
 
             {/* Right — 60% */}
             <div className="lg:col-span-7">
-              {/* Flat underline tab bar — bigger targets, unmissable active state */}
-              <div role="tablist" className="flex items-end gap-9 border-b border-white/25 mb-10">
+              {/* Flat underline tab bar — active state gets the amber accent */}
+              <div role="tablist" className="flex items-end gap-9 border-b border-white/20 mb-10">
                 {(["capabilities", "industries"] as const).map((tab) => (
                   <button
                     key={tab}
                     role="tab"
                     aria-selected={solutionsTab === tab}
                     onClick={() => setSolutionsTab(tab)}
-                    className={`relative pb-4 text-[14px] font-semibold uppercase tracking-[0.1em] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-white ${
+                    className={`relative pb-4 text-[14px] font-semibold uppercase tracking-[0.1em] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#FFB41D] ${
                       solutionsTab === tab
                         ? "text-white"
-                        : "text-[#FFE3D8]/75 hover:text-white"
+                        : "text-white/55 hover:text-white"
                     }`}
                   >
                     {tab === "capabilities" ? "Capabilities" : "Industries"}
                     {solutionsTab === tab && (
-                      <span className="absolute left-0 right-0 -bottom-px h-[3px] bg-white" />
+                      <span className="absolute left-0 right-0 -bottom-px h-[3px] bg-[#FFB41D]" />
                     )}
                   </button>
                 ))}
@@ -218,9 +219,9 @@ export default function Home() {
               >
                 {(solutionsTab === "capabilities" ? capabilities : industries).map((item) => (
                   <Link key={item.id} href={item.link}>
-                    <span className="flex items-center justify-between text-base text-white border-b border-white/20 py-4 cursor-pointer group">
-                      <span className="group-hover:underline underline-offset-4">{item.title}</span>
-                      <span className="text-white/50 group-hover:text-white group-hover:translate-x-1 transition-transform duration-300 text-sm">
+                    <span className="flex items-center justify-between text-base text-white border-b border-white/15 py-4 cursor-pointer group">
+                      <span className="transition-colors group-hover:text-[#FFB41D]">{item.title}</span>
+                      <span className="text-white/40 group-hover:text-[#FFB41D] group-hover:translate-x-1 transition-all duration-300 text-sm">
                         →
                       </span>
                     </span>
