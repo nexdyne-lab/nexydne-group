@@ -228,25 +228,18 @@ function FeatureCard({ feature, onNavigate }: { feature: MenuFeature; onNavigate
     <Link
       href={feature.href}
       onClick={onNavigate}
-      className="group relative flex h-full min-h-[220px] flex-col overflow-hidden rounded-lg bg-charcoal p-7 text-white"
+      className="group relative flex h-full min-h-[220px] flex-col overflow-hidden rounded-lg border border-white/10 p-7 text-white transition-colors"
+      style={{ backgroundColor: "#1b1b1b" }}
     >
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.10]"
-        style={{ backgroundImage: "url('/brand/pattern-orange.svg')", backgroundSize: "200px", backgroundRepeat: "repeat" }}
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{ backgroundImage: "radial-gradient(120% 100% at 100% 100%, rgba(224,76,44,0.35) 0%, transparent 55%)" }}
-      />
+      {/* single signal accent — thin orange top rule */}
+      <span aria-hidden className="absolute inset-x-0 top-0 h-[3px]" style={{ backgroundColor: "#DE2F23" }} />
       <div className="relative flex h-full flex-col">
-        <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-amber">{feature.eyebrow}</span>
+        <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#DE2F23]">{feature.eyebrow}</span>
         <h4 className="mt-3 text-[1.35rem] font-bold leading-[1.18] tracking-[-0.02em]">{feature.title}</h4>
-        <p className="mt-3 text-sm leading-[1.6] text-white/70">{feature.desc}</p>
-        <span className="mt-auto inline-flex items-center gap-2 pt-6 text-[13px] font-semibold uppercase tracking-[0.1em] text-white transition-colors group-hover:text-amber">
+        <p className="mt-3 text-sm leading-[1.6] text-white/60">{feature.desc}</p>
+        <span className="mt-auto inline-flex items-center gap-2 pt-6 text-[13px] font-semibold uppercase tracking-[0.1em] text-white/90 transition-colors group-hover:text-white">
           {feature.cta}
-          <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+          <ArrowUpRight className="h-4 w-4 text-[#DE2F23] transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
         </span>
       </div>
     </Link>
