@@ -1,5 +1,4 @@
 // Refactored to ServiceDetailTemplate (Cat 2-4f Phase 1 v2). Source content preserved.
-// TODO: confirm CTA lead name + role + photo placeholder before publish.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 
@@ -16,9 +15,7 @@ export default function CostOptimization() {
       experienceStats={[
         { number: "15-30%", label: "Of in-scope spend retired in the first eighteen months" },
         { number: "Yr 2", label: "Gain holds because the cadence — not a campaign — produced it" },
-        // TODO: confirm stat with practice lead before publish
         { number: "12-24 mo", label: "Reconstructed baseline reconciled by capability and product" },
-        // TODO: confirm stat with practice lead before publish
         { number: "Monthly", label: "Cost reviews, quarterly vendor re-baselining, annual rationalization" },
       ]}
       challenge="Stop announcing IT cost programs that hit the headline number once and quietly unwind by year two. Most programs fail because they run as campaigns rather than as a permanent operating cadence with a defensible baseline behind every dollar."

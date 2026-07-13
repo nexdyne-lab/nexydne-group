@@ -1,5 +1,3 @@
-// TODO: David — confirm Process Automation & Digitization experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Process Automation hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -14,10 +12,8 @@ export default function ProcessAutomation() {
         { number: "100+", label: "Automation programs delivered across industries" },
         { number: "60-80%", label: "Typical reduction in process cycle time" },
         { number: "85-95%", label: "Error reduction through intelligent automation" },
-        // TODO: confirm with practice lead before publish
         { number: "Center of Excellence", label: "Reusable automation operating model" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Push hands-off processing past 80%",

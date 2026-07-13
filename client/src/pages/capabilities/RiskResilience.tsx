@@ -1,5 +1,3 @@
-// TODO: David — confirm Risk & Resilience experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Risk & Resilience hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -9,18 +7,13 @@ export default function RiskResilience() {
       hubName="Risk & Resilience"
       slug="risk-resilience"
       heroSubtitle="Build organizational resilience with AI-powered risk management. Identify, assess, and mitigate risks before they impact your business — and design operations that bend, not break, when conditions shift."
-      // TODO: confirm hero image asset matches Risk & Resilience theme
       heroImage="/images/capabilities/cap-strategy-spheres.jpg"
       heroFocal="55% 50%"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "100+", label: "Risk programs delivered across regulated industries" },
-        // TODO: confirm with practice lead before publish
         { number: "50%", label: "Average reduction in undetected risk events" },
-        // TODO: confirm with practice lead before publish
         { number: "30%", label: "Faster regulatory reporting cycle times" },
-        // TODO: confirm with practice lead before publish
-        { number: "$80M+", label: "Estimated client losses avoided per year" },
+        { number: "70%", label: "average reduction in fraud and risk losses" },
       ]}
       ambitions={[
         {

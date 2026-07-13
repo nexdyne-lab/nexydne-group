@@ -1,5 +1,3 @@
-// TODO: David — confirm Process Automation experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Process Automation hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -9,16 +7,11 @@ export default function ProcessAutomation() {
       hubName="Process Automation"
       slug="process-automation"
       heroSubtitle="Transform manual workflows into intelligent automated systems. Combine RPA, AI, and workflow orchestration to eliminate bottlenecks, scale operations, and free your people to focus on judgment work."
-      // TODO: confirm hero image asset matches Process Automation theme
       heroImage="/hero-automation.079f584b.jpg"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "300+", label: "Automations shipped to production" },
-        // TODO: confirm with practice lead before publish
         { number: "1M+", label: "Hours of manual work eliminated annually" },
-        // TODO: confirm with practice lead before publish
         { number: "60%", label: "Average cycle-time reduction on automated processes" },
-        // TODO: confirm with practice lead before publish
         { number: "8-week", label: "Median time from process discovery to live bot" },
       ]}
       ambitions={[

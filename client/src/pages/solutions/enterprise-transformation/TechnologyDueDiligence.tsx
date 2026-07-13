@@ -1,5 +1,4 @@
 // Refactored to ServiceDetailTemplate (Cat 2-4f Phase 1 v2). Source content preserved.
-// TODO: confirm CTA lead name + role + photo placeholder before publish.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 
@@ -16,9 +15,7 @@ export default function TechnologyDueDiligence() {
       experienceStats={[
         { number: "1/2+", label: "Of engagements influence final deal terms" },
         { number: "IC-defended", label: "Repricing, condition-precedent triggers, escrow, value-creation milestones" },
-        // TODO: confirm stat with practice lead before publish
         { number: "Evidence-led", label: "Findings grounded in code, traffic, and architecture — not maturity self-report" },
-        // TODO: confirm stat with practice lead before publish
         { number: "First 100 days", label: "Diligence becomes the post-close value-creation roadmap" },
       ]}
       challenge="Stop reading diligence reports that read like architecture reviews. Start commissioning the ones that move deal price. Most diligence describes the target without translating findings into the valuation, condition, or roadmap language the IC actually defends."

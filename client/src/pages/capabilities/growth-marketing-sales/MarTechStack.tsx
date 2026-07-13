@@ -1,6 +1,3 @@
-// TODO: David — confirm MarTech Stack experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the MarTech Stack hub.
-// TODO: confirm ambition copy with practice lead before publish
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -19,7 +16,6 @@ export default function MarTechStack() {
         { number: "3x", label: "improvement in marketing team productivity" },
         { number: "Senior-led", label: "Every engagement led by a partner with deep practitioner experience" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Sharpen the martech stack thesis",

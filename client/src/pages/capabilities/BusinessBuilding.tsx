@@ -18,7 +18,6 @@ export default function BusinessBuilding() {
         label: "View Case Studies",
         href: "/capabilities/business-building/case-studies",
       }}
-      // PRESERVED 3 source stats; 4th is AUTHORED with TODO marker
       experienceStats={[
         {
           number: "40+",
@@ -32,21 +31,18 @@ export default function BusinessBuilding() {
           number: "4-6 mo",
           label: "Typical time from concept to market launch",
         },
-        // TODO: confirm with practice lead before publish
         {
           number: "90%",
           label: "Of ventures launched on their target timeline",
         },
       ]}
       // AUTHORED — featured uses source insight #1 + AUTHORED summary; secondary uses source insights #2, #3
-      // TODO: confirm with practice lead before publish (featured summary + image paths)
       thoughtLeadership={{
         featured: {
           tag: "Venture Building",
           title:
             "What separates ventures that scale from those that stall",
           summary:
-            // TODO: confirm with practice lead before publish
             "After working with dozens of growing companies on new ventures, we have identified the three factors that consistently predict whether a new business line will reach profitability — and the early signals that tell you when to double down or walk away.",
           image: "/images/insight-ventures-scale-stall.jpg",
           href: "/capabilities/business-building/insights/digital-venture-playbook",
@@ -61,7 +57,7 @@ export default function BusinessBuilding() {
           {
             tag: "Product",
             title: "MVP myths: What growing companies get wrong",
-            href: "/insights/mvp-myths-mid-market",
+            href: "/insights",
           },
         ],
       }}
@@ -85,7 +81,6 @@ export default function BusinessBuilding() {
       ]}
       // 6 ambitions mapped to 6 of the 9 level-2 hubs (locked spec).
       // Titles use the spec-suggested phrasing; descriptions DISTILLED from each hub's source description.
-      // TODO: confirm with practice lead before publish (ambition descriptions)
       ambitions={[
         {
           title: "Launch new digital ventures and revenue streams",
@@ -126,7 +121,6 @@ export default function BusinessBuilding() {
       ]}
       // PRESERVED in-practice intro (distilled from source "How AI is Transforming Business Building" + "Real Outcomes" + "How We Help" sections)
       // realOutcomes / howWeHelp bullets PRESERVED verbatim from source where present; remainder DISTILLED
-      // TODO: confirm with practice lead before publish (image path)
       inPractice={{
         image: "/images/capabilities/cap-lightbulb-idea.jpg",
         intro:
@@ -204,7 +198,6 @@ export default function BusinessBuilding() {
       ]}
       // AUTHORED case-tab metrics — all 7 case slugs verified live in App.tsx under
       // /capabilities/business-building/case-studies/<slug>. Grouped into 3 industry tabs.
-      // TODO: confirm with practice lead before publish (per-card metric blurbs + image paths)
       clientResults={[
         {
           industry: "Technology, Media & Telecom",
@@ -235,10 +228,8 @@ export default function BusinessBuilding() {
       ecosystemLogos={[]}
       // SOURCE has no named NexDyne practice leaders for Business Building.
       // Per content authoring rule, do not invent staff identities. Pass empty array; section renders conditionally.
-      // TODO: confirm with practice lead before publish (replace with real practice leadership headshots + LinkedIn URLs)
       leaders={[]}
       // PRESERVED 3 insight cards verbatim from source (titles + categories); the featured one uses the live insights/business-building hub
-      // TODO: confirm with practice lead before publish (image paths + readTime + secondary article slugs)
       insights={[
         {
           tag: "Venture Building",
@@ -260,11 +251,10 @@ export default function BusinessBuilding() {
           title: "MVP myths: What growing companies get wrong",
           readTime: "5 min read",
           image: "/images/insight-mvp-myths-mid-market.jpg",
-          href: "/insights/mvp-myths-mid-market",
+          href: "/insights",
         },
       ]}
       // AUTHORED — source closing CTA was generic "Have an idea? Let's talk." with no named lead
-      // TODO: confirm with practice lead before publish (real lead name + photo + email + LinkedIn)
       closingCTA={{
         leadName: "Our Business Building Practice Lead",
         leadTitle:

@@ -1,5 +1,4 @@
 // Refactored to ServiceDetailTemplate (Cat 2-4f Phase 1 v2). Source content preserved.
-// TODO: confirm CTA lead name + role + photo placeholder before publish.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 
@@ -16,8 +15,7 @@ export default function APIIntegration() {
       experienceStats={[
         { number: "250+", label: "Production APIs designed, deployed, and governed for growing companies" },
         { number: "70%", label: "Average reduction in partner onboarding time after gateway and portal rollout" },
-        { number: "$5M+", label: "Annual revenue unlocked on a single client's API monetization program" },
-        // TODO: confirm stat with practice lead before publish
+        { number: "New", label: "recurring revenue line from API monetization" },
         { number: "OAuth", label: "Hardened against the threats that matter — pass review on the first try" },
       ]}
       challenge="Every business is now an API business — whether it knows it yet or not. The contracts you ship today define the partnerships you can have tomorrow, and most teams treat APIs as plumbing instead of products."

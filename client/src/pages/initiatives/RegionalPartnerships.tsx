@@ -562,7 +562,7 @@ export default function RegionalPartnerships() {
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl">
-            <Link href="/initiatives/mid-market-ai">
+            <Link href="/initiatives/ai-for-growth">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

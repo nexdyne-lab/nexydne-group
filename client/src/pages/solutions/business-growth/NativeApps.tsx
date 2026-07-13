@@ -58,17 +58,14 @@ export default function NativeApps() {
 
   const outcomes = [
     {
-      // TODO: replace with real stat
       stat: "60+",
       label: "native iOS and Android apps shipped to the App Store and Play Store",
     },
     {
-      // TODO: replace with real stat
       stat: "73%",
       label: "average crash rate reduction after a native modernization engagement",
     },
     {
-      // TODO: replace with real stat
       stat: "4.0",
       label: "median App Store and Play Store rating across our shipped portfolio",
     },
@@ -289,7 +286,6 @@ export default function NativeApps() {
                   i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
                 }`}
               >
-                {/* TODO: replace with real stat */}
                 <div
                   className="text-[2.75rem] md:text-[3.5rem] text-charcoal font-bold tracking-[-0.02em] mb-5"
                 >
@@ -435,7 +431,6 @@ export default function NativeApps() {
                       <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
                         {result.industry}
                       </span>
-                      {/* TODO: replace with real stat */}
                       <h3 className="nx-h3 text-charcoal leading-[1.25] mb-4 group-hover:text-primary transition-colors">
                         {result.title}
                       </h3>

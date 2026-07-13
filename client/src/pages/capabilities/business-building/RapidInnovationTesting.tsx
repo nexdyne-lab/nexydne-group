@@ -1,5 +1,3 @@
-// TODO: David — confirm Rapid Innovation & Testing experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Rapid Innovation & Testing hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -13,11 +11,8 @@ export default function RapidInnovationTesting() {
       heroImage="/images/rapid-innovation-abstract.jpg"
       heroFocal="55% 50%"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "80%", label: "Reduction in wasted investment by killing bad ideas early" },
-        // TODO: confirm with practice lead before publish
         { number: "10-12 wk", label: "From initial concept to evidence-based go/no-go" },
-        // TODO: confirm with practice lead before publish
         { number: "3-5x", label: "Innovation success rate vs. traditional product development" },
       ]}
       ambitions={[
@@ -79,14 +74,12 @@ export default function RapidInnovationTesting() {
           href: "/capabilities/business-building/rapid-innovation-testing/decision-framework",
         },
         {
-          // TODO: confirm with practice lead before publish
           title: "Innovation Stage-Gate Governance",
           description:
             "Design the portfolio review cadence, evidence standards, and funding gates that let your leadership team kill, hold, or scale experiments with confidence and consistency.",
           href: "/capabilities/business-building/rapid-innovation-testing/stage-gate-governance",
         },
         {
-          // TODO: confirm with practice lead before publish
           title: "Scale-Up Transition Planning",
           description:
             "Bridge validated pilots into production — operating model, hiring plan, and integration with the core P&L — so winning experiments don't stall in the gap between proof and scale.",

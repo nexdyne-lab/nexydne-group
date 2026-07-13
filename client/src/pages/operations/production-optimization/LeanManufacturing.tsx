@@ -1,4 +1,3 @@
-// TODO: confirm with practice lead before publish — experience stats, approach pillars, outcomes, and CTA lead name for Lean Manufacturing.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 

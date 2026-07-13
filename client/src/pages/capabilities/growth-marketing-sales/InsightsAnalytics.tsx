@@ -1,6 +1,3 @@
-// TODO: David — confirm Insights & Analytics experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Insights & Analytics hub.
-// TODO: confirm ambition copy with practice lead before publish
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -19,7 +16,6 @@ export default function InsightsAnalytics() {
         { number: "5x", label: "faster time to insight with modern analytics infrastructure" },
         { number: "Senior-led", label: "Every engagement led by a partner with deep practitioner experience" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Sharpen the insights & analytics thesis",

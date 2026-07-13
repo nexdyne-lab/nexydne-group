@@ -1,6 +1,3 @@
-// TODO: David — confirm Production & Asset Optimization experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Production Optimization hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/production-optimization-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -15,10 +12,8 @@ export default function ProductionOptimization() {
         { number: "80+", label: "Production optimization programs across manufacturing sectors" },
         { number: "15-30%", label: "Typical improvement in Overall Equipment Effectiveness (OEE)" },
         { number: "25-40%", label: "Reduction in unplanned downtime through predictive maintenance" },
-        // TODO: confirm with practice lead before publish
         { number: "Plant-wide", label: "Lean manufacturing and asset reliability programs" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Drive OEE step-changes",

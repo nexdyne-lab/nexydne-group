@@ -1,5 +1,3 @@
-// TODO: David — confirm Product Strategy & Design experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Product Strategy & Design hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -13,11 +11,8 @@ export default function ProductStrategyDesign() {
       heroImage="/images/product-strategy-abstract.jpg"
       heroFocal="55% 50%"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "85+", label: "Products designed and launched across B2B, B2C, and marketplace models" },
-        // TODO: confirm with practice lead before publish
         { number: "3.2x", label: "Average improvement in user engagement after redesign projects" },
-        // TODO: confirm with practice lead before publish
         { number: "92%", label: "Of strategies achieve product-market fit within 12 months" },
       ]}
       ambitions={[

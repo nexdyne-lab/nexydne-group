@@ -1,6 +1,3 @@
-// TODO: David — confirm Personalization at Scale experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Personalization at Scale hub.
-// TODO: confirm ambition copy with practice lead before publish
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -19,7 +16,6 @@ export default function PersonalizationAtScale() {
         { number: "3x", label: "improvement in email engagement through dynamic content" },
         { number: "Senior-led", label: "Every engagement led by a partner with deep practitioner experience" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Sharpen the personalization at scale thesis",

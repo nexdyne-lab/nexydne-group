@@ -21,7 +21,7 @@ export function BusinessBuildingInitiatives() {
       title: "Expanding Access to Enterprise-Grade AI for America's Mid-Market",
       description: "NexDyne is leading a national effort to make advanced AI, analytics, and automation accessible to mid-market companies traditionally excluded from enterprise technology.",
       delay: 0.1,
-      link: "/initiatives/mid-market-ai",
+      link: "/initiatives/ai-for-growth",
       image: "/mid-market-ai-developers.png",
     },
     {

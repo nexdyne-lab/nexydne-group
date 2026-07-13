@@ -1,5 +1,3 @@
-// TODO: David — confirm Digital Venture Launch experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Digital Venture Launch hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -13,11 +11,8 @@ export default function DigitalVentureLaunch() {
       heroImage="/images/digital-venture-abstract.jpg"
       heroFocal="55% 50%"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "40+", label: "Digital ventures launched with growing companies" },
-        // TODO: confirm with practice lead before publish
         { number: "78%", label: "Of ventures profitable within 18 months" },
-        // TODO: confirm with practice lead before publish
         { number: "4-6 Mo", label: "Validated concept to market launch" },
       ]}
       ambitions={[

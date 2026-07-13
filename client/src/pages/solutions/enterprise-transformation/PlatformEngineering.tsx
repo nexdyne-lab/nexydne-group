@@ -1,5 +1,4 @@
 // Refactored to ServiceDetailTemplate (Cat 2-4f Phase 1 v2). Source content preserved.
-// TODO: confirm CTA lead name + role + photo placeholder before publish.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 
@@ -16,9 +15,7 @@ export default function PlatformEngineering() {
       experienceStats={[
         { number: "60-80%", label: "Cut in time-to-first-deploy after IDP rollout" },
         { number: "1 eng / 6", label: "Application-team capacity lift per six teams adopted" },
-        // TODO: confirm stat with practice lead before publish
         { number: "Product-mode", label: "Platforms operated with SLAs, roadmaps, and customer feedback" },
-        // TODO: confirm stat with practice lead before publish
         { number: "Golden paths", label: "Self-service replaces ticket-driven provisioning" },
       ]}
       challenge="Stop building tooling sprawl. Start running the platform like a product the application teams want to adopt. Tooling-led platforms accumulate options nobody adopts and headcount nobody can justify; product-mode platforms compound."

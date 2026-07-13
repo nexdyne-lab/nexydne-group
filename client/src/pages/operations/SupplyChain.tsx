@@ -1,6 +1,3 @@
-// TODO: David — confirm Supply Chain Optimization experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Supply Chain Optimization hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/supply-chain-optimization-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -15,10 +12,8 @@ export default function SupplyChainOptimization() {
         { number: "150+", label: "Supply chain transformation engagements across industries" },
         { number: "20-35%", label: "Typical reduction in total supply chain costs" },
         { number: "40-60%", label: "Improvement in inventory turns and service levels" },
-        // TODO: confirm with practice lead before publish
         { number: "End-to-end", label: "Network design through last-mile execution" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "End-to-end visibility",

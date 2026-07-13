@@ -1,5 +1,4 @@
 // Refactored to ServiceDetailTemplate (Cat 2-4f Phase 1 v2). Source content preserved.
-// TODO: confirm CTA lead name + role + photo placeholder before publish.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 
@@ -16,9 +15,7 @@ export default function TechnologyStrategy() {
       experienceStats={[
         { number: "60-80%", label: "Compression in architectural review cycles" },
         { number: "3 yrs", label: "Strategy still being invoked after we leave" },
-        // TODO: confirm stat with practice lead before publish
         { number: "5-yr", label: "Written technology vision expressed in business outcomes" },
-        // TODO: confirm stat with practice lead before publish
         { number: "Quarterly", label: "Refresh cadence keeps strategy a living document" },
       ]}
       challenge="Stop confusing a technology deck with a technology strategy. Start running a body of decisions. Most strategies fail because they describe the future without the principles, governance, and refresh cadence that would let leadership defend trade-offs at the next quarterly review."

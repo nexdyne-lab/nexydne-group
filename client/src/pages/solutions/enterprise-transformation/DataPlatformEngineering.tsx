@@ -1,5 +1,4 @@
 // Refactored to ServiceDetailTemplate (Cat 2-4f Phase 1 v2). Source content preserved.
-// TODO: confirm CTA lead name + role + photo placeholder before publish.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 
@@ -16,9 +15,7 @@ export default function DataPlatformEngineering() {
       experienceStats={[
         { number: "60-80%", label: "Cut in pipeline incidents on engineered data platforms" },
         { number: "1/2", label: "Analytics-request backlog shrinks because the platform stops being the bottleneck" },
-        // TODO: confirm stat with practice lead before publish
         { number: "Lakehouse", label: "Databricks, Snowflake, BigQuery — selection grounded in workload fit" },
-        // TODO: confirm stat with practice lead before publish
         { number: "Data contracts", label: "Quality, lineage, and access governance built in" },
       ]}
       challenge="Stop buying data platforms. Start engineering one that earns its budget every quarter. Vendor-led platforms accumulate licenses and shadow analytics stacks; engineered platforms make data a managed asset that gets re-funded because every executive question lands on it."

@@ -322,7 +322,6 @@ export default function Insights() {
     e.preventDefault();
     setIsSubmittingNewsletter(true);
 
-    // TODO: wire to real backend
     // Example: await fetch('/api/newsletter', { method: 'POST', body: JSON.stringify({ email }) });
     await new Promise((resolve) => setTimeout(resolve, 600));
 

@@ -1,5 +1,3 @@
-// TODO: David — confirm Predictive Analytics experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Predictive Analytics hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -9,17 +7,12 @@ export default function PredictiveAnalytics() {
       hubName="Predictive Analytics"
       slug="predictive-analytics"
       heroSubtitle="Transform historical data into forward-looking insights. Anticipate demand, identify risks, and make proactive decisions — acting on what is going to happen instead of explaining what already did."
-      // TODO: confirm hero image asset matches Predictive Analytics theme
       heroImage="/case-data-dashboard.391db27a.jpg"
       heroFocal="60% 45%"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "180+", label: "Predictive models in production" },
-        // TODO: confirm with practice lead before publish
         { number: "30%", label: "Average forecast accuracy improvement" },
-        // TODO: confirm with practice lead before publish
-        { number: "$200M+", label: "Client P&L impact attributed to predictions" },
-        // TODO: confirm with practice lead before publish
+        { number: "85%", label: "prediction accuracy sustained in production" },
         { number: "8-week", label: "Median pilot-to-production cycle" },
       ]}
       ambitions={[

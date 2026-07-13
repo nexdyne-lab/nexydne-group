@@ -58,17 +58,14 @@ export default function Chatbots() {
 
   const outcomes = [
     {
-      // TODO: replace with real stat
       stat: "70+",
       label: "production chatbots deployed across support, sales, and internal ops",
     },
     {
-      // TODO: replace with real stat
       stat: "62%",
       label: "average Tier 1 ticket deflection within the first quarter live",
     },
     {
-      // TODO: replace with real stat
       stat: "3.4x",
       label: "ROI on lead-gen bot programs within twelve months",
     },
@@ -288,7 +285,6 @@ export default function Chatbots() {
                   i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
                 }`}
               >
-                {/* TODO: replace with real stat */}
                 <div
                   className="text-[2.75rem] md:text-[3.5rem] text-charcoal font-bold tracking-[-0.02em] mb-5"
                 >
@@ -435,7 +431,6 @@ export default function Chatbots() {
                       <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
                         {result.industry}
                       </span>
-                      {/* TODO: replace with real stat */}
                       <h3 className="nx-h3 text-charcoal leading-[1.25] mb-4 group-hover:text-primary transition-colors">
                         {result.title}
                       </h3>

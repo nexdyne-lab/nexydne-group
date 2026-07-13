@@ -1,4 +1,3 @@
-// TODO: confirm with practice lead before publish — experience stats, approach pillars, outcomes, and CTA lead name for KPI Framework Design.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 

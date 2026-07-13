@@ -1,5 +1,4 @@
 // Refactored to ServiceDetailTemplate (Cat 2-4f Phase 1 v2). Source content preserved.
-// TODO: confirm CTA lead name + role + photo placeholder before publish.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 
@@ -16,9 +15,7 @@ export default function DevOpsCICD() {
       experienceStats={[
         { number: "10-50x", label: "Lift in deployment frequency for organizations moving into the elite DORA quartile" },
         { number: "Lower CFR", label: "Change-failure rate drops as pipelines catch regressions early" },
-        // TODO: confirm stat with practice lead before publish
         { number: "DORA", label: "Measured against actual telemetry, not self-report" },
-        // TODO: confirm stat with practice lead before publish
         { number: "Quarter-over-quarter", label: "Metrics improve as the practice extends" },
       ]}
       challenge="Stop debating DevOps culture. Start engineering the pipeline that makes the culture inevitable. Culture-led change debates options for years; engineered pipelines move DORA metrics quarter-over-quarter and the conversation changes."

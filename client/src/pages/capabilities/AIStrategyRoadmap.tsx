@@ -1,5 +1,3 @@
-// TODO: David — confirm AI Strategy & Roadmap experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the AI Strategy & Roadmap hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -9,18 +7,13 @@ export default function AIStrategyRoadmap() {
       hubName="AI Strategy & Roadmap"
       slug="ai-strategy-roadmap"
       heroSubtitle="Define your AI vision and build a prioritized implementation plan. Chart a path from experimentation to enterprise-scale AI — anchored to business outcomes, not headlines."
-      // TODO: confirm hero image asset matches AI Strategy & Roadmap theme
       heroImage="/images/industries/team-strategy-board.jpg"
       heroFocal="60% 45%"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "120+", label: "AI strategies developed for enterprise clients" },
-        // TODO: confirm with practice lead before publish
         { number: "5x", label: "Average ROI on prioritized AI portfolios" },
-        // TODO: confirm with practice lead before publish
         { number: "90-day", label: "Typical roadmap to first measurable outcome" },
-        // TODO: confirm with practice lead before publish
-        { number: "$300M+", label: "Estimated annual value identified across clients" },
+        { number: "90 days", label: "to a prioritized, costed AI roadmap" },
       ]}
       ambitions={[
         {

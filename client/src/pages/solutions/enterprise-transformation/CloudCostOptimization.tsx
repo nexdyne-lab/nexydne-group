@@ -1,5 +1,4 @@
 // Refactored to ServiceDetailTemplate (Cat 2-4f Phase 1 v2). Source content preserved.
-// TODO: confirm CTA lead name + role + photo placeholder before publish.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 
@@ -16,9 +15,7 @@ export default function CloudCostOptimization() {
       experienceStats={[
         { number: "20-35%", label: "Of annualized cloud spend retired in the first twelve months" },
         { number: "Year 2", label: "Gain holds because the operating cadence — not a one-time audit — produced it" },
-        // TODO: confirm stat with practice lead before publish
         { number: "Multi-cloud", label: "AWS, Azure, GCP unit economics on one defensible baseline" },
-        // TODO: confirm stat with practice lead before publish
         { number: "Co-owned", label: "Cost a shared engineering metric — not a finance complaint" },
       ]}
       challenge="Stop chasing cloud bills after the fact. Start running cloud as a managed line on the operating P&L. Reactive cost reviews catch yesterday's overrun; managed FinOps prevents tomorrow's by making cost an engineering metric."

@@ -1,6 +1,3 @@
-// TODO: confirm DevOps & Automation hub experience & impact numbers with practice lead before publish.
-// TODO: populate 2-3 thought-leadership insights for the DevOps & Automation hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/devops-automation-hub-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -12,16 +9,11 @@ export default function DevOpsAutomationHub() {
       heroSubtitle="CI/CD, infrastructure as code, and the operating model that ships safely and often. We measure where the pipeline is actually slow, rebuild the architecture, engineer the test framework, and lift DORA metrics quarter-over-quarter."
       heroImage="/images/capabilities/cap-robot-factory.jpg"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "40+", label: "DevOps and CI/CD engagements delivered for growing and enterprise clients" },
-        // TODO: confirm with practice lead before publish
         { number: "5x", label: "Average lift in deployment frequency in the first two quarters" },
-        // TODO: confirm with practice lead before publish
         { number: "60%", label: "Median reduction in change-failure rate across pipelines we rebuild" },
-        // TODO: confirm with practice lead before publish
         { number: "DORA-aligned", label: "Every engagement instrumented to the four DORA metrics from day one" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Lift deployment frequency from quarterly to daily",

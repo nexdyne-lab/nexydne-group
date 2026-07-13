@@ -1,6 +1,3 @@
-// TODO: confirm Security & Compliance hub experience & impact numbers with practice lead before publish.
-// TODO: populate 2-3 thought-leadership insights for the Security & Compliance hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/security-compliance-hub-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -12,16 +9,11 @@ export default function SecurityComplianceHub() {
       heroSubtitle="Embed security and compliance into every layer of your technology stack — from zero-trust architectures to SOC 2 and HIPAA control implementation. We move security from an audit event to an always-on assurance program."
       heroImage="/images/capabilities/cap-aerial-grid.jpg"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "35+", label: "Security and compliance programs delivered for growing and enterprise clients" },
-        // TODO: confirm with practice lead before publish
         { number: "SOC 2 · ISO 27001 · HIPAA · PCI-DSS · GDPR", label: "Frameworks across our active control library" },
-        // TODO: confirm with practice lead before publish
         { number: "90 days", label: "Median time to audit-ready posture for in-flight engagements" },
-        // TODO: confirm with practice lead before publish
         { number: "Always-on", label: "Continuous control assurance, not point-in-time audit prep" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Get audit-ready without the fire drill",

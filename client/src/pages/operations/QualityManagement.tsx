@@ -1,6 +1,3 @@
-// TODO: David — confirm Quality Management Systems experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Quality Management hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/quality-management-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -15,10 +12,8 @@ export default function QualityManagement() {
         { number: "75+", label: "Quality transformation programs across manufacturing and services" },
         { number: "50-85%", label: "Typical reduction in defect rates and quality costs" },
         { number: "6σ", label: "Process capability achieved for critical processes" },
-        // TODO: confirm with practice lead before publish
         { number: "Audit-ready", label: "ISO and industry-specific compliance posture" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Mature your Six Sigma program",

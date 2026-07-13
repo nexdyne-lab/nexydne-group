@@ -1,6 +1,3 @@
-// TODO: David — confirm E-commerce experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the E-commerce hub.
-// TODO: confirm ambition copy with practice lead before publish
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -19,7 +16,6 @@ export function Ecommerce() {
         { number: "$2.5B+", label: "in GMV enabled through our platform implementations" },
         { number: "Senior-led", label: "Every engagement led by a partner with deep practitioner experience" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Sharpen the e-commerce thesis",

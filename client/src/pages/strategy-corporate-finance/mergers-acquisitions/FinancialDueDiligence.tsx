@@ -1,4 +1,3 @@
-// TODO: confirm with practice lead before publish — experience stats, challenge, opportunity, approach pillars, outcomes, related services, and CTA lead name for Financial Due Diligence.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 

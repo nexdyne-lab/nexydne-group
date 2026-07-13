@@ -1,5 +1,3 @@
-// TODO: David — confirm Agentic AI experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Agentic AI hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -9,17 +7,12 @@ export default function AgenticAI() {
       hubName="Agentic AI"
       slug="agentic-ai"
       heroSubtitle="Deploy autonomous AI agents that reason, plan, and execute complex multi-step tasks — transforming how your organization operates, scales, and serves customers without adding headcount."
-      // TODO: confirm hero image asset matches Agentic AI theme
       heroImage="/images/industries/tech-glasses.jpg"
       heroFocal="62% 45%"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "60+", label: "Production agent systems shipped" },
-        // TODO: confirm with practice lead before publish
         { number: "70%", label: "Average task completion lift vs. manual workflows" },
-        // TODO: confirm with practice lead before publish
         { number: "24/7", label: "Always-on coverage for repetitive workflows" },
-        // TODO: confirm with practice lead before publish
         { number: "6-week", label: "Median time to first agent in production" },
       ]}
       ambitions={[

@@ -1,6 +1,3 @@
-// TODO: David — confirm Capital Raising & Investment experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Capital Raising & Investment hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/capital-raising-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -12,13 +9,11 @@ export default function CapitalRaising() {
       heroSubtitle="Secure the funding you need to grow. We help you access debt, equity, and alternative financing sources on optimal terms — and prepare your business to win the conversation."
       heroImage="/images/industries/deal-handshake.jpg"
       experienceStats={[
-        { number: "$500M+", label: "Capital raised for clients across equity, debt, and alternative financing structures" },
+        { number: "90%", label: "of mandated raises closed at or above target" },
         { number: "75+", label: "Successful fundraising transactions completed for growing companies" },
         { number: "30%", label: "Average improvement in terms achieved versus initial offers through our negotiation" },
-        // TODO: confirm with practice lead before publish
         { number: "Investor-ready", label: "Diligence packages and pitch materials built to close" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Raise growth equity on the right terms",

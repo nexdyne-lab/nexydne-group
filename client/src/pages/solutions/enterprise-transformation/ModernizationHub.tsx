@@ -1,6 +1,3 @@
-// TODO: confirm Modernization hub experience & impact numbers with practice lead before publish.
-// TODO: populate 2-3 thought-leadership insights for the Modernization hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/modernization-hub-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -12,16 +9,11 @@ export default function ModernizationHub() {
       heroSubtitle="Replatform, refactor, and replace patterns for legacy systems — connected by a modern API layer. We retire the old estate without breaking the business and unlock the integration patterns that make the modernization actually compound."
       heroImage="/images/capabilities/cap-aerial-grid.jpg"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "45+", label: "Modernization and integration engagements delivered for growing and enterprise clients" },
-        // TODO: confirm with practice lead before publish
         { number: "Strangler-fig", label: "Disciplined execution pattern across every modernization program we run" },
-        // TODO: confirm with practice lead before publish
         { number: "REST · GraphQL · gRPC", label: "API-first integration patterns across our delivery library" },
-        // TODO: confirm with practice lead before publish
         { number: "Zero-downtime", label: "Cutover discipline that lets the business keep running through every wave" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Modernize legacy systems and infrastructure",

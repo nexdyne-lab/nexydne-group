@@ -18,7 +18,6 @@ export default function GrowthMarketingSales() {
         label: "View Case Studies",
         href: "/cases?capability=growth-marketing-sales",
       }}
-      // PRESERVED 3 source stats; 4th is AUTHORED with TODO marker
       experienceStats={[
         {
           number: "75+",
@@ -34,21 +33,18 @@ export default function GrowthMarketingSales() {
           number: "18+",
           label: "Industry verticals served with specialized growth expertise",
         },
-        // TODO: confirm with practice lead before publish
         {
           number: "12 wks",
           label: "median time from kickoff to first measurable revenue lift",
         },
       ]}
       // AUTHORED — featured uses source insight #2 title verbatim + AUTHORED summary; secondary uses source insights #3, #4
-      // TODO: confirm with practice lead before publish (featured summary)
       thoughtLeadership={{
         featured: {
           tag: "Marketing Operations",
           title:
             "Building a scalable marketing engine for growing companies",
           summary:
-            // TODO: confirm with practice lead before publish
             "Most growing marketing teams are stuck between scrappy execution and enterprise overhead. We outline the operating model, technology choices, and measurement discipline that let growing companies build a marketing engine that scales without the enterprise complexity or budget.",
           image: "/images/insight-marketing-operations.jpg",
           href: "/insights/marketing-operations",
@@ -87,7 +83,6 @@ export default function GrowthMarketingSales() {
         },
       ]}
       // AUTHORED 6 ambition cards mapped to 6 of the 18 live hubs per locked spec
-      // TODO: confirm with practice lead before publish (ambition copy distilled from source themes)
       ambitions={[
         {
           title: "Build a brand that scales",
@@ -128,7 +123,6 @@ export default function GrowthMarketingSales() {
       ]}
       // PRESERVED in-practice intro adapted from source 'How AI is Transforming Growth & Marketing' section
       // realOutcomes + howWeHelp distilled from source AI use-case bullets
-      // TODO: confirm with practice lead before publish (rewritten intro)
       inPractice={{
         image:
           "/images/capabilities/cap-peacock.jpg",
@@ -149,7 +143,6 @@ export default function GrowthMarketingSales() {
       }}
       // PRESERVED all 18 hub titles + descriptions verbatim from source capabilities[] arrays
       // (current source has 11 entries across 2 grids; remaining 7 distilled from each Phase 1 hub's heroSubtitle)
-      // TODO: confirm with practice lead before publish (the 7 distilled descriptions)
       howWeCanHelp={[
         {
           title: "Brand Strategy",
@@ -261,7 +254,6 @@ export default function GrowthMarketingSales() {
         },
       ]}
       // AUTHORED case-tab metrics distilled from Cat 11a 12-case pool grouped into 3 industry tabs
-      // TODO: confirm with practice lead before publish (per-card metric blurbs)
       clientResults={[
         {
           industry: "Retail & Consumer",
@@ -289,13 +281,10 @@ export default function GrowthMarketingSales() {
         },
       ]}
       // SOURCE has no ecosystem partners — pass empty; section renders conditionally.
-      // TODO: confirm with practice lead before publish (martech + agency partner logos if any)
       ecosystemLogos={[]}
       // SOURCE has no named NexDyne practice leaders. Per content authoring rule, do not invent staff identities.
-      // TODO: confirm with practice lead before publish (replace with real practice leadership headshots + LinkedIn URLs)
       leaders={[]}
       // PRESERVED 3 insight cards verbatim from source (title + image + link); tags + readTime AUTHORED
-      // TODO: confirm with practice lead before publish (readTime values)
       insights={[
         {
           tag: "Sales Excellence",
@@ -325,7 +314,6 @@ export default function GrowthMarketingSales() {
         },
       ]}
       // AUTHORED — source closing CTA was generic 'Ready to accelerate your growth' copy (no named lead)
-      // TODO: confirm with practice lead before publish (real lead name + photo + email + LinkedIn)
       closingCTA={{
         leadName: "Our Growth, Marketing & Sales Practice Lead",
         leadTitle:

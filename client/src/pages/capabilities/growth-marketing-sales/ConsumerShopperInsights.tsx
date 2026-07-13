@@ -1,6 +1,3 @@
-// TODO: David — confirm Consumer & Shopper Insights experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Consumer & Shopper Insights hub.
-// TODO: confirm ambition copy with practice lead before publish
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -19,7 +16,6 @@ export default function ConsumerShopperInsights() {
         { number: "3x", label: "typical ROI on insights investments" },
         { number: "Senior-led", label: "Every engagement led by a partner with deep practitioner experience" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Sharpen the consumer & shopper insights thesis",

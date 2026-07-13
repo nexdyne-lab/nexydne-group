@@ -1,5 +1,3 @@
-// TODO: David — confirm Product Development experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Product Development hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -14,10 +12,8 @@ export default function ProductDevelopment() {
         { number: "80+", label: "Product development transformations for midmarket companies" },
         { number: "30-50%", label: "Typical reduction in time-to-market" },
         { number: "25-40%", label: "Improvement in new product success rates" },
-        // TODO: confirm with practice lead before publish
         { number: "Stage-gate", label: "Disciplined pipeline from idea to launch" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Compress time-to-market",

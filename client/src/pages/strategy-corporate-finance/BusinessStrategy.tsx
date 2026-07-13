@@ -1,6 +1,3 @@
-// TODO: David — confirm Business Strategy & Transformation experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Business Strategy & Transformation hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/business-strategy-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -15,10 +12,8 @@ export default function BusinessStrategy() {
         { number: "150+", label: "Strategic transformations led for growing companies across diverse industries" },
         { number: "2.5x", label: "Average revenue growth achieved by clients within 3 years of strategy implementation" },
         { number: "85%", label: "Of our strategic plans are successfully executed, versus industry average of 30%" },
-        // TODO: confirm with practice lead before publish
         { number: "End-to-end", label: "Strategy formulation through capability building and execution" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Sharpen where to compete",

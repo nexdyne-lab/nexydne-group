@@ -141,7 +141,7 @@ const insights = [
     type: "Report",
     title: "Mid-Market AI Access: How growing businesses can compete with enterprise technology",
     image: "/images/insight-ai-state.jpg",
-    link: "/insights/mid-market-ai-access"
+    link: "/insights/ai-access-guide"
   },
   {
     type: "Article",

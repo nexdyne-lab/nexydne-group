@@ -1,6 +1,3 @@
-// TODO: David — confirm AI-Powered Finance experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the AI-Powered Finance hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/ai-powered-finance-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -15,10 +12,8 @@ export default function AIPoweredFinance() {
         { number: "70%", label: "Reduction in manual reporting time for clients implementing AI-powered automation" },
         { number: "3x", label: "Improvement in forecast accuracy using machine learning models vs. traditional methods" },
         { number: "45+", label: "AI finance implementations delivered across diverse industries and company sizes" },
-        // TODO: confirm with practice lead before publish
         { number: "Production-grade", label: "Solutions hardened for daily finance use, not lab experiments" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Get reporting time back",

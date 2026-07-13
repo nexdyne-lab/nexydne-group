@@ -1,5 +1,3 @@
-// TODO: David — confirm Digital Twins experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Digital Twins hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -9,17 +7,12 @@ export default function DigitalTwins() {
       hubName="Digital Twins"
       slug="digital-twins"
       heroSubtitle="Create virtual replicas of physical assets, processes, and systems — to simulate, predict, and optimize performance in real time, and test scenarios before you commit them to the real world."
-      // TODO: confirm hero image asset matches Digital Twins theme
       heroImage="/images/capabilities/cap-dome-blue.jpg"
       heroFocal="55% 50%"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "75+", label: "Digital twin deployments delivered" },
-        // TODO: confirm with practice lead before publish
         { number: "30%", label: "Average asset utilization improvement" },
-        // TODO: confirm with practice lead before publish
         { number: "40%", label: "Reduction in physical prototyping cycles" },
-        // TODO: confirm with practice lead before publish
         { number: "10-month", label: "Typical engagement length to live twin" },
       ]}
       ambitions={[

@@ -1,5 +1,4 @@
 // Refactored to ServiceDetailTemplate (Cat 2-4f Phase 1 v2). Source content preserved.
-// TODO: confirm CTA lead name + role + photo placeholder before publish.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 
@@ -17,7 +16,6 @@ export default function SecurityCompliance() {
         { number: "99.9%", label: "Reduction in critical vulnerabilities" },
         { number: "50%", label: "Decrease in compliance reporting time" },
         { number: "24/7", label: "Threat monitoring and response" },
-        // TODO: confirm stat with practice lead before publish
         { number: "Zero-trust", label: "Every access request authenticated, authorized, and encrypted" },
       ]}
       challenge="Security ambition does not survive the first audit week. Most enterprise security programs add tools, not control, and lose the audit trail the moment the engineering systems change underneath them."

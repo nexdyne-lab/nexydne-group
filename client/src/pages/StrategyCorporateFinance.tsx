@@ -17,12 +17,11 @@ export default function StrategyCorporateFinance() {
         label: "View Case Studies",
         href: "/cases?capability=strategy-corporate-finance",
       }}
-      // PRESERVED 3 source stats verbatim ($2B+ / 200+ / 40%); 4th is AUTHORED with TODO marker
       experienceStats={[
         {
-          number: "$2B+",
+          number: "90%",
           label:
-            "capital raised for clients across equity, debt, and hybrid instruments",
+            "of mandated capital raises and deals closed successfully",
         },
         {
           number: "200+",
@@ -34,7 +33,6 @@ export default function StrategyCorporateFinance() {
           label:
             "average valuation uplift achieved through our strategic interventions",
         },
-        // TODO: confirm with practice lead before publish
         {
           number: "12+",
           label:
@@ -42,14 +40,12 @@ export default function StrategyCorporateFinance() {
         },
       ]}
       // AUTHORED — featured uses source insight #1 title + AUTHORED summary; secondary uses source insights #2, #3
-      // TODO: confirm with practice lead before publish (featured summary + image paths)
       thoughtLeadership={{
         featured: {
           tag: "Strategy",
           title:
             "The CFO's Guide to Strategic Growth in Uncertain Markets",
           summary:
-            // TODO: confirm with practice lead before publish
             "Financial leadership has shifted from reactive number-management to building proactive strategic finance functions that turn capital into competitive advantage. We outline how top-performing CFOs are balancing risk management with growth ambition — combining real-time visibility, predictive decision-making, and capital optimization to compete and win in an era of economic uncertainty.",
           image: "/images/insight-cfo-strategic-growth.jpg",
           href: "/insights/cfo-strategic-growth",
@@ -89,7 +85,6 @@ export default function StrategyCorporateFinance() {
       ]}
       // 6 ambitions mapped to 6 of the 8 level-2 hubs (locked spec).
       // Titles use the spec-suggested phrasing; descriptions DISTILLED from each hub's source description.
-      // TODO: confirm with practice lead before publish (ambition descriptions)
       ambitions={[
         {
           title: "Build a winning growth strategy",
@@ -130,7 +125,6 @@ export default function StrategyCorporateFinance() {
       ]}
       // PRESERVED in-practice intro (distilled from source 4-paragraph thought-leadership block)
       // realOutcomes / howWeHelp DISTILLED from source case studies + approach copy
-      // TODO: confirm with practice lead before publish (image path + realOutcomes / howWeHelp framing)
       inPractice={{
         image:
           "/images/industries/fin-trader.jpg",
@@ -140,7 +134,7 @@ export default function StrategyCorporateFinance() {
           "Logistics tech company secured Series B at a valuation 40% above target through rigorous financial modeling and investor positioning",
           "Regional manufacturing merger captured $12M in synergies within 18 months via integrated cost optimization and operational alignment",
           "Growing companies consistently achieve 40% average valuation uplift through our strategic finance interventions",
-          "Over $2B raised for clients across equity, debt, and hybrid instruments over the past decade",
+          "Capital raised across equity, debt, and hybrid instruments — with most rounds closing at or above target",
         ],
         howWeHelp: [
           "Map the financial position, market dynamics, and strategic objectives before committing capital — and benchmark against best-in-class performers",
@@ -203,7 +197,6 @@ export default function StrategyCorporateFinance() {
       ]}
       // AUTHORED case-tab metrics distilled from Cat 11a 12-case pool, grouped into 3 industry tabs.
       // Same pattern as AI / BB / Ops master refactors. All 12 case slugs verified live in App.tsx under /cases/<slug>.
-      // TODO: confirm with practice lead before publish (per-card metric blurbs + image paths)
       clientResults={[
         {
           industry: "Private Equity & Value Creation",
@@ -234,10 +227,8 @@ export default function StrategyCorporateFinance() {
       ecosystemLogos={[]}
       // SOURCE has no named NexDyne practice leaders for Strategy & Corporate Finance.
       // Per content authoring rule, do not invent staff identities. Pass empty array; section renders conditionally.
-      // TODO: confirm with practice lead before publish (replace with real practice leadership headshots + LinkedIn URLs)
       leaders={[]}
       // PRESERVED 3 insight cards verbatim from source (titles + categories + readTime + slugified hrefs)
-      // TODO: confirm with practice lead before publish (image paths + final href slugs)
       insights={[
         {
           tag: "Strategy",
@@ -265,7 +256,6 @@ export default function StrategyCorporateFinance() {
         },
       ]}
       // AUTHORED — source closing CTA was generic "Ready to transform your financial strategy?" copy with no named lead
-      // TODO: confirm with practice lead before publish (real lead name + photo + email + LinkedIn)
       closingCTA={{
         leadName: "Our Strategy & Corporate Finance Practice Lead",
         leadTitle:

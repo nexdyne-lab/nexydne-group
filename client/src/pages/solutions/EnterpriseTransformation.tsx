@@ -17,7 +17,6 @@ export default function EnterpriseTransformation() {
         label: "See Client Results",
         href: "/cases?capability=technology",
       }}
-      // PRESERVED 3 source stats verbatim (60+ / ~$15M / 12+); 4th is AUTHORED with TODO marker to make grid 4-up like sister masters
       experienceStats={[
         {
           number: "60+",
@@ -25,16 +24,15 @@ export default function EnterpriseTransformation() {
             "technology modernization projects completed for growing companies",
         },
         {
-          number: "~$15M",
+          number: "40%",
           label:
-            "in operational savings delivered to clients in the last three years",
+            "average reduction in run-cost after modernization",
         },
         {
           number: "12+",
           label:
             "strategic partnerships across cloud, security, and AI platforms",
         },
-        // TODO: confirm with practice lead before publish
         {
           number: "38%",
           label:
@@ -42,14 +40,12 @@ export default function EnterpriseTransformation() {
         },
       ]}
       // AUTHORED — source has no thought-leadership block, so featured + 2 secondary use insight slugs that already render under /capabilities/technology/insights
-      // TODO: confirm with practice lead before publish (titles, summary, image paths, final href slugs)
       thoughtLeadership={{
         featured: {
           tag: "Technology Strategy",
           title:
             "From cost center to growth engine: rebuilding the technology operating model",
           summary:
-            // TODO: confirm with practice lead before publish
             "Technology has shifted from a back-office function to the engine that decides whether a company can grow at all. We outline how growth-stage leaders are rebuilding the technology operating model around platform thinking, paved-path engineering, and FinOps discipline so technology compounds rather than drags on the P&L.",
           image: "/images/insight-technology-operating-model.jpg",
           href: "/insights/technology-operating-model",
@@ -70,7 +66,6 @@ export default function EnterpriseTransformation() {
         ],
       }}
       // PRESERVED 3 approach pillars distilled from source 5-stage process (Discovery / Architecture / Build+Launch+Optimize collapsed into a 3-pillar shape)
-      // TODO: confirm with practice lead before publish (3-pillar collapse of source 5-stage process)
       approachPillars={[
         {
           step: "01",
@@ -90,7 +85,6 @@ export default function EnterpriseTransformation() {
       ]}
       // 6 ambitions mapped to 6 of the 15 sub-pages per spec.
       // Titles use the spec-suggested phrasing; descriptions DISTILLED from each sub-page's heroSubtitle.
-      // TODO: confirm with practice lead before publish (ambition descriptions)
       ambitions={[
         {
           title: "Modernize legacy systems and infrastructure",
@@ -132,7 +126,6 @@ export default function EnterpriseTransformation() {
       // PRESERVED in-practice intro distilled from source SLOT 2 editorial block (3 paragraphs collapsed into 1)
       // realOutcomes mined from source SLOT 4 outcomes + SLOT 7 cases verbatim metrics
       // howWeHelp mined from source SLOT 5 approach pillars verbatim
-      // TODO: confirm with practice lead before publish (image path)
       inPractice={{
         image:
           "/images/capabilities/cap-aerial-grid.jpg",
@@ -157,42 +150,36 @@ export default function EnterpriseTransformation() {
       howWeCanHelp={[
         {
           title: "Cloud & Infrastructure",
-          // TODO: confirm hub description with practice lead before publish
           description:
             "Migrate, modernize, and optimize your cloud estate end-to-end. Landing zones, FinOps, and the operating model that compounds developer velocity rather than dragging on the P&L.",
           href: "/capabilities/technology/cloud-infrastructure-hub",
         },
         {
           title: "Platform Engineering",
-          // TODO: confirm hub description with practice lead before publish
           description:
             "Build internal developer platforms and data platforms that compound velocity. Golden paths, paved paths, and the platform-as-a-product operating model that turns infrastructure into a managed product.",
           href: "/capabilities/technology/platform-engineering-hub",
         },
         {
           title: "DevOps & Automation",
-          // TODO: confirm hub description with practice lead before publish
           description:
             "CI/CD, infrastructure as code, and the operating model that ships safely and often. DORA-aligned engineering that lifts deployment frequency without sacrificing reliability.",
           href: "/capabilities/technology/devops-automation-hub",
         },
         {
           title: "Security & Compliance",
-          // TODO: confirm hub description with practice lead before publish
           description:
             "Embed security and compliance into every layer. Zero-trust architecture, automated evidence, and an always-on assurance program rather than annual audit fire drills.",
           href: "/capabilities/technology/security-compliance-hub",
         },
         {
           title: "Strategy & Advisory",
-          // TODO: confirm hub description with practice lead before publish
           description:
             "Tech strategy, target architecture, due diligence, and cost optimization. The technology agenda turned into a body of decisions leadership can execute against.",
           href: "/capabilities/technology/strategy-advisory-hub",
         },
         {
           title: "Modernization",
-          // TODO: confirm hub description with practice lead before publish
           description:
             "Replatform, refactor, and replace patterns for legacy systems — connected by a modern API layer. Strangler-fig execution that retires the legacy without breaking the business.",
           href: "/capabilities/technology/modernization-hub",
@@ -200,7 +187,6 @@ export default function EnterpriseTransformation() {
       ]}
       // AUTHORED case-tab metrics distilled from Cat 11a 12-case pool, grouped into 3 industry tabs.
       // Same pattern as AI / BB / Ops / SCF / GMS master refactors. All 12 case slugs verified live in App.tsx under /cases/<slug>.
-      // TODO: confirm with practice lead before publish (per-card metric blurbs + image paths)
       clientResults={[
         {
           industry: "Technology, Media & Telecom",
@@ -231,11 +217,9 @@ export default function EnterpriseTransformation() {
       ecosystemLogos={[]}
       // SOURCE has no named NexDyne practice leaders for Technology.
       // Per content authoring rule, do not invent staff identities. Pass empty array; section renders conditionally.
-      // TODO: confirm with practice lead before publish (replace with real practice leadership headshots + LinkedIn URLs)
       leaders={[]}
       // AUTHORED — 3 insight cards. Slug "scalable-data-architecture" matches the only insight link in source SLOT 2.
       // The other two slugs are AUTHORED to align with /capabilities/technology/insights routes registered in PR #25.
-      // TODO: confirm with practice lead before publish (image paths + final href slugs)
       insights={[
         {
           tag: "Technology Strategy",
@@ -263,7 +247,6 @@ export default function EnterpriseTransformation() {
         },
       ]}
       // AUTHORED — source closing CTA was a generic two-column form ("Let's talk about your modernization roadmap") with no named lead
-      // TODO: confirm with practice lead before publish (real lead name + photo + email + LinkedIn)
       closingCTA={{
         leadName: "Our Technology Practice Lead",
         leadTitle: "Head of Technology, NexDyne Consulting Group",

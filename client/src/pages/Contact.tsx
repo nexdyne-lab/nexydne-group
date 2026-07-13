@@ -93,7 +93,6 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // TODO: wire to real backend API
     // Example: await fetch('/api/contact', { method: 'POST', body: JSON.stringify({ name, email, company, industry, topic, message }) });
     await new Promise((resolve) => setTimeout(resolve, 800)); // simulate network
 

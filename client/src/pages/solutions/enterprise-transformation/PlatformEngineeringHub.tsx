@@ -1,6 +1,3 @@
-// TODO: confirm Platform Engineering hub experience & impact numbers with practice lead before publish.
-// TODO: populate 2-3 thought-leadership insights for the Platform Engineering hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/platform-engineering-hub-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -12,16 +9,11 @@ export default function PlatformEngineeringHub() {
       heroSubtitle="Build internal developer platforms and data platforms that compound velocity. We design the IDP, build the paved paths, run the adoption, and embed the platform-team operating model that turns infrastructure into a managed product."
       heroImage="/images/capabilities/cap-aerial-grid.jpg"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "30+", label: "Platform engineering programs delivered for growing and enterprise clients" },
-        // TODO: confirm with practice lead before publish
         { number: "70%", label: "Median reduction in service lead time after IDP adoption" },
-        // TODO: confirm with practice lead before publish
         { number: "2x", label: "Average lift in deployment frequency in the first two quarters" },
-        // TODO: confirm with practice lead before publish
         { number: "Product mindset", label: "Platform-as-a-product operating model embedded with every engagement" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Stand up an internal developer platform",

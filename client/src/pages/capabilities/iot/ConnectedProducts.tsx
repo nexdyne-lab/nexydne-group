@@ -1,8 +1,3 @@
-// TODO: confirm Connected Products refactor content with IoT practice lead before publish.
-// TODO: confirm hero copy with content lead.
-// TODO: confirm Experience & Impact stats with practice lead before publish.
-// TODO: confirm outcomes list with practice lead before publish.
-// TODO: confirm CTA lead name + role + photo placeholder before publish.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 
@@ -26,19 +21,16 @@ export default function ConnectedProducts() {
       challenge="In the age of IoT, the product is just the beginning. Most product organizations are still optimizing the sell-and-forget transaction model — winning a one-time sale, then losing visibility into how customers actually use what they bought. That model leaves the most valuable signal on the table and caps the lifetime value of every relationship."
       opportunity="The real value lives in the data the product generates and the services it enables. By embedding intelligence into your products, you can predict maintenance needs, personalize user experiences, and unlock entirely new revenue streams through subscription-based services — shifting from a sell-and-forget model to a continuous engagement model that compounds over the life of the customer."
       approachPillars={[
-        // TODO: confirm pillar copy with practice lead before publish
         {
           step: "01",
           title: "Reimagine the product as a platform",
           body: "We start with the use case, not the chipset. Where does the connected product unlock new revenue, deepen the relationship, or remove friction your customers feel today?",
         },
-        // TODO: confirm pillar copy with practice lead before publish
         {
           step: "02",
           title: "Engineer for trust at scale",
           body: "We design the device, edge, cloud, and security layers as one system — so reliability, latency, and data protection are built in, not bolted on.",
         },
-        // TODO: confirm pillar copy with practice lead before publish
         {
           step: "03",
           title: "Operate, learn, evolve",
@@ -46,17 +38,11 @@ export default function ConnectedProducts() {
         },
       ]}
       outcomes={[
-        // TODO: confirm outcomes with practice lead before publish
         "A connected product portfolio strategy with quantified revenue impact and a phased build plan leadership has signed off on.",
-        // TODO: confirm outcomes with practice lead before publish
         "A first connected product release in market within two to three quarters, with telemetry and a feedback loop running from day one.",
-        // TODO: confirm outcomes with practice lead before publish
         "Recurring-revenue services attached to the hardware that lift customer lifetime value materially over the legacy transaction baseline.",
-        // TODO: confirm outcomes with practice lead before publish
         "Real-time visibility into how products are used in the field — a data asset your product, marketing, and service teams all draw on.",
-        // TODO: confirm outcomes with practice lead before publish
         "A security and privacy posture documented well enough to satisfy enterprise buyers, regulators, and partner ecosystems.",
-        // TODO: confirm outcomes with practice lead before publish
         "Internal product, firmware, and platform teams capable of running and extending the connected portfolio without permanent vendor dependency.",
       ]}
       featuredCases={[]}
@@ -65,7 +51,6 @@ export default function ConnectedProducts() {
         { slug: "iot-business-building", name: "IoT Business Building", href: "/capabilities/internet-of-things/iot-business-building" },
         { slug: "digital-twins", name: "Digital Twins", href: "/capabilities/artificial-intelligence/digital-twins" },
       ]}
-      // TODO: confirm CTA lead name + title + photo before publish
       ctaLeadName="Talk to our Internet of Things lead"
     />
   );

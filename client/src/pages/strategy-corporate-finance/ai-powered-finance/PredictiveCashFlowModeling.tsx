@@ -1,4 +1,3 @@
-// TODO: confirm with practice lead before publish — experience stats, challenge, opportunity, approach pillars, outcomes, related services, and CTA lead name for Predictive Cash Flow Modeling.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 

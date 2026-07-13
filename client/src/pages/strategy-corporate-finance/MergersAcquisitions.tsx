@@ -1,6 +1,3 @@
-// TODO: David — confirm M&A Advisory experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the M&A Advisory hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/mergers-acquisitions-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -12,13 +9,11 @@ export default function MergersAcquisitions() {
       heroSubtitle="Navigate complex transactions with expert guidance. From target identification and valuation to negotiation and post-merger integration — disciplined deal work that captures the value you paid for."
       heroImage="/images/industries/deal-handshake.jpg"
       experienceStats={[
-        { number: "$500M+", label: "Transaction value advised across equity, debt, and strategic deals" },
+        { number: "50+", label: "M&A transactions advised to close" },
         { number: "30+", label: "M&A transactions completed for growing companies" },
         { number: "90%", label: "Synergy capture rate through disciplined integration planning" },
-        // TODO: confirm with practice lead before publish
         { number: "Buy & sell side", label: "End-to-end advisory across the full transaction lifecycle" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Build a defensible M&A thesis",

@@ -948,7 +948,7 @@ function Router() {
         <Route path="/capabilities/technology/case-studies" component={TechnologyCaseStudiesListing} />
         <Route path="/capabilities/technology/insights/cloud-migration-roadmap" component={CloudMigrationRoadmap} />
         <Route path="/capabilities/technology/case-studies/healthcare-system-modernization" component={HealthcareSystemModernization} />
-        <Route path="/insights/mid-market-ai-access" component={AITechMidMarketAIAccess} />
+        <Route path="/insights/ai-access-guide" component={AITechMidMarketAIAccess} />
         <Route path="/insights/efficiency-improvement-reality" component={AITechEfficiencyImprovement} />
         <Route path="/insights/change-management-ai-success" component={AITechChangeManagement} />
         <Route path="/capabilities/artificial-intelligence" component={ArtificialIntelligence} />
@@ -1402,7 +1402,7 @@ function Router() {
         <Route path="/insights/growth-marketing" component={GrowthMarketingInsight} />
         <Route path="/insights/ai-adoption-outlook-2026" component={AIAdoptionOutlook2026} />
         <Route path="/insights/agentic-ai-budget-line" component={AgenticAIBudgetLine} />
-        <Route path="/insights/eu-ai-act-mid-market-playbook" component={EUAIActMidMarket} />
+        <Route path="/insights/eu-ai-act-playbook" component={EUAIActMidMarket} />
         <Route path="/insights/shadow-ai-inside-your-firm" component={ShadowAIInsideYourFirm} />
         <Route path="/insights/ai-answers-first-customer-channels" component={AIAnswersFirst} />
         <Route path="/insights/ceo-guide-data-modernization" component={CeoGuideDataModernization} />
@@ -1547,7 +1547,12 @@ function Router() {
         <Route path="/insights/strategic-plans-success" component={StrategicPlansSuccess} />
         <Route path="/insights/operating-model-redesign" component={OperatingModelRedesign} />
         <Route path="/insights/portfolio-management" component={PortfolioManagementInsight} />
-        <Route path="/insights/mid-market-ai-guide" component={MidMarketAIGuide} />
+        <Route path="/insights/practical-ai-guide" component={MidMarketAIGuide} />
+        <Route path="/insights/mid-market-ai-access">{() => <Redirect to="/insights/ai-access-guide" />}</Route>
+        <Route path="/insights/eu-ai-act-mid-market-playbook">{() => <Redirect to="/insights/eu-ai-act-playbook" />}</Route>
+        <Route path="/insights/mid-market-ai-guide">{() => <Redirect to="/insights/practical-ai-guide" />}</Route>
+        <Route path="/initiatives/mid-market-ai">{() => <Redirect to="/initiatives/ai-for-growth" />}</Route>
+        <Route path="/initiatives/mid-market-ai-access">{() => <Redirect to="/initiatives/ai-access" />}</Route>
         <Route path="/insights/scaling-operations" component={ScalingOperationsInsight} />
         <Route path="/insights/customer-intelligence" component={CustomerIntelligenceInsight} />
         <Route path="/insights" component={Insights} />
@@ -1687,8 +1692,8 @@ function Router() {
         <Route path="/cases/urban-capital-projects" component={UrbanCapitalProjectsIndustry} />
         <Route path="/resources/whitepapers/:slug" component={WhitepaperDownload} />
         <Route path="/initiatives" component={Initiatives} />
-        <Route path="/initiatives/mid-market-ai" component={MidMarketAIAccess} />
-        <Route path="/initiatives/mid-market-ai-access" component={MidMarketAIAccess} />
+        <Route path="/initiatives/ai-for-growth" component={MidMarketAIAccess} />
+        <Route path="/initiatives/ai-access" component={MidMarketAIAccess} />
         <Route path="/initiatives/intelligence-commons" component={IntelligenceCommons} />
         <Route path="/initiatives/regional-partnerships" component={RegionalPartnerships} />
         <Route path="/admin/leads" component={LeadsDashboard} />

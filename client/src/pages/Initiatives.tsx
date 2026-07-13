@@ -11,8 +11,8 @@ const initiatives = [
     label: "MID-MARKET AI ACCESS PROGRAM",
     title: "Expanding Access to Enterprise-Grade AI for America's Mid-Market",
     description: "NexDyne is leading a national effort to make advanced AI, analytics, and automation accessible to mid-market companies traditionally excluded from enterprise technology.",
-    image: "/images/initiatives/mid-market-ai-program.png",
-    link: "/initiatives/mid-market-ai-access"
+    image: "/images/initiatives/ai-for-growth.png",
+    link: "/initiatives/ai-access"
   },
   {
     id: "intelligence-commons",

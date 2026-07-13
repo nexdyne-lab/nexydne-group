@@ -108,7 +108,6 @@ export default function EcommerceStrategyLaunch() {
   const cases = [
     {
       industry: "Consumer Brands",
-      // TODO: replace with real stat
       title:
         "Heritage brand launches DTC channel that contributes 22 percent of revenue inside year one",
       description:
@@ -117,7 +116,6 @@ export default function EcommerceStrategyLaunch() {
     },
     {
       industry: "Industrial Distribution",
-      // TODO: replace with real stat
       title:
         "B2B portal replaces 40 percent of inbound order volume in the first six months",
       description:
@@ -293,7 +291,6 @@ export default function EcommerceStrategyLaunch() {
             <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-white/70 mb-6">
               The Outcome
             </span>
-            {/* TODO: replace with real stat */}
             <h2
               className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] mb-8"
               style={{ fontWeight: 500, letterSpacing: "-0.02em" }}
@@ -347,7 +344,6 @@ export default function EcommerceStrategyLaunch() {
                     <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
                       {result.industry}
                     </span>
-                    {/* TODO: replace with real stat */}
                     <h3 className="text-xl text-charcoal font-medium leading-[1.25] mb-4 group-hover:text-primary transition-colors">
                       {result.title}
                     </h3>

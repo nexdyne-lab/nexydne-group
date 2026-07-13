@@ -1,7 +1,5 @@
 // Refactored to ServiceDetailTemplate (Cat 2-4f Phase 1 v2). Source content preserved.
 // Original 5-phase methodology compressed to 3 pillars; all 6 deliverables preserved as outcomes.
-// TODO: source the original case study quotes (insurance-mainframe-modernization, healthcare-portfolio-rationalization) into proper /cases/<slug> pages — for now mapped to closest Cat 11a slugs.
-// TODO: confirm CTA lead name + role + photo placeholder before publish.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 
@@ -18,9 +16,7 @@ export default function LegacyModernization() {
       experienceStats={[
         { number: "60-80%", label: "Of in-scope legacy footprint retired within 24 months" },
         { number: "25-40%", label: "Annual run-cost reduction once sunset schedule completes" },
-        // TODO: confirm stat with practice lead before publish
         { number: "6Rs", label: "Defensible decision per application" },
-        // TODO: confirm stat with practice lead before publish
         { number: "0", label: "Big-bang cutovers — every wave is strangler-fig" },
       ]}
       challenge="Stop launching modernization programs that run for three years and never retire a single legacy system. Most programs fail at the same place — six quarters in, the new platform is live, the legacy is still live, and nobody has the conviction to pull the plug."

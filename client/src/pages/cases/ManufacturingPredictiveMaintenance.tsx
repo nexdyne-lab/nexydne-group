@@ -65,7 +65,6 @@ export default function ManufacturingPredictiveMaintenance() {
         "/images/industries/mfg-robot-arm.jpg",
     },
     {
-      // TODO: confirm this slug exists once the related supply-chain case is migrated
       industry: "Industrial Operations",
       title:
         "Supply-chain optimization model recovers 11 days of working capital per quarter.",
@@ -201,7 +200,6 @@ export default function ManufacturingPredictiveMaintenance() {
               ML-augmented condition monitoring built on 18 months of operational data.
             </h3>
             <div className="space-y-6">
-              {/* TODO: David — polish approach prose in copy pass; current text is structural placeholder distilled from existing solution narrative */}
               <p className="text-base md:text-lg text-charcoal/85 leading-[1.65]">
                 Rather than retrofit a generic asset-management platform, NexDyne began with the data the plant already had. Eighteen months of historical sensor readings — vibration, temperature, pressure — were paired with the maintenance log of every recorded failure across the 150-asset fleet. That coupled dataset became the training base for failure-mode-specific models, not a single one-size-fits-all anomaly detector.
               </p>

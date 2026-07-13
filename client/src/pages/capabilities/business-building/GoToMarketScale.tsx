@@ -1,5 +1,3 @@
-// TODO: David — confirm Go-To-Market at Scale experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Go-To-Market at Scale hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -13,11 +11,8 @@ export default function GoToMarketScale() {
       heroImage="/images/go-to-market-abstract.jpg"
       heroFocal="55% 50%"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "85+", label: "GTM programs across tech, healthcare, and professional services" },
-        // TODO: confirm with practice lead before publish
         { number: "55%", label: "Average reduction in customer acquisition cost" },
-        // TODO: confirm with practice lead before publish
         { number: "3x", label: "Faster time-to-market with proven GTM frameworks" },
       ]}
       ambitions={[

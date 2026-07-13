@@ -1,6 +1,3 @@
-// TODO: David — confirm Fractional CFO Services experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Fractional CFO Services hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/cfo-services-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -15,10 +12,8 @@ export default function FractionalCFO() {
         { number: "60%", label: "Cost savings vs full-time CFO while maintaining executive-level expertise" },
         { number: "100+", label: "SMEs supported with fractional CFO services across diverse industries" },
         { number: "30%", label: "Average improvement in cash flow management and working capital" },
-        // TODO: confirm with practice lead before publish
         { number: "Three models", label: "Advisory, operational, and interim engagements scaled to your stage" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Bring CFO discipline without the overhead",

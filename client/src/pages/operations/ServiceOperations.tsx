@@ -1,6 +1,3 @@
-// TODO: David — confirm Service Operations experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Service Operations hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/service-operations-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -15,10 +12,8 @@ export default function ServiceOperations() {
         { number: "100+", label: "Service operations transformations across industries" },
         { number: "25-40%", label: "Typical improvement in service delivery efficiency" },
         { number: "30-50%", label: "Increase in customer satisfaction scores" },
-        // TODO: confirm with practice lead before publish
         { number: "Omnichannel", label: "Field, contact center, and digital service models" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Lift first-contact resolution",

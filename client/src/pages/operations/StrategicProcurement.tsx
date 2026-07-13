@@ -1,6 +1,3 @@
-// TODO: David — confirm Strategic Procurement experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Strategic Procurement hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/strategic-procurement-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -15,10 +12,8 @@ export default function StrategicProcurement() {
         { number: "120+", label: "Procurement transformation engagements for midmarket companies" },
         { number: "15-25%", label: "Typical reduction in total procurement spend" },
         { number: "30-50%", label: "Improvement in supplier performance and reliability" },
-        // TODO: confirm with practice lead before publish
         { number: "Category-led", label: "Sourcing strategies tailored by spend category" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Get true spend visibility",

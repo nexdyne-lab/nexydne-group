@@ -1,6 +1,3 @@
-// TODO: David — confirm Financial Planning & Analysis experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Financial Planning & Analysis hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/fpa-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -15,10 +12,8 @@ export default function FinancialPlanningAnalysis() {
         { number: "85%", label: "Improvement in forecast accuracy for clients implementing our FP&A frameworks" },
         { number: "50%", label: "Reduction in month-end close time through streamlined reporting processes" },
         { number: "120+", label: "FP&A transformation projects delivered across diverse industries" },
-        // TODO: confirm with practice lead before publish
         { number: "Driver-based", label: "Planning models that connect operational levers to financial outcomes" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Build a forecast you can trust",

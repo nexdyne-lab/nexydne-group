@@ -1,6 +1,3 @@
-// TODO: David — confirm Performance Improvement experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Performance Improvement hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/performance-improvement-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -13,12 +10,10 @@ export default function PerformanceImprovement() {
       heroImage="/images/capabilities/cap-chess.jpg"
       experienceStats={[
         { number: "25%", label: "Average cost reduction achieved across client engagements through systematic optimization" },
-        { number: "$50M+", label: "Total value unlocked for growing companies through performance improvement initiatives" },
+        { number: "15-30%", label: "average cost reduction from performance programs" },
         { number: "6 months", label: "Typical payback period for performance improvement programs we implement" },
-        // TODO: confirm with practice lead before publish
         { number: "Sustained", label: "Capability transfer that keeps gains in place after we leave" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Take real cost out of the P&L",

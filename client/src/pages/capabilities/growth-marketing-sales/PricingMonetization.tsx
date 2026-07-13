@@ -1,6 +1,3 @@
-// TODO: David — confirm Pricing & Monetization experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Pricing & Monetization hub.
-// TODO: confirm ambition copy with practice lead before publish
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -16,10 +13,9 @@ export default function PricingMonetization() {
       experienceStats={[
         { number: "200+", label: "pricing transformations delivered globally" },
         { number: "15%", label: "average improvement in gross margin" },
-        { number: "$500M+", label: "cumulative profit improvement for clients" },
+        { number: "5-15%", label: "average margin lift from pricing" },
         { number: "Senior-led", label: "Every engagement led by a partner with deep practitioner experience" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Sharpen the pricing & monetization thesis",

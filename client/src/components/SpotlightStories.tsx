@@ -34,7 +34,7 @@ const stories: Story[] = [
     summary:
       "You don't have to build AI to be covered; deploying it is enough. A 90-day compliance posture for mid-market firms that use AI in hiring, credit, or customer decisions.",
     cta: "More on AI regulation",
-    href: "/insights/eu-ai-act-mid-market-playbook",
+    href: "/insights/eu-ai-act-playbook",
     image: "/images/spotlight-eu-ai-act.jpg",
   },
   {

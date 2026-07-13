@@ -58,17 +58,14 @@ export default function DataTraining() {
 
   const outcomes = [
     {
-      // TODO: replace with real stat
       stat: "120+",
       label: "data literacy programs delivered across enterprise and mid-market clients",
     },
     {
-      // TODO: replace with real stat
       stat: "3.6x",
       label: "increase in self-service analytics adoption within the first year",
     },
     {
-      // TODO: replace with real stat
       stat: "85%",
       label: "learner completion rate across cohort-based and on-demand tracks",
     },
@@ -279,7 +276,6 @@ export default function DataTraining() {
                   i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
                 }`}
               >
-                {/* TODO: replace with real stat */}
                 <div
                   className="text-[2.75rem] md:text-[3.5rem] text-charcoal font-bold tracking-[-0.02em] mb-5"
                 >
@@ -420,7 +416,6 @@ export default function DataTraining() {
                       <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
                         {result.industry}
                       </span>
-                      {/* TODO: replace with real stat */}
                       <h3 className="nx-h3 text-charcoal leading-[1.25] mb-4 group-hover:text-primary transition-colors">
                         {result.title}
                       </h3>

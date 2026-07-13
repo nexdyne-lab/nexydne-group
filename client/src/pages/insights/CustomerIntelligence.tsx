@@ -5,7 +5,7 @@ export default function CustomerIntelligence() {
     {
       title: "How Mid-Market Companies Are Winning with AI",
       category: "Featured",
-      link: "/insights/mid-market-ai-guide",
+      link: "/insights/practical-ai-guide",
       image: "/images/insight-ai-midmarket.jpg"
     },
     {

@@ -1,5 +1,4 @@
 // Refactored to ServiceDetailTemplate (Cat 2-4f Phase 1 v2). Source content preserved.
-// TODO: confirm CTA lead name + role + photo placeholder before publish.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 
@@ -17,7 +16,6 @@ export default function DevOpsAutomation() {
         { number: "120+", label: "CI/CD pipelines designed and deployed across enterprise engineering teams" },
         { number: "6.8x", label: "Increase in deployment frequency after a typical DevOps engagement" },
         { number: "74%", label: "Average reduction in mean-time-to-restore after observability rollout" },
-        // TODO: confirm stat with practice lead before publish
         { number: "DORA", label: "Elite-quartile metrics — multiple safe deploys a day, minute-long incidents" },
       ]}
       challenge="The deploy is the product. Everything else is opinion. A decade of DORA research has settled the debate, the tools have caught up, and the gap is in execution discipline rather than technology choice."

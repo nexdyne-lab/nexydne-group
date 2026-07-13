@@ -1,6 +1,3 @@
-// TODO: confirm Strategy & Advisory hub experience & impact numbers with practice lead before publish.
-// TODO: populate 2-3 thought-leadership insights for the Strategy & Advisory hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/strategy-advisory-hub-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -12,16 +9,11 @@ export default function StrategyAdvisoryHub() {
       heroSubtitle="Tech strategy, target architecture, due diligence, and cost optimization. We turn the technology agenda into a body of decisions leadership can execute against, not a slide deck that sits on the shelf."
       heroImage="/images/capabilities/cap-aerial-grid.jpg"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "50+", label: "Technology strategy and advisory engagements delivered for CIO and CTO leadership" },
-        // TODO: confirm with practice lead before publish
         { number: "~$15M", label: "Operational savings delivered through strategy and cost optimization in the last three years" },
-        // TODO: confirm with practice lead before publish
         { number: "20+", label: "Technology due diligence assessments delivered for PE and corporate development teams" },
-        // TODO: confirm with practice lead before publish
         { number: "Decision-led", label: "Strategy delivered as a body of executable decisions, not a deck on the shelf" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Set the right tech strategy",

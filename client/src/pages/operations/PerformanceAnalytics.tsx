@@ -1,5 +1,3 @@
-// TODO: David — confirm Performance Analytics experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Performance Analytics hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -14,10 +12,8 @@ export default function PerformanceAnalytics() {
         { number: "90+", label: "Analytics programs delivered across industries" },
         { number: "40-60%", label: "Typical improvement in decision-making speed" },
         { number: "85-95%", label: "Forecast accuracy achieved through predictive models" },
-        // TODO: confirm with practice lead before publish
         { number: "Live", label: "Operational dashboards and control towers" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Decide faster",

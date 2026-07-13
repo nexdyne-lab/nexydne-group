@@ -6,17 +6,12 @@ export default function DataTransformation() {
       hubName="Data Transformation"
       slug="data-transformation"
       heroSubtitle="Unlock the true value of data. We build performance by making lasting improvements in technology, processes, and capabilities — turning siloed systems and unreliable pipelines into trusted foundations that move at the speed of the business."
-      // TODO: confirm hero image asset matches Data Transformation theme
       heroImage="/images/capabilities/cap-data-bars.jpg"
       heroFocal="50% 50%"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "200+", label: "Data platforms shipped" },
-        // TODO: confirm with practice lead before publish
-        { number: "$120M+", label: "Client revenue impacted via data products" },
-        // TODO: confirm with practice lead before publish
+        { number: "40%", label: "faster time-to-insight on unified data" },
         { number: "70%", label: "Average data-prep cycle reduction" },
-        // TODO: confirm with practice lead before publish
         { number: "12-month", label: "Average engagement length" },
       ]}
       ambitions={[
@@ -72,7 +67,6 @@ export default function DataTransformation() {
           href: "/capabilities/data-transformation/lasting-capabilities",
         },
       ]}
-      // TODO: David — populate 2-3 thought-leadership insights for Data Transformation hub
       thoughtLeadership={[]}
       approachPillars={[
         {

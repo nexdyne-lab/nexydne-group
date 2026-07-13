@@ -120,7 +120,7 @@ const MENU: Record<Exclude<NavItem, null>, MenuConfig> = {
       eyebrow: "Spotlight",
       title: "Winning with governed AI in the mid-market",
       desc: "A practical guide to scaling human judgment alongside automation.",
-      href: "/insights/mid-market-ai-guide",
+      href: "/insights/practical-ai-guide",
       cta: "Read the guide",
     },
   },

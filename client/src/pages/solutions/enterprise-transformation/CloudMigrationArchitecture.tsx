@@ -1,5 +1,4 @@
 // Refactored to ServiceDetailTemplate (Cat 2-4f Phase 1 v2). Source content preserved.
-// TODO: confirm CTA lead name + role + photo placeholder before publish.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 
@@ -16,9 +15,7 @@ export default function CloudMigrationArchitecture() {
       experienceStats={[
         { number: "40-60%", label: "Fewer cutover incidents on programs that earn the 6Rs decision first" },
         { number: "10-20%", label: "Of portfolio retired entirely instead of paying to lift it" },
-        // TODO: confirm stat with practice lead before publish
         { number: "6Rs", label: "Defensible decision per workload before execution" },
-        // TODO: confirm stat with practice lead before publish
         { number: "0", label: "Cutovers without a written rollback plan" },
       ]}
       challenge="Stop migrating workloads. Start deciding which ones earn their flight. Most programs lift-and-shift the same operating problems into a new bill, then spend two years reconciling cost dashboards instead of capturing the value."

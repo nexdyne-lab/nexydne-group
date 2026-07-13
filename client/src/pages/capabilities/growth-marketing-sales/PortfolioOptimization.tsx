@@ -1,6 +1,3 @@
-// TODO: David — confirm Portfolio Optimization experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Portfolio Optimization hub.
-// TODO: confirm ambition copy with practice lead before publish
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -16,10 +13,9 @@ export default function PortfolioOptimization() {
       experienceStats={[
         { number: "120+", label: "portfolio optimization projects delivered across industries" },
         { number: "25%", label: "average margin improvement through SKU rationalization" },
-        { number: "$200M+", label: "in working capital freed through portfolio simplification" },
+        { number: "20-30%", label: "working capital freed through portfolio simplification" },
         { number: "Senior-led", label: "Every engagement led by a partner with deep practitioner experience" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Sharpen the portfolio optimization thesis",

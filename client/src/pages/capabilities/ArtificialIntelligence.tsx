@@ -30,14 +30,12 @@ export default function ArtificialIntelligence() {
           label:
             "of our AI projects reach production (vs. 15% industry average)",
         },
-        // TODO: confirm with practice lead before publish
         {
           number: "18 wks",
           label: "median time from kickoff to first production AI workload",
         },
       ]}
       // AUTHORED — featured uses source insight #1 title + AUTHORED summary; secondary uses source insights #2, #3
-      // TODO: confirm with practice lead before publish (featured summary)
       thoughtLeadership={{
         featured: {
           tag: "Strategy",
@@ -46,7 +44,7 @@ export default function ArtificialIntelligence() {
           summary:
             "Most AI programs stall between proof-of-concept and production. We outline the practical sequencing, governance, and team model that separates the firms that scale AI from those that abandon it after the first pilot.",
           image: "/images/insight-ai-playbook.jpg",
-          href: "/insights/mid-market-ai-playbook",
+          href: "/insights/practical-ai-guide",
         },
         secondary: [
           {
@@ -284,10 +282,8 @@ export default function ArtificialIntelligence() {
       // SOURCE has 4 leader cards but they are CLIENT TESTIMONIALS not internal practice leaders.
       // Spec describes "Our Leaders in <Capability>" with name + role + LinkedIn — i.e., NexDyne staff.
       // Per content authoring rule, do not invent staff identities. Pass empty array; section renders conditionally.
-      // TODO: confirm with practice lead before publish (replace with real practice leadership headshots + LinkedIn URLs)
       leaders={[]}
       // PRESERVED 3 insight cards verbatim from source (title + image + link); tags + readTime AUTHORED
-      // TODO: confirm with practice lead before publish (readTime values)
       insights={[
         {
           tag: "Strategy",
@@ -295,7 +291,7 @@ export default function ArtificialIntelligence() {
             "The AI Playbook: Where to Start and How to Scale",
           readTime: "8 min read",
           image: "/images/insight-ai-playbook.jpg",
-          href: "/insights/mid-market-ai-playbook",
+          href: "/insights/practical-ai-guide",
         },
         {
           tag: "Technology",
@@ -313,7 +309,6 @@ export default function ArtificialIntelligence() {
         },
       ]}
       // AUTHORED — source closing CTA was generic "Ready to explore AI" copy (no named lead)
-      // TODO: confirm with practice lead before publish (real lead name + photo + email + LinkedIn)
       closingCTA={{
         leadName: "Our AI Practice Lead",
         leadTitle: "Head of Artificial Intelligence, NexDyne Consulting Group",

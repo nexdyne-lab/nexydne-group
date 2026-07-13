@@ -1,5 +1,3 @@
-// TODO: David — confirm AI-Powered Acceleration experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the AI-Powered Acceleration hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -13,11 +11,8 @@ export default function AIPoweredAcceleration() {
       heroImage="/images/ai-acceleration-abstract.jpg"
       heroFocal="55% 50%"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "60+", label: "AI implementations across finance, ops, and customer experience" },
-        // TODO: confirm with practice lead before publish
         { number: "45%", label: "Average productivity improvement from AI automation" },
-        // TODO: confirm with practice lead before publish
         { number: "8 Mo", label: "Typical AI strategy to production deployment" },
       ]}
       ambitions={[

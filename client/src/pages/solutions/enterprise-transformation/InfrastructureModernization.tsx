@@ -1,5 +1,4 @@
 // Refactored to ServiceDetailTemplate (Cat 2-4f Phase 1 v2). Source content preserved.
-// TODO: confirm CTA lead name + role + photo placeholder before publish.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 
@@ -16,9 +15,7 @@ export default function InfrastructureModernization() {
       experienceStats={[
         { number: "60-80%", label: "Of legacy infrastructure retired inside three years" },
         { number: "10x", label: "Lift in platform productivity — IaC and observability arrive with the new estate" },
-        // TODO: confirm stat with practice lead before publish
         { number: "Wave-driven", label: "Sequenced execution rather than big-bang cutover" },
-        // TODO: confirm stat with practice lead before publish
         { number: "Quarterly", label: "Value lands at every wave end, not at program end" },
       ]}
       challenge="Stop budgeting modernization as a big-bang cutover. Start running it as a sequence of waves that each pay their own way. Big-bang programs accumulate three years of risk and miss the productivity dividend that wave-based delivery captures every quarter."

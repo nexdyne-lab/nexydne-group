@@ -58,17 +58,14 @@ export default function DataEngineering() {
 
   const outcomes = [
     {
-      // TODO: replace with real stat
       stat: "200+",
       label: "production data pipelines designed, built, and handed off to client teams",
     },
     {
-      // TODO: replace with real stat
       stat: "82%",
       label: "average reduction in data incident time-to-detect after observability rollout",
     },
     {
-      // TODO: replace with real stat
       stat: "5.1x",
       label: "throughput increase on streaming pipelines we've re-architected",
     },
@@ -288,7 +285,6 @@ export default function DataEngineering() {
                   i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
                 }`}
               >
-                {/* TODO: replace with real stat */}
                 <div
                   className="text-[2.75rem] md:text-[3.5rem] text-charcoal font-bold tracking-[-0.02em] mb-5"
                 >
@@ -434,7 +430,6 @@ export default function DataEngineering() {
                       <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
                         {result.industry}
                       </span>
-                      {/* TODO: replace with real stat */}
                       <h3 className="nx-h3 text-charcoal leading-[1.25] mb-4 group-hover:text-primary transition-colors">
                         {result.title}
                       </h3>

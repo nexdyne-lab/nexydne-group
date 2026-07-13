@@ -1,6 +1,3 @@
-// TODO: David — confirm Workforce Optimization experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Workforce Optimization hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/workforce-optimization-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -15,10 +12,8 @@ export default function WorkforceOptimization() {
         { number: "60+", label: "Workforce transformation programs across industries" },
         { number: "20-35%", label: "Typical improvement in labor productivity" },
         { number: "40-50%", label: "Reduction in employee turnover through engagement programs" },
-        // TODO: confirm with practice lead before publish
         { number: "Frontline-up", label: "Capability building from operator to leader" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Plan capacity with precision",

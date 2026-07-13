@@ -32,7 +32,7 @@ export const capabilityPerspectives: Record<PerspectiveTopic, PerspectiveCard[]>
       category: "Featured",
       readTime: "8 min read",
       image: "/images/insight-ai-midmarket.jpg",
-      link: "/insights/mid-market-ai-guide",
+      link: "/insights/practical-ai-guide",
     },
     {
       title: "The EU AI Act is enforcing in stages — August 2026 is the big one.",
@@ -41,7 +41,7 @@ export const capabilityPerspectives: Record<PerspectiveTopic, PerspectiveCard[]>
       category: "Governance",
       readTime: "12 min read",
       image: "/images/insight-eu-ai-act.jpg",
-      link: "/insights/eu-ai-act-mid-market-playbook",
+      link: "/insights/eu-ai-act-playbook",
     },
   ],
   growth: [

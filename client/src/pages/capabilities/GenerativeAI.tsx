@@ -1,5 +1,3 @@
-// TODO: David — confirm Generative AI experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Generative AI hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -9,17 +7,12 @@ export default function GenerativeAI() {
       hubName="Generative AI"
       slug="generative-ai"
       heroSubtitle="Deploy intelligent assistants and content systems that handle complex inquiries, draft documentation, and accelerate every knowledge worker — freeing your workforce for higher-value strategic impact."
-      // TODO: confirm hero image asset matches Generative AI theme
       heroImage="/images/capabilities/cap-ai-search.jpg"
       heroFocal="55% 50%"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "100+", label: "GenAI use cases shipped to production" },
-        // TODO: confirm with practice lead before publish
         { number: "40%", label: "Average productivity lift on knowledge work" },
-        // TODO: confirm with practice lead before publish
         { number: "50%", label: "Reduction in time spent drafting and researching" },
-        // TODO: confirm with practice lead before publish
         { number: "12-week", label: "Typical strategy-to-production cycle" },
       ]}
       ambitions={[

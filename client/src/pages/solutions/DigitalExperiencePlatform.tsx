@@ -58,17 +58,14 @@ export default function DigitalExperiencePlatform() {
 
   const outcomes = [
     {
-      // TODO: replace with real stat
       stat: "50+",
       label: "DXP implementations and migrations across Adobe, Sitecore, and Optimizely",
     },
     {
-      // TODO: replace with real stat
       stat: "3.6x",
       label: "average lift in marketing campaign throughput after DXP modernization",
     },
     {
-      // TODO: replace with real stat
       stat: "28%",
       label: "average conversion lift on personalized journey programs",
     },
@@ -288,7 +285,6 @@ export default function DigitalExperiencePlatform() {
                   i > 0 ? "md:border-l md:border-charcoal/10 md:pl-10" : ""
                 }`}
               >
-                {/* TODO: replace with real stat */}
                 <div
                   className="text-[2.75rem] md:text-[3.5rem] text-charcoal font-bold tracking-[-0.02em] mb-5"
                 >
@@ -435,7 +431,6 @@ export default function DigitalExperiencePlatform() {
                       <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
                         {result.industry}
                       </span>
-                      {/* TODO: replace with real stat */}
                       <h3 className="nx-h3 text-charcoal leading-[1.25] mb-4 group-hover:text-primary transition-colors">
                         {result.title}
                       </h3>

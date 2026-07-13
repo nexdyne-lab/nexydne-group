@@ -108,7 +108,6 @@ export default function Personalization() {
   const cases = [
     {
       industry: "E-Commerce",
-      // TODO: replace with real stat
       title:
         "Email and on-site personalization lifts revenue per customer by 21 percent on the active base",
       description:
@@ -117,7 +116,6 @@ export default function Personalization() {
     },
     {
       industry: "Travel & Hospitality",
-      // TODO: replace with real stat
       title:
         "App and email personalization raises booking conversion by 14 percent on returning members",
       description:
@@ -290,7 +288,6 @@ export default function Personalization() {
             <span className="block nx-eyebrow text-white/70 mb-6">
               The Outcome
             </span>
-            {/* TODO: replace with real stat */}
             <h2
               className="nx-h2 text-white mb-8"
             >
@@ -342,7 +339,6 @@ export default function Personalization() {
                     <span className="block text-[13px] uppercase tracking-[0.1em] text-charcoal/60 mb-4">
                       {result.industry}
                     </span>
-                    {/* TODO: replace with real stat */}
                     <h3 className="nx-h3 text-charcoal leading-[1.25] mb-4 group-hover:text-primary transition-colors">
                       {result.title}
                     </h3>

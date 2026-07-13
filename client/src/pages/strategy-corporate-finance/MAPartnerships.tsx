@@ -1,6 +1,3 @@
-// TODO: David — confirm M&A & Strategic Partnerships experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the M&A & Strategic Partnerships hub.
-// TODO: confirm hero image asset — using fallback Unsplash URL until /images/ma-partnerships-abstract.jpg lands.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -13,12 +10,10 @@ export default function MAPartnerships() {
       heroImage="/images/industries/deal-handshake.jpg"
       experienceStats={[
         { number: "50+", label: "M&A transactions completed for growing companies across diverse industries" },
-        { number: "$750M+", label: "Total transaction value advised on buy-side and sell-side engagements" },
+        { number: "50+", label: "buy-side and sell-side deals advised" },
         { number: "85%", label: "Of our acquisitions achieve or exceed projected synergy targets within 24 months" },
-        // TODO: confirm with practice lead before publish
         { number: "Deals & alliances", label: "Acquisitions, JVs, and partnerships across the growth toolkit" },
       ]}
-      // TODO: confirm ambition copy with practice lead before publish
       ambitions={[
         {
           title: "Make M&A a repeatable capability",

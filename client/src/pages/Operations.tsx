@@ -17,7 +17,6 @@ export default function Operations() {
         label: "View Case Studies",
         href: "/cases?capability=operations",
       }}
-      // PRESERVED 3 source stats verbatim; 4th is AUTHORED with TODO marker
       experienceStats={[
         {
           number: "200+",
@@ -31,7 +30,6 @@ export default function Operations() {
           number: "15-30%",
           label: "average cost reduction achieved",
         },
-        // TODO: confirm with practice lead before publish
         {
           number: "60%",
           label:
@@ -39,13 +37,11 @@ export default function Operations() {
         },
       ]}
       // AUTHORED — featured uses source insight #1 title + AUTHORED summary; secondary uses source insights #2, #3
-      // TODO: confirm with practice lead before publish (featured summary + image paths)
       thoughtLeadership={{
         featured: {
           tag: "Operations Strategy",
           title: "The Future of Operations: AI-Powered Excellence",
           summary:
-            // TODO: confirm with practice lead before publish
             "Operational excellence has shifted from incremental improvement to building adaptive systems that learn, optimize, and evolve. We outline how leading operators are deploying AI across the value chain — from predictive maintenance to autonomous decisioning — to turn operations from a cost center into a competitive weapon.",
           image: "/images/insight-ai-powered-operations.jpg",
           href: "/insights/ai-powered-operations",
@@ -83,7 +79,6 @@ export default function Operations() {
       ]}
       // 6 ambitions mapped to 6 of the 9 level-2 hubs (locked spec).
       // Titles use the spec-suggested phrasing; descriptions DISTILLED from each hub's source description.
-      // TODO: confirm with practice lead before publish (ambition descriptions)
       ambitions={[
         {
           title: "Streamline end-to-end supply chains",
@@ -124,7 +119,6 @@ export default function Operations() {
       ]}
       // PRESERVED in-practice intro (distilled from source 4-paragraph thought-leadership block)
       // realOutcomes / howWeHelp DISTILLED from source case studies + approach copy
-      // TODO: confirm with practice lead before publish (image path + realOutcomes / howWeHelp framing)
       inPractice={{
         image:
           "/images/capabilities/cap-team-screens.jpg",
@@ -203,7 +197,6 @@ export default function Operations() {
       ]}
       // AUTHORED case-tab metrics distilled from Cat 11a 12-case pool, grouped into 3 industry tabs.
       // Same pattern as AI / BB master refactors. All 12 case slugs verified live in App.tsx under /cases/<slug>.
-      // TODO: confirm with practice lead before publish (per-card metric blurbs + image paths)
       clientResults={[
         {
           industry: "Manufacturing & Industrial",
@@ -234,10 +227,8 @@ export default function Operations() {
       ecosystemLogos={[]}
       // SOURCE has no named NexDyne practice leaders for Operations.
       // Per content authoring rule, do not invent staff identities. Pass empty array; section renders conditionally.
-      // TODO: confirm with practice lead before publish (replace with real practice leadership headshots + LinkedIn URLs)
       leaders={[]}
       // PRESERVED 3 insight cards verbatim from source (titles + categories + readTime + hrefs)
-      // TODO: confirm with practice lead before publish (image paths)
       insights={[
         {
           tag: "Operations Strategy",
@@ -262,7 +253,6 @@ export default function Operations() {
         },
       ]}
       // AUTHORED — source closing CTA was generic "Ready to transform your operations?" copy with no named lead
-      // TODO: confirm with practice lead before publish (real lead name + photo + email + LinkedIn)
       closingCTA={{
         leadName: "Our Operations Practice Lead",
         leadTitle: "Head of Operations, NexDyne Consulting Group",

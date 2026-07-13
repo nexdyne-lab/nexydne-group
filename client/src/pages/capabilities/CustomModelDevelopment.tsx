@@ -1,5 +1,3 @@
-// TODO: David — confirm Custom Model Development experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Custom Model Development hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -9,17 +7,12 @@ export default function CustomModelDevelopment() {
       hubName="Custom Model Development"
       slug="custom-model-development"
       heroSubtitle="Build proprietary AI models tailored to your unique business challenges. From fine-tuning foundation models to training custom architectures, we deliver AI that fits your data, your domain, and your economics."
-      // TODO: confirm hero image asset matches Custom Model Development theme
       heroImage="/images/capabilities/cap-coder.jpg"
       heroFocal="55% 45%"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "90+", label: "Custom models trained and deployed" },
-        // TODO: confirm with practice lead before publish
         { number: "3x", label: "Typical accuracy lift over off-the-shelf models" },
-        // TODO: confirm with practice lead before publish
         { number: "60%", label: "Average inference cost reduction post-optimization" },
-        // TODO: confirm with practice lead before publish
         { number: "12-week", label: "Median engagement length, prototype to production" },
       ]}
       ambitions={[

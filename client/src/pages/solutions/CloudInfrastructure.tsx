@@ -1,5 +1,4 @@
 // Refactored to ServiceDetailTemplate (Cat 2-4f Phase 1 v2). Source content preserved.
-// TODO: confirm CTA lead name + role + photo placeholder before publish.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 
@@ -17,7 +16,6 @@ export default function CloudInfrastructure() {
         { number: "140+", label: "Cloud migration and modernization programs delivered to production" },
         { number: "37%", label: "Median reduction in run-rate cloud spend after FinOps engagement" },
         { number: "3.5x", label: "Average lift in deploy frequency after platform engineering investment" },
-        // TODO: confirm stat with practice lead before publish
         { number: "1/3+", label: "Run-rate cloud spend cut while lifting deploy frequency by multiples" },
       ]}
       challenge="Most cloud programs trade one set of bills for another. The first migration retires the data center and introduces a new bill, the second tries to optimize that bill, and the third — done well — turns the cloud into a developer-velocity platform."

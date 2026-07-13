@@ -1,5 +1,3 @@
-// TODO: David — confirm Digital Transformation Accelerator experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Digital Transformation Accelerator hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -13,11 +11,8 @@ export default function DigitalTransformationAccelerator() {
       heroImage="/images/digital-transformation-abstract.jpg"
       heroFocal="55% 50%"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "40-60%", label: "Infrastructure cost reduction through cloud optimization" },
-        // TODO: confirm with practice lead before publish
         { number: "70%", label: "Faster integration delivery with standardized API frameworks" },
-        // TODO: confirm with practice lead before publish
         { number: "99.9%", label: "System availability through redundancy and automated failover" },
       ]}
       ambitions={[
@@ -79,14 +74,12 @@ export default function DigitalTransformationAccelerator() {
           href: "/capabilities/business-building/digital-transformation-accelerator/optimization-governance",
         },
         {
-          // TODO: confirm with practice lead before publish
           title: "Legacy Modernization",
           description:
             "Decompose monolithic legacy systems into modular services using strangler-fig and event-driven patterns — retiring technical debt incrementally without halting feature delivery.",
           href: "/capabilities/business-building/digital-transformation-accelerator/legacy-modernization",
         },
         {
-          // TODO: confirm with practice lead before publish
           title: "DevSecOps Enablement",
           description:
             "Stand up CI/CD pipelines, infrastructure-as-code, and security automation that turn architecture decisions into safely repeatable deployments at your scale.",

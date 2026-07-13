@@ -218,7 +218,7 @@ export default function EfficiencyImprovement() {
             <h2 className="text-2xl font-bold text-charcoal mb-8">Related Insights</h2>
             
             <div className="grid md:grid-cols-3 gap-8">
-              <Link href="/insights/mid-market-ai-access" className="group">
+              <Link href="/insights/ai-access-guide" className="group">
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                   <div className="aspect-[16/10] bg-gradient-to-br from-charcoal to-charcoal"></div>
                   <div className="p-6">

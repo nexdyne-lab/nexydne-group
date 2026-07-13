@@ -1,5 +1,3 @@
-// TODO: David — confirm Distinctive Expertise experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Distinctive Expertise hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -13,11 +11,8 @@ export default function DistinctiveExpertise() {
       heroImage="/images/distinctive-expertise-abstract.jpg"
       heroFocal="55% 50%"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "200+", label: "Transformation playbooks across 12 core industries" },
-        // TODO: confirm with practice lead before publish
         { number: "65%", label: "Faster time-to-value vs. custom approaches" },
-        // TODO: confirm with practice lead before publish
         { number: "12", label: "Industry-specific frameworks refined from real implementations" },
       ]}
       ambitions={[

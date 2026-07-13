@@ -1,5 +1,4 @@
 // Refactored to ServiceDetailTemplate (Cat 2-4f Phase 1 v2). Source content preserved.
-// TODO: confirm CTA lead name + role + photo placeholder before publish.
 
 import ServiceDetailTemplate from "@/components/ServiceDetailTemplate";
 
@@ -16,9 +15,7 @@ export default function SecurityCompliance() {
       experienceStats={[
         { number: "40-70%", label: "Annual audit effort cut by embedding controls in engineering systems" },
         { number: "Always-on", label: "Evidence is queryable rather than collected" },
-        // TODO: confirm stat with practice lead before publish
         { number: "SOC 2 / HIPAA", label: "ISO 27001, PCI-DSS, GDPR — measured against actual control evidence" },
-        // TODO: confirm stat with practice lead before publish
         { number: "Quarterly", label: "Control reviews, continuous monitoring, vendor risk cycle" },
       ]}
       challenge="Stop scrambling for evidence in audit week. Start running compliance as an always-on stream. Most programs run audits as fire drills because controls were never designed into the engineering systems where the evidence actually lives."

@@ -99,7 +99,7 @@ export default function MidMarketAIAccess() {
       <SEO 
         title="Mid-Market AI Access Program | NexDyne Initiatives" 
         description="Expanding access to enterprise-grade AI for America's mid-market companies. A national effort to make advanced AI, analytics, and automation accessible."
-        canonical="/initiatives/mid-market-ai"
+        canonical="/initiatives/ai-for-growth"
       />
       <Navigation />
       

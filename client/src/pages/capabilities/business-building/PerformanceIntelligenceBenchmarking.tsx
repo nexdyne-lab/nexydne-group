@@ -1,5 +1,3 @@
-// TODO: David — confirm Performance Intelligence & Benchmarking experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Performance Intelligence & Benchmarking hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -13,11 +11,8 @@ export default function PerformanceIntelligenceBenchmarking() {
       heroImage="/images/performance-intelligence-abstract.jpg"
       heroFocal="55% 50%"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "25-40%", label: "Performance improvement across benchmarked metrics in 12-18 mo" },
-        // TODO: confirm with practice lead before publish
         { number: "60%", label: "Faster decision cycles with real-time visibility" },
-        // TODO: confirm with practice lead before publish
         { number: "3-5x", label: "Investment ROI accuracy via benchmark-validated modeling" },
       ]}
       ambitions={[
@@ -79,14 +74,12 @@ export default function PerformanceIntelligenceBenchmarking() {
           href: "/capabilities/business-building/performance-intelligence-benchmarking/continuous-improvement",
         },
         {
-          // TODO: confirm with practice lead before publish
           title: "Predictive Analytics & Forecasting",
           description:
             "Layer machine-learning forecasts and scenario models on top of your KPI framework so leadership debates next-quarter trade-offs with probabilistic ranges, not best-guess point estimates.",
           href: "/capabilities/business-building/performance-intelligence-benchmarking/predictive-analytics",
         },
         {
-          // TODO: confirm with practice lead before publish
           title: "Executive Dashboard Design",
           description:
             "Design role-specific executive dashboards — board, CEO, functional leaders — that surface the right ten metrics for each audience and make exception-based management the default.",

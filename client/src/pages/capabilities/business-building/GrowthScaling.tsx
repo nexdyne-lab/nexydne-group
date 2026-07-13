@@ -1,5 +1,3 @@
-// TODO: David — confirm Growth & Scaling experience & impact numbers with practice lead before publish.
-// TODO: David — populate 2-3 thought-leadership insights for the Growth & Scaling hub.
 
 import CapabilityHubTemplate from "@/components/CapabilityHubTemplate";
 
@@ -13,11 +11,8 @@ export default function GrowthScaling() {
       heroImage="/images/growth-scaling-abstract.jpg"
       heroFocal="55% 50%"
       experienceStats={[
-        // TODO: confirm with practice lead before publish
         { number: "4.2x", label: "Average revenue growth over 24-month engagements" },
-        // TODO: confirm with practice lead before publish
         { number: "35+", label: "Companies scaled from $5M to $50M+ ARR" },
-        // TODO: confirm with practice lead before publish
         { number: "12", label: "International market expansions across 4 continents" },
       ]}
       ambitions={[
