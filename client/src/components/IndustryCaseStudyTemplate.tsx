@@ -150,7 +150,7 @@ export default function IndustryCaseStudyTemplate({
             transition={{ duration: 0.8 }}
             className="max-w-4xl"
           >
-            <span className="inline-block px-4 py-1.5 bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider rounded-full mb-6">
+            <span className="inline-block px-4 py-1.5 bg-amber/20 text-amber text-xs font-bold uppercase tracking-wider rounded-full mb-6">
               {industry}
             </span>
             
@@ -317,7 +317,7 @@ export default function IndustryCaseStudyTemplate({
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="nx-eyebrow text-primary mb-4 block">
+              <span className="nx-eyebrow text-amber mb-4 block">
                 The Results
               </span>
               <h2 className="nx-h2 text-white mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
@@ -334,7 +334,7 @@ export default function IndustryCaseStudyTemplate({
                     transition={{ duration: 0.5, delay: index * 0.08 }}
                     className="border-t border-white/20 pt-5"
                   >
-                    <div className="text-5xl md:text-6xl font-semibold text-primary tracking-tight leading-none mb-4">
+                    <div className="text-5xl md:text-6xl font-semibold text-amber tracking-tight leading-none mb-4">
                       {result.value}
                     </div>
                     <div className="text-base font-medium text-white mb-1.5">{result.label}</div>

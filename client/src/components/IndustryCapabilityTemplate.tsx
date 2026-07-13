@@ -359,7 +359,7 @@ export default function IndustryCapabilityTemplate(
             transition={{ duration: 0.6, ease }}
             className="max-w-3xl"
           >
-            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-6">
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-amber mb-6">
               Work With Us
             </span>
             <h2 className="nx-h2 text-white mb-8 leading-[1.12]">{cta.heading}</h2>
