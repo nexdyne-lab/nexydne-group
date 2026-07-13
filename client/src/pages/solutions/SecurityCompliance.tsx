@@ -46,8 +46,9 @@ export default function SecurityCompliance() {
         "Permanent ongoing assurance program — quarterly control reviews, continuous monitoring dashboards, vendor risk cycle, and incident exercise calendar.",
       ]}
       featuredCases={[
-        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
-        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
+        { slug: "security-compliance-hardening", title: "Turning compliance into an always-on posture", industry: "Financial Services", metric: "Audit-ready", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "legacy-core-modernization", title: "Modernizing a legacy core without a big-bang rewrite", industry: "Insurance", metric: "70%", image: "/images/industries/ops-monitors-dark.jpg" },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-trader.jpg" },
       ]}
       relatedServices={[
         { slug: "security-and-compliance", name: "Enterprise Security & Compliance", href: "/capabilities/technology/security-and-compliance" },

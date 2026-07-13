@@ -893,6 +893,10 @@ import GovernmentBenefitsAIIndustry from "./pages/cases/industries/GovernmentBen
 import SmartCityInfrastructureIndustry from "./pages/cases/industries/SmartCityInfrastructure";
 import DefenseSupplyChainIndustry from "./pages/cases/industries/DefenseSupplyChain";
 import AerospaceDigitalEngineeringIndustry from "./pages/cases/industries/AerospaceDigitalEngineering";
+import CloudMigrationHealthSystem from "./pages/cases/industries/CloudMigrationHealthSystem";
+import LegacyCoreModernization from "./pages/cases/industries/LegacyCoreModernization";
+import PlatformEngineeringDeveloperVelocity from "./pages/cases/industries/PlatformEngineeringDeveloperVelocity";
+import SecurityComplianceHardening from "./pages/cases/industries/SecurityComplianceHardening";
 import WorkforceSchedulingOptimization from "./pages/cases/industries/WorkforceSchedulingOptimization";
 import StrategicSourcingSavings from "./pages/cases/industries/StrategicSourcingSavings";
 import GenerativeAIDocumentAutomation from "./pages/cases/industries/GenerativeAIDocumentAutomation";
@@ -1676,6 +1680,10 @@ function Router() {
         <Route path="/cases/smart-city-platform" component={SmartCityInfrastructureIndustry} />
         <Route path="/cases/supply-chain-visibility" component={DefenseSupplyChainIndustry} />
         <Route path="/cases/aerospace-digital-engineering" component={AerospaceDigitalEngineeringIndustry} />
+        <Route path="/cases/cloud-migration-health-system" component={CloudMigrationHealthSystem} />
+        <Route path="/cases/legacy-core-modernization" component={LegacyCoreModernization} />
+        <Route path="/cases/platform-engineering-developer-velocity" component={PlatformEngineeringDeveloperVelocity} />
+        <Route path="/cases/security-compliance-hardening" component={SecurityComplianceHardening} />
         <Route path="/cases/workforce-scheduling-optimization" component={WorkforceSchedulingOptimization} />
         <Route path="/cases/strategic-sourcing-savings" component={StrategicSourcingSavings} />
         <Route path="/cases/generative-ai-document-automation" component={GenerativeAIDocumentAutomation} />

@@ -189,27 +189,27 @@ export default function EnterpriseTransformation() {
       // Same pattern as AI / BB / Ops / SCF / GMS master refactors. All 12 case slugs verified live in App.tsx under /cases/<slug>.
       clientResults={[
         {
-          industry: "Technology, Media & Telecom",
+          industry: "Cloud & Modernization",
           cases: [
-            { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", metric: "3x faster releases", image: "/images/capabilities/cap-conference-data.jpg" },
-            { slug: "media-streaming-launch", title: "Launching a streaming service that won 750K subscribers", metric: "750K subscribers won", image: "/images/industries/tech-datacenter.jpg" },
-            { slug: "telecom-customer-experience", title: "Cutting a regional carrier's churn by 40%", metric: "40% less churn", image: "/images/capabilities/cap-iot-network.jpg" },
+            { slug: "cloud-migration-health-system", title: "Moving core systems to the cloud without disruption", metric: "35%", image: "/images/industries/tech-datacenter.jpg" },
+            { slug: "legacy-core-modernization", title: "Modernizing a legacy core without a big-bang rewrite", metric: "70%", image: "/images/industries/ops-monitors-dark.jpg" },
+            { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", metric: "$30M", image: "/images/capabilities/cap-battery-factory.jpg" },
           ],
         },
         {
-          industry: "Financial Services",
+          industry: "Platform & Delivery",
           cases: [
-            { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", metric: "73% less fraud loss", image: "/images/industries/fin-monitors.jpg" },
-            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "$24M new revenue", image: "/images/industries/fin-trader.jpg" },
-            { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", metric: "40% faster quoting", image: "/images/industries/fin-handshake-city.jpg" },
+            { slug: "platform-engineering-developer-velocity", title: "Shipping faster with an internal developer platform", metric: "3x", image: "/images/capabilities/cap-conference-data.jpg" },
+            { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", metric: "3x", image: "/images/capabilities/cap-iot-network.jpg" },
+            { slug: "media-streaming-launch", title: "Launching a streaming service that won 750K subscribers", metric: "750K", image: "/images/industries/tech-datacenter.jpg" },
           ],
         },
         {
-          industry: "Manufacturing & Energy",
+          industry: "Security & Data",
           cases: [
-            { slug: "semiconductor-quality-prediction", title: "Catching chip defects weeks before they appear", metric: "92% defect detection", image: "/images/industries/mfg-robot-arm.jpg" },
-            { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", metric: "New services line", image: "/images/capabilities/cap-battery-factory.jpg" },
-            { slug: "utility-grid-modernization", title: "Cutting outage time nearly in half for a regional utility", metric: "45% less outage time", image: "/images/industries/energy-solar.jpg" },
+            { slug: "security-compliance-hardening", title: "Turning compliance into an always-on posture", metric: "Audit-ready", image: "/images/industries/fin-monitors.jpg" },
+            { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+            { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", metric: "73%", image: "/images/industries/fin-trader.jpg" },
           ],
         },
       ]}
