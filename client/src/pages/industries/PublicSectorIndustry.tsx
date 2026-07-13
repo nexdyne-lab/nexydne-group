@@ -41,22 +41,22 @@ export default function PublicSectorIndustry() {
       capabilities={[
         {
           name: "Operations Excellence",
-          href: "/capabilities/operations-excellence",
+          href: "/industries/public-sector/operations-excellence",
           blurb: "Automate back-office work, modernize service delivery, and build the program-management muscle to execute at scale."
         },
         {
           name: "Customer Intelligence",
-          href: "/capabilities/customer-intelligence",
+          href: "/industries/public-sector/customer-intelligence",
           blurb: "Engineer citizen experiences with human-centered design, journey analytics, and accessibility built in, not bolted on."
         },
         {
           name: "Data Transformation",
-          href: "/capabilities/data-transformation",
+          href: "/industries/public-sector/data-transformation",
           blurb: "Unify agency data into a governed platform for modern decisions, AI use cases, and credible public reporting."
         },
         {
           name: "Risk & Resilience",
-          href: "/capabilities/risk-resilience",
+          href: "/industries/public-sector/risk-resilience",
           blurb: "The cyber, FedRAMP, and operational-resilience posture today's threats and oversight environment require."
         }
       ]}

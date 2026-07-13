@@ -41,22 +41,22 @@ export default function PrivateEquityIndustry() {
       capabilities={[
         {
           name: "Strategy & Growth",
-          href: "/capabilities/strategy-growth",
+          href: "/industries/private-equity/strategy-growth",
           blurb: "Commercial value-creation plans across pricing, segmentation, and go-to-market that lift growth in the hold."
         },
         {
           name: "Operations Excellence",
-          href: "/capabilities/operations-excellence",
+          href: "/industries/private-equity/operations-excellence",
           blurb: "Cost, working-capital, and operating-model improvement with delivery rigor tuned to hold-period economics."
         },
         {
           name: "Data Transformation",
-          href: "/capabilities/data-transformation",
+          href: "/industries/private-equity/data-transformation",
           blurb: "The data foundations and AI use cases that lift EBITDA in the hold and survive diligence at exit."
         },
         {
           name: "Risk & Resilience",
-          href: "/capabilities/risk-resilience",
+          href: "/industries/private-equity/risk-resilience",
           blurb: "Diligence and remediate cyber, regulatory, and operational risk so deals close cleanly and exit value holds."
         }
       ]}

@@ -41,22 +41,22 @@ export default function UrbanDevelopmentIndustry() {
       capabilities={[
         {
           name: "Strategy & Growth",
-          href: "/capabilities/strategy-growth",
+          href: "/industries/urban-development/strategy-growth",
           blurb: "The long-horizon urban strategies — economic, mobility, housing — that align investment with community outcomes."
         },
         {
           name: "Data Transformation",
-          href: "/capabilities/data-transformation",
+          href: "/industries/urban-development/data-transformation",
           blurb: "Unify city, developer, and infrastructure data into a governed platform for modern AI across the urban model."
         },
         {
           name: "Operations Excellence",
-          href: "/capabilities/operations-excellence",
+          href: "/industries/urban-development/operations-excellence",
           blurb: "Modernize permitting, asset management, and constituent services with automation tuned to public-sector procurement."
         },
         {
           name: "Risk & Resilience",
-          href: "/capabilities/risk-resilience",
+          href: "/industries/urban-development/risk-resilience",
           blurb: "The cyber, climate-resilience, and operational-continuity programs cities and infrastructure operators need."
         }
       ]}

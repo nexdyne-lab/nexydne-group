@@ -41,22 +41,22 @@ export default function InsuranceIndustry() {
       capabilities={[
         {
           name: "Risk & Resilience",
-          href: "/capabilities/risk-resilience",
+          href: "/industries/insurance/risk-resilience",
           blurb: "The model-risk, regulatory, and operational-resilience programs regulators and reinsurers expect of credible carriers."
         },
         {
           name: "Data Transformation",
-          href: "/capabilities/data-transformation",
+          href: "/industries/insurance/data-transformation",
           blurb: "Unify policy, claims, and third-party data into one fabric for AI-driven underwriting, claims, and pricing."
         },
         {
           name: "Operations Excellence",
-          href: "/capabilities/operations-excellence",
+          href: "/industries/insurance/operations-excellence",
           blurb: "Automate underwriting, claims, and policy operations to lower expense ratio and improve the broker experience."
         },
         {
           name: "Customer Intelligence",
-          href: "/capabilities/customer-intelligence",
+          href: "/industries/insurance/customer-intelligence",
           blurb: "Engineer broker, distribution, and customer experiences with the digital tools modern insurance buyers expect."
         }
       ]}

@@ -791,6 +791,50 @@ import HealthcareCustomerIntelligence from "./pages/industries/healthcare/Custom
 import HealthcareOperationsExcellence from "./pages/industries/healthcare/OperationsExcellence";
 import HealthcareDataTransformation from "./pages/industries/healthcare/DataTransformation";
 import HealthcareRiskResilience from "./pages/industries/healthcare/RiskResilience";
+import AerospaceDefenseOperationsExcellence from "./pages/industries/aerospace-defense/OperationsExcellence";
+import AerospaceDefenseRiskResilience from "./pages/industries/aerospace-defense/RiskResilience";
+import AerospaceDefenseDataTransformation from "./pages/industries/aerospace-defense/DataTransformation";
+import AerospaceDefenseStrategyGrowth from "./pages/industries/aerospace-defense/StrategyGrowth";
+import AutomotiveOperationsExcellence from "./pages/industries/automotive/OperationsExcellence";
+import AutomotiveDataTransformation from "./pages/industries/automotive/DataTransformation";
+import AutomotiveStrategyGrowth from "./pages/industries/automotive/StrategyGrowth";
+import AutomotiveRiskResilience from "./pages/industries/automotive/RiskResilience";
+import EducationCustomerIntelligence from "./pages/industries/education/CustomerIntelligence";
+import EducationOperationsExcellence from "./pages/industries/education/OperationsExcellence";
+import EducationDataTransformation from "./pages/industries/education/DataTransformation";
+import EducationStrategyGrowth from "./pages/industries/education/StrategyGrowth";
+import EnergyUtilitiesOperationsExcellence from "./pages/industries/energy-utilities/OperationsExcellence";
+import EnergyUtilitiesDataTransformation from "./pages/industries/energy-utilities/DataTransformation";
+import EnergyUtilitiesRiskResilience from "./pages/industries/energy-utilities/RiskResilience";
+import EnergyUtilitiesCustomerIntelligence from "./pages/industries/energy-utilities/CustomerIntelligence";
+import InsuranceRiskResilience from "./pages/industries/insurance/RiskResilience";
+import InsuranceDataTransformation from "./pages/industries/insurance/DataTransformation";
+import InsuranceOperationsExcellence from "./pages/industries/insurance/OperationsExcellence";
+import InsuranceCustomerIntelligence from "./pages/industries/insurance/CustomerIntelligence";
+import PrivateEquityStrategyGrowth from "./pages/industries/private-equity/StrategyGrowth";
+import PrivateEquityOperationsExcellence from "./pages/industries/private-equity/OperationsExcellence";
+import PrivateEquityDataTransformation from "./pages/industries/private-equity/DataTransformation";
+import PrivateEquityRiskResilience from "./pages/industries/private-equity/RiskResilience";
+import PublicSectorOperationsExcellence from "./pages/industries/public-sector/OperationsExcellence";
+import PublicSectorCustomerIntelligence from "./pages/industries/public-sector/CustomerIntelligence";
+import PublicSectorDataTransformation from "./pages/industries/public-sector/DataTransformation";
+import PublicSectorRiskResilience from "./pages/industries/public-sector/RiskResilience";
+import TechnologyMediaTelecomStrategyGrowth from "./pages/industries/technology-media-telecom/StrategyGrowth";
+import TechnologyMediaTelecomDataTransformation from "./pages/industries/technology-media-telecom/DataTransformation";
+import TechnologyMediaTelecomCustomerIntelligence from "./pages/industries/technology-media-telecom/CustomerIntelligence";
+import TechnologyMediaTelecomOperationsExcellence from "./pages/industries/technology-media-telecom/OperationsExcellence";
+import TransportationLogisticsOperationsExcellence from "./pages/industries/transportation-logistics/OperationsExcellence";
+import TransportationLogisticsDataTransformation from "./pages/industries/transportation-logistics/DataTransformation";
+import TransportationLogisticsCustomerIntelligence from "./pages/industries/transportation-logistics/CustomerIntelligence";
+import TransportationLogisticsStrategyGrowth from "./pages/industries/transportation-logistics/StrategyGrowth";
+import TravelHospitalityPricingRevenueManagement from "./pages/industries/travel-hospitality/PricingRevenueManagement";
+import TravelHospitalityCustomerIntelligence from "./pages/industries/travel-hospitality/CustomerIntelligence";
+import TravelHospitalityOperationsExcellence from "./pages/industries/travel-hospitality/OperationsExcellence";
+import TravelHospitalityDataTransformation from "./pages/industries/travel-hospitality/DataTransformation";
+import UrbanDevelopmentStrategyGrowth from "./pages/industries/urban-development/StrategyGrowth";
+import UrbanDevelopmentDataTransformation from "./pages/industries/urban-development/DataTransformation";
+import UrbanDevelopmentOperationsExcellence from "./pages/industries/urban-development/OperationsExcellence";
+import UrbanDevelopmentRiskResilience from "./pages/industries/urban-development/RiskResilience";
 import FinancialServicesIndustry from "./pages/industries/FinancialServicesIndustry";
 import FinancialServicesCustomerGrowthStrategy from "./pages/industries/financial-services/CustomerGrowthStrategy";
 import FinancialServicesDigitalDataTransformation from "./pages/industries/financial-services/DigitalDataTransformation";
@@ -1522,21 +1566,65 @@ function Router() {
         <Route path="/industries/retail/operations-excellence" component={RetailOperationsExcellence} />
         <Route path="/industries/retail/data-transformation" component={RetailDataTransformation} />
         <Route path="/industries/retail" component={RetailIndustry} />
+        <Route path="/industries/aerospace-defense/operations-excellence" component={AerospaceDefenseOperationsExcellence} />
+        <Route path="/industries/aerospace-defense/risk-resilience" component={AerospaceDefenseRiskResilience} />
+        <Route path="/industries/aerospace-defense/data-transformation" component={AerospaceDefenseDataTransformation} />
+        <Route path="/industries/aerospace-defense/strategy-growth" component={AerospaceDefenseStrategyGrowth} />
         <Route path="/industries/aerospace-defense" component={AerospaceDefenseIndustry} />
+        <Route path="/industries/automotive/operations-excellence" component={AutomotiveOperationsExcellence} />
+        <Route path="/industries/automotive/data-transformation" component={AutomotiveDataTransformation} />
+        <Route path="/industries/automotive/strategy-growth" component={AutomotiveStrategyGrowth} />
+        <Route path="/industries/automotive/risk-resilience" component={AutomotiveRiskResilience} />
         <Route path="/industries/automotive" component={AutomotiveIndustry} />
         <Route path="/industries/consumer-products/customer-intelligence" component={ConsumerProductsCustomerIntelligence} />
         <Route path="/industries/consumer-products/pricing-revenue-management" component={ConsumerProductsPricingRevenueManagement} />
         <Route path="/industries/consumer-products/operations-excellence" component={ConsumerProductsOperationsExcellence} />
         <Route path="/industries/consumer-products/data-transformation" component={ConsumerProductsDataTransformation} />
         <Route path="/industries/consumer-products" component={ConsumerProductsIndustry} />
+        <Route path="/industries/education/customer-intelligence" component={EducationCustomerIntelligence} />
+        <Route path="/industries/education/operations-excellence" component={EducationOperationsExcellence} />
+        <Route path="/industries/education/data-transformation" component={EducationDataTransformation} />
+        <Route path="/industries/education/strategy-growth" component={EducationStrategyGrowth} />
         <Route path="/industries/education" component={EducationIndustry} />
+        <Route path="/industries/energy-utilities/operations-excellence" component={EnergyUtilitiesOperationsExcellence} />
+        <Route path="/industries/energy-utilities/data-transformation" component={EnergyUtilitiesDataTransformation} />
+        <Route path="/industries/energy-utilities/risk-resilience" component={EnergyUtilitiesRiskResilience} />
+        <Route path="/industries/energy-utilities/customer-intelligence" component={EnergyUtilitiesCustomerIntelligence} />
         <Route path="/industries/energy-utilities" component={EnergyUtilitiesIndustry} />
+        <Route path="/industries/insurance/risk-resilience" component={InsuranceRiskResilience} />
+        <Route path="/industries/insurance/data-transformation" component={InsuranceDataTransformation} />
+        <Route path="/industries/insurance/operations-excellence" component={InsuranceOperationsExcellence} />
+        <Route path="/industries/insurance/customer-intelligence" component={InsuranceCustomerIntelligence} />
         <Route path="/industries/insurance" component={InsuranceIndustry} />
+        <Route path="/industries/private-equity/strategy-growth" component={PrivateEquityStrategyGrowth} />
+        <Route path="/industries/private-equity/operations-excellence" component={PrivateEquityOperationsExcellence} />
+        <Route path="/industries/private-equity/data-transformation" component={PrivateEquityDataTransformation} />
+        <Route path="/industries/private-equity/risk-resilience" component={PrivateEquityRiskResilience} />
         <Route path="/industries/private-equity" component={PrivateEquityIndustry} />
+        <Route path="/industries/public-sector/operations-excellence" component={PublicSectorOperationsExcellence} />
+        <Route path="/industries/public-sector/customer-intelligence" component={PublicSectorCustomerIntelligence} />
+        <Route path="/industries/public-sector/data-transformation" component={PublicSectorDataTransformation} />
+        <Route path="/industries/public-sector/risk-resilience" component={PublicSectorRiskResilience} />
         <Route path="/industries/public-sector" component={PublicSectorIndustry} />
+        <Route path="/industries/technology-media-telecom/strategy-growth" component={TechnologyMediaTelecomStrategyGrowth} />
+        <Route path="/industries/technology-media-telecom/data-transformation" component={TechnologyMediaTelecomDataTransformation} />
+        <Route path="/industries/technology-media-telecom/customer-intelligence" component={TechnologyMediaTelecomCustomerIntelligence} />
+        <Route path="/industries/technology-media-telecom/operations-excellence" component={TechnologyMediaTelecomOperationsExcellence} />
         <Route path="/industries/technology-media-telecom" component={TechnologyMediaTelecomIndustry} />
+        <Route path="/industries/transportation-logistics/operations-excellence" component={TransportationLogisticsOperationsExcellence} />
+        <Route path="/industries/transportation-logistics/data-transformation" component={TransportationLogisticsDataTransformation} />
+        <Route path="/industries/transportation-logistics/customer-intelligence" component={TransportationLogisticsCustomerIntelligence} />
+        <Route path="/industries/transportation-logistics/strategy-growth" component={TransportationLogisticsStrategyGrowth} />
         <Route path="/industries/transportation-logistics" component={TransportationLogisticsIndustry} />
+        <Route path="/industries/travel-hospitality/pricing-revenue-management" component={TravelHospitalityPricingRevenueManagement} />
+        <Route path="/industries/travel-hospitality/customer-intelligence" component={TravelHospitalityCustomerIntelligence} />
+        <Route path="/industries/travel-hospitality/operations-excellence" component={TravelHospitalityOperationsExcellence} />
+        <Route path="/industries/travel-hospitality/data-transformation" component={TravelHospitalityDataTransformation} />
         <Route path="/industries/travel-hospitality" component={TravelHospitalityIndustry} />
+        <Route path="/industries/urban-development/strategy-growth" component={UrbanDevelopmentStrategyGrowth} />
+        <Route path="/industries/urban-development/data-transformation" component={UrbanDevelopmentDataTransformation} />
+        <Route path="/industries/urban-development/operations-excellence" component={UrbanDevelopmentOperationsExcellence} />
+        <Route path="/industries/urban-development/risk-resilience" component={UrbanDevelopmentRiskResilience} />
         <Route path="/industries/urban-development" component={UrbanDevelopmentIndustry} />
         {/* Industry Case Study Routes */}
         <Route path="/cases/financial-fraud-detection" component={FinancialFraudDetectionIndustry} />

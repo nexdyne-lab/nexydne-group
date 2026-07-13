@@ -41,22 +41,22 @@ export default function EnergyUtilitiesIndustry() {
       capabilities={[
         {
           name: "Operations Excellence",
-          href: "/capabilities/operations-excellence",
+          href: "/industries/energy-utilities/operations-excellence",
           blurb: "Modernize asset performance, work management, and field operations with AI analytics and connected-worker tools."
         },
         {
           name: "Data Transformation",
-          href: "/capabilities/data-transformation",
+          href: "/industries/energy-utilities/data-transformation",
           blurb: "Unify OT, asset, and customer data into one platform for DERMS, predictive maintenance, and AI-driven planning."
         },
         {
           name: "Risk & Resilience",
-          href: "/capabilities/risk-resilience",
+          href: "/industries/energy-utilities/risk-resilience",
           blurb: "The cyber, NERC-CIP, and operational-resilience posture regulators and customers demand of critical infrastructure."
         },
         {
           name: "Customer Intelligence",
-          href: "/capabilities/customer-intelligence",
+          href: "/industries/energy-utilities/customer-intelligence",
           blurb: "Engineer the customer experience — billing, outage, programs — with the personalization utility customers now expect."
         }
       ]}

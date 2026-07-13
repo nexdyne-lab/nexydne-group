@@ -41,22 +41,22 @@ export default function TransportationLogisticsIndustry() {
       capabilities={[
         {
           name: "Operations Excellence",
-          href: "/capabilities/operations-excellence",
+          href: "/industries/transportation-logistics/operations-excellence",
           blurb: "Modernize network, dispatch, and warehouse operations with AI optimization and connected-worker tools."
         },
         {
           name: "Data Transformation",
-          href: "/capabilities/data-transformation",
+          href: "/industries/transportation-logistics/data-transformation",
           blurb: "Unify TMS, WMS, and partner data into a real-time visibility platform for modern AI across the network."
         },
         {
           name: "Customer Intelligence",
-          href: "/capabilities/customer-intelligence",
+          href: "/industries/transportation-logistics/customer-intelligence",
           blurb: "Engineer shipper, broker, and end-customer experiences with the digital, self-service tools buyers now expect."
         },
         {
           name: "Strategy & Growth",
-          href: "/capabilities/strategy-growth",
+          href: "/industries/transportation-logistics/strategy-growth",
           blurb: "The value-added services, platform, and pricing strategies that turn operational excellence into commercial advantage."
         }
       ]}

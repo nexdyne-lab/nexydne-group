@@ -41,22 +41,22 @@ export default function TechnologyMediaTelecomIndustry() {
       capabilities={[
         {
           name: "Strategy & Growth",
-          href: "/capabilities/strategy-growth",
+          href: "/industries/technology-media-telecom/strategy-growth",
           blurb: "Product, pricing, and go-to-market strategies that turn TMT convergence into commercial advantage."
         },
         {
           name: "Data Transformation",
-          href: "/capabilities/data-transformation",
+          href: "/industries/technology-media-telecom/data-transformation",
           blurb: "Unify product, customer, and network data into one platform for modern AI across the TMT stack."
         },
         {
           name: "Customer Intelligence",
-          href: "/capabilities/customer-intelligence",
+          href: "/industries/technology-media-telecom/customer-intelligence",
           blurb: "Engineer audience, subscriber, and enterprise-customer experiences with the personalization TMT economics require."
         },
         {
           name: "Operations Excellence",
-          href: "/capabilities/operations-excellence",
+          href: "/industries/technology-media-telecom/operations-excellence",
           blurb: "Modernize network, content, and back-office operations with AI automation that protects margin and speeds product velocity."
         }
       ]}

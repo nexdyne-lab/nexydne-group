@@ -41,22 +41,22 @@ export default function TravelHospitalityIndustry() {
       capabilities={[
         {
           name: "Pricing & Revenue Management",
-          href: "/capabilities/pricing-revenue",
+          href: "/industries/travel-hospitality/pricing-revenue-management",
           blurb: "The pricing, distribution, and channel decisions that protect RevPAR and unit economics in a volatile market."
         },
         {
           name: "Customer Intelligence",
-          href: "/capabilities/customer-intelligence",
+          href: "/industries/travel-hospitality/customer-intelligence",
           blurb: "The guest-data foundation, journey analytics, and personalization that turn travel intent into loyalty and lifetime value."
         },
         {
           name: "Operations Excellence",
-          href: "/capabilities/operations-excellence",
+          href: "/industries/travel-hospitality/operations-excellence",
           blurb: "Modernize property, network, and back-office operations with AI automation that protects margin and improves the guest experience."
         },
         {
           name: "Data Transformation",
-          href: "/capabilities/data-transformation",
+          href: "/industries/travel-hospitality/data-transformation",
           blurb: "Unify reservation, loyalty, and operations data into one fabric for modern AI across the customer and operating model."
         }
       ]}

@@ -41,22 +41,22 @@ export default function EducationIndustry() {
       capabilities={[
         {
           name: "Customer Intelligence",
-          href: "/capabilities/customer-intelligence",
+          href: "/industries/education/customer-intelligence",
           blurb: "Engineer the prospective-, current-, and lifetime-learner experience with journey analytics and personalization."
         },
         {
           name: "Operations Excellence",
-          href: "/capabilities/operations-excellence",
+          href: "/industries/education/operations-excellence",
           blurb: "Automate financial aid, registration, and back-office work to free capacity for student-success outcomes."
         },
         {
           name: "Data Transformation",
-          href: "/capabilities/data-transformation",
+          href: "/industries/education/data-transformation",
           blurb: "Unify SIS, LMS, and CRM into one learner record that powers modern advising and AI-driven personalization."
         },
         {
           name: "Strategy & Growth",
-          href: "/capabilities/strategy-growth",
+          href: "/industries/education/strategy-growth",
           blurb: "The program-portfolio, market-expansion, and credential strategy that define enrollment across the next horizon."
         }
       ]}

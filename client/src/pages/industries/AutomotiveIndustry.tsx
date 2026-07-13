@@ -41,22 +41,22 @@ export default function AutomotiveIndustry() {
       capabilities={[
         {
           name: "Operations Excellence",
-          href: "/capabilities/operations-excellence",
+          href: "/industries/automotive/operations-excellence",
           blurb: "Modernize plant operations, launch management, and supplier quality with predictive analytics and connected-worker tools."
         },
         {
           name: "Data Transformation",
-          href: "/capabilities/data-transformation",
+          href: "/industries/automotive/data-transformation",
           blurb: "Unify vehicle, manufacturing, and connected-services data into one platform for software-defined product and AI engineering."
         },
         {
           name: "Strategy & Growth",
-          href: "/capabilities/strategy-growth",
+          href: "/industries/automotive/strategy-growth",
           blurb: "Validate the connected-services, EV, and mobility plays that will define the next product cycle and its commercial model."
         },
         {
           name: "Risk & Resilience",
-          href: "/capabilities/risk-resilience",
+          href: "/industries/automotive/risk-resilience",
           blurb: "Multi-tier supply-chain visibility, connected-vehicle cyber posture, and the regulatory readiness programs increasingly require."
         }
       ]}

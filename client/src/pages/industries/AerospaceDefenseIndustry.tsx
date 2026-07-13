@@ -41,22 +41,22 @@ export default function AerospaceDefenseIndustry() {
       capabilities={[
         {
           name: "Operations Excellence",
-          href: "/capabilities/operations-excellence",
+          href: "/industries/aerospace-defense/operations-excellence",
           blurb: "Digital engineering, MBSE, and program-management muscle that compress cycle times without sacrificing mission assurance."
         },
         {
           name: "Risk & Resilience",
-          href: "/capabilities/risk-resilience",
+          href: "/industries/aerospace-defense/risk-resilience",
           blurb: "The cyber, CMMC, and supply-chain visibility posture primes and government now require across the base."
         },
         {
           name: "Data Transformation",
-          href: "/capabilities/data-transformation",
+          href: "/industries/aerospace-defense/data-transformation",
           blurb: "One data thread across engineering, manufacturing, and sustainment that powers AI through the program lifecycle."
         },
         {
           name: "Strategy & Growth",
-          href: "/capabilities/strategy-growth",
+          href: "/industries/aerospace-defense/strategy-growth",
           blurb: "The new-program and adjacent-market plays the next budget cycle will reward."
         }
       ]}
