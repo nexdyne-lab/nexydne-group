@@ -919,6 +919,24 @@ import DistributionOrderFulfillmentRedesign from "./pages/cases/industries/Distr
 import HospitalDischargeWorkflowRedesign from "./pages/cases/industries/HospitalDischargeWorkflowRedesign";
 import ManufacturingOptimization from "./pages/cases/industries/ManufacturingOptimization";
 import FinancialServicesCompliance from "./pages/cases/industries/FinancialServicesCompliance";
+import SubscriptionCheckoutCro from "./pages/cases/industries/SubscriptionCheckoutCro";
+import LenderApplicationFunnelCro from "./pages/cases/industries/LenderApplicationFunnelCro";
+import SaasAdjacentProductMvp from "./pages/cases/industries/SaasAdjacentProductMvp";
+import WealthDigitalAdvisoryMvp from "./pages/cases/industries/WealthDigitalAdvisoryMvp";
+import ConsumerDtcLaunch from "./pages/cases/industries/ConsumerDtcLaunch";
+import B2bEcommerceLaunch from "./pages/cases/industries/B2bEcommerceLaunch";
+import SpecialtyRetailHeadless from "./pages/cases/industries/SpecialtyRetailHeadless";
+import DtcSalesforceCommerceMigration from "./pages/cases/industries/DtcSalesforceCommerceMigration";
+import EnterpriseSaasGtmRebuild from "./pages/cases/industries/EnterpriseSaasGtmRebuild";
+import IndustrialTechGtmAlignment from "./pages/cases/industries/IndustrialTechGtmAlignment";
+import DtcChannelReallocation from "./pages/cases/industries/DtcChannelReallocation";
+import SaasAttributionRebuild from "./pages/cases/industries/SaasAttributionRebuild";
+import StreamingNativeRewrite from "./pages/cases/industries/StreamingNativeRewrite";
+import MedicalNativeKotlin from "./pages/cases/industries/MedicalNativeKotlin";
+import EnterpriseSoftwarePricingRebuild from "./pages/cases/industries/EnterpriseSoftwarePricingRebuild";
+import MarketplaceUsagePricing from "./pages/cases/industries/MarketplaceUsagePricing";
+import InfraForecastRebuild from "./pages/cases/industries/InfraForecastRebuild";
+import ServicesRevopsConsolidation from "./pages/cases/industries/ServicesRevopsConsolidation";
 import CapitalRaiseSeriesB from "./pages/cases/industries/CapitalRaiseSeriesB";
 import FpaForecastingTransformation from "./pages/cases/industries/FpaForecastingTransformation";
 import CloudMigrationHealthSystem from "./pages/cases/industries/CloudMigrationHealthSystem";
@@ -1734,6 +1752,24 @@ function Router() {
         <Route path="/cases/hospital-discharge-workflow-redesign" component={HospitalDischargeWorkflowRedesign} />
         <Route path="/cases/manufacturing-optimization" component={ManufacturingOptimization} />
         <Route path="/cases/financial-services-compliance" component={FinancialServicesCompliance} />
+        <Route path="/cases/subscription-checkout-cro" component={SubscriptionCheckoutCro} />
+        <Route path="/cases/lender-application-funnel-cro" component={LenderApplicationFunnelCro} />
+        <Route path="/cases/saas-adjacent-product-mvp" component={SaasAdjacentProductMvp} />
+        <Route path="/cases/wealth-digital-advisory-mvp" component={WealthDigitalAdvisoryMvp} />
+        <Route path="/cases/consumer-dtc-launch" component={ConsumerDtcLaunch} />
+        <Route path="/cases/b2b-ecommerce-launch" component={B2bEcommerceLaunch} />
+        <Route path="/cases/specialty-retail-headless" component={SpecialtyRetailHeadless} />
+        <Route path="/cases/dtc-salesforce-commerce-migration" component={DtcSalesforceCommerceMigration} />
+        <Route path="/cases/enterprise-saas-gtm-rebuild" component={EnterpriseSaasGtmRebuild} />
+        <Route path="/cases/industrial-tech-gtm-alignment" component={IndustrialTechGtmAlignment} />
+        <Route path="/cases/dtc-channel-reallocation" component={DtcChannelReallocation} />
+        <Route path="/cases/saas-attribution-rebuild" component={SaasAttributionRebuild} />
+        <Route path="/cases/streaming-native-rewrite" component={StreamingNativeRewrite} />
+        <Route path="/cases/medical-native-kotlin" component={MedicalNativeKotlin} />
+        <Route path="/cases/enterprise-software-pricing-rebuild" component={EnterpriseSoftwarePricingRebuild} />
+        <Route path="/cases/marketplace-usage-pricing" component={MarketplaceUsagePricing} />
+        <Route path="/cases/infra-forecast-rebuild" component={InfraForecastRebuild} />
+        <Route path="/cases/services-revops-consolidation" component={ServicesRevopsConsolidation} />
         <Route path="/cases/capital-raise-series-b" component={CapitalRaiseSeriesB} />
         <Route path="/cases/fpa-forecasting-transformation" component={FpaForecastingTransformation} />
         <Route path="/cases/cloud-migration-health-system" component={CloudMigrationHealthSystem} />
