@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, ArrowLeft, Clock, Building2, Users, Quote } from "lucide-react";
+import { ArrowRight, ArrowLeft, Quote } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -107,7 +107,6 @@ export default function IndustryCaseStudyTemplate({
   clientContextTitle,
   clientContextIntro,
   clientContextBody,
-  clientProfile,
   challengeTitle,
   challenges,
   approachTitle,
@@ -206,72 +205,26 @@ export default function IndustryCaseStudyTemplate({
       {/* Client Context */}
       <section className="nx-section bg-white">
         <div className="container px-4 sm:px-6 md:px-12">
-          <div className="grid lg:grid-cols-3 gap-12">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="lg:col-span-2"
-            >
-              <span className="nx-eyebrow text-primary mb-4 block">
-                Client Context
-              </span>
-              <h2 className="nx-h2 text-charcoal mb-6">
-                {clientContextTitle}
-              </h2>
-              <div className="prose prose-lg max-w-none">
-                <p className="nx-lead text-charcoal/70 mb-6">
-                  {clientContextIntro}
-                </p>
-                <p className="nx-lead text-charcoal/70">
-                  {clientContextBody}
-                </p>
-              </div>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-subtle p-4 sm:p-6 md:p-4 sm:p-6 md:p-8"
-            >
-              <h3 className="text-lg font-bold text-charcoal mb-6">Client Profile</h3>
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <Building2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-1" />
-                  <div>
-                    <div className="text-sm text-charcoal/50">Industry</div>
-                    <div className="font-medium text-charcoal">{clientProfile.industry}</div>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Users className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-1" />
-                  <div>
-                    <div className="text-sm text-charcoal/50">Company Size</div>
-                    <div className="font-medium text-charcoal">{clientProfile.companySize}</div>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-1" />
-                  <div>
-                    <div className="text-sm text-charcoal/50">Project Duration</div>
-                    <div className="font-medium text-charcoal">{clientProfile.projectDuration}</div>
-                  </div>
-                </div>
-                {clientProfile.additionalInfo && (
-                  <div className="flex items-start gap-3">
-                    <Building2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-1" />
-                    <div>
-                      <div className="text-sm text-charcoal/50">{clientProfile.additionalLabel || "Additional Info"}</div>
-                      <div className="font-medium text-charcoal">{clientProfile.additionalInfo}</div>
-                    </div>
-                  </div>
-                )}
-              </div>
-            </motion.div>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-4xl mx-auto"
+          >
+            <span className="nx-eyebrow text-primary mb-4 block">
+              Client Context
+            </span>
+            <h2 className="nx-h2 text-charcoal mb-6">
+              {clientContextTitle}
+            </h2>
+            <p className="nx-lead text-charcoal/70 mb-6">
+              {clientContextIntro}
+            </p>
+            <p className="nx-lead text-charcoal/70">
+              {clientContextBody}
+            </p>
+          </motion.div>
         </div>
       </section>
 
@@ -288,24 +241,19 @@ export default function IndustryCaseStudyTemplate({
               <span className="nx-eyebrow text-primary mb-4 block">
                 The Challenge
               </span>
-              <h2 className="nx-h2 text-charcoal mb-5 sm:mb-6 md:mb-5 sm:mb-6 md:mb-8">
+              <h2 className="nx-h2 text-charcoal mb-8 md:mb-10">
                 {challengeTitle}
               </h2>
-              
-              <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-4 sm:p-6 md:p-8">
+
+              <div className="space-y-6">
                 {challenges.map((challenge, index) => (
-                  <motion.div
+                  <p
                     key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    className="bg-white p-4 sm:p-5 md:p-4 sm:p-5 md:p-6 border-l-4 border-primary"
+                    className="text-lg md:text-xl leading-relaxed text-charcoal/70"
                   >
-                    <challenge.icon className="w-8 h-8 text-primary mb-4" />
-                    <h3 className="text-lg font-bold text-charcoal mb-2">{challenge.title}</h3>
-                    <p className="text-charcoal/70">{challenge.description}</p>
-                  </motion.div>
+                    <span className="font-semibold text-charcoal">{challenge.title}.</span>{" "}
+                    {challenge.description}
+                  </p>
                 ))}
               </div>
             </motion.div>
@@ -334,20 +282,20 @@ export default function IndustryCaseStudyTemplate({
                 {approachIntro}
               </p>
 
-              <div className="space-y-8">
+              <div className="border-t border-charcoal/15">
                 {steps.map((step, index) => (
                   <motion.div
                     key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: 16 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    className="flex gap-4 sm:p-5 md:p-4 sm:p-5 md:p-6"
+                    transition={{ duration: 0.5, delay: index * 0.08 }}
+                    className="grid grid-cols-[2.5rem_1fr] md:grid-cols-[4rem_1fr] gap-4 md:gap-8 py-6 md:py-8 border-b border-charcoal/15"
                   >
-                    <div className="flex-shrink-0 w-16 h-16 bg-charcoal text-white flex items-center justify-center font-bold text-xl">
+                    <div className="text-2xl md:text-3xl font-semibold text-primary tabular-nums leading-none pt-1">
                       {step.step}
                     </div>
-                    <div className="pt-2">
+                    <div>
                       <h3 className="nx-h3 text-charcoal mb-2">{step.title}</h3>
                       <p className="text-charcoal/70 leading-relaxed">{step.description}</p>
                     </div>
@@ -376,20 +324,21 @@ export default function IndustryCaseStudyTemplate({
                 {resultsTitle}
               </h2>
 
-              <div className="grid md:grid-cols-2 gap-4 sm:p-6 md:p-4 sm:p-6 md:p-8 mb-6 sm:mb-8 md:mb-6 sm:mb-8 md:mb-12">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10">
                 {results.map((result, index) => (
                   <motion.div
                     key={index}
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 16 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    className="bg-white/5 border border-white/10 p-4 sm:p-6 md:p-4 sm:p-6 md:p-8"
+                    transition={{ duration: 0.5, delay: index * 0.08 }}
+                    className="border-t border-white/20 pt-5"
                   >
-                    <result.icon className="w-8 h-8 text-primary mb-4" />
-                    <div className="text-4xl font-bold text-primary mb-2">{result.value}</div>
-                    <div className="text-lg font-medium text-white mb-2">{result.label}</div>
-                    <div className="text-white/60 text-sm">{result.detail}</div>
+                    <div className="text-5xl md:text-6xl font-semibold text-primary tracking-tight leading-none mb-4">
+                      {result.value}
+                    </div>
+                    <div className="text-base font-medium text-white mb-1.5">{result.label}</div>
+                    <div className="text-white/55 text-sm leading-relaxed">{result.detail}</div>
                   </motion.div>
                 ))}
               </div>
