@@ -959,6 +959,26 @@ import RetailRecommendations from "./pages/cases/industries/RetailRecommendation
 import FraudDetection from "./pages/cases/industries/FraudDetection";
 import ManufacturerMulesoft from "./pages/cases/industries/ManufacturerMulesoft";
 import HealthSystemBoomi from "./pages/cases/industries/HealthSystemBoomi";
+import HealthtechReactNative from "./pages/cases/industries/HealthtechReactNative";
+import BankAppModernization from "./pages/cases/industries/BankAppModernization";
+import HealthtechMobileScale from "./pages/cases/industries/HealthtechMobileScale";
+import BankMobileModernization from "./pages/cases/industries/BankMobileModernization";
+import InsurerPolicyStrangler from "./pages/cases/industries/InsurerPolicyStrangler";
+import LogisticsCustomTms from "./pages/cases/industries/LogisticsCustomTms";
+import MfgLowcodeCoe from "./pages/cases/industries/MfgLowcodeCoe";
+import InsurerLowcodeClaims from "./pages/cases/industries/InsurerLowcodeClaims";
+import RetailerHeadlessOmnichannel from "./pages/cases/industries/RetailerHeadlessOmnichannel";
+import PublisherHeadlessJamstack from "./pages/cases/industries/PublisherHeadlessJamstack";
+import RetailDxpPersonalization from "./pages/cases/industries/RetailDxpPersonalization";
+import InsurerSitecoreMigration from "./pages/cases/industries/InsurerSitecoreMigration";
+import LawFirmCspMigration from "./pages/cases/industries/LawFirmCspMigration";
+import ManufacturerContentDiscovery from "./pages/cases/industries/ManufacturerContentDiscovery";
+import InsurerClaimsOrchestration from "./pages/cases/industries/InsurerClaimsOrchestration";
+import BankLoanOrchestration from "./pages/cases/industries/BankLoanOrchestration";
+import InsurerClaimsRpa from "./pages/cases/industries/InsurerClaimsRpa";
+import HealthcareEligibilityRpa from "./pages/cases/industries/HealthcareEligibilityRpa";
+import BankOperatingModelTransformation from "./pages/cases/industries/BankOperatingModelTransformation";
+import IndustrialMaIntegration from "./pages/cases/industries/IndustrialMaIntegration";
 import ChemicalPlantOptimization from "./pages/cases/industries/ChemicalPlantOptimization";
 import ChemicalSupplyChain from "./pages/cases/industries/ChemicalSupplyChain";
 import ChemicalSustainability from "./pages/cases/industries/ChemicalSustainability";
@@ -1820,6 +1840,26 @@ function Router() {
         <Route path="/cases/fraud-detection" component={FraudDetection} />
         <Route path="/cases/manufacturer-mulesoft" component={ManufacturerMulesoft} />
         <Route path="/cases/health-system-boomi" component={HealthSystemBoomi} />
+        <Route path="/cases/healthtech-react-native" component={HealthtechReactNative} />
+        <Route path="/cases/bank-app-modernization" component={BankAppModernization} />
+        <Route path="/cases/healthtech-mobile-scale" component={HealthtechMobileScale} />
+        <Route path="/cases/bank-mobile-modernization" component={BankMobileModernization} />
+        <Route path="/cases/insurer-policy-strangler" component={InsurerPolicyStrangler} />
+        <Route path="/cases/logistics-custom-tms" component={LogisticsCustomTms} />
+        <Route path="/cases/mfg-lowcode-coe" component={MfgLowcodeCoe} />
+        <Route path="/cases/insurer-lowcode-claims" component={InsurerLowcodeClaims} />
+        <Route path="/cases/retailer-headless-omnichannel" component={RetailerHeadlessOmnichannel} />
+        <Route path="/cases/publisher-headless-jamstack" component={PublisherHeadlessJamstack} />
+        <Route path="/cases/retail-dxp-personalization" component={RetailDxpPersonalization} />
+        <Route path="/cases/insurer-sitecore-migration" component={InsurerSitecoreMigration} />
+        <Route path="/cases/law-firm-csp-migration" component={LawFirmCspMigration} />
+        <Route path="/cases/manufacturer-content-discovery" component={ManufacturerContentDiscovery} />
+        <Route path="/cases/insurer-claims-orchestration" component={InsurerClaimsOrchestration} />
+        <Route path="/cases/bank-loan-orchestration" component={BankLoanOrchestration} />
+        <Route path="/cases/insurer-claims-rpa" component={InsurerClaimsRpa} />
+        <Route path="/cases/healthcare-eligibility-rpa" component={HealthcareEligibilityRpa} />
+        <Route path="/cases/bank-operating-model-transformation" component={BankOperatingModelTransformation} />
+        <Route path="/cases/industrial-ma-integration" component={IndustrialMaIntegration} />
         <Route path="/cases/chemical-plant-optimization" component={ChemicalPlantOptimization} />
         <Route path="/cases/chemical-supply-chain" component={ChemicalSupplyChain} />
         <Route path="/cases/chemical-sustainability" component={ChemicalSustainability} />
