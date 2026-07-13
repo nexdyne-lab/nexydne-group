@@ -45,9 +45,10 @@ export default function StrategyCorporateFinanceCapitalRaisingEquityFinancing() 
         "Stronger leadership ownership and cross-functional governance to sustain results",
         "Internal Capital Raising capability uplift that compounds value beyond the engagement",
       ]}
-      featuredCases={[
+            featuredCases={[
+        { slug: "capital-raise-series-b", title: "Raising a growth round on stronger terms", industry: "Technology, Media & Telecom", metric: "1.3x", image: "/images/industries/deal-handshake.jpg" },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
         { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
-        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
       ]}
       relatedServices={[
         { slug: "debt-financing", name: "Debt Financing", href: "/capabilities/strategy-corporate-finance/capital-raising/debt-financing" },

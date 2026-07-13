@@ -199,27 +199,27 @@ export default function StrategyCorporateFinance() {
       // Same pattern as AI / BB / Ops master refactors. All 12 case slugs verified live in App.tsx under /cases/<slug>.
       clientResults={[
         {
-          industry: "Private Equity & Value Creation",
+          industry: "Value Creation & Performance",
           cases: [
-            { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", metric: "$18M added EBITDA", image: "/images/industries/transport-traffic.jpg" },
-            { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", metric: "40% faster diligence", image: "/images/capabilities/cap-conference-data.jpg" },
-            { slug: "pe-distribution-digital", title: "Standing up a carved-out distributor in six months", metric: "Standalone in 6 months", image: "/images/industries/deal-handshake.jpg" },
+            { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+            { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+            { slug: "automotive-smart-factory", title: "Lifting plant productivity by 40% at a vehicle maker", metric: "40%", image: "/images/industries/mfg-robotics.jpg" },
           ],
         },
         {
-          industry: "Financial Services",
+          industry: "M&A & Capital",
           cases: [
-            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "$24M new revenue", image: "/images/industries/fin-trader.jpg" },
-            { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", metric: "60% faster onboarding", image: "/images/industries/fin-handshake-city.jpg" },
-            { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", metric: "50% shift to digital", image: "/images/industries/fin-monitors.jpg" },
+            { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+            { slug: "pe-distribution-digital", title: "Standing up a carved-out distributor in six months", metric: "6 Months", image: "/images/industries/skyscraper.jpg" },
+            { slug: "capital-raise-series-b", title: "Raising a growth round on stronger terms", metric: "1.3x", image: "/images/industries/deal-handshake.jpg" },
           ],
         },
         {
-          industry: "Growth & Transformation",
+          industry: "Finance & Planning",
           cases: [
-            { slug: "media-streaming-launch", title: "Launching a streaming service that won 750K subscribers", metric: "750K subscribers won", image: "/images/industries/tech-datacenter.jpg" },
-            { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", metric: "3x faster releases", image: "/images/capabilities/cap-conference-data.jpg" },
-            { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", metric: "New services line", image: "/images/capabilities/cap-battery-factory.jpg" },
+            { slug: "fpa-forecasting-transformation", title: "Turning finance into a forecasting engine", metric: "Days", image: "/images/industries/advisor-charts.jpg" },
+            { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
           ],
         },
       ]}

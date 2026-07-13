@@ -893,6 +893,8 @@ import GovernmentBenefitsAIIndustry from "./pages/cases/industries/GovernmentBen
 import SmartCityInfrastructureIndustry from "./pages/cases/industries/SmartCityInfrastructure";
 import DefenseSupplyChainIndustry from "./pages/cases/industries/DefenseSupplyChain";
 import AerospaceDigitalEngineeringIndustry from "./pages/cases/industries/AerospaceDigitalEngineering";
+import CapitalRaiseSeriesB from "./pages/cases/industries/CapitalRaiseSeriesB";
+import FpaForecastingTransformation from "./pages/cases/industries/FpaForecastingTransformation";
 import CloudMigrationHealthSystem from "./pages/cases/industries/CloudMigrationHealthSystem";
 import LegacyCoreModernization from "./pages/cases/industries/LegacyCoreModernization";
 import PlatformEngineeringDeveloperVelocity from "./pages/cases/industries/PlatformEngineeringDeveloperVelocity";
@@ -1680,6 +1682,8 @@ function Router() {
         <Route path="/cases/smart-city-platform" component={SmartCityInfrastructureIndustry} />
         <Route path="/cases/supply-chain-visibility" component={DefenseSupplyChainIndustry} />
         <Route path="/cases/aerospace-digital-engineering" component={AerospaceDigitalEngineeringIndustry} />
+        <Route path="/cases/capital-raise-series-b" component={CapitalRaiseSeriesB} />
+        <Route path="/cases/fpa-forecasting-transformation" component={FpaForecastingTransformation} />
         <Route path="/cases/cloud-migration-health-system" component={CloudMigrationHealthSystem} />
         <Route path="/cases/legacy-core-modernization" component={LegacyCoreModernization} />
         <Route path="/cases/platform-engineering-developer-velocity" component={PlatformEngineeringDeveloperVelocity} />

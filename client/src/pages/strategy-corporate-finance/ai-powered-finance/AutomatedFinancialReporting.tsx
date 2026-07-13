@@ -45,8 +45,10 @@ export default function StrategyCorporateFinanceAiPoweredFinanceAutomatedFinanci
         "Stronger leadership ownership and cross-functional governance to sustain results",
         "Internal AI-Powered Finance capability uplift that compounds value beyond the engagement",
       ]}
-      featuredCases={[
-        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+            featuredCases={[
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "fpa-forecasting-transformation", title: "Turning finance into a forecasting engine", industry: "Retail", metric: "Days", image: "/images/industries/advisor-charts.jpg" },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
       ]}
       relatedServices={[
         { slug: "predictive-cash-flow-modeling", name: "Predictive Cash Flow Modeling", href: "/capabilities/strategy-corporate-finance/ai-powered-finance/predictive-cash-flow-modeling" },
