@@ -1,7 +1,6 @@
 // TODO: David — confirm Insurance-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
-// TODO: David — confirm practice-lead name + title for the POV pull quote attribution before publish.
 
 import IndustryDetailTemplate from "@/components/IndustryDetailTemplate";
 
@@ -68,10 +67,9 @@ export default function InsuranceIndustry() {
         {number: "$XX M", label: "Loss-adjustment-expense impact across portfolio"}
       ]}
       povQuote={{
-        // TODO: confirm practice-lead name + title before publish.
         text: "The carriers leading the next cycle are the ones who treat underwriting and claims as software products — continuously improved, instrumented, and governed — not as tribal craft to be defended.",
-        author: "Jonathan Pierce",
-        role: "Partner, Insurance Practice"
+        author: "Insurance Practice",
+        role: "NexDyne Consulting Group"
       }}
       featuredCases={[
         {

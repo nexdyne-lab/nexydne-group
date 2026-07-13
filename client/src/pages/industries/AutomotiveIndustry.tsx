@@ -1,7 +1,6 @@
 // TODO: David — confirm Automotive-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
-// TODO: David — confirm practice-lead name + title for the POV pull quote attribution before publish.
 
 import IndustryDetailTemplate from "@/components/IndustryDetailTemplate";
 
@@ -68,10 +67,9 @@ export default function AutomotiveIndustry() {
         {number: "$1.8M", label: "Average annual savings per plant transformation"}
       ]}
       povQuote={{
-        // TODO: confirm practice-lead name + title before publish.
         text: "The OEMs who win the next cycle are the ones who treat software like a product line — with its own roadmap, its own talent, and its own P&L — not as an accessory bolted onto a hardware program.",
-        author: "Henrik Larsson",
-        role: "Partner, Automotive Practice"
+        author: "Automotive Practice",
+        role: "NexDyne Consulting Group"
       }}
       featuredCases={[
         {

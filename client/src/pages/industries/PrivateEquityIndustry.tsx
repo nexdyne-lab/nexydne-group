@@ -1,7 +1,6 @@
 // TODO: David — confirm Private Equity-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
-// TODO: David — confirm practice-lead name + title for the POV pull quote attribution before publish.
 
 import IndustryDetailTemplate from "@/components/IndustryDetailTemplate";
 
@@ -68,10 +67,9 @@ export default function PrivateEquityIndustry() {
         {number: "Top 20", label: "PE firms served as repeat clients"}
       ]}
       povQuote={{
-        // TODO: confirm practice-lead name + title before publish.
         text: "The funds that win the next cycle are the ones that treat tech and data diligence as part of underwriting — not as a check-the-box workstream that runs in parallel and never changes the deal.",
-        author: "Stephen Becker",
-        role: "Partner, Private Equity Practice"
+        author: "Private Equity Practice",
+        role: "NexDyne Consulting Group"
       }}
       featuredCases={[
         {

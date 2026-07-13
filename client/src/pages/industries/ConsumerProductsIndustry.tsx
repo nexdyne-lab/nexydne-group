@@ -1,7 +1,6 @@
 // TODO: David — confirm Consumer Products-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
-// TODO: David — confirm practice-lead name + title for the POV pull quote attribution before publish.
 
 import IndustryDetailTemplate from "@/components/IndustryDetailTemplate";
 
@@ -68,10 +67,9 @@ export default function ConsumerProductsIndustry() {
         {number: "18 mo", label: "Average CPG engagement length"}
       ]}
       povQuote={{
-        // TODO: confirm practice-lead name + title before publish.
         text: "The CPG winners of the next cycle treat their first-party consumer data as a product portfolio in its own right — owned, measured, and reinvested in — not as a marketing tactic that resets every quarter.",
-        author: "Elena Garcia",
-        role: "Partner, Consumer Products Practice"
+        author: "Consumer Products Practice",
+        role: "NexDyne Consulting Group"
       }}
       featuredCases={[
         {

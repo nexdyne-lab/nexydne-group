@@ -1,7 +1,6 @@
 // TODO: David — confirm Travel & Hospitality-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
-// TODO: David — confirm practice-lead name + title for the POV pull quote attribution before publish.
 
 import IndustryDetailTemplate from "@/components/IndustryDetailTemplate";
 
@@ -68,10 +67,9 @@ export default function TravelHospitalityIndustry() {
         {number: "12 mo", label: "Average travel-and-hospitality engagement length"}
       ]}
       povQuote={{
-        // TODO: confirm practice-lead name + title before publish.
         text: "Travel brands that win the next decade are the ones who treat the guest data they already have as the most valuable asset on the balance sheet — and reinvest in it accordingly.",
-        author: "Sofia Lindqvist",
-        role: "Partner, Travel & Hospitality Practice"
+        author: "Travel & Hospitality Practice",
+        role: "NexDyne Consulting Group"
       }}
       featuredCases={[
         {

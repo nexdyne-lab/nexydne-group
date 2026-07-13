@@ -1,7 +1,6 @@
 // TODO: David — confirm Healthcare-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
-// TODO: David — confirm practice-lead name + title for the POV pull quote attribution before publish.
 
 import IndustryDetailTemplate from "@/components/IndustryDetailTemplate";
 
@@ -68,10 +67,9 @@ export default function HealthcareIndustry() {
         {number: "12 mo", label: "Average healthcare engagement length"}
       ]}
       povQuote={{
-        // TODO: confirm practice-lead name + title before publish.
         text: "The systems that win the next decade will not be the ones with the most data — they will be the ones that translate that data into clinician minutes saved, patients retained, and risk-bearing contracts they can actually run.",
-        author: "Dr. Maya Patel",
-        role: "Partner, Healthcare Practice"
+        author: "Healthcare Practice",
+        role: "NexDyne Consulting Group"
       }}
       featuredCases={[
         {

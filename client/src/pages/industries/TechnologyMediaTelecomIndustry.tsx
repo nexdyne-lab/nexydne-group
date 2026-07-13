@@ -1,7 +1,6 @@
 // TODO: David — confirm Technology, Media & Telecommunications-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
-// TODO: David — confirm practice-lead name + title for the POV pull quote attribution before publish.
 
 import IndustryDetailTemplate from "@/components/IndustryDetailTemplate";
 
@@ -68,10 +67,9 @@ export default function TechnologyMediaTelecomIndustry() {
         {number: "12 mo", label: "Average TMT engagement length"}
       ]}
       povQuote={{
-        // TODO: confirm practice-lead name + title before publish.
         text: "TMT leaders who win the AI cycle are the ones who treat AI as a product line — with its own roadmap, its own infrastructure, and its own P&L — not as a feature to be added to whatever ships next.",
-        author: "Daniel Pham",
-        role: "Partner, Technology, Media & Telecommunications Practice"
+        author: "Technology, Media & Telecommunications Practice",
+        role: "NexDyne Consulting Group"
       }}
       featuredCases={[
         {

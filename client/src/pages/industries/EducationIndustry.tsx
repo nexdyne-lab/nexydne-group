@@ -1,7 +1,6 @@
 // TODO: David — confirm Education-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
-// TODO: David — confirm practice-lead name + title for the POV pull quote attribution before publish.
 
 import IndustryDetailTemplate from "@/components/IndustryDetailTemplate";
 
@@ -68,10 +67,9 @@ export default function EducationIndustry() {
         {number: "12 mo", label: "Average education engagement length"}
       ]}
       povQuote={{
-        // TODO: confirm practice-lead name + title before publish.
         text: "The institutions that are growing through this cycle do not treat technology as a competing priority to academic mission — they treat it as the operating system that lets the mission scale.",
-        author: "Dr. Robert Kim",
-        role: "Partner, Education Practice"
+        author: "Education Practice",
+        role: "NexDyne Consulting Group"
       }}
       featuredCases={[
         {

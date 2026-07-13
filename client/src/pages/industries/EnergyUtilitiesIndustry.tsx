@@ -1,7 +1,6 @@
 // TODO: David — confirm Energy & Utilities-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
-// TODO: David — confirm practice-lead name + title for the POV pull quote attribution before publish.
 
 import IndustryDetailTemplate from "@/components/IndustryDetailTemplate";
 
@@ -68,10 +67,9 @@ export default function EnergyUtilitiesIndustry() {
         {number: "18 mo", label: "Average energy engagement length"}
       ]}
       povQuote={{
-        // TODO: confirm practice-lead name + title before publish.
         text: "Utilities that lead the transition are the ones that treat data and operating discipline as a single system — not as a digital roadmap that competes with the rate case.",
-        author: "Aisha Thompson",
-        role: "Partner, Energy & Utilities Practice"
+        author: "Energy & Utilities Practice",
+        role: "NexDyne Consulting Group"
       }}
       featuredCases={[
         {

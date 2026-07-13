@@ -1,7 +1,6 @@
 // TODO: David — confirm Manufacturing-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
-// TODO: David — confirm practice-lead name + title for the POV pull quote attribution before publish.
 
 import IndustryDetailTemplate from "@/components/IndustryDetailTemplate";
 
@@ -68,10 +67,9 @@ export default function ManufacturingIndustry() {
         {number: "Tier 1", label: "OEM and specialty-producer client base"}
       ]}
       povQuote={{
-        // TODO: confirm practice-lead name + title before publish.
         text: "The manufacturers pulling ahead are not the ones running the most pilots — they are the ones who pick one bottleneck per plant, prove the economics, and make the digital case impossible to argue with.",
-        author: "Marcus Webb",
-        role: "Partner, Manufacturing Practice"
+        author: "Manufacturing Practice",
+        role: "NexDyne Consulting Group"
       }}
       featuredCases={[
         {

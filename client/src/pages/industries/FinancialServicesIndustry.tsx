@@ -4,7 +4,6 @@ import IndustryDetailTemplate from "@/components/IndustryDetailTemplate";
 //   The pre-refactor file shipped boilerplate "40+ / 78% / 4-6 Mo" stats that are not Financial Services-specific.
 //   Placeholders below are plausible-but-unverified directional figures based on the existing prose context;
 //   do NOT publish until practice-lead confirms.
-// TODO: David — confirm practice-lead name + title for the POV pull quote attribution before publish.
 
 export default function FinancialServicesIndustry() {
   return (
@@ -71,8 +70,8 @@ export default function FinancialServicesIndustry() {
       povQuote={{
         // TODO: David — confirm practice-lead name + title before publish.
         text: "The institutions that will win the next decade are not the ones with the biggest tech budgets — they are the ones that can prove value on a single product or journey, then scale that proof across the operating model without breaking trust.",
-        author: "Sarah Chen",
-        role: "Partner, Financial Services Practice"
+        author: "Financial Services Practice",
+        role: "NexDyne Consulting Group"
       }}
       featuredCases={[
         {

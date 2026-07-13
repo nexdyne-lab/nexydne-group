@@ -1,7 +1,6 @@
 // TODO: David — confirm Aerospace & Defense-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
-// TODO: David — confirm practice-lead name + title for the POV pull quote attribution before publish.
 
 import IndustryDetailTemplate from "@/components/IndustryDetailTemplate";
 
@@ -68,10 +67,9 @@ export default function AerospaceDefenseIndustry() {
         {number: "CMMC L2", label: "Engagements delivered to date"}
       ]}
       povQuote={{
-        // TODO: confirm practice-lead name + title before publish.
         text: "The A&D programs that ship on time are the ones that treat digital engineering as the program of record — not as a parallel modernization track that competes with delivery.",
-        author: "Colonel (ret.) David Reyes",
-        role: "Partner, Aerospace & Defense Practice"
+        author: "Aerospace & Defense Practice",
+        role: "NexDyne Consulting Group"
       }}
       featuredCases={[
         {

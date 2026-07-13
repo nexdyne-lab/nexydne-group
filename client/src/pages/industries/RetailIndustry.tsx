@@ -1,7 +1,6 @@
 // TODO: David — confirm Retail-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
-// TODO: David — confirm practice-lead name + title for the POV pull quote attribution before publish.
 
 import IndustryDetailTemplate from "@/components/IndustryDetailTemplate";
 
@@ -68,10 +67,9 @@ export default function RetailIndustry() {
         {number: "Quarterly", label: "Cycle on which most retail engagements compound"}
       ]}
       povQuote={{
-        // TODO: confirm practice-lead name + title before publish.
         text: "The retailers separating from the pack are the ones who treat first-party data like a P&L line — measured, owned, and optimized — rather than a marketing campaign that ends when the season does.",
-        author: "Priya Iyer",
-        role: "Partner, Retail Practice"
+        author: "Retail Practice",
+        role: "NexDyne Consulting Group"
       }}
       featuredCases={[
         {

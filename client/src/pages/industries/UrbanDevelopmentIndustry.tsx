@@ -1,7 +1,6 @@
 // TODO: David — confirm Urban Development-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
-// TODO: David — confirm practice-lead name + title for the POV pull quote attribution before publish.
 
 import IndustryDetailTemplate from "@/components/IndustryDetailTemplate";
 
@@ -68,10 +67,9 @@ export default function UrbanDevelopmentIndustry() {
         {number: "Multi-year", label: "Typical horizon for urban transformation engagements"}
       ]}
       povQuote={{
-        // TODO: confirm practice-lead name + title before publish.
         text: "The cities that pull ahead in this cycle are the ones that treat data as urban infrastructure — funded, operated, and governed like roads and water — not as a vendor pilot that ends with the next budget.",
-        author: "Mei Chen",
-        role: "Partner, Urban Development Practice"
+        author: "Urban Development Practice",
+        role: "NexDyne Consulting Group"
       }}
       featuredCases={[
         {

@@ -1,7 +1,6 @@
 // TODO: David — confirm Public Sector-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
-// TODO: David — confirm practice-lead name + title for the POV pull quote attribution before publish.
 
 import IndustryDetailTemplate from "@/components/IndustryDetailTemplate";
 
@@ -68,10 +67,9 @@ export default function PublicSectorIndustry() {
         {number: "12 mo", label: "Average public-sector engagement length"}
       ]}
       povQuote={{
-        // TODO: confirm practice-lead name + title before publish.
         text: "The agencies that deliver real change are the ones that treat citizen experience and back-office discipline as the same problem — not as competing priorities owned by different deputies.",
-        author: "Lauren Whitfield",
-        role: "Partner, Public Sector Practice"
+        author: "Public Sector Practice",
+        role: "NexDyne Consulting Group"
       }}
       featuredCases={[
         {

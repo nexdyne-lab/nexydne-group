@@ -1,7 +1,6 @@
 // TODO: David — confirm Transportation & Logistics-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
-// TODO: David — confirm practice-lead name + title for the POV pull quote attribution before publish.
 
 import IndustryDetailTemplate from "@/components/IndustryDetailTemplate";
 
@@ -68,10 +67,9 @@ export default function TransportationLogisticsIndustry() {
         {number: "12 mo", label: "Average T&L engagement length"}
       ]}
       povQuote={{
-        // TODO: confirm practice-lead name + title before publish.
         text: "The carriers and 3PLs pulling ahead are the ones treating real-time data as the operating system of the network — not as a dashboard product the sales team uses to win the renewal.",
-        author: "Carlos Mendez",
-        role: "Partner, Transportation & Logistics Practice"
+        author: "Transportation & Logistics Practice",
+        role: "NexDyne Consulting Group"
       }}
       featuredCases={[
         {
