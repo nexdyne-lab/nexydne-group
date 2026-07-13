@@ -45,9 +45,10 @@ export default function OperationsWorkforceOptimizationChangeManagement() {
         "Stronger frontline ownership and cross-functional governance to sustain results",
         "Internal Workforce Optimization capability uplift that compounds value beyond the engagement",
       ]}
-      featuredCases={[
-        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
-        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
+            featuredCases={[
+        { slug: "workforce-scheduling-optimization", title: "Matching staffing to demand, shift by shift", industry: "Transportation & Logistics", metric: "22%", image: "/images/industries/people-commute.jpg" },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+        { slug: "warehouse-optimization", title: "Lifting warehouse productivity 45% for a regional distributor", industry: "Transportation & Logistics", metric: "45%", image: "/images/industries/retail-warehouse.jpg" },
       ]}
       relatedServices={[
         { slug: "workforce-planning", name: "Workforce Planning", href: "/capabilities/operations/workforce-optimization/workforce-planning" },

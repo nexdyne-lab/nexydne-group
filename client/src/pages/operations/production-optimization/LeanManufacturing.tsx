@@ -45,9 +45,10 @@ export default function OperationsProductionOptimizationLeanManufacturing() {
         "Stronger frontline ownership and cross-functional governance to sustain results",
         "Internal Production Optimization capability uplift that compounds value beyond the engagement",
       ]}
-      featuredCases={[
-        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
-        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
+            featuredCases={[
+        { slug: "automotive-smart-factory", title: "Lifting plant productivity by 40% at a vehicle maker", industry: "Manufacturing", metric: "40%", image: "/images/industries/mfg-robotics.jpg" },
+        { slug: "semiconductor-quality-prediction", title: "Catching chip defects weeks before they appear", industry: "Manufacturing", metric: "92%", image: "/images/industries/mfg-robot-arm.jpg" },
+        { slug: "strategic-sourcing-savings", title: "Cutting materials cost with strategic sourcing", industry: "Manufacturing", metric: "12%", image: "/images/industries/ops-gears.jpg" },
       ]}
       relatedServices={[
         { slug: "oee-improvement", name: "OEE Improvement", href: "/capabilities/operations/production-optimization/oee-improvement" },

@@ -45,10 +45,10 @@ export default function OperationsWorkforceOptimizationLaborProductivity() {
         "Stronger frontline ownership and cross-functional governance to sustain results",
         "Internal Workforce Optimization capability uplift that compounds value beyond the engagement",
       ]}
-      featuredCases={[
-        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
-        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
-        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
+            featuredCases={[
+        { slug: "workforce-scheduling-optimization", title: "Matching staffing to demand, shift by shift", industry: "Transportation & Logistics", metric: "22%", image: "/images/industries/people-commute.jpg" },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+        { slug: "warehouse-optimization", title: "Lifting warehouse productivity 45% for a regional distributor", industry: "Transportation & Logistics", metric: "45%", image: "/images/industries/retail-warehouse.jpg" },
       ]}
       relatedServices={[
         { slug: "workforce-planning", name: "Workforce Planning", href: "/capabilities/operations/workforce-optimization/workforce-planning" },

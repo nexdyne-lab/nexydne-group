@@ -45,9 +45,10 @@ export default function OperationsSupplyChainSupplyChainStrategy() {
         "Stronger frontline ownership and cross-functional governance to sustain results",
         "Internal Supply Chain Optimization capability uplift that compounds value beyond the engagement",
       ]}
-      featuredCases={[
-        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
-        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+            featuredCases={[
+        { slug: "warehouse-optimization", title: "Lifting warehouse productivity 45% for a regional distributor", industry: "Transportation & Logistics", metric: "45%", image: "/images/industries/retail-warehouse.jpg" },
+        { slug: "freight-optimization", title: "Cutting freight costs 18% for a consumer-goods shipper", industry: "Transportation & Logistics", metric: "18%", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "last-mile-optimization", title: "Cutting last-mile delivery costs 30% for a regional carrier", industry: "Transportation & Logistics", metric: "30%", image: "/images/industries/transport-bridge.jpg" },
       ]}
       relatedServices={[
         { slug: "demand-planning-forecasting", name: "Demand Planning & Forecasting", href: "/capabilities/operations/supply-chain/demand-planning-forecasting" },

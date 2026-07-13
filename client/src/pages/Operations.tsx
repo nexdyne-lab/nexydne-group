@@ -199,27 +199,27 @@ export default function Operations() {
       // Same pattern as AI / BB master refactors. All 12 case slugs verified live in App.tsx under /cases/<slug>.
       clientResults={[
         {
-          industry: "Manufacturing & Industrial",
+          industry: "Manufacturing & Production",
           cases: [
-            { slug: "automotive-smart-factory", title: "Lifting plant productivity by 40% at a vehicle maker", metric: "40% more productive", image: "/images/industries/mfg-robotics.jpg" },
-            { slug: "semiconductor-quality-prediction", title: "Catching chip defects weeks before they appear", metric: "92% defect detection", image: "/images/industries/mfg-robot-arm.jpg" },
-            { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", metric: "New services line", image: "/images/capabilities/cap-battery-factory.jpg" },
+            { slug: "automotive-smart-factory", title: "Lifting plant productivity by 40% at a vehicle maker", metric: "40%", image: "/images/industries/mfg-robotics.jpg" },
+            { slug: "semiconductor-quality-prediction", title: "Catching chip defects weeks before they appear", metric: "92%", image: "/images/industries/mfg-robot-arm.jpg" },
+            { slug: "strategic-sourcing-savings", title: "Cutting materials cost with strategic sourcing", metric: "12%", image: "/images/industries/ops-gears.jpg" },
           ],
         },
         {
-          industry: "Transportation & Logistics",
+          industry: "Supply Chain & Logistics",
           cases: [
-            { slug: "warehouse-optimization", title: "Lifting warehouse productivity 45% for a regional distributor", metric: "45% more productive", image: "/images/industries/retail-warehouse.jpg" },
-            { slug: "freight-optimization", title: "Cutting freight costs 18% for a consumer-goods shipper", metric: "18% lower freight cost", image: "/images/industries/transport-traffic.jpg" },
-            { slug: "last-mile-optimization", title: "Cutting last-mile delivery costs 30% for a regional carrier", metric: "30% lower last-mile cost", image: "/images/industries/transport-bridge.jpg" },
+            { slug: "warehouse-optimization", title: "Lifting warehouse productivity 45% for a regional distributor", metric: "45%", image: "/images/industries/retail-warehouse.jpg" },
+            { slug: "freight-optimization", title: "Cutting freight costs 18% for a consumer-goods shipper", metric: "18%", image: "/images/industries/transport-traffic.jpg" },
+            { slug: "workforce-scheduling-optimization", title: "Matching staffing to demand, shift by shift", metric: "22%", image: "/images/industries/people-commute.jpg" },
           ],
         },
         {
-          industry: "Healthcare & Services",
+          industry: "Service Operations",
           cases: [
-            { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", metric: "$32M recovered", image: "/case-healthcare-team.5797392b.jpg" },
-            { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", metric: "35% better outcomes", image: "/case-medical-collaboration.9602cc8c.jpg" },
-            { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", metric: "60% straight-through", image: "/case-insurance-claims.399e5d4b.jpg" },
+            { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+            { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
+            { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", metric: "$30M", image: "/images/capabilities/cap-battery-factory.jpg" },
           ],
         },
       ]}

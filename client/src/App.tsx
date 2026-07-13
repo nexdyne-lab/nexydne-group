@@ -893,6 +893,8 @@ import GovernmentBenefitsAIIndustry from "./pages/cases/industries/GovernmentBen
 import SmartCityInfrastructureIndustry from "./pages/cases/industries/SmartCityInfrastructure";
 import DefenseSupplyChainIndustry from "./pages/cases/industries/DefenseSupplyChain";
 import AerospaceDigitalEngineeringIndustry from "./pages/cases/industries/AerospaceDigitalEngineering";
+import WorkforceSchedulingOptimization from "./pages/cases/industries/WorkforceSchedulingOptimization";
+import StrategicSourcingSavings from "./pages/cases/industries/StrategicSourcingSavings";
 import GenerativeAIDocumentAutomation from "./pages/cases/industries/GenerativeAIDocumentAutomation";
 import AgenticAIServiceResolution from "./pages/cases/industries/AgenticAIServiceResolution";
 import CustomModelClinicalCoding from "./pages/cases/industries/CustomModelClinicalCoding";
@@ -1674,6 +1676,8 @@ function Router() {
         <Route path="/cases/smart-city-platform" component={SmartCityInfrastructureIndustry} />
         <Route path="/cases/supply-chain-visibility" component={DefenseSupplyChainIndustry} />
         <Route path="/cases/aerospace-digital-engineering" component={AerospaceDigitalEngineeringIndustry} />
+        <Route path="/cases/workforce-scheduling-optimization" component={WorkforceSchedulingOptimization} />
+        <Route path="/cases/strategic-sourcing-savings" component={StrategicSourcingSavings} />
         <Route path="/cases/generative-ai-document-automation" component={GenerativeAIDocumentAutomation} />
         <Route path="/cases/agentic-ai-service-resolution" component={AgenticAIServiceResolution} />
         <Route path="/cases/custom-model-clinical-coding" component={CustomModelClinicalCoding} />
