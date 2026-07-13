@@ -5,27 +5,27 @@ export default function AviationPredictiveMaintenance() {
   return (
     <IndustryCaseStudyTemplate
       seoTitle="Halving Surprise Aircraft Groundings for an Airline | Aerospace & Defense Case Study"
-      seoDescription="Every unplanned grounding cost a major carrier six figures and a plane full of disrupted passengers. Reading the signals its aircraft already sent cut surprise groundings in half."
+      seoDescription="Every unplanned grounding cost a regional carrier six figures and a plane full of disrupted passengers. Reading the signals its aircraft already sent cut surprise groundings in half."
       canonical="/cases/logistics-optimization"
       industry="Aerospace & Defense"
       industryLink="/industries/aerospace-defense"
       title="Halving Surprise Aircraft Groundings for a Major Airline"
-      subtitle="Every unexpected grounding cost a major carrier six figures and a plane full of disrupted passengers. Reading the signals its aircraft were already sending let the airline fix problems on its own schedule, not the fault's."
+      subtitle="Every unexpected grounding cost a regional carrier six figures and a plane full of disrupted passengers. Reading the signals its aircraft were already sending let the airline fix problems on its own schedule, not the fault's."
       heroImage="/images/industries/ops-monitors-dark.jpg"
       metrics={[
         { value: "50%", label: "Fewer Groundings" },
         { value: "99.2%", label: "On-Time Dispatch" },
-        { value: "$95M", label: "Saved Each Year" },
+        { value: "$7M", label: "Saved Each Year" },
         { value: "~30 Days", label: "Advance Warning" }
       ]}
       clientContextTitle="The High Price of an Unplanned Grounding"
-      clientContextIntro="A major airline flew 400 aircraft on 2,500 departures a day. Its biggest operational enemy was the unplanned grounding — an aircraft pulled from service without warning. Each one cost more than $150,000 once delays, rebookings and compensation were counted, and the airline was absorbing around 200 of them a year: roughly $300 million, and a steady erosion of passenger trust."
+      clientContextIntro="A regional airline flew a fleet of 80 aircraft on around 500 departures a day. Its biggest operational enemy was the unplanned grounding — an aircraft pulled from service without warning. Each one cost more than $120,000 once delays, rebookings and compensation were counted, and the airline was absorbing around 50 of them a year: close to $18 million, and a steady erosion of passenger trust."
       clientContextBody="Maintenance was scheduled by the calendar and by flight hours, not by the actual condition of each part — so a healthy component might be replaced early while a failing one slipped through. Meanwhile the aircraft themselves generated enormous volumes of operating data that no one was using. Problems were found during inspections, or when something simply broke. The airline wanted to see trouble coming while there was still time to plan around it."
       clientProfile={{
-        industry: "Commercial Aviation",
-        companySize: "400-Aircraft Fleet",
-        projectDuration: "24 Months",
-        additionalInfo: "2,500 Daily Departures",
+        industry: "Regional Airline",
+        companySize: "80-Aircraft Fleet",
+        projectDuration: "14 Months",
+        additionalInfo: "~500 Daily Departures",
         additionalLabel: "Operations Scale"
       }}
       challengeTitle="The Cost of Being Caught by Surprise"
@@ -33,7 +33,7 @@ export default function AviationPredictiveMaintenance() {
         {
           icon: Plane,
           title: "Groundings Without Warning",
-          description: "Around 200 unplanned groundings a year cost roughly $300M and left passengers stranded."
+          description: "Around 50 unplanned groundings a year cost close to $18M and left passengers stranded."
         },
         {
           icon: Clock,
@@ -81,7 +81,7 @@ export default function AviationPredictiveMaintenance() {
           icon: Cog,
           value: "50%",
           label: "Fewer surprise groundings",
-          detail: "From about 200 a year to 100"
+          detail: "From about 50 a year to 25"
         },
         {
           icon: Shield,
@@ -91,7 +91,7 @@ export default function AviationPredictiveMaintenance() {
         },
         {
           icon: DollarSign,
-          value: "$95M",
+          value: "$7M",
           label: "Saved each year",
           detail: "From avoided disruption and better-planned maintenance"
         },
