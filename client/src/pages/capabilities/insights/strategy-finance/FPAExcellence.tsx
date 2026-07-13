@@ -14,7 +14,7 @@ export default function FPAExcellence() {
       ]}
       relatedContent={[
         {
-          title: "The Mid-Market CFO's Guide to Strategic Finance",
+          title: "The CFO's Guide to Strategic Finance",
           href: "/capabilities/strategy-corporate-finance/insights/strategic-finance-guide",
           category: "Leadership",
         },
@@ -33,7 +33,7 @@ export default function FPAExcellence() {
         The FP&A Maturity Model
       </h2>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
-        FP&A functions typically evolve through four stages: reactive reporting, proactive analysis, strategic partnership, and predictive intelligence. Most mid-market companies operate at stages one or two, with significant opportunity to advance.
+        FP&A functions typically evolve through four stages: reactive reporting, proactive analysis, strategic partnership, and predictive intelligence. Most growing companies operate at stages one or two, with significant opportunity to advance.
       </p>
 
       <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
@@ -48,7 +48,7 @@ export default function FPAExcellence() {
       </h2>
       <ul className="list-disc pl-6 text-charcoal/80 space-y-3 mb-8">
         <li>FP&A has evolved from reporting to strategic partnership</li>
-        <li>Most mid-market companies have significant room to improve</li>
+        <li>Most growing companies have significant room to improve</li>
         <li>Technology enables but doesn't replace analytical capability</li>
         <li>Business partnership requires deep operational understanding</li>
       </ul>

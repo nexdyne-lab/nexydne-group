@@ -13,7 +13,7 @@ export default function StrategyCorporateFinanceMaPartnershipsPostMergerIntegrat
       heroSubtitle="Capture the value you paid for. Integration planning, synergy realization, and change management to ensure successful combinations."
       heroImage="/images/industries/deal-handshake.jpg"
       experienceStats={[
-        { number: "100+", label: "M&A & Strategic Partnerships engagements delivered for mid-market and growth companies" },
+        { number: "100+", label: "M&A & Strategic Partnerships engagements delivered for growing companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
         { number: "8-16 wks", label: "Time to first measurable impact in a focused workstream" },
         { number: "Embedded", label: "Capability transfer at every engagement" },

@@ -3,7 +3,7 @@ import InsightArticle from "@/components/InsightArticle";
 export default function OperationalMetrics() {
   return (
     <InsightArticle
-      title="Operational Metrics That Matter: A Mid-Market Guide"
+      title="Operational Metrics That Matter: A Practical Guide"
       subtitle="The KPIs that actually drive performance, and how to implement them without overwhelming your team."
       date="November 2025"
       readTime="6 min"

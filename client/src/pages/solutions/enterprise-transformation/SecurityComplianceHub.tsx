@@ -13,7 +13,7 @@ export default function SecurityComplianceHub() {
       heroImage="/images/capabilities/cap-aerial-grid.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
-        { number: "35+", label: "Security and compliance programs delivered for mid-market and enterprise clients" },
+        { number: "35+", label: "Security and compliance programs delivered for growing and enterprise clients" },
         // TODO: confirm with practice lead before publish
         { number: "SOC 2 · ISO 27001 · HIPAA · PCI-DSS · GDPR", label: "Frameworks across our active control library" },
         // TODO: confirm with practice lead before publish

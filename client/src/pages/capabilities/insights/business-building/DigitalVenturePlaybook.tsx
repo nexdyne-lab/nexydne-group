@@ -9,7 +9,7 @@ export default function DigitalVenturePlaybook() {
     <div className="min-h-screen bg-white">
       <SEO 
         title="The Digital Venture Playbook for Mid-Size Companies" 
-        description="A practical framework for launching new digital businesses within established mid-market organizations."
+        description="A practical framework for launching new digital businesses within established growing organizations."
       />
       <Navigation />
       
@@ -32,7 +32,7 @@ export default function DigitalVenturePlaybook() {
           </h1>
           
           <p className="text-xl text-muted-foreground/50 mb-8 leading-relaxed">
-            A practical framework for launching new digital businesses within established mid-market organizations.
+            A practical framework for launching new digital businesses within established growing organizations.
           </p>
           
           <div className="flex items-center gap-6 text-sm text-muted-foreground/70">
@@ -90,13 +90,13 @@ export default function DigitalVenturePlaybook() {
         <div className="container max-w-3xl">
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
-              Mid-size companies are uniquely positioned to launch digital ventures. They have the resources and market knowledge of established businesses, combined with the agility that larger enterprises often lack. Yet most mid-market digital ventures fail—not because of bad ideas, but because of flawed execution approaches.
+              Mid-size companies are uniquely positioned to launch digital ventures. They have the resources and market knowledge of established businesses, combined with the agility that larger enterprises often lack. Yet most growth-stage digital ventures fail—not because of bad ideas, but because of flawed execution approaches.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">The Mid-Market Venture Advantage</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">The Growing-Company Venture Advantage</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
-              Our research across 120+ mid-market digital ventures reveals that successful companies leverage three distinct advantages that larger and smaller competitors cannot easily replicate:
+              Our research across 120+ growth-stage digital ventures reveals that successful companies leverage three distinct advantages that larger and smaller competitors cannot easily replicate:
             </p>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -114,7 +114,7 @@ export default function DigitalVenturePlaybook() {
             <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">The Four-Phase Venture Framework</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
-              Successful mid-market digital ventures follow a structured approach that balances speed with rigor. Our framework consists of four phases, each with specific objectives and decision gates.
+              Successful growth-stage digital ventures follow a structured approach that balances speed with rigor. Our framework consists of four phases, each with specific objectives and decision gates.
             </p>
             
             <h3 className="text-2xl font-bold text-charcoal mt-10 mb-4">Phase 1: Opportunity Discovery (4-6 Weeks)</h3>
@@ -160,7 +160,7 @@ export default function DigitalVenturePlaybook() {
             <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Common Failure Patterns</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
-              Understanding why ventures fail is as important as knowing how they succeed. Our analysis identifies five common failure patterns in mid-market digital ventures:
+              Understanding why ventures fail is as important as knowing how they succeed. Our analysis identifies five common failure patterns in growth-stage digital ventures:
             </p>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
@@ -186,7 +186,7 @@ export default function DigitalVenturePlaybook() {
             <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Building Venture Capability</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
-              The most successful mid-market companies don't just launch individual ventures—they build organizational capability for continuous venture creation. This requires investment in three areas:
+              The most successful growing companies don't just launch individual ventures—they build organizational capability for continuous venture creation. This requires investment in three areas:
             </p>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">

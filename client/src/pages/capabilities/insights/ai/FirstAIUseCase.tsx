@@ -25,7 +25,7 @@ export default function FirstAIUseCase() {
           category: "Governance",
         },
         {
-          title: "The AI Talent Gap: Strategies for Mid-Market",
+          title: "The AI Talent Gap: Strategies for Growing Companies",
           href: "/capabilities/artificial-intelligence/insights/ai-talent-gap",
           category: "Talent",
         },
@@ -48,7 +48,7 @@ export default function FirstAIUseCase() {
         to lay groundwork for future initiatives.
       </p>
       <p className="text-charcoal/80 leading-relaxed mb-6">
-        Our analysis of 75+ mid-market AI implementations reveals that companies succeeding 
+        Our analysis of 75+ AI implementations at growing companies reveals that companies succeeding 
         with their first use case share common characteristics in how they select, scope, 
         and execute their initial projects.
       </p>

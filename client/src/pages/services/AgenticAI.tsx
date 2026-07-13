@@ -82,7 +82,7 @@ export default function AgenticAI() {
                 actions with minimal human oversight.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                For mid-market organizations, this represents both opportunity and challenge. The 
+                For growing organizations, this represents both opportunity and challenge. The 
                 technology is powerful, but implementation requires expertise that most organizations 
                 don't have in-house. The gap between AI potential and AI reality is where value is 
                 either captured or lost.

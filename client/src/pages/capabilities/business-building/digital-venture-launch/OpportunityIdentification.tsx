@@ -28,7 +28,7 @@ export default function OpportunityIdentification() {
         { number: "92%", label: "Client renewal or extension rate" },
       ]}
       // TODO: confirm challenge framing with practice lead before publish
-      challenge="Most mid-market teams underestimate how hard it is to translate opportunity identification from a one-off project into a repeatable, production-grade capability the rest of the business actually trusts. Pilots stall in isolation, ownership scatters, and the value case quietly drifts back to the slide deck it started from."
+      challenge="Most teams underestimate how hard it is to translate opportunity identification from a one-off project into a repeatable, production-grade capability the rest of the business actually trusts. Pilots stall in isolation, ownership scatters, and the value case quietly drifts back to the slide deck it started from."
       // TODO: confirm opportunity framing with practice lead before publish
       opportunity="Done well, opportunity identification compounds — every iteration sharpens the operating model, lowers cost, and unlocks the next set of decisions leadership has been deferring. Our Digital Venture Launch team brings the engineering rigor, design sensibility, and change-management muscle needed to move from one-off project to durable capability your team can keep evolving."
       approachPillars={[

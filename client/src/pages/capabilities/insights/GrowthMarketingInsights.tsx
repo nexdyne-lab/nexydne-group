@@ -20,7 +20,7 @@ const insights = [
     category: "Sales",
   },
   {
-    title: "The Mid-Market Guide to Marketing Technology",
+    title: "A Practical Guide to Marketing Technology",
     excerpt:
       "Which marketing technologies deliver ROI for mid-size companies, and which are enterprise overkill.",
     href: "/capabilities/growth-marketing-sales/insights/martech-guide",

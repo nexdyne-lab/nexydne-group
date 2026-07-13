@@ -17,7 +17,7 @@ export default function CommercialArchitecture() {
       heroFocal="50% 45%"
       experienceStats={[
         { number: "End-to-end", label: "Commercial Architecture engagements from diagnostic through execution" },
-        { number: "Mid-market", label: "Sized for ambitious mid-market companies — not Fortune 500 only" },
+        { number: "Right-sized", label: "Sized for ambitious growing companies — not Fortune 500 only" },
         { number: "90 days", label: "From kickoff to first measurable outcome on most engagements" },
         { number: "Senior-led", label: "Every engagement led by a partner with 15+ years of practitioner experience" },
       ]}

@@ -14,7 +14,7 @@ export default function APIIntegration() {
       heroSubtitle="API-first integration architecture. Connect systems, partners, and products via well-designed REST, GraphQL, and gRPC APIs — governed, secured, and built for the long arc."
       heroImage="/solution-enterprise-transformation.0a0f2624.webp"
       experienceStats={[
-        { number: "250+", label: "Production APIs designed, deployed, and governed for mid-market clients" },
+        { number: "250+", label: "Production APIs designed, deployed, and governed for growing companies" },
         { number: "70%", label: "Average reduction in partner onboarding time after gateway and portal rollout" },
         { number: "$5M+", label: "Annual revenue unlocked on a single client's API monetization program" },
         // TODO: confirm stat with practice lead before publish

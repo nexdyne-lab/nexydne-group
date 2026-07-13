@@ -13,7 +13,7 @@ export default function CloudInfrastructureHub() {
       heroImage="/images/capabilities/cap-coder.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
-        { number: "60+", label: "Cloud and infrastructure engagements delivered for mid-market and enterprise clients" },
+        { number: "60+", label: "Cloud and infrastructure engagements delivered for growing and enterprise clients" },
         // TODO: confirm with practice lead before publish
         { number: "38%", label: "Average infrastructure cost reduction across cloud migration engagements" },
         // TODO: confirm with practice lead before publish

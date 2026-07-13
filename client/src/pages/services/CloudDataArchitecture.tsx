@@ -76,7 +76,7 @@ export default function CloudDataArchitecture() {
             </h2>
             <div className="prose prose-lg prose-slate max-w-none">
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Mid-market organizations face a critical inflection point. The promise of AI-driven transformation 
+                Growing organizations face a critical inflection point. The promise of AI-driven transformation 
                 is clear, but legacy infrastructure creates invisible barriers. Data sits in silos across 
                 disconnected systems. Processing bottlenecks slow decision-making. Security concerns multiply 
                 with each new integration.

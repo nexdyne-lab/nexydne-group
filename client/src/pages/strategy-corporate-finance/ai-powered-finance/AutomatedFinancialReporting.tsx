@@ -13,7 +13,7 @@ export default function StrategyCorporateFinanceAiPoweredFinanceAutomatedFinanci
       heroSubtitle="Eliminate manual report generation with AI-powered automation. Real-time dashboards and scheduled reports that update themselves, freeing your team for higher-value analysis."
       heroImage="/images/capabilities/cap-chess.jpg"
       experienceStats={[
-        { number: "100+", label: "AI-Powered Finance engagements delivered for mid-market and growth companies" },
+        { number: "100+", label: "AI-Powered Finance engagements delivered for growing companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
         { number: "8-16 wks", label: "Time to first measurable impact in a focused workstream" },
         { number: "Embedded", label: "Capability transfer at every engagement" },

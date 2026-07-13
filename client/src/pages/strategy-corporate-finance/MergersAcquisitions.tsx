@@ -13,7 +13,7 @@ export default function MergersAcquisitions() {
       heroImage="/images/industries/deal-handshake.jpg"
       experienceStats={[
         { number: "$500M+", label: "Transaction value advised across equity, debt, and strategic deals" },
-        { number: "30+", label: "M&A transactions completed for mid-market companies" },
+        { number: "30+", label: "M&A transactions completed for growing companies" },
         { number: "90%", label: "Synergy capture rate through disciplined integration planning" },
         // TODO: confirm with practice lead before publish
         { number: "Buy & sell side", label: "End-to-end advisory across the full transaction lifecycle" },

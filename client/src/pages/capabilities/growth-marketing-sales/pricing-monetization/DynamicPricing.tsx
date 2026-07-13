@@ -205,7 +205,7 @@ export default function DynamicPricing() {
                       Algorithmic Pricing for SMEs
                     </h4>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-2">
-                      How mid-market companies can leverage dynamic pricing tech.
+                      How growing companies can leverage dynamic pricing tech.
                     </p>
                     <div className="text-primary text-sm font-medium flex items-center">
                       Read more <ArrowRight className="w-3 h-3 ml-1" />

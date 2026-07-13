@@ -12,7 +12,7 @@ export default function MAPartnerships() {
       heroSubtitle="Navigate complex transactions with confidence. From target identification to post-merger integration — and the joint ventures, alliances, and partnerships that unlock growth without a full acquisition."
       heroImage="/images/industries/deal-handshake.jpg"
       experienceStats={[
-        { number: "50+", label: "M&A transactions completed for mid-market companies across diverse industries" },
+        { number: "50+", label: "M&A transactions completed for growing companies across diverse industries" },
         { number: "$750M+", label: "Total transaction value advised on buy-side and sell-side engagements" },
         { number: "85%", label: "Of our acquisitions achieve or exceed projected synergy targets within 24 months" },
         // TODO: confirm with practice lead before publish

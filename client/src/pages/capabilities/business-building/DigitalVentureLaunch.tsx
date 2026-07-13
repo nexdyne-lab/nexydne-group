@@ -14,7 +14,7 @@ export default function DigitalVentureLaunch() {
       heroFocal="55% 50%"
       experienceStats={[
         // TODO: confirm with practice lead before publish
-        { number: "40+", label: "Digital ventures launched with mid-market clients" },
+        { number: "40+", label: "Digital ventures launched with growing companies" },
         // TODO: confirm with practice lead before publish
         { number: "78%", label: "Of ventures profitable within 18 months" },
         // TODO: confirm with practice lead before publish

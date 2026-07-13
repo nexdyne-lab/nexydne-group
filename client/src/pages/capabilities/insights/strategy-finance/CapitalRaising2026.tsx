@@ -14,12 +14,12 @@ export default function CapitalRaising2026() {
       ]}
       relatedContent={[
         {
-          title: "The Mid-Market CFO's Guide to Strategic Finance",
+          title: "The CFO's Guide to Strategic Finance",
           href: "/capabilities/strategy-corporate-finance/insights/strategic-finance-guide",
           category: "Leadership",
         },
         {
-          title: "M&A for Growth: A Mid-Market Buyer's Playbook",
+          title: "M&A for Growth: A Strategic Buyer's Playbook",
           href: "/capabilities/strategy-corporate-finance/insights/ma-playbook",
           category: "M&A",
         },

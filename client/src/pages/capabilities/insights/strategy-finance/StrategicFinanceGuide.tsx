@@ -3,7 +3,7 @@ import InsightArticle from "@/components/InsightArticle";
 export default function StrategicFinanceGuide() {
   return (
     <InsightArticle
-      title="The Mid-Market CFO's Guide to Strategic Finance"
+      title="The CFO's Guide to Strategic Finance"
       subtitle="How CFOs at growing companies can shift from financial reporting to strategic business partnership."
       date="January 2026"
       readTime="10 min"
@@ -32,7 +32,7 @@ export default function StrategicFinanceGuide() {
       ]}
     >
       <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-        The role of the CFO has evolved dramatically over the past decade. Today's mid-market CFOs are expected to be strategic partners to the CEO, not just financial stewards. This guide outlines how finance leaders at growing companies can make this transition while maintaining operational excellence.
+        The role of the CFO has evolved dramatically over the past decade. Today's finance leaders are expected to be strategic partners to the CEO, not just financial stewards. This guide outlines how finance leaders at growing companies can make this transition while maintaining operational excellence.
       </p>
 
       <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
@@ -42,14 +42,14 @@ export default function StrategicFinanceGuide() {
         Twenty years ago, the CFO's primary responsibilities centered on financial reporting, compliance, and cost control. While these functions remain important, today's business environment demands much more. CEOs increasingly look to their CFOs for strategic insight, market analysis, and growth planning.
       </p>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
-        For mid-market companies—typically those with $50M to $500M in revenue—this evolution presents both challenges and opportunities. Unlike their counterparts at large enterprises, mid-market CFOs often lack large teams and sophisticated systems. Yet they face similar strategic demands from boards, investors, and management teams.
+        For growing companies—typically those with $50M to $500M in revenue—this evolution presents both challenges and opportunities. Unlike their counterparts at large enterprises, finance leaders at growing companies often lack large teams and sophisticated systems. Yet they face similar strategic demands from boards, investors, and management teams.
       </p>
 
       <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         Five Pillars of Strategic Finance
       </h2>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
-        Based on our work with hundreds of mid-market companies, we've identified five pillars that distinguish strategic CFOs from traditional finance leaders:
+        Based on our work with hundreds of growing companies, we've identified five pillars that distinguish strategic CFOs from traditional finance leaders:
       </p>
 
       <h3 className="text-xl font-semibold text-charcoal mt-8 mb-4">
@@ -167,7 +167,7 @@ export default function StrategicFinanceGuide() {
       </h2>
       <ul className="list-disc pl-6 text-charcoal/80 space-y-3 mb-8">
         <li>The CFO role has evolved from financial steward to strategic partner</li>
-        <li>Mid-market CFOs face unique challenges due to limited resources</li>
+        <li>Finance leaders at growing companies face unique challenges due to limited resources</li>
         <li>Five pillars define strategic finance: forward-looking analysis, business partnership, capital strategy, technology enablement, and talent development</li>
         <li>Transition should be phased to maintain operational stability</li>
         <li>Success requires both quantitative metrics and qualitative feedback</li>

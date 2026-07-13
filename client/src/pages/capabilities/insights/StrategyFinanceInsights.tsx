@@ -2,7 +2,7 @@ import InsightsListing from "@/components/InsightsListing";
 
 const insights = [
   {
-    title: "The Mid-Market CFO's Guide to Strategic Finance",
+    title: "The CFO's Guide to Strategic Finance",
     excerpt:
       "How CFOs at growing companies can shift from financial reporting to strategic business partnership.",
     href: "/capabilities/strategy-corporate-finance/insights/strategic-finance-guide",
@@ -20,7 +20,7 @@ const insights = [
     category: "Capital",
   },
   {
-    title: "M&A for Growth: A Mid-Market Buyer's Playbook",
+    title: "M&A for Growth: A Strategic Buyer's Playbook",
     excerpt:
       "How to identify, evaluate, and integrate acquisitions that accelerate your strategic objectives.",
     href: "/capabilities/strategy-corporate-finance/insights/ma-playbook",

@@ -13,7 +13,7 @@ export default function CapitalRaising() {
       heroImage="/images/industries/deal-handshake.jpg"
       experienceStats={[
         { number: "$500M+", label: "Capital raised for clients across equity, debt, and alternative financing structures" },
-        { number: "75+", label: "Successful fundraising transactions completed for mid-market companies" },
+        { number: "75+", label: "Successful fundraising transactions completed for growing companies" },
         { number: "30%", label: "Average improvement in terms achieved versus initial offers through our negotiation" },
         // TODO: confirm with practice lead before publish
         { number: "Investor-ready", label: "Diligence packages and pitch materials built to close" },

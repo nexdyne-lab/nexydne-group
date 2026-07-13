@@ -47,7 +47,7 @@ const insights = [
     category: "Workforce",
   },
   {
-    title: "Operational Metrics That Matter: A Mid-Market Guide",
+    title: "Operational Metrics That Matter: A Practical Guide",
     excerpt:
       "The KPIs that actually drive performance, and how to implement them without overwhelming your team.",
     href: "/capabilities/operations/insights/operational-metrics",

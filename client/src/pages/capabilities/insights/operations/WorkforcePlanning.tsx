@@ -14,7 +14,7 @@ export default function WorkforcePlanning() {
       ]}
       relatedContent={[
         {
-          title: "Operational Metrics That Matter: A Mid-Market Guide",
+          title: "Operational Metrics That Matter: A Practical Guide",
           href: "/capabilities/operations/insights/operational-metrics",
           category: "Performance",
         },

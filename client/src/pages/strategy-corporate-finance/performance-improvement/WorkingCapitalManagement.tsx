@@ -13,7 +13,7 @@ export default function StrategyCorporateFinancePerformanceImprovementWorkingCap
       heroSubtitle="Optimize inventory, receivables, and payables to free up cash. Improve cash conversion cycle and reduce financing needs."
       heroImage="/images/capabilities/cap-data-bars.jpg"
       experienceStats={[
-        { number: "100+", label: "Performance Improvement engagements delivered for mid-market and growth companies" },
+        { number: "100+", label: "Performance Improvement engagements delivered for growing companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
         { number: "8-16 wks", label: "Time to first measurable impact in a focused workstream" },
         { number: "Embedded", label: "Capability transfer at every engagement" },

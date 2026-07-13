@@ -76,7 +76,7 @@ export default function CyberResilience() {
             </h2>
             <div className="prose prose-lg prose-slate max-w-none">
               <p className="text-muted-foreground leading-relaxed mb-6">
-                For mid-market organizations, cybersecurity presents a paradox. The same digital transformation 
+                For growing organizations, cybersecurity presents a paradox. The same digital transformation 
                 initiatives that drive competitive advantage also expand the attack surface. Every new cloud 
                 service, every AI integration, every connected device creates potential vulnerabilities that 
                 sophisticated threat actors are eager to exploit.

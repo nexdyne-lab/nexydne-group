@@ -13,7 +13,7 @@ export default function StrategyCorporateFinanceFpaBudgetingForecasting() {
       heroSubtitle="Build robust annual budgets and rolling forecasts that adapt to changing conditions. Scenario modeling for strategic decision-making."
       heroImage="/images/capabilities/cap-data-bars.jpg"
       experienceStats={[
-        { number: "100+", label: "Financial Planning & Analysis engagements delivered for mid-market and growth companies" },
+        { number: "100+", label: "Financial Planning & Analysis engagements delivered for growing companies" },
         { number: "20-40%", label: "Typical performance improvement captured within the first 12 months" },
         { number: "8-16 wks", label: "Time to first measurable impact in a focused workstream" },
         { number: "Embedded", label: "Capability transfer at every engagement" },

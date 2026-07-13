@@ -90,10 +90,10 @@ export default function CloudMigrationRoadmap() {
         <div className="container max-w-3xl">
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
-              Cloud migration is no longer optional for mid-size companies. The question is not whether to migrate, but how to do it efficiently without the massive budgets and specialized teams that large enterprises deploy. This guide provides a practical roadmap based on our experience with 80+ mid-market cloud migrations.
+              Cloud migration is no longer optional for mid-size companies. The question is not whether to migrate, but how to do it efficiently without the massive budgets and specialized teams that large enterprises deploy. This guide provides a practical roadmap based on our experience with 80+ cloud migrations at growing companies.
             </p>
             
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">The Mid-Market Cloud Reality</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">The Growing-Company Cloud Reality</h2>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
               Mid-size companies face unique challenges in cloud migration. They typically have legacy systems that have grown organically over years, limited IT staff who must maintain operations while executing migration, and budgets that don't allow for the "lift and shift everything" approaches that enterprises use.

@@ -82,7 +82,7 @@ export default function IntelligentAdoption() {
                 new systems work around them. Leaders who can't articulate the vision fail to inspire adoption.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                For mid-market organizations, these challenges are amplified. You don't have the luxury 
+                For growing organizations, these challenges are amplified. You don't have the luxury 
                 of dedicated change management teams or months of runway to prepare your workforce. 
                 Every day of delayed adoption costs money and erodes the competitive advantage your 
                 technology investment was meant to create.

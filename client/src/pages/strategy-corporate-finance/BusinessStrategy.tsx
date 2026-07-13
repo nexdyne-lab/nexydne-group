@@ -12,7 +12,7 @@ export default function BusinessStrategy() {
       heroSubtitle="Define your path to victory. We help you clarify your vision, identify growth engines, and build the organizational capabilities needed to win in your market."
       heroImage="/images/capabilities/cap-chess.jpg"
       experienceStats={[
-        { number: "150+", label: "Strategic transformations led for mid-market companies across diverse industries" },
+        { number: "150+", label: "Strategic transformations led for growing companies across diverse industries" },
         { number: "2.5x", label: "Average revenue growth achieved by clients within 3 years of strategy implementation" },
         { number: "85%", label: "Of our strategic plans are successfully executed, versus industry average of 30%" },
         // TODO: confirm with practice lead before publish

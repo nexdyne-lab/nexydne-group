@@ -6,7 +6,7 @@ export function AccountingFirmCaseStudy() {
       client="Regional Accounting Firm"
       industry="Professional Services · Operations"
       title="70% Reduction in Manual Document Processing"
-      subtitle="A 120-employee accounting firm serving mid-market clients deploys ProcessFlow AI to streamline tax document processing and client onboarding workflows, achieving dramatic efficiency gains ahead of their busiest season."
+      subtitle="A 120-employee accounting firm serving growing companies deploys ProcessFlow AI to streamline tax document processing and client onboarding workflows, achieving dramatic efficiency gains ahead of their busiest season."
       heroImage="/images/capabilities/cap-conference-data.jpg"
       challenge={`For two decades, this regional accounting firm had built a reputation for personalized service and deep client relationships. But as their client base grew to over 800 businesses and high-net-worth individuals, their manual processes couldn't keep pace.
 

@@ -89,7 +89,7 @@ export default function DigitalTransformationAccelerator() {
           // TODO: confirm with practice lead before publish
           title: "DevSecOps Enablement",
           description:
-            "Stand up CI/CD pipelines, infrastructure-as-code, and security automation that turn architecture decisions into safely repeatable deployments at mid-market scale.",
+            "Stand up CI/CD pipelines, infrastructure-as-code, and security automation that turn architecture decisions into safely repeatable deployments at your scale.",
           href: "/capabilities/business-building/digital-transformation-accelerator/devsecops-enablement",
         },
       ]}

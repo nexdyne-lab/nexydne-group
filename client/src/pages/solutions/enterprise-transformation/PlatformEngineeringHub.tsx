@@ -13,7 +13,7 @@ export default function PlatformEngineeringHub() {
       heroImage="/images/capabilities/cap-aerial-grid.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
-        { number: "30+", label: "Platform engineering programs delivered for mid-market and enterprise clients" },
+        { number: "30+", label: "Platform engineering programs delivered for growing and enterprise clients" },
         // TODO: confirm with practice lead before publish
         { number: "70%", label: "Median reduction in service lead time after IDP adoption" },
         // TODO: confirm with practice lead before publish

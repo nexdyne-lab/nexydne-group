@@ -13,7 +13,7 @@ export default function PerformanceImprovement() {
       heroImage="/images/capabilities/cap-chess.jpg"
       experienceStats={[
         { number: "25%", label: "Average cost reduction achieved across client engagements through systematic optimization" },
-        { number: "$50M+", label: "Total value unlocked for mid-market clients through performance improvement initiatives" },
+        { number: "$50M+", label: "Total value unlocked for growing companies through performance improvement initiatives" },
         { number: "6 months", label: "Typical payback period for performance improvement programs we implement" },
         // TODO: confirm with practice lead before publish
         { number: "Sustained", label: "Capability transfer that keeps gains in place after we leave" },

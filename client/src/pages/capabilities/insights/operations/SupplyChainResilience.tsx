@@ -180,7 +180,7 @@ export default function SupplyChainResilience() {
             </p>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">
-              <strong>Cloud-based supply chain platforms:</strong> Modern SaaS solutions provide enterprise-grade visibility and planning capabilities at mid-market price points.
+              <strong>Cloud-based supply chain platforms:</strong> Modern SaaS solutions provide enterprise-grade visibility and planning capabilities at accessible price points.
             </p>
             
             <p className="text-charcoal/80 leading-relaxed mb-6">

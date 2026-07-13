@@ -13,7 +13,7 @@ export default function DevOpsAutomationHub() {
       heroImage="/images/capabilities/cap-robot-factory.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
-        { number: "40+", label: "DevOps and CI/CD engagements delivered for mid-market and enterprise clients" },
+        { number: "40+", label: "DevOps and CI/CD engagements delivered for growing and enterprise clients" },
         // TODO: confirm with practice lead before publish
         { number: "5x", label: "Average lift in deployment frequency in the first two quarters" },
         // TODO: confirm with practice lead before publish

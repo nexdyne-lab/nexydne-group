@@ -2,7 +2,7 @@ import InsightsListing from "@/components/InsightsListing";
 
 const insights = [
   {
-    title: "The Mid-Market Venture Playbook: Building New Businesses Without VC",
+    title: "The Venture Playbook: Building New Businesses Without VC",
     excerpt:
       "How established mid-size companies can launch new ventures using internal resources and strategic partnerships.",
     href: "/capabilities/business-building/insights/venture-playbook",
@@ -13,7 +13,7 @@ const insights = [
   {
     title: "Corporate Innovation That Actually Works",
     excerpt:
-      "Lessons from 30 mid-market innovation initiatives: what separates successful ventures from expensive experiments.",
+      "Lessons from 30 innovation initiatives at growing companies: what separates successful ventures from expensive experiments.",
     href: "/capabilities/business-building/insights/corporate-innovation",
     date: "January 2026",
     readTime: "8 min",

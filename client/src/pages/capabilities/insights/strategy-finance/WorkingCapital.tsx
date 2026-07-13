@@ -14,7 +14,7 @@ export default function WorkingCapital() {
       ]}
       relatedContent={[
         {
-          title: "The Mid-Market CFO's Guide to Strategic Finance",
+          title: "The CFO's Guide to Strategic Finance",
           href: "/capabilities/strategy-corporate-finance/insights/strategic-finance-guide",
           category: "Leadership",
         },
@@ -26,14 +26,14 @@ export default function WorkingCapital() {
       ]}
     >
       <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-        Working capital optimization can free significant cash without external financing. For mid-market companies, even modest improvements in receivables, payables, and inventory can release millions in trapped capital.
+        Working capital optimization can free significant cash without external financing. For growing companies, even modest improvements in receivables, payables, and inventory can release millions in trapped capital.
       </p>
 
       <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">
         The Working Capital Opportunity
       </h2>
       <p className="text-charcoal/80 mb-6 leading-relaxed">
-        Most mid-market companies have 10-20% improvement opportunity in working capital. This represents cash that can fund growth, reduce debt, or provide operating flexibility.
+        Most growing companies have 10-20% improvement opportunity in working capital. This represents cash that can fund growth, reduce debt, or provide operating flexibility.
       </p>
 
       <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">

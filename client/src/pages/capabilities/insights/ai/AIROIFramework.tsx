@@ -4,7 +4,7 @@ export default function AIROIFramework() {
   return (
     <InsightArticle
       title="The ROI of AI: What Mid-Size Companies Need to Know"
-      subtitle="A practical framework for measuring AI investment returns, with benchmarks from 50+ mid-market implementations."
+      subtitle="A practical framework for measuring AI investment returns, with benchmarks from 50+ implementations at growing companies."
       date="January 15, 2026"
       readTime="8 min"
       category="Artificial Intelligence"
@@ -34,7 +34,7 @@ export default function AIROIFramework() {
       <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
         For mid-size companies considering AI investments, the question isn't
         whether AI can deliver value—it's how to measure that value in terms
-        that matter to your business. Based on our work with over 50 mid-market
+        that matter to your business. Based on our work with over 50 growth-stage
         organizations, we've developed a practical framework for understanding
         and maximizing AI ROI.
       </p>
@@ -124,7 +124,7 @@ export default function AIROIFramework() {
         Benchmarks from the Field
       </h2>
       <p className="text-charcoal/80 leading-relaxed mb-6">
-        Based on our work with mid-market companies (typically 50-500 employees,
+        Based on our work with growing companies (typically 50-500 employees,
         $10M-$500M revenue), here are realistic benchmarks for AI ROI:
       </p>
 

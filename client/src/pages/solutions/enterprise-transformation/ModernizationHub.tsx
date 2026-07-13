@@ -13,7 +13,7 @@ export default function ModernizationHub() {
       heroImage="/images/capabilities/cap-aerial-grid.jpg"
       experienceStats={[
         // TODO: confirm with practice lead before publish
-        { number: "45+", label: "Modernization and integration engagements delivered for mid-market and enterprise clients" },
+        { number: "45+", label: "Modernization and integration engagements delivered for growing and enterprise clients" },
         // TODO: confirm with practice lead before publish
         { number: "Strangler-fig", label: "Disciplined execution pattern across every modernization program we run" },
         // TODO: confirm with practice lead before publish

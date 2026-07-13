@@ -26,7 +26,7 @@ export default function PricingStrategy() {
       ]}
     >
       <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-        Pricing is one of the most powerful levers for improving profitability, yet many mid-market companies approach it reactively. A strategic approach to pricing can significantly improve margins without sacrificing volume.
+        Pricing is one of the most powerful levers for improving profitability, yet many growing companies approach it reactively. A strategic approach to pricing can significantly improve margins without sacrificing volume.
       </p>
 
       <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">

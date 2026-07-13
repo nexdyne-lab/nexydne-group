@@ -4,7 +4,7 @@ const insights = [
   {
     title: "The ROI of AI: What Mid-Size Companies Need to Know",
     excerpt:
-      "A practical framework for measuring AI investment returns, with benchmarks from 50+ mid-market implementations.",
+      "A practical framework for measuring AI investment returns, with benchmarks from 50+ implementations at growing companies.",
     href: "/capabilities/artificial-intelligence/insights/ai-roi-framework",
     date: "January 2026",
     readTime: "8 min",
@@ -38,7 +38,7 @@ const insights = [
     category: "Operations",
   },
   {
-    title: "The AI Talent Gap: Strategies for Mid-Market Companies",
+    title: "The AI Talent Gap: Strategies for Growing Companies",
     excerpt:
       "How to build AI capabilities when you can't compete with Big Tech salaries, including partnerships and upskilling approaches.",
     href: "/capabilities/artificial-intelligence/insights/ai-talent-strategy",

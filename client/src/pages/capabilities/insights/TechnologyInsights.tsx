@@ -47,7 +47,7 @@ const insights = [
     category: "Architecture",
   },
   {
-    title: "Managing Technology Vendors: A Mid-Market Playbook",
+    title: "Managing Technology Vendors: A Practical Playbook",
     excerpt:
       "Strategies for getting enterprise-quality service from technology vendors without enterprise budgets.",
     href: "/capabilities/technology/insights/vendor-management",
