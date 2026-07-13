@@ -937,6 +937,10 @@ import EnterpriseSoftwarePricingRebuild from "./pages/cases/industries/Enterpris
 import MarketplaceUsagePricing from "./pages/cases/industries/MarketplaceUsagePricing";
 import InfraForecastRebuild from "./pages/cases/industries/InfraForecastRebuild";
 import ServicesRevopsConsolidation from "./pages/cases/industries/ServicesRevopsConsolidation";
+import LogisticsShipmentAutomation from "./pages/cases/industries/LogisticsShipmentAutomation";
+import SaasCustomerOnboarding from "./pages/cases/industries/SaasCustomerOnboarding";
+import B2bDistributorDtcLaunch from "./pages/cases/industries/B2bDistributorDtcLaunch";
+import ServicesSaasProductization from "./pages/cases/industries/ServicesSaasProductization";
 import CapitalRaiseSeriesB from "./pages/cases/industries/CapitalRaiseSeriesB";
 import FpaForecastingTransformation from "./pages/cases/industries/FpaForecastingTransformation";
 import CloudMigrationHealthSystem from "./pages/cases/industries/CloudMigrationHealthSystem";
@@ -1770,6 +1774,10 @@ function Router() {
         <Route path="/cases/marketplace-usage-pricing" component={MarketplaceUsagePricing} />
         <Route path="/cases/infra-forecast-rebuild" component={InfraForecastRebuild} />
         <Route path="/cases/services-revops-consolidation" component={ServicesRevopsConsolidation} />
+        <Route path="/cases/logistics-shipment-automation" component={LogisticsShipmentAutomation} />
+        <Route path="/cases/saas-customer-onboarding" component={SaasCustomerOnboarding} />
+        <Route path="/cases/b2b-distributor-dtc-launch" component={B2bDistributorDtcLaunch} />
+        <Route path="/cases/services-saas-productization" component={ServicesSaasProductization} />
         <Route path="/cases/capital-raise-series-b" component={CapitalRaiseSeriesB} />
         <Route path="/cases/fpa-forecasting-transformation" component={FpaForecastingTransformation} />
         <Route path="/cases/cloud-migration-health-system" component={CloudMigrationHealthSystem} />

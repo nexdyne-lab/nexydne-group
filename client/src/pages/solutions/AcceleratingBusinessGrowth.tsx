@@ -131,7 +131,7 @@ export default function AcceleratingBusinessGrowth() {
       description:
         "A traditional B2B distributor launched their first direct-to-consumer channel, capturing market share from digital-native competitors and creating a new revenue engine.",
       image: "/images/case-bb-manufacturer-dtc.jpg",
-      link: "/case-studies/retail-ecommerce",
+      link: "/cases/b2b-distributor-dtc-launch",
     },
     {
       industry: "Professional Services",
@@ -139,7 +139,7 @@ export default function AcceleratingBusinessGrowth() {
       description:
         "A professional services firm transformed their methodology into a software product, shifting from project-based revenue to predictable recurring streams.",
       image: "/images/case-sales-saas.jpg",
-      link: "/case-studies/training-subscription",
+      link: "/cases/services-saas-productization",
     },
   ];
 
