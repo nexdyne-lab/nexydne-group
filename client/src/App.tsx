@@ -941,6 +941,24 @@ import LogisticsShipmentAutomation from "./pages/cases/industries/LogisticsShipm
 import SaasCustomerOnboarding from "./pages/cases/industries/SaasCustomerOnboarding";
 import B2bDistributorDtcLaunch from "./pages/cases/industries/B2bDistributorDtcLaunch";
 import ServicesSaasProductization from "./pages/cases/industries/ServicesSaasProductization";
+import RetailDataPipelineReliability from "./pages/cases/industries/RetailDataPipelineReliability";
+import InsurerPipelineMigration from "./pages/cases/industries/InsurerPipelineMigration";
+import HealthHipaaAudit from "./pages/cases/industries/HealthHipaaAudit";
+import BankSubjectRights from "./pages/cases/industries/BankSubjectRights";
+import RetailerDatabricksLakehouse from "./pages/cases/industries/RetailerDatabricksLakehouse";
+import AssetManagerDataMesh from "./pages/cases/industries/AssetManagerDataMesh";
+import ManufacturingDataPlatform from "./pages/cases/industries/ManufacturingDataPlatform";
+import HealthcareDataQuality from "./pages/cases/industries/HealthcareDataQuality";
+import HealthSystemDataStrategy from "./pages/cases/industries/HealthSystemDataStrategy";
+import IndustrialDataMonetization from "./pages/cases/industries/IndustrialDataMonetization";
+import BankDataLiteracy from "./pages/cases/industries/BankDataLiteracy";
+import HealthCitizenDataScientist from "./pages/cases/industries/HealthCitizenDataScientist";
+import ManufacturerExecDashboard from "./pages/cases/industries/ManufacturerExecDashboard";
+import HealthEmbeddedAnalytics from "./pages/cases/industries/HealthEmbeddedAnalytics";
+import RetailRecommendations from "./pages/cases/industries/RetailRecommendations";
+import FraudDetection from "./pages/cases/industries/FraudDetection";
+import ManufacturerMulesoft from "./pages/cases/industries/ManufacturerMulesoft";
+import HealthSystemBoomi from "./pages/cases/industries/HealthSystemBoomi";
 import ChemicalPlantOptimization from "./pages/cases/industries/ChemicalPlantOptimization";
 import ChemicalSupplyChain from "./pages/cases/industries/ChemicalSupplyChain";
 import ChemicalSustainability from "./pages/cases/industries/ChemicalSustainability";
@@ -1784,6 +1802,24 @@ function Router() {
         <Route path="/cases/saas-customer-onboarding" component={SaasCustomerOnboarding} />
         <Route path="/cases/b2b-distributor-dtc-launch" component={B2bDistributorDtcLaunch} />
         <Route path="/cases/services-saas-productization" component={ServicesSaasProductization} />
+        <Route path="/cases/retail-data-pipeline-reliability" component={RetailDataPipelineReliability} />
+        <Route path="/cases/insurer-pipeline-migration" component={InsurerPipelineMigration} />
+        <Route path="/cases/health-hipaa-audit" component={HealthHipaaAudit} />
+        <Route path="/cases/bank-subject-rights" component={BankSubjectRights} />
+        <Route path="/cases/retailer-databricks-lakehouse" component={RetailerDatabricksLakehouse} />
+        <Route path="/cases/asset-manager-data-mesh" component={AssetManagerDataMesh} />
+        <Route path="/cases/manufacturing-data-platform" component={ManufacturingDataPlatform} />
+        <Route path="/cases/healthcare-data-quality" component={HealthcareDataQuality} />
+        <Route path="/cases/health-system-data-strategy" component={HealthSystemDataStrategy} />
+        <Route path="/cases/industrial-data-monetization" component={IndustrialDataMonetization} />
+        <Route path="/cases/bank-data-literacy" component={BankDataLiteracy} />
+        <Route path="/cases/health-citizen-data-scientist" component={HealthCitizenDataScientist} />
+        <Route path="/cases/manufacturer-exec-dashboard" component={ManufacturerExecDashboard} />
+        <Route path="/cases/health-embedded-analytics" component={HealthEmbeddedAnalytics} />
+        <Route path="/cases/retail-recommendations" component={RetailRecommendations} />
+        <Route path="/cases/fraud-detection" component={FraudDetection} />
+        <Route path="/cases/manufacturer-mulesoft" component={ManufacturerMulesoft} />
+        <Route path="/cases/health-system-boomi" component={HealthSystemBoomi} />
         <Route path="/cases/chemical-plant-optimization" component={ChemicalPlantOptimization} />
         <Route path="/cases/chemical-supply-chain" component={ChemicalSupplyChain} />
         <Route path="/cases/chemical-sustainability" component={ChemicalSustainability} />
