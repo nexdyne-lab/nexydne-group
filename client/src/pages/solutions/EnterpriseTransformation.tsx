@@ -22,7 +22,7 @@ export default function EnterpriseTransformation() {
         {
           number: "60+",
           label:
-            "technology modernization projects completed for mid-market companies",
+            "technology modernization projects completed for growing companies",
         },
         {
           number: "~$15M",
@@ -50,7 +50,7 @@ export default function EnterpriseTransformation() {
             "From cost center to growth engine: rebuilding the technology operating model",
           summary:
             // TODO: confirm with practice lead before publish
-            "Technology has shifted from a back-office function to the engine that decides whether a company can grow at all. We outline how mid-market leaders are rebuilding the technology operating model around platform thinking, paved-path engineering, and FinOps discipline so technology compounds rather than drags on the P&L.",
+            "Technology has shifted from a back-office function to the engine that decides whether a company can grow at all. We outline how growth-stage leaders are rebuilding the technology operating model around platform thinking, paved-path engineering, and FinOps discipline so technology compounds rather than drags on the P&L.",
           image: "/images/insight-technology-operating-model.jpg",
           href: "/insights/technology-operating-model",
         },
@@ -137,12 +137,12 @@ export default function EnterpriseTransformation() {
         image:
           "/images/capabilities/cap-aerial-grid.jpg",
         intro:
-          "For most mid-market companies, technology is the bottleneck rather than the growth engine — aging systems that cannot scale, data trapped in silos, and IT teams stretched thin just keeping the lights on. We work with growing companies who have outgrown their starter tech stack but are not ready for the complexity and cost of enterprise solutions. We modernize systems in phases, align technology strategy with where the business is heading, and build foundations that support AI without a Fortune 500 budget.",
+          "For most growing companies, technology is the bottleneck rather than the growth engine — aging systems that cannot scale, data trapped in silos, and IT teams stretched thin just keeping the lights on. We work with companies who have outgrown their starter tech stack but are not ready for the complexity and cost of enterprise solutions. We modernize systems in phases, align technology strategy with where the business is heading, and build foundations that support AI without a Fortune 500 budget.",
         realOutcomes: [
           "Healthcare network migrated to AWS without disruption — infrastructure cost cut by 38% with improved uptime",
           "Fintech replatformed monolith into microservices — release cycles accelerated from quarterly to weekly",
           "Media streaming platform re-architected for elastic scale — peak-hour latency reduced 62% during major live events",
-          "~$15M in operational savings delivered to mid-market clients across the past three years",
+          "~$15M in operational savings delivered to clients across the past three years",
         ],
         howWeHelp: [
           "Map current systems, identify pain points, and quantify the cost of doing nothing — no assumptions, just data",
@@ -203,102 +203,27 @@ export default function EnterpriseTransformation() {
       // TODO: confirm with practice lead before publish (per-card metric blurbs + image paths)
       clientResults={[
         {
+          industry: "Technology, Media & Telecom",
+          cases: [
+            { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", metric: "3x faster releases", image: "/images/capabilities/cap-conference-data.jpg" },
+            { slug: "media-streaming-launch", title: "Launching a streaming service that won 750K subscribers", metric: "750K subscribers won", image: "/images/industries/tech-datacenter.jpg" },
+            { slug: "telecom-customer-experience", title: "Cutting a regional carrier's churn by 40%", metric: "40% less churn", image: "/images/capabilities/cap-iot-network.jpg" },
+          ],
+        },
+        {
           industry: "Financial Services",
           cases: [
-            {
-              slug: "fintech-payment-automation",
-              title:
-                "Fintech replatforms monolith into microservices and cuts release cycle to weekly",
-              metric: "Release cycle: quarterly to weekly",
-              image: "/images/case-fintech-payment-automation.jpg",
-            },
-            {
-              slug: "bank-process-automation",
-              title:
-                "Bank rebuilds core platform on cloud-native architecture and reduces infra cost",
-              metric: "30% infra cost reduction",
-              image: "/images/case-bank-process-automation.jpg",
-            },
-            {
-              slug: "wealth-management-automation",
-              title:
-                "Wealth manager modernizes legacy advisor platform on a unified API layer",
-              metric: "Advisor productivity up 35%",
-              image: "/images/case-wealth-management-automation.jpg",
-            },
-            {
-              slug: "insurance-claims-processing",
-              title:
-                "Insurer rebuilds claims platform on event-driven architecture",
-              metric: "Claims latency cut 60%",
-              image: "/images/case-insurance-claims-processing.jpg",
-            },
+            { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", metric: "73% less fraud loss", image: "/images/industries/fin-monitors.jpg" },
+            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "$24M new revenue", image: "/images/industries/fin-trader.jpg" },
+            { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", metric: "40% faster quoting", image: "/images/industries/fin-handshake-city.jpg" },
           ],
         },
         {
-          industry: "Healthcare",
+          industry: "Manufacturing & Energy",
           cases: [
-            {
-              slug: "healthcare-data-analytics",
-              title:
-                "Healthcare network migrates core systems to AWS without disruption",
-              metric: "Infra cost cut 38%, uptime improved",
-              image: "/images/case-healthcare-data-analytics.jpg",
-            },
-            {
-              slug: "hospital-clinical-workflow",
-              title:
-                "Hospital network rebuilds clinical workflow on a unified data platform",
-              metric: "Clinician time saved across 20 facilities",
-              image: "/images/case-hospital-clinical-workflow.jpg",
-            },
-            {
-              slug: "telehealth-platform",
-              title:
-                "Telehealth platform re-architects for elastic scale to millions of patients",
-              metric: "10x scale, latency held flat",
-              image: "/images/case-telehealth-platform.jpg",
-            },
-            {
-              slug: "healthcare-patient-engagement",
-              title:
-                "Health system stands up an internal developer platform for clinical apps",
-              metric: "Lead time cut 70%",
-              image: "/images/case-healthcare-patient-engagement.jpg",
-            },
-          ],
-        },
-        {
-          industry: "Professional Services",
-          cases: [
-            {
-              slug: "law-firm-contract-automation",
-              title:
-                "Law firm replaces aging matter-management estate on a modern API layer",
-              metric: "Matter cycle time down 40%",
-              image: "/images/case-law-firm-contract-automation.jpg",
-            },
-            {
-              slug: "consulting-knowledge-management",
-              title:
-                "Consultancy unifies 20 years of project knowledge on a single data platform",
-              metric: "Search time cut 80%",
-              image: "/images/case-consulting-knowledge-management.jpg",
-            },
-            {
-              slug: "legal-document-intelligence",
-              title:
-                "Legal services group rebuilds document intelligence on cloud-native pipeline",
-              metric: "Review throughput 5x",
-              image: "/images/case-legal-document-intelligence.jpg",
-            },
-            {
-              slug: "accounting-audit-automation",
-              title:
-                "Accounting firm modernizes audit platform with CI/CD and observability",
-              metric: "Audit cycle compressed 45%",
-              image: "/images/case-accounting-audit-automation.jpg",
-            },
+            { slug: "semiconductor-quality-prediction", title: "Catching chip defects weeks before they appear", metric: "92% defect detection", image: "/images/industries/mfg-robot-arm.jpg" },
+            { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", metric: "New services line", image: "/images/capabilities/cap-battery-factory.jpg" },
+            { slug: "utility-grid-modernization", title: "Cutting outage time nearly in half for a regional utility", metric: "45% less outage time", image: "/images/industries/energy-solar.jpg" },
           ],
         },
       ]}

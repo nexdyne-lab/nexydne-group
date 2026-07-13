@@ -46,7 +46,7 @@ export default function Operations() {
           title: "The Future of Operations: AI-Powered Excellence",
           summary:
             // TODO: confirm with practice lead before publish
-            "Operational excellence has shifted from incremental improvement to building adaptive systems that learn, optimize, and evolve. We outline how leading mid-market operators are deploying AI across the value chain — from predictive maintenance to autonomous decisioning — to turn operations from a cost center into a competitive weapon.",
+            "Operational excellence has shifted from incremental improvement to building adaptive systems that learn, optimize, and evolve. We outline how leading operators are deploying AI across the value chain — from predictive maintenance to autonomous decisioning — to turn operations from a cost center into a competitive weapon.",
           image: "/images/insight-ai-powered-operations.jpg",
           href: "/insights/ai-powered-operations",
         },
@@ -133,7 +133,7 @@ export default function Operations() {
         realOutcomes: [
           "Industrial manufacturer cut operating cost 28%, lifted quality 40%, and halved cycle time through a comprehensive lean transformation",
           "National distributor reduced supply-chain disruption impact by 60% and inventory carrying costs by 25% via multi-sourcing and a real-time control tower",
-          "Mid-market operators consistently achieve 25-40% improvement in operational efficiency on transformation programs",
+          "Operators consistently achieve 25-40% improvement in operational efficiency on transformation programs",
           "Average cost reduction of 15-30% delivered across 200+ operations engagements over the past decade",
         ],
         howWeHelp: [
@@ -206,102 +206,27 @@ export default function Operations() {
       // TODO: confirm with practice lead before publish (per-card metric blurbs + image paths)
       clientResults={[
         {
-          industry: "Financial Services",
+          industry: "Manufacturing & Industrial",
           cases: [
-            {
-              slug: "bank-process-automation",
-              title:
-                "Bank automates KYC and onboarding with intelligent document processing",
-              metric: "70% faster onboarding cycle",
-              image: "/images/case-bank-process-automation.jpg",
-            },
-            {
-              slug: "fintech-payment-automation",
-              title:
-                "Fintech eliminates payment reconciliation backlog with workflow automation",
-              metric: "$3M annual operating savings",
-              image: "/images/case-fintech-payment-automation.jpg",
-            },
-            {
-              slug: "wealth-management-automation",
-              title:
-                "Wealth manager streamlines client onboarding end-to-end",
-              metric: "5x faster intake throughput",
-              image: "/images/case-wealth-management-automation.jpg",
-            },
-            {
-              slug: "insurance-claims-processing",
-              title:
-                "Insurer automates claims triage to lift straight-through processing",
-              metric: "60% straight-through processing",
-              image: "/images/case-insurance-claims-processing.jpg",
-            },
+            { slug: "automotive-smart-factory", title: "Lifting plant productivity by 40% at a vehicle maker", metric: "40% more productive", image: "/images/industries/mfg-robotics.jpg" },
+            { slug: "semiconductor-quality-prediction", title: "Catching chip defects weeks before they appear", metric: "92% defect detection", image: "/images/industries/mfg-robot-arm.jpg" },
+            { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", metric: "New services line", image: "/images/capabilities/cap-battery-factory.jpg" },
           ],
         },
         {
-          industry: "Healthcare",
+          industry: "Transportation & Logistics",
           cases: [
-            {
-              slug: "healthcare-data-analytics",
-              title:
-                "Provider unifies clinical operations analytics across 20 facilities",
-              metric: "40% better outcomes reporting",
-              image: "/images/case-healthcare-data-analytics.jpg",
-            },
-            {
-              slug: "hospital-clinical-workflow",
-              title:
-                "Hospital cuts nurse documentation time with workflow redesign",
-              metric: "2 hours saved per shift",
-              image: "/images/case-hospital-clinical-workflow.jpg",
-            },
-            {
-              slug: "telehealth-platform",
-              title:
-                "Telehealth provider scales service operations to millions of patients",
-              metric: "10x scale, 50% cost-to-serve",
-              image: "/images/case-telehealth-platform.jpg",
-            },
-            {
-              slug: "healthcare-patient-engagement",
-              title:
-                "Health system tightens patient outreach with predictive analytics",
-              metric: "32% engagement lift",
-              image: "/images/case-healthcare-patient-engagement.jpg",
-            },
+            { slug: "warehouse-optimization", title: "Lifting warehouse productivity 45% for a regional distributor", metric: "45% more productive", image: "/images/industries/retail-warehouse.jpg" },
+            { slug: "freight-optimization", title: "Cutting freight costs 18% for a consumer-goods shipper", metric: "18% lower freight cost", image: "/images/industries/transport-traffic.jpg" },
+            { slug: "last-mile-optimization", title: "Cutting last-mile delivery costs 30% for a regional carrier", metric: "30% lower last-mile cost", image: "/images/industries/transport-bridge.jpg" },
           ],
         },
         {
-          industry: "Professional Services",
+          industry: "Healthcare & Services",
           cases: [
-            {
-              slug: "law-firm-contract-automation",
-              title:
-                "Law firm automates contract review with structured workflow",
-              metric: "75% faster turnaround",
-              image: "/images/case-law-firm-contract-automation.jpg",
-            },
-            {
-              slug: "consulting-knowledge-management",
-              title:
-                "Consultancy unlocks 20 years of project knowledge with operations redesign",
-              metric: "60% time saved on research",
-              image: "/images/case-consulting-knowledge-management.jpg",
-            },
-            {
-              slug: "legal-document-intelligence",
-              title:
-                "Legal team extracts insights from 10K+ documents with automated review",
-              metric: "90% manual review eliminated",
-              image: "/images/case-legal-document-intelligence.jpg",
-            },
-            {
-              slug: "accounting-audit-automation",
-              title:
-                "Accounting firm automates audit sampling and testing operations",
-              metric: "45% audit cycle reduction",
-              image: "/images/case-accounting-audit-automation.jpg",
-            },
+            { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", metric: "$32M recovered", image: "/case-healthcare-team.5797392b.jpg" },
+            { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", metric: "35% better outcomes", image: "/case-medical-collaboration.9602cc8c.jpg" },
+            { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", metric: "60% straight-through", image: "/case-insurance-claims.399e5d4b.jpg" },
           ],
         },
       ]}

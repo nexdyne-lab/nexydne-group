@@ -27,7 +27,7 @@ export default function StrategyCorporateFinance() {
         {
           number: "200+",
           label:
-            "strategic engagements completed for mid-market organizations",
+            "strategic engagements completed for growing organizations competing with larger rivals",
         },
         {
           number: "40%",
@@ -124,7 +124,7 @@ export default function StrategyCorporateFinance() {
         {
           title: "Embed AI in every finance workflow",
           description:
-            "Harness artificial intelligence to transform your finance function. Automated reporting, predictive cash flow modeling, and AI-assisted budgeting that delivers enterprise-grade insights at midmarket scale.",
+            "Harness artificial intelligence to transform your finance function. Automated reporting, predictive cash flow modeling, and AI-assisted budgeting that delivers enterprise-grade insights for growing companies.",
           href: "/capabilities/strategy-corporate-finance/ai-powered-finance",
         },
       ]}
@@ -139,7 +139,7 @@ export default function StrategyCorporateFinance() {
         realOutcomes: [
           "Logistics tech company secured Series B at a valuation 40% above target through rigorous financial modeling and investor positioning",
           "Regional manufacturing merger captured $12M in synergies within 18 months via integrated cost optimization and operational alignment",
-          "Mid-market clients consistently achieve 40% average valuation uplift through our strategic finance interventions",
+          "Growing companies consistently achieve 40% average valuation uplift through our strategic finance interventions",
           "Over $2B raised for clients across equity, debt, and hybrid instruments over the past decade",
         ],
         howWeHelp: [
@@ -191,7 +191,7 @@ export default function StrategyCorporateFinance() {
         {
           title: "AI-Powered Finance",
           description:
-            "Harness artificial intelligence to transform your finance function. Automated reporting, predictive cash flow modeling, and AI-assisted budgeting that delivers enterprise-grade insights at midmarket scale.",
+            "Harness artificial intelligence to transform your finance function. Automated reporting, predictive cash flow modeling, and AI-assisted budgeting that delivers enterprise-grade insights for growing companies.",
           href: "/capabilities/strategy-corporate-finance/ai-powered-finance",
         },
         {
@@ -206,102 +206,27 @@ export default function StrategyCorporateFinance() {
       // TODO: confirm with practice lead before publish (per-card metric blurbs + image paths)
       clientResults={[
         {
+          industry: "Private Equity & Value Creation",
+          cases: [
+            { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", metric: "$18M added EBITDA", image: "/images/industries/transport-traffic.jpg" },
+            { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", metric: "40% faster diligence", image: "/images/capabilities/cap-conference-data.jpg" },
+            { slug: "pe-distribution-digital", title: "Standing up a carved-out distributor in six months", metric: "Standalone in 6 months", image: "/images/industries/deal-handshake.jpg" },
+          ],
+        },
+        {
           industry: "Financial Services",
           cases: [
-            {
-              slug: "fintech-payment-automation",
-              title:
-                "Fintech secures Series B with sharper unit economics and forecast model",
-              metric: "Series B closed 40% above target valuation",
-              image: "/images/case-fintech-payment-automation.jpg",
-            },
-            {
-              slug: "bank-process-automation",
-              title:
-                "Bank rebuilds finance operating model around AI-assisted close",
-              metric: "5-day close, 30% finance cost reduction",
-              image: "/images/case-bank-process-automation.jpg",
-            },
-            {
-              slug: "wealth-management-automation",
-              title:
-                "Wealth manager unifies FP&A and client reporting on a single forecast spine",
-              metric: "Forecast accuracy improved 35%",
-              image: "/images/case-wealth-management-automation.jpg",
-            },
-            {
-              slug: "insurance-claims-processing",
-              title:
-                "Insurer captures $12M in post-merger synergies on a tight integration plan",
-              metric: "$12M synergies in 18 months",
-              image: "/images/case-insurance-claims-processing.jpg",
-            },
+            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "$24M new revenue", image: "/images/industries/fin-trader.jpg" },
+            { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", metric: "60% faster onboarding", image: "/images/industries/fin-handshake-city.jpg" },
+            { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", metric: "50% shift to digital", image: "/images/industries/fin-monitors.jpg" },
           ],
         },
         {
-          industry: "Healthcare",
+          industry: "Growth & Transformation",
           cases: [
-            {
-              slug: "healthcare-data-analytics",
-              title:
-                "Provider secures growth capital on a unified clinical and financial dataset",
-              metric: "$80M growth round funded",
-              image: "/images/case-healthcare-data-analytics.jpg",
-            },
-            {
-              slug: "hospital-clinical-workflow",
-              title:
-                "Hospital network rebuilds budgeting around service-line profitability",
-              metric: "8% margin lift across 20 facilities",
-              image: "/images/case-hospital-clinical-workflow.jpg",
-            },
-            {
-              slug: "telehealth-platform",
-              title:
-                "Telehealth provider models capital plan to scale to millions of patients",
-              metric: "10x scale, capital efficiency held flat",
-              image: "/images/case-telehealth-platform.jpg",
-            },
-            {
-              slug: "healthcare-patient-engagement",
-              title:
-                "Health system uses fractional CFO to fix cash conversion cycle",
-              metric: "$15M working capital released",
-              image: "/images/case-healthcare-patient-engagement.jpg",
-            },
-          ],
-        },
-        {
-          industry: "Professional Services",
-          cases: [
-            {
-              slug: "law-firm-contract-automation",
-              title:
-                "Law firm restructures partnership economics ahead of M&A roll-up",
-              metric: "3 strategic acquisitions executed",
-              image: "/images/case-law-firm-contract-automation.jpg",
-            },
-            {
-              slug: "consulting-knowledge-management",
-              title:
-                "Consultancy installs AI-powered FP&A across 20 years of project data",
-              metric: "60% planning cycle reduction",
-              image: "/images/case-consulting-knowledge-management.jpg",
-            },
-            {
-              slug: "legal-document-intelligence",
-              title:
-                "Legal services group raises growth capital on a tightened equity story",
-              metric: "Series C closed at 45% premium",
-              image: "/images/case-legal-document-intelligence.jpg",
-            },
-            {
-              slug: "accounting-audit-automation",
-              title:
-                "Accounting firm tunes performance management around strategic accounts",
-              metric: "22% revenue uplift on tier-1 accounts",
-              image: "/images/case-accounting-audit-automation.jpg",
-            },
+            { slug: "media-streaming-launch", title: "Launching a streaming service that won 750K subscribers", metric: "750K subscribers won", image: "/images/industries/tech-datacenter.jpg" },
+            { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", metric: "3x faster releases", image: "/images/capabilities/cap-conference-data.jpg" },
+            { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", metric: "New services line", image: "/images/capabilities/cap-battery-factory.jpg" },
           ],
         },
       ]}
