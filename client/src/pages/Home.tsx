@@ -86,7 +86,7 @@ export default function Home() {
             className="px-6 sm:px-10 lg:pl-14 lg:pr-16 py-12 lg:py-16"
           >
             <div className="flex items-center gap-3 mb-7">
-              <span className="block h-[3px] w-9 bg-primary" />
+              <span className="block h-[3px] w-9 bg-amber" />
               <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-white/55">
                 Where to start
               </span>
@@ -247,7 +247,7 @@ export default function Home() {
             className="bg-off-white flex flex-col justify-center px-4 sm:px-8 md:pl-[76px] md:pr-16 lg:pl-[100px] lg:pr-20 py-12 md:py-16"
           >
             <div className="flex items-center gap-3 mb-5">
-              <span className="block h-[3px] w-9 bg-primary" />
+              <span className="block h-[3px] w-9 bg-amber" />
               <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                 NexDyne Careers
               </span>

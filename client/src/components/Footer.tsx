@@ -47,28 +47,28 @@ export default function Footer() {
 
   return (
     <footer className="bg-charcoal text-text-light">
-      {/* Newsletter Subscription — ember conversion band: the one high-energy
-          moment before the quiet charcoal footer. White rule + heads, cream
-          support, charcoal button (orange would vanish on this ground). */}
-      <div className="relative overflow-hidden nx-surface-ember">
+      {/* Newsletter Subscription — charcoal conversion band. Red lives on the
+          Subscribe button (the action), not the whole surface; an amber rule +
+          faint amber glow carry the accent, a hairline sets it off the footer. */}
+      <div className="relative overflow-hidden bg-black border-b border-white/10">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0"
           style={{
             backgroundImage:
-              "radial-gradient(46% 60% at 100% 0%, rgba(255,255,255,0.07) 0%, transparent 55%)," +
-              "radial-gradient(44% 58% at 0% 100%, rgba(58,16,6,0.22) 0%, transparent 58%)",
+              "radial-gradient(46% 60% at 100% 0%, rgba(255,180,29,0.08) 0%, transparent 55%)," +
+              "radial-gradient(44% 58% at 0% 100%, rgba(255,255,255,0.03) 0%, transparent 58%)",
           }}
         />
         <div className="relative container px-4 sm:px-6 py-10 sm:py-12 md:py-14 lg:py-16">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-10 items-center">
             {/* Left: Subscription Text */}
             <div>
-              <span aria-hidden className="mb-5 block h-[3px] w-12 bg-white" />
+              <span aria-hidden className="mb-5 block h-[3px] w-12 bg-amber" />
               <p className="text-xl sm:text-2xl md:text-[1.9rem] font-semibold tracking-[-0.015em] text-white leading-[1.25]">
                 The next era belongs to leaders who prepare for it.
               </p>
-              <p className="mt-3 text-[1rem] sm:text-[1.05rem] leading-[1.6] text-[#FFE3D8] max-w-[52ch]">
+              <p className="mt-3 text-[1rem] sm:text-[1.05rem] leading-[1.6] text-white/65 max-w-[52ch]">
                 Principled perspectives on governance, strategy, and the future
                 of human intelligence — in your inbox.
               </p>
@@ -87,7 +87,7 @@ export default function Footer() {
                 />
                 <button
                   type="submit"
-                  className="px-6 sm:px-8 py-3 sm:py-4 bg-charcoal text-white font-bold uppercase tracking-wider hover:bg-[#171717] transition-colors duration-200 ease-in-out text-sm"
+                  className="px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white font-bold uppercase tracking-wider hover:bg-primary-hover transition-colors duration-200 ease-in-out text-sm"
                 >
                   Subscribe
                 </button>
@@ -99,11 +99,11 @@ export default function Footer() {
                   type="checkbox"
                   checked={privacyChecked}
                   onChange={(e) => setPrivacyChecked(e.target.checked)}
-                  className="mt-1 w-4 h-4 border-2 border-white/40 rounded-none accent-[#000000]"
+                  className="mt-1 w-4 h-4 border-2 border-white/40 rounded-none accent-[#DE2F23]"
                 />
                 <span className="text-sm text-white/80">
                   *I have read and understand{" "}
-                  <Link href="/privacy-policy" className="text-white underline hover:text-[#FFE3D8] transition-colors">
+                  <Link href="/privacy-policy" className="text-white underline hover:text-amber transition-colors">
                     NexDyne Consulting Group's Privacy Notice
                   </Link>
                   .
