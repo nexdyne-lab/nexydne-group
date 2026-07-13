@@ -907,6 +907,18 @@ import MediaChurnUpliftModel from "./pages/cases/industries/MediaChurnUpliftMode
 import BankingClvAcquisitionRouting from "./pages/cases/industries/BankingClvAcquisitionRouting";
 import HealthcareClosedLoopVoc from "./pages/cases/industries/HealthcareClosedLoopVoc";
 import SaasVocRoadmapReorder from "./pages/cases/industries/SaasVocRoadmapReorder";
+import CommercialLendingDecisionSupport from "./pages/cases/industries/CommercialLendingDecisionSupport";
+import IndustrialIotAnomalyDetection from "./pages/cases/industries/IndustrialIotAnomalyDetection";
+import GlobalProfessionalServicesErpAdoption from "./pages/cases/industries/GlobalProfessionalServicesErpAdoption";
+import PublicSectorSustainedAdoption from "./pages/cases/industries/PublicSectorSustainedAdoption";
+import AerospaceCiPipelineRebuild from "./pages/cases/industries/AerospaceCiPipelineRebuild";
+import RetailBankingCiCapabilityScaling from "./pages/cases/industries/RetailBankingCiCapabilityScaling";
+import InsuranceHybridClaimsAutomation from "./pages/cases/industries/InsuranceHybridClaimsAutomation";
+import PayerAutomationCoeScale from "./pages/cases/industries/PayerAutomationCoeScale";
+import DistributionOrderFulfillmentRedesign from "./pages/cases/industries/DistributionOrderFulfillmentRedesign";
+import HospitalDischargeWorkflowRedesign from "./pages/cases/industries/HospitalDischargeWorkflowRedesign";
+import ManufacturingOptimization from "./pages/cases/industries/ManufacturingOptimization";
+import FinancialServicesCompliance from "./pages/cases/industries/FinancialServicesCompliance";
 import CapitalRaiseSeriesB from "./pages/cases/industries/CapitalRaiseSeriesB";
 import FpaForecastingTransformation from "./pages/cases/industries/FpaForecastingTransformation";
 import CloudMigrationHealthSystem from "./pages/cases/industries/CloudMigrationHealthSystem";
@@ -1710,6 +1722,18 @@ function Router() {
         <Route path="/cases/banking-clv-acquisition-routing" component={BankingClvAcquisitionRouting} />
         <Route path="/cases/healthcare-closed-loop-voc" component={HealthcareClosedLoopVoc} />
         <Route path="/cases/saas-voc-roadmap-reorder" component={SaasVocRoadmapReorder} />
+        <Route path="/cases/commercial-lending-decision-support" component={CommercialLendingDecisionSupport} />
+        <Route path="/cases/industrial-iot-anomaly-detection" component={IndustrialIotAnomalyDetection} />
+        <Route path="/cases/global-professional-services-erp-adoption" component={GlobalProfessionalServicesErpAdoption} />
+        <Route path="/cases/public-sector-sustained-adoption" component={PublicSectorSustainedAdoption} />
+        <Route path="/cases/aerospace-ci-pipeline-rebuild" component={AerospaceCiPipelineRebuild} />
+        <Route path="/cases/retail-banking-ci-capability-scaling" component={RetailBankingCiCapabilityScaling} />
+        <Route path="/cases/insurance-hybrid-claims-automation" component={InsuranceHybridClaimsAutomation} />
+        <Route path="/cases/payer-automation-coe-scale" component={PayerAutomationCoeScale} />
+        <Route path="/cases/distribution-order-fulfillment-redesign" component={DistributionOrderFulfillmentRedesign} />
+        <Route path="/cases/hospital-discharge-workflow-redesign" component={HospitalDischargeWorkflowRedesign} />
+        <Route path="/cases/manufacturing-optimization" component={ManufacturingOptimization} />
+        <Route path="/cases/financial-services-compliance" component={FinancialServicesCompliance} />
         <Route path="/cases/capital-raise-series-b" component={CapitalRaiseSeriesB} />
         <Route path="/cases/fpa-forecasting-transformation" component={FpaForecastingTransformation} />
         <Route path="/cases/cloud-migration-health-system" component={CloudMigrationHealthSystem} />
