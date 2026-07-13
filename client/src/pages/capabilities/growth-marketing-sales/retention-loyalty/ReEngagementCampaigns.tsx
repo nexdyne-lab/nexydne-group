@@ -45,9 +45,10 @@ export default function ReEngagementCampaigns() {
         "Documented guardrails, monitoring, and escalation paths that satisfy risk, security, and compliance reviewers.",
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
-      featuredCases={[
-        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
-        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
+            featuredCases={[
+        { slug: "retail-loyalty-transformation", title: "Turning a stale loyalty program into 45% more spend", industry: "Retail", metric: "45%", image: "/images/capabilities/cap-retail-data.jpg" },
+        { slug: "airline-loyalty-redesign", title: "Reviving a regional airline's loyalty program", industry: "Travel & Hospitality", metric: "40%", image: "/images/industries/transport-bridge.jpg" },
+        { slug: "telecom-customer-experience", title: "Cutting a regional carrier's churn by 40%", industry: "Technology, Media & Telecom", metric: "40%", image: "/images/capabilities/cap-iot-network.jpg" },
       ]}
       relatedServices={[
         { slug: "loyalty-program-design", name: "Loyalty Program Design", href: "/capabilities/growth-marketing-sales/retention-loyalty/loyalty-program-design" },

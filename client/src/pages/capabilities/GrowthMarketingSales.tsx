@@ -256,27 +256,27 @@ export default function GrowthMarketingSales() {
       // AUTHORED case-tab metrics distilled from Cat 11a 12-case pool grouped into 3 industry tabs
       clientResults={[
         {
-          industry: "Retail & Consumer",
+          industry: "Customer & Loyalty",
           cases: [
-            { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", metric: "85% online sales growth", image: "/images/capabilities/cap-retail-apparel.jpg" },
-            { slug: "retail-loyalty-transformation", title: "Turning a stale loyalty program into 45% more spend", metric: "45% more member spend", image: "/images/capabilities/cap-retail-data.jpg" },
-            { slug: "retail-assortment-optimization", title: "Tailoring store assortments to lift a retailer's sales", metric: "12% sales lift", image: "/images/capabilities/cap-retail-apparel.jpg" },
+            { slug: "retail-loyalty-transformation", title: "Turning a stale loyalty program into 45% more spend", metric: "45%", image: "/images/capabilities/cap-retail-data.jpg" },
+            { slug: "telecom-customer-experience", title: "Cutting a regional carrier's churn by 40%", metric: "40%", image: "/images/capabilities/cap-iot-network.jpg" },
+            { slug: "hotel-guest-experience", title: "Restoring personal service across a hotel group", metric: "+25pts", image: "/images/industries/city-night.jpg" },
           ],
         },
         {
-          industry: "Financial Services",
+          industry: "Pricing & Revenue",
           cases: [
-            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "$24M new revenue", image: "/images/industries/fin-trader.jpg" },
-            { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", metric: "60% faster onboarding", image: "/images/industries/fin-handshake-city.jpg" },
-            { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", metric: "50% shift to digital", image: "/images/industries/fin-monitors.jpg" },
+            { slug: "hotel-revenue-transformation", title: "Lifting hotel revenue per room by 18%", metric: "18%", image: "/images/industries/travel-city-twilight.jpg" },
+            { slug: "retail-assortment-optimization", title: "Tailoring store assortments to lift a retailer's sales", metric: "12%", image: "/images/industries/retail-shelves.jpg" },
+            { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", metric: "40%", image: "/images/industries/fin-handshake-city.jpg" },
           ],
         },
         {
-          industry: "Travel & Hospitality",
+          industry: "Growth & Commerce",
           cases: [
-            { slug: "hotel-revenue-transformation", title: "Lifting hotel revenue per room by 18%", metric: "18% higher RevPAR", image: "/images/industries/travel-city-twilight.jpg" },
-            { slug: "airline-loyalty-redesign", title: "Reviving a regional airline's loyalty program", metric: "40% more engagement", image: "/images/industries/transport-bridge.jpg" },
-            { slug: "hotel-guest-experience", title: "Restoring personal service across a hotel group", metric: "+25 NPS points", image: "/images/industries/city-night.jpg" },
+            { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", metric: "85%", image: "/images/capabilities/cap-retail-apparel.jpg" },
+            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+            { slug: "media-streaming-launch", title: "Launching a streaming service that won 750K subscribers", metric: "750K", image: "/images/industries/tech-datacenter.jpg" },
           ],
         },
       ]}
