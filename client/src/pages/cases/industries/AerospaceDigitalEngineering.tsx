@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Plane, Cpu, Clock, DollarSign, Target, Cog, BarChart3, Zap } from "lucide-react";
+import { Clock, DollarSign, Target, Cog, Zap } from "lucide-react";
 
 export default function AerospaceDigitalEngineering() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Digital Engineering Transformation | Aerospace Case Study"
-      seoDescription="How an aerospace company achieved 40% faster development cycles through digital engineering, model-based systems engineering, and digital twins."
+      seoTitle="Bringing Aircraft Programs to Market Faster | Aerospace & Defense Case Study"
+      seoDescription="A leading aircraft manufacturer was losing years and hundreds of millions to late-stage design changes. Connecting its engineering work end to end cut development time by 40%."
       canonical="/cases/aerospace-digital-engineering"
       industry="Aerospace & Defense"
       industryLink="/industries/aerospace-defense"
-      title="Aerospace Company Accelerates Development 40% with Digital Engineering"
-      subtitle="How model-based systems engineering, digital twins, and integrated digital threads transformed aircraft development from years to months."
+      title="How a Global Aircraft Maker Brought New Programs to Market 40% Faster"
+      subtitle="A leading aerospace manufacturer was losing years and hundreds of millions to problems found late in testing. Connecting its engineering work end to end changed the economics of every program."
       heroImage="/images/industries/aero-rocket.jpg"
       metrics={[
         { value: "40%", label: "Faster Development" },
-        { value: "60%", label: "Fewer Design Changes" },
-        { value: "$500M", label: "Cost Avoidance" },
-        { value: "90%", label: "First-Time Quality" }
+        { value: "60%", label: "Fewer Late Changes" },
+        { value: "$500M", label: "Cost Avoided" },
+        { value: "90%", label: "Right First Time" }
       ]}
-      clientContextTitle="An Aerospace Giant Stuck in Document-Based Engineering"
-      clientContextIntro="A major aerospace manufacturer developed complex aircraft systems using traditional document-based engineering. Requirements lived in Word documents, designs in disconnected CAD systems, and test results in spreadsheets. Changes took months to propagate, and integration issues were discovered late—when they were expensive to fix."
-      clientContextBody="Development programs routinely overran budgets by 30% and schedules by 2+ years. The root cause: disconnected engineering data that couldn't keep pace with complexity. Engineers spent more time searching for information and reconciling documents than engineering. The company needed a digital transformation of how it developed products."
+      clientContextTitle="When Engineering Runs on Documents, Everything Slows Down"
+      clientContextIntro="A leading commercial and defense aircraft manufacturer ran its engineering much as it had for decades. Requirements sat in one set of documents, designs in another, and test results in spreadsheets — each owned by a different team, none of them connected. When a requirement changed, it could take months for that change to reach everyone who needed it, and the gaps between systems were exactly where costly mistakes hid."
+      clientContextBody="The consequences surfaced at the worst possible moment. Problems that could have been caught early were instead discovered late in testing, when the only fix was to rework finished designs and slip the schedule. Major programs routinely ran two or more years late and roughly a third over budget. Engineers spent more of their week reconciling out-of-date documents than actually engineering. Leadership concluded the issue was not talent or effort — it was that the company's engineering knowledge was scattered across systems that could not keep up with the complexity of a modern aircraft."
       clientProfile={{
         industry: "Aerospace Manufacturing",
-        companySize: "$40B Annual Revenue",
+        companySize: "~$40B Annual Revenue",
         projectDuration: "36 Months",
         additionalInfo: "50,000 Engineers",
         additionalLabel: "Engineering Workforce"
       }}
-      challengeTitle="Document-Based Engineering in a Digital World"
+      challengeTitle="Why Programs Kept Slipping"
       challenges={[
         {
           icon: Clock,
-          title: "Slow Development",
-          description: "Programs 2+ years behind schedule—document-based processes couldn't keep pace."
+          title: "Years Behind Schedule",
+          description: "Major programs ran two or more years late — document-based ways of working simply could not keep pace with the aircraft's complexity."
         },
         {
           icon: DollarSign,
-          title: "Cost Overruns",
-          description: "30% average budget overrun—late discovery of integration issues drove rework."
+          title: "Budgets Overrun by a Third",
+          description: "Problems surfaced late, when the only remedy was expensive rework — and the average program finished around 30% over budget."
         },
         {
           icon: Target,
-          title: "Disconnected Data",
-          description: "Requirements, designs, and tests in separate systems—no single source of truth."
+          title: "No Single Source of Truth",
+          description: "Requirements, designs and test results lived in separate systems, so teams were often working from versions that no longer agreed."
         },
         {
           icon: Cog,
-          title: "Late Integration",
-          description: "System integration issues found in test—expensive to fix, schedule-breaking."
+          title: "Late Surprises in Test",
+          description: "Integration issues were found only when parts finally came together in physical test — the most expensive point at which to discover them."
         }
       ]}
-      approachTitle="The Digital Engineering Enterprise"
-      approachIntro="NexDyne led a comprehensive digital engineering transformation: model-based systems engineering, integrated digital threads, and digital twins that enabled virtual integration and testing before physical builds."
+      approachTitle="Connecting Engineering End to End"
+      approachIntro="Working alongside the manufacturer's engineering leaders, we set out to make the company's engineering knowledge shared, current and connected — so a change made in one place reached everywhere it mattered, and problems could be found on a screen long before they reached the factory floor."
       steps={[
         {
           step: "01",
-          title: "Model-Based Systems Engineering",
-          description: "Transitioned from document-based to model-based requirements and architecture. SysML models became the authoritative source—automatically generating documents, enabling simulation, and maintaining traceability."
+          title: "One Authoritative Model, Not a Stack of Documents",
+          description: "We moved requirements and system designs out of static documents and into a single connected model that became the official record. Documents were still produced when needed — but generated from the model rather than maintained by hand, so everyone worked from the same, current picture."
         },
         {
           step: "02",
-          title: "Digital Thread Integration",
-          description: "Built an integrated digital thread connecting requirements, design, manufacturing, and test data. Changes propagated automatically across the lifecycle. Engineers always worked with current, consistent information."
+          title: "Changes That Update Themselves",
+          description: "We linked requirements, design, manufacturing and test information so a change in one flowed automatically to the others. Engineers no longer had to chase down every downstream effect of an update; the connections did it for them."
         },
         {
           step: "03",
-          title: "Digital Twin Development",
-          description: "Created high-fidelity digital twins that enabled virtual integration and testing. Systems could be integrated and tested digitally before physical builds—finding issues when they were cheap to fix."
+          title: "Testing in Simulation Before Steel Is Cut",
+          description: "We built high-fidelity digital models of the aircraft's systems so they could be assembled and tested virtually. Integration problems that once appeared in physical test now appeared in simulation — when they were quick and inexpensive to correct."
         },
         {
           step: "04",
-          title: "Agile Development",
-          description: "Implemented agile practices enabled by digital engineering. Rapid iteration, continuous integration, and automated verification replaced waterfall development. Faster feedback, faster learning, faster delivery."
+          title: "Shorter Cycles, Faster Learning",
+          description: "With connected data in place, teams moved from long, sequential phases to shorter cycles of design, check and refine. Feedback that used to take months arrived in days, and the whole program moved faster as a result."
         }
       ]}
-      resultsTitle="Engineering Excellence"
+      resultsTitle="The Payoff"
       results={[
         {
           icon: Clock,
           value: "40%",
           label: "Faster development",
-          detail: "From concept to production"
+          detail: "From first concept to production aircraft"
         },
         {
           icon: Target,
           value: "60%",
-          label: "Fewer design changes",
-          detail: "Issues found earlier, fixed cheaper"
+          label: "Fewer late design changes",
+          detail: "Issues caught early instead of in test"
         },
         {
           icon: DollarSign,
           value: "$500M",
-          label: "Cost avoidance",
-          detail: "From reduced rework and faster cycles"
+          label: "Cost avoided",
+          detail: "Largely from eliminated rework"
         },
         {
           icon: Zap,
           value: "90%",
-          label: "First-time quality",
-          detail: "Systems work right the first time"
+          label: "Right the first time",
+          detail: "Systems that worked as designed on first integration"
         }
       ]}
-      quote="Digital engineering transformed how we develop aircraft. We used to find integration problems in test—now we find them in simulation. We used to spend months propagating changes—now it's automatic. We're developing faster, with higher quality, at lower cost. This is the future of aerospace."
-      quoteAuthor="Dr. Sarah Chen"
-      quoteRole="VP of Engineering"
+      quote="We used to find our integration problems on the test floor — at the worst possible time and the highest possible cost. Now we find them in simulation, weeks earlier. Nothing about our ambition changed. Connecting our engineering simply gave us back years and hundreds of millions."
+      quoteAuthor="Vice President, Engineering"
+      quoteRole="Global aerospace manufacturer"
       relatedStudies={[
         {
-          title: "Supply Chain Optimization for Defense",
-          metric: "35%",
-          label: "better parts availability",
-          link: "/cases/defense-supply-chain",
-          image: "/images/industries/aero-astronaut.jpg"
+          title: "98% Fleet Readiness for a Defense Prime",
+          metric: "98%",
+          label: "mission-ready aircraft",
+          link: "/cases/supply-chain-visibility",
+          image: "/images/industries/retail-warehouse.jpg"
         },
         {
-          title: "Predictive Maintenance for Aviation",
+          title: "Halving Surprise Groundings for an Airline",
           metric: "50%",
-          label: "reduction in unscheduled maintenance",
-          link: "/cases/aviation-predictive-maintenance",
-          image: "/images/industries/eng-designers.jpg"
+          label: "fewer unplanned groundings",
+          link: "/cases/logistics-optimization",
+          image: "/images/industries/ops-monitors-dark.jpg"
         }
       ]}
-      ctaTitle="Ready to Transform Engineering?"
-      ctaDescription="Let's discuss how digital engineering can accelerate your development."
+      ctaTitle="Ready to accelerate your next program?"
+      ctaDescription="Let's talk about what connecting your engineering end to end could be worth."
     />
   );
 }

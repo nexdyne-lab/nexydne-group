@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Plane, Cog, Shield, Clock, DollarSign, Target, Activity, TrendingUp } from "lucide-react";
+import { Plane, Cog, Shield, Clock, DollarSign, Target, Activity } from "lucide-react";
 
 export default function AviationPredictiveMaintenance() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Predictive Maintenance for Aviation | Aerospace Case Study"
-      seoDescription="How an airline reduced unscheduled maintenance by 50% through AI-powered predictive maintenance and real-time aircraft health monitoring."
-      canonical="/cases/aviation-predictive-maintenance"
+      seoTitle="Halving Surprise Aircraft Groundings for an Airline | Aerospace & Defense Case Study"
+      seoDescription="Every unplanned grounding cost a major carrier six figures and a plane full of disrupted passengers. Reading the signals its aircraft already sent cut surprise groundings in half."
+      canonical="/cases/logistics-optimization"
       industry="Aerospace & Defense"
       industryLink="/industries/aerospace-defense"
-      title="Airline Reduces Unscheduled Maintenance 50% with Predictive AI"
-      subtitle="How real-time aircraft health monitoring and machine learning predict failures before they ground aircraft, maximizing fleet availability."
-      heroImage="/images/industries/aero-rocket.jpg"
+      title="Halving Surprise Aircraft Groundings for a Major Airline"
+      subtitle="Every unexpected grounding cost a major carrier six figures and a plane full of disrupted passengers. Reading the signals its aircraft were already sending let the airline fix problems on its own schedule, not the fault's."
+      heroImage="/images/industries/ops-monitors-dark.jpg"
       metrics={[
-        { value: "50%", label: "Less Unscheduled Mx" },
-        { value: "99.2%", label: "Dispatch Reliability" },
-        { value: "$95M", label: "Annual Savings" },
-        { value: "30 Days", label: "Advance Warning" }
+        { value: "50%", label: "Fewer Groundings" },
+        { value: "99.2%", label: "On-Time Dispatch" },
+        { value: "$95M", label: "Saved Each Year" },
+        { value: "~30 Days", label: "Advance Warning" }
       ]}
-      clientContextTitle="An Airline Fighting Unscheduled Maintenance"
-      clientContextIntro="A major airline operated a fleet of 400 aircraft, flying 2,500 daily departures. Unscheduled maintenance was the enemy—each aircraft-on-ground (AOG) event cost $150K+ in delays, rebookings, and customer compensation. The airline averaged 200 AOG events annually, costing $300M and damaging customer trust."
-      clientContextBody="Maintenance was scheduled based on flight hours and cycles, not actual component condition. Aircraft systems generated terabytes of data, but it sat unused. Mechanics discovered problems during inspections or when something broke. The airline needed to predict failures before they disrupted operations."
+      clientContextTitle="The High Price of an Unplanned Grounding"
+      clientContextIntro="A major airline flew 400 aircraft on 2,500 departures a day. Its biggest operational enemy was the unplanned grounding — an aircraft pulled from service without warning. Each one cost more than $150,000 once delays, rebookings and compensation were counted, and the airline was absorbing around 200 of them a year: roughly $300 million, and a steady erosion of passenger trust."
+      clientContextBody="Maintenance was scheduled by the calendar and by flight hours, not by the actual condition of each part — so a healthy component might be replaced early while a failing one slipped through. Meanwhile the aircraft themselves generated enormous volumes of operating data that no one was using. Problems were found during inspections, or when something simply broke. The airline wanted to see trouble coming while there was still time to plan around it."
       clientProfile={{
         industry: "Commercial Aviation",
-        companySize: "400 Aircraft Fleet",
+        companySize: "400-Aircraft Fleet",
         projectDuration: "24 Months",
         additionalInfo: "2,500 Daily Departures",
         additionalLabel: "Operations Scale"
       }}
-      challengeTitle="The Cost of Unscheduled Maintenance"
+      challengeTitle="The Cost of Being Caught by Surprise"
       challenges={[
         {
           icon: Plane,
-          title: "AOG Events",
-          description: "200 aircraft-on-ground events annually—$300M in direct costs and customer impact."
+          title: "Groundings Without Warning",
+          description: "Around 200 unplanned groundings a year cost roughly $300M and left passengers stranded."
         },
         {
           icon: Clock,
-          title: "Time-Based Maintenance",
-          description: "Maintenance scheduled by hours/cycles, not condition—missing actual degradation."
+          title: "Maintenance by the Calendar",
+          description: "Work was scheduled on hours and cycles rather than the true condition of each part — missing real wear and replacing healthy components."
         },
         {
           icon: Activity,
-          title: "Unused Data",
-          description: "Terabytes of aircraft data generated but not analyzed—insights sitting unused."
+          title: "Data That Went Unread",
+          description: "Aircraft produced vast amounts of operating data, but almost none of it was turned into insight."
         },
         {
           icon: Target,
-          title: "Reactive Discovery",
-          description: "Problems found during inspections or failures—too late to prevent disruption."
+          title: "Found Too Late",
+          description: "Faults surfaced in inspection or in failure — after they had already disrupted the operation."
         }
       ]}
-      approachTitle="Predictive Aircraft Health"
-      approachIntro="NexDyne implemented an AI-powered predictive maintenance platform that monitored aircraft health in real-time, predicted failures weeks in advance, and enabled proactive maintenance that prevented disruptions."
+      approachTitle="Listening to What the Aircraft Already Knew"
+      approachIntro="We helped the airline turn the data its fleet was already producing into early warning — spotting the signs of a developing fault weeks ahead, so a repair could be planned into a normal maintenance window rather than forced by a breakdown."
       steps={[
         {
           step: "01",
-          title: "Data Integration",
-          description: "Built a platform that ingested real-time data from aircraft systems: engine parameters, flight control data, environmental systems, and maintenance records. Created a complete digital picture of each aircraft's health."
+          title: "One Live Picture of Every Aircraft",
+          description: "We brought together the streams each aircraft generates — engine readings, flight-control and environmental data, maintenance records — into a single, current view of each aircraft's health."
         },
         {
           step: "02",
-          title: "Failure Pattern Learning",
-          description: "Analyzed 10 years of maintenance history to identify patterns that preceded failures. ML models learned the signatures of component degradation across 50+ failure modes—from engine issues to avionics faults."
+          title: "Learning the Warning Signs",
+          description: "By studying a decade of maintenance history, we taught the system to recognise the early patterns that precede a failure across dozens of the most common fault types."
         },
         {
           step: "03",
-          title: "Real-Time Monitoring",
-          description: "Deployed models that continuously scored aircraft health during flight. Alerts triggered when degradation patterns emerged—30 days average advance warning for most failure modes."
+          title: "Watching in Real Time",
+          description: "The system continuously assessed each aircraft's health in the air, raising a flag as soon as a concerning pattern emerged — on average about a month before the fault would have occurred."
         },
         {
           step: "04",
-          title: "Maintenance Integration",
-          description: "Integrated predictions with maintenance planning. Proactive repairs scheduled during planned maintenance windows. Parts pre-positioned at destination stations. No more surprises."
+          title: "Fixing on the Airline's Schedule",
+          description: "Those early flags fed straight into maintenance planning: repairs were folded into scheduled downtime and parts were sent ahead to the arrival airport, so a looming fault became routine work rather than a scramble."
         }
       ]}
-      resultsTitle="Fleet Reliability Transformed"
+      resultsTitle="A More Reliable Fleet"
       results={[
         {
           icon: Cog,
           value: "50%",
-          label: "Reduction in unscheduled maintenance",
-          detail: "From 200 to 100 AOG events annually"
+          label: "Fewer surprise groundings",
+          detail: "From about 200 a year to 100"
         },
         {
           icon: Shield,
           value: "99.2%",
-          label: "Dispatch reliability",
-          detail: "Up from 98.5%—industry leading"
+          label: "On-time dispatch",
+          detail: "Up from 98.5% — among the best in the industry"
         },
         {
           icon: DollarSign,
           value: "$95M",
-          label: "Annual savings",
-          detail: "From avoided disruptions and optimized maintenance"
+          label: "Saved each year",
+          detail: "From avoided disruption and better-planned maintenance"
         },
         {
           icon: Clock,
-          value: "30 Days",
-          label: "Average advance warning",
-          detail: "Time to plan and execute repairs"
+          value: "~30 Days",
+          label: "Typical advance warning",
+          detail: "Time to plan and fix on the airline's terms"
         }
       ]}
-      quote="Predictive maintenance changed how we think about reliability. We used to wait for things to break—now we fix them before they do. Our mechanics aren't heroes responding to emergencies; they're professionals executing planned maintenance. Our passengers get where they're going, on time."
-      quoteAuthor="Captain James Rodriguez"
-      quoteRole="VP of Technical Operations"
+      quote="We used to wait for things to break; now we fix them before they do. Our engineers aren't firefighting emergencies anymore — they're doing planned work on our schedule. And our passengers get where they're going, on time. That is what reliability really means."
+      quoteAuthor="Vice President, Technical Operations"
+      quoteRole="Major commercial airline"
       relatedStudies={[
         {
-          title: "Supply Chain Optimization for Defense",
-          metric: "35%",
-          label: "better parts availability",
-          link: "/cases/defense-supply-chain",
-          image: "/images/industries/aero-astronaut.jpg"
+          title: "98% Fleet Readiness for a Defense Prime",
+          metric: "98%",
+          label: "mission-ready aircraft",
+          link: "/cases/supply-chain-visibility",
+          image: "/images/industries/retail-warehouse.jpg"
         },
         {
-          title: "Digital Engineering for Aerospace",
+          title: "Bringing Aircraft Programs to Market Faster",
           metric: "40%",
-          label: "faster development cycles",
+          label: "faster development",
           link: "/cases/aerospace-digital-engineering",
-          image: "/images/industries/eng-designers.jpg"
+          image: "/images/industries/aero-rocket.jpg"
         }
       ]}
-      ctaTitle="Ready to Predict Aircraft Failures?"
-      ctaDescription="Let's discuss how predictive maintenance can maximize your fleet availability."
+      ctaTitle="Ready to see trouble before it grounds you?"
+      ctaDescription="Let's talk about turning your fleet's data into early warning."
     />
   );
 }

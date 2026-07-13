@@ -75,24 +75,24 @@ export default function AerospaceDefenseIndustry() {
       }}
       featuredCases={[
         {
-          slug: "bank-process-automation",
-          title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
-          industry: "Financial Services",
-          metric: "10K+ hrs",
-          image: "/images/industries/aero-astronaut.jpg"
+          slug: "aerospace-digital-engineering",
+          title: "How a global aircraft maker brought new programs to market 40% faster",
+          industry: "Aerospace & Defense",
+          metric: "40%",
+          image: "/images/industries/aero-rocket.jpg"
         },
         {
-          slug: "consulting-knowledge-management",
-          title: "Transforming knowledge management for a global consulting firm",
-          industry: "Professional Services",
-          metric: "3x",
-          image: "/images/industries/eng-designers.jpg"
+          slug: "supply-chain-visibility",
+          title: "98% fleet readiness for a defense prime by getting ahead of demand",
+          industry: "Aerospace & Defense",
+          metric: "98%",
+          image: "/images/industries/retail-warehouse.jpg"
         },
         {
-          slug: "accounting-audit-automation",
-          title: "How audit automation helped an accounting firm scale 2x without hiring",
-          industry: "Professional Services",
-          metric: "2x",
+          slug: "logistics-optimization",
+          title: "Halving surprise aircraft groundings for a major airline",
+          industry: "Aerospace & Defense",
+          metric: "50%",
           image: "/images/industries/ops-monitors-dark.jpg"
         }
       ]}

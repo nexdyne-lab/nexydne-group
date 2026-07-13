@@ -1,29 +1,29 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Plane, Package, Shield, Clock, DollarSign, Target, Truck, BarChart3 } from "lucide-react";
+import { Plane, Package, Shield, DollarSign, Target, Truck } from "lucide-react";
 
 export default function DefenseSupplyChain() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Supply Chain Optimization | Defense Case Study"
-      seoDescription="How a defense contractor improved parts availability by 35% through AI-powered supply chain optimization and predictive logistics."
-      canonical="/cases/defense-supply-chain"
+      seoTitle="98% Fleet Readiness for a Defense Prime | Aerospace & Defense Case Study"
+      seoDescription="A defense contractor was grounding aircraft for want of parts while billions sat in the wrong warehouses. Getting ahead of demand lifted mission readiness to 98% and freed up capital."
+      canonical="/cases/supply-chain-visibility"
       industry="Aerospace & Defense"
       industryLink="/industries/aerospace-defense"
-      title="Defense Contractor Improves Parts Availability 35%"
-      subtitle="How AI-powered supply chain optimization and predictive logistics transformed mission readiness while reducing inventory costs."
+      title="Getting the Right Part to the Right Base: 98% Fleet Readiness for a Defense Prime"
+      subtitle="A defense contractor was grounding aircraft for want of parts while billions sat in the wrong warehouses. Anticipating demand instead of reacting to it lifted readiness and freed capital at the same time."
       heroImage="/images/industries/retail-warehouse.jpg"
       metrics={[
+        { value: "98%", label: "Mission Readiness" },
         { value: "35%", label: "Better Availability" },
         { value: "25%", label: "Less Inventory" },
-        { value: "98%", label: "Mission Readiness" },
-        { value: "$180M", label: "Annual Savings" }
+        { value: "$180M", label: "Saved Each Year" }
       ]}
-      clientContextTitle="A Defense Giant Fighting Supply Chain Complexity"
-      clientContextIntro="A major defense contractor supported 5,000+ aircraft across 200 global locations. Parts availability was critical—a grounded aircraft meant a failed mission. But the supply chain was struggling: 15% of aircraft were grounded waiting for parts, while $2B in inventory sat unused in warehouses."
-      clientContextBody="The supply chain was reactive—ordering parts after failures occurred. Demand forecasting was poor for low-volume, high-criticality parts. Inventory was positioned based on historical patterns, not predicted needs. The contractor needed to predict demand, position inventory proactively, and ensure the right part was in the right place at the right time."
+      clientContextTitle="Billions in Inventory, and Aircraft Still Grounded"
+      clientContextIntro="A major defense contractor kept thousands of aircraft flying for its government customers across some 200 locations worldwide. In this business a missing part is not an inconvenience — a grounded aircraft is a mission that cannot be flown. Yet at any given moment roughly one aircraft in seven was waiting on a part, even as some $2 billion in spares sat idle in warehouses."
+      clientContextBody="The root of the problem was timing. The supply chain reacted to failures after they happened, and it stocked parts based on what had been needed in the past rather than what would be needed next. For the low-volume, high-stakes components that actually keep aircraft flying, that left the contractor perpetually a step behind — too much of the wrong inventory, too little of the right, and mission readiness paying the price."
       clientProfile={{
         industry: "Defense Contractor",
-        companySize: "$25B Annual Revenue",
+        companySize: "~$25B Annual Revenue",
         projectDuration: "24 Months",
         additionalInfo: "5,000+ Aircraft",
         additionalLabel: "Fleet Supported"
@@ -32,97 +32,97 @@ export default function DefenseSupplyChain() {
       challenges={[
         {
           icon: Plane,
-          title: "Aircraft Groundings",
-          description: "15% of aircraft grounded waiting for parts—mission capability compromised."
+          title: "Aircraft Waiting on Parts",
+          description: "About 15% of the fleet was grounded at any time for want of a component — mission capability held hostage by the supply chain."
         },
         {
           icon: Package,
-          title: "Excess Inventory",
-          description: "$2B in inventory sitting unused—capital tied up in wrong parts, wrong places."
+          title: "Capital in the Wrong Places",
+          description: "Some $2 billion in spares sat unused, tying up capital in the wrong parts at the wrong locations."
         },
         {
           icon: Target,
-          title: "Poor Forecasting",
-          description: "Demand forecasting failed for low-volume, high-criticality parts—the ones that matter most."
+          title: "Forecasts That Missed What Mattered",
+          description: "Demand planning worked for common parts but broke down on the rare, critical components that actually ground aircraft."
         },
         {
           icon: Truck,
-          title: "Reactive Positioning",
-          description: "Inventory positioned based on history, not predicted needs—always behind."
+          title: "Always a Step Behind",
+          description: "Inventory was positioned from history rather than anticipation, so parts were seldom where the next failure would occur."
         }
       ]}
-      approachTitle="Predictive Supply Chain"
-      approachIntro="NexDyne built an AI-powered supply chain platform that predicted part failures, optimized inventory positioning, and enabled proactive logistics—transforming from reactive to predictive supply chain management."
+      approachTitle="From Reacting to Anticipating"
+      approachIntro="We helped the contractor stop chasing failures and start staying ahead of them — anticipating which parts would be needed, where and when, and positioning them before an aircraft ever came down for repair."
       steps={[
         {
           step: "01",
-          title: "Failure Prediction",
-          description: "Developed ML models that predicted part failures based on aircraft usage, operating conditions, and maintenance history. Models predicted 80% of failures 30+ days in advance—time to position parts."
+          title: "Seeing Failures Coming",
+          description: "Using each aircraft's usage, operating conditions and maintenance history, we built models that flagged likely component failures well before they happened — for most parts, a month or more of warning."
         },
         {
           step: "02",
-          title: "Demand Sensing",
-          description: "Built demand sensing that combined failure predictions with maintenance schedules, mission plans, and historical patterns. Created accurate demand forecasts even for low-volume parts."
+          title: "A Clearer Read on Demand",
+          description: "We combined those early warnings with maintenance schedules and mission plans to produce forecasts that finally held up for the rare, critical parts that had always been hardest to predict."
         },
         {
           step: "03",
-          title: "Inventory Optimization",
-          description: "Implemented optimization algorithms that positioned inventory across 200 locations based on predicted demand and criticality. Right parts moved to right places before they were needed."
+          title: "Putting Parts Where They'll Be Needed",
+          description: "We positioned inventory across all 200 locations according to what was actually likely to be needed and how critical it was — moving the right parts forward before the demand arrived, not after."
         },
         {
           step: "04",
-          title: "Logistics Orchestration",
-          description: "Built a logistics platform that orchestrated shipments across commercial and military transport. Automated expediting for critical parts, optimized routing for cost efficiency."
+          title: "Moving Fast When It Counts",
+          description: "We coordinated shipments across commercial and military transport, automatically expediting the parts that affected readiness while routing everything else for the lowest cost."
         }
       ]}
-      resultsTitle="Mission-Ready Supply Chain"
+      resultsTitle="A Supply Chain Ready for the Mission"
       results={[
-        {
-          icon: Shield,
-          value: "35%",
-          label: "Improvement in availability",
-          detail: "Parts available when and where needed"
-        },
-        {
-          icon: Package,
-          value: "25%",
-          label: "Inventory reduction",
-          detail: "$500M freed from excess inventory"
-        },
         {
           icon: Plane,
           value: "98%",
           label: "Mission readiness",
-          detail: "Up from 85%—aircraft ready to fly"
+          detail: "Up from 85% — aircraft ready to fly"
+        },
+        {
+          icon: Shield,
+          value: "35%",
+          label: "Better parts availability",
+          detail: "The right part, where and when it was needed"
+        },
+        {
+          icon: Package,
+          value: "25%",
+          label: "Less inventory",
+          detail: "About $500M in capital freed up"
         },
         {
           icon: DollarSign,
           value: "$180M",
-          label: "Annual savings",
-          detail: "From inventory and logistics optimization"
+          label: "Saved each year",
+          detail: "Across inventory and logistics"
         }
       ]}
-      quote="We transformed from a supply chain that reacted to failures to one that predicts and prevents them. When we know a part will fail in 30 days, we can have the replacement waiting. Mission readiness isn't about having more inventory—it's about having the right inventory in the right place."
-      quoteAuthor="General (Ret.) Michael Thompson"
-      quoteRole="VP of Global Logistics"
+      quote="Readiness was never about holding more inventory — it was about holding the right inventory in the right place. Once we could see a failure coming a month out, we could have the replacement waiting. That is the difference between an aircraft that flies its mission and one that sits on the ground."
+      quoteAuthor="Vice President, Global Logistics"
+      quoteRole="Defense contractor"
       relatedStudies={[
         {
-          title: "Digital Engineering for Aerospace",
+          title: "Bringing Aircraft Programs to Market Faster",
           metric: "40%",
-          label: "faster development cycles",
+          label: "faster development",
           link: "/cases/aerospace-digital-engineering",
-          image: "/images/capabilities/cap-warehouse-robot.jpg"
+          image: "/images/industries/aero-rocket.jpg"
         },
         {
-          title: "Predictive Maintenance for Aviation",
+          title: "Halving Surprise Groundings for an Airline",
           metric: "50%",
-          label: "reduction in unscheduled maintenance",
-          link: "/cases/aviation-predictive-maintenance",
-          image: "/images/industries/transport-bridge.jpg"
+          label: "fewer unplanned groundings",
+          link: "/cases/logistics-optimization",
+          image: "/images/industries/ops-monitors-dark.jpg"
         }
       ]}
-      ctaTitle="Ready to Optimize Your Supply Chain?"
-      ctaDescription="Let's discuss how predictive logistics can improve mission readiness."
+      ctaTitle="Ready to put readiness ahead of guesswork?"
+      ctaDescription="Let's talk about anticipating demand instead of reacting to it."
     />
   );
 }
