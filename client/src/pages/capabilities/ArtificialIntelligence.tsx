@@ -6,7 +6,7 @@ export default function ArtificialIntelligence() {
       capabilityName="Artificial Intelligence"
       capabilitySlug="artificial-intelligence"
       // PRESERVED VERBATIM from source hero subtitle
-      heroSubtitle="Practical AI solutions for mid-market companies. We help organizations harness AI to automate operations, unlock insights, and compete with larger rivals."
+      heroSubtitle="Practical AI for growing companies. We help you harness AI to automate operations, unlock insights, and compete with larger rivals."
       heroImage="/images/industries/tech-glasses.jpg"
       heroFocal="55% 45%"
       // PRESERVED CTA labels from source (Start Your AI Journey + View Case Studies)
@@ -42,10 +42,9 @@ export default function ArtificialIntelligence() {
         featured: {
           tag: "Strategy",
           title:
-            "The Mid-Market AI Playbook: Where to Start and How to Scale",
+            "The AI Playbook: Where to Start and How to Scale",
           summary:
-            // TODO: confirm with practice lead before publish
-            "Most mid-market AI programs stall between proof-of-concept and production. We outline the practical sequencing, governance, and team model that separates the firms that scale AI from those that abandon it after the first pilot.",
+            "Most AI programs stall between proof-of-concept and production. We outline the practical sequencing, governance, and team model that separates the firms that scale AI from those that abandon it after the first pilot.",
           image: "/images/insight-ai-playbook.jpg",
           href: "/insights/mid-market-ai-playbook",
         },
@@ -97,7 +96,7 @@ export default function ArtificialIntelligence() {
         {
           title: "Unlock insights from your data",
           description:
-            "Turn scattered spreadsheets and siloed databases into actionable intelligence. Our data transformation approach helps mid-market companies compete with data-driven insights.",
+            "Turn scattered spreadsheets and siloed databases into actionable intelligence. Our data transformation approach helps growing companies compete with data-driven insights.",
           href: "/capabilities/artificial-intelligence/predictive-analytics",
         },
         {
@@ -124,7 +123,7 @@ export default function ArtificialIntelligence() {
         // dusk boardroom — dark/warm zones hold the overlaid text without a scrim
         image: "/images/hero/hero-ai.jpg",
         intro:
-          "The hype around generative AI is real—but so is the confusion. Most mid-market companies are stuck between \"we should do something\" and \"we don't know where to start.\" We cut through the noise with a practical approach: identify high-impact use cases, start with quick wins, and build toward enterprise-scale deployment. No science projects. No endless pilots. Just AI that works.",
+          "The hype around generative AI is real—but so is the confusion. Most companies are stuck between \"we should do something\" and \"we don't know where to start.\" We cut through the noise with a practical approach: identify high-impact use cases, start with quick wins, and build toward enterprise-scale deployment. No science projects. No endless pilots. Just AI that works.",
         realOutcomes: [
           "Customer service teams handling 3x more inquiries with AI-assisted responses",
           "Sales teams closing deals 40% faster with AI-generated proposals and follow-ups",
@@ -201,39 +200,28 @@ export default function ArtificialIntelligence() {
           href: "/capabilities/artificial-intelligence/risk-resilience",
         },
       ]}
-      // AUTHORED case-tab metrics distilled from Cat 11a pool (titles + slugs verified live in App.tsx)
-      // TODO: confirm with practice lead before publish (per-card metric blurbs)
+      // Featured client work — the current editorial case studies (slugs + images verified live)
       clientResults={[
         {
           industry: "Financial Services",
           cases: [
             {
-              slug: "bank-process-automation",
-              title:
-                "Bank automates KYC and onboarding with AI document intelligence",
-              metric: "70% faster onboarding",
-              image: "/images/case-bank-process-automation.jpg",
+              slug: "financial-fraud-detection",
+              title: "Catching card fraud before the money moves",
+              metric: "73% less fraud loss",
+              image: "/images/industries/fin-monitors.jpg",
             },
             {
-              slug: "fintech-payment-automation",
-              title:
-                "Fintech eliminates payment reconciliation backlog with ML",
-              metric: "$3M annual savings",
-              image: "/images/case-fintech-payment-automation.jpg",
+              slug: "bank-cross-sell",
+              title: "Turning single accounts into real relationships",
+              metric: "$24M new revenue",
+              image: "/images/industries/fin-trader.jpg",
             },
             {
-              slug: "wealth-management-automation",
-              title:
-                "Wealth manager streamlines client onboarding end-to-end",
-              metric: "5x faster intake",
-              image: "/images/case-wealth-management-automation.jpg",
-            },
-            {
-              slug: "insurance-claims-processing",
-              title:
-                "Insurer automates claims triage with computer vision",
-              metric: "60% straight-through processing",
-              image: "/images/case-insurance-claims-processing.jpg",
+              slug: "wealth-onboarding",
+              title: "Cutting wealth onboarding from weeks to days",
+              metric: "60% faster onboarding",
+              image: "/images/industries/fin-handshake-city.jpg",
             },
           ],
         },
@@ -241,65 +229,45 @@ export default function ArtificialIntelligence() {
           industry: "Healthcare",
           cases: [
             {
-              slug: "healthcare-data-analytics",
-              title:
-                "Provider unifies clinical analytics across 20 facilities",
-              metric: "40% better outcomes reporting",
-              image: "/images/case-healthcare-data-analytics.jpg",
+              slug: "healthcare-transformation",
+              title: "Unifying scattered patient data to improve outcomes",
+              metric: "35% better outcomes",
+              image: "/case-medical-collaboration.9602cc8c.jpg",
             },
             {
-              slug: "hospital-clinical-workflow",
-              title:
-                "Hospital cuts nurse documentation time with ambient AI",
-              metric: "2 hours saved per shift",
-              image: "/images/case-hospital-clinical-workflow.jpg",
+              slug: "healthcare-readmission",
+              title: "Cutting avoidable readmissions with better prediction",
+              metric: "42% fewer readmissions",
+              image: "/case-doctor-consultation.799c1562.jpg",
             },
             {
-              slug: "telehealth-platform",
-              title:
-                "Telehealth provider scales to millions with AI triage",
-              metric: "10x scale, 50% cost reduction",
-              image: "/images/case-telehealth-platform.jpg",
-            },
-            {
-              slug: "healthcare-patient-engagement",
-              title:
-                "Health system personalizes outreach with predictive models",
-              metric: "32% engagement lift",
-              image: "/images/case-healthcare-patient-engagement.jpg",
+              slug: "healthcare-revenue-cycle",
+              title: "Recovering revenue the system had already earned",
+              metric: "$32M recovered",
+              image: "/case-healthcare-team.5797392b.jpg",
             },
           ],
         },
         {
-          industry: "Professional Services",
+          industry: "Insurance",
           cases: [
             {
-              slug: "law-firm-contract-automation",
-              title:
-                "Law firm automates contract review with tuned LLMs",
-              metric: "75% faster turnaround",
-              image: "/images/case-law-firm-contract-automation.jpg",
+              slug: "insurance-ai-underwriting",
+              title: "Quoting commercial business in a day, not a week",
+              metric: "40% faster quoting",
+              image: "/images/industries/fin-monitors.jpg",
             },
             {
-              slug: "consulting-knowledge-management",
-              title:
-                "Consultancy unlocks 20 years of project knowledge with RAG",
-              metric: "60% time saved on research",
-              image: "/images/case-consulting-knowledge-management.jpg",
+              slug: "insurance-claims-automation",
+              title: "Settling straightforward claims in hours, not weeks",
+              metric: "60% straight-through",
+              image: "/case-insurance-claims.399e5d4b.jpg",
             },
             {
-              slug: "legal-document-intelligence",
-              title:
-                "Legal team extracts insights from 10K+ documents instantly",
-              metric: "90% manual review eliminated",
-              image: "/images/case-legal-document-intelligence.jpg",
-            },
-            {
-              slug: "accounting-audit-automation",
-              title:
-                "Accounting firm automates audit sampling and testing",
-              metric: "45% audit cycle reduction",
-              image: "/images/case-accounting-audit-automation.jpg",
+              slug: "insurance-digital-distribution",
+              title: "Turning a call-center insurer into a digital one",
+              metric: "50% shift to digital",
+              image: "/images/industries/fin-handshake-city.jpg",
             },
           ],
         },
@@ -324,7 +292,7 @@ export default function ArtificialIntelligence() {
         {
           tag: "Strategy",
           title:
-            "The Mid-Market AI Playbook: Where to Start and How to Scale",
+            "The AI Playbook: Where to Start and How to Scale",
           readTime: "8 min read",
           image: "/images/insight-ai-playbook.jpg",
           href: "/insights/mid-market-ai-playbook",

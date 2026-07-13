@@ -6,7 +6,7 @@ export default function BusinessBuilding() {
       capabilityName="Business Building"
       capabilitySlug="business-building"
       // PRESERVED VERBATIM from source hero subtitle
-      heroSubtitle="Your core business runs well. Now you need new revenue streams. We help mid-market companies design, build, and launch new digital products and services that actually make money."
+      heroSubtitle="Your core business runs well. Now you need new revenue streams. We help growing companies design, build, and launch new digital products and services that actually make money."
       heroImage="/images/capabilities/cap-venturing.jpg"
       heroFocal="55% 50%"
       // PRESERVED CTA labels from source (Schedule a Consultation + View Case Studies)
@@ -34,8 +34,8 @@ export default function BusinessBuilding() {
         },
         // TODO: confirm with practice lead before publish
         {
-          number: "$28M",
-          label: "Largest first-year revenue from a single venture launch",
+          number: "90%",
+          label: "Of ventures launched on their target timeline",
         },
       ]}
       // AUTHORED — featured uses source insight #1 + AUTHORED summary; secondary uses source insights #2, #3
@@ -47,7 +47,7 @@ export default function BusinessBuilding() {
             "What separates ventures that scale from those that stall",
           summary:
             // TODO: confirm with practice lead before publish
-            "After working with dozens of mid-market companies on new ventures, we have identified the three factors that consistently predict whether a new business line will reach profitability — and the early signals that tell you when to double down or walk away.",
+            "After working with dozens of growing companies on new ventures, we have identified the three factors that consistently predict whether a new business line will reach profitability — and the early signals that tell you when to double down or walk away.",
           image: "/images/insight-ventures-scale-stall.jpg",
           href: "/capabilities/business-building/insights/digital-venture-playbook",
         },
@@ -60,7 +60,7 @@ export default function BusinessBuilding() {
           },
           {
             tag: "Product",
-            title: "MVP myths: What mid-market companies get wrong",
+            title: "MVP myths: What growing companies get wrong",
             href: "/insights/mvp-myths-mid-market",
           },
         ],
@@ -130,12 +130,12 @@ export default function BusinessBuilding() {
       inPractice={{
         image: "/images/capabilities/cap-lightbulb-idea.jpg",
         intro:
-          "We are helping mid-market companies move quickly from experimentation to scale and generate real value from new ventures. Working closely with leadership teams, we identify where to accelerate venture development, build a clear roadmap for impact across product, customer experience, and operational efficiency, and treat AI as a business accelerator rather than a technology deployment — so you ship AI-native products that create sustainable competitive advantage.",
+          "We are helping growing companies move quickly from experimentation to scale and generate real value from new ventures. Working closely with leadership teams, we identify where to accelerate venture development, build a clear roadmap for impact across product, customer experience, and operational efficiency, and treat AI as a business accelerator rather than a technology deployment — so you ship AI-native products that create sustainable competitive advantage.",
         realOutcomes: [
           "A regional bank cut loan origination from 14 days to 4 hours by re-platforming the front office around AI document review",
           "A regional credit union launched a digital lending product that generated $28M in new loans within 14 months",
           "A regional food distributor built a B2B e-commerce platform and grew order volume by 47% in its first year",
-          "Mid-market clients consistently reach profitability within 18 months on new venture launches",
+          "Growing companies consistently reach profitability within 18 months on new venture launches",
         ],
         howWeHelp: [
           "Identify where AI and automation can accelerate venture development and reduce time-to-market",
@@ -207,67 +207,27 @@ export default function BusinessBuilding() {
       // TODO: confirm with practice lead before publish (per-card metric blurbs + image paths)
       clientResults={[
         {
-          industry: "Financial Services",
+          industry: "Technology, Media & Telecom",
           cases: [
-            {
-              slug: "wealth-adjacent",
-              title:
-                "Wealth manager launches an adjacent advisory product line",
-              metric: "New revenue stream in 6 months",
-              image: "/images/case-bb-wealth-adjacent.jpg",
-            },
-            {
-              slug: "consulting-saas",
-              title:
-                "Consultancy productizes its IP into a recurring SaaS revenue stream",
-              metric: "Recurring ARR from a services business",
-              image: "/images/case-bb-consulting-saas.jpg",
-            },
+            { slug: "media-streaming-launch", title: "Launching a streaming service that won 750K subscribers", metric: "750K subscribers won", image: "/images/industries/tech-datacenter.jpg" },
+            { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", metric: "3x faster releases", image: "/images/capabilities/cap-conference-data.jpg" },
+            { slug: "telecom-customer-experience", title: "Cutting a regional carrier's churn by 40%", metric: "40% less churn", image: "/images/capabilities/cap-iot-network.jpg" },
           ],
         },
         {
-          industry: "Distribution & Commerce",
+          industry: "Manufacturing & Industrial",
           cases: [
-            {
-              slug: "distributor-marketplace",
-              title:
-                "Regional distributor builds a B2B marketplace for its dealer network",
-              metric: "47% order volume increase in year one",
-              image: "/images/case-bb-distributor-marketplace.jpg",
-            },
-            {
-              slug: "ecommerce-platform-launch",
-              title:
-                "Mid-market brand stands up a direct-to-consumer e-commerce platform",
-              metric: "Live in 4 months, profitable in 12",
-              image: "/images/case-bb-ecommerce-platform-launch.jpg",
-            },
-            {
-              slug: "manufacturer-dtc",
-              title:
-                "Manufacturer launches a DTC channel without disrupting wholesale",
-              metric: "Margin uplift across new channel",
-              image: "/images/case-bb-manufacturer-dtc.jpg",
-            },
+            { slug: "automotive-ev-transition", title: "Retooling a supplier line for electric-vehicle parts", metric: "45% fewer launch defects", image: "/images/industries/auto-robotics-team.jpg" },
+            { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", metric: "New services revenue", image: "/images/capabilities/cap-battery-factory.jpg" },
+            { slug: "semiconductor-quality-prediction", title: "Catching chip defects weeks before they appear", metric: "92% defect detection", image: "/images/industries/mfg-robot-arm.jpg" },
           ],
         },
         {
-          industry: "Healthcare & Logistics",
+          industry: "Private Equity",
           cases: [
-            {
-              slug: "healthcare-telehealth",
-              title:
-                "Provider launches a telehealth product line for chronic-care patients",
-              metric: "10x patient reach, 50% cost-to-serve",
-              image: "/images/case-bb-healthcare-telehealth.jpg",
-            },
-            {
-              slug: "logistics-tech-spinoff",
-              title:
-                "Logistics operator spins off its in-house tech as a standalone product",
-              metric: "Standalone P&L within 18 months",
-              image: "/images/case-bb-logistics-tech-spinoff.jpg",
-            },
+            { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", metric: "$18M added EBITDA", image: "/images/industries/transport-traffic.jpg" },
+            { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", metric: "40% faster diligence", image: "/images/capabilities/cap-conference-data.jpg" },
+            { slug: "pe-distribution-digital", title: "Standing up a carved-out distributor in six months", metric: "Standalone in 6 months", image: "/images/industries/deal-handshake.jpg" },
           ],
         },
       ]}
@@ -297,7 +257,7 @@ export default function BusinessBuilding() {
         },
         {
           tag: "Product",
-          title: "MVP myths: What mid-market companies get wrong",
+          title: "MVP myths: What growing companies get wrong",
           readTime: "5 min read",
           image: "/images/insight-mvp-myths-mid-market.jpg",
           href: "/insights/mvp-myths-mid-market",

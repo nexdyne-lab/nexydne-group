@@ -6,7 +6,7 @@ export default function GrowthMarketingSales() {
       capabilityName="Growth, Marketing & Sales"
       capabilitySlug="growth-marketing-sales"
       // PRESERVED VERBATIM from source hero subtitle
-      heroSubtitle="Drive sustainable revenue growth by aligning strategy, customer experience, and commercial execution with data-driven precision. We help mid-market organizations outperform their competitors."
+      heroSubtitle="Drive sustainable revenue growth by aligning strategy, customer experience, and commercial execution with data-driven precision. We help growing companies outperform their larger competitors."
       heroImage="/images/capabilities/cap-mobile-woman.jpg"
       heroFocal="50% 50%"
       // PRESERVED CTA labels from source (Accelerate Growth + View Case Studies)
@@ -23,12 +23,12 @@ export default function GrowthMarketingSales() {
         {
           number: "75+",
           label:
-            "Growth and marketing transformations delivered for mid-market companies",
+            "Growth and marketing transformations delivered for growing companies",
         },
         {
-          number: "$50M+",
+          number: "30%",
           label:
-            "Incremental revenue generated for clients through optimized commercial strategies",
+            "Average revenue growth on optimized commercial programs",
         },
         {
           number: "18+",
@@ -46,10 +46,10 @@ export default function GrowthMarketingSales() {
         featured: {
           tag: "Marketing Operations",
           title:
-            "Building a scalable marketing engine for mid-market growth",
+            "Building a scalable marketing engine for growing companies",
           summary:
             // TODO: confirm with practice lead before publish
-            "Most mid-market marketing teams are stuck between scrappy execution and enterprise overhead. We outline the operating model, technology choices, and measurement discipline that let growing companies build a marketing engine that scales without the enterprise complexity or budget.",
+            "Most growing marketing teams are stuck between scrappy execution and enterprise overhead. We outline the operating model, technology choices, and measurement discipline that let growing companies build a marketing engine that scales without the enterprise complexity or budget.",
           image: "/images/insight-marketing-operations.jpg",
           href: "/insights/marketing-operations",
         },
@@ -264,102 +264,27 @@ export default function GrowthMarketingSales() {
       // TODO: confirm with practice lead before publish (per-card metric blurbs)
       clientResults={[
         {
+          industry: "Retail & Consumer",
+          cases: [
+            { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", metric: "85% online sales growth", image: "/images/capabilities/cap-retail-apparel.jpg" },
+            { slug: "retail-loyalty-transformation", title: "Turning a stale loyalty program into 45% more spend", metric: "45% more member spend", image: "/images/capabilities/cap-retail-data.jpg" },
+            { slug: "retail-assortment-optimization", title: "Tailoring store assortments to lift a retailer's sales", metric: "12% sales lift", image: "/images/capabilities/cap-retail-apparel.jpg" },
+          ],
+        },
+        {
           industry: "Financial Services",
           cases: [
-            {
-              slug: "bank-process-automation",
-              title:
-                "Regional bank lifts digital acquisition with personalized journeys",
-              metric: "38% conversion lift",
-              image: "/images/case-bank-process-automation.jpg",
-            },
-            {
-              slug: "fintech-payment-automation",
-              title:
-                "Fintech rebuilds pricing architecture and recovers leaked margin",
-              metric: "$3M annual margin recapture",
-              image: "/images/case-fintech-payment-automation.jpg",
-            },
-            {
-              slug: "wealth-management-automation",
-              title:
-                "Wealth manager redesigns onboarding to lift advisor productivity",
-              metric: "5x faster client intake",
-              image: "/images/case-wealth-management-automation.jpg",
-            },
-            {
-              slug: "insurance-claims-processing",
-              title:
-                "Insurer modernizes broker portal and improves NPS",
-              metric: "+22 NPS in 9 months",
-              image: "/images/case-insurance-claims-processing.jpg",
-            },
+            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "$24M new revenue", image: "/images/industries/fin-trader.jpg" },
+            { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", metric: "60% faster onboarding", image: "/images/industries/fin-handshake-city.jpg" },
+            { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", metric: "50% shift to digital", image: "/images/industries/fin-monitors.jpg" },
           ],
         },
         {
-          industry: "Healthcare",
+          industry: "Travel & Hospitality",
           cases: [
-            {
-              slug: "healthcare-data-analytics",
-              title:
-                "Provider unifies patient analytics for personalized outreach",
-              metric: "40% engagement uplift",
-              image: "/images/case-healthcare-data-analytics.jpg",
-            },
-            {
-              slug: "hospital-clinical-workflow",
-              title:
-                "Hospital system rebuilds patient experience across touchpoints",
-              metric: "+18 NPS, 25% retention lift",
-              image: "/images/case-hospital-clinical-workflow.jpg",
-            },
-            {
-              slug: "telehealth-platform",
-              title:
-                "Telehealth provider scales acquisition with paid + organic funnel",
-              metric: "10x scale, 50% lower CAC",
-              image: "/images/case-telehealth-platform.jpg",
-            },
-            {
-              slug: "healthcare-patient-engagement",
-              title:
-                "Health system personalizes outreach with predictive segmentation",
-              metric: "32% engagement lift",
-              image: "/images/case-healthcare-patient-engagement.jpg",
-            },
-          ],
-        },
-        {
-          industry: "Professional Services",
-          cases: [
-            {
-              slug: "law-firm-contract-automation",
-              title:
-                "Law firm reduces client acquisition cost with brand + content engine",
-              metric: "35% CAC reduction",
-              image: "/images/case-law-firm-contract-automation.jpg",
-            },
-            {
-              slug: "consulting-knowledge-management",
-              title:
-                "Consultancy redesigns commercial architecture and lifts win rate",
-              metric: "+12pts win rate",
-              image: "/images/case-consulting-knowledge-management.jpg",
-            },
-            {
-              slug: "legal-document-intelligence",
-              title:
-                "Legal team launches packaged services and unlocks new revenue",
-              metric: "$2.4M new ARR",
-              image: "/images/case-legal-document-intelligence.jpg",
-            },
-            {
-              slug: "accounting-audit-automation",
-              title:
-                "Accounting firm rebuilds sales motion and grows productivity",
-              metric: "45% productivity gain",
-              image: "/images/case-accounting-audit-automation.jpg",
-            },
+            { slug: "hotel-revenue-transformation", title: "Lifting hotel revenue per room by 18%", metric: "18% higher RevPAR", image: "/images/industries/travel-city-twilight.jpg" },
+            { slug: "airline-loyalty-redesign", title: "Reviving a regional airline's loyalty program", metric: "40% more engagement", image: "/images/industries/transport-bridge.jpg" },
+            { slug: "hotel-guest-experience", title: "Restoring personal service across a hotel group", metric: "+25 NPS points", image: "/images/industries/city-night.jpg" },
           ],
         },
       ]}
