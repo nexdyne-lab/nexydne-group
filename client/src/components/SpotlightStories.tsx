@@ -66,7 +66,7 @@ export function SpotlightStories() {
         {/* Header */}
         <div className="mb-10 lg:mb-12">
           <div className="flex items-center gap-3 mb-3">
-            <span className="block h-[3px] w-9 bg-amber" />
+            <span className="block h-[3px] w-9 bg-primary" />
             <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
               NexDyne Spotlight
             </span>

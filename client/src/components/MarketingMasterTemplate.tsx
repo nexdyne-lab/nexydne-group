@@ -73,7 +73,7 @@ export interface MarketingMasterTemplateProps {
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-/** Orange-rule eyebrow for light surfaces */
+/** Red-rule eyebrow for light surfaces (red leads as the primary; amber is for dark surfaces) */
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3 mb-5">
@@ -199,7 +199,7 @@ export default function MarketingMasterTemplate(
             </p>
             <span className="mt-7 inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.1em] text-white drop-shadow-[0_1px_10px_rgba(0,0,0,0.55)]">
               Read more
-              <ArrowRight className="w-4 h-4 text-primary transition-transform duration-300 group-hover:translate-x-1" />
+              <ArrowRight className="w-4 h-4 text-amber transition-transform duration-300 group-hover:translate-x-1" />
             </span>
           </div>
         </section>
