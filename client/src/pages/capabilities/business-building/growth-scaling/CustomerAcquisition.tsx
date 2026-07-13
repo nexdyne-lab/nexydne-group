@@ -45,9 +45,10 @@ export default function CustomerAcquisition() {
         "Documented guardrails, monitoring, and escalation paths that satisfy risk, security, and compliance reviewers.",
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
-      featuredCases={[
-        { slug: "automotive-ev-transition", title: "Retooling a supplier line for electric-vehicle parts", industry: "Automotive", metric: "45%", image: "/images/industries/auto-robotics-team.jpg" },
-        { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", industry: "Retail", metric: "85%", image: "/images/capabilities/cap-retail-apparel.jpg" },
+            featuredCases={[
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "retail-loyalty-transformation", title: "Turning a stale loyalty program into 45% more spend", industry: "Retail", metric: "45%", image: "/images/capabilities/cap-retail-data.jpg" },
+        { slug: "media-streaming-launch", title: "Launching a streaming service that won 750K subscribers", industry: "Technology, Media & Telecom", metric: "750K", image: "/images/industries/tech-datacenter.jpg" },
       ]}
       relatedServices={[
         { slug: "retention-engagement", name: "Retention & Engagement", href: "/capabilities/business-building/growth-scaling/retention-engagement" },

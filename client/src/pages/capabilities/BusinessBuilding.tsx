@@ -200,27 +200,27 @@ export default function BusinessBuilding() {
       // /capabilities/business-building/case-studies/<slug>. Grouped into 3 industry tabs.
       clientResults={[
         {
-          industry: "Technology, Media & Telecom",
+          industry: "Launch New Ventures",
           cases: [
-            { slug: "media-streaming-launch", title: "Launching a streaming service that won 750K subscribers", metric: "750K subscribers won", image: "/images/industries/tech-datacenter.jpg" },
-            { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", metric: "3x faster releases", image: "/images/capabilities/cap-conference-data.jpg" },
-            { slug: "telecom-customer-experience", title: "Cutting a regional carrier's churn by 40%", metric: "40% less churn", image: "/images/capabilities/cap-iot-network.jpg" },
+            { slug: "media-streaming-launch", title: "Launching a streaming service that won 750K subscribers", metric: "750K", image: "/images/industries/tech-datacenter.jpg" },
+            { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", metric: "85%", image: "/images/capabilities/cap-retail-apparel.jpg" },
+            { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", metric: "$30M", image: "/images/capabilities/cap-battery-factory.jpg" },
           ],
         },
         {
-          industry: "Manufacturing & Industrial",
+          industry: "Build Product & Platform",
           cases: [
-            { slug: "automotive-ev-transition", title: "Retooling a supplier line for electric-vehicle parts", metric: "45% fewer launch defects", image: "/images/industries/auto-robotics-team.jpg" },
-            { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", metric: "New services revenue", image: "/images/capabilities/cap-battery-factory.jpg" },
-            { slug: "semiconductor-quality-prediction", title: "Catching chip defects weeks before they appear", metric: "92% defect detection", image: "/images/industries/mfg-robot-arm.jpg" },
+            { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", metric: "3x", image: "/images/capabilities/cap-conference-data.jpg" },
+            { slug: "platform-engineering-developer-velocity", title: "Shipping faster with an internal developer platform", metric: "3x", image: "/images/capabilities/cap-coder.jpg" },
+            { slug: "automotive-ev-transition", title: "Retooling a supplier line for electric-vehicle parts", metric: "45%", image: "/images/industries/auto-robotics-team.jpg" },
           ],
         },
         {
-          industry: "Private Equity",
+          industry: "Scale & Grow",
           cases: [
-            { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", metric: "$18M added EBITDA", image: "/images/industries/transport-traffic.jpg" },
-            { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", metric: "40% faster diligence", image: "/images/capabilities/cap-conference-data.jpg" },
-            { slug: "pe-distribution-digital", title: "Standing up a carved-out distributor in six months", metric: "Standalone in 6 months", image: "/images/industries/deal-handshake.jpg" },
+            { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+            { slug: "retail-loyalty-transformation", title: "Turning a stale loyalty program into 45% more spend", metric: "45%", image: "/images/capabilities/cap-retail-data.jpg" },
+            { slug: "capital-raise-series-b", title: "Raising a growth round on stronger terms", metric: "1.3x", image: "/images/industries/deal-handshake.jpg" },
           ],
         },
       ]}

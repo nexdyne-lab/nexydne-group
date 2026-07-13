@@ -45,9 +45,10 @@ export default function ContinuousImprovement() {
         "Documented guardrails, monitoring, and escalation paths that satisfy risk, security, and compliance reviewers.",
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
-      featuredCases={[
-        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
-        { slug: "automotive-ev-transition", title: "Retooling a supplier line for electric-vehicle parts", industry: "Automotive", metric: "45%", image: "/images/industries/auto-robotics-team.jpg" },
+            featuredCases={[
+        { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", industry: "Manufacturing", metric: "$30M", image: "/images/capabilities/cap-battery-factory.jpg" },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
       ]}
       relatedServices={[
         { slug: "baseline-assessment", name: "Baseline Assessment", href: "/capabilities/business-building/performance-intelligence-benchmarking/baseline-assessment" },

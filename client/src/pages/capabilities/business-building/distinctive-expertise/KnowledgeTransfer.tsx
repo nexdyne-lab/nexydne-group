@@ -45,8 +45,10 @@ export default function KnowledgeTransfer() {
         "Documented guardrails, monitoring, and escalation paths that satisfy risk, security, and compliance reviewers.",
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
-      featuredCases={[
-        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
+            featuredCases={[
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "aerospace-digital-engineering", title: "How a global aircraft maker brought new programs to market 40% faster", industry: "Aerospace & Defense", metric: "40%", image: "/images/industries/aero-rocket.jpg" },
+        { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", industry: "Manufacturing", metric: "$30M", image: "/images/capabilities/cap-battery-factory.jpg" },
       ]}
       relatedServices={[
         { slug: "playbook-selection", name: "Playbook Selection", href: "/capabilities/business-building/distinctive-expertise/playbook-selection" },
