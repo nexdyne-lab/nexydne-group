@@ -45,7 +45,11 @@ export default function SimulationAnalysis() {
         "Documented guardrails, monitoring, and escalation paths that satisfy risk, security, and compliance reviewers.",
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
-      featuredCases={[]}
+      featuredCases={[
+        { slug: "digital-twin-predictive-operations", title: "Cutting unplanned downtime with a digital twin", industry: "Manufacturing", metric: "45%", image: "/images/industries/mfg-robot-arm.jpg" },
+        { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", industry: "Manufacturing", metric: "$30M", image: "/images/capabilities/cap-battery-factory.jpg" },
+        { slug: "automotive-connected-vehicle", title: "Turning connected-vehicle data into fewer warranty claims", industry: "Automotive", metric: "30%", image: "/images/industries/tech-datacenter.jpg" },
+      ]}
       relatedServices={[
         { slug: "strategy", name: "Digital Twin Strategy", href: "/capabilities/artificial-intelligence/digital-twins/strategy" },
         { slug: "model-development", name: "Model Development", href: "/capabilities/artificial-intelligence/digital-twins/model-development" },
