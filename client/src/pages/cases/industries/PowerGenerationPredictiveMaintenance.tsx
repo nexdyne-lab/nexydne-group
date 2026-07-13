@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Zap, Cog, TrendingUp, Shield, DollarSign, Clock, Target, Activity } from "lucide-react";
+import { Zap, TrendingUp, Shield, DollarSign, Clock, Activity } from "lucide-react";
 
 export default function PowerGenerationPredictiveMaintenance() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Predictive Maintenance for Power Generation | Energy Case Study"
-      seoDescription="How a power generation company reduced unplanned outages by 60% through AI-powered predictive maintenance across its fleet of gas turbines."
+      seoTitle="Halving Unplanned Outages at a Power Generator | Energy & Utilities Case Study"
+      seoDescription="A power generator kept losing turbines without warning, at roughly $500,000 a trip. Reading the signals its machines were already sending cut unplanned outages by 60%."
       canonical="/cases/power-generation-predictive-maintenance"
       industry="Energy & Utilities"
       industryLink="/industries/energy-utilities"
-      title="Power Generator Reduces Unplanned Outages 60% with Predictive AI"
-      subtitle="How machine learning models predict equipment failures weeks in advance, enabling proactive maintenance and maximizing generation availability."
-      heroImage="/images/industries/energy-wind.jpg"
+      title="How a Power Generator Halved Its Unplanned Outages"
+      subtitle="A mid-sized generator kept losing turbines without warning, each trip costing around $500,000 in lost revenue and emergency repairs. Reading the signals its machines were already sending let it fix problems on a plan instead of in a panic."
+      heroImage="/images/industries/energy-powerplant.jpg"
       metrics={[
         { value: "60%", label: "Fewer Unplanned Outages" },
-        { value: "95%", label: "Availability Rate" },
-        { value: "$42M", label: "Annual Savings" },
-        { value: "3 Weeks", label: "Advance Warning" }
+        { value: "95%", label: "Fleet Availability" },
+        { value: "$9M", label: "Saved Each Year" },
+        { value: "~3 Weeks", label: "Advance Warning" }
       ]}
-      clientContextTitle="A Generator Fighting Unplanned Downtime"
-      clientContextIntro="A major power generation company operated a fleet of 40 gas turbines across 15 plants, representing 12GW of capacity. Unplanned outages were costly—each turbine trip meant $500K+ in lost revenue plus emergency repair costs. The fleet averaged 15 unplanned outages per year, costing $75M annually."
-      clientContextBody="Maintenance was time-based, not condition-based. Turbines were overhauled on fixed schedules regardless of actual condition—sometimes too early (wasting useful life), sometimes too late (after failures occurred). Engineers monitored thousands of sensor readings manually, unable to detect the subtle patterns that preceded failures."
+      clientContextTitle="Turbines That Failed Without Warning"
+      clientContextIntro="An independent power producer ran a fleet of about a dozen gas turbines across six plants, together capable of producing roughly three gigawatts. In this business an unplanned outage is expensive twice over: a turbine that trips offline stops earning revenue and then has to be repaired in a hurry. Each such trip cost the company around $500,000, and it was absorbing roughly fifteen of them a year — close to $18 million in all."
+      clientContextBody="The maintenance approach was largely to blame. Turbines were overhauled on a fixed calendar rather than by their actual condition, which meant a healthy machine might be opened up early while a struggling one ran on until it failed. Meanwhile each turbine streamed thousands of sensor readings, far more than any engineer could watch, so the subtle early signs of trouble slipped past unnoticed until something broke. The producer wanted to see failures coming while there was still time to plan around them."
       clientProfile={{
-        industry: "Power Generation",
-        companySize: "12GW Fleet Capacity",
-        projectDuration: "18 Months",
-        additionalInfo: "40 Gas Turbines",
-        additionalLabel: "Fleet Size"
+        industry: "Independent Power Producer",
+        companySize: "~$550M Annual Revenue",
+        projectDuration: "16 Months",
+        additionalInfo: "~12 Gas Turbines",
+        additionalLabel: "Generating Fleet"
       }}
-      challengeTitle="The Cost of Unplanned Downtime"
+      challengeTitle="The Price of a Surprise Outage"
       challenges={[
         {
           icon: Zap,
-          title: "Costly Outages",
-          description: "$75M annual cost from 15 unplanned outages—lost revenue plus emergency repairs."
+          title: "Costly Surprise Trips",
+          description: "About fifteen unplanned outages a year, at roughly $500,000 each, added up to close to $18 million in lost revenue and emergency repairs."
         },
         {
           icon: Clock,
-          title: "Time-Based Maintenance",
-          description: "Fixed overhaul schedules ignored actual equipment condition—suboptimal timing."
+          title: "Maintenance by the Calendar",
+          description: "Turbines were overhauled on fixed schedules that ignored their real condition — healthy machines opened up early, failing ones left running too long."
         },
         {
           icon: Activity,
-          title: "Data Overload",
-          description: "Thousands of sensor readings per turbine—impossible for humans to detect failure patterns."
+          title: "More Data Than Anyone Could Read",
+          description: "Each turbine produced thousands of readings, far beyond what an engineer could watch, so the early warning signs of failure went unseen."
         },
         {
           icon: Shield,
-          title: "Reactive Culture",
-          description: "Organization responded to failures rather than preventing them—firefighting mode."
+          title: "Always Reacting",
+          description: "The organization was built to respond to breakdowns rather than prevent them, so its best people spent their time firefighting emergencies."
         }
       ]}
-      approachTitle="From Reactive to Predictive"
-      approachIntro="NexDyne implemented an AI-powered predictive maintenance platform that monitored turbine health in real-time, predicted failures weeks in advance, and optimized maintenance scheduling."
+      approachTitle="From Firefighting to Foresight"
+      approachIntro="We helped the producer turn the flood of data its turbines were already producing into early warning — spotting the signs of a developing fault weeks ahead, so a repair could be planned into a quiet period rather than forced by a breakdown."
       steps={[
         {
           step: "01",
-          title: "Data Infrastructure",
-          description: "Built a centralized platform that ingested real-time data from all 40 turbines: 2,000+ sensors per unit covering temperatures, pressures, vibrations, and performance parameters. Created a unified view of fleet health."
+          title: "One View of the Whole Fleet",
+          description: "We brought together the readings from every turbine — temperatures, pressures, vibrations and performance figures — into a single live picture of how the entire fleet was running, so no machine went unwatched."
         },
         {
           step: "02",
-          title: "Failure Pattern Learning",
-          description: "Analyzed 10 years of historical data to identify patterns that preceded failures. ML models learned the signatures of bearing degradation, combustion issues, compressor fouling, and other failure modes."
+          title: "Learning the Signs of Failure",
+          description: "By studying about a decade of the company's own maintenance history, we taught the system to recognize the early patterns that precede common failures, from worn bearings to fouled compressors."
         },
         {
           step: "03",
-          title: "Real-Time Monitoring",
-          description: "Deployed models that continuously scored each turbine's health and predicted remaining useful life for critical components. Alerts triggered when degradation patterns emerged—3 weeks average advance warning."
+          title: "Watching Every Turbine in Real Time",
+          description: "The system continuously judged the health of each machine and raised a flag the moment a worrying pattern appeared — on average about three weeks before the failure would have happened."
         },
         {
           step: "04",
-          title: "Maintenance Optimization",
-          description: "Integrated predictions with maintenance planning. Shifted from time-based to condition-based maintenance—performing work when needed, not on arbitrary schedules. Optimized outage timing for market conditions."
+          title: "Fixing on a Plan, Not in a Panic",
+          description: "Those early flags fed straight into maintenance planning, so work was done when a machine actually needed it and timed for when power prices were low — turning a looming breakdown into routine, well-timed work."
         }
       ]}
-      resultsTitle="Reliability Transformed"
+      resultsTitle="A Fleet That Keeps Running"
       results={[
         {
           icon: Shield,
           value: "60%",
           label: "Fewer unplanned outages",
-          detail: "From 15 to 6 per year across fleet"
+          detail: "From about 15 a year down to 6"
         },
         {
           icon: TrendingUp,
           value: "95%",
           label: "Fleet availability",
-          detail: "Up from 91%—industry leading"
+          detail: "Up from 91% — among the best in its class"
         },
         {
           icon: DollarSign,
-          value: "$42M",
-          label: "Annual savings",
-          detail: "From avoided outages and optimized maintenance"
+          value: "$9M",
+          label: "Saved each year",
+          detail: "From avoided outages and better-timed maintenance"
         },
         {
           icon: Clock,
-          value: "3 Weeks",
-          label: "Average advance warning",
-          detail: "Time to plan and execute repairs"
+          value: "~3 Weeks",
+          label: "Typical advance warning",
+          detail: "Time to plan and carry out the repair calmly"
         }
       ]}
-      quote="Predictive maintenance changed our culture from reactive to proactive. We used to celebrate heroic responses to failures—now we celebrate preventing them. The AI sees patterns in sensor data that our best engineers couldn't detect. We're not just maintaining turbines better—we're operating them better."
-      quoteAuthor="Thomas Anderson"
-      quoteRole="VP of Asset Management"
+      quote="This changed how we work more than any single machine. We used to celebrate the heroic all-night save after a turbine failed; now we celebrate the failure that never happened because we saw it coming. Our engineers do planned work on our schedule, and the fleet simply keeps running."
+      quoteAuthor="Vice President, Generation"
+      quoteRole="Independent power producer"
       relatedStudies={[
         {
-          title: "Grid Modernization for Electric Utility",
+          title: "Cutting Outage Time Nearly in Half for a Regional Utility",
           metric: "45%",
-          label: "reduction in outage duration",
+          label: "shorter outages",
           link: "/cases/utility-grid-modernization",
-          image: "/images/industries/energy-powerplant.jpg"
+          image: "/images/industries/energy-solar.jpg"
         },
         {
-          title: "AI Forecasting for Renewable Energy",
+          title: "Sharper Generation Forecasts for a Renewables Developer",
           metric: "25%",
-          label: "improvement in forecast accuracy",
+          label: "better forecast accuracy",
           link: "/cases/renewable-energy-forecasting",
-          image: "/images/industries/energy-solar.jpg"
+          image: "/images/industries/energy-wind.jpg"
         }
       ]}
-      ctaTitle="Ready to Predict Equipment Failures?"
-      ctaDescription="Let's discuss how predictive maintenance can maximize your asset availability."
+      ctaTitle="Ready to see failures before they cost you?"
+      ctaDescription="Let's talk about turning your fleet's data into weeks of advance warning."
     />
   );
 }

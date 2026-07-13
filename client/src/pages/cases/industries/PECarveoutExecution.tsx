@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Scissors, Clock, Building2, Cog, DollarSign, Target, Shield, Users } from "lucide-react";
+import { Clock, Building2, Cog, DollarSign, Target, Shield } from "lucide-react";
 
 export default function PECarveoutExecution() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Carve-Out Execution | Private Equity Case Study"
-      seoDescription="How a PE firm achieved standalone operations in 6 months for a $2B carve-out, avoiding TSA extensions and capturing synergies faster."
-      canonical="/cases/pe-carveout-execution"
-      industry="Private Equity & Principal Investors"
+      seoTitle="Standing Up a Carved-Out Distributor in Six Months | Private Equity Case Study"
+      seoDescription="A private equity fund bought a distribution business out of a larger parent and had to make it independent fast. A disciplined separation stood it up — systems and all — in six months."
+      canonical="/cases/pe-distribution-digital"
+      industry="Private Equity"
       industryLink="/industries/private-equity"
-      title="PE Firm Executes $2B Carve-Out in 6 Months"
-      subtitle="How systematic separation planning and execution achieved standalone operations faster than industry benchmarks, avoiding costly TSA extensions."
+      title="How a Fund Made a Carved-Out Distributor Independent in 6 Months"
+      subtitle="A private equity fund bought a distribution business that was deeply tangled up in its former parent. Standing it up on its own — new systems included — quickly, cleanly and without disrupting customers was the whole game."
       heroImage="/images/industries/deal-handshake.jpg"
       metrics={[
         { value: "6 Months", label: "To Standalone" },
-        { value: "$45M", label: "TSA Costs Avoided" },
-        { value: "Zero", label: "Business Disruption" },
-        { value: "18 Months", label: "Ahead of Plan" }
+        { value: "$7M", label: "Separation Costs Avoided" },
+        { value: "Zero", label: "Customer Disruption" },
+        { value: "100%", label: "Off Parent Systems" }
       ]}
-      clientContextTitle="A Complex Carve-Out Under Time Pressure"
-      clientContextIntro="A private equity firm acquired a $2B division from a Fortune 500 conglomerate. The division had been deeply integrated with the parent—shared IT systems, combined back-office functions, and intertwined supply chains. The TSA provided 24 months of support, but every month cost $4M and delayed value creation."
-      clientContextBody="Carve-outs typically take 18-24 months to achieve standalone operations. The PE firm wanted to move faster—capturing synergies sooner and avoiding TSA costs. But speed couldn't come at the cost of business disruption. The division needed to separate cleanly while maintaining customer service and operational performance."
+      clientContextTitle="A Business Still Wired Into Its Old Owner"
+      clientContextIntro="A private equity fund bought a distribution business — around $220 million in revenue, roughly 900 employees, serving customers from a network of regional depots — out of a much larger parent. On paper it was a clean sale. In practice the business was still wired into the parent for almost everything: its order and warehouse systems, its finance and HR, even parts of its supply chain."
+      clientContextBody="A temporary support arrangement let the parent keep the lights on after close, but it cost around $600,000 a month and, more importantly, held up the value the fund had bought the business to create. Separations like this often run eighteen months or more. The fund wanted to move faster — off the parent's systems and standing on its own — without a single customer ever feeling the change."
       clientProfile={{
-        industry: "Private Equity",
-        companySize: "$2B Acquisition",
+        industry: "Distribution (PE Carve-Out)",
+        companySize: "~$220M Carve-Out Revenue",
         projectDuration: "6 Months",
-        additionalInfo: "5,000 Employees",
-        additionalLabel: "Carved-Out Division"
+        additionalInfo: "~900 Employees",
+        additionalLabel: "Carved-Out Business"
       }}
-      challengeTitle="Separation at Speed"
+      challengeTitle="Separation Against the Clock"
       challenges={[
         {
           icon: Clock,
-          title: "TSA Costs",
-          description: "$4M monthly TSA costs—every month of delay eroded deal value."
+          title: "A Meter Running",
+          description: "Roughly $600,000 a month for temporary parent support — every month of delay eroding the return."
         },
         {
           icon: Cog,
-          title: "Deep Integration",
-          description: "Shared IT, finance, HR, and supply chain—everything intertwined with parent."
+          title: "Tangled at Every Level",
+          description: "Shared order, warehouse, finance and HR systems meant almost nothing about the business was cleanly its own."
         },
         {
           icon: Shield,
-          title: "Business Continuity",
-          description: "Must maintain customer service and operations during separation—no disruption."
+          title: "Customers Come First",
+          description: "Deliveries and service had to continue without a hitch throughout — the separation could not be felt on the front line."
         },
         {
           icon: Building2,
-          title: "Standalone Capabilities",
-          description: "Division lacked independent capabilities—had to build from scratch."
+          title: "No Systems of Its Own",
+          description: "The business had almost no independent digital backbone and had to build one while it kept trading."
         }
       ]}
-      approachTitle="Accelerated Separation"
-      approachIntro="NexDyne led an accelerated carve-out program that achieved standalone operations in 6 months through systematic planning, parallel workstreams, and relentless execution focus."
+      approachTitle="A Fast, Clean Separation"
+      approachIntro="We led a separation built for speed and safety — running the workstreams in parallel, standing up a modern set of systems the business would own outright, and keeping a relentless focus on the customer so that nothing on the front line ever wavered."
       steps={[
         {
           step: "01",
-          title: "Day One Readiness",
-          description: "Established critical Day One capabilities before close: legal entity structure, banking, insurance, and regulatory compliance. Division could operate independently from the moment the deal closed."
+          title: "Ready From Day One",
+          description: "We put the essentials in place before close — legal entity, banking, insurance and regulatory basics — so the business could trade entirely on its own from the moment the deal closed, not weeks later."
         },
         {
           step: "02",
-          title: "IT Separation",
-          description: "Executed rapid IT separation through a combination of lift-and-shift, cloud migration, and new system implementation. Prioritized customer-facing systems first, back-office second."
+          title: "Its Own Digital Backbone",
+          description: "Rather than untangle old shared platforms, we stood up fresh, cloud-based order, warehouse and finance systems the business would own. Customer-facing systems came first, back-office second, so service never depended on the parent."
         },
         {
           step: "03",
-          title: "Functional Standup",
-          description: "Built standalone capabilities in finance, HR, legal, and procurement. Combined internal hires, parent company transfers, and outsourcing to build functions quickly."
+          title: "Building the Functions to Run Alone",
+          description: "We built standalone finance, HR and procurement through a mix of new hires, transfers from the parent and selective outsourcing — enough capability to operate independently, without over-building for a business this size."
         },
         {
           step: "04",
-          title: "TSA Exit Management",
-          description: "Managed systematic TSA exit with clear milestones and accountability. Weekly tracking of separation progress. Aggressive but achievable timelines for each service."
+          title: "Off the Parent, Service by Service",
+          description: "We ran a disciplined exit from parent support with clear milestones, weekly tracking and a firm date for handing each service back — aggressive timelines, but ones the team could actually hit."
         }
       ]}
-      resultsTitle="Separation Success"
+      resultsTitle="Independent, Ahead of Schedule"
       results={[
         {
           icon: Clock,
           value: "6 Months",
           label: "To standalone operations",
-          detail: "vs. 18-24 month industry average"
+          detail: "Against a typical eighteen to twenty-four"
         },
         {
           icon: DollarSign,
-          value: "$45M",
-          label: "TSA costs avoided",
-          detail: "From accelerated separation"
+          value: "$7M",
+          label: "Separation costs avoided",
+          detail: "From an early exit off parent support"
         },
         {
           icon: Shield,
           value: "Zero",
-          label: "Business disruption",
-          detail: "Customer service maintained throughout"
+          label: "Customer disruption",
+          detail: "Deliveries and service uninterrupted throughout"
         },
         {
           icon: Target,
           value: "100%",
-          label: "TSA services exited",
-          detail: "Complete independence achieved"
+          label: "Off parent systems",
+          detail: "Full independence on its own digital backbone"
         }
       ]}
-      quote="Most carve-outs take 2 years to achieve standalone. We did it in 6 months without missing a beat on customer service. The systematic approach—parallel workstreams, clear accountability, relentless focus—made the difference. We started creating value 18 months earlier than typical."
-      quoteAuthor="David Kim"
-      quoteRole="Operating Partner"
+      quote="The business we bought couldn't stand on its own — it ran on its old owner's systems and back office. In six months it had its own, from the warehouse floor to the finance ledger, and customers never felt a thing. Getting off parent support early meant we started building value almost a year sooner than these deals usually allow."
+      quoteAuthor="Operating Partner"
+      quoteRole="Private equity fund"
       relatedStudies={[
         {
-          title: "Portfolio Operations Excellence",
-          metric: "3.2x",
-          label: "average returns",
-          link: "/cases/pe-portfolio-operations",
-          image: "/images/industries/fin-handshake-city.jpg"
+          title: "Adding $18M in EBITDA at an Industrial Manufacturer",
+          metric: "$18M",
+          label: "added EBITDA",
+          link: "/cases/pe-industrial-transformation",
+          image: "/images/industries/transport-traffic.jpg"
         },
         {
-          title: "Due Diligence Acceleration",
-          metric: "50%",
-          label: "faster deal evaluation",
-          link: "/cases/pe-due-diligence",
-          image: "/images/industries/meeting-topview.jpg"
+          title: "Cutting Healthcare Diligence Time by 40%",
+          metric: "40%",
+          label: "faster diligence",
+          link: "/cases/pe-healthcare-diligence",
+          image: "/images/capabilities/cap-conference-data.jpg"
         }
       ]}
-      ctaTitle="Ready to Execute a Carve-Out?"
-      ctaDescription="Let's discuss how we can accelerate your separation timeline."
+      ctaTitle="Ready to separate cleanly and fast?"
+      ctaDescription="Let's talk about standing a carved-out business on its own without disrupting customers."
     />
   );
 }

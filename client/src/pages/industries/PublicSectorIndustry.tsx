@@ -75,25 +75,25 @@ export default function PublicSectorIndustry() {
       }}
       featuredCases={[
         {
-          slug: "consulting-knowledge-management",
-          title: "Transforming knowledge management for a global consulting firm",
-          industry: "Professional Services",
-          metric: "3x",
+          slug: "city-digital-services",
+          title: "Making everyday services simple for a county's residents",
+          industry: "Public Sector",
+          metric: "40%",
+          image: "/images/industries/city-digital.jpg"
+        },
+        {
+          slug: "smart-city-platform",
+          title: "Getting traffic moving again for a growing city",
+          industry: "Public Sector",
+          metric: "30%",
           image: "/images/industries/transport-traffic.jpg"
         },
         {
-          slug: "bank-process-automation",
-          title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
-          industry: "Financial Services",
-          metric: "10K+ hrs",
-          image: "/images/industries/colleagues-walking.jpg"
-        },
-        {
-          slug: "healthcare-data-analytics",
-          title: "Unlocking healthcare insights with real-time data analytics",
-          industry: "Healthcare",
-          metric: "25%",
-          image: "/images/industries/biz-team-bright.jpg"
+          slug: "government-benefits-modernization",
+          title: "Getting benefits to residents weeks sooner at a county agency",
+          industry: "Public Sector",
+          metric: "50%",
+          image: "/images/industries/people-commute.jpg"
         }
       ]}
     />

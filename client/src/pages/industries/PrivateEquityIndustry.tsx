@@ -75,25 +75,25 @@ export default function PrivateEquityIndustry() {
       }}
       featuredCases={[
         {
-          slug: "consulting-knowledge-management",
-          title: "Transforming knowledge management for a global consulting firm",
-          industry: "Professional Services",
-          metric: "3x",
-          image: "/images/industries/biz-meeting.jpg"
+          slug: "pe-industrial-transformation",
+          title: "Adding $18M in EBITDA at an industrial manufacturer",
+          industry: "Private Equity",
+          metric: "$18M",
+          image: "/images/industries/transport-traffic.jpg"
         },
         {
-          slug: "bank-process-automation",
-          title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
-          industry: "Financial Services",
-          metric: "10K+ hrs",
-          image: "/images/industries/meeting-topview.jpg"
+          slug: "pe-healthcare-diligence",
+          title: "Cutting healthcare diligence time by 40%",
+          industry: "Private Equity",
+          metric: "40%",
+          image: "/images/capabilities/cap-conference-data.jpg"
         },
         {
-          slug: "wealth-management-automation",
-          title: "Automating wealth management operations for better client experiences",
-          industry: "Financial Services",
-          metric: "45%",
-          image: "/images/industries/fin-handshake-city.jpg"
+          slug: "pe-distribution-digital",
+          title: "Standing up a carved-out distributor in six months",
+          industry: "Private Equity",
+          metric: "6 Months",
+          image: "/images/industries/deal-handshake.jpg"
         }
       ]}
     />

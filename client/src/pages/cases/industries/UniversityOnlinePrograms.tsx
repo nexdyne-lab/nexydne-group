@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Monitor, Users, TrendingUp, Globe, DollarSign, Award, Target, Zap } from "lucide-react";
+import { Monitor, Users, TrendingUp, Globe, DollarSign, Award, Target } from "lucide-react";
 
 export default function UniversityOnlinePrograms() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Online Programs Transformation | Education Case Study"
-      seoDescription="How a university achieved 3x enrollment growth in online programs through digital transformation and enhanced student experience."
+      seoTitle="Growing a University's Online Programs Threefold | Education Case Study"
+      seoDescription="A regional university's online programs had stalled while competitors pulled ahead. Rebuilding them around the working-adult learner tripled enrollment and lifted completion sharply."
       canonical="/cases/university-online-programs"
       industry="Education"
       industryLink="/industries/education"
-      title="University Achieves 3x Growth in Online Programs"
-      subtitle="How digital transformation, enhanced student experience, and strategic marketing scaled online enrollment from 5,000 to 15,000 students."
-      heroImage="/images/industries/edu-whiteboard.jpg"
+      title="How a Regional University Tripled Enrollment in Its Online Programs"
+      subtitle="A well-regarded regional university had treated online learning as an afterthought while working adults quietly enrolled elsewhere. Rebuilding its programs around how those learners actually study turned a stalled offering into the university's fastest-growing one."
+      heroImage="/images/industries/women-laptops.jpg"
       metrics={[
         { value: "3x", label: "Enrollment Growth" },
         { value: "88%", label: "Completion Rate" },
         { value: "$45M", label: "New Revenue" },
         { value: "4.6/5", label: "Student Satisfaction" }
       ]}
-      clientContextTitle="A University Lagging in Online Education"
-      clientContextIntro="A respected regional university had built its reputation on residential education, but the world was changing. Working adults wanted flexible online options. Competitors were capturing market share with polished online programs. The university's online offerings were an afterthought—recorded lectures, clunky LMS, and minimal student support."
-      clientContextBody="Online enrollment had stagnated at 5,000 students while competitors grew 20%+ annually. Completion rates were poor—only 60% of online students finished their programs. The university was losing a generation of learners who couldn't or wouldn't come to campus."
+      clientContextTitle="A Strong Campus, a Neglected Online Offering"
+      clientContextIntro="A respected regional university had built its name on residential, on-campus education. But the students it most wanted to reach next — working adults balancing jobs and families — needed to learn on their own time, and the university's online offering was not built for them. Its online courses were little more than recorded lectures bolted onto a dated learning system, with scant support once a student enrolled."
+      clientContextBody="The results showed it. Online enrollment had been stuck at around 5,000 students while nearby institutions grew their own programs at more than 20% a year. Barely 60% of the university's online students finished what they started. A generation of capable learners was choosing other schools, and the university was watching an obvious opportunity pass it by."
       clientProfile={{
-        industry: "Higher Education",
-        companySize: "Regional University",
+        industry: "Regional University",
+        companySize: "~5,000 Online Students",
         projectDuration: "24 Months",
-        additionalInfo: "5,000 Online Students",
+        additionalInfo: "60% Completion Rate",
         additionalLabel: "Starting Point"
       }}
-      challengeTitle="Online as Afterthought"
+      challengeTitle="Online as an Afterthought"
       challenges={[
         {
           icon: Monitor,
-          title: "Poor Experience",
-          description: "Recorded lectures and clunky LMS—not designed for online-first learning."
+          title: "An Experience Built for the Classroom",
+          description: "Online courses were recorded lectures delivered through a dated system — never designed for someone studying at night after work."
         },
         {
           icon: Users,
-          title: "Low Completion",
-          description: "60% completion rate—students dropping out from lack of engagement and support."
+          title: "Too Many Students Not Finishing",
+          description: "Only 60% of online students completed their programs, most drifting away for lack of engagement and support."
         },
         {
           icon: TrendingUp,
-          title: "Stagnant Growth",
-          description: "Enrollment flat while competitors grew 20%+ annually—losing market share."
+          title: "Growth That Had Stalled",
+          description: "Enrollment sat flat while competing institutions grew more than 20% a year and took the learners the university wanted."
         },
         {
           icon: Globe,
-          title: "Limited Reach",
-          description: "No brand awareness beyond regional market—missing national opportunity."
+          title: "Unknown Beyond the Region",
+          description: "The university had little presence outside its immediate area, missing learners across the country who would have valued its programs."
         }
       ]}
-      approachTitle="Online Excellence"
-      approachIntro="NexDyne led a comprehensive transformation of online programs: redesigned learning experience, enhanced student support, and strategic marketing to establish the university as an online education leader."
+      approachTitle="Rebuilding Online Around the Adult Learner"
+      approachIntro="Working with the university's faculty and student-support staff, we rebuilt its online programs around the reality of an adult learner's life — courses designed for how they actually study, support that kept them enrolled, and outreach that finally told the university's story beyond its own region."
       steps={[
         {
           step: "01",
-          title: "Learning Experience Redesign",
-          description: "Rebuilt online courses with engaging, interactive content designed for digital delivery. Short video modules, interactive exercises, peer collaboration, and mobile-first design. Not recorded lectures—purpose-built online learning."
+          title: "Courses Designed for Online, Not Adapted to It",
+          description: "We rebuilt the coursework specifically for online study: short, focused lessons students could fit around work, practical exercises, real interaction with classmates, and material that worked as well on a phone as a laptop — not lectures recorded in a hall."
         },
         {
           step: "02",
-          title: "Student Success Infrastructure",
-          description: "Implemented proactive student support: dedicated success coaches, 24/7 tutoring, early warning systems, and community building. Online students received more support than on-campus students, not less."
+          title: "Support That Keeps Adults Enrolled",
+          description: "We surrounded online students with the help that keeps busy adults from dropping out: a dedicated coach for each learner, tutoring available around the clock, and early outreach the moment someone started to fall behind. Online students ended up better supported than those on campus, not worse."
         },
         {
           step: "03",
-          title: "Technology Platform",
-          description: "Deployed a modern learning platform with seamless user experience, mobile apps, and integration with career services. Students could learn anywhere, anytime, on any device."
+          title: "One Platform That Works Anywhere",
+          description: "We put the programs on a modern, straightforward platform that worked on any device and connected to career services — so students could learn wherever they were, whenever they had time."
         },
         {
           step: "04",
-          title: "Growth Marketing",
-          description: "Built a data-driven marketing engine targeting working adults nationally. Personalized outreach, streamlined enrollment, and employer partnerships expanded reach beyond the regional market."
+          title: "Telling the Story Beyond the Region",
+          description: "We built a disciplined, data-guided approach to reaching working adults across the country, simplified a once-cumbersome enrollment process, and formed employer partnerships that brought the university to learners it had never reached before."
         }
       ]}
-      resultsTitle="Online Leadership Achieved"
+      resultsTitle="From Afterthought to Growth Engine"
       results={[
         {
           icon: Users,
           value: "3x",
           label: "Enrollment growth",
-          detail: "From 5,000 to 15,000 online students"
+          detail: "From about 5,000 to 15,000 online students"
         },
         {
           icon: Award,
           value: "88%",
           label: "Completion rate",
-          detail: "Up from 60%—industry leading"
+          detail: "Up from 60% — now ahead of its peers"
         },
         {
           icon: DollarSign,
           value: "$45M",
           label: "New annual revenue",
-          detail: "From expanded online programs"
+          detail: "From the expanded online programs"
         },
         {
           icon: Target,
           value: "4.6/5",
           label: "Student satisfaction",
-          detail: "Online students more satisfied than on-campus"
+          detail: "Online students rating their experience above on-campus"
         }
       ]}
-      quote="We transformed online from an afterthought to our growth engine. The new experience is what online learning should be—engaging, supportive, and flexible. Our completion rates are now higher online than on-campus. We're not just competing in online education—we're leading."
-      quoteAuthor="Dr. James Wilson"
-      quoteRole="Provost"
+      quote="Online used to be something we did on the side. Now it is how we reach the students who need us most — and they finish at a higher rate than our students on campus. We did not just catch up in online learning. We built something we are genuinely proud to put our name on."
+      quoteAuthor="Provost"
+      quoteRole="Regional university"
       relatedStudies={[
         {
-          title: "Student Success Platform for University",
+          title: "Helping 18% More Students Reach Graduation",
           metric: "18%",
           label: "higher graduation rate",
           link: "/cases/university-student-success",
-          image: "/images/industries/team-strategy-board.jpg"
+          image: "/images/industries/edu-whiteboard.jpg"
         },
         {
-          title: "Adaptive Learning for K-12 District",
+          title: "Personalized Learning Lifts District Outcomes 25%",
           metric: "25%",
-          label: "improvement in learning outcomes",
+          label: "better learning outcomes",
           link: "/cases/k12-adaptive-learning",
-          image: "/images/industries/women-laptops.jpg"
+          image: "/images/industries/team-strategy-board.jpg"
         }
       ]}
-      ctaTitle="Ready to Transform Online Education?"
-      ctaDescription="Let's discuss how we can help you build world-class online programs."
+      ctaTitle="Ready to grow your online programs?"
+      ctaDescription="Let's talk about building online learning your students will actually finish."
     />
   );
 }

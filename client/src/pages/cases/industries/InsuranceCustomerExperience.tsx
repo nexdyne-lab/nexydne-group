@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Smartphone, Users, Star, DollarSign, Target, Heart, TrendingUp, Zap } from "lucide-react";
+import { Smartphone, Star, DollarSign, Users, Heart } from "lucide-react";
 
 export default function InsuranceCustomerExperience() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Customer Experience Modernization | Insurance Case Study"
-      seoDescription="How an insurer achieved 50% digital adoption through customer experience transformation and omnichannel service delivery."
-      canonical="/cases/insurance-customer-experience"
+      seoTitle="Turning a Call-Center Insurer Into a Digital One | Insurance Case Study"
+      seoDescription="A personal lines insurer ran on phone calls and paper while rivals sold and served online. Rebuilding its digital channels moved half of customers to self-service and lifted satisfaction."
+      canonical="/cases/insurance-digital-distribution"
       industry="Insurance"
       industryLink="/industries/insurance"
-      title="Insurer Achieves 50% Digital Adoption Through CX Transformation"
-      subtitle="How omnichannel service, self-service capabilities, and personalized engagement transformed customer experience and reduced service costs."
-      heroImage="/case-insurance-office.f039a4a1.jpg"
+      title="How a Personal Lines Insurer Moved Half Its Customers Online"
+      subtitle="A regional carrier still ran on phone calls and paper forms while newer rivals sold and served entirely online. Rebuilding its digital channels let customers do for themselves what they used to have to call about."
+      heroImage="/images/industries/fin-handshake-city.jpg"
       metrics={[
-        { value: "50%", label: "Digital Adoption" },
-        { value: "+28pts", label: "NPS Improvement" },
-        { value: "40%", label: "Lower Service Costs" },
-        { value: "92%", label: "Self-Service Success" }
+        { value: "50%", label: "Now Self-Serve" },
+        { value: "+28pts", label: "Satisfaction Gain" },
+        { value: "40%", label: "Lower Service Cost" },
+        { value: "4.7", label: "App Rating" }
       ]}
-      clientContextTitle="An Insurer with Outdated Customer Experience"
-      clientContextIntro="A large personal lines insurer served 5 million customers through call centers and agents—digital channels were an afterthought. Customers who expected Amazon-like experiences got hold queues and paper forms. NPS lagged competitors by 20 points, and service costs were 30% above industry benchmarks."
-      clientContextBody="The mobile app had a 2.3-star rating. Simple tasks like updating an address required a phone call. Customers couldn't see their policy details, file claims, or make payments online. The insurer was losing customers to digital-first competitors who made insurance easy."
+      clientContextTitle="A Digital Afterthought in a Digital Market"
+      clientContextIntro="A personal lines insurer served around 600,000 policyholders, almost entirely through call centers and local agents. Its digital channels had been bolted on as an afterthought, and it showed: customers who were used to handling everything else on their phones found themselves waiting on hold and filling in paper forms to do the simplest things. Its customer-satisfaction scores trailed competitors by a wide margin, and it was quietly losing policyholders to insurers that had made buying and managing a policy effortless."
+      clientContextBody="The carrier's mobile app rated barely two stars. Updating an address meant a phone call. Customers could not view their policy, file a claim or make a payment online, so nearly every routine request landed in a call center that cost far more to run than it needed to. Only about one customer in seven ever used a digital channel. The carrier was paying premium prices to deliver an experience its customers actively disliked."
       clientProfile={{
-        industry: "Personal Lines Insurance",
-        companySize: "5M Customers",
+        industry: "Personal Lines Insurer",
+        companySize: "~600,000 Policyholders",
         projectDuration: "24 Months",
         additionalInfo: "15% Digital Adoption",
         additionalLabel: "Starting Point"
       }}
-      challengeTitle="Analog Experience in a Digital World"
+      challengeTitle="An Experience Out of Step With Its Customers"
       challenges={[
         {
           icon: Smartphone,
-          title: "Poor Digital Experience",
-          description: "2.3-star mobile app, limited online capabilities—customers forced to call."
+          title: "A Two-Star App",
+          description: "The mobile app rated barely two stars and did little, so customers who wanted to serve themselves simply could not."
         },
         {
           icon: Star,
-          title: "Low NPS",
-          description: "20 points below competitors—customers tolerating service, not advocating."
+          title: "Trailing on Satisfaction",
+          description: "Customer-satisfaction scores sat well below competitors — policyholders tolerated the service rather than recommending it."
         },
         {
           icon: DollarSign,
-          title: "High Service Costs",
-          description: "30% above benchmarks—call center handling tasks that should be self-service."
+          title: "Costly to Serve",
+          description: "Service costs ran far above the industry norm, because the call center was handling routine tasks that should have been self-service."
         },
         {
           icon: Users,
-          title: "Customer Defection",
-          description: "Losing customers to digital-first competitors with better experiences."
+          title: "Losing Customers",
+          description: "Policyholders were steadily leaving for insurers that made buying and managing a policy effortless."
         }
       ]}
-      approachTitle="Digital-First Customer Experience"
-      approachIntro="NexDyne led a comprehensive customer experience transformation: rebuilt digital channels, enabled self-service, and created omnichannel experiences that met customers where they were."
+      approachTitle="Building Digital That Customers Actually Use"
+      approachIntro="Working with the carrier's leadership, we rebuilt the digital experience around what customers actually wanted to do for themselves — and made sure that whenever they did need a person, the handoff was seamless — so digital became the easy choice rather than the last resort."
       steps={[
         {
           step: "01",
-          title: "Digital Channel Rebuild",
-          description: "Rebuilt mobile app and website from the ground up with customer-centered design. Intuitive navigation, fast performance, and complete policy management capabilities. App rating improved to 4.7 stars."
+          title: "A Digital Experience Worth Using",
+          description: "We rebuilt the mobile app and website from scratch around the customer, not the org chart — simple to navigate, quick, and able to handle a policy end to end. The app's rating climbed from just above two stars to 4.7."
         },
         {
           step: "02",
-          title: "Self-Service Enablement",
-          description: "Enabled customers to complete common tasks without calling: policy changes, claims filing, payment management, and document access. 92% of self-service attempts successful."
+          title: "Everyday Tasks, Handled by the Customer",
+          description: "We put the common jobs — changing a policy, filing a claim, making a payment, finding a document — fully in customers' hands. More than nine in ten who tried to serve themselves finished without needing to call."
         },
         {
           step: "03",
-          title: "Omnichannel Integration",
-          description: "Created seamless experiences across channels. Customers could start on mobile, continue on web, and finish with an agent—context preserved throughout. No more repeating information."
+          title: "One Conversation Across Every Channel",
+          description: "We tied the channels together so a customer could start on their phone, pick up on the web and finish with an agent without repeating themselves — the context carried across, so no one had to explain their situation twice."
         },
         {
           step: "04",
-          title: "Proactive Engagement",
-          description: "Implemented proactive communications: policy renewal reminders, claim status updates, and personalized recommendations. Customers informed before they needed to ask."
+          title: "Reaching Out Before Customers Have to Ask",
+          description: "We added proactive updates — renewal reminders, claim-status notes and relevant suggestions — so customers heard from the carrier at the right moments instead of having to chase it down."
         }
       ]}
-      resultsTitle="Customer Experience Excellence"
+      resultsTitle="A Carrier Customers Choose to Deal With"
       results={[
         {
           icon: Smartphone,
           value: "50%",
-          label: "Digital adoption",
-          detail: "Up from 15%—customers choosing digital"
+          label: "Now self-serve",
+          detail: "Up from 15% — half of customers choosing digital"
         },
         {
           icon: Heart,
           value: "+28pts",
-          label: "NPS improvement",
-          detail: "Now above competitor average"
+          label: "Higher customer satisfaction",
+          detail: "Now ahead of the competitor average"
         },
         {
           icon: DollarSign,
           value: "40%",
-          label: "Lower service costs",
-          detail: "Self-service reducing call volume"
+          label: "Lower service cost",
+          detail: "As self-service took routine calls out of the center"
         },
         {
           icon: Star,
           value: "4.7",
           label: "App store rating",
-          detail: "Up from 2.3 stars"
+          detail: "Up from just above two stars"
         }
       ]}
-      quote="We went from digital laggard to digital leader. Our customers can now do everything on their phone—file a claim, change their coverage, pay their bill. They don't have to call unless they want to. NPS is up, costs are down, and we're winning customers from competitors."
-      quoteAuthor="Jennifer Chen"
-      quoteRole="Chief Customer Officer"
+      quote="We had spent years treating digital as a side project, and our customers noticed. Now they can do almost everything from their phone — file a claim, change their coverage, pay a bill — and they only call us when they want to. Our satisfaction scores are ahead of the field, our cost to serve is down, and we are keeping customers we used to lose."
+      quoteAuthor="Vice President, Customer Experience"
+      quoteRole="Personal lines insurer"
       relatedStudies={[
         {
-          title: "Claims Automation",
-          metric: "60%",
-          label: "faster processing",
-          link: "/cases/insurance-claims-automation",
-          image: "/images/industries/advisor-charts.jpg"
-        },
-        {
-          title: "Underwriting Transformation",
+          title: "Quoting Commercial Business in a Day, Not a Week",
           metric: "40%",
           label: "faster quote turnaround",
-          link: "/cases/insurance-underwriting-transformation",
-          image: "/images/industries/fin-handshake-city.jpg"
+          link: "/cases/insurance-ai-underwriting",
+          image: "/images/industries/fin-monitors.jpg"
+        },
+        {
+          title: "Settling Straightforward Claims in Hours, Not Weeks",
+          metric: "60%",
+          label: "faster claims processing",
+          link: "/cases/insurance-claims-automation",
+          image: "/case-insurance-claims.399e5d4b.jpg"
         }
       ]}
-      ctaTitle="Ready to Transform Customer Experience?"
-      ctaDescription="Let's discuss how digital transformation can improve your customer relationships."
+      ctaTitle="Ready to make digital the easy choice?"
+      ctaDescription="Let's talk about building digital channels your customers actually want to use."
     />
   );
 }

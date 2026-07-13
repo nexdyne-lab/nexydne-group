@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { GraduationCap, Users, TrendingUp, Target, Heart, BookOpen, BarChart3, Award } from "lucide-react";
+import { GraduationCap, Users, TrendingUp, Target, Heart, Award } from "lucide-react";
 
 export default function UniversityStudentSuccess() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Student Success Platform | Education Case Study"
-      seoDescription="How a university improved graduation rates by 18% through AI-powered early warning systems and personalized student support interventions."
+      seoTitle="Helping More Students Reach Graduation | Education Case Study"
+      seoDescription="A regional university was losing capable students before they finished. Seeing who needed help early — and acting in time — lifted its graduation rate and retained millions in tuition."
       canonical="/cases/university-student-success"
       industry="Education"
       industryLink="/industries/education"
-      title="University Improves Graduation Rates 18% with Student Success Platform"
-      subtitle="How AI-powered early warning systems identify at-risk students and trigger personalized interventions that keep them on track to graduation."
+      title="How a Regional University Helped 18% More Students Reach Graduation"
+      subtitle="A regional public university was losing capable students long before they earned a degree — usually before anyone noticed they were struggling. Seeing trouble early, and reaching out in time, changed the odds for thousands of them."
       heroImage="/images/industries/edu-whiteboard.jpg"
       metrics={[
         { value: "18%", label: "Higher Graduation Rate" },
-        { value: "85%", label: "Prediction Accuracy" },
+        { value: "85%", label: "Early-Warning Accuracy" },
         { value: "40%", label: "Fewer Dropouts" },
-        { value: "$25M", label: "Retained Tuition" }
+        { value: "$25M", label: "Tuition Retained" }
       ]}
-      clientContextTitle="A University Fighting Student Attrition"
-      clientContextIntro="A large public university with 45,000 students faced a graduation crisis. Only 52% of students graduated within six years—below peer institutions and far below the university's aspirations. Each student who dropped out represented lost tuition, unfulfilled potential, and a failure of the institution's mission."
-      clientContextBody="Advisors were overwhelmed—each managing 500+ students with no way to identify who needed help. By the time struggling students appeared on radar, they were already failing or had stopped attending. The university had data on student performance but no way to translate it into proactive intervention."
+      clientContextTitle="When Help Arrives Too Late to Matter"
+      clientContextIntro="A regional public university educated around 12,000 students, many of them the first in their families to attend college. Its people cared deeply about those students, yet only a little over half earned a degree within six years — short of comparable universities and well short of the university's own ambitions. Every student who left partway through was a personal setback, a future unrealized, and tuition the institution would never recover."
+      clientContextBody="The problem was rarely a shortage of support to offer; it was that help arrived too late. Advisors each looked after several hundred students and had no reliable way to tell which ones were quietly slipping. By the time a student surfaced on anyone's radar — a failed course, a term of missed classes — the moment to intervene had usually passed. The university held a great deal of information about how its students were doing, but almost none of it reached an advisor in time to act on it."
       clientProfile={{
-        industry: "Higher Education",
-        companySize: "45,000 Students",
+        industry: "Regional Public University",
+        companySize: "~12,000 Students",
         projectDuration: "18 Months",
         additionalInfo: "52% Graduation Rate",
         additionalLabel: "Starting Point"
       }}
-      challengeTitle="Too Many Students, Too Little Insight"
+      challengeTitle="Too Many Students Slipping Away Unseen"
       challenges={[
         {
           icon: TrendingUp,
-          title: "Low Graduation Rate",
-          description: "52% six-year graduation rate—below peer institutions and strategic targets."
+          title: "A Graduation Rate Below Its Peers",
+          description: "Only 52% of students earned a degree within six years — behind comparable universities and well short of the institution's goals."
         },
         {
           icon: Users,
-          title: "Advisor Overload",
-          description: "500+ students per advisor—impossible to proactively identify struggling students."
+          title: "Advisors Stretched Too Thin",
+          description: "Each advisor was responsible for several hundred students, with no practical way to spot the ones who were beginning to struggle."
         },
         {
           icon: Target,
-          title: "Late Detection",
-          description: "At-risk students identified after failing—too late for effective intervention."
+          title: "Problems Found Too Late",
+          description: "Students were usually flagged as at risk only after they had failed a course or stopped attending — long past the point where help could still change the outcome."
         },
         {
           icon: Heart,
-          title: "Generic Support",
-          description: "Same interventions for all students regardless of individual circumstances and needs."
+          title: "The Same Support for Everyone",
+          description: "Every struggling student was offered much the same help, whether the real obstacle was academic, financial, or personal."
         }
       ]}
-      approachTitle="Predictive Student Success"
-      approachIntro="NexDyne built an AI-powered student success platform that predicted risk, prioritized advisor attention, and recommended personalized interventions—transforming reactive advising into proactive student support."
+      approachTitle="Reaching Students Before They Fall Behind"
+      approachIntro="Working alongside the university's advisors and student-support teams, we set out to turn the information the institution already held into early, practical warning — so an advisor could reach a student while there was still time to change the outcome, and offer the kind of help that particular student actually needed."
       steps={[
         {
           step: "01",
-          title: "Risk Prediction Models",
-          description: "Developed ML models that predicted dropout and academic difficulty risk based on 200+ factors: academic performance, engagement signals, financial indicators, and demographic patterns. Models achieved 85% accuracy in identifying at-risk students."
+          title: "Learning the Early Signs of a Student in Trouble",
+          description: "We studied years of the university's own records to understand what the earliest signs of a struggling student looked like — a dip in engagement, a difficult first term, growing financial strain. Taken together, these signals could flag a student at risk months before a failing grade, and did so correctly in roughly five cases out of six."
         },
         {
           step: "02",
-          title: "Early Warning System",
-          description: "Built real-time dashboards that surfaced at-risk students to advisors before problems escalated. Advisors saw prioritized lists with risk scores and contributing factors—enabling targeted outreach."
+          title: "Putting the Right Names in Front of Advisors",
+          description: "We gave advisors a simple, current view of which of their students most needed attention and why. Instead of waiting for a crisis, they could begin each week knowing exactly who to reach out to first."
         },
         {
           step: "03",
-          title: "Intervention Recommendations",
-          description: "Created an intervention recommendation engine that suggested appropriate support based on risk factors: tutoring for academic struggles, financial aid counseling for economic stress, mental health resources for wellness concerns."
+          title: "Matching Help to the Actual Problem",
+          description: "Because the signals showed why a student was struggling, the university could offer the right response — tutoring for an academic gap, aid counseling for financial pressure, wellbeing support when the strain was personal — rather than the same generic referral for everyone."
         },
         {
           step: "04",
-          title: "Outcome Tracking",
-          description: "Implemented closed-loop tracking that measured intervention effectiveness. Models learned which interventions worked for which student profiles, continuously improving recommendations."
+          title: "Learning What Actually Worked",
+          description: "We tracked what happened after each outreach, so the university could see which kinds of support helped which students — and steadily do more of what worked and less of what did not."
         }
       ]}
-      resultsTitle="Student Success Transformed"
+      resultsTitle="More Students Making It to the Finish"
       results={[
         {
           icon: GraduationCap,
           value: "18%",
-          label: "Improvement in graduation rate",
-          detail: "From 52% to 61% six-year graduation"
+          label: "Higher graduation rate",
+          detail: "From 52% to 61% finishing within six years"
         },
         {
           icon: Target,
           value: "85%",
-          label: "Risk prediction accuracy",
-          detail: "Identifying at-risk students early"
+          label: "Early-warning accuracy",
+          detail: "Correctly flagging students who needed help"
         },
         {
           icon: Users,
           value: "40%",
-          label: "Reduction in dropouts",
-          detail: "Students staying and succeeding"
+          label: "Fewer dropouts",
+          detail: "Students who stayed and kept progressing"
         },
         {
           icon: Award,
           value: "$25M",
-          label: "Retained tuition revenue",
-          detail: "From students who stayed enrolled"
+          label: "Tuition retained",
+          detail: "From students who stayed enrolled through graduation"
         }
       ]}
-      quote="We went from reactive to proactive advising. Our advisors used to wait for students to fail—now they reach out before problems escalate. The AI helps us see which students need help and what kind of help they need. We're not just improving graduation rates—we're changing lives."
-      quoteAuthor="Dr. Patricia Johnson"
-      quoteRole="Vice Provost for Student Success"
+      quote="We used to wait for a student to fail before we knew they needed us — and by then it was often too late. Now our advisors can see who is beginning to struggle and reach out while it still makes a difference. We are not just moving a graduation rate. We are changing what happens to real students' lives."
+      quoteAuthor="Vice Provost for Student Success"
+      quoteRole="Regional public university"
       relatedStudies={[
         {
-          title: "Adaptive Learning for K-12 District",
-          metric: "25%",
-          label: "improvement in learning outcomes",
-          link: "/cases/k12-adaptive-learning",
-          image: "/images/industries/team-strategy-board.jpg"
-        },
-        {
-          title: "Online Programs Transformation",
+          title: "Growing a University's Online Programs Threefold",
           metric: "3x",
           label: "enrollment growth",
           link: "/cases/university-online-programs",
           image: "/images/industries/women-laptops.jpg"
+        },
+        {
+          title: "Personalized Learning Lifts District Outcomes 25%",
+          metric: "25%",
+          label: "better learning outcomes",
+          link: "/cases/k12-adaptive-learning",
+          image: "/images/industries/team-strategy-board.jpg"
         }
       ]}
-      ctaTitle="Ready to Improve Student Success?"
-      ctaDescription="Let's discuss how predictive analytics can help more students graduate."
+      ctaTitle="Ready to help more of your students graduate?"
+      ctaDescription="Let's talk about turning the information you already have into help that arrives in time."
     />
   );
 }

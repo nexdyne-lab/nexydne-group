@@ -2,25 +2,25 @@ import IndustryCapabilityTemplate from "@/components/IndustryCapabilityTemplate"
 
 const cases = [
   {
-    slug: "insurance-claims-processing",
-    title: "Accelerating insurance claims processing with intelligent automation",
-    industry: "Financial Services",
-    metric: "85%",
-    image: "/case-insurance-office.f039a4a1.jpg",
+    slug: "insurance-ai-underwriting",
+    title: "Quoting Commercial Business in a Day, Not a Week",
+    industry: "Insurance",
+    metric: "40%",
+    image: "/images/industries/fin-monitors.jpg",
   },
   {
-    slug: "bank-process-automation",
-    title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
-    industry: "Financial Services",
-    metric: "10K+ hrs",
-    image: "/images/industries/advisor-charts.jpg",
+    slug: "insurance-claims-automation",
+    title: "Settling Straightforward Claims in Hours, Not Weeks",
+    industry: "Insurance",
+    metric: "60%",
+    image: "/case-insurance-claims.399e5d4b.jpg",
   },
   {
-    slug: "fintech-payment-automation",
-    title: "Building a scalable payment processing system for a fintech startup",
-    industry: "Financial Services",
-    metric: "100K+",
-    image: "/images/industries/biz-team-bright.jpg",
+    slug: "insurance-digital-distribution",
+    title: "Turning a Call-Center Insurer Into a Digital One",
+    industry: "Insurance",
+    metric: "50%",
+    image: "/images/industries/fin-handshake-city.jpg",
   },
 ];
 

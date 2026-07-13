@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Building2, Car, Leaf, DollarSign, Wifi, Target, Shield, TrendingUp } from "lucide-react";
+import { Car, Leaf, DollarSign, Target, Shield } from "lucide-react";
 
 export default function SmartCityInfrastructure() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Smart City Infrastructure | Government Case Study"
-      seoDescription="How a major city reduced traffic congestion by 30% through smart infrastructure, IoT sensors, and AI-powered traffic management."
-      canonical="/cases/smart-city-infrastructure"
+      seoTitle="Getting Traffic Moving Again for a Growing City | Public Sector Case Study"
+      seoDescription="A mid-sized city's traffic signals ran on fixed timers that ignored the road in front of them. Letting the signals respond to real conditions cut congestion by 30% and cleared paths for emergency vehicles."
+      canonical="/cases/smart-city-platform"
       industry="Public Sector"
       industryLink="/industries/public-sector"
-      title="City Reduces Traffic Congestion 30% with Smart Infrastructure"
-      subtitle="How IoT sensors, AI-powered traffic management, and connected infrastructure transformed urban mobility and quality of life."
-      heroImage="/images/industries/eng-designers.jpg"
+      title="How a Growing City Got Traffic Moving Again for 300,000 Residents"
+      subtitle="The city's traffic signals ran on fixed timers that took no notice of the road in front of them. Letting the signals respond to what was actually happening eased the daily grind of the commute and cleared the way for ambulances."
+      heroImage="/images/industries/transport-traffic.jpg"
       metrics={[
         { value: "30%", label: "Less Congestion" },
-        { value: "25%", label: "Emissions Reduction" },
+        { value: "25%", label: "Lower Emissions" },
         { value: "40%", label: "Faster Response" },
-        { value: "$120M", label: "Economic Benefit" }
+        { value: "$9M", label: "Yearly Benefit" }
       ]}
-      clientContextTitle="A City Gridlocked"
-      clientContextIntro="A major metropolitan area of 3 million residents faced a mobility crisis. Traffic congestion cost the economy $2B annually in lost productivity. Average commute times had increased 40% in a decade. Air quality was declining, and residents were frustrated with a transportation system that couldn't keep pace with growth."
-      clientContextBody="Traffic signals operated on fixed timing regardless of actual traffic. The city had no real-time visibility into congestion patterns. Emergency vehicles struggled through traffic. Parking searches added 30% to downtown trips. The city needed to get smarter about managing its infrastructure."
+      clientContextTitle="Roads Built for Yesterday's City"
+      clientContextIntro="A city of around 300,000 people had grown faster than the roads that served it, and the daily commute had become its most visible frustration. Travel times had crept up year after year, air quality was slipping, and residents increasingly felt that a city struggling to move them around was a city struggling, full stop. The infrastructure itself had not kept pace with the way people now lived and traveled."
+      clientContextBody="The heart of the problem was that the city's traffic signals ran on fixed timers, cycling on the same schedule at rush hour and at midnight regardless of the traffic actually sitting at the light. The city had almost no live view of where congestion was building, ambulances and fire trucks lost precious minutes stuck in the same jams as everyone else, and drivers circling for a parking space added still more cars to already-busy streets. The city did not need more roads so much as a smarter way to run the ones it had."
       clientProfile={{
         industry: "City Government",
-        companySize: "3 Million Residents",
-        projectDuration: "48 Months",
-        additionalInfo: "2,500 Intersections",
+        companySize: "~300,000 Residents",
+        projectDuration: "20 Months",
+        additionalInfo: "~180 Intersections",
         additionalLabel: "Traffic Network"
       }}
-      challengeTitle="Infrastructure That Can't Keep Up"
+      challengeTitle="Infrastructure That Couldn't Keep Up"
       challenges={[
         {
           icon: Car,
-          title: "Severe Congestion",
-          description: "$2B annual economic cost from traffic—commute times up 40% in a decade."
+          title: "A Commute Getting Worse",
+          description: "Travel times had risen steadily for years, turning everyday journeys into a reliable source of frustration for residents and businesses alike."
         },
         {
           icon: Target,
-          title: "Fixed Timing",
-          description: "Traffic signals on fixed schedules regardless of actual conditions—inefficient."
+          title: "Signals on Autopilot",
+          description: "Traffic lights cycled on fixed timers that ignored real conditions, holding drivers at empty intersections and stacking them up at busy ones."
         },
         {
           icon: Shield,
-          title: "Emergency Delays",
-          description: "Emergency vehicles stuck in traffic—response times increasing, lives at risk."
+          title: "Emergency Vehicles Stuck in Traffic",
+          description: "Ambulances and fire trucks were caught in the same congestion as everyone else, and every minute lost in traffic was a minute that mattered."
         },
         {
           icon: Leaf,
-          title: "Air Quality",
-          description: "Vehicle emissions degrading air quality—health impacts and climate concerns."
+          title: "Idling and Emissions",
+          description: "Stop-and-go traffic and drivers hunting for parking meant more time idling — worse for the air and for residents' patience."
         }
       ]}
-      approachTitle="Building the Smart City"
-      approachIntro="NexDyne designed and implemented a comprehensive smart city platform: IoT sensors for real-time visibility, AI-powered traffic optimization, and connected infrastructure that responded dynamically to conditions."
+      approachTitle="Letting the Streets Respond to Reality"
+      approachIntro="We helped the city turn its traffic system from something that ran on a fixed schedule into something that responded to the road in front of it — using simple sensors at the busiest intersections to see what was actually happening and to time the lights accordingly."
       steps={[
         {
           step: "01",
-          title: "Sensor Network",
-          description: "Deployed 10,000+ IoT sensors across the city: traffic cameras with computer vision, road sensors, air quality monitors, and parking sensors. Created real-time visibility into city conditions that didn't exist before."
+          title: "Giving the City Eyes on the Road",
+          description: "We placed sensors at the intersections that mattered most, giving the city a live picture of where traffic was building for the first time. Decisions that had been guesswork could now be made from what was actually on the street."
         },
         {
           step: "02",
-          title: "AI Traffic Management",
-          description: "Built AI models that optimized traffic signal timing in real-time based on actual conditions. Signals adapted to traffic patterns, special events, and incidents—no more fixed timing ignoring reality."
+          title: "Signals That Adjust Themselves",
+          description: "Instead of fixed timers, the busiest signals now adjusted their timing to the traffic in front of them — easing bottlenecks as they formed and adapting to rush hours, events and incidents rather than ignoring them."
         },
         {
           step: "03",
-          title: "Emergency Preemption",
-          description: "Implemented connected vehicle technology for emergency vehicles. Traffic signals automatically cleared paths for ambulances and fire trucks—reducing response times and saving lives."
+          title: "Clearing the Way for Emergencies",
+          description: "We connected ambulances and fire trucks to the signals so that lights turned green along their route as they approached, opening a path through traffic and shaving critical minutes off response times."
         },
         {
           step: "04",
-          title: "Citizen Applications",
-          description: "Launched citizen-facing apps for real-time parking availability, transit information, and traffic conditions. Residents could make smarter travel decisions with accurate, real-time information."
+          title: "Helping Residents Plan Ahead",
+          description: "We gave residents simple, accurate information on parking availability and traffic conditions, so they could pick a better route or a better time — and stop circling the block in search of a space."
         }
       ]}
-      resultsTitle="A City That Works"
+      resultsTitle="A City That Moves Better"
       results={[
         {
           icon: Car,
           value: "30%",
-          label: "Reduction in congestion",
-          detail: "Average commute times down 12 minutes"
+          label: "Less congestion",
+          detail: "Meaningfully shorter waits on the city's busiest corridors"
         },
         {
           icon: Leaf,
           value: "25%",
-          label: "Emissions reduction",
-          detail: "From reduced idling and smoother flow"
+          label: "Lower emissions",
+          detail: "From less idling and smoother, steadier traffic flow"
         },
         {
           icon: Shield,
           value: "40%",
           label: "Faster emergency response",
-          detail: "Signal preemption clears paths"
+          detail: "Signals clearing a path for ambulances and fire trucks"
         },
         {
           icon: DollarSign,
-          value: "$120M",
-          label: "Annual economic benefit",
-          detail: "From reduced congestion costs"
+          value: "$9M",
+          label: "Yearly benefit to the city",
+          detail: "From time saved and productivity no longer lost to gridlock"
         }
       ]}
-      quote="Smart infrastructure changed how our city moves. Traffic signals that adapt to conditions, emergency vehicles that get through traffic, citizens who know where to park—it all adds up to a city that works better. We're not just managing traffic; we're improving quality of life."
-      quoteAuthor="Mayor Jennifer Williams"
-      quoteRole="City of Metropolitan"
+      quote="We didn't need to rebuild our roads — we needed them to pay attention. Once the signals could respond to the traffic actually in front of them, the whole city started to move a little easier. And knowing an ambulance can get a clear path through downtown is worth more than any statistic on a page."
+      quoteAuthor="Director of Public Works"
+      quoteRole="City government"
       relatedStudies={[
         {
-          title: "Digital Services Transformation",
+          title: "Making Everyday Services Simple for a County",
           metric: "40%",
-          label: "higher citizen satisfaction",
-          link: "/cases/government-digital-services",
-          image: "/images/industries/skyscraper.jpg"
+          label: "higher satisfaction",
+          link: "/cases/city-digital-services",
+          image: "/images/industries/city-digital.jpg"
         },
         {
-          title: "AI for Benefits Administration",
+          title: "Getting Benefits to Residents Weeks Sooner",
           metric: "50%",
-          label: "faster eligibility determination",
-          link: "/cases/government-benefits-ai",
-          image: "/images/industries/arch-glass-sphere.jpg"
+          label: "faster processing",
+          link: "/cases/government-benefits-modernization",
+          image: "/images/industries/people-commute.jpg"
         }
       ]}
-      ctaTitle="Ready to Build a Smarter City?"
-      ctaDescription="Let's discuss how smart infrastructure can transform urban life."
+      ctaTitle="Ready to get your city moving again?"
+      ctaDescription="Let's talk about making the infrastructure you already have work harder."
     />
   );
 }

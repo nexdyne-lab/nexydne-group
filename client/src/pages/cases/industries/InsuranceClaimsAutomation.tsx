@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { FileCheck, Clock, DollarSign, Users, Brain, Target, Shield, Zap } from "lucide-react";
+import { Clock, FileCheck, Users, Target, Zap, DollarSign, Shield } from "lucide-react";
 
 export default function InsuranceClaimsAutomation() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Claims Automation | Insurance Case Study"
-      seoDescription="How an insurer reduced claims processing time by 60% through AI-powered automation while improving accuracy and customer satisfaction."
+      seoTitle="Settling Straightforward Claims in Hours, Not Weeks | Insurance Case Study"
+      seoDescription="A property and casualty insurer took two weeks to settle even simple claims while rivals paid in hours. Automating the routine claims cut cycle time by 60% and saved $14M a year."
       canonical="/cases/insurance-claims-automation"
       industry="Insurance"
       industryLink="/industries/insurance"
-      title="Insurer Reduces Claims Processing Time 60% with AI Automation"
-      subtitle="How intelligent document processing and automated decisioning transformed claims operations, improving speed, accuracy, and customer experience."
-      heroImage="/case-insurance-office.f039a4a1.jpg"
+      title="How a P&C Insurer Cut Its Claims Cycle by 60%"
+      subtitle="A property and casualty carrier was settling even simple claims in two weeks while nimbler rivals paid in hours. Handling the routine claims automatically freed adjusters for the cases that needed them."
+      heroImage="/case-insurance-claims.399e5d4b.jpg"
       metrics={[
         { value: "60%", label: "Faster Processing" },
-        { value: "85%", label: "Straight-Through Rate" },
-        { value: "$120M", label: "Annual Savings" },
-        { value: "+30pts", label: "NPS Improvement" }
+        { value: "85%", label: "Settled Automatically" },
+        { value: "$14M", label: "Saved Each Year" },
+        { value: "+30pts", label: "Satisfaction Gain" }
       ]}
-      clientContextTitle="An Insurer Drowning in Claims"
-      clientContextIntro="A major P&C insurer processed 2 million claims annually with an average cycle time of 15 days. Customers were frustrated—competitors were settling simple claims in hours. The claims organization was the largest cost center, with 3,000 adjusters manually reviewing documents and making decisions."
-      clientContextBody="Simple claims that should be auto-approved sat in queues alongside complex cases. Adjusters spent 60% of their time on administrative tasks—gathering documents, entering data, checking coverage—instead of investigating and negotiating. The insurer needed to automate routine work and free adjusters for high-value activities."
+      clientContextTitle="Simple Claims Stuck in the Same Line as Hard Ones"
+      clientContextIntro="A property and casualty insurer handled around 200,000 claims a year, and it took fifteen days on average to settle one — a minor fender-bender treated no differently from a disputed total loss. Customers noticed. Newer competitors were paying straightforward claims within hours, and every slow settlement chipped away at the carrier's reputation at the exact moment a policyholder was deciding whether to renew."
+      clientContextBody="Claims was the carrier's largest operating cost, staffed by around 150 adjusters, and most of their day went to work that required no real expertise — collecting documents, keying in details, checking coverage line by line. Simple, clear-cut claims waited in the same queue as genuinely complicated ones, so nothing moved quickly and the hardest cases got less attention than they deserved. The carrier needed the routine claims to handle themselves, so its adjusters could concentrate where judgment truly mattered."
       clientProfile={{
-        industry: "Property & Casualty Insurance",
-        companySize: "2M Claims/Year",
+        industry: "Property & Casualty Insurer",
+        companySize: "~200,000 Claims a Year",
         projectDuration: "18 Months",
-        additionalInfo: "3,000 Adjusters",
-        additionalLabel: "Claims Staff"
+        additionalInfo: "~150 Adjusters",
+        additionalLabel: "Claims Team"
       }}
-      challengeTitle="Manual Processing at Scale"
+      challengeTitle="Manual Work at Every Step"
       challenges={[
         {
           icon: Clock,
-          title: "Slow Cycle Times",
-          description: "15-day average claims cycle—competitors settling simple claims in hours."
+          title: "A Two-Week Wait",
+          description: "Even simple claims took fifteen days to settle, while competitors were paying comparable claims within hours."
         },
         {
           icon: FileCheck,
-          title: "Manual Document Review",
-          description: "Adjusters manually reviewing every document—60% of time on administrative tasks."
+          title: "Reviewing Every Document by Hand",
+          description: "Adjusters read and re-keyed every document that arrived, spending most of their time on administration rather than the claim itself."
         },
         {
           icon: Users,
-          title: "High Costs",
-          description: "3,000 adjusters processing claims—largest operational cost center."
+          title: "The Largest Cost Center",
+          description: "Around 150 adjusters processed the entire book, making claims by far the carrier's biggest operating expense."
         },
         {
           icon: Target,
-          title: "No Differentiation",
-          description: "Simple and complex claims in same queue—no intelligent routing or automation."
+          title: "No Fast Lane for Easy Claims",
+          description: "Simple and complex claims sat in the same queue, so straightforward cases never moved any faster than the hardest ones."
         }
       ]}
-      approachTitle="Intelligent Claims Automation"
-      approachIntro="NexDyne implemented an AI-powered claims platform that automated document processing, enabled straight-through processing for simple claims, and augmented adjusters for complex cases."
+      approachTitle="Letting the Routine Claims Settle Themselves"
+      approachIntro="Working with the carrier's claims leaders, we set out to move the simple, clear-cut claims through without manual effort — and to give adjusters a real head start on the complex ones — so speed and accuracy improved together rather than at each other's expense."
       steps={[
         {
           step: "01",
-          title: "Intelligent Document Processing",
-          description: "Deployed AI that automatically extracted information from claims documents: police reports, medical records, repair estimates, and photos. 95% accuracy on structured documents, 85% on unstructured."
+          title: "Reading the Paperwork Automatically",
+          description: "We put software in place that pulled the key facts out of the documents a claim generates — repair estimates, reports, photos and forms — and organized them without an adjuster having to key anything in. Nearly every structured document was read correctly the first time."
         },
         {
           step: "02",
-          title: "Automated Decisioning",
-          description: "Built ML models that assessed claims and recommended decisions. Simple claims with clear coverage and reasonable amounts processed straight-through. Complex claims routed to appropriate adjusters with AI-prepared summaries."
+          title: "Settling the Clear-Cut Claims on Their Own",
+          description: "For claims where coverage was plain and the amount was reasonable, the system checked the details and settled them straight through. The genuinely complex cases were routed to the right adjuster with the groundwork already done."
         },
         {
           step: "03",
-          title: "Fraud Detection",
-          description: "Implemented real-time fraud scoring that identified suspicious claims for investigation. Models learned patterns from historical fraud cases and flagged anomalies for human review."
+          title: "Flagging the Claims That Don't Add Up",
+          description: "We added a check that scored each claim for signs of possible fraud, learning from the carrier's own past cases and setting aside anything unusual for a person to review — so faster settlement did not mean paying claims it shouldn't."
         },
         {
           step: "04",
-          title: "Adjuster Workbench",
-          description: "Created tools that augmented adjusters on complex claims: AI-prepared case summaries, recommended reserves, similar case lookup, and negotiation guidance. Adjusters focused on judgment, not data gathering."
+          title: "Adjusters Set Up to Focus",
+          description: "On the claims that needed them, adjusters opened a prepared summary, a suggested reserve and similar past cases — the legwork finished — so their attention went to investigating and settling, not assembling the file."
         }
       ]}
-      resultsTitle="Claims Excellence"
+      resultsTitle="Faster Claims, Lower Cost"
       results={[
         {
           icon: Clock,
           value: "60%",
           label: "Faster processing",
-          detail: "From 15 days to 6 days average"
+          detail: "From fifteen days to six on average"
         },
         {
           icon: Zap,
           value: "85%",
-          label: "Straight-through rate",
-          detail: "Simple claims auto-processed"
+          label: "Settled automatically",
+          detail: "Simple claims closed without manual work"
         },
         {
           icon: DollarSign,
-          value: "$120M",
-          label: "Annual savings",
-          detail: "From automation and efficiency"
+          value: "$14M",
+          label: "Saved each year",
+          detail: "From lower handling cost and fewer errors"
         },
         {
           icon: Shield,
           value: "+30pts",
-          label: "NPS improvement",
-          detail: "Customers love faster settlements"
+          label: "Higher customer satisfaction",
+          detail: "Policyholders rewarded the faster settlements"
         }
       ]}
-      quote="AI transformed our claims operation. Simple claims that used to take days now settle in hours—automatically. Our adjusters focus on complex cases where their expertise matters. Customers are happier, costs are lower, and our adjusters are doing more meaningful work."
-      quoteAuthor="Patricia Williams"
-      quoteRole="Chief Claims Officer"
+      quote="Our adjusters were spending their days on paperwork, and our customers were waiting two weeks for a check they should have had in a day. Now the simple claims settle on their own, and my best people spend their time on the cases that actually need them. Costs came down and, for the first time in years, our customers are telling us our claims experience is a reason to stay."
+      quoteAuthor="Vice President, Claims"
+      quoteRole="Property and casualty insurer"
       relatedStudies={[
         {
-          title: "Underwriting Transformation",
+          title: "Quoting Commercial Business in a Day, Not a Week",
           metric: "40%",
           label: "faster quote turnaround",
-          link: "/cases/insurance-underwriting-transformation",
-          image: "/images/industries/advisor-charts.jpg"
+          link: "/cases/insurance-ai-underwriting",
+          image: "/images/industries/fin-monitors.jpg"
         },
         {
-          title: "Customer Experience Modernization",
+          title: "Turning a Call-Center Insurer Into a Digital One",
           metric: "50%",
           label: "digital adoption",
-          link: "/cases/insurance-customer-experience",
+          link: "/cases/insurance-digital-distribution",
           image: "/images/industries/fin-handshake-city.jpg"
         }
       ]}
-      ctaTitle="Ready to Transform Claims?"
-      ctaDescription="Let's discuss how AI can accelerate your claims operations."
+      ctaTitle="Ready to settle the easy claims in hours?"
+      ctaDescription="Let's talk about clearing the routine work out of your claims operation."
     />
   );
 }

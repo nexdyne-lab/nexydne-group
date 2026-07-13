@@ -2,25 +2,25 @@ import IndustryCapabilityTemplate from "@/components/IndustryCapabilityTemplate"
 
 const cases = [
   {
-    slug: "bank-process-automation",
-    title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
-    industry: "Financial Services",
-    metric: "10K+ hrs",
-    image: "/images/industries/energy-powerplant.jpg",
-  },
-  {
-    slug: "consulting-knowledge-management",
-    title: "Transforming knowledge management for a global consulting firm",
-    industry: "Professional Services",
-    metric: "3x",
+    slug: "utility-grid-modernization",
+    title: "Cutting outage time nearly in half for a regional utility",
+    industry: "Energy & Utilities",
+    metric: "45%",
     image: "/images/industries/energy-solar.jpg",
   },
   {
-    slug: "accounting-audit-automation",
-    title: "How audit automation helped an accounting firm scale 2x without hiring",
-    industry: "Professional Services",
-    metric: "2x",
-    image: "/images/industries/energy-renewable-team.jpg",
+    slug: "renewable-energy-forecasting",
+    title: "Sharper generation forecasts for a renewables developer",
+    industry: "Energy & Utilities",
+    metric: "25%",
+    image: "/images/industries/energy-wind.jpg",
+  },
+  {
+    slug: "power-generation-predictive-maintenance",
+    title: "Halving unplanned outages at a power generator",
+    industry: "Energy & Utilities",
+    metric: "60%",
+    image: "/images/industries/energy-powerplant.jpg",
   },
 ];
 

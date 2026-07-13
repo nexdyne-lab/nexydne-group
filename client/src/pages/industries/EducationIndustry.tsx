@@ -75,25 +75,25 @@ export default function EducationIndustry() {
       }}
       featuredCases={[
         {
-          slug: "consulting-knowledge-management",
-          title: "Transforming knowledge management for a global consulting firm",
-          industry: "Professional Services",
-          metric: "3x",
+          slug: "university-student-success",
+          title: "Helping 18% more students reach graduation",
+          industry: "Education",
+          metric: "18%",
           image: "/images/industries/edu-whiteboard.jpg"
         },
         {
-          slug: "healthcare-data-analytics",
-          title: "Unlocking healthcare insights with real-time data analytics",
-          industry: "Healthcare",
-          metric: "25%",
+          slug: "university-online-programs",
+          title: "Tripling a university's online program enrollment",
+          industry: "Education",
+          metric: "3x",
           image: "/images/industries/women-laptops.jpg"
         },
         {
-          slug: "accounting-audit-automation",
-          title: "How audit automation helped an accounting firm scale 2x without hiring",
-          industry: "Professional Services",
-          metric: "2x",
-          image: "/images/industries/people-commute.jpg"
+          slug: "k12-adaptive-learning",
+          title: "Personalized learning lifts district outcomes 25%",
+          industry: "Education",
+          metric: "25%",
+          image: "/images/industries/team-strategy-board.jpg"
         }
       ]}
     />

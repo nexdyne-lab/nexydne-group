@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Search, Clock, Target, Shield, DollarSign, BarChart3, FileCheck, Zap } from "lucide-react";
+import { Search, Clock, Target, Shield, DollarSign, FileCheck } from "lucide-react";
 
 export default function PEDueDiligence() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Due Diligence Acceleration | Private Equity Case Study"
-      seoDescription="How a PE firm accelerated deal evaluation by 50% through AI-powered due diligence and systematic commercial assessment."
-      canonical="/cases/pe-due-diligence"
-      industry="Private Equity & Principal Investors"
+      seoTitle="Reading a Healthcare Deal Right — Faster | Private Equity Case Study"
+      seoDescription="A private equity fund kept losing good healthcare deals to slow diligence and expensive consultants. A systematic approach cut evaluation time by 40% and sharpened every decision."
+      canonical="/cases/pe-healthcare-diligence"
+      industry="Private Equity"
       industryLink="/industries/private-equity"
-      title="PE Firm Accelerates Due Diligence 50% with AI-Powered Analysis"
-      subtitle="How systematic commercial due diligence and AI-powered analysis enabled faster, more confident deal decisions."
+      title="How a Fund Cut Healthcare Diligence Time by 40%"
+      subtitle="A private equity fund saw far more healthcare deals than it could properly assess. A faster, more consistent way to run commercial diligence let it move quickly on the right ones — and walk away from the wrong ones with conviction."
       heroImage="/images/capabilities/cap-conference-data.jpg"
       metrics={[
-        { value: "50%", label: "Faster Evaluation" },
-        { value: "3x", label: "More Deals Reviewed" },
-        { value: "90%", label: "Prediction Accuracy" },
-        { value: "$500M", label: "Avoided Losses" }
+        { value: "40%", label: "Faster Diligence" },
+        { value: "3x", label: "More Targets Screened" },
+        { value: "3 Weeks", label: "To a Clear Read" },
+        { value: "$6M", label: "Loss Avoided" }
       ]}
-      clientContextTitle="A PE Firm Drowning in Deal Flow"
-      clientContextIntro="A growth equity firm reviewed 500+ deals annually but could only conduct deep due diligence on 50. The bottleneck: commercial due diligence took 6-8 weeks and required expensive external consultants. Good deals were lost to faster competitors while resources were wasted on deals that should have been screened out earlier."
-      clientContextBody="Due diligence was manual and inconsistent. Each deal team reinvented the wheel. Market sizing relied on expensive research reports. Customer references were ad hoc. The firm needed to systematize due diligence, accelerate timelines, and improve hit rates."
+      clientContextTitle="More Deals Than It Could Properly Assess"
+      clientContextIntro="A private equity fund investing in healthcare services reviewed well over a hundred opportunities a year but could run deep commercial diligence on only a handful. Each deep review took six to eight weeks and leaned heavily on outside consultants at a cost of several hundred thousand dollars. Good targets were lost to faster buyers, while effort was spent on deals that should have been set aside sooner."
+      clientContextBody="The work was also inconsistent. Every deal team built its diligence from scratch — sizing the market from costly research reports, gathering customer views ad hoc, and reaching a judgment in its own way. On a live acquisition — a multi-site provider of outpatient care with around $180 million in revenue — the fund wanted a clear, well-supported read in weeks rather than months, and it was not willing to lower the bar on rigour to get there."
       clientProfile={{
-        industry: "Growth Equity",
-        companySize: "$8B AUM",
+        industry: "Healthcare-Focused Private Equity",
+        companySize: "~$180M Target Revenue",
         projectDuration: "12 Months",
-        additionalInfo: "500+ Deals/Year",
+        additionalInfo: "100+ Deals Screened / Year",
         additionalLabel: "Deal Flow"
       }}
-      challengeTitle="Due Diligence Bottleneck"
+      challengeTitle="A Diligence Bottleneck"
       challenges={[
         {
           icon: Clock,
-          title: "Slow Process",
-          description: "6-8 weeks for commercial due diligence—losing deals to faster competitors."
+          title: "Too Slow to Compete",
+          description: "Six to eight weeks per commercial review meant losing good deals to quicker, more decisive buyers."
         },
         {
           icon: Target,
-          title: "Limited Capacity",
-          description: "Could only deeply evaluate 50 of 500+ deals—missing good opportunities."
+          title: "Only a Handful Assessed",
+          description: "The team could deeply evaluate just a few of the many deals it saw, so promising targets went unexamined."
         },
         {
           icon: Search,
-          title: "Inconsistent Approach",
-          description: "Each deal team reinventing the wheel—no systematic methodology."
+          title: "Reinvented Every Time",
+          description: "Each deal team started from a blank page, with no shared method — so quality and speed varied deal to deal."
         },
         {
           icon: DollarSign,
-          title: "Expensive Consultants",
-          description: "$500K+ per deal for external due diligence—limiting how many deals could be evaluated."
+          title: "Costly Outside Help",
+          description: "Several hundred thousand dollars of consultants per deal put a hard cap on how many could be assessed."
         }
       ]}
-      approachTitle="Systematic Due Diligence"
-      approachIntro="NexDyne built an AI-powered due diligence platform that automated market analysis, systematized commercial assessment, and enabled the firm to evaluate more deals faster with higher confidence."
+      approachTitle="A Faster, More Consistent Read"
+      approachIntro="We helped the fund replace slow, one-off diligence with a consistent method it could run itself — sizing markets, testing the commercial story, and checking with customers in a fraction of the time, so the team could reach a confident view in weeks."
       steps={[
         {
           step: "01",
-          title: "Automated Market Analysis",
-          description: "Built AI tools that automatically sized markets, identified trends, and mapped competitive landscapes. What took consultants weeks was completed in days with higher accuracy and consistency."
+          title: "Sizing the Market in Days",
+          description: "We built simple, reusable tools to size a market, map its competitors and surface the trends that actually move a healthcare business. Work that once took consultants weeks now took days, and it produced the same answer every time."
         },
         {
           step: "02",
-          title: "Deal Scoring Models",
-          description: "Developed ML models that predicted deal success based on company characteristics, market dynamics, and historical outcomes. Models identified which deals deserved deep diligence and which should be passed."
+          title: "A Common Diligence Checklist",
+          description: "We turned scattered practice into sector-specific checklists for healthcare — the questions that always matter and the risks that always hide. Every deal now got a consistent, comprehensive review rather than whatever its team thought to ask."
         },
         {
           step: "03",
-          title: "Systematic Customer Diligence",
-          description: "Created a structured approach to customer references: standardized questions, sentiment analysis, and pattern recognition across deals. Consistent customer insights, not ad hoc conversations."
+          title: "Talking to Customers the Same Way",
+          description: "We set a structured approach to customer references: the same questions each time, a careful reading of the answers, and patterns drawn across many conversations instead of a few memorable anecdotes."
         },
         {
           step: "04",
-          title: "Diligence Playbooks",
-          description: "Developed sector-specific diligence playbooks that ensured consistent, comprehensive evaluation. Deal teams followed proven frameworks rather than starting from scratch."
+          title: "A Clear Recommendation, Quickly",
+          description: "We pulled the findings into a single, comparable view so partners could weigh a deal on its merits and decide with conviction — go or pass — while the opportunity was still on the table."
         }
       ]}
-      resultsTitle="Diligence Excellence"
+      resultsTitle="Sharper Decisions, Sooner"
       results={[
         {
           icon: Clock,
-          value: "50%",
-          label: "Faster evaluation",
-          detail: "From 6-8 weeks to 3-4 weeks"
+          value: "40%",
+          label: "Faster diligence",
+          detail: "From six to eight weeks down to three to four"
         },
         {
           icon: Search,
           value: "3x",
-          label: "More deals reviewed",
-          detail: "Deeper diligence on 150 vs. 50 deals"
+          label: "More targets screened",
+          detail: "Deeper looks at far more of the deal flow"
         },
         {
-          icon: Target,
-          value: "90%",
-          label: "Prediction accuracy",
-          detail: "Deal scoring models highly predictive"
+          icon: FileCheck,
+          value: "3 Weeks",
+          label: "To a clear read",
+          detail: "On the healthcare target the fund pursued"
         },
         {
           icon: Shield,
-          value: "$500M",
-          label: "Avoided losses",
-          detail: "From better deal selection"
+          value: "$6M",
+          label: "Loss avoided",
+          detail: "By passing on a deal the review flagged"
         }
       ]}
-      quote="AI-powered due diligence changed our competitive position. We can now move faster than competitors while doing deeper analysis. The deal scoring models help us focus on winners and avoid losers. We're not just doing more deals—we're doing better deals."
-      quoteAuthor="Jennifer Park"
-      quoteRole="Partner, Head of Diligence"
+      quote="We were losing deals we wanted and spending money on deals we didn't. A faster, more consistent way to run diligence changed both. On the healthcare deal we had a clear, well-supported read in three weeks — and the confidence to move before anyone else could."
+      quoteAuthor="Partner, Head of Diligence"
+      quoteRole="Healthcare-focused private equity fund"
       relatedStudies={[
         {
-          title: "Portfolio Operations Excellence",
-          metric: "3.2x",
-          label: "average returns",
-          link: "/cases/pe-portfolio-operations",
-          image: "/images/industries/meeting-topview.jpg"
+          title: "Adding $18M in EBITDA at an Industrial Manufacturer",
+          metric: "$18M",
+          label: "added EBITDA",
+          link: "/cases/pe-industrial-transformation",
+          image: "/images/industries/transport-traffic.jpg"
         },
         {
-          title: "Carve-Out Execution",
+          title: "Standing Up a Carved-Out Distributor in Six Months",
           metric: "6 Months",
           label: "to standalone operations",
-          link: "/cases/pe-carveout-execution",
-          image: "/images/capabilities/cap-data-bars.jpg"
+          link: "/cases/pe-distribution-digital",
+          image: "/images/industries/deal-handshake.jpg"
         }
       ]}
-      ctaTitle="Ready to Accelerate Due Diligence?"
-      ctaDescription="Let's discuss how systematic diligence can improve your deal outcomes."
+      ctaTitle="Ready to move faster on the right deals?"
+      ctaDescription="Let's talk about diligence that is quicker and more consistent without losing rigour."
     />
   );
 }

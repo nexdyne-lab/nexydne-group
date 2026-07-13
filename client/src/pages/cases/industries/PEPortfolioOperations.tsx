@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { TrendingUp, DollarSign, Target, BarChart3, Users, Cog, Building2, Zap } from "lucide-react";
+import { TrendingUp, DollarSign, Target, BarChart3, Cog, Building2, Zap } from "lucide-react";
 
 export default function PEPortfolioOperations() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Portfolio Operations Excellence | Private Equity Case Study"
-      seoDescription="How a PE firm achieved 3.2x returns through systematic operational improvement across a $5B portfolio of 25 companies."
-      canonical="/cases/pe-portfolio-operations"
-      industry="Private Equity & Principal Investors"
+      seoTitle="Turning Around an Industrial Manufacturer in the Hold | Private Equity Case Study"
+      seoDescription="A private equity fund owned a profitable industrial manufacturer that had quietly stopped improving. A disciplined value-creation program lifted margins by seven points and added $18M in EBITDA."
+      canonical="/cases/pe-industrial-transformation"
+      industry="Private Equity"
       industryLink="/industries/private-equity"
-      title="PE Firm Achieves 3.2x Returns Through Portfolio Operations Excellence"
-      subtitle="How systematic operational improvement, shared services, and digital transformation created value across a $5B portfolio."
+      title="How a Fund Added $18M in EBITDA at an Industrial Manufacturer"
+      subtitle="A private equity fund had bought a solid industrial business that had quietly stopped getting better. A focused program of operational improvement changed the trajectory of the hold — and the return."
       heroImage="/images/industries/transport-traffic.jpg"
       metrics={[
-        { value: "3.2x", label: "Average Returns" },
-        { value: "$1.2B", label: "Value Created" },
-        { value: "800bps", label: "Margin Improvement" },
-        { value: "25", label: "Portfolio Companies" }
+        { value: "700bps", label: "Margin Improvement" },
+        { value: "$18M", label: "EBITDA Growth" },
+        { value: "40%", label: "Faster Value Capture" },
+        { value: "3.2x", label: "Projected Return" }
       ]}
-      clientContextTitle="A PE Firm Seeking Operational Alpha"
-      clientContextIntro="A middle-market private equity firm with $5B AUM and 25 portfolio companies had built returns primarily through financial engineering and multiple expansion. But as competition intensified and multiples compressed, the firm needed a new source of value creation: operational improvement."
-      clientContextBody="The firm had operating partners but no systematic approach to value creation. Each portfolio company operated independently with no shared learnings or services. Best practices at one company were unknown at others. The firm needed to transform from financial sponsor to operational partner."
+      clientContextTitle="A Good Company That Had Stopped Improving"
+      clientContextIntro="A private equity fund owned an industrial components manufacturer — a business of around $280 million in revenue, roughly 1,100 people and five plants. It was a genuinely good company: strong products, loyal customers and steady profits. The trouble was that, a year into the fund's ownership, the numbers had barely moved from where they were at purchase."
+      clientContextBody="The fund had bought the business on a clear thesis — a solid core with real room to run — but the improvement it had underwritten was not showing up. The operating team knew opportunities existed, yet had no systematic way to find and capture them. Progress happened project by project, driven by whoever pushed hardest, and a good idea proven at one plant was often unknown at the other four. Leadership eventually concluded that this was not a talent problem. It was a method problem: the company simply had no repeatable way of getting better."
       clientProfile={{
-        industry: "Private Equity",
-        companySize: "$5B AUM",
-        projectDuration: "36 Months",
-        additionalInfo: "25 Portfolio Companies",
-        additionalLabel: "Portfolio Size"
+        industry: "Industrial Manufacturing (PE-Owned)",
+        companySize: "~$280M Portfolio-Company Revenue",
+        projectDuration: "18 Months",
+        additionalInfo: "5 Manufacturing Plants",
+        additionalLabel: "Operational Footprint"
       }}
-      challengeTitle="From Financial Engineering to Operational Value"
+      challengeTitle="Why Value Creation Was Stalling"
       challenges={[
         {
           icon: TrendingUp,
-          title: "Multiple Compression",
-          description: "Entry multiples rising, exit multiples flat—financial engineering no longer enough."
+          title: "Margins Going Sideways",
+          description: "Two years of flat margins — the improvement the fund had underwritten at purchase simply was not materialising."
         },
         {
           icon: Cog,
-          title: "No Systematic Approach",
-          description: "Operational improvement ad hoc—no playbooks, no shared services, no best practices."
+          title: "Improvement Left to Chance",
+          description: "There was no repeatable method; gains depended on individual initiative rather than a shared way of working."
         },
         {
           icon: Building2,
-          title: "Isolated Companies",
-          description: "Portfolio companies operating independently—no leverage of scale or shared learnings."
+          title: "Plants That Didn't Share",
+          description: "Five plants meant five ways of working — a fix proven at one was rarely picked up by the others."
         },
         {
           icon: Target,
-          title: "Limited Visibility",
-          description: "No real-time view into portfolio performance—surprises instead of early intervention."
+          title: "Flying Half-Blind",
+          description: "Leaders learned about problems only in the monthly close, long after the moment to act had passed."
         }
       ]}
-      approachTitle="Building the Operating Platform"
-      approachIntro="NexDyne helped build a comprehensive portfolio operations capability: value creation playbooks, shared services, digital transformation support, and real-time performance monitoring."
+      approachTitle="A Disciplined Program of Improvement"
+      approachIntro="We worked alongside the company's leaders and the fund's operating partner to replace scattered effort with a clear, repeatable program — one that found the biggest opportunities first, spread what worked across every plant, and gave leaders a live view of progress."
       steps={[
         {
           step: "01",
-          title: "Value Creation Playbooks",
-          description: "Developed systematic playbooks for common value creation levers: pricing optimization, procurement excellence, sales effectiveness, and operational efficiency. Playbooks enabled rapid deployment at new acquisitions."
+          title: "Finding the Money",
+          description: "We began with a hard-headed look across pricing, purchasing and plant efficiency to find where real money was being left on the table. Each opportunity was sized honestly and ranked by how much it was worth and how quickly it could be captured, so the team worked on the biggest wins first."
         },
         {
           step: "02",
-          title: "Shared Services Platform",
-          description: "Built shared services that portfolio companies could access: group purchasing, shared technology platforms, talent acquisition, and back-office services. Created scale advantages across the portfolio."
+          title: "One Playbook, Every Plant",
+          description: "We turned the practices that already worked best into simple, plain playbooks. A method proven at one plant could then be adopted at the others in weeks rather than reinvented from scratch — turning five separate operations into one that learned from itself."
         },
         {
           step: "03",
-          title: "Digital Transformation Support",
-          description: "Established a digital transformation capability that helped portfolio companies modernize. Shared technology investments, implementation resources, and best practices accelerated digital initiatives."
+          title: "A Live View of the Business",
+          description: "We settled on a short list of measures that truly mattered, made them consistent across all five plants, and put them in front of leaders every week. Problems now surfaced in days, while there was still time to do something about them, instead of at month-end."
         },
         {
           step: "04",
-          title: "Performance Monitoring",
-          description: "Implemented real-time portfolio monitoring with standardized KPIs across companies. Early warning systems identified underperformance before it became critical. Operating partners intervened proactively."
+          title: "Owned by the Line, Not a Project Team",
+          description: "Every improvement had a named owner inside the business, with a target and a date. The point was not a burst of consultant-led activity but a lasting habit — the muscle to keep finding and capturing value after we had gone."
         }
       ]}
-      resultsTitle="Operational Alpha Delivered"
+      resultsTitle="A Business on a Steeper Curve"
       results={[
         {
           icon: TrendingUp,
-          value: "3.2x",
-          label: "Average returns",
-          detail: "Up from 2.1x before operational focus"
+          value: "700bps",
+          label: "Higher operating margin",
+          detail: "Roughly seven points in eighteen months"
         },
         {
           icon: DollarSign,
-          value: "$1.2B",
-          label: "Value created",
-          detail: "Through operational improvement"
+          value: "$18M",
+          label: "Added annual EBITDA",
+          detail: "From pricing, purchasing and plant efficiency"
         },
         {
           icon: BarChart3,
-          value: "800bps",
-          label: "Average margin improvement",
-          detail: "Across portfolio companies"
+          value: "40%",
+          label: "Faster value capture",
+          detail: "Playbooks sped adoption across the plants"
         },
         {
           icon: Zap,
-          value: "40%",
-          label: "Faster value creation",
-          detail: "Playbooks accelerate improvement"
+          value: "3.2x",
+          label: "Projected return",
+          detail: "On track at exit, up from the entry case"
         }
       ]}
-      quote="We transformed from a financial sponsor to an operational partner. Our portfolio companies now have access to capabilities they couldn't build alone—shared services, digital expertise, best practices from across the portfolio. We're not just providing capital; we're providing competitive advantage."
-      quoteAuthor="Robert Chen"
-      quoteRole="Managing Partner"
+      quote="We bought a good company and, for a year, ran it much as the last owner had. What changed the second year was method — knowing where the value was, proving it at one plant, then spreading it to the rest. The improvements are now simply how the business runs, not a project that ends when the advisers leave."
+      quoteAuthor="Operating Partner"
+      quoteRole="Private equity fund"
       relatedStudies={[
         {
-          title: "Due Diligence Acceleration",
-          metric: "50%",
-          label: "faster deal evaluation",
-          link: "/cases/pe-due-diligence",
-          image: "/images/industries/transport-bridge.jpg"
+          title: "Cutting Healthcare Diligence Time by 40%",
+          metric: "40%",
+          label: "faster diligence",
+          link: "/cases/pe-healthcare-diligence",
+          image: "/images/capabilities/cap-conference-data.jpg"
         },
         {
-          title: "Carve-Out Execution",
+          title: "Standing Up a Carved-Out Distributor in Six Months",
           metric: "6 Months",
           label: "to standalone operations",
-          link: "/cases/pe-carveout-execution",
-          image: "/images/industries/retail-warehouse.jpg"
+          link: "/cases/pe-distribution-digital",
+          image: "/images/industries/deal-handshake.jpg"
         }
       ]}
-      ctaTitle="Ready to Build Operational Capability?"
-      ctaDescription="Let's discuss how operational excellence can drive portfolio returns."
+      ctaTitle="Ready to lift value in the hold?"
+      ctaDescription="Let's talk about turning your value-creation plan into results on the ground."
     />
   );
 }
