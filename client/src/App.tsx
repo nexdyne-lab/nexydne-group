@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import CookieConsent from "@/components/CookieConsent";
-import { Route, Switch } from "wouter";
+import { Route, Switch, Redirect } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 
@@ -1315,13 +1315,13 @@ function Router() {
         <Route path="/cases/financial-institution-automation" component={FinancialInstitutionAutomation} />
         <Route path="/cases/healthcare-provider-ai" component={HealthcareProviderAI} />
         <Route path="/cases/law-firm-automation" component={CaseStudyLawFirm} />
-        <Route path="/cases/law-firm-contract-automation" component={CaseStudyLawFirm} />
+        <Route path="/cases/law-firm-contract-automation">{() => <Redirect to="/cases" />}</Route>
         <Route path="/cases/healthcare-patient-automation" component={CaseStudyHealthcarePatient} />
-        <Route path="/cases/healthcare-patient-engagement" component={CaseStudyHealthcarePatient} />
+        <Route path="/cases/healthcare-patient-engagement">{() => <Redirect to="/cases/healthcare-transformation" />}</Route>
         <Route path="/cases/healthcare-ehr-modernization" component={CaseStudyHealthcareEHRModernization} />
-        <Route path="/cases/bank-process-automation" component={CaseStudyBankProcess} />
+        <Route path="/cases/bank-process-automation">{() => <Redirect to="/cases/bank-cross-sell" />}</Route>
         <Route path="/cases/bank-core-modernization" component={CaseStudyBankCoreModernization} />
-        <Route path="/cases/consulting-knowledge-management" component={CaseStudyConsultingKnowledge} />
+        <Route path="/cases/consulting-knowledge-management">{() => <Redirect to="/cases" />}</Route>
         {/* Old route removed - using industry case study */}
         <Route path="/cases/fintech-payment-integration" component={CaseStudyFintechPayment} />
         <Route path="/cases/legal-doc-intelligence" component={CaseStudyLegalDocIntel} />
@@ -1330,13 +1330,13 @@ function Router() {
         <Route path="/cases/healthcare-analytics" component={CaseStudyHealthcareAnalytics} />
         <Route path="/cases/accounting-audit" component={CaseStudyAccountingAudit} />
         <Route path="/cases/hospital-workflow" component={CaseStudyHospitalWorkflow} />
-        <Route path="/cases/hospital-clinical-workflow" component={CaseStudyHospitalWorkflow} />
-        <Route path="/cases/insurance-claims-processing" component={CaseStudyInsuranceClaims} />
-        <Route path="/cases/accounting-audit-automation" component={CaseStudyAccountingAudit} />
-        <Route path="/cases/fintech-payment-automation" component={CaseStudyFintechPayment} />
-        <Route path="/cases/legal-document-intelligence" component={CaseStudyLegalDocIntel} />
-        <Route path="/cases/telehealth-platform" component={CaseStudyTelehealthScaling} />
-        <Route path="/cases/wealth-management-automation" component={CaseStudyWealthOnboarding} />
+        <Route path="/cases/hospital-clinical-workflow">{() => <Redirect to="/cases/healthcare-transformation" />}</Route>
+        <Route path="/cases/insurance-claims-processing">{() => <Redirect to="/cases/insurance-claims-automation" />}</Route>
+        <Route path="/cases/accounting-audit-automation">{() => <Redirect to="/cases" />}</Route>
+        <Route path="/cases/fintech-payment-automation">{() => <Redirect to="/cases/financial-fraud-detection" />}</Route>
+        <Route path="/cases/legal-document-intelligence">{() => <Redirect to="/cases" />}</Route>
+        <Route path="/cases/telehealth-platform">{() => <Redirect to="/cases/healthcare-readmission" />}</Route>
+        <Route path="/cases/wealth-management-automation">{() => <Redirect to="/cases/wealth-onboarding" />}</Route>
         <Route path="/cases/saas-platform-optimization" component={SaasCaseStudy} />
         <Route path="/cases/healthcare-patient-intake" component={HealthcarePatientIntake} />
         <Route path="/cases/logistics-driver-experience" component={LogisticsDriverExperience} />
