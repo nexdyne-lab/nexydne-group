@@ -57,7 +57,7 @@ export default function GoToMarket() {
                   </li>
                   <li className="flex items-start gap-3 text-charcoal/80">
                     <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Underserved SME targeting</span>
+                    <span>Underserved growing-company targeting</span>
                   </li>
                 </ul>
               </div>

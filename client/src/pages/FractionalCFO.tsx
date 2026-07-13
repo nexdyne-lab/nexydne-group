@@ -12,7 +12,7 @@ export default function FractionalCFO() {
     <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Fractional CFO Services" 
-        description="Access high-level financial leadership without the full-time cost. We provide strategic financial planning, cash flow management, and board-level reporting tailored for growing SMEs."
+        description="Access high-level financial leadership without the full-time cost. We provide strategic financial planning, cash flow management, and board-level reporting tailored for growing companies."
         canonical="/capabilities/strategy-corporate-finance/cfo-services"
       />
       <Navbar />
@@ -43,7 +43,7 @@ export default function FractionalCFO() {
               </h1>
 
               <p className="mt-7 text-[1.1rem] md:text-[1.2rem] leading-[1.55] text-muted-foreground max-w-[60ch]">
-                Access high-level financial leadership without the full-time cost. We provide strategic financial planning, cash flow management, and board-level reporting tailored for growing SMEs.
+                Access high-level financial leadership without the full-time cost. We provide strategic financial planning, cash flow management, and board-level reporting tailored for growing companies.
               </p>
 
               <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-6">

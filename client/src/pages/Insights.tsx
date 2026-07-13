@@ -18,7 +18,7 @@ export default function Insights() {
 
   // ── Featured article (drives Section 1 hero) ───────────────────────────────
   const featuredArticle = {
-    slug: "the-hig-framework-why-transformation-needs-more-than-strategy",
+    slug: "business-transformation-strategy",
     title: "The HIG Framework: why transformation at growing companies needs more than strategy.",
     dek: "Most consulting models stop at the deck. NexDyne builds, governs, and scales — across every vertical. Here's the doctrine behind it.",
     heroImage: "/images/insights-featured-hig.jpg",
@@ -249,7 +249,7 @@ export default function Insights() {
       date: "January 2026",
     },
     {
-      slug: "pricing-strategy-the-discipline-most-companies-defer",
+      slug: "algorithmic-pricing-smes",
       title: "Pricing strategy: the discipline most growing companies defer.",
       dek: "Pricing is the highest-leverage decision a growing company makes — and the one most often delegated to spreadsheets. Why the delegation costs more than it saves.",
       heroImage: "/images/insights-pricing-strategy.jpg",

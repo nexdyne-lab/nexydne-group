@@ -186,7 +186,7 @@ export default function SubscriptionPricingModels() {
                     />
                   </div>
                   <h4 className="font-bold text-lg group-hover:text-primary transition-colors">
-                    Algorithmic Pricing for SMEs
+                    Algorithmic Pricing for Growing Companies
                   </h4>
                   <p className="text-muted-foreground text-sm mt-2">
                     Dynamic pricing technology is now accessible to growing companies.

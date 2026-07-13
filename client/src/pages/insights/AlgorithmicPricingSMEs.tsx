@@ -37,7 +37,7 @@ export default function AlgorithmicPricingSMEs() {
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-3 leading-tight">
-            Algorithmic Pricing for SMEs: It's Not Just for Amazon Anymore
+            Algorithmic Pricing for Growing Companies: It's Not Just for Amazon Anymore
           </h1>
           
           <p className="text-xl text-muted-foreground/50 font-light leading-relaxed">
@@ -64,7 +64,7 @@ export default function AlgorithmicPricingSMEs() {
               We've all seen it: you check a flight price in the morning, and by the afternoon, it's jumped $50. Or you're shopping on Amazon, and the price of a blender fluctuates by a few cents every hour. This is <strong>dynamic pricing</strong>—the automated adjustment of prices based on real-time supply and demand.
             </p>
             <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              For years, this capability was locked behind the walled gardens of airlines, hotels, and e-commerce behemoths. They had the data scientists, the computing power, and the proprietary algorithms to pull it off. Small and medium-sized enterprises (SMEs) were left with Excel spreadsheets and manual updates.
+              For years, this capability was locked behind the walled gardens of airlines, hotels, and e-commerce behemoths. They had the data scientists, the computing power, and the proprietary algorithms to pull it off. Small and medium-sized companies were left with Excel spreadsheets and manual updates.
             </p>
             <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
               That era is over.
@@ -78,9 +78,9 @@ export default function AlgorithmicPricingSMEs() {
               These tools don't just look at internal data; they scrape the web for competitor pricing, monitor weather patterns (which affect demand for everything from umbrellas to soup), and analyze local events. They ingest this data and output an optimal price in milliseconds.
             </p>
 
-            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Why SMEs Need Dynamic Pricing Now</h2>
+            <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Why Growing Companies Need Dynamic Pricing Now</h2>
             <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              The margin for error in business is shrinking. Inflation is driving up input costs, and labor is more expensive than ever. SMEs can no longer afford to leave money on the table.
+              The margin for error in business is shrinking. Inflation is driving up input costs, and labor is more expensive than ever. growing companies can no longer afford to leave money on the table.
             </p>
             <ul className="list-disc pl-6 space-y-2 text-charcoal/80 mb-6">
               <li><strong>Inventory Clearance:</strong> Instead of a blanket "50% Off" sale at the end of the season, algorithms can gradually lower prices as demand softens, maximizing the total revenue yield from clearing stock.</li>
@@ -90,7 +90,7 @@ export default function AlgorithmicPricingSMEs() {
 
             <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Implementing Without Alienating Customers</h2>
             <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              The biggest fear SMEs have is customer backlash. "If my customers see the price changing, they'll think I'm gouging them." This is a valid concern, but it can be managed with transparency and guardrails.
+              The biggest fear growing companies have is customer backlash. "If my customers see the price changing, they'll think I'm gouging them." This is a valid concern, but it can be managed with transparency and guardrails.
             </p>
             <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
               <strong>1. Set Hard Guardrails:</strong> Never let the algorithm price above a certain "ceiling" that would look ridiculous or predatory.
@@ -107,7 +107,7 @@ export default function AlgorithmicPricingSMEs() {
               Algorithmic pricing is not "set it and forget it." It requires human oversight. The machine is great at optimization, but it lacks context. It doesn't know that you're trying to break into a new market or that you want to support a long-term partner during a tough time.
             </p>
             <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              The best approach is <strong>Augmented Intelligence</strong>: the algorithm suggests the price, and the human approves it (or sets the strategy that the algorithm follows). This gives SMEs the speed of automation with the strategic nuance of human leadership.
+              The best approach is <strong>Augmented Intelligence</strong>: the algorithm suggests the price, and the human approves it (or sets the strategy that the algorithm follows). This gives growing companies the speed of automation with the strategic nuance of human leadership.
             </p>
           </div>
 
@@ -115,7 +115,7 @@ export default function AlgorithmicPricingSMEs() {
           <div className="mt-16 p-8 bg-charcoal rounded-lg text-white">
             <h3 className="text-2xl font-bold mb-4">Explore dynamic pricing tools</h3>
             <p className="text-muted-foreground/50 mb-6">
-              We help SMEs select and implement the right pricing software for their scale and industry.
+              We help growing companies select and implement the right pricing software for their scale and industry.
             </p>
             <Link href="/contact">
               <button className="px-6 py-3 bg-primary hover:bg-primary-hover text-white rounded-lg font-semibold transition-colors">

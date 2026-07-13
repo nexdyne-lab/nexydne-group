@@ -5,7 +5,7 @@ import { Link } from "wouter";
 const capabilities = [
   {
     title: "Artificial Intelligence",
-    description: "Harness the power of generative AI and machine learning to automate complex workflows and create competitive advantages for your SME.",
+    description: "Harness the power of generative AI and machine learning to automate complex workflows and create competitive advantages for your business.",
     link: "/capabilities"
   },
   {
@@ -42,7 +42,7 @@ export function Capabilities() {
         <div className="mb-8 sm:mb-12 md:mb-8 sm:mb-12 md:mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">Capabilities</h2>
           <p className="text-xl text-muted-foreground/50 max-w-3xl">
-            We bring world-class expertise tailored to the unique challenges of US SMEs, helping you navigate complexity and unlock value.
+            We bring world-class expertise tailored to the unique challenges of US growing companies, helping you navigate complexity and unlock value.
           </p>
         </div>
 

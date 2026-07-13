@@ -6,11 +6,11 @@ export default function FractionalCFO() {
     <CapabilityHubTemplate
       hubName="Fractional CFO Services"
       slug="cfo-services"
-      heroSubtitle="Access high-level financial leadership without the full-time cost. Strategic financial planning, cash flow management, and board-level reporting for growing SMEs."
+      heroSubtitle="Access high-level financial leadership without the full-time cost. Strategic financial planning, cash flow management, and board-level reporting for growing companies."
       heroImage="/images/industries/advisor-charts.jpg"
       experienceStats={[
         { number: "60%", label: "Cost savings vs full-time CFO while maintaining executive-level expertise" },
-        { number: "100+", label: "SMEs supported with fractional CFO services across diverse industries" },
+        { number: "100+", label: "growing companies supported with fractional CFO services across diverse industries" },
         { number: "30%", label: "Average improvement in cash flow management and working capital" },
         { number: "Three models", label: "Advisory, operational, and interim engagements scaled to your stage" },
       ]}

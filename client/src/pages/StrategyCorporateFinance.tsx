@@ -6,7 +6,7 @@ export default function StrategyCorporateFinance() {
       capabilityName="Strategy & Corporate Finance"
       capabilitySlug="strategy-corporate-finance"
       // PRESERVED VERBATIM from source hero subtitle
-      heroSubtitle="Align financial resources with strategic vision to unlock sustainable growth. We provide the financial leadership that ambitious SMEs need to compete and win."
+      heroSubtitle="Align financial resources with strategic vision to unlock sustainable growth. We provide the financial leadership that ambitious growing companies need to compete and win."
       heroImage="/images/industries/fin-monitors.jpg"
       // PRESERVED CTA labels from source (Schedule a Consultation + View Case Studies)
       heroPrimaryCTA={{
@@ -95,7 +95,7 @@ export default function StrategyCorporateFinance() {
         {
           title: "Get strategic CFO firepower",
           description:
-            "Access high-level financial leadership without the full-time cost. Strategic financial planning, cash flow management, and board-level reporting tailored for growing SMEs.",
+            "Access high-level financial leadership without the full-time cost. Strategic financial planning, cash flow management, and board-level reporting tailored for growing companies.",
           href: "/capabilities/strategy-corporate-finance/cfo-services",
         },
         {
@@ -155,7 +155,7 @@ export default function StrategyCorporateFinance() {
         {
           title: "Fractional CFO Services",
           description:
-            "Access high-level financial leadership without the full-time cost. Strategic financial planning, cash flow management, and board-level reporting tailored for growing SMEs.",
+            "Access high-level financial leadership without the full-time cost. Strategic financial planning, cash flow management, and board-level reporting tailored for growing companies.",
           href: "/capabilities/strategy-corporate-finance/cfo-services",
         },
         {

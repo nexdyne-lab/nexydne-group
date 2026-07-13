@@ -224,7 +224,7 @@ export default function MidMarketAIAccess() {
             {[
               {
                 icon: Building2,
-                title: "US SMEs with 50–500 employees",
+                title: "US growing companies with 50–500 employees",
                 description: "Companies at the scale where AI can transform operations but enterprise solutions remain out of reach."
               },
               {
@@ -364,7 +364,7 @@ export default function MidMarketAIAccess() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl">
             {[
-              { metric: "500+", label: "SMEs supported by 2026" },
+              { metric: "500+", label: "growing companies supported by 2026" },
               { metric: "15", label: "Regional business hubs" },
               { metric: "$50M–$1B", label: "Revenue range served" },
               { metric: "100–5,000", label: "Employee count range" }

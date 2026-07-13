@@ -216,7 +216,7 @@ export default function DiscountOptimization() {
                 <Link href="/insights/algorithmic-pricing-smes">
                   <div className="group cursor-pointer">
                     <h4 className="text-lg font-bold text-charcoal mb-2 group-hover:text-primary transition-colors">
-                      Algorithmic Pricing for SMEs
+                      Algorithmic Pricing for Growing Companies
                     </h4>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-2">
                       Implementing dynamic pricing without the complexity.
