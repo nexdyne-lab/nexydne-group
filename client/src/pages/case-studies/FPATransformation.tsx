@@ -504,13 +504,13 @@ export default function FPATransformation() {
                 title: "Predictive revenue models for 35% better accuracy",
                 industry: "B2B SaaS",
                 description: "How we helped a software company transition to driver-based forecasting",
-                link: "/case-studies/predictive-revenue"
+                link: "/cases/predictive-revenue"
               },
               {
                 title: "Automating variance analysis workflows",
                 industry: "Logistics",
                 description: "How we reduced close-to-report time from 15 days to 5 days",
-                link: "/case-studies/variance-analysis"
+                link: "/cases/variance-analysis"
               }
             ].map((item, index) => (
               <motion.div

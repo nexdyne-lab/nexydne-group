@@ -941,6 +941,12 @@ import LogisticsShipmentAutomation from "./pages/cases/industries/LogisticsShipm
 import SaasCustomerOnboarding from "./pages/cases/industries/SaasCustomerOnboarding";
 import B2bDistributorDtcLaunch from "./pages/cases/industries/B2bDistributorDtcLaunch";
 import ServicesSaasProductization from "./pages/cases/industries/ServicesSaasProductization";
+import ChemicalPlantOptimization from "./pages/cases/industries/ChemicalPlantOptimization";
+import ChemicalSupplyChain from "./pages/cases/industries/ChemicalSupplyChain";
+import ChemicalSustainability from "./pages/cases/industries/ChemicalSustainability";
+import NonprofitDigitalTransformation from "./pages/cases/industries/NonprofitDigitalTransformation";
+import NonprofitImpactMeasurement from "./pages/cases/industries/NonprofitImpactMeasurement";
+import NonprofitProgramOptimization from "./pages/cases/industries/NonprofitProgramOptimization";
 import CapitalRaiseSeriesB from "./pages/cases/industries/CapitalRaiseSeriesB";
 import FpaForecastingTransformation from "./pages/cases/industries/FpaForecastingTransformation";
 import CloudMigrationHealthSystem from "./pages/cases/industries/CloudMigrationHealthSystem";
@@ -1778,6 +1784,15 @@ function Router() {
         <Route path="/cases/saas-customer-onboarding" component={SaasCustomerOnboarding} />
         <Route path="/cases/b2b-distributor-dtc-launch" component={B2bDistributorDtcLaunch} />
         <Route path="/cases/services-saas-productization" component={ServicesSaasProductization} />
+        <Route path="/cases/chemical-plant-optimization" component={ChemicalPlantOptimization} />
+        <Route path="/cases/chemical-supply-chain" component={ChemicalSupplyChain} />
+        <Route path="/cases/chemical-sustainability" component={ChemicalSustainability} />
+        <Route path="/cases/nonprofit-digital-transformation" component={NonprofitDigitalTransformation} />
+        <Route path="/cases/nonprofit-impact-measurement" component={NonprofitImpactMeasurement} />
+        <Route path="/cases/nonprofit-program-optimization" component={NonprofitProgramOptimization} />
+        <Route path="/cases/predictive-revenue" component={CaseStudyPredictiveRevenue} />
+        <Route path="/cases/variance-analysis" component={CaseStudyVarianceAnalysis} />
+        <Route path="/cases/executive-dashboards" component={CaseStudyExecutiveDashboards} />
         <Route path="/cases/capital-raise-series-b" component={CapitalRaiseSeriesB} />
         <Route path="/cases/fpa-forecasting-transformation" component={FpaForecastingTransformation} />
         <Route path="/cases/cloud-migration-health-system" component={CloudMigrationHealthSystem} />

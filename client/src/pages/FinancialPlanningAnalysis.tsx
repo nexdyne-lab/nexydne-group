@@ -296,13 +296,13 @@ export default function FinancialPlanningAnalysis() {
                 title: "Predictive revenue model improves forecast accuracy by 35%",
                 category: "B2B SaaS",
                 image: "/images/industries/fin-handshake-city.jpg",
-                link: "/case-studies/predictive-revenue"
+                link: "/cases/predictive-revenue"
               },
               {
                 title: "Automated variance analysis cuts reporting time in half",
                 category: "Logistics",
                 image: "/images/industries/advisor-charts.jpg",
-                link: "/case-studies/variance-analysis"
+                link: "/cases/variance-analysis"
               }
             ].map((study, i) => (
               <motion.div 
