@@ -17,7 +17,7 @@ export default function ContinuousImprovementPrograms() {
         image: "/images/business-strategy-abstract.jpg",
         paragraphs: [
           "The enterprises that have CI working at scale share a small set of structural choices: improvement is owned somewhere, governance runs on a real cadence, the idea pipeline is instrumented end-to-end, recognition is built into the operating rhythm, and capability is distributed into the workforce rather than concentrated in a CoE that becomes a bottleneck. The enterprises where CI has stalled have made the opposite choices, usually without realizing it.",
-          "Our work is to design the structural choices for the ambition the organization actually has — not to overbuild a program a mid-market industrial does not need, and not to underbuild a program a Fortune 500 cannot run on. The diagnostic is honest, the operating model is sized to fit, and the program is handed over with the cadence and the scorecard the steering committee will actually use.",
+          "Our work is to design the structural choices for the ambition the organization actually has — not to overbuild a program a growing industrial company does not need, and not to underbuild a program a Fortune 500 cannot run on. The diagnostic is honest, the operating model is sized to fit, and the program is handed over with the cadence and the scorecard the steering committee will actually use.",
         ],
       }}
       deliverHeading="A five-phase approach from maturity diagnostic to scaled capability."

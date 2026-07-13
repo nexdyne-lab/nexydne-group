@@ -48,7 +48,7 @@ export default function AIEconomicImpact() {
       </blockquote>
 
       <p>
-        For mid-market companies, this presents both an enormous opportunity and an existential challenge. Those who successfully harness AI will capture disproportionate value; those who don't risk being displaced by more agile competitors.
+        For growing companies, this presents both an enormous opportunity and an existential challenge. Those who successfully harness AI will capture disproportionate value; those who don't risk being displaced by more agile competitors.
       </p>
 
       <h2>Where Value Will Be Created</h2>
@@ -56,35 +56,35 @@ export default function AIEconomicImpact() {
       <h3>Healthcare: $1.8 Trillion</h3>
       
       <p>
-        AI is revolutionizing healthcare through improved diagnostics, personalized treatment plans, drug discovery acceleration, and operational efficiency. Mid-market healthcare providers and medical device companies are finding opportunities in AI-powered patient monitoring, administrative automation, and clinical decision support systems.
+        AI is revolutionizing healthcare through improved diagnostics, personalized treatment plans, drug discovery acceleration, and operational efficiency. Growing healthcare providers and medical device companies are finding opportunities in AI-powered patient monitoring, administrative automation, and clinical decision support systems.
       </p>
 
       <h3>Financial Services: $1.5 Trillion</h3>
       
       <p>
-        From fraud detection to algorithmic trading, AI is transforming financial services. For mid-market financial firms, the biggest opportunities lie in customer service automation, risk assessment, and personalized financial advice at scale.
+        From fraud detection to algorithmic trading, AI is transforming financial services. For growing financial firms, the biggest opportunities lie in customer service automation, risk assessment, and personalized financial advice at scale.
       </p>
 
       <h3>Retail and E-commerce: $1.2 Trillion</h3>
       
       <p>
-        AI-powered personalization, inventory optimization, and demand forecasting are creating massive value in retail. Mid-market retailers are using AI to compete with giants by delivering personalized experiences that larger competitors struggle to match.
+        AI-powered personalization, inventory optimization, and demand forecasting are creating massive value in retail. Growing retailers are using AI to compete with giants by delivering personalized experiences that larger competitors struggle to match.
       </p>
 
       <h3>Manufacturing: $1.1 Trillion</h3>
       
       <p>
-        Predictive maintenance, quality control, and supply chain optimization are driving AI adoption in manufacturing. Mid-market manufacturers are finding that AI investments often pay back within 12-18 months through reduced downtime and improved efficiency.
+        Predictive maintenance, quality control, and supply chain optimization are driving AI adoption in manufacturing. Growing manufacturers are finding that AI investments often pay back within 12-18 months through reduced downtime and improved efficiency.
       </p>
 
-      <h2>The Mid-Market Advantage</h2>
+      <h2>The Growth-Stage Advantage</h2>
 
       <p>
-        While enterprise organizations often struggle with legacy systems and organizational inertia, mid-market companies possess unique advantages in the AI economy:
+        While enterprise organizations often struggle with legacy systems and organizational inertia, growing companies possess unique advantages in the AI economy:
       </p>
 
       <ul>
-        <li><strong>Agility:</strong> Faster decision-making and implementation cycles mean mid-market companies can deploy AI solutions in months, not years</li>
+        <li><strong>Agility:</strong> Faster decision-making and implementation cycles mean growing companies can deploy AI solutions in months, not years</li>
         <li><strong>Focus:</strong> Smaller organizations can concentrate AI investments on high-impact use cases rather than spreading resources thin</li>
         <li><strong>Data Quality:</strong> Manageable data volumes often mean cleaner, more actionable data for AI training</li>
         <li><strong>Culture:</strong> Less bureaucracy enables the cultural shifts necessary for successful AI adoption</li>
@@ -117,10 +117,10 @@ export default function AIEconomicImpact() {
         For business leaders, this means investing not just in AI technology, but in workforce development. Companies that help their employees adapt to AI-augmented work will retain talent and build competitive advantage.
       </p>
 
-      <h2>Investment Priorities for Mid-Market Leaders</h2>
+      <h2>Investment Priorities for Growth-Stage Leaders</h2>
 
       <p>
-        To capture value in the AI economy, mid-market companies should prioritize:
+        To capture value in the AI economy, growing companies should prioritize:
       </p>
 
       <p>
@@ -163,7 +163,7 @@ export default function AIEconomicImpact() {
       </p>
 
       <p>
-        For mid-market leaders, the path forward is clear: start with focused, high-impact AI initiatives that demonstrate value quickly. Build internal capabilities and partnerships that enable scaling. And move with urgency—because in the AI economy, the early movers will capture disproportionate rewards.
+        For growth-stage leaders, the path forward is clear: start with focused, high-impact AI initiatives that demonstrate value quickly. Build internal capabilities and partnerships that enable scaling. And move with urgency—because in the AI economy, the early movers will capture disproportionate rewards.
       </p>
 
       <p>

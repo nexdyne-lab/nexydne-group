@@ -91,7 +91,7 @@ export default function PostMergerIntegration() {
             <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a mid-market professional services firm with $120M in revenue and 450 employees. They had recently completed the acquisition of a complementary firm with $45M in revenue and 180 employees, creating a combined entity with enhanced capabilities and geographic reach.
+                Our client is a growth-stage professional services firm with $120M in revenue and 450 employees. They had recently completed the acquisition of a complementary firm with $45M in revenue and 180 employees, creating a combined entity with enhanced capabilities and geographic reach.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 The acquisition thesis was compelling, but the real work was just beginning. The two firms had different cultures, systems, and ways of working. Without careful integration, the expected synergies would never materialize and key talent would depart.

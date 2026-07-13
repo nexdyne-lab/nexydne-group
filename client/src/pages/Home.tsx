@@ -65,7 +65,7 @@ export default function Home() {
     <div className="min-h-screen bg-white text-charcoal">
       <SEO
         title="Home"
-        description="NexDyne Consulting Group combines Human Intelligence, AI, and Governance to deliver controlled, scalable transformation for mid-market leaders."
+        description="NexDyne Consulting Group combines Human Intelligence, AI, and Governance to deliver controlled, scalable transformation for growth-stage leaders."
         canonical="/"
       />
 

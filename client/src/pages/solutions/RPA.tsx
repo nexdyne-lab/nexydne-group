@@ -59,7 +59,7 @@ export default function RPA() {
   const outcomes = [
     {
       stat: "400+",
-      label: "production bots delivered across mid-market and enterprise clients",
+      label: "production bots delivered across growing and enterprise clients",
     },
     {
       stat: "65%",

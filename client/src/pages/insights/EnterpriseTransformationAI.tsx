@@ -118,7 +118,7 @@ export default function EnterpriseTransformationAI() {
               </p>
 
               <p className="text-charcoal/70 leading-relaxed mb-6">
-                Our research across 250+ mid-market enterprises reveals that companies attempting to bolt AI onto legacy infrastructure achieve only 15-20% of the potential value. Those that modernize their core architecture first capture 70-80% of AI's potential impact within 18 months.
+                Our research across 250+ growing enterprises reveals that companies attempting to bolt AI onto legacy infrastructure achieve only 15-20% of the potential value. Those that modernize their core architecture first capture 70-80% of AI's potential impact within 18 months.
               </p>
 
               <div className="bg-subtle p-8 rounded-xl my-12">

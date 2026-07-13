@@ -3,7 +3,7 @@ import InsightArticle from "@/components/InsightArticle";
 export default function CustomerIntelligence() {
   const relatedInsights = [
     {
-      title: "How Mid-Market Companies Are Winning with AI",
+      title: "How Growing Companies Are Winning with AI",
       category: "Featured",
       link: "/insights/practical-ai-guide",
       image: "/images/insight-ai-midmarket.jpg"
@@ -33,7 +33,7 @@ export default function CustomerIntelligence() {
       relatedInsights={relatedInsights}
     >
       <p>
-        In an era where customer expectations are shaped by experiences with digital giants like Amazon and Netflix, mid-market companies face a critical challenge: how do you deliver personalized, anticipatory service without enterprise-scale resources? The answer lies in customer intelligence—the systematic collection, analysis, and application of customer data to drive business decisions.
+        In an era where customer expectations are shaped by experiences with digital giants like Amazon and Netflix, growing companies face a critical challenge: how do you deliver personalized, anticipatory service without enterprise-scale resources? The answer lies in customer intelligence—the systematic collection, analysis, and application of customer data to drive business decisions.
       </p>
 
       <h2>The Customer Intelligence Imperative</h2>
@@ -47,7 +47,7 @@ export default function CustomerIntelligence() {
       </blockquote>
 
       <p>
-        For mid-market companies, customer intelligence represents a significant competitive opportunity. While larger competitors may have more data, they often struggle to act on it quickly. Smaller, more agile organizations can turn insights into action faster, creating superior customer experiences.
+        For growing companies, customer intelligence represents a significant competitive opportunity. While larger competitors may have more data, they often struggle to act on it quickly. Smaller, more agile organizations can turn insights into action faster, creating superior customer experiences.
       </p>
 
       <h2>Building Your Customer Intelligence Foundation</h2>
@@ -111,7 +111,7 @@ export default function CustomerIntelligence() {
       <h3>Predictive Customer Insights</h3>
 
       <p>
-        The most valuable customer intelligence is predictive—anticipating what customers will do next. Modern analytics tools make it possible for mid-market companies to develop predictive capabilities that were once exclusive to large enterprises.
+        The most valuable customer intelligence is predictive—anticipating what customers will do next. Modern analytics tools make it possible for growing companies to develop predictive capabilities that were once exclusive to large enterprises.
       </p>
 
       <p>
@@ -172,7 +172,7 @@ export default function CustomerIntelligence() {
       </p>
 
       <p>
-        The tools and techniques for building customer intelligence are more accessible than ever. The question isn't whether mid-market companies can compete on customer insight—it's whether they will.
+        The tools and techniques for building customer intelligence are more accessible than ever. The question isn't whether growing companies can compete on customer insight—it's whether they will.
       </p>
     </InsightArticle>
   );

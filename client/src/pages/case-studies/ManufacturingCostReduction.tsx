@@ -33,14 +33,14 @@ export default function ManufacturingCostReduction() {
               <span className="text-primary">$18M</span> annual savings through operational excellence
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mb-8">
-              How we helped a mid-market manufacturer achieve significant cost reductions through lean transformation, process optimization, and strategic sourcing.
+              How we helped a growing manufacturer achieve significant cost reductions through lean transformation, process optimization, and strategic sourcing.
             </p>
             
             {/* PDF Download Button */}
             <CaseStudyPDFButton
               title="$18M annual savings through operational excellence"
               industry="Manufacturing"
-              summary="How we helped a mid-market manufacturer achieve significant cost reductions through lean transformation, process optimization, and strategic sourcing."
+              summary="How we helped a growing manufacturer achieve significant cost reductions through lean transformation, process optimization, and strategic sourcing."
               challenge="See full case study for detailed challenge description."
               solution="See full case study for detailed solution description."
               results={[
@@ -91,7 +91,7 @@ export default function ManufacturingCostReduction() {
             <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a mid-market manufacturer of industrial components with $120M in revenue and 450 employees across three production facilities. They serve automotive, aerospace, and industrial equipment OEMs with precision-machined parts.
+                Our client is a growing manufacturer of industrial components with $120M in revenue and 450 employees across three production facilities. They serve automotive, aerospace, and industrial equipment OEMs with precision-machined parts.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 Facing margin pressure from customers and rising input costs, the company needed to significantly reduce costs while maintaining quality standards. Previous cost reduction efforts had delivered incremental improvements but hadn't addressed fundamental operational issues.

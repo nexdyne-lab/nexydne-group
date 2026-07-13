@@ -17,7 +17,7 @@ export default function Team() {
       image: "/author-sarah-mitchell.caabf512.jpg",
       expertise: ["Intelligent Process Automation", "Professional Services", "Financial Services"],
       industries: ["Professional Services", "Financial Services", "Legal"],
-      bio: "Sarah leads NexDyne's automation practice, specializing in intelligent process automation for professional services and financial services firms. She has helped over 50 mid-market companies deploy automation solutions that deliver measurable ROI."
+      bio: "Sarah leads NexDyne's automation practice, specializing in intelligent process automation for professional services and financial services firms. She has helped over 50 growing companies deploy automation solutions that deliver measurable ROI."
     },
     {
       id: "david-richardson",

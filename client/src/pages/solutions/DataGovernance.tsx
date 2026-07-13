@@ -59,7 +59,7 @@ export default function DataGovernance() {
   const outcomes = [
     {
       stat: "45+",
-      label: "data governance programs designed and operationalized for mid-market enterprises",
+      label: "data governance programs designed and operationalized for growing enterprises",
     },
     {
       stat: "3.2x",
@@ -109,7 +109,7 @@ export default function DataGovernance() {
     },
     {
       industry: "Financial Services",
-      title: "Mid-Market Bank Cuts Data Subject Request Turnaround by 79%",
+      title: "Regional Bank Cuts Data Subject Request Turnaround by 79%",
       description:
         "A subject-rights workflow wired into the catalog and CRM turned a manual six-week process into a four-day operation.",
       image: "/images/case-governance-bank.jpg",

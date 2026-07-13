@@ -173,7 +173,7 @@ export default function About() {
             <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.15 }} className="lg:col-span-8">
               <p className="nx-lead text-charcoal mb-6">
                 NexDyne operates as one—a unified partnership committed to business transformation
-                for growth-stage and mid-market organisations, and the enterprises that partner with
+                for growth-stage and growing organisations, and the enterprises that partner with
                 them.
               </p>
               <p className="text-[15px] text-muted-foreground leading-relaxed mb-8 max-w-2xl">
@@ -273,7 +273,7 @@ export default function About() {
               </p>
               <p className="text-[15px] text-muted-foreground leading-relaxed">
                 So we built NexDyne to democratise access to world-class capability for growth-stage
-                and mid-market organisations, and to govern that capability with the same rigour an
+                and growing organisations, and to govern that capability with the same rigour an
                 elite firm brings to the enterprise. We deploy AI and agentic systems where they
                 create real advantage, always inside a human system we design and govern first.
               </p>

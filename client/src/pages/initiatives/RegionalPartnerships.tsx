@@ -574,19 +574,19 @@ export default function RegionalPartnerships() {
                 <div className="aspect-[16/9] overflow-hidden">
                   <img 
                     src="/images/initiatives/ai-neural-network.jpg" 
-                    alt="Mid-Market AI Access"
+                    alt="AI Access"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-8">
                   <span className="text-xs font-semibold uppercase tracking-[0.15em] text-primary mb-3 block">
-                    Mid-Market AI Access Program
+                    The AI Access Program
                   </span>
                   <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                    Expanding Access to Enterprise-Grade AI for America's Mid-Market
+                    Expanding Access to Enterprise-Grade AI for America's Growing Companies
                   </h3>
                   <p className="text-sm text-charcoal/60 mb-4">
-                    A national effort to make advanced AI, analytics, and automation accessible to mid-market companies.
+                    A national effort to make advanced AI, analytics, and automation accessible to growing companies.
                   </p>
                   <span className="inline-flex items-center text-sm font-medium text-charcoal/70 group-hover:text-primary transition-colors">
                     Learn more

@@ -13,8 +13,8 @@ export default function DigitalGrowthPlaybook() {
   return (
     <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
-        title="The Digital Growth Playbook for Mid-Market Companies" 
-        description="How leading mid-market companies are building digital channels that compete with well-funded startups and enterprise incumbents."
+        title="The Digital Growth Playbook for Growing Companies" 
+        description="How leading growing companies are building digital channels that compete with well-funded startups and enterprise incumbents."
         canonical="/insights/digital-growth-playbook"
       />
       <Navigation />
@@ -52,11 +52,11 @@ export default function DigitalGrowthPlaybook() {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
-              The digital growth playbook for mid-market companies
+              The digital growth playbook for growing companies
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl mb-10">
-              How leading mid-market companies are building digital channels that compete with well-funded startups and enterprise incumbents.
+              How leading growing companies are building digital channels that compete with well-funded startups and enterprise incumbents.
             </p>
             
             <div className="flex items-center gap-6 text-muted-foreground text-sm">
@@ -82,7 +82,7 @@ export default function DigitalGrowthPlaybook() {
               <div className="sticky top-32">
                 <h4 className="font-bold text-charcoal mb-4">Table of Contents</h4>
                 <ul className="space-y-3 text-sm text-charcoal/60 border-l border-border pl-4">
-                  <li className="hover:text-primary cursor-pointer">The Mid-Market Advantage</li>
+                  <li className="hover:text-primary cursor-pointer">The Growth-Stage Advantage</li>
                   <li className="hover:text-primary cursor-pointer">Digital Channel Strategy</li>
                   <li className="hover:text-primary cursor-pointer">The Growth Framework</li>
                   <li className="hover:text-primary cursor-pointer">Technology Choices</li>
@@ -93,7 +93,7 @@ export default function DigitalGrowthPlaybook() {
                 <div className="mt-12">
                   <h4 className="font-bold text-charcoal mb-4">Share this insight</h4>
                   <SocialShare 
-                    title="The Digital Growth Playbook for Mid-Market Companies" 
+                    title="The Digital Growth Playbook for Growing Companies" 
                     url="https://nexdyne.com/insights/digital-growth-playbook" 
                   />
                 </div>
@@ -104,30 +104,30 @@ export default function DigitalGrowthPlaybook() {
             <div className="md:col-span-7">
               <div className="prose prose-lg prose-slate max-w-none">
                 <p className="lead text-xl text-charcoal/70 mb-8">
-                  Mid-market companies face a unique challenge: they're too large to ignore digital transformation, but often lack the resources of enterprise competitors or the agility of startups. Yet this position can be an advantage—if you know how to leverage it.
+                  Growing companies face a unique challenge: they're too large to ignore digital transformation, but often lack the resources of enterprise competitors or the agility of startups. Yet this position can be an advantage—if you know how to leverage it.
                 </p>
                 
-                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">The Mid-Market Advantage</h2>
+                <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">The Growth-Stage Advantage</h2>
                 <p className="text-charcoal/70 leading-relaxed mb-6">
                   Companies with 100-500 employees occupy a strategic sweet spot. Unlike startups, you have established customer relationships, proven products, and operational infrastructure. Unlike enterprises, you can make decisions quickly, implement changes without bureaucratic overhead, and pivot when market conditions demand it.
                 </p>
                 <p className="text-charcoal/70 leading-relaxed mb-8">
-                  The most successful mid-market digital transformations leverage this position by combining startup-like speed with enterprise-grade execution. They don't try to out-spend larger competitors—they out-maneuver them.
+                  The most successful growth-stage digital transformations leverage this position by combining startup-like speed with enterprise-grade execution. They don't try to out-spend larger competitors—they out-maneuver them.
                 </p>
 
                 <div className="bg-subtle p-8 rounded-xl border border-border my-10">
                   <h4 className="font-bold text-charcoal mb-4 flex items-center gap-2">
                     <TrendingUp className="w-5 h-5 text-primary" />
-                    Mid-Market Digital Growth Statistics
+                    Digital Growth Statistics
                   </h4>
                   <div className="grid md:grid-cols-3 gap-6 text-center">
                     <div>
                       <div className="text-3xl font-bold text-primary">67%</div>
-                      <div className="text-sm text-charcoal/60">of mid-market companies plan to increase digital investment</div>
+                      <div className="text-sm text-charcoal/60">of growing companies plan to increase digital investment</div>
                     </div>
                     <div>
                       <div className="text-3xl font-bold text-primary">3.2x</div>
-                      <div className="text-sm text-charcoal/60">faster growth for digitally mature mid-market firms</div>
+                      <div className="text-sm text-charcoal/60">faster growth for digitally mature growing firms</div>
                     </div>
                     <div>
                       <div className="text-3xl font-bold text-primary">42%</div>
@@ -203,7 +203,7 @@ export default function DigitalGrowthPlaybook() {
 
                 <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Technology Choices That Matter</h2>
                 <p className="text-charcoal/70 leading-relaxed mb-6">
-                  The technology landscape for digital commerce has never been more complex—or more powerful. Mid-market companies need to make strategic choices about platforms, architecture, and build-vs-buy decisions.
+                  The technology landscape for digital commerce has never been more complex—or more powerful. Growing companies need to make strategic choices about platforms, architecture, and build-vs-buy decisions.
                 </p>
                 <p className="text-charcoal/70 leading-relaxed mb-8">
                   Our recommendation: start with composable, API-first platforms that allow you to add capabilities incrementally. Avoid monolithic suites that lock you into a single vendor's roadmap. The goal is flexibility—the ability to swap out components as your needs evolve.
@@ -273,7 +273,7 @@ export default function DigitalGrowthPlaybook() {
 
                 <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Real-World Examples</h2>
                 <p className="text-charcoal/70 leading-relaxed mb-6">
-                  The principles in this playbook aren't theoretical—they're drawn from dozens of mid-market digital transformations we've led. Here are three examples that illustrate different paths to digital growth:
+                  The principles in this playbook aren't theoretical—they're drawn from dozens of growth-stage digital transformations we've led. Here are three examples that illustrate different paths to digital growth:
                 </p>
 
                 <div className="space-y-6 my-8">
@@ -311,7 +311,7 @@ export default function DigitalGrowthPlaybook() {
 
                 <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Getting Started</h2>
                 <p className="text-charcoal/70 leading-relaxed mb-6">
-                  Digital growth doesn't require a massive upfront investment. The most successful mid-market companies start with a focused pilot, prove the model, and then scale. Here's how to begin:
+                  Digital growth doesn't require a massive upfront investment. The most successful growing companies start with a focused pilot, prove the model, and then scale. Here's how to begin:
                 </p>
                 <ol className="list-decimal pl-6 space-y-3 text-charcoal/70 mb-8">
                   <li><strong>Audit your current state:</strong> Where are customers already trying to engage digitally? What are competitors doing?</li>
@@ -324,7 +324,7 @@ export default function DigitalGrowthPlaybook() {
                 <div className="bg-primary/10 p-8 rounded-xl my-10">
                   <h4 className="font-bold text-charcoal mb-4">Ready to accelerate your digital growth?</h4>
                   <p className="text-charcoal/70 mb-6">
-                    NEXDYNE helps mid-market companies build digital channels that drive measurable revenue growth. Let's discuss your specific situation.
+                    NEXDYNE helps growing companies build digital channels that drive measurable revenue growth. Let's discuss your specific situation.
                   </p>
                   <Link href="/contact">
                     <Button className="bg-primary hover:bg-primary/90 text-charcoal">

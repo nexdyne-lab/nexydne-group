@@ -59,7 +59,7 @@ export default function DataSolutions() {
   const outcomes = [
     {
       stat: "95+",
-      label: "data platform programs delivered for mid-market and enterprise clients",
+      label: "data platform programs delivered for growing and enterprise clients",
     },
     {
       stat: "58%",
@@ -554,7 +554,7 @@ export default function DataSolutions() {
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
                 <p className="nx-lead text-white/80 mb-8 max-w-[52ch]">
-                  We work with mid-market and enterprise leaders ready to
+                  We work with growing and enterprise leaders ready to
                   treat data as a product—trusted, governed, and
                   measurably tied to business outcomes.
                 </p>

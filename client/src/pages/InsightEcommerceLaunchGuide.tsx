@@ -360,7 +360,7 @@ export default function InsightEcommerceLaunchGuide() {
                     <p className="font-bold text-charcoal">NEXDYNE Growth Practice</p>
                     <p className="text-charcoal/60 text-sm mb-3">E-Commerce & Digital Growth</p>
                     <p className="text-charcoal/70 text-sm">
-                      Our Growth Practice has launched dozens of e-commerce initiatives for mid-market companies, consistently delivering results in 90 days or less.
+                      Our Growth Practice has launched dozens of e-commerce initiatives for growing companies, consistently delivering results in 90 days or less.
                     </p>
                   </div>
                 </div>

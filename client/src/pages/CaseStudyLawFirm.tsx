@@ -135,7 +135,7 @@ export default function CaseStudyLawFirm() {
         <div className="container px-4 sm:px-6 md:px-12 max-w-4xl">
           <div className="prose prose-lg max-w-none">
             <p className="text-xl leading-relaxed text-charcoal/80 mb-6">
-              A 75-attorney boutique law firm based in New York was experiencing rapid growth, handling an increasing volume of complex commercial contracts across multiple practice areas including M&A, real estate, and corporate governance. With a client base spanning mid-market companies, regional banks, and local government entities, the firm's attorneys were reviewing 60-80 contracts monthly.
+              A 75-attorney boutique law firm based in New York was experiencing rapid growth, handling an increasing volume of complex commercial contracts across multiple practice areas including M&A, real estate, and corporate governance. With a client base spanning growing companies, regional banks, and local government entities, the firm's attorneys were reviewing 60-80 contracts monthly.
             </p>
             <p className="text-base leading-relaxed text-charcoal/70 mb-6">
               The traditional manual review process was creating significant bottlenecks. Senior partners spent 60-70% of their time on routine contract analysis—reading through lengthy documents to identify standard clauses, flag risk provisions, and ensure compliance with local regulations. Junior associates were overwhelmed with document preparation, with billable hour pressures creating unsustainable workloads.

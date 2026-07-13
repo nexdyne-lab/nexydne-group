@@ -74,7 +74,7 @@ export default function AcceleratingBusinessGrowth() {
   const outcomes = [
     {
       stat: "90+",
-      label: "digital growth programs delivered for mid-market companies",
+      label: "digital growth programs delivered for growing companies",
     },
     {
       stat: "3.4x",
@@ -210,7 +210,7 @@ export default function AcceleratingBusinessGrowth() {
               <div className="space-y-6 max-w-[60ch]">
                 <p className="text-[1.05rem] md:text-[1.15rem] text-black/80 leading-[1.7]">
                   The playbooks that built your business won't scale it to the
-                  next level. We help mid-market companies break through growth
+                  next level. We help growing companies break through growth
                   ceilings by launching digital products, channels, and business
                   models that compound over time.
                 </p>
@@ -563,7 +563,7 @@ export default function AcceleratingBusinessGrowth() {
                 transition={{ duration: 0.6, ease, delay: 0.1 }}
               >
                 <p className="text-[1.05rem] md:text-[1.12rem] text-white/80 leading-[1.7] mb-8 max-w-[52ch]">
-                  We work with mid-market companies ready to break through growth
+                  We work with growing companies ready to break through growth
                   ceilings. Whether you're launching your first digital channel
                   or scaling a platform business model, our team is ready.
                 </p>

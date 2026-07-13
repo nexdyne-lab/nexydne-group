@@ -59,7 +59,7 @@ export default function ProcessOrchestration() {
   const outcomes = [
     {
       stat: "200+",
-      label: "long-running business processes orchestrated for mid-market and enterprise clients",
+      label: "long-running business processes orchestrated for growing and enterprise clients",
     },
     {
       stat: "50%",

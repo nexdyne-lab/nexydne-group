@@ -233,7 +233,7 @@ import AIAgentsTransformOperations from "./pages/insights/AIAgentsTransformOpera
 import ProcessMiningGuide from "./pages/insights/ProcessMiningGuide";
 import Insights from "./pages/Insights";
 
-// Mid-Market Insight Articles
+// Insight Articles
 import MidMarketAIGuide from "./pages/insights/MidMarketAIGuide";
 import ScalingOperationsInsight from "./pages/insights/ScalingOperations";
 import CustomerIntelligenceInsight from "./pages/insights/CustomerIntelligence";

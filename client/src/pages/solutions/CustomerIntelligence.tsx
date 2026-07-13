@@ -60,7 +60,7 @@ export default function CustomerIntelligence() {
   const outcomes = [
     {
       stat: "85+",
-      label: "customer intelligence programs delivered for mid-market companies",
+      label: "customer intelligence programs delivered for growing companies",
     },
     {
       stat: "47%",
@@ -579,7 +579,7 @@ export default function CustomerIntelligence() {
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
                 <p className="nx-lead text-white/80 mb-8 max-w-[52ch]">
-                  We work with mid-market leaders ready to turn customer data
+                  We work with growth-stage leaders ready to turn customer data
                   into a competitive weapon—through unified platforms,
                   predictive analytics, and personalization at scale.
                 </p>

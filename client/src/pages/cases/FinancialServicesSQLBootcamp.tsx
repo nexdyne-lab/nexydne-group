@@ -3,12 +3,12 @@ import CaseStudyTemplate from "@/components/CaseStudyTemplate";
 export function FinancialServicesSQLBootcamp() {
   return (
     <CaseStudyTemplate
-      client="Mid-Market Investment Firm"
+      client="Growing Investment Firm"
       industry="Financial Services · Data Training"
       title="Financial Services Firm Upskills 50 Analysts with SQL & Python Bootcamp"
       subtitle="8-week intensive training transformed business analysts into self-sufficient data practitioners, reducing IT backlog 60% and accelerating insight delivery from weeks to hours."
       heroImage="/images/industries/fin-monitors.jpg"
-      challenge={`A mid-market investment firm with $8B AUM faced a critical bottleneck: business analysts relied entirely on IT for data extraction and analysis. Simple requests—portfolio performance by sector, client segmentation, risk exposure calculations—required submitting tickets that took 2-3 weeks to fulfill.
+      challenge={`A growing investment firm with $8B AUM faced a critical bottleneck: business analysts relied entirely on IT for data extraction and analysis. Simple requests—portfolio performance by sector, client segmentation, risk exposure calculations—required submitting tickets that took 2-3 weeks to fulfill.
 
 The IT team maintained a backlog of 200+ data requests, prioritizing infrastructure and compliance work over ad-hoc analytics. Analysts spent hours manually copying data from PDFs and Excel files, introducing errors and missing time-sensitive opportunities.
 

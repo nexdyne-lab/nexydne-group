@@ -62,7 +62,7 @@ export default function PurposeMissionValues() {
             </motion.div>
             <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.15 }} className="lg:col-span-8">
               <p className="text-[1.5rem] md:text-[1.9rem] leading-[1.35] tracking-[-0.01em] text-charcoal font-medium mb-8">
-                To transform complexity into clarity—enabling mid-market leaders and the enterprises
+                To transform complexity into clarity—enabling growth-stage leaders and the enterprises
                 they partner with to make decisions with confidence.
               </p>
               <p className="text-[15px] text-muted-foreground leading-relaxed mb-5 max-w-2xl">
@@ -91,7 +91,7 @@ export default function PurposeMissionValues() {
             </motion.div>
             <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.15 }} className="lg:col-span-8">
               <p className="nx-lead text-charcoal mb-10">
-                To empower growth-stage and mid-market companies with AI and agentic systems that turn
+                To empower growth-stage and growing companies with AI and agentic systems that turn
                 operational challenges into competitive advantage—while building a firm where
                 exceptional talent thrives through continuous learning and meaningful impact.
               </p>

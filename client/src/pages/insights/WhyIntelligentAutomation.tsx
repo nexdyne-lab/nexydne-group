@@ -58,11 +58,11 @@ export default function WhyIntelligentAutomation() {
             </h2>
             
             <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              Mid-market companies face a brutal reality: labor costs continue to rise while customer expectations for speed and accuracy have never been higher. Manual processes that were acceptable five years ago now represent existential risks. A single data entry error can cascade into customer churn. A delayed invoice can strain vendor relationships. An overlooked compliance requirement can trigger regulatory penalties.
+              Growing companies face a brutal reality: labor costs continue to rise while customer expectations for speed and accuracy have never been higher. Manual processes that were acceptable five years ago now represent existential risks. A single data entry error can cascade into customer churn. A delayed invoice can strain vendor relationships. An overlooked compliance requirement can trigger regulatory penalties.
             </p>
 
             <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              The mathematics are unforgiving. Consider a mid-market logistics company processing 5,000 shipments monthly with manual coordination. Each shipment requires an average of 15 minutes of human attention across data entry, validation, and exception handling. That's 1,250 hours monthly—or roughly eight full-time employees—dedicated solely to repetitive coordination tasks. At a fully-loaded cost of $75,000 per employee annually, the company spends $600,000 yearly on work that intelligent automation can execute with 95%+ accuracy at a fraction of the cost.
+              The mathematics are unforgiving. Consider a growing logistics company processing 5,000 shipments monthly with manual coordination. Each shipment requires an average of 15 minutes of human attention across data entry, validation, and exception handling. That's 1,250 hours monthly—or roughly eight full-time employees—dedicated solely to repetitive coordination tasks. At a fully-loaded cost of $75,000 per employee annually, the company spends $600,000 yearly on work that intelligent automation can execute with 95%+ accuracy at a fraction of the cost.
             </p>
 
             <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
@@ -74,7 +74,7 @@ export default function WhyIntelligentAutomation() {
             </p>
 
             <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              Recent industry data reveals that 67% of mid-market companies have already implemented some form of intelligent automation, with adoption accelerating quarter over quarter. More telling: companies that deployed automation solutions two years ago are now on their second or third generation of implementations, compounding their operational advantages while late adopters struggle to get started.
+              Recent industry data reveals that 67% of growing companies have already implemented some form of intelligent automation, with adoption accelerating quarter over quarter. More telling: companies that deployed automation solutions two years ago are now on their second or third generation of implementations, compounding their operational advantages while late adopters struggle to get started.
             </p>
 
             <div className="bg-off-white border-l-4 border-primary p-6 my-8">
@@ -152,7 +152,7 @@ export default function WhyIntelligentAutomation() {
           <div className="mt-16 p-8 bg-charcoal rounded-lg text-white">
             <h3 className="text-2xl font-bold mb-4">Ready to start your automation journey?</h3>
             <p className="text-muted-foreground/50 mb-6">
-              NEXDYNE TECHNOLOGIES helps mid-market companies deploy intelligent automation solutions that deliver measurable results in weeks, not months.
+              NEXDYNE TECHNOLOGIES helps growing companies deploy intelligent automation solutions that deliver measurable results in weeks, not months.
             </p>
             <Link href="/contact">
               <button className="px-6 py-3 bg-primary hover:bg-primary-hover text-white rounded-lg font-semibold transition-colors">

@@ -32,7 +32,7 @@ const stories: Story[] = [
     tab: "EU AI Act enforcement",
     title: "The EU AI Act is enforcing in stages — August 2026 is the big one",
     summary:
-      "You don't have to build AI to be covered; deploying it is enough. A 90-day compliance posture for mid-market firms that use AI in hiring, credit, or customer decisions.",
+      "You don't have to build AI to be covered; deploying it is enough. A 90-day compliance posture for growing firms that use AI in hiring, credit, or customer decisions.",
     cta: "More on AI regulation",
     href: "/insights/eu-ai-act-playbook",
     image: "/images/spotlight-eu-ai-act.jpg",

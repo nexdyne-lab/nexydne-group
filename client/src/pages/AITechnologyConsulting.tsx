@@ -79,7 +79,7 @@ const accelerators = [
   }
 ];
 
-// Case studies - Relevant to mid-market focus (50-200 employees)
+// Case studies - Relevant to growing companies (50-200 employees)
 const caseStudies = [
   {
     industry: "Professional Services",
@@ -139,7 +139,7 @@ const services = [
 const insights = [
   {
     type: "Report",
-    title: "Mid-Market AI Access: How growing businesses can compete with enterprise technology",
+    title: "AI Access: How growing businesses can compete with enterprise technology",
     image: "/images/insight-ai-state.jpg",
     link: "/insights/ai-access-guide"
   },
@@ -209,7 +209,7 @@ export default function AITechnologyConsulting() {
     <div className="min-h-screen bg-white text-charcoal font-sans">
       <SEO 
         title="AI and Technology Consulting" 
-        description="NexDyne delivers AI and technology consulting for mid-market organizations. Our proprietary Accelerators, including ProcessFlow AI, help businesses achieve 85% average efficiency improvements through intelligent automation and sustainable transformation."
+        description="NexDyne delivers AI and technology consulting for growing organizations. Our proprietary Accelerators, including ProcessFlow AI, help businesses achieve 85% average efficiency improvements through intelligent automation and sustainable transformation."
         canonical="/capabilities/ai-technology-consulting"
       />
 
@@ -229,7 +229,7 @@ export default function AITechnologyConsulting() {
               </h1>
               
               <p className="text-xl text-white leading-relaxed max-w-xl">
-                Transform your operations with intelligent automation and data-driven solutions. We help mid-market organizations achieve sustainable efficiency improvements through our proven methodology and proprietary accelerators.
+                Transform your operations with intelligent automation and data-driven solutions. We help growing organizations achieve sustainable efficiency improvements through our proven methodology and proprietary accelerators.
               </p>
             </motion.div>
 
@@ -459,7 +459,7 @@ export default function AITechnologyConsulting() {
               Results that speak for themselves
             </h2>
             <p className="text-lg text-muted-foreground mt-6">
-              See how mid-market organizations like yours have transformed operations with NexDyne's AI and technology solutions.
+              See how growing organizations like yours have transformed operations with NexDyne's AI and technology solutions.
             </p>
           </motion.div>
 
@@ -666,7 +666,7 @@ export default function AITechnologyConsulting() {
               Ready to transform your operations?
             </h2>
             <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-              Join the mid-market organizations achieving 85% average efficiency improvements with NexDyne's AI and technology solutions.
+              Join the growing organizations achieving 85% average efficiency improvements with NexDyne's AI and technology solutions.
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4">
               <Link href="/contact">

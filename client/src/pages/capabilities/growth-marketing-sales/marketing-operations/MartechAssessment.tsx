@@ -100,7 +100,7 @@ export default function MartechAssessment() {
           >
             <div className="space-y-8 text-lg sm:text-xl text-charcoal/80 leading-relaxed">
               <p>
-                The average mid-market company uses 12-15 marketing tools—and most of them barely talk to each other. What starts as solving individual problems quickly becomes a tangled web of overlapping capabilities, data silos, and integration headaches. The result: marketing teams spend more time wrestling with technology than using it to drive growth.
+                The average growing company uses 12-15 marketing tools—and most of them barely talk to each other. What starts as solving individual problems quickly becomes a tangled web of overlapping capabilities, data silos, and integration headaches. The result: marketing teams spend more time wrestling with technology than using it to drive growth.
               </p>
               <p>
                 A proper martech assessment goes beyond listing what you have. It examines how data flows between systems, where manual workarounds have crept in, and which tools are actually driving value versus just consuming budget. We've seen companies paying for three different tools that essentially do the same thing—and none of them doing it particularly well.

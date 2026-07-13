@@ -109,7 +109,7 @@ export default function ConversationalAI() {
     },
     {
       industry: "Financial Services",
-      title: "Mid-Market Bank Cuts Internal IT Helpdesk Volume by 53%",
+      title: "Regional Bank Cuts Internal IT Helpdesk Volume by 53%",
       description:
         "Internal helpdesk agent absorbed password resets, access requests, and onboarding queries—reclaiming 14,000 specialist hours a year.",
       image: "/images/case-cai-bank.jpg",

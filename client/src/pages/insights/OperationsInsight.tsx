@@ -158,7 +158,7 @@ export default function OperationsInsight() {
 
       <p>
         The agentic operation is coming fast<Cite n={4} />, and the winners won't be those who deploy the most
-        agents—they'll be those who govern them best. For mid-market operators especially, that is liberating: you
+        agents—they'll be those who govern them best. For growing operators especially, that is liberating: you
         don't need the largest AI budget to build an intelligent operation. You need the discipline to design the
         human system first, and the governance to scale it with confidence. That is the work NexDyne was built to do.
       </p>

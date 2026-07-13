@@ -107,7 +107,7 @@ export default function PrivacyByDesign() {
             </h2>
             
             <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              In a market where data breaches are weekly news, privacy becomes a differentiator. Apple has proven this at a massive scale, making privacy a core brand pillar. Mid-market companies can do the same.
+              In a market where data breaches are weekly news, privacy becomes a differentiator. Apple has proven this at a massive scale, making privacy a core brand pillar. Growing companies can do the same.
             </p>
 
             <p className="text-lg text-charcoal/80 leading-relaxed mb-6">

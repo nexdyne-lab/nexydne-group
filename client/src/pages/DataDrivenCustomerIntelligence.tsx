@@ -74,7 +74,7 @@ export default function DataDrivenCustomerIntelligence() {
   const outcomes = [
     {
       stat: "85+",
-      label: "customer intelligence programs delivered for mid-market companies",
+      label: "customer intelligence programs delivered for growing companies",
     },
     {
       stat: "47%",
@@ -212,7 +212,7 @@ export default function DataDrivenCustomerIntelligence() {
             >
               <Eyebrow>Our Perspective</Eyebrow>
               <h2 className="nx-h2 text-black mb-8 max-w-[22ch]">
-                Most mid-market companies sit on a goldmine of customer data they
+                Most growing companies sit on a goldmine of customer data they
                 can't access. We change that.
               </h2>
               <div className="space-y-6 max-w-[60ch]">
@@ -578,7 +578,7 @@ export default function DataDrivenCustomerIntelligence() {
                 transition={{ duration: 0.6, ease, delay: 0.1 }}
               >
                 <p className="text-[1.05rem] md:text-[1.12rem] text-white/80 leading-[1.7] mb-8 max-w-[52ch]">
-                  We work with mid-market leaders ready to stop guessing about
+                  We work with growth-stage leaders ready to stop guessing about
                   their customers and start knowing — through unified data,
                   predictive models, and personalization at scale.
                 </p>

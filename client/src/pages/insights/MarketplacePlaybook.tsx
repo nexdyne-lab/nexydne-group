@@ -514,8 +514,8 @@ export default function MarketplacePlaybook() {
         items={[
           {
             type: "Article",
-            title: "The digital growth playbook for mid-market companies",
-            description: "How leading mid-market companies are building digital channels that compete with well-funded startups.",
+            title: "The digital growth playbook for growing companies",
+            description: "How leading growing companies are building digital channels that compete with well-funded startups.",
             image: "/images/capabilities/cap-retail-data.jpg",
             link: "/insights/digital-growth-playbook"
           },

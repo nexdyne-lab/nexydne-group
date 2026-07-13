@@ -16,7 +16,7 @@ export default function EfficiencyImprovement() {
     <div className="min-h-screen bg-white text-charcoal font-sans">
       <SEO 
         title="The 85% Efficiency Improvement | NexDyne Technologies" 
-        description="What our clients actually experience when implementing intelligent automation. Real results from real mid-market organizations."
+        description="What our clients actually experience when implementing intelligent automation. Real results from real growing organizations."
       />
       <Navigation />
       
@@ -224,7 +224,7 @@ export default function EfficiencyImprovement() {
                   <div className="p-6">
                     <span className="text-xs font-semibold text-primary uppercase tracking-wider">Report</span>
                     <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-primary transition-colors">
-                      Mid-Market AI Access: How growing businesses can compete with enterprise technology
+                      AI Access: How growing businesses can compete with enterprise technology
                     </h3>
                   </div>
                 </div>

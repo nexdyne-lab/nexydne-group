@@ -18,7 +18,7 @@ const searchData: SearchResult[] = [
   {
     type: 'service',
     title: 'Fractional CFO Services',
-    description: 'Strategic financial leadership for mid-market companies',
+    description: 'Strategic financial leadership for growing companies',
     url: '/services/fractional-cfo',
     tags: ['finance', 'cfo', 'strategy', 'leadership']
   },
@@ -96,7 +96,7 @@ const searchData: SearchResult[] = [
   {
     type: 'case-study',
     title: 'Logistics Shipment Processing Automation',
-    description: 'Reduced processing time by 73% for mid-market logistics company',
+    description: 'Reduced processing time by 73% for growing logistics company',
     url: '/case-studies/logistics-shipment-automation',
     tags: ['logistics', 'automation', 'efficiency', 'process optimization']
   },
@@ -146,7 +146,7 @@ const searchData: SearchResult[] = [
   {
     type: 'blog',
     title: 'Why Intelligent Automation Isn\'t Optional Anymore',
-    description: 'The competitive imperative driving mid-market automation adoption',
+    description: 'The competitive imperative driving automation adoption among growing companies',
     url: '/insights/intelligent-automation-imperative',
     tags: ['automation', 'strategy', 'competitive advantage', 'digital transformation']
   },

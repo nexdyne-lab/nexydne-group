@@ -119,7 +119,7 @@ export default function CaseStudyPredictiveRevenue() {
             <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a rapidly growing B2B SaaS company providing workflow automation tools to mid-market enterprises. With 180 employees and $28M in annual recurring revenue, they were experiencing 40% year-over-year growth but struggling to forecast revenue accurately enough to make confident hiring and investment decisions.
+                Our client is a rapidly growing B2B SaaS company providing workflow automation tools to growing enterprises. With 180 employees and $28M in annual recurring revenue, they were experiencing 40% year-over-year growth but struggling to forecast revenue accurately enough to make confident hiring and investment decisions.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 The company had recently raised a Series B round and was under pressure from the board to demonstrate predictable, sustainable growth. Their existing financial planning process relied heavily on static annual budgets with quarterly adjustments, which left leadership constantly reacting to surprises rather than proactively managing the business.

@@ -155,7 +155,7 @@ export default function GrowthMarketingInsight() {
       <p>
         Generative AI in growth is one of the clearest value opportunities in business today<Cite n={1} /><Cite n={3} />—
         and one of the easiest to squander. The winners won't be the teams that generate the most content. They'll be
-        the ones that govern the customer decision, protect the brand, and measure to revenue. For mid-market
+        the ones that govern the customer decision, protect the brand, and measure to revenue. For growing
         companies, that discipline is the great equaliser: it lets a focused team out-execute far larger competitors.
         That is precisely the work NexDyne was built to do.
       </p>

@@ -11,7 +11,7 @@ export default function InsightDigitalChannelsGrowth() {
     <div className="min-h-screen bg-white font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Digital Channels Driving Revenue Growth | Insights" 
-        description="How mid-market companies are leveraging digital channels to drive 2-5x revenue growth through e-commerce, subscriptions, and platform businesses."
+        description="How growing companies are leveraging digital channels to drive 2-5x revenue growth through e-commerce, subscriptions, and platform businesses."
         canonical="/insights/digital-channels-growth"
       />
       <Navigation />
@@ -33,10 +33,10 @@ export default function InsightDigitalChannelsGrowth() {
                 <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Digital Growth · Strategy</span>
               </div>
               <h1 className="text-charcoal font-bold tracking-[-0.03em] leading-[1.06] text-[clamp(2.1rem,4.6vw,3.6rem)]">
-                Digital channels driving revenue growth: A playbook for mid-market companies
+                Digital channels driving revenue growth: A playbook for growing companies
               </h1>
               <p className="mt-7 text-[1.1rem] md:text-[1.2rem] leading-[1.55] text-muted-foreground max-w-[62ch]">
-                Mid-market companies are discovering that digital channels aren't just a nice-to-have—they're essential for sustainable growth. Here's how leading companies are achieving 2-5x revenue growth through strategic digital initiatives.
+                Growing companies are discovering that digital channels aren't just a nice-to-have—they're essential for sustainable growth. Here's how leading companies are achieving 2-5x revenue growth through strategic digital initiatives.
               </p>
               <div className="mt-7 flex flex-wrap items-center gap-4 text-muted-foreground text-sm">
                 <div className="flex items-center gap-2">
@@ -68,19 +68,19 @@ export default function InsightDigitalChannelsGrowth() {
               >
                 <div className="text-charcoal/80 leading-relaxed space-y-6">
                   <p className="text-xl font-medium text-charcoal">
-                    The digital transformation of commerce is no longer a future trend—it's the present reality. Mid-market companies that embrace digital channels are consistently outperforming their peers, achieving 2-5x revenue growth while reducing customer acquisition costs by 30-50%.
+                    The digital transformation of commerce is no longer a future trend—it's the present reality. Growing companies that embrace digital channels are consistently outperforming their peers, achieving 2-5x revenue growth while reducing customer acquisition costs by 30-50%.
                   </p>
 
                   <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">
-                    The digital imperative for mid-market companies
+                    The digital imperative for growing companies
                   </h2>
                   
                   <p>
-                    For decades, mid-market companies competed on relationships, local presence, and service quality. These advantages haven't disappeared, but they're no longer sufficient. Today's buyers—whether consumers or business purchasers—expect digital convenience alongside traditional strengths.
+                    For decades, growing companies competed on relationships, local presence, and service quality. These advantages haven't disappeared, but they're no longer sufficient. Today's buyers—whether consumers or business purchasers—expect digital convenience alongside traditional strengths.
                   </p>
                   
                   <p>
-                    Our research across 200+ mid-market companies reveals a stark divide: companies with mature digital channels are growing revenue 3.2x faster than those without. More importantly, they're building sustainable competitive advantages that compound over time.
+                    Our research across 200+ growing companies reveals a stark divide: companies with mature digital channels are growing revenue 3.2x faster than those without. More importantly, they're building sustainable competitive advantages that compound over time.
                   </p>
 
                   <div className="bg-subtle p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
@@ -99,7 +99,7 @@ export default function InsightDigitalChannelsGrowth() {
                   </h3>
                   
                   <p>
-                    The most immediate opportunity for most mid-market companies is launching or optimizing e-commerce capabilities. Whether B2C or B2B, digital ordering channels offer multiple benefits:
+                    The most immediate opportunity for most growing companies is launching or optimizing e-commerce capabilities. Whether B2C or B2B, digital ordering channels offer multiple benefits:
                   </p>
                   
                   <ul className="list-disc pl-6 space-y-2">
@@ -210,7 +210,7 @@ export default function InsightDigitalChannelsGrowth() {
                   </h2>
                   
                   <p>
-                    For mid-market companies ready to accelerate digital growth, we recommend a phased approach:
+                    For growing companies ready to accelerate digital growth, we recommend a phased approach:
                   </p>
 
                   <div className="bg-subtle p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl my-10">
@@ -251,7 +251,7 @@ export default function InsightDigitalChannelsGrowth() {
                   </h2>
                   
                   <p>
-                    Digital channels are no longer optional for mid-market companies seeking sustainable growth. The companies that move decisively—launching e-commerce, building subscription offerings, or creating platform businesses—are pulling ahead of competitors who wait.
+                    Digital channels are no longer optional for growing companies seeking sustainable growth. The companies that move decisively—launching e-commerce, building subscription offerings, or creating platform businesses—are pulling ahead of competitors who wait.
                   </p>
                   
                   <p>
@@ -277,7 +277,7 @@ export default function InsightDigitalChannelsGrowth() {
                     <p className="font-bold text-charcoal">NEXDYNE Growth Practice</p>
                     <p className="text-charcoal/60 text-sm mb-3">Digital Growth & E-Commerce</p>
                     <p className="text-charcoal/70 text-sm">
-                      Our Growth Practice helps mid-market companies launch and scale digital channels that drive sustainable revenue growth.
+                      Our Growth Practice helps growing companies launch and scale digital channels that drive sustainable revenue growth.
                     </p>
                   </div>
                 </div>

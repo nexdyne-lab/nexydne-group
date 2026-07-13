@@ -91,7 +91,7 @@ export default function ProfessionalServicesGrowth() {
             <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a mid-market professional services firm with $45M in revenue and 200 employees. They had built a solid reputation for technical excellence but were struggling to grow in an increasingly competitive market.
+                Our client is a growth-stage professional services firm with $45M in revenue and 200 employees. They had built a solid reputation for technical excellence but were struggling to grow in an increasingly competitive market.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 The firm's partners recognized that their traditional approach—competing on technical expertise and relationships—was no longer sufficient. They needed to transform their market positioning and go-to-market approach to drive growth.

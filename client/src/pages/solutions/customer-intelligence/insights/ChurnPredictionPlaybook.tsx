@@ -11,7 +11,7 @@ export default function ChurnPredictionPlaybook() {
   return (
     <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
-        title="The Churn Prediction Playbook for Mid-Market SaaS" 
+        title="The Churn Prediction Playbook for Growth-Stage SaaS" 
         description="A practical guide to building and deploying churn prediction models that actually drive retention—from feature engineering to intervention automation."
         canonical="/solutions/data-driven-customer-intelligence/insights/churn-prediction-playbook"
       />
@@ -49,7 +49,7 @@ export default function ChurnPredictionPlaybook() {
             </div>
             
             <h1 className="text-[2rem] md:text-[2.5rem] lg:text-[2.75rem] font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
-              The Churn Prediction Playbook for Mid-Market SaaS
+              The Churn Prediction Playbook for Growth-Stage SaaS
             </h1>
             
             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
@@ -84,7 +84,7 @@ export default function ChurnPredictionPlaybook() {
               className="lg:col-span-8 prose prose-lg max-w-none"
             >
               <p className="text-xl text-charcoal/80 leading-relaxed">
-                Churn is the silent killer of SaaS businesses. While companies obsess over acquisition, the customers quietly walking out the back door often represent a larger drag on growth than insufficient new customer volume. For mid-market SaaS companies with annual churn rates of 15-20%, reducing churn by even a few percentage points can add millions to the bottom line.
+                Churn is the silent killer of SaaS businesses. While companies obsess over acquisition, the customers quietly walking out the back door often represent a larger drag on growth than insufficient new customer volume. For growth-stage SaaS companies with annual churn rates of 15-20%, reducing churn by even a few percentage points can add millions to the bottom line.
               </p>
 
               <p>
@@ -227,7 +227,7 @@ export default function ChurnPredictionPlaybook() {
               </ul>
 
               <p>
-                For most mid-market SaaS companies, we recommend a <strong>60-day prediction horizon</strong>. This provides enough lead time for meaningful intervention while maintaining reasonable accuracy.
+                For most growth-stage SaaS companies, we recommend a <strong>60-day prediction horizon</strong>. This provides enough lead time for meaningful intervention while maintaining reasonable accuracy.
               </p>
 
               <h2 className="text-3xl font-bold mt-12 mb-6">Step 4: Build and Validate Your Model</h2>

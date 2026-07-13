@@ -3,7 +3,7 @@ import InsightArticle from "@/components/InsightArticle";
 export default function DigitalTransformationReadiness() {
   const relatedInsights = [
     {
-      title: "How Mid-Market Companies Are Winning with AI",
+      title: "How Growing Companies Are Winning with AI",
       category: "Featured",
       link: "/insights/practical-ai-guide",
       image: "/images/insight-ai-midmarket.jpg"
@@ -77,7 +77,7 @@ export default function DigitalTransformationReadiness() {
       <h2>Sign 3: Your Data Is Siloed and Underutilized</h2>
 
       <p>
-        Most mid-market companies sit on goldmines of data scattered across departments, systems, and spreadsheets. If you can't easily answer basic questions about customer behavior, operational efficiency, or market trends, you're leaving value on the table.
+        Most growing companies sit on goldmines of data scattered across departments, systems, and spreadsheets. If you can't easily answer basic questions about customer behavior, operational efficiency, or market trends, you're leaving value on the table.
       </p>
 
       <p>

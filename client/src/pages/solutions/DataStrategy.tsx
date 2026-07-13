@@ -59,7 +59,7 @@ export default function DataStrategy() {
   const outcomes = [
     {
       stat: "60+",
-      label: "data strategy and governance engagements led for mid-market and enterprise leaders",
+      label: "data strategy and governance engagements led for growing and enterprise leaders",
     },
     {
       stat: "2.6x",

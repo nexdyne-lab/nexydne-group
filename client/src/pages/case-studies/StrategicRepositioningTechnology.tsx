@@ -116,7 +116,7 @@ export default function StrategicRepositioningTechnology() {
             <h2 className="text-3xl font-bold text-charcoal mb-6">Company Background</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client had built a successful business over 18 years providing on-premise enterprise resource planning software to mid-market manufacturing companies. With 220 employees and approximately 300 enterprise customers, the company generated $9M in annual recurring revenue primarily from maintenance contracts and professional services.
+                Our client had built a successful business over 18 years providing on-premise enterprise resource planning software to growth-stage manufacturing companies. With 220 employees and approximately 300 enterprise customers, the company generated $9M in annual recurring revenue primarily from maintenance contracts and professional services.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 However, the company faced an existential challenge: the market was rapidly shifting to cloud-based SaaS solutions, and the company's on-premise architecture was increasingly viewed as outdated. New customer acquisition had declined 40% over three years, and existing customers were beginning to evaluate cloud alternatives. Without fundamental strategic repositioning, the company risked becoming irrelevant in a market it had once dominated.

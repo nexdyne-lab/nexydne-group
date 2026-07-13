@@ -98,7 +98,7 @@ export default function IntelligenceCommons() {
     <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="NexDyne Intelligence Commons | Democratizing Business Intelligence" 
-        description="A free-to-start AI-powered intelligence platform designed to give mid-market leaders access to market signals, competitive benchmarking, and growth scenario modeling."
+        description="A free-to-start AI-powered intelligence platform designed to give growth-stage leaders access to market signals, competitive benchmarking, and growth scenario modeling."
         canonical="/initiatives/intelligence-commons"
       />
       <Navigation />
@@ -145,7 +145,7 @@ export default function IntelligenceCommons() {
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl">
-              A free-to-start AI-powered intelligence platform designed to give mid-market leaders access to market signals, competitive benchmarking, and growth scenario modeling.
+              A free-to-start AI-powered intelligence platform designed to give growth-stage leaders access to market signals, competitive benchmarking, and growth scenario modeling.
             </p>
           </motion.div>
         </div>
@@ -176,7 +176,7 @@ export default function IntelligenceCommons() {
                   The NexDyne Intelligence Commons changes this equation. By combining AI-powered analysis with curated data sources, we're making the same caliber of business intelligence available to growing companies—starting with a free tier that delivers real value.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  This isn't a watered-down version of enterprise tools. It's a purpose-built platform designed for the specific intelligence needs of mid-market leaders making critical growth decisions.
+                  This isn't a watered-down version of enterprise tools. It's a purpose-built platform designed for the specific intelligence needs of growth-stage leaders making critical growth decisions.
                 </p>
               </div>
             </motion.div>
@@ -315,7 +315,7 @@ export default function IntelligenceCommons() {
                 Fortune 500 companies have entire departments dedicated to competitive intelligence, market research, and strategic planning. They subscribe to expensive data services, retain consulting firms, and employ analysts to synthesize insights.
               </p>
               <p className="text-lg leading-relaxed">
-                Mid-market leaders often make critical decisions with a fraction of this intelligence. They rely on industry publications, informal networks, and intuition—not because they don't value data-driven decision making, but because the tools have been inaccessible.
+                Growth-stage leaders often make critical decisions with a fraction of this intelligence. They rely on industry publications, informal networks, and intuition—not because they don't value data-driven decision making, but because the tools have been inaccessible.
               </p>
             </div>
 
@@ -360,7 +360,7 @@ export default function IntelligenceCommons() {
             
             <div className="prose prose-lg max-w-none text-charcoal/70 mb-12">
               <p className="text-lg leading-relaxed mb-6">
-                When mid-market leaders have access to quality business intelligence, they make better decisions. Better decisions lead to stronger companies. Stronger companies create more jobs, pay more taxes, and invest more in their communities.
+                When growth-stage leaders have access to quality business intelligence, they make better decisions. Better decisions lead to stronger companies. Stronger companies create more jobs, pay more taxes, and invest more in their communities.
               </p>
               <p className="text-lg leading-relaxed">
                 The Intelligence Commons is designed to create this virtuous cycle—democratizing access to the tools that drive informed decision-making and sustainable growth.
@@ -448,7 +448,7 @@ export default function IntelligenceCommons() {
               {
                 name: "Enterprise",
                 price: "Custom",
-                description: "Full intelligence suite for mid-market leaders",
+                description: "Full intelligence suite for growth-stage leaders",
                 features: [
                   "Everything in Growth",
                   "Dedicated analyst support",
@@ -527,19 +527,19 @@ export default function IntelligenceCommons() {
                 <div className="aspect-[16/9] overflow-hidden">
                   <img 
                     src="/images/initiatives/ai-neural-network.jpg" 
-                    alt="Mid-Market AI Access"
+                    alt="AI Access"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-8">
                   <span className="text-xs font-semibold uppercase tracking-[0.15em] text-primary mb-3 block">
-                    Mid-Market AI Access Program
+                    The AI Access Program
                   </span>
                   <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                    Expanding Access to Enterprise-Grade AI for America's Mid-Market
+                    Expanding Access to Enterprise-Grade AI for America's Growing Companies
                   </h3>
                   <p className="text-sm text-charcoal/60 mb-4">
-                    A national effort to make advanced AI, analytics, and automation accessible to mid-market companies.
+                    A national effort to make advanced AI, analytics, and automation accessible to growing companies.
                   </p>
                   <span className="inline-flex items-center text-sm font-medium text-charcoal/70 group-hover:text-primary transition-colors">
                     Learn more

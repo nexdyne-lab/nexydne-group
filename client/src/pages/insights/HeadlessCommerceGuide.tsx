@@ -151,7 +151,7 @@ export function HeadlessCommerceGuide() {
 
                 <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Is Headless Right for You?</h2>
                 <p>
-                  Headless isn't for everyone. It requires a higher level of technical maturity and development resources. However, if you are a mid-market or enterprise brand facing these challenges, it's time to consider the switch:
+                  Headless isn't for everyone. It requires a higher level of technical maturity and development resources. However, if you are a growth-stage or enterprise brand facing these challenges, it's time to consider the switch:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 mb-8">
                   <li>You have a complex, content-rich customer journey.</li>

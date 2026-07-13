@@ -59,7 +59,7 @@ export default function IPaaS() {
   const outcomes = [
     {
       stat: "300+",
-      label: "integrations delivered across mid-market and enterprise platforms",
+      label: "integrations delivered across growing and enterprise platforms",
     },
     {
       stat: "55%",
@@ -177,7 +177,7 @@ export default function IPaaS() {
             </h3>
             <div className="space-y-6">
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
-                Most mid-market companies have accumulated dozens of point-to-point
+                Most growing companies have accumulated dozens of point-to-point
                 integrations over the last decade—each one written by a
                 different team, in a different style, with a different failure
                 mode. The cost shows up in two ways: every new system takes longer

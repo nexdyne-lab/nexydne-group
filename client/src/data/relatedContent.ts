@@ -23,7 +23,7 @@ export const blogRelatedContent: Record<string, RelatedContentItem[]> = {
       image: '/blog-roi-measurement.1514df48.jpg'
     },
     {
-      title: 'The complete guide to digital transformation for mid-market companies',
+      title: 'The complete guide to digital transformation for growing companies',
       description: 'Navigate the complexities of enterprise-wide change with proven strategies from successful transformations.',
       link: '/insights/digital-transformation-guide',
       readTime: '8 min read',
@@ -81,7 +81,7 @@ export const blogRelatedContent: Record<string, RelatedContentItem[]> = {
       image: '/blog-team-collaboration.913d82ea.jpg'
     },
     {
-      title: 'The complete guide to digital transformation for mid-market companies',
+      title: 'The complete guide to digital transformation for growing companies',
       description: 'Navigate the complexities of enterprise-wide change with proven strategies from successful transformations.',
       link: '/insights/digital-transformation-guide',
       readTime: '8 min read',
@@ -181,7 +181,7 @@ export const caseStudyRelatedContent: Record<string, RelatedContentItem[]> = {
       image: '/case-variance-analysis.jpg'
     },
     {
-      title: 'The complete guide to digital transformation for mid-market companies',
+      title: 'The complete guide to digital transformation for growing companies',
       description: 'Navigate the complexities of enterprise-wide change with proven strategies from successful transformations.',
       link: '/insights/digital-transformation-guide',
       readTime: '8 min read',

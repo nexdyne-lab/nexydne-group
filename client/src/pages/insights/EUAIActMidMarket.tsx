@@ -24,7 +24,7 @@ export default function EUAIActMidMarket() {
       category="Regulation & Governance"
       categoryHref="/insights"
       title="The EU AI Act Is Enforcing in Stages — and August 2026 Is the Big One"
-      subtitle="Prohibited practices and AI-literacy duties have applied since February 2025; obligations for general-purpose AI since August 2025. The high-risk regime lands in August 2026 — and it reaches far more mid-market firms than most of them assume."
+      subtitle="Prohibited practices and AI-literacy duties have applied since February 2025; obligations for general-purpose AI since August 2025. The high-risk regime lands in August 2026 — and it reaches far more growing firms than most of them assume."
       heroImage="/images/business-strategy-abstract.jpg"
       publishDate="July 6, 2026"
       readTime="9 min"
@@ -46,7 +46,7 @@ export default function EUAIActMidMarket() {
       </p>
 
       <p>
-        Large enterprises have compliance programmes standing. The exposed population is the mid-market — firms
+        Large enterprises have compliance programmes standing. The exposed population is growing companies — firms
         that don't think of themselves as "AI companies" but are, in the Act's terms, <em>deployers</em> of AI
         systems: screening CVs with an AI tool, scoring credit applications, monitoring worker productivity,
         routing insurance claims. Deployment alone creates obligations.
@@ -75,14 +75,14 @@ export default function EUAIActMidMarket() {
         management, education, essential services, credit scoring, and insurance pricing. For those systems the
         rules require risk management, data governance, technical documentation, logging, human oversight, and
         post-market monitoring<Cite n={1} />. None of it is exotic; all of it assumes you can produce evidence on
-        request. Evidence is exactly what most mid-market AI usage lacks today.
+        request. Evidence is exactly what the AI usage of most growing companies lacks today.
       </p>
 
       <p>
         The penalty structure gets attention — up to €35 million or 7% of worldwide turnover for prohibited
         practices, with lower tiers for other violations<Cite n={1} /> — but the operational risk arrives earlier
         and quieter: enterprise customers are already pushing AI-compliance clauses into procurement. The first
-        place mid-market firms feel the Act is not a regulator's letter. It is a lost RFP.
+        place growing firms feel the Act is not a regulator's letter. It is a lost RFP.
       </p>
 
       <h2>A 90-day posture that doesn't require a compliance department</h2>

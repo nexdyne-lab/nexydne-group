@@ -176,7 +176,7 @@ export default function DataPlatform() {
             </h3>
             <div className="space-y-6">
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
-                Every mid-market company has a data platform. Most have several.
+                Every growing company has a data platform. Most have several.
                 The problem isn't the technology—Databricks and
                 Snowflake are excellent. The problem is the operating model:
                 pipelines without owners, dashboards without lineage, costs

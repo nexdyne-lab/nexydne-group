@@ -26,7 +26,7 @@ export const capabilityPerspectives: Record<PerspectiveTopic, PerspectiveCard[]>
       link: "/insights/agentic-ai-budget-line",
     },
     {
-      title: "How mid-market companies are winning with AI",
+      title: "How growing companies are winning with AI",
       description:
         "A practical guide to how growing businesses use artificial intelligence to compete with larger enterprises — without the enterprise budget.",
       category: "Featured",
@@ -37,7 +37,7 @@ export const capabilityPerspectives: Record<PerspectiveTopic, PerspectiveCard[]>
     {
       title: "The EU AI Act is enforcing in stages — August 2026 is the big one.",
       description:
-        "You don't have to build AI to be covered; deploying it is enough. A 90-day compliance posture for mid-market firms that use AI in hiring, credit, or customer decisions.",
+        "You don't have to build AI to be covered; deploying it is enough. A 90-day compliance posture for growing firms that use AI in hiring, credit, or customer decisions.",
       category: "Governance",
       readTime: "12 min read",
       image: "/images/insight-eu-ai-act.jpg",

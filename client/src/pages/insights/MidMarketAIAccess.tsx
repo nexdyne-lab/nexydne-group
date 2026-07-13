@@ -15,7 +15,7 @@ export default function MidMarketAIAccess() {
   return (
     <div className="min-h-screen bg-white text-charcoal font-sans">
       <SEO 
-        title="Mid-Market AI Access | NexDyne Technologies" 
+        title="AI Access | NexDyne Technologies" 
         description="How growing businesses can compete with enterprise technology through strategic AI adoption and intelligent automation."
       />
       <Navigation />
@@ -49,7 +49,7 @@ export default function MidMarketAIAccess() {
               variants={fadeInUp}
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             >
-              Mid-Market AI Access: How growing businesses can compete with enterprise technology
+              AI Access: How growing businesses can compete with enterprise technology
             </motion.h1>
             
             <motion.p 
@@ -58,7 +58,7 @@ export default function MidMarketAIAccess() {
               variants={fadeInUp}
               className="text-xl text-muted-foreground/50 leading-relaxed"
             >
-              The democratization of AI is creating unprecedented opportunities for mid-market organizations. This report examines how companies with 50-200 employees can leverage intelligent automation to compete effectively against larger enterprises.
+              The democratization of AI is creating unprecedented opportunities for growing organizations. This report examines how companies with 50-200 employees can leverage intelligent automation to compete effectively against larger enterprises.
             </motion.p>
           </div>
         </div>
@@ -72,11 +72,11 @@ export default function MidMarketAIAccess() {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="text-5xl font-bold text-charcoal mb-2">73%</div>
-                <p className="text-muted-foreground">of mid-market companies report AI as a strategic priority for 2026</p>
+                <p className="text-muted-foreground">of growing companies report AI as a strategic priority for 2026</p>
               </div>
               <div className="text-center">
                 <div className="text-5xl font-bold text-charcoal mb-2">4.2x</div>
-                <p className="text-muted-foreground">average ROI achieved by mid-market AI adopters within 18 months</p>
+                <p className="text-muted-foreground">average ROI achieved by growth-stage AI adopters within 18 months</p>
               </div>
               <div className="text-center">
                 <div className="text-5xl font-bold text-charcoal mb-2">62%</div>
@@ -95,7 +95,7 @@ export default function MidMarketAIAccess() {
             <h2>The Shifting AI Landscape</h2>
             
             <p>
-              For years, artificial intelligence was the exclusive domain of enterprises with deep pockets and dedicated data science teams. The barriers to entry—massive infrastructure investments, specialized talent, and lengthy implementation timelines—kept mid-market organizations on the sidelines, watching larger competitors gain advantages they couldn't match.
+              For years, artificial intelligence was the exclusive domain of enterprises with deep pockets and dedicated data science teams. The barriers to entry—massive infrastructure investments, specialized talent, and lengthy implementation timelines—kept growing organizations on the sidelines, watching larger competitors gain advantages they couldn't match.
             </p>
             
             <p>
@@ -103,25 +103,25 @@ export default function MidMarketAIAccess() {
             </p>
             
             <p>
-              Our research across 200+ mid-market organizations reveals a clear pattern: companies that embrace this shift are pulling ahead of competitors who remain hesitant. The question is no longer whether mid-market businesses can afford AI—it's whether they can afford to wait.
+              Our research across 200+ growing organizations reveals a clear pattern: companies that embrace this shift are pulling ahead of competitors who remain hesitant. The question is no longer whether growing businesses can afford AI—it's whether they can afford to wait.
             </p>
 
-            <h2>The Mid-Market Advantage</h2>
+            <h2>The Growth-Stage Advantage</h2>
             
             <p>
-              Counterintuitively, mid-market organizations often have structural advantages over larger enterprises when it comes to AI adoption. These advantages stem from three key factors:
+              Counterintuitively, growing organizations often have structural advantages over larger enterprises when it comes to AI adoption. These advantages stem from three key factors:
             </p>
             
             <h3>Organizational Agility</h3>
             
             <p>
-              Large enterprises struggle with AI adoption not because of technology limitations, but because of organizational complexity. Multiple stakeholders, legacy systems, and entrenched processes create friction that slows implementation. Mid-market companies, with flatter hierarchies and more unified decision-making, can move from concept to deployment in weeks rather than months.
+              Large enterprises struggle with AI adoption not because of technology limitations, but because of organizational complexity. Multiple stakeholders, legacy systems, and entrenched processes create friction that slows implementation. Growing companies, with flatter hierarchies and more unified decision-making, can move from concept to deployment in weeks rather than months.
             </p>
             
             <h3>Focused Use Cases</h3>
             
             <p>
-              Enterprise AI initiatives often suffer from scope creep—attempting to transform everything simultaneously. Mid-market organizations, by necessity, must prioritize. This constraint becomes an advantage: focused implementations deliver faster ROI and build organizational confidence for subsequent projects.
+              Enterprise AI initiatives often suffer from scope creep—attempting to transform everything simultaneously. Growing organizations, by necessity, must prioritize. This constraint becomes an advantage: focused implementations deliver faster ROI and build organizational confidence for subsequent projects.
             </p>
             
             <h3>Cultural Adaptability</h3>
@@ -133,19 +133,19 @@ export default function MidMarketAIAccess() {
             <h2>The Implementation Gap</h2>
             
             <p>
-              Despite these advantages, many mid-market organizations struggle to translate AI potential into operational reality. Our research identifies three primary barriers:
+              Despite these advantages, many growing organizations struggle to translate AI potential into operational reality. Our research identifies three primary barriers:
             </p>
             
             <h3>Expertise Scarcity</h3>
             
             <p>
-              Mid-market companies cannot compete with enterprise salaries for AI talent. The solution isn't to build large internal teams, but to partner strategically with specialized firms that can accelerate implementation while transferring knowledge to existing staff.
+              Growing companies cannot compete with enterprise salaries for AI talent. The solution isn't to build large internal teams, but to partner strategically with specialized firms that can accelerate implementation while transferring knowledge to existing staff.
             </p>
             
             <h3>Integration Complexity</h3>
             
             <p>
-              AI systems must work with existing business applications—ERP, CRM, financial systems. Mid-market organizations often lack the integration expertise to connect AI capabilities with operational workflows. This is where purpose-built accelerators and pre-configured integrations become essential.
+              AI systems must work with existing business applications—ERP, CRM, financial systems. Growing organizations often lack the integration expertise to connect AI capabilities with operational workflows. This is where purpose-built accelerators and pre-configured integrations become essential.
             </p>
             
             <h3>Change Management</h3>
@@ -157,7 +157,7 @@ export default function MidMarketAIAccess() {
             <h2>The Path Forward</h2>
             
             <p>
-              Successful mid-market AI adoption follows a consistent pattern. Organizations that achieve the highest returns share several characteristics:
+              Successful AI adoption among growing companies follows a consistent pattern. Organizations that achieve the highest returns share several characteristics:
             </p>
             
             <p>
@@ -179,7 +179,7 @@ export default function MidMarketAIAccess() {
             <h2>Conclusion</h2>
             
             <p>
-              The AI playing field has leveled. Mid-market organizations no longer face insurmountable barriers to intelligent automation. The companies that recognize this shift—and act on it—will define the competitive landscape of the next decade.
+              The AI playing field has leveled. Growing organizations no longer face insurmountable barriers to intelligent automation. The companies that recognize this shift—and act on it—will define the competitive landscape of the next decade.
             </p>
             
             <p>

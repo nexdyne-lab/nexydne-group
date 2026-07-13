@@ -189,7 +189,7 @@ export default function SubscriptionPricingModels() {
                     Algorithmic Pricing for SMEs
                   </h4>
                   <p className="text-muted-foreground text-sm mt-2">
-                    Dynamic pricing technology is now accessible to mid-market companies.
+                    Dynamic pricing technology is now accessible to growing companies.
                   </p>
                   <div className="flex items-center text-primary font-medium text-sm mt-3 group-hover:translate-x-1 transition-transform">
                     Read Article <ArrowRight className="ml-1 w-3 h-3" />

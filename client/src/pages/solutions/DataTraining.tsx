@@ -59,7 +59,7 @@ export default function DataTraining() {
   const outcomes = [
     {
       stat: "120+",
-      label: "data literacy programs delivered across enterprise and mid-market clients",
+      label: "data literacy programs delivered across enterprise and growing companies",
     },
     {
       stat: "3.6x",

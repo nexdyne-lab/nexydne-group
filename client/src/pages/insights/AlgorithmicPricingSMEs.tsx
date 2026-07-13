@@ -41,7 +41,7 @@ export default function AlgorithmicPricingSMEs() {
           </h1>
           
           <p className="text-xl text-muted-foreground/50 font-light leading-relaxed">
-            Dynamic pricing technology was once the exclusive domain of tech giants. Today, accessible AI tools are democratizing yield management for mid-market companies.
+            Dynamic pricing technology was once the exclusive domain of tech giants. Today, accessible AI tools are democratizing yield management for growing companies.
           </p>
         </div>
       </section>

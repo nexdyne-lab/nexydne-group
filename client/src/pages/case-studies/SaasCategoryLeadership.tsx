@@ -115,7 +115,7 @@ export default function SaasCategoryLeadership() {
             <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                A B2B SaaS platform serving mid-market companies had built a successful business by being a fast follower in their category. They watched competitors introduce new features and capabilities, then quickly replicated them with competitive pricing. This strategy had generated steady growth and profitability, but leadership recognized they had hit a ceiling.
+                A B2B SaaS platform serving growing companies had built a successful business by being a fast follower in their category. They watched competitors introduce new features and capabilities, then quickly replicated them with competitive pricing. This strategy had generated steady growth and profitability, but leadership recognized they had hit a ceiling.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 The company's finance function was competent at tracking SaaS metrics like MRR, churn, and CAC, but lacked the strategic orientation to drive innovation and category leadership. Financial planning was reactive, focused on supporting the sales organization rather than enabling breakthrough product development.
@@ -129,7 +129,7 @@ export default function SaasCategoryLeadership() {
               </div>
               <div>
                 <div className="text-sm font-semibold text-primary mb-2">Company Size</div>
-                <div className="text-charcoal font-medium">Mid-Market</div>
+                <div className="text-charcoal font-medium">Growth-stage</div>
               </div>
               <div>
                 <div className="text-sm font-semibold text-primary mb-2">Service</div>

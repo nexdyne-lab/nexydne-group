@@ -78,7 +78,7 @@ export default function OurImpact() {
                   build their own forecasts and challenge assumptions we'd held for years."
                 </blockquote>
                 <figcaption className="mt-5 text-[14px] text-muted-foreground">
-                  <span className="font-semibold text-charcoal">Chief Financial Officer</span> · Mid-market SaaS company
+                  <span className="font-semibold text-charcoal">Chief Financial Officer</span> · Growth-stage SaaS company
                 </figcaption>
               </figure>
             </motion.div>
@@ -94,7 +94,7 @@ export default function OurImpact() {
             <h2 className="nx-h2 text-charcoal mt-4">Democratising advanced intelligence</h2>
             <p className="nx-lead text-muted-foreground mt-5">
               Sophisticated AI and analytics were historically reserved for the Fortune 500. We bring
-              enterprise-grade capability to growth-stage and mid-market organisations.
+              enterprise-grade capability to growth-stage and growing organisations.
             </p>
           </motion.div>
           <div className="grid md:grid-cols-3 gap-px bg-border border border-border">

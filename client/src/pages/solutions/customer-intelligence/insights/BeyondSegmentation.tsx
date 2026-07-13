@@ -217,7 +217,7 @@ export default function BeyondSegmentation() {
               <h2 className="text-3xl font-bold mt-12 mb-6">The Bottom Line</h2>
 
               <p>
-                Traditional segmentation served us well in an era of limited data and expensive personalization. But the world has changed. Customers expect to be understood as individuals, and the technology to deliver on that expectation is now accessible to mid-market companies.
+                Traditional segmentation served us well in an era of limited data and expensive personalization. But the world has changed. Customers expect to be understood as individuals, and the technology to deliver on that expectation is now accessible to growing companies.
               </p>
 
               <p>
@@ -299,7 +299,7 @@ export default function BeyondSegmentation() {
       <RelatedContent 
         items={[
           {
-            title: "The Churn Prediction Playbook for Mid-Market SaaS",
+            title: "The Churn Prediction Playbook for Growth-Stage SaaS",
             category: "Technology",
             link: "/solutions/data-driven-customer-intelligence/insights/churn-prediction-playbook",
             image: "/images/capabilities/cap-office-women.jpg"

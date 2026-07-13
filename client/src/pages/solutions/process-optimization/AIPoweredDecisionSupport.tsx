@@ -94,7 +94,7 @@ export default function AIPoweredDecisionSupport() {
           title:
             "Underwriting decision support lifts approval-quality consistency by 32 percent",
           description:
-            "A mid-market commercial lender embedded a calibrated classifier into the underwriter workflow as a recommendation plus explanation, not an automated decision. Decision consistency across underwriters improved 32 percent, time-per-deal dropped 18 percent, and the regulator-facing override review surface gave model risk a path to sign-off that pure-automation approaches did not.",
+            "A growing commercial lender embedded a calibrated classifier into the underwriter workflow as a recommendation plus explanation, not an automated decision. Decision consistency across underwriters improved 32 percent, time-per-deal dropped 18 percent, and the regulator-facing override review surface gave model risk a path to sign-off that pure-automation approaches did not.",
           link: "/cases/commercial-lending-decision-support",
         },
         {

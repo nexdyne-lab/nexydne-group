@@ -176,7 +176,7 @@ export default function MobileApps() {
             </h3>
             <div className="space-y-6">
               <p className="nx-lead text-charcoal/80 max-w-[60ch]">
-                For most mid-market companies, the mobile app is the highest-stakes
+                For most growing companies, the mobile app is the highest-stakes
                 surface in the customer experience. It's where churn shows up
                 first, where store ratings live forever, and where the gap between
                 a thoughtful product and a hurried one is most visible. The cost of

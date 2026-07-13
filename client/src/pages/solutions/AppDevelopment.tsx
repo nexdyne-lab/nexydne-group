@@ -59,7 +59,7 @@ export default function AppDevelopment() {
   const outcomes = [
     {
       stat: "120+",
-      label: "mobile and web apps shipped to production for mid-market clients",
+      label: "mobile and web apps shipped to production for growing companies",
     },
     {
       stat: "62%",

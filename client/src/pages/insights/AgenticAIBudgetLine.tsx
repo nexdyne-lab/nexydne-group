@@ -101,10 +101,10 @@ export default function AgenticAIBudgetLine() {
         management task, not a model upgrade.
       </p>
 
-      <h2>The mid-market advantage nobody talks about</h2>
+      <h2>The growth-stage advantage nobody talks about</h2>
 
       <p>
-        Mid-market firms hold an underrated edge here. They have fewer legacy approval layers to re-engineer,
+        Growing firms hold an underrated edge here. They have fewer legacy approval layers to re-engineer,
         shorter distances between the P&L owner and the process, and the ability to move one workflow to
         agent-first operation in a quarter rather than a fiscal year. The constraint is not capital — agent
         economics are consumption-based — it is governance capacity: knowing what to delegate, how to supervise it,

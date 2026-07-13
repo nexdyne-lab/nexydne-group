@@ -18,7 +18,7 @@ const insights = [
   },
   {
     id: "churn-prediction-playbook",
-    title: "The Churn Prediction Playbook for Mid-Market SaaS",
+    title: "The Churn Prediction Playbook for Growth-Stage SaaS",
     category: "Technology",
     description: "A practical guide to building and deploying churn prediction models that actually drive retention—from feature engineering to intervention automation.",
     readTime: "15 min read",
@@ -71,7 +71,7 @@ export default function CustomerIntelligenceInsights() {
     <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Customer Intelligence Insights" 
-        description="Expert perspectives on customer data, predictive analytics, and personalization strategies for mid-market companies."
+        description="Expert perspectives on customer data, predictive analytics, and personalization strategies for growing companies."
         canonical="/solutions/data-driven-customer-intelligence/insights"
       />
       <Navigation />
@@ -102,7 +102,7 @@ export default function CustomerIntelligenceInsights() {
             </h1>
             
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              Expert perspectives on customer data, predictive analytics, and personalization strategies for mid-market companies.
+              Expert perspectives on customer data, predictive analytics, and personalization strategies for growing companies.
             </p>
           </motion.div>
         </div>

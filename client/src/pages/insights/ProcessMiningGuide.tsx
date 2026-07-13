@@ -76,7 +76,7 @@ export default function ProcessMiningGuide() {
       <h3>Order-to-Cash Optimization</h3>
       
       <p>
-        A mid-market manufacturer used process mining to analyze their order-to-cash process. They discovered that 40% of orders required manual intervention due to pricing discrepancies—a problem invisible in their standard metrics. By addressing the root causes, they reduced order processing time by 35% and eliminated $2M in annual rework costs.
+        A growing manufacturer used process mining to analyze their order-to-cash process. They discovered that 40% of orders required manual intervention due to pricing discrepancies—a problem invisible in their standard metrics. By addressing the root causes, they reduced order processing time by 35% and eliminated $2M in annual rework costs.
       </p>
 
       <h3>Customer Service Improvement</h3>

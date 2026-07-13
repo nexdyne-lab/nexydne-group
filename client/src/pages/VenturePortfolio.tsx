@@ -25,7 +25,7 @@ export default function VenturePortfolio() {
       industry: "Retail & IoT",
       title: "SmartStock",
       slug: "smart-stock",
-      description: "An IoT-enabled inventory management system for a mid-market retail chain, utilizing shelf sensors to automate replenishment and reduce stockouts.",
+      description: "An IoT-enabled inventory management system for a growing retail chain, utilizing shelf sensors to automate replenishment and reduce stockouts.",
       timeline: "5 Months",
       timelineLabel: "Prototype to Rollout",
       outcome: "35%",

@@ -8,7 +8,7 @@ export function SaasChurnReduction() {
       title="38% Reduction in Annual Churn Rate"
       subtitle="A 280-employee B2B SaaS platform with $28M ARR builds predictive churn models to identify at-risk accounts 60 days before cancellation, retaining $890K in ARR and improving customer success team efficiency 3.2x."
       heroImage="/images/capabilities/cap-mobile-woman.jpg"
-      challenge={`A B2B SaaS platform serving mid-market companies was experiencing annual churn rates of 18%—significantly above the industry benchmark of 10-12%. With $28M in ARR and aggressive growth targets, the company was losing ground: for every two new customers acquired, one was walking out the door.
+      challenge={`A B2B SaaS platform serving growing companies was experiencing annual churn rates of 18%—significantly above the industry benchmark of 10-12%. With $28M in ARR and aggressive growth targets, the company was losing ground: for every two new customers acquired, one was walking out the door.
 
 The customer success team was operating reactively, only engaging when customers explicitly signaled dissatisfaction or requested cancellation. By then, it was often too late. The team had no visibility into which accounts were at risk, no early warning system, and no data-driven playbooks for intervention.
 

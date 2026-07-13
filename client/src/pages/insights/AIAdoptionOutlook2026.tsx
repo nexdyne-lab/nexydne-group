@@ -178,7 +178,7 @@ export default function AIAdoptionOutlook2026() {
       <p>
         In 2026, AI adoption is table stakes—nearly everyone has it<Cite n={1} />. Advantage will accrue to the
         organisations that govern it: that invest in responsible AI, assign clear accountability, rebuild their
-        operating models, and measure to the bottom line. For mid-market and growth-stage companies, this is genuinely
+        operating models, and measure to the bottom line. For growing companies, this is genuinely
         good news. You don't need the largest AI budget to win. You need the discipline to govern first—and that is
         exactly the work NexDyne exists to do.
       </p>

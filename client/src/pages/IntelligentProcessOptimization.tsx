@@ -181,7 +181,7 @@ export default function IntelligentProcessOptimization() {
       <SolutionHero
         eyebrow="SOLUTION · INTELLIGENT PROCESS OPTIMIZATION"
         title="Intelligent Process Optimization"
-        subtitle="Automate complexity. Accelerate execution. We help mid-market companies break through operational ceilings with intelligent, adaptive systems built for how work actually gets done."
+        subtitle="Automate complexity. Accelerate execution. We help growing companies break through operational ceilings with intelligent, adaptive systems built for how work actually gets done."
         heroImage="/images/hero-process-mining.jpg"
         heroFocal="65% 45%"
         containerClassName="min-h-[64vh]"
@@ -207,7 +207,7 @@ export default function IntelligentProcessOptimization() {
               </h2>
               <div className="space-y-6 max-w-[60ch]">
                 <p className="text-[1.05rem] md:text-[1.15rem] text-black/80 leading-[1.7]">
-                  For mid-market companies, growth carries a hidden cost: the
+                  For growing companies, growth carries a hidden cost: the
                   systems that carried you to $10M quietly become the bottleneck
                   at $50M. Handoffs multiply, decisions slow, and the
                   organization spends its energy fighting its own operations

@@ -177,7 +177,7 @@ export default function StrategyFinanceInsight() {
       </p>
 
       <p>
-        For mid-market and growth-stage companies, the opportunity is even sharper: the same caliber of AI-enabled
+        For growing companies, the opportunity is even sharper: the same caliber of AI-enabled
         finance capability once reserved for the largest institutions is now within reach<Cite n={5} /><Cite n={6} />—
         provided it is governed with the discipline the stakes demand.
       </p>

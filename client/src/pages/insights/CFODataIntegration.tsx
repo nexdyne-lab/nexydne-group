@@ -87,7 +87,7 @@ export default function CFODataIntegration() {
                 <div className="flex-shrink-0"><div className="w-12 h-12 bg-primary text-charcoal rounded-full flex items-center justify-center"><Database className="w-6 h-6" /></div></div>
                 <div>
                   <h3 className="text-xl font-bold text-charcoal mb-2">Cloud Data Platform</h3>
-                  <p className="text-charcoal/70 leading-relaxed">Modern cloud platforms like Snowflake or Databricks offer scalable, flexible data integration with built-in analytics capabilities. Increasingly the preferred approach for mid-market organizations.</p>
+                  <p className="text-charcoal/70 leading-relaxed">Modern cloud platforms like Snowflake or Databricks offer scalable, flexible data integration with built-in analytics capabilities. Increasingly the preferred approach for growing organizations.</p>
                 </div>
               </div>
             </div>

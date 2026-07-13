@@ -247,7 +247,7 @@ export default function EcommercePlatforms() {
                 <h3 className="text-2xl font-bold text-charcoal">Shopware</h3>
               </div>
               <p className="text-muted-foreground mb-4">
-                Open-source e-commerce platform with powerful features for B2C and B2B. Combines flexibility with enterprise-grade capabilities for mid-market retailers.
+                Open-source e-commerce platform with powerful features for B2C and B2B. Combines flexibility with enterprise-grade capabilities for growing retailers.
               </p>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">

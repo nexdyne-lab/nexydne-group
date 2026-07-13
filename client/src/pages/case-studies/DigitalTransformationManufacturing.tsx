@@ -15,7 +15,7 @@ export default function DigitalTransformationManufacturing() {
     <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Digital Transformation in Precision Manufacturing | Case Study | NexDyne Technologies" 
-        description="How a mid-market precision components manufacturer transformed operations through digital modernization, achieving 35% efficiency gains and positioning for sustainable growth."
+        description="How a growing precision components manufacturer transformed operations through digital modernization, achieving 35% efficiency gains and positioning for sustainable growth."
         canonical="/case-studies/digital-transformation-manufacturing"
       />
       <Navigation />
@@ -40,14 +40,14 @@ export default function DigitalTransformationManufacturing() {
               Digital Transformation in <span className="text-primary">Precision Manufacturing</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mb-8">
-              How a mid-market precision components manufacturer transformed operations through digital modernization, achieving 35% efficiency gains and positioning for sustainable growth.
+              How a growing precision components manufacturer transformed operations through digital modernization, achieving 35% efficiency gains and positioning for sustainable growth.
             </p>
             
             {/* PDF Download Button */}
             <CaseStudyPDFButton
               title="Digital Transformation in Precision Manufacturing"
               industry="Business Transformation"
-              summary="How a mid-market precision components manufacturer transformed operations through digital modernization, achieving 35% efficiency gains and positioning for sustainable growth."
+              summary="How a growing precision components manufacturer transformed operations through digital modernization, achieving 35% efficiency gains and positioning for sustainable growth."
               challenge="See full case study for detailed challenge description."
               solution="See full case study for detailed solution description."
               results={[
@@ -303,7 +303,7 @@ export default function DigitalTransformationManufacturing() {
                 <h3 className="text-xl font-bold text-charcoal mb-2">Technology Platform Modernization</h3>
                 <p className="text-sm text-primary mb-4">Months 4-10</p>
                 <p className="text-charcoal/70 leading-relaxed mb-4">
-                  We led the selection and implementation of a modern cloud-based ERP system designed for mid-market manufacturers. The implementation followed an agile methodology with iterative releases, allowing the organization to realize value progressively while managing change effectively.
+                  We led the selection and implementation of a modern cloud-based ERP system designed for growing manufacturers. The implementation followed an agile methodology with iterative releases, allowing the organization to realize value progressively while managing change effectively.
                 </p>
                 <ul className="space-y-2 text-charcoal/70">
                   <li className="flex items-start gap-2">

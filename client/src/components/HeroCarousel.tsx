@@ -31,7 +31,7 @@ const carouselData: CarouselCard[] = [
     type: "CASE STUDY",
     date: "November 2025",
     title: "Scaling Operations with Intelligent Automation",
-    description: "A mid-market logistics company achieved 40% efficiency gains by implementing our intelligent process optimization framework across their supply chain.",
+    description: "A growing logistics company achieved 40% efficiency gains by implementing our intelligent process optimization framework across their supply chain.",
     image: "/images/adoption-abstract.jpg",
     link: "/case-studies"
   },

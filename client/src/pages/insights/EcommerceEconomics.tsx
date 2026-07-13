@@ -274,7 +274,7 @@ export default function EcommerceEconomics() {
 
                 <h2 className="text-2xl font-bold text-charcoal mt-12 mb-6">Fulfillment & Operations</h2>
                 <p className="text-charcoal/70 leading-relaxed mb-6">
-                  Fulfillment is often the hidden killer of D2C profitability. Customers expect Amazon-level speed and service, but few mid-market companies can match that infrastructure. Your options:
+                  Fulfillment is often the hidden killer of D2C profitability. Customers expect Amazon-level speed and service, but few growing companies can match that infrastructure. Your options:
                 </p>
 
                 <div className="overflow-x-auto my-8">
@@ -439,8 +439,8 @@ export default function EcommerceEconomics() {
         items={[
           {
             type: "Article",
-            title: "The digital growth playbook for mid-market companies",
-            description: "How leading mid-market companies are building digital channels that compete with well-funded startups.",
+            title: "The digital growth playbook for growing companies",
+            description: "How leading growing companies are building digital channels that compete with well-funded startups.",
             image: "/images/capabilities/cap-retail-data.jpg",
             link: "/insights/digital-growth-playbook"
           },

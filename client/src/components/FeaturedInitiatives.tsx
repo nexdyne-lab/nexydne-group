@@ -56,7 +56,7 @@ export function FeaturedInitiatives() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl leading-relaxed"
               >
-                The next generation of operational excellence is being built today. Through strategic research, open collaboration, and hands-on learning, we're equipping mid-market companies with the intelligence and tools they need to compete at enterprise scale.
+                The next generation of operational excellence is being built today. Through strategic research, open collaboration, and hands-on learning, we're equipping growing companies with the intelligence and tools they need to compete at enterprise scale.
               </motion.p>
             </div>
           </div>

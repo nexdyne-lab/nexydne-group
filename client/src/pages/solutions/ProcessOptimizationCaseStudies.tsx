@@ -30,7 +30,7 @@ const caseStudies: CaseStudy[] = [
   {
     id: "logistics-shipment-automation",
     title: "Regional logistics firm cuts shipment processing time by 78%",
-    client: "Mid-Market Logistics Provider",
+    client: "Growing Logistics Provider",
     industry: "Logistics & Distribution",
     challenge: "A 180-employee logistics company was drowning in manual shipment coordination, with teams spending 6+ hours daily on data entry, carrier communication, and exception handling.",
     solution: "NexDyne deployed an intelligent automation platform combining RPA for data extraction, AI for carrier selection optimization, and workflow orchestration for exception management.",
@@ -165,7 +165,7 @@ export default function ProcessOptimizationCaseStudies() {
     <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Process Optimization Case Studies | NexDyne Technologies" 
-        description="Real results from intelligent automation implementations. See how mid-market companies have transformed their operations with NexDyne."
+        description="Real results from intelligent automation implementations. See how growing companies have transformed their operations with NexDyne."
         canonical="/solutions/intelligent-process-optimization/case-studies"
       />
       <Navigation />
@@ -202,7 +202,7 @@ export default function ProcessOptimizationCaseStudies() {
               <span className="text-primary">intelligent automation</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl">
-              See how mid-market companies have transformed manual operations into autonomous systems, achieving measurable improvements in speed, accuracy, and cost efficiency.
+              See how growing companies have transformed manual operations into autonomous systems, achieving measurable improvements in speed, accuracy, and cost efficiency.
             </p>
           </motion.div>
         </div>

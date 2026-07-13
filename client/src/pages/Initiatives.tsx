@@ -7,10 +7,10 @@ import { Link } from "wouter";
 
 const initiatives = [
   {
-    id: "mid-market-ai",
-    label: "MID-MARKET AI ACCESS PROGRAM",
-    title: "Expanding Access to Enterprise-Grade AI for America's Mid-Market",
-    description: "NexDyne is leading a national effort to make advanced AI, analytics, and automation accessible to mid-market companies traditionally excluded from enterprise technology.",
+    id: "ai-for-growth",
+    label: "THE AI ACCESS PROGRAM",
+    title: "Expanding Access to Enterprise-Grade AI for America's Growing Companies",
+    description: "NexDyne is leading a national effort to make advanced AI, analytics, and automation accessible to growing companies traditionally excluded from enterprise technology.",
     image: "/images/initiatives/ai-for-growth.png",
     link: "/initiatives/ai-access"
   },
@@ -18,7 +18,7 @@ const initiatives = [
     id: "intelligence-commons",
     label: "NEXDYNE INTELLIGENCE COMMONS",
     title: "Democratizing Business Intelligence for Growing Companies",
-    description: "A free-to-start AI-powered intelligence platform designed to give mid-market leaders access to market signals, competitive benchmarking, and growth scenario modeling.",
+    description: "A free-to-start AI-powered intelligence platform designed to give growth-stage leaders access to market signals, competitive benchmarking, and growth scenario modeling.",
     image: "/images/initiatives/analytics-dashboard.jpg",
     link: "/initiatives/intelligence-commons"
   },
@@ -37,7 +37,7 @@ export default function Initiatives() {
     <div className="min-h-screen bg-white">
       <SEO 
         title="Initiatives" 
-        description="NexDyne initiatives building intelligent, competitive, and resilient mid-market businesses across the United States."
+        description="NexDyne initiatives building intelligent, competitive, and resilient growing businesses across the United States."
       />
       <Navigation />
       
@@ -54,7 +54,7 @@ export default function Initiatives() {
               NEXDYNE INITIATIVES
             </span>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-charcoal leading-tight mb-3">
-              Building intelligent, competitive, and resilient mid-market businesses across the United States
+              Building intelligent, competitive, and resilient growing businesses across the United States
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-3xl">
               Programs that advance entrepreneurship, operational excellence, and regional economic competitiveness

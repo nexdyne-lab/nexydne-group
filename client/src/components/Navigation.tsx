@@ -118,7 +118,7 @@ const MENU: Record<Exclude<NavItem, null>, MenuConfig> = {
     links: industryLinks,
     feature: {
       eyebrow: "Spotlight",
-      title: "Winning with governed AI in the mid-market",
+      title: "Winning with governed AI at growing companies",
       desc: "A practical guide to scaling human judgment alongside automation.",
       href: "/insights/practical-ai-guide",
       cta: "Read the guide",

@@ -17,9 +17,9 @@ export function BusinessBuildingInitiatives() {
     image: string;
   }> = [
     {
-      headline: "Mid-Market AI Access Program",
-      title: "Expanding Access to Enterprise-Grade AI for America's Mid-Market",
-      description: "NexDyne is leading a national effort to make advanced AI, analytics, and automation accessible to mid-market companies traditionally excluded from enterprise technology.",
+      headline: "The AI Access Program",
+      title: "Expanding Access to Enterprise-Grade AI for America's Growing Companies",
+      description: "NexDyne is leading a national effort to make advanced AI, analytics, and automation accessible to growing companies traditionally excluded from enterprise technology.",
       delay: 0.1,
       link: "/initiatives/ai-for-growth",
       image: "/mid-market-ai-developers.png",
@@ -27,7 +27,7 @@ export function BusinessBuildingInitiatives() {
     {
       headline: "NexDyne Consulting Group Commons",
       title: "Democratizing Business Intelligence for Growing Companies",
-      description: "A free-to-start AI-powered intelligence platform designed to give mid-market leaders access to market signals, competitive benchmarking, and growth scenario modeling.",
+      description: "A free-to-start AI-powered intelligence platform designed to give growth-stage leaders access to market signals, competitive benchmarking, and growth scenario modeling.",
       delay: 0.2,
       link: "/initiatives/intelligence-commons",
       image: "/hero-intelligence.png",
@@ -82,7 +82,7 @@ export function BusinessBuildingInitiatives() {
           </span>
 
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight leading-[1.2] sm:leading-[1.15] text-charcoal mb-4 sm:mb-6 max-w-4xl mx-auto px-2 sm:px-0">
-            Building intelligent, competitive, and resilient mid-market businesses across the United States
+            Building intelligent, competitive, and resilient growing businesses across the United States
           </h2>
           
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">

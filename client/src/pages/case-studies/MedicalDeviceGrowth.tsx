@@ -15,7 +15,7 @@ export default function MedicalDeviceGrowth() {
     <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="Identifying and Capturing Growth Opportunities | Case Study | NexDyne Technologies" 
-        description="How NexDyne's proprietary financial modeling framework helped a mid-market medical device manufacturer identify strategic growth themes and prioritize investment channels."
+        description="How NexDyne's proprietary financial modeling framework helped a growing medical device manufacturer identify strategic growth themes and prioritize investment channels."
         canonical="/case-studies/medical-device-growth"
       />
       <Navigation />
@@ -40,14 +40,14 @@ export default function MedicalDeviceGrowth() {
               Identifying and Capturing <span className="text-primary">Growth Opportunities</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mb-8">
-              How NexDyne's proprietary financial modeling framework helped a mid-market medical device manufacturer identify strategic growth themes and prioritize investment channels.
+              How NexDyne's proprietary financial modeling framework helped a growing medical device manufacturer identify strategic growth themes and prioritize investment channels.
             </p>
             
             {/* PDF Download Button */}
             <CaseStudyPDFButton
               title="Identifying and Capturing Growth Opportunities"
               industry="Healthcare Manufacturing"
-              summary="How NexDyne's proprietary financial modeling framework helped a mid-market medical device manufacturer identify strategic growth themes and prioritize investment channels."
+              summary="How NexDyne's proprietary financial modeling framework helped a growing medical device manufacturer identify strategic growth themes and prioritize investment channels."
               challenge="See full case study for detailed challenge description."
               solution="See full case study for detailed solution description."
               results={[
@@ -115,7 +115,7 @@ export default function MedicalDeviceGrowth() {
             <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                A mid-market medical device manufacturer with a strong product portfolio and established market presence faced a critical strategic challenge. While the company had achieved stable revenue growth, leadership recognized they were operating reactively rather than strategically. They lacked a systematic framework for evaluating growth opportunities and prioritizing capital allocation across potential investment channels.
+                A growing medical device manufacturer with a strong product portfolio and established market presence faced a critical strategic challenge. While the company had achieved stable revenue growth, leadership recognized they were operating reactively rather than strategically. They lacked a systematic framework for evaluating growth opportunities and prioritizing capital allocation across potential investment channels.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 The company's existing finance function was capable of historical reporting and budgeting but lacked the forward-looking analytical capabilities needed to support strategic decision-making. This gap became increasingly problematic as the medical device market evolved rapidly, with new technologies, regulatory changes, and competitive dynamics creating both opportunities and risks.
@@ -129,7 +129,7 @@ export default function MedicalDeviceGrowth() {
               </div>
               <div>
                 <div className="text-sm font-semibold text-primary mb-2">Company Size</div>
-                <div className="text-charcoal font-medium">Mid-Market</div>
+                <div className="text-charcoal font-medium">Growth-stage</div>
               </div>
               <div>
                 <div className="text-sm font-semibold text-primary mb-2">Service</div>
@@ -207,7 +207,7 @@ export default function MedicalDeviceGrowth() {
             </blockquote>
             <div className="text-base text-charcoal">
               <div className="font-semibold">— Chief Executive Officer</div>
-              <div className="text-muted-foreground">Mid-Market Medical Device Manufacturer</div>
+              <div className="text-muted-foreground">Growing Medical-Device Manufacturer</div>
             </div>
           </motion.div>
         </div>
@@ -463,7 +463,7 @@ export default function MedicalDeviceGrowth() {
             </blockquote>
             <div className="text-base text-charcoal">
               <div className="font-semibold">— Chief Executive Officer</div>
-              <div className="text-muted-foreground">Mid-Market Medical Device Manufacturer</div>
+              <div className="text-muted-foreground">Growing Medical-Device Manufacturer</div>
             </div>
           </motion.div>
         </div>

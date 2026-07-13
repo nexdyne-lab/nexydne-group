@@ -3,7 +3,7 @@ import InsightArticle from "@/components/InsightArticle";
 export default function ScalingOperations() {
   const relatedInsights = [
     {
-      title: "How Mid-Market Companies Are Winning with AI",
+      title: "How Growing Companies Are Winning with AI",
       category: "Featured",
       link: "/insights/practical-ai-guide",
       image: "/images/insight-ai-midmarket.jpg"
@@ -26,14 +26,14 @@ export default function ScalingOperations() {
     <InsightArticle
       category="Operations"
       title="Scaling Operations Without Breaking the Bank"
-      subtitle="Cost-effective strategies for mid-market companies looking to grow efficiently."
+      subtitle="Cost-effective strategies for growing companies looking to grow efficiently."
       heroImage="/images/insight-scaling-ops.jpg"
       readTime="7 min"
       publishDate="January 5, 2026"
       relatedInsights={relatedInsights}
     >
       <p>
-        Growth is the goal of every ambitious mid-market company, but scaling operations often feels like a catch-22: you need infrastructure to grow, but you need growth to afford the infrastructure. The good news? Modern approaches to operational scaling have fundamentally changed this equation, making it possible to grow efficiently without massive upfront investments.
+        Growth is the goal of every ambitious growing company, but scaling operations often feels like a catch-22: you need infrastructure to grow, but you need growth to afford the infrastructure. The good news? Modern approaches to operational scaling have fundamentally changed this equation, making it possible to grow efficiently without massive upfront investments.
       </p>
 
       <h2>The New Economics of Scaling</h2>
@@ -43,11 +43,11 @@ export default function ScalingOperations() {
       </p>
 
       <blockquote>
-        "The most successful mid-market companies don't scale by adding headcount proportionally to revenue. They scale by making each team member exponentially more productive."
+        "The most successful growing companies don't scale by adding headcount proportionally to revenue. They scale by making each team member exponentially more productive."
       </blockquote>
 
       <p>
-        This shift has profound implications for mid-market companies. Instead of choosing between under-investing (and missing growth opportunities) or over-investing (and risking financial strain), you can now match operational capacity precisely to actual demand.
+        This shift has profound implications for growing companies. Instead of choosing between under-investing (and missing growth opportunities) or over-investing (and risking financial strain), you can now match operational capacity precisely to actual demand.
       </p>
 
       <h2>Strategy 1: Automate Before You Hire</h2>
@@ -160,7 +160,7 @@ export default function ScalingOperations() {
       <h2>The Path Forward</h2>
 
       <p>
-        Scaling efficiently isn't about doing more with less—it's about doing more with the same. By automating routine work, embracing variable costs, standardizing processes, integrating systems, and building for scale, mid-market companies can grow revenue faster than costs and build sustainable competitive advantages.
+        Scaling efficiently isn't about doing more with less—it's about doing more with the same. By automating routine work, embracing variable costs, standardizing processes, integrating systems, and building for scale, growing companies can grow revenue faster than costs and build sustainable competitive advantages.
       </p>
 
       <p>

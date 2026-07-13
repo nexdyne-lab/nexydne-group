@@ -108,7 +108,7 @@ export default function PitchDeckDesign() {
             </h2>
             
             <p className="text-lg text-charcoal/80 leading-relaxed mb-6">
-              Your problem slide is the foundation of your entire pitch. Weak problem slides lead to weak pitches. Avoid generic statements like "businesses struggle with inefficiency." Instead, quantify the problem with specific data: "Mid-market logistics companies lose $2.3M annually to manual shipment coordination errors, affecting 23% of all orders."
+              Your problem slide is the foundation of your entire pitch. Weak problem slides lead to weak pitches. Avoid generic statements like "businesses struggle with inefficiency." Instead, quantify the problem with specific data: "Growing logistics companies lose $2.3M annually to manual shipment coordination errors, affecting 23% of all orders."
             </p>
 
             <p className="text-lg text-charcoal/80 leading-relaxed mb-6">

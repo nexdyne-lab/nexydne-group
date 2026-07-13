@@ -112,7 +112,7 @@ export default function EnterpriseIntegrationPlaybook() {
               </p>
 
               <p className="text-charcoal/70 leading-relaxed mb-6">
-                This playbook distills our experience from 200+ integration projects into actionable guidance for mid-market enterprises navigating this complexity.
+                This playbook distills our experience from 200+ integration projects into actionable guidance for growing enterprises navigating this complexity.
               </p>
 
               <h2 className="text-3xl font-bold mt-12 mb-6">The integration landscape has changed</h2>
@@ -122,7 +122,7 @@ export default function EnterpriseIntegrationPlaybook() {
               </p>
 
               <ul className="space-y-3 text-charcoal/70 mb-8">
-                <li>Average mid-market company uses 200+ SaaS applications</li>
+                <li>Average growing company uses 200+ SaaS applications</li>
                 <li>Real-time integration requirements have replaced batch processing</li>
                 <li>APIs have become the primary integration mechanism</li>
                 <li>Data volumes have grown 10-100x in the past decade</li>

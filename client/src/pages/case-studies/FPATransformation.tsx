@@ -15,7 +15,7 @@ export default function FPATransformation() {
     <div className="min-h-screen bg-background text-charcoal selection:bg-primary selection:text-white">
       <SEO 
         title="FP&A Transformation | Case Study | NexDyne Technologies" 
-        description="How we helped a mid-market manufacturer transform their financial planning and analysis function, reducing close time by 60% and improving forecast accuracy."
+        description="How we helped a growing manufacturer transform their financial planning and analysis function, reducing close time by 60% and improving forecast accuracy."
         canonical="/case-studies/fpa-transformation"
       />
       <Navigation />
@@ -40,7 +40,7 @@ export default function FPATransformation() {
               FP&A transformation delivers <span className="text-primary">60%</span> faster close
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mb-8">
-              How we helped a mid-market manufacturer modernize their financial planning and analysis function, dramatically reducing close time while improving forecast accuracy and strategic insight.
+              How we helped a growing manufacturer modernize their financial planning and analysis function, dramatically reducing close time while improving forecast accuracy and strategic insight.
             </p>
             
             {/* PDF Download Button */}
@@ -48,7 +48,7 @@ export default function FPATransformation() {
               title="FP&A transformation delivers 60% faster close"
               industry="Manufacturing"
               capability="Financial Planning & Analysis"
-              summary="How we helped a mid-market manufacturer modernize their financial planning and analysis function, dramatically reducing close time while improving forecast accuracy and strategic insight."
+              summary="How we helped a growing manufacturer modernize their financial planning and analysis function, dramatically reducing close time while improving forecast accuracy and strategic insight."
               challenge="Each of the three facilities operated on a different ERP system—a legacy of the company's acquisition-driven growth. The finance team spent days each month manually extracting data from each system, reconciling differences in chart of accounts structures, and consolidating results into Excel spreadsheets. Errors were common and difficult to trace. The monthly close took 15 business days, meaning leadership didn't see financial results until nearly three weeks after month-end."
               solution="We implemented a Data Fabric architecture using a virtualization layer that connected disparate sources without requiring a massive physical migration. We built a unified financial dashboard that aggregated data in real-time. The system used modern cloud technologies to ensure scalability and strict access controls for compliance."
               results={[
@@ -134,7 +134,7 @@ export default function FPATransformation() {
             <h2 className="text-3xl font-bold text-charcoal mb-6">Company Overview</h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-charcoal/80 leading-relaxed mb-4">
-                Our client is a mid-market industrial equipment manufacturer with $85M in annual revenue and operations across three facilities. The company had grown rapidly through acquisition but was struggling with fragmented financial systems and manual processes that made it difficult to get a clear picture of performance.
+                Our client is a growing industrial equipment manufacturer with $85M in annual revenue and operations across three facilities. The company had grown rapidly through acquisition but was struggling with fragmented financial systems and manual processes that made it difficult to get a clear picture of performance.
               </p>
               <p className="text-charcoal/70 leading-relaxed">
                 The finance team of eight was spending the majority of their time on data collection and reconciliation rather than analysis and strategic support. Leadership was frustrated by the lack of timely, accurate financial information to guide decision-making.

@@ -126,7 +126,7 @@ export default function CustomerIntelligenceCaseStudies() {
             </h1>
             
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              Explore how mid-market companies have transformed customer understanding into measurable business outcomes with NEXDYNE's data-driven approach.
+              Explore how growing companies have transformed customer understanding into measurable business outcomes with NEXDYNE's data-driven approach.
             </p>
           </motion.div>
         </div>

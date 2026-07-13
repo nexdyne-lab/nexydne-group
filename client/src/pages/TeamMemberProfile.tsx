@@ -46,7 +46,7 @@ const teamMembers = [
     ],
     clientWork: [
       {
-        client: "Mid-Market Law Firm",
+        client: "Growing Law Firm",
         industry: "Legal Services",
         challenge: "Manual document review processes consuming 40% of billable hours",
         solution: "Implemented AI-powered document analysis and contract review automation",
@@ -74,10 +74,10 @@ const teamMembers = [
     title: "Senior Partner",
     location: "San Francisco",
     image: "/images/capabilities/cap-colleagues.jpg",
-    specialization: "Specializes in cloud migration strategies and infrastructure optimization for mid-market technology companies",
+    specialization: "Specializes in cloud migration strategies and infrastructure optimization for growing technology companies",
     expertise: ["Cloud & Infrastructure", "DevOps & Automation", "System Architecture"],
     industries: ["Technology", "Financial Services", "SaaS"],
-    bio: "Specializes in cloud migration strategies and infrastructure optimization for mid-market technology companies",
+    bio: "Specializes in cloud migration strategies and infrastructure optimization for growing technology companies",
     fullBio: "James's work focuses on cloud infrastructure transformations that enable scalability, reliability, and cost efficiency. He brings deep technical expertise combined with strategic business acumen to help organizations maximize their cloud investments and build modern, resilient technology foundations.\n\nIn the cloud infrastructure space, James's recent projects include architecting a multi-cloud strategy for a SaaS company that reduced hosting costs by 42 percent while improving global latency by 60 percent, designing a containerized microservices architecture for a fintech startup that enabled them to scale from 50,000 to 2 million users without infrastructure bottlenecks, and implementing a comprehensive disaster recovery and business continuity solution for a healthcare technology provider that achieved 99.99 percent uptime.\n\nJames's recent client work in infrastructure optimization includes helping a media streaming company redesign their content delivery network to handle 10x traffic spikes during peak events, as well as advising an e-commerce platform on implementing auto-scaling infrastructure that reduced server costs by 55 percent during off-peak periods.\n\nBefore joining NexDyne, James was a principal cloud architect at Google Cloud, where he worked with enterprise customers on large-scale cloud migrations. He holds a master's degree in computer science from Stanford University and is a certified solutions architect for AWS, Azure, and Google Cloud.",
     publications: [
       {
@@ -223,7 +223,7 @@ const teamMembers = [
     expertise: ["Natural Language Processing", "Machine Learning", "Intelligent Automation"],
     industries: ["Technology", "Financial Services", "Healthcare"],
     bio: "Jennifer leads NexDyne's AI and machine learning practice, helping organizations leverage natural language processing and intelligent automation to transform operations.",
-    fullBio: "Jennifer Park is a leading AI researcher and practitioner with expertise in natural language processing, machine learning, and computer vision. Before joining NexDyne, she was a senior research scientist at a major tech company, where she developed production ML systems serving millions of users. Jennifer's work focuses on making advanced AI accessible and practical for mid-market companies. She holds a PhD in Computer Science from Stanford University, where her dissertation on transfer learning won the ACM SIGKDD Dissertation Award.",
+    fullBio: "Jennifer Park is a leading AI researcher and practitioner with expertise in natural language processing, machine learning, and computer vision. Before joining NexDyne, she was a senior research scientist at a major tech company, where she developed production ML systems serving millions of users. Jennifer's work focuses on making advanced AI accessible and practical for growing companies. She holds a PhD in Computer Science from Stanford University, where her dissertation on transfer learning won the ACM SIGKDD Dissertation Award.",
     publications: [
       {
         title: "Practical NLP for Business Applications",
@@ -277,7 +277,7 @@ const teamMembers = [
     expertise: ["Digital Transformation", "Change Management", "Process Optimization"],
     industries: ["Manufacturing", "Logistics", "Professional Services"],
     bio: "Michael specializes in helping mid-sized businesses navigate digital transformation journeys. With expertise in change management and process optimization, he ensures that technology implementations deliver lasting business value.",
-    fullBio: "Michael Torres combines strategic thinking with hands-on implementation expertise to drive successful digital transformations. With a background in industrial engineering and organizational psychology, he understands both the technical and human dimensions of change. Michael has led transformation initiatives for over 40 mid-market companies, consistently delivering projects on time and achieving adoption rates above 90%. He is a certified Project Management Professional (PMP) and holds an MBA from the University of Chicago Booth School of Business.",
+    fullBio: "Michael Torres combines strategic thinking with hands-on implementation expertise to drive successful digital transformations. With a background in industrial engineering and organizational psychology, he understands both the technical and human dimensions of change. Michael has led transformation initiatives for over 40 growing companies, consistently delivering projects on time and achieving adoption rates above 90%. He is a certified Project Management Professional (PMP) and holds an MBA from the University of Chicago Booth School of Business.",
     publications: [
       {
         title: "Change Management in Digital Transformation",
@@ -286,7 +286,7 @@ const teamMembers = [
         description: "Framework for managing organizational change during technology implementations."
       },
       {
-        title: "The Mid-Market Advantage: Agility in Transformation",
+        title: "The Growth-Stage Advantage: Agility in Transformation",
         type: "Article",
         year: "2023",
         description: "Published in McKinsey Quarterly, exploring how mid-sized firms can outpace larger competitors."

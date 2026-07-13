@@ -48,7 +48,7 @@ export default function IntelligentProcessOptimizationNew() {
           
           <div className="prose prose-xl max-w-none text-charcoal/80 leading-relaxed space-y-6">
             <p>
-              Mid-market companies face a critical operational paradox: as they grow, manual processes that once worked become crushing bottlenecks. Teams spend hours on repetitive tasks—data entry, document processing, report generation, approval workflows—that drain productivity and delay decision-making.
+              Growing companies face a critical operational paradox: as they grow, manual processes that once worked become crushing bottlenecks. Teams spend hours on repetitive tasks—data entry, document processing, report generation, approval workflows—that drain productivity and delay decision-making.
             </p>
             <p>
               The cost is staggering. Every manual handoff introduces errors. Every approval queue creates delays. Every spreadsheet-driven process limits scalability. Your best talent wastes time on routine work instead of strategic initiatives, and operational friction prevents you from capturing market opportunities at speed.

@@ -75,7 +75,7 @@ export default function BlogAIAutomation() {
                   </p>
                 </div>
 
-                <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Three automation trends reshaping mid-market businesses</h2>
+                <h2 className="text-3xl font-bold text-charcoal mt-12 mb-6">Three automation trends reshaping growing businesses</h2>
 
                 <h3 className="text-2xl font-semibold text-charcoal mt-8 mb-4">1. Document intelligence is becoming table stakes</h3>
                 <p className="text-charcoal/80 leading-relaxed">
@@ -126,7 +126,7 @@ export default function BlogAIAutomation() {
                   </div>
                 </div>
                 <p className="text-sm text-charcoal/80 leading-relaxed">
-                  Sarah leads NexDyne's automation practice, specializing in intelligent process automation for professional services and financial services firms. She has helped over 50 mid-market companies deploy automation solutions that deliver measurable ROI.
+                  Sarah leads NexDyne's automation practice, specializing in intelligent process automation for professional services and financial services firms. She has helped over 50 growing companies deploy automation solutions that deliver measurable ROI.
                 </p>
               </div>
 

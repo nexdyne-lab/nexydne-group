@@ -279,7 +279,7 @@ export default function ChangeManagementAISuccess() {
                   <div className="p-6">
                     <span className="text-xs font-semibold text-primary uppercase tracking-wider">Report</span>
                     <h3 className="text-lg font-semibold text-charcoal mt-2 group-hover:text-primary transition-colors">
-                      Mid-Market AI Access: How growing businesses can compete with enterprise technology
+                      AI Access: How growing businesses can compete with enterprise technology
                     </h3>
                   </div>
                 </div>

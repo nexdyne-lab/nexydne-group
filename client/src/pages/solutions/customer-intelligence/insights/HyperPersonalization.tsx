@@ -135,7 +135,7 @@ export default function HyperPersonalization() {
               </div>
 
               <p>
-                Most mid-market companies are somewhere between stages 2 and 3. The jump to stage 4 requires different technology, different processes, and different thinking.
+                Most growing companies are somewhere between stages 2 and 3. The jump to stage 4 requires different technology, different processes, and different thinking.
               </p>
 
               <h2 className="text-3xl font-bold mt-12 mb-6">The Building Blocks of Hyper-Personalization</h2>
@@ -362,7 +362,7 @@ export default function HyperPersonalization() {
             image: "/images/capabilities/cap-hologram.jpg"
           },
           {
-            title: "The Churn Prediction Playbook for Mid-Market SaaS",
+            title: "The Churn Prediction Playbook for Growth-Stage SaaS",
             category: "Technology",
             link: "/solutions/data-driven-customer-intelligence/insights/churn-prediction-playbook",
             image: "/images/capabilities/cap-colleagues-smile.jpg"

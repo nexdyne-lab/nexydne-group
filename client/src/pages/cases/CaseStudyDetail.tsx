@@ -29,7 +29,7 @@ const CASE_STUDIES = {
     title: "SmartStock",
     subtitle: "IoT-Driven Retail Intelligence",
     industry: "Retail & IoT",
-    challenge: "A mid-market retail chain struggled with stockouts and overstocking due to delayed inventory data. Manual counts were inaccurate and costly.",
+    challenge: "A growing retail chain struggled with stockouts and overstocking due to delayed inventory data. Manual counts were inaccurate and costly.",
     solution: "A custom IoT sensor network was deployed across 50 stores, feeding real-time shelf data into a cloud-based inventory management system. This infrastructure now predicts demand and automates replenishment orders with high precision.",
     impact: [
       { value: "35%", label: "Reduction in Waste" },

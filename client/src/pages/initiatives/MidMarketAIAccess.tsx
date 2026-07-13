@@ -12,16 +12,16 @@ function FAQSection() {
   
   const faqs = [
     {
-      question: "What size companies qualify for the Mid-Market AI Access Program?",
+      question: "What size companies qualify for the The AI Access Program?",
       answer: "The program is designed for companies with $50 million to $1 billion in annual revenue and between 100 and 5,000 employees. We focus on businesses large enough to benefit from AI but historically excluded from enterprise-grade solutions due to cost and complexity barriers."
     },
     {
       question: "How much does participation in the program cost?",
-      answer: "The program offers tiered pricing based on company size and scope of engagement. We offer a free initial AI Readiness Assessment to help companies understand their starting point. Full program participation includes subsidized rates significantly below traditional enterprise consulting fees, with flexible payment structures designed for mid-market budgets."
+      answer: "The program offers tiered pricing based on company size and scope of engagement. We offer a free initial AI Readiness Assessment to help companies understand their starting point. Full program participation includes subsidized rates significantly below traditional enterprise consulting fees, with flexible payment structures designed for the budgets of growing companies."
     },
     {
       question: "What industries does the program serve?",
-      answer: "The program serves mid-market companies across all industries, with particular expertise in manufacturing, distribution, healthcare, professional services, and technology. Our AI solutions are adaptable to industry-specific challenges and regulatory requirements."
+      answer: "The program serves growing companies across all industries, with particular expertise in manufacturing, distribution, healthcare, professional services, and technology. Our AI solutions are adaptable to industry-specific challenges and regulatory requirements."
     },
     {
       question: "How long does a typical AI implementation take?",
@@ -97,8 +97,8 @@ export default function MidMarketAIAccess() {
   return (
     <div className="min-h-screen bg-background font-sans text-charcoal selection:bg-primary selection:text-white">
       <SEO 
-        title="Mid-Market AI Access Program | NexDyne Initiatives" 
-        description="Expanding access to enterprise-grade AI for America's mid-market companies. A national effort to make advanced AI, analytics, and automation accessible."
+        title="The AI Access Program | NexDyne Initiatives" 
+        description="Expanding access to enterprise-grade AI for America's growing companies. A national effort to make advanced AI, analytics, and automation accessible."
         canonical="/initiatives/ai-for-growth"
       />
       <Navigation />
@@ -136,15 +136,15 @@ export default function MidMarketAIAccess() {
             </Link>
             
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-6 block">
-              Mid-Market AI Access Program
+              The AI Access Program
             </span>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-charcoal leading-[1.1] mb-4">
-              Expanding access to enterprise-grade AI for America's mid-market
+              Expanding access to enterprise-grade AI for America's growing companies
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl">
-              NexDyne is leading a national effort to make advanced AI, analytics, and automation accessible to mid-market companies traditionally excluded from enterprise technology.
+              NexDyne is leading a national effort to make advanced AI, analytics, and automation accessible to growing companies traditionally excluded from enterprise technology.
             </p>
           </motion.div>
         </div>
@@ -169,7 +169,7 @@ export default function MidMarketAIAccess() {
               
               <div className="prose prose-lg max-w-none text-charcoal/70">
                 <p className="text-lg leading-relaxed mb-6">
-                  The Mid-Market AI Access Program is designed to bring enterprise-grade AI capabilities to companies that have been systematically excluded from the AI revolution. While Fortune 500 companies have invested billions in AI infrastructure, mid-market businesses—those with $50M to $1B in revenue—have been left behind.
+                  The The AI Access Program is designed to bring enterprise-grade AI capabilities to companies that have been systematically excluded from the AI revolution. While Fortune 500 companies have invested billions in AI infrastructure, growing businesses—those with $50M to $1B in revenue—have been left behind.
                 </p>
                 <p className="text-lg leading-relaxed">
                   This program addresses the structural barriers that prevent growing companies from accessing modern AI: prohibitive costs, implementation complexity, and talent requirements that only the largest enterprises can afford.
@@ -213,7 +213,7 @@ export default function MidMarketAIAccess() {
               Who It Serves
             </span>
             <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-6">
-              America's mid-market economy
+              America's growing-company economy
             </h2>
             <p className="text-lg text-charcoal/70 leading-relaxed">
               The program focuses on companies that form the backbone of regional economies—businesses large enough to benefit from AI but historically excluded from enterprise technology.
@@ -308,10 +308,10 @@ export default function MidMarketAIAccess() {
             
             <div className="prose prose-lg max-w-none text-muted-foreground mb-12">
               <p className="text-lg leading-relaxed mb-6">
-                Mid-market companies employ millions of Americans but are underserved by modern AI infrastructure. The cost structures, implementation complexity, and talent requirements of enterprise AI have created a two-tier economy: Fortune 500 companies with AI-powered operations, and everyone else struggling to compete with legacy systems.
+                Growing companies employ millions of Americans but are underserved by modern AI infrastructure. The cost structures, implementation complexity, and talent requirements of enterprise AI have created a two-tier economy: Fortune 500 companies with AI-powered operations, and everyone else struggling to compete with legacy systems.
               </p>
               <p className="text-lg leading-relaxed">
-                Closing this gap strengthens local economies, supports job creation, and enhances global competitiveness. When mid-market companies gain access to AI, the benefits extend far beyond individual businesses—they ripple through supply chains, communities, and regional economies.
+                Closing this gap strengthens local economies, supports job creation, and enhances global competitiveness. When growing companies gain access to AI, the benefits extend far beyond individual businesses—they ripple through supply chains, communities, and regional economies.
               </p>
             </div>
 
@@ -358,7 +358,7 @@ export default function MidMarketAIAccess() {
               Program goals and outcomes
             </h2>
             <p className="text-lg text-charcoal/70 leading-relaxed">
-              The Mid-Market AI Access Program is designed with measurable outcomes that track progress toward closing the AI gap for American businesses.
+              The The AI Access Program is designed with measurable outcomes that track progress toward closing the AI gap for American businesses.
             </p>
           </motion.div>
 
@@ -402,7 +402,7 @@ export default function MidMarketAIAccess() {
               What the program includes
             </h2>
             <p className="text-lg text-charcoal/70 leading-relaxed">
-              A comprehensive suite of tools, training, and support designed to accelerate AI adoption for mid-market companies.
+              A comprehensive suite of tools, training, and support designed to accelerate AI adoption for growing companies.
             </p>
           </motion.div>
 
@@ -429,7 +429,7 @@ export default function MidMarketAIAccess() {
               {
                 icon: Users,
                 title: "Peer Network Access",
-                description: "Connect with other mid-market leaders navigating similar AI journeys through exclusive networking and knowledge-sharing events.",
+                description: "Connect with other growth-stage leaders navigating similar AI journeys through exclusive networking and knowledge-sharing events.",
                 features: ["Quarterly roundtables", "Case study sharing", "Expert panels", "Regional meetups"]
               }
             ].map((component, index) => (

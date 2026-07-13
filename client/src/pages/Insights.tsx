@@ -18,8 +18,8 @@ export default function Insights() {
 
   // ── Featured article (drives Section 1 hero) ───────────────────────────────
   const featuredArticle = {
-    slug: "the-hig-framework-why-mid-market-needs-more-than-strategy",
-    title: "The HIG Framework: why mid-market transformation needs more than strategy.",
+    slug: "the-hig-framework-why-transformation-needs-more-than-strategy",
+    title: "The HIG Framework: why transformation at growing companies needs more than strategy.",
     dek: "Most consulting models stop at the deck. NexDyne builds, governs, and scales — across every vertical. Here's the doctrine behind it.",
     heroImage: "/images/insights-featured-hig.jpg",
     topic: "Strategy",
@@ -79,9 +79,9 @@ export default function Insights() {
       date: "July 2026",
     },
     {
-      slug: "eu-ai-act-mid-market-playbook",
+      slug: "eu-ai-act-playbook",
       title: "The EU AI Act is enforcing in stages — August 2026 is the big one.",
-      dek: "You don't have to build AI to be covered; deploying it is enough. A 90-day compliance posture for mid-market firms that use AI in hiring, credit, or customer decisions.",
+      dek: "You don't have to build AI to be covered; deploying it is enough. A 90-day compliance posture for growing firms that use AI in hiring, credit, or customer decisions.",
       heroImage: "/images/business-strategy-abstract.jpg",
       topic: "Governance",
       industry: "Financial Services",
@@ -249,9 +249,9 @@ export default function Insights() {
       date: "January 2026",
     },
     {
-      slug: "pricing-strategy-the-discipline-most-mid-market-companies-defer",
-      title: "Pricing strategy: the discipline most mid-market companies defer.",
-      dek: "Pricing is the highest-leverage decision a mid-market company makes — and the one most often delegated to spreadsheets. Why the delegation costs more than it saves.",
+      slug: "pricing-strategy-the-discipline-most-companies-defer",
+      title: "Pricing strategy: the discipline most growing companies defer.",
+      dek: "Pricing is the highest-leverage decision a growing company makes — and the one most often delegated to spreadsheets. Why the delegation costs more than it saves.",
       heroImage: "/images/insights-pricing-strategy.jpg",
       topic: "Business Growth",
       industry: "Manufacturing",
@@ -333,7 +333,7 @@ export default function Insights() {
     <div className="min-h-screen bg-white font-sans text-charcoal">
       <SEO
         title="Insights"
-        description="Perspectives on intelligence, governance, and execution from the NexDyne practice. Articles, reports, and conversations on mid-market transformation."
+        description="Perspectives on intelligence, governance, and execution from the NexDyne practice. Articles, reports, and conversations on transformation at growing companies."
         canonical="/insights"
       />
       <Navigation />
@@ -745,7 +745,7 @@ export default function Insights() {
                   In-depth research and frameworks.
                 </h3>
                 <p className="text-base text-charcoal/60 leading-[1.6] flex-1">
-                  Long-form research on the doctrines and frameworks behind transformation — multi-quarter studies, primary research with mid-market operators, and the methodology papers that sit behind the engagements. Subscribe above to be the first to receive them when the catalog opens.
+                  Long-form research on the doctrines and frameworks behind transformation — multi-quarter studies, primary research with growing operators, and the methodology papers that sit behind the engagements. Subscribe above to be the first to receive them when the catalog opens.
                 </p>
               </div>
             </div>

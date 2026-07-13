@@ -10,7 +10,7 @@ export default function FractionalCFOCaseStudies() {
       id: 'medical-device-growth',
       icon: Target,
       title: 'Identifying and Capturing Growth Opportunities',
-      company: 'Mid-Market Medical Device Manufacturer',
+      company: 'Growing Medical-Device Manufacturer',
       industry: 'Healthcare Manufacturing',
       challenge: 'Needed to identify high-potential growth themes and strategic investment channels',
       result: 'Successfully prioritized investment channels and identified strategic partners for collaboration and acquisition',
@@ -72,7 +72,7 @@ export default function FractionalCFOCaseStudies() {
                 Fractional CFO Success Stories
               </h1>
               <p className="text-xl text-muted-foreground/50 leading-relaxed">
-                Discover how NexDyne's Fractional CFO services have transformed financial functions from back-office necessities into strategic growth engines for mid-market companies.
+                Discover how NexDyne's Fractional CFO services have transformed financial functions from back-office necessities into strategic growth engines for growing companies.
               </p>
             </div>
           </div>

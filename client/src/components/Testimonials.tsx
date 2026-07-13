@@ -24,7 +24,7 @@ const testimonials: Testimonial[] = [
     initials: "DC"
   },
   {
-    quote: "What sets NexDyne apart is their deep understanding of mid-market challenges. They didn't just implement technology—they helped us reimagine our processes and build lasting capabilities.",
+    quote: "What sets NexDyne apart is their deep understanding of the challenges growing companies face. They didn't just implement technology—they helped us reimagine our processes and build lasting capabilities.",
     author: "Jennifer Rodriguez",
     title: "CEO",
     company: "Cascade Healthcare Systems",

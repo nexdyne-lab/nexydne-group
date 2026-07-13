@@ -108,7 +108,7 @@ export default function ScalableDataArchitecture() {
               className="prose prose-lg max-w-none"
             >
               <p className="text-xl text-charcoal/80 leading-relaxed mb-8">
-                Data architecture decisions made today will determine your organization's ability to leverage AI, deliver real-time experiences, and compete in increasingly data-driven markets. Yet many mid-market companies are still operating on data infrastructure designed for a different era—batch processing, siloed warehouses, and manual ETL pipelines that can't keep pace with modern demands.
+                Data architecture decisions made today will determine your organization's ability to leverage AI, deliver real-time experiences, and compete in increasingly data-driven markets. Yet many growing companies are still operating on data infrastructure designed for a different era—batch processing, siloed warehouses, and manual ETL pipelines that can't keep pace with modern demands.
               </p>
 
               <h2 className="text-3xl font-bold mt-12 mb-6">The evolution of data architecture</h2>
@@ -198,7 +198,7 @@ export default function ScalableDataArchitecture() {
 
               <h3 className="text-2xl font-bold mt-8 mb-4">Storage Layer</h3>
               <p className="text-charcoal/70 leading-relaxed mb-6">
-                For most mid-market companies, cloud object storage (S3, Azure Blob, GCS) provides the best balance of cost, durability, and scalability. Use open table formats like Delta Lake or Apache Iceberg to add ACID transactions and time travel capabilities.
+                For most growing companies, cloud object storage (S3, Azure Blob, GCS) provides the best balance of cost, durability, and scalability. Use open table formats like Delta Lake or Apache Iceberg to add ACID transactions and time travel capabilities.
               </p>
 
               <h3 className="text-2xl font-bold mt-8 mb-4">Processing Layer</h3>
@@ -257,7 +257,7 @@ export default function ScalableDataArchitecture() {
               <h2 className="text-3xl font-bold mt-12 mb-6">Conclusion</h2>
 
               <p className="text-charcoal/70 leading-relaxed mb-6">
-                Building scalable data architecture is no longer optional—it's a prerequisite for competing in data-driven markets. The good news is that modern tools and patterns make it achievable for mid-market companies, not just tech giants. The key is starting with clear business objectives, choosing technologies that match your team's capabilities, and building incrementally rather than attempting a big-bang transformation.
+                Building scalable data architecture is no longer optional—it's a prerequisite for competing in data-driven markets. The good news is that modern tools and patterns make it achievable for growing companies, not just tech giants. The key is starting with clear business objectives, choosing technologies that match your team's capabilities, and building incrementally rather than attempting a big-bang transformation.
               </p>
             </motion.div>
           </div>

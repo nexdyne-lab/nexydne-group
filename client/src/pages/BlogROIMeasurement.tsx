@@ -324,7 +324,7 @@ export default function BlogROIMeasurement() {
                 <p className="font-semibold text-charcoal text-lg">Lisa Chen</p>
                 <p className="text-muted-foreground mb-3">Analytics Practice Lead</p>
                 <p className="text-charcoal/80 leading-relaxed">
-                  Lisa leads NexDyne's analytics practice and specializes in ROI measurement frameworks for automation projects. She has developed measurement systems for over 60 mid-market automation deployments and regularly publishes research on automation economics.
+                  Lisa leads NexDyne's analytics practice and specializes in ROI measurement frameworks for automation projects. She has developed measurement systems for over 60 automation deployments at growing companies and regularly publishes research on automation economics.
                 </p>
               </div>
             </div>

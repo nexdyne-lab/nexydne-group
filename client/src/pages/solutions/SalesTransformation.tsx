@@ -59,7 +59,7 @@ export default function SalesTransformation() {
   const outcomes = [
     {
       stat: "180+",
-      label: "sales transformation programs delivered for B2B mid-market and enterprise clients",
+      label: "sales transformation programs delivered for B2B growing and enterprise clients",
     },
     {
       stat: "42%",
@@ -101,7 +101,7 @@ export default function SalesTransformation() {
   const cases = [
     {
       industry: "B2B SaaS",
-      title: "Mid-Market SaaS Doubles Win Rate After CRM Rebuild and MEDDICC Rollout",
+      title: "Growth-Stage SaaS Doubles Win Rate After CRM Rebuild and MEDDICC Rollout",
       description:
         "A Salesforce rebuild paired with rigorous qualification training lifted win rate from 18% to 37% in three quarters.",
       image: "/images/case-sales-saas.jpg",
