@@ -245,7 +245,7 @@ export default function ServiceDetailTemplate(
             className="mb-12 md:mb-16 max-w-4xl"
           >
             <div className="flex items-center gap-3 mb-5">
-              <span className="block h-[3px] w-9 bg-primary" />
+              <span className="block h-[3px] w-9 bg-amber" />
               <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-white/60">
                 Outcomes
               </span>
@@ -263,7 +263,7 @@ export default function ServiceDetailTemplate(
                 transition={{ duration: 0.5, ease, delay: (index % 2) * 0.08 }}
                 className="flex items-start gap-4 border-t border-white/15 py-6"
               >
-                <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-amber mt-1 flex-shrink-0" />
                 <span className="text-[1.05rem] md:text-[1.15rem] text-white/90 leading-[1.6]">
                   {item}
                 </span>
