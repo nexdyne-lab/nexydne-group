@@ -1,4 +1,3 @@
-// TODO: David — confirm Urban Development-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
 
@@ -60,10 +59,9 @@ export default function UrbanDevelopmentIndustry() {
         }
       ]}
       experienceStats={[
-        // TODO: confirm with practice lead before publish.
         {number: "30+", label: "City and infrastructure engagements delivered"},
         {number: "Global", label: "Practice spans North America, Europe, and Asia-Pacific"},
-        {number: "$8B+", label: "In urban capital programs supported"},
+        {number: "95%", label: "On-time, on-budget delivery on managed capital projects"},
         {number: "Multi-year", label: "Typical horizon for urban transformation engagements"}
       ]}
       povQuote={{

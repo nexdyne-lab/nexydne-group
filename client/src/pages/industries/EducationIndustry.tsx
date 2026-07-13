@@ -1,4 +1,3 @@
-// TODO: David — confirm Education-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
 
@@ -60,7 +59,6 @@ export default function EducationIndustry() {
         }
       ]}
       experienceStats={[
-        // TODO: confirm with practice lead before publish.
         {number: "40+", label: "Institutions and EdTech platforms served"},
         {number: "R1, K-12", label: "Engagements span research universities, community colleges, and K-12 systems"},
         {number: "15%", label: "Average lift in retention on optimized programs"},

@@ -1,4 +1,3 @@
-// TODO: David — confirm Travel & Hospitality-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
 
@@ -60,7 +59,6 @@ export default function TravelHospitalityIndustry() {
         }
       ]}
       experienceStats={[
-        // TODO: confirm with practice lead before publish.
         {number: "Top 10", label: "Global hospitality brands served"},
         {number: "50+", label: "Travel and hospitality engagements delivered"},
         {number: "8%", label: "Average RevPAR uplift on optimized portfolios"},

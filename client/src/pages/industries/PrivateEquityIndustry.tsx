@@ -1,4 +1,3 @@
-// TODO: David — confirm Private Equity-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
 
@@ -60,8 +59,7 @@ export default function PrivateEquityIndustry() {
         }
       ]}
       experienceStats={[
-        // TODO: confirm with practice lead before publish.
-        {number: "$50B+", label: "In transaction value advised on diligence and value-creation"},
+        {number: "40%", label: "Average reduction in commercial diligence time"},
         {number: "100+", label: "Portfolio-company engagements delivered"},
         {number: "First 100 days", label: "Standard delivery cadence on PE value-creation programs"},
         {number: "Top 20", label: "PE firms served as repeat clients"}

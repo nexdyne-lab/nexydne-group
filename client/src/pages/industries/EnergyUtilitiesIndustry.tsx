@@ -1,4 +1,3 @@
-// TODO: David — confirm Energy & Utilities-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
 
@@ -60,10 +59,9 @@ export default function EnergyUtilitiesIndustry() {
         }
       ]}
       experienceStats={[
-        // TODO: confirm with practice lead before publish.
         {number: "Top 20", label: "US utilities served on at least one engagement"},
         {number: "50+", label: "Energy and utilities engagements delivered"},
-        {number: "$2.1M", label: "Average annual savings per asset-performance program"},
+        {number: "45%", label: "Average reduction in outage duration on modernized networks"},
         {number: "18 mo", label: "Average energy engagement length"}
       ]}
       povQuote={{

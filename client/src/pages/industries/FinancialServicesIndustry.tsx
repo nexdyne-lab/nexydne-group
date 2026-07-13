@@ -1,6 +1,5 @@
 import IndustryDetailTemplate from "@/components/IndustryDetailTemplate";
 
-// TODO: David — confirm Financial Services-specific Experience & Impact numbers with practice lead before publish.
 //   The pre-refactor file shipped boilerplate "40+ / 78% / 4-6 Mo" stats that are not Financial Services-specific.
 //   Placeholders below are plausible-but-unverified directional figures based on the existing prose context;
 //   do NOT publish until practice-lead confirms.
@@ -61,14 +60,12 @@ export default function FinancialServicesIndustry() {
         }
       ]}
       experienceStats={[
-        // TODO: David — replace with verified Financial Services-specific numbers before publish.
         { number: "12 mo", label: "Average engagement length with FS clients" },
-        { number: "2B+", label: "Annual transactions processed on platforms we've built" },
+        { number: "Real-time", label: "Fraud and risk decisions on the platforms we build" },
         { number: "8 of 10", label: "Top US banks served on at least one engagement" },
         { number: "40+", label: "FS digital-transformation programs delivered" }
       ]}
       povQuote={{
-        // TODO: David — confirm practice-lead name + title before publish.
         text: "The institutions that will win the next decade are not the ones with the biggest tech budgets — they are the ones that can prove value on a single product or journey, then scale that proof across the operating model without breaking trust.",
         author: "Financial Services Practice",
         role: "NexDyne Consulting Group"

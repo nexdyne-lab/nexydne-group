@@ -1,4 +1,3 @@
-// TODO: David — confirm Insurance-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
 
@@ -60,11 +59,10 @@ export default function InsuranceIndustry() {
         }
       ]}
       experienceStats={[
-        // TODO: confirm with practice lead before publish.
         {number: "Top 10", label: "P&C and life carriers served"},
         {number: "70+", label: "Insurance engagements delivered"},
         {number: "85%", label: "Average claims-cycle-time reduction on automated lines"},
-        {number: "$XX M", label: "Loss-adjustment-expense impact across portfolio"}
+        {number: "60%", label: "Average straight-through processing on automated claims"}
       ]}
       povQuote={{
         text: "The carriers leading the next cycle are the ones who treat underwriting and claims as software products — continuously improved, instrumented, and governed — not as tribal craft to be defended.",

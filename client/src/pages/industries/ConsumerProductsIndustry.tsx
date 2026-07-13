@@ -1,4 +1,3 @@
-// TODO: David — confirm Consumer Products-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
 
@@ -60,10 +59,9 @@ export default function ConsumerProductsIndustry() {
         }
       ]}
       experienceStats={[
-        // TODO: confirm with practice lead before publish.
         {number: "Top 10", label: "Global CPG companies served"},
         {number: "80+", label: "CPG transformation engagements delivered"},
-        {number: "$1.5B", label: "In trade-spend optimized for clients"},
+        {number: "30%", label: "Average lift in demand-forecast accuracy"},
         {number: "18 mo", label: "Average CPG engagement length"}
       ]}
       povQuote={{

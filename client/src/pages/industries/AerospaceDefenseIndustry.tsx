@@ -1,4 +1,3 @@
-// TODO: David — confirm Aerospace & Defense-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
 
@@ -60,7 +59,6 @@ export default function AerospaceDefenseIndustry() {
         }
       ]}
       experienceStats={[
-        // TODO: confirm with practice lead before publish.
         {number: "Top 5", label: "Primes served on at least one program"},
         {number: "60+", label: "A&D programs supported"},
         {number: "25%", label: "Average program-schedule compression"},

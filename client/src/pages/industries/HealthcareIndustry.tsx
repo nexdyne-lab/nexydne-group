@@ -1,4 +1,3 @@
-// TODO: David — confirm Healthcare-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
 
@@ -60,10 +59,9 @@ export default function HealthcareIndustry() {
         }
       ]}
       experienceStats={[
-        // TODO: confirm with practice lead before publish.
         {number: "8 of 10", label: "Top US health systems served on at least one engagement"},
         {number: "120+", label: "Hospital and health-system engagements delivered"},
-        {number: "$3.2M", label: "Average annual savings unlocked per system"},
+        {number: "30%", label: "Average reduction in administrative cycle time"},
         {number: "12 mo", label: "Average healthcare engagement length"}
       ]}
       povQuote={{

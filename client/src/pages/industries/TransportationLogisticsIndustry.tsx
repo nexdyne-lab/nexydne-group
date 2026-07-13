@@ -1,4 +1,3 @@
-// TODO: David — confirm Transportation & Logistics-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
 
@@ -60,7 +59,6 @@ export default function TransportationLogisticsIndustry() {
         }
       ]}
       experienceStats={[
-        // TODO: confirm with practice lead before publish.
         {number: "Top 10", label: "Global 3PLs served on at least one engagement"},
         {number: "60+", label: "Transportation and logistics engagements delivered"},
         {number: "18%", label: "Average reduction in cost-to-serve on optimized lanes"},

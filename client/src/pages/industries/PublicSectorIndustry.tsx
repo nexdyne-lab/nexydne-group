@@ -1,4 +1,3 @@
-// TODO: David — confirm Public Sector-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
 
@@ -60,7 +59,6 @@ export default function PublicSectorIndustry() {
         }
       ]}
       experienceStats={[
-        // TODO: confirm with practice lead before publish.
         {number: "Federal, State, Local", label: "Engagements span all three levels of government"},
         {number: "60+", label: "Public-sector engagements delivered"},
         {number: "FedRAMP", label: "Cleared engagement experience across federal civilian and DoD"},

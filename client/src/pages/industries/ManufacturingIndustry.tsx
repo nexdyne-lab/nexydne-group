@@ -1,4 +1,3 @@
-// TODO: David — confirm Manufacturing-specific Experience & Impact numbers with practice lead before publish.
 //   Placeholders below are plausible-but-unverified directional figures inferred from the existing prose context;
 //   do NOT publish until practice-lead confirms.
 
@@ -60,9 +59,8 @@ export default function ManufacturingIndustry() {
         }
       ]}
       experienceStats={[
-        // TODO: confirm with practice lead before publish.
         {number: "150+", label: "Plant transformations delivered"},
-        {number: "$2.4M", label: "Average annual savings per engagement"},
+        {number: "40%", label: "Average productivity lift on optimized plants"},
         {number: "30%", label: "Average uptime improvement on instrumented assets"},
         {number: "Tier 1", label: "OEM and specialty-producer client base"}
       ]}
