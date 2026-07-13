@@ -893,6 +893,10 @@ import GovernmentBenefitsAIIndustry from "./pages/cases/industries/GovernmentBen
 import SmartCityInfrastructureIndustry from "./pages/cases/industries/SmartCityInfrastructure";
 import DefenseSupplyChainIndustry from "./pages/cases/industries/DefenseSupplyChain";
 import AerospaceDigitalEngineeringIndustry from "./pages/cases/industries/AerospaceDigitalEngineering";
+import GenerativeAIDocumentAutomation from "./pages/cases/industries/GenerativeAIDocumentAutomation";
+import AgenticAIServiceResolution from "./pages/cases/industries/AgenticAIServiceResolution";
+import CustomModelClinicalCoding from "./pages/cases/industries/CustomModelClinicalCoding";
+import DigitalTwinPredictiveOperations from "./pages/cases/industries/DigitalTwinPredictiveOperations";
 import AviationPredictiveMaintenanceIndustry from "./pages/cases/industries/AviationPredictiveMaintenance";
 import HotelRevenueManagementIndustry from "./pages/cases/industries/HotelRevenueManagement";
 import HotelGuestExperienceIndustry from "./pages/cases/industries/HotelGuestExperience";
@@ -1670,6 +1674,10 @@ function Router() {
         <Route path="/cases/smart-city-platform" component={SmartCityInfrastructureIndustry} />
         <Route path="/cases/supply-chain-visibility" component={DefenseSupplyChainIndustry} />
         <Route path="/cases/aerospace-digital-engineering" component={AerospaceDigitalEngineeringIndustry} />
+        <Route path="/cases/generative-ai-document-automation" component={GenerativeAIDocumentAutomation} />
+        <Route path="/cases/agentic-ai-service-resolution" component={AgenticAIServiceResolution} />
+        <Route path="/cases/custom-model-clinical-coding" component={CustomModelClinicalCoding} />
+        <Route path="/cases/digital-twin-predictive-operations" component={DigitalTwinPredictiveOperations} />
         <Route path="/cases/logistics-optimization" component={AviationPredictiveMaintenanceIndustry} />
         <Route path="/cases/hotel-revenue-transformation" component={HotelRevenueManagementIndustry} />
         <Route path="/cases/pe-industrial-transformation" component={PEPortfolioOperationsIndustry} />

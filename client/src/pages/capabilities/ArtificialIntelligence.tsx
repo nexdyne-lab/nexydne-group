@@ -201,72 +201,27 @@ export default function ArtificialIntelligence() {
       // Featured client work — the current editorial case studies (slugs + images verified live)
       clientResults={[
         {
-          industry: "Financial Services",
+          industry: "Generative & Agentic AI",
           cases: [
-            {
-              slug: "financial-fraud-detection",
-              title: "Catching card fraud before the money moves",
-              metric: "73% less fraud loss",
-              image: "/images/industries/fin-monitors.jpg",
-            },
-            {
-              slug: "bank-cross-sell",
-              title: "Turning single accounts into real relationships",
-              metric: "$24M new revenue",
-              image: "/images/industries/fin-trader.jpg",
-            },
-            {
-              slug: "wealth-onboarding",
-              title: "Cutting wealth onboarding from weeks to days",
-              metric: "60% faster onboarding",
-              image: "/images/industries/fin-handshake-city.jpg",
-            },
+            { slug: "generative-ai-document-automation", title: "Drafting policy documents in minutes with generative AI", metric: "85%", image: "/images/industries/fin-monitors.jpg" },
+            { slug: "agentic-ai-service-resolution", title: "Resolving service requests end to end with AI agents", metric: "60%", image: "/images/industries/fin-trader.jpg" },
+            { slug: "custom-model-clinical-coding", title: "Coding claims with a model trained on its own records", metric: "40%", image: "/case-medical-collaboration.9602cc8c.jpg" },
           ],
         },
         {
-          industry: "Healthcare",
+          industry: "Predictive & Decision AI",
           cases: [
-            {
-              slug: "healthcare-transformation",
-              title: "Unifying scattered patient data to improve outcomes",
-              metric: "35% better outcomes",
-              image: "/case-medical-collaboration.9602cc8c.jpg",
-            },
-            {
-              slug: "healthcare-readmission",
-              title: "Cutting avoidable readmissions with better prediction",
-              metric: "42% fewer readmissions",
-              image: "/case-doctor-consultation.799c1562.jpg",
-            },
-            {
-              slug: "healthcare-revenue-cycle",
-              title: "Recovering revenue the system had already earned",
-              metric: "$32M recovered",
-              image: "/case-healthcare-team.5797392b.jpg",
-            },
+            { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+            { slug: "semiconductor-quality-prediction", title: "Catching chip defects weeks before they appear", metric: "92%", image: "/images/industries/mfg-robot-arm.jpg" },
+            { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", metric: "40%", image: "/images/industries/fin-handshake-city.jpg" },
           ],
         },
         {
-          industry: "Insurance",
+          industry: "AI in Operations",
           cases: [
-            {
-              slug: "insurance-ai-underwriting",
-              title: "Quoting commercial business in a day, not a week",
-              metric: "40% faster quoting",
-              image: "/images/industries/fin-monitors.jpg",
-            },
-            {
-              slug: "insurance-claims-automation",
-              title: "Settling straightforward claims in hours, not weeks",
-              metric: "60% straight-through",
-              image: "/case-insurance-claims.399e5d4b.jpg",
-            },
-            {
-              slug: "insurance-digital-distribution",
-              title: "Turning a call-center insurer into a digital one",
-              metric: "50% shift to digital",
-              image: "/images/industries/fin-handshake-city.jpg",
-            },
+            { slug: "digital-twin-predictive-operations", title: "Cutting unplanned downtime with a digital twin", metric: "45%", image: "/images/industries/mfg-robot-arm.jpg" },
+            { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+            { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", metric: "$30M", image: "/images/capabilities/cap-battery-factory.jpg" },
           ],
         },
       ]}
