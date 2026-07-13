@@ -893,6 +893,20 @@ import GovernmentBenefitsAIIndustry from "./pages/cases/industries/GovernmentBen
 import SmartCityInfrastructureIndustry from "./pages/cases/industries/SmartCityInfrastructure";
 import DefenseSupplyChainIndustry from "./pages/cases/industries/DefenseSupplyChain";
 import AerospaceDigitalEngineeringIndustry from "./pages/cases/industries/AerospaceDigitalEngineering";
+import RetailPdpRecommender from "./pages/cases/industries/RetailPdpRecommender";
+import StreamingHybridRecommender from "./pages/cases/industries/StreamingHybridRecommender";
+import RetailBehavioralEmailRevenue from "./pages/cases/industries/RetailBehavioralEmailRevenue";
+import SaasUsageSegmentationCsRouting from "./pages/cases/industries/SaasUsageSegmentationCsRouting";
+import RetailCdpUnification from "./pages/cases/industries/RetailCdpUnification";
+import SubscriptionCdpIdentity from "./pages/cases/industries/SubscriptionCdpIdentity";
+import HospitalityBookingJourneyOptimization from "./pages/cases/industries/HospitalityBookingJourneyOptimization";
+import TelecomActivationJourneyRedesign from "./pages/cases/industries/TelecomActivationJourneyRedesign";
+import FinancePersonalizationStrategyReroute from "./pages/cases/industries/FinancePersonalizationStrategyReroute";
+import DtcPersonalizationStackRedesign from "./pages/cases/industries/DtcPersonalizationStackRedesign";
+import MediaChurnUpliftModel from "./pages/cases/industries/MediaChurnUpliftModel";
+import BankingClvAcquisitionRouting from "./pages/cases/industries/BankingClvAcquisitionRouting";
+import HealthcareClosedLoopVoc from "./pages/cases/industries/HealthcareClosedLoopVoc";
+import SaasVocRoadmapReorder from "./pages/cases/industries/SaasVocRoadmapReorder";
 import CapitalRaiseSeriesB from "./pages/cases/industries/CapitalRaiseSeriesB";
 import FpaForecastingTransformation from "./pages/cases/industries/FpaForecastingTransformation";
 import CloudMigrationHealthSystem from "./pages/cases/industries/CloudMigrationHealthSystem";
@@ -1682,6 +1696,20 @@ function Router() {
         <Route path="/cases/smart-city-platform" component={SmartCityInfrastructureIndustry} />
         <Route path="/cases/supply-chain-visibility" component={DefenseSupplyChainIndustry} />
         <Route path="/cases/aerospace-digital-engineering" component={AerospaceDigitalEngineeringIndustry} />
+        <Route path="/cases/retail-pdp-recommender" component={RetailPdpRecommender} />
+        <Route path="/cases/streaming-hybrid-recommender" component={StreamingHybridRecommender} />
+        <Route path="/cases/retail-behavioral-email-revenue" component={RetailBehavioralEmailRevenue} />
+        <Route path="/cases/saas-usage-segmentation-cs-routing" component={SaasUsageSegmentationCsRouting} />
+        <Route path="/cases/retail-cdp-unification" component={RetailCdpUnification} />
+        <Route path="/cases/subscription-cdp-identity" component={SubscriptionCdpIdentity} />
+        <Route path="/cases/hospitality-booking-journey-optimization" component={HospitalityBookingJourneyOptimization} />
+        <Route path="/cases/telecom-activation-journey-redesign" component={TelecomActivationJourneyRedesign} />
+        <Route path="/cases/finance-personalization-strategy-reroute" component={FinancePersonalizationStrategyReroute} />
+        <Route path="/cases/dtc-personalization-stack-redesign" component={DtcPersonalizationStackRedesign} />
+        <Route path="/cases/media-churn-uplift-model" component={MediaChurnUpliftModel} />
+        <Route path="/cases/banking-clv-acquisition-routing" component={BankingClvAcquisitionRouting} />
+        <Route path="/cases/healthcare-closed-loop-voc" component={HealthcareClosedLoopVoc} />
+        <Route path="/cases/saas-voc-roadmap-reorder" component={SaasVocRoadmapReorder} />
         <Route path="/cases/capital-raise-series-b" component={CapitalRaiseSeriesB} />
         <Route path="/cases/fpa-forecasting-transformation" component={FpaForecastingTransformation} />
         <Route path="/cases/cloud-migration-health-system" component={CloudMigrationHealthSystem} />
