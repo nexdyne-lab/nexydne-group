@@ -105,27 +105,9 @@ export default function ProductStrategyDesign() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "consulting-saas",
-          title: "Professional Services Firm Builds SaaS Product",
-          industry: "Professional Services · Business Building",
-          metric: "$3.2M",
-          image: "/images/capabilities/cap-venturing.jpg",
-        },
-        {
-          slug: "manufacturer-dtc",
-          title: "Manufacturer Creates Direct-to-Consumer Channel",
-          industry: "Manufacturing · Business Building",
-          metric: "3x",
-          image: "/images/capabilities/cap-lightbulb-idea.jpg",
-        },
-        {
-          slug: "ecommerce-platform-launch",
-          title: "Industrial Distributor Launches B2B E-commerce Platform",
-          industry: "Industrial Distribution · Business Building",
-          metric: "47%",
-          image: "/images/capabilities/cap-celebrate.jpg",
-        },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
+        { slug: "automotive-ev-transition", title: "Retooling a supplier line for electric-vehicle parts", industry: "Automotive", metric: "45%", image: "/images/industries/auto-robotics-team.jpg" },
+        { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", industry: "Retail", metric: "85%", image: "/images/capabilities/cap-retail-apparel.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

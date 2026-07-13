@@ -105,27 +105,9 @@ export default function AIPoweredAcceleration() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "consulting-saas",
-          title: "Professional Services Firm Builds SaaS Product",
-          industry: "Professional Services · Business Building",
-          metric: "45%",
-          image: "/images/capabilities/cap-venturing.jpg",
-        },
-        {
-          slug: "logistics-tech-spinoff",
-          title: "Logistics Company Builds Technology Spin-Off",
-          industry: "Logistics · Business Building",
-          metric: "60+",
-          image: "/images/capabilities/cap-lightbulb-idea.jpg",
-        },
-        {
-          slug: "healthcare-telehealth",
-          title: "Healthcare Provider Launches Telehealth Venture",
-          industry: "Healthcare · Business Building",
-          metric: "8 Mo",
-          image: "/images/capabilities/cap-celebrate.jpg",
-        },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
+        { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", industry: "Manufacturing", metric: "$30M", image: "/images/capabilities/cap-battery-factory.jpg" },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },
