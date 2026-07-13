@@ -66,20 +66,8 @@ export default function PhysicalDigitalIntegration() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "telehealth-platform",
-          title: "Telehealth provider scales virtual care platform",
-          industry: "Healthcare · Service Design",
-          metric: "5x",
-          image: "/images/capabilities/cap-diverse-team.jpg",
-        },
-        {
-          slug: "healthcare-patient-engagement",
-          title: "Provider boosts patient engagement with omnichannel touch",
-          industry: "Healthcare · Service Design",
-          metric: "60%",
-          image: "/images/capabilities/cap-mobile-woman.jpg",
-        },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "service-blueprinting", name: "Service Blueprinting", href: "/capabilities/growth-marketing-sales/service-design/service-blueprinting" },

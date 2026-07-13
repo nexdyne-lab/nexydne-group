@@ -110,27 +110,9 @@ export default function DigitalVentureLaunch() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "ecommerce-platform-launch",
-          title: "Industrial Distributor Launches B2B E-commerce Platform",
-          industry: "Industrial Distribution · Business Building",
-          metric: "35%",
-          image: "/images/capabilities/cap-venturing.jpg",
-        },
-        {
-          slug: "healthcare-telehealth",
-          title: "Healthcare Provider Launches Telehealth Venture",
-          industry: "Healthcare · Business Building",
-          metric: "5 Mo",
-          image: "/images/capabilities/cap-lightbulb-idea.jpg",
-        },
-        {
-          slug: "logistics-tech-spinoff",
-          title: "Logistics Company Builds Technology Spin-Off",
-          industry: "Logistics · Business Building",
-          metric: "$28M",
-          image: "/images/capabilities/cap-celebrate.jpg",
-        },
+        { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", industry: "Retail", metric: "85%", image: "/images/capabilities/cap-retail-apparel.jpg" },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", industry: "Manufacturing", metric: "$30M", image: "/images/capabilities/cap-battery-factory.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

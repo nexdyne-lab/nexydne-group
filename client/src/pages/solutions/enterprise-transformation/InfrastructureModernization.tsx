@@ -49,20 +49,8 @@ export default function InfrastructureModernization() {
         "Post-modernization operations playbook — IaC governance, security baseline enforcement, observability stack, FinOps integration, on-call rotation, and the platform-team charter.",
       ]}
       featuredCases={[
-        {
-          slug: "telehealth-platform",
-          title: "1,800-server estate consolidated to 240 IaC-managed services with 99.98 percent availability",
-          industry: "Logistics",
-          metric: "99.98%",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "accounting-audit-automation",
-          title: "IaC adoption across 47 plant sites cuts provisioning time from 3 weeks to 45 minutes",
-          industry: "Manufacturing",
-          metric: "3w → 45m",
-          image: "/images/capabilities/cap-circuit-green.jpg",
-        },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
       ]}
       relatedServices={[
         { slug: "cloud-migration-architecture", name: "Cloud Migration Architecture", href: "/capabilities/technology/cloud-migration-architecture" },

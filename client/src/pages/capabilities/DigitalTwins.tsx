@@ -112,27 +112,9 @@ export default function DigitalTwins() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Optimizing clinical workflows to save 15 hours per physician weekly",
-          industry: "Healthcare",
-          metric: "15hrs",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
-        {
-          slug: "healthcare-data-analytics",
-          title: "Unlocking healthcare insights with real-time data analytics",
-          industry: "Healthcare",
-          metric: "25%",
-          image: "/images/industries/tech-datacenter.jpg",
-        },
-        {
-          slug: "telehealth-platform",
-          title: "Scaling telehealth services to reach 50,000+ patients monthly",
-          industry: "Healthcare",
-          metric: "50K+",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/internet-of-things", name: "Internet of Things" },

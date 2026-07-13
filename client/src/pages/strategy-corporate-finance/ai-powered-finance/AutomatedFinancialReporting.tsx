@@ -47,13 +47,7 @@ export default function StrategyCorporateFinanceAiPoweredFinanceAutomatedFinanci
         "Internal AI-Powered Finance capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech Scales Cross-Border Payments With Intelligent Automation",
-          industry: "Financial Services · Strategy",
-          metric: "5x",
-          image: "/images/capabilities/cap-telescope.jpg",
-        },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
       ]}
       relatedServices={[
         { slug: "predictive-cash-flow-modeling", name: "Predictive Cash Flow Modeling", href: "/capabilities/strategy-corporate-finance/ai-powered-finance/predictive-cash-flow-modeling" },

@@ -47,27 +47,9 @@ export default function StrategyCorporateFinanceCfoServicesFinancialSystemsProce
         "Internal Fractional CFO Services capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "accounting-audit-automation",
-          title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
-          industry: "Financial Services · Strategy",
-          metric: "50%",
-          image: "/images/capabilities/cap-warehouse-robot.jpg",
-        },
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Automates Loan Origination End-to-End",
-          industry: "Financial Services · Strategy",
-          metric: "70%",
-          image: "/images/industries/ops-gears.jpg",
-        },
-        {
-          slug: "insurance-claims-processing",
-          title: "Insurer Slashes Claims Processing Time With Intelligent Workflow",
-          industry: "Financial Services · Strategy",
-          metric: "65%",
-          image: "/images/capabilities/cap-circuit-green.jpg",
-        },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
       ]}
       relatedServices={[
         { slug: "strategic-financial-planning", name: "Strategic Financial Planning", href: "/capabilities/strategy-corporate-finance/cfo-services/strategic-financial-planning" },

@@ -66,20 +66,8 @@ export default function DynamicContent() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-patient-engagement",
-          title: "Provider boosts patient engagement with omnichannel touch",
-          industry: "Healthcare · Personalization at Scale",
-          metric: "60%",
-          image: "/images/capabilities/cap-circuit-green.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth manager personalizes onboarding for HNW clients",
-          industry: "Wealth Management · Personalization at Scale",
-          metric: "3x",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "personalization-strategy", name: "Personalization Strategy", href: "/capabilities/growth-marketing-sales/personalization-at-scale/personalization-strategy" },

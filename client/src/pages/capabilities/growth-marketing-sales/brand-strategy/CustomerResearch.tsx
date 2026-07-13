@@ -66,20 +66,8 @@ export default function CustomerResearch() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "consulting-knowledge-management",
-          title: "Consultancy unlocks 30 years of IP with AI knowledge graph",
-          industry: "Professional Services · Brand Strategy",
-          metric: "4x",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
-        {
-          slug: "bank-process-automation",
-          title: "Regional bank automates KYC and onboarding",
-          industry: "Financial Services · Brand Strategy",
-          metric: "70%",
-          image: "/images/capabilities/cap-mobile-woman.jpg",
-        },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
       ]}
       relatedServices={[
         { slug: "brand-positioning", name: "Brand Positioning", href: "/capabilities/growth-marketing-sales/brand-strategy/brand-positioning" },

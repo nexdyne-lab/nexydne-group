@@ -49,20 +49,8 @@ export default function DevOpsCICD() {
         "DevOps operating model — org design, RACI, platform team charter, productivity review cadence, and the engineering metrics dashboard.",
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "Deployment frequency rises from monthly to 47 per day across a regulated platform",
-          industry: "Financial Services",
-          metric: "monthly → 47/d",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "fintech-payment-automation",
-          title: "Lead time for changes drops from 9 days to 4 hours across 23 engineering teams",
-          industry: "B2B SaaS",
-          metric: "9d → 4h",
-          image: "/images/capabilities/cap-circuit-green.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
       ]}
       relatedServices={[
         { slug: "platform-engineering", name: "Platform Engineering", href: "/capabilities/technology/platform-engineering" },

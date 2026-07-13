@@ -49,20 +49,8 @@ export default function CloudCostOptimization() {
         "Production-grade executive cost performance dashboard — spend versus forecast, optimization realized, commitment coverage, and the leading indicators.",
       ]}
       featuredCases={[
-        {
-          slug: "consulting-knowledge-management",
-          title: "FinOps program retires 32 percent of annual cloud spend without a single workload migration",
-          industry: "SaaS Platform",
-          metric: "-32%",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Multi-cloud governance lands $14M of annualized savings across 47 product teams",
-          industry: "Financial Services",
-          metric: "$14M/yr",
-          image: "/images/capabilities/cap-circuit-green.jpg",
-        },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "cloud-migration-architecture", name: "Cloud Migration Architecture", href: "/capabilities/technology/cloud-migration-architecture" },

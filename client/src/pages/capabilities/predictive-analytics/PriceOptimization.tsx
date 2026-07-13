@@ -64,13 +64,7 @@ export default function PriceOptimization() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "fintech-payment-automation",
-          title: "Scaling a fintech payment platform with AI-driven automation",
-          industry: "Financial Services",
-          metric: "5x",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
       ]}
       relatedServices={[
         { slug: "demand-forecasting", name: "Demand Forecasting", href: "/capabilities/artificial-intelligence/predictive-analytics/demand-forecasting" },

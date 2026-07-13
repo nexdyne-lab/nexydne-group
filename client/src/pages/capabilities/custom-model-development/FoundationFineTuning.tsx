@@ -64,20 +64,8 @@ export default function FoundationFineTuning() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "legal-document-intelligence",
-          title: "Transforming legal research with AI-powered document intelligence",
-          industry: "Professional Services",
-          metric: "70%",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "law-firm-contract-automation",
-          title: "How contract automation transformed a leading law firm’s operations",
-          industry: "Professional Services",
-          metric: "65%",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
+        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
       ]}
       relatedServices={[
         { slug: "architecture-design", name: "Custom Architecture Design", href: "/capabilities/artificial-intelligence/custom-model-development/architecture-design" },

@@ -47,27 +47,9 @@ export default function StrategyCorporateFinanceMergersAcquisitionsMaStrategy() 
         "Internal Mergers & Acquisitions capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Automates Loan Origination End-to-End",
-          industry: "Financial Services · Strategy",
-          metric: "70%",
-          image: "/images/industries/fin-handshake-city.jpg",
-        },
-        {
-          slug: "law-firm-contract-automation",
-          title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
-          industry: "Professional Services · Strategy",
-          metric: "85%",
-          image: "/images/industries/meeting-topview.jpg",
-        },
-        {
-          slug: "consulting-knowledge-management",
-          title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
-          industry: "Professional Services · Strategy",
-          metric: "60%",
-          image: "/images/capabilities/cap-aerial-grid.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
       ]}
       relatedServices={[
         { slug: "target-identification", name: "Target Identification", href: "/capabilities/strategy-corporate-finance/mergers-acquisitions/target-identification" },

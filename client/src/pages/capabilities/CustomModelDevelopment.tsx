@@ -112,27 +112,9 @@ export default function CustomModelDevelopment() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "legal-document-intelligence",
-          title: "Transforming legal research with AI-powered document intelligence",
-          industry: "Professional Services",
-          metric: "70%",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "healthcare-data-analytics",
-          title: "Unlocking healthcare insights with real-time data analytics",
-          industry: "Healthcare",
-          metric: "25%",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
-        {
-          slug: "fintech-payment-automation",
-          title: "Building a scalable payment processing system for a fintech startup",
-          industry: "Financial Services",
-          metric: "100K+",
-          image: "/images/industries/tech-datacenter.jpg",
-        },
+        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/artificial-intelligence/predictive-analytics", name: "Predictive Analytics" },

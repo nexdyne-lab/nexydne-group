@@ -109,27 +109,9 @@ export default function BusinessStrategy() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "accounting-audit-automation",
-          title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
-          industry: "Financial Services · Strategy",
-          metric: "50%",
-          image: "/images/capabilities/cap-telescope.jpg",
-        },
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Automates Loan Origination End-to-End",
-          industry: "Financial Services · Strategy",
-          metric: "70%",
-          image: "/images/industries/team-strategy-board.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
-          industry: "Financial Services · Strategy",
-          metric: "3x",
-          image: "/images/capabilities/cap-strategy-spheres.jpg",
-        },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance/performance-improvement", name: "Performance Improvement" },

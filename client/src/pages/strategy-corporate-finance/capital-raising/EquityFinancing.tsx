@@ -47,20 +47,8 @@ export default function StrategyCorporateFinanceCapitalRaisingEquityFinancing() 
         "Internal Capital Raising capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech Scales Cross-Border Payments With Intelligent Automation",
-          industry: "Financial Services · Strategy",
-          metric: "5x",
-          image: "/images/capabilities/cap-celebrate.jpg",
-        },
-        {
-          slug: "law-firm-contract-automation",
-          title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
-          industry: "Professional Services · Strategy",
-          metric: "85%",
-          image: "/images/industries/fin-trader.jpg",
-        },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
       ]}
       relatedServices={[
         { slug: "debt-financing", name: "Debt Financing", href: "/capabilities/strategy-corporate-finance/capital-raising/debt-financing" },

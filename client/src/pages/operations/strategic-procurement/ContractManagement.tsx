@@ -47,20 +47,8 @@ export default function OperationsStrategicProcurementContractManagement() {
         "Internal Strategic Procurement capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "law-firm-contract-automation",
-          title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
-          industry: "Professional Services · Operations",
-          metric: "85%",
-          image: "/images/industries/meeting-topview.jpg",
-        },
-        {
-          slug: "legal-document-intelligence",
-          title: "Global Legal Operations Team Deploys Document Intelligence at Scale",
-          industry: "Professional Services · Operations",
-          metric: "10x",
-          image: "/images/industries/advisor-charts.jpg",
-        },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
+        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/industries/fin-monitors.jpg" },
       ]}
       relatedServices={[
         { slug: "strategic-sourcing", name: "Strategic Sourcing", href: "/capabilities/operations/strategic-procurement/strategic-sourcing" },

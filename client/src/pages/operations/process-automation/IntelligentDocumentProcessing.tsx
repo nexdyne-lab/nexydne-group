@@ -47,27 +47,9 @@ export default function OperationsProcessAutomationIntelligentDocumentProcessing
         "Internal Process Automation capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "law-firm-contract-automation",
-          title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
-          industry: "Professional Services · Operations",
-          metric: "85%",
-          image: "/images/capabilities/cap-warehouse-robot.jpg",
-        },
-        {
-          slug: "legal-document-intelligence",
-          title: "Global Legal Operations Team Deploys Document Intelligence at Scale",
-          industry: "Professional Services · Operations",
-          metric: "10x",
-          image: "/images/industries/ops-gears.jpg",
-        },
-        {
-          slug: "insurance-claims-processing",
-          title: "P&C Insurer Cuts Claims Cycle Time with Intelligent Automation",
-          industry: "Financial Services · Operations",
-          metric: "55%",
-          image: "/images/capabilities/cap-circuit-green.jpg",
-        },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
+        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
       ]}
       relatedServices={[
         { slug: "process-assessment-prioritization", name: "Process Assessment & Prioritization", href: "/capabilities/operations/process-automation/process-assessment-prioritization" },

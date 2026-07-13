@@ -66,20 +66,8 @@ export default function RetentionEngagement() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "consulting-saas",
-          title: "Professional Services Firm Builds SaaS Product",
-          industry: "Professional Services · Business Building",
-          metric: "$3.2M",
-          image: "/images/capabilities/cap-celebrate.jpg",
-        },
-        {
-          slug: "wealth-adjacent",
-          title: "Financial Services Firm Enters Adjacent Market",
-          industry: "Financial Services · Business Building",
-          metric: "3x",
-          image: "/images/capabilities/cap-woman-motion.jpg",
-        },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "customer-acquisition", name: "Customer Acquisition", href: "/capabilities/business-building/growth-scaling/customer-acquisition" },

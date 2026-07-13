@@ -110,27 +110,9 @@ export default function MarketingOperations() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Automates Loan Origination End-to-End",
-          industry: "Financial Services · Automation",
-          metric: "70%",
-          image: "/images/capabilities/cap-retail-apparel.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Hospital Network Cuts Documentation Time Per Shift By Two Hours",
-          industry: "Healthcare · Workflow",
-          metric: "2hr",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
-        {
-          slug: "accounting-audit-automation",
-          title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
-          industry: "Financial Services · Audit",
-          metric: "50%",
-          image: "/images/capabilities/cap-telescope.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

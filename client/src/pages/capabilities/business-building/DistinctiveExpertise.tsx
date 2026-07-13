@@ -110,27 +110,9 @@ export default function DistinctiveExpertise() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "wealth-adjacent",
-          title: "Financial Services Firm Enters Adjacent Market",
-          industry: "Financial Services · Business Building",
-          metric: "65%",
-          image: "/images/capabilities/cap-venturing.jpg",
-        },
-        {
-          slug: "consulting-saas",
-          title: "Professional Services Firm Builds SaaS Product",
-          industry: "Professional Services · Business Building",
-          metric: "200+",
-          image: "/images/capabilities/cap-lightbulb-idea.jpg",
-        },
-        {
-          slug: "distributor-marketplace",
-          title: "Regional Distributor Launches Digital Marketplace",
-          industry: "Distribution · Business Building",
-          metric: "12",
-          image: "/images/capabilities/cap-celebrate.jpg",
-        },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
+        { slug: "pe-distribution-digital", title: "Standing up a carved-out distributor in six months", industry: "Private Equity", metric: "6 Months", image: "/images/industries/deal-handshake.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

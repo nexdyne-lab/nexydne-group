@@ -47,13 +47,7 @@ export default function StrategyCorporateFinancePerformanceImprovementPricingOpt
         "Internal Performance Improvement capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech Scales Cross-Border Payments With Intelligent Automation",
-          industry: "Financial Services · Strategy",
-          metric: "5x",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
       ]}
       relatedServices={[
         { slug: "cost-optimization", name: "Cost Optimization", href: "/capabilities/strategy-corporate-finance/performance-improvement/cost-optimization" },

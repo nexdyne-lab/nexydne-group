@@ -49,20 +49,8 @@ export default function CloudMigrationArchitecture() {
         "Production-grade success metrics dashboard tracking migration progress, post-cutover stability, cost performance, and the leading indicators that catch operational regression.",
       ]}
       featuredCases={[
-        {
-          slug: "insurance-claims-processing",
-          title: "320-application portfolio migrated in 18 months with zero customer-facing outages",
-          industry: "Insurance",
-          metric: "0 outages",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Replatform of 47 clinical applications cuts run-rate infrastructure cost by 38 percent",
-          industry: "Healthcare",
-          metric: "-38%",
-          image: "/images/capabilities/cap-circuit-green.jpg",
-        },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedServices={[
         { slug: "cloud-cost-optimization", name: "Cloud Cost Optimization", href: "/capabilities/technology/cloud-cost-optimization" },

@@ -110,27 +110,9 @@ export default function GreenGrowth() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Automates Loan Origination End-to-End",
-          industry: "Financial Services · Automation",
-          metric: "70%",
-          image: "/images/capabilities/cap-mobile-woman.jpg",
-        },
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech Cuts Payment Reconciliation Cost By Two Thirds",
-          industry: "Financial Services · Payments",
-          metric: "67%",
-          image: "/images/capabilities/cap-peacock.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Hospital Network Cuts Documentation Time Per Shift By Two Hours",
-          industry: "Healthcare · Workflow",
-          metric: "2hr",
-          image: "/images/capabilities/cap-data-bars.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

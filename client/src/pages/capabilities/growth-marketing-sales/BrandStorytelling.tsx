@@ -111,27 +111,9 @@ export default function BrandStorytelling() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "legal-document-intelligence",
-          title: "Legal Tech Vendor Launches Document Intelligence Platform For Mid-Market Firms",
-          industry: "Professional Services · Document AI",
-          metric: "10x",
-          image: "/images/capabilities/cap-data-bars.jpg",
-        },
-        {
-          slug: "telehealth-platform",
-          title: "Telehealth Platform Scales To Two Million Monthly Visits",
-          industry: "Healthcare · Telehealth",
-          metric: "2M",
-          image: "/images/capabilities/cap-celebrate.jpg",
-        },
-        {
-          slug: "accounting-audit-automation",
-          title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
-          industry: "Financial Services · Audit",
-          metric: "50%",
-          image: "/images/capabilities/cap-retail-apparel.jpg",
-        },
+        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

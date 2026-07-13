@@ -66,20 +66,8 @@ export default function OpportunityIdentification() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-telehealth",
-          title: "Healthcare Provider Launches Telehealth Venture",
-          industry: "Healthcare · Business Building",
-          metric: "5 Mo",
-          image: "/images/capabilities/cap-venturing.jpg",
-        },
-        {
-          slug: "wealth-adjacent",
-          title: "Financial Services Firm Enters Adjacent Market",
-          industry: "Financial Services · Business Building",
-          metric: "3x",
-          image: "/images/capabilities/cap-lightbulb-idea.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "concept-validation", name: "Concept Validation", href: "/capabilities/business-building/digital-venture-launch/concept-validation" },

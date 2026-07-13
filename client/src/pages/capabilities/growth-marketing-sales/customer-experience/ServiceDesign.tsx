@@ -66,20 +66,8 @@ export default function ServiceDesign() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-patient-engagement",
-          title: "Provider boosts patient engagement with omnichannel touch",
-          industry: "Healthcare · Customer Experience",
-          metric: "60%",
-          image: "/images/industries/advisor-charts.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Hospital system rebuilds clinical workflows with low-code",
-          industry: "Healthcare · Customer Experience",
-          metric: "45%",
-          image: "/images/capabilities/cap-colleagues-smile.jpg",
-        },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedServices={[
         { slug: "cx-strategy", name: "CX Strategy", href: "/capabilities/growth-marketing-sales/customer-experience/cx-strategy" },

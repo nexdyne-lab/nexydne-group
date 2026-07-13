@@ -66,20 +66,8 @@ export default function MarketingMixModeling() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Health system unifies patient data for population analytics",
-          industry: "Healthcare · Insights & Analytics",
-          metric: "3x",
-          image: "/images/capabilities/cap-hands-data.jpg",
-        },
-        {
-          slug: "consulting-knowledge-management",
-          title: "Consultancy unlocks 30 years of IP with AI knowledge graph",
-          industry: "Professional Services · Insights & Analytics",
-          metric: "4x",
-          image: "/images/capabilities/cap-data-bars.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
       ]}
       relatedServices={[
         { slug: "marketing-measurement", name: "Marketing Measurement", href: "/capabilities/growth-marketing-sales/insights-analytics/marketing-measurement" },

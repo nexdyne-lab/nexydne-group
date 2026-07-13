@@ -47,20 +47,8 @@ export default function OperationsProcessAutomationAutomationCenterOfExcellence(
         "Internal Process Automation capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "accounting-audit-automation",
-          title: "Big Four Firm Modernizes Audit with End-to-End Automation",
-          industry: "Professional Services · Operations",
-          metric: "40%",
-          image: "/images/capabilities/cap-warehouse-robot.jpg",
-        },
-        {
-          slug: "law-firm-contract-automation",
-          title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
-          industry: "Professional Services · Operations",
-          metric: "85%",
-          image: "/images/industries/ops-gears.jpg",
-        },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
       ]}
       relatedServices={[
         { slug: "process-assessment-prioritization", name: "Process Assessment & Prioritization", href: "/capabilities/operations/process-automation/process-assessment-prioritization" },

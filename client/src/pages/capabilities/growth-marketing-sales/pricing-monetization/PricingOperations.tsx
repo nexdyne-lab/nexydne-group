@@ -66,20 +66,8 @@ export default function PricingOperations() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech scales payment ops with intelligent automation",
-          industry: "Fintech · Pricing & Monetization",
-          metric: "5x",
-          image: "/images/capabilities/cap-chess.jpg",
-        },
-        {
-          slug: "accounting-audit-automation",
-          title: "Accounting firm modernizes audit workflows",
-          industry: "Professional Services · Pricing & Monetization",
-          metric: "40%",
-          image: "/images/capabilities/cap-data-bars.jpg",
-        },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
       ]}
       relatedServices={[
         { slug: "pricing-strategy", name: "Pricing Strategy", href: "/capabilities/growth-marketing-sales/pricing-monetization/pricing-strategy" },

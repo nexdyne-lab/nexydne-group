@@ -66,20 +66,8 @@ export default function CustomerAnalytics() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Health system unifies patient data for population analytics",
-          industry: "Healthcare · Insights & Analytics",
-          metric: "3x",
-          image: "/images/industries/fin-monitors.jpg",
-        },
-        {
-          slug: "bank-process-automation",
-          title: "Regional bank automates KYC and onboarding",
-          industry: "Financial Services · Insights & Analytics",
-          metric: "70%",
-          image: "/images/capabilities/cap-presenting-graphs.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
       ]}
       relatedServices={[
         { slug: "marketing-measurement", name: "Marketing Measurement", href: "/capabilities/growth-marketing-sales/insights-analytics/marketing-measurement" },

@@ -66,20 +66,8 @@ export default function CommerceAnalytics() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "telehealth-platform",
-          title: "Telehealth provider scales virtual care platform",
-          industry: "Healthcare · E-commerce",
-          metric: "5x",
-          image: "/images/capabilities/cap-tablet-woman.jpg",
-        },
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech scales payment ops with intelligent automation",
-          industry: "Fintech · E-commerce",
-          metric: "5x",
-          image: "/images/capabilities/cap-mobile-woman.jpg",
-        },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
       ]}
       relatedServices={[
         { slug: "platform-strategy", name: "Platform Strategy", href: "/capabilities/growth-marketing-sales/ecommerce/platform-strategy" },

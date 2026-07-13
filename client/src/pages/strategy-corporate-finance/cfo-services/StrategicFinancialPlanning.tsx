@@ -47,27 +47,9 @@ export default function StrategyCorporateFinanceCfoServicesStrategicFinancialPla
         "Internal Fractional CFO Services capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "accounting-audit-automation",
-          title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
-          industry: "Financial Services · Strategy",
-          metric: "50%",
-          image: "/images/capabilities/cap-presenting-graphs.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
-          industry: "Financial Services · Strategy",
-          metric: "3x",
-          image: "/images/industries/meeting-topview.jpg",
-        },
-        {
-          slug: "consulting-knowledge-management",
-          title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
-          industry: "Professional Services · Strategy",
-          metric: "60%",
-          image: "/images/industries/fin-monitors.jpg",
-        },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
       ]}
       relatedServices={[
         { slug: "cash-flow-management", name: "Cash Flow Management", href: "/capabilities/strategy-corporate-finance/cfo-services/cash-flow-management" },

@@ -112,27 +112,9 @@ export default function RiskResilience() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "insurance-claims-processing",
-          title: "Accelerating insurance claims processing with intelligent automation",
-          industry: "Financial Services",
-          metric: "85%",
-          image: "/images/industries/advisor-charts.jpg",
-        },
-        {
-          slug: "bank-process-automation",
-          title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
-          industry: "Financial Services",
-          metric: "10K+",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
-        {
-          slug: "accounting-audit-automation",
-          title: "How audit automation helped an accounting firm scale 2x without hiring",
-          industry: "Professional Services",
-          metric: "2x",
-          image: "/images/industries/fin-monitors.jpg",
-        },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/artificial-intelligence/predictive-analytics", name: "Predictive Analytics" },

@@ -112,27 +112,9 @@ export default function AIStrategyRoadmap() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "consulting-knowledge-management",
-          title: "Transforming knowledge management for a global consulting firm",
-          industry: "Professional Services",
-          metric: "3x",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
-        {
-          slug: "healthcare-patient-engagement",
-          title: "Building an AI-powered patient engagement platform for better outcomes",
-          industry: "Healthcare",
-          metric: "40%",
-          image: "/images/capabilities/cap-presenting-graphs.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Automating wealth management operations for better client experiences",
-          industry: "Financial Services",
-          metric: "45%",
-          image: "/images/industries/advisor-charts.jpg",
-        },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/artificial-intelligence/generative-ai", name: "Generative AI" },

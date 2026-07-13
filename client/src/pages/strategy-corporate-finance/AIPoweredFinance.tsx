@@ -109,27 +109,9 @@ export default function AIPoweredFinance() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "accounting-audit-automation",
-          title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
-          industry: "Financial Services · AI Finance",
-          metric: "50%",
-          image: "/images/capabilities/cap-telescope.jpg",
-        },
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Automates Loan Origination End-to-End",
-          industry: "Financial Services · AI Finance",
-          metric: "70%",
-          image: "/images/industries/team-strategy-board.jpg",
-        },
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech Scales Payment Operations Without Headcount Growth",
-          industry: "Financial Services · AI Finance",
-          metric: "5x",
-          image: "/images/capabilities/cap-strategy-spheres.jpg",
-        },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance/financial-planning-analysis", name: "Financial Planning & Analysis" },

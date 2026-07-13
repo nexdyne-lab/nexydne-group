@@ -64,20 +64,8 @@ export default function OperatingModel() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "telehealth-platform",
-          title: "Building a national telehealth platform from the ground up",
-          industry: "Healthcare",
-          metric: "12x",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Transforming clinical workflow at a leading academic medical center",
-          industry: "Healthcare",
-          metric: "40%",
-          image: "/images/capabilities/cap-presenting-graphs.jpg",
-        },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedServices={[
         { slug: "opportunity-assessment", name: "AI Opportunity Assessment", href: "/capabilities/artificial-intelligence/ai-strategy-roadmap/opportunity-assessment" },

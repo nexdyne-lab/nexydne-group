@@ -47,20 +47,8 @@ export default function OperationsProductDevelopmentAgileProductDevelopment() {
         "Internal Product Development capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "legal-document-intelligence",
-          title: "Global Legal Operations Team Deploys Document Intelligence at Scale",
-          industry: "Professional Services · Operations",
-          metric: "10x",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "consulting-knowledge-management",
-          title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
-          industry: "Professional Services · Operations",
-          metric: "60%",
-          image: "/images/capabilities/cap-tablet-woman.jpg",
-        },
+        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
       ]}
       relatedServices={[
         { slug: "npd-process-design", name: "NPD Process Design", href: "/capabilities/operations/product-development/npd-process-design" },

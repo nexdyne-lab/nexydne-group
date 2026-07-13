@@ -47,13 +47,7 @@ export default function StrategyCorporateFinanceMergersAcquisitionsCommercialDue
         "Internal Mergers & Acquisitions capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "law-firm-contract-automation",
-          title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
-          industry: "Professional Services · Strategy",
-          metric: "85%",
-          image: "/images/industries/fin-handshake-city.jpg",
-        },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
       ]}
       relatedServices={[
         { slug: "ma-strategy", name: "M&A Strategy", href: "/capabilities/strategy-corporate-finance/mergers-acquisitions/ma-strategy" },

@@ -66,20 +66,8 @@ export default function AiChangeManagement() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "wealth-adjacent",
-          title: "Financial Services Firm Enters Adjacent Market",
-          industry: "Financial Services · Business Building",
-          metric: "3x",
-          image: "/images/capabilities/cap-circuit-green.jpg",
-        },
-        {
-          slug: "manufacturer-dtc",
-          title: "Manufacturer Creates Direct-to-Consumer Channel",
-          industry: "Manufacturing · Business Building",
-          metric: "3x",
-          image: "/images/capabilities/cap-ai-search.jpg",
-        },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "automotive-ev-transition", title: "Retooling a supplier line for electric-vehicle parts", industry: "Automotive", metric: "45%", image: "/images/industries/auto-robotics-team.jpg" },
       ]}
       relatedServices={[
         { slug: "ai-strategy-roadmap", name: "AI Strategy & Roadmap", href: "/capabilities/business-building/ai-powered-acceleration/ai-strategy-roadmap" },

@@ -66,20 +66,8 @@ export default function ServiceBlueprinting() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "insurance-claims-processing",
-          title: "Insurer cuts claims handling time with NLP and OCR",
-          industry: "Insurance · Service Design",
-          metric: "65%",
-          image: "/images/capabilities/cap-mobile-woman.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Hospital system rebuilds clinical workflows with low-code",
-          industry: "Healthcare · Service Design",
-          metric: "45%",
-          image: "/images/capabilities/cap-colleagues-smile.jpg",
-        },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedServices={[
         { slug: "employee-experience-ex-design", name: "Employee Experience (EX) Design", href: "/capabilities/growth-marketing-sales/service-design/employee-experience-ex-design" },

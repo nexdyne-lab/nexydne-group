@@ -49,20 +49,8 @@ export default function SecurityCompliance() {
         "Permanent ongoing assurance program — quarterly control reviews, continuous monitoring dashboards, vendor risk cycle, and incident exercise calendar.",
       ]}
       featuredCases={[
-        {
-          slug: "law-firm-contract-automation",
-          title: "SOC 2 Type II clean opinion landed in 9 months with zero deal-blocking findings",
-          industry: "B2B SaaS",
-          metric: "0 findings",
-          image: "/images/capabilities/cap-data-bars.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "HIPAA and HITRUST control implementation across 22 clinical applications under a regulated cutover",
-          industry: "Healthcare",
-          metric: "22 apps",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedServices={[
         { slug: "security-and-compliance", name: "Enterprise Security & Compliance", href: "/capabilities/technology/security-and-compliance" },

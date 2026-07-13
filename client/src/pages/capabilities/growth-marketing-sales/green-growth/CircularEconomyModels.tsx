@@ -66,20 +66,8 @@ export default function CircularEconomyModels() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "consulting-knowledge-management",
-          title: "Consultancy unlocks 30 years of IP with AI knowledge graph",
-          industry: "Professional Services · Green Growth",
-          metric: "4x",
-          image: "/images/industries/energy-renewable-team.jpg",
-        },
-        {
-          slug: "legal-document-intelligence",
-          title: "In-house legal team builds doc intelligence platform",
-          industry: "Legal Services · Green Growth",
-          metric: "60%",
-          image: "/images/industries/energy-powerplant.jpg",
-        },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/industries/fin-monitors.jpg" },
       ]}
       relatedServices={[
         { slug: "sustainable-growth-strategy", name: "Sustainable Growth Strategy", href: "/capabilities/growth-marketing-sales/green-growth/sustainable-growth-strategy" },

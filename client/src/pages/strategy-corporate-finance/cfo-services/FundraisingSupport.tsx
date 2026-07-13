@@ -47,27 +47,9 @@ export default function StrategyCorporateFinanceCfoServicesFundraisingSupport() 
         "Internal Fractional CFO Services capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech Scales Cross-Border Payments With Intelligent Automation",
-          industry: "Financial Services · Strategy",
-          metric: "5x",
-          image: "/images/capabilities/cap-presenting-graphs.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
-          industry: "Financial Services · Strategy",
-          metric: "3x",
-          image: "/images/industries/meeting-topview.jpg",
-        },
-        {
-          slug: "law-firm-contract-automation",
-          title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
-          industry: "Professional Services · Strategy",
-          metric: "85%",
-          image: "/images/industries/fin-monitors.jpg",
-        },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
       ]}
       relatedServices={[
         { slug: "strategic-financial-planning", name: "Strategic Financial Planning", href: "/capabilities/strategy-corporate-finance/cfo-services/strategic-financial-planning" },

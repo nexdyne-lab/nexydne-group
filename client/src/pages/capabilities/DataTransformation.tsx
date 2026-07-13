@@ -92,27 +92,9 @@ export default function DataTransformation() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Unlocking healthcare insights with real-time data analytics",
-          industry: "Healthcare",
-          metric: "25%",
-          image: "/case-healthcare-team.5797392b.jpg",
-        },
-        {
-          slug: "bank-process-automation",
-          title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
-          industry: "Financial Services",
-          metric: "10K+",
-          image: "/case-banker-meeting.c53f3999.jpg",
-        },
-        {
-          slug: "consulting-knowledge-management",
-          title: "Transforming knowledge management for a global consulting firm",
-          industry: "Professional Services",
-          metric: "3x",
-          image: "/case-strategy-consulting.dfdd1294.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/artificial-intelligence", name: "Artificial Intelligence" },

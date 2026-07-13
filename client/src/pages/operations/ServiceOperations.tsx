@@ -109,27 +109,9 @@ export default function ServiceOperations() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "telehealth-platform",
-          title: "Health System Launches Telehealth Platform at Scale",
-          industry: "Healthcare · Operations",
-          metric: "10x",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
-        {
-          slug: "healthcare-patient-engagement",
-          title: "Healthcare Network Boosts Patient Engagement Through Digital Tools",
-          industry: "Healthcare · Operations",
-          metric: "48%",
-          image: "/images/industries/meeting-topview.jpg",
-        },
-        {
-          slug: "insurance-claims-processing",
-          title: "Insurer Cuts Claims Cycle Time and Improves Decision Accuracy",
-          industry: "Insurance · Operations",
-          metric: "60%",
-          image: "/images/capabilities/cap-presenting-graphs.jpg",
-        },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

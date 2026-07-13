@@ -64,20 +64,8 @@ export default function GovernanceResponsibleAi() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "insurance-claims-processing",
-          title: "Reinventing claims processing for a top-five insurer",
-          industry: "Financial Services",
-          metric: "55%",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "accounting-audit-automation",
-          title: "AI-powered audit automation at a Big Four accounting firm",
-          industry: "Professional Services",
-          metric: "45%",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
       ]}
       relatedServices={[
         { slug: "strategy-roadmap", name: "GenAI Strategy & Roadmap", href: "/capabilities/artificial-intelligence/generative-ai/strategy-roadmap" },

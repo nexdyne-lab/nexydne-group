@@ -64,13 +64,7 @@ export default function VendorSelection() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "accounting-audit-automation",
-          title: "AI-powered audit automation at a Big Four accounting firm",
-          industry: "Professional Services",
-          metric: "45%",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
       ]}
       relatedServices={[
         { slug: "opportunity-assessment", name: "AI Opportunity Assessment", href: "/capabilities/artificial-intelligence/ai-strategy-roadmap/opportunity-assessment" },

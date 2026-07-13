@@ -47,13 +47,7 @@ export default function StrategyCorporateFinancePerformanceImprovementOrganizati
         "Internal Performance Improvement capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Health System Unlocks Population Health Insights With Unified Data Platform",
-          industry: "Healthcare · Strategy",
-          metric: "40%",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
       ]}
       relatedServices={[
         { slug: "cost-optimization", name: "Cost Optimization", href: "/capabilities/strategy-corporate-finance/performance-improvement/cost-optimization" },

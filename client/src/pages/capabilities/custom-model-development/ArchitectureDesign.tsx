@@ -64,13 +64,7 @@ export default function ArchitectureDesign() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Unlocking enterprise data for a national healthcare network",
-          industry: "Healthcare",
-          metric: "10x",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
       ]}
       relatedServices={[
         { slug: "foundation-fine-tuning", name: "Foundation Model Fine-Tuning", href: "/capabilities/artificial-intelligence/custom-model-development/foundation-fine-tuning" },

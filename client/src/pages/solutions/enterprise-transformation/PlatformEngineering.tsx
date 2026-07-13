@@ -49,20 +49,8 @@ export default function PlatformEngineering() {
         "Platform operating model — org design, RACI, capability planning cadence, deprecation policy, customer support model, and the product-team operating standards.",
       ]}
       featuredCases={[
-        {
-          slug: "consulting-knowledge-management",
-          title: "Internal developer platform onboards 84 application teams in 11 months with 92 percent satisfaction",
-          industry: "Technology",
-          metric: "84 teams",
-          image: "/images/capabilities/cap-aerial-grid.jpg",
-        },
-        {
-          slug: "legal-document-intelligence",
-          title: "Platform team replaces 14 separate provisioning ticket queues with one self-service portal",
-          industry: "Financial Services",
-          metric: "14 → 1",
-          image: "/images/capabilities/cap-dome-blue.jpg",
-        },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/industries/fin-monitors.jpg" },
       ]}
       relatedServices={[
         { slug: "devops-cicd", name: "DevOps & CI/CD", href: "/capabilities/technology/devops-cicd" },

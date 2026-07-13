@@ -66,20 +66,8 @@ export default function GrowthAnalytics() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech scales payment ops with intelligent automation",
-          industry: "Fintech · Growth Strategy",
-          metric: "5x",
-          image: "/images/capabilities/cap-celebrate.jpg",
-        },
-        {
-          slug: "telehealth-platform",
-          title: "Telehealth provider scales virtual care platform",
-          industry: "Healthcare · Growth Strategy",
-          metric: "5x",
-          image: "/images/capabilities/cap-data-bars.jpg",
-        },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
       ]}
       relatedServices={[
         { slug: "market-entry-strategy", name: "Market Entry Strategy", href: "/capabilities/growth-marketing-sales/growth-strategy/market-entry-strategy" },

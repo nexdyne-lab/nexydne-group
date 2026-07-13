@@ -66,13 +66,7 @@ export default function TeamProcessSetup() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "logistics-tech-spinoff",
-          title: "Logistics Company Builds Technology Spin-Off",
-          industry: "Logistics · Business Building",
-          metric: "$28M",
-          image: "/images/capabilities/cap-venturing.jpg",
-        },
+        { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", industry: "Manufacturing", metric: "$30M", image: "/images/capabilities/cap-battery-factory.jpg" },
       ]}
       relatedServices={[
         { slug: "opportunity-identification", name: "Opportunity Identification", href: "/capabilities/business-building/digital-venture-launch/opportunity-identification" },

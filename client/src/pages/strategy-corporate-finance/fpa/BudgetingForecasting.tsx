@@ -47,27 +47,9 @@ export default function StrategyCorporateFinanceFpaBudgetingForecasting() {
         "Internal Financial Planning & Analysis capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "accounting-audit-automation",
-          title: "Accounting Firm Cuts Audit Cycle Time By Half With Workflow Automation",
-          industry: "Financial Services · Strategy",
-          metric: "50%",
-          image: "/images/capabilities/cap-presenting-graphs.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
-          industry: "Financial Services · Strategy",
-          metric: "3x",
-          image: "/images/industries/fin-monitors.jpg",
-        },
-        {
-          slug: "healthcare-data-analytics",
-          title: "Health System Unlocks Population Health Insights With Unified Data Platform",
-          industry: "Healthcare · Strategy",
-          metric: "40%",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
       ]}
       relatedServices={[
         { slug: "variance-analysis", name: "Variance Analysis", href: "/capabilities/strategy-corporate-finance/fpa/variance-analysis" },

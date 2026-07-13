@@ -64,20 +64,8 @@ export default function CustomAgents() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "law-firm-contract-automation",
-          title: "How contract automation transformed a leading law firm’s operations",
-          industry: "Professional Services",
-          metric: "65%",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "healthcare-patient-engagement",
-          title: "AI-driven patient engagement for a major hospital system",
-          industry: "Healthcare",
-          metric: "35%",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "strategy-roadmap", name: "GenAI Strategy & Roadmap", href: "/capabilities/artificial-intelligence/generative-ai/strategy-roadmap" },

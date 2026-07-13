@@ -66,13 +66,7 @@ export default function CapabilityMigration() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "ecommerce-platform-launch",
-          title: "Industrial Distributor Launches B2B E-commerce Platform",
-          industry: "Industrial Distribution · Business Building",
-          metric: "35%",
-          image: "/images/capabilities/cap-aerial-grid.jpg",
-        },
+        { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", industry: "Retail", metric: "85%", image: "/images/capabilities/cap-retail-apparel.jpg" },
       ]}
       relatedServices={[
         { slug: "architecture-assessment", name: "Architecture Assessment", href: "/capabilities/business-building/digital-transformation-accelerator/architecture-assessment" },

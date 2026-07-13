@@ -47,20 +47,8 @@ export default function OperationsProductDevelopmentInnovationManagement() {
         "Internal Product Development capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "consulting-knowledge-management",
-          title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
-          industry: "Professional Services · Operations",
-          metric: "60%",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "law-firm-contract-automation",
-          title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
-          industry: "Professional Services · Operations",
-          metric: "85%",
-          image: "/images/capabilities/cap-tablet-woman.jpg",
-        },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
       ]}
       relatedServices={[
         { slug: "npd-process-design", name: "NPD Process Design", href: "/capabilities/operations/product-development/npd-process-design" },

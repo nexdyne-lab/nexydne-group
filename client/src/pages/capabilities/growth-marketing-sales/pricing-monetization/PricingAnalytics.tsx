@@ -66,20 +66,8 @@ export default function PricingAnalytics() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech scales payment ops with intelligent automation",
-          industry: "Fintech · Pricing & Monetization",
-          metric: "5x",
-          image: "/images/capabilities/cap-hands-data.jpg",
-        },
-        {
-          slug: "bank-process-automation",
-          title: "Regional bank automates KYC and onboarding",
-          industry: "Financial Services · Pricing & Monetization",
-          metric: "70%",
-          image: "/images/capabilities/cap-chess.jpg",
-        },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
       ]}
       relatedServices={[
         { slug: "pricing-strategy", name: "Pricing Strategy", href: "/capabilities/growth-marketing-sales/pricing-monetization/pricing-strategy" },

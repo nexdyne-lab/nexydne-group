@@ -47,20 +47,8 @@ export default function OperationsWorkforceOptimizationWorkforcePlanning() {
         "Internal Workforce Optimization capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "telehealth-platform",
-          title: "National Telehealth Provider Scales Operations 10x",
-          industry: "Healthcare · Operations",
-          metric: "10x",
-          image: "/images/capabilities/cap-colleagues.jpg",
-        },
-        {
-          slug: "consulting-knowledge-management",
-          title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
-          industry: "Professional Services · Operations",
-          metric: "60%",
-          image: "/images/industries/biz-team-bright.jpg",
-        },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
       ]}
       relatedServices={[
         { slug: "capability-building", name: "Capability Building", href: "/capabilities/operations/workforce-optimization/capability-building" },

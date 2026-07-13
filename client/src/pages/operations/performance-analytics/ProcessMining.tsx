@@ -47,27 +47,9 @@ export default function OperationsPerformanceAnalyticsProcessMining() {
         "Internal Performance Analytics capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Automates Loan Origination End-to-End",
-          industry: "Financial Services · Operations",
-          metric: "70%",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
-        {
-          slug: "insurance-claims-processing",
-          title: "P&C Insurer Cuts Claims Cycle Time with Intelligent Automation",
-          industry: "Financial Services · Operations",
-          metric: "55%",
-          image: "/images/industries/fin-monitors.jpg",
-        },
-        {
-          slug: "law-firm-contract-automation",
-          title: "AmLaw 200 Firm Automates Contract Review Across 12 Practice Areas",
-          industry: "Professional Services · Operations",
-          metric: "85%",
-          image: "/images/capabilities/cap-presenting-graphs.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
       ]}
       relatedServices={[
         { slug: "kpi-framework-design", name: "KPI Framework Design", href: "/capabilities/operations/performance-analytics/kpi-framework-design" },

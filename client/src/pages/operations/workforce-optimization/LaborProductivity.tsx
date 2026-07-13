@@ -47,27 +47,9 @@ export default function OperationsWorkforceOptimizationLaborProductivity() {
         "Internal Workforce Optimization capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Automates Loan Origination End-to-End",
-          industry: "Financial Services · Operations",
-          metric: "70%",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "insurance-claims-processing",
-          title: "P&C Insurer Cuts Claims Cycle Time with Intelligent Automation",
-          industry: "Financial Services · Operations",
-          metric: "55%",
-          image: "/images/capabilities/cap-tablet-woman.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Academic Medical Center Streamlines Clinical Workflows",
-          industry: "Healthcare · Operations",
-          metric: "30%",
-          image: "/images/capabilities/cap-dome-blue.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedServices={[
         { slug: "workforce-planning", name: "Workforce Planning", href: "/capabilities/operations/workforce-optimization/workforce-planning" },

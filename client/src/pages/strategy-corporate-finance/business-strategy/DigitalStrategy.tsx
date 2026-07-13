@@ -47,27 +47,9 @@ export default function StrategyCorporateFinanceBusinessStrategyDigitalStrategy(
         "Internal Business Strategy & Transformation capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Automates Loan Origination End-to-End",
-          industry: "Financial Services · Strategy",
-          metric: "70%",
-          image: "/images/capabilities/cap-telescope.jpg",
-        },
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech Scales Cross-Border Payments With Intelligent Automation",
-          industry: "Financial Services · Strategy",
-          metric: "5x",
-          image: "/images/industries/team-strategy-board.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
-          industry: "Financial Services · Strategy",
-          metric: "3x",
-          image: "/images/capabilities/cap-strategy-spheres.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "strategic-planning", name: "Strategic Planning", href: "/capabilities/strategy-corporate-finance/business-strategy/strategic-planning" },

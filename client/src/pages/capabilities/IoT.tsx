@@ -94,27 +94,9 @@ export default function IoT() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
-          industry: "Financial Services",
-          metric: "10K+",
-          image: "/case-banker-meeting.c53f3999.jpg",
-        },
-        {
-          slug: "healthcare-data-analytics",
-          title: "Unlocking healthcare insights with real-time data analytics",
-          industry: "Healthcare",
-          metric: "25%",
-          image: "/case-healthcare-team.5797392b.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Optimizing clinical workflows to save 15 hours per physician weekly",
-          industry: "Healthcare",
-          metric: "15hrs",
-          image: "/case-medical-collaboration.9602cc8c.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/artificial-intelligence/digital-twins", name: "Digital Twins" },

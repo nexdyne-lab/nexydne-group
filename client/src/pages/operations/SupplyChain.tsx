@@ -109,27 +109,9 @@ export default function SupplyChainOptimization() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Automates Loan Origination End-to-End",
-          industry: "Financial Services · Operations",
-          metric: "70%",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech Scales Payment Operations Without Headcount Growth",
-          industry: "Financial Services · Operations",
-          metric: "5x",
-          image: "/images/industries/meeting-topview.jpg",
-        },
-        {
-          slug: "healthcare-data-analytics",
-          title: "Health System Builds Population Health Analytics Platform",
-          industry: "Healthcare · Operations",
-          metric: "$18M",
-          image: "/images/capabilities/cap-presenting-graphs.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

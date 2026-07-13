@@ -47,13 +47,7 @@ export default function OperationsProductionOptimizationAssetLifecycleManagement
         "Internal Production Optimization capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth Manager Automates Client Onboarding and Portfolio Reporting",
-          industry: "Financial Services · Operations",
-          metric: "75%",
-          image: "/images/capabilities/cap-battery-factory.jpg",
-        },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "oee-improvement", name: "OEE Improvement", href: "/capabilities/operations/production-optimization/oee-improvement" },

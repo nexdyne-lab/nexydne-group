@@ -66,13 +66,7 @@ export default function SalesProcessOptimization() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "wealth-adjacent",
-          title: "Financial Services Firm Enters Adjacent Market",
-          industry: "Financial Services · Business Building",
-          metric: "3x",
-          image: "/images/industries/deal-handshake.jpg",
-        },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "partner-network-access", name: "Partner Network Access", href: "/capabilities/business-building/go-to-market-scale/partner-network-access" },

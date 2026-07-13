@@ -94,27 +94,9 @@ export default function StrategyAdvisoryHub() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth manager modernizes legacy advisor platform on a unified API layer",
-          industry: "Financial Services · Technology",
-          metric: "35%",
-          image: "/images/case-wealth-management-automation.jpg",
-        },
-        {
-          slug: "consulting-knowledge-management",
-          title: "Consultancy unifies 20 years of project knowledge on a single data platform",
-          industry: "Professional Services · Technology",
-          metric: "80%",
-          image: "/images/case-consulting-knowledge-management.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Hospital network rebuilds clinical workflow on a unified data platform",
-          industry: "Healthcare · Technology",
-          metric: "20",
-          image: "/images/case-hospital-clinical-workflow.jpg",
-        },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/operations", name: "Operations" },

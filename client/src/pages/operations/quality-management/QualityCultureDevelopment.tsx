@@ -47,20 +47,8 @@ export default function OperationsQualityManagementQualityCultureDevelopment() {
         "Internal Quality Management capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "consulting-knowledge-management",
-          title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
-          industry: "Professional Services · Operations",
-          metric: "60%",
-          image: "/images/capabilities/cap-battery-factory.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Academic Medical Center Streamlines Clinical Workflows",
-          industry: "Healthcare · Operations",
-          metric: "30%",
-          image: "/images/industries/mfg-robot-arm.jpg",
-        },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedServices={[
         { slug: "quality-strategy-governance", name: "Quality Strategy & Governance", href: "/capabilities/operations/quality-management/quality-strategy-governance" },

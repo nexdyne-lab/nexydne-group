@@ -112,27 +112,9 @@ export default function DigitalTransformationAccelerator() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "logistics-tech-spinoff",
-          title: "Logistics Company Builds Technology Spin-Off",
-          industry: "Logistics · Business Building",
-          metric: "70%",
-          image: "/images/capabilities/cap-venturing.jpg",
-        },
-        {
-          slug: "consulting-saas",
-          title: "Professional Services Firm Builds SaaS Product",
-          industry: "Professional Services · Business Building",
-          metric: "99.9%",
-          image: "/images/capabilities/cap-lightbulb-idea.jpg",
-        },
-        {
-          slug: "ecommerce-platform-launch",
-          title: "Industrial Distributor Launches B2B E-commerce Platform",
-          industry: "Industrial Distribution · Business Building",
-          metric: "40-60%",
-          image: "/images/capabilities/cap-celebrate.jpg",
-        },
+        { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", industry: "Manufacturing", metric: "$30M", image: "/images/capabilities/cap-battery-factory.jpg" },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
+        { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", industry: "Retail", metric: "85%", image: "/images/capabilities/cap-retail-apparel.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

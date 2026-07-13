@@ -88,27 +88,9 @@ export default function SecurityComplianceHub() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "insurance-claims-processing",
-          title: "Insurer rebuilds claims platform on event-driven architecture",
-          industry: "Insurance · Technology",
-          metric: "60%",
-          image: "/images/case-insurance-claims-processing.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth manager modernizes legacy advisor platform on a unified API layer",
-          industry: "Financial Services · Technology",
-          metric: "35%",
-          image: "/images/case-wealth-management-automation.jpg",
-        },
-        {
-          slug: "law-firm-contract-automation",
-          title: "Law firm replaces aging matter-management estate on a modern API layer",
-          industry: "Professional Services · Technology",
-          metric: "40%",
-          image: "/images/case-law-firm-contract-automation.jpg",
-        },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/operations", name: "Operations" },

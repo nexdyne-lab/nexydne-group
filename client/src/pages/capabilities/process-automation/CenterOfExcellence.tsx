@@ -64,13 +64,7 @@ export default function CenterOfExcellence() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "How a regional bank cut loan processing time by 80% with intelligent automation",
-          industry: "Financial Services",
-          metric: "80%",
-          image: "/case-banker-meeting.c53f3999.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
       ]}
       relatedServices={[
         { slug: "process-mining", name: "Process Mining & Discovery", href: "/capabilities/artificial-intelligence/process-automation/process-mining" },

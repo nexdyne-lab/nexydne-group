@@ -47,20 +47,8 @@ export default function OperationsQualityManagementQualityAnalyticsTechnology() 
         "Internal Quality Management capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Health System Builds Population Health Analytics Platform",
-          industry: "Healthcare · Operations",
-          metric: "$18M",
-          image: "/images/capabilities/cap-battery-factory.jpg",
-        },
-        {
-          slug: "insurance-claims-processing",
-          title: "P&C Insurer Cuts Claims Cycle Time with Intelligent Automation",
-          industry: "Financial Services · Operations",
-          metric: "55%",
-          image: "/images/industries/mfg-robot-arm.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
       ]}
       relatedServices={[
         { slug: "quality-strategy-governance", name: "Quality Strategy & Governance", href: "/capabilities/operations/quality-management/quality-strategy-governance" },

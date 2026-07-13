@@ -47,20 +47,8 @@ export default function OperationsQualityManagementQualityStrategyGovernance() {
         "Internal Quality Management capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "accounting-audit-automation",
-          title: "Big Four Firm Modernizes Audit with End-to-End Automation",
-          industry: "Professional Services · Operations",
-          metric: "40%",
-          image: "/images/capabilities/cap-battery-factory.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Academic Medical Center Streamlines Clinical Workflows",
-          industry: "Healthcare · Operations",
-          metric: "30%",
-          image: "/images/industries/mfg-robot-arm.jpg",
-        },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedServices={[
         { slug: "process-quality-improvement", name: "Process Quality Improvement", href: "/capabilities/operations/quality-management/process-quality-improvement" },

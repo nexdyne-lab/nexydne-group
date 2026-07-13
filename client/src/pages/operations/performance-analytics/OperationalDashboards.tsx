@@ -47,20 +47,8 @@ export default function OperationsPerformanceAnalyticsOperationalDashboards() {
         "Internal Performance Analytics capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Health System Builds Population Health Analytics Platform",
-          industry: "Healthcare · Operations",
-          metric: "$18M",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech Scales Payment Operations Without Headcount Growth",
-          industry: "Financial Services · Operations",
-          metric: "5x",
-          image: "/images/industries/fin-monitors.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
       ]}
       relatedServices={[
         { slug: "kpi-framework-design", name: "KPI Framework Design", href: "/capabilities/operations/performance-analytics/kpi-framework-design" },

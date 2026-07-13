@@ -100,27 +100,9 @@ export default function CloudInfrastructureHub() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Healthcare network migrates core systems to AWS without disruption",
-          industry: "Healthcare · Technology",
-          metric: "38%",
-          image: "/images/case-healthcare-data-analytics.jpg",
-        },
-        {
-          slug: "telehealth-platform",
-          title: "Telehealth platform re-architects for elastic scale to millions of patients",
-          industry: "Healthcare · Technology",
-          metric: "10x",
-          image: "/images/case-telehealth-platform.jpg",
-        },
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech replatforms monolith into microservices and cuts release cycle to weekly",
-          industry: "Financial Services · Technology",
-          metric: "Weekly",
-          image: "/images/case-fintech-payment-automation.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/operations", name: "Operations" },

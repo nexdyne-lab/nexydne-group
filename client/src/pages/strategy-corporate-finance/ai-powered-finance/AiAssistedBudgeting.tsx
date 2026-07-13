@@ -47,13 +47,7 @@ export default function StrategyCorporateFinanceAiPoweredFinanceAiAssistedBudget
         "Internal AI-Powered Finance capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Health System Unlocks Population Health Insights With Unified Data Platform",
-          industry: "Healthcare · Strategy",
-          metric: "40%",
-          image: "/images/capabilities/cap-telescope.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
       ]}
       relatedServices={[
         { slug: "automated-financial-reporting", name: "Automated Financial Reporting", href: "/capabilities/strategy-corporate-finance/ai-powered-finance/automated-financial-reporting" },

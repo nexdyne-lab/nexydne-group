@@ -66,20 +66,8 @@ export default function MartechStrategy() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "accounting-audit-automation",
-          title: "Accounting firm modernizes audit workflows",
-          industry: "Professional Services · Marketing Operations",
-          metric: "40%",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "law-firm-contract-automation",
-          title: "Law firm slashes contract review with secure GenAI",
-          industry: "Legal Services · Marketing Operations",
-          metric: "50%",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
       ]}
       relatedServices={[
         { slug: "process-optimization", name: "Process Optimization", href: "/capabilities/growth-marketing-sales/marketing-operations/process-optimization" },

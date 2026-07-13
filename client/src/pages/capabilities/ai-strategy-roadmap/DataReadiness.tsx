@@ -64,20 +64,8 @@ export default function DataReadiness() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Unlocking enterprise data for a national healthcare network",
-          industry: "Healthcare",
-          metric: "10x",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Transforming clinical workflow at a leading academic medical center",
-          industry: "Healthcare",
-          metric: "40%",
-          image: "/images/capabilities/cap-presenting-graphs.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedServices={[
         { slug: "opportunity-assessment", name: "AI Opportunity Assessment", href: "/capabilities/artificial-intelligence/ai-strategy-roadmap/opportunity-assessment" },

@@ -66,13 +66,7 @@ export default function ScaleUpTransition() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-telehealth",
-          title: "Healthcare Provider Launches Telehealth Venture",
-          industry: "Healthcare · Business Building",
-          metric: "5 Mo",
-          image: "/images/capabilities/cap-lightbulb-idea.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
       ]}
       relatedServices={[
         { slug: "hypothesis-development", name: "Hypothesis Development", href: "/capabilities/business-building/rapid-innovation-testing/hypothesis-development" },

@@ -64,20 +64,8 @@ export default function StrategyRoadmap() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "consulting-knowledge-management",
-          title: "Transforming knowledge management for a global consulting firm",
-          industry: "Professional Services",
-          metric: "3x",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "law-firm-contract-automation",
-          title: "How contract automation transformed a leading law firm’s operations",
-          industry: "Professional Services",
-          metric: "65%",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
       ]}
       relatedServices={[
         { slug: "technical-architecture", name: "Technical Architecture", href: "/capabilities/artificial-intelligence/generative-ai/technical-architecture" },

@@ -66,13 +66,7 @@ export default function BaselineAssessment() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "wealth-adjacent",
-          title: "Financial Services Firm Enters Adjacent Market",
-          industry: "Financial Services · Business Building",
-          metric: "3x",
-          image: "/images/capabilities/cap-data-bars.jpg",
-        },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "framework-development", name: "Framework Development", href: "/capabilities/business-building/performance-intelligence-benchmarking/framework-development" },

@@ -66,20 +66,8 @@ export default function CustomerDataPlatforms() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "accounting-audit-automation",
-          title: "Accounting firm modernizes audit workflows",
-          industry: "Professional Services · MarTech Stack",
-          metric: "40%",
-          image: "/images/capabilities/cap-3d-printing.jpg",
-        },
-        {
-          slug: "telehealth-platform",
-          title: "Telehealth provider scales virtual care platform",
-          industry: "Healthcare · MarTech Stack",
-          metric: "5x",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
       ]}
       relatedServices={[
         { slug: "martech-strategy", name: "MarTech Strategy", href: "/capabilities/growth-marketing-sales/martech-stack/martech-strategy" },

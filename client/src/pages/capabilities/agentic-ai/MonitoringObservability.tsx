@@ -64,20 +64,8 @@ export default function MonitoringObservability() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "fintech-payment-automation",
-          title: "Scaling a fintech payment platform with AI-driven automation",
-          industry: "Financial Services",
-          metric: "5x",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "accounting-audit-automation",
-          title: "AI-powered audit automation at a Big Four accounting firm",
-          industry: "Professional Services",
-          metric: "45%",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
       ]}
       relatedServices={[
         { slug: "agent-architecture", name: "Agent Architecture Design", href: "/capabilities/artificial-intelligence/agentic-ai/agent-architecture" },

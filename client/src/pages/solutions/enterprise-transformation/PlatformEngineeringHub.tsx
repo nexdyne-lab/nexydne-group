@@ -88,27 +88,9 @@ export default function PlatformEngineeringHub() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-patient-engagement",
-          title: "Health system stands up an internal developer platform for clinical apps",
-          industry: "Healthcare · Technology",
-          metric: "70%",
-          image: "/images/case-healthcare-patient-engagement.jpg",
-        },
-        {
-          slug: "consulting-knowledge-management",
-          title: "Consultancy unifies 20 years of project knowledge on a single data platform",
-          industry: "Professional Services · Technology",
-          metric: "80%",
-          image: "/images/case-consulting-knowledge-management.jpg",
-        },
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech replatforms monolith into microservices and cuts release cycle to weekly",
-          industry: "Financial Services · Technology",
-          metric: "Weekly",
-          image: "/images/case-fintech-payment-automation.jpg",
-        },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/operations", name: "Operations" },

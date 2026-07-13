@@ -64,13 +64,7 @@ export default function BusinessContinuity() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Transforming clinical workflow at a leading academic medical center",
-          industry: "Healthcare",
-          metric: "40%",
-          image: "/images/industries/advisor-charts.jpg",
-        },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedServices={[
         { slug: "risk-assessment-strategy", name: "Risk Assessment & Strategy", href: "/capabilities/artificial-intelligence/risk-resilience/risk-assessment-strategy" },

@@ -47,20 +47,8 @@ export default function StrategyCorporateFinancePerformanceImprovementWorkingCap
         "Internal Performance Improvement capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Automates Loan Origination End-to-End",
-          industry: "Financial Services · Strategy",
-          metric: "70%",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
-        {
-          slug: "insurance-claims-processing",
-          title: "Insurer Slashes Claims Processing Time With Intelligent Workflow",
-          industry: "Financial Services · Strategy",
-          metric: "65%",
-          image: "/images/industries/fin-monitors.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
       ]}
       relatedServices={[
         { slug: "cost-optimization", name: "Cost Optimization", href: "/capabilities/strategy-corporate-finance/performance-improvement/cost-optimization" },

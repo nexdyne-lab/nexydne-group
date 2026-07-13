@@ -49,20 +49,8 @@ export default function CostOptimization() {
         "IT cost governance framework — operating model with monthly reviews, quarterly vendor re-baselining, annual portfolio rationalization, and the architecture review gates that hold the gain.",
       ]}
       featuredCases={[
-        {
-          slug: "accounting-audit-automation",
-          title: "Application portfolio rationalization unlocks $47M of annualized run-cost across three regions",
-          industry: "Global Manufacturing",
-          metric: "$47M/yr",
-          image: "/images/capabilities/cap-aerial-grid.jpg",
-        },
-        {
-          slug: "law-firm-contract-automation",
-          title: "Vendor consolidation and contract renegotiation retire 23 percent of IT third-party spend",
-          industry: "Retail & Consumer",
-          metric: "-23%",
-          image: "/images/capabilities/cap-dome-blue.jpg",
-        },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
       ]}
       relatedServices={[
         { slug: "cloud-cost-optimization", name: "Cloud Cost Optimization", href: "/capabilities/technology/cloud-cost-optimization" },

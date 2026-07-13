@@ -64,13 +64,7 @@ export default function IotIntegration() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "telehealth-platform",
-          title: "Building a national telehealth platform from the ground up",
-          industry: "Healthcare",
-          metric: "12x",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
       ]}
       relatedServices={[
         { slug: "strategy", name: "Digital Twin Strategy", href: "/capabilities/artificial-intelligence/digital-twins/strategy" },

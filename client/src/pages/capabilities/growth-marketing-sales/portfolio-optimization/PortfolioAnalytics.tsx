@@ -66,20 +66,8 @@ export default function PortfolioAnalytics() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "accounting-audit-automation",
-          title: "Accounting firm modernizes audit workflows",
-          industry: "Professional Services · Portfolio Optimization",
-          metric: "40%",
-          image: "/images/capabilities/cap-aerial-grid.jpg",
-        },
-        {
-          slug: "healthcare-data-analytics",
-          title: "Health system unifies patient data for population analytics",
-          industry: "Healthcare · Portfolio Optimization",
-          metric: "3x",
-          image: "/images/capabilities/cap-presenting-graphs.jpg",
-        },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
       ]}
       relatedServices={[
         { slug: "portfolio-strategy", name: "Portfolio Strategy", href: "/capabilities/growth-marketing-sales/portfolio-optimization/portfolio-strategy" },

@@ -66,20 +66,8 @@ export default function CustomerAcquisition() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "manufacturer-dtc",
-          title: "Manufacturer Creates Direct-to-Consumer Channel",
-          industry: "Manufacturing · Business Building",
-          metric: "3x",
-          image: "/images/capabilities/cap-celebrate.jpg",
-        },
-        {
-          slug: "ecommerce-platform-launch",
-          title: "Industrial Distributor Launches B2B E-commerce Platform",
-          industry: "Industrial Distribution · Business Building",
-          metric: "35%",
-          image: "/images/capabilities/cap-woman-motion.jpg",
-        },
+        { slug: "automotive-ev-transition", title: "Retooling a supplier line for electric-vehicle parts", industry: "Automotive", metric: "45%", image: "/images/industries/auto-robotics-team.jpg" },
+        { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", industry: "Retail", metric: "85%", image: "/images/capabilities/cap-retail-apparel.jpg" },
       ]}
       relatedServices={[
         { slug: "retention-engagement", name: "Retention & Engagement", href: "/capabilities/business-building/growth-scaling/retention-engagement" },

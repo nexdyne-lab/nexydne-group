@@ -111,27 +111,9 @@ export default function ServiceDesign() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-patient-engagement",
-          title: "Health Network Lifts Patient Engagement Score By 38 Points",
-          industry: "Healthcare · Engagement",
-          metric: "38pt",
-          image: "/images/capabilities/cap-peacock.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
-          industry: "Financial Services · Wealth",
-          metric: "3x",
-          image: "/images/capabilities/cap-data-bars.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Hospital Network Cuts Documentation Time Per Shift By Two Hours",
-          industry: "Healthcare · Workflow",
-          metric: "2hr",
-          image: "/images/capabilities/cap-celebrate.jpg",
-        },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

@@ -66,20 +66,8 @@ export default function RevenueOptimization() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "wealth-adjacent",
-          title: "Financial Services Firm Enters Adjacent Market",
-          industry: "Financial Services · Business Building",
-          metric: "3x",
-          image: "/images/capabilities/cap-celebrate.jpg",
-        },
-        {
-          slug: "manufacturer-dtc",
-          title: "Manufacturer Creates Direct-to-Consumer Channel",
-          industry: "Manufacturing · Business Building",
-          metric: "3x",
-          image: "/images/capabilities/cap-woman-motion.jpg",
-        },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "automotive-ev-transition", title: "Retooling a supplier line for electric-vehicle parts", industry: "Automotive", metric: "45%", image: "/images/industries/auto-robotics-team.jpg" },
       ]}
       relatedServices={[
         { slug: "customer-acquisition", name: "Customer Acquisition", href: "/capabilities/business-building/growth-scaling/customer-acquisition" },

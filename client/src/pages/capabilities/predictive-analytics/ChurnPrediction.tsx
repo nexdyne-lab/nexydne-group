@@ -64,13 +64,7 @@ export default function ChurnPrediction() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-patient-engagement",
-          title: "AI-driven patient engagement for a major hospital system",
-          industry: "Healthcare",
-          metric: "35%",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "demand-forecasting", name: "Demand Forecasting", href: "/capabilities/artificial-intelligence/predictive-analytics/demand-forecasting" },

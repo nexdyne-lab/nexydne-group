@@ -47,20 +47,8 @@ export default function OperationsStrategicProcurementSupplierManagement() {
         "Internal Strategic Procurement capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "accounting-audit-automation",
-          title: "Big Four Firm Modernizes Audit with End-to-End Automation",
-          industry: "Professional Services · Operations",
-          metric: "40%",
-          image: "/images/industries/meeting-topview.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth Manager Automates Client Onboarding and Portfolio Reporting",
-          industry: "Financial Services · Operations",
-          metric: "75%",
-          image: "/images/industries/advisor-charts.jpg",
-        },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "strategic-sourcing", name: "Strategic Sourcing", href: "/capabilities/operations/strategic-procurement/strategic-sourcing" },

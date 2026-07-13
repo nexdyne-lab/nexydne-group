@@ -66,20 +66,8 @@ export default function ChurnPrevention() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-patient-engagement",
-          title: "Provider boosts patient engagement with omnichannel touch",
-          industry: "Healthcare · Retention & Loyalty",
-          metric: "60%",
-          image: "/images/capabilities/cap-office-women.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth manager personalizes onboarding for HNW clients",
-          industry: "Wealth Management · Retention & Loyalty",
-          metric: "3x",
-          image: "/images/capabilities/cap-peacock.jpg",
-        },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "loyalty-program-design", name: "Loyalty Program Design", href: "/capabilities/growth-marketing-sales/retention-loyalty/loyalty-program-design" },

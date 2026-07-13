@@ -64,27 +64,9 @@ export default function IntelligentDocumentProcessing() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "law-firm-contract-automation",
-          title: "How contract automation transformed a leading law firm’s operations",
-          industry: "Professional Services",
-          metric: "65%",
-          image: "/case-law-firm-meeting.401c96db.jpg",
-        },
-        {
-          slug: "insurance-claims-processing",
-          title: "Reinventing claims processing for a top-five insurer",
-          industry: "Financial Services",
-          metric: "55%",
-          image: "/case-insurance-claims.399e5d4b.jpg",
-        },
-        {
-          slug: "accounting-audit-automation",
-          title: "AI-powered audit automation at a Big Four accounting firm",
-          industry: "Professional Services",
-          metric: "45%",
-          image: "/case-accountants-audit.1c87a151.jpg",
-        },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
       ]}
       relatedServices={[
         { slug: "process-mining", name: "Process Mining & Discovery", href: "/capabilities/artificial-intelligence/process-automation/process-mining" },

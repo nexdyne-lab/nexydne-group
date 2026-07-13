@@ -110,27 +110,9 @@ export default function GrowthStrategy() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Automates Loan Origination End-to-End",
-          industry: "Financial Services · Automation",
-          metric: "70%",
-          image: "/images/capabilities/cap-peacock.jpg",
-        },
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech Cuts Payment Reconciliation Cost By Two Thirds",
-          industry: "Financial Services · Payments",
-          metric: "67%",
-          image: "/images/capabilities/cap-data-bars.jpg",
-        },
-        {
-          slug: "legal-document-intelligence",
-          title: "Legal Tech Vendor Launches Document Intelligence Platform For Mid-Market Firms",
-          industry: "Professional Services · Document AI",
-          metric: "10x",
-          image: "/images/capabilities/cap-celebrate.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/industries/fin-monitors.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

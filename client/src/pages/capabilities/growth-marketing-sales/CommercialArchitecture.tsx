@@ -112,27 +112,9 @@ export default function CommercialArchitecture() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Automates Loan Origination End-to-End",
-          industry: "Financial Services · Automation",
-          metric: "70%",
-          image: "/images/capabilities/cap-retail-apparel.jpg",
-        },
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech Cuts Payment Reconciliation Cost By Two Thirds",
-          industry: "Financial Services · Payments",
-          metric: "67%",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
-        {
-          slug: "telehealth-platform",
-          title: "Telehealth Platform Scales To Two Million Monthly Visits",
-          industry: "Healthcare · Telehealth",
-          metric: "2M",
-          image: "/images/capabilities/cap-telescope.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

@@ -110,27 +110,9 @@ export default function InsightsAnalytics() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Health System Builds Unified Analytics Platform Across 18 Hospitals",
-          industry: "Healthcare · Analytics",
-          metric: "18",
-          image: "/images/capabilities/cap-data-bars.jpg",
-        },
-        {
-          slug: "consulting-knowledge-management",
-          title: "Consulting Firm Builds AI Knowledge Engine Across 40,000 Engagements",
-          industry: "Professional Services · Knowledge",
-          metric: "40k+",
-          image: "/images/capabilities/cap-celebrate.jpg",
-        },
-        {
-          slug: "law-firm-contract-automation",
-          title: "Global Law Firm Cuts Contract Review Time By 60% With AI Automation",
-          industry: "Professional Services · Automation",
-          metric: "60%",
-          image: "/images/capabilities/cap-retail-apparel.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

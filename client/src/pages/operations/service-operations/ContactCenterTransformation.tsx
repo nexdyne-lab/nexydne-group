@@ -47,20 +47,8 @@ export default function OperationsServiceOperationsContactCenterTransformation()
         "Internal Service Operations capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "telehealth-platform",
-          title: "National Telehealth Provider Scales Operations 10x",
-          industry: "Healthcare · Operations",
-          metric: "10x",
-          image: "/images/capabilities/cap-colleagues-smile.jpg",
-        },
-        {
-          slug: "healthcare-patient-engagement",
-          title: "Provider Network Lifts Patient Engagement with Digital Operations",
-          industry: "Healthcare · Operations",
-          metric: "3x",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "service-delivery-optimization", name: "Service Delivery Optimization", href: "/capabilities/operations/service-operations/service-delivery-optimization" },

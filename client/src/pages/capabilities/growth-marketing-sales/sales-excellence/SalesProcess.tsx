@@ -66,20 +66,8 @@ export default function SalesProcess() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Hospital system rebuilds clinical workflows with low-code",
-          industry: "Healthcare · Sales Excellence",
-          metric: "45%",
-          image: "/images/capabilities/cap-presenting-graphs.jpg",
-        },
-        {
-          slug: "legal-document-intelligence",
-          title: "In-house legal team builds doc intelligence platform",
-          industry: "Legal Services · Sales Excellence",
-          metric: "60%",
-          image: "/images/industries/meeting-topview.jpg",
-        },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
+        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/industries/fin-monitors.jpg" },
       ]}
       relatedServices={[
         { slug: "sales-strategy", name: "Sales Strategy", href: "/capabilities/growth-marketing-sales/sales-excellence/sales-strategy" },

@@ -66,13 +66,7 @@ export default function ArchitectureAssessment() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "logistics-tech-spinoff",
-          title: "Logistics Company Builds Technology Spin-Off",
-          industry: "Logistics · Business Building",
-          metric: "$28M",
-          image: "/images/capabilities/cap-aerial-grid.jpg",
-        },
+        { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", industry: "Manufacturing", metric: "$30M", image: "/images/capabilities/cap-battery-factory.jpg" },
       ]}
       relatedServices={[
         { slug: "foundation-build", name: "Foundation Build", href: "/capabilities/business-building/digital-transformation-accelerator/foundation-build" },

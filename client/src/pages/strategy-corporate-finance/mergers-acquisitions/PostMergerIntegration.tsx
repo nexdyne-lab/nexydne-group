@@ -47,20 +47,8 @@ export default function StrategyCorporateFinanceMergersAcquisitionsPostMergerInt
         "Internal Mergers & Acquisitions capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Automates Loan Origination End-to-End",
-          industry: "Financial Services · Strategy",
-          metric: "70%",
-          image: "/images/industries/fin-handshake-city.jpg",
-        },
-        {
-          slug: "insurance-claims-processing",
-          title: "Insurer Slashes Claims Processing Time With Intelligent Workflow",
-          industry: "Financial Services · Strategy",
-          metric: "65%",
-          image: "/images/industries/meeting-topview.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
       ]}
       relatedServices={[
         { slug: "ma-strategy", name: "M&A Strategy", href: "/capabilities/strategy-corporate-finance/mergers-acquisitions/ma-strategy" },

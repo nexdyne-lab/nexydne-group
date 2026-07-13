@@ -66,20 +66,8 @@ export default function SkuRationalization() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "accounting-audit-automation",
-          title: "Accounting firm modernizes audit workflows",
-          industry: "Professional Services · Portfolio Optimization",
-          metric: "40%",
-          image: "/images/capabilities/cap-retail-apparel.jpg",
-        },
-        {
-          slug: "legal-document-intelligence",
-          title: "In-house legal team builds doc intelligence platform",
-          industry: "Legal Services · Portfolio Optimization",
-          metric: "60%",
-          image: "/images/capabilities/cap-chess.jpg",
-        },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/industries/fin-monitors.jpg" },
       ]}
       relatedServices={[
         { slug: "portfolio-strategy", name: "Portfolio Strategy", href: "/capabilities/growth-marketing-sales/portfolio-optimization/portfolio-strategy" },

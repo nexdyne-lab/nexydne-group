@@ -48,20 +48,8 @@ export default function DevOpsAutomation() {
         "DevOps maturity assessment against DORA peers and the eighteen-month roadmap that closes the gap.",
       ]}
       featuredCases={[
-        {
-          slug: "fintech-payment-automation",
-          title: "B2B SaaS Cuts Lead Time from Six Days to Four Hours",
-          industry: "SaaS & Technology",
-          metric: "6 days → 4 hrs",
-          image: "/images/capabilities/cap-robot-factory.jpg",
-        },
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Achieves Zero-Downtime Deploys with Canary Pipeline",
-          industry: "Financial Services",
-          metric: "0 downtime",
-          image: "/images/capabilities/cap-warehouse-robot.jpg",
-        },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
       ]}
       relatedServices={[
         { slug: "devops-cicd", name: "DevOps & CI/CD", href: "/capabilities/technology/devops-cicd" },

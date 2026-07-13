@@ -109,27 +109,9 @@ export default function QualityManagement() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "insurance-claims-processing",
-          title: "Insurer Cuts Claims Cycle Time and Improves Decision Accuracy",
-          industry: "Insurance · Operations",
-          metric: "60%",
-          image: "/images/capabilities/cap-battery-factory.jpg",
-        },
-        {
-          slug: "accounting-audit-automation",
-          title: "Accounting Firm Automates Audit Workpapers Across Engagements",
-          industry: "Professional Services · Operations",
-          metric: "45%",
-          image: "/images/industries/mfg-robot-arm.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Hospital Standardizes Clinical Workflows Across Service Lines",
-          industry: "Healthcare · Operations",
-          metric: "32%",
-          image: "/images/capabilities/cap-robot-factory.jpg",
-        },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

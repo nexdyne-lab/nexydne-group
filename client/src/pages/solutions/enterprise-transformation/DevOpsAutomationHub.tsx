@@ -88,27 +88,9 @@ export default function DevOpsAutomationHub() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech replatforms monolith into microservices and cuts release cycle to weekly",
-          industry: "Financial Services · Technology",
-          metric: "Weekly",
-          image: "/images/case-fintech-payment-automation.jpg",
-        },
-        {
-          slug: "accounting-audit-automation",
-          title: "Accounting firm modernizes audit platform with CI/CD and observability",
-          industry: "Professional Services · Technology",
-          metric: "45%",
-          image: "/images/case-accounting-audit-automation.jpg",
-        },
-        {
-          slug: "bank-process-automation",
-          title: "Bank rebuilds core platform on cloud-native architecture and reduces infra cost",
-          industry: "Financial Services · Technology",
-          metric: "30%",
-          image: "/images/case-bank-process-automation.jpg",
-        },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/operations", name: "Operations" },

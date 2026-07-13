@@ -66,13 +66,7 @@ export default function FeaturePrioritization() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "consulting-saas",
-          title: "Professional Services Firm Builds SaaS Product",
-          industry: "Professional Services · Business Building",
-          metric: "$3.2M",
-          image: "/images/capabilities/cap-3d-printing.jpg",
-        },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
       ]}
       relatedServices={[
         { slug: "product-vision-roadmap", name: "Product Vision & Roadmap", href: "/capabilities/business-building/product-strategy-design/product-vision-roadmap" },

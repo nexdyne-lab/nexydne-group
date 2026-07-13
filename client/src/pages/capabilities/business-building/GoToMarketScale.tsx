@@ -110,27 +110,9 @@ export default function GoToMarketScale() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "manufacturer-dtc",
-          title: "Manufacturer Creates Direct-to-Consumer Channel",
-          industry: "Manufacturing · Business Building",
-          metric: "55%",
-          image: "/images/capabilities/cap-venturing.jpg",
-        },
-        {
-          slug: "distributor-marketplace",
-          title: "Regional Distributor Launches Digital Marketplace",
-          industry: "Distribution · Business Building",
-          metric: "85+",
-          image: "/images/capabilities/cap-lightbulb-idea.jpg",
-        },
-        {
-          slug: "ecommerce-platform-launch",
-          title: "Industrial Distributor Launches B2B E-commerce Platform",
-          industry: "Industrial Distribution · Business Building",
-          metric: "3x",
-          image: "/images/capabilities/cap-celebrate.jpg",
-        },
+        { slug: "automotive-ev-transition", title: "Retooling a supplier line for electric-vehicle parts", industry: "Automotive", metric: "45%", image: "/images/industries/auto-robotics-team.jpg" },
+        { slug: "pe-distribution-digital", title: "Standing up a carved-out distributor in six months", industry: "Private Equity", metric: "6 Months", image: "/images/industries/deal-handshake.jpg" },
+        { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", industry: "Retail", metric: "85%", image: "/images/capabilities/cap-retail-apparel.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

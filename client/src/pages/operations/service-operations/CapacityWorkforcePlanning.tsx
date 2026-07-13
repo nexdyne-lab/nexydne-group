@@ -47,20 +47,8 @@ export default function OperationsServiceOperationsCapacityWorkforcePlanning() {
         "Internal Service Operations capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "telehealth-platform",
-          title: "National Telehealth Provider Scales Operations 10x",
-          industry: "Healthcare · Operations",
-          metric: "10x",
-          image: "/images/capabilities/cap-colleagues-smile.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Academic Medical Center Streamlines Clinical Workflows",
-          industry: "Healthcare · Operations",
-          metric: "30%",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedServices={[
         { slug: "service-delivery-optimization", name: "Service Delivery Optimization", href: "/capabilities/operations/service-operations/service-delivery-optimization" },

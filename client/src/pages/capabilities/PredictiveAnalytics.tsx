@@ -112,27 +112,9 @@ export default function PredictiveAnalytics() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Unlocking healthcare insights with real-time data analytics",
-          industry: "Healthcare",
-          metric: "25%",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
-        {
-          slug: "insurance-claims-processing",
-          title: "Accelerating insurance claims processing with intelligent automation",
-          industry: "Financial Services",
-          metric: "85%",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
-        {
-          slug: "fintech-payment-automation",
-          title: "Building a scalable payment processing system for a fintech startup",
-          industry: "Financial Services",
-          metric: "100K+",
-          image: "/images/industries/advisor-charts.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/data-transformation", name: "Data Transformation" },

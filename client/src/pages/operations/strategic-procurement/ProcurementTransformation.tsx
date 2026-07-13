@@ -47,20 +47,8 @@ export default function OperationsStrategicProcurementProcurementTransformation(
         "Internal Strategic Procurement capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "accounting-audit-automation",
-          title: "Big Four Firm Modernizes Audit with End-to-End Automation",
-          industry: "Professional Services · Operations",
-          metric: "40%",
-          image: "/images/industries/meeting-topview.jpg",
-        },
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech Scales Payment Operations Without Headcount Growth",
-          industry: "Financial Services · Operations",
-          metric: "5x",
-          image: "/images/industries/advisor-charts.jpg",
-        },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
       ]}
       relatedServices={[
         { slug: "strategic-sourcing", name: "Strategic Sourcing", href: "/capabilities/operations/strategic-procurement/strategic-sourcing" },

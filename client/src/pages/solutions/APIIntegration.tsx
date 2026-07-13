@@ -48,20 +48,8 @@ export default function APIIntegration() {
         "Legacy System API Enablement — modern API wrappers for COBOL, AS/400, and aging on-prem systems without the multi-year replatform.",
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Launches Open-Banking API and Onboards 40 Partners in Six Months",
-          industry: "Financial Services",
-          metric: "40 partners",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "healthcare-patient-engagement",
-          title: "Health Insurer Modernizes Legacy Mainframe with API Layer — No Replatform",
-          industry: "Healthcare",
-          metric: "0 replatform",
-          image: "/images/capabilities/cap-circuit-green.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "legacy-modernization", name: "Legacy Modernization", href: "/capabilities/technology/legacy-modernization" },

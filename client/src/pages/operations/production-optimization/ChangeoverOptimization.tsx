@@ -47,13 +47,7 @@ export default function OperationsProductionOptimizationChangeoverOptimization()
         "Internal Production Optimization capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Academic Medical Center Streamlines Clinical Workflows",
-          industry: "Healthcare · Operations",
-          metric: "30%",
-          image: "/images/capabilities/cap-battery-factory.jpg",
-        },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedServices={[
         { slug: "oee-improvement", name: "OEE Improvement", href: "/capabilities/operations/production-optimization/oee-improvement" },

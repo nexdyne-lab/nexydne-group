@@ -111,27 +111,9 @@ export default function ProcessAutomation() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
-          industry: "Financial Services",
-          metric: "10K+",
-          image: "/case-banker-meeting.c53f3999.jpg",
-        },
-        {
-          slug: "accounting-audit-automation",
-          title: "How audit automation helped an accounting firm scale 2x without hiring",
-          industry: "Professional Services",
-          metric: "2x",
-          image: "/case-accountants-audit.1c87a151.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Automating wealth management operations for better client experiences",
-          industry: "Financial Services",
-          metric: "45%",
-          image: "/case-advisor-client.eb15e04e.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/artificial-intelligence/agentic-ai", name: "Agentic AI" },

@@ -47,20 +47,8 @@ export default function OperationsProductionOptimizationProductionScheduling() {
         "Internal Production Optimization capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Academic Medical Center Streamlines Clinical Workflows",
-          industry: "Healthcare · Operations",
-          metric: "30%",
-          image: "/images/capabilities/cap-battery-factory.jpg",
-        },
-        {
-          slug: "telehealth-platform",
-          title: "National Telehealth Provider Scales Operations 10x",
-          industry: "Healthcare · Operations",
-          metric: "10x",
-          image: "/images/industries/mfg-robot-arm.jpg",
-        },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
       ]}
       relatedServices={[
         { slug: "oee-improvement", name: "OEE Improvement", href: "/capabilities/operations/production-optimization/oee-improvement" },

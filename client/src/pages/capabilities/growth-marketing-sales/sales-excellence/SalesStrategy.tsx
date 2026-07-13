@@ -66,20 +66,8 @@ export default function SalesStrategy() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "accounting-audit-automation",
-          title: "Accounting firm modernizes audit workflows",
-          industry: "Professional Services · Sales Excellence",
-          metric: "40%",
-          image: "/images/industries/meeting-topview.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Hospital system rebuilds clinical workflows with low-code",
-          industry: "Healthcare · Sales Excellence",
-          metric: "45%",
-          image: "/images/capabilities/cap-colleagues.jpg",
-        },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedServices={[
         { slug: "sales-process", name: "Sales Process", href: "/capabilities/growth-marketing-sales/sales-excellence/sales-process" },

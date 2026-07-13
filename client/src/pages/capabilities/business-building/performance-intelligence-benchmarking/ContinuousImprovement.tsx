@@ -66,20 +66,8 @@ export default function ContinuousImprovement() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "consulting-saas",
-          title: "Professional Services Firm Builds SaaS Product",
-          industry: "Professional Services · Business Building",
-          metric: "$3.2M",
-          image: "/images/capabilities/cap-data-bars.jpg",
-        },
-        {
-          slug: "manufacturer-dtc",
-          title: "Manufacturer Creates Direct-to-Consumer Channel",
-          industry: "Manufacturing · Business Building",
-          metric: "3x",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
+        { slug: "automotive-ev-transition", title: "Retooling a supplier line for electric-vehicle parts", industry: "Automotive", metric: "45%", image: "/images/industries/auto-robotics-team.jpg" },
       ]}
       relatedServices={[
         { slug: "baseline-assessment", name: "Baseline Assessment", href: "/capabilities/business-building/performance-intelligence-benchmarking/baseline-assessment" },

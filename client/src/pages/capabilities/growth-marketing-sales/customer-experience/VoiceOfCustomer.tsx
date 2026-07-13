@@ -66,20 +66,8 @@ export default function VoiceOfCustomer() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-patient-engagement",
-          title: "Provider boosts patient engagement with omnichannel touch",
-          industry: "Healthcare · Customer Experience",
-          metric: "60%",
-          image: "/images/capabilities/cap-colleagues-smile.jpg",
-        },
-        {
-          slug: "insurance-claims-processing",
-          title: "Insurer cuts claims handling time with NLP and OCR",
-          industry: "Insurance · Customer Experience",
-          metric: "65%",
-          image: "/images/capabilities/cap-office-women.jpg",
-        },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
       ]}
       relatedServices={[
         { slug: "cx-strategy", name: "CX Strategy", href: "/capabilities/growth-marketing-sales/customer-experience/cx-strategy" },

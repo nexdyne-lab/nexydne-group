@@ -49,20 +49,8 @@ export default function TechnologyDueDiligence() {
         "Post-deal technology roadmap — first-100-days plan, integration or value-creation program, milestones, and the portfolio reporting cadence.",
       ]}
       featuredCases={[
-        {
-          slug: "wealth-management-automation",
-          title: "Diligence on a vertical SaaS platform repriced the deal by 18 percent and cleared the IC the same week",
-          industry: "Private Equity",
-          metric: "-18% reprice",
-          image: "/images/capabilities/cap-aerial-grid.jpg",
-        },
-        {
-          slug: "accounting-audit-automation",
-          title: "Acquisition diligence flags 11 integration risks that converted into condition-precedent triggers",
-          industry: "Strategic M&A",
-          metric: "11 triggers",
-          image: "/images/capabilities/cap-dome-blue.jpg",
-        },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
       ]}
       relatedServices={[
         { slug: "technology-strategy", name: "Technology Strategy", href: "/capabilities/technology/technology-strategy" },

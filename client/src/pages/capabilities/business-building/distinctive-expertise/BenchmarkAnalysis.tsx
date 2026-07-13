@@ -66,20 +66,8 @@ export default function BenchmarkAnalysis() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "wealth-adjacent",
-          title: "Financial Services Firm Enters Adjacent Market",
-          industry: "Financial Services · Business Building",
-          metric: "3x",
-          image: "/images/capabilities/cap-colleagues.jpg",
-        },
-        {
-          slug: "distributor-marketplace",
-          title: "Regional Distributor Launches Digital Marketplace",
-          industry: "Distribution · Business Building",
-          metric: "$50M+",
-          image: "/images/capabilities/cap-women-meeting.jpg",
-        },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "pe-distribution-digital", title: "Standing up a carved-out distributor in six months", industry: "Private Equity", metric: "6 Months", image: "/images/industries/deal-handshake.jpg" },
       ]}
       relatedServices={[
         { slug: "playbook-selection", name: "Playbook Selection", href: "/capabilities/business-building/distinctive-expertise/playbook-selection" },

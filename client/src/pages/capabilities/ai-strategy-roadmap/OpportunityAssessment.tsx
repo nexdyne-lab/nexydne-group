@@ -64,20 +64,8 @@ export default function OpportunityAssessment() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Unlocking enterprise data for a national healthcare network",
-          industry: "Healthcare",
-          metric: "10x",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
-        {
-          slug: "telehealth-platform",
-          title: "Building a national telehealth platform from the ground up",
-          industry: "Healthcare",
-          metric: "12x",
-          image: "/images/capabilities/cap-presenting-graphs.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
       ]}
       relatedServices={[
         { slug: "business-case", name: "Business Case Development", href: "/capabilities/artificial-intelligence/ai-strategy-roadmap/business-case" },

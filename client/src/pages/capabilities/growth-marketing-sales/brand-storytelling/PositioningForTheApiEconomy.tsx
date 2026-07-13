@@ -66,20 +66,8 @@ export default function PositioningForTheApiEconomy() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-patient-engagement",
-          title: "Provider boosts patient engagement with omnichannel touch",
-          industry: "Healthcare · Brand & Storytelling",
-          metric: "60%",
-          image: "/images/capabilities/cap-peacock.jpg",
-        },
-        {
-          slug: "telehealth-platform",
-          title: "Telehealth provider scales virtual care platform",
-          industry: "Healthcare · Brand & Storytelling",
-          metric: "5x",
-          image: "/images/capabilities/cap-mobile-woman.jpg",
-        },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
       ]}
       relatedServices={[
         { slug: "humanizing-complex-architectures", name: "Humanizing Complex Architectures", href: "/capabilities/growth-marketing-sales/brand-storytelling/humanizing-complex-architectures" },

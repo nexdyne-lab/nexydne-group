@@ -47,20 +47,8 @@ export default function OperationsWorkforceOptimizationOrganizationalDesign() {
         "Internal Workforce Optimization capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "consulting-knowledge-management",
-          title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
-          industry: "Professional Services · Operations",
-          metric: "60%",
-          image: "/images/capabilities/cap-colleagues.jpg",
-        },
-        {
-          slug: "telehealth-platform",
-          title: "National Telehealth Provider Scales Operations 10x",
-          industry: "Healthcare · Operations",
-          metric: "10x",
-          image: "/images/industries/biz-team-bright.jpg",
-        },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
       ]}
       relatedServices={[
         { slug: "workforce-planning", name: "Workforce Planning", href: "/capabilities/operations/workforce-optimization/workforce-planning" },

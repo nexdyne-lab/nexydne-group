@@ -110,27 +110,9 @@ export default function ConsumerShopperInsights() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Health System Builds Unified Analytics Platform Across 18 Hospitals",
-          industry: "Healthcare · Analytics",
-          metric: "18",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
-        {
-          slug: "consulting-knowledge-management",
-          title: "Consulting Firm Builds AI Knowledge Engine Across 40,000 Engagements",
-          industry: "Professional Services · Knowledge",
-          metric: "40k+",
-          image: "/images/capabilities/cap-telescope.jpg",
-        },
-        {
-          slug: "healthcare-patient-engagement",
-          title: "Health Network Lifts Patient Engagement Score By 38 Points",
-          industry: "Healthcare · Engagement",
-          metric: "38pt",
-          image: "/images/industries/deal-handshake.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

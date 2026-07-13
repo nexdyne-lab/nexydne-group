@@ -64,20 +64,8 @@ export default function RegulatoryCompliance() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "accounting-audit-automation",
-          title: "AI-powered audit automation at a Big Four accounting firm",
-          industry: "Professional Services",
-          metric: "45%",
-          image: "/images/industries/advisor-charts.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Automating client onboarding for a global wealth management firm",
-          industry: "Financial Services",
-          metric: "60%",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "risk-assessment-strategy", name: "Risk Assessment & Strategy", href: "/capabilities/artificial-intelligence/risk-resilience/risk-assessment-strategy" },

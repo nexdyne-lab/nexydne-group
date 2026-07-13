@@ -108,27 +108,9 @@ export default function PerformanceAnalytics() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Health System Builds Population Health Analytics Platform",
-          industry: "Healthcare · Operations",
-          metric: "$18M",
-          image: "/images/capabilities/cap-data-bars.jpg",
-        },
-        {
-          slug: "accounting-audit-automation",
-          title: "Accounting Firm Automates Audit Workpapers Across Engagements",
-          industry: "Professional Services · Operations",
-          metric: "45%",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth Manager Automates Onboarding and Client Servicing",
-          industry: "Financial Services · Operations",
-          metric: "55%",
-          image: "/images/industries/fin-monitors.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

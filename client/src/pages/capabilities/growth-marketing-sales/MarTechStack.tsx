@@ -110,27 +110,9 @@ export default function MarTechStack() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Automates Loan Origination End-to-End",
-          industry: "Financial Services · Automation",
-          metric: "70%",
-          image: "/images/capabilities/cap-celebrate.jpg",
-        },
-        {
-          slug: "legal-document-intelligence",
-          title: "Legal Tech Vendor Launches Document Intelligence Platform For Mid-Market Firms",
-          industry: "Professional Services · Document AI",
-          metric: "10x",
-          image: "/images/capabilities/cap-retail-apparel.jpg",
-        },
-        {
-          slug: "telehealth-platform",
-          title: "Telehealth Platform Scales To Two Million Monthly Visits",
-          industry: "Healthcare · Telehealth",
-          metric: "2M",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

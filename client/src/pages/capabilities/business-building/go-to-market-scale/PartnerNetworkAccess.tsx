@@ -66,20 +66,8 @@ export default function PartnerNetworkAccess() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "distributor-marketplace",
-          title: "Regional Distributor Launches Digital Marketplace",
-          industry: "Distribution · Business Building",
-          metric: "$50M+",
-          image: "/images/industries/deal-handshake.jpg",
-        },
-        {
-          slug: "ecommerce-platform-launch",
-          title: "Industrial Distributor Launches B2B E-commerce Platform",
-          industry: "Industrial Distribution · Business Building",
-          metric: "35%",
-          image: "/images/industries/fin-handshake-city.jpg",
-        },
+        { slug: "pe-distribution-digital", title: "Standing up a carved-out distributor in six months", industry: "Private Equity", metric: "6 Months", image: "/images/industries/deal-handshake.jpg" },
+        { slug: "fashion-retail-digital-transformation", title: "Growing a fashion retailer's online sales by 85%", industry: "Retail", metric: "85%", image: "/images/capabilities/cap-retail-apparel.jpg" },
       ]}
       relatedServices={[
         { slug: "channel-strategy-design", name: "Channel Strategy Design", href: "/capabilities/business-building/go-to-market-scale/channel-strategy-design" },

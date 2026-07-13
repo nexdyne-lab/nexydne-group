@@ -63,20 +63,8 @@ export default function ProcessMining() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "How a regional bank cut loan processing time by 80% with intelligent automation",
-          industry: "Financial Services",
-          metric: "80%",
-          image: "/case-banker-meeting.c53f3999.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Automating client onboarding for a global wealth management firm",
-          industry: "Financial Services",
-          metric: "60%",
-          image: "/case-advisor-client.eb15e04e.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "rpa-implementation", name: "RPA Implementation", href: "/capabilities/artificial-intelligence/process-automation/rpa-implementation" },

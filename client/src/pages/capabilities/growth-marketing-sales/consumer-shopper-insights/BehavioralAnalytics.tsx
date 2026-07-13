@@ -66,20 +66,8 @@ export default function BehavioralAnalytics() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Health system unifies patient data for population analytics",
-          industry: "Healthcare · Consumer & Shopper Insights",
-          metric: "3x",
-          image: "/images/capabilities/cap-retail-data.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Hospital system rebuilds clinical workflows with low-code",
-          industry: "Healthcare · Consumer & Shopper Insights",
-          metric: "45%",
-          image: "/images/capabilities/cap-mobile-woman.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedServices={[
         { slug: "customer-segmentation", name: "Customer Segmentation", href: "/capabilities/growth-marketing-sales/consumer-shopper-insights/customer-segmentation" },

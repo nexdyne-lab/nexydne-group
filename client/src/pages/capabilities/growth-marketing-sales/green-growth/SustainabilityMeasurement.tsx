@@ -66,20 +66,8 @@ export default function SustainabilityMeasurement() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "consulting-knowledge-management",
-          title: "Consultancy unlocks 30 years of IP with AI knowledge graph",
-          industry: "Professional Services · Green Growth",
-          metric: "4x",
-          image: "/images/industries/energy-renewable-team.jpg",
-        },
-        {
-          slug: "law-firm-contract-automation",
-          title: "Law firm slashes contract review with secure GenAI",
-          industry: "Legal Services · Green Growth",
-          metric: "50%",
-          image: "/images/industries/energy-powerplant.jpg",
-        },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
       ]}
       relatedServices={[
         { slug: "sustainable-growth-strategy", name: "Sustainable Growth Strategy", href: "/capabilities/growth-marketing-sales/green-growth/sustainable-growth-strategy" },

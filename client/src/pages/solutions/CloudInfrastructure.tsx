@@ -48,20 +48,8 @@ export default function CloudInfrastructure() {
         "Internal developer platforms that turn cloud capability into developer velocity — golden paths, paved roads, and self-service primitives.",
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "Mid-Market Bank Migrates Core Workloads and Cuts Cloud Spend 41%",
-          industry: "Financial Services",
-          metric: "-41%",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "healthcare-data-analytics",
-          title: "Health-Tech Vendor Lifts Deploy Frequency 4.2x with Platform Engineering",
-          industry: "Healthcare",
-          metric: "4.2x",
-          image: "/images/capabilities/cap-circuit-green.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
       ]}
       relatedServices={[
         { slug: "cloud-migration-architecture", name: "Cloud Migration Architecture", href: "/capabilities/technology/cloud-migration-architecture" },

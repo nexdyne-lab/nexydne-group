@@ -108,27 +108,9 @@ export default function ProductDevelopment() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "consulting-knowledge-management",
-          title: "Consulting Firm Builds AI-Powered Knowledge Platform",
-          industry: "Professional Services · Operations",
-          metric: "3x",
-          image: "/images/capabilities/cap-3d-printing.jpg",
-        },
-        {
-          slug: "legal-document-intelligence",
-          title: "Legal Team Deploys Document Intelligence Across Matter Lifecycle",
-          industry: "Professional Services · Operations",
-          metric: "75%",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "telehealth-platform",
-          title: "Health System Launches Telehealth Platform at Scale",
-          industry: "Healthcare · Operations",
-          metric: "10x",
-          image: "/images/capabilities/cap-tablet-woman.jpg",
-        },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

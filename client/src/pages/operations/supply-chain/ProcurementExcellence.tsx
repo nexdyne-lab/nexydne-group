@@ -47,20 +47,8 @@ export default function OperationsSupplyChainProcurementExcellence() {
         "Internal Supply Chain Optimization capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Automates Loan Origination End-to-End",
-          industry: "Financial Services · Operations",
-          metric: "70%",
-          image: "/images/industries/transport-bridge.jpg",
-        },
-        {
-          slug: "accounting-audit-automation",
-          title: "Big Four Firm Modernizes Audit with End-to-End Automation",
-          industry: "Professional Services · Operations",
-          metric: "40%",
-          image: "/images/industries/transport-traffic.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
       ]}
       relatedServices={[
         { slug: "supply-chain-strategy", name: "Supply Chain Strategy", href: "/capabilities/operations/supply-chain/supply-chain-strategy" },

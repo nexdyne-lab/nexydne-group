@@ -66,20 +66,8 @@ export default function SalesAnalytics() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Health system unifies patient data for population analytics",
-          industry: "Healthcare · Sales Excellence",
-          metric: "3x",
-          image: "/images/capabilities/cap-colleagues.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "Hospital system rebuilds clinical workflows with low-code",
-          industry: "Healthcare · Sales Excellence",
-          metric: "45%",
-          image: "/images/capabilities/cap-woman-motion.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedServices={[
         { slug: "sales-strategy", name: "Sales Strategy", href: "/capabilities/growth-marketing-sales/sales-excellence/sales-strategy" },

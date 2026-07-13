@@ -108,27 +108,9 @@ export default function ProcessAutomation() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "bank-process-automation",
-          title: "Regional Bank Automates Loan Origination End-to-End",
-          industry: "Financial Services · Operations",
-          metric: "70%",
-          image: "/images/capabilities/cap-robot-factory.jpg",
-        },
-        {
-          slug: "law-firm-contract-automation",
-          title: "Law Firm Automates Contract Lifecycle Across Practice Groups",
-          industry: "Professional Services · Operations",
-          metric: "65%",
-          image: "/images/capabilities/cap-warehouse-robot.jpg",
-        },
-        {
-          slug: "insurance-claims-processing",
-          title: "Insurer Cuts Claims Cycle Time and Improves Decision Accuracy",
-          industry: "Insurance · Operations",
-          metric: "60%",
-          image: "/images/industries/ops-gears.jpg",
-        },
+        { slug: "financial-fraud-detection", title: "Catching card fraud before the money moves", industry: "Financial Services", metric: "73%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

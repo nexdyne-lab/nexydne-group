@@ -49,20 +49,8 @@ export default function DataPlatformEngineering() {
         "Sequenced scaling roadmap covering additional domains, performance tuning, compute and storage economics, and the chargeback model that keeps the platform funded.",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Lakehouse migration cuts daily reporting latency from 14 hours to 22 minutes",
-          industry: "Retail",
-          metric: "14h → 22m",
-          image: "/images/capabilities/cap-data-bars.jpg",
-        },
-        {
-          slug: "consulting-knowledge-management",
-          title: "Snowflake platform consolidates 11 shadow analytics stacks into one governed estate",
-          industry: "B2B SaaS",
-          metric: "11 → 1",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
       ]}
       relatedServices={[
         { slug: "platform-engineering", name: "Platform Engineering", href: "/capabilities/technology/platform-engineering" },

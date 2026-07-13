@@ -51,20 +51,8 @@ export default function LegacyModernization() {
         "Disciplined retirement and sunset plan — license retirement, data archival, contract exit, infrastructure release, and the architecture-review cadence that prevents the next legacy estate from accreting.",
       ]}
       featuredCases={[
-        {
-          slug: "insurance-claims-processing",
-          title: "Strangler-fig retires a 22-year mainframe policy-admin platform across 18 quarterly waves",
-          industry: "Insurance",
-          metric: "18 waves",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "healthcare-data-analytics",
-          title: "Application portfolio rationalization retires 47 of 162 applications in eighteen months",
-          industry: "Healthcare Provider Network",
-          metric: "47 retired",
-          image: "/images/capabilities/cap-circuit-green.jpg",
-        },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
       ]}
       relatedServices={[
         { slug: "cloud-migration-architecture", name: "Cloud Migration Architecture", href: "/capabilities/technology/cloud-migration-architecture" },

@@ -64,13 +64,7 @@ export default function FineTuningOptimization() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "legal-document-intelligence",
-          title: "Transforming legal research with AI-powered document intelligence",
-          industry: "Professional Services",
-          metric: "70%",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
+        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/industries/fin-monitors.jpg" },
       ]}
       relatedServices={[
         { slug: "strategy-roadmap", name: "GenAI Strategy & Roadmap", href: "/capabilities/artificial-intelligence/generative-ai/strategy-roadmap" },

@@ -47,27 +47,9 @@ export default function OperationsQualityManagementRegulatoryCompliance() {
         "Internal Quality Management capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "accounting-audit-automation",
-          title: "Big Four Firm Modernizes Audit with End-to-End Automation",
-          industry: "Professional Services · Operations",
-          metric: "40%",
-          image: "/images/capabilities/cap-battery-factory.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth Manager Automates Client Onboarding and Portfolio Reporting",
-          industry: "Financial Services · Operations",
-          metric: "75%",
-          image: "/images/industries/mfg-robot-arm.jpg",
-        },
-        {
-          slug: "insurance-claims-processing",
-          title: "P&C Insurer Cuts Claims Cycle Time with Intelligent Automation",
-          industry: "Financial Services · Operations",
-          metric: "55%",
-          image: "/images/capabilities/cap-robot-factory.jpg",
-        },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
       ]}
       relatedServices={[
         { slug: "quality-strategy-governance", name: "Quality Strategy & Governance", href: "/capabilities/operations/quality-management/quality-strategy-governance" },

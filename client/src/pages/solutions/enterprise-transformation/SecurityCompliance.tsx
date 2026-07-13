@@ -48,20 +48,8 @@ export default function SecurityCompliance() {
         "Incident Response & Forensics — prepared response plan that minimizes impact and recovery time when an incident hits.",
       ]}
       featuredCases={[
-        {
-          slug: "fintech-payment-automation",
-          title: "SOC 2 Type II clean opinion landed in 9 months with zero deal-blocking findings",
-          industry: "B2B SaaS",
-          metric: "0 findings",
-          image: "/images/capabilities/cap-aerial-grid.jpg",
-        },
-        {
-          slug: "hospital-clinical-workflow",
-          title: "HIPAA and HITRUST control implementation across 22 clinical applications under a regulated cutover",
-          industry: "Healthcare",
-          metric: "22 apps",
-          image: "/images/capabilities/cap-dome-blue.jpg",
-        },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "healthcare-readmission", title: "Cutting avoidable readmissions with better prediction", industry: "Healthcare", metric: "42%", image: "/case-doctor-consultation.799c1562.jpg" },
       ]}
       relatedServices={[
         { slug: "cloud-migration-architecture", name: "Cloud Migration & Architecture", href: "/capabilities/technology/cloud-migration-architecture" },

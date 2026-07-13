@@ -109,27 +109,9 @@ export default function WorkforceOptimization() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "consulting-knowledge-management",
-          title: "Consulting Firm Builds AI-Powered Knowledge Platform",
-          industry: "Professional Services · Operations",
-          metric: "3x",
-          image: "/images/capabilities/cap-colleagues.jpg",
-        },
-        {
-          slug: "healthcare-patient-engagement",
-          title: "Healthcare Network Boosts Patient Engagement Through Digital Tools",
-          industry: "Healthcare · Operations",
-          metric: "48%",
-          image: "/images/industries/biz-team-bright.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth Manager Automates Onboarding and Client Servicing",
-          industry: "Financial Services · Operations",
-          metric: "55%",
-          image: "/images/capabilities/cap-women-meeting.jpg",
-        },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

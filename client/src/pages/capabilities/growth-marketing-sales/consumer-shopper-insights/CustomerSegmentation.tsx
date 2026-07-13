@@ -66,20 +66,8 @@ export default function CustomerSegmentation() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Health system unifies patient data for population analytics",
-          industry: "Healthcare · Consumer & Shopper Insights",
-          metric: "3x",
-          image: "/images/capabilities/cap-mobile-woman.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth manager personalizes onboarding for HNW clients",
-          industry: "Wealth Management · Consumer & Shopper Insights",
-          metric: "3x",
-          image: "/images/capabilities/cap-office-women.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "qualitative-research", name: "Qualitative Research", href: "/capabilities/growth-marketing-sales/consumer-shopper-insights/qualitative-research" },

@@ -88,27 +88,9 @@ export default function ModernizationHub() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "law-firm-contract-automation",
-          title: "Law firm replaces aging matter-management estate on a modern API layer",
-          industry: "Professional Services · Technology",
-          metric: "40%",
-          image: "/images/case-law-firm-contract-automation.jpg",
-        },
-        {
-          slug: "legal-document-intelligence",
-          title: "Legal services group rebuilds document intelligence on cloud-native pipeline",
-          industry: "Professional Services · Technology",
-          metric: "5x",
-          image: "/images/case-legal-document-intelligence.jpg",
-        },
-        {
-          slug: "insurance-claims-processing",
-          title: "Insurer rebuilds claims platform on event-driven architecture",
-          industry: "Insurance · Technology",
-          metric: "60%",
-          image: "/images/case-insurance-claims-processing.jpg",
-        },
+        { slug: "tech-engineering-transformation", title: "Tripling a software company's release speed", industry: "Technology, Media & Telecom", metric: "3x", image: "/images/industries/tech-datacenter.jpg" },
+        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/industries/fin-monitors.jpg" },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/operations", name: "Operations" },

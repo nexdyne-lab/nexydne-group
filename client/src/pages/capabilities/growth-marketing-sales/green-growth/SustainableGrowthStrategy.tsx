@@ -66,20 +66,8 @@ export default function SustainableGrowthStrategy() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "consulting-knowledge-management",
-          title: "Consultancy unlocks 30 years of IP with AI knowledge graph",
-          industry: "Professional Services · Green Growth",
-          metric: "4x",
-          image: "/images/industries/energy-powerplant.jpg",
-        },
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech scales payment ops with intelligent automation",
-          industry: "Fintech · Green Growth",
-          metric: "5x",
-          image: "/images/capabilities/cap-lightbulb-idea.jpg",
-        },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
       ]}
       relatedServices={[
         { slug: "esg-brand-positioning", name: "ESG Brand Positioning", href: "/capabilities/growth-marketing-sales/green-growth/esg-brand-positioning" },

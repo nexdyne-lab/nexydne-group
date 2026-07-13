@@ -64,20 +64,8 @@ export default function GuardrailsSafety() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "insurance-claims-processing",
-          title: "Reinventing claims processing for a top-five insurer",
-          industry: "Financial Services",
-          metric: "55%",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Automating client onboarding for a global wealth management firm",
-          industry: "Financial Services",
-          metric: "60%",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "agent-architecture", name: "Agent Architecture Design", href: "/capabilities/artificial-intelligence/agentic-ai/agent-architecture" },

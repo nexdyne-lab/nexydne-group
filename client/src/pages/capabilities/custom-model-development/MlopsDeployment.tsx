@@ -64,20 +64,8 @@ export default function MlopsDeployment() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "fintech-payment-automation",
-          title: "Scaling a fintech payment platform with AI-driven automation",
-          industry: "Financial Services",
-          metric: "5x",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "telehealth-platform",
-          title: "Building a national telehealth platform from the ground up",
-          industry: "Healthcare",
-          metric: "12x",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "healthcare-revenue-cycle", title: "Recovering revenue the system had already earned", industry: "Healthcare", metric: "$32M", image: "/case-healthcare-team.5797392b.jpg" },
       ]}
       relatedServices={[
         { slug: "foundation-fine-tuning", name: "Foundation Model Fine-Tuning", href: "/capabilities/artificial-intelligence/custom-model-development/foundation-fine-tuning" },

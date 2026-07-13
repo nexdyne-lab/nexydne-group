@@ -47,20 +47,8 @@ export default function OperationsPerformanceAnalyticsKpiFrameworkDesign() {
         "Internal Performance Analytics capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-patient-engagement",
-          title: "Provider Network Lifts Patient Engagement with Digital Operations",
-          industry: "Healthcare · Operations",
-          metric: "3x",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth Manager Automates Client Onboarding and Portfolio Reporting",
-          industry: "Financial Services · Operations",
-          metric: "75%",
-          image: "/images/industries/fin-monitors.jpg",
-        },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "operational-dashboards", name: "Operational Dashboards", href: "/capabilities/operations/performance-analytics/operational-dashboards" },

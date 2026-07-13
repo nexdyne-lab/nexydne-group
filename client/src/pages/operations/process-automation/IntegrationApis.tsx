@@ -47,20 +47,8 @@ export default function OperationsProcessAutomationIntegrationApis() {
         "Internal Process Automation capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech Scales Payment Operations Without Headcount Growth",
-          industry: "Financial Services · Operations",
-          metric: "5x",
-          image: "/images/capabilities/cap-warehouse-robot.jpg",
-        },
-        {
-          slug: "healthcare-patient-engagement",
-          title: "Provider Network Lifts Patient Engagement with Digital Operations",
-          industry: "Healthcare · Operations",
-          metric: "3x",
-          image: "/images/industries/ops-gears.jpg",
-        },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "process-assessment-prioritization", name: "Process Assessment & Prioritization", href: "/capabilities/operations/process-automation/process-assessment-prioritization" },

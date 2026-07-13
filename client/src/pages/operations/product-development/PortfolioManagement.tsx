@@ -47,20 +47,8 @@ export default function OperationsProductDevelopmentPortfolioManagement() {
         "Internal Product Development capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "consulting-knowledge-management",
-          title: "Top-5 Consulting Firm Builds AI Knowledge Platform",
-          industry: "Professional Services · Operations",
-          metric: "60%",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth Manager Automates Client Onboarding and Portfolio Reporting",
-          industry: "Financial Services · Operations",
-          metric: "75%",
-          image: "/images/capabilities/cap-tablet-woman.jpg",
-        },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
       ]}
       relatedServices={[
         { slug: "npd-process-design", name: "NPD Process Design", href: "/capabilities/operations/product-development/npd-process-design" },

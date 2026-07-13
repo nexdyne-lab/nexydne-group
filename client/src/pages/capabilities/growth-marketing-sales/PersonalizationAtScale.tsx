@@ -110,27 +110,9 @@ export default function PersonalizationAtScale() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-patient-engagement",
-          title: "Health Network Lifts Patient Engagement Score By 38 Points",
-          industry: "Healthcare · Engagement",
-          metric: "38pt",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
-        {
-          slug: "wealth-management-automation",
-          title: "Wealth Manager Automates Portfolio Reporting And Client Onboarding",
-          industry: "Financial Services · Wealth",
-          metric: "3x",
-          image: "/images/capabilities/cap-telescope.jpg",
-        },
-        {
-          slug: "healthcare-data-analytics",
-          title: "Health System Builds Unified Analytics Platform Across 18 Hospitals",
-          industry: "Healthcare · Analytics",
-          metric: "18",
-          image: "/images/industries/deal-handshake.jpg",
-        },
+        { slug: "insurance-digital-distribution", title: "Turning a call-center insurer into a digital one", industry: "Insurance", metric: "50%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "wealth-onboarding", title: "Cutting wealth onboarding from weeks to days", industry: "Financial Services", metric: "60%", image: "/images/industries/fin-handshake-city.jpg" },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

@@ -49,20 +49,8 @@ export default function TechnologyStrategy() {
         "Production-grade executive technology dashboard for the CIO, CTO, and executive committee — principle adherence, roadmap progress, investment burn, vendor concentration.",
       ]}
       featuredCases={[
-        {
-          slug: "consulting-knowledge-management",
-          title: "CIO advisory rebuilds a five-year technology strategy that survives a CEO transition",
-          industry: "Industrial Distribution",
-          metric: "CEO-proof",
-          image: "/images/capabilities/cap-data-bars.jpg",
-        },
-        {
-          slug: "insurance-claims-processing",
-          title: "Decision-rights redesign cuts architectural review backlog from 14 weeks to 9 days",
-          industry: "Specialty Insurance",
-          metric: "14w → 9d",
-          image: "/images/capabilities/cap-conference-data.jpg",
-        },
+        { slug: "pe-healthcare-diligence", title: "Cutting healthcare diligence time by 40%", industry: "Private Equity", metric: "40%", image: "/images/capabilities/cap-conference-data.jpg" },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
       ]}
       relatedServices={[
         { slug: "technology-due-diligence", name: "Technology Due Diligence", href: "/capabilities/technology/technology-due-diligence" },

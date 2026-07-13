@@ -66,20 +66,8 @@ export default function JourneyMapping() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "healthcare-data-analytics",
-          title: "Health system unifies patient data for population analytics",
-          industry: "Healthcare · Consumer & Shopper Insights",
-          metric: "3x",
-          image: "/images/capabilities/cap-data-presentation.jpg",
-        },
-        {
-          slug: "insurance-claims-processing",
-          title: "Insurer cuts claims handling time with NLP and OCR",
-          industry: "Insurance · Consumer & Shopper Insights",
-          metric: "65%",
-          image: "/images/capabilities/cap-colleagues.jpg",
-        },
+        { slug: "healthcare-transformation", title: "Unifying scattered patient data to improve outcomes", industry: "Healthcare", metric: "35%", image: "/case-medical-collaboration.9602cc8c.jpg" },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
       ]}
       relatedServices={[
         { slug: "customer-segmentation", name: "Customer Segmentation", href: "/capabilities/growth-marketing-sales/consumer-shopper-insights/customer-segmentation" },

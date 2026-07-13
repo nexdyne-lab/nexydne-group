@@ -109,27 +109,9 @@ export default function StrategicProcurement() {
         },
       ]}
       featuredCases={[
-        {
-          slug: "fintech-payment-automation",
-          title: "Fintech Scales Payment Operations Without Headcount Growth",
-          industry: "Financial Services · Operations",
-          metric: "5x",
-          image: "/images/industries/meeting-topview.jpg",
-        },
-        {
-          slug: "accounting-audit-automation",
-          title: "Accounting Firm Automates Audit Workpapers Across Engagements",
-          industry: "Professional Services · Operations",
-          metric: "45%",
-          image: "/images/industries/advisor-charts.jpg",
-        },
-        {
-          slug: "legal-document-intelligence",
-          title: "Legal Team Deploys Document Intelligence Across Matter Lifecycle",
-          industry: "Professional Services · Operations",
-          metric: "75%",
-          image: "/images/industries/deal-handshake.jpg",
-        },
+        { slug: "bank-cross-sell", title: "Turning single accounts into real relationships", industry: "Financial Services", metric: "$24M", image: "/images/industries/fin-trader.jpg" },
+        { slug: "pe-industrial-transformation", title: "Adding $18M in EBITDA at an industrial manufacturer", industry: "Private Equity", metric: "$18M", image: "/images/industries/transport-traffic.jpg" },
+        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/industries/fin-monitors.jpg" },
       ]}
       relatedCapabilities={[
         { href: "/capabilities/strategy-corporate-finance", name: "Strategy & Corporate Finance" },

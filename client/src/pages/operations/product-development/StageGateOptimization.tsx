@@ -47,13 +47,7 @@ export default function OperationsProductDevelopmentStageGateOptimization() {
         "Internal Product Development capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "legal-document-intelligence",
-          title: "Global Legal Operations Team Deploys Document Intelligence at Scale",
-          industry: "Professional Services · Operations",
-          metric: "10x",
-          image: "/images/capabilities/cap-coder.jpg",
-        },
+        { slug: "insurance-ai-underwriting", title: "Quoting commercial business in a day, not a week", industry: "Insurance", metric: "40%", image: "/images/industries/fin-monitors.jpg" },
       ]}
       relatedServices={[
         { slug: "npd-process-design", name: "NPD Process Design", href: "/capabilities/operations/product-development/npd-process-design" },

@@ -47,13 +47,7 @@ export default function StrategyCorporateFinancePerformanceImprovementProcuremen
         "Internal Performance Improvement capability uplift that compounds value beyond the engagement",
       ]}
       featuredCases={[
-        {
-          slug: "insurance-claims-processing",
-          title: "Insurer Slashes Claims Processing Time With Intelligent Workflow",
-          industry: "Financial Services · Strategy",
-          metric: "65%",
-          image: "/images/industries/meeting-topview.jpg",
-        },
+        { slug: "insurance-claims-automation", title: "Settling straightforward claims in hours, not weeks", industry: "Insurance", metric: "60%", image: "/case-insurance-claims.399e5d4b.jpg" },
       ]}
       relatedServices={[
         { slug: "cost-optimization", name: "Cost Optimization", href: "/capabilities/strategy-corporate-finance/performance-improvement/cost-optimization" },

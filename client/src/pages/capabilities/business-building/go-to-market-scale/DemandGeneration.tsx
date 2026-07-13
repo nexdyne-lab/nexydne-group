@@ -66,13 +66,7 @@ export default function DemandGeneration() {
         "A repeatable pattern that travels — second and third use cases launch faster and cheaper than the first.",
       ]}
       featuredCases={[
-        {
-          slug: "manufacturer-dtc",
-          title: "Manufacturer Creates Direct-to-Consumer Channel",
-          industry: "Manufacturing · Business Building",
-          metric: "3x",
-          image: "/images/industries/deal-handshake.jpg",
-        },
+        { slug: "automotive-ev-transition", title: "Retooling a supplier line for electric-vehicle parts", industry: "Automotive", metric: "45%", image: "/images/industries/auto-robotics-team.jpg" },
       ]}
       relatedServices={[
         { slug: "partner-network-access", name: "Partner Network Access", href: "/capabilities/business-building/go-to-market-scale/partner-network-access" },
