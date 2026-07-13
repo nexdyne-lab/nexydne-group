@@ -75,24 +75,24 @@ export default function UrbanDevelopmentIndustry() {
       }}
       featuredCases={[
         {
-          slug: "consulting-knowledge-management",
-          title: "Transforming knowledge management for a global consulting firm",
-          industry: "Professional Services",
-          metric: "3x",
+          slug: "urban-master-planning",
+          title: "Phasing a mixed-use district for stronger returns",
+          industry: "Urban Development",
+          metric: "18%",
           image: "/images/industries/skyscraper.jpg"
         },
         {
-          slug: "healthcare-data-analytics",
-          title: "Unlocking healthcare insights with real-time data analytics",
-          industry: "Healthcare",
-          metric: "25%",
+          slug: "urban-smart-buildings",
+          title: "Cutting building operating costs with connected data",
+          industry: "Urban Development",
+          metric: "22%",
           image: "/images/industries/arch-glass-sphere.jpg"
         },
         {
-          slug: "bank-process-automation",
-          title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
-          industry: "Financial Services",
-          metric: "10K+ hrs",
+          slug: "urban-capital-projects",
+          title: "Delivering capital projects on time and on budget",
+          industry: "Urban Development",
+          metric: "95%",
           image: "/images/industries/city-digital.jpg"
         }
       ]}

@@ -26,7 +26,7 @@ function Eyebrow({
 }) {
   return (
     <div className="flex items-center gap-3 mb-5">
-      <span className="block h-[3px] w-9 bg-primary" />
+      <span className={`block h-[3px] w-9 ${onDark ? "bg-amber" : "bg-primary"}`} />
       <span
         className={`text-[12px] font-semibold uppercase tracking-[0.18em] ${
           onDark ? "text-white/70" : "text-muted-foreground"
@@ -381,7 +381,7 @@ export default function SolutionCat6Template(props: SolutionCat6TemplateProps) {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, ease }}
               >
-                <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-6">
+                <span className="block text-[11px] font-semibold uppercase tracking-[0.2em] text-amber mb-6">
                   Ready to Talk?
                 </span>
                 <h2 className="nx-h2 text-white mb-10 leading-[1.12]">

@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Hotel, DollarSign, TrendingUp, Target, BarChart3, Users, Calendar, Sparkles } from "lucide-react";
+import { DollarSign, TrendingUp, Target, BarChart3, Users, Clock } from "lucide-react";
 
 export default function HotelRevenueManagement() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="AI Revenue Management for Hotels | Hospitality Case Study"
-      seoDescription="How a hotel chain increased RevPAR by 18% through AI-powered dynamic pricing and demand forecasting across 500 properties."
-      canonical="/cases/hotel-revenue-management"
+      seoTitle="Lifting Hotel Revenue per Room by 18% | Travel & Hospitality Case Study"
+      seoDescription="A regional hotel group was setting room rates by hand and leaving money on the table every night. Pricing that responds to real demand lifted revenue per available room by 18%."
+      canonical="/cases/hotel-revenue-transformation"
       industry="Travel & Hospitality"
       industryLink="/industries/travel-hospitality"
-      title="Hotel Chain Increases RevPAR 18% with AI Revenue Management"
-      subtitle="How machine learning models optimize pricing in real-time, maximizing revenue across 500 properties and 100,000 rooms."
+      title="How a Regional Hotel Group Lifted Revenue per Room by 18%"
+      subtitle="A hotel group was pricing its rooms by hand and leaving money on the table almost every night. Letting prices respond to real demand, property by property, changed the economics of the whole portfolio."
       heroImage="/images/industries/travel-city-twilight.jpg"
       metrics={[
-        { value: "18%", label: "RevPAR Increase" },
-        { value: "$120M", label: "Revenue Gain" },
-        { value: "95%", label: "Forecast Accuracy" },
-        { value: "500", label: "Properties Optimized" }
+        { value: "18%", label: "More Revenue per Room" },
+        { value: "$14M", label: "Added Revenue a Year" },
+        { value: "95%", label: "Demand Forecast Accuracy" },
+        { value: "40", label: "Properties Optimized" }
       ]}
-      clientContextTitle="A Hotel Chain Leaving Money on the Table"
-      clientContextIntro="A global hotel chain with 500 properties and 100,000 rooms struggled with pricing. Revenue managers set rates manually based on experience and simple rules. They couldn't react fast enough to demand changes, and pricing varied wildly across similar properties. The chain was leaving $100M+ on the table annually."
-      clientContextBody="Competitors with sophisticated revenue management systems were capturing market share. The chain's revenue managers were overwhelmed—each managing 10+ properties with thousands of rate decisions daily. They needed AI to augment human judgment and optimize pricing at scale."
+      clientContextTitle="When Rates Are Set by Hand, the Best Nights Are the Ones You Miss"
+      clientContextIntro="A regional hotel group ran 40 properties across a handful of markets, and priced almost all of them the same way it always had. A small team of revenue managers set room rates by experience and a few standing rules, each of them juggling several hotels at once and making thousands of small pricing decisions a week. It was careful, capable work — but it could not keep pace with how quickly demand actually moved."
+      clientContextBody="The cost showed up on the busiest and quietest nights alike. When a nearby event or a spell of good weather sent demand up, rates lagged behind and rooms sold too cheaply; when demand softened, prices held too high and rooms sat empty. Similar hotels in the same city often carried very different rates for no reason a guest would understand. Taken together, the group was leaving an estimated $12 million a year unclaimed — not for want of demand, but because no team working by hand could price 40 properties fast enough to catch it."
       clientProfile={{
-        industry: "Hospitality",
-        companySize: "500 Properties",
-        projectDuration: "18 Months",
-        additionalInfo: "100,000 Rooms",
+        industry: "Hotel Group",
+        companySize: "~$420M Annual Revenue",
+        projectDuration: "16 Months",
+        additionalInfo: "40 Properties",
         additionalLabel: "Portfolio Size"
       }}
-      challengeTitle="Manual Pricing at Scale"
+      challengeTitle="Why Revenue Was Slipping Away"
       challenges={[
         {
           icon: DollarSign,
-          title: "Suboptimal Pricing",
-          description: "Manual rate-setting leaving $100M+ annually on the table—can't optimize at scale."
+          title: "Money Left on the Table",
+          description: "Rates set by hand meant rooms often sold too cheap on strong nights and too dear on weak ones — an estimated $12M a year unclaimed."
         },
         {
-          icon: Target,
-          title: "Slow Reaction",
-          description: "Demand changes faster than humans can respond—missing revenue opportunities."
+          icon: Clock,
+          title: "Always a Step Behind Demand",
+          description: "Demand shifted faster than any team could reprice 40 properties, so the group was forever adjusting to conditions that had already changed."
         },
         {
           icon: Users,
-          title: "Overwhelmed Teams",
-          description: "Revenue managers handling 10+ properties each—thousands of decisions daily."
+          title: "Teams Stretched Thin",
+          description: "A handful of revenue managers each covered several hotels, making thousands of rate decisions a week with little time to think about strategy."
         },
         {
           icon: BarChart3,
           title: "Inconsistent Pricing",
-          description: "Similar properties priced differently—no systematic optimization approach."
+          description: "Comparable hotels in the same market were priced very differently, with no systematic way to decide what any room was really worth that night."
         }
       ]}
-      approachTitle="AI-Powered Revenue Optimization"
-      approachIntro="NexDyne implemented an AI-powered revenue management system that forecasted demand, optimized pricing in real-time, and enabled revenue managers to focus on strategy rather than rate-setting."
+      approachTitle="Pricing That Keeps Up With Demand"
+      approachIntro="Working alongside the group's revenue team, we set out to let prices move with real demand — automatically, property by property and night by night — so the team could spend its judgment on strategy and the exceptions rather than on routine rate-setting."
       steps={[
         {
           step: "01",
-          title: "Demand Forecasting",
-          description: "Built ML models that predicted demand at the property-room type-day level. Models incorporated historical patterns, events, competitor rates, and market signals. Achieved 95% forecast accuracy."
+          title: "Seeing Demand Clearly, Hotel by Hotel",
+          description: "We built models that forecast how many rooms each hotel would sell, and at what price, for every future night — drawing on past booking patterns, local events, competitor rates and the pace of bookings coming in. The forecasts proved right about 95% of the time."
         },
         {
           step: "02",
-          title: "Dynamic Pricing Engine",
-          description: "Developed optimization algorithms that set rates in real-time based on demand forecasts, inventory, and business rules. Prices adjusted automatically as conditions changed—no manual intervention required."
+          title: "Prices That Adjust Themselves",
+          description: "We turned those forecasts into rates that update on their own as conditions change, always within limits the group set. When demand climbs, prices rise to capture it; when it softens, they ease to fill rooms — without anyone editing a spreadsheet."
         },
         {
           step: "03",
-          title: "Competitive Intelligence",
-          description: "Integrated real-time competitor rate monitoring. Models learned how demand responded to competitive positioning and optimized rates to maximize revenue share."
+          title: "Reading the Wider Market",
+          description: "We fed in a live view of what comparable hotels nearby were charging, so each property could hold its ground against the competition instead of guessing where it stood."
         },
         {
           step: "04",
-          title: "Revenue Manager Workbench",
-          description: "Built tools that let revenue managers set strategy, review recommendations, and override when needed. AI handled routine optimization; humans focused on events, groups, and strategic decisions."
+          title: "Keeping People in Charge",
+          description: "We gave revenue managers a simple workbench to set the strategy, review the system's recommendations and step in whenever they judged it necessary — for a big group booking or a one-off event. The system handled the routine; the team handled the judgment."
         }
       ]}
-      resultsTitle="Revenue Excellence"
+      resultsTitle="The Payoff"
       results={[
         {
           icon: TrendingUp,
           value: "18%",
-          label: "RevPAR increase",
-          detail: "Across the portfolio"
+          label: "More revenue per available room",
+          detail: "Across the full portfolio"
         },
         {
           icon: DollarSign,
-          value: "$120M",
-          label: "Annual revenue gain",
-          detail: "From optimized pricing"
+          value: "$14M",
+          label: "Added revenue a year",
+          detail: "From pricing that keeps pace with demand"
         },
         {
           icon: Target,
           value: "95%",
-          label: "Forecast accuracy",
-          detail: "Enabling confident pricing decisions"
+          label: "Demand forecast accuracy",
+          detail: "Enough to price with confidence"
         },
         {
-          icon: Sparkles,
+          icon: Clock,
           value: "80%",
-          label: "Time savings",
-          detail: "Revenue managers focus on strategy"
+          label: "Less time on manual rate-setting",
+          detail: "Freeing the team for strategy"
         }
       ]}
-      quote="AI revenue management transformed our business. We went from revenue managers setting rates in spreadsheets to an intelligent system that optimizes millions of rate decisions automatically. Our team now focuses on strategy and relationships—the AI handles the math."
-      quoteAuthor="Michael Chen"
-      quoteRole="Chief Revenue Officer"
+      quote="We were never short of demand — we were short of the time and the tools to price for it, hotel by hotel, every single night. Now the routine pricing takes care of itself, and my team spends its energy where judgment actually matters. The revenue was there all along; we just started catching it."
+      quoteAuthor="Chief Revenue Officer"
+      quoteRole="Regional hotel group"
       relatedStudies={[
         {
-          title: "Guest Experience Transformation",
-          metric: "25pts",
-          label: "NPS improvement",
-          link: "/cases/hotel-guest-experience",
-          image: "/images/industries/city-night.jpg"
-        },
-        {
-          title: "Airline Loyalty Program Redesign",
+          title: "Reviving a Regional Airline's Loyalty Program",
           metric: "40%",
-          label: "increase in engagement",
+          label: "more active members",
           link: "/cases/airline-loyalty-redesign",
           image: "/images/industries/transport-bridge.jpg"
+        },
+        {
+          title: "Restoring Personal Service Across a Hotel Group",
+          metric: "+25pts",
+          label: "guest recommendation score",
+          link: "/cases/hotel-guest-experience",
+          image: "/images/industries/city-night.jpg"
         }
       ]}
-      ctaTitle="Ready to Optimize Revenue?"
-      ctaDescription="Let's discuss how AI can maximize your hospitality revenue."
+      ctaTitle="Ready to price for the demand you already have?"
+      ctaDescription="Let's talk about what pricing that keeps pace with demand could be worth across your properties."
     />
   );
 }

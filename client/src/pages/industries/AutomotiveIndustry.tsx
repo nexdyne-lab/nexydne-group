@@ -75,25 +75,25 @@ export default function AutomotiveIndustry() {
       }}
       featuredCases={[
         {
-          slug: "bank-process-automation",
-          title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
-          industry: "Financial Services",
-          metric: "10K+ hrs",
-          image: "/images/industries/mfg-robot-arm-team.jpg"
+          slug: "automotive-ev-transition",
+          title: "Retooling a supplier line for electric-vehicle parts",
+          industry: "Automotive",
+          metric: "45%",
+          image: "/images/industries/auto-robotics-team.jpg"
         },
         {
-          slug: "consulting-knowledge-management",
-          title: "Transforming knowledge management for a global consulting firm",
-          industry: "Professional Services",
-          metric: "3x",
+          slug: "automotive-connected-vehicle",
+          title: "Turning connected-vehicle data into fewer warranty claims",
+          industry: "Automotive",
+          metric: "30%",
+          image: "/images/industries/tech-datacenter.jpg"
+        },
+        {
+          slug: "automotive-supply-resilience",
+          title: "De-risking parts supply and recall traceability for a supplier",
+          industry: "Automotive",
+          metric: "80%",
           image: "/images/industries/mfg-robot-arm.jpg"
-        },
-        {
-          slug: "fintech-payment-automation",
-          title: "Building a scalable payment processing system for a fintech startup",
-          industry: "Financial Services",
-          metric: "100K+",
-          image: "/images/industries/ops-gears.jpg"
         }
       ]}
     />

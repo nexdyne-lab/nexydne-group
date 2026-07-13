@@ -905,6 +905,12 @@ import InsuranceUnderwritingTransformationIndustry from "./pages/cases/industrie
 import InsuranceCustomerExperienceIndustry from "./pages/cases/industries/InsuranceCustomerExperience";
 import FreightOptimizationIndustry from "./pages/cases/industries/FreightOptimization";
 import WarehouseAutomationIndustry from "./pages/cases/industries/WarehouseAutomation";
+import AutomotiveEVTransitionIndustry from "./pages/cases/industries/AutomotiveEVTransition";
+import AutomotiveConnectedVehicleIndustry from "./pages/cases/industries/AutomotiveConnectedVehicle";
+import AutomotiveSupplyResilienceIndustry from "./pages/cases/industries/AutomotiveSupplyResilience";
+import UrbanMasterPlanningIndustry from "./pages/cases/industries/UrbanMasterPlanning";
+import UrbanSmartBuildingsIndustry from "./pages/cases/industries/UrbanSmartBuildings";
+import UrbanCapitalProjectsIndustry from "./pages/cases/industries/UrbanCapitalProjects";
 import LastMileOptimizationIndustry from "./pages/cases/industries/LastMileOptimization";
 import NonprofitDigitalTransformationIndustry from "./pages/cases/industries/NonprofitDigitalTransformation";
 import NonprofitImpactMeasurementIndustry from "./pages/cases/industries/NonprofitImpactMeasurement";
@@ -1669,6 +1675,16 @@ function Router() {
         <Route path="/cases/insurance-digital-distribution" component={InsuranceCustomerExperienceIndustry} />
         <Route path="/cases/warehouse-optimization" component={WarehouseAutomationIndustry} />
         <Route path="/cases/automotive-ev-platform" component={AutomotiveSmartFactoryIndustry} />
+        <Route path="/cases/freight-optimization" component={FreightOptimizationIndustry} />
+        <Route path="/cases/last-mile-optimization" component={LastMileOptimizationIndustry} />
+        <Route path="/cases/airline-loyalty-redesign" component={AirlineLoyaltyRedesignIndustry} />
+        <Route path="/cases/hotel-guest-experience" component={HotelGuestExperienceIndustry} />
+        <Route path="/cases/automotive-ev-transition" component={AutomotiveEVTransitionIndustry} />
+        <Route path="/cases/automotive-connected-vehicle" component={AutomotiveConnectedVehicleIndustry} />
+        <Route path="/cases/automotive-supply-resilience" component={AutomotiveSupplyResilienceIndustry} />
+        <Route path="/cases/urban-master-planning" component={UrbanMasterPlanningIndustry} />
+        <Route path="/cases/urban-smart-buildings" component={UrbanSmartBuildingsIndustry} />
+        <Route path="/cases/urban-capital-projects" component={UrbanCapitalProjectsIndustry} />
         <Route path="/resources/whitepapers/:slug" component={WhitepaperDownload} />
         <Route path="/initiatives" component={Initiatives} />
         <Route path="/initiatives/mid-market-ai" component={MidMarketAIAccess} />

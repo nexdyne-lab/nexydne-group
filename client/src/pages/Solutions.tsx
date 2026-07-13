@@ -191,7 +191,7 @@ export default function Solutions() {
             className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center"
           >
             <div className="max-w-2xl">
-              <span aria-hidden className="mb-4 block h-[3px] w-10 bg-primary" />
+              <span aria-hidden className="mb-4 block h-[3px] w-10 bg-amber" />
               <h2 className="text-[1.75rem] font-bold leading-[1.15] tracking-[-0.02em] md:text-[2.25rem]">
                 Not sure which solution fits?
               </h2>

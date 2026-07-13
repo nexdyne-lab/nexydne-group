@@ -2,25 +2,25 @@ import IndustryCapabilityTemplate from "@/components/IndustryCapabilityTemplate"
 
 const cases = [
   {
-    slug: "consulting-knowledge-management",
-    title: "Transforming knowledge management for a global consulting firm",
-    industry: "Professional Services",
-    metric: "3x",
-    image: "/images/industries/city-night.jpg",
+    slug: "hotel-revenue-transformation",
+    title: "Lifting hotel revenue per room by 18%",
+    industry: "Travel & Hospitality",
+    metric: "18%",
+    image: "/images/industries/travel-city-twilight.jpg",
   },
   {
-    slug: "bank-process-automation",
-    title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
-    industry: "Financial Services",
-    metric: "10K+ hrs",
+    slug: "airline-loyalty-redesign",
+    title: "Reviving a regional airline's loyalty program",
+    industry: "Travel & Hospitality",
+    metric: "40%",
     image: "/images/industries/transport-bridge.jpg",
   },
   {
-    slug: "fintech-payment-automation",
-    title: "Building a scalable payment processing system for a fintech startup",
-    industry: "Financial Services",
-    metric: "100K+",
-    image: "/images/industries/arch-glass-sphere.jpg",
+    slug: "hotel-guest-experience",
+    title: "Restoring personal service across a hotel group",
+    industry: "Travel & Hospitality",
+    metric: "+25pts",
+    image: "/images/industries/city-night.jpg",
   },
 ];
 

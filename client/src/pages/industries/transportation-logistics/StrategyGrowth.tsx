@@ -2,25 +2,25 @@ import IndustryCapabilityTemplate from "@/components/IndustryCapabilityTemplate"
 
 const cases = [
   {
-    slug: "bank-process-automation",
-    title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
-    industry: "Financial Services",
-    metric: "10K+ hrs",
-    image: "/images/industries/transport-bridge.jpg",
-  },
-  {
-    slug: "consulting-knowledge-management",
-    title: "Transforming knowledge management for a global consulting firm",
-    industry: "Professional Services",
-    metric: "3x",
+    slug: "warehouse-optimization",
+    title: "Lifting warehouse productivity 45% for a regional distributor",
+    industry: "Transportation & Logistics",
+    metric: "45%",
     image: "/images/industries/retail-warehouse.jpg",
   },
   {
-    slug: "fintech-payment-automation",
-    title: "Building a scalable payment processing system for a fintech startup",
-    industry: "Financial Services",
-    metric: "100K+",
-    image: "/images/industries/colleagues-walking.jpg",
+    slug: "freight-optimization",
+    title: "Cutting freight costs 18% for a consumer-goods shipper",
+    industry: "Transportation & Logistics",
+    metric: "18%",
+    image: "/images/industries/transport-traffic.jpg",
+  },
+  {
+    slug: "last-mile-optimization",
+    title: "Cutting last-mile delivery costs 30% for a regional carrier",
+    industry: "Transportation & Logistics",
+    metric: "30%",
+    image: "/images/industries/transport-bridge.jpg",
   },
 ];
 

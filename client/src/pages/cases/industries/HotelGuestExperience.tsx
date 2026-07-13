@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Hotel, Heart, Star, Users, Smartphone, Target, DollarSign, Sparkles } from "lucide-react";
+import { Heart, Star, Users, Target, DollarSign, Sparkles } from "lucide-react";
 
 export default function HotelGuestExperience() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Guest Experience Transformation | Hospitality Case Study"
-      seoDescription="How a luxury hotel brand improved NPS by 25 points through personalized guest experiences and digital service innovation."
+      seoTitle="Restoring Personal Service Across a Hotel Group | Travel & Hospitality Case Study"
+      seoDescription="As it grew, an upscale hotel group lost the personal touch that made its name. Giving every property one clear view of each guest lifted its recommendation score by 25 points."
       canonical="/cases/hotel-guest-experience"
       industry="Travel & Hospitality"
       industryLink="/industries/travel-hospitality"
-      title="Luxury Hotel Brand Improves NPS 25 Points Through Personalization"
-      subtitle="How AI-powered guest profiles and digital innovation created memorable, personalized experiences that drive loyalty and advocacy."
-      heroImage="/images/industries/travel-city-twilight.jpg"
+      title="Restoring Personal Service Across a Growing Hotel Group"
+      subtitle="An upscale hotel group had built its name on knowing its guests — and was quietly losing that as it grew. Giving every property one clear view of each guest brought the personal touch back at scale."
+      heroImage="/images/industries/city-night.jpg"
       metrics={[
-        { value: "+25pts", label: "NPS Improvement" },
-        { value: "40%", label: "Higher Loyalty" },
-        { value: "$85M", label: "Revenue Impact" },
+        { value: "+25pts", label: "Guest Recommendation Score" },
+        { value: "40%", label: "More Loyalty Sign-Ups" },
+        { value: "$11M", label: "Revenue Impact" },
         { value: "92%", label: "Guest Satisfaction" }
       ]}
-      clientContextTitle="A Luxury Brand Losing Its Personal Touch"
-      clientContextIntro="A prestigious luxury hotel brand with 75 properties prided itself on personalized service. But as the brand grew, the personal touch was fading. Guest preferences were trapped in individual property systems. Repeat guests had to re-explain their preferences at each visit. The brand's NPS had declined 15 points in five years."
-      clientContextBody="Staff wanted to deliver personalized service but lacked the information. A guest's favorite wine at one property was unknown at another. Special occasions went unrecognized. The brand needed to know its guests as well as a boutique hotel—at global scale."
+      clientContextTitle="A Brand Built on the Personal Touch — and Quietly Losing It"
+      clientContextIntro="An upscale hotel group had grown to around 30 properties, and its reputation rested on service that felt personal — the sense that the staff remembered you. But the thing that made the brand had not kept up with its size. What a hotel knew about a guest stayed inside that hotel's own systems, so a regular at one property arrived at another a complete stranger, asked once again to explain the preferences they had shared many times before."
+      clientContextBody="The staff genuinely wanted to deliver on the brand's promise, but they were working blind. A guest's usual room, their favourite table, the anniversary they had celebrated last year — none of it followed them from one property to the next. Special occasions passed unnoticed and small preferences were forgotten, even as guests paid premium rates for exactly the recognition they were not getting. Over five years the group's guest recommendation score had slipped by 15 points, and management could feel loyal guests drifting to rivals who simply remembered them better."
       clientProfile={{
-        industry: "Luxury Hospitality",
-        companySize: "75 Properties",
-        projectDuration: "18 Months",
-        additionalInfo: "2M Annual Guests",
+        industry: "Upscale Hotel Group",
+        companySize: "~30 Properties",
+        projectDuration: "16 Months",
+        additionalInfo: "~1.2M Annual Guests",
         additionalLabel: "Guest Volume"
       }}
-      challengeTitle="Personalization Lost at Scale"
+      challengeTitle="Personal Service Lost as the Group Grew"
       challenges={[
         {
           icon: Users,
-          title: "Siloed Guest Data",
-          description: "Guest preferences trapped in property systems—no unified view across the brand."
+          title: "What One Hotel Knew, the Others Didn't",
+          description: "Each property kept its own guest records, so nothing a guest shared at one hotel was known at the next — every arrival started from scratch."
         },
         {
           icon: Heart,
-          title: "Declining NPS",
-          description: "15-point NPS decline over 5 years—losing the personal touch that defined the brand."
+          title: "A Slipping Reputation",
+          description: "The group's guest recommendation score had fallen 15 points in five years as the personal touch that defined the brand faded."
         },
         {
           icon: Target,
           title: "Missed Moments",
-          description: "Special occasions unrecognized, preferences forgotten—generic service despite premium prices."
+          description: "Anniversaries went unmarked and familiar preferences were forgotten — generic service in spite of premium prices."
         },
         {
           icon: Star,
-          title: "Loyalty Erosion",
-          description: "Repeat guests not feeling recognized—defecting to competitors who remembered them."
+          title: "Loyal Guests Drifting Away",
+          description: "Repeat guests who no longer felt recognized were quietly moving to competitors who remembered them."
         }
       ]}
-      approachTitle="Personalization at Scale"
-      approachIntro="NexDyne built a unified guest intelligence platform that created comprehensive guest profiles, predicted preferences, and enabled personalized service across every touchpoint."
+      approachTitle="One Clear View of Every Guest"
+      approachIntro="Working with the group's operations and service leaders, we set out to give every property the same clear picture of each guest — and to put that knowledge in the hands of the staff at the moment it mattered, so the brand could feel personal again at any size."
       steps={[
         {
           step: "01",
-          title: "Unified Guest Profile",
-          description: "Built a single guest profile that unified data from all properties, channels, and interactions. Every preference, request, and feedback captured and accessible brand-wide. Guests recognized everywhere."
+          title: "One Guest Record, Shared Across Every Property",
+          description: "We brought each guest's history, preferences and past requests together into a single record that every hotel in the group could see — so a guest recognized at one property was recognized at all of them, without ever having to repeat themselves."
         },
         {
           step: "02",
-          title: "Preference Prediction",
-          description: "Developed ML models that predicted guest preferences based on past behavior and similar guests. Even first-time visitors received personalized recommendations based on their profile characteristics."
+          title: "Anticipating What a Guest Will Want",
+          description: "We used each guest's own history, and the patterns of guests like them, to suggest what they were likely to appreciate — so even a first-time visitor could be met with thoughtful, relevant touches rather than a blank slate."
         },
         {
           step: "03",
-          title: "Staff Enablement",
-          description: "Created mobile tools that put guest intelligence in staff hands. Before any interaction, staff saw guest preferences, history, and opportunities to delight. Service became proactive, not reactive."
+          title: "Putting the Knowledge in Staff Hands",
+          description: "We gave front-line staff a simple tool showing, before each interaction, who the guest was, what they preferred and how to make the stay special — turning service from reactive to genuinely anticipatory."
         },
         {
           step: "04",
-          title: "Digital Experience",
-          description: "Launched a personalized digital experience: mobile check-in, room customization, and in-stay requests. Guests controlled their experience while the brand learned their preferences."
+          title: "Letting Guests Shape Their Own Stay",
+          description: "We added an easy digital experience — check in from a phone, set room preferences, make requests during the stay — so guests could tailor things themselves while the group quietly learned what they liked for next time."
         }
       ]}
-      resultsTitle="Luxury Service Restored"
+      resultsTitle="The Personal Touch, Restored at Scale"
       results={[
         {
           icon: Star,
           value: "+25pts",
-          label: "NPS improvement",
-          detail: "Returned to brand's historic highs"
+          label: "Guest recommendation score",
+          detail: "Back above the brand's historic best"
         },
         {
           icon: Heart,
           value: "40%",
-          label: "Increase in loyalty program engagement",
-          detail: "Guests feel recognized and valued"
+          label: "More loyalty sign-ups",
+          detail: "Guests who feel recognized choose to belong"
         },
         {
           icon: DollarSign,
-          value: "$85M",
+          value: "$11M",
           label: "Revenue impact",
-          detail: "From increased loyalty and spend"
+          detail: "From stronger loyalty and higher spend"
         },
         {
           icon: Sparkles,
           value: "92%",
           label: "Guest satisfaction",
-          detail: "With personalized service"
+          detail: "With service that finally felt personal again"
         }
       ]}
-      quote="We restored the personal touch that made our brand famous. Our staff now know guests before they arrive—their preferences, their history, what will make this stay special. Technology didn't replace human connection; it enabled it at scale."
-      quoteAuthor="Isabella Martinez"
-      quoteRole="Chief Experience Officer"
+      quote="We built our name on knowing our guests, and as we grew we were quietly losing that. Now our people know a guest before they walk in — what they like, what to remember, what will make the stay special. The technology did not replace the human warmth; it gave our staff what they needed to show it, in every hotel we run."
+      quoteAuthor="Chief Experience Officer"
+      quoteRole="Upscale hotel group"
       relatedStudies={[
         {
-          title: "AI Revenue Management for Hotels",
+          title: "Lifting Hotel Revenue per Room by 18%",
           metric: "18%",
-          label: "RevPAR increase",
-          link: "/cases/hotel-revenue-management",
-          image: "/images/industries/city-night.jpg"
+          label: "more revenue per room",
+          link: "/cases/hotel-revenue-transformation",
+          image: "/images/industries/travel-city-twilight.jpg"
         },
         {
-          title: "Airline Loyalty Program Redesign",
+          title: "Reviving a Regional Airline's Loyalty Program",
           metric: "40%",
-          label: "increase in engagement",
+          label: "more active members",
           link: "/cases/airline-loyalty-redesign",
           image: "/images/industries/transport-bridge.jpg"
         }
       ]}
-      ctaTitle="Ready to Personalize Guest Experience?"
-      ctaDescription="Let's discuss how guest intelligence can transform your hospitality brand."
+      ctaTitle="Ready to make every guest feel remembered?"
+      ctaDescription="Let's talk about giving every property one clear view of the guests you already have."
     />
   );
 }
