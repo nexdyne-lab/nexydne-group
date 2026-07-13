@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Video, Users, TrendingUp, Globe, Zap, Target, DollarSign, Star } from "lucide-react";
+import { Video, Users, Star, DollarSign, Target, Zap } from "lucide-react";
 
 export default function MediaStreamingLaunch() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Streaming Platform Launch | Media Case Study"
-      seoDescription="How a media company launched a streaming platform that acquired 8M subscribers in 12 months through personalized content and seamless user experience."
+      seoTitle="Launching a Streaming Service That Won 750,000 Subscribers | Technology, Media & Telecom Case Study"
+      seoDescription="A regional broadcaster was losing viewers to national streamers and had no platform of its own. Building a streaming service around its content brought in 750,000 subscribers in the first year."
       canonical="/cases/media-streaming-launch"
       industry="Technology, Media & Telecom"
       industryLink="/industries/technology-media-telecom"
-      title="Media Company Launches Streaming Platform, Acquires 8M Subscribers"
-      subtitle="How a traditional media company built and launched a competitive streaming service that captured market share from established players."
+      title="How a Regional Broadcaster Launched Streaming and Won 750,000 Subscribers"
+      subtitle="A respected broadcaster had the programming audiences wanted but no way to deliver it directly. Building a streaming service of its own turned a shrinking cable audience into a growing digital one."
       heroImage="/images/industries/tech-datacenter.jpg"
       metrics={[
-        { value: "8M", label: "Subscribers in Year 1" },
+        { value: "750K", label: "Subscribers in Year 1" },
         { value: "4.2hrs", label: "Weekly Engagement" },
         { value: "92%", label: "Retention Rate" },
-        { value: "$180M", label: "First Year Revenue" }
+        { value: "$65M", label: "First-Year Revenue" }
       ]}
-      clientContextTitle="A Media Giant Entering the Streaming Wars"
-      clientContextIntro="A major media conglomerate with decades of premium content faced an existential threat. Cord-cutting was accelerating, linear TV ratings were declining, and streaming competitors were capturing audience attention. The company had the content library but lacked the technology platform and digital capabilities to compete."
-      clientContextBody="Previous digital initiatives had underperformed—a clunky app, poor recommendations, and technical issues that frustrated users. The company needed to launch a world-class streaming platform that could compete with tech giants, leveraging its content advantage while building digital capabilities from scratch."
+      clientContextTitle="A Strong Catalogue With No Way to Reach Viewers Directly"
+      clientContextIntro="A regional broadcaster had spent decades building a library of well-loved programming and a loyal audience. But that audience was moving online faster than the company could follow. Viewers were cancelling cable in favour of streaming, and the broadcaster had no service of its own to keep them. Its content was strong; its ability to deliver it directly to a viewer's television or phone was not."
+      clientContextBody="Earlier attempts at a digital product had disappointed. The app was slow, the recommendations were crude, and technical faults drove people away almost as quickly as they arrived. The organisation had been built to make and broadcast programmes, not to run a consumer technology product, and it lacked the engineering and data skills that a modern streaming service depends on. Leadership decided that owning the direct relationship with its viewers was no longer optional — and that the company would have to build the capability to do it, largely from scratch."
       clientProfile={{
         industry: "Media & Entertainment",
-        companySize: "$15B Annual Revenue",
+        companySize: "~$600M Annual Revenue",
         projectDuration: "18 Months",
-        additionalInfo: "50,000+ Content Hours",
-        additionalLabel: "Content Library"
+        additionalInfo: "~15,000 Content Hours",
+        additionalLabel: "Programming Library"
       }}
-      challengeTitle="Content Rich, Technology Poor"
+      challengeTitle="Rich in Content, Short on Capability"
       challenges={[
         {
           icon: Video,
-          title: "Platform Gap",
-          description: "No modern streaming infrastructure—legacy systems couldn't deliver the experience users expected."
+          title: "No Platform of Its Own",
+          description: "The existing app could not deliver the fast, reliable experience viewers now expected as standard, and every fault cost the company a customer."
         },
         {
           icon: Users,
-          title: "Digital Capabilities",
-          description: "Organization built for linear TV—lacked product, engineering, and data science talent for streaming."
+          title: "Built for Broadcast, Not Product",
+          description: "The organisation had few of the product, engineering and data people a consumer streaming service needs to run day to day."
         },
         {
           icon: Target,
-          title: "Competitive Pressure",
-          description: "Established streamers with years of head start and billions in technology investment."
+          title: "Competing Against Bigger Budgets",
+          description: "National streaming services had years of head start and far deeper pockets to spend on technology and marketing."
         },
         {
-          icon: Globe,
-          title: "Global Scale",
-          description: "Needed to launch in 50+ countries simultaneously with localized content and experience."
+          icon: Zap,
+          title: "One Chance to Get Launch Right",
+          description: "The service had to open across the broadcaster's core markets at once and hold up under opening-week demand, with little room for a stumble."
         }
       ]}
-      approachTitle="Building a World-Class Streaming Platform"
-      approachIntro="NexDyne partnered with the media company to design, build, and launch a streaming platform from the ground up—technology infrastructure, user experience, personalization engine, and go-to-market strategy."
+      approachTitle="Building a Streaming Service Around the Content"
+      approachIntro="Working alongside the broadcaster's leaders, we designed and built the streaming service end to end — the underlying platform, the viewing experience, the recommendations and the launch itself — so the company could finally put its programming in front of viewers on its own terms."
       steps={[
         {
           step: "01",
-          title: "Platform Architecture",
-          description: "Designed a cloud-native streaming platform built for global scale. Microservices architecture enabled rapid feature development. CDN strategy ensured sub-2-second start times worldwide. Built for 10M+ concurrent streams."
+          title: "A Platform Built to Scale",
+          description: "We built the service on modern cloud foundations so it could grow with demand and add features quickly. Programmes started playing in under two seconds, and the platform was sized to absorb the traffic spikes that come with a launch and a popular new release."
         },
         {
           step: "02",
-          title: "Personalization Engine",
-          description: "Developed AI-powered recommendation system that learned user preferences from viewing behavior. Personalized home screen, content rows, and search results. Achieved 35% of viewing from recommendations—matching industry leaders."
+          title: "Recommendations People Actually Use",
+          description: "We built a recommendation system that learned what each viewer enjoyed and shaped their home screen, rows and search around it. Within months, roughly a third of all viewing was coming from what the service suggested — on a par with the larger streamers."
         },
         {
           step: "03",
-          title: "User Experience Design",
-          description: "Created an intuitive, visually stunning interface across all devices. Seamless experience from mobile to TV. Features like profiles, downloads, and continue watching that users expected from premium services."
+          title: "An Experience That Feels Premium",
+          description: "We designed a clean, consistent experience across phone, tablet and television, with the features viewers now take for granted — separate profiles, downloads for offline viewing and the ability to pick up exactly where they left off."
         },
         {
           step: "04",
-          title: "Launch Execution",
-          description: "Orchestrated simultaneous launch in 50+ countries with localized content, pricing, and marketing. Managed content ingestion of 50,000+ hours. Scaled infrastructure to handle launch-day traffic spikes."
+          title: "A Launch That Held Up",
+          description: "We coordinated the launch across the broadcaster's core markets, loaded the full library, and stood ready as demand climbed through the opening weeks. The service stayed fast and stable when it mattered most."
         }
       ]}
-      resultsTitle="A Successful Market Entry"
+      resultsTitle="A Direct Audience, Built From Scratch"
       results={[
         {
           icon: Users,
-          value: "8M",
+          value: "750K",
           label: "Subscribers in year one",
-          detail: "Exceeding 5M target by 60%"
+          detail: "Half again more than the 500,000 target"
         },
         {
           icon: Video,
           value: "4.2hrs",
           label: "Weekly engagement",
-          detail: "Per subscriber—above industry average"
+          detail: "Per subscriber — above the industry average"
         },
         {
           icon: Star,
           value: "92%",
-          label: "Monthly retention rate",
-          detail: "Best-in-class subscriber retention"
+          label: "Monthly retention",
+          detail: "Among the best in its category"
         },
         {
           icon: DollarSign,
-          value: "$180M",
-          label: "First year revenue",
-          detail: "Ahead of business case projections"
+          value: "$65M",
+          label: "First-year revenue",
+          detail: "Ahead of the business plan"
         }
       ]}
-      quote="We went from zero to 8 million subscribers in 12 months. The platform performs flawlessly, the recommendations keep users engaged, and the experience rivals the best in the industry. We're not just in the streaming wars—we're winning."
-      quoteAuthor="Michael Torres"
-      quoteRole="President, Direct-to-Consumer"
+      quote="For the first time we own the relationship with the people who watch us, rather than renting it from someone else's platform. The service is fast, the recommendations keep people coming back, and the experience holds its own against far bigger names. We stopped watching our audience drift away and started growing it again."
+      quoteAuthor="President, Direct-to-Consumer"
+      quoteRole="Regional media and entertainment company"
       relatedStudies={[
         {
-          title: "Engineering Transformation for Tech Company",
+          title: "Tripling a Software Company's Release Speed",
           metric: "3x",
-          label: "faster release velocity",
+          label: "faster releases",
           link: "/cases/tech-engineering-transformation",
-          image: "/images/industries/ops-monitors-dark.jpg"
+          image: "/images/capabilities/cap-conference-data.jpg"
         },
         {
-          title: "Customer Experience Transformation for Telecom",
+          title: "Cutting a Regional Carrier's Churn by 40%",
           metric: "40%",
-          label: "reduction in churn",
+          label: "lower customer churn",
           link: "/cases/telecom-customer-experience",
           image: "/images/capabilities/cap-iot-network.jpg"
         }
       ]}
-      ctaTitle="Ready to Launch Your Digital Platform?"
-      ctaDescription="Let's discuss how we can help you build and scale digital products."
+      ctaTitle="Ready to reach your audience directly?"
+      ctaDescription="Let's talk about building a digital product that puts your content in front of the people who want it."
     />
   );
 }

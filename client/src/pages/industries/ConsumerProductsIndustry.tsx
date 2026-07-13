@@ -75,25 +75,25 @@ export default function ConsumerProductsIndustry() {
       }}
       featuredCases={[
         {
-          slug: "consulting-knowledge-management",
-          title: "Transforming knowledge management for a global consulting firm",
-          industry: "Professional Services",
-          metric: "3x",
-          image: "/images/industries/team-workshop.jpg"
+          slug: "consumer-electronics-demand-optimization",
+          title: "Cutting Excess Stock for a Consumer Electronics Brand",
+          industry: "Consumer Products",
+          metric: "40%",
+          image: "/images/capabilities/cap-conference-data.jpg"
         },
         {
-          slug: "bank-process-automation",
-          title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
-          industry: "Financial Services",
-          metric: "10K+ hrs",
-          image: "/images/industries/women-laptops.jpg"
+          slug: "food-beverage-demand-forecasting",
+          title: "Sharper Demand Forecasting for a Food and Beverage Maker",
+          industry: "Consumer Products",
+          metric: "30%",
+          image: "/images/capabilities/cap-food.jpg"
         },
         {
-          slug: "accounting-audit-automation",
-          title: "How audit automation helped an accounting firm scale 2x without hiring",
-          industry: "Professional Services",
-          metric: "2x",
-          image: "/images/industries/biz-meeting.jpg"
+          slug: "retail-assortment-optimization",
+          title: "Tailoring Store Assortments Lifts a Retailer's Sales",
+          industry: "Consumer Products",
+          metric: "12%",
+          image: "/images/capabilities/cap-retail-apparel.jpg"
         }
       ]}
     />

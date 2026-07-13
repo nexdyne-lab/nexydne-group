@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Smartphone, Package, TrendingUp, DollarSign, Target, Clock, BarChart3, Zap } from "lucide-react";
+import { Package, TrendingUp, DollarSign, Target, Clock } from "lucide-react";
 
 export default function ConsumerElectronicsDemandOptimization() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Demand Optimization for Consumer Electronics | Consumer Products Case Study"
-      seoDescription="How a consumer electronics company reduced inventory by 40% while improving availability through AI-powered demand optimization."
+      seoTitle="Cutting Excess Stock for a Consumer Electronics Brand | Consumer Products Case Study"
+      seoDescription="A consumer electronics brand was tying up capital in inventory it could not sell before the next model arrived. Forecasting demand for short-lived products cut inventory by 40% without hurting availability."
       canonical="/cases/consumer-electronics-demand-optimization"
       industry="Consumer Products"
       industryLink="/industries/consumer-products"
-      title="Consumer Electronics Company Cuts Inventory 40% with AI Optimization"
-      subtitle="How machine learning models optimize inventory across short product lifecycles, reducing excess stock while maintaining availability."
+      title="How a Consumer Electronics Brand Cut Excess Stock by 40%"
+      subtitle="Every new product had to be ordered before anyone knew how it would sell — and by the time demand was clear, the model was already halfway to retirement. Learning from similar products changed those odds."
       heroImage="/images/capabilities/cap-conference-data.jpg"
       metrics={[
-        { value: "40%", label: "Inventory Reduction" },
+        { value: "40%", label: "Less Inventory" },
         { value: "97%", label: "In-Stock Rate" },
-        { value: "$120M", label: "Working Capital Freed" },
+        { value: "$14M", label: "Working Capital Freed" },
         { value: "60%", label: "Less Obsolescence" }
       ]}
-      clientContextTitle="A Tech Company Drowning in Inventory"
-      clientContextIntro="A global consumer electronics company launched 200+ products annually with lifecycles of 12-18 months. The challenge: forecast demand for products that didn't exist last year and won't exist next year. Forecast errors led to $300M in excess inventory and $100M in obsolescence write-offs annually."
-      clientContextBody="Traditional forecasting failed for new products—no history to extrapolate. By the time demand patterns emerged, the product lifecycle was half over. The company either over-ordered components (creating excess) or under-ordered (missing sales). Short lifecycles meant mistakes were permanent—no time to course-correct."
+      clientContextTitle="Forecasting Products That Have No History"
+      clientContextIntro="A consumer electronics brand brought around sixty new products to market every year, each with a shelf life of barely twelve to eighteen months. The hardest question in the business was also the most basic: how many of a product should we build when we have never sold it before? With no sales history to lean on, the company either ordered too many components and ended up with stock it could not move, or ordered too few and missed the sales window entirely."
+      clientContextBody="Because product lives were so short, mistakes were permanent. By the time real demand became visible, the model was already being phased out, and there was no second chance to correct the order. The pattern repeated with every launch: excess inventory tied up capital and warehouse space, while end-of-life write-offs quietly erased margin. Leadership had come to treat forecasting as guesswork — and the company was paying for the guesses in cash it could not put to better use."
       clientProfile={{
-        industry: "Consumer Electronics",
-        companySize: "$8B Annual Revenue",
+        industry: "Consumer Electronics Brand",
+        companySize: "~$400M Annual Revenue",
         projectDuration: "12 Months",
-        additionalInfo: "200+ Annual Launches",
-        additionalLabel: "New Products"
+        additionalInfo: "~60 New Products a Year",
+        additionalLabel: "Launch Cadence"
       }}
-      challengeTitle="The New Product Forecasting Problem"
+      challengeTitle="Why the Stock Kept Piling Up"
       challenges={[
         {
           icon: Package,
-          title: "Excess Inventory",
-          description: "$300M in excess inventory from over-forecasting—tying up capital and warehouse space."
+          title: "Capital Locked in Excess Stock",
+          description: "Over-ordering left millions in unsold product sitting in warehouses — cash and space the business could not use elsewhere."
         },
         {
           icon: Clock,
-          title: "Short Lifecycles",
-          description: "12-18 month product lifecycles—no time to learn from mistakes and adjust."
+          title: "No Time to Recover",
+          description: "With products live for barely a year, a bad forecast could not be corrected — the model was gone before demand was ever clear."
         },
         {
           icon: Target,
-          title: "New Product Uncertainty",
-          description: "200+ new products annually with no demand history—forecasting in the dark."
+          title: "Launching Blind",
+          description: "Around sixty new products a year arrived with no sales history, so every launch forecast started from little more than a hunch."
         },
         {
           icon: DollarSign,
-          title: "Obsolescence Costs",
-          description: "$100M in annual write-offs from unsold inventory at end of life."
+          title: "Write-Offs at End of Life",
+          description: "Product left unsold when a model retired had to be written off, steadily eroding the margin each launch was meant to earn."
         }
       ]}
-      approachTitle="AI for Short-Lifecycle Products"
-      approachIntro="NexDyne built an AI-powered demand optimization system designed specifically for short-lifecycle products: learning from analogous products, sensing demand signals early, and dynamically adjusting forecasts throughout the lifecycle."
+      approachTitle="Learning From the Products That Came Before"
+      approachIntro="We helped the brand replace guesswork with judgement grounded in evidence — starting each new product from the behaviour of similar past products, reading the earliest signs of how a launch was landing, and adjusting the plan as real demand came in rather than waiting until it was too late to act."
       steps={[
         {
           step: "01",
-          title: "Analog Product Matching",
-          description: "Developed ML models that identified similar historical products based on features, price points, and market positioning. New product forecasts started with patterns from analogous products, not from zero."
+          title: "Starting From Look-Alikes, Not From Zero",
+          description: "Rather than forecasting each launch from a blank sheet, we matched every new product to earlier ones with similar features, price and positioning. Each launch began with a demand pattern borrowed from products that had already proven how customers behaved."
         },
         {
           step: "02",
-          title: "Launch Signal Detection",
-          description: "Built models that detected demand signals in the first 2-4 weeks of launch: pre-order velocity, early reviews, social sentiment, and channel sell-through. Early signals predicted lifecycle trajectory with 80% accuracy."
+          title: "Reading the First Few Weeks",
+          description: "We built a way to read the earliest signals of a launch — pre-orders, early reviews and how quickly stores were selling through — so that within the first weeks the company had a dependable read on where a product was heading, not a guess."
         },
         {
           step: "03",
-          title: "Dynamic Forecast Adjustment",
-          description: "Implemented continuous forecast updates as demand signals emerged. Forecasts adjusted weekly based on actual sell-through, enabling rapid response to over- or under-performance."
+          title: "Adjusting the Plan as Demand Arrived",
+          description: "Forecasts were refreshed every week against actual sales, so a product that was over- or under-performing was spotted quickly and the build plan adjusted while there was still time to change it."
         },
         {
           step: "04",
-          title: "End-of-Life Optimization",
-          description: "Built models that predicted end-of-life demand and optimized final orders. Reduced obsolescence by matching supply to remaining demand—no more warehouses full of last year's products."
+          title: "Landing the Final Orders",
+          description: "As each product neared the end of its life, we forecast the demand that remained and sized the final orders to match — so a model retired with its shelves nearly clear instead of leaving a warehouse full of stock to write off."
         }
       ]}
-      resultsTitle="Inventory Excellence"
+      resultsTitle="The Payoff"
       results={[
         {
           icon: Package,
           value: "40%",
-          label: "Inventory reduction",
-          detail: "From $750M to $450M average inventory"
+          label: "Less inventory carried",
+          detail: "Average stock cut by roughly two fifths"
         },
         {
           icon: Target,
           value: "97%",
-          label: "In-stock rate maintained",
-          detail: "Availability preserved despite less inventory"
+          label: "In-stock rate held",
+          detail: "Availability preserved despite leaner inventory"
         },
         {
           icon: DollarSign,
-          value: "$120M",
+          value: "$14M",
           label: "Working capital freed",
-          detail: "Redeployed to growth initiatives"
+          detail: "Cash redeployed into growth"
         },
         {
           icon: TrendingUp,
           value: "60%",
           label: "Less obsolescence",
-          detail: "Write-offs reduced from $100M to $40M"
+          detail: "End-of-life write-offs cut by more than half"
         }
       ]}
-      quote="We used to treat new product forecasting as guesswork—and we guessed wrong a lot. The AI platform changed that. It learns from similar products, detects demand signals early, and adjusts continuously. We're carrying less inventory, writing off less obsolescence, and still meeting customer demand."
-      quoteAuthor="David Park"
-      quoteRole="SVP of Global Operations"
+      quote="We used to treat forecasting a brand-new product as pure guesswork — and we guessed wrong often enough to feel it in the numbers. Now every launch starts from what similar products actually did, we can read the first few weeks, and we adjust as we go. We carry less stock, write off far less, and still have the product our customers want on the shelf."
+      quoteAuthor="Senior Vice President, Operations"
+      quoteRole="Consumer electronics brand"
       relatedStudies={[
         {
-          title: "Demand Forecasting for Food & Beverage",
+          title: "Sharper Demand Forecasting for a Food and Beverage Maker",
           metric: "30%",
-          label: "forecast improvement",
+          label: "better forecasting",
           link: "/cases/food-beverage-demand-forecasting",
-          image: "/images/industries/meeting-topview.jpg"
+          image: "/images/capabilities/cap-food.jpg"
         },
         {
-          title: "Assortment Optimization for Retailer",
+          title: "Tailoring Store Assortments Lifts a Retailer's Sales",
           metric: "12%",
           label: "sales lift",
           link: "/cases/retail-assortment-optimization",
-          image: "/images/capabilities/cap-data-bars.jpg"
+          image: "/images/capabilities/cap-retail-apparel.jpg"
         }
       ]}
-      ctaTitle="Ready to Optimize Your Inventory?"
-      ctaDescription="Let's discuss how AI can help you manage short-lifecycle products."
+      ctaTitle="Ready to stop guessing on new products?"
+      ctaDescription="Let's talk about forecasting demand for products that have no history yet."
     />
   );
 }

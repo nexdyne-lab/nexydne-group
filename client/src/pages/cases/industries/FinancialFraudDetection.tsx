@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Clock, Shield, TrendingUp, Users, Zap, Target, DollarSign, BarChart3 } from "lucide-react";
+import { Clock, Shield, TrendingUp, Users, Zap } from "lucide-react";
 
 export default function FinancialFraudDetection() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="AI-Powered Fraud Detection | Financial Services Case Study"
-      seoDescription="How a regional bank achieved 73% reduction in fraud losses through real-time AI-powered fraud detection, processing 50K transactions per second."
+      seoTitle="Catching Card Fraud Before the Money Moves | Financial Services Case Study"
+      seoDescription="A regional bank was finding card fraud a full day after the money had already gone. Checking every transaction the moment it happened cut fraud losses by 73%."
       canonical="/cases/financial-fraud-detection"
       industry="Financial Services"
       industryLink="/industries/financial-services"
-      title="Regional Bank Transforms Fraud Detection with Real-Time AI"
-      subtitle="How a $15B regional bank deployed machine learning to detect fraud in milliseconds, reducing losses by 73% while improving customer experience."
+      title="How a Regional Bank Cut Card Fraud Losses by 73%"
+      subtitle="A regional bank was discovering fraud a full day after the money had already moved. Checking every transaction the instant it happened turned a losing chase into a fair fight."
       heroImage="/images/industries/fin-monitors.jpg"
       metrics={[
-        { value: "73%", label: "Reduction in Fraud Losses" },
-        { value: "85%", label: "Fewer False Positives" },
-        { value: "<100ms", label: "Detection Latency" },
-        { value: "$12M", label: "Annual Savings" }
+        { value: "73%", label: "Lower Fraud Losses" },
+        { value: "85%", label: "Fewer False Alarms" },
+        { value: "<100ms", label: "Time to Decide" },
+        { value: "$12M", label: "Saved Each Year" }
       ]}
-      clientContextTitle="A Regional Bank Under Siege"
-      clientContextIntro="A regional payment processor handling credit and debit card transactions for 5,000 merchants faced an escalating crisis. Their batch-based fraud detection system analyzed transactions overnight, identifying fraudulent patterns 12-24 hours after transactions cleared. By the time fraud was detected, money had already moved and chargebacks were inevitable."
-      clientContextBody="The fraud team reviewed rule-based alerts manually—80% were false positives that consumed analyst time while sophisticated fraud slipped through. Merchants complained about legitimate transactions being declined while fraudsters exploited gaps in rule coverage. The company absorbed $15M in fraud losses annually plus operational costs of investigating thousands of false alerts."
+      clientContextTitle="Finding Fraud a Day After the Money Was Gone"
+      clientContextIntro="A regional bank ran the card payments for a large base of local businesses and consumers. Its defense against fraud worked in overnight batches: transactions were gathered up and examined together the next morning, which meant a fraudulent charge was typically caught twelve to twenty-four hours after it had already cleared. By then the money had moved and the loss was, in most cases, simply written off."
+      clientContextBody="The team's alerts were driven by fixed rules, and roughly four out of five turned out to be false alarms — busy work that consumed analysts while genuine fraud, which rarely fit an old rule neatly, slipped past. The costs pulled in two directions at once. Honest customers had good purchases declined and grew frustrated, while the bank absorbed around $15 million a year in fraud losses on top of the expense of chasing thousands of alerts that led nowhere. Leadership recognised the real problem was timing: the bank was always looking at yesterday's fraud with yesterday's tools."
       clientProfile={{
-        industry: "Financial Services",
-        companySize: "$15B in Assets",
-        projectDuration: "12 Weeks",
-        additionalInfo: "50K transactions/second",
-        additionalLabel: "Transaction Volume"
+        industry: "Regional Bank",
+        companySize: "~$6B in Assets",
+        projectDuration: "14 Months",
+        additionalInfo: "Card Payments",
+        additionalLabel: "Line of Business"
       }}
-      challengeTitle="Fighting Yesterday's Fraud with Yesterday's Tools"
+      challengeTitle="Why the Bank Kept Losing the Chase"
       challenges={[
         {
           icon: Clock,
-          title: "Detection Delay",
-          description: "Batch processing meant fraud was detected 12-24 hours after transactions cleared, making recovery impossible."
+          title: "Always a Day Too Late",
+          description: "Overnight batch checks meant fraud was found twelve to twenty-four hours after the charge cleared — long after any chance to stop it."
         },
         {
           icon: Shield,
-          title: "False Positive Epidemic",
-          description: "80% of alerts were false positives, overwhelming analysts and eroding trust in the system."
+          title: "Buried in False Alarms",
+          description: "About 80% of alerts were false, swamping analysts and steadily eroding their trust in the system that raised them."
         },
         {
           icon: TrendingUp,
-          title: "Escalating Losses",
-          description: "$15M in annual fraud losses plus operational costs of investigating thousands of false alerts."
+          title: "Losses That Kept Climbing",
+          description: "Around $15 million a year went to fraud, on top of the cost of investigating thousands of alerts that led nowhere."
         },
         {
           icon: Users,
-          title: "Customer Friction",
-          description: "Legitimate transactions declined, leading to customer complaints and merchant churn."
+          title: "Good Customers Turned Away",
+          description: "Legitimate purchases were declined for lack of context, leaving loyal customers frustrated and questioning the bank."
         }
       ]}
-      approachTitle="Real-Time Intelligence at Scale"
-      approachIntro="NexDyne built a real-time streaming platform that ingested transaction data, enriched it with customer behavior features, scored fraud risk using ML models, and returned decisions in under 100ms. Implementation took 12 weeks from architecture design to production cutover."
+      approachTitle="Checking Every Transaction the Moment It Happens"
+      approachIntro="Working with the bank's risk and technology teams, we moved fraud checking from the morning after to the instant of the purchase — examining each transaction in the fraction of a second before it is approved, with enough context to tell a genuine customer from a fraudster."
       steps={[
         {
           step: "01",
-          title: "Streaming Ingestion",
-          description: "Apache Kafka consumed transaction events from payment gateway at 50K messages/second. Separate topics for authorization requests, settlement confirmations, and chargeback notifications."
+          title: "Watching Transactions as They Happen",
+          description: "Instead of collecting transactions for an overnight run, we began examining each one the moment it arrived — the same live view a fraudster has, so the bank was no longer reacting to a picture that was already hours old."
         },
         {
           step: "02",
-          title: "Feature Engineering",
-          description: "Apache Flink streaming jobs calculated real-time features—transaction velocity, geographic anomalies, merchant risk scores, device fingerprint matches. Features stored in Redis for sub-10ms lookup."
+          title: "Judging Each Purchase in Context",
+          description: "For every transaction we assembled the signals that reveal fraud — how fast a card was being used, whether the location made sense, how the amount compared with the customer's normal spending — so a decision rested on the full picture, not a single rigid rule."
         },
         {
           step: "03",
-          title: "ML Scoring",
-          description: "Gradient boosting models (LightGBM) deployed as REST APIs. Models trained daily on labeled fraud data. Ensemble of 3 models voted on final fraud probability score."
+          title: "Learning What Fraud Actually Looks Like",
+          description: "Rather than hand-written rules, we used models trained on the bank's own history of confirmed fraud, refreshed daily so they kept pace with new tactics instead of falling a step behind them."
         },
         {
           step: "04",
-          title: "Decision Engine",
-          description: "Rules engine combined ML scores with business policies. Transactions scored above threshold declined automatically. Borderline cases routed to fraud analysts for manual review."
+          title: "Deciding in Under a Tenth of a Second",
+          description: "Clear-cut fraud was declined automatically before the money could move, obvious good purchases sailed through, and only the genuinely uncertain cases reached an analyst — all inside the split second a customer waits at the terminal."
         }
       ]}
-      resultsTitle="Measurable Impact Across the Organization"
+      resultsTitle="A Fair Fight, at Last"
       results={[
         {
           icon: Shield,
-          value: "78%",
-          label: "Reduction in fraud losses",
-          detail: "Blocked $12M in fraudulent transactions annually"
+          value: "73%",
+          label: "Lower fraud losses",
+          detail: "Around $12M in fraud stopped before the money moved"
         },
         {
           icon: TrendingUp,
-          value: "65%",
-          label: "Decrease in false positives",
-          detail: "Improved authorization rates by 4.2%"
+          value: "85%",
+          label: "Fewer false alarms",
+          detail: "More good purchases approved, fewer customers turned away"
         },
         {
           icon: Zap,
           value: "<100ms",
-          label: "Fraud scoring latency",
-          detail: "Real-time decisions at 50K transactions/second"
+          label: "Time to decide",
+          detail: "A fraud judgement in the blink of an eye, at the point of sale"
         },
         {
           icon: Users,
           value: "70%",
-          label: "Reduction in manual reviews",
-          detail: "Analysts focus on sophisticated fraud rings"
+          label: "Less manual review",
+          detail: "Analysts freed to focus on organised, sophisticated fraud"
         }
       ]}
-      quote="The real-time fraud platform was a game-changer. Before, we detected fraud 24 hours too late—money gone, chargebacks inevitable. Now we block fraudulent transactions in milliseconds, before funds move. The ML models adapt to new fraud patterns automatically—we're not chasing fraudsters with static rules anymore."
-      quoteAuthor="Jennifer Park"
-      quoteRole="VP of Risk Management"
+      quote="We used to find our fraud the next morning, when the money was already gone and there was nothing to do but write it off. Now we catch it in the split second before the charge goes through. Our analysts have stopped firefighting false alarms and our customers have stopped being turned away for no reason. Same team, same customers — we simply stopped fighting yesterday's fraud with yesterday's tools."
+      quoteAuthor="Head of Fraud Risk"
+      quoteRole="Regional bank"
       relatedStudies={[
         {
-          title: "Multinational Bank Cross-Sell Transformation",
-          metric: "$200M",
-          label: "increase in cross-sell revenue",
+          title: "Turning One Product Per Customer into Lasting Relationships",
+          metric: "$24M",
+          label: "in new revenue",
           link: "/cases/bank-cross-sell",
           image: "/images/industries/fin-trader.jpg"
         },
         {
-          title: "Wealth Management Digital Onboarding",
+          title: "Cutting Wealth Onboarding from Weeks to Days",
           metric: "60%",
-          label: "reduction in onboarding time",
+          label: "faster onboarding",
           link: "/cases/wealth-onboarding",
           image: "/images/industries/fin-handshake-city.jpg"
         }
       ]}
-      ctaTitle="Ready to Transform Your Fraud Detection?"
-      ctaDescription="Let's discuss how real-time AI can protect your business and improve customer experience."
+      ctaTitle="Ready to catch fraud before the money moves?"
+      ctaDescription="Let's talk about checking every transaction the moment it happens, not the morning after."
     />
   );
 }

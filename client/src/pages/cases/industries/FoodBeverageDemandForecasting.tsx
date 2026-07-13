@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Package, TrendingUp, BarChart3, DollarSign, Target, Truck, Factory, Leaf } from "lucide-react";
+import { Package, DollarSign, Target, BarChart3, Leaf } from "lucide-react";
 
 export default function FoodBeverageDemandForecasting() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Demand Forecasting for Food & Beverage | Consumer Products Case Study"
-      seoDescription="How a food and beverage company improved forecast accuracy by 30% using AI, reducing waste and stockouts across 50,000 SKUs."
+      seoTitle="Sharper Demand Forecasting for a Food and Beverage Maker | Consumer Products Case Study"
+      seoDescription="A food and beverage maker was throwing away product it over-made and losing sales on product it ran short of. A better read on demand improved forecast accuracy by 30% and cut waste."
       canonical="/cases/food-beverage-demand-forecasting"
       industry="Consumer Products"
       industryLink="/industries/consumer-products"
-      title="Food & Beverage Company Achieves 30% Better Demand Forecasting"
-      subtitle="How machine learning models predict demand across 50,000 SKUs, reducing waste, improving service levels, and optimizing production planning."
+      title="How a Food and Beverage Maker Forecast Demand 30% More Accurately"
+      subtitle="The same misread on demand produced two problems at once — perfectly good product thrown away, and shelves empty when customers came looking. A better read on demand eased both."
       heroImage="/images/capabilities/cap-food.jpg"
       metrics={[
-        { value: "30%", label: "Forecast Improvement" },
+        { value: "30%", label: "Better Forecasting" },
         { value: "98.5%", label: "Service Level" },
-        { value: "$45M", label: "Working Capital Freed" },
+        { value: "$8M", label: "Working Capital Freed" },
         { value: "25%", label: "Less Waste" }
       ]}
-      clientContextTitle="A CPG Giant Fighting Forecast Error"
-      clientContextIntro="A global food and beverage company with $20B in revenue managed 50,000 SKUs across 100 markets. Demand planning was a constant struggle: forecast errors averaged 35%, leading to $200M in annual waste from expired products and $150M in lost sales from stockouts."
-      clientContextBody="Legacy forecasting relied on statistical models and planner judgment. It couldn't account for the complex factors driving demand: weather, promotions, competitor actions, social trends, and local events. Planners spent 80% of their time gathering data and building spreadsheets, leaving little time for insight and decision-making."
+      clientContextTitle="When a Wrong Forecast Costs You Twice"
+      clientContextIntro="A food and beverage maker produced around two thousand products for grocery and convenience customers across a dozen regional markets. Its forecasts were wrong by more than a third on average, and because much of what it sold was perishable, every error cost the company twice — good product passing its date and being thrown away, and other product selling out and sending shoppers to a competitor's brand instead."
+      clientContextBody="Planning still ran on statistical models and the judgement of experienced planners. Neither could keep up with everything that actually moved demand — a heatwave, a competitor's promotion, a local event, a shift in what shoppers were talking about. Worse, the planners spent the bulk of their week simply gathering data and stitching together spreadsheets, leaving little room for the judgement that was supposed to be their real contribution. The company was working hard at forecasting and still getting it wrong."
       clientProfile={{
-        industry: "Food & Beverage",
-        companySize: "$20B Annual Revenue",
+        industry: "Food and Beverage Maker",
+        companySize: "~$500M Annual Revenue",
         projectDuration: "15 Months",
-        additionalInfo: "50,000 SKUs",
-        additionalLabel: "Product Portfolio"
+        additionalInfo: "~2,000 Products",
+        additionalLabel: "Product Range"
       }}
-      challengeTitle="The Forecast Accuracy Crisis"
+      challengeTitle="A Forecast That Missed Both Ways"
       challenges={[
         {
           icon: Target,
-          title: "High Forecast Error",
-          description: "35% average forecast error—leading to simultaneous waste and stockouts."
+          title: "Forecasts Off by a Third",
+          description: "Average error above 35% meant the plan was rarely close enough — producing waste and shortages at the same time."
         },
         {
           icon: Leaf,
-          title: "Product Waste",
-          description: "$200M in annual waste from expired products—destroying margin and sustainability goals."
+          title: "Good Product Thrown Away",
+          description: "Perishable stock made in excess passed its date before it could sell, destroying both margin and the company's waste goals."
         },
         {
           icon: Package,
-          title: "Stockout Losses",
-          description: "$150M in lost sales from out-of-stocks—customers switching to competitors."
+          title: "Sales Lost to Empty Shelves",
+          description: "When a product ran short, shoppers simply reached for a competitor's — sales the company never got back."
         },
         {
           icon: BarChart3,
-          title: "Manual Processes",
-          description: "Planners spent 80% of time on data gathering—no time for strategic analysis."
+          title: "Planners Buried in Spreadsheets",
+          description: "Most of the planning week went to gathering data by hand, leaving little time for the judgement the role was meant to add."
         }
       ]}
-      approachTitle="AI-Powered Demand Sensing"
-      approachIntro="NexDyne built an AI-powered demand forecasting platform that combined internal data with external signals, automated the forecasting process, and enabled planners to focus on exceptions and insights."
+      approachTitle="A Clearer Read on Demand"
+      approachIntro="We helped the company build a far better read on what customers would actually buy — bringing together the outside forces that move demand, sharpening the forecast down to the product and the week, and freeing planners to spend their time on judgement rather than data entry."
       steps={[
         {
           step: "01",
-          title: "Data Integration",
-          description: "Unified 5 years of shipment data with external signals: weather, economic indicators, social media trends, competitor promotions, and retailer POS data. Created a comprehensive demand signal repository."
+          title: "Bringing the Signals Together",
+          description: "We combined years of the company's own shipment history with the outside signals that move demand — weather, local events, competitor promotions and what stores were actually selling — into a single, current picture instead of a dozen scattered spreadsheets."
         },
         {
           step: "02",
-          title: "ML Model Development",
-          description: "Built hierarchical forecasting models that predicted demand at SKU-location-week granularity. Models learned seasonal patterns, promotional lift, weather sensitivity, and cannibalization effects."
+          title: "Forecasting Down to the Product and Week",
+          description: "We built forecasting that predicted demand for each product, in each market, week by week — and that learned the real patterns behind the numbers: seasonality, the lift from a promotion, sensitivity to weather, and how one product's sales pull from another's."
         },
         {
           step: "03",
-          title: "Demand Sensing",
-          description: "Implemented short-term demand sensing that adjusted forecasts based on real-time signals: POS data, weather changes, and social trends. Improved short-term accuracy by 40%."
+          title: "Sensing Short-Term Shifts",
+          description: "On top of the longer view, we added short-term sensing that nudged the forecast as fresh signals arrived — a sudden spell of hot weather, a jump in what stores were selling — so the near-term plan reflected this week, not last quarter."
         },
         {
           step: "04",
-          title: "Planner Workflow",
-          description: "Built a planner workbench that automated routine forecasting and surfaced exceptions requiring human judgment. Planners shifted from data gathering to insight generation and scenario planning."
+          title: "Freeing the Planners to Think",
+          description: "We gave planners a workbench that handled the routine forecasts on its own and surfaced only the exceptions that needed a human call. Their week shifted from assembling data to understanding why demand was moving and deciding what to do about it."
         }
       ]}
-      resultsTitle="Supply Chain Excellence"
+      resultsTitle="A Supply Chain That Keeps Up"
       results={[
         {
           icon: Target,
           value: "30%",
-          label: "Improvement in forecast accuracy",
-          detail: "From 65% to 85% accuracy"
+          label: "More accurate forecasts",
+          detail: "Accuracy up from about 65% to 85%"
         },
         {
           icon: Package,
           value: "98.5%",
-          label: "Service level achieved",
-          detail: "Up from 94%—fewer stockouts"
+          label: "Service level reached",
+          detail: "Up from 94% — far fewer empty shelves"
         },
         {
           icon: DollarSign,
-          value: "$45M",
+          value: "$8M",
           label: "Working capital freed",
-          detail: "From optimized inventory levels"
+          detail: "From leaner, better-matched inventory"
         },
         {
           icon: Leaf,
           value: "25%",
-          label: "Reduction in waste",
-          detail: "From better demand matching"
+          label: "Less waste",
+          detail: "Less perishable product made and thrown away"
         }
       ]}
-      quote="The AI forecasting platform transformed demand planning from art to science. Our planners used to spend all their time building forecasts—now they spend it understanding why demand is changing and what to do about it. We're more accurate, more agile, and more strategic."
-      quoteAuthor="Maria Chen"
-      quoteRole="VP of Supply Chain Planning"
+      quote="Forecasting used to be an art, and the art was mostly building spreadsheets. Now the routine work runs itself and my planners spend their time on the question that matters — why is demand changing, and what should we do about it? We are more accurate, we waste less, and we react faster when the market moves."
+      quoteAuthor="Vice President, Supply Chain Planning"
+      quoteRole="Food and beverage maker"
       relatedStudies={[
         {
-          title: "Demand Optimization for Consumer Electronics",
+          title: "Cutting Excess Stock for a Consumer Electronics Brand",
           metric: "40%",
-          label: "inventory reduction",
+          label: "less inventory",
           link: "/cases/consumer-electronics-demand-optimization",
-          image: "/images/capabilities/cap-agriculture.jpg"
+          image: "/images/capabilities/cap-conference-data.jpg"
         },
         {
-          title: "Assortment Optimization for Retailer",
+          title: "Tailoring Store Assortments Lifts a Retailer's Sales",
           metric: "12%",
           label: "sales lift",
           link: "/cases/retail-assortment-optimization",
-          image: "/images/capabilities/cap-retail-data.jpg"
+          image: "/images/capabilities/cap-retail-apparel.jpg"
         }
       ]}
-      ctaTitle="Ready to Transform Your Demand Planning?"
-      ctaDescription="Let's discuss how AI forecasting can improve your supply chain performance."
+      ctaTitle="Ready to get ahead of demand?"
+      ctaDescription="Let's talk about a read on demand accurate enough to cut waste and shortages together."
     />
   );
 }

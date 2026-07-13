@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Grid3X3, TrendingUp, DollarSign, Target, Users, BarChart3, Package, Sparkles } from "lucide-react";
+import { Grid3X3, TrendingUp, DollarSign, Target, Users, Package, Sparkles } from "lucide-react";
 
 export default function RetailAssortmentOptimization() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Assortment Optimization | Consumer Products Case Study"
-      seoDescription="How a retailer achieved 12% sales lift through AI-powered assortment optimization that tailored product selection to local customer preferences."
+      seoTitle="Tailoring Store Assortments Lifts a Retailer's Sales | Consumer Products Case Study"
+      seoDescription="A regional retailer stocked every store the same way, ignoring who actually shopped there. Matching each store's range to its local customers lifted sales 12% while carrying less inventory."
       canonical="/cases/retail-assortment-optimization"
       industry="Consumer Products"
       industryLink="/industries/consumer-products"
-      title="Retailer Achieves 12% Sales Lift Through Assortment Optimization"
-      subtitle="How AI-powered localization tailored product assortments to customer preferences at each store, increasing sales while reducing inventory."
+      title="How a Retailer Lifted Sales 12% by Tailoring Each Store's Range"
+      subtitle="Every store carried the same products regardless of who shopped there — so items that flew off the shelves in one neighbourhood gathered dust in another. Matching the range to the customer changed that."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
       metrics={[
         { value: "12%", label: "Sales Lift" },
         { value: "15%", label: "Less Inventory" },
-        { value: "$180M", label: "Revenue Increase" },
+        { value: "$22M", label: "Added Revenue" },
         { value: "25%", label: "Fewer SKUs" }
       ]}
-      clientContextTitle="A Retailer with One-Size-Fits-All Assortments"
-      clientContextIntro="A national retailer with 1,200 stores used the same product assortment everywhere—urban and rural, affluent and value-conscious, diverse demographics all received identical product selection. The result: products that flew off shelves in some stores gathered dust in others."
-      clientContextBody="Category managers made assortment decisions based on national sales data, missing local preferences. Stores in Hispanic neighborhoods lacked products those customers wanted. Affluent suburban stores carried value items that didn't sell. The retailer was leaving money on the table by ignoring the diversity of its customer base."
+      clientContextTitle="One Assortment for Every Kind of Shopper"
+      clientContextIntro="A regional retailer ran around eighty stores and stocked nearly all of them the same way — the same products on the same shelves whether the store sat in a busy city centre or a quiet rural town, whether its shoppers were affluent or watching every dollar. The result was predictable: products that sold out in one store sat untouched in another, and the chain never quite fit any of its customers."
+      clientContextBody="Buying decisions were made centrally, from chain-wide sales figures that averaged away every local difference. A store serving one kind of neighbourhood was left without the products those shoppers wanted, while another carried items its customers never bought. With tens of thousands of products across the range and dozens of stores, tailoring the assortment by hand was simply impossible — so no one tried, and the money left on the table stayed there."
       clientProfile={{
-        industry: "Retail",
-        companySize: "1,200 Stores",
+        industry: "Regional Retailer",
+        companySize: "~80 Stores",
         projectDuration: "12 Months",
-        additionalInfo: "80,000 SKUs",
+        additionalInfo: "~40,000 SKUs",
         additionalLabel: "Product Range"
       }}
-      challengeTitle="The Localization Gap"
+      challengeTitle="The Cost of Treating Every Store Alike"
       challenges={[
         {
           icon: Grid3X3,
-          title: "One-Size-Fits-All",
-          description: "Same assortment in all 1,200 stores regardless of local customer demographics and preferences."
+          title: "One Range Everywhere",
+          description: "Nearly all eighty stores carried the same assortment, regardless of who actually shopped in each neighbourhood."
         },
         {
           icon: Users,
-          title: "Missed Preferences",
-          description: "Local customer preferences invisible in national sales data—opportunities hidden in averages."
+          title: "Local Demand Left Unseen",
+          description: "What each store's own customers wanted was invisible in chain-wide averages — real demand hidden inside the mean."
         },
         {
           icon: Package,
-          title: "Inventory Inefficiency",
-          description: "Products that sold well nationally sat unsold in stores where they didn't fit local demand."
+          title: "Stock in the Wrong Places",
+          description: "Products that sold briskly chain-wide sat unsold in stores where they simply did not fit local demand."
         },
         {
           icon: Target,
-          title: "Category Complexity",
-          description: "80,000 SKUs made manual localization impossible—too many products, too many stores."
+          title: "Too Many Choices to Manage",
+          description: "With tens of thousands of products across dozens of stores, tailoring the range by hand was beyond what any team could do."
         }
       ]}
-      approachTitle="AI-Powered Local Assortments"
-      approachIntro="NexDyne built an AI-powered assortment optimization platform that analyzed local demand patterns, customer demographics, and competitive dynamics to recommend store-specific assortments."
+      approachTitle="Matching Each Store to Its Customers"
+      approachIntro="We helped the retailer stop treating every store the same and start stocking each one for the customers who actually walked through its doors — grouping stores by the shoppers they served, learning what each group really wanted, and choosing the range for each store accordingly."
       steps={[
         {
           step: "01",
-          title: "Store Clustering",
-          description: "Analyzed customer demographics, purchase patterns, and competitive environment to cluster stores into 50 distinct segments. Each segment represented stores with similar customer bases and demand patterns."
+          title: "Grouping Stores by Who Shops There",
+          description: "We grouped the stores into around ten types based on the customers each served and the way they bought — so that stores with genuinely similar shoppers could be planned together rather than each one from scratch."
         },
         {
           step: "02",
-          title: "Local Demand Modeling",
-          description: "Built ML models that predicted demand for each SKU in each store cluster based on demographics, historical sales, and market basket analysis. Identified products that would over- or under-perform in each location."
+          title: "Learning What Each Group Wants",
+          description: "For each group of stores we modelled how every product was likely to sell, drawing on local buying patterns and what customers tended to purchase together — pinpointing the products that would over- or under-perform in each kind of location."
         },
         {
           step: "03",
-          title: "Assortment Optimization",
-          description: "Developed optimization algorithms that selected the best assortment for each cluster given space constraints and supplier requirements. Balanced local relevance with operational efficiency."
+          title: "Choosing the Right Range for Each Store",
+          description: "We then chose the best assortment for each group within the shelf space and supplier terms it had to work with — balancing what local shoppers wanted against the practical limits of running the business."
         },
         {
           step: "04",
-          title: "Continuous Learning",
-          description: "Implemented feedback loops that tracked performance of localized assortments and refined recommendations. Models improved as they learned which localization decisions drove results."
+          title: "Getting Better With Every Season",
+          description: "We tracked how each tailored range actually performed and fed the results back in, so the recommendations sharpened over time as the company learned which local choices really moved sales."
         }
       ]}
-      resultsTitle="Localization That Delivers"
+      resultsTitle="Tailoring That Pays Off"
       results={[
         {
           icon: TrendingUp,
           value: "12%",
           label: "Sales lift",
-          detail: "From better product-customer matching"
+          detail: "From matching products to local shoppers"
         },
         {
           icon: Package,
           value: "15%",
-          label: "Inventory reduction",
-          detail: "Fewer slow-moving items in wrong stores"
+          label: "Less inventory",
+          detail: "Fewer slow sellers stranded in the wrong stores"
         },
         {
           icon: DollarSign,
-          value: "$180M",
-          label: "Annual revenue increase",
-          detail: "From optimized assortments"
+          value: "$22M",
+          label: "Added revenue a year",
+          detail: "From assortments tuned to each store"
         },
         {
           icon: Sparkles,
           value: "25%",
-          label: "SKU reduction per store",
-          detail: "Better selection, not more selection"
+          label: "Fewer products per store",
+          detail: "A better-chosen range, not a bigger one"
         }
       ]}
-      quote="We stopped treating all our stores the same and started treating our customers as individuals. The AI sees patterns in local demand that our category managers couldn't detect. Stores now carry products their customers actually want—and sales prove it."
-      quoteAuthor="Michael Torres"
-      quoteRole="Chief Merchandising Officer"
+      quote="We stopped treating all our stores the same and started stocking each one for the customers who actually shop there. The system sees patterns in local demand our buyers could never spot from headquarters. Our stores now carry what their customers want — and the sales figures show it."
+      quoteAuthor="Chief Merchandising Officer"
+      quoteRole="Regional retailer"
       relatedStudies={[
         {
-          title: "Demand Forecasting for Food & Beverage",
-          metric: "30%",
-          label: "forecast improvement",
-          link: "/cases/food-beverage-demand-forecasting",
-          image: "/images/capabilities/cap-retail-data.jpg"
+          title: "Cutting Excess Stock for a Consumer Electronics Brand",
+          metric: "40%",
+          label: "less inventory",
+          link: "/cases/consumer-electronics-demand-optimization",
+          image: "/images/capabilities/cap-conference-data.jpg"
         },
         {
-          title: "Demand Optimization for Consumer Electronics",
-          metric: "40%",
-          label: "inventory reduction",
-          link: "/cases/consumer-electronics-demand-optimization",
-          image: "/images/industries/retail-shelves.jpg"
+          title: "Sharper Demand Forecasting for a Food and Beverage Maker",
+          metric: "30%",
+          label: "better forecasting",
+          link: "/cases/food-beverage-demand-forecasting",
+          image: "/images/capabilities/cap-food.jpg"
         }
       ]}
-      ctaTitle="Ready to Localize Your Assortments?"
-      ctaDescription="Let's discuss how AI can help you match products to local customer preferences."
+      ctaTitle="Ready to stock each store for its own customers?"
+      ctaDescription="Let's talk about matching your assortment to the shoppers each store actually serves."
     />
   );
 }

@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Code, Zap, TrendingUp, Users, Shield, Clock, Target, Cog } from "lucide-react";
+import { Code, Zap, Users, Shield, Clock } from "lucide-react";
 
 export default function TechEngineeringTransformation() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Engineering Transformation | Technology Case Study"
-      seoDescription="How a tech company achieved 3x faster release velocity through platform engineering, DevOps transformation, and developer experience optimization."
+      seoTitle="Tripling a Software Company's Release Speed | Technology, Media & Telecom Case Study"
+      seoDescription="A fast-growing software company had slowed to a monthly release cycle as its codebase and processes buckled under its own success. Rebuilding how it shipped software tripled its release speed."
       canonical="/cases/tech-engineering-transformation"
       industry="Technology, Media & Telecom"
       industryLink="/industries/technology-media-telecom"
-      title="Tech Company Achieves 3x Faster Release Velocity"
-      subtitle="How platform engineering, DevOps transformation, and developer experience optimization accelerated innovation and reduced time-to-market."
+      title="How a Growing Software Company Tripled Its Release Speed"
+      subtitle="Rapid growth had left a software company shipping once a month while nimbler rivals shipped every week. Rebuilding how its teams built and released software gave the company back the speed it had as a start-up."
       heroImage="/images/capabilities/cap-conference-data.jpg"
       metrics={[
         { value: "3x", label: "Faster Releases" },
         { value: "75%", label: "Less Deploy Time" },
-        { value: "90%", label: "Test Automation" },
-        { value: "4.5/5", label: "Developer Satisfaction" }
+        { value: "90%", label: "Automated Testing" },
+        { value: "2 wks", label: "To Full Productivity" }
       ]}
-      clientContextTitle="A Tech Company Slowed by Technical Debt"
-      clientContextIntro="A fast-growing SaaS company had scaled from startup to $500M ARR in five years. But success had created problems: a monolithic codebase, manual deployment processes, and engineering teams spending more time on maintenance than innovation. Release cycles had stretched from weekly to monthly."
-      clientContextBody="Developer productivity was declining. New engineers took 3 months to become productive. Deployments were risky all-hands events. The platform team was a bottleneck, and product teams waited weeks for infrastructure changes. The company was losing its competitive edge—unable to ship features as fast as smaller, more agile competitors."
+      clientContextTitle="Success Had Made the Software Slow to Change"
+      clientContextIntro="A software company had grown quickly, reaching a few hundred million dollars in annual recurring revenue in only five years. But the speed that built the business had faded. A single, sprawling codebase, deployments done largely by hand, and engineers who spent more of their week keeping the lights on than building new things had all conspired to slow the company down. What had once been a weekly release cadence had stretched to roughly once a month."
+      clientContextBody="The costs showed up everywhere. New engineers took about three months to find their feet. Every deployment was a tense, all-hands affair that often had to be undone. The team that owned the shared infrastructure had become a bottleneck, and product teams could wait weeks for a change they needed. Smaller, more agile competitors were shipping features faster, and the company could feel its early advantage slipping. Leadership concluded that the problem was not the people; it was the way the company built and released its software."
       clientProfile={{
-        industry: "Enterprise SaaS",
-        companySize: "$500M ARR",
+        industry: "Enterprise Software",
+        companySize: "~$400M Annual Recurring Revenue",
         projectDuration: "12 Months",
-        additionalInfo: "400 Engineers",
+        additionalInfo: "~400 Engineers",
         additionalLabel: "Engineering Team"
       }}
-      challengeTitle="Scaling Pains"
+      challengeTitle="Growing Pains"
       challenges={[
         {
           icon: Clock,
-          title: "Slow Releases",
-          description: "Monthly release cycles—competitors shipping weekly while features sat waiting for deployment."
+          title: "Releases Once a Month",
+          description: "Features that were finished and ready often waited weeks for the next deployment, while competitors shipped every week."
         },
         {
           icon: Code,
-          title: "Monolith Burden",
-          description: "Single codebase with 2M lines of code—changes in one area broke unrelated features."
+          title: "One Tangled Codebase",
+          description: "Everything lived in a single large codebase, so a change in one corner could quietly break something unrelated elsewhere."
         },
         {
           icon: Users,
-          title: "Onboarding Friction",
-          description: "3 months for new engineers to become productive—complex setup and tribal knowledge."
+          title: "A Slow Start for New Hires",
+          description: "New engineers needed about three months to become productive, held back by a complicated setup and knowledge that lived only in people's heads."
         },
         {
           icon: Shield,
-          title: "Deployment Risk",
-          description: "Deployments were risky events requiring all-hands coordination and frequent rollbacks."
+          title: "Deployments to Dread",
+          description: "Releases were risky events that pulled in the whole team and frequently had to be rolled back when something went wrong."
         }
       ]}
-      approachTitle="Engineering Excellence at Scale"
-      approachIntro="NexDyne led a comprehensive engineering transformation: platform engineering to enable self-service, DevOps practices to accelerate delivery, and developer experience improvements to boost productivity."
+      approachTitle="Making Shipping Software Routine Again"
+      approachIntro="Working with the company's engineering leaders, we rebuilt the way software moved from a developer's screen to customers — giving teams the tools to work independently, automating the risky manual steps, and making the day-to-day experience of building software far smoother."
       steps={[
         {
           step: "01",
-          title: "Platform Engineering",
-          description: "Built an internal developer platform that provided self-service infrastructure. Product teams could provision environments, deploy services, and access observability without platform team involvement. Reduced infrastructure requests by 80%."
+          title: "Tools Teams Could Use Themselves",
+          description: "We built an internal set of tools that let product teams set up environments, release their own services and see how they were performing, without waiting on the central infrastructure team. Requests to that team fell by around 80%."
         },
         {
           step: "02",
-          title: "Microservices Migration",
-          description: "Decomposed the monolith into domain-aligned microservices. Established clear service boundaries, API contracts, and ownership. Teams could now deploy independently without coordinating with the entire organization."
+          title: "Breaking the Monolith Into Parts",
+          description: "We divided the single codebase into smaller, clearly-owned pieces with well-defined boundaries. Each team could now release its own part on its own schedule, without having to coordinate with everyone else."
         },
         {
           step: "03",
-          title: "CI/CD Transformation",
-          description: "Implemented trunk-based development with automated testing and continuous deployment. Every commit triggered automated tests; passing commits deployed to production automatically. Deployments became non-events."
+          title: "Automating the Path to Release",
+          description: "We put automated testing and release in place so that every change was checked by the system and, once it passed, went live on its own. Deployments stopped being events and became something that simply happened in the background."
         },
         {
           step: "04",
-          title: "Developer Experience",
-          description: "Created standardized development environments, comprehensive documentation, and automated onboarding. New engineers deployed code on day one. Developer satisfaction surveys guided continuous improvement."
+          title: "A Better Day for Engineers",
+          description: "We standardised how developers set up their work, wrote the documentation that had been missing, and automated onboarding. New engineers now shipped real code in their first days, and regular feedback from the team guided further improvements."
         }
       ]}
-      resultsTitle="Engineering Velocity Restored"
+      resultsTitle="Speed Restored"
       results={[
         {
           icon: Zap,
           value: "3x",
-          label: "Faster release velocity",
-          detail: "From monthly to multiple daily deploys"
+          label: "Faster releases",
+          detail: "From monthly to several times a day"
         },
         {
           icon: Clock,
           value: "75%",
-          label: "Reduction in deploy time",
-          detail: "From 4 hours to under 1 hour"
+          label: "Less time to deploy",
+          detail: "From about four hours to under one"
         },
         {
           icon: Shield,
           value: "90%",
-          label: "Test automation coverage",
-          detail: "Up from 40%—confidence in every deploy"
+          label: "Automated test coverage",
+          detail: "Up from 40% — confidence in every release"
         },
         {
           icon: Users,
           value: "2 weeks",
-          label: "New engineer productivity",
-          detail: "Down from 3 months—faster onboarding"
+          label: "To full productivity",
+          detail: "Down from three months for a new engineer"
         }
       ]}
-      quote="We transformed from a company that dreaded deployments to one that deploys dozens of times per day without thinking about it. Our engineers spend time building features, not fighting infrastructure. We've regained the agility we had as a startup—at 10x the scale."
-      quoteAuthor="Sarah Chen"
-      quoteRole="VP of Engineering"
+      quote="We went from dreading deployments to barely noticing them — we release many times a day now without a second thought. Our engineers spend their time building features instead of fighting the plumbing. We have the agility we had as a young company, only now at real scale."
+      quoteAuthor="Vice President, Engineering"
+      quoteRole="Enterprise software company"
       relatedStudies={[
         {
-          title: "Streaming Platform Launch for Media Company",
-          metric: "8M",
+          title: "Launching a Streaming Service That Won 750K Subscribers",
+          metric: "750K",
           label: "subscribers in year one",
           link: "/cases/media-streaming-launch",
-          image: "/images/industries/meeting-topview.jpg"
+          image: "/images/industries/tech-datacenter.jpg"
         },
         {
-          title: "Customer Experience Transformation for Telecom",
+          title: "Cutting a Regional Carrier's Churn by 40%",
           metric: "40%",
-          label: "reduction in churn",
+          label: "lower customer churn",
           link: "/cases/telecom-customer-experience",
-          image: "/images/capabilities/cap-data-bars.jpg"
+          image: "/images/capabilities/cap-iot-network.jpg"
         }
       ]}
-      ctaTitle="Ready to Accelerate Your Engineering?"
-      ctaDescription="Let's discuss how platform engineering can unlock your team's potential."
+      ctaTitle="Ready to ship faster?"
+      ctaDescription="Let's talk about giving your engineering teams the speed to keep their edge."
     />
   );
 }

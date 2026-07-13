@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Heart, Clock, TrendingUp, Users, Shield, Database, Activity, DollarSign } from "lucide-react";
+import { Heart, Clock, TrendingUp, Users, Database, Activity, DollarSign } from "lucide-react";
 
 export default function HealthcareTransformation() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Digital Transformation for Health System | Healthcare Case Study"
-      seoDescription="How a regional health system achieved 35% improvement in patient outcomes through integrated digital health platform and AI-powered clinical decision support."
+      seoTitle="Turning Scattered Patient Data Into Better Care | Healthcare Case Study"
+      seoDescription="A regional health system had invested heavily in digital records, yet its patient information stayed locked in separate systems. Bringing it together improved patient outcomes by 35%."
       canonical="/cases/healthcare-transformation"
       industry="Healthcare"
       industryLink="/industries/healthcare"
-      title="Regional Health System Achieves Clinical Excellence Through Digital Transformation"
-      subtitle="How an integrated digital health platform and AI-powered clinical decision support improved patient outcomes by 35% while reducing care costs."
+      title="How a Regional Health System Improved Patient Outcomes by 35%"
+      subtitle="The system had spent years digitising its records, yet its clinicians still could not see the whole patient. Bringing that information together — and putting it in front of the care team when it mattered — changed the quality of care it could deliver."
       heroImage="/case-medical-collaboration.9602cc8c.jpg"
       metrics={[
-        { value: "35%", label: "Improved Patient Outcomes" },
-        { value: "28%", label: "Reduction in Readmissions" },
-        { value: "$45M", label: "Annual Cost Savings" },
+        { value: "35%", label: "Better Patient Outcomes" },
+        { value: "28%", label: "Fewer Readmissions" },
+        { value: "$45M", label: "Saved Each Year" },
         { value: "4.8/5", label: "Patient Satisfaction" }
       ]}
-      clientContextTitle="A Health System at a Crossroads"
-      clientContextIntro="A regional health system with 12 hospitals and 200+ outpatient facilities served 2.5 million patients annually. Despite significant investments in electronic health records, clinical data remained siloed, care coordination was fragmented, and physicians lacked the real-time insights needed to optimize treatment decisions."
-      clientContextBody="Readmission rates exceeded national benchmarks by 15%. Length of stay was 1.2 days longer than peer institutions. Patient satisfaction scores had plateaued despite continuous improvement efforts. The system knew it needed to transform but struggled to translate data investments into clinical value."
+      clientContextTitle="Digital Records, but Still No Full Picture of the Patient"
+      clientContextIntro="A regional health system — four hospitals and a network of outpatient clinics caring for around 350,000 patients a year — had invested heavily in electronic records. Yet a patient's information still lived in a dozen separate systems that did not talk to one another. A physician looking at a chart saw only part of the story, and the pieces that mattered most were often the hardest to find."
+      clientContextBody="The cost of that fragmentation showed up in the numbers that count. Readmissions ran well above comparable systems, patients stayed longer than they needed to, and satisfaction scores had stalled despite years of effort to lift them. Warning signs that a patient was deteriorating were often present in the data but scattered across systems, so they were noticed late or not at all. Leadership concluded the problem was not the quality of its people or its records; it was that no one could see the whole patient in one place, at the moment a decision had to be made."
       clientProfile={{
-        industry: "Healthcare",
-        companySize: "12 Hospitals, 200+ Facilities",
-        projectDuration: "24 Months",
-        additionalInfo: "2.5M Patients Annually",
+        industry: "Regional Health System",
+        companySize: "~$650M Annual Revenue",
+        projectDuration: "18 Months",
+        additionalInfo: "~350K Patients a Year",
         additionalLabel: "Patient Volume"
       }}
-      challengeTitle="Data Rich, Insight Poor"
+      challengeTitle="Rich in Data, Short on Insight"
       challenges={[
         {
           icon: Database,
-          title: "Siloed Clinical Data",
-          description: "Patient information scattered across 15 different systems with no unified longitudinal view of patient health."
+          title: "A Patient in Pieces",
+          description: "A single patient's history was spread across roughly fifteen systems, so no one could see a complete, up-to-date view of their health in one place."
         },
         {
           icon: Clock,
-          title: "Delayed Interventions",
-          description: "Critical clinical signals buried in data, leading to delayed interventions and preventable complications."
+          title: "Warnings Seen Too Late",
+          description: "The early signs of a patient going downhill were often buried in the data, so care teams reacted to complications instead of preventing them."
         },
         {
           icon: Heart,
-          title: "Care Fragmentation",
-          description: "Poor coordination between inpatient, outpatient, and post-acute care leading to gaps in treatment."
+          title: "Care That Did Not Connect",
+          description: "Hospital, clinic and follow-up care worked from different records, leaving gaps every time a patient moved from one setting to the next."
         },
         {
           icon: TrendingUp,
-          title: "Rising Costs",
-          description: "Inefficient resource utilization and preventable readmissions driving unsustainable cost growth."
+          title: "Costs Moving the Wrong Way",
+          description: "Longer stays and avoidable readmissions were driving costs up faster than the system could sustain."
         }
       ]}
-      approachTitle="From Data to Clinical Intelligence"
-      approachIntro="NexDyne designed and implemented an integrated digital health platform that unified clinical data, enabled real-time analytics, and delivered AI-powered clinical decision support at the point of care."
+      approachTitle="From Scattered Records to a Clear Picture"
+      approachIntro="Working alongside the system's clinical and operational leaders, we set out to bring a patient's information together into one current, trustworthy view — and to put the insights that mattered directly in front of the care team, inside the tools they already used."
       steps={[
         {
           step: "01",
-          title: "Clinical Data Platform",
-          description: "Built a FHIR-compliant data platform that integrated data from EHRs, lab systems, imaging, pharmacy, and wearables. Created a unified patient record with complete longitudinal health history accessible in real-time."
+          title: "One Record for the Whole Patient",
+          description: "We connected the system's records, lab results, imaging, pharmacy and remote monitoring into a single patient view. For the first time a clinician could see a patient's full, current history in one place rather than piecing it together across screens."
         },
         {
           step: "02",
-          title: "Predictive Risk Models",
-          description: "Developed ML models to predict readmission risk, sepsis onset, deterioration, and medication interactions. Models integrated directly into clinical workflows, alerting care teams before adverse events occurred."
+          title: "Spotting Trouble Before It Arrives",
+          description: "We built early-warning tools that read the signals already in the data to flag patients at rising risk — of readmission, of a serious infection, of a bad reaction between medicines — and alerted the care team while there was still time to act."
         },
         {
           step: "03",
-          title: "Care Coordination Hub",
-          description: "Implemented a care coordination platform that tracked patients across care settings, automated care plan updates, and ensured seamless handoffs between providers. Reduced care gaps by 60%."
+          title: "Care That Follows the Patient",
+          description: "We put in place a way to track patients as they moved between hospital, clinic and home, keeping care plans current and making sure nothing was dropped in the handoff. Gaps in follow-up care fell by 60%."
         },
         {
           step: "04",
-          title: "Clinical Decision Support",
-          description: "Deployed AI-powered clinical decision support that surfaced relevant evidence, suggested treatment protocols, and identified potential drug interactions—all within the physician's existing workflow."
+          title: "Insight at the Point of Care",
+          description: "Rather than add another system to log into, we surfaced the right guidance inside the physician's existing workflow — relevant history, suggested next steps and safety checks — so better decisions took no extra effort."
         }
       ]}
-      resultsTitle="Transforming Care Delivery"
+      resultsTitle="Better Care, at Lower Cost"
       results={[
         {
           icon: Heart,
           value: "35%",
-          label: "Improved patient outcomes",
-          detail: "Measured by composite quality metrics"
+          label: "Better patient outcomes",
+          detail: "Across the system's core quality measures"
         },
         {
           icon: Activity,
           value: "28%",
-          label: "Reduction in readmissions",
-          detail: "30-day all-cause readmission rate"
+          label: "Fewer readmissions",
+          detail: "Patients returning within 30 days"
         },
         {
           icon: DollarSign,
           value: "$45M",
-          label: "Annual cost savings",
-          detail: "From reduced LOS and preventable events"
+          label: "Saved each year",
+          detail: "From shorter stays and avoided complications"
         },
         {
           icon: Users,
           value: "4.8/5",
           label: "Patient satisfaction",
-          detail: "Up from 3.9/5 pre-transformation"
+          detail: "Up from 3.9 out of 5 before the change"
         }
       ]}
-      quote="This transformation changed how we practice medicine. Our physicians now have the insights they need at their fingertips—not buried in charts or scattered across systems. We're catching problems before they become crises, and our patients are healthier because of it."
-      quoteAuthor="Dr. Robert Williams"
-      quoteRole="Chief Medical Officer"
+      quote="This changed how we practise medicine. Our physicians finally have what they need in front of them, instead of buried in charts or scattered across systems. We are catching problems before they become emergencies, and our patients are healthier for it."
+      quoteAuthor="Chief Medical Officer"
+      quoteRole="Regional health system"
       relatedStudies={[
         {
-          title: "AI-Powered Readmission Prediction",
+          title: "Cutting Avoidable Readmissions by 42%",
           metric: "42%",
-          label: "reduction in preventable readmissions",
+          label: "fewer avoidable readmissions",
           link: "/cases/healthcare-readmission",
           image: "/case-doctor-consultation.799c1562.jpg"
         },
         {
-          title: "Revenue Cycle Optimization",
+          title: "Recovering $32M in Lost Revenue",
           metric: "$32M",
-          label: "recovered annual revenue",
+          label: "revenue recovered each year",
           link: "/cases/healthcare-revenue-cycle",
           image: "/case-healthcare-team.5797392b.jpg"
         }
       ]}
-      ctaTitle="Ready to Transform Your Health System?"
-      ctaDescription="Let's discuss how digital transformation can improve patient outcomes and operational efficiency."
+      ctaTitle="Ready to see the whole patient?"
+      ctaDescription="Let's talk about what bringing your clinical information together could be worth."
     />
   );
 }

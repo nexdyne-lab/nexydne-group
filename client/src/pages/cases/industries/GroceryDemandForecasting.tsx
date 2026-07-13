@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { BarChart3, TrendingDown, Leaf, DollarSign, Package, Brain, Target, Zap } from "lucide-react";
+import { BarChart3, Leaf, DollarSign, Package, Brain, Target } from "lucide-react";
 
 export default function GroceryDemandForecasting() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="AI Demand Forecasting for Grocery | Retail Case Study"
-      seoDescription="How a grocery chain reduced food waste by 35% and improved on-shelf availability through AI-powered demand forecasting across 500 stores."
+      seoTitle="Cutting a Grocer's Fresh-Food Waste by a Third | Retail Case Study"
+      seoDescription="A regional grocery chain was throwing away fresh food while shelves sat empty elsewhere. Predicting demand store by store, day by day, cut waste by 35% and saved $28M a year."
       canonical="/cases/grocery-demand-forecasting"
       industry="Retail"
       industryLink="/industries/retail"
-      title="Grocery Chain Reduces Waste 35% with AI Demand Forecasting"
-      subtitle="How machine learning models predict demand at the store-SKU-day level, optimizing inventory and reducing food waste across 500 stores."
+      title="How a Regional Grocer Cut Fresh-Food Waste by a Third"
+      subtitle="A well-run grocery chain was throwing away fresh food in some stores while running out of the same items in others. Learning to predict demand store by store turned a costly guessing game into something close to a science."
       heroImage="/images/capabilities/cap-food.jpg"
       metrics={[
-        { value: "35%", label: "Waste Reduction" },
+        { value: "35%", label: "Less Waste" },
         { value: "96%", label: "On-Shelf Availability" },
         { value: "$28M", label: "Annual Savings" },
-        { value: "50K", label: "SKUs Forecasted" }
+        { value: "50K", label: "Products Forecast" }
       ]}
-      clientContextTitle="A Grocer Battling Waste and Stockouts"
-      clientContextIntro="A regional grocery chain with 500 stores faced the classic retail paradox: too much inventory of slow-moving items (leading to waste) and too little of fast-moving items (leading to stockouts). Fresh categories were particularly challenging—perishables accounted for 40% of revenue but 70% of waste."
-      clientContextBody="Legacy forecasting relied on simple moving averages and buyer intuition. It couldn't account for weather, local events, promotions, or the complex substitution patterns that drive grocery demand. The chain threw away $80M in unsold perishables annually while losing $50M in sales to stockouts."
+      clientContextTitle="Too Much of One Thing, Too Little of Another"
+      clientContextIntro="A regional grocery chain of around 90 stores faced a problem every grocer knows well: too much of the slow-selling items, which ended up in the bin, and too little of the fast-selling ones, which left shelves empty and shoppers disappointed. Fresh food made the stakes highest — it was a large share of sales but by far the biggest source of waste, because anything unsold had only days before it had to be thrown out."
+      clientContextBody="The chain planned its orders using simple averages of past sales and the judgement of experienced buyers. That approach could not take account of the things that really move grocery demand — a change in the weather, a local event, a holiday, or the way shoppers switch to a substitute when their first choice is missing. The result was roughly $28 million of fresh food written off each year, and a further stream of sales quietly lost whenever a popular item ran out. The company was convinced both numbers could be far lower."
       clientProfile={{
         industry: "Grocery Retail",
-        companySize: "500 Stores, $8B Revenue",
+        companySize: "~$700M Annual Revenue",
         projectDuration: "12 Months",
-        additionalInfo: "50,000 SKUs",
-        additionalLabel: "Product Assortment"
+        additionalInfo: "~90 Stores",
+        additionalLabel: "Store Network"
       }}
-      challengeTitle="The Forecasting Paradox"
+      challengeTitle="The Grocer's Balancing Act"
       challenges={[
         {
           icon: Leaf,
-          title: "Perishable Waste",
-          description: "$80M in annual waste from unsold perishables—35% of fresh inventory discarded."
+          title: "Fresh Food in the Bin",
+          description: "About $28 million of unsold perishables were thrown away each year — roughly a third of everything fresh that came through the door."
         },
         {
           icon: Package,
-          title: "Stockout Losses",
-          description: "$50M in lost sales from out-of-stocks—customers leaving without purchasing."
+          title: "Empty Shelves, Lost Sales",
+          description: "When popular items ran out, shoppers simply left without them, costing millions in sales the chain never saw."
         },
         {
           icon: Brain,
-          title: "Forecast Accuracy",
-          description: "Legacy systems achieved only 65% forecast accuracy—missing demand signals entirely."
+          title: "Forecasts That Missed the Signal",
+          description: "Ordering built on past averages was right only about two-thirds of the time — blind to weather, events and the way shoppers substitute."
         },
         {
           icon: BarChart3,
-          title: "Complexity",
-          description: "50,000 SKUs × 500 stores × 365 days = 9 billion forecasts needed annually."
+          title: "A Problem Too Big to Do by Hand",
+          description: "Getting it right meant a fresh prediction for every product in every store, every day — well over a billion decisions a year, far beyond what buyers could weigh by instinct."
         }
       ]}
-      approachTitle="AI-Powered Demand Intelligence"
-      approachIntro="NexDyne built a machine learning forecasting platform that predicted demand at the store-SKU-day level, incorporating external signals and enabling automated replenishment decisions."
+      approachTitle="Predicting Demand, Store by Store"
+      approachIntro="We helped the grocer replace averages and instinct with genuine prediction — a forecast for each product in each store on each day that learned from the many things, beyond past sales, that actually shape what shoppers buy."
       steps={[
         {
           step: "01",
-          title: "Data Integration",
-          description: "Unified 5 years of sales data with external signals: weather forecasts, local events, school schedules, competitor promotions, and social media trends. Created a comprehensive demand signal repository."
+          title: "Bringing the Whole Picture Together",
+          description: "We combined five years of sales history with the outside signals that move demand — weather, local events, school terms, holidays and nearby promotions — into one place, so the forecast could see everything a good buyer would want to consider."
         },
         {
           step: "02",
-          title: "ML Model Development",
-          description: "Built gradient boosting models that predicted demand at store-SKU-day granularity. Models learned seasonal patterns, promotional lift, weather sensitivity, and substitution effects. Achieved 85% forecast accuracy—20 points above legacy."
+          title: "Learning What Really Drives Demand",
+          description: "We built forecasting models that learned each product's rhythms: how it sells by season, how much a promotion lifts it, how sensitive it is to weather, and what shoppers reach for instead when it is missing. Their predictions were right about 85% of the time — twenty points better than before."
         },
         {
           step: "03",
-          title: "Fresh Category Focus",
-          description: "Developed specialized models for perishables that optimized for both availability and waste. Models considered shelf life, markdown timing, and demand uncertainty to recommend optimal order quantities."
+          title: "Special Care for Fresh",
+          description: "For perishables, where a wrong order means either waste or an empty shelf, we tailored the models to balance the two — weighing each item's shelf life and the cost of markdowns to recommend an order that kept shelves full without overstocking."
         },
         {
           step: "04",
-          title: "Automated Replenishment",
-          description: "Integrated forecasts with automated ordering systems. Store managers received AI-recommended orders that they could approve or adjust. System learned from manager overrides to improve future recommendations."
+          title: "Orders Ready for a Quick Yes",
+          description: "The forecasts fed straight into ordering, so each store manager received a recommended order to approve or adjust rather than build from scratch. When managers changed a recommendation, the system learned from it and improved."
         }
       ]}
-      resultsTitle="Sustainable Profitability"
+      resultsTitle="Fuller Shelves, Less Waste"
       results={[
         {
           icon: Leaf,
           value: "35%",
-          label: "Reduction in waste",
-          detail: "From $80M to $52M in annual perishable waste"
+          label: "Less fresh-food waste",
+          detail: "From about $28M to $18M written off each year"
         },
         {
           icon: Package,
           value: "96%",
           label: "On-shelf availability",
-          detail: "Up from 91%—$25M in recovered sales"
+          detail: "Up from 91% — popular items in stock far more often"
         },
         {
           icon: DollarSign,
           value: "$28M",
-          label: "Annual savings",
-          detail: "From reduced waste and improved availability"
+          label: "Saved each year",
+          detail: "From less waste and recovered sales together"
         },
         {
           icon: Target,
           value: "85%",
           label: "Forecast accuracy",
-          detail: "20-point improvement over legacy systems"
+          detail: "A twenty-point gain over the old approach"
         }
       ]}
-      quote="The AI forecasting system sees patterns we never could. It knows that a sunny weekend after a rainy week drives 40% more grilling demand. It predicts the impact of a local sports event on snack sales. We're not guessing anymore—we're predicting."
-      quoteAuthor="David Martinez"
-      quoteRole="VP of Supply Chain"
+      quote="The forecasting sees things our buyers, however experienced, simply could not hold in their heads — that a warm, dry weekend after a wet week sends grilling demand up sharply, or what a local match day does to snack sales. We are not guessing at the fresh order any more. We are predicting it, and our shelves and our waste figures both show it."
+      quoteAuthor="Vice President, Supply Chain"
+      quoteRole="Regional grocery chain"
       relatedStudies={[
         {
-          title: "Digital Transformation for Fashion Retailer",
+          title: "Growing a Fashion Retailer's Online Sales by 85%",
           metric: "85%",
-          label: "e-commerce growth",
+          label: "online sales growth",
           link: "/cases/fashion-retail-digital-transformation",
-          image: "/images/capabilities/cap-agriculture.jpg"
+          image: "/images/capabilities/cap-retail-apparel.jpg"
         },
         {
-          title: "Loyalty Program Transformation",
+          title: "Turning a Stale Loyalty Program Into Growth",
           metric: "45%",
-          label: "increase in member spend",
+          label: "higher member spend",
           link: "/cases/retail-loyalty-transformation",
           image: "/images/capabilities/cap-retail-data.jpg"
         }
       ]}
-      ctaTitle="Ready to Optimize Your Inventory?"
-      ctaDescription="Let's discuss how AI forecasting can reduce waste and improve availability."
+      ctaTitle="Ready to take the guesswork out of ordering?"
+      ctaDescription="Let's talk about predicting demand store by store — and what fuller shelves with less waste could be worth."
     />
   );
 }

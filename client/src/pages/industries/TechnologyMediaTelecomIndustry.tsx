@@ -75,25 +75,25 @@ export default function TechnologyMediaTelecomIndustry() {
       }}
       featuredCases={[
         {
-          slug: "consulting-knowledge-management",
-          title: "Transforming knowledge management for a global consulting firm",
-          industry: "Professional Services",
+          slug: "media-streaming-launch",
+          title: "Launching a streaming service that won 750K subscribers",
+          industry: "Technology, Media & Telecom",
+          metric: "750K",
+          image: "/images/industries/tech-datacenter.jpg"
+        },
+        {
+          slug: "tech-engineering-transformation",
+          title: "Tripling a software company's release speed",
+          industry: "Technology, Media & Telecom",
           metric: "3x",
-          image: "/images/industries/tech-circuit.jpg"
+          image: "/images/capabilities/cap-conference-data.jpg"
         },
         {
-          slug: "fintech-payment-automation",
-          title: "Building a scalable payment processing system for a fintech startup",
-          industry: "Financial Services",
-          metric: "100K+",
-          image: "/images/industries/tech-glasses.jpg"
-        },
-        {
-          slug: "legal-document-intelligence",
-          title: "Transforming legal research with AI-powered document intelligence",
-          industry: "Professional Services",
-          metric: "70%",
-          image: "/images/industries/ops-monitors-dark.jpg"
+          slug: "telecom-customer-experience",
+          title: "Cutting a regional carrier's churn by 40%",
+          industry: "Technology, Media & Telecom",
+          metric: "40%",
+          image: "/images/capabilities/cap-iot-network.jpg"
         }
       ]}
     />

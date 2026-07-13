@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Smartphone, Users, TrendingDown, Heart, Zap, Target, DollarSign, Star } from "lucide-react";
+import { TrendingDown, Users, Heart, Target, DollarSign, Star } from "lucide-react";
 
 export default function TelecomCustomerExperience() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Customer Experience Transformation | Telecom Case Study"
-      seoDescription="How a telecom operator reduced churn by 40% through AI-powered customer experience transformation and proactive service management."
+      seoTitle="Cutting a Regional Carrier's Churn by 40% | Technology, Media & Telecom Case Study"
+      seoDescription="A regional mobile carrier was losing customers faster than its rivals and only learned they were unhappy once they complained. Getting ahead of problems cut churn by 40% and protected millions in revenue."
       canonical="/cases/telecom-customer-experience"
       industry="Technology, Media & Telecom"
       industryLink="/industries/technology-media-telecom"
-      title="Telecom Operator Reduces Churn 40% Through CX Transformation"
-      subtitle="How AI-powered customer experience management and proactive service optimization transformed subscriber retention and satisfaction."
-      heroImage="/images/industries/tech-datacenter.jpg"
+      title="How a Regional Carrier Cut Customer Churn by 40%"
+      subtitle="A mobile carrier was losing customers faster than its competitors and only found out they were unhappy after they had already decided to leave. Seeing trouble coming — and acting on it early — turned defection into loyalty."
+      heroImage="/images/capabilities/cap-iot-network.jpg"
       metrics={[
-        { value: "40%", label: "Churn Reduction" },
-        { value: "35pts", label: "NPS Improvement" },
-        { value: "$120M", label: "Retained Revenue" },
+        { value: "40%", label: "Lower Churn" },
+        { value: "35pts", label: "Higher Satisfaction" },
+        { value: "$14M", label: "Revenue Protected" },
         { value: "60%", label: "Fewer Complaints" }
       ]}
-      clientContextTitle="A Telecom Fighting Customer Defection"
-      clientContextIntro="A major wireless carrier with 25 million subscribers faced relentless churn pressure. Monthly churn exceeded 2%—industry-leading competitors were at 1.2%. Each percentage point of churn represented $300M in annual revenue walking out the door. Customer satisfaction scores lagged the industry by 15 points."
-      clientContextBody="The root causes were clear: network issues went undetected until customers complained, billing problems created frustration, and service interactions were reactive rather than proactive. The carrier knew when customers left but couldn't predict or prevent defection. By the time retention offers were made, customers had already decided to switch."
+      clientContextTitle="Learning Customers Were Unhappy Only Once They Left"
+      clientContextIntro="A regional mobile carrier served around 1.5 million customers and was losing too many of them. Every month it lost about 2% of its base, while the strongest operators in the market held that figure closer to 1.2%. On a business this size, each point of monthly churn was worth roughly $12 million a year in revenue. Its customer satisfaction trailed the wider industry by a wide margin, and the carrier could feel it in the numbers."
+      clientContextBody="The pattern was always the same, and always too late. Network problems went unnoticed until a customer rang to complain. Billing mistakes bred frustration before anyone spotted them. Service was something the carrier did in response to a problem, never ahead of one. The company could tell you exactly who had left, but not who was about to — and by the time a retention offer reached a wavering customer, that customer had usually already made up their mind."
       clientProfile={{
         industry: "Wireless Telecommunications",
-        companySize: "25M Subscribers",
+        companySize: "~$700M Annual Revenue",
         projectDuration: "18 Months",
-        additionalInfo: "2.0% Monthly Churn",
-        additionalLabel: "Starting Point"
+        additionalInfo: "~1.5M Customers",
+        additionalLabel: "Subscriber Base"
       }}
-      challengeTitle="The Churn Crisis"
+      challengeTitle="Losing Customers Faster Than Rivals"
       challenges={[
         {
           icon: TrendingDown,
-          title: "High Churn Rate",
-          description: "2.0% monthly churn vs. 1.2% industry leaders—$300M annual revenue at risk per point."
+          title: "Churn Above the Market",
+          description: "Monthly losses ran at 2% against 1.2% for the best operators — with each point worth about $12M in annual revenue."
         },
         {
           icon: Users,
-          title: "Reactive Service",
-          description: "Network and billing issues discovered only when customers complained—damage already done."
+          title: "Always Reacting, Never Ahead",
+          description: "Network and billing problems came to light only when a customer complained, by which point the damage was already done."
         },
         {
           icon: Heart,
-          title: "Low Satisfaction",
-          description: "NPS of 12 vs. industry average of 27—customers tolerating service, not advocating."
+          title: "Customers Who Tolerated the Service",
+          description: "Satisfaction sat well below the industry norm — customers were putting up with the carrier rather than recommending it."
         },
         {
           icon: Target,
-          title: "Late Intervention",
-          description: "Retention offers made after customers decided to leave—too late to change minds."
+          title: "Help That Arrived Too Late",
+          description: "Retention offers went out after a customer had already decided to leave, far too late to change anyone's mind."
         }
       ]}
-      approachTitle="Proactive Customer Experience"
-      approachIntro="NexDyne designed and implemented an AI-powered customer experience platform that predicted issues before they impacted customers, personalized interactions, and enabled proactive retention."
+      approachTitle="Getting Ahead of the Problem"
+      approachIntro="Working with the carrier, we shifted the company from reacting to problems to anticipating them — spotting the customers who were quietly heading for the exit while there was still time to win them back, and fixing the everyday problems before they turned into complaints."
       steps={[
         {
           step: "01",
-          title: "Experience Monitoring",
-          description: "Built a real-time customer experience platform that monitored network quality, billing accuracy, and service interactions for every subscriber. Detected issues before customers noticed—dropped calls, slow data, billing errors."
+          title: "Watching the Experience, Customer by Customer",
+          description: "We built a view of service quality for every customer — call quality, data speeds and billing accuracy — so the carrier could see a dropped call, a slow connection or a billing error as it happened, rather than waiting for the phone to ring."
         },
         {
           step: "02",
-          title: "Churn Prediction",
-          description: "Developed ML models that predicted churn probability 60 days in advance based on experience signals, usage patterns, and interaction history. Identified at-risk customers while there was still time to act."
+          title: "Spotting the Customers About to Leave",
+          description: "We built models that flagged which customers were likely to leave, around two months ahead, by reading the signals in how they used the service and how their recent experience had been. That gave the carrier a real window to act."
         },
         {
           step: "03",
-          title: "Proactive Outreach",
-          description: "Implemented automated proactive outreach for experience issues. Customers received apologies and credits before they complained. High-risk customers received personalized retention offers tailored to their value and preferences."
+          title: "Reaching Out First",
+          description: "When something went wrong, customers now heard from the carrier first — an apology and a credit before they thought to complain. Those most at risk of leaving received offers shaped around what they actually valued."
         },
         {
           step: "04",
-          title: "Service Transformation",
-          description: "Redesigned customer service with AI-powered agent assist, intelligent routing, and first-contact resolution focus. Agents saw complete customer context and recommended next-best-actions."
+          title: "A Better Call When It Counts",
+          description: "We redesigned customer service so agents saw the full picture of each customer, were guided to the best next step, and could resolve most issues on the first call rather than passing them along."
         }
       ]}
-      resultsTitle="Customer Loyalty Restored"
+      resultsTitle="Loyalty Rebuilt"
       results={[
         {
           icon: TrendingDown,
           value: "40%",
-          label: "Churn reduction",
-          detail: "From 2.0% to 1.2% monthly churn"
+          label: "Lower churn",
+          detail: "From 2.0% to 1.2% a month"
         },
         {
           icon: Heart,
           value: "35pts",
-          label: "NPS improvement",
-          detail: "From 12 to 47—above industry average"
+          label: "Higher satisfaction",
+          detail: "Now above the industry average"
         },
         {
           icon: DollarSign,
-          value: "$120M",
-          label: "Retained annual revenue",
-          detail: "From reduced customer defection"
+          value: "$14M",
+          label: "Annual revenue protected",
+          detail: "From customers who stayed"
         },
         {
           icon: Star,
           value: "60%",
           label: "Fewer complaints",
-          detail: "Proactive resolution before escalation"
+          detail: "Problems resolved before they escalated"
         }
       ]}
-      quote="We flipped from reactive to proactive. Now we know about network issues before customers do—and we reach out to apologize before they call to complain. Our retention team focuses on customers we can save, not ones who've already decided to leave. It's transformed how we think about customer experience."
-      quoteAuthor="Maria Santos"
-      quoteRole="Chief Customer Officer"
+      quote="We used to find out our customers were unhappy when they called to cancel. Now we know about a network problem before they do, and we reach out to put it right before they complain. Our retention team spends its time on customers we can still save, not on ones who have already gone. It changed the way we think about the whole relationship."
+      quoteAuthor="Chief Customer Officer"
+      quoteRole="Regional wireless carrier"
       relatedStudies={[
         {
-          title: "Streaming Platform Launch for Media Company",
-          metric: "8M",
+          title: "Launching a Streaming Service That Won 750K Subscribers",
+          metric: "750K",
           label: "subscribers in year one",
           link: "/cases/media-streaming-launch",
-          image: "/images/industries/ops-monitors-dark.jpg"
+          image: "/images/industries/tech-datacenter.jpg"
         },
         {
-          title: "Engineering Transformation for Tech Company",
+          title: "Tripling a Software Company's Release Speed",
           metric: "3x",
-          label: "faster release velocity",
+          label: "faster releases",
           link: "/cases/tech-engineering-transformation",
-          image: "/images/capabilities/cap-iot-network.jpg"
+          image: "/images/capabilities/cap-conference-data.jpg"
         }
       ]}
-      ctaTitle="Ready to Transform Customer Experience?"
-      ctaDescription="Let's discuss how proactive CX can reduce churn and drive loyalty."
+      ctaTitle="Ready to keep the customers you already have?"
+      ctaDescription="Let's talk about seeing churn coming in time to do something about it."
     />
   );
 }

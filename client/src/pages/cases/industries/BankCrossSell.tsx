@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { BarChart3, Target, TrendingUp, Users, Sparkles, Database, Brain, DollarSign } from "lucide-react";
+import { Target, TrendingUp, Users, Sparkles, Database, DollarSign } from "lucide-react";
 
 export default function BankCrossSell() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="AI-Powered Cross-Sell Transformation | Financial Services Case Study"
-      seoDescription="How a multinational bank achieved $200M increase in cross-sell revenue through unified customer data platform and AI-powered recommendations."
+      seoTitle="Turning Single Accounts into Real Relationships | Financial Services Case Study"
+      seoDescription="A regional bank knew its customers well on paper but couldn't act on it. Bringing scattered records into one view added $24M in new revenue and deepened relationships."
       canonical="/cases/bank-cross-sell"
       industry="Financial Services"
       industryLink="/industries/financial-services"
-      title="Multinational Bank Unlocks $200M in Cross-Sell Revenue"
-      subtitle="How a unified customer data platform and AI-powered recommendation engine transformed product attachment rates across 12 million retail banking customers."
-      heroImage="/images/industries/fin-monitors.jpg"
+      title="How a Regional Bank Turned Single Accounts into $24M of New Relationships"
+      subtitle="A regional bank held years of insight about its customers, but it sat locked in separate systems that never spoke to one another. Bringing it into one view let the bank serve people at the moments that mattered."
+      heroImage="/images/industries/fin-trader.jpg"
       metrics={[
-        { value: "$200M", label: "Revenue Increase" },
-        { value: "40%", label: "Higher Attachment Rate" },
-        { value: "12M", label: "Customers Analyzed" },
-        { value: "3.2x", label: "Campaign ROI" }
+        { value: "$24M", label: "New Annual Revenue" },
+        { value: "40%", label: "More Products Per Customer" },
+        { value: "600K", label: "Customers Understood" },
+        { value: "3.2x", label: "Return on Campaigns" }
       ]}
-      clientContextTitle="A Global Bank with Fragmented Customer Intelligence"
-      clientContextIntro="A multinational bank with operations across 15 countries served 12 million retail customers through checking, savings, credit cards, mortgages, and investment products. Despite this breadth, the average customer held only 1.8 products—well below the industry benchmark of 2.5."
-      clientContextBody="Customer data lived in silos: transaction history in the core banking system, credit card activity in a separate platform, mortgage applications in another. Marketing campaigns were based on basic demographics and product holdings, missing the behavioral signals that indicate purchase intent. The bank knew it was leaving money on the table but couldn't see where."
+      clientContextTitle="Knowing Your Customers, but Not Being Able to Act on It"
+      clientContextIntro="A regional bank served around 600,000 households with the full range of everyday banking — checking and savings accounts, credit cards, mortgages and modest investment products. For all that breadth of relationship, the typical customer held just 1.8 of the bank's products, well short of the 2.5 that peers of its size routinely achieved. The bank was clearly leaving business on the table; it simply could not see where."
+      clientContextBody="The reason was that what the bank knew about each customer was scattered. Everyday transactions lived in the core banking system, card activity in another platform, mortgage records in a third — and nothing tied them together into a single picture of a person. Marketing therefore ran on blunt information, targeting broad age and income groups rather than the everyday signals that reveal when someone is actually ready for a new product. A customer whose spending pointed clearly toward a first home might get a credit-card offer instead of a mortgage conversation. The relationships were real; the ability to act on them was not."
       clientProfile={{
-        industry: "Multinational Banking",
-        companySize: "12 Million Retail Customers",
+        industry: "Regional Retail Bank",
+        companySize: "~$600M Annual Revenue",
         projectDuration: "18 Months",
-        additionalInfo: "15 Countries",
-        additionalLabel: "Geographic Reach"
+        additionalInfo: "~600,000 Households",
+        additionalLabel: "Customers Served"
       }}
-      challengeTitle="Millions of Customers, Zero Unified View"
+      challengeTitle="One Customer, Scattered Across the Bank"
       challenges={[
         {
           icon: Database,
-          title: "Data Fragmentation",
-          description: "Customer data scattered across 7 different systems with no unified identity resolution."
+          title: "A Customer in Pieces",
+          description: "What the bank knew about each person was split across separate systems, with no reliable way to recognise it was all the same customer."
         },
         {
           icon: Target,
-          title: "Generic Campaigns",
-          description: "Marketing based on demographics and product holdings, missing behavioral purchase signals."
+          title: "Marketing by Guesswork",
+          description: "Offers were aimed at broad demographic groups, missing the everyday behaviour that signals when someone is genuinely ready to buy."
         },
         {
           icon: TrendingUp,
-          title: "Low Attachment",
-          description: "Average 1.8 products per customer vs. 2.5 industry benchmark—$500M revenue gap."
+          title: "Shallow Relationships",
+          description: "At 1.8 products per customer against a peer norm of 2.5, the bank was earning a fraction of the relationships it already had."
         },
         {
           icon: Users,
-          title: "Timing Blindness",
-          description: "No ability to identify life events or moments of intent that drive product decisions."
+          title: "Missing the Moment",
+          description: "With no view of life events, the bank routinely missed the windows — a move, a new job, a growing family — when people choose new products."
         }
       ]}
-      approachTitle="Building the 360° Customer Brain"
-      approachIntro="NexDyne created a unified customer data platform that consolidated all customer touchpoints into a single golden record, then layered AI-powered recommendation engines to identify the right product, for the right customer, at the right moment."
+      approachTitle="Bringing Every Customer into a Single View"
+      approachIntro="Working with the bank's marketing and data teams, we pulled together everything the bank already knew about each customer into one reliable picture, then used it to offer the right thing at the right time — a genuine act of service rather than another generic campaign."
       steps={[
         {
           step: "01",
-          title: "Identity Resolution",
-          description: "Built a customer data platform that matched records across 7 source systems using probabilistic identity matching. Created a single golden record for each of 12 million customers with complete product, transaction, and interaction history."
+          title: "One Reliable Picture of Each Customer",
+          description: "We brought together records from across the bank's systems and worked out, carefully, which ones belonged to the same person — giving each of the 600,000 customers a single, complete profile spanning their accounts, transactions and history with the bank."
         },
         {
           step: "02",
-          title: "Behavioral Feature Engineering",
-          description: "Engineered 200+ behavioral features from transaction data: spending patterns, savings velocity, payment timing, merchant categories, geographic patterns. These features revealed intent signals invisible in demographic data."
+          title: "Reading the Everyday Signals",
+          description: "From ordinary account activity we drew out the patterns that hint at what a customer needs next — how they save, how they spend, where their money goes — the kind of insight that plain age-and-income data can never reveal."
         },
         {
           step: "03",
-          title: "Life Event Detection",
-          description: "Built ML models to detect life events from transaction patterns: new job (direct deposit changes), new baby (baby store purchases), home purchase intent (furniture shopping + savings increase). These moments drive 60% of financial product decisions."
+          title: "Recognising Life's Turning Points",
+          description: "We taught the system to spot the moments that drive financial decisions — a change in regular pay, spending that points to a new baby or a home in prospect — so the bank could be genuinely useful precisely when it mattered."
         },
         {
           step: "04",
-          title: "Next-Best-Action Engine",
-          description: "Deployed a recommendation engine that scored every customer for every product daily. The engine optimized for customer lifetime value, not just immediate conversion, balancing short-term revenue with long-term relationship health."
+          title: "Offering the Right Thing at the Right Time",
+          description: "Each day the system suggested the single most relevant next product for each customer, weighing the long-term health of the relationship rather than a quick sale — so an offer felt like good advice, not a pitch."
         }
       ]}
-      resultsTitle="From Data Silos to Revenue Engine"
+      resultsTitle="From Scattered Records to Deeper Relationships"
       results={[
         {
           icon: DollarSign,
-          value: "$200M",
-          label: "Annual revenue increase",
-          detail: "From improved cross-sell and upsell conversion"
+          value: "$24M",
+          label: "New annual revenue",
+          detail: "From customers taking up products that genuinely fit them"
         },
         {
           icon: Target,
           value: "40%",
-          label: "Higher attachment rate",
-          detail: "Products per customer increased from 1.8 to 2.5"
+          label: "More products per customer",
+          detail: "Up from 1.8 to 2.5 — in line with the strongest peers"
         },
         {
           icon: Sparkles,
           value: "3.2x",
-          label: "Campaign ROI improvement",
-          detail: "Personalized offers vs. generic campaigns"
+          label: "Return on campaigns",
+          detail: "Well-timed, relevant offers far outperformed generic ones"
         },
         {
           icon: Users,
           value: "25%",
-          label: "Reduction in churn",
-          detail: "Proactive retention offers at risk moments"
+          label: "Less customer churn",
+          detail: "Timely, relevant service gave people reasons to stay"
         }
       ]}
-      quote="For the first time, we can see our customers as complete human beings, not fragmented account holders. When someone's transaction patterns suggest they're about to buy a home, we can offer a mortgage before they start shopping. That's not marketing—that's service."
-      quoteAuthor="Michael Chen"
-      quoteRole="Chief Marketing Officer"
+      quote="For the first time we can see a customer as a whole person rather than a set of separate accounts. When someone's everyday banking quietly signals they're heading toward buying a home, we can open a mortgage conversation before they start shopping around. That isn't a marketing campaign — it's the kind of service a good local bank is supposed to offer."
+      quoteAuthor="Chief Marketing Officer"
+      quoteRole="Regional retail bank"
       relatedStudies={[
         {
-          title: "AI-Powered Fraud Detection Transformation",
+          title: "Catching Card Fraud Before the Money Moves",
           metric: "73%",
-          label: "reduction in fraud losses",
+          label: "lower fraud losses",
           link: "/cases/financial-fraud-detection",
-          image: "/images/industries/fin-trader.jpg"
+          image: "/images/industries/fin-monitors.jpg"
         },
         {
-          title: "Wealth Management Digital Onboarding",
+          title: "Cutting Wealth Onboarding from Weeks to Days",
           metric: "60%",
-          label: "reduction in onboarding time",
+          label: "faster onboarding",
           link: "/cases/wealth-onboarding",
           image: "/images/industries/fin-handshake-city.jpg"
         }
       ]}
-      ctaTitle="Ready to Unlock Your Customer Intelligence?"
-      ctaDescription="Let's discuss how unified customer data and AI can transform your cross-sell performance."
+      ctaTitle="Ready to earn more from the customers you already have?"
+      ctaDescription="Let's talk about turning scattered records into relationships you can act on."
     />
   );
 }

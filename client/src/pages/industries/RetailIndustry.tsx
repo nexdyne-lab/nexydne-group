@@ -75,25 +75,25 @@ export default function RetailIndustry() {
       }}
       featuredCases={[
         {
-          slug: "consulting-knowledge-management",
-          title: "Transforming knowledge management for a global consulting firm",
-          industry: "Professional Services",
-          metric: "3x",
-          image: "/images/industries/retail-shelves.jpg"
+          slug: "fashion-retail-digital-transformation",
+          title: "Growing a fashion retailer's online sales by 85%",
+          industry: "Retail",
+          metric: "85%",
+          image: "/images/capabilities/cap-retail-apparel.jpg"
         },
         {
-          slug: "bank-process-automation",
-          title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
-          industry: "Financial Services",
-          metric: "10K+ hrs",
-          image: "/images/industries/team-workshop.jpg"
+          slug: "grocery-demand-forecasting",
+          title: "Cutting a grocer's fresh-food waste by a third",
+          industry: "Retail",
+          metric: "35%",
+          image: "/images/capabilities/cap-food.jpg"
         },
         {
-          slug: "accounting-audit-automation",
-          title: "How audit automation helped an accounting firm scale 2x without hiring",
-          industry: "Professional Services",
-          metric: "2x",
-          image: "/images/industries/women-laptops.jpg"
+          slug: "retail-loyalty-transformation",
+          title: "Turning a stale loyalty program into 45% more spend",
+          industry: "Retail",
+          metric: "45%",
+          image: "/images/capabilities/cap-retail-data.jpg"
         }
       ]}
     />

@@ -2,25 +2,25 @@ import IndustryCapabilityTemplate from "@/components/IndustryCapabilityTemplate"
 
 const cases = [
   {
-    slug: "bank-process-automation",
-    title: "How RPA eliminated 10,000+ hours of manual work at a major bank",
+    slug: "financial-fraud-detection",
+    title: "Catching card fraud before the money moves",
     industry: "Financial Services",
-    metric: "10K+ hrs",
+    metric: "73%",
     image: "/images/industries/fin-monitors.jpg",
   },
   {
-    slug: "wealth-management-automation",
-    title: "Automating wealth management operations for better client experiences",
+    slug: "bank-cross-sell",
+    title: "Turning single accounts into real relationships",
     industry: "Financial Services",
-    metric: "45%",
-    image: "/images/industries/fin-handshake-city.jpg",
+    metric: "$24M",
+    image: "/images/industries/fin-trader.jpg",
   },
   {
-    slug: "fintech-payment-automation",
-    title: "Building a scalable payment processing system for a fintech startup",
+    slug: "wealth-onboarding",
+    title: "Cutting wealth onboarding from weeks to days",
     industry: "Financial Services",
-    metric: "100K+",
-    image: "/images/industries/advisor-charts.jpg",
+    metric: "60%",
+    image: "/images/industries/fin-handshake-city.jpg",
   },
 ];
 

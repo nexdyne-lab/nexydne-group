@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { Wifi, Cog, TrendingUp, DollarSign, Shield, Users, BarChart3, Zap } from "lucide-react";
+import { Wifi, Cog, TrendingUp, DollarSign, Shield, Users } from "lucide-react";
 
 export default function IndustrialConnectedProducts() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Connected Products Platform | Manufacturing Case Study"
-      seoDescription="How an industrial equipment manufacturer generated $45M in new service revenue through IoT-enabled connected products and predictive maintenance services."
+      seoTitle="Turning an Equipment Maker into a Services Business | Manufacturing Case Study"
+      seoDescription="An industrial equipment manufacturer sold machines and lost touch the moment they left the factory. Staying connected to them in the field built a $30M recurring-services business."
       canonical="/cases/industrial-connected-products"
       industry="Manufacturing"
       industryLink="/industries/manufacturing"
-      title="Industrial Equipment Maker Launches $45M Connected Services Business"
-      subtitle="How IoT-enabled products and predictive maintenance services transformed a traditional equipment manufacturer into a digital services leader."
-      heroImage="/images/industries/mfg-robotics.jpg"
+      title="Building a $30M Services Business on Machines Already Sold"
+      subtitle="An industrial equipment manufacturer earned lumpy, one-off revenue from the machines it sold and lost sight of them the moment they shipped. Staying connected to that installed base turned it into a steady, higher-margin services business."
+      heroImage="/images/capabilities/cap-battery-factory.jpg"
       metrics={[
-        { value: "$45M", label: "New Service Revenue" },
+        { value: "$30M", label: "New Service Revenue" },
         { value: "85%", label: "Customer Retention" },
         { value: "40%", label: "Service Margin" },
-        { value: "15K", label: "Connected Assets" }
+        { value: "2,700", label: "Connected Machines" }
       ]}
-      clientContextTitle="A Manufacturer Seeking Recurring Revenue"
-      clientContextIntro="A global industrial equipment manufacturer sold $2B in heavy machinery annually—compressors, pumps, and turbines for oil & gas, power generation, and manufacturing. But revenue was lumpy, margins were under pressure from low-cost competitors, and customer relationships ended at the point of sale."
-      clientContextBody="The company's installed base of 50,000+ machines represented an untapped opportunity. Customers struggled with unplanned downtime, inefficient operations, and reactive maintenance. The manufacturer had the engineering expertise to help but no way to deliver insights at scale. They needed to transform from a product company to a product-plus-services company."
+      clientContextTitle="A Manufacturer That Lost Touch at the Loading Dock"
+      clientContextIntro="An industrial equipment manufacturer built heavy machinery — compressors, pumps and turbines — for customers in energy, power and manufacturing. It was good at making and selling that equipment, but its relationship with each customer effectively ended the moment a machine left the loading dock. Revenue came in large, unpredictable lumps as orders were won and lost, and low-cost rivals were steadily squeezing the margin on the hardware itself."
+      clientContextBody="Meanwhile the roughly 9,000 of the company's machines already running in the field represented a standing opportunity it had no way to reach. Its customers wrestled with unplanned breakdowns and inefficient operation; the manufacturer had the engineering knowledge to help them, but no means of delivering that expertise to thousands of machines spread across the world. To break out of the boom-and-bust of one-off sales, it needed to become a company that sold not just equipment, but the performance of that equipment over its whole life."
       clientProfile={{
         industry: "Industrial Equipment",
-        companySize: "$2B Annual Revenue",
+        companySize: "~$750M Annual Revenue",
         projectDuration: "24 Months",
-        additionalInfo: "50,000+ Installed Base",
-        additionalLabel: "Equipment in Field"
+        additionalInfo: "~9,000 Machines in the Field",
+        additionalLabel: "Installed Base"
       }}
-      challengeTitle="From Product Sales to Service Revenue"
+      challengeTitle="From One-Off Sales to Steady Revenue"
       challenges={[
         {
           icon: DollarSign,
-          title: "Lumpy Revenue",
-          description: "Equipment sales cyclical and unpredictable—no recurring revenue stream to smooth cash flow."
+          title: "Lumpy, Unpredictable Sales",
+          description: "Revenue swung with the equipment cycle, with no steady, recurring stream to smooth the peaks and troughs."
         },
         {
           icon: TrendingUp,
-          title: "Margin Pressure",
-          description: "Low-cost competitors eroding equipment margins—needed differentiation beyond hardware."
+          title: "Margins Under Pressure",
+          description: "Low-cost competitors were eroding the profit on the hardware, and the company had little to set itself apart beyond the machine itself."
         },
         {
           icon: Users,
-          title: "Weak Relationships",
-          description: "Customer relationship ended at sale—no ongoing engagement or insight into equipment performance."
+          title: "A Relationship That Ended at the Sale",
+          description: "Once a machine shipped, the manufacturer had no ongoing contact with the customer and no view of how the equipment was actually performing."
         },
         {
           icon: Cog,
-          title: "Untapped Expertise",
-          description: "Deep engineering knowledge couldn't be delivered at scale without digital infrastructure."
+          title: "Expertise It Couldn't Scale",
+          description: "The company's deep engineering know-how was locked in its people and could not reach thousands of machines in the field without a way to deliver it remotely."
         }
       ]}
-      approachTitle="Building the Connected Products Platform"
-      approachIntro="NexDyne designed and built an end-to-end connected products platform that enabled remote monitoring, predictive maintenance, and performance optimization services—creating a new $45M recurring revenue stream."
+      approachTitle="Staying Connected to Every Machine in the Field"
+      approachIntro="We helped the manufacturer stay in touch with its equipment long after it shipped — reading how each machine was running, warning customers of trouble before it struck, and packaging that insight into services they were glad to pay for."
       steps={[
         {
           step: "01",
-          title: "IoT Architecture",
-          description: "Designed a scalable IoT platform that connected equipment in the field to cloud analytics. Edge gateways collected data from sensors, processed locally for real-time alerts, and transmitted to cloud for advanced analytics."
+          title: "Keeping in Touch With the Equipment",
+          description: "We built a way for machines in the field to report back on how they were running, gathering their readings and handling the urgent ones on the spot so a customer could be warned of an immediate problem without delay."
         },
         {
           step: "02",
-          title: "Predictive Analytics",
-          description: "Built machine learning models that predicted equipment failures 2-4 weeks in advance based on vibration patterns, temperature trends, and operating conditions. Models trained on historical failure data from service records."
+          title: "Spotting Failures Before They Happen",
+          description: "Drawing on the company's own service history, we taught the system to recognise the signs of a developing fault — in vibration, temperature and running conditions — two to four weeks before a machine would have broken down."
         },
         {
           step: "03",
-          title: "Customer Portal",
-          description: "Developed a customer-facing portal that provided real-time visibility into equipment health, performance benchmarks, and maintenance recommendations. Customers could see ROI of connected services in real-time."
+          title: "Giving Customers Their Own Window",
+          description: "We gave each customer a simple online view of their equipment's health, how it was performing against similar machines, and what maintenance to plan — so the value of staying connected was plain to see."
         },
         {
           step: "04",
-          title: "Service Business Model",
-          description: "Created tiered service offerings: Basic monitoring, predictive maintenance, and performance optimization. Pricing based on value delivered—uptime guarantees and efficiency improvements—not just data access."
+          title: "Selling Outcomes, Not Just Access",
+          description: "We built the offer into tiers — from basic monitoring to guaranteed uptime and performance — and priced it on the value delivered rather than the data itself, turning the manufacturer's expertise into a product customers renewed year after year."
         }
       ]}
-      resultsTitle="A New Business Model Emerges"
+      resultsTitle="A New Business Alongside the Old One"
       results={[
         {
           icon: DollarSign,
-          value: "$45M",
-          label: "New annual service revenue",
-          detail: "Recurring revenue with 40% margins"
+          value: "$30M",
+          label: "New service revenue each year",
+          detail: "Recurring, and at around 40% margins"
         },
         {
           icon: Users,
           value: "85%",
-          label: "Customer retention rate",
-          detail: "Connected customers rarely switch vendors"
+          label: "Customer retention",
+          detail: "Connected customers rarely move to another supplier"
         },
         {
           icon: Shield,
           value: "60%",
-          label: "Reduction in unplanned downtime",
-          detail: "For customers on predictive maintenance tier"
+          label: "Less unplanned downtime",
+          detail: "For customers on the predictive-maintenance tier"
         },
         {
           icon: Wifi,
-          value: "15K",
-          label: "Connected assets",
-          detail: "30% of installed base connected in 2 years"
+          value: "2,700",
+          label: "Connected machines",
+          detail: "Roughly 30% of the installed base in two years"
         }
       ]}
-      quote="We transformed from a company that sold equipment to one that sells outcomes. Our customers don't just buy a compressor—they buy guaranteed uptime and optimized performance. The connected services business has higher margins, stickier customers, and predictable revenue."
-      quoteAuthor="Thomas Anderson"
-      quoteRole="Chief Digital Officer"
+      quote="We used to be a company that sold machines and moved on. Now we sell what the customer actually wants — equipment that keeps running. That business earns better margins, keeps customers with us far longer, and gives us the steady, predictable revenue we never had when we only sold hardware."
+      quoteAuthor="Chief Digital Officer"
+      quoteRole="Industrial equipment manufacturer"
       relatedStudies={[
         {
-          title: "Smart Factory Transformation for Automotive",
+          title: "Lifting Plant Productivity by 40%",
           metric: "40%",
-          label: "OEE improvement",
+          label: "higher productivity",
           link: "/cases/automotive-smart-factory",
-          image: "/images/industries/mfg-robot-arm.jpg"
+          image: "/images/industries/mfg-robotics.jpg"
         },
         {
-          title: "AI Quality Prediction for Semiconductor Fab",
+          title: "Catching Chip Defects Before They Happen",
           metric: "92%",
           label: "defect prediction accuracy",
           link: "/cases/semiconductor-quality-prediction",
-          image: "/images/capabilities/cap-battery-factory.jpg"
+          image: "/images/industries/mfg-robot-arm.jpg"
         }
       ]}
-      ctaTitle="Ready to Launch Connected Services?"
-      ctaDescription="Let's discuss how IoT can transform your product business into a services powerhouse."
+      ctaTitle="Ready to build a business on what you've already sold?"
+      ctaDescription="Let's talk about turning your installed base into recurring revenue."
     />
   );
 }

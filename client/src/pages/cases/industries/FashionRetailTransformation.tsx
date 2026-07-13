@@ -1,128 +1,128 @@
 import IndustryCaseStudyTemplate from "@/components/IndustryCaseStudyTemplate";
-import { ShoppingCart, Smartphone, TrendingUp, Users, Zap, Target, DollarSign, Star } from "lucide-react";
+import { ShoppingCart, Smartphone, TrendingUp, Users, Target, DollarSign, Star } from "lucide-react";
 
 export default function FashionRetailTransformation() {
   return (
     <IndustryCaseStudyTemplate
-      seoTitle="Digital Transformation for Fashion Retailer | Retail Case Study"
-      seoDescription="How a fashion retailer achieved 85% e-commerce growth through unified commerce platform, personalization engine, and omnichannel fulfillment."
+      seoTitle="Growing a Fashion Retailer's Online Sales by 85% | Retail Case Study"
+      seoDescription="A regional fashion retailer was losing digital-first shoppers to online-only rivals. Bringing its stores and website together into one experience grew online sales 85% and lifted conversion by nearly a third."
       canonical="/cases/fashion-retail-digital-transformation"
       industry="Retail"
       industryLink="/industries/retail"
-      title="Fashion Retailer Achieves 85% E-Commerce Growth Through Digital Transformation"
-      subtitle="How a unified commerce platform, AI-powered personalization, and omnichannel fulfillment transformed a traditional retailer into a digital leader."
+      title="How a Regional Fashion Retailer Grew Its Online Sales by 85%"
+      subtitle="A well-known apparel chain was losing a generation of digital-first shoppers to online-only rivals. Bringing its stores and website together into a single experience changed how — and how much — its customers bought."
       heroImage="/images/capabilities/cap-retail-apparel.jpg"
       metrics={[
         { value: "85%", label: "E-Commerce Growth" },
         { value: "32%", label: "Higher Conversion" },
-        { value: "$120M", label: "Revenue Increase" },
+        { value: "$40M", label: "Revenue Gain" },
         { value: "4.6/5", label: "Customer Rating" }
       ]}
-      clientContextTitle="A Fashion Brand at a Digital Crossroads"
-      clientContextIntro="A mid-market fashion retailer with 400 stores and a nascent e-commerce business faced an existential challenge. Online competitors were capturing market share while the company's digital experience lagged—slow website, generic recommendations, and disconnected inventory between online and stores."
-      clientContextBody="E-commerce represented only 12% of revenue despite industry benchmarks of 25%+. The mobile app had a 2.1-star rating. Customers couldn't buy online and pick up in store, return online purchases to stores, or see real-time inventory. The brand was losing a generation of digital-native customers."
+      clientContextTitle="A Trusted Brand That Shoppers Could No Longer Reach Easily"
+      clientContextIntro="A regional fashion retailer with roughly 120 stores had built a loyal following over decades, but its online business had never kept pace. The website was slow, the mobile app was poorly rated, and the recommendations shown to shoppers felt generic. Online sales accounted for only about one dollar in eight — well below what comparable retailers were seeing."
+      clientContextBody="The deeper problem was that the company's stores and its website behaved as if they belonged to two different businesses. A customer could not buy online and collect in a store, could not return a website order at the counter, and could not tell from either channel what was actually in stock nearby. Younger, digital-first shoppers — the very customers the brand needed to keep — were quietly drifting to online-only competitors that made buying effortless. Leadership was clear that the answer was not a flashier website but a single, joined-up experience across everywhere the brand met its customers."
       clientProfile={{
         industry: "Fashion Retail",
-        companySize: "400 Stores, $1.5B Revenue",
+        companySize: "~$600M Annual Revenue",
         projectDuration: "18 Months",
-        additionalInfo: "12% E-Commerce Share",
-        additionalLabel: "Starting Point"
+        additionalInfo: "~120 Stores",
+        additionalLabel: "Store Network"
       }}
-      challengeTitle="Disconnected Commerce, Declining Relevance"
+      challengeTitle="Two Businesses Wearing One Brand"
       challenges={[
         {
           icon: Smartphone,
-          title: "Poor Digital Experience",
-          description: "Slow website, 2.1-star mobile app, and generic product recommendations driving customers away."
+          title: "A Digital Experience Falling Behind",
+          description: "A slow website and a poorly rated mobile app, paired with generic recommendations, gave shoppers little reason to buy online and every reason to leave."
         },
         {
           icon: ShoppingCart,
-          title: "Channel Silos",
-          description: "Online and store inventory disconnected—customers couldn't see what was available or shop seamlessly."
+          title: "Stores and Website Working Apart",
+          description: "Online and store systems did not talk to each other, so customers could not shop across the two — no buying online to collect in store, no returning web orders at the counter."
         },
         {
           icon: Target,
-          title: "Low Conversion",
-          description: "3.2% online conversion rate vs. 5%+ industry benchmark—leaving $50M+ on the table annually."
+          title: "Conversion Left on the Table",
+          description: "Barely three in a hundred website visits ended in a purchase — well short of what comparable retailers achieved, and worth millions in missed sales each year."
         },
         {
           icon: Users,
-          title: "Customer Churn",
-          description: "Digital-native customers defecting to online-first competitors with better experiences."
+          title: "Losing the Next Generation",
+          description: "Digital-first shoppers were steadily defecting to online-only rivals whose experiences simply felt easier."
         }
       ]}
-      approachTitle="Building Unified Commerce"
-      approachIntro="NexDyne designed and implemented a comprehensive digital transformation: a unified commerce platform, AI-powered personalization engine, and omnichannel fulfillment capabilities that created seamless customer experiences."
+      approachTitle="Building One Experience Across Every Channel"
+      approachIntro="Working alongside the retailer's commercial and technology teams, we set out to make the brand feel like one business wherever a customer met it — online, on a phone, or in a store — and to make everyday shopping effortless rather than a source of friction."
       steps={[
         {
           step: "01",
-          title: "Platform Modernization",
-          description: "Replaced legacy e-commerce with a headless commerce platform. Built a new mobile app and responsive website with sub-2-second load times. Created a unified product catalog and real-time inventory visibility across all channels."
+          title: "A Faster, Simpler Storefront",
+          description: "We rebuilt the website and mobile app around speed and clarity, cutting page-load times to under two seconds and giving both a single, shared view of every product. For the first time, what a customer saw online matched what was actually on the shelves."
         },
         {
           step: "02",
-          title: "Personalization Engine",
-          description: "Deployed AI-powered personalization that analyzed browsing behavior, purchase history, and style preferences. Every customer saw a personalized homepage, product recommendations, and marketing messages—increasing relevance and conversion."
+          title: "Recommendations That Actually Fit",
+          description: "We replaced one-size-fits-all merchandising with recommendations shaped by each shopper's browsing and buying history, so the homepage, product suggestions and offers a customer saw reflected their own tastes rather than the average."
         },
         {
           step: "03",
-          title: "Omnichannel Fulfillment",
-          description: "Enabled buy-online-pickup-in-store (BOPIS), ship-from-store, and endless aisle capabilities. Stores became fulfillment nodes, reducing delivery times and shipping costs while increasing inventory productivity."
+          title: "Letting Customers Shop Across Store and Screen",
+          description: "We connected store and online inventory so customers could buy online and collect in store, return web orders at the counter, and order from a store an item that was out of stock in their size. Stores became part of the online operation rather than a separate channel."
         },
         {
           step: "04",
-          title: "Unified Customer Profile",
-          description: "Built a single customer view that unified online and offline interactions. Store associates could see online browsing history; the website showed in-store purchases. Enabled truly personalized service across all touchpoints."
+          title: "One View of Every Customer",
+          description: "We brought each customer's online and in-store activity together into a single picture, so a store associate could pick up where the website left off and service felt personal wherever it happened."
         }
       ]}
-      resultsTitle="Digital Leadership Achieved"
+      resultsTitle="From Digital Laggard to Digital Leader"
       results={[
         {
           icon: TrendingUp,
           value: "85%",
-          label: "E-commerce growth",
-          detail: "From 12% to 22% of total revenue"
+          label: "Growth in online sales",
+          detail: "Online rose from about 12% to 22% of total revenue"
         },
         {
           icon: Target,
           value: "32%",
-          label: "Higher conversion rate",
-          detail: "From 3.2% to 4.2% online conversion"
+          label: "Higher conversion",
+          detail: "Website purchases rose from 3.2% to 4.2% of visits"
         },
         {
           icon: DollarSign,
-          value: "$120M",
-          label: "Revenue increase",
-          detail: "From digital channels and improved conversion"
+          value: "$40M",
+          label: "Additional revenue",
+          detail: "From digital growth and better conversion"
         },
         {
           icon: Star,
           value: "4.6/5",
-          label: "Mobile app rating",
-          detail: "Up from 2.1 stars pre-transformation"
+          label: "Customer app rating",
+          detail: "Up from 2.1 before the work began"
         }
       ]}
-      quote="We went from digital laggard to digital leader in 18 months. Our customers can now shop however they want—browse on mobile, try on in store, buy online, pick up curbside. The personalization makes every interaction feel curated. We're not just competing with digital natives—we're winning."
-      quoteAuthor="Rachel Kim"
-      quoteRole="Chief Digital Officer"
+      quote="We had spent years thinking we needed a better website. What we actually needed was to stop treating our stores and our online business as two separate things. Once a customer could shop with us however suited them — browse on a phone, try on in a store, collect an online order on the way home — the growth took care of itself."
+      quoteAuthor="Chief Digital Officer"
+      quoteRole="Regional fashion retailer"
       relatedStudies={[
         {
-          title: "AI Demand Forecasting for Grocery Chain",
+          title: "Cutting a Grocer's Fresh-Food Waste by a Third",
           metric: "35%",
-          label: "reduction in waste",
+          label: "less fresh-food waste",
           link: "/cases/grocery-demand-forecasting",
-          image: "/images/capabilities/cap-retail-data.jpg"
+          image: "/images/capabilities/cap-food.jpg"
         },
         {
-          title: "Loyalty Program Transformation",
+          title: "Turning a Stale Loyalty Program Into Growth",
           metric: "45%",
-          label: "increase in member spend",
+          label: "higher member spend",
           link: "/cases/retail-loyalty-transformation",
-          image: "/images/industries/retail-shelves.jpg"
+          image: "/images/capabilities/cap-retail-data.jpg"
         }
       ]}
-      ctaTitle="Ready to Transform Your Retail Business?"
-      ctaDescription="Let's discuss how unified commerce can accelerate your digital growth."
+      ctaTitle="Ready to bring your channels together?"
+      ctaDescription="Let's talk about what a single, joined-up customer experience could be worth."
     />
   );
 }

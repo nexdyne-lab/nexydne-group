@@ -75,25 +75,25 @@ export default function HealthcareIndustry() {
       }}
       featuredCases={[
         {
-          slug: "hospital-clinical-workflow",
-          title: "Optimizing clinical workflows to save 15 hours per physician weekly",
+          slug: "healthcare-transformation",
+          title: "Unifying scattered patient data to improve outcomes 35%",
           industry: "Healthcare",
-          metric: "15hrs",
+          metric: "35%",
           image: "/case-medical-collaboration.9602cc8c.jpg"
         },
         {
-          slug: "healthcare-patient-engagement",
-          title: "Building an AI-powered patient engagement platform for better outcomes",
+          slug: "healthcare-readmission",
+          title: "Cutting avoidable readmissions by 42% with better prediction",
           industry: "Healthcare",
-          metric: "40%",
-          image: "/case-patient-care.b97e3209.jpeg"
+          metric: "42%",
+          image: "/case-doctor-consultation.799c1562.jpg"
         },
         {
-          slug: "telehealth-platform",
-          title: "Scaling telehealth services to reach 50,000+ patients monthly",
+          slug: "healthcare-revenue-cycle",
+          title: "Recovering $32M a year in revenue already earned",
           industry: "Healthcare",
-          metric: "50K+",
-          image: "/case-doctor-consultation.799c1562.jpg"
+          metric: "$32M",
+          image: "/case-healthcare-team.5797392b.jpg"
         }
       ]}
     />

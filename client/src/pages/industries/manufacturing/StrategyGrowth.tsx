@@ -1,9 +1,9 @@
 import IndustryCapabilityTemplate from "@/components/IndustryCapabilityTemplate";
 
 const cases = [
-  { slug: "bank-process-automation", title: "How RPA eliminated 10,000+ hours of manual work at a major bank", industry: "Financial Services", metric: "10K+ hrs", image: "/images/industries/mfg-robotics-tablet.jpg" },
-  { slug: "consulting-knowledge-management", title: "Transforming knowledge management for a global consulting firm", industry: "Professional Services", metric: "3x", image: "/images/industries/ops-gears.jpg" },
-  { slug: "accounting-audit-automation", title: "How audit automation helped an accounting firm scale 2x without hiring", industry: "Professional Services", metric: "2x", image: "/images/industries/mfg-robot-arm-team.jpg" },
+  { slug: "automotive-smart-factory", title: "Lifting plant productivity by 40% at a vehicle maker", industry: "Manufacturing", metric: "40%", image: "/images/industries/mfg-robotics.jpg" },
+  { slug: "semiconductor-quality-prediction", title: "Catching chip defects weeks before they appear", industry: "Manufacturing", metric: "92%", image: "/images/industries/mfg-robot-arm.jpg" },
+  { slug: "industrial-connected-products", title: "Building a $30M services business on installed machines", industry: "Manufacturing", metric: "$30M", image: "/images/capabilities/cap-battery-factory.jpg" },
 ];
 
 const related = [
