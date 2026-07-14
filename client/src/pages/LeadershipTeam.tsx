@@ -14,14 +14,15 @@ const fadeUp = {
 };
 
 // Managing partners — each accountable for outcomes in one practice area.
+// `image`: placeholder headshots (locally hosted) — swap in real photos anytime.
 const partners = [
-  { name: "Raphaelyn CN Bomosy-Forkpa", initials: "RB", area: "Client Delivery & Standards", bio: "Leads delivery quality and the governance behind every engagement." },
-  { name: "Amara Okonkwo", initials: "AO", area: "Artificial Intelligence", bio: "Leads the AI and agentic-systems practice, from strategy to production." },
-  { name: "Daniel Reyes", initials: "DR", area: "Operations", bio: "Re-engineers supply chain, quality, and performance for durable gains." },
-  { name: "Priya Nair", initials: "PN", area: "Technology", bio: "Modernizes cloud, data, and platform architecture built to scale." },
-  { name: "Marcus Halloran", initials: "MH", area: "Strategy & Corporate Finance", bio: "Advises on strategy, planning, and the capital decisions that compound value." },
-  { name: "Sofia Moretti", initials: "SM", area: "Business Building", bio: "Builds and launches new digital ventures from inside the core." },
-  { name: "Jayden Cole", initials: "JC", area: "Growth, Marketing & Sales", bio: "Turns capability into demand, pricing power, and commercial growth." },
+  { name: "Raphaelyn CN Bomosy-Forkpa", initials: "RB", area: "Client Delivery & Standards", bio: "Leads delivery quality and the governance behind every engagement.", image: "/images/team/partner-1.jpg" },
+  { name: "Amara Okonkwo", initials: "AO", area: "Artificial Intelligence", bio: "Leads the AI and agentic-systems practice, from strategy to production.", image: "/images/team/partner-2.jpg" },
+  { name: "Daniel Reyes", initials: "DR", area: "Operations", bio: "Re-engineers supply chain, quality, and performance for durable gains.", image: "/images/team/partner-3.jpg" },
+  { name: "Priya Nair", initials: "PN", area: "Technology", bio: "Modernizes cloud, data, and platform architecture built to scale.", image: "/images/team/partner-4.jpg" },
+  { name: "Marcus Halloran", initials: "MH", area: "Strategy & Corporate Finance", bio: "Advises on strategy, planning, and the capital decisions that compound value.", image: "/images/team/partner-5.jpg" },
+  { name: "Sofia Moretti", initials: "SM", area: "Business Building", bio: "Builds and launches new digital ventures from inside the core.", image: "/images/team/partner-6.jpg" },
+  { name: "Jayden Cole", initials: "JC", area: "Growth, Marketing & Sales", bio: "Turns capability into demand, pricing power, and commercial growth.", image: "/images/team/partner-7.jpg" },
 ];
 
 export default function LeadershipTeam() {
@@ -57,8 +58,8 @@ export default function LeadershipTeam() {
             {partners.map((p, i) => (
               <motion.div key={i} {...fadeUp} transition={{ ...fadeUp.transition, delay: (i % 3) * 0.08 }}>
                 <div className="group bg-white border border-border p-8 h-full flex flex-col items-center text-center transition-shadow duration-300 hover:shadow-[0_18px_40px_-22px_rgba(0,0,0,0.22)]">
-                  <div className="h-28 w-28 rounded-full bg-charcoal text-white flex items-center justify-center text-[1.6rem] font-semibold tracking-[0.02em] mb-6">
-                    {p.initials}
+                  <div className="h-28 w-28 rounded-full overflow-hidden mb-6 ring-1 ring-black/[0.06]">
+                    <img src={p.image} alt={p.name} loading="lazy" className="w-full h-full object-cover" />
                   </div>
                   <h3 className="text-[1.3rem] font-semibold text-charcoal leading-tight tracking-[-0.01em]">{p.name}</h3>
                   <p className="text-[12px] font-semibold uppercase tracking-[0.07em] text-charcoal/70 mt-2">
